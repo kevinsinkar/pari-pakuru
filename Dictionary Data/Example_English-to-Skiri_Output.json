@@ -1,0 +1,293 @@
+[
+  {
+    "english_entry_word": "stop",
+    "entry_metadata": {
+      "page_number": 455,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "subentries": [
+      {
+        "subentry_number": 1,
+        "part_I": {
+          "skiri_term": "awPuusik",
+          "stem_preverb": "(uur...)",
+          "phonetic_form": "[=a•wi•®uu•s,u®(h)=]",
+          "grammatical_classification": {
+            "class_abbr": "VI",
+            "class_full_description": "intransitive verb",
+            "verb_class": "(4)"
+          },
+          "grammatical_forms": [],
+          "english_glosses": [
+            {
+              "number": 1,
+              "definition": "quiet down, calm down",
+              "usage_notes": "purposefully"
+            },
+            {
+              "number": 2,
+              "definition": "stop, cease an activity",
+              "usage_notes": "as before its completion"
+            }
+          ],
+          "etymology": {
+            "raw_etymology": "<uur+ra wi+uusik, image to go down, i.e., go down quickly>",
+            "constituent_elements": [
+              {
+                "morpheme": "uur",
+                "gloss": "preverb"
+              },
+              {
+                "morpheme": "ra",
+                "gloss": "reflexive/reciprocal"
+              },
+              {
+                "morpheme": "wi",
+                "gloss": "downward"
+              },
+              {
+                "morpheme": "uusik",
+                "gloss": "to go"
+              }
+            ],
+            "literal_translation": "image to go down, i.e., go down quickly"
+          }
+        },
+        "part_II": {
+          "paradigmatic_forms": [
+            {
+              "form_number": 1,
+              "description": "1st Person Singular Subject, Indicative Mode, Perfective",
+              "skiri_form": "tatuurawiPuusit"
+            },
+            {
+              "form_number": 2,
+              "description": "3rd Person Singular Subject, Indicative Mode, Perfective",
+              "skiri_form": "tuurawiPuusit"
+            },
+            {
+              "form_number": 3,
+              "description": "3rd Person Singular Subject, Indicative Mode, Imperfective",
+              "skiri_form": "tuurawiPuusIiku®"
+            },
+            {
+              "form_number": 4,
+              "description": "3rd Person Singular Subject, Absolutive Mode, Subordinate Perfective",
+              "skiri_form": "iriruurawiPuusit"
+            },
+            {
+              "form_number": 5,
+              "description": "3rd Person Singular Subject, Indicative Mode, Perfective Intentive",
+              "skiri_form": "tuurawiPuusiksta"
+            }
+          ],
+          "additional_forms": [],
+          "examples": []
+        },
+        "part_III": null
+      },
+      {
+        "subentry_number": 2,
+        "part_I": {
+          "skiri_term": "aw®uusik",
+          "stem_preverb": "(uur...)",
+          "phonetic_form": "[=a•wi•®uu•s,u®(h)=]",
+          "grammatical_classification": {
+            "class_abbr": "VI",
+            "class_full_description": "intransitive verb",
+            "verb_class": "(4)"
+          },
+          "grammatical_forms": [],
+          "english_glosses": [
+            {
+              "number": 1,
+              "definition": "expire, pass away, die",
+              "usage_notes": null
+            },
+            {
+              "number": 2,
+              "definition": "stop, become still, become quiet",
+              "usage_notes": "as when a person ceases an activity"
+            },
+            {
+              "number": 3,
+              "definition": "stop, stop running, die",
+              "usage_notes": "as a machine, motor"
+            },
+            {
+              "number": 4,
+              "definition": "quiet down, calm down",
+              "usage_notes": null
+            }
+          ],
+          "etymology": {
+            "raw_etymology": "<uur+awi+uusik, image to go down, i.e., go down quickly>",
+            "constituent_elements": [
+              {
+                "morpheme": "uur",
+                "gloss": "preverb"
+              },
+              {
+                "morpheme": "awi",
+                "gloss": "downward movement"
+              },
+              {
+                "morpheme": "uusik",
+                "gloss": "to go"
+              }
+            ],
+            "literal_translation": "image to go down, i.e., go down quickly"
+          }
+        },
+        "part_II": {
+          "paradigmatic_forms": [
+            {
+              "form_number": 1,
+              "description": "1st Person Singular Subject, Indicative Mode, Perfective",
+              "skiri_form": "tikurawiPuusit"
+            },
+            {
+              "form_number": 2,
+              "description": "3rd Person Singular Subject, Indicative Mode, Perfective",
+              "skiri_form": "tuurawiPuusit"
+            },
+            {
+              "form_number": 3,
+              "description": "3rd Person Singular Subject, Indicative Mode, Imperfective",
+              "skiri_form": "tuurawiPuusiIiku®"
+            },
+            {
+              "form_number": 4,
+              "description": "3rd Person Singular Subject, Absolutive Mode, Subordinate Perfective",
+              "skiri_form": "iriruurawiPuusit"
+            },
+            {
+              "form_number": 5,
+              "description": "3rd Person Singular Subject, Indicative Mode, Perfective Intentive",
+              "skiri_form": "tuurawiPuusiksta"
+            }
+          ],
+          "additional_forms": [],
+          "examples": []
+        },
+        "part_III": null
+      },
+      {
+        "subentry_number": 3,
+        "part_I": {
+          "skiri_term": "cawiirik",
+          "stem_preverb": "(uur...)",
+          "phonetic_form": "[-ca•wii•ri®(h)=]",
+          "grammatical_classification": {
+            "class_abbr": "VI",
+            "class_full_description": "intransitive verb",
+            "verb_class": "(2-i)"
+          },
+          "grammatical_forms": [
+            {
+              "form_type": "pl. subj.",
+              "form": "ca-Piwarik"
+            },
+            {
+              "form_type": "uur...",
+              "form": null
+            }
+          ],
+          "english_glosses": [
+            {
+              "number": 1,
+              "definition": "be standing upright",
+              "usage_notes": null
+            },
+            {
+              "number": 2,
+              "definition": "be standing stopped; stop in a standing position",
+              "usage_notes": null
+            }
+          ],
+          "etymology": {
+            "raw_etymology": "<ca.wi (uur...)+arik, be standing upright>",
+            "constituent_elements": [
+              {
+                "morpheme": "ca.wi",
+                "gloss": "stand"
+              },
+              {
+                "morpheme": "(uur...)",
+                "gloss": "preverb"
+              },
+              {
+                "morpheme": "arik",
+                "gloss": "upright position"
+              }
+            ],
+            "literal_translation": "be standing upright"
+          }
+        },
+        "part_II": {
+          "paradigmatic_forms": [
+            {
+              "form_number": 1,
+              "description": "1st Person Singular Subject, Indicative Mode, Perfective",
+              "skiri_form": "tatuuhcawiiłit"
+            },
+            {
+              "form_number": 2,
+              "description": "3rd Person Singular Subject, Indicative Mode, Perfective",
+              "skiri_form": "tuuhcawiiłit"
+            },
+            {
+              "form_number": 3,
+              "description": "3rd Person Singular Subject, Indicative Mode, Imperfective",
+              "skiri_form": "tuuhcawiiri®"
+            },
+            {
+              "form_number": 4,
+              "description": "3rd Person Singular Subject, Absolutive Mode, Subordinate Perfective",
+              "skiri_form": "iriruuhcawiirikit"
+            },
+            {
+              "form_number": 5,
+              "description": "3rd Person Singular Subject, Indicative Mode, Perfective Intentive",
+              "skiri_form": "tuuhcawiiriksta"
+            }
+          ],
+          "additional_forms": [],
+          "examples": []
+        },
+        "part_III": {
+          "cross_references": [
+            {
+              "english_term": "come to a stop",
+              "skiri_equivalents": [
+                "iriitik",
+                "raar-"
+              ]
+            },
+            {
+              "english_term": "give up (a habit)",
+              "skiri_equivalents": [
+                "ruuhuraahak"
+              ]
+            },
+            {
+              "english_term": "land (flying object)",
+              "skiri_equivalents": [
+                "iituusik"
+              ]
+            },
+            {
+              "english_term": "quit (a way)",
+              "skiri_equivalents": [
+                "raawiikatk",
+                "rahuurawi®at"
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

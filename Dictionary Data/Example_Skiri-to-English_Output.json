@@ -1,0 +1,237 @@
+[
+  {
+    "headword": "kawPuktawuh",
+    "entry_metadata": {
+      "page_number": 156,
+      "column": "left",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": "(ut...)",
+      "phonetic_form": "[=ka•wi•®úk•ta• wu(h)=]",
+      "grammatical_info": {
+        "grammatical_class": "VT",
+        "verb_class": "(1)",
+        "additional_forms": [
+          {
+            "form_type": "pl. obj.",
+            "form": "kawPuktawaawuh [+ raar=]"
+          },
+          {
+            "form_type": "du. obj.",
+            "form": "si-"
+          }
+        ]
+      },
+      "glosses": [
+        {
+          "number": null,
+          "definition": "join together",
+          "usage_notes": "as when sewing two or more pieces together"
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "<ka.wi.ukta (ut...)+wuh, cause to be joined together>",
+        "constituent_elements": [
+          {
+            "morpheme": "ka.wi.ukta",
+            "gloss": "to join",
+            "morpheme_type": "root"
+          },
+          {
+            "morpheme": "(ut...)",
+            "gloss": "preverb",
+            "morpheme_type": "preverb"
+          },
+          {
+            "morpheme": "+wuh",
+            "gloss": "causative",
+            "morpheme_type": "suffix"
+          }
+        ],
+        "literal_translation": "cause to be joined together"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": "sitatkawPuktawu",
+        "form_2": "situłkawPuktawu",
+        "form_3": "situłkawPuktawuhu®",
+        "form_4": "iriisirułkawPuktawuha",
+        "form_5": "situłkawPuktawista",
+        "additional_forms": []
+      },
+      "examples": [
+        {
+          "skiri_text": "tatuuhahkawPuktawaawu",
+          "english_translation": "I joined them (pl.) together.",
+          "usage_context": null
+        }
+      ]
+    },
+    "compound_structure": null,
+    "derived_stems": []
+  },
+  {
+    "headword": "Ø",
+    "entry_metadata": {
+      "page_number": 157,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": "(ut...)",
+      "phonetic_form": "[-Ø- cík•su®]",
+      "grammatical_info": {
+        "grammatical_class": "VI",
+        "verb_class": "(Ø-1-a)",
+        "additional_forms": [
+          {
+            "form_type": "dist., du., pl. agent",
+            "form": "ciks+u®"
+          }
+        ]
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "be on one's mind, in one's thoughts",
+          "usage_notes": null
+        },
+        {
+          "number": 2,
+          "definition": "be thoughtful, considerate",
+          "usage_notes": "of others"
+        },
+        {
+          "number": 3,
+          "definition": "be prayerful, reflective",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "<Ø (ut...) (a)ciks+u®, be in a condition of thought>",
+        "constituent_elements": [
+          {
+            "morpheme": "Ø",
+            "gloss": "null verb stem",
+            "morpheme_type": "root"
+          },
+          {
+            "morpheme": "(ut...)",
+            "gloss": "preverb",
+            "morpheme_type": "preverb"
+          },
+          {
+            "morpheme": "(a)ciks+u®",
+            "gloss": "thought, mind",
+            "morpheme_type": "noun"
+          }
+        ],
+        "literal_translation": "be in a condition of thought"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": "tatuu®ut ciksu®",
+        "form_2": "ciksu® tatuu®ut",
+        "form_3": "ciksu® tuu®ut",
+        "form_4": "iriruuta ciksu®",
+        "form_5": "tuutasta ciksu®",
+        "additional_forms": []
+      },
+      "examples": []
+    },
+    "compound_structure": {
+      "has_null_stem": true,
+      "preverb": "(ut...)",
+      "verb_stem": "Ø",
+      "noun": "ciksu®"
+    },
+    "derived_stems": []
+  },
+  {
+    "headword": "wiiłik",
+    "entry_metadata": {
+      "page_number": 892,
+      "column": "left",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[-wii•-t,u®(h)]",
+      "grammatical_info": {
+        "grammatical_class": "VI",
+        "verb_class": "(4)",
+        "additional_forms": [
+          {
+            "form_type": "dist., du., pl. agent",
+            "form": "wiiruutik"
+          }
+        ]
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "sit down, be seated",
+          "usage_notes": null
+        },
+        {
+          "number": 2,
+          "definition": "stop, halt",
+          "usage_notes": "as to camp"
+        },
+        {
+          "number": 3,
+          "definition": "settle, occupy; move into",
+          "usage_notes": "as a dwelling"
+        },
+        {
+          "number": 4,
+          "definition": "land",
+          "usage_notes": "as an airplane or a flock of birds"
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "<wi+tiik, go down in an upright position>",
+        "constituent_elements": [
+          {
+            "morpheme": "wi",
+            "gloss": "downward movement",
+            "morpheme_type": "prefix"
+          },
+          {
+            "morpheme": "tiik",
+            "gloss": "upright position",
+            "morpheme_type": "root"
+          }
+        ],
+        "literal_translation": "go down in an upright position"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": "tatpiitit",
+        "form_2": "tiwiiłit",
+        "form_3": "tiwiitłiku®",
+        "form_4": "iriirawiitiit",
+        "form_5": "tiwiitiiksta",
+        "additional_forms": [
+          {
+            "form": "sukstaapiruułiit",
+            "description": "you (pl.) sit down there!"
+          }
+        ]
+      },
+      "examples": []
+    },
+    "compound_structure": null,
+    "derived_stems": []
+  }
+]

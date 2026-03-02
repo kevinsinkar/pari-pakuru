@@ -1,0 +1,3283 @@
+[
+  {
+    "headword": "itura™uk",
+    "entry_metadata": {
+      "page_number": 418,
+      "column": "left",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[•†-t‰-rß-™u{k/t}•]",
+      "grammatical_info": {
+        "grammatical_class": "VT (pl. subj.)",
+        "verb_class": "(3)",
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "build a village, set up a village; make a camp, set up a camp.",
+          "usage_notes": null
+        },
+        {
+          "number": 2,
+          "definition": "build a town or settlement.",
+          "usage_notes": "(contemp.)"
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "itur+ra™uk, make a village",
+        "constituent_elements": [
+          {
+            "morpheme": "itur",
+            "gloss": null,
+            "morpheme_type": null
+          },
+          {
+            "morpheme": "ra™uk",
+            "gloss": "make a village",
+            "morpheme_type": null
+          }
+        ],
+        "literal_translation": "make a village"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": null,
+        "form_2": "tiirituru™",
+        "form_3": "tiirituruuku™",
+        "form_4": "iririiritura™u",
+        "form_5": "tiirituruuksta",
+        "additional_forms": []
+      },
+      "examples": [
+        {
+          "skiri_text": "tiirituru™",
+          "english_translation": "they built up a town.",
+          "usage_context": null
+        }
+      ]
+    },
+    "compound_structure": {
+      "has_null_stem": false,
+      "preverb": null,
+      "verb_stem": null,
+      "noun": null
+    },
+    "derived_stems": []
+  },
+  {
+    "headword": "ituraahura™uk",
+    "entry_metadata": {
+      "page_number": 418,
+      "column": "left",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[•†-t‰-raa-h‰-rß-™u{k/t}•]",
+      "grammatical_info": {
+        "grammatical_class": "VI",
+        "verb_class": "(3)",
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "break camp; take down a camp, village.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "itur+raahura™uk, ruin a village",
+        "constituent_elements": [
+          {
+            "morpheme": "itur",
+            "gloss": null,
+            "morpheme_type": null
+          },
+          {
+            "morpheme": "raahura™uk",
+            "gloss": "ruin a village",
+            "morpheme_type": null
+          }
+        ],
+        "literal_translation": "ruin a village"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": "taatituraahuru™",
+        "form_2": "tiituraahuru™",
+        "form_3": "tiituraahuruuku™",
+        "form_4": "iriiraaturaahura™u",
+        "form_5": "tiituraahuruuksta",
+        "additional_forms": []
+      },
+      "examples": []
+    },
+    "compound_structure": {
+      "has_null_stem": false,
+      "preverb": null,
+      "verb_stem": null,
+      "noun": null
+    },
+    "derived_stems": []
+  },
+  {
+    "headword": "iturihuur",
+    "entry_metadata": {
+      "page_number": 418,
+      "column": "left",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[•†-t‰-r†-huu(r)•]",
+      "grammatical_info": {
+        "grammatical_class": "VD",
+        "verb_class": null,
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "be a big village.",
+          "usage_notes": null
+        },
+        {
+          "number": 2,
+          "definition": "be a city.",
+          "usage_notes": "(contemp.)"
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "itur+rihuur, be a big village",
+        "constituent_elements": [
+          {
+            "morpheme": "itur",
+            "gloss": null,
+            "morpheme_type": null
+          },
+          {
+            "morpheme": "rihuur",
+            "gloss": "be a big village",
+            "morpheme_type": null
+          }
+        ],
+        "literal_translation": "be a big village"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": null,
+        "form_2": "tiiturihuu™",
+        "form_3": null,
+        "form_4": "iriiraaturihuuru",
+        "form_5": "tiiturihuuruksta",
+        "additional_forms": []
+      },
+      "examples": []
+    },
+    "compound_structure": {
+      "has_null_stem": false,
+      "preverb": null,
+      "verb_stem": null,
+      "noun": null
+    },
+    "derived_stems": []
+  },
+  {
+    "headword": "ituuru™",
+    "entry_metadata": {
+      "page_number": 418,
+      "column": "left",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[†-tu÷-r‰™]",
+      "grammatical_info": {
+        "grammatical_class": "N",
+        "verb_class": null,
+        "additional_forms": [
+          {
+            "form_type": "comb.",
+            "form": "(i)tuur-"
+          },
+          {
+            "form_type": "comb.",
+            "form": "(i)tur-"
+          },
+          {
+            "form_type": "comb.",
+            "form": "(i)tuh-"
+          }
+        ]
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "village.",
+          "usage_notes": null
+        },
+        {
+          "number": 2,
+          "definition": "camp.",
+          "usage_notes": null
+        },
+        {
+          "number": 3,
+          "definition": "town; settlement.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "itur+u™, village + NOM",
+        "constituent_elements": [
+          {
+            "morpheme": "itur",
+            "gloss": "village",
+            "morpheme_type": null
+          },
+          {
+            "morpheme": "u™",
+            "gloss": "NOM",
+            "morpheme_type": "suffix"
+          }
+        ],
+        "literal_translation": null
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": null,
+        "form_2": null,
+        "form_3": null,
+        "form_4": null,
+        "form_5": null,
+        "additional_forms": []
+      },
+      "examples": [
+        {
+          "skiri_text": "tuhkat",
+          "english_translation": "in the village.",
+          "usage_context": null
+        },
+        {
+          "skiri_text": "iriiraatuurickahat",
+          "english_translation": "where the end of the village is.",
+          "usage_context": null
+        },
+        {
+          "skiri_text": "iriiraaturihuuru",
+          "english_translation": "where the big village is.",
+          "usage_context": null
+        }
+      ]
+    },
+    "compound_structure": {
+      "has_null_stem": false,
+      "preverb": null,
+      "verb_stem": null,
+      "noun": null
+    },
+    "derived_stems": []
+  },
+  {
+    "headword": "iwaahi™",
+    "entry_metadata": {
+      "page_number": 418,
+      "column": "left",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[†-waÑ-hi™]",
+      "grammatical_info": {
+        "grammatical_class": "N",
+        "verb_class": null,
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "his, her, their nephew; his, her, their niece.",
+          "usage_notes": "(man's sister's child)"
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "i+waat+ri™, his nephew/niece",
+        "constituent_elements": [
+          {
+            "morpheme": "i",
+            "gloss": null,
+            "morpheme_type": null
+          },
+          {
+            "morpheme": "waat",
+            "gloss": null,
+            "morpheme_type": null
+          },
+          {
+            "morpheme": "ri™",
+            "gloss": null,
+            "morpheme_type": null
+          }
+        ],
+        "literal_translation": "his nephew/niece"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": null,
+        "form_2": null,
+        "form_3": null,
+        "form_4": null,
+        "form_5": null,
+        "additional_forms": []
+      },
+      "examples": []
+    },
+    "compound_structure": {
+      "has_null_stem": false,
+      "preverb": null,
+      "verb_stem": null,
+      "noun": null
+    },
+    "derived_stems": []
+  },
+  {
+    "headword": "iwariiriks",
+    "entry_metadata": {
+      "page_number": 418,
+      "column": "left",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[†-wà-rii-r†ks]",
+      "grammatical_info": {
+        "grammatical_class": "N",
+        "verb_class": null,
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "his, her, their uncle.",
+          "usage_notes": "(mother's brother)"
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "i+wariiriks, his uncle",
+        "constituent_elements": [
+          {
+            "morpheme": "i",
+            "gloss": null,
+            "morpheme_type": null
+          },
+          {
+            "morpheme": "wariiriks",
+            "gloss": "his uncle",
+            "morpheme_type": null
+          }
+        ],
+        "literal_translation": "his uncle"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": null,
+        "form_2": null,
+        "form_3": null,
+        "form_4": null,
+        "form_5": null,
+        "additional_forms": []
+      },
+      "examples": []
+    },
+    "compound_structure": {
+      "has_null_stem": false,
+      "preverb": null,
+      "verb_stem": null,
+      "noun": null
+    },
+    "derived_stems": []
+  },
+  {
+    "headword": "iwiitk",
+    "entry_metadata": {
+      "page_number": 418,
+      "column": "left",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": "(uur...)",
+      "phonetic_form": "[•†-wiit(k)•]",
+      "grammatical_info": {
+        "grammatical_class": "VT",
+        "verb_class": "(1)",
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "save, hold back, set aside.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "uur+iiwic+k, cause to be one's remaining one",
+        "constituent_elements": [
+          {
+            "morpheme": "uur",
+            "gloss": null,
+            "morpheme_type": null
+          },
+          {
+            "morpheme": "iiwic",
+            "gloss": null,
+            "morpheme_type": null
+          },
+          {
+            "morpheme": "k",
+            "gloss": null,
+            "morpheme_type": null
+          }
+        ],
+        "literal_translation": "cause to be one's remaining one"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": "tatuuriwiit",
+        "form_2": "tuuriwiit",
+        "form_3": "tuuriwiitku™",
+        "form_4": "iriruuriwiitka",
+        "form_5": "tuuriwiitkista",
+        "additional_forms": []
+      },
+      "examples": []
+    },
+    "compound_structure": {
+      "has_null_stem": false,
+      "preverb": null,
+      "verb_stem": null,
+      "noun": null
+    },
+    "derived_stems": []
+  },
+  {
+    "headword": "ka-",
+    "entry_metadata": {
+      "page_number": 418,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[kß•]",
+      "grammatical_info": {
+        "grammatical_class": "LOC",
+        "verb_class": null,
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "in brush, grass, timber, woods.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": null,
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": null,
+        "form_2": null,
+        "form_3": null,
+        "form_4": null,
+        "form_5": null,
+        "additional_forms": []
+      },
+      "examples": [
+        {
+          "skiri_text": "kasa",
+          "english_translation": "be lying in the grass.",
+          "usage_context": null
+        },
+        {
+          "skiri_text": "kawi™at",
+          "english_translation": "go through, as brush.",
+          "usage_context": null
+        }
+      ]
+    },
+    "compound_structure": {
+      "has_null_stem": false,
+      "preverb": null,
+      "verb_stem": null,
+      "noun": null
+    },
+    "derived_stems": []
+  },
+  {
+    "headword": "ka-",
+    "entry_metadata": {
+      "page_number": 418,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[kß•]",
+      "grammatical_info": {
+        "grammatical_class": "LOC",
+        "verb_class": null,
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "on a horizontal (bounded) surface.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": null,
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": null,
+        "form_2": null,
+        "form_3": null,
+        "form_4": null,
+        "form_5": null,
+        "additional_forms": []
+      },
+      "examples": [
+        {
+          "skiri_text": "ka™uuc",
+          "english_translation": "lay on, as a baby on a cradleboard.",
+          "usage_context": null
+        }
+      ]
+    },
+    "compound_structure": {
+      "has_null_stem": false,
+      "preverb": null,
+      "verb_stem": null,
+      "noun": null
+    },
+    "derived_stems": []
+  },
+  {
+    "headword": "ka",
+    "entry_metadata": {
+      "page_number": 418,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": "(ut...)",
+      "phonetic_form": "[•kß•]",
+      "grammatical_info": {
+        "grammatical_class": "VL",
+        "verb_class": null,
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "be outstanding, extraordinary, exceptional, as a warrior who stands out above others.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": null,
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": "tatutka",
+        "form_2": "tutka",
+        "form_3": null,
+        "form_4": "iriirutkawi",
+        "form_5": "tutkawista",
+        "additional_forms": []
+      },
+      "examples": []
+    },
+    "compound_structure": {
+      "has_null_stem": false,
+      "preverb": null,
+      "verb_stem": null,
+      "noun": null
+    },
+    "derived_stems": []
+  },
+  {
+    "headword": "ka™as",
+    "entry_metadata": {
+      "page_number": 418,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[•kß-™ßs•]",
+      "grammatical_info": {
+        "grammatical_class": "VI",
+        "verb_class": "(4)",
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "crack, break, break open, split.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": null,
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": null,
+        "form_2": "tika™as",
+        "form_3": "tikaasu™",
+        "form_4": "iriiraka™as",
+        "form_5": "tikaasista",
+        "additional_forms": []
+      },
+      "examples": []
+    },
+    "compound_structure": {
+      "has_null_stem": false,
+      "preverb": null,
+      "verb_stem": null,
+      "noun": null
+    },
+    "derived_stems": []
+  },
+  {
+    "headword": "ka™at",
+    "entry_metadata": {
+      "page_number": 418,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[•kß-™ßt•]",
+      "grammatical_info": {
+        "grammatical_class": "VI",
+        "verb_class": "(1)",
+        "additional_forms": [
+          {
+            "form_type": "dist.",
+            "form": "kawarii"
+          }
+        ]
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "go, walk in grass, brush, woods.",
+          "usage_notes": null
+        },
+        {
+          "number": 2,
+          "definition": "go through, go in, as a tunnel or gate.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "ka+at, go in",
+        "constituent_elements": [
+          {
+            "morpheme": "ka",
+            "gloss": null,
+            "morpheme_type": null
+          },
+          {
+            "morpheme": "at",
+            "gloss": "go in",
+            "morpheme_type": null
+          }
+        ],
+        "literal_translation": "go in"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": "tatka™at",
+        "form_2": "tika™at",
+        "form_3": "tikawuu™",
+        "form_4": "iriirakaata",
+        "form_5": "tikahuhta",
+        "additional_forms": []
+      },
+      "examples": [
+        {
+          "skiri_text": "tikawarii™",
+          "english_translation": "he is walking around in the woods.",
+          "usage_context": null
+        }
+      ]
+    },
+    "compound_structure": {
+      "has_null_stem": false,
+      "preverb": null,
+      "verb_stem": null,
+      "noun": null
+    },
+    "derived_stems": []
+  },
+  {
+    "headword": "ka™iihcu™",
+    "entry_metadata": {
+      "page_number": 418,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[kß-™iæh-Ù‰™]",
+      "grammatical_info": {
+        "grammatical_class": "N",
+        "verb_class": null,
+        "additional_forms": [
+          {
+            "form_type": "comb.",
+            "form": "ka™iihc-"
+          },
+          {
+            "form_type": "comb.",
+            "form": "ka™iic-"
+          }
+        ]
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "straw, as used for baskets and hats.",
+          "usage_notes": null
+        },
+        {
+          "number": 2,
+          "definition": "straw basket, as used in the plum seed game.",
+          "usage_notes": null
+        },
+        {
+          "number": 3,
+          "definition": "straw hat.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "ka™iihc+u™, straw + NOM",
+        "constituent_elements": [
+          {
+            "morpheme": "ka™iihc",
+            "gloss": "straw",
+            "morpheme_type": null
+          },
+          {
+            "morpheme": "u™",
+            "gloss": "NOM",
+            "morpheme_type": "suffix"
+          }
+        ],
+        "literal_translation": null
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": null,
+        "form_2": null,
+        "form_3": null,
+        "form_4": null,
+        "form_5": null,
+        "additional_forms": []
+      },
+      "examples": [
+        {
+          "skiri_text": "ka™iickat",
+          "english_translation": "in the straw basket.",
+          "usage_context": null
+        }
+      ]
+    },
+    "compound_structure": {
+      "has_null_stem": false,
+      "preverb": null,
+      "verb_stem": null,
+      "noun": null
+    },
+    "derived_stems": []
+  },
+  {
+    "headword": "ka™iir",
+    "entry_metadata": {
+      "page_number": 418,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[•kß-™ii(r)•]",
+      "grammatical_info": {
+        "grammatical_class": "VT",
+        "verb_class": "(1)",
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "put in, as into a bowl or the palm of the hand.",
+          "usage_notes": null
+        },
+        {
+          "number": 2,
+          "definition": "put on, in, as grass, weeds, brush, or woods.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "ka+iir, put in",
+        "constituent_elements": [
+          {
+            "morpheme": "ka",
+            "gloss": null,
+            "morpheme_type": null
+          },
+          {
+            "morpheme": "iir",
+            "gloss": "put in",
+            "morpheme_type": null
+          }
+        ],
+        "literal_translation": "put in"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": "tatka™ii",
+        "form_2": "tika™ii",
+        "form_3": "tika™iiru™",
+        "form_4": "iriiraka™iira",
+        "form_5": "tika™iirista",
+        "additional_forms": []
+      },
+      "examples": []
+    },
+    "compound_structure": {
+      "has_null_stem": false,
+      "preverb": null,
+      "verb_stem": null,
+      "noun": null
+    },
+    "derived_stems": []
+  },
+  {
+    "headword": "ka™iis-",
+    "entry_metadata": {
+      "page_number": 418,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[kß -™iis•]",
+      "grammatical_info": {
+        "grammatical_class": "LOC",
+        "verb_class": null,
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "into grass, brush, woods.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "ka+iis, out of sight in brush",
+        "constituent_elements": [
+          {
+            "morpheme": "ka",
+            "gloss": null,
+            "morpheme_type": null
+          },
+          {
+            "morpheme": "iis",
+            "gloss": "out of sight in brush",
+            "morpheme_type": null
+          }
+        ],
+        "literal_translation": "out of sight in brush"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": null,
+        "form_2": null,
+        "form_3": null,
+        "form_4": null,
+        "form_5": null,
+        "additional_forms": []
+      },
+      "examples": [
+        {
+          "skiri_text": "kuuhaahka™iisa (ir...)",
+          "english_translation": "come into a meadow.",
+          "usage_context": null
+        }
+      ]
+    },
+    "compound_structure": {
+      "has_null_stem": false,
+      "preverb": null,
+      "verb_stem": null,
+      "noun": null
+    },
+    "derived_stems": []
+  },
+  {
+    "headword": "ka™iisat",
+    "entry_metadata": {
+      "page_number": 418,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[•kß-™ii-sßt•]",
+      "grammatical_info": {
+        "grammatical_class": "VI",
+        "verb_class": "(1)",
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "go, walk into grass, brush, woods.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "ka.iis+at, go out of sight into brush",
+        "constituent_elements": [
+          {
+            "morpheme": "ka.iis",
+            "gloss": null,
+            "morpheme_type": null
+          },
+          {
+            "morpheme": "at",
+            "gloss": "go out of sight into brush",
+            "morpheme_type": null
+          }
+        ],
+        "literal_translation": "go out of sight into brush"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": "tatka™iisat",
+        "form_2": "tika™iisat",
+        "form_3": "tika™iispuu™",
+        "form_4": "iriiraka™iisata",
+        "form_5": "tika™iisuhta",
+        "additional_forms": []
+      },
+      "examples": []
+    },
+    "compound_structure": {
+      "has_null_stem": false,
+      "preverb": null,
+      "verb_stem": null,
+      "noun": null
+    },
+    "derived_stems": []
+  },
+  {
+    "headword": "ka™iitat",
+    "entry_metadata": {
+      "page_number": 418,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[•kß -™ii-tßt•]",
+      "grammatical_info": {
+        "grammatical_class": "VI",
+        "verb_class": "(1)",
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "be in a line, a row.",
+          "usage_notes": null
+        },
+        {
+          "number": 2,
+          "definition": "be stretched out lengthwise.",
+          "usage_notes": null
+        },
+        {
+          "number": 3,
+          "definition": "go, walk into grass, brush, woods.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "ka+iit+at, go in a line in a circumscribed space",
+        "constituent_elements": [
+          {
+            "morpheme": "ka",
+            "gloss": null,
+            "morpheme_type": null
+          },
+          {
+            "morpheme": "iit",
+            "gloss": null,
+            "morpheme_type": null
+          },
+          {
+            "morpheme": "at",
+            "gloss": "go in a line in a circumscribed space",
+            "morpheme_type": null
+          }
+        ],
+        "literal_translation": "go in a line in a circumscribed space"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": null,
+        "form_2": "tika™iitat",
+        "form_3": null,
+        "form_4": "iriiraka™iitata",
+        "form_5": "tika™iituhta",
+        "additional_forms": []
+      },
+      "examples": []
+    },
+    "compound_structure": {
+      "has_null_stem": false,
+      "preverb": null,
+      "verb_stem": null,
+      "noun": null
+    },
+    "derived_stems": []
+  },
+  {
+    "headword": "ka™it",
+    "entry_metadata": {
+      "page_number": 418,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[kà-™†t]",
+      "grammatical_info": {
+        "grammatical_class": "N",
+        "verb_class": null,
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "salt.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": null,
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": null,
+        "form_2": null,
+        "form_3": null,
+        "form_4": null,
+        "form_5": null,
+        "additional_forms": []
+      },
+      "examples": [
+        {
+          "skiri_text": "ka™itkat",
+          "english_translation": "in the salt.",
+          "usage_context": null
+        },
+        {
+          "skiri_text": "sikstaruu™a™ ka™it",
+          "english_translation": "hand me the salt!",
+          "usage_context": null
+        },
+        {
+          "skiri_text": "sicikstaraa™ ka™it",
+          "english_translation": "bring the salt!",
+          "usage_context": null
+        }
+      ]
+    },
+    "compound_structure": {
+      "has_null_stem": false,
+      "preverb": null,
+      "verb_stem": null,
+      "noun": null
+    },
+    "derived_stems": []
+  },
+  {
+    "headword": "Ka™it Iriirakiicuhat",
+    "entry_metadata": {
+      "page_number": 418,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[kà-™†t †-riæ-rß-kii-Ù‰-hßt]",
+      "grammatical_info": {
+        "grammatical_class": "N",
+        "verb_class": null,
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "Cimarron River.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "ka™it irii.ra.kic.u.hak, salt + where the water runs, i.e., where the salt water runs",
+        "constituent_elements": [
+          {
+            "morpheme": "ka™it",
+            "gloss": "salt",
+            "morpheme_type": null
+          },
+          {
+            "morpheme": "irii.ra.kic.u.hak",
+            "gloss": "where the water runs",
+            "morpheme_type": null
+          }
+        ],
+        "literal_translation": "where the salt water runs"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": null,
+        "form_2": null,
+        "form_3": null,
+        "form_4": null,
+        "form_5": null,
+        "additional_forms": []
+      },
+      "examples": []
+    },
+    "compound_structure": {
+      "has_null_stem": false,
+      "preverb": null,
+      "verb_stem": null,
+      "noun": null
+    },
+    "derived_stems": []
+  },
+  {
+    "headword": "ka™it rarahkaawi",
+    "entry_metadata": {
+      "page_number": 418,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[kà-™†t rß-ráh-kaa-w†]",
+      "grammatical_info": {
+        "grammatical_class": "N",
+        "verb_class": null,
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "salt shaker.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "ka™it ra+raar+kaa.wi, the one that salt is inside",
+        "constituent_elements": [
+          {
+            "morpheme": "ka™it",
+            "gloss": null,
+            "morpheme_type": null
+          },
+          {
+            "morpheme": "ra+raar+kaa.wi",
+            "gloss": "the one that salt is inside",
+            "morpheme_type": null
+          }
+        ],
+        "literal_translation": "the one that salt is inside"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": null,
+        "form_2": null,
+        "form_3": null,
+        "form_4": null,
+        "form_5": null,
+        "additional_forms": []
+      },
+      "examples": []
+    },
+    "compound_structure": {
+      "has_null_stem": false,
+      "preverb": null,
+      "verb_stem": null,
+      "noun": null
+    },
+    "derived_stems": []
+  },
+  {
+    "headword": "Ka™iwa",
+    "entry_metadata": {
+      "page_number": 418,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[kà-™†-wß]",
+      "grammatical_info": {
+        "grammatical_class": "N",
+        "verb_class": null,
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "Kiowa tribe.",
+          "usage_notes": null
+        },
+        {
+          "number": 2,
+          "definition": "Kiowa male.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "ka™iwa, ultimately from Kiowa k?yg÷, the name of a Kiowa band",
+        "constituent_elements": [
+          {
+            "morpheme": "ka™iwa",
+            "gloss": "ultimately from Kiowa k?yg÷, the name of a Kiowa band",
+            "morpheme_type": null
+          }
+        ],
+        "literal_translation": null
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": null,
+        "form_2": null,
+        "form_3": null,
+        "form_4": null,
+        "form_5": null,
+        "additional_forms": []
+      },
+      "examples": [
+        {
+          "skiri_text": "Ka™iwaru",
+          "english_translation": "among the Kiowa; in Kiowa country.",
+          "usage_context": null
+        },
+        {
+          "skiri_text": "Cka™iwa",
+          "english_translation": "Kiowa female.",
+          "usage_context": null
+        }
+      ]
+    },
+    "compound_structure": {
+      "has_null_stem": false,
+      "preverb": null,
+      "verb_stem": null,
+      "noun": null
+    },
+    "derived_stems": []
+  },
+  {
+    "headword": "ka™uc",
+    "entry_metadata": {
+      "page_number": 418,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[•kß-™uts•]",
+      "grammatical_info": {
+        "grammatical_class": "VT",
+        "verb_class": "(2)",
+        "additional_forms": [
+          {
+            "form_type": "iter.",
+            "form": "kaka™uc"
+          }
+        ]
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "bite.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": null,
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": "tatka™uc",
+        "form_2": "tika™uc",
+        "form_3": "tikuucu™",
+        "form_4": "iriirakuuci",
+        "form_5": "tikuucista",
+        "additional_forms": []
+      },
+      "examples": []
+    },
+    "compound_structure": {
+      "has_null_stem": false,
+      "preverb": null,
+      "verb_stem": null,
+      "noun": null
+    },
+    "derived_stems": []
+  },
+  {
+    "headword": "ka™uktu™",
+    "entry_metadata": {
+      "page_number": 418,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[kß-™÷k-t‰™]",
+      "grammatical_info": {
+        "grammatical_class": "N",
+        "verb_class": null,
+        "additional_forms": [
+          {
+            "form_type": "comb.",
+            "form": "ka™ukt-"
+          },
+          {
+            "form_type": "comb.",
+            "form": "ka™ut-"
+          }
+        ]
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "down, soft feather.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "ka™ukt+u™, down + NOM",
+        "constituent_elements": [
+          {
+            "morpheme": "ka™ukt",
+            "gloss": "down",
+            "morpheme_type": null
+          },
+          {
+            "morpheme": "u™",
+            "gloss": "NOM",
+            "morpheme_type": "suffix"
+          }
+        ],
+        "literal_translation": null
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": null,
+        "form_2": null,
+        "form_3": null,
+        "form_4": null,
+        "form_5": null,
+        "additional_forms": []
+      },
+      "examples": [
+        {
+          "skiri_text": "ka™utkat",
+          "english_translation": "on/in the down.",
+          "usage_context": null
+        }
+      ]
+    },
+    "compound_structure": {
+      "has_null_stem": false,
+      "preverb": null,
+      "verb_stem": null,
+      "noun": null
+    },
+    "derived_stems": []
+  },
+  {
+    "headword": "ka™uuc/uc-",
+    "entry_metadata": {
+      "page_number": 418,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[•kß-™uuts/‰ts•]",
+      "grammatical_info": {
+        "grammatical_class": "VT",
+        "verb_class": "(2-i)",
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "lay on, as a baby on a cradleboard.",
+          "usage_notes": null
+        },
+        {
+          "number": 2,
+          "definition": "lay in, as in grass; lay in, as in a wrapping that one then folds up.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "ka+uuc, lay in a circumscribed space",
+        "constituent_elements": [
+          {
+            "morpheme": "ka",
+            "gloss": null,
+            "morpheme_type": null
+          },
+          {
+            "morpheme": "uuc",
+            "gloss": "lay in a circumscribed space",
+            "morpheme_type": null
+          }
+        ],
+        "literal_translation": "lay in a circumscribed space"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": "tatka™uuc",
+        "form_2": "tika™uuc",
+        "form_3": null,
+        "form_4": "iriirakuci",
+        "form_5": "tikucista",
+        "additional_forms": []
+      },
+      "examples": [
+        {
+          "skiri_text": "ariisit tirahka™uuc",
+          "english_translation": "he rolled his own (cigarette);",
+          "usage_context": "ref. to putting tobacco in the wrapper."
+        }
+      ]
+    },
+    "compound_structure": {
+      "has_null_stem": false,
+      "preverb": null,
+      "verb_stem": null,
+      "noun": null
+    },
+    "derived_stems": []
+  },
+  {
+    "headword": "ka™uukii™ac",
+    "entry_metadata": {
+      "page_number": 418,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[kà-™uu-kii-™ßts]",
+      "grammatical_info": {
+        "grammatical_class": "N",
+        "verb_class": null,
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "tall variety of corn.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "ka™uu+kii™ac, ka™uu + tall; cf. ka™uuwikii™ac be tall, ref. to corn",
+        "constituent_elements": [
+          {
+            "morpheme": "ka™uu",
+            "gloss": null,
+            "morpheme_type": null
+          },
+          {
+            "morpheme": "kii™ac",
+            "gloss": "tall",
+            "morpheme_type": null
+          }
+        ],
+        "literal_translation": "ka™uu tall"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": null,
+        "form_2": null,
+        "form_3": null,
+        "form_4": null,
+        "form_5": null,
+        "additional_forms": []
+      },
+      "examples": []
+    },
+    "compound_structure": {
+      "has_null_stem": false,
+      "preverb": null,
+      "verb_stem": null,
+      "noun": null
+    },
+    "derived_stems": []
+  },
+  {
+    "headword": "kaa",
+    "entry_metadata": {
+      "page_number": 418,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[•kaa•]",
+      "grammatical_info": {
+        "grammatical_class": "VL",
+        "verb_class": null,
+        "additional_forms": [
+          {
+            "form_type": "dist.",
+            "form": "kaawaa"
+          }
+        ]
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "be inside, as in a dwelling or enclosed space; be in, as in the ground.",
+          "usage_notes": null
+        },
+        {
+          "number": 2,
+          "definition": "be jailed.",
+          "usage_notes": null
+        },
+        {
+          "number": 3,
+          "definition": "be hitched to a wagon, as a team of horses.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": null,
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": "tatkaa",
+        "form_2": "tikaa",
+        "form_3": null,
+        "form_4": "iriirakaawi",
+        "form_5": "tikaawista",
+        "additional_forms": []
+      },
+      "examples": [
+        {
+          "skiri_text": "tikaawaa",
+          "english_translation": "they are inside different ones.",
+          "usage_context": null
+        }
+      ]
+    },
+    "compound_structure": {
+      "has_null_stem": false,
+      "preverb": null,
+      "verb_stem": null,
+      "noun": null
+    },
+    "derived_stems": []
+  },
+  {
+    "headword": "kaa-",
+    "entry_metadata": {
+      "page_number": 418,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": true
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[kaa•]",
+      "grammatical_info": {
+        "grammatical_class": "LOC",
+        "verb_class": null,
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "in, inside, within, as a covered space.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": null,
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": null,
+        "form_2": null,
+        "form_3": null,
+        "form_4": null,
+        "form_5": null,
+        "additional_forms": []
+      },
+      "examples": [
+        {
+          "skiri_text": "kaakus",
+          "english_translation": "be inside; live in, as a dwelling.",
+          "usage_context": null
+        }
+      ]
+    },
+    "compound_structure": {
+      "has_null_stem": false,
+      "preverb": null,
+      "verb_stem": null,
+      "noun": null
+    },
+    "derived_stems": []
+  },
+  {
+    "headword": "-kaa-",
+    "entry_metadata": {
+      "page_number": 2,
+      "column": "left",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[•kaa•]",
+      "grammatical_info": {
+        "grammatical_class": "N-KIN",
+        "verb_class": null,
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": null,
+          "definition": "grandmother.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": null,
+        "constituent_elements": [],
+        "literal_translation": null
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": null,
+        "form_2": null,
+        "form_3": null,
+        "form_4": null,
+        "form_5": null,
+        "additional_forms": []
+      },
+      "examples": [
+        {
+          "skiri_text": "atika’",
+          "english_translation": "my, our grandmother.",
+          "usage_context": null
+        },
+        {
+          "skiri_text": "aka’",
+          "english_translation": "your grandmother.",
+          "usage_context": null
+        },
+        {
+          "skiri_text": "ikaari’",
+          "english_translation": "his, her, their grand-mother.",
+          "usage_context": null
+        }
+      ]
+    },
+    "compound_structure": null,
+    "derived_stems": []
+  },
+  {
+    "headword": "kaa’a",
+    "entry_metadata": {
+      "page_number": 2,
+      "column": "left",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": "(ir...)",
+      "phonetic_form": "[ • k a a - ’ ß • ]",
+      "grammatical_info": {
+        "grammatical_class": "VI",
+        "verb_class": "(3)",
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "come through; sprout, come up, as a plant.",
+          "usage_notes": null
+        },
+        {
+          "number": 2,
+          "definition": "emerge, come out, as a burrowing animal from out of the ground or a person from a mine.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "<kaa+a (ir...), come (from) inside>",
+        "constituent_elements": [
+          {
+            "morpheme": "kaa",
+            "gloss": "inside",
+            "morpheme_type": "preverb"
+          },
+          {
+            "morpheme": "a (ir...)",
+            "gloss": "come (from)",
+            "morpheme_type": "root"
+          }
+        ],
+        "literal_translation": "come (from) inside"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": "tatihkaa’a’",
+        "form_2": "takaa’a’",
+        "form_3": "takaa’aahu’",
+        "form_4": "irii-rakaa’a",
+        "form_5": "takaahista"
+      },
+      "examples": []
+    },
+    "compound_structure": null,
+    "derived_stems": []
+  },
+  {
+    "headword": "kaa’a",
+    "entry_metadata": {
+      "page_number": 2,
+      "column": "left",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": "(ir...)",
+      "phonetic_form": "[ • k a a - ’ ß • ]",
+      "grammatical_info": {
+        "grammatical_class": "VI",
+        "verb_class": "(3)",
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": null,
+          "definition": "dance.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "<kaa+a (ir...), come inside>",
+        "constituent_elements": [
+          {
+            "morpheme": "kaa",
+            "gloss": "inside",
+            "morpheme_type": "preverb"
+          },
+          {
+            "morpheme": "a (ir...)",
+            "gloss": "come",
+            "morpheme_type": "root"
+          }
+        ],
+        "literal_translation": "come inside"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": "tatihkaa’a’",
+        "form_2": "takaa’a’",
+        "form_3": "takaa’aahu’",
+        "form_4": "irii-rakaa’a",
+        "form_5": "takaahista"
+      },
+      "examples": [
+        {
+          "skiri_text": "tarahkaa’aahu’",
+          "english_translation": "they are dancing.",
+          "usage_context": null
+        }
+      ]
+    },
+    "compound_structure": null,
+    "derived_stems": []
+  },
+  {
+    "headword": "kaa’aah",
+    "entry_metadata": {
+      "page_number": 2,
+      "column": "left",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[ • k a a - ’ a a ( h ) • ]",
+      "grammatical_info": {
+        "grammatical_class": "VI",
+        "verb_class": "(1)",
+        "additional_forms": [
+          {
+            "form_type": "pl. subj.",
+            "form": "kaahurii"
+          }
+        ]
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "be inside, as in a dwelling.",
+          "usage_notes": null
+        },
+        {
+          "number": 2,
+          "definition": "walk inside.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "<kaa-+aah, be inside>",
+        "constituent_elements": [
+          {
+            "morpheme": "kaa-",
+            "gloss": "inside",
+            "morpheme_type": "preverb"
+          },
+          {
+            "morpheme": "aah",
+            "gloss": "be",
+            "morpheme_type": "root"
+          }
+        ],
+        "literal_translation": "be inside"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": "tatkaa’aa",
+        "form_2": "tikaa’aa",
+        "form_3": null,
+        "form_4": "iriirakaa’aaha",
+        "form_5": "ti-kaa’aahista"
+      },
+      "examples": [
+        {
+          "skiri_text": "tikaahurii",
+          "english_translation": "they are inside.",
+          "usage_context": null
+        }
+      ]
+    },
+    "compound_structure": null,
+    "derived_stems": []
+  },
+  {
+    "headword": "kaa’as",
+    "entry_metadata": {
+      "page_number": 2,
+      "column": "left",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[ k a Ñ - ’ ß s ]",
+      "grammatical_info": {
+        "grammatical_class": "N",
+        "verb_class": null,
+        "additional_forms": [
+          {
+            "form_type": "comb.",
+            "form": "kaa’as-"
+          },
+          {
+            "form_type": "comb.",
+            "form": "kaas-"
+          }
+        ]
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "train.",
+          "usage_notes": null
+        },
+        {
+          "number": 2,
+          "definition": "car, automobile; truck.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "<Engl. cars>",
+        "constituent_elements": [],
+        "literal_translation": null
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": null,
+      "examples": [
+        {
+          "skiri_text": "kaasiri’",
+          "english_translation": "with a car; by car.",
+          "usage_context": null
+        },
+        {
+          "skiri_text": "tahaaruka’i kaa-’askat hii taharat",
+          "english_translation": "I loaded them in the truck and took (transported) them.",
+          "usage_context": null
+        },
+        {
+          "skiri_text": "kaasasu’",
+          "english_translation": "car wheel.",
+          "usage_context": null
+        }
+      ]
+    },
+    "compound_structure": null,
+    "derived_stems": []
+  },
+  {
+    "headword": "kaa’asasu’, kaasasu’",
+    "entry_metadata": {
+      "page_number": 2,
+      "column": "left",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[kaÑ-’ß-sß-s‰™, kaÑ-sß-s‰™]",
+      "grammatical_info": {
+        "grammatical_class": "N",
+        "verb_class": null,
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": null,
+          "definition": "car wheel, automobile wheel.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "<kaa’as+as+u™, automobile foot + NOM>",
+        "constituent_elements": [
+          {
+            "morpheme": "kaa’as",
+            "gloss": "automobile",
+            "morpheme_type": "root"
+          },
+          {
+            "morpheme": "as",
+            "gloss": "foot",
+            "morpheme_type": "root"
+          },
+          {
+            "morpheme": "u’",
+            "gloss": "NOM",
+            "morpheme_type": "suffix"
+          }
+        ],
+        "literal_translation": "automobile foot + NOM"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": null,
+      "examples": []
+    },
+    "compound_structure": null,
+    "derived_stems": []
+  },
+  {
+    "headword": "kaa’asaturaaru’",
+    "entry_metadata": {
+      "page_number": 2,
+      "column": "left",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[ k a a - ’ß - sà- t ‰- r a a - r‰ ’]",
+      "grammatical_info": {
+        "grammatical_class": "N",
+        "verb_class": null,
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": null,
+          "definition": "railroad, railroad tracks, rail tracks.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "<kaa’as+haturaar+u™, train road + NOM>",
+        "constituent_elements": [
+          {
+            "morpheme": "kaa’as",
+            "gloss": "train",
+            "morpheme_type": "root"
+          },
+          {
+            "morpheme": "haturaar",
+            "gloss": "road",
+            "morpheme_type": "root"
+          },
+          {
+            "morpheme": "u’",
+            "gloss": "NOM",
+            "morpheme_type": "suffix"
+          }
+        ],
+        "literal_translation": "train road + NOM"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": null,
+      "examples": []
+    },
+    "compound_structure": null,
+    "derived_stems": []
+  },
+  {
+    "headword": "kaa’askucuu’",
+    "entry_metadata": {
+      "page_number": 2,
+      "column": "left",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[ k a Ñ - ’ ß s - k‰ - Ù u u ’ ]",
+      "grammatical_info": {
+        "grammatical_class": "N",
+        "verb_class": null,
+        "additional_forms": [
+          {
+            "form_type": "comb.",
+            "form": "kaa’askucuu-"
+          }
+        ]
+      },
+      "glosses": [
+        {
+          "number": null,
+          "definition": "truck.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "<kaa’as+kucuu, big car>",
+        "constituent_elements": [
+          {
+            "morpheme": "kaa’as",
+            "gloss": "car",
+            "morpheme_type": "root"
+          },
+          {
+            "morpheme": "kucuu",
+            "gloss": "big",
+            "morpheme_type": "root"
+          }
+        ],
+        "literal_translation": "big car"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": null,
+      "examples": [
+        {
+          "skiri_text": "kaa’askucuukat",
+          "english_translation": "in the truck.",
+          "usage_context": null
+        }
+      ]
+    },
+    "compound_structure": null,
+    "derived_stems": []
+  },
+  {
+    "headword": "kaa’at",
+    "entry_metadata": {
+      "page_number": 2,
+      "column": "left",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[kaÑ-’ßt]",
+      "grammatical_info": {
+        "grammatical_class": "N",
+        "verb_class": null,
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": null,
+          "definition": "hail.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "<i.q. SB ka’at, Ar. kÑt>",
+        "constituent_elements": [],
+        "literal_translation": null
+      },
+      "cognates": [
+        {
+          "language": "SB",
+          "form": "ka’at",
+          "gloss": null
+        },
+        {
+          "language": "Ar",
+          "form": "kÑt",
+          "gloss": null
+        }
+      ]
+    },
+    "part_II": {
+      "paradigmatic_forms": null,
+      "examples": [
+        {
+          "skiri_text": "kaa’at ti’it",
+          "english_translation": "it is hail.",
+          "usage_context": null
+        },
+        {
+          "skiri_text": "wiitaraarawa’aahu’ kaa-’at",
+          "english_translation": "it is hailing.",
+          "usage_context": null
+        }
+      ]
+    },
+    "compound_structure": null,
+    "derived_stems": []
+  },
+  {
+    "headword": "kaa’at",
+    "entry_metadata": {
+      "page_number": 2,
+      "column": "left",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[kaÑ-’ßt]",
+      "grammatical_info": {
+        "grammatical_class": "N",
+        "verb_class": null,
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": null,
+          "definition": "January, a lunar month that over-laps with January.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "<i.q. SB kaata, Ar. kaÑtA>",
+        "constituent_elements": [],
+        "literal_translation": null
+      },
+      "cognates": [
+        {
+          "language": "SB",
+          "form": "kaata",
+          "gloss": null
+        },
+        {
+          "language": "Ar",
+          "form": "kaÑtA",
+          "gloss": null
+        }
+      ]
+    },
+    "part_II": {
+      "paradigmatic_forms": null,
+      "examples": []
+    },
+    "compound_structure": null,
+    "derived_stems": []
+  },
+  {
+    "headword": "kaa’at",
+    "entry_metadata": {
+      "page_number": 2,
+      "column": "left",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[ • k a a - ’ ß t • ]",
+      "grammatical_info": {
+        "grammatical_class": "VI",
+        "verb_class": "(1)",
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "go, walk inside, as in a dwelling or room; walk through, as a hallway.",
+          "usage_notes": null
+        },
+        {
+          "number": 2,
+          "definition": "go underground, as a burrowing animal.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "<kaa+at, go inside>",
+        "constituent_elements": [
+          {
+            "morpheme": "kaa",
+            "gloss": "inside",
+            "morpheme_type": "preverb"
+          },
+          {
+            "morpheme": "at",
+            "gloss": "go",
+            "morpheme_type": "root"
+          }
+        ],
+        "literal_translation": "go inside"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": "tatkaa’at",
+        "form_2": "tikaa’at",
+        "form_3": "tikaawuu’",
+        "form_4": "iriirakaa-ta",
+        "form_5": "tikaahuhta"
+      },
+      "examples": []
+    },
+    "compound_structure": null,
+    "derived_stems": []
+  },
+  {
+    "headword": "kaa’ata",
+    "entry_metadata": {
+      "page_number": 2,
+      "column": "left",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[ k a Ñ - ’ß- t ß ]",
+      "grammatical_info": {
+        "grammatical_class": "N",
+        "verb_class": null,
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": null,
+          "definition": "upland plover (Upland Sandpiper, Bartramia longicauda).",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "<i.q. SB kaata>",
+        "constituent_elements": [],
+        "literal_translation": null
+      },
+      "cognates": [
+        {
+          "language": "SB",
+          "form": "kaata",
+          "gloss": null
+        }
+      ]
+    },
+    "part_II": {
+      "paradigmatic_forms": null,
+      "examples": []
+    },
+    "compound_structure": null,
+    "derived_stems": []
+  },
+  {
+    "headword": "kaa’ihwicat",
+    "entry_metadata": {
+      "page_number": 2,
+      "column": "left",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[ • k a a - ’ † h - w † - Ù ß t • ]",
+      "grammatical_info": {
+        "grammatical_class": "VI",
+        "verb_class": "(1)",
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": null,
+          "definition": "arrive and enter, enter upon arriving, as a room or dwelling.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "<kaa.wi(r)+wic+at, reach a point inside>",
+        "constituent_elements": [
+          {
+            "morpheme": "kaa.wi(r)",
+            "gloss": "inside",
+            "morpheme_type": "preverb"
+          },
+          {
+            "morpheme": "wic",
+            "gloss": "reach a point",
+            "morpheme_type": "root"
+          },
+          {
+            "morpheme": "at",
+            "gloss": null,
+            "morpheme_type": null
+          }
+        ],
+        "literal_translation": "reach a point inside"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": "tatkaa’ihwicat",
+        "form_2": "tikaa’ihwicat",
+        "form_3": "tikaa’ihwic-puu’",
+        "form_4": "iriirakaa’ihwicata",
+        "form_5": "tikaa’ihwicuhta"
+      },
+      "examples": []
+    },
+    "compound_structure": null,
+    "derived_stems": []
+  },
+  {
+    "headword": "kaa’iis-",
+    "entry_metadata": {
+      "page_number": 2,
+      "column": "left",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[ k a a - ’ i i s • ]",
+      "grammatical_info": {
+        "grammatical_class": "LOC",
+        "verb_class": null,
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": null,
+          "definition": "to one's home; to one's home village.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "<kaa+iis, out of sight inside>",
+        "constituent_elements": [
+          {
+            "morpheme": "kaa",
+            "gloss": "inside",
+            "morpheme_type": "preverb"
+          },
+          {
+            "morpheme": "iis",
+            "gloss": "out of sight",
+            "morpheme_type": "root"
+          }
+        ],
+        "literal_translation": "out of sight inside"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": null,
+      "examples": [
+        {
+          "skiri_text": "rikaa’iisat",
+          "english_translation": "take home.",
+          "usage_context": null
+        }
+      ]
+    },
+    "compound_structure": null,
+    "derived_stems": []
+  },
+  {
+    "headword": "kaa’iisa",
+    "entry_metadata": {
+      "page_number": 2,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": "(ir...)",
+      "phonetic_form": "[ • k a a - ’ i i - s ß • ]",
+      "grammatical_info": {
+        "grammatical_class": "VI",
+        "verb_class": "(3)",
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": null,
+          "definition": "come home; come, return to one's village.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "<kaa’iis+a (ir...), come out of sight inside>",
+        "constituent_elements": [
+          {
+            "morpheme": "kaa’iis",
+            "gloss": "out of sight inside",
+            "morpheme_type": "preverb"
+          },
+          {
+            "morpheme": "a (ir...)",
+            "gloss": "come",
+            "morpheme_type": "root"
+          }
+        ],
+        "literal_translation": "come out of sight inside"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": "tatihkaa’iisa’",
+        "form_2": "takaa’iisa’",
+        "form_3": "takaa’iisaahu’",
+        "form_4": "iriirakaa’iisa",
+        "form_5": "takaa’iisahista"
+      },
+      "examples": []
+    },
+    "compound_structure": null,
+    "derived_stems": []
+  },
+  {
+    "headword": "kaa’iisat",
+    "entry_metadata": {
+      "page_number": 2,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[ • k a a - ’ i i - s ß t • ]",
+      "grammatical_info": {
+        "grammatical_class": "VI",
+        "verb_class": "(1)",
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": null,
+          "definition": "go home; go, return to one's village.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "<kaa’iis+at, go out of sight inside>",
+        "constituent_elements": [
+          {
+            "morpheme": "kaa’iis",
+            "gloss": "out of sight inside",
+            "morpheme_type": "preverb"
+          },
+          {
+            "morpheme": "at",
+            "gloss": "go",
+            "morpheme_type": "root"
+          }
+        ],
+        "literal_translation": "go out of sight inside"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": "tatkaa’iisat",
+        "form_2": "tikaa’iisat",
+        "form_3": "tikaa’iispuu’",
+        "form_4": "iriirakaa’iisata",
+        "form_5": "tikaa’iisuhta"
+      },
+      "examples": []
+    },
+    "compound_structure": null,
+    "derived_stems": []
+  },
+  {
+    "headword": "kaac",
+    "entry_metadata": {
+      "page_number": 2,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[•kaats•]",
+      "grammatical_info": {
+        "grammatical_class": "VD",
+        "verb_class": null,
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": null,
+          "definition": "be gray, grayish.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": null,
+        "constituent_elements": [],
+        "literal_translation": null
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": null,
+        "form_2": "tikaa’ac",
+        "form_3": null,
+        "form_4": "iriirakaacu",
+        "form_5": "tikaacuksta"
+      },
+      "examples": []
+    },
+    "compound_structure": null,
+    "derived_stems": []
+  },
+  {
+    "headword": "kaacatk",
+    "entry_metadata": {
+      "page_number": 2,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[•kaa-Ùßt(k)•]",
+      "grammatical_info": {
+        "grammatical_class": "VT",
+        "verb_class": "(1)",
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "bake in hot coals, in hot ashes.",
+          "usage_notes": null
+        },
+        {
+          "number": 2,
+          "definition": "bake in an oven.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "<kaa+icat.k, roast in a circumscribed space>",
+        "constituent_elements": [
+          {
+            "morpheme": "kaa",
+            "gloss": "in a circumscribed space",
+            "morpheme_type": "preverb"
+          },
+          {
+            "morpheme": "icat.k",
+            "gloss": "roast",
+            "morpheme_type": "root"
+          }
+        ],
+        "literal_translation": "roast in a circumscribed space"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": "tatkaacat",
+        "form_2": "tikaacat",
+        "form_3": "tikaacatku’",
+        "form_4": "iriira-kaacatka",
+        "form_5": "tikaacatkista"
+      },
+      "examples": [
+        {
+          "skiri_text": "tirahkaacat",
+          "english_translation": "she baked them in hot coals.",
+          "usage_context": null
+        }
+      ]
+    },
+    "compound_structure": null,
+    "derived_stems": []
+  },
+  {
+    "headword": "kaaciks",
+    "entry_metadata": {
+      "page_number": 2,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[ • k a a - Ù † k s • ]",
+      "grammatical_info": {
+        "grammatical_class": "VD",
+        "verb_class": null,
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": 1,
+          "definition": "be withered, shriveled, dried and wrinkled, as a blossom, leaf, vegetable.",
+          "usage_notes": null
+        },
+        {
+          "number": 2,
+          "definition": "be shrunken, as material.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": null,
+        "constituent_elements": [],
+        "literal_translation": null
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": null,
+        "form_2": "tikaaciks",
+        "form_3": null,
+        "form_4": "iriirakaaciksu",
+        "form_5": "tikaaciksuksta"
+      },
+      "examples": [
+        {
+          "skiri_text": "tirahkaaciks",
+          "english_translation": "they are withered.",
+          "usage_context": null
+        }
+      ]
+    },
+    "compound_structure": null,
+    "derived_stems": []
+  },
+  {
+    "headword": "kaackaawi’u’",
+    "entry_metadata": {
+      "page_number": 2,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[ k a Ñ t s - k a a - w i - ’ u ’ ]",
+      "grammatical_info": {
+        "grammatical_class": "N",
+        "verb_class": null,
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": null,
+          "definition": "white of the eye.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "<kaac+kaa.wi+u’, gray inside + NOM>",
+        "constituent_elements": [
+          {
+            "morpheme": "kaac",
+            "gloss": "gray",
+            "morpheme_type": "root"
+          },
+          {
+            "morpheme": "kaa.wi",
+            "gloss": "inside",
+            "morpheme_type": "preverb"
+          },
+          {
+            "morpheme": "u’",
+            "gloss": "NOM",
+            "morpheme_type": "suffix"
+          }
+        ],
+        "literal_translation": "gray inside + NOM"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": null,
+      "examples": [
+        {
+          "skiri_text": "kaackaawihiri’",
+          "english_translation": "in/on the white of the eye.",
+          "usage_context": null
+        }
+      ]
+    },
+    "compound_structure": null,
+    "derived_stems": []
+  },
+  {
+    "headword": "kaackaraaru’",
+    "entry_metadata": {
+      "page_number": 2,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[ k a Ñ t s - k ß - r a a - r ‰ ’ ]",
+      "grammatical_info": {
+        "grammatical_class": "N",
+        "verb_class": null,
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": null,
+          "definition": "calf of the leg, which is said to be gristly; calf muscle.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "<kaac+ka-raar+u’, gray belly + NOM>",
+        "constituent_elements": [
+          {
+            "morpheme": "kaac",
+            "gloss": "gray",
+            "morpheme_type": "root"
+          },
+          {
+            "morpheme": "ka-raar",
+            "gloss": "belly",
+            "morpheme_type": "root"
+          },
+          {
+            "morpheme": "u’",
+            "gloss": "NOM",
+            "morpheme_type": "suffix"
+          }
+        ],
+        "literal_translation": "gray belly + NOM"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": null,
+      "examples": [
+        {
+          "skiri_text": "kaackaraariri’",
+          "english_translation": "on the calf.",
+          "usage_context": null
+        }
+      ]
+    },
+    "compound_structure": null,
+    "derived_stems": []
+  },
+  {
+    "headword": "kaackawuh",
+    "entry_metadata": {
+      "page_number": 2,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[ • k a a t s - k ß - w ‰ ( h ) • ]",
+      "grammatical_info": {
+        "grammatical_class": "VI",
+        "verb_class": "(1)",
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": null,
+          "definition": "look back, glance back.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "<kaacka+wuh, kaacka + CAUS; i.q. Ar. kaaskawih>",
+        "constituent_elements": [
+          {
+            "morpheme": "kaacka",
+            "gloss": "kaacka",
+            "morpheme_type": null
+          },
+          {
+            "morpheme": "wuh",
+            "gloss": "CAUS",
+            "morpheme_type": "suffix"
+          }
+        ],
+        "literal_translation": "kaacka + CAUS"
+      },
+      "cognates": [
+        {
+          "language": "Ar",
+          "form": "kaaskawih",
+          "gloss": null
+        }
+      ]
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": "tatkaackawu",
+        "form_2": "tikaackawu",
+        "form_3": "tikaackawuhu’",
+        "form_4": "iriirakaackawuha",
+        "form_5": "tikaackawista"
+      },
+      "examples": []
+    },
+    "compound_structure": null,
+    "derived_stems": []
+  },
+  {
+    "headword": "kaacuuh",
+    "entry_metadata": {
+      "page_number": 2,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[•kaa-Ùuu(h)•]",
+      "grammatical_info": {
+        "grammatical_class": "VI",
+        "verb_class": "(1)",
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": null,
+          "definition": "urinate.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": null,
+        "constituent_elements": [],
+        "literal_translation": null
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": "tatkaacu’",
+        "form_2": "tikaacu’",
+        "form_3": "tikaacuuhu’",
+        "form_4": "iriira-kaacuuha",
+        "form_5": "tikaacuuhista"
+      },
+      "examples": [
+        {
+          "skiri_text": "tihkaacuuhu’",
+          "english_translation": "they are urinating.",
+          "usage_context": null
+        }
+      ]
+    },
+    "compound_structure": null,
+    "derived_stems": []
+  },
+  {
+    "headword": "kaahak",
+    "entry_metadata": {
+      "page_number": 2,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[ • k a a - h ß { k / t } • ]",
+      "grammatical_info": {
+        "grammatical_class": "VI",
+        "verb_class": "(4)",
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": null,
+          "definition": "walk around, pass around inside an enclosed space, as a dwelling; walk through, pass through an enclosed space, as a room or dwelling.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "<kaa+hak, pass inside>",
+        "constituent_elements": [
+          {
+            "morpheme": "kaa",
+            "gloss": "inside",
+            "morpheme_type": "preverb"
+          },
+          {
+            "morpheme": "hak",
+            "gloss": "pass",
+            "morpheme_type": "root"
+          }
+        ],
+        "literal_translation": "pass inside"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": "tatkaahat",
+        "form_2": "tikaahat",
+        "form_3": "tikaahaaku’",
+        "form_4": "iriira-kaahat",
+        "form_5": "tikaahaksta"
+      },
+      "examples": []
+    },
+    "compound_structure": null,
+    "derived_stems": []
+  },
+  {
+    "headword": "kaahiiku’",
+    "entry_metadata": {
+      "page_number": 2,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[ k a a - h i æ - k ‰ ’ ]",
+      "grammatical_info": {
+        "grammatical_class": "N",
+        "verb_class": null,
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": null,
+          "definition": "aged person, person in a state of old age.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "<kaahiik+u’, aged or old age + NOM>",
+        "constituent_elements": [
+          {
+            "morpheme": "kaahiik",
+            "gloss": "aged or old age",
+            "morpheme_type": "root"
+          },
+          {
+            "morpheme": "u’",
+            "gloss": "NOM",
+            "morpheme_type": "suffix"
+          }
+        ],
+        "literal_translation": "aged or old age + NOM"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": null,
+      "examples": [
+        {
+          "skiri_text": "cuustikaahiiku’",
+          "english_translation": "an aged old woman.",
+          "usage_context": null
+        }
+      ]
+    },
+    "compound_structure": null,
+    "derived_stems": []
+  },
+  {
+    "headword": "kaahikuut",
+    "entry_metadata": {
+      "page_number": 2,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[ • k a a - h † - k u u t • ]",
+      "grammatical_info": {
+        "grammatical_class": "VP",
+        "verb_class": "(2)",
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": null,
+          "definition": "die of old age.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "<kaahiik+kuut, die old>",
+        "constituent_elements": [
+          {
+            "morpheme": "kaahiik",
+            "gloss": "old",
+            "morpheme_type": "root"
+          },
+          {
+            "morpheme": "kuut",
+            "gloss": "die",
+            "morpheme_type": "root"
+          }
+        ],
+        "literal_translation": "die old"
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": "tikukaahikuut",
+        "form_2": "tikaahikuut",
+        "form_3": "tikaahikuutu’",
+        "form_4": "iriirakaahikuuti",
+        "form_5": "tikaahikuutista"
+      },
+      "examples": []
+    },
+    "compound_structure": null,
+    "derived_stems": []
+  },
+  {
+    "headword": "kaahit",
+    "entry_metadata": {
+      "page_number": 2,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[kaÑ-h†t]",
+      "grammatical_info": {
+        "grammatical_class": "N",
+        "verb_class": null,
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": null,
+          "definition": "godwit (Limosa spp.).",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": null,
+        "constituent_elements": [],
+        "literal_translation": null
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": null,
+      "examples": []
+    },
+    "compound_structure": null,
+    "derived_stems": []
+  },
+  {
+    "headword": "kaahu’",
+    "entry_metadata": {
+      "page_number": 2,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[ k a Ñ - h ‰ ’ ]",
+      "grammatical_info": {
+        "grammatical_class": "N",
+        "verb_class": null,
+        "additional_forms": [
+          {
+            "form_type": "comb.",
+            "form": "kaahuh-"
+          }
+        ]
+      },
+      "glosses": [
+        {
+          "number": null,
+          "definition": "mushroom.",
+          "usage_notes": null
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "<kaahur>",
+        "constituent_elements": [
+          {
+            "morpheme": "kaahur",
+            "gloss": null,
+            "morpheme_type": "root"
+          }
+        ],
+        "literal_translation": null
+      },
+      "cognates": []
+    },
+    "part_II": {
+      "paradigmatic_forms": null,
+      "examples": []
+    },
+    "compound_structure": null,
+    "derived_stems": []
+  }
+]

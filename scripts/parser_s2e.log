@@ -1,0 +1,375 @@
+2026-02-14 18:14:42 - INFO - Found 181 pages to process. Starting Skiri-to-English parsing...
+
+2026-02-14 18:14:42 - INFO - Processing Page 1/181: page_001.pdf
+2026-02-14 18:17:30 - INFO -   - Successfully parsed 25 entries from page 1.
+2026-02-14 18:17:32 - INFO - Processing Page 2/181: page_002.pdf
+2026-02-14 18:19:51 - INFO -   - Successfully parsed 21 entries from page 2.
+2026-02-14 18:19:53 - INFO - Processing Page 3/181: page_003.pdf
+2026-02-14 18:22:26 - INFO -   - Successfully parsed 22 entries from page 3.
+2026-02-14 18:22:28 - INFO - Processing Page 4/181: page_004.pdf
+2026-02-14 18:24:23 - INFO -   - Successfully parsed 17 entries from page 4.
+2026-02-14 18:24:25 - INFO - Processing Page 5/181: page_005.pdf
+2026-02-14 18:26:26 - INFO -   - Successfully parsed 13 entries from page 5.
+2026-02-14 18:26:29 - INFO - Processing Page 6/181: page_006.pdf
+2026-02-14 18:28:48 - INFO -   - Successfully parsed 18 entries from page 6.
+2026-02-14 18:28:50 - INFO - Processing Page 7/181: page_007.pdf
+2026-02-14 18:32:22 - INFO -   - Successfully parsed 18 entries from page 7.
+2026-02-14 18:32:24 - INFO - Processing Page 8/181: page_008.pdf
+2026-02-14 18:34:30 - INFO -   - Successfully parsed 17 entries from page 8.
+2026-02-14 18:34:32 - INFO - Processing Page 9/181: page_009.pdf
+2026-02-14 18:36:51 - INFO -   - Successfully parsed 25 entries from page 9.
+2026-02-14 18:36:54 - INFO - Processing Page 10/181: page_010.pdf
+2026-02-14 18:39:45 - INFO -   - Successfully parsed 22 entries from page 10.
+2026-02-14 18:39:47 - INFO - Processing Page 11/181: page_011.pdf
+2026-02-14 18:42:18 - INFO -   - Successfully parsed 21 entries from page 11.
+2026-02-14 18:42:20 - INFO - Processing Page 12/181: page_012.pdf
+2026-02-14 18:45:07 - INFO -   - Successfully parsed 30 entries from page 12.
+2026-02-14 18:45:09 - INFO - Processing Page 13/181: page_013.pdf
+2026-02-14 18:48:13 - INFO -   - Successfully parsed 27 entries from page 13.
+2026-02-14 18:48:15 - INFO - Processing Page 14/181: page_014.pdf
+2026-02-14 18:51:00 - INFO -   - Successfully parsed 33 entries from page 14.
+2026-02-14 18:51:02 - INFO - Processing Page 15/181: page_015.pdf
+2026-02-14 18:53:35 - INFO -   - Successfully parsed 29 entries from page 15.
+2026-02-14 18:53:37 - INFO - Processing Page 16/181: page_016.pdf
+2026-02-14 18:56:27 - INFO -   - Successfully parsed 25 entries from page 16.
+2026-02-14 18:56:29 - INFO - Processing Page 17/181: page_017.pdf
+2026-02-14 18:59:11 - INFO -   - Successfully parsed 19 entries from page 17.
+2026-02-14 18:59:13 - INFO - Processing Page 18/181: page_018.pdf
+2026-02-14 19:01:37 - INFO -   - Successfully parsed 20 entries from page 18.
+2026-02-14 19:01:39 - INFO - Processing Page 19/181: page_019.pdf
+2026-02-14 19:04:42 - INFO -   - Successfully parsed 28 entries from page 19.
+2026-02-14 19:04:44 - INFO - Processing Page 20/181: page_020.pdf
+2026-02-14 19:07:35 - INFO -   - Successfully parsed 21 entries from page 20.
+2026-02-14 19:07:37 - INFO - Processing Page 21/181: page_021.pdf
+2026-02-14 19:09:20 - INFO -   - Successfully parsed 23 entries from page 21.
+2026-02-14 19:09:22 - INFO - Processing Page 22/181: page_022.pdf
+2026-02-14 19:11:53 - INFO -   - Successfully parsed 21 entries from page 22.
+2026-02-14 19:11:55 - INFO - Processing Page 23/181: page_023.pdf
+2026-02-14 19:14:32 - INFO -   - Successfully parsed 20 entries from page 23.
+2026-02-14 19:14:34 - INFO - Processing Page 24/181: page_024.pdf
+2026-02-14 19:17:00 - INFO -   - Successfully parsed 19 entries from page 24.
+2026-02-14 19:17:02 - INFO - Processing Page 25/181: page_025.pdf
+2026-02-14 19:19:02 - INFO -   - Successfully parsed 21 entries from page 25.
+2026-02-14 19:19:04 - INFO - Processing Page 26/181: page_026.pdf
+2026-02-14 19:22:21 - INFO -   - Successfully parsed 26 entries from page 26.
+2026-02-14 19:22:23 - INFO - Processing Page 27/181: page_027.pdf
+2026-02-14 19:25:25 - INFO -   - Successfully parsed 29 entries from page 27.
+2026-02-14 19:25:27 - INFO - Processing Page 28/181: page_028.pdf
+2026-02-14 19:28:03 - INFO -   - Successfully parsed 27 entries from page 28.
+2026-02-14 19:28:05 - INFO - Processing Page 29/181: page_029.pdf
+2026-02-14 19:30:29 - INFO -   - Successfully parsed 25 entries from page 29.
+2026-02-14 19:30:31 - INFO - Processing Page 30/181: page_030.pdf
+2026-02-14 19:33:11 - INFO -   - Successfully parsed 30 entries from page 30.
+2026-02-14 19:33:13 - INFO - Processing Page 31/181: page_031.pdf
+2026-02-14 19:35:47 - INFO -   - Successfully parsed 27 entries from page 31.
+2026-02-14 19:35:49 - INFO - Processing Page 32/181: page_032.pdf
+2026-02-14 19:38:49 - INFO -   - Successfully parsed 26 entries from page 32.
+2026-02-14 19:38:51 - INFO - Processing Page 33/181: page_033.pdf
+2026-02-14 19:41:10 - INFO -   - Successfully parsed 23 entries from page 33.
+2026-02-14 19:41:12 - INFO - Processing Page 34/181: page_034.pdf
+2026-02-14 19:44:00 - INFO -   - Successfully parsed 22 entries from page 34.
+2026-02-14 19:44:02 - INFO - Processing Page 35/181: page_035.pdf
+2026-02-14 19:46:32 - INFO -   - Successfully parsed 21 entries from page 35.
+2026-02-14 19:46:34 - INFO - Processing Page 36/181: page_036.pdf
+2026-02-14 19:48:25 - INFO -   - Successfully parsed 19 entries from page 36.
+2026-02-14 19:48:27 - INFO - Processing Page 37/181: page_037.pdf
+2026-02-14 19:50:52 - INFO -   - Successfully parsed 27 entries from page 37.
+2026-02-14 19:50:54 - INFO - Processing Page 38/181: page_038.pdf
+2026-02-14 19:53:12 - INFO -   - Successfully parsed 24 entries from page 38.
+2026-02-14 19:53:14 - INFO - Processing Page 39/181: page_039.pdf
+2026-02-14 19:55:25 - INFO -   - Successfully parsed 22 entries from page 39.
+2026-02-14 19:55:27 - INFO - Processing Page 40/181: page_040.pdf
+2026-02-14 19:57:47 - INFO -   - Successfully parsed 23 entries from page 40.
+2026-02-14 19:57:49 - INFO - Processing Page 41/181: page_041.pdf
+2026-02-14 20:00:52 - INFO -   - Successfully parsed 26 entries from page 41.
+2026-02-14 20:00:54 - INFO - Processing Page 42/181: page_042.pdf
+2026-02-14 20:03:57 - INFO -   - Successfully parsed 27 entries from page 42.
+2026-02-14 20:03:59 - INFO - Processing Page 43/181: page_043.pdf
+2026-02-14 20:06:21 - INFO -   - Successfully parsed 24 entries from page 43.
+2026-02-14 20:06:23 - INFO - Processing Page 44/181: page_044.pdf
+2026-02-14 20:08:34 - INFO -   - Successfully parsed 19 entries from page 44.
+2026-02-14 20:08:36 - INFO - Processing Page 45/181: page_045.pdf
+2026-02-14 20:10:53 - INFO -   - Successfully parsed 18 entries from page 45.
+2026-02-14 20:10:55 - INFO - Processing Page 46/181: page_046.pdf
+2026-02-14 20:13:08 - INFO -   - Successfully parsed 21 entries from page 46.
+2026-02-14 20:13:10 - INFO - Processing Page 47/181: page_047.pdf
+2026-02-14 20:15:29 - INFO -   - Successfully parsed 21 entries from page 47.
+2026-02-14 20:15:31 - INFO - Processing Page 48/181: page_048.pdf
+2026-02-14 20:17:52 - INFO -   - Successfully parsed 19 entries from page 48.
+2026-02-14 20:17:54 - INFO - Processing Page 49/181: page_049.pdf
+2026-02-14 20:20:24 - INFO -   - Successfully parsed 21 entries from page 49.
+2026-02-14 20:20:26 - INFO - Processing Page 50/181: page_050.pdf
+2026-02-14 20:22:18 - INFO -   - Successfully parsed 19 entries from page 50.
+2026-02-14 20:22:20 - INFO - Processing Page 51/181: page_051.pdf
+2026-02-14 20:25:02 - INFO -   - Successfully parsed 24 entries from page 51.
+2026-02-14 20:25:04 - INFO - Processing Page 52/181: page_052.pdf
+2026-02-14 20:28:11 - INFO -   - Successfully parsed 24 entries from page 52.
+2026-02-14 20:28:13 - INFO - Processing Page 53/181: page_053.pdf
+2026-02-14 20:29:45 - INFO -   - Successfully parsed 19 entries from page 53.
+2026-02-14 20:29:47 - INFO - Processing Page 54/181: page_054.pdf
+2026-02-14 20:31:40 - INFO -   - Successfully parsed 16 entries from page 54.
+2026-02-14 20:31:42 - INFO - Processing Page 55/181: page_055.pdf
+2026-02-14 20:34:19 - INFO -   - Successfully parsed 24 entries from page 55.
+2026-02-14 20:34:21 - INFO - Processing Page 56/181: page_056.pdf
+2026-02-14 20:36:53 - INFO -   - Successfully parsed 21 entries from page 56.
+2026-02-14 20:36:55 - INFO - Processing Page 57/181: page_057.pdf
+2026-02-14 20:39:00 - INFO -   - Successfully parsed 21 entries from page 57.
+2026-02-14 20:39:02 - INFO - Processing Page 58/181: page_058.pdf
+2026-02-14 20:41:11 - INFO -   - Successfully parsed 20 entries from page 58.
+2026-02-14 20:41:13 - INFO - Processing Page 59/181: page_059.pdf
+2026-02-14 20:43:45 - INFO -   - Successfully parsed 23 entries from page 59.
+2026-02-14 20:43:48 - INFO - Processing Page 60/181: page_060.pdf
+2026-02-14 20:46:16 - INFO -   - Successfully parsed 26 entries from page 60.
+2026-02-14 20:46:18 - INFO - Processing Page 61/181: page_061.pdf
+2026-02-14 20:49:05 - INFO -   - Successfully parsed 25 entries from page 61.
+2026-02-14 20:49:07 - INFO - Processing Page 62/181: page_062.pdf
+2026-02-14 20:51:47 - INFO -   - Successfully parsed 20 entries from page 62.
+2026-02-14 20:51:49 - INFO - Processing Page 63/181: page_063.pdf
+2026-02-14 20:54:32 - INFO -   - Successfully parsed 22 entries from page 63.
+2026-02-14 20:54:34 - INFO - Processing Page 64/181: page_064.pdf
+2026-02-14 20:57:15 - INFO -   - Successfully parsed 21 entries from page 64.
+2026-02-14 20:57:17 - INFO - Processing Page 65/181: page_065.pdf
+2026-02-14 20:59:21 - INFO -   - Successfully parsed 25 entries from page 65.
+2026-02-14 20:59:23 - INFO - Processing Page 66/181: page_066.pdf
+2026-02-14 21:01:34 - INFO -   - Successfully parsed 27 entries from page 66.
+2026-02-14 21:01:36 - INFO - Processing Page 67/181: page_067.pdf
+2026-02-14 21:03:55 - INFO -   - Successfully parsed 24 entries from page 67.
+2026-02-14 21:03:57 - INFO - Processing Page 68/181: page_068.pdf
+2026-02-14 21:06:25 - INFO -   - Successfully parsed 24 entries from page 68.
+2026-02-14 21:06:27 - INFO - Processing Page 69/181: page_069.pdf
+2026-02-14 21:08:27 - INFO -   - Successfully parsed 22 entries from page 69.
+2026-02-14 21:08:29 - INFO - Processing Page 70/181: page_070.pdf
+2026-02-14 22:57:55 - ERROR -   - An unexpected error occurred for page_070.pdf: Timeout of 600.0s exceeded, last exception: 503 IOCP/Socket: Connection aborted (An established connection was aborted by the software in your host machine.
+ -- 10053)
+2026-02-14 22:57:57 - INFO - Processing Page 71/181: page_071.pdf
+2026-02-14 23:00:21 - INFO -   - Successfully parsed 28 entries from page 71.
+2026-02-14 23:00:23 - INFO - Processing Page 72/181: page_072.pdf
+2026-02-14 23:03:07 - INFO -   - Successfully parsed 21 entries from page 72.
+2026-02-14 23:03:09 - INFO - Processing Page 73/181: page_073.pdf
+2026-02-14 23:05:34 - INFO -   - Successfully parsed 24 entries from page 73.
+2026-02-14 23:05:36 - INFO - Processing Page 74/181: page_074.pdf
+2026-02-14 23:08:12 - INFO -   - Successfully parsed 26 entries from page 74.
+2026-02-14 23:08:14 - INFO - Processing Page 75/181: page_075.pdf
+2026-02-14 23:10:24 - INFO -   - Successfully parsed 26 entries from page 75.
+2026-02-14 23:10:26 - INFO - Processing Page 76/181: page_076.pdf
+2026-02-14 23:13:02 - INFO -   - Successfully parsed 24 entries from page 76.
+2026-02-14 23:13:04 - INFO - Processing Page 77/181: page_077.pdf
+2026-02-14 23:15:17 - INFO -   - Successfully parsed 22 entries from page 77.
+2026-02-14 23:15:20 - INFO - Processing Page 78/181: page_078.pdf
+2026-02-14 23:18:05 - INFO -   - Successfully parsed 24 entries from page 78.
+2026-02-14 23:18:07 - INFO - Processing Page 79/181: page_079.pdf
+2026-02-14 23:20:23 - INFO -   - Successfully parsed 24 entries from page 79.
+2026-02-14 23:20:25 - INFO - Processing Page 80/181: page_080.pdf
+2026-02-14 23:22:50 - INFO -   - Successfully parsed 21 entries from page 80.
+2026-02-14 23:22:52 - INFO - Processing Page 81/181: page_081.pdf
+2026-02-14 23:24:50 - INFO -   - Successfully parsed 22 entries from page 81.
+2026-02-14 23:24:52 - INFO - Processing Page 82/181: page_082.pdf
+2026-02-14 23:27:32 - INFO -   - Successfully parsed 22 entries from page 82.
+2026-02-14 23:27:34 - INFO - Processing Page 83/181: page_083.pdf
+2026-02-14 23:30:01 - INFO -   - Successfully parsed 25 entries from page 83.
+2026-02-14 23:30:03 - INFO - Processing Page 84/181: page_084.pdf
+2026-02-14 23:32:40 - INFO -   - Successfully parsed 24 entries from page 84.
+2026-02-14 23:32:42 - INFO - Processing Page 85/181: page_085.pdf
+2026-02-14 23:35:17 - INFO -   - Successfully parsed 23 entries from page 85.
+2026-02-14 23:35:19 - INFO - Processing Page 86/181: page_086.pdf
+2026-02-14 23:37:35 - INFO -   - Successfully parsed 26 entries from page 86.
+2026-02-14 23:37:37 - INFO - Processing Page 87/181: page_087.pdf
+2026-02-14 23:40:38 - INFO -   - Successfully parsed 26 entries from page 87.
+2026-02-14 23:40:40 - INFO - Processing Page 88/181: page_088.pdf
+2026-02-14 23:43:28 - INFO -   - Successfully parsed 25 entries from page 88.
+2026-02-14 23:43:30 - INFO - Processing Page 89/181: page_089.pdf
+2026-02-14 23:45:26 - INFO -   - Successfully parsed 24 entries from page 89.
+2026-02-14 23:45:28 - INFO - Processing Page 90/181: page_090.pdf
+2026-02-14 23:47:35 - INFO -   - Successfully parsed 23 entries from page 90.
+2026-02-14 23:47:37 - INFO - Processing Page 91/181: page_091.pdf
+2026-02-14 23:50:21 - INFO -   - Successfully parsed 24 entries from page 91.
+2026-02-14 23:50:23 - INFO - Processing Page 92/181: page_092.pdf
+2026-02-14 23:52:50 - INFO -   - Successfully parsed 23 entries from page 92.
+2026-02-14 23:52:52 - INFO - Processing Page 93/181: page_093.pdf
+2026-02-14 23:55:36 - INFO -   - Successfully parsed 27 entries from page 93.
+2026-02-14 23:55:38 - INFO - Processing Page 94/181: page_094.pdf
+2026-02-14 23:58:38 - INFO -   - Successfully parsed 26 entries from page 94.
+2026-02-14 23:58:40 - INFO - Processing Page 95/181: page_095.pdf
+2026-02-15 00:00:29 - INFO -   - Successfully parsed 25 entries from page 95.
+2026-02-15 00:00:31 - INFO - Processing Page 96/181: page_096.pdf
+2026-02-15 00:02:42 - INFO -   - Successfully parsed 29 entries from page 96.
+2026-02-15 00:02:44 - INFO - Processing Page 97/181: page_097.pdf
+2026-02-15 00:05:18 - INFO -   - Successfully parsed 26 entries from page 97.
+2026-02-15 00:05:20 - INFO - Processing Page 98/181: page_098.pdf
+2026-02-15 00:08:35 - INFO -   - Successfully parsed 33 entries from page 98.
+2026-02-15 00:08:37 - INFO - Processing Page 99/181: page_099.pdf
+2026-02-15 00:11:07 - INFO -   - Successfully parsed 24 entries from page 99.
+2026-02-15 00:11:09 - INFO - Processing Page 100/181: page_100.pdf
+2026-02-15 00:13:57 - INFO -   - Successfully parsed 29 entries from page 100.
+2026-02-15 00:13:59 - INFO - Processing Page 101/181: page_101.pdf
+2026-02-15 00:17:06 - INFO -   - Successfully parsed 34 entries from page 101.
+2026-02-15 00:17:08 - INFO - Processing Page 102/181: page_102.pdf
+2026-02-15 00:19:39 - INFO -   - Successfully parsed 31 entries from page 102.
+2026-02-15 00:19:41 - INFO - Processing Page 103/181: page_103.pdf
+2026-02-15 00:21:44 - INFO -   - Successfully parsed 20 entries from page 103.
+2026-02-15 00:21:46 - INFO - Processing Page 104/181: page_104.pdf
+2026-02-15 00:23:37 - INFO -   - Successfully parsed 20 entries from page 104.
+2026-02-15 00:23:39 - INFO - Processing Page 105/181: page_105.pdf
+2026-02-15 00:25:57 - INFO -   - Successfully parsed 29 entries from page 105.
+2026-02-15 00:25:59 - INFO - Processing Page 106/181: page_106.pdf
+2026-02-15 00:28:46 - INFO -   - Successfully parsed 27 entries from page 106.
+2026-02-15 00:28:48 - INFO - Processing Page 107/181: page_107.pdf
+2026-02-15 00:31:59 - INFO -   - Successfully parsed 31 entries from page 107.
+2026-02-15 00:32:01 - INFO - Processing Page 108/181: page_108.pdf
+2026-02-15 00:34:30 - INFO -   - Successfully parsed 28 entries from page 108.
+2026-02-15 00:34:32 - INFO - Processing Page 109/181: page_109.pdf
+2026-02-15 00:37:26 - INFO -   - Successfully parsed 24 entries from page 109.
+2026-02-15 00:37:28 - INFO - Processing Page 110/181: page_110.pdf
+2026-02-15 00:40:21 - INFO -   - Successfully parsed 28 entries from page 110.
+2026-02-15 00:40:23 - INFO - Processing Page 111/181: page_111.pdf
+2026-02-15 00:42:38 - INFO -   - Successfully parsed 34 entries from page 111.
+2026-02-15 00:42:40 - INFO - Processing Page 112/181: page_112.pdf
+2026-02-15 00:45:36 - INFO -   - Successfully parsed 31 entries from page 112.
+2026-02-15 00:45:39 - INFO - Processing Page 113/181: page_113.pdf
+2026-02-15 00:48:19 - INFO -   - Successfully parsed 31 entries from page 113.
+2026-02-15 00:48:21 - INFO - Processing Page 114/181: page_114.pdf
+2026-02-15 00:51:19 - INFO -   - Successfully parsed 29 entries from page 114.
+2026-02-15 00:51:21 - INFO - Processing Page 115/181: page_115.pdf
+2026-02-15 00:53:28 - INFO -   - Successfully parsed 20 entries from page 115.
+2026-02-15 00:53:30 - INFO - Processing Page 116/181: page_116.pdf
+2026-02-15 00:56:05 - INFO -   - Successfully parsed 19 entries from page 116.
+2026-02-15 00:56:08 - INFO - Processing Page 117/181: page_117.pdf
+2026-02-15 00:58:40 - INFO -   - Successfully parsed 22 entries from page 117.
+2026-02-15 00:58:42 - INFO - Processing Page 118/181: page_118.pdf
+2026-02-15 01:01:01 - INFO -   - Successfully parsed 22 entries from page 118.
+2026-02-15 01:01:03 - INFO - Processing Page 119/181: page_119.pdf
+2026-02-15 01:03:52 - INFO -   - Successfully parsed 22 entries from page 119.
+2026-02-15 01:03:54 - INFO - Processing Page 120/181: page_120.pdf
+2026-02-15 01:05:57 - INFO -   - Successfully parsed 21 entries from page 120.
+2026-02-15 01:05:59 - INFO - Processing Page 121/181: page_121.pdf
+2026-02-15 01:08:07 - INFO -   - Successfully parsed 19 entries from page 121.
+2026-02-15 01:08:09 - INFO - Processing Page 122/181: page_122.pdf
+2026-02-15 01:10:33 - INFO -   - Successfully parsed 20 entries from page 122.
+2026-02-15 01:10:35 - INFO - Processing Page 123/181: page_123.pdf
+2026-02-15 01:13:16 - INFO -   - Successfully parsed 26 entries from page 123.
+2026-02-15 01:13:18 - INFO - Processing Page 124/181: page_124.pdf
+2026-02-15 01:16:01 - INFO -   - Successfully parsed 23 entries from page 124.
+2026-02-15 01:16:03 - INFO - Processing Page 125/181: page_125.pdf
+2026-02-15 01:18:07 - INFO -   - Successfully parsed 18 entries from page 125.
+2026-02-15 01:18:09 - INFO - Processing Page 126/181: page_126.pdf
+2026-02-15 01:20:26 - INFO -   - Successfully parsed 20 entries from page 126.
+2026-02-15 01:20:28 - INFO - Processing Page 127/181: page_127.pdf
+2026-02-15 01:23:00 - INFO -   - Successfully parsed 22 entries from page 127.
+2026-02-15 01:23:02 - INFO - Processing Page 128/181: page_128.pdf
+2026-02-15 01:24:58 - INFO -   - Successfully parsed 20 entries from page 128.
+2026-02-15 01:25:00 - INFO - Processing Page 129/181: page_129.pdf
+2026-02-15 01:28:04 - INFO -   - Successfully parsed 25 entries from page 129.
+2026-02-15 01:28:06 - INFO - Processing Page 130/181: page_130.pdf
+2026-02-15 01:30:54 - INFO -   - Successfully parsed 24 entries from page 130.
+2026-02-15 01:30:56 - INFO - Processing Page 131/181: page_131.pdf
+2026-02-15 01:33:16 - INFO -   - Successfully parsed 23 entries from page 131.
+2026-02-15 01:33:18 - INFO - Processing Page 132/181: page_132.pdf
+2026-02-15 01:35:17 - INFO -   - Successfully parsed 19 entries from page 132.
+2026-02-15 01:35:19 - INFO - Processing Page 133/181: page_133.pdf
+2026-02-15 01:37:42 - INFO -   - Successfully parsed 20 entries from page 133.
+2026-02-15 01:37:44 - INFO - Processing Page 134/181: page_134.pdf
+2026-02-15 01:41:38 - INFO -   - Successfully parsed 31 entries from page 134.
+2026-02-15 01:41:40 - INFO - Processing Page 135/181: page_135.pdf
+2026-02-15 01:44:08 - INFO -   - Successfully parsed 28 entries from page 135.
+2026-02-15 01:44:10 - INFO - Processing Page 136/181: page_136.pdf
+2026-02-15 01:47:06 - INFO -   - Successfully parsed 27 entries from page 136.
+2026-02-15 01:47:08 - INFO - Processing Page 137/181: page_137.pdf
+2026-02-15 01:49:32 - INFO -   - Successfully parsed 18 entries from page 137.
+2026-02-15 01:49:34 - INFO - Processing Page 138/181: page_138.pdf
+2026-02-15 01:51:57 - INFO -   - Successfully parsed 28 entries from page 138.
+2026-02-15 01:51:59 - INFO - Processing Page 139/181: page_139.pdf
+2026-02-15 01:54:28 - INFO -   - Successfully parsed 26 entries from page 139.
+2026-02-15 01:54:30 - INFO - Processing Page 140/181: page_140.pdf
+2026-02-15 01:56:50 - INFO -   - Successfully parsed 23 entries from page 140.
+2026-02-15 01:56:52 - INFO - Processing Page 141/181: page_141.pdf
+2026-02-15 01:59:10 - INFO -   - Successfully parsed 25 entries from page 141.
+2026-02-15 01:59:12 - INFO - Processing Page 142/181: page_142.pdf
+2026-02-15 02:01:38 - INFO -   - Successfully parsed 22 entries from page 142.
+2026-02-15 02:01:40 - INFO - Processing Page 143/181: page_143.pdf
+2026-02-15 02:03:50 - INFO -   - Successfully parsed 19 entries from page 143.
+2026-02-15 02:03:52 - INFO - Processing Page 144/181: page_144.pdf
+2026-02-15 02:06:33 - INFO -   - Successfully parsed 33 entries from page 144.
+2026-02-15 02:06:35 - INFO - Processing Page 145/181: page_145.pdf
+2026-02-15 02:09:02 - INFO -   - Successfully parsed 25 entries from page 145.
+2026-02-15 02:09:04 - INFO - Processing Page 146/181: page_146.pdf
+2026-02-15 02:11:51 - INFO -   - Successfully parsed 25 entries from page 146.
+2026-02-15 02:11:53 - INFO - Processing Page 147/181: page_147.pdf
+2026-02-15 02:14:10 - INFO -   - Successfully parsed 21 entries from page 147.
+2026-02-15 02:14:12 - INFO - Processing Page 148/181: page_148.pdf
+2026-02-15 02:17:28 - INFO -   - Successfully parsed 28 entries from page 148.
+2026-02-15 02:17:30 - INFO - Processing Page 149/181: page_149.pdf
+2026-02-15 02:20:32 - INFO -   - Successfully parsed 23 entries from page 149.
+2026-02-15 02:20:34 - INFO - Processing Page 150/181: page_150.pdf
+2026-02-15 02:22:46 - INFO -   - Successfully parsed 22 entries from page 150.
+2026-02-15 02:22:48 - INFO - Processing Page 151/181: page_151.pdf
+2026-02-15 02:25:05 - INFO -   - Successfully parsed 24 entries from page 151.
+2026-02-15 02:25:07 - INFO - Processing Page 152/181: page_152.pdf
+2026-02-15 02:28:02 - INFO -   - Successfully parsed 30 entries from page 152.
+2026-02-15 02:28:04 - INFO - Processing Page 153/181: page_153.pdf
+2026-02-15 02:30:49 - INFO -   - Successfully parsed 25 entries from page 153.
+2026-02-15 02:30:51 - INFO - Processing Page 154/181: page_154.pdf
+2026-02-15 02:33:42 - INFO -   - Successfully parsed 27 entries from page 154.
+2026-02-15 02:33:44 - INFO - Processing Page 155/181: page_155.pdf
+2026-02-15 02:36:10 - INFO -   - Successfully parsed 22 entries from page 155.
+2026-02-15 02:36:12 - INFO - Processing Page 156/181: page_156.pdf
+2026-02-15 02:38:35 - INFO -   - Successfully parsed 22 entries from page 156.
+2026-02-15 02:38:37 - INFO - Processing Page 157/181: page_157.pdf
+2026-02-15 02:41:04 - INFO -   - Successfully parsed 20 entries from page 157.
+2026-02-15 02:41:06 - INFO - Processing Page 158/181: page_158.pdf
+2026-02-15 02:43:51 - INFO -   - Successfully parsed 23 entries from page 158.
+2026-02-15 02:43:53 - INFO - Processing Page 159/181: page_159.pdf
+2026-02-15 02:46:05 - INFO -   - Successfully parsed 23 entries from page 159.
+2026-02-15 02:46:07 - INFO - Processing Page 160/181: page_160.pdf
+2026-02-15 02:48:11 - INFO -   - Successfully parsed 21 entries from page 160.
+2026-02-15 02:48:13 - INFO - Processing Page 161/181: page_161.pdf
+2026-02-15 02:50:35 - INFO -   - Successfully parsed 24 entries from page 161.
+2026-02-15 02:50:37 - INFO - Processing Page 162/181: page_162.pdf
+2026-02-15 02:52:51 - INFO -   - Successfully parsed 22 entries from page 162.
+2026-02-15 02:52:53 - INFO - Processing Page 163/181: page_163.pdf
+2026-02-15 02:54:50 - INFO -   - Successfully parsed 22 entries from page 163.
+2026-02-15 02:54:52 - INFO - Processing Page 164/181: page_164.pdf
+2026-02-15 02:57:56 - INFO -   - Successfully parsed 27 entries from page 164.
+2026-02-15 02:57:58 - INFO - Processing Page 165/181: page_165.pdf
+2026-02-15 03:00:05 - INFO -   - Successfully parsed 24 entries from page 165.
+2026-02-15 03:00:07 - INFO - Processing Page 166/181: page_166.pdf
+2026-02-15 03:02:37 - INFO -   - Successfully parsed 28 entries from page 166.
+2026-02-15 03:02:39 - INFO - Processing Page 167/181: page_167.pdf
+2026-02-15 03:04:49 - INFO -   - Successfully parsed 22 entries from page 167.
+2026-02-15 03:04:51 - INFO - Processing Page 168/181: page_168.pdf
+2026-02-15 03:07:10 - INFO -   - Successfully parsed 18 entries from page 168.
+2026-02-15 03:07:12 - INFO - Processing Page 169/181: page_169.pdf
+2026-02-15 03:09:18 - INFO -   - Successfully parsed 18 entries from page 169.
+2026-02-15 03:09:20 - INFO - Processing Page 170/181: page_170.pdf
+2026-02-15 03:11:25 - INFO -   - Successfully parsed 19 entries from page 170.
+2026-02-15 03:11:27 - INFO - Processing Page 171/181: page_171.pdf
+2026-02-15 03:13:42 - INFO -   - Successfully parsed 25 entries from page 171.
+2026-02-15 03:13:44 - INFO - Processing Page 172/181: page_172.pdf
+2026-02-15 03:16:14 - INFO -   - Successfully parsed 20 entries from page 172.
+2026-02-15 03:16:16 - INFO - Processing Page 173/181: page_173.pdf
+2026-02-15 03:18:46 - INFO -   - Successfully parsed 27 entries from page 173.
+2026-02-15 03:18:48 - INFO - Processing Page 174/181: page_174.pdf
+2026-02-15 03:20:38 - INFO -   - Successfully parsed 19 entries from page 174.
+2026-02-15 03:20:40 - INFO - Processing Page 175/181: page_175.pdf
+2026-02-15 03:22:34 - INFO -   - Successfully parsed 18 entries from page 175.
+2026-02-15 03:22:36 - INFO - Processing Page 176/181: page_176.pdf
+2026-02-15 03:24:53 - INFO -   - Successfully parsed 17 entries from page 176.
+2026-02-15 03:24:55 - INFO - Processing Page 177/181: page_177.pdf
+2026-02-15 03:27:06 - INFO -   - Successfully parsed 21 entries from page 177.
+2026-02-15 03:27:09 - INFO - Processing Page 178/181: page_178.pdf
+2026-02-15 03:29:14 - INFO -   - Successfully parsed 21 entries from page 178.
+2026-02-15 03:29:16 - INFO - Processing Page 179/181: page_179.pdf
+2026-02-15 03:31:38 - INFO -   - Successfully parsed 21 entries from page 179.
+2026-02-15 03:31:40 - INFO - Processing Page 180/181: page_180.pdf
+2026-02-15 03:34:12 - INFO -   - Successfully parsed 18 entries from page 180.
+2026-02-15 03:34:14 - INFO - Processing Page 181/181: page_181.pdf
+2026-02-15 03:35:49 - INFO -   - Successfully parsed 9 entries from page 181.
+2026-02-15 03:35:51 - INFO - 
+Parsing complete! 4218 total entries saved to 'skiri_to_english_parsed.json'.
+2026-02-15 07:37:56 - INFO - Found 2 pages to process. Starting Skiri-to-English parsing...
+
+2026-02-15 07:37:56 - INFO - Processing Page 1/2: page_070.pdf
+2026-02-15 07:40:41 - INFO -   - Successfully parsed 27 entries from page 1.
+2026-02-15 07:40:43 - INFO - Processing Page 2/2: page_071.pdf
+2026-02-15 07:43:04 - INFO -   - Successfully parsed 28 entries from page 2.
+2026-02-15 07:43:06 - INFO - 
+Parsing complete! 55 total entries saved to 'skiri_to_english_parsed_MISSED.json'.

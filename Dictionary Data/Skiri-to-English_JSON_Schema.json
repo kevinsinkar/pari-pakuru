@@ -1,0 +1,198 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Skiri-to-English Dictionary Entry",
+  "description": "Complete structure for a Skiri-to-English dictionary entry",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["headword", "part_I"],
+    "properties": {
+      "headword": {
+        "type": "string",
+        "description": "The main Skiri entry word in boldface"
+      },
+      "entry_metadata": {
+        "type": "object",
+        "description": "Metadata about the entry location and structure",
+        "properties": {
+          "page_number": {"type": "integer"},
+          "column": {"type": "string", "enum": ["left", "right"]},
+          "continues_from_previous_page": {"type": "boolean", "default": false},
+          "continues_to_next_page": {"type": "boolean", "default": false}
+        }
+      },
+      "part_I": {
+        "type": "object",
+        "description": "Primary information about the entry",
+        "required": ["phonetic_form"],
+        "properties": {
+          "stem_preverb": {
+            "type": ["string", "null"],
+            "description": "Preverb required by the stem, noted in parentheses like (ut...) or (uur...)"
+          },
+          "phonetic_form": {
+            "type": "string",
+            "description": "CRITICAL: Phonetic transcription in square brackets [...] with syllable breaks marked by bullets"
+          },
+          "grammatical_info": {
+            "type": "object",
+            "properties": {
+              "grammatical_class": {
+                "type": "string",
+                "description": "SMALL CAPS abbreviation (VI, VT, N, ADJ, etc.)"
+              },
+              "verb_class": {
+                "type": ["string", "null"],
+                "description": "Verb inflectional class in parentheses: (1), (1-a), (1-i), (2), (2-i), (3), (4), (4-i), (u), (wi)"
+              },
+              "additional_forms": {
+                "type": "array",
+                "description": "Irregular or notable grammatical forms in curly brackets {...}",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "form_type": {"type": "string"},
+                    "form": {"type": "string"}
+                  }
+                }
+              }
+            }
+          },
+          "glosses": {
+            "type": "array",
+            "description": "English definitions, numbered if multiple meanings",
+            "items": {
+              "type": "object",
+              "properties": {
+                "number": {"type": ["integer", "null"]},
+                "definition": {"type": "string"},
+                "usage_notes": {
+                  "type": ["string", "null"],
+                  "description": "Italicized explanatory phrases clarifying usage"
+                }
+              }
+            }
+          },
+          "etymology": {
+            "type": ["object", "null"],
+            "description": "Word derivation in angle brackets <...>",
+            "properties": {
+              "raw_etymology": {"type": "string"},
+              "constituent_elements": {
+                "type": "array",
+                "description": "Morpheme breakdown",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "morpheme": {"type": "string"},
+                    "gloss": {"type": "string"},
+                    "morpheme_type": {
+                      "type": "string",
+                      "description": "e.g., prefix, root, suffix, preverb"
+                    }
+                  }
+                }
+              },
+              "literal_translation": {
+                "type": ["string", "null"],
+                "description": "Literal meaning from constituent parts"
+              }
+            }
+          },
+          "cognates": {
+            "type": "array",
+            "description": "Related forms in other languages (Ar., Pa., Wi., Ki.)",
+            "items": {
+              "type": "object",
+              "properties": {
+                "language": {
+                  "type": "string",
+                  "enum": ["Ar", "Pa", "Wi", "Ki", "SB"]
+                },
+                "form": {"type": "string"},
+                "gloss": {"type": ["string", "null"]}
+              }
+            }
+          }
+        }
+      },
+      "part_II": {
+        "type": ["object", "null"],
+        "description": "Illustrative forms and paradigms",
+        "properties": {
+          "paradigmatic_forms": {
+            "type": ["object", "null"],
+            "description": "Five standard inflected forms for verbs",
+            "properties": {
+              "form_1": {
+                "type": ["string", "null"],
+                "description": "1st Person Singular Subject, Indicative Mode, Perfective"
+              },
+              "form_2": {
+                "type": ["string", "null"],
+                "description": "3rd Person Singular Subject, Indicative Mode, Perfective"
+              },
+              "form_3": {
+                "type": ["string", "null"],
+                "description": "3rd Person Singular Subject, Indicative Mode, Imperfective"
+              },
+              "form_4": {
+                "type": ["string", "null"],
+                "description": "3rd Person Singular Subject, Absolutive Mode, Subordinate Perfective"
+              },
+              "form_5": {
+                "type": ["string", "null"],
+                "description": "3rd Person Singular Subject, Indicative Mode, Perfective Intentive"
+              },
+              "additional_forms": {
+                "type": "array",
+                "description": "Any additional inflected forms (plural, distributive, etc.) marked with bullets",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "form": {"type": "string"},
+                    "description": {"type": "string"}
+                  }
+                }
+              }
+            }
+          },
+          "examples": {
+            "type": "array",
+            "description": "Example sentences, often marked with bullet points",
+            "items": {
+              "type": "object",
+              "properties": {
+                "skiri_text": {"type": "string"},
+                "english_translation": {"type": ["string", "null"]},
+                "usage_context": {"type": ["string", "null"]}
+              }
+            }
+          }
+        }
+      },
+      "compound_structure": {
+        "type": ["object", "null"],
+        "description": "For compound stems: preverb + null verb stem (Ø) + noun structure",
+        "properties": {
+          "has_null_stem": {"type": "boolean"},
+          "preverb": {"type": ["string", "null"]},
+          "verb_stem": {"type": ["string", "null"]},
+          "noun": {"type": ["string", "null"]}
+        }
+      },
+      "derived_stems": {
+        "type": "array",
+        "description": "When entry head is a dependent form serving as constituent in derived stems",
+        "items": {
+          "type": "object",
+          "properties": {
+            "derived_form": {"type": "string"},
+            "phonetic_form": {"type": "string"},
+            "meaning": {"type": "string"}
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "English-to-Skiri Dictionary Entry",
+  "description": "Complete structure for an English-to-Skiri dictionary entry with multiple subentries",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["english_entry_word", "subentries"],
+    "properties": {
+      "english_entry_word": {
+        "type": "string",
+        "description": "The English headword in boldface at the beginning of entry"
+      },
+      "entry_metadata": {
+        "type": "object",
+        "description": "Metadata about the entry location and structure",
+        "properties": {
+          "page_number": {"type": "integer"},
+          "column": {"type": "string", "enum": ["left", "right"]},
+          "continues_from_previous_page": {"type": "boolean", "default": false},
+          "continues_to_next_page": {"type": "boolean", "default": false}
+        }
+      },
+      "subentries": {
+        "type": "array",
+        "description": "Each Skiri translation begins a separate subentry (up to 3 parts each)",
+        "items": {
+          "type": "object",
+          "properties": {
+            "subentry_number": {
+              "type": "integer",
+              "description": "Sequential number if multiple Skiri words translate the same English word"
+            },
+            "part_I": {
+              "type": "object",
+              "description": "Basic information for this Skiri translation",
+              "required": ["skiri_term", "phonetic_form"],
+              "properties": {
+                "skiri_term": {
+                  "type": "string",
+                  "description": "Equivalent Skiri word or stem in boldface"
+                },
+                "stem_preverb": {
+                  "type": ["string", "null"],
+                  "description": "Preverb noted in parentheses, e.g., (uur...), appears AFTER the stem"
+                },
+                "phonetic_form": {
+                  "type": "string",
+                  "description": "CRITICAL: Phonetic transcription in square brackets [...] with syllable breaks"
+                },
+                "grammatical_classification": {
+                  "type": "object",
+                  "properties": {
+                    "class_abbr": {
+                      "type": "string",
+                      "description": "SMALL CAPS abbreviation (VI, VT, N, VD, etc.)"
+                    },
+                    "class_full_description": {
+                      "type": ["string", "null"],
+                      "description": "Full form if needed for clarity"
+                    },
+                    "verb_class": {
+                      "type": ["string", "null"],
+                      "description": "Verb inflectional class: (1), (1-a), (1-i), (2), (2-i), (3), (4), (4-i), (u), (wi)"
+                    }
+                  }
+                },
+                "grammatical_forms": {
+                  "type": "array",
+                  "description": "Additional forms in curly brackets {...}",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "form_type": {"type": "string"},
+                      "form": {"type": "string"}
+                    }
+                  }
+                },
+                "english_glosses": {
+                  "type": "array",
+                  "description": "English definitions/senses, numbered if multiple",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "number": {"type": ["integer", "null"]},
+                      "definition": {"type": "string"},
+                      "usage_notes": {
+                        "type": ["string", "null"],
+                        "description": "Italicized usage clarifications"
+                      }
+                    }
+                  }
+                },
+                "etymology": {
+                  "type": ["object", "null"],
+                  "description": "Word derivation in angle brackets <...>",
+                  "properties": {
+                    "raw_etymology": {"type": "string"},
+                    "constituent_elements": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "morpheme": {"type": "string"},
+                          "gloss": {"type": "string"}
+                        }
+                      }
+                    },
+                    "literal_translation": {"type": ["string", "null"]}
+                  }
+                }
+              }
+            },
+            "part_II": {
+              "type": ["object", "null"],
+              "description": "Paradigmatic forms and examples",
+              "properties": {
+                "paradigmatic_forms": {
+                  "type": "array",
+                  "description": "Numbered list of 5 standard forms (verbs)",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "form_number": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 5
+                      },
+                      "description": {
+                        "type": "string",
+                        "enum": [
+                          "1st Person Singular Subject, Indicative Mode, Perfective",
+                          "3rd Person Singular Subject, Indicative Mode, Perfective",
+                          "3rd Person Singular Subject, Indicative Mode, Imperfective",
+                          "3rd Person Singular Subject, Absolutive Mode, Subordinate Perfective",
+                          "3rd Person Singular Subject, Indicative Mode, Perfective Intentive"
+                        ]
+                      },
+                      "skiri_form": {"type": "string"}
+                    }
+                  },
+                  "minItems": 0,
+                  "maxItems": 5
+                },
+                "additional_forms": {
+                  "type": "array",
+                  "description": "Any additional grammatical forms beyond the standard 5, marked with bullets",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "form": {"type": "string"},
+                      "description": {"type": "string"}
+                    }
+                  }
+                },
+                "examples": {
+                  "type": "array",
+                  "description": "Example sentences with bullets",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "skiri_text": {"type": "string"},
+                      "english_translation": {"type": ["string", "null"]}
+                    }
+                  }
+                }
+              }
+            },
+            "part_III": {
+              "type": ["object", "null"],
+              "description": "Cross-references to related English words",
+              "properties": {
+                "cross_references": {
+                  "type": "array",
+                  "description": "Related English entries user might want to consult, begins with 'see'",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "english_term": {
+                        "type": "string",
+                        "description": "English entry head to reference"
+                      },
+                      "skiri_equivalents": {
+                        "type": "array",
+                        "description": "Skiri forms in curly brackets for that English term",
+                        "items": {"type": "string"}
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

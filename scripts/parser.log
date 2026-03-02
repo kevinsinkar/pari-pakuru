@@ -1,0 +1,603 @@
+2026-02-15 08:08:36 - INFO - Loading parsing instructions and JSON schema...
+2026-02-15 08:15:30 - INFO - Loading parsing instructions and JSON schema...
+2026-02-15 08:15:30 - INFO - Found 284 pages to process.
+2026-02-15 08:15:30 - INFO - Starting COMPLETE English-to-Skiri dictionary parsing...
+2026-02-15 08:15:30 - INFO - Extracting: phonetic forms, etymologies, paradigms, cross-references - all data
+
+2026-02-15 08:15:30 - INFO - Processing Page 1/284: 003_English to Skiri.pdf
+2026-02-15 08:18:12 - INFO -   - Successfully parsed 33 English entries with complete data.
+2026-02-15 08:18:12 - INFO - Processing Page 2/284: 004_English to Skiri.pdf
+2026-02-15 08:21:14 - INFO -   - Successfully parsed 26 English entries with complete data.
+2026-02-15 08:21:14 - INFO - Processing Page 3/284: 005_English to Skiri.pdf
+2026-02-15 08:24:23 - INFO -   - Successfully parsed 26 English entries with complete data.
+2026-02-15 08:24:23 - INFO - Processing Page 4/284: 006_English to Skiri.pdf
+2026-02-15 08:26:37 - INFO -   - Successfully parsed 16 English entries with complete data.
+2026-02-15 08:26:37 - INFO - Processing Page 5/284: 007_English to Skiri.pdf
+2026-02-15 08:29:27 - INFO -   - Successfully parsed 25 English entries with complete data.
+2026-02-15 08:29:28 - INFO - Processing Page 6/284: 008_English to Skiri.pdf
+2026-02-15 08:32:09 - INFO -   - Successfully parsed 29 English entries with complete data.
+2026-02-15 08:32:09 - INFO - Processing Page 7/284: 009_English to Skiri.pdf
+2026-02-15 08:34:47 - INFO -   - Successfully parsed 25 English entries with complete data.
+2026-02-15 08:34:48 - INFO - Processing Page 8/284: 010_English to Skiri.pdf
+2026-02-15 08:37:26 - INFO -   - Successfully parsed 20 English entries with complete data.
+2026-02-15 08:37:26 - INFO - Processing Page 9/284: 011_English to Skiri.pdf
+2026-02-15 08:40:05 - INFO -   - Successfully parsed 28 English entries with complete data.
+2026-02-15 08:40:05 - INFO - Processing Page 10/284: 012_English to Skiri.pdf
+2026-02-15 08:42:34 - INFO -   - Successfully parsed 26 English entries with complete data.
+2026-02-15 08:42:34 - INFO - Processing Page 11/284: 013_English to Skiri.pdf
+2026-02-15 08:45:01 - INFO -   - Successfully parsed 22 English entries with complete data.
+2026-02-15 08:45:01 - INFO - Processing Page 12/284: 014_English to Skiri.pdf
+2026-02-15 08:47:24 - INFO -   - Successfully parsed 24 English entries with complete data.
+2026-02-15 08:47:24 - INFO - Processing Page 13/284: 015_English to Skiri.pdf
+2026-02-15 08:50:14 - INFO -   - Successfully parsed 12 English entries with complete data.
+2026-02-15 08:50:14 - INFO - Processing Page 14/284: 016_English to Skiri.pdf
+2026-02-15 08:52:33 - INFO -   - Successfully parsed 6 English entries with complete data.
+2026-02-15 08:52:33 - INFO - Processing Page 15/284: 017_English to Skiri.pdf
+2026-02-15 08:55:30 - INFO -   - Successfully parsed 24 English entries with complete data.
+2026-02-15 08:55:30 - INFO - Processing Page 16/284: 018_English to Skiri.pdf
+2026-02-15 08:57:54 - INFO -   - Successfully parsed 23 English entries with complete data.
+2026-02-15 08:57:54 - INFO - Processing Page 17/284: 019_English to Skiri.pdf
+2026-02-15 09:00:15 - INFO -   - Successfully parsed 25 English entries with complete data.
+2026-02-15 09:00:15 - INFO - Processing Page 18/284: 020_English to Skiri.pdf
+2026-02-15 09:03:35 - INFO -   - Successfully parsed 17 English entries with complete data.
+2026-02-15 09:03:35 - INFO - Processing Page 19/284: 021_English to Skiri.pdf
+2026-02-15 09:05:47 - INFO -   - Successfully parsed 15 English entries with complete data.
+2026-02-15 09:05:47 - INFO - Processing Page 20/284: 022_English to Skiri.pdf
+2026-02-15 09:08:15 - INFO -   - Successfully parsed 15 English entries with complete data.
+2026-02-15 09:08:15 - INFO - Processing Page 21/284: 023_English to Skiri.pdf
+2026-02-15 09:11:27 - INFO -   - Successfully parsed 20 English entries with complete data.
+2026-02-15 09:11:27 - INFO - Processing Page 22/284: 024_English to Skiri.pdf
+2026-02-15 09:14:05 - INFO -   - Successfully parsed 13 English entries with complete data.
+2026-02-15 09:14:05 - INFO - Processing Page 23/284: 025_English to Skiri.pdf
+2026-02-15 09:16:28 - INFO -   - Successfully parsed 27 English entries with complete data.
+2026-02-15 09:16:28 - INFO - Processing Page 24/284: 026_English to Skiri.pdf
+2026-02-15 09:19:08 - INFO -   - Successfully parsed 35 English entries with complete data.
+2026-02-15 09:19:08 - INFO - Processing Page 25/284: 027_English to Skiri.pdf
+2026-02-15 09:21:42 - INFO -   - Successfully parsed 18 English entries with complete data.
+2026-02-15 09:21:42 - INFO - Processing Page 26/284: 028_English to Skiri.pdf
+2026-02-15 09:24:32 - INFO -   - Successfully parsed 21 English entries with complete data.
+2026-02-15 09:24:32 - INFO - Processing Page 27/284: 029_English to Skiri.pdf
+2026-02-15 09:26:42 - INFO -   - Successfully parsed 15 English entries with complete data.
+2026-02-15 09:26:42 - INFO - Processing Page 28/284: 030_English to Skiri.pdf
+2026-02-15 09:29:28 - INFO -   - Successfully parsed 26 English entries with complete data.
+2026-02-15 09:29:28 - INFO - Processing Page 29/284: 031_English to Skiri.pdf
+2026-02-15 09:32:10 - INFO -   - Successfully parsed 24 English entries with complete data.
+2026-02-15 09:32:10 - INFO - Processing Page 30/284: 032_English to Skiri.pdf
+2026-02-15 09:34:07 - INFO -   - Successfully parsed 20 English entries with complete data.
+2026-02-15 09:34:08 - INFO - Processing Page 31/284: 033_English to Skiri.pdf
+2026-02-15 09:37:18 - INFO -   - Successfully parsed 24 English entries with complete data.
+2026-02-15 09:37:18 - INFO - Processing Page 32/284: 034_English to Skiri.pdf
+2026-02-15 09:40:05 - INFO -   - Successfully parsed 28 English entries with complete data.
+2026-02-15 09:40:05 - INFO - Processing Page 33/284: 035_English to Skiri.pdf
+2026-02-15 09:43:04 - INFO -   - Successfully parsed 30 English entries with complete data.
+2026-02-15 09:43:04 - INFO - Processing Page 34/284: 036_English to Skiri.pdf
+2026-02-15 09:45:29 - INFO -   - Successfully parsed 24 English entries with complete data.
+2026-02-15 09:45:29 - INFO - Processing Page 35/284: 037_English to Skiri.pdf
+2026-02-15 09:48:00 - INFO -   - Successfully parsed 21 English entries with complete data.
+2026-02-15 09:48:00 - INFO - Processing Page 36/284: 038_English to Skiri.pdf
+2026-02-15 09:50:22 - INFO -   - Successfully parsed 31 English entries with complete data.
+2026-02-15 09:50:22 - INFO - Processing Page 37/284: 039_English to Skiri.pdf
+2026-02-15 09:53:07 - INFO -   - Successfully parsed 19 English entries with complete data.
+2026-02-15 09:53:07 - INFO - Processing Page 38/284: 040_English to Skiri.pdf
+2026-02-15 09:55:05 - INFO -   - Successfully parsed 20 English entries with complete data.
+2026-02-15 09:55:05 - INFO - Processing Page 39/284: 041_English to Skiri.pdf
+2026-02-15 09:57:15 - INFO -   - Successfully parsed 15 English entries with complete data.
+2026-02-15 09:57:15 - INFO - Processing Page 40/284: 042_English to Skiri.pdf
+2026-02-15 10:00:18 - INFO -   - Successfully parsed 24 English entries with complete data.
+2026-02-15 10:00:18 - INFO - Processing Page 41/284: 043_English to Skiri.pdf
+2026-02-15 10:03:10 - INFO -   - Successfully parsed 21 English entries with complete data.
+2026-02-15 10:03:10 - INFO - Processing Page 42/284: 044_English to Skiri.pdf
+2026-02-15 10:05:39 - INFO -   - Successfully parsed 20 English entries with complete data.
+2026-02-15 10:05:39 - INFO - Processing Page 43/284: 045_English to Skiri.pdf
+2026-02-15 10:08:59 - INFO -   - Successfully parsed 28 English entries with complete data.
+2026-02-15 10:08:59 - INFO - Processing Page 44/284: 046_English to Skiri.pdf
+2026-02-15 10:11:17 - INFO -   - Successfully parsed 30 English entries with complete data.
+2026-02-15 10:11:17 - INFO - Processing Page 45/284: 047_English to Skiri.pdf
+2026-02-15 10:13:57 - INFO -   - Successfully parsed 25 English entries with complete data.
+2026-02-15 10:13:57 - INFO - Processing Page 46/284: 048_English to Skiri.pdf
+2026-02-15 10:16:11 - INFO -   - Successfully parsed 20 English entries with complete data.
+2026-02-15 10:16:11 - INFO - Processing Page 47/284: 049_English to Skiri.pdf
+2026-02-15 10:18:35 - INFO -   - Successfully parsed 15 English entries with complete data.
+2026-02-15 10:18:35 - INFO - Processing Page 48/284: 050_English to Skiri.pdf
+2026-02-15 10:21:36 - INFO -   - Successfully parsed 32 English entries with complete data.
+2026-02-15 10:21:36 - INFO - Processing Page 49/284: 051_English to Skiri.pdf
+2026-02-15 10:23:55 - INFO -   - Successfully parsed 18 English entries with complete data.
+2026-02-15 10:23:55 - INFO - Processing Page 50/284: 052_English to Skiri.pdf
+2026-02-15 10:26:24 - INFO -   - Successfully parsed 28 English entries with complete data.
+2026-02-15 10:26:24 - INFO - Processing Page 51/284: 053_English to Skiri.pdf
+2026-02-15 10:28:53 - INFO -   - Successfully parsed 32 English entries with complete data.
+2026-02-15 10:28:53 - INFO - Processing Page 52/284: 054_English to Skiri.pdf
+2026-02-15 10:31:20 - INFO -   - Successfully parsed 25 English entries with complete data.
+2026-02-15 10:31:20 - INFO - Processing Page 53/284: 055_English to Skiri.pdf
+2026-02-15 10:33:53 - INFO -   - Successfully parsed 22 English entries with complete data.
+2026-02-15 10:33:53 - INFO - Processing Page 54/284: 056_English to Skiri.pdf
+2026-02-15 10:37:07 - INFO -   - Successfully parsed 28 English entries with complete data.
+2026-02-15 10:37:07 - INFO - Processing Page 55/284: 057_English to Skiri.pdf
+2026-02-15 10:39:57 - INFO -   - Successfully parsed 32 English entries with complete data.
+2026-02-15 10:39:57 - INFO - Processing Page 56/284: 058_English to Skiri.pdf
+2026-02-15 10:42:54 - INFO -   - Successfully parsed 25 English entries with complete data.
+2026-02-15 10:42:54 - INFO - Processing Page 57/284: 059_English to Skiri.pdf
+2026-02-15 10:45:25 - INFO -   - Successfully parsed 23 English entries with complete data.
+2026-02-15 10:45:25 - INFO - Processing Page 58/284: 060_English to Skiri.pdf
+2026-02-15 10:47:42 - INFO -   - Successfully parsed 29 English entries with complete data.
+2026-02-15 10:47:42 - INFO - Processing Page 59/284: 061_English to Skiri.pdf
+2026-02-15 10:50:08 - INFO -   - Successfully parsed 26 English entries with complete data.
+2026-02-15 10:50:08 - INFO - Processing Page 60/284: 062_English to Skiri.pdf
+2026-02-15 10:52:52 - INFO -   - Successfully parsed 22 English entries with complete data.
+2026-02-15 10:52:52 - INFO - Processing Page 61/284: 063_English to Skiri.pdf
+2026-02-15 10:55:51 - INFO -   - Successfully parsed 21 English entries with complete data.
+2026-02-15 10:55:52 - INFO - Processing Page 62/284: 064_English to Skiri.pdf
+2026-02-15 10:58:30 - INFO -   - Successfully parsed 19 English entries with complete data.
+2026-02-15 10:58:30 - INFO - Processing Page 63/284: 065_English to Skiri.pdf
+2026-02-15 11:00:58 - INFO -   - Successfully parsed 31 English entries with complete data.
+2026-02-15 11:00:58 - INFO - Processing Page 64/284: 066_English to Skiri.pdf
+2026-02-15 11:03:37 - INFO -   - Successfully parsed 17 English entries with complete data.
+2026-02-15 11:03:37 - INFO - Processing Page 65/284: 067_English to Skiri.pdf
+2026-02-15 11:06:23 - INFO -   - Successfully parsed 21 English entries with complete data.
+2026-02-15 11:06:23 - INFO - Processing Page 66/284: 068_English to Skiri.pdf
+2026-02-15 11:08:46 - INFO -   - Successfully parsed 30 English entries with complete data.
+2026-02-15 11:08:46 - INFO - Processing Page 67/284: 069_English to Skiri.pdf
+2026-02-15 11:10:50 - INFO -   - Successfully parsed 20 English entries with complete data.
+2026-02-15 11:10:50 - INFO - Processing Page 68/284: 070_English to Skiri.pdf
+2026-02-15 11:13:52 - INFO -   - Successfully parsed 22 English entries with complete data.
+2026-02-15 11:13:52 - INFO - Processing Page 69/284: 071_English to Skiri.pdf
+2026-02-15 11:16:23 - INFO -   - Successfully parsed 18 English entries with complete data.
+2026-02-15 11:16:23 - INFO - Processing Page 70/284: 072_English to Skiri.pdf
+2026-02-15 11:18:59 - INFO -   - Successfully parsed 29 English entries with complete data.
+2026-02-15 11:18:59 - INFO - Processing Page 71/284: 073_English to Skiri.pdf
+2026-02-15 11:21:25 - INFO -   - Successfully parsed 26 English entries with complete data.
+2026-02-15 11:21:25 - INFO - Processing Page 72/284: 074_English to Skiri.pdf
+2026-02-15 11:23:49 - INFO -   - Successfully parsed 17 English entries with complete data.
+2026-02-15 11:23:49 - INFO - Processing Page 73/284: 075_English to Skiri.pdf
+2026-02-15 11:26:57 - INFO -   - Successfully parsed 24 English entries with complete data.
+2026-02-15 11:26:57 - INFO - Processing Page 74/284: 076_English to Skiri.pdf
+2026-02-15 11:29:54 - INFO -   - Successfully parsed 23 English entries with complete data.
+2026-02-15 11:29:54 - INFO - Processing Page 75/284: 077_English to Skiri.pdf
+2026-02-15 11:32:05 - INFO -   - Successfully parsed 24 English entries with complete data.
+2026-02-15 11:32:05 - INFO - Processing Page 76/284: 078_English to Skiri.pdf
+2026-02-15 11:34:35 - INFO -   - Successfully parsed 28 English entries with complete data.
+2026-02-15 11:34:35 - INFO - Processing Page 77/284: 079_English to Skiri.pdf
+2026-02-15 11:37:25 - INFO -   - Successfully parsed 24 English entries with complete data.
+2026-02-15 11:37:25 - INFO - Processing Page 78/284: 080_English to Skiri.pdf
+2026-02-15 11:44:25 - ERROR -   - An unexpected error occurred for 080_English to Skiri.pdf: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.
+2026-02-15 11:44:25 - INFO - Processing Page 79/284: 081_English to Skiri.pdf
+2026-02-15 11:47:02 - INFO -   - Successfully parsed 17 English entries with complete data.
+2026-02-15 11:47:02 - INFO - Processing Page 80/284: 082_English to Skiri.pdf
+2026-02-15 11:49:36 - INFO -   - Successfully parsed 15 English entries with complete data.
+2026-02-15 11:49:36 - INFO - Processing Page 81/284: 083_English to Skiri.pdf
+2026-02-15 11:52:19 - INFO -   - Successfully parsed 30 English entries with complete data.
+2026-02-15 11:52:19 - INFO - Processing Page 82/284: 084_English to Skiri.pdf
+2026-02-15 11:54:37 - INFO -   - Successfully parsed 22 English entries with complete data.
+2026-02-15 11:54:37 - INFO - Processing Page 83/284: 085_English to Skiri.pdf
+2026-02-15 11:56:58 - INFO -   - Successfully parsed 18 English entries with complete data.
+2026-02-15 11:56:58 - INFO - Processing Page 84/284: 086_English to Skiri.pdf
+2026-02-15 11:59:50 - INFO -   - Successfully parsed 24 English entries with complete data.
+2026-02-15 11:59:50 - INFO - Processing Page 85/284: 087_English to Skiri.pdf
+2026-02-15 12:02:56 - INFO -   - Successfully parsed 22 English entries with complete data.
+2026-02-15 12:02:56 - INFO - Processing Page 86/284: 088_English to Skiri.pdf
+2026-02-15 12:05:23 - INFO -   - Successfully parsed 19 English entries with complete data.
+2026-02-15 12:05:23 - INFO - Processing Page 87/284: 089_English to Skiri.pdf
+2026-02-15 12:08:01 - INFO -   - Successfully parsed 20 English entries with complete data.
+2026-02-15 12:08:01 - INFO - Processing Page 88/284: 090_English to Skiri.pdf
+2026-02-15 12:10:37 - INFO -   - Successfully parsed 28 English entries with complete data.
+2026-02-15 12:10:37 - INFO - Processing Page 89/284: 091_English to Skiri.pdf
+2026-02-15 12:13:15 - INFO -   - Successfully parsed 23 English entries with complete data.
+2026-02-15 12:13:15 - INFO - Processing Page 90/284: 092_English to Skiri.pdf
+2026-02-15 12:15:47 - INFO -   - Successfully parsed 21 English entries with complete data.
+2026-02-15 12:15:47 - INFO - Processing Page 91/284: 093_English to Skiri.pdf
+2026-02-15 12:18:06 - INFO -   - Successfully parsed 21 English entries with complete data.
+2026-02-15 12:18:06 - INFO - Processing Page 92/284: 094_English to Skiri.pdf
+2026-02-15 12:20:53 - INFO -   - Successfully parsed 26 English entries with complete data.
+2026-02-15 12:20:53 - INFO - Processing Page 93/284: 095_English to Skiri.pdf
+2026-02-15 12:23:35 - INFO -   - Successfully parsed 20 English entries with complete data.
+2026-02-15 12:23:35 - INFO - Processing Page 94/284: 096_English to Skiri.pdf
+2026-02-15 12:26:21 - INFO -   - Successfully parsed 23 English entries with complete data.
+2026-02-15 12:26:21 - INFO - Processing Page 95/284: 097_English to Skiri.pdf
+2026-02-15 12:28:58 - INFO -   - Successfully parsed 23 English entries with complete data.
+2026-02-15 12:28:58 - INFO - Processing Page 96/284: 098_English to Skiri.pdf
+2026-02-15 12:31:53 - INFO -   - Successfully parsed 26 English entries with complete data.
+2026-02-15 12:31:53 - INFO - Processing Page 97/284: 099_English to Skiri.pdf
+2026-02-15 12:34:09 - INFO -   - Successfully parsed 19 English entries with complete data.
+2026-02-15 12:34:09 - INFO - Processing Page 98/284: 100_English to Skiri.pdf
+2026-02-15 12:36:48 - INFO -   - Successfully parsed 14 English entries with complete data.
+2026-02-15 12:36:48 - INFO - Processing Page 99/284: 101_English to Skiri.pdf
+2026-02-15 12:39:22 - INFO -   - Successfully parsed 27 English entries with complete data.
+2026-02-15 12:39:22 - INFO - Processing Page 100/284: 102_English to Skiri.pdf
+2026-02-15 12:41:54 - INFO -   - Successfully parsed 21 English entries with complete data.
+2026-02-15 12:41:54 - INFO - Processing Page 101/284: 103_English to Skiri.pdf
+2026-02-15 12:44:22 - INFO -   - Successfully parsed 26 English entries with complete data.
+2026-02-15 12:44:22 - INFO - Processing Page 102/284: 104_English to Skiri.pdf
+2026-02-15 12:46:57 - INFO -   - Successfully parsed 29 English entries with complete data.
+2026-02-15 12:46:57 - INFO - Processing Page 103/284: 105_English to Skiri.pdf
+2026-02-15 12:49:38 - INFO -   - Successfully parsed 26 English entries with complete data.
+2026-02-15 12:49:38 - INFO - Processing Page 104/284: 106_English to Skiri.pdf
+2026-02-15 12:52:32 - INFO -   - Successfully parsed 20 English entries with complete data.
+2026-02-15 12:52:32 - INFO - Processing Page 105/284: 107_English to Skiri.pdf
+2026-02-15 12:55:18 - INFO -   - Successfully parsed 28 English entries with complete data.
+2026-02-15 12:55:18 - INFO - Processing Page 106/284: 108_English to Skiri.pdf
+2026-02-15 12:57:19 - INFO -   - Successfully parsed 24 English entries with complete data.
+2026-02-15 12:57:19 - INFO - Processing Page 107/284: 109_English to Skiri.pdf
+2026-02-15 13:00:24 - INFO -   - Successfully parsed 20 English entries with complete data.
+2026-02-15 13:00:24 - INFO - Processing Page 108/284: 110_English to Skiri.pdf
+2026-02-15 13:03:10 - INFO -   - Successfully parsed 25 English entries with complete data.
+2026-02-15 13:03:10 - INFO - Processing Page 109/284: 111_English to Skiri.pdf
+2026-02-15 13:05:31 - INFO -   - Successfully parsed 18 English entries with complete data.
+2026-02-15 13:05:31 - INFO - Processing Page 110/284: 112_English to Skiri.pdf
+2026-02-15 13:08:14 - INFO -   - Successfully parsed 28 English entries with complete data.
+2026-02-15 13:08:14 - INFO - Processing Page 111/284: 113_English to Skiri.pdf
+2026-02-15 13:10:58 - INFO -   - Successfully parsed 26 English entries with complete data.
+2026-02-15 13:10:58 - INFO - Processing Page 112/284: 114_English to Skiri.pdf
+2026-02-15 13:13:11 - INFO -   - Successfully parsed 23 English entries with complete data.
+2026-02-15 13:13:11 - INFO - Processing Page 113/284: 115_English to Skiri.pdf
+2026-02-15 13:15:53 - INFO -   - Successfully parsed 17 English entries with complete data.
+2026-02-15 13:15:54 - INFO - Processing Page 114/284: 116_English to Skiri.pdf
+2026-02-15 13:17:53 - INFO -   - Successfully parsed 15 English entries with complete data.
+2026-02-15 13:17:53 - INFO - Processing Page 115/284: 117_English to Skiri.pdf
+2026-02-15 13:20:46 - INFO -   - Successfully parsed 26 English entries with complete data.
+2026-02-15 13:20:46 - INFO - Processing Page 116/284: 118_English to Skiri.pdf
+2026-02-15 13:22:59 - INFO -   - Successfully parsed 26 English entries with complete data.
+2026-02-15 13:22:59 - INFO - Processing Page 117/284: 119_English to Skiri.pdf
+2026-02-15 13:25:56 - INFO -   - Successfully parsed 25 English entries with complete data.
+2026-02-15 13:25:56 - INFO - Processing Page 118/284: 120_English to Skiri.pdf
+2026-02-15 13:28:13 - INFO -   - Successfully parsed 20 English entries with complete data.
+2026-02-15 13:28:13 - INFO - Processing Page 119/284: 121_English to Skiri.pdf
+2026-02-15 13:30:30 - INFO -   - Successfully parsed 21 English entries with complete data.
+2026-02-15 13:30:30 - INFO - Processing Page 120/284: 122_English to Skiri.pdf
+2026-02-15 13:32:56 - INFO -   - Successfully parsed 22 English entries with complete data.
+2026-02-15 13:32:56 - INFO - Processing Page 121/284: 123_English to Skiri.pdf
+2026-02-15 13:35:39 - INFO -   - Successfully parsed 27 English entries with complete data.
+2026-02-15 13:35:39 - INFO - Processing Page 122/284: 124_English to Skiri.pdf
+2026-02-15 13:38:00 - INFO -   - Successfully parsed 31 English entries with complete data.
+2026-02-15 13:38:00 - INFO - Processing Page 123/284: 125_English to Skiri.pdf
+2026-02-15 13:40:37 - INFO -   - Successfully parsed 24 English entries with complete data.
+2026-02-15 13:40:37 - INFO - Processing Page 124/284: 126_English to Skiri.pdf
+2026-02-15 13:43:13 - INFO -   - Successfully parsed 19 English entries with complete data.
+2026-02-15 13:43:13 - INFO - Processing Page 125/284: 127_English to Skiri.pdf
+2026-02-15 13:45:43 - INFO -   - Successfully parsed 23 English entries with complete data.
+2026-02-15 13:45:43 - INFO - Processing Page 126/284: 128_English to Skiri.pdf
+2026-02-15 13:47:55 - INFO -   - Successfully parsed 19 English entries with complete data.
+2026-02-15 13:47:55 - INFO - Processing Page 127/284: 129_English to Skiri.pdf
+2026-02-15 13:50:10 - INFO -   - Successfully parsed 25 English entries with complete data.
+2026-02-15 13:50:10 - INFO - Processing Page 128/284: 130_English to Skiri.pdf
+2026-02-15 13:52:46 - INFO -   - Successfully parsed 22 English entries with complete data.
+2026-02-15 13:52:46 - INFO - Processing Page 129/284: 131_English to Skiri.pdf
+2026-02-15 13:54:54 - INFO -   - Successfully parsed 31 English entries with complete data.
+2026-02-15 13:54:54 - INFO - Processing Page 130/284: 132_English to Skiri.pdf
+2026-02-15 13:58:02 - INFO -   - Successfully parsed 25 English entries with complete data.
+2026-02-15 13:58:02 - INFO - Processing Page 131/284: 133_English to Skiri.pdf
+2026-02-15 14:00:56 - INFO -   - Successfully parsed 26 English entries with complete data.
+2026-02-15 14:00:56 - INFO - Processing Page 132/284: 134_English to Skiri.pdf
+2026-02-15 14:03:49 - INFO -   - Successfully parsed 24 English entries with complete data.
+2026-02-15 14:03:49 - INFO - Processing Page 133/284: 135_English to Skiri.pdf
+2026-02-15 14:06:06 - INFO -   - Successfully parsed 19 English entries with complete data.
+2026-02-15 14:06:06 - INFO - Processing Page 134/284: 136_English to Skiri.pdf
+2026-02-15 14:08:42 - INFO -   - Successfully parsed 29 English entries with complete data.
+2026-02-15 14:08:42 - INFO - Processing Page 135/284: 137_English to Skiri.pdf
+2026-02-15 14:11:33 - INFO -   - Successfully parsed 19 English entries with complete data.
+2026-02-15 14:11:33 - INFO - Processing Page 136/284: 138_English to Skiri.pdf
+2026-02-15 14:14:23 - INFO -   - Successfully parsed 21 English entries with complete data.
+2026-02-15 14:14:23 - INFO - Processing Page 137/284: 139_English to Skiri.pdf
+2026-02-15 14:16:51 - INFO -   - Successfully parsed 17 English entries with complete data.
+2026-02-15 14:16:51 - INFO - Processing Page 138/284: 140_English to Skiri.pdf
+2026-02-15 14:19:00 - INFO -   - Successfully parsed 12 English entries with complete data.
+2026-02-15 14:19:00 - INFO - Processing Page 139/284: 141_English to Skiri.pdf
+2026-02-15 14:21:29 - INFO -   - Successfully parsed 21 English entries with complete data.
+2026-02-15 14:21:29 - INFO - Processing Page 140/284: 142_English to Skiri.pdf
+2026-02-15 14:24:02 - INFO -   - Successfully parsed 23 English entries with complete data.
+2026-02-15 14:24:02 - INFO - Processing Page 141/284: 143_English to Skiri.pdf
+2026-02-15 14:26:20 - INFO -   - Successfully parsed 19 English entries with complete data.
+2026-02-15 14:26:20 - INFO - Processing Page 142/284: 144_English to Skiri.pdf
+2026-02-15 14:28:42 - INFO -   - Successfully parsed 25 English entries with complete data.
+2026-02-15 14:28:42 - INFO - Processing Page 143/284: 145_English to Skiri.pdf
+2026-02-15 14:31:08 - INFO -   - Successfully parsed 20 English entries with complete data.
+2026-02-15 14:31:08 - INFO - Processing Page 144/284: 146_English to Skiri.pdf
+2026-02-15 14:33:57 - INFO -   - Successfully parsed 22 English entries with complete data.
+2026-02-15 14:33:57 - INFO - Processing Page 145/284: 147_English to Skiri.pdf
+2026-02-15 14:37:00 - INFO -   - Successfully parsed 19 English entries with complete data.
+2026-02-15 14:37:00 - INFO - Processing Page 146/284: 148_English to Skiri.pdf
+2026-02-15 14:39:36 - INFO -   - Successfully parsed 23 English entries with complete data.
+2026-02-15 14:39:36 - INFO - Processing Page 147/284: 149_English to Skiri.pdf
+2026-02-15 14:42:12 - INFO -   - Successfully parsed 36 English entries with complete data.
+2026-02-15 14:42:12 - INFO - Processing Page 148/284: 150_English to Skiri.pdf
+2026-02-15 14:44:31 - INFO -   - Successfully parsed 16 English entries with complete data.
+2026-02-15 14:44:31 - INFO - Processing Page 149/284: 151_English to Skiri.pdf
+2026-02-15 14:46:45 - INFO -   - Successfully parsed 24 English entries with complete data.
+2026-02-15 14:46:45 - INFO - Processing Page 150/284: 152_English to Skiri.pdf
+2026-02-15 14:49:00 - INFO -   - Successfully parsed 19 English entries with complete data.
+2026-02-15 14:49:00 - INFO - Processing Page 151/284: 153_English to Skiri.pdf
+2026-02-15 14:51:53 - INFO -   - Successfully parsed 25 English entries with complete data.
+2026-02-15 14:51:53 - INFO - Processing Page 152/284: 154_English to Skiri.pdf
+2026-02-15 14:54:06 - INFO -   - Successfully parsed 20 English entries with complete data.
+2026-02-15 14:54:06 - INFO - Processing Page 153/284: 155_English to Skiri.pdf
+2026-02-15 14:56:52 - INFO -   - Successfully parsed 27 English entries with complete data.
+2026-02-15 14:56:52 - INFO - Processing Page 154/284: 156_English to Skiri.pdf
+2026-02-15 14:59:29 - INFO -   - Successfully parsed 23 English entries with complete data.
+2026-02-15 14:59:29 - INFO - Processing Page 155/284: 157_English to Skiri.pdf
+2026-02-15 15:01:51 - INFO -   - Successfully parsed 25 English entries with complete data.
+2026-02-15 15:01:51 - INFO - Processing Page 156/284: 158_English to Skiri.pdf
+2026-02-15 15:04:11 - INFO -   - Successfully parsed 19 English entries with complete data.
+2026-02-15 15:04:11 - INFO - Processing Page 157/284: 159_English to Skiri.pdf
+2026-02-15 15:07:00 - INFO -   - Successfully parsed 28 English entries with complete data.
+2026-02-15 15:07:00 - INFO - Processing Page 158/284: 160_English to Skiri.pdf
+2026-02-15 15:09:30 - INFO -   - Successfully parsed 31 English entries with complete data.
+2026-02-15 15:09:30 - INFO - Processing Page 159/284: 161_English to Skiri.pdf
+2026-02-15 15:12:28 - INFO -   - Successfully parsed 23 English entries with complete data.
+2026-02-15 15:12:28 - INFO - Processing Page 160/284: 162_English to Skiri.pdf
+2026-02-15 15:15:16 - INFO -   - Successfully parsed 21 English entries with complete data.
+2026-02-15 15:15:17 - INFO - Processing Page 161/284: 163_English to Skiri.pdf
+2026-02-15 15:17:45 - INFO -   - Successfully parsed 14 English entries with complete data.
+2026-02-15 15:17:45 - INFO - Processing Page 162/284: 164_English to Skiri.pdf
+2026-02-15 15:20:19 - INFO -   - Successfully parsed 23 English entries with complete data.
+2026-02-15 15:20:20 - INFO - Processing Page 163/284: 165_English to Skiri.pdf
+2026-02-15 15:23:07 - INFO -   - Successfully parsed 26 English entries with complete data.
+2026-02-15 15:23:07 - INFO - Processing Page 164/284: 166_English to Skiri.pdf
+2026-02-15 15:25:50 - INFO -   - Successfully parsed 19 English entries with complete data.
+2026-02-15 15:25:51 - INFO - Processing Page 165/284: 167_English to Skiri.pdf
+2026-02-15 15:28:15 - INFO -   - Successfully parsed 17 English entries with complete data.
+2026-02-15 15:28:15 - INFO - Processing Page 166/284: 168_English to Skiri.pdf
+2026-02-15 15:30:56 - INFO -   - Successfully parsed 32 English entries with complete data.
+2026-02-15 15:30:56 - INFO - Processing Page 167/284: 169_English to Skiri.pdf
+2026-02-15 15:32:55 - INFO -   - Successfully parsed 15 English entries with complete data.
+2026-02-15 15:32:55 - INFO - Processing Page 168/284: 170_English to Skiri.pdf
+2026-02-15 15:35:51 - INFO -   - Successfully parsed 30 English entries with complete data.
+2026-02-15 15:35:51 - INFO - Processing Page 169/284: 171_English to Skiri.pdf
+2026-02-15 15:38:57 - INFO -   - Successfully parsed 29 English entries with complete data.
+2026-02-15 15:38:57 - INFO - Processing Page 170/284: 172_English to Skiri.pdf
+2026-02-15 15:41:20 - INFO -   - Successfully parsed 13 English entries with complete data.
+2026-02-15 15:41:20 - INFO - Processing Page 171/284: 173_English to Skiri.pdf
+2026-02-15 15:44:19 - INFO -   - Successfully parsed 32 English entries with complete data.
+2026-02-15 15:44:19 - INFO - Processing Page 172/284: 174_English to Skiri.pdf
+2026-02-15 15:46:42 - INFO -   - Successfully parsed 28 English entries with complete data.
+2026-02-15 15:46:42 - INFO - Processing Page 173/284: 175_English to Skiri.pdf
+2026-02-15 15:49:10 - INFO -   - Successfully parsed 21 English entries with complete data.
+2026-02-15 15:49:10 - INFO - Processing Page 174/284: 176_English to Skiri.pdf
+2026-02-15 15:51:56 - INFO -   - Successfully parsed 25 English entries with complete data.
+2026-02-15 15:51:56 - INFO - Processing Page 175/284: 177_English to Skiri.pdf
+2026-02-15 15:54:18 - INFO -   - Successfully parsed 29 English entries with complete data.
+2026-02-15 15:54:18 - INFO - Processing Page 176/284: 178_English to Skiri.pdf
+2026-02-15 15:56:36 - INFO -   - Successfully parsed 21 English entries with complete data.
+2026-02-15 15:56:36 - INFO - Processing Page 177/284: 179_English to Skiri.pdf
+2026-02-15 15:59:06 - INFO -   - Successfully parsed 19 English entries with complete data.
+2026-02-15 15:59:06 - INFO - Processing Page 178/284: 180_English to Skiri.pdf
+2026-02-15 16:01:10 - INFO -   - Successfully parsed 30 English entries with complete data.
+2026-02-15 16:01:10 - INFO - Processing Page 179/284: 181_English to Skiri.pdf
+2026-02-15 16:03:45 - INFO -   - Successfully parsed 29 English entries with complete data.
+2026-02-15 16:03:45 - INFO - Processing Page 180/284: 182_English to Skiri.pdf
+2026-02-15 16:05:45 - INFO -   - Successfully parsed 27 English entries with complete data.
+2026-02-15 16:05:45 - INFO - Processing Page 181/284: 183_English to Skiri.pdf
+2026-02-15 16:07:50 - INFO -   - Successfully parsed 19 English entries with complete data.
+2026-02-15 16:07:50 - INFO - Processing Page 182/284: 184_English to Skiri.pdf
+2026-02-15 16:10:38 - INFO -   - Successfully parsed 36 English entries with complete data.
+2026-02-15 16:10:38 - INFO - Processing Page 183/284: 185_English to Skiri.pdf
+2026-02-15 16:13:24 - INFO -   - Successfully parsed 23 English entries with complete data.
+2026-02-15 16:13:24 - INFO - Processing Page 184/284: 186_English to Skiri.pdf
+2026-02-15 16:16:04 - INFO -   - Successfully parsed 27 English entries with complete data.
+2026-02-15 16:16:04 - INFO - Processing Page 185/284: 187_English to Skiri.pdf
+2026-02-15 16:18:44 - INFO -   - Successfully parsed 29 English entries with complete data.
+2026-02-15 16:18:44 - INFO - Processing Page 186/284: 188_English to Skiri.pdf
+2026-02-15 16:21:07 - INFO -   - Successfully parsed 18 English entries with complete data.
+2026-02-15 16:21:07 - INFO - Processing Page 187/284: 189_English to Skiri.pdf
+2026-02-15 16:23:43 - INFO -   - Successfully parsed 16 English entries with complete data.
+2026-02-15 16:23:43 - INFO - Processing Page 188/284: 190_English to Skiri.pdf
+2026-02-15 16:25:56 - INFO -   - Successfully parsed 19 English entries with complete data.
+2026-02-15 16:25:56 - INFO - Processing Page 189/284: 191_English to Skiri.pdf
+2026-02-15 16:28:31 - INFO -   - Successfully parsed 13 English entries with complete data.
+2026-02-15 16:28:31 - INFO - Processing Page 190/284: 192_English to Skiri.pdf
+2026-02-15 16:30:53 - INFO -   - Successfully parsed 21 English entries with complete data.
+2026-02-15 16:30:53 - INFO - Processing Page 191/284: 193_English to Skiri.pdf
+2026-02-15 16:33:35 - INFO -   - Successfully parsed 23 English entries with complete data.
+2026-02-15 16:33:35 - INFO - Processing Page 192/284: 194_English to Skiri.pdf
+2026-02-15 16:35:50 - INFO -   - Successfully parsed 18 English entries with complete data.
+2026-02-15 16:35:50 - INFO - Processing Page 193/284: 195_English to Skiri.pdf
+2026-02-15 16:38:23 - INFO -   - Successfully parsed 35 English entries with complete data.
+2026-02-15 16:38:23 - INFO - Processing Page 194/284: 196_English to Skiri.pdf
+2026-02-15 16:41:08 - INFO -   - Successfully parsed 33 English entries with complete data.
+2026-02-15 16:41:08 - INFO - Processing Page 195/284: 197_English to Skiri.pdf
+2026-02-15 16:43:31 - INFO -   - Successfully parsed 13 English entries with complete data.
+2026-02-15 16:43:31 - INFO - Processing Page 196/284: 198_English to Skiri.pdf
+2026-02-15 16:46:11 - INFO -   - Successfully parsed 26 English entries with complete data.
+2026-02-15 16:46:11 - INFO - Processing Page 197/284: 199_English to Skiri.pdf
+2026-02-15 16:48:39 - INFO -   - Successfully parsed 16 English entries with complete data.
+2026-02-15 16:48:39 - INFO - Processing Page 198/284: 200_English to Skiri.pdf
+2026-02-15 16:51:30 - INFO -   - Successfully parsed 22 English entries with complete data.
+2026-02-15 16:51:30 - INFO - Processing Page 199/284: 201_English to Skiri.pdf
+2026-02-15 16:53:55 - INFO -   - Successfully parsed 25 English entries with complete data.
+2026-02-15 16:53:55 - INFO - Processing Page 200/284: 202_English to Skiri.pdf
+2026-02-15 16:56:09 - INFO -   - Successfully parsed 17 English entries with complete data.
+2026-02-15 16:56:09 - INFO - Processing Page 201/284: 203_English to Skiri.pdf
+2026-02-15 16:58:48 - INFO -   - Successfully parsed 22 English entries with complete data.
+2026-02-15 16:58:48 - INFO - Processing Page 202/284: 204_English to Skiri.pdf
+2026-02-15 17:01:12 - INFO -   - Successfully parsed 23 English entries with complete data.
+2026-02-15 17:01:12 - INFO - Processing Page 203/284: 205_English to Skiri.pdf
+2026-02-15 17:03:32 - INFO -   - Successfully parsed 20 English entries with complete data.
+2026-02-15 17:03:32 - INFO - Processing Page 204/284: 206_English to Skiri.pdf
+2026-02-15 17:06:18 - INFO -   - Successfully parsed 23 English entries with complete data.
+2026-02-15 17:06:18 - INFO - Processing Page 205/284: 207_English to Skiri.pdf
+2026-02-15 17:08:41 - INFO -   - Successfully parsed 26 English entries with complete data.
+2026-02-15 17:08:41 - INFO - Processing Page 206/284: 208_English to Skiri.pdf
+2026-02-15 17:11:09 - INFO -   - Successfully parsed 18 English entries with complete data.
+2026-02-15 17:11:09 - INFO - Processing Page 207/284: 209_English to Skiri.pdf
+2026-02-15 17:13:54 - INFO -   - Successfully parsed 20 English entries with complete data.
+2026-02-15 17:13:54 - INFO - Processing Page 208/284: 210_English to Skiri.pdf
+2026-02-15 17:16:57 - INFO -   - Successfully parsed 19 English entries with complete data.
+2026-02-15 17:16:57 - INFO - Processing Page 209/284: 211_English to Skiri.pdf
+2026-02-15 17:20:04 - INFO -   - Successfully parsed 21 English entries with complete data.
+2026-02-15 17:20:04 - INFO - Processing Page 210/284: 212_English to Skiri.pdf
+2026-02-15 17:22:09 - INFO -   - Successfully parsed 14 English entries with complete data.
+2026-02-15 17:22:09 - INFO - Processing Page 211/284: 213_English to Skiri.pdf
+2026-02-15 17:24:18 - INFO -   - Successfully parsed 24 English entries with complete data.
+2026-02-15 17:24:18 - INFO - Processing Page 212/284: 214_English to Skiri.pdf
+2026-02-15 17:26:29 - INFO -   - Successfully parsed 22 English entries with complete data.
+2026-02-15 17:26:29 - INFO - Processing Page 213/284: 215_English to Skiri.pdf
+2026-02-15 17:28:47 - INFO -   - Successfully parsed 24 English entries with complete data.
+2026-02-15 17:28:47 - INFO - Processing Page 214/284: 216_English to Skiri.pdf
+2026-02-15 17:31:11 - INFO -   - Successfully parsed 24 English entries with complete data.
+2026-02-15 17:31:12 - INFO - Processing Page 215/284: 217_English to Skiri.pdf
+2026-02-15 17:33:21 - INFO -   - Successfully parsed 26 English entries with complete data.
+2026-02-15 17:33:21 - INFO - Processing Page 216/284: 218_English to Skiri.pdf
+2026-02-15 17:36:21 - INFO -   - Successfully parsed 22 English entries with complete data.
+2026-02-15 17:36:21 - INFO - Processing Page 217/284: 219_English to Skiri.pdf
+2026-02-15 17:38:51 - INFO -   - Successfully parsed 25 English entries with complete data.
+2026-02-15 17:38:51 - INFO - Processing Page 218/284: 220_English to Skiri.pdf
+2026-02-15 17:40:55 - INFO -   - Successfully parsed 22 English entries with complete data.
+2026-02-15 17:40:55 - INFO - Processing Page 219/284: 221_English to Skiri.pdf
+2026-02-15 17:42:44 - INFO -   - Successfully parsed 25 English entries with complete data.
+2026-02-15 17:42:45 - INFO - Processing Page 220/284: 222_English to Skiri.pdf
+2026-02-15 17:45:17 - INFO -   - Successfully parsed 20 English entries with complete data.
+2026-02-15 17:45:17 - INFO - Processing Page 221/284: 223_English to Skiri.pdf
+2026-02-15 17:47:18 - INFO -   - Successfully parsed 24 English entries with complete data.
+2026-02-15 17:47:18 - INFO - Processing Page 222/284: 224_English to Skiri.pdf
+2026-02-15 17:49:31 - INFO -   - Successfully parsed 20 English entries with complete data.
+2026-02-15 17:49:31 - INFO - Processing Page 223/284: 225_English to Skiri.pdf
+2026-02-15 17:52:09 - INFO -   - Successfully parsed 24 English entries with complete data.
+2026-02-15 17:52:09 - INFO - Processing Page 224/284: 226_English to Skiri.pdf
+2026-02-15 17:54:35 - INFO -   - Successfully parsed 24 English entries with complete data.
+2026-02-15 17:54:35 - INFO - Processing Page 225/284: 227_English to Skiri.pdf
+2026-02-15 17:57:20 - INFO -   - Successfully parsed 28 English entries with complete data.
+2026-02-15 17:57:20 - INFO - Processing Page 226/284: 228_English to Skiri.pdf
+2026-02-15 17:59:23 - INFO -   - Successfully parsed 23 English entries with complete data.
+2026-02-15 17:59:23 - INFO - Processing Page 227/284: 229_English to Skiri.pdf
+2026-02-15 18:02:11 - INFO -   - Successfully parsed 30 English entries with complete data.
+2026-02-15 18:02:11 - INFO - Processing Page 228/284: 230_English to Skiri.pdf
+2026-02-15 18:04:33 - INFO -   - Successfully parsed 17 English entries with complete data.
+2026-02-15 18:04:33 - INFO - Processing Page 229/284: 231_English to Skiri.pdf
+2026-02-15 18:06:57 - INFO -   - Successfully parsed 13 English entries with complete data.
+2026-02-15 18:06:57 - INFO - Processing Page 230/284: 232_English to Skiri.pdf
+2026-02-15 18:09:25 - INFO -   - Successfully parsed 21 English entries with complete data.
+2026-02-15 18:09:25 - INFO - Processing Page 231/284: 233_English to Skiri.pdf
+2026-02-15 18:12:03 - INFO -   - Successfully parsed 31 English entries with complete data.
+2026-02-15 18:12:03 - INFO - Processing Page 232/284: 234_English to Skiri.pdf
+2026-02-15 18:14:29 - INFO -   - Successfully parsed 27 English entries with complete data.
+2026-02-15 18:14:29 - INFO - Processing Page 233/284: 235_English to Skiri.pdf
+2026-02-15 18:17:15 - INFO -   - Successfully parsed 26 English entries with complete data.
+2026-02-15 18:17:15 - INFO - Processing Page 234/284: 236_English to Skiri.pdf
+2026-02-15 18:20:10 - INFO -   - Successfully parsed 16 English entries with complete data.
+2026-02-15 18:20:10 - INFO - Processing Page 235/284: 237_English to Skiri.pdf
+2026-02-15 18:22:13 - INFO -   - Successfully parsed 15 English entries with complete data.
+2026-02-15 18:22:13 - INFO - Processing Page 236/284: 238_English to Skiri.pdf
+2026-02-15 18:24:16 - INFO -   - Successfully parsed 21 English entries with complete data.
+2026-02-15 18:24:16 - INFO - Processing Page 237/284: 239_English to Skiri.pdf
+2026-02-15 18:26:33 - INFO -   - Successfully parsed 15 English entries with complete data.
+2026-02-15 18:26:33 - INFO - Processing Page 238/284: 240_English to Skiri.pdf
+2026-02-15 18:28:47 - INFO -   - Successfully parsed 15 English entries with complete data.
+2026-02-15 18:28:47 - INFO - Processing Page 239/284: 241_English to Skiri.pdf
+2026-02-15 18:31:14 - INFO -   - Successfully parsed 15 English entries with complete data.
+2026-02-15 18:31:14 - INFO - Processing Page 240/284: 242_English to Skiri.pdf
+2026-02-15 18:33:45 - INFO -   - Successfully parsed 23 English entries with complete data.
+2026-02-15 18:33:45 - INFO - Processing Page 241/284: 243_English to Skiri.pdf
+2026-02-15 18:36:07 - INFO -   - Successfully parsed 26 English entries with complete data.
+2026-02-15 18:36:07 - INFO - Processing Page 242/284: 244_English to Skiri.pdf
+2026-02-15 18:38:36 - INFO -   - Successfully parsed 22 English entries with complete data.
+2026-02-15 18:38:36 - INFO - Processing Page 243/284: 245_English to Skiri.pdf
+2026-02-15 18:40:41 - INFO -   - Successfully parsed 20 English entries with complete data.
+2026-02-15 18:40:41 - INFO - Processing Page 244/284: 246_English to Skiri.pdf
+2026-02-15 18:43:09 - INFO -   - Successfully parsed 20 English entries with complete data.
+2026-02-15 18:43:09 - INFO - Processing Page 245/284: 247_English to Skiri.pdf
+2026-02-15 18:45:38 - INFO -   - Successfully parsed 26 English entries with complete data.
+2026-02-15 18:45:38 - INFO - Processing Page 246/284: 248_English to Skiri.pdf
+2026-02-15 18:48:14 - INFO -   - Successfully parsed 19 English entries with complete data.
+2026-02-15 18:48:14 - INFO - Processing Page 247/284: 249_English to Skiri.pdf
+2026-02-15 18:50:49 - INFO -   - Successfully parsed 20 English entries with complete data.
+2026-02-15 18:50:49 - INFO - Processing Page 248/284: 250_English to Skiri.pdf
+2026-02-15 18:53:58 - INFO -   - Successfully parsed 27 English entries with complete data.
+2026-02-15 18:53:58 - INFO - Processing Page 249/284: 251_English to Skiri.pdf
+2026-02-15 18:56:17 - INFO -   - Successfully parsed 25 English entries with complete data.
+2026-02-15 18:56:17 - INFO - Processing Page 250/284: 252_English to Skiri.pdf
+2026-02-15 18:59:07 - INFO -   - Successfully parsed 25 English entries with complete data.
+2026-02-15 18:59:07 - INFO - Processing Page 251/284: 253_English to Skiri.pdf
+2026-02-15 19:01:52 - INFO -   - Successfully parsed 15 English entries with complete data.
+2026-02-15 19:01:52 - INFO - Processing Page 252/284: 254_English to Skiri.pdf
+2026-02-15 19:04:37 - INFO -   - Successfully parsed 21 English entries with complete data.
+2026-02-15 19:04:37 - INFO - Processing Page 253/284: 255_English to Skiri.pdf
+2026-02-15 19:07:16 - INFO -   - Successfully parsed 16 English entries with complete data.
+2026-02-15 19:07:16 - INFO - Processing Page 254/284: 256_English to Skiri.pdf
+2026-02-15 19:09:46 - INFO -   - Successfully parsed 14 English entries with complete data.
+2026-02-15 19:09:46 - INFO - Processing Page 255/284: 257_English to Skiri.pdf
+2026-02-15 19:11:57 - INFO -   - Successfully parsed 16 English entries with complete data.
+2026-02-15 19:11:57 - INFO - Processing Page 256/284: 258_English to Skiri.pdf
+2026-02-15 19:14:36 - INFO -   - Successfully parsed 21 English entries with complete data.
+2026-02-15 19:14:36 - INFO - Processing Page 257/284: 259_English to Skiri.pdf
+2026-02-15 19:17:09 - INFO -   - Successfully parsed 19 English entries with complete data.
+2026-02-15 19:17:09 - INFO - Processing Page 258/284: 260_English to Skiri.pdf
+2026-02-15 19:19:45 - INFO -   - Successfully parsed 19 English entries with complete data.
+2026-02-15 19:19:45 - INFO - Processing Page 259/284: 261_English to Skiri.pdf
+2026-02-15 19:21:46 - INFO -   - Successfully parsed 22 English entries with complete data.
+2026-02-15 19:21:46 - INFO - Processing Page 260/284: 262_English to Skiri.pdf
+2026-02-15 19:24:04 - INFO -   - Successfully parsed 27 English entries with complete data.
+2026-02-15 19:24:04 - INFO - Processing Page 261/284: 263_English to Skiri.pdf
+2026-02-15 19:26:12 - INFO -   - Successfully parsed 36 English entries with complete data.
+2026-02-15 19:26:12 - INFO - Processing Page 262/284: 264_English to Skiri.pdf
+2026-02-15 19:28:26 - INFO -   - Successfully parsed 22 English entries with complete data.
+2026-02-15 19:28:26 - INFO - Processing Page 263/284: 265_English to Skiri.pdf
+2026-02-15 19:30:19 - INFO -   - Successfully parsed 20 English entries with complete data.
+2026-02-15 19:30:19 - INFO - Processing Page 264/284: 266_English to Skiri.pdf
+2026-02-15 19:32:34 - INFO -   - Successfully parsed 27 English entries with complete data.
+2026-02-15 19:32:34 - INFO - Processing Page 265/284: 267_English to Skiri.pdf
+2026-02-15 19:35:19 - INFO -   - Successfully parsed 23 English entries with complete data.
+2026-02-15 19:35:19 - INFO - Processing Page 266/284: 268_English to Skiri.pdf
+2026-02-15 19:38:01 - INFO -   - Successfully parsed 23 English entries with complete data.
+2026-02-15 19:38:01 - INFO - Processing Page 267/284: 269_English to Skiri.pdf
+2026-02-15 19:40:06 - INFO -   - Successfully parsed 19 English entries with complete data.
+2026-02-15 19:40:06 - INFO - Processing Page 268/284: 270_English to Skiri.pdf
+2026-02-15 19:42:39 - INFO -   - Successfully parsed 31 English entries with complete data.
+2026-02-15 19:42:39 - INFO - Processing Page 269/284: 271_English to Skiri.pdf
+2026-02-15 19:44:42 - INFO -   - Successfully parsed 10 English entries with complete data.
+2026-02-15 19:44:42 - INFO - Processing Page 270/284: 272_English to Skiri.pdf
+2026-02-15 19:46:51 - INFO -   - Successfully parsed 25 English entries with complete data.
+2026-02-15 19:46:51 - INFO - Processing Page 271/284: 273_English to Skiri.pdf
+2026-02-15 19:49:28 - INFO -   - Successfully parsed 18 English entries with complete data.
+2026-02-15 19:49:28 - INFO - Processing Page 272/284: 274_English to Skiri.pdf
+2026-02-15 19:51:58 - INFO -   - Successfully parsed 22 English entries with complete data.
+2026-02-15 19:51:58 - INFO - Processing Page 273/284: 275_English to Skiri.pdf
+2026-02-15 19:54:33 - INFO -   - Successfully parsed 17 English entries with complete data.
+2026-02-15 19:54:33 - INFO - Processing Page 274/284: 276_English to Skiri.pdf
+2026-02-15 19:57:11 - INFO -   - Successfully parsed 15 English entries with complete data.
+2026-02-15 19:57:11 - INFO - Processing Page 275/284: 277_English to Skiri.pdf
+2026-02-15 19:59:36 - INFO -   - Successfully parsed 14 English entries with complete data.
+2026-02-15 19:59:36 - INFO - Processing Page 276/284: 278_English to Skiri.pdf
+2026-02-15 20:02:16 - INFO -   - Successfully parsed 11 English entries with complete data.
+2026-02-15 20:02:16 - INFO - Processing Page 277/284: 279_English to Skiri.pdf
+2026-02-15 20:04:27 - INFO -   - Successfully parsed 18 English entries with complete data.
+2026-02-15 20:04:27 - INFO - Processing Page 278/284: 280_English to Skiri.pdf
+2026-02-15 20:07:02 - INFO -   - Successfully parsed 26 English entries with complete data.
+2026-02-15 20:07:02 - INFO - Processing Page 279/284: 281_English to Skiri.pdf
+2026-02-15 20:09:43 - INFO -   - Successfully parsed 26 English entries with complete data.
+2026-02-15 20:09:43 - INFO - Processing Page 280/284: 282_English to Skiri.pdf
+2026-02-15 20:12:42 - INFO -   - Successfully parsed 26 English entries with complete data.
+2026-02-15 20:12:42 - INFO - Processing Page 281/284: 283_English to Skiri.pdf
+2026-02-15 20:15:15 - INFO -   - Successfully parsed 24 English entries with complete data.
+2026-02-15 20:15:15 - INFO - Processing Page 282/284: 284_English to Skiri.pdf
+2026-02-15 20:17:50 - INFO -   - Successfully parsed 22 English entries with complete data.
+2026-02-15 20:17:50 - INFO - Processing Page 283/284: 285_English to Skiri.pdf
+2026-02-15 20:20:12 - INFO -   - Successfully parsed 21 English entries with complete data.
+2026-02-15 20:20:12 - INFO - Processing Page 284/284: 286_English to Skiri.pdf
+2026-02-15 20:21:52 - INFO -   - Successfully parsed 22 English entries with complete data.
+2026-02-15 20:21:52 - INFO - 
+============================================================
+2026-02-15 20:21:52 - INFO - PARSING COMPLETE!
+2026-02-15 20:21:52 - INFO - ============================================================
+2026-02-15 20:21:52 - INFO - Total English entries parsed: 6387
+2026-02-15 20:21:52 - INFO - Output file: 'english_to_skiri_complete.json'
+2026-02-15 20:21:52 - INFO - Data includes: phonetic forms, etymologies, paradigms, cross-references
+2026-02-15 20:21:52 - INFO - Ready for Skiri language revitalization application!
+2026-02-15 20:21:52 - INFO - ============================================================
+
+2026-02-15 21:18:56 - INFO - Loading parsing instructions and JSON schema...
+2026-02-15 21:18:56 - INFO - Found 2 pages to process.
+2026-02-15 21:18:56 - INFO - Starting COMPLETE English-to-Skiri dictionary parsing...
+2026-02-15 21:18:56 - INFO - Extracting: phonetic forms, etymologies, paradigms, cross-references - all data
+
+2026-02-15 21:18:56 - INFO - Processing Page 1/2: 080_English to Skiri.pdf
+2026-02-15 21:21:20 - INFO -   - Successfully parsed 27 English entries with complete data.
+2026-02-15 21:21:20 - INFO - Processing Page 2/2: 081_English to Skiri.pdf
+2026-02-15 21:23:56 - INFO -   - Successfully parsed 17 English entries with complete data.
+2026-02-15 21:23:56 - INFO - 
+============================================================
+2026-02-15 21:23:56 - INFO - PARSING COMPLETE!
+2026-02-15 21:23:56 - INFO - ============================================================
+2026-02-15 21:23:56 - INFO - Total English entries parsed: 44
+2026-02-15 21:23:56 - INFO - Output file: 'english_to_skiri_complete_missed.json'
+2026-02-15 21:23:56 - INFO - Data includes: phonetic forms, etymologies, paradigms, cross-references
+2026-02-15 21:23:56 - INFO - Ready for Skiri language revitalization application!
+2026-02-15 21:23:56 - INFO - ============================================================
+
