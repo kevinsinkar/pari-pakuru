@@ -1,0 +1,658 @@
+========================================================================
+Noun Glottal Stop Verification — Gemini Agent Report
+Generated: 2026-03-07T15:16:04.315630
+========================================================================
+
+SUMMARY
+----------------------------------------
+Total candidates:       260
+Verified by Gemini:     260
+
+Classifications:
+  OCR miss (need ʔ added):     184
+  Legitimate (no fix):          67
+  Uncertain (manual check):      9
+  Unclassified/error:            0
+
+========================================================================
+OCR MISSES — RECOMMENDED FIXES (184 entries)
+These headwords should have final ʔ added.
+========================================================================
+
+  SK-ahictarahaataakaa-p9-0089
+    Reason: Common substance noun ('cow fat; tallow') typically ends in -Vʔ. Phonetic form ends in bare vowel.
+
+  SK-ahitki-p9-0097
+    Reason: Common substance noun ('fat') typically ends in -Vʔ. Phonetic form ends in bare vowel.
+
+  SK-akahkaritki-p358-3665
+    Reason: Common object noun ('house') in a compound typically ends in -Vʔ. Phonetic form ends in bare vowel.
+
+  SK-akahkiripahki-p358-3669
+    Reason: Common object noun ('outhouse', 'shed', 'tent') typically ends in -Vʔ. Phonetic form ends in bare vowel.
+
+  SK-akahwaahukasa-p358-3680
+    Reason: Common object noun ('wall tent') typically ends in -Vʔ. Phonetic form ends in bare vowel.
+
+  SK-akahwaawaktiku-p358-3681
+    Reason: Common object noun ('church, church building') typically ends in -Vʔ. Phonetic form ends in bare vowel.
+
+  SK-akarahkata-p11-0114
+    Reason: Common material noun ('buckskin', 'canvas') typically ends in -Vʔ. Phonetic form ends in bare vowel.
+
+  SK-arika-p13-0146
+    Reason: Common object noun ('horn') typically ends in -Vʔ. Phonetic form ends in bare vowel. While 'One Horn Dance' is a fixed expression, the primary gloss 'horn' suggests a common noun.
+
+  SK-arikta-p362-3716
+    Reason: Common animal noun ('bald eagle') typically ends in -Vʔ. Phonetic form ends in bare vowel.
+
+  SK-asaaki-p362-3736
+    Reason: Common animal noun ('dog') typically ends in -Vʔ. Phonetic form ends in bare vowel.
+
+  SK-asaakiripahki-p362-3739
+    Reason: Common animal noun ('puppy; little dog') in a compound typically ends in -Vʔ. Phonetic form ends in bare vowel.
+
+  SK-asaarahkata-p362-3745
+    Reason: Common animal noun ('buckskin horse') typically ends in -Vʔ. Phonetic form is missing, but pattern suggests an OCR miss.
+
+  SK-asahi-p363-3756
+    Reason: Common animal noun ('mink', 'water dog') typically ends in -Vʔ. Phonetic form ends in bare vowel.
+
+  SK-asawiita-p363-3765
+    Reason: Common animal description ('male horse', 'male dog') typically ends in -Vʔ. Phonetic form ends in bare vowel.
+
+  SK-asiikasa-p363-3770
+    Reason: Common object noun ('spur') typically ends in -Vʔ. Phonetic form ends in bare vowel.
+
+  SK-askiisawihuku-p16-0167
+    Reason: Common activity noun ('hopscotch') typically ends in -Vʔ. Phonetic form ends in bare vowel.
+
+  SK-askiiskatawicaku-p16-0168
+    Reason: Common tool noun ('flesher') typically ends in -Vʔ. Phonetic form ends in bare vowel.
+
+  SK-atikawa-p19-0235
+    Reason: Common food item, typically expected to end in -ʔ. Phonetic form lacks final glottal stop.
+
+  SK-atiktaka-p19-0237
+    Reason: Common plant/food item, typically expected to end in -ʔ. Phonetic form lacks final glottal stop.
+
+  SK-caahikski-p26-0363
+    Reason: Common object noun, typically expected to end in -ʔ. Phonetic form lacks final glottal stop.
+
+  SK-caatki-p27-0392
+    Reason: Common object noun, typically expected to end in -ʔ. Phonetic form lacks final glottal stop.
+
+  SK-cahuuki-p27-0401
+    Reason: Common object noun, typically expected to end in -ʔ. Phonetic form lacks final glottal stop.
+
+  SK-caraahku-p28-0414
+    Reason: Common animal noun, typically expected to end in -ʔ. Phonetic form lacks final glottal stop.
+
+  SK-ckariitki-p30-0470
+    Reason: Common object/material noun, typically expected to end in -ʔ. Phonetic form lacks final glottal stop.
+
+  SK-ckarucki-p30-0471
+    Reason: Common body part/object noun, typically expected to end in -ʔ. Phonetic form lacks final glottal stop.
+
+  SK-ckiisaakaratawaa-p30-0476
+    Reason: Common body part noun, typically expected to end in -ʔ. Phonetic form lacks final glottal stop.
+
+  SK-ckiiskararii-p30-0478
+    Reason: Common animal noun, typically expected to end in -ʔ. Phonetic form lacks final glottal stop.
+
+  SK-cuuhkataku-p32-0532
+    Reason: Common object noun ('warbonnet'), likely missing final glottal stop (expected -uʔ).
+
+  SK-cuuraki-p32-0536
+    Reason: Common noun ('girl'), likely missing final glottal stop (expected -iʔ).
+
+  SK-haakastahkata-p34-0580
+    Reason: Common object noun (plant), likely missing final glottal stop (expected -aʔ).
+
+  SK-hariirahkata-p37-0638
+    Reason: Common animal noun ('newborn calf'), likely missing final glottal stop (expected -aʔ).
+
+  SK-harikictaakaa-p37-0639
+    Reason: Common object noun (food item 'flour'), likely missing final glottal stop (expected -aʔ).
+
+  SK-hariwiita-p37-0644
+    Reason: Common animal noun ('male calf'), likely missing final glottal stop (expected -aʔ).
+
+  SK-haski-p37-0650
+    Reason: Common object noun ('string'), likely missing final glottal stop (expected -iʔ).
+
+  SK-haspacki-p38-0658
+    Reason: Common object noun (material 'silk'), likely missing final glottal stop (expected -iʔ).
+
+  SK-hastahuraahki-p38-0661
+    Reason: Common object noun ('leather string'), likely missing final glottal stop (expected -iʔ).
+
+  SK-haturaahkaritki-p387-3804
+    Reason: Common object noun ('paved road'), likely missing final glottal stop (expected -iʔ).
+
+  SK-hawaahawaa-p387-3815
+    Reason: Common object noun (plant 'cattail'), likely missing final glottal stop (expected -aʔ).
+
+  SK-hiikicu-p389-3828
+    Reason: Common object noun ('handkerchief'), likely missing final glottal stop (expected -uʔ).
+
+  SK-hiiraaricakusku-p389-3834
+    Reason: Common object noun (tool 'pitchfork'), likely missing final glottal stop (expected -uʔ).
+
+  SK-hiitkirikawaa-p390-3851
+    Reason: Common animal noun ('peacock'), likely missing final glottal stop (expected -aʔ).
+
+  SK-hiitpaarasiku-p390-3854
+    Reason: Common object noun (plant 'pokeweed'), likely missing final glottal stop (expected -uʔ).
+
+  SK-hikskawicaku-p390-3859
+    Reason: Common object noun (tool 'pestle'), likely missing final glottal stop (expected -uʔ).
+
+  SK-icataahata-p55-0941
+    Reason: Common object noun (food item 'doughnut'), likely missing final glottal stop (expected -aʔ).
+
+  SK-iitpaca-p61-1052
+    Reason: Common noun for a body part ('nipple'); typically, such nouns end in -Vʔ. The phonetic form also ends in a bare vowel.
+
+  SK-iriiraacusaakaratawi-p65-1140
+    Reason: Common noun for an architectural feature ('smokehole'); typically, such nouns end in -Vʔ. The phonetic form also ends in a bare vowel.
+
+  SK-iriiraawirahkatawihaku-p65-1144
+    Reason: Common noun for a place/building ('theater'); typically, such nouns end in -Vʔ. The phonetic form also ends in a bare vowel.
+
+  SK-iriirapaapiciskaaruuci-p65-1148
+    Reason: Common noun for a place/institution ('bank'); typically, such nouns end in -Vʔ. The phonetic form also ends in a bare vowel.
+
+  SK-iriiraraaririitiku-p66-1152
+    Reason: Common noun for a place/building ('airport; depot'); typically, such nouns end in -Vʔ. The phonetic form also ends in a bare vowel.
+
+  SK-iriiraraawiskawataku-p66-1153
+    Reason: Common noun for an architectural feature ('chimney'); typically, such nouns end in -Vʔ. The phonetic form also ends in a bare vowel.
+
+  SK-iriirarariihuhkaaruuci-p66-1154
+    Reason: Common noun for a place/institution ('post office'); typically, such nouns end in -Vʔ. The phonetic form also ends in a bare vowel.
+
+  SK-iriirasaakaratawi-p66-1158
+    Reason: Common noun for an architectural feature ('smokehole'); typically, such nouns end in -Vʔ. The phonetic form also ends in a bare vowel.
+
+  SK-iriirihaakawaahcu-p66-1162
+    Reason: Common noun for a place/building ('cafe, restaurant'); typically, such nouns end in -Vʔ. The phonetic form also ends in a bare vowel.
+
+  SK-kaaqata-p2-0011
+    Reason: Common animal noun ('upland plover'), typically expected to end in -Vʔ. The phonetic form also lacks a final glottal stop.
+
+  SK-kaaqata-p71-1258
+    Reason: Common animal noun ('upland plover'), typically expected to end in -Vʔ. The phonetic form also lacks a final glottal stop.
+
+  SK-kaariiksati-p73-1304
+    Reason: Common animal noun ('nighthawk'), typically expected to end in -Vʔ. The phonetic form also lacks a final glottal stop.
+
+  SK-kaataraki-p74-1327
+    Reason: Common object noun ('ax'), typically expected to end in -Vʔ. The phonetic form also lacks a final glottal stop.
+
+  SK-kaciiki-p75-1358
+    Reason: Common animal noun ('fish'), typically expected to end in -Vʔ. The phonetic form also lacks a final glottal stop.
+
+  SK-kactahkata-p75-1365
+    Reason: Common plant noun ('wild four-o'clock', 'goldenrod'), typically expected to end in -Vʔ. The phonetic form also lacks a final glottal stop.
+
+  SK-karitki-p79-1443
+    Reason: Common object noun ('rock, stone, pebble'), typically expected to end in -Vʔ. The phonetic form also lacks a final glottal stop.
+
+  SK-kataawaruucaku-p80-1479
+    Reason: Common object noun ('horn, wind instrument'), typically expected to end in -Vʔ. The phonetic form also lacks a final glottal stop.
+
+  SK-katuuraktaakaa-p83-1538
+    Reason: Common animal noun ('snow goose', 'swan'), typically expected to end in -Vʔ. The phonetic form also lacks a final glottal stop.
+
+  SK-kawahki-p83-1550
+    Reason: Common animal noun ('magpie'), typically expected to end in -Vʔ. The phonetic form also lacks a final glottal stop.
+
+  SK-kicahaasta-p84-1578
+    Reason: Common plant name, likely missing final ʔ.
+
+  SK-kiiskarari-p92-1730
+    Reason: Common animal name, likely missing final ʔ.
+
+  SK-kiiwaquctaakaa-p93-1758
+    Reason: Common plant name, likely missing final ʔ.
+
+  SK-kiiwuhki-p93-1765
+    Reason: Common plant name, likely missing final ʔ.
+
+  SK-kipahki-p94-1778
+    Reason: Common plant name, likely missing final ʔ.
+
+  SK-kirahku-p95-1802
+    Reason: Common noun for a body condition, likely missing final ʔ.
+
+  SK-kisaacki-p98-1883
+    Reason: Common noun for food/body part, likely missing final ʔ.
+
+  SK-ksapitaahaku-p448-3984
+    Reason: Common plant name, likely missing final ʔ.
+
+  SK-kskatahkawaa-p448-3990
+    Reason: Common animal name, likely missing final ʔ.
+
+  SK-kskiicpita-p448-3994
+    Reason: Common noun for a body part, likely missing final ʔ.
+
+  SK-kskiikahki-p448-3995
+    Reason: Common animal name, likely missing final ʔ.
+
+  SK-kuckaritki-p101-1951
+    Reason: Common object noun (kettle) typically ends in -Vʔ.
+
+  SK-kuckictahkata-p101-1953
+    Reason: Common object/material noun (paint) typically ends in -Vʔ.
+
+  SK-kuckirarahkaawaawi-p101-1956
+    Reason: Common object/food noun (canned goods) typically ends in -Vʔ.
+
+  SK-kucpaarika-p101-1958
+    Reason: Common object noun (kettle) typically ends in -Vʔ.
+
+  SK-kuctaakaa-p101-1959
+    Reason: Common object noun (pail/kettle) typically ends in -Vʔ.
+
+  SK-kuctahkata-p101-1961
+    Reason: Common object noun (kettle) typically ends in -Vʔ.
+
+  SK-kuhku-p101-1962
+    Reason: Common animal/food noun (pig/bacon) typically ends in -Vʔ.
+
+  SK-kurukstaakaa-p102-1992
+    Reason: Common animal noun (bear) typically ends in -Vʔ.
+
+  SK-kuuciksta-p452-4006
+    Reason: Common object noun (cup) typically ends in -Vʔ.
+
+  SK-kuucki-p452-4007
+    Reason: Common object noun (kettle/pot) typically ends in -Vʔ.
+
+  SK-paa-p453-4021
+    Reason: Common natural object/time unit (moon/month) typically ends in -Vʔ.
+
+  SK-paa-p453-4022
+    Reason: Common animal noun (elk) typically ends in -Vʔ.
+
+  SK-paahukasa-p453-4040
+    Reason: Common object/concept noun (hairstyle) typically ends in -Vʔ.
+
+  SK-paapicistaakaa-p454-4058
+    Reason: Common object/material noun (metal) typically ends in -Vʔ.
+
+  SK-paapicistiwiruucaku-p454-4062
+    Reason: Common object noun 'hammer' typically ends in -uʔ. Phonetic form ends in bare vowel.
+
+  SK-pacawaa-p107-2044
+    Reason: Common noun 'disease' typically ends in -aʔ. Phonetic form ends in bare vowel.
+
+  SK-pahukstahkata-p108-2065
+    Reason: Common object noun 'pumpkin' typically ends in -aʔ. Phonetic form ends in bare vowel.
+
+  SK-pahuruutaakaa-p108-2070
+    Reason: Common animal noun 'white owl' typically ends in -aʔ. Phonetic form ends in bare vowel.
+
+  SK-paksaku-p108-2080
+    Reason: Common animal noun 'tadpole, catfish' typically ends in -uʔ. Phonetic form ends in bare vowel.
+
+  SK-pakstacaaka-p110-2113
+    Reason: Common noun 'dandruff' typically ends in -aʔ. Phonetic form ends in bare vowel.
+
+  SK-pakucki-p110-2118
+    Reason: Common plant noun 'joint grass' typically ends in -iʔ. Phonetic form ends in bare vowel.
+
+  SK-pakuucaku-p110-2123
+    Reason: Common object noun 'top, spinning top' typically ends in -uʔ. Phonetic form ends in bare vowel.
+
+  SK-paruskiripacki-p111-2142
+    Reason: Common animal noun 'small rabbit' typically ends in -iʔ. Phonetic form ends in bare vowel.
+
+  SK-parustaakaa-p111-2143
+    Reason: Common animal noun 'white rabbit' typically ends in -aʔ. Phonetic form ends in bare vowel.
+
+  SK-pasaki-p111-2145
+    Reason: Common plant noun 'cottonwood' typically ends in -iʔ. Phonetic form ends in bare vowel.
+
+  SK-pasaktaakaa-p111-2146
+    Reason: Common plant noun 'sycamore' typically ends in -aʔ. Phonetic form ends in bare vowel.
+
+  SK-patki-p111-2149
+    Reason: Common plant noun 'acorn' typically ends in -iʔ. Phonetic form ends in bare vowel.
+
+  SK-pihki-p111-2165
+    Reason: Common natural object noun 'sleet' typically ends in -iʔ. Phonetic form ends in bare vowel.
+
+  SK-piikawaa-p460-4081
+    Reason: Common animal noun 'stallion, bull' typically ends in -aʔ. Phonetic form is missing, but the pattern suggests an OCR miss.
+
+  SK-piirakiripahki-p460-4092
+    Reason: Common noun 'baby, infant' typically ends in -iʔ. Phonetic form ends in bare vowel.
+
+  SK-piiraski-p460-4096
+    Reason: Common noun for a person, likely missing final glottal stop.
+
+  SK-piiraskiripacki-p460-4097
+    Reason: Compound common noun for a person, likely missing final glottal stop.
+
+  SK-piita-p113-2176
+    Reason: Common noun for a person, likely missing final glottal stop.
+
+  SK-piitiisutki-p113-2184
+    Reason: Common noun for a person, likely missing final glottal stop.
+
+  SK-raackuuki-p116-2262
+    Reason: Common noun for a plant/object, likely missing final glottal stop.
+
+  SK-raakaaruhkiripahki-p118-2306
+    Reason: Common noun for food, likely missing final glottal stop.
+
+  SK-raakicawihuukaarahu-p119-2319
+    Reason: Common noun for a tool/object, likely missing final glottal stop.
+
+  SK-raakiriwiraawariku-p120-2335
+    Reason: Common noun for a tool/object, likely missing final glottal stop.
+
+  SK-raapaku-p120-2349
+    Reason: Common noun for a type of person, likely missing final glottal stop.
+
+  SK-raarakaahki-p122-2378
+    Reason: Common noun for an object, likely missing final glottal stop.
+
+  SK-raawataaruku-p126-2476
+    Reason: Common noun for an object/tool, likely missing final glottal stop.
+
+  SK-raawihtaakaa-p127-2492
+    Reason: Common noun for an object, likely missing final glottal stop.
+
+  SK-raawirahkatawihaku-p128-2514
+    Reason: Common noun for a concept/place, likely missing final glottal stop.
+
+  SK-rahaaktaakaaru-p478-4119
+    Reason: Common noun for a plant, likely missing final glottal stop.
+
+  SK-rahaaktarikatasa-p478-4121
+    Reason: Common noun for an object/person, likely missing final glottal stop.
+
+  SK-rahkasiirahuraahki-p131-2556
+    Reason: Common noun for clothing/object, likely missing final glottal stop.
+
+  SK-rahuraahki-p132-2586
+    Reason: Common noun for an animal, likely missing final glottal stop.
+
+  SK-rahuutuhkawariku-p133-2599
+    Reason: Common object noun ('air pump'); phonetic form ends in bare vowel [ʊ], suggesting missing final glottal stop.
+
+  SK-rahwa-p133-2602
+    Reason: Common noun referring to a person's status ('captive, prisoner, slave'); phonetic form ends in bare vowel [ə], suggesting missing final glottal stop.
+
+  SK-rakaraaki-p134-2616
+    Reason: Common object noun ('dish, bowl, plate'); phonetic form ends in bare vowel [ɪ], suggesting missing final glottal stop.
+
+  SK-rakaraaracaahisiku-p134-2621
+    Reason: Common object noun ('tea towel, dish towel'); likely missing final glottal stop, typical for common nouns.
+
+  SK-rakawicaku-p134-2627
+    Reason: Common object noun ('grinder'); phonetic form ends in bare vowel [ʊ], suggesting missing final glottal stop.
+
+  SK-rakcaakarikuku-p134-2628
+    Reason: Common object noun ('key'); phonetic form ends in bare vowel [ʊ], suggesting missing final glottal stop.
+
+  SK-rakcaku-p134-2629
+    Reason: Common animal noun ('woodpecker'); phonetic form ends in bare vowel [ʊ], suggesting missing final glottal stop.
+
+  SK-rakictakasu-p134-2635
+    Reason: Common food/drink noun ('pop, soda pop, soft drink'); phonetic form ends in bare vowel [ʊ], suggesting missing final glottal stop.
+
+  SK-rakictiirahpi-p134-2636
+    Reason: Common natural object noun ('ocean'); phonetic form ends in bare vowel [ɪ], suggesting missing final glottal stop.
+
+  SK-rakiikaruuwarii-p134-2639
+    Reason: Common object noun ('lantern, flashlight'); phonetic form ends in bare vowel [ii], suggesting missing final glottal stop.
+
+  SK-rakiripahki-p135-2643
+    Reason: Common natural object noun ('piece of wood, stick, twig, tree, bush'); phonetic form ends in bare vowel [ɪ], suggesting missing final glottal stop.
+
+  SK-raktawicaku-p135-2661
+    Reason: Common animal noun ('woodpecker'); phonetic form ends in bare vowel [ʊ], suggesting missing final glottal stop.
+
+  SK-raktiiwariku-p135-2666
+    Reason: Common object noun ('measuring stick, yard stick'); phonetic form ends in bare vowel [ʊ], suggesting missing final glottal stop.
+
+  SK-raraaqiitustaruuwarii-p136-2678
+    Reason: Common object noun ('newspaper'); phonetic form ends in bare vowel [ii], suggesting missing final glottal stop.
+
+  SK-raraarawarii-p136-2679
+    Reason: Common object noun ('airplane'); phonetic form ends in bare vowel [ii], suggesting missing final glottal stop.
+
+  SK-raracawakataku-p136-2682
+    Reason: Common object noun ('telephone'); phonetic form ends in bare vowel [ʊ], suggesting missing final glottal stop.
+
+  SK-raracawaktahu-p136-2683
+    Reason: Common animal noun ('rattlesnake'); phonetic form ends in bare vowel [ʊ], suggesting missing final glottal stop.
+
+  SK-rarahkirariiʔuusu-p136-2684
+    Reason: Common food item, typically expected to end in -ʔ.
+
+  SK-rarariiruku-p136-2690
+    Reason: Common natural object (firefly) and modern object (flashlight); common natural objects typically end in -ʔ.
+
+  SK-raruuckiraraa-p138-2720
+    Reason: Common animal name, typically expected to end in -ʔ.
+
+  SK-raruucpaca-p138-2721
+    Reason: Common body part, typically expected to end in -ʔ.
+
+  SK-rataqu-p138-2734
+    Reason: Common food item (condiment), typically expected to end in -ʔ.
+
+  SK-riiciki-p140-2775
+    Reason: Common tool, typically expected to end in -ʔ.
+
+  SK-riicikiripacki-p140-2777
+    Reason: Common tool, typically expected to end in -ʔ.
+
+  SK-riiciqaahwaa-p140-2773
+    Reason: Common tool, typically expected to end in -ʔ.
+
+  SK-riicki-p140-2789
+    Reason: Common body part, typically expected to end in -ʔ.
+
+  SK-riickuhki-p140-2790
+    Reason: Common natural phenomenon (season), typically expected to end in -ʔ.
+
+  SK-rikucki-p492-4198
+    Reason: Common animal noun; typically ends in -ʔ. Phonetic form ends in bare vowel.
+
+  SK-rikuctahkata-p492-4202
+    Reason: Common animal noun; typically ends in -ʔ. Phonetic form ends in bare vowel.
+
+  SK-rucaakawihu-p148-2866
+    Reason: Common object noun; typically ends in -ʔ. Phonetic form ends in bare vowel.
+
+  SK-rutaaktaarapitaahaku-p148-2875
+    Reason: Common object noun; typically ends in -ʔ. Phonetic form ends in bare vowel.
+
+  SK-rutaaktahciihkuku-p148-2876
+    Reason: Common object noun; typically ends in -ʔ. Phonetic form ends in bare vowel.
+
+  SK-ruuhahkata-p149-2895
+    Reason: Common animal noun; typically ends in -ʔ. Phonetic form ends in bare vowel.
+
+  SK-ruuhkicahariwaara-p149-2897
+    Reason: Common food/drink noun; typically ends in -ʔ. Phonetic form ends in bare vowel.
+
+  SK-ruuhkickahaarawiriira-p149-2898
+    Reason: Common object/product noun; typically ends in -ʔ. Phonetic form ends in bare vowel.
+
+  SK-ruuhkiispirariiruku-p149-2899
+    Reason: Common object/tool noun; typically ends in -ʔ. Phonetic form ends in bare vowel.
+
+  SK-ruuhtahariwaara-p149-2900
+    Reason: Common food noun; typically ends in -ʔ. Phonetic form ends in bare vowel.
+
+  SK-ruuhtahariwaariku-p149-2901
+    Reason: Common food-related noun; typically ends in -ʔ. Phonetic form ends in bare vowel.
+
+  SK-ruuraakawaawuhu-p150-2916
+    Reason: Common noun (person/object); typically ends in -ʔ. Phonetic form ends in bare vowel.
+
+  SK-ruurakariwaariku-p150-2917
+    Reason: Common noun (profession); typically ends in -ʔ. Phonetic form ends in bare vowel.
+
+  SK-ruuraqiwuu-p150-2914
+    Reason: Common food noun; typically ends in -ʔ. Phonetic form ends in bare vowel.
+
+  SK-saahki-p150-2934
+    Reason: Common object noun; typically ends in -ʔ. Phonetic form ends in bare vowel.
+
+  SK-saahkisiikasa-p151-2935
+    Reason: Common natural object/food noun; typically ends in -ʔ. Phonetic form ends in bare vowel.
+
+  SK-sakuhkiriku-p151-2946
+    Reason: Common animal noun; typically ends in -ʔ. Phonetic form ends in bare vowel.
+
+  SK-saparuu-p152-2966
+    Reason: Common natural object noun; typically ends in -ʔ. Phonetic form ends in bare vowel.
+
+  SK-siraackuskasara-p152-2977
+    Reason: Common animal noun; typically ends in -ʔ. Phonetic form ends in bare vowel.
+
+  SK-siraackuskiicu-p152-2978
+    Reason: Common animal name, typically ends in -uʔ.
+
+  SK-siriirawikawariku-p152-2979
+    Reason: Common object noun (game/ball), typically ends in -uʔ.
+
+  SK-siriirawikusihaku-p152-2980
+    Reason: Common object noun (game/ball), typically ends in -uʔ.
+
+  SK-skacki-p152-2982
+    Reason: Common object noun (body part/natural material), typically ends in -iʔ.
+
+  SK-taa-p153-3004
+    Reason: Common animal name, typically ends in -aʔ.
+
+  SK-taakaski-p502-4240
+    Reason: Common object noun (food), typically ends in -iʔ.
+
+  SK-taapuuska-p502-4246
+    Reason: Common object/place noun, typically ends in -aʔ.
+
+  SK-tapactaakaa-p158-3096
+    Reason: Common object noun (food/substance), typically ends in -aʔ.
+
+  SK-taraahki-p159-3111
+    Reason: Common descriptive noun for people, typically ends in -iʔ.
+
+  SK-tarahaariki-p159-3123
+    Reason: Common object noun (tool), typically ends in -iʔ.
+
+  SK-tarahaataakaa-p160-3125
+    Reason: Common animal name, typically ends in -aʔ.
+
+  SK-tariihwaawariku-p161-3147
+    Reason: Common object noun (tool/machine), typically ends in -uʔ.
+
+  SK-tariitkahki-p161-3152
+    Reason: Common object noun (food), typically ends in -iʔ.
+
+  SK-ucahaa-p167-3299
+    Reason: Common animal name, typically ends in -aʔ.
+
+  SK-uuhtarikawaa-p172-3394
+    Reason: Common animal name, typically ends in -aʔ.
+
+  SK-uusiriwa-p173-3422
+    Reason: Common object noun (plant/food), typically ends in -aʔ.
+
+  SK-wiiruurirahkasa-p179-3554
+    Reason: Common object noun, typically ends in -aʔ.
+
+========================================================================
+LEGITIMATE — NO FIX NEEDED (67 entries)
+========================================================================
+
+  SK-ara-p360-3704: Kinship term ('your same-sex sibling') legitimately ends in a bare vowel.
+  SK-asataakaa-p363-3760: One gloss indicates a proper noun/name ('White Horse, the name of a prominent... doctor'), which legitimately ends in a bare vowel.
+  SK-askaaqa-p363-3775: The headword 'askaaʔa' already includes the final glottal stop 'ʔ', meaning it does not end in a bare vowel and is correctly formed. This entry does not fit the premise of the task (entries ending in a bare vowel).
+  SK-asku-raastawi-p16-0178: Compound expression for a modern object, phonetic form lacks final glottal stop.
+  SK-astawaa-p17-0197: Compound expression for a modern object (Dutch oven), phonetic form lacks final glottal stop.
+  SK-awihuksahustahkata-p370-3791: Compound expression for a modern substance, phonetic form lacks final glottal stop.
+  SK-caahiks-rararuuwarii-p26-0367: Compound expression for a modern object, phonetic form lacks final glottal stop.
+  SK-caakawiraarikitaahaku-p26-0378: Compound expression for a modern tool, phonetic form lacks final glottal stop.
+  SK-cikiri-p29-0439: Loanword from English 'chicken', phonetic form lacks final glottal stop.
+  SK-cikirihkiripahki-p29-0442: Derived from a loanword ('chicken'), phonetic form lacks final glottal stop.
+  SK-cikirihpiita-p29-0443: Derived from a loanword ('chicken') or descriptive compound, phonetic form lacks final glottal stop.
+  SK-ckataahisiku-p30-0473: Compound expression for a modern object, phonetic form lacks final glottal stop.
+  SK-ckirihki-p30-0485: Refers to a proper noun (mythological trickster figure).
+  SK-ckuuri-p31-0502: Loanword from English 'school'.
+  SK-cuustiraqu-p32-0539: The headword 'cuustiraʔu' already includes a glottal stop, so it does not fit the 'bare vowel ending' criteria for OCR miss detection. It is correctly transcribed.
+  SK-icataaqatikawaa-p55-0939: Compound expression describing a specific food item, which can legitimately end in a bare vowel.
+  SK-iitkataku-p61-1046: Refers to a title or role (policeman, sheriff), which can legitimately end in a bare vowel.
+  SK-iriirakaahuraahkatiitu-p65-1146: Directional term ('north') functioning as both a noun and adverb, which can legitimately lack a final glottal stop.
+  SK-iriirapaapicistariku-p65-1149: Refers to a title or role ('banker'), which can legitimately end in a bare vowel.
+  SK-iriiraraakaaruurarikaawarii-p66-1151: Refers to a title or role ('waitress; waiter'), which can legitimately end in a bare vowel.
+  SK-iriirarariihuurariku-p66-1155: Refers to a title or role ('postmaster; postal clerk'), which can legitimately end in a bare vowel.
+  SK-iriirasaakaku-p66-1157: Directional term ('south') functioning as both a noun and adverb, which can legitimately lack a final glottal stop.
+  SK-iriirasaaktahu-p66-1159: Directional term ('east') functioning as both a noun and adverb, which can legitimately lack a final glottal stop.
+  SK-iriirasakuriispuu-p66-1161: Directional term ('west') functioning as both a noun and adverb, which can legitimately lack a final glottal stop.
+  SK-iriirirahcaku-p66-1163: Compound expression/place name, bare vowel ending is standard for such constructions.
+  SK-iriiriritpaahwiiku-p66-1164: Compound expression/place name, bare vowel ending is standard for such constructions.
+  SK-iririiraktahkictapiriwuu-p67-1182: Compound expression/place name, bare vowel ending is standard for such constructions.
+  SK-iririitaktaaqiitawuhu-p67-1183: Descriptive/adjectival noun (profession/role), bare stem form is standard.
+  SK-iriruuhaarataawaawi-p67-1184: Compound expression/place name, bare vowel ending is standard for such constructions.
+  SK-iriruuhkituctawi-p67-1185: Compound expression/place name, bare vowel ending is standard for such constructions.
+  SK-iriruutakaariikawi-p67-1186: Compound expression/place name, bare vowel ending is standard for such constructions.
+  SK-kaapita-p73-1301: Loanword from English ('carpenter') and a profession, which often lack final ʔ.
+  SK-kaawita-p75-1351: Descriptive/dependent noun stem ('last child'), bare stem form is standard for such roles/relationships.
+  SK-kicakustaakaa-p85-1583: Descriptive noun, possibly a compound, where bare stem form can be standard.
+  SK-kicka-p85-1602: Functions as a proper noun (place name) in one of its glosses.
+  SK-kictaakaa-p436-3947: Refers to a modern concept/loanword, which can legitimately lack final ʔ.
+  SK-kiirahkata-p91-1703: Refers to modern concepts/loanwords, which can legitimately lack final ʔ.
+  SK-kiiriictaakaa-p91-1711: Descriptive noun, possibly a compound, where bare stem form can be standard.
+  SK-kiiwaakstaakaa-p93-1762: Descriptive noun, possibly a compound, where bare stem form can be standard.
+  SK-kiri-p95-1815: Likely a loanword or term for an introduced animal, which can legitimately lack final ʔ.
+  SK-kiriiraawiskaaqahu-p95-1821: Refers to a modern concept/loanword, which can legitimately lack final ʔ.
+  SK-kiriiraawistarustaa-p95-1822: Refers to a modern concept/loanword, which can legitimately lack final ʔ.
+  SK-kskuuri-p101-1944: Loanword from English.
+  SK-kstiiriwara-p101-1946: Proper noun (place name).
+  SK-paapicistahkata-p454-4060: Descriptive/adjectival noun, 'yellow metal', where the bare stem form is standard. Phonetic form ends in bare vowel.
+  SK-paaqi-p453-4026: The headword 'paaʔi' already includes the final glottal stop, so it does not end in a bare vowel. It is also a loanword ('pie') which can legitimately lack a final glottal stop if it were bare, but here it is present.
+  SK-pakspaahukasa-p110-2107: Descriptive noun 'roached head' referring to a person with a specific hairstyle, where the bare stem form is standard. Phonetic form ends in bare vowel.
+  SK-pakspasaasi-p110-2110: Descriptive noun 'roach hair-style' or 'roached head', where the bare stem form is standard. Phonetic form ends in bare vowel.
+  SK-piiskita-p113-2175: Loanword from English ('biscuit').
+  SK-piitaraqu-p113-2181: Headword already includes the glottal stop 'ʔu', so it does not end in a bare vowel.
+  SK-rahiisa-p478-4124: Primarily an adverbial expression or fixed temporal noun.
+  SK-rakaahuraahkatiitu-p134-2610: Directional noun ('north') which often functions as a fixed expression or descriptive noun and can legitimately lack a final glottal stop.
+  SK-raktiiki-p135-2664: Kinship term ('grandchild'); kinship terms legitimately lack a final glottal stop.
+  SK-rarahwaktaariku-p136-2686: Modern technology term, likely a loanword or compound, which can legitimately end in a bare vowel.
+  SK-rarahwaktahu-p136-2687: Modern technology term, likely a loanword or compound, which can legitimately end in a bare vowel.
+  SK-rasakuhtiiwariku-p138-2730: Modern technology term, likely a loanword or compound, which can legitimately end in a bare vowel.
+  SK-ratawirahkawarikusu-p138-2736: Modern technology term, likely a loanword or compound, which can legitimately end in a bare vowel.
+  SK-rawakarahkawuu-p139-2752: Modern technology term, likely a loanword or compound, which can legitimately end in a bare vowel.
+  SK-riihkita-p141-2797: Title or role, which can legitimately end in a bare vowel.
+  SK-riiraktaaraqiwariku-p141-2813: Descriptive noun for a group of people, which can legitimately end in a bare vowel.
+  SK-rikiisastarahi-p492-4178: Compound expression involving a proper noun (Arikara), which can legitimately end in a bare vowel.
+  SK-rikiispasaasi-p492-4185: Compound expression involving a proper noun (Osage), which can legitimately end in a bare vowel.
+  SK-rikiistahkata-p492-4189: Descriptive noun for a specific type of corn, which can legitimately end in a bare vowel.
+  SK-saru-p152-2969: Kinship term and term of address, which legitimately lack a final glottal stop.
+  SK-taruks-pasaasi-p161-3162: Compound expression or multi-word term referring to a specific cultural item.
+  SK-tiirukcaakariki-p165-3254: Functions as both a noun and an adverb (temporal expression), often bare stem.
+  SK-tiki-p165-3261: Kinship term, which legitimately lacks a final glottal stop.
+
+========================================================================
+UNCERTAIN — MANUAL CHECK NEEDED (9 entries)
+========================================================================
+
+  SK-capaaraqu-p28-0409: Headword 'capaaraʔu' explicitly contains a final glottal stop, contradicting the premise of the task to classify entries ending in a bare vowel.
+  SK-iriiraaktacaraqu-p65-1141: The headword 'iriiraaktacaraʔu' already includes a final glottal stop ʔ, contradicting the premise that entries end in a bare vowel. Therefore, it cannot be classified as an OCR miss or legitimate bare vowel.
+  SK-iriirapiciihiqu-p66-1150: The headword 'iriirapiciihiʔu' already includes a final glottal stop ʔ, contradicting the premise that entries end in a bare vowel. Therefore, it cannot be classified as an OCR miss or legitimate bare vowel.
+  SK-iririiraktacaraqu-p67-1181: The headword 'iririiraktacaraʔu' and phonetic form '[í-rɪ-rii-rək-tə-čə-rə-ʔu]' explicitly end in a glottal stop (ʔu), which contradicts the premise that entries end in a bare vowel. Thus, it does not fit the classification criteria.
+  SK-kuraciihaaqu-p102-1973: Headword 'kuraciihaaʔu' explicitly contains a glottal stop (ʔu), contradicting the premise of classifying entries ending in a bare vowel.
+  SK-kurahaaqu-p102-1974: Headword 'kurahaaʔu' explicitly contains a glottal stop (ʔu), contradicting the premise of classifying entries ending in a bare vowel.
+  SK-kurasiihaaqu-p102-1978: Headword 'kurasiihaaʔu' explicitly contains a glottal stop (ʔu), contradicting the premise of classifying entries ending in a bare vowel.
+  SK-kuratiihaaqu-p102-1979: Headword 'kuratiihaaʔu' explicitly contains a glottal stop (ʔu), contradicting the premise of classifying entries ending in a bare vowel.
+  SK-rakariiksta-p134-2623: Dual gloss includes a common object ('dipper') and a proper noun ('Dipper constellation'). While proper nouns can be legitimate, the common object form would typically end in -ʔ. Without further context on the primary meaning or suffixation, it's uncertain.

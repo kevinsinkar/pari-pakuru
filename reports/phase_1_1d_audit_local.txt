@@ -1,0 +1,563 @@
+========================================================================
+Phase 1.1d — Parsing Completeness Audit Report
+Generated: 2026-03-07T10:36:54.831724
+========================================================================
+
+SUMMARY
+----------------------------------------
+S2E entries audited:       4273
+E2S entries audited:       6414
+Clean entries (no flags):  2757
+Total flags:               2005
+  Errors:                   442
+  Warnings:                 853
+  Info:                     710
+
+FLAGS BY TYPE (sorted by frequency)
+------------------------------------------------------------
+  [   INFO] MISSING_VERB_CLASS                       ×553
+  [  ERROR] INVALID_PHONETIC_CHAR                    ×442
+  [WARNING] CONSONANT_SKELETON_MISMATCH              ×423
+  [WARNING] NOUN_MISSING_GLOTTAL                     ×328
+  [WARNING] UNKNOWN_GRAM_CLASS                       ×94
+  [   INFO] MISSING_OPEN_BRACKET                     ×78
+  [   INFO] MISSING_CLOSE_BRACKET                    ×78
+  [WARNING] UNKNOWN_VERB_CLASS                       ×7
+  [   INFO] NO_PARADIGMATIC_FORMS                    ×1
+  [WARNING] EMPTY_PHONETIC                           ×1
+
+ERRORS (442)
+------------------------------------------------------------
+  SK-kaaqasasuq,_kaasasuq-p2-0005 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+002C ',' in phonetic form | value: [kaá-ʔə-sə-sʊʔ,kaá-sə-sʊʔ]
+  SK-aaka,_aakaq,_aakaqa-p2-0048 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+002C ',' in phonetic form | value: [aá-kə,aá-kəʔ,aá-kə-ʔə]
+  SK-ahictarahaq-p9-0088 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+006F 'o' in phonetic form | value: [cross-referenceonly]
+  SK-ahictarahaq-p9-0088 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+0065 'e' in phonetic form | value: [cross-referenceonly]
+  SK-ahictarahaq-p9-0088 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+0066 'f' in phonetic form | value: [cross-referenceonly]
+  SK-ahictarahaq-p9-0088 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+006E 'n' in phonetic form | value: [cross-referenceonly]
+  SK-ahictarahaq-p9-0088 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+006C 'l' in phonetic form | value: [cross-referenceonly]
+  SK-ahictarahaq-p9-0088 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+0079 'y' in phonetic form | value: [cross-referenceonly]
+  SK-ahihiwaaquusuq,_ahihiwuusuq-p9-0092 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+002C ',' in phonetic form | value: [ə-hí-hɪ-waa-ʔuu-sʊʔ,ə-hí-hɪ-wuu-sʊʔ]
+  SK-akahwiriwisisuq-p11-0109 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+02C6 'ˆ' in phonetic form | value: [à-kəh-wɪ-rɪ-wˆ-sɪ-sʊʔ]
+  SK-akarawiisuq,_akarawis-p11-0115 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+002C ',' in phonetic form | value: [ə-kə-rà-wii-sʊʔ,ə-kə-rà-wɪs]
+  SK-arahuusiriq-p13-0131 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [ə-rə-hu÷-sɪ-riʔ]
+  SK-askuhuukita-p16-0174 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [əs-kʊ-hu÷-kɪ-tə]
+  SK-askuhuuruq-p16-0175 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [əs-kʊ-hu÷-rʊʔ]
+  SK-askuruurit-p16-0179 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [əs-kʊ-ru÷-rɪt]
+  SK-aspiqaahwiqaahus,_kspiqaahwiqa-p17-0185 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+002C ',' in phonetic form | value: [əs-pí-ʔaah-wi-ʔaa-hʊs,kspí-ʔaah-wi-ʔaa-hʊs,kspí-ʔaah-wii-hʊs]
+  SK-asuukukaawiquq-p18-0216 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [ə-su÷-kʊ-kaa-wi-ʔuʔ]
+  SK-awaka--p20-0267 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+002E '.' in phonetic form | value: [ə-wə-kə•(ʊt...)]
+  SK-awakiks,_tawakiks-p21-0271 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+002C ',' in phonetic form | value: [à-wə-kɪks,tà-wə-kɪks]
+  SK-awatata--p21-0277 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+002E '.' in phonetic form | value: [ə-wə-tə-tə•(ʊt...)]
+  SK-awiraa--p24-0328 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+002E '.' in phonetic form | value: [ə-wɪ-raa•(ʊt...)]
+  SK-caas,_icaas-p27-0384 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+002C ',' in phonetic form | value: [čaás,í-čaas]
+  SK-cacikskaatiit,_cacikskatiit-p27-0395 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+002C ',' in phonetic form | value: [čə-číks-kaa-tiit,čə-číks-kə-tiit]
+  SK-cahuuki-p27-0401 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [čə-hu÷-kɪ]
+  SK-cak,_icak-p27-0402 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+002C ',' in phonetic form | value: •čək,•ɪ-čə{k/t}
+  SK-cakahuuruq-p27-0404 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [čə-kə-hu÷-rʊʔ]
+  SK-caski,_caskii,_caskiiq-p28-0418 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+002C ',' in phonetic form | value: [čəs-kí,čəs-kií,čəs-kiíʔ]
+  SK-caskiiqit,_caskiit-p28-0419 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+002C ',' in phonetic form | value: [čəs-kií-ʔɪt,čəs-kiít]
+  SK-ciksuhuuruq-p29-0449 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [čɪk-sʊ-hu÷-rʊʔ]
+  SK-ciruu-p29-0459 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [čɪ-ru÷]
+  SK-ckahuuripiikuq-p30-0463 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [tskə-hu÷-rɪ-pii-kʊʔ]
+  SK-ckakuukuquq-p30-0464 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [tskə-ku÷-ku-ʔuʔ]
+  SK-ckirihki_kuuruuriki-p30-0486 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [tskí-rɪh-kɪkuu-ru÷-rɪ-kɪ]
+  SK-ckuuri-p31-0502 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [tsku÷-rɪ]
+  SK-ckuuruq-p31-0503 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [tsku÷-rʊʔ]
+  SK-ckuusuq-p31-0504 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [tsku÷-sʊʔ]
+  SK-ctuquq-p31-0513 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [tst÷-ʔuʔ]
+  SK-cuhuuruq-p32-0517 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [čʊ-hu÷-rʊʔ]
+  SK-cuskatit-p32-0521 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+006F 'o' in phonetic form | value: [cross-referenceonly]
+  SK-cuskatit-p32-0521 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+0065 'e' in phonetic form | value: [cross-referenceonly]
+  SK-cuskatit-p32-0521 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+0066 'f' in phonetic form | value: [cross-referenceonly]
+  SK-cuskatit-p32-0521 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+006E 'n' in phonetic form | value: [cross-referenceonly]
+  SK-cuskatit-p32-0521 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+006C 'l' in phonetic form | value: [cross-referenceonly]
+  SK-cuskatit-p32-0521 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+0079 'y' in phonetic form | value: [cross-referenceonly]
+  SK-cuuqat-p32-0529 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [ču÷-ʔət]
+  SK-cuuhkataku-p32-0532 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [ču÷h-kə-tə-kʊ]
+  SK-cuuhkatuus-p32-0533 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [ču÷h-kə-tuus]
+  SK-cuuraasuq-p32-0535 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [ču÷-raa-sʊʔ]
+  SK-cuuraki-p32-0536 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [ču÷-rə-kɪ]
+  SK-cuurawiiqat-p32-0537 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [ču÷-rə-wii-ʔət]
+  SK-cuururaruus-p32-0538 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [ču÷-rʊ-rə-ruus]
+  SK-cuustit-p32-0540 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [ču÷s-tɪt]
+  SK-ha-,_haa--p32-0541 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+002C ',' in phonetic form | value: [hə•,haa•]
+  SK-haak-,_rak--p33-0557 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+002C ',' in phonetic form | value: [haak•,rək•]
+  SK-haarutpahat-p36-0611 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+006F 'o' in phonetic form | value: [cross-referenceonly]
+  SK-haarutpahat-p36-0611 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+0065 'e' in phonetic form | value: [cross-referenceonly]
+  SK-haarutpahat-p36-0611 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+0066 'f' in phonetic form | value: [cross-referenceonly]
+  SK-haarutpahat-p36-0611 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+006E 'n' in phonetic form | value: [cross-referenceonly]
+  SK-haarutpahat-p36-0611 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+006C 'l' in phonetic form | value: [cross-referenceonly]
+  SK-haarutpahat-p36-0611 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+0079 'y' in phonetic form | value: [cross-referenceonly]
+  SK-haaruutuq-p36-0612 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [haa-ru÷-tʊʔ]
+  SK-haas-,_has--p36-0614 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+002C ',' in phonetic form | value: [haas•,həs•]
+  SK-haawaq,_hawaa-p37-0628 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+002C ',' in phonetic form | value: [haá-wəʔ,hə-waá]
+  SK-hariiquq-p37-0634 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+006F 'o' in phonetic form | value: [cross-referenceonly]
+  SK-hariiquq-p37-0634 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+0065 'e' in phonetic form | value: [cross-referenceonly]
+  SK-hariiquq-p37-0634 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+0066 'f' in phonetic form | value: [cross-referenceonly]
+  SK-hariiquq-p37-0634 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+006E 'n' in phonetic form | value: [cross-referenceonly]
+  SK-hariiquq-p37-0634 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+006C 'l' in phonetic form | value: [cross-referenceonly]
+  SK-hariiquq-p37-0634 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+0079 'y' in phonetic form | value: [cross-referenceonly]
+  SK-hariipahat-p37-0637 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+006F 'o' in phonetic form | value: [cross-referenceonly]
+  SK-hariipahat-p37-0637 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+0065 'e' in phonetic form | value: [cross-referenceonly]
+  SK-hariipahat-p37-0637 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+0066 'f' in phonetic form | value: [cross-referenceonly]
+  SK-hariipahat-p37-0637 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+006E 'n' in phonetic form | value: [cross-referenceonly]
+  SK-hariipahat-p37-0637 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+006C 'l' in phonetic form | value: [cross-referenceonly]
+  SK-hariipahat-p37-0637 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+0079 'y' in phonetic form | value: [cross-referenceonly]
+  SK-hatawi-,_ratawi--p38-0668 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+002C ',' in phonetic form | value: [hə-tə-wɪ•,rə-tə-wɪ•]
+  SK-hictaqaahiiq,_hictaqaahiiqi-p40-0691 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+002C ',' in phonetic form | value: [hɪts-tà-ʔaa-hiiʔ,hɪts-tà-ʔaa-hii-ʔɪ]
+  SK-hirasuuririq-p43-0703 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [hɪ-rə-su÷-rɪ-riʔ]
+  SK-hiruu-p43-0706 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [hɪ-ru÷]
+  SK-hiruuska-p43-0707 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [hɪ-ru÷s-kə]
+  SK-hiruuskaqipakuuhtuq-p43-0708 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [hɪ-ru÷s-kə-ʔɪ-pə-kuuh-tʊʔ]
+  SK-hukawirahaku,_hukawirahakusuq-p45-0752 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+002C ',' in phonetic form | value: [hʊ-kə-wɪ-rə-hə-kʊ,hʊ-kə-wɪ-rə-hə-kʊ-sʊʔ]
+  SK-huraariwiiruku,_rahuraariwiiru-p47-0789 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+002C ',' in phonetic form | value: [hʊ-raa-rɪ-wii-rʊ-kʊ,rà-hʊ-raa-rɪ-wii-rʊ-kʊ]
+  SK-huraaruukat-p47-0793 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [hʊ-raa-ru÷-kət]
+  SK-huuq-p48-0815 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [hu÷ʔ]
+  SK-huucahaaruq-p48-0819 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [hu÷-čə-haa-rʊʔ]
+  SK-huucariit-p49-0826 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [hu÷-čə-riit]
+  SK-huuhatawiquq-p49-0831 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [hu÷-hə-tə-wi-ʔuʔ]
+  SK-huukaahaaruq-p49-0841 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [hu÷-kaa-haa-rʊʔ]
+  SK-huukahaaruq-p49-0844 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [hu÷-kə-haa-rʊʔ]
+  SK-huurahkuuckusuq-p51-0857 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [hu÷-rəh-kuuts-kʊ-sʊʔ]
+  SK-huurasaaruq-p51-0861 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [hu÷-rə-saa-rʊʔ]
+  SK-huurickahiriq-p51-0863 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+00F7 '÷' in phonetic form | value: [hu÷-rɪts-kə-hɪ-riʔ]
+  SK-huuriktik-p51-0867 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+004E 'N' in phonetic form | value: NOT_PROVIDED_IN_ENTRY
+  SK-huuriktik-p51-0867 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+004F 'O' in phonetic form | value: NOT_PROVIDED_IN_ENTRY
+  SK-huuriktik-p51-0867 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+0054 'T' in phonetic form | value: NOT_PROVIDED_IN_ENTRY
+  SK-huuriktik-p51-0867 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+005F '_' in phonetic form | value: NOT_PROVIDED_IN_ENTRY
+  SK-huuriktik-p51-0867 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+0050 'P' in phonetic form | value: NOT_PROVIDED_IN_ENTRY
+  SK-huuriktik-p51-0867 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+0052 'R' in phonetic form | value: NOT_PROVIDED_IN_ENTRY
+  SK-huuriktik-p51-0867 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+0056 'V' in phonetic form | value: NOT_PROVIDED_IN_ENTRY
+  ... and 342 more errors
+
+WARNINGS — NOUN MISSING GLOTTAL STOP (328)
+------------------------------------------------------------
+  SK-kaaqata-p2-0011: kaaʔata
+  SK-ahictarahaataakaa-p9-0089: ahictarahaataakaa
+  SK-ahitki-p9-0097: ahitki
+  SK-akarahkata-p11-0114: akarahkata
+  SK-ariisit_rawarii-p13-0144: ariisit rawarii
+  SK-arika-p13-0146: arika
+  SK-arikaraariki-p13-0148: Arikaraariki
+  SK-askiisawihuku-p16-0167: askiisawihuku
+  SK-askiiskatawicaku-p16-0168: askiiskatawicaku
+  SK-asku-raastawi-p16-0178: asku-raastawi
+  SK-astarahi-p17-0194: Astarahi
+  SK-astawaa-p17-0197: astawaa
+  SK-atikawa-p19-0235: atikawa
+  SK-atiktaka-p19-0237: atiktaka
+  SK-caahikski-p26-0363: caahikski
+  SK-caahiks-rararuuwarii-p26-0367: caahiks-rararuuwarii
+  SK-caakawiraarikitaahaku-p26-0378: caakawiraarikitaahaku
+  SK-caatki-p27-0392: caatki
+  SK-cahuuki-p27-0401: cahuuki
+  SK-cakaaqa-p27-0403: Cakaaʔa
+  SK-capaaraqu-p28-0409: capaaraʔu
+  SK-caraahku-p28-0414: caraahku
+  SK-cawii-p28-0424: Cawii
+  SK-cawiirikiripacki-p28-0426: Cawiirikiripacki
+  SK-cikiri-p29-0439: cikiri
+  SK-cikirihkiripahki-p29-0442: cikirihkiripahki
+  SK-cikirihpiita-p29-0443: cikirihpiita
+  SK-ckariitki-p30-0470: ckariitki
+  SK-ckarucki-p30-0471: ckarucki
+  SK-ckataahisiku-p30-0473: ckataahisiku
+  SK-ckiiri-p30-0474: Ckiiri
+  SK-ckiisaakaratawaa-p30-0476: ckiisaakaratawaa
+  SK-ckiiskararii-p30-0478: ckiiskararii
+  SK-ckipis_raawarii-p30-0481: ckipis raawarii
+  SK-ckirihki-p30-0485: ckirihki
+  SK-ckirihki_kuuruuriki-p30-0486: Ckirihki Kuuruuriki
+  SK-ckiriraara-p30-0487: Ckiriraara
+  SK-ckuuri-p31-0502: ckuuri
+  SK-cuuhkataku-p32-0532: cuuhkataku
+  SK-cuupiriktaakaa-p32-0534: Cuupiriktaakaa
+  SK-cuuraki-p32-0536: cuuraki
+  SK-cuustiraqu-p32-0539: cuustiraʔu
+  SK-haakastahkata-p34-0580: haakastahkata
+  SK-hariirahkata-p37-0638: hariirahkata
+  SK-harikictaakaa-p37-0639: harikictaakaa
+  SK-hariwiita-p37-0644: hariwiita
+  SK-haski-p37-0650: haski
+  SK-haspacki-p38-0658: haspacki
+  SK-hastahuraahki-p38-0661: hastahuraahki
+  SK-hiruuska-p43-0707: Hiruuska
+  ... and 278 more
+
+WARNINGS — EMPTY PHONETIC FORM (1)
+------------------------------------------------------------
+  SK-ø-p349-3568
+
+WARNINGS — INVALID PHONETIC CHARACTERS
+------------------------------------------------------------
+  U+00F7 '÷' — 139 entries
+    SK-arahuusiriq-p13-0131
+    SK-askuhuukita-p16-0174
+    SK-askuhuuruq-p16-0175
+    SK-askuruurit-p16-0179
+    SK-asuukukaawiquq-p18-0216
+    ... and 134 more
+  U+002C ',' — 84 entries
+    SK-kaaqasasuq,_kaasasuq-p2-0005
+    SK-aaka,_aakaq,_aakaqa-p2-0048
+    SK-ahihiwaaquusuq,_ahihiwuusuq-p9-0092
+    SK-akarawiisuq,_akarawis-p11-0115
+    SK-aspiqaahwiqaahus,_kspiqaahwiqa-p17-0185
+    ... and 79 more
+  U+006E 'n' — 23 entries
+    SK-ahictarahaq-p9-0088
+    SK-cuskatit-p32-0521
+    SK-haarutpahat-p36-0611
+    SK-hariiquq-p37-0634
+    SK-hariipahat-p37-0637
+    ... and 18 more
+  U+006F 'o' — 22 entries
+    SK-ahictarahaq-p9-0088
+    SK-cuskatit-p32-0521
+    SK-haarutpahat-p36-0611
+    SK-hariiquq-p37-0634
+    SK-hariipahat-p37-0637
+    ... and 17 more
+  U+0065 'e' — 22 entries
+    SK-ahictarahaq-p9-0088
+    SK-cuskatit-p32-0521
+    SK-haarutpahat-p36-0611
+    SK-hariiquq-p37-0634
+    SK-hariipahat-p37-0637
+    ... and 17 more
+  U+0066 'f' — 18 entries
+    SK-ahictarahaq-p9-0088
+    SK-cuskatit-p32-0521
+    SK-haarutpahat-p36-0611
+    SK-hariiquq-p37-0634
+    SK-hariipahat-p37-0637
+    ... and 13 more
+  U+002E '.' — 18 entries
+    SK-awaka--p20-0267
+    SK-awatata--p21-0277
+    SK-awiraa--p24-0328
+    SK-ica--p53-0900
+    SK-ikiraa--p61-1058
+    ... and 13 more
+  U+0079 'y' — 17 entries
+    SK-ahictarahaq-p9-0088
+    SK-cuskatit-p32-0521
+    SK-haarutpahat-p36-0611
+    SK-hariiquq-p37-0634
+    SK-hariipahat-p37-0637
+    ... and 12 more
+  U+006C 'l' — 16 entries
+    SK-ahictarahaq-p9-0088
+    SK-cuskatit-p32-0521
+    SK-haarutpahat-p36-0611
+    SK-hariiquq-p37-0634
+    SK-hariipahat-p37-0637
+    ... and 11 more
+  U+004E 'N' — 9 entries
+    SK-huuriktik-p51-0867
+    SK-huuruhaahkaatiit-p51-0868
+    SK-ikitawiqat-p62-1071
+    SK-kaawiracariiquus-p74-1342
+    SK-picuuwihiriq-p111-2164
+    ... and 4 more
+  U+00D8 'Ø' — 7 entries
+    SK-pic_ø-p111-2155
+    SK-ø-p349-3567
+    SK-ø-p349-3569
+    SK-ø-p349-3570
+    SK-ø_(ut...)_ciksuq-p349-3571
+    ... and 2 more
+  U+0064 'd' — 6 entries
+    SK-huutawirihuur-p52-0882
+    SK-kaaks-p72-1292
+    SK-kiiskawaarasit-p92-1737
+    SK-raaripakusuq-p123-2402
+    SK-rakaraaracaahisiku-p134-2621
+    ... and 1 more
+  U+0041 'A' — 5 entries
+    SK-huuruhaahkaatiit-p51-0868
+    SK-kaawiracariiquus-p74-1342
+    SK-tiraaktakaasikus-p166-3271
+    SK-wakta/taa-p175-3476
+    SK-rikakiis-p491-4156
+  U+004F 'O' — 4 entries
+    SK-huuriktik-p51-0867
+    SK-ikitawiqat-p62-1071
+    SK-picuuwihiriq-p111-2164
+    SK-takaas-p157-3063
+  U+0054 'T' — 4 entries
+    SK-huuriktik-p51-0867
+    SK-ikitawiqat-p62-1071
+    SK-picuuwihiriq-p111-2164
+    SK-takaas-p157-3063
+  U+005F '_' — 4 entries
+    SK-huuriktik-p51-0867
+    SK-ikitawiqat-p62-1071
+    SK-picuuwihiriq-p111-2164
+    SK-takaas-p157-3063
+  U+0050 'P' — 4 entries
+    SK-huuriktik-p51-0867
+    SK-ikitawiqat-p62-1071
+    SK-picuuwihiriq-p111-2164
+    SK-takaas-p157-3063
+  U+0052 'R' — 4 entries
+    SK-huuriktik-p51-0867
+    SK-ikitawiqat-p62-1071
+    SK-picuuwihiriq-p111-2164
+    SK-takaas-p157-3063
+  U+0056 'V' — 4 entries
+    SK-huuriktik-p51-0867
+    SK-ikitawiqat-p62-1071
+    SK-picuuwihiriq-p111-2164
+    SK-takaas-p157-3063
+  U+0049 'I' — 4 entries
+    SK-huuriktik-p51-0867
+    SK-ikitawiqat-p62-1071
+    SK-picuuwihiriq-p111-2164
+    SK-takaas-p157-3063
+  U+0044 'D' — 4 entries
+    SK-huuriktik-p51-0867
+    SK-ikitawiqat-p62-1071
+    SK-picuuwihiriq-p111-2164
+    SK-takaas-p157-3063
+  U+0045 'E' — 4 entries
+    SK-huuriktik-p51-0867
+    SK-ikitawiqat-p62-1071
+    SK-picuuwihiriq-p111-2164
+    SK-takaas-p157-3063
+  U+0076 'v' — 4 entries
+    SK-huutawirihuur-p52-0882
+    SK-kaaks-p72-1292
+    SK-rakaraaracaahisiku-p134-2621
+    SK-piikawaa-p460-4081
+  U+0053 'S' — 4 entries
+    SK-kiiskawaarasit-p92-1737
+    SK-piirustaruus-p113-2173
+    SK-raakiiskawaarasit-p119-2328
+    SK-raaripakusuq-p123-2402
+  U+02C6 'ˆ' — 3 entries
+    SK-akahwiriwisisuq-p11-0109
+    SK-pahuruq_raarikawaawi-p108-2068
+    SK-raarahkituuquq-p121-2372
+  U+0059 'Y' — 2 entries
+    SK-huuriktik-p51-0867
+    SK-picuuwihiriq-p111-2164
+  U+2039 '‹' — 1 entries
+    SK-iriirasakuhaku,_rasakuhaku-p66-1160
+  U+0062 'b' — 1 entries
+    SK-kiiskawaarasit-p92-1737
+  U+0067 'g' — 1 entries
+    SK-raakiiskawaarasit-p119-2328
+  U+00F8 'ø' — 1 entries
+    SK-raraaqiitustaruuwarii-p136-2678
+  U+002B '+' — 1 entries
+    SK-taawatatk-p155-3019
+  U+00D2 'Ò' — 1 entries
+    SK-tiihiiraraahkasa-p164-3236
+  U+00E7 'ç' — 1 entries
+    SK-aacikicii-p349-3588
+
+WARNINGS — CONSONANT SKELETON MISMATCHES
+------------------------------------------------------------
+  SK-kaac-p2-0016: Consonant mismatch: headword 'kc' vs phonetic 'kts'
+    kaac / [•kaats•]
+  SK-kaackaawiquq-p2-0019: Consonant mismatch: headword 'kckwʔʔ' vs phonetic 'ktskwʔʔ'
+    kaackaawiʔuʔ / [kaáts-kaa-wi-ʔuʔ]
+  SK-kaackaraaruq-p2-0020: Consonant mismatch: headword 'kckrrʔ' vs phonetic 'ktskrrʔ'
+    kaackaraaruʔ / [kaats-ka-raa-ruʔ]
+  SK-kaackawuh-p2-0021: Consonant mismatch: headword 'kckwh' vs phonetic 'ktskwh'
+    kaackawuh / [•kaats-kə-wʊ(h)•]
+  SK-ackat-p8-0078: Consonant mismatch: headword 'ckt' vs phonetic 'tskt'
+    ackat / [àts-kət]
+  SK-ackiriku-p8-0079: Consonant mismatch: headword 'ckrk' vs phonetic 'tskrk'
+    ackiriku / [•əts-kɪ-rɪ-kʊ•]
+  SK-ackurus-p8-0080: Consonant mismatch: headword 'ckrs' vs phonetic 'tskrs'
+    ackurus / [əts-kʊ-rʊs]
+  SK-ackurus-p8-0081: Consonant mismatch: headword 'ckrs' vs phonetic 'tskrs'
+    ackurus / [•əts-kʊ-rʊs•]
+  SK-ahictarahaq-p9-0088: Consonant mismatch: headword 'hctrhʔ' vs phonetic 'crssrrc'
+    ahictarahaʔ / [cross-referenceonly]
+  SK-ahictarahaataakaa-p9-0089: Consonant mismatch: headword 'hctrhtk' vs phonetic 'htstrhtk'
+    ahictarahaataakaa / [à-hɪts-tə-rə-haa-taa-kaa]
+  SK-ahictarariituq-p9-0090: Consonant mismatch: headword 'hctrrtʔ' vs phonetic 'htstrrtʔ'
+    ahictarariituʔ / [à-hɪts-tə-rə-rii-tʊʔ]
+  SK-akaarickariituq-p9-0106: Consonant mismatch: headword 'krckrtʔ' vs phonetic 'krtskrtʔ'
+    Akaarickariituʔ / [ə-kaa-ríts-kə-rii-tʊʔ]
+  SK-akaaricpatpuus-p9-0107: Consonant mismatch: headword 'krcptps' vs phonetic 'krtsptps'
+    akaaricpatpuus / [à-kaa-rɪts-pət-puus]
+  SK-ariikicparik-p13-0142: Consonant mismatch: headword 'rkcprk' vs phonetic 'rktsprkt'
+    ariikicparik / •ə-rii-kɪts-pə-rɪ{k/t}•
+  SK-atipickatit-p19-0242: Consonant mismatch: headword 'tpcktt' vs phonetic 'tptsktt'
+    atipickatit / [ə-tɪ-píts-kə-tɪt]
+  SK-awikickakuusik-p24-0316: Consonant mismatch: headword 'wkckksk' vs phonetic 'wktskkskt'
+    awikickakuusik / [•ə-wɪ-kɪts-kə-kuu-sɪ{k/t}•]
+  SK-awikickakuusis-p24-0317: Consonant mismatch: headword 'wkckkss' vs phonetic 'wktskkss'
+    awikickakuusis / [•ə-wɪ-kɪts-kə-kuu-sɪs•]
+  SK-awikiickawarik-p24-0319: Consonant mismatch: headword 'wkckwrk' vs phonetic 'wktskwrkt'
+    awikiickawarik / [•ə-wɪ-kiits-kə-wə-rɪ{k/t}•]
+  SK-awirictaqu-p25-0335: Consonant mismatch: headword 'wrctʔ' vs phonetic 'wrtstʔ'
+    awirictaʔu / [•ə-wɪ-rɪts-tə-ʔu•]
+  SK-awirictakaahak-p25-0336: Consonant mismatch: headword 'wrctkhk' vs phonetic 'wrtstkhkt'
+    awirictakaahak / [•ə-wɪ-rɪts-tə-kaa-hə{k/t}•]
+  SK-cakickuutuq-p27-0405: Consonant mismatch: headword 'ckcktʔ' vs phonetic 'čktsktʔ'
+    cakickuutuʔ / [čà-kɪts-kuu-tʊʔ]
+  SK-ckaquq-p30-0460: Consonant mismatch: headword 'ckʔʔ' vs phonetic 'tskʔʔ'
+    ckaʔuʔ / [tskà-ʔuʔ]
+  SK-ckaapiruus-p30-0461: Consonant mismatch: headword 'ckprs' vs phonetic 'tskprs'
+    ckaapiruus / [tskaá-pɪ-ruus]
+  SK-ckahiikaraquks-p30-0462: Consonant mismatch: headword 'ckhkrʔks' vs phonetic 'tskhkrʔks'
+    ckahiikaraʔuks / [tskə-hií-kə-rə-ʔuks]
+  SK-ckahuuripiikuq-p30-0463: Consonant mismatch: headword 'ckhrpkʔ' vs phonetic 'tskhrpkʔ'
+    ckahuuripiikuʔ / [tskə-hu÷-rɪ-pii-kʊʔ]
+  SK-ckakuukuquq-p30-0464: Consonant mismatch: headword 'ckkkʔʔ' vs phonetic 'tskkkʔʔ'
+    ckakuukuʔuʔ / [tskə-ku÷-ku-ʔuʔ]
+  SK-ckapicistuukus-p30-0465: Consonant mismatch: headword 'ckpcstks' vs phonetic 'tskpčstks'
+    ckapicistuukus / [tskà-pɪ-čɪs-tuu-kʊs]
+  SK-ckara-p30-0466: Consonant mismatch: headword 'ckr' vs phonetic 'tskr'
+    ckara / [tskà-rə]
+  SK-ckaraaruq-p30-0467: Consonant mismatch: headword 'ckrrʔ' vs phonetic 'tskrrʔ'
+    ckaraaruʔ / [tskà-raa-rʊʔ]
+  SK-ckarahkuukuquq-p30-0468: Consonant mismatch: headword 'ckrhkkʔʔ' vs phonetic 'tskrhkkʔʔ'
+    ckarahkuukuʔuʔ / [tskà-rəh-kuu-ku-ʔuʔ]
+  ... and 393 more
+
+INFO — MISSING VERB CLASS (553)
+------------------------------------------------------------
+  SK-kaac-p2-0016: Verb entry (VD) has no verb class
+  SK-kaaciks-p2-0018: Verb entry (VD) has no verb class
+  SK-aahkawikiiqac-p2-0044: Verb entry (VD) has no verb class
+  SK-acikstaraa-p7-0053: Verb entry (VD) has no verb class
+  SK-acikstaraaruhuur-p7-0054: Verb entry (VD) has no verb class
+  SK-acikstarahkiis/kis-p7-0055: Verb entry (VD) has no verb class
+  SK-acikstawis-p7-0061: Verb entry (VD) has no verb class
+  SK-acikstiiquus-p7-0062: Verb entry (VD) has no verb class
+  SK-acikstiihuur-p7-0064: Verb entry (VD) has no verb class
+  SK-acikstiiris-p7-0065: Verb entry (VD) has no verb class
+  SK-aciksuhuuricaahiks-p8-0073: Verb entry (VD) has no verb class
+  SK-aciksuuwicaks-p8-0076: Verb entry (VD) has no verb class
+  SK-ackiriku-p8-0079: Verb entry (VD) has no verb class
+  SK-ackurus-p8-0080: Verb entry (VD) has no verb class
+  SK-ackurus-p8-0081: Verb entry (VD) has no verb class
+  SK-acuhurihuur-p8-0082: Verb entry (VD) has no verb class
+  SK-ahiht-p9-0093: Verb entry (VD) has no verb class
+  SK-akaa-p9-0105: Verb entry (VL) has no verb class
+  SK-akiihaar-p11-0118: Verb entry (VD) has no verb class
+  SK-akitaar-p11-0120: Verb entry (VD) has no verb class
+  ... and 533 more
+
+PRIORITIZED FIX LIST
+------------------------------------------------------------
+Priority 1 (Errors — data integrity):
+  INVALID_PHONETIC_CHAR: 442 entries
+
+Priority 2 (Warnings — data quality):
+  NOUN_MISSING_GLOTTAL: 328 entries
+  EMPTY_PHONETIC: 1 entries
+  CONSONANT_SKELETON_MISMATCH: 423 entries
+
+Priority 3 (Info — completeness):
+  MISSING_VERB_CLASS: 553 entries
+  NO_PARADIGMATIC_FORMS: 1 entries
+  MISSING_OPEN_BRACKET: 78 entries
+  MISSING_CLOSE_BRACKET: 78 entries
+  UNKNOWN_GRAM_CLASS: 94 entries

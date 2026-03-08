@@ -1,0 +1,1305 @@
+{
+  "timestamp": "2026-03-07T15:16:03.313642",
+  "results": [
+    {
+      "entry_id": "SK-ahictarahaataakaa-p9-0089",
+      "classification": "ocr_miss",
+      "reason": "Common substance noun ('cow fat; tallow') typically ends in -Vʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-ahitki-p9-0097",
+      "classification": "ocr_miss",
+      "reason": "Common substance noun ('fat') typically ends in -Vʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-akahkaritki-p358-3665",
+      "classification": "ocr_miss",
+      "reason": "Common object noun ('house') in a compound typically ends in -Vʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-akahkiripahki-p358-3669",
+      "classification": "ocr_miss",
+      "reason": "Common object noun ('outhouse', 'shed', 'tent') typically ends in -Vʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-akahwaahukasa-p358-3680",
+      "classification": "ocr_miss",
+      "reason": "Common object noun ('wall tent') typically ends in -Vʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-akahwaawaktiku-p358-3681",
+      "classification": "ocr_miss",
+      "reason": "Common object noun ('church, church building') typically ends in -Vʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-akarahkata-p11-0114",
+      "classification": "ocr_miss",
+      "reason": "Common material noun ('buckskin', 'canvas') typically ends in -Vʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-ara-p360-3704",
+      "classification": "legitimate",
+      "reason": "Kinship term ('your same-sex sibling') legitimately ends in a bare vowel."
+    },
+    {
+      "entry_id": "SK-arika-p13-0146",
+      "classification": "ocr_miss",
+      "reason": "Common object noun ('horn') typically ends in -Vʔ. Phonetic form ends in bare vowel. While 'One Horn Dance' is a fixed expression, the primary gloss 'horn' suggests a common noun."
+    },
+    {
+      "entry_id": "SK-arikta-p362-3716",
+      "classification": "ocr_miss",
+      "reason": "Common animal noun ('bald eagle') typically ends in -Vʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-asaaki-p362-3736",
+      "classification": "ocr_miss",
+      "reason": "Common animal noun ('dog') typically ends in -Vʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-asaakiripahki-p362-3739",
+      "classification": "ocr_miss",
+      "reason": "Common animal noun ('puppy; little dog') in a compound typically ends in -Vʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-asaarahkata-p362-3745",
+      "classification": "ocr_miss",
+      "reason": "Common animal noun ('buckskin horse') typically ends in -Vʔ. Phonetic form is missing, but pattern suggests an OCR miss."
+    },
+    {
+      "entry_id": "SK-asahi-p363-3756",
+      "classification": "ocr_miss",
+      "reason": "Common animal noun ('mink', 'water dog') typically ends in -Vʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-asataakaa-p363-3760",
+      "classification": "legitimate",
+      "reason": "One gloss indicates a proper noun/name ('White Horse, the name of a prominent... doctor'), which legitimately ends in a bare vowel."
+    },
+    {
+      "entry_id": "SK-asawiita-p363-3765",
+      "classification": "ocr_miss",
+      "reason": "Common animal description ('male horse', 'male dog') typically ends in -Vʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-asiikasa-p363-3770",
+      "classification": "ocr_miss",
+      "reason": "Common object noun ('spur') typically ends in -Vʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-askaaqa-p363-3775",
+      "classification": "legitimate",
+      "reason": "The headword 'askaaʔa' already includes the final glottal stop 'ʔ', meaning it does not end in a bare vowel and is correctly formed. This entry does not fit the premise of the task (entries ending in a bare vowel)."
+    },
+    {
+      "entry_id": "SK-askiisawihuku-p16-0167",
+      "classification": "ocr_miss",
+      "reason": "Common activity noun ('hopscotch') typically ends in -Vʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-askiiskatawicaku-p16-0168",
+      "classification": "ocr_miss",
+      "reason": "Common tool noun ('flesher') typically ends in -Vʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-asku-raastawi-p16-0178",
+      "classification": "legitimate",
+      "reason": "Compound expression for a modern object, phonetic form lacks final glottal stop."
+    },
+    {
+      "entry_id": "SK-astawaa-p17-0197",
+      "classification": "legitimate",
+      "reason": "Compound expression for a modern object (Dutch oven), phonetic form lacks final glottal stop."
+    },
+    {
+      "entry_id": "SK-atikawa-p19-0235",
+      "classification": "ocr_miss",
+      "reason": "Common food item, typically expected to end in -ʔ. Phonetic form lacks final glottal stop."
+    },
+    {
+      "entry_id": "SK-atiktaka-p19-0237",
+      "classification": "ocr_miss",
+      "reason": "Common plant/food item, typically expected to end in -ʔ. Phonetic form lacks final glottal stop."
+    },
+    {
+      "entry_id": "SK-awihuksahustahkata-p370-3791",
+      "classification": "legitimate",
+      "reason": "Compound expression for a modern substance, phonetic form lacks final glottal stop."
+    },
+    {
+      "entry_id": "SK-caahiks-rararuuwarii-p26-0367",
+      "classification": "legitimate",
+      "reason": "Compound expression for a modern object, phonetic form lacks final glottal stop."
+    },
+    {
+      "entry_id": "SK-caahikski-p26-0363",
+      "classification": "ocr_miss",
+      "reason": "Common object noun, typically expected to end in -ʔ. Phonetic form lacks final glottal stop."
+    },
+    {
+      "entry_id": "SK-caakawiraarikitaahaku-p26-0378",
+      "classification": "legitimate",
+      "reason": "Compound expression for a modern tool, phonetic form lacks final glottal stop."
+    },
+    {
+      "entry_id": "SK-caatki-p27-0392",
+      "classification": "ocr_miss",
+      "reason": "Common object noun, typically expected to end in -ʔ. Phonetic form lacks final glottal stop."
+    },
+    {
+      "entry_id": "SK-cahuuki-p27-0401",
+      "classification": "ocr_miss",
+      "reason": "Common object noun, typically expected to end in -ʔ. Phonetic form lacks final glottal stop."
+    },
+    {
+      "entry_id": "SK-capaaraqu-p28-0409",
+      "classification": "uncertain",
+      "reason": "Headword 'capaaraʔu' explicitly contains a final glottal stop, contradicting the premise of the task to classify entries ending in a bare vowel."
+    },
+    {
+      "entry_id": "SK-caraahku-p28-0414",
+      "classification": "ocr_miss",
+      "reason": "Common animal noun, typically expected to end in -ʔ. Phonetic form lacks final glottal stop."
+    },
+    {
+      "entry_id": "SK-cikiri-p29-0439",
+      "classification": "legitimate",
+      "reason": "Loanword from English 'chicken', phonetic form lacks final glottal stop."
+    },
+    {
+      "entry_id": "SK-cikirihkiripahki-p29-0442",
+      "classification": "legitimate",
+      "reason": "Derived from a loanword ('chicken'), phonetic form lacks final glottal stop."
+    },
+    {
+      "entry_id": "SK-cikirihpiita-p29-0443",
+      "classification": "legitimate",
+      "reason": "Derived from a loanword ('chicken') or descriptive compound, phonetic form lacks final glottal stop."
+    },
+    {
+      "entry_id": "SK-ckariitki-p30-0470",
+      "classification": "ocr_miss",
+      "reason": "Common object/material noun, typically expected to end in -ʔ. Phonetic form lacks final glottal stop."
+    },
+    {
+      "entry_id": "SK-ckarucki-p30-0471",
+      "classification": "ocr_miss",
+      "reason": "Common body part/object noun, typically expected to end in -ʔ. Phonetic form lacks final glottal stop."
+    },
+    {
+      "entry_id": "SK-ckataahisiku-p30-0473",
+      "classification": "legitimate",
+      "reason": "Compound expression for a modern object, phonetic form lacks final glottal stop."
+    },
+    {
+      "entry_id": "SK-ckiisaakaratawaa-p30-0476",
+      "classification": "ocr_miss",
+      "reason": "Common body part noun, typically expected to end in -ʔ. Phonetic form lacks final glottal stop."
+    },
+    {
+      "entry_id": "SK-ckiiskararii-p30-0478",
+      "classification": "ocr_miss",
+      "reason": "Common animal noun, typically expected to end in -ʔ. Phonetic form lacks final glottal stop."
+    },
+    {
+      "entry_id": "SK-ckirihki-p30-0485",
+      "classification": "legitimate",
+      "reason": "Refers to a proper noun (mythological trickster figure)."
+    },
+    {
+      "entry_id": "SK-ckuuri-p31-0502",
+      "classification": "legitimate",
+      "reason": "Loanword from English 'school'."
+    },
+    {
+      "entry_id": "SK-cuuhkataku-p32-0532",
+      "classification": "ocr_miss",
+      "reason": "Common object noun ('warbonnet'), likely missing final glottal stop (expected -uʔ)."
+    },
+    {
+      "entry_id": "SK-cuuraki-p32-0536",
+      "classification": "ocr_miss",
+      "reason": "Common noun ('girl'), likely missing final glottal stop (expected -iʔ)."
+    },
+    {
+      "entry_id": "SK-cuustiraqu-p32-0539",
+      "classification": "legitimate",
+      "reason": "The headword 'cuustiraʔu' already includes a glottal stop, so it does not fit the 'bare vowel ending' criteria for OCR miss detection. It is correctly transcribed."
+    },
+    {
+      "entry_id": "SK-haakastahkata-p34-0580",
+      "classification": "ocr_miss",
+      "reason": "Common object noun (plant), likely missing final glottal stop (expected -aʔ)."
+    },
+    {
+      "entry_id": "SK-hariirahkata-p37-0638",
+      "classification": "ocr_miss",
+      "reason": "Common animal noun ('newborn calf'), likely missing final glottal stop (expected -aʔ)."
+    },
+    {
+      "entry_id": "SK-harikictaakaa-p37-0639",
+      "classification": "ocr_miss",
+      "reason": "Common object noun (food item 'flour'), likely missing final glottal stop (expected -aʔ)."
+    },
+    {
+      "entry_id": "SK-hariwiita-p37-0644",
+      "classification": "ocr_miss",
+      "reason": "Common animal noun ('male calf'), likely missing final glottal stop (expected -aʔ)."
+    },
+    {
+      "entry_id": "SK-haski-p37-0650",
+      "classification": "ocr_miss",
+      "reason": "Common object noun ('string'), likely missing final glottal stop (expected -iʔ)."
+    },
+    {
+      "entry_id": "SK-haspacki-p38-0658",
+      "classification": "ocr_miss",
+      "reason": "Common object noun (material 'silk'), likely missing final glottal stop (expected -iʔ)."
+    },
+    {
+      "entry_id": "SK-hastahuraahki-p38-0661",
+      "classification": "ocr_miss",
+      "reason": "Common object noun ('leather string'), likely missing final glottal stop (expected -iʔ)."
+    },
+    {
+      "entry_id": "SK-haturaahkaritki-p387-3804",
+      "classification": "ocr_miss",
+      "reason": "Common object noun ('paved road'), likely missing final glottal stop (expected -iʔ)."
+    },
+    {
+      "entry_id": "SK-hawaahawaa-p387-3815",
+      "classification": "ocr_miss",
+      "reason": "Common object noun (plant 'cattail'), likely missing final glottal stop (expected -aʔ)."
+    },
+    {
+      "entry_id": "SK-hiikicu-p389-3828",
+      "classification": "ocr_miss",
+      "reason": "Common object noun ('handkerchief'), likely missing final glottal stop (expected -uʔ)."
+    },
+    {
+      "entry_id": "SK-hiiraaricakusku-p389-3834",
+      "classification": "ocr_miss",
+      "reason": "Common object noun (tool 'pitchfork'), likely missing final glottal stop (expected -uʔ)."
+    },
+    {
+      "entry_id": "SK-hiitkirikawaa-p390-3851",
+      "classification": "ocr_miss",
+      "reason": "Common animal noun ('peacock'), likely missing final glottal stop (expected -aʔ)."
+    },
+    {
+      "entry_id": "SK-hiitpaarasiku-p390-3854",
+      "classification": "ocr_miss",
+      "reason": "Common object noun (plant 'pokeweed'), likely missing final glottal stop (expected -uʔ)."
+    },
+    {
+      "entry_id": "SK-hikskawicaku-p390-3859",
+      "classification": "ocr_miss",
+      "reason": "Common object noun (tool 'pestle'), likely missing final glottal stop (expected -uʔ)."
+    },
+    {
+      "entry_id": "SK-icataahata-p55-0941",
+      "classification": "ocr_miss",
+      "reason": "Common object noun (food item 'doughnut'), likely missing final glottal stop (expected -aʔ)."
+    },
+    {
+      "entry_id": "SK-icataaqatikawaa-p55-0939",
+      "classification": "legitimate",
+      "reason": "Compound expression describing a specific food item, which can legitimately end in a bare vowel."
+    },
+    {
+      "entry_id": "SK-iitkataku-p61-1046",
+      "classification": "legitimate",
+      "reason": "Refers to a title or role (policeman, sheriff), which can legitimately end in a bare vowel."
+    },
+    {
+      "entry_id": "SK-iitpaca-p61-1052",
+      "classification": "ocr_miss",
+      "reason": "Common noun for a body part ('nipple'); typically, such nouns end in -Vʔ. The phonetic form also ends in a bare vowel."
+    },
+    {
+      "entry_id": "SK-iriiraacusaakaratawi-p65-1140",
+      "classification": "ocr_miss",
+      "reason": "Common noun for an architectural feature ('smokehole'); typically, such nouns end in -Vʔ. The phonetic form also ends in a bare vowel."
+    },
+    {
+      "entry_id": "SK-iriiraaktacaraqu-p65-1141",
+      "classification": "uncertain",
+      "reason": "The headword 'iriiraaktacaraʔu' already includes a final glottal stop ʔ, contradicting the premise that entries end in a bare vowel. Therefore, it cannot be classified as an OCR miss or legitimate bare vowel."
+    },
+    {
+      "entry_id": "SK-iriiraawirahkatawihaku-p65-1144",
+      "classification": "ocr_miss",
+      "reason": "Common noun for a place/building ('theater'); typically, such nouns end in -Vʔ. The phonetic form also ends in a bare vowel."
+    },
+    {
+      "entry_id": "SK-iriirakaahuraahkatiitu-p65-1146",
+      "classification": "legitimate",
+      "reason": "Directional term ('north') functioning as both a noun and adverb, which can legitimately lack a final glottal stop."
+    },
+    {
+      "entry_id": "SK-iriirapaapiciskaaruuci-p65-1148",
+      "classification": "ocr_miss",
+      "reason": "Common noun for a place/institution ('bank'); typically, such nouns end in -Vʔ. The phonetic form also ends in a bare vowel."
+    },
+    {
+      "entry_id": "SK-iriirapaapicistariku-p65-1149",
+      "classification": "legitimate",
+      "reason": "Refers to a title or role ('banker'), which can legitimately end in a bare vowel."
+    },
+    {
+      "entry_id": "SK-iriirapiciihiqu-p66-1150",
+      "classification": "uncertain",
+      "reason": "The headword 'iriirapiciihiʔu' already includes a final glottal stop ʔ, contradicting the premise that entries end in a bare vowel. Therefore, it cannot be classified as an OCR miss or legitimate bare vowel."
+    },
+    {
+      "entry_id": "SK-iriiraraakaaruurarikaawarii-p66-1151",
+      "classification": "legitimate",
+      "reason": "Refers to a title or role ('waitress; waiter'), which can legitimately end in a bare vowel."
+    },
+    {
+      "entry_id": "SK-iriiraraaririitiku-p66-1152",
+      "classification": "ocr_miss",
+      "reason": "Common noun for a place/building ('airport; depot'); typically, such nouns end in -Vʔ. The phonetic form also ends in a bare vowel."
+    },
+    {
+      "entry_id": "SK-iriiraraawiskawataku-p66-1153",
+      "classification": "ocr_miss",
+      "reason": "Common noun for an architectural feature ('chimney'); typically, such nouns end in -Vʔ. The phonetic form also ends in a bare vowel."
+    },
+    {
+      "entry_id": "SK-iriirarariihuhkaaruuci-p66-1154",
+      "classification": "ocr_miss",
+      "reason": "Common noun for a place/institution ('post office'); typically, such nouns end in -Vʔ. The phonetic form also ends in a bare vowel."
+    },
+    {
+      "entry_id": "SK-iriirarariihuurariku-p66-1155",
+      "classification": "legitimate",
+      "reason": "Refers to a title or role ('postmaster; postal clerk'), which can legitimately end in a bare vowel."
+    },
+    {
+      "entry_id": "SK-iriirasaakaku-p66-1157",
+      "classification": "legitimate",
+      "reason": "Directional term ('south') functioning as both a noun and adverb, which can legitimately lack a final glottal stop."
+    },
+    {
+      "entry_id": "SK-iriirasaakaratawi-p66-1158",
+      "classification": "ocr_miss",
+      "reason": "Common noun for an architectural feature ('smokehole'); typically, such nouns end in -Vʔ. The phonetic form also ends in a bare vowel."
+    },
+    {
+      "entry_id": "SK-iriirasaaktahu-p66-1159",
+      "classification": "legitimate",
+      "reason": "Directional term ('east') functioning as both a noun and adverb, which can legitimately lack a final glottal stop."
+    },
+    {
+      "entry_id": "SK-iriirasakuriispuu-p66-1161",
+      "classification": "legitimate",
+      "reason": "Directional term ('west') functioning as both a noun and adverb, which can legitimately lack a final glottal stop."
+    },
+    {
+      "entry_id": "SK-iriirihaakawaahcu-p66-1162",
+      "classification": "ocr_miss",
+      "reason": "Common noun for a place/building ('cafe, restaurant'); typically, such nouns end in -Vʔ. The phonetic form also ends in a bare vowel."
+    },
+    {
+      "entry_id": "SK-iriirirahcaku-p66-1163",
+      "classification": "legitimate",
+      "reason": "Compound expression/place name, bare vowel ending is standard for such constructions."
+    },
+    {
+      "entry_id": "SK-iriiriritpaahwiiku-p66-1164",
+      "classification": "legitimate",
+      "reason": "Compound expression/place name, bare vowel ending is standard for such constructions."
+    },
+    {
+      "entry_id": "SK-iririiraktacaraqu-p67-1181",
+      "classification": "uncertain",
+      "reason": "The headword 'iririiraktacaraʔu' and phonetic form '[í-rɪ-rii-rək-tə-čə-rə-ʔu]' explicitly end in a glottal stop (ʔu), which contradicts the premise that entries end in a bare vowel. Thus, it does not fit the classification criteria."
+    },
+    {
+      "entry_id": "SK-iririiraktahkictapiriwuu-p67-1182",
+      "classification": "legitimate",
+      "reason": "Compound expression/place name, bare vowel ending is standard for such constructions."
+    },
+    {
+      "entry_id": "SK-iririitaktaaqiitawuhu-p67-1183",
+      "classification": "legitimate",
+      "reason": "Descriptive/adjectival noun (profession/role), bare stem form is standard."
+    },
+    {
+      "entry_id": "SK-iriruuhaarataawaawi-p67-1184",
+      "classification": "legitimate",
+      "reason": "Compound expression/place name, bare vowel ending is standard for such constructions."
+    },
+    {
+      "entry_id": "SK-iriruuhkituctawi-p67-1185",
+      "classification": "legitimate",
+      "reason": "Compound expression/place name, bare vowel ending is standard for such constructions."
+    },
+    {
+      "entry_id": "SK-iriruutakaariikawi-p67-1186",
+      "classification": "legitimate",
+      "reason": "Compound expression/place name, bare vowel ending is standard for such constructions."
+    },
+    {
+      "entry_id": "SK-kaapita-p73-1301",
+      "classification": "legitimate",
+      "reason": "Loanword from English ('carpenter') and a profession, which often lack final ʔ."
+    },
+    {
+      "entry_id": "SK-kaaqata-p2-0011",
+      "classification": "ocr_miss",
+      "reason": "Common animal noun ('upland plover'), typically expected to end in -Vʔ. The phonetic form also lacks a final glottal stop."
+    },
+    {
+      "entry_id": "SK-kaaqata-p71-1258",
+      "classification": "ocr_miss",
+      "reason": "Common animal noun ('upland plover'), typically expected to end in -Vʔ. The phonetic form also lacks a final glottal stop."
+    },
+    {
+      "entry_id": "SK-kaariiksati-p73-1304",
+      "classification": "ocr_miss",
+      "reason": "Common animal noun ('nighthawk'), typically expected to end in -Vʔ. The phonetic form also lacks a final glottal stop."
+    },
+    {
+      "entry_id": "SK-kaataraki-p74-1327",
+      "classification": "ocr_miss",
+      "reason": "Common object noun ('ax'), typically expected to end in -Vʔ. The phonetic form also lacks a final glottal stop."
+    },
+    {
+      "entry_id": "SK-kaawita-p75-1351",
+      "classification": "legitimate",
+      "reason": "Descriptive/dependent noun stem ('last child'), bare stem form is standard for such roles/relationships."
+    },
+    {
+      "entry_id": "SK-kaciiki-p75-1358",
+      "classification": "ocr_miss",
+      "reason": "Common animal noun ('fish'), typically expected to end in -Vʔ. The phonetic form also lacks a final glottal stop."
+    },
+    {
+      "entry_id": "SK-kactahkata-p75-1365",
+      "classification": "ocr_miss",
+      "reason": "Common plant noun ('wild four-o'clock', 'goldenrod'), typically expected to end in -Vʔ. The phonetic form also lacks a final glottal stop."
+    },
+    {
+      "entry_id": "SK-karitki-p79-1443",
+      "classification": "ocr_miss",
+      "reason": "Common object noun ('rock, stone, pebble'), typically expected to end in -Vʔ. The phonetic form also lacks a final glottal stop."
+    },
+    {
+      "entry_id": "SK-kataawaruucaku-p80-1479",
+      "classification": "ocr_miss",
+      "reason": "Common object noun ('horn, wind instrument'), typically expected to end in -Vʔ. The phonetic form also lacks a final glottal stop."
+    },
+    {
+      "entry_id": "SK-katuuraktaakaa-p83-1538",
+      "classification": "ocr_miss",
+      "reason": "Common animal noun ('snow goose', 'swan'), typically expected to end in -Vʔ. The phonetic form also lacks a final glottal stop."
+    },
+    {
+      "entry_id": "SK-kawahki-p83-1550",
+      "classification": "ocr_miss",
+      "reason": "Common animal noun ('magpie'), typically expected to end in -Vʔ. The phonetic form also lacks a final glottal stop."
+    },
+    {
+      "entry_id": "SK-kicahaasta-p84-1578",
+      "classification": "ocr_miss",
+      "reason": "Common plant name, likely missing final ʔ."
+    },
+    {
+      "entry_id": "SK-kicakustaakaa-p85-1583",
+      "classification": "legitimate",
+      "reason": "Descriptive noun, possibly a compound, where bare stem form can be standard."
+    },
+    {
+      "entry_id": "SK-kicka-p85-1602",
+      "classification": "legitimate",
+      "reason": "Functions as a proper noun (place name) in one of its glosses."
+    },
+    {
+      "entry_id": "SK-kictaakaa-p436-3947",
+      "classification": "legitimate",
+      "reason": "Refers to a modern concept/loanword, which can legitimately lack final ʔ."
+    },
+    {
+      "entry_id": "SK-kiirahkata-p91-1703",
+      "classification": "legitimate",
+      "reason": "Refers to modern concepts/loanwords, which can legitimately lack final ʔ."
+    },
+    {
+      "entry_id": "SK-kiiriictaakaa-p91-1711",
+      "classification": "legitimate",
+      "reason": "Descriptive noun, possibly a compound, where bare stem form can be standard."
+    },
+    {
+      "entry_id": "SK-kiiskarari-p92-1730",
+      "classification": "ocr_miss",
+      "reason": "Common animal name, likely missing final ʔ."
+    },
+    {
+      "entry_id": "SK-kiiwaakstaakaa-p93-1762",
+      "classification": "legitimate",
+      "reason": "Descriptive noun, possibly a compound, where bare stem form can be standard."
+    },
+    {
+      "entry_id": "SK-kiiwaquctaakaa-p93-1758",
+      "classification": "ocr_miss",
+      "reason": "Common plant name, likely missing final ʔ."
+    },
+    {
+      "entry_id": "SK-kiiwuhki-p93-1765",
+      "classification": "ocr_miss",
+      "reason": "Common plant name, likely missing final ʔ."
+    },
+    {
+      "entry_id": "SK-kipahki-p94-1778",
+      "classification": "ocr_miss",
+      "reason": "Common plant name, likely missing final ʔ."
+    },
+    {
+      "entry_id": "SK-kirahku-p95-1802",
+      "classification": "ocr_miss",
+      "reason": "Common noun for a body condition, likely missing final ʔ."
+    },
+    {
+      "entry_id": "SK-kiri-p95-1815",
+      "classification": "legitimate",
+      "reason": "Likely a loanword or term for an introduced animal, which can legitimately lack final ʔ."
+    },
+    {
+      "entry_id": "SK-kiriiraawiskaaqahu-p95-1821",
+      "classification": "legitimate",
+      "reason": "Refers to a modern concept/loanword, which can legitimately lack final ʔ."
+    },
+    {
+      "entry_id": "SK-kiriiraawistarustaa-p95-1822",
+      "classification": "legitimate",
+      "reason": "Refers to a modern concept/loanword, which can legitimately lack final ʔ."
+    },
+    {
+      "entry_id": "SK-kisaacki-p98-1883",
+      "classification": "ocr_miss",
+      "reason": "Common noun for food/body part, likely missing final ʔ."
+    },
+    {
+      "entry_id": "SK-ksapitaahaku-p448-3984",
+      "classification": "ocr_miss",
+      "reason": "Common plant name, likely missing final ʔ."
+    },
+    {
+      "entry_id": "SK-kskatahkawaa-p448-3990",
+      "classification": "ocr_miss",
+      "reason": "Common animal name, likely missing final ʔ."
+    },
+    {
+      "entry_id": "SK-kskiicpita-p448-3994",
+      "classification": "ocr_miss",
+      "reason": "Common noun for a body part, likely missing final ʔ."
+    },
+    {
+      "entry_id": "SK-kskiikahki-p448-3995",
+      "classification": "ocr_miss",
+      "reason": "Common animal name, likely missing final ʔ."
+    },
+    {
+      "entry_id": "SK-kskuuri-p101-1944",
+      "classification": "legitimate",
+      "reason": "Loanword from English."
+    },
+    {
+      "entry_id": "SK-kstiiriwara-p101-1946",
+      "classification": "legitimate",
+      "reason": "Proper noun (place name)."
+    },
+    {
+      "entry_id": "SK-kuckaritki-p101-1951",
+      "classification": "ocr_miss",
+      "reason": "Common object noun (kettle) typically ends in -Vʔ."
+    },
+    {
+      "entry_id": "SK-kuckictahkata-p101-1953",
+      "classification": "ocr_miss",
+      "reason": "Common object/material noun (paint) typically ends in -Vʔ."
+    },
+    {
+      "entry_id": "SK-kuckirarahkaawaawi-p101-1956",
+      "classification": "ocr_miss",
+      "reason": "Common object/food noun (canned goods) typically ends in -Vʔ."
+    },
+    {
+      "entry_id": "SK-kucpaarika-p101-1958",
+      "classification": "ocr_miss",
+      "reason": "Common object noun (kettle) typically ends in -Vʔ."
+    },
+    {
+      "entry_id": "SK-kuctaakaa-p101-1959",
+      "classification": "ocr_miss",
+      "reason": "Common object noun (pail/kettle) typically ends in -Vʔ."
+    },
+    {
+      "entry_id": "SK-kuctahkata-p101-1961",
+      "classification": "ocr_miss",
+      "reason": "Common object noun (kettle) typically ends in -Vʔ."
+    },
+    {
+      "entry_id": "SK-kuhku-p101-1962",
+      "classification": "ocr_miss",
+      "reason": "Common animal/food noun (pig/bacon) typically ends in -Vʔ."
+    },
+    {
+      "entry_id": "SK-kuraciihaaqu-p102-1973",
+      "classification": "uncertain",
+      "reason": "Headword 'kuraciihaaʔu' explicitly contains a glottal stop (ʔu), contradicting the premise of classifying entries ending in a bare vowel."
+    },
+    {
+      "entry_id": "SK-kurahaaqu-p102-1974",
+      "classification": "uncertain",
+      "reason": "Headword 'kurahaaʔu' explicitly contains a glottal stop (ʔu), contradicting the premise of classifying entries ending in a bare vowel."
+    },
+    {
+      "entry_id": "SK-kurasiihaaqu-p102-1978",
+      "classification": "uncertain",
+      "reason": "Headword 'kurasiihaaʔu' explicitly contains a glottal stop (ʔu), contradicting the premise of classifying entries ending in a bare vowel."
+    },
+    {
+      "entry_id": "SK-kuratiihaaqu-p102-1979",
+      "classification": "uncertain",
+      "reason": "Headword 'kuratiihaaʔu' explicitly contains a glottal stop (ʔu), contradicting the premise of classifying entries ending in a bare vowel."
+    },
+    {
+      "entry_id": "SK-kurukstaakaa-p102-1992",
+      "classification": "ocr_miss",
+      "reason": "Common animal noun (bear) typically ends in -Vʔ."
+    },
+    {
+      "entry_id": "SK-kuuciksta-p452-4006",
+      "classification": "ocr_miss",
+      "reason": "Common object noun (cup) typically ends in -Vʔ."
+    },
+    {
+      "entry_id": "SK-kuucki-p452-4007",
+      "classification": "ocr_miss",
+      "reason": "Common object noun (kettle/pot) typically ends in -Vʔ."
+    },
+    {
+      "entry_id": "SK-paa-p453-4021",
+      "classification": "ocr_miss",
+      "reason": "Common natural object/time unit (moon/month) typically ends in -Vʔ."
+    },
+    {
+      "entry_id": "SK-paa-p453-4022",
+      "classification": "ocr_miss",
+      "reason": "Common animal noun (elk) typically ends in -Vʔ."
+    },
+    {
+      "entry_id": "SK-paahukasa-p453-4040",
+      "classification": "ocr_miss",
+      "reason": "Common object/concept noun (hairstyle) typically ends in -Vʔ."
+    },
+    {
+      "entry_id": "SK-paapicistaakaa-p454-4058",
+      "classification": "ocr_miss",
+      "reason": "Common object/material noun (metal) typically ends in -Vʔ."
+    },
+    {
+      "entry_id": "SK-paapicistahkata-p454-4060",
+      "classification": "legitimate",
+      "reason": "Descriptive/adjectival noun, 'yellow metal', where the bare stem form is standard. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-paapicistiwiruucaku-p454-4062",
+      "classification": "ocr_miss",
+      "reason": "Common object noun 'hammer' typically ends in -uʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-paaqi-p453-4026",
+      "classification": "legitimate",
+      "reason": "The headword 'paaʔi' already includes the final glottal stop, so it does not end in a bare vowel. It is also a loanword ('pie') which can legitimately lack a final glottal stop if it were bare, but here it is present."
+    },
+    {
+      "entry_id": "SK-pacawaa-p107-2044",
+      "classification": "ocr_miss",
+      "reason": "Common noun 'disease' typically ends in -aʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-pahukstahkata-p108-2065",
+      "classification": "ocr_miss",
+      "reason": "Common object noun 'pumpkin' typically ends in -aʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-pahuruutaakaa-p108-2070",
+      "classification": "ocr_miss",
+      "reason": "Common animal noun 'white owl' typically ends in -aʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-paksaku-p108-2080",
+      "classification": "ocr_miss",
+      "reason": "Common animal noun 'tadpole, catfish' typically ends in -uʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-pakspaahukasa-p110-2107",
+      "classification": "legitimate",
+      "reason": "Descriptive noun 'roached head' referring to a person with a specific hairstyle, where the bare stem form is standard. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-pakspasaasi-p110-2110",
+      "classification": "legitimate",
+      "reason": "Descriptive noun 'roach hair-style' or 'roached head', where the bare stem form is standard. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-pakstacaaka-p110-2113",
+      "classification": "ocr_miss",
+      "reason": "Common noun 'dandruff' typically ends in -aʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-pakucki-p110-2118",
+      "classification": "ocr_miss",
+      "reason": "Common plant noun 'joint grass' typically ends in -iʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-pakuucaku-p110-2123",
+      "classification": "ocr_miss",
+      "reason": "Common object noun 'top, spinning top' typically ends in -uʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-paruskiripacki-p111-2142",
+      "classification": "ocr_miss",
+      "reason": "Common animal noun 'small rabbit' typically ends in -iʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-parustaakaa-p111-2143",
+      "classification": "ocr_miss",
+      "reason": "Common animal noun 'white rabbit' typically ends in -aʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-pasaki-p111-2145",
+      "classification": "ocr_miss",
+      "reason": "Common plant noun 'cottonwood' typically ends in -iʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-pasaktaakaa-p111-2146",
+      "classification": "ocr_miss",
+      "reason": "Common plant noun 'sycamore' typically ends in -aʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-patki-p111-2149",
+      "classification": "ocr_miss",
+      "reason": "Common plant noun 'acorn' typically ends in -iʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-pihki-p111-2165",
+      "classification": "ocr_miss",
+      "reason": "Common natural object noun 'sleet' typically ends in -iʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-piikawaa-p460-4081",
+      "classification": "ocr_miss",
+      "reason": "Common animal noun 'stallion, bull' typically ends in -aʔ. Phonetic form is missing, but the pattern suggests an OCR miss."
+    },
+    {
+      "entry_id": "SK-piirakiripahki-p460-4092",
+      "classification": "ocr_miss",
+      "reason": "Common noun 'baby, infant' typically ends in -iʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-piiraski-p460-4096",
+      "classification": "ocr_miss",
+      "reason": "Common noun for a person, likely missing final glottal stop."
+    },
+    {
+      "entry_id": "SK-piiraskiripacki-p460-4097",
+      "classification": "ocr_miss",
+      "reason": "Compound common noun for a person, likely missing final glottal stop."
+    },
+    {
+      "entry_id": "SK-piiskita-p113-2175",
+      "classification": "legitimate",
+      "reason": "Loanword from English ('biscuit')."
+    },
+    {
+      "entry_id": "SK-piita-p113-2176",
+      "classification": "ocr_miss",
+      "reason": "Common noun for a person, likely missing final glottal stop."
+    },
+    {
+      "entry_id": "SK-piitaraqu-p113-2181",
+      "classification": "legitimate",
+      "reason": "Headword already includes the glottal stop 'ʔu', so it does not end in a bare vowel."
+    },
+    {
+      "entry_id": "SK-piitiisutki-p113-2184",
+      "classification": "ocr_miss",
+      "reason": "Common noun for a person, likely missing final glottal stop."
+    },
+    {
+      "entry_id": "SK-raackuuki-p116-2262",
+      "classification": "ocr_miss",
+      "reason": "Common noun for a plant/object, likely missing final glottal stop."
+    },
+    {
+      "entry_id": "SK-raakaaruhkiripahki-p118-2306",
+      "classification": "ocr_miss",
+      "reason": "Common noun for food, likely missing final glottal stop."
+    },
+    {
+      "entry_id": "SK-raakicawihuukaarahu-p119-2319",
+      "classification": "ocr_miss",
+      "reason": "Common noun for a tool/object, likely missing final glottal stop."
+    },
+    {
+      "entry_id": "SK-raakiriwiraawariku-p120-2335",
+      "classification": "ocr_miss",
+      "reason": "Common noun for a tool/object, likely missing final glottal stop."
+    },
+    {
+      "entry_id": "SK-raapaku-p120-2349",
+      "classification": "ocr_miss",
+      "reason": "Common noun for a type of person, likely missing final glottal stop."
+    },
+    {
+      "entry_id": "SK-raarakaahki-p122-2378",
+      "classification": "ocr_miss",
+      "reason": "Common noun for an object, likely missing final glottal stop."
+    },
+    {
+      "entry_id": "SK-raawataaruku-p126-2476",
+      "classification": "ocr_miss",
+      "reason": "Common noun for an object/tool, likely missing final glottal stop."
+    },
+    {
+      "entry_id": "SK-raawihtaakaa-p127-2492",
+      "classification": "ocr_miss",
+      "reason": "Common noun for an object, likely missing final glottal stop."
+    },
+    {
+      "entry_id": "SK-raawirahkatawihaku-p128-2514",
+      "classification": "ocr_miss",
+      "reason": "Common noun for a concept/place, likely missing final glottal stop."
+    },
+    {
+      "entry_id": "SK-rahaaktaakaaru-p478-4119",
+      "classification": "ocr_miss",
+      "reason": "Common noun for a plant, likely missing final glottal stop."
+    },
+    {
+      "entry_id": "SK-rahaaktarikatasa-p478-4121",
+      "classification": "ocr_miss",
+      "reason": "Common noun for an object/person, likely missing final glottal stop."
+    },
+    {
+      "entry_id": "SK-rahiisa-p478-4124",
+      "classification": "legitimate",
+      "reason": "Primarily an adverbial expression or fixed temporal noun."
+    },
+    {
+      "entry_id": "SK-rahkasiirahuraahki-p131-2556",
+      "classification": "ocr_miss",
+      "reason": "Common noun for clothing/object, likely missing final glottal stop."
+    },
+    {
+      "entry_id": "SK-rahuraahki-p132-2586",
+      "classification": "ocr_miss",
+      "reason": "Common noun for an animal, likely missing final glottal stop."
+    },
+    {
+      "entry_id": "SK-rahuutuhkawariku-p133-2599",
+      "classification": "ocr_miss",
+      "reason": "Common object noun ('air pump'); phonetic form ends in bare vowel [ʊ], suggesting missing final glottal stop."
+    },
+    {
+      "entry_id": "SK-rahwa-p133-2602",
+      "classification": "ocr_miss",
+      "reason": "Common noun referring to a person's status ('captive, prisoner, slave'); phonetic form ends in bare vowel [ə], suggesting missing final glottal stop."
+    },
+    {
+      "entry_id": "SK-rakaahuraahkatiitu-p134-2610",
+      "classification": "legitimate",
+      "reason": "Directional noun ('north') which often functions as a fixed expression or descriptive noun and can legitimately lack a final glottal stop."
+    },
+    {
+      "entry_id": "SK-rakaraaki-p134-2616",
+      "classification": "ocr_miss",
+      "reason": "Common object noun ('dish, bowl, plate'); phonetic form ends in bare vowel [ɪ], suggesting missing final glottal stop."
+    },
+    {
+      "entry_id": "SK-rakaraaracaahisiku-p134-2621",
+      "classification": "ocr_miss",
+      "reason": "Common object noun ('tea towel, dish towel'); likely missing final glottal stop, typical for common nouns."
+    },
+    {
+      "entry_id": "SK-rakariiksta-p134-2623",
+      "classification": "uncertain",
+      "reason": "Dual gloss includes a common object ('dipper') and a proper noun ('Dipper constellation'). While proper nouns can be legitimate, the common object form would typically end in -ʔ. Without further context on the primary meaning or suffixation, it's uncertain."
+    },
+    {
+      "entry_id": "SK-rakawicaku-p134-2627",
+      "classification": "ocr_miss",
+      "reason": "Common object noun ('grinder'); phonetic form ends in bare vowel [ʊ], suggesting missing final glottal stop."
+    },
+    {
+      "entry_id": "SK-rakcaakarikuku-p134-2628",
+      "classification": "ocr_miss",
+      "reason": "Common object noun ('key'); phonetic form ends in bare vowel [ʊ], suggesting missing final glottal stop."
+    },
+    {
+      "entry_id": "SK-rakcaku-p134-2629",
+      "classification": "ocr_miss",
+      "reason": "Common animal noun ('woodpecker'); phonetic form ends in bare vowel [ʊ], suggesting missing final glottal stop."
+    },
+    {
+      "entry_id": "SK-rakictakasu-p134-2635",
+      "classification": "ocr_miss",
+      "reason": "Common food/drink noun ('pop, soda pop, soft drink'); phonetic form ends in bare vowel [ʊ], suggesting missing final glottal stop."
+    },
+    {
+      "entry_id": "SK-rakictiirahpi-p134-2636",
+      "classification": "ocr_miss",
+      "reason": "Common natural object noun ('ocean'); phonetic form ends in bare vowel [ɪ], suggesting missing final glottal stop."
+    },
+    {
+      "entry_id": "SK-rakiikaruuwarii-p134-2639",
+      "classification": "ocr_miss",
+      "reason": "Common object noun ('lantern, flashlight'); phonetic form ends in bare vowel [ii], suggesting missing final glottal stop."
+    },
+    {
+      "entry_id": "SK-rakiripahki-p135-2643",
+      "classification": "ocr_miss",
+      "reason": "Common natural object noun ('piece of wood, stick, twig, tree, bush'); phonetic form ends in bare vowel [ɪ], suggesting missing final glottal stop."
+    },
+    {
+      "entry_id": "SK-raktawicaku-p135-2661",
+      "classification": "ocr_miss",
+      "reason": "Common animal noun ('woodpecker'); phonetic form ends in bare vowel [ʊ], suggesting missing final glottal stop."
+    },
+    {
+      "entry_id": "SK-raktiiki-p135-2664",
+      "classification": "legitimate",
+      "reason": "Kinship term ('grandchild'); kinship terms legitimately lack a final glottal stop."
+    },
+    {
+      "entry_id": "SK-raktiiwariku-p135-2666",
+      "classification": "ocr_miss",
+      "reason": "Common object noun ('measuring stick, yard stick'); phonetic form ends in bare vowel [ʊ], suggesting missing final glottal stop."
+    },
+    {
+      "entry_id": "SK-raraaqiitustaruuwarii-p136-2678",
+      "classification": "ocr_miss",
+      "reason": "Common object noun ('newspaper'); phonetic form ends in bare vowel [ii], suggesting missing final glottal stop."
+    },
+    {
+      "entry_id": "SK-raraarawarii-p136-2679",
+      "classification": "ocr_miss",
+      "reason": "Common object noun ('airplane'); phonetic form ends in bare vowel [ii], suggesting missing final glottal stop."
+    },
+    {
+      "entry_id": "SK-raracawakataku-p136-2682",
+      "classification": "ocr_miss",
+      "reason": "Common object noun ('telephone'); phonetic form ends in bare vowel [ʊ], suggesting missing final glottal stop."
+    },
+    {
+      "entry_id": "SK-raracawaktahu-p136-2683",
+      "classification": "ocr_miss",
+      "reason": "Common animal noun ('rattlesnake'); phonetic form ends in bare vowel [ʊ], suggesting missing final glottal stop."
+    },
+    {
+      "entry_id": "SK-rarahkirariiʔuusu-p136-2684",
+      "classification": "ocr_miss",
+      "reason": "Common food item, typically expected to end in -ʔ."
+    },
+    {
+      "entry_id": "SK-rarahwaktaariku-p136-2686",
+      "classification": "legitimate",
+      "reason": "Modern technology term, likely a loanword or compound, which can legitimately end in a bare vowel."
+    },
+    {
+      "entry_id": "SK-rarahwaktahu-p136-2687",
+      "classification": "legitimate",
+      "reason": "Modern technology term, likely a loanword or compound, which can legitimately end in a bare vowel."
+    },
+    {
+      "entry_id": "SK-rarariiruku-p136-2690",
+      "classification": "ocr_miss",
+      "reason": "Common natural object (firefly) and modern object (flashlight); common natural objects typically end in -ʔ."
+    },
+    {
+      "entry_id": "SK-raruuckiraraa-p138-2720",
+      "classification": "ocr_miss",
+      "reason": "Common animal name, typically expected to end in -ʔ."
+    },
+    {
+      "entry_id": "SK-raruucpaca-p138-2721",
+      "classification": "ocr_miss",
+      "reason": "Common body part, typically expected to end in -ʔ."
+    },
+    {
+      "entry_id": "SK-rasakuhtiiwariku-p138-2730",
+      "classification": "legitimate",
+      "reason": "Modern technology term, likely a loanword or compound, which can legitimately end in a bare vowel."
+    },
+    {
+      "entry_id": "SK-rataqu-p138-2734",
+      "classification": "ocr_miss",
+      "reason": "Common food item (condiment), typically expected to end in -ʔ."
+    },
+    {
+      "entry_id": "SK-ratawirahkawarikusu-p138-2736",
+      "classification": "legitimate",
+      "reason": "Modern technology term, likely a loanword or compound, which can legitimately end in a bare vowel."
+    },
+    {
+      "entry_id": "SK-rawakarahkawuu-p139-2752",
+      "classification": "legitimate",
+      "reason": "Modern technology term, likely a loanword or compound, which can legitimately end in a bare vowel."
+    },
+    {
+      "entry_id": "SK-riiciki-p140-2775",
+      "classification": "ocr_miss",
+      "reason": "Common tool, typically expected to end in -ʔ."
+    },
+    {
+      "entry_id": "SK-riicikiripacki-p140-2777",
+      "classification": "ocr_miss",
+      "reason": "Common tool, typically expected to end in -ʔ."
+    },
+    {
+      "entry_id": "SK-riiciqaahwaa-p140-2773",
+      "classification": "ocr_miss",
+      "reason": "Common tool, typically expected to end in -ʔ."
+    },
+    {
+      "entry_id": "SK-riicki-p140-2789",
+      "classification": "ocr_miss",
+      "reason": "Common body part, typically expected to end in -ʔ."
+    },
+    {
+      "entry_id": "SK-riickuhki-p140-2790",
+      "classification": "ocr_miss",
+      "reason": "Common natural phenomenon (season), typically expected to end in -ʔ."
+    },
+    {
+      "entry_id": "SK-riihkita-p141-2797",
+      "classification": "legitimate",
+      "reason": "Title or role, which can legitimately end in a bare vowel."
+    },
+    {
+      "entry_id": "SK-riiraktaaraqiwariku-p141-2813",
+      "classification": "legitimate",
+      "reason": "Descriptive noun for a group of people, which can legitimately end in a bare vowel."
+    },
+    {
+      "entry_id": "SK-rikiisastarahi-p492-4178",
+      "classification": "legitimate",
+      "reason": "Compound expression involving a proper noun (Arikara), which can legitimately end in a bare vowel."
+    },
+    {
+      "entry_id": "SK-rikiispasaasi-p492-4185",
+      "classification": "legitimate",
+      "reason": "Compound expression involving a proper noun (Osage), which can legitimately end in a bare vowel."
+    },
+    {
+      "entry_id": "SK-rikiistahkata-p492-4189",
+      "classification": "legitimate",
+      "reason": "Descriptive noun for a specific type of corn, which can legitimately end in a bare vowel."
+    },
+    {
+      "entry_id": "SK-rikucki-p492-4198",
+      "classification": "ocr_miss",
+      "reason": "Common animal noun; typically ends in -ʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-rikuctahkata-p492-4202",
+      "classification": "ocr_miss",
+      "reason": "Common animal noun; typically ends in -ʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-rucaakawihu-p148-2866",
+      "classification": "ocr_miss",
+      "reason": "Common object noun; typically ends in -ʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-rutaaktaarapitaahaku-p148-2875",
+      "classification": "ocr_miss",
+      "reason": "Common object noun; typically ends in -ʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-rutaaktahciihkuku-p148-2876",
+      "classification": "ocr_miss",
+      "reason": "Common object noun; typically ends in -ʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-ruuhahkata-p149-2895",
+      "classification": "ocr_miss",
+      "reason": "Common animal noun; typically ends in -ʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-ruuhkicahariwaara-p149-2897",
+      "classification": "ocr_miss",
+      "reason": "Common food/drink noun; typically ends in -ʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-ruuhkickahaarawiriira-p149-2898",
+      "classification": "ocr_miss",
+      "reason": "Common object/product noun; typically ends in -ʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-ruuhkiispirariiruku-p149-2899",
+      "classification": "ocr_miss",
+      "reason": "Common object/tool noun; typically ends in -ʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-ruuhtahariwaara-p149-2900",
+      "classification": "ocr_miss",
+      "reason": "Common food noun; typically ends in -ʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-ruuhtahariwaariku-p149-2901",
+      "classification": "ocr_miss",
+      "reason": "Common food-related noun; typically ends in -ʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-ruuraakawaawuhu-p150-2916",
+      "classification": "ocr_miss",
+      "reason": "Common noun (person/object); typically ends in -ʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-ruurakariwaariku-p150-2917",
+      "classification": "ocr_miss",
+      "reason": "Common noun (profession); typically ends in -ʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-ruuraqiwuu-p150-2914",
+      "classification": "ocr_miss",
+      "reason": "Common food noun; typically ends in -ʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-saahki-p150-2934",
+      "classification": "ocr_miss",
+      "reason": "Common object noun; typically ends in -ʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-saahkisiikasa-p151-2935",
+      "classification": "ocr_miss",
+      "reason": "Common natural object/food noun; typically ends in -ʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-sakuhkiriku-p151-2946",
+      "classification": "ocr_miss",
+      "reason": "Common animal noun; typically ends in -ʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-saparuu-p152-2966",
+      "classification": "ocr_miss",
+      "reason": "Common natural object noun; typically ends in -ʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-saru-p152-2969",
+      "classification": "legitimate",
+      "reason": "Kinship term and term of address, which legitimately lack a final glottal stop."
+    },
+    {
+      "entry_id": "SK-siraackuskasara-p152-2977",
+      "classification": "ocr_miss",
+      "reason": "Common animal noun; typically ends in -ʔ. Phonetic form ends in bare vowel."
+    },
+    {
+      "entry_id": "SK-siraackuskiicu-p152-2978",
+      "classification": "ocr_miss",
+      "reason": "Common animal name, typically ends in -uʔ."
+    },
+    {
+      "entry_id": "SK-siriirawikawariku-p152-2979",
+      "classification": "ocr_miss",
+      "reason": "Common object noun (game/ball), typically ends in -uʔ."
+    },
+    {
+      "entry_id": "SK-siriirawikusihaku-p152-2980",
+      "classification": "ocr_miss",
+      "reason": "Common object noun (game/ball), typically ends in -uʔ."
+    },
+    {
+      "entry_id": "SK-skacki-p152-2982",
+      "classification": "ocr_miss",
+      "reason": "Common object noun (body part/natural material), typically ends in -iʔ."
+    },
+    {
+      "entry_id": "SK-taa-p153-3004",
+      "classification": "ocr_miss",
+      "reason": "Common animal name, typically ends in -aʔ."
+    },
+    {
+      "entry_id": "SK-taakaski-p502-4240",
+      "classification": "ocr_miss",
+      "reason": "Common object noun (food), typically ends in -iʔ."
+    },
+    {
+      "entry_id": "SK-taapuuska-p502-4246",
+      "classification": "ocr_miss",
+      "reason": "Common object/place noun, typically ends in -aʔ."
+    },
+    {
+      "entry_id": "SK-tapactaakaa-p158-3096",
+      "classification": "ocr_miss",
+      "reason": "Common object noun (food/substance), typically ends in -aʔ."
+    },
+    {
+      "entry_id": "SK-taraahki-p159-3111",
+      "classification": "ocr_miss",
+      "reason": "Common descriptive noun for people, typically ends in -iʔ."
+    },
+    {
+      "entry_id": "SK-tarahaariki-p159-3123",
+      "classification": "ocr_miss",
+      "reason": "Common object noun (tool), typically ends in -iʔ."
+    },
+    {
+      "entry_id": "SK-tarahaataakaa-p160-3125",
+      "classification": "ocr_miss",
+      "reason": "Common animal name, typically ends in -aʔ."
+    },
+    {
+      "entry_id": "SK-tariihwaawariku-p161-3147",
+      "classification": "ocr_miss",
+      "reason": "Common object noun (tool/machine), typically ends in -uʔ."
+    },
+    {
+      "entry_id": "SK-tariitkahki-p161-3152",
+      "classification": "ocr_miss",
+      "reason": "Common object noun (food), typically ends in -iʔ."
+    },
+    {
+      "entry_id": "SK-taruks-pasaasi-p161-3162",
+      "classification": "legitimate",
+      "reason": "Compound expression or multi-word term referring to a specific cultural item."
+    },
+    {
+      "entry_id": "SK-tiirukcaakariki-p165-3254",
+      "classification": "legitimate",
+      "reason": "Functions as both a noun and an adverb (temporal expression), often bare stem."
+    },
+    {
+      "entry_id": "SK-tiki-p165-3261",
+      "classification": "legitimate",
+      "reason": "Kinship term, which legitimately lacks a final glottal stop."
+    },
+    {
+      "entry_id": "SK-ucahaa-p167-3299",
+      "classification": "ocr_miss",
+      "reason": "Common animal name, typically ends in -aʔ."
+    },
+    {
+      "entry_id": "SK-uuhtarikawaa-p172-3394",
+      "classification": "ocr_miss",
+      "reason": "Common animal name, typically ends in -aʔ."
+    },
+    {
+      "entry_id": "SK-uusiriwa-p173-3422",
+      "classification": "ocr_miss",
+      "reason": "Common object noun (plant/food), typically ends in -aʔ."
+    },
+    {
+      "entry_id": "SK-wiiruurirahkasa-p179-3554",
+      "classification": "ocr_miss",
+      "reason": "Common object noun, typically ends in -aʔ."
+    }
+  ]
+}

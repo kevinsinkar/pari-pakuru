@@ -1,0 +1,203 @@
+========================================================================
+Phase 1.1d — Parsing Completeness Audit Report
+Generated: 2026-03-07T15:00:45.131695
+========================================================================
+
+SUMMARY
+----------------------------------------
+S2E entries audited:       4273
+E2S entries audited:       6414
+Clean entries (no flags):  3707
+Total flags:                640
+  Errors:                     2
+  Warnings:                 311
+  Info:                     327
+
+FLAGS BY TYPE (sorted by frequency)
+------------------------------------------------------------
+  [WARNING] NOUN_MISSING_GLOTTAL                     ×260
+  [   INFO] MISSING_VERB_CLASS                       ×115
+  [   INFO] NOUN_MISSING_GLOTTAL_PROPER              ×80
+  [   INFO] MISSING_OPEN_BRACKET                     ×65
+  [   INFO] MISSING_CLOSE_BRACKET                    ×65
+  [WARNING] EMPTY_PHONETIC                           ×32
+  [WARNING] CONSONANT_SKELETON_MISMATCH              ×12
+  [WARNING] UNKNOWN_VERB_CLASS                       ×7
+  [  ERROR] INVALID_PHONETIC_CHAR                    ×2
+  [   INFO] NO_PARADIGMATIC_FORMS                    ×1
+  [   INFO] NOUN_MISSING_GLOTTAL_DEPKIN              ×1
+
+ERRORS (2)
+------------------------------------------------------------
+  SK-rawa,_nawa-p139-2751 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+006E 'n' in phonetic form | value: [rà-wə,nà-wə]
+  SK-taawatatk-p155-3019 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+002B '+' in phonetic form | value: [+raar-][•taa-wə-tət(k)•]
+
+WARNINGS — NOUN MISSING GLOTTAL STOP
+------------------------------------------------------------
+  Common nouns (N) — review needed:    260
+  Kinship/dependent (N-KIN/N-DEP):     1 (by design)
+  Proper nouns/multi-word:             80 (by design)
+
+  Common nouns needing review (first 50):
+  SK-kaaqata-p2-0011: kaaʔata
+  SK-ahictarahaataakaa-p9-0089: ahictarahaataakaa
+  SK-ahitki-p9-0097: ahitki
+  SK-akarahkata-p11-0114: akarahkata
+  SK-arika-p13-0146: arika
+  SK-askiisawihuku-p16-0167: askiisawihuku
+  SK-askiiskatawicaku-p16-0168: askiiskatawicaku
+  SK-asku-raastawi-p16-0178: asku-raastawi
+  SK-astawaa-p17-0197: astawaa
+  SK-atikawa-p19-0235: atikawa
+  SK-atiktaka-p19-0237: atiktaka
+  SK-caahikski-p26-0363: caahikski
+  SK-caahiks-rararuuwarii-p26-0367: caahiks-rararuuwarii
+  SK-caakawiraarikitaahaku-p26-0378: caakawiraarikitaahaku
+  SK-caatki-p27-0392: caatki
+  SK-cahuuki-p27-0401: cahuuki
+  SK-capaaraqu-p28-0409: capaaraʔu
+  SK-caraahku-p28-0414: caraahku
+  SK-cikiri-p29-0439: cikiri
+  SK-cikirihkiripahki-p29-0442: cikirihkiripahki
+  SK-cikirihpiita-p29-0443: cikirihpiita
+  SK-ckariitki-p30-0470: ckariitki
+  SK-ckarucki-p30-0471: ckarucki
+  SK-ckataahisiku-p30-0473: ckataahisiku
+  SK-ckiisaakaratawaa-p30-0476: ckiisaakaratawaa
+  SK-ckiiskararii-p30-0478: ckiiskararii
+  SK-ckirihki-p30-0485: ckirihki
+  SK-ckuuri-p31-0502: ckuuri
+  SK-cuuhkataku-p32-0532: cuuhkataku
+  SK-cuuraki-p32-0536: cuuraki
+  SK-cuustiraqu-p32-0539: cuustiraʔu
+  SK-haakastahkata-p34-0580: haakastahkata
+  SK-hariirahkata-p37-0638: hariirahkata
+  SK-harikictaakaa-p37-0639: harikictaakaa
+  SK-hariwiita-p37-0644: hariwiita
+  SK-haski-p37-0650: haski
+  SK-haspacki-p38-0658: haspacki
+  SK-hastahuraahki-p38-0661: hastahuraahki
+  SK-icataaqatikawaa-p55-0939: icataaʔatikawaa
+  SK-icataahata-p55-0941: icataahata
+  SK-iitkataku-p61-1046: iitkataku
+  SK-iitpaca-p61-1052: iitpaca
+  SK-iriiraacusaakaratawi-p65-1140: iriiraacusaakaratawi
+  SK-iriiraaktacaraqu-p65-1141: iriiraaktacaraʔu
+  SK-iriiraawirahkatawihaku-p65-1144: iriiraawirahkatawihaku
+  SK-iriirakaahuraahkatiitu-p65-1146: iriirakaahuraahkatiitu
+  SK-iriirapaapiciskaaruuci-p65-1148: iriirapaapiciskaaruuci
+  SK-iriirapaapicistariku-p65-1149: iriirapaapicistariku
+  SK-iriirapiciihiqu-p66-1150: iriirapiciihiʔu
+  SK-iriiraraakaaruurarikaawarii-p66-1151: iriiraraakaaruurarikaawarii
+  ... and 210 more
+
+WARNINGS — EMPTY PHONETIC FORM (32)
+------------------------------------------------------------
+  SK-ahictarahaq-p9-0088
+  SK-cuskatit-p32-0521
+  SK-haarutpahat-p36-0611
+  SK-hariiquq-p37-0634
+  SK-hariipahat-p37-0637
+  SK-huuriktik-p51-0867
+  SK-huuruhaahkaatiit-p51-0868
+  SK-huutawirihuur-p52-0882
+  SK-ikitawiqat-p62-1071
+  SK-kaaks-p72-1292
+  SK-kaawiracariiquus-p74-1342
+  SK-kactahaaruq-p75-1364
+  SK-kawiqat-p83-1555
+  SK-kiiskawaarasit-p92-1737
+  SK-kiraar-p94-1787
+  SK-kukatit-p101-1967
+  SK-pahuks-p108-2058
+  SK-picuuwihiriq-p111-2164
+  SK-piirustaruus-p113-2173
+  SK-piiruus-p113-2174
+  SK-raakiiskawaarasit-p119-2328
+  SK-raaripakusuq-p123-2402
+  SK-rakaraaracaahisiku-p134-2621
+  SK-takaas-p157-3063
+  SK-tiraaktakaasikus-p166-3271
+  SK-uhurarik-p169-3333
+  SK-wakta/taa-p175-3476
+  SK-ø-p349-3568
+  SK-asaarahkata-p362-3745
+  SK-hiihpahat-p389-3821
+  SK-piikawaa-p460-4081
+  SK-rikakiis-p491-4156
+
+WARNINGS — INVALID PHONETIC CHARACTERS
+------------------------------------------------------------
+  U+006E 'n' — 1 entries
+    SK-rawa,_nawa-p139-2751
+  U+002B '+' — 1 entries
+    SK-taawatatk-p155-3019
+
+WARNINGS — CONSONANT SKELETON MISMATCHES
+------------------------------------------------------------
+  SK-ak_[+_(ku-,_ruu-,_irii-),_i-]-p9-0102: Consonant mismatch: headword 'kkrr' vs phonetic 'k'
+    ak [+ (ku-, ruu-, irii-), i-] / [•ə{k/t}•]
+  SK-(r)aak/(r)aaqak-p118-2302: Consonant mismatch: headword 'rkrʔk' vs phonetic 'kʔk'
+    (r)aak/(r)aaʔak / [•aak/aa-ʔə{k/t}•]
+  SK-(r)aapuh-p121-2358: Consonant mismatch: headword 'rph' vs phonetic 'ph'
+    (r)aapuh / [•aa-pʊ(h)•]
+  SK-rirahak_[+_raar-]-p145-2835: Consonant mismatch: headword 'rrhkrr' vs phonetic 'rrhk'
+    rirahak [+ raar-] / [•rɪ-rə-hə{k/t}•]
+  SK-rirat_[+_raar-]-p145-2837: Consonant mismatch: headword 'rrtrr' vs phonetic 'rrt'
+    rirat [+ raar-] / [•rɪ-rət•]
+  SK-taawatatk-p155-3019: Consonant mismatch: headword 'twttk' vs phonetic 'rrtwttk'
+    taawatatk / [+raar-][•taa-wə-tət(k)•]
+  SK-uhuur_[+_raar-]-p169-3342: Consonant mismatch: headword 'hrrr' vs phonetic 'hr'
+    uhuur [+ raar-] / [•ʊ-huu(r)•]
+  SK-ø_(ut...)_ciksuq-p349-3571: Consonant mismatch: headword 'ttsksʔ' vs phonetic 'čksʔ'
+    Ø (ut...) ciksuʔ / [•Ø•čík-sʊʔ]
+  SK-ø_(ut...)_kiirahkata-p349-3572: Consonant mismatch: headword 'tkrhkt' vs phonetic 'krhkt'
+    Ø (ut...) kiirahkata / [•Ø•kii-ràh-kə-tə]
+  SK-ø_(ut...)_pak_siriq-p349-3573: Consonant mismatch: headword 'tpksrʔ' vs phonetic 'pksrʔ'
+    Ø (ut...) pak siriʔ / [•pàk-si-riʔ]
+  SK-a_(ir...)_istuq-p349-3578: Consonant mismatch: headword 'rstʔ' vs phonetic 'stʔ'
+    a (ir...) istuʔ / [•ə•ɪs-tʊʔ]
+  SK-kiwak_[+_raar-]-p448-3974: Consonant mismatch: headword 'kwkrr' vs phonetic 'kwk'
+    kiwak [+ raar-] / [•ki-wa{k/t}•]
+
+INFO — MISSING VERB CLASS (115)
+------------------------------------------------------------
+  SK-akaa-p9-0105: Verb entry (VL) has no verb class
+  SK-astaaruukita-p17-0191: Verb entry (VL) has no verb class
+  SK-ataa-p19-0222: Verb entry (VL) has no verb class
+  SK-awita-p25-0345: Verb entry (VL) has no verb class
+  SK-ca-p26-0356: Verb entry (VL) has no verb class
+  SK-caaka-p26-0372: Verb entry (VL) has no verb class
+  SK-haahka-p33-0550: Verb entry (VL) has no verb class
+  SK-haahka-p33-0551: Verb entry (VL) has no verb class
+  SK-haak/haaqak-p33-0558: Verb entry (VL) has no verb class
+  SK-haakarata-p34-0574: Verb entry (VL) has no verb class
+  SK-haakcaaka-p35-0589: Verb entry (VL) has no verb class
+  SK-haakita-p35-0593: Verb entry (VL) has no verb class
+  SK-haaktariika-p35-0595: Verb entry (VL) has no verb class
+  SK-haakukaa-p35-0601: Verb entry (VL) has no verb class
+  SK-haasta-p36-0621: Verb entry (VL) has no verb class
+  SK-hata-p38-0667: Verb entry (VL) has no verb class
+  SK-hiwata-p43-0711: Verb entry (VL) has no verb class
+  SK-hiwatuhta-p43-0712: Verb entry (VL) has no verb class
+  SK-huka-p43-0721: Verb entry (VL) has no verb class
+  SK-hukaa-p43-0724: Verb entry (VL) has no verb class
+  ... and 95 more
+
+PRIORITIZED FIX LIST
+------------------------------------------------------------
+Priority 1 (Errors — data integrity):
+  INVALID_PHONETIC_CHAR: 2 entries
+
+Priority 2 (Warnings — data quality):
+  NOUN_MISSING_GLOTTAL: 260 entries
+  EMPTY_PHONETIC: 32 entries
+  CONSONANT_SKELETON_MISMATCH: 12 entries
+
+Priority 3 (Info — completeness):
+  MISSING_VERB_CLASS: 115 entries
+  NO_PARADIGMATIC_FORMS: 1 entries
+  MISSING_OPEN_BRACKET: 65 entries
+  MISSING_CLOSE_BRACKET: 65 entries

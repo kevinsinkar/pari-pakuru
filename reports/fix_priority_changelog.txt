@@ -1,0 +1,882 @@
+========================================================================
+fix_priority_issues.py — Changelog
+Generated: 2026-03-07T15:00:27.195174
+========================================================================
+
+SUMMARY
+----------------------------------------
+Total entries in file:       4273
+Entries modified:             177
+Total changes:               177
+
+Changes by type:
+  ocr_correction                 ×146
+  nulled_non_ipa                 ×31
+
+OCR CORRECTIONS BY CHARACTER
+----------------------------------------
+  ÷ (U+00F7) → ː                 ×141
+  ˆ (U+02C6) → ɪ                 ×3
+  ‹ (U+2039) → ʊ                 ×1
+  ø (U+00F8) → ː                 ×1
+  Ò (U+00D2) → a                 ×1
+  ç (U+00E7) → ʔ                 ×1
+
+NON-IPA PHONETIC FORMS NULLED (31)
+----------------------------------------
+  SK-ahictarahaq-p9-0088: "[cross-referenceonly]" → null
+  SK-cuskatit-p32-0521: "[cross-referenceonly]" → null
+  SK-haarutpahat-p36-0611: "[cross-referenceonly]" → null
+  SK-hariiquq-p37-0634: "[cross-referenceonly]" → null
+  SK-hariipahat-p37-0637: "[cross-referenceonly]" → null
+  SK-huuriktik-p51-0867: "NOT_PROVIDED_IN_ENTRY" → null
+  SK-huuruhaahkaatiit-p51-0868: "N/A" → null
+  SK-huutawirihuur-p52-0882: "[notprovided]" → null
+  SK-ikitawiqat-p62-1071: "NOT_PROVIDED" → null
+  SK-kaaks-p72-1292: "[notprovided]" → null
+  SK-kaawiracariiquus-p74-1342: "N/A" → null
+  SK-kactahaaruq-p75-1364: "[cross-referenceonly]" → null
+  SK-kawiqat-p83-1555: "[cross-referenceonly]" → null
+  SK-kiiskawaarasit-p92-1737: "Seeentryfor'bold'" → null
+  SK-kiraar-p94-1787: "[cross-referenceonly]" → null
+  SK-kukatit-p101-1967: "[cross-referenceonly]" → null
+  SK-pahuks-p108-2058: "[cross-referenceonly]" → null
+  SK-picuuwihiriq-p111-2164: "NOT_PROVIDED_IN_ENTRY" → null
+  SK-piirustaruus-p113-2173: "Seeentryfor'caterpillar'" → null
+  SK-piiruus-p113-2174: "[cross-referenceonly]" → null
+  SK-raakiiskawaarasit-p119-2328: "Seeentryfor'astonishing'" → null
+  SK-raaripakusuq-p123-2402: "Seeentryfor'soldier'" → null
+  SK-rakaraaracaahisiku-p134-2621: "[notprovided]" → null
+  SK-takaas-p157-3063: "NOT_PROVIDED" → null
+  SK-tiraaktakaasikus-p166-3271: "N/A" → null
+  SK-uhurarik-p169-3333: "[cross-reference]" → null
+  SK-wakta/taa-p175-3476: "N/A" → null
+  SK-asaarahkata-p362-3745: "[cross-referenceonly]" → null
+  SK-hiihpahat-p389-3821: "[cross-referenceonly]" → null
+  SK-piikawaa-p460-4081: "[notprovided]" → null
+  SK-rikakiis-p491-4156: "N/A" → null
+
+DETAILED CHANGES (all)
+------------------------------------------------------------------------
+  SK-ahictarahaq-p9-0088 | phonetic_form | nulled_non_ipa
+    Non-IPA text detected: 'cross-referenceonly'
+
+  SK-akahwiriwisisuq-p11-0109 | phonetic_form | ocr_correction
+    OCR fix: ˆ→ɪ (U+02C6)
+    old: [à-kəh-wɪ-rɪ-wˆ-sɪ-sʊʔ]
+    new: [à-kəh-wɪ-rɪ-wɪ-sɪ-sʊʔ]
+
+  SK-arahuusiriq-p13-0131 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ə-rə-hu÷-sɪ-riʔ]
+    new: [ə-rə-huː-sɪ-riʔ]
+
+  SK-askuhuukita-p16-0174 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [əs-kʊ-hu÷-kɪ-tə]
+    new: [əs-kʊ-huː-kɪ-tə]
+
+  SK-askuhuuruq-p16-0175 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [əs-kʊ-hu÷-rʊʔ]
+    new: [əs-kʊ-huː-rʊʔ]
+
+  SK-askuruurit-p16-0179 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [əs-kʊ-ru÷-rɪt]
+    new: [əs-kʊ-ruː-rɪt]
+
+  SK-asuukukaawiquq-p18-0216 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ə-su÷-kʊ-kaa-wi-ʔuʔ]
+    new: [ə-suː-kʊ-kaa-wi-ʔuʔ]
+
+  SK-cahuuki-p27-0401 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [čə-hu÷-kɪ]
+    new: [čə-huː-kɪ]
+
+  SK-cakahuuruq-p27-0404 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [čə-kə-hu÷-rʊʔ]
+    new: [čə-kə-huː-rʊʔ]
+
+  SK-ciksuhuuruq-p29-0449 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [čɪk-sʊ-hu÷-rʊʔ]
+    new: [čɪk-sʊ-huː-rʊʔ]
+
+  SK-ciruu-p29-0459 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [čɪ-ru÷]
+    new: [čɪ-ruː]
+
+  SK-ckahuuripiikuq-p30-0463 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [tskə-hu÷-rɪ-pii-kʊʔ]
+    new: [tskə-huː-rɪ-pii-kʊʔ]
+
+  SK-ckakuukuquq-p30-0464 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [tskə-ku÷-ku-ʔuʔ]
+    new: [tskə-kuː-ku-ʔuʔ]
+
+  SK-ckirihki_kuuruuriki-p30-0486 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [tskí-rɪh-kɪkuu-ru÷-rɪ-kɪ]
+    new: [tskí-rɪh-kɪkuu-ruː-rɪ-kɪ]
+
+  SK-ckuuri-p31-0502 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [tsku÷-rɪ]
+    new: [tskuː-rɪ]
+
+  SK-ckuuruq-p31-0503 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [tsku÷-rʊʔ]
+    new: [tskuː-rʊʔ]
+
+  SK-ckuusuq-p31-0504 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [tsku÷-sʊʔ]
+    new: [tskuː-sʊʔ]
+
+  SK-ctuquq-p31-0513 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [tst÷-ʔuʔ]
+    new: [tstː-ʔuʔ]
+
+  SK-cuhuuruq-p32-0517 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [čʊ-hu÷-rʊʔ]
+    new: [čʊ-huː-rʊʔ]
+
+  SK-cuskatit-p32-0521 | phonetic_form | nulled_non_ipa
+    Non-IPA text detected: 'cross-referenceonly'
+
+  SK-cuuqat-p32-0529 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ču÷-ʔət]
+    new: [čuː-ʔət]
+
+  SK-cuuhkataku-p32-0532 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ču÷h-kə-tə-kʊ]
+    new: [čuːh-kə-tə-kʊ]
+
+  SK-cuuhkatuus-p32-0533 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ču÷h-kə-tuus]
+    new: [čuːh-kə-tuus]
+
+  SK-cuuraasuq-p32-0535 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ču÷-raa-sʊʔ]
+    new: [čuː-raa-sʊʔ]
+
+  SK-cuuraki-p32-0536 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ču÷-rə-kɪ]
+    new: [čuː-rə-kɪ]
+
+  SK-cuurawiiqat-p32-0537 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ču÷-rə-wii-ʔət]
+    new: [čuː-rə-wii-ʔət]
+
+  SK-cuururaruus-p32-0538 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ču÷-rʊ-rə-ruus]
+    new: [čuː-rʊ-rə-ruus]
+
+  SK-cuustit-p32-0540 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ču÷s-tɪt]
+    new: [čuːs-tɪt]
+
+  SK-haarutpahat-p36-0611 | phonetic_form | nulled_non_ipa
+    Non-IPA text detected: 'cross-referenceonly'
+
+  SK-haaruutuq-p36-0612 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [haa-ru÷-tʊʔ]
+    new: [haa-ruː-tʊʔ]
+
+  SK-hariiquq-p37-0634 | phonetic_form | nulled_non_ipa
+    Non-IPA text detected: 'cross-referenceonly'
+
+  SK-hariipahat-p37-0637 | phonetic_form | nulled_non_ipa
+    Non-IPA text detected: 'cross-referenceonly'
+
+  SK-hirasuuririq-p43-0703 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [hɪ-rə-su÷-rɪ-riʔ]
+    new: [hɪ-rə-suː-rɪ-riʔ]
+
+  SK-hiruu-p43-0706 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [hɪ-ru÷]
+    new: [hɪ-ruː]
+
+  SK-hiruuska-p43-0707 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [hɪ-ru÷s-kə]
+    new: [hɪ-ruːs-kə]
+
+  SK-hiruuskaqipakuuhtuq-p43-0708 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [hɪ-ru÷s-kə-ʔɪ-pə-kuuh-tʊʔ]
+    new: [hɪ-ruːs-kə-ʔɪ-pə-kuuh-tʊʔ]
+
+  SK-huraaruukat-p47-0793 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [hʊ-raa-ru÷-kət]
+    new: [hʊ-raa-ruː-kət]
+
+  SK-huuq-p48-0815 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [hu÷ʔ]
+    new: [huːʔ]
+
+  SK-huucahaaruq-p48-0819 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [hu÷-čə-haa-rʊʔ]
+    new: [huː-čə-haa-rʊʔ]
+
+  SK-huucariit-p49-0826 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [hu÷-čə-riit]
+    new: [huː-čə-riit]
+
+  SK-huuhatawiquq-p49-0831 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [hu÷-hə-tə-wi-ʔuʔ]
+    new: [huː-hə-tə-wi-ʔuʔ]
+
+  SK-huukaahaaruq-p49-0841 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [hu÷-kaa-haa-rʊʔ]
+    new: [huː-kaa-haa-rʊʔ]
+
+  SK-huukahaaruq-p49-0844 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [hu÷-kə-haa-rʊʔ]
+    new: [huː-kə-haa-rʊʔ]
+
+  SK-huurahkuuckusuq-p51-0857 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [hu÷-rəh-kuuts-kʊ-sʊʔ]
+    new: [huː-rəh-kuuts-kʊ-sʊʔ]
+
+  SK-huurasaaruq-p51-0861 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [hu÷-rə-saa-rʊʔ]
+    new: [huː-rə-saa-rʊʔ]
+
+  SK-huurickahiriq-p51-0863 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [hu÷-rɪts-kə-hɪ-riʔ]
+    new: [huː-rɪts-kə-hɪ-riʔ]
+
+  SK-huuriktik-p51-0867 | phonetic_form | nulled_non_ipa
+    Non-IPA text detected: 'NOT_PROVIDED_IN_ENTRY'
+
+  SK-huuruhaahkaatiit-p51-0868 | phonetic_form | nulled_non_ipa
+    Non-IPA text detected: 'N/A'
+
+  SK-huuruksas-p52-0870 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [hu÷-rʊk-səs]
+    new: [huː-rʊk-səs]
+
+  SK-huuruuhtuq-p52-0871 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [huu-ru÷h-tʊʔ]
+    new: [huu-ruːh-tʊʔ]
+
+  SK-huutariiquus-p52-0881 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [hu÷-tə-rii-ʔuus]
+    new: [huː-tə-rii-ʔuus]
+
+  SK-huutawirihuur-p52-0882 | phonetic_form | nulled_non_ipa
+    Non-IPA text detected: 'notprovided'
+
+  SK-huuwiq-p52-0891 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [hu÷-wiʔ]
+    new: [huː-wiʔ]
+
+  SK-huuwiq-p52-0892 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [hu÷-wiʔ]
+    new: [huː-wiʔ]
+
+  SK-huuwiicahaahiriq-p53-0894 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [hu÷-wii-čə-haa-hɪ-riʔ]
+    new: [huː-wii-čə-haa-hɪ-riʔ]
+
+  SK-ikitawiqat-p62-1071 | phonetic_form | nulled_non_ipa
+    Non-IPA text detected: 'NOT_PROVIDED'
+
+  SK-ikskuukuquq-p63-1096 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ɪks-ku÷-ku-ʔuʔ]
+    new: [ɪks-kuː-ku-ʔuʔ]
+
+  SK-iriirasakuhaku,_rasakuhaku-p66-1160 | phonetic_form | ocr_correction
+    OCR fix: ‹→ʊ (U+2039)
+    old: [ɪ-rií-rə-sə-k‹-hə-kʊ,rə-sə-kʊ-hə-kʊ]
+    new: [ɪ-rií-rə-sə-kʊ-hə-kʊ,rə-sə-kʊ-hə-kʊ]
+
+  SK-iriwiruu-p68-1205 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ɪ-rɪ-wɪ-ru÷]
+    new: [ɪ-rɪ-wɪ-ruː]
+
+  SK-kaaks-p72-1292 | phonetic_form | nulled_non_ipa
+    Non-IPA text detected: 'notprovided'
+
+  SK-kaaruuruq-p73-1311 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [kaa-ru÷-rʊʔ]
+    new: [kaa-ruː-rʊʔ]
+
+  SK-kaawiracariiquus-p74-1342 | phonetic_form | nulled_non_ipa
+    Non-IPA text detected: 'N/A'
+
+  SK-kactahaaruq-p75-1364 | phonetic_form | nulled_non_ipa
+    Non-IPA text detected: 'cross-referenceonly'
+
+  SK-kactuuwirikiiq-p75-1368 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [kəts-tu÷-wɪ-rɪ-kiiʔ]
+    new: [kəts-tuː-wɪ-rɪ-kiiʔ]
+
+  SK-katuurat-p83-1539 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [kə-tu÷-rət]
+    new: [kə-tuː-rət]
+
+  SK-kawiqat-p83-1555 | phonetic_form | nulled_non_ipa
+    Non-IPA text detected: 'cross-referenceonly'
+
+  SK-kiickuukuquq-p89-1668 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [kiits-ku÷-ku-ʔuʔ]
+    new: [kiits-kuː-ku-ʔuʔ]
+
+  SK-kiiskawaarasit-p92-1737 | phonetic_form | nulled_non_ipa
+    Non-IPA text detected: 'Seeentryfor'bold''
+
+  SK-kiiwaquctaakaa-p93-1758 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [kii-wə-ʔ÷ts-taa-kaa]
+    new: [kii-wə-ʔːts-taa-kaa]
+
+  SK-kiiwaqutkaatiit-p93-1760 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [kii-wə-ʔ÷t-kaa-tiit]
+    new: [kii-wə-ʔːt-kaa-tiit]
+
+  SK-kiraar-p94-1787 | phonetic_form | nulled_non_ipa
+    Non-IPA text detected: 'cross-referenceonly'
+
+  SK-kirikuurukstu-p97-1864 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [kɪ-rɪ-ku÷-rʊks-tʊ]
+    new: [kɪ-rɪ-kuː-rʊks-tʊ]
+
+  SK-kiruu-p97-1878 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [kɪ-ru÷]
+    new: [kɪ-ruː]
+
+  SK-kisuusit-p98-1903 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [kɪ-su÷-sɪt]
+    new: [kɪ-suː-sɪt]
+
+  SK-kisuusitpahat-p98-1904 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [kɪ-su÷-sɪt-pə-hət]
+    new: [kɪ-suː-sɪt-pə-hət]
+
+  SK-kskuuri-p101-1944 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ksku÷-rɪ]
+    new: [kskuː-rɪ]
+
+  SK-kukatit-p101-1967 | phonetic_form | nulled_non_ipa
+    Non-IPA text detected: 'cross-referenceonly'
+
+  SK-kurahuusaquq-p102-1977 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [kʊ-rə-hu÷-sə-ʔuʔ]
+    new: [kʊ-rə-huː-sə-ʔuʔ]
+
+  SK-pahuks-p108-2058 | phonetic_form | nulled_non_ipa
+    Non-IPA text detected: 'cross-referenceonly'
+
+  SK-pahuruq_raarikawaawi-p108-2068 | phonetic_form | ocr_correction
+    OCR fix: ˆ→ɪ (U+02C6)
+    old: [pà-hʊ-rʊʔraa-rˆ-kə-waa-wɪ]
+    new: [pà-hʊ-rʊʔraa-rɪ-kə-waa-wɪ]
+
+  SK-pakskuukuquq-p109-2106 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [pəks-ku÷-ku-ʔuʔ]
+    new: [pəks-kuː-ku-ʔuʔ]
+
+  SK-pakuuruq-p110-2126 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [pə-ku÷-rʊʔ]
+    new: [pə-kuː-rʊʔ]
+
+  SK-pasuuhara-p111-2147 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [pə-su÷-hə-rə]
+    new: [pə-suː-hə-rə]
+
+  SK-picuuwihiriq-p111-2164 | phonetic_form | nulled_non_ipa
+    Non-IPA text detected: 'NOT_PROVIDED_IN_ENTRY'
+
+  SK-piirustaruus-p113-2173 | phonetic_form | nulled_non_ipa
+    Non-IPA text detected: 'Seeentryfor'caterpillar''
+
+  SK-piiruus-p113-2174 | phonetic_form | nulled_non_ipa
+    Non-IPA text detected: 'cross-referenceonly'
+
+  SK-pitkusuusiriq-p114-2213 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [pɪt-kʊ-su÷-sɪ-riʔ]
+    new: [pɪt-kʊ-suː-sɪ-riʔ]
+
+  SK-raackuuki-p116-2262 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [raats-ku÷-kɪ]
+    new: [raats-kuː-kɪ]
+
+  SK-raakiiskawaarasit-p119-2328 | phonetic_form | nulled_non_ipa
+    Non-IPA text detected: 'Seeentryfor'astonishing''
+
+  SK-raarahkituuquq-p121-2372 | phonetic_form | ocr_correction
+    OCR fix: ˆ→ɪ (U+02C6)
+    old: [raá-rəh-kˆ-tuu-ʔuʔ]
+    new: [raá-rəh-kɪ-tuu-ʔuʔ]
+
+  SK-raaripakusuq-p123-2402 | phonetic_form | nulled_non_ipa
+    Non-IPA text detected: 'Seeentryfor'soldier''
+
+  SK-raaruuhcuq-p124-2429 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [raa-ru÷h-čʊʔ]
+    new: [raa-ruːh-čʊʔ]
+
+  SK-raaruukusuq-p124-2430 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [raa-ru÷-kʊ-sʊʔ]
+    new: [raa-ruː-kʊ-sʊʔ]
+
+  SK-rahuutuhkawariku-p133-2599 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [rə-hu÷-tʊh-kə-wə-rɪ-kʊ]
+    new: [rə-huː-tʊh-kə-wə-rɪ-kʊ]
+
+  SK-rakaraaracaahisiku-p134-2621 | phonetic_form | nulled_non_ipa
+    Non-IPA text detected: 'notprovided'
+
+  SK-rakuuhuhwaarukstiiq-p136-2669 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [rə-ku÷-hʊh-waa-rʊks-tiiʔ]
+    new: [rə-kuː-hʊh-waa-rʊks-tiiʔ]
+
+  SK-rakuukita-p136-2671 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [rə-ku÷-kɪ-tə]
+    new: [rə-kuː-kɪ-tə]
+
+  SK-raraaqiitustaruuwarii-p136-2678 | phonetic_form | ocr_correction
+    OCR fix: ø→ː (U+00F8)
+    old: [rà-raa-ʔii-tʊs-tə-ruø-wə-rii]
+    new: [rà-raa-ʔii-tʊs-tə-ruː-wə-rii]
+
+  SK-raruucpaca-p138-2721 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [rə-ru÷ts-pə-čə]
+    new: [rə-ruːts-pə-čə]
+
+  SK-raruukaqaatuq-p138-2725 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [rə-ru÷-kə-ʔaa-tʊʔ]
+    new: [rə-ruː-kə-ʔaa-tʊʔ]
+
+  SK-raruukaqaatuq-p138-2726 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [rə-ru÷-kə-ʔaa-tʊʔ]
+    new: [rə-ruː-kə-ʔaa-tʊʔ]
+
+  SK-riicikuukuquq-p140-2779 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [rii-čɪ-ku÷-ku-ʔuʔ]
+    new: [rii-čɪ-kuː-ku-ʔuʔ]
+
+  SK-ruu--p148-2883 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ru÷•]
+    new: [ruː•]
+
+  SK-ruuhaahpakskatariipi-p149-2892 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ru÷-haah-pəks-kə-tə-rii-pɪ]
+    new: [ruː-haah-pəks-kə-tə-rii-pɪ]
+
+  SK-ruuhaariitkawi-p149-2893 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ru÷-haa-riit-kə-wɪ]
+    new: [ruː-haa-riit-kə-wɪ]
+
+  SK-ruuhaariksisuq-p149-2894 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ru÷-haa-rɪk-sɪ-sʊʔ]
+    new: [ruː-haa-rɪk-sɪ-sʊʔ]
+
+  SK-ruuhkicahariwaara-p149-2897 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ru÷h-kɪ-čə-hə-rɪ-waa-rə]
+    new: [ruːh-kɪ-čə-hə-rɪ-waa-rə]
+
+  SK-ruuhkiispirariiruku-p149-2899 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ru÷h-kiis-pɪ-rə-rii-rʊ-kʊ]
+    new: [ruːh-kiis-pɪ-rə-rii-rʊ-kʊ]
+
+  SK-ruuhtahariwaariku-p149-2901 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ru÷h-tə-hə-rɪ-waa-rɪ-kʊ]
+    new: [ruːh-tə-hə-rɪ-waa-rɪ-kʊ]
+
+  SK-ruuhuhkaruukus-p149-2902 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: ru÷-hʊh-kə-ruu-kʊs
+    new: ruː-hʊh-kə-ruu-kʊs
+
+  SK-ruuhuuruq-p149-2908 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ruu-hu÷-rʊʔ]
+    new: [ruu-huː-rʊʔ]
+
+  SK-ruuraqiwuu-p150-2914 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ru÷-rə-ʔɪ-wuu]
+    new: [ruː-rə-ʔɪ-wuu]
+
+  SK-ruurakariwaariku-p150-2917 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ru÷-rə-kə-rɪ-waa-rɪ-kʊ]
+    new: [ruː-rə-kə-rɪ-waa-rɪ-kʊ]
+
+  SK-ruusikiirus-p150-2919 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ru÷-sɪ-kii-rʊs]
+    new: [ruː-sɪ-kii-rʊs]
+
+  SK-ruuskiriqis-p150-2922 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ru÷s-kɪ-ri-ʔɪs]
+    new: [ruːs-kɪ-ri-ʔɪs]
+
+  SK-ruuskuukuquq-p150-2923 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ruus-ku÷-ku-ʔuʔ]
+    new: [ruus-kuː-ku-ʔuʔ]
+
+  SK-ruuskuukukaawiquq-p150-2924 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ruus-ku÷-kʊ-kaa-wi-ʔuʔ]
+    new: [ruus-kuː-kʊ-kaa-wi-ʔuʔ]
+
+  SK-ruusuq-p150-2925 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ru÷-sʊʔ]
+    new: [ruː-sʊʔ]
+
+  SK-sakuuruq-p152-2965 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [sə-ku÷-rʊʔ]
+    new: [sə-kuː-rʊʔ]
+
+  SK-spiruusuq-p152-2984 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [spɪ-ru÷-sʊʔ]
+    new: [spɪ-ruː-sʊʔ]
+
+  SK-suuhuriq-p153-2990 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [su÷-hʊ-riʔ]
+    new: [suː-hʊ-riʔ]
+
+  SK-taahkaruuwatiihus-p153-3011 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [taah-kə-ru÷-wə-tii-hʊs]
+    new: [taah-kə-ruː-wə-tii-hʊs]
+
+  SK-takaas-p157-3063 | phonetic_form | nulled_non_ipa
+    Non-IPA text detected: 'NOT_PROVIDED'
+
+  SK-tawaruukucuuq-p162-3190 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [tə-wə-ru÷-kʊ-čuuʔ]
+    new: [tə-wə-ruː-kʊ-čuuʔ]
+
+  SK-tiihiiraraahkasa-p164-3236 | phonetic_form | ocr_correction
+    OCR fix: Ò→a (U+00D2)
+    old: [tií-hii-rə-raÒh-kə-sə]
+    new: [tií-hii-rə-raah-kə-sə]
+
+  SK-tiraaktakaasikus-p166-3271 | phonetic_form | nulled_non_ipa
+    Non-IPA text detected: 'N/A'
+
+  SK-tiraakuukuquq-p166-3276 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [tɪ-raa-ku÷-ku-ʔuʔ]
+    new: [tɪ-raa-kuː-ku-ʔuʔ]
+
+  SK-tuupic-p166-3289 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [tu÷-pɪts]
+    new: [tuː-pɪts]
+
+  SK-uhurarik-p169-3333 | phonetic_form | nulled_non_ipa
+    Non-IPA text detected: 'cross-reference'
+
+  SK-uhuurickat-p169-3349 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ʊ-hu÷-rɪts-kət]
+    new: [ʊ-huː-rɪts-kət]
+
+  SK-uhuuruq-p170-3353 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ʊ-hu÷-rʊʔ]
+    new: [ʊ-huː-rʊʔ]
+
+  SK-uhuuwaturikat-p170-3355 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ʊ-hu÷-wə-tʊ-rɪ-kət]
+    new: [ʊ-huː-wə-tʊ-rɪ-kət]
+
+  SK-ukuukuquq-p171-3383 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ʊ-ku÷-ku-ʔuʔ]
+    new: [ʊ-kuː-ku-ʔuʔ]
+
+  SK-usaahuuruq-p171-3386 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ʊ-saa-hu÷-rʊʔ]
+    new: [ʊ-saa-huː-rʊʔ]
+
+  SK-uuka,_uukaq,_uukaqa-p172-3395 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7), ÷→ː (U+00F7), ÷→ː (U+00F7)
+    old: [u÷-kə,u÷-kəʔ,u÷-kə-ʔə]
+    new: [uː-kə,uː-kəʔ,uː-kə-ʔə]
+
+  SK-uukatat-p172-3403 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [u÷-kə-tət]
+    new: [uː-kə-tət]
+
+  SK-uukiihtatahaahiriq-p172-3409 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [u÷-kiih-tə-tə-haa-hɪ-riʔ]
+    new: [uː-kiih-tə-tə-haa-hɪ-riʔ]
+
+  SK-uukiihtatahaaruq-p172-3410 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [u÷-kiih-tə-tə-haa-rʊʔ]
+    new: [uː-kiih-tə-tə-haa-rʊʔ]
+
+  SK-uukiriikas-p172-3412 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [u÷-kɪ-rii-kəs]
+    new: [uː-kɪ-rii-kəs]
+
+  SK-uurariisit-p173-3416 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [u÷-rə-rii-sɪt]
+    new: [uː-rə-rii-sɪt]
+
+  SK-uusaakuq-p173-3419 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [u÷-saa-kʊʔ]
+    new: [uː-saa-kʊʔ]
+
+  SK-uuskaraaruq-p173-3423 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [u÷s-kə-raa-rʊʔ]
+    new: [uːs-kə-raa-rʊʔ]
+
+  SK-uuskuutuq-p173-3427 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [uus-ku÷-tʊʔ]
+    new: [uus-kuː-tʊʔ]
+
+  SK-uuspiraaruq-p173-3429 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [u÷s-pɪ-raa-rʊʔ]
+    new: [uːs-pɪ-raa-rʊʔ]
+
+  SK-uusuq-p173-3430 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [u÷-sʊʔ]
+    new: [uː-sʊʔ]
+
+  SK-uut-p173-3431 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [u÷t]
+    new: [uːt]
+
+  SK-uutikis-p173-3432 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [u÷-tɪ-kɪs]
+    new: [uː-tɪ-kɪs]
+
+  SK-uutkucuuq-p173-3434 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [u÷t-kʊ-čuuʔ]
+    new: [uːt-kʊ-čuuʔ]
+
+  SK-uuwatkat-p173-3436 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [u÷-wət-kət]
+    new: [uː-wət-kət]
+
+  SK-uuwatkawiquq-p173-3437 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [u÷-wət-kə-wi-ʔuʔ]
+    new: [uː-wət-kə-wi-ʔuʔ]
+
+  SK-wakta/taa-p175-3476 | phonetic_form | nulled_non_ipa
+    Non-IPA text detected: 'N/A'
+
+  SK-wiiruurirahkasa-p179-3554 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [wii-ru÷-rɪ-rəh-kə-sə]
+    new: [wii-ruː-rɪ-rəh-kə-sə]
+
+  SK-wiituuruq-p179-3556 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [wii-tu÷-rʊʔ]
+    new: [wii-tuː-rʊʔ]
+
+  SK-aacikicii-p349-3588 | phonetic_form | ocr_correction
+    OCR fix: ç→ʔ (U+00E7)
+    old: [aá-čɪ-kɪ-čiç]
+    new: [aá-čɪ-kɪ-čiʔ]
+
+  SK-aparuuhuraaruq-p360-3690 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ə-pə-ru÷-hʊ-raa-rʊʔ]
+    new: [ə-pə-ruː-hʊ-raa-rʊʔ]
+
+  SK-aparuukaatiit-p360-3691 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ə-pə-ru÷-kaa-tiit]
+    new: [ə-pə-ruː-kaa-tiit]
+
+  SK-aruusaq-p362-3724 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ə-ru÷-səʔ]
+    new: [ə-ruː-səʔ]
+
+  SK-asaarahkata-p362-3745 | phonetic_form | nulled_non_ipa
+    Non-IPA text detected: 'cross-referenceonly'
+
+  SK-awicuuruq-p370-3785 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ə-wɪ-ču÷-rʊʔ]
+    new: [ə-wɪ-čuː-rʊʔ]
+
+  SK-hiihpahat-p389-3821 | phonetic_form | nulled_non_ipa
+    Non-IPA text detected: 'cross-referenceonly'
+
+  SK-huukiciis-p398-3875 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [hu÷-kɪ-čiis]
+    new: [huː-kɪ-čiis]
+
+  SK-huukiihaaruq-p398-3877 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [hu÷-kii-haa-rʊʔ]
+    new: [huː-kii-haa-rʊʔ]
+
+  SK-huukitahaahiriq-p398-3882 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [hu÷-kɪ-tə-haa-hɪ-riʔ]
+    new: [huː-kɪ-tə-haa-hɪ-riʔ]
+
+  SK-huukitawiquq-p398-3887 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [hu÷-kɪ-tə-wi-ʔuʔ]
+    new: [huː-kɪ-tə-wi-ʔuʔ]
+
+  SK-ituuruq-p418-3920 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ɪ-tu÷-rʊʔ]
+    new: [ɪ-tuː-rʊʔ]
+
+  SK-kaquktuq-p418-3939 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [kə-ʔ÷k-tʊʔ]
+    new: [kə-ʔːk-tʊʔ]
+
+  SK-kictuuksuq-p436-3954 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [kɪts-tu÷k-sʊʔ]
+    new: [kɪts-tuːk-sʊʔ]
+
+  SK-kicuuhiriq-p436-3959 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [kɪ-ču÷-hɪ-riʔ]
+    new: [kɪ-čuː-hɪ-riʔ]
+
+  SK-kituutuq-p448-3970 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [kɪ-tu÷-tʊʔ]
+    new: [kɪ-tuː-tʊʔ]
+
+  SK-kuucki-p452-4007 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ku÷ts-kɪ]
+    new: [kuːts-kɪ]
+
+  SK-kuuhaaruq-p452-4009 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ku÷-haa-rʊʔ]
+    new: [kuː-haa-rʊʔ]
+
+  SK-kuuskahaaruq-p452-4014 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [ku÷s-kə-haa-rʊʔ]
+    new: [kuːs-kə-haa-rʊʔ]
+
+  SK-piikawaa-p460-4081 | phonetic_form | nulled_non_ipa
+    Non-IPA text detected: 'notprovided'
+
+  SK-piiraruukaqaatuq-p460-4094 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [pii-rə-ru÷-kə-ʔaa-tʊʔ]
+    new: [pii-rə-ruː-kə-ʔaa-tʊʔ]
+
+  SK-riisuuruq-p490-4139 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [rii-su÷-rʊʔ]
+    new: [rii-suː-rʊʔ]
+
+  SK-rikakiis-p491-4156 | phonetic_form | nulled_non_ipa
+    Non-IPA text detected: 'N/A'
+
+  SK-taapuuska-p502-4246 | phonetic_form | ocr_correction
+    OCR fix: ÷→ː (U+00F7)
+    old: [taa-pu÷s-kə]
+    new: [taa-puːs-kə]

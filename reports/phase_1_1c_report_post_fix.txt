@@ -1,0 +1,253 @@
+========================================================================
+Phase 1.1c — Pronunciation Respelling + Orthographic Normalization
+Generated: 2026-03-07T10:58:25.960351
+========================================================================
+
+SUMMARY
+----------------------------------------
+Total entries processed:             4273
+simplified_pronunciation produced:    4241
+simplified_pronunciation failed:        32
+normalized_form produced:             4273
+normalized_form failed:                  0
+
+ENTRIES MISSING PHONETIC_FORM (28)
+----------------------------------------
+  SK-ahictarahaq-p9-0088
+  SK-cuskatit-p32-0521
+  SK-haarutpahat-p36-0611
+  SK-hariiquq-p37-0634
+  SK-hariipahat-p37-0637
+  SK-huuriktik-p51-0867
+  SK-huuruhaahkaatiit-p51-0868
+  SK-ikitawiqat-p62-1071
+  SK-kaawiracariiquus-p74-1342
+  SK-kactahaaruq-p75-1364
+  SK-kawiqat-p83-1555
+  SK-kiiskawaarasit-p92-1737
+  SK-kiraar-p94-1787
+  SK-kukatit-p101-1967
+  SK-pahuks-p108-2058
+  SK-picuuwihiriq-p111-2164
+  SK-piirustaruus-p113-2173
+  SK-piiruus-p113-2174
+  SK-raakiiskawaarasit-p119-2328
+  SK-raaripakusuq-p123-2402
+  SK-takaas-p157-3063
+  SK-tiraaktakaasikus-p166-3271
+  SK-uhurarik-p169-3333
+  SK-wakta/taa-p175-3476
+  SK-ø-p349-3568
+  SK-asaarahkata-p362-3745
+  SK-hiihpahat-p389-3821
+  SK-rikakiis-p491-4156
+
+UNKNOWN CHARACTERS IN PHONETIC FORMS (6 unique)
+----------------------------------------
+  unknown_char: U+002F '/'  ×67
+  unknown_char: U+006F 'o'  ×8
+  unknown_char: U+0064 'd'  ×8
+  unknown_char: U+006E 'n'  ×5
+  unknown_char: U+0076 'v'  ×4
+  unknown_char: U+0065 'e'  ×4
+
+c/č DISAMBIGUATION FAILURES (50)
+----------------------------------------
+  SK-acikstiihac-p7-0063: c_count_mismatch: headword has 2 'c', phonetic has 1 c/č — skipping c→č
+  SK-aciksuhuriihac-p8-0068: c_count_mismatch: headword has 2 'c', phonetic has 1 c/č — skipping c→č
+  SK-aciksurahac-p8-0074: c_count_mismatch: headword has 2 'c', phonetic has 1 c/č — skipping c→č
+  SK-awaacic-p20-0253: c_count_mismatch: headword has 2 'c', phonetic has 1 c/č — skipping c→č
+  SK-caahiksicaahiks-p26-0359: c_count_mismatch: headword has 1 'c', phonetic has 2 c/č — skipping c→č
+  SK-cacikskaaskitawikiic-p27-0394: c_count_mismatch: headword has 3 'c', phonetic has 2 c/č — skipping c→č
+  SK-cakickuutuq-p27-0405: c_count_mismatch: headword has 2 'c', phonetic has 1 c/č — skipping c→č
+  SK-cikic-p29-0438: c_count_mismatch: headword has 2 'c', phonetic has 1 c/č — skipping c→č
+  SK-ckapicistuukus-p30-0465: c_count_mismatch: headword has 2 'c', phonetic has 1 c/č — skipping c→č
+  SK-ckuhkucuuq-p31-0491: c_count_mismatch: headword has 2 'c', phonetic has 1 c/č — skipping c→č
+  SK-cpiikicakusuq-p31-0507: c_count_mismatch: headword has 2 'c', phonetic has 1 c/č — skipping c→č
+  SK-cuskiic-p32-0522: c_count_mismatch: headword has 2 'c', phonetic has 1 c/č — skipping c→č
+  SK-cuuhaarukaqac-p32-0531: c_count_mismatch: headword has 2 'c', phonetic has 1 c/č — skipping c→č
+  SK-icaquuc/uc--p53-0903: c_count_mismatch: headword has 3 'c', phonetic has 1 c/č — skipping c→č
+  SK-icakickuuhaarawarik-p54-0922: c_count_mismatch: headword has 2 'c', phonetic has 1 c/č — skipping c→č
+  SK-icataapackis-p55-0943: c_count_mismatch: headword has 2 'c', phonetic has 1 c/č — skipping c→č
+  SK-icawic--p56-0959: c_count_mismatch: headword has 2 'c', phonetic has 1 c/č — skipping c→č
+  SK-icawicparik-p56-0961: c_count_mismatch: headword has 2 'c', phonetic has 1 c/č — skipping c→č
+  SK-ickaripiiktahca-p57-0986: c_count_mismatch: headword has 2 'c', phonetic has 1 c/č — skipping c→č
+  SK-ickawaraaciks-p57-0989: c_count_mismatch: headword has 2 'c', phonetic has 1 c/č — skipping c→č
+  SK-ickuracaquuc/uc--p58-1003: c_count_mismatch: headword has 4 'c', phonetic has 1 c/č — skipping c→č
+  SK-ickuracakus-p58-1004: c_count_mismatch: headword has 2 'c', phonetic has 1 c/č — skipping c→č
+  SK-ickuracasa-p58-1005: c_count_mismatch: headword has 2 'c', phonetic has 1 c/č — skipping c→č
+  SK-ictakiicuq-p58-1013: c_count_mismatch: headword has 2 'c', phonetic has 1 c/č — skipping c→č
+  SK-icuuhaarukac-p59-1026: c_count_mismatch: headword has 2 'c', phonetic has 1 c/č — skipping c→č
+  SK-ihcickuusuq-p59-1028: c_count_mismatch: headword has 2 'c', phonetic has 1 c/č — skipping c→č
+  SK-kicapic-p85-1588: c_count_mismatch: headword has 2 'c', phonetic has 1 c/č — skipping c→č
+  SK-kicapic-p85-1589: c_count_mismatch: headword has 2 'c', phonetic has 1 c/č — skipping c→č
+  SK-kicapictaquk-p85-1590: c_count_mismatch: headword has 2 'c', phonetic has 1 c/č — skipping c→č
+  SK-kiickaracariwis-p89-1665: c_count_mismatch: headword has 2 'c', phonetic has 1 c/č — skipping c→č
+  ... and 20 more
+
+ALTERNATION MARKERS ({k/t} etc.) (623)
+----------------------------------------
+  SK-kaahak-p2-0023: alternation_marker: {k/t}
+  SK-aahkacaraquk-p2-0028: alternation_marker: {k/t}
+  SK-aahkarahwaasariitik-p2-0035: alternation_marker: {k/t}
+  SK-aahkataarik-p2-0037: alternation_marker: {k/t}
+  SK-aahwiriik-p2-0046: alternation_marker: {k/t}
+  SK-aahwirik-p2-0047: alternation_marker: {k/t}
+  SK-acikstaquk-p7-0049: alternation_marker: {k/t}
+  SK-acikstaquukuk-p7-0050: alternation_marker: {k/t}
+  SK-acikstarahkistaquk-p7-0056: alternation_marker: {k/t}
+  SK-acikstiwarik-p8-0067: alternation_marker: {k/t}
+  SK-aciksuhuritik-p8-0069: alternation_marker: {k/t}
+  SK-aciksuuwicakstaquk-p8-0077: alternation_marker: {k/t}
+  SK-acuhuurawiquusik-p9-0084: alternation_marker: {k/t}
+  SK-ahak-p9-0087: alternation_marker: {k/t}
+  SK-ahihaquk-p9-0091: alternation_marker: {k/t}
+  SK-ahitkarusik-p9-0095: alternation_marker: {k/t}
+  SK-ahuk-p9-0101: alternation_marker: {k/t}
+  SK-ak_[+_(ku-,_ruu-,_irii-),_i-]-p9-0102: alternation_marker: {k/t}
+  SK-akaquk-p9-0104: alternation_marker: {k/t}
+  SK-akaraquk-p11-0110: alternation_marker: {k/t}
+  ... and 603 more
+
+ALL PRONUNCIATION WARNINGS (by frequency)
+----------------------------------------
+  [  623×] alternation_marker: {k/t}
+  [   67×] unknown_char: U+002F '/'
+  [   28×] missing_phonetic_form
+  [    8×] unknown_char: U+006F 'o'
+  [    8×] unknown_char: U+0064 'd'
+  [    5×] unknown_char: U+006E 'n'
+  [    4×] unknown_char: U+0076 'v'
+  [    4×] unknown_char: U+0065 'e'
+  [    4×] empty_variant_after_stripping
+  [    4×] no_variants_produced
+
+ALL NORMALIZATION WARNINGS (by frequency)
+----------------------------------------
+  [   46×] c_count_mismatch: headword has 2 'c', phonetic has 1 c/č — skipping c→č
+  [    1×] c_count_mismatch: headword has 1 'c', phonetic has 2 c/č — skipping c→č
+  [    1×] c_count_mismatch: headword has 3 'c', phonetic has 2 c/č — skipping c→č
+  [    1×] c_count_mismatch: headword has 3 'c', phonetic has 1 c/č — skipping c→č
+  [    1×] c_count_mismatch: headword has 4 'c', phonetic has 1 c/č — skipping c→č
+
+SAMPLE OUTPUTS (first 20 entries with both fields)
+------------------------------------------------------------------------
+  SK--kaa--p2-0000
+    headword:       -kaa-
+    phonetic_form:  [•kaa•]
+    normalized:     -kâ-
+    pronunciation:  kah
+
+  SK-kaaqa-p2-0001
+    headword:       kaaʔa
+    phonetic_form:  [•kaa-ʔa•]
+    normalized:     kâ'a
+    pronunciation:  kah-'uh
+
+  SK-kaaqa-p2-0002
+    headword:       kaaʔa
+    phonetic_form:  [•kaa-ʔə•]
+    normalized:     kâ'a
+    pronunciation:  kah-'uh
+
+  SK-kaaqaah-p2-0003
+    headword:       kaaʔaah
+    phonetic_form:  [•kaa-ʔaa(h)•]
+    normalized:     kâ'âh
+    pronunciation:  kah-'ahh
+
+  SK-kaaqas-p2-0004
+    headword:       kaaʔas
+    phonetic_form:  [kaá-ʔəs]
+    normalized:     kâ'as
+    pronunciation:  KAH-'uhs
+
+  SK-kaaqasasuq,_kaasasuq-p2-0005
+    headword:       kaaʔasasuʔ, kaasasuʔ
+    phonetic_form:  [kaá-ʔə-sə-sʊʔ,kaá-sə-sʊʔ]
+    normalized:     kâ'asasu', kâsasu'
+    pronunciation:  KAH-'uh-suh-soo' / KAH-suh-soo'
+
+  SK-kaaqasaturaaruq-p2-0006
+    headword:       kaaʔasaturaaruʔ
+    phonetic_form:  [kaa-ʔə-sà-tʊ-raa-rʊʔ]
+    normalized:     kâ'asaturâru'
+    pronunciation:  kah-'uh-SUH-too-dah-doo'
+
+  SK-kaaqaskucuuq-p2-0007
+    headword:       kaaʔaskucuuʔ
+    phonetic_form:  [kaá-ʔəs-kʊ-čuuʔ]
+    normalized:     kâ'askučû'
+    pronunciation:  KAH-'uhs-koo-choo'
+
+  SK-kaaqat-p2-0008
+    headword:       kaaʔat
+    phonetic_form:  [kaá-ʔət]
+    normalized:     kâ'at
+    pronunciation:  KAH-'uht
+
+  SK-kaaqat-p2-0009
+    headword:       kaaʔat
+    phonetic_form:  [kaa-ʔat]
+    normalized:     kâ'at
+    pronunciation:  kah-'uht
+
+  SK-kaaqat-p2-0010
+    headword:       kaaʔat
+    phonetic_form:  [•kaa-ʔat•]
+    normalized:     kâ'at
+    pronunciation:  kah-'uht
+
+  SK-kaaqata-p2-0011
+    headword:       kaaʔata
+    phonetic_form:  [kaá-ʔə-tə]
+    normalized:     kâ'ata
+    pronunciation:  KAH-'uh-tuh
+
+  SK-kaaqihwicat-p2-0012
+    headword:       kaaʔihwicat
+    phonetic_form:  [•kaa-ʔih-wi-cat•]
+    normalized:     kâ'ihwicat
+    pronunciation:  kah-'ihh-wih-tsuht
+
+  SK-kaaqiis--p2-0013
+    headword:       kaaʔiis-
+    phonetic_form:  [kaa-ʔiis•]
+    normalized:     kâ'îs-
+    pronunciation:  kah-'ees
+
+  SK-kaaqiisa-p2-0014
+    headword:       kaaʔiisa
+    phonetic_form:  [•kaa-ʔii-sa•]
+    normalized:     kâ'îsa
+    pronunciation:  kah-'ee-suh
+
+  SK-kaaqiisat-p2-0015
+    headword:       kaaʔiisat
+    phonetic_form:  [•kaa-ʔii-sət•]
+    normalized:     kâ'îsat
+    pronunciation:  kah-'ee-suht
+
+  SK-kaac-p2-0016
+    headword:       kaac
+    phonetic_form:  [•kaats•]
+    normalized:     kâc
+    pronunciation:  kahts
+
+  SK-kaacatk-p2-0017
+    headword:       kaacatk
+    phonetic_form:  [•kaa-čət(k)•]
+    normalized:     kâčatk
+    pronunciation:  kah-chuhtk
+
+  SK-kaaciks-p2-0018
+    headword:       kaaciks
+    phonetic_form:  [•kaa-čɪks•]
+    normalized:     kâčiks
+    pronunciation:  kah-chihks
+
+  SK-kaackaawiquq-p2-0019
+    headword:       kaackaawiʔuʔ
+    phonetic_form:  [kaáts-kaa-wi-ʔuʔ]
+    normalized:     kâckâwi'u'
+    pronunciation:  KAHTS-kah-wih-'oo'

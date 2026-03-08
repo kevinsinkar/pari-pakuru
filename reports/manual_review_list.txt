@@ -1,0 +1,139 @@
+========================================================================
+MANUAL REVIEW LIST — Prioritized Action Items
+Generated: 2026-03-07T14:45:52.891507
+========================================================================
+
+DISPOSITION SUMMARY
+--------------------------------------------------
+Total flags in audit:             870
+
+By-design (close, no action):       0
+Script-fixable (next fix run):       2
+Low priority / info:              285
+
+** MANUAL REVIEW NEEDED **
+  Phonetic mismatches (local):    255
+  Noun glottal stop (local):      328
+  Phonetic issues (Gemini):         0
+  Noun issues (Gemini):             0
+  Other Gemini findings:            0
+  TOTAL needing review:           583
+
+========================================================================
+REVIEW GROUP 1: GEMINI PHONETIC FINDINGS (0 entries)
+Action: Compare against source PDF pages
+========================================================================
+
+========================================================================
+REVIEW GROUP 3: CONSONANT SKELETON MISMATCHES (255 entries)
+Action: Spot-check sample against source PDFs; many may be
+        optional sounds (h)/(k) or preverb boundaries
+========================================================================
+
+  SK-kaaqaah-p2-0003: Consonant mismatch: headword 'kʔh' vs phonetic 'kʔ'
+    kaaʔaah / [•kaa-ʔaa(h)•]
+  SK-kaaqihwicat-p2-0012: Consonant mismatch: headword 'kʔhwtst' vs phonetic 'kʔhwct'
+    kaaʔihwicat / [•kaa-ʔih-wi-cat•]
+  SK-kaahak-p2-0023: Consonant mismatch: headword 'khk' vs phonetic 'kh'
+    kaahak / [•kaa-ha{k/t}•]
+  SK-aciksuhuriwaar_[+_neg.]-p8-0071: Consonant mismatch: headword 'tskshrwr' vs phonetic 'ckshrw'
+    aciksuhuriwaar [+ neg.] / [•a-cik-su-hu-ri-waa(r)•]
+  SK-ahak-p9-0087: Consonant mismatch: headword 'hk' vs phonetic 'h'
+    ahak / [•ə-hə{k/t}•]
+  SK-ahiht-p9-0093: Consonant mismatch: headword 'hht' vs phonetic 'ht'
+    ahiht / [•ə-hɪ(h)t•]
+  SK-ahuk-p9-0101: Consonant mismatch: headword 'hk' vs phonetic 'h'
+    ahuk / [•ə-hʊ{k/t}•]
+  SK-ak_[+_(ku-,_ruu-,_irii-),_i-]-p9-0102: Consonant mismatch: headword 'kkrr' vs phonetic ''
+    ak [+ (ku-, ruu-, irii-), i-] / [•ə{k/t}•]
+  SK-akaquk-p9-0104: Consonant mismatch: headword 'kʔk' vs phonetic 'kʔ'
+    akaʔuk / [•ə-kə-ʔu{k/t}•]
+  SK-akiihaar-p11-0118: Consonant mismatch: headword 'khr' vs phonetic 'kh'
+    akiihaar / [•ə-kii-haa(r)•]
+  SK-akitaar-p11-0120: Consonant mismatch: headword 'ktr' vs phonetic 'kt'
+    akitaar / [•ə-kɪ-taa(r)•]
+  SK-arasik-p13-0135: Consonant mismatch: headword 'rsk' vs phonetic 'rs'
+    arasik / [•ə-rə-sɪ{k/t}•]
+  SK-arik-p13-0145: Consonant mismatch: headword 'rk' vs phonetic 'r'
+    arik / [•ə-rɪ{k/t}•]
+  SK-arikiihk-p13-0154: Consonant mismatch: headword 'rkhk' vs phonetic 'rk'
+    arikiihk / [•ə-rɪ-kii(h){k/t}•]
+  SK-astaah-p17-0190: Consonant mismatch: headword 'sth' vs phonetic 'st'
+    astaah / [•əs-taa(h)•]
+  SK-asuuk-p18-0213: Consonant mismatch: headword 'sk' vs phonetic 's'
+    asuuk / [•ə-suu{k/t}•]
+  SK-ataawuh-p19-0226: Consonant mismatch: headword 'twh' vs phonetic 'tw'
+    ataawuh / [•ə-taa-wʊ(h)•]
+  SK-awaqa-p20-0251: Consonant mismatch: headword 'wʔ' vs phonetic 'w'
+    awaʔa / [•a-waa•]
+  SK-awaah-p20-0254: Consonant mismatch: headword 'wh' vs phonetic 'w'
+    awaah / [•a-waa(h)•]
+  SK-awaahak-p20-0255: Consonant mismatch: headword 'whk' vs phonetic 'wh'
+    awaahak / •ə-waa-hə{k/t}•
+  SK-awacitiksa-p20-0264: Consonant mismatch: headword 'wtstks' vs phonetic 'wctks'
+    awacitiksa / [•a-wa-ci-tik-sa•]
+  SK-awarik-p21-0273: Consonant mismatch: headword 'wrk' vs phonetic 'wr'
+    awarik / [•ə-wə-rɪ{k/t}•]
+  SK-awask-p21-0274: Consonant mismatch: headword 'wsk' vs phonetic 'ws'
+    awask / [•ə-wəs(k)•]
+  SK-awataar-p21-0275: Consonant mismatch: headword 'wtr' vs phonetic 'wt'
+    awataar / [•ə-wə-taa(r)•]
+  SK-awiqaar-p21-0282: Consonant mismatch: headword 'wʔr' vs phonetic 'wʔ'
+    awiʔaar / [•ə-wi-ʔaa(r)•]
+  SK-awiqiik-p21-0284: Consonant mismatch: headword 'wʔk' vs phonetic 'wʔ'
+    awiʔiik / [•ə-wi-ʔii{k/t}•]
+  SK-awiqiir-p21-0287: Consonant mismatch: headword 'wʔr' vs phonetic 'wʔ'
+    awiʔiir / [•ə-wi-ʔii(r)•]
+  SK-awiiraqa-p23-0298: Consonant mismatch: headword 'wrʔ' vs phonetic 'wr'
+    awiiraʔa / [•ə-wii-raa•]
+  SK-awiraqa-p24-0324: Consonant mismatch: headword 'wrʔ' vs phonetic 'wr'
+    awiraʔa / [•a-wi-raa•]
+  SK-awuh-p26-0353: Consonant mismatch: headword 'wh' vs phonetic 'w'
+    awuh / [•ə-wʊ(h)•]
+  SK-awuh-p26-0354: Consonant mismatch: headword 'wh' vs phonetic 'w'
+    awuh / [•ə-wʊ(h)•]
+  SK-cawiquuriirik-p28-0421: Consonant mismatch: headword 'tswʔrrk' vs phonetic 'cwʔrr'
+    cawiʔuuriirik / [•ca-wi-ʔuu-rii-ri{k/t}•]
+  SK-ciir-p29-0437: Consonant mismatch: headword 'tsr' vs phonetic 'č'
+    ciir / [•čii(r)•]
+  SK-haqiir-p32-0542: Consonant mismatch: headword 'hʔr' vs phonetic 'hʔ'
+    haʔiir / [•hə-ʔii(r)•]
+  SK-haapuh-p35-0604: Consonant mismatch: headword 'hph' vs phonetic 'hp'
+    haapuh / [•haa-pʊ(h)•]
+  SK-haarik-p35-0608: Consonant mismatch: headword 'hrk' vs phonetic 'hr'
+    haarik / [•haa-rɪ{k/t}•]
+  SK-hakus-p37-0632: Consonant mismatch: headword 'hks' vs phonetic 'hk'
+    hakus / [•hə-kʊ(s)•]
+  SK-hawuh-p40-0688: Consonant mismatch: headword 'hwh' vs phonetic 'hw'
+    hawuh / [•hə-wʊ(h)•]
+  SK-hiwihc-p43-0716: Consonant mismatch: headword 'hwhts' vs phonetic 'hwts'
+    hiwihc / [•hɪ-wɪ(h)ts•]
+  SK-huraar-p46-0779: Consonant mismatch: headword 'hrr' vs phonetic 'hr'
+    huraar / [•hʊ-raa(r)•]
+  ... and 215 more
+
+========================================================================
+REVIEW GROUP 4: NOUN GLOTTAL STOP (328 unique entries)
+  Flagged by both local + Gemini: 0 (high confidence)
+  Flagged by local only:          328
+  Flagged by Gemini only:         0
+Action: Batch review — many are proper nouns, place names, or
+        kinship terms that legitimately lack final ʔ.
+        Focus on common nouns (N class) that end in bare vowel.
+========================================================================
+
+High confidence (both flagged) — first 30:
+
+========================================================================
+SCRIPT-FIXABLE (2 flags)
+Action: Already handled by updated fix_priority_issues.py.
+        Re-run fix script, then re-run audit to confirm.
+========================================================================
+
+  INVALID_PHONETIC_CHAR: 2
+
+========================================================================
+BY-DESIGN / CLOSED (0 flags)
+No action needed.
+========================================================================
+

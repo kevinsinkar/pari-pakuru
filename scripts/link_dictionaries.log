@@ -1,0 +1,20 @@
+2026-03-07 09:21:30,439 [INFO] ============================================================
+2026-03-07 09:21:30,439 [INFO] DICTIONARY LINKING + PHONETIC SYNC
+2026-03-07 09:21:30,439 [INFO] Mode: LIVE
+2026-03-07 09:21:30,440 [INFO] Phonetic sync: ON
+2026-03-07 09:21:30,440 [INFO] ============================================================
+2026-03-07 09:21:30,490 [INFO] Loaded 4273 entries from skiri_to_english_normalized.json
+2026-03-07 09:21:30,575 [INFO] Loaded 6414 entries from english_to_skiri_normalized.json
+2026-03-07 09:21:30,575 [INFO] Step 1: Assigning entry IDs to S2E...
+2026-03-07 09:21:30,583 [INFO] Assigned 4273 entry IDs to S2E
+2026-03-07 09:21:30,583 [INFO] Step 2: Matching E2S subentries to S2E entries...
+2026-03-07 09:21:30,622 [INFO] 
+2026-03-07 09:21:30,623 [INFO] ============================================================
+2026-03-07 09:21:30,623 [INFO] RESULTS 
+2026-03-07 09:21:30,623 [INFO] ============================================================
+2026-03-07 09:21:30,623 [INFO] Matched:            5132
+2026-03-07 09:21:30,623 [INFO] Unmatched (no term):2579
+2026-03-07 09:21:30,623 [INFO] Unmatched (no S2E): 362
+2026-03-07 09:21:30,624 [INFO] Phonetic updated:   3925
+2026-03-07 09:21:30,624 [INFO] Phonetic filled:    4
+2026-03-07 09:21:30,624 [INFO] Already matching:   1069

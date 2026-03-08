@@ -1,0 +1,84 @@
+========================================================================
+MANUAL REVIEW LIST — Prioritized Action Items
+Generated: 2026-03-07T15:00:54.101854
+========================================================================
+
+DISPOSITION SUMMARY
+--------------------------------------------------
+Total flags in audit:             640
+
+By-design (close, no action):      81
+Script-fixable (next fix run):       2
+Low priority / info:              285
+
+** MANUAL REVIEW NEEDED **
+  Phonetic mismatches (local):     12
+  Noun glottal stop (local):      260
+  Phonetic issues (Gemini):         0
+  Noun issues (Gemini):             0
+  Other Gemini findings:            0
+  TOTAL needing review:           272
+
+========================================================================
+REVIEW GROUP 1: GEMINI PHONETIC FINDINGS (0 entries)
+Action: Compare against source PDF pages
+========================================================================
+
+========================================================================
+REVIEW GROUP 3: CONSONANT SKELETON MISMATCHES (12 entries)
+Action: Spot-check sample against source PDFs; many may be
+        optional sounds (h)/(k) or preverb boundaries
+========================================================================
+
+  SK-ak_[+_(ku-,_ruu-,_irii-),_i-]-p9-0102: Consonant mismatch: headword 'kkrr' vs phonetic 'k'
+    ak [+ (ku-, ruu-, irii-), i-] / [•ə{k/t}•]
+  SK-(r)aak/(r)aaqak-p118-2302: Consonant mismatch: headword 'rkrʔk' vs phonetic 'kʔk'
+    (r)aak/(r)aaʔak / [•aak/aa-ʔə{k/t}•]
+  SK-(r)aapuh-p121-2358: Consonant mismatch: headword 'rph' vs phonetic 'ph'
+    (r)aapuh / [•aa-pʊ(h)•]
+  SK-rirahak_[+_raar-]-p145-2835: Consonant mismatch: headword 'rrhkrr' vs phonetic 'rrhk'
+    rirahak [+ raar-] / [•rɪ-rə-hə{k/t}•]
+  SK-rirat_[+_raar-]-p145-2837: Consonant mismatch: headword 'rrtrr' vs phonetic 'rrt'
+    rirat [+ raar-] / [•rɪ-rət•]
+  SK-taawatatk-p155-3019: Consonant mismatch: headword 'twttk' vs phonetic 'rrtwttk'
+    taawatatk / [+raar-][•taa-wə-tət(k)•]
+  SK-uhuur_[+_raar-]-p169-3342: Consonant mismatch: headword 'hrrr' vs phonetic 'hr'
+    uhuur [+ raar-] / [•ʊ-huu(r)•]
+  SK-ø_(ut...)_ciksuq-p349-3571: Consonant mismatch: headword 'ttsksʔ' vs phonetic 'čksʔ'
+    Ø (ut...) ciksuʔ / [•Ø•čík-sʊʔ]
+  SK-ø_(ut...)_kiirahkata-p349-3572: Consonant mismatch: headword 'tkrhkt' vs phonetic 'krhkt'
+    Ø (ut...) kiirahkata / [•Ø•kii-ràh-kə-tə]
+  SK-ø_(ut...)_pak_siriq-p349-3573: Consonant mismatch: headword 'tpksrʔ' vs phonetic 'pksrʔ'
+    Ø (ut...) pak siriʔ / [•pàk-si-riʔ]
+  SK-a_(ir...)_istuq-p349-3578: Consonant mismatch: headword 'rstʔ' vs phonetic 'stʔ'
+    a (ir...) istuʔ / [•ə•ɪs-tʊʔ]
+  SK-kiwak_[+_raar-]-p448-3974: Consonant mismatch: headword 'kwkrr' vs phonetic 'kwk'
+    kiwak [+ raar-] / [•ki-wa{k/t}•]
+
+========================================================================
+REVIEW GROUP 4: NOUN GLOTTAL STOP (260 unique entries)
+  Flagged by both local + Gemini: 0 (high confidence)
+  Flagged by local only:          260
+  Flagged by Gemini only:         0
+Action: Batch review — many are proper nouns, place names, or
+        kinship terms that legitimately lack final ʔ.
+        Focus on common nouns (N class) that end in bare vowel.
+========================================================================
+
+High confidence (both flagged) — first 30:
+
+========================================================================
+SCRIPT-FIXABLE (2 flags)
+Action: Already handled by updated fix_priority_issues.py.
+        Re-run fix script, then re-run audit to confirm.
+========================================================================
+
+  INVALID_PHONETIC_CHAR: 2
+
+========================================================================
+BY-DESIGN / CLOSED (81 flags)
+No action needed.
+========================================================================
+
+  NOUN_MISSING_GLOTTAL_PROPER: 80
+  NOUN_MISSING_GLOTTAL_DEPKIN: 1

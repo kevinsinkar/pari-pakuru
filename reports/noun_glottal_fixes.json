@@ -1,0 +1,1466 @@
+[
+  {
+    "entry_id": "SK-ahictarahaataakaa-p9-0089",
+    "field": "headword",
+    "current_value": "ahictarahaataakaa",
+    "corrected_value": "ahictarahaataakaaʔ",
+    "reason": "Common substance noun ('cow fat; tallow') typically ends in -Vʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-ahitki-p9-0097",
+    "field": "headword",
+    "current_value": "ahitki",
+    "corrected_value": "ahitkiʔ",
+    "reason": "Common substance noun ('fat') typically ends in -Vʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-akahkaritki-p358-3665",
+    "field": "headword",
+    "current_value": "akahkaritki",
+    "corrected_value": "akahkaritkiʔ",
+    "reason": "Common object noun ('house') in a compound typically ends in -Vʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-akahkiripahki-p358-3669",
+    "field": "headword",
+    "current_value": "akahkiripahki",
+    "corrected_value": "akahkiripahkiʔ",
+    "reason": "Common object noun ('outhouse', 'shed', 'tent') typically ends in -Vʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-akahwaahukasa-p358-3680",
+    "field": "headword",
+    "current_value": "akahwaahukasa",
+    "corrected_value": "akahwaahukasaʔ",
+    "reason": "Common object noun ('wall tent') typically ends in -Vʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-akahwaawaktiku-p358-3681",
+    "field": "headword",
+    "current_value": "akahwaawaktiku",
+    "corrected_value": "akahwaawaktikuʔ",
+    "reason": "Common object noun ('church, church building') typically ends in -Vʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-akarahkata-p11-0114",
+    "field": "headword",
+    "current_value": "akarahkata",
+    "corrected_value": "akarahkataʔ",
+    "reason": "Common material noun ('buckskin', 'canvas') typically ends in -Vʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-arika-p13-0146",
+    "field": "headword",
+    "current_value": "arika",
+    "corrected_value": "arikaʔ",
+    "reason": "Common object noun ('horn') typically ends in -Vʔ. Phonetic form ends in bare vowel. While 'One Horn Dance' is a fixed expression, the primary gloss 'horn' suggests a common noun.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-arikta-p362-3716",
+    "field": "headword",
+    "current_value": "arikta",
+    "corrected_value": "ariktaʔ",
+    "reason": "Common animal noun ('bald eagle') typically ends in -Vʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-asaaki-p362-3736",
+    "field": "headword",
+    "current_value": "asaaki",
+    "corrected_value": "asaakiʔ",
+    "reason": "Common animal noun ('dog') typically ends in -Vʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-asaakiripahki-p362-3739",
+    "field": "headword",
+    "current_value": "asaakiripahki",
+    "corrected_value": "asaakiripahkiʔ",
+    "reason": "Common animal noun ('puppy; little dog') in a compound typically ends in -Vʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-asaarahkata-p362-3745",
+    "field": "headword",
+    "current_value": "asaarahkata",
+    "corrected_value": "asaarahkataʔ",
+    "reason": "Common animal noun ('buckskin horse') typically ends in -Vʔ. Phonetic form is missing, but pattern suggests an OCR miss.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-asahi-p363-3756",
+    "field": "headword",
+    "current_value": "asahi",
+    "corrected_value": "asahiʔ",
+    "reason": "Common animal noun ('mink', 'water dog') typically ends in -Vʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-asawiita-p363-3765",
+    "field": "headword",
+    "current_value": "asawiita",
+    "corrected_value": "asawiitaʔ",
+    "reason": "Common animal description ('male horse', 'male dog') typically ends in -Vʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-asiikasa-p363-3770",
+    "field": "headword",
+    "current_value": "asiikasa",
+    "corrected_value": "asiikasaʔ",
+    "reason": "Common object noun ('spur') typically ends in -Vʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-askiisawihuku-p16-0167",
+    "field": "headword",
+    "current_value": "askiisawihuku",
+    "corrected_value": "askiisawihukuʔ",
+    "reason": "Common activity noun ('hopscotch') typically ends in -Vʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-askiiskatawicaku-p16-0168",
+    "field": "headword",
+    "current_value": "askiiskatawicaku",
+    "corrected_value": "askiiskatawicakuʔ",
+    "reason": "Common tool noun ('flesher') typically ends in -Vʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-atikawa-p19-0235",
+    "field": "headword",
+    "current_value": "atikawa",
+    "corrected_value": "atikawaʔ",
+    "reason": "Common food item, typically expected to end in -ʔ. Phonetic form lacks final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-atiktaka-p19-0237",
+    "field": "headword",
+    "current_value": "atiktaka",
+    "corrected_value": "atiktakaʔ",
+    "reason": "Common plant/food item, typically expected to end in -ʔ. Phonetic form lacks final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-caahikski-p26-0363",
+    "field": "headword",
+    "current_value": "caahikski",
+    "corrected_value": "caahikskiʔ",
+    "reason": "Common object noun, typically expected to end in -ʔ. Phonetic form lacks final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-caatki-p27-0392",
+    "field": "headword",
+    "current_value": "caatki",
+    "corrected_value": "caatkiʔ",
+    "reason": "Common object noun, typically expected to end in -ʔ. Phonetic form lacks final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-cahuuki-p27-0401",
+    "field": "headword",
+    "current_value": "cahuuki",
+    "corrected_value": "cahuukiʔ",
+    "reason": "Common object noun, typically expected to end in -ʔ. Phonetic form lacks final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-caraahku-p28-0414",
+    "field": "headword",
+    "current_value": "caraahku",
+    "corrected_value": "caraahkuʔ",
+    "reason": "Common animal noun, typically expected to end in -ʔ. Phonetic form lacks final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-ckariitki-p30-0470",
+    "field": "headword",
+    "current_value": "ckariitki",
+    "corrected_value": "ckariitkiʔ",
+    "reason": "Common object/material noun, typically expected to end in -ʔ. Phonetic form lacks final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-ckarucki-p30-0471",
+    "field": "headword",
+    "current_value": "ckarucki",
+    "corrected_value": "ckaruckiʔ",
+    "reason": "Common body part/object noun, typically expected to end in -ʔ. Phonetic form lacks final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-ckiisaakaratawaa-p30-0476",
+    "field": "headword",
+    "current_value": "ckiisaakaratawaa",
+    "corrected_value": "ckiisaakaratawaaʔ",
+    "reason": "Common body part noun, typically expected to end in -ʔ. Phonetic form lacks final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-ckiiskararii-p30-0478",
+    "field": "headword",
+    "current_value": "ckiiskararii",
+    "corrected_value": "ckiiskarariiʔ",
+    "reason": "Common animal noun, typically expected to end in -ʔ. Phonetic form lacks final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-cuuhkataku-p32-0532",
+    "field": "headword",
+    "current_value": "cuuhkataku",
+    "corrected_value": "cuuhkatakuʔ",
+    "reason": "Common object noun ('warbonnet'), likely missing final glottal stop (expected -uʔ).",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-cuuraki-p32-0536",
+    "field": "headword",
+    "current_value": "cuuraki",
+    "corrected_value": "cuurakiʔ",
+    "reason": "Common noun ('girl'), likely missing final glottal stop (expected -iʔ).",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-haakastahkata-p34-0580",
+    "field": "headword",
+    "current_value": "haakastahkata",
+    "corrected_value": "haakastahkataʔ",
+    "reason": "Common object noun (plant), likely missing final glottal stop (expected -aʔ).",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-hariirahkata-p37-0638",
+    "field": "headword",
+    "current_value": "hariirahkata",
+    "corrected_value": "hariirahkataʔ",
+    "reason": "Common animal noun ('newborn calf'), likely missing final glottal stop (expected -aʔ).",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-harikictaakaa-p37-0639",
+    "field": "headword",
+    "current_value": "harikictaakaa",
+    "corrected_value": "harikictaakaaʔ",
+    "reason": "Common object noun (food item 'flour'), likely missing final glottal stop (expected -aʔ).",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-hariwiita-p37-0644",
+    "field": "headword",
+    "current_value": "hariwiita",
+    "corrected_value": "hariwiitaʔ",
+    "reason": "Common animal noun ('male calf'), likely missing final glottal stop (expected -aʔ).",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-haski-p37-0650",
+    "field": "headword",
+    "current_value": "haski",
+    "corrected_value": "haskiʔ",
+    "reason": "Common object noun ('string'), likely missing final glottal stop (expected -iʔ).",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-haspacki-p38-0658",
+    "field": "headword",
+    "current_value": "haspacki",
+    "corrected_value": "haspackiʔ",
+    "reason": "Common object noun (material 'silk'), likely missing final glottal stop (expected -iʔ).",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-hastahuraahki-p38-0661",
+    "field": "headword",
+    "current_value": "hastahuraahki",
+    "corrected_value": "hastahuraahkiʔ",
+    "reason": "Common object noun ('leather string'), likely missing final glottal stop (expected -iʔ).",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-haturaahkaritki-p387-3804",
+    "field": "headword",
+    "current_value": "haturaahkaritki",
+    "corrected_value": "haturaahkaritkiʔ",
+    "reason": "Common object noun ('paved road'), likely missing final glottal stop (expected -iʔ).",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-hawaahawaa-p387-3815",
+    "field": "headword",
+    "current_value": "hawaahawaa",
+    "corrected_value": "hawaahawaaʔ",
+    "reason": "Common object noun (plant 'cattail'), likely missing final glottal stop (expected -aʔ).",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-hiikicu-p389-3828",
+    "field": "headword",
+    "current_value": "hiikicu",
+    "corrected_value": "hiikicuʔ",
+    "reason": "Common object noun ('handkerchief'), likely missing final glottal stop (expected -uʔ).",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-hiiraaricakusku-p389-3834",
+    "field": "headword",
+    "current_value": "hiiraaricakusku",
+    "corrected_value": "hiiraaricakuskuʔ",
+    "reason": "Common object noun (tool 'pitchfork'), likely missing final glottal stop (expected -uʔ).",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-hiitkirikawaa-p390-3851",
+    "field": "headword",
+    "current_value": "hiitkirikawaa",
+    "corrected_value": "hiitkirikawaaʔ",
+    "reason": "Common animal noun ('peacock'), likely missing final glottal stop (expected -aʔ).",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-hiitpaarasiku-p390-3854",
+    "field": "headword",
+    "current_value": "hiitpaarasiku",
+    "corrected_value": "hiitpaarasikuʔ",
+    "reason": "Common object noun (plant 'pokeweed'), likely missing final glottal stop (expected -uʔ).",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-hikskawicaku-p390-3859",
+    "field": "headword",
+    "current_value": "hikskawicaku",
+    "corrected_value": "hikskawicakuʔ",
+    "reason": "Common object noun (tool 'pestle'), likely missing final glottal stop (expected -uʔ).",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-icataahata-p55-0941",
+    "field": "headword",
+    "current_value": "icataahata",
+    "corrected_value": "icataahataʔ",
+    "reason": "Common object noun (food item 'doughnut'), likely missing final glottal stop (expected -aʔ).",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-iitpaca-p61-1052",
+    "field": "headword",
+    "current_value": "iitpaca",
+    "corrected_value": "iitpacaʔ",
+    "reason": "Common noun for a body part ('nipple'); typically, such nouns end in -Vʔ. The phonetic form also ends in a bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-iriiraacusaakaratawi-p65-1140",
+    "field": "headword",
+    "current_value": "iriiraacusaakaratawi",
+    "corrected_value": "iriiraacusaakaratawiʔ",
+    "reason": "Common noun for an architectural feature ('smokehole'); typically, such nouns end in -Vʔ. The phonetic form also ends in a bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-iriiraawirahkatawihaku-p65-1144",
+    "field": "headword",
+    "current_value": "iriiraawirahkatawihaku",
+    "corrected_value": "iriiraawirahkatawihakuʔ",
+    "reason": "Common noun for a place/building ('theater'); typically, such nouns end in -Vʔ. The phonetic form also ends in a bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-iriirapaapiciskaaruuci-p65-1148",
+    "field": "headword",
+    "current_value": "iriirapaapiciskaaruuci",
+    "corrected_value": "iriirapaapiciskaaruuciʔ",
+    "reason": "Common noun for a place/institution ('bank'); typically, such nouns end in -Vʔ. The phonetic form also ends in a bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-iriiraraaririitiku-p66-1152",
+    "field": "headword",
+    "current_value": "iriiraraaririitiku",
+    "corrected_value": "iriiraraaririitikuʔ",
+    "reason": "Common noun for a place/building ('airport; depot'); typically, such nouns end in -Vʔ. The phonetic form also ends in a bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-iriiraraawiskawataku-p66-1153",
+    "field": "headword",
+    "current_value": "iriiraraawiskawataku",
+    "corrected_value": "iriiraraawiskawatakuʔ",
+    "reason": "Common noun for an architectural feature ('chimney'); typically, such nouns end in -Vʔ. The phonetic form also ends in a bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-iriirarariihuhkaaruuci-p66-1154",
+    "field": "headword",
+    "current_value": "iriirarariihuhkaaruuci",
+    "corrected_value": "iriirarariihuhkaaruuciʔ",
+    "reason": "Common noun for a place/institution ('post office'); typically, such nouns end in -Vʔ. The phonetic form also ends in a bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-iriirasaakaratawi-p66-1158",
+    "field": "headword",
+    "current_value": "iriirasaakaratawi",
+    "corrected_value": "iriirasaakaratawiʔ",
+    "reason": "Common noun for an architectural feature ('smokehole'); typically, such nouns end in -Vʔ. The phonetic form also ends in a bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-iriirihaakawaahcu-p66-1162",
+    "field": "headword",
+    "current_value": "iriirihaakawaahcu",
+    "corrected_value": "iriirihaakawaahcuʔ",
+    "reason": "Common noun for a place/building ('cafe, restaurant'); typically, such nouns end in -Vʔ. The phonetic form also ends in a bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-kaaqata-p2-0011",
+    "field": "headword",
+    "current_value": "kaaʔata",
+    "corrected_value": "kaaʔataʔ",
+    "reason": "Common animal noun ('upland plover'), typically expected to end in -Vʔ. The phonetic form also lacks a final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-kaaqata-p71-1258",
+    "field": "headword",
+    "current_value": "kaaʔata",
+    "corrected_value": "kaaʔataʔ",
+    "reason": "Common animal noun ('upland plover'), typically expected to end in -Vʔ. The phonetic form also lacks a final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-kaariiksati-p73-1304",
+    "field": "headword",
+    "current_value": "kaariiksati",
+    "corrected_value": "kaariiksatiʔ",
+    "reason": "Common animal noun ('nighthawk'), typically expected to end in -Vʔ. The phonetic form also lacks a final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-kaataraki-p74-1327",
+    "field": "headword",
+    "current_value": "kaataraki",
+    "corrected_value": "kaatarakiʔ",
+    "reason": "Common object noun ('ax'), typically expected to end in -Vʔ. The phonetic form also lacks a final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-kaciiki-p75-1358",
+    "field": "headword",
+    "current_value": "kaciiki",
+    "corrected_value": "kaciikiʔ",
+    "reason": "Common animal noun ('fish'), typically expected to end in -Vʔ. The phonetic form also lacks a final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-kactahkata-p75-1365",
+    "field": "headword",
+    "current_value": "kactahkata",
+    "corrected_value": "kactahkataʔ",
+    "reason": "Common plant noun ('wild four-o'clock', 'goldenrod'), typically expected to end in -Vʔ. The phonetic form also lacks a final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-karitki-p79-1443",
+    "field": "headword",
+    "current_value": "karitki",
+    "corrected_value": "karitkiʔ",
+    "reason": "Common object noun ('rock, stone, pebble'), typically expected to end in -Vʔ. The phonetic form also lacks a final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-kataawaruucaku-p80-1479",
+    "field": "headword",
+    "current_value": "kataawaruucaku",
+    "corrected_value": "kataawaruucakuʔ",
+    "reason": "Common object noun ('horn, wind instrument'), typically expected to end in -Vʔ. The phonetic form also lacks a final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-katuuraktaakaa-p83-1538",
+    "field": "headword",
+    "current_value": "katuuraktaakaa",
+    "corrected_value": "katuuraktaakaaʔ",
+    "reason": "Common animal noun ('snow goose', 'swan'), typically expected to end in -Vʔ. The phonetic form also lacks a final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-kawahki-p83-1550",
+    "field": "headword",
+    "current_value": "kawahki",
+    "corrected_value": "kawahkiʔ",
+    "reason": "Common animal noun ('magpie'), typically expected to end in -Vʔ. The phonetic form also lacks a final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-kicahaasta-p84-1578",
+    "field": "headword",
+    "current_value": "kicahaasta",
+    "corrected_value": "kicahaastaʔ",
+    "reason": "Common plant name, likely missing final ʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-kiiskarari-p92-1730",
+    "field": "headword",
+    "current_value": "kiiskarari",
+    "corrected_value": "kiiskarariʔ",
+    "reason": "Common animal name, likely missing final ʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-kiiwaquctaakaa-p93-1758",
+    "field": "headword",
+    "current_value": "kiiwaʔuctaakaa",
+    "corrected_value": "kiiwaʔuctaakaaʔ",
+    "reason": "Common plant name, likely missing final ʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-kiiwuhki-p93-1765",
+    "field": "headword",
+    "current_value": "kiiwuhki",
+    "corrected_value": "kiiwuhkiʔ",
+    "reason": "Common plant name, likely missing final ʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-kipahki-p94-1778",
+    "field": "headword",
+    "current_value": "kipahki",
+    "corrected_value": "kipahkiʔ",
+    "reason": "Common plant name, likely missing final ʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-kirahku-p95-1802",
+    "field": "headword",
+    "current_value": "kirahku",
+    "corrected_value": "kirahkuʔ",
+    "reason": "Common noun for a body condition, likely missing final ʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-kisaacki-p98-1883",
+    "field": "headword",
+    "current_value": "kisaacki",
+    "corrected_value": "kisaackiʔ",
+    "reason": "Common noun for food/body part, likely missing final ʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-ksapitaahaku-p448-3984",
+    "field": "headword",
+    "current_value": "ksapitaahaku",
+    "corrected_value": "ksapitaahakuʔ",
+    "reason": "Common plant name, likely missing final ʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-kskatahkawaa-p448-3990",
+    "field": "headword",
+    "current_value": "kskatahkawaa",
+    "corrected_value": "kskatahkawaaʔ",
+    "reason": "Common animal name, likely missing final ʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-kskiicpita-p448-3994",
+    "field": "headword",
+    "current_value": "kskiicpita",
+    "corrected_value": "kskiicpitaʔ",
+    "reason": "Common noun for a body part, likely missing final ʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-kskiikahki-p448-3995",
+    "field": "headword",
+    "current_value": "kskiikahki",
+    "corrected_value": "kskiikahkiʔ",
+    "reason": "Common animal name, likely missing final ʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-kuckaritki-p101-1951",
+    "field": "headword",
+    "current_value": "kuckaritki",
+    "corrected_value": "kuckaritkiʔ",
+    "reason": "Common object noun (kettle) typically ends in -Vʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-kuckictahkata-p101-1953",
+    "field": "headword",
+    "current_value": "kuckictahkata",
+    "corrected_value": "kuckictahkataʔ",
+    "reason": "Common object/material noun (paint) typically ends in -Vʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-kuckirarahkaawaawi-p101-1956",
+    "field": "headword",
+    "current_value": "kuckirarahkaawaawi",
+    "corrected_value": "kuckirarahkaawaawiʔ",
+    "reason": "Common object/food noun (canned goods) typically ends in -Vʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-kucpaarika-p101-1958",
+    "field": "headword",
+    "current_value": "kucpaarika",
+    "corrected_value": "kucpaarikaʔ",
+    "reason": "Common object noun (kettle) typically ends in -Vʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-kuctaakaa-p101-1959",
+    "field": "headword",
+    "current_value": "kuctaakaa",
+    "corrected_value": "kuctaakaaʔ",
+    "reason": "Common object noun (pail/kettle) typically ends in -Vʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-kuctahkata-p101-1961",
+    "field": "headword",
+    "current_value": "kuctahkata",
+    "corrected_value": "kuctahkataʔ",
+    "reason": "Common object noun (kettle) typically ends in -Vʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-kuhku-p101-1962",
+    "field": "headword",
+    "current_value": "kuhku",
+    "corrected_value": "kuhkuʔ",
+    "reason": "Common animal/food noun (pig/bacon) typically ends in -Vʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-kurukstaakaa-p102-1992",
+    "field": "headword",
+    "current_value": "kurukstaakaa",
+    "corrected_value": "kurukstaakaaʔ",
+    "reason": "Common animal noun (bear) typically ends in -Vʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-kuuciksta-p452-4006",
+    "field": "headword",
+    "current_value": "kuuciksta",
+    "corrected_value": "kuucikstaʔ",
+    "reason": "Common object noun (cup) typically ends in -Vʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-kuucki-p452-4007",
+    "field": "headword",
+    "current_value": "kuucki",
+    "corrected_value": "kuuckiʔ",
+    "reason": "Common object noun (kettle/pot) typically ends in -Vʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-paa-p453-4021",
+    "field": "headword",
+    "current_value": "paa",
+    "corrected_value": "paaʔ",
+    "reason": "Common natural object/time unit (moon/month) typically ends in -Vʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-paa-p453-4022",
+    "field": "headword",
+    "current_value": "paa",
+    "corrected_value": "paaʔ",
+    "reason": "Common animal noun (elk) typically ends in -Vʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-paahukasa-p453-4040",
+    "field": "headword",
+    "current_value": "paahukasa",
+    "corrected_value": "paahukasaʔ",
+    "reason": "Common object/concept noun (hairstyle) typically ends in -Vʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-paapicistaakaa-p454-4058",
+    "field": "headword",
+    "current_value": "paapicistaakaa",
+    "corrected_value": "paapicistaakaaʔ",
+    "reason": "Common object/material noun (metal) typically ends in -Vʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-paapicistiwiruucaku-p454-4062",
+    "field": "headword",
+    "current_value": "paapicistiwiruucaku",
+    "corrected_value": "paapicistiwiruucakuʔ",
+    "reason": "Common object noun 'hammer' typically ends in -uʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-pacawaa-p107-2044",
+    "field": "headword",
+    "current_value": "pacawaa",
+    "corrected_value": "pacawaaʔ",
+    "reason": "Common noun 'disease' typically ends in -aʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-pahukstahkata-p108-2065",
+    "field": "headword",
+    "current_value": "pahukstahkata",
+    "corrected_value": "pahukstahkataʔ",
+    "reason": "Common object noun 'pumpkin' typically ends in -aʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-pahuruutaakaa-p108-2070",
+    "field": "headword",
+    "current_value": "pahuruutaakaa",
+    "corrected_value": "pahuruutaakaaʔ",
+    "reason": "Common animal noun 'white owl' typically ends in -aʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-paksaku-p108-2080",
+    "field": "headword",
+    "current_value": "paksaku",
+    "corrected_value": "paksakuʔ",
+    "reason": "Common animal noun 'tadpole, catfish' typically ends in -uʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-pakstacaaka-p110-2113",
+    "field": "headword",
+    "current_value": "pakstacaaka",
+    "corrected_value": "pakstacaakaʔ",
+    "reason": "Common noun 'dandruff' typically ends in -aʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-pakucki-p110-2118",
+    "field": "headword",
+    "current_value": "pakucki",
+    "corrected_value": "pakuckiʔ",
+    "reason": "Common plant noun 'joint grass' typically ends in -iʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-pakuucaku-p110-2123",
+    "field": "headword",
+    "current_value": "pakuucaku",
+    "corrected_value": "pakuucakuʔ",
+    "reason": "Common object noun 'top, spinning top' typically ends in -uʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-paruskiripacki-p111-2142",
+    "field": "headword",
+    "current_value": "paruskiripacki",
+    "corrected_value": "paruskiripackiʔ",
+    "reason": "Common animal noun 'small rabbit' typically ends in -iʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-parustaakaa-p111-2143",
+    "field": "headword",
+    "current_value": "parustaakaa",
+    "corrected_value": "parustaakaaʔ",
+    "reason": "Common animal noun 'white rabbit' typically ends in -aʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-pasaki-p111-2145",
+    "field": "headword",
+    "current_value": "pasaki",
+    "corrected_value": "pasakiʔ",
+    "reason": "Common plant noun 'cottonwood' typically ends in -iʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-pasaktaakaa-p111-2146",
+    "field": "headword",
+    "current_value": "pasaktaakaa",
+    "corrected_value": "pasaktaakaaʔ",
+    "reason": "Common plant noun 'sycamore' typically ends in -aʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-patki-p111-2149",
+    "field": "headword",
+    "current_value": "patki",
+    "corrected_value": "patkiʔ",
+    "reason": "Common plant noun 'acorn' typically ends in -iʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-pihki-p111-2165",
+    "field": "headword",
+    "current_value": "pihki",
+    "corrected_value": "pihkiʔ",
+    "reason": "Common natural object noun 'sleet' typically ends in -iʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-piikawaa-p460-4081",
+    "field": "headword",
+    "current_value": "piikawaa",
+    "corrected_value": "piikawaaʔ",
+    "reason": "Common animal noun 'stallion, bull' typically ends in -aʔ. Phonetic form is missing, but the pattern suggests an OCR miss.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-piirakiripahki-p460-4092",
+    "field": "headword",
+    "current_value": "piirakiripahki",
+    "corrected_value": "piirakiripahkiʔ",
+    "reason": "Common noun 'baby, infant' typically ends in -iʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-piiraski-p460-4096",
+    "field": "headword",
+    "current_value": "piiraski",
+    "corrected_value": "piiraskiʔ",
+    "reason": "Common noun for a person, likely missing final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-piiraskiripacki-p460-4097",
+    "field": "headword",
+    "current_value": "piiraskiripacki",
+    "corrected_value": "piiraskiripackiʔ",
+    "reason": "Compound common noun for a person, likely missing final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-piita-p113-2176",
+    "field": "headword",
+    "current_value": "piita",
+    "corrected_value": "piitaʔ",
+    "reason": "Common noun for a person, likely missing final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-piitiisutki-p113-2184",
+    "field": "headword",
+    "current_value": "piitiisutki",
+    "corrected_value": "piitiisutkiʔ",
+    "reason": "Common noun for a person, likely missing final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-raackuuki-p116-2262",
+    "field": "headword",
+    "current_value": "raackuuki",
+    "corrected_value": "raackuukiʔ",
+    "reason": "Common noun for a plant/object, likely missing final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-raakaaruhkiripahki-p118-2306",
+    "field": "headword",
+    "current_value": "raakaaruhkiripahki",
+    "corrected_value": "raakaaruhkiripahkiʔ",
+    "reason": "Common noun for food, likely missing final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-raakicawihuukaarahu-p119-2319",
+    "field": "headword",
+    "current_value": "raakicawihuukaarahu",
+    "corrected_value": "raakicawihuukaarahuʔ",
+    "reason": "Common noun for a tool/object, likely missing final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-raakiriwiraawariku-p120-2335",
+    "field": "headword",
+    "current_value": "raakiriwiraawariku",
+    "corrected_value": "raakiriwiraawarikuʔ",
+    "reason": "Common noun for a tool/object, likely missing final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-raapaku-p120-2349",
+    "field": "headword",
+    "current_value": "raapaku",
+    "corrected_value": "raapakuʔ",
+    "reason": "Common noun for a type of person, likely missing final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-raarakaahki-p122-2378",
+    "field": "headword",
+    "current_value": "raarakaahki",
+    "corrected_value": "raarakaahkiʔ",
+    "reason": "Common noun for an object, likely missing final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-raawataaruku-p126-2476",
+    "field": "headword",
+    "current_value": "raawataaruku",
+    "corrected_value": "raawataarukuʔ",
+    "reason": "Common noun for an object/tool, likely missing final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-raawihtaakaa-p127-2492",
+    "field": "headword",
+    "current_value": "raawihtaakaa",
+    "corrected_value": "raawihtaakaaʔ",
+    "reason": "Common noun for an object, likely missing final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-raawirahkatawihaku-p128-2514",
+    "field": "headword",
+    "current_value": "raawirahkatawihaku",
+    "corrected_value": "raawirahkatawihakuʔ",
+    "reason": "Common noun for a concept/place, likely missing final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-rahaaktaakaaru-p478-4119",
+    "field": "headword",
+    "current_value": "rahaaktaakaaru",
+    "corrected_value": "rahaaktaakaaruʔ",
+    "reason": "Common noun for a plant, likely missing final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-rahaaktarikatasa-p478-4121",
+    "field": "headword",
+    "current_value": "rahaaktarikatasa",
+    "corrected_value": "rahaaktarikatasaʔ",
+    "reason": "Common noun for an object/person, likely missing final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-rahkasiirahuraahki-p131-2556",
+    "field": "headword",
+    "current_value": "rahkasiirahuraahki",
+    "corrected_value": "rahkasiirahuraahkiʔ",
+    "reason": "Common noun for clothing/object, likely missing final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-rahuraahki-p132-2586",
+    "field": "headword",
+    "current_value": "rahuraahki",
+    "corrected_value": "rahuraahkiʔ",
+    "reason": "Common noun for an animal, likely missing final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-rahuutuhkawariku-p133-2599",
+    "field": "headword",
+    "current_value": "rahuutuhkawariku",
+    "corrected_value": "rahuutuhkawarikuʔ",
+    "reason": "Common object noun ('air pump'); phonetic form ends in bare vowel [ʊ], suggesting missing final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-rahwa-p133-2602",
+    "field": "headword",
+    "current_value": "rahwa",
+    "corrected_value": "rahwaʔ",
+    "reason": "Common noun referring to a person's status ('captive, prisoner, slave'); phonetic form ends in bare vowel [ə], suggesting missing final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-rakaraaki-p134-2616",
+    "field": "headword",
+    "current_value": "rakaraaki",
+    "corrected_value": "rakaraakiʔ",
+    "reason": "Common object noun ('dish, bowl, plate'); phonetic form ends in bare vowel [ɪ], suggesting missing final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-rakaraaracaahisiku-p134-2621",
+    "field": "headword",
+    "current_value": "rakaraaracaahisiku",
+    "corrected_value": "rakaraaracaahisikuʔ",
+    "reason": "Common object noun ('tea towel, dish towel'); likely missing final glottal stop, typical for common nouns.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-rakawicaku-p134-2627",
+    "field": "headword",
+    "current_value": "rakawicaku",
+    "corrected_value": "rakawicakuʔ",
+    "reason": "Common object noun ('grinder'); phonetic form ends in bare vowel [ʊ], suggesting missing final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-rakcaakarikuku-p134-2628",
+    "field": "headword",
+    "current_value": "rakcaakarikuku",
+    "corrected_value": "rakcaakarikukuʔ",
+    "reason": "Common object noun ('key'); phonetic form ends in bare vowel [ʊ], suggesting missing final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-rakcaku-p134-2629",
+    "field": "headword",
+    "current_value": "rakcaku",
+    "corrected_value": "rakcakuʔ",
+    "reason": "Common animal noun ('woodpecker'); phonetic form ends in bare vowel [ʊ], suggesting missing final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-rakictakasu-p134-2635",
+    "field": "headword",
+    "current_value": "rakictakasu",
+    "corrected_value": "rakictakasuʔ",
+    "reason": "Common food/drink noun ('pop, soda pop, soft drink'); phonetic form ends in bare vowel [ʊ], suggesting missing final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-rakictiirahpi-p134-2636",
+    "field": "headword",
+    "current_value": "rakictiirahpi",
+    "corrected_value": "rakictiirahpiʔ",
+    "reason": "Common natural object noun ('ocean'); phonetic form ends in bare vowel [ɪ], suggesting missing final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-rakiikaruuwarii-p134-2639",
+    "field": "headword",
+    "current_value": "rakiikaruuwarii",
+    "corrected_value": "rakiikaruuwariiʔ",
+    "reason": "Common object noun ('lantern, flashlight'); phonetic form ends in bare vowel [ii], suggesting missing final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-rakiripahki-p135-2643",
+    "field": "headword",
+    "current_value": "rakiripahki",
+    "corrected_value": "rakiripahkiʔ",
+    "reason": "Common natural object noun ('piece of wood, stick, twig, tree, bush'); phonetic form ends in bare vowel [ɪ], suggesting missing final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-raktawicaku-p135-2661",
+    "field": "headword",
+    "current_value": "raktawicaku",
+    "corrected_value": "raktawicakuʔ",
+    "reason": "Common animal noun ('woodpecker'); phonetic form ends in bare vowel [ʊ], suggesting missing final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-raktiiwariku-p135-2666",
+    "field": "headword",
+    "current_value": "raktiiwariku",
+    "corrected_value": "raktiiwarikuʔ",
+    "reason": "Common object noun ('measuring stick, yard stick'); phonetic form ends in bare vowel [ʊ], suggesting missing final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-raraaqiitustaruuwarii-p136-2678",
+    "field": "headword",
+    "current_value": "raraaʔiitustaruuwarii",
+    "corrected_value": "raraaʔiitustaruuwariiʔ",
+    "reason": "Common object noun ('newspaper'); phonetic form ends in bare vowel [ii], suggesting missing final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-raraarawarii-p136-2679",
+    "field": "headword",
+    "current_value": "raraarawarii",
+    "corrected_value": "raraarawariiʔ",
+    "reason": "Common object noun ('airplane'); phonetic form ends in bare vowel [ii], suggesting missing final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-raracawakataku-p136-2682",
+    "field": "headword",
+    "current_value": "raracawakataku",
+    "corrected_value": "raracawakatakuʔ",
+    "reason": "Common object noun ('telephone'); phonetic form ends in bare vowel [ʊ], suggesting missing final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-raracawaktahu-p136-2683",
+    "field": "headword",
+    "current_value": "raracawaktahu",
+    "corrected_value": "raracawaktahuʔ",
+    "reason": "Common animal noun ('rattlesnake'); phonetic form ends in bare vowel [ʊ], suggesting missing final glottal stop.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-rarariiruku-p136-2690",
+    "field": "headword",
+    "current_value": "rarariiruku",
+    "corrected_value": "rarariirukuʔ",
+    "reason": "Common natural object (firefly) and modern object (flashlight); common natural objects typically end in -ʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-raruuckiraraa-p138-2720",
+    "field": "headword",
+    "current_value": "raruuckiraraa",
+    "corrected_value": "raruuckiraraaʔ",
+    "reason": "Common animal name, typically expected to end in -ʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-raruucpaca-p138-2721",
+    "field": "headword",
+    "current_value": "raruucpaca",
+    "corrected_value": "raruucpacaʔ",
+    "reason": "Common body part, typically expected to end in -ʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-rataqu-p138-2734",
+    "field": "headword",
+    "current_value": "rataʔu",
+    "corrected_value": "rataʔuʔ",
+    "reason": "Common food item (condiment), typically expected to end in -ʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-riiciki-p140-2775",
+    "field": "headword",
+    "current_value": "riiciki",
+    "corrected_value": "riicikiʔ",
+    "reason": "Common tool, typically expected to end in -ʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-riicikiripacki-p140-2777",
+    "field": "headword",
+    "current_value": "riicikiripacki",
+    "corrected_value": "riicikiripackiʔ",
+    "reason": "Common tool, typically expected to end in -ʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-riiciqaahwaa-p140-2773",
+    "field": "headword",
+    "current_value": "riiciʔaahwaa",
+    "corrected_value": "riiciʔaahwaaʔ",
+    "reason": "Common tool, typically expected to end in -ʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-riicki-p140-2789",
+    "field": "headword",
+    "current_value": "riicki",
+    "corrected_value": "riickiʔ",
+    "reason": "Common body part, typically expected to end in -ʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-riickuhki-p140-2790",
+    "field": "headword",
+    "current_value": "riickuhki",
+    "corrected_value": "riickuhkiʔ",
+    "reason": "Common natural phenomenon (season), typically expected to end in -ʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-rikucki-p492-4198",
+    "field": "headword",
+    "current_value": "rikucki",
+    "corrected_value": "rikuckiʔ",
+    "reason": "Common animal noun; typically ends in -ʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-rikuctahkata-p492-4202",
+    "field": "headword",
+    "current_value": "rikuctahkata",
+    "corrected_value": "rikuctahkataʔ",
+    "reason": "Common animal noun; typically ends in -ʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-rucaakawihu-p148-2866",
+    "field": "headword",
+    "current_value": "rucaakawihu",
+    "corrected_value": "rucaakawihuʔ",
+    "reason": "Common object noun; typically ends in -ʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-rutaaktaarapitaahaku-p148-2875",
+    "field": "headword",
+    "current_value": "rutaaktaarapitaahaku",
+    "corrected_value": "rutaaktaarapitaahakuʔ",
+    "reason": "Common object noun; typically ends in -ʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-rutaaktahciihkuku-p148-2876",
+    "field": "headword",
+    "current_value": "rutaaktahciihkuku",
+    "corrected_value": "rutaaktahciihkukuʔ",
+    "reason": "Common object noun; typically ends in -ʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-ruuhahkata-p149-2895",
+    "field": "headword",
+    "current_value": "ruuhahkata",
+    "corrected_value": "ruuhahkataʔ",
+    "reason": "Common animal noun; typically ends in -ʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-ruuhkicahariwaara-p149-2897",
+    "field": "headword",
+    "current_value": "ruuhkicahariwaara",
+    "corrected_value": "ruuhkicahariwaaraʔ",
+    "reason": "Common food/drink noun; typically ends in -ʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-ruuhkickahaarawiriira-p149-2898",
+    "field": "headword",
+    "current_value": "ruuhkickahaarawiriira",
+    "corrected_value": "ruuhkickahaarawiriiraʔ",
+    "reason": "Common object/product noun; typically ends in -ʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-ruuhkiispirariiruku-p149-2899",
+    "field": "headword",
+    "current_value": "ruuhkiispirariiruku",
+    "corrected_value": "ruuhkiispirariirukuʔ",
+    "reason": "Common object/tool noun; typically ends in -ʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-ruuhtahariwaara-p149-2900",
+    "field": "headword",
+    "current_value": "ruuhtahariwaara",
+    "corrected_value": "ruuhtahariwaaraʔ",
+    "reason": "Common food noun; typically ends in -ʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-ruuhtahariwaariku-p149-2901",
+    "field": "headword",
+    "current_value": "ruuhtahariwaariku",
+    "corrected_value": "ruuhtahariwaarikuʔ",
+    "reason": "Common food-related noun; typically ends in -ʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-ruuraakawaawuhu-p150-2916",
+    "field": "headword",
+    "current_value": "ruuraakawaawuhu",
+    "corrected_value": "ruuraakawaawuhuʔ",
+    "reason": "Common noun (person/object); typically ends in -ʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-ruurakariwaariku-p150-2917",
+    "field": "headword",
+    "current_value": "ruurakariwaariku",
+    "corrected_value": "ruurakariwaarikuʔ",
+    "reason": "Common noun (profession); typically ends in -ʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-ruuraqiwuu-p150-2914",
+    "field": "headword",
+    "current_value": "ruuraʔiwuu",
+    "corrected_value": "ruuraʔiwuuʔ",
+    "reason": "Common food noun; typically ends in -ʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-saahki-p150-2934",
+    "field": "headword",
+    "current_value": "saahki",
+    "corrected_value": "saahkiʔ",
+    "reason": "Common object noun; typically ends in -ʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-saahkisiikasa-p151-2935",
+    "field": "headword",
+    "current_value": "saahkisiikasa",
+    "corrected_value": "saahkisiikasaʔ",
+    "reason": "Common natural object/food noun; typically ends in -ʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-sakuhkiriku-p151-2946",
+    "field": "headword",
+    "current_value": "sakuhkiriku",
+    "corrected_value": "sakuhkirikuʔ",
+    "reason": "Common animal noun; typically ends in -ʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-saparuu-p152-2966",
+    "field": "headword",
+    "current_value": "saparuu",
+    "corrected_value": "saparuuʔ",
+    "reason": "Common natural object noun; typically ends in -ʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-siraackuskasara-p152-2977",
+    "field": "headword",
+    "current_value": "siraackuskasara",
+    "corrected_value": "siraackuskasaraʔ",
+    "reason": "Common animal noun; typically ends in -ʔ. Phonetic form ends in bare vowel.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-siraackuskiicu-p152-2978",
+    "field": "headword",
+    "current_value": "siraackuskiicu",
+    "corrected_value": "siraackuskiicuʔ",
+    "reason": "Common animal name, typically ends in -uʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-siriirawikawariku-p152-2979",
+    "field": "headword",
+    "current_value": "siriirawikawariku",
+    "corrected_value": "siriirawikawarikuʔ",
+    "reason": "Common object noun (game/ball), typically ends in -uʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-siriirawikusihaku-p152-2980",
+    "field": "headword",
+    "current_value": "siriirawikusihaku",
+    "corrected_value": "siriirawikusihakuʔ",
+    "reason": "Common object noun (game/ball), typically ends in -uʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-skacki-p152-2982",
+    "field": "headword",
+    "current_value": "skacki",
+    "corrected_value": "skackiʔ",
+    "reason": "Common object noun (body part/natural material), typically ends in -iʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-taa-p153-3004",
+    "field": "headword",
+    "current_value": "taa",
+    "corrected_value": "taaʔ",
+    "reason": "Common animal name, typically ends in -aʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-taakaski-p502-4240",
+    "field": "headword",
+    "current_value": "taakaski",
+    "corrected_value": "taakaskiʔ",
+    "reason": "Common object noun (food), typically ends in -iʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-taapuuska-p502-4246",
+    "field": "headword",
+    "current_value": "taapuuska",
+    "corrected_value": "taapuuskaʔ",
+    "reason": "Common object/place noun, typically ends in -aʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-tapactaakaa-p158-3096",
+    "field": "headword",
+    "current_value": "tapactaakaa",
+    "corrected_value": "tapactaakaaʔ",
+    "reason": "Common object noun (food/substance), typically ends in -aʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-taraahki-p159-3111",
+    "field": "headword",
+    "current_value": "taraahki",
+    "corrected_value": "taraahkiʔ",
+    "reason": "Common descriptive noun for people, typically ends in -iʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-tarahaariki-p159-3123",
+    "field": "headword",
+    "current_value": "tarahaariki",
+    "corrected_value": "tarahaarikiʔ",
+    "reason": "Common object noun (tool), typically ends in -iʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-tarahaataakaa-p160-3125",
+    "field": "headword",
+    "current_value": "tarahaataakaa",
+    "corrected_value": "tarahaataakaaʔ",
+    "reason": "Common animal name, typically ends in -aʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-tariihwaawariku-p161-3147",
+    "field": "headword",
+    "current_value": "tariihwaawariku",
+    "corrected_value": "tariihwaawarikuʔ",
+    "reason": "Common object noun (tool/machine), typically ends in -uʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-tariitkahki-p161-3152",
+    "field": "headword",
+    "current_value": "tariitkahki",
+    "corrected_value": "tariitkahkiʔ",
+    "reason": "Common object noun (food), typically ends in -iʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-ucahaa-p167-3299",
+    "field": "headword",
+    "current_value": "ucahaa",
+    "corrected_value": "ucahaaʔ",
+    "reason": "Common animal name, typically ends in -aʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-uuhtarikawaa-p172-3394",
+    "field": "headword",
+    "current_value": "uuhtarikawaa",
+    "corrected_value": "uuhtarikawaaʔ",
+    "reason": "Common animal name, typically ends in -aʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-uusiriwa-p173-3422",
+    "field": "headword",
+    "current_value": "uusiriwa",
+    "corrected_value": "uusiriwaʔ",
+    "reason": "Common object noun (plant/food), typically ends in -aʔ.",
+    "confidence": "gemini_verified"
+  },
+  {
+    "entry_id": "SK-wiiruurirahkasa-p179-3554",
+    "field": "headword",
+    "current_value": "wiiruurirahkasa",
+    "corrected_value": "wiiruurirahkasaʔ",
+    "reason": "Common object noun, typically ends in -aʔ.",
+    "confidence": "gemini_verified"
+  }
+]

@@ -1,0 +1,100 @@
+2026-03-07 08:16:26,562 [INFO] ============================================================
+2026-03-07 08:16:26,562 [INFO] PHONETIC FORM NORMALIZATION
+2026-03-07 08:16:26,562 [INFO] Mode: LIVE
+2026-03-07 08:16:26,562 [INFO] ============================================================
+2026-03-07 08:16:26,615 [INFO] Loaded 4273 entries from skiri_to_english_complete.json
+2026-03-07 08:16:26,792 [INFO] S2E: 1721 entries with corrections
+2026-03-07 08:16:26,886 [INFO] Loaded 6414 entries from english_to_skiri_complete.json
+2026-03-07 08:16:27,170 [INFO] E2S: 0 entries with corrections
+2026-03-07 08:16:27,192 [INFO] 
+2026-03-07 08:16:27,193 [INFO] ============================================================
+2026-03-07 08:16:27,193 [INFO] RESULTS 
+2026-03-07 08:16:27,193 [INFO] ============================================================
+2026-03-07 08:16:27,193 [INFO] Total entries modified: 1721
+2026-03-07 08:16:27,193 [INFO] 
+2026-03-07 08:16:27,193 [INFO] Character replacement counts:
+2026-03-07 08:16:27,193 [INFO]   Char   Unicode     Count   Corrected To
+2026-03-07 08:16:27,196 [INFO] 
+2026-03-07 08:16:27,196 [INFO] Files written:
+2026-03-07 08:16:27,196 [INFO]   C:\Users\k1s4l\OneDrive\Desktop\Repos\pari-pakuru\Dictionary Data\skiri_to_english_normalized.json
+2026-03-07 08:16:27,196 [INFO]   C:\Users\k1s4l\OneDrive\Desktop\Repos\pari-pakuru\Dictionary Data\english_to_skiri_normalized.json
+2026-03-07 08:16:27,196 [INFO]   C:\Users\k1s4l\OneDrive\Desktop\Repos\pari-pakuru\Dictionary Data\normalization_changelog.json
+2026-03-07 08:26:35,773 [INFO] ============================================================
+2026-03-07 08:26:35,773 [INFO] PHONETIC & SKIRI-TEXT NORMALIZATION
+2026-03-07 08:26:35,773 [INFO] Mode: LIVE
+2026-03-07 08:26:35,773 [INFO] ============================================================
+2026-03-07 08:26:35,824 [INFO] Loaded 4273 entries from skiri_to_english_complete.json
+2026-03-07 08:26:36,055 [INFO] S2E: 3750 entries with corrections
+2026-03-07 08:26:36,138 [INFO] Loaded 6414 entries from english_to_skiri_complete.json
+2026-03-07 08:26:36,417 [INFO] E2S: 0 entries with corrections
+2026-03-07 08:26:36,517 [INFO] 
+2026-03-07 08:26:36,517 [INFO] ============================================================
+2026-03-07 08:26:36,518 [INFO] RESULTS 
+2026-03-07 08:26:36,518 [INFO] ============================================================
+2026-03-07 08:26:36,518 [INFO] Total entries modified: 3750
+2026-03-07 08:26:36,518 [INFO] 
+2026-03-07 08:26:36,518 [INFO] Character replacement counts:
+2026-03-07 08:26:36,518 [INFO]   Char   Unicode     Count   Corrected To
+2026-03-07 08:32:55,630 [INFO] ============================================================
+2026-03-07 08:32:55,630 [INFO] FULL RECURSIVE NORMALIZATION
+2026-03-07 08:32:55,631 [INFO] Mode: LIVE
+2026-03-07 08:32:55,631 [INFO] ============================================================
+2026-03-07 08:32:55,680 [INFO] Loaded 4273 entries from skiri_to_english_complete.json
+2026-03-07 08:32:55,982 [INFO] S2E: 3887 / 4273 entries modified
+2026-03-07 08:32:56,064 [INFO] Loaded 6414 entries from english_to_skiri_complete.json
+2026-03-07 08:32:56,640 [INFO] E2S: 4932 / 6414 entries modified
+2026-03-07 08:32:57,041 [INFO] 
+2026-03-07 08:32:57,041 [INFO] ============================================================
+2026-03-07 08:32:57,041 [INFO] RESULTS 
+2026-03-07 08:32:57,041 [INFO] ============================================================
+2026-03-07 08:32:57,042 [INFO] Total entries modified: 8819
+2026-03-07 08:32:57,042 [INFO] 
+2026-03-07 08:32:57,042 [INFO] Total character replacements: 45242
+2026-03-07 08:32:57,042 [INFO] 
+2026-03-07 08:32:57,042 [INFO] By character:
+2026-03-07 08:32:57,042 [INFO]   Char   Unicode     Count   Corrected To
+2026-03-07 08:32:57,052 [INFO] 
+2026-03-07 08:32:57,052 [INFO] By field (top 20):
+2026-03-07 08:32:57,053 [INFO]    5143   subentries[*].part_I.phonetic_form
+2026-03-07 08:32:57,053 [INFO]    4895   subentries[*].part_II.paradigmatic_forms[*].skiri_form
+2026-03-07 08:32:57,053 [INFO]    3320   part_I.phonetic_form
+2026-03-07 08:32:57,053 [INFO]    1987   subentries[*].part_I.skiri_term
+2026-03-07 08:32:57,053 [INFO]    1891   subentries[*].part_III.cross_references[*].skiri_equivalents[*]
+2026-03-07 08:32:57,053 [INFO]    1636   headword
+2026-03-07 08:32:57,053 [INFO]    1561   subentries[*].part_I.etymology.raw_etymology
+2026-03-07 08:32:57,053 [INFO]    1414   subentries[*].part_I.etymology.constituent_elements[*].morpheme
+2026-03-07 08:32:57,053 [INFO]    1309   part_I.etymology.raw_etymology
+2026-03-07 08:32:57,053 [INFO]    1274   part_II.paradigmatic_forms.form_3
+2026-03-07 08:32:57,053 [INFO]    1180   part_II.examples[*].skiri_text
+2026-03-07 08:32:57,053 [INFO]    1104   part_I.etymology.constituent_elements[*].morpheme
+2026-03-07 08:32:57,054 [INFO]     986   part_II.paradigmatic_forms.form_2
+2026-03-07 08:32:57,054 [INFO]     899   subentries[*].part_II.examples[*].skiri_text
+2026-03-07 08:32:57,054 [INFO]     681   part_II.paradigmatic_forms.form_1
+2026-03-07 08:32:57,054 [INFO]     642   subentries[*].part_II.additional_forms[*].form
+2026-03-07 08:32:57,054 [INFO]     541   part_II.paradigmatic_forms.form_4
+2026-03-07 08:32:57,054 [INFO]     309   part_I.cognates[*].form
+2026-03-07 08:32:57,054 [INFO]     223   part_II.paradigmatic_forms.form_5
+2026-03-07 08:32:57,054 [INFO]     181   subentries[*].part_I.grammatical_forms[*].form
+2026-03-07 08:32:57,054 [INFO] 
+2026-03-07 08:32:57,054 [INFO] Files written:
+2026-03-07 08:32:57,054 [INFO]   C:\Users\k1s4l\OneDrive\Desktop\Repos\pari-pakuru\Dictionary Data\skiri_to_english_normalized.json
+2026-03-07 08:32:57,055 [INFO]   C:\Users\k1s4l\OneDrive\Desktop\Repos\pari-pakuru\Dictionary Data\english_to_skiri_normalized.json
+2026-03-07 08:32:57,055 [INFO]   C:\Users\k1s4l\OneDrive\Desktop\Repos\pari-pakuru\Dictionary Data\normalization_changelog.json
+2026-03-07 09:21:23,599 [INFO] ============================================================
+2026-03-07 09:21:23,599 [INFO] FULL RECURSIVE NORMALIZATION
+2026-03-07 09:21:23,599 [INFO] Mode: LIVE
+2026-03-07 09:21:23,600 [INFO] ============================================================
+2026-03-07 09:21:23,650 [INFO] Loaded 4273 entries from skiri_to_english_complete.json
+2026-03-07 09:21:23,915 [INFO] S2E: 3888 / 4273 entries modified
+2026-03-07 09:21:23,997 [INFO] Loaded 6414 entries from english_to_skiri_complete.json
+2026-03-07 09:21:24,466 [INFO] E2S: 4932 / 6414 entries modified
+2026-03-07 09:21:24,917 [INFO] 
+2026-03-07 09:21:24,917 [INFO] ============================================================
+2026-03-07 09:21:24,917 [INFO] RESULTS 
+2026-03-07 09:21:24,917 [INFO] ============================================================
+2026-03-07 09:21:24,918 [INFO] Total entries modified: 8820
+2026-03-07 09:21:24,918 [INFO] 
+2026-03-07 09:21:24,918 [INFO] Total character replacements: 50699
+2026-03-07 09:21:24,918 [INFO] 
+2026-03-07 09:21:24,918 [INFO] By character:
+2026-03-07 09:21:24,918 [INFO]   Char   Unicode     Count   Corrected To

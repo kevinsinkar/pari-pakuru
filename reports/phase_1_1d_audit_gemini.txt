@@ -1,0 +1,547 @@
+========================================================================
+Phase 1.1d — Parsing Completeness Audit Report
+Generated: 2026-03-07T14:00:52.742522
+========================================================================
+
+SUMMARY
+----------------------------------------
+S2E entries audited:       4273
+Clean entries (no flags):  3012
+Total flags:               1798
+  Errors:                   184
+  Warnings:                 930
+  Info:                     684
+
+FLAGS BY TYPE (sorted by frequency)
+------------------------------------------------------------
+  [   INFO] MISSING_VERB_CLASS                       ×553
+  [WARNING] NOUN_MISSING_GLOTTAL                     ×328
+  [WARNING] CONSONANT_SKELETON_MISMATCH              ×259
+  [  ERROR] GEMINI_NOUN_BARE_VOWEL_ENDING            ×237
+  [   INFO] MISSING_OPEN_BRACKET                     ×65
+  [   INFO] MISSING_CLOSE_BRACKET                    ×65
+  [WARNING] GEMINI_NOUN_ENDING_BARE_VOWEL            ×30
+  [WARNING] EMPTY_PHONETIC                           ×28
+  [WARNING] GEMINI_NOUN_ENDING_MISMATCH              ×26
+  [  ERROR] INVALID_PHONETIC_CHAR                    ×22
+  [  ERROR] GEMINI_PHONETIC_MISMATCH                 ×22
+  [WARNING] GEMINI_NOUN_ENDS_IN_BARE_VOWEL           ×18
+  [WARNING] GEMINI_NOUN_ENDS_BARE_VOWEL              ×18
+  [  ERROR] GEMINI_PHONETIC_FORM_MISSING             ×13
+  [  ERROR] GEMINI_PHONETIC_FORM_MISMATCH            ×10
+  [  ERROR] GEMINI_PHONETIC_VOWEL_LENGTH_MISMATCH    ×9
+  [  ERROR] GEMINI_MISSING_PHONETIC_FORM             ×8
+  [WARNING] UNKNOWN_VERB_CLASS                       ×7
+  [WARNING] GEMINI_NOUN_ENDING_UNEXPECTED            ×7
+  [  ERROR] GEMINI_VOWEL_LENGTH_MISMATCH             ×5
+  [WARNING] GEMINI_NOUN_ENDS_NON_GLOTTAL             ×5
+  [WARNING] GEMINI_NOUN_ENDING_BARE_CONSONANT        ×5
+  [WARNING] GEMINI_NOUN_MISSING_FINAL_GLOTTAL_STOP   ×4
+  [  ERROR] GEMINI_NOUN_ENDING_CONSONANT             ×4
+  [WARNING] GEMINI_NOUN_CONSONANT_ENDING             ×4
+  [WARNING] GEMINI_NOUN_FINAL_GLOTTAL_STOP_MISSING   ×4
+  [WARNING] GEMINI_noun_consonant_ending             ×4
+  [  ERROR] GEMINI_missing_phonetic_form             ×3
+  [  ERROR] GEMINI_N_BARE_VOWEL_ENDING               ×3
+  [  ERROR] GEMINI_PHONETIC_VOWEL_MISMATCH           ×3
+  [  ERROR] GEMINI_PHONETIC_FORM_EMPTY               ×2
+  [  ERROR] GEMINI_MISSING_DATA                      ×2
+  [WARNING] GEMINI_noun_ending_mismatch              ×2
+  [  ERROR] GEMINI_EMPTY_FIELD                       ×2
+  [WARNING] GEMINI_NOUN_ENDS_CONSONANT               ×2
+  [WARNING] GEMINI_PHONETIC_C_INCONSISTENCY          ×2
+  [   INFO] NO_PARADIGMATIC_FORMS                    ×1
+  [WARNING] GEMINI_PHONETIC_INCONSISTENCY            ×1
+  [  ERROR] GEMINI_PHONETIC_SKELETON_MISMATCH        ×1
+  [WARNING] GEMINI_PHONETIC_VOWEL_REPRESENTATION_INCONSISTENCY ×1
+  [  ERROR] GEMINI_PHONETIC_MISMATCH_VOWEL_LENGTH    ×1
+  [  ERROR] GEMINI_phonetic_form_mismatch            ×1
+  [WARNING] GEMINI_PHONETIC_FORM_C_INCONSISTENCY     ×1
+  [WARNING] GEMINI_N_CONSONANT_ENDING                ×1
+  [  ERROR] GEMINI_EMPTY_PHONETIC_FORM               ×1
+  [WARNING] GEMINI_NOUN_UNEXPECTED_ENDING            ×1
+  [WARNING] GEMINI_GLOSS_OCR_ARTIFACT                ×1
+  [  ERROR] GEMINI_OCR_ARTIFACT                      ×1
+  [WARNING] GEMINI_noun_bare_vowel_ending            ×1
+  [  ERROR] GEMINI_PHONETIC_VOWEL_GLOTTAL_MISMATCH   ×1
+  [  ERROR] GEMINI_PHONETIC_FORM_FORMAT              ×1
+  [  ERROR] GEMINI_PHONETIC_FORM_INCONSISTENCY       ×1
+  [  ERROR] GEMINI_PHONETIC_C_REALIZATION_MISMATCH   ×1
+
+ERRORS (184)
+------------------------------------------------------------
+  SK-huutawirihuur-p52-0882 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+006E 'n' in phonetic form | value: [notprovided]
+  SK-huutawirihuur-p52-0882 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+006F 'o' in phonetic form | value: [notprovided]
+  SK-huutawirihuur-p52-0882 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+0076 'v' in phonetic form | value: [notprovided]
+  SK-huutawirihuur-p52-0882 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+0064 'd' in phonetic form | value: [notprovided]
+  SK-huutawirihuur-p52-0882 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+0065 'e' in phonetic form | value: [notprovided]
+  SK-kaaks-p72-1292 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+006E 'n' in phonetic form | value: [notprovided]
+  SK-kaaks-p72-1292 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+006F 'o' in phonetic form | value: [notprovided]
+  SK-kaaks-p72-1292 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+0076 'v' in phonetic form | value: [notprovided]
+  SK-kaaks-p72-1292 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+0064 'd' in phonetic form | value: [notprovided]
+  SK-kaaks-p72-1292 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+0065 'e' in phonetic form | value: [notprovided]
+  SK-rakaraaracaahisiku-p134-2621 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+006E 'n' in phonetic form | value: [notprovided]
+  SK-rakaraaracaahisiku-p134-2621 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+006F 'o' in phonetic form | value: [notprovided]
+  SK-rakaraaracaahisiku-p134-2621 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+0076 'v' in phonetic form | value: [notprovided]
+  SK-rakaraaracaahisiku-p134-2621 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+0064 'd' in phonetic form | value: [notprovided]
+  SK-rakaraaracaahisiku-p134-2621 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+0065 'e' in phonetic form | value: [notprovided]
+  SK-rawa,_nawa-p139-2751 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+006E 'n' in phonetic form | value: [rà-wə,nà-wə]
+  SK-taawatatk-p155-3019 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+002B '+' in phonetic form | value: [+raar-][•taa-wə-tət(k)•]
+  SK-piikawaa-p460-4081 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+006E 'n' in phonetic form | value: [notprovided]
+  SK-piikawaa-p460-4081 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+006F 'o' in phonetic form | value: [notprovided]
+  SK-piikawaa-p460-4081 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+0076 'v' in phonetic form | value: [notprovided]
+  SK-piikawaa-p460-4081 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+0064 'd' in phonetic form | value: [notprovided]
+  SK-piikawaa-p460-4081 | phonetic_form | INVALID_PHONETIC_CHAR
+    Invalid character U+0065 'e' in phonetic form | value: [notprovided]
+  SK-kaaqata-p2-0011 | headword | GEMINI_NOUN_BARE_VOWEL_ENDING
+    Noun headword 'kaaʔata' ends in a bare vowel 'a'. Expected to end in 'ʔ' or a consonant.
+  SK-ahictarahaq-p9-0088 | phonetic_form | GEMINI_PHONETIC_FORM_EMPTY
+    Phonetic form is empty.
+  SK-akarahkata-p11-0114 | headword | GEMINI_NOUN_BARE_VOWEL_ENDING
+    Noun headword 'akarahkata' ends in a bare vowel 'a', but is expected to end in 'ʔ'.
+  SK-ariisit_rawarii-p13-0144 | phonetic_form | GEMINI_PHONETIC_VOWEL_LENGTH_MISMATCH
+    Headword 'rawarii' has long vowel 'aa', but phonetic form 'rà-wə-rii' shows short vowel 'a'.
+  SK-awaqa-p20-0251 | phonetic_form | GEMINI_PHONETIC_SKELETON_MISMATCH
+    The phonetic form [•a-waa•] does not plausibly represent the headword 'awaʔa'. The glottal stop 'ʔ' in the headword is missing in the phonetic form, which shows a long vowel 'aa' instead of 'aʔa'.
+  SK-awikaaraqa-p23-0310 | phonetic_form | GEMINI_PHONETIC_FORM_MISMATCH
+    The phonetic form [•ə-wɪ-kaa-raa•] does not plausibly represent the headword 'awikaaraʔa'. The headword ends in 'ʔa' while the phonetic form ends in 'aa', missing the glottal stop and having a different final vowel.
+  SK-awiraqa-p24-0324 | phonetic_form | GEMINI_PHONETIC_MISMATCH
+    Headword 'awiraʔa' has 'ʔa', but phonetic form '[•a-wi-raa•]' shows 'aa'. The glottal stop 'ʔ' is missing and the vowel quality/length is different.
+  SK-cahkahaaruq-p27-0400 | phonetic_form | GEMINI_PHONETIC_VOWEL_LENGTH_MISMATCH
+    Headword 'uu' (long) does not correspond to phonetic 'ʊ' (short).
+  SK-cahuuki-p27-0401 | phonetic_form | GEMINI_PHONETIC_VOWEL_LENGTH_MISMATCH
+    Headword 'u' (short) does not correspond to phonetic 'uː' (long).
+  SK-cakickuutuq-p27-0405 | phonetic_form | GEMINI_PHONETIC_VOWEL_LENGTH_MISMATCH
+    Headword 'uu' (long) does not correspond to phonetic 'ʊ' (short).
+  SK-ckuuri-p31-0502 | headword | GEMINI_NOUN_BARE_VOWEL_ENDING
+    Noun headword 'ckuuri' ends in a bare vowel 'i', but is expected to end in 'ʔ' or another consonant.
+  SK-ctuquq-p31-0513 | phonetic_form | GEMINI_PHONETIC_FORM_MISMATCH
+    Phonetic form '[tstː-ʔuʔ]' has a length mark 'ː' after 'tst' without an explicit vowel, which does not plausibly represent the headword 'Ctuʔuʔ'.
+  SK-cuskatit-p32-0521 | phonetic_form | GEMINI_PHONETIC_FORM_MISSING
+    Phonetic form is missing.
+  SK-haarutpahat-p36-0611 | phonetic_form | GEMINI_MISSING_DATA
+    Phonetic form is missing.
+  SK-hariiquq-p37-0634 | phonetic_form | GEMINI_PHONETIC_FORM_MISSING
+    Phonetic form is missing.
+  SK-hariipahat-p37-0637 | phonetic_form | GEMINI_PHONETIC_FORM_MISSING
+    Phonetic form is missing.
+  SK-hastahuraahki-p38-0661 | headword | GEMINI_NOUN_BARE_VOWEL_ENDING
+    Noun headword 'hastahuraahki' ends in a bare vowel 'i'. Expected to end in 'ʔ'.
+  SK-hiihisuq-p40-0701 | phonetic_form | GEMINI_PHONETIC_VOWEL_LENGTH_MISMATCH
+    The headword 'hiihisuʔ' indicates a long vowel 'ii' in the first syllable, but the phonetic form '[hií-hɪ-sʊʔ]' shows a short vowel 'ií'.
+  SK-huraaritpatiihus-p47-0787 | headword | GEMINI_NOUN_ENDING_MISMATCH
+    Noun headword 'huraaritpatiihus' ends in 's', but is expected to end in 'ʔ'.
+  SK-huraariwiiruku,_rahuraariwiiru-p47-0789 | headword | GEMINI_NOUN_ENDING_MISMATCH
+    Noun headword 'huraariwiiruku' ends in a bare vowel 'u', but is expected to end in 'ʔ'.
+  SK-huukahaaruq-p49-0844 | phonetic_form | GEMINI_PHONETIC_MISMATCH_VOWEL_LENGTH
+    The headword 'huukahaaruʔ' contains a long vowel 'aa' in the second syllable, but the phonetic form '[huː-kə-haa-rʊʔ]' shows a reduced short vowel 'ə' in the corresponding position. This is a significant mismatch.
+  SK-huuriktik-p51-0867 | phonetic_form | GEMINI_missing_phonetic_form
+    Phonetic form is missing.
+  SK-huuruhaahkaatiit-p51-0868 | phonetic_form | GEMINI_missing_phonetic_form
+    Phonetic form is missing.
+  SK-huutaqa-p52-0877 | phonetic_form | GEMINI_phonetic_form_mismatch
+    Phonetic form '[•huu-taa•]' does not plausibly represent headword 'huutaʔa'. Expected glottal stop 'ʔ' is missing and vowel length differs.
+  SK-huutawirihuur-p52-0882 | phonetic_form | GEMINI_MISSING_PHONETIC_FORM
+    Phonetic form is marked as '[notprovided]'.
+  SK-iitkataku-p61-1046 | headword | GEMINI_NOUN_ENDING_BARE_VOWEL
+    Noun headword 'iitkataku' ends in a bare vowel 'u', but is expected to end in 'ʔ'.
+  SK-iitkickaruuwatiihus-p61-1048 | headword | GEMINI_NOUN_ENDING_CONSONANT
+    Noun headword 'iitkickaruuwatiihus' ends in 's', but is expected to end in 'ʔ'.
+  SK-iitpaca-p61-1052 | headword | GEMINI_NOUN_ENDING_BARE_VOWEL
+    Noun headword 'iitpaca' ends in a bare vowel 'a', but is expected to end in 'ʔ'.
+  SK-ikarikat-p61-1057 | headword | GEMINI_NOUN_ENDING_CONSONANT
+    Noun headword 'ikarikat' ends in 't', but is expected to end in 'ʔ'.
+  SK-ikitawiqat-p62-1071 | phonetic_form | GEMINI_PHONETIC_FORM_MISSING
+    Phonetic form is empty.
+  SK-iksucaqa-p64-1113 | phonetic_form | GEMINI_PHONETIC_MISMATCH
+    Phonetic form [•ɪk-sʊ-čaa•] does not plausibly represent headword 'iksucaʔa'. The sequence 'aʔa' in the headword is represented as 'aa' in the phonetic form, missing the glottal stop and having a different vowel length.
+  SK-kaaqata-p71-1258 | headword | GEMINI_NOUN_BARE_VOWEL_ENDING
+    Noun headword 'kaaʔata' ends in a bare vowel 'a', expected to end in 'ʔ'.
+  SK-kaawiracariiquus-p74-1342 | phonetic_form | GEMINI_MISSING_PHONETIC_FORM
+    Phonetic form is missing.
+  SK-kaawita-p75-1351 | headword | GEMINI_N_BARE_VOWEL_ENDING
+    Noun headword 'kaawita' ends in a bare vowel 'a', not 'ʔ' as expected for independent nouns.
+  SK-kaciiki-p75-1358 | headword | GEMINI_N_BARE_VOWEL_ENDING
+    Noun headword 'kaciiki' ends in a bare vowel 'i', not 'ʔ' as expected for independent nouns.
+  SK-kactahaaruq-p75-1364 | phonetic_form | GEMINI_EMPTY_FIELD
+    Phonetic form is empty.
+  SK-karariiwarii-p78-1418 | headword | GEMINI_NOUN_ENDING_BARE_VOWEL
+    Noun headword 'Karariiwarii' ends in a bare vowel 'ii', but nouns are typically expected to end in a glottal stop 'ʔ'.
+  SK-kataqa-p79-1465 | phonetic_form | GEMINI_PHONETIC_MISMATCH
+    Phonetic form '[•kə-taa•]' does not plausibly represent headword 'kataʔa'. The glottal stop 'ʔ' is missing, and the vowel length of the second vowel differs (short 'a' in headword vs. long 'aa' in phonetic form).
+  SK-kataqa-p80-1466 | phonetic_form | GEMINI_PHONETIC_MISMATCH
+    Phonetic form '[•kə-taa•]' does not plausibly represent headword 'kataʔa'. The glottal stop 'ʔ' is missing, and the vowel length of the second vowel differs (short 'a' in headword vs. long 'aa' in phonetic form).
+  SK-kataarit-p80-1477 | phonetic_form | GEMINI_PHONETIC_VOWEL_LENGTH_MISMATCH
+    Headword 'kataarit' has a long vowel 'aa', but phonetic form '[kə-taá-rɪt]' shows a short, accented vowel 'aá' in the corresponding position.
+  SK-kataawaruucaku-p80-1479 | phonetic_form | GEMINI_PHONETIC_VOWEL_LENGTH_MISMATCH
+    Headword 'kataawaruucaku' has a long vowel 'aa', but phonetic form '[kə-taá-wə-ruu-čə-kʊ]' shows a short, accented vowel 'aá' in the corresponding position.
+  SK-kataraqa-p81-1499 | phonetic_form | GEMINI_PHONETIC_MISMATCH
+    Phonetic form '[•ka-ta-raa•]' does not plausibly represent headword 'kataraʔa'. The glottal stop 'ʔ' is missing, and 'aʔa' is represented as a long vowel 'aa', which is inconsistent with typical Pawnee phonology.
+  SK-kawiqat-p83-1555 | phonetic_form | GEMINI_MISSING_PHONETIC_FORM
+    Phonetic form is missing or empty.
+  SK-kicakustaakaa-p85-1583 | headword | GEMINI_NOUN_BARE_VOWEL_ENDING
+    Noun headword 'kicakustaakaa' ends in a bare vowel 'aa' instead of the expected glottal stop 'ʔ'.
+  SK-kicawihuukaaraqa-p85-1593 | phonetic_form | GEMINI_PHONETIC_MISMATCH
+    The phonetic form '[•kɪ-čə-wɪ-huu-kaa-raa•]' does not plausibly represent the headword 'kicawihuukaaraʔa'. The glottal stop 'ʔ' is missing, and the final vowel length differs (ʔa vs raa).
+  SK-kiickaracariwis-p89-1665 | headword | GEMINI_NOUN_ENDING_MISMATCH
+    Noun headword 'kiickaracariwis' ends in 's', but is expected to end in 'ʔ'.
+  SK-kiictariiʔuus-p89-1670 | headword | GEMINI_NOUN_ENDING_MISMATCH
+    Noun headword 'kiictariiʔuus' ends in 's', but is expected to end in 'ʔ'.
+  SK-kiiskawaarasit-p92-1737 | phonetic_form | GEMINI_MISSING_PHONETIC_FORM
+    Phonetic form is missing.
+  SK-kiispakaracaqa-p92-1744 | phonetic_form | GEMINI_PHONETIC_FORM_MISMATCH
+    The phonetic form '[•kiis-pə-kə-rə-čaa•]' does not plausibly represent the headword 'kiispakaracaʔa'. The glottal stop 'ʔ' is missing from the phonetic form, and the vowel 'a' is lengthened to 'aa' without clear justification from the headword's structure.
+  SK-kiiwaqutkaatiit-p93-1760 | headword | GEMINI_NOUN_ENDING_MISMATCH
+    Noun headword 'kiiwaʔutkaatiit' ends in 't', but is expected to end in 'ʔ'.
+  SK-kiiwaaks-p93-1761 | headword | GEMINI_NOUN_ENDING_MISMATCH
+    Noun headword 'kiiwaaks' ends in 's', but is expected to end in 'ʔ'.
+  SK-kiiwaakstaakaa-p93-1762 | headword | GEMINI_NOUN_ENDING_MISMATCH
+    Noun headword 'kiiwaakstaakaa' ends in a bare vowel 'a', but is expected to end in 'ʔ'.
+  SK-kiiwaakstariiquus-p93-1763 | headword | GEMINI_NOUN_ENDING_MISMATCH
+    Noun headword 'kiiwaakstariiʔuus' ends in 's', but is expected to end in 'ʔ'.
+  SK-kiiwuhki-p93-1765 | headword | GEMINI_NOUN_ENDING_MISMATCH
+    Noun headword 'kiiwuhki' ends in a bare vowel 'i', but is expected to end in 'ʔ'.
+  SK-kipahki-p94-1778 | headword | GEMINI_NOUN_ENDING_MISMATCH
+    Noun headword 'kipahki' ends in a bare vowel 'i', but is expected to end in 'ʔ'.
+  SK-kiraar-p94-1787 | phonetic_form | GEMINI_PHONETIC_FORM_MISSING
+    Phonetic form is missing.
+  SK-kisuusit-p98-1903 | phonetic_form | GEMINI_PHONETIC_VOWEL_MISMATCH
+    Long vowel 'ii' in headword 'kisuusit' does not correspond to 'uː' in phonetic form '[kɪ-suː-sɪt]'. Expected 'ii' or 'iː'.
+  SK-kisuusitpahat-p98-1904 | phonetic_form | GEMINI_PHONETIC_VOWEL_MISMATCH
+    Long vowel 'ii' in headword 'kisuusitpahat' does not correspond to 'uː' in phonetic form '[kɪ-suː-sɪt-pə-hət]'. Expected 'ii' or 'iː'.
+  SK-kitkahaahki-p99-1923 | headword | GEMINI_NOUN_BARE_VOWEL_ENDING
+    Noun headword 'Kitkahaahki' ends in a bare vowel 'i', but is expected to end in 'ʔ'.
+  SK-kitkahaahkiripacki-p99-1924 | headword | GEMINI_NOUN_BARE_VOWEL_ENDING
+    Noun headword 'Kitkahaahkiripacki' ends in a bare vowel 'i', but is expected to end in 'ʔ'.
+  SK-kitkahaarawiicaku-p99-1927 | headword | GEMINI_NOUN_BARE_VOWEL_ENDING
+    Noun headword 'Kitkahaarawiicaku' ends in a bare vowel 'u', but is expected to end in 'ʔ'.
+  SK-kskiitiqiks_rasakuuru-p101-1939 | headword | GEMINI_NOUN_BARE_VOWEL_ENDING
+    The noun phrase 'Kskiitiʔiks Rasakuuru' ends with 'Rasakuuru', which ends in a bare vowel 'u', but is expected to end in 'ʔ'.
+  SK-kukatit-p101-1967 | phonetic_form | GEMINI_MISSING_PHONETIC_FORM
+    Phonetic form is missing for this entry.
+  SK-kurukstaakaa-p102-1992 | headword | GEMINI_NOUN_BARE_VOWEL_ENDING
+    Pawnee nouns in citation form are expected to end in a glottal stop (ʔ) or a consonant. This headword ends in a bare vowel 'aa'.
+  SK-pahuks-p108-2058 | phonetic_form | GEMINI_EMPTY_PHONETIC_FORM
+    Phonetic form is empty.
+  SK-pakspasaasi-p110-2110 | phonetic_form | GEMINI_VOWEL_LENGTH_MISMATCH
+    Long vowel 'ii' in headword 'pakspasaasi' does not correspond to a long vowel in phonetic form '[pàks-pə-saa-sɪ]' (found 'ɪ').
+  SK-pakuucaku-p110-2123 | headword | GEMINI_NOUN_BARE_VOWEL_ENDING
+    Noun headword 'pakuucaku' ends in a bare vowel 'u', but nouns are expected to end in 'ʔ' or a consonant.
+  SK-pakuuhtuq-p110-2124 | phonetic_form | GEMINI_VOWEL_LENGTH_MISMATCH
+    The headword 'pakuuhtuʔ' has a long vowel 'uu', but the phonetic form '[pà-kuuh-tʊʔ]' shows 'uuh', which typically indicates a short vowel followed by 'h', a mismatch in vowel length.
+  SK-paraaqi-p110-2129 | headword | GEMINI_NOUN_BARE_VOWEL_ENDING
+    Noun headword 'Paraaʔi' ends in a bare vowel 'i', but nouns are expected to end in 'ʔ' or a consonant.
+  SK-paruskiripacki-p111-2142 | headword | GEMINI_NOUN_BARE_VOWEL_ENDING
+    Noun headword 'paruskiripacki' ends in a bare vowel 'i', expected to end in 'ʔ'.
+  SK-parustaakaa-p111-2143 | headword | GEMINI_NOUN_BARE_VOWEL_ENDING
+    Noun headword 'parustaakaa' ends in a bare vowel 'aa', expected to end in 'ʔ'.
+  SK-pasaasi-p111-2144 | headword | GEMINI_NOUN_BARE_VOWEL_ENDING
+    Noun headword 'Pasaasi' ends in a bare vowel 'i', expected to end in 'ʔ'.
+  SK-pasaki-p111-2145 | headword | GEMINI_NOUN_BARE_VOWEL_ENDING
+    Noun headword 'pasaki' ends in a bare vowel 'i', expected to end in 'ʔ'.
+  SK-pasaktaakaa-p111-2146 | headword | GEMINI_NOUN_BARE_VOWEL_ENDING
+    Noun headword 'pasaktaakaa' ends in a bare vowel 'aa', expected to end in 'ʔ'.
+  SK-pasuuhara-p111-2147 | headword | GEMINI_NOUN_BARE_VOWEL_ENDING
+    Noun headword 'Pasuuhara' ends in a bare vowel 'a', expected to end in 'ʔ'.
+  SK-pasuuhararu-p111-2148 | headword | GEMINI_NOUN_BARE_VOWEL_ENDING
+    Noun headword 'Pasuuhararu' ends in a bare vowel 'u', expected to end in 'ʔ'.
+  SK-patki-p111-2149 | headword | GEMINI_NOUN_BARE_VOWEL_ENDING
+    Noun headword 'patki' ends in a bare vowel 'i', expected to end in 'ʔ'.
+  SK-picuuwihiriq-p111-2164 | phonetic_form | GEMINI_PHONETIC_FORM_MISSING
+    Phonetic form is empty.
+  ... and 84 more errors
+
+WARNINGS — NOUN MISSING GLOTTAL STOP (328)
+------------------------------------------------------------
+  SK-kaaqata-p2-0011: kaaʔata
+  SK-ahictarahaataakaa-p9-0089: ahictarahaataakaa
+  SK-ahitki-p9-0097: ahitki
+  SK-akarahkata-p11-0114: akarahkata
+  SK-ariisit_rawarii-p13-0144: ariisit rawarii
+  SK-arika-p13-0146: arika
+  SK-arikaraariki-p13-0148: Arikaraariki
+  SK-askiisawihuku-p16-0167: askiisawihuku
+  SK-askiiskatawicaku-p16-0168: askiiskatawicaku
+  SK-asku-raastawi-p16-0178: asku-raastawi
+  SK-astarahi-p17-0194: Astarahi
+  SK-astawaa-p17-0197: astawaa
+  SK-atikawa-p19-0235: atikawa
+  SK-atiktaka-p19-0237: atiktaka
+  SK-caahikski-p26-0363: caahikski
+  SK-caahiks-rararuuwarii-p26-0367: caahiks-rararuuwarii
+  SK-caakawiraarikitaahaku-p26-0378: caakawiraarikitaahaku
+  SK-caatki-p27-0392: caatki
+  SK-cahuuki-p27-0401: cahuuki
+  SK-cakaaqa-p27-0403: Cakaaʔa
+  SK-capaaraqu-p28-0409: capaaraʔu
+  SK-caraahku-p28-0414: caraahku
+  SK-cawii-p28-0424: Cawii
+  SK-cawiirikiripacki-p28-0426: Cawiirikiripacki
+  SK-cikiri-p29-0439: cikiri
+  SK-cikirihkiripahki-p29-0442: cikirihkiripahki
+  SK-cikirihpiita-p29-0443: cikirihpiita
+  SK-ckariitki-p30-0470: ckariitki
+  SK-ckarucki-p30-0471: ckarucki
+  SK-ckataahisiku-p30-0473: ckataahisiku
+  SK-ckiiri-p30-0474: Ckiiri
+  SK-ckiisaakaratawaa-p30-0476: ckiisaakaratawaa
+  SK-ckiiskararii-p30-0478: ckiiskararii
+  SK-ckipis_raawarii-p30-0481: ckipis raawarii
+  SK-ckirihki-p30-0485: ckirihki
+  SK-ckirihki_kuuruuriki-p30-0486: Ckirihki Kuuruuriki
+  SK-ckiriraara-p30-0487: Ckiriraara
+  SK-ckuuri-p31-0502: ckuuri
+  SK-cuuhkataku-p32-0532: cuuhkataku
+  SK-cuupiriktaakaa-p32-0534: Cuupiriktaakaa
+  SK-cuuraki-p32-0536: cuuraki
+  SK-cuustiraqu-p32-0539: cuustiraʔu
+  SK-haakastahkata-p34-0580: haakastahkata
+  SK-hariirahkata-p37-0638: hariirahkata
+  SK-harikictaakaa-p37-0639: harikictaakaa
+  SK-hariwiita-p37-0644: hariwiita
+  SK-haski-p37-0650: haski
+  SK-haspacki-p38-0658: haspacki
+  SK-hastahuraahki-p38-0661: hastahuraahki
+  SK-hiruuska-p43-0707: Hiruuska
+  ... and 278 more
+
+WARNINGS — EMPTY PHONETIC FORM (28)
+------------------------------------------------------------
+  SK-ahictarahaq-p9-0088
+  SK-cuskatit-p32-0521
+  SK-haarutpahat-p36-0611
+  SK-hariiquq-p37-0634
+  SK-hariipahat-p37-0637
+  SK-huuriktik-p51-0867
+  SK-huuruhaahkaatiit-p51-0868
+  SK-ikitawiqat-p62-1071
+  SK-kaawiracariiquus-p74-1342
+  SK-kactahaaruq-p75-1364
+  SK-kawiqat-p83-1555
+  SK-kiiskawaarasit-p92-1737
+  SK-kiraar-p94-1787
+  SK-kukatit-p101-1967
+  SK-pahuks-p108-2058
+  SK-picuuwihiriq-p111-2164
+  SK-piirustaruus-p113-2173
+  SK-piiruus-p113-2174
+  SK-raakiiskawaarasit-p119-2328
+  SK-raaripakusuq-p123-2402
+  SK-takaas-p157-3063
+  SK-tiraaktakaasikus-p166-3271
+  SK-uhurarik-p169-3333
+  SK-wakta/taa-p175-3476
+  SK-ø-p349-3568
+  SK-asaarahkata-p362-3745
+  SK-hiihpahat-p389-3821
+  SK-rikakiis-p491-4156
+
+WARNINGS — INVALID PHONETIC CHARACTERS
+------------------------------------------------------------
+  U+006E 'n' — 5 entries
+    SK-huutawirihuur-p52-0882
+    SK-kaaks-p72-1292
+    SK-rakaraaracaahisiku-p134-2621
+    SK-rawa,_nawa-p139-2751
+    SK-piikawaa-p460-4081
+  U+006F 'o' — 4 entries
+    SK-huutawirihuur-p52-0882
+    SK-kaaks-p72-1292
+    SK-rakaraaracaahisiku-p134-2621
+    SK-piikawaa-p460-4081
+  U+0076 'v' — 4 entries
+    SK-huutawirihuur-p52-0882
+    SK-kaaks-p72-1292
+    SK-rakaraaracaahisiku-p134-2621
+    SK-piikawaa-p460-4081
+  U+0064 'd' — 4 entries
+    SK-huutawirihuur-p52-0882
+    SK-kaaks-p72-1292
+    SK-rakaraaracaahisiku-p134-2621
+    SK-piikawaa-p460-4081
+  U+0065 'e' — 4 entries
+    SK-huutawirihuur-p52-0882
+    SK-kaaks-p72-1292
+    SK-rakaraaracaahisiku-p134-2621
+    SK-piikawaa-p460-4081
+  U+002B '+' — 1 entries
+    SK-taawatatk-p155-3019
+
+WARNINGS — CONSONANT SKELETON MISMATCHES
+------------------------------------------------------------
+  SK-kaaqaah-p2-0003: Consonant mismatch: headword 'kʔh' vs phonetic 'kʔ'
+    kaaʔaah / [•kaa-ʔaa(h)•]
+  SK-kaaqihwicat-p2-0012: Consonant mismatch: headword 'kʔhwtst' vs phonetic 'kʔhwct'
+    kaaʔihwicat / [•kaa-ʔih-wi-cat•]
+  SK-kaahak-p2-0023: Consonant mismatch: headword 'khk' vs phonetic 'kh'
+    kaahak / [•kaa-ha{k/t}•]
+  SK-aciksuhuriwaar_[+_neg.]-p8-0071: Consonant mismatch: headword 'tskshrwr' vs phonetic 'ckshrw'
+    aciksuhuriwaar [+ neg.] / [•a-cik-su-hu-ri-waa(r)•]
+  SK-ahak-p9-0087: Consonant mismatch: headword 'hk' vs phonetic 'h'
+    ahak / [•ə-hə{k/t}•]
+  SK-ahiht-p9-0093: Consonant mismatch: headword 'hht' vs phonetic 'ht'
+    ahiht / [•ə-hɪ(h)t•]
+  SK-ahuk-p9-0101: Consonant mismatch: headword 'hk' vs phonetic 'h'
+    ahuk / [•ə-hʊ{k/t}•]
+  SK-ak_[+_(ku-,_ruu-,_irii-),_i-]-p9-0102: Consonant mismatch: headword 'kkrr' vs phonetic ''
+    ak [+ (ku-, ruu-, irii-), i-] / [•ə{k/t}•]
+  SK-akaquk-p9-0104: Consonant mismatch: headword 'kʔk' vs phonetic 'kʔ'
+    akaʔuk / [•ə-kə-ʔu{k/t}•]
+  SK-akiihaar-p11-0118: Consonant mismatch: headword 'khr' vs phonetic 'kh'
+    akiihaar / [•ə-kii-haa(r)•]
+  SK-akitaar-p11-0120: Consonant mismatch: headword 'ktr' vs phonetic 'kt'
+    akitaar / [•ə-kɪ-taa(r)•]
+  SK-arasik-p13-0135: Consonant mismatch: headword 'rsk' vs phonetic 'rs'
+    arasik / [•ə-rə-sɪ{k/t}•]
+  SK-arik-p13-0145: Consonant mismatch: headword 'rk' vs phonetic 'r'
+    arik / [•ə-rɪ{k/t}•]
+  SK-arikiihk-p13-0154: Consonant mismatch: headword 'rkhk' vs phonetic 'rk'
+    arikiihk / [•ə-rɪ-kii(h){k/t}•]
+  SK-astaah-p17-0190: Consonant mismatch: headword 'sth' vs phonetic 'st'
+    astaah / [•əs-taa(h)•]
+  SK-asuuk-p18-0213: Consonant mismatch: headword 'sk' vs phonetic 's'
+    asuuk / [•ə-suu{k/t}•]
+  SK-ataawuh-p19-0226: Consonant mismatch: headword 'twh' vs phonetic 'tw'
+    ataawuh / [•ə-taa-wʊ(h)•]
+  SK-awaqa-p20-0251: Consonant mismatch: headword 'wʔ' vs phonetic 'w'
+    awaʔa / [•a-waa•]
+  SK-awaah-p20-0254: Consonant mismatch: headword 'wh' vs phonetic 'w'
+    awaah / [•a-waa(h)•]
+  SK-awaahak-p20-0255: Consonant mismatch: headword 'whk' vs phonetic 'wh'
+    awaahak / •ə-waa-hə{k/t}•
+  SK-awacitiksa-p20-0264: Consonant mismatch: headword 'wtstks' vs phonetic 'wctks'
+    awacitiksa / [•a-wa-ci-tik-sa•]
+  SK-awarik-p21-0273: Consonant mismatch: headword 'wrk' vs phonetic 'wr'
+    awarik / [•ə-wə-rɪ{k/t}•]
+  SK-awask-p21-0274: Consonant mismatch: headword 'wsk' vs phonetic 'ws'
+    awask / [•ə-wəs(k)•]
+  SK-awataar-p21-0275: Consonant mismatch: headword 'wtr' vs phonetic 'wt'
+    awataar / [•ə-wə-taa(r)•]
+  SK-awiqaar-p21-0282: Consonant mismatch: headword 'wʔr' vs phonetic 'wʔ'
+    awiʔaar / [•ə-wi-ʔaa(r)•]
+  SK-awiqiik-p21-0284: Consonant mismatch: headword 'wʔk' vs phonetic 'wʔ'
+    awiʔiik / [•ə-wi-ʔii{k/t}•]
+  SK-awiqiir-p21-0287: Consonant mismatch: headword 'wʔr' vs phonetic 'wʔ'
+    awiʔiir / [•ə-wi-ʔii(r)•]
+  SK-awiiraqa-p23-0298: Consonant mismatch: headword 'wrʔ' vs phonetic 'wr'
+    awiiraʔa / [•ə-wii-raa•]
+  SK-awiraqa-p24-0324: Consonant mismatch: headword 'wrʔ' vs phonetic 'wr'
+    awiraʔa / [•a-wi-raa•]
+  SK-awuh-p26-0353: Consonant mismatch: headword 'wh' vs phonetic 'w'
+    awuh / [•ə-wʊ(h)•]
+  ... and 229 more
+
+INFO — MISSING VERB CLASS (553)
+------------------------------------------------------------
+  SK-kaac-p2-0016: Verb entry (VD) has no verb class
+  SK-kaaciks-p2-0018: Verb entry (VD) has no verb class
+  SK-aahkawikiiqac-p2-0044: Verb entry (VD) has no verb class
+  SK-acikstaraa-p7-0053: Verb entry (VD) has no verb class
+  SK-acikstaraaruhuur-p7-0054: Verb entry (VD) has no verb class
+  SK-acikstarahkiis/kis-p7-0055: Verb entry (VD) has no verb class
+  SK-acikstawis-p7-0061: Verb entry (VD) has no verb class
+  SK-acikstiiquus-p7-0062: Verb entry (VD) has no verb class
+  SK-acikstiihuur-p7-0064: Verb entry (VD) has no verb class
+  SK-acikstiiris-p7-0065: Verb entry (VD) has no verb class
+  SK-aciksuhuuricaahiks-p8-0073: Verb entry (VD) has no verb class
+  SK-aciksuuwicaks-p8-0076: Verb entry (VD) has no verb class
+  SK-ackiriku-p8-0079: Verb entry (VD) has no verb class
+  SK-ackurus-p8-0080: Verb entry (VD) has no verb class
+  SK-ackurus-p8-0081: Verb entry (VD) has no verb class
+  SK-acuhurihuur-p8-0082: Verb entry (VD) has no verb class
+  SK-ahiht-p9-0093: Verb entry (VD) has no verb class
+  SK-akaa-p9-0105: Verb entry (VL) has no verb class
+  SK-akiihaar-p11-0118: Verb entry (VD) has no verb class
+  SK-akitaar-p11-0120: Verb entry (VD) has no verb class
+  ... and 533 more
+
+GEMINI AI VALIDATION FLAGS (470)
+------------------------------------------------------------
+  [ERROR] SK-kaaqata-p2-0011 | GEMINI_NOUN_BARE_VOWEL_ENDING: Noun headword 'kaaʔata' ends in a bare vowel 'a'. Expected to end in 'ʔ' or a consonant.
+  [WARNING] SK-aciksuhuriwaar_[+_neg.]-p8-0071 | GEMINI_PHONETIC_INCONSISTENCY: The phonetic form [•a-cik-su-hu-ri-waa(r)•] for 'aciksuhuriwaar' shows 'a-cik' while the base word 'aciksuhuriwaar' in entry SK-aciksuhuriwaar-p8-0070 shows 'ə-čɪk'. This is an inconsistency in the transcription of the initial morpheme 'acik-' across related entries.
+  [ERROR] SK-ahictarahaq-p9-0088 | GEMINI_PHONETIC_FORM_EMPTY: Phonetic form is empty.
+  [WARNING] SK-ahictarahaataakaa-p9-0089 | GEMINI_NOUN_BARE_VOWEL_ENDING: Noun headword 'ahictarahaataakaa' ends in a bare vowel 'aa'. Expected to end in 'ʔ'.
+  [WARNING] SK-ahitki-p9-0097 | GEMINI_NOUN_BARE_VOWEL_ENDING: Noun headword 'ahitki' ends in a bare vowel 'i'. Expected to end in 'ʔ'.
+  [ERROR] SK-akarahkata-p11-0114 | GEMINI_NOUN_BARE_VOWEL_ENDING: Noun headword 'akarahkata' ends in a bare vowel 'a', but is expected to end in 'ʔ'.
+  [ERROR] SK-ariisit_rawarii-p13-0144 | GEMINI_PHONETIC_VOWEL_LENGTH_MISMATCH: Headword 'rawarii' has long vowel 'aa', but phonetic form 'rà-wə-rii' shows short vowel 'a'.
+  [WARNING] SK-ariisit_rawarii-p13-0144 | GEMINI_NOUN_MISSING_FINAL_GLOTTAL_STOP: Noun headword 'ariisit rawarii' ends in a bare vowel 'ii' instead of the expected glottal stop 'ʔ'.
+  [WARNING] SK-arika-p13-0146 | GEMINI_NOUN_MISSING_FINAL_GLOTTAL_STOP: Noun headword 'arika' ends in a bare vowel 'a' instead of the expected glottal stop 'ʔ'.
+  [WARNING] SK-arikaraariki-p13-0148 | GEMINI_NOUN_MISSING_FINAL_GLOTTAL_STOP: Noun headword 'Arikaraariki' ends in a bare vowel 'i' instead of the expected glottal stop 'ʔ'.
+  [WARNING] SK-arikiriqic-p13-0156 | GEMINI_NOUN_MISSING_FINAL_GLOTTAL_STOP: Noun headword 'arikiriʔic' ends in a consonant 'c' instead of the expected glottal stop 'ʔ'.
+  [WARNING] SK-askiisawihuku-p16-0167 | GEMINI_NOUN_BARE_VOWEL_ENDING: Noun headword ends in a bare vowel 'u', expected to end in 'ʔ'.
+  [WARNING] SK-askiiskatawicaku-p16-0168 | GEMINI_NOUN_BARE_VOWEL_ENDING: Noun headword ends in a bare vowel 'u', expected to end in 'ʔ'.
+  [WARNING] SK-asku-raastawi-p16-0178 | GEMINI_NOUN_BARE_VOWEL_ENDING: Noun headword ends in a bare vowel 'i', expected to end in 'ʔ'.
+  [WARNING] SK-astarahi-p17-0194 | GEMINI_NOUN_BARE_VOWEL_ENDING: Noun headword 'Astarahi' ends in a bare vowel 'i'. Expected to end in 'ʔ' or a consonant.
+  [WARNING] SK-astawaa-p17-0197 | GEMINI_NOUN_BARE_VOWEL_ENDING: Noun headword 'astawaa' ends in a bare vowel 'aa'. Expected to end in 'ʔ' or a consonant.
+  [WARNING] SK-asuhkiriks-p18-0207 | GEMINI_NOUN_ENDING_MISMATCH: Common noun 'asuhkiriks' ends in 's' instead of the expected glottal stop 'ʔ'.
+  [WARNING] SK-asuris-p18-0212 | GEMINI_NOUN_ENDING_MISMATCH: Common noun 'asuris' ends in 's' instead of the expected glottal stop 'ʔ'.
+  [WARNING] SK-asuuricaahiks-p18-0217 | GEMINI_NOUN_ENDING_MISMATCH: Common noun 'asuuricaahiks' ends in 's' instead of the expected glottal stop 'ʔ'.
+  [WARNING] SK-atikawa-p19-0235 | GEMINI_NOUN_BARE_VOWEL_ENDING: Noun headword ends in a bare vowel 'a', expected to end in 'ʔ'.
+  [WARNING] SK-atiktaka-p19-0237 | GEMINI_NOUN_BARE_VOWEL_ENDING: Noun headword ends in a bare vowel 'a', expected to end in 'ʔ'.
+  [ERROR] SK-awaqa-p20-0251 | GEMINI_PHONETIC_SKELETON_MISMATCH: The phonetic form [•a-waa•] does not plausibly represent the headword 'awaʔa'. The glottal stop 'ʔ' in the headword is missing in the phonetic form, which shows a long vowel 'aa' instead of 'aʔa'.
+  [ERROR] SK-awikaaraqa-p23-0310 | GEMINI_PHONETIC_FORM_MISMATCH: The phonetic form [•ə-wɪ-kaa-raa•] does not plausibly represent the headword 'awikaaraʔa'. The headword ends in 'ʔa' while the phonetic form ends in 'aa', missing the glottal stop and having a different final vowel.
+  [ERROR] SK-awiraqa-p24-0324 | GEMINI_PHONETIC_MISMATCH: Headword 'awiraʔa' has 'ʔa', but phonetic form '[•a-wi-raa•]' shows 'aa'. The glottal stop 'ʔ' is missing and the vowel quality/length is different.
+  [WARNING] SK-awiraariktis-p24-0330 | GEMINI_NOUN_ENDING_UNEXPECTED: Noun headword 'awiraariktis' ends in 's', but Pawnee nouns are typically expected to end in 'ʔ'.
+  [WARNING] SK-caahikski-p26-0363 | GEMINI_NOUN_BARE_VOWEL_ENDING: Noun headword ends in a bare vowel 'i', expected to end in 'ʔ'.
+  [WARNING] SK-caahiks-rararuuwarii-p26-0367 | GEMINI_NOUN_BARE_VOWEL_ENDING: Noun headword ends in a bare vowel 'i', expected to end in 'ʔ'.
+  [WARNING] SK-caakawiraarikitaahaku-p26-0378 | GEMINI_NOUN_BARE_VOWEL_ENDING: Noun headword ends in a bare vowel 'u', expected to end in 'ʔ'.
+  [WARNING] SK-caatki-p27-0392 | GEMINI_NOUN_BARE_VOWEL_ENDING: Noun headword 'caatki' ends in a bare vowel 'i', expected to end in 'ʔ' or a consonant.
+  [ERROR] SK-cahkahaaruq-p27-0400 | GEMINI_PHONETIC_VOWEL_LENGTH_MISMATCH: Headword 'uu' (long) does not correspond to phonetic 'ʊ' (short).
+  [ERROR] SK-cahuuki-p27-0401 | GEMINI_PHONETIC_VOWEL_LENGTH_MISMATCH: Headword 'u' (short) does not correspond to phonetic 'uː' (long).
+  [WARNING] SK-cahuuki-p27-0401 | GEMINI_NOUN_BARE_VOWEL_ENDING: Noun headword 'cahuuki' ends in a bare vowel 'i' instead of the expected glottal stop 'ʔ'.
+  [WARNING] SK-cakaaqa-p27-0403 | GEMINI_NOUN_BARE_VOWEL_ENDING: Noun headword 'Cakaaʔa' ends in a bare vowel 'a' instead of the expected glottal stop 'ʔ'.
+  [ERROR] SK-cakickuutuq-p27-0405 | GEMINI_PHONETIC_VOWEL_LENGTH_MISMATCH: Headword 'uu' (long) does not correspond to phonetic 'ʊ' (short).
+  [WARNING] SK-capaaraqu-p28-0409 | GEMINI_NOUN_BARE_VOWEL_ENDING: Noun headword 'capaaraʔu' ends in a bare vowel 'u' instead of the expected glottal stop 'ʔ'.
+  [WARNING] SK-caraahku-p28-0414 | GEMINI_NOUN_BARE_VOWEL_ENDING: Noun headword 'caraahku' ends in a bare vowel 'u' instead of the expected glottal stop 'ʔ'.
+  [WARNING] SK-cawii-p28-0424 | GEMINI_NOUN_ENDING_BARE_VOWEL: Noun headword ends in a bare vowel instead of a glottal stop (ʔ).
+  [WARNING] SK-cawiirikiripacki-p28-0426 | GEMINI_NOUN_ENDING_BARE_VOWEL: Noun headword ends in a bare vowel instead of a glottal stop (ʔ).
+  [WARNING] SK-cikiri-p29-0439 | GEMINI_NOUN_ENDING_BARE_VOWEL: Noun headword ends in a bare vowel instead of a glottal stop (ʔ).
+  [WARNING] SK-cikirihkiripahki-p29-0442 | GEMINI_NOUN_BARE_VOWEL_ENDING: Noun headword 'cikirihkiripahki' ends in a bare vowel 'i', expected to end in 'ʔ'.
+  [WARNING] SK-cikirihpiita-p29-0443 | GEMINI_NOUN_BARE_VOWEL_ENDING: Noun headword 'cikirihpiita' ends in a bare vowel 'a', expected to end in 'ʔ'.
+  [WARNING] SK-ckariitki-p30-0470 | GEMINI_NOUN_BARE_VOWEL_ENDING: Noun headword 'ckariitki' ends in a bare vowel 'i', expected to end in 'ʔ'.
+  [WARNING] SK-ckarucki-p30-0471 | GEMINI_NOUN_BARE_VOWEL_ENDING: Noun headword 'ckarucki' ends in a bare vowel 'i', expected to end in 'ʔ'.
+  [WARNING] SK-ckataahisiku-p30-0473 | GEMINI_NOUN_BARE_VOWEL_ENDING: Noun headword 'ckataahisiku' ends in a bare vowel 'u', expected to end in 'ʔ'.
+  [WARNING] SK-ckiiri-p30-0474 | GEMINI_NOUN_BARE_VOWEL_ENDING: Noun headword 'Ckiiri' ends in a bare vowel 'i', expected to end in 'ʔ'.
+  [WARNING] SK-ckiisaakaratawaa-p30-0476 | GEMINI_NOUN_BARE_VOWEL_ENDING: Noun headword 'ckiisaakaratawaa' ends in a bare vowel 'aa', expected to end in 'ʔ'.
+  [WARNING] SK-ckiiskararii-p30-0478 | GEMINI_NOUN_BARE_VOWEL_ENDING: Noun headword 'ckiiskararii' ends in a bare vowel 'ii', expected to end in 'ʔ'.
+  [WARNING] SK-ckipis_raawarii-p30-0481 | GEMINI_NOUN_ENDS_IN_BARE_VOWEL: Noun headword 'ckipis raawarii' ends in a bare vowel 'ii'. Expected to end in 'ʔ' or a consonant.
+  [WARNING] SK-ckirihki-p30-0485 | GEMINI_NOUN_ENDS_IN_BARE_VOWEL: Noun headword 'ckirihki' ends in a bare vowel 'i'. Expected to end in 'ʔ' or a consonant.
+  [WARNING] SK-ckirihki_kuuruuriki-p30-0486 | GEMINI_NOUN_ENDS_IN_BARE_VOWEL: Noun headword 'Ckirihki Kuuruuriki' ends in a bare vowel 'i'. Expected to end in 'ʔ' or a consonant.
+  ... and 420 more
+
+PRIORITIZED FIX LIST
+------------------------------------------------------------
+Priority 1 (Errors — data integrity):
+  INVALID_PHONETIC_CHAR: 22 entries
+
+Priority 2 (Warnings — data quality):
+  NOUN_MISSING_GLOTTAL: 328 entries
+  EMPTY_PHONETIC: 28 entries
+  CONSONANT_SKELETON_MISMATCH: 259 entries
+
+Priority 3 (Info — completeness):
+  MISSING_VERB_CLASS: 553 entries
+  NO_PARADIGMATIC_FORMS: 1 entries
+  MISSING_OPEN_BRACKET: 65 entries
+  MISSING_CLOSE_BRACKET: 65 entries

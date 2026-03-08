@@ -1,0 +1,64 @@
+========================================================================
+Noun Glottal Stop Verification — Phonetic Cross-Reference
+Generated: 2026-03-08T11:37:39.867773
+========================================================================
+
+SUMMARY
+----------------------------------------
+Total candidates:                      260
+
+LOCAL VERIFICATION (phonetic_form cross-reference):
+  OCR miss (phonetic has ʔ):             0
+  Confirmed correct (no ʔ in both):    257
+  Unverifiable (no phonetic_form):       3
+
+========================================================================
+OCR MISSES — CONFIRMED BY PHONETIC FORM (0 entries)
+Phonetic form ends in ʔ but headword does not.
+========================================================================
+
+========================================================================
+CONFIRMED CORRECT — NO FIX NEEDED (257 entries)
+Both headword and phonetic form lack final ʔ.
+========================================================================
+
+  SK-ahictarahaataakaa-p9-0089: ahictarahaataakaa | [à-hɪts-tə-rə-haa-taa-kaa]
+  SK-ahitki-p9-0097: ahitki | [ə-hít-kɪ]
+  SK-akahkaritki-p358-3665: akahkaritki | [à-kəh-kə-rɪt-kɪ]
+  SK-akahkiripahki-p358-3669: akahkiripahki | [ə-kəh-kí-rɪ-pəh-kɪ]
+  SK-akahwaahukasa-p358-3680: akahwaahukasa | [à-kəh-waa-hʊ-kə-sə]
+  SK-akahwaawaktiku-p358-3681: akahwaawaktiku | [à-kəh-waa-wək-tɪ-kʊ]
+  SK-akarahkata-p11-0114: akarahkata | [à-kə-rəh-ká-tə]
+  SK-ara-p360-3704: ara | [à-ra]
+  SK-arika-p13-0146: arika | [ə-rí-kə]
+  SK-arikta-p362-3716: arikta | [ə-rík-tə]
+  SK-asaaki-p362-3736: asaaki | [ə-saá-kɪ]
+  SK-asaakiripahki-p362-3739: asaakiripahki | [à-saa-kɪ-rɪ-pəh-kɪ]
+  SK-asahi-p363-3756: asahi | [ə-sà-hɪ]
+  SK-asataakaa-p363-3760: asataakaa | [ə-sà-taa-kaa]
+  SK-asawiita-p363-3765: asawiita | [ə-sà-wii-tə]
+  SK-asiikasa-p363-3770: asiikasa | [ə-sií-kə-sə]
+  SK-askaaqa-p363-3775: askaaʔa | [às-kaa-ʔə]
+  SK-askiisawihuku-p16-0167: askiisawihuku | [əs-kií-sə-wɪ-hʊ-kʊ]
+  SK-askiiskatawicaku-p16-0168: askiiskatawicaku | [às-kiis-kə-tə-wɪ-čə-kʊ]
+  SK-asku-raastawi-p16-0178: asku-raastawi | [əs-kʊ•raás-tə-wɪ]
+  SK-astawaa-p17-0197: astawaa | [às-tə-waa]
+  SK-atikawa-p19-0235: atikawa | [ə-tɪ-kà-wə]
+  SK-atiktaka-p19-0237: atiktaka | [ə-tɪk-tà-kə]
+  SK-awihuksahustahkata-p370-3791: awihuksahustahkata | [à-wɪ-hʊk-sə-hʊs-təh-kə-tə]
+  SK-caahiks-rararuuwarii-p26-0367: caahiks-rararuuwarii | [čaá-hɪks•rə-rə-ruu-wə-rii]
+  SK-caahikski-p26-0363: caahikski | [čaá-hɪks-kɪ]
+  SK-caakawiraarikitaahaku-p26-0378: caakawiraarikitaahaku | [čaá-kə-wɪ-raa-rɪ-kɪ-taa-hə-kʊ]
+  SK-caatki-p27-0392: caatki | [čaát-kɪ]
+  SK-cahuuki-p27-0401: cahuuki | [čə-huː-kɪ]
+  SK-capaaraqu-p28-0409: capaaraʔu | [čə-paá-rə-ʔu]
+  ... and 227 more
+
+========================================================================
+STILL UNVERIFIABLE (3 entries)
+No phonetic form, Gemini not run or could not classify.
+========================================================================
+
+  SK-asaarahkata-p362-3745: No phonetic_form available
+  SK-piikawaa-p460-4081: No phonetic_form available
+  SK-rakaraaracaahisiku-p134-2621: No phonetic_form available
