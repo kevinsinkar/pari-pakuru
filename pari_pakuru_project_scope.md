@@ -19,7 +19,9 @@ Build a comprehensive Skiri Pawnee language preservation tool: a searchable, lin
 
 | File | Entries | Status |
 |------|---------|--------|
-| `skiri_to_english_linked.json` | 4,273 | **CURRENT** — normalized, IPA phonetics synced from E2S, entry_id assigned |
+| `skiri_to_english_respelled.json` | 4,273 | **CURRENT** — normalized, IPA synced, OCR fixed, `simplified_pronunciation` + `normalized_form` populated |
+| `skiri_to_english_fixed.json` | 4,273 | Intermediate — OCR fixes applied, pre-respelling |
+| `skiri_to_english_linked.json` | 4,273 | Linked + IPA synced (pre-fix, pre-respelling) |
 | `english_to_skiri_linked.json` | 6,414 | **CURRENT** — normalized, s2e_entry_id linked to S2E entries |
 | `skiri_to_english_normalized.json` | 4,273 | Normalized OCR artifacts, pre-linking |
 | `english_to_skiri_normalized.json` | 6,414 | Normalized OCR artifacts, pre-linking |
@@ -158,109 +160,63 @@ Also strips whitespace from `phonetic_form` fields. Preserves `•` syllable dot
 - 362 unmatched (mostly parsing artifacts like "(see cross-reference)")
 - 3,925 S2E phonetic forms updated with IPA
 
+### ✅ Phase 1.1c — Pronunciation Respelling + Orthographic Normalization
+**Scripts:** `scripts/respell_and_normalize.py`, `scripts/fix_priority_issues.py`
+**What it does:**
+1. Generates `simplified_pronunciation` field: IPA `phonetic_form` → learner-friendly English respelling
+2. Generates `normalized_form` field: headword → learner orthography with circumflex long vowels, č, '
+
+**Vowel mapping (source: Parks Sound Key p. xvii + Blue Book pp. xvii–xxi):**
+
+| Pawnee | English Comparison | Respelling |
+|--------|-------------------|------------|
+| `a` (short) | "putt" / "above" | `uh` |
+| `aa` (long) | "father" | `ah` |
+| `i` (short) | "pit" | `ih` |
+| `ii` (long) | "weed" / "machine" | `ee` |
+| `u` (short) | "push" | `oo` |
+| `uu` (long) | "rude" | `oo` |
+| `ɪ`, `ʊ`, `ə` | IPA reduced vowels | `ih`, `oo`, `uh` |
+
+**Consonant mapping:** `r` → `d` (BB: "a very soft d"), `c` → `ts`, `č` → `ch`, `ʔ` → `'`, all others pass through.
+
+**Normalization rules (Skiri words only):** `aa` → `â`, `ii` → `î`, `uu` → `û`, `c` → `č` (when phonetic form confirms /tʃ/), `ʔ` → `'`.
+
+**Edge cases handled:** comma-separated variants, preverb notation `(ʊt...)`, optional sounds `(h)`/`(r)`, IPA length mark `ː`, null morpheme `Ø`, prefix notation `[+raar-]`, alternation markers `{k/t}`.
+
+**Results:**
+- 4,272/4,273 entries with `simplified_pronunciation` (1 entry has no phonetic form)
+- 4,273/4,273 entries with `normalized_form`
+- 53 `c`/`č` disambiguation mismatches flagged for review (count mismatch between headword and phonetic)
+
+**Also applied (`fix_priority_issues.py`):** 6 additional OCR corrections missed by Phase 1.1a (`÷`→`ː`, `ˆ`→`ɪ`, `‹`→`ʊ`, `Ò`→`a`, `ç`→`ʔ`, `ø`→`ː`), plus ~111 non-IPA phonetic form stubs nulled (`[cross-referenceonly]`, `NOT_PROVIDED`, `N/A`, `Seeentryfor'...'`, `[notprovided]`).
+
+### ✅ Phase 1.1d — Parsing Completeness Audit
+**Scripts:** `scripts/audit_entries.py`, `scripts/generate_review_list.py`, `scripts/verify_glottal_from_phonetic.py`
+**What it does:** Validates every S2E entry (and optionally E2S) for data quality. Local rule-based checks + optional Gemini AI batch validation.
+
+**Local checks performed:**
+- Field presence: headword, phonetic_form, grammatical_class, glosses
+- Phonetic character validation: flag non-IPA characters post-normalization
+- Noun glottal stop check: nouns ending in vowel without `ʔ`, triaged by N/N-KIN/N-DEP/proper noun
+- Consonant skeleton consistency: headword ↔ phonetic_form, with c↔ts normalization, optional sound inclusion, alternation marker resolution, glottal absorption handling
+- Verb class presence (suppressed for VD descriptive verbs — by design in Parks)
+- Multi-class grammatical entries validated per-component (e.g., `VT, VR`)
+
+**Gemini AI validation:** Batch validation (20 entries/batch) with checkpointing for resume. System prompt is Pawnee-linguistics-aware (knows Parks notation, c↔ts equivalence, noun suffix patterns).
+
+**Noun glottal stop resolution:** Cross-referenced phonetic_form endings against headword endings for 260 common noun candidates. Result: 0 OCR misses, 257 confirmed correct (phonetic form also lacks final ʔ), 3 unverifiable (no phonetic form). The headwords are correct as-is.
+
+**Final audit numbers (post all fixes):**
+- 640 total flags (down from 2,005 initial)
+- 81 by-design (proper noun/kinship glottal, VD verb class)
+- 12 skeleton mismatches remaining (headword notation edge cases: prefix markers, null preverbs)
+- 260 noun glottal candidates: all verified correct via phonetic cross-reference
+- 2 residual INVALID_PHONETIC_CHAR (minor stragglers)
+
 ---
 
 ## Todo: Remaining Work
-
-### 🔲 Phase 1.1c — Pronunciation Respelling + Orthographic Normalization
-**Priority:** High
-**Depends on:** Phase 1.1a, 1.1b (normalized + IPA-synced phonetic forms)
-**Effort:** Medium
-
-Two new fields derived from `phonetic_form` and `headword`:
-
-#### 1. `simplified_pronunciation` — Learner-Friendly English Respelling
-**Source:** IPA `phonetic_form` field
-**Purpose:** Give English-speaking learners an intuitive pronunciation guide
-
-Build a deterministic converter: IPA `phonetic_form` → hyphenated English respelling.
-
-**Vowel mapping:**
-
-| Pawnee | Parks Sound Key (p. xvii) | Blue Book (p. xvii–xxi) | Respelling |
-|--------|--------------------------|-------------------------|------------|
-| `a` (short) | "putt" (/ʌ/) | "above" (/ə/); "even though `a` often sounds like the `u` in English *mud*" | `uh` |
-| `aa` (long) | "father" (/ɑː/) | "father" | `ah` |
-| `i` (short) | "pit" (/ɪ/) | "hit" | `ih` |
-| `ii` (long) | "weed" (/iː/) | "machine" | `ee` |
-| `u` (short) | "boot" (/uː/) | "push" (/ʊ/); "lips are pursed or rounded as in *prune* or *push*" | `oo` |
-| `uu` (long) | "rude" (/uː/) | "ruler" | `oo` |
-| `ɪ` (IPA) | — | — (Parks IPA for short i quality) | `ih` |
-| `ʊ` (IPA) | — | — (Parks IPA for short u quality) | `oo` |
-| `ə` (IPA) | — | — (Parks IPA for schwa/reduced a) | `uh` |
-
-**Note:** Short `u` ("push"/ʊ) vs long `uu` ("rude"/uː) differ in quality, but both map to `oo` in the respelling. Length distinction is not captured in simplified pronunciation — both sound "oo"-like to English ears.
-
-**Consonant mapping:**
-
-| Pawnee | Parks Sound Key | Blue Book | Respelling |
-|--------|----------------|-----------|------------|
-| `r` | "Spanish *pero*" (tapped r) | "*steady*"; "a very soft d"; "a fast d as in *ready*, but softer" | `d` |
-| `c` | "patch and cents" | `ts` = "catsup" | `ts` |
-| `č` | (same phoneme as `c` in IPA) | "often pronounced almost like English *ch* in *church*, especially when it begins a syllable which is not the last syllable of a word" | `ch` |
-| `ʔ` | "uh-uh" (glottal stop) | "co-operate" (voice stop); "a stopping of the voice in the voice box" | `'` |
-| `p` | "spot" (unaspirated) | "spin" | `p` |
-| `t` | "stop" (unaspirated) | "start" | `t` |
-| `k` | "skate" (unaspirated) | "skin" | `k` |
-| `s` | "sit" | "super" | `s` |
-| `w` | "wall" | "watch"; "the same as the vowel u" | `w` |
-| `h` | "hit" | "harm"; silent in SK after `r` (`hr` → `h`) | `h` |
-
-**Structural rules:**
-- Syllable dot `•` → `-` (hyphen) in respelling
-- Accented syllables (á, í, ú) → UPPERCASE in respelling
-- Strip brackets `[` `]` and stem boundary markers `–`
-
-**Examples:**
-- `[•rə-hʊh-kaa-paa-kɪs•]` → `duh-HOOh-kah-pah-kihs`
-- `[•paa-ʔə-tʊʔ•]` → `pah-'uh-too'`
-
-**Validation note:** Blue Book parenthesized pronunciations (e.g., `(pa-ri-su')` for `paresu'`) use Pawnee orthographic letters, *not* English approximations. So validation against Blue Book should compare **syllable boundaries** and **vowel length marking**, not letter-for-letter mappings.
-
-#### 2. `normalized_form` — Orthographic Normalization of Skiri Words
-**Source:** `headword` field, cross-referenced with `phonetic_form` for č disambiguation
-**Purpose:** Produce a standardized, learner-readable Skiri spelling that preserves morphological structure while simplifying diacritics
-
-**Normalization rules (Skiri words only — English glosses/definitions unchanged):**
-- Convert long vowels to circumflex: `aa` → `â`, `ii` → `î`, `uu` → `û` (and uppercase: `AA` → `Â`, `II` → `Î`, `UU` → `Û`)
-- Convert `c` → `č` **only** when the corresponding `phonetic_form` shows /tʃ/ (i.e., the IPA `č`). When the phonetic form shows /ts/ (plain `c`), leave as `c`.
-- Convert glottal stop: `ʔ` → `'` (apostrophe)
-- All other characters pass through unchanged
-
-**Examples:**
-- `kawiirasiira` → `kawîrasîra`
-- `karuurasuciraaʔuu` → `karûrasučirâ'û` (the `c` before `i` becomes `č` because phonetic form shows /tʃ/)
-- `paaʔatuʔ` → `pâ'atu'`
-- `cikic` → `cikic` (stays `c` if phonetic form confirms /ts/ for both)
-
-**Implementation notes:**
-- The `c` → `č` decision requires inspecting the IPA `phonetic_form` for each entry. Where the phonetic form contains `č`, the corresponding `c` in the headword maps to `č`. Where it contains plain `c`, it stays `c`.
-- For entries without a phonetic_form, flag for manual review rather than guessing.
-
-#### Tasks
-- [ ] Build respelling engine (local, no API) for `simplified_pronunciation`
-- [ ] Build normalization engine for `normalized_form`
-- [ ] Implement `c`/`č` disambiguation by cross-referencing phonetic_form
-- [ ] Handle edge cases: alternation markers `{k/t}`, preverb notation `(ut...)`, whispered vowels (Blue Book p. xxi: "pronounced very softly, without using the voice, only the breath" — after hard consonants and accented syllables at word-end)
-- [ ] Handle `ts`/`c` → `ch` variant: Blue Book notes `ts` sounds like *ch* "whenever it begins a syllable which is not the last syllable of a word" — decide whether respelling should reflect this allophonic rule or keep `ts` uniformly
-- [ ] Run across all S2E entries, populate both new fields
-- [ ] Validate `simplified_pronunciation` syllable boundaries against Blue Book parenthesized forms (e.g., `paresu'` → `(pa-ri-su')`)
-- [ ] Generate report: entries with unknown characters (`?x?` markers), entries missing phonetic_form, `c`/`č` disambiguation failures
-
-### 🔲 Phase 1.1d — Parsing Completeness Audit
-**Priority:** High
-**Depends on:** Phase 1.1a
-**Effort:** Medium
-
-Use Gemini API (env var `GEMINI_API_KEY`) as an agent to validate entries against source page PDFs.
-
-Tasks:
-- [ ] Local field validation: check every entry for empty headwords, phonetic forms, grammatical class, glosses
-- [ ] Phonetic character validation: flag any chars not in the valid IPA set post-normalization
-- [ ] Noun glottal stop check: nouns ending in vowel without `ʔ` → possible OCR miss
-- [ ] AI batch validation (Gemini): send batches of 20 entries, check phonetic↔headword consistency
-- [ ] Generate audit report with flag counts and prioritized fix list
-- [ ] Checkpointing for resume after interruption
 
 ### 🔲 Phase 1.2 — Database Schema
 **Priority:** Medium
@@ -297,23 +253,48 @@ Tasks:
 - [ ] Store tags on entries (new `semantic_tags` array field)
 - [ ] Blue Book lessons as category source (Lesson 8 = animals/housing, Lesson 5 = body parts, etc.)
 
-### 🔲 Phase 2.2 — Blue Book Cross-Verification
-**Priority:** Medium
-**Depends on:** Phase 1.1b (linked data)
-**Effort:** Large
+### ✅ Phase 2.2 — Blue Book Cross-Verification
+**Script:** `scripts/blue_book_verify.py`
+**What it does:**
+1. Parses Blue Book text (`pari pakuru/Blue_Book_Pari_Pakuru.txt`) into 20 lesson chunks
+2. Sends each chunk to Gemini API (`gemini-2.5-flash`) to extract structured vocabulary
+3. Normalizes BB practical orthography → Parks linguistic orthography (ts→c, '→ʔ, etc.)
+4. Matches against dictionary via 3-tier: exact normalized → loose (no glottal/affricate) → prefix
+5. Writes results to `blue_book_attestations` table in SQLite
+6. Adds BB dialogue sentences as new `examples`
+7. Adds `blue_book_attested` column to `lexical_entries`
+8. Generates report at `reports/phase_2_2_blue_book.txt`
 
-Use the Blue Book (Pari Pakuru') as a verification corpus and example source.
+**Results (final, after follow-up improvements):**
+- 984 BB vocabulary items extracted (all 20 lessons, Lesson 20 split into 4 page-chunks)
+- 53 exact, 5 loose, 404 prefix, 4 verb-stem matches; 518 gaps
+- 88 new dialogue examples added to `examples` table
+- 83 dictionary entries attested (`blue_book_attested = 1`)
+- Gaps include: multi-word phrases, verb constructions, function words, loanwords (expected)
+- Normalization confirmed working: BB `ts`→Parks `c`, BB `'`→Parks `ʔ`
 
-Blue Book structure: 21 lessons with dialogues, vocabulary, grammar explanations, useful phrases. Pages are split as PDFs in `pari pakuru/Blue Book - Pari Pakuru - split/`. Text extraction in `Blue_Book_Pari_Pakuru.txt`.
+**Checkpoint files:** `bb_extraction_checkpoint.json`, `blue_book_extracted.json`
 
-Tasks:
-- [ ] Extract all Skiri words from Blue Book text with page numbers and English translations
-- [ ] Match Blue Book words to dictionary headwords
-- [ ] Compare Blue Book pronunciation (parenthesized forms like `(rak-ta-rih-ka-ru-kus)`) against dictionary phonetic forms
-- [ ] Populate `examples` array with attested Blue Book usage
-- [ ] Flag words in Blue Book not in dictionary (gaps)
-- [ ] Flag dictionary words with Blue Book attestation (high confidence)
-- [ ] Note Blue Book uses Pari Pakuru practical orthography vs. Parks linguistic orthography — reconciliation needed
+**Script features:**
+- `--rerun-failed`: clears empty checkpoint entries so failed lessons get re-extracted
+- `--clear-db`: wipes attestations table for clean re-import
+- `--match-only`: re-run matching stage only (no Gemini calls)
+- `--extract-only`: run Gemini extraction only (no DB import)
+- Large lessons (>6 pages) auto-split into page chunks (fixes Lesson 20 / epilogue)
+- 4-tier matching: exact normalized → loose → prefix → verb stem strip
+
+**Lesson 20 breakdown (pages 111–130, epilogue + glossary):**
+- Split into 4 chunks: p111-116 (35 entries), p117-122 (18 entries), p123-130 (0 — glossary only)
+- 58 total items, 33 matched (57%)
+
+**Optional follow-up: Pronunciation comparison (`scripts/bb_pronunciation_compare.py`):**
+- Extracts BB parenthetical pronunciation guides from raw text (12 found in lesson pages 29+)
+- OCR normalization: consonant+'d' → consonant+'a' (stress-dotted vowel artifact)
+- 3-pass parser: inline `word (pron) gloss`, column-block (table format), preceding-line
+- Long-vowel-folded matching + gloss-based fallback via `english_index`
+- 7 of 12 guides matched to Parks dictionary entries; all show "close/systematic" correspondence
+- Key finding: Parks `DUH` = BB `ra` (tapped r + short a); BB shortens long vowels (BB `hitu'` = Parks `hiituʔ`)
+- Report: `reports/phase_2_2_pronunciation.txt`
 
 ### 🔲 Phase 2.3 — Sound Change Rule Engine
 **Priority:** Medium-High
@@ -396,10 +377,19 @@ Guided interface: select person/action/object/tense → assembled Skiri sentence
 |--------|----------|---------|---------------|
 | `normalize_phonetic.py` | `scripts/` | Fix OCR artifacts across all fields | No |
 | `link_dictionaries.py` | `scripts/` | Link S2E↔E2S with shared IDs, sync IPA phonetics | No |
+| `fix_priority_issues.py` | `scripts/` | Phase 1.1a supplement: fix remaining OCR chars, null non-IPA stubs | No |
+| `respell_and_normalize.py` | `scripts/` | Generate `simplified_pronunciation` + `normalized_form` | No |
+| `audit_entries.py` | `scripts/` | Full data quality audit (local + optional Gemini) | Optional (GEMINI_API_KEY) |
+| `generate_review_list.py` | `scripts/` | Triage audit flags into actionable review list | No |
+| `verify_glottal_from_phonetic.py` | `scripts/` | Cross-reference phonetic_form to verify noun glottal stops | Optional (GEMINI_API_KEY) |
+| `test_phase_1_1.py` | `scripts/` | Test suite for 1.1c/1.1d engines (106 tests) | No |
 | `run_parser_e2s.py` | `scripts/` | Parse E2S dictionary pages | No |
 | `s2e_parser.py` | `scripts/` | Parse S2E dictionary pages | No |
 | `verify_with_gemini.py` | `scripts/` | Verify parsed entries with Gemini | Yes (GEMINI_API_KEY) |
 | `verify_with_claude.py` | `scripts/` | Verify parsed entries with Claude | Yes |
+| `tag_entries.py` | `scripts/` | Phase 2.1: semantic tag entries (rule-based + Gemini) | Optional (GEMINI_API_KEY) |
+| `blue_book_verify.py` | `scripts/` | Phase 2.2: Blue Book cross-verification — extract vocab, match to dictionary, populate examples | Yes (GEMINI_API_KEY) |
+| `bb_pronunciation_compare.py` | `scripts/` | Phase 2.2 follow-up: compare BB pronunciation guides with Parks simplified_pronunciation | No |
 
 ## Environment
 

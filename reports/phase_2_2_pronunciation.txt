@@ -1,0 +1,141 @@
+======================================================================
+PHASE 2.2 -- BLUE BOOK PRONUNCIATION COMPARISON
+Generated: 2026-03-08 20:32:49
+======================================================================
+
+BACKGROUND
+----------------------------------------
+The Blue Book uses parenthetical pronunciation guides with hyphenated
+syllables. OCR captured stress-dotted vowels as consonant+d sequences
+  e.g. 'rd' = tapped-r + stressed-a, 'pd' = p + stressed-a.
+
+Parks dictionary uses an English-phonemic approximation system:
+  "DUH-kihs" for rakis (wood). These are different notation systems.
+
+Known systematic correspondences:
+  Parks "DUH"  ~ BB "ra"  (tapped r + short a)
+  Parks "dih"  ~ BB "ri"  (tapped r + i)
+  Parks "ooh"  ~ BB "uu"  (long u)
+  Parks "ee"   ~ BB "ii"  (long i)
+  Parks "ih"   ~ BB "i"   (short i)
+  Parks "uh"   ~ BB "a"   (short a / schwa)
+
+SUMMARY
+----------------------------------------
+Total BB pronunciation guides found: 12  (lesson pages 29+)
+Guides matched to dictionary entry:  7
+With Parks simplified_pronunciation: 7
+
+Comparison results:
+  Exact match (after normalization): 0
+  Close / systematic correspondence: 7
+  Different:                         0
+  No Parks simplified_pron:          5
+
+DETAIL -- ALL PRONUNCIATION PAIRS
+----------------------------------------
+
+[-] p.35  BB word: "Pari'"
+         BB raw:   (pd-ri ')
+         BB clean: pa-ri '
+         Parks hw: (no match)                 simplified: (none)
+         Gloss: Pawnee
+         Notes: No Parks simplified_pronunciation available
+
+[~] p.35  BB word: "hitu '"
+         BB raw:   (hi-tu ')
+         Parks hw: hiituʔ                     simplified: HEE-too'
+         Gloss: feather
+         Notes: Same syllable count (2)
+
+[~] p.35  BB word: "raku'"
+         BB raw:   (ra-ku')
+         Parks hw: raakuʔ                     simplified: DAH-koo'
+         Gloss: box
+         Notes: Same syllable count (2)
+
+[~] p.35  BB word: "kitsu '"
+         BB raw:   (ki-tsu ')
+         Parks hw: kiicuʔ                     simplified: KEE-choo'
+         Gloss: liquid
+         Notes: Same syllable count (2)
+
+[~] p.35  BB word: 'rakis'
+         BB raw:   (rd-kis)
+         BB clean: ra-kis
+         Parks hw: rakis                      simplified: DUH-kihs
+         Gloss: wood
+         Notes: Same syllable count (2); Parks 'DUH' = BB 'ra' (tapped r + short a)
+
+[~] p.35  BB word: 'kiriks'
+         BB raw:   (ki-riks)
+         Parks hw: kiriks                     simplified: KIH-dihks
+         Gloss: bead
+         Notes: Same syllable count (2); Parks 'dih' = BB 'ri' (tapped r + i)
+
+[~] p.35  BB word: 'nawa'
+         BB raw:   (rd-wa)
+         BB clean: ra-wa
+         Parks hw: ra, raa                    simplified: duh / dah
+         Gloss: now
+         Notes: Syllable count: BB=2, Parks=1; Parks 'DUH' = BB 'ra' (tapped r + short a)
+
+[~] p.35  BB word: 'riwit'
+         BB raw:   (ri-wit)
+         Parks hw: riwit                      simplified: DIH-wiht
+         Gloss: skunk
+         Notes: Same syllable count (2); Parks 'dih' = BB 'ri' (tapped r + i)
+
+[-] p.36  BB word: '(unknown)'
+         BB raw:   (tit-ska-kd-to-sa)
+         BB clean: tit-ska-ka-to-sa
+         Parks hw: (no match)                 simplified: (none)
+         Gloss: *When two different vowels come together without a space bet-
+         Notes: No Parks simplified_pronunciation available
+
+[-] p.56  BB word: '(unknown)'
+         BB raw:   (tu-td-ri')
+         BB clean: tu-ta-ri'
+         Parks hw: (no match)                 simplified: (none)
+         Gloss: ti + ut + ari it is + for him + becoming
+         Notes: No Parks simplified_pronunciation available
+
+[-] p.58  BB word: '(unknown)'
+         BB raw:   (ti-rah-wha-ri')
+         Parks hw: (no match)                 simplified: (none)
+         Gloss: (we) Tat•kikat. I am crying.
+         Notes: No Parks simplified_pronunciation available
+
+[-] p.104  BB word: 'tiku•kskirawa'
+         BB raw:   (ti-kuks-ki-ra-wa )
+         BB clean: ti-kuks-ki-ra-wa
+         Parks hw: (no match)                 simplified: (none)
+         Gloss: tatutsiks•a•wahri'
+         Notes: No Parks simplified_pronunciation available
+
+
+UNMATCHED BB PRONUNCIATION GUIDES
+----------------------------------------
+(BB word could not be matched to a Parks dictionary entry)
+
+  p. 35  "Pari'"                         (pd-ri ')
+         cleaned: pa-ri '
+         gloss: Pawnee
+  p. 36  '(word unknown)'                (tit-ska-kd-to-sa)
+         cleaned: tit-ska-ka-to-sa
+         gloss: *When two different vowels come together without a space bet-
+  p. 56  '(word unknown)'                (tu-td-ri')
+         cleaned: tu-ta-ri'
+         gloss: ti + ut + ari it is + for him + becoming
+  p. 58  '(word unknown)'                (ti-rah-wha-ri')
+         gloss: (we) Tat•kikat. I am crying.
+  p.104  'tiku•kskirawa'                 (ti-kuks-ki-ra-wa )
+         cleaned: ti-kuks-ki-ra-wa
+         gloss: tatutsiks•a•wahri'
+
+LEGEND
+----------------------------------------
+[=] exact match after normalization (strip hyphens/apostrophes/spaces)
+[~] close / systematic correspondence (e.g., Parks DUH ~ BB ra)
+[!] different -- may indicate dialect variant or orthographic mismatch
+[-] no Parks simplified_pronunciation available for this entry

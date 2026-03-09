@@ -1,0 +1,720 @@
+======================================================================
+PHASE 2.2 — BLUE BOOK CROSS-VERIFICATION REPORT
+Generated: 2026-03-08 19:41:21
+======================================================================
+
+SUMMARY
+----------------------------------------
+Total BB vocabulary items extracted:  984
+  Matched (exact normalized):         53
+  Matched (loose / fuzzy):            5
+  Matched (prefix):                   404
+  Matched (verb stem):                4
+  Unmatched (gaps):                   518
+  Skipped (empty form):               0
+
+New examples added to DB:             88
+Dictionary entries with BB attestation: 83 / 4273 (1.9%)
+
+BY LESSON
+----------------------------------------
+  Lesson  1:  44 items,  26 matched (59%),  18 gaps
+  Lesson  2:  70 items,  44 matched (63%),  26 gaps
+  Lesson  3:   8 items,   2 matched (25%),   6 gaps
+  Lesson  4:   5 items,   4 matched (80%),   1 gaps
+  Lesson  5:  58 items,  25 matched (43%),  33 gaps
+  Lesson  6:  56 items,  24 matched (43%),  32 gaps
+  Lesson  7:  59 items,  30 matched (51%),  29 gaps
+  Lesson  8:  66 items,  30 matched (45%),  36 gaps
+  Lesson  9:  51 items,  19 matched (37%),  32 gaps
+  Lesson 10:  51 items,  17 matched (33%),  34 gaps
+  Lesson 11:  58 items,  26 matched (45%),  32 gaps
+  Lesson 12:  46 items,  16 matched (35%),  30 gaps
+  Lesson 13:  67 items,  34 matched (51%),  33 gaps
+  Lesson 14:  68 items,  37 matched (54%),  31 gaps
+  Lesson 15:  48 items,  24 matched (50%),  24 gaps
+  Lesson 16:  27 items,   7 matched (26%),  20 gaps
+  Lesson 17:  49 items,  29 matched (59%),  20 gaps
+  Lesson 18:  30 items,  14 matched (47%),  16 gaps
+  Lesson 19:  65 items,  25 matched (38%),  40 gaps
+  Lesson 20:  58 items,  33 matched (57%),  25 gaps
+
+GAPS — BB WORDS NOT IN PARKS DICTIONARY (518 total)
+----------------------------------------
+(These may be: loanwords, dialectal variants, short function words,
+ phrase components, or parsing/orthography differences)
+
+  p. 29 L 1 [BASIC_WORDS    ] "hitu '"                       = 'feather'
+  p. 29 L 1 [BASIC_WORDS    ] "raku'"                        = 'box'
+  p. 29 L 1 [BASIC_WORDS    ] "hawiu'"                       = 'picture'
+  p. 29 L 1 [BASIC_WORDS    ] "ti'"                          = 'this is'
+  p. 29 L 1 [BASIC_WORDS    ] "had'"                         = 'yes'
+  p. 30 L 1 [DIALOGUE       ] "Ti hitu '."                   = 'This is a feather.'
+  p. 30 L 1 [DIALOGUE       ] "Hau, ti hitu'."               = 'Yes, this is a feather.'
+  p. 30 L 1 [DIALOGUE       ] "Ti hitu '."                   = 'This is a feather.'
+  p. 30 L 1 [ADDITIONAL_WORDS] "riksu '"                      = 'arrow'
+  p. 30 L 1 [ADDITIONAL_WORDS] "reksu '"                      = 'ear of corn'
+  p. 30 L 1 [ADDITIONAL_WORDS] 'paisits'                      = 'nickel'
+  p. 30 L 1 [ADDITIONAL_WORDS] 'terisits'                     = 'dime'
+  p. 30 L 1 [ADDITIONAL_WORDS] 'tupits'                       = 'quarter'
+  p. 31 L 1 [GRAMMAR_EXAMPLE] "raku'"                        = 'box'
+  p. 31 L 1 [PHRASE         ] 'Nawa!'                        = 'Hello, okay, now.'
+  p. 32 L 1 [PHRASE         ] "Suks-paku'."                  = 'Say it.'
+  p. 32 L 1 [PHRASE         ] 'Ka?'                          = 'What?'
+  p. 32 L 1 [GRAMMAR_EXAMPLE] "Ti'."                         = 'It is. This is.'
+  p. 33 L 2 [BASIC_WORDS    ] 'ti pahaat'                    = "it's red"
+  p. 33 L 2 [BASIC_WORDS    ] 'ti tareus'                    = "it's blue"
+  p. 33 L 2 [BASIC_WORDS    ] 'ti takaa'                     = "it's white"
+  p. 33 L 2 [BASIC_WORDS    ] 'ti katiit'                    = "it's black"
+  p. 33 L 2 [BASIC_WORDS    ] 'ti kaats'                     = "it's grey"
+  p. 34 L 2 [GRAMMAR_EXAMPLE] "Ti kuru'ks•katit."            = "It's a black bear."
+  p. 35 L 2 [GRAMMAR_EXAMPLE] 'nawa'                         = 'now'
+  p. 35 L 2 [GRAMMAR_EXAMPLE] "Pari'"                        = 'Pawnee'
+  p. 35 L 2 [GRAMMAR_EXAMPLE] "hitu '"                       = 'feather'
+  p. 35 L 2 [GRAMMAR_EXAMPLE] "raku'"                        = 'box'
+  p. 35 L 2 [GRAMMAR_EXAMPLE] "Suks•paku'"                   = 'You (1) say it!'
+  p. 36 L 2 [GRAMMAR_EXAMPLE] "raku '"                       = 'box'
+  p. 36 L 2 [ADDITIONAL_WORDS] 'rutpatsat'                    = 'snake'
+  p. 36 L 2 [ADDITIONAL_WORDS] 'pa'                           = 'moon'
+  p. 36 L 2 [ADDITIONAL_WORDS] 'hupirit'                      = 'star'
+  p. 36 L 2 [ADDITIONAL_WORDS] 'ti katasa'                    = "it's against it"
+  p. 36 L 2 [ADDITIONAL_WORDS] 'ti•tska•katasa'               = "it's cloudy"
+  p. 37 L 2 [GRAMMAR_EXAMPLE] "hetu '"                       = 'breast'
+  p. 37 L 2 [GRAMMAR_EXAMPLE] "het•kitsu '"                  = 'milk'
+  p. 37 L 2 [GRAMMAR_EXAMPLE] "rasitu'"                      = 'ice'
+  p. 37 L 2 [GRAMMAR_EXAMPLE] 'ra .ha•pi'                    = 'tree or "it\'s wood standing"'
+  p. 38 L 2 [ADDITIONAL_WORDS] "Uhaiwu'"                      = 'Ohio River or "something\'s always floating down"'
+  p. 38 L 2 [PHRASE         ] 'Stiks .atku!'                 = 'You (1)* listen! (to one person)'
+  p. 38 L 2 [PHRASE         ] "Sisu'ks•atku!"                = 'You (2) listen!'
+  p. 38 L 2 [PHRASE         ] "Suksta'k•atku!"               = 'You (3+) listen!'
+  p. 38 L 2 [PHRASE         ] "Kitu su'ksta•paku'."          = 'All of you say it. (or, Say it together.)'
+  p. 39 L 3 [BASIC_WORDS    ] 'ti hak•tsa'                   = 'a log, any lying wood'
+  p. 39 L 3 [BASIC_WORDS    ] 'ti hak•tsa'                   = "it's wood lying"
+  p. 39 L 3 [BASIC_WORDS    ] 'hak +'                        = 'wood, tree'
+  p. 39 L 3 [BASIC_WORDS    ] 'ti wa• ku'                    = 'a mountain, hill'
+  p. 39 L 3 [BASIC_WORDS    ] 'ti wa• ku'                    = "it's a mound sitting"
+  p. 39 L 3 [BASIC_WORDS    ] 'wa +'                         = 'mound, hill, mountain'
+  p. 43 L 4 [BASIC_WORDS    ] '+ ra'                         = 'to have'
+  p. 49 L 5 [BASIC_WORDS    ] "kirfku'"                      = 'eye'
+  p. 49 L 5 [BASIC_WORDS    ] "hakau'"                       = 'mouth'
+  p. 49 L 5 [BASIC_WORDS    ] "tiku•raari'"                  = "it's hurting me"
+  p. 50 L 5 [DIALOGUE       ] 'Kiru rdspaks•ku?'             = 'Where is your head (sitting)?'
+  p. 50 L 5 [DIALOGUE       ] 'Kiru ras•kirik•ta?'           = 'Where is your eye (hanging)?'
+  p. 50 L 5 [DIALOGUE       ] "Tiku'ks•taari'."              = 'My hand hurts.'
+  p. 51 L 5 [GRAMMAR_EXAMPLE] "Tiku•paks•taari'."            = 'My head hurts.'
+  p. 51 L 5 [ADDITIONAL_WORDS] "usu'"                         = 'hair'
+  p. 51 L 5 [ADDITIONAL_WORDS] "rusu'"                        = 'buttocks'
+  p. 52 L 5 [ADDITIONAL_WORDS] "kskitsu '"                    = 'finger'
+  p. 52 L 5 [ADDITIONAL_WORDS] "kskits•kutsu'"                = 'thumb'
+  p. 52 L 5 [PHRASE         ] 'Siiks•at.'                    = 'You (1) go.'
+  p. 52 L 5 [PHRASE         ] 'Suks .at kusaksi.'            = 'Go left.'
+  p. 52 L 5 [PHRASE         ] "Suks•at pihkawf .hiri'."      = 'Go right.'
+  p. 52 L 5 [PHRASE         ] 'Sutsiks .sapita•hat.'         = 'Turn around.'
+  p. 52 L 5 [PHRASE         ] "Suks•paka-rihu'."             = 'Speak up (louder).'
+  p. 53 L 5 [GRAMMAR_EXAMPLE] "Tiku'ks•taa."                 = 'My hand has been hurt.'
+  p. 53 L 5 [GRAMMAR_EXAMPLE] "Tiku'ks•taari'."              = 'My hand is hurting.'
+  p. 53 L 5 [GRAMMAR_EXAMPLE] "Suks•paku'."                  = 'You (1) say it!'
+  p. 53 L 5 [GRAMMAR_EXAMPLE] "Sisuks•paku'."                = 'You (2) say it!'
+  p. 53 L 5 [GRAMMAR_EXAMPLE] "Suksta•pdku ' ."              = 'You (3+) say it.'
+  p. 53 L 5 [GRAMMAR_EXAMPLE] "Suks•paku'."                  = 'You (1) say it.'
+  p. 53 L 5 [GRAMMAR_EXAMPLE] 'Suks•pitit.'                  = 'You (1) sit down.'
+  p. 54 L 5 [GRAMMAR_EXAMPLE] 'Stiks•at.'                    = 'You (1) go (away).'
+  p. 54 L 5 [GRAMMAR_EXAMPLE] "Sisukspaku'."                 = 'You (2) say it.'
+  p. 54 L 5 [GRAMMAR_EXAMPLE] "Sitat•paku'."                 = 'We (2) have said it.'
+  p. 54 L 5 [GRAMMAR_EXAMPLE] 'Sisukspitit.'                 = 'You (2) sit down.'
+  p. 54 L 5 [GRAMMAR_EXAMPLE] 'Sitat .pitit.'                = 'We (2) have sat down.'
+  p. 54 L 5 [GRAMMAR_EXAMPLE] 'Sisuks .pa.'                  = 'You (2) go (away).'
+  p. 54 L 5 [GRAMMAR_EXAMPLE] 'Sitat•pa.'                    = 'We (2) have gone (away).'
+  p. 54 L 5 [GRAMMAR_EXAMPLE] "Suksta-paku'."                = 'You (3+) say it.'
+  p. 54 L 5 [GRAMMAR_EXAMPLE] 'Suksta•pitit.'                = 'You (3+) sit down.'
+  p. 54 L 5 [GRAMMAR_EXAMPLE] "Stiksta•pu'."                 = 'You (3+) go (away).'
+  p. 55 L 6 [BASIC_WORDS    ] "pirau'"                       = 'child'
+  p. 55 L 6 [BASIC_WORDS    ] "ti•wari'"                     = 'he is going about, is still living'
+  p. 55 L 6 [BASIC_WORDS    ] "t 'itka"                      = 'he is asleep'
+  p. 55 L 6 [BASIC_WORDS    ] "tut•ari '"                    = 'he is doing it'
+  p. 55 L 6 [BASIC_WORDS    ] "t 'ewasku"                    = 'he is laughing'
+  p. 56 L 6 [DIALOGUE       ] "Pita kirike rut•ari'?"        = 'What is the man doing?'
+  p. 56 L 6 [DIALOGUE       ] "Pita tiwari'."                = 'The man is going (walking) about.'
+  p. 56 L 6 [DIALOGUE       ] 'Pita ka ra•kikat?'            = 'Is the man crying?'
+  p. 56 L 6 [GRAMMAR_EXAMPLE] "tut•ari '"                    = "he 's making it or doing it"
+  p. 56 L 6 [GRAMMAR_EXAMPLE] 'ti + ut + ari'                = 'it is + for him + becoming'
+  p. 56 L 6 [ADDITIONAL_WORDS] "irari '"                      = 'friend, brother'
+  p. 56 L 6 [ADDITIONAL_WORDS] 'piraski'                      = 'boy'
+  p. 56 L 6 [ADDITIONAL_WORDS] 'witesatki'                    = 'male adolescent, "buck"'
+  p. 56 L 6 [ADDITIONAL_WORDS] 'tsuraki'                      = 'girl'
+  p. 56 L 6 [ADDITIONAL_WORDS] "tsurasu'"                     = 'female adolescent, maiden'
+  p. 56 L 6 [ADDITIONAL_WORDS] 'tsustit'                      = 'elderly woman'
+  p. 57 L 6 [ADDITIONAL_WORDS] "t'eku'h•taku'"                = 'he is playing'
+  p. 57 L 6 [ADDITIONAL_WORDS] "tut•a•wahri'"                 = "he's working"
+  p. 57 L 6 [ADDITIONAL_WORDS] "ti .raruku'"                  = "he 's singing"
+  p. 57 L 6 [PHRASE         ] "Siksut•tsa'"                  = 'You (1) stand up.'
+  p. 57 L 6 [PHRASE         ] "We rut•utsi•raru'."           = "That's all."
+  p. 57 L 6 [PHRASE         ] "TI'tskipi."                   = "He's sleepy."
+  p. 57 L 6 [PHRASE         ] "Tiku 'tskipi."                = "I'm sleepy."
+  p. 57 L 6 [GRAMMAR_EXAMPLE] "Ti .wari'."                   = 'He is walking about.'
+  p. 57 L 6 [GRAMMAR_EXAMPLE] "Siti .wari'."                 = 'They (2) are walking.'
+  p. 58 L 6 [GRAMMAR_EXAMPLE] 'sitat•kikat'                  = 'we (2) are crying'
+  p. 58 L 6 [GRAMMAR_EXAMPLE] 'sitas .kikat'                 = 'you (2) are crying'
+  p. 58 L 6 [GRAMMAR_EXAMPLE] "tiku'tskipi"                  = 'I am sleepy'
+  p. 58 L 6 [GRAMMAR_EXAMPLE] "sitiku'tskipi"                = 'we (2) are sleepy'
+  p. 58 L 6 [GRAMMAR_EXAMPLE] 'tikurak•itskipi'              = 'we (3+) are sleepy'
+  p. 58 L 6 [GRAMMAR_EXAMPLE] "sita'tskipi"                  = 'you (2) are sleepy'
+  p. 59 L 6 [GRAMMAR_EXAMPLE] 'Ti pahaat'                    = 'he is red or she is red or it is red'
+  p. 60 L 7 [BASIC_WORDS    ] "irari'"                       = 'my brother (of a man)'
+  p. 60 L 7 [BASIC_WORDS    ] "irari'"                       = 'my sister (of a woman)'
+  p. 60 L 7 [BASIC_WORDS    ] "itahri'"                      = 'my sister (of a man)'
+  p. 60 L 7 [BASIC_WORDS    ] "iratsti '"                    = 'my brother (of a woman)'
+  p. 61 L 7 [DIALOGUE       ] "Ti atira '."                  = "She's my mother."
+  p. 61 L 7 [ADDITIONAL_WORDS] 'hags'                         = 'your father'
+  p. 61 L 7 [ADDITIONAL_WORDS] 'tsuwat'                       = 'my daughter'
+  p. 61 L 7 [ADDITIONAL_WORDS] 'swat'                         = 'your niece, nephew'
+  p. 61 L 7 [ADDITIONAL_WORDS] 'raktiki'                      = 'my grandchild'
+  p. 62 L 7 [ADDITIONAL_WORDS] "ti .wari '"                   = "he's (still) getting around"
+  p. 62 L 7 [PHRASE         ] "T'at•atsfks•ta"               = 'I love you.'
+  p. 62 L 7 [PHRASE         ] "We t'at•atsfks•tat•at"        = 'I love her.'
+  p. 62 L 7 [PHRASE         ] 'We tat•uhure•hats.'           = "I'm ready."
+  p. 62 L 7 [PHRASE         ] "Nawa hfru'!"                  = 'Go ahead!'
+  p. 62 L 7 [PHRASE         ] 'Nawa niru!'                   = 'Go ahead!'
+  p. 62 L 7 [PHRASE         ] "Su'ksur•erit!"                = 'Stop!'
+  p. 62 L 7 [PHRASE         ] "Wfs kutsu'!"                  = 'Hurry!'
+  p. 62 L 7 [ADDITIONAL_WORDS] "hidsti '"                     = 'his father'
+  p. 62 L 7 [ADDITIONAL_WORDS] "hisdsti'"                     = 'his mother'
+  p. 62 L 7 [ADDITIONAL_WORDS] "hikdri'"                      = 'his grandmother'
+  p. 62 L 7 [ADDITIONAL_WORDS] "hipdkti'"                     = 'his grandfather'
+  p. 62 L 7 [ADDITIONAL_WORDS] "hiwdhri'"                     = 'his niece, nephew'
+  p. 62 L 7 [ADDITIONAL_WORDS] 'hiwdririks'                   = 'his uncle'
+  p. 63 L 7 [GRAMMAR_EXAMPLE] 'i ra•kti pita'                = 'that sitting man yonder'
+  p. 63 L 7 [GRAMMAR_EXAMPLE] "kti•ratiru paks-ktiku'"       = 'my hat'
+  p. 63 L 7 [GRAMMAR_EXAMPLE] "ktI rasiru paks•ktiku'"       = 'your hat'
+  p. 63 L 7 [GRAMMAR_EXAMPLE] "kti .ra•u paks•ktiku'"        = 'his hat'
+  p. 63 L 7 [GRAMMAR_EXAMPLE] 'ku +'                         = '"indefinite," used with possessive verbs'
+  p. 63 L 7 [GRAMMAR_EXAMPLE] 'to'                           = 'is'
+  p. 66 L 8 [BASIC_WORDS    ] "ti .raspe '"                  = "he's looking for it"
+  p. 66 L 8 [BASIC_WORDS    ] 'ti•huras'                     = 'he has found it'
+  p. 66 L 8 [BASIC_WORDS    ] "t'erit"                       = 'he is standing'
+  p. 66 L 8 [BASIC_WORDS    ] 'tuks•arit'                    = 'he was standing'
+  p. 66 L 8 [BASIC_WORDS    ] 'ti•hatuh•kaarit'              = 'he is standing around in the road'
+  p. 66 L 8 [BASIC_WORDS    ] 'tuks•hatuh•kaarit'            = 'he was standing around in the road'
+  p. 66 L 8 [BASIC_WORDS    ] "ti .kaku'"                    = "he's inside, was inside"
+  p. 66 L 8 [BASIC_WORDS    ] "ti•ukah•kawari '"             = 'he is or has been walking around outside'
+  p. 66 L 8 [BASIC_WORDS    ] 'ti .ukah .kaari t'            = 'he is or has been standing around outside'
+  p. 66 L 8 [DIALOGUE       ] "Kiru ruks•ku'?"               = 'Where was it (sitting)?'
+  p. 66 L 8 [DIALOGUE       ] "Ru tuks•kaku'."               = 'It was in the house.'
+  p. 66 L 8 [GRAMMAR_EXAMPLE] 'Suks .atku.'                  = 'Listen!'
+  p. 67 L 8 [GRAMMAR_EXAMPLE] 'Niru ruks•ku?'                = 'Where was it?'
+  p. 67 L 8 [GRAMMAR_EXAMPLE] 'ti .kikat'                    = 'he, she, it is crying'
+  p. 67 L 8 [GRAMMAR_EXAMPLE] "Tuks .kaku '."                = 'He was in the house.'
+  p. 68 L 8 [GRAMMAR_EXAMPLE] "hatur•raru'"                  = 'road'
+  p. 68 L 8 [GRAMMAR_EXAMPLE] 'ti•kaarit'                    = 'he is standing in it'
+  p. 68 L 8 [GRAMMAR_EXAMPLE] 'ti•hattih•kaarit'             = "he's standing in the road"
+  p. 68 L 8 [ADDITIONAL_WORDS] "papitsisu '"                  = 'metal, money, a dollar'
+  p. 68 L 8 [ADDITIONAL_WORDS] 'papitsis•pahat'               = 'penny'
+  p. 68 L 8 [ADDITIONAL_WORDS] 'paisits'                      = 'nickel'
+  p. 68 L 8 [ADDITIONAL_WORDS] 'teresits'                     = 'dime'
+  p. 68 L 8 [ADDITIONAL_WORDS] 'tupits'                       = 'quarter'
+  p. 68 L 8 [ADDITIONAL_WORDS] 'sikspits'                     = '75¢'
+  p. 69 L 8 [ADDITIONAL_WORDS] 'raku•kita'                    = 'fourteen'
+  p. 69 L 8 [ADDITIONAL_WORDS] 'sihuks•tarti .kita'           = 'fifteen'
+  p. 69 L 8 [ADDITIONAL_WORDS] "pitkti .ka•ke'"               = 'eighteen'
+  p. 69 L 8 [ADDITIONAL_WORDS] "pitau '"                      = 'twenty'
+  p. 69 L 8 [ADDITIONAL_WORDS] 'pitati .asku'                 = 'twenty-one'
+  p. 69 L 8 [PHRASE         ] 'Ka?'                          = 'What?'
+  p. 69 L 8 [PHRASE         ] "Ru tut•tsirau ' ."            = "That's right; Alright."
+  p. 69 L 8 [ADDITIONAL_WORDS] "tsktis•kakusu'"               = 'chair'
+  p. 69 L 8 [ADDITIONAL_WORDS] 'ru•kat•awi•riku'              = 'window, mirror'
+  p. 69 L 8 [ADDITIONAL_WORDS] "reka .kusu'"                  = 'door'
+  p. 69 L 8 [ADDITIONAL_WORDS] 'tuks•kata•ku hiri'            = 'It was (sitting) behind the door'
+  p. 69 L 8 [ADDITIONAL_WORDS] "ra•reka .kusu'"               = 'door'
+  p. 70 L 9 [BASIC_WORDS    ] "t 'ewari '"                   = 'it is flying about'
+  p. 70 L 9 [BASIC_WORDS    ] "ti•hawari'"                   = 'it is swimming, wading'
+  p. 70 L 9 [BASIC_WORDS    ] '+ha +'                        = 'in the water'
+  p. 70 L 9 [BASIC_WORDS    ] "ti•'isat"                     = 'it has disappeared'
+  p. 71 L 9 [BASIC_WORDS    ] 'ti•ka•isat'                   = 'it has disappeared into (woods, standing corn, buildings)'
+  p. 71 L 9 [BASIC_WORDS    ] 'ti•hu•isat'                   = 'he went home'
+  p. 71 L 9 [BASIC_WORDS    ] '+hu +'                        = 'it has sunk (beneath) a surface'
+  p. 71 L 9 [BASIC_WORDS    ] "tu'h•kuksas"                  = 'he ran away'
+  p. 71 L 9 [DIALOGUE       ] "Kirti ra•'at rikutski?"       = 'Where has the bird gone?'
+  p. 71 L 9 [DIALOGUE       ] 'Ti•kaisat.'                   = 'It flew into the woods.'
+  p. 71 L 9 [ADDITIONAL_WORDS] 'retahkats'                    = 'eagle'
+  p. 71 L 9 [ADDITIONAL_WORDS] 'rahrurahki'                   = 'deer, large mammal'
+  p. 71 L 9 [ADDITIONAL_WORDS] 'tspirarus'                    = 'housefly'
+  p. 71 L 9 [ADDITIONAL_WORDS] 'tskurahkeks'                  = 'frog'
+  p. 71 L 9 [GRAMMAR_EXAMPLE] "ti•hu'at"                     = 'he has gone on the water (to go on a surface)'
+  p. 71 L 9 [GRAMMAR_EXAMPLE] "ti•hu•kata'at"                = 'he has crossed (the stream)'
+  p. 72 L 9 [GRAMMAR_EXAMPLE] "t 'ewi 'at"                   = 'he has jumped'
+  p. 72 L 9 [GRAMMAR_EXAMPLE] "tut .awi'at"                  = 'he has jumped over'
+  p. 72 L 9 [GRAMMAR_EXAMPLE] 'ra .hak•tsa'                  = 'a log, the log'
+  p. 72 L 9 [GRAMMAR_EXAMPLE] 'ti hak•tsa'                   = "that's a log"
+  p. 72 L 9 [GRAMMAR_EXAMPLE] "Rahurahki we tut•awi 'at Karit•kutsu'." = 'The deer jumped over the big rock.'
+  p. 72 L 9 [GRAMMAR_EXAMPLE] 'Ti pahaat rikutski.'          = 'The bird is red.'
+  p. 73 L 9 [GRAMMAR_EXAMPLE] 'Pita ti•kuwutit rahurahki pitsikat.' = 'The man killed a deer , in the winter.'
+  p. 73 L 9 [PHRASE         ] 'Kiru ras•at'                  = 'Where are you going?'
+  p. 73 L 9 [PHRASE         ] 'We tat•ka•isat'               = "I'm going home now."
+  p. 73 L 9 [PHRASE         ] "Siks a'."                     = 'Come here.'
+  p. 73 L 9 [PHRASE         ] 'Wis.'                         = 'Hurry.'
+  p. 73 L 9 [PHRASE         ] "We tatir•a ' ."               = "I'm coming."
+  p. 73 L 9 [BASIC_WORDS    ] 'Hawit'                        = 'East'
+  p. 73 L 9 [BASIC_WORDS    ] 'Hatskat'                      = 'West'
+  p. 73 L 9 [BASIC_WORDS    ] "Hiri Ra•ka•hurah•katiit•u'"   = 'North'
+  p. 73 L 9 [BASIC_WORDS    ] 'Hiri Ra•saka•ku'              = 'South'
+  p. 74 L10 [BASIC_WORDS    ] "paresu '"                     = 'hunter'
+  p. 74 L10 [BASIC_WORDS    ] 'pawa'                         = 'farmer'
+  p. 74 L10 [BASIC_WORDS    ] "pitarau '"                    = 'husband'
+  p. 74 L10 [BASIC_WORDS    ] "ti•taka•asiku '"              = "he's shooting"
+  p. 74 L10 [BASIC_WORDS    ] 'ti•taka•asit'                 = 'he has shot'
+  p. 74 L10 [BASIC_WORDS    ] "ti•hih•katsaku '"             = "she's chopping weeds"
+  p. 75 L10 [BASIC_WORDS    ] "raharisu'"                    = 'hoe'
+  p. 75 L10 [BASIC_WORDS    ] 'ti teriwis'                   = "it's cross-ways"
+  p. 75 L10 [DIALOGUE       ] "Paresu kirike rut•ari '?"     = 'What is the hunter doing?'
+  p. 75 L10 [DIALOGUE       ] "Paresu ti•taka•asiku'."       = 'The hunter is shooting.'
+  p. 75 L10 [DIALOGUE       ] "Paresu tuh•ra' tiraku ' ."    = 'The hunter is using a rifle.'
+  p. 75 L10 [DIALOGUE       ] "paresu '"                     = 'hunter'
+  p. 75 L10 [GRAMMAR_EXAMPLE] "ti .ari'"                     = 'he is becoming'
+  p. 75 L10 [GRAMMAR_EXAMPLE] 'ti +ut +ari'                  = 'he +for it +becomes'
+  p. 75 L10 [GRAMMAR_EXAMPLE] "tut•ari '"                    = 'he is doing it, making it'
+  p. 75 L10 [GRAMMAR_EXAMPLE] 'ti .ra'                       = 'he has it'
+  p. 75 L10 [GRAMMAR_EXAMPLE] 'ti +ur +ra'                   = 'he +for that (purpose) +has it'
+  p. 75 L10 [GRAMMAR_EXAMPLE] "tuh•ra'"                      = 'he is using it'
+  p. 76 L10 [ADDITIONAL_WORDS] "pawaktiku'"                   = 'preacher'
+  p. 76 L10 [ADDITIONAL_WORDS] "het•kata'ku"                  = 'sheriff, office of the law'
+  p. 76 L10 [ADDITIONAL_WORDS] "ti•kuwtitiku'"                = "judge, 'says it one time'"
+  p. 76 L10 [ADDITIONAL_WORDS] 'ti .kuwutit'                  = 'he is killing it'
+  p. 76 L10 [ADDITIONAL_WORDS] "ti•kawutiku'"                 = 'he (has) killed it'
+  p. 76 L10 [ADDITIONAL_WORDS] "ti•wa'ktiku'"                 = 'he is killing them (here and there)'
+  p. 76 L10 [ADDITIONAL_WORDS] 'uruksas'                      = 'lance, spear'
+  p. 76 L10 [ADDITIONAL_WORDS] "rahi•kutsu'"                  = 'brave'
+  p. 76 L10 [ADDITIONAL_WORDS] "resaru'"                      = 'chief, leader'
+  p. 76 L10 [ADDITIONAL_WORDS] "rehkit•awiu'"                 = 'chairman'
+  p. 76 L10 [ADDITIONAL_WORDS] 'ti•hirasa'                    = "he's first, he's the leader."
+  p. 76 L10 [GRAMMAR_EXAMPLE] "paresu '"                     = 'hunter'
+  p. 77 L10 [GRAMMAR_EXAMPLE] "pare'ku'"                     = 'horn'
+  p. 77 L10 [PHRASE         ] "Ra kitu'."                    = 'Altogether.'
+  p. 77 L10 [PHRASE         ] 'Suks•kata .hat!'              = 'Get out of the way!'
+  p. 77 L10 [PHRASE         ] 'Suks•taka•hat!'               = 'Get off (out)!'
+  p. 78 L11 [BASIC_WORDS    ] 'tiku•kiktit'                  = "I'm thirsty"
+  p. 78 L11 [BASIC_WORDS    ] 'tiku•hatstahis'               = "I'm thirsty"
+  p. 78 L11 [BASIC_WORDS    ] 'tuh•tahare'                   = 'it tastes good'
+  p. 78 L11 [BASIC_WORDS    ] 'tuh•kaharawere'               = 'it smells good'
+  p. 79 L11 [DIALOGUE       ] "Ilan', tiku•ratsaus."         = "Yes, I'm hungry."
+  p. 79 L11 [ADDITIONAL_WORDS] 'tuks•kaharurit'               = 'he smelled it'
+  p. 79 L11 [ADDITIONAL_WORDS] 'tut•kirahkata'                = "he's drunk (full of whiskey)"
+  p. 79 L11 [ADDITIONAL_WORDS] "tut•atsiks•u'"                = "he's drunk (he's feeling it)"
+  p. 79 L11 [ADDITIONAL_WORDS] "tihr'a:kawahtsu'"             = 'they are eating'
+  p. 79 L11 [ADDITIONAL_WORDS] "tihr'a•kawahtsista'"          = "they 're going to eat"
+  p. 79 L11 [ADDITIONAL_WORDS] "ha .kawahtsisu '"             = 'food'
+  p. 79 L11 [ADDITIONAL_WORDS] "6u'"                          = 'mush'
+  p. 79 L11 [ADDITIONAL_WORDS] 'kisatski'                     = 'meat'
+  p. 79 L11 [ADDITIONAL_WORDS] "rekitsu'"                     = 'sugar'
+  p. 79 L11 [ADDITIONAL_WORDS] "rekits•tiwiru'"               = 'candy'
+  p. 79 L11 [ADDITIONAL_WORDS] 'patsuka'                      = 'turnips'
+  p. 79 L11 [ADDITIONAL_WORDS] 'its'                          = 'potatoes'
+  p. 79 L11 [ADDITIONAL_WORDS] "rikisu'"                      = 'corn'
+  p. 79 L11 [ADDITIONAL_WORDS] 'ra•kits•katit'                = 'coffee'
+  p. 80 L11 [ADDITIONAL_WORDS] "ripiku '"                     = 'eggs'
+  p. 80 L11 [ADDITIONAL_WORDS] "wusu '"                       = 'suds'
+  p. 80 L11 [PHRASE         ] "Ketard .pu'!"                 = "Let's (3+) go!"
+  p. 80 L11 [PHRASE         ] "Tuhtira•pu'!"                 = "Let's (3+) go now!"
+  p. 80 L11 [PHRASE         ] 'Ketsih .wa.'                  = "Let's (2, you and I) go."
+  p. 80 L11 [PHRASE         ] 'Tuhurak•a .kawats!'           = "Let's (3+) eat!"
+  p. 80 L11 [PHRASE         ] 'Suks•kits karihats!'          = 'Drink up!'
+  p. 80 L11 [PHRASE         ] "Stiks•kika'."                 = 'Drink it.'
+  p. 80 L11 [PHRASE         ] "Kesku•'ti kait."              = 'Give me salt.'
+  p. 80 L11 [PHRASE         ] 'Sikstar•ru•a kait.'           = 'Pass the salt (grains).'
+  p. 80 L11 [PHRASE         ] 'Siks•tu•a kait.'              = 'Pass the salt. (shaker)'
+  p. 80 L11 [PHRASE         ] 'We tat•ka•wakit.'             = "I'm full."
+  p. 81 L11 [GRAMMAR_EXAMPLE] 'We tatuks•at.'                = 'I went (then) (or, I had gone)'
+  p. 82 L12 [BASIC_WORDS    ] 'stiks•u'                      = 'give it to him'
+  p. 82 L12 [BASIC_WORDS    ] 'stiruks•tat'                  = 'take it from him'
+  p. 82 L12 [BASIC_WORDS    ] 'suks•tapu'                    = 'buy it'
+  p. 82 L12 [BASIC_WORDS    ] 'rtiruks•tapu'                 = 'sell it (let him buy it)'
+  p. 82 L12 [BASIC_WORDS    ] '(we) tiku•rapu'               = 'I sold it'
+  p. 82 L12 [BASIC_WORDS    ] "kesku•'u"                     = 'give it to me'
+  p. 83 L12 [DIALOGUE       ] "Suks•u rekits•tiwiru'."       = 'Give him the candy.'
+  p. 83 L12 [DIALOGUE       ] "Rekits•tiwiru' we tat•u."     = 'I have given him the candy.'
+  p. 83 L12 [ADDITIONAL_WORDS] 'tdt•huras'                    = 'I found it'
+  p. 83 L12 [ADDITIONAL_WORDS] 'tut .stakis'                  = "he's a miser"
+  p. 83 L12 [ADDITIONAL_WORDS] 'ti kapakis'                   = "he's poor"
+  p. 83 L12 [ADDITIONAL_WORDS] "ti witstI rihu'"              = "it's expensive"
+  p. 83 L12 [PHRASE         ] "T'ewitsu asku."               = 'It costs a dollar.'
+  p. 83 L12 [PHRASE         ] 'Ketuh•kusit asku.'            = 'Lend me a dollar.'
+  p. 83 L12 [PHRASE         ] 'Ketuh•kusit papitsisu kitu.'  = 'Lend me a dollar.'
+  p. 84 L12 [GRAMMAR_EXAMPLE] 'Suks-at.'                     = 'Go!'
+  p. 84 L12 [GRAMMAR_EXAMPLE] 'Ktisti•at'                    = 'Let me go.'
+  p. 84 L12 [GRAMMAR_EXAMPLE] "Su'ks•at."                    = 'You (1) go. Go!'
+  p. 84 L12 [GRAMMAR_EXAMPLE] 'Rtiruks•at.'                  = 'Let him go.'
+  p. 84 L12 [GRAMMAR_EXAMPLE] '(hirihe) Situks•pa.'          = 'Let us (2) go.'
+  p. 84 L12 [GRAMMAR_EXAMPLE] 'Siruks•pa.'                   = 'Let them (2) go.'
+  p. 84 L12 [GRAMMAR_EXAMPLE] "Tu'ksta•pu'."                 = "Let's (3+) go."
+  p. 84 L12 [GRAMMAR_EXAMPLE] "Stiksta•pu'."                 = 'You (3+) go.'
+  p. 84 L12 [GRAMMAR_EXAMPLE] "Rtiruks•pu'."                 = 'Let them (3+) go.'
+  p. 84 L12 [GRAMMAR_EXAMPLE] 'We tat-u.'                    = 'I gave it to her. (have given)'
+  p. 84 L12 [GRAMMAR_EXAMPLE] 'We tata•u.'                   = 'I gave it to you.'
+  p. 84 L12 [GRAMMAR_EXAMPLE] 'We sitat•u.'                  = 'I gave it to them (2).'
+  p. 84 L12 [GRAMMAR_EXAMPLE] 'We sitata•u.'                 = 'I gave it to you (2).'
+  p. 84 L12 [GRAMMAR_EXAMPLE] 'We tatarak•u.'                = 'I gave it to you (3+).'
+  p. 84 L12 [GRAMMAR_EXAMPLE] 'We tatak•u'                   = 'I gave it to them (3+).'
+  p. 85 L13 [PHRASE         ] 'KIRU RATSUKS•AT?'             = 'Where Did You Go?'
+  p. 85 L13 [BASIC_WORDS    ] "Pari'"                        = 'Pawnee'
+  p. 85 L13 [BASIC_WORDS    ] 'skurihkat'                    = '"school grounds," the tribal offices'
+  p. 85 L13 [BASIC_WORDS    ] "raku•kariu'"                  = 'many'
+  p. 86 L13 [DIALOGUE       ] 'Kiru rasuks•at?'              = 'Where did you go?'
+  p. 86 L13 [ADDITIONAL_WORDS] "hiri ra•ttirihu•ru'"          = 'the big city'
+  p. 86 L13 [ADDITIONAL_WORDS] 'hiri ra•wa•ra•ruhat'          = 'the mountains, "where the mountains are "'
+  p. 87 L13 [GRAMMAR_EXAMPLE] "Kiru rasu'ks•at?"             = 'Where did you go?'
+  p. 87 L13 [GRAMMAR_EXAMPLE] 'Ru tatuks•at Rihita•wiru.'    = 'I went over there among the Poncas.'
+  p. 87 L13 [ADDITIONAL_WORDS] 'Rihita-wiru'                  = 'Ponca country'
+  p. 87 L13 [ADDITIONAL_WORDS] 'Pasuhara•ru'                  = 'Oto country'
+  p. 87 L13 [GRAMMAR_EXAMPLE] 'Ti Pasuhara.'                 = "He's Oto."
+  p. 87 L13 [GRAMMAR_EXAMPLE] 'Ti Asakiwa.'                  = "He's Sac and Fox."
+  p. 87 L13 [ADDITIONAL_WORDS] 'Pahriksukat hiri ra•huri•wawi' = 'Sioux country (where the Sioux live)'
+  p. 87 L13 [GRAMMAR_EXAMPLE] 'Ti Pahriksukat.'              = "He's Sioux."
+  p. 87 L13 [GRAMMAR_EXAMPLE] "Ti Astarahi'."                = 'He\'s Arikaree ("frozen feet")'
+  p. 87 L13 [ADDITIONAL_WORDS] "Tuhkaka' hiri rd .huri•wawi"  = 'Crow country (where the Crow live)'
+  p. 87 L13 [GRAMMAR_EXAMPLE] "Ti Tuhkaka'."                 = "He's Crow."
+  p. 88 L13 [ADDITIONAL_WORDS] 'Kitkahahki'                   = '"Little Mud Lodge Village." Or, perhaps "Little Swamp" from kit-kaharu \' , swamp, slough. Known in early literature as "Republican Pawnee," for the river where the villages were.'
+  p. 88 L13 [ADDITIONAL_WORDS] "kit-kaharu '"                 = 'swamp, slough'
+  p. 88 L13 [ADDITIONAL_WORDS] 'Pitahawirata'                 = '"Man Going East" or "Man Going Downstream." The first independent Southern Band, given birth by someone \'s religious vision. Known as Tap-age (noisy) by the French on account of their "pentecostal" type of early morning prayers.'
+  p. 88 L13 [ADDITIONAL_WORDS] "TSKIRI AKITARU'"              = 'Skiri Bands'
+  p. 88 L13 [ADDITIONAL_WORDS] 'Tuhwits•Pihat .'              = '"Camp on the Ridge"'
+  p. 88 L13 [ADDITIONAL_WORDS] "Tuhwa•Hu'kasa"                = '"Shady Lane"'
+  p. 88 L13 [ADDITIONAL_WORDS] "Tskiri•Raru'"                 = '"Wolf Ways"'
+  p. 89 L13 [GRAMMAR_EXAMPLE] 'ti .ra wa•raruhat'            = 'there are mountains'
+  p. 89 L13 [GRAMMAR_EXAMPLE] 'hiri .ra wa .raruhat'         = '(to) the mountains, where the mountains are'
+  p. 89 L13 [GRAMMAR_EXAMPLE] "hiri ratukstak•kitkeu'"       = 'where we used to live'
+  p. 89 L13 [GRAMMAR_EXAMPLE] 'Sitatuks•pa.'                 = 'You and I went.'
+  p. 89 L13 [GRAMMAR_EXAMPLE] 'Sitatukspa.'                  = 'She and I went (we 2).'
+  p. 89 L13 [GRAMMAR_EXAMPLE] 'Sitasuks•pa.'                 = 'She and you went (you 2).'
+  p. 89 L13 [GRAMMAR_EXAMPLE] 'Situks•pa.'                   = 'She and he went (they 2).'
+  p. 89 L13 [GRAMMAR_EXAMPLE] "Ti .wu'."                     = 'They (3+) went.'
+  p. 90 L14 [BASIC_WORDS    ] 'tut•erit'                     = 'he has seen it, he saw it'
+  p. 90 L14 [BASIC_WORDS    ] "tut•eriku'"                   = 'he is looking at it'
+  p. 90 L14 [BASIC_WORDS    ] 'ttItsiks•erit'                = 'he saw it'
+  p. 90 L14 [BASIC_WORDS    ] "tu'ks•tihu'"                  = 'it was big'
+  p. 90 L14 [BASIC_WORDS    ] 'ti•waka•rihu'                 = 'it is loud'
+  p. 90 L14 [BASIC_WORDS    ] "tuks•paka•rihu'"              = 'it was loud'
+  p. 90 L14 [BASIC_WORDS    ] 'tuks•ta•pahit'                = 'it was quiet'
+  p. 91 L14 [DIALOGUE       ] 'Pita ka rut•erit kuruks?'     = 'Has the man seen the bear?'
+  p. 91 L14 [ADDITIONAL_WORDS] "t'iks•tauk•at"                = 'he (has) touched it (he made his hand go)'
+  p. 91 L14 [ADDITIONAL_WORDS] 'tuks•iks•tauk•at'             = 'he touched it'
+  p. 91 L14 [ADDITIONAL_WORDS] 'ti .tahit'                    = 'he (has) hit it'
+  p. 91 L14 [ADDITIONAL_WORDS] 'tut•urikut'                   = 'he has taken hold of it'
+  p. 91 L14 [ADDITIONAL_WORDS] 'ru ti ra•pdrihrit'            = 'it is smooth'
+  p. 91 L14 [ADDITIONAL_WORDS] 'ru tuks•ta•pdrihrit'          = 'it was smooth'
+  p. 91 L14 [ADDITIONAL_WORDS] 'ti kasis'                     = "it's hard"
+  p. 91 L14 [ADDITIONAL_WORDS] 'ti katus'                     = "it's flat"
+  p. 91 L14 [ADDITIONAL_WORDS] 'td taris'                     = "it's heavy"
+  p. 92 L14 [GRAMMAR_EXAMPLE] "tf•'at"                       = 'he went'
+  p. 92 L14 [GRAMMAR_EXAMPLE] 'to taxis'                     = "it's heavy"
+  p. 92 L14 [PHRASE         ] 'Hais•tiwata!'                 = 'Look!'
+  p. 92 L14 [PHRASE         ] 'Hais•atku!'                   = 'Listen!'
+  p. 93 L14 [GRAMMAR_EXAMPLE] 'Pita ti•kuwutit kuruks.'      = 'The man has killed a bear.'
+  p. 93 L14 [GRAMMAR_EXAMPLE] 'Pita kuruks ti .kuwutit.'     = 'The man has killed a bear.'
+  p. 93 L14 [GRAMMAR_EXAMPLE] 'Tut•erit.'                    = 'He saw it.'
+  p. 93 L14 [GRAMMAR_EXAMPLE] 'Sitatut•erit.'                = 'We (2) saw it.'
+  p. 93 L14 [GRAMMAR_EXAMPLE] 'Sitasuterit.'                 = 'You (2) saw it.'
+  p. 93 L14 [GRAMMAR_EXAMPLE] 'Situt•erit.'                  = 'They (2) saw it.'
+  p. 93 L14 [GRAMMAR_EXAMPLE] 'Kitu sitatut•erit.'           = 'We (3+) saw it.'
+  p. 93 L14 [GRAMMAR_EXAMPLE] 'Kitu sititerit.'              = 'All of them (3+) saw it.'
+  p. 94 L14 [GRAMMAR_EXAMPLE] 'Witi tatut•erit.'             = 'I saw myself.'
+  p. 94 L14 [GRAMMAR_EXAMPLE] "Ti•kuruks•pa'ktahu'."         = 'He is growling (bear-talking).'
+  p. 95 L15 [BASIC_WORDS    ] "RI•KATIHARU'"                 = 'The Year'
+  p. 95 L15 [BASIC_WORDS    ] 'riat'                         = 'summer'
+  p. 95 L15 [BASIC_WORDS    ] 'we ra•katarah•kaa'            = 'spring (when the green comes out)'
+  p. 95 L15 [BASIC_WORDS    ] 'retskuhke'                    = 'fall'
+  p. 95 L15 [BASIC_WORDS    ] "(we) t'at•tstI a"             = "it's raining"
+  p. 95 L15 [BASIC_WORDS    ] "t'at•tsti•a•usuku '"          = 'it rains (habitually)'
+  p. 96 L15 [DIALOGUE       ] "'T'at•tstfa•usuku retskuhke." = 'It rains in the fall.'
+  p. 96 L15 [DIALOGUE       ] "We to tut•a•wahri•usuku'."    = 'I work.'
+  p. 96 L15 [ADDITIONAL_WORDS] "we tuh•sa'"                   = "it's snowing"
+  p. 96 L15 [ADDITIONAL_WORDS] "tuh•sa .usuku'"               = 'it snows'
+  p. 96 L15 [ADDITIONAL_WORDS] "rahtiritat ta hti .tuhtu'"    = "it's always cold"
+  p. 96 L15 [ADDITIONAL_WORDS] "ti•pitsi'"                    = "it's cold (in a room)"
+  p. 96 L15 [ADDITIONAL_WORDS] 'ti•hurerus'                   = 'it is a frost (imperfect)'
+  p. 96 L15 [ADDITIONAL_WORDS] "ti•hurertisuku'"              = 'it frosts'
+  p. 96 L15 [ADDITIONAL_WORDS] "tih•tawa•karukusuku'"         = 'they harvest'
+  p. 97 L15 [PHRASE         ] 'Hiri we ta•hu•tawi•rihu!'     = "It's really windy'!"
+  p. 97 L15 [PHRASE         ] 'Suks•teka .rikut.'            = 'Open the door.'
+  p. 97 L15 [PHRASE         ] 'Suks•teka•wu.'                = 'Close the door.'
+  p. 97 L15 [GRAMMAR_EXAMPLE] "We t'at .tszi-a."             = "It's raining."
+  p. 97 L15 [GRAMMAR_EXAMPLE] "We t 'at•tsu•a."              = "It's raining."
+  p. 97 L15 [GRAMMAR_EXAMPLE] "We t'at•tsu•a•tisuku'."       = 'It rains.'
+  p. 97 L15 [GRAMMAR_EXAMPLE] 'We tuks•at•tsti .a.'          = 'It was raining, has been raining.'
+  p. 97 L15 [GRAMMAR_EXAMPLE] "We kut'at-tsu .a."            = 'It might be raining.'
+  p. 97 L15 [GRAMMAR_EXAMPLE] "T'at•tsu•d .ista."            = 'It will rain.'
+  p. 98 L16 [BASIC_WORDS    ] 'kiru rira•awi•u'              = 'when?'
+  p. 98 L16 [BASIC_WORDS    ] 'ti kekaruus'                  = "it's early morning"
+  p. 98 L16 [BASIC_WORDS    ] "ti saku'h kit'arit"           = "it's noon"
+  p. 98 L16 [BASIC_WORDS    ] 'we ti pitku'                  = "it's two o'clock"
+  p. 98 L16 [BASIC_WORDS    ] 'we ti pitku a ikarikat'       = "it's two thirty"
+  p. 98 L16 [BASIC_WORDS    ] "we tiu'h•kita•watat pitku"    = "it's past two"
+  p. 98 L16 [BASIC_WORDS    ] "we tiwitsuh•ta' tawit"        = "it's close to three"
+  p. 99 L16 [DIALOGUE       ] 'We ti'                        = "It's two o'clock."
+  p. 99 L16 [DIALOGUE       ] "Kirti rira•awi•u tasih•ka•isa'?" = 'When did you come home?'
+  p. 99 L16 [ADDITIONAL_WORDS] "we tatih•wata'"               = 'I got up'
+  p. 99 L16 [ADDITIONAL_WORDS] 'we tat•sta'                   = 'I lay down, I am lying down.'
+  p. 99 L16 [ADDITIONAL_WORDS] 'we tatut•d .wahri•uls•at'     = 'I went to work'
+  p. 99 L16 [ADDITIONAL_WORDS] 'we to sak•ta'                 = "it's sunrise"
+  p. 99 L16 [ADDITIONAL_WORDS] 'we ti hurarawa'               = "it's twilight"
+  p. 99 L16 [ADDITIONAL_WORDS] 'we ti sakurisat'              = "it's evening"
+  p. 99 L16 [ADDITIONAL_WORDS] 'we ti sakuh .teriwi .ra-hat'  = "it's afternoon"
+  p. 99 L16 [ADDITIONAL_WORDS] 'we ti .witsat'                = "it's time (he arrived)"
+  p. 99 L16 [ADDITIONAL_WORDS] "we ti .witsat ratkut•a .wahri'" = "it's time for me to work"
+  p. 99 L16 [PHRASE         ] "Siks•pata'!"                  = 'Get up!'
+  p. 99 L16 [PHRASE         ] "We witi tat•titsi'sta."       = "I'm going to bed."
+  p.100 L17 [BASIC_WORDS    ] 'tiheruks•tsakariki'           = 'the other day'
+  p.100 L17 [BASIC_WORDS    ] 'tiheraruks•tsaku•rarata'      = 'in days past'
+  p.100 L17 [BASIC_WORDS    ] 'tiherukspa•ariki'             = 'last month'
+  p.101 L17 [DIALOGUE       ] "Kirti rira•awiu' tasutsiks•a .wahri'?" = 'When were you working?'
+  p.101 L17 [ADDITIONAL_WORDS] "tiheruks•ti•katiharu'"        = 'last year'
+  p.101 L17 [ADDITIONAL_WORDS] 'we ti•rakea'                  = 'a long time ago'
+  p.101 L17 [ADDITIONAL_WORDS] "we ti sihuks sakuru'"         = 'five days ago'
+  p.101 L17 [ADDITIONAL_WORDS] 'kekaruskat'                   = 'early this morning'
+  p.101 L17 [GRAMMAR_EXAMPLE] 'tiheruks.'                    = 'that other one, past'
+  p.102 L17 [PHRASE         ] 'Suks•aspatasit!'              = 'Start!'
+  p.102 L17 [GRAMMAR_EXAMPLE] 'Ti•ha•kawaats.'               = 'He, she ate.'
+  p.102 L17 [GRAMMAR_EXAMPLE] 'Sitat•a .kawaats.'            = 'We (2) ate.'
+  p.102 L17 [GRAMMAR_EXAMPLE] 'Sitas•a .kawaats.'            = 'You (2) ate.'
+  p.102 L17 [GRAMMAR_EXAMPLE] 'Siti ,ha•kawaats.'            = 'They (2) ate.'
+  p.102 L17 [GRAMMAR_EXAMPLE] "Ti 'hr i kawaats."            = 'They (3+) ate.'
+  p.103 L17 [GRAMMAR_EXAMPLE] "Tuks•a .kawahtsu'."           = 'He, she was eating.'
+  p.103 L17 [GRAMMAR_EXAMPLE] "Sitatuks•a•kawahtsu'."        = 'She and I were eating.'
+  p.103 L17 [GRAMMAR_EXAMPLE] "Sitasuks•a•kawahtsu'."        = 'You (2) were eating.'
+  p.103 L17 [GRAMMAR_EXAMPLE] "Situks•a•kawahtsu'."          = 'They (2) were eating.'
+  p.103 L17 [GRAMMAR_EXAMPLE] "Tiks•a .kawahtsu'."           = 'They (3+) were eating.'
+  p.104 L18 [BASIC_WORDS    ] 'tiku•kskirawa'                = "I've been sick"
+  p.104 L18 [BASIC_WORDS    ] "rariksisu tatutsiks•a•wahri '" = "I've been very busy"
+  p.104 L18 [BASIC_WORDS    ] "rariksisu '"                  = 'a lot, very'
+  p.105 L18 [DIALOGUE       ] "Rariksisu tatutsiks•a•wahri'." = "I've been working hard."
+  p.105 L18 [ADDITIONAL_WORDS] "ru kakatut•te'tsiks•u'"       = "I'm worried, I feel bad"
+  p.105 L18 [PHRASE         ] 'Sutsiks•ahut.'                = "Who's been busy?"
+  p.105 L18 [PHRASE         ] 'Keskuruh•ra•wiat.'            = 'Hold this.'
+  p.105 L18 [PHRASE         ] 'Ketuh•ra .wiat.'              = 'Help me.'
+  p.105 L18 [PHRASE         ] "Kesku•rahtirihu'."            = "I'm sorry."
+  p.105 L18 [GRAMMAR_EXAMPLE] "We ktitatutawahri'."          = "I've been busy."
+  p.105 L18 [GRAMMAR_EXAMPLE] "We ktitasut•a .wahri'."       = "You've been busy."
+  p.105 L18 [GRAMMAR_EXAMPLE] "We ktitut .a.wahri'."         = "He's been busy."
+  p.106 L18 [GRAMMAR_EXAMPLE] "We kusitatut•a•wahri'."       = 'We (2) have been busy.'
+  p.106 L18 [GRAMMAR_EXAMPLE] "We kutatuhrak•a .wahri'."     = 'We (3+) have been busy.'
+  p.106 L18 [GRAMMAR_EXAMPLE] "We kutasuhrak•a .wahri'."     = 'You (3+) have been busy.'
+  p.106 L18 [GRAMMAR_EXAMPLE] "We kutit•a .wahri ' ."        = 'They (3+) have been busy.'
+  p.107 L19 [PHRASE         ] "T'ARAWI•A"                    = 'The Future'
+  p.107 L19 [BASIC_WORDS    ] "rahesa'"                      = 'tomorrow (that day)'
+  p.107 L19 [BASIC_WORDS    ] "tihe ra•pa•ariki'"            = 'next month'
+  p.107 L19 [BASIC_WORDS    ] "tihe ri•katiharu'"            = 'next year'
+  p.107 L19 [BASIC_WORDS    ] 'we tat•kata•hat'              = 'I quit!'
+  p.108 L19 [DIALOGUE       ] "Rahesa ' tatut•a•wahri•usta." = 'Tomorrow I will work.'
+  p.108 L19 [DIALOGUE       ] "Kiru rira•awiu' ras•uh .ta?"  = 'When will you go?'
+  p.108 L19 [ADDITIONAL_WORDS] "tihe ra•sa'kurrarata"         = 'next week (those days that will come)'
+  p.108 L19 [ADDITIONAL_WORDS] "sihuks sakuru '"              = 'in five days'
+  p.108 L19 [ADDITIONAL_WORDS] "sihuks ri•katiharu'"          = 'in five years'
+  p.108 L19 [ADDITIONAL_WORDS] "t'a•hista"                    = 'he will come'
+  p.108 L19 [ADDITIONAL_WORDS] "tu'h•ra•sitik'sta"            = 'it will happen'
+  p.109 L19 [BASIC_WORDS    ] 'Ri•katihah•tirara'            = 'January'
+  p.109 L19 [BASIC_WORDS    ] 'Ri•katihah•tirara'            = 'The New Year'
+  p.109 L19 [BASIC_WORDS    ] "Piraparu'"                    = 'February'
+  p.109 L19 [BASIC_WORDS    ] "Piraparu'"                    = 'Dreary Month'
+  p.109 L19 [BASIC_WORDS    ] "Pa•hutawi•u '"                = 'March'
+  p.109 L19 [BASIC_WORDS    ] "Pa•hutawi•u '"                = 'Windy Month'
+  p.109 L19 [BASIC_WORDS    ] "Ra .pa•u R'at•tsuahu'"        = 'April'
+  p.109 L19 [BASIC_WORDS    ] "Ra .pa•u R'at•tsuahu'"        = 'Rainy Month'
+  p.109 L19 [BASIC_WORDS    ] "Hri•ratawi Ri•wariku'"        = 'May'
+  p.109 L19 [BASIC_WORDS    ] "Hri•ratawi Ri•wariku'"        = 'Memorial Month'
+  p.109 L19 [BASIC_WORDS    ] 'Pa•riat'                      = 'June'
+  p.109 L19 [BASIC_WORDS    ] 'Pa•riat'                      = 'Month of Summer'
+  p.109 L19 [BASIC_WORDS    ] 'Ri•katihar•rikarikat'         = 'July'
+  p.109 L19 [BASIC_WORDS    ] 'Ri•katihar•rikarikat'         = 'Half Year'
+  p.109 L19 [BASIC_WORDS    ] 'Tskirih•kapira'               = 'August'
+  p.109 L19 [BASIC_WORDS    ] 'Tskirih•kapira'               = 'Mad Dog Month'
+  p.109 L19 [BASIC_WORDS    ] "Pirau Rarah•kata•ispu'"       = 'September'
+  p.109 L19 [BASIC_WORDS    ] "Pirau Rarah•kata•ispu'"       = 'When the kids go back to school'
+  p.109 L19 [BASIC_WORDS    ] 'Retskuhke'                    = 'October'
+  p.109 L19 [BASIC_WORDS    ] 'Retskuhke'                    = 'Fall'
+  p.109 L19 [BASIC_WORDS    ] "Ha•karu'h•kutsu'"             = 'November'
+  p.109 L19 [BASIC_WORDS    ] "Ha•karu'h•kutsu'"             = 'Feast'
+  p.110 L19 [BASIC_WORDS    ] "Kskitiiks Ra sakuru'"         = 'Thursday'
+  p.110 L19 [BASIC_WORDS    ] 'Parae'                        = 'Friday'
+  p.110 L19 [BASIC_WORDS    ] "Periku'"                      = 'Saturday'
+  p.110 L19 [BASIC_WORDS    ] "Periku'"                      = 'Seeing (visiting) Day'
+  p.110 L19 [PHRASE         ] "Patsuka tirut•tatsta tat•stats•tak 'sta." = "I'm going to shoot that turnip plant."
+  p.110 L19 [PHRASE         ] 'Patsuka'                      = 'turnip'
+  p.111 L20 [GRAMMAR_EXAMPLE] 'raku•wa .waktit ratara•kuki'  = 'for one to speak in our way'
+  p.111 L20 [GRAMMAR_EXAMPLE] 'raku•wa .waktit ratara•kuki'  = 'for one to speak in our way'
+  p.112 L20 [BASIC_WORDS    ] 'raskut•ara'                   = 'for you to do it'
+  p.112 L20 [BASIC_WORDS    ] 'rakut•ara'                    = 'for him or her to do it'
+  p.112 L20 [BASIC_WORDS    ] 'raskti .u•ta'                 = 'for you to go'
+  p.112 L20 [BASIC_WORDS    ] 'rakti•u•ta'                   = 'for him to go'
+  p.113 L20 [GRAMMAR_EXAMPLE] 'raku•wa .waktit'              = 'to speak (a language)'
+  p.113 L20 [GRAMMAR_EXAMPLE] 'we raku•sakur•isat•ta'        = 'when the sun goes down'
+  p.113 L20 [GRAMMAR_EXAMPLE] 'raku•ka .pihat'               = 'dwelling'
+  p.113 L20 [PHRASE         ] 'Nawa, taku ka ra•ka .ku?'     = 'Hello, is anyone home?'
+  p.113 L20 [PHRASE         ] "Nawa, siks .uka .a'."         = 'Hello, come in.'
+  p.113 L20 [PHRASE         ] 'Sukspitit, tireku•skuskakusu.' = "Sit down. Here's a chair."
+  p.113 L20 [PHRASE         ] 'Hiri we tur•rahe.'            = 'Thank you.'
+  p.113 L20 [PHRASE         ] 'Nawa'                         = 'Hello'
+  p.114 L20 [PHRASE         ] 'Nawa, Tiwatsiriks.'           = 'Hello, Uncle.'
+  p.114 L20 [PHRASE         ] 'Nawa, tsikstit ka ras•ku?'    = 'Hi, are you well?'
+  p.117 L20 [GRAMMAR_EXAMPLE] 'wi +'                         = 'it is said that . . .'
+  p.117 L20 [GRAMMAR_EXAMPLE] 'ar +'                         = 'we know that . . .'
+  p.117 L20 [GRAMMAR_EXAMPLE] 'or ah +'                      = "(I'm cure even though I have not seen it)"
+  p.117 L20 [GRAMMAR_EXAMPLE] 'or kuh +'                     = '(I guess)'
+  p.118 L20 [PHRASE         ] 'HIRI AH•RATUKSTAK•KITKEU'     = 'WHERE WE USED TO LIVE'
+  p.118 L20 [READING        ] 'Wi•tuks•ta tawe•kuki wi•tuks•ta•waruksti. Tsahriks•pa-kuhtu wi•tuks•paktiks.' = 'It is said that it (the tribe) had (many) customs which were very wonderful. The old ones were apparently sincere (about these things).'
+  p.118 L20 [READING        ] "Wi•turuks•ka•hurar•ri hiri ah•ratukstak•kitkeu'. Tihe ra•akitarraruhat tsararat ra•hurit•at reh•kuhrah•witsa'. Resaru kuh•ri•ruhuru rakurak•tara hiri ra•saka•ku." = 'It must have been good land there where we lived. Those other enemy tribes about (us), attacked us all the time. The leaders, perhaps, decided to come down here to the south.'
+  p.121 L20 [PHRASE         ] 'Ut ras•a•hukita•ku'           = 'O quail, sitting up there,'
+  p.121 L20 [PHRASE         ] 'Siwita•witu•rihu'             = 'Someone may bewitch you.'
+
+SAMPLE EXACT MATCHES (first 50)
+----------------------------------------
+  p. 29 L 1  BB:'karitki'                 → Parks:'karitki'                 (karitki)
+  p. 29 L 1  BB:'kiriks'                  → Parks:'kiriks'                  (kiriks)
+  p. 29 L 1  BB:'rakis'                   → Parks:'rakis'                   (rakis)
+  p. 30 L 1  BB:'asku'                    → Parks:'asku'                    (asku)
+  p. 30 L 1  BB:'pitku'                   → Parks:'pitku'                   (pitku)
+  p. 31 L 1  BB:'kiriks'                  → Parks:'kiriks'                  (kiriks)
+  p. 31 L 1  BB:'karitki'                 → Parks:'karitki'                 (karitki)
+  p. 31 L 1  BB:'rakis'                   → Parks:'rakis'                   (rakis)
+  p. 35 L 2  BB:'rakis'                   → Parks:'rakis'                   (rakis)
+  p. 35 L 2  BB:'kiriks'                  → Parks:'kiriks'                  (kiriks)
+  p. 35 L 2  BB:'riwit'                   → Parks:'riwit'                   (riwit)
+  p. 36 L 2  BB:"kiwaku'"                 → Parks:'kiwakuʔ'                 (kiwaku')
+  p. 36 L 2  BB:'kuruks'                  → Parks:'kuruks'                  (kuruks)
+  p. 37 L 2  BB:'rakis'                   → Parks:'rakis'                   (rakis)
+  p. 49 L 5  BB:"paksu'"                  → Parks:'paksuʔ'                  (paksu')
+  p. 49 L 5  BB:"iksu'"                   → Parks:'iksuʔ'                   (iksu')
+  p. 49 L 5  BB:"asu'"                    → Parks:'asuʔ'                    (asu')
+  p. 51 L 5  BB:"tsusu '"                 → Parks:'cusuʔ'                   (čusu')
+  p. 51 L 5  BB:"tsiksu '"                → Parks:'ciksuʔ'                  (čiksu')
+  p. 60 L 7  BB:"atira'"                  → Parks:'atiraʔ'                  (atira')
+  p. 60 L 7  BB:'atipat'                  → Parks:'atipat'                  (atipat)
+  p. 60 L 7  BB:"atika'"                  → Parks:'atikaʔ'                  (atika')
+  p. 61 L 7  BB:'asas'                    → Parks:'asas'                    (asas)
+  p. 61 L 7  BB:'apat'                    → Parks:'apat'                    (apat)
+  p. 61 L 7  BB:"aka'"                    → Parks:'akaʔ'                    (aka')
+  p. 61 L 7  BB:'ara'                     → Parks:'ara'                     (ara)
+  p. 61 L 7  BB:'tiwatsiriks'             → Parks:'tiwaciriks'              (tiwaciriks)
+  p. 61 L 7  BB:'patsiriks'               → Parks:'paciriks'                (paciriks)
+  p. 61 L 7  BB:"atira'"                  → Parks:'atiraʔ'                  (atira')
+  p. 62 L 7  BB:'arakis'                  → Parks:'arakis'                  (arakis)
+  p. 65 L 8  BB:'kuhku'                   → Parks:'kuhku'                   (kuhku)
+  p. 68 L 8  BB:'ikarikat'                → Parks:'ikarikat'                (ikarikat)
+  p. 70 L 9  BB:'rikutski'                → Parks:'rikucki'                 (rikucki)
+  p. 70 L 9  BB:"taraha'"                 → Parks:'tarahaʔ'                 (taraha')
+  p. 70 L 9  BB:"kiwaku'"                 → Parks:'kiwakuʔ'                 (kiwaku')
+  p. 70 L 9  BB:'riwit'                   → Parks:'riwit'                   (riwit)
+  p. 70 L 9  BB:'parus'                   → Parks:'parus'                   (parus)
+  p. 71 L 9  BB:'askuts'                  → Parks:'askuc'                   (askuc)
+  p. 71 L 9  BB:'tsatsiks'                → Parks:'caciks'                  (čačiks)
+  p. 76 L10  BB:"raktahtsu'"              → Parks:'raktahcuʔ'               (raktahču')
+  p. 79 L11  BB:'kuhku'                   → Parks:'kuhku'                   (kuhku)
+  p. 79 L11  BB:'pahuks'                  → Parks:'pahuks'                  (pahuks)
+  p. 85 L13  BB:'kaas'                    → Parks:'kaʔas'                   (ka'as)
+  p. 86 L13  BB:'tawit'                   → Parks:'tawit'                   (tawit)
+  p. 87 L13  BB:'Tsawii'                  → Parks:'Cawii'                   (Cawî)
+  p. 91 L14  BB:'ta'                      → Parks:'ta'                      (ta)
+  p. 92 L14  BB:'tat•at'                  → Parks:'tatat'                   (tatat)
+  p. 95 L15  BB:'pitsikat'                → Parks:'picikat'                 (pičikat)
+  p. 96 L15  BB:'tskirihki'               → Parks:'ckirihki'                (ckirihki)
+  p. 98 L16  BB:'hiras'                   → Parks:'hiras'                   (hiras)
+
+LOOSE/PREFIX MATCHES — REVIEW RECOMMENDED (100 shown)
+----------------------------------------
+  [loose   ] p. 29 L 1  BB:"kisu'"                   → Parks:'kisu'
+  [loose   ] p. 36 L 2  BB:'tskau'                   → Parks:'ckaʔuʔ'
+  [loose   ] p. 49 L 5  BB:"TARIKTAU'"               → Parks:'tariktaʔuʔ'
+  [loose   ] p. 61 L 7  BB:"tiki'"                   → Parks:'tiki'
+  [loose   ] p. 69 L 8  BB:"ksur awiu'"              → Parks:'ksurawiʔuʔ'
+  [prefix  ] p. 29 L 1  BB:"KIRIK1 RU'?"             → Parks:'kiri'
+  [prefix  ] p. 29 L 1  BB:"kaki'"                   → Parks:'ka'
+  [prefix  ] p. 30 L 1  BB:"Kirike ru'?"             → Parks:'kiri'
+  [prefix  ] p. 30 L 1  BB:"Ka rii hitu '?"          → Parks:'kari'
+  [prefix  ] p. 30 L 1  BB:"Ahu ', ti hitu'."        → Parks:'a'
+  [prefix  ] p. 30 L 1  BB:'Ka ru karitki?'          → Parks:'ka'
+  [prefix  ] p. 30 L 1  BB:'Kaki, kaki karitki.'     → Parks:'ka'
+  [prefix  ] p. 30 L 1  BB:"Kirike ru'?"             → Parks:'kiri'
+  [prefix  ] p. 30 L 1  BB:'tirakis'                 → Parks:'tir'
+  [prefix  ] p. 31 L 1  BB:'tirakis'                 → Parks:'tir'
+  [prefix  ] p. 32 L 1  BB:'Istu.'                   → Parks:'is'
+  [prefix  ] p. 32 L 1  BB:'Aka!'                    → Parks:'akaʔ'
+  [prefix  ] p. 32 L 1  BB:"Ka ru'?"                 → Parks:'ka'
+  [prefix  ] p. 32 L 1  BB:"Ka ru kisu'?"            → Parks:'ka'
+  [prefix  ] p. 32 L 1  BB:"Ti kisu'."               → Parks:'tiki'
+  [prefix  ] p. 32 L 1  BB:"Kaki'."                  → Parks:'ka'
+  [prefix  ] p. 32 L 1  BB:"Kaki kisu'."             → Parks:'ka'
+  [prefix  ] p. 33 L 2  BB:'KIRIKJ RA•TARAWIS?'      → Parks:'kiri'
+  [prefix  ] p. 33 L 2  BB:'rakis•pahat'             → Parks:'rakis'
+  [prefix  ] p. 33 L 2  BB:'ti kirareus'             → Parks:'tiki'
+  [prefix  ] p. 33 L 2  BB:'ti rahkataa'             → Parks:'tir'
+  [prefix  ] p. 33 L 2  BB:'rakis•tahkata'           → Parks:'rakis'
+  [prefix  ] p. 33 L 2  BB:'rakis•taka'              → Parks:'rakis'
+  [prefix  ] p. 34 L 2  BB:'Kirike ra•tarawis rakis?' → Parks:'kiri'
+  [prefix  ] p. 34 L 2  BB:'Rakis ti pahaat.'        → Parks:'rakis'
+  [prefix  ] p. 34 L 2  BB:'Ka ra•pahaat rakis?'     → Parks:'ka'
+  [prefix  ] p. 34 L 2  BB:"Ahu', rakis ti pahaat."  → Parks:'a'
+  [prefix  ] p. 34 L 2  BB:'Ka rd .tareus rakis?'    → Parks:'ka'
+  [prefix  ] p. 34 L 2  BB:'Kaki tareus, ti pahaat.' → Parks:'ka'
+  [prefix  ] p. 34 L 2  BB:'kiriks•pahat'            → Parks:'kiri'
+  [prefix  ] p. 34 L 2  BB:'kuruks•katit'            → Parks:'ku'
+  [prefix  ] p. 34 L 2  BB:'Ti kiriks•pahat.'        → Parks:'tiki'
+  [prefix  ] p. 34 L 2  BB:'Kiriks ti pahaat.'       → Parks:'kiri'
+  [prefix  ] p. 34 L 2  BB:'Kuruks ti katiit.'       → Parks:'ku'
+  [prefix  ] p. 35 L 2  BB:'rakis•tahkata'           → Parks:'rakis'
+  [prefix  ] p. 35 L 2  BB:"kitsu '"                 → Parks:'kic'
+  [prefix  ] p. 36 L 2  BB:'rutki'                   → Parks:'rutki rahaawarii'
+  [prefix  ] p. 36 L 2  BB:"kataru '"                → Parks:'ka'
+  [prefix  ] p. 36 L 2  BB:"sakurti'"                → Parks:'sa'
+  [prefix  ] p. 36 L 2  BB:'ti ra .wa•hat'           → Parks:'tir'
+  [prefix  ] p. 37 L 2  BB:'rutki'                   → Parks:'rutki rahaawarii'
+  [prefix  ] p. 37 L 2  BB:"kitsu '"                 → Parks:'kic'
+  [prefix  ] p. 37 L 2  BB:"kira•rasitu'"            → Parks:'kira'
+  [prefix  ] p. 37 L 2  BB:'ti r I ha•pi'            → Parks:'tir'
+  [prefix  ] p. 37 L 2  BB:'ti kits•u"hat'           → Parks:'tiki'
+  [prefix  ] p. 38 L 2  BB:'Kits .Ka'                → Parks:'kic'
+  [prefix  ] p. 38 L 2  BB:'Kits•Katus'              → Parks:'kic'
+  [prefix  ] p. 38 L 2  BB:'Kits•Paruksti'           → Parks:'kic'
+  [prefix  ] p. 38 L 2  BB:'Kits•Kait'               → Parks:'kic'
+  [prefix  ] p. 38 L 2  BB:'Kits•Katit'              → Parks:'kic'
+  [prefix  ] p. 38 L 2  BB:"Kits•Kuru'ks•Katit"      → Parks:'kic'
+  [prefix  ] p. 38 L 2  BB:"Ka rds•atkuku'?"         → Parks:'ka'
+  [prefix  ] p. 38 L 2  BB:"Pahitu'!"                → Parks:'pahit'
+  [prefix  ] p. 38 L 2  BB:"Asku su'ks•paku'."       → Parks:'asku'
+  [prefix  ] p. 39 L 3  BB:"KIRIKJ RUT•U'?"          → Parks:'kiri'
+  [prefix  ] p. 39 L 3  BB:"ti rihu'"                → Parks:'tir'
+  [prefix  ] p. 43 L 4  BB:'KIRIKJ RAS•TA?'          → Parks:'kiri'
+  [prefix  ] p. 43 L 4  BB:'tas•ta'                  → Parks:'ta'
+  [prefix  ] p. 43 L 4  BB:'tah•ra'                  → Parks:'ta'
+  [prefix  ] p. 43 L 4  BB:'tahrar•ra'               → Parks:'ta'
+  [prefix  ] p. 50 L 5  BB:'Ti rit•paks•ku.'         → Parks:'tir'
+  [prefix  ] p. 50 L 5  BB:'Ti rit•kirik•ta.'        → Parks:'tir'
+  [prefix  ] p. 50 L 5  BB:"Ka ra•paks•taari'?"      → Parks:'ka'
+  [prefix  ] p. 50 L 5  BB:"Kaki ku .paks•tdari',"   → Parks:'ka'
+  [prefix  ] p. 51 L 5  BB:'Ti rit•kirik•ta.'        → Parks:'tir'
+  [prefix  ] p. 51 L 5  BB:"atka•haru'"              → Parks:'at'
+  [prefix  ] p. 51 L 5  BB:"kararu '"                → Parks:'ka'
+  [prefix  ] p. 51 L 5  BB:"kasu'"                   → Parks:'ka'
+  [prefix  ] p. 52 L 5  BB:"askitsu'"                → Parks:'a'
+  [prefix  ] p. 52 L 5  BB:"aspitu '"                → Parks:'aspit'
+  [prefix  ] p. 52 L 5  BB:'Pahitu suks .ku!'        → Parks:'pahit'
+  [prefix  ] p. 52 L 5  BB:"Kirike ras•paku'?"       → Parks:'kiri'
+  [prefix  ] p. 53 L 5  BB:'Tas•pa"ku\'.'            → Parks:'ta'
+  [prefix  ] p. 53 L 5  BB:"Tat•paku'."              → Parks:'ta'
+  [prefix  ] p. 53 L 5  BB:'Tat•pitit.'              → Parks:'ta'
+  [prefix  ] p. 54 L 5  BB:'Tat•at.'                 → Parks:'ta'
+  [prefix  ] p. 54 L 5  BB:"Tahrapaku'."             → Parks:'ta'
+  [prefix  ] p. 54 L 5  BB:'Tahra .pitit.'           → Parks:'ta'
+  [prefix  ] p. 54 L 5  BB:"Tahra•pu'."              → Parks:'ta'
+  [prefix  ] p. 55 L 6  BB:'pita'                    → Parks:'pitaksuʔ'
+  [prefix  ] p. 55 L 6  BB:'tsapat'                  → Parks:'ca'
+  [prefix  ] p. 55 L 6  BB:'ti•kikat'                → Parks:'tiki'
+  [prefix  ] p. 55 L 6  BB:"ti•ruku'"                → Parks:'tir'
+  [prefix  ] p. 56 L 6  BB:"Kaki ', pita t'ewasku'." → Parks:'ka'
+  [prefix  ] p. 56 L 6  BB:"Kaki '"                  → Parks:'ka'
+  [prefix  ] p. 56 L 6  BB:'kurahus'                 → Parks:'ku'
+  [prefix  ] p. 57 L 6  BB:"tat•akuh•taku '"         → Parks:'ta'
+  [prefix  ] p. 57 L 6  BB:"ta•kaahu'"               → Parks:'ta'
+  [prefix  ] p. 57 L 6  BB:"Ta'tskipi."              → Parks:'ta'
+  [prefix  ] p. 57 L 6  BB:"Kirike ratut•ari '?"     → Parks:'kiri'
+  [prefix  ] p. 57 L 6  BB:"Kirike rasut•ari'?"      → Parks:'kiri'
+  [prefix  ] p. 57 L 6  BB:"Kirike rutari '?"        → Parks:'kiri'
+  [prefix  ] p. 57 L 6  BB:"Kirike rit•ari '?"       → Parks:'kiri'
+  [prefix  ] p. 57 L 6  BB:"Kirike sirut•ari'?"      → Parks:'kiri'
+  [prefix  ] p. 57 L 6  BB:"Tat•pari ' ."            → Parks:'ta'
