@@ -1,0 +1,4441 @@
+{
+  "page_2": {
+    "page_number": 30,
+    "sections": [
+      {
+        "heading": null,
+        "content": "Nominal inflection is generally restricted to two categories—case and plurality—but kinship terms are uniquely inflected for inalienable possession (see appendix 2). Derivational affixes are also few in number.",
+        "morphemes_mentioned": [],
+        "tables": []
+      },
+      {
+        "heading": "Noun Inflection: Case and Plurality",
+        "content": "Nouns in Skiri fall into three classes on the basis of their inflectional marking. There are two cases, instrumental ('with, using') and locative ('in, on, at; among'). Plural number is also marked for some nouns. Instrumental case is marked on all nouns—or at least on all those where it is semantically appropriate—by the suffix biriʔ. One class of nouns also uses biriʔ to mark locative case, as in iksiriʔ 'by hand; on the hand'. These nouns, which are mostly body part terms, mark plural number with the suffix -raar-, which occurs after the noun stem and before -biriʔ, as in ikstaaririʔ 'with the hands; on the hands'. Other classes of nouns have no special marking for plural, and mark locative case by either -ru or -kat (table 4).\nIn addition to its productive uses as instrumental and body-part locative, -biriʔ also occurs with a small set of noun stems, again primarily body part terms, to derive their independent forms; i.e., the locative form of these nouns is also the independent form, even though independent nouns are usually derived with the nominal absolutive suffix -uʔ (see below). Examples of locative forms serving also as absolutive forms are askatahciruʔ 'sole (of the foot)' and riitiriʔ 'small of the back'.\nThe suffix -ru 'among, in the country/territory of' forms the locative of tribal names and at least one state name. Examples are sahiiru 'in Cheyenne country' (< sahii 'Cheyenne'); pasaasiru 'among the Osages; in Osage territory' (< pasaasi 'Osage'); and tiksastu 'in Texas' (< English Texas). A variant of -ru is -wiru, which occurs with many names, usually ones ending in the vowel a, as uukaahpaawiru 'among the Quapaw' (< uukaahpaa 'Quapaw') and riihitawiru 'among the Ponca' (< riihita 'Ponca').\nThe locative suffix -kat generally translates as 'in, on' but with animate nouns it frequently translates as 'among'; e.g., akahkat 'on the dwelling' (< akar- + -kat); asaakat 'among the horses' (< asaa- 'horse' + -kat).",
+        "morphemes_mentioned": [
+          {
+            "form": "biriʔ",
+            "label": "suffix",
+            "meaning": "instrumental ('with, using'), locative ('in, on, at; among')",
+            "notes": "Marks instrumental case on all nouns; marks locative case for one class of nouns (mostly body part terms); also occurs with a small set of noun stems (primarily body part terms) to derive independent forms."
+          },
+          {
+            "form": "-raar-",
+            "label": "suffix",
+            "meaning": "plural",
+            "notes": "Occurs after the noun stem and before -biriʔ for body part terms."
+          },
+          {
+            "form": "-ru",
+            "label": "suffix",
+            "meaning": "locative ('among, in the country/territory of')",
+            "notes": "Marks locative case for Tribal and Geographical Names."
+          },
+          {
+            "form": "-kat",
+            "label": "suffix",
+            "meaning": "locative ('in, on', 'among')",
+            "notes": "Marks locative case for 'Other Nouns'; translates as 'in, on', but 'among' with animate nouns."
+          },
+          {
+            "form": "-uʔ",
+            "label": "suffix",
+            "meaning": "nominal absolutive",
+            "notes": "Usually used to derive independent nouns."
+          },
+          {
+            "form": "-wiru",
+            "label": "suffix",
+            "meaning": "locative ('among, in the country/territory of')",
+            "notes": "Variant of -ru, occurs with many names, usually those ending in the vowel 'a'."
+          }
+        ],
+        "tables": [
+          {
+            "caption": "Table 4. Skiri Case and Number Suffixes",
+            "rows": [
+              [
+                "Noun Class",
+                "Plural Marking",
+                "Case Suffixes"
+              ],
+              [
+                "Body Part Terms",
+                "-raar- PL",
+                "-biriʔ INST/LOC"
+              ],
+              [
+                "Tribal and Geographical Names",
+                "Ø",
+                "-ru LOC"
+              ],
+              [
+                "Other Nouns",
+                "Ø",
+                "-kat LOC\n-biriʔ INST"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "page_4": {
+    "page_number": 32,
+    "sections": [
+      {
+        "heading": null,
+        "content": "The stem in the preceding form is a (ir-...) 'to come', and in it the preverb ir- (which has contracted with the aorist prefix uks-) has no independent meaning that relates to the activity of coming. Similarly, the root a has no independent meaning of 'come'.\nIn the following example the stem is the discontinuous form hiir (uur . . .) 'be good; be good-looking' and, as with a in the preceding example, the stem base hiir has no independent meaning.\ntuuricaahiksii 'he is a good-looking person' < ti- IND + -Ø 3.A + uur- PREV + icaahiks- 'person' + hiir- 'be good; be good-looking' + -Ø PERF\nwiitatuuhaaka 'we have done that' < wii- 'now' + ta- IND.1/2.A + t- 1.A + ut- PREV + raak- 1/2.P.A/P + aar 'do' + -Ø PERF\nThe preverb ut- is identical in form to the benefactive/dative ut-, and when a verb such as 'to do' has a benefactive patient, the benefactive is expressed by the sequence ir . . . ri . . . ut-, where the agentive possessive prefix ir- and the physical possessive prefix ri- combine with ut-, as in,\ntatiriitaa 'I did it for him' < ta- IND.1/2.A + t- 1.A + ir- A.POSS + ri- PHY.POSS + ut- P.POSS + aar 'do' + -Ø",
+        "morphemes_mentioned": [
+          {
+            "form": "a (ir-...)",
+            "label": "stem",
+            "notes": "'to come'"
+          },
+          {
+            "form": "ir-",
+            "label": "preverb",
+            "notes": "contracted with aorist prefix uks-, no independent meaning related to 'coming'"
+          },
+          {
+            "form": "uks-",
+            "label": "aorist prefix",
+            "notes": null
+          },
+          {
+            "form": "a",
+            "label": "root",
+            "notes": "no independent meaning of 'come'"
+          },
+          {
+            "form": "hiir (uur . . .)",
+            "label": "discontinuous stem",
+            "notes": "'be good; be good-looking'"
+          },
+          {
+            "form": "hiir",
+            "label": "stem base",
+            "notes": "no independent meaning"
+          },
+          {
+            "form": "ti-",
+            "label": "IND",
+            "notes": null
+          },
+          {
+            "form": "-Ø",
+            "label": "3.A",
+            "notes": null
+          },
+          {
+            "form": "uur-",
+            "label": "PREV",
+            "notes": null
+          },
+          {
+            "form": "icaahiks-",
+            "label": "stem",
+            "notes": "'person'"
+          },
+          {
+            "form": "hiir-",
+            "label": "stem",
+            "notes": "'be good; be good-looking'"
+          },
+          {
+            "form": "-Ø",
+            "label": "PERF",
+            "notes": null
+          },
+          {
+            "form": "wii-",
+            "label": "prefix",
+            "notes": "'now'"
+          },
+          {
+            "form": "ta-",
+            "label": "IND.1/2.A",
+            "notes": null
+          },
+          {
+            "form": "t-",
+            "label": "1.A",
+            "notes": null
+          },
+          {
+            "form": "ut-",
+            "label": "PREV",
+            "notes": null
+          },
+          {
+            "form": "raak-",
+            "label": "stem",
+            "notes": "1/2.P.A/P"
+          },
+          {
+            "form": "aar",
+            "label": "stem",
+            "notes": "'do'"
+          },
+          {
+            "form": "ut-",
+            "label": "preverb",
+            "notes": "benefactive/dative"
+          },
+          {
+            "form": "ir-",
+            "label": "agentive possessive prefix",
+            "notes": "part of the ir . . . ri . . . ut- sequence for benefactive patient"
+          },
+          {
+            "form": "ri-",
+            "label": "physical possessive prefix",
+            "notes": "part of the ir . . . ri . . . ut- sequence for benefactive patient"
+          },
+          {
+            "form": "ut-",
+            "label": "P.POSS",
+            "notes": "part of the ir . . . ri . . . ut- sequence for benefactive patient"
+          }
+        ],
+        "tables": []
+      },
+      {
+        "heading": "Verbs: Classes and Major Constituents",
+        "content": "There are four major classes of verb stems, each characterized by distinctive inflectional properties:\n* active verbs, both transitive and intransitive;\n* passive (or stative) verbs, which generally describe actions that befall people, who have no control over that action, and so what is interpretively an agent (or subject) pronoun is grammatically a patient (or object) pronoun;\n* descriptive verbs, which in general are the equivalent of adjectives in English—that is, English constructions comprising the copular verb 'to be' followed by an adjective;\n* locative verbs, which usually describe a location and are the equivalent of English constructions of the verb 'to be' followed by a preposition or prepositional phrase.",
+        "morphemes_mentioned": [],
+        "tables": []
+      },
+      {
+        "heading": "Inflectional Prefixes",
+        "content": "Verbal prefixes fall into two groups: a large inner group whose members are more closely bound phonologically to one another and to the verb, and an outer group whose members are more loosely bound to the verb complex and can be classed more properly as proclitics, although most cannot occur independently.\n9. What are here designated passive verbs are more generally termed stative verbs in other languages. Since Skiri does not have a prototypical passive voice and these verbs describe actions that befall subjects (who have no control over an event and are literally passive), and since there is another construction in Skiri that is more appropriately termed stative, the term passive seems most appropriate for this class of verbs.",
+        "morphemes_mentioned": [],
+        "tables": []
+      }
+    ]
+  },
+  "page_5": {
+    "page_number": 33,
+    "sections": [
+      {
+        "heading": "GRAMMATICAL OVERVIEW",
+        "content": "The positions of the major inflectional constituents of the Skiri verb are portrayed in table 6.",
+        "morphemes_mentioned": [],
+        "tables": [
+          {
+            "caption": "Table 6. Major Positions in the Inflected Verb",
+            "rows": [
+              [
+                "Proclitics (Outer Prefixes)",
+                "Prefixes + Preverbs (Inner Prefixes)",
+                "Incorporated Noun (Agent/Patient)",
+                "STEM",
+                "Suffixes"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Inner Prefixes",
+        "content": "The inner prefixes, like all verbal affixes, have a fixed position relative to one another. The inner prefixes include the following grammatical and semantic categories. (Numbers and categories in bold in the following table indicate the minimally required elements in a fully formed verb.)",
+        "morphemes_mentioned": [],
+        "tables": [
+          {
+            "caption": "Table 7. The Inner Prefix Template",
+            "rows": [
+              [
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20",
+                "21",
+                "22",
+                "23",
+                "24",
+                "25",
+                "26"
+              ],
+              [
+                "EVIDENTIALS",
+                "MODALS",
+                "AGENT PRONOUNS, OBVIATIVE",
+                "INCLUSIVE PRONOUNS",
+                "AGENT PL, AGENT POSS, PREVERB",
+                "EVIDENTIAL",
+                "PATIENT PRONOUNS",
+                "INFINITIVE MODAL",
+                "PHYSICAL POSSESSION",
+                "AGENT POSS, BENEFACTIVE, PREVERB",
+                "RESULTATIVE/ SEQUENTIAL",
+                "AORIST, JUSSIVE",
+                "ADVERBIALS",
+                "AGENT PL, PATIENT PL",
+                "PATIENT PL, POSS PL, INDIR PAT PL",
+                "INDIV AGT PL, PATIENT PL",
+                "NOUN ± PL",
+                "STEM"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Mode.",
+        "content": "Every verb must be inflected for mode. There are nine non-subordinate (or independent) and four subordinate modes [table 7:10], one of which, the infinitive, is discontinuous [table 7:16]. Independent modes include the indicative, negative indicative, assertive, contingent, potential, absolutive, subjunctive, and infinitive,",
+        "morphemes_mentioned": [
+          {
+            "form": null,
+            "label": "indicative",
+            "slot": "mode",
+            "notes": "Independent mode"
+          },
+          {
+            "form": null,
+            "label": "negative indicative",
+            "slot": "mode",
+            "notes": "Independent mode"
+          },
+          {
+            "form": null,
+            "label": "assertive",
+            "slot": "mode",
+            "notes": "Independent mode"
+          },
+          {
+            "form": null,
+            "label": "contingent",
+            "slot": "mode",
+            "notes": "Independent mode"
+          },
+          {
+            "form": null,
+            "label": "potential",
+            "slot": "mode",
+            "notes": "Independent mode"
+          },
+          {
+            "form": null,
+            "label": "absolutive",
+            "slot": "mode",
+            "notes": "Independent mode"
+          },
+          {
+            "form": null,
+            "label": "subjunctive",
+            "slot": "mode",
+            "notes": "Independent mode"
+          },
+          {
+            "form": null,
+            "label": "infinitive",
+            "slot": "mode",
+            "notes": "Independent mode, discontinuous"
+          }
+        ],
+        "tables": []
+      }
+    ]
+  },
+  "page_6": {
+    "page_number": 34,
+    "sections": [
+      {
+        "heading": "Modal Prefixes",
+        "content": "while subordinate modes are the conditional, gerundial, subjunctive, and infinitive. The forms of the modal prefixes and their functions are given in Table 8.",
+        "morphemes_mentioned": [
+          {
+            "form": "ta-",
+            "label": "Indicative modal prefix",
+            "slot": "modal prefix",
+            "notes": "Non-subordinate, 1st/2nd person, functions: statements, directive statements"
+          },
+          {
+            "form": "ti-",
+            "label": "Indicative modal prefix",
+            "slot": "modal prefix",
+            "notes": "Non-subordinate, 3rd person, functions: statements, directive statements"
+          },
+          {
+            "form": "kaakaa-",
+            "label": "Negative Indicative modal prefix",
+            "slot": "modal prefix",
+            "notes": "Non-subordinate, 1st/2nd person, functions: negative statements, negative directive statements"
+          },
+          {
+            "form": "kaaki-",
+            "label": "Negative Indicative modal prefix",
+            "slot": "modal prefix",
+            "notes": "Non-subordinate, 3rd person, functions: negative statements, negative directive statements"
+          },
+          {
+            "form": "rii-",
+            "label": "Assertive modal prefix",
+            "slot": "modal prefix",
+            "notes": "Non-subordinate, functions: emphatic statements, directive statements, demonstration/presentation statements"
+          },
+          {
+            "form": "i-",
+            "label": "Contingent modal prefix",
+            "slot": "modal prefix",
+            "notes": "Non-subordinate, 1st/2nd person, functions: future/resultative statements, sequential statements, mild imperative statements/requests"
+          },
+          {
+            "form": "ri-",
+            "label": "Contingent modal prefix",
+            "slot": "modal prefix",
+            "notes": "Non-subordinate, 3rd person, functions: future/resultative statements, sequential statements, mild imperative statements/requests"
+          },
+          {
+            "form": "kuus ... i-",
+            "label": "Potential modal prefix",
+            "slot": "modal prefix",
+            "notes": "Non-subordinate, 1st/3rd person, functions: future statements, statements of possibility/potentiality/probability"
+          },
+          {
+            "form": "kaas ... i-",
+            "label": "Potential modal prefix",
+            "slot": "modal prefix",
+            "notes": "Non-subordinate, 2nd person, functions: future statements, statements of possibility/potentiality/probability"
+          },
+          {
+            "form": "ra-",
+            "label": "Absolutive modal prefix",
+            "slot": "modal prefix",
+            "notes": "Non-subordinate, functions: interrogative statements, statements in narration, demonstrative statements"
+          },
+          {
+            "form": "aa-",
+            "label": "Subjunctive (Optative) modal prefix",
+            "slot": "modal prefix",
+            "notes": "Non-subordinate, 1st/2nd person, functions: statements of wish/desire"
+          },
+          {
+            "form": "ii-",
+            "label": "Subjunctive (Optative) modal prefix",
+            "slot": "modal prefix",
+            "notes": "Non-subordinate, 3rd person, functions: statements of wish/desire"
+          },
+          {
+            "form": "ra ... ku-",
+            "label": "Infinitive (Admonitive) modal prefix",
+            "slot": "modal prefix",
+            "notes": "Non-subordinate, functions: directive statements"
+          },
+          {
+            "form": "i-",
+            "label": "Contingent (Conditional) modal prefix",
+            "slot": "modal prefix",
+            "notes": "Subordinate, 1st/2nd person, functions: conditional/contingent statements"
+          },
+          {
+            "form": "ri-",
+            "label": "Contingent (Conditional) modal prefix",
+            "slot": "modal prefix",
+            "notes": "Subordinate, 3rd person, functions: conditional/contingent statements"
+          },
+          {
+            "form": "ra-",
+            "label": "Absolutive (Gerundial) modal prefix",
+            "slot": "modal prefix",
+            "notes": "Subordinate, functions: subordinate statements, gerundial forms"
+          },
+          {
+            "form": "aa-",
+            "label": "Subjunctive modal prefix",
+            "slot": "modal prefix",
+            "notes": "Subordinate, 1st/2nd person, functions: unrealized/hypothetical/contrary to fact statements"
+          },
+          {
+            "form": "ii-",
+            "label": "Subjunctive modal prefix",
+            "slot": "modal prefix",
+            "notes": "Subordinate, 3rd person, functions: unrealized/hypothetical/contrary to fact statements"
+          },
+          {
+            "form": "ra ... ku-",
+            "label": "Infinitive modal prefix",
+            "slot": "modal prefix",
+            "notes": "Subordinate, functions: complement statements after verbs of wishing/thinking/feeling, subordinate statements, directive statements"
+          }
+        ],
+        "tables": [
+          {
+            "caption": "Table 8. Modal Prefixes: Forms and Functions",
+            "rows": [
+              [
+                "Mode",
+                "Subordinate/Non-subordinate",
+                "Form(s)",
+                "Function(s)"
+              ],
+              [
+                "Indicative IND",
+                "Non-subordinate",
+                "ta- 1/2.A",
+                "Statements"
+              ],
+              [
+                "",
+                "",
+                "ti- 3.A",
+                "Directive statements"
+              ],
+              [
+                "Negative Indicative NEG.IND",
+                "Non-subordinate",
+                "kaakaa- 1/2.A",
+                "Negative statements"
+              ],
+              [
+                "",
+                "",
+                "kaaki- 3.A",
+                "Negative directive statements"
+              ],
+              [
+                "Assertive ASSR",
+                "Non-subordinate",
+                "rii-",
+                "Emphatic statements"
+              ],
+              [
+                "",
+                "",
+                "",
+                "Directive statements"
+              ],
+              [
+                "",
+                "",
+                "",
+                "Demonstration, presentation statements"
+              ],
+              [
+                "Contingent CONT",
+                "Non-subordinate",
+                "i- 1/2.A",
+                "Future, resultative statements"
+              ],
+              [
+                "",
+                "",
+                "ri- 3.A",
+                "Sequential statements"
+              ],
+              [
+                "",
+                "",
+                "",
+                "Mild imperative statements, requests"
+              ],
+              [
+                "Potential POT",
+                "Non-subordinate",
+                "kuus ... i- 1/3.A",
+                "Future statements"
+              ],
+              [
+                "",
+                "",
+                "kaas ... i- 2.A",
+                "Statements of possibility, potentiality, probability"
+              ],
+              [
+                "Absolutive ABS",
+                "Non-subordinate",
+                "ra-",
+                "Interrogative statements"
+              ],
+              [
+                "",
+                "",
+                "",
+                "Statements in narration"
+              ],
+              [
+                "",
+                "",
+                "",
+                "Demonstrative statements"
+              ],
+              [
+                "Subjunctive (Optative) SUBJ",
+                "Non-subordinate",
+                "aa- 1/2.A",
+                "Statements of wish, desire"
+              ],
+              [
+                "",
+                "",
+                "ii- 3.A",
+                ""
+              ],
+              [
+                "Infinitive (Admonitive) INF",
+                "Non-subordinate",
+                "ra ... ku-",
+                "Directive statements"
+              ],
+              [
+                "Contingent (Conditional) CONT",
+                "Subordinate",
+                "i- 1/2.A",
+                "Conditional, contingent statements"
+              ],
+              [
+                "",
+                "",
+                "ri- 3.A",
+                ""
+              ],
+              [
+                "Absolutive (Gerundial) ABS",
+                "Subordinate",
+                "ra-",
+                "Subordinate statements"
+              ],
+              [
+                "",
+                "",
+                "",
+                "Gerundial forms"
+              ],
+              [
+                "Subjunctive SUBJ",
+                "Subordinate",
+                "aa- 1/2.A",
+                "Unrealized, hypothetical, contrary to fact statements"
+              ],
+              [
+                "",
+                "",
+                "ii- 3.A",
+                ""
+              ],
+              [
+                "Infinitive INF",
+                "Subordinate",
+                "ra ... ku-",
+                "Complement statements after verbs of wishing, thinking, feeling"
+              ],
+              [
+                "",
+                "",
+                "",
+                "Subordinate statements"
+              ],
+              [
+                "",
+                "",
+                "",
+                "Directive statements"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "page_8": {
+    "page_number": 36,
+    "sections": [
+      {
+        "heading": "GRAMMATICAL OVERVIEW",
+        "content": "them (individual animate objects)' < ta- IND.1/2.A + t- 1.A + ak- 3.AN.P + raar- 3.P.INDV.A + raspii 'look for' + -Ø PERF",
+        "morphemes_mentioned": [
+          {
+            "form": "ta-",
+            "label": "IND.1/2.A",
+            "notes": "Independent, 1st/2nd person Agent"
+          },
+          {
+            "form": "t-",
+            "label": "1.A",
+            "notes": "1st person Agent"
+          },
+          {
+            "form": "ak-",
+            "label": "3.AN.P",
+            "notes": "3rd person Animate Patient"
+          },
+          {
+            "form": "raar-",
+            "label": "3.P.INDV.A",
+            "notes": "3rd person Plural Individual Agent"
+          },
+          {
+            "form": "raspii",
+            "label": "verb stem",
+            "notes": "'look for'"
+          },
+          {
+            "form": "-Ø",
+            "label": "PERF",
+            "notes": "Perfective aspect"
+          }
+        ],
+        "tables": [
+          {
+            "caption": "Table 10. Plural Prefixes",
+            "rows": [
+              [
+                "Person",
+                "Active transitive",
+                "Active intransitive",
+                "Passive",
+                "Descriptive",
+                "Locative"
+              ],
+              [
+                "AGENT",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "1st, 2nd",
+                "rak-",
+                "rak-",
+                "",
+                "rak-",
+                "rak-"
+              ],
+              [
+                "",
+                "",
+                "rak- COLL",
+                "",
+                "",
+                ""
+              ],
+              [
+                "",
+                "",
+                "rak- + raar- INDV",
+                "",
+                "",
+                ""
+              ],
+              [
+                "3rd",
+                "si...ir-",
+                "ir- COLL",
+                "",
+                "ir- COLL",
+                "ir- COLL"
+              ],
+              [
+                "",
+                "",
+                "raar- INDV",
+                "",
+                "raar- INDV",
+                "raar- INDV"
+              ],
+              [
+                "PATIENT",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "1st, 2nd",
+                "",
+                "",
+                "rak-",
+                "",
+                ""
+              ],
+              [
+                "3rd",
+                "",
+                "",
+                "ak- AN",
+                "",
+                ""
+              ],
+              [
+                "",
+                "",
+                "",
+                "raar- INAN",
+                "",
+                ""
+              ],
+              [
+                "",
+                "",
+                "",
+                "ak- + raar- AN INDV",
+                "",
+                ""
+              ],
+              [
+                "",
+                "",
+                "",
+                "ir...ak-",
+                "",
+                ""
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Possession.",
+        "content": "Both subject and object possession are marked by either single prefixes or combinations of prefixes. There is a distinction between regular and partitive possession, and between simple subject ownership and actual subject physical possession. Independent possessive constructions, which are gerundial forms of the verb 'to be one's' and serve as modifiers of nouns, are rarely used.\n\n• ir . . . uk [ + ku-] 'agent possessor' (A.POSS) The construction that forms agent possession is ordinarily preceded by the proclitic ku- 'indefinite' [table 12:2] followed by the prefix ir- (first and second agent) or a- (third person agent) [table 7:13] and the verb stem uk 'be, exist' [table 7:26], as in the following example,\n\nkutakawirahuʔ 'he owns that acre' < ku- INDF + ti- IND + Ø- 3.A + a- A.POSS + kawirahur 'be an acre' + uk 'be, exist' + -Ø PERF\n\n• ir . . . ri . . . uur- 'physical agent possessor' (PHY.POSS) These three prefixes [table 7:13, 17, 18], when occurring with active verb stems designating positions and with certain locative and descriptive stems, translate as 'have, possess', as in,\n\ntaruuraariit 'he has it, possess it (something standing)' < ti- IND + Ø- 3.A + a- A.POSS + ri- PHY.POSS + uur- P.POSS + ariik 'be standing' + -Ø PERF\n\ntatiriiriikstahka 'he keeps his arrows in it' < ta- IND.1/2A + t- 1.A + ir- A.POSS + ri- PHY.POSS + uur- P.POSS + riiks- 'arrow' + raar- PL + ka 'be in' + -Ø PERF",
+        "morphemes_mentioned": [
+          {
+            "form": "ku-",
+            "label": "proclitic",
+            "notes": "'indefinite'"
+          },
+          {
+            "form": "ir-",
+            "label": "prefix",
+            "slot": "A.POSS",
+            "notes": "first and second agent"
+          },
+          {
+            "form": "a-",
+            "label": "prefix",
+            "slot": "A.POSS",
+            "notes": "third person agent"
+          },
+          {
+            "form": "uk",
+            "label": "verb stem",
+            "notes": "'be, exist'"
+          },
+          {
+            "form": "ku-",
+            "label": "INDF",
+            "notes": "Indefinite"
+          },
+          {
+            "form": "ti-",
+            "label": "IND",
+            "notes": "Independent"
+          },
+          {
+            "form": "Ø-",
+            "label": "3.A",
+            "notes": "3rd person Agent"
+          },
+          {
+            "form": "a-",
+            "label": "A.POSS",
+            "notes": "Agent Possessor"
+          },
+          {
+            "form": "kawirahur",
+            "label": "verb stem",
+            "notes": "'be an acre'"
+          },
+          {
+            "form": "uk",
+            "label": "verb stem",
+            "notes": "'be, exist'"
+          },
+          {
+            "form": "-Ø",
+            "label": "PERF",
+            "notes": "Perfective aspect"
+          },
+          {
+            "form": "ri-",
+            "label": "PHY.POSS",
+            "notes": "Physical Agent Possessor"
+          },
+          {
+            "form": "uur-",
+            "label": "P.POSS",
+            "notes": "Patient Possessor"
+          },
+          {
+            "form": "ariik",
+            "label": "verb stem",
+            "notes": "'be standing'"
+          },
+          {
+            "form": "ta-",
+            "label": "IND.1/2A",
+            "notes": "Independent, 1st/2nd person Agent"
+          },
+          {
+            "form": "t-",
+            "label": "1.A",
+            "notes": "1st person Agent"
+          },
+          {
+            "form": "ir-",
+            "label": "A.POSS",
+            "notes": "Agent Possessor"
+          },
+          {
+            "form": "riiks-",
+            "label": "noun stem",
+            "notes": "'arrow'"
+          },
+          {
+            "form": "raar-",
+            "label": "PL",
+            "notes": "Plural"
+          },
+          {
+            "form": "ka",
+            "label": "verb stem",
+            "notes": "'be in'"
+          }
+        ],
+        "tables": []
+      }
+    ]
+  },
+  "page_9": {
+    "page_number": 37,
+    "sections": [
+      {
+        "heading": "Patient Possession",
+        "content": "uur- ‘patient possession’ (PHY.POSS). This morpheme occurs when someone other than the agent of the verb possesses a noun [table 7:18]. The pronominal patient occurring with the verb specifies the possessor. Illustrating its use is the following:\ntatuuhkuutit aruusaʔ ‘I killed your horse’ < ta- IND.1/2.A + t- 1.A + a- 2.P + uur- PHY.POSS + kuutik ‘kill’ + -Ø PERF",
+        "morphemes_mentioned": [
+          {
+            "form": "uur-",
+            "label": "patient possession",
+            "gloss": "PHY.POSS",
+            "type": "prefix",
+            "notes": "Occurs when someone other than the agent of the verb possesses a noun.",
+            "context_example": "tatuuhkuutit aruusaʔ"
+          },
+          {
+            "form": "ta-",
+            "label": "IND.1/2.A",
+            "type": "prefix",
+            "context_example": "tatuuhkuutit aruusaʔ"
+          },
+          {
+            "form": "t-",
+            "label": "1.A",
+            "type": "prefix",
+            "context_example": "tatuuhkuutit aruusaʔ"
+          },
+          {
+            "form": "a-",
+            "label": "2.P",
+            "type": "prefix",
+            "context_example": "tatuuhkuutit aruusaʔ"
+          },
+          {
+            "form": "kuutik",
+            "label": "kill",
+            "type": "verb stem",
+            "context_example": "tatuuhkuutit aruusaʔ"
+          },
+          {
+            "form": "-Ø",
+            "label": "PERF",
+            "type": "suffix",
+            "context_example": "tatuuhkuutit aruusaʔ"
+          }
+        ],
+        "tables": []
+      },
+      {
+        "heading": "Benefaction",
+        "content": "Benefaction. The morpheme ut- ‘benefactive; dative’ (BEN/DAT) marks a dative patient with non-discontinuous transitive verb stems [table 7:18], as in,\ntatuutakusit ‘I picked it up for them’ < ta- IND.1/2.A + t- 1.A + ut- BEN + ak- PL.BEN + kusik ‘pick up’ + -Ø PERF",
+        "morphemes_mentioned": [
+          {
+            "form": "ut-",
+            "label": "benefactive; dative",
+            "gloss": "BEN/DAT",
+            "type": "prefix",
+            "notes": "Marks a dative patient with non-discontinuous transitive verb stems.",
+            "context_example": "tatuutakusit"
+          },
+          {
+            "form": "ta-",
+            "label": "IND.1/2.A",
+            "type": "prefix",
+            "context_example": "tatuutakusit"
+          },
+          {
+            "form": "t-",
+            "label": "1.A",
+            "type": "prefix",
+            "context_example": "tatuutakusit"
+          },
+          {
+            "form": "ak-",
+            "label": "PL.BEN",
+            "type": "prefix",
+            "context_example": "tatuutakusit"
+          },
+          {
+            "form": "kusik",
+            "label": "pick up",
+            "type": "verb stem",
+            "context_example": "tatuutakusit"
+          },
+          {
+            "form": "-Ø",
+            "label": "PERF",
+            "type": "suffix",
+            "context_example": "tatuutakusit"
+          }
+        ],
+        "tables": []
+      },
+      {
+        "heading": "Evidentials",
+        "content": "Evidentials. Members of this category convey a speaker’s source of information or judgment of the validity of a statement, making explicit the kind of evidence supporting it [table 7:9, 14]. The five evidentials in Skiri are presented in table 11.",
+        "morphemes_mentioned": [
+          {
+            "form": "wi-",
+            "label": "QUOT",
+            "approximate_gloss": "'it is said'",
+            "type": "evidental prefix",
+            "slot": "Precedes modal",
+            "co_occurring_modes": "Indicative",
+            "usage_contexts": "Narratives, discourse",
+            "meaning": "Speaker is repeating what has been told"
+          },
+          {
+            "form": "ar-",
+            "label": "EV",
+            "approximate_gloss": "'evidenty; it seems'",
+            "type": "evidental prefix",
+            "slot": "Precedes modal",
+            "co_occurring_modes": "Absolutive, Contingent",
+            "usage_contexts": "Past activity or one begun",
+            "meaning": "Speaker has not witnessed an event, Speaker cannot see a designated object"
+          },
+          {
+            "form": "ar-",
+            "label": "EV",
+            "approximate_gloss": null,
+            "type": "evidental prefix",
+            "slot": "Follows modal",
+            "co_occurring_modes": "Absolutive, Contingent, Potential, Subjunctive",
+            "usage_contexts": "Unrealized activity",
+            "meaning": "Speaker will not witness an event"
+          },
+          {
+            "form": "ar-",
+            "label": "EV",
+            "approximate_gloss": "'would' + V",
+            "type": "evidental prefix",
+            "slot": "Follows modal",
+            "co_occurring_modes": "Indicative, Infinitive",
+            "usage_contexts": "Periodic past activity, usu. indef. time",
+            "meaning": "Speaker describes an expected or normative activity"
+          },
+          {
+            "form": "kuur-",
+            "label": "DUB.1",
+            "approximate_gloss": "'must have' + V",
+            "type": "evidental prefix",
+            "slot": "Precedes modal",
+            "co_occurring_modes": "Absolutive",
+            "usage_contexts": "Narratives, accounts",
+            "meaning": "Speaker has not witnessed an event, Statement indicates element of doubt"
+          },
+          {
+            "form": "kuurur-",
+            "label": "DUB.2",
+            "approximate_gloss": "'then (presumably)' + V",
+            "type": "evidental prefix",
+            "slot": "Precedes modal",
+            "co_occurring_modes": "Contingent",
+            "usage_contexts": "Sequential activity in narratives",
+            "meaning": "Speaker has not witnessed an event, Statement indicates element of doubt"
+          },
+          {
+            "form": "tiir-",
+            "label": "INFR",
+            "approximate_gloss": "'must have' + V",
+            "type": "evidental prefix",
+            "slot": "Precedes modal",
+            "co_occurring_modes": "Absolutive",
+            "usage_contexts": "Narratives, conversations",
+            "meaning": "Speaker infers occurrence of event"
+          }
+        ],
+        "tables": [
+          {
+            "caption": "Table 11. Evidential Prefixes: Meanings and Distributions",
+            "rows": [
+              [
+                "Evidential",
+                "Approximate gloss",
+                "Co-occurring modes",
+                "Position relative to modal",
+                "Usage contexts",
+                "Meaning"
+              ],
+              [
+                "wi- QUOT",
+                "'it is said'",
+                "Indicative",
+                "Precedes",
+                "Narratives, discourse",
+                "Speaker is repeating what has been told"
+              ],
+              [
+                "ar- EV",
+                "'evidenty; it seems'",
+                "Absolutive\nContingent",
+                "Precedes",
+                "Past activity\nor one begun",
+                "Speaker has not\nwitnessed an event\nSpeaker cannot see a\ndesignated object"
+              ],
+              [
+                "ar- EV",
+                "",
+                "Absolutive\nContingent\nPotential\nSubjunctive",
+                "Follows",
+                "Unrealized\nactivity",
+                "Speaker will not\nwitness an event"
+              ],
+              [
+                "ar- EV",
+                "'would' + V",
+                "Indicative\nInfinitive",
+                "Follows",
+                "Periodic past\nactivity, usu.\nindef. time",
+                "Speaker describes an\nexpected or\nnormative activity"
+              ],
+              [
+                "kuur- DUB.1",
+                "'must have' + V",
+                "Absolutive",
+                "Precedes",
+                "Narratives,\naccounts",
+                "Speaker has not\nwitnessed an event\nStatement indicates\nelement of doubt"
+              ],
+              [
+                "kuurur- DUB.2",
+                "'then\n(presumably)' + V",
+                "Contingent",
+                "Precedes",
+                "Sequential\nactivity in\nnarratives",
+                "Speaker has not\nwitnessed an event\nStatement indicates\nelement of doubt"
+              ],
+              [
+                "tiir- INFR",
+                "'must have' + V",
+                "Absolutive",
+                "Precedes",
+                "Narratives,\nconversations",
+                "Speaker infers\noccurrence of event"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "page_10": {
+    "page_number": 38,
+    "sections": [
+      {
+        "heading": "Examples of verb forms with evidential prefixes",
+        "content": "Examples of verb forms with evidential prefixes are the following:\n\nwitiʔitat ‘there was a village’ < wi- QUOT + ti- IND + Ø- 3.A + itak ‘be a village’ + -Ø PERF\n\nkuubasuutiiʔit aruusaʔ ‘you must have seen the horse’ < kuur- DUB.1 + ra- ABS + Ø- 3.A + ut- PREV + iiʔirik ‘see’ + -Ø PERF\n\nkusaahkikat ‘he might cry (at some future time when speaker will not see it)’ < kuus- POT.1/3.A + Ø- 3.A + i- SEQ + ar- EV + kikak ‘cry’ + -Ø PERF",
+        "morphemes_mentioned": [
+          {
+            "form": "wi-",
+            "label": "QUOT",
+            "notes": "quotative"
+          },
+          {
+            "form": "ti-",
+            "label": "IND",
+            "notes": "indicative"
+          },
+          {
+            "form": "Ø-",
+            "label": "3.A",
+            "notes": "3rd person agent"
+          },
+          {
+            "form": "itak",
+            "label": "verb stem",
+            "notes": "'be a village'"
+          },
+          {
+            "form": "-Ø",
+            "label": "PERF",
+            "notes": "perfective"
+          },
+          {
+            "form": "kuur-",
+            "label": "DUB.1",
+            "notes": "dubitative, 1st person"
+          },
+          {
+            "form": "ra-",
+            "label": "ABS",
+            "notes": "absolutive"
+          },
+          {
+            "form": "ut-",
+            "label": "PREV",
+            "notes": "preverb"
+          },
+          {
+            "form": "iiʔirik",
+            "label": "verb stem",
+            "notes": "'see'"
+          },
+          {
+            "form": "kuus-",
+            "label": "POT.1/3.A",
+            "notes": "potential, 1st/3rd person agent"
+          },
+          {
+            "form": "i-",
+            "label": "SEQ",
+            "notes": "sequential"
+          },
+          {
+            "form": "ar-",
+            "label": "EV",
+            "notes": "evidential"
+          },
+          {
+            "form": "kikak",
+            "label": "verb stem",
+            "notes": "'cry'"
+          }
+        ],
+        "tables": []
+      },
+      {
+        "heading": "Tense",
+        "content": "As a grammatical category, tense is little developed in Skiri. Most verb forms are not marked for tense and translate temporally as either past or present or sometimes future. The potential mode and intentive aspect frequently translate into English as a future tense, but their meanings are wider than that. The one tense prefix is an aorist that is optionally used to indicate past time [table 7:20]. Its form is uks-, the same as the jussive prefix.\n\ntatuksat ‘I went’ < ta- IND.1/2.A + t- 1.A + uks- AOR + at ‘go’ + -Ø PERF;\ncp. taatat ‘I went’ < ta- IND.1/2.A + t- 1.A + at ‘go’ + -Ø PERF\n\ntiibatuuksitkaspaawaa ‘I must have been eating in my sleep’ < tiir- INFR + ra- ABS + t- 1.A + uks- AOR + itkas ‘sleep’ + waawa- DIST + a ‘eat’ + -Ø PERF",
+        "morphemes_mentioned": [
+          {
+            "form": "uks-",
+            "label": "AOR",
+            "notes": "aorist prefix, same form as jussive prefix"
+          },
+          {
+            "form": "ta-",
+            "label": "IND.1/2.A",
+            "notes": "indicative, 1st/2nd person agent"
+          },
+          {
+            "form": "t-",
+            "label": "1.A",
+            "notes": "1st person agent"
+          },
+          {
+            "form": "at",
+            "label": "verb stem",
+            "notes": "'go'"
+          },
+          {
+            "form": "tiir-",
+            "label": "INFR",
+            "notes": "inferential"
+          },
+          {
+            "form": "itkas",
+            "label": "verb stem",
+            "notes": "'sleep'"
+          },
+          {
+            "form": "waawa-",
+            "label": "DIST",
+            "notes": "distributive"
+          },
+          {
+            "form": "a",
+            "label": "verb stem",
+            "notes": "'eat'"
+          }
+        ],
+        "tables": []
+      },
+      {
+        "heading": "Exhortation",
+        "content": "Exhortation. There are many constructions that are used to form commands and requests of varying degrees of urgency.\n\n*   The most common, and strongest, comprises the contingent mode and the jussive prefix uks- [7:20], which is identical in shape to the aorist prefix. It is a simple imperative that forms commands and is inflected for all personal agents. Examples are:\n    sukskirikaʔaaʔ ‘wake up!’ < i- CONT.1/2.A + s- 2.A + uks- JUSS + kirikaʔaar ‘wake up’ + -Ø PERF\n    ciksuhuurawaciiruutit ‘let’s go outside now!’ < i- CONT.1/2.A + acir- 1.DU.IN.A + uks- JUSS + uhuur- ‘finally’ + awacitik ‘go outside’ + ruu- DIST + -Ø PERF\n\n*   Almost as common in usage as the preceding construction is the use of the contingent mode, often preceded by the hortatory (HORT) proclitic ki- [table 12:8]. It is a milder imperative that expresses exhortation, as in\n    ruukiitaat ‘let me go there’ < ruu- ‘there’ + ki- HORT + i- CONT.1/2.A + t- 1.A + at ‘go’ + -Ø PERF\n    kiʔiitiksbuubkaaʔ ‘let me dance now’ < ki- HORT + i- CONT.1/2.A + t- 1.A + ir- PREV + uks- JUSS + uhuur- ‘at last’ + kaaʔa ‘dance’ + -Ø PERF",
+        "morphemes_mentioned": [
+          {
+            "form": "uks-",
+            "label": "JUSS",
+            "notes": "jussive prefix, identical in shape to aorist prefix"
+          },
+          {
+            "form": "i-",
+            "label": "CONT.1/2.A",
+            "notes": "contingent mode, 1st/2nd person agent"
+          },
+          {
+            "form": "s-",
+            "label": "2.A",
+            "notes": "2nd person agent"
+          },
+          {
+            "form": "kirikaʔaar",
+            "label": "verb stem",
+            "notes": "'wake up'"
+          },
+          {
+            "form": "acir-",
+            "label": "1.DU.IN.A",
+            "notes": "1st person dual inclusive agent"
+          },
+          {
+            "form": "uhuur-",
+            "label": "preverb",
+            "notes": "'finally' or 'at last'"
+          },
+          {
+            "form": "awacitik",
+            "label": "verb stem",
+            "notes": "'go outside'"
+          },
+          {
+            "form": "ruu-",
+            "label": "DIST",
+            "notes": "distributive"
+          },
+          {
+            "form": "ki-",
+            "label": "HORT",
+            "slot": "proclitic",
+            "notes": "hortatory proclitic"
+          },
+          {
+            "form": "ruu-",
+            "label": "preverb",
+            "notes": "'there'"
+          },
+          {
+            "form": "ir-",
+            "label": "PREV",
+            "notes": "preverb"
+          },
+          {
+            "form": "kaaʔa",
+            "label": "verb stem",
+            "notes": "'dance'"
+          }
+        ],
+        "tables": []
+      }
+    ]
+  },
+  "page_11": {
+    "page_number": 39,
+    "sections": [
+      {
+        "heading": null,
+        "content": "Kiʔíisukskuutíirit cikstit. 'Take a good look at me!' < ki- HORT + i- CONT. 1/2.A + s- 2.A + uks- JUSS + ku- 1.P + ut- PREV + iirik 'see, look at' + -Ø PERF\nFrequently the potential mode is used to admonish someone, as in\npahíituʔ kaasíkaa 'you must be quiet inside (there)' < pahiit- quiet; slow' + -uʔ NOM kaas- POT.2.A + s- 2.A + i- SEQ + kaa 'inside' + aah 'go around' + -Ø PERF",
+        "morphemes_mentioned": [
+          {
+            "form": "ki-",
+            "label": "HORT",
+            "slot": null,
+            "notes": "Hortative"
+          },
+          {
+            "form": "i-",
+            "label": "CONT",
+            "slot": null,
+            "notes": "Continuative"
+          },
+          {
+            "form": "s-",
+            "label": "2.A",
+            "slot": null,
+            "notes": "2nd person Agent"
+          },
+          {
+            "form": "uks-",
+            "label": "JUSS",
+            "slot": null,
+            "notes": "Jussive"
+          },
+          {
+            "form": "ku-",
+            "label": "1.P",
+            "slot": null,
+            "notes": "1st person Patient"
+          },
+          {
+            "form": "ut-",
+            "label": "PREV",
+            "slot": null,
+            "notes": "Preverb"
+          },
+          {
+            "form": "iirik",
+            "label": "verb stem",
+            "slot": null,
+            "notes": "'see, look at'"
+          },
+          {
+            "form": "-Ø",
+            "label": "PERF",
+            "slot": null,
+            "notes": "Perfective"
+          },
+          {
+            "form": "pahiit-",
+            "label": "verb stem",
+            "slot": null,
+            "notes": "'quiet; slow'"
+          },
+          {
+            "form": "-uʔ",
+            "label": "NOM",
+            "slot": null,
+            "notes": "Nominalizer"
+          },
+          {
+            "form": "kaas-",
+            "label": "POT.2.A",
+            "slot": null,
+            "notes": "Potential 2nd person Agent"
+          },
+          {
+            "form": "i-",
+            "label": "SEQ",
+            "slot": null,
+            "notes": "Sequential"
+          },
+          {
+            "form": "kaa",
+            "label": "preverb/adverb",
+            "slot": null,
+            "notes": "'inside'"
+          },
+          {
+            "form": "aah",
+            "label": "verb stem",
+            "slot": null,
+            "notes": "'go around'"
+          }
+        ],
+        "tables": []
+      },
+      {
+        "heading": "Directives or instructions",
+        "content": "Directives or instructions are expressed by the indicative, negative indicative, and assertive modes with third person singular agent [table 7:10]. They are used, for example, when explaining to someone what one does in a certain situation or context or when telling someone how to make something.\nkaakiiraakii 'don't be long' < kaaki- NEG.IND + Ø- 3.A + i- SEQ + raakiir 'be a long time' + -Ø PERF\nkariiriiraakii 'don't be long!' < karíi- EMPH.NEG + rii- ASSR + Ø- 3.A + i- SEQ + raakiir 'be a long time' + -Ø PERF\nAaka, a raakutikuriiwictaawiiʔat. 'Oh, you should help me!' < . . . a 'and' + raa- 'just' + ku- INDF + ti- IND + Ø- 3.A + a- PREV + ku- 1.P + ri- PHY.BEN + ut- PREV + i- SEQ + awaahc- 'at least' + raawiiʔat 'help' + -Ø PERF",
+        "morphemes_mentioned": [
+          {
+            "form": "kaaki-",
+            "label": "NEG.IND",
+            "slot": null,
+            "notes": "Negative Indicative"
+          },
+          {
+            "form": "Ø-",
+            "label": "3.A",
+            "slot": null,
+            "notes": "3rd person Agent"
+          },
+          {
+            "form": "i-",
+            "label": "SEQ",
+            "slot": null,
+            "notes": "Sequential"
+          },
+          {
+            "form": "raakiir",
+            "label": "verb stem",
+            "slot": null,
+            "notes": "'be a long time'"
+          },
+          {
+            "form": "-Ø",
+            "label": "PERF",
+            "slot": null,
+            "notes": "Perfective"
+          },
+          {
+            "form": "karíi-",
+            "label": "EMPH.NEG",
+            "slot": null,
+            "notes": "Emphatic Negative"
+          },
+          {
+            "form": "rii-",
+            "label": "ASSR",
+            "slot": null,
+            "notes": "Assertive"
+          },
+          {
+            "form": "a",
+            "label": "conjunction",
+            "slot": null,
+            "notes": "'and'"
+          },
+          {
+            "form": "raa-",
+            "label": "preverb/adverb",
+            "slot": null,
+            "notes": "'just'"
+          },
+          {
+            "form": "ku-",
+            "label": "INDF",
+            "slot": null,
+            "notes": "Indefinite"
+          },
+          {
+            "form": "ti-",
+            "label": "IND",
+            "slot": null,
+            "notes": "Indicative"
+          },
+          {
+            "form": "a-",
+            "label": "PREV",
+            "slot": null,
+            "notes": "Preverb"
+          },
+          {
+            "form": "ku-",
+            "label": "1.P",
+            "slot": null,
+            "notes": "1st person Patient"
+          },
+          {
+            "form": "ri-",
+            "label": "PHY.BEN",
+            "slot": null,
+            "notes": "Physical Benefactive"
+          },
+          {
+            "form": "ut-",
+            "label": "PREV",
+            "slot": null,
+            "notes": "Preverb"
+          },
+          {
+            "form": "awaahc-",
+            "label": "preverb/adverb",
+            "slot": null,
+            "notes": "'at least'"
+          },
+          {
+            "form": "raawiiʔat",
+            "label": "verb stem",
+            "slot": null,
+            "notes": "'help'"
+          }
+        ],
+        "tables": []
+      },
+      {
+        "heading": null,
+        "content": "The subordinate form of the infinitive mode with a third person agent is often used to implore, entreat, or admonish a person, as when urging someone to take a certain course of action or to refrain from certain behavior [table 7:10, 16]. Examples:\nkararukuukikahu 'don't be drinking,' as when admonishing a person < kara- NEG + ra- INF.A + Ø- 3.A + ku- INF.B + i- SEQ + kiikaa 'drink' + -hus IMPF\nTaku rakuukaksa rakuracakipíitit capáat. 'Someone (should) call out for the women to gather!' < ra- INF.A + Ø- 3.A + ku- INF.B + i- SEQ + kaksa 'call out' + -Ø SUB.4",
+        "morphemes_mentioned": [
+          {
+            "form": "kara-",
+            "label": "NEG",
+            "slot": null,
+            "notes": "Negative"
+          },
+          {
+            "form": "ra-",
+            "label": "INF.A",
+            "slot": null,
+            "notes": "Infinitive Agent"
+          },
+          {
+            "form": "Ø-",
+            "label": "3.A",
+            "slot": null,
+            "notes": "3rd person Agent"
+          },
+          {
+            "form": "ku-",
+            "label": "INF.B",
+            "slot": null,
+            "notes": "Infinitive Benefactive"
+          },
+          {
+            "form": "i-",
+            "label": "SEQ",
+            "slot": null,
+            "notes": "Sequential"
+          },
+          {
+            "form": "kiikaa",
+            "label": "verb stem",
+            "slot": null,
+            "notes": "'drink'"
+          },
+          {
+            "form": "-hus",
+            "label": "IMPF",
+            "slot": null,
+            "notes": "Imperfective"
+          },
+          {
+            "form": "kaksa",
+            "label": "verb stem",
+            "slot": null,
+            "notes": "'call out'"
+          },
+          {
+            "form": "-Ø",
+            "label": "SUB.4",
+            "slot": null,
+            "notes": "Subordinate 4"
+          }
+        ],
+        "tables": []
+      },
+      {
+        "heading": "Adverbials",
+        "content": "Occurring after all prefixes except those for subject and object number and before the verb stem are two adverbial morphemes, uhuur- 'now, finally; a while' and awaahc- 'even, at least' [table 7:21]. An example is:\ntuksuhuubwíitit 'let me sit down a while!' < i- CONT.1/2.A + t- 1.A + uks- JUSS + uhuur- 'a while' + wiítik 'sit down' + -Ø PERF",
+        "morphemes_mentioned": [
+          {
+            "form": "uhuur-",
+            "label": "adverbial morpheme",
+            "slot": "after all prefixes except subject/object number, before verb stem",
+            "notes": "'now, finally; a while'"
+          },
+          {
+            "form": "awaahc-",
+            "label": "adverbial morpheme",
+            "slot": "after all prefixes except subject/object number, before verb stem",
+            "notes": "'even, at least'"
+          },
+          {
+            "form": "i-",
+            "label": "CONT.1/2.A",
+            "slot": null,
+            "notes": "Continuative 1st/2nd person Agent"
+          },
+          {
+            "form": "t-",
+            "label": "1.A",
+            "slot": null,
+            "notes": "1st person Agent"
+          },
+          {
+            "form": "uks-",
+            "label": "JUSS",
+            "slot": null,
+            "notes": "Jussive"
+          },
+          {
+            "form": "wiítik",
+            "label": "verb stem",
+            "slot": null,
+            "notes": "'sit down'"
+          },
+          {
+            "form": "-Ø",
+            "label": "PERF",
+            "slot": null,
+            "notes": "Perfective"
+          }
+        ],
+        "tables": []
+      }
+    ]
+  },
+  "page_12": {
+    "page_number": 40,
+    "sections": [
+      {
+        "heading": "Outer Prefixes (Proclitics)",
+        "content": "The outer prefixes in Skiri are more properly designated as proclitics, since they are attached more loosely to the verb—that is, most do not generally undergo phonological processes that fuse them to one another or to the verb complex—but yet they are not independent morphemes.",
+        "morphemes_mentioned": [],
+        "tables": [
+          {
+            "caption": "Table 12. The Outer Prefix, or Proclitic, Template",
+            "rows": [
+              [
+                "1",
+                "2",
+                "3",
+                "4"
+              ],
+              [
+                "LOC & TEMP ADVERBIALS",
+                "INDEFINITE",
+                "ADVERBIALS",
+                "DEMONSTRATIVES / DEICTICS"
+              ],
+              [
+                "5",
+                "6",
+                "7",
+                "8"
+              ],
+              [
+                "ADVERBIAL",
+                "DUAL (PL) NUMBER",
+                "REFLEXIVE / RECIPROCAL",
+                "NEGATIVES, YES/NO INTERROG"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Categories represented by proclitics",
+        "content": "There are five categories represented by proclitics, as follows.\n\n*   Reflexive and reciprocal (REFL). A single prefix witi- marks reflexive and reciprocal agents/patients [table 12:7], as in the following examples:\n    *   wititaatacikstariku ‘I keep my thoughts to myself’ < witi- REFL + ta- IND.1/2.A + t- 1.A + acikstarikus ‘hold one’s thoughts (to oneself)’ + -Ø PERF\n    *   siʔahawickaʔ siwitiirakuutiirit ‘they (DU) wanted to see each other’ < si- DU + ar- EV + ra- ABS + -Ø- 3.A + wicka ‘wish, want’ + -Ø PERF si- DU + witi- REFL + ra- INF.A + -Ø- 3.A + ku- INF.B + ut- PREV + iirik ‘see’ + -Ø PERF\n*   Negatives. Although there is a negative indicative mode that parallels the indicative mode, other modes, including the indicative, require or optionally use one of several negative prefixes that precede them [table 7:8]. The negative prefixes, together with meaning and modal co-occurrence restrictions, are given in table 13.",
+        "morphemes_mentioned": [
+          {
+            "form": "witi-",
+            "label": "REFL",
+            "slot": "7",
+            "notes": "marks reflexive and reciprocal agents/patients"
+          },
+          {
+            "form": "ta-",
+            "label": "IND.1/2.A",
+            "notes": "1st/2nd person singular indicative"
+          },
+          {
+            "form": "t-",
+            "label": "1.A",
+            "notes": "1st person singular agent"
+          },
+          {
+            "form": "acikstarikus",
+            "label": "verb stem",
+            "notes": "'hold one’s thoughts (to oneself)'"
+          },
+          {
+            "form": "-Ø",
+            "label": "PERF",
+            "notes": "perfective aspect"
+          },
+          {
+            "form": "si-",
+            "label": "DU",
+            "notes": "dual number"
+          },
+          {
+            "form": "ar-",
+            "label": "EV",
+            "notes": "evidential"
+          },
+          {
+            "form": "ra-",
+            "label": "ABS",
+            "notes": "absolutive"
+          },
+          {
+            "form": "wicka",
+            "label": "verb stem",
+            "notes": "'wish, want'"
+          },
+          {
+            "form": "ra-",
+            "label": "INF.A",
+            "notes": "infinitive A"
+          },
+          {
+            "form": "ku-",
+            "label": "INF.B",
+            "notes": "infinitive B"
+          },
+          {
+            "form": "ut-",
+            "label": "PREV",
+            "notes": "preverb"
+          },
+          {
+            "form": "iirik",
+            "label": "verb stem",
+            "notes": "'see'"
+          },
+          {
+            "form": "kara-",
+            "label": "NEG.1",
+            "slot": "8",
+            "notes": "Simple negative"
+          },
+          {
+            "form": "wi-",
+            "label": "QUOT",
+            "notes": "quotative (co-occurs with kara- in Indicative)"
+          },
+          {
+            "form": "ka-",
+            "label": "NEG.2",
+            "slot": "8",
+            "notes": "Simple negative"
+          },
+          {
+            "form": "kaaku-",
+            "label": "NEG.POSS",
+            "slot": "8",
+            "notes": "Negative possession"
+          },
+          {
+            "form": "karii . . . i-",
+            "label": "EMPH.NEG",
+            "slot": "8",
+            "notes": "Emphatic negative"
+          }
+        ],
+        "tables": [
+          {
+            "caption": "Table 13. Negative Prefixes",
+            "rows": [
+              [
+                "Negative Prefix",
+                "Function",
+                "Modal Co-occurrences"
+              ],
+              [
+                "kara- (NEG.1)",
+                "Simple negative",
+                "Indicative (+ wi- QUOT), Contingent, Absolutive, Conditional, Subjunctive, Infinitive"
+              ],
+              [
+                "ka- (NEG.2)",
+                "Simple negative",
+                "Absolutive, Gerundial, Infinitive"
+              ],
+              [
+                "kaaku- (NEG.POSS)",
+                "Negative possession",
+                "Subjunctive (non-subordinate)"
+              ],
+              [
+                "karii . . . i- (EMPH.NEG)",
+                "Emphatic negative",
+                "Assertive, Contingent, Absolutive"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "page_13": {
+    "page_number": 41,
+    "sections": [
+      {
+        "heading": "Interrogatives.",
+        "content": "There are six interrogative proclitics [table 12:8] that translate as, for example, ‘who’, ‘when’, ‘where’, ‘how many’, as well as form ‘yes-no’ questions. The two ‘yes-no’ interrogatives are more closely bound to the verb than are the other four forms. Those forms, together with modal co-occurrence restrictions, are presented in table 14.",
+        "morphemes_mentioned": [
+          {
+            "form": "ka-",
+            "label": "interrogative proclitic",
+            "slot": "proclitic",
+            "notes": "yes-no question"
+          },
+          {
+            "form": "ka- . . . i-",
+            "label": "interrogative proclitic",
+            "slot": "proclitic",
+            "notes": "negative yes-no questions"
+          },
+          {
+            "form": "takii",
+            "label": "interrogative proclitic",
+            "slot": "proclitic",
+            "notes": "'who', requires Absolutive mode"
+          },
+          {
+            "form": "kirikii",
+            "label": "interrogative proclitic",
+            "slot": "proclitic",
+            "notes": "'what, why, how', requires Absolutive mode"
+          },
+          {
+            "form": "kikii",
+            "label": "interrogative proclitic",
+            "slot": "proclitic",
+            "notes": "'what, why, how', requires Absolutive mode"
+          },
+          {
+            "form": "kickii",
+            "label": "interrogative proclitic",
+            "slot": "proclitic",
+            "notes": "'how many', requires Absolutive mode"
+          },
+          {
+            "form": "kiruu",
+            "label": "interrogative proclitic",
+            "slot": "proclitic",
+            "notes": "'where', requires Absolutive mode"
+          }
+        ],
+        "tables": [
+          {
+            "caption": "Table 14. Interrogative Pronouns",
+            "rows": [
+              [
+                "Interrogative Pronoun",
+                "English Translation",
+                "Modal Agreement"
+              ],
+              [
+                "ka-",
+                "yes-no question",
+                ""
+              ],
+              [
+                "ka- . . . i-",
+                "negative yes-no questions",
+                ""
+              ],
+              [
+                "takii",
+                "‘who’",
+                "Absolutive mode"
+              ],
+              [
+                "kirikii, kikii",
+                "‘what, why, how’",
+                "Absolutive mode"
+              ],
+              [
+                "kickii",
+                "‘how many’",
+                "Absolutive mode"
+              ],
+              [
+                "kiruu",
+                "‘where’",
+                "Absolutive mode"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Adverbials.",
+        "content": "There are several adverbial proclitics that serve as introductory or transitional elements (translating as ‘then’, ‘and so’) and as temporal anchors (‘now’, ‘then’) [table 12:3, 5]. The most common are the following:\nwii- ‘now; when’; also translates as English present perfective aspect, ‘have + -ed participle’\nwiitahurabwiicaʔ ‘it is getting close now; it has come close now’ < wii- ‘now’ + ti- IND + Ø- 3.A + a- PREV + huraah- ‘land’ + wiic- ‘moving close to a point’ + a ‘come’ + -Ø PERF\nwiirakuhurabkiwatat ‘when the season changes’ < wii- ‘when’ + ra- INF.A + Ø- 3.A + ku- INF.B + huraar- ‘earth’ + kiwatak ‘change’ + -Ø SUB.4\nkawiirasiiraʔ ‘have you come (i.e., arrived)?’ < ka- INTER + wii- ‘now’ + ra- ABS + s- 2.A + ir- PREV + a ‘come’ + -Ø PERF\nruu- ‘then; there’\nruuʔahiwakuʔ ‘then he said’ < ruu- ‘then’ + ar- EV + ri- CONT.3.A + Ø- 3.A + wakaʔu ‘say’ + -Ø PERF\nwiiruutisakuriisat ‘then the sun set’ < wii- ‘now’ + ruu- ‘then’ + ti- IND + Ø- 3.A + sakur- ‘sun’ + iis- ‘out of sight’ + at ‘go’ + -Ø PERF\nraa- ‘just’\nraaruutikitaarit pah ‘the moon was just on top’ < raa- ‘just’ + ruu- ‘then’ + ti- IND + Ø- 3.A + kitaarik ‘be standing on top’ + -Ø PERF",
+        "morphemes_mentioned": [
+          {
+            "form": "wii-",
+            "label": "adverbial proclitic",
+            "slot": "proclitic",
+            "notes": "'now; when', also translates as English present perfective aspect, 'have + -ed participle'"
+          },
+          {
+            "form": "ti-",
+            "label": "indicator",
+            "slot": "prefix"
+          },
+          {
+            "form": "Ø-",
+            "label": "person/number marker",
+            "slot": "prefix",
+            "notes": "3.A (3rd person A-series)"
+          },
+          {
+            "form": "a-",
+            "label": "preverb",
+            "slot": "preverb"
+          },
+          {
+            "form": "huraah-",
+            "label": "stem",
+            "slot": "stem",
+            "notes": "'land'"
+          },
+          {
+            "form": "wiic-",
+            "label": "stem",
+            "slot": "stem",
+            "notes": "'moving close to a point'"
+          },
+          {
+            "form": "a",
+            "label": "stem",
+            "slot": "stem",
+            "notes": "'come'"
+          },
+          {
+            "form": "-Ø",
+            "label": "suffix",
+            "slot": "suffix",
+            "notes": "PERF (perfective); SUB.4 (subordinative 4)"
+          },
+          {
+            "form": "ra-",
+            "label": "infinitive A",
+            "slot": "prefix"
+          },
+          {
+            "form": "ku-",
+            "label": "infinitive B",
+            "slot": "prefix"
+          },
+          {
+            "form": "huraar-",
+            "label": "stem",
+            "slot": "stem",
+            "notes": "'earth'"
+          },
+          {
+            "form": "kiwatak",
+            "label": "stem",
+            "slot": "stem",
+            "notes": "'change'"
+          },
+          {
+            "form": "ka-",
+            "label": "interrogative proclitic",
+            "slot": "proclitic",
+            "notes": "INTER (interrogative)"
+          },
+          {
+            "form": "ra-",
+            "label": "absolutive",
+            "slot": "prefix"
+          },
+          {
+            "form": "s-",
+            "label": "person/number marker",
+            "slot": "prefix",
+            "notes": "2.A (2nd person A-series)"
+          },
+          {
+            "form": "ir-",
+            "label": "preverb",
+            "slot": "preverb"
+          },
+          {
+            "form": "ruu-",
+            "label": "adverbial proclitic",
+            "slot": "proclitic",
+            "notes": "'then; there'"
+          },
+          {
+            "form": "ar-",
+            "label": "evidential",
+            "slot": "prefix"
+          },
+          {
+            "form": "ri-",
+            "label": "continuative",
+            "slot": "prefix",
+            "notes": "CONT.3.A (continuative 3rd person A-series)"
+          },
+          {
+            "form": "wakaʔu",
+            "label": "stem",
+            "slot": "stem",
+            "notes": "'say'"
+          },
+          {
+            "form": "sakur-",
+            "label": "stem",
+            "slot": "stem",
+            "notes": "'sun'"
+          },
+          {
+            "form": "iis-",
+            "label": "stem",
+            "slot": "stem",
+            "notes": "'out of sight'"
+          },
+          {
+            "form": "at",
+            "label": "stem",
+            "slot": "stem",
+            "notes": "'go'"
+          },
+          {
+            "form": "raa-",
+            "label": "adverbial proclitic",
+            "slot": "proclitic",
+            "notes": "'just'"
+          },
+          {
+            "form": "kitaarik",
+            "label": "stem",
+            "slot": "stem",
+            "notes": "'be standing on top'"
+          }
+        ],
+        "tables": []
+      }
+    ]
+  },
+  "page_14": {
+    "page_number": 42,
+    "sections": [
+      {
+        "heading": "iriruu- 'thereupon'",
+        "content": "iriruu- 'thereupon'\niriruuriíwuʔ 'thereupon they went' < iriruu- 'thereupon' + rii- ASSR + Ø- 3.A + wuu 'go PL.3.A' + -Ø PERF",
+        "morphemes_mentioned": [
+          {
+            "form": "iriruu-",
+            "label": "Deictic",
+            "notes": "thereupon"
+          },
+          {
+            "form": "rii-",
+            "label": "Assertive",
+            "notes": "ASSR"
+          },
+          {
+            "form": "Ø-",
+            "label": "Person/Number Marker",
+            "notes": "3rd person Agent (3.A)"
+          },
+          {
+            "form": "wuu",
+            "label": "Verb Stem",
+            "notes": "go PL.3.A"
+          },
+          {
+            "form": "-Ø",
+            "label": "Aspect Marker",
+            "notes": "Perfective (PERF)"
+          }
+        ],
+        "tables": []
+      },
+      {
+        "heading": "Deictics",
+        "content": "Deictics. Finally there is a class of five deictics that indicate both temporal and spatial location [table 12:4]. They appear individually and in combinations. The most common ones are the following:",
+        "morphemes_mentioned": [],
+        "tables": []
+      },
+      {
+        "heading": "tii- 'this; here'",
+        "content": "tii- 'this; here'\ntiiʔahabaacca 'a log was lying here' < tii- 'here' + ar- EV + ra- ABS + Ø- 3.A + haak- 'wood' + sa 'be lying' + -Ø PERF",
+        "morphemes_mentioned": [
+          {
+            "form": "tii-",
+            "label": "Deictic",
+            "notes": "this; here"
+          },
+          {
+            "form": "ar-",
+            "label": "Evidential",
+            "notes": "EV"
+          },
+          {
+            "form": "ra-",
+            "label": "Absolutive",
+            "notes": "ABS"
+          },
+          {
+            "form": "haak-",
+            "label": "Noun/Stem",
+            "notes": "wood"
+          },
+          {
+            "form": "sa",
+            "label": "Verb Stem",
+            "notes": "be lying"
+          }
+        ],
+        "tables": []
+      },
+      {
+        "heading": "ii- 'that; there'",
+        "content": "ii- 'that; there'\niiraaʔa 'when he came' < ii- 'then; when' + ra- ABS + Ø- 3.A + a- PREV + a 'come' + -Ø SUB.4\niirahaacca 'that log (lying)' < ii- 'that' + ra- ABS + Ø- 3.A + haak- 'wood' + sa 'be lying' + -Ø SUB.4",
+        "morphemes_mentioned": [
+          {
+            "form": "ii-",
+            "label": "Deictic",
+            "notes": "that; there; then; when"
+          },
+          {
+            "form": "a-",
+            "label": "Preverb",
+            "notes": "PREV"
+          },
+          {
+            "form": "a",
+            "label": "Verb Stem",
+            "notes": "come"
+          },
+          {
+            "form": "-Ø",
+            "label": "Subordinative Marker",
+            "notes": "Form 4 (SUB.4)"
+          }
+        ],
+        "tables": []
+      },
+      {
+        "heading": "iri- 'that (generalized)'",
+        "content": "iri- 'that (generalized)' indicates that an object is located at an unspecified distance in space or time from the speaker, but is basically neutral to that distance.\niriwiitaasasaa 'you are named that' < iri- 'that' + wii- 'now' + ta- IND.- 1/2.A + s- 2.A + asaar 'be named' + Ø 'be'\niriwiituraahi 'that is good' < iri- 'that' + wii- 'now' + ti- IND + Ø- 3.A + uur- PREV + raahiir 'be good' + -Ø PERF",
+        "morphemes_mentioned": [
+          {
+            "form": "iri-",
+            "label": "Deictic",
+            "notes": "that (generalized)"
+          },
+          {
+            "form": "wii-",
+            "label": "Preverb/Temporal Marker",
+            "notes": "now"
+          },
+          {
+            "form": "ta-",
+            "label": "Indicative",
+            "notes": "IND.- (1st/2nd person Agent slot)"
+          },
+          {
+            "form": "s-",
+            "label": "Person/Number Marker",
+            "notes": "2nd person Agent (2.A)"
+          },
+          {
+            "form": "asaar",
+            "label": "Verb Stem",
+            "notes": "be named"
+          },
+          {
+            "form": "Ø",
+            "label": "Verb Stem/Copula",
+            "notes": "be"
+          },
+          {
+            "form": "ti-",
+            "label": "Indicative",
+            "notes": "IND"
+          },
+          {
+            "form": "uur-",
+            "label": "Preverb",
+            "notes": "PREV"
+          },
+          {
+            "form": "raahiir",
+            "label": "Verb Stem",
+            "notes": "be good"
+          }
+        ],
+        "tables": []
+      },
+      {
+        "heading": "irii- 'what, where'",
+        "content": "irii- 'what, where'\nituuhaarikaaʔ 'I'll tell you what to do' < i- CONT.1/2.A + t- 1.A + a- 2.P + ir- PREV + ut- PREV + raarikaaʔa 'to tell to' + -Ø PERF\niriiʔahaarasika icaas 'where he cooked Turtle' < irii- 'where' + ar- EV + ra- ABS + Ø- 3.A + arasik 'cook' + -a SUB.1\ntiiʔiriirasku 'here where you are' < tii- 'here' + irii- 'where' + ra- ABS + s- 2.A + kus 'be sitting' + -Ø SUB.4",
+        "morphemes_mentioned": [
+          {
+            "form": "irii-",
+            "label": "Deictic",
+            "notes": "what, where"
+          },
+          {
+            "form": "i-",
+            "label": "Continuative",
+            "notes": "CONT.1/2.A (1st/2nd person Agent slot)"
+          },
+          {
+            "form": "t-",
+            "label": "Person/Number Marker",
+            "notes": "1st person Agent (1.A)"
+          },
+          {
+            "form": "a-",
+            "label": "Person/Number Marker",
+            "notes": "2nd person Patient (2.P)"
+          },
+          {
+            "form": "ir-",
+            "label": "Preverb",
+            "notes": "PREV"
+          },
+          {
+            "form": "ut-",
+            "label": "Preverb",
+            "notes": "PREV"
+          },
+          {
+            "form": "raarikaaʔa",
+            "label": "Verb Stem",
+            "notes": "to tell to"
+          },
+          {
+            "form": "arasik",
+            "label": "Verb Stem",
+            "notes": "cook"
+          },
+          {
+            "form": "-a",
+            "label": "Subordinative Marker",
+            "notes": "Form 1 (SUB.1)"
+          },
+          {
+            "form": "kus",
+            "label": "Verb Stem",
+            "notes": "be sitting"
+          }
+        ],
+        "tables": []
+      },
+      {
+        "heading": "riku- 'the one that/who; what'",
+        "content": "riku- 'the one that/who; what'\nrikuʔahiʔ 'he was the one; that was the one' < riku- 'the one that' + ar- EV + ri- CONT.3.A + Ø 'be' + -Ø PERF",
+        "morphemes_mentioned": [
+          {
+            "form": "riku-",
+            "label": "Deictic",
+            "notes": "the one that/who; what"
+          },
+          {
+            "form": "ri-",
+            "label": "Continuative",
+            "notes": "CONT.3.A (3rd person Agent)"
+          }
+        ],
+        "tables": []
+      },
+      {
+        "heading": "hii- 'other'",
+        "content": "hii- 'other'\nhiiraasa 'the other one (lying)' < hii- 'other' + ra- ABS + sa 'be lying' + -Ø SUB.4\ntiibiiraaʔa 'this other one who came' < tii- 'this' + hii- 'other' + ra- ABS + Ø- 3.A + a- PREV + a 'come' + -Ø SUB.4",
+        "morphemes_mentioned": [
+          {
+            "form": "hii-",
+            "label": "Deictic",
+            "notes": "other"
+          }
+        ],
+        "tables": []
+      }
+    ]
+  },
+  "page_15": {
+    "page_number": 43,
+    "sections": [
+      {
+        "heading": "Noun Incorporation",
+        "content": "In addition to the prefixes discussed above, Skiri generally incorporates nouns that are the agents of intransitive verbs and the patients of transitive verbs [table 7:25]. Among the nouns that typically incorporate rather than appear in independent form in sentences are those for body parts and body products, natural phenomena, foods, and cultural products. Examples are:\n\n* body parts and body products; e.g., hand, head, etc.; tears, sweat, urine, etc.; voice, word;\n* natural phenomena, such as land, water, sun, moon, road;\n* foods, such as meat, soup, meal; and\n* cultural products, such as dwelling, village; moccasin, rope, pipe.\n\nAn incorporated noun drops the nominal suffix of its independent form; i.e., -uʔ, -kis, etc. (see above). If the noun referent is dual, the prefix si- DU occurs in its normal position at the beginning of the verb complex, and if it is plural, the suffix raar- PL immediately follows the incorporated noun stem. Examples are:\n\nsiwituksaakitaabku 'there were two tribes' < si- DU + wi- QUOT + ti- IND + Ø- 3.A + uks- AOR + akitaar- 'tribe' + kus 'be sitting' + Ø PERF\n\nahikiistacakipu 'he gathered the bones' < ar- EV + ri- CONT.3.A + Ø- 3.A + kiis- 'bone' + raar- PL + takipuh 'gather' + Ø PERF\n\niiwiirasakuriisata 'as the sun set' < ii- 'when' + wii- 'now' + ra- ABS + Ø- 3.A + sakur- 'sun' + iisat 'go out of sight; set' + -a SUB.1\n\nriibiikakuspihat 'I moved the door flap aside' < rii- ASSR + t- 1.A + riikakus- 'door flap' + wihak 'move aside' + Ø PERF\n\nNouns that ordinarily do not incorporate are the following:\n\n* personal names of individuals and tribes;\n* geographical names;\n* kinship terms;\n* personal nouns, such as man, woman, etc.;\n* animal names, such as bear, deer, dog;\n\nThere are, however, exceptions to many of the preceding and related classes of terms. For example:\n\ntuuricaabiksii 'he is a good-looking person' < ti- IND + Ø- 3.A + uur- PREV + icaabiks 'person' + hiir 'be good looking' + Ø PERF",
+        "morphemes_mentioned": [
+          {
+            "form": "-uʔ",
+            "label": "nominal suffix",
+            "notes": "dropped when noun is incorporated"
+          },
+          {
+            "form": "-kis",
+            "label": "nominal suffix",
+            "notes": "dropped when noun is incorporated"
+          },
+          {
+            "form": "si-",
+            "label": "DU",
+            "slot": "prefix",
+            "notes": "occurs at beginning of verb complex if noun referent is dual"
+          },
+          {
+            "form": "raar-",
+            "label": "PL",
+            "slot": "suffix",
+            "notes": "immediately follows incorporated noun stem if noun referent is plural"
+          },
+          {
+            "form": "wi-",
+            "label": "QUOT",
+            "notes": "quotative"
+          },
+          {
+            "form": "ti-",
+            "label": "IND",
+            "notes": "independent"
+          },
+          {
+            "form": "Ø-",
+            "label": "3.A",
+            "notes": "3rd person agent"
+          },
+          {
+            "form": "uks-",
+            "label": "AOR",
+            "notes": "aorist"
+          },
+          {
+            "form": "akitaar-",
+            "label": "tribe",
+            "notes": "incorporated noun stem"
+          },
+          {
+            "form": "kus",
+            "label": "be sitting",
+            "notes": "verb stem"
+          },
+          {
+            "form": "Ø",
+            "label": "PERF",
+            "notes": "perfective"
+          },
+          {
+            "form": "ar-",
+            "label": "EV",
+            "notes": "evidential"
+          },
+          {
+            "form": "ri-",
+            "label": "CONT.3.A",
+            "notes": "continuative 3rd person agent"
+          },
+          {
+            "form": "kiis-",
+            "label": "bone",
+            "notes": "incorporated noun stem"
+          },
+          {
+            "form": "takipuh",
+            "label": "gather",
+            "notes": "verb stem"
+          },
+          {
+            "form": "ii-",
+            "label": "when",
+            "notes": "temporal marker"
+          },
+          {
+            "form": "wii-",
+            "label": "now",
+            "notes": "temporal marker"
+          },
+          {
+            "form": "ra-",
+            "label": "ABS",
+            "notes": "absolutive"
+          },
+          {
+            "form": "sakur-",
+            "label": "sun",
+            "notes": "incorporated noun stem"
+          },
+          {
+            "form": "iisat",
+            "label": "go out of sight; set",
+            "notes": "verb stem"
+          },
+          {
+            "form": "-a",
+            "label": "SUB.1",
+            "notes": "subordinative 1"
+          },
+          {
+            "form": "rii-",
+            "label": "ASSR",
+            "notes": "assertive"
+          },
+          {
+            "form": "t-",
+            "label": "1.A",
+            "notes": "1st person agent"
+          },
+          {
+            "form": "riikakus-",
+            "label": "door flap",
+            "notes": "incorporated noun stem"
+          },
+          {
+            "form": "wihak",
+            "label": "move aside",
+            "notes": "verb stem"
+          },
+          {
+            "form": "uur-",
+            "label": "PREV",
+            "notes": "preverb"
+          },
+          {
+            "form": "icaabiks",
+            "label": "person",
+            "notes": "incorporated noun stem"
+          },
+          {
+            "form": "hiir",
+            "label": "be good looking",
+            "notes": "verb stem"
+          }
+        ],
+        "tables": []
+      }
+    ]
+  },
+  "page_17": {
+    "page_number": 45,
+    "sections": [
+      {
+        "heading": "Aspect and Subordination: Active and Passive Verbs",
+        "content": "The aspect and subordination suffixes for active and passive verbs are given in their positions of occurrence in table 17.\n\nPerfective aspect (PERF), non-subordinate. The perfective aspect, which generally designates a punctual or completed activity, has the form -his, except after a stem-final vowel plus k sequence (i.e., Vk), where it reduces to -s (see phonological rule 3R above). In non-subordinate perfective verb forms, where this aspect is in final position (i.e., where there is no following suffix), -his does not occur. If the stem ends in a consonant, there is no overt marking for this",
+        "morphemes_mentioned": [
+          {
+            "form": "-Ø",
+            "label": "perfective aspect, non-intentive, non-subordinate",
+            "slot": "suffix",
+            "notes": "Occurs in perfective, non-intentive, non-subordinate contexts."
+          },
+          {
+            "form": "-ʔ",
+            "label": "perfective aspect, non-intentive, non-subordinate",
+            "slot": "suffix",
+            "notes": "Occurs when incorporated in perfective, non-intentive, non-subordinate contexts."
+          },
+          {
+            "form": "-a",
+            "label": "perfective aspect, non-intentive, subordinate, Class I",
+            "slot": "suffix",
+            "notes": "Occurs in perfective, non-intentive, subordinate contexts for Class I verbs."
+          },
+          {
+            "form": "-i",
+            "label": "perfective aspect, non-intentive, subordinate, Class II",
+            "slot": "suffix",
+            "notes": "Occurs in perfective, non-intentive, subordinate contexts for Class II verbs."
+          },
+          {
+            "form": "final syllable change",
+            "label": "perfective aspect, non-intentive, subordinate, Class III",
+            "slot": "suffix",
+            "notes": "Occurs in perfective, non-intentive, subordinate contexts for Class III verbs."
+          },
+          {
+            "form": "-Ø",
+            "label": "perfective aspect, non-intentive, subordinate, Class IV",
+            "slot": "suffix",
+            "notes": "Occurs in perfective, non-intentive, subordinate contexts for Class IV verbs."
+          },
+          {
+            "form": "-his",
+            "label": "perfective aspect, intentive, non-subordinate",
+            "slot": "suffix",
+            "notes": "Generally designates a punctual or completed activity. Reduces to -s after a stem-final Vk sequence. Does not occur in final position in non-subordinate perfective verb forms if no following suffix. Combines with -ta."
+          },
+          {
+            "form": "-ta",
+            "label": "intentive",
+            "slot": "suffix",
+            "notes": "Combines with -his for perfective, intentive, non-subordinate forms, and with -hus for imperfective, intentive, non-subordinate forms."
+          },
+          {
+            "form": "-rit",
+            "label": "subordinate",
+            "slot": "suffix",
+            "notes": "Combines with -his + -ta for perfective, intentive, subordinate forms, resulting in -bustarit. Combines with -hus + -ta for imperfective, intentive, subordinate forms, resulting in -bustarit."
+          },
+          {
+            "form": "-bustarit",
+            "label": "perfective/imperfective, intentive, subordinate",
+            "slot": "suffix",
+            "notes": "Combined form of -his + -ta + -rit (perfective) or -hus + -ta + -rit (imperfective)."
+          },
+          {
+            "form": "-huʔ",
+            "label": "imperfective aspect, non-intentive, non-subordinate",
+            "slot": "suffix",
+            "notes": "Occurs when incorporated in imperfective, non-intentive, non-subordinate contexts."
+          },
+          {
+            "form": "-hu",
+            "label": "imperfective aspect, non-intentive, subordinate",
+            "slot": "suffix",
+            "notes": "Occurs in imperfective, non-intentive, subordinate contexts."
+          },
+          {
+            "form": "-hus",
+            "label": "imperfective aspect, intentive/inchoative/habitual",
+            "slot": "suffix",
+            "notes": "Combines with -ta, -itik, -uukuʔ, -uku for various imperfective categories."
+          },
+          {
+            "form": "-busta",
+            "label": "imperfective, intentive, non-subordinate",
+            "slot": "suffix",
+            "notes": "Combined form of -hus + -ta."
+          },
+          {
+            "form": "-itik",
+            "label": "inchoative",
+            "slot": "suffix",
+            "notes": "Combines with -hus for imperfective, inchoative forms, resulting in -busitit."
+          },
+          {
+            "form": "-busitit",
+            "label": "imperfective, inchoative, non-subordinate/subordinate",
+            "slot": "suffix",
+            "notes": "Combined form of -hus + -itik."
+          },
+          {
+            "form": "-uukuʔ",
+            "label": "habitual, non-subordinate",
+            "slot": "suffix",
+            "notes": "Combines with -hus for imperfective, habitual, non-subordinate forms, resulting in -busuukuʔ."
+          },
+          {
+            "form": "-busuukuʔ",
+            "label": "imperfective, habitual, non-subordinate",
+            "slot": "suffix",
+            "notes": "Combined form of -hus + -uukuʔ."
+          },
+          {
+            "form": "-uku",
+            "label": "habitual, subordinate",
+            "slot": "suffix",
+            "notes": "Combines with -hus for imperfective, habitual, subordinate forms, resulting in -busuku."
+          },
+          {
+            "form": "-busuku",
+            "label": "imperfective, habitual, subordinate",
+            "slot": "suffix",
+            "notes": "Combined form of -hus + -uku."
+          },
+          {
+            "form": "-s",
+            "label": "perfective aspect",
+            "slot": "suffix",
+            "notes": "Reduced form of -his after a stem-final vowel plus k (Vk) sequence."
+          }
+        ],
+        "tables": [
+          {
+            "caption": "Table 17. Suffixes for Aspect and Subordination",
+            "rows": [
+              [
+                "Perfective/Imperfective",
+                "Non-Intentive/Intentive/Habitual/Inchoative",
+                "Non-Subordinate/Subordinate",
+                "Suffixes"
+              ],
+              [
+                "Perfective",
+                "Non-intentive",
+                "Non-subordinate",
+                "-Ø / -ʔ (when incorporated)"
+              ],
+              [
+                "Perfective",
+                "Non-intentive",
+                "Subordinate",
+                "Class I: -a"
+              ],
+              [
+                "Perfective",
+                "Non-intentive",
+                "Subordinate",
+                "Class II: -i"
+              ],
+              [
+                "Perfective",
+                "Non-intentive",
+                "Subordinate",
+                "Class III: final syllable change"
+              ],
+              [
+                "Perfective",
+                "Non-intentive",
+                "Subordinate",
+                "Class IV: -Ø"
+              ],
+              [
+                "Perfective",
+                "Intentive",
+                "Non-subordinate",
+                "-his + -ta"
+              ],
+              [
+                "Perfective",
+                "Intentive",
+                "Subordinate",
+                "-his + -ta + -rit → -bustarit"
+              ],
+              [
+                "Imperfective",
+                "Non-intentive",
+                "Non-subordinate",
+                "-huʔ (when incorporated)"
+              ],
+              [
+                "Imperfective",
+                "Non-intentive",
+                "Subordinate",
+                "-hu"
+              ],
+              [
+                "Imperfective",
+                "Intentive",
+                "Non-subordinate",
+                "-hus + -ta → -busta"
+              ],
+              [
+                "Imperfective",
+                "Intentive",
+                "Subordinate",
+                "-hus + -ta + -rit → -bustarit"
+              ],
+              [
+                "Imperfective",
+                "Inchoative",
+                "Non-subordinate",
+                "-hus + -itik → -busitit"
+              ],
+              [
+                "Imperfective",
+                "Inchoative",
+                "Subordinate",
+                "-hus + -itik → -busitit"
+              ],
+              [
+                "Imperfective",
+                "Habitual",
+                "Non-subordinate",
+                "-hus + -uukuʔ → -busuukuʔ"
+              ],
+              [
+                "Imperfective",
+                "Habitual",
+                "Subordinate",
+                "-hus + -uku → -busuku"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "page_18": {
+    "page_number": 46,
+    "sections": [
+      {
+        "heading": null,
+        "content": "independent perfective form; but if it ends in a vowel, a glottal stop occurs after the vowel. If the perfective form of the verb has the intentive suffix (-ta INT) following it or if the perfective form of the verb is compounded with a following stem, -his does occur. Examples are:\ntiburás ‘he found it’ < ti- IND + Ø- 3.A + buras ‘find’ + Ø PERF; cp. tiburásista ‘he is going to find it’ < ti- IND + Ø- 3.A + buras ‘find’ + -his PERF + -ta INT\ntikíkat ‘he cried’ < ti- IND + Ø- 3.A + kikak ‘cry’ + Ø PERF; cp. tikikakísta ‘he is going to cry’ < ti- IND + Ø- 3.A + kikak ‘cry’ + -his PERF + -ta INT; takikaksaʔ ‘he came crying’ < ti- IND + Ø- 3.A + a- PREV.3.A + kikak ‘cry’ + -his PERF + a- ‘come’ + Ø PERF",
+        "morphemes_mentioned": [
+          {
+            "form": "-ta",
+            "label": "INT",
+            "notes": "intentive suffix"
+          },
+          {
+            "form": "-his",
+            "label": "PERF",
+            "notes": "occurs when perfective form has intentive suffix or is compounded with a following stem"
+          },
+          {
+            "form": "ti-",
+            "label": "IND",
+            "notes": "independent prefix"
+          },
+          {
+            "form": "Ø-",
+            "label": "3.A",
+            "notes": "3rd person A-set prefix"
+          },
+          {
+            "form": "buras",
+            "label": "verb stem",
+            "notes": "'find'"
+          },
+          {
+            "form": "Ø",
+            "label": "PERF",
+            "notes": "perfective marker"
+          },
+          {
+            "form": "kikak",
+            "label": "verb stem",
+            "notes": "'cry'"
+          },
+          {
+            "form": "a-",
+            "label": "PREV.3.A",
+            "notes": "preverb, 3rd person A-set"
+          },
+          {
+            "form": "a-",
+            "label": "verb stem",
+            "notes": "'come'"
+          }
+        ],
+        "tables": []
+      },
+      {
+        "heading": "Perfective aspect, subordinate (SUB)",
+        "content": "In active and passive verbs, however, subordinate perfective forms are marked in one of three ways: by one of two overt vowel suffixes, by a final-syllable change, or by no overt marking (i.e., Ø). Which subordinating suffix a verb takes is unpredictable, and so each active and passive verb stem belongs to one of four classes, each of which is defined by its subordinate perfective marker. These classes are given in table 14.\nClass 1: raskuhisaaska ‘for you to call him’ < ra- INF.A + s- 2.A + ku- INF.B + bisaask ‘call’ + -a SUB.1\nClass 2: ratkuburasi ‘for me to find him’ < ra- INF.A + t- 1.A + ku- INF.B + buras ‘find’ + -i SUB.2\nA subclass of Class 2 verbs comprises the small set of verbs called i-stems, which have a stem-final vowel i that occurs in imperfective forms but not in perfective ones. In the base form of these stems that i is indicated by a stem-final -i, as in as-i (uur...) ‘to run’ and itk-i (ut...) ‘to dream about’. The principal parts of an i-stem are illustrated as follows:\nuc-i ‘to be lying’: uc ‘be lying’ PERF; ucista ‘is going to lie’ PERF.INT; uci ‘be lying’ SUB.2; uciihuʔ ‘be lying’ IMPF; uciihusta ‘is going to be lying’ IMPF.INT; uciihu ‘be lying’ IMPF.SUB\nClass 3: tiruʔ ‘he made it’ < ti- IND + Ø- 3.A + raʔuk ‘make’ + Ø PERF; wiiraraʔu ‘when he made it’ < wii- ‘now’ + ra- ABS + Ø- 3.A + raʔuk ‘make’ + Ø SUB.3\nClass 4: iriirakikat ‘where he cried’ < irii- ‘where’ + ra- ABS + Ø- 3.A + kikak ‘cry’ + Ø SUB.4",
+        "morphemes_mentioned": [
+          {
+            "form": "ra-",
+            "label": "INF.A",
+            "notes": "infinitive A-set prefix"
+          },
+          {
+            "form": "s-",
+            "label": "2.A",
+            "notes": "2nd person A-set prefix"
+          },
+          {
+            "form": "ku-",
+            "label": "INF.B",
+            "notes": "infinitive B-set prefix"
+          },
+          {
+            "form": "bisaask",
+            "label": "verb stem",
+            "notes": "'call'"
+          },
+          {
+            "form": "-a",
+            "label": "SUB.1",
+            "notes": "subordinate suffix, Class 1"
+          },
+          {
+            "form": "t-",
+            "label": "1.A",
+            "notes": "1st person A-set prefix"
+          },
+          {
+            "form": "-i",
+            "label": "SUB.2",
+            "notes": "subordinate suffix, Class 2"
+          },
+          {
+            "form": "i",
+            "label": "stem-final vowel",
+            "notes": "occurs in imperfective forms of i-stems, not perfective"
+          },
+          {
+            "form": "as-i",
+            "label": "i-stem",
+            "notes": "'to run' (base form)"
+          },
+          {
+            "form": "itk-i",
+            "label": "i-stem",
+            "notes": "'to dream about' (base form)"
+          },
+          {
+            "form": "uc",
+            "label": "verb stem",
+            "notes": "'be lying' (perfective form)"
+          },
+          {
+            "form": "uc-i",
+            "label": "i-stem",
+            "notes": "'to be lying' (base form)"
+          },
+          {
+            "form": "ucista",
+            "label": "PERF.INT",
+            "notes": "'is going to lie'"
+          },
+          {
+            "form": "uci",
+            "label": "SUB.2",
+            "notes": "'be lying'"
+          },
+          {
+            "form": "uciihuʔ",
+            "label": "IMPF",
+            "notes": "'be lying'"
+          },
+          {
+            "form": "uciihusta",
+            "label": "IMPF.INT",
+            "notes": "'is going to be lying'"
+          },
+          {
+            "form": "uciihu",
+            "label": "IMPF.SUB",
+            "notes": "'be lying'"
+          },
+          {
+            "form": "raʔuk",
+            "label": "verb stem",
+            "notes": "'make'"
+          },
+          {
+            "form": "wii-",
+            "label": "preverb/particle",
+            "notes": "'now'"
+          },
+          {
+            "form": "ra-",
+            "label": "ABS",
+            "notes": "absolutive prefix"
+          },
+          {
+            "form": "Ø",
+            "label": "SUB.3",
+            "notes": "subordinate marker, Class 3"
+          },
+          {
+            "form": "irii-",
+            "label": "preverb/particle",
+            "notes": "'where'"
+          },
+          {
+            "form": "Ø",
+            "label": "SUB.4",
+            "notes": "subordinate marker, Class 4"
+          }
+        ],
+        "tables": []
+      },
+      {
+        "heading": "Imperfective aspect (IMPF), non-subordinate: -hus",
+        "content": "The imperfective aspect (IMPF) denotes an uncompleted activity or one in progress—i.e., one that expresses an action without denoting a beginning or end. In non-subordinate verbs the form...",
+        "morphemes_mentioned": [
+          {
+            "form": "-hus",
+            "label": "IMPF",
+            "notes": "non-subordinate imperfective marker"
+          }
+        ],
+        "tables": []
+      }
+    ]
+  },
+  "page_19": {
+    "page_number": 47,
+    "sections": [
+      {
+        "heading": "GRAMMATICAL OVERVIEW (Imperfective aspect -:bus, continued)",
+        "content": "of the imperfective is -:bus, where the colon preceding -:bus represents lengthening of the preceding, stem-final vowel. Here, too, the final s of -:bus is dropped when this suffix is the last element in a word, but is retained when -ta INT or any other morpheme immediately follows it. Examples:\ntikacaakuʔ 'he is cutting it' < ti- IND + Ø- 3.A + kacak 'cut, chop' + -:bus IMPF; cp. tikacat 'he cut it' < ti- IND + Ø- 3.A + kacak 'cut' + Ø PERF\ntikiikaahuʔ 'he is drinking it' < ti- IND + Ø- 3.A + kiikaa 'drink' + -:bus IMPF; cp. tikiikaahusta 'he is going to be drinking it' < ti- IND + Ø- 3.A + kiikaa 'drink' + -:bus IMPF + -ta INT; Tarahaʔ Takiihaahusaʔ 'Buffalo Comes to Drink' < ti- IND + Ø- 3.A + a- PREV + kiikaa 'drink' + -:bus IMPF + a 'come' + Ø PERF",
+        "morphemes_mentioned": [
+          {
+            "form": "-:bus",
+            "label": "Imperfective aspect",
+            "slot": "suffix",
+            "notes": "Non-subordinate. Colon indicates lengthening of preceding stem-final vowel. Final 's' dropped when word-final, retained when followed by -ta INT or other morphemes."
+          },
+          {
+            "form": "ti-",
+            "label": "Indicative",
+            "slot": "prefix"
+          },
+          {
+            "form": "Ø-",
+            "label": "3rd person A-series",
+            "slot": "prefix"
+          },
+          {
+            "form": "kacak",
+            "label": "verb stem",
+            "notes": "'cut, chop'"
+          },
+          {
+            "form": "Ø",
+            "label": "Perfective",
+            "slot": "suffix"
+          },
+          {
+            "form": "kiikaa",
+            "label": "verb stem",
+            "notes": "'drink'"
+          },
+          {
+            "form": "-ta",
+            "label": "Intentive aspect",
+            "slot": "suffix",
+            "notes": "Non-subordinate"
+          },
+          {
+            "form": "a-",
+            "label": "Preverb",
+            "notes": "'come'"
+          }
+        ],
+        "tables": []
+      },
+      {
+        "heading": "Imperfective aspect (IMPF), subordinate: -bus",
+        "content": "The form of the imperfective in subordinate verb forms is -bus, the same as the non-subordinate form except that it does not lengthen the preceding stem-final vowel and, when the suffix is word-final, the final vowel (i.e., u) of -bus, which becomes -hu in its surface form, is not followed by a glottal stop, as it is in non-subordinate forms. Examples are:\nraakuraarahuʔ 'for them to be coming' < ra- INF.A + Ø- 3.A + a- PREV + ku- INF.B + raar- 3.P.INDV.A + a 'come' + -:bus IMPF.SUB; cp. non-subordinate taraaraahuʔ 'they are coming'\niriirakiwakuʔ 'the one that barked' < irii- 'the one' + ra- ABS + Ø- 3.A + kiwak 'bark' + -:bus IMPF.SUB; cp. non-subordinate tikiwaakuʔ 'it's barking' < ti- IND + Ø- 3.A + kiwak 'bark' + -:bus IMPF",
+        "morphemes_mentioned": [
+          {
+            "form": "-bus",
+            "label": "Imperfective aspect",
+            "slot": "suffix",
+            "notes": "Subordinate. Does not lengthen preceding stem-final vowel. Final 'u' becomes '-hu' when word-final and followed by a glottal stop, but the glottal stop is not present in subordinate forms."
+          },
+          {
+            "form": "ra-",
+            "label": "Infinitive A-series",
+            "slot": "prefix"
+          },
+          {
+            "form": "ku-",
+            "label": "Infinitive B-series",
+            "slot": "prefix"
+          },
+          {
+            "form": "raar-",
+            "label": "3rd person plural independent A-series",
+            "slot": "prefix"
+          },
+          {
+            "form": "irii-",
+            "label": "Demonstrative",
+            "notes": "'the one'"
+          },
+          {
+            "form": "ra-",
+            "label": "Absolutive",
+            "slot": "prefix"
+          },
+          {
+            "form": "kiwak",
+            "label": "verb stem",
+            "notes": "'bark'"
+          }
+        ],
+        "tables": []
+      },
+      {
+        "heading": "Intentive aspect (INT), non-subordinate: -ta",
+        "content": "The intentive aspect, represented by the form -ta, denotes an activity or state that is expected to occur and differs from a simple future tense in that there is no doubt or potentiality implied. It translates into English most commonly as '... is going to ...'. The suffix occurs in both perfective and imperfective forms, illustrated by the following:\ntaturaaʔiiwaatista 'I am going to tell a story' < ta- IND.1/2.A + t- 1.A + uur- PREV + raaʔiiwaat 'tell a story' + -his PERF + -ta INT\niriwiitataraahisaaskusta 'I am going to be calling you (by a certain kinship term)' < iri- 'that' + wii- 'now' + ta- IND.1/2.A + t- 1.A + a- 2.P + raahisaask 'call, address (by a kin term)' + -:bus IMPF + -ta INT; cp. iriwiitataraahisaaskuʔ 'I call you (by a certain kinship term)'",
+        "morphemes_mentioned": [
+          {
+            "form": "-ta",
+            "label": "Intentive aspect",
+            "slot": "suffix",
+            "notes": "Non-subordinate. Denotes expected activity/state, no doubt/potentiality. Translates as 'is going to'."
+          },
+          {
+            "form": "ta-",
+            "label": "Indicative 1/2 A-series",
+            "slot": "prefix"
+          },
+          {
+            "form": "t-",
+            "label": "1st person A-series",
+            "slot": "prefix"
+          },
+          {
+            "form": "uur-",
+            "label": "Preverb",
+            "slot": "preverb"
+          },
+          {
+            "form": "raaʔiiwaat",
+            "label": "verb stem",
+            "notes": "'tell a story'"
+          },
+          {
+            "form": "-his",
+            "label": "Perfective",
+            "slot": "suffix"
+          },
+          {
+            "form": "iri-",
+            "label": "Demonstrative",
+            "notes": "'that'"
+          },
+          {
+            "form": "wii-",
+            "label": "Preverb",
+            "notes": "'now'"
+          },
+          {
+            "form": "a-",
+            "label": "2nd person P-series",
+            "slot": "prefix"
+          },
+          {
+            "form": "raahisaask",
+            "label": "verb stem",
+            "notes": "'call, address (by a kin term)'"
+          }
+        ],
+        "tables": []
+      },
+      {
+        "heading": "Intentive aspect (INT), subordinate: -rit",
+        "content": "In subordinate intentive forms, both perfective and imperfective, the intentive suffix -ta is always followed by -rit, which marks the verb as a subordinate form. Its occurrence is illustrated by the following pair of words: [No examples provided on this page]",
+        "morphemes_mentioned": [
+          {
+            "form": "-rit",
+            "label": "Intentive aspect",
+            "slot": "suffix",
+            "notes": "Subordinate. Always follows -ta in subordinate intentive forms."
+          }
+        ],
+        "tables": []
+      }
+    ]
+  },
+  "page_20": {
+    "page_number": 48,
+    "sections": [
+      {
+        "heading": "Subordinate Clauses (continued)",
+        "content": "wiiruuhaasitiiʔ 'when it is going to occur' < wii- 'now' + ri- CONT.3.A + ut- PREV + raasiktik 'happen, occur' + -his PERF + -ta INT + -rit INT.SUB;\nwiiruuhaasitiiʔkustarit 'when it is going to be happening' < wii- 'now' + ri- CONT.3.A + ut- PREV + raasiktik 'happen, occur' + -hus IMPF + -ta INT + -rit INT.SUB",
+        "morphemes_mentioned": [
+          {
+            "form": "wii-",
+            "label": "'now'",
+            "notes": "prefix"
+          },
+          {
+            "form": "ri-",
+            "label": "CONT.3.A",
+            "notes": "prefix"
+          },
+          {
+            "form": "ut-",
+            "label": "PREV",
+            "notes": "preverb"
+          },
+          {
+            "form": "raasiktik",
+            "label": "'happen, occur'",
+            "notes": "verb stem"
+          },
+          {
+            "form": "-his",
+            "label": "PERF",
+            "notes": "suffix"
+          },
+          {
+            "form": "-ta",
+            "label": "INT",
+            "notes": "suffix"
+          },
+          {
+            "form": "-rit",
+            "label": "INT.SUB",
+            "notes": "suffix"
+          },
+          {
+            "form": "-hus",
+            "label": "IMPF",
+            "notes": "suffix"
+          }
+        ],
+        "tables": [],
+        "examples": [
+          {
+            "pawnee_form": "wiiruuhaasitiiʔ",
+            "translation": "when it is going to occur",
+            "breakdown": [
+              {
+                "morpheme": "wii-",
+                "label": "'now'"
+              },
+              {
+                "morpheme": "ri-",
+                "label": "CONT.3.A"
+              },
+              {
+                "morpheme": "ut-",
+                "label": "PREV"
+              },
+              {
+                "morpheme": "raasiktik",
+                "label": "'happen, occur'"
+              },
+              {
+                "morpheme": "-his",
+                "label": "PERF"
+              },
+              {
+                "morpheme": "-ta",
+                "label": "INT"
+              },
+              {
+                "morpheme": "-rit",
+                "label": "INT.SUB"
+              }
+            ]
+          },
+          {
+            "pawnee_form": "wiiruuhaasitiiʔkustarit",
+            "translation": "when it is going to be happening",
+            "breakdown": [
+              {
+                "morpheme": "wii-",
+                "label": "'now'"
+              },
+              {
+                "morpheme": "ri-",
+                "label": "CONT.3.A"
+              },
+              {
+                "morpheme": "ut-",
+                "label": "PREV"
+              },
+              {
+                "morpheme": "raasiktik",
+                "label": "'happen, occur'"
+              },
+              {
+                "morpheme": "-hus",
+                "label": "IMPF"
+              },
+              {
+                "morpheme": "-ta",
+                "label": "INT"
+              },
+              {
+                "morpheme": "-rit",
+                "label": "INT.SUB"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Inchoative aspect (INCH)",
+        "content": "The inchoative aspect denotes an activity that is beginning to occur or is in an inceptive state. It is marked by the suffix -itik, which is always preceded by the imperfective suffix, and is translated into English most commonly as either ‘beginning’ or ‘starting’ an activity. Examples are:",
+        "morphemes_mentioned": [
+          {
+            "form": "-itik",
+            "label": "INCH",
+            "notes": "suffix, always preceded by the imperfective suffix"
+          },
+          {
+            "form": "ti-",
+            "label": "IND",
+            "notes": "prefix"
+          },
+          {
+            "form": "Ø-",
+            "label": "3.A",
+            "notes": "zero morpheme, 3rd person animate"
+          },
+          {
+            "form": "waawaktik",
+            "label": "'talk'",
+            "notes": "verb stem"
+          },
+          {
+            "form": "-hus",
+            "label": "IMPF",
+            "notes": "suffix"
+          },
+          {
+            "form": "rii-",
+            "label": "ASSR",
+            "notes": "prefix, assertive"
+          },
+          {
+            "form": "t-",
+            "label": "1.A",
+            "notes": "prefix, 1st person animate"
+          },
+          {
+            "form": "ak-",
+            "label": "3.P.AN.I",
+            "notes": "prefix, 3rd person animate inanimate"
+          },
+          {
+            "form": "waa-",
+            "label": "DIST",
+            "notes": "prefix, distributive"
+          },
+          {
+            "form": "warik",
+            "label": "'shoot at'",
+            "notes": "verb stem"
+          }
+        ],
+        "tables": [],
+        "examples": [
+          {
+            "pawnee_form": "tiwaawaktiikusitit",
+            "translation": "he began talking",
+            "breakdown": [
+              {
+                "morpheme": "ti-",
+                "label": "IND"
+              },
+              {
+                "morpheme": "Ø-",
+                "label": "3.A"
+              },
+              {
+                "morpheme": "waawaktik",
+                "label": "'talk'"
+              },
+              {
+                "morpheme": "-hus",
+                "label": "IMPF"
+              },
+              {
+                "morpheme": "-itik",
+                "label": "INCH"
+              }
+            ]
+          },
+          {
+            "pawnee_form": "riitapaawarikiikusitit rikucki",
+            "translation": "I began shooting birds",
+            "breakdown": [
+              {
+                "morpheme": "rii-",
+                "label": "ASSR"
+              },
+              {
+                "morpheme": "t-",
+                "label": "1.A"
+              },
+              {
+                "morpheme": "ak-",
+                "label": "3.P.AN.I"
+              },
+              {
+                "morpheme": "waa-",
+                "label": "DIST"
+              },
+              {
+                "morpheme": "warik",
+                "label": "'shoot at'"
+              },
+              {
+                "morpheme": "-hus",
+                "label": "IMPF"
+              },
+              {
+                "morpheme": "-itik",
+                "label": "INCH"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Habitual aspect (HAB)",
+        "content": "The habitual aspect is represented by -uukuʔ/-uku, which always comes immediately after the imperfective aspectual marker. In non-subordinate verbs the habitual has a long vowel uu and there is a glottal stop following the final u, while in subordinate forms there is no final glottal stop and the initial vowel of the morpheme is usually short. The habitual aspect denotes activities that occur customarily or out of habit and are translated into English as ‘used to do’ or ‘usually do’. Examples are:",
+        "morphemes_mentioned": [
+          {
+            "form": "-uukuʔ",
+            "label": "HAB",
+            "notes": "suffix, non-subordinate forms, long vowel uu, glottal stop, immediately after imperfective marker"
+          },
+          {
+            "form": "-uku",
+            "label": "HAB",
+            "notes": "suffix, subordinate forms, short vowel, no glottal stop, immediately after imperfective marker"
+          },
+          {
+            "form": "wi-",
+            "label": "QUOT",
+            "notes": "prefix, quotative"
+          },
+          {
+            "form": "ti-",
+            "label": "IND",
+            "notes": "prefix, indicative"
+          },
+          {
+            "form": "Ø-",
+            "label": "3.A",
+            "notes": "zero morpheme, 3rd person animate"
+          },
+          {
+            "form": "ir-",
+            "label": "3.P.COLL.A",
+            "notes": "prefix, 3rd person collective animate"
+          },
+          {
+            "form": "ut-",
+            "label": "PREV",
+            "notes": "preverb"
+          },
+          {
+            "form": "i-",
+            "label": "SEQ",
+            "notes": "prefix, sequential"
+          },
+          {
+            "form": "uks-",
+            "label": "AOR",
+            "notes": "prefix, aorist"
+          },
+          {
+            "form": "raawarii",
+            "label": "'gather; go around gathering'",
+            "notes": "verb stem"
+          },
+          {
+            "form": "-hus",
+            "label": "IMPF",
+            "notes": "suffix, imperfective"
+          },
+          {
+            "form": "ar-",
+            "label": "EV",
+            "notes": "prefix, evidential"
+          },
+          {
+            "form": "ri-",
+            "label": "CONT.3.A",
+            "notes": "prefix, continuative 3rd person animate"
+          },
+          {
+            "form": "ra-",
+            "label": "ABS",
+            "notes": "prefix, absolutive"
+          },
+          {
+            "form": "paktik",
+            "label": "'announce'",
+            "notes": "verb stem"
+          }
+        ],
+        "tables": [],
+        "examples": [
+          {
+            "pawnee_form": "witiicikstaawariibusuukuʔ rakis",
+            "translation": "they used to gather wood",
+            "breakdown": [
+              {
+                "morpheme": "wi-",
+                "label": "QUOT"
+              },
+              {
+                "morpheme": "ti-",
+                "label": "IND"
+              },
+              {
+                "morpheme": "Ø-",
+                "label": "3.A"
+              },
+              {
+                "morpheme": "ir-",
+                "label": "3.P.COLL.A"
+              },
+              {
+                "morpheme": "ut-",
+                "label": "PREV"
+              },
+              {
+                "morpheme": "i-",
+                "label": "SEQ"
+              },
+              {
+                "morpheme": "uks-",
+                "label": "AOR"
+              },
+              {
+                "morpheme": "raawarii",
+                "label": "'gather; go around gathering'"
+              },
+              {
+                "morpheme": "-hus",
+                "label": "IMPF"
+              },
+              {
+                "morpheme": "-uukuʔ",
+                "label": "HAB"
+              }
+            ]
+          },
+          {
+            "pawnee_form": "ahicikstaawariibusuku",
+            "translation": "when they went to gather them",
+            "breakdown": [
+              {
+                "morpheme": "ar-",
+                "label": "EV"
+              },
+              {
+                "morpheme": "ri-",
+                "label": "CONT.3.A"
+              },
+              {
+                "morpheme": "Ø-",
+                "label": "3.A"
+              },
+              {
+                "morpheme": "ir-",
+                "label": "3.P.COLL.A"
+              },
+              {
+                "morpheme": "ut-",
+                "label": "PREV"
+              },
+              {
+                "morpheme": "i-",
+                "label": "SEQ"
+              },
+              {
+                "morpheme": "uks-",
+                "label": "AOR"
+              },
+              {
+                "morpheme": "raawarii",
+                "label": "'gather; go around gathering'"
+              },
+              {
+                "morpheme": "-hus",
+                "label": "IMPF"
+              },
+              {
+                "morpheme": "-uku",
+                "label": "HAB.SUB"
+              }
+            ]
+          },
+          {
+            "pawnee_form": "ahukspaktikusuku",
+            "translation": "the one who used to announce (i.e., camp crier)",
+            "breakdown": [
+              {
+                "morpheme": "ar-",
+                "label": "EV"
+              },
+              {
+                "morpheme": "ra-",
+                "label": "ABS"
+              },
+              {
+                "morpheme": "Ø-",
+                "label": "3.A"
+              },
+              {
+                "morpheme": "uks-",
+                "label": "AOR"
+              },
+              {
+                "morpheme": "paktik",
+                "label": "'announce'"
+              },
+              {
+                "morpheme": "-hus",
+                "label": "IMPF"
+              },
+              {
+                "morpheme": "-uku",
+                "label": "HAB.SUB"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Aspect and Subordination: Descriptive and Locative Verbs",
+        "content": "The forms for existential and inchoative forms of descriptive and locative verbs differ from those of active and passive verbs, although there is certainly overlap between categories and morphemes. Both classes of verbs make a basic aspectual distinction between existential and inchoative forms, and each of these in turn distinguishes between simple and intentive forms. Inchoative forms of both classes also distinguish between perfective and imperfective forms. Both classes also have separate non-subordinate and subordinate forms.",
+        "morphemes_mentioned": [],
+        "tables": [],
+        "examples": []
+      }
+    ]
+  },
+  "page_21": {
+    "page_number": 49,
+    "sections": [
+      {
+        "heading": "Existential Forms: Descriptive Verbs",
+        "content": "Simple existential descriptive forms. The simple existential forms of descriptive verbs comprise a descriptive stem followed by the verb uk 'to exist, be', which here functions as an inflectional suffix. In non-subordinate forms uk is a null form when it is word final. There are two classes of descriptive verbs based on their surface forms:\n\nClass I descriptive verbs, which are the most numerous, are characterized by a reduplication of the vowel in their final syllable when the forms are non-subordinate. The rule for this reduplication is:\n\nVᵢ(Vᵢ) → Vᵢ(Vᵢ)²Vᵢ / C _ C + uk (+ NON-SUB)\n\ntipahaaʔat 'it is red' < ti- IND + Ø- 3.A + pahaat 'be red' + -uk 'be'; cp. iriirapahaattu 'the one that is red'\n\ntihuraabtarariʔit 'the ground is burned off' < ti- IND + Ø- 3.A + huraar- 'ground' + tararit 'be burned, scorched' + -uk 'be'; cp. iriiratarariitu 'where it is scorched'\n\nClass II descriptive verbs comprise stems that do not undergo the final-syllable vocalic reduplication that Class I verbs do, illustrated by:\n\ntiwaarukstiiʔ 'he is holy' < ti- IND + Ø- 3.A + waarukstii 'be holy' + -uk 'be'; cp. iriwaaarukstiiʔu 'for one to be holy'\n\ntakuctaris 'the bucket is heavy' < ti- IND + Ø- 3.A + a- PREV + kuc- 'bucket' + taris 'be heavy' + -uk 'be'\n\nIntentive existential descriptive verbs. These intentives are formed by suffixing -ta INT to the perfective form of descriptive stems (i.e., STEM + -uk 'be' + -his PERF + -ta, which results in STEM + -uksta). The following are examples:\n\ntiwakarahiisuksta 'he is going to have a raspy voice' < ti- IND + Ø- 3.A + wakarahiis 'be raspy voiced' + -uk 'be' + -his PERF + -ta INT\n\ntipahaatuksta 'it is going to be red' < ti- IND + Ø- 3.A + pahaat 'be red' + uk 'be' + -his PERF + -ta INT\n\nSubordinate existential descriptive verbs. The subordinate form of existential descriptive verbs is represented by the subordinate form of uk 'to be', which is -u in word-final position. Examples:\n\niriirapahaattu 'the one that is red' < irii- 'the one' + ra- ABS + Ø- 3.A + pahaat 'red' + -uk SUB.D",
+        "morphemes_mentioned": [
+          {
+            "form": "uk",
+            "label": "existential verb",
+            "notes": "functions as an inflectional suffix, 'to exist, be'; null in non-subordinate word-final forms"
+          },
+          {
+            "form": "Vᵢ(Vᵢ)²Vᵢ / C _ C + uk (+ NON-SUB)",
+            "label": "reduplication rule",
+            "notes": "for Class I descriptive verbs, final syllable vowel reduplication"
+          },
+          {
+            "form": "ti-",
+            "label": "IND",
+            "slot": "prefix"
+          },
+          {
+            "form": "Ø-",
+            "label": "3.A",
+            "slot": "prefix",
+            "notes": "3rd person A-series subject marker"
+          },
+          {
+            "form": "pahaat",
+            "label": "stem",
+            "notes": "'be red'"
+          },
+          {
+            "form": "-uk",
+            "label": "be",
+            "slot": "suffix"
+          },
+          {
+            "form": "iriirapahaattu",
+            "label": "example form",
+            "notes": "'the one that is red'"
+          },
+          {
+            "form": "huraar-",
+            "label": "stem",
+            "notes": "'ground'"
+          },
+          {
+            "form": "tararit",
+            "label": "stem",
+            "notes": "'be burned, scorched'"
+          },
+          {
+            "form": "iriiratarariitu",
+            "label": "example form",
+            "notes": "'where it is scorched'"
+          },
+          {
+            "form": "waarukstii",
+            "label": "stem",
+            "notes": "'be holy'"
+          },
+          {
+            "form": "iriwaaarukstiiʔu",
+            "label": "example form",
+            "notes": "'for one to be holy'"
+          },
+          {
+            "form": "a-",
+            "label": "PREV",
+            "slot": "preverb"
+          },
+          {
+            "form": "kuc-",
+            "label": "stem",
+            "notes": "'bucket'"
+          },
+          {
+            "form": "taris",
+            "label": "stem",
+            "notes": "'be heavy'"
+          },
+          {
+            "form": "-ta",
+            "label": "INT",
+            "slot": "suffix",
+            "notes": "intentive marker"
+          },
+          {
+            "form": "-his",
+            "label": "PERF",
+            "slot": "suffix",
+            "notes": "perfective marker"
+          },
+          {
+            "form": "-uksta",
+            "label": "complex suffix",
+            "notes": "result of -uk 'be' + -his PERF + -ta INT"
+          },
+          {
+            "form": "wakarahiis",
+            "label": "stem",
+            "notes": "'be raspy voiced'"
+          },
+          {
+            "form": "-u",
+            "label": "SUB.D",
+            "slot": "suffix",
+            "notes": "subordinate form of 'uk' 'to be', word-final"
+          },
+          {
+            "form": "irii-",
+            "label": "pronoun",
+            "notes": "'the one'"
+          },
+          {
+            "form": "ra-",
+            "label": "ABS",
+            "slot": "prefix",
+            "notes": "absolutive marker"
+          }
+        ],
+        "tables": []
+      }
+    ]
+  },
+  "page_22": {
+    "page_number": 50,
+    "sections": [
+      {
+        "heading": null,
+        "content": "iriirawakarahiisu 'the one who has a raspy voice' < irii- 'the one' + ra- ABS + Ø- 3.A + wakarahiis 'be raspy voiced' + -uk SUB.D",
+        "morphemes_mentioned": [
+          {
+            "form": "irii-",
+            "label": "pronoun",
+            "notes": "'the one'"
+          },
+          {
+            "form": "ra-",
+            "label": "ABS",
+            "notes": "Absolutive"
+          },
+          {
+            "form": "Ø-",
+            "label": "3.A",
+            "notes": "3rd person A-set"
+          },
+          {
+            "form": "wakarahiis",
+            "label": "verb stem",
+            "notes": "'be raspy voiced'"
+          },
+          {
+            "form": "-uk",
+            "label": "SUB.D",
+            "notes": "Subordinate D"
+          }
+        ],
+        "tables": []
+      },
+      {
+        "heading": "Inchoative Forms: Descriptive Verbs",
+        "content": "Descriptive verbs form the inchoative with the suffix -aar 'become, get' (which is also an independent verb) and by changing their inflectional class from active to passive. The principal forms of -aar as a suffix for descriptive verbs are:",
+        "morphemes_mentioned": [
+          {
+            "form": "-aar",
+            "label": "suffix",
+            "notes": "'become, get', forms inchoative from descriptive verbs, changes inflectional class from active to passive"
+          },
+          {
+            "form": "Ø",
+            "label": "PERF",
+            "notes": "Perfective aspect"
+          },
+          {
+            "form": "-a",
+            "label": "PERF.SUB",
+            "notes": "Perfective subordinate"
+          },
+          {
+            "form": "-his",
+            "label": "PERF",
+            "notes": "Perfective aspect"
+          },
+          {
+            "form": "-ta",
+            "label": "INT",
+            "notes": "Intentive"
+          },
+          {
+            "form": "-i",
+            "label": "IMPF",
+            "notes": "Imperfective aspect"
+          },
+          {
+            "form": "-i",
+            "label": "IMPF.SUB",
+            "notes": "Imperfective subordinate"
+          }
+        ],
+        "tables": [
+          {
+            "caption": "Principal forms of -aar as a suffix for descriptive verbs",
+            "rows": [
+              [
+                "-aar + Ø",
+                "PERF",
+                "->",
+                "-aa"
+              ],
+              [
+                "-aar + -a",
+                "PERF.SUB",
+                "->",
+                "-aara"
+              ],
+              [
+                "-aar + -his + -ta",
+                "PERF.INT",
+                "->",
+                "-aarista"
+              ],
+              [
+                "-aar + -i",
+                "IMPF",
+                "->",
+                "-aariʔ"
+              ],
+              [
+                "-aar + -i",
+                "IMPF.SUB",
+                "->",
+                "-aari"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Existential Forms: Locative Verbs",
+        "content": "Locative verbs make the same aspectual distinctions as descriptive verbs. They are distinguished in part by the suffix -wi that occurs on all inflected forms except for the simple non-subordinate. The distinctions and forms expressing them are presented below.",
+        "morphemes_mentioned": [
+          {
+            "form": "-wi",
+            "label": "suffix",
+            "notes": "Distinguishes locative verbs, occurs on all inflected forms except simple non-subordinate"
+          }
+        ],
+        "tables": []
+      },
+      {
+        "heading": null,
+        "content": "• Simple existential locative forms. Existential locative verbs in non-subordinate forms have no overt marking on the verb. Examples are:\ntiikita aruusaʔ 'he is riding the horse' < ti- IND + Ø- 3.A + ikita 'be astride' + Ø PERF\ntikawihaahka 'the projectile is on (i.e., attached to) the end of the shaft' < ti- IND + Ø- 3.A + kawihaar- 'projectile' + ka 'be on' + Ø PERF",
+        "morphemes_mentioned": [
+          {
+            "form": "ti-",
+            "label": "IND",
+            "notes": "Indicative"
+          },
+          {
+            "form": "Ø-",
+            "label": "3.A",
+            "notes": "3rd person A-set"
+          },
+          {
+            "form": "ikita",
+            "label": "verb stem",
+            "notes": "'be astride'"
+          },
+          {
+            "form": "Ø",
+            "label": "PERF",
+            "notes": "Perfective aspect"
+          },
+          {
+            "form": "kawihaar-",
+            "label": "noun stem",
+            "notes": "'projectile'"
+          },
+          {
+            "form": "ka",
+            "label": "verb stem",
+            "notes": "'be on'"
+          }
+        ],
+        "tables": []
+      },
+      {
+        "heading": null,
+        "content": "• Intentive existential locative verbs. The intentive existential form has the sequence -wi + -his PERF + -ta INT (that becomes -wista) suffixed to the locative stem. Example:\ntuciraahawista 'it is going to be tilted' < ti- IND + Ø- 3.A + ut- PREV + tiraaha 'be tilted' + -wi SUB.L + -his PERF + -ta INT",
+        "morphemes_mentioned": [
+          {
+            "form": "-wi",
+            "label": "SUB.L",
+            "notes": "Subordinate Locative"
+          },
+          {
+            "form": "-his",
+            "label": "PERF",
+            "notes": "Perfective aspect"
+          },
+          {
+            "form": "-ta",
+            "label": "INT",
+            "notes": "Intentive"
+          },
+          {
+            "form": "-wista",
+            "label": "suffix sequence",
+            "notes": "Combination of -wi + -his PERF + -ta INT"
+          },
+          {
+            "form": "ti-",
+            "label": "IND",
+            "notes": "Indicative"
+          },
+          {
+            "form": "Ø-",
+            "label": "3.A",
+            "notes": "3rd person A-set"
+          },
+          {
+            "form": "ut-",
+            "label": "PREV",
+            "notes": "Preverb"
+          },
+          {
+            "form": "tiraaha",
+            "label": "verb stem",
+            "notes": "'be tilted'"
+          }
+        ],
+        "tables": []
+      },
+      {
+        "heading": null,
+        "content": "• Subordinate existential locative verbs. Subordinate locative verbs take the suffix -wi, as in the following example:\nrakukatawi 'to be against' < ra- INF.A + Ø- 3.A + ku- INF.A + kata 'be against (a vertical surface)' + -wi SUB.L",
+        "morphemes_mentioned": [
+          {
+            "form": "-wi",
+            "label": "SUB.L",
+            "notes": "Subordinate Locative"
+          },
+          {
+            "form": "ra-",
+            "label": "INF.A",
+            "notes": "Infinitive A-set"
+          },
+          {
+            "form": "Ø-",
+            "label": "3.A",
+            "notes": "3rd person A-set"
+          },
+          {
+            "form": "ku-",
+            "label": "INF.A",
+            "notes": "Infinitive A-set"
+          },
+          {
+            "form": "kata",
+            "label": "verb stem",
+            "notes": "'be against (a vertical surface)'"
+          }
+        ],
+        "tables": []
+      }
+    ]
+  },
+  "page_23": {
+    "page_number": 51,
+    "sections": [
+      {
+        "heading": "Inchoative Forms: Locative Verbs",
+        "content": "Locative verbs form their five inchoative aspects with the suffixes -wi followed by -itik INCH. This aspect describes an agent that is assuming or changing into the locative state that the stem denotes.",
+        "morphemes_mentioned": [
+          {
+            "form": "-wi",
+            "label": "suffix",
+            "slot": "suffix",
+            "notes": "Suffix used in forming inchoative aspects, preceding -itik."
+          },
+          {
+            "form": "-itik",
+            "label": "INCH (Inchoative) suffix",
+            "slot": "suffix",
+            "notes": "Inchoative (INCH) suffix, follows -wi in forming inchoative aspects."
+          },
+          {
+            "form": "-Ø",
+            "label": "zero morpheme",
+            "slot": "suffix",
+            "notes": "Combines with -itik for Perfective (PERF) and Perfective Subordinate (PERF.SUB) aspects."
+          },
+          {
+            "form": "-his",
+            "label": "suffix",
+            "slot": "suffix",
+            "notes": "Combines with -itik and -ta for Perfective Interrogative (PERF.INT) aspect."
+          },
+          {
+            "form": "-ta",
+            "label": "suffix",
+            "slot": "suffix",
+            "notes": "Combines with -itik and -his for Perfective Interrogative (PERF.INT) aspect."
+          },
+          {
+            "form": "-hus",
+            "label": "suffix",
+            "slot": "suffix",
+            "notes": "Combines with -itik for Imperfective (IMPF) and Imperfective Subordinate (IMPF.SUB) aspects."
+          }
+        ],
+        "tables": [
+          {
+            "caption": "Inchoative Aspect Forms of Locative Verbs",
+            "rows": [
+              [
+                "Input Morphemes",
+                "Aspect/Mood",
+                "Resulting Form"
+              ],
+              [
+                "-itik + -Ø",
+                "PERF",
+                "-itit"
+              ],
+              [
+                "-itik + -Ø",
+                "PERF.SUB",
+                "-itit"
+              ],
+              [
+                "-itik + -his + -ta",
+                "PERF.INT",
+                "-itiksta"
+              ],
+              [
+                "-itik + -hus",
+                "IMPF",
+                "-itiikᵘ"
+              ],
+              [
+                "-itik + -hus",
+                "IMPF.SUB",
+                "-itiku"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "page_1": {
+    "page_number": 29,
+    "sections": [
+      {
+        "heading": "Grammatical Overview",
+        "content": "Skiri is polysynthetic in its structure in that words -- primarily verbs -- are composed of an unusually large number of meaningful elements (morphemes) that generally in other, non-polysynthetic languages are separate, or independent, words. Most of the categories marked on the Skiri verb are grammatical in nature and include mode, aspect, person, tense, possession, benefaction, and other such categories. Also generally incorporated into the verb is the noun patient of a transitive verb or the noun agent of an intransitive one. Thus in Skiri the verb is the most elaborate, as well as prevalent, word class, and verbs translate into English as either a clause or a sentence. Nouns constitute the only other word class that allows inflection, but in a very limited manner.\n\nGenerally a freely occurring verb has at least five morphemes comprising it, but often as many as ten or more morphemes. Those morphemes are tightly bound together by a complex set of phonological rules (presented in chapter 3) that change their forms and thereby 'disguise' their underlying forms or identities. Languages of this type, in which morphemes fuse or change their forms to one extent or another when coming together in word building, are often designated as fusional.",
+        "morphemes_mentioned": [],
+        "tables": []
+      },
+      {
+        "heading": "Nouns",
+        "content": "In Skiri there are two types of noun stems, independent and dependent. The independent stem is a noun that stands freely, with or without the nominal absolutive suffix -uʔ (see below). A dependent stem, in contrast, is one that cannot by itself stand independently as a word. To become a free form it must have a suffix, although generally it occurs only in compounds.\n\nExamples of dependent nouns (cited as N-DEP herein) are:\nsiis- 'sharp, pointed object': siiski 'awl' (< siis- + -kis DIM); siistacaraʔ 'fork' (< siis- + -taar PL + taraa 'be side by side')\nasaa- 'horse; dog': asaaki 'dog' (< asaa- + -kis DIM); asiicapaat 'mare' (< asaa- + icapaak 'woman; female'). The independent form of 'horse' is aruusaʔ.",
+        "morphemes_mentioned": [
+          {
+            "form": "-uʔ",
+            "label": "nominal absolutive suffix",
+            "meaning": "forms independent nouns",
+            "notes": "NOM"
+          },
+          {
+            "form": "-kis",
+            "label": "diminutive",
+            "meaning": "small N",
+            "notes": "DIM"
+          },
+          {
+            "form": "-taar",
+            "label": "plural",
+            "meaning": "plural marker for nouns",
+            "notes": "PL"
+          }
+        ],
+        "tables": []
+      }
+    ],
+    "_source": "gemini_plaintext_400dpi_retry"
+  },
+  "page_3": {
+    "page_number": 31,
+    "sections": [
+      {
+        "heading": "Noun Derivation",
+        "content": "There are five derivational affixes in Skiri, two of which do not add new semantic content to noun stems, but serve only to form independent nouns. The other three, one a suffix and two prefixes, do add content. These affixes are given in table 5.",
+        "morphemes_mentioned": [
+          {
+            "form": "-uʔ",
+            "label": "Nominal Absolutive (NOM)",
+            "meaning": "forms independent nouns",
+            "notes": "iksuʔ 'hand' < iks- 'hand' + -uʔ"
+          },
+          {
+            "form": "-kis",
+            "label": "Diminutive (DIM)",
+            "meaning": "small N; no translation",
+            "notes": "asaakiʔ 'dog' < asaa- 'dog; horse' + -kis DIM; riicikiʔ 'knife' < riici- 'knife' + kis DIM"
+          },
+          {
+            "form": "-kusuʔ",
+            "label": "Augmentative (AUG)",
+            "meaning": "large, big",
+            "notes": "wiitakusuʔ 'large man' < wiita 'man' + kusuʔ 'big'"
+          },
+          {
+            "form": "-kuukuʔuʔ",
+            "label": "covering",
+            "meaning": "covering",
+            "notes": "pakskuukuʔuʔ 'hat; headwear' < paks- 'head' + -kuuku- 'covering' + -uʔ NOM"
+          },
+          {
+            "form": "c-",
+            "label": "Feminine (FEM)",
+            "meaning": "female",
+            "notes": "ckuraaʔuʔ < c- FEM + kuraa- 'doctor' + -uʔ NOM"
+          }
+        ],
+        "tables": [
+          {
+            "caption": "Table 5. Nominal Derivational Affixes",
+            "headers": [
+              "Category",
+              "Skiri",
+              "Translation",
+              "Example"
+            ],
+            "rows": [
+              [
+                "Nominal Absolutive (NOM)",
+                "-uʔ",
+                "(no translation)",
+                "iksuʔ 'hand' < iks- + -uʔ"
+              ],
+              [
+                "Diminutive (DIM)",
+                "-kis",
+                "small N; no trans.",
+                "asaakiʔ 'dog'; riicikiʔ 'knife'"
+              ],
+              [
+                "Augmentative (AUG)",
+                "-kusuʔ",
+                "large, big",
+                "wiitakusuʔ 'large man'"
+              ],
+              [
+                "Covering",
+                "-kuukuʔuʔ",
+                "covering",
+                "pakskuukuʔuʔ 'hat; headwear'"
+              ],
+              [
+                "Feminine (FEM)",
+                "c-",
+                "female",
+                "ckuraaʔuʔ 'female doctor'"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Verbs",
+        "content": "The basic component of active verb stems is the root, usually a monosyllabic but sometimes a di- or tri-syllabic morpheme. In Skiri there are approximately one hundred such roots, and consequently the vast majority of active verb stems are derived forms. Stems are formed by the addition of verbal prefixes; by compounding locative, descriptive, or noun stems, and combinations of those elements to verb roots; and by combining preverbs with roots and stems. The root hak 'to pass, go by', for example, has hundreds of different stems based on it, and the root at 'to go' has even more.\n\nMany active and passive verb stems in Skiri are discontinuous stems, in which the stem base is preceded by a preverb, a monosyllabic morpheme that occurs among the inner prefixes preceding the stem base but is usually not contiguous with it. There are three preverbs in Skiri: ir-/a-, uur- and ut-. Each of them is identical in form to grammatical prefixes that have other functions (see below), but when they occur as parts of stems they do not have any tangible meaning.\n\nExample: wiitatiiksaʔ 'I have come' < wii- 'now' + ta- IND.1/2.A + t- 1.A + ir- PREV + uks- AOR + a 'come' + -Ø PERF",
+        "morphemes_mentioned": [
+          {
+            "form": "ir-/a-",
+            "label": "preverb",
+            "meaning": "part of discontinuous verb stems",
+            "notes": "ir- alternates with a- for 3rd person agent"
+          },
+          {
+            "form": "uur-",
+            "label": "preverb",
+            "meaning": "part of discontinuous verb stems",
+            "notes": null
+          },
+          {
+            "form": "ut-",
+            "label": "preverb",
+            "meaning": "part of discontinuous verb stems",
+            "notes": null
+          },
+          {
+            "form": "wii-",
+            "label": "now",
+            "meaning": "temporal proclitic",
+            "notes": null
+          },
+          {
+            "form": "ta-",
+            "label": "IND.1/2.A",
+            "meaning": "indicative mode for 1st/2nd person agent",
+            "notes": "Modal prefix"
+          },
+          {
+            "form": "t-",
+            "label": "1.A",
+            "meaning": "first person agent",
+            "notes": null
+          },
+          {
+            "form": "uks-",
+            "label": "AOR",
+            "meaning": "aorist",
+            "notes": null
+          }
+        ],
+        "tables": []
+      }
+    ],
+    "_source": "gemini_plaintext_400dpi_retry_split"
+  },
+  "page_7": {
+    "page_number": 35,
+    "sections": [
+      {
+        "heading": "Person and number.",
+        "content": "Pronominal agent and patient prefixes occur immediately following the modal prefixes [table 7:11, 12, 15]. Skiri distinguishes two persons—first and second—as well as three numbers—singular, dual, and plural. In both the dual and plural numbers there is a further distinction between inclusive (including the person spoken to) and exclusive (excluding the person spoken to) [table 7:11-12, 15]. There is, in addition, an obviative (OBV) prefix ir- that designates an indefinite third-person agent or a reversal in third-person agent and patient [table 7:13].",
+        "morphemes_mentioned": [
+          {
+            "form": "ir-",
+            "label": "obviative (OBV) prefix",
+            "meaning": "designates an indefinite third-person agent or a reversal in third-person agent and patient",
+            "notes": "Occurs as an agent prefix for obviative forms, and as a patient prefix for obviative forms (in combination with a-)"
+          }
+        ],
+        "tables": [
+          {
+            "caption": "Table 9. Pronominal Prefixes",
+            "headers": [
+              "Person",
+              "Agent",
+              "Patient"
+            ],
+            "rows": [
+              [
+                "1ˢᵗ",
+                "t-",
+                "ku-"
+              ],
+              [
+                "2ⁿᵈ",
+                "s-",
+                "a-"
+              ],
+              [
+                "Obviative",
+                "ir-",
+                "a-"
+              ],
+              [
+                "Dual inclusive",
+                "acir-",
+                "aca-"
+              ],
+              [
+                "Plural inclusive",
+                "a-",
+                ""
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": null,
+        "content": "Singular number is unmarked in Skiri verbs. Dual number for both agent and patient is marked by the prefix si- DU, which precedes the modal prefix [table 12:6]. Plurality, in contrast, is represented by several morphemes (table 7:13, 22-24):\n\n*   first and second person agents in active, descriptive, and locative verbs take rak-;\n*   third person plural agents that are a group or single entity in active intransitive, descriptive, and locative verbs take the collective plural prefix ir-;\n*   third person plural agents that are individuals acting or existing separately in active intransitive, descriptive, and locative verbs take the individuative plural prefix raar-;\n*   third person agents of active transitive verbs are marked by the combination si- DU and ir- COLL.PL.\n\nIn active intransitive, descriptive, and locative verbs there is a marked distinction between collective and **non-collective plural agents**, as in,\n\ntiiraspaatasit 'they (COLL) set out' < ti- IND + Ø- 3.A + ir- 3.P.COLL.A + aspaatasik 'set out' + Ø PERF;\ntiiraaraspaatasit 'they (INDV) set out' < ti- IND + Ø- 3.A + raar- 3.P.INDV.A + aspaatasik 'set out' + Ø PERF;\n\nand in many transitive verbs there are separate prefixes that distinguish animate and inanimate third-person plural objects, as in,\n\ntaharaspiʔ 'I looked for them (inanimate objects)' < ta- IND.1/2.A + t- 1.A + raar- 3.INAN.P + raspii 'look for' + Ø PERF; cp. taatakaraspiʔ 'I looked for",
+        "morphemes_mentioned": [
+          {
+            "form": "si-",
+            "label": "DU (dual number)",
+            "meaning": "dual number for both agent and patient",
+            "notes": "precedes the modal prefix; also part of the combination si- DU and ir- COLL.PL"
+          },
+          {
+            "form": "rak-",
+            "label": "plural agent",
+            "meaning": "first and second person agents in active, descriptive, and locative verbs",
+            "notes": null
+          },
+          {
+            "form": "ir-",
+            "label": "collective plural prefix",
+            "meaning": "third person plural agents that are a group or single entity in active intransitive, descriptive, and locative verbs",
+            "notes": "Distinct from the obviative ir-; also part of the combination si- DU and ir- COLL.PL"
+          },
+          {
+            "form": "raar-",
+            "label": "individuative plural prefix",
+            "meaning": "third person plural agents that are individuals acting or existing separately in active intransitive, descriptive, and locative verbs",
+            "notes": "Also used for 3.INAN.P (third person inanimate plural patient)"
+          },
+          {
+            "form": "ti-",
+            "label": "IND (indicative)",
+            "meaning": null,
+            "notes": "Modal prefix"
+          },
+          {
+            "form": "Ø",
+            "label": "3.A (third person agent)",
+            "meaning": null,
+            "notes": "Zero morpheme"
+          },
+          {
+            "form": "ir-",
+            "label": "3.P.COLL.A (third person collective plural agent)",
+            "meaning": null,
+            "notes": "Used in active intransitive, descriptive, and locative verbs"
+          },
+          {
+            "form": "aspaatasik",
+            "label": "verb stem",
+            "meaning": "'set out'",
+            "notes": null
+          },
+          {
+            "form": "Ø",
+            "label": "PERF (perfective)",
+            "meaning": null,
+            "notes": "Zero morpheme"
+          },
+          {
+            "form": "raar-",
+            "label": "3.P.INDV.A (third person individuative plural agent)",
+            "meaning": null,
+            "notes": "Used in active intransitive, descriptive, and locative verbs"
+          },
+          {
+            "form": "ta-",
+            "label": "IND.1/2.A (indicative first/second person agent)",
+            "meaning": null,
+            "notes": "Modal prefix"
+          },
+          {
+            "form": "t-",
+            "label": "1.A (first person agent)",
+            "meaning": null,
+            "notes": null
+          },
+          {
+            "form": "raar-",
+            "label": "3.INAN.P (third person inanimate plural patient)",
+            "meaning": null,
+            "notes": "Used in transitive verbs"
+          },
+          {
+            "form": "raspii",
+            "label": "verb stem",
+            "meaning": "'look for'",
+            "notes": null
+          }
+        ],
+        "tables": []
+      }
+    ],
+    "_source": "gemini_plaintext_retry"
+  },
+  "page_16": {
+    "page_number": 44,
+    "sections": [
+      {
+        "heading": null,
+        "content": "iriiruurakuuraaru 'whatever the kind of animal was,' that is, 'all kinds of animals' < irii- 'the one' + ruu- 'there' + ra- INF.A + Ø- 3.A + ku- INF.B + i- SEQ + raburaar- 'animal' + -u SUB.D",
+        "morphemes_mentioned": [
+          {
+            "form": "irii-",
+            "label": "the one",
+            "meaning": "determiner prefix",
+            "notes": null
+          },
+          {
+            "form": "ruu-",
+            "label": "there",
+            "meaning": "locative",
+            "notes": null
+          },
+          {
+            "form": "ra-",
+            "label": "INF.A",
+            "meaning": "infinitive agent",
+            "notes": null
+          },
+          {
+            "form": "ku-",
+            "label": "INF.B",
+            "meaning": "infinitive benefactive",
+            "notes": null
+          },
+          {
+            "form": "i-",
+            "label": "SEQ",
+            "meaning": "sequential",
+            "notes": null
+          },
+          {
+            "form": "-u",
+            "label": "SUB.D",
+            "meaning": "subordinate descriptive",
+            "notes": null
+          }
+        ],
+        "tables": []
+      },
+      {
+        "heading": "Verb Stems",
+        "content": "",
+        "morphemes_mentioned": [],
+        "tables": [
+          {
+            "caption": "Table 15. The Verb Stem Template",
+            "headers": [
+              "Slot",
+              "Category",
+              "Forms"
+            ],
+            "rows": [
+              [
+                "1",
+                "Iterative",
+                "raar-, ka- ITER"
+              ],
+              [
+                "2",
+                "Noun",
+                "awi- 'image', wak- 'sound'"
+              ],
+              [
+                "3",
+                "Descriptive Stem",
+                "kasis 'hard', tarahkis 'strong'"
+              ],
+              [
+                "4",
+                "Portative/Comitative",
+                "ri-, ra-, ruu- PORT; cir-, ciras- COM"
+              ],
+              [
+                "5",
+                "Locative",
+                "ka- 'on', kaa- 'inside'"
+              ],
+              [
+                "6",
+                "Active Verb Complement",
+                "kiikak 'drink' + -his PERF"
+              ],
+              [
+                "7",
+                "Verb Root",
+                "at 'go'"
+              ],
+              [
+                "8",
+                "Causative",
+                "-rik-, -raʔuk"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Suffixes",
+        "content": "Only two categories are marked by suffixes: aspect and subordination. Active and stative verbs occur in one of two basic aspects, perfective and imperfective. There are five other aspects that are built on one or both of these basic aspects: an intentive, which indicates that something is going to happen; a habitual, which indicates that something regularly happens; and an inchoative, which indicates that something is beginning to happen. All verbs occur in both independent and subordinate forms. Independent forms do not take a suffix, whereas subordinate forms do take one.\n\nEach of the major classes of verbs is, in part, defined by its distinctive subordinate suffix, which defines its class. Descriptive stems, for example, take the subordinate suffix -u, while locative verbs take the suffix -wi. Active and stative verbs, in contrast, belong to one of four subclasses, of which two are marked by different vowel suffixes, one by a final-syllable stress change, and one by the lack of a suffix.",
+        "morphemes_mentioned": [
+          {
+            "form": "-u",
+            "label": "subordinate suffix (descriptive)",
+            "meaning": "marks subordinate form of descriptive verbs",
+            "notes": "SUB.D"
+          },
+          {
+            "form": "-wi",
+            "label": "subordinate suffix (locative)",
+            "meaning": "marks subordinate form of locative verbs",
+            "notes": "SUB.LOC"
+          }
+        ],
+        "tables": [
+          {
+            "caption": "Table 16. Verb Suffix Template",
+            "headers": [
+              "Slot 25",
+              "Slot 26",
+              "Slot 27",
+              "Slot 28"
+            ],
+            "rows": [
+              [
+                "VERB STEM",
+                "PERFECTIVE / PERFECTIVE SUBORDINATE / IMPERFECTIVE / IMPERFECTIVE SUBORDINATE",
+                "INTENTIVE / HABITUAL / INCHOATIVE",
+                "INTENTIVE SUBORDINATE"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "_source": "gemini_plaintext_400dpi_retry"
+  }
+}

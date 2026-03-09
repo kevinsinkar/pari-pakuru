@@ -1,0 +1,109 @@
+======================================================================
+Phase 3.1 — Morpheme Inventory & Slot System Report
+Generated: 2026-03-08 23:00:18
+======================================================================
+
+1. VERB TEMPLATE STRUCTURE
+   Proclitics -> Inner Prefixes (18 slots) -> Noun -> STEM -> Suffixes
+   Proclitic slots: 8
+   Inner prefix slots: 15
+   Suffix slots: 4
+   Modal prefix forms: 24
+   Person/number combinations: 11
+   Verb classes: 10
+
+2. SOURCE DATA
+   Appendix 1: 770 conjugated forms extracted
+   Appendix 2: 9 irregular verb roots
+   Abbreviations: 164 entries
+   Grammatical Overview: 23 pages extracted
+
+3. VALIDATION AGAINST APPENDIX 1
+   Total forms tested: 770
+   Exact matches: 98 (12.7%)
+   Close matches (d<=2): 167 (21.7%)
+   Mismatches: 505 (65.6%)
+
+   Sample mismatches (first 20):
+   to come         indicative_perfective               1du_incl    
+     Expected:  tacíhwaʔaʔ
+     Predicted: sitaaciriiraʔ
+     Breakdown: si(DU) + ta(MODE) + acir(INCLUSIVE) + iir(PREV) + aʔ(STEM)
+   to come         indicative_perfective               1du_excl    
+     Expected:  sitatíhwaʔaʔ
+     Predicted: sitatihiiraʔ
+     Breakdown: si(DU) + ta(MODE) + t(AGENT) + ih(PAT_COMPOUND) + iir(PREV) + aʔ(STEM)
+   to come         indicative_perfective               2du         
+     Expected:  sitasíhwaʔaʔ
+     Predicted: sitasihiiraʔ
+     Breakdown: si(DU) + ta(MODE) + s(AGENT) + ih(PAT_COMPOUND) + iir(PREV) + aʔ(STEM)
+   to come         indicative_perfective               3du         
+     Expected:  sitawaʔaʔ
+     Predicted: sitaaʔ
+     Breakdown: si(DU) + ti(MODE) + a(PREV) + aʔ(STEM)
+   to come         indicative_perfective               1pl_incl    
+     Expected:  tataraakaahuʔ
+     Predicted: taaraakiiraʔ
+     Breakdown: ta(MODE) + a(INCLUSIVE) + raak(PL) + iir(PREV) + aʔ(STEM)
+   to come         indicative_perfective               1pl_excl    
+     Expected:  tatíraakaahuʔ
+     Predicted: tatiraakiiraʔ
+     Breakdown: ta(MODE) + t(AGENT) + iraak(PL) + iir(PREV) + aʔ(STEM)
+   to come         indicative_perfective               2pl         
+     Expected:  tasíraakaahuʔ
+     Predicted: tasiraakiiraʔ
+     Breakdown: ta(MODE) + s(AGENT) + iraak(PL) + iir(PREV) + aʔ(STEM)
+   to come         negative_indicative_perfective      1du_incl    
+     Expected:  kaakaacíhwaʔaʔ
+     Predicted: sikaakaaciriiraʔ
+     Breakdown: si(DU) + kaaka(MODE) + acir(INCLUSIVE) + iir(PREV) + aʔ(STEM)
+   to come         negative_indicative_perfective      1du_excl    
+     Expected:  síkaakaatíhwaʔaʔ
+     Predicted: sikaakatihiiraʔ
+     Breakdown: si(DU) + kaaka(MODE) + t(AGENT) + ih(PAT_COMPOUND) + iir(PREV) + aʔ(STEM)
+   to come         negative_indicative_perfective      2du         
+     Expected:  síkaakaasíhwaʔaʔ
+     Predicted: sikaakasihiiraʔ
+     Breakdown: si(DU) + kaaka(MODE) + s(AGENT) + ih(PAT_COMPOUND) + iir(PREV) + aʔ(STEM)
+   to come         negative_indicative_perfective      3du         
+     Expected:  síkaakaawaʔaʔ
+     Predicted: sikaakaaʔ
+     Breakdown: si(DU) + kaaki(MODE) + a(PREV) + aʔ(STEM)
+   to come         negative_indicative_perfective      1pl_incl    
+     Expected:  kaakaataraakaahuʔ
+     Predicted: kaakaaraakiiraʔ
+     Breakdown: kaaka(MODE) + a(INCLUSIVE) + raak(PL) + iir(PREV) + aʔ(STEM)
+   to come         negative_indicative_perfective      1pl_excl    
+     Expected:  kaakaatíraakaahuʔ
+     Predicted: kaakatiraakiiraʔ
+     Breakdown: kaaka(MODE) + t(AGENT) + iraak(PL) + iir(PREV) + aʔ(STEM)
+   to come         negative_indicative_perfective      2pl         
+     Expected:  kaakaasíraakaahuʔ
+     Predicted: kaakasiraakiiraʔ
+     Breakdown: kaaka(MODE) + s(AGENT) + iraak(PL) + iir(PREV) + aʔ(STEM)
+   to come         contingent_perfective               1du_incl    
+     Expected:  icíhwaʔaʔ
+     Predicted: siiciriiraʔ
+     Breakdown: si(DU) + i(MODE) + acir(INCLUSIVE) + iir(PREV) + aʔ(STEM)
+   to come         contingent_perfective               1du_excl    
+     Expected:  siʔitíhwaʔaʔ
+     Predicted: siitihiiraʔ
+     Breakdown: si(DU) + i(MODE) + t(AGENT) + ih(PAT_COMPOUND) + iir(PREV) + aʔ(STEM)
+   to come         contingent_perfective               2du         
+     Expected:  siʔisíhwaʔaʔ
+     Predicted: siisihiiraʔ
+     Breakdown: si(DU) + i(MODE) + s(AGENT) + ih(PAT_COMPOUND) + iir(PREV) + aʔ(STEM)
+   to come         contingent_perfective               3du         
+     Expected:  sirawaʔaʔ
+     Predicted: siraaʔ
+     Breakdown: si(DU) + ri(MODE) + a(PREV) + aʔ(STEM)
+   to come         contingent_perfective               1pl_incl    
+     Expected:  itaraakaahuʔ
+     Predicted: iiraakiiraʔ
+     Breakdown: i(MODE) + a(INCLUSIVE) + raak(PL) + iir(PREV) + aʔ(STEM)
+   to come         contingent_perfective               1pl_excl    
+     Expected:  itíraakaahuʔ
+     Predicted: itiraakiiraʔ
+     Breakdown: i(MODE) + t(AGENT) + iraak(PL) + iir(PREV) + aʔ(STEM)
+
+======================================================================

@@ -1,0 +1,3278 @@
+{
+  "page_2": {
+    "verb_heading": null,
+    "verb_class": null,
+    "dictionary_form": null,
+    "english_gloss": "to come",
+    "modes": {
+      "indicative_perfective": {
+        "1sg": {
+          "skiri": "tatiiraʔ",
+          "english": "I came"
+        },
+        "2sg": {
+          "skiri": "tasiiraʔ",
+          "english": "you came"
+        },
+        "3sg": {
+          "skiri": "taaʔ",
+          "english": "he came"
+        },
+        "1du_incl": {
+          "skiri": "tacíhwaʔaʔ",
+          "english": "we came"
+        },
+        "1du_excl": {
+          "skiri": "sitatíhwaʔaʔ",
+          "english": "we came"
+        },
+        "2du": {
+          "skiri": "sitasíhwaʔaʔ",
+          "english": "you came"
+        },
+        "3du": {
+          "skiri": "sitawaʔaʔ",
+          "english": "they came"
+        },
+        "1pl_incl": {
+          "skiri": "tataraakaahuʔ",
+          "english": "we came"
+        },
+        "1pl_excl": {
+          "skiri": "tatíraakaahuʔ",
+          "english": "we came"
+        },
+        "2pl": {
+          "skiri": "tasíraakaahuʔ",
+          "english": "you came"
+        },
+        "3pl": {
+          "skiri": "taaʔaahuʔ",
+          "english": "they came"
+        }
+      },
+      "negative_indicative_perfective": {
+        "1sg": {
+          "skiri": "kaakatiiraʔ",
+          "english": "I did not come"
+        },
+        "2sg": {
+          "skiri": "kaakasiiraʔ",
+          "english": "you did not come"
+        },
+        "3sg": {
+          "skiri": "kaakaaʔ",
+          "english": "he did not come"
+        },
+        "1du_incl": {
+          "skiri": "kaakaacíhwaʔaʔ",
+          "english": "we did not come"
+        },
+        "1du_excl": {
+          "skiri": "síkaakaatíhwaʔaʔ",
+          "english": "we did not come"
+        },
+        "2du": {
+          "skiri": "síkaakaasíhwaʔaʔ",
+          "english": "you did not come"
+        },
+        "3du": {
+          "skiri": "síkaakaawaʔaʔ",
+          "english": "they did not come"
+        },
+        "1pl_incl": {
+          "skiri": "kaakaataraakaahuʔ",
+          "english": "we did not come"
+        },
+        "1pl_excl": {
+          "skiri": "kaakaatíraakaahuʔ",
+          "english": "we did not come"
+        },
+        "2pl": {
+          "skiri": "kaakaasíraakaahuʔ",
+          "english": "you did not come"
+        },
+        "3pl": {
+          "skiri": "kaakaaʔaahuʔ, kaakaaraaraʔ",
+          "english": "they did not come"
+        }
+      },
+      "contingent_perfective": {
+        "1sg": {
+          "skiri": "ítiiraʔ",
+          "english": "I'll come"
+        },
+        "2sg": {
+          "skiri": "ísiiraʔ",
+          "english": "you'll come"
+        },
+        "3sg": {
+          "skiri": "raʔaʔ",
+          "english": "he'll come"
+        },
+        "1du_incl": {
+          "skiri": "icíhwaʔaʔ",
+          "english": "we'll come"
+        },
+        "1du_excl": {
+          "skiri": "siʔitíhwaʔaʔ",
+          "english": "we'll come"
+        },
+        "2du": {
+          "skiri": "siʔisíhwaʔaʔ",
+          "english": "you'll come"
+        },
+        "3du": {
+          "skiri": "sirawaʔaʔ",
+          "english": "they'll come"
+        },
+        "1pl_incl": {
+          "skiri": "itaraakaahuʔ",
+          "english": "we'll come"
+        },
+        "1pl_excl": {
+          "skiri": "itíraakaahuʔ",
+          "english": "we'll come"
+        },
+        "2pl": {
+          "skiri": "isíraakaahuʔ",
+          "english": "you'll come"
+        },
+        "3pl": {
+          "skiri": "raaʔaahuʔ, raaraaraʔ",
+          "english": "they'll come"
+        }
+      },
+      "assertive_perfective": {
+        "1sg": {
+          "skiri": "rítiiraʔ",
+          "english": "I came"
+        },
+        "2sg": {
+          "skiri": "rísiiraʔ",
+          "english": "you came"
+        },
+        "3sg": {
+          "skiri": "raaʔaʔ",
+          "english": "he came"
+        },
+        "1du_incl": {
+          "skiri": "riicíhwaʔaʔ",
+          "english": "we came"
+        },
+        "1du_excl": {
+          "skiri": "siríitíhwaʔaʔ",
+          "english": "we came"
+        },
+        "2du": {
+          "skiri": "siríisíhwaʔaʔ",
+          "english": "you came"
+        },
+        "3du": {
+          "skiri": "síraaʔaʔ",
+          "english": "they came"
+        },
+        "1pl_incl": {
+          "skiri": "ríitaraakaahuʔ",
+          "english": "we came"
+        },
+        "1pl_excl": {
+          "skiri": "ríitíraakaahuʔ",
+          "english": "we came"
+        },
+        "2pl": {
+          "skiri": "ríisíraakaahuʔ",
+          "english": "you came"
+        },
+        "3pl": {
+          "skiri": "raaʔaahuʔ",
+          "english": "they came"
+        }
+      },
+      "absolutive_perfective": {
+        "1sg": {
+          "skiri": "ratiiraʔ",
+          "english": "I came"
+        },
+        "2sg": {
+          "skiri": "rasiiraʔ",
+          "english": "you came"
+        },
+        "3sg": {
+          "skiri": "raʔaʔ",
+          "english": "he came"
+        },
+        "1du_incl": {
+          "skiri": "racíhwaʔaʔ",
+          "english": "we came"
+        },
+        "1du_excl": {
+          "skiri": "síratíhwaʔaʔ",
+          "english": "we came"
+        },
+        "2du": {
+          "skiri": "sírasíhwaʔaʔ",
+          "english": "you came"
+        },
+        "3du": {
+          "skiri": "sírawáaʔ",
+          "english": "they came"
+        },
+        "1pl_incl": {
+          "skiri": "rataraakaahuʔ",
+          "english": "we came"
+        },
+        "1pl_excl": {
+          "skiri": "ratíraakaahuʔ",
+          "english": "we came"
+        },
+        "2pl": {
+          "skiri": "rasíraakaahuʔ",
+          "english": "you came"
+        },
+        "3pl": {
+          "skiri": "raaʔaahuʔ",
+          "english": "they came"
+        }
+      },
+      "potential_perfective": {
+        "1sg": {
+          "skiri": "kuustíriiʔaʔ",
+          "english": "I will come"
+        },
+        "2sg": {
+          "skiri": "kaasíriiʔaʔ",
+          "english": "you will come"
+        },
+        "3sg": {
+          "skiri": "kusaaʔaʔ",
+          "english": "he will come"
+        },
+        "1du_incl": {
+          "skiri": "kaacíriíwaʔaʔ",
+          "english": "we will come"
+        },
+        "1du_excl": {
+          "skiri": "sikuustíriiwaʔaʔ",
+          "english": "we will come"
+        },
+        "2du": {
+          "skiri": "sikaasíriiwaʔaʔ",
+          "english": "you will come"
+        },
+        "3du": {
+          "skiri": "sikusaaʔaʔ",
+          "english": "they will come"
+        },
+        "1pl_incl": {
+          "skiri": "kuustaaraakaahuʔ",
+          "english": "we will come"
+        },
+        "1pl_excl": {
+          "skiri": "kuustíriiraakaahuʔ",
+          "english": "we will come"
+        },
+        "2pl": {
+          "skiri": "kaasíriiraakaahuʔ",
+          "english": "you will come"
+        },
+        "3pl": {
+          "skiri": "kusaaʔaahuʔ, kusaaraaraʔ",
+          "english": "they will come"
+        }
+      },
+      "gerundial_perfective_subordinate": {
+        "1sg": {
+          "skiri": "íriira",
+          "english": "where I'm coming from"
+        },
+        "2sg": {
+          "skiri": "íriisíira",
+          "english": "where you're coming from"
+        },
+        "3sg": {
+          "skiri": "íriiraʔa",
+          "english": "where he's coming from"
+        },
+        "1du_incl": {
+          "skiri": "íriiracíhwaʔa",
+          "english": "where we're coming from"
+        },
+        "1du_excl": {
+          "skiri": "íriisiratíhwaʔa",
+          "english": "where we're coming from"
+        },
+        "2du": {
+          "skiri": "íriisirasíhwaʔa",
+          "english": "where you're coming from"
+        },
+        "3du": {
+          "skiri": "íriisirawaʔa",
+          "english": "where they're coming from"
+        },
+        "1pl_incl": {
+          "skiri": "íriirataraakaahu",
+          "english": "where we're coming from"
+        },
+        "1pl_excl": {
+          "skiri": "íriiratíraakaahu",
+          "english": "where we're coming from"
+        },
+        "2pl": {
+          "skiri": "íriirasíraakaahu",
+          "english": "where you're coming from"
+        },
+        "3pl": {
+          "skiri": "íriiraʔaahu, íriiraara",
+          "english": "where they're coming from"
+        }
+      },
+      "contingent_perfective_subordinate": {
+        "1sg": {
+          "skiri": "ítiira",
+          "english": "if/when I come"
+        },
+        "2sg": {
+          "skiri": "ísiira",
+          "english": "if/when you come"
+        },
+        "3sg": {
+          "skiri": "raʔa",
+          "english": "if/when he comes"
+        },
+        "1du_incl": {
+          "skiri": "icíhwaʔa",
+          "english": "if/when we come"
+        },
+        "1du_excl": {
+          "skiri": "siʔitíhwaʔa",
+          "english": "if/when we come"
+        },
+        "2du": {
+          "skiri": "siʔisíhwaʔa",
+          "english": "if/when you come"
+        },
+        "3du": {
+          "skiri": "sirawaʔa",
+          "english": "if/when they come"
+        },
+        "1pl_incl": {
+          "skiri": "itaraakaahu",
+          "english": "if/when we come"
+        },
+        "1pl_excl": {
+          "skiri": "itíraakaahu",
+          "english": "if/when we come"
+        },
+        "2pl": {
+          "skiri": "isíraakaahu",
+          "english": "if/when you come"
+        },
+        "3pl": {
+          "skiri": "raaʔaahu, raaraara",
+          "english": "if/when they come"
+        }
+      },
+      "subjunctive_perfective_subordinate": {
+        "1sg": {
+          "skiri": "aatiira",
+          "english": "should I come"
+        },
+        "2sg": {
+          "skiri": "aasiira",
+          "english": "should you come"
+        },
+        "3sg": {
+          "skiri": "aaʔa",
+          "english": "should he come"
+        },
+        "1du_incl": {
+          "skiri": "aacíhwaʔa",
+          "english": "should we come"
+        },
+        "1du_excl": {
+          "skiri": "siʔaatíhwaʔa",
+          "english": "should we come"
+        },
+        "2du": {
+          "skiri": "siʔaasíhwaʔa",
+          "english": "should you come"
+        },
+        "3du": {
+          "skiri": "siʔaawaʔa",
+          "english": "should they come"
+        },
+        "1pl_incl": {
+          "skiri": "aataraakaahu",
+          "english": "should we come"
+        },
+        "1pl_excl": {
+          "skiri": "aatíraakaahu",
+          "english": "should we come"
+        },
+        "2pl": {
+          "skiri": "aasíraakaahu",
+          "english": "should you come"
+        },
+        "3pl": {
+          "skiri": "aaʔaahu, aaraara",
+          "english": "should they come"
+        }
+      },
+      "infinitive_perfective_subordinate": {
+        "1sg": {
+          "skiri": "ratihkúʔa",
+          "english": "for me to come"
+        },
+        "2sg": {
+          "skiri": "rasihkúʔa",
+          "english": "for you to come"
+        },
+        "3sg": {
+          "skiri": "raakúʔa",
+          "english": "for him to come"
+        },
+        "1du_incl": {
+          "skiri": "racihkúwaʔa",
+          "english": "for us to come"
+        },
+        "1du_excl": {
+          "skiri": "siratihkúwaʔa",
+          "english": "for us to come"
+        },
+        "2du": {
+          "skiri": "sirasihkúwaʔa",
+          "english": "for you two to come"
+        },
+        "3du": {
+          "skiri": "siraakúwaʔa",
+          "english": "for them to come"
+        },
+        "1pl_incl": {
+          "skiri": "rataakúraakahu",
+          "english": "for us to come"
+        },
+        "1pl_excl": {
+          "skiri": "ratihkúraakahu",
+          "english": "for us to come"
+        },
+        "2pl": {
+          "skiri": "rasihkúraakahu",
+          "english": "for you to come"
+        },
+        "3pl": {
+          "skiri": "raakúhu, raakúraara",
+          "english": "for them to come"
+        }
+      }
+    }
+  },
+  "page_3": {
+    "verb_heading": "to do it",
+    "verb_class": null,
+    "dictionary_form": null,
+    "english_gloss": "to do it",
+    "modes": {
+      "indicative_perfective": {
+        "1sg": {
+          "skiri": "tatuutaa",
+          "english": "I did it"
+        },
+        "2sg": {
+          "skiri": "tasuutaa",
+          "english": "you did it"
+        },
+        "3sg": {
+          "skiri": "tuutaa",
+          "english": "he did it"
+        },
+        "1du_incl": {
+          "skiri": "taciitaa",
+          "english": "we did it"
+        },
+        "1du_excl": {
+          "skiri": "sitatuutaa",
+          "english": "we did it"
+        },
+        "2du": {
+          "skiri": "sitasuutaa",
+          "english": "you did it"
+        },
+        "3du": {
+          "skiri": "situutaa",
+          "english": "they did it"
+        },
+        "1pl_incl": {
+          "skiri": "tatuuhaakaa",
+          "english": "we did it"
+        },
+        "1pl_excl": {
+          "skiri": "tatuuhaakaa",
+          "english": "we did it"
+        },
+        "2pl": {
+          "skiri": "tasuuhaakaa",
+          "english": "you did it"
+        },
+        "3pl": {
+          "skiri": "tiitaa",
+          "english": "they did it"
+        }
+      },
+      "negative_indicative_perfective": {
+        "1sg": {
+          "skiri": "kaakatuutaa",
+          "english": "I did not do it"
+        },
+        "2sg": {
+          "skiri": "kaakasuutaa",
+          "english": "you did not do it"
+        },
+        "3sg": {
+          "skiri": "kaakuutaa",
+          "english": "he did not do it"
+        },
+        "1du_incl": {
+          "skiri": "kaakaciitaa",
+          "english": "we did not do it"
+        },
+        "1du_excl": {
+          "skiri": "sikaakatuutaa",
+          "english": "we did not do it"
+        },
+        "2du": {
+          "skiri": "sikaakasuutaa",
+          "english": "you did not do it"
+        },
+        "3du": {
+          "skiri": "sikaakuutaa",
+          "english": "they did not do it"
+        },
+        "1pl_incl": {
+          "skiri": "kaakatuuhaakaa",
+          "english": "we did not do it"
+        },
+        "1pl_excl": {
+          "skiri": "kaakatuuhaakaa",
+          "english": "we did not do it"
+        },
+        "2pl": {
+          "skiri": "kaakasuuhakaa",
+          "english": "you did not do it"
+        },
+        "3pl": {
+          "skiri": "kaakiitaa",
+          "english": "they did not do it"
+        }
+      },
+      "contingent_perfective": {
+        "1sg": {
+          "skiri": "ituutaa",
+          "english": "I'll do it"
+        },
+        "2sg": {
+          "skiri": "isuutaa",
+          "english": "you'll do it"
+        },
+        "3sg": {
+          "skiri": "ruutaa",
+          "english": "he'll do it"
+        },
+        "1du_incl": {
+          "skiri": "iciitaa",
+          "english": "we'll do it"
+        },
+        "1du_excl": {
+          "skiri": "siʔituutaa",
+          "english": "we'll do it"
+        },
+        "2du": {
+          "skiri": "siʔisuutaa",
+          "english": "you'll do it"
+        },
+        "3du": {
+          "skiri": "siruutaa",
+          "english": "they'll do it"
+        },
+        "1pl_incl": {
+          "skiri": "ituhaakaa",
+          "english": "we'll do it"
+        },
+        "1pl_excl": {
+          "skiri": "ituhaakaa",
+          "english": "we'll do it"
+        },
+        "2pl": {
+          "skiri": "isuhaakaa",
+          "english": "you'll do it"
+        },
+        "3pl": {
+          "skiri": "riitaa",
+          "english": "they'll do it"
+        }
+      },
+      "assertive_perfective": {
+        "1sg": {
+          "skiri": "rituutaa",
+          "english": "I did it"
+        },
+        "2sg": {
+          "skiri": "risuutaa",
+          "english": "you did it"
+        },
+        "3sg": {
+          "skiri": "ruutaa",
+          "english": "he did it"
+        },
+        "1du_incl": {
+          "skiri": "riciitaa",
+          "english": "we did it"
+        },
+        "1du_excl": {
+          "skiri": "siriituutaa",
+          "english": "we did it"
+        },
+        "2du": {
+          "skiri": "siriisuutaa",
+          "english": "you did it"
+        },
+        "3du": {
+          "skiri": "siruutaa",
+          "english": "they did it"
+        },
+        "1pl_incl": {
+          "skiri": "rituuhaakaa",
+          "english": "we did it"
+        },
+        "1pl_excl": {
+          "skiri": "rituuhaakaa",
+          "english": "we did it"
+        },
+        "2pl": {
+          "skiri": "risuuhaakaa",
+          "english": "you did it"
+        },
+        "3pl": {
+          "skiri": "riitaa",
+          "english": "they did it"
+        }
+      },
+      "absolutive_perfective": {
+        "1sg": {
+          "skiri": "ratuutaa",
+          "english": "I did it"
+        },
+        "2sg": {
+          "skiri": "rasuutaa",
+          "english": "you did it"
+        },
+        "3sg": {
+          "skiri": "ruutaa",
+          "english": "he did it"
+        },
+        "1du_incl": {
+          "skiri": "raciitaa",
+          "english": "we did it"
+        },
+        "1du_excl": {
+          "skiri": "siratuutaa",
+          "english": "we did it"
+        },
+        "2du": {
+          "skiri": "sirasuutaa",
+          "english": "you did it"
+        },
+        "3du": {
+          "skiri": "siruutaa",
+          "english": "they did it"
+        },
+        "1pl_incl": {
+          "skiri": "ratuuhaakaa",
+          "english": "we did it"
+        },
+        "1pl_excl": {
+          "skiri": "ratuuhaakaa",
+          "english": "we did it"
+        },
+        "2pl": {
+          "skiri": "rasuuhaakaa",
+          "english": "you did it"
+        },
+        "3pl": {
+          "skiri": "riitaa",
+          "english": "they did it"
+        }
+      },
+      "potential_perfective": {
+        "1sg": {
+          "skiri": "kuustuciʔaa",
+          "english": "I will do it"
+        },
+        "2sg": {
+          "skiri": "kaasucíʔaa",
+          "english": "you will do it"
+        },
+        "3sg": {
+          "skiri": "kuusucíʔaa",
+          "english": "he will do it"
+        },
+        "1du_incl": {
+          "skiri": "kaciicíʔaa",
+          "english": "we will do it"
+        },
+        "1du_excl": {
+          "skiri": "sikuustucíʔaa",
+          "english": "we will do it"
+        },
+        "2du": {
+          "skiri": "sikaasucíʔaa",
+          "english": "you will do it"
+        },
+        "3du": {
+          "skiri": "sikuusucíʔaa",
+          "english": "they will do it"
+        },
+        "1pl_incl": {
+          "skiri": "kuustuciraakaa",
+          "english": "we will do it"
+        },
+        "1pl_excl": {
+          "skiri": "kuustuciraakaa",
+          "english": "we will do it"
+        },
+        "2pl": {
+          "skiri": "kaasuciraakaa",
+          "english": "you will do it"
+        },
+        "3pl": {
+          "skiri": "kusiicíʔaa",
+          "english": "they will do it"
+        }
+      },
+      "gerundial_perfective_subordinate": {
+        "1sg": {
+          "skiri": "iriratuutaara",
+          "english": "the way I did it"
+        },
+        "2sg": {
+          "skiri": "irirasuutaara",
+          "english": "the way you did it"
+        },
+        "3sg": {
+          "skiri": "iriruuutaara",
+          "english": "the way he did it"
+        },
+        "1du_incl": {
+          "skiri": "iriraciitaara",
+          "english": "the way we did it"
+        },
+        "1du_excl": {
+          "skiri": "iririsiratuutaara",
+          "english": "the way we did it"
+        },
+        "2du": {
+          "skiri": "iririsirasuutaara",
+          "english": "the way you did it"
+        },
+        "3du": {
+          "skiri": "iririsiruutaara",
+          "english": "the way they did it"
+        },
+        "1pl_incl": {
+          "skiri": "iriratuuhaakaara",
+          "english": "the way we did it"
+        },
+        "1pl_excl": {
+          "skiri": "iriratuuhaakaara",
+          "english": "the way we did it"
+        },
+        "2pl": {
+          "skiri": "irirasuuhaakaara",
+          "english": "the way you did it"
+        },
+        "3pl": {
+          "skiri": "iririitaara",
+          "english": "the way they did it"
+        }
+      },
+      "contingent_perfective_subordinate": {
+        "1sg": {
+          "skiri": "ituutaara",
+          "english": "if/when I do it"
+        },
+        "2sg": {
+          "skiri": "isuutara",
+          "english": "if/when you do it"
+        },
+        "3sg": {
+          "skiri": "ruutaara",
+          "english": "if/when he does it"
+        },
+        "1du_incl": {
+          "skiri": "iciitaara",
+          "english": "if/when we do it"
+        },
+        "1du_excl": {
+          "skiri": "siʔituutaara",
+          "english": "if/when we do it"
+        },
+        "2du": {
+          "skiri": "siʔisuutaara",
+          "english": "if/when you do it"
+        },
+        "3du": {
+          "skiri": "siruutaara",
+          "english": "if/when they do it"
+        },
+        "1pl_incl": {
+          "skiri": "ituhaakaara",
+          "english": "if/when we do it"
+        },
+        "1pl_excl": {
+          "skiri": "ituhaakaara",
+          "english": "if/when we do it"
+        },
+        "2pl": {
+          "skiri": "isuhaakaara",
+          "english": "if/when you do it"
+        },
+        "3pl": {
+          "skiri": "riitaara",
+          "english": "if/when they do it"
+        }
+      },
+      "subjunctive_perfective_subordinate": {
+        "1sg": {
+          "skiri": "atuutaara",
+          "english": "should I do it"
+        },
+        "2sg": {
+          "skiri": "asuutaara",
+          "english": "should you do it"
+        },
+        "3sg": {
+          "skiri": "uutaara",
+          "english": "should he do it"
+        },
+        "1du_incl": {
+          "skiri": "aaciiriitaara",
+          "english": "should we do it"
+        },
+        "1du_excl": {
+          "skiri": "siʔatuutaara",
+          "english": "should we do it"
+        },
+        "2du": {
+          "skiri": "siʔasuutaara",
+          "english": "should you do it"
+        },
+        "3du": {
+          "skiri": "siʔuutaara",
+          "english": "should they do it"
+        },
+        "1pl_incl": {
+          "skiri": "atuuhaakaara",
+          "english": "should we do it"
+        },
+        "1pl_excl": {
+          "skiri": "atuuhaakaara",
+          "english": "should we do it"
+        },
+        "2pl": {
+          "skiri": "asuuhaakaara",
+          "english": "should you do it"
+        },
+        "3pl": {
+          "skiri": "iitaara",
+          "english": "should they do it"
+        }
+      },
+      "infinitive_perfective_subordinate": {
+        "1sg": {
+          "skiri": "ratkuutaara",
+          "english": "for me to do it"
+        },
+        "2sg": {
+          "skiri": "raskuutaara",
+          "english": "for you to do it"
+        },
+        "3sg": {
+          "skiri": "rakuutaara",
+          "english": "for him to do it"
+        },
+        "1du_incl": {
+          "skiri": "racihkuutaara",
+          "english": "for us to do it"
+        },
+        "1du_excl": {
+          "skiri": "siratkuutaara",
+          "english": "for us to do it"
+        },
+        "2du": {
+          "skiri": "siraskuutaara",
+          "english": "for you to do it"
+        },
+        "3du": {
+          "skiri": "sirakuutaara",
+          "english": "for them to do it"
+        },
+        "1pl_incl": {
+          "skiri": "rataakuuhaakaara",
+          "english": "for us to do it"
+        },
+        "1pl_excl": {
+          "skiri": "ratkuuhakaara",
+          "english": "for us to do it"
+        },
+        "2pl": {
+          "skiri": "raskuuhaakaara",
+          "english": "for you to do it"
+        },
+        "3pl": {
+          "skiri": "rihkuutaara",
+          "english": "for them to do it"
+        }
+      }
+    }
+  },
+  "page_4": {
+    "verb_heading": "",
+    "verb_class": "",
+    "dictionary_form": "",
+    "english_gloss": "to go",
+    "modes": {
+      "indicative_perfective": {
+        "1sg": {
+          "skiri": "taatat",
+          "english": "I went"
+        },
+        "2sg": {
+          "skiri": "taasat",
+          "english": "you went"
+        },
+        "3sg": {
+          "skiri": "tiʔat",
+          "english": "he went"
+        },
+        "1du_incl": {
+          "skiri": "tacihwa",
+          "english": "we went"
+        },
+        "1du_excl": {
+          "skiri": "sitatpa",
+          "english": "we went"
+        },
+        "2du": {
+          "skiri": "sitaspa",
+          "english": "you went"
+        },
+        "3du": {
+          "skiri": "sitiwa",
+          "english": "they went"
+        },
+        "1pl_incl": {
+          "skiri": "tataraapuuʔ",
+          "english": "we went"
+        },
+        "1pl_excl": {
+          "skiri": "tahapuuʔ",
+          "english": "we went"
+        },
+        "2pl": {
+          "skiri": "tastapuuʔ",
+          "english": "you went"
+        },
+        "3pl": {
+          "skiri": "tiiwuuʔ, tiraarat",
+          "english": "they went"
+        }
+      },
+      "negative_indicative_perfective": {
+        "1sg": {
+          "skiri": "kaakaatat",
+          "english": "I did not go"
+        },
+        "2sg": {
+          "skiri": "kaakaasat",
+          "english": "you did not go"
+        },
+        "3sg": {
+          "skiri": "kaakiiʔat",
+          "english": "he did not go"
+        },
+        "1du_incl": {
+          "skiri": "kaakaacihwa",
+          "english": "we did not go"
+        },
+        "1du_excl": {
+          "skiri": "sikaakatpa",
+          "english": "we did not go"
+        },
+        "2du": {
+          "skiri": "sikaakaspa",
+          "english": "you did not go"
+        },
+        "3du": {
+          "skiri": "sikaakiiwa",
+          "english": "they did not go"
+        },
+        "1pl_incl": {
+          "skiri": "kaakaataraapuuʔ",
+          "english": "we did not go"
+        },
+        "1pl_excl": {
+          "skiri": "kaakaahapuuʔ",
+          "english": "we did not go"
+        },
+        "2pl": {
+          "skiri": "kaakaastapuuʔ",
+          "english": "you did not go"
+        },
+        "3pl": {
+          "skiri": "kaakiiwuuʔ, kaakiraarat",
+          "english": "they did not go"
+        }
+      },
+      "contingent_perfective": {
+        "1sg": {
+          "skiri": "itat",
+          "english": "I'll go"
+        },
+        "2sg": {
+          "skiri": "isat",
+          "english": "you'll go"
+        },
+        "3sg": {
+          "skiri": "riʔat",
+          "english": "he'll go"
+        },
+        "1du_incl": {
+          "skiri": "icihwa",
+          "english": "we'll go"
+        },
+        "1du_excl": {
+          "skiri": "siʔitpa",
+          "english": "we'll go"
+        },
+        "2du": {
+          "skiri": "siʔispa",
+          "english": "you'll go"
+        },
+        "3du": {
+          "skiri": "siriwa",
+          "english": "they'll go"
+        },
+        "1pl_incl": {
+          "skiri": "itaraapuuʔ",
+          "english": "we'll go"
+        },
+        "1pl_excl": {
+          "skiri": "ihapuuʔ",
+          "english": "we'll go"
+        },
+        "2pl": {
+          "skiri": "istapuuʔ",
+          "english": "you'll go"
+        },
+        "3pl": {
+          "skiri": "riwuuʔ, raraarat",
+          "english": "they'll go"
+        }
+      },
+      "assertive_perfective": {
+        "1sg": {
+          "skiri": "riitat",
+          "english": "I did go"
+        },
+        "2sg": {
+          "skiri": "riisat",
+          "english": "you did go"
+        },
+        "3sg": {
+          "skiri": "riiʔat",
+          "english": "he did go"
+        },
+        "1du_incl": {
+          "skiri": "riicihwa",
+          "english": "we did go"
+        },
+        "1du_excl": {
+          "skiri": "siriitpa",
+          "english": "we did go"
+        },
+        "2du": {
+          "skiri": "siriispa",
+          "english": "you did go"
+        },
+        "3du": {
+          "skiri": "siriiwa",
+          "english": "they did go"
+        },
+        "1pl_incl": {
+          "skiri": "riitaraapuuʔ",
+          "english": "we did go"
+        },
+        "1pl_excl": {
+          "skiri": "riihapuuʔ",
+          "english": "we did go"
+        },
+        "2pl": {
+          "skiri": "riistapuuʔ",
+          "english": "you did go"
+        },
+        "3pl": {
+          "skiri": "riiwuuʔ",
+          "english": "they did go"
+        }
+      },
+      "absolutive_perfective": {
+        "1sg": {
+          "skiri": "raatat",
+          "english": "I went"
+        },
+        "2sg": {
+          "skiri": "raasat",
+          "english": "you went"
+        },
+        "3sg": {
+          "skiri": "raʔat",
+          "english": "he went"
+        },
+        "1du_incl": {
+          "skiri": "racihwa",
+          "english": "we went"
+        },
+        "1du_excl": {
+          "skiri": "siratpa",
+          "english": "we went"
+        },
+        "2du": {
+          "skiri": "siraspa",
+          "english": "you went"
+        },
+        "3du": {
+          "skiri": "sirawa",
+          "english": "they went"
+        },
+        "1pl_incl": {
+          "skiri": "rataraapuuʔ",
+          "english": "we went"
+        },
+        "1pl_excl": {
+          "skiri": "rahapuuʔ",
+          "english": "we went"
+        },
+        "2pl": {
+          "skiri": "rastapuuʔ",
+          "english": "you went"
+        },
+        "3pl": {
+          "skiri": "raawuuʔ, raraarat",
+          "english": "they went"
+        }
+      },
+      "potential_perfective": {
+        "1sg": {
+          "skiri": "kuustiʔat",
+          "english": "I will go"
+        },
+        "2sg": {
+          "skiri": "kaasiʔat",
+          "english": "you will go"
+        },
+        "3sg": {
+          "skiri": "kuusiʔat",
+          "english": "he will go"
+        },
+        "1du_incl": {
+          "skiri": "kaaciriiwa",
+          "english": "we will go"
+        },
+        "1du_excl": {
+          "skiri": "sikuustiwa",
+          "english": "we will go"
+        },
+        "2du": {
+          "skiri": "sikaasiwa",
+          "english": "you will go"
+        },
+        "3du": {
+          "skiri": "sikuusiwa",
+          "english": "they will go"
+        },
+        "1pl_incl": {
+          "skiri": "kuustaaraapuuʔ",
+          "english": "we will go"
+        },
+        "1pl_excl": {
+          "skiri": "kuustiraapuuʔ",
+          "english": "we will go"
+        },
+        "2pl": {
+          "skiri": "kaasiraapuuʔ",
+          "english": "you will go"
+        },
+        "3pl": {
+          "skiri": "kusiiwuuʔ",
+          "english": "they will go"
+        }
+      },
+      "gerundial_perfective_subordinate": {
+        "1sg": {
+          "skiri": "iriiraatata",
+          "english": "where I went"
+        },
+        "2sg": {
+          "skiri": "iriiraasata",
+          "english": "where you went"
+        },
+        "3sg": {
+          "skiri": "iriiraata",
+          "english": "where he went"
+        },
+        "1du_incl": {
+          "skiri": "iriiracihwara",
+          "english": "where we went"
+        },
+        "1du_excl": {
+          "skiri": "iriisiratpara",
+          "english": "where we went"
+        },
+        "2du": {
+          "skiri": "iriisiraspara",
+          "english": "where you went"
+        },
+        "3du": {
+          "skiri": "iriisirawara",
+          "english": "where they went"
+        },
+        "1pl_incl": {
+          "skiri": "iriirataraapuu",
+          "english": "where we went"
+        },
+        "1pl_excl": {
+          "skiri": "iriirahapuu",
+          "english": "where we went"
+        },
+        "2pl": {
+          "skiri": "iriirastapuu",
+          "english": "where you went"
+        },
+        "3pl": {
+          "skiri": "iriiraawuu",
+          "english": "where they went"
+        }
+      },
+      "contingent_perfective_subordinate": {
+        "1sg": {
+          "skiri": "itata",
+          "english": "if/when I go"
+        },
+        "2sg": {
+          "skiri": "isata",
+          "english": "if/when you go"
+        },
+        "3sg": {
+          "skiri": "riita",
+          "english": "if/when he goes"
+        },
+        "1du_incl": {
+          "skiri": "icihwara",
+          "english": "if/when we go"
+        },
+        "1du_excl": {
+          "skiri": "siʔitpara",
+          "english": "if/when we go"
+        },
+        "2du": {
+          "skiri": "siʔispara",
+          "english": "if/when you go"
+        },
+        "3du": {
+          "skiri": "siriwara",
+          "english": "if/when they go"
+        },
+        "1pl_incl": {
+          "skiri": "itaraapuu",
+          "english": "if/when we go"
+        },
+        "1pl_excl": {
+          "skiri": "ihapuu",
+          "english": "if/when we go"
+        },
+        "2pl": {
+          "skiri": "istapuu",
+          "english": "if/when you go"
+        },
+        "3pl": {
+          "skiri": "riwuu",
+          "english": "if/when they go"
+        }
+      },
+      "subjunctive_perfective_subordinate": {
+        "1sg": {
+          "skiri": "aatata",
+          "english": "should I go"
+        },
+        "2sg": {
+          "skiri": "aasata",
+          "english": "should you go"
+        },
+        "3sg": {
+          "skiri": "iita",
+          "english": "should he go"
+        },
+        "1du_incl": {
+          "skiri": "aacihwara",
+          "english": "should we go"
+        },
+        "1du_excl": {
+          "skiri": "siʔaatpara",
+          "english": "should we go"
+        },
+        "2du": {
+          "skiri": "siʔaaspara",
+          "english": "should you go"
+        },
+        "3du": {
+          "skiri": "siʔiiwara",
+          "english": "should they go"
+        },
+        "1pl_incl": {
+          "skiri": "aataraapuu",
+          "english": "should we go"
+        },
+        "1pl_excl": {
+          "skiri": "aahapuu",
+          "english": "should we go"
+        },
+        "2pl": {
+          "skiri": "aastapuu",
+          "english": "should you go"
+        },
+        "3pl": {
+          "skiri": "iiwuu",
+          "english": "should they go"
+        }
+      },
+      "infinitive_perfective_subordinate": {
+        "1sg": {
+          "skiri": "ratkuuta",
+          "english": "for me to go"
+        },
+        "2sg": {
+          "skiri": "raskuuta",
+          "english": "for you to go"
+        },
+        "3sg": {
+          "skiri": "rakuuta",
+          "english": "for him to go"
+        },
+        "1du_incl": {
+          "skiri": "racihkuwara",
+          "english": "for us to go"
+        },
+        "1du_excl": {
+          "skiri": "siratkuwara",
+          "english": "for us to go"
+        },
+        "2du": {
+          "skiri": "siraskuara",
+          "english": "for you to go"
+        },
+        "3du": {
+          "skiri": "sirakuwara",
+          "english": "for them to go"
+        },
+        "1pl_incl": {
+          "skiri": "rataakuraapuu",
+          "english": "for us to go"
+        },
+        "1pl_excl": {
+          "skiri": "ratkuraapuu",
+          "english": "for us to go"
+        },
+        "2pl": {
+          "skiri": "raskuraapuu",
+          "english": "for you to go"
+        },
+        "3pl": {
+          "skiri": "rakuuwuu, rakuraarata",
+          "english": "for them to go"
+        }
+      }
+    }
+  },
+  "page_5": {
+    "verb_heading": "to be good",
+    "verb_class": null,
+    "dictionary_form": "tuuhii",
+    "english_gloss": "to be good",
+    "modes": {
+      "indicative_perfective": {
+        "1sg": {
+          "skiri": "tatuuhii",
+          "english": "I am good"
+        },
+        "2sg": {
+          "skiri": "tasuuhii",
+          "english": "you are good"
+        },
+        "3sg": {
+          "skiri": "tuuhii",
+          "english": "he is good"
+        },
+        "1du_incl": {
+          "skiri": "taciihii",
+          "english": "we are good"
+        },
+        "1du_excl": {
+          "skiri": "sitatuuhii",
+          "english": "we are good"
+        },
+        "2du": {
+          "skiri": "sitasuuhii",
+          "english": "you are good"
+        },
+        "3du": {
+          "skiri": "situuhii",
+          "english": "they are good"
+        },
+        "1pl_incl": {
+          "skiri": "tatuuraakiwaa",
+          "english": "we are good"
+        },
+        "1pl_excl": {
+          "skiri": "taturaakiwaa",
+          "english": "we are good"
+        },
+        "2pl": {
+          "skiri": "tasuraakiwaa",
+          "english": "you are good"
+        },
+        "3pl": {
+          "skiri": "tuuhiwaa",
+          "english": "they are good"
+        }
+      },
+      "negative_indicative_perfective": {
+        "1sg": {
+          "skiri": "kaakatuuhii",
+          "english": "I am not good"
+        },
+        "2sg": {
+          "skiri": "kaakasuuhíi",
+          "english": "you are not good"
+        },
+        "3sg": {
+          "skiri": "kaakuuhii",
+          "english": "he is not good"
+        },
+        "1du_incl": {
+          "skiri": "kaakaciihii",
+          "english": "we are not good"
+        },
+        "1du_excl": {
+          "skiri": "sikaakatuuhii",
+          "english": "we are not good"
+        },
+        "2du": {
+          "skiri": "sikaakasuuhíi",
+          "english": "you are not good"
+        },
+        "3du": {
+          "skiri": "sikaakuuhii",
+          "english": "they are not good"
+        },
+        "1pl_incl": {
+          "skiri": "kaakatuuraakiwaa",
+          "english": "we are not good"
+        },
+        "1pl_excl": {
+          "skiri": "kaakaturaakiwaa",
+          "english": "we are not good"
+        },
+        "2pl": {
+          "skiri": "kaakasuraakiwaa",
+          "english": "you are not good"
+        },
+        "3pl": {
+          "skiri": "kaakuuhiwaa",
+          "english": "they are not good"
+        }
+      },
+      "contingent_perfective": {
+        "1sg": {
+          "skiri": "ituuhii",
+          "english": "I'll be good"
+        },
+        "2sg": {
+          "skiri": "isuuhii",
+          "english": "you'll be good"
+        },
+        "3sg": {
+          "skiri": "ruuhii",
+          "english": "he'll be good"
+        },
+        "1du_incl": {
+          "skiri": "iciihii",
+          "english": "we'll be good"
+        },
+        "1du_excl": {
+          "skiri": "siʔituuhii",
+          "english": "we'll be good"
+        },
+        "2du": {
+          "skiri": "siʔisuuhii",
+          "english": "you'll be good"
+        },
+        "3du": {
+          "skiri": "siruuhii",
+          "english": "they'll be good"
+        },
+        "1pl_incl": {
+          "skiri": "ituuraakiwaa",
+          "english": "we'll be good"
+        },
+        "1pl_excl": {
+          "skiri": "ituraakiwaa",
+          "english": "we'll be good"
+        },
+        "2pl": {
+          "skiri": "isuraakiwaa",
+          "english": "you'll be good"
+        },
+        "3pl": {
+          "skiri": "ruuhiwaa",
+          "english": "they'll be good"
+        }
+      },
+      "assertive_perfective": {
+        "1sg": {
+          "skiri": "rituuhii",
+          "english": "I was good"
+        },
+        "2sg": {
+          "skiri": "risuuhii",
+          "english": "you were good"
+        },
+        "3sg": {
+          "skiri": "ruhii",
+          "english": "he was good"
+        },
+        "1du_incl": {
+          "skiri": "riciihii",
+          "english": "we were good"
+        },
+        "1du_excl": {
+          "skiri": "siriituuhii",
+          "english": "we were good"
+        },
+        "2du": {
+          "skiri": "siriisuuhii",
+          "english": "you were good"
+        },
+        "3du": {
+          "skiri": "siruuhii",
+          "english": "they were good"
+        },
+        "1pl_incl": {
+          "skiri": "rituuraakiwaa",
+          "english": "we were good"
+        },
+        "1pl_excl": {
+          "skiri": "rituraakiwaa",
+          "english": "we were good"
+        },
+        "2pl": {
+          "skiri": "risuraakiwaa",
+          "english": "you were good"
+        },
+        "3pl": {
+          "skiri": "ruuhiwaa",
+          "english": "they were good"
+        }
+      },
+      "absolutive_perfective": {
+        "1sg": {
+          "skiri": "ratuuhii",
+          "english": "I am good"
+        },
+        "2sg": {
+          "skiri": "rasuuhii",
+          "english": "you are good"
+        },
+        "3sg": {
+          "skiri": "ruhii",
+          "english": "he is good"
+        },
+        "1du_incl": {
+          "skiri": "raciihii",
+          "english": "we are good"
+        },
+        "1du_excl": {
+          "skiri": "siratuuhii",
+          "english": "we are good"
+        },
+        "2du": {
+          "skiri": "sirasuuhii",
+          "english": "you are good"
+        },
+        "3du": {
+          "skiri": "siruuhii",
+          "english": "they are good"
+        },
+        "1pl_incl": {
+          "skiri": "ratuuraakiwaa",
+          "english": "we are good"
+        },
+        "1pl_excl": {
+          "skiri": "raturaakiwaa",
+          "english": "we are good"
+        },
+        "2pl": {
+          "skiri": "rasuraakiwaa",
+          "english": "you are good"
+        },
+        "3pl": {
+          "skiri": "ruuhiwaa",
+          "english": "they are good"
+        }
+      },
+      "potential_perfective": {
+        "1sg": {
+          "skiri": "kuustuuhii",
+          "english": "I will be good"
+        },
+        "2sg": {
+          "skiri": "kasuuhii",
+          "english": "you will be good"
+        },
+        "3sg": {
+          "skiri": "kusuuhii",
+          "english": "he will be good"
+        },
+        "1du_incl": {
+          "skiri": "kaciihii",
+          "english": "we will be good"
+        },
+        "1du_excl": {
+          "skiri": "sikuustuuhii",
+          "english": "we will be good"
+        },
+        "2du": {
+          "skiri": "sikasuuhii",
+          "english": "you will be good"
+        },
+        "3du": {
+          "skiri": "sikusuuhii",
+          "english": "they will be good"
+        },
+        "1pl_incl": {
+          "skiri": "kuusturaakiwaa",
+          "english": "we will be good"
+        },
+        "1pl_excl": {
+          "skiri": "kuusturaakiwaa",
+          "english": "we will be good"
+        },
+        "2pl": {
+          "skiri": "kaasuraakiwaa",
+          "english": "you will be good"
+        },
+        "3pl": {
+          "skiri": "kusuuhiwaa",
+          "english": "they will be good"
+        }
+      },
+      "gerundial_perfective_subordinate": {
+        "1sg": {
+          "skiri": "iriratuuhiira",
+          "english": "my being good"
+        },
+        "2sg": {
+          "skiri": "irirasuuhiira",
+          "english": "your being good"
+        },
+        "3sg": {
+          "skiri": "iriruuhiira",
+          "english": "his being good"
+        },
+        "1du_incl": {
+          "skiri": "iriraciihiira",
+          "english": "our being good"
+        },
+        "1du_excl": {
+          "skiri": "iriisiratuuhiira",
+          "english": "our being good"
+        },
+        "2du": {
+          "skiri": "iriisirasuuhiira",
+          "english": "your being good"
+        },
+        "3du": {
+          "skiri": "iriisiruuhiira",
+          "english": "their being good"
+        },
+        "1pl_incl": {
+          "skiri": "iriratuuraakiwaara",
+          "english": "our being good"
+        },
+        "1pl_excl": {
+          "skiri": "iriraturaakiwaara",
+          "english": "our being good"
+        },
+        "2pl": {
+          "skiri": "irirasuraakiwaara",
+          "english": "your being good"
+        },
+        "3pl": {
+          "skiri": "iriruuhiwaara",
+          "english": "their being good"
+        }
+      },
+      "contingent_perfective_subordinate": {
+        "1sg": {
+          "skiri": "ituuhiira",
+          "english": "if/when I am good"
+        },
+        "2sg": {
+          "skiri": "isuuhiira",
+          "english": "if/when you are good"
+        },
+        "3sg": {
+          "skiri": "ruuhiira",
+          "english": "if/when he is good"
+        },
+        "1du_incl": {
+          "skiri": "iciihiira",
+          "english": "if/when we are good"
+        },
+        "1du_excl": {
+          "skiri": "siʔituuhiira",
+          "english": "if/when we are good"
+        },
+        "2du": {
+          "skiri": "siʔisuuhiira",
+          "english": "if/when you are good"
+        },
+        "3du": {
+          "skiri": "siruuhiira",
+          "english": "if/when they are good"
+        },
+        "1pl_incl": {
+          "skiri": "ituuraakiwaara",
+          "english": "if/when we are good"
+        },
+        "1pl_excl": {
+          "skiri": "ituraakiwaara",
+          "english": "if/when we are good"
+        },
+        "2pl": {
+          "skiri": "isuraakiwaara",
+          "english": "if/when you are good"
+        },
+        "3pl": {
+          "skiri": "ruuhiwaara",
+          "english": "if/when they are good"
+        }
+      },
+      "subjunctive_perfective_subordinate": {
+        "1sg": {
+          "skiri": "atuuhiira",
+          "english": "should I be good"
+        },
+        "2sg": {
+          "skiri": "asuuhiira",
+          "english": "should you be good"
+        },
+        "3sg": {
+          "skiri": "uuhiira",
+          "english": "should he be good"
+        },
+        "1du_incl": {
+          "skiri": "aciihiira",
+          "english": "should we be good"
+        },
+        "1du_excl": {
+          "skiri": "siʔatuuhiira",
+          "english": "should we be good"
+        },
+        "2du": {
+          "skiri": "siʔasuuhiira",
+          "english": "should you be good"
+        },
+        "3du": {
+          "skiri": "siʔuuhiira",
+          "english": "should they be good"
+        },
+        "1pl_incl": {
+          "skiri": "atuuraakiwaara",
+          "english": "should we be good"
+        },
+        "1pl_excl": {
+          "skiri": "aaturaakiwaara",
+          "english": "should we be good"
+        },
+        "2pl": {
+          "skiri": "aasuuraakiwaara",
+          "english": "should you be good"
+        },
+        "3pl": {
+          "skiri": "uuhiwaara",
+          "english": "should they be good"
+        }
+      },
+      "infinitive_perfective_subordinate": {
+        "1sg": {
+          "skiri": "ratkuuhiira",
+          "english": "for me to be good"
+        },
+        "2sg": {
+          "skiri": "raskuuhiira",
+          "english": "for you to be good"
+        },
+        "3sg": {
+          "skiri": "racihkuuhiira",
+          "english": "for him to be good"
+        },
+        "1du_incl": {
+          "skiri": "racihkuuhiira",
+          "english": "for us to be good"
+        },
+        "1du_excl": {
+          "skiri": "siratkuuhiira",
+          "english": "for us to be good"
+        },
+        "2du": {
+          "skiri": "siraskuuhiira",
+          "english": "for you to be good"
+        },
+        "3du": {
+          "skiri": "sirakuuhiira",
+          "english": "for them to be good"
+        },
+        "1pl_incl": {
+          "skiri": "rataakuraakiwaara",
+          "english": "for us to be good"
+        },
+        "1pl_excl": {
+          "skiri": "ratkuraakiwaara",
+          "english": "for us to be good"
+        },
+        "2pl": {
+          "skiri": "raskuraakiwaara",
+          "english": "for you to be good"
+        },
+        "3pl": {
+          "skiri": "rakuuhiwaara, rihkuhiwaara",
+          "english": "for them to be good"
+        }
+      }
+    }
+  },
+  "page_6": {
+    "verb_heading": "to drink it",
+    "verb_class": "",
+    "dictionary_form": "",
+    "english_gloss": "to drink it",
+    "modes": {
+      "indicative_perfective": {
+        "1sg": {
+          "skiri": "tatkiikaʔ",
+          "english": "I drank it"
+        },
+        "2sg": {
+          "skiri": "taskiikaʔ",
+          "english": "you drank it"
+        },
+        "3sg": {
+          "skiri": "tikiikaʔ",
+          "english": "he drank it"
+        },
+        "1du_incl": {
+          "skiri": "tacihkiikaʔ",
+          "english": "we drank it"
+        },
+        "1du_excl": {
+          "skiri": "sitatkiikaʔ",
+          "english": "we drank it"
+        },
+        "2du": {
+          "skiri": "sitaskiikaʔ",
+          "english": "you two drank it"
+        },
+        "3du": {
+          "skiri": "sitikiikaʔ",
+          "english": "they two drank it"
+        },
+        "1pl_incl": {
+          "skiri": "tataraakiikaʔ",
+          "english": "we drank it"
+        },
+        "1pl_excl": {
+          "skiri": "tahakiikaʔ",
+          "english": "we drank it"
+        },
+        "2pl": {
+          "skiri": "tastakiikaʔ",
+          "english": "you all drank it"
+        },
+        "3pl": {
+          "skiri": "tihkiikaʔ",
+          "english": "they drank it"
+        }
+      },
+      "negative_indicative_perfective": {
+        "1sg": {
+          "skiri": "kaakaatkiikaʔ",
+          "english": "I did not drink it"
+        },
+        "2sg": {
+          "skiri": "kaakaaskiikaʔ",
+          "english": "you did not drink it"
+        },
+        "3sg": {
+          "skiri": "kaakiikiikaʔ",
+          "english": "he did not drink it"
+        },
+        "1du_incl": {
+          "skiri": "kaakaacihkiikaʔ",
+          "english": "we did not drink it"
+        },
+        "1du_excl": {
+          "skiri": "sikaakaatkiikaʔ",
+          "english": "we did not drink it"
+        },
+        "2du": {
+          "skiri": "sikaakaaskiikaʔ",
+          "english": "you did not drink it"
+        },
+        "3du": {
+          "skiri": "sikaakiikiikaʔ",
+          "english": "they did not drink it"
+        },
+        "1pl_incl": {
+          "skiri": "kaakaataraakiikaʔ",
+          "english": "we did not drink it"
+        },
+        "1pl_excl": {
+          "skiri": "kaakaahakiikaʔ",
+          "english": "we did not drink it"
+        },
+        "2pl": {
+          "skiri": "kaakaastakiikaʔ",
+          "english": "you did not drink it"
+        },
+        "3pl": {
+          "skiri": "kaakihkiikaʔ",
+          "english": "they did not drink it"
+        }
+      },
+      "contingent_perfective": {
+        "1sg": {
+          "skiri": "itkikaʔ",
+          "english": "I'll drink"
+        },
+        "2sg": {
+          "skiri": "iskikaʔ",
+          "english": "you'll drink"
+        },
+        "3sg": {
+          "skiri": "rikikaʔ",
+          "english": "he'll drink"
+        },
+        "1du_incl": {
+          "skiri": "icihkikaʔ",
+          "english": "we'll drink"
+        },
+        "1du_excl": {
+          "skiri": "siʔitkikaʔ",
+          "english": "we'll drink"
+        },
+        "2du": {
+          "skiri": "siʔiskikaʔ",
+          "english": "you'll drink"
+        },
+        "3du": {
+          "skiri": "sirikikaʔ",
+          "english": "they'll drink"
+        },
+        "1pl_incl": {
+          "skiri": "itaraakikaʔ",
+          "english": "we'll drink"
+        },
+        "1pl_excl": {
+          "skiri": "ihakikaʔ",
+          "english": "we'll drink"
+        },
+        "2pl": {
+          "skiri": "istakikaʔ",
+          "english": "you'll drink"
+        },
+        "3pl": {
+          "skiri": "rihkikaʔ",
+          "english": "they'll drink"
+        }
+      },
+      "assertive_perfective": {
+        "1sg": {
+          "skiri": "riitkiikaʔ",
+          "english": "I drank it"
+        },
+        "2sg": {
+          "skiri": "riiskiikaʔ",
+          "english": "you drank it"
+        },
+        "3sg": {
+          "skiri": "riikiikaʔ",
+          "english": "he drank it"
+        },
+        "1du_incl": {
+          "skiri": "riicihkiikaʔ",
+          "english": "we drank it"
+        },
+        "1du_excl": {
+          "skiri": "siriitkiikaʔ",
+          "english": "we drank it"
+        },
+        "2du": {
+          "skiri": "siriiskiikaʔ",
+          "english": "you drank it"
+        },
+        "3du": {
+          "skiri": "siriikiikaʔ",
+          "english": "they drank it"
+        },
+        "1pl_incl": {
+          "skiri": "riitaraakiikaʔ",
+          "english": "we drank it"
+        },
+        "1pl_excl": {
+          "skiri": "riihakiikaʔ",
+          "english": "we drank it"
+        },
+        "2pl": {
+          "skiri": "riistakiikaʔ",
+          "english": "you drank it"
+        },
+        "3pl": {
+          "skiri": "riihkiikaʔ",
+          "english": "they drank it"
+        }
+      },
+      "absolutive_perfective": {
+        "1sg": {
+          "skiri": "ratkiikaʔ",
+          "english": "I drank it"
+        },
+        "2sg": {
+          "skiri": "raskiikaʔ",
+          "english": "you drank it"
+        },
+        "3sg": {
+          "skiri": "rakiikaʔ",
+          "english": "he drank it"
+        },
+        "1du_incl": {
+          "skiri": "racihkiikaʔ",
+          "english": "we drank it"
+        },
+        "1du_excl": {
+          "skiri": "siratkiikaʔ",
+          "english": "we drank it"
+        },
+        "2du": {
+          "skiri": "siraskiikaʔ",
+          "english": "you drank it"
+        },
+        "3du": {
+          "skiri": "sirakiikaʔ",
+          "english": "they drank it"
+        },
+        "1pl_incl": {
+          "skiri": "rataraakiikaʔ",
+          "english": "we drank it"
+        },
+        "1pl_excl": {
+          "skiri": "rahakiikaʔ",
+          "english": "we drank it"
+        },
+        "2pl": {
+          "skiri": "rastakiikaʔ",
+          "english": "you drank it"
+        },
+        "3pl": {
+          "skiri": "rihkikaʔ",
+          "english": "they drank it"
+        }
+      },
+      "potential_perfective": {
+        "1sg": {
+          "skiri": "kuustikiikaʔ",
+          "english": "I will drink"
+        },
+        "2sg": {
+          "skiri": "kaasikiikaʔ",
+          "english": "you will drink"
+        },
+        "3sg": {
+          "skiri": "kuusikiikaʔ",
+          "english": "he will drink"
+        },
+        "1du_incl": {
+          "skiri": "kaaciriikiikaʔ",
+          "english": "we will drink"
+        },
+        "1du_excl": {
+          "skiri": "sikuustikiikaʔ",
+          "english": "we will drink"
+        },
+        "2du": {
+          "skiri": "sikaasikiikaʔ",
+          "english": "you will drink"
+        },
+        "3du": {
+          "skiri": "sikuusikiikaʔ",
+          "english": "they will drink"
+        },
+        "1pl_incl": {
+          "skiri": "kuustaaraakiikaʔ",
+          "english": "we will drink"
+        },
+        "1pl_excl": {
+          "skiri": "kuustiraakiikaʔ",
+          "english": "we will drink"
+        },
+        "2pl": {
+          "skiri": "kaasiraakiikaʔ",
+          "english": "you will drink"
+        },
+        "3pl": {
+          "skiri": "kusiriikiikaʔ",
+          "english": "they will drink"
+        }
+      },
+      "gerundial_perfective_subordinate": {
+        "1sg": {
+          "skiri": "iriiratkikaa",
+          "english": "where I drank it"
+        },
+        "2sg": {
+          "skiri": "iriiraskikaa",
+          "english": "where you drank it"
+        },
+        "3sg": {
+          "skiri": "iriirakikaa",
+          "english": "where he drank it"
+        },
+        "1du_incl": {
+          "skiri": "iriiracihkikaa",
+          "english": "where we drank it"
+        },
+        "1du_excl": {
+          "skiri": "iriisiratkikaa",
+          "english": "where we drank it"
+        },
+        "2du": {
+          "skiri": "iriisiraskikaa",
+          "english": "where you drank it"
+        },
+        "3du": {
+          "skiri": "iriisirakikaa",
+          "english": "where they drank it"
+        },
+        "1pl_incl": {
+          "skiri": "iriirataraakikaa",
+          "english": "where we drank it"
+        },
+        "1pl_excl": {
+          "skiri": "iriirahakikaa",
+          "english": "where we drank it"
+        },
+        "2pl": {
+          "skiri": "iriirastakikaa",
+          "english": "where you drank it"
+        },
+        "3pl": {
+          "skiri": "iriirihkikaa",
+          "english": "where they drank it"
+        }
+      },
+      "contingent_perfective_subordinate": {
+        "1sg": {
+          "skiri": "itkikaa",
+          "english": "if/when I drink it"
+        },
+        "2sg": {
+          "skiri": "iskikaa",
+          "english": "if/when you drink it"
+        },
+        "3sg": {
+          "skiri": "rikikaa",
+          "english": "if/when he drinks it"
+        },
+        "1du_incl": {
+          "skiri": "icihkikaa",
+          "english": "if/when we drink it"
+        },
+        "1du_excl": {
+          "skiri": "siʔitkikaa",
+          "english": "if/when we drink it"
+        },
+        "2du": {
+          "skiri": "siʔiskikaa",
+          "english": "if/when you drink it"
+        },
+        "3du": {
+          "skiri": "sirikikaa",
+          "english": "if/when they drink it"
+        },
+        "1pl_incl": {
+          "skiri": "itaraakikaa",
+          "english": "if/when we drink it"
+        },
+        "1pl_excl": {
+          "skiri": "ihakikaa",
+          "english": "if/when we drink it"
+        },
+        "2pl": {
+          "skiri": "istakikaa",
+          "english": "if/when you drink it"
+        },
+        "3pl": {
+          "skiri": "rihkikaa",
+          "english": "if/when they drink it"
+        }
+      },
+      "subjunctive_perfective_subordinate": {
+        "1sg": {
+          "skiri": "aatkikaa",
+          "english": "should I drink"
+        },
+        "2sg": {
+          "skiri": "aaskikaa",
+          "english": "should you drink it"
+        },
+        "3sg": {
+          "skiri": "iikikaa",
+          "english": "should he drink it"
+        },
+        "1du_incl": {
+          "skiri": "aacihkikaa",
+          "english": "should we drink it"
+        },
+        "1du_excl": {
+          "skiri": "siʔaatkikaa",
+          "english": "should we drink it"
+        },
+        "2du": {
+          "skiri": "siʔaaskikaa",
+          "english": "should you drink it"
+        },
+        "3du": {
+          "skiri": "siʔiikikaa",
+          "english": "should they drink it"
+        },
+        "1pl_incl": {
+          "skiri": "aataraakikaa",
+          "english": "should we drink it"
+        },
+        "1pl_excl": {
+          "skiri": "aahakikaa",
+          "english": "should we drink it"
+        },
+        "2pl": {
+          "skiri": "astakikaa",
+          "english": "should you drink it"
+        },
+        "3pl": {
+          "skiri": "ihkikaa",
+          "english": "should they drink it"
+        }
+      },
+      "infinitive_perfective_subordinate": {
+        "1sg": {
+          "skiri": "ratkukikaa",
+          "english": "for me to drink it"
+        },
+        "2sg": {
+          "skiri": "raskukikaa",
+          "english": "for you to drink it"
+        },
+        "3sg": {
+          "skiri": "rakukikaa",
+          "english": "for him to drink it"
+        },
+        "1du_incl": {
+          "skiri": "racihkukikaa",
+          "english": "for us to drink it"
+        },
+        "1du_excl": {
+          "skiri": "siratkukikaa",
+          "english": "for us to drink it"
+        },
+        "2du": {
+          "skiri": "siraskukikaa",
+          "english": "for you to drink it"
+        },
+        "3du": {
+          "skiri": "sirakukikaa",
+          "english": "for them to drink it"
+        },
+        "1pl_incl": {
+          "skiri": "rataakuraakikaa",
+          "english": "for us to drink it"
+        },
+        "1pl_excl": {
+          "skiri": "ratkuraakikaa",
+          "english": "for us to drink it"
+        },
+        "2pl": {
+          "skiri": "raskuraakikaa",
+          "english": "for you to drink it"
+        },
+        "3pl": {
+          "skiri": "rihkukikaa",
+          "english": "for them to drink it"
+        }
+      }
+    }
+  },
+  "page_7": {
+    "verb_heading": "to be sick",
+    "verb_class": "",
+    "dictionary_form": "kiraawaʔ",
+    "english_gloss": "to be sick",
+    "modes": {
+      "indicative_perfective": {
+        "1sg": {
+          "skiri": "tikukiraawaʔ",
+          "english": "I am sick"
+        },
+        "2sg": {
+          "skiri": "takiraawaʔ",
+          "english": "you are sick"
+        },
+        "3sg": {
+          "skiri": "tihkiraawaʔ",
+          "english": "he is sick"
+        },
+        "1du_incl": {
+          "skiri": "tacakukiraawaʔ",
+          "english": "we are sick"
+        },
+        "1du_excl": {
+          "skiri": "sitikukiraawaʔ",
+          "english": "we are sick"
+        },
+        "2du": {
+          "skiri": "sirakiraawaʔ",
+          "english": "you are sick"
+        },
+        "3du": {
+          "skiri": "sirihkiraawaʔ",
+          "english": "they are sick"
+        },
+        "1pl_incl": {
+          "skiri": "tacakuraakiraawaʔ",
+          "english": "we are sick"
+        },
+        "1pl_excl": {
+          "skiri": "tikuraakiraawaʔ",
+          "english": "we are sick"
+        },
+        "2pl": {
+          "skiri": "taraakiraawaʔ",
+          "english": "you are sick"
+        },
+        "3pl": {
+          "skiri": "tiirakiraawaʔ",
+          "english": "they are sick"
+        }
+      },
+      "negative_indicative_perfective": {
+        "1sg": {
+          "skiri": "kaakikukiraawaʔ",
+          "english": "I am not sick"
+        },
+        "2sg": {
+          "skiri": "kaakiraawaʔ",
+          "english": "you are not sick"
+        },
+        "3sg": {
+          "skiri": "kaakihkiraawaʔ",
+          "english": "he is not sick"
+        },
+        "1du_incl": {
+          "skiri": "kaakacukukiraawaʔ",
+          "english": "we are not sick"
+        },
+        "1du_excl": {
+          "skiri": "sikaakikukiraawaʔ",
+          "english": "we are not sick"
+        },
+        "2du": {
+          "skiri": "sikaakiraawaʔ",
+          "english": "you are not sick"
+        },
+        "3du": {
+          "skiri": "sikaakihkiraawaʔ",
+          "english": "they are not sick"
+        },
+        "1pl_incl": {
+          "skiri": "kaakaacukuraakiraawaʔ",
+          "english": "we are not sick"
+        },
+        "1pl_excl": {
+          "skiri": "kaakikuraakiraawaʔ",
+          "english": "we are not sick"
+        },
+        "2pl": {
+          "skiri": "kaakaraakiraawaʔ",
+          "english": "you are not sick"
+        },
+        "3pl": {
+          "skiri": "kaakirakiraawaʔ",
+          "english": "they are not sick"
+        }
+      },
+      "contingent_perfective": {
+        "1sg": {
+          "skiri": "rikukiraawaʔ",
+          "english": "I'll be sick"
+        },
+        "2sg": {
+          "skiri": "rakiraawaʔ",
+          "english": "you'll be sick"
+        },
+        "3sg": {
+          "skiri": "rihkiraawaʔ",
+          "english": "he'll be sick"
+        },
+        "1du_incl": {
+          "skiri": "racakukiraawaʔ",
+          "english": "we'll be sick"
+        },
+        "1du_excl": {
+          "skiri": "sirikukiraawaʔ",
+          "english": "we'll be sick"
+        },
+        "2du": {
+          "skiri": "sirakiraawaʔ",
+          "english": "you'll be sick"
+        },
+        "3du": {
+          "skiri": "sirihkiraawaʔ",
+          "english": "they'll be sick"
+        },
+        "1pl_incl": {
+          "skiri": "racakuraktahkiraawaʔ",
+          "english": "we'll be sick"
+        },
+        "1pl_excl": {
+          "skiri": "rikuraktahkiraawaʔ",
+          "english": "we'll be sick"
+        },
+        "2pl": {
+          "skiri": "raraktahkiraawaʔ",
+          "english": "you'll be sick"
+        },
+        "3pl": {
+          "skiri": "riiraktahkiraawaʔ",
+          "english": "they'll be sick"
+        }
+      },
+      "assertive_perfective": {
+        "1sg": {
+          "skiri": "riikuukiraawaʔ",
+          "english": "I am sick"
+        },
+        "2sg": {
+          "skiri": "raakiraawaʔ",
+          "english": "you are sick"
+        },
+        "3sg": {
+          "skiri": "riihkiraawaʔ",
+          "english": "he is sick"
+        },
+        "1du_incl": {
+          "skiri": "riicakuukiraawaʔ",
+          "english": "we are sick"
+        },
+        "1du_excl": {
+          "skiri": "siriikuukiraawaʔ",
+          "english": "we are sick"
+        },
+        "2du": {
+          "skiri": "siraakiraawaʔ",
+          "english": "you are sick"
+        },
+        "3du": {
+          "skiri": "siriihkiraawaʔ",
+          "english": "they are sick"
+        },
+        "1pl_incl": {
+          "skiri": "riicakuuraktahkiraawaʔ",
+          "english": "we are sick"
+        },
+        "1pl_excl": {
+          "skiri": "riikuuraktahkiraawaʔ",
+          "english": "we are sick"
+        },
+        "2pl": {
+          "skiri": "raaraktahkiraawaʔ",
+          "english": "you are sick"
+        },
+        "3pl": {
+          "skiri": "riiraktahkiraawaʔ",
+          "english": "they are sick"
+        }
+      },
+      "absolutive_perfective": {
+        "1sg": {
+          "skiri": "riikukiraawaʔ",
+          "english": "I am sick"
+        },
+        "2sg": {
+          "skiri": "raakiraawaʔ",
+          "english": "you are sick"
+        },
+        "3sg": {
+          "skiri": "riihkiraawaʔ",
+          "english": "he is sick"
+        },
+        "1du_incl": {
+          "skiri": "riicakukiraawaʔ",
+          "english": "we are sick"
+        },
+        "1du_excl": {
+          "skiri": "siriikukiraawaʔ",
+          "english": "we are sick"
+        },
+        "2du": {
+          "skiri": "siraakiraawaʔ",
+          "english": "you are sick"
+        },
+        "3du": {
+          "skiri": "sirihkiraawaʔ",
+          "english": "they are sick"
+        },
+        "1pl_incl": {
+          "skiri": "riicakuraktahkiraawaʔ",
+          "english": "we are sick"
+        },
+        "1pl_excl": {
+          "skiri": "riikuraktahkiraawaʔ",
+          "english": "we are sick"
+        },
+        "2pl": {
+          "skiri": "raaraktahkiraawaʔ",
+          "english": "you are sick"
+        },
+        "3pl": {
+          "skiri": "riiraktahkiraawaʔ",
+          "english": "they are sick"
+        }
+      },
+      "potential_perfective": {
+        "1sg": {
+          "skiri": "kuusikuukiraawaʔ",
+          "english": "I will be sick"
+        },
+        "2sg": {
+          "skiri": "kusaakiraawaʔ",
+          "english": "you will be sick"
+        },
+        "3sg": {
+          "skiri": "kusiriikiraawaʔ",
+          "english": "he will be sick"
+        },
+        "1du_incl": {
+          "skiri": "kaacakuukiraawaʔ",
+          "english": "we will be sick"
+        },
+        "1du_excl": {
+          "skiri": "sikuusikuukiraawaʔ",
+          "english": "we will be sick"
+        },
+        "2du": {
+          "skiri": "sikusaakiraawaʔ",
+          "english": "you will be sick"
+        },
+        "3du": {
+          "skiri": "sikusiriikiraawaʔ",
+          "english": "they will be sick"
+        },
+        "1pl_incl": {
+          "skiri": "kaacakuuraktahkiraawaʔ",
+          "english": "we will be sick"
+        },
+        "1pl_excl": {
+          "skiri": "kuusikuuraktahkiraawaʔ",
+          "english": "we will be sick"
+        },
+        "2pl": {
+          "skiri": "kusaaraktahkiraawaʔ",
+          "english": "you will be sick"
+        },
+        "3pl": {
+          "skiri": "kusiriktahkiraawaʔ",
+          "english": "they will be sick"
+        }
+      },
+      "gerundial_perfective_subordinate": {
+        "1sg": {
+          "skiri": "iriirikukiraawaa",
+          "english": "where I am sick"
+        },
+        "2sg": {
+          "skiri": "iriirakiraawaa",
+          "english": "where you are sick"
+        },
+        "3sg": {
+          "skiri": "iriirihkiraawaa",
+          "english": "where he is sick"
+        },
+        "1du_incl": {
+          "skiri": "iriiracukukiraawaa",
+          "english": "where we are sick"
+        },
+        "1du_excl": {
+          "skiri": "iriirisirikukiraawaa",
+          "english": "where we are sick"
+        },
+        "2du": {
+          "skiri": "iriirisiraawaa",
+          "english": "where you are sick"
+        },
+        "3du": {
+          "skiri": "iriirisirihkiraawaa",
+          "english": "where they are sick"
+        },
+        "1pl_incl": {
+          "skiri": "iriiracuraktahkiraawaa",
+          "english": "where we are sick"
+        },
+        "1pl_excl": {
+          "skiri": "iriirikuraktahkiraawaa",
+          "english": "where we are sick"
+        },
+        "2pl": {
+          "skiri": "iriiraraktahkiraawaa",
+          "english": "where you are sick"
+        },
+        "3pl": {
+          "skiri": "iriiriraktahkiraawaa",
+          "english": "where they are sick"
+        }
+      },
+      "contingent_perfective_subordinate": {
+        "1sg": {
+          "skiri": "rikukiraawaa",
+          "english": "if/when I am sick"
+        },
+        "2sg": {
+          "skiri": "rakiraawaa",
+          "english": "if/when you are sick"
+        },
+        "3sg": {
+          "skiri": "rihkiraawaa",
+          "english": "if/when he is sick"
+        },
+        "1du_incl": {
+          "skiri": "racakukiraawaa",
+          "english": "if/when we are sick"
+        },
+        "1du_excl": {
+          "skiri": "sirikukiraawaa",
+          "english": "if/when we are sick"
+        },
+        "2du": {
+          "skiri": "sirakiraawaa",
+          "english": "if/when you are sick"
+        },
+        "3du": {
+          "skiri": "sirihkiraawaa",
+          "english": "if/when they are sick"
+        },
+        "1pl_incl": {
+          "skiri": "racakuraktahkiraawaa",
+          "english": "if/when we are sick"
+        },
+        "1pl_excl": {
+          "skiri": "rikuraktahkiraawaa",
+          "english": "if/when we are sick"
+        },
+        "2pl": {
+          "skiri": "raraktahkiraawaa",
+          "english": "if/when you are sick"
+        },
+        "3pl": {
+          "skiri": "riiraktahkiraawaa",
+          "english": "if/when they are sick"
+        }
+      },
+      "subjunctive_perfective_subordinate": {
+        "1sg": {
+          "skiri": "iikukiraawaa",
+          "english": "should I be sick"
+        },
+        "2sg": {
+          "skiri": "aakiraawaa",
+          "english": "should you be sick"
+        },
+        "3sg": {
+          "skiri": "iihkiraawaa",
+          "english": "should he be sick"
+        },
+        "1du_incl": {
+          "skiri": "aacakukiraawaa",
+          "english": "should we be sick"
+        },
+        "1du_excl": {
+          "skiri": "siʔiikukiraawaa",
+          "english": "should we be sick"
+        },
+        "2du": {
+          "skiri": "siʔaakiraawaa",
+          "english": "should you be sick"
+        },
+        "3du": {
+          "skiri": "siʔiihkiraawaa",
+          "english": "should they be sick"
+        },
+        "1pl_incl": {
+          "skiri": "aacakuraakiraawaa",
+          "english": "should we be sick"
+        },
+        "1pl_excl": {
+          "skiri": "iikuraakiraawaa",
+          "english": "should we be sick"
+        },
+        "2pl": {
+          "skiri": "aaraakiraawaa",
+          "english": "should you be sick"
+        },
+        "3pl": {
+          "skiri": "iiraakiraawaa",
+          "english": "should they be sick"
+        }
+      },
+      "infinitive_perfective_subordinate": {
+        "1sg": {
+          "skiri": "rakukukiraawaa",
+          "english": "for me to be sick"
+        },
+        "2sg": {
+          "skiri": "raakukiraawaa",
+          "english": "for you to be sick"
+        },
+        "3sg": {
+          "skiri": "rihkukiraawaa",
+          "english": "for him to be sick"
+        },
+        "1du_incl": {
+          "skiri": "racakukiraawaa",
+          "english": "for us to be sick"
+        },
+        "1du_excl": {
+          "skiri": "sirakukiraawaa",
+          "english": "for us to be sick"
+        },
+        "2du": {
+          "skiri": "sirihkukiraawaa",
+          "english": "for you to be sick"
+        },
+        "3du": {
+          "skiri": "racakukuraaktahkiraawaa",
+          "english": "for them to be sick"
+        },
+        "1pl_incl": {
+          "skiri": "rakukuraaktahkiraawaa",
+          "english": "for us to be sick"
+        },
+        "1pl_excl": {
+          "skiri": "raakuraktahkiraawaa",
+          "english": "for us to be sick"
+        },
+        "2pl": {
+          "skiri": "rihkuraaktahkiraawaa",
+          "english": "for you to be sick"
+        },
+        "3pl": {
+          "skiri": "riihkuraktahkiraawaa",
+          "english": "for them to be sick"
+        }
+      }
+    }
+  },
+  "page_8": {
+    "verb_heading": "to have it",
+    "verb_class": null,
+    "dictionary_form": null,
+    "english_gloss": "to have it",
+    "modes": {
+      "indicative_perfective": {
+        "1sg": {
+          "skiri": "tahaa",
+          "english": "I have it"
+        },
+        "2sg": {
+          "skiri": "tastaa",
+          "english": "you have it"
+        },
+        "3sg": {
+          "skiri": "tiraa",
+          "english": "he have it"
+        },
+        "1du_incl": {
+          "skiri": "taciraa",
+          "english": "we have it"
+        },
+        "1du_excl": {
+          "skiri": "sitahaa",
+          "english": "we have it"
+        },
+        "2du": {
+          "skiri": "sitastaa",
+          "english": "you have it"
+        },
+        "3du": {
+          "skiri": "sitiraa",
+          "english": "they have it"
+        },
+        "1pl_incl": {
+          "skiri": "sitaciraa",
+          "english": "we have it"
+        },
+        "1pl_excl": {
+          "skiri": "sitahaa",
+          "english": "we have it"
+        },
+        "2pl": {
+          "skiri": "sitastaa",
+          "english": "you have it"
+        },
+        "3pl": {
+          "skiri": "sitiraa",
+          "english": "they have it"
+        }
+      },
+      "negative_indicative_perfective": {
+        "1sg": {
+          "skiri": "kaakahaa",
+          "english": "I do not have it"
+        },
+        "2sg": {
+          "skiri": "kaakastaa",
+          "english": "you do not have it"
+        },
+        "3sg": {
+          "skiri": "kaakiraa",
+          "english": "he does not have it"
+        },
+        "1du_incl": {
+          "skiri": "kaakaciraa",
+          "english": "we do not have it"
+        },
+        "1du_excl": {
+          "skiri": "sikaakahaa",
+          "english": "we do not have it"
+        },
+        "2du": {
+          "skiri": "sikaakastaa",
+          "english": "you do not have it"
+        },
+        "3du": {
+          "skiri": "sikaakiraa",
+          "english": "they do not have it"
+        },
+        "1pl_incl": {
+          "skiri": "sikaakaciraa",
+          "english": "we do not have it"
+        },
+        "1pl_excl": {
+          "skiri": "sikaakahaa",
+          "english": "we do not have it"
+        },
+        "2pl": {
+          "skiri": "sikaakastaa",
+          "english": "you do not have it"
+        },
+        "3pl": {
+          "skiri": "sikaakiraa",
+          "english": "they do not have it"
+        }
+      },
+      "contingent_perfective": {
+        "1sg": {
+          "skiri": "ihaa",
+          "english": "I'll have it"
+        },
+        "2sg": {
+          "skiri": "istaa",
+          "english": "you'll have it"
+        },
+        "3sg": {
+          "skiri": "riraa",
+          "english": "he'll have it"
+        },
+        "1du_incl": {
+          "skiri": "iciraa",
+          "english": "we'll have it"
+        },
+        "1du_excl": {
+          "skiri": "siʔihaa",
+          "english": "we'll have it"
+        },
+        "2du": {
+          "skiri": "siʔistaa",
+          "english": "you'll have it"
+        },
+        "3du": {
+          "skiri": "siriraa",
+          "english": "they'll have it"
+        },
+        "1pl_incl": {
+          "skiri": "siʔiciraa",
+          "english": "we'll have it"
+        },
+        "1pl_excl": {
+          "skiri": "siʔihaa",
+          "english": "we'll have it"
+        },
+        "2pl": {
+          "skiri": "siʔistaa",
+          "english": "you'll have it"
+        },
+        "3pl": {
+          "skiri": "siriraa",
+          "english": "they'll have it"
+        }
+      },
+      "assertive_perfective": {
+        "1sg": {
+          "skiri": "rihaa",
+          "english": "I have it"
+        },
+        "2sg": {
+          "skiri": "ristaa",
+          "english": "you have it"
+        },
+        "3sg": {
+          "skiri": "riraa",
+          "english": "he has it"
+        },
+        "1du_incl": {
+          "skiri": "riiciraa",
+          "english": "we have it"
+        },
+        "1du_excl": {
+          "skiri": "siriiháa",
+          "english": "we have it"
+        },
+        "2du": {
+          "skiri": "siriistaa",
+          "english": "you have it"
+        },
+        "3du": {
+          "skiri": "siriiraa",
+          "english": "they have it"
+        },
+        "1pl_incl": {
+          "skiri": "siriiciraa",
+          "english": "we have it"
+        },
+        "1pl_excl": {
+          "skiri": "siriiháa",
+          "english": "we have it"
+        },
+        "2pl": {
+          "skiri": "siriistaa",
+          "english": "you have it"
+        },
+        "3pl": {
+          "skiri": "siriiraa",
+          "english": "they have it"
+        }
+      },
+      "absolutive_perfective": {
+        "1sg": {
+          "skiri": "rahaa",
+          "english": "I had it"
+        },
+        "2sg": {
+          "skiri": "rastaa",
+          "english": "you had it"
+        },
+        "3sg": {
+          "skiri": "raraa",
+          "english": "he had it"
+        },
+        "1du_incl": {
+          "skiri": "raciraa",
+          "english": "we had it"
+        },
+        "1du_excl": {
+          "skiri": "sirahaa",
+          "english": "we had it"
+        },
+        "2du": {
+          "skiri": "sirastaa",
+          "english": "you had it"
+        },
+        "3du": {
+          "skiri": "siraraa",
+          "english": "they had it"
+        },
+        "1pl_incl": {
+          "skiri": "siraciraa",
+          "english": "we had it"
+        },
+        "1pl_excl": {
+          "skiri": "sirahaa",
+          "english": "we had it"
+        },
+        "2pl": {
+          "skiri": "sirastaa",
+          "english": "you had it"
+        },
+        "3pl": {
+          "skiri": "siriraa",
+          "english": "they had it"
+        }
+      },
+      "potential_perfective": {
+        "1sg": {
+          "skiri": "kuustiraa",
+          "english": "I will have it"
+        },
+        "2sg": {
+          "skiri": "kaasiraa",
+          "english": "you will have it"
+        },
+        "3sg": {
+          "skiri": "kuusiraa",
+          "english": "he will have it"
+        },
+        "1du_incl": {
+          "skiri": "kaaciriiraa",
+          "english": "we will have it"
+        },
+        "1du_excl": {
+          "skiri": "sikuustiraa",
+          "english": "we will have it"
+        },
+        "2du": {
+          "skiri": "sikaasiraa",
+          "english": "you will have it"
+        },
+        "3du": {
+          "skiri": "sikuusiraa",
+          "english": "they will have it"
+        },
+        "1pl_incl": {
+          "skiri": "sikaaciriiraa",
+          "english": "we will have it"
+        },
+        "1pl_excl": {
+          "skiri": "sikuustiraa",
+          "english": "we will have it"
+        },
+        "2pl": {
+          "skiri": "sikaasiraa",
+          "english": "you will have it"
+        },
+        "3pl": {
+          "skiri": "kuusiriiraraa",
+          "english": "they will have it"
+        }
+      },
+      "gerundial_perfective_subordinate": {
+        "1sg": {
+          "skiri": "iriiraaha",
+          "english": "where I have it"
+        },
+        "2sg": {
+          "skiri": "iriiraastaaha",
+          "english": "where you have it"
+        },
+        "3sg": {
+          "skiri": "iriiraraha",
+          "english": "where he has them"
+        },
+        "1du_incl": {
+          "skiri": "iriiraciraaha",
+          "english": "where we have it"
+        },
+        "1du_excl": {
+          "skiri": "iriisirahaaha",
+          "english": "where we have it"
+        },
+        "2du": {
+          "skiri": "iriisirastaaha",
+          "english": "where you have it"
+        },
+        "3du": {
+          "skiri": "iriisiraraha",
+          "english": "where they have it"
+        },
+        "1pl_incl": {
+          "skiri": "iriisiraciraaha",
+          "english": "where we have it"
+        },
+        "1pl_excl": {
+          "skiri": "iriisirahaaha",
+          "english": "where we have it"
+        },
+        "2pl": {
+          "skiri": "iriisirastaaha",
+          "english": "where you have it"
+        },
+        "3pl": {
+          "skiri": "iriiriraraaha",
+          "english": "where they have them"
+        }
+      },
+      "contingent_perfective_subordinate": {
+        "1sg": {
+          "skiri": "ihaaha",
+          "english": "if/when I have it"
+        },
+        "2sg": {
+          "skiri": "istaaha",
+          "english": "if/when you have it"
+        },
+        "3sg": {
+          "skiri": "riraaha",
+          "english": "if/when he has it"
+        },
+        "1du_incl": {
+          "skiri": "iciraaha",
+          "english": "if/when we have it"
+        },
+        "1du_excl": {
+          "skiri": "siʔihaaha",
+          "english": "if/when we have it"
+        },
+        "2du": {
+          "skiri": "siʔistaaha",
+          "english": "if/when you have it"
+        },
+        "3du": {
+          "skiri": "siʔiraaha",
+          "english": "if/when they have it"
+        },
+        "1pl_incl": {
+          "skiri": "siʔiciraaha",
+          "english": "if/when we have it"
+        },
+        "1pl_excl": {
+          "skiri": "siʔihaaha",
+          "english": "if/when we have it"
+        },
+        "2pl": {
+          "skiri": "siʔistaaha",
+          "english": "if/when you have it"
+        },
+        "3pl": {
+          "skiri": "siʔiraaha",
+          "english": "if/when they have it"
+        }
+      },
+      "subjunctive_perfective_subordinate": {
+        "1sg": {
+          "skiri": "aahaaha",
+          "english": "should I have it"
+        },
+        "2sg": {
+          "skiri": "aastaaha",
+          "english": "should you have it"
+        },
+        "3sg": {
+          "skiri": "iiraaha",
+          "english": "should he have it"
+        },
+        "1du_incl": {
+          "skiri": "aaciraaha",
+          "english": "should we have it"
+        },
+        "1du_excl": {
+          "skiri": "siʔaahaaha",
+          "english": "should we have it"
+        },
+        "2du": {
+          "skiri": "siʔaastaaha",
+          "english": "should you have it"
+        },
+        "3du": {
+          "skiri": "siʔiiraaha",
+          "english": "should they have it"
+        },
+        "1pl_incl": {
+          "skiri": "siʔaaciraaha",
+          "english": "should we have it"
+        },
+        "1pl_excl": {
+          "skiri": "siʔaahaaha",
+          "english": "should we have it"
+        },
+        "2pl": {
+          "skiri": "siʔaastaaha",
+          "english": "should you have it"
+        },
+        "3pl": {
+          "skiri": "siʔiiraaha",
+          "english": "should they have it"
+        }
+      },
+      "infinitive_perfective_subordinate": {
+        "1sg": {
+          "skiri": "ratkuraaha",
+          "english": "for me to have it"
+        },
+        "2sg": {
+          "skiri": "raskuraaha",
+          "english": "for you to have it"
+        },
+        "3sg": {
+          "skiri": "rakuraaha",
+          "english": "for him to have it"
+        },
+        "1du_incl": {
+          "skiri": "racihkuraaha",
+          "english": "for us to have it"
+        },
+        "1du_excl": {
+          "skiri": "siratkuraaha",
+          "english": "for us to have it"
+        },
+        "2du": {
+          "skiri": "siraskuraaha",
+          "english": "for you to have it"
+        },
+        "3du": {
+          "skiri": "sirakuraaha",
+          "english": "for them to have it"
+        },
+        "1pl_incl": {
+          "skiri": "siracihkuraaha",
+          "english": "for us to have it"
+        },
+        "1pl_excl": {
+          "skiri": "siratkuraaha",
+          "english": "for us to have it"
+        },
+        "2pl": {
+          "skiri": "siraskuraaha",
+          "english": "for you to have it"
+        },
+        "3pl": {
+          "skiri": "sirihkuraaha",
+          "english": "for them to have it"
+        }
+      }
+    }
+  }
+}

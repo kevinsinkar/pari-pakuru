@@ -1,0 +1,155 @@
+{
+  "page_1": {},
+  "page_3": {},
+  "page_7": {
+    "gemini": {
+      "engine": "gemini_plaintext",
+      "data": {
+        "page_number": 35,
+        "sections": [
+          {
+            "heading": "Person and number.",
+            "content": "Pronominal agent and patient prefixes occur immediately following the modal prefixes [table 7:11, 12, 15]. Skiri distinguishes two persons—first and second—as well as three numbers—singular, dual, and plural. In both the dual and plural numbers there is a further distinction between inclusive (including the person spoken to) and exclusive (excluding the person spoken to) [table 7:11-12, 15]. There is, in addition, an obviative (OBV) prefix ir- that designates an indefinite third-person agent or a reversal in third-person agent and patient [table 7:13].",
+            "morphemes_mentioned": [
+              {
+                "form": "ir-",
+                "label": "obviative (OBV) prefix",
+                "meaning": "designates an indefinite third-person agent or a reversal in third-person agent and patient",
+                "notes": "Occurs as an agent prefix for obviative forms, and as a patient prefix for obviative forms (in combination with a-)"
+              }
+            ],
+            "tables": [
+              {
+                "caption": "Table 9. Pronominal Prefixes",
+                "headers": [
+                  "Person",
+                  "Agent",
+                  "Patient"
+                ],
+                "rows": [
+                  [
+                    "1ˢᵗ",
+                    "t-",
+                    "ku-"
+                  ],
+                  [
+                    "2ⁿᵈ",
+                    "s-",
+                    "a-"
+                  ],
+                  [
+                    "Obviative",
+                    "ir-",
+                    "a-"
+                  ],
+                  [
+                    "Dual inclusive",
+                    "acir-",
+                    "aca-"
+                  ],
+                  [
+                    "Plural inclusive",
+                    "a-",
+                    ""
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "heading": null,
+            "content": "Singular number is unmarked in Skiri verbs. Dual number for both agent and patient is marked by the prefix si- DU, which precedes the modal prefix [table 12:6]. Plurality, in contrast, is represented by several morphemes (table 7:13, 22-24):\n\n*   first and second person agents in active, descriptive, and locative verbs take rak-;\n*   third person plural agents that are a group or single entity in active intransitive, descriptive, and locative verbs take the collective plural prefix ir-;\n*   third person plural agents that are individuals acting or existing separately in active intransitive, descriptive, and locative verbs take the individuative plural prefix raar-;\n*   third person agents of active transitive verbs are marked by the combination si- DU and ir- COLL.PL.\n\nIn active intransitive, descriptive, and locative verbs there is a marked distinction between collective and **non-collective plural agents**, as in,\n\ntiiraspaatasit 'they (COLL) set out' < ti- IND + Ø- 3.A + ir- 3.P.COLL.A + aspaatasik 'set out' + Ø PERF;\ntiiraaraspaatasit 'they (INDV) set out' < ti- IND + Ø- 3.A + raar- 3.P.INDV.A + aspaatasik 'set out' + Ø PERF;\n\nand in many transitive verbs there are separate prefixes that distinguish animate and inanimate third-person plural objects, as in,\n\ntaharaspiʔ 'I looked for them (inanimate objects)' < ta- IND.1/2.A + t- 1.A + raar- 3.INAN.P + raspii 'look for' + Ø PERF; cp. taatakaraspiʔ 'I looked for",
+            "morphemes_mentioned": [
+              {
+                "form": "si-",
+                "label": "DU (dual number)",
+                "meaning": "dual number for both agent and patient",
+                "notes": "precedes the modal prefix; also part of the combination si- DU and ir- COLL.PL"
+              },
+              {
+                "form": "rak-",
+                "label": "plural agent",
+                "meaning": "first and second person agents in active, descriptive, and locative verbs",
+                "notes": null
+              },
+              {
+                "form": "ir-",
+                "label": "collective plural prefix",
+                "meaning": "third person plural agents that are a group or single entity in active intransitive, descriptive, and locative verbs",
+                "notes": "Distinct from the obviative ir-; also part of the combination si- DU and ir- COLL.PL"
+              },
+              {
+                "form": "raar-",
+                "label": "individuative plural prefix",
+                "meaning": "third person plural agents that are individuals acting or existing separately in active intransitive, descriptive, and locative verbs",
+                "notes": "Also used for 3.INAN.P (third person inanimate plural patient)"
+              },
+              {
+                "form": "ti-",
+                "label": "IND (indicative)",
+                "meaning": null,
+                "notes": "Modal prefix"
+              },
+              {
+                "form": "Ø",
+                "label": "3.A (third person agent)",
+                "meaning": null,
+                "notes": "Zero morpheme"
+              },
+              {
+                "form": "ir-",
+                "label": "3.P.COLL.A (third person collective plural agent)",
+                "meaning": null,
+                "notes": "Used in active intransitive, descriptive, and locative verbs"
+              },
+              {
+                "form": "aspaatasik",
+                "label": "verb stem",
+                "meaning": "'set out'",
+                "notes": null
+              },
+              {
+                "form": "Ø",
+                "label": "PERF (perfective)",
+                "meaning": null,
+                "notes": "Zero morpheme"
+              },
+              {
+                "form": "raar-",
+                "label": "3.P.INDV.A (third person individuative plural agent)",
+                "meaning": null,
+                "notes": "Used in active intransitive, descriptive, and locative verbs"
+              },
+              {
+                "form": "ta-",
+                "label": "IND.1/2.A (indicative first/second person agent)",
+                "meaning": null,
+                "notes": "Modal prefix"
+              },
+              {
+                "form": "t-",
+                "label": "1.A (first person agent)",
+                "meaning": null,
+                "notes": null
+              },
+              {
+                "form": "raar-",
+                "label": "3.INAN.P (third person inanimate plural patient)",
+                "meaning": null,
+                "notes": "Used in transitive verbs"
+              },
+              {
+                "form": "raspii",
+                "label": "verb stem",
+                "meaning": "'look for'",
+                "notes": null
+              }
+            ],
+            "tables": []
+          }
+        ]
+      }
+    }
+  },
+  "page_16": {}
+}

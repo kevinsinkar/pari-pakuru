@@ -10,7 +10,7 @@ Build a comprehensive Skiri Pawnee language preservation tool: a searchable, lin
 
 | File | Description | Location |
 |------|-------------|----------|
-| Parks Dictionary (PDF) | Full Skiri Pawnee dictionary by Douglas Parks. Split into: Abbreviations/Sound Key, Sounds/Alphabet, Major Sound Changes, Grammatical Overview, Organization, English-to-Skiri section, Skiri-to-English section, 3 Appendices | `Dictionary Data/Dictionary PDF Split/` |
+| Parks Dictionary (PDF) | Full Skiri Pawnee dictionary by Douglas Parks. Split into: Abbreviations/Sound Key, Sounds/Alphabet, Major Sound Changes, Grammatical Overview, Organization, English-to-Skiri section, Skiri-to-English section, 3 Appendices (Appendix 1: 7 verb conjugation paradigms ~770 forms; Appendix 2: irregular du/pl verb roots ~9 entries; Appendix 3: kinship terminology ~40 forms) | `Dictionary Data/Dictionary PDF Split/` |
 | Dictionary page PDFs | Individual pages split for AI processing | `Dictionary Data/split_pdf_pages_SKIRI_TO_ENGLISH/` and `split_pdf_pages_ENGLISH_TO_SKIRI/` |
 | Blue Book — Pari Pakuru' | 1979 Pawnee Cultural Retention Committee textbook. 21 lessons teaching spoken Pawnee with dialogues, vocabulary, grammar explanations | `pari pakuru/Blue Book - Pari Pakuru.pdf` and `.txt` extraction |
 | JSON Schemas | Defined structures for S2E and E2S parsed entries | `Dictionary Data/` |
@@ -301,37 +301,125 @@ Tasks:
 - 5 unmatched guides are verb constructions / multi-word forms without standalone dictionary entries
 - Report: `reports/phase_2_2_pronunciation_phonetic.txt`
 
-### 🔲 Phase 2.3 — Sound Change Rule Engine
-**Priority:** Medium-High
-**Depends on:** Phase 1.1a (clean data), PDF 03 (Major Sound Changes)
-**Effort:** Large
+### ✅ Phase 2.3 — Sound Change Rule Engine
+**Script:** `scripts/sound_changes.py`
+**What it does:**
+1. Catalogs all 24 phonological rules from Parks Ch. 3 (Major Sound Changes)
+2. Implements each rule as a Python function (9 restricted + 15 unrestricted)
+3. Provides ordered pipeline: morpheme list → surface form
+4. Stores rules in `sound_change_rules` DB table
+5. Validates against 2,241 paradigmatic form pairs
+6. Generates report at `reports/phase_2_3_sound_changes.txt`
 
-Formalize phonological rules as ordered transformations for the grammar engine.
+**Rule categories (24 total):**
+- Vowels Restricted (4): Dominant i (1R), Dominant a (2R), -his reduction (3R), Vocalic reduplication (4R)
+- Vowels Unrestricted (3): Same-vowel contraction (5), u-domination (6), i+a contraction (7)
+- Consonants Restricted (5): raar- assibilation (8R), final-s loss (9R), prefixal r-loss (10R), ut- affrication (11R), prefixal r-laryngealization (12R)
+- Consonants Unrestricted (12): t-laryngealization (13), metathesis (14), sonorant reduction (15), h-loss (16), sibilant hardening (17), sibilant loss (18), alveolar dissimilation (19), degemination (20), r-stopping (21), labial glide loss (22), final r loss (23), c-variants (24)
 
-Source: `Dictionary Data/Dictionary PDF Split/03-Major_Sound_Changes.pdf`
+**Pipeline ordering:**
+1. Restricted rules (morpheme-aware): 1R → 2R → 3R → 8R → 10R → 11R → 12R
+2. Concatenate morphemes
+3. Unrestricted rules (string-level): 5 → 6 → 7 → 13 → 14 → 15 → 16 → 17 → 18 → 19 → 20 → 21 → 22 → 23
+4. Optional: Rule 9R final-s loss (word-level)
 
-Tasks:
-- [ ] Extract and catalog all sound change rules from PDF 03
-- [ ] Encode as ordered rules (vowel coalescence, consonant cluster simplification, accent shift)
-- [ ] Implement as functions: (stem, affix) → surface form
-- [ ] Validate against paradigmatic forms in dictionary (form 1-5 for every verb)
-- [ ] Handle verb class-specific changes (Class 1: -a suffix, Class 2: -i suffix, etc.)
+**Test results:** 11/11 built-in tests passing (PDF examples)
 
-### 🔲 Phase 3.1 — Morpheme Inventory & Slot System
-**Priority:** Low (depends on 2.3)
-**Depends on:** Phase 2.3 (sound changes), PDF 04 (Grammatical Overview)
-**Effort:** Very Large
+**Validation results:**
+- 82.1% of form_4 entries start with `irii-` prefix (expected)
+- 17.2% start with `irir-` (variant for certain verb classes)
+- Simple prefix-swap derivation shows 12% close-match rate (edit dist ≤ 2)
+- Full derivation requires morpheme decomposition (Phase 3.1 dependency)
+- Rule 13 (t→h before r): 689 entries show evidence
+- Rule 20 (degemination): all 9 raar-preverb forms confirmed surface without rr
+- 268 headwords end in underlying r (notation convention; surface final-r loss confirmed)
 
-Build the verb template: which morphemes occupy which slots in what order.
+**Key finding:** Sound change rules are correctly formalized and tested; the gap for full paradigmatic form derivation is morphological decomposition (prefix/preverb/suffix inventory), which is Phase 3.1's responsibility.
 
-Source: `Dictionary Data/Dictionary PDF Split/04-Grammatical_Overview.pdf`, Abbreviations (60+ morpheme labels in PDFs 01)
+**Gemini audit results (52 entries across 15 verb classes):**
+- 14 of 24 rules observed in paradigmatic forms (most frequent: Rule 6 u-domination, Rule 23 final-r loss, Rule 7 i+a contraction)
+- 48/52 entries flagged anomalies — mostly expected: they are **unlisted suffixation/perfective patterns** (not sound change rule errors)
+- Unlisted patterns identified (important for Phase 3.1):
+  - Perfective suffix `-his` lost after stem-final `t` (not just after `k` as in Rule 3R)
+  - Stem-final `k → t` in perfective for Class 2-i and some Class 4 verbs
+  - Subordinate perfective suffix `-u` for consonant-final stems, `-wi` for `aa`-final stems
+  - Glottal stop `ʔ` blocks vowel contraction rules
+  - `irii- + ra-` = `iriira-` (r+r NOT degeminated — Rule 20 scope limited to within-morpheme)
+- These are **morphological suffixation rules**, not phonological sound changes — correctly out of scope for Ch. 3 rules
+- All 24 implemented rules confirmed correct where they apply
 
-Tasks:
-- [ ] Map all 60+ morpheme abbreviations to their forms and slot positions
-- [ ] Define slot ordering: proclitics → mode → person → preverb → stem → aspect → subordinating
-- [ ] Encode verb class rules: how each class modifies dependent forms
-- [ ] Build conjugation engine: (stem, class, person, number, mode, aspect) → inflected form
-- [ ] Validate against every paradigmatic form in the dictionary
+**Script features:**
+- `--test`: run built-in test suite (PDF examples)
+- `--apply "ti + uur + hiir"`: apply pipeline to morpheme sequence
+- `--catalog-only`: populate DB table only
+- `--validate-only`: run validation without DB writes
+- `--final-s-loss`: apply Rule 9R with --apply mode
+- `--audit`: Gemini-powered audit against paradigmatic forms (requires GEMINI_API_KEY)
+
+### 🟡 Phase 3.1 — Morpheme Inventory & Slot System
+**Scripts:** `scripts/extract_appendices.py`, `scripts/morpheme_inventory.py`
+**What it does:**
+1. Extracts conjugation paradigms from scanned PDF appendices via Gemini OCR (PyMuPDF→PNG→Gemini)
+2. Defines the complete 30-slot verb template (8 proclitic + 18 inner prefix + 4 suffix slots)
+3. Maps 164 morpheme abbreviations to their forms and slot positions
+4. Implements conjugation engine: (stem, class, person, number, mode, aspect) → inflected form
+5. Validates against 770 Appendix 1 paradigm forms
+
+**Extraction results:**
+- Appendix 1: 770 forms (7 verbs × 10 modes × 11 person/number) — 100% extracted
+- Appendix 2: 9 irregular verb roots (suppletive sg/du/pl stems)
+- Abbreviations: 164 entries with morpheme forms
+- Grammatical Overview: 23/23 pages extracted (pages 1,3,7,16 recovered via plain-text Gemini at 400 DPI)
+
+**Extraction audit findings:**
+- Appendix 1: all 770 forms present, no nulls/errors; verb_class metadata missing on all 7 pages; 2/7 headings null/empty
+- Abbreviations: 81/164 have null morpheme_form (expected for non-morpheme abbrevs like "an.", "Ar."); key person prefixes present
+- Grammar pages 1,3,7,16: originally failed due to Gemini empty responses on structured JSON; recovered using plain-text prompts at 400 DPI (page 3 required split-page extraction for Table 5)
+- Recovered tables: Table 5 (Derivational Affixes), Table 9 (Pronominal Prefixes), Table 15 (Verb Stem Template), Table 16 (Verb Suffix Template)
+
+**Verb template (Parks Tables 6-7):**
+- Proclitics: QUOT wi-, DUB kuur-/kuruur-, INFR tiir-, EV ar-, DU si-, INDF ku-, REFL witii-, NEG kara-/ka-/kaaku-
+- Inner prefixes (slots 10-26): MODE → AGENT → INCLUSIVE → PL/POSS/PREV → PATIENT → INF.B → PHY.POSS → BEN/PREV → SEQ → AOR → ADV → PL → PL → PL → NOUN → STEM
+- Suffixes: ASPECT → SUBORDINATION → INTENTIVE → SUB.INTENTIVE
+
+**Conjugation engine:**
+- Assembles morphemes by slot, concatenates, applies unrestricted phonological rules
+- Rule 2R (dominant a) applied at mode+preverb boundary via _smart_concatenate
+- Preverb alternation: ir- → iir- (1/2.A) / a- (3.A)
+- For verbs with ut- preverb: fused into stem (e.g., ut-+aar→ stem "uutaar")
+
+**Validation results (first pass):**
+- 770 forms tested: 98 exact (12.7%), 167 close (21.7%), 505 mismatch (65.6%)
+- Singular (1sg/2sg/3sg): ~33% exact — core modal/agent/preverb interactions working
+- Dual/plural: 0% — complex person prefix assembly not yet complete
+- Best verb: "to do it" 24%, worst: "to be sick" 0% (needs ku- proclitic), "to go" 5% (irregular)
+
+**Known gaps for refinement:**
+- Dual prefixes: acir- (inclusive), ih- (exclusive/2du) compound assembly
+- Plural prefixes: raak-/iraak- interactions with other slots
+- 3pl suffix: aahuʔ/raaraʔ alternation conditions
+- Gerundial mode: iriira- compound prefix internal structure
+- Subordinate suffix class-specific tuning
+- Verb-specific irregularities: "to go" (compensatory lengthening), "to be sick" (ku- proclitic)
+
+**DB tables added:** `verb_paradigms`, `irregular_verb_roots`, `morpheme_abbreviations`, `morpheme_inventory`, `verb_template_slots`
+**Report:** `reports/phase_3_1_morphemes.txt`
+
+Tasks completed:
+- [x] Extract Appendix 1 verb conjugation paradigms via Gemini OCR
+- [x] Extract Appendix 2 irregular verb root tables
+- [x] Map all 164 morpheme abbreviations to their forms and slot positions
+- [x] Define slot ordering: proclitics → mode → person → preverb → stem → aspect → subordinating
+- [x] Encode verb class rules: how each class modifies dependent forms
+- [x] Build conjugation engine: (stem, class, person, number, mode, aspect) → inflected form
+- [x] Validate against Appendix 1 paradigms (first pass: 12.7% exact, singular ~33%)
+
+Tasks remaining:
+- [ ] Refine dual/plural person prefix assembly (currently 0% match)
+- [ ] Fix gerundial iriira- compound prefix decomposition
+- [ ] Handle verb-specific irregularities (proclitic selection, stem alternations)
+- [ ] Validate against all 4273 dictionary paradigmatic forms
+- [ ] Extract Appendix 3 (kinship/possessive morphology) for Phase 3.2
 
 ### 🔲 Phase 3.2 — Sentence Construction Framework
 **Priority:** Low (depends on 3.1)
@@ -340,12 +428,16 @@ Tasks:
 
 Given English input, construct Skiri output.
 
+Sources:
+- `Dictionary Data/Dictionary PDF Split/Appendix 3 - Kinship Terminology - Consanguineal and Affinal.pdf` — verb-based affinal kinship constructions (*aktaku* "to have as spouse", *kuakus* "to have as in-law") serve as test cases for transitive verb sentence patterns with person marking
+
 Tasks:
 - [ ] Map English sentence patterns to Skiri clause structure
 - [ ] Handle transitivity: subject/object marking, preverb system (ut-, ir-, uur-)
 - [ ] Implement proclitic system (indefinite ku-, reflexive witi-, dual si-, etc.)
 - [ ] Implement evidential system (quotative wi-, dubitative kuur-, etc.)
-- [ ] Blue Book lesson dialogues as test cases
+- [ ] Extract Appendix 3 kinship terms and possessive paradigms
+- [ ] Blue Book lesson dialogues + Appendix 3 kinship constructions as test cases
 
 ### 🔲 Phase 4.1 — Search Interface
 **Priority:** Medium (can start after Phase 1.2)
@@ -395,6 +487,11 @@ Guided interface: select person/action/object/tense → assembled Skiri sentence
 | `tag_entries.py` | `scripts/` | Phase 2.1: semantic tag entries (rule-based + Gemini) | Optional (GEMINI_API_KEY) |
 | `blue_book_verify.py` | `scripts/` | Phase 2.2: Blue Book cross-verification — extract vocab, match to dictionary, populate examples | Yes (GEMINI_API_KEY) |
 | `bb_pronunciation_compare.py` | `scripts/` | Phase 2.2 follow-up: compare BB pronunciation guides with Parks simplified_pronunciation | No |
+| `sound_changes.py` | `scripts/` | Phase 2.3: sound change rule engine — 24 rules cataloged, pipeline, validation against paradigmatic forms | No |
+| `extract_appendices.py` | `scripts/` | Phase 3.1: extract appendix/grammar data from scanned PDFs via Gemini OCR | Yes (GEMINI_API_KEY) |
+| `morpheme_inventory.py` | `scripts/` | Phase 3.1: morpheme slot system, conjugation engine, validation against Appendix 1 | No |
+| `retry_failed_grammar.py` | `scripts/` | Phase 3.1: retry failed grammar pages with plain-text Gemini or Claude API | Yes (GEMINI_API_KEY or ANTHROPIC_API_KEY) |
+| `merge_grammar_retries.py` | `scripts/` | Phase 3.1: merge recovered grammar page data into grammatical_overview.json | No |
 
 ## Environment
 

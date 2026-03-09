@@ -1,0 +1,332 @@
+======================================================================
+Phase 2.3 -- Sound Change Rule Engine Report
+Generated: 2026-03-08 21:55:44
+======================================================================
+
+RULE CATALOG
+----------------------------------------
+  Total rules:       24
+  Restricted:        9
+  Unrestricted:      15
+  Vowel rules:       7
+  Consonant rules:   17
+
+  Rule 1R   [restr] [vowe]  Dominant i
+           i, ii + u -> i, ii
+
+  Rule 2R   [restr] [vowe]  Dominant a
+           i + a -> a
+
+  Rule 3R   [restr] [vowe]  -his Perfective Reduction
+           Vk]STEM + -his -> ks
+
+  Rule 4R   [restr] [vowe]  Stem-final Vocalic Reduplication
+           V(V) -> V(V)ʔV / C _ C + NULL (non-subordinate)
+
+  Rule 5    [unres] [vowe]  Same-vowel Contraction
+           Vi(Vi) + Vi -> ViVi
+
+  Rule 6    [unres] [vowe]  u-Domination
+           V/VV + u OR u(u) + V -> uu / _ C(C)V
+
+  Rule 7    [unres] [vowe]  Contraction of i and a
+           i(i) + a(a) OR a(a) + i -> ii / _ C(C)V
+
+  Rule 8R   [restr] [cons]  Assibilation of raar-
+           r + t -> c / raar- + t...]STEM
+
+  Rule 9R   [restr] [cons]  Final-s Loss
+           s -> NULL / _ #
+
+  Rule 10R  [restr] [cons]  Prefixal Final-r Loss
+           ir-/acir- lose r before uur-/ut-/uks-
+
+  Rule 11R  [restr] [cons]  ut- Affrication
+           ut- -> uc- / _ i-
+
+  Rule 12R  [restr] [cons]  Prefixal r-Laryngealization
+           r -> h / _ r (in tiir-, ar- prefixes)
+
+  Rule 13   [unres] [cons]  t-Laryngealization
+           t -> h / _ r
+
+  Rule 14   [unres] [cons]  Metathesis Rule
+           r + h -> hr
+
+  Rule 15   [unres] [cons]  Sonorant r-Reduction
+           r -> NULL / _ h
+
+  Rule 16   [unres] [cons]  h-Loss
+           h -> NULL / C _ ; h -> NULL / _ C#, CC
+
+  Rule 17   [unres] [cons]  Sibilant Hardening
+           s -> c / C _
+
+  Rule 18   [unres] [cons]  Sibilant Loss
+           s -> NULL / k _ c
+
+  Rule 19   [unres] [cons]  Alveolar Dissimilation
+           t + t -> ct ; (also t + c -> ct by metathesis)
+
+  Rule 20   [unres] [cons]  Consonant Degemination
+           CiCi -> Ci (for r, k)
+
+  Rule 21   [unres] [cons]  r-Stopping
+           r -> t / Obs. _
+
+  Rule 22   [unres] [cons]  Labial Glide Loss
+           w -> NULL / V _ wV(V)...
+
+  Rule 23   [unres] [cons]  Final r Loss
+           r -> NULL / _ #
+
+  Rule 24   [unres] [cons]  Variants of c
+           c -> [ts] / _ C, # ; c -> [ch] / _ V
+
+BUILT-IN TESTS (PDF Examples)
+----------------------------------------
+  Passed: 11/11
+
+  [PASS] t-laryngealization: pahaat+raʔuk (Rule 13)
+           pahaat + raʔuk -> pahaahaʔuk
+  [PASS] alveolar dissimilation t+t (Rule 19)
+           ta + t + taʔuut -> tactaʔuut
+  [PASS] final r loss (Rule 23)
+           aar -> aa
+  [PASS] degemination rr->r + final r loss (Rules 20+23)
+           raar + raahur -> raaraahu
+  [PASS] -his perfective reduction (Rule 3R)
+           hak + his -> haks
+  [PASS] raar assibilation r+t->c (Rule 8R, simple)
+           raar + tiis -> raaciis
+  [PASS] ut- affrication before i- (Rule 11R)
+           ut + i -> uci
+  [PASS] final-s loss (Rule 9R)
+           kuhkus -> kuhku
+  [PASS] sibilant hardening: s->c after C (Rule 17)
+           ik + sa -> ikca
+  [PASS] r-stopping: k+r -> k+t (Rule 21)
+           ik + ra -> ikta
+  [PASS] alveolar dissimilation t+c -> ct (Rule 19)
+           ta + t + cak -> tactak
+
+PARADIGMATIC FORM VALIDATION
+----------------------------------------
+  Form 4 (absolutive subordinate) prefix analysis:
+    Total verb entries tested: 2241
+    Starting with irii-: 1840 (82.1%)
+    Other prefixes (top 10):
+      irir...: 386
+      i-ri...: 8
+      iri-...: 2
+      wiir...: 2
+      witi...: 1
+      riri...: 1
+      ruuʔ...: 1
+
+  Form 4 derivation test (ti-prefix swap + sound changes):
+    Tested: 350
+    Exact match: 0 (0.0%)
+    Close match (edit dist <= 2): 42 (12.0% cumulative)
+
+    Sample mismatches (first 20):
+      kaaʔaah: form_2=tikaa’aa -> derived=iriikaa’aa vs attested=iriirakaa’aaha
+      kaaʔat: form_2=tikaa’at -> derived=iriikaa’at vs attested=iriirakaa-ta
+      kaaʔihwicat: form_2=tikaa’ihwicat -> derived=iriikaa’ihwicat vs attested=iriirakaa’ihwicata
+      kaaʔiisat: form_2=tikaa’iisat -> derived=iriikaa’iisat vs attested=iriirakaa’iisata
+      kaac: form_2=tikaa’ac -> derived=iriikaa’ac vs attested=iriirakaacu
+      kaacatk: form_2=tikaacat -> derived=iriikaacat vs attested=iriira-kaacatka
+      kaaciks: form_2=tikaaciks -> derived=iriikaacikc vs attested=iriirakaaciksu
+      kaackawuh: form_2=tikaackawu -> derived=iriikaackawu vs attested=iriirakaackawuha
+      kaacuuh: form_2=tikaacu’ -> derived=iriikaacu’ vs attested=iriira-kaacuuha
+      kaahak: form_2=tikaahat -> derived=iriikaahat vs attested=iriira-kaahat
+      kaahikuut: form_2=tikaahikuut -> derived=iriikaahikuut vs attested=iriirakaahikuuti
+      aahkarahwaasariitik: form_2=tiihkarahwaasariitit -> derived=iriihkarahwaasariitit vs attested=iriiraʔaahkarahwaasariitit
+      aahkataarik: form_2=tiʔaahkataarit -> derived=iriiʔaahkataarit vs attested=iriiraʔaahkataariki
+      aahkatakus: form_2=tiʔaahkataku -> derived=iriiʔaahkataku vs attested=iriiraʔaahkataku
+      aahkatasa: form_2=tiʔaahkatasa -> derived=iriiʔaahkatasa vs attested=iriiraʔaahkatasa
+      aahkawikiiʔac: form_2=tiʔaahkawikiiʔac -> derived=iriiʔaahkawikiiʔac vs attested=iriiraʔaahkawikiicu
+      aahwiriik: form_2=tiʔaahwiriit -> derived=iriiʔaahwiriit vs attested=iriirikuʔaahwiriika
+      aahwirik: form_2=tiʔaahwirit -> derived=iriiʔaahwirit vs attested=iriiraʔaahwaawirit
+      acikstaahiis: form_2=tiicikstahiis -> derived=iriicikctahiis vs attested=iriiraacikstaahiisu
+      acikstaraa: form_2=tiicikstaraaʔ -> derived=iriicikctaraaʔ vs attested=iriiraacikstaraaʔu
+
+  Rule 13 (t->h before r) potential evidence: 689 entries
+  Rule 20 (degemination) raar- evidence:
+    raar-preverb stems: 9
+    Surface without rr: 9
+
+  Form 2 prefix patterns by verb class:
+    (1)     : tii(102), tuu(99), tik(97)
+    (1), (1): tip(1), tir(1)
+    (1-a)   : tuu(30), tur(7), tii(3)
+    (1-a), (1-a): tii(1)
+    (1-i)   : tik(18), tii(14), tir(14)
+    (2)     : tuu(11), tik(10), tit(8)
+    (2-i)   : tuu(12), tih(10), tik(9)
+    (3)     : tuu(34), tik(30), tii(28)
+    (3), (3): tur(1)
+    (3-i)   : tik(1)
+    (4)     : tii(108), tik(87), tir(73)
+    (pl. subj.): tir(1)
+    (u)     : tii(4), tar(4), tir(4)
+    (wi)    : tuu(12), tii(4), tik(2)
+    unknown : tik(123), tii(93), tir(92)
+
+  Note: 268 headwords end in r (underlying form preserved in notation)
+
+GEMINI AUDIT
+----------------------------------------
+  Entries audited: 52
+  Entries with anomalies: 48 (92.3%)
+
+  Rules observed in paradigmatic forms:
+    Rule 6   :   10 occurrences  (u-Domination)
+    Rule 23  :    7 occurrences  (Final r Loss)
+    Rule 7   :    5 occurrences  (Contraction of i and a)
+    Rule 4R  :    5 occurrences  (Stem-final Vocalic Reduplication)
+    Rule 16  :    3 occurrences  (h-Loss)
+    Rule 20  :    3 occurrences  (Consonant Degemination)
+    Rule 2R  :    3 occurrences  (Dominant a)
+    Rule 21  :    1 occurrences  (r-Stopping)
+    Rule 5   :    1 occurrences  (Same-vowel Contraction)
+    Rule 9R  :    1 occurrences  (Final-s Loss)
+    Rule 10R :    1 occurrences  (Prefixal Final-r Loss)
+    Rule 13  :    1 occurrences  (t-Laryngealization)
+    Rule 14  :    1 occurrences  (Metathesis Rule)
+    Rule 15  :    1 occurrences  (Sonorant r-Reduction)
+    Rule form_2:    1 occurrences  (?)
+    Rule form_4:    1 occurrences  (?)
+
+  Unlisted patterns (not in 24 rules):
+    - Non-subordinate perfective suffix 'ʔ' for stems ending in 'r' (combined with Rule 23, Final r Loss).
+    - Subordinate perfective suffix '-u' for stems ending in consonants (c, t, r).
+    - Subordinate perfective suffix '-wi' for stems ending in 'aa'.
+    - Non-subordinate perfective suffix 'NULL' for stems ending in 'aa' that do not undergo Rule 4R.
+
+  Sample anomalies (first 30):
+    SK-aaraarukaaqat-p351-3601 (aaraarukaaʔat):
+      -> form_2: 'ti-' + 'a' -> 'tiʔa'. Rule 2R (Dominant a: i + a -> a) is blocked by the glottal stop 'ʔ'. The 'i' of 'ti-' is retained.
+      -> form_4: 'ra-' + 'a' -> 'raʔa'. Rule 5 (Same-vowel Contraction) is blocked by the glottal stop 'ʔ'.
+      -> form_2 and form_4: The perfective suffix '-his' is lost after stem-final 't'. (Unlisted pattern)
+      Note: Glottal stop 'ʔ' appears to block vowel contraction rules. The perfective suffix '-his' is consistently lost after stem-final 't'.
+    SK-raawicaksik-p127-2486 (raawicaksik):
+      -> form_2: Stem-final 'k' + perfective '-his' -> 't'. This is an unlisted pattern, not Rule 3R (-his Perfective Reduction: Vk + -his -> ks).
+      -> form_4: Stem-final 'k' + perfective '-his' + '-a' -> 'ka'. Rule 3R is blocked, and '-his' is lost. (Unlisted pattern)
+      Note: The perfective suffix '-his' shows different unlisted behaviors depending on the form and context after stem-final 'k'.
+    SK-kuksat-p101-1969 (kuksat):
+      -> form_2 and form_4: The perfective suffix '-his' is lost after stem-final 't'. (Unlisted pattern)
+      Note: Consistent loss of '-his' after stem-final 't'.
+    SK-pakskawarik-p109-2094 (pakskawarik):
+      -> Form 2: Stem-final 'k' + perfective '-his' results in 't' (pakskawarik + -his -> pakskawarit). This is an unlisted pattern.
+      -> Form 2: 'wit-' + 'ti-' -> 'witit'. Rule 19 (Alveolar Dissimilation: t+t -> ct) is not applied.
+      -> Form 4: Perfective suffix '-his' is not applied; instead, the absolutive vowel '-a' directly follows the stem (pakskawarik + -a -> pakskawarika).
+      -> Form 4: 'wit-' + 'ra-' -> 'witira'. Rule 13 (t-Laryngealization: t -> h / _ r) is not applied.
+      Note: This entry highlights several unlisted patterns for perfective and absolutive suffixation, and non-application of consonant rules for the 'wit-' prefix.
+    SK-rahkictapirat-p131-2567 (rahkictapirat):
+      -> Form 2: Stem-final 't' + perfective '-his' results in 't' (rahkictapirat + -his -> rahkictapirat). This implies '-his' is lost after 't', an unlisted pattern.
+      -> Form 2: 'wit-' + 'ti-' -> 'witit'. Rule 19 (Alveolar Dissimilation: t+t -> ct) is not applied.
+      -> Form 4: Perfective suffix '-his' is not applied; instead, the absolutive vowel '-a' directly follows the stem (rahkictapirat + -a -> rahkictapirata).
+      -> Form 4: 'wit-' + 'ra-' -> 'witira'. Rule 13 (t-Laryngealization: t -> h / _ r) is not applied.
+      Note: Similar to SK-pakskawarik, showing unlisted perfective/absolutive suffix patterns and non-application of consonant rules for 'wit-'.
+    SK-wakuriir-p176-3493 (wakuriir):
+      -> Form 2: 'ti-' + 'uur-' -> 'tuuh'. Rule 6 (u-Domination) applies for 't+uu -> tuu', but the 'r' of 'uur-' becomes 'h'. This 'r' to 'h' change in 'uur-' is an unlisted pattern.
+      -> Form 2: Stem-final 'r' (class 1-a) + perfective '-his' results in loss of 'r' and '-his', with the preceding vowel becoming long (wakuriir + -his -> wakurii). This is an unlisted pattern.
+      -> Form 4: 'irii-' + 'ra-' + 'uur-' -> 'iriruu'. Rule 6 (u-Domination) applies for 'a+uu -> uu'. The 'r' of 'uur-' becomes 'h' (iriruu + h). This 'r' to 'h' change in 'uur-' is an unlisted pattern.
+      -> Form 4: Stem-final 'r' (class 1-a) + absolutive '-a' results in 'r' insertion after the long vowel (wakuriir + -a -> wakuriira). This is an unlisted pattern.
+      Note: Illustrates the common (1-a) verb perfective/absolutive patterns and the 'uur-' preverb having an 'h' variant.
+    SK-huraarikiwir-p47-0785 (huraarikiwir):
+      -> Form 2: Stem-final 'r' (class 1-a) + perfective '-his' results in loss of 'r' and '-his', with the preceding vowel becoming long (huraarikiwir + -his -> huraarikiwi). This is an unlisted pattern.
+      -> Form 4: Stem-final 'r' (class 1-a) + absolutive '-a' results in 'r' insertion after the long vowel (huraarikiwir + -a -> huraarikiwira). This is an unlisted pattern.
+      Note: Consistent with (1-a) verb patterns for perfective and absolutive suffixation.
+    SK-acikstawiriir-p7-0060 (acikstawiriir):
+      -> Form 2: Stem-final 'r' (class 1-a) + perfective '-his' results in loss of 'r' and '-his', with the preceding vowel becoming long (acikstawiriir + -his -> acikstawirii). This is an unlisted pattern.
+      -> Form 4: Stem-final 'r' (class 1-a) + absolutive '-a' results in 'r' insertion after the long vowel (acikstawiriir + -a -> acikstawiriira). This is an unlisted pattern.
+      Note: Rule 6 (u-Domination) applies for 'ti-' + 'uur-' -> 'tuur' and 'irii-' + 'ra-' + 'uur-' -> 'iriruur'. The 'uur-' preverb does not show the 'h' variant here.
+    SK-ickipiir/pir-p58-0999 (ickipiir/pir):
+      -> Form 2: The stem 'ickipir' (assuming class 1-a) loses its final 'r', and the perfective suffix '-his' is replaced by 'iiʔ'. This is not consistent with Rule 3R (Vk]STEM + -his -> ks) or other listed perfective rules for consonant-final stems.
+      -> Form 4: The prefix contraction 'irii-' (ABS.SUB) + 'ra-' (ITER/PL) results in 'iriira-'. This violates Rule 7 (Contraction of i and a), which would yield 'irii-'.
+      -> Form 4: The vowel contraction 'a' (from 'iriira-') + 'i' (from 'ickipir') results in 'a' ('iriiraackipira'). This is an 'a'-domination similar to Rule 2R, but 'iriira-' is not one of the restricted prefixes.
+      Note: The headword 'ickipiir/pir' and verb class (1-a) are somewhat contradictory. Assuming 'ickipir' as the base stem for class 1-a, the perfective form 'ickipiiʔ' suggests a complex perfective formation or a vowel-final stem base.
+    SK-wakawaah-p175-3475 (wakawaah):
+      -> Unlisted pattern: ut- + w -> utp- (assimilation/coalescence)
+      -> Unlisted pattern: ti- + ut- -> tut- (vowel contraction i+u -> u, instead of uu by Rule 6)
+      -> Unlisted pattern: -his perfective suffix is lost after non-k stem in form_2
+      -> Unlisted pattern: ii- + ut- -> iriirut- (vowel contraction ii+u -> iiu, instead of uu by Rule 6 or ii by Rule 1R)
+      -> Unlisted pattern: -his perfective suffix becomes -a for class (1-i) verbs in form_4
+      -> Anomaly: Rule 4R (Stem-final Vocalic Reduplication) is not observed for this class (1-i) verb in form_2
+      Note: Form_2: Preverb ut- combines with w-initial stem (unlisted ut+w -> utp). ti-ut- contracts to tut- (unlisted i+u -> u). Final h of stem is lost (Rule 16). Perfective suffix -his is lost (unlisted). Form_4: Preverb ut- combines with w-initial stem (unlisted ut+w -> utp). irii-ut- contracts to iriirut- (unlisted ii+u -> iiu). Final h of stem is retained. Perfective suffix -his becomes -a (unlisted). Rule 4R is not applied.
+    SK-wicaksaar-p178-3527 (wicaksaar):
+      -> Unlisted pattern: -his perfective suffix is lost after non-k stem in form_2
+      -> Unlisted pattern: -his perfective suffix becomes -a for class (1-i) verbs in form_4
+      -> Anomaly: Rule 4R (Stem-final Vocalic Reduplication) is not observed for this class (1-i) verb in form_2
+      Note: Form_2: Final r of stem is lost (Rule 23). Perfective suffix -his is lost (unlisted). Form_4: irii-ra- degeminates r (Rule 20). Final r of stem is retained. Perfective suffix -his becomes -a (unlisted). Rule 4R is not applied.
+    SK-kaahikuut-p71-1272 (kaahikuut):
+      -> Non-application of Rule 20 (Consonant Degemination) for 'r' + 'r' in 'irii-' + 'ra-' -> 'iriira-'
+      Note: Form 2 is a direct concatenation of the prefix 'ti-' and the stem. Form 4 shows direct concatenation of 'irii-' and 'ra-' (violating Rule 20), and direct concatenation of the stem and the '-i' suffix.
+    SK-raqas-i-p114-2219 (raʔas-i):
+      -> Non-application of Rule 20 (Consonant Degemination) for 'r' + 'r' in 'irii-' + 'ra-' -> 'iriira-'
+      Note: Form 2: 'ti-' + 'uur-' contracts to 'tuur-' (Rule 6), then 'tuur-' + 'raʔas' contracts to 'turaʔas' (Rule 20). The final '-i' of the headword is dropped. Form 4: 'irii-' + 'ra-' concatenates to 'iriira-' (anomaly, Rule 20 not applied), then 'iriira-' + 'uur-' contracts to 'iriiruur-' (Rule 6), then 'iriiruur-' + 'raʔas' contracts to 'iriiruraʔas' (Rule 20). The '-i' suffix is added directly.
+    SK-takaquc-p156-3055 (takaʔuc):
+      -> Non-application of Rule 20 (Consonant Degemination) for 'r' + 'r' in 'irii-' + 'ra-' -> 'iriira-'
+      -> Unlisted pattern: Glottal stop (ʔ) loss before vowel contraction ('takaʔuc' + 'i' -> 'takuuci')
+      Note: Form 2 is a direct concatenation. Form 4: 'irii-' + 'ra-' concatenates to 'iriira-' (anomaly). The stem 'takaʔuc' + '-i' -> 'takuuci' involves the loss of the glottal stop (unlisted pattern) and the contraction of 'u' + 'i' to 'uu' (Rule 6).
+    SK-kiiriwat-p91-1721 (kiiriwat):
+      -> Non-application of Rule 20 (Consonant Degemination) for 'r' + 'r' in 'irii-' + 'ra-' -> 'iriira-'
+      -> Notational anomaly: Hyphenation in 'iriirakii-riwati'
+      Note: Form 2 is a direct concatenation. Form 4 shows direct concatenation of 'irii-' and 'ra-' (violating Rule 20), and the stem 'kiiriwat' + '-i' -> 'kiiriwati'. The hyphenation in the surface form is a notational anomaly.
+    SK-haaskiihkiiriwat-p36-0618 (haaskiihkiiriwat):
+      -> Non-application of Rule 20 (Consonant Degemination) for 'r' + 'r' in 'irii-' + 'ra-' -> 'iriira-'
+      Note: Both forms are direct concatenations, except for the 'irii-' + 'ra-' prefix combination in form 4, which violates Rule 20.
+    SK-piraarik-p113-2191 (piraarik):
+      -> Unlisted pattern: Class 2-i Perfective 'k -> t' in form 2 ('piraarik' -> 'piraarit')
+      -> Non-application of Rule 20 (Consonant Degemination) for 'r' + 'r' in 'irii-' + 'ra-' -> 'iriira-'
+      Note: Form 2 shows the unlisted 'k -> t' perfective rule for Class 2-i verbs. Form 4 shows direct concatenation of 'irii-' and 'ra-' (violating Rule 20), and direct concatenation of the stem and '-i'.
+    SK-taawat-p155-3016 (taawat):
+      -> Non-application of Rule 20 (Consonant Degemination) for 'r' + 'r' in 'irii-' + 'ra-' -> 'iriira-'
+      Note: Both forms are direct concatenations, except for the 'irii-' + 'ra-' prefix combination in form 4, which violates Rule 20.
+    SK-iikaarik-p408-3903 (iikaarik):
+      -> Unlisted pattern: Class 2-i Perfective 'k -> t' in form 2 ('iikaarik' -> 'iikaarit')
+      -> Non-application of Rule 20 (Consonant Degemination) for 'r' + 'r' in 'irii-' + 'ra-' -> 'iriira-'
+      -> Unlisted pattern: Vowel reduction 'ii' -> 'i' in 'iriiruut-' to 'iriruut-'
+      Note: Form 2: 'ti-' + 'ut-' contracts to 'tuut-' (Rule 6), then the stem-final 'k' changes to 't' (unlisted perfective rule). Form 4: 'irii-' + 'ra-' concatenates to 'iriira-' (anomaly), then 'iriira-' + 'ut-' contracts to 'iriiruut-' (Rule 6). The final form 'iriruutiikaariki' shows a reduction of 'ii' to 'i' in 'iriiruut-' to 'iriruut-', which is an unlisted pattern.
+    SK-ihtataarik-p59-1033 (ihtataarik):
+      -> The perfective suffix -his is not explicitly listed as causing k -> t. Rule 3R (Vk]STEM + -his -> ks) is for k-final stems, but the outcome here is -t, not -ks. This suggests an unlisted rule for k + his -> t.
+      Note: Form 2: ti- + ihtataarik + his -> tiihtataarit. The initial i of the stem is long, suggesting a contraction with ti-. However, Rule 7 (i+a -> ii) or Rule 5 (Vi+Vi -> ViVi) don't directly apply here. It's likely the stem is underlyingly `iihtataarik` or `ti-` contracts with `i` to `ii`. The `k` of the stem becomes `t` in the perfective form, and the `s` of `-his` is lost. This is consistent with Rule 21 (r-Stopping) if `k` is treated as an obstruent and `s` is lost, or an unlisted rule `k + his -> t`. Form 4: irii- + ra- + ihtataarik + his -> iriiraahtataariki. The `k` becomes `t` and `s` is lost. The final `i` is an anomaly, as the perfective suffix usually results in a consonant or null. The `aa` in `iriiraa` suggests `ra-` + `i` -> `raa` (Rule 7: a+i -> ii, but here a+i -> aa, which is an anomaly or a specific rule for `ra-` + `i`).
+    SK-piciistaquk-p111-2161 (piciistaʔuk):
+      -> Rule 3R (-his Perfective Reduction) is not applied; instead, the stem-final 'k' is lost, and 'aʔu' becomes 'uʔ' in form_2, and 'k' is lost in form_4.
+      Note: Form_2: 'ti-' + 'piciistaʔuk' + PERF -> 'tipiciistuʔ'. The 'aʔuk' sequence transforms to 'uʔ'. Form_4: 'irii-' + 'ra-' + 'piciistaʔuk' + PERF -> 'iriirapiciistaʔu'. The stem-final 'k' is lost. Both perfective forms show unlisted patterns for the perfective suffix.
+    SK-kickatuustaquk-p86-1627 (kickatuustaʔuk):
+      -> Rule 3R (-his Perfective Reduction) is not applied; instead, the stem-final 'k' is lost, and 'aʔu' becomes 'uʔ' in form_2, and 'k' is lost in form_4.
+      Note: Form_2: 'ti-' + 'kickatuustaʔuk' + PERF -> 'tikickatuustuʔ'. The 'aʔuk' sequence transforms to 'uʔ'. Form_4: 'irii-' + 'ra-' + 'kickatuustaʔuk' + PERF -> 'iriirakickatuustaʔu'. The stem-final 'k' is lost. Both perfective forms show unlisted patterns for the perfective suffix.
+    SK-huuka-p49-0839 (huuka):
+      -> Rule 3R (-his Perfective Reduction) is not applied; instead, 'ʔ' is suffixed in form_2 and lost in form_4.
+      -> The application of Rule 2R (Dominant a) in 'ti-' + 'huuka' -> 'tahuuka' implies an unstated 'a'-initial morpheme or that 'huuka' is an 'a'-dominant stem.
+      Note: Form_2: 'ti-' + (assumed 'a' preverb) + 'huuka' + PERF -> 'tahuukaʔ'. Rule 2R (i+a -> a) applies. 'ʔ' is suffixed as perfective. Form_4: 'irii-' + 'ra-' + 'huuka' + PERF -> 'iriirahuuka'. The 'ʔ' perfective suffix is lost in form_4. Derivation is consistent with assumed 'a' preverb and unlisted perfective suffix patterns.
+    SK-rariihkaraquk-p136-2692 (rariihkaraʔuk):
+      -> Rule 3R (-his Perfective Reduction) is not applied; instead, the stem-final 'k' is lost, and 'aʔu' becomes 'uʔ' in form_2, and 'k' is lost in form_4.
+      Note: Form_2: 'ti-' + 'uur-' + 'rariihkaraʔuk' + PERF -> 'tuur-' (Rule 6) + 'rariihkaraʔuk' -> 'turariihkaraʔuk' (Rule 20) -> 'turariihkaruʔ'. The 'aʔuk' sequence transforms to 'uʔ'. Form_4: 'irii-' + 'ra-' + 'uur-' + 'rariihkaraʔuk' + PERF -> 'iriira-' + 'uur-' -> 'iriiruur-' (Rule 6) -> 'iriirur-' (Rule 20) + 'rariihkaraʔuk' -> 'iriirurariihkaraʔu'. The stem-final 'k' is lost. Derivation is consistent with listed rules and unlisted perfective suffix patterns.
+    SK-kuuwaar-p453-4019 (kuuwaar):
+      -> Rule 3R (-his Perfective Reduction) is not applied; instead, the stem-final 'r' is lost, and 'uʔ' is suffixed in form_2, and 'u' is suffixed in form_4.
+      -> Vowel shortening 'uu' -> 'u' in 'kuuwaar' -> 'kuuwaru' (form_4) is an unlisted pattern.
+      Note: Form_2: 'ti-' + 'kuuwaar' + PERF -> 'tikuuwaaruʔ'. The stem-final 'r' is lost, and 'uʔ' is suffixed. Form_4: 'irii-' + 'ra-' + 'kuuwaar' + PERF -> 'iriirakuuwaru'. The stem-final 'r' is lost, 'u' is suffixed, and 'uu' shortens to 'u'. Both perfective forms show unlisted patterns.
+    SK-kickaqas-p86-1604 (kickaʔas):
+      -> Rule 3R (-his Perfective Reduction) is not applied; the stem remains unchanged, implying a null perfective suffix.
+      -> Rule 9R (Final-s Loss) is not applied, as the final 's' is retained. This suggests the rule is restricted or the perfective suffix is not truly null.
+      Note: Form_2: 'ti-' + 'kickaʔas' + PERF -> 'tikickaʔas'. Form_4: 'irii-' + 'ra-' + 'kickaʔas' + PERF -> 'iriirakickaʔas'. The stem is unchanged in both forms, indicating a null perfective suffix. The retention of 's' is an anomaly if the suffix is null and 's' is word-final.
+    SK-awuu-p26-0355 (awuu):
+      -> Rule 3R (-his Perfective Reduction) is not applied; instead, 'ʔ' is suffixed in form_2 and lost in form_4.
+      Note: Form_2: 'ti-' + 'awuu' + PERF -> 'tiiwuu' (Rule 7: i+a -> ii) + 'ʔ' -> 'tiiwuuʔ'. Form_4: 'irii-' + 'ra-' + 'awuu' + PERF -> 'iriiraawuu' (Rule 5: a+a -> aa). The 'ʔ' perfective suffix is lost in form_4. Derivation is consistent with listed rules and unlisted perfective suffix patterns.
+    SK-itka-p68-1218 (itka):
+      -> Rule 3R (-his Perfective Reduction) is not applied; the stem remains unchanged, implying a null perfective suffix.
+      -> Rule 5 (Same-vowel Contraction) is not applied in 'ti-' + 'itka' -> 'titka'; the 'i' of 'itka' is lost instead of contracting to 'ii'.
+      -> Rule 7 (Contraction of i and a) is contradicted in 'ra-' + 'itka' -> 'raatka'; 'a+i' contracts to 'aa' instead of 'ii'.
+      Note: Form_2: 'ti-' + 'itka' + PERF -> 'titka'. The initial 'i' of the stem is lost. Form_4: 'irii-' + 'ra-' + 'itka' + PERF -> 'iriiraatka'. The contraction 'a+i' -> 'aa' contradicts Rule 7. The perfective suffix appears null in both forms.
+    SK-ukuk-p171-3380 (ukuk):
+      -> Rule 3R (-his Perfective Reduction) is not applied; instead, the stem-final 'k' is replaced by 't'.
+      -> Rule 6 (u-Domination) is not applied in 'ti-' + 'ukuk' -> 'tiʔukut'; instead, the initial 'u' of the stem becomes 'ʔu'.
+      -> Rule 6 (u-Domination) is not applied in 'ra-' + 'ukuk' -> 'rukut'; instead, 'a+u' contracts to 'u'.
+      Note: Form_2: 'ti-' + 'ukuk' + PERF -> 'tiʔukut'. The initial 'u' of the stem becomes 'ʔu', and 'k' is replaced by 't'. Form_4: 'irii-' + 'ra-' + 'ukuk' + PERF -> 'iriirukut'. The 'a' of 'ra-' and 'u' of 'ukuk' contract to 'u', and 'k' is replaced by 't'. Both forms show unlisted patterns and non-application of Rule 6.
+    SK-rahuritik-p133-2590 (rahuritik):
+      -> Rule 3R (-his Perfective Reduction) is not applied; instead, the stem-final 'k' is replaced by 't'.
+      Note: Form_2: 'ti-' + 'rahuritik' + PERF -> 'tirahuritit'. The stem-final 'k' is replaced by 't'. Form_4: 'irii-' + 'ra-' + 'rahuritik' + PERF -> 'iriirarahuritit'. The stem-final 'k' is replaced by 't'. Derivation is consistent with unlisted perfective suffix patterns.
