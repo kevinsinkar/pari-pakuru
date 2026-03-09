@@ -1,0 +1,170 @@
+======================================================================
+PHASE 2.2 -- BB PRONUNCIATION vs PARKS PHONETIC FORM
+Generated: 2026-03-08 20:53:35
+======================================================================
+
+BACKGROUND
+----------------------------------------
+The Blue Book uses parenthetical pronunciation guides with hyphenated
+syllables. OCR captured stress-dotted vowels as consonant+d sequences
+  e.g. 'rd' = tapped-r + stressed-a, 'pd' = p + stressed-a.
+
+Parks phonetic_form is IPA in square brackets with syllable markers:
+  e.g., [ra-kIs] for rakis (wood). This field has been audited and
+  verified multiple times and is the ground truth for pronunciation.
+
+Normalization applied for comparison:
+  IPA reduced vowels:  I->i, U->u, @->a  (allophonic variants)
+  IPA accent marks:    a/i/u (stripped)   (stress is suprasegmental)
+  IPA affricate:       c->c               (already base form)
+  BB affricate:        ts->c              (BB practical orthography)
+  BB glottal:          '->glottal stop    (BB apostrophe = IPA glottal)
+  Long vowel folding:  aa->a, ii->i, uu->u (BB shortens long vowels)
+
+SUMMARY
+----------------------------------------
+Total BB pronunciation guides found: 12  (lesson pages 29+)
+Guides matched to dictionary entry:  7
+With Parks phonetic_form:            7
+
+Comparison results:
+  Exact match (after normalization):    4
+  Exact after long-vowel folding:       3
+  Close / systematic correspondence:    0
+  Different:                            0
+  No phonetic_form in DB:               5
+
+DETAIL -- ALL PRONUNCIATION PAIRS
+----------------------------------------
+
+[-] p.35  BB word: "Pari'"
+         BB raw:      (pd-ri ')
+         BB clean:    pa-ri '
+         Parks hw:    (no match)
+         phonetic:    (none)
+         Gloss:       Pawnee
+         Notes:       No phonetic_form in DB
+
+[~=] p.35  BB word: "hitu '"
+         BB raw:      (hi-tu ')
+         BB normed:   hi-tuʔ
+         Parks hw:    hiituʔ
+         phonetic:    [hií-tʊʔ]
+         IPA normed:  hii-tuʔ
+         Gloss:       feather
+         Notes:       BB shortens long vowels: IPA "hii" -> BB "hi"
+
+[~=] p.35  BB word: "raku'"
+         BB raw:      (ra-ku')
+         BB normed:   ra-kuʔ
+         Parks hw:    raakuʔ
+         phonetic:    [raá-kʊʔ]
+         IPA normed:  raa-kuʔ
+         Gloss:       box
+         Notes:       BB shortens long vowels: IPA "raa" -> BB "ra"
+
+[~=] p.35  BB word: "kitsu '"
+         BB raw:      (ki-tsu ')
+         BB normed:   ki-cuʔ
+         Parks hw:    kiicuʔ
+         phonetic:    [kií-čʊʔ]
+         IPA normed:  kii-cuʔ
+         Gloss:       liquid
+         Notes:       BB shortens long vowels: IPA "kii" -> BB "ki"
+
+[=] p.35  BB word: 'rakis'
+         BB raw:      (rd-kis)
+         BB clean:    ra-kis
+         BB normed:   ra-kis
+         Parks hw:    rakis
+         phonetic:    [rà-kɪs]
+         IPA normed:  ra-kis
+         Gloss:       wood
+         Notes:       Exact match after normalization
+
+[=] p.35  BB word: 'kiriks'
+         BB raw:      (ki-riks)
+         BB normed:   ki-riks
+         Parks hw:    kiriks
+         phonetic:    [kí-rɪks]
+         IPA normed:  ki-riks
+         Gloss:       bead
+         Notes:       Exact match after normalization
+
+[=] p.35  BB word: 'nawa'
+         BB raw:      (rd-wa)
+         BB clean:    ra-wa
+         BB normed:   ra-wa
+         Parks hw:    rawa, nawa
+         phonetic:    [rà-wə,nà-wə]
+         IPA normed:  ra-wa
+         Gloss:       now
+         Notes:       Exact match after normalization
+
+[=] p.35  BB word: 'riwit'
+         BB raw:      (ri-wit)
+         BB normed:   ri-wit
+         Parks hw:    riwit
+         phonetic:    [rí-wɪt]
+         IPA normed:  ri-wit
+         Gloss:       skunk
+         Notes:       Exact match after normalization
+
+[-] p.36  BB word: '(unknown)'
+         BB raw:      (tit-ska-kd-to-sa)
+         BB clean:    tit-ska-ka-to-sa
+         Parks hw:    (no match)
+         phonetic:    (none)
+         Gloss:       *When two different vowels come together without a space bet-
+         Notes:       No phonetic_form in DB
+
+[-] p.56  BB word: '(unknown)'
+         BB raw:      (tu-td-ri')
+         BB clean:    tu-ta-ri'
+         Parks hw:    (no match)
+         phonetic:    (none)
+         Gloss:       ti + ut + ari it is + for him + becoming
+         Notes:       No phonetic_form in DB
+
+[-] p.58  BB word: '(unknown)'
+         BB raw:      (ti-rah-wha-ri')
+         Parks hw:    (no match)
+         phonetic:    (none)
+         Gloss:       (we) Tat•kikat. I am crying.
+         Notes:       No phonetic_form in DB
+
+[-] p.104  BB word: 'tiku•kskirawa'
+         BB raw:      (ti-kuks-ki-ra-wa )
+         BB clean:    ti-kuks-ki-ra-wa
+         Parks hw:    (no match)
+         phonetic:    (none)
+         Gloss:       tatutsiks•a•wahri'
+         Notes:       No phonetic_form in DB
+
+
+UNMATCHED BB PRONUNCIATION GUIDES
+----------------------------------------
+(BB word could not be matched to a Parks dictionary entry)
+
+  p. 35  "Pari'"                         (pd-ri ')
+         cleaned: pa-ri '
+         gloss: Pawnee
+  p. 36  '(word unknown)'                (tit-ska-kd-to-sa)
+         cleaned: tit-ska-ka-to-sa
+         gloss: *When two different vowels come together without a space bet-
+  p. 56  '(word unknown)'                (tu-td-ri')
+         cleaned: tu-ta-ri'
+         gloss: ti + ut + ari it is + for him + becoming
+  p. 58  '(word unknown)'                (ti-rah-wha-ri')
+         gloss: (we) Tat•kikat. I am crying.
+  p.104  'tiku•kskirawa'                 (ti-kuks-ki-ra-wa )
+         cleaned: ti-kuks-ki-ra-wa
+         gloss: tatutsiks•a•wahri'
+
+LEGEND
+----------------------------------------
+[=]  exact match after normalization (reduced vowels, accents, affricates)
+[~=] exact match after long-vowel folding (BB shortens long vowels)
+[~]  close / systematic correspondence (consonant skeleton matches, etc.)
+[!]  different -- may indicate dialect variant or orthographic mismatch
+[-]  no phonetic_form available in DB for this entry

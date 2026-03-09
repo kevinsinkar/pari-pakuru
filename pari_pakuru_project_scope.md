@@ -287,14 +287,19 @@ Tasks:
 - Split into 4 chunks: p111-116 (35 entries), p117-122 (18 entries), p123-130 (0 — glossary only)
 - 58 total items, 33 matched (57%)
 
-**Optional follow-up: Pronunciation comparison (`scripts/bb_pronunciation_compare.py`):**
+**Follow-up: Pronunciation comparison (`scripts/bb_pronunciation_compare.py`):**
 - Extracts BB parenthetical pronunciation guides from raw text (12 found in lesson pages 29+)
 - OCR normalization: consonant+'d' → consonant+'a' (stress-dotted vowel artifact)
 - 3-pass parser: inline `word (pron) gloss`, column-block (table format), preceding-line
 - Long-vowel-folded matching + gloss-based fallback via `english_index`
-- 7 of 12 guides matched to Parks dictionary entries; all show "close/systematic" correspondence
-- Key finding: Parks `DUH` = BB `ra` (tapped r + short a); BB shortens long vowels (BB `hitu'` = Parks `hiituʔ`)
-- Report: `reports/phase_2_2_pronunciation.txt`
+- Comma-separated headword variant indexing (e.g., `rawa, nawa` indexed as both `rawa` and `nawa`)
+- Compares BB guides against verified IPA `phonetic_form` (not `simplified_pronunciation`)
+- Normalization for comparison: IPA reduced vowels (ɪ→i, ʊ→u, ə→a), accent marks stripped, BB ts→c, BB '→ʔ
+- 7 of 12 guides matched to Parks dictionary entries
+- Results: 4 exact matches, 3 exact after long-vowel folding, 0 different
+- Key finding: BB pronunciation guides map directly to IPA phonetic forms after normalization; the only systematic difference is BB shortening long vowels (BB `hi` = IPA `hii`, BB `ra` = IPA `raa`, BB `ki` = IPA `kii`)
+- 5 unmatched guides are verb constructions / multi-word forms without standalone dictionary entries
+- Report: `reports/phase_2_2_pronunciation_phonetic.txt`
 
 ### 🔲 Phase 2.3 — Sound Change Rule Engine
 **Priority:** Medium-High

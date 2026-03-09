@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-Phase 2.2 (Optional Follow-up) -- BB Pronunciation Comparison
-=============================================================
+Phase 2.2 (Follow-up) -- BB Pronunciation vs Parks Phonetic Form
+=================================================================
 Extracts pronunciation guides from the Blue Book raw text, normalizes OCR
-artifacts, matches words to Parks dictionary entries, and compares the two
-pronunciation systems side-by-side.
+artifacts, matches words to Parks dictionary entries, and compares the BB
+pronunciation guides against the verified IPA phonetic_form field.
 
 Background
 ----------
@@ -14,15 +14,16 @@ syllable breaks. OCR artifacts: stressed vowels (written with a dot accent)
 are captured by OCR as the consonant preceding 'd' (e.g., 'rd' = r + stressed-a,
 'pd' = p + stressed-a, 'kd' = k + stressed-a).
 
-The Parks dictionary stores 'simplified_pronunciation' -- an English-phonemic
-approximation system (e.g., "DUH-kihs" for 'rakis'). These are different
-systems and not trivially comparable, but side-by-side inspection reveals
-patterns:
-  - Parks 'DUH' ~ BB 'ra' (tapped r + short a)
-  - Parks 'dih' ~ BB 'ri'
-  - Parks 'kihs' ~ BB 'kis'
-  - Parks long vowel: 'ooh' ~ BB 'uu'
-  - Parks glottal: "uh-oh" ~ BB apostrophe '
+The Parks dictionary phonetic_form field stores IPA transcriptions in square
+brackets with syllable dots: e.g., [ra-kIs] for 'rakis'. This field has been
+audited and verified multiple times and is the ground truth for pronunciation.
+
+BB guides map directly to IPA phonetic forms with known systematic shifts:
+  - BB shortens long vowels: BB 'i' can correspond to IPA 'ii'
+  - BB 'ts' = IPA 'c' or 'ch' (affricate)
+  - BB apostrophe ' = IPA glottal stop
+  - IPA reduced vowels (I, U, @) correspond to BB full vowels (i, u, a)
+  - Syllable boundaries: BB '-' corresponds to IPA '-'
 
 Layout patterns in the Blue Book text
 --------------------------------------
@@ -305,18 +306,30 @@ def _fold_long_vowels(s: str) -> str:
 
 
 def build_lookup_index(conn: sqlite3.Connection) -> dict:
-    """Build {key: (entry_id, headword, simplified_pronunciation)} lookup map."""
+    """Build {key: (entry_id, headword, phonetic_form)} lookup map."""
     cur = conn.cursor()
-    cur.execute("SELECT entry_id, headword, normalized_form, simplified_pronunciation FROM lexical_entries")
+    cur.execute("SELECT entry_id, headword, normalized_form, phonetic_form FROM lexical_entries")
     index = {}
-    for eid, hw, nf, sp in cur.fetchall():
+    for eid, hw, nf, pf in cur.fetchall():
         if nf:
             key = nf.lower().strip()
             if key not in index:
-                index[key] = (eid, hw, sp)
+                index[key] = (eid, hw, pf)
+            # Index individual variants from comma-separated forms
+            if ',' in nf:
+                for variant in nf.split(','):
+                    vk = variant.strip().lower()
+                    if vk and vk not in index:
+                        index[vk] = (eid, hw, pf)
         hw_key = normalize_for_lookup(hw or '')
         if hw_key and hw_key not in index:
-            index[hw_key] = (eid, hw, sp)
+            index[hw_key] = (eid, hw, pf)
+        # Index individual headword variants too
+        if hw and ',' in hw:
+            for variant in hw.split(','):
+                vk = normalize_for_lookup(variant.strip())
+                if vk and vk not in index:
+                    index[vk] = (eid, hw, pf)
     # Also add long-vowel-folded keys for fuzzy matching
     # This lets BB 'hitu' match Parks 'hiitu', BB 'raku' match 'raaku', etc.
     folded = {}
@@ -329,10 +342,10 @@ def build_lookup_index(conn: sqlite3.Connection) -> dict:
 
 
 def build_gloss_index(conn: sqlite3.Connection) -> dict:
-    """Build {english_gloss_word: (entry_id, headword, simplified_pronunciation)} from english_index."""
+    """Build {english_gloss_word: (entry_id, headword, phonetic_form)} from english_index."""
     cur = conn.cursor()
     cur.execute("""
-        SELECT ei.english_word, ei.skiri_term, le.entry_id, le.headword, le.simplified_pronunciation
+        SELECT ei.english_word, ei.skiri_term, le.entry_id, le.headword, le.phonetic_form
         FROM english_index ei
         LEFT JOIN lexical_entries le ON (
             le.headword = ei.skiri_term OR le.normalized_form = ei.skiri_term
@@ -340,11 +353,11 @@ def build_gloss_index(conn: sqlite3.Connection) -> dict:
         WHERE ei.skiri_term IS NOT NULL
     """)
     gloss_idx = {}
-    for ew, skiri, eid, hw, sp in cur.fetchall():
+    for ew, skiri, eid, hw, pf in cur.fetchall():
         if ew and eid:
             key = ew.lower().strip()
             if key not in gloss_idx:
-                gloss_idx[key] = (eid, hw, sp)
+                gloss_idx[key] = (eid, hw, pf)
     return gloss_idx
 
 
@@ -383,52 +396,177 @@ def match_pair_to_dict(pair: dict, index: dict, gloss_index: dict = None):
 
 
 # ---------------------------------------------------------------------------
+# Normalize IPA phonetic_form for comparison
+# ---------------------------------------------------------------------------
+
+# IPA reduced vowels -> base vowels (these are allophonic in Pawnee)
+_IPA_VOWEL_MAP = {
+    '\u026a': 'i',   # ɪ -> i
+    '\u028a': 'u',   # ʊ -> u
+    '\u0259': 'a',   # ə -> a
+}
+
+# Accent marks -> base vowels (stress is suprasegmental, not phonemic for comparison)
+_ACCENT_MAP = {
+    '\u00e1': 'a', '\u00e0': 'a',  # á, à -> a
+    '\u00ed': 'i', '\u00ec': 'i',  # í, ì -> i
+    '\u00fa': 'u', '\u00f9': 'u',  # ú, ù -> u
+}
+
+
+def normalize_ipa_for_compare(phonetic_form: str) -> tuple:
+    """
+    Normalize IPA phonetic_form to a comparable representation.
+
+    Returns (syllables: list[str], flat: str) where each syllable is normalized
+    to base Pawnee consonants + vowels, and flat is the joined form.
+
+    Mapping: strip brackets/bullets, ɪ->i, ʊ->u, ə->a, accents stripped,
+             č->c, length mark ː applied, ʔ kept.
+    """
+    if not phonetic_form:
+        return [], ''
+    s = phonetic_form.strip()
+    # Strip enclosing brackets and syllable-dot markers
+    s = s.strip('[]')
+    s = s.replace('\u2022', '')  # • syllable dots
+    s = s.replace('\u2013', '')  # – stem boundary
+    s = s.strip()
+    # Handle comma-separated variants (e.g., "[rə,raa]") — take first form
+    if ',' in s:
+        s = s.split(',')[0].strip()
+
+    # Map IPA reduced vowels to base
+    for ipa_char, base in _IPA_VOWEL_MAP.items():
+        s = s.replace(ipa_char, base)
+    # Strip accent marks
+    for acc, base in _ACCENT_MAP.items():
+        s = s.replace(acc, base)
+    # Normalize affricate: č -> c
+    s = s.replace('\u010d', 'c')
+    # Length mark
+    s = s.replace('\u02d0', ':')  # ː
+
+    # Split into syllables on hyphens
+    syllables = [syl.strip() for syl in s.split('-') if syl.strip()]
+    flat = ''.join(syllables)
+    return syllables, flat
+
+
+def normalize_bb_for_compare(bb_clean: str) -> tuple:
+    """
+    Normalize BB cleaned pronunciation to a comparable representation.
+
+    Returns (syllables: list[str], flat: str).
+
+    Mapping: ts->c (affricate), apostrophe->'  (glottal stop as ʔ),
+             strip spaces.
+    """
+    if not bb_clean:
+        return [], ''
+    s = bb_clean.lower().strip()
+    # BB 'ts' = Parks 'c' (affricate)
+    s = s.replace('ts', 'c')
+    # BB apostrophe = IPA glottal stop
+    s = s.replace("'", '\u0294')
+    # Collapse spaces (BB sometimes has "tu '" which should be "tuʔ")
+    s = re.sub(r'\s+', '', s)
+
+    syllables = [syl.strip() for syl in s.split('-') if syl.strip()]
+    flat = ''.join(syllables)
+    return syllables, flat
+
+
+# ---------------------------------------------------------------------------
 # Compare two pronunciation strings
 # ---------------------------------------------------------------------------
 
-def compare_pronunciations(bb_clean: str, parks_sp) -> dict:
+def compare_pronunciations(bb_clean: str, phonetic_form) -> dict:
     """
-    Compare BB cleaned pronunciation with Parks simplified_pronunciation.
+    Compare BB cleaned pronunciation with Parks IPA phonetic_form.
 
-    Returns {'agreement': 'exact'|'close'|'different'|'no_parks', 'notes': [...]}
+    Returns {'agreement': 'exact'|'close'|'different'|'no_phonetic',
+             'notes': [...],
+             'bb_normalized': str, 'ipa_normalized': str,
+             'syll_detail': list}
     """
-    if not parks_sp:
-        return {'agreement': 'no_parks', 'notes': ['No Parks simplified_pronunciation available']}
+    if not phonetic_form:
+        return {'agreement': 'no_phonetic', 'notes': ['No phonetic_form in DB'],
+                'bb_normalized': '', 'ipa_normalized': '', 'syll_detail': []}
 
-    bb_bare = bare_form(bb_clean)
-    parks_bare = bare_form(parks_sp)
-
-    if bb_bare == parks_bare:
-        return {'agreement': 'exact', 'notes': ['Exact match after normalization']}
+    bb_sylls, bb_flat = normalize_bb_for_compare(bb_clean)
+    ipa_sylls, ipa_flat = normalize_ipa_for_compare(phonetic_form)
 
     notes = []
-    bb_sylls = [s for s in bb_clean.split('-') if s]
-    parks_sylls = [s for s in parks_sp.split('-') if s]
+    syll_detail = []
 
-    if len(bb_sylls) == len(parks_sylls):
+    # Exact match after full normalization
+    if bb_flat == ipa_flat:
+        return {'agreement': 'exact',
+                'notes': ['Exact match after normalization'],
+                'bb_normalized': '-'.join(bb_sylls),
+                'ipa_normalized': '-'.join(ipa_sylls),
+                'syll_detail': []}
+
+    # Long-vowel-folded match: BB shortens long vowels
+    bb_folded = _fold_long_vowels(bb_flat)
+    ipa_folded = _fold_long_vowels(ipa_flat)
+    if bb_folded == ipa_folded:
+        # Identify which vowels were shortened
+        long_diffs = []
+        for ipa_s, bb_s in zip(ipa_sylls, bb_sylls):
+            ipa_sf = _fold_long_vowels(ipa_s)
+            if ipa_sf == bb_s and ipa_s != bb_s:
+                long_diffs.append('IPA "%s" -> BB "%s"' % (ipa_s, bb_s))
+        if long_diffs:
+            notes.append('BB shortens long vowels: %s' % '; '.join(long_diffs))
+        return {'agreement': 'exact_folded',
+                'notes': notes or ['Exact match after folding long vowels'],
+                'bb_normalized': '-'.join(bb_sylls),
+                'ipa_normalized': '-'.join(ipa_sylls),
+                'syll_detail': []}
+
+    # Syllable-by-syllable comparison
+    if len(bb_sylls) == len(ipa_sylls):
         notes.append('Same syllable count (%d)' % len(bb_sylls))
+        for i, (bb_s, ipa_s) in enumerate(zip(bb_sylls, ipa_sylls)):
+            if bb_s == ipa_s:
+                syll_detail.append('  syll %d: "%s" = "%s" [match]' % (i + 1, bb_s, ipa_s))
+            elif _fold_long_vowels(bb_s) == _fold_long_vowels(ipa_s):
+                syll_detail.append('  syll %d: BB "%s" ~ IPA "%s" [long vowel]' % (i + 1, bb_s, ipa_s))
+            else:
+                syll_detail.append('  syll %d: BB "%s" != IPA "%s"' % (i + 1, bb_s, ipa_s))
     else:
-        notes.append('Syllable count: BB=%d, Parks=%d' % (len(bb_sylls), len(parks_sylls)))
+        notes.append('Syllable count: BB=%d, IPA=%d' % (len(bb_sylls), len(ipa_sylls)))
 
-    parks_lower = parks_sp.lower()
-    if 'duh' in parks_lower and bb_clean.startswith('r'):
-        notes.append("Parks 'DUH' = BB 'ra' (tapped r + short a)")
-    if 'dih' in parks_lower and 'ri' in bb_clean:
-        notes.append("Parks 'dih' = BB 'ri' (tapped r + i)")
-    if 'ooh' in parks_lower and ('uu' in bb_clean or "u'" in bb_clean):
-        notes.append("Parks 'ooh' = BB long-u")
-    if 'ee' in parks_lower and 'ii' in bb_clean:
-        notes.append("Parks 'ee' = BB long-i (ii)")
+    # Detect specific systematic patterns
+    if bb_folded == ipa_folded:
+        notes.append('Match after long-vowel folding')
 
-    # Character-set overlap heuristic
-    bb_set = set(bb_bare)
-    parks_set = set(parks_bare)
-    overlap = len(bb_set & parks_set) / max(len(bb_set | parks_set), 1)
-    if overlap < 0.4 and not notes:
-        notes.append('Low character overlap (%.0f%%) -- likely different notation conventions' % (overlap * 100))
+    # Consonant skeleton comparison (vowels removed)
+    bb_cons = re.sub(r'[aiuAIU\u0294]', '', bb_flat)
+    ipa_cons = re.sub(r'[aiuAIU\u0294]', '', ipa_flat)
+    if bb_cons == ipa_cons:
+        notes.append('Consonant skeletons match: %s' % bb_cons)
+    elif bb_cons and ipa_cons:
+        # Check if close
+        if bb_cons in ipa_cons or ipa_cons in bb_cons:
+            notes.append('Consonant skeletons overlap: BB=%s, IPA=%s' % (bb_cons, ipa_cons))
 
-    agreement = 'close' if overlap > 0.5 or notes else 'different'
-    return {'agreement': agreement, 'notes': notes}
+    # Character overlap for agreement classification
+    bb_set = set(bb_flat)
+    ipa_set = set(ipa_flat)
+    overlap = len(bb_set & ipa_set) / max(len(bb_set | ipa_set), 1)
+
+    if syll_detail or overlap > 0.5 or len(notes) > 1:
+        agreement = 'close'
+    else:
+        agreement = 'different'
+
+    return {'agreement': agreement, 'notes': notes,
+            'bb_normalized': '-'.join(bb_sylls),
+            'ipa_normalized': '-'.join(ipa_sylls),
+            'syll_detail': syll_detail}
 
 
 # ---------------------------------------------------------------------------
@@ -438,15 +576,15 @@ def compare_pronunciations(bb_clean: str, parks_sp) -> dict:
 def generate_report(pairs: list, matched_pairs: list) -> str:
     """Build and return pronunciation comparison report text."""
     n_matched = sum(1 for p in matched_pairs if p['entry_id'])
-    n_with_parks = sum(1 for p in matched_pairs if p['parks_sp'])
-    n_exact = sum(1 for p in matched_pairs if p.get('comparison', {}).get('agreement') == 'exact')
-    n_close = sum(1 for p in matched_pairs if p.get('comparison', {}).get('agreement') == 'close')
-    n_diff = sum(1 for p in matched_pairs if p.get('comparison', {}).get('agreement') == 'different')
-    n_noparks = sum(1 for p in matched_pairs if p.get('comparison', {}).get('agreement') == 'no_parks')
+    n_with_pf = sum(1 for p in matched_pairs if p['phonetic_form'])
+    agreements = {}
+    for p in matched_pairs:
+        ag = p.get('comparison', {}).get('agreement', 'no_phonetic')
+        agreements[ag] = agreements.get(ag, 0) + 1
 
     lines = [
         '=' * 70,
-        'PHASE 2.2 -- BLUE BOOK PRONUNCIATION COMPARISON',
+        'PHASE 2.2 -- BB PRONUNCIATION vs PARKS PHONETIC FORM',
         'Generated: ' + datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
         '=' * 70,
         '',
@@ -456,35 +594,38 @@ def generate_report(pairs: list, matched_pairs: list) -> str:
         'syllables. OCR captured stress-dotted vowels as consonant+d sequences',
         "  e.g. 'rd' = tapped-r + stressed-a, 'pd' = p + stressed-a.",
         '',
-        'Parks dictionary uses an English-phonemic approximation system:',
-        '  "DUH-kihs" for rakis (wood). These are different notation systems.',
+        'Parks phonetic_form is IPA in square brackets with syllable markers:',
+        '  e.g., [ra-kIs] for rakis (wood). This field has been audited and',
+        '  verified multiple times and is the ground truth for pronunciation.',
         '',
-        'Known systematic correspondences:',
-        '  Parks "DUH"  ~ BB "ra"  (tapped r + short a)',
-        '  Parks "dih"  ~ BB "ri"  (tapped r + i)',
-        '  Parks "ooh"  ~ BB "uu"  (long u)',
-        '  Parks "ee"   ~ BB "ii"  (long i)',
-        '  Parks "ih"   ~ BB "i"   (short i)',
-        '  Parks "uh"   ~ BB "a"   (short a / schwa)',
+        'Normalization applied for comparison:',
+        '  IPA reduced vowels:  I->i, U->u, @->a  (allophonic variants)',
+        '  IPA accent marks:    a/i/u (stripped)   (stress is suprasegmental)',
+        '  IPA affricate:       c->c               (already base form)',
+        '  BB affricate:        ts->c              (BB practical orthography)',
+        "  BB glottal:          '->glottal stop    (BB apostrophe = IPA glottal)",
+        '  Long vowel folding:  aa->a, ii->i, uu->u (BB shortens long vowels)',
         '',
         'SUMMARY',
         '-' * 40,
         'Total BB pronunciation guides found: %d  (lesson pages 29+)' % len(pairs),
         'Guides matched to dictionary entry:  %d' % n_matched,
-        'With Parks simplified_pronunciation: %d' % n_with_parks,
+        'With Parks phonetic_form:            %d' % n_with_pf,
         '',
         'Comparison results:',
-        '  Exact match (after normalization): %d' % n_exact,
-        '  Close / systematic correspondence: %d' % n_close,
-        '  Different:                         %d' % n_diff,
-        '  No Parks simplified_pron:          %d' % n_noparks,
+        '  Exact match (after normalization):    %d' % agreements.get('exact', 0),
+        '  Exact after long-vowel folding:       %d' % agreements.get('exact_folded', 0),
+        '  Close / systematic correspondence:    %d' % agreements.get('close', 0),
+        '  Different:                            %d' % agreements.get('different', 0),
+        '  No phonetic_form in DB:               %d' % agreements.get('no_phonetic', 0),
         '',
         'DETAIL -- ALL PRONUNCIATION PAIRS',
         '-' * 40,
         '',
     ]
 
-    markers = {'exact': '[=]', 'close': '[~]', 'different': '[!]', 'no_parks': '[-]'}
+    markers = {'exact': '[=]', 'exact_folded': '[~=]', 'close': '[~]',
+               'different': '[!]', 'no_phonetic': '[-]'}
 
     for p in matched_pairs:
         word = p.get('word') or '(unknown)'
@@ -493,23 +634,32 @@ def generate_report(pairs: list, matched_pairs: list) -> str:
         gloss = p.get('gloss') or ''
         page = p.get('page', '?')
         hw = p.get('headword') or '(no match)'
-        parks_sp = p.get('parks_sp') or '(none)'
+        pf = p.get('phonetic_form') or '(none)'
         cmp = p.get('comparison', {})
-        agreement = cmp.get('agreement', 'no_parks')
+        agreement = cmp.get('agreement', 'no_phonetic')
         notes = cmp.get('notes', [])
+        bb_norm = cmp.get('bb_normalized', '')
+        ipa_norm = cmp.get('ipa_normalized', '')
+        syll_detail = cmp.get('syll_detail', [])
         marker = markers.get(agreement, '[?]')
 
         lines.append('%s p.%s  BB word: %s' % (marker, page, repr(word)))
-        lines.append('         BB raw:   %s' % raw)
-        # Only show cleaned form if it differs from raw
+        lines.append('         BB raw:      %s' % raw)
         raw_inner = raw.strip('()')
         if clean != raw_inner:
-            lines.append('         BB clean: %s' % clean)
-        lines.append('         Parks hw: %-25s  simplified: %s' % (hw, parks_sp))
+            lines.append('         BB clean:    %s' % clean)
+        if bb_norm:
+            lines.append('         BB normed:   %s' % bb_norm)
+        lines.append('         Parks hw:    %s' % hw)
+        lines.append('         phonetic:    %s' % pf)
+        if ipa_norm:
+            lines.append('         IPA normed:  %s' % ipa_norm)
         if gloss:
-            lines.append('         Gloss: %s' % gloss)
+            lines.append('         Gloss:       %s' % gloss)
         if notes:
-            lines.append('         Notes: %s' % '; '.join(notes))
+            lines.append('         Notes:       %s' % '; '.join(notes))
+        for sd in syll_detail:
+            lines.append('         %s' % sd)
         lines.append('')
 
     unmatched = [p for p in matched_pairs if not p.get('entry_id')]
@@ -539,10 +689,11 @@ def generate_report(pairs: list, matched_pairs: list) -> str:
         '',
         'LEGEND',
         '-' * 40,
-        '[=] exact match after normalization (strip hyphens/apostrophes/spaces)',
-        '[~] close / systematic correspondence (e.g., Parks DUH ~ BB ra)',
-        '[!] different -- may indicate dialect variant or orthographic mismatch',
-        '[-] no Parks simplified_pronunciation available for this entry',
+        '[=]  exact match after normalization (reduced vowels, accents, affricates)',
+        '[~=] exact match after long-vowel folding (BB shortens long vowels)',
+        '[~]  close / systematic correspondence (consonant skeleton matches, etc.)',
+        '[!]  different -- may indicate dialect variant or orthographic mismatch',
+        '[-]  no phonetic_form available in DB for this entry',
     ]
 
     return '\n'.join(lines)
@@ -588,25 +739,25 @@ def main():
     # Step 3: Match each pair to a dictionary entry
     matched_pairs = []
     for pair in pairs:
-        entry_id, headword, parks_sp = match_pair_to_dict(pair, lookup_index, gloss_index)
+        entry_id, headword, phonetic_form = match_pair_to_dict(pair, lookup_index, gloss_index)
 
-        # Query parks_sp directly if we have entry_id but no sp yet
-        if entry_id and not parks_sp:
+        # Query phonetic_form directly if we have entry_id but no pf yet
+        if entry_id and not phonetic_form:
             cur = conn.cursor()
             cur.execute(
-                'SELECT simplified_pronunciation, headword FROM lexical_entries WHERE entry_id = ?',
+                'SELECT phonetic_form, headword FROM lexical_entries WHERE entry_id = ?',
                 (entry_id,)
             )
             row = cur.fetchone()
             if row:
-                parks_sp, headword = row
+                phonetic_form, headword = row
 
-        comparison = compare_pronunciations(pair['clean_pron'], parks_sp)
+        comparison = compare_pronunciations(pair['clean_pron'], phonetic_form)
         matched_pairs.append({
             **pair,
             'entry_id': entry_id,
             'headword': headword,
-            'parks_sp': parks_sp,
+            'phonetic_form': phonetic_form,
             'comparison': comparison,
         })
 
