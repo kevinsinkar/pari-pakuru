@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+
+# Claude Code
+.claude/
+
+# Checkpoints (transient, resumable state)
+*_checkpoint.json
+tag_review_queue.json
+
+# Local DB copies
+DB/
