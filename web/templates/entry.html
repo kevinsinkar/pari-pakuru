@@ -1,0 +1,234 @@
+{% extends "base.html" %}
+
+{% block title %}{{ entry.headword }}{% endblock %}
+
+{% block content %}
+<article>
+    {# ---- Header ---- #}
+    <div class="entry-header">
+        <div class="headword">{{ entry.headword }}</div>
+
+        {% if entry.normalized_form and entry.normalized_form != entry.headword %}
+        <div style="font-size: 1.2em; color: var(--pico-muted-color);">{{ entry.normalized_form }}</div>
+        {% endif %}
+
+        <dl class="entry-pronunciations">
+            {% if entry.simplified_pronunciation %}
+            <dt>Pronounce:</dt><dd class="pronunciation">{{ entry.simplified_pronunciation }}</dd>
+            {% endif %}
+            {% if entry.phonetic_form %}
+            <dt>IPA:</dt><dd class="ipa">{{ entry.phonetic_form }}</dd>
+            {% endif %}
+        </dl>
+
+        <div>
+            {% if entry.grammatical_class %}
+            <span class="badge badge-class">{{ entry.grammatical_class }}</span>
+            {% endif %}
+            {% if entry.verb_class %}
+            <span class="badge badge-verb-class">Class {{ entry.verb_class }}</span>
+            {% endif %}
+            {% if entry.stem_preverb %}
+            <span class="badge" style="background: #f0f0f0;">{{ entry.stem_preverb }}</span>
+            {% endif %}
+            {% if bb_info.attested %}
+            <span class="badge badge-bb">Attested in Pari Pakuru</span>
+            {% endif %}
+        </div>
+    </div>
+
+    {# ---- Definitions ---- #}
+    {% if entry.glosses %}
+    <section class="entry-section">
+        <h3>Definitions</h3>
+        <ol>
+            {% for g in entry.glosses %}
+            <li>
+                {{ g.definition }}
+                {% if g.usage_notes %}<small class="ipa">({{ g.usage_notes }})</small>{% endif %}
+            </li>
+            {% endfor %}
+        </ol>
+    </section>
+    {% endif %}
+
+    {# ---- Etymology ---- #}
+    {% if entry.etymology %}
+    <section class="entry-section">
+        <h3>Etymology</h3>
+        {% if entry.etymology.raw_etymology %}
+        <p>{{ entry.etymology.raw_etymology }}</p>
+        {% endif %}
+        {% if entry.etymology.literal_translation %}
+        <p><em>Literally:</em> {{ entry.etymology.literal_translation }}</p>
+        {% endif %}
+        {% if entry.etymology.constituent_elements %}
+        <table class="morpheme-table">
+            <thead><tr><th>Morpheme</th><th>Meaning</th></tr></thead>
+            <tbody>
+                {% for elem in entry.etymology.constituent_elements %}
+                <tr>
+                    <td class="ipa">{{ elem.get('form', elem) if elem is mapping else elem }}</td>
+                    <td>{{ elem.get('gloss', '') if elem is mapping else '' }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+    </section>
+    {% endif %}
+
+    {# ---- Paradigmatic Forms (5-form table) ---- #}
+    {% if entry.paradigmatic_forms %}
+    <section class="entry-section">
+        <h3>Paradigmatic Forms <span class="attested-label">Attested (Parks Dictionary)</span></h3>
+        <table class="paradigm-table">
+            <thead>
+                <tr><th>#</th><th>Form</th><th>Description</th></tr>
+            </thead>
+            <tbody>
+                {% for p in entry.paradigmatic_forms %}
+                <tr>
+                    <td>{{ p.form_number }}</td>
+                    <td class="form-attested ipa">{{ p.skiri_form }}</td>
+                    <td><small>{{ p.description }}</small></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </section>
+    {% endif %}
+
+    {# ---- Full Conjugation Table (verb_paradigms) ---- #}
+    {% if paradigm_table %}
+    <section class="entry-section">
+        <h3>Full Conjugation: {{ paradigm_table.verb_heading }} <span class="attested-label">Attested (Appendix 1)</span></h3>
+        <div class="conjugation-table" style="overflow-x: auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mode</th>
+                        {% for pn in paradigm_table.persons %}
+                        <th>{{ pn }}</th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for mode in paradigm_table.modes %}
+                    <tr>
+                        <td><strong>{{ mode.replace('_', ' ') }}</strong></td>
+                        {% for pn in paradigm_table.persons %}
+                        <td class="ipa">
+                            {% set form = paradigm_table.table[mode].get(pn) %}
+                            {% if form %}{{ form.skiri_form }}{% else %}&mdash;{% endif %}
+                        </td>
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </section>
+    {% endif %}
+
+    {# ---- Examples ---- #}
+    {% if entry.examples %}
+    <section class="entry-section">
+        <h3>Examples</h3>
+        {% for ex in entry.examples %}
+        <blockquote>
+            <p class="ipa">{{ ex.skiri_text }}</p>
+            {% if ex.english_translation %}
+            <p><em>{{ ex.english_translation }}</em></p>
+            {% endif %}
+            {% if ex.source and ex.source != 'parks_dictionary' %}
+            <small>Source: {{ ex.source }}</small>
+            {% endif %}
+        </blockquote>
+        {% endfor %}
+    </section>
+    {% endif %}
+
+    {# ---- Derived Stems ---- #}
+    {% if derived_stems %}
+    <section class="entry-section">
+        <h3>Derived Stems</h3>
+        {% for ds in derived_stems %}
+        <div style="margin-bottom: 0.5em;">
+            <strong class="ipa">{{ ds.stem_form }}</strong>
+            {% if ds.phonetic_form %}<span class="ipa"> {{ ds.phonetic_form }}</span>{% endif %}
+            {% if ds.definition %}<span> — {{ ds.definition }}</span>{% endif %}
+        </div>
+        {% endfor %}
+    </section>
+    {% endif %}
+
+    {# ---- Cognates ---- #}
+    {% if entry.cognates %}
+    <section class="entry-section">
+        <h3>Cognates</h3>
+        <ul>
+            {% for c in entry.cognates %}
+            <li><strong>{{ c.language }}</strong> {{ c.form }}</li>
+            {% endfor %}
+        </ul>
+    </section>
+    {% endif %}
+
+    {# ---- Cross-References ---- #}
+    {% if entry.cross_references %}
+    <section class="entry-section">
+        <h3>See Also</h3>
+        <ul>
+            {% for xr in entry.cross_references %}
+            <li>
+                <a href="/search?q={{ xr.to_english_term }}">{{ xr.to_english_term }}</a>
+                {% if xr.skiri_equivalents %}
+                <span class="ipa">({{ xr.skiri_equivalents|join(', ') }})</span>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+    {% endif %}
+
+    {# ---- Blue Book Attestations ---- #}
+    {% if bb_info.attestations %}
+    <section class="entry-section">
+        <h3>Blue Book (Pari Pakuru) References</h3>
+        <table>
+            <thead><tr><th>Lesson</th><th>Form</th><th>English</th><th>Context</th></tr></thead>
+            <tbody>
+                {% for att in bb_info.attestations %}
+                <tr>
+                    <td>{{ att.lesson_number or '' }}</td>
+                    <td class="ipa">{{ att.bb_skiri_form or '' }}</td>
+                    <td>{{ att.bb_english or '' }}</td>
+                    <td>{{ att.context_type or '' }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </section>
+    {% endif %}
+
+    {# ---- Semantic Tags ---- #}
+    {% if tags %}
+    <section class="entry-section">
+        <h3>Categories</h3>
+        <div>
+            {% for t in tags %}
+            <a href="/browse/tag/{{ t }}" class="badge badge-tag">{{ t }}</a>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+
+    {# ---- Page reference ---- #}
+    {% if entry.page_number %}
+    <section class="entry-section" style="margin-top: 2em;">
+        <small>Parks Dictionary, page {{ entry.page_number }}</small>
+    </section>
+    {% endif %}
+</article>
+{% endblock %}

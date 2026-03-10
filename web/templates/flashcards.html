@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Weekly Flashcards{% endblock %}
+
+{% block content %}
+<h2>Weekly Flashcards</h2>
+<p>
+    A 20-week study plan with {{ sets|map(attribute='card_count')|sum }} curated words
+    across {{ by_category|length }} categories. Each week features 15-20 beginner-friendly
+    words, prioritizing terms from the Pari Pakuru textbook.
+</p>
+
+<div class="flashcard-overview">
+    {% for cat, cat_sets in by_category.items() %}
+    <section class="fc-category">
+        <h3>{{ cat_sets[0].category_label }}</h3>
+        <div class="fc-week-grid">
+            {% for s in cat_sets %}
+            <a href="/flashcards/{{ s.week }}" class="fc-week-card">
+                <span class="fc-week-num">Week {{ s.week }}</span>
+                <span class="fc-week-count">{{ s.card_count }} words</span>
+                {% set bb_count = s.cards|selectattr('blue_book_attested')|list|length %}
+                {% if bb_count %}
+                <span class="badge badge-bb" style="font-size: 0.7em;">{{ bb_count }} Pari Pakuru</span>
+                {% endif %}
+            </a>
+            {% endfor %}
+        </div>
+    </section>
+    {% endfor %}
+</div>
+{% endblock %}

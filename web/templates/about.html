@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+<article>
+    <h2>About Pari Pakuru</h2>
+
+    <p>
+        <strong>Pari Pakuru</strong> is a digital dictionary and language reference tool
+        for the <strong>Skiri Pawnee</strong> language, built to support language
+        preservation and revitalization efforts.
+    </p>
+
+    <h3>Data Sources</h3>
+    <ul>
+        <li>
+            <strong>A Dictionary of Skiri Pawnee</strong> by Douglas R. Parks &mdash;
+            the primary linguistic reference, containing over 4,200 headwords with
+            phonetic transcriptions, grammatical classifications, etymologies,
+            paradigmatic verb forms, and example sentences.
+        </li>
+        <li>
+            <strong>Pari Pakuru (Blue Book)</strong> &mdash; a Skiri Pawnee language
+            textbook used in community language classes, providing attested vocabulary
+            and usage in pedagogical contexts.
+        </li>
+    </ul>
+
+    <h3>Features</h3>
+    <ul>
+        <li>Bidirectional search: English to Skiri and Skiri to English</li>
+        <li>Multiple pronunciation guides: IPA phonetic, simplified respelling</li>
+        <li>Full verb conjugation tables for documented paradigms</li>
+        <li>Semantic categorization and browsing</li>
+        <li>Blue Book attestation badges marking terms used in teaching materials</li>
+        <li>Etymology and morpheme breakdowns</li>
+        <li>Cognate cross-references to related Caddoan languages</li>
+    </ul>
+
+    <h3>Important Note on Data Quality</h3>
+    <p>
+        This tool presents data extracted from published linguistic sources.
+        Forms marked as <strong>"attested"</strong> appear directly in the
+        Parks Dictionary or Blue Book. Any generated or computed forms are
+        clearly distinguished. For an endangered language, every verified form
+        is precious &mdash; treat unverified forms with appropriate caution.
+    </p>
+
+    <h3>Technology</h3>
+    <p>
+        Built with Python, Flask, and SQLite. The dictionary database includes
+        full-text search indexes for fast lookup. The interface uses
+        Pico CSS for responsive design and HTMX for live search.
+    </p>
+</article>
+{% endblock %}

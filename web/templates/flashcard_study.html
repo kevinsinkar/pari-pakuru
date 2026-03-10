@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+
+{% block title %}Week {{ fset.week }}: {{ fset.category_label }}{% endblock %}
+
+{% block content %}
+<div class="fc-study-header">
+    <h2>Week {{ fset.week }}: {{ fset.category_label }}</h2>
+    <p>{{ fset.card_count }} words. Click a card to flip it.</p>
+</div>
+
+<div class="fc-progress">
+    <span id="fc-progress-text">Card 1 of {{ fset.card_count }}</span>
+    <progress id="fc-progress-bar" value="1" max="{{ fset.card_count }}"></progress>
+</div>
+
+<div class="fc-arena" id="fc-arena">
+    {% for card in fset.cards %}
+    <div class="fc-card-wrapper{% if not loop.first %} fc-hidden{% endif %}" data-index="{{ loop.index0 }}">
+        <div class="fc-card" onclick="this.classList.toggle('flipped')">
+            <div class="fc-front">
+                <div class="fc-front-word">{{ card.headword }}</div>
+                {% if card.normalized_form and card.normalized_form != card.headword %}
+                <div class="fc-front-normalized">{{ card.normalized_form }}</div>
+                {% endif %}
+                {% if card.simplified_pronunciation %}
+                <div class="fc-front-pron">{{ card.simplified_pronunciation }}</div>
+                {% endif %}
+                {% if card.grammatical_class %}
+                <span class="badge badge-class">{{ card.grammatical_class }}</span>
+                {% endif %}
+                {% if card.blue_book_attested %}
+                <span class="badge badge-bb">Pari Pakuru</span>
+                {% endif %}
+                <div class="fc-hint">tap to reveal</div>
+            </div>
+            <div class="fc-back">
+                <div class="fc-back-definition">{{ card.definition }}</div>
+                <div class="fc-back-word ipa">{{ card.headword }}</div>
+                {% if card.phonetic_form %}
+                <div class="fc-back-ipa ipa">{{ card.phonetic_form }}</div>
+                {% endif %}
+                <a href="/entry/{{ card.entry_id }}" class="fc-back-link">View full entry</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<div class="fc-controls">
+    <button id="fc-prev" class="outline" onclick="fcNav(-1)" disabled>&laquo; Previous</button>
+    <button id="fc-shuffle" class="outline secondary" onclick="fcShuffle()">Shuffle</button>
+    <button id="fc-next" onclick="fcNav(1)">Next &raquo;</button>
+</div>
+
+<nav class="fc-week-nav">
+    {% if prev_week %}
+    <a href="/flashcards/{{ prev_week }}">&laquo; Week {{ prev_week }}</a>
+    {% endif %}
+    <a href="/flashcards">All Weeks</a>
+    {% if next_week %}
+    <a href="/flashcards/{{ next_week }}">Week {{ next_week }} &raquo;</a>
+    {% endif %}
+</nav>
+
+<script>
+(function() {
+    const arena = document.getElementById('fc-arena');
+    const wrappers = Array.from(arena.querySelectorAll('.fc-card-wrapper'));
+    const total = wrappers.length;
+    let current = 0;
+    let order = wrappers.map((_, i) => i); // display order
+
+    function show(idx) {
+        wrappers.forEach(w => w.classList.add('fc-hidden'));
+        wrappers[order[idx]].classList.remove('fc-hidden');
+        // Unflip
+        wrappers[order[idx]].querySelector('.fc-card').classList.remove('flipped');
+        current = idx;
+        document.getElementById('fc-progress-text').textContent = `Card ${idx + 1} of ${total}`;
+        document.getElementById('fc-progress-bar').value = idx + 1;
+        document.getElementById('fc-prev').disabled = (idx === 0);
+        document.getElementById('fc-next').disabled = (idx === total - 1);
+    }
+
+    window.fcNav = function(delta) {
+        const next = current + delta;
+        if (next >= 0 && next < total) show(next);
+    };
+
+    window.fcShuffle = function() {
+        // Fisher-Yates shuffle
+        for (let i = order.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [order[i], order[j]] = [order[j], order[i]];
+        }
+        show(0);
+    };
+
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+            e.preventDefault();
+            if (current < total - 1) fcNav(1);
+        } else if (e.key === 'ArrowLeft') {
+            e.preventDefault();
+            if (current > 0) fcNav(-1);
+        } else if (e.key === 'ArrowUp' || e.key === 'ArrowDown' || e.key === 'Enter') {
+            e.preventDefault();
+            wrappers[order[current]].querySelector('.fc-card').classList.toggle('flipped');
+        }
+    });
+
+    show(0);
+})();
+</script>
+{% endblock %}

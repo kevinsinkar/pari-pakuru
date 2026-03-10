@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block title %}Search: {{ query }}{% endblock %}
+
+{% block content %}
+{% if query %}
+<h2>Search: "{{ query }}"</h2>
+
+{% if gram_class or tag %}
+<p>
+    Filters:
+    {% if gram_class %}
+    <span class="badge badge-class">{{ gram_class }}</span>
+    <a href="/search?q={{ query }}&lang={{ lang }}{% if tag %}&tag={{ tag }}{% endif %}"><small>(remove)</small></a>
+    {% endif %}
+    {% if tag %}
+    <span class="badge badge-tag">{{ tag }}</span>
+    <a href="/search?q={{ query }}&lang={{ lang }}{% if gram_class %}&class={{ gram_class }}{% endif %}"><small>(remove)</small></a>
+    {% endif %}
+</p>
+{% endif %}
+
+<div class="search-layout">
+    <div class="results-main">
+        {% include '_results_body.html' %}
+    </div>
+
+    <aside class="filter-sidebar">
+        <h4>Grammatical Class</h4>
+        <details{% if gram_class %} open{% endif %}>
+            <summary>{{ all_classes|length }} classes</summary>
+            <ul class="filter-list">
+                {% for cls, count in all_classes[:20] %}
+                <li>
+                    <a href="/search?q={{ query }}&lang={{ lang }}&class={{ cls }}{% if tag %}&tag={{ tag }}{% endif %}"
+                       {% if gram_class == cls %}class="active"{% endif %}>
+                        {{ cls }} <small>({{ count }})</small>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </details>
+
+        <h4>Semantic Category</h4>
+        <details{% if tag %} open{% endif %}>
+            <summary>{{ all_tags|length }} categories</summary>
+            <ul class="filter-list">
+                {% for t, count in all_tags %}
+                <li>
+                    <a href="/search?q={{ query }}&lang={{ lang }}{% if gram_class %}&class={{ gram_class }}{% endif %}&tag={{ t }}"
+                       {% if tag == t %}class="active"{% endif %}>
+                        {{ t }} <small>({{ count }})</small>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </details>
+    </aside>
+</div>
+
+{% else %}
+<div class="hero" style="padding-top: 3em;">
+    <p>Enter a search term above to find words in the Skiri Pawnee dictionary.</p>
+    <p><a href="/browse">Or browse by category</a></p>
+</div>
+{% endif %}
+{% endblock %}

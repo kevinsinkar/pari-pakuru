@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Browse{% endblock %}
+
+{% block content %}
+<h2>Browse the Dictionary</h2>
+
+<section class="entry-section">
+    <h3>Semantic Categories</h3>
+    <div class="tag-cloud">
+        {% for t, count in tags %}
+        <a href="/browse/tag/{{ t }}" class="badge badge-tag" style="font-size: {{ [0.8, 0.7 + (count / 200)]|max }}em;">
+            {{ t }} ({{ count }})
+        </a>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="entry-section">
+    <h3>Grammatical Classes</h3>
+    <div class="class-grid">
+        {% for cls, count in classes %}
+        <a href="/browse/class/{{ cls }}" class="class-card">
+            <strong>{{ cls }}</strong>
+            <span class="count">{{ count }} entries</span>
+        </a>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

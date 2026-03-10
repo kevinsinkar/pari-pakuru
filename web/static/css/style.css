@@ -1,0 +1,520 @@
+/* Pari Pakuru — Custom styles on top of Pico CSS */
+
+/* ---- Font stack with IPA/Unicode coverage ---- */
+body {
+    font-family: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Noto Sans', system-ui, sans-serif;
+}
+
+/* ---- Site title ---- */
+.site-title {
+    text-decoration: none;
+}
+
+/* ---- Navigation search bar ---- */
+.nav-search {
+    margin-bottom: 0;
+}
+.nav-search input[type="search"] {
+    margin-bottom: 0;
+    max-width: 400px;
+}
+
+/* ---- IPA / phonetic forms ---- */
+.ipa {
+    font-family: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Noto Sans', monospace;
+    color: var(--pico-muted-color);
+}
+
+.pronunciation {
+    font-size: 1.05em;
+    color: var(--pico-secondary);
+}
+
+/* ---- Badges ---- */
+.badge {
+    display: inline-block;
+    padding: 0.15em 0.5em;
+    border-radius: 4px;
+    font-size: 0.8em;
+    font-weight: 600;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.badge-bb {
+    background: #d4edda;
+    color: #155724;
+}
+
+.badge-class {
+    background: var(--pico-secondary-background);
+    color: var(--pico-secondary);
+}
+
+.badge-tag {
+    background: #e2e3f1;
+    color: #383d6e;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0.1em;
+}
+.badge-tag:hover {
+    background: #c8c9e0;
+    color: #383d6e;
+}
+
+.badge-verb-class {
+    background: #fff3cd;
+    color: #856404;
+}
+
+/* ---- Entry cards (search results) ---- */
+.entry-card {
+    border-bottom: 1px solid var(--pico-muted-border-color);
+    padding: 0.75em 0;
+}
+.entry-card:last-child {
+    border-bottom: none;
+}
+.entry-card a {
+    text-decoration: none;
+}
+.entry-card .headword {
+    font-size: 1.3em;
+    font-weight: 700;
+}
+.entry-card .normalized {
+    color: var(--pico-muted-color);
+    margin-left: 0.5em;
+}
+.entry-card .gloss {
+    margin-top: 0.25em;
+    color: var(--pico-color);
+}
+
+/* ---- Entry detail page ---- */
+.entry-header {
+    margin-bottom: 1.5em;
+}
+.entry-header .headword {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 0.1em;
+}
+.entry-pronunciations {
+    margin: 0.5em 0;
+}
+.entry-pronunciations dt {
+    font-weight: 600;
+    color: var(--pico-muted-color);
+    display: inline;
+}
+.entry-pronunciations dd {
+    display: inline;
+    margin-left: 0.5em;
+    margin-right: 1.5em;
+}
+
+.entry-section {
+    margin-top: 1.5em;
+}
+.entry-section h3 {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+    color: var(--pico-secondary);
+    border-bottom: 1px solid var(--pico-muted-border-color);
+    padding-bottom: 0.25em;
+}
+
+/* ---- Paradigm tables ---- */
+.paradigm-table {
+    font-size: 0.9em;
+}
+.paradigm-table th {
+    text-align: left;
+    white-space: nowrap;
+}
+
+/* Attested vs generated forms */
+.form-attested {
+    font-weight: 600;
+}
+.form-generated {
+    font-style: italic;
+    color: var(--pico-muted-color);
+}
+.attested-label {
+    font-size: 0.65em;
+    font-weight: 400;
+    color: #155724;
+    background: #d4edda;
+    padding: 0.15em 0.5em;
+    border-radius: 4px;
+    vertical-align: middle;
+    margin-left: 0.5em;
+}
+
+/* ---- Browse page ---- */
+.tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin: 1em 0;
+}
+
+.class-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 0.5em;
+    margin: 1em 0;
+}
+
+.class-card {
+    padding: 0.75em;
+    border: 1px solid var(--pico-muted-border-color);
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+}
+.class-card:hover {
+    background: var(--pico-secondary-background);
+}
+.class-card .count {
+    display: block;
+    font-size: 0.8em;
+    color: var(--pico-muted-color);
+}
+
+/* ---- Filters sidebar ---- */
+.search-layout {
+    display: grid;
+    grid-template-columns: 1fr 220px;
+    gap: 2em;
+    align-items: start;
+}
+@media (max-width: 768px) {
+    .search-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+.filter-sidebar h4 {
+    font-size: 0.95em;
+    margin-bottom: 0.3em;
+}
+.filter-sidebar details {
+    margin-bottom: 0.5em;
+}
+.filter-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 250px;
+    overflow-y: auto;
+    font-size: 0.85em;
+}
+.filter-list li {
+    padding: 0.15em 0;
+}
+.filter-list a {
+    text-decoration: none;
+}
+.filter-list .active {
+    font-weight: 700;
+}
+
+/* ---- Pagination ---- */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    margin-top: 1.5em;
+    flex-wrap: wrap;
+}
+.pagination a, .pagination span {
+    padding: 0.3em 0.7em;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+.pagination .current {
+    background: var(--pico-primary);
+    color: white;
+}
+
+/* ---- Index / landing ---- */
+.hero {
+    text-align: center;
+    padding: 2em 0 1em;
+}
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.2em;
+}
+.hero p {
+    font-size: 1.1em;
+    color: var(--pico-muted-color);
+}
+.hero-search {
+    max-width: 600px;
+    margin: 1.5em auto;
+}
+.hero-search input[type="search"] {
+    font-size: 1.2em;
+    padding: 0.75em 1em;
+}
+
+.stats-row {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin: 1.5em 0;
+    flex-wrap: wrap;
+}
+.stat-item {
+    text-align: center;
+}
+.stat-item .number {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--pico-primary);
+    display: block;
+}
+.stat-item .label {
+    font-size: 0.85em;
+    color: var(--pico-muted-color);
+}
+
+/* ---- Word of the day card ---- */
+.wotd-card {
+    border: 1px solid var(--pico-muted-border-color);
+    border-radius: 8px;
+    padding: 1.5em;
+    max-width: 500px;
+    margin: 1.5em auto;
+    text-align: center;
+}
+.wotd-card .wotd-label {
+    font-size: 0.8em;
+    color: var(--pico-muted-color);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.wotd-card .wotd-headword {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin: 0.2em 0;
+}
+.wotd-card .wotd-gloss {
+    color: var(--pico-secondary);
+}
+
+/* ---- Etymology morpheme table ---- */
+.morpheme-table {
+    font-size: 0.9em;
+}
+
+/* ---- Conjugation table ---- */
+.conjugation-table {
+    font-size: 0.85em;
+    overflow-x: auto;
+}
+.conjugation-table th {
+    white-space: nowrap;
+    font-size: 0.8em;
+}
+.conjugation-table td {
+    white-space: nowrap;
+}
+
+/* ---- Flashcard overview ---- */
+.fc-category {
+    margin-bottom: 1.5em;
+}
+.fc-category h3 {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+}
+.fc-week-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75em;
+}
+.fc-week-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.75em 1.25em;
+    border: 1px solid var(--pico-muted-border-color);
+    border-radius: 8px;
+    text-decoration: none;
+    min-width: 120px;
+    text-align: center;
+    transition: background 0.15s;
+}
+.fc-week-card:hover {
+    background: var(--pico-secondary-background);
+}
+.fc-week-num {
+    font-weight: 700;
+    font-size: 1em;
+}
+.fc-week-count {
+    font-size: 0.8em;
+    color: var(--pico-muted-color);
+}
+
+/* ---- Flashcard study session ---- */
+.fc-study-header {
+    text-align: center;
+    margin-bottom: 1em;
+}
+.fc-study-header p {
+    color: var(--pico-muted-color);
+}
+
+.fc-progress {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+.fc-progress progress {
+    width: 100%;
+    max-width: 400px;
+}
+#fc-progress-text {
+    font-size: 0.85em;
+    color: var(--pico-muted-color);
+}
+
+/* Card arena */
+.fc-arena {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0 1.5em;
+    min-height: 300px;
+}
+
+.fc-card-wrapper {
+    width: 100%;
+    max-width: 450px;
+    perspective: 1000px;
+}
+.fc-card-wrapper.fc-hidden {
+    display: none;
+}
+
+/* Flip card */
+.fc-card {
+    position: relative;
+    width: 100%;
+    min-height: 280px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+    border-radius: 12px;
+}
+.fc-card.flipped {
+    transform: rotateY(180deg);
+}
+
+.fc-front, .fc-back {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border: 2px solid var(--pico-muted-border-color);
+    border-radius: 12px;
+    padding: 2em 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: var(--pico-background-color);
+}
+
+.fc-back {
+    transform: rotateY(180deg);
+    background: var(--pico-secondary-background);
+}
+
+/* Front side */
+.fc-front-word {
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-bottom: 0.15em;
+    line-height: 1.2;
+}
+.fc-front-normalized {
+    font-size: 1.1em;
+    color: var(--pico-muted-color);
+    margin-bottom: 0.3em;
+}
+.fc-front-pron {
+    font-size: 1.1em;
+    color: var(--pico-secondary);
+    margin-bottom: 0.5em;
+}
+.fc-hint {
+    font-size: 0.75em;
+    color: var(--pico-muted-color);
+    margin-top: auto;
+    padding-top: 1em;
+}
+
+/* Back side */
+.fc-back-definition {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    line-height: 1.3;
+}
+.fc-back-word {
+    font-size: 1em;
+    color: var(--pico-muted-color);
+    margin-bottom: 0.2em;
+}
+.fc-back-ipa {
+    font-size: 0.9em;
+    color: var(--pico-muted-color);
+}
+.fc-back-link {
+    font-size: 0.8em;
+    margin-top: auto;
+    padding-top: 1em;
+}
+
+/* Controls */
+.fc-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 1em 0;
+}
+.fc-controls button {
+    min-width: 120px;
+}
+
+.fc-week-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 2em;
+    font-size: 0.9em;
+}
+
+/* Mobile: make cards a bit smaller */
+@media (max-width: 480px) {
+    .fc-front-word { font-size: 1.8em; }
+    .fc-back-definition { font-size: 1.2em; }
+    .fc-card { min-height: 240px; }
+}
+
+/* ---- Spinner for HTMX ---- */
+.htmx-indicator {
+    display: none;
+}
+.htmx-request .htmx-indicator,
+.htmx-request.htmx-indicator {
+    display: inline-block;
+}

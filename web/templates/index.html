@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block header_search %}{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <h1>Pari Pakuru</h1>
+    <p>Skiri Pawnee Dictionary &amp; Language Reference</p>
+
+    <div class="hero-search">
+        <form action="/search" method="get" class="hero-search-form" role="search">
+            <input
+                type="search"
+                name="q"
+                placeholder="Search in Skiri or English..."
+                aria-label="Search the dictionary"
+                autofocus
+                hx-get="/search/partial"
+                hx-trigger="keyup changed delay:400ms"
+                hx-target="#live-results"
+                hx-params="q"
+                autocomplete="off"
+            >
+        </form>
+    </div>
+
+    <div class="stats-row">
+        <div class="stat-item">
+            <span class="number">{{ "{:,}".format(stats.get('lexical_entries', 0)) }}</span>
+            <span class="label">Dictionary Entries</span>
+        </div>
+        <div class="stat-item">
+            <span class="number">{{ "{:,}".format(stats.get('examples', 0)) }}</span>
+            <span class="label">Example Sentences</span>
+        </div>
+        <div class="stat-item">
+            <span class="number">{{ stats.get('distinct_tags', 0) }}</span>
+            <span class="label">Semantic Categories</span>
+        </div>
+        <div class="stat-item">
+            <span class="number">{{ "{:,}".format(stats.get('verb_paradigms', 0)) }}</span>
+            <span class="label">Verb Forms</span>
+        </div>
+    </div>
+</section>
+
+{% if word_of_day %}
+<section class="wotd-card">
+    <div class="wotd-label">Discover a word</div>
+    <a href="/entry/{{ word_of_day.entry_id }}">
+        <div class="wotd-headword">{{ word_of_day.headword }}</div>
+    </a>
+    {% if word_of_day.simplified_pronunciation %}
+    <div class="pronunciation">{{ word_of_day.simplified_pronunciation }}</div>
+    {% endif %}
+    {% if word_of_day.first_gloss %}
+    <div class="wotd-gloss">{{ word_of_day.first_gloss }}</div>
+    {% endif %}
+    {% if word_of_day.grammatical_class %}
+    <span class="badge badge-class">{{ word_of_day.grammatical_class }}</span>
+    {% endif %}
+    {% if word_of_day.blue_book_attested %}
+    <span class="badge badge-bb">Pari Pakuru</span>
+    {% endif %}
+</section>
+{% endif %}
+
+<section style="text-align: center; margin-top: 2em;">
+    <a href="/browse" role="button" class="outline">Browse by Category</a>
+</section>
+{% endblock %}

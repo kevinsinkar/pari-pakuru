@@ -1,0 +1,25 @@
+<article class="entry-card">
+    <a href="/entry/{{ entry.entry_id }}">
+        <span class="headword">{{ entry.headword }}</span>
+        {% if entry.normalized_form and entry.normalized_form != entry.headword %}
+        <span class="normalized">({{ entry.normalized_form }})</span>
+        {% endif %}
+        {% if entry.simplified_pronunciation %}
+        <span class="pronunciation ipa"> {{ entry.simplified_pronunciation }}</span>
+        {% endif %}
+    </a>
+    <div>
+        {% if entry.grammatical_class %}
+        <span class="badge badge-class">{{ entry.grammatical_class }}</span>
+        {% endif %}
+        {% if entry.verb_class %}
+        <span class="badge badge-verb-class">Class {{ entry.verb_class }}</span>
+        {% endif %}
+        {% if entry.blue_book_attested %}
+        <span class="badge badge-bb">Pari Pakuru</span>
+        {% endif %}
+    </div>
+    {% if entry.first_gloss %}
+    <div class="gloss">{{ entry.first_gloss }}</div>
+    {% endif %}
+</article>

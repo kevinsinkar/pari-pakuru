@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Pari Pakuru{% endblock %} — Skiri Pawnee Dictionary</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://unpkg.com/htmx.org@2.0.4"></script>
+</head>
+<body>
+    <header class="container">
+        <nav>
+            <ul>
+                <li><a href="/" class="site-title"><strong>Pari Pakuru</strong></a></li>
+            </ul>
+            <ul>
+                <li><a href="/browse">Browse</a></li>
+                <li><a href="/flashcards">Flashcards</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
+        {% block header_search %}
+        <form action="/search" method="get" class="nav-search" role="search">
+            <input
+                type="search"
+                name="q"
+                placeholder="Search Skiri or English..."
+                value="{{ request.args.get('q', '') }}"
+                aria-label="Search the dictionary"
+                hx-get="/search/partial"
+                hx-trigger="keyup changed delay:400ms"
+                hx-target="#live-results"
+                hx-params="q"
+                hx-indicator="#search-spinner"
+                autocomplete="off"
+            >
+        </form>
+        {% endblock %}
+    </header>
+
+    <main class="container">
+        <div id="live-results"></div>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="container">
+        <small>
+            Pari Pakuru — Skiri Pawnee Language Preservation Project.
+            Data from Douglas R. Parks, <em>A Dictionary of Skiri Pawnee</em>.
+        </small>
+    </footer>
+
+    <script src="/static/js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{% if results %}
+<p><small>{{ total }} result{{ 's' if total != 1 }} for "{{ query }}"</small></p>
+{% for entry in results %}
+    {% include '_entry_card.html' %}
+{% endfor %}
+
+{% if total_pages > 1 %}
+<nav class="pagination">
+    {% if page > 1 %}
+    <a href="/search?q={{ query }}&lang={{ lang }}&page={{ page - 1 }}{% if gram_class %}&class={{ gram_class }}{% endif %}{% if tag %}&tag={{ tag }}{% endif %}">&laquo; Prev</a>
+    {% endif %}
+    {% for p in range(1, total_pages + 1) %}
+        {% if p == page %}
+        <span class="current">{{ p }}</span>
+        {% elif p <= 3 or p > total_pages - 2 or (p >= page - 1 and p <= page + 1) %}
+        <a href="/search?q={{ query }}&lang={{ lang }}&page={{ p }}{% if gram_class %}&class={{ gram_class }}{% endif %}{% if tag %}&tag={{ tag }}{% endif %}">{{ p }}</a>
+        {% elif p == 4 or p == total_pages - 2 %}
+        <span>...</span>
+        {% endif %}
+    {% endfor %}
+    {% if page < total_pages %}
+    <a href="/search?q={{ query }}&lang={{ lang }}&page={{ page + 1 }}{% if gram_class %}&class={{ gram_class }}{% endif %}{% if tag %}&tag={{ tag }}{% endif %}">Next &raquo;</a>
+    {% endif %}
+</nav>
+{% endif %}
+{% elif query %}
+<p>No results found for "{{ query }}".</p>
+{% endif %}

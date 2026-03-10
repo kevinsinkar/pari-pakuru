@@ -439,26 +439,42 @@ Tasks:
 - [ ] Possessive morphology from kinship data (my/your/his-her paradigms)
 - [ ] Blue Book lesson dialogues + kinship constructions as test cases
 
-### 🔲 Phase 4.1 — Web Search Interface
-**Priority:** HIGH — next implementation target
-**Depends on:** Phase 1.2 (SQLite DB — already complete)
-**Effort:** Medium
+### ✅ Phase 4.1 — Web Search Interface
+**Script:** `web/app.py` (Flask application)
+**Depends on:** Phase 1.2 (SQLite DB)
 
-Simple web-based dictionary search tool — the first user-facing product.
+**Stack:** Flask + SQLite (`skiri_pawnee.db`) + Pico CSS + HTMX
 
-**Stack:** Flask or FastAPI + SQLite (existing `skiri_pawnee.db`) + HTML/CSS/JS
+**What it does:**
+Full-featured web dictionary with bidirectional search, entry detail views, browsing,
+flashcards, and live search. Mobile-responsive via Pico CSS framework.
 
-Tasks:
-- [ ] Backend: Flask/FastAPI app serving SQLite queries
-- [ ] Bidirectional search: English → Skiri, Skiri → English (using existing FTS tables)
-- [ ] Entry detail view: headword, pronunciation (IPA + simplified), glosses, paradigmatic forms, examples
-- [ ] Morpheme breakdown display: show prefix/stem/suffix labels for verb forms
-- [ ] Fuzzy matching for learner misspellings (Levenshtein distance on normalized forms)
-- [ ] Filter sidebar: semantic category, grammatical class, verb class
-- [ ] Blue Book attestation badge (highlight entries attested in teaching materials)
-- [ ] Mobile-responsive design (learners will use phones)
-- [ ] Mark generated vs. attested forms distinctly (critical for endangered language accuracy)
-- [ ] Deployment: static hosting or simple server (GitHub Pages with pre-built JSON, or Railway/Render)
+**Features implemented:**
+- [x] Backend: Flask app with SQLite read-only connection, HTMX live search
+- [x] Bidirectional search: English -> Skiri (FTS on glosses + english_index), Skiri -> English (headword, normalized_form, paradigmatic forms)
+- [x] Entry detail view: headword, pronunciation (IPA + simplified), glosses, etymology with morpheme breakdown, paradigmatic forms, full conjugation tables, examples, cognates, cross-references, derived stems, Blue Book attestations, semantic tags
+- [x] Morpheme breakdown display: etymology constituent elements shown as morpheme table (prefix/stem/suffix labels from Parks)
+- [x] Fuzzy matching: LIKE pattern matching + Levenshtein distance (edit distance 1-2) on normalized forms for learner misspellings
+- [x] Filter sidebar: semantic category tags, grammatical class (on search results page)
+- [x] Blue Book attestation badge on entries and search result cards
+- [x] Mobile-responsive design (Pico CSS framework, responsive grid, touch-friendly flashcards)
+- [x] Mark generated vs. attested forms: "Attested (Parks Dictionary)" / "Attested (Appendix 1)" labels on paradigm tables
+- [x] Browse by semantic tag and grammatical class with paginated results
+- [x] Weekly flashcard study system: 19 categories, ~300 curated beginner words, flip-card UI with keyboard nav and shuffle
+- [x] Word-of-the-day on homepage with dictionary stats
+- [x] Deployment: `requirements.txt` provided; run with `python -m web.app`
+
+**Routes:**
+- `/` — Homepage with stats and random word
+- `/search?q=...` — Full search with filters
+- `/search/partial?q=...` — HTMX live search endpoint
+- `/entry/<entry_id>` — Full entry detail
+- `/browse` — Browse by tag/class
+- `/browse/tag/<tag>` — Entries by semantic tag
+- `/browse/class/<class>` — Entries by grammatical class
+- `/flashcards` — Weekly flashcard overview
+- `/flashcards/<week>` — Interactive flashcard study session
+- `/about` — About page with data source info
 
 ### 🔲 Phase 4.2 — Sentence Builder UI
 **Priority:** Low (depends on Phase 3.2)
@@ -481,7 +497,7 @@ Tasks:
 - [ ] Lesson sequencing: greetings → basic sentences → question forms → descriptive → narrative
 - [ ] Interactive exercises: fill-in-the-blank, matching, translation drills
 
-### 🔲 Phase 5.2 — Spaced Repetition / Flashcard Export
+### 🟡 Phase 5.2 — Spaced Repetition / Flashcard Export
 **Priority:** Medium (low effort, high impact for self-directed learners)
 **Depends on:** Phase 1.2 (dictionary data)
 **Effort:** Small
@@ -489,9 +505,11 @@ Tasks:
 Generate exportable study materials from the dictionary.
 
 Tasks:
+- [x] In-browser flashcard study system (weekly sets, flip cards, keyboard nav, shuffle) — built in Phase 4.1 (`web/flashcards.py`)
+- [x] Semantic category decks (19 categories: kinship, animals, body, food, etc.)
+- [x] Include pronunciation (IPA + simplified respelling) on every card
+- [x] Blue Book-attested entries prioritized in card selection
 - [ ] Anki deck export: Skiri → English and English → Skiri cards
-- [ ] Include pronunciation (IPA + simplified respelling) on every card
-- [ ] Semantic category decks (animals, kinship, body parts, etc.)
 - [ ] Blue Book lesson-aligned decks (vocabulary per lesson)
 - [ ] Printable PDF wordlists and paradigm tables for offline use
 - [ ] Audio placeholder fields (for future recordings)
