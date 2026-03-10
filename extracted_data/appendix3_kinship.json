@@ -1,0 +1,447 @@
+{
+  "total_terms": 23,
+  "pages_extracted": 6,
+  "terms": [
+    {
+      "english_term": "sibling (same sex)",
+      "skiri_term": "iraariʔ",
+      "grammatical_class": "N-KIN",
+      "possessive_forms": {
+        "my": "iraariʔ",
+        "your": null,
+        "his_her": "iraariʔ",
+        "vocative": null
+      },
+      "verb_construction": null,
+      "notes": "First- and third-person forms merge; the third-person form is used for first person. Also 'our (same sex) sibling'."
+    },
+    {
+      "english_term": "mother",
+      "skiri_term": "atiraʔ",
+      "grammatical_class": "N-KIN",
+      "possessive_forms": {
+        "my": "atiraʔ",
+        "your": "asaas",
+        "his_her": "isaastiʔ",
+        "vocative": null
+      },
+      "verb_construction": null,
+      "notes": null
+    },
+    {
+      "english_term": "father",
+      "skiri_term": "atiʔas",
+      "grammatical_class": "N-KIN",
+      "possessive_forms": {
+        "my": "atiʔas",
+        "your": "aʔas",
+        "his_her": "iʔaastiʔ",
+        "vocative": null
+      },
+      "verb_construction": null,
+      "notes": null
+    },
+    {
+      "english_term": "grandmother",
+      "skiri_term": "atikaʔ",
+      "grammatical_class": "N-KIN",
+      "possessive_forms": {
+        "my": "atikaʔ",
+        "your": "akaʔ",
+        "his_her": "ikaariʔ",
+        "vocative": null
+      },
+      "verb_construction": null,
+      "notes": null
+    },
+    {
+      "english_term": "grandfather",
+      "skiri_term": "atipaat",
+      "grammatical_class": "N-KIN",
+      "possessive_forms": {
+        "my": "atipaat",
+        "your": "apaat",
+        "his_her": "ipaaktiʔ",
+        "vocative": null
+      },
+      "verb_construction": null,
+      "notes": null
+    },
+    {
+      "english_term": "male's nephew, niece",
+      "skiri_term": "tiwaat",
+      "grammatical_class": "N-KIN",
+      "possessive_forms": {
+        "my": "tiwaat",
+        "your": "awaat",
+        "his_her": "iwaahiʔ",
+        "vocative": null
+      },
+      "verb_construction": null,
+      "notes": null
+    },
+    {
+      "category": "consanguineal",
+      "terms": [
+        {
+          "english_term": "mother's brother",
+          "skiri_term": "-waciriks, -waariiriks",
+          "grammatical_class": "N-KIN",
+          "possessive_forms": {
+            "my": "tiwaciriks",
+            "your": "paciriks",
+            "his_her": "iwariiriks",
+            "vocative": null
+          },
+          "verb_construction": null,
+          "notes": "mother's male parallel cousin; male's father's mother's brother's daughter"
+        },
+        {
+          "english_term": "sister (of male)",
+          "skiri_term": "-taat",
+          "grammatical_class": "N-KIN",
+          "possessive_forms": {
+            "my": "itaahiʔ",
+            "your": "ataati",
+            "his_her": "itaahiʔ",
+            "vocative": null
+          },
+          "verb_construction": null,
+          "notes": "male's parallel female cousin"
+        },
+        {
+          "english_term": "sibling (of same sex as speaker)",
+          "skiri_term": "-raar",
+          "grammatical_class": "N-KIN",
+          "possessive_forms": {
+            "my": "iraariʔ",
+            "your": "ara",
+            "his_her": "iraariʔ",
+            "vocative": null
+          },
+          "verb_construction": null,
+          "notes": "male's parallel male cousin; female's parallel female cousin; father's mother's brother's child (of same sex as speaker)"
+        },
+        {
+          "english_term": "brother (of female)",
+          "skiri_term": "-raac",
+          "grammatical_class": "N-KIN",
+          "possessive_forms": {
+            "my": "iraactiʔ",
+            "your": "araac",
+            "his_her": "iraactiʔ",
+            "vocative": null
+          },
+          "verb_construction": null,
+          "notes": "female's parallel male cousin; female's father's mother's brother's son"
+        },
+        {
+          "english_term": "grandchild",
+          "skiri_term": "-rak-tiikis",
+          "grammatical_class": "N-KIN",
+          "possessive_forms": {
+            "my": "raktiiki",
+            "your": "arakis",
+            "his_her": "raktiiki",
+            "vocative": null
+          },
+          "verb_construction": null,
+          "notes": "brother's grandchild; sister's grandchild; mother's brother's grandchild"
+        }
+      ]
+    },
+    {
+      "category": "affinal",
+      "terms": [
+        {
+          "english_term": "to have as spouse",
+          "skiri_term": "aktaku",
+          "grammatical_class": "V-KIN",
+          "possessive_forms": null,
+          "verb_construction": null,
+          "notes": "(ir...)"
+        },
+        {
+          "english_term": "to have as an in-law",
+          "skiri_term": "kaakus",
+          "grammatical_class": "V-KIN",
+          "possessive_forms": null,
+          "verb_construction": null,
+          "notes": "generally used for males marrying into a family; (ut...)"
+        },
+        {
+          "english_term": "to have as a female in-law",
+          "skiri_term": "ackirius",
+          "grammatical_class": "V-KIN",
+          "possessive_forms": null,
+          "verb_construction": null,
+          "notes": "e.g., mother-, sister-, daughter-in-law; (ir...)"
+        }
+      ]
+    },
+    {
+      "english_term": "to have as a wife (male speaker)",
+      "skiri_term": "aktaku",
+      "grammatical_class": "VA",
+      "possessive_forms": null,
+      "verb_construction": {
+        "indicative_mode": [
+          {
+            "form": "tatiiraktakuʔ",
+            "english": "I have her as a wife; she is my wife"
+          },
+          {
+            "form": "tasiiraktakuʔ",
+            "english": "you have her as a wife; she is your wife"
+          },
+          {
+            "form": "taaktakuʔ",
+            "english": "he has her as his wife; she is his wife"
+          },
+          {
+            "form": "taciiraktakuʔ",
+            "english": "you and I have her as a wife; she is our wife"
+          }
+        ],
+        "gerundial_mode": [
+          {
+            "form": "ratiiraktaku",
+            "english": "the one I have as a wife; my wife"
+          },
+          {
+            "form": "rasiiraktaku",
+            "english": "the one you have as a wife; your wife"
+          },
+          {
+            "form": "raaktaku",
+            "english": "the one he has as a wife; his wife"
+          },
+          {
+            "form": "raciiraktaku",
+            "english": "the one you and I have as a wife; our wife"
+          }
+        ]
+      },
+      "notes": "(ir...) (also extended to mother's brother's wife, wife's sister, sister's son's wife)"
+    },
+    {
+      "english_term": "to have as a husband (female speaker)",
+      "skiri_term": "aktaku",
+      "grammatical_class": "VP",
+      "possessive_forms": null,
+      "verb_construction": {
+        "indicative_mode": [
+          {
+            "form": "tikuuktakuʔ",
+            "english": "he has me as a wife; I am his wife"
+          },
+          {
+            "form": "taaktakuʔ",
+            "english": "he has you as a wife; you are his wife"
+          },
+          {
+            "form": "taaktakuʔ",
+            "english": "he has her as a wife; she is her husband"
+          },
+          {
+            "form": "tacakuuktakuʔ",
+            "english": "he has you and me as a wife; he is our husband"
+          },
+          {
+            "form": "sitikuuktakuʔ",
+            "english": "he has her and me as a wife; he is our husband"
+          }
+        ],
+        "gerundial_mode": [
+          {
+            "form": "rakuuktaku",
+            "english": "the one who has me as a wife; my husband"
+          },
+          {
+            "form": "raaktaku",
+            "english": "the one who has you as a wife; your husband"
+          },
+          {
+            "form": "raaktaku",
+            "english": "the one who has her as a wife; her husband"
+          },
+          {
+            "form": "racakuuktaku",
+            "english": "the one who has you and me as wives; our (IN.DU) husband"
+          },
+          {
+            "form": "sirikuuktaku",
+            "english": "the one who has her and me as a wife; our (EX.DU) husband"
+          }
+        ]
+      },
+      "notes": "(ir...) (also extended to husband's brother, sister's husband)"
+    },
+    {
+      "english_term": "I have him/her as an in-law",
+      "skiri_term": "tatutkaaku",
+      "grammatical_class": "VA",
+      "possessive_forms": null,
+      "verb_construction": "kaakus 'to have as an in-law (male speaking)'",
+      "notes": "Gerundial Mode: ratutkaaku (the one I have as an in-law; my in-law). Refers to one's wife's parents and brother."
+    },
+    {
+      "english_term": "you have him/her as an in-law",
+      "skiri_term": "tasutkaaku",
+      "grammatical_class": "VA",
+      "possessive_forms": null,
+      "verb_construction": "kaakus 'to have as an in-law (male speaking)'",
+      "notes": "Gerundial Mode: rasutkaaku (the one you have as an in-law; your in-law)"
+    },
+    {
+      "english_term": "he has him/her as an in-law",
+      "skiri_term": "tutkaaku",
+      "grammatical_class": "VA",
+      "possessive_forms": null,
+      "verb_construction": "kaakus 'to have as an in-law (male speaking)'",
+      "notes": "Gerundial Mode: rutkaaku (the one he/she has as an in-law; his/her in-law)"
+    },
+    {
+      "english_term": "you and I have him/her as an in-law",
+      "skiri_term": "tacuutkaaku",
+      "grammatical_class": "VA",
+      "possessive_forms": null,
+      "verb_construction": "kaakus 'to have as an in-law (male speaking)'",
+      "notes": "Gerundial Mode: racuutkaaku (the one you and I have as an in-law; our (IN.DU) in-law)"
+    },
+    {
+      "english_term": "he and I have him/her as an in-law",
+      "skiri_term": "sitatutkaaku",
+      "grammatical_class": "VA",
+      "possessive_forms": null,
+      "verb_construction": "kaakus 'to have as an in-law (male speaking)'",
+      "notes": "Gerundial Mode: sirutkaaku (the one he and I have as an in-law; our (EX.DU) in-law)"
+    },
+    {
+      "english_term": "he/she has me as a son-in-law/brother-in-law",
+      "skiri_term": "tikuutkaaku",
+      "grammatical_class": "VP",
+      "possessive_forms": null,
+      "verb_construction": "kaakus 'to have as a son-in-law or brother-in-law (male speaking)'",
+      "notes": "Gerundial Mode: rikuutkaaku (the one who has me as a son-in-law/brother-in-law; my son-in-law/brother-in-law)"
+    },
+    {
+      "english_term": "he/she has you as a son-in-law/brother-in-law",
+      "skiri_term": "tuutkaaku",
+      "grammatical_class": "VP",
+      "possessive_forms": null,
+      "verb_construction": "kaakus 'to have as a son-in-law or brother-in-law (male speaking)'",
+      "notes": "Gerundial Mode: ruutkaaku (the one who has you as a son-in-law/brother-in-law; your son-in-law/brother-in-law)"
+    },
+    {
+      "english_term": "he/she has him as a son-in-law/brother-in-law",
+      "skiri_term": "tiitkaaku",
+      "grammatical_class": "VP",
+      "possessive_forms": null,
+      "verb_construction": "kaakus 'to have as a son-in-law or brother-in-law (male speaking)'",
+      "notes": "Gerundial Mode: riitkaaku (the one who has him as a son-in-law/brother-in-law; his brother-in-law/son-in-law)"
+    },
+    {
+      "english_term": "he/she has you and me as sons-in-law/brothers-in-law",
+      "skiri_term": "tacuutkaaku",
+      "grammatical_class": "VP",
+      "possessive_forms": null,
+      "verb_construction": "kaakus 'to have as a son-in-law or brother-in-law (male speaking)'",
+      "notes": "Gerundial Mode: racakuutkaaku (the one who has you and me as sons-in-law/brothers-in-law)"
+    },
+    {
+      "english_term": "he/she has him and me as sons-in-law/brothers-in-law",
+      "skiri_term": "situutkaaku",
+      "grammatical_class": "VP",
+      "possessive_forms": null,
+      "verb_construction": "kaakus 'to have as a son-in-law or brother-in-law (male speaking)'",
+      "notes": "Gerundial Mode: siriitkaaku (the one who has him and me as sons-in-law/brothers-in-law)"
+    },
+    {
+      "english_term": "to have as a female in-law",
+      "skiri_term": "ackurus",
+      "grammatical_class": "VA",
+      "possessive_forms": null,
+      "verb_construction": [
+        {
+          "mode": "Indicative",
+          "skiri_form": "tatiirackurus",
+          "english_translation": "I have her as a female in-law, as a daughter-in-law/sister-in-law"
+        },
+        {
+          "mode": "Gerundial",
+          "skiri_form": "ratiirackurusu",
+          "english_translation": "the one I have as a female in-law, as a daughter-in-law/sister-in-law"
+        },
+        {
+          "mode": "Indicative",
+          "skiri_form": "tasiirackurus",
+          "english_translation": "you have her as a female in-law, as a daughter-in-law/sister-in-law"
+        },
+        {
+          "mode": "Gerundial",
+          "skiri_form": "rasiirackurusu",
+          "english_translation": "the one who has you as a female in-law, as a daughter-in-law/sister-in-law"
+        },
+        {
+          "mode": "Indicative",
+          "skiri_form": "taackurus",
+          "english_translation": "she has her as a female in-law; she is her daughter-in-law/sister-in-law"
+        },
+        {
+          "mode": "Gerundial",
+          "skiri_form": "raackurusu",
+          "english_translation": "the one who has her as a female in-law, as a daughter-in-law/sister-in-law"
+        }
+      ],
+      "notes": "i.e., as a mother-in-law, daughter-in-law, sister-in-law, mother's brother's wife (male and female speaking)"
+    },
+    {
+      "english_term": "to be one's female in-law",
+      "skiri_term": "ackurus",
+      "grammatical_class": "VP",
+      "possessive_forms": null,
+      "verb_construction": [
+        {
+          "mode": "Indicative",
+          "skiri_form": "tikuuckurus",
+          "english_translation": "she has me as a female in-law; I am her daughter-in-law/sister-in-law"
+        },
+        {
+          "mode": "Gerundial",
+          "skiri_form": "rikuuckurusu",
+          "english_translation": "the one who has me as a female in-law; i.e., my mother-in-law/sister-in-law"
+        },
+        {
+          "mode": "Indicative",
+          "skiri_form": "taackurus",
+          "english_translation": "she has you as a female in-law; you are her daughter-in-law/sister-in-law"
+        },
+        {
+          "mode": "Gerundial",
+          "skiri_form": "raackurusu",
+          "english_translation": "the one who has you as a female in-law; your mother-in-law/sister-in-law"
+        },
+        {
+          "mode": "Indicative",
+          "skiri_form": "taackurus",
+          "english_translation": "she has her as a female in-law; she is her daughter-in-law/sister-in-law"
+        },
+        {
+          "mode": "Gerundial",
+          "skiri_form": "raackurusu",
+          "english_translation": "the one who has her as a female in-law; her daughter-in-law/sister-in-law"
+        }
+      ],
+      "notes": "i.e., as a mother-in-law, daughter-in-law, sister-in-law, mother's brother's wife (female speaking)"
+    },
+    {
+      "english_term": "son-in-law",
+      "skiri_term": "kustawihcuʔ",
+      "grammatical_class": "N-KIN",
+      "possessive_forms": null,
+      "verb_construction": null,
+      "notes": "not inflected for person; used vocatively and referentially"
+    }
+  ]
+}

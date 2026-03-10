@@ -1,6 +1,6 @@
 ======================================================================
 Phase 3.1 — Morpheme Inventory & Slot System Report
-Generated: 2026-03-08 23:00:18
+Generated: 2026-03-09 21:56:16
 ======================================================================
 
 1. VERB TEMPLATE STRUCTURE
@@ -18,92 +18,118 @@ Generated: 2026-03-08 23:00:18
    Abbreviations: 164 entries
    Grammatical Overview: 23 pages extracted
 
-3. VALIDATION AGAINST APPENDIX 1
-   Total forms tested: 770
-   Exact matches: 98 (12.7%)
-   Close matches (d<=2): 167 (21.7%)
-   Mismatches: 505 (65.6%)
+4. DICTIONARY PARADIGMATIC FORM VALIDATION
+   Total forms tested: 9583
+   Skipped: 41
+   Exact: 1420 (14.8%)
+   Exact (no accents): 10 (0.1%)
+   Close (d<=2): 4237 (44.2%)
+   Mismatch: 3916 (40.9%)
+
+   By form:
+     Form 1: 179/1619 exact (11%), +0 norm, +732 close
+     Form 2: 381/2237 exact (17%), +0 norm, +1180 close
+     Form 3: 257/1279 exact (20%), +8 norm, +614 close
+     Form 4: 401/2239 exact (18%), +0 norm, +875 close
+     Form 5: 202/2209 exact (9%), +2 norm, +836 close
+
+   By class (top 15):
+     VT(1)       : 486/1785 exact (27%), +1 norm, +926 close
+     VD(u)       : 19/1491 exact (1%), +0 norm, +493 close
+     VI(4)       : 204/1307 exact (16%), +0 norm, +814 close
+     VT(4)       : 86/787 exact (11%), +0 norm, +488 close
+     VI(1)       : 242/774 exact (31%), +0 norm, +252 close
+     VT(3)       : 3/741 exact (0%), +0 norm, +171 close
+     VL(wi)      : 32/384 exact (8%), +0 norm, +148 close
+     VI(3)       : 16/367 exact (4%), +0 norm, +182 close
+     VP(4)       : 20/228 exact (9%), +0 norm, +123 close
+     VT(2-i)     : 55/173 exact (32%), +0 norm, +54 close
+     VI(1-a)     : 36/159 exact (23%), +0 norm, +73 close
+     VI(1-i)     : 35/148 exact (24%), +0 norm, +84 close
+     VP(1)       : 10/138 exact (7%), +3 norm, +60 close
+     VI(2-i)     : 19/112 exact (17%), +0 norm, +71 close
+     VP(1-i)     : 17/112 exact (15%), +0 norm, +54 close
 
    Sample mismatches (first 20):
-   to come         indicative_perfective               1du_incl    
-     Expected:  tacíhwaʔaʔ
-     Predicted: sitaaciriiraʔ
-     Breakdown: si(DU) + ta(MODE) + acir(INCLUSIVE) + iir(PREV) + aʔ(STEM)
-   to come         indicative_perfective               1du_excl    
-     Expected:  sitatíhwaʔaʔ
-     Predicted: sitatihiiraʔ
-     Breakdown: si(DU) + ta(MODE) + t(AGENT) + ih(PAT_COMPOUND) + iir(PREV) + aʔ(STEM)
-   to come         indicative_perfective               2du         
-     Expected:  sitasíhwaʔaʔ
-     Predicted: sitasihiiraʔ
-     Breakdown: si(DU) + ta(MODE) + s(AGENT) + ih(PAT_COMPOUND) + iir(PREV) + aʔ(STEM)
-   to come         indicative_perfective               3du         
-     Expected:  sitawaʔaʔ
-     Predicted: sitaaʔ
-     Breakdown: si(DU) + ti(MODE) + a(PREV) + aʔ(STEM)
-   to come         indicative_perfective               1pl_incl    
-     Expected:  tataraakaahuʔ
-     Predicted: taaraakiiraʔ
-     Breakdown: ta(MODE) + a(INCLUSIVE) + raak(PL) + iir(PREV) + aʔ(STEM)
-   to come         indicative_perfective               1pl_excl    
-     Expected:  tatíraakaahuʔ
-     Predicted: tatiraakiiraʔ
-     Breakdown: ta(MODE) + t(AGENT) + iraak(PL) + iir(PREV) + aʔ(STEM)
-   to come         indicative_perfective               2pl         
-     Expected:  tasíraakaahuʔ
-     Predicted: tasiraakiiraʔ
-     Breakdown: ta(MODE) + s(AGENT) + iraak(PL) + iir(PREV) + aʔ(STEM)
-   to come         negative_indicative_perfective      1du_incl    
-     Expected:  kaakaacíhwaʔaʔ
-     Predicted: sikaakaaciriiraʔ
-     Breakdown: si(DU) + kaaka(MODE) + acir(INCLUSIVE) + iir(PREV) + aʔ(STEM)
-   to come         negative_indicative_perfective      1du_excl    
-     Expected:  síkaakaatíhwaʔaʔ
-     Predicted: sikaakatihiiraʔ
-     Breakdown: si(DU) + kaaka(MODE) + t(AGENT) + ih(PAT_COMPOUND) + iir(PREV) + aʔ(STEM)
-   to come         negative_indicative_perfective      2du         
-     Expected:  síkaakaasíhwaʔaʔ
-     Predicted: sikaakasihiiraʔ
-     Breakdown: si(DU) + kaaka(MODE) + s(AGENT) + ih(PAT_COMPOUND) + iir(PREV) + aʔ(STEM)
-   to come         negative_indicative_perfective      3du         
-     Expected:  síkaakaawaʔaʔ
-     Predicted: sikaakaaʔ
-     Breakdown: si(DU) + kaaki(MODE) + a(PREV) + aʔ(STEM)
-   to come         negative_indicative_perfective      1pl_incl    
-     Expected:  kaakaataraakaahuʔ
-     Predicted: kaakaaraakiiraʔ
-     Breakdown: kaaka(MODE) + a(INCLUSIVE) + raak(PL) + iir(PREV) + aʔ(STEM)
-   to come         negative_indicative_perfective      1pl_excl    
-     Expected:  kaakaatíraakaahuʔ
-     Predicted: kaakatiraakiiraʔ
-     Breakdown: kaaka(MODE) + t(AGENT) + iraak(PL) + iir(PREV) + aʔ(STEM)
-   to come         negative_indicative_perfective      2pl         
-     Expected:  kaakaasíraakaahuʔ
-     Predicted: kaakasiraakiiraʔ
-     Breakdown: kaaka(MODE) + s(AGENT) + iraak(PL) + iir(PREV) + aʔ(STEM)
-   to come         contingent_perfective               1du_incl    
-     Expected:  icíhwaʔaʔ
-     Predicted: siiciriiraʔ
-     Breakdown: si(DU) + i(MODE) + acir(INCLUSIVE) + iir(PREV) + aʔ(STEM)
-   to come         contingent_perfective               1du_excl    
-     Expected:  siʔitíhwaʔaʔ
-     Predicted: siitihiiraʔ
-     Breakdown: si(DU) + i(MODE) + t(AGENT) + ih(PAT_COMPOUND) + iir(PREV) + aʔ(STEM)
-   to come         contingent_perfective               2du         
-     Expected:  siʔisíhwaʔaʔ
-     Predicted: siisihiiraʔ
-     Breakdown: si(DU) + i(MODE) + s(AGENT) + ih(PAT_COMPOUND) + iir(PREV) + aʔ(STEM)
-   to come         contingent_perfective               3du         
-     Expected:  sirawaʔaʔ
-     Predicted: siraaʔ
-     Breakdown: si(DU) + ri(MODE) + a(PREV) + aʔ(STEM)
-   to come         contingent_perfective               1pl_incl    
-     Expected:  itaraakaahuʔ
-     Predicted: iiraakiiraʔ
-     Breakdown: i(MODE) + a(INCLUSIVE) + raak(PL) + iir(PREV) + aʔ(STEM)
-   to come         contingent_perfective               1pl_excl    
-     Expected:  itíraakaahuʔ
-     Predicted: itiraakiiraʔ
-     Breakdown: i(MODE) + t(AGENT) + iraak(PL) + iir(PREV) + aʔ(STEM)
+     [VL(wi)] (r)aak/(r)aaʔak form_2
+       Expected:  turaaʔat
+       Predicted: tuur(r)aak/(r)aaʔak
+       Breakdown: ti(MODE) + uur(PREV) + (r)aak/(r)aaʔak(STEM)
+     [VL(wi)] (r)aak/(r)aaʔak form_4
+       Expected:  iriiruraapi
+       Predicted: iriiruur(r)aak/(r)aaʔaka
+       Breakdown: irii(GER) + ra(MODE) + uur(PREV) + (r)aak/(r)aaʔak(STEM) + a(SUB)
+     [VL(wi)] (r)aak/(r)aaʔak form_5
+       Expected:  turaapista
+       Predicted: tuur(r)aak/(r)aaʔakista
+       Breakdown: ti(MODE) + uur(PREV) + (r)aak/(r)aaʔak(STEM) + his(PERF.INT) + ta(INT)
+     [VT(1)] (r)aapuh form_1
+       Expected:  taturaapu
+       Predicted: tatuur(r)aapuh
+       Breakdown: ta(MODE) + t(AGENT) + uur(PREV) + (r)aapuh(STEM)
+     [VT(1)] (r)aapuh form_2
+       Expected:  turaapu
+       Predicted: tuur(r)aapuh
+       Breakdown: ti(MODE) + uur(PREV) + (r)aapuh(STEM)
+     [VT(1)] (r)aapuh form_3
+       Expected:  turaapuhuʔ
+       Predicted: tuur(r)aapuhuʔ
+       Breakdown: ti(MODE) + uur(PREV) + (r)aapuh(STEM) + huʔ(IMPF)
+     [VT(1)] (r)aapuh form_4
+       Expected:  iriiruraapuha
+       Predicted: iriiruur(r)aapuha
+       Breakdown: irii(GER) + ra(MODE) + uur(PREV) + (r)aapuh(STEM) + a(SUB)
+     [VT(1)] (r)aapuh form_5
+       Expected:  turaapista
+       Predicted: tuur(r)aapuhista
+       Breakdown: ti(MODE) + uur(PREV) + (r)aapuh(STEM) + his(PERF.INT) + ta(INT)
+     [VL(wi)] a form_4
+       Expected:  iriiraawi
+       Predicted: iriirahaa
+       Breakdown: irii(GER) + ra(MODE) + h(3PM) + a(STEM) + a(SUB)
+     [VL(wi)] a form_5
+       Expected:  tiiwista
+       Predicted: tihahista
+       Breakdown: ti(MODE) + h(3PM) + a(STEM) + his(PERF.INT) + ta(INT)
+     [VL(wi)] a form_4
+       Expected:  iriruurawi
+       Predicted: iriiruuraa
+       Breakdown: irii(GER) + ra(MODE) + uur(PREV) + a(STEM) + a(SUB)
+     [VI(3)] a (ir...) istuʔ form_1
+       Expected:  tatiiraʔ istuʔ
+       Predicted: tata (ir...) istuʔ
+       Breakdown: ta(MODE) + t(AGENT) + a (ir...) istuʔ(STEM)
+     [VI(3)] a (ir...) istuʔ form_2
+       Expected:  taaʔ istuʔ
+       Predicted: tii (ir...) istuʔ
+       Breakdown: ti(MODE) + a (ir...) istuʔ(STEM)
+     [VI(3)] a (ir...) istuʔ form_3
+       Expected:  taʔaahuʔ istuʔ
+       Predicted: tii (ir...) istuʔuʔ
+       Breakdown: ti(MODE) + a (ir...) istuʔ(STEM) + huʔ(IMPF)
+     [VI(3)] a (ir...) istuʔ form_4
+       Expected:  iriiraʔa istuʔ
+       Predicted: iriiraa (ir...) istuʔaha
+       Breakdown: irii(GER) + ra(MODE) + a (ir...) istuʔ(STEM) + aha(SUB)
+     [VI(3)] a (ir...) istuʔ form_5
+       Expected:  taahista istuʔ
+       Predicted: tii (ir...) istuʔista
+       Breakdown: ti(MODE) + a (ir...) istuʔ(STEM) + his(PERF.INT) + ta(INT)
+     [VI(1)] aah form_2
+       Expected:  tiʔaa
+       Predicted: tiih
+       Breakdown: ti(MODE) + aah(STEM)
+     [VI(1)] aah form_3
+       Expected:  tiʔaahuʔ
+       Predicted: tiihuʔ
+       Breakdown: ti(MODE) + aah(STEM) + huʔ(IMPF)
+     [VI(1)] aah form_5
+       Expected:  tiʔaahista
+       Predicted: tiihista
+       Breakdown: ti(MODE) + aah(STEM) + his(PERF.INT) + ta(INT)
+     [VL(wi)] aahka form_4
+       Expected:  iriiraʔaahkawi
+       Predicted: iriirahaahkaa
+       Breakdown: irii(GER) + ra(MODE) + h(3PM) + aahka(STEM) + a(SUB)
 
 ======================================================================

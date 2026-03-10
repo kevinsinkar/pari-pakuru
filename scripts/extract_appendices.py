@@ -7,6 +7,7 @@ PyMuPDF (fitz) for rendering and Gemini for OCR.
 
 Appendix 1: 7 verbs × 10 modes × 11 person/number = ~770 forms
 Appendix 2: Irregular dual/plural verb roots (~9 entries)
+Appendix 3: Kinship terminology — consanguineal and affinal (~40 terms)
 Also: Abbreviations (PDF 01) and Grammatical Overview (PDF 04)
 
 Usage:
@@ -59,6 +60,7 @@ log = logging.getLogger(__name__)
 PDF_DIR = Path("Dictionary Data/Dictionary PDF Split")
 APPENDIX1_PDF = PDF_DIR / "Appendix 1 - Illustrative Skiri Verb Conjugations.pdf"
 APPENDIX2_PDF = PDF_DIR / "Appendix 2 - Verb Roots with Irregular Dual or Plural Agents.pdf"
+APPENDIX3_PDF = PDF_DIR / "Appendix 3 - Kinship Terminology - Consanguineal and Affinal.pdf"
 ABBREV_PDF = PDF_DIR / "01-Abbreviations_and_Sound_Key.pdf"
 GRAMMAR_PDF = PDF_DIR / "04-Grammatical_Overview.pdf"
 
@@ -451,6 +453,130 @@ def extract_appendix2(client, resume=False):
 
 
 # ---------------------------------------------------------------------------
+# Appendix 3: Kinship Terminology — Consanguineal and Affinal
+# ---------------------------------------------------------------------------
+
+APPENDIX3_SYSTEM = """You are an expert linguistic OCR assistant specializing in Skiri Pawnee.
+You are reading "Appendix 3: Kinship Terminology — Consanguineal and Affinal"
+from the Parks Skiri Pawnee dictionary.
+
+This appendix lists kinship terms organized in tables. Each term includes:
+- The English kinship relationship (e.g., "father", "mother's brother")
+- The Skiri Pawnee term (headword)
+- Possessive/vocative paradigm forms (my X, your X, his/her X, vocative form)
+- Some terms are verb-based constructions (e.g., aktaku "to have as spouse")
+
+IMPORTANT OCR notes for Skiri Pawnee:
+- Glottal stop: transcribe as ʔ (U+0294), NOT as apostrophe
+- Long vowels: aa, ii, uu (doubled letters)
+- The letter c represents /ts/
+- Accent marks (á, í, ú) indicate high pitch — preserve exactly
+- Preserve EXACT spelling — do NOT normalize or correct
+- Some entries may have parenthetical notes or cross-references
+
+The kinship terms are split into two categories:
+1. Consanguineal (blood relatives): father, mother, brother, sister, etc.
+2. Affinal (marriage relatives): spouse, in-laws, etc.
+
+Return JSON:
+{
+  "category": "consanguineal" or "affinal",
+  "terms": [
+    {
+      "english_term": "father",
+      "skiri_term": "aatiiʔa",
+      "grammatical_class": "N-KIN",
+      "possessive_forms": {
+        "my": "aatiiʔa",
+        "your": "aatiiʔa",
+        "his_her": "raatiiʔa",
+        "vocative": "atiiʔa"
+      },
+      "verb_construction": null,
+      "notes": "any additional notes"
+    }
+  ]
+}
+
+IMPORTANT: Not all entries will have all possessive forms. Include whatever
+forms are visible on the page. If a field is not present, use null."""
+
+APPENDIX3_PROMPT = """Extract ALL kinship terminology entries from this page.
+Each entry should include the English relationship term, the Skiri Pawnee term,
+and any possessive/vocative paradigm forms shown. Carefully transcribe all
+Pawnee text using proper IPA glottal stops (ʔ) and preserving accent marks.
+Return as JSON."""
+
+
+def extract_appendix3(client, resume=False):
+    """Extract kinship terminology from Appendix 3."""
+    log.info("=== Extracting Appendix 3: Kinship Terminology ===")
+
+    checkpoint = _load_checkpoint(CHECKPOINT_FILE) if resume else {}
+    kinship_data = checkpoint.get("appendix3", {})
+
+    doc = fitz.open(str(APPENDIX3_PDF))
+    num_pages = len(doc)
+    doc.close()
+    log.info(f"Appendix 3 PDF: {num_pages} pages")
+
+    all_terms = []
+
+    for page_idx in range(num_pages):
+        page_key = f"page_{page_idx + 1}"
+
+        if page_key in kinship_data and kinship_data[page_key]:
+            if resume:
+                log.info(f"  Page {page_idx + 1}: already extracted (skipping)")
+                page_result = kinship_data[page_key]
+            else:
+                page_result = None
+        else:
+            page_result = None
+
+        if page_result is None:
+            log.info(f"  Page {page_idx + 1}: rendering and sending to Gemini...")
+            png_bytes = _pdf_page_to_png(APPENDIX3_PDF, page_idx, dpi=300)
+
+            page_result = _call_gemini_with_image(
+                client, png_bytes, APPENDIX3_PROMPT, APPENDIX3_SYSTEM
+            )
+
+            if page_result is None:
+                log.warning(f"  Page {page_idx + 1}: extraction failed!")
+                continue
+
+            kinship_data[page_key] = page_result
+            checkpoint["appendix3"] = kinship_data
+            _save_checkpoint(CHECKPOINT_FILE, checkpoint)
+
+        # Collect terms
+        if isinstance(page_result, dict):
+            terms = page_result.get("terms", [])
+            all_terms.extend(terms)
+            log.info(f"  Page {page_idx + 1}: {len(terms)} terms")
+        elif isinstance(page_result, list):
+            all_terms.extend(page_result)
+            log.info(f"  Page {page_idx + 1}: {len(page_result)} terms")
+
+    log.info(f"Total kinship terms extracted: {len(all_terms)}")
+
+    # Save output
+    OUTPUT_DIR.mkdir(exist_ok=True)
+    output = {
+        "total_terms": len(all_terms),
+        "pages_extracted": num_pages,
+        "terms": all_terms,
+    }
+    out_path = OUTPUT_DIR / "appendix3_kinship.json"
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(output, f, ensure_ascii=False, indent=2)
+    log.info(f"Saved to {out_path}")
+
+    return output
+
+
+# ---------------------------------------------------------------------------
 # Abbreviations & Sound Key (PDF 01)
 # ---------------------------------------------------------------------------
 
@@ -796,6 +922,8 @@ def main():
                         help="Extract Appendix 1 verb conjugations")
     parser.add_argument("--appendix2", action="store_true",
                         help="Extract Appendix 2 irregular roots")
+    parser.add_argument("--appendix3", action="store_true",
+                        help="Extract Appendix 3 kinship terminology")
     parser.add_argument("--abbreviations", action="store_true",
                         help="Extract abbreviations from PDF 01")
     parser.add_argument("--grammar", action="store_true",
@@ -814,8 +942,8 @@ def main():
         import_to_db(args.db)
         return
 
-    if not any([args.appendix1, args.appendix2, args.abbreviations,
-                args.grammar, args.all]):
+    if not any([args.appendix1, args.appendix2, args.appendix3,
+                args.abbreviations, args.grammar, args.all]):
         parser.print_help()
         return
 
@@ -826,6 +954,9 @@ def main():
 
     if args.appendix2 or args.all:
         extract_appendix2(client, resume=args.resume)
+
+    if args.appendix3 or args.all:
+        extract_appendix3(client, resume=args.resume)
 
     if args.abbreviations or args.all:
         extract_abbreviations(client, resume=args.resume)

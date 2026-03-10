@@ -211,7 +211,7 @@ PERSON_NUMBER_PREFIXES = {
         "dual": True,
     },
     "1pl_incl": {
-        "agent": "",            # slot 11: Ø
+        "agent": "t",           # slot 11: 1.A (t-) — same as 1sg/1pl_excl
         "inclusive": "a",        # slot 12: 1.PL.IN.A (a- for plural)
         "pl_marker": "raak",    # slot 13 or later: 1/2.PL (rak-/raak-)
         "person_group": "1/2",
@@ -244,11 +244,11 @@ VERB_CLASSES = {
     "1-i": {"sub_suffix": "i",   "desc": "Class 1-i: -i (imperfective)"},
     "2":   {"sub_suffix": "i",   "desc": "Class 2: subordinate suffix -i"},
     "2-i": {"sub_suffix": "i",   "desc": "Class 2-i: -i (imperfective)"},
-    "3":   {"sub_suffix": None,  "desc": "Class 3: final syllable change"},
+    "3":   {"sub_suffix": "aha",  "desc": "Class 3: subordinate suffix -aha"},
     "4":   {"sub_suffix": "",    "desc": "Class 4: no stem change (zero suffix)"},
     "4-i": {"sub_suffix": "",    "desc": "Class 4-i: -i (imperfective)"},
-    "u":   {"sub_suffix": "u",   "desc": "Descriptive verb: suffix -u"},
-    "wi":  {"sub_suffix": "wi",  "desc": "Locative verb: suffix -wi"},
+    "u":   {"sub_suffix": "a",   "desc": "Descriptive verb: suffix -a (same as class 1)"},
+    "wi":  {"sub_suffix": "a",   "desc": "Locative verb: suffix -a (same as class 1)"},
 }
 
 # Aspect suffixes
@@ -285,6 +285,68 @@ THIRD_PL_SUB_SUFFIXES = {
 # what appears to be a mode/aspect prefix irii-
 
 GERUNDIAL_PREFIX = "iriira"  # combined irii- + ra- after sound changes
+
+
+# ---------------------------------------------------------------------------
+# Suppletive Stem System
+# ---------------------------------------------------------------------------
+# Many verbs use different stems in dual and/or plural number.
+# Keys: verb stem (singular) -> {"du_stem": ..., "pl_stem": ..., "du_incl_stem": ...}
+# "du_incl_stem" is used when 1du_incl has a different stem from other duals.
+# If a key is None, the singular stem is used for that number.
+
+SUPPLETIVE_STEMS = {
+    # "to come": sg aʔ, du waʔaʔ (non-sub) / waʔa (sub)
+    "aʔ": {
+        "du_stem": "waʔaʔ",
+        "du_stem_sub": "waʔa",
+        "pl_stem": None,        # plural uses sg stem + 3pl suffix
+        "pl_absorbs_raak": False,  # raak- IS used in plural (preverb+stem dropped instead)
+    },
+    # "to do it": sg uutaar, du iitaar (incl) / uutaar (excl), pl uuhaakaa
+    "uutaar": {
+        "du_incl_stem": "iitaar",
+        "du_stem": None,        # excl/2du/3du use sg stem
+        "pl_stem": "uuhaakaar",
+        "pl3_stem": "iitaar",   # 3pl uses same as du_incl (final r for Rule 23)
+        "pl_absorbs_raak": True,  # raak absorbed into suppletive stem
+    },
+    # "to go": sg ʔat, du war, pl wuu/at
+    # Agent+stem fusions in dual: t+war→tpa, s+war→spa (w→p after consonant)
+    "ʔat": {
+        "du_stem": "war",       # underlying 'war', final r handled by Rule 23
+        "du_agent_fusions": {   # agent+stem fusions for dual
+            "t": "tpa",         # 1du_excl: t- + war → tpa
+            "s": "spa",         # 2du: s- + war → spa
+        },
+        "pl_stem": "wuu",
+        "pl_absorbs_raak": False,  # raak- still needed
+        "notes": "Highly irregular. Du 1du_excl/2du use special agent+stem fusions.",
+    },
+    # "to be good": sg hiir, du hiir (same), pl iwaa (suppletive)
+    "hiir": {
+        "du_stem": None,
+        "pl_stem": "iwaa",
+        "pl_absorbs_raak": False,  # raak- still needed before iwaa
+    },
+    # "to have it": sg raa, du/pl same — Class 3 uses si- for ALL non-sg
+    "raa": {
+        "du_stem": None,
+        "pl_stem": None,
+        "pl_uses_si": True,     # Class 3: plural uses si- (like dual)
+        "pl_absorbs_raak": True,  # no raak- used
+    },
+}
+
+# Preverb behavior in dual/plural:
+# - ir- preverb: absent in du/pl for most persons (absorbed into stem complex)
+# - uur- preverb: retained in dual, may combine with raak- in plural
+# - ut- preverb: fused into stem (doesn't change)
+PREVERB_DUAL_BEHAVIOR = {
+    "ir": "absent_in_dual",     # preverb disappears, stem includes du form
+    "uur": "retained",          # preverb kept
+    "ut": "fused",              # already in stem
+}
 
 
 # ---------------------------------------------------------------------------
@@ -327,39 +389,135 @@ def _smart_concatenate(morph_forms, morpheme_tuples):
        → ta-/ra-/a- (i replaced by a). This is a restricted rule specific
        to the mode+preverb boundary.
 
-    2. Glottal epenthesis: when a vowel-final prefix meets a vowel-initial
-       stem with no intervening morpheme, a ʔ may be inserted (for some verbs
-       this is inherent in the stem, e.g., stem 'ʔat' for 'to go').
+    2. Same-vowel contraction at MODE+INCLUSIVE boundary:
+       ta + acir → tacir (a+a → a)
+
+    3. r → h before consonants at morpheme boundaries:
+       acir + waʔaʔ → acihwaʔaʔ (inclusive before consonant-initial stem)
     """
     if not morph_forms:
         return ""
 
-    # Find which morphemes are MODE vs PREV vs STEM by slot label
-    slot_labels = {m[1]: (i, m[2]) for i, m in enumerate(morpheme_tuples)}
+    # Build a mapping from label to (position_in_morph_forms, form)
+    # morpheme_tuples is list of (slot, label, form)
+    label_to_pos = {}
+    for i, m in enumerate(morpheme_tuples):
+        if m[2]:  # has a form
+            pos = None
+            # Find position in morph_forms (match by form value)
+            for j, mf in enumerate(morph_forms):
+                if mf == m[2] and j not in label_to_pos.values():
+                    pos = j
+                    break
+            if pos is not None:
+                label_to_pos[m[1]] = pos
 
     result_parts = list(morph_forms)
 
     # Rule 2R: Modal + a-preverb contraction
     # When MODE ends in 'i' and the immediately following morpheme is 'a' (PREV.3.A),
     # the 'i' of the mode prefix is replaced by 'a', and the a-preverb merges.
-    if "MODE" in slot_labels and "PREV" in slot_labels:
-        mode_idx, mode_form = slot_labels["MODE"]
-        prev_idx, prev_form = slot_labels["PREV"]
-
-        # Check if mode and prev are adjacent (no other morpheme between them)
-        # In 3sg: mode is immediately before preverb (no agent prefix)
+    mode_pos = label_to_pos.get("MODE")
+    prev_pos = label_to_pos.get("PREV")
+    if mode_pos is not None and prev_pos is not None:
+        mode_form = result_parts[mode_pos]
+        prev_form = result_parts[prev_pos]
         if prev_form == "a" and mode_form.endswith("i"):
-            # Adjacency check: they must be consecutive in morph_forms
-            mode_pos = morph_forms.index(mode_form) if mode_form in morph_forms else -1
-            prev_pos = morph_forms.index(prev_form) if prev_form in morph_forms else -1
             if prev_pos == mode_pos + 1:
-                # ti + a → ta, ri + a → ra, ii + a → a, kaaki + a → kaaka
+                # ii + a → a (subjunctive: mode disappears, preverb stays)
                 if mode_form == "ii":
                     result_parts[mode_pos] = ""
                     # 'a' stays as is
+                # rii + a → raa (long vowel ii → aa)
+                elif mode_form.endswith("ii"):
+                    result_parts[mode_pos] = mode_form[:-2] + "aa"
+                    result_parts[prev_pos] = ""  # absorbed into mode
+                # ti + a → ta, ri + a → ra, kaaki + a → kaaka (single i → a)
                 elif mode_form.endswith("i"):
                     result_parts[mode_pos] = mode_form[:-1] + "a"
                     result_parts[prev_pos] = ""  # absorbed into mode
+
+    # MODE + INCLUSIVE boundary contraction:
+    # The initial 'a' of acir/a (inclusive prefix) is absorbed at the boundary.
+    # i + acir → i + cir (a absorbed); ta + acir → ta + cir; rii + acir → rii + cir
+    # kaaka + acir → kaaka + cir; etc.
+    incl_pos = label_to_pos.get("INCLUSIVE")
+    if mode_pos is not None and incl_pos is not None:
+        incl_form = result_parts[incl_pos]
+        if incl_form and incl_form.startswith("a"):
+            # Find the morpheme immediately before inclusive
+            pre_incl = None
+            for k in range(incl_pos - 1, -1, -1):
+                if result_parts[k]:
+                    pre_incl = k
+                    break
+            if pre_incl is not None and pre_incl == incl_pos - 1:
+                pre_form = result_parts[pre_incl]
+                if pre_form and (pre_form.endswith("a") or pre_form.endswith("i")):
+                    # Drop the initial 'a' of inclusive (it's absorbed)
+                    result_parts[incl_pos] = incl_form[1:]
+
+    # Mode vowel shortening: long vowels (ii, aa) in mode prefix shorten
+    # when followed by consonant agent prefix + vowel-initial morpheme.
+    # e.g., rii + t + iir → ri + t + iir = ritiir (not riitiir)
+    #        aa + t + uutaar → a + t + uutaar = atuutaar (not aatuutaar)
+    agent_pos = label_to_pos.get("AGENT")
+    VOWELS = set("aiuAIU")
+    if mode_pos is not None and agent_pos is not None:
+        mode_form = result_parts[mode_pos]
+        if mode_form and agent_pos == mode_pos + 1:
+            shorten = False
+            if mode_form.endswith("ii") or mode_form.endswith("aa"):
+                # Check what follows the agent
+                for k in range(agent_pos + 1, len(result_parts)):
+                    if result_parts[k]:
+                        if result_parts[k][0] in VOWELS:
+                            shorten = True
+                        break
+            if shorten:
+                result_parts[mode_pos] = mode_form[:-1]
+
+    # Potential mode shortening: kuus/kaas shorten to kus/kas before POT.i + vowel
+    # e.g., kuus + i + uur → kus + i + uur (kusuuhii, not kuusuuhii)
+    pot_pos = label_to_pos.get("POT.i")
+    if mode_pos is not None and pot_pos is not None:
+        mode_form = result_parts[mode_pos]
+        if mode_form in ("kuus", "kaas"):
+            # Check what follows POT.i
+            for k in range(pot_pos + 1, len(result_parts)):
+                if result_parts[k]:
+                    if result_parts[k][0] in VOWELS:
+                        # Shorten: kuus → kus, kaas → kas
+                        result_parts[mode_pos] = mode_form[0] + mode_form[2:]
+                    break
+
+    # GER prefix shortening: irii + ra + C(agent) + V → iri + ra + C + V
+    # When the gerundial prefix irii- is followed by ra- (MODE) and then
+    # a consonant agent + vowel-initial morpheme, irii shortens to iri.
+    ger_pos = label_to_pos.get("GER")
+    if ger_pos is not None and agent_pos is not None:
+        ger_form = result_parts[ger_pos]
+        if ger_form and ger_form.endswith("ii"):
+            # Check if agent is followed by vowel-initial morpheme
+            shorten_ger = False
+            for k in range(agent_pos + 1, len(result_parts)):
+                if result_parts[k]:
+                    if result_parts[k][0] in VOWELS:
+                        shorten_ger = True
+                    break
+            if shorten_ger:
+                result_parts[ger_pos] = ger_form[:-1]
+
+    # r → h before consonants at morpheme boundaries
+    # This affects: acir + C... → acih + C..., and other r-final morphemes
+    CONSONANTS = set("ptkcčswhʔrn")
+    for i in range(len(result_parts) - 1):
+        curr = result_parts[i]
+        nxt = result_parts[i + 1]
+        if curr and nxt and curr.endswith("r") and nxt[0] in CONSONANTS:
+            # Exception: r + r → degemination (handled by unrestricted rules)
+            if nxt[0] != "r":
+                result_parts[i] = curr[:-1] + "h"
 
     return "".join(p for p in result_parts if p)
 
@@ -382,6 +540,46 @@ def _get_preverb_form(preverb, person_number):
     return preverb
 
 
+def _get_number_type(person_number):
+    """Get the number type: 'sg', 'du', or 'pl'."""
+    if "du" in person_number:
+        return "du"
+    elif "pl" in person_number:
+        return "pl"
+    return "sg"
+
+
+def _select_stem(stem, person_number, subordinate=False):
+    """Select the appropriate stem form based on number (sg/du/pl).
+
+    Uses SUPPLETIVE_STEMS lookup for known verbs with du/pl alternations.
+    Returns (actual_stem, stem_note) where stem_note describes the selection.
+    """
+    num_type = _get_number_type(person_number)
+    suppl = SUPPLETIVE_STEMS.get(stem)
+
+    if not suppl or num_type == "sg":
+        return stem, None
+
+    if num_type == "du":
+        # Check for inclusive-specific dual stem
+        if person_number == "1du_incl" and suppl.get("du_incl_stem"):
+            return suppl["du_incl_stem"], "du_incl_suppletive"
+        du_stem = suppl.get("du_stem")
+        if subordinate and suppl.get("du_stem_sub"):
+            du_stem = suppl["du_stem_sub"]
+        return (du_stem or stem), ("du_suppletive" if du_stem else None)
+
+    if num_type == "pl":
+        # Check for 3pl-specific stem
+        if person_number == "3pl" and suppl.get("pl3_stem"):
+            return suppl["pl3_stem"], "pl3_suppletive"
+        pl_stem = suppl.get("pl_stem")
+        return (pl_stem or stem), ("pl_suppletive" if pl_stem else None)
+
+    return stem, None
+
+
 def conjugate(stem, verb_class, mode, person_number, aspect="perfective",
               preverb=None, subordinate=False, intentive=False):
     """
@@ -402,11 +600,32 @@ def conjugate(stem, verb_class, mode, person_number, aspect="perfective",
     """
     pn_info = PERSON_NUMBER_PREFIXES.get(person_number, {})
     morphemes = []  # List of (slot, label, form)
+    num_type = _get_number_type(person_number)
+    # Descriptive verbs WITHOUT a preverb (like "to be sick") use ku-proclitic
+    # person marking. Descriptive verbs WITH a preverb (like "to be good" with
+    # uur-) use standard agent prefix person marking.
+    is_descriptive_ku = verb_class in ("u", "wi") and not preverb
+
+    # --- Select stem based on number ---
+    actual_stem, stem_note = _select_stem(stem, person_number, subordinate)
 
     # --- Proclitics ---
-    # Dual proclitic
-    if pn_info.get("dual"):
+    # Dual proclitic: si- for 1du_excl, 2du, 3du ONLY (NOT 1du_incl)
+    if pn_info.get("dual") and person_number != "1du_incl":
         morphemes.append((5, "DU", "si"))
+    # Class 3 verbs: si- also used for ALL plural forms (plural = dual pattern)
+    suppl_info = SUPPLETIVE_STEMS.get(stem, {})
+    if num_type == "pl" and suppl_info.get("pl_uses_si"):
+        morphemes.append((5, "DU", "si"))
+
+    # Descriptive verbs (no preverb): ALL 1st-person forms use ku- INDF
+    # ku- appears AFTER the mode prefix (not as a proclitic), in slot 12.5
+    # (between INCLUSIVE slot 12 and PL slot 13).
+    # Pattern: 1sg, 1du_incl, 1du_excl, 1pl_incl, 1pl_excl all get ku-
+    # 2nd and 3rd person forms do NOT get ku-.
+    if is_descriptive_ku and person_number in ("1sg", "1du_incl", "1du_excl",
+                                                "1pl_incl", "1pl_excl"):
+        morphemes.append((12.5, "INDF", "ku"))
 
     # --- Modal prefix (slot 10) ---
     actual_mode = mode
@@ -420,37 +639,95 @@ def conjugate(stem, verb_class, mode, person_number, aspect="perfective",
         elif mode == "infinitive":
             actual_mode = "infinitive_sub"
 
-    modal = get_modal_prefix(actual_mode, person_number)
+    # Descriptive verbs (no preverb) use different person→mode mapping:
+    # 1sg uses MODE.3 form (not 1/2), 2sg uses MODE.1/2, 3sg uses MODE.3
+    if is_descriptive_ku:
+        # Descriptive verbs (no preverb): exclusive 1st-person forms use
+        # 3rd person modal form (ti- not ta- for indicative).
+        # Inclusive forms (1du_incl, 1pl_incl) use 1/2 person form (ta-).
+        if person_number in ("1sg", "1du_excl", "1pl_excl"):
+            modal = get_modal_prefix(actual_mode, "3sg")
+        else:
+            modal = get_modal_prefix(actual_mode, person_number)
+    else:
+        modal = get_modal_prefix(actual_mode, person_number)
 
     # Special handling for gerundial: uses irii- + ra- compound prefix
+    # Decomposed: irii (GER marker, slot 9) + ra (ABS mode, slot 10)
     if actual_mode == "gerundial":
-        morphemes.append((10, "GER", GERUNDIAL_PREFIX))
+        morphemes.append((9, "GER", "irii"))
+        morphemes.append((10, "MODE", "ra"))
     else:
         if modal:
             morphemes.append((10, "MODE", modal))
 
     # --- Agent prefix (slot 11) ---
-    agent = pn_info.get("agent", "")
-    if agent:
-        morphemes.append((11, "AGENT", agent))
+    # Descriptive verbs WITHOUT preverb: NO agent prefixes (person marked via ku-)
+    # Potential 2nd person: kaas- already contains agent s, no separate agent
+    # Class 3 pl_uses_si verbs: 1pl_incl uses acir- (no separate agent t-)
+    suppl_info_agent = SUPPLETIVE_STEMS.get(stem, {})
+    pl_uses_si = suppl_info_agent.get("pl_uses_si", False)
+    if not is_descriptive_ku:
+        agent = pn_info.get("agent", "")
+        if agent:
+            # Skip agent for 2nd person potential (kaas- already includes s)
+            if mode == "potential" and person_number.startswith("2"):
+                pass  # kaas- already contains agent s
+            # Skip agent for 1pl_incl in pl_uses_si verbs (acir- handles it)
+            elif pl_uses_si and person_number == "1pl_incl":
+                pass  # acir- replaces agent+inclusive
+            else:
+                morphemes.append((11, "AGENT", agent))
+    else:
+        # 3sg descriptive: h- (3rd person patient marker) before stem
+        if person_number == "3sg" or person_number == "3du":
+            morphemes.append((11, "3PM", "h"))
 
     # --- Inclusive prefix (slot 12) ---
+    # For descriptive verbs, inclusive still applies
     inclusive = pn_info.get("inclusive", "")
-    if inclusive:
+    if is_descriptive_ku and person_number in ("1pl_incl", "1du_incl"):
+        # Descriptive-ku inclusive: uses aca- (not acir-)
+        # Evidence: tacakukiraawaʔ (1du_incl) and tacakuraakiraawaʔ (1pl_incl)
+        # show aca- not acir- before ku-. ku- already added at slot 12.5.
+        morphemes.append((12, "INCLUSIVE", "aca"))
+    elif pl_uses_si and person_number == "1pl_incl":
+        # Class 3 pl_uses_si: 1pl_incl uses acir- (same as 1du_incl)
+        # because plural collapses into dual pattern
+        morphemes.append((12, "INCLUSIVE", "acir"))
+    elif inclusive:
         morphemes.append((12, "INCLUSIVE", inclusive))
 
     # --- Plural/Possessor markers (slot 13) ---
+    # In plural, raak- appears for 1/2 person (not 3pl)
+    # Some verbs absorb raak- into their suppletive plural stem
     pl_marker = pn_info.get("pl_marker", "")
     if pl_marker:
-        morphemes.append((13, "PL", pl_marker))
+        suppl = SUPPLETIVE_STEMS.get(stem, {})
+        absorbs_raak = suppl.get("pl_absorbs_raak", False) if suppl else False
+        if not absorbs_raak:
+            # Descriptive-ku verbs: use raak only (strip ir- component)
+            # because ir- is the preverb, not applicable to descriptive verbs
+            if is_descriptive_ku and pl_marker == "iraak":
+                morphemes.append((13, "PL", "raak"))
+            else:
+                morphemes.append((13, "PL", pl_marker))
 
     # --- Potential mode inner -i- ---
     if mode == "potential":
         morphemes.append((13.5, "POT.i", "i"))
 
     # --- Patient compound for du exclusive/2du ---
+    # The 'ih' element in du_excl/2du comes from the preverb iir- reduced
+    # to ih- in dual context. Only add when there IS a preverb ir-.
     pat_compound = pn_info.get("patient_or_compound", "")
-    if pat_compound:
+    if pat_compound and preverb == "ir" and num_type == "du":
+        # Preverb ir- becomes ih- before dual consonant-initial stems
+        morphemes.append((15, "PAT_COMPOUND", pat_compound))
+    elif pat_compound and not preverb:
+        # For verbs without preverb, no ih element in dual
+        pass
+    elif pat_compound:
         morphemes.append((15, "PAT_COMPOUND", pat_compound))
 
     # --- Infinitive ku- (slot 16) ---
@@ -459,11 +736,52 @@ def conjugate(stem, verb_class, mode, person_number, aspect="perfective",
 
     # --- Preverb (slot 18) ---
     if preverb:
-        prev_form = _get_preverb_form(preverb, person_number)
-        morphemes.append((18, "PREV", prev_form))
+        prev_behavior = PREVERB_DUAL_BEHAVIOR.get(preverb, "retained")
+
+        if num_type == "du" and prev_behavior == "absent_in_dual":
+            # ir- preverb: for 3du use 3.A form (a-), for inclusive
+            # the preverb is absorbed into acir-, for excl/2du → ih (handled above)
+            if person_number == "3du":
+                # 3.A preverb form in dual context
+                prev_form = _get_preverb_form(preverb, person_number)
+                morphemes.append((18, "PREV", prev_form))
+            elif person_number == "1du_incl":
+                # Preverb absorbed — acir already contains the 'ir' element
+                pass
+            # 1du_excl, 2du: preverb → ih (handled via PAT_COMPOUND above)
+        elif num_type == "pl" and prev_behavior == "absent_in_dual":
+            # ir- preverb in plural: preverb+stem are replaced by
+            # raak+aahuʔ (the plural marker + 3pl suffix form the ending).
+            # The preverb and stem are NOT used separately.
+            if person_number == "3pl":
+                prev_form = _get_preverb_form(preverb, person_number)
+                morphemes.append((18, "PREV", prev_form))
+            # 1pl_incl, 1pl_excl, 2pl: no preverb — raak+aahuʔ replaces it
+        else:
+            # Non-alternating preverbs (uur-, ut-fused): use standard form
+            prev_form = _get_preverb_form(preverb, person_number)
+            morphemes.append((18, "PREV", prev_form))
+
+    # --- Agent+Stem fusions (slot 26) ---
+    # Some verbs have irregular agent+stem fusions in dual/plural.
+    # When a fusion exists, the agent prefix (slot 11) is removed and
+    # replaced by a fused agent+stem unit.
+    suppl_fusions = SUPPLETIVE_STEMS.get(stem, {})
+    du_fusions = suppl_fusions.get("du_agent_fusions", {})
+    agent_form = pn_info.get("agent", "")
+    if num_type == "du" and agent_form and agent_form in du_fusions:
+        # Replace agent + stem with fused form
+        morphemes = [(s, l, f) for s, l, f in morphemes if l != "AGENT"]
+        actual_stem = du_fusions[agent_form]
 
     # --- Stem (slot 26) ---
-    morphemes.append((26, "STEM", stem))
+    # For ir- preverb verbs in 1/2 plural, the stem is not used separately
+    # (raak + aahuʔ replaces preverb+stem). Check via pl_absorbs_raak flag.
+    skip_stem = False
+    if preverb == "ir" and num_type == "pl" and person_number != "3pl":
+        skip_stem = True  # ir- verbs: raak+aahuʔ replaces preverb+stem
+    if not skip_stem:
+        morphemes.append((26, "STEM", actual_stem))
 
     # --- Suffixes ---
     # Perfective aspect: -Ø for non-subordinate, class-dependent for subordinate
@@ -478,13 +796,43 @@ def conjugate(stem, verb_class, mode, person_number, aspect="perfective",
             morphemes.append((29, "INT", "ta"))
             if subordinate:
                 morphemes.append((30, "INT.SUB", "rit"))
+    elif aspect == "imperfective":
+        # Imperfective: -huʔ (non-sub) / -hu (sub)
+        if subordinate:
+            morphemes.append((27, "IMPF", "hu"))
+        else:
+            morphemes.append((27, "IMPF", "huʔ"))
+
+    # --- Plural suffix (aahuʔ) ---
+    # For ir- preverb verbs, 1/2 plural forms also get aahuʔ (it replaces preverb+stem)
+    if preverb == "ir" and num_type == "pl" and person_number != "3pl":
+        if subordinate:
+            morphemes.append((31, "PL_SUFFIX", "aahu"))
+        else:
+            morphemes.append((31, "PL_SUFFIX", "aahuʔ"))
 
     # --- 3pl suffix ---
     if pn_info.get("has_3pl_suffix"):
-        if subordinate:
-            morphemes.append((31, "3PL", "aahu"))
-        else:
-            morphemes.append((31, "3PL", "aahuʔ"))
+        # 3pl suffix depends on verb type:
+        # - Verbs with suppletive pl3_stem: suffix absorbed into stem
+        # - Descriptive verbs (class u): use -waa (non-sub) / -waara (sub)
+        # - Other intransitive: use -aahuʔ/-aahu
+        suppl = SUPPLETIVE_STEMS.get(stem, {})
+        has_pl3_stem = suppl.get("pl3_stem") is not None if suppl else False
+        uses_si_for_pl = suppl.get("pl_uses_si", False) if suppl else False
+
+        if not has_pl3_stem and not uses_si_for_pl:
+            if verb_class in ("u", "wi"):
+                # Descriptive/locative verbs: 3pl marked by -waa/-waara
+                if subordinate:
+                    morphemes.append((31, "3PL", "waara"))
+                else:
+                    morphemes.append((31, "3PL", "waa"))
+            else:
+                if subordinate:
+                    morphemes.append((31, "3PL", "aahu"))
+                else:
+                    morphemes.append((31, "3PL", "aahuʔ"))
 
     # Sort by slot number
     morphemes.sort(key=lambda x: x[0])
@@ -494,9 +842,6 @@ def conjugate(stem, verb_class, mode, person_number, aspect="perfective",
     morpheme_str = " + ".join(morph_forms)
 
     # Apply morpheme-boundary-aware concatenation before general rules.
-    # We handle specific restricted interactions directly rather than
-    # using the Phase 2.3 restricted rule pipeline (which was designed
-    # for the analytical direction and over-triggers in synthesis).
     try:
         concat = _smart_concatenate(morph_forms, morphemes)
         surface = apply_unrestricted_rules(concat)
@@ -513,6 +858,7 @@ def conjugate(stem, verb_class, mode, person_number, aspect="perfective",
         "morpheme_breakdown": breakdown,
         "morpheme_string": morpheme_str,
         "slots": {m[1]: m[2] for m in morphemes},
+        "stem_note": stem_note,
     }
 
 
@@ -704,6 +1050,266 @@ def _edit_distance(s1, s2):
 
 
 # ---------------------------------------------------------------------------
+# Dictionary Paradigmatic Form Validation
+# ---------------------------------------------------------------------------
+
+# Paradigmatic form definitions (from project scope):
+# Form 1: 1sg indicative perfective
+# Form 2: 3sg indicative perfective
+# Form 3: 3sg indicative imperfective
+# Form 4: 3sg absolutive subordinate perfective (gerundial)
+# Form 5: 3sg indicative perfective intentive
+
+DICT_FORM_PARAMS = {
+    1: {"person_number": "1sg", "mode": "indicative", "aspect": "perfective",
+        "subordinate": False, "intentive": False},
+    2: {"person_number": "3sg", "mode": "indicative", "aspect": "perfective",
+        "subordinate": False, "intentive": False},
+    3: {"person_number": "3sg", "mode": "indicative", "aspect": "imperfective",
+        "subordinate": False, "intentive": False},
+    4: {"person_number": "3sg", "mode": "absolutive", "aspect": "perfective",
+        "subordinate": True, "intentive": False},
+    5: {"person_number": "3sg", "mode": "indicative", "aspect": "perfective",
+        "subordinate": False, "intentive": True},
+}
+
+
+def _parse_preverb(stem_preverb):
+    """Parse stem_preverb notation like '(ut...)' -> 'ut', '(ir...)' -> 'ir'.
+
+    Returns the primary (simplest) preverb, or None.
+    Complex multi-preverb entries like '(ir...ut...)' return only the outermost.
+    """
+    if not stem_preverb:
+        return None
+    # Match (PREVERB...) pattern
+    m = re.match(r'^\((\w+)\.\.\.\)$', stem_preverb.strip())
+    if m:
+        return m.group(1)
+    # Complex multi-preverb: (ir...ut...) — take first
+    m = re.match(r'^\((\w+)\.\.\.', stem_preverb.strip())
+    if m:
+        return m.group(1)
+    return None
+
+
+def _parse_verb_class(vc_str):
+    """Parse verb_class notation like '(1)' -> '1', '(2-i)' -> '2-i'."""
+    if not vc_str:
+        return None
+    m = re.match(r'^\((.+)\)$', vc_str.strip())
+    if m:
+        return m.group(1)
+    return vc_str.strip()
+
+
+def _normalize_form(form):
+    """Normalize a dictionary form for comparison.
+
+    Strips accent marks, normalizes glottal stop variants, and removes
+    the 'irii-'/'iriir-' prefix notation from form_4.
+    """
+    if not form:
+        return ""
+    # Remove irii-/iriir- prefix notation (form_4 often written as 'irii-raXXX')
+    form = re.sub(r'^iriir?-', '', form)
+    # Also handle ti- prefix notation in form_5 (e.g., 'ti-kaaʔaahista')
+    form = form.replace('-', '')
+    # Normalize glottal stop variants: ' (U+2019) and ' (U+2018) -> ʔ (U+0294)
+    form = form.replace('\u2019', '\u0294').replace('\u2018', '\u0294')
+    # Strip accent marks (acute, grave) for comparison
+    import unicodedata
+    result = []
+    for ch in form:
+        decomposed = unicodedata.normalize('NFD', ch)
+        base = ''.join(c for c in decomposed
+                       if unicodedata.category(c) != 'Mn')  # strip combining marks
+        result.append(base)
+    return ''.join(result)
+
+
+def validate_dict(db_path):
+    """Validate conjugation engine against dictionary paradigmatic forms.
+
+    Loads all verb entries with paradigmatic forms from the DB,
+    attempts to conjugate each using the engine, and reports results.
+    """
+    conn = sqlite3.connect(db_path)
+    cur = conn.cursor()
+
+    # Load all verb entries with paradigmatic forms
+    cur.execute("""
+        SELECT le.entry_id, le.headword, le.stem_preverb, le.verb_class,
+               le.grammatical_class,
+               pf.form_number, pf.skiri_form
+        FROM lexical_entries le
+        JOIN paradigmatic_forms pf ON le.entry_id = pf.entry_id
+        WHERE pf.skiri_form IS NOT NULL AND pf.skiri_form != ''
+        AND le.grammatical_class LIKE 'V%'
+        ORDER BY le.entry_id, pf.form_number
+    """)
+
+    # Group by entry
+    entries = {}
+    for row in cur.fetchall():
+        eid, hw, sp, vc, gc, fn, sf = row
+        if eid not in entries:
+            entries[eid] = {
+                "headword": hw, "stem_preverb": sp,
+                "verb_class": vc, "gram_class": gc, "forms": {}
+            }
+        entries[eid]["forms"][fn] = sf
+
+    conn.close()
+
+    results = {
+        "total": 0, "exact": 0, "exact_normalized": 0,
+        "close": 0, "mismatch": 0, "skipped": 0,
+        "by_form": {i: {"total": 0, "exact": 0, "exact_norm": 0, "close": 0}
+                    for i in range(1, 6)},
+        "by_class": {},
+        "sample_mismatches": [],
+    }
+
+    for eid, info in entries.items():
+        preverb = _parse_preverb(info["stem_preverb"])
+        vc = _parse_verb_class(info["verb_class"])
+        gc = info["gram_class"]
+        hw = info["headword"]
+
+        # Determine verb class for descriptive/locative verbs
+        if not vc:
+            if gc == "VD" or gc == "VD, VT":
+                vc = "u"
+            elif gc == "VL":
+                vc = "wi"
+            else:
+                results["skipped"] += len(info["forms"])
+                continue
+
+        # Validate known verb classes only
+        if vc not in VERB_CLASSES:
+            results["skipped"] += len(info["forms"])
+            continue
+
+        # Use headword as stem (this is a simplification —
+        # ut-preverb verbs need ut- fused into stem)
+        stem = hw
+        if preverb == "ut":
+            # ut- is fused into the stem; headword IS the stem without ut-
+            # For conjugation, the stem includes ut- already
+            stem = "uu" + hw if not hw.startswith("uu") else hw
+
+        # Track class stats
+        class_key = f"{gc}({vc})"
+        if class_key not in results["by_class"]:
+            results["by_class"][class_key] = {
+                "total": 0, "exact": 0, "exact_norm": 0, "close": 0
+            }
+
+        for form_num, expected in info["forms"].items():
+            if form_num not in DICT_FORM_PARAMS:
+                continue
+
+            params = DICT_FORM_PARAMS[form_num]
+            expected_primary = expected.split(",")[0].strip()
+            # Normalize glottal stop for raw comparison
+            expected_primary = expected_primary.replace('\u2019', '\u0294')
+            expected_primary = expected_primary.replace('\u2018', '\u0294')
+
+            # Skip forms with special notation (hyphens are notation, not part of form)
+            if any(c in expected_primary for c in ["/", "~", "(", ")"]):
+                results["skipped"] += 1
+                continue
+            # Remove hyphens (prefix notation like 'irii-raXXX')
+            expected_primary = expected_primary.replace('-', '')
+
+            try:
+                result = conjugate(
+                    stem=stem,
+                    verb_class=vc,
+                    mode=params["mode"],
+                    person_number=params["person_number"],
+                    aspect=params["aspect"],
+                    preverb=preverb if preverb != "ut" else None,
+                    subordinate=params["subordinate"],
+                    intentive=params["intentive"],
+                )
+                predicted = result["surface_form"]
+            except Exception as e:
+                predicted = f"ERROR:{e}"
+
+            results["total"] += 1
+            results["by_form"][form_num]["total"] += 1
+            results["by_class"][class_key]["total"] += 1
+
+            # Normalize both for comparison
+            pred_norm = _normalize_form(predicted)
+            exp_norm = _normalize_form(expected_primary)
+
+            edit_dist = _edit_distance(predicted, expected_primary)
+            edit_dist_norm = _edit_distance(pred_norm, exp_norm)
+
+            if predicted == expected_primary:
+                results["exact"] += 1
+                results["by_form"][form_num]["exact"] += 1
+                results["by_class"][class_key]["exact"] += 1
+            elif pred_norm == exp_norm:
+                results["exact_normalized"] += 1
+                results["by_form"][form_num]["exact_norm"] += 1
+                results["by_class"][class_key]["exact_norm"] += 1
+            elif edit_dist_norm <= 2:
+                results["close"] += 1
+                results["by_form"][form_num]["close"] += 1
+                results["by_class"][class_key]["close"] += 1
+            else:
+                results["mismatch"] += 1
+                if len(results["sample_mismatches"]) < 30:
+                    results["sample_mismatches"].append({
+                        "entry_id": eid, "headword": hw,
+                        "class": class_key, "form": form_num,
+                        "expected": expected_primary, "predicted": predicted,
+                        "breakdown": result.get("morpheme_breakdown", "")
+                            if isinstance(result, dict) else "",
+                    })
+
+    total = results["total"]
+    if total == 0:
+        log.info("No forms to validate.")
+        return results
+
+    exact = results["exact"]
+    exact_norm = results["exact_normalized"]
+    close = results["close"]
+    miss = results["mismatch"]
+    skip = results["skipped"]
+    log.info(f"Dictionary validation: {total} forms tested, {skip} skipped")
+    log.info(f"  Exact: {exact} ({100*exact/total:.1f}%)")
+    log.info(f"  Exact (no accents): {exact_norm} ({100*exact_norm/total:.1f}%)")
+    log.info(f"  Close (d<=2): {close} ({100*close/total:.1f}%)")
+    log.info(f"  Mismatch: {miss} ({100*miss/total:.1f}%)")
+
+    log.info(f"\n  By form:")
+    for fn in range(1, 6):
+        fd = results["by_form"][fn]
+        if fd["total"]:
+            log.info(f"    Form {fn}: {fd['exact']}/{fd['total']} exact "
+                     f"({100*fd['exact']/fd['total']:.0f}%), "
+                     f"+{fd['exact_norm']} norm, +{fd['close']} close")
+
+    log.info(f"\n  By class (top 15):")
+    sorted_classes = sorted(results["by_class"].items(),
+                            key=lambda x: x[1]["total"], reverse=True)
+    for cls, cd in sorted_classes[:15]:
+        if cd["total"]:
+            log.info(f"    {cls:12s}: {cd['exact']}/{cd['total']} exact "
+                     f"({100*cd['exact']/cd['total']:.0f}%), "
+                     f"+{cd['exact_norm']} norm, +{cd['close']} close")
+
+    return results
+
+
+# ---------------------------------------------------------------------------
 # Inventory Display
 # ---------------------------------------------------------------------------
 
@@ -771,7 +1377,7 @@ def print_inventory():
 # Report Generation
 # ---------------------------------------------------------------------------
 
-def generate_report(report_path, validation_results=None):
+def generate_report(report_path, validation_results=None, dict_results=None):
     """Generate Phase 3.1 report."""
     lines = []
     lines.append("=" * 70)
@@ -840,6 +1446,44 @@ def generate_report(report_path, validation_results=None):
                 lines.append(f"     Expected:  {d['expected']}")
                 lines.append(f"     Predicted: {d['predicted']}")
                 lines.append(f"     Breakdown: {d['breakdown']}")
+
+    # Dictionary validation results
+    if dict_results:
+        total = dict_results["total"]
+        if total > 0:
+            lines.append(f"\n4. DICTIONARY PARADIGMATIC FORM VALIDATION")
+            lines.append(f"   Total forms tested: {total}")
+            lines.append(f"   Skipped: {dict_results['skipped']}")
+            lines.append(f"   Exact: {dict_results['exact']} ({100*dict_results['exact']/total:.1f}%)")
+            lines.append(f"   Exact (no accents): {dict_results['exact_normalized']} "
+                         f"({100*dict_results['exact_normalized']/total:.1f}%)")
+            lines.append(f"   Close (d<=2): {dict_results['close']} ({100*dict_results['close']/total:.1f}%)")
+            lines.append(f"   Mismatch: {dict_results['mismatch']} ({100*dict_results['mismatch']/total:.1f}%)")
+
+            lines.append(f"\n   By form:")
+            for fn in range(1, 6):
+                fd = dict_results["by_form"][fn]
+                if fd["total"]:
+                    lines.append(f"     Form {fn}: {fd['exact']}/{fd['total']} exact "
+                                 f"({100*fd['exact']/fd['total']:.0f}%), "
+                                 f"+{fd['exact_norm']} norm, +{fd['close']} close")
+
+            lines.append(f"\n   By class (top 15):")
+            sorted_classes = sorted(dict_results["by_class"].items(),
+                                    key=lambda x: x[1]["total"], reverse=True)
+            for cls, cd in sorted_classes[:15]:
+                if cd["total"]:
+                    lines.append(f"     {cls:12s}: {cd['exact']}/{cd['total']} exact "
+                                 f"({100*cd['exact']/cd['total']:.0f}%), "
+                                 f"+{cd['exact_norm']} norm, +{cd['close']} close")
+
+            if dict_results.get("sample_mismatches"):
+                lines.append(f"\n   Sample mismatches (first 20):")
+                for d in dict_results["sample_mismatches"][:20]:
+                    lines.append(f"     [{d['class']}] {d['headword']} form_{d['form']}")
+                    lines.append(f"       Expected:  {d['expected']}")
+                    lines.append(f"       Predicted: {d['predicted']}")
+                    lines.append(f"       Breakdown: {d['breakdown']}")
 
     lines.append("\n" + "=" * 70)
 
@@ -1026,6 +1670,12 @@ def main():
         results = validate_appendix1()
         if args.report:
             generate_report(args.report, results)
+        return
+
+    if args.validate_dict:
+        results = validate_dict(args.db)
+        if args.report and results:
+            generate_report(args.report, dict_results=results)
         return
 
     if args.import_db:

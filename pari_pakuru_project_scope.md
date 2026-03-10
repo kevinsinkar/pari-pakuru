@@ -218,40 +218,15 @@ Also strips whitespace from `phonetic_form` fields. Preserves `•` syllable dot
 
 ## Todo: Remaining Work
 
-### 🔲 Phase 1.2 — Database Schema
-**Priority:** Medium
-**Depends on:** Phase 1.1b (linked data)
-**Effort:** Large
+### ✅ Phase 1.2 — Database Schema
+**Script:** `scripts/import_to_db.py` (implied by DB existence)
+**What it does:** SQLite database (`skiri_pawnee.db`) unifying S2E and E2S data.
 
-Design a relational database schema (SQLite) that unifies S2E and E2S.
+**Tables:** `lexical_entries` (4,273 entries), `glosses`, `paradigmatic_forms`, `examples`, `etymology`, `cognates`, `derived_stems`, `english_index`, `cross_references`, `semantic_tags`, `blue_book_attestations`, `import_metadata` + FTS tables for glosses, examples, english_index.
 
-Tasks:
-- [ ] Core `lexical_entries` table (entry_id, headword, normalized_form, phonetic_form, simplified_pronunciation, preverb, grammatical_class, verb_class)
-- [ ] `glosses` table (entry_id, sense_number, definition, usage_notes)
-- [ ] `paradigmatic_forms` table (entry_id, form_number 1-5, skiri_form)
-- [ ] `examples` table (entry_id, skiri_text, english_translation, usage_context)
-- [ ] `etymology` table (entry_id, raw_etymology, literal_translation, constituent_elements as JSON)
-- [ ] `cognates` table (entry_id, language, form)
-- [ ] `english_index` table (english_word, entry_id, subentry_number) — the E2S lookup layer
-- [ ] `cross_references` junction table (from_english, to_english, skiri_equivalents)
-- [ ] Import script: linked JSON → SQLite
-- [ ] Query API: bidirectional lookup by English or Skiri
-
-### 🔲 Phase 2.1 — Semantic Category Tagging
-**Priority:** Medium
-**Depends on:** Phase 1.1a (clean glosses)
-**Effort:** Medium
-
-Auto-tag entries by domain: animals, plants, kinship, housing, celestial/weather, body parts, tools/weapons, ceremony/ritual, food, colors, numbers, etc.
-
-Tasks:
-- [ ] Define tag taxonomy (finite list of categories)
-- [ ] Keyword scan: gloss text → category assignment (e.g., "eagle"/"beaver" → `animal`)
-- [ ] Etymology scan: constituent elements revealing domain membership
-- [ ] Grammatical class hints: N-KIN → `kinship` automatically
-- [ ] Manual review queue for ambiguous entries
-- [ ] Store tags on entries (new `semantic_tags` array field)
-- [ ] Blue Book lessons as category source (Lesson 8 = animals/housing, Lesson 5 = body parts, etc.)
+### ✅ Phase 2.1 — Semantic Category Tagging
+**Script:** `scripts/tag_entries.py`
+**What it does:** Auto-tags entries by domain using rule-based keyword matching + Gemini AI for ambiguous cases. 7,097 tags stored in `semantic_tags` table.
 
 ### ✅ Phase 2.2 — Blue Book Cross-Verification
 **Script:** `scripts/blue_book_verify.py`
@@ -413,58 +388,134 @@ Tasks completed:
 - [x] Encode verb class rules: how each class modifies dependent forms
 - [x] Build conjugation engine: (stem, class, person, number, mode, aspect) → inflected form
 - [x] Validate against Appendix 1 paradigms (first pass: 12.7% exact, singular ~33%)
+- [x] Gemini-powered dual/plural morpheme analysis (all 7 verbs → `extracted_data/dual_plural_analysis.json`)
+- [x] Suppletive stem system: SUPPLETIVE_STEMS dict with du/pl stem lookup per verb
+- [x] Fix si- proclitic (1du_incl excluded), 1pl_incl agent=t, r→h before consonants
+- [x] Descriptive verb 3pl suffix (-waa), Class 3 si- for plural, pl_absorbs_raak flag
+- [x] Partial descriptive verb person marking (ku- proclitic, h- 3PM)
+- [x] Second pass validation: 20.9% exact (161/770), 31.7% close
+- [x] Descriptive verb sub-classification: ku-proclitic (class u/wi without preverb) vs uur-preverb (standard agent prefixes)
+- [x] Gerundial decomposition: irii(GER) + ra(MODE) replaces monolithic iriira
+- [x] Potential mode: kuus-/kaas- with 2sg agent suppression, shortening before POT.i+V
+- [x] Assertive mode Rule 2R: rii + a → raa
+- [x] "to go" agent+stem fusions: t+war→tpa, s+war→spa via du_agent_fusions dict
+- [x] ku- slot ordering: moved from proclitic slot 6 to inner slot 12.5 (after MODE)
+- [x] Class 3 1pl_incl: acir- (not a-) for inclusive, agent t- suppressed
+- [x] Imperfective aspect: -huʔ (non-subordinate) / -hu (subordinate) suffix
+- [x] Dictionary-wide validation: --validate-dict mode (9,583 forms across all dictionary verbs)
+- [x] Appendix 3 extraction: 23 kinship terms (consanguineal + affinal + possessive paradigms)
 
-Tasks remaining:
-- [ ] Refine dual/plural person prefix assembly (currently 0% match)
-- [ ] Fix gerundial iriira- compound prefix decomposition
-- [ ] Handle verb-specific irregularities (proclitic selection, stem alternations)
-- [ ] Validate against all 4273 dictionary paradigmatic forms
-- [ ] Extract Appendix 3 (kinship/possessive morphology) for Phase 3.2
+**Current validation (latest pass):**
+- Appendix 1: 35.2% exact (271/770), 30.3% close (edit distance ≤ 2)
+- Dictionary: 14.8% exact (1,420/9,583), 44.2% close
+
+Tasks remaining (priority order):
+- [ ] **Accent mark generation** — many close matches differ only by accent marks (á, í, ú); implementing stress assignment would significantly boost accuracy
+- [ ] **Improve conjugation accuracy to 60%+** — systematic fixes for dual/plural morphology, descriptive verb patterns, stem extraction from headwords
+- [ ] uur- preverb shortening before raak- in plural
+- [ ] Gerundial stem form alternations (e.g., kiikaʔ → kikaa)
+- [ ] Contingent i+a contraction (mode + inclusive boundary)
+- [ ] VD(u) descriptive verb stem extraction (1% exact in dict validation)
+- [ ] VT(3) Class 3 ut- fusion logic (0% exact in dict validation)
+- [ ] Dictionary stem extraction improvements (main gap for dict-wide accuracy)
 
 ### 🔲 Phase 3.2 — Sentence Construction Framework
-**Priority:** Low (depends on 3.1)
-**Depends on:** Phase 3.1 (morpheme slot system)
+**Priority:** Low (depends on 3.1 accuracy improvements)
+**Depends on:** Phase 3.1 (morpheme slot system at 60%+ accuracy)
 **Effort:** Very Large
 
 Given English input, construct Skiri output.
 
 Sources:
-- `Dictionary Data/Dictionary PDF Split/Appendix 3 - Kinship Terminology - Consanguineal and Affinal.pdf` — verb-based affinal kinship constructions (*aktaku* "to have as spouse", *kuakus* "to have as in-law") serve as test cases for transitive verb sentence patterns with person marking
+- `extracted_data/appendix3_kinship.json` — 23 kinship terms with possessive paradigms (already extracted)
+- `extracted_data/grammatical_overview.json` — 23 pages of grammar (clause structure, word order)
+- Blue Book lesson dialogues as test cases
 
 Tasks:
-- [ ] Map English sentence patterns to Skiri clause structure
+- [ ] Map English sentence patterns to Skiri clause structure (SOV word order)
 - [ ] Handle transitivity: subject/object marking, preverb system (ut-, ir-, uur-)
 - [ ] Implement proclitic system (indefinite ku-, reflexive witi-, dual si-, etc.)
 - [ ] Implement evidential system (quotative wi-, dubitative kuur-, etc.)
-- [ ] Extract Appendix 3 kinship terms and possessive paradigms
-- [ ] Blue Book lesson dialogues + Appendix 3 kinship constructions as test cases
+- [ ] Possessive morphology from kinship data (my/your/his-her paradigms)
+- [ ] Blue Book lesson dialogues + kinship constructions as test cases
 
-### 🔲 Phase 4.1 — Search Interface
-**Priority:** Medium (can start after Phase 1.2)
+### 🔲 Phase 4.1 — Web Search Interface
+**Priority:** HIGH — next implementation target
+**Depends on:** Phase 1.2 (SQLite DB — already complete)
 **Effort:** Medium
 
-Bidirectional search with fuzzy matching.
+Simple web-based dictionary search tool — the first user-facing product.
+
+**Stack:** Flask or FastAPI + SQLite (existing `skiri_pawnee.db`) + HTML/CSS/JS
 
 Tasks:
-- [ ] Web UI or CLI: type English → get Skiri results with pronunciation, paradigms, tags
-- [ ] Type Skiri → get English results
-- [ ] Fuzzy matching for learner misspellings
-- [ ] Filter by semantic category, grammatical class, verb class
+- [ ] Backend: Flask/FastAPI app serving SQLite queries
+- [ ] Bidirectional search: English → Skiri, Skiri → English (using existing FTS tables)
+- [ ] Entry detail view: headword, pronunciation (IPA + simplified), glosses, paradigmatic forms, examples
+- [ ] Morpheme breakdown display: show prefix/stem/suffix labels for verb forms
+- [ ] Fuzzy matching for learner misspellings (Levenshtein distance on normalized forms)
+- [ ] Filter sidebar: semantic category, grammatical class, verb class
+- [ ] Blue Book attestation badge (highlight entries attested in teaching materials)
+- [ ] Mobile-responsive design (learners will use phones)
+- [ ] Mark generated vs. attested forms distinctly (critical for endangered language accuracy)
+- [ ] Deployment: static hosting or simple server (GitHub Pages with pre-built JSON, or Railway/Render)
 
 ### 🔲 Phase 4.2 — Sentence Builder UI
 **Priority:** Low (depends on Phase 3.2)
 **Effort:** Large
 
-Guided interface: select person/action/object/tense → assembled Skiri sentence with morpheme breakdown.
+Guided interface: select person/action/object/tense → assembled Skiri sentence with morpheme breakdown. Shows derivation steps so learners understand *why* the form looks the way it does.
+
+### 🔲 Phase 5.1 — Structured Lesson Content
+**Priority:** Medium (can start after Phase 4.1)
+**Depends on:** Phase 4.1 (web interface to host lessons)
+**Effort:** Medium
+
+Extract lesson structure from Blue Book (not just vocabulary) to provide ready-made curriculum.
+
+Tasks:
+- [ ] Extract lesson dialogue texts with English translations (20 lessons)
+- [ ] Map lesson vocabulary to dictionary entries (link each lesson word to its full entry)
+- [ ] Extract grammar explanations per lesson (progressive skill building)
+- [ ] Cultural context notes from Blue Book lesson introductions
+- [ ] Lesson sequencing: greetings → basic sentences → question forms → descriptive → narrative
+- [ ] Interactive exercises: fill-in-the-blank, matching, translation drills
+
+### 🔲 Phase 5.2 — Spaced Repetition / Flashcard Export
+**Priority:** Medium (low effort, high impact for self-directed learners)
+**Depends on:** Phase 1.2 (dictionary data)
+**Effort:** Small
+
+Generate exportable study materials from the dictionary.
+
+Tasks:
+- [ ] Anki deck export: Skiri → English and English → Skiri cards
+- [ ] Include pronunciation (IPA + simplified respelling) on every card
+- [ ] Semantic category decks (animals, kinship, body parts, etc.)
+- [ ] Blue Book lesson-aligned decks (vocabulary per lesson)
+- [ ] Printable PDF wordlists and paradigm tables for offline use
+- [ ] Audio placeholder fields (for future recordings)
 
 ### 🔲 Ongoing — Data Quality & Maintenance
 
 - [ ] Resolve 362 unmatched E2S entries (most are parsing artifacts, some may be real terms)
 - [ ] Review 8 low-confidence homonym matches from linking
 - [ ] Version control: track changes to entries over time
-- [ ] Export pipeline: generate printable dictionary (PDF), flashcard decks (Anki), research data files
+- [ ] Document Blue Book orthography differences (practical vs. linguistic spelling conventions)
 - [ ] Cognate linking: build out Arikara, Kitsai, Wichita, South Band comparative data
 - [ ] Audio pronunciation layer (if recordings become available)
+
+---
+
+## Design Principles for Endangered Language Preservation
+
+These principles guide all user-facing features:
+
+1. **Every attested form is precious** — surface all attestations (dictionary + Blue Book + Parks examples) for any query, not just one "correct" answer
+2. **Show morphological breakdowns** — learners can't ask native speakers, so the tool must explain *why* a form looks the way it does (prefix + stem + suffix with labels)
+3. **Export everything** — PDF wordlists, Anki decks, printable paradigm tables. Digital tools disappear; offline materials persist
+4. **Record uncertainty** — mark generated (unattested) forms distinctly from documented ones. Learners must know what's verified vs. computed
+5. **Privilege primary sources** — Parks Dictionary and Blue Book are the authorities; computed forms are supplements, never replacements
 
 ---
 
@@ -488,8 +539,9 @@ Guided interface: select person/action/object/tense → assembled Skiri sentence
 | `blue_book_verify.py` | `scripts/` | Phase 2.2: Blue Book cross-verification — extract vocab, match to dictionary, populate examples | Yes (GEMINI_API_KEY) |
 | `bb_pronunciation_compare.py` | `scripts/` | Phase 2.2 follow-up: compare BB pronunciation guides with Parks simplified_pronunciation | No |
 | `sound_changes.py` | `scripts/` | Phase 2.3: sound change rule engine — 24 rules cataloged, pipeline, validation against paradigmatic forms | No |
-| `extract_appendices.py` | `scripts/` | Phase 3.1: extract appendix/grammar data from scanned PDFs via Gemini OCR | Yes (GEMINI_API_KEY) |
-| `morpheme_inventory.py` | `scripts/` | Phase 3.1: morpheme slot system, conjugation engine, validation against Appendix 1 | No |
+| `extract_appendices.py` | `scripts/` | Phase 3.1: extract appendix/grammar data from scanned PDFs via Gemini OCR (--appendix1, --appendix2, --appendix3) | Yes (GEMINI_API_KEY) |
+| `morpheme_inventory.py` | `scripts/` | Phase 3.1: morpheme slot system, conjugation engine, validation (--validate, --validate-dict, --report) | No |
+| `analyze_dual_plural.py` | `scripts/` | Phase 3.1: Gemini-powered morpheme breakdown analysis for dual/plural forms | Yes (GEMINI_API_KEY) |
 | `retry_failed_grammar.py` | `scripts/` | Phase 3.1: retry failed grammar pages with plain-text Gemini or Claude API | Yes (GEMINI_API_KEY or ANTHROPIC_API_KEY) |
 | `merge_grammar_retries.py` | `scripts/` | Phase 3.1: merge recovered grammar page data into grammatical_overview.json | No |
 
