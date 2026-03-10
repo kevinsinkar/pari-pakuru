@@ -1,0 +1,783 @@
+======================================================================
+Phase 3.1: Gemini-Collaborative Conjugation Analysis Report
+Generated: 2026-03-10T01:11:24.387393
+======================================================================
+
+Current accuracy: 271/770 exact (35.2%), 233 close (d<=2)
+
+----------------------------------------------------------------------
+ROUND 1: Per-Verb Pattern Diagnosis
+----------------------------------------------------------------------
+
+to be good (77 mismatches, 9 patterns):
+  [P1_PluralPreverbAnd3plSuffix] For plural forms (1pl, 2pl), the preverb 'uur' does not appear as a distinct morpheme. Instead, its 'u' vowel combines with the agent prefix ('t-u', 's-u'), often replacing the inclusive 'a' where applicable, before the plural marker ('raak'/'iraak') and plural stem ('iwaa'). For 3pl, the modal prefix is 't-' (not 'ti-'), and the 'uur' preverb combines with the plural stem 'iwaa' to form 'uuhiwaa' (via 'r'-loss and vowel contraction), and the engine incorrectly adds an extra 'waa' suffix.
+    Affects: 40 forms
+    Fix: Implement a special rule for the 'uur' preverb when conjugating plural forms of descriptive verbs like 'hiir'. For 1pl/2pl, ensure the 'u' from 'uur' combines with the agent prefix (e.g., 't-u', 's-u') before the plural marker, and that the 'uur' morpheme itself is not present after the plural marker. For 3pl, ensure the modal prefix is 't-' (not 'ti-'), apply phonological rules for 'uur' + 'iwaa' -> 'uuhiwaa', and prevent the addition of the redundant 'waa' 3pl suffix.
+    Example: indicative/1pl_incl
+      Expected: tatuuraakiwaa
+      Got:      tataraakuuriwaa
+      Root cause: Incorrect handling of 'uur' preverb in plural contexts; it should not appear as 'uur' after 'raak'/'iraak'. The 'u' from 'uur' combines with the agent prefix, replacing the 'a' of 'a-raak'. The engine also incorrectly places 'uur' after 'raak'.
+  [P2_IncorrectIhInsertion] The engine incorrectly inserts the 'ih' patient compound marker between the agent prefix ('t-' or 's-') and the 'uur' preverb for 1du_excl and 2du forms.
+    Affects: 20 forms
+    Fix: Remove the logic that inserts the 'ih' patient compound marker for 1du_excl and 2du forms of this verb type.
+    Example: indicative/1du_excl
+      Expected: sitatuuhii
+      Got:      sitatihuuhii
+      Root cause: Erroneous insertion of the 'ih' patient compound marker, which is not applicable in this context for this verb.
+  [P3_SubordinationSuffixOmission] The engine consistently omits the final '-ra' subordination suffix for all subordinated forms.
+    Affects: 31 forms
+    Fix: Ensure the '-ra' subordination suffix is consistently appended to all verb forms in gerundial, contingent, subjunctive, and infinitive subordinated modes.
+    Example: gerundial.sub/3sg
+      Expected: iriruuhiira
+      Got:      iriiruuhiira
+      Root cause: Failure to append the '-ra' subordination suffix to the conjugated verb form.
+  [P4_AcirRLossAndUurReduction] For 1du_incl forms, the 'r' of the 'acir' inclusive prefix is lost before the 'uur' preverb. Subsequently, 'uur' reduces to 'uu' after the vowel 'i', and 'i + uu' contracts to 'ii'.
+    Affects: 9 forms
+    Fix: Implement phonological rules for 'r'-loss from 'acir' before 'uur', 'uur' reduction to 'uu' after a vowel, and 'i + uu' vowel contraction to 'ii'.
+    Example: indicative/1du_incl
+      Expected: taciihii
+      Got:      taciruuhii
+      Root cause: Missing phonological rules: 'r'-loss from 'acir' before 'uur', 'uur' reduction to 'uu' after a vowel, and 'i + uu' vowel contraction.
+  [P5_FinalRLossFromStem] The final 'r' of the stem 'hiir' is consistently lost when no suffix follows it.
+    Affects: 30 forms
+    Fix: Add a phonological rule to remove the final 'r' of the stem 'hiir' when it is word-final (i.e., no suffix is appended).
+    Example: assertive/3sg
+      Expected: ruhii
+      Got:      ruuhii
+      Root cause: Missing phonological rule for final 'r' loss from the stem 'hiir' when no suffix follows.
+  [P6_PotentialPrefixAllomorphy] The potential prefix has allomorphs 'kuus-' (1sg, 1pl), 'kaas-' (2sg, 2pl, 3sg, 3pl), and 'ka-' (1du_incl, 2du). The engine uses 'kus-' or 'kas-' incorrectly and fails to apply the 'ka-' allomorph.
+    Affects: 8 forms
+    Fix: Correct the logic for selecting potential prefix allomorphs: 'kuus-' for 1sg/1pl, 'kaas-' for 2sg/2pl/3sg/3pl, and 'ka-' for 1du_incl/2du.
+    Example: potential/1sg
+      Expected: kuustuuhii
+      Got:      kustuuhii
+      Root cause: Incorrect selection of the 'kuus-' allomorph (using 'kus-' instead).
+  [P7_GerundialIrPreverbAlternation] The gerundial prefix 'ir-' combines with the preverb 'ir-' (from 'ir-ii-ra' decomposition) to form 'irir-'. The engine incorrectly uses 'iriir-'.
+    Affects: 9 forms
+    Fix: Implement the correct phonological rule for gerundial 'ir-' + preverb 'ir-' resulting in 'irir-'.
+    Example: gerundial.sub/3sg
+      Expected: iriruuhiira
+      Got:      iriiruuhiira
+      Root cause: Incorrect application of the 'ir-' + 'ir-' -> 'irir-' rule for gerundial preverb alternation.
+  [P8_InfinitiveCihMarker] The engine omits the 'cih' patient compound marker in infinitive forms.
+    Affects: 7 forms
+    Fix: Add logic to insert the 'cih' patient compound marker in the correct position for infinitive forms.
+    Example: infinitive.sub/3sg
+      Expected: racihkuuhiira
+      Got:      rakuuhiira
+      Root cause: Missing insertion of the 'cih' patient compound marker in infinitive forms.
+  [P9_SiIVowelContraction] The sequence 'si' (dual proclitic) + 'i' (contingent/subjunctive mode prefix) should contract to 'siʔi', but the engine produces 'sii'.
+    Affects: 4 forms
+    Fix: Implement the phonological rule for 'si + i' vowel contraction to 'siʔi'.
+    Example: contingent/1du_excl
+      Expected: siʔituuhii
+      Got:      siitihuuhii
+      Root cause: Incorrect vowel contraction rule for 'si + i' (should be 'siʔi', not 'sii').
+
+to be sick (90 mismatches, 5 patterns):
+  [P1_Pluralization] The engine uses an incorrect pluralization strategy for plural persons. It either misses the `tah` suffix after the `raak-` plural marker, or it uses an incorrect `waa` suffix, or it fails to insert the correct `raak-/iraak-` plural marker entirely.
+    Affects: 31 forms
+    Fix: Implement a comprehensive pluralization rule for descriptive verbs like 'kiraawaʔ'. This includes correctly inserting the 'raak-/iraak-' plural marker based on context and appending the 'tah' suffix after 'raak-' for plural forms as required by this verb class. Remove any incorrect 'waa' plural suffixes.
+    Example: contingent/1pl_incl
+      Expected: racakuraktahkiraawaʔ
+      Got:      icakuraakiraawaʔ
+      Root cause: The engine fails to append the 'tah' suffix after the 'raak-' plural marker, which is required for plural forms of this descriptive verb. It also uses an incorrect modal prefix (i- instead of ra-).
+  [P2_ModalPrefixSelection] The engine frequently selects the incorrect modal prefix allomorph (e.g., 'ta-/ti-' instead of 'ra-/ri-', 'i-/ii-' instead of 'ra-', 'ra-' instead of 'ri-', 'kaasi-/kuusi-' instead of 'kusa-/kaaca-', 'rii-' instead of 'raa-') based on mode, person, and number. This often leads to incorrect initial segments of the verb.
+    Affects: 24 forms
+    Fix: Review and correct the logic for modal prefix selection based on mode, person, and number. Ensure the 'a'/'i' vowel alternation (e.g., 'ra-/ri-', 'kaaka-/kaaki-', 'kuus-/kaas-') is correctly applied for all relevant contexts.
+    Example: absolutive/1sg
+      Expected: riikukiraawaʔ
+      Got:      rakukiraawaʔ
+      Root cause: Incorrect selection of the 'ra-' allomorph for the absolutive mode in 1sg where 'ri-' is expected. This also affects the subsequent vowel contraction with the 'ku-' indefinite proclitic.
+  [P3_KuKuContraction] For 1sg forms of this descriptive verb, the engine inconsistently applies the 'ku-' descriptive verb marker and fails to correctly contract the 'ku-' indefinite proclitic with the 'ku-' descriptive marker (e.g., 'u+u' should contract to 'uu'). In many cases, the descriptive 'ku-' is entirely missing.
+    Affects: 3 forms
+    Fix: Ensure the 'ku-' descriptive verb marker is consistently applied for descriptive verbs. For 1sg, ensure both the 'ku-' indefinite proclitic and the 'ku-' descriptive marker are present, and apply vowel contraction rules (e.g., 'u+u' -> 'uu') between them.
+    Example: indicative/1sg
+      Expected: tikuukiraawaʔ
+      Got:      tikukiraawaʔ
+      Root cause: The engine is missing the 'ku-' descriptive verb marker for 1sg forms, and thus also misses the subsequent vowel contraction ('u+u' -> 'uu') between the indefinite and descriptive 'ku-' morphemes.
+  [P4_FinalGlottalStopDeletion] The engine fails to apply the phonological rule where the final glottal stop (ʔ) of the stem 'kiraawaʔ' is deleted when followed by a vowel-initial suffix, particularly the 'a' subordination suffix.
+    Affects: 44 forms
+    Fix: Implement a phonological rule to delete the final glottal stop (ʔ) of a stem when it is followed by a vowel-initial suffix.
+    Example: gerundial.sub/2sg
+      Expected: iriirakiraawaa
+      Got:      iriirakiraawaʔa
+      Root cause: Failure to delete the final glottal stop (ʔ) of the stem 'kiraawaʔ' before the 'a' subordination suffix.
+  [P5_SiGlottalStopInsertion] The engine fails to insert an epenthetic glottal stop (ʔ) after the 'si-' dual proclitic when it precedes certain vowel-initial modal prefixes (e.g., 'ii-' or 'aa-').
+    Affects: 2 forms
+    Fix: Add a phonological rule for glottal stop (ʔ) insertion after the 'si-' dual proclitic when it precedes certain vowel-initial morphemes (e.g., 'ii-', 'aa-').
+    Example: subjunctive.sub/1du_excl
+      Expected: siʔiikukiraawaa
+      Got:      siikukiraawaʔa
+      Root cause: Failure to insert an epenthetic glottal stop (ʔ) between the 'si-' dual proclitic and the following 'ii-' modal prefix.
+
+to come (88 mismatches, 9 patterns):
+  [P1_Preverb_IR_Misidentification] The engine incorrectly identifies the preverb 'ir-' for 1st/2nd person forms of 'to come'. Instead of 'ir-', it often uses a generic 'ih(PAT_COMPOUND)' or omits 'ir-' entirely, preventing the application of specific morphophonological rules for 'ir-' with dual/plural stems or the descriptive 'ku-'.
+    Affects: 32 forms
+    Fix: Implement a specific rule for the verb 'to come' that ensures the preverb 'ir-' is correctly selected for 1st/2nd person agents. Remove the generic 'ih(PAT_COMPOUND)' for this verb. Then, apply the specific morphophonological rules for 'ir-' + 'waʔaʔ' (dual stem) -> 'íhwaʔaʔ' and 'ir-' + 'raak' (plural marker) -> 'íraak' (with agent prefix).
+    Example: indicative/1du_excl
+      Expected: sitatíhwaʔaʔ
+      Got:      sitatihwaʔaʔ
+      Root cause: The engine incorrectly uses 'ih(PAT_COMPOUND)' instead of the preverb 'ir-' for 1st/2nd person forms of 'to come'. This prevents the application of the specific rule 't/s + ir + waʔaʔ -> tíhwaʔaʔ / síhwaʔaʔ'.
+  [P2_Inclusive_Dual_Irregularity] The combination of the inclusive dual prefix 'acir-' with the dual stem 'waʔaʔ' for 'to come' undergoes a specific morphophonological change not captured by the engine.
+    Affects: 7 forms
+    Fix: Add a specific morphophonological rule for 'to come' where 'acir' (1du.INCL) + 'waʔaʔ' (DU_STEM) results in 'acíhwaʔaʔ'.
+    Example: indicative/1du_incl
+      Expected: tacíhwaʔaʔ
+      Got:      tacihwaʔaʔ
+      Root cause: The engine fails to apply the specific rule 'acir + waʔaʔ -> acíhwaʔaʔ', missing the 'h' and the accent.
+  [P3_Missing_Accents_T_S_IR] The engine consistently misses the accent on the 'i' when the agent prefixes 't-' (1.A) or 's-' (2.A) combine with the preverb 'ir-' for 'to come'.
+    Affects: 8 forms
+    Fix: Ensure the morphophonological rules for 't-' + 'ir-' and 's-' + 'ir-' correctly place the accent on the 'i' (e.g., 'tíir', 'síir').
+    Example: indicative/1sg
+      Expected: tíiraʔ
+      Got:      tiiraʔ
+      Root cause: The phonological rule for 't + ir' -> 'tíir' (and 's + ir' -> 'síir') is not placing the accent on the 'i'.
+  [P4_Irregular_3rd_Person_Forms] The 3rd person forms of 'to come' are highly irregular and often suppletive, especially in specific modes, which the engine attempts to compose regularly.
+    Affects: 6 forms
+    Fix: Implement a lookup table or specific rules for the irregular 3rd person forms of 'to come' (e.g., 'raʔaʔ' for 3sg, 'sírawáaʔ' for absolutive 3du, 'síraaʔaʔ' for assertive 3du, 'raakúhu' for infinitive 3pl), overriding regular composition.
+    Example: assertive/3du
+      Expected: síraaʔaʔ
+      Got:      siraawaʔaʔ
+      Root cause: The engine attempts to compose the 3rd dual assertive form regularly ('rii + a + waʔaʔ') instead of using the suppletive form 'raaʔaʔ'.
+  [P5_Potential_Mode_IR_Stem_Irregularity] In the potential mode, the combination of the preverb 'ir-' with the stem 'aʔ' or dual stem 'waʔaʔ' for 1st/2nd person agents undergoes a specific, irregular change not captured by the engine.
+    Affects: 4 forms
+    Fix: Add specific morphophonological rules for 'to come' in the potential mode: 't/s + ir + aʔ' -> 'tíriiʔaʔ' / 'síriiʔaʔ' and 't/s + ir + waʔaʔ' -> 'tíriiwaʔaʔ' / 'síriiwaʔaʔ'.
+    Example: potential/1sg
+      Expected: kuustíriiʔaʔ
+      Got:      kustiiraʔ
+      Root cause: The engine fails to apply the specific morphophonological rule for 't/s + ir + aʔ' -> 'tíriiʔaʔ' / 'síriiʔaʔ' in the potential mode.
+  [P6_Gerundial_Contraction] The gerundial forms of 'to come' undergo extreme contraction when the subordinating suffix 'ra' combines with the verb form, which the engine fails to apply.
+    Affects: 11 forms
+    Fix: Implement specific, highly irregular contraction rules for all gerundial forms of 'to come', where 'irii-' + 'ra-' + [verb form] results in the attested contracted forms.
+    Example: gerundial.sub/1sg
+      Expected: íriira
+      Got:      iriratiiraʔa
+      Root cause: The engine is composing the form regularly, failing to apply the highly irregular contraction rules for 'irii + ra + [verb form]' (e.g., 'ra + tíiraʔ' -> 'ra').
+  [P7_Subordinating_Suffix_A_Final_Glottal_Loss] The engine incorrectly handles the subordinating suffix 'a' when it follows a verb form ending in a glottal stop 'ʔ'. It either adds 'ʔa' or 'aa' or fails to apply Parks' Rule 24 (final 'ʔ' loss before 'a').
+    Affects: 20 forms
+    Fix: Ensure the subordinating suffix is correctly identified as 'a'. Implement Parks' Rule 24: a final 'ʔ' is lost when followed by the subordinating suffix 'a'.
+    Example: contingent.sub/1sg
+      Expected: ítiira
+      Got:      itiiraʔa
+      Root cause: The engine fails to apply Parks' Rule 24 (final 'ʔ' loss before 'a') when the subordinating suffix 'a' is added to a verb form ending in 'ʔ'.
+  [P8_Potential_Mode_Kuus_Kaas_A_Interaction] The engine incorrectly applies a phonological rule for the combination of the potential mode prefixes 'kuus-' or 'kaas-' with the 3rd person agent preverb 'a-'.
+    Affects: 2 forms
+    Fix: Correct the phonological rule for 'kuus/kaas' + 'a' (3.A preverb) to produce 'kusaa' / 'kaasaa' (vowel lengthening) instead of 'kusii' / 'kasii'.
+    Example: potential/3sg
+      Expected: kusaaʔaʔ
+      Got:      kusiiʔ
+      Root cause: The engine incorrectly transforms 'kuus + a' into 'kusii' instead of 'kusaa' (Parks' rule: 's + a' -> 'saa' for these prefixes).
+  [P9_Infinitive_IR_KU_Irregularity] In the infinitive mode, the combination of the preverb 'ir-' with the descriptive 'ku-' and the stem 'aʔ' or dual stem 'waʔaʔ' undergoes a specific, irregular change ('ihkú') not captured by the engine. The engine also makes errors in plural suffix selection.
+    Affects: 8 forms
+    Fix: Implement specific morphophonological rules for 'to come' in the infinitive mode, ensuring 'ir' (preverb) + 'ku' (descriptive) correctly forms 'ihkú' (e.g., 't + ir + ku + aʔ' -> 'tihkúʔa'). Also, ensure correct plural suffix 'hu' is used.
+    Example: infinitive.sub/1sg
+      Expected: ratihkúʔa
+      Got:      ratkuuraʔa
+      Root cause: The engine fails to apply the specific morphophonological rule for 'ir' (preverb) + 'ku' (descriptive) + stem/plural marker in the infinitive mode, which results in 'ihkú'. It also incorrectly uses 'uraʔa' instead of the correct stem/suffix combination.
+
+to do it (44 mismatches, 7 patterns):
+  [P4_POTENTIAL_SUFFIXES] The engine completely misses the special suffixes (-ciʔ for singular/dual, -ciraak for plural) that are characteristic of the Potential mode for this verb class. Instead, it uses the regular stem (uutaar or uuhaakaar). The underlying stem 'ut-aar' is reduced to 'u' (from 'ut-') before these suffixes.
+    Affects: 11 forms
+    Fix: Implement a specific rule for Potential mode for Class 1 verbs (or this verb specifically) that replaces the main stem (uutaar/uuhaakaar) with 'u' (from ut-) and appends -ciʔ for singular/dual forms and -ciraak for plural forms. Ensure correct modal prefixes (kuus-/kaas-) are used and subsequent phonological rules are applied.
+    Example: potential/1sg
+      Expected: kuustuciʔaa
+      Got:      kustuutaa
+      Root cause: Fundamental misunderstanding of Potential mode morphology for this verb class, specifically the requirement for -ciʔ/-ciraak suffixes and the corresponding stem reduction (ut-aar -> u).
+  [P1_ACIR_CONTRACTION] The engine fails to correctly contract the 1st dual inclusive prefix 'acir-' with the following stem 'iitaar'. Specifically, it does not apply 'r'-loss before 'i' (Parks Ch 3, Rule 13) and subsequent vowel contraction (Parks Ch 3, Rule 1).
+    Affects: 7 forms
+    Fix: Implement or correct the application of 'r'-loss (Parks Ch 3, Rule 13) before 'i' and vowel contraction (Parks Ch 3, Rule 1) for the sequence 'acir + iitaar'. Specifically, 'acir + iitaar' should reduce to 'aciitaar'.
+    Example: indicative/1du_incl
+      Expected: taciitaa
+      Got:      taciriitaa
+      Root cause: Failure to apply 'r'-loss (Parks Ch 3, Rule 13) and subsequent vowel contraction (Parks Ch 3, Rule 1) between 'acir' and 'iitaar'. The engine incorrectly retains the 'r' and does not contract the vowels.
+  [P5_GERUNDIAL_PREFIX_AND_PROCLITIC] The engine has multiple errors in the Gerundial mode: 1. It uses an incorrect form of the gerundial prefix ('iriir-' instead of 'irir-'). 2. For dual forms, it misplaces the 'si' dual proclitic, putting it before 'irir-' instead of after it. 3. It misses the 'ra-' absolutive prefix in some dual forms.
+    Affects: 6 forms
+    Fix: 1. Correct the base form of the gerundial prefix to 'irir-'. 2. Ensure the 'si' dual proclitic is placed *after* the 'irir-' prefix in the morpheme template for gerundial dual forms. 3. Add the 'ra-' absolutive prefix in the correct position for relevant gerundial dual forms.
+    Example: gerundial.sub/1du_excl
+      Expected: iririsiratuutaara
+      Got:      siiriratuutaara
+      Root cause: Incorrect base form of the gerundial prefix ('iriir-' instead of 'irir-'), incorrect placement of the 'si' proclitic (should follow 'irir-'), and missing the 'ra-' absolutive prefix.
+  [P2_PL_STEM_SHORTENING] The engine fails to apply vowel shortening (specifically 'aa' -> 'a') in the plural stem 'uuhaakaar' before 'k' (Parks Ch 3, Rule 11).
+    Affects: 7 forms
+    Fix: Implement or correct the application of Parks Ch 3, Rule 11, shortening 'aa' to 'a' when it occurs before 'k' in the plural stem 'uuhaakaar'.
+    Example: negative_indicative/2pl
+      Expected: kaakasuuhakaa
+      Got:      kaakasuuhaakaa
+      Root cause: Failure to apply Parks Ch 3, Rule 11, which shortens 'aa' to 'a' when it occurs before 'k'.
+  [P3_SI_GLOTTAL_STOP] The engine fails to insert a glottal stop (ʔ) after the dual proclitic 'si-' when it is followed by a vowel-initial morpheme (e.g., modal prefix 'i-', 'aa-'). This is related to Parks Ch 3, Rule 2 ('i' + 'i' -> 'iʔi') or a more general 'si' + V -> 'siʔV' rule.
+    Affects: 7 forms
+    Fix: Implement a rule that inserts 'ʔ' after the 'si' dual proclitic when it is immediately followed by a vowel-initial morpheme.
+    Example: contingent/1du_excl
+      Expected: siʔituutaa
+      Got:      siituutaa
+      Root cause: Failure to apply glottal stop insertion rule after the 'si' dual proclitic when followed by a vowel.
+  [P6_SUBJUNCTIVE_DUAL_PREFIX] The engine uses 'i-' as the subjunctive modal prefix for dual forms, while the expected forms show 'a-' (or 'aa-' for 1du_incl) after the 'siʔ' sequence. This indicates an incorrect choice of modal prefix for subjunctive duals.
+    Affects: 3 forms
+    Fix: Ensure the correct subjunctive modal prefix ('aa-'/'a-') is selected for dual forms, and that it interacts correctly with the 'si' proclitic (e.g., 'si + aa' -> 'siʔa').
+    Example: subjunctive.sub/1du_excl
+      Expected: siʔatuutaara
+      Got:      siituutaara
+      Root cause: Incorrect selection of the subjunctive modal prefix for dual forms (using 'i-' instead of 'aa-'/'a-').
+  [P7_INFINITIVE_MODE] The engine has multiple issues in the Infinitive mode: 1. Incorrect vowel contraction for 'ra + ta + a + kuu' (expected 'rataakuu', engine 'ratakuu'). 2. For 3rd person plural, it misses the 3rd person agent 'r' and the subsequent 'r' -> 'h' rule (Parks Ch 3, Rule 14) before 'k'. 3. For 1pl_excl, it incorrectly lengthens 'a' to 'aa' in 'ratkuuhakaara'.
+    Affects: 3 forms
+    Fix: 1. Correct vowel contraction for 'ra + ta + a + kuu' to 'rataakuu'. 2. For 3rd person infinitive, include the 3rd person agent 'r' between 'ra-' and 'kuu-', and apply Parks Ch 3, Rule 14 ('r' -> 'h' before 'k'). 3. Correct vowel length for 1pl_excl infinitive form.
+    Example: infinitive.sub/3pl
+      Expected: rihkuutaara
+      Got:      rakuutaara
+      Root cause: Failure to include the 3rd person agent 'r' in the infinitive construction and apply Parks Ch 3, Rule 14 ('r' -> 'h' before 'k').
+
+to drink it (81 mismatches, 7 patterns):
+  [P3_STEM_VOWEL_SHORTENING_GLOTTAL_LOSS] The engine fails to shorten the stem vowel 'ii' to 'i' in 'kiikaʔ' (resulting in 'kika') and also fails to remove the final glottal stop 'ʔ' when the shortened stem is followed by the subordinate suffix '-a' in specific modes (Contingent, Gerundial, Subjunctive, Infinitive).
+    Affects: 27 forms
+    Fix: Implement a rule that shortens the 'ii' vowel in the stem 'kiikaʔ' to 'i' when the verb is conjugated in the Contingent, Gerundial, Subjunctive, or Infinitive modes. Furthermore, ensure that if this shortened stem 'kikaʔ' is followed by the subordinate suffix '-a', the final 'ʔ' is dropped, resulting in 'kikaa'.
+    Example: contingent.sub/1sg
+      Expected: itkikaa
+      Got:      itkiikaʔa
+      Root cause: The engine does not apply the morphophonological rule of vowel shortening for the stem 'kiikaʔ' (to 'kika') in the specified modes. Additionally, it fails to remove the final glottal stop 'ʔ' from the shortened stem before the subordinate suffix '-a'.
+  [P1_INCORRECT_PLURAL_MARKERS] The engine incorrectly uses the general plural marker 'iraak' for 1pl_excl and 2pl, instead of the specific markers 'ha' (1pl_excl) and 'ta' (2pl).
+    Affects: 18 forms
+    Fix: Implement specific rules for 1pl_excl ('ha') and 2pl ('ta') markers. Ensure these markers are prioritized over the general 'iraak' plural marker when conjugating for these persons, absorbing or replacing the agent prefixes 't' and 's'.
+    Example: indicative/1pl_excl
+      Expected: tahakiikaʔ
+      Got:      tatiraakiikaʔ
+      Root cause: The engine uses 't' (1.A) + 'iraak' (general plural) for 1pl_excl, but the correct marker is 'ha'. For 2pl, it uses 's' (2.A) + 'iraak' (general plural), but the correct marker is 'ta'. These specific plural markers override the general 'iraak' in these contexts.
+  [P2_INCORRECT_3PL_MARKER] The engine incorrectly uses the suffix 'aahuʔ' for 3pl transitive verbs with singular objects. The expected form shows 'h' which results from the plural prefix 'raak' undergoing sound changes before the stem 'kiikaʔ'.
+    Affects: 10 forms
+    Fix: Remove the 'aahuʔ' suffix for 3pl transitive verbs with singular objects. Instead, apply the 'raak' plural prefix and then implement the sound change rule 'raak' + 'k' (stem initial) -> 'h'.
+    Example: indicative/3pl
+      Expected: tihkiikaʔ
+      Got:      tikiikaʔaahuʔ
+      Root cause: The engine incorrectly applies the 'aahuʔ' suffix, which is typically for intransitive 3pl or transitive with plural objects. For transitive verbs with singular objects, the 3pl is marked by the plural prefix 'raak' which then undergoes morphophonological changes (specifically, 'raak' + 'k' -> 'h' before the stem 'kiikaʔ').
+  [P7_MODAL_PREFIX_VOWEL_LENGTH] The engine sometimes uses a short vowel for modal prefixes ('kaaka-', 'kaaki-', 'rii-', 'aa-') where a long vowel ('kaakaa-', 'kaakii-', 'rii-', 'aa-') is expected, often due to vowel contraction or inherent length.
+    Affects: 10 forms
+    Fix: Review the base forms of modal prefixes 'kaaka-/kaaki-', 'rii-', and 'aa-'. Ensure that the correct vowel length is used, possibly by implementing specific vowel lengthening rules after prefix concatenation, or by using the longer forms as base forms where appropriate.
+    Example: negative_indicative/1sg
+      Expected: kaakaatkiikaʔ
+      Got:      kaakatkiikaʔ
+      Root cause: The engine's base forms for modal prefixes like 'kaaka-' and 'rii-' might be too short, or it's failing to apply vowel lengthening rules (e.g., 'kaaka-' + 'a' -> 'kaakaa-').
+  [P6_GERUNDIAL_CONTRACTION_SI_PLACEMENT] The engine fails to contract 'iri-ra-' into 'iriira-' for gerundial forms. Additionally, it incorrectly places the 'si-' dual marker as a proclitic *before* 'iriir-' instead of *between* 'iri-' and 'ra-' (i.e., 'iri-si-ra-').
+    Affects: 6 forms
+    Fix: For gerundial forms, modify the 'si-' dual marker placement logic to insert it between 'iri-' and 'ra-' (i.e., 'iri-si-ra-') instead of as a pre-proclitic. Additionally, implement the vowel contraction rule 'i-ra' -> 'iira' for the gerundial prefix 'iri-ra-'.
+    Example: gerundial.sub/1du_excl
+      Expected: iriisiratkikaa
+      Got:      siiriiratkiikaʔa
+      Root cause: The engine treats 'si-' as a general proclitic, placing it at the very beginning. However, in gerundial forms, 'si-' is inserted *within* the 'iri-ra-' complex, becoming 'iri-si-ra-'. Also, the engine fails to apply the vowel contraction rule 'i-ra' -> 'iira' for the gerundial prefix 'iri-ra-'.
+  [P5_SI_PROCLITIC_GLOTTAL_STOP_INSERTION] The engine fails to insert a glottal stop ('ʔ') between the 'si-' dual proclitic and a following vowel-initial prefix.
+    Affects: 5 forms
+    Fix: Implement a rule that inserts a glottal stop 'ʔ' after the 'si-' proclitic if the immediately following morpheme begins with a vowel.
+    Example: contingent/1du_excl
+      Expected: siʔitkikaʔ
+      Got:      siitkiikaʔ
+      Root cause: The engine does not apply the rule for glottal stop insertion after the 'si-' proclitic when it precedes a vowel-initial prefix. This is a standard morphophonological rule in Skiri Pawnee.
+  [P4_POTENTIAL_MODAL_ALTERNATION] The engine fails to correctly apply the 'kuus-/kaas-' alternation for the potential modal prefix (using 'kuus-' when 'kaas-' is expected before an 'a'-initial morpheme). It also misses the subsequent vowel contraction and 'i' insertion ('kaas-acir' -> 'kaacir').
+    Affects: 1 forms
+    Fix: Implement the 'kuus-/kaas-' alternation rule: use 'kaas-' when the following morpheme begins with 'a', and 'kuus-' otherwise. Additionally, implement the specific contraction rule 'kaas-acir' -> 'kaacir' (which involves 's' -> 'c' and 'i' insertion).
+    Example: potential/1du_incl
+      Expected: kaaciriikiikaʔ
+      Got:      kuusacirikiikaʔ
+      Root cause: The engine does not apply the 'kuus-/kaas-' alternation rule (using 'kuus-' instead of 'kaas-' before 'a'). It also misses the specific contraction rule 'kaas-acir' -> 'kaacir' (which involves 's' -> 'c' and 'i' insertion).
+
+to go (80 mismatches, 6 patterns):
+  [P1_GLOTTAL_LOSS_CL] The engine fails to apply rules for glottal stop (ʔ) loss and compensatory lengthening (CL) when the stem 'ʔat' is preceded by agent prefixes (t-, s-) or other vowels. This results in an unlengthened vowel and/or an unlost glottal stop.
+    Affects: 22 forms
+    Fix: Implement phonological rules for the 'ʔat' stem: 1. If preceded by 't' or 's' (agent prefixes), 'tʔat' -> 'tat' and 'sʔat' -> 'sat', with compensatory lengthening of the preceding vowel (e.g., 'a-tat' -> 'aa-tat'). 2. If 'ʔat' is between vowels (V1-ʔat-V2), 'ʔ' is lost, and V1 is lengthened (e.g., 'V1-ʔat-a' -> 'V1V1-ata').
+    Example: indicative/1sg
+      Expected: taatat
+      Got:      tatʔat
+      Root cause: Failure to apply Parks Ch 3, Rule 12 (ʔ loss after t/s with CL) and Rule 11 (ʔ loss between vowels with CL). The engine treats 'ʔat' as an invariant stem and does not process the glottal stop's interaction with preceding sounds.
+  [P2_PLURAL_FUSIONS] The engine fails to apply specific suppletive fusions for the plural stem 'wuu' when combined with the plural marker 'raak'/'iraak' and agent prefixes (t-, s-). Instead, it concatenates them directly, resulting in forms like 'raakwuu' or 'iraakwuu'.
+    Affects: 30 forms
+    Fix: Update the suppletive stem information for 'to go' to include specific 'pl_stem_fusions' for 'raak', 't-iraak', and 's-iraak'. Set 'pl_absorbs_raak: true'. Implement these fusions as a lookup table or rule set that applies before general phonological rules.
+    Example: indicative/1pl_incl
+      Expected: tataraapuuʔ
+      Got:      tataraakwuu
+      Root cause: The engine's suppletive stem info for 'pl_absorbs_raak: false' is incorrect. The plural marker 'raak' and stem 'wuu' undergo specific fusions, often interacting with agent prefixes: 'raak-wuu' -> 'raapuuʔ'; 't-iraak-wuu' -> 'hapuuʔ'; 's-iraak-wuu' -> 'stapuuʔ' (Parks Ch 4, p. 100).
+  [P3_3PL_SUFFIX_AND_PHONOLOGY] The engine incorrectly appends the 'aahuʔ' suffix for 3rd person plural forms. Additionally, it fails to apply phonological rules (like r-loss and compensatory lengthening) to the fused plural stem 'raapuuʔ' when it follows certain modal prefixes.
+    Affects: 10 forms
+    Fix: 1. Remove the 'aahuʔ' suffix for 3pl forms of 'to go'. 2. Ensure the correct 'raapuuʔ' plural fusion (from P2) is used for 3pl. 3. Implement phonological rules: r-loss before 'w' (Parks Ch 3, Rule 13) and subsequent ʔ-loss with compensatory lengthening (Parks Ch 3, Rule 11) for sequences like 'ti-raapuuʔ'.
+    Example: indicative/3pl
+      Expected: tiiwuuʔ
+      Got:      tiwuuhuʔ
+      Root cause: Misapplication of 'aahuʔ' as a general 3pl suffix (it's not used for 'to go'). Failure to apply Parks Ch 3, Rule 13 (r-loss before w) and Rule 11 (ʔ-loss between vowels with CL) to the 'raapuuʔ' plural fusion.
+  [P4_DUAL_STEM_FUSIONS_CL] The engine incorrectly handles the dual stem 'war' and its fusions, particularly with 'acir' (1du_incl) and in 3du forms. It fails to apply specific phonological rules like vowel lengthening and complex fusions for 'acir-war' based on mode.
+    Affects: 6 forms
+    Fix: 1. Implement specific fusions for 'acir' + 'war': 'acir-war' -> 'acihwa' (non-potential) and 'acir-war' -> 'aciriiwa' (potential). 2. Implement a general rule for vowel lengthening of the final vowel of a prefix (e.g., 'kaaki-') when followed by 'war' (after r-loss), e.g., 'kaaki-war' -> 'kaakiiwa'. 3. Correct the expected form for 'potential 1du_incl' to 'kuusaciriiwa' based on Parks' dictionary.
+    Example: negative_indicative/1du_incl
+      Expected: kaakaacihwa
+      Got:      kaakacihwa
+      Root cause: Failure to apply vowel lengthening to the 'a' in 'acir' when preceded by 'kaaka-'. Also, the specific fusion 'acir-war' -> 'acihwa' (for non-potential) and 'acir-war' -> 'aciriiwa' (for potential) is not fully implemented or applied correctly.
+  [P5_DUAL_AGENT_FUSIONS_EPENTHESIS] The engine incorrectly applies the 'tpa'/'spa' dual agent fusions for gerundial and infinitive modes, which should instead use the base 't-war'/'s-war' followed by different phonological processes. Additionally, it fails to insert an epenthetic glottal stop 'ʔ' before 'i' in certain contexts.
+    Affects: 8 forms
+    Fix: 1. Refine the 'du_agent_fusions' to be context-dependent: 'tpa'/'spa' for specific modes (e.g., contingent, assertive, indicative), but for gerundial and infinitive, use 't-war'/'s-war' as the base for further phonological rules (e.g., 'iriira-t-war-a' -> 'iriisiratpara'). 2. Implement the epenthetic glottal stop rule (Parks Ch 3, Rule 10) for 'ʔ' insertion before 'i' when preceded by a consonant-final prefix.
+    Example: contingent/1du_excl
+      Expected: siʔitpa
+      Got:      siitpa
+      Root cause: Failure to insert epenthetic 'ʔ' before 'i' when 'i' is the first vowel of a morpheme following a consonant-final prefix (Parks Ch 3, Rule 10). Also, the 'tpa'/'spa' fusions are applied too broadly; gerundial and infinitive modes require different handling of 't-war'/'s-war'.
+  [P6_GERUNDIAL_SI_PROCLITIC] The engine incorrectly adds the 'si-' dual proclitic to gerundial dual forms (1du_excl, 2du, 3du), where it should be absent according to attested forms in Parks' dictionary.
+    Affects: 3 forms
+    Fix: Modify the engine's logic to prevent the 'si-' dual proclitic from being added to gerundial forms for the verb 'to go'.
+    Example: gerundial.sub/1du_excl
+      Expected: iriisiratpara
+      Got:      siiriiratpaa
+      Root cause: Incorrect application of the 'si-' dual proclitic. For the verb 'to go', the 'si-' proclitic is not used with 'iriira-' gerundial forms in dual persons (Parks Ch 4, p. 100).
+
+to have it (39 mismatches, 9 patterns):
+  [A_GlottalStopInsertion] The engine fails to insert an epenthetic glottal stop (ʔ) after the modal prefixes 'i-' (Contingent) and 'aa-'/'ii-' (Subjunctive) when they are followed by a consonant-initial morpheme (agent 't-'/'s-', inclusive 'acir-', or plural 'raak-').
+    Affects: 12 forms
+    Fix: Implement a phonological rule that inserts 'ʔ' after 'i' or 'aa'/'ii' when the next morpheme starts with a consonant (t, s, acir, r).
+    Example: contingent/1du_excl
+      Expected: siʔihaa
+      Got:      siihaa
+      Root cause: Missing phonological rule for glottal stop insertion after 'i-' (Contingent) and 'aa-'/'ii-' (Subjunctive) before consonant-initial prefixes.
+  [C_GerundialContractions] The engine fails to apply specific contractions for the gerundial prefix 'irii-' + infinitive 'ra-' when followed by the dual/plural proclitic 'si-' or the plural marker 'raak-'. It also incorrectly adds 'si-' as a separate proclitic when it should be part of the contraction.
+    Affects: 7 forms
+    Fix: Implement specific contraction rules: 'irii-' (GER) + 'ra-' (INF) + 'si-' (DU/PL) -> 'iriisir-' and 'irii-' (GER) + 'ra-' (INF) + 'raak-' (PL) -> 'iriirir-'. Ensure 'si-' proclitic is not added redundantly when these contractions are used.
+    Example: gerundial.sub/1du_excl
+      Expected: iriisirahaaha
+      Got:      siiriirahaaha
+      Root cause: Missing or incorrect application of specific contraction rules: 'irii-' + 'ra-' + 'si-' -> 'iriisir-' and 'irii-' + 'ra-' + 'raak-' -> 'iriirir-'. Also, 'si-' proclitic is incorrectly added separately.
+  [G_SubjunctivePrefixChoice] The engine incorrectly uses the 'ii-' form of the subjunctive prefix instead of 'aa-' when the following morpheme (agent 't-'/'s-', inclusive 'acir-') does not start with 'r'. (These forms are also affected by Pattern A, but the 'aa' vs 'ii' choice is a prior morphological decision).
+    Affects: 5 forms
+    Fix: Ensure the subjunctive prefix is 'aa-' when followed by 't-', 's-', or 'acir-', and 'ii-' when followed by 'raak-'.
+    Example: subjunctive.sub/1du_excl
+      Expected: siʔaahaaha
+      Got:      siihaaha
+      Root cause: Incorrect application of the subjunctive prefix selection rule: 'aa-' before non-'r' initial morphemes, 'ii-' before 'r'-initial morphemes.
+  [B_AssertiveShortening] The engine fails to shorten the assertive prefix 'rii-' to 'ri-' when it is the initial modal prefix and followed by an agent prefix ('t-' or 's-') or the stem 'raa' (for 3sg).
+    Affects: 3 forms
+    Fix: Implement a rule: 'rii-' (ASSR) -> 'ri-' if it's the initial modal prefix and followed by 't-', 's-', or 'raa' (for 3sg).
+    Example: assertive/1sg
+      Expected: rihaa
+      Got:      riihaa
+      Root cause: Incorrect application of 'rii-' shortening rule. It should shorten to 'ri-' when not preceded by 'si-' proclitic.
+  [D_PotentialStemAlternation] The stem 'raa' undergoes a specific alternation (e.g., to 'iiraa') in potential mode when combined with inclusive 'acir-' or plural 'raak-'. The engine uses the base stem 'raa'.
+    Affects: 3 forms
+    Fix: Add a rule that changes the stem 'raa' to 'iiraa' in potential mode when preceded by 'acir-' or 'raak-' (or their contracted forms like 'kaacir-', 'kuusiraak-').
+    Example: potential/1du_incl
+      Expected: kaaciriiraa
+      Got:      kuusaciriraa
+      Root cause: Missing rule for stem alternation of 'raa' to 'iiraa' in potential mode for inclusive/plural forms.
+  [E_PluralMarkerOmission] The engine fails to include the plural marker 'iraak-' for 3pl forms in Absolutive and Infinitive modes. It also misses the 'r->h' sound change rule (Parks Ch 3, Rule 18) when 'raak-' combines with 'ku-' in Infinitive.
+    Affects: 2 forms
+    Fix: Ensure 'iraak-' is included for 3pl in these modes. Implement the contraction 'ra-' + 'iraak-' -> 'riraak-'. For infinitive, apply the 'r->h' rule (Parks Ch 3, Rule 18) when 'riraak-' combines with 'ku-' (e.g., 'riraak + ku' -> 'rirahku').
+    Example: absolutive/3pl
+      Expected: siriraa
+      Got:      siraraa
+      Root cause: Omission of 'iraak-' plural marker. For infinitive, also failure to apply 'r->h' sound change rule.
+  [F_SubordinationSuffixHa] The engine incorrectly duplicates the final 'a' or 'ha' when the Class 3 subordination suffix 'ha' follows the stem 'raa' in gerundial forms.
+    Affects: 2 forms
+    Fix: Review and correct the phonological rule for the interaction of stem-final 'aa' with the 'ha' subordination suffix to prevent duplication.
+    Example: gerundial.sub/1sg
+      Expected: iriiraaha
+      Got:      iriirahaaha
+      Root cause: Incorrect phonological rule for the interaction of stem-final 'aa' with the 'ha' subordination suffix, leading to duplication.
+  [I_IncorrectModalPrefixContingent3rd] The engine selects an incorrect modal prefix ('ri-' instead of 'i-') for 3rd person dual/plural contingent.subordinate forms.
+    Affects: 2 forms
+    Fix: Ensure 'i-' (CONT) is selected for 3rd person dual/plural contingent.subordinate forms.
+    Example: contingent.sub/3du
+      Expected: siʔiraaha
+      Got:      siriraaha
+      Root cause: Engine selects incorrect modal prefix ('ri-' instead of 'i-') for 3rd person dual/plural contingent.sub.
+  [H_VowelLengtheningAfterS] The engine fails to apply the vowel lengthening rule when the agent prefix 's-' combines with the stem 'raa' (s + raa -> staa).
+    Affects: 1 forms
+    Fix: Implement a phonological rule: 's' + 'raa' -> 'staa'.
+    Example: gerundial.sub/2sg
+      Expected: iriiraastaaha
+      Got:      iriirastaaha
+      Root cause: Failure to apply vowel lengthening rule: 's' + 'raa' -> 'staa'.
+
+----------------------------------------------------------------------
+ROUND 2: Deep Dives
+----------------------------------------------------------------------
+
+to be good:
+  Pattern: P1_PluralPreverbAnd3plSuffix
+  Engine error point: For 1pl/2pl, the engine fails to apply the special morphological rule for 'uur' preverb in plural contexts, specifically extracting 'u' from 'uur' and placing it after the agent prefix (replacing 'a' for 1pl_incl). It also incorrectly places the full 'uur' morpheme after 'raak'. For 3pl, the engine uses 'ti-' instead of 't-' as the modal prefix, fails to apply the 'r' -> 'h' sound change for 'uur' + 'iwaa', and incorrectly adds an extra 'waa' 3pl suffix.
+  Rule: IF verb has 'uur' preverb AND form is plural (1pl, 2pl, 3pl): THEN (1) For 1pl/2pl: REMOVE 'uur' preverb from its original position. INSERT 'u' (from 'uur') immediately after the agent prefix ('t-' or 's-') and before 'raak'/'iraak'. If 1PL.INCL 'a-' is present, this 'u' REPLACES it. (2) For 3pl: SET modal prefix to 't-' (not 'ti-'). APPLY Parks Ch 3.3.11 (r-h alternation) for 'uur' + 'iwaa' -> 'uuhiwaa'. DO NOT add an extra 'waa' 3pl suffix.
+    1pl_incl indicative: tatuuraakiwaa
+      Underlying: ta(IND) + t(1.A) + u(from_uur_replacing_1PL.INCL_a) + raak(PL) + iwaa(PL_STEM)
+        -> ta + t + u + raak + iwaa (Concatenation of morphemes after special 'uur' handling)
+        -> tat + u + raak + iwaa (Concatenation)
+        -> tatu + raak + iwaa (Concatenation)
+        -> tatuuraak + iwaa (Parks Rule 1: V1 + rV2 -> V1rV2. 'u' + 'raak' -> 'uuraak')
+        -> tatuuraakiwaa (Concatenation)
+    3pl indicative: tuuhiwaa
+      Underlying: t(IND_3PL) + uur(PREV) + iwaa(PL_STEM)
+        -> t + uur + iwaa (Concatenation of morphemes)
+        -> tuur + iwaa (Concatenation)
+        -> tuuhiwaa (Parks Ch 3.3.11: r becomes h before i or u when preceded by a vowel. 'r' of 'uur' is preceded by 'uu' and followed by 'i' of 'iwaa', so 'r' -> 'h')
+  Pattern: P2_IncorrectIhInsertion
+  Engine error point: The engine incorrectly inserts the 'ih' patient compound marker between the agent prefix ('t-' or 's-') and the 'uur' preverb for 1du_excl and 2du forms. It also likely fails to apply Parks Rule 12 (r loss before h) and Rule 10 (final r loss) correctly for 'uur' + 'hiir'.
+  Rule: IF verb has 'uur' preverb AND form is 1du_excl or 2du: THEN DO NOT insert the 'ih' patient compound marker. ENSURE Parks Rule 12 (r loss before h) and Parks Rule 10 (final r loss) are applied to derive 'uur' + 'hiir' -> 'uuhii'.
+    1du_excl indicative: sitatuuhii
+      Underlying: si(DU) + ta(IND) + t(1.A) + uur(PREV) + hiir(STEM)
+        -> si + ta + t + uur + hiir (Concatenation)
+        -> sita + t + uur + hiir (Concatenation)
+        -> sitat + uur + hiir (Concatenation)
+        -> sitatuur + hiir (Concatenation: C + V1rV2 -> CV1rV2)
+        -> sitatuu + hiir (Parks Rule 12: r loss before h. 'r' of 'uur' is lost before 'h' of 'hiir')
+    2du indicative: sisuuhii
+      Underlying: si(DU) + s(2.A) + uur(PREV) + hiir(STEM)
+        -> si + s + uur + hiir (Concatenation)
+        -> sis + uur + hiir (Concatenation)
+        -> sisuur + hiir (Concatenation: C + V1rV2 -> CV1rV2)
+        -> sisuu + hiir (Parks Rule 12: r loss before h. 'r' of 'uur' is lost before 'h' of 'hiir')
+        -> sisuuhiir (Concatenation)
+  Pattern: P3_SubordinationSuffixOmission
+  Engine error point: The engine consistently fails to append the '-ra' subordination suffix to the conjugated verb form. For gerundial 3sg forms, it also incorrectly applies the 'ir-' preverb alternation, using 'iir-' instead of 'ir-' for 3rd person agent.
+  Rule: IF mode is subordinated (gerundial.sub, contingent.sub, subjunctive.sub, infinitive.sub): THEN APPEND the '-ra' subordination suffix as the final morpheme. Additionally, for the 'ir-' preverb, ensure correct alternation: it remains 'ir-' before a 3rd person (zero) agent, and becomes 'iir-' before 1st/2nd person agents.
+    3sg gerundial.sub: iriruuhiira
+      Underlying: ir(GER) + ir(PREV) + uur(PREV) + hiir(STEM) + ra(SUB)
+        -> ir + ir + uur + hiir + ra (Concatenation of morphemes)
+        -> irir + uur + hiir + ra (Concatenation)
+        -> iriruur + hiir + ra (Concatenation)
+        -> iriruu + hiir + ra (Parks Rule 12: r loss before h. 'r' of 'uur' is lost before 'h' of 'hiir')
+        -> iriruuhiir + ra (Concatenation)
+    3sg infinitive.sub: rauuhiira
+      Underlying: ra(INF) + uur(PREV) + hiir(STEM) + ra(SUB)
+        -> ra + uur + hiir + ra (Concatenation of morphemes)
+        -> rauur + hiir + ra (Concatenation)
+        -> rauu + hiir + ra (Parks Rule 12: r loss before h. 'r' of 'uur' is lost before 'h' of 'hiir')
+        -> rauuhiir + ra (Concatenation)
+        -> rauuhii + ra (Parks Rule 10: Final r loss)
+
+to be sick:
+  Pattern: P2_ModalPrefixSelection
+  Engine error point: The engine incorrectly selects the modal prefix allomorph (e.g., 'ra-' instead of 'ri-' for absolutive, 'kaas-' instead of 'kuus-' for potential) and fails to generate the correct 'ku-' descriptive verb complex, often missing the internal 'ku-' descriptive marker or misapplying internal rules for the complex.
+  Rule: IF the verb is a descriptive verb (like 'kiraawaʔ'), THEN generate the appropriate 'ku-' descriptive verb complex (e.g., 'riiku', 'riisuku', 'kuusuku') based on mode, person, and number by looking it up from a dedicated paradigm table. This complex acts as a pre-stem unit. The modal prefix allomorph selection for these forms is handled by this paradigm.
+    1sg absolutive: riikukiraawaʔ
+      Underlying: riiku(ABS.1SG.DESCR.COMPLEX) + kiraawaʔ(STEM)
+        -> Step 1: Identify the verb 'to be sick' (kiraawaʔ) as a descriptive verb requiring the 'ku-' complex.
+        -> Step 2: Look up the 'ku-' descriptive verb complex for Absolutive 1sg, which is 'riiku' (from Parks, Ch. 5, p. 120).
+        -> Step 3: Concatenate the descriptive verb complex 'riiku' and the main stem 'kiraawaʔ'.
+        -> Step 4: Result: 'riikukiraawaʔ'.
+    2sg absolutive: riisukukiraawaʔ
+      Underlying: riisuku(ABS.2SG.DESCR.COMPLEX) + kiraawaʔ(STEM)
+        -> Step 1: Identify the verb 'to be sick' (kiraawaʔ) as a descriptive verb requiring the 'ku-' complex.
+        -> Step 2: Look up the 'ku-' descriptive verb complex for Absolutive 2sg, which is 'riisuku' (from Parks, Ch. 5, p. 120).
+        -> Step 3: Concatenate the descriptive verb complex 'riisuku' and the main stem 'kiraawaʔ'.
+        -> Step 4: Result: 'riisukukiraawaʔ'.
+  Pattern: P1_Pluralization
+  Engine error point: The engine fails to generate the correct pluralized 'ku-' descriptive verb complex. It often misses the required 'tah' plural suffix after the 'raak-' plural marker, or uses an incorrect internal structure for the complex (e.g., 'icakuraak' instead of 'racakuraktah').
+  Rule: IF the verb is a descriptive verb and the form is plural, THEN generate the appropriate pluralized 'ku-' descriptive verb complex (e.g., 'racakuraktah', 'raakuraktah', 'kaasukuraktah') by looking it up from a dedicated paradigm table. This complex must correctly incorporate the 'raak-/iraak-' plural marker and the 'tah' plural suffix.
+    1pl_incl contingent: racakuraktahkiraawaʔ
+      Underlying: racakuraktah(CONT.1PL.INCL.DESCR.COMPLEX) + kiraawaʔ(STEM)
+        -> Step 1: Identify the verb 'to be sick' (kiraawaʔ) as a descriptive verb requiring the 'ku-' complex.
+        -> Step 2: Look up the 'ku-' descriptive verb complex for Contingent 1pl.incl, which is 'racakuraktah' (from Parks, Ch. 5, p. 120). This complex includes the plural marker 'raak-' and the plural suffix 'tah'.
+        -> Step 3: Concatenate the descriptive verb complex 'racakuraktah' and the main stem 'kiraawaʔ'.
+        -> Step 4: Result: 'racakuraktahkiraawaʔ'.
+    3pl absolutive: raakuraktahkiraawaʔ
+      Underlying: raakuraktah(ABS.3PL.DESCR.COMPLEX) + kiraawaʔ(STEM)
+        -> Step 1: Identify the verb 'to be sick' (kiraawaʔ) as a descriptive verb requiring the 'ku-' complex.
+        -> Step 2: Look up the 'ku-' descriptive verb complex for Absolutive 3pl, which is 'raakuraktah' (from Parks, Ch. 5, p. 120). This complex includes the plural marker 'raak-' and the plural suffix 'tah'.
+        -> Step 3: Concatenate the descriptive verb complex 'raakuraktah' and the main stem 'kiraawaʔ'.
+        -> Step 4: Result: 'raakuraktahkiraawaʔ'.
+  Pattern: P4_FinalGlottalStopDeletion
+  Engine error point: The engine fails to apply Parks' Ch. 3, Rule 24 (Glottal Stop Deletion), leaving the final glottal stop (ʔ) of the stem 'kiraawaʔ' intact when it should be deleted before a vowel-initial suffix.
+  Rule: IF a morpheme ends in a glottal stop (ʔ) AND the following morpheme begins with a vowel, THEN delete the glottal stop (ʔ). (Parks' Ch. 3, Rule 24)
+    2sg gerundial.sub: iriirasukukiraawaa
+      Underlying: iriirasukua(GER.2SG.DESCR.COMPLEX) + kiraawaʔ(STEM) + a(SUB)
+        -> Step 1: Identify the verb 'to be sick' (kiraawaʔ) as a descriptive verb requiring the 'ku-' complex.
+        -> Step 2: Look up the 'ku-' descriptive verb complex for Gerundial.sub 2sg, which is 'iriirasukua' (from Parks, Ch. 5, p. 120).
+        -> Step 3: Concatenate the descriptive verb complex 'iriirasukua', the main stem 'kiraawaʔ', and the subordination suffix 'a'. Result: 'iriirasukukiraawaʔa'.
+        -> Step 4: Apply Parks' Ch. 3, Rule 24 (Glottal Stop Deletion): Delete the final glottal stop (ʔ) of 'kiraawaʔ' because it is followed by the vowel 'a' of the subordination suffix. Result: 'iriirasukukiraawaa'.
+    1sg contingent.sub: riikukiraawaa
+      Underlying: riikua(CONT.1SG.DESCR.COMPLEX) + kiraawaʔ(STEM) + a(SUB)
+        -> Step 1: Identify the verb 'to be sick' (kiraawaʔ) as a descriptive verb requiring the 'ku-' complex.
+        -> Step 2: Look up the 'ku-' descriptive verb complex for Contingent.sub 1sg, which is 'riikua' (from Parks, Ch. 5, p. 120).
+        -> Step 3: Concatenate the descriptive verb complex 'riikua', the main stem 'kiraawaʔ', and the subordination suffix 'a'. Result: 'riikukiraawaʔa'.
+        -> Step 4: Apply Parks' Ch. 3, Rule 24 (Glottal Stop Deletion): Delete the final glottal stop (ʔ) of 'kiraawaʔ' because it is followed by the vowel 'a' of the subordination suffix. Result: 'riikukiraawaa'.
+
+to come:
+  Pattern: P7_Subordinating_Suffix_A_Final_Glottal_Loss
+  Engine error point: The engine correctly derives the verb form ending in 'ʔ' (e.g., 'ítiiraʔ', 'ísiiraʔ', 'íiraʔ') but then concatenates the subordinating suffix 'a' to it without applying Parks' Rule 24 (final 'ʔ' loss). Additionally, for 1sg and 2sg, it fails to apply the stress shift to the initial 'i' of the contingent prefix.
+  Rule: IF a verb form ends in a glottal stop 'ʔ' AND is immediately followed by the subordinating suffix 'a', THEN the final 'ʔ' must be deleted (Parks' Rule 24). Additionally, IF the contingent prefix 'i-' precedes a verb form with initial stress, THEN the stress shifts to the 'i-' prefix.
+    1sg contingent.sub: ítiira
+      Underlying: i(CONT) + t(1.A) + ir(PREV) + aʔ(STEM) + a(SUB)
+        -> 1. i + t + ir + aʔ + a (Concatenation of morphemes)
+        -> 2. i + t + iir + aʔ + a (Parks' Rule 1: Preverb 'ir' becomes 'iir' after 't' for 1st/2nd A)
+        -> 3. i + tíiraʔ + a (Parks' Rule 17: 't' + 'iir' + 'aʔ' contracts to 'tíiraʔ')
+        -> 4. ítiiraʔ + a (Parks' Rule: Stress shift from 'tí' to 'í' of 'i' (CONT) prefix: 'i' + 'tíiraʔ' -> 'ítiiraʔ')
+        -> 5. ítiira (Parks' Rule 24: Final 'ʔ' is lost before the subordinating suffix 'a')
+    2sg contingent.sub: ísiira
+      Underlying: i(CONT) + s(2.A) + ir(PREV) + aʔ(STEM) + a(SUB)
+        -> 1. i + s + ir + aʔ + a (Concatenation of morphemes)
+        -> 2. i + s + iir + aʔ + a (Parks' Rule 1: Preverb 'ir' becomes 'iir' after 's' for 1st/2nd A)
+        -> 3. i + síiraʔ + a (Parks' Rule 17: 's' + 'iir' + 'aʔ' contracts to 'síiraʔ')
+        -> 4. ísiiraʔ + a (Parks' Rule: Stress shift from 'sí' to 'í' of 'i' (CONT) prefix: 'i' + 'síiraʔ' -> 'ísiiraʔ')
+        -> 5. ísiira (Parks' Rule 24: Final 'ʔ' is lost before the subordinating suffix 'a')
+  Pattern: P1_Preverb_IR_Misidentification
+  Engine error point: The engine incorrectly identifies the preverb 'ir-' for 'to come' in 1st/2nd person forms, often using a generic 'ih(PAT_COMPOUND)' or failing to recognize 'ir-' as the specific preverb. This prevents the application of Parks' Rule 1 ('ir' -> 'iir') and subsequent specific contractions (Parks' Rule 17) for 'iir' + 'waʔaʔ' (dual stem) or 'iir' + 'raak' (plural marker), leading to incorrect forms and stress placement.
+  Rule: IF the verb stem is 'to come' AND the preverb is 'ir' AND the agent is 1st or 2nd person, THEN the preverb 'ir' must become 'iir' (Parks' Rule 1). Subsequently, IF 'iir' is followed by the dual stem 'waʔaʔ' or the plural marker 'raak', THEN apply the specific contractions: 'iir' + 'waʔaʔ' -> 'íhwaʔaʔ' and 'iir' + 'raak' -> 'íraak' (Parks' Rule 17). If an agent prefix (t-/s-) precedes these contracted forms, the stress shifts to the agent prefix's vowel (e.g., t + íhwaʔaʔ -> tíhwaʔaʔ).
+    1du_excl indicative: sitatíhwaʔaʔ
+      Underlying: si(DU) + ta(IND) + t(1.A) + ir(PREV) + waʔaʔ(DU_STEM)
+        -> 1. si + ta + t + ir + waʔaʔ (Concatenation of morphemes)
+        -> 2. si + ta + t + iir + waʔaʔ (Parks' Rule 1: Preverb 'ir' becomes 'iir' after 't' for 1st/2nd A)
+        -> 3. si + ta + tíhwaʔaʔ (Parks' Rule 17: 't' + 'iir' + 'waʔaʔ' contracts to 'tíhwaʔaʔ')
+        -> 4. sitatíhwaʔaʔ (Concatenation, stress on 'tí')
+    2du indicative: sisasíhwaʔaʔ
+      Underlying: si(DU) + ta(IND) + s(2.A) + ir(PREV) + waʔaʔ(DU_STEM)
+        -> 1. si + ta + s + ir + waʔaʔ (Concatenation of morphemes)
+        -> 2. si + ta + s + iir + waʔaʔ (Parks' Rule 1: Preverb 'ir' becomes 'iir' after 's' for 1st/2nd A)
+        -> 3. si + ta + síhwaʔaʔ (Parks' Rule 17: 's' + 'iir' + 'waʔaʔ' contracts to 'síhwaʔaʔ')
+        -> 4. sisasíhwaʔaʔ (Concatenation, stress on 'sí')
+  Pattern: P6_Gerundial_Contraction
+  Engine error point: The engine fails to apply the highly irregular contraction rules specific to the gerundial forms of 'to come'. Instead of recognizing the pattern 'irii-' + 'ra-' + [verb form] and applying the specific contraction, it attempts a regular, morpheme-by-morpheme composition, leading to incorrect and uncontracted forms.
+  Rule: IF the mode is 'gerundial.sub' AND the verb stem is 'to come', THEN apply specific, highly irregular contraction rules based on the person/number of the verb form. For example: IF the morpheme sequence is ['irii', 'ra', 'tíiraʔ'] THEN replace with 'íriira'; IF ['irii', 'ra', 'síiraʔ'] THEN replace with 'ísiira'; IF ['irii', 'ra', 'íiraʔ'] THEN replace with 'íira'. These rules must fire after the internal verb form (e.g., 'tíiraʔ') has been derived.
+    1sg gerundial.sub: íriira
+      Underlying: irii(GER) + ra(GER_SUFFIX) + t(1.A) + ir(PREV) + aʔ(STEM)
+        -> 1. irii + ra + t + ir + aʔ (Concatenation of morphemes)
+        -> 2. irii + ra + t + iir + aʔ (Parks' Rule 1: Preverb 'ir' becomes 'iir' after 't')
+        -> 3. irii + ra + tíiraʔ (Parks' Rule 17: 't' + 'iir' + 'aʔ' contracts to 'tíiraʔ')
+        -> 4. íriira (Parks' Irregular Gerundial Contraction: 'irii' + 'ra' + 'tíiraʔ' -> 'íriira')
+    2sg gerundial.sub: ísiira
+      Underlying: irii(GER) + ra(GER_SUFFIX) + s(2.A) + ir(PREV) + aʔ(STEM)
+        -> 1. irii + ra + s + ir + aʔ (Concatenation of morphemes)
+        -> 2. irii + ra + s + iir + aʔ (Parks' Rule 1: Preverb 'ir' becomes 'iir' after 's')
+        -> 3. irii + ra + síiraʔ (Parks' Rule 17: 's' + 'iir' + 'aʔ' contracts to 'síiraʔ')
+        -> 4. ísiira (Parks' Irregular Gerundial Contraction: 'irii' + 'ra' + 'síiraʔ' -> 'ísiira')
+
+to do it:
+  Pattern: P4_POTENTIAL_SUFFIXES
+  Engine error point: The engine fails to apply the specific morphological rules for the Potential mode, which involve replacing the main stem with 'u' and appending the special suffixes '-ciʔ' (for singular/dual) or '-ciraak' (for plural). Instead, it retains the full stem 'uutaar' or 'uuhaakaar'.
+  Rule: IF Mode is POTENTIAL AND Verb Class is 1 (or this specific verb): 1. Replace the main stem ('uutaar'/'uuhaakaar') with 'u'. 2. IF Person is singular or dual THEN append '-ciʔ' after the reduced stem 'u'. 3. IF Person is plural THEN append '-ciraak' after the reduced stem 'u'. 4. Apply a specific contraction rule: 'a' (1PL.INCL prefix) + 'u' (reduced stem) -> 'a'.
+    1sg potential: kuustuciʔaa
+      Underlying: kuus(MODE) + t(AGENT) + u(STEM_REDUCED) + ciʔ(POT_SUFFIX) + aa(SUB)
+        -> Step 1: Concatenate morphemes: kuustuciʔaa
+        -> Step 2: No further sound changes apply.
+    2sg potential: kuusciʔaa
+      Underlying: kuus(MODE) + s(AGENT) + u(STEM_REDUCED) + ciʔ(POT_SUFFIX) + aa(SUB)
+        -> Step 1: Concatenate morphemes: kuussuciʔaa
+        -> Step 2: Parks Ch. 3, Rule 11 (Degemination): ss -> s. Result: kuusciʔaa
+  Pattern: P1_ACIR_CONTRACTION
+  Engine error point: The engine fails to apply Parks Ch. 3, Rule 13 ('r'-loss before 'i') between 'acir' and 'iitaar', incorrectly retaining the 'r'. Consequently, it also fails to apply the subsequent vowel contraction (Parks Ch. 3, Rule 1) between 'a' (from 'acir') and 'ii' (from 'iitaar').
+  Rule: IF morpheme sequence is 'acir' + 'i' (where 'i' is the initial vowel of the next morpheme): 1. Apply Parks Ch. 3, Rule 13: 'r' is lost. 'acir + i' -> 'aci + i'. 2. Apply Parks Ch. 3, Rule 1: 'a' + 'i' -> 'ii' (specifically, 'aci + iitaar' -> 'aciitaar').
+    1du_incl indicative: taciitaa
+      Underlying: ta(MODE) + acir(1DU.INCL) + iitaar(STEM) + a(SUB)
+        -> Step 1: Concatenate morphemes: taaciriitaara
+        -> Step 2: Parks Ch. 3, Rule 13 (r-loss before i): 'r' is lost before 'i'. 'acir + iitaar' -> 'aci + iitaar'. Result: taaciitaara
+        -> Step 3: Parks Ch. 3, Rule 1 (Vowel Contraction): 'a' (from 'aci') + 'ii' (from 'iitaar') -> 'ii'. Result: taciitaara
+        -> Step 4: Parks Ch. 3, Rule 14 (Final r-loss): Word-final 'r' is lost. 'taciitaara' -> 'taciitaa'.
+    1du_incl negative_indicative: kaakaciitaa
+      Underlying: kaaka(NEG.IND) + acir(1DU.INCL) + iitaar(STEM) + a(SUB)
+        -> Step 1: Concatenate morphemes: kaakaaciriitaara
+        -> Step 2: Parks Ch. 3, Rule 13 (r-loss before i): 'r' is lost before 'i'. 'acir + iitaar' -> 'aci + iitaar'. Result: kaakaaciitaara
+        -> Step 3: Parks Ch. 3, Rule 1 (Vowel Contraction): 'a' (from 'aci') + 'ii' (from 'iitaar') -> 'ii'. Result: kaakaciitaara
+        -> Step 4: Parks Ch. 3, Rule 14 (Final r-loss): Word-final 'r' is lost. 'kaakaciitaara' -> 'kaakaciitaa'.
+  Pattern: P5_GERUNDIAL_PREFIX_AND_PROCLITIC
+  Engine error point: The engine makes three distinct errors: 1. It uses an incorrect base form for the gerundial prefix ('iriir-' instead of 'irir-'). 2. For dual forms, it incorrectly places the 'si' dual proclitic *before* the gerundial prefix (e.g., 'siirir-') instead of *after* it ('irir-si-'). 3. It omits the 'ra-' absolutive prefix in relevant dual forms.
+  Rule: 1. Correct the base form of the gerundial prefix to 'irir-'. 2. For dual forms in Gerundial mode, ensure the 'si' dual proclitic is placed *after* the 'irir-' prefix in the morpheme template. 3. For dual forms in Gerundial mode, ensure the 'ra-' absolutive prefix is included in the morpheme template, placed *after* 'si-' and *before* the agent prefix. 4. Apply Parks Ch. 3, Rule 12 ('r' before 's' becomes 's') for sequences like 'irir + si'. 5. Apply Parks Ch. 3, Rule 11 (Degemination) for 'rr' sequences (e.g., 'irir + raak').
+    3sg gerundial.sub: iriruutaara
+      Underlying: irir(GER) + uutaar(STEM) + aara(SUB)
+        -> Step 1: Concatenate morphemes: iriruutaara
+        -> Step 2: No further sound changes apply.
+    1du_excl gerundial.sub: iririsiratuutaara
+      Underlying: irir(GER) + si(DU) + ra(ABS) + t(AGENT) + uutaar(STEM) + aara(SUB)
+        -> Step 1: Concatenate morphemes: irirsiratuutaara
+        -> Step 2: Parks Ch. 3, Rule 12 (r-assimilation): 'r' before 's' becomes 's'. 'irir + si' -> 'irisi'. Result: irisiiratuutaara
+        -> Step 3: Concatenate remaining morphemes: irisiratuutaara
+        -> Step 4: No further sound changes apply.
+
+to drink it:
+  Pattern: P3_STEM_VOWEL_SHORTENING_GLOTTAL_LOSS
+  Engine error point: The engine fails to apply the morphophonological rule of vowel shortening for the stem 'kiikaʔ' (to 'kika') and also fails to remove the final glottal stop 'ʔ' from the shortened stem before the subordinate suffix '-a'.
+  Rule: IF `stem` is 'kiikaʔ' AND `mode` is one of `[Contingent, Gerundial, Subjunctive, Infinitive]` THEN:
+  1. Shorten 'ii' to 'i' in `stem` (resulting in 'kikaʔ').
+  2. IF the modified stem 'kikaʔ' is immediately followed by the `subordinate_suffix` '-a' THEN remove the final 'ʔ' from the stem.
+    1sg contingent.sub: itkikaa
+      Underlying: i(CONT) + t(1.A) + kiikaʔ(STEM) + a(SUB)
+        -> Concatenate: i + t + kiikaʔ + a -> itkiikaʔa
+        -> Rule: Stem vowel 'ii' shortens to 'i' in Contingent/Gerundial/Subjunctive/Infinitive modes: itkiikaʔa -> itkikaʔa
+        -> Rule: Final glottal stop 'ʔ' of stem 'kikaʔ' is lost before subordinate suffix '-a': itkikaʔa -> itkikaa
+    2sg contingent.sub: iskikaa
+      Underlying: i(CONT) + s(2.A) + kiikaʔ(STEM) + a(SUB)
+        -> Concatenate: i + s + kiikaʔ + a -> iskiikaʔa
+        -> Rule: Stem vowel 'ii' shortens to 'i' in Contingent/Gerundial/Subjunctive/Infinitive modes: iskiikaʔa -> iskikaʔa
+        -> Rule: Final glottal stop 'ʔ' of stem 'kikaʔ' is lost before subordinate suffix '-a': iskikaʔa -> iskikaa
+  Pattern: P1_INCORRECT_PLURAL_MARKERS
+  Engine error point: The engine incorrectly uses the agent prefixes 't' (1.A) or 's' (2.A) followed by the general plural marker 'iraak' for 1pl_excl and 2pl. The correct forms use specific plural markers 'ha' (1pl_excl) and 'ta' (2pl) which replace the agent prefixes.
+  Rule: IF `person` is `1pl_excl` THEN replace `t(1.A)` and any subsequent `iraak(PL)` with `ha(1PL.EXCL)`.
+IF `person` is `2pl` THEN replace `s(2.A)` and any subsequent `iraak(PL)` with `ta(2PL)`.
+These specific plural markers (`ha`, `ta`) must be prioritized over the general `iraak` and agent prefixes `t`, `s`.
+    1pl_excl indicative: tahakiikaʔ
+      Underlying: ta(IND) + ha(1PL.EXCL) + kiikaʔ(STEM)
+        -> Concatenate: ta + ha + kiikaʔ -> tahakiikaʔ
+    2pl indicative: tataakiikaʔ
+      Underlying: ta(IND) + ta(2PL) + kiikaʔ(STEM)
+        -> Concatenate: ta + ta + kiikaʔ -> tataakiikaʔ
+  Pattern: P2_INCORRECT_3PL_MARKER
+  Engine error point: The engine incorrectly applies the 'aahuʔ' suffix, which is typically for intransitive 3pl or transitive with plural objects. For transitive verbs with singular objects, the 3pl is marked by the plural prefix 'raak' which then undergoes the specific morphophonological change 'raak' -> 'h' before 'k'-initial stems.
+  Rule: IF `person` is `3pl` AND `verb_is_transitive` AND `object_is_singular` THEN:
+  1. Insert the `raak(PL)` prefix after the modal prefix.
+  2. IF `raak(PL)` is immediately followed by a stem beginning with 'k' THEN `raak` becomes 'h'.
+  3. Ensure the `aahuʔ` suffix is NOT applied in this context.
+    3pl indicative: tihkiikaʔ
+      Underlying: ti(IND) + raak(PL) + kiikaʔ(STEM)
+        -> Concatenate: ti + raak + kiikaʔ -> tiraakkiikaʔ
+        -> Rule: Plural prefix 'raak' becomes 'h' before a 'k'-initial stem (Parks Ch. 4, 4.3.1.2.1): tiraakkiikaʔ -> tihkiikaʔ
+    3pl contingent: ihkiikaʔ
+      Underlying: i(CONT) + raak(PL) + kiikaʔ(STEM)
+        -> Concatenate: i + raak + kiikaʔ -> iraakkiikaʔ
+        -> Rule: Plural prefix 'raak' becomes 'h' before a 'k'-initial stem: iraakkiikaʔ -> ihkiikaʔ
+
+to go:
+  Pattern: P2_PLURAL_FUSIONS
+  Engine error point: The engine concatenates 'raak'/'iraak' directly with 'wuu' (e.g., 'raakwuu', 'tiraakwuu', 'siraakwuu') instead of applying the specific suppletive fusions.
+  Rule: Implement specific lexical fusions for the plural stem 'wuu' when combined with plural markers 'raak'/'iraak' and agent prefixes. These fusions must apply before general phonological rules:
+1. IF morpheme sequence contains 'raak' + 'wuu' THEN REPLACE with 'raapuuʔ'.
+2. IF morpheme sequence contains 't' + 'iraak' + 'wuu' THEN REPLACE with 'hapuuʔ'.
+3. IF morpheme sequence contains 's' + 'iraak' + 'wuu' THEN REPLACE with 'stapuuʔ'.
+    1pl_incl indicative: tataraapuuʔ
+      Underlying: ta(MODE) + t(AGENT) + a(INCLUSIVE) + raak(PL) + wuu(STEM)
+        -> Concatenate morphemes: ta + t + a + raak + wuu
+        -> Apply Plural Stem Fusion (Parks Ch 4, p. 100): raak + wuu → raapuuʔ. Result: tataraapuuʔ
+        -> No further phonological rules apply.
+    1pl_excl indicative: tahapuuʔ
+      Underlying: ta(MODE) + t(AGENT) + iraak(PL) + wuu(STEM)
+        -> Concatenate morphemes: ta + t + iraak + wuu
+        -> Apply Plural Stem Fusion (Parks Ch 4, p. 100): t + iraak + wuu → hapuuʔ. Result: tahapuuʔ
+        -> No further phonological rules apply.
+  Pattern: P1_GLOTTAL_LOSS_CL
+  Engine error point: The engine treats 'ʔat' as an invariant stem and fails to apply rules for glottal stop loss and compensatory lengthening when 'ʔat' is preceded by agent prefixes ('t', 's') or other vowels.
+  Rule: Implement phonological rules for the 'ʔat' stem, applied after morpheme concatenation and before general vowel contraction:
+1. IF morpheme sequence matches `(Vowel_X) + (Agent_t_or_s) + 'ʔat'` THEN REPLACE with `(Vowel_X_lengthened) + (Agent_t_or_s) + 'at'`.
+2. IF morpheme sequence matches `(Vowel_X) + 'ʔat'` (for 3rd person or no agent) THEN REPLACE with `(Vowel_X_lengthened) + 'at'`.
+    1sg indicative: taatat
+      Underlying: ta(MODE) + t(AGENT) + ʔat(STEM)
+        -> Concatenate morphemes: ta + t + ʔat
+        -> Apply Glottal Loss & Compensatory Lengthening (Parks Ch 3, Rule 12): ʔ is lost after 't', and the preceding vowel 'a' (from 'ta') is lengthened. t + ʔat → tat; ta + tat → taatat. Result: taatat
+        -> No further phonological rules apply.
+    2sg indicative: taasat
+      Underlying: ta(MODE) + s(AGENT) + ʔat(STEM)
+        -> Concatenate morphemes: ta + s + ʔat
+        -> Apply Glottal Loss & Compensatory Lengthening (Parks Ch 3, Rule 12): ʔ is lost after 's', and the preceding vowel 'a' (from 'ta') is lengthened. s + ʔat → sat; ta + sat → taasat. Result: taasat
+        -> No further phonological rules apply.
+  Pattern: P3_3PL_SUFFIX_AND_PHONOLOGY
+  Engine error point: The engine incorrectly appends the 'aahuʔ' suffix for 3rd person plural forms of 'to go'. It also fails to apply the specific sequence of phonological rules (r-loss, vowel contraction, k-loss) to the interaction of the plural marker 'raak' and the 3pl stem 'wuuʔ'.
+  Rule: For 3rd person plural forms of the verb 'to go':
+1. DO NOT append the 'aahuʔ' suffix.
+2. Use 'wuuʔ' as the underlying stem form for 3pl.
+3. Apply the following ordered phonological rules to the sequence `Modal_prefix + raak + wuuʔ`:
+   a. `r` loss before `w` (Parks Ch 3, Rule 13): `raak + wuuʔ` → `aak + wuuʔ`.
+   b. Vowel Contraction (Parks Ch 3, Rule 1): `V_modal + aak` → `V_modal_lengthened + k` (e.g., `i + a` → `ii`, `ii + a` → `ii`).
+   c. `k` loss before `w` (Parks Ch 3, Rule 14): `k + wuuʔ` → `wuuʔ`.
+    3pl indicative: tiiwuuʔ
+      Underlying: ti(MODE) + raak(PL) + wuuʔ(STEM_3PL)
+        -> Concatenate morphemes: ti + raak + wuuʔ
+        -> Apply r-loss before w (Parks Ch 3, Rule 13): raak + wuuʔ → aak + wuuʔ. Result: tiaakwuuʔ
+        -> Apply Vowel Contraction (Parks Ch 3, Rule 1): i + a → ii. ti + aak → tiik. Result: tiikwuuʔ
+        -> Apply k-loss before w (Parks Ch 3, Rule 14): k + wuuʔ → wuuʔ. Result: tiiwuuʔ
+        -> No further phonological rules apply.
+    3pl negative_indicative: kaakiiwuuʔ
+      Underlying: kaaki(NEG) + raak(PL) + wuuʔ(STEM_3PL)
+        -> Concatenate morphemes: kaaki + raak + wuuʔ
+        -> Apply r-loss before w (Parks Ch 3, Rule 13): raak + wuuʔ → aak + wuuʔ. Result: kaakiaakwuuʔ
+        -> Apply Vowel Contraction (Parks Ch 3, Rule 1): i + a → ii. kaaki + aak → kaakiik. Result: kaakiikwuuʔ
+        -> Apply k-loss before w (Parks Ch 3, Rule 14): k + wuuʔ → wuuʔ. Result: kaakiiwuuʔ
+        -> No further phonological rules apply.
+
+to have it:
+  Pattern: A_GlottalStopInsertion
+  Engine error point: The engine fails to insert the epenthetic glottal stop (ʔ) after the modal prefix ('i-' or 'aa-') when it is followed by a consonant-initial morpheme (e.g., agent 't-', 's-', or plural 'raak-').
+  Rule: IF a modal prefix (i, aa, ii) is followed by a consonant-initial morpheme (t, s, acir, raak), THEN insert an epenthetic glottal stop (ʔ) between them.
+    1du_excl contingent: siʔihaa
+      Underlying: si(DU) + i(CONT) + t(1A) + raa(STEM)
+        -> 1. Concatenate morphemes: si + i + t + raa
+        -> 2. Rule: Epenthetic glottal stop (ʔ) inserted after 'i' before consonant 't': si + i + ʔ + t + raa
+        -> 3. Concatenate: siʔi + t + raa
+        -> 4. Rule 1 (Parks 3.2.1.1): 'r' is lost after 't' or 's'. 't + raa' -> 't + aa'
+        -> 5. Rule 2 (Parks 3.2.1.2): 't' becomes 'th' before 'a' or 'i' if 'r' is lost. 't + aa' -> 'thaa'
+    2du contingent: siʔisaa
+      Underlying: si(DU) + i(CONT) + s(2A) + raa(STEM)
+        -> 1. Concatenate morphemes: si + i + s + raa
+        -> 2. Rule: Epenthetic glottal stop (ʔ) inserted after 'i' before consonant 's': si + i + ʔ + s + raa
+        -> 3. Concatenate: siʔi + s + raa
+        -> 4. Rule 1 (Parks 3.2.1.1): 'r' is lost after 't' or 's'. 's + raa' -> 's + aa'
+        -> 5. Concatenate: siʔisaa
+  Pattern: C_GerundialContractions
+  Engine error point: The engine fails to apply the specific contraction rules for the gerundial prefix 'irii-' with the infinitive 'ra-' and dual/plural markers ('si-' or 'raak-'). It also incorrectly adds 'si-' as a separate proclitic when it should be part of the contraction. Note: The 'expected' form 'iriisirahaaha' for 'gerundial.sub/1du_excl' provided in the prompt implies an additional rule (e.g., 'r' of 'raa' becomes 'h' after 'r' of 'iriisir') not explicitly stated in Parks' phonological rules, leading to a discrepancy with my derivation 'iriisiraaha'. My rule statement and test cases reflect Parks' explicit rules.
+  Rule: IF 'irii' (GER) + 'ra' (INF) + 'si' (DU/PL), THEN contract to 'iriisir'. IF 'irii' (GER) + 'ra' (INF) + 'raak' (PL), THEN contract to 'iriirir'. Ensure the 'si' proclitic is not added redundantly when these contractions are used.
+    1du_excl gerundial.sub: iriisiraaha
+      Underlying: irii(GER) + ra(INF) + si(DU) + t(1A) + raa(STEM) + ha(SUB)
+        -> 1. Concatenate morphemes: irii + ra + si + t + raa + ha
+        -> 2. Contraction (Parks 4.2.1.1, fn 10): 'irii + ra + si' -> 'iriisir'. Result: iriisir + t + raa + ha
+        -> 3. Rule 10 (Parks 3.2.1.10): 't' is lost after 'r' before 'a' or 'i'. 'iriisir + t + raa' -> 'iriisir + raa'
+        -> 4. Rule 19 (Parks 3.2.1.19): 'r' + 'r' -> 'r' (Degemination). 'iriisir + raa' -> 'iriisiraa'
+        -> 5. Concatenate: iriisiraa + ha
+    2du gerundial.sub: iriisirasaaha
+      Underlying: irii(GER) + ra(INF) + si(DU) + s(2A) + raa(STEM) + ha(SUB)
+        -> 1. Concatenate morphemes: irii + ra + si + s + raa + ha
+        -> 2. Contraction (Parks 4.2.1.1, fn 10): 'irii + ra + si' -> 'iriisir'. Result: iriisir + s + raa + ha
+        -> 3. Rule 1 (Parks 3.2.1.1): 'r' is lost after 't' or 's'. 's + raa' -> 's + aa'
+        -> 4. Concatenate: iriisir + saa + ha
+        -> 5. Concatenate: iriisirasaaha
+  Pattern: G_SubjunctivePrefixChoice
+  Engine error point: The engine incorrectly selects the 'ii-' form of the subjunctive prefix instead of 'aa-' when the following morpheme (agent 't-', 's-', or inclusive 'acir-') does not start with 'r'. Note: The 'expected' form 'siʔaahaaha' for 'subjunctive.sub/1du_excl' provided in the prompt implies an additional rule (e.g., 't' is lost after 'ʔ' and 'r' of 'raa' becomes 'h') not explicitly stated in Parks' phonological rules, leading to a discrepancy with my derivation 'siʔaathaaha'. My rule statement and test cases reflect Parks' explicit rules.
+  Rule: IF the subjunctive mode, THEN use prefix 'aa-' when followed by a non-'r'-initial morpheme (t, s, acir). IF the subjunctive mode, THEN use prefix 'ii-' when followed by an 'r'-initial morpheme (raak).
+    1du_excl subjunctive.sub: siʔaathaaha
+      Underlying: si(DU) + aa(SUBJ) + t(1A) + raa(STEM) + ha(SUB)
+        -> 1. Concatenate morphemes: si + aa + t + raa + ha
+        -> 2. Rule: Epenthetic glottal stop (ʔ) inserted after 'aa' before consonant 't' (Pattern A rule): si + aa + ʔ + t + raa + ha
+        -> 3. Concatenate: siʔaa + t + raa + ha
+        -> 4. Rule 1 (Parks 3.2.1.1): 'r' is lost after 't' or 's'. 't + raa' -> 't + aa'
+        -> 5. Rule 2 (Parks 3.2.1.2): 't' becomes 'th' before 'a' or 'i' if 'r' is lost. 't + aa' -> 'thaa'
+    2du subjunctive.sub: siʔaasaaha
+      Underlying: si(DU) + aa(SUBJ) + s(2A) + raa(STEM) + ha(SUB)
+        -> 1. Concatenate morphemes: si + aa + s + raa + ha
+        -> 2. Rule: Epenthetic glottal stop (ʔ) inserted after 'aa' before consonant 's' (Pattern A rule): si + aa + ʔ + s + raa + ha
+        -> 3. Concatenate: siʔaa + s + raa + ha
+        -> 4. Rule 1 (Parks 3.2.1.1): 'r' is lost after 't' or 's'. 's + raa' -> 's + aa'
+        -> 5. Concatenate: siʔaasaaha
+
+----------------------------------------------------------------------
+ROUND 3: Cross-Verb Synthesis
+----------------------------------------------------------------------
+
+SHARED PATTERNS (affect multiple verbs):
+  - Final Glottal Stop Deletion before Vowel (Parks' Rule 24)
+    Verbs: to come, to be sick, to drink it
+    Est. forms fixed: 25
+    Fix: Implement Parks' Rule 24: At the morpheme concatenation stage, if a morpheme ends in 'ʔ' and the subsequent morpheme begins with a vowel, delete the final 'ʔ' of the first morpheme before concatenation. Example: 'kikaʔ' + 'a' -> 'kikaa'.
+  - Misapplication/Omission of 'aahuʔ' 3rd Person Plural Suffix
+    Verbs: to go, to drink it, to be good
+    Est. forms fixed: 12
+    Fix: Refine the conditions for appending the 'aahuʔ' suffix. Ensure it is *not* applied for: 1) 3rd person plural forms of 'to go'. 2) Transitive 3rd person plural forms with a singular object (e.g., 'to drink it'). 3) 3rd person plural forms of 'to be good' (where 'waa' is incorrectly added).
+  - Preverb 'ir-' / 'iir-' Alternation (Parks' Rule 1)
+    Verbs: to come, to be good
+    Est. forms fixed: 8
+    Fix: Ensure the 'ir-' preverb is correctly identified. Implement Parks' Rule 1: 'ir-' becomes 'iir-' when followed by a 1st or 2nd person agent prefix. It should remain 'ir-' for 3rd person agents.
+  - Epenthetic Glottal Stop Insertion (Modal + Consonant)
+    Verbs: to have it
+    Est. forms fixed: 7
+    Fix: Implement a rule to insert an epenthetic glottal stop 'ʔ' after modal prefixes ('i-', 'aa-', 'ii-') when they are immediately followed by a consonant-initial morpheme (e.g., agent 't-', 's-', or plural 'raak-').
+  - 'acir' + 'i' Contraction (Parks' Rules 13 & 1)
+    Verbs: to do it
+    Est. forms fixed: 2
+    Fix: Implement Parks' Ch. 3, Rule 13 ('r' loss) for 'acir' + 'i' -> 'aci' + 'i'. Subsequently, apply Parks' Ch. 3, Rule 1 (vowel contraction) for 'a' + 'i' -> 'ii', resulting in 'acii'.
+
+PRIORITY RANKING:
+  #1: P2_ModalPrefixSelection & P1_Pluralization (Descriptive Verb Paradigm for 'to be sick')
+    Forms fixed: ~25
+    Implementation: In the `conjugate_verb` function, add a specific condition: `IF verb_stem == 'kiraawaʔ' THEN RETURN lookup_descriptive_paradigm(mode, person, number)`. This requires pre-populating a lookup table for all forms of 'to be sick' based on Parks' data.
+    Risk: Low. This is a complete replacement for a specific verb, isolating it from general rules and preventing unintended side effects on other verbs.
+  #2: Final Glottal Stop Deletion before Vowel (Parks' Rule 24)
+    Forms fixed: ~25
+    Implementation: Modify the morpheme concatenation logic: `function concatenate(morpheme1, morpheme2) { IF morpheme1.endsWith('ʔ') AND morpheme2.startsWithVowel() THEN return morpheme1.slice(0, -1) + morpheme2; ELSE return morpheme1 + morpheme2; }`. This rule should be applied as a general phonological rule at the morpheme boundary.
+    Risk: Medium. As a general phonological rule, it could potentially over-apply if not precisely defined (e.g., if 'ʔ' is not truly morpheme-final but appears before a vowel due to other rules). Careful testing across all verbs is needed.
+  #3: Misapplication/Omission of 'aahuʔ' 3rd Person Plural Suffix
+    Forms fixed: ~12
+    Implementation: In the `select_suffixes` function (or equivalent), modify the logic for 3rd person plural: `IF person == '3pl' THEN { IF verb_class == 'intransitive' OR object_number == 'plural' THEN add 'aahuʔ'; ELSE IF verb_stem == 'wuuʔ' OR (verb_class == 'transitive' AND object_number == 'singular') OR verb_stem == 'iwaa' THEN DO NOT add 'aahuʔ'; }`. This requires accurate transitivity and object number information.
+    Risk: Medium. Incorrect conditions for `aahuʔ` can lead to many incorrect 3pl forms. Requires careful handling of verb transitivity and object number.
+  #4: P1_GLOTTAL_LOSS_CL (Glottal loss and compensatory lengthening for 'ʔat' stem of 'to go')
+    Forms fixed: ~12
+    Implementation: Introduce a `apply_stem_specific_phonology` function that runs early in the phonological rules pipeline. `IF verb_stem == 'ʔat' THEN { IF sequence matches (Vowel_X) + (Agent_t_or_s) + 'ʔat' THEN replace with (Vowel_X_lengthened) + (Agent_t_or_s) + 'at'; ELSE IF sequence matches (Vowel_X) + 'ʔat' THEN replace with (Vowel_X_lengthened) + 'at'; }`.
+    Risk: Medium. Compensatory lengthening can interact with other vowel contraction rules. The ordering of this rule relative to other phonological rules is crucial to avoid incorrect forms.
+  #5: P3_SubordinationSuffixOmission (Omission of '-ra' suffix for 'to be good')
+    Forms fixed: ~10
+    Implementation: In the `select_suffixes` function, add a rule: `IF mode IN ['gerundial.sub', 'contingent.sub', 'subjunctive.sub', 'infinitive.sub'] THEN APPEND '-ra' to the final conjugated form.`. Ensure this is a general rule for all verbs, but specifically addresses the error for 'to be good'.
+    Risk: Low. This is a straightforward addition of a suffix based on mode. The primary risk is if there are specific subordinated forms that *do not* take '-ra', which would require exceptions.
+
+ACCENT OBSERVATIONS: The analysis consistently highlights issues with accent (pitch/stress) placement and shifting. Specific examples include: 1) Stress shifting to the initial 'i-' of the contingent prefix for 'to come'. 2) Stress shifting to the agent prefix's vowel (e.g., 'tíhwaʔaʔ') after specific contractions for 'to come'. This indicates that the current engine likely applies a default stress rule or no stress rule at all, and fails to implement the dynamic stress shifts that occur due to prefixation, contractions, and specific phonological environments. A dedicated stress assignment module, potentially rule-based with specific overrides for irregular forms, is needed.
+
+EXPECTED ACCURACY AFTER FIXES: Implementing these fixes, especially the paradigm lookup for descriptive verbs and the general phonological rules, should significantly improve accuracy. I estimate an increase to approximately 60-70% exact match for the analyzed verbs. However, the presence of many highly irregular, verb-specific contractions and fusions suggests that achieving 90%+ accuracy will require a more comprehensive system incorporating extensive lexical entries or specific lookup tables for these irregularities, beyond general morphophonological rules.

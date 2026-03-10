@@ -303,7 +303,7 @@ SUPPLETIVE_STEMS = {
         "pl_stem": None,        # plural uses sg stem + 3pl suffix
         "pl_absorbs_raak": False,  # raak- IS used in plural (preverb+stem dropped instead)
     },
-    # "to do it": sg uutaar, du iitaar (incl) / uutaar (excl), pl uuhaakaa
+    # "to do it": sg uutaar, du iitaar (incl) / uutaar (excl), pl uuhaakaar
     "uutaar": {
         "du_incl_stem": "iitaar",
         "du_stem": None,        # excl/2du/3du use sg stem
@@ -328,6 +328,24 @@ SUPPLETIVE_STEMS = {
         "du_stem": None,
         "pl_stem": "iwaa",
         "pl_absorbs_raak": False,  # raak- still needed before iwaa
+    },
+    # "to drink it": transitive, 3pl marked by raak- prefix (not aahuʔ suffix)
+    # Stem shortens kiikaʔ → kikaʔ in subordinate + contingent modes
+    "kiikaʔ": {
+        "du_stem": None,
+        "pl_stem": None,
+        "sub_stem": "kikaʔ",       # shortened stem in sub + contingent modes
+        "sub_stem_modes": {"contingent", "contingent_sub", "gerundial",
+                           "subjunctive_sub", "infinitive_sub"},
+        "no_3pl_suffix": True,      # 3pl uses raak prefix, not aahuʔ suffix
+        "3pl_raak_prefix": True,    # add raak as 3pl prefix
+        "pl_absorbs_raak": False,
+        # Transitive plural: 1pl_excl uses 'ha', 2pl uses 'sta'
+        # These replace agent+pl_marker
+        "pl_agent_fusions": {
+            "1pl_excl": "ha",       # replaces t + iraak
+            "2pl": "sta",           # replaces s + iraak
+        },
     },
     # "to have it": sg raa, du/pl same — Class 3 uses si- for ALL non-sg
     "raa": {
@@ -478,18 +496,26 @@ def _smart_concatenate(morph_forms, morpheme_tuples):
                 result_parts[mode_pos] = mode_form[:-1]
 
     # Potential mode shortening: kuus/kaas shorten to kus/kas before POT.i + vowel
-    # e.g., kuus + i + uur → kus + i + uur (kusuuhii, not kuusuuhii)
+    # Only when MODE is directly followed by POT.i (no agent in between).
+    # e.g., kaas + i + uur → kas (2sg, agent already in kaas)
+    #        kuus + i + uutaar → kus (3sg, no agent)
+    # But NOT: kuus + t + i + uur → kuus stays (1sg, agent t between MODE and POT.i)
     pot_pos = label_to_pos.get("POT.i")
     if mode_pos is not None and pot_pos is not None:
         mode_form = result_parts[mode_pos]
         if mode_form in ("kuus", "kaas"):
-            # Check what follows POT.i
-            for k in range(pot_pos + 1, len(result_parts)):
-                if result_parts[k]:
-                    if result_parts[k][0] in VOWELS:
-                        # Shorten: kuus → kus, kaas → kas
-                        result_parts[mode_pos] = mode_form[0] + mode_form[2:]
-                    break
+            # Check if agent is between MODE and POT.i
+            has_intervening_agent = (agent_pos is not None and
+                                     agent_pos > mode_pos and
+                                     agent_pos < pot_pos)
+            if not has_intervening_agent:
+                # Check what follows POT.i
+                for k in range(pot_pos + 1, len(result_parts)):
+                    if result_parts[k]:
+                        if result_parts[k][0] in VOWELS:
+                            # Shorten: kuus → kus, kaas → kas
+                            result_parts[mode_pos] = mode_form[0] + mode_form[2:]
+                        break
 
     # GER prefix shortening: irii + ra + C(agent) + V → iri + ra + C + V
     # When the gerundial prefix irii- is followed by ra- (MODE) and then
@@ -508,16 +534,78 @@ def _smart_concatenate(morph_forms, morpheme_tuples):
             if shorten_ger:
                 result_parts[ger_pos] = ger_form[:-1]
 
-    # r → h before consonants at morpheme boundaries
-    # This affects: acir + C... → acih + C..., and other r-final morphemes
+    # INCLUSIVE r-loss before vowels: acir + V... → aci + V...
+    # Parks' Rule: morpheme-final r of acir is deleted before vowel-initial morphemes.
+    # Subsequent same-vowel contraction (Rule 5) merges i+i → ii.
+    # e.g., acir + iitaar → aci + iitaar → (Rule 5) aciitaar
+    incl_pos2 = label_to_pos.get("INCLUSIVE")
+    if incl_pos2 is not None:
+        incl_form2 = result_parts[incl_pos2]
+        if incl_form2 and incl_form2.endswith("r"):
+            # Find next non-empty morpheme
+            for k in range(incl_pos2 + 1, len(result_parts)):
+                if result_parts[k]:
+                    if result_parts[k][0] in VOWELS:
+                        result_parts[incl_pos2] = incl_form2[:-1]  # drop final r
+                    break
+
+    # Epenthetic glottal stop: si(DU) + V → siʔV
+    # When the dual proclitic 'si' is followed by a vowel-initial morpheme,
+    # insert ʔ. e.g., si + i → siʔi, si + aa → siʔaa
+    du_pos = label_to_pos.get("DU")
+    if du_pos is not None:
+        du_form = result_parts[du_pos]
+        if du_form == "si":
+            # Find next non-empty morpheme
+            for k in range(du_pos + 1, len(result_parts)):
+                if result_parts[k]:
+                    if result_parts[k][0] in VOWELS:
+                        result_parts[du_pos] = "siʔ"
+                    break
+
+    # Glottal stop deletion after consonant (Parks' Rule 12):
+    # When a morpheme ending in a consonant (agent t-, s-) precedes a ʔ-initial
+    # stem, the ʔ is deleted. e.g., t + ʔat → tat, s + ʔat → sat
+    CONSONANTS_FOR_GLOTTAL = set("ptkcčswhrnm")
+    stem_pos2 = label_to_pos.get("STEM")
+    if stem_pos2 is not None:
+        stem_form = result_parts[stem_pos2]
+        if stem_form and stem_form.startswith("ʔ"):
+            # Check preceding morpheme
+            for k in range(stem_pos2 - 1, -1, -1):
+                if result_parts[k]:
+                    if result_parts[k][-1] in CONSONANTS_FOR_GLOTTAL:
+                        result_parts[stem_pos2] = stem_form[1:]  # drop initial ʔ
+                    break
+
+    # r → h at morpheme boundaries:
+    # 1. r → h before consonants (acir + C → acih + C)
+    # 2. r → h before high vowels (i, u) when preceded by a vowel
+    #    (Parks Ch 3.3.11: uur + iwaa → uuh + iwaa)
     CONSONANTS = set("ptkcčswhʔrn")
+    HIGH_VOWELS = set("iu")
     for i in range(len(result_parts) - 1):
         curr = result_parts[i]
         nxt = result_parts[i + 1]
-        if curr and nxt and curr.endswith("r") and nxt[0] in CONSONANTS:
-            # Exception: r + r → degemination (handled by unrestricted rules)
-            if nxt[0] != "r":
+        if curr and nxt and curr.endswith("r"):
+            if nxt[0] in CONSONANTS and nxt[0] != "r":
                 result_parts[i] = curr[:-1] + "h"
+            elif nxt[0] in HIGH_VOWELS and len(curr) >= 2 and curr[-2] in VOWELS:
+                # r → h before i/u when preceded by vowel (VrV → VhV)
+                result_parts[i] = curr[:-1] + "h"
+
+    # Parks' Rule 24: Final glottal stop deletion before vowel-initial suffix
+    # When a stem/morpheme ends in ʔ and the next morpheme starts with a vowel,
+    # delete the ʔ. e.g., kiraawaʔ + a(SUB) → kiraawaa
+    # Exception: epenthetic ʔ (e.g., siʔ from DU proclitic) must be preserved.
+    stem_pos = label_to_pos.get("STEM")
+    for i in range(len(result_parts) - 1):
+        curr = result_parts[i]
+        nxt = result_parts[i + 1]
+        if curr and nxt and curr.endswith("ʔ") and nxt[0] in VOWELS:
+            # Only apply at stem boundary or later (not to epenthetic ʔ in proclitics)
+            if stem_pos is not None and i >= stem_pos:
+                result_parts[i] = curr[:-1]
 
     return "".join(p for p in result_parts if p)
 
@@ -549,7 +637,7 @@ def _get_number_type(person_number):
     return "sg"
 
 
-def _select_stem(stem, person_number, subordinate=False):
+def _select_stem(stem, person_number, subordinate=False, actual_mode=None):
     """Select the appropriate stem form based on number (sg/du/pl).
 
     Uses SUPPLETIVE_STEMS lookup for known verbs with du/pl alternations.
@@ -558,8 +646,20 @@ def _select_stem(stem, person_number, subordinate=False):
     num_type = _get_number_type(person_number)
     suppl = SUPPLETIVE_STEMS.get(stem)
 
-    if not suppl or num_type == "sg":
+    if not suppl:
         return stem, None
+
+    # Stem alternation (e.g., kiikaʔ → kikaʔ in specific modes)
+    base_stem = stem
+    if suppl.get("sub_stem"):
+        sub_modes = suppl.get("sub_stem_modes")
+        if sub_modes and actual_mode in sub_modes:
+            base_stem = suppl["sub_stem"]
+        elif not sub_modes and subordinate:
+            base_stem = suppl["sub_stem"]
+
+    if num_type == "sg":
+        return base_stem, ("sub_stem" if base_stem != stem else None)
 
     if num_type == "du":
         # Check for inclusive-specific dual stem
@@ -568,14 +668,14 @@ def _select_stem(stem, person_number, subordinate=False):
         du_stem = suppl.get("du_stem")
         if subordinate and suppl.get("du_stem_sub"):
             du_stem = suppl["du_stem_sub"]
-        return (du_stem or stem), ("du_suppletive" if du_stem else None)
+        return (du_stem or base_stem), ("du_suppletive" if du_stem else ("sub_stem" if base_stem != stem else None))
 
     if num_type == "pl":
         # Check for 3pl-specific stem
         if person_number == "3pl" and suppl.get("pl3_stem"):
             return suppl["pl3_stem"], "pl3_suppletive"
         pl_stem = suppl.get("pl_stem")
-        return (pl_stem or stem), ("pl_suppletive" if pl_stem else None)
+        return (pl_stem or base_stem), ("pl_suppletive" if pl_stem else ("sub_stem" if base_stem != stem else None))
 
     return stem, None
 
@@ -606,8 +706,20 @@ def conjugate(stem, verb_class, mode, person_number, aspect="perfective",
     # uur-) use standard agent prefix person marking.
     is_descriptive_ku = verb_class in ("u", "wi") and not preverb
 
+    # Compute actual_mode early (needed for stem selection)
+    actual_mode = mode
+    if subordinate:
+        if mode == "contingent":
+            actual_mode = "contingent_sub"
+        elif mode == "absolutive":
+            actual_mode = "gerundial"
+        elif mode == "subjunctive":
+            actual_mode = "subjunctive_sub"
+        elif mode == "infinitive":
+            actual_mode = "infinitive_sub"
+
     # --- Select stem based on number ---
-    actual_stem, stem_note = _select_stem(stem, person_number, subordinate)
+    actual_stem, stem_note = _select_stem(stem, person_number, subordinate, actual_mode=actual_mode)
 
     # --- Proclitics ---
     # Dual proclitic: si- for 1du_excl, 2du, 3du ONLY (NOT 1du_incl)
@@ -628,16 +740,7 @@ def conjugate(stem, verb_class, mode, person_number, aspect="perfective",
         morphemes.append((12.5, "INDF", "ku"))
 
     # --- Modal prefix (slot 10) ---
-    actual_mode = mode
-    if subordinate:
-        if mode == "contingent":
-            actual_mode = "contingent_sub"
-        elif mode == "absolutive":
-            actual_mode = "gerundial"
-        elif mode == "subjunctive":
-            actual_mode = "subjunctive_sub"
-        elif mode == "infinitive":
-            actual_mode = "infinitive_sub"
+    # (actual_mode already computed above for stem selection)
 
     # Descriptive verbs (no preverb) use different person→mode mapping:
     # 1sg uses MODE.3 form (not 1/2), 2sg uses MODE.1/2, 3sg uses MODE.3
@@ -683,6 +786,16 @@ def conjugate(stem, verb_class, mode, person_number, aspect="perfective",
         if person_number == "3sg" or person_number == "3du":
             morphemes.append((11, "3PM", "h"))
 
+    # --- Plural agent fusions (transitive verbs) ---
+    # Some transitive verbs replace agent+pl_marker with a fused form
+    # e.g., "to drink it": 1pl_excl ha (not t+iraak), 2pl sta (not s+iraak)
+    pl_fusions = SUPPLETIVE_STEMS.get(stem, {}).get("pl_agent_fusions", {})
+    if person_number in pl_fusions:
+        # Remove the agent prefix we just added
+        morphemes = [(s, l, f) for s, l, f in morphemes if l != "AGENT"]
+        # Add fused form as combined agent+pl marker (slot 11)
+        morphemes.append((11, "AGENT_PL", pl_fusions[person_number]))
+
     # --- Inclusive prefix (slot 12) ---
     # For descriptive verbs, inclusive still applies
     inclusive = pn_info.get("inclusive", "")
@@ -702,7 +815,7 @@ def conjugate(stem, verb_class, mode, person_number, aspect="perfective",
     # In plural, raak- appears for 1/2 person (not 3pl)
     # Some verbs absorb raak- into their suppletive plural stem
     pl_marker = pn_info.get("pl_marker", "")
-    if pl_marker:
+    if pl_marker and person_number not in pl_fusions:
         suppl = SUPPLETIVE_STEMS.get(stem, {})
         absorbs_raak = suppl.get("pl_absorbs_raak", False) if suppl else False
         if not absorbs_raak:
@@ -713,6 +826,12 @@ def conjugate(stem, verb_class, mode, person_number, aspect="perfective",
             else:
                 morphemes.append((13, "PL", pl_marker))
 
+    # 3pl raak prefix: for transitive verbs where 3pl is marked by raak- prefix
+    # rather than aahuʔ suffix (e.g., "to drink it": tihkiikaʔ = ti + raak + kiikaʔ)
+    suppl_3pl = SUPPLETIVE_STEMS.get(stem, {})
+    if person_number == "3pl" and suppl_3pl.get("3pl_raak_prefix"):
+        morphemes.append((13, "PL", "raak"))
+
     # --- Potential mode inner -i- ---
     if mode == "potential":
         morphemes.append((13.5, "POT.i", "i"))
@@ -720,14 +839,10 @@ def conjugate(stem, verb_class, mode, person_number, aspect="perfective",
     # --- Patient compound for du exclusive/2du ---
     # The 'ih' element in du_excl/2du comes from the preverb iir- reduced
     # to ih- in dual context. Only add when there IS a preverb ir-.
+    # NOT added for uur- or other preverbs.
     pat_compound = pn_info.get("patient_or_compound", "")
     if pat_compound and preverb == "ir" and num_type == "du":
         # Preverb ir- becomes ih- before dual consonant-initial stems
-        morphemes.append((15, "PAT_COMPOUND", pat_compound))
-    elif pat_compound and not preverb:
-        # For verbs without preverb, no ih element in dual
-        pass
-    elif pat_compound:
         morphemes.append((15, "PAT_COMPOUND", pat_compound))
 
     # --- Infinitive ku- (slot 16) ---
@@ -815,13 +930,17 @@ def conjugate(stem, verb_class, mode, person_number, aspect="perfective",
     if pn_info.get("has_3pl_suffix"):
         # 3pl suffix depends on verb type:
         # - Verbs with suppletive pl3_stem: suffix absorbed into stem
+        # - Verbs with suppletive pl_stem: 3pl uses pl_stem, no aahuʔ suffix
+        # - Verbs marked no_3pl_suffix: 3pl marked by prefix, not suffix
         # - Descriptive verbs (class u): use -waa (non-sub) / -waara (sub)
         # - Other intransitive: use -aahuʔ/-aahu
         suppl = SUPPLETIVE_STEMS.get(stem, {})
         has_pl3_stem = suppl.get("pl3_stem") is not None if suppl else False
         uses_si_for_pl = suppl.get("pl_uses_si", False) if suppl else False
+        has_pl_stem = suppl.get("pl_stem") is not None if suppl else False
+        no_3pl_suffix = suppl.get("no_3pl_suffix", False) if suppl else False
 
-        if not has_pl3_stem and not uses_si_for_pl:
+        if not has_pl3_stem and not uses_si_for_pl and not has_pl_stem and not no_3pl_suffix:
             if verb_class in ("u", "wi"):
                 # Descriptive/locative verbs: 3pl marked by -waa/-waara
                 if subordinate:
