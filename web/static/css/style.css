@@ -47,8 +47,8 @@ body {
 }
 
 .badge-class {
-    background: var(--pico-secondary-background);
-    color: var(--pico-secondary);
+    background: #4a5568;
+    color: #ffffff;
 }
 
 .badge-tag {
@@ -432,10 +432,14 @@ body {
     text-align: center;
     background: var(--pico-background-color);
 }
+.fc-back {
+    border-color: #2d3748;
+}
 
 .fc-back {
     transform: rotateY(180deg);
-    background: var(--pico-secondary-background);
+    background: #1a202c;
+    color: #f7fafc;
 }
 
 /* Front side */
@@ -468,20 +472,25 @@ body {
     font-weight: 600;
     margin-bottom: 0.5em;
     line-height: 1.3;
+    color: #f7fafc;
 }
 .fc-back-word {
     font-size: 1em;
-    color: var(--pico-muted-color);
+    color: #cbd5e0;
     margin-bottom: 0.2em;
 }
 .fc-back-ipa {
     font-size: 0.9em;
-    color: var(--pico-muted-color);
+    color: #cbd5e0;
 }
 .fc-back-link {
     font-size: 0.8em;
     margin-top: auto;
     padding-top: 1em;
+    color: #90cdf4;
+}
+.fc-back-link:hover {
+    color: #bee3f8;
 }
 
 /* Controls */

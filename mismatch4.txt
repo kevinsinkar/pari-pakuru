@@ -1,0 +1,133 @@
+=== COUNTS ===
+to be good: 9 miss, 19 close
+to be sick: 39 miss, 35 close
+to come: 41 miss, 55 close
+to do it: 12 miss, 20 close
+to drink it: 6 miss, 20 close
+to go: 8 miss, 38 close
+to have it: 3 miss, 14 close
+
+--- to be good (9 misses) ---
+  assertive_perfective 1du_incl:
+    exp=riciihii
+    got=riicuuhii
+  potential_perfective 1du_incl:
+    exp=kaciihii
+    got=kasacuuhii
+  potential_perfective 1pl_incl:
+    exp=kuusturaakiwaa
+    got=kaastuuraakiiwaa
+  gerundial_perfective_subordinate 1du_incl:
+    exp=iriraciihiira
+    got=iriiracuuhiira
+  subjunctive_perfective_subordinate 1du_incl:
+    exp=aciihiira
+    got=aacuuhiira
+  infinitive_perfective_subordinate 3sg:
+    exp=racihkuuhiira
+    got=rakuuhiira
+  infinitive_perfective_subordinate 1pl_incl:
+    exp=rataakuraakiwaara
+    got=ratuuraakuuwaara
+  infinitive_perfective_subordinate 1pl_excl:
+    exp=ratkuraakiwaara
+    got=raturaakuuwaara
+  infinitive_perfective_subordinate 2pl:
+    exp=raskuraakiwaara
+    got=rasuraakuuwaara
+
+--- to have it (3 misses) ---
+  potential_perfective 1du_incl:
+    exp=kaaciriiraa
+    got=kaasaciiraa
+  potential_perfective 1pl_incl:
+    exp=sikaaciriiraa
+    got=sikaasaciiraa
+  potential_perfective 3pl:
+    exp=kuusiriiraraa
+    got=sikuusiraa
+
+--- to go (8 misses) ---
+  potential_perfective 1du_incl:
+    exp=kaaciriiwa
+    got=kaasaciiwa
+  potential_perfective 1du_excl:
+    exp=sikuustiwa
+    got=sikuusitpa
+  potential_perfective 1pl_incl:
+    exp=kuustaaraapuuʔ
+    got=kaastariipuuʔ
+  infinitive_perfective_subordinate 1du_excl:
+    exp=siratkuwara
+    got=sirakutpaa
+  infinitive_perfective_subordinate 2du:
+    exp=siraskuara
+    got=sirakuspaa
+  infinitive_perfective_subordinate 1pl_incl:
+    exp=rataakuraapuu
+    got=rataraakupuu
+  infinitive_perfective_subordinate 1pl_excl:
+    exp=ratkuraapuu
+    got=ratiraakupuu
+  infinitive_perfective_subordinate 2pl:
+    exp=raskuraapuu
+    got=rasiraakupuu
+
+--- to drink it (6 misses) ---
+  potential_perfective 1du_incl:
+    exp=kaaciriikiikaʔ
+    got=kaasaciikiikaʔ
+  potential_perfective 1pl_incl:
+    exp=kuustaaraakiikaʔ
+    got=kaastaraakikiikaʔ
+  potential_perfective 3pl:
+    exp=kusiriikiikaʔ
+    got=kuusikiikaʔ
+  infinitive_perfective_subordinate 1pl_incl:
+    exp=rataakuraakikaa
+    got=rataraakukikaa
+  infinitive_perfective_subordinate 1pl_excl:
+    exp=ratkuraakikaa
+    got=ratiraakukikaa
+  infinitive_perfective_subordinate 2pl:
+    exp=raskuraakikaa
+    got=rasiraakukikaa
+
+--- to do it (12 misses) ---
+  potential_perfective 1sg:
+    exp=kuustuciʔaa
+    got=kuustuutaa
+  potential_perfective 2sg:
+    exp=kaasucíʔaa
+    got=kasuutaa
+  potential_perfective 3sg:
+    exp=kuusucíʔaa
+    got=kusuutaa
+  potential_perfective 1du_incl:
+    exp=kaciicíʔaa
+    got=kasaciitaa
+  potential_perfective 1du_excl:
+    exp=sikuustucíʔaa
+    got=sikuustuutaa
+  potential_perfective 2du:
+    exp=sikaasucíʔaa
+    got=sikasuutaa
+  potential_perfective 3du:
+    exp=sikuusucíʔaa
+    got=sikusuutaa
+  potential_perfective 1pl_incl:
+    exp=kuustuciraakaa
+    got=kaastuuhaakaa
+  potential_perfective 1pl_excl:
+    exp=kuustuciraakaa
+    got=kuustuuhaakaa
+  potential_perfective 2pl:
+    exp=kaasuciraakaa
+    got=kasuuhaakaa
+  potential_perfective 3pl:
+    exp=kusiicíʔaa
+    got=kusiitaa
+  subjunctive_perfective_subordinate 1du_incl:
+    exp=aaciiriitaara
+    got=aaciitaara
+

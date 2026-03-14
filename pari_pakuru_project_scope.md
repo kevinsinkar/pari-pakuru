@@ -363,19 +363,19 @@ Also strips whitespace from `phonetic_form` fields. Preserves `•` syllable dot
 - Preverb alternation: ir- → iir- (1/2.A) / a- (3.A)
 - For verbs with ut- preverb: fused into stem (e.g., ut-+aar→ stem "uutaar")
 
-**Validation results (first pass):**
-- 770 forms tested: 98 exact (12.7%), 167 close (21.7%), 505 mismatch (65.6%)
-- Singular (1sg/2sg/3sg): ~33% exact — core modal/agent/preverb interactions working
-- Dual/plural: 0% — complex person prefix assembly not yet complete
-- Best verb: "to do it" 24%, worst: "to be sick" 0% (needs ku- proclitic), "to go" 5% (irregular)
+**Validation results (latest — 2026-03-12):**
+- 770 forms tested: 587 exact (76.2%), 153 close (19.9%), 30 mismatch (3.9%)
+- Per verb: to go 94%, to drink it 89%, to be sick 88%, to have it 85%, to be good 79%, to do it 67%, to come 31%
+- "to come" improved from 21→34 exact (70 close = accent-only); 6 remaining MISS are assertive/absolutive 3du stem, gerundial 2sg, 3pl sub suffix
+- Remaining gaps: "to do it" (12 MISS), "to be good" (3 MISS), "to be sick" (4 MISS), "to drink it" (3 MISS)
 
 **Known gaps for refinement:**
-- Dual prefixes: acir- (inclusive), ih- (exclusive/2du) compound assembly
-- Plural prefixes: raak-/iraak- interactions with other slots
-- 3pl suffix: aahuʔ/raaraʔ alternation conditions
-- Gerundial mode: iriira- compound prefix internal structure
-- Subordinate suffix class-specific tuning
-- Verb-specific irregularities: "to go" (compensatory lengthening), "to be sick" (ku- proclitic)
+- "to come" (34/110): 70 close matches are accent-only; 6 remaining MISS: assertive/absolutive 3du uses sg stem instead of du stem, gerundial 2sg GER shortening fires incorrectly, 3pl sub suffix contraction deletes stem
+- "to do it" (74/110): 12 MISS — needs investigation (largest remaining gap after "to come")
+- "to be sick" remaining 4 mismatches: gerundial du/infinitive structural anomalies (likely OCR artifacts)
+- "to be good" remaining 3 mismatches: minor plural/dual edge cases
+- Accent mark generation: ~85 forms have accents (mostly "to come"), implementing stress assignment would boost 70+ close→exact (~9%)
+- Dictionary-wide stem extraction: main bottleneck for dict validation (14.8% exact)
 
 **DB tables added:** `verb_paradigms`, `irregular_verb_roots`, `morpheme_abbreviations`, `morpheme_inventory`, `verb_template_slots`
 **Report:** `reports/phase_3_1_morphemes.txt`
@@ -404,24 +404,47 @@ Tasks completed:
 - [x] Imperfective aspect: -huʔ (non-subordinate) / -hu (subordinate) suffix
 - [x] Dictionary-wide validation: --validate-dict mode (9,583 forms across all dictionary verbs)
 - [x] Appendix 3 extraction: 23 kinship terms (consanguineal + affinal + possessive paradigms)
+- [x] Gemini-collaborative morphophonological analysis: 3-round diagnosis → 10 rule fixes (35%→51%)
+- [x] "to go" suppletive 3pl: pl3_stem with PREV_3A label for correct vowel contraction
+- [x] "to drink it" pl_agent_fusions, sub_stem shortening, 3pl raak prefix
+- [x] Potential mode shortening conditioned on agent presence
+- [x] Sound change VOWELS sets updated to include accented vowels (áíú)
+- [x] Descriptive-ku verb overhaul: 4-way person category system (excl/2nd/3rd/incl), DESC_KU_MODE_OVERRIDES table, raktah plural, 3pl prefix markers, ku→kuu lengthening, gerundial mode decomposition, potential mode reordering, aca→acu u-raising — "to be sick" 34%→88%
+- [x] "to come" negative mode: kaakaa underlying form with extended shortening rules (+2)
+- [x] "to come" 3.A stem ʔaʔ/ʔa: initial glottal surfaces in non-indicative/non-negative modes
+- [x] Subjunctive aa shortening: only before u-initial morphemes (not i/r) — "to have it" +6
+- [x] "to come" gerundial: ir-preverb sg 1sg/2sg skip MODE ra; 1sg also skips AGENT; GER shortening label-gated
+- [x] "to come" potential mode: preverb irii (1/2) / aa (3rd+1pl_incl); no POT.i; TR_MARKER boundary protection; mode shortening only before aa preverb; 1du_incl uses acir+POT.i instead
+- [x] "to come" infinitive mode: preverb ih (1/2) / a (3rd) placed BEFORE INF.B ku via INF_PREV label; 3.A stem for all sg; short stem ʔ-deletion threshold tightened
 
-**Current validation (latest pass):**
-- Appendix 1: 35.2% exact (271/770), 30.3% close (edit distance ≤ 2)
+**Current validation (latest pass — 2026-03-12):**
+- Appendix 1: **76.2% exact (587/770)**, 19.9% close (153), 3.9% miss (30)
+- Per verb: to go 94%, to drink it 89%, to be sick 88%, to have it 85%, to be good 79%, to do it 67%, to come 31%
 - Dictionary: 14.8% exact (1,420/9,583), 44.2% close
 
+**Major improvements since first pass (12.7% → 76.2%):**
+- Gemini-collaborative 3-round diagnosis with 10 morphophonological fixes (+25%)
+- Rule 24 glottal stop deletion, siʔV epenthesis, r→h before high vowels
+- uur preverb ih removal, acir+V r-loss, ʔ deletion after consonant
+- Potential shortening conditioned on agent presence
+- "to go" suppletive 3pl stems with PREV_3A label (avoids Rule 2R)
+- "to drink it" sub_stem shortening, 3pl raak prefix, pl_agent_fusions
+- Descriptive-ku verb system overhaul: DESC_KU_MODE_OVERRIDES, raktah plural, 3pl prefix markers, ku→kuu lengthening, aca→acu u-raising (+8%)
+- "to come" structural fixes: negative kaakaa, 3.A stem, subjunctive shortening, gerundial/potential/infinitive preverb handling (+4%)
+
 Tasks remaining (priority order):
-- [ ] **Accent mark generation** — many close matches differ only by accent marks (á, í, ú); implementing stress assignment would significantly boost accuracy
-- [ ] **Improve conjugation accuracy to 60%+** — systematic fixes for dual/plural morphology, descriptive verb patterns, stem extraction from headwords
-- [ ] uur- preverb shortening before raak- in plural
-- [ ] Gerundial stem form alternations (e.g., kiikaʔ → kikaa)
-- [ ] Contingent i+a contraction (mode + inclusive boundary)
+- [x] ~~"to be sick" descriptive verb fixes~~ — **done**: 37→97/110 exact (88%)
+- [x] ~~"to come" structural fixes~~ — **done**: 21→34/110 exact (31%), 70 close (accent-only), 6 remaining MISS
+- [ ] **Accent mark generation** — 70 "to come" close matches + ~15 other verbs differ only by accent marks (á, í, ú); implementing stress assignment would boost ~85 forms to exact (~9% overall gain)
+- [ ] **"to come" remaining 6 MISS** — assertive/absolutive 3du (3.A stem used instead of du stem), gerundial 2sg (GER shortening fires on PREV label), 3pl sub suffix contraction (stem deleted); also 3pl sub `verb_class='1'` string adds SUB suffix incorrectly
+- [ ] **"to do it" investigation** (74/110, 12 MISS) — largest remaining mismatch gap after "to come"
 - [ ] VD(u) descriptive verb stem extraction (1% exact in dict validation)
 - [ ] VT(3) Class 3 ut- fusion logic (0% exact in dict validation)
 - [ ] Dictionary stem extraction improvements (main gap for dict-wide accuracy)
 
 ### 🔲 Phase 3.2 — Sentence Construction Framework
 **Priority:** Low (depends on 3.1 accuracy improvements)
-**Depends on:** Phase 3.1 (morpheme slot system at 60%+ accuracy)
+**Depends on:** Phase 3.1 (morpheme slot system at 60%+ accuracy — **now at 76.2%**)
 **Effort:** Very Large
 
 Given English input, construct Skiri output.

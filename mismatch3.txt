@@ -1,0 +1,161 @@
+=== MISS COUNTS ===
+to be good: 15 miss, 29 close
+to be sick: 40 miss, 34 close
+to come: 41 miss, 55 close
+to do it: 12 miss, 20 close
+to drink it: 8 miss, 18 close
+to go: 10 miss, 36 close
+to have it: 3 miss, 14 close
+
+--- to be good (15 misses) ---
+  assertive_perfective 1du_incl:
+    exp=riciihii
+    got=riicuuhii
+    brk=rii(MODE) + acir(INCLUSIVE) + uur(PREV) + hiir(STEM)
+  potential_perfective 1du_incl:
+    exp=kaciihii
+    got=kusacuuhii
+    brk=kuus(MODE) + acir(INCLUSIVE) + i(POT.i) + uur(PREV) + hiir(STEM)
+  gerundial_perfective_subordinate 1du_incl:
+    exp=iriraciihiira
+    got=iriiracuuhiira
+    brk=irii(GER) + ra(MODE) + acir(INCLUSIVE) + uur(PREV) + hiir(STEM) + a(SUB)
+  gerundial_perfective_subordinate 1pl_incl:
+    exp=iriratuuraakiwaara
+    got=iriraturaakiwaa
+    brk=irii(GER) + ra(MODE) + t(AGENT) + uur(PREV) + raak(PL) + iwaa(STEM) + a(SUB)
+  gerundial_perfective_subordinate 3pl:
+    exp=iriruuhiwaara
+    got=iriiruuhiwaa
+    brk=irii(GER) + ra(MODE) + uur(PREV) + iwaa(STEM) + a(SUB)
+  contingent_perfective_subordinate 1pl_incl:
+    exp=ituuraakiwaara
+    got=ituraakiwaa
+    brk=i(MODE) + t(AGENT) + uur(PREV) + raak(PL) + iwaa(STEM) + a(SUB)
+  subjunctive_perfective_subordinate 1du_incl:
+    exp=aciihiira
+    got=aacuuhiira
+    brk=aa(MODE) + acir(INCLUSIVE) + uur(PREV) + hiir(STEM) + a(SUB)
+  subjunctive_perfective_subordinate 1pl_incl:
+    exp=atuuraakiwaara
+    got=aturaakiwaa
+    brk=aa(MODE) + t(AGENT) + uur(PREV) + raak(PL) + iwaa(STEM) + a(SUB)
+  subjunctive_perfective_subordinate 1pl_excl:
+    exp=aaturaakiwaara
+    got=aturaakiwaa
+    brk=aa(MODE) + t(AGENT) + uur(PREV) + raak(PL) + iwaa(STEM) + a(SUB)
+  subjunctive_perfective_subordinate 2pl:
+    exp=aasuuraakiwaara
+    got=asuraakiwaa
+    brk=aa(MODE) + s(AGENT) + uur(PREV) + raak(PL) + iwaa(STEM) + a(SUB)
+  infinitive_perfective_subordinate 3sg:
+    exp=racihkuuhiira
+    got=rakuuhiira
+    brk=ra(MODE) + ku(INF.B) + uur(PREV) + hiir(STEM) + a(SUB)
+  infinitive_perfective_subordinate 1pl_incl:
+    exp=rataakuraakiwaara
+    got=raturaakuuwaa
+    brk=ra(MODE) + t(AGENT) + uur(PREV) + raak(PL) + ku(INF.B) + iwaa(STEM) + a(SUB)
+  infinitive_perfective_subordinate 1pl_excl:
+    exp=ratkuraakiwaara
+    got=raturaakuuwaa
+    brk=ra(MODE) + t(AGENT) + uur(PREV) + raak(PL) + ku(INF.B) + iwaa(STEM) + a(SUB)
+  infinitive_perfective_subordinate 2pl:
+    exp=raskuraakiwaara
+    got=rasuraakuuwaa
+    brk=ra(MODE) + s(AGENT) + uur(PREV) + raak(PL) + ku(INF.B) + iwaa(STEM) + a(SUB)
+  infinitive_perfective_subordinate 3pl:
+    exp=rakuuhiwaara
+    got=ruuhkuuwaa
+    brk=ra(MODE) + uur(PREV) + ku(INF.B) + iwaa(STEM) + a(SUB)
+
+--- to have it (3 misses) ---
+  potential_perfective 1du_incl:
+    exp=kaaciriiraa
+    got=kuusaciiraa
+    brk=kuus(MODE) + acir(INCLUSIVE) + i(POT.i) + raa(STEM)
+  potential_perfective 1pl_incl:
+    exp=sikaaciriiraa
+    got=sikuusaciiraa
+    brk=si(DU) + kuus(MODE) + acir(INCLUSIVE) + i(POT.i) + raa(STEM)
+  potential_perfective 3pl:
+    exp=kuusiriiraraa
+    got=sikuusiraa
+    brk=si(DU) + kuus(MODE) + i(POT.i) + raa(STEM)
+
+--- to go (10 misses) ---
+  potential_perfective 1du_incl:
+    exp=kaaciriiwa
+    got=kuusaciiwa
+    brk=kuus(MODE) + acir(INCLUSIVE) + i(POT.i) + war(STEM)
+  potential_perfective 1du_excl:
+    exp=sikuustiwa
+    got=sikuusitpa
+    brk=si(DU) + kuus(MODE) + i(POT.i) + tpa(STEM)
+  potential_perfective 1pl_incl:
+    exp=kuustaaraapuuʔ
+    got=kuustariipuuʔ
+    brk=kuus(MODE) + t(AGENT) + a(INCLUSIVE) + raak(PL) + i(POT.i) + puuʔ(STEM)
+  potential_perfective 1pl_excl:
+    exp=kuustiraapuuʔ
+    got=kuustipuuʔ
+    brk=kuus(MODE) + t(AGENT) + i(POT.i) + puuʔ(STEM)
+  potential_perfective 2pl:
+    exp=kaasiraapuuʔ
+    got=kaasipuuʔ
+    brk=kaas(MODE) + i(POT.i) + puuʔ(STEM)
+  infinitive_perfective_subordinate 1du_excl:
+    exp=siratkuwara
+    got=sirakutpaa
+    brk=si(DU) + ra(MODE) + ku(INF.B) + tpa(STEM) + a(SUB)
+  infinitive_perfective_subordinate 2du:
+    exp=siraskuara
+    got=sirakuspaa
+    brk=si(DU) + ra(MODE) + ku(INF.B) + spa(STEM) + a(SUB)
+  infinitive_perfective_subordinate 1pl_incl:
+    exp=rataakuraapuu
+    got=rataraakupuu
+    brk=ra(MODE) + t(AGENT) + a(INCLUSIVE) + raak(PL) + ku(INF.B) + puu(STEM) + a(SUB)
+  infinitive_perfective_subordinate 1pl_excl:
+    exp=ratkuraapuu
+    got=ratkupuu
+    brk=ra(MODE) + t(AGENT) + ku(INF.B) + puu(STEM) + a(SUB)
+  infinitive_perfective_subordinate 2pl:
+    exp=raskuraapuu
+    got=raskupuu
+    brk=ra(MODE) + s(AGENT) + ku(INF.B) + puu(STEM) + a(SUB)
+
+--- to drink it (8 misses) ---
+  potential_perfective 1du_incl:
+    exp=kaaciriikiikaʔ
+    got=kuusaciikiikaʔ
+    brk=kuus(MODE) + acir(INCLUSIVE) + i(POT.i) + kiikaʔ(STEM)
+  potential_perfective 1pl_incl:
+    exp=kuustaaraakiikaʔ
+    got=kuustaraakikiikaʔ
+    brk=kuus(MODE) + t(AGENT) + a(INCLUSIVE) + raak(PL) + i(POT.i) + kiikaʔ(STEM)
+  potential_perfective 1pl_excl:
+    exp=kuustiraakiikaʔ
+    got=kuustikiikaʔ
+    brk=kuus(MODE) + t(AGENT) + i(POT.i) + kiikaʔ(STEM)
+  potential_perfective 2pl:
+    exp=kaasiraakiikaʔ
+    got=kaasikiikaʔ
+    brk=kaas(MODE) + i(POT.i) + kiikaʔ(STEM)
+  potential_perfective 3pl:
+    exp=kusiriikiikaʔ
+    got=kuusikiikaʔ
+    brk=kuus(MODE) + h(PL) + i(POT.i) + kiikaʔ(STEM)
+  infinitive_perfective_subordinate 1pl_incl:
+    exp=rataakuraakikaa
+    got=rataraakukikaa
+    brk=ra(MODE) + t(AGENT) + a(INCLUSIVE) + raak(PL) + ku(INF.B) + kikaʔ(STEM) + a(SUB)
+  infinitive_perfective_subordinate 1pl_excl:
+    exp=ratkuraakikaa
+    got=ratkukikaa
+    brk=ra(MODE) + t(AGENT) + ku(INF.B) + kikaʔ(STEM) + a(SUB)
+  infinitive_perfective_subordinate 2pl:
+    exp=raskuraakikaa
+    got=raskukikaa
+    brk=ra(MODE) + s(AGENT) + ku(INF.B) + kikaʔ(STEM) + a(SUB)
+

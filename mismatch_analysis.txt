@@ -1,0 +1,1048 @@
+--- to be good (39 misses) ---
+  indicative_perfective 1pl_incl:
+    exp=tatuuraakiwaa
+    got=tataraakuuhiwaa
+    brk=ta(MODE) + t(AGENT) + a(INCLUSIVE) + raak(PL) + uur(PREV) + iwaa(STEM)
+  indicative_perfective 1pl_excl:
+    exp=taturaakiwaa
+    got=tatiraakuuhiwaa
+    brk=ta(MODE) + t(AGENT) + iraak(PL) + uur(PREV) + iwaa(STEM)
+  indicative_perfective 2pl:
+    exp=tasuraakiwaa
+    got=tasiraakuuhiwaa
+    brk=ta(MODE) + s(AGENT) + iraak(PL) + uur(PREV) + iwaa(STEM)
+  negative_indicative_perfective 1pl_incl:
+    exp=kaakatuuraakiwaa
+    got=kaakataraakuuhiwaa
+    brk=kaaka(MODE) + t(AGENT) + a(INCLUSIVE) + raak(PL) + uur(PREV) + iwaa(STEM)
+  negative_indicative_perfective 1pl_excl:
+    exp=kaakaturaakiwaa
+    got=kaakatiraakuuhiwaa
+    brk=kaaka(MODE) + t(AGENT) + iraak(PL) + uur(PREV) + iwaa(STEM)
+  negative_indicative_perfective 2pl:
+    exp=kaakasuraakiwaa
+    got=kaakasiraakuuhiwaa
+    brk=kaaka(MODE) + s(AGENT) + iraak(PL) + uur(PREV) + iwaa(STEM)
+  contingent_perfective 1pl_incl:
+    exp=ituuraakiwaa
+    got=itaraakuuhiwaa
+    brk=i(MODE) + t(AGENT) + a(INCLUSIVE) + raak(PL) + uur(PREV) + iwaa(STEM)
+  contingent_perfective 1pl_excl:
+    exp=ituraakiwaa
+    got=itiraakuuhiwaa
+    brk=i(MODE) + t(AGENT) + iraak(PL) + uur(PREV) + iwaa(STEM)
+  contingent_perfective 2pl:
+    exp=isuraakiwaa
+    got=isiraakuuhiwaa
+    brk=i(MODE) + s(AGENT) + iraak(PL) + uur(PREV) + iwaa(STEM)
+  assertive_perfective 1du_incl:
+    exp=riciihii
+    got=riicuuhii
+    brk=rii(MODE) + acir(INCLUSIVE) + uur(PREV) + hiir(STEM)
+  assertive_perfective 1pl_incl:
+    exp=rituuraakiwaa
+    got=ritaraakuuhiwaa
+    brk=rii(MODE) + t(AGENT) + a(INCLUSIVE) + raak(PL) + uur(PREV) + iwaa(STEM)
+  assertive_perfective 1pl_excl:
+    exp=rituraakiwaa
+    got=ritiraakuuhiwaa
+    brk=rii(MODE) + t(AGENT) + iraak(PL) + uur(PREV) + iwaa(STEM)
+  assertive_perfective 2pl:
+    exp=risuraakiwaa
+    got=risiraakuuhiwaa
+    brk=rii(MODE) + s(AGENT) + iraak(PL) + uur(PREV) + iwaa(STEM)
+  absolutive_perfective 1pl_incl:
+    exp=ratuuraakiwaa
+    got=rataraakuuhiwaa
+    brk=ra(MODE) + t(AGENT) + a(INCLUSIVE) + raak(PL) + uur(PREV) + iwaa(STEM)
+  absolutive_perfective 1pl_excl:
+    exp=raturaakiwaa
+    got=ratiraakuuhiwaa
+    brk=ra(MODE) + t(AGENT) + iraak(PL) + uur(PREV) + iwaa(STEM)
+  absolutive_perfective 2pl:
+    exp=rasuraakiwaa
+    got=rasiraakuuhiwaa
+    brk=ra(MODE) + s(AGENT) + iraak(PL) + uur(PREV) + iwaa(STEM)
+  potential_perfective 1du_incl:
+    exp=kaciihii
+    got=kusacuuhii
+    brk=kuus(MODE) + acir(INCLUSIVE) + i(POT.i) + uur(PREV) + hiir(STEM)
+  potential_perfective 1pl_incl:
+    exp=kuusturaakiwaa
+    got=kuustaraakuuhiwaa
+    brk=kuus(MODE) + t(AGENT) + a(INCLUSIVE) + raak(PL) + i(POT.i) + uur(PREV) + iwaa(STEM)
+  potential_perfective 1pl_excl:
+    exp=kuusturaakiwaa
+    got=kuustiraakuuhiwaa
+    brk=kuus(MODE) + t(AGENT) + iraak(PL) + i(POT.i) + uur(PREV) + iwaa(STEM)
+  potential_perfective 2pl:
+    exp=kaasuraakiwaa
+    got=kasiraakuuhiwaa
+    brk=kaas(MODE) + iraak(PL) + i(POT.i) + uur(PREV) + iwaa(STEM)
+  gerundial_perfective_subordinate 1du_incl:
+    exp=iriraciihiira
+    got=iriiracuuhiira
+    brk=irii(GER) + ra(MODE) + acir(INCLUSIVE) + uur(PREV) + hiir(STEM) + a(SUB)
+  gerundial_perfective_subordinate 1du_excl:
+    exp=iriisiratuuhiira
+    got=siʔiriratuuhiira
+    brk=si(DU) + irii(GER) + ra(MODE) + t(AGENT) + uur(PREV) + hiir(STEM) + a(SUB)
+  gerundial_perfective_subordinate 2du:
+    exp=iriisirasuuhiira
+    got=siʔirirasuuhiira
+    brk=si(DU) + irii(GER) + ra(MODE) + s(AGENT) + uur(PREV) + hiir(STEM) + a(SUB)
+  gerundial_perfective_subordinate 3du:
+    exp=iriisiruuhiira
+    got=siʔiriiruuhiira
+    brk=si(DU) + irii(GER) + ra(MODE) + uur(PREV) + hiir(STEM) + a(SUB)
+  gerundial_perfective_subordinate 1pl_incl:
+    exp=iriratuuraakiwaara
+    got=irirataraakuuhiwaa
+    brk=irii(GER) + ra(MODE) + t(AGENT) + a(INCLUSIVE) + raak(PL) + uur(PREV) + iwaa(STEM) + a(SUB)
+  gerundial_perfective_subordinate 1pl_excl:
+    exp=iriraturaakiwaara
+    got=iriratiraakuuhiwaa
+    brk=irii(GER) + ra(MODE) + t(AGENT) + iraak(PL) + uur(PREV) + iwaa(STEM) + a(SUB)
+  gerundial_perfective_subordinate 2pl:
+    exp=irirasuraakiwaara
+    got=irirasiraakuuhiwaa
+    brk=irii(GER) + ra(MODE) + s(AGENT) + iraak(PL) + uur(PREV) + iwaa(STEM) + a(SUB)
+  gerundial_perfective_subordinate 3pl:
+    exp=iriruuhiwaara
+    got=iriiruuhiwaa
+    brk=irii(GER) + ra(MODE) + uur(PREV) + iwaa(STEM) + a(SUB)
+  contingent_perfective_subordinate 1pl_incl:
+    exp=ituuraakiwaara
+    got=itaraakuuhiwaa
+    brk=i(MODE) + t(AGENT) + a(INCLUSIVE) + raak(PL) + uur(PREV) + iwaa(STEM) + a(SUB)
+  contingent_perfective_subordinate 1pl_excl:
+    exp=ituraakiwaara
+    got=itiraakuuhiwaa
+    brk=i(MODE) + t(AGENT) + iraak(PL) + uur(PREV) + iwaa(STEM) + a(SUB)
+  contingent_perfective_subordinate 2pl:
+    exp=isuraakiwaara
+    got=isiraakuuhiwaa
+    brk=i(MODE) + s(AGENT) + iraak(PL) + uur(PREV) + iwaa(STEM) + a(SUB)
+  subjunctive_perfective_subordinate 1du_incl:
+    exp=aciihiira
+    got=aacuuhiira
+    brk=aa(MODE) + acir(INCLUSIVE) + uur(PREV) + hiir(STEM) + a(SUB)
+  subjunctive_perfective_subordinate 1pl_incl:
+    exp=atuuraakiwaara
+    got=ataraakuuhiwaa
+    brk=aa(MODE) + t(AGENT) + a(INCLUSIVE) + raak(PL) + uur(PREV) + iwaa(STEM) + a(SUB)
+  subjunctive_perfective_subordinate 1pl_excl:
+    exp=aaturaakiwaara
+    got=atiraakuuhiwaa
+    brk=aa(MODE) + t(AGENT) + iraak(PL) + uur(PREV) + iwaa(STEM) + a(SUB)
+  subjunctive_perfective_subordinate 2pl:
+    exp=aasuuraakiwaara
+    got=asiraakuuhiwaa
+    brk=aa(MODE) + s(AGENT) + iraak(PL) + uur(PREV) + iwaa(STEM) + a(SUB)
+  infinitive_perfective_subordinate 3sg:
+    exp=racihkuuhiira
+    got=rakuuhiira
+    brk=ra(MODE) + ku(INF.B) + uur(PREV) + hiir(STEM) + a(SUB)
+  infinitive_perfective_subordinate 1pl_incl:
+    exp=rataakuraakiwaara
+    got=rataraakuuhiwaa
+    brk=ra(MODE) + t(AGENT) + a(INCLUSIVE) + raak(PL) + ku(INF.B) + uur(PREV) + iwaa(STEM) + a(SUB)
+  infinitive_perfective_subordinate 1pl_excl:
+    exp=ratkuraakiwaara
+    got=ratiraakuuhiwaa
+    brk=ra(MODE) + t(AGENT) + iraak(PL) + ku(INF.B) + uur(PREV) + iwaa(STEM) + a(SUB)
+  infinitive_perfective_subordinate 2pl:
+    exp=raskuraakiwaara
+    got=rasiraakuuhiwaa
+    brk=ra(MODE) + s(AGENT) + iraak(PL) + ku(INF.B) + uur(PREV) + iwaa(STEM) + a(SUB)
+
+--- to be sick (40 misses) ---
+  indicative_perfective 3pl:
+    exp=tiirakiraawaʔ
+    got=tikiraawaʔwaa
+    brk=ti(MODE) + kiraawaʔ(STEM) + waa(3PL)
+  negative_indicative_perfective 3pl:
+    exp=kaakirakiraawaʔ
+    got=kaakikiraawaʔwaa
+    brk=kaaki(MODE) + kiraawaʔ(STEM) + waa(3PL)
+  contingent_perfective 1pl_incl:
+    exp=racakuraktahkiraawaʔ
+    got=icakuraakiraawaʔ
+    brk=i(MODE) + aca(INCLUSIVE) + ku(INDF) + raak(PL) + kiraawaʔ(STEM)
+  contingent_perfective 1pl_excl:
+    exp=rikuraktahkiraawaʔ
+    got=rikuraakiraawaʔ
+    brk=ri(MODE) + ku(INDF) + raak(PL) + kiraawaʔ(STEM)
+  contingent_perfective 2pl:
+    exp=raraktahkiraawaʔ
+    got=iraakiraawaʔ
+    brk=i(MODE) + raak(PL) + kiraawaʔ(STEM)
+  contingent_perfective 3pl:
+    exp=riiraktahkiraawaʔ
+    got=rikiraawaʔwaa
+    brk=ri(MODE) + kiraawaʔ(STEM) + waa(3PL)
+  assertive_perfective 1pl_incl:
+    exp=riicakuuraktahkiraawaʔ
+    got=riicakuraakiraawaʔ
+    brk=rii(MODE) + aca(INCLUSIVE) + ku(INDF) + raak(PL) + kiraawaʔ(STEM)
+  assertive_perfective 1pl_excl:
+    exp=riikuuraktahkiraawaʔ
+    got=riikuraakiraawaʔ
+    brk=rii(MODE) + ku(INDF) + raak(PL) + kiraawaʔ(STEM)
+  assertive_perfective 2pl:
+    exp=raaraktahkiraawaʔ
+    got=riiraakiraawaʔ
+    brk=rii(MODE) + raak(PL) + kiraawaʔ(STEM)
+  assertive_perfective 3pl:
+    exp=riiraktahkiraawaʔ
+    got=riikiraawaʔwaa
+    brk=rii(MODE) + kiraawaʔ(STEM) + waa(3PL)
+  absolutive_perfective 1pl_incl:
+    exp=riicakuraktahkiraawaʔ
+    got=racakuraakiraawaʔ
+    brk=ra(MODE) + aca(INCLUSIVE) + ku(INDF) + raak(PL) + kiraawaʔ(STEM)
+  absolutive_perfective 1pl_excl:
+    exp=riikuraktahkiraawaʔ
+    got=rakuraakiraawaʔ
+    brk=ra(MODE) + ku(INDF) + raak(PL) + kiraawaʔ(STEM)
+  absolutive_perfective 2pl:
+    exp=raaraktahkiraawaʔ
+    got=raraakiraawaʔ
+    brk=ra(MODE) + raak(PL) + kiraawaʔ(STEM)
+  absolutive_perfective 3pl:
+    exp=riiraktahkiraawaʔ
+    got=rakiraawaʔwaa
+    brk=ra(MODE) + kiraawaʔ(STEM) + waa(3PL)
+  potential_perfective 2sg:
+    exp=kusaakiraawaʔ
+    got=kaasikiraawaʔ
+    brk=kaas(MODE) + i(POT.i) + kiraawaʔ(STEM)
+  potential_perfective 3sg:
+    exp=kusiriikiraawaʔ
+    got=kuusikiraawaʔ
+    brk=kuus(MODE) + h(3PM) + i(POT.i) + kiraawaʔ(STEM)
+  potential_perfective 1du_incl:
+    exp=kaacakuukiraawaʔ
+    got=kuusacakuukiraawaʔ
+    brk=kuus(MODE) + aca(INCLUSIVE) + ku(INDF) + i(POT.i) + kiraawaʔ(STEM)
+  potential_perfective 2du:
+    exp=sikusaakiraawaʔ
+    got=sikaasikiraawaʔ
+    brk=si(DU) + kaas(MODE) + i(POT.i) + kiraawaʔ(STEM)
+  potential_perfective 3du:
+    exp=sikusiriikiraawaʔ
+    got=sikuusikiraawaʔ
+    brk=si(DU) + kuus(MODE) + h(3PM) + i(POT.i) + kiraawaʔ(STEM)
+  potential_perfective 1pl_incl:
+    exp=kaacakuuraktahkiraawaʔ
+    got=kuusacakuraakikiraawaʔ
+    brk=kuus(MODE) + aca(INCLUSIVE) + ku(INDF) + raak(PL) + i(POT.i) + kiraawaʔ(STEM)
+  potential_perfective 1pl_excl:
+    exp=kuusikuuraktahkiraawaʔ
+    got=kuuskuraakikiraawaʔ
+    brk=kuus(MODE) + ku(INDF) + raak(PL) + i(POT.i) + kiraawaʔ(STEM)
+  potential_perfective 2pl:
+    exp=kusaaraktahkiraawaʔ
+    got=kaastaakikiraawaʔ
+    brk=kaas(MODE) + raak(PL) + i(POT.i) + kiraawaʔ(STEM)
+  potential_perfective 3pl:
+    exp=kusiriktahkiraawaʔ
+    got=kuusikiraawaʔwaa
+    brk=kuus(MODE) + i(POT.i) + kiraawaʔ(STEM) + waa(3PL)
+  gerundial_perfective_subordinate 1du_excl:
+    exp=iriirisirikukiraawaa
+    got=siʔiriirakukiraawaa
+    brk=si(DU) + irii(GER) + ra(MODE) + ku(INDF) + kiraawaʔ(STEM) + a(SUB)
+  gerundial_perfective_subordinate 2du:
+    exp=iriirisiraawaa
+    got=siʔiriirakiraawaa
+    brk=si(DU) + irii(GER) + ra(MODE) + kiraawaʔ(STEM) + a(SUB)
+  gerundial_perfective_subordinate 3du:
+    exp=iriirisirihkiraawaa
+    got=siʔiriirahkiraawaa
+    brk=si(DU) + irii(GER) + ra(MODE) + h(3PM) + kiraawaʔ(STEM) + a(SUB)
+  gerundial_perfective_subordinate 1pl_incl:
+    exp=iriiracuraktahkiraawaa
+    got=iriiracakuraakiraawaa
+    brk=irii(GER) + ra(MODE) + aca(INCLUSIVE) + ku(INDF) + raak(PL) + kiraawaʔ(STEM) + a(SUB)
+  gerundial_perfective_subordinate 1pl_excl:
+    exp=iriirikuraktahkiraawaa
+    got=iriirakuraakiraawaa
+    brk=irii(GER) + ra(MODE) + ku(INDF) + raak(PL) + kiraawaʔ(STEM) + a(SUB)
+  gerundial_perfective_subordinate 2pl:
+    exp=iriiraraktahkiraawaa
+    got=iriiraraakiraawaa
+    brk=irii(GER) + ra(MODE) + raak(PL) + kiraawaʔ(STEM) + a(SUB)
+  gerundial_perfective_subordinate 3pl:
+    exp=iriiriraktahkiraawaa
+    got=iriirakiraawaawaara
+    brk=irii(GER) + ra(MODE) + kiraawaʔ(STEM) + a(SUB) + waara(3PL)
+  contingent_perfective_subordinate 1pl_incl:
+    exp=racakuraktahkiraawaa
+    got=icakuraakiraawaa
+    brk=i(MODE) + aca(INCLUSIVE) + ku(INDF) + raak(PL) + kiraawaʔ(STEM) + a(SUB)
+  contingent_perfective_subordinate 1pl_excl:
+    exp=rikuraktahkiraawaa
+    got=rikuraakiraawaa
+    brk=ri(MODE) + ku(INDF) + raak(PL) + kiraawaʔ(STEM) + a(SUB)
+  contingent_perfective_subordinate 2pl:
+    exp=raraktahkiraawaa
+    got=iraakiraawaa
+    brk=i(MODE) + raak(PL) + kiraawaʔ(STEM) + a(SUB)
+  contingent_perfective_subordinate 3pl:
+    exp=riiraktahkiraawaa
+    got=rikiraawaawaara
+    brk=ri(MODE) + kiraawaʔ(STEM) + a(SUB) + waara(3PL)
+  subjunctive_perfective_subordinate 3pl:
+    exp=iiraakiraawaa
+    got=iikiraawaawaara
+    brk=ii(MODE) + kiraawaʔ(STEM) + a(SUB) + waara(3PL)
+  infinitive_perfective_subordinate 3du:
+    exp=racakukuraaktahkiraawaa
+    got=sirahkukiraawaa
+    brk=si(DU) + ra(MODE) + h(3PM) + ku(INF.B) + kiraawaʔ(STEM) + a(SUB)
+  infinitive_perfective_subordinate 1pl_incl:
+    exp=rakukuraaktahkiraawaa
+    got=racakuraakukiraawaa
+    brk=ra(MODE) + aca(INCLUSIVE) + ku(INDF) + raak(PL) + ku(INF.B) + kiraawaʔ(STEM) + a(SUB)
+  infinitive_perfective_subordinate 1pl_excl:
+    exp=raakuraktahkiraawaa
+    got=rakuraakukiraawaa
+    brk=ra(MODE) + ku(INDF) + raak(PL) + ku(INF.B) + kiraawaʔ(STEM) + a(SUB)
+  infinitive_perfective_subordinate 2pl:
+    exp=rihkuraaktahkiraawaa
+    got=raraakukiraawaa
+    brk=ra(MODE) + raak(PL) + ku(INF.B) + kiraawaʔ(STEM) + a(SUB)
+  infinitive_perfective_subordinate 3pl:
+    exp=riihkuraktahkiraawaa
+    got=rakukiraawaawaara
+    brk=ra(MODE) + ku(INF.B) + kiraawaʔ(STEM) + a(SUB) + waara(3PL)
+
+--- to come (41 misses) ---
+  indicative_perfective 3pl:
+    exp=taaʔaahuʔ
+    got=taahuʔ
+    brk=ti(MODE) + a(PREV) + aʔ(STEM) + aahuʔ(3PL)
+  negative_indicative_perfective 1du_excl:
+    exp=síkaakaatíhwaʔaʔ
+    got=sikaakatihwaʔaʔ
+    brk=si(DU) + kaaka(MODE) + t(AGENT) + ih(PAT_COMPOUND) + waʔaʔ(STEM)
+  negative_indicative_perfective 2du:
+    exp=síkaakaasíhwaʔaʔ
+    got=sikaakasihwaʔaʔ
+    brk=si(DU) + kaaka(MODE) + s(AGENT) + ih(PAT_COMPOUND) + waʔaʔ(STEM)
+  negative_indicative_perfective 3pl:
+    exp=kaakaaʔaahuʔ
+    got=kaakaahuʔ
+    brk=kaaki(MODE) + a(PREV) + aʔ(STEM) + aahuʔ(3PL)
+  contingent_perfective 3pl:
+    exp=raaʔaahuʔ
+    got=raahuʔ
+    brk=ri(MODE) + a(PREV) + aʔ(STEM) + aahuʔ(3PL)
+  assertive_perfective 3du:
+    exp=síraaʔaʔ
+    got=siraawaʔaʔ
+    brk=si(DU) + rii(MODE) + a(PREV) + waʔaʔ(STEM)
+  assertive_perfective 3pl:
+    exp=raaʔaahuʔ
+    got=raahuʔ
+    brk=rii(MODE) + a(PREV) + aʔ(STEM) + aahuʔ(3PL)
+  absolutive_perfective 3du:
+    exp=sírawáaʔ
+    got=siraawaʔaʔ
+    brk=si(DU) + ra(MODE) + a(PREV) + waʔaʔ(STEM)
+  absolutive_perfective 3pl:
+    exp=raaʔaahuʔ
+    got=raahuʔ
+    brk=ra(MODE) + a(PREV) + aʔ(STEM) + aahuʔ(3PL)
+  potential_perfective 1sg:
+    exp=kuustíriiʔaʔ
+    got=kuustiiraʔ
+    brk=kuus(MODE) + t(AGENT) + i(POT.i) + iir(PREV) + aʔ(STEM)
+  potential_perfective 2sg:
+    exp=kaasíriiʔaʔ
+    got=kasiiraʔ
+    brk=kaas(MODE) + i(POT.i) + iir(PREV) + aʔ(STEM)
+  potential_perfective 3sg:
+    exp=kusaaʔaʔ
+    got=kusiiʔ
+    brk=kuus(MODE) + i(POT.i) + a(PREV) + aʔ(STEM)
+  potential_perfective 1du_incl:
+    exp=kaacíriíwaʔaʔ
+    got=kuusaciiwaʔaʔ
+    brk=kuus(MODE) + acir(INCLUSIVE) + i(POT.i) + waʔaʔ(STEM)
+  potential_perfective 1du_excl:
+    exp=sikuustíriiwaʔaʔ
+    got=sikuustiihwaʔaʔ
+    brk=si(DU) + kuus(MODE) + t(AGENT) + i(POT.i) + ih(PAT_COMPOUND) + waʔaʔ(STEM)
+  potential_perfective 2du:
+    exp=sikaasíriiwaʔaʔ
+    got=sikasiihwaʔaʔ
+    brk=si(DU) + kaas(MODE) + i(POT.i) + ih(PAT_COMPOUND) + waʔaʔ(STEM)
+  potential_perfective 3du:
+    exp=sikusaaʔaʔ
+    got=sikusiiwaʔaʔ
+    brk=si(DU) + kuus(MODE) + i(POT.i) + a(PREV) + waʔaʔ(STEM)
+  potential_perfective 1pl_incl:
+    exp=kuustaaraakaahuʔ
+    got=kuustaraakiihuʔ
+    brk=kuus(MODE) + t(AGENT) + a(INCLUSIVE) + raak(PL) + i(POT.i) + aahuʔ(PL_SUFFIX)
+  potential_perfective 1pl_excl:
+    exp=kuustíriiraakaahuʔ
+    got=kuustiraakiihuʔ
+    brk=kuus(MODE) + t(AGENT) + iraak(PL) + i(POT.i) + aahuʔ(PL_SUFFIX)
+  potential_perfective 2pl:
+    exp=kaasíriiraakaahuʔ
+    got=kasiraakiihuʔ
+    brk=kaas(MODE) + iraak(PL) + i(POT.i) + aahuʔ(PL_SUFFIX)
+  potential_perfective 3pl:
+    exp=kusaaʔaahuʔ
+    got=kusiihuʔ
+    brk=kuus(MODE) + i(POT.i) + a(PREV) + aʔ(STEM) + aahuʔ(3PL)
+  gerundial_perfective_subordinate 1sg:
+    exp=íriira
+    got=iriratiiraa
+    brk=irii(GER) + ra(MODE) + t(AGENT) + iir(PREV) + aʔ(STEM) + a(SUB)
+  gerundial_perfective_subordinate 2sg:
+    exp=íriisíira
+    got=irirasiiraa
+    brk=irii(GER) + ra(MODE) + s(AGENT) + iir(PREV) + aʔ(STEM) + a(SUB)
+  gerundial_perfective_subordinate 1du_incl:
+    exp=íriiracíhwaʔa
+    got=iriiracihwaʔaa
+    brk=irii(GER) + ra(MODE) + acir(INCLUSIVE) + waʔa(STEM) + a(SUB)
+  gerundial_perfective_subordinate 1du_excl:
+    exp=íriisiratíhwaʔa
+    got=siʔiriratihwaʔaa
+    brk=si(DU) + irii(GER) + ra(MODE) + t(AGENT) + ih(PAT_COMPOUND) + waʔa(STEM) + a(SUB)
+  gerundial_perfective_subordinate 2du:
+    exp=íriisirasíhwaʔa
+    got=siʔirirasihwaʔaa
+    brk=si(DU) + irii(GER) + ra(MODE) + s(AGENT) + ih(PAT_COMPOUND) + waʔa(STEM) + a(SUB)
+  gerundial_perfective_subordinate 3du:
+    exp=íriisirawaʔa
+    got=siʔiriiraawaʔaa
+    brk=si(DU) + irii(GER) + ra(MODE) + a(PREV) + waʔa(STEM) + a(SUB)
+  gerundial_perfective_subordinate 1pl_excl:
+    exp=íriiratíraakaahu
+    got=iriratiraakaahu
+    brk=irii(GER) + ra(MODE) + t(AGENT) + iraak(PL) + a(SUB) + aahu(PL_SUFFIX)
+  gerundial_perfective_subordinate 2pl:
+    exp=íriirasíraakaahu
+    got=irirasiraakaahu
+    brk=irii(GER) + ra(MODE) + s(AGENT) + iraak(PL) + a(SUB) + aahu(PL_SUFFIX)
+  gerundial_perfective_subordinate 3pl:
+    exp=íriiraʔaahu
+    got=iriiraahu
+    brk=irii(GER) + ra(MODE) + a(PREV) + aʔ(STEM) + a(SUB) + aahu(3PL)
+  contingent_perfective_subordinate 3pl:
+    exp=raaʔaahu
+    got=raahu
+    brk=ri(MODE) + a(PREV) + aʔ(STEM) + a(SUB) + aahu(3PL)
+  subjunctive_perfective_subordinate 1du_excl:
+    exp=siʔaatíhwaʔa
+    got=siʔatihwaʔaa
+    brk=si(DU) + aa(MODE) + t(AGENT) + ih(PAT_COMPOUND) + waʔa(STEM) + a(SUB)
+  subjunctive_perfective_subordinate 2du:
+    exp=siʔaasíhwaʔa
+    got=siʔasihwaʔaa
+    brk=si(DU) + aa(MODE) + s(AGENT) + ih(PAT_COMPOUND) + waʔa(STEM) + a(SUB)
+  subjunctive_perfective_subordinate 3pl:
+    exp=aaʔaahu
+    got=aahu
+    brk=ii(MODE) + a(PREV) + aʔ(STEM) + a(SUB) + aahu(3PL)
+  infinitive_perfective_subordinate 1sg:
+    exp=ratihkúʔa
+    got=ratkuuraa
+    brk=ra(MODE) + t(AGENT) + ku(INF.B) + iir(PREV) + aʔ(STEM) + a(SUB)
+  infinitive_perfective_subordinate 2sg:
+    exp=rasihkúʔa
+    got=raskuuraa
+    brk=ra(MODE) + s(AGENT) + ku(INF.B) + iir(PREV) + aʔ(STEM) + a(SUB)
+  infinitive_perfective_subordinate 3sg:
+    exp=raakúʔa
+    got=rakuu
+    brk=ra(MODE) + ku(INF.B) + a(PREV) + aʔ(STEM) + a(SUB)
+  infinitive_perfective_subordinate 3du:
+    exp=siraakúwaʔa
+    got=sirakuuwaʔaa
+    brk=si(DU) + ra(MODE) + ku(INF.B) + a(PREV) + waʔa(STEM) + a(SUB)
+  infinitive_perfective_subordinate 1pl_incl:
+    exp=rataakúraakahu
+    got=rataraakuuhu
+    brk=ra(MODE) + t(AGENT) + a(INCLUSIVE) + raak(PL) + ku(INF.B) + a(SUB) + aahu(PL_SUFFIX)
+  infinitive_perfective_subordinate 1pl_excl:
+    exp=ratihkúraakahu
+    got=ratiraakuuhu
+    brk=ra(MODE) + t(AGENT) + iraak(PL) + ku(INF.B) + a(SUB) + aahu(PL_SUFFIX)
+  infinitive_perfective_subordinate 2pl:
+    exp=rasihkúraakahu
+    got=rasiraakuuhu
+    brk=ra(MODE) + s(AGENT) + iraak(PL) + ku(INF.B) + a(SUB) + aahu(PL_SUFFIX)
+  infinitive_perfective_subordinate 3pl:
+    exp=raakúhu
+    got=rakuuhu
+    brk=ra(MODE) + ku(INF.B) + a(PREV) + aʔ(STEM) + a(SUB) + aahu(3PL)
+
+--- to do it (15 misses) ---
+  potential_perfective 1sg:
+    exp=kuustuciʔaa
+    got=kuustuutaa
+    brk=kuus(MODE) + t(AGENT) + i(POT.i) + uutaar(STEM)
+  potential_perfective 2sg:
+    exp=kaasucíʔaa
+    got=kasuutaa
+    brk=kaas(MODE) + i(POT.i) + uutaar(STEM)
+  potential_perfective 3sg:
+    exp=kuusucíʔaa
+    got=kusuutaa
+    brk=kuus(MODE) + i(POT.i) + uutaar(STEM)
+  potential_perfective 1du_incl:
+    exp=kaciicíʔaa
+    got=kusaciitaa
+    brk=kuus(MODE) + acir(INCLUSIVE) + i(POT.i) + iitaar(STEM)
+  potential_perfective 1du_excl:
+    exp=sikuustucíʔaa
+    got=sikuustuutaa
+    brk=si(DU) + kuus(MODE) + t(AGENT) + i(POT.i) + uutaar(STEM)
+  potential_perfective 2du:
+    exp=sikaasucíʔaa
+    got=sikasuutaa
+    brk=si(DU) + kaas(MODE) + i(POT.i) + uutaar(STEM)
+  potential_perfective 3du:
+    exp=sikuusucíʔaa
+    got=sikusuutaa
+    brk=si(DU) + kuus(MODE) + i(POT.i) + uutaar(STEM)
+  potential_perfective 1pl_incl:
+    exp=kuustuciraakaa
+    got=kuustuuhaakaa
+    brk=kuus(MODE) + t(AGENT) + a(INCLUSIVE) + i(POT.i) + uuhaakaar(STEM)
+  potential_perfective 1pl_excl:
+    exp=kuustuciraakaa
+    got=kuustuuhaakaa
+    brk=kuus(MODE) + t(AGENT) + i(POT.i) + uuhaakaar(STEM)
+  potential_perfective 2pl:
+    exp=kaasuciraakaa
+    got=kasuuhaakaa
+    brk=kaas(MODE) + i(POT.i) + uuhaakaar(STEM)
+  potential_perfective 3pl:
+    exp=kusiicíʔaa
+    got=kusiitaa
+    brk=kuus(MODE) + i(POT.i) + iitaar(STEM)
+  gerundial_perfective_subordinate 1du_excl:
+    exp=iririsiratuutaara
+    got=siʔiriratuutaara
+    brk=si(DU) + irii(GER) + ra(MODE) + t(AGENT) + uutaar(STEM) + a(SUB)
+  gerundial_perfective_subordinate 2du:
+    exp=iririsirasuutaara
+    got=siʔirirasuutaara
+    brk=si(DU) + irii(GER) + ra(MODE) + s(AGENT) + uutaar(STEM) + a(SUB)
+  gerundial_perfective_subordinate 3du:
+    exp=iririsiruutaara
+    got=siʔiriiruutaara
+    brk=si(DU) + irii(GER) + ra(MODE) + uutaar(STEM) + a(SUB)
+  subjunctive_perfective_subordinate 1du_incl:
+    exp=aaciiriitaara
+    got=aaciitaara
+    brk=aa(MODE) + acir(INCLUSIVE) + iitaar(STEM) + a(SUB)
+
+--- to drink it (20 misses) ---
+  indicative_perfective 3pl:
+    exp=tihkiikaʔ
+    got=tiraakiikaʔ
+    brk=ti(MODE) + raak(PL) + kiikaʔ(STEM)
+  negative_indicative_perfective 3pl:
+    exp=kaakihkiikaʔ
+    got=kaakiraakiikaʔ
+    brk=kaaki(MODE) + raak(PL) + kiikaʔ(STEM)
+  contingent_perfective 3pl:
+    exp=rihkikaʔ
+    got=riraakikaʔ
+    brk=ri(MODE) + raak(PL) + kikaʔ(STEM)
+  assertive_perfective 3pl:
+    exp=riihkiikaʔ
+    got=riiraakiikaʔ
+    brk=rii(MODE) + raak(PL) + kiikaʔ(STEM)
+  absolutive_perfective 3pl:
+    exp=rihkikaʔ
+    got=raraakiikaʔ
+    brk=ra(MODE) + raak(PL) + kiikaʔ(STEM)
+  potential_perfective 1du_incl:
+    exp=kaaciriikiikaʔ
+    got=kuusaciikiikaʔ
+    brk=kuus(MODE) + acir(INCLUSIVE) + i(POT.i) + kiikaʔ(STEM)
+  potential_perfective 1pl_incl:
+    exp=kuustaaraakiikaʔ
+    got=kuustaraakikiikaʔ
+    brk=kuus(MODE) + t(AGENT) + a(INCLUSIVE) + raak(PL) + i(POT.i) + kiikaʔ(STEM)
+  potential_perfective 1pl_excl:
+    exp=kuustiraakiikaʔ
+    got=kuusiikiikaʔ
+    brk=kuus(MODE) + ha(AGENT_PL) + i(POT.i) + kiikaʔ(STEM)
+  potential_perfective 2pl:
+    exp=kaasiraakiikaʔ
+    got=kaasctiikiikaʔ
+    brk=kaas(MODE) + sta(AGENT_PL) + i(POT.i) + kiikaʔ(STEM)
+  potential_perfective 3pl:
+    exp=kusiriikiikaʔ
+    got=kuustaakikiikaʔ
+    brk=kuus(MODE) + raak(PL) + i(POT.i) + kiikaʔ(STEM)
+  gerundial_perfective_subordinate 1du_excl:
+    exp=iriisiratkikaa
+    got=siʔiriiratkikaa
+    brk=si(DU) + irii(GER) + ra(MODE) + t(AGENT) + kikaʔ(STEM) + a(SUB)
+  gerundial_perfective_subordinate 2du:
+    exp=iriisiraskikaa
+    got=siʔiriiraskikaa
+    brk=si(DU) + irii(GER) + ra(MODE) + s(AGENT) + kikaʔ(STEM) + a(SUB)
+  gerundial_perfective_subordinate 3du:
+    exp=iriisirakikaa
+    got=siʔiriirakikaa
+    brk=si(DU) + irii(GER) + ra(MODE) + kikaʔ(STEM) + a(SUB)
+  gerundial_perfective_subordinate 3pl:
+    exp=iriirihkikaa
+    got=iriiraraakikaa
+    brk=irii(GER) + ra(MODE) + raak(PL) + kikaʔ(STEM) + a(SUB)
+  contingent_perfective_subordinate 3pl:
+    exp=rihkikaa
+    got=riraakikaa
+    brk=ri(MODE) + raak(PL) + kikaʔ(STEM) + a(SUB)
+  subjunctive_perfective_subordinate 3pl:
+    exp=ihkikaa
+    got=iiraakikaa
+    brk=ii(MODE) + raak(PL) + kikaʔ(STEM) + a(SUB)
+  infinitive_perfective_subordinate 1pl_incl:
+    exp=rataakuraakikaa
+    got=rataraakukikaa
+    brk=ra(MODE) + t(AGENT) + a(INCLUSIVE) + raak(PL) + ku(INF.B) + kikaʔ(STEM) + a(SUB)
+  infinitive_perfective_subordinate 1pl_excl:
+    exp=ratkuraakikaa
+    got=rahakukikaa
+    brk=ra(MODE) + ha(AGENT_PL) + ku(INF.B) + kikaʔ(STEM) + a(SUB)
+  infinitive_perfective_subordinate 2pl:
+    exp=raskuraakikaa
+    got=rastakukikaa
+    brk=ra(MODE) + sta(AGENT_PL) + ku(INF.B) + kikaʔ(STEM) + a(SUB)
+  infinitive_perfective_subordinate 3pl:
+    exp=rihkukikaa
+    got=raraakukikaa
+    brk=ra(MODE) + raak(PL) + ku(INF.B) + kikaʔ(STEM) + a(SUB)
+
+--- to go (37 misses) ---
+  indicative_perfective 1pl_incl:
+    exp=tataraapuuʔ
+    got=tataraakwuu
+    brk=ta(MODE) + t(AGENT) + a(INCLUSIVE) + raak(PL) + wuu(STEM)
+  indicative_perfective 1pl_excl:
+    exp=tahapuuʔ
+    got=tatiraakwuu
+    brk=ta(MODE) + t(AGENT) + iraak(PL) + wuu(STEM)
+  indicative_perfective 2pl:
+    exp=tastapuuʔ
+    got=tasiraakwuu
+    brk=ta(MODE) + s(AGENT) + iraak(PL) + wuu(STEM)
+  negative_indicative_perfective 1pl_incl:
+    exp=kaakaataraapuuʔ
+    got=kaakataraakwuu
+    brk=kaaka(MODE) + t(AGENT) + a(INCLUSIVE) + raak(PL) + wuu(STEM)
+  negative_indicative_perfective 1pl_excl:
+    exp=kaakaahapuuʔ
+    got=kaakatiraakwuu
+    brk=kaaka(MODE) + t(AGENT) + iraak(PL) + wuu(STEM)
+  negative_indicative_perfective 2pl:
+    exp=kaakaastapuuʔ
+    got=kaakasiraakwuu
+    brk=kaaka(MODE) + s(AGENT) + iraak(PL) + wuu(STEM)
+  contingent_perfective 1pl_incl:
+    exp=itaraapuuʔ
+    got=itaraakwuu
+    brk=i(MODE) + t(AGENT) + a(INCLUSIVE) + raak(PL) + wuu(STEM)
+  contingent_perfective 1pl_excl:
+    exp=ihapuuʔ
+    got=itiraakwuu
+    brk=i(MODE) + t(AGENT) + iraak(PL) + wuu(STEM)
+  contingent_perfective 2pl:
+    exp=istapuuʔ
+    got=isiraakwuu
+    brk=i(MODE) + s(AGENT) + iraak(PL) + wuu(STEM)
+  assertive_perfective 1pl_incl:
+    exp=riitaraapuuʔ
+    got=ritaraakwuu
+    brk=rii(MODE) + t(AGENT) + a(INCLUSIVE) + raak(PL) + wuu(STEM)
+  assertive_perfective 1pl_excl:
+    exp=riihapuuʔ
+    got=ritiraakwuu
+    brk=rii(MODE) + t(AGENT) + iraak(PL) + wuu(STEM)
+  assertive_perfective 2pl:
+    exp=riistapuuʔ
+    got=risiraakwuu
+    brk=rii(MODE) + s(AGENT) + iraak(PL) + wuu(STEM)
+  absolutive_perfective 1pl_incl:
+    exp=rataraapuuʔ
+    got=rataraakwuu
+    brk=ra(MODE) + t(AGENT) + a(INCLUSIVE) + raak(PL) + wuu(STEM)
+  absolutive_perfective 1pl_excl:
+    exp=rahapuuʔ
+    got=ratiraakwuu
+    brk=ra(MODE) + t(AGENT) + iraak(PL) + wuu(STEM)
+  absolutive_perfective 2pl:
+    exp=rastapuuʔ
+    got=rasiraakwuu
+    brk=ra(MODE) + s(AGENT) + iraak(PL) + wuu(STEM)
+  potential_perfective 1du_incl:
+    exp=kaaciriiwa
+    got=kuusaciiwa
+    brk=kuus(MODE) + acir(INCLUSIVE) + i(POT.i) + war(STEM)
+  potential_perfective 1du_excl:
+    exp=sikuustiwa
+    got=sikuusitpa
+    brk=si(DU) + kuus(MODE) + i(POT.i) + tpa(STEM)
+  potential_perfective 1pl_incl:
+    exp=kuustaaraapuuʔ
+    got=kuustaraakiwuu
+    brk=kuus(MODE) + t(AGENT) + a(INCLUSIVE) + raak(PL) + i(POT.i) + wuu(STEM)
+  potential_perfective 1pl_excl:
+    exp=kuustiraapuuʔ
+    got=kuustiraakiwuu
+    brk=kuus(MODE) + t(AGENT) + iraak(PL) + i(POT.i) + wuu(STEM)
+  potential_perfective 2pl:
+    exp=kaasiraapuuʔ
+    got=kaasiraakiwuu
+    brk=kaas(MODE) + iraak(PL) + i(POT.i) + wuu(STEM)
+  potential_perfective 3pl:
+    exp=kusiiwuuʔ
+    got=kuusiwuu
+    brk=kuus(MODE) + i(POT.i) + wuu(STEM)
+  gerundial_perfective_subordinate 1du_excl:
+    exp=iriisiratpara
+    got=siʔiriiratpaa
+    brk=si(DU) + irii(GER) + ra(MODE) + tpa(STEM) + a(SUB)
+  gerundial_perfective_subordinate 2du:
+    exp=iriisiraspara
+    got=siʔiriiraspaa
+    brk=si(DU) + irii(GER) + ra(MODE) + spa(STEM) + a(SUB)
+  gerundial_perfective_subordinate 3du:
+    exp=iriisirawara
+    got=siʔiriirawara
+    brk=si(DU) + irii(GER) + ra(MODE) + war(STEM) + a(SUB)
+  gerundial_perfective_subordinate 1pl_incl:
+    exp=iriirataraapuu
+    got=irirataraakwuu
+    brk=irii(GER) + ra(MODE) + t(AGENT) + a(INCLUSIVE) + raak(PL) + wuu(STEM) + a(SUB)
+  gerundial_perfective_subordinate 1pl_excl:
+    exp=iriirahapuu
+    got=iriratiraakwuu
+    brk=irii(GER) + ra(MODE) + t(AGENT) + iraak(PL) + wuu(STEM) + a(SUB)
+  gerundial_perfective_subordinate 2pl:
+    exp=iriirastapuu
+    got=irirasiraakwuu
+    brk=irii(GER) + ra(MODE) + s(AGENT) + iraak(PL) + wuu(STEM) + a(SUB)
+  contingent_perfective_subordinate 1pl_excl:
+    exp=ihapuu
+    got=itiraakwuu
+    brk=i(MODE) + t(AGENT) + iraak(PL) + wuu(STEM) + a(SUB)
+  contingent_perfective_subordinate 2pl:
+    exp=istapuu
+    got=isiraakwuu
+    brk=i(MODE) + s(AGENT) + iraak(PL) + wuu(STEM) + a(SUB)
+  subjunctive_perfective_subordinate 1pl_incl:
+    exp=aataraapuu
+    got=ataraakwuu
+    brk=aa(MODE) + t(AGENT) + a(INCLUSIVE) + raak(PL) + wuu(STEM) + a(SUB)
+  subjunctive_perfective_subordinate 1pl_excl:
+    exp=aahapuu
+    got=atiraakwuu
+    brk=aa(MODE) + t(AGENT) + iraak(PL) + wuu(STEM) + a(SUB)
+  subjunctive_perfective_subordinate 2pl:
+    exp=aastapuu
+    got=asiraakwuu
+    brk=aa(MODE) + s(AGENT) + iraak(PL) + wuu(STEM) + a(SUB)
+  infinitive_perfective_subordinate 1du_excl:
+    exp=siratkuwara
+    got=sirakutpaa
+    brk=si(DU) + ra(MODE) + ku(INF.B) + tpa(STEM) + a(SUB)
+  infinitive_perfective_subordinate 2du:
+    exp=siraskuara
+    got=sirakuspaa
+    brk=si(DU) + ra(MODE) + ku(INF.B) + spa(STEM) + a(SUB)
+  infinitive_perfective_subordinate 1pl_incl:
+    exp=rataakuraapuu
+    got=rataraakuwuu
+    brk=ra(MODE) + t(AGENT) + a(INCLUSIVE) + raak(PL) + ku(INF.B) + wuu(STEM) + a(SUB)
+  infinitive_perfective_subordinate 1pl_excl:
+    exp=ratkuraapuu
+    got=ratiraakuwuu
+    brk=ra(MODE) + t(AGENT) + iraak(PL) + ku(INF.B) + wuu(STEM) + a(SUB)
+  infinitive_perfective_subordinate 2pl:
+    exp=raskuraapuu
+    got=rasiraakuwuu
+    brk=ra(MODE) + s(AGENT) + iraak(PL) + ku(INF.B) + wuu(STEM) + a(SUB)
+
+--- to have it (10 misses) ---
+  potential_perfective 1du_incl:
+    exp=kaaciriiraa
+    got=kuusaciiraa
+    brk=kuus(MODE) + acir(INCLUSIVE) + i(POT.i) + raa(STEM)
+  potential_perfective 1pl_incl:
+    exp=sikaaciriiraa
+    got=sikuusaciiraa
+    brk=si(DU) + kuus(MODE) + acir(INCLUSIVE) + i(POT.i) + raa(STEM)
+  potential_perfective 3pl:
+    exp=kuusiriiraraa
+    got=sikuusiraa
+    brk=si(DU) + kuus(MODE) + i(POT.i) + raa(STEM)
+  gerundial_perfective_subordinate 1du_excl:
+    exp=iriisirahaaha
+    got=siʔiriirahaaha
+    brk=si(DU) + irii(GER) + ra(MODE) + t(AGENT) + raa(STEM) + aha(SUB)
+  gerundial_perfective_subordinate 2du:
+    exp=iriisirastaaha
+    got=siʔiriirastaaha
+    brk=si(DU) + irii(GER) + ra(MODE) + s(AGENT) + raa(STEM) + aha(SUB)
+  gerundial_perfective_subordinate 3du:
+    exp=iriisiraraha
+    got=siʔiriiraraaha
+    brk=si(DU) + irii(GER) + ra(MODE) + raa(STEM) + aha(SUB)
+  gerundial_perfective_subordinate 1pl_incl:
+    exp=iriisiraciraaha
+    got=siʔiriiraciraaha
+    brk=si(DU) + irii(GER) + ra(MODE) + acir(INCLUSIVE) + raa(STEM) + aha(SUB)
+  gerundial_perfective_subordinate 1pl_excl:
+    exp=iriisirahaaha
+    got=siʔiriirahaaha
+    brk=si(DU) + irii(GER) + ra(MODE) + t(AGENT) + raa(STEM) + aha(SUB)
+  gerundial_perfective_subordinate 2pl:
+    exp=iriisirastaaha
+    got=siʔiriirastaaha
+    brk=si(DU) + irii(GER) + ra(MODE) + s(AGENT) + raa(STEM) + aha(SUB)
+  gerundial_perfective_subordinate 3pl:
+    exp=iriiriraraaha
+    got=siʔiriiraraaha
+    brk=si(DU) + irii(GER) + ra(MODE) + raa(STEM) + aha(SUB)
+
+
+=== CLOSE MATCHES ===
+--- to be good (15 close) ---
+  indicative_perfective 1du_incl:
+    exp=taciihii
+    got=tacuuhii
+  negative_indicative_perfective 2sg:
+    exp=kaakasuuhíi
+    got=kaakasuuhii
+  negative_indicative_perfective 1du_incl:
+    exp=kaakaciihii
+    got=kaakacuuhii
+  negative_indicative_perfective 2du:
+    exp=sikaakasuuhíi
+    got=sikaakasuuhii
+  contingent_perfective 1du_incl:
+    exp=iciihii
+    got=icuuhii
+  assertive_perfective 3sg:
+    exp=ruhii
+    got=ruuhii
+  assertive_perfective 1du_excl:
+    exp=siriituuhii
+    got=sirituuhii
+  assertive_perfective 2du:
+    exp=siriisuuhii
+    got=sirisuuhii
+  absolutive_perfective 3sg:
+    exp=ruhii
+    got=ruuhii
+  absolutive_perfective 1du_incl:
+    exp=raciihii
+    got=racuuhii
+
+--- to be sick (34 close) ---
+  indicative_perfective 2du:
+    exp=sirakiraawaʔ
+    got=sitakiraawaʔ
+  indicative_perfective 3du:
+    exp=sirihkiraawaʔ
+    got=sitihkiraawaʔ
+  negative_indicative_perfective 2sg:
+    exp=kaakiraawaʔ
+    got=kaakakiraawaʔ
+  negative_indicative_perfective 1du_incl:
+    exp=kaakacukukiraawaʔ
+    got=kaakacakukiraawaʔ
+  negative_indicative_perfective 2du:
+    exp=sikaakiraawaʔ
+    got=sikaakakiraawaʔ
+  negative_indicative_perfective 1pl_incl:
+    exp=kaakaacukuraakiraawaʔ
+    got=kaakacakuraakiraawaʔ
+  contingent_perfective 2sg:
+    exp=rakiraawaʔ
+    got=ikiraawaʔ
+  contingent_perfective 1du_incl:
+    exp=racakukiraawaʔ
+    got=icakukiraawaʔ
+  contingent_perfective 2du:
+    exp=sirakiraawaʔ
+    got=siʔikiraawaʔ
+  assertive_perfective 1sg:
+    exp=riikuukiraawaʔ
+    got=riikukiraawaʔ
+
+--- to come (55 close) ---
+  indicative_perfective 1du_incl:
+    exp=tacíhwaʔaʔ
+    got=tacihwaʔaʔ
+  indicative_perfective 1du_excl:
+    exp=sitatíhwaʔaʔ
+    got=sitatihwaʔaʔ
+  indicative_perfective 2du:
+    exp=sitasíhwaʔaʔ
+    got=sitasihwaʔaʔ
+  indicative_perfective 1pl_excl:
+    exp=tatíraakaahuʔ
+    got=tatiraakaahuʔ
+  indicative_perfective 2pl:
+    exp=tasíraakaahuʔ
+    got=tasiraakaahuʔ
+  negative_indicative_perfective 1du_incl:
+    exp=kaakaacíhwaʔaʔ
+    got=kaakacihwaʔaʔ
+  negative_indicative_perfective 3du:
+    exp=síkaakaawaʔaʔ
+    got=sikaakawaʔaʔ
+  negative_indicative_perfective 1pl_incl:
+    exp=kaakaataraakaahuʔ
+    got=kaakataraakaahuʔ
+  negative_indicative_perfective 1pl_excl:
+    exp=kaakaatíraakaahuʔ
+    got=kaakatiraakaahuʔ
+  negative_indicative_perfective 2pl:
+    exp=kaakaasíraakaahuʔ
+    got=kaakasiraakaahuʔ
+
+--- to do it (17 close) ---
+  negative_indicative_perfective 2pl:
+    exp=kaakasuuhakaa
+    got=kaakasuuhaakaa
+  contingent_perfective 1pl_incl:
+    exp=ituhaakaa
+    got=ituuhaakaa
+  contingent_perfective 1pl_excl:
+    exp=ituhaakaa
+    got=ituuhaakaa
+  contingent_perfective 2pl:
+    exp=isuhaakaa
+    got=isuuhaakaa
+  assertive_perfective 1du_incl:
+    exp=riciitaa
+    got=riiciitaa
+  assertive_perfective 1du_excl:
+    exp=siriituutaa
+    got=sirituutaa
+  assertive_perfective 2du:
+    exp=siriisuutaa
+    got=sirisuutaa
+  gerundial_perfective_subordinate 3sg:
+    exp=iriruuutaara
+    got=iriiruutaara
+  gerundial_perfective_subordinate 1du_incl:
+    exp=iriraciitaara
+    got=iriiraciitaara
+  gerundial_perfective_subordinate 3pl:
+    exp=iririitaara
+    got=iriiriitaara
+
+--- to drink it (14 close) ---
+  negative_indicative_perfective 1sg:
+    exp=kaakaatkiikaʔ
+    got=kaakatkiikaʔ
+  negative_indicative_perfective 2sg:
+    exp=kaakaaskiikaʔ
+    got=kaakaskiikaʔ
+  negative_indicative_perfective 3sg:
+    exp=kaakiikiikaʔ
+    got=kaakikiikaʔ
+  negative_indicative_perfective 1du_incl:
+    exp=kaakaacihkiikaʔ
+    got=kaakacihkiikaʔ
+  negative_indicative_perfective 1du_excl:
+    exp=sikaakaatkiikaʔ
+    got=sikaakatkiikaʔ
+  negative_indicative_perfective 2du:
+    exp=sikaakaaskiikaʔ
+    got=sikaakaskiikaʔ
+  negative_indicative_perfective 3du:
+    exp=sikaakiikiikaʔ
+    got=sikaakikiikaʔ
+  negative_indicative_perfective 1pl_incl:
+    exp=kaakaataraakiikaʔ
+    got=kaakataraakiikaʔ
+  negative_indicative_perfective 1pl_excl:
+    exp=kaakaahakiikaʔ
+    got=kaakahakiikaʔ
+  negative_indicative_perfective 2pl:
+    exp=kaakaastakiikaʔ
+    got=kaakastakiikaʔ
+
+--- to go (30 close) ---
+  indicative_perfective 1sg:
+    exp=taatat
+    got=tatat
+  indicative_perfective 2sg:
+    exp=taasat
+    got=tasat
+  indicative_perfective 3pl:
+    exp=tiiwuuʔ
+    got=tiwuu
+  negative_indicative_perfective 1sg:
+    exp=kaakaatat
+    got=kaakatat
+  negative_indicative_perfective 2sg:
+    exp=kaakaasat
+    got=kaakasat
+  negative_indicative_perfective 3sg:
+    exp=kaakiiʔat
+    got=kaakiʔat
+  negative_indicative_perfective 1du_incl:
+    exp=kaakaacihwa
+    got=kaakacihwa
+  negative_indicative_perfective 3du:
+    exp=sikaakiiwa
+    got=sikaakiwa
+  negative_indicative_perfective 3pl:
+    exp=kaakiiwuuʔ
+    got=kaakiwuu
+  contingent_perfective 3pl:
+    exp=riwuuʔ
+    got=riwuu
+
+--- to have it (12 close) ---
+  assertive_perfective 1sg:
+    exp=rihaa
+    got=riihaa
+  assertive_perfective 2sg:
+    exp=ristaa
+    got=riistaa
+  assertive_perfective 3sg:
+    exp=riraa
+    got=riiraa
+  assertive_perfective 1du_excl:
+    exp=siriiháa
+    got=siriihaa
+  assertive_perfective 1pl_excl:
+    exp=siriiháa
+    got=siriihaa
+  absolutive_perfective 3pl:
+    exp=siriraa
+    got=siraraa
+  gerundial_perfective_subordinate 1sg:
+    exp=iriiraaha
+    got=iriirahaaha
+  gerundial_perfective_subordinate 2sg:
+    exp=iriiraastaaha
+    got=iriirastaaha
+  gerundial_perfective_subordinate 3sg:
+    exp=iriiraraha
+    got=iriiraraaha
+  contingent_perfective_subordinate 3du:
+    exp=siʔiraaha
+    got=siriraaha
+

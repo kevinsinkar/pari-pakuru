@@ -1,0 +1,4 @@
+15:43:02 [INFO] Validation: 770 forms tested
+15:43:02 [INFO]   Exact: 502 (65.2%)
+15:43:02 [INFO]   Close (d<=2): 178 (23.1%)
+15:43:02 [INFO]   Mismatch: 90 (11.7%)

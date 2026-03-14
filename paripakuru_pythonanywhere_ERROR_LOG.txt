@@ -1,0 +1,46 @@
+2026-03-14 13:48:55 Sat Mar 14 13:48:55 2026 - *** /var/www/paripakuru_pythonanywhere_com_wsgi.py has been touched... grace them all !!! ***
+2026-03-14 13:48:55 ...gracefully killing workers...
+2026-03-14 13:48:55 Gracefully killing worker 1 (pid: 2)...
+2026-03-14 13:48:55 Sat Mar 14 13:48:55 2026 - received message 0 from emperor
+2026-03-14 13:48:55 SIGINT/SIGTERM received...killing workers...
+2026-03-14 13:48:55 worker 1 buried after 0 seconds
+2026-03-14 13:48:55 goodbye to uWSGI.
+2026-03-14 13:48:55 VACUUM: unix socket /var/sockets/paripakuru.pythonanywhere.com/socket removed.
+2026-03-14 13:48:58 *** Starting uWSGI 2.0.28 (64bit) on [Sat Mar 14 13:48:58 2026] ***
+2026-03-14 13:48:58 compiled with version: 11.4.0 on 16 January 2025 20:41:13
+2026-03-14 13:48:58 os: Linux-6.8.0-1043-aws #45~22.04.1-Ubuntu SMP Wed Nov 12 16:16:28 UTC 2025
+2026-03-14 13:48:58 nodename: green-liveweb11
+2026-03-14 13:48:58 machine: x86_64
+2026-03-14 13:48:58 clock source: unix
+2026-03-14 13:48:58 pcre jit disabled
+2026-03-14 13:48:58 detected number of CPU cores: 4
+2026-03-14 13:48:58 current working directory: /home/paripakuru
+2026-03-14 13:48:58 detected binary path: /usr/local/bin/uwsgi
+2026-03-14 13:48:58 *** dumping internal routing table ***
+2026-03-14 13:48:58 [rule: 0] subject: path_info regexp: \.svgz$ action: addheader:Content-Encoding:gzip
+2026-03-14 13:48:58 *** end of the internal routing table ***
+2026-03-14 13:48:58 chdir() to /home/paripakuru/
+2026-03-14 13:48:58 your processes number limit is 256
+2026-03-14 13:48:58 your memory page size is 4096 bytes
+2026-03-14 13:48:58 detected max file descriptor number: 123456
+2026-03-14 13:48:58 building mime-types dictionary from file /etc/mime.types...
+2026-03-14 13:48:58 1516 entry found
+2026-03-14 13:48:58 lock engine: pthread robust mutexes
+2026-03-14 13:48:58 thunder lock: disabled (you can enable it with --thunder-lock)
+2026-03-14 13:48:58 uwsgi socket 0 bound to UNIX address /var/sockets/paripakuru.pythonanywhere.com/socket fd 3
+2026-03-14 13:48:58 Python version: 3.10.12 (main, Nov  6 2024, 20:22:13) [GCC 11.4.0]
+2026-03-14 13:48:58 Python main interpreter initialized at 0x5fe1557238c0
+2026-03-14 13:48:58 python threads support enabled
+2026-03-14 13:48:58 your server socket listen backlog is limited to 100 connections
+2026-03-14 13:48:58 your mercy for graceful operations on workers is 60 seconds
+2026-03-14 13:48:58 setting request body buffering size to 65536 bytes
+2026-03-14 13:48:58 mapped 334256 bytes (326 KB) for 1 cores
+2026-03-14 13:48:58 *** Operational MODE: single process ***
+2026-03-14 13:48:58 initialized 38 metrics
+2026-03-14 13:48:58 WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5fe1557238c0 pid: 1 (default app)
+2026-03-14 13:48:58 *** uWSGI is running in multiple interpreter mode ***
+2026-03-14 13:48:58 gracefully (RE)spawned uWSGI master process (pid: 1)
+2026-03-14 13:48:58 spawned uWSGI worker 1 (pid: 2, cores: 1)
+2026-03-14 13:48:58 metrics collector thread started
+2026-03-14 13:48:58 spawned 2 offload threads for uWSGI worker 1
+2026-03-14 13:49:00 announcing my loyalty to the Emperor...
