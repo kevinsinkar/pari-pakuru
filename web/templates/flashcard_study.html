@@ -18,26 +18,32 @@
     <div class="fc-card-wrapper{% if not loop.first %} fc-hidden{% endif %}" data-index="{{ loop.index0 }}">
         <div class="fc-card" onclick="this.classList.toggle('flipped')">
             <div class="fc-front">
-                <div class="fc-front-word">{{ card.headword }}</div>
-                {% if card.normalized_form and card.normalized_form != card.headword %}
-                <div class="fc-front-normalized">{{ card.normalized_form }}</div>
-                {% endif %}
+                <div class="fc-front-word">{{ card.normalized_form or card.headword }}</div>
                 {% if card.simplified_pronunciation %}
                 <div class="fc-front-pron">{{ card.simplified_pronunciation }}</div>
+                {% endif %}
+                {% if card.headword and card.headword != (card.normalized_form or card.headword) %}
+                <div class="fc-front-parks">{{ card.headword }}</div>
                 {% endif %}
                 {% if card.grammatical_class %}
                 <span class="badge badge-class">{{ card.grammatical_class }}</span>
                 {% endif %}
                 {% if card.blue_book_attested %}
-                <span class="badge badge-bb">Pari Pakuru</span>
+                <span class="badge badge-bb">P&acirc;ri Pak&ucirc;ru'</span>
                 {% endif %}
                 <div class="fc-hint">tap to reveal</div>
             </div>
             <div class="fc-back">
                 <div class="fc-back-definition">{{ card.definition }}</div>
-                <div class="fc-back-word ipa">{{ card.headword }}</div>
+                <div class="fc-back-word">{{ card.normalized_form or card.headword }}</div>
+                {% if card.simplified_pronunciation %}
+                <div class="fc-back-pron">{{ card.simplified_pronunciation }}</div>
+                {% endif %}
                 {% if card.phonetic_form %}
                 <div class="fc-back-ipa ipa">{{ card.phonetic_form }}</div>
+                {% endif %}
+                {% if card.headword and card.headword != (card.normalized_form or card.headword) %}
+                <div class="fc-back-parks">Parks: {{ card.headword }}</div>
                 {% endif %}
                 <a href="/entry/{{ card.entry_id }}" class="fc-back-link">View full entry</a>
             </div>

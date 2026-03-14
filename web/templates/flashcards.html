@@ -7,8 +7,61 @@
 <p>
     A 20-week study plan with {{ sets|map(attribute='card_count')|sum }} curated words
     across {{ by_category|length }} categories. Each week features 15-20 beginner-friendly
-    words, prioritizing terms from the Pari Pakuru textbook.
+    words, prioritizing terms from the P&acirc;ri Pak&ucirc;ru' textbook.
 </p>
+
+<!-- Example card guide -->
+<details class="fc-guide" open>
+    <summary><strong>How to read a flashcard</strong></summary>
+    <div class="fc-guide-cards">
+        <div class="fc-guide-side">
+            <h4>Front (study side)</h4>
+            <div class="fc-example-card fc-example-front">
+                <div class="fc-example-row">
+                    <span class="fc-example-value fc-front-word">akahwi'&ucirc;sis</span>
+                    <span class="fc-example-label">Respelled form — learner-friendly spelling with accent marks</span>
+                </div>
+                <div class="fc-example-row">
+                    <span class="fc-example-value fc-front-pron">UH-kuhh-wih-'oo-sihs</span>
+                    <span class="fc-example-label">Pronunciation guide — read it out loud as written</span>
+                </div>
+                <div class="fc-example-row">
+                    <span class="fc-example-value fc-front-parks">akahwiʔuusis</span>
+                    <span class="fc-example-label">Parks Dictionary spelling — the linguistic transcription</span>
+                </div>
+                <div class="fc-example-row">
+                    <span class="fc-example-value"><span class="badge badge-class">N</span> <span class="badge badge-bb">P&acirc;ri Pak&ucirc;ru'</span></span>
+                    <span class="fc-example-label">Badges — grammatical class (N = noun) and textbook attestation</span>
+                </div>
+            </div>
+        </div>
+        <div class="fc-guide-side">
+            <h4>Back (answer side)</h4>
+            <div class="fc-example-card fc-example-back">
+                <div class="fc-example-row">
+                    <span class="fc-example-value fc-back-definition">boy</span>
+                    <span class="fc-example-label fc-example-label-back">English definition</span>
+                </div>
+                <div class="fc-example-row">
+                    <span class="fc-example-value fc-back-word">akahwi'&ucirc;sis</span>
+                    <span class="fc-example-label fc-example-label-back">Respelled form (same as front)</span>
+                </div>
+                <div class="fc-example-row">
+                    <span class="fc-example-value fc-back-pron">UH-kuhh-wih-'oo-sihs</span>
+                    <span class="fc-example-label fc-example-label-back">Pronunciation guide</span>
+                </div>
+                <div class="fc-example-row">
+                    <span class="fc-example-value fc-back-ipa">[a.kah.wiʔ.uu.sis]</span>
+                    <span class="fc-example-label fc-example-label-back">IPA phonetic transcription (from Parks)</span>
+                </div>
+                <div class="fc-example-row">
+                    <span class="fc-example-value fc-back-parks">Parks: akahwiʔuusis</span>
+                    <span class="fc-example-label fc-example-label-back">Original Parks Dictionary spelling</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</details>
 
 <div class="flashcard-overview">
     {% for cat, cat_sets in by_category.items() %}
@@ -21,7 +74,7 @@
                 <span class="fc-week-count">{{ s.card_count }} words</span>
                 {% set bb_count = s.cards|selectattr('blue_book_attested')|list|length %}
                 {% if bb_count %}
-                <span class="badge badge-bb" style="font-size: 0.7em;">{{ bb_count }} Pari Pakuru</span>
+                <span class="badge badge-bb" style="font-size: 0.7em;">{{ bb_count }} P&acirc;ri Pak&ucirc;ru'</span>
                 {% endif %}
             </a>
             {% endfor %}

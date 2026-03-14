@@ -261,6 +261,11 @@ def flashcard_study(week):
     )
 
 
+@app.route("/guide")
+def syllable_guide():
+    return render_template("guide.html")
+
+
 @app.route("/about")
 def about():
     return render_template("about.html")
