@@ -767,7 +767,7 @@ These principles guide all user-facing features:
 
 **They are NOT the same model by default.** Understanding the difference matters for this project:
 
-| | claude.ai (this chat) | Claude Code (VS Code extension / CLI) |
+| | claude.ai | Claude Code (VS Code extension / CLI) |
 |---|---|---|
 | **Default model** | Opus 4.6 (on Pro/Max) | **Sonnet 4.6** (on Pro plan, $20/mo) |
 | **Best for** | Long-form design discussion, architecture planning, document review, linguistic analysis | File editing, script writing, running commands, multi-file code changes |

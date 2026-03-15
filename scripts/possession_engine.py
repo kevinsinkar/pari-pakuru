@@ -1178,32 +1178,37 @@ def generate_possessive(
 
     if possession_type:
         system = possession_type
-    elif noun_class == "N-KIN":
-        system = "kinship"
-    elif noun_class == "N-DEP":
-        # Check if any variant stem is a body part, locative, or other
-        matched_stem = None
-        system = "agent"  # default fallthrough
-        for sv in stem_variants:
-            if sv in BODY_PART_POSITION:
-                system = "body_part"
-                matched_stem = sv
-                break
-            if sv in LOCATIVE_NOUNS:
-                system = "locative"
-                matched_stem = sv
-                break
-        if matched_stem:
-            stem = matched_stem
     else:
-        system = "agent"      # default for N and unknown
+        # Always try kinship first — many kinship terms are classified as plain "N"
+        # in the DB, not "N-KIN". The kinship cache is the authority.
+        kin_result = generate_kinship_possessive(headword, person)
+        if kin_result is not None:
+            return kin_result
 
-    # Dispatch
+        # Then route by class
+        if noun_class == "N-DEP":
+            # Check if any variant stem is a body part, locative, or other
+            matched_stem = None
+            system = "agent"  # default fallthrough
+            for sv in stem_variants:
+                if sv in BODY_PART_POSITION:
+                    system = "body_part"
+                    matched_stem = sv
+                    break
+                if sv in LOCATIVE_NOUNS:
+                    system = "locative"
+                    matched_stem = sv
+                    break
+            if matched_stem:
+                stem = matched_stem
+        else:
+            system = "agent"      # default for N and unknown
+
+    # Dispatch (kinship already handled above)
     if system == "kinship":
         result = generate_kinship_possessive(headword, person)
         if result is not None:
             return result
-        # Fall through to agent possession if not found in kinship table
         system = "agent"
 
     if system == "locative":

@@ -107,19 +107,23 @@ def search_page():
     lang = request.args.get("lang", "auto")
     gram_class = request.args.get("class", None)
     tag = request.args.get("tag", None)
+    verb_class = request.args.get("verb_class", None)
     page = request.args.get("page", 1, type=int)
     per_page = 20
 
     if not query:
         return render_template("results.html", query="", results=[], total=0,
                                page=1, total_pages=0, lang=lang,
+                               detected_lang="auto",
                                gram_class=gram_class, tag=tag,
+                               verb_class=verb_class,
                                all_tags=db.get_all_tags(),
-                               all_classes=db.get_all_classes())
+                               all_classes=db.get_all_classes(),
+                               all_verb_classes=db.get_all_verb_classes())
 
-    results, total = search_combined(
+    results, total, detected_lang = search_combined(
         db, query, lang=lang, gram_class=gram_class, tag=tag,
-        page=page, per_page=per_page,
+        verb_class=verb_class, page=page, per_page=per_page,
     )
     total_pages = math.ceil(total / per_page) if total else 0
 
@@ -131,10 +135,13 @@ def search_page():
         page=page,
         total_pages=total_pages,
         lang=lang,
+        detected_lang=detected_lang,
         gram_class=gram_class,
         tag=tag,
+        verb_class=verb_class,
         all_tags=db.get_all_tags(),
         all_classes=db.get_all_classes(),
+        all_verb_classes=db.get_all_verb_classes(),
     )
 
 
@@ -146,6 +153,7 @@ def search_partial():
     lang = request.args.get("lang", "auto")
     gram_class = request.args.get("class", None)
     tag = request.args.get("tag", None)
+    verb_class = request.args.get("verb_class", None)
     page = request.args.get("page", 1, type=int)
 
     # Support direction param from the index page toggle
@@ -158,9 +166,9 @@ def search_partial():
     if not query:
         return ""
 
-    results, total = search_combined(
+    results, total, detected_lang = search_combined(
         db, query, lang=lang, gram_class=gram_class, tag=tag,
-        page=page, per_page=20,
+        verb_class=verb_class, page=page, per_page=20,
     )
     total_pages = math.ceil(total / 20) if total else 0
 
@@ -172,9 +180,58 @@ def search_partial():
         page=page,
         total_pages=total_pages,
         lang=lang,
+        detected_lang=detected_lang,
         gram_class=gram_class,
         tag=tag,
+        verb_class=verb_class,
     )
+
+
+@app.route("/api/search")
+def api_search():
+    """JSON API endpoint for search. Powers future AJAX and external consumers."""
+    db = get_db()
+    query = request.args.get("q", "").strip()
+    lang = request.args.get("lang", "auto")
+    gram_class = request.args.get("class", None)
+    tag = request.args.get("tag", None)
+    verb_class = request.args.get("verb_class", None)
+    limit = request.args.get("limit", 25, type=int)
+    limit = min(limit, 100)  # cap at 100
+    page = request.args.get("page", 1, type=int)
+
+    if not query:
+        return jsonify({"query": "", "results": [], "total": 0,
+                        "detected_lang": "auto"})
+
+    results, total, detected_lang = search_combined(
+        db, query, lang=lang, gram_class=gram_class, tag=tag,
+        verb_class=verb_class, page=page, per_page=limit,
+    )
+
+    return jsonify({
+        "query": query,
+        "detected_lang": detected_lang,
+        "total": total,
+        "page": page,
+        "per_page": limit,
+        "results": [
+            {
+                "entry_id": r.entry_id,
+                "headword": r.headword,
+                "normalized_form": r.normalized_form,
+                "simplified_pronunciation": r.simplified_pronunciation,
+                "grammatical_class": r.grammatical_class,
+                "verb_class": r.verb_class,
+                "first_gloss": r.first_gloss,
+                "blue_book_attested": r.blue_book_attested,
+                "tags": r.tags,
+                "example_snippet": r.example_snippet,
+                "url": f"/entry/{r.entry_id}",
+            }
+            for r in results
+        ],
+    })
 
 
 @app.route("/entry/<path:entry_id>")

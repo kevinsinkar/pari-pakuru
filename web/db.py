@@ -41,6 +41,7 @@ class EntrySummary:
     first_gloss: Optional[str] = None
     blue_book_attested: bool = False
     tags: List[str] = field(default_factory=list)
+    example_snippet: Optional[str] = None
 
 
 @dataclass
@@ -139,6 +140,15 @@ class SkiriWebDictionary(SkiriDictionary):
             "GROUP BY grammatical_class ORDER BY c DESC"
         )
         return [(r["grammatical_class"], r["c"]) for r in cur.fetchall()]
+
+    def get_all_verb_classes(self) -> List[Tuple[str, int]]:
+        cur = self.conn.cursor()
+        cur.execute(
+            "SELECT verb_class, COUNT(*) as c FROM lexical_entries "
+            "WHERE verb_class IS NOT NULL AND verb_class != '' "
+            "GROUP BY verb_class ORDER BY c DESC"
+        )
+        return [(r["verb_class"], r["c"]) for r in cur.fetchall()]
 
     # ------------------------------------------------------------------
     # Blue Book attestation

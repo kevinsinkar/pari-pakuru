@@ -12,6 +12,7 @@
     lang        -- str
     gram_class  -- str|None
     tag         -- str|None
+    verb_class  -- str|None
 #}
 
 {% if results %}
@@ -30,19 +31,19 @@
   {% if total_pages > 1 %}
   <nav class="pagination">
     {% if page > 1 %}
-    <a href="/search?q={{ query }}&lang={{ lang }}&page={{ page - 1 }}{% if gram_class %}&class={{ gram_class }}{% endif %}{% if tag %}&tag={{ tag }}{% endif %}">&laquo; Prev</a>
+    <a href="/search?q={{ query }}&lang={{ lang }}&page={{ page - 1 }}{% if gram_class %}&class={{ gram_class }}{% endif %}{% if tag %}&tag={{ tag }}{% endif %}{% if verb_class %}&verb_class={{ verb_class }}{% endif %}">&laquo; Prev</a>
     {% endif %}
     {% for p in range(1, total_pages + 1) %}
       {% if p == page %}
       <span class="current">{{ p }}</span>
       {% elif p <= 3 or p > total_pages - 2 or (p >= page - 1 and p <= page + 1) %}
-      <a href="/search?q={{ query }}&lang={{ lang }}&page={{ p }}{% if gram_class %}&class={{ gram_class }}{% endif %}{% if tag %}&tag={{ tag }}{% endif %}">{{ p }}</a>
+      <a href="/search?q={{ query }}&lang={{ lang }}&page={{ p }}{% if gram_class %}&class={{ gram_class }}{% endif %}{% if tag %}&tag={{ tag }}{% endif %}{% if verb_class %}&verb_class={{ verb_class }}{% endif %}">{{ p }}</a>
       {% elif p == 4 or p == total_pages - 2 %}
       <span>...</span>
       {% endif %}
     {% endfor %}
     {% if page < total_pages %}
-    <a href="/search?q={{ query }}&lang={{ lang }}&page={{ page + 1 }}{% if gram_class %}&class={{ gram_class }}{% endif %}{% if tag %}&tag={{ tag }}{% endif %}">Next &raquo;</a>
+    <a href="/search?q={{ query }}&lang={{ lang }}&page={{ page + 1 }}{% if gram_class %}&class={{ gram_class }}{% endif %}{% if tag %}&tag={{ tag }}{% endif %}{% if verb_class %}&verb_class={{ verb_class }}{% endif %}">Next &raquo;</a>
     {% endif %}
   </nav>
   {% endif %}
@@ -52,8 +53,14 @@
     <p style="font-size:1.1rem; color:var(--earth-700); margin-bottom:0.5rem;">
       No results for "{{ query }}"
     </p>
-    <p style="font-size:0.875rem;">
-      Try a different spelling, or <a href="/browse">browse by category</a>.
+    <p style="font-size:0.875rem; margin-bottom:1rem;">
+      Try removing filters, checking spelling, or searching in the other language.
     </p>
+    <div style="display:flex; gap:0.5rem; flex-wrap:wrap; justify-content:center;">
+      <a href="/search?q=bear" class="cat-tag" style="font-size:0.8rem; padding:0.2rem 0.6rem;">bear</a>
+      <a href="/search?q=kuruks" class="cat-tag" style="font-size:0.8rem; padding:0.2rem 0.6rem;">kuruks</a>
+      <a href="/search?q=red" class="cat-tag" style="font-size:0.8rem; padding:0.2rem 0.6rem;">red</a>
+      <a href="/search?q=mother" class="cat-tag" style="font-size:0.8rem; padding:0.2rem 0.6rem;">mother</a>
+    </div>
   </article>
 {% endif %}

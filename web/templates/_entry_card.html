@@ -53,6 +53,12 @@
   <div class="entry-card-body">
     <p class="gloss">{{ entry.first_gloss }}</p>
 
+    {% if entry.example_snippet %}
+    <p style="margin-top:0.35rem; font-size:0.8rem; color:var(--earth-500); font-style:italic;">
+      Example: "{{ entry.example_snippet[:120] }}{% if entry.example_snippet|length > 120 %}...{% endif %}"
+    </p>
+    {% endif %}
+
     {% if entry.tags %}
     <div style="margin-top:0.5rem; display:flex; flex-wrap:wrap; gap:0.25rem;">
       {% for tag in entry.tags[:5] %}
