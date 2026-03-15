@@ -7,11 +7,13 @@ Usage:
 """
 
 import argparse
+import hashlib
 import math
 import os
 import sys
+from datetime import date
 
-from flask import Flask, g, render_template, request, abort
+from flask import Flask, g, jsonify, render_template, request, abort
 
 # Ensure project root is on path
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -76,8 +78,26 @@ def inject_helpers():
 def index():
     db = get_db()
     stats = db.get_stats()
-    word_of_day = db.get_random_entry()
-    return render_template("index.html", stats=stats, word_of_day=word_of_day)
+    word_of_day = db.get_word_of_day()
+    tags = db.get_all_tags()
+    wotd_date = date.today().strftime("%b %d")
+
+    # Quick-access hint chips for the search bar
+    quick_words = [
+        {"skiri": "raawi", "en": "sun"},
+        {"skiri": "aatius", "en": "father"},
+        {"skiri": "piita", "en": "man"},
+        {"skiri": "capaat", "en": "woman"},
+    ]
+
+    return render_template(
+        "index.html",
+        stats=stats,
+        word_of_day=word_of_day,
+        wotd_date=wotd_date,
+        tags=tags,
+        quick_words=quick_words,
+    )
 
 
 @app.route("/search")
@@ -127,6 +147,13 @@ def search_partial():
     gram_class = request.args.get("class", None)
     tag = request.args.get("tag", None)
     page = request.args.get("page", 1, type=int)
+
+    # Support direction param from the index page toggle
+    direction = request.args.get("direction", "")
+    if direction == "skiri-en":
+        lang = "skiri"
+    elif direction == "en-skiri":
+        lang = "english"
 
     if not query:
         return ""
@@ -264,6 +291,174 @@ def flashcard_study(week):
 @app.route("/guide")
 def syllable_guide():
     return render_template("guide.html")
+
+
+@app.route("/api/possession/<path:headword>")
+def possession_api(headword):
+    """Return possessive paradigm data for a noun."""
+    db = get_db()
+    cur = db.conn.cursor()
+    cur.execute(
+        "SELECT grammatical_class FROM lexical_entries WHERE headword = ?",
+        (headword,),
+    )
+    row = cur.fetchone()
+    if not row:
+        return jsonify({"error": "entry not found"}), 404
+
+    noun_class = row["grammatical_class"] if row else None
+
+    # Only generate for noun classes
+    noun_classes = {"N", "N-DEP", "N-KIN", "NUM"}
+    if not noun_class or noun_class not in noun_classes:
+        return jsonify({"error": "not a noun"}), 200
+
+    # Import possession engine (lives in scripts/)
+    from scripts.possession_engine import generate_paradigm_table
+    table = generate_paradigm_table(headword, noun_class=noun_class)
+    return jsonify(table)
+
+
+@app.route("/dashboard")
+def dashboard():
+    db = get_db()
+    cur = db.conn.cursor()
+    data = {}
+
+    # --- Corpus Overview (hero stats) ---
+    hero = {}
+    for key, sql in [
+        ("s2e", "SELECT COUNT(*) FROM lexical_entries"),
+        ("e2s", "SELECT COUNT(*) FROM english_index"),
+        ("glosses", "SELECT COUNT(*) FROM glosses"),
+        ("examples", "SELECT COUNT(*) FROM examples"),
+        ("sem_tags", "SELECT COUNT(*) FROM semantic_tags"),
+        ("bb_entries", "SELECT COUNT(DISTINCT entry_id) FROM blue_book_attestations"),
+    ]:
+        try:
+            hero[key] = cur.execute(sql).fetchone()[0]
+        except Exception:
+            hero[key] = 0
+    data["hero"] = hero
+
+    # --- Grammatical Class Distribution ---
+    try:
+        cur.execute(
+            "SELECT grammatical_class, COUNT(*) as ct "
+            "FROM lexical_entries GROUP BY grammatical_class ORDER BY ct DESC"
+        )
+        data["gram_classes"] = [(r[0] or "(none)", r[1]) for r in cur.fetchall()]
+    except Exception:
+        data["gram_classes"] = []
+
+    # --- Field Completeness ---
+    try:
+        cur.execute("""
+            SELECT
+              COUNT(*) as total,
+              SUM(CASE WHEN phonetic_form IS NOT NULL AND phonetic_form != '' THEN 1 ELSE 0 END),
+              SUM(CASE WHEN simplified_pronunciation IS NOT NULL AND simplified_pronunciation != '' THEN 1 ELSE 0 END),
+              SUM(CASE WHEN normalized_form IS NOT NULL AND normalized_form != '' THEN 1 ELSE 0 END),
+              SUM(CASE WHEN compound_structure IS NOT NULL AND compound_structure != '' AND compound_structure != 'null' THEN 1 ELSE 0 END)
+            FROM lexical_entries
+        """)
+        row = cur.fetchone()
+        total = row[0] or 1
+        data["completeness"] = {
+            "total": total,
+            "phonetic_form": row[1] or 0,
+            "simplified_pronunciation": row[2] or 0,
+            "normalized_form": row[3] or 0,
+            "compound_structure": row[4] or 0,
+        }
+        # Also count entries with at least one gloss
+        has_glosses = cur.execute(
+            "SELECT COUNT(DISTINCT entry_id) FROM glosses"
+        ).fetchone()[0]
+        data["completeness"]["has_glosses"] = has_glosses
+        # BB attested count
+        bb_attested = cur.execute(
+            "SELECT COUNT(*) FROM lexical_entries WHERE blue_book_attested = 1"
+        ).fetchone()[0]
+        data["completeness"]["bb_attested"] = bb_attested
+    except Exception:
+        data["completeness"] = {"total": 1}
+
+    # --- Paradigmatic Form Coverage ---
+    try:
+        cur.execute(
+            "SELECT form_number, COUNT(DISTINCT entry_id) as ct "
+            "FROM paradigmatic_forms "
+            "WHERE skiri_form IS NOT NULL AND skiri_form != '' "
+            "GROUP BY form_number"
+        )
+        data["form_coverage"] = {r[0]: r[1] for r in cur.fetchall()}
+    except Exception:
+        data["form_coverage"] = {}
+
+    # --- Semantic Tag Distribution (top 15) ---
+    try:
+        cur.execute(
+            "SELECT tag, COUNT(*) as ct FROM semantic_tags "
+            "GROUP BY tag ORDER BY ct DESC LIMIT 15"
+        )
+        data["top_tags"] = [(r[0], r[1]) for r in cur.fetchall()]
+    except Exception:
+        data["top_tags"] = []
+
+    # --- Verb Engine Coverage ---
+    verb = {}
+    for key, sql in [
+        ("paradigm_forms", "SELECT COUNT(*) FROM verb_paradigms"),
+        ("distinct_verbs", "SELECT COUNT(DISTINCT stem) FROM verb_paradigms"),
+        ("sound_rules", "SELECT COUNT(*) FROM sound_change_rules"),
+        ("morphemes", "SELECT COUNT(*) FROM morpheme_inventory"),
+    ]:
+        try:
+            verb[key] = cur.execute(sql).fetchone()[0]
+        except Exception:
+            verb[key] = None
+    data["verb"] = verb
+
+    # --- Possession Engine Coverage ---
+    poss = {}
+    for key, sql in [
+        ("body_part", "SELECT COUNT(*) FROM noun_stems WHERE possession_type = 'body_part'"),
+        ("locative", "SELECT COUNT(*) FROM noun_stems WHERE possession_type = 'locative'"),
+        ("kinship", "SELECT COUNT(*) FROM kinship_paradigms"),
+    ]:
+        try:
+            poss[key] = cur.execute(sql).fetchone()[0]
+        except Exception:
+            poss[key] = None
+    # BB test accuracy
+    try:
+        cur.execute(
+            "SELECT COUNT(*) as total, "
+            "SUM(CASE WHEN match_status = 'exact' THEN 1 ELSE 0 END) as exact "
+            "FROM possession_examples"
+        )
+        row = cur.fetchone()
+        poss["bb_total"] = row[0] or 0
+        poss["bb_exact"] = row[1] or 0
+    except Exception:
+        poss["bb_total"] = None
+        poss["bb_exact"] = None
+    data["poss"] = poss
+
+    # --- E2S Linking Health ---
+    try:
+        linked = cur.execute(
+            "SELECT COUNT(*) FROM english_index WHERE entry_id IS NOT NULL AND entry_id != ''"
+        ).fetchone()[0]
+        unlinked = cur.execute(
+            "SELECT COUNT(*) FROM english_index WHERE entry_id IS NULL OR entry_id = ''"
+        ).fetchone()[0]
+        data["linking"] = {"linked": linked, "unlinked": unlinked, "total": linked + unlinked}
+    except Exception:
+        data["linking"] = {"linked": 0, "unlinked": 0, "total": 0}
+
+    return render_template("dashboard.html", **data)
 
 
 @app.route("/about")

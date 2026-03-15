@@ -131,6 +131,11 @@
     </section>
     {% endif %}
 
+    {# ---- Possession Paradigm (nouns only) ---- #}
+    {% if entry.grammatical_class in ('N', 'N-DEP', 'N-KIN', 'NUM') %}
+    {% include "_possession_widget.html" %}
+    {% endif %}
+
     {# ---- Examples ---- #}
     {% if entry.examples %}
     <section class="entry-section">

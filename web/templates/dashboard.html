@@ -1,0 +1,186 @@
+{% extends "base.html" %}
+{% set active_page = 'dashboard' %}
+
+{% block title %}Data Quality Dashboard{% endblock %}
+
+{% block header_search %}{% endblock %}
+
+{% block content %}
+<section style="padding-bottom:0.5rem;">
+  <h1 class="font-serif" style="text-align:center; margin-bottom:0.1em;">Data Quality Dashboard</h1>
+  <p style="text-align:center; color:var(--earth-500); margin-bottom:2rem;">
+    Live metrics from <code>skiri_pawnee.db</code>
+  </p>
+
+  {# ====== Hero Stats ====== #}
+  <div class="dash-hero-row">
+    {% set hero_items = [
+      (hero.s2e, "S2E Entries", "clay"),
+      (hero.e2s, "E2S Index Entries", "sky"),
+      (hero.glosses, "Glosses", "earth"),
+      (hero.examples, "Examples", "sage"),
+      (hero.sem_tags, "Semantic Tags", "gold"),
+      (hero.bb_entries, "BB Attested", "sage"),
+    ] %}
+    {% for val, label, color in hero_items %}
+    <div class="dash-hero-card dash-hero--{{ color }}">
+      <span class="dash-hero-number">{{ "{:,}".format(val) }}</span>
+      <span class="dash-hero-label">{{ label }}</span>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+{# ====== Field Completeness ====== #}
+<section class="dash-section">
+  <h2 class="dash-section-title">Field Completeness</h2>
+  {% set comp = completeness %}
+  {% set total = comp.total %}
+  {% set fields = [
+    ("Phonetic Form", comp.get("phonetic_form", 0)),
+    ("Simplified Pronunciation", comp.get("simplified_pronunciation", 0)),
+    ("Normalized Form", comp.get("normalized_form", 0)),
+    ("Has Glosses", comp.get("has_glosses", 0)),
+    ("BB Attested", comp.get("bb_attested", 0)),
+    ("Compound Structure", comp.get("compound_structure", 0)),
+  ] %}
+  {% for label, count in fields %}
+    {% set pct = (count / total * 100) if total else 0 %}
+    {% if pct >= 95 %}{% set bar_color = "var(--sage-400)" %}
+    {% elif pct >= 70 %}{% set bar_color = "var(--gold-400)" %}
+    {% else %}{% set bar_color = "var(--clay-400)" %}
+    {% endif %}
+    <div class="dash-bar-row">
+      <span class="dash-bar-label">{{ label }}</span>
+      <div class="dash-bar-track">
+        <div class="dash-bar-fill" style="width:{{ pct | round(1) }}%; background:{{ bar_color }};"></div>
+      </div>
+      <span class="dash-bar-pct">{{ "{:,}".format(count) }} / {{ "{:,}".format(total) }} ({{ pct | round(1) }}%)</span>
+    </div>
+  {% endfor %}
+</section>
+
+{# ====== Two-Column: Gram Classes + Semantic Tags ====== #}
+<div class="dash-two-col">
+  <section class="dash-section">
+    <h2 class="dash-section-title">Grammatical Classes</h2>
+    <table class="dash-compact-table">
+      <thead><tr><th>Class</th><th style="text-align:right;">Count</th><th style="text-align:right;">%</th></tr></thead>
+      <tbody>
+        {% for cls, ct in gram_classes[:15] %}
+        <tr>
+          <td><a href="/browse/class/{{ cls }}">{{ cls }}</a></td>
+          <td style="text-align:right;">{{ "{:,}".format(ct) }}</td>
+          <td style="text-align:right;">{{ (ct / hero.s2e * 100) | round(1) if hero.s2e else 0 }}%</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+
+  <section class="dash-section">
+    <h2 class="dash-section-title">Top Semantic Tags</h2>
+    <table class="dash-compact-table">
+      <thead><tr><th>Tag</th><th style="text-align:right;">Count</th></tr></thead>
+      <tbody>
+        {% for tag, ct in top_tags %}
+        <tr>
+          <td><a href="/browse/tag/{{ tag }}">{{ tag }}</a></td>
+          <td style="text-align:right;">{{ "{:,}".format(ct) }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+</div>
+
+{# ====== Grammar Engine ====== #}
+<section class="dash-section">
+  <h2 class="dash-section-title">Grammar Engine</h2>
+  <div class="dash-engine-grid">
+    <div class="dash-engine-card">
+      <span class="section-label">Verb Paradigms</span>
+      {% if verb.paradigm_forms is not none %}
+        <span class="dash-engine-number">{{ "{:,}".format(verb.paradigm_forms) }}</span>
+        <span class="dash-engine-detail">forms ({{ verb.distinct_verbs }} verbs)</span>
+      {% else %}
+        <span class="dash-engine-detail" style="color:var(--earth-400);">Not generated yet</span>
+      {% endif %}
+    </div>
+    <div class="dash-engine-card">
+      <span class="section-label">Sound Change Rules</span>
+      {% if verb.sound_rules is not none %}
+        <span class="dash-engine-number">{{ verb.sound_rules }}</span>
+        <span class="dash-engine-detail">cataloged rules</span>
+      {% else %}
+        <span class="dash-engine-detail" style="color:var(--earth-400);">Not generated yet</span>
+      {% endif %}
+    </div>
+    <div class="dash-engine-card">
+      <span class="section-label">Morpheme Inventory</span>
+      {% if verb.morphemes is not none %}
+        <span class="dash-engine-number">{{ verb.morphemes }}</span>
+        <span class="dash-engine-detail">mapped morphemes</span>
+      {% else %}
+        <span class="dash-engine-detail" style="color:var(--earth-400);">Not generated yet</span>
+      {% endif %}
+    </div>
+    <div class="dash-engine-card">
+      <span class="section-label">Possession Engine</span>
+      {% if poss.body_part is not none %}
+        <span class="dash-engine-number">{{ poss.body_part }}</span>
+        <span class="dash-engine-detail">body-part stems</span>
+        {% if poss.kinship is not none %}
+          <span class="dash-engine-detail">{{ poss.kinship }} kinship paradigms</span>
+        {% endif %}
+        {% if poss.bb_total is not none and poss.bb_total > 0 %}
+          <span class="dash-engine-detail">BB validation: {{ poss.bb_exact }}/{{ poss.bb_total }}
+            ({{ (poss.bb_exact / poss.bb_total * 100) | round(0) | int }}%)</span>
+        {% endif %}
+      {% else %}
+        <span class="dash-engine-detail" style="color:var(--earth-400);">Not generated yet</span>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{# ====== E2S Linking Health ====== #}
+<section class="dash-section">
+  <h2 class="dash-section-title">E2S Linking Health</h2>
+  {% set link = linking %}
+  {% set link_pct = (link.linked / link.total * 100) if link.total else 0 %}
+  <div class="dash-bar-row">
+    <span class="dash-bar-label">Linked</span>
+    <div class="dash-bar-track">
+      <div class="dash-bar-fill" style="width:{{ link_pct | round(1) }}%; background:var(--sage-400);"></div>
+    </div>
+    <span class="dash-bar-pct">{{ "{:,}".format(link.linked) }} / {{ "{:,}".format(link.total) }} ({{ link_pct | round(1) }}%)</span>
+  </div>
+  {% if link.unlinked > 0 %}
+  <p style="font-size:0.85em; color:var(--earth-500); margin-top:0.5em;">
+    {{ "{:,}".format(link.unlinked) }} unlinked entries (parsing artifacts / gaps)
+  </p>
+  {% endif %}
+</section>
+
+{# ====== Paradigmatic Form Coverage ====== #}
+<section class="dash-section">
+  <h2 class="dash-section-title">Paradigmatic Form Coverage</h2>
+  {% set form_labels = {1: "Form 1 (1sg IND)", 2: "Form 2 (3sg IND)", 3: "Form 3 (CONT)", 4: "Form 4 (ABS.SUB)", 5: "Form 5 (INT)"} %}
+  {% for fn in range(1, 6) %}
+    {% set ct = form_coverage.get(fn, 0) %}
+    {% set pct = (ct / hero.s2e * 100) if hero.s2e else 0 %}
+    {% if pct >= 95 %}{% set bar_color = "var(--sage-400)" %}
+    {% elif pct >= 70 %}{% set bar_color = "var(--gold-400)" %}
+    {% else %}{% set bar_color = "var(--clay-400)" %}
+    {% endif %}
+    <div class="dash-bar-row">
+      <span class="dash-bar-label">{{ form_labels.get(fn, "Form " ~ fn) }}</span>
+      <div class="dash-bar-track">
+        <div class="dash-bar-fill" style="width:{{ pct | round(1) }}%; background:{{ bar_color }};"></div>
+      </div>
+      <span class="dash-bar-pct">{{ "{:,}".format(ct) }} ({{ pct | round(1) }}%)</span>
+    </div>
+  {% endfor %}
+</section>
+{% endblock %}

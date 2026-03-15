@@ -1,0 +1,56 @@
+{#
+  _stats_bar.html -- Dictionary coverage progress
+
+  Expected context:
+    stats.lexical_entries    -- int
+    stats.glosses            -- int (or examples)
+    stats.distinct_tags      -- int
+    stats.verb_paradigms     -- int
+    stats.blue_book_attestations -- int
+#}
+
+{% if stats %}
+<article class="stats-card">
+  <small class="section-label">Dictionary coverage</small>
+
+  <div class="stats-grid">
+    <div>
+      <span class="stat-number">{{ "{:,}".format(stats.get('lexical_entries', 0)) }}</span>
+      <br><small class="stat-label">Headwords</small>
+    </div>
+    <div>
+      <span class="stat-number">{{ "{:,}".format(stats.get('blue_book_attestations', 0)) }}</span>
+      <br><small class="stat-label">Blue Book terms</small>
+    </div>
+    <div>
+      <span class="stat-number">{{ stats.get('distinct_tags', 0) }}</span>
+      <br><small class="stat-label">Categories</small>
+    </div>
+    <div>
+      <span class="stat-number">{{ "{:,}".format(stats.get('verb_paradigms', 0)) }}</span>
+      <br><small class="stat-label">Verb forms</small>
+    </div>
+  </div>
+
+  {# Progress bar: proportion of entries with Blue Book attestation #}
+  {% set pct = ((stats.get('blue_book_attestations', 0) / stats.get('lexical_entries', 1)) * 100) | int %}
+  <div style="
+    display:flex; align-items:center; gap:0.6rem;
+    margin-top:0.75rem; padding-top:0.75rem;
+    border-top:1px solid var(--earth-100);
+  ">
+    <div style="
+      flex:1; height:6px; border-radius:3px;
+      background:var(--earth-100); overflow:hidden;
+    ">
+      <div style="
+        height:100%; border-radius:3px; width:{{ pct }}%;
+        background:linear-gradient(90deg, var(--sage-400), var(--sky-500));
+      "></div>
+    </div>
+    <small style="font-size:0.7rem; color:var(--earth-500);">
+      {{ pct }}% Blue Book attested
+    </small>
+  </div>
+</article>
+{% endif %}

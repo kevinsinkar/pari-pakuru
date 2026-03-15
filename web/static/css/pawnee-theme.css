@@ -1,0 +1,1303 @@
+/* ============================================================
+   Pari Pakuru' -- Skiri Pawnee Dictionary
+   Pico CSS Custom Theme Variables
+
+   Color Philosophy:
+   Earth tones from the Central Plains -- prairie soil, Nebraska
+   sky, sage medicine plants, red clay pottery, and golden grass.
+   These replace Pico's defaults via CSS custom properties.
+   ============================================================ */
+
+/* ---------- Pawnee Heritage Palette ---------- */
+:root {
+  /* Prairie Earth -- primary text & deep UI */
+  --earth-900: #2C1810;
+  --earth-800: #4A2E1F;
+  --earth-700: #6B4332;
+  --earth-600: #8B5E3C;
+  --earth-500: #A67B5B;
+  --earth-400: #C49A6C;
+  --earth-300: #D8B88E;
+  --earth-200: #E8D5B7;
+  --earth-100: #F3EAD8;
+  --earth-50:  #FAF6EE;
+
+  /* Nebraska Sky -- links, interactive elements */
+  --sky-900: #1A3A5C;
+  --sky-700: #2B5F8E;
+  --sky-500: #4A90C4;
+  --sky-300: #89BDE0;
+  --sky-200: #B0D4EE;
+  --sky-100: #D6EAFA;
+  --sky-50:  #EDF6FD;
+
+  /* Sage Medicine -- attested/verified indicators */
+  --sage-800: #2A4A2E;
+  --sage-600: #4A7A50;
+  --sage-400: #6FA876;
+  --sage-200: #B8D8BC;
+  --sage-100: #D4E8D6;
+  --sage-50:  #EFF6F0;
+
+  /* Red Clay -- accent, ceremonial markers */
+  --clay-800: #7A2E1A;
+  --clay-600: #B84A2A;
+  --clay-400: #D4714E;
+  --clay-200: #F0C4A8;
+  --clay-50:  #FDF0E8;
+
+  /* Prairie Gold -- Blue Book badge, highlights */
+  --gold-800: #6B5010;
+  --gold-600: #A8841A;
+  --gold-400: #D4AA30;
+  --gold-200: #F0DFA0;
+  --gold-50:  #FDFAEB;
+
+  /* Surfaces */
+  --bone:  #FFFDF7;
+  --smoke: #F5F0E6;
+}
+
+/* ---------- Pico CSS Variable Overrides ---------- */
+:root {
+  --pico-font-family-sans-serif: 'DM Sans', system-ui, sans-serif;
+  --pico-font-family:            var(--pico-font-family-sans-serif);
+  --pico-font-size:              16px;
+  --pico-line-height:            1.6;
+  --pico-font-weight:            400;
+  --pico-border-radius:          0.75rem;
+
+  /* Background */
+  --pico-background-color:       var(--bone);
+  --pico-color:                  var(--earth-900);
+
+  /* Primary (links, buttons, focus rings) */
+  --pico-primary:                var(--sky-700);
+  --pico-primary-hover:          var(--sky-900);
+  --pico-primary-focus:          rgba(74, 144, 196, 0.2);
+  --pico-primary-background:     var(--sky-700);
+  --pico-primary-hover-background: var(--sky-900);
+  --pico-primary-inverse:        var(--bone);
+
+  /* Secondary (muted text, labels) */
+  --pico-secondary:              var(--earth-600);
+  --pico-secondary-hover:        var(--earth-800);
+
+  /* Muted / subtle */
+  --pico-muted-color:            var(--earth-500);
+  --pico-muted-border-color:     var(--earth-200);
+
+  /* Card surfaces */
+  --pico-card-background-color:  white;
+  --pico-card-border-color:      var(--earth-200);
+  --pico-card-box-shadow:        none;
+  --pico-card-sectioning-background-color: var(--earth-100);
+
+  /* Form elements */
+  --pico-form-element-background-color: white;
+  --pico-form-element-border-color:     var(--earth-200);
+  --pico-form-element-focus-color:      var(--sky-500);
+  --pico-form-element-active-border-color: var(--sky-500);
+
+  /* Typography */
+  --pico-h1-color: var(--earth-900);
+  --pico-h2-color: var(--earth-800);
+  --pico-h3-color: var(--earth-700);
+  --pico-h4-color: var(--earth-700);
+
+  /* Table */
+  --pico-table-border-color:     var(--earth-200);
+  --pico-table-row-stripped-background-color: var(--earth-50);
+
+  /* Code */
+  --pico-code-background-color:  var(--smoke);
+  --pico-code-color:             var(--earth-800);
+
+  /* Mark / highlight */
+  --pico-mark-background-color:  var(--gold-200);
+  --pico-mark-color:             var(--gold-800);
+
+  /* Blockquote */
+  --pico-blockquote-border-color: var(--earth-300);
+  --pico-blockquote-footer-color: var(--earth-500);
+}
+
+/* ---------- Dark Mode Overrides ---------- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --pico-background-color:       #1A1410;
+    --pico-color:                  var(--earth-100);
+    --pico-primary:                var(--sky-300);
+    --pico-primary-hover:          var(--sky-100);
+    --pico-secondary:              var(--earth-300);
+    --pico-muted-color:            var(--earth-400);
+    --pico-muted-border-color:     #3D2E22;
+    --pico-card-background-color:  #241C14;
+    --pico-card-border-color:      #3D2E22;
+    --pico-form-element-background-color: #2A2018;
+    --pico-form-element-border-color:     #4A3828;
+    --pico-table-border-color:     #3D2E22;
+    --pico-code-background-color:  #2A2018;
+    --bone:  #1A1410;
+    --smoke: #241C14;
+  }
+}
+
+/* ---------- Headword Serif Font ---------- */
+.font-serif {
+  font-family: 'Source Serif 4', 'Gentium Plus', 'Charis SIL', 'Georgia', serif;
+}
+
+/* ============================================================
+   Component Styles
+   ============================================================ */
+
+/* ---------- Site title ---------- */
+.site-title {
+  text-decoration: none;
+}
+
+/* ---------- Navigation search bar ---------- */
+.nav-search {
+  margin-bottom: 0;
+}
+.nav-search input[type="search"] {
+  margin-bottom: 0;
+  max-width: 400px;
+}
+
+/* ---------- IPA / phonetic forms ---------- */
+.ipa {
+  font-family: 'Source Serif 4', 'Gentium Plus', 'Charis SIL', 'Doulos SIL', monospace;
+  color: var(--earth-500);
+}
+
+.pronunciation {
+  font-size: 1.05em;
+  color: var(--earth-600);
+}
+
+/* ---------- Badges ---------- */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.badge--attested,
+.badge-bb {
+  background: var(--sage-50);
+  color: var(--sage-800);
+  border: 1px solid var(--sage-200);
+}
+
+.badge--bluebook {
+  background: var(--gold-50);
+  color: var(--gold-800);
+  border: 1px solid var(--gold-200);
+}
+
+.badge--bluebook::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold-400);
+  display: inline-block;
+}
+
+.badge--computed {
+  background: var(--smoke);
+  color: var(--earth-600);
+  border: 1px dashed var(--earth-200);
+}
+
+.badge-class {
+  background: var(--sky-50);
+  color: var(--sky-700);
+  border: 1px solid var(--sky-100);
+  font-style: italic;
+}
+
+.badge-tag {
+  background: var(--earth-50);
+  color: var(--earth-700);
+  border: 1px solid var(--earth-200);
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0.1em;
+}
+.badge-tag:hover {
+  background: var(--earth-100);
+  color: var(--earth-800);
+}
+
+.badge-verb-class {
+  background: var(--gold-50);
+  color: var(--gold-800);
+  border: 1px solid var(--gold-200);
+}
+
+/* ---------- Morpheme breakdown colors ---------- */
+.morph-prefix   { border-left: 3px solid var(--clay-400); }
+.morph-instr    { border-left: 3px solid var(--sky-500); }
+.morph-root     { border-left: 3px solid var(--sage-400); }
+.morph-suffix   { border-left: 3px solid var(--gold-400); }
+.morph-enclitic { border-left: 3px solid var(--earth-500); }
+
+/* ---------- Category cloud tags ---------- */
+.cat-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 1.25rem;
+  font-size: 0.8rem;
+  border: 1px solid var(--earth-200);
+  background: white;
+  color: var(--earth-600);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-decoration: none;
+}
+
+.cat-tag:hover {
+  background: var(--earth-100);
+  border-color: var(--earth-400);
+}
+
+.cat-tag[aria-pressed="true"],
+.cat-tag.selected {
+  background: var(--earth-800);
+  color: var(--earth-100);
+  border-color: var(--earth-800);
+}
+
+/* ---------- Search direction toggle ---------- */
+.search-dir {
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.4rem;
+  font-size: 0.7rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border: 1px solid transparent;
+}
+.search-dir:hover {
+  background: var(--sky-50);
+}
+.search-dir.active {
+  background: var(--sky-50);
+  border-color: var(--sky-300);
+  color: var(--sky-900);
+}
+
+/* ---------- Entry cards (search results) ---------- */
+.entry-card {
+  border: 1px solid var(--earth-200);
+  border-radius: 0.875rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  background: white;
+}
+.entry-card:last-child {
+  margin-bottom: 0;
+}
+.entry-card a {
+  text-decoration: none;
+}
+.entry-card .headword {
+  font-family: 'Source Serif 4', 'Gentium Plus', 'Georgia', serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--earth-900);
+  letter-spacing: -0.3px;
+}
+.entry-card .normalized {
+  color: var(--earth-500);
+  margin-left: 0.5em;
+  font-size: 0.85em;
+}
+.entry-card .gloss {
+  margin-top: 0.25em;
+  color: var(--earth-700);
+  line-height: 1.6;
+}
+.entry-card-header {
+  padding: 1.25rem 1.5rem 1rem;
+  border-bottom: 1px solid var(--earth-100);
+}
+.entry-card-body {
+  padding: 1rem 1.5rem;
+}
+
+/* ---------- Paradigm tables ---------- */
+.paradigm-table {
+  font-size: 0.9em;
+}
+.paradigm-table th {
+  text-align: left;
+  white-space: nowrap;
+  background: var(--earth-100);
+  color: var(--earth-700);
+  font-weight: 500;
+  font-size: 0.8em;
+}
+
+/* Attested vs generated forms */
+.form-attested {
+  position: relative;
+  font-weight: 600;
+}
+.form-attested::after {
+  content: '';
+  position: absolute;
+  right: 0.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--sage-400);
+}
+.form-generated,
+.form-computed {
+  font-style: italic;
+  color: var(--earth-500);
+}
+.attested-label {
+  font-size: 0.65em;
+  font-weight: 400;
+  color: var(--sage-800);
+  background: var(--sage-50);
+  padding: 0.15em 0.5em;
+  border-radius: 4px;
+  vertical-align: middle;
+  margin-left: 0.5em;
+}
+
+/* ---------- Entry detail page ---------- */
+.entry-header {
+  margin-bottom: 1.5em;
+}
+.entry-header .headword {
+  font-family: 'Source Serif 4', 'Gentium Plus', 'Georgia', serif;
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 0.1em;
+  color: var(--earth-900);
+}
+.entry-pronunciations {
+  margin: 0.5em 0;
+}
+.entry-pronunciations dt {
+  font-weight: 600;
+  color: var(--earth-500);
+  display: inline;
+}
+.entry-pronunciations dd {
+  display: inline;
+  margin-left: 0.5em;
+  margin-right: 1.5em;
+}
+
+.entry-section {
+  margin-top: 1.5em;
+}
+.entry-section h3 {
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+  color: var(--earth-700);
+  border-bottom: 1px solid var(--earth-200);
+  padding-bottom: 0.25em;
+}
+
+/* ---------- Browse page ---------- */
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin: 1em 0;
+}
+
+.class-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.5em;
+  margin: 1em 0;
+}
+
+.class-card {
+  padding: 0.75em;
+  border: 1px solid var(--earth-200);
+  border-radius: 0.75rem;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.15s;
+}
+.class-card:hover {
+  background: var(--earth-50);
+}
+.class-card .count {
+  display: block;
+  font-size: 0.8em;
+  color: var(--earth-500);
+}
+
+/* ---------- Filters sidebar ---------- */
+.search-layout {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 2em;
+  align-items: start;
+}
+@media (max-width: 768px) {
+  .search-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.filter-sidebar h4 {
+  font-size: 0.95em;
+  margin-bottom: 0.3em;
+}
+.filter-sidebar details {
+  margin-bottom: 0.5em;
+}
+.filter-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 250px;
+  overflow-y: auto;
+  font-size: 0.85em;
+}
+.filter-list li {
+  padding: 0.15em 0;
+}
+.filter-list a {
+  text-decoration: none;
+}
+.filter-list .active {
+  font-weight: 700;
+}
+
+/* ---------- Pagination ---------- */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  margin-top: 1.5em;
+  flex-wrap: wrap;
+}
+.pagination a, .pagination span {
+  padding: 0.3em 0.7em;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+.pagination .current {
+  background: var(--pico-primary);
+  color: white;
+}
+
+/* ---------- Index / landing ---------- */
+.hero {
+  text-align: center;
+  padding: 2em 0 1em;
+}
+.hero h1 {
+  font-family: 'Source Serif 4', 'Gentium Plus', 'Georgia', serif;
+  font-size: 2.5em;
+  margin-bottom: 0.2em;
+  color: var(--earth-900);
+}
+.hero p {
+  font-size: 1.1em;
+  color: var(--earth-500);
+}
+.hero-search {
+  max-width: 640px;
+  margin: 1.5em auto;
+}
+.hero-search input[type="search"] {
+  font-size: 1.2em;
+  padding: 0.75em 1em 0.75em 3rem;
+}
+
+.stats-row {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin: 1.5em 0;
+  flex-wrap: wrap;
+}
+.stat-item {
+  text-align: center;
+}
+.stat-item .number {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--earth-800);
+  display: block;
+}
+.stat-item .label {
+  font-size: 0.75em;
+  color: var(--earth-500);
+}
+
+/* ---------- Word of the day card ---------- */
+.wotd-card {
+  border: 1px solid var(--gold-200);
+  border-radius: 0.875rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.wotd-card .wotd-header {
+  background: linear-gradient(135deg, var(--earth-800), var(--earth-700));
+  padding: 0.875rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wotd-card .wotd-label {
+  color: var(--gold-200);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+.wotd-card .wotd-date {
+  color: var(--earth-400);
+  font-size: 0.7rem;
+}
+.wotd-card .wotd-body {
+  padding: 1.25rem;
+}
+.wotd-card .wotd-headword {
+  font-family: 'Source Serif 4', 'Gentium Plus', 'Georgia', serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--earth-900);
+  margin-bottom: 0.25rem;
+}
+.wotd-card .wotd-gloss {
+  font-size: 0.875rem;
+  color: var(--earth-700);
+  line-height: 1.5;
+}
+
+/* ---------- Sidebar stats ---------- */
+.stats-card {
+  border: 1px solid var(--earth-200);
+  border-radius: 0.875rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+}
+.stats-card .stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  text-align: center;
+}
+.stats-card .stat-number {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--earth-800);
+}
+.stats-card .stat-label {
+  font-size: 0.7rem;
+  color: var(--earth-500);
+}
+
+/* ---------- Sidebar category cloud ---------- */
+.category-card {
+  border: 1px solid var(--earth-200);
+  border-radius: 0.875rem;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+/* ---------- Section label (small caps heading) ---------- */
+.section-label {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--earth-500);
+  margin-bottom: 0.6rem;
+  font-weight: 500;
+}
+
+/* ---------- Main grid layout (results + sidebar) ---------- */
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 2rem;
+  align-items: start;
+}
+@media (max-width: 768px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Conjugation table ---------- */
+.conjugation-table {
+  font-size: 0.85em;
+  overflow-x: auto;
+}
+.conjugation-table th {
+  white-space: nowrap;
+  font-size: 0.8em;
+}
+.conjugation-table td {
+  white-space: nowrap;
+}
+
+/* ---------- Morpheme table ---------- */
+.morpheme-table {
+  font-size: 0.9em;
+}
+
+/* ---------- Morpheme breakdown expansion ---------- */
+.morpheme-panel {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.35s ease, opacity 0.25s ease, padding 0.25s ease;
+  padding: 0 1rem;
+}
+.morpheme-panel.expanded {
+  max-height: 400px;
+  opacity: 1;
+  padding: 1rem;
+}
+
+/* ---------- HTMX animations ---------- */
+.search-results-container {
+  transition: opacity 0.15s ease;
+}
+.search-results-container.htmx-swapping {
+  opacity: 0.4;
+}
+
+/* ---------- Flashcard overview ---------- */
+.fc-category {
+  margin-bottom: 1.5em;
+}
+.fc-category h3 {
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+  color: var(--earth-700);
+}
+.fc-week-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75em;
+}
+.fc-week-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.75em 1.25em;
+  border: 1px solid var(--earth-200);
+  border-radius: 0.75rem;
+  text-decoration: none;
+  min-width: 120px;
+  text-align: center;
+  transition: background 0.15s;
+}
+.fc-week-card:hover {
+  background: var(--earth-50);
+}
+.fc-week-num {
+  font-weight: 700;
+  font-size: 1em;
+}
+.fc-week-count {
+  font-size: 0.8em;
+  color: var(--earth-500);
+}
+
+/* ---------- Flashcard study session ---------- */
+.fc-study-header {
+  text-align: center;
+  margin-bottom: 1em;
+}
+.fc-study-header p {
+  color: var(--earth-500);
+}
+
+.fc-progress {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+.fc-progress progress {
+  width: 100%;
+  max-width: 400px;
+}
+#fc-progress-text {
+  font-size: 0.85em;
+  color: var(--earth-500);
+}
+
+/* Card arena */
+.fc-arena {
+  display: flex;
+  justify-content: center;
+  margin: 1em 0 1.5em;
+  min-height: 300px;
+}
+
+.fc-card-wrapper {
+  width: 100%;
+  max-width: 450px;
+  perspective: 1000px;
+}
+.fc-card-wrapper.fc-hidden {
+  display: none;
+}
+
+/* Flip card */
+.fc-card {
+  position: relative;
+  width: 100%;
+  min-height: 280px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+  border-radius: 12px;
+}
+.fc-card.flipped {
+  transform: rotateY(180deg);
+}
+
+.fc-front, .fc-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border: 2px solid var(--earth-200);
+  border-radius: 12px;
+  padding: 2em 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--pico-background-color);
+}
+
+.fc-back {
+  transform: rotateY(180deg);
+  background: var(--earth-800);
+  color: var(--earth-100);
+  border-color: var(--earth-700);
+}
+
+/* Front side */
+.fc-front-word {
+  font-family: 'Source Serif 4', 'Gentium Plus', 'Georgia', serif;
+  font-size: 2.2em;
+  font-weight: 500;
+  margin-bottom: 0.15em;
+  line-height: 1.2;
+  color: var(--earth-900);
+}
+.fc-front-pron {
+  font-size: 1.1em;
+  color: var(--earth-600);
+  margin-bottom: 0.3em;
+}
+.fc-front-parks {
+  font-size: 0.95em;
+  color: var(--earth-500);
+  margin-bottom: 0.5em;
+  font-family: 'Source Serif 4', 'Gentium Plus', 'Charis SIL', monospace;
+}
+.fc-hint {
+  font-size: 0.75em;
+  color: var(--earth-400);
+  margin-top: auto;
+  padding-top: 1em;
+}
+
+/* Back side */
+.fc-back-definition {
+  font-size: 1.4em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  line-height: 1.3;
+  color: var(--earth-100);
+}
+.fc-back-word {
+  font-size: 1.1em;
+  color: var(--earth-200);
+  margin-bottom: 0.15em;
+}
+.fc-back-pron {
+  font-size: 0.95em;
+  color: var(--earth-300);
+  margin-bottom: 0.15em;
+}
+.fc-back-ipa {
+  font-size: 0.9em;
+  color: var(--earth-300);
+}
+.fc-back-parks {
+  font-size: 0.85em;
+  color: var(--earth-400);
+  margin-top: 0.3em;
+  font-family: 'Source Serif 4', 'Gentium Plus', 'Charis SIL', monospace;
+}
+.fc-back-link {
+  font-size: 0.8em;
+  margin-top: auto;
+  padding-top: 1em;
+  color: var(--sky-300);
+}
+.fc-back-link:hover {
+  color: var(--sky-200);
+}
+
+/* Controls */
+.fc-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin: 1em 0;
+}
+.fc-controls button {
+  min-width: 120px;
+}
+
+.fc-week-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 2em;
+  font-size: 0.9em;
+}
+
+/* Mobile: smaller cards */
+@media (max-width: 480px) {
+  .fc-front-word { font-size: 1.8em; }
+  .fc-back-definition { font-size: 1.2em; }
+  .fc-card { min-height: 240px; }
+}
+
+/* ---------- Flashcard guide ---------- */
+.fc-guide {
+  margin: 1.5em 0 2em;
+  border: 1px solid var(--earth-200);
+  border-radius: 0.75rem;
+  padding: 1em 1.5em;
+}
+.fc-guide summary {
+  cursor: pointer;
+  font-size: 1.05em;
+  margin-bottom: 0.5em;
+}
+.fc-guide-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5em;
+  margin-top: 1em;
+}
+@media (max-width: 768px) {
+  .fc-guide-cards {
+    grid-template-columns: 1fr;
+  }
+}
+.fc-guide-side h4 {
+  font-size: 0.9em;
+  color: var(--earth-500);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5em;
+}
+.fc-example-card {
+  border-radius: 12px;
+  padding: 1.25em 1em;
+}
+.fc-example-front {
+  border: 2px solid var(--earth-200);
+  background: var(--pico-background-color);
+}
+.fc-example-back {
+  border: 2px solid var(--earth-700);
+  background: var(--earth-800);
+}
+.fc-example-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.75em;
+}
+.fc-example-row:last-child {
+  margin-bottom: 0;
+}
+.fc-example-value {
+  margin-bottom: 0.1em;
+}
+.fc-example-label {
+  font-size: 0.75em;
+  color: var(--earth-500);
+  border-left: 2px solid var(--sky-500);
+  padding-left: 0.5em;
+  line-height: 1.3;
+}
+.fc-example-label-back {
+  color: var(--earth-400);
+  border-left-color: var(--sky-300);
+}
+
+/* ---------- Syllable guide ---------- */
+.guide-table-wrap {
+  overflow-x: auto;
+  margin: 1em 0;
+}
+.guide-table {
+  font-size: 0.95em;
+}
+.guide-table td.ipa {
+  font-size: 1.1em;
+}
+.guide-table td.pronunciation {
+  font-weight: 600;
+}
+.guide-section-row td {
+  background: var(--earth-50);
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+}
+.guide-note {
+  margin: 1em 0 1.5em;
+  border: 1px solid var(--earth-200);
+  border-radius: 0.75rem;
+  padding: 0.75em 1.25em;
+}
+.guide-note summary {
+  cursor: pointer;
+}
+.guide-note p {
+  margin-top: 0.5em;
+}
+.guide-example {
+  background: var(--earth-50);
+  border-radius: 0.75rem;
+  padding: 1em 1.5em;
+  margin: 0.75em 0 1.5em;
+  text-align: center;
+  font-size: 1.15em;
+  line-height: 1.8;
+}
+
+/* ---------- Possession widget ---------- */
+.possession-details summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.possession-details summary::-webkit-details-marker {
+  display: none;
+}
+.possession-details summary::before {
+  content: '\25B6';
+  font-size: 0.6em;
+  color: var(--earth-400);
+  transition: transform 0.2s ease;
+}
+.possession-details[open] summary::before {
+  transform: rotate(90deg);
+}
+.possession-details summary h3 {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.poss-construction {
+  margin: 0.75em 0;
+  padding: 0.5em 0.75em;
+  background: var(--earth-50);
+  border-radius: 0.5rem;
+  font-size: 0.85em;
+  color: var(--earth-600);
+}
+.poss-construction code {
+  font-size: 0.9em;
+}
+
+.poss-persons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75em;
+  margin: 1em 0;
+}
+@media (max-width: 480px) {
+  .poss-persons {
+    grid-template-columns: 1fr;
+  }
+}
+
+.poss-card {
+  border: 2px solid var(--earth-200);
+  border-radius: 0.75rem;
+  padding: 0.75em 1em;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+.poss-card:hover {
+  border-color: var(--sky-300);
+  background: var(--sky-50);
+}
+.poss-card-active {
+  border-color: var(--sky-500);
+  background: var(--sky-50);
+}
+
+.poss-card-label {
+  font-size: 0.75em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--earth-500);
+  margin-bottom: 0.3em;
+}
+.poss-card-form {
+  font-family: 'Source Serif 4', 'Gentium Plus', 'Georgia', serif;
+  font-size: 1.15em;
+  font-weight: 500;
+  color: var(--earth-900);
+  margin-bottom: 0.3em;
+  word-break: break-word;
+}
+.poss-card-confidence {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+}
+
+.poss-breakdown {
+  background: var(--smoke);
+  border-radius: 0.5rem;
+  padding: 0.75em 1em;
+  margin: 0.5em 0;
+  font-size: 0.85em;
+  min-height: 2em;
+}
+.poss-breakdown .ipa {
+  font-size: 0.95em;
+}
+
+.poss-source {
+  margin-top: 0.75em;
+  text-align: right;
+}
+
+/* --- Locative stem informational panel --- */
+.poss-locative-panel {
+  background: var(--smoke);
+  border: 2px solid var(--earth-300);
+  border-radius: 0.5rem;
+  padding: 1em 1.25em;
+  margin: 0.5em 0;
+}
+.poss-locative-heading {
+  font-weight: 700;
+  color: var(--earth-700);
+  margin-bottom: 0.5em;
+  font-size: 0.95em;
+}
+.poss-locative-stem {
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+}
+.poss-locative-note {
+  color: var(--earth-500);
+  font-size: 0.85em;
+  margin: 0.5em 0;
+}
+.poss-locative-example {
+  background: var(--white, #fff);
+  border-radius: 0.35rem;
+  padding: 0.5em 0.75em;
+  margin-top: 0.5em;
+  font-size: 0.9em;
+}
+.poss-locative-variants {
+  margin-top: 0.5em;
+  color: var(--earth-400);
+}
+
+/* ---------- Dashboard ---------- */
+.dash-hero-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.dash-hero-card {
+  text-align: center;
+  padding: 1.25rem 1.5rem;
+  border-radius: 0.875rem;
+  border: 1px solid var(--earth-200);
+  background: white;
+  min-width: 120px;
+  flex: 1 1 120px;
+  max-width: 180px;
+}
+.dash-hero-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+.dash-hero-label {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--earth-500);
+  margin-top: 0.25rem;
+}
+.dash-hero--clay  .dash-hero-number { color: var(--clay-600); }
+.dash-hero--sky   .dash-hero-number { color: var(--sky-700); }
+.dash-hero--earth .dash-hero-number { color: var(--earth-700); }
+.dash-hero--sage  .dash-hero-number { color: var(--sage-600); }
+.dash-hero--gold  .dash-hero-number { color: var(--gold-600); }
+
+.dash-section {
+  margin-bottom: 2rem;
+}
+.dash-section-title {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--earth-500);
+  border-bottom: 1px solid var(--earth-200);
+  padding-bottom: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+/* Completion bars */
+.dash-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.6rem;
+}
+.dash-bar-label {
+  min-width: 180px;
+  font-size: 0.85em;
+  color: var(--earth-700);
+  text-align: right;
+}
+.dash-bar-track {
+  flex: 1;
+  height: 18px;
+  background: var(--earth-100);
+  border-radius: 9px;
+  overflow: hidden;
+}
+.dash-bar-fill {
+  height: 100%;
+  border-radius: 9px;
+  transition: width 0.4s ease;
+}
+.dash-bar-pct {
+  min-width: 180px;
+  font-size: 0.8em;
+  color: var(--earth-500);
+}
+
+@media (max-width: 768px) {
+  .dash-bar-row {
+    flex-wrap: wrap;
+  }
+  .dash-bar-label, .dash-bar-pct {
+    min-width: auto;
+    text-align: left;
+  }
+}
+
+/* Two-column layout */
+.dash-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 768px) {
+  .dash-two-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dash-compact-table {
+  font-size: 0.85em;
+  width: 100%;
+}
+.dash-compact-table th {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--earth-500);
+}
+.dash-compact-table td, .dash-compact-table th {
+  padding: 0.3rem 0.5rem;
+}
+
+/* Engine cards grid */
+.dash-engine-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.dash-engine-card {
+  border: 1px solid var(--earth-200);
+  border-radius: 0.875rem;
+  padding: 1rem 1.25rem;
+  background: white;
+}
+.dash-engine-number {
+  display: block;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--earth-800);
+  line-height: 1.2;
+}
+.dash-engine-detail {
+  display: block;
+  font-size: 0.8em;
+  color: var(--earth-500);
+  margin-top: 0.15rem;
+}
+
+/* Dark mode overrides for dashboard */
+@media (prefers-color-scheme: dark) {
+  .dash-hero-card,
+  .dash-engine-card {
+    background: #241C14;
+  }
+}
+
+/* ---------- HTMX spinner ---------- */
+.htmx-indicator {
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+}
+.htmx-request .htmx-indicator,
+.htmx-request.htmx-indicator {
+  opacity: 1;
+}

@@ -6,11 +6,13 @@ semantic tags, Blue Book attestations, verb paradigms, combined search,
 browse helpers, and lightweight entry summaries.
 """
 
+import hashlib
 import json
 import os
 import sqlite3
 import sys
 from dataclasses import dataclass, field
+from datetime import date
 from typing import List, Optional, Tuple
 
 # Add parent directory so we can import from DB/
@@ -245,6 +247,25 @@ class SkiriWebDictionary(SkiriDictionary):
         if row:
             return self._build_entry_summary(row["entry_id"])
         return None
+
+    def get_word_of_day(self) -> Optional[EntrySummary]:
+        """Deterministic daily selection from Blue Book attested entries."""
+        cur = self.conn.cursor()
+        cur.execute(
+            "SELECT entry_id FROM lexical_entries "
+            "WHERE blue_book_attested = 1 ORDER BY entry_id"
+        )
+        bb_entries = [r["entry_id"] for r in cur.fetchall()]
+
+        if not bb_entries:
+            # Fallback to random entry if no BB entries
+            return self.get_random_entry()
+
+        today_str = date.today().isoformat()
+        seed = int(hashlib.md5(today_str.encode()).hexdigest(), 16)
+        idx = seed % len(bb_entries)
+
+        return self._build_entry_summary(bb_entries[idx])
 
     # ------------------------------------------------------------------
     # Stats

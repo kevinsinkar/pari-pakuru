@@ -1,28 +1,59 @@
-{% if results %}
-<p><small>{{ total }} result{{ 's' if total != 1 }} for "{{ query }}"</small></p>
-{% for entry in results %}
-    {% include '_entry_card.html' %}
-{% endfor %}
+{#
+  _results_body.html -- HTMX partial for search results
 
-{% if total_pages > 1 %}
-<nav class="pagination">
+  Replaces contents of #search-results or #live-results.
+
+  Expected context:
+    results     -- list of EntrySummary objects
+    query       -- str
+    total       -- int
+    page        -- int
+    total_pages -- int
+    lang        -- str
+    gram_class  -- str|None
+    tag         -- str|None
+#}
+
+{% if results %}
+  <small style="
+    display:block; color:var(--earth-500); margin-bottom:0.75rem; font-size:0.8rem;
+  ">
+    {{ total }} result{{ 's' if total != 1 }} for
+    <strong style="color:var(--earth-700);">"{{ query }}"</strong>
+  </small>
+
+  {% for entry in results %}
+    {% include '_entry_card.html' %}
+  {% endfor %}
+
+  {# Pagination #}
+  {% if total_pages > 1 %}
+  <nav class="pagination">
     {% if page > 1 %}
     <a href="/search?q={{ query }}&lang={{ lang }}&page={{ page - 1 }}{% if gram_class %}&class={{ gram_class }}{% endif %}{% if tag %}&tag={{ tag }}{% endif %}">&laquo; Prev</a>
     {% endif %}
     {% for p in range(1, total_pages + 1) %}
-        {% if p == page %}
-        <span class="current">{{ p }}</span>
-        {% elif p <= 3 or p > total_pages - 2 or (p >= page - 1 and p <= page + 1) %}
-        <a href="/search?q={{ query }}&lang={{ lang }}&page={{ p }}{% if gram_class %}&class={{ gram_class }}{% endif %}{% if tag %}&tag={{ tag }}{% endif %}">{{ p }}</a>
-        {% elif p == 4 or p == total_pages - 2 %}
-        <span>...</span>
-        {% endif %}
+      {% if p == page %}
+      <span class="current">{{ p }}</span>
+      {% elif p <= 3 or p > total_pages - 2 or (p >= page - 1 and p <= page + 1) %}
+      <a href="/search?q={{ query }}&lang={{ lang }}&page={{ p }}{% if gram_class %}&class={{ gram_class }}{% endif %}{% if tag %}&tag={{ tag }}{% endif %}">{{ p }}</a>
+      {% elif p == 4 or p == total_pages - 2 %}
+      <span>...</span>
+      {% endif %}
     {% endfor %}
     {% if page < total_pages %}
     <a href="/search?q={{ query }}&lang={{ lang }}&page={{ page + 1 }}{% if gram_class %}&class={{ gram_class }}{% endif %}{% if tag %}&tag={{ tag }}{% endif %}">Next &raquo;</a>
     {% endif %}
-</nav>
-{% endif %}
+  </nav>
+  {% endif %}
+
 {% elif query %}
-<p>No results found for "{{ query }}".</p>
+  <article style="text-align:center; padding:2rem; color:var(--earth-500);">
+    <p style="font-size:1.1rem; color:var(--earth-700); margin-bottom:0.5rem;">
+      No results for "{{ query }}"
+    </p>
+    <p style="font-size:0.875rem;">
+      Try a different spelling, or <a href="/browse">browse by category</a>.
+    </p>
+  </article>
 {% endif %}

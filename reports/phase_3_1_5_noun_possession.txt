@@ -1,0 +1,307 @@
+==============================================================================
+PHASE 3.1.5 — NOUN POSSESSION MORPHOLOGY REPORT
+==============================================================================
+
+NOUN INVENTORY SUMMARY
+----------------------------------------
+Total noun entries: 1633
+
+By grammatical class:
+  N         1598
+  N-DEP       22
+  N-KIN       13
+
+By possession system:
+  general          1556
+  body_part          45
+  relational         19
+  kinship            13
+
+Nominal suffix distribution (stripped for stems):
+  -uʔ            745  NOM (absolutive)
+  -kusuʔ          24  AUG (augmentative)
+  -iriʔ           17  
+  -kis            15  DIM (diminutive)
+  -kiʔ             3  
+  (none)         829  (kinship, irregular, or unsuffixed)
+
+==============================================================================
+SYSTEM 1: KINSHIP POSSESSION (N-KIN)
+Suppletive stems — irregular my/your/his forms
+------------------------------------------------------------------------------
+Total kinship terms with paradigms: 11
+
+English                        My (1sg)           Your (2sg)         His/Her (3sg)     
+------------------------------------------------------------------------------------
+  sibling (same sex)           iraariʔ            —                  iraariʔ           
+  mother                       atiraʔ             asaas              isaastiʔ          
+  father                       atiʔas             aʔas               iʔaastiʔ          
+  grandmother                  atikaʔ             akaʔ               ikaariʔ           
+  grandfather                  atipaat            apaat              ipaaktiʔ          
+  male's nephew, niece         tiwaat             awaat              iwaahiʔ           
+  mother's brother             tiwaciriks         paciriks           iwariiriks        
+  sister (of male)             itaahiʔ            ataati             itaahiʔ           
+  sibling (of same sex as speak iraariʔ            ara                iraariʔ           
+  brother (of female)          iraactiʔ           araac              iraactiʔ          
+  grandchild                   raktiiki           arakis             raktiiki          
+
+==============================================================================
+SYSTEM 2: BODY PART / PHYSICAL POSSESSION
+ri- (PHY.POSS) prefix in verb introducer; noun incorporated
+------------------------------------------------------------------------------
+Body part nouns: 45
+
+Construction template:
+  MODE + ri(PHY.POSS) + AGENT + NOUN_STEM + POS_VERB
+  1sg: ti + ri + t + STEM + ku/ta  →  'Here is my [body part]'
+  2sg: (question) ra + s + STEM + ku/ta  →  'Where is your [body part]?'
+  3sg: ti + ri + Ø + STEM + ku/ta  →  'Here is his/her [body part]'
+
+Sample body part stems:
+  kaackaawiʔuʔ         → stem: kaackaawiʔ-     white of the eye
+  askakiiriituʔ        → stem: askakiiriit-    heel (of foot)
+  askatahciriʔ         → stem: askatahc-       sole (of foot)
+  astihaaruʔ           → stem: astihaar-       crown of the head, pate, top of the head
+  asuʔ                 → stem: as-             foot; paw; wheel; tire
+  ckuuruʔ              → stem: ckuur-          wool, shaggy hair; yarn, wool thread; fr
+  cusuʔ                → stem: cus-            nose; snout of an animal
+  haakaʔuʔ             → stem: haakaʔ-         mouth; drum
+  haakaratawiʔuʔ       → stem: haakaratawiʔ-   mouth; mouth, opening, top, as of a cont
+  hatkahuuruʔ          → stem: hatkahuur-      part, as in hair
+  hatkatakusiriʔ       → stem: hatkatakus-     roof of the mouth; palatal, velar, and u
+  ikskakusiriʔ         → stem: ikskakus-       palm of the hand
+  ikskatahcuʔ          → stem: ikskatahc-      palm of the hand
+  ikskiicuʔ            → stem: ikskiic-        finger
+  iksuʔ                → stem: iks-            hand
+  itkahaaruʔ           → stem: itkahaar-       ear
+  kaackaawiʔuʔ         → stem: kaackaawiʔ-     white of the eye
+  karaaruʔ             → stem: karaar-         belly, abdomen; stomach
+  kickaraaruʔ          → stem: kickaraar-      abdomen, stomach, belly
+  kipaasiʔuʔ           → stem: kipaasiʔ-       fan, as a hand fan or an electric fan; u
+  ... and 25 more
+
+==============================================================================
+SYSTEM 3: AGENT POSSESSION (general nouns)
+ku-(INDF) + MODE + ir-/a-(A.POSS) + uk(exist) + NOUN
+------------------------------------------------------------------------------
+General nouns: 1556
+
+Construction (from BB Lesson 7, p. 35):
+  1sg: kti ratiru NOUN     = my NOUN
+       ku(INDF)+ti(IND) ra(GER)+t(1A)+ir(A.POSS)+u(exist)
+  2sg: kti rasiru NOUN     = your NOUN
+       ku(INDF)+ti(IND) ra(GER)+s(2A)+ir(A.POSS)+u(exist)
+  3sg: kti rau NOUN        = his/her NOUN
+       ku(INDF)+ti(IND) ra(GER)+Ø(3A)+a(A.POSS)+u(exist)
+
+==============================================================================
+DEPENDENT NOUNS — RELATIONAL (N-DEP, non-body)
+------------------------------------------------------------------------------
+Relational dependent nouns: 19
+These require a possessor but are not body parts.
+Possession mechanism TBD — may use agent or physical possession.
+
+  aras-                     stem: aras-              cooked food, esp. bread and meat
+  awi-                      stem: awi-               fleeting image; quick motion
+  haak-, rak-               stem: haak-, rak-        wood; tree
+  haas-, has-               stem: haas-, has-        line; rope, cord, string, thong
+  hat-                      stem: hat-               hole
+  hatawi-, ratawi-          stem: hatawi-, ratawi-   hole
+  hiihis-                   stem: hiihis-            night, as a twenty-four-hour period
+  iit-                      stem: iit-               body (living or dead); corpse; carcass
+  iriwis-                   stem: iriwis-            war party; troop, company of soldiers; l
+  raa-                      stem: raa-               way, custom, tradition; activity, event;
+  ratawi-, hatawi-          stem: ratawi-, hatawi-   hole
+  rut-                      stem: rut-               snake
+  saak-                     stem: saak-              sun; day
+  tariir-                   stem: tariir-            seam
+  uhur-                     stem: uhur-              way, behavior; image, shape
+  ... and 4 more
+
+==============================================================================
+BLUE BOOK VALIDATION EXAMPLES
+------------------------------------------------------------------------------
+Total test cases: 33
+  kinship                    22 examples
+  body_part                   4 examples
+  general                     3 examples
+  verbal_have                 3 examples
+  patient_possession          1 examples
+
+  [body_part         ] Ti rit•paks•ku
+                      = Here is my head
+                      < ti(IND.3) + ri(PHY.POSS) + t(1.A) + paks(head) + ku(sit)
+
+  [body_part         ] Ti rit•kirik•ta
+                      = Here is my eye
+                      < ti(IND.3) + ri(PHY.POSS) + t(1.A) + kirik(eye) + ta(hang)
+
+  [body_part         ] Tiku•paks•taari'
+                      = My head hurts
+                      < ti(IND) + ku(1.P) + paks(head) + taari'(hurt.IMPF)
+                      NOTE: Passive construction — 'it hurts to-me head'; ku- is patient, not agent poss
+
+  [body_part         ] Tiku'ks•taari'
+                      = My hand hurts
+                      < ti(IND) + ku(1.P) + iks(hand) + taari'(hurt.IMPF)
+                      NOTE: ti+ku+iks → tiku'ks (u+i drops; spelling rule BB p.22)
+
+  [kinship           ] atias
+                      = my father
+
+  [kinship           ] atira'
+                      = my mother
+
+  [kinship           ] atipat
+                      = my grandfather
+
+  [kinship           ] atika'
+                      = my grandmother
+
+  [kinship           ] aʔas
+                      = your father
+                      NOTE: BB spells as 'hags' (OCR may garble ʔ)
+
+  [kinship           ] asas
+                      = your mother
+
+  [kinship           ] apat
+                      = your grandfather
+
+  [kinship           ] aka'
+                      = your grandmother
+
+  [kinship           ] ara
+                      = your brother
+
+  [kinship           ] atat
+                      = your sister
+
+  [kinship           ] tiwaciriks
+                      = my uncle
+
+  [kinship           ] paciriks
+                      = your uncle
+
+  [kinship           ] tiki'
+                      = my son
+
+  [kinship           ] tsuwat
+                      = my daughter
+
+  [kinship           ] tiwat
+                      = my niece/nephew
+
+  [kinship           ] swat
+                      = your niece/nephew
+
+  [kinship           ] raktiki
+                      = my grandchild
+
+  [kinship           ] arakis
+                      = your grandchild
+
+  [kinship           ] hiʔaastiʔ
+                      = his father
+                      NOTE: BB spells 'hidsti'' (OCR garbled)
+
+  [kinship           ] hisaastiʔ
+                      = his mother
+                      NOTE: BB spells 'hisdsti''
+
+  [kinship           ] hikaariʔ
+                      = his grandmother
+                      NOTE: BB spells 'hikdri''
+
+  [kinship           ] ipaaktiʔ
+                      = his grandfather
+                      NOTE: BB spells 'hipdkti''
+
+  [general           ] kti•ratiru paks•kuuku'
+                      = my hat
+                      < ku(INDF)+ti(IND) ra(GER)+t(1.A)+ir(A.POSS)+u(exist) paks-kuuku'(hat)
+
+  [general           ] kti rasiru paks•kuuku'
+                      = your hat
+                      < ku(INDF)+ti(IND) ra(GER)+s(2.A)+ir(A.POSS)+u(exist) paks-kuuku'(hat)
+
+  [general           ] kti•ra•u paks•kuuku'
+                      = his hat
+                      < ku(INDF)+ti(IND) ra(GER)+Ø(3.A)+a(A.POSS)+u(exist) paks-kuuku'(hat)
+
+  [verbal_have       ] Tah•ra
+                      = I have it
+                      < ta(IND.1/2) + t(1.A) + ra(have)
+                      NOTE: Verbal possession — not morphological noun possession
+
+  [verbal_have       ] Tas•ta
+                      = You have it
+                      < ta(IND.1/2) + s(2.A) + ra(have)
+                      NOTE: r→t after s (sound change Rule 8R)
+
+  [verbal_have       ] Tah•raspe' asaki
+                      = I'm looking for my dog
+                      < ta(IND.1/2) + t(1.A) + raspe'(look.for) asaki(dog)
+                      NOTE: 'my' is implied by the 1sg agent — the dog is not morphologically possessed
+
+  [patient_possession] tatuuhkuutit aruusaʔ
+                      = I killed your horse
+                      < ta(IND.1/2) + t(1.A) + a(2.P) + uur(PHY.POSS) + kuutik(kill)
+                      NOTE: Patient a- (2nd person) + uur- marks that the PATIENT possesses the noun
+
+==============================================================================
+STEM EXTRACTION QUALITY CHECK
+------------------------------------------------------------------------------
+Verifying stem extraction by comparing stripped suffixes:
+
+  Suffix: (none)
+    -kaa-                → -kaa-           (grandmother)
+    kaaʔas               → kaaʔas          (train; car, automobile; truck)
+    kaaʔat               → kaaʔat          (hail)
+    kaaʔat               → kaaʔat          (January, a lunar month that ov)
+    kaaʔata              → kaaʔata         (upland plover (Upland Sandpipe)
+
+  Suffix: -iriʔ
+    Arahuusiriʔ          → Arahuus-        (Kaw City, Okla)
+    arikiisiriʔ          → arikiis-        (loin, body area on either side)
+    askatahciriʔ         → askatahc-       (sole (of foot))
+    awaahiriʔ            → awaah-          (chest, bosom)
+    cpikiriʔ             → cpik-           (lower abdomen; mons pubis)
+
+  Suffix: -kis
+    arakis               → ara-            (sonny; daughter, an appelative)
+    awahkis              → awah-           (youngest)
+    hariikis             → harii-          (calf; new-born calf)
+    hastaakis            → hastaa-         (leather thong, leather string)
+    hukawikis            → hukawi-         (lance, spear)
+
+  Suffix: -kiʔ
+    kiriirawakiʔ         → kiriirawa-      (appaloosa)
+    tahaawakiʔ           → tahaawa-        (fruit)
+    asaawakiʔ            → asaawa-         (pinto, spotted horse)
+
+  Suffix: -kusuʔ
+    askatakusuʔ          → askata-         (horseshoe)
+    ckuhkakusuʔ          → ckuhka-         (roach headdress)
+    ckuskakusuʔ          → ckuska-         (chair; stool)
+    cpakaatakusuʔ        → cpakaata-       (female chorus, four female sin)
+    cpiikicakusuʔ        → cpiikica-       (pin; safety pin)
+
+  Suffix: -uʔ
+    kaaʔasasuʔ, kaasasuʔ → kaaʔasasuʔ, kaasas- (car wheel, automobile wheel)
+    kaaʔasaturaaruʔ      → kaaʔasaturaar-  (railroad, railroad tracks, rai)
+    kaaʔaskucuuʔ         → kaaʔaskucu-     (truck)
+    kaackaawiʔuʔ         → kaackaawiʔ-     (white of the eye)
+    kaackaraaruʔ         → kaackaraar-     (calf of the leg, which is said)
+
+==============================================================================
+LOCATIVE SUFFIXES (from Grammatical Overview Table 4)
+------------------------------------------------------------------------------
+  -biriʔ     class: body_part       instrumental/locative ('with, on')
+  -ru        class: tribal_geo      locative ('among, in territory of')
+  -wiru      class: tribal_geo_a    locative variant (names ending in -a)
+  -kat       class: other           locative ('in, on; among')
+
+  Body part plural: -raar- (before -biriʔ)
+  Example: ikstaaririʔ 'with the hands; on the hands'
+           < iks(hand) + -raar-(PL) + -biriʔ(INST/LOC)

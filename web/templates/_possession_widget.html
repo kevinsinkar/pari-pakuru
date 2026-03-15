@@ -1,0 +1,179 @@
+{# Possession paradigm widget — loaded lazily via HTMX or JS fetch #}
+{# Expects: headword, noun_class passed as data attributes on the container #}
+
+<section class="entry-section possession-section" id="possession-section"
+         data-headword="{{ entry.headword }}"
+         data-noun-class="{{ entry.grammatical_class or '' }}">
+
+    {% set is_interesting = entry.grammatical_class in ('N-DEP', 'N-KIN') %}
+
+    <details class="possession-details" {% if is_interesting %}open{% endif %}>
+        <summary>
+            <h3 style="display: inline;">Possession</h3>
+            <span class="badge badge--computed" id="poss-system-badge" style="display: none;"></span>
+        </summary>
+
+        <div class="possession-body" id="possession-body">
+            <div class="poss-loading" id="poss-loading">
+                <small style="color: var(--earth-500);">Loading possession forms...</small>
+            </div>
+        </div>
+    </details>
+</section>
+
+<script>
+(function() {
+    const section = document.getElementById('possession-section');
+    const details = section.querySelector('.possession-details');
+    const body = document.getElementById('possession-body');
+    const loading = document.getElementById('poss-loading');
+    const badge = document.getElementById('poss-system-badge');
+    const headword = section.dataset.headword;
+    const nounClass = section.dataset.nounClass;
+    let loaded = false;
+
+    function loadPossession() {
+        if (loaded) return;
+        loaded = true;
+
+        fetch('/api/possession/' + encodeURIComponent(headword))
+            .then(r => r.json())
+            .then(data => {
+                if (data.error) {
+                    section.style.display = 'none';
+                    return;
+                }
+                renderPossession(data);
+            })
+            .catch(() => {
+                loading.innerHTML = '<small style="color: var(--clay-600);">Could not load possession data.</small>';
+            });
+    }
+
+    function renderPossession(data) {
+        // System label badge
+        badge.textContent = data.system_label;
+        badge.style.display = 'inline-flex';
+
+        let html = '';
+
+        // --- Locative stems: informational panel instead of person forms ---
+        if (data.system === 'locative') {
+            html += '<div class="poss-locative-panel">'
+                  + '<div class="poss-locative-heading">This is a locative stem</div>'
+                  + '<div class="poss-locative-stem ipa">'
+                  + escHtml(data.stem + '-') + ' <em>"' + escHtml(data.meaning) + '"</em>'
+                  + '</div>'
+                  + '<p class="poss-locative-note">'
+                  + 'Locative stems are incorporated into verb phrases as '
+                  + 'spatial modifiers. They are not independently possessed.'
+                  + '</p>';
+            if (data.example) {
+                html += '<div class="poss-locative-example">'
+                      + '<strong>Example:</strong> <span class="ipa">'
+                      + escHtml(data.example) + '</span>'
+                      + '</div>';
+            }
+            if (data.variants && data.variants.length) {
+                html += '<div class="poss-locative-variants">'
+                      + '<small>Variant stems: ' + escHtml(data.variants.join(', ')) + '</small>'
+                      + '</div>';
+            }
+            html += '</div>';
+            body.innerHTML = html;
+            return;
+        }
+
+        // Construction note
+        if (data.construction_note && data.system !== 'kinship') {
+            html += '<div class="poss-construction">'
+                  + '<code>' + escHtml(data.construction_note) + '</code>'
+                  + '</div>';
+        }
+        if (data.system === 'kinship') {
+            html += '<div class="poss-construction">'
+                  + '<em>Suppletive — each person has a unique stem</em>'
+                  + '</div>';
+        }
+
+        // Person cards grid
+        html += '<div class="poss-persons">';
+        data.persons.forEach(function(p, i) {
+            const active = i === 0 ? ' poss-card-active' : '';
+            html += '<div class="poss-card' + active + '" data-index="' + i + '" onclick="selectPossCard(' + i + ')">'
+                  + '<div class="poss-card-label">' + escHtml(p.label) + '</div>'
+                  + '<div class="poss-card-form ipa">' + escHtml(p.form) + '</div>'
+                  + '<div class="poss-card-confidence">' + confidenceBadge(p.confidence, p.is_attested) + '</div>'
+                  + '</div>';
+        });
+        html += '</div>';
+
+        // Morpheme breakdown panel (shows for selected person)
+        html += '<div class="poss-breakdown" id="poss-breakdown">';
+        data.persons.forEach(function(p, i) {
+            const vis = i === 0 ? '' : ' style="display:none"';
+            html += '<div class="poss-morph-detail" data-morph-index="' + i + '"' + vis + '>';
+            if (data.system === 'kinship') {
+                html += '<span class="ipa">' + escHtml(p.form) + '</span>';
+            } else {
+                html += '<span class="ipa">' + escHtml(p.morphemes) + '</span>';
+            }
+            if (p.gloss) {
+                html += '<br><small style="color: var(--earth-500);">' + escHtml(p.gloss) + '</small>';
+            }
+            html += '</div>';
+        });
+        html += '</div>';
+
+        // Data source note
+        const anyAttested = data.persons.some(function(p) { return p.is_attested; });
+        if (anyAttested) {
+            html += '<div class="poss-source"><small class="badge badge--attested">ATTESTED — Parks Appendix 3</small></div>';
+        } else {
+            html += '<div class="poss-source"><small class="badge badge--computed">COMPUTED — not directly attested</small></div>';
+        }
+
+        body.innerHTML = html;
+    }
+
+    function confidenceBadge(confidence, isAttested) {
+        if (isAttested) return '<span title="Attested form" style="color: var(--sage-600);">&#10003;</span>';
+        const dots = {high: 3, medium: 2, low: 1};
+        const n = dots[confidence] || 1;
+        let s = '';
+        for (let i = 0; i < 3; i++) {
+            s += i < n
+                ? '<span style="color: var(--earth-700);">&#9679;</span>'
+                : '<span style="color: var(--earth-200);">&#9679;</span>';
+        }
+        return s;
+    }
+
+    function escHtml(s) {
+        if (!s) return '';
+        const d = document.createElement('div');
+        d.textContent = s;
+        return d.innerHTML;
+    }
+
+    // Expose card selection globally for onclick
+    window.selectPossCard = function(idx) {
+        document.querySelectorAll('.poss-card').forEach(function(c) {
+            c.classList.toggle('poss-card-active', parseInt(c.dataset.index) === idx);
+        });
+        document.querySelectorAll('.poss-morph-detail').forEach(function(m) {
+            m.style.display = parseInt(m.dataset.morphIndex) === idx ? '' : 'none';
+        });
+    };
+
+    // Auto-load for N-DEP / N-KIN (expanded by default)
+    if (details.open) {
+        loadPossession();
+    }
+
+    // Lazy-load for N (collapsed by default) — load on first expand
+    details.addEventListener('toggle', function() {
+        if (details.open) loadPossession();
+    });
+})();
+</script>

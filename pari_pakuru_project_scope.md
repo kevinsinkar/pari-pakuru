@@ -218,6 +218,23 @@ Also strips whitespace from `phonetic_form` fields. Preserves `•` syllable dot
 
 ## Todo: Remaining Work
 
+### Priority Roadmap *(added 2026-03-15)*
+
+High-impact items ordered by learner value, not technical dependency:
+
+| Priority | Phase | What | Why |
+|----------|-------|------|-----|
+| 🔴 1 | 3.1.5 | Noun possession morphology | Learners hit this in Blue Book Lessons 1–5; currently zero coverage |
+| 🔴 2 | 3.1 (stem extraction) | Dictionary-wide stem extraction | 76% on 7 verbs vs 15% on all verbs — this is the wall |
+| 🔴 3 | 4.3 | Confidence scoring on computed forms | Learners can't tell a 94%-likely form from a 31%-likely one |
+| 🔴 4 | 3.1 (accent) | Accent mark generation | Phonemic in Skiri — wrong accent = wrong word |
+| 🔴 5 | 4.4 | Community feedback mechanism | Low effort, enables the tool to improve itself over time |
+| 🔴 6 | 5.2 (exports) | Printable PDFs + Anki export | Design Principle #3 is underbuilt; teachers need offline materials now |
+| 🟡 7 | Ongoing | Blue Book 518-gap triage | Measures what the tool can't yet handle for classroom use |
+| 🟡 8 | 3.1.6 | Function word inventory | Needed before sentence construction can work |
+| 🟡 9 | 3.2a | Template-based sentence assembly | First usable step toward sentence construction |
+| 🟡 10 | 5.1 | Structured lesson content | Blue Book curriculum extraction for progressive learning |
+
 ### ✅ Phase 1.2 — Database Schema
 **Script:** `scripts/import_to_db.py` (implied by DB existence)
 **What it does:** SQLite database (`skiri_pawnee.db`) unifying S2E and E2S data.
@@ -432,30 +449,143 @@ Tasks completed:
 - Descriptive-ku verb system overhaul: DESC_KU_MODE_OVERRIDES, raktah plural, 3pl prefix markers, ku→kuu lengthening, aca→acu u-raising (+8%)
 - "to come" structural fixes: negative kaakaa, 3.A stem, subjunctive shortening, gerundial/potential/infinitive preverb handling (+4%)
 
-Tasks remaining (priority order):
+Tasks remaining (priority order — revised 2026-03-15):
 - [x] ~~"to be sick" descriptive verb fixes~~ — **done**: 37→97/110 exact (88%)
 - [x] ~~"to come" structural fixes~~ — **done**: 21→34/110 exact (31%), 70 close (accent-only), 6 remaining MISS
-- [ ] **Accent mark generation** — 70 "to come" close matches + ~15 other verbs differ only by accent marks (á, í, ú); implementing stress assignment would boost ~85 forms to exact (~9% overall gain)
-- [ ] **"to come" remaining 6 MISS** — assertive/absolutive 3du (3.A stem used instead of du stem), gerundial 2sg (GER shortening fires on PREV label), 3pl sub suffix contraction (stem deleted); also 3pl sub `verb_class='1'` string adds SUB suffix incorrectly
+- [ ] **🔴 Accent mark generation** — 70 "to come" close matches + ~15 other verbs differ only by accent marks (á, í, ú); implementing stress assignment would boost ~85 forms to exact (~9% overall gain). **Elevated priority**: accent/pitch is phonemic in Skiri — generated forms without correct accent marks are unreliable for actual speech. Affects every computed paradigm form shown to learners. This is a learner-safety issue, not just an accuracy metric.
+- [ ] **🔴 Dictionary stem extraction improvements** — main bottleneck for dict-wide accuracy (14.8% exact vs 76.2% on Appendix 1). This is the wall between "a conjugation engine that works on 7 test verbs" and "a tool that can inflect any verb a learner looks up." Requires: automated stem boundary detection, verb class inference from dictionary entry shape, preverb identification from `stem_preverb` field.
 - [ ] **"to do it" investigation** (74/110, 12 MISS) — largest remaining mismatch gap after "to come"
+- [ ] **"to come" remaining 6 MISS** — assertive/absolutive 3du (3.A stem used instead of du stem), gerundial 2sg (GER shortening fires on PREV label), 3pl sub suffix contraction (stem deleted); also 3pl sub `verb_class='1'` string adds SUB suffix incorrectly
 - [ ] VD(u) descriptive verb stem extraction (1% exact in dict validation)
 - [ ] VT(3) Class 3 ut- fusion logic (0% exact in dict validation)
-- [ ] Dictionary stem extraction improvements (main gap for dict-wide accuracy)
+
+### 🔲 Phase 3.1.5 — Noun Possession Morphology *(NEW — detailed 2026-03-15)*
+**Priority:** 🔴 High (#1 on roadmap — learners encounter this in Blue Book Lessons 1–5; zero coverage currently)
+**Depends on:** Phase 3.1 (morpheme slot system — reuses pronominal prefixes), Appendix 3 kinship data (already extracted), Phase 2.3 sound changes (for stem concatenation)
+**Effort:** Medium-Large
+**Script:** `scripts/noun_possession.py`
+**Output:** `extracted_data/noun_possession_catalog.json`, `reports/phase_3_1_5_noun_possession.txt`
+
+Skiri has **four distinct possession systems**, not one. Each applies to different noun classes with different morphological mechanisms. The grammar engine needs to know which system to use for any given noun, then generate the correct form.
+
+**The four systems (from Parks Grammatical Overview pp. 36–37 + Blue Book Lessons 5, 7):**
+
+| System | Applies to | Mechanism | Example |
+|--------|-----------|-----------|---------|
+| 1. Kinship | N-KIN (~23 terms) | Suppletive stems — irregular my/your/his forms | "mother": my=atiraʔ, your=asaas, his=isaastiʔ |
+| 2. Body part / physical | N-DEP (body parts) | ri- (PHY.POSS) prefix in verb introducer; noun incorporated | ti+ri+t+kirik+ta → "Ti rit•kirik•ta" (Here is my eye) |
+| 3. Agent possession | N (general nouns) | ku-(INDF) + gerundial possessive verb + NOUN | kti ratiru pakskuuku' (my hat) |
+| 4. Patient possession | Any noun | uur- prefix when non-agent possesses | tatuuhkuutit aruusaʔ (I killed YOUR horse) |
+
+**System 1 — Kinship (N-KIN):** Fully irregular — each term has suppletive 1sg/2sg/3sg forms that must be memorized. Already extracted in `appendix3_kinship.json` (23 terms with paradigms). Blue Book Lesson 7 confirms: atias (my father), aʔas (your father), hiʔaastiʔ (his father). 3rd-person forms use hi- prefix + modified stem + -tiʔ suffix as a partial pattern.
+
+**System 2 — Body part (N-DEP):** Body parts are expressed via verb incorporation. The noun drops its nominal suffix (-uʔ) and enters the verb phrase. Possession is marked by ri- (PHY.POSS) in slot 17 + agent pronoun. Blue Book Lesson 5:
+- `ti + ri + t + paks + ku` → Ti rit•paks•ku (Here is my head [sitting])
+- `ti + ri + t + kirik + ta` → Ti rit•kirik•ta (Here is my eye [hanging])
+- Position verbs: ku (sitting — head, round objects), ta (hanging — most body parts)
+
+**System 3 — Agent possession (general nouns):** Uses a possessive verb construction, not a prefix. Blue Book Lesson 7 ("Specifying Verbs — Possessives"):
+- 1sg: `kti ratiru NOUN` (my NOUN) — ku(INDF)+ti(IND) ra(GER)+t(1A)+ir(A.POSS)+u(exist)
+- 2sg: `kti rasiru NOUN` (your NOUN) — ra(GER)+s(2A)+ir(A.POSS)+u(exist)
+- 3sg: `kti rau NOUN` (his/her NOUN) — ra(GER)+Ø(3A)+a(A.POSS)+u(exist)
+- The noun stands independently (not incorporated). This is the default for animals, objects, places.
+
+**System 4 — Patient possession:** uur- prefix marks that the verb's patient (not agent) possesses the noun. Grammatical Overview p. 37: `tatuuhkuutit aruusaʔ` (I killed your horse) = ta+t(1A)+a(2P)+uur(PHY.POSS)+kuutik(kill). The patient pronoun specifies the possessor.
+
+**Sources:**
+| Source | What it provides |
+|--------|-----------------|
+| `extracted_data/appendix3_kinship.json` | 23 kinship terms with my/your/his paradigms (already extracted) |
+| `extracted_data/grammatical_overview.json` | Possession section pp. 36-37 (4 systems); Table 9 (Pronominal Prefixes: t-/s-/Ø/ir-/acir-/a-); Table 7 slot 17 (PHY.POSS ri-), slot 18 (PAT.POSS uur-); Table 4 (Case/Number suffixes); Table 5 (Noun Derivation: -uʔ, -kis, -kusuʔ); noun incorporation rules p. 13 (drop -uʔ/-kis) |
+| `Dictionary Data/skiri_to_english_respelled.json` | All 4,273 S2E entries; filter N/N-DEP/N-KIN (~1,200+ nouns) |
+| `Dictionary Data/english_to_skiri_linked.json` | E2S cross-references for possessive glosses |
+| `pari pakuru/Blue_Book_Pari_Pakuru.txt` | Lesson 5 (body part possession with ri-, ~8 examples), Lesson 7 (kinship + general possession, ~20 examples), Lesson 4 (verbal "have" with ra, ~6 examples), Lesson 8 (implicit possession "my dog") |
+| `scripts/morpheme_inventory.py` | Existing conjugation engine — reuse `_smart_concatenate`, pronominal prefix tables, sound change pipeline |
+
+**Noun stem extraction:** Independent nouns must be reduced to stems before incorporation. The script strips nominal suffixes: -uʔ (absolutive, most common), -kis (diminutive), -kusuʔ (augmentative), -biriʔ (instrumental/locative on body parts). Example: iksuʔ → iks- (hand), paksuʔ → paks- (head), asaakiʔ → asaa- (dog < asaa- + -kis).
+
+**Locative suffixes (Table 4):** Related to possession — body parts use -biriʔ for both locative AND instrumental; tribal/geo names use -ru/-wiru; other nouns use -kat. Body part plural: -raar- (inserted between stem and -biriʔ). Example: ikstaaririʔ (with/on the hands) < iks + -raar- + -biriʔ.
+
+Tasks:
+- [ ] **Extract & classify all nouns** — filter S2E for N/N-DEP/N-KIN, extract stems (strip -uʔ/-kis), classify by possession system (kinship/body_part/general/relational)
+- [ ] **Build kinship paradigm table** — map appendix3 data to structured 1sg/2sg/3sg forms; cross-validate against Blue Book Lesson 7 examples
+- [ ] **Implement body-part possession constructor** — generate MODE+ri+AGENT+STEM+VERB for any body-part noun; handle position verb selection (ku vs ta); integrate Phase 2.3 sound changes for surface form
+- [ ] **Implement agent possession constructor** — generate `kti + GER-POSS-VERB + NOUN` for any general noun; handle 1sg/2sg/3sg possessive verb forms (ratiru/rasiru/rau)
+- [ ] **Document patient possession pattern** — uur- prefix construction from Grammatical Overview p. 37; add to morpheme inventory (slot 18)
+- [ ] **Implement locative suffix system** — -biriʔ (body part LOC/INST), -kat (general LOC), -ru/-wiru (tribal/geo LOC); body-part plural -raar- before -biriʔ
+- [ ] **Validate against 30+ Blue Book examples** — hand-extracted test cases from Lessons 4, 5, 7, 8 covering all 4 systems
+- [ ] **Populate DB tables** — `noun_stems` (entry_id, stem, suffix, possession_type), `kinship_paradigms` (1sg/2sg/3sg forms), `possession_examples` (BB test cases)
+- [ ] **Integrate into web UI** — "My / Your / His" toggle on noun entry cards; show morpheme breakdown of generated possessive form; mark all generated forms as COMPUTED with confidence tier (see Phase 4.3)
+- [ ] **Handle N-DEP relational nouns** — non-body dependent nouns (e.g., relational terms); determine whether they follow body-part or agent-possession pattern (may require per-entry annotation)
+
+### 🔲 Phase 3.1.6 — Function Word & Particle Inventory *(NEW)*
+**Priority:** Medium (needed for sentence construction; these are the glue words)
+**Depends on:** Phase 3.1 (morpheme slot system), Phase 2.1 (semantic tags)
+**Effort:** Medium
+
+Dictionary entries classified as CONJ, DEM, PRON, QUAN, LOC, INTERJ, ADV need to be formalized into a structured inventory with usage rules — not just dictionary definitions. For sentence construction (Phase 3.2), these must be queryable: "which demonstrative goes with visible referents?" "where does the question particle go in the clause?"
+
+Sources:
+- S2E entries with grammatical_class in {CONJ, DEM, PRON, QUAN, LOC, INTERJ, ADV, NUM}
+- `extracted_data/grammatical_overview.json` — clause structure, word order rules
+- Blue Book dialogues — natural usage of particles in context
+
+Tasks:
+- [ ] Inventory all function words from dictionary (~200–300 entries across classes)
+- [ ] Classify demonstratives by spatial/visibility distinction (if Parks documents this)
+- [ ] Map interrogative particles and their clause-position rules
+- [ ] Document discourse/evidential particles (evidentiality is marked by proclitics, but also by standalone particles)
+- [ ] Create `function_words` DB table with: word, class, subclass, position_rule, usage_notes
+- [ ] Cross-reference with Blue Book dialogue examples for natural usage patterns
+- [ ] Integrate into sentence builder (Phase 3.2) as selectable modifiers
 
 ### 🔲 Phase 3.2 — Sentence Construction Framework
-**Priority:** Low (depends on 3.1 accuracy improvements)
-**Depends on:** Phase 3.1 (morpheme slot system at 60%+ accuracy — **now at 76.2%**)
-**Effort:** Very Large
+**Priority:** Medium (depends on 3.1 accuracy improvements + 3.1.5 noun morphology)
+**Depends on:** Phase 3.1 (morpheme slot system at 60%+ accuracy — **now at 76.2%**), Phase 3.1.5 (noun possession), Phase 3.1.6 (function words)
+**Effort:** Very Large — **now broken into 3 sub-phases to make progress incremental**
 
 Given English input, construct Skiri output.
 
 Sources:
 - `extracted_data/appendix3_kinship.json` — 23 kinship terms with possessive paradigms (already extracted)
 - `extracted_data/grammatical_overview.json` — 23 pages of grammar (clause structure, word order)
-- Blue Book lesson dialogues as test cases
+- Blue Book lesson dialogues as test cases (88 examples currently in DB)
+
+#### Phase 3.2a — Template-Based Sentence Assembly *(start here)*
+**Priority:** Medium-High
+**Effort:** Medium
+
+Not free-form translation — guided construction from a fixed set of sentence patterns drawn from Blue Book dialogues. The 88 dialogue examples are the test suite.
+
+Tasks:
+- [ ] Extract sentence templates from Blue Book dialogues (e.g., "[person] [descriptive verb]", "I see the [noun]", "[person] is going to [place]")
+- [ ] Identify 10–15 high-frequency patterns that cover lessons 1–10
+- [ ] Build template engine: user selects pattern → fills slots with dictionary entries → engine inflects and assembles
+- [ ] Show full morpheme breakdown of assembled sentence (so learners see *why* it looks that way)
+- [ ] Validate each template output against attested Blue Book examples where available
+- [ ] Mark template outputs with confidence level (see Phase 4.3)
+
+#### Phase 3.2b — SOV Word-Order Engine
+**Priority:** Medium
+**Effort:** Medium
+**Depends on:** Phase 3.2a (templates provide test cases)
+
+Takes pre-inflected components and arranges them in correct Skiri clause structure.
 
 Tasks:
 - [ ] Map English sentence patterns to Skiri clause structure (SOV word order)
+- [ ] Handle question particle placement and clause-final positioning
+- [ ] Handle subordinate clause ordering (from grammatical overview)
+- [ ] Implement basic coordination (and, but, then) using CONJ inventory from Phase 3.1.6
+
+#### Phase 3.2c — Compositional Sentence Construction
+**Priority:** Low (most ambitious sub-phase)
+**Effort:** Very Large
+**Depends on:** Phases 3.2a, 3.2b, and high-accuracy stem extraction
+
+Full compositional system handling transitivity, evidentials, and complex clauses.
+
+Tasks:
 - [ ] Handle transitivity: subject/object marking, preverb system (ut-, ir-, uur-)
 - [ ] Implement proclitic system (indefinite ku-, reflexive witi-, dual si-, etc.)
 - [ ] Implement evidential system (quotative wi-, dubitative kuur-, etc.)
@@ -500,10 +630,41 @@ flashcards, and live search. Mobile-responsive via Pico CSS framework.
 - `/about` — About page with data source info
 
 ### 🔲 Phase 4.2 — Sentence Builder UI
-**Priority:** Low (depends on Phase 3.2)
+**Priority:** Low (depends on Phase 3.2a at minimum)
 **Effort:** Large
 
-Guided interface: select person/action/object/tense → assembled Skiri sentence with morpheme breakdown. Shows derivation steps so learners understand *why* the form looks the way it does.
+Guided interface: select person/action/object/tense → assembled Skiri sentence with morpheme breakdown. Shows derivation steps so learners understand *why* the form looks the way it does. Initially uses Phase 3.2a templates; grows with 3.2b/3.2c.
+
+### 🔲 Phase 4.3 — Confidence Scoring System *(NEW)*
+**Priority:** High (should ship alongside any computed forms in the web UI)
+**Depends on:** Phase 3.1 (conjugation engine validation data)
+**Effort:** Small-Medium
+
+The current attested/computed binary badge is necessary but insufficient. A form generated for a verb in the same class as "to go" (94% accuracy) is far more trustworthy than one using the same patterns as "to come" (31%). Learners need to know *how* computed a form is.
+
+Tasks:
+- [ ] Define 3-tier confidence model: **High** (verb class accuracy ≥ 85% + stem manually verified), **Medium** (verb class accuracy 60–85% OR stem auto-extracted), **Low** (verb class accuracy < 60% OR multiple sound change rules applied OR stem extraction uncertain)
+- [ ] Compute per-entry confidence scores using: verb class validation accuracy (from Phase 3.1 results), stem extraction method (manual vs auto), number of sound change rules applied (more rules = more compounding error), whether similar forms in the same paradigm were attested
+- [ ] Add `confidence_tier` column to `paradigmatic_forms` DB table
+- [ ] Display confidence as visual indicator on paradigm tables (e.g., ●●● high, ●●○ medium, ●○○ low)
+- [ ] Add tooltip/popover explaining what the confidence level means for that specific form
+- [ ] Log analytics: which confidence tiers are users viewing? (helps prioritize verification work)
+
+### 🔲 Phase 4.4 — Community Feedback Mechanism *(NEW)*
+**Priority:** High (low effort, critical for long-term data improvement)
+**Depends on:** Phase 4.1 (web interface)
+**Effort:** Small
+
+No mechanism currently exists for a knowledgeable user (teacher, elder's family member, former class student) to report that a computed form is wrong or confirm it's correct. Community corrections become a new source of attestation, gradually shrinking the "computed" category without requiring AI.
+
+Tasks:
+- [ ] Add "Flag this form" button on every computed form in paradigm tables and entry cards
+- [ ] Create `community_feedback` DB table: entry_id, form_field, suggested_correction, reporter_name (optional), timestamp, status (pending/reviewed/accepted/rejected)
+- [ ] Simple review queue page (admin-only route) listing pending feedback
+- [ ] "Confirm this form" button for attested forms — crowd-sourced verification
+- [ ] Track acceptance rate: how often does community feedback match attested forms? (validates the feedback quality)
+- [ ] Optional: email notification to project maintainer when new feedback arrives
+- [ ] Design principle: never auto-accept corrections — all feedback goes through human review
 
 ### 🔲 Phase 5.1 — Structured Lesson Content
 **Priority:** Medium (can start after Phase 4.1)
@@ -521,7 +682,7 @@ Tasks:
 - [ ] Interactive exercises: fill-in-the-blank, matching, translation drills
 
 ### 🟡 Phase 5.2 — Spaced Repetition / Flashcard Export
-**Priority:** Medium (low effort, high impact for self-directed learners)
+**Priority:** High — **elevated** (low effort, high impact; Design Principle #3 says "export everything" but the export tasks are still unbuilt. A teacher can hand out a printed paradigm table *today*; accuracy improvements help later.)
 **Depends on:** Phase 1.2 (dictionary data)
 **Effort:** Small
 
@@ -532,13 +693,14 @@ Tasks:
 - [x] Semantic category decks (19 categories: kinship, animals, body, food, etc.)
 - [x] Include pronunciation (IPA + simplified respelling) on every card
 - [x] Blue Book-attested entries prioritized in card selection
-- [ ] Anki deck export: Skiri → English and English → Skiri cards
+- [ ] **🔴 Printable PDF wordlists and paradigm tables for offline use** — highest-impact export for classroom use; target users may have inconsistent internet access
+- [ ] **🔴 Anki deck export**: Skiri → English and English → Skiri cards (large self-directed learner community uses Anki)
 - [ ] Blue Book lesson-aligned decks (vocabulary per lesson)
-- [ ] Printable PDF wordlists and paradigm tables for offline use
 - [ ] Audio placeholder fields (for future recordings)
 
 ### 🔲 Ongoing — Data Quality & Maintenance
 
+- [ ] **🔴 Blue Book gap triage** — 518 of 984 BB vocabulary items unmatched. Many are inflected verb forms or phrases derivable with a stronger conjugation engine, but some may be genuinely missing lexical items, loanwords, or conversational forms Parks didn't include. Systematic triage needed: (a) which gaps are inflected forms of existing entries? (b) which are multi-word constructions? (c) which are genuinely missing? This directly measures what the tool can't yet handle for classroom learners.
 - [ ] Resolve 362 unmatched E2S entries (most are parsing artifacts, some may be real terms)
 - [ ] Review 8 low-confidence homonym matches from linking
 - [ ] Version control: track changes to entries over time
@@ -554,9 +716,12 @@ These principles guide all user-facing features:
 
 1. **Every attested form is precious** — surface all attestations (dictionary + Blue Book + Parks examples) for any query, not just one "correct" answer
 2. **Show morphological breakdowns** — learners can't ask native speakers, so the tool must explain *why* a form looks the way it does (prefix + stem + suffix with labels)
-3. **Export everything** — PDF wordlists, Anki decks, printable paradigm tables. Digital tools disappear; offline materials persist
-4. **Record uncertainty** — mark generated (unattested) forms distinctly from documented ones. Learners must know what's verified vs. computed
+3. **Export everything** — PDF wordlists, Anki decks, printable paradigm tables. Digital tools disappear; offline materials persist. **This is underbuilt relative to its importance** — see Phase 5.2 elevated priority.
+4. **Record uncertainty with granularity** — mark generated (unattested) forms distinctly from documented ones. Learners must know what's verified vs. computed. **Go beyond binary**: use confidence tiers (high/medium/low) so learners know *how* uncertain a computed form is (see Phase 4.3).
 5. **Privilege primary sources** — Parks Dictionary and Blue Book are the authorities; computed forms are supplements, never replacements
+6. **Community governance over correctness** *(NEW)* — the tool should never be the sole authority on what counts as correct Skiri. Provide mechanisms for knowledgeable community members to flag errors, confirm forms, and contribute corrections. Human review gates all feedback before it enters the system (see Phase 4.4).
+7. **Accent is not optional** *(NEW)* — pitch/accent placement in Skiri is phonemic (changes meaning). Any generated form without correct accent marks is unreliable for speech. Treat accent assignment as a learner-safety issue, not a cosmetic improvement (see Phase 3.1 accent task).
+8. **Build for the classroom first** *(NEW)* — the primary users are teachers and students in community language classes. Prioritize features that serve that context: printable materials, lesson-aligned content, Word of the Day, simple UI that works on low-bandwidth connections. Self-directed online learners are an important secondary audience.
 
 ---
 
@@ -585,6 +750,7 @@ These principles guide all user-facing features:
 | `analyze_dual_plural.py` | `scripts/` | Phase 3.1: Gemini-powered morpheme breakdown analysis for dual/plural forms | Yes (GEMINI_API_KEY) |
 | `retry_failed_grammar.py` | `scripts/` | Phase 3.1: retry failed grammar pages with plain-text Gemini or Claude API | Yes (GEMINI_API_KEY or ANTHROPIC_API_KEY) |
 | `merge_grammar_retries.py` | `scripts/` | Phase 3.1: merge recovered grammar page data into grammatical_overview.json | No |
+| `noun_possession.py` | `scripts/` | Phase 3.1.5: noun possession morphology — extract nouns, classify possession systems, build kinship paradigms, generate possessive forms, validate against BB (--extract, --report, --validate, --db, --generate HEADWORD) | No |
 
 ## Environment
 
@@ -595,11 +761,71 @@ These principles guide all user-facing features:
 
 ---
 
+## AI Development Tools & Model Selection
+
+### claude.ai Chat vs. Claude Code in VS Code
+
+**They are NOT the same model by default.** Understanding the difference matters for this project:
+
+| | claude.ai (this chat) | Claude Code (VS Code extension / CLI) |
+|---|---|---|
+| **Default model** | Opus 4.6 (on Pro/Max) | **Sonnet 4.6** (on Pro plan, $20/mo) |
+| **Best for** | Long-form design discussion, architecture planning, document review, linguistic analysis | File editing, script writing, running commands, multi-file code changes |
+| **Context window** | 200K tokens (standard) | 200K standard; 1M beta on Max/Enterprise |
+| **Can run code?** | Yes (sandbox) | Yes (your actual local files + terminal) |
+| **Sees your codebase?** | Only uploaded files | Full repo access (reads/writes your files directly) |
+
+**Key implication for this project:** Claude Code on a Pro plan runs **Sonnet 4.6**, which is excellent for coding but less strong on the kind of deep linguistic reasoning this project requires (morpheme analysis, sound change rule design, Pawnee grammar interpretation). The intelligence gap matters most for Phases 3.x (morphology engine work).
+
+### Recommended Workflow
+
+**Use claude.ai (Opus) for:**
+- Linguistic analysis: morpheme breakdown design, sound change rule debugging, grammar interpretation from Parks
+- Architecture decisions: DB schema design, engine design, phase planning
+- Document review: reading this scope doc, analyzing Blue Book content, design decisions
+- Complex debugging: "why does my conjugation engine produce X instead of Y for this verb class?"
+
+**Use Claude Code (Sonnet) for:**
+- Writing and editing Python scripts (morpheme_inventory.py, sound_changes.py, etc.)
+- Flask/web UI work (templates, CSS, routes)
+- Running validation scripts and interpreting output
+- Bulk file operations, refactoring, test writing
+- Database migrations and import scripts
+
+**If you want Opus in Claude Code:**
+- **Max plan ($100–200/mo):** Opus 4.6 is available as default. Run `/model opus` in Claude Code.
+- **Pro plan ($20/mo):** Opus is available only via `/extra-usage` (pay-per-use on top of subscription). Run `/model opus` after enabling extra usage in settings.
+- **Hybrid approach (`opusplan`):** Uses Opus for planning/reasoning, Sonnet for code execution. Run `/model opusplan`. Good middle ground for this project — Opus reasons about the morphology, Sonnet writes the code.
+
+**Practical tip for this project:** Start complex morphology work sessions in claude.ai (Opus) to get the logic right, then move to Claude Code (Sonnet) to implement it. Share this scope document at the start of each session so the AI has full context. The `opusplan` mode is worth trying for Phase 3.x work where the reasoning and the implementation are tightly coupled.
+
+### Model Configuration (Claude Code)
+
+```bash
+# Check current model
+claude /status
+
+# Switch model for current session
+claude /model          # interactive picker
+claude /model opus     # Opus 4.6 (requires Max or extra-usage)
+claude /model sonnet   # Sonnet 4.6 (default on Pro)
+claude /model opusplan # Opus plans, Sonnet executes
+
+# Set permanent default (add to shell profile)
+export ANTHROPIC_MODEL=claude-sonnet-4-6  # or claude-opus-4-6
+```
+
+---
+
 ## How to Use This Document
 
 Reference any section by name when starting a new chat. For example:
-- "I want to work on **Phase 1.1c — Pronunciation Respelling Engine**"
-- "Let's tackle **Phase 2.1 — Semantic Category Tagging**"
-- "Help me with the **362 unmatched E2S entries** from the linking step"
+- "I want to work on **Phase 3.1.5 — Noun Possession Morphology**"
+- "Let's tackle **Phase 4.3 — Confidence Scoring System**"
+- "Help me with the **Blue Book 518-gap triage** from the Ongoing section"
+- "I want to work on **Phase 3.2a — Template-Based Sentence Assembly**"
+- "Let's build the **Anki deck export** from Phase 5.2"
 
 The AI should read this document, understand the current data state, and pick up from the referenced step without needing the full conversation history.
+
+**For Claude Code sessions:** Share this file at session start with `@pari_pakuru_project_scope.md` or include it in your project's `CLAUDE.md` file. See the **AI Development Tools** section for model selection guidance.

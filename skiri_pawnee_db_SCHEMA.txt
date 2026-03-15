@@ -1,0 +1,32 @@
+Current skiri_pawnee.db schema as of MAR-13-2026 11:56
+
+Core Tables
+lexical_entries — 4273 S2E dictionary entries (primary table)
+
+entry_id TEXT PK, headword, normalized_form, phonetic_form, simplified_pronunciation
+stem_preverb, grammatical_class, verb_class, additional_forms (JSON)
+page_number, column_position, compound_structure (JSON), raw_entry_json
+blue_book_attested INTEGER
+glosses — English definitions (multi-sense per entry)
+paradigmatic_forms — Forms 1-5 for each entry
+examples — Skiri/English example sentences
+etymology — Raw etymology, literal translation, constituent morphemes (JSON)
+cognates — Arikara, Kitsai, etc. cognate forms
+derived_stems — Derived stem forms with definitions
+english_index — 6414 E2S entries linked to S2E via entry_id
+cross_references — E2S cross-reference links
+
+Phase 2+ Tables
+semantic_tags — 7097 tags (keyword/Gemini sourced, with confidence)
+blue_book_attestations — BB vocabulary matched to dictionary entries
+sound_change_rules — 24 formal rules (restricted/unrestricted, vowel/consonant)
+
+Phase 3.1 Tables
+verb_paradigms — 770 conjugation forms (7 verbs x 10 modes x 11 person-numbers)
+irregular_verb_roots — 9 suppletive verb roots (sg/du/pl stems)
+morpheme_abbreviations — 164 abbreviations with forms
+morpheme_inventory — 37 morphemes mapped to template slots
+verb_template_slots — 27 slot definitions (proclitics, inner prefixes, suffixes)
+
+FTS5 Virtual Tables
+fts_glosses, fts_examples, fts_english_index — full-text search with sync triggers (INSERT/UPDATE/DELETE)

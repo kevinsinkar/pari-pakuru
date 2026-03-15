@@ -1,57 +1,93 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% block title %}P&#226;ri Pak&#251;ru'{% endblock %} — Skiri Pawnee Dictionary</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="/static/css/style.css">
-    <script src="https://unpkg.com/htmx.org@2.0.4"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}P&#226;ri Pak&#251;ru'{% endblock %} — Skiri Pawnee Dictionary</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;1,8..60,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Pico CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+
+  <!-- Custom Pawnee theme -->
+  <link rel="stylesheet" href="/static/css/pawnee-theme.css">
+
+  <!-- HTMX -->
+  <script src="https://unpkg.com/htmx.org@2.0.4"></script>
 </head>
 <body>
-    <header class="container">
-        <nav>
-            <ul>
-                <li><a href="/" class="site-title"><strong>P&acirc;ri Pak&ucirc;ru'</strong></a></li>
-            </ul>
-            <ul>
-                <li><a href="/browse">Browse</a></li>
-                <li><a href="/flashcards">Flashcards</a></li>
-                <li><a href="/guide">Syllable Guide</a></li>
-                <li><a href="/about">About</a></li>
-            </ul>
-        </nav>
-        {% block header_search %}
-        <form action="/search" method="get" class="nav-search" role="search">
-            <input
-                type="search"
-                name="q"
-                placeholder="Search Skiri or English..."
-                value="{{ request.args.get('q', '') }}"
-                aria-label="Search the dictionary"
-                hx-get="/search/partial"
-                hx-trigger="keyup changed delay:400ms"
-                hx-target="#live-results"
-                hx-params="q"
-                hx-indicator="#search-spinner"
-                autocomplete="off"
-            >
-        </form>
-        {% endblock %}
-    </header>
+  <!-- ====== Top Navigation ====== -->
+  <header class="container">
+    <nav>
+      <ul>
+        <li>
+          <a href="/" class="contrast" style="text-decoration:none; display:flex; align-items:center; gap:0.75rem;">
+            <span style="
+              width:36px; height:36px; border-radius:50%;
+              background: linear-gradient(135deg, var(--clay-600), var(--gold-400));
+              display:flex; align-items:center; justify-content:center;
+            ">
+              {# Morning Star motif -- central to Pawnee cosmology #}
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2L15.5 8.5L22 12L15.5 15.5L12 22L8.5 15.5L2 12L8.5 8.5L12 2Z" fill="white" opacity="0.9"/>
+              </svg>
+            </span>
+            <span>
+              <strong class="font-serif" style="font-size:1.2rem; letter-spacing:-0.3px;">P&#226;ri Pak&#251;ru'</strong>
+              <br>
+              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Skiri Pawnee Dictionary</small>
+            </span>
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li><a href="/" {% if active_page == 'home' %}aria-current="page"{% endif %}>Dictionary</a></li>
+        <li><a href="/browse" {% if active_page == 'browse' %}aria-current="page"{% endif %}>Browse</a></li>
+        <li><a href="/flashcards" {% if active_page == 'flashcards' %}aria-current="page"{% endif %}>Flashcards</a></li>
+        <li><a href="/guide" {% if active_page == 'guide' %}aria-current="page"{% endif %}>Syllable Guide</a></li>
+        <li><a href="/dashboard" {% if active_page == 'dashboard' %}aria-current="page"{% endif %}>Dashboard</a></li>
+        <li><a href="/about" {% if active_page == 'about' %}aria-current="page"{% endif %}>About</a></li>
+      </ul>
+    </nav>
+    {% block header_search %}
+    <form action="/search" method="get" class="nav-search" role="search">
+      <input
+        type="search"
+        name="q"
+        placeholder="Search Skiri or English..."
+        value="{{ request.args.get('q', '') }}"
+        aria-label="Search the dictionary"
+        hx-get="/search/partial"
+        hx-trigger="keyup changed delay:400ms"
+        hx-target="#live-results"
+        hx-params="q"
+        hx-indicator="#search-spinner"
+        autocomplete="off"
+      >
+    </form>
+    {% endblock %}
+  </header>
 
-    <main class="container">
-        <div id="live-results"></div>
-        {% block content %}{% endblock %}
-    </main>
+  <!-- ====== Main Content ====== -->
+  <main class="container">
+    <div id="live-results"></div>
+    {% block content %}{% endblock %}
+  </main>
 
-    <footer class="container">
-        <small>
-            P&acirc;ri Pak&ucirc;ru' — Skiri Pawnee Language Preservation Project.
-            Data from Douglas R. Parks, <em>A Dictionary of Skiri Pawnee</em>.
-        </small>
-    </footer>
+  <!-- ====== Footer ====== -->
+  <footer class="container">
+    <small style="color:var(--earth-500);">
+      P&#226;ri Pak&#251;ru' — Skiri Pawnee Language Preservation Project.
+      Data: Douglas R. Parks Dictionary &amp; Blue Book Textbook.
+      Built with respect for the Pawnee Nation.
+    </small>
+  </footer>
 
-    <script src="/static/js/search.js"></script>
+  <script src="/static/js/search.js"></script>
+  {% block scripts %}{% endblock %}
 </body>
 </html>

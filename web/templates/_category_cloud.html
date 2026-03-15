@@ -1,0 +1,26 @@
+{#
+  _category_cloud.html -- Semantic browsing categories
+
+  Expected context:
+    tags -- list of (tag_name, count) tuples from db.get_all_tags()
+#}
+
+{% if tags %}
+<article class="category-card">
+  <small class="section-label">Browse by category</small>
+
+  <div style="display:flex; flex-wrap:wrap; gap:0.4rem;">
+    {% for tag_name, count in tags[:15] %}
+    <a class="cat-tag" href="/browse/tag/{{ tag_name }}">
+      {{ tag_name }}
+      <small style="opacity:0.6; font-size:0.65rem;">{{ count }}</small>
+    </a>
+    {% endfor %}
+    {% if tags|length > 15 %}
+    <a class="cat-tag" href="/browse" style="font-style:italic;">
+      All categories...
+    </a>
+    {% endif %}
+  </div>
+</article>
+{% endif %}

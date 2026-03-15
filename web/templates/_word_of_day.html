@@ -1,0 +1,51 @@
+{#
+  _word_of_day.html -- Word of the Day sidebar card
+
+  Expected context:
+    word_of_day.entry_id                  -- str
+    word_of_day.headword                  -- str
+    word_of_day.simplified_pronunciation  -- str|None
+    word_of_day.first_gloss               -- str|None
+    word_of_day.grammatical_class         -- str|None
+    word_of_day.blue_book_attested        -- bool
+    wotd_date                             -- str, e.g. "Mar 15"
+#}
+
+{% if word_of_day %}
+<article class="wotd-card">
+  {# Banner header #}
+  <div class="wotd-header">
+    <small class="wotd-label">Word of the Day</small>
+    <small class="wotd-date">{{ wotd_date }}</small>
+  </div>
+
+  <div class="wotd-body">
+    {# The word #}
+    <a href="/entry/{{ word_of_day.entry_id }}" style="text-decoration:none;">
+      <p class="wotd-headword">{{ word_of_day.headword }}</p>
+    </a>
+
+    {# Pronunciation #}
+    {% if word_of_day.simplified_pronunciation %}
+    <small class="font-serif" style="color:var(--earth-500); display:block; margin-bottom:0.6rem;">
+      {{ word_of_day.simplified_pronunciation }}
+    </small>
+    {% endif %}
+
+    {# Definition #}
+    {% if word_of_day.first_gloss %}
+    <p class="wotd-gloss">{{ word_of_day.first_gloss }}</p>
+    {% endif %}
+
+    {# Badges #}
+    <div style="display:flex; gap:0.4rem; margin-top:0.5rem; flex-wrap:wrap;">
+      {% if word_of_day.grammatical_class %}
+      <span class="badge badge-class">{{ word_of_day.grammatical_class }}</span>
+      {% endif %}
+      {% if word_of_day.blue_book_attested %}
+      <span class="badge badge--bluebook">Blue Book</span>
+      {% endif %}
+    </div>
+  </div>
+</article>
+{% endif %}
