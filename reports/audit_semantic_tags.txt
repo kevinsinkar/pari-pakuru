@@ -1,0 +1,1276 @@
+======================================================================
+Semantic Tag Audit Report — Gemini-powered
+Generated: 2026-03-15 19:28:26
+======================================================================
+
+Total audited:  3194
+Correct:        1946
+Incorrect:      1248
+API errors:     360
+
+BY TAG:
+  Tag              Total  Correct  Incorrect  Error%
+  --------------------------------------------------
+  animal             417      285        132   31.7%
+  body               495      321        174   35.2%
+  celestial          267      144        123   46.1%
+  clothing           218      110        108   49.5%
+  color              179      161         18   10.1%
+  food               322      199        123   38.2%
+  number             367       92        275   74.9%
+  plant              292      224         68   23.3%
+  speech             147      103         44   29.9%
+  tool               238      114        124   52.1%
+  water              252      193         59   23.4%
+
+INCORRECT TAGS (to be removed):
+  Headword                  Tag          Reason                                  
+  --------------------------------------------------------------------------------
+  a                         animal       The word describes a state ('be stretche
+  akarawiisuʔ, akarawis     animal       The definition describes a 'tipi cover' 
+  arikariipiiruʔ            animal       The word describes an object ('hair tie'
+  ariktariipiiruʔ           animal       The word describes an object ('hair tie'
+  asaataatuʔ                animal       Manure is animal waste, not an animal it
+  askawarik                 animal       A 'trap, snare' is an object used for an
+  askiiskatawicaku          animal       A 'flesher' is a tool, not an animal, ev
+  askiispatuʔ               animal       A 'scraper' is a tool, not an animal, ev
+  aspiituʔ                  animal       'Toenail; claw; hoof' are body parts of 
+  astihaaruʔ                animal       'Crown of the head' or 'top of a buffalo
+  atiikacaciks              animal       The definition is for a plant, not an an
+  awakiir/kir               animal       It's an adjective describing a state, no
+  awarii                    animal       It's a verb of motion, not an animal.   
+  awaʔa                     animal       It's a verb of motion, not an animal.   
+  awihurahac                animal       It's a verb meaning to disappear, not an
+  awikaaʔa                  animal       It's a verb of motion, not an animal.   
+  awitawaruk                animal       It describes a quality of movement, not 
+  awuh                      animal       It's a verb describing an action, not an
+  cuuhaarukaʔac             animal       The definition 'cut bangs' refers to hum
+  haakapaktaarik            animal       The definition 'drum, beat a drum' refer
+  haakapiru                 animal       The definition 'beat a drum' refers to a
+  haakapiruus               animal       The definition 'barrel' refers to an obj
+  haakaʔuʔ                  animal       The definition 'mouth' is a general body
+  haaskiica                 animal       While 'collar' can be for an animal, the
+  haasta                    animal       The definition 'be tied on with a string
+  haaʔat                    animal       The definition 'wade across water; walk,
+  hawiitik                  animal       The definition describes a general actio
+  hiihpahat                 animal       The primary meaning is a type of grass (
+  hiikuʔ, hiikusuʔ          animal       The definition refers to a human physiol
+  hukakusuʔ                 animal       The definition refers to a group of peop
+  huukitawiitik             animal       The definition describes a general actio
+  ickariihuwaah             animal       The word describes the action 'skin' or 
+  ickariitaruhaʔuk          animal       The word describes the action 'tan a hid
+  ickataapiiriitik          animal       The word describes the action 'look up' 
+  icusaa                    animal       The word describes the action 'snort'. '
+  iitkickaruuwat            animal       The word describes the action 'milk' or 
+  ikita                     animal       The word describes the action 'ride'. 'a
+  ikita(wi)-                animal       The word describes states/actions 'astri
+  ikitawiitik               animal       The word describes the action 'mount' or
+  ikitawuh                  animal       The word describes the action 'put on a 
+  ikskawiʔat                animal       The word describes the actions 'stroke, 
+  irisirik                  animal       The word describes the actions 'plant, b
+  kaackaraaruʔ              animal       The definition 'calf of the leg' refers 
+  kaackaraaruʔ              animal       The definition 'calf of the leg' refers 
+  kaakaaraarihtawuh         animal       The word describes the action 'put a cro
+  kaatiiwiʔuskaraʔuk        animal       The word describes the actions 'cuss out
+  kaaʔa                     animal       The definition 'sprout, come up, as a pl
+  kaaʔa                     animal       The definition 'sprout, come up, as a pl
+  kaaʔasaturaaruʔ           animal       The definition refers to infrastructure 
+  kaaʔasaturaaruʔ           animal       The definition refers to infrastructure 
+  kaaʔat                    animal       The definition describes a verb of motio
+  kaaʔat                    animal       The definition describes a verb of motio
+  kactahaaruʔ               animal       The definition refers to a type of grass
+  karaʔuk                   animal       The definition describes a verb of creat
+  katasa                    animal       The definition describes position or lin
+  kataʔiwarik               animal       The definition refers to the verb 'to sw
+  kiica                     animal       It's a verb describing wearing something
+  kiicawiʔuʔ                animal       Necklace is an object, not an animal.   
+  kiisiriwisisuʔ, kiisiriwi animal       Describes a tool (fishhook) used for cat
+  kiiskatariwis             animal       Describes a tool (fishhook) used for cat
+  kiiskatawakta/taa         animal       It's a verb describing a sound made by a
+  kiispakta/taa             animal       It's a verb describing a sound, not an a
+  kiispaktaahus             animal       Whistle is a tool, not an animal.       
+  kiispatuʔ                 animal       Fishhook is a tool, not an animal.      
+  kiispirariiraʔuk          animal       It's a verb describing an action perform
+  kikaarik                  animal       It's a verb describing an action (giving
+  kikak                     animal       It's a verb describing human emotion/act
+  kipaar                    animal       It's an adjective describing a state of 
+  kipiriir                  animal       It's an adjective describing a state (fr
+  kiwak                     animal       The word describes an action (barking/ye
+  kiwak [+ raar-]           animal       The word describes an action (barking), 
+  kusaraat                  animal       The word describes an action (rubbing), 
+  paaraar                   animal       This refers to the verb 'to hide' or 'to
+  paaraar                   animal       This refers to the verb 'to hide' or 'to
+  pahuksacaciks             animal       Buffalo gourd is a plant, not an animal.
+  pakskatuus                animal       Flat-headed is an adjective describing a
+  pakskiciis                animal       Bald head, bald-headed describes a chara
+  pakskiraruuc              animal       Bald head describes a characteristic, no
+  paraakahaʔ                animal       Horse-mint is a plant, not an animal. Th
+  parihik                   animal       This describes a quality ('be sleek, smo
+  parusasuʔ                 animal       Bush-clover, rabbit foot is a plant, not
+  piicuuc                   animal       Needle grass is a plant, not an animal. 
+  pira-                     animal       This describes a verb of action (raking,
+  pirakus                   animal       This describes a state or quality (crook
+  pirawiitik                animal       This describes a verb of action (twist, 
+  raarawuh                  animal       This is a verb 'to fish,' not an animal 
+  raaruuhc                  animal       This describes a state or quality (rusty
+  raawiraraʔuk              animal       This is a verb 'to imitate.' 'As an anim
+  racahiis                  animal       This describes a state or quality (rough
+  racapirat                 animal       This is a verb 'to grate,' not an animal
+  racapiraʔa                animal       This is a verb 'to scrape.' While 'hide'
+  rahkatapiraʔa             animal       This is a verb 'to scrape.' While 'hide'
+  rahuuparik                animal       This is a verb 'to send inside,' not an 
+  rarariiruku               animal       A flashlight is an object, not an animal
+  rariihuhkatakustaah       animal       This describes a verb phrase 'to be bran
+  rat                       animal       The definition describes general verbs o
+  raʔuk                     animal       The definition describes general verbs o
+  riicawirikisa             animal       The definition describes a general verb 
+  ripaaraar                 animal       'Hide' in this context means to conceal,
+  rirahkaaʔat               animal       The definition describes a state of mind
+  ruuwarii                  animal       The definition is a verb of motion/actio
+  ruuʔat                    animal       The definition is a verb of transfer, no
+  ruuʔat                    animal       The definition is a verb of motion, not 
+  ta                        animal       The definition is a verb describing a st
+  taahpiiraah               animal       The definition is a verb of carrying/pac
+  taahpuh                   animal       The definition is a verb of packing, not
+  taakakus                  animal       The definition is a verb describing a st
+  taakis                    animal       The definition refers to a material deri
+  taarikiihk                animal       The definition is a verb of action, not 
+  taawiruus                 animal       The definition is an adjective describin
+  tahurahcak                animal       The definition is a verb phrase, not an 
+  takipuh                   animal       The definition is a verb describing an a
+  takustaah                 animal       The definition is a verb of carrying, no
+  takuusk                   animal       The definition is a verb of attachment, 
+  taraka                    animal       The definition describes a state of bein
+  taripas                   animal       The definition describes being short or 
+  tawaas                    animal       The definition describes a skin conditio
+  tawasiiraʔuk              animal       The definition describes an action (infl
+  tawicak                   animal       The definition describes an action (tap,
+  tawiitik                  animal       The definition describes an action (perc
+  tiiriwis-                 animal       The definition describes a manner of car
+  uhuraar                   animal       The definition describes a verb of motio
+  uhuraaraʔuk               animal       The definition describes an action (imit
+  uhuuriciriwisat           animal       The definition describes an action (pran
+  uuhak                     animal       The definition describes a verb of motio
+  uuspaa                    animal       The definition describes the growth of h
+  uʔa                       animal       The definition describes a verb of motio
+  uʔat                      animal       The definition describes a verb of motio
+  waarukstiiraʔuk           animal       The definition describes an action (make
+  wakta/taa                 animal       The definition describes making a noise;
+  wararuus                  animal       The definition describes a quality (fuzz
+  wiitik                    animal       The definition describes a verb of postu
+  a (ir...) istuʔ           body         The definition describes a verb of motio
+  aciks-                    body         refers to abstract mental concepts, not 
+  aciksiciisat              body         refers to a mental state, not a physical
+  acikskaaʔa                body         refers to mental actions, not physical b
+  aciksta                   body         describes an action of care/observation,
+  aciksuuwicaks             body         refers to mental actions/states, not phy
+  apiic                     body         'body' refers to a mass of water, not a 
+  apitaarahak               body         describes an action of movement/directio
+  araawihiriʔ               body         describes a spatial relationship/locatio
+  askawarik                 body         The definition is about trapping 'an ani
+  askiiskatawicaku          body         Refers to 'buffalo tibia' and processing
+  askiispatuʔ               body         Refers to 'elk antler' and processing hi
+  at istuʔ                  body         The word 'back' here refers to direction
+  atipahat                  body         The main meaning is a type of bean (plan
+  awarii                    body         This is a verb of motion, not a body par
+  awarik                    body         These are verbs of action, not body part
+  awiciihkuk                body         These are verbs of action, not body part
+  awiicawatkaʔiir           body         The main meaning is the action of throwi
+  awiiraarik                body         This is a positional verb, not a body pa
+  awiirahiriʔ               body         This is a preposition/adverb of location
+  awiirakus                 body         This is a positional verb, not a body pa
+  awiirasa                  body         This is a positional verb, not a body pa
+  awiiraʔat                 body         These are verbs of motion/position, not 
+  awikatahak                body         These are verbs of motion, not body part
+  awikatahak                body         These are verbs of motion, not body part
+  awikiickawarik            body         The main meaning is the action of roping
+  awitawaruk                body         The main meaning is about being fast/ade
+  caakarikuk                body         'nail' here refers to a metal fastener, 
+  caakawiʔuʔ                body         'nail' here refers to a metal fastener, 
+  caapiʔuʔ                  body         'foot-bridge' refers to a type of bridge
+  cawihaaruʔ                body         The main meaning is an object ('pillow')
+  ckahiikaraʔuks            body         'wash basin' is an object, not a body pa
+  ckapicistuukus            body         'face powder' is a cosmetic product, not
+  ckataahisiku              body         'towel' is an object, not a body part, e
+  cuskatit                  body         The main meaning is a type of horse (an 
+  haakatawuh                body         This is a verb of transfer, not an actio
+  haaskiihkaʔuuc/uc-        body         This describes actions of lacing/tying o
+  haawatiihus               body         Coil, wire, and spring are objects/shape
+  hariicapaat               body         The main meaning is a female calf (an an
+  hariikis                  body         The main meaning is a calf (an animal), 
+  hariipahat                body         The main meaning is an unborn calf/fetus
+  hariirahkata              body         The main meaning is a newborn calf (an a
+  hariiʔuʔ                  body         The word 'calf' refers to a young animal
+  hariwiita                 body         The word 'calf' refers to a young animal
+  hatuhkat                  body         'Rear' in this context refers to a spati
+  hawaastatkiicuʔ           body         The definition refers to 'chewing gum', 
+  hirasat                   body         'Head' is used metaphorically for 'front
+  hirasiriʔ                 body         'Head' is used metaphorically for 'front
+  huhkakusuʔ                body         'Sole' refers to a part of a moccasin, n
+  hukahaaruʔ                body         'Bottom' refers to a geographical area, 
+  hukaka-                   body         'Bottom', 'base', 'foot' refer to spatia
+  hukakaa-                  body         'Bottom', 'base', 'foot' refer to spatia
+  hukakaawihiriʔ            body         'Bottom', 'base', 'foot' refer to spatia
+  hurarii                   body         'Foot', 'base', 'bottom' refer to parts 
+  huurickahiriʔ             body         'head' is used metaphorically to mean 'f
+  huurickakus               body         'head' is used metaphorically to mean 'f
+  icahpuh                   body         'side' refers to the side of an object o
+  icakaraʔuk                body         No body parts are mentioned or implied i
+  icakawat                  body         No body parts are mentioned or implied; 
+  icawatkaʔiir              body         The definition describes draping over an
+  icawicparik               body         'eye up and down' uses 'eye' as a verb o
+  ickawiitik                body         'face' is used as a verb of orientation 
+  ikiraahak                 body         This is a general verb of motion ('turn,
+  iksapitaarahak            body         The action is 'turn on, as a knob on an 
+  iksas                     body         This describes a 'toothed-edge scraper',
+  iraaha                    body         The word 'side' here refers to a general
+  iraahawi-                 body         The word 'side' here refers to a general
+  iraahawuh                 body         The word 'side' here refers to the side 
+  iriirakaahuraahkatiitu    body         The word 'side' here refers to a cardina
+  iriirakaahuraahkatiituhat body         The word 'side' here refers to a cardina
+  iripiitik                 body         The word 'side' here refers to a general
+  iritkat                   body         The word 'side' here refers to the side 
+  iriwiraahak               body         The word 'side' here refers to a general
+  istuʔ                     body         The word 'back' here refers to returning
+  iwiitk                    body         The word 'back' here refers to holding s
+  kaackawuh                 body         The word 'back' here refers to looking i
+  kaackawuh                 body         The word 'back' here refers to looking i
+  kaata-                    body         "back of" refers to spatial position, no
+  kaatahaahiriʔ             body         "back of" refers to spatial position, no
+  kaatakus                  body         "back" refers to spatial position, not t
+  kaatasa                   body         "back" refers to spatial position, not t
+  kaataʔiisat               body         "back" refers to spatial position, not t
+  kactawaas                 body         Refers to a plant, not a body part.     
+  karahkaac                 body         Refers to an animal, not a body part.   
+  karusik                   body         "back down" is a metaphorical verb, not 
+  karuus                    body         "back down" is a metaphorical verb, not 
+  karuusaʔiwarik            body         "back down" is metaphorical; "weaken res
+  katahak                   body         "back" refers to spatial direction, not 
+  katahkaa                  body         Refers to orientation, not a body part. 
+  katahkaa-                 body         Refers to orientation, not a body part. 
+  katasa                    body         "side of" refers to spatial position, no
+  katawiitik                body         Describes a behavioral state, not a body
+  katiihaks-                body         "side by side" refers to spatial arrange
+  kicpaktaarik              body         The primary meaning describes sounds and
+  kicuuciriik               body         The action 'scrape, peel off' is applied
+  kiicahiihtuʔ              body         Describes a substance ('grease, oil, ren
+  kiiriks                   body         Describes a general physical quality ('s
+  kiisiriwisisuʔ, kiisiriwi body         Describes a tool ('gorge, fishhook') tha
+  kiiskatariwis             body         Describes a tool ('gorge, fishhook') tha
+  kiispaktaahus             body         Describes a tool ('whistle') that is mad
+  kiispatuʔ                 body         Describes a tool ('fishhook'), not a bod
+  kiiwaʔutkaatiit           body         Black sage is a plant, not a body part. 
+  kipaasiʔuʔ                body         A fan is an object, not a body part.    
+  kirihcisuʔ                body         A sweat lodge is a structure, not a body
+  kirikskaʔiituʔ            body         A beaded strip is an object, not a body 
+  kirikskiic                body         A bead or hair-pipe is an object, not a 
+  kirikskiisuʔ              body         A bone bead or hairpipe is an artifact, 
+  kiriktaarawarii           body         Looking around or eyeing things are verb
+  kiripiitik                body         To eye, look at, or fix one's eyes on ar
+  ksawaahakus, ksawaahaku   body         Hired hand uses 'hand' metaphorically fo
+  kusaksiihaahiriʔ          body         Describes a location/direction ('on the 
+  kuuskituuwikus            body         Describes a spatial relationship ('side 
+  paahawihiriʔ              body         Describes a location/position ('on the s
+  paahawikat                body         Describes a position ('on its side'), no
+  paapiciscaakawiʔuʔ        body         'Metal nail' refers to a fastener, not a
+  pakspahat                 body         Refers to an animal (horse), not a human
+  parihik                   body         Describes general qualities that can app
+  parusasuʔ                 body         Refers to a plant, not a human body part
+  piraarik                  body         Describes the state of an object (paper)
+  pirakus                   body         Describes general shapes/states, not exc
+  raakaaʔa                  body         Refers to cognitive/mental processes, no
+  raakiriktawiʔat           body         Describes an action of perception/assess
+  raakiwat                  body         Refers to actions of planning/scheduling
+  raarirahaar               body         Refers to a general spatial concept ('ge
+  raawiiʔat                 body         Refers to general actions of assistance,
+  raaʔukta                  body         "by blood" is metaphorical for lineage, 
+  rahkiwir                  body         Refers to food preparation, not the body
+  rihik                     body         Refers to quantity ("one"), not a body p
+  riikskipiriiruʔ           body         Refers to a part of a plant ("ear of cor
+  riiksuʔ                   body         Refers to a part of a plant ("ear of cor
+  riisahkitawi              body         "Head" is used metaphorically to mean "l
+  riisahkitawiʔuʔ           body         "Head" is used metaphorically to mean "l
+  ritaʔuukuk                body         hand over is a transfer action, not rela
+  riwiiʔaar                 body         This describes an action (clench, double
+  riwiruu                   body         Describes shape (round, spherical), not 
+  rutkariis                 body         This is an animal, not a body part.     
+  ruurihiiraʔ               body         Describes location/direction, not relate
+  ruuʔa                     body         Describes motion/direction, not related 
+  ruuʔat                    body         hand over, pass over are transfer action
+  sistuʔ                    body         back refers to returning to a starting p
+  suhkataʔiituʔ             body         sole refers to a part of a moccasin, not
+  suuhuriʔ                  body         Describes location/direction, not relate
+  tahaari                   body         at the side of refers to spatial relatio
+  tahaariwuh                body         side by side refers to spatial relation,
+  tahik                     body         hit, strike is an action, even if using 
+  taraa                     body         side by side refers to spatial relation,
+  taraʔuk                   body         This describes an action (pick, pluck), 
+  tariihwarik               body         This describes an action (sew, stitch), 
+  tawatur                   body         This describes spatial relationships (be
+  taʔat                     body         This describes a verb of motion (climb),
+  tiirahk                   body         This describes spatial relationships (ar
+  tiraaha                   body         'Side' here refers to the side of an obj
+  tiraahawi-                body         'Side' here refers to the side of an obj
+  uhuriiwaawarik            body         These are verbs of motion/state (blown a
+  ukaawiʔat                 body         This describes a verb of motion (swing, 
+  ukac                      body         These are actions/states (tear, break), 
+  ukatk                     body         These are actions (cut, sever, tear), no
+  uktata-                   body         'Foot' here refers to the base of an obj
+  uktataka-                 body         'Foot' here refers to the base of an obj
+  uktatakat                 body         'Foot' here refers to the base of an obj
+  uuh/uh                    body         'Hand to' is a verb of transfer, not ref
+  uukata                    body         'Side' here refers to a spatial location
+  uukata-                   body         'Side' here refers to a spatial location
+  uukickata-                body         'Side' here refers to a spatial location
+  uukickatahaahiriʔ         body         'Side' here refers to a spatial location
+  waakaraʔuk                body         This describes actions related to plants
+  waasar                    body         These are verbs of position/state (stick
+  wakuhtaʔu                 body         'Tongue' is used metaphorically ('sharp 
+  wakuruuwaawaktiik/tik-    body         The definition describes an act of commu
+  wiirahak                  body         The definition describes general actions
+  wiiwarii                  body         The definition describes general movemen
+  wiiwarii                  body         The definition describes a general movem
+  wiruuhak                  body         The definition describes general actions
+  wiʔuu                     body         The word 'face' is used as a verb of ori
+  Akaarickariituʔ           celestial    The 'Sun Dance' is a ceremony or event, 
+  Kicpiirahaatus            celestial    The definition 'Beaver Creek' refers to 
+  Kicuuwiicaku              celestial    The definition 'Spring On The Bank' refe
+  Kisawaaks                 celestial    The definition 'Christmas Day' refers to
+  Paa Hiihwaakaruks         celestial    The definition 'May; April' refers to mo
+  Paahutawiʔuʔ              celestial    The definition 'March' refers to a month
+  Paahuuwaturikat           celestial    The definition 'April; February' refers 
+  Piiraʔuʔ Rarahkaataʔiispu celestial    The definition 'September' refers to a m
+  Tawaruukucuuʔ             celestial    The 'Doctors' Dance' is an event or cere
+  Tuhaawit                  celestial    The definition 'southern Pawnee bands' r
+  aahwirik                  celestial    The definition 'lose one's tooth' refers
+  aciksawiritaar            celestial    The definition 'feel warm, hot all over,
+  apitaarahak               celestial    This describes a general motion, not a c
+  ariikicparik              celestial    This describes a physical action, not a 
+  aspit                     celestial    These are types of animals (frogs), not 
+  astaaruukita              celestial    This describes a body part and spatial r
+  ati                       celestial    This describes a bodily function, not a 
+  atiraʔ                    celestial    These are kinship terms, not celestial c
+  awarii                    celestial    This is a verb of motion, not a celestia
+  awaʔa                     celestial    These are verbs of motion, not celestial
+  awiʔiikiwatak             celestial    These describe states of being/actions, 
+  ckaʔuʔ                    celestial    Face is a body part, not a celestial con
+  ckirihkaapiraat           celestial    Wolf is an animal, not a celestial conce
+  haapiʔuuhak               celestial    Tree is a plant, and falling is a motion
+  haarutpahat               celestial    Grass is a plant, not a celestial concep
+  haawatiihus               celestial    These describe objects or forms, not cel
+  haturaahpiraarik          celestial    The definition describes a crooked road/
+  hawaastatkiicuʔ           celestial    The definition is about chewing gum, whi
+  hawiʔuuhak                celestial    The definition describes falling into wa
+  hiihpahat                 celestial    The definition is about native grass, wh
+  huraahata                 celestial    The definition describes a hole in the g
+  huraahatawiʔuʔ            celestial    The definition describes a hole in the g
+  huukitahaawarii           celestial    The word describes an action (ice-skate)
+  huurik                    celestial    The definition describes getting burned 
+  huuriktik                 celestial    The definition describes warming or heat
+  icaʔis                    celestial    Refers to managing an earthly fire, not 
+  iisat                     celestial    Describes general disappearance over a t
+  iksapitaarahak            celestial    Refers to operating an appliance, not ce
+  ikstaawaasit              celestial    Refers to a body part's temperature, not
+  iripiitik                 celestial    Describes a physical action, not celesti
+  iriwiraahak               celestial    Describes a physical action/event, not c
+  iriwiraarahak             celestial    Describes a physical action, not celesti
+  iriwirik                  celestial    Describes a physical action/event, not c
+  itkaahkakus               celestial    Refers to an earthly fire for cooking, n
+  itkaahkakuusk             celestial    Refers to an earthly fire for cooking, n
+  itkasitik                 celestial    Refers to a human physiological state, n
+  kaacatk                   celestial    Refers to an earthly fire for cooking, n
+  kaacatk                   celestial    Refers to an earthly fire for cooking, n
+  kaahuraaruu               celestial    Refers to terrestrial geography (landsca
+  kaaripiikacaciks          celestial    Refers to a specific plant name, not cel
+  kahuukiicuʔ               celestial    Ice cream is a food item, not related to
+  karaarukuk                celestial    Belch/burp are bodily functions, not rel
+  kataarahkaaʔa             celestial    Grass sprouting is a botanical process, 
+  kataawaruucaku            celestial    A horn/bugle is a musical instrument, no
+  katahkaaʔ                 celestial    A tribe/person is not related to celesti
+  katahkawiiʔat             celestial    Verbs of motion/posture are not related 
+  katapakta/taa             celestial    Breaking wind/farting is a bodily functi
+  katuuraktaakaa            celestial    A snow goose is an animal (bird). The pr
+  kicaahkatakus             celestial    A 'spring' (season or water source) is n
+  kicaharaʔuk               celestial    Sweetening a liquid is a food preparatio
+  kiciiwakta/taa            celestial    Squeaking/creaking sounds are not relate
+  kickaruus                 celestial    Being limp or devoid of strength describ
+  kickataʔa                 celestial    Water boiling is a physical process, not
+  kickikarihiitk            celestial    Cooling a liquid is a temperature change
+  kickikarihik              celestial    A liquid being cool is a temperature sta
+  kickikarik                celestial    A liquid cooling is a temperature change
+  kicpariitaraʔuk           celestial    Warming/heating water is a temperature c
+  kicpiiraaruʔ              celestial    Water seepage or a water spring is a geo
+  kictahiis                 celestial    The main meaning is about water being dr
+  kictuuksuʔ                celestial    Cold, spring, or well water are not cele
+  kiiraasit                 celestial    Frozen water or ice are states of water,
+  kiiraasitaar              celestial    Water freezing or becoming icy are state
+  kiiraraasiituʔ            celestial    Cold or chilled water is not a celestial
+  kiiraritaʔu               celestial    Hot liquid or hot water is not a celesti
+  kiiraritaʔuʔ              celestial    Hot liquid or hot water is not a celesti
+  kiiwaakstaakaa            celestial    A goose is an animal, not celestial.    
+  kikarihik                 celestial    Being cool refers to temperature, not a 
+  kikarihitk                celestial    Cooling off refers to temperature, not a
+  kikarik                   celestial    Cooling off refers to temperature, not a
+  kiraawuh                  celestial    Spilling a liquid is an action, not cele
+  kirihpaapaapic            celestial    A firefly or lightning bug is an insect,
+  kiripaapaapic             celestial    A firefly or lightning bug is an insect,
+  kirir                     celestial    Shaking or trembling refers to a physica
+  kituks                    celestial    A beaver is an animal, not celestial.   
+  kucpaarika                celestial    A tea kettle or hot water pot is an obje
+  kuuctakaahak              celestial    Falling unconscious is a human state, no
+  paa                       celestial    Being a month refers to a unit of time, 
+  parustaakaa               celestial    A rabbit or jackrabbit is an animal, not
+  piraarik                  celestial    The definition describes a physical stat
+  pirawiitik                celestial    The definition describes a physical acti
+  piraʔa                    celestial    The definition describes a physical acti
+  raakaaruhkucuuʔ           celestial    The definition describes a 'meal' or 'di
+  raarapitaarahak           celestial    'Wind' in this context refers to winding
+  raaripakusuʔ              celestial    The definition describes a person's role
+  rarariiruku               celestial    The definition describes an object ('fla
+  raritaraʔuk               celestial    The definition describes an action ('hea
+  raritaʔu                  celestial    The definition describes the temperature
+  rihaks                    celestial    Describes a physical state (thick, gelle
+  rihaksit                  celestial    Describes a physical state (gelled, thic
+  riickaawis                celestial    Refers to a food item, not a celestial c
+  ritpaar                   celestial    Refers to burning coals and heat, not a 
+  riwiiʔaar                 celestial    Describes an action or physical state, n
+  ruuskiriʔis               celestial    Refers to a type of squash (food), not a
+  taharaʔuk                 celestial    The definition refers to flavoring ('sea
+  tahataʔu                  celestial    The definition describes taste qualities
+  takaahak                  celestial    The definition describes a physical acti
+  takaaʔa                   celestial    The definition describes a state of exha
+  taraasihaʔuk              celestial    Freezing is a weather phenomenon, not a 
+  tariitkahki               celestial    The definition describes a type of food,
+  taʔu                      celestial    The definition describes taste qualities
+  uhuuririkisat             celestial    The definition describes a physical acti
+  uhuuwi-                   celestial    The definition describes a physical acti
+  uhuuwiʔat                 celestial    The definition describes a physical acti
+  ukuk                      celestial    The definition describes a physical acti
+  usaahuhwica               celestial    Snowfall is a weather phenomenon, not a 
+  usaahuuruʔ                celestial    Falling snow is a weather phenomenon, no
+  usaaʔa                    celestial    Snow is a weather phenomenon, not a cele
+  uukaahkat                 celestial    The definition refers to a location, not
+  uʔa                       celestial    Fly refers to general motion through air
+  wariihaʔuk                celestial    Warm describes a temperature state, not 
+  wariit                    celestial    Warm describes a temperature state, not 
+  wariitaʔu                 celestial    Warm describes a temperature state, not 
+  wihak                     celestial    Fall over describes a general physical a
+  a                         clothing     Decorated and tattooed are general conce
+  akahpicistaʔuk            clothing     Paint a house/building is unrelated to c
+  akarawiisuʔ, akarawis     clothing     Tipi/tent covers are for shelter, not cl
+  arikawuh                  clothing     Braid refers to an action on hair, which
+  asaarahkata               clothing     Refers to the color of a horse, not clot
+  asaawitaksuʔ              clothing     A horse blanket is a covering for an ani
+  asataatkatakusuʔ          clothing     A saddle blanket is for a saddle/horse, 
+  askawarik                 clothing     Trap, snare are devices for catching ani
+  awaka-                    clothing     This describes a shape or mark, not an i
+  awuh                      clothing     This is a verb describing an action (str
+  awuh                      clothing     This is a verb related to drawing or pai
+  cawihaaruʔ                clothing     A pillow or cushion is a household item,
+  cihitkaʔuktuʔ             clothing     A mattress is bedding, not clothing.    
+  ckariitki                 clothing     Hide, skin, or pelt refers to a raw mate
+  ckuusuʔ                   clothing     This refers to a general covering or mat
+  cuskatit                  clothing     This describes a type of horse, an anima
+  haakaawatataʔuʔ           clothing     While 'cap' can mean headwear, the prima
+  haaskiihkasa              clothing     This is a verb describing a state or pro
+  haaskiihkaʔuuc/uc-        clothing     This is a verb describing an action (lac
+  haaskiiraʔuk              clothing     This is a verb describing an action (bra
+  haaskitawaawuh            clothing     This is a verb describing an action rela
+  haastawikuusk             clothing     This is a verb describing an action (tyi
+  hasickariituʔ             clothing     A leather strap or hide rope is a materi
+  haskiicuʔ                 clothing     String, cord, or thong are materials or 
+  haskiiruʔ                 clothing     These are materials or components (braid
+  haspaaksuʔ                clothing     A head strap for carrying a bundle is a 
+  haspacki                  clothing     Silk or satin are types of fabric/materi
+  hastaakis                 clothing     A leather thong or string is a material 
+  hihiituʔ                  clothing     A mat is typically a floor covering or s
+  hiitpiriik                clothing     This is a verb describing an action (pul
+  icawatkaʔiir              clothing     This is a general verb describing an act
+  ickariihuwaah             clothing     This is a verb describing an action (ski
+  ickariitaruhaʔuk          clothing     This is a verb describing an action (tan
+  ikiraarahak               clothing     This is a general verb describing an act
+  ikiraat                   clothing     This is a general verb describing an act
+  ikiriwiihaʔuk             clothing     This is a general verb describing an act
+  irisirik                  clothing     This is a general verb describing an act
+  iriwahik                  clothing     This is a general verb describing an act
+  iriwakus                  clothing     This describes a general state (being sp
+  kaarik                    clothing     This is a general verb of position, not 
+  kakus                     clothing     This is a general verb of position, not 
+  karaʔuk                   clothing     This is a general verb of creation, not 
+  kataʔuuc/uc-              clothing     While 'line with' can apply to clothing,
+  kawiitik                  clothing     This is a general verb of sitting, not r
+  kiictawakta/taa           clothing     A bell is not inherently clothing, even 
+  kiictawaktaarik           clothing     Ringing a bell is an action related to a
+  kiiriictaakaa             clothing     This describes a type of horse, not clot
+  kipaar                    clothing     Describes a state (wetness), not an item
+  kiraar                    clothing     Describes a color attribute, not an item
+  kiwat                     clothing     Describes an action (to take apart), not
+  kiwatak                   clothing     Describes a process of color change, not
+  kuckictahkata             clothing     Describes a substance (paint/pigment), n
+  kukatit                   clothing     Describes a type of horse, not clothing.
+  kusaraat                  clothing     Describes an action (to rub), not an ite
+  paac                      clothing     Describes types of insects, not clothing
+  paahukasa                 clothing     Describes a hairstyle, not an item of cl
+  paaraar                   clothing     Describes an action (to hide/escape), no
+  paaraar                   clothing     Describes an action (to hide/conceal one
+  pahaatuʔ                  clothing     Describes a substance (paint/pigment), n
+  pahukstaciituʔ            clothing     Describes a mat, not an item of clothing
+  pakskaa                   clothing     Describes the action of wearing, not an 
+  pakskawarik               clothing     Describes the action of putting on an it
+  pakspaahukasa             clothing     Describes a hairstyle, not an item of cl
+  pakspasaasi               clothing     Describes a hairstyle, not an item of cl
+  piciistaʔuk               clothing     Describes an action (to smear/apply), no
+  pira-                     clothing     Describes actions (raking, sweeping, scr
+  pirusas-i                 clothing     Describes actions (to whip, thrash, stra
+  raakiiraʔuk               clothing     This describes the action of stringing b
+  raarakaahki               clothing     While hide can be used for clothing, the
+  raaruuhc                  clothing     To 'be rusty' has no relation to clothin
+  raawikirikaaʔat           clothing     This describes the action of observing o
+  raawirariiraʔuk           clothing     This describes the action of drawing, no
+  raawisuʔ                  clothing     While paint can be used on clothing, the
+  racapirat                 clothing     This describes the action of grating foo
+  racapiraʔa                clothing     This describes the action of processing 
+  racariipuh                clothing     This describes the action of tying a bun
+  racawakta/taa             clothing     This describes the action or sound of a 
+  rahkariipuh               clothing     This describes the action of tying a bun
+  rahkatapiraʔa             clothing     This describes the action of processing 
+  rahkiihkaʔuuc/uc-         clothing     This describes the action of weaving, no
+  rahpahaahaʔuk             clothing     This describes the action of making some
+  rahuuwicat                clothing     This describes the action of being caref
+  raʔuk                     clothing     This is a general verb for making or con
+  riicawirikisa             clothing     This is a general verb of motion, not sp
+  riikaciituʔ               clothing     A squash mat is not an item of clothing.
+  riikakuspiruuʔat          clothing     Refers to opening doors or tent flaps, n
+  riisaapiʔuʔ               clothing     Refers to stakes for tipi covers or hors
+  riisaapuh                 clothing     Refers to staking down covers, not cloth
+  ripaaraar                 clothing     This is a general verb for hiding or con
+  siistaatuʔ                clothing     Bulrush is a plant, not clothing.       
+  taahuruus                 clothing     A general 'hoop' or 'ring' is not inhere
+  taarikiihk                clothing     This is a general verb for hanging, not 
+  taawiruus                 clothing     Refers to an implement for a game, not c
+  takasis                   clothing     Describes a state of density or closenes
+  takickuut                 clothing     Refers to the spoilage of plant matter, 
+  takickuuʔat               clothing     Refers to the spoilage of food, not clot
+  takipiir                  clothing     This is a general description of being w
+  takipuh                   clothing     Refers to closing objects like suitcases
+  takuusk                   clothing     This is a general verb for attaching, an
+  tarahkisiciisparik        clothing     This is a general verb for exhausting or
+  tawakta/taa               clothing     'ring' here refers to a sound (as a cloc
+  tawaktaarik               clothing     'ring' here refers to a sound (as with a
+  tawuh                     clothing     'tie on' is a general verb of attachment
+  uhuriiwaawarik            clothing     'weave' in this context refers to a gene
+  uuwatkawiʔuʔ              clothing     'outer ring' refers to a spatial boundar
+  wiiwarii                  clothing     'weave' here refers to a general back-an
+  wiiwarii                  clothing     'weave back and forth' refers to a gener
+  wirariihuraʔuk            clothing     This is a general verb for drawing or pa
+  akaraahuuruuhtuʔ          color        'white' refers to the ethnicity of settl
+  karahkaac                 color        The definition 'donkey' refers to an ani
+  katiictakaawaahak         color        To 'black out' in this context means to 
+  kawahki                   color        The main meaning is an animal (magpie), 
+  kipaar                    color        The definition describes states of wetne
+  kipiriir                  color        While 'green' is mentioned, it refers to
+  kipiriiruʔ                color        Similar to the previous entry, 'green co
+  kirikaac                  color        The definition describes a medical condi
+  kiwakuʔ                   color        The main meaning is a generic animal (fo
+  kstituuc                  color        The main meaning is an animal (flicker, 
+  paakis                    color        The definition describes an animal ('buf
+  pahuksacaciks             color        The definition describes a plant ('buffa
+  pakskaatiit               color        The definition describes a nationality (
+  parusasuʔ                 color        The definition describes a plant ('bush-
+  rikiiskiic                color        'White' refers to 'white settlers', not 
+  rutkariis                 color        'Black snake' is given as an example, no
+  tarat                     color        The definition is about the action of sl
+  uutkasis                  color        The word refers to an animal (quail), no
+  Ckiriraara                food         The word refers to a place name, not foo
+  Kicpiirahaatus            food         The word refers to a place name, not foo
+  Tuhkiicahiihtuʔ           food         The word refers to a place name, not foo
+  aaracaʔiwuu               food         The definition describes a body action (
+  ahihaʔuk                  food         The definition describes the action of m
+  ahiht                     food         The definition describes a physical stat
+  ahihtaar                  food         The definition describes a change in phy
+  akarahkata                food         Buckskin is animal hide, not typically f
+  akarawiisuʔ, akarawis     food         Tipi covers and tent covers are not food
+  apiic                     food         This describes a location or direction, 
+  ariikicparik              food         To wring out is an action, not a food it
+  aruhaʔuk                  food         To soften is a verb describing a change 
+  asaarahkata               food         A horse is an animal, not food in this c
+  asahi                     food         Mink and water dog are animals, not food
+  asawiitik                 food         This describes an action involving a bod
+  askiiskatawicaku          food         A flesher is a tool, not a food item, ev
+  awakiks, tawakiks         food         A water monster is a mythological creatu
+  awihaʔuukuk               food         This describes an action of movement, no
+  ckarucki                  food         While paunch can be food, here it's spec
+  ha-, haa-                 food         This is a locative prefix, not food.    
+  haahkahaaruʔ              food         These are geographical features or chann
+  haahkahaaruʔat            food         Describes being a geographical feature o
+  haahkahuuruʔ              food         These are geographical features or chann
+  haarik                    food         The definition describes a state of bein
+  haaʔat                    food         The definition describes a motion in wat
+  hakus                     food         The definition describes a state of bein
+  hakuusk                   food         The definition describes placing somethi
+  haruuc                    food         The definition describes a state of bein
+  hasa                      food         The definition describes a state of bein
+  haskiiruʔ                 food         While rawhide can be processed into food
+  hatkaahuuruʔ              food         The definition describes a type of hole,
+  hawiitik                  food         The definition describes an action in wa
+  hawiʔuuhak                food         The definition describes falling into wa
+  haʔiir                    food         The definition describes placing somethi
+  haʔiisat                  food         The definition describes a motion into w
+  haʔuuc/uc-                food         The definition describes placing somethi
+  haʔuukuk                  food         The definition describes a motion into w
+  hiriitik                  food         The definition describes actions in wate
+  hukaata-                  food         The definition describes a location rela
+  hukaatahaahiriʔ           food         The definition describes a location rela
+  hukaatahaaruʔ             food         The definition describes a geographical 
+  hukaatawiʔuʔ              food         The definition describes a geographical 
+  hukaka-                   food         The definition describes a direction or 
+  hukakaa-                  food         The definition describes location/direct
+  hukakaawihiriʔ            food         The definition describes location/direct
+  hukakawihiriʔ             food         The definition describes location/direct
+  huraakiicuʔ               food         Snow water is just water, not a food ite
+  huu-                      food         The definition describes movement/locati
+  huuca-                    food         The definition describes location, not f
+  huucakarus                food         Describes a state of being, not primaril
+  huucakus                  food         The definition describes location, not f
+  huucakusaaʔat             food         The definition describes an action on wa
+  huucakusat                food         The definition describes an action on wa
+  huucakusuuʔat             food         The definition describes an action on wa
+  huucasa                   food         The definition describes an action on wa
+  huukaahaaruʔ              food         The definition describes a geographical 
+  huukaawiʔuʔ               food         The definition describes a location/stat
+  huukata(wi)-              food         The definition describes direction/locat
+  huuʔat                    food         The definition describes movement in wat
+  huuʔiitik                 food         The definition describes movement in wat
+  kaaciks                   food         The definition describes a state of bein
+  kaaciks                   food         The definition describes a state of bein
+  karaaricakus              food         Describes a physical state of a person (
+  kica                      food         Describes water as a natural element in 
+  kicahaasta                food         Refers to a plant, not explicitly food. 
+  kicawihuukaaraʔa          food         Describes pumping water, not water as fo
+  kiciʔiihak                food         Describes a state of a container with li
+  kickaa                    food         Describes liquid in a container, not pri
+  kickaʔukuk                food         Describes water dripping, not related to
+  kickus                    food         A body of water (pool, puddle) describes
+  kictahiis                 food         This describes the absence or state of w
+  kictakaahak               food         This is a verb describing the movement o
+  kictiihak                 food         This describes a geographical feature (b
+  kicuuhiriʔ                food         This describes a location relative to wa
+  kicuutaʔa                 food         This describes the movement or state of 
+  kiicat                    food         This is a verb describing the movement o
+  kiicuʔat                  food         This describes the movement or state of 
+  kiirihuur                 food         This describes a characteristic of a bod
+  kiparaʔuk                 food         This is a general verb meaning 'to make 
+  kiraawiik/kirawiik        food         This is a general action of 'dipping a l
+  kirahkaa, kiirahkaa       food         This describes the state of a container 
+  kiraraah                  food         This describes the action of carrying or
+  kitarikuk                 food         While 'vegetable' is mentioned, the prim
+  kiwahaar                  food         This describes a geographical body of wa
+  kiwahaaruʔ                food         This describes a geographical body of wa
+  kskiikaraakuʔ             food         Leaves are a general botanical term; not
+  kurituukatawiʔuʔ          food         Lamps and lanterns are lighting devices,
+  kuruks                    food         A 'boil' or 'carbuncle' refers to a skin
+  paca                      food         This describes a physical lump or swelli
+  parihik                   food         The definition describes appearance (sle
+  parusasuʔ                 food         The definition refers to a plant (bush-c
+  pirakus                   food         The definition describes a shape (crooke
+  raakicawihuukaarahu       food         The definition refers to a 'pump, well o
+  raariiwiʔuʔ               food         The definition refers to 'water moss, al
+  raariwahtii               food         The definition refers to a state or cond
+  raaruuhc                  food         The definition describes a state (rusty)
+  raasitkiicuʔ              food         The definition refers to 'ice water', wh
+  raawihtakiituʔ            food         The definition describes 'cloth', not fo
+  raawis                    food         The definition describes a quality (smok
+  raawiskaaricaahiks        food         The definition refers to 'Indian tobacco
+  racaʔus                   food         The definition refers to a state (hungry
+  rapatiis                  food         A smoking pipe is for tobacco, not food.
+  rikatahak                 food         General verb of removal, not specificall
+  rikatawihak               food         General verb of passing/showing, not spe
+  ripiikiicuʔ               food         Describes a geographical feature (water 
+  riwaacta                  food         Describes a plant's growth stage, not fo
+  riwiruu                   food         General description of shape, not specif
+  rutki rahaawarii          food         Describes an animal, not food.          
+  ruuhkickahaarawiriira     food         Describes personal care products, not fo
+  ta                        food         The definition describes a general state
+  taahiis                   food         The definition describes a general state
+  taakis                    food         The definition 'buckskin for leggings; d
+  takac-                    food         The definition describes the action of f
+  takacat                   food         The definition describes the action of g
+  takaruus                  food         The definition describes a general state
+  takus                     food         The definition describes the general act
+  tawaa                     food         The definition describes the general sta
+  tawakiks, awakiks         food         The definition 'water monster, a mytholo
+  tawiitik                  food         The definition describes a bird's action
+  taʔuuc/uc-                food         The definition describes the action of a
+  uhtatahaahiriʔ            food         Definition describes a location, not foo
+  uhuuwiʔat                 food         Definition describes an action, not food
+  waawaʔis                  food         Definition describes a general action, n
+  Arikaraariki              number       'Many' is part of a proper noun, not a n
+  aahkacaraʔuk              number       'one's' is a possessive pronoun, not a n
+  aahkarahwaasar            number       'one's' is a possessive pronoun, not a n
+  aahkarahwaasariitik       number       'one's' is a possessive pronoun, not a n
+  aahkawiʔuʔ                number       Definition has no relation to numbers.  
+  aahwirik                  number       'one's' is a possessive pronoun, not a n
+  aar ciksuʔ                number       Definition has no relation to numbers.  
+  aar ciksuʔ                number       Definition has no relation to numbers.  
+  aaracaʔiwuu               number       'one's' is a possessive pronoun, not a n
+  aarahkicawakta/taa        number       'one's' is a possessive pronoun, not a n
+  aciks                     number       'one's' and 'one' are pronouns, not numb
+  aciksawiʔiik              number       Definition has no relation to numbers.  
+  aciksawiʔiikiwatak        number       'one's' is a possessive pronoun, not a n
+  aciksawiʔuusiktik         number       'one' is a pronoun, not a number.       
+  aciksiciisat              number       'one' is a pronoun, not a number.       
+  aciksikiriwiihaʔuk        number       'one's' is a possessive pronoun, not a n
+  acikskaawiraah            number       'oneself' and 'one' are pronouns, not nu
+  acikskakiis               number       'one' is a pronoun, not a number.       
+  acikskariwaah             number       'one's' is a pronoun, and 'many' is a qu
+  acikskarusik              number       The word 'one' refers to an unspecified 
+  acikskasa                 number       The word 'one's' is a possessive pronoun
+  acikstat                  number       The word 'one's' is a possessive pronoun
+  acikstaʔuk                number       The words 'one's' and 'oneself' are pron
+  acikstiihac               number       The word 'one's' is a possessive pronoun
+  aciksuhuriihac            number       The word 'one's' is a possessive pronoun
+  aciksuhuritik             number       The definition does not contain any nume
+  aciksuhuriwaar [+ neg.]   number       The word 'one' refers to a person, not a
+  aciksuhuruu               number       The word 'one's' is a possessive pronoun
+  aciksurahac               number       The word 'one's' is a possessive pronoun
+  aciksuu                   number       The words 'one's' and 'one' are pronouns
+  ackurus                   number       The word 'one's' is a possessive pronoun
+  ahitkarusik               number       The word 'one's' is a possessive pronoun
+  ahitkaruusawiʔat          number       The word 'one's' is a possessive pronoun
+  akahuukitawiʔuʔ           number       The definition does not contain any nume
+  akaraahuuruuhtuʔ          number       The word 'one' refers to the house, not 
+  akarawiisuʔ, akarawis     number       The word 'one' refers to the cover, not 
+  akarikus                  number       The word 'one's' is a possessive pronoun
+  akaʔuk                    number       The word 'one's' is a possessive pronoun
+  akitaar                   number       The word 'one's' is a possessive pronoun
+  apakus                    number       The word 'one' refers to a person, not a
+  arika                     number       The definition does not contain any nume
+  arikatakustaah            number       The word 'one's' is a possessive pronoun
+  asaakaapiraat             number       The word 'one' refers to the horse, not 
+  asaar                     number       The word 'one's' is a possessive pronoun
+  asaaruʔ                   number       The definition does not contain any nume
+  asawiitik                 number       While 'one foot' specifies a single foot
+  aspaara-                  number       The word 'one's' is a possessive pronoun
+  aspaarasa                 number       The word 'one's' is a possessive pronoun
+  aspiitik                  number       The word 'one's' is a possessive pronoun
+  asuhuuruʔ                 number       The definition does not contain a numeri
+  asukaaʔa                  number       The word 'one's' is a possessive pronoun
+  asurahpicistaʔuk          number       The word 'one's' is a possessive pronoun
+  asuʔat                    number       The word 'one's' is a possessive pronoun
+  atiraʔ                    number       The word 'one's' is a possessive pronoun
+  awiicawatkaʔiir           number       The word 'one's' is a possessive pronoun
+  awikusis                  number       The word 'one's' is a possessive pronoun
+  awirihuur                 number       The definition does not contain a numeri
+  awitarahkiis/kis          number       The word 'one's' is a possessive pronoun
+  awitariic                 number       The word 'one's' is a possessive pronoun
+  awitawaruk                number       The word 'one's' is a possessive pronoun
+  cakahuuruʔ                number       The phrase 'one who' refers to a person,
+  ciksuhuuruʔ               number       The words 'one's' and 'one feels' refer 
+  ciksuʔ                    number       The definition does not contain a numeri
+  haa                       number       The word 'one's' is a possessive pronoun
+  haahka                    number       The phrase 'one object' uses 'one' as an
+  haahkahaaruhak            number       The phrase 'one alongside' uses 'one' as
+  haakarata                 number       The word 'one's' is a possessive pronoun
+  haakatakipiitik           number       The word 'one's' is a possessive pronoun
+  haaskiica                 number       The word 'one's' is a possessive pronoun
+  hactawiʔat                number       The word 'one's' is a possessive pronoun
+  haspaaksuʔ                number       The tag was triggered by 'one's' which i
+  hastakiituʔ               number       The tag was triggered by 'one' which is 
+  hatkahuurat               number       The tag was triggered by 'one's' which i
+  hatkatatawiir-i           number       The tag was triggered by 'one's' which i
+  hatkicpakta/taa           number       The tag was triggered by 'one's' which i
+  hatkiraar                 number       The tag was triggered by 'one' and 'one'
+  haturaahpiraarik          number       The definition does not contain any nume
+  hawat                     number       The definition does not contain any nume
+  hiikuʔ, hiikusuʔ          number       The definition does not contain any nume
+  hiirik                    number       The tag was triggered by 'one' which is 
+  hiitka                    number       The tag was triggered by 'one's' which i
+  hikaawat                  number       The tag was triggered by 'one' and 'one'
+  hisii                     number       The definition does not contain any nume
+  hukaa                     number       The tag was triggered by 'one's' which i
+  hukata                    number       The tag was triggered by 'one' which is 
+  hukataahpii-              number       The tag was triggered by 'one's' which i
+  hukataahpiiraah           number       The tag was triggered by 'one's' which i
+  hukataahpuh               number       The tag was triggered by 'one's' which i
+  huraahwaarukstii          number       The tag was triggered by 'one' which is 
+  hurariir                  number       The tag was triggered by 'one' which is 
+  huuk(u)-                  number       The tag was triggered by 'one's' which i
+  huukitawuh                number       The definition does not contain any nume
+  huuktik                   number       'one's' is a possessive pronoun, not a n
+  huukuraah                 number       'one's' is a possessive pronoun, not a n
+  huurasaar                 number       'one's' is a possessive pronoun, not a n
+  icapikstikaaʔat           number       'one's' is a possessive pronoun, not a n
+  icawatka-                 number       'one's' is a possessive pronoun, not a n
+  icaʔuuc/uc-               number       The definition does not contain any nume
+  iciirat                   number       'one's' is a possessive pronoun, not a n
+  icir-, iciir-             number       'one's' is a possessive pronoun, not a n
+  icis                      number       'one's' is a possessive pronoun, not a n
+  ickahak                   number       'one's' is a possessive pronoun, not a n
+  ickawaraaciks             number       'one's' is a possessive pronoun, not a n
+  ickawiʔat                 number       'one's' is a possessive pronoun, not a n
+  ickaʔiir                  number       'one's' is a possessive pronoun, not a n
+  ickiistaʔat               number       'one's' is a possessive pronoun, not a n
+  icuuhaarukac              number       'one's' is a possessive pronoun, not a n
+  ikiraahak                 number       The definition does not contain any nume
+  ikiriwiihaʔuk             number       The definition does not contain any nume
+  iksa                      number       'one's' is a possessive pronoun, not a n
+  iksawuu                   number       'one's' is a possessive pronoun, not a n
+  ikskaa                    number       'one's' is a possessive pronoun, not a n
+  ikskariwiiʔaar            number       'one's' is a possessive pronoun, not a n
+  ikskawiʔat                number       'one's' is a possessive pronoun, not a n
+  ikskaʔat                  number       'one's' is a possessive pronoun, not a n
+  ikstaah                   number       'one's' is a possessive pronoun, not a n
+  ikstahkatapaktaarik       number       The word 'one's' refers to a possessive 
+  ikstat                    number       The word 'one's' refers to a possessive 
+  ikstawiʔa                 number       The word 'one' refers to an indefinite p
+  ikstawiʔat                number       The word 'one' refers to an indefinite p
+  ikstaʔuukuk               number       The word 'one's' refers to a possessive 
+  ikstiihuruu               number       The word 'one's' refers to a possessive 
+  ikstiwiiʔaar              number       The word 'one's' refers to a possessive 
+  iksucaʔa                  number       The word 'one's' refers to a possessive 
+  iksuhuraar                number       The phrase 'one hand' specifies a quanti
+  iksuʔat                   number       The word 'one's' refers to a possessive 
+  iraaha                    number       The phrase 'one side' specifies a spatia
+  iraahawi-                 number       The phrase 'one's side' refers to a spat
+  iri-                      number       The word 'one' refers to a pronoun, not 
+  irikata-                  number       The word 'one's' refers to a possessive 
+  irikisat                  number       The word 'one's' refers to a possessive 
+  iripiita-                 number       The word 'one's' refers to a possessive 
+  iripiitata-               number       The word 'one's' refers to a possessive 
+  iriraaku                  number       The word 'one' refers to a pronoun, not 
+  iriwiraahak               number       The phrase 'one side' specifies a spatia
+  itkahaariwiitik           number       The word 'one' refers to an indefinite p
+  itkaspaawaktiik/tik-      number       The word 'one's' refers to a possessive 
+  kaaʔiis-                  number       The word 'one's' refers to a possessive 
+  kaaʔiis-                  number       The word 'one's' refers to a possessive 
+  kaaʔiisa                  number       The word 'one's' refers to a possessive 
+  kaaʔiisa                  number       The word 'one's' refers to a possessive 
+  kaaʔiisat                 number       The word 'one's' refers to a possessive 
+  kaaʔiisat                 number       The word 'one's' refers to a possessive 
+  kactahkata                number       The word 'four' is part of a plant's com
+  kakaʔuc                   number       The main meaning is 'chew, bite', 'sever
+  karahaar                  number       'one's' is a possessive pronoun, not a n
+  karihaakiʔ                number       'one' is used as an indefinite pronoun, 
+  karusik                   number       'one's' is a possessive pronoun, not a n
+  karuusawiʔat              number       The definition does not contain any numb
+  katahkawii-               number       'one's' is a possessive pronoun, not a n
+  katahurah                 number       The definition does not contain any numb
+  katakusiir-i              number       The definition does not contain any numb
+  kataʔa                    number       'one's' is a possessive pronoun, not a n
+  kataʔiwarik               number       The definition does not contain any numb
+  katuusuʔ                  number       'one' is used as an indefinite pronoun, 
+  kawiiraraah               number       'one's' is a possessive pronoun, not a n
+  kaʔuuc/uc-                number       The definition does not contain any numb
+  kickaruus                 number       'one' is used as an indefinite pronoun, 
+  kickituuraʔuk             number       'one' is used as an indefinite article/p
+  kictahiis                 number       'one' refers to a single spot, not a num
+  kiica                     number       'one's' refers to a possessive pronoun, 
+  kiickaa                   number       'one's' refers to a possessive pronoun, 
+  kiirihuur                 number       'one' refers to a single stream, not a n
+  kiiriitkatakus            number       'one's' refers to a possessive pronoun, 
+  kiiriwisistaah            number       'one's' refers to a possessive pronoun, 
+  kiis                      number       The definition has no numerical meaning.
+  kiiskucuuʔ                number       'one' refers to a single person, not a n
+  kiiskuhka                 number       'one's' refers to a possessive pronoun, 
+  kikarik                   number       The definition has no numerical meaning.
+  kiraruuc                  number       'one's' refers to a possessive pronoun, 
+  kiriktacakipiitik         number       'one's' refers to a possessive pronoun, 
+  kiriktacaparitaar         number       'one's' refers to a possessive pronoun, 
+  kiriktahwiʔuuriirik       number       'one's' refers to a possessive pronoun, 
+  kiripiitik                number       'one's' refers to a possessive pronoun, 
+  kitarikuk                 number       'one' refers to a single object, not a n
+  kituhaʔuk                 number       'one's' refers to a possessive pronoun, 
+  paaraarurahwiitik         number       The definition uses 'one's' as a possess
+  paarawaahaahkiir          number       The definition does not contain explicit
+  paksawiʔat                number       The definition uses 'one's' as a possess
+  paksaʔiwaata              number       The definition uses 'one's' as a possess
+  paksiitik                 number       The definition uses 'one's' as a possess
+  pakskaa                   number       The definition uses 'one's' as a possess
+  pakskawarik               number       The definition uses 'one's' as a possess
+  pakskiraruuc              number       The definition uses 'one's' as a possess
+  pakspaahukasa             number       The definition uses 'one's' as a possess
+  paʔaasii                  number       The word 'one' refers to 'a tail' (indef
+  pirawiitik                number       The definition uses 'one's' as a possess
+  raahisaask                number       The definition uses 'one's' as a possess
+  raahiwihc                 number       The definition does not contain any nume
+  raakusiʔ                  number       The definition uses 'one's' as a possess
+  raaraʔuusik               number       The definition does not contain any nume
+  raariciit                 number       The word 'one' refers to 'an arbor' (ind
+  raarihuur                 number       The definition does not contain any nume
+  raawihtariirat            number       The word 'one' refers to 'a blanket' (in
+  raawihuk                  number       The word 'one' in 'one place to another'
+  raawuu                    number       The word 'one' is used as a pronoun, not
+  raaʔiistir                number       The definition does not relate to number
+  raaʔiitusuuh/uh           number       The definition does not relate to number
+  raaʔukta                  number       The word 'one's' is a possessive pronoun
+  rahpahaat                 number       The word 'one's' is a possessive pronoun
+  rahuur                    number       The word 'one' is used as a pronoun, not
+  rahuuwicat                number       The definition does not relate to number
+  rakis                     number       The definition does not relate to number
+  raktiituʔ                 number       The definition does not relate to number
+  rarikatawiitik            number       The word 'one's' is a possessive pronoun
+  riicawirikisa             number       The definition does not relate to number
+  riickawiiriitik           number       The word 'one' is used as a pronoun, not
+  riickaʔat                 number       The definition does not relate to number
+  riisat                    number       The definition does not relate to number
+  riitki                    number       The word 'one's' is a possessive pronoun
+  rikaawat                  number       The word 'one' is used as a pronoun, not
+  rikatahak                 number       The definition does not relate to number
+  rikatiriitik              number       The word 'one's' is a possessive pronoun
+  rikaʔuus                  number       The word 'one' is used as a pronoun, not
+  riwiicat                  number       The phrase 'one place to another' descri
+  riwiiʔaar                 number       The definition does not relate to number
+  ruhak                     number       No numerical meaning; 'one place to anot
+  ruuciik                   number       'many' describes objects, not the core m
+  ruucpaa                   number       Describes a state of being piled, not a 
+  ruuhurahak                number       'one' refers to a person, not a numerica
+  ruuhuruu                  number       'one's' refers to possession, not a nume
+  ruukiraaruur              number       'one' refers to a matter, not a numerica
+  taahpiiraah               number       'one's' refers to possession, not a nume
+  taahpuh                   number       'one's' refers to possession, not a nume
+  taawatatk                 number       'one on another' describes arrangement, 
+  tahik                     number       No numerical meaning.                   
+  tahpaa                    number       'first' refers to sequence, not a numeri
+  tahuriwi-                 number       'one's' refers to possession, not a nume
+  tahuriwiitik              number       'one's' refers to possession, not a nume
+  takaaraahisuʔ             number       'all at once' refers to simultaneity, no
+  takasis                   number       'many' describes objects, not the core m
+  takus                     number       'one' refers to an object, not a numeric
+  takustaah                 number       'one's' refers to possession, not a nume
+  taraa                     number       Describes spatial relation, not a numeri
+  tarahkisiciisat           number       No numerical meaning.                   
+  tarahwii                  number       No numerical meaning.                   
+  tatataʔat                 number       'one behind the other' describes arrange
+  tatataʔat                 number       'one behind the other' describes arrange
+  tawaruk                   number       'one' refers to a person, not a numerica
+  tawihcitik                number       'first' refers to sequence, not a numeri
+  taʔitiir                  number       'one' refers to a person, not a numerica
+  tiiraʔuk                  number       The phrase 'one's child' uses 'one's' as
+  tiiriwis-                 number       The phrase 'one's back' uses 'one's' as 
+  uhuhtaparit               number       The definition describes speed and movem
+  uhuhtawaruk               number       The phrase 'one's movements' uses 'one's
+  uhura                     number       The definition describes a state of bein
+  uhuriruk                  number       The phrase 'one's movements' uses 'one's
+  uhuuricarahaar            number       The phrase 'one's actions' uses 'one's' 
+  uhuuririkisat             number       The phrase 'one's balance' uses 'one's' 
+  uhuuwicaks                number       The definition describes the act of cari
+  ukstiic                   number       The phrases 'one's motions' and 'one's t
+  uurikuk                   number       The phrase 'one's hands' uses 'one's' as
+  waakuʔat                  number       The word 'one' in 'when one raises food'
+  wakaahtaʔa                number       The definition describes vocal actions a
+  wakaawiraariks            number       The phrases 'one whose words' and 'one's
+  wakahuutaʔa               number       The phrase 'one's voice' uses 'one's' as
+  waktiks [+ i-]            number       The definition describes honesty in spee
+  wakuhkiriwis              number       The phrase 'one's speech' uses 'one's' a
+  wakuruuwaawaktiik/tik-    number       The definition describes disrespectful s
+  wararuus                  number       The definition describes a physical qual
+  wariitaʔu                 number       The word means 'be warm', not a number. 
+  warik [+ i-]              number       The word means 'aim/shoot', not a number
+  waturika-                 number       The word means 'between'. While 'two' is
+  wicaksaar                 number       The word means 'come to an age of consci
+  wiicat                    number       The word means 'move'. 'one place' is an
+  wiicat k                  number       The word means 'cook'. 'one piece' is an
+  wiihkawiʔuu               number       The word means 'be one's right arm/side'
+  wiituuruʔ                 number       The word means 'level ridge/hilltop'. 'o
+  wiiwarii                  number       The word means 'weave, tip, bend, sway'.
+  wiruuhuur                 number       The word means 'be determined'. 'one's' 
+  wiruuʔa                   number       The word means 'brush, sweep, rake'. 'on
+  wiruuʔat                  number       The word means 'sweep, brush, rake aside
+  wita                      number       The word means 'be the last one'. While 
+  Ø                         number       The word means 'be one's possession'. 'o
+  Ø (ut...) ciksuʔ          number       The word means 'be on one's mind'. 'one'
+  Asiicakahuuruʔ            plant        The word refers to a 'Society' related t
+  Kicpiirahaatus            plant        The word refers to a 'Creek' related to 
+  apitk                     plant        The word means 'break, as a bone', not a
+  arasik                    plant        The word means 'cook'. While 'corn' is a
+  asaaruʔ                   plant        The word refers to 'playing cards', not 
+  aspit                     plant        The word refers to types of 'frog', whic
+  atiraʔ                    plant        The definition refers to family members 
+  caaka                     plant        The definition describes a verb of motio
+  haastawikus               plant        The word describes the action 'be tied, 
+  haastawikuusk             plant        The word describes the action 'tie to, t
+  haskiiruʔ                 plant        The definition describes 'braided string
+  haspaapicisuʔ             plant        The definition describes 'chain', which 
+  hatkaahuuruʔ              plant        The word describes an 'elongated hole', 
+  hawat                     plant        The word describes the action 'spit out,
+  hiihkacak                 plant        The word describes the action 'hoe weeds
+  hiihkasa                  plant        The word describes the state/action 'be 
+  hiiwiik                   plant        The word describes the action 'chop weed
+  hurarii                   plant        The word describes a general concept of 
+  huukitawiitik             plant        The word describes the action 'sit down 
+  ikiraaruur                plant        The definition describes a state of bein
+  iriwirik                  plant        The definition describes a physical acti
+  kaapit                    plant        The definition describes a 'wart', which
+  kaarik                    plant        The definition describes a state of bein
+  kacak                     plant        The action 'prick' or 'stab' is not inhe
+  kakus                     plant        Describes a state of being in a containe
+  kakuusk                   plant        Describes an action of placing on a surf
+  kasar                     plant        'Branch' is used in a general sense of d
+  kaʔiir                    plant        Describes a general action of putting so
+  kaʔiitat                  plant        Describes an arrangement (line, row), no
+  kaʔuuc/uc-                plant        Describes a general action of laying on 
+  kickita                   plant        'Branch' is used in a general sense of d
+  kiihaahpiriwuus           plant        A broom is a tool, not a plant.         
+  kipaar                    plant        Describes a general state (damp, wet), n
+  kipaasi                   plant        Describes a condition (shade), not a pla
+  kipiriir                  plant        Describes general qualities (fresh, gree
+  kiriikuʔ                  plant        Refers to a body part (eye), not a plant
+  kita                      plant        Describes a general characteristic (bran
+  kitahiis                  plant        Describes general qualities (dull, blunt
+  kiwak                     plant        Refers to an animal sound (barking), not
+  kiwak [+ raar-]           plant        Refers to an animal sound (barking), not
+  paca                      plant        The definition describes physical condit
+  pahaatuʔ                  plant        The definition describes a type of paint
+  pira-                     plant        The definition describes actions (raking
+  raakii                    plant        The definition describes a state or acti
+  raakiiraʔuk               plant        The definition describes the act of stri
+  raakuʔ                    plant        A 'box' or 'cardboard box' is an object;
+  racapirat                 plant        The word is a verb ('grate'), not a plan
+  rahkatiraah               plant        The word is a verb ('parch'), not a plan
+  rahkiwir                  plant        The word is a verb ('roast'), not a plan
+  raruksuʔ                  plant        A pipe bag is an object/container, not a
+  riiciʔaahwaa              plant        A saw is a tool, not a plant, even if us
+  rikatawihak               plant        This is a verb describing an action, not
+  ruukiraawarik             plant        The definition describes an action (hurr
+  ta                        plant        The definition describes a state of susp
+  tahaakaarakus             plant        The definition describes a state of bein
+  takipiir                  plant        The definition describes a state of bein
+  taparihaʔuk               plant        The definition describes an action of mo
+  tawakaʔu                  plant        The definition describes a sound (rustle
+  tawaktaarik               plant        The definition describes a sound (ring, 
+  tawiitik                  plant        The definition describes an action (perc
+  taʔat                     plant        The definition describes an action (clim
+  uktata-                   plant        The definition describes a location (bot
+  uktataka-                 plant        The definition describes a location (bot
+  uutkucuuʔ                 plant        "Sage grouse" and "prairie chicken" are 
+  waarasik                  plant        "Cook" is an action, not a plant.       
+  waasar                    plant        Describes a physical state/action, not a
+  wararuus                  plant        Describes a texture, not primarily a pla
+  wiruuʔa                   plant        Describes an action, not a plant.       
+  Tawaakaruuʔ               speech       Refers to a group of people, not speech.
+  a                         speech       "Come" is a verb of motion, not speech. 
+  asataakaa                 speech       "White horse" refers to an animal, not s
+  astiwiitik                speech       "Pester" and "bother" are actions, not i
+  awikiriwiskii             speech       "Deceive" and "trick" are actions, not i
+  haatuʔ                    speech       "Tongue" is a body part, not speech itse
+  hactawiʔat                speech       "Lick" is an action using the tongue, no
+  hihit                     speech       Describes a physical state, not speech. 
+  hiriitik                  speech       Describes a physical action, not speech.
+  ihtatasa                  speech       The definition describes physical proxim
+  iituusik                  speech       The definition describes motion and comi
+  itkaskicuucis             speech       The definition describes a state of slee
+  kaackaraaruʔ              speech       The definition describes a body part, no
+  kaackaraaruʔ              speech       The definition describes a body part, no
+  katakusiir-i              speech       The definition describes a state of bein
+  katasa                    speech       The definition describes physical positi
+  katawiitik                speech       The definition describes a behavioral tr
+  kiciiwakta/taa            speech       The definition describes mechanical or e
+  kiisaar                   speech       The definition describes an emotional or
+  kirahwakta/taa            speech       The definition describes mechanical soun
+  kirahwaktaarik            speech       Describes a physical sound of breaking, 
+  kiriwiskii                speech       Describes deception, which may involve s
+  kiruuspaktaarik           speech       Describes a physical sound related to ea
+  kusickawiʔa               speech       Describes movement towards someone, with
+  paakis                    speech       Describes an animal, not speech.        
+  raakirikaaʔat             speech       Describes cognitive or visual actions, n
+  raakusiksiir              speech       Describes a state of readiness or organi
+  raasaar                   speech       Describes the state of being a name/desi
+  raatiihuraʔuk             speech       Describes organizational actions (planni
+  raawiʔuusik               speech       Describes actions of termination, not sp
+  raaʔiitawuh               speech       Describes imparting knowledge/skill, whi
+  racat                     speech       The definition describes the state of a 
+  rahwaktaarik              speech       The definition refers to making sounds f
+  rawa, nawa                speech       'Now, well now' are temporal adverbs/int
+  riwakta/taa               speech       The definition refers to sounds made by 
+  taaʔat                    speech       The definition refers to an animal (tick
+  takus-                    speech       The definition describes a physical posi
+  tawakarihuur              speech       The definition refers to a general sound
+  tawakta/taa               speech       The definition refers to sounds made by 
+  uuc/uc-                   speech       The definition describes a physical acti
+  wakarahkaʔas              speech       Crying is a vocalization of emotion, not
+  wakta/taa                 speech       The definition refers to general noise/s
+  wakuraah                  speech       The primary meaning is about agreement a
+  wiruuʔat                  speech       The definition describes physical action
+  apitaarahak               tool         The definition describes actions ('turn 
+  askawarik                 tool         The definition describes the verb 'trap'
+  astariipuh                tool         The definition describes the action 'tie
+  asuʔ                      tool         'Foot' and 'paw' are body parts, not too
+  awikiickawarik            tool         The definition describes the verb 'rope'
+  awitawihak                tool         The definition describes the action 'bru
+  awuu                      tool         The definition describes the action 'thr
+  cak, icak                 tool         The definition describes the verbs 'shoo
+  cawuh                     tool         The definition describes a verb (an acti
+  haakaawatatuuk            tool         The definition describes a verb (an acti
+  haakaratawiʔuʔ            tool         A mouth is a body part, not a tool.     
+  haaskiica                 tool         The definition describes a state or acti
+  haaskiihkasa              tool         The definition describes a state or proc
+  haaskiihkaʔuuc/uc-        tool         The definition describes a verb (an acti
+  haaskiihkiiriwat          tool         The definition describes a verb (an acti
+  haaskitawaawuh            tool         The definition describes a verb (an acti
+  haasta                    tool         The definition describes a state ('be ti
+  haastawi-                 tool         The definition describes an adjective/st
+  haastawikuusk             tool         The definition describes a verb (an acti
+  haasuʔat                  tool         The definition describes a verb (an acti
+  hiihkacak                 tool         The definition describes a verb (hoe wee
+  hiiwiik                   tool         The definition describes a verb (chop we
+  huka                      tool         The definition describes a state of bein
+  hukaarik                  tool         The definition describes a state of bein
+  hukaawihiriʔ              tool         The definition describes a state of bein
+  hukaaʔiir                 tool         The definition describes a verb (put on,
+  hukahaaruʔ                tool         The definition describes a geographical 
+  hukasa                    tool         The definition describes a state of bein
+  huraahkawirahak           tool         The definition describes a verb (plow la
+  huraahkawirat             tool         The definition describes a verb (plow la
+  icahpiitik                tool         The definition describes a verb (bend ov
+  icahpuh                   tool         The definition describes a verb (tip ove
+  icakuusk                  tool         The definition describes verbs (stick, p
+  ickitaahuruustaʔuk        tool         The definition describes a verb (roll up
+  iitik                     tool         The definition describes verbs (bow, ben
+  iituusik                  tool         The definition describes verbs/states (l
+  ikskaʔat                  tool         The definition describes a verb (to put 
+  iraahawuh                 tool         The definition describes an action (to t
+  ka-                       tool         The definition describes a location or e
+  kaa                       tool         The definition describes a state of bein
+  kaarik                    tool         The definition describes a state of bein
+  kaawihiriʔ                tool         The definition describes a location or p
+  kahuraahkicuuciskat       tool         The definition describes a location or e
+  kahuraar                  tool         The definition describes a type of area 
+  kakus                     tool         The definition describes a state of bein
+  kakuusk                   tool         The definition describes an action (to p
+  kariikiwat                tool         The definition describes an action (to u
+  kasa                      tool         The definition describes a state of bein
+  kawarik                   tool         The definition describes an action (to p
+  kawat                     tool         The definition describes an action (to t
+  kawiiraraah               tool         The definition describes an action (to c
+  kawiitik                  tool         The definition describes an action or po
+  kawiriwuu                 tool         The definition describes an action (to k
+  kawiʔat                   tool         The definition describes an action (to g
+  kaʔat                     tool         The definition describes an action (to g
+  kaʔiihcuʔ                 tool         Straw is a material, not a tool itself, 
+  kaʔiir                    tool         The definition describes an action (to p
+  kaʔiis-                   tool         The definition describes a location or d
+  kaʔiisat                  tool         The definition describes an action (to g
+  kaʔiitat                  tool         The definition describes a state or arra
+  kicahaasta                tool         The definition describes a plant, not a 
+  kiciiwakta/taa            tool         The definition describes sounds or actio
+  kickaa                    tool         The definition describes a state, not a 
+  kickaahisuʔ               tool         The definition describes a body part, no
+  kicpaktaarik              tool         The definition describes sounds or actio
+  kiica                     tool         The definition describes an action or cl
+  kiicpaat-                 tool         The definition describes a location or d
+  kiikaraʔuk                tool         The definition describes an action (stri
+  kiiraasitaar              tool         The definition describes a natural proce
+  kiiraʔuk                  tool         The definition describes actions (string
+  kiiriwisistaah            tool         The definition describes an action (carr
+  kiiwaʔuctaakaa            tool         The definition describes a plant, not a 
+  kiiʔat                    tool         The definition describes a state or arra
+  kipistaatuʔ               tool         The definition describes a plant, not a 
+  kipisuʔ                   tool         The definition describes a plant (saplin
+  kiraar                    tool         The definition describes a state, not a 
+  kiraaruʔ                  tool         The definition describes a substance, no
+  kirahkaa, kiirahkaa       tool         The definition describes a state, not a 
+  kiraraah                  tool         The definition describes an action (carr
+  kirir                     tool         The definition describes an action or ph
+  kitakus                   tool         The definition describes a position or s
+  kitawuh                   tool         The definition describes an action (coun
+  paatahuuruʔ               tool         Blood vessels are anatomical parts, not 
+  pakcak                    tool         This is a verb describing an action, not
+  paksiitik                 tool         This is a verb describing an action, not
+  paraakat, waraakat        tool         This describes a location or environment
+  piicuuc                   tool         This is a type of plant, not a tool.    
+  piraʔa                    tool         This is a verb describing an action, not
+  pirusas-i                 tool         This is a verb describing an action, not
+  raahaar                   tool         This is a verb describing an action, not
+  raakasis                  tool         This describes a state or quality, not a
+  raariciit                 tool         This is a verb describing a state ('be a
+  raariciituʔ               tool         An arbor is a structure, not typically c
+  raaririispuh              tool         This is a verb describing an action, not
+  raarukaʔiituʔ             tool         An arbor or arbor top is a structure/par
+  raarusuʔ                  tool         Brush refers to vegetation or an area, n
+  raaʔiksuʔ                 tool         Possessions like shawls, blankets, and t
+  racariipuh                tool         The definition describes a verb (to tie 
+  rahkariipuh               tool         The definition describes a verb (to tie 
+  rahwiʔa                   tool         The definition describes the action 'to 
+  rakiriktaaʔuʔ             tool         A 'knot on a tree' is a natural formatio
+  rarahuuruʔ                tool         A bundle/package is a collection of item
+  riikarikuk                tool         The definition describes a verb (to open
+  riwaks                    tool         The definition describes verbs (to cut, 
+  ruuciik                   tool         The definition describes verbs (to pick 
+  ruwaahaahkiir             tool         The definition describes verbs (to undre
+  taahaaruʔ                 tool         A bundle is a collection of items, not a
+  taahpiiraah               tool         The definition describes verbs (to have,
+  taahpuh                   tool         The definition describes verbs (to put o
+  taakakus                  tool         The definition describes a state or cond
+  taaraaruʔ                 tool         A bundle is a collection of items, not a
+  taarikiihk                tool         This is a verb describing an action, not
+  tahaakaahcik              tool         This is a verb describing an action, not
+  tahuriwiitik              tool         This is a verb describing a body action/
+  takus                     tool         This is a verb describing a state or act
+  takustaah                 tool         This is a verb describing an action, not
+  takuusk                   tool         This is a verb describing an action, not
+  tarasa                    tool         This is a verb describing a state, not a
+  tariikiwat                tool         This is a verb describing an action, not
+  tawasii                   tool         This is a verb describing a state, not a
+  taʔitiir                  tool         This is a verb describing an action, not
+  uukatawi-                 tool         This describes a location/area, not a to
+  waraakat, paraakat        tool         This describes a location/environment, n
+  wiituuruʔ                 tool         This describes a geographical feature, n
+  Tiihiiraraahkasa          water        The word 'Creek' in this context refers 
+  aciksiir                  water        The definition describes a feeling and h
+  araas                     water        The definition refers to a state of food
+  aspit                     water        The word refers to an animal (a type of 
+  asuʔat                    water        Definition relates to body parts and mot
+  atiraʔ                    water        Definition relates to kinship, not water
+  atkiisik                  water        Definition relates to hearing, not water
+  atkiiskitii               water        Definition relates to hearing, not water
+  atkiiskitiiʔ              water        Definition relates to a person's hearing
+  awakiihaar                water        Definition relates to prosperity, not wa
+  awarii                    water        Definition relates to motion (flying), n
+  awirictakaahak            water        Definition relates to weather/temperatur
+  awirictaʔu                water        Definition relates to weather/temperatur
+  ckirihkaapiraat           water        Definition relates to an animal (wolf), 
+  cuskiituʔ                 water        Definition relates to a cradleboard and 
+  haakariir                 water        Definition relates to speaking, not wate
+  haarutpahat               water        Definition relates to grass, not water. 
+  haaruutuʔ                 water        Definition relates to grass/hay, not wat
+  haawatiihus               water        Definition relates to a mechanical coil 
+  harikictaarikic           water        The primary meaning is about the consist
+  hatkaahuuruʔ              water        The primary meaning is about a type of h
+  hawaastatkiicuʔ           water        The definition 'chewing gum' has no appa
+  hiihpahat                 water        The definition is about a type of grass;
+  hiiruʔ                    water        The definition is about grass or hay; th
+  hukakaawihiriʔ            water        The definition describes a general spati
+  huuhatawiʔuʔ              water        The definition 'large hole in the ground
+  icatataahiisuʔ            water        While 'sea biscuit' contains 'sea', the 
+  iksawiʔiitik              water        'Wave at' refers to a hand gesture, not 
+  iksiitik                  water        'Wave the hand' refers to a hand gesture
+  iriirirahcaku             water        'Pool hall' refers to the game of billia
+  iriwiraarahak             water        The definition describes a general motio
+  kaaruriir                 water        The definition 'eat well' has no connect
+  kataarahkaaʔa             water        While grass needs water, the definition 
+  kiciiwakta/taa            water        The definition describes sounds (squeak,
+  kiiwaakstaakaa            water        The word refers to an 'animal' (goose), 
+  kiraraʔuk                 water        The main meaning is 'make (a beverage)',
+  kusiksiir                 water        The definition describes a state of bein
+  pahit                     water        The definition describes a state of bein
+  parihik                   water        The definition describes qualities like 
+  raahiiriitik              water        The definition refers to health and reco
+  raapiʔuʔ                  water        The definition refers to 'dry goods', wh
+  raataʔu                   water        The definition refers to pain, not water
+  raawarii                  water        The word 'wave' here is a verb of motion
+  raawihak                  water        The word 'wave' here is a verb of motion
+  raawihak                  water        The word 'wave' here is a verb of motion
+  raawiʔat                  water        The word 'wave' here is a verb of motion
+  rawa, nawa                water        The word 'well' here is an interjection,
+  rihaks                    water        The definition describes consistency and
+  rihaksit                  water        The definition describes consistency and
+  rikatahak                 water        The definition refers to removal, not wa
+  riwiiʔaar                 water        The definition refers to forming a shape
+  taahiis                   water        The definition refers to being 'dry', wh
+  takickuut                 water        The definition refers to spoiling/rottin
+  takickuuʔat               water        The definition refers to being rotten/sp
+  tawaas                    water        The definition refers to being 'dry', wh
+  uktata-                   water        The definition refers to the base of ele
+  uktataka-                 water        The definition refers to the base of ele
+  uktatakat                 water        The definition refers to the base of ele
+  wakuriir                  water        The definition is about speaking ability
