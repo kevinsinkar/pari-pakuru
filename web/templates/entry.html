@@ -34,6 +34,15 @@
             {% if bb_info.attested %}
             <span class="badge badge-bb">Attested in P&acirc;ri Pak&ucirc;ru'</span>
             {% endif %}
+            {% if form2_confidence is defined and form2_confidence is not none %}
+              {% if form2_confidence >= 0.75 %}
+              <span class="badge badge-confidence badge-conf-high" title="High confidence: {{ (form2_confidence * 100) | round(0) | int }}% — verb class has strong prediction accuracy">Prediction: High</span>
+              {% elif form2_confidence >= 0.50 %}
+              <span class="badge badge-confidence badge-conf-med" title="Medium confidence: {{ (form2_confidence * 100) | round(0) | int }}% — prediction may have minor differences">Prediction: Med</span>
+              {% else %}
+              <span class="badge badge-confidence badge-conf-low" title="Low confidence: {{ (form2_confidence * 100) | round(0) | int }}% — treat computed forms with caution">Prediction: Low</span>
+              {% endif %}
+            {% endif %}
         </div>
     </div>
 
@@ -235,5 +244,158 @@
         <small>Parks Dictionary, page {{ entry.page_number }}</small>
     </section>
     {% endif %}
+
+    {# ---- Community Feedback ---- #}
+    <section class="entry-section feedback-section">
+        <h3>Community Feedback</h3>
+        <p class="feedback-intro">
+            Help improve this entry. Flag errors or confirm that forms are correct.
+            All feedback is reviewed before being applied.
+        </p>
+        <div class="feedback-actions">
+            <button class="feedback-btn feedback-btn--flag" onclick="openFeedbackModal('flag')">
+                Flag an issue
+            </button>
+            <button class="feedback-btn feedback-btn--confirm" onclick="submitConfirm()">
+                Confirm this entry
+            </button>
+        </div>
+        {% if feedback_counts %}
+        <div class="feedback-counts">
+            {% if feedback_counts.get('flag', 0) > 0 %}
+            <span class="feedback-count feedback-count--flag">{{ feedback_counts.flag }} flag{{ 's' if feedback_counts.flag != 1 }}</span>
+            {% endif %}
+            {% if feedback_counts.get('confirm', 0) > 0 %}
+            <span class="feedback-count feedback-count--confirm">{{ feedback_counts.confirm }} confirmation{{ 's' if feedback_counts.confirm != 1 }}</span>
+            {% endif %}
+        </div>
+        {% endif %}
+    </section>
 </article>
+
+{# ---- Feedback Modal ---- #}
+<dialog id="feedback-modal" class="feedback-modal">
+    <article>
+        <header>
+            <button aria-label="Close" rel="prev" onclick="closeFeedbackModal()" class="feedback-modal-close">&times;</button>
+            <h3 id="feedback-modal-title">Flag an Issue</h3>
+        </header>
+        <form id="feedback-form" onsubmit="return submitFeedback(event)">
+            <label for="fb-field">What does this affect?</label>
+            <select id="fb-field" name="form_field">
+                <option value="">General / entire entry</option>
+                <option value="headword">Headword spelling</option>
+                <option value="phonetic_form">Phonetic form (IPA)</option>
+                <option value="pronunciation">Simplified pronunciation</option>
+                <option value="definition">Definition / gloss</option>
+                <option value="paradigmatic_form">Paradigmatic form (5-form table)</option>
+                <option value="conjugation">Conjugation table form</option>
+                <option value="etymology">Etymology</option>
+                <option value="example">Example sentence</option>
+            </select>
+
+            <label for="fb-issue">Issue type</label>
+            <select id="fb-issue" name="issue_type">
+                <option value="incorrect_form">Incorrect form / spelling</option>
+                <option value="wrong_pronunciation">Wrong pronunciation</option>
+                <option value="wrong_definition">Wrong or misleading definition</option>
+                <option value="missing_info">Missing information</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="fb-correction">Suggested correction <small>(optional)</small></label>
+            <input type="text" id="fb-correction" name="suggested_correction" placeholder="The correct form is...">
+
+            <label for="fb-comment">Additional details <small>(optional)</small></label>
+            <textarea id="fb-comment" name="comment" rows="3" placeholder="Any context that helps us verify..."></textarea>
+
+            <label for="fb-name">Your name <small>(optional)</small></label>
+            <input type="text" id="fb-name" name="reporter_name" placeholder="Anonymous">
+
+            <footer>
+                <button type="button" class="secondary" onclick="closeFeedbackModal()">Cancel</button>
+                <button type="submit" class="feedback-btn feedback-btn--flag">Submit Flag</button>
+            </footer>
+        </form>
+        <div id="feedback-result" style="display:none;" class="feedback-result"></div>
+    </article>
+</dialog>
+
+<script>
+(function() {
+    const ENTRY_ID = {{ entry.entry_id | tojson }};
+    const modal = document.getElementById('feedback-modal');
+
+    window.openFeedbackModal = function(type) {
+        document.getElementById('feedback-form').style.display = '';
+        document.getElementById('feedback-result').style.display = 'none';
+        modal.showModal();
+    };
+
+    window.closeFeedbackModal = function() {
+        modal.close();
+    };
+
+    // Close modal on backdrop click
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) closeFeedbackModal();
+    });
+
+    window.submitFeedback = function(e) {
+        e.preventDefault();
+        const form = document.getElementById('feedback-form');
+        const data = {
+            entry_id: ENTRY_ID,
+            feedback_type: 'flag',
+            form_field: form.form_field.value,
+            issue_type: form.issue_type.value,
+            suggested_correction: form.suggested_correction.value,
+            comment: form.comment.value,
+            reporter_name: form.reporter_name.value,
+        };
+        fetch('/api/feedback', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(data),
+        })
+        .then(r => r.json())
+        .then(res => {
+            if (res.ok) {
+                form.style.display = 'none';
+                const result = document.getElementById('feedback-result');
+                result.innerHTML = '<p>Thank you! Your feedback has been submitted for review.</p>';
+                result.style.display = '';
+                setTimeout(closeFeedbackModal, 2000);
+            }
+        })
+        .catch(() => {
+            alert('Failed to submit feedback. Please try again.');
+        });
+        return false;
+    };
+
+    window.submitConfirm = function() {
+        fetch('/api/feedback', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+                entry_id: ENTRY_ID,
+                feedback_type: 'confirm',
+            }),
+        })
+        .then(r => r.json())
+        .then(res => {
+            if (res.ok) {
+                const btn = document.querySelector('.feedback-btn--confirm');
+                btn.textContent = 'Confirmed!';
+                btn.disabled = true;
+                btn.classList.add('feedback-btn--confirmed');
+            }
+        })
+        .catch(() => {
+            alert('Failed to submit confirmation. Please try again.');
+        });
+    };
+})();
+</script>
 {% endblock %}

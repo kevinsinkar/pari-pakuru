@@ -27,6 +27,7 @@ Usage:
 
 import argparse
 import json
+import math
 import os
 import re
 import sqlite3
@@ -891,6 +892,172 @@ def print_report(results: Dict):
 
 
 # ---------------------------------------------------------------------------
+# Phase 4.3 — Confidence Scoring
+# ---------------------------------------------------------------------------
+
+# Complexity indicators that reduce confidence
+_COMPLEXITY_PATTERNS = [
+    re.compile(r'\['),          # bracket notation [+ ...]
+    re.compile(r'/'),           # slash alternates
+    re.compile(r'\s'),          # multi-word headwords
+    re.compile(r'-i$'),         # class 2 subordinate marker
+]
+
+
+def compute_confidence(
+    entry_id: str,
+    headword: str,
+    verb_class: str,
+    stem_preverb: str,
+    gram_class: str,
+    category_rates: Dict[str, Dict[str, float]],
+) -> float:
+    """
+    Compute confidence score (0.0-1.0) for a predicted form_2.
+
+    Inputs:
+        category_rates: {cat_key: {"exact_rate": float, "close_rate": float, "total": int}}
+            from validate_all() by_category data.
+
+    Scoring factors:
+        1. Category accuracy (base prior, 0.0-1.0) — 50% weight
+        2. Prediction method — explicit verb_class/preverb boost — 20% weight
+        3. Stem complexity — multi-word, brackets, slashes penalize — 15% weight
+        4. Category sample size — small samples lower confidence — 15% weight
+    """
+    vc = infer_verb_class(gram_class, verb_class, stem_preverb)
+    cat_key = f"{vc}|{stem_preverb[:12] if stem_preverb else 'none'}"
+
+    # --- Factor 1: Category accuracy (base prior) ---
+    cat_info = category_rates.get(cat_key)
+    if cat_info and cat_info["total"] > 0:
+        # Use (exact + close) rate as the base — close matches are structurally correct
+        cat_rate = cat_info["close_rate"]
+    else:
+        # Unknown category — use global average as fallback (conservative)
+        cat_rate = 0.5
+
+    # --- Factor 2: Prediction method reliability ---
+    method_score = 0.5  # baseline
+    if verb_class and verb_class not in ('', 'None', '(pl. subj.)'):
+        method_score += 0.25  # explicit verb class is more reliable
+    if stem_preverb and stem_preverb.strip():
+        method_score += 0.25  # explicit preverb narrows the prediction
+    method_score = min(method_score, 1.0)
+
+    # --- Factor 3: Stem complexity ---
+    complexity_penalty = 0
+    for pat in _COMPLEXITY_PATTERNS:
+        if pat.search(headword or ''):
+            complexity_penalty += 0.25
+    complexity_score = max(0.0, 1.0 - complexity_penalty)
+
+    # --- Factor 4: Category sample size (Bayesian shrinkage) ---
+    if cat_info:
+        n = cat_info["total"]
+        # Sigmoid-like ramp: 1 sample -> 0.3, 5 -> 0.7, 20+ -> ~1.0
+        size_score = 1.0 - 0.7 * math.exp(-n / 8.0)
+    else:
+        size_score = 0.2  # unknown category
+
+    # --- Weighted combination ---
+    confidence = (
+        0.50 * cat_rate +
+        0.20 * method_score +
+        0.15 * complexity_score +
+        0.15 * size_score
+    )
+
+    return round(max(0.0, min(1.0, confidence)), 3)
+
+
+def populate_confidence(db_path: str, verbose: bool = False):
+    """
+    Compute and store form2_confidence for all verb entries in the DB.
+
+    1. Runs validate_all() to get per-category accuracy rates.
+    2. Computes confidence for every verb entry (not just those with attested form_2).
+    3. Writes confidence to lexical_entries.form2_confidence.
+    """
+    def _p(text: str):
+        sys.stdout.buffer.write((text + '\n').encode('utf-8', errors='replace'))
+
+    # Step 1: Get category accuracy rates from validation
+    _p("Running validation to build category accuracy rates...")
+    results = validate_all(db_path)
+
+    category_rates = {}
+    for cat_key, stats in results["by_category"].items():
+        total = stats["total"]
+        if total > 0:
+            category_rates[cat_key] = {
+                "exact_rate": stats["exact"] / total,
+                "close_rate": (stats["exact"] + stats["close"]) / total,
+                "total": total,
+            }
+
+    _p(f"  {len(category_rates)} categories with accuracy data")
+
+    # Step 2: Ensure DB column exists
+    conn = sqlite3.connect(db_path)
+    conn.row_factory = sqlite3.Row
+    try:
+        conn.execute("ALTER TABLE lexical_entries ADD COLUMN form2_confidence REAL")
+        _p("  Added form2_confidence column to lexical_entries")
+    except sqlite3.OperationalError:
+        pass  # column already exists
+
+    # Step 3: Compute confidence for all verb entries
+    cur = conn.execute("""
+        SELECT entry_id, headword, verb_class, stem_preverb, grammatical_class
+        FROM lexical_entries
+        WHERE grammatical_class LIKE 'V%'
+    """)
+    rows = cur.fetchall()
+
+    updates = []
+    score_dist = {"high": 0, "medium": 0, "low": 0}
+
+    for r in rows:
+        conf = compute_confidence(
+            r["entry_id"], r["headword"],
+            r["verb_class"] or '', r["stem_preverb"] or '',
+            r["grammatical_class"] or '',
+            category_rates,
+        )
+        updates.append((conf, r["entry_id"]))
+
+        if conf >= 0.75:
+            score_dist["high"] += 1
+        elif conf >= 0.50:
+            score_dist["medium"] += 1
+        else:
+            score_dist["low"] += 1
+
+    conn.executemany(
+        "UPDATE lexical_entries SET form2_confidence = ? WHERE entry_id = ?",
+        updates,
+    )
+    conn.commit()
+    conn.close()
+
+    _p(f"\nConfidence scores written for {len(updates)} verb entries")
+    _p(f"  High (>= 0.75):  {score_dist['high']}")
+    _p(f"  Medium (0.50-0.74): {score_dist['medium']}")
+    _p(f"  Low (< 0.50):    {score_dist['low']}")
+
+    # Print category accuracy table
+    _p(f"\n{'Category':<30} {'Rate':>6} {'N':>5} {'Level':>8}")
+    _p("-" * 55)
+    for cat_key, info in sorted(category_rates.items(), key=lambda x: -x[1]["total"]):
+        if info["total"] < 3:
+            continue
+        rate = info["close_rate"]
+        level = "HIGH" if rate >= 0.85 else ("MED" if rate >= 0.60 else "LOW")
+        _p(f"  {cat_key:<28} {rate:>5.1%} {info['total']:>5} {level:>8}")
+
+
+# ---------------------------------------------------------------------------
 # CLI
 # ---------------------------------------------------------------------------
 
@@ -900,6 +1067,8 @@ def main():
     parser.add_argument("--db", default=default_db, help="Path to SQLite database")
     parser.add_argument("--validate", action="store_true", help="Run full validation")
     parser.add_argument("--report", action="store_true", help="Print accuracy report")
+    parser.add_argument("--confidence", action="store_true",
+                        help="Compute and store form2_confidence scores in the DB")
     parser.add_argument("--limit", type=int, default=0, help="Limit validation to N entries")
     parser.add_argument("--verbose", action="store_true", help="Show all mismatches")
     parser.add_argument("--predict", metavar="HEADWORD", help="Predict form_2 for a headword")
@@ -915,6 +1084,10 @@ def main():
         print(f"Preverb:   {args.preverb or '(none)'}")
         print(f"Predicted: {predicted}")
         print(f"Debug:     {json.dumps(debug, ensure_ascii=False, indent=2)}")
+        return
+
+    if args.confidence:
+        populate_confidence(args.db, verbose=args.verbose)
         return
 
     if args.validate or args.report:

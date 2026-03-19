@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+{% set active_page = 'admin' %}
+
+{% block title %}Feedback Review{% endblock %}
+
+{% block header_search %}{% endblock %}
+
+{% block content %}
+<section>
+  <h1 class="font-serif" style="text-align:center; margin-bottom:0.1em;">Community Feedback Review</h1>
+  <p style="text-align:center; color:var(--earth-500); margin-bottom:1.5rem;">
+    All submitted feedback must be reviewed before it enters the system.
+  </p>
+
+  {# ---- Status tabs ---- #}
+  <div class="feedback-tabs">
+    {% set statuses = [('pending', 'Pending'), ('accepted', 'Accepted'), ('rejected', 'Rejected'), ('reviewed', 'Reviewed')] %}
+    {% for val, label in statuses %}
+      {% set ct = counts.get(val, 0) %}
+      <a href="/admin/feedback?status={{ val }}"
+         class="feedback-tab {{ 'feedback-tab--active' if status_filter == val }}">
+        {{ label }}
+        {% if ct > 0 %}<span class="feedback-tab-count">{{ ct }}</span>{% endif %}
+      </a>
+    {% endfor %}
+  </div>
+
+  {# ---- Feedback items ---- #}
+  {% if items %}
+  <div class="feedback-queue">
+    {% for item in items %}
+    <div class="feedback-item" id="fb-item-{{ item.id }}">
+      <div class="feedback-item-header">
+        <div>
+          <a href="/entry/{{ item.entry_id }}" class="feedback-item-headword">
+            {{ item.headword or item.entry_id }}
+          </a>
+          {% if item.normalized_form and item.normalized_form != item.headword %}
+          <span style="color:var(--earth-500); font-size:0.85em;">{{ item.normalized_form }}</span>
+          {% endif %}
+          <span class="badge {{ 'badge-conf-low' if item.feedback_type == 'flag' else 'badge-conf-high' }}">
+            {{ item.feedback_type }}
+          </span>
+        </div>
+        <small style="color:var(--earth-400);">{{ item.created_at }}</small>
+      </div>
+
+      {% if item.feedback_type == 'flag' %}
+      <div class="feedback-item-body">
+        {% if item.form_field %}
+        <div><strong>Field:</strong> {{ item.form_field }}</div>
+        {% endif %}
+        {% if item.issue_type %}
+        <div><strong>Issue:</strong> {{ item.issue_type | replace('_', ' ') }}</div>
+        {% endif %}
+        {% if item.suggested_correction %}
+        <div><strong>Suggested:</strong> <span class="ipa">{{ item.suggested_correction }}</span></div>
+        {% endif %}
+        {% if item.comment %}
+        <div><strong>Comment:</strong> {{ item.comment }}</div>
+        {% endif %}
+      </div>
+      {% endif %}
+
+      {% if item.reporter_name %}
+      <div style="font-size:0.8em; color:var(--earth-400); margin-top:0.25em;">
+        Submitted by: {{ item.reporter_name }}
+      </div>
+      {% endif %}
+
+      {% if item.reviewer_note %}
+      <div style="font-size:0.85em; color:var(--earth-500); margin-top:0.5em; padding:0.5em; background:var(--smoke); border-radius:0.35rem;">
+        <strong>Reviewer note:</strong> {{ item.reviewer_note }}
+      </div>
+      {% endif %}
+
+      {% if status_filter == 'pending' %}
+      <div class="feedback-item-actions">
+        <button class="feedback-btn feedback-btn--confirm" onclick="reviewItem({{ item.id }}, 'accepted')">
+          Accept
+        </button>
+        <button class="feedback-btn feedback-btn--reject" onclick="reviewItem({{ item.id }}, 'rejected')">
+          Reject
+        </button>
+        <input type="text" class="feedback-note-input" id="note-{{ item.id }}" placeholder="Reviewer note (optional)">
+      </div>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  {% else %}
+  <p style="text-align:center; color:var(--earth-400); margin-top:2em;">
+    No {{ status_filter }} feedback items.
+  </p>
+  {% endif %}
+</section>
+
+<script>
+function reviewItem(id, status) {
+    const noteEl = document.getElementById('note-' + id);
+    const reviewer_note = noteEl ? noteEl.value : '';
+    fetch('/admin/feedback/' + id + '/review', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({ status: status, reviewer_note: reviewer_note }),
+    })
+    .then(r => r.json())
+    .then(res => {
+        if (res.ok) {
+            const item = document.getElementById('fb-item-' + id);
+            item.style.opacity = '0.4';
+            item.style.pointerEvents = 'none';
+            const actions = item.querySelector('.feedback-item-actions');
+            if (actions) {
+                actions.innerHTML = '<span class="badge ' +
+                    (status === 'accepted' ? 'badge-conf-high' : 'badge-conf-low') +
+                    '">' + status + '</span>';
+            }
+        }
+    })
+    .catch(() => alert('Failed to update. Please try again.'));
+}
+</script>
+{% endblock %}

@@ -228,11 +228,11 @@ High-impact items ordered by learner value, not technical dependency:
 |----------|-------|------|-----|
 | ✅ ~~1~~ | 3.1.5 | ~~Noun possession morphology~~ | **DONE (2026-03-18)** — 4 possession systems + locative suffixes + web widget + example filter. 40/40 tests. |
 | 🟡 2 | 3.1 (stem extraction) | Dictionary-wide stem extraction | **IN PROGRESS** — third pass: 83.5% → **86.6%** (1,914/2,211), 88.4% w/ close. Up from 14.8% → 62.0% → 83.5% → 86.6%. |
-| 🔴 3 | 4.3 | Confidence scoring on computed forms | Learners can't tell a 94%-likely form from a 31%-likely one |
-| 🔴 4 | 3.1 (accent) | Accent mark generation | Phonemic in Skiri — wrong accent = wrong word |
-| 🔴 5 | 4.4 | Community feedback mechanism | Low effort, enables the tool to improve itself over time |
+| ✅ ~~3~~ | 4.3 | ~~Confidence scoring on computed forms~~ | **DONE (2026-03-19)** — 4-factor weighted scoring (0.0-1.0), DB column, web badges, dashboard widget. 88.7% avg, 2,202 high / 30 med / 22 low. |
+| 🟡 4 | 3.1 (accent) | Accent mark generation | **IN PROGRESS** — 78/85 (91.8%) accented forms correct. 4 rules: Agent-boundary í, Mode-prefix í/rí, Infinitive kú, Dual sí. Appendix 1: 76.2% → **86.4%**. 7 remaining failures are verb-specific stem accents. |
+| ✅ ~~5~~ | 4.4 | ~~Community feedback mechanism~~ | **DONE (2026-03-19)** — Flag/confirm buttons, admin review queue, writable DB, dashboard widget. Design Principle #6 enforced. |
 | 🔴 6 | 5.2 (exports) | Printable PDFs + Anki export | Design Principle #3 is underbuilt; teachers need offline materials now |
-| 🟡 7 | Ongoing | Blue Book 518-gap triage | Measures what the tool can't yet handle for classroom use |
+| ✅ ~~7~~ | Ongoing | ~~Blue Book 518-gap triage~~ | **DONE (2026-03-19)** — 516 gaps classified: 38% phrases, 27% inflected verbs, 18% unlisted nouns, 8% descriptors, 3% possessed, 2% function words, 2% loanwords, 2% OCR artifacts. 65% are morphological (roots exist in Parks). 115 high-value items flagged for DB addition. |
 | 🟡 8 | 3.1.6 | Function word inventory | Needed before sentence construction can work |
 | 🟡 9 | 3.2a | Template-based sentence assembly | First usable step toward sentence construction |
 | 🟡 10 | 5.1 | Structured lesson content | Blue Book curriculum extraction for progressive learning |
@@ -503,9 +503,9 @@ Tasks completed:
 - [x] "to come" potential mode: preverb irii (1/2) / aa (3rd+1pl_incl); no POT.i; TR_MARKER boundary protection; mode shortening only before aa preverb; 1du_incl uses acir+POT.i instead
 - [x] "to come" infinitive mode: preverb ih (1/2) / a (3rd) placed BEFORE INF.B ku via INF_PREV label; 3.A stem for all sg; short stem ʔ-deletion threshold tightened
 
-**Current validation (latest pass — 2026-03-12):**
-- Appendix 1: **76.2% exact (587/770)**, 19.9% close (153), 3.9% miss (30)
-- Per verb: to go 94%, to drink it 89%, to be sick 88%, to have it 85%, to be good 79%, to do it 67%, to come 31%
+**Current validation (latest pass — 2026-03-19):**
+- Appendix 1: **76.2% exact (587/770)** without accents → **86.4% (665/770)** with accent rules (78/85 accented forms correct, pending integration)
+- Per verb: to go 94%, to drink it 89%, to be sick 88%, to have it 85%, to be good 79%, to do it 67%, to come 31% (to come jumps most with accent rules: +67 forms → ~92%)
 - Dictionary: **86.6% exact** (1,914/2,211 form_2 predictions via `stem_extractor.py`), 88.4% with close — up from 14.8% → 62.0% → 83.5% → 86.6%
 
 **Major improvements since first pass (12.7% → 76.2%):**
@@ -525,7 +525,7 @@ Tasks remaining (priority order — revised 2026-03-19):
 - [x] **Dictionary stem extraction — second pass** — **done (2026-03-19)**: 62.0% → **83.5% exact** (1,846/2,211), 86.3% with close. 12 fixes: i+i coalescence bug, aa/ii/uu-initial glottal insertion, VR reflexive witi- prefix, bracket notation ([+ neg.], [+ i-], [+ raar-], [+ ruu-]), r-deletion vowel-specific ʔ rules (-uur→-uuʔ, -aar→-aa, -iir→-ii), VD ʔ-echo insertion before stops, ir+ut/uur preverb chains, class 3 -aʔu/-aʔa contractions, ut+w junction (w→p), uur+h/s junction (h-absorption, s→c), -sk→-s and -hc→-c cluster rules, (4)-sa no ʔ, (wi) k→t, -i notation stripping.
 - [x] **Dictionary stem extraction — third pass** — **done (2026-03-19)**: 83.5% → **86.6% exact** (1,914/2,211), 88.4% with close. 12 fixes: a+u/a+i coalescence for ir-preverb, VD echo false-positive prevention, VD echo for -Vht clusters, VD -wii/-wiir shortening, -uuh shortening, ir+ut junction (keep tuut), class 3 aaʔa contraction guard, ir+ri+uur fusion (ri+uur→ruur), ir+uur h-absorption.
 - [ ] **Dictionary stem extraction — fourth pass** (optional) — remaining 257 misses: `si-` prefix (16), `ruuti-` prefix (19), prothetic vowel (5), internal long-vowel shortening, multi-word/bracket headwords. Diminishing returns — remaining cases need morphological decomposition or manual analysis.
-- [ ] **🔴 Accent mark generation** — 70 "to come" close matches + ~15 other verbs differ only by accent marks (á, í, ú); implementing stress assignment would boost ~85 forms to exact (~9% overall gain). **Elevated priority**: accent/pitch is phonemic in Skiri — generated forms without correct accent marks are unreliable for actual speech. Affects every computed paradigm form shown to learners. This is a learner-safety issue, not just an accuracy metric.
+- [x] **🟡 Accent mark generation** — **91.8% done (2026-03-19)**: `accent_rules.py` correctly assigns accent marks to 78/85 Appendix 1 accented forms. 4 rules: (A) Agent-boundary í after t/s/c, (B) Mode-prefix accent (assertive rí, contingent í, gerundial írii), (C) Infinitive kú, (D) Dual sí in absolutive/assertive/negative. Remaining 7 failures are verb-specific stem accents (not generalizable without per-verb annotation). **Impact: Appendix 1 accuracy 76.2% → 86.4%** (587+78=665/770). Integration into `morpheme_inventory.py` conjugation engine pending.
 - [ ] **"to do it" investigation** (74/110, 12 MISS) — largest remaining mismatch gap after "to come"
 - [ ] **"to come" remaining 6 MISS** — assertive/absolutive 3du (3.A stem used instead of du stem), gerundial 2sg (GER shortening fires on PREV label), 3pl sub suffix contraction (stem deleted); also 3pl sub `verb_class='1'` string adds SUB suffix incorrectly
 - [x] ~~VD(u) descriptive verb stem extraction~~ **now 78.2%** (was 1% → 44.7% → 78.2%) — remaining: internal long-vowel shortening, aw- absorption
@@ -696,8 +696,11 @@ flashcards, and live search. Mobile-responsive via Pico CSS framework.
 - `/browse/class/<class>` — Entries by grammatical class
 - `/flashcards` — Weekly flashcard overview
 - `/flashcards/<week>` — Interactive flashcard study session
-- `/dashboard` — Data quality dashboard (corpus stats, completeness, engine coverage)
+- `/dashboard` — Data quality dashboard (corpus stats, completeness, engine coverage, confidence distribution, feedback stats)
 - `/about` — About page with data source info
+- `/api/feedback` — POST: submit flag/confirm feedback on an entry
+- `/admin/feedback` — Review queue for community feedback (accept/reject with notes)
+- `/admin/feedback/<id>/review` — POST: accept or reject a feedback item
 
 ### 🔲 Phase 4.2 — Sentence Builder UI
 **Priority:** Low (depends on Phase 3.2a at minimum)
@@ -705,36 +708,89 @@ flashcards, and live search. Mobile-responsive via Pico CSS framework.
 
 Guided interface: select person/action/object/tense → assembled Skiri sentence with morpheme breakdown. Shows derivation steps so learners understand *why* the form looks the way it does. Initially uses Phase 3.2a templates; grows with 3.2b/3.2c.
 
-### 🔲 Phase 4.3 — Confidence Scoring System *(NEW)*
-**Priority:** High (should ship alongside any computed forms in the web UI)
-**Depends on:** Phase 3.1 (conjugation engine validation data)
-**Effort:** Small-Medium
+### ✅ Phase 4.3 — Confidence Scoring System *(completed 2026-03-19)*
+**Priority:** ✅ Complete (#3 on roadmap)
+**Implemented in:** `scripts/stem_extractor.py` (lines 897-1003), `web/templates/_entry_card.html`, `web/templates/entry.html`, `web/templates/dashboard.html`
+**Built via:** Claude Code (VS Code) — parallel with stem extraction second pass
 
-The current attested/computed binary badge is necessary but insufficient. A form generated for a verb in the same class as "to go" (94% accuracy) is far more trustworthy than one using the same patterns as "to come" (31%). Learners need to know *how* computed a form is.
+The attested/computed binary badge is replaced by a **continuous confidence score** (0.0–1.0) with 3-tier visual indicators, so learners know *how* trustworthy a computed form is.
 
-Tasks:
-- [ ] Define 3-tier confidence model: **High** (verb class accuracy ≥ 85% + stem manually verified), **Medium** (verb class accuracy 60–85% OR stem auto-extracted), **Low** (verb class accuracy < 60% OR multiple sound change rules applied OR stem extraction uncertain)
-- [ ] Compute per-entry confidence scores using: verb class validation accuracy (from Phase 3.1 results), stem extraction method (manual vs auto), number of sound change rules applied (more rules = more compounding error), whether similar forms in the same paradigm were attested
-- [ ] Add `confidence_tier` column to `paradigmatic_forms` DB table
-- [ ] Display confidence as visual indicator on paradigm tables (e.g., ●●● high, ●●○ medium, ●○○ low)
-- [ ] Add tooltip/popover explaining what the confidence level means for that specific form
-- [ ] Log analytics: which confidence tiers are users viewing? (helps prioritize verification work)
+**Confidence engine (`compute_confidence()`)** — 4-factor weighted score:
 
-### 🔲 Phase 4.4 — Community Feedback Mechanism *(NEW)*
-**Priority:** High (low effort, critical for long-term data improvement)
-**Depends on:** Phase 4.1 (web interface)
-**Effort:** Small
+| Factor | Weight | What it measures |
+|--------|--------|-----------------|
+| Category accuracy | 50% | Per-`(class)\|(preverb)` exact+close rate from `stem_extractor.py` validation |
+| Prediction method | 20% | Boost for explicit `verb_class` and `stem_preverb` fields (vs inferred) |
+| Stem complexity | 15% | Penalties for bracket notation `[+ neg.]`, slash alternates, multi-word headwords |
+| Sample size | 15% | Bayesian shrinkage — small categories regress toward population mean |
 
-No mechanism currently exists for a knowledgeable user (teacher, elder's family member, former class student) to report that a computed form is wrong or confirm it's correct. Community corrections become a new source of attestation, gradually shrinking the "computed" category without requiring AI.
+**DB:** New column `lexical_entries.form2_confidence` (REAL, 0.0–1.0). Populated via `python scripts/stem_extractor.py --confidence`.
 
-Tasks:
-- [ ] Add "Flag this form" button on every computed form in paradigm tables and entry cards
-- [ ] Create `community_feedback` DB table: entry_id, form_field, suggested_correction, reporter_name (optional), timestamp, status (pending/reviewed/accepted/rejected)
-- [ ] Simple review queue page (admin-only route) listing pending feedback
-- [ ] "Confirm this form" button for attested forms — crowd-sourced verification
-- [ ] Track acceptance rate: how often does community feedback match attested forms? (validates the feedback quality)
-- [ ] Optional: email notification to project maintainer when new feedback arrives
-- [ ] Design principle: never auto-accept corrections — all feedback goes through human review
+**Web UI:**
+- Search result cards (`_entry_card.html`): green/gold/red badge with tier label
+- Entry detail headers (`entry.html`): same badge + score value
+- API search results: `form2_confidence` field in JSON
+- Dashboard widget (`dashboard.html`): stacked bar chart with high/med/low counts + average
+
+**Results:**
+
+| Tier | Score | Count | Description |
+|------|-------|-------|-------------|
+| High | ≥ 75% | 2,202 | Reliable predictions |
+| Medium | 50–74% | 30 | Minor differences possible |
+| Low | < 50% | 22 | Treat with caution |
+| **Average** | **88.7%** | 2,254 | |
+
+Tasks completed:
+- [x] Define 3-tier confidence model (High ≥75%, Medium 50-74%, Low <50%)
+- [x] Compute per-entry confidence scores using 4-factor weighted formula
+- [x] Add `form2_confidence` column to `lexical_entries` DB table
+- [x] Display confidence as color-coded badges on search cards and entry headers
+- [x] Dashboard widget with distribution visualization
+- [x] API endpoint returns confidence score
+- [ ] *(deferred)* Tooltip/popover explaining what confidence means for that specific form
+- [ ] *(deferred)* Log analytics: which confidence tiers are users viewing?
+
+### ✅ Phase 4.4 — Community Feedback Mechanism *(completed 2026-03-19)*
+**Priority:** ✅ Complete (#5 on roadmap)
+**Implemented in:** `web/app.py`, `web/db.py`, `web/templates/entry.html`, `web/templates/dashboard.html`, `scripts/add_feedback_table.py`
+**Built via:** Claude Code (VS Code)
+
+Knowledgeable community members (teachers, elders' family members, students) can now flag errors and confirm forms. All feedback goes through human review — never auto-accepted (Design Principle #6).
+
+**DB:**
+- `community_feedback` table: entry_id, feedback_type (flag/confirm), issue_type, suggested_correction, comment, reporter_name (optional), status workflow (pending→accepted/rejected), reviewer_note, timestamps
+- Migration script: `scripts/add_feedback_table.py`
+- Separate writable DB connection in `db.py` — main dictionary stays read-only
+
+**Entry detail page (`entry.html`):**
+- "Flag an issue" button → modal with field selector, issue type, correction field, comment, optional name
+- "Confirm this entry" → one-click crowd-sourced verification
+- Per-entry feedback counts displayed
+
+**Admin review queue (`/admin/feedback`):**
+- Status tabs: Pending / Accepted / Rejected / Reviewed
+- Per-item accept/reject with reviewer notes
+- Linked to entry detail for context
+
+**Dashboard (`dashboard.html`):**
+- Feedback stats widget (total, pending, accepted, rejected) — appears when feedback exists
+
+**API routes:**
+- `POST /api/feedback` — submit flag or confirm
+- `GET /admin/feedback` — review queue page
+- `POST /admin/feedback/<id>/review` — accept/reject
+
+Tasks completed:
+- [x] Add "Flag this form" button on entry detail pages
+- [x] Create `community_feedback` DB table with full schema
+- [x] Simple review queue page (admin-only route) listing pending feedback
+- [x] "Confirm this form" button for crowd-sourced verification
+- [x] Per-entry feedback counts in entry detail view
+- [x] Dashboard widget with feedback stats
+- [x] Design principle enforced: never auto-accept corrections — all feedback goes through human review
+- [ ] *(deferred)* Track acceptance rate analytics
+- [ ] *(deferred)* Email notification to maintainer on new feedback
 
 ### 🔲 Phase 5.1 — Structured Lesson Content
 **Priority:** Medium (can start after Phase 4.1)
@@ -770,7 +826,7 @@ Tasks:
 
 ### 🔲 Ongoing — Data Quality & Maintenance
 
-- [ ] **🔴 Blue Book gap triage** — 518 of 984 BB vocabulary items unmatched. Many are inflected verb forms or phrases derivable with a stronger conjugation engine, but some may be genuinely missing lexical items, loanwords, or conversational forms Parks didn't include. Systematic triage needed: (a) which gaps are inflected forms of existing entries? (b) which are multi-word constructions? (c) which are genuinely missing? This directly measures what the tool can't yet handle for classroom learners.
+- [x] **~~Blue Book gap triage~~** — **DONE (2026-03-19)** via Gemini batch analysis. 516 of 984 BB vocabulary items classified into 8 categories: phrases (196/38%), inflected verbs (141/27%), unlisted nouns (94/18%), descriptors (40/8%), possessed forms (15/3%), function words (11/2%), loanwords (10/2%), OCR artifacts (9/2%). Key finding: 65% are morphological gaps (roots exist in Parks, inflected forms don't match). 115 high-value items (nouns + function words + loanwords) flagged for potential DB addition. DB table: `bb_gap_triage`. Report: `reports/bb_gap_triage.txt`. Script: `scripts/bb_gap_triage.py`.
 - [ ] Resolve 362 unmatched E2S entries (most are parsing artifacts, some may be real terms)
 - [ ] Review 8 low-confidence homonym matches from linking
 - [ ] Version control: track changes to entries over time
@@ -823,7 +879,10 @@ These principles guide all user-facing features:
 | `noun_possession.py` | `scripts/` | Phase 3.1.5: noun possession morphology — extract nouns, classify possession systems, build kinship paradigms, generate possessive forms, validate against BB (--extract, --report, --validate, --db, --generate HEADWORD) | No |
 | `possession_engine.py` | `scripts/` | Phase 3.1.5: possession form generation engine — dispatches to kinship/body_part/agent/locative/patient systems, integrates sound changes, generates morpheme chips for web UI (--test, --paradigm HEADWORD) | No |
 | `example_filter.py` | `scripts/` | Phase 3.1.5: Skiri-aware headword matching for examples — rejects false substring matches (kirike≠kiri), handles OCR variants (J→E, 1→E), compound detection via epenthetic-h, prefix disambiguation against headword set; wired into entry_detail route | No |
-| `stem_extractor.py` | `scripts/` | Phase 3.1: dictionary-wide form_2 prediction — parses stem_preverb, infers verb class, applies preverb junction rules + coalescence + perfective finals (--validate, --predict HEADWORD, --report) | No |
+| `stem_extractor.py` | `scripts/` | Phase 3.1: dictionary-wide form_2 prediction — parses stem_preverb, infers verb class, applies preverb junction rules + coalescence + perfective finals (--validate, --predict HEADWORD, --report, --confidence) | No |
+| `add_feedback_table.py` | `scripts/` | Phase 4.4: migration script to create `community_feedback` table in SQLite DB | No |
+| `accent_rules.py` | `scripts/` | Phase 3.1: accent mark assignment rules — 4 rules (Agent-boundary í, Mode-prefix accent, Infinitive kú, Dual sí); validates against 85 Appendix 1 accented forms (--validate, --analyze) | No |
+| `bb_gap_triage.py` | `scripts/` | Phase 2.2/Ongoing: classify 516 unmatched Blue Book items via Gemini batch analysis into 8 categories (phrase, inflected_verb, noun_unlisted, descriptor, possessed_form, function_word, loanword, ocr_artifact); populates `bb_gap_triage` DB table with checkpointing | Yes (GEMINI_API_KEY) |
 
 ## Environment
 
@@ -856,10 +915,10 @@ Many tasks in this project can be **split across tools simultaneously**:
 - **Claude Code (Sonnet)**: Implement the fixes in `stem_extractor.py`, run validation, iterate on regex patterns for `[+ neg.]` / `witi-` / initial-ʔ handling
 - **Gemini API**: Batch-analyze the 385 VD verb mismatches — send headword+form_2 pairs to Gemini with Parks rule descriptions, get structured morpheme breakdowns for each, identify which internal sound change rules apply
 
-**Example: Future Phase 4.3 (Confidence Scoring)**
-- **Gemini API**: Compute per-class accuracy stats from `stem_extractor.py` validation output → feed into confidence tier assignments
-- **Claude Code**: Write the DB migration + web UI badge rendering
-- **claude.ai**: Design the confidence model (what constitutes high/medium/low)
+**Example: Phase 3.1 Accent Mark Generation (next deep-analysis priority)**
+- **claude.ai (Opus)**: Analyze Parks' pitch/stress rules from the scanned PDFs; design accent assignment algorithm using the ~70 "to come" accent-only close matches as test suite
+- **Claude Code (Sonnet)**: Implement accent rules in `stem_extractor.py` or `morpheme_inventory.py`, run validation
+- **Gemini API**: Batch-extract accent patterns from the 770 Appendix 1 forms (which ones have accents, where do they fall)
 
 **Example: Future Phase 5.2 (Anki Export)**
 - **Claude Code**: Write the export script (SQLite → Anki .apkg format)
@@ -877,6 +936,7 @@ The Gemini API (`GEMINI_API_KEY`) is already used for several tasks and is avail
 | `analyze_dual_plural.py` | Morpheme breakdown analysis for dual/plural verb forms |
 | `audit_entries.py` | Batch validate parsed entries for data quality |
 | **`stem_extractor.py` (planned)** | Batch-analyze mismatch patterns for VD verbs; generate morpheme decompositions for compound headwords |
+| `bb_gap_triage.py` | Classify 516 unmatched Blue Book items into 8 categories via 11 Gemini batches (completed) |
 
 **Practical tip:** For analytical tasks with 100+ items (like "analyze why 385 VD verb predictions fail"), Gemini's batch processing is faster and cheaper than running them through claude.ai one by one. Structure the prompt as: "Given this headword and attested form_2, identify which Parks sound change rules explain the difference from this predicted form."
 
@@ -943,11 +1003,11 @@ export ANTHROPIC_MODEL=claude-sonnet-4-6  # or claude-opus-4-6
 ## How to Use This Document
 
 Reference any section by name when starting a new chat. For example:
-- "Continue **Phase 3.1 — Dictionary-Wide Stem Extraction** — second pass targeting 70%+"
-- "Let's tackle **Phase 4.3 — Confidence Scoring System**"
-- "Help me with the **Blue Book 518-gap triage** from the Ongoing section"
-- "I want to work on **Phase 3.2a — Template-Based Sentence Assembly**"
-- "Let's build the **Anki deck export** from Phase 5.2"
+- "Let's tackle **Phase 3.1 — Accent Mark Generation**"
+- "Build the **Anki deck export** from Phase 5.2"
+- "Start **Phase 3.1.6 — Function Word Inventory** using the BB gap triage seed data"
+- "Continue **Phase 3.1 — stem extraction fourth pass** targeting 90%+"
+- "I want to work on **Phase 5.1 — Structured Lesson Content**"
 
 The AI should read this document, understand the current data state, and pick up from the referenced step without needing the full conversation history.
 
@@ -961,21 +1021,25 @@ The AI should read this document, understand the current data state, and pick up
 
 Copy-paste this to start the next session (claude.ai or Claude Code):
 
-> **Continue Phase 3.1 — Dictionary-Wide Stem Extraction, third pass (optional).**
+> **Pick the next priority from the Pari Pakuru roadmap.**
 >
-> Second pass is done: `scripts/stem_extractor.py` predicts form_2 at **83.5% exact** (1,846/2,211), 86.3% with close. Up from 14.8% → 62.0% → 83.5%.
+> **What's done (session: 2026-03-19):**
+> - Phase 3.1.5 Noun possession: ✅ (4 systems, locative suffixes, web widget, example filter, 40/40 tests)
+> - Phase 3.1 Stem extraction: 🟡 86.6% exact (1,914/2,211 verbs), up from 14.8% baseline across 3 passes
+> - Phase 3.1 Accent rules: 🟡 91.8% (78/85 accented forms correct). 4 rules in `accent_rules.py`. Appendix 1: 76.2% → 86.4% pending integration into `morpheme_inventory.py`
+> - Phase 4.3 Confidence scoring: ✅ (4-factor weighted score, DB column, web badges, 88.7% average)
+> - Phase 4.4 Community feedback: ✅ (flag/confirm buttons, admin review queue, writable DB, dashboard widget)
+> - Blue Book gap triage: ✅ (516 gaps classified — 65% morphological, 18% unlisted nouns, 115 high-value items flagged). Feeds into #8 Function word inventory.
 >
-> The scope doc (`pari_pakuru_project_scope.md`) has full context including per-category accuracy breakdown. The DB is `skiri_pawnee.db` in the repo root.
+> **Remaining roadmap priorities:**
+> - 🔴 #4 (integration): **Integrate accent rules into conjugation engine** — `accent_rules.py` has the rules validated, needs to be wired into `morpheme_inventory.py`'s output. **Good for Claude Code**.
+> - 🔴 #6: **Printable PDFs + Anki export** — teachers need offline materials now; Design Principle #3 is underbuilt. **Good for Claude Code**.
+> - 🟡 #8: **Function word inventory** — 11 function words identified in BB gap triage are a starting seed. Needed for sentence construction (Phase 3.2a).
+> - 🟡 Optional: **Stem extraction fourth pass** (86.6%→90%+) — diminishing returns
 >
-> **Remaining 302 misses are harder cases:**
-> 1. Internal long-vowel shortening (aah→ah in compounds) — 57 cases
-> 2. `aw-` prefix absorption for VD verbs (`awaaks → tiwaaks` not `tiiwaaks`) — needs morphological decomposition
-> 3. Complex bracket notations (`[+ ku-, ruu-, irii-]`, `[+ wiiruu-]`) — ~10 entries
-> 4. Multi-word/alternate headwords (`at istuʔ`, `cak, icak`) — ~15 entries
-> 5. Entries with different prefix than expected (`ruuti-`, `si-`, `kaak-` + preverb combos) — ~30 entries
+> The scope doc (`pari_pakuru_project_scope.md`) has full context. The DB is `skiri_pawnee.db`. Scripts are in `scripts/`. Web app runs on PythonAnywhere.
 >
-> **Parallel opportunity:** Gemini batch analysis of the remaining 67 VD (u)|none misses could identify internal shortening rules. Also, the 14 remaining (3)|(ir...) misses involve class 3 stem allomorphy that may need manual linguistic analysis.
->
-> **Alternative next steps** (higher impact per effort):
-> - **Phase 4.3 — Confidence scoring**: now that 83.5% of predictions match, scoring the remaining 16.5% as low-confidence is tractable
-> - **Phase 3.1 accent marks**: ~68 close matches are accent-only differences; implementing pitch/stress rules would boost to ~86%+ exact
+> **Tool recommendations:**
+> - Accent integration → **Claude Code** (wire `apply_accent_rules()` into morpheme_inventory output)
+> - PDF/Anki export → **Claude Code** directly
+> - BB gap triage → **Gemini API** batch analysis

@@ -42,6 +42,7 @@ class EntrySummary:
     blue_book_attested: bool = False
     tags: List[str] = field(default_factory=list)
     example_snippet: Optional[str] = None
+    form2_confidence: Optional[float] = None
 
 
 @dataclass
@@ -62,6 +63,15 @@ class SkiriWebDictionary(SkiriDictionary):
         self.conn = sqlite3.connect(f"file:{db_path}?mode=ro", uri=True)
         self.conn.row_factory = sqlite3.Row
         self.conn.execute("PRAGMA foreign_keys = ON")
+        self._write_conn = None
+
+    def _get_write_conn(self) -> sqlite3.Connection:
+        """Lazy writable connection for community feedback operations."""
+        if self._write_conn is None:
+            self._write_conn = sqlite3.connect(self.db_path)
+            self._write_conn.row_factory = sqlite3.Row
+            self._write_conn.execute("PRAGMA foreign_keys = ON")
+        return self._write_conn
 
     # ------------------------------------------------------------------
     # Entry summaries (lightweight, for result lists)
@@ -71,7 +81,7 @@ class SkiriWebDictionary(SkiriDictionary):
         cur = self.conn.cursor()
         cur.execute(
             "SELECT entry_id, headword, normalized_form, simplified_pronunciation, "
-            "grammatical_class, verb_class, blue_book_attested "
+            "grammatical_class, verb_class, blue_book_attested, form2_confidence "
             "FROM lexical_entries WHERE entry_id = ?",
             (entry_id,),
         )
@@ -93,6 +103,12 @@ class SkiriWebDictionary(SkiriDictionary):
         )
         tags = [r["tag"] for r in cur.fetchall()]
 
+        # form2_confidence may not exist yet (column added by --confidence)
+        try:
+            f2conf = row["form2_confidence"]
+        except (IndexError, KeyError):
+            f2conf = None
+
         return EntrySummary(
             entry_id=row["entry_id"],
             headword=row["headword"],
@@ -103,6 +119,7 @@ class SkiriWebDictionary(SkiriDictionary):
             first_gloss=gloss_row["definition"] if gloss_row else None,
             blue_book_attested=bool(row["blue_book_attested"]),
             tags=tags,
+            form2_confidence=f2conf,
         )
 
     def build_entry_summaries(self, entry_ids: List[str]) -> List[EntrySummary]:
@@ -308,6 +325,94 @@ class SkiriWebDictionary(SkiriDictionary):
         return result
 
     # ------------------------------------------------------------------
+    # Community feedback
+    # ------------------------------------------------------------------
+
+    def submit_feedback(
+        self,
+        entry_id: str,
+        feedback_type: str,
+        form_field: str = None,
+        issue_type: str = None,
+        suggested_correction: str = None,
+        comment: str = None,
+        reporter_name: str = None,
+    ) -> int:
+        """Submit a community feedback item. Returns the new row id."""
+        wc = self._get_write_conn()
+        cur = wc.cursor()
+        cur.execute(
+            "INSERT INTO community_feedback "
+            "(entry_id, form_field, feedback_type, issue_type, "
+            " suggested_correction, comment, reporter_name) "
+            "VALUES (?, ?, ?, ?, ?, ?, ?)",
+            (entry_id, form_field, feedback_type, issue_type,
+             suggested_correction, comment, reporter_name),
+        )
+        wc.commit()
+        return cur.lastrowid
+
+    def get_feedback_queue(
+        self, status: str = "pending", limit: int = 100, offset: int = 0
+    ) -> List[dict]:
+        """Return feedback items for admin review."""
+        # Read from writable conn to see latest writes
+        wc = self._get_write_conn()
+        cur = wc.cursor()
+        cur.execute(
+            "SELECT f.*, le.headword, le.normalized_form "
+            "FROM community_feedback f "
+            "LEFT JOIN lexical_entries le ON f.entry_id = le.entry_id "
+            "WHERE f.status = ? "
+            "ORDER BY f.created_at DESC "
+            "LIMIT ? OFFSET ?",
+            (status, limit, offset),
+        )
+        return [dict(r) for r in cur.fetchall()]
+
+    def get_feedback_counts(self) -> dict:
+        """Return counts by status for dashboard."""
+        wc = self._get_write_conn()
+        cur = wc.cursor()
+        cur.execute(
+            "SELECT status, COUNT(*) as ct FROM community_feedback GROUP BY status"
+        )
+        counts = {r["status"]: r["ct"] for r in cur.fetchall()}
+        total = sum(counts.values())
+        return {"total": total, **counts}
+
+    def get_entry_feedback_count(self, entry_id: str) -> dict:
+        """Return feedback counts for a specific entry."""
+        wc = self._get_write_conn()
+        cur = wc.cursor()
+        cur.execute(
+            "SELECT feedback_type, COUNT(*) as ct "
+            "FROM community_feedback WHERE entry_id = ? "
+            "GROUP BY feedback_type",
+            (entry_id,),
+        )
+        return {r["feedback_type"]: r["ct"] for r in cur.fetchall()}
+
+    def review_feedback(self, feedback_id: int, status: str, reviewer_note: str = None):
+        """Accept or reject a feedback item."""
+        wc = self._get_write_conn()
+        cur = wc.cursor()
+        cur.execute(
+            "UPDATE community_feedback "
+            "SET status = ?, reviewer_note = ?, reviewed_at = datetime('now') "
+            "WHERE id = ?",
+            (status, reviewer_note, feedback_id),
+        )
+        wc.commit()
+
+    def close(self):
+        """Close both read-only and writable connections."""
+        if self._write_conn:
+            self._write_conn.close()
+            self._write_conn = None
+        self.conn.close()
+
+    # ------------------------------------------------------------------
     # Enhanced entry building (adds tags + BB info)
     # ------------------------------------------------------------------
 
@@ -330,10 +435,24 @@ class SkiriWebDictionary(SkiriDictionary):
         )
         derived_stems = [dict(r) for r in cur.fetchall()]
 
+        # Get form2_confidence for verb entries
+        form2_confidence = None
+        try:
+            cur.execute(
+                "SELECT form2_confidence FROM lexical_entries WHERE entry_id = ?",
+                (entry_id,),
+            )
+            row = cur.fetchone()
+            if row:
+                form2_confidence = row["form2_confidence"]
+        except (sqlite3.OperationalError, KeyError):
+            pass
+
         return {
             "entry": entry,
             "tags": tags,
             "bb_info": bb_info,
             "paradigm_table": paradigm_table,
             "derived_stems": derived_stems,
+            "form2_confidence": form2_confidence,
         }

@@ -135,6 +135,25 @@
         <span class="dash-engine-detail" style="color:var(--earth-400);">Not available</span>
       {% endif %}
     </div>
+    {% if verb.confidence_dist %}
+    <div class="dash-engine-card">
+      <span class="section-label">Prediction Confidence</span>
+      <span class="dash-engine-number">{{ (verb.confidence_dist.avg * 100) | round(0) | int }}%</span>
+      <span class="dash-engine-detail">avg across {{ "{:,}".format(verb.confidence_dist.total) }} verbs</span>
+      <div style="display:flex; gap:0.5rem; margin-top:0.5rem; font-size:0.8rem;">
+        <span style="color:var(--sage-600);">High: {{ "{:,}".format(verb.confidence_dist.high) }}</span>
+        <span style="color:var(--gold-600);">Med: {{ "{:,}".format(verb.confidence_dist.medium) }}</span>
+        <span style="color:var(--clay-600);">Low: {{ "{:,}".format(verb.confidence_dist.low) }}</span>
+      </div>
+      {% set cd = verb.confidence_dist %}
+      {% set cd_total = cd.total if cd.total else 1 %}
+      <div style="display:flex; height:8px; border-radius:4px; overflow:hidden; margin-top:0.4rem; width:100%;">
+        <div style="width:{{ (cd.high / cd_total * 100) | round(1) }}%; background:var(--sage-400);"></div>
+        <div style="width:{{ (cd.medium / cd_total * 100) | round(1) }}%; background:var(--gold-400);"></div>
+        <div style="width:{{ (cd.low / cd_total * 100) | round(1) }}%; background:var(--clay-400);"></div>
+      </div>
+    </div>
+    {% endif %}
     <div class="dash-engine-card">
       <span class="section-label">Possession Engine</span>
       {% if poss.body_part is not none %}
@@ -172,6 +191,34 @@
   </p>
   {% endif %}
 </section>
+
+{# ====== Community Feedback ====== #}
+{% if feedback and feedback.total > 0 %}
+<section class="dash-section">
+  <h2 class="dash-section-title">Community Feedback</h2>
+  <div class="dash-engine-grid">
+    <div class="dash-engine-card">
+      <span class="section-label">Total Submissions</span>
+      <span class="dash-engine-number">{{ feedback.total }}</span>
+    </div>
+    <div class="dash-engine-card">
+      <span class="section-label">Pending Review</span>
+      <span class="dash-engine-number" style="color:var(--gold-600);">{{ feedback.get('pending', 0) }}</span>
+    </div>
+    <div class="dash-engine-card">
+      <span class="section-label">Accepted</span>
+      <span class="dash-engine-number" style="color:var(--sage-600);">{{ feedback.get('accepted', 0) }}</span>
+    </div>
+    <div class="dash-engine-card">
+      <span class="section-label">Rejected</span>
+      <span class="dash-engine-number" style="color:var(--clay-600);">{{ feedback.get('rejected', 0) }}</span>
+    </div>
+  </div>
+  <p style="text-align:right; margin-top:0.5em;">
+    <a href="/admin/feedback" style="font-size:0.85em;">Review pending feedback &rarr;</a>
+  </p>
+</section>
+{% endif %}
 
 {# ====== Paradigmatic Form Coverage ====== #}
 <section class="dash-section">

@@ -1,0 +1,85 @@
+======================================================================
+FUNCTION WORD EXTRACTION FROM BB PHRASES
+Generated: 2026-03-19 18:19:17
+======================================================================
+
+Phrases analysed:          196
+Raw extractions:           194
+Unique normalized forms:   69
+Already known (filtered):  12
+New function words:        57
+
+NEW FUNCTION WORDS
+----------------------------------------
+  .a                    particle            particle                        [0.8]  from: We kut'at-tsu .a.
+  .aʔ                   particle            direction/motion particle       [0.9]  from: Nawa, siks .uka .a'.
+  .hat                  particle            out/away                        [0.8]  from: Suks•kata .hat!
+  .hiriʔ                locative            here/there                      [0.8]  from: Suks•at pihkawf .hiri'.
+  .ista                 particle            will (future marker)            [0.8]  from: T'at•tsu•d .ista.
+  .ra                   particle            the / that                      [0.7]  from: hiri .ra wa .raruhat
+  .uka                  locative            in/inside                       [0.9]  from: Nawa, siks .uka .a'.
+  .ukah                 locative            outside                         [0.8]  from: ti .ukah .kaari t
+  ah                    interjection        oh / indeed                     [0.7]  from: or ah +
+  ar                    conjunction         that / because                  [0.8]  from: ar +
+  aʔ                    particle            direction/motion particle       [0.9]  from: Siks a'.
+  cararat               demonstrative       other / those                   [0.8]  from: Wi•turuks•ka•hurar•ri hiri ah•ratukstak•kitkeu'. T
+  ha                    particle            oh / well (introductory particle)  [0.7]  from: ha .kawahtsisu '
+  hau                   interjection        Yes                             [1.0]  from: Hau, ti hitu'.
+  hiri                  locative            where/here/this                 [0.9]  from: HIRI AH•RATUKSTAK•KITKEU
+  hirihe                demonstrative       this/that/here                  [0.8]  from: (hirihe) Situks•pa.
+  hti                   adverb              always                          [0.9]  from: rahtiritat ta hti .tuhtu'
+  i                     particle            particle                        [0.9]  from: Ti 'hr i kawaats.
+  ilanʔ                 interjection        Yes                             [1.0]  from: Ilan', tiku•ratsaus.
+  kirike                interrogative       what                            [1.0]  from: Paresu kirike rut•ari '?
+  kirti                 interrogative       Where?                          [1.0]  from: Kirti ra•'at rikutski?
+  kiru                  interrogative       Where?                          [1.0]  from: KIRU RATSUKS•AT?
+  kitu                  quantifier          all/together                    [1.0]  from: Kitu sitatut•erit.
+  kituʔ                 adverb              altogether                      [0.9]  from: Ra kitu'.
+  kti                   pronoun             your                            [0.9]  from: ktI rasiru paks•ktiku'
+  kuh                   adverb              perhaps / guess                 [0.8]  from: or kuh +
+  kusaksi               locative            left                            [0.9]  from: Suks .at kusaksi.
+  niru                  interrogative       where                           [1.0]  from: Niru ruks•ku?
+  or                    conjunction         or / even though                [0.8]  from: or ah +
+  pihkawf               adverb              right                           [0.9]  from: Suks•at pihkawf .hiri'.
+  pirau                 temporal            when                            [1.0]  from: Pirau Rarah•kata•ispu'
+  ra                    particle            definite article/particle       [0.8]  from: Ra .pa•u R'at•tsuahu'
+  rd                    particle            particle                        [0.7]  from: Tuhkaka' hiri rd .huri•wawi
+  resaru                adverb              perhaps / maybe                 [0.8]  from: Wi•turuks•ka•hurar•ri hiri ah•ratukstak•kitkeu'. T
+  ru                    locative            there/over there                [1.0]  from: Ru tatuks•at Rihita•wiru.
+  sihuks                quantifier          five                            [0.9]  from: sihuks ri•katiharu'
+  sihukstarti           quantifier          fifteen                         [0.9]  from: sihuks•tarti .kita
+  siks                  particle            imperative particle             [0.9]  from: Nawa, siks .uka .a'.
+  sisuks                particle            you (2) imperative particle     [0.9]  from: Sisuks .pa.
+  sitas                 pronoun             you (2)                         [0.9]  from: sitas .kikat
+  sitat                 pronoun             we (2)                          [1.0]  from: Sitat .pitit.
+  siti                  pronoun             they (2)                        [1.0]  from: Siti .wari'.
+  stiks                 particle            you (1) imperative particle     [0.9]  from: Stiks .atku!
+  suks                  particle            imperative particle             [0.9]  from: Suks .at kusaksi.
+  t                     particle            particle                        [0.7]  from: We t 'at•tsu•a.
+  taku                  interrogative       what/anyone                     [1.0]  from: Nawa, taku ka ra•ka .ku?
+  ti                    copula              is/are                          [1.0]  from: Hau, ti hitu'.
+  tihe                  demonstrative       those                           [0.9]  from: Wi•turuks•ka•hurar•ri hiri ah•ratukstak•kitkeu'. T
+  tuks                  temporal            was/in                          [0.8]  from: Tuks .kaku '.
+  tʔat                  pronoun             I                               [0.8]  from: We t'at .tszi-a.
+  ut                    interjection        O                               [0.9]  from: Ut ras•a•hukita•ku
+  wa                    conjunction         and / then                      [0.7]  from: hiri .ra wa .raruhat
+  we                    particle            particle (present tense/emphasis)  [1.0]  from: (we) t'at•tstI a
+  wfs                   interjection        Hurry!                          [0.9]  from: Wfs kutsu'!
+  wi                    discourse_marker    it is said                      [0.9]  from: wi +
+  witi                  temporal            will / going to (future marker)  [0.8]  from: We witi tat•titsi'sta.
+  ʔhr                   particle            particle                        [0.7]  from: Ti 'hr i kawaats.
+
+ALREADY KNOWN (skipped)
+----------------------------------------
+  a                     conjunction         and
+  asku                  quantifier          one
+  cikstit               adverb              well
+  hituʔ                 demonstrative       this
+  ka                    interrogative       interrogative particle
+  ka?                   interrogative       What?
+  karihac               adverb              up
+  nawa                  interjection        Hello/Go ahead
+  pitku                 quantifier          two
+  rahesaʔ               temporal            tomorrow
+  ta                    conjunction         and / then / so
+  to                    copula              is

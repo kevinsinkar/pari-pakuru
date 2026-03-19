@@ -316,6 +316,7 @@ def api_search():
                 "blue_book_attested": r.blue_book_attested,
                 "tags": r.tags,
                 "example_snippet": r.example_snippet,
+                "form2_confidence": r.form2_confidence,
                 "url": f"/entry/{r.entry_id}",
             }
             for r in results
@@ -332,6 +333,10 @@ def entry_detail(entry_id):
 
     # Filter out false-positive examples and BB refs (e.g., kirike ≠ kiri)
     _filter_entry_examples(data)
+
+    # Community feedback counts for this entry
+    feedback_counts = db.get_entry_feedback_count(entry_id)
+    data["feedback_counts"] = feedback_counts
 
     return render_template("entry.html", **data)
 
@@ -569,21 +574,45 @@ def dashboard():
         except Exception:
             verb[key] = None
 
-    # --- Stem Extraction Accuracy (form_2 prediction) ---
+    # --- Stem Extraction Accuracy (from pre-computed confidence scores) ---
     try:
-        import sys as _sys
-        scripts_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "scripts")
-        if scripts_dir not in _sys.path:
-            _sys.path.insert(0, scripts_dir)
-        from stem_extractor import validate_all
-        stem_results = validate_all(db.db_path)
-        verb["stem_total"] = stem_results["total"]
-        verb["stem_exact"] = stem_results["exact"]
-        verb["stem_close"] = stem_results["close"]
-        verb["stem_pct"] = stem_results["accuracy_exact"]
-        verb["stem_pct_close"] = stem_results["accuracy_with_close"]
+        row = cur.execute("""
+            SELECT COUNT(*) as total,
+                   SUM(CASE WHEN form2_confidence >= 0.75 THEN 1 ELSE 0 END) as high_conf
+            FROM lexical_entries
+            WHERE grammatical_class LIKE 'V%'
+        """).fetchone()
+        verb["stem_total"] = row[0] or 0
+        verb["stem_exact"] = row[1] or 0
     except Exception:
-        verb["stem_total"] = None
+        verb["stem_total"] = 0
+        verb["stem_exact"] = 0
+
+    # --- Confidence Score Distribution ---
+    confidence_dist = None
+    try:
+        cur.execute("""
+            SELECT
+              COUNT(*) as total,
+              SUM(CASE WHEN form2_confidence >= 0.75 THEN 1 ELSE 0 END) as high,
+              SUM(CASE WHEN form2_confidence >= 0.50 AND form2_confidence < 0.75 THEN 1 ELSE 0 END) as medium,
+              SUM(CASE WHEN form2_confidence < 0.50 THEN 1 ELSE 0 END) as low,
+              ROUND(AVG(form2_confidence), 3) as avg_conf
+            FROM lexical_entries
+            WHERE form2_confidence IS NOT NULL
+        """)
+        crow = cur.fetchone()
+        if crow and crow[0] > 0:
+            confidence_dist = {
+                "total": crow[0],
+                "high": crow[1] or 0,
+                "medium": crow[2] or 0,
+                "low": crow[3] or 0,
+                "avg": crow[4] or 0,
+            }
+    except Exception:
+        pass  # column doesn't exist yet
+    verb["confidence_dist"] = confidence_dist
 
     data["verb"] = verb
 
@@ -625,12 +654,78 @@ def dashboard():
     except Exception:
         data["linking"] = {"linked": 0, "unlinked": 0, "total": 0}
 
+    # --- Community Feedback Stats ---
+    try:
+        feedback_counts = db.get_feedback_counts()
+    except Exception:
+        feedback_counts = {"total": 0}
+    data["feedback"] = feedback_counts
+
     return render_template("dashboard.html", **data)
 
 
 @app.route("/about")
 def about():
     return render_template("about.html")
+
+
+# ------------------------------------------------------------------
+# Community Feedback (Phase 4.4)
+# ------------------------------------------------------------------
+
+@app.route("/api/feedback", methods=["POST"])
+def submit_feedback():
+    """Submit community feedback for an entry."""
+    db = get_db()
+    data = request.get_json(silent=True)
+    if not data:
+        return jsonify({"error": "invalid request"}), 400
+
+    entry_id = data.get("entry_id", "").strip()
+    feedback_type = data.get("feedback_type", "").strip()
+
+    if not entry_id or feedback_type not in ("flag", "confirm"):
+        return jsonify({"error": "entry_id and valid feedback_type required"}), 400
+
+    row_id = db.submit_feedback(
+        entry_id=entry_id,
+        feedback_type=feedback_type,
+        form_field=data.get("form_field", "").strip() or None,
+        issue_type=data.get("issue_type", "").strip() or None,
+        suggested_correction=data.get("suggested_correction", "").strip() or None,
+        comment=data.get("comment", "").strip() or None,
+        reporter_name=data.get("reporter_name", "").strip() or None,
+    )
+    return jsonify({"ok": True, "id": row_id})
+
+
+@app.route("/admin/feedback")
+def feedback_admin():
+    """Admin review queue for community feedback."""
+    db = get_db()
+    status_filter = request.args.get("status", "pending")
+    items = db.get_feedback_queue(status=status_filter)
+    counts = db.get_feedback_counts()
+    return render_template(
+        "feedback_admin.html",
+        items=items,
+        counts=counts,
+        status_filter=status_filter,
+    )
+
+
+@app.route("/admin/feedback/<int:feedback_id>/review", methods=["POST"])
+def review_feedback(feedback_id):
+    """Accept or reject a feedback item."""
+    db = get_db()
+    data = request.get_json(silent=True) or {}
+    status = data.get("status", "").strip()
+    if status not in ("accepted", "rejected", "reviewed"):
+        return jsonify({"error": "invalid status"}), 400
+
+    reviewer_note = data.get("reviewer_note", "").strip() or None
+    db.review_feedback(feedback_id, status, reviewer_note)
+    return jsonify({"ok": True})
 
 
 # ------------------------------------------------------------------
