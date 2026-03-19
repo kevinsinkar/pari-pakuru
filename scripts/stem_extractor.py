@@ -153,25 +153,26 @@ def apply_initial_coalescence(prefix: str, stem: str) -> str:
     rest = stem[1:]
 
     if prefix.endswith('i'):
+        # Long initial vowel on stem blocks coalescence → glottal epenthesis
+        if len(stem) >= 2 and first in 'aiu' and stem[1] == first:
+            # Stem starts with long vowel (aa, ii, uu): ti + VV... → tiʔVV...
+            return prefix + 'ʔ' + stem
+
         if first == 'a':
-            # Rule 7: i + a → ii, UNLESS the 'a' precedes a final consonant
-            # Heuristic: if stem is very short (≤2 chars: vowel + ≤1 consonant),
-            # the 'a' is near word-end → glottal insertion instead
-            # Also insert ʔ for isolated short stems like "at", "a"
+            # Rule 7: i + a -> ii, with exceptions for glottal insertion
             if len(stem) <= 2:
-                # Short stem: "at", "a", "ak" — glottal insertion
+                # Short stem: "at", "a", "ak" -- glottal insertion
                 return prefix + 'ʔ' + stem
             else:
-                # Long stem: contraction. Consumes FIRST 'a' only.
-                # ti + aahkarah → tii + hkarah → tiihkarah
-                # ti + acikstat → tii + cikstat → tiicikstat
+                # Long stem with short initial 'a': contraction
+                # ti + acikstat -> tii + cikstat -> tiicikstat
                 return prefix + 'i' + rest
         elif first == 'u':
             # Rule 6: i + u → uu (u-domination)
             return prefix[:-1] + stem
         elif first == 'i':
-            # Rule 5: i + i → ii (same-vowel)
-            return prefix + rest
+            # Rule 5: i + i → ii (same-vowel) — keep BOTH i's for long ii
+            return prefix + stem
 
     elif prefix.endswith('a'):
         if first == 'a':
@@ -181,10 +182,17 @@ def apply_initial_coalescence(prefix: str, stem: str) -> str:
             return prefix + stem
         elif first == 'i':
             # Rule 7: a + i → ii
-            # But only in unrestricted contexts. For ir-preverb 3sg (ta + stem),
-            # the stem-initial 'i' should just concatenate normally in most cases.
-            # Restrict this to specific known environments.
-            return prefix + stem  # safe default: just concatenate
+            # Long initial vowel on stem blocks coalescence -> glottal epenthesis
+            if len(stem) >= 2 and stem[1] == 'i':
+                # Stem starts with long ii: ta + iita -> taʔiita
+                return prefix + 'ʔ' + stem
+            # Short i: a + i -> ii (contraction)
+            # ta + icawiʔa -> tiicawiʔa, ta + iksucaʔa -> tiiksucaaʔ
+            return prefix[:-1] + 'i' + stem
+        elif first == 'u':
+            # Rule 6: V + u -> uu (u-domination)
+            # ta + uʔa -> tuuʔa, ta + ucaʔa -> tuucaaʔ
+            return prefix[:-1] + stem
 
     elif prefix.endswith('u'):
         if first == 'u':
@@ -221,6 +229,12 @@ def apply_perfective_finals(form: str, verb_class: str = "") -> str:
     # --- Cluster rules (before single-consonant) ---
     if form.endswith('hk'):
         return form[:-2] + 't'
+    if form.endswith('hc'):
+        # -hc → -c (h deleted before affricate)
+        return form[:-2] + 'c'
+    if form.endswith('sk'):
+        # -sk → -s (k deleted in sibilant cluster)
+        return form[:-1]
     if form.endswith('tk'):
         return form[:-1]
 
@@ -233,7 +247,9 @@ def apply_perfective_finals(form: str, verb_class: str = "") -> str:
         return form[:-1] + 't'
 
     if form.endswith('uuh'):
-        return form[:-1] + 'ʔ'
+        # Long uu shortens before h-deletion: -uuh -> -uʔ (not -uuʔ)
+        # e.g., kaacuuh -> kaacuʔ, irikaacuuh -> irikaacuʔ
+        return form[:-2] + 'ʔ'
     if form.endswith('aah'):
         return form[:-1]
     if form.endswith('iih'):
@@ -242,7 +258,20 @@ def apply_perfective_finals(form: str, verb_class: str = "") -> str:
         return form[:-1]
 
     if form.endswith('r'):
-        return form[:-1]
+        # Rule 23: final r -> Ø
+        # After r-deletion, apply vowel-specific rules:
+        #   -uur  -> -uuʔ  (long uu preserved + glottal)
+        #   -aar  -> -aa   (no ʔ)
+        #   -wiir -> -wiʔ  (long ii shortens after glide w)
+        #   -Ciir -> -Cii  (long ii preserved, no ʔ, after non-glide C)
+        #   short V + r -> short V (no ʔ)
+        form = form[:-1]
+        if form.endswith('uu'):
+            return form + 'ʔ'
+        if form.endswith('wii'):
+            # Glide w + long ii: shorten to wi + ʔ
+            return form[:-1] + 'ʔ'
+        return form
 
     # Final short vowel → add ʔ (but NOT long vowels — those stay)
     if form and form[-1] in 'aiu':
@@ -251,7 +280,91 @@ def apply_perfective_finals(form: str, verb_class: str = "") -> str:
             return form + 'ʔ'
         else:
             # Short vowel — add ʔ
+            # Class (4) -sa endings: no final ʔ (perfective null alternation)
+            if verb_class == '(4)' and form.endswith('sa'):
+                return form
             return form + 'ʔ'
+
+    return form
+
+
+def apply_vd_echo_insertion(form: str) -> str:
+    """
+    Apply VD (descriptive verb) perfective ʔ-echo insertion.
+
+    Descriptive verbs insert ʔ + echo vowel before final stop consonants
+    in the perfective aspect. The echo vowel is the short version of
+    the vowel immediately preceding the final consonant.
+
+    Pattern: ...VC(final) -> ...VʔVC(final)
+        kaac -> kaaʔac  (aa + c -> aaʔa + c)
+        awirit -> awiriʔit  (i + t -> iʔi + t)
+        huut -> huuʔut  (uu + t -> uuʔu + t)
+
+    Also handles h+stop clusters: -Vht -> -VʔVt (h drops, echo inserts)
+        huuruht -> huuruʔut  (u + ht -> uʔu + t)
+        racakiht -> racakit   (i + ht -> i + t, short vowel no echo)
+
+    Does NOT apply when ʔ+V already precedes the final consonant (echo exists).
+    Does NOT apply before s when preceded by ii, uu, or short vowels.
+    """
+    if len(form) < 2:
+        return form
+
+    vowels_set = set('aiuáíú')
+
+    # Walk backwards to find final consonant cluster
+    i = len(form) - 1
+    while i >= 0 and form[i] not in vowels_set and form[i] != 'ʔ':
+        i -= 1
+
+    if i < 0:
+        return form  # no vowel found
+
+    final_consonants = form[i+1:]
+    preceding_vowel_pos = i
+
+    # Check if echo already present: ...ʔV+C pattern
+    # e.g., kickuuʔat -> the ʔa before t means echo already exists
+    if form[preceding_vowel_pos] in vowels_set and preceding_vowel_pos >= 1 and form[preceding_vowel_pos - 1] == 'ʔ':
+        return form  # echo already present, don't double-insert
+
+    # Handle h+stop clusters: -Vht -> -VʔVt (h drops, echo inserts)
+    if len(final_consonants) == 2 and final_consonants[0] == 'h' and final_consonants[1] in 'ctk':
+        vowel_char = form[preceding_vowel_pos]
+        short_vowel = vowel_char.replace('á', 'a').replace('í', 'i').replace('ú', 'u')
+        is_long = (preceding_vowel_pos > 0 and
+                   form[preceding_vowel_pos - 1] == form[preceding_vowel_pos])
+        final_stop = final_consonants[1]
+        if is_long:
+            # Long vowel + ht: insert echo (h drops)
+            # huuruht -> huuruʔut, icaʔuuht -> icaʔuuʔut
+            return form[:i+1] + 'ʔ' + short_vowel + final_stop
+        else:
+            # Short vowel + ht: h drops, no echo
+            # racakiht -> racakit, racapaht -> racapat -> then perfective adds ʔ
+            return form[:i+1] + final_stop
+
+    # Only insert echo for SINGLE final consonant (not clusters)
+    if len(final_consonants) != 1:
+        return form
+
+    final_c = final_consonants[0]
+
+    # Get the preceding vowel(s)
+    vowel_char = form[preceding_vowel_pos]
+    short_vowel = vowel_char.replace('á', 'a').replace('í', 'i').replace('ú', 'u')
+
+    # Check if long vowel (same char repeated)
+    is_long = (preceding_vowel_pos > 0 and
+               form[preceding_vowel_pos - 1] == form[preceding_vowel_pos])
+
+    if final_c in 'ctk':
+        # Always insert echo before stops
+        return form[:i+1] + 'ʔ' + short_vowel + final_consonants
+    elif final_c == 's' and is_long and short_vowel == 'a':
+        # Only insert before s when preceded by long aa
+        return form[:i+1] + 'ʔ' + short_vowel + final_consonants
 
     return form
 
@@ -304,7 +417,14 @@ def build_prefix_and_stem(preverbs: List[str], verb_class: str, gram_class: str,
     ir-preverb 3sg: ti + a(PREV.3A) = ta + stem
         (no special junction — ta just concatenates)
     """
+    # VR (reflexive) verbs get witi- prefix BEFORE the regular prefix
+    # But "VT, VR" dual class uses VT form (no witi-)
+    is_pure_vr = (gram_class == 'VR')
+
     if not preverbs:
+        if is_pure_vr:
+            # witi + ti + stem → wititi + coalescence
+            return "wititi", stem
         # No preverb — simple ti + stem
         return "ti", stem
 
@@ -314,39 +434,45 @@ def build_prefix_and_stem(preverbs: List[str], verb_class: str, gram_class: str,
 
     # --- ut- preverb ---
     if first_prev == "ut":
-        if gram_class and 'VR' in gram_class:
-            base_prefix = "wituut"
+        if is_pure_vr:
+            base_prefix = "witituut"
         else:
             base_prefix = "tuut"
 
         if not stem:
             return base_prefix, stem
+        # Helper: replace the trailing ut-preverb portion of prefix
+        def _ut_junction(replacement):
+            # base_prefix ends with "tuut" (or "witituut"); replace that tail
+            return base_prefix[:-4] + replacement
+
         if stem_initial in vowels:
             return base_prefix, stem
         elif stem_initial == 'r':
             # tuut + r → tuuh + rest (r absorbed into h)
-            return base_prefix[:-1].replace('tuut', 'tuuh').replace('wituut', 'wituuh'), stem[1:]
+            return _ut_junction("tuuh"), stem[1:]
         elif stem_initial == 'h':
             # tuut + h → tut + rest (h absorbed, uu shortens)
-            return base_prefix.replace('tuut', 'tut').replace('wituut', 'witut'), stem[1:]
+            return _ut_junction("tut"), stem[1:]
         elif stem_initial == 'k':
             # tuut + k → tutk + rest (uu shortens)
-            return base_prefix.replace('tuut', 'tut').replace('wituut', 'witut'), stem
+            return _ut_junction("tut"), stem
         elif stem_initial == 'p':
             # tuut + p → tutp (uu shortens, but t+p preserved)
-            return base_prefix.replace('tuut', 'tut').replace('wituut', 'witut'), stem
+            return _ut_junction("tut"), stem
         elif stem_initial == 'c':
             # tuut + c → tuc (t absorbed, uu shortens)
-            return base_prefix.replace('tuut', 'tu').replace('wituut', 'witu'), stem
+            return _ut_junction("tu"), stem
         elif stem_initial == 't':
             # tuut + t → tuct (dissimilation)
-            return base_prefix.replace('tuut', 'tuc').replace('wituut', 'wituc'), stem
+            return _ut_junction("tuc"), stem
         elif stem_initial == 's':
-            # tuut + s → tus? or tuuts? Treat as: uu shortens
-            return base_prefix.replace('tuut', 'tut').replace('wituut', 'witut'), stem
+            # tuut + s → tuts (uu shortens)
+            return _ut_junction("tut"), stem
         elif stem_initial == 'w':
-            # Complex — keep tuut for now
-            return base_prefix, stem
+            # ut+w junction: w → p after t (bilabial fortition), uu shortens
+            # tuut + w... → tutp + rest_after_w (w→p, uu→u)
+            return _ut_junction("tut") + 'p', stem[1:]
         else:
             return base_prefix, stem
 
@@ -360,23 +486,86 @@ def build_prefix_and_stem(preverbs: List[str], verb_class: str, gram_class: str,
         elif stem_initial == 'r':
             # tuur + r → tur (degemination)
             return "tur", stem[1:]
+        elif stem_initial == 'h':
+            # tuur + h → tuuh (h absorbed, like ut+h rule)
+            return "tuuh", stem[1:]
+        elif stem_initial == 's':
+            # Rule 12R: r → h before C, then Rule: s → c after h
+            return "tuuh", 'c' + stem[1:]
         else:
             # Rule 12R: r → h before any consonant
             return "tuuh", stem
 
     # --- ir- preverb (3sg uses a- instead of ir-) ---
     elif first_prev == "ir":
-        base_prefix = "ta"
-        # Handle additional preverbs after ir
-        for pv in preverbs[1:]:
-            if pv == "ri":
-                base_prefix += "ri"
-            elif pv == "ut":
-                # ta + ri? + ut → complex; simplified
-                base_prefix += "riut"
-            elif pv == "uur":
-                base_prefix += "ruur"
-        return base_prefix, stem
+        # For ir+ut and ir+uur combinations, the inner preverb gets
+        # junction rules. ir- 3sg is realized as a- (3.A prefix).
+        inner_prevs = preverbs[1:]
+
+        if inner_prevs and inner_prevs[-1] == "ut":
+            # ir + (ri?) + ut → ta(ri?) + ut → coalescence a+u=uu → t(ari)uut
+            # Then apply ut-junction rules with stem
+            ri_part = "ri" if "ri" in inner_prevs else ""
+            # a + ut → uut (a+u coalescence = uu, + t)
+            ut_prefix = "t" + ri_part + "uut"
+            if is_pure_vr:
+                ut_prefix = "witi" + ut_prefix
+
+            if not stem:
+                return ut_prefix, stem
+            # Apply ut-junction rules (same as regular ut-preverb)
+            def _ir_ut_junction(replacement):
+                return ut_prefix[:-4] + replacement
+
+            if stem_initial in vowels:
+                return ut_prefix, stem
+            elif stem_initial == 'r':
+                return _ir_ut_junction("tuuh"), stem[1:]
+            elif stem_initial == 'h':
+                # ir+ut+h: h absorbed but uu stays (unlike regular ut+h which shortens)
+                return _ir_ut_junction("tuut"), stem[1:]
+            elif stem_initial == 'k':
+                # ir+ut+k: uu preserved (unlike regular ut+k which shortens)
+                return _ir_ut_junction("tuut"), stem
+            elif stem_initial == 'p':
+                return _ir_ut_junction("tuut"), stem
+            elif stem_initial == 's':
+                return _ir_ut_junction("tuut"), stem
+            elif stem_initial == 'c':
+                # ir+ut+c: tuut+c -> tuuc (uu preserved, t+c -> c)
+                return _ir_ut_junction("tuu"), stem
+            elif stem_initial == 't':
+                return _ir_ut_junction("tuc"), stem
+            elif stem_initial == 'w':
+                return ut_prefix, stem
+            else:
+                return ut_prefix, stem
+
+        elif inner_prevs and inner_prevs[-1] == "uur":
+            ri_part = "ri" if "ri" in inner_prevs else ""
+            # ir+uur -> tuur for 3sg; ir+ri+uur -> taruur (ri+uur fuses to ruur)
+            if ri_part:
+                base_prefix = "ta" + "ruur"  # ri + uur -> ruur (i absorbed)
+            else:
+                # a + uur -> uur (a absorbed into uur)
+                base_prefix = "tuur"
+            if not stem:
+                return base_prefix, stem
+            if stem_initial in vowels:
+                return base_prefix, stem
+            elif stem_initial == 'r':
+                return base_prefix[:-2] + "r", stem[1:]
+            elif stem_initial == 'h':
+                # h absorbed into junction (like regular uur+h)
+                return base_prefix[:-1] + "h", stem[1:]
+            else:
+                return base_prefix[:-1] + "h", stem
+        else:
+            base_prefix = "ta"
+            for pv in inner_prevs:
+                if pv == "ri":
+                    base_prefix += "ri"
+            return base_prefix, stem
 
     # --- ku- proclitic ---
     elif first_prev == "ku":
@@ -384,6 +573,16 @@ def build_prefix_and_stem(preverbs: List[str], verb_class: str, gram_class: str,
         for pv in preverbs[1:]:
             if pv == "ir":
                 base_prefix = "kuta"
+        return base_prefix, stem
+
+    # --- raar- inner preverb (from [+ raar-] bracket notation) ---
+    elif first_prev == "raar":
+        # ti + raar + stem → tiraar + stem
+        # At boundary: final r of raar → h before consonant (Rule 12R)
+        base_prefix = "tiraar"
+        if stem and stem[0] not in vowels:
+            # r → h before consonant
+            base_prefix = "tirah"
         return base_prefix, stem
 
     return "ti", stem
@@ -447,37 +646,109 @@ def predict_form_2(
     if '/' in stem:
         stem = stem.split('/')[0].strip()
 
+    # Extract bracket notation from headword before stripping
+    hw_brackets = re.findall(r'\[.*?\]', stem)
+    all_brackets = extras + hw_brackets
+
     # Strip notation markers: "[+ neg.]", "[+ raar-]"
     stem = re.sub(r'\s*\[.*?\]\s*', '', stem).strip()
 
     # Strip trailing whitespace/punctuation artifacts
     stem = stem.strip().rstrip('.')
 
+    # Strip class notation suffix: "-i" (class 2 subordinate marker)
+    # e.g., "as-i" → "as", "kuksas-i" → "kuksas", "askatatiir-i" → "askatatiir"
+    if stem.endswith('-i'):
+        stem = stem[:-2]
+
+    # Step 4b: Apply bracket notation modifiers
+    bracket_prefix_override = None
+    for bracket in all_brackets:
+        b = bracket.lower().replace('[', '').replace(']', '').replace('+', '').strip()
+        if 'neg' in b:
+            # [+ neg.] → negative mode prefix kaaki- (replaces ti-)
+            bracket_prefix_override = 'kaaki'
+        elif b.strip() == 'i-' or b.strip().endswith(', i-') or b.startswith('i-'):
+            # [+ i-] → prepend i- to stem (coalescence will handle ti+i→tii)
+            stem = 'i' + stem
+        elif 'raar-' in b or 'raar' in b:
+            # [+ raar-] → raar preverb (ti + raar + stem → tiraar+stem)
+            # raar- is treated as an inner preverb after the mode prefix
+            if not preverbs:
+                preverbs = ['raar']
+        elif 'ruu-' in b or 'ruu' in b:
+            # [+ ruu-, i-] or [+ ruu-] → ruu- prefix replaces ti-
+            bracket_prefix_override = 'ruuti'
+            # Also check for ", i-" in the bracket
+            if 'i-' in b and 'ruu' in b:
+                stem = 'i' + stem
+        elif 'ku-' in b:
+            # [+ ku-] → ku- proclitic
+            if not preverbs:
+                bracket_prefix_override = 'kuti'
+
     # Step 5: Apply prefix+stem fusion (with preverb junction rules)
-    if preverbs:
+    if bracket_prefix_override:
+        prefix = bracket_prefix_override
+        raw = apply_initial_coalescence(prefix, stem)
+    else:
+        # Always use build_prefix_and_stem for proper VR/junction handling
         fused_prefix, fused_stem = build_prefix_and_stem(preverbs, vc, gram_class, stem)
         raw = apply_initial_coalescence(fused_prefix, fused_stem)
-    else:
-        raw = apply_initial_coalescence(prefix, stem)
 
     # Step 6: Apply internal sound changes
     raw = apply_internal_sound_changes(raw)
 
+    # Step 6b: VD (descriptive) verb echo insertion before perfective finals
+    is_vd = gram_class in ('VD',)
+    if is_vd and vc == '(u)':
+        raw = apply_vd_echo_insertion(raw)
+
     # Step 7: Apply perfective final changes
     # VL (wi) verbs don't add final glottal stop
     if vc == '(wi)':
-        predicted = raw  # locative verbs: no perfective final changes
+        # Locative verbs: k→t applies, but no other perfective finals
+        if raw.endswith('hk'):
+            predicted = raw[:-2] + 't'
+        elif raw.endswith('k'):
+            predicted = raw[:-1] + 't'
+        else:
+            predicted = raw
     elif vc == '(3)':
-        # Class 3 perfective: -aʔuk contracts to -uʔ
-        # acikstaʔuk → ...cikstuʔ, ahihaʔuk → ...hihuʔ
-        if raw.endswith('aʔuk'):
+        # Class 3 perfective contractions:
+        #   -aʔuk → -uʔ  (e.g., acikstaʔuk → cikstuʔ)
+        #   -aʔu  → -uʔ  (e.g., awirictaʔu → wirictuʔ)
+        #   -aʔa  → -aaʔ (e.g., huutaʔa → huutaaʔ)
+        if raw.endswith('aʔuk') or raw.endswith("a'uk"):
             predicted = raw[:-4] + 'uʔ'
-        elif raw.endswith("a'uk"):
-            predicted = raw[:-4] + "uʔ"
+        elif raw.endswith('aʔu') or raw.endswith("a'u"):
+            predicted = raw[:-3] + 'uʔ'
+        elif raw.endswith('aʔa') or raw.endswith("a'a"):
+            # Check for long aa + ʔa pattern (aaʔa): the ʔ is root-internal,
+            # NOT the class 3 derivational suffix boundary.
+            # E.g., kaaʔa -> kaaʔaʔ (no contraction), not kaaaʔ
+            pos = len(raw) - 4 if raw.endswith('aʔa') else len(raw) - 4
+            if pos >= 0 and raw[pos] == 'a':
+                # Long aa + ʔa: skip contraction, use regular perfective
+                predicted = apply_perfective_finals(raw, verb_class=vc)
+            else:
+                predicted = raw[:-3] + 'aaʔ'
         else:
             predicted = apply_perfective_finals(raw, verb_class=vc)
     else:
         predicted = apply_perfective_finals(raw, verb_class=vc)
+
+    # Step 7b: VD-specific post-processing
+    if is_vd:
+        # VD verbs: final long -wii shortens to -wi before ʔ
+        # e.g., kariwiiʔ -> kariwiʔ, wiiʔ -> wiʔ
+        if predicted.endswith('wiiʔ'):
+            predicted = predicted[:-3] + 'iʔ'
+        # VD -kus endings: s is NOT stripped (kus -> kus, not ku)
+        # Already handled by echo insertion for most cases;
+        # override the kus -> ku stripping for VD
+        if raw.endswith('kus') and predicted.endswith('ku'):
+            predicted = raw  # preserve -kus for VD
 
     debug = {
         "preverbs": preverbs,
@@ -584,35 +855,39 @@ def validate_all(db_path: str, verbose: bool = False, limit: int = 0) -> Dict:
 
 def print_report(results: Dict):
     """Print a formatted accuracy report."""
-    print("=" * 70)
-    print("STEM EXTRACTION — FORM_2 PREDICTION ACCURACY")
-    print("=" * 70)
-    print(f"Total verbs tested:  {results['total']}")
-    print(f"Exact matches:       {results['exact']} ({results['accuracy_exact']}%)")
-    print(f"Close (glottal):     {results['close']}")
-    print(f"Miss:                {results['miss']}")
-    print(f"Accuracy (exact):    {results['accuracy_exact']}%")
-    print(f"Accuracy (w/ close): {results['accuracy_with_close']}%")
+    def _p(text: str):
+        """Print Unicode-safe on Windows (cp1252 console)."""
+        sys.stdout.buffer.write((text + '\n').encode('utf-8', errors='replace'))
 
-    print(f"\n{'─'*70}")
-    print(f"{'Category':<30} {'Total':>5} {'Exact':>6} {'%':>6} {'Close':>6} {'Miss':>6}")
-    print(f"{'─'*70}")
+    _p("=" * 70)
+    _p("STEM EXTRACTION -- FORM_2 PREDICTION ACCURACY")
+    _p("=" * 70)
+    _p(f"Total verbs tested:  {results['total']}")
+    _p(f"Exact matches:       {results['exact']} ({results['accuracy_exact']}%)")
+    _p(f"Close (glottal):     {results['close']}")
+    _p(f"Miss:                {results['miss']}")
+    _p(f"Accuracy (exact):    {results['accuracy_exact']}%")
+    _p(f"Accuracy (w/ close): {results['accuracy_with_close']}%")
+
+    _p(f"\n{'-'*70}")
+    _p(f"{'Category':<30} {'Total':>5} {'Exact':>6} {'%':>6} {'Close':>6} {'Miss':>6}")
+    _p(f"{'-'*70}")
     for key, v in sorted(results['by_category'].items(), key=lambda x: -x[1]['total']):
         if v['total'] < 5:
             continue
         pct = 100 * v['exact'] / v['total'] if v['total'] else 0
-        print(f"  {key:<28} {v['total']:>5} {v['exact']:>6} {pct:>5.1f}% {v['close']:>6} {v['miss']:>6}")
+        _p(f"  {key:<28} {v['total']:>5} {v['exact']:>6} {pct:>5.1f}% {v['close']:>6} {v['miss']:>6}")
 
     if results['sample_mismatches']:
-        print(f"\n{'─'*70}")
-        print(f"SAMPLE MISMATCHES (first {len(results['sample_mismatches'])})")
-        print(f"{'─'*70}")
+        _p(f"\n{'-'*70}")
+        _p(f"SAMPLE MISMATCHES (first {len(results['sample_mismatches'])})")
+        _p(f"{'-'*70}")
         for m in results['sample_mismatches'][:20]:
-            print(f"  {m['headword']:<25} class={m['class']:<8} prev={m['preverb']:<12}")
-            print(f"    attested:  {m['attested']}")
-            print(f"    predicted: {m['predicted']}")
-            print(f"    prefix={m['debug']['prefix']}  preverbs={m['debug']['preverbs']}")
-            print()
+            _p(f"  {m['headword']:<25} class={m['class']:<8} prev={m['preverb']:<12}")
+            _p(f"    attested:  {m['attested']}")
+            _p(f"    predicted: {m['predicted']}")
+            _p(f"    prefix={m['debug']['prefix']}  preverbs={m['debug']['preverbs']}")
+            _p("")
 
 
 # ---------------------------------------------------------------------------

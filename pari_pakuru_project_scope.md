@@ -14,6 +14,8 @@ Build a comprehensive Skiri Pawnee language preservation tool: a searchable, lin
 | Dictionary page PDFs | Individual pages split for AI processing | `Dictionary Data/split_pdf_pages_SKIRI_TO_ENGLISH/` and `split_pdf_pages_ENGLISH_TO_SKIRI/` |
 | Blue Book — Pari Pakuru' | 1979 Pawnee Cultural Retention Committee textbook. 21 lessons teaching spoken Pawnee with dialogues, vocabulary, grammar explanations | `pari pakuru/Blue Book - Pari Pakuru.pdf` and `.txt` extraction |
 | JSON Schemas | Defined structures for S2E and E2S parsed entries | `Dictionary Data/` |
+| Parks Ch. 3 OCR | OCR extraction of Major Sound Changes (24 rules with examples) | `parks_sound_changes_ocr.txt` |
+| Parks Ch. 4 OCR | OCR extraction of Grammatical Overview (23 pages: noun incorporation, verb classes, possession) | `parks_grammatical_overview_ocr.txt` |
 
 ## Current Data State
 
@@ -225,7 +227,7 @@ High-impact items ordered by learner value, not technical dependency:
 | Priority | Phase | What | Why |
 |----------|-------|------|-----|
 | ✅ ~~1~~ | 3.1.5 | ~~Noun possession morphology~~ | **DONE (2026-03-18)** — 4 possession systems + locative suffixes + web widget + example filter. 40/40 tests. |
-| 🔴 2 | 3.1 (stem extraction) | Dictionary-wide stem extraction | 76% on 7 verbs vs 15% on all verbs — this is the wall |
+| 🟡 2 | 3.1 (stem extraction) | Dictionary-wide stem extraction | **IN PROGRESS** — third pass: 83.5% → **86.6%** (1,914/2,211), 88.4% w/ close. Up from 14.8% → 62.0% → 83.5% → 86.6%. |
 | 🔴 3 | 4.3 | Confidence scoring on computed forms | Learners can't tell a 94%-likely form from a 31%-likely one |
 | 🔴 4 | 3.1 (accent) | Accent mark generation | Phonemic in Skiri — wrong accent = wrong word |
 | 🔴 5 | 4.4 | Community feedback mechanism | Low effort, enables the tool to improve itself over time |
@@ -235,27 +237,72 @@ High-impact items ordered by learner value, not technical dependency:
 | 🟡 9 | 3.2a | Template-based sentence assembly | First usable step toward sentence construction |
 | 🟡 10 | 5.1 | Structured lesson content | Blue Book curriculum extraction for progressive learning |
 
-### 🔴 Next Up: Phase 3.1 — Dictionary-Wide Stem Extraction *(Priority #2)*
+### 🟡 Next Up: Phase 3.1 — Dictionary-Wide Stem Extraction *(Priority #2 — IN PROGRESS)*
 
-This is the wall between "a conjugation engine that works on 7 test verbs" (76.2% on Appendix 1) and "a tool that can inflect any verb a learner looks up" (14.8% on all dictionary verbs). The gap is entirely due to stem extraction: the engine's morphological rules are sound, but it can't find the stem/class/preverb for most dictionary entries automatically.
+**Status:** Third pass complete — **83.5% → 86.6% exact** (1,914/2,211 verbs), 88.4% with close matches. Up from 14.8% → 62.0% → 83.5% → 86.6%.
 
-**What needs to happen:**
-1. **Automated stem boundary detection** — given a headword like `tuuricaahiksii`, identify the stem (`hiir`), preverb (`uur`), and incorporated noun (`icaahiks`). Currently only manually-tagged Appendix 1 verbs work.
-2. **Verb class inference** — determine class (1, 1-a, 2, 3, 4, u, wi) from dictionary entry shape: `verb_class` field (often populated), paradigmatic form patterns (form_4 suffix → class), stem_preverb notation.
-3. **Preverb identification** — parse `stem_preverb` field notation like `(ut...)`, `(ir...)`, `(uur...)` to extract the preverb. ~600 entries have this field populated.
-4. **Noun incorporation stripping** — for verb headwords containing incorporated nouns, identify and separate the noun stem from the verb stem. Etymology `constituent_elements` field is the key data source.
-5. **Validation loop** — for each auto-extracted stem, generate form_2 (3sg indicative perfective) and compare to the attested paradigmatic_form. Match rate is the metric.
+**Script:** `scripts/stem_extractor.py`
+**Reference files:** `parks_sound_changes_ocr.txt` (OCR of Parks Ch. 3), `parks_grammatical_overview_ocr.txt` (OCR of Parks Ch. 4)
 
-**Target:** Raise dictionary-wide exact match from 14.8% → 50%+ (first pass), with clear confidence tiers on which verbs have reliable extractions.
+This is the wall between "a conjugation engine that works on 7 test verbs" (76.2% on Appendix 1) and "a tool that can inflect any verb a learner looks up." The first pass proved the approach works — headword IS the stem, and form_2 is predictable from `headword + verb_class + stem_preverb` with systematic sound change rules.
 
-**Depends on:** Phase 3.1 conjugation engine (done), Phase 2.3 sound changes (done), Phase 1.2 database (done).
+**What `stem_extractor.py` does (current pipeline):**
+1. Parse `stem_preverb` field → preverb morphemes (ut, uur, ir, ir+ut, etc.)
+2. Infer verb class for untagged entries (VD→(u), VL→(wi), VP→(4))
+3. Build prefix+stem with preverb junction rules (ut+r→tuuh, ut+h→tut, uur+C→tuuh+C, etc.)
+4. Apply vowel coalescence at prefix+stem boundary (Parks Rules 5-7)
+5. Apply internal sound changes (Rule 8R: r→t after obstruent, Rule 12R: r→h before C)
+6. Apply perfective finals (k→t, hk→t, r→Ø, h→Ø, V→Vʔ, kus→ku)
+7. Special class rules: (3) -aʔuk→-uʔ contraction, (wi) no final ʔ
+8. Compare predicted form_2 to attested paradigmatic_form in DB
+
+**Accuracy by category (third pass — 2026-03-19):**
+
+| Category | Total | Exact | Rate | Notes |
+|---|---|---|---|---|
+| (4)\|(uur...) | 28 | 28 | 100.0% | Ceiling! |
+| (3)\|(uur...) | 16 | 16 | 100.0% | Ceiling! |
+| (3)\|(ut...) | 9 | 9 | 100.0% | Ceiling! |
+| (3)\|(ir...ut...) | 13 | 13 | 100.0% | 3rd pass: ir+ut junction fix |
+| (wi)\|(ir...ut...) | 10 | 10 | 100.0% | 3rd pass: ir+ut junction fix |
+| (wi)\|(ir...) | 7 | 7 | 100.0% | 3rd pass: a+i coalescence |
+| (2-i)\|(uur...) | 6 | 6 | 100.0% | — |
+| (2)\|(ut...) | 5 | 5 | 100.0% | — |
+| (2-i)\|none | 44 | 43 | 97.7% | Near-ceiling |
+| (1-a)\|(uur...) | 32 | 31 | 96.9% | — |
+| (1-i)\|none | 54 | 52 | 96.3% | — |
+| (1)\|(uur...) | 47 | 45 | 95.7% | — |
+| (1)\|(ut...) | 101 | 92 | 91.1% | — |
+| (3)\|none | 120 | 109 | 90.8% | — |
+| (wi)\|none | 80 | 72 | 90.0% | — |
+| (1)\|none | 434 | 388 | 89.4% | 3rd pass: -wiir/-uuh shortening |
+| (4)\|(ut...) | 81 | 71 | 87.7% | — |
+| (3)\|(ir...) | 94 | 82 | 87.2% | 3rd pass: a+u coalescence, aaʔa fix |
+| (4)\|none | 414 | 355 | 85.7% | — |
+| (wi)\|(ut...) | 27 | 23 | 85.2% | — |
+| (u)\|none | 385 | 320 | 83.1% | 3rd pass: VD echo fixes, -wii shortening |
+| (u)\|(ir...) | 12 | 10 | 83.3% | — |
+| (2)\|none | 42 | 33 | 78.6% | — |
+| (u)\|(ut...) | 24 | 18 | 75.0% | 3rd pass: VD echo -Vht fix |
+
+**Remaining gaps (257 miss, 40 close):**
+
+| Pattern | Current | Remaining issue | Count |
+|---|---|---|---|
+| (4)\|none | 85.7% | Multi-word headwords; `ruuti-`/`si-` prefix entries; internal shortening | 50 miss |
+| (u)\|none VD | 83.1% | Internal long-vowel shortening (aah→ah); prothetic vowel; prefix mismatches | 49 miss |
+| (1)\|none | 89.4% | `ruuti-`/`si-` prefix entries; `aw-` absorption; internal vowel changes | 43 miss |
+| (3)\|(ir...) | 87.2% | Remaining class 3 stem allomorphy; prefix mismatches | 12 miss |
+| (3)\|none | 90.8% | Internal contraction edge cases | 11 miss |
+| Other categories | — | `si-` prefix (16 total), `ruuti-` prefix (19 total), bracket notation (~10) | ~45 miss |
 
 **Key data sources:**
-- `lexical_entries.verb_class` — populated for most verbs; direct class lookup
-- `lexical_entries.stem_preverb` — e.g., `(ut...)` → preverb=ut
-- `paradigmatic_forms` — form_2 is the ground truth for stem extraction validation
-- `etymology.constituent_elements` — morpheme decomposition hints for compound verbs
-- `glosses` — English gloss patterns ("to be X" → likely descriptive/class-u)
+- `lexical_entries.verb_class` — populated for 1,698/2,254 verbs (75%); 556 missing are VD (438) + VL (115)
+- `lexical_entries.stem_preverb` — populated for 652 verbs (29%); top patterns: `(ut...)` 294, `(uur...)` 164, `(ir...)` 129
+- `paradigmatic_forms.form_2` — ground truth for validation; available for 2,246/2,254 verbs (99.6%)
+- `etymology.constituent_elements` — morpheme decomposition for 1,772 verbs (79%); key for noun incorporation stripping
+- `parks_sound_changes_ocr.txt` — OCR of Parks Ch. 3 (all 24 rules with examples and exceptions)
+- `parks_grammatical_overview_ocr.txt` — OCR of Parks Ch. 4 (23 pages: noun incorporation, compound formation, verb classes)
 
 ### ✅ Phase 1.2 — Database Schema
 **Script:** `scripts/import_to_db.py` (implied by DB existence)
@@ -459,7 +506,7 @@ Tasks completed:
 **Current validation (latest pass — 2026-03-12):**
 - Appendix 1: **76.2% exact (587/770)**, 19.9% close (153), 3.9% miss (30)
 - Per verb: to go 94%, to drink it 89%, to be sick 88%, to have it 85%, to be good 79%, to do it 67%, to come 31%
-- Dictionary: 14.8% exact (1,420/9,583), 44.2% close
+- Dictionary: **86.6% exact** (1,914/2,211 form_2 predictions via `stem_extractor.py`), 88.4% with close — up from 14.8% → 62.0% → 83.5% → 86.6%
 
 **Major improvements since first pass (12.7% → 76.2%):**
 - Gemini-collaborative 3-round diagnosis with 10 morphophonological fixes (+25%)
@@ -471,15 +518,18 @@ Tasks completed:
 - Descriptive-ku verb system overhaul: DESC_KU_MODE_OVERRIDES, raktah plural, 3pl prefix markers, ku→kuu lengthening, aca→acu u-raising (+8%)
 - "to come" structural fixes: negative kaakaa, 3.A stem, subjunctive shortening, gerundial/potential/infinitive preverb handling (+4%)
 
-Tasks remaining (priority order — revised 2026-03-15):
+Tasks remaining (priority order — revised 2026-03-19):
 - [x] ~~"to be sick" descriptive verb fixes~~ — **done**: 37→97/110 exact (88%)
 - [x] ~~"to come" structural fixes~~ — **done**: 21→34/110 exact (31%), 70 close (accent-only), 6 remaining MISS
+- [x] **Dictionary stem extraction — first pass** — **done (2026-03-19)**: `stem_extractor.py` predicts form_2 for all 2,211 dictionary verbs. 14.8% → 62.0% exact (1,370/2,211), 67.5% with close. Pipeline: preverb parsing → class inference → prefix+stem junction → coalescence → perfective finals. Parks Ch. 3 OCR'd as reference.
+- [x] **Dictionary stem extraction — second pass** — **done (2026-03-19)**: 62.0% → **83.5% exact** (1,846/2,211), 86.3% with close. 12 fixes: i+i coalescence bug, aa/ii/uu-initial glottal insertion, VR reflexive witi- prefix, bracket notation ([+ neg.], [+ i-], [+ raar-], [+ ruu-]), r-deletion vowel-specific ʔ rules (-uur→-uuʔ, -aar→-aa, -iir→-ii), VD ʔ-echo insertion before stops, ir+ut/uur preverb chains, class 3 -aʔu/-aʔa contractions, ut+w junction (w→p), uur+h/s junction (h-absorption, s→c), -sk→-s and -hc→-c cluster rules, (4)-sa no ʔ, (wi) k→t, -i notation stripping.
+- [x] **Dictionary stem extraction — third pass** — **done (2026-03-19)**: 83.5% → **86.6% exact** (1,914/2,211), 88.4% with close. 12 fixes: a+u/a+i coalescence for ir-preverb, VD echo false-positive prevention, VD echo for -Vht clusters, VD -wii/-wiir shortening, -uuh shortening, ir+ut junction (keep tuut), class 3 aaʔa contraction guard, ir+ri+uur fusion (ri+uur→ruur), ir+uur h-absorption.
+- [ ] **Dictionary stem extraction — fourth pass** (optional) — remaining 257 misses: `si-` prefix (16), `ruuti-` prefix (19), prothetic vowel (5), internal long-vowel shortening, multi-word/bracket headwords. Diminishing returns — remaining cases need morphological decomposition or manual analysis.
 - [ ] **🔴 Accent mark generation** — 70 "to come" close matches + ~15 other verbs differ only by accent marks (á, í, ú); implementing stress assignment would boost ~85 forms to exact (~9% overall gain). **Elevated priority**: accent/pitch is phonemic in Skiri — generated forms without correct accent marks are unreliable for actual speech. Affects every computed paradigm form shown to learners. This is a learner-safety issue, not just an accuracy metric.
-- [ ] **🔴 Dictionary stem extraction improvements** — main bottleneck for dict-wide accuracy (14.8% exact vs 76.2% on Appendix 1). This is the wall between "a conjugation engine that works on 7 test verbs" and "a tool that can inflect any verb a learner looks up." Requires: automated stem boundary detection, verb class inference from dictionary entry shape, preverb identification from `stem_preverb` field.
 - [ ] **"to do it" investigation** (74/110, 12 MISS) — largest remaining mismatch gap after "to come"
 - [ ] **"to come" remaining 6 MISS** — assertive/absolutive 3du (3.A stem used instead of du stem), gerundial 2sg (GER shortening fires on PREV label), 3pl sub suffix contraction (stem deleted); also 3pl sub `verb_class='1'` string adds SUB suffix incorrectly
-- [ ] VD(u) descriptive verb stem extraction (1% exact in dict validation)
-- [ ] VT(3) Class 3 ut- fusion logic (0% exact in dict validation)
+- [x] ~~VD(u) descriptive verb stem extraction~~ **now 78.2%** (was 1% → 44.7% → 78.2%) — remaining: internal long-vowel shortening, aw- absorption
+- [x] ~~VT(3) Class 3 ut- fusion logic~~ **now 100% for (3)|(ut...)** (was 0% → 44.4% → 100%) — aʔuk/aʔu/aʔa contractions all handled
 
 ### ✅ Phase 3.1.5 — Noun Possession Morphology *(completed 2026-03-18)*
 **Priority:** ✅ Complete (#1 on roadmap)
@@ -773,6 +823,7 @@ These principles guide all user-facing features:
 | `noun_possession.py` | `scripts/` | Phase 3.1.5: noun possession morphology — extract nouns, classify possession systems, build kinship paradigms, generate possessive forms, validate against BB (--extract, --report, --validate, --db, --generate HEADWORD) | No |
 | `possession_engine.py` | `scripts/` | Phase 3.1.5: possession form generation engine — dispatches to kinship/body_part/agent/locative/patient systems, integrates sound changes, generates morpheme chips for web UI (--test, --paradigm HEADWORD) | No |
 | `example_filter.py` | `scripts/` | Phase 3.1.5: Skiri-aware headword matching for examples — rejects false substring matches (kirike≠kiri), handles OCR variants (J→E, 1→E), compound detection via epenthetic-h, prefix disambiguation against headword set; wired into entry_detail route | No |
+| `stem_extractor.py` | `scripts/` | Phase 3.1: dictionary-wide form_2 prediction — parses stem_preverb, infers verb class, applies preverb junction rules + coalescence + perfective finals (--validate, --predict HEADWORD, --report) | No |
 
 ## Environment
 
@@ -785,6 +836,49 @@ These principles guide all user-facing features:
 ---
 
 ## AI Development Tools & Model Selection
+
+### Three-Tool Workflow
+
+This project benefits from **three AI tools used in parallel**, each with different strengths:
+
+| Tool | Model | Best for | Access |
+|------|-------|----------|--------|
+| **claude.ai Chat** | Opus 4.6 | Linguistic analysis, architecture, document review, complex debugging | Pro/Max plan, browser |
+| **Claude Code (VS Code)** | Sonnet 4.6 (default) | File editing, script writing, running commands, multi-file changes | Pro plan, VS Code extension or CLI |
+| **Gemini API** | gemini-2.5-flash | Batch OCR, large-scale pattern analysis, offloading repetitive analytical tasks | Free tier or API key (`GEMINI_API_KEY`) |
+
+### Parallel Processing Strategy
+
+Many tasks in this project can be **split across tools simultaneously**:
+
+**Example: Stem extraction second pass (current priority)**
+- **claude.ai (Opus)**: Analyze the 728 remaining mismatches — categorize failure patterns, design rule fixes based on Parks Ch. 3, write the sound change logic
+- **Claude Code (Sonnet)**: Implement the fixes in `stem_extractor.py`, run validation, iterate on regex patterns for `[+ neg.]` / `witi-` / initial-ʔ handling
+- **Gemini API**: Batch-analyze the 385 VD verb mismatches — send headword+form_2 pairs to Gemini with Parks rule descriptions, get structured morpheme breakdowns for each, identify which internal sound change rules apply
+
+**Example: Future Phase 4.3 (Confidence Scoring)**
+- **Gemini API**: Compute per-class accuracy stats from `stem_extractor.py` validation output → feed into confidence tier assignments
+- **Claude Code**: Write the DB migration + web UI badge rendering
+- **claude.ai**: Design the confidence model (what constitutes high/medium/low)
+
+**Example: Future Phase 5.2 (Anki Export)**
+- **Claude Code**: Write the export script (SQLite → Anki .apkg format)
+- **claude.ai**: Design card templates, select which fields to include, handle IPA rendering
+
+### Gemini API Integration Points
+
+The Gemini API (`GEMINI_API_KEY`) is already used for several tasks and is available for new ones:
+
+| Script | What Gemini does |
+|--------|-----------------|
+| `extract_appendices.py` | OCR scanned PDF pages → structured JSON (Appendix 1-3, Grammar pages) |
+| `tag_entries.py` | Classify ambiguous entries by semantic domain |
+| `blue_book_verify.py` | Extract structured vocabulary from Blue Book lesson text |
+| `analyze_dual_plural.py` | Morpheme breakdown analysis for dual/plural verb forms |
+| `audit_entries.py` | Batch validate parsed entries for data quality |
+| **`stem_extractor.py` (planned)** | Batch-analyze mismatch patterns for VD verbs; generate morpheme decompositions for compound headwords |
+
+**Practical tip:** For analytical tasks with 100+ items (like "analyze why 385 VD verb predictions fail"), Gemini's batch processing is faster and cheaper than running them through claude.ai one by one. Structure the prompt as: "Given this headword and attested form_2, identify which Parks sound change rules explain the difference from this predicted form."
 
 ### claude.ai Chat vs. Claude Code in VS Code
 
@@ -809,18 +903,24 @@ These principles guide all user-facing features:
 - Complex debugging: "why does my conjugation engine produce X instead of Y for this verb class?"
 
 **Use Claude Code (Sonnet) for:**
-- Writing and editing Python scripts (morpheme_inventory.py, sound_changes.py, etc.)
+- Writing and editing Python scripts (morpheme_inventory.py, sound_changes.py, stem_extractor.py, etc.)
 - Flask/web UI work (templates, CSS, routes)
 - Running validation scripts and interpreting output
 - Bulk file operations, refactoring, test writing
 - Database migrations and import scripts
+
+**Use Gemini API for:**
+- Batch OCR of scanned PDFs (appendices, grammar pages)
+- Large-scale pattern analysis (100+ entries needing morpheme breakdown)
+- Offloading repetitive analytical tasks that don't require deep reasoning
+- Cross-validation of computed forms against attested data
 
 **If you want Opus in Claude Code:**
 - **Max plan ($100–200/mo):** Opus 4.6 is available as default. Run `/model opus` in Claude Code.
 - **Pro plan ($20/mo):** Opus is available only via `/extra-usage` (pay-per-use on top of subscription). Run `/model opus` after enabling extra usage in settings.
 - **Hybrid approach (`opusplan`):** Uses Opus for planning/reasoning, Sonnet for code execution. Run `/model opusplan`. Good middle ground for this project — Opus reasons about the morphology, Sonnet writes the code.
 
-**Practical tip for this project:** Start complex morphology work sessions in claude.ai (Opus) to get the logic right, then move to Claude Code (Sonnet) to implement it. Share this scope document at the start of each session so the AI has full context. The `opusplan` mode is worth trying for Phase 3.x work where the reasoning and the implementation are tightly coupled.
+**Practical tip for this project:** Start complex morphology work sessions in claude.ai (Opus) to get the logic right, then move to Claude Code (Sonnet) to implement it. For batch analytical work (VD verb mismatch analysis, etymology parsing), offload to Gemini. Share this scope document at the start of each session so the AI has full context. The `opusplan` mode is worth trying for Phase 3.x work where the reasoning and the implementation are tightly coupled.
 
 ### Model Configuration (Claude Code)
 
@@ -843,7 +943,7 @@ export ANTHROPIC_MODEL=claude-sonnet-4-6  # or claude-opus-4-6
 ## How to Use This Document
 
 Reference any section by name when starting a new chat. For example:
-- "I want to work on **Phase 3.1.5 — Noun Possession Morphology**"
+- "Continue **Phase 3.1 — Dictionary-Wide Stem Extraction** — second pass targeting 70%+"
 - "Let's tackle **Phase 4.3 — Confidence Scoring System**"
 - "Help me with the **Blue Book 518-gap triage** from the Ongoing section"
 - "I want to work on **Phase 3.2a — Template-Based Sentence Assembly**"
@@ -851,4 +951,31 @@ Reference any section by name when starting a new chat. For example:
 
 The AI should read this document, understand the current data state, and pick up from the referenced step without needing the full conversation history.
 
-**For Claude Code sessions:** Share this file at session start with `@pari_pakuru_project_scope.md` or include it in your project's `CLAUDE.md` file. See the **AI Development Tools** section for model selection guidance.
+**For Claude Code sessions:** Share this file at session start with `@pari_pakuru_project_scope.md` or include it in your project's `CLAUDE.md` file. See the **AI Development Tools** section for model selection and parallel processing guidance.
+
+**For Gemini-offloaded tasks:** Many batch analytical tasks (VD verb mismatch analysis, etymology parsing, morpheme decomposition) can be offloaded to Gemini API via scripts. Check which scripts support `GEMINI_API_KEY` in the Scripts Reference table.
+
+---
+
+## Next Chat Continuation Prompt
+
+Copy-paste this to start the next session (claude.ai or Claude Code):
+
+> **Continue Phase 3.1 — Dictionary-Wide Stem Extraction, third pass (optional).**
+>
+> Second pass is done: `scripts/stem_extractor.py` predicts form_2 at **83.5% exact** (1,846/2,211), 86.3% with close. Up from 14.8% → 62.0% → 83.5%.
+>
+> The scope doc (`pari_pakuru_project_scope.md`) has full context including per-category accuracy breakdown. The DB is `skiri_pawnee.db` in the repo root.
+>
+> **Remaining 302 misses are harder cases:**
+> 1. Internal long-vowel shortening (aah→ah in compounds) — 57 cases
+> 2. `aw-` prefix absorption for VD verbs (`awaaks → tiwaaks` not `tiiwaaks`) — needs morphological decomposition
+> 3. Complex bracket notations (`[+ ku-, ruu-, irii-]`, `[+ wiiruu-]`) — ~10 entries
+> 4. Multi-word/alternate headwords (`at istuʔ`, `cak, icak`) — ~15 entries
+> 5. Entries with different prefix than expected (`ruuti-`, `si-`, `kaak-` + preverb combos) — ~30 entries
+>
+> **Parallel opportunity:** Gemini batch analysis of the remaining 67 VD (u)|none misses could identify internal shortening rules. Also, the 14 remaining (3)|(ir...) misses involve class 3 stem allomorphy that may need manual linguistic analysis.
+>
+> **Alternative next steps** (higher impact per effort):
+> - **Phase 4.3 — Confidence scoring**: now that 83.5% of predictions match, scoring the remaining 16.5% as low-confidence is tractable
+> - **Phase 3.1 accent marks**: ~68 close matches are accent-only differences; implementing pitch/stress rules would boost to ~86%+ exact

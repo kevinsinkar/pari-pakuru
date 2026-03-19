@@ -126,6 +126,16 @@
       {% endif %}
     </div>
     <div class="dash-engine-card">
+      <span class="section-label">Stem Extraction</span>
+      {% if verb.stem_total is not none %}
+        <span class="dash-engine-number">{{ verb.stem_pct }}%</span>
+        <span class="dash-engine-detail">{{ "{:,}".format(verb.stem_exact) }}/{{ "{:,}".format(verb.stem_total) }} form_2 exact</span>
+        <span class="dash-engine-detail">{{ verb.stem_pct_close }}% with close matches</span>
+      {% else %}
+        <span class="dash-engine-detail" style="color:var(--earth-400);">Not available</span>
+      {% endif %}
+    </div>
+    <div class="dash-engine-card">
       <span class="section-label">Possession Engine</span>
       {% if poss.body_part is not none %}
         <span class="dash-engine-number">{{ poss.body_part }}</span>

@@ -568,6 +568,23 @@ def dashboard():
             verb[key] = cur.execute(sql).fetchone()[0]
         except Exception:
             verb[key] = None
+
+    # --- Stem Extraction Accuracy (form_2 prediction) ---
+    try:
+        import sys as _sys
+        scripts_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "scripts")
+        if scripts_dir not in _sys.path:
+            _sys.path.insert(0, scripts_dir)
+        from stem_extractor import validate_all
+        stem_results = validate_all(db.db_path)
+        verb["stem_total"] = stem_results["total"]
+        verb["stem_exact"] = stem_results["exact"]
+        verb["stem_close"] = stem_results["close"]
+        verb["stem_pct"] = stem_results["accuracy_exact"]
+        verb["stem_pct_close"] = stem_results["accuracy_with_close"]
+    except Exception:
+        verb["stem_total"] = None
+
     data["verb"] = verb
 
     # --- Possession Engine Coverage ---
