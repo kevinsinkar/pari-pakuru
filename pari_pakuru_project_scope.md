@@ -224,7 +224,7 @@ High-impact items ordered by learner value, not technical dependency:
 
 | Priority | Phase | What | Why |
 |----------|-------|------|-----|
-| 🔴 1 | 3.1.5 | Noun possession morphology | Learners hit this in Blue Book Lessons 1–5; currently zero coverage |
+| ✅ ~~1~~ | 3.1.5 | ~~Noun possession morphology~~ | **DONE (2026-03-18)** — 4 possession systems + locative suffixes + web widget + example filter. 40/40 tests. |
 | 🔴 2 | 3.1 (stem extraction) | Dictionary-wide stem extraction | 76% on 7 verbs vs 15% on all verbs — this is the wall |
 | 🔴 3 | 4.3 | Confidence scoring on computed forms | Learners can't tell a 94%-likely form from a 31%-likely one |
 | 🔴 4 | 3.1 (accent) | Accent mark generation | Phonemic in Skiri — wrong accent = wrong word |
@@ -234,6 +234,28 @@ High-impact items ordered by learner value, not technical dependency:
 | 🟡 8 | 3.1.6 | Function word inventory | Needed before sentence construction can work |
 | 🟡 9 | 3.2a | Template-based sentence assembly | First usable step toward sentence construction |
 | 🟡 10 | 5.1 | Structured lesson content | Blue Book curriculum extraction for progressive learning |
+
+### 🔴 Next Up: Phase 3.1 — Dictionary-Wide Stem Extraction *(Priority #2)*
+
+This is the wall between "a conjugation engine that works on 7 test verbs" (76.2% on Appendix 1) and "a tool that can inflect any verb a learner looks up" (14.8% on all dictionary verbs). The gap is entirely due to stem extraction: the engine's morphological rules are sound, but it can't find the stem/class/preverb for most dictionary entries automatically.
+
+**What needs to happen:**
+1. **Automated stem boundary detection** — given a headword like `tuuricaahiksii`, identify the stem (`hiir`), preverb (`uur`), and incorporated noun (`icaahiks`). Currently only manually-tagged Appendix 1 verbs work.
+2. **Verb class inference** — determine class (1, 1-a, 2, 3, 4, u, wi) from dictionary entry shape: `verb_class` field (often populated), paradigmatic form patterns (form_4 suffix → class), stem_preverb notation.
+3. **Preverb identification** — parse `stem_preverb` field notation like `(ut...)`, `(ir...)`, `(uur...)` to extract the preverb. ~600 entries have this field populated.
+4. **Noun incorporation stripping** — for verb headwords containing incorporated nouns, identify and separate the noun stem from the verb stem. Etymology `constituent_elements` field is the key data source.
+5. **Validation loop** — for each auto-extracted stem, generate form_2 (3sg indicative perfective) and compare to the attested paradigmatic_form. Match rate is the metric.
+
+**Target:** Raise dictionary-wide exact match from 14.8% → 50%+ (first pass), with clear confidence tiers on which verbs have reliable extractions.
+
+**Depends on:** Phase 3.1 conjugation engine (done), Phase 2.3 sound changes (done), Phase 1.2 database (done).
+
+**Key data sources:**
+- `lexical_entries.verb_class` — populated for most verbs; direct class lookup
+- `lexical_entries.stem_preverb` — e.g., `(ut...)` → preverb=ut
+- `paradigmatic_forms` — form_2 is the ground truth for stem extraction validation
+- `etymology.constituent_elements` — morpheme decomposition hints for compound verbs
+- `glosses` — English gloss patterns ("to be X" → likely descriptive/class-u)
 
 ### ✅ Phase 1.2 — Database Schema
 **Script:** `scripts/import_to_db.py` (implied by DB existence)
@@ -459,14 +481,13 @@ Tasks remaining (priority order — revised 2026-03-15):
 - [ ] VD(u) descriptive verb stem extraction (1% exact in dict validation)
 - [ ] VT(3) Class 3 ut- fusion logic (0% exact in dict validation)
 
-### 🟡 Phase 3.1.5 — Noun Possession Morphology *(NEW — detailed 2026-03-15)*
-**Priority:** 🔴 High (#1 on roadmap — learners encounter this in Blue Book Lessons 1–5; zero coverage currently)
-**Depends on:** Phase 3.1 (morpheme slot system — reuses pronominal prefixes), Appendix 3 kinship data (already extracted), Phase 2.3 sound changes (for stem concatenation)
-**Effort:** Medium-Large
-**Script:** `scripts/noun_possession.py` (extraction/classification), `scripts/possession_engine.py` (generation engine)
+### ✅ Phase 3.1.5 — Noun Possession Morphology *(completed 2026-03-18)*
+**Priority:** ✅ Complete (#1 on roadmap)
+**Scripts:** `scripts/noun_possession.py` (extraction/classification), `scripts/possession_engine.py` (generation engine), `scripts/example_filter.py` (Skiri-aware example matching)
+**Web:** `web/templates/_possession_widget.html` (morpheme chip UI), `web/app.py` (possession API + example filter integration)
 **Output:** `extracted_data/noun_possession_catalog.json`, `reports/phase_3_1_5_noun_possession.txt`
 
-Skiri has **four distinct possession systems**, not one. Each applies to different noun classes with different morphological mechanisms. The grammar engine needs to know which system to use for any given noun, then generate the correct form.
+Skiri has **four distinct possession systems**, not one. Each applies to different noun classes with different morphological mechanisms. The grammar engine now knows which system to use for any given noun, generates the correct form, and displays it in the web UI with morpheme-level breakdown and confidence scoring.
 
 **The four systems (from Parks Grammatical Overview pp. 36–37 + Blue Book Lessons 5, 7):**
 
@@ -477,49 +498,36 @@ Skiri has **four distinct possession systems**, not one. Each applies to differe
 | 3. Agent possession | N (general nouns) | ku-(INDF) + gerundial possessive verb + NOUN | kti ratiru pakskuuku' (my hat) |
 | 4. Patient possession | Any noun | uur- prefix when non-agent possesses | tatuuhkuutit aruusaʔ (I killed YOUR horse) |
 
-**System 1 — Kinship (N-KIN):** Fully irregular — each term has suppletive 1sg/2sg/3sg forms that must be memorized. Already extracted in `appendix3_kinship.json` (23 terms with paradigms). Blue Book Lesson 7 confirms: atias (my father), aʔas (your father), hiʔaastiʔ (his father). 3rd-person forms use hi- prefix + modified stem + -tiʔ suffix as a partial pattern.
+**Validation:** 40/40 tests passing (33 possessive + 7 locative/instrumental). Covers all 4 possession systems plus case suffixes, validated against Blue Book Lessons 5, 7, 8 and Grammatical Overview Table 4.
 
-**System 2 — Body part (N-DEP):** Body parts are expressed via verb incorporation. The noun drops its nominal suffix (-uʔ) and enters the verb phrase. Possession is marked by ri- (PHY.POSS) in slot 17 + agent pronoun. Blue Book Lesson 5:
-- `ti + ri + t + paks + ku` → Ti rit•paks•ku (Here is my head [sitting])
-- `ti + ri + t + kirik + ta` → Ti rit•kirik•ta (Here is my eye [hanging])
-- Position verbs: ku (sitting — head, round objects), ta (hanging — most body parts)
+Tasks completed:
+- [x] Extract & classify all nouns — filter S2E for N/N-DEP/N-KIN; extract stems (strip -uʔ/-kis); classify by possession system
+- [x] Build kinship paradigm table — map appendix3 data to structured 1sg/2sg/3sg forms; cross-validated against Blue Book Lesson 7
+- [x] Implement body-part possession constructor — MODE+ri+AGENT+STEM+VERB for any body-part noun; position verb selection (ku vs ta); sound change fallback
+- [x] Implement agent possession constructor — `kti + GER-POSS-VERB + NOUN` for 1sg/2sg/3sg (ratiru/rasiru/rau); Blue Book p.35 attested
+- [x] Document patient possession pattern — uur- prefix construction; slot 18 in morpheme inventory
+- [x] Implement locative suffix system — -biriʔ (body part LOC/INST), -kat (general LOC), -ru/-wiru (tribal/geo LOC); body-part plural -raar- before -biriʔ; 3-class noun routing per Table 4
+- [x] Handle N-DEP relational nouns — `KNOWN_BODY_PART_STEMS` (25 entries) and `KNOWN_RELATIONAL_STEMS` (5 entries) sets; asaa- "horse/dog", siis- "sharp object" route to agent possession instead of body-part incorporation
+- [x] Validate against 40 Blue Book + Grammatical Overview examples — all 4 systems + locative/instrumental
+- [x] Populate DB tables — `noun_stems`, `kinship_paradigms`, `possession_examples`
+- [x] Integrate into web UI — possession widget with My/Your/His card toggle; color-coded morpheme chips by semantic role (mode/poss/agent/noun/verb/kin); ATTESTED/COMPUTED/LOW confidence badges; locative/instrumental case panel; construction formula display
+- [x] Morpheme role classification — `_classify_morpheme_role()` maps labels → UI roles; `morpheme_chips` array in API response for structured rendering
+- [x] Possession API — `/api/possession/<headword>` route; Flask blueprint; lazy headword set cache; stub `_lookup_noun_class()` for DB query
+- [x] Example filter — `example_filter.py` with Skiri-aware word boundary matching; rejects false substring matches (kirike "what?" ≠ kiri "cat"); handles OCR variants (J→E, 1→E), morpheme-boundary compounds (kiri•wusu' ✓), epenthetic-h compounds (kirihkaatit ✓), prefix disambiguation; wired into `entry_detail()` route filtering both dictionary examples and BB attestations; 14/14 tests
+- [x] Kinship dispatch fix — dispatcher tries kinship lookup first for any noun regardless of `noun_class`; handles N-KIN entries stored as plain "N" in DB
 
-**System 3 — Agent possession (general nouns):** Uses a possessive verb construction, not a prefix. Blue Book Lesson 7 ("Specifying Verbs — Possessives"):
-- 1sg: `kti ratiru NOUN` (my NOUN) — ku(INDF)+ti(IND) ra(GER)+t(1A)+ir(A.POSS)+u(exist)
-- 2sg: `kti rasiru NOUN` (your NOUN) — ra(GER)+s(2A)+ir(A.POSS)+u(exist)
-- 3sg: `kti rau NOUN` (his/her NOUN) — ra(GER)+Ø(3A)+a(A.POSS)+u(exist)
-- The noun stands independently (not incorporated). This is the default for animals, objects, places.
+**Bug fixes applied during deployment:**
+- Kinship file path resolution (REPO_ROOT parent vs current dir)
+- Locative test inputs (tribal names need base forms, not already-inflected forms)
+- N-DEP relational noun routing (asaa- → agent possession, not body-part)
+- Example filter compound heuristic (tightened from `remainder[0] in 'hrstpk'` to epenthetic-h only `remainder[0] == 'h' and len(remainder) >= 3`; prevents kirike false positives when kirike isn't in headword set)
+- OCR normalization in example filter (`J→E`, `1→E` for Blue Book header artifacts)
 
-**System 4 — Patient possession:** uur- prefix marks that the verb's patient (not agent) possesses the noun. Grammatical Overview p. 37: `tatuuhkuutit aruusaʔ` (I killed your horse) = ta+t(1A)+a(2P)+uur(PHY.POSS)+kuutik(kill). The patient pronoun specifies the possessor.
-
-**Sources:**
-| Source | What it provides |
-|--------|-----------------|
-| `extracted_data/appendix3_kinship.json` | 23 kinship terms with my/your/his paradigms (already extracted) |
-| `extracted_data/grammatical_overview.json` | Possession section pp. 36-37 (4 systems); Table 9 (Pronominal Prefixes: t-/s-/Ø/ir-/acir-/a-); Table 7 slot 17 (PHY.POSS ri-), slot 18 (PAT.POSS uur-); Table 4 (Case/Number suffixes); Table 5 (Noun Derivation: -uʔ, -kis, -kusuʔ); noun incorporation rules p. 13 (drop -uʔ/-kis) |
-| `Dictionary Data/skiri_to_english_respelled.json` | All 4,273 S2E entries; filter N/N-DEP/N-KIN (~1,200+ nouns) |
-| `Dictionary Data/english_to_skiri_linked.json` | E2S cross-references for possessive glosses |
-| `pari pakuru/Blue_Book_Pari_Pakuru.txt` | Lesson 5 (body part possession with ri-, ~8 examples), Lesson 7 (kinship + general possession, ~20 examples), Lesson 4 (verbal "have" with ra, ~6 examples), Lesson 8 (implicit possession "my dog") |
-| `scripts/morpheme_inventory.py` | Existing conjugation engine — reuse `_smart_concatenate`, pronominal prefix tables, sound change pipeline |
-
-**Noun stem extraction:** Independent nouns must be reduced to stems before incorporation. The script strips nominal suffixes: -uʔ (absolutive, most common), -kis (diminutive), -kusuʔ (augmentative), -biriʔ (instrumental/locative on body parts). Example: iksuʔ → iks- (hand), paksuʔ → paks- (head), asaakiʔ → asaa- (dog < asaa- + -kis).
-
-**Locative suffixes (Table 4):** Related to possession — body parts use -biriʔ for both locative AND instrumental; tribal/geo names use -ru/-wiru; other nouns use -kat. Body part plural: -raar- (inserted between stem and -biriʔ). Example: ikstaaririʔ (with/on the hands) < iks + -raar- + -biriʔ.
-
-Tasks:
-- [ ] **Extract & classify all nouns** — filter S2E for N/N-DEP/N-KIN, extract stems (strip -uʔ/-kis), classify by possession system (kinship/body_part/general/relational)
-- [ ] **Build kinship paradigm table** — map appendix3 data to structured 1sg/2sg/3sg forms; cross-validate against Blue Book Lesson 7 examples
-- [ ] **Implement body-part possession constructor** — generate MODE+ri+AGENT+STEM+VERB for any body-part noun; handle position verb selection (ku vs ta); integrate Phase 2.3 sound changes for surface form
-- [ ] **Implement agent possession constructor** — generate `kti + GER-POSS-VERB + NOUN` for any general noun; handle 1sg/2sg/3sg possessive verb forms (ratiru/rasiru/rau)
-- [ ] **Document patient possession pattern** — uur- prefix construction from Grammatical Overview p. 37; add to morpheme inventory (slot 18)
-- [ ] **Implement locative suffix system** — -biriʔ (body part LOC/INST), -kat (general LOC), -ru/-wiru (tribal/geo LOC); body-part plural -raar- before -biriʔ
-- [ ] **Validate against 30+ Blue Book examples** — hand-extracted test cases from Lessons 4, 5, 7, 8 covering all 4 systems
-- [ ] **Populate DB tables** — `noun_stems` (entry_id, stem, suffix, possession_type), `kinship_paradigms` (1sg/2sg/3sg forms), `possession_examples` (BB test cases)
-- [ ] **Integrate into web UI** — "My / Your / His" toggle on noun entry cards; show morpheme breakdown of generated possessive form; mark all generated forms as COMPUTED with confidence tier (see Phase 4.3)
-- [ ] **Handle N-DEP relational nouns** — non-body dependent nouns (e.g., relational terms); determine whether they follow body-part or agent-possession pattern (may require per-entry annotation)
-
-**Bug fixes:**
-- [x] **Kinship dispatch fix (2026-03-15):** `possession_engine.py` dispatcher now tries kinship lookup first for any noun, regardless of `noun_class`. Core kinship terms (atiraʔ, atiʔas, atikaʔ, tiwaat) are classified as plain "N" in the DB, not "N-KIN", so the old `N-KIN` gate routed them to agent possession. The kinship cache is now the authority. Tests 20/20.
+**Key architecture decisions:**
+- Agent possession uses attested fixed forms (ratiru/rasiru/rau) rather than generating via conjugation engine — safer, since gerundial+A.POSS interaction hasn't been validated
+- `kti` = `ku(INDF)` + `ti(IND.3)` contracted; body part is always 3rd person subject of the position verb
+- Locative/instrumental are case forms, not possession — but they share stem extraction and are naturally displayed alongside possession paradigms
+- Example filter uses a global headword set (lazily cached at first request) for disambiguation; modifies entry data in-place before template rendering
 
 ### 🔲 Phase 3.1.6 — Function Word & Particle Inventory *(NEW)*
 **Priority:** Medium (needed for sentence construction; these are the glue words)
@@ -622,18 +630,23 @@ flashcards, and live search. Mobile-responsive via Pico CSS framework.
 - [x] JSON API endpoint (`/api/search`) for external consumers
 - [x] Detected language returned from search for UI display
 - [x] Deployment: `requirements.txt` provided; run with `python -m web.app`
+- [x] **Noun possession widget** — lazy-loaded via `/api/possession/<headword>` on noun entries; My/Your/His card toggle; color-coded morpheme chips by semantic role (mode/poss/agent/noun/verb/kin); ATTESTED/COMPUTED/LOW confidence badges; locative/instrumental case-form panel; auto-expand for N-DEP/N-KIN, lazy-expand for N
+- [x] **Example filter** — Skiri-aware word-boundary matching on entry detail pages; removes false substring matches (kirike "what?" ≠ kiri "cat") from both dictionary examples and Blue Book attestation tables; cached headword set (~4,273 entries) built lazily on first request
+- [x] **Data quality dashboard** — `/dashboard` route with corpus stats, field completeness, verb engine coverage, possession engine coverage, E2S linking health
 
 **Routes:**
 - `/` — Homepage with stats and random word
 - `/search?q=...` — Full search with filters
 - `/search/partial?q=...` — HTMX live search endpoint
 - `/api/search?q=...` — JSON API endpoint (limit capped at 100)
-- `/entry/<entry_id>` — Full entry detail
+- `/api/possession/<headword>` — Possession paradigm JSON (morpheme chips + locative forms)
+- `/entry/<entry_id>` — Full entry detail (with example filter + possession widget)
 - `/browse` — Browse by tag/class
 - `/browse/tag/<tag>` — Entries by semantic tag
 - `/browse/class/<class>` — Entries by grammatical class
 - `/flashcards` — Weekly flashcard overview
 - `/flashcards/<week>` — Interactive flashcard study session
+- `/dashboard` — Data quality dashboard (corpus stats, completeness, engine coverage)
 - `/about` — About page with data source info
 
 ### 🔲 Phase 4.2 — Sentence Builder UI
@@ -758,7 +771,8 @@ These principles guide all user-facing features:
 | `retry_failed_grammar.py` | `scripts/` | Phase 3.1: retry failed grammar pages with plain-text Gemini or Claude API | Yes (GEMINI_API_KEY or ANTHROPIC_API_KEY) |
 | `merge_grammar_retries.py` | `scripts/` | Phase 3.1: merge recovered grammar page data into grammatical_overview.json | No |
 | `noun_possession.py` | `scripts/` | Phase 3.1.5: noun possession morphology — extract nouns, classify possession systems, build kinship paradigms, generate possessive forms, validate against BB (--extract, --report, --validate, --db, --generate HEADWORD) | No |
-| `possession_engine.py` | `scripts/` | Phase 3.1.5: possession form generation engine — dispatches to kinship/body_part/agent/locative/patient systems, integrates sound changes (--test, --paradigm HEADWORD) | No |
+| `possession_engine.py` | `scripts/` | Phase 3.1.5: possession form generation engine — dispatches to kinship/body_part/agent/locative/patient systems, integrates sound changes, generates morpheme chips for web UI (--test, --paradigm HEADWORD) | No |
+| `example_filter.py` | `scripts/` | Phase 3.1.5: Skiri-aware headword matching for examples — rejects false substring matches (kirike≠kiri), handles OCR variants (J→E, 1→E), compound detection via epenthetic-h, prefix disambiguation against headword set; wired into entry_detail route | No |
 
 ## Environment
 
@@ -766,6 +780,7 @@ These principles guide all user-facing features:
 - Gemini API key stored as environment variable `GEMINI_API_KEY`
 - Windows environment (paths use `\` in logs)
 - Repository: `pari-pakuru/` with structure documented in `DIRECTORY_LAYOUT.md`
+- **Production deployment:** PythonAnywhere at `/home/paripakuru/main/` — Flask app in `web/app.py`, SQLite DB at `skiri_pawnee.db`, scripts in `scripts/`
 
 ---
 

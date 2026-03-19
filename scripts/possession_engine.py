@@ -41,52 +41,31 @@ import os
 import sys
 import re
 import argparse
-import io
 from dataclasses import dataclass, field
 from typing import Optional, Dict, List, Tuple
 from pathlib import Path
 
-# Force UTF-8 output on Windows (cp1252 can't encode glottal stops, IPA, etc.)
-if sys.stdout.encoding and sys.stdout.encoding.lower() != 'utf-8':
-    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
-    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
-
 # ---------------------------------------------------------------------------
-# Try to import the real 24-rule sound change pipeline from Phase 2.3.
-#
-# INTEGRATION NOTE (Phase 3.1.5 Round 2):
-#   The possession engine needs the SOUND CHANGE pipeline, not the full
-#   conjugation engine. sound_changes.apply_sound_changes(morphemes) takes
-#   a simple list of morpheme strings and returns the surface form after
-#   applying all 24 rules (restricted + concatenation + unrestricted).
-#
-#   We do NOT use morpheme_inventory._smart_concatenate because:
-#     (a) its signature requires (morph_forms, morpheme_tuples, preverb,
-#         actual_mode) — tuple-based tracking for the verb conjugation pipeline
-#     (b) possession constructions are simpler and don't need preverb
-#         alternation or compensatory lengthening logic
-#     (c) apply_sound_changes already handles Rules 2R, 8R, 12R etc.
-#         at morpheme boundaries via apply_restricted_rules()
+# Try to import from morpheme_inventory; fall back to built-in if unavailable
 # ---------------------------------------------------------------------------
-_HAS_SOUND_ENGINE = False
-_KS_MARKER = "\x01"  # same marker used in sound_changes.py to protect ks from Rule 17
+_HAS_MORPHEME_ENGINE = False
 try:
-    from sound_changes import (
-        apply_sound_changes as sc_apply_sound_changes,
-        apply_unrestricted_rules as sc_apply_unrestricted_rules,
-        KS_MARKER as _KS_MARKER,
+    # INTEGRATION POINT: adjust this import path to match your repo layout
+    from morpheme_inventory import (
+        _smart_concatenate,
+        apply_sound_changes,
+        # If these exist — names are assumptions based on scope doc:
+        # conjugate_verb,
+        # PRONOMINAL_PREFIXES as MI_PRONOMINAL_PREFIXES,
     )
-    _HAS_SOUND_ENGINE = True
+    _HAS_MORPHEME_ENGINE = True
 except ImportError:
     pass
-
-# Backward-compat alias for code that checks _HAS_MORPHEME_ENGINE
-_HAS_MORPHEME_ENGINE = _HAS_SOUND_ENGINE
 
 # ---------------------------------------------------------------------------
 # Path configuration
 # ---------------------------------------------------------------------------
-REPO_ROOT = Path(__file__).resolve().parent.parent
+REPO_ROOT = Path(__file__).resolve().parent
 EXTRACTED_DIR = REPO_ROOT / "extracted_data"
 KINSHIP_FILE = EXTRACTED_DIR / "appendix3_kinship.json"
 
@@ -192,84 +171,21 @@ POSITION_VERBS = {
 }
 
 # Map specific body-part stems to their position verb
-# Source: Blue Book Lesson 5 dialogues + Parks dictionary N-DEP entries
-#
-# Position verb assignment rules (BB Lesson 5, p.22):
-#   ku  (sitting)  — head, round objects
-#   ta  (hanging)  — "almost every other part of your body hangs"
-#   arit (standing) — torso, upright body parts
-#
-# Stems marked [BB] are Blue Book attested; [PD] are Parks Dictionary.
-# Where BB and PD have different stems for the same body part (e.g.,
-# haka [BB] vs haakaʔ [PD] for "mouth"), both are included.
+# Source: Blue Book Lesson 5 dialogues
 BODY_PART_POSITION = {
-    # --- HEAD region (ku = sitting) ---
-    "paks":          "ku",    # [BB] head
-    "astihaar":      "ku",    # [PD] crown of the head, pate
-
-    # --- EYES ---
-    "kirik":         "ta",    # [BB] eye
-    "kiriik":        "ta",    # [PD] eye (Parks headword kiriikuʔ)
-    "kaackaawiʔ":    "ta",    # [PD] white of the eye
-
-    # --- NOSE ---
-    "tsusu":         "ta",    # [BB] nose
-    "cus":           "ta",    # [PD] nose (Parks headword cusuʔ)
-
-    # --- MOUTH ---
-    "haka":          "ta",    # [BB] mouth
-    "haakaʔ":        "ta",    # [PD] mouth (Parks headword haakaʔuʔ)
-    "haakaratawiʔ":  "ta",    # [PD] mouth opening, orifice
-    "hatkatakus":    "ta",    # [PD] roof of the mouth, palatal region
-
-    # --- EAR ---
-    "itkahaar":      "ta",    # [PD] ear
-
-    # --- THROAT / NECK ---
-    "tsiksu":        "ta",    # [BB] throat/heart
-    "kitut":         "ta",    # [PD] throat (N-DEP headword kitut-)
-    "raruuc":        "ta",    # [PD] throat, larynx
-    "paahiks":       "ta",    # [PD] throat, front part of the neck
-
-    # --- HAND / FINGERS ---
-    "iks":           "ta",    # [BB] hand
-    "kskitsu":       "ta",    # [BB] finger
-    "ikskiic":       "ta",    # [PD] finger (Parks headword ikskiicuʔ)
-    "ikskakus":      "ta",    # [PD] palm of the hand
-    "ikskatahc":     "ta",    # [PD] palm of the hand (variant)
-    "kskiiciikawiʔ": "ta",    # [PD] middle finger
-    "kskiicpita":    "ta",    # [PD] little finger, pinky
-
-    # --- FOOT / LEG ---
-    "as":            "ta",    # [BB] foot
-    "askitsu":       "ta",    # [BB] toe
-    "kasu":          "ta",    # [BB] leg
-    "paa":           "ta",    # [PD] knee (N-DEP headword paa-)
-    "askakiiriit":   "ta",    # [PD] heel of the foot
-    "askatahc":      "ta",    # [PD] sole of the foot
-    "asikitahaah":   "ta",    # [PD] instep of the foot
-
-    # --- TORSO / ABDOMEN ---
-    "kararu":        "ta",    # [BB] stomach/belly
-    "karaar":        "ta",    # [PD] belly, abdomen, stomach (Parks headword karaaruʔ)
-    "kickaraar":     "ta",    # [PD] abdomen, stomach
-    "pakuus":        "ta",    # [PD] belly, abdomen, stomach
-
-    # --- HAIR ---
-    "usu":           "ta",    # [BB] hair
-    "uus":           "ta",    # [PD] hair (Parks headword uusuʔ)
-    "uuskaraar":     "ta",    # [PD] hairline, hair on the head
-    "uuspiraar":     "ta",    # [PD] growing hair
-    "ckuur":         "ta",    # [PD] wool, shaggy hair
-    "raac":          "ta",    # [PD] pubic hair
-    "hatkahuur":     "ta",    # [PD] part (as in hair)
-
-    # --- BUTTOCKS ---
-    "rusu":          "ta",    # [BB] buttocks
-    "ripiit":        "ta",    # [PD] buttock, cheek
-
-    # --- VOICE (abstract body function) ---
-    "wak":           "ta",    # [PD] voice, sound, speech (N-DEP headword wak-)
+    "paks":   "ku",    # head → sits
+    "kirik":  "ta",    # eye → hangs
+    "iks":    "ta",    # hand → hangs
+    "haka":   "ta",    # mouth → hangs
+    "as":     "ta",    # foot → hangs
+    "usu":    "ta",    # hair → hangs
+    "tsusu":  "ta",    # nose → hangs
+    "kararu": "ta",    # stomach → hangs
+    "tsiksu": "ta",    # throat/heart → hangs
+    "rusu":   "ta",    # buttocks → hangs
+    "kasu":   "ta",    # leg → hangs
+    "kskitsu":"ta",    # finger → hangs
+    "askitsu":"ta",    # toe → hangs
 }
 
 # Default position verb for body parts not in the lookup
@@ -277,57 +193,234 @@ DEFAULT_BODY_POSITION = "ta"  # hanging — most body parts
 
 
 # ===========================================================================
-#  RELATIONAL / LOCATIVE NOUNS — N-DEP stems that are NOT body parts
+#  KNOWN BODY-PART STEMS — for N-DEP dispatch disambiguation
+#
+#  N-DEP class includes BOTH body parts (→ System 2, ri- PHY.POSS)
+#  and relational nouns (→ System 3, agent possession). This set lets
+#  the dispatcher route correctly.
+#
+#  Source: Blue Book Lesson 5, Grammatical Overview "body parts and
+#  body products" list, plus Parks dictionary N-DEP entries with body
+#  part glosses.
 # ===========================================================================
-# These dependent stems are incorporated into verbs as spatial/locative
-# modifiers. They are NOT independently possessed — you don't say "my inside"
-# or "my road", you say "inside the house" or "standing in the road."
-#
-# Blue Book examples:
-#   ka- "in, inside" → ti•kaku' "he's inside (sitting)"
-#   hatur- "road" + ka- → ti•hatuh•kaarit "he's standing in the road"
-#
-# Stems NOT in this dict and NOT in BODY_PART_POSITION fall through to
-# agent possession (System 3) as the default for N-DEP.
 
-LOCATIVE_NOUNS = {
-    # --- Spatial / locative stems ---
-    "hat":    {"meaning": "hole", "type": "locative",
-              "example": None},
-    "hatawi": {"meaning": "hole", "type": "locative",
-              "example": None, "variants": ["ratawi"]},
-    "ratawi": {"meaning": "hole", "type": "locative",
-              "example": None, "variants": ["hatawi"]},
-    "hatuur": {"meaning": "path, trail; road", "type": "locative",
-              "example": "ti\u2022hatuh\u2022kaarit \u2018he\u2019s standing in the road\u2019",
-              "variants": ["hatuh"]},
-    "hatuh":  {"meaning": "path, trail; road", "type": "locative",
-              "example": "ti\u2022hatuh\u2022kaarit \u2018he\u2019s standing in the road\u2019",
-              "variants": ["hatuur"]},
+KNOWN_BODY_PART_STEMS = {
+    # Blue Book Lesson 5 core set
+    "paks",    # head
+    "kirik",   # eye
+    "iks",     # hand
+    "haka",    # mouth
+    "as",      # foot
+    "usu",     # hair
+    "tsusu",   # nose
+    "kararu",  # stomach
+    "tsiksu",  # throat/heart (seat of emotions)
+    "rusu",    # buttocks
+    "kasu",    # leg
+    "kskitsu", # finger
+    "askitsu", # toe
+    "aspitu",  # toenail, claw
+    # Extended from Grammatical Overview "body parts and body products"
+    "kiis",    # bone
+    "riiks",   # arrow (cultural product, incorporates like body part)
+    "piiru",   # kidney
+    "paahir",  # blood vessel
+    "atak",    # arm
+    "atka",    # ear (< atka•haru' BB p.23)
+    "huur",    # tooth
+    "siit",    # abdomen, belly
+    # Body products
+    "tahka",   # tears
+    "waak",    # word, voice
 }
 
-# Non-body N-DEP stems that route to agent possession (System 3).
-# Listed here for documentation — they are NOT locative and are possessable
-# via the general agent system ("my horse", "my food", etc.).
+# Relational/dependent nouns that are NOT body parts
+# These use agent possession (System 3) even though they're N-DEP
+KNOWN_RELATIONAL_STEMS = {
+    "asaa",    # horse; dog (independent form of horse: aruusaʔ)
+    "siis",    # sharp, pointed object (→ siiski 'awl', siistacaraʔ 'fork')
+    "riikakus",# door flap
+    "akitaar", # tribe
+    "sakur",   # sun
+}
+
+
+# ===========================================================================
+#  LOCATIVE / INSTRUMENTAL SUFFIX SYSTEM
 #
-# Incorporable nouns (food, animals, natural phenomena, cultural products):
-#   aras-      cooked food
-#   asaa-/asa- horse; dog
-#   haak-/rak- wood; tree
-#   haas-/has- line; rope, cord
-#   hiihis-    night (24-hour period)
-#   iriwis-    war party; troop
-#   rut-       snake
-#   saak-      sun; day
-#   tariir-    seam
+#  Parks Grammatical Overview p. 30, Table 4:
+#    Noun Class          Plural    Case Suffixes
+#    ─────────────────   ────────  ─────────────────────
+#    Body Part Terms     -raar-    -biriʔ (INST/LOC)
+#    Tribal/Geo Names    Ø         -ru LOC
+#    Other Nouns         Ø         -kat LOC / -biriʔ INST
 #
-# Abstract / body-related (not physical body parts):
-#   aciks-     spirit, mind, thoughts; throat
-#   iir-       carcass; corpse
-#   iit-       body (living or dead); corpse
-#   awi-       fleeting image; quick motion
-#   raa-       way, custom, tradition
-#   uhur-      way, behavior; image, shape
+#  Suffix details:
+#    -biriʔ  = instrumental "with, using" (all nouns)
+#              AND locative "in, on, at" (body parts only)
+#    -raar-  = plural (body parts only), goes BETWEEN stem and -biriʔ
+#    -ru     = locative "among, in country of" (tribal/geo names)
+#    -wiru   = variant of -ru for names ending in vowel 'a'
+#    -kat    = locative "in, on; among" (general nouns)
+# ===========================================================================
+
+# Noun class for locative routing
+LOCATIVE_CLASS_BODY_PART = "body_part"
+LOCATIVE_CLASS_TRIBAL = "tribal"
+LOCATIVE_CLASS_OTHER = "other"
+
+
+@dataclass
+class LocativeResult:
+    """Result of generating a locative/instrumental form."""
+    headword: str
+    stem: str
+    form_type: str            # "locative", "instrumental", "locative_plural"
+    noun_class: str           # "body_part", "tribal", "other"
+    surface_form: str
+    morpheme_sequence: List[str]
+    morpheme_labels: List[str]
+    gloss: str
+    confidence: str = "high"
+    notes: str = ""
+
+
+def classify_noun_for_locative(
+    headword: str,
+    noun_class: Optional[str] = None,
+    is_tribal: bool = False,
+) -> str:
+    """
+    Determine which locative class a noun belongs to.
+
+    Returns: "body_part", "tribal", or "other"
+    """
+    stem, _ = extract_noun_stem(headword)
+
+    if noun_class == "N-DEP" and stem in KNOWN_BODY_PART_STEMS:
+        return LOCATIVE_CLASS_BODY_PART
+    if is_tribal or noun_class in ("N-TRIBAL", "N-GEO"):
+        return LOCATIVE_CLASS_TRIBAL
+    # Heuristic: names ending in common tribal suffixes
+    if headword.endswith("ii") or headword.endswith("ita") or headword.endswith("aasi"):
+        return LOCATIVE_CLASS_TRIBAL
+    return LOCATIVE_CLASS_OTHER
+
+
+def generate_locative(
+    headword: str,
+    noun_class: Optional[str] = None,
+    is_tribal: bool = False,
+    plural: bool = False,
+) -> LocativeResult:
+    """
+    Generate the locative case form of a noun.
+
+    Routing (Table 4):
+      Body parts:  stem + (-raar- PL) + -biriʔ
+      Tribal names: stem + -ru (or -wiru if stem ends in 'a')
+      Other nouns:  stem + -kat
+
+    Examples from Grammatical Overview:
+      iksiriʔ  = iks + biriʔ       "on the hand"
+      ikstaaririʔ = iks + raar + biriʔ  "on the hands" (PL)
+      sahiiru  = sahii + ru         "in Cheyenne country"
+      uukaahpaawiru = uukaahpaa + wiru  "among the Quapaw"
+      akahkat  = akar + kat         "on the dwelling"
+      asaakat  = asaa + kat         "among the horses"
+    """
+    stem, suffix = extract_noun_stem(headword)
+    loc_class = classify_noun_for_locative(headword, noun_class, is_tribal)
+
+    if loc_class == LOCATIVE_CLASS_BODY_PART:
+        morphemes = [stem]
+        labels = ["STEM"]
+        if plural:
+            morphemes.append("raar")
+            labels.append("PL")
+        morphemes.append("biriʔ")
+        labels.append("LOC/INST")
+        raw = concatenate(morphemes)
+        surface = apply_sc(raw)
+        gloss_pl = " (plural)" if plural else ""
+        return LocativeResult(
+            headword=headword, stem=stem,
+            form_type="locative_plural" if plural else "locative",
+            noun_class=loc_class,
+            surface_form=surface,
+            morpheme_sequence=morphemes,
+            morpheme_labels=labels,
+            gloss=f"on/at the {headword}{gloss_pl}",
+            confidence="high",
+            notes="Body part locative: stem + (-raar- PL) + -biriʔ",
+        )
+
+    elif loc_class == LOCATIVE_CLASS_TRIBAL:
+        # -wiru after stems ending in 'a', -ru otherwise
+        if stem.endswith("a"):
+            loc_suffix = "wiru"
+        else:
+            loc_suffix = "ru"
+        morphemes = [stem, loc_suffix]
+        labels = ["STEM", "LOC"]
+        raw = concatenate(morphemes)
+        surface = apply_sc(raw)
+        return LocativeResult(
+            headword=headword, stem=stem,
+            form_type="locative",
+            noun_class=loc_class,
+            surface_form=surface,
+            morpheme_sequence=morphemes,
+            morpheme_labels=labels,
+            gloss=f"among the {headword}; in {headword} country",
+            confidence="high",
+            notes=f"Tribal locative: stem + -{loc_suffix}",
+        )
+
+    else:  # LOCATIVE_CLASS_OTHER
+        morphemes = [stem, "kat"]
+        labels = ["STEM", "LOC"]
+        raw = concatenate(morphemes)
+        surface = apply_sc(raw)
+        return LocativeResult(
+            headword=headword, stem=stem,
+            form_type="locative",
+            noun_class=loc_class,
+            surface_form=surface,
+            morpheme_sequence=morphemes,
+            morpheme_labels=labels,
+            gloss=f"in/on the {headword}; among the {headword}",
+            confidence="high",
+            notes="General locative: stem + -kat",
+        )
+
+
+def generate_instrumental(
+    headword: str,
+    noun_class: Optional[str] = None,
+) -> LocativeResult:
+    """
+    Generate the instrumental case form: stem + -biriʔ.
+
+    Instrumental -biriʔ applies to ALL nouns ("with, using").
+    For body parts this is the same form as locative.
+    """
+    stem, suffix = extract_noun_stem(headword)
+    morphemes = [stem, "biriʔ"]
+    labels = ["STEM", "INST"]
+    raw = concatenate(morphemes)
+    surface = apply_sc(raw)
+    return LocativeResult(
+        headword=headword, stem=stem,
+        form_type="instrumental",
+        noun_class=classify_noun_for_locative(headword, noun_class),
+        surface_form=surface,
+        morpheme_sequence=morphemes,
+        morpheme_labels=labels,
+        gloss=f"with/using the {headword}",
+        confidence="high",
+        notes="Instrumental: stem + -biriʔ (applies to all nouns)",
+    )
 
 
 # ===========================================================================
@@ -356,17 +449,9 @@ def extract_noun_stem(headword: str) -> Tuple[str, Optional[str]]:
     """
     hw = headword.strip()
 
-    # Strip trailing hyphen (bound-stem notation)
-    if hw.endswith("-"):
-        hw = hw[:-1]
-
     # Augmentative -kusuʔ (check first — longest)
     if hw.endswith("kusuʔ") and len(hw) > 5:
         return hw[:-5], "-kusuʔ"
-
-    # Locative/relational -iriʔ (e.g., askatahciriʔ -> askatahc "sole")
-    if hw.endswith("iriʔ") and len(hw) > 4:
-        return hw[:-4], "-iriʔ"
 
     # Absolutive -uʔ (most common)
     if hw.endswith("uʔ") and len(hw) > 2:
@@ -449,47 +534,17 @@ def _fallback_apply_sound_changes(form: str) -> str:
     return form
 
 
-def _apply_pipeline(morphemes: List[str]) -> str:
-    """
-    Apply the full sound change pipeline to a morpheme list.
-
-    When the real engine (sound_changes.py) is available, this calls
-    apply_sound_changes() which does:
-        1. Restricted rules (morpheme-boundary-aware: 1R, 2R, 3R, 8R, 10R-12R)
-        2. Concatenation (join modified morphemes)
-        3. Unrestricted rules (string-level: 5-7, 13-24)
-
-    In standalone mode, falls back to the 4-rule concatenator.
-    """
-    # Filter out empty morphemes before processing
-    clean = [m for m in morphemes if m]
-    if not clean:
-        return ""
-
-    if _HAS_SOUND_ENGINE:
-        return sc_apply_sound_changes(clean)
-    return _fallback_apply_sound_changes(_fallback_concatenate(clean))
-
-
-# Legacy aliases — kept for any external callers
 def concatenate(morphemes: List[str]) -> str:
-    """Concatenate morphemes (legacy wrapper — use _apply_pipeline instead)."""
-    clean = [m for m in morphemes if m]
-    if _HAS_SOUND_ENGINE:
-        # apply_sound_changes does concat + all rules in one pass
-        return sc_apply_sound_changes(clean)
-    return _fallback_concatenate(clean)
+    """Use real engine if available, else fallback."""
+    if _HAS_MORPHEME_ENGINE:
+        return _smart_concatenate(morphemes)
+    return _fallback_concatenate(morphemes)
 
 
 def apply_sc(form: str) -> str:
-    """Post-concatenation sound changes (legacy wrapper).
-
-    When using the real engine, this is a no-op because _apply_pipeline
-    already applied all rules. Kept for backward compatibility.
-    """
-    if _HAS_SOUND_ENGINE:
-        # Already applied in _apply_pipeline / concatenate — identity
-        return form
+    """Use real sound change pipeline if available, else fallback."""
+    if _HAS_MORPHEME_ENGINE:
+        return apply_sound_changes(form)
     return _fallback_apply_sound_changes(form)
 
 
@@ -540,80 +595,7 @@ def _load_kinship() -> Dict:
         else:
             _index_kinship_term(item)
 
-    # Load BB-attested supplements not in Appendix 3
-    _load_kinship_supplements()
-
     return _kinship_cache
-
-
-# ---------------------------------------------------------------------------
-# KINSHIP SUPPLEMENTS — terms attested in Blue Book but not in Appendix 3
-#
-# These are added to the kinship cache after loading the appendix data.
-# Source: Blue Book Lesson 7
-# ---------------------------------------------------------------------------
-KINSHIP_SUPPLEMENTS = [
-    {
-        "english_term": "son (male speaker)",
-        "skiri_term": "tikiʔ",
-        "possessive_forms": {
-            "my": "tikiʔ",
-            "your": None,
-            "his_her": None,
-        },
-        "notes": "1sg only attested in BB Lesson 7. Not in Appendix 3.",
-    },
-    {
-        "english_term": "daughter (male speaker)",
-        "skiri_term": "tsuwat",
-        "possessive_forms": {
-            "my": "tsuwat",
-            "your": None,
-            "his_her": None,
-        },
-        "notes": "1sg only attested in BB Lesson 7. Not in Appendix 3.",
-    },
-    {
-        "english_term": "niece/nephew (female speaker)",
-        "skiri_term": "swat",
-        "possessive_forms": {
-            "my": None,
-            "your": "swat",
-            "his_her": None,
-        },
-        "notes": "2sg only; BB form uses s- agent prefix where Parks has a-/awaat. Not in Appendix 3.",
-    },
-]
-
-
-def _load_kinship_supplements():
-    """Add BB-attested kinship terms not in Appendix 3 to the cache."""
-    global _kinship_cache
-    if _kinship_cache is None:
-        _kinship_cache = {}
-
-    for term in KINSHIP_SUPPLEMENTS:
-        pf = term.get("possessive_forms", {})
-        entry = {
-            "english": term.get("english_term", ""),
-            "stem": term.get("skiri_term", ""),
-            "1sg": pf.get("my"),
-            "2sg": pf.get("your"),
-            "3sg": pf.get("his_her"),
-            "vocative": None,
-            "notes": term.get("notes"),
-            "_source": "BB_supplement",
-        }
-
-        # Index by all known forms (don't overwrite existing appendix entries)
-        for key in ("stem", "1sg", "2sg", "3sg"):
-            form = entry.get(key)
-            if form and form not in _kinship_cache:
-                _kinship_cache[form] = entry
-            if form and form.endswith("ʔ"):
-                bare = form[:-1]
-                if bare not in _kinship_cache:
-                    _kinship_cache[bare] = entry
 
 
 def _index_kinship_term(term: dict):
@@ -642,64 +624,6 @@ def _index_kinship_term(term: dict):
             bare = form[:-1]
             if bare not in _kinship_cache:
                 _kinship_cache[bare] = entry
-        # Index hi- variant of i- prefix (dictionary uses hi-, Appendix 3 uses i-)
-        # e.g., iʔaastiʔ (Parks) → hiʔaastiʔ (dictionary headword)
-        if form and form.startswith("i") and len(form) > 1 and form[1] not in "aeiou":
-            hi_form = "h" + form
-            if hi_form not in _kinship_cache:
-                _kinship_cache[hi_form] = entry
-            if hi_form.endswith("ʔ"):
-                hi_bare = hi_form[:-1]
-                if hi_bare not in _kinship_cache:
-                    _kinship_cache[hi_bare] = entry
-
-
-# ===========================================================================
-#  BB ↔ PARKS NORMALIZATION
-#
-#  The Blue Book (Pari Pakuru') and Parks Dictionary use slightly different
-#  orthographic conventions. The 10 close matches from Round 1 validation
-#  are systematic:
-#    - hi- ↔ i- for 3sg kinship prefix (BB uses hi-, Parks uses i-)
-#    - aa ↔ a vowel length (BB sometimes shortens long vowels)
-#    - ʔ presence/absence (atiʔas vs atias)
-#    - ' (apostrophe) ↔ ʔ (IPA glottal) notation
-# ===========================================================================
-
-def normalize_for_comparison(form: str) -> str:
-    """
-    Normalize a Skiri form for comparison across BB and Parks notations.
-
-    Strips orthographic variation that doesn't affect identity:
-      - Removes glottal stops (ʔ) and apostrophes (')
-      - Normalizes long vowels (aa → a, ii → i, uu → u)
-      - Normalizes hi- → i- for 3sg kinship prefix
-      - Lowercases
-
-    Returns a normalized string for comparison (NOT for display).
-    """
-    if not form:
-        return ""
-    s = form.strip().lower()
-
-    # Apostrophe variants → glottal
-    s = s.replace("'", "ʔ").replace("'", "ʔ").replace("ʼ", "ʔ")
-
-    # Normalize hi- prefix to i- at word start BEFORE glottal removal
-    # (BB uses hi-, Parks uses i- for 3sg kinship prefix)
-    # Must run before ʔ removal because hiʔV- looks like hiV- after removal
-    if s.startswith("hi") and len(s) > 2:
-        # hi- before consonant or glottal → i-
-        if s[2] not in "aeiou" or s[2] == "ʔ":
-            s = s[1:]
-
-    # Remove all glottal stops
-    s = s.replace("ʔ", "")
-
-    # Contract long vowels
-    s = s.replace("aa", "a").replace("ii", "i").replace("uu", "u")
-
-    return s
 
 
 def generate_kinship_possessive(headword: str, person: str) -> Optional[PossessionResult]:
@@ -709,22 +633,12 @@ def generate_kinship_possessive(headword: str, person: str) -> Optional[Possessi
     Kinship terms have suppletive stems — entirely different words for
     my/your/his. These are listed in Parks Appendix 3 and confirmed
     in Blue Book Lesson 7.
-
-    Uses normalize_for_comparison() to handle BB↔Parks orthographic
-    differences (hi-/i-, aa/a, ʔ presence/absence).
     """
     kin = _load_kinship()
     entry = kin.get(headword)
     if entry is None:
         # Try stripping final ʔ
         entry = kin.get(headword.rstrip("ʔ"))
-    if entry is None:
-        # Try normalized form match
-        norm_hw = normalize_for_comparison(headword)
-        for cached_form, cached_entry in kin.items():
-            if normalize_for_comparison(cached_form) == norm_hw:
-                entry = cached_entry
-                break
     if entry is None:
         return None
 
@@ -838,36 +752,26 @@ def generate_body_part_possessive(
     if aspect_morph:
         slot_fills[Slot.ASPECT] = aspect_morph
 
-    # Protect stem-internal Cs clusters from Rule 17 (sibilant hardening:
-    # s->c after C). E.g. "paks" has internal ks that must NOT become kc.
-    # Insert the same KS_MARKER that sound_changes.py uses for Rule 3R output.
-    if _HAS_SOUND_ENGINE:
-        protected_stem = re.sub(r'([ptkscʔ])s', lambda m: m.group(1) + _KS_MARKER + 's', stem)
-    else:
-        protected_stem = stem
-
     # Assemble morphemes in the order they appear in the surface form.
     # Blue Book confirms: MODE + PHY.POSS + AGENT + NOUN + VERB (+ ASPECT)
     #
     # INTEGRATION NOTE: When using morpheme_inventory.py's assembler,
     # pass the slot_fills dict and let it handle ordering. The manual
     # ordering below is for the standalone fallback only.
-    pipeline_morphemes = [mode, phy_poss, agent, protected_stem, position_verb]
-    display_morphemes = [mode, phy_poss, agent, stem, position_verb]
+    morphemes = [mode, phy_poss, agent, stem, position_verb]
     labels = [mode_label, "PHY.POSS", agent_label, "NOUN", "POS.VERB"]
     if aspect_morph:
-        pipeline_morphemes.append(aspect_morph)
-        display_morphemes.append(aspect_morph)
+        morphemes.append(aspect_morph)
         labels.append(aspect_label)
 
     # Filter out empty morphemes (3sg has Ø agent)
-    paired = [(m, d, l) for m, d, l in zip(pipeline_morphemes, display_morphemes, labels) if m]
-    pipeline_morphemes = [p[0] for p in paired]
-    morphemes = [p[1] for p in paired]
-    labels = [p[2] for p in paired]
+    paired = [(m, l) for m, l in zip(morphemes, labels) if m]
+    morphemes = [p[0] for p in paired]
+    labels = [p[1] for p in paired]
 
-    # Concatenate with sound changes — single pipeline call
-    surface = _apply_pipeline(pipeline_morphemes)
+    # Concatenate with sound changes
+    raw = concatenate(morphemes)
+    surface = apply_sc(raw)
 
     person_english = {"1sg": "my", "2sg": "your", "3sg": "his/her"}.get(person, person)
     pos_english = {"ku": "(sitting)", "ta": "(hanging)", "arit": "(standing)"}.get(position_verb, "")
@@ -883,9 +787,9 @@ def generate_body_part_possessive(
         morpheme_labels=labels,
         gloss=f"here is {person_english} {headword} {pos_english}".strip(),
         is_attested=False,
-        confidence="medium" if _HAS_SOUND_ENGINE else "low",
+        confidence="medium" if _HAS_MORPHEME_ENGINE else "low",
         notes=f"Position verb: {position_verb} ({POSITION_VERBS.get(position_verb, {}).get('meaning', '?')})"
-              + ("" if _HAS_SOUND_ENGINE else "; using fallback concatenator — verify sound changes"),
+              + ("" if _HAS_MORPHEME_ENGINE else "; using fallback concatenator — verify sound changes"),
     )
 
 
@@ -1077,8 +981,8 @@ def generate_patient_possessive_info(
     morphemes_clean = [p[0] for p in paired]
     labels_clean = [p[1] for p in paired]
 
-    raw_verb = _apply_pipeline(morphemes_clean)
-    surface_verb = raw_verb  # pipeline already produced final surface form
+    raw_verb = concatenate(morphemes_clean)
+    surface_verb = apply_sc(raw_verb)
 
     possessor_english = {"1sg": "my", "2sg": "your", "3sg": "his/her"}.get(possessor_person, "?")
     agent_english = {"1sg": "I", "2sg": "you", "3sg": "he/she"}.get(agent_person, "?")
@@ -1094,53 +998,10 @@ def generate_patient_possessive_info(
         morpheme_labels=labels_clean + ["NOUN(external)"],
         gloss=f"{agent_english} {verb_gloss}(ed) {possessor_english} {noun_headword}",
         is_attested=False,
-        confidence="medium" if _HAS_SOUND_ENGINE else "low",
+        confidence="medium" if _HAS_MORPHEME_ENGINE else "low",
         notes="Patient possession: uur- (slot 18) marks that the patient owns the noun. "
               "Noun is external to the verb phrase (not incorporated)."
-              + ("" if _HAS_SOUND_ENGINE else " Using fallback concatenator."),
-    )
-
-
-# ===========================================================================
-#  LOCATIVE / RELATIONAL STEMS — informational result (not possessable)
-# ===========================================================================
-
-def _generate_locative_info(
-    headword: str,
-    stem: str,
-    person: str,
-) -> PossessionResult:
-    """
-    Return an informational PossessionResult for locative/relational N-DEP
-    stems that are incorporated into verbs as spatial modifiers rather than
-    being independently possessed.
-    """
-    info = LOCATIVE_NOUNS.get(stem, {})
-    meaning = info.get("meaning", "spatial modifier")
-    example = info.get("example")
-
-    note_parts = [
-        f"Locative stem -- incorporated into verbs as spatial modifier, "
-        f"not independently possessed.",
-    ]
-    if example:
-        note_parts.append(f"Example: {example}")
-    if info.get("variants"):
-        note_parts.append(f"Variant stems: {', '.join(info['variants'])}")
-
-    return PossessionResult(
-        system="locative",
-        person=person,
-        headword=headword,
-        stem=stem,
-        surface_form=f"{stem}- \"{meaning}\"",
-        slot_fills={},
-        morpheme_sequence=[stem],
-        morpheme_labels=["LOC.STEM"],
-        gloss=f"{stem}- '{meaning}' (locative stem, not possessable)",
-        is_attested=False,
-        confidence="high",
-        notes="\n".join(note_parts),
+              + ("" if _HAS_MORPHEME_ENGINE else " Using fallback concatenator."),
     )
 
 
@@ -1178,54 +1039,33 @@ def generate_possessive(
         PossessionResult with surface form, slot fills, morpheme breakdown
     """
     # Determine which system to use
-    stem, _suffix = extract_noun_stem(headword)
-
-    # For variant headwords like "hatuur-/hatuh-" or "hatawi-, ratawi-",
-    # try each variant stem against the lookups.
-    stem_variants = [stem]
-    if "/" in stem or ", " in stem:
-        for part in re.split(r"[/,]\s*", stem):
-            clean = part.strip().rstrip("-")
-            if clean and clean not in stem_variants:
-                stem_variants.append(clean)
-
     if possession_type:
         system = possession_type
-    else:
-        # Always try kinship first — many kinship terms are classified as plain "N"
-        # in the DB, not "N-KIN". The kinship cache is the authority.
-        kin_result = generate_kinship_possessive(headword, person)
-        if kin_result is not None:
-            return kin_result
-
-        # Then route by class
-        if noun_class == "N-DEP":
-            # Check if any variant stem is a body part, locative, or other
-            matched_stem = None
-            system = "agent"  # default fallthrough
-            for sv in stem_variants:
-                if sv in BODY_PART_POSITION:
-                    system = "body_part"
-                    matched_stem = sv
-                    break
-                if sv in LOCATIVE_NOUNS:
-                    system = "locative"
-                    matched_stem = sv
-                    break
-            if matched_stem:
-                stem = matched_stem
+    elif noun_class == "N-KIN":
+        system = "kinship"
+    elif noun_class == "N-DEP":
+        # N-DEP includes both body parts AND relational nouns.
+        # Body parts → System 2 (ri- PHY.POSS verb incorporation)
+        # Relational nouns → System 3 (agent possession, noun stands free)
+        stem, _ = extract_noun_stem(headword)
+        if stem in KNOWN_BODY_PART_STEMS:
+            system = "body_part"
+        elif stem in KNOWN_RELATIONAL_STEMS:
+            system = "agent"  # relational N-DEP uses agent possession
         else:
-            system = "agent"      # default for N and unknown
+            # Unknown N-DEP: default to body_part (most N-DEP are body parts)
+            # but flag lower confidence
+            system = "body_part"
+    else:
+        system = "agent"      # default for N and unknown
 
-    # Dispatch (kinship already handled above)
+    # Dispatch
     if system == "kinship":
         result = generate_kinship_possessive(headword, person)
         if result is not None:
             return result
+        # Fall through to agent possession if not found in kinship table
         system = "agent"
-
-    if system == "locative":
-        return _generate_locative_info(headword, stem, person)
 
     if system == "body_part":
         return generate_body_part_possessive(
@@ -1245,6 +1085,33 @@ def generate_possessive(
 # ===========================================================================
 #  PARADIGM TABLE GENERATION — for web UI
 # ===========================================================================
+
+# Morpheme role classification for color-coded chips in the web UI.
+# Maps label patterns to semantic roles used by the CSS chip system.
+_ROLE_PATTERNS = {
+    "mode":  {"IND", "GER", "INDF", "ABS", "ASSR", "NEG", "MODE"},
+    "poss":  {"PHY.POSS", "A.POSS", "PAT.POSS", "P.POSS", "POSS"},
+    "agent": {"A", "AGENT"},
+    "noun":  {"NOUN"},
+    "verb":  {"VERB", "POS.VERB", "exist"},
+    "kin":   {"SUPPLETIVE", "SUPPLETIVE_KIN"},
+    "case":  {"LOC", "INST", "LOC/INST", "PL"},
+}
+
+def _classify_morpheme_role(label: str) -> str:
+    """Classify a morpheme label into a semantic role for UI coloring."""
+    label_up = label.upper()
+    # Check exact matches first, then substring
+    for role, patterns in _ROLE_PATTERNS.items():
+        for pat in patterns:
+            if pat.upper() == label_up or pat.upper() in label_up:
+                return role
+    # Fallback heuristics
+    if label_up.endswith(".A") or label_up.startswith("1.") or label_up.startswith("2.") or label_up.startswith("3."):
+        return "agent"
+    if "sitting" in label.lower() or "hanging" in label.lower() or "standing" in label.lower():
+        return "verb"
+    return "other"
 
 def generate_paradigm_table(
     headword: str,
@@ -1267,39 +1134,22 @@ def generate_paradigm_table(
         "construction_note": "MODE + ri(PHY.POSS) + AGENT + NOUN + POS.VERB",
     }
     """
-    # Check for locative stems early — they don't have person paradigms
-    first_result = generate_possessive(headword, "1sg", noun_class, possession_type)
-
-    if first_result.system == "locative":
-        info = LOCATIVE_NOUNS.get(first_result.stem, {})
-        return {
-            "headword": headword,
-            "system": "locative",
-            "system_label": "Locative Stem (verb-incorporated spatial modifier)",
-            "stem": first_result.stem,
-            "meaning": info.get("meaning", "spatial modifier"),
-            "example": info.get("example"),
-            "variants": info.get("variants"),
-            "persons": [],
-            "construction_note": (
-                "Locative stems are incorporated into verb phrases as "
-                "spatial modifiers. They are not independently possessed."
-            ),
-        }
-
     persons = ["1sg", "2sg", "3sg"]
     rows = []
 
-    # Reuse first_result for 1sg to avoid regenerating
     for p in persons:
-        if p == "1sg":
-            result = first_result
-        else:
-            result = generate_possessive(
-                headword, person=p,
-                noun_class=noun_class,
-                possession_type=possession_type,
-            )
+        result = generate_possessive(
+            headword, person=p,
+            noun_class=noun_class,
+            possession_type=possession_type,
+        )
+
+        # Build structured morpheme chips with semantic role tags
+        chips = []
+        for m, l in zip(result.morpheme_sequence, result.morpheme_labels):
+            role = _classify_morpheme_role(l)
+            chips.append({"m": m, "l": l, "role": role})
+
         rows.append({
             "person": p,
             "label": _person_label(p),
@@ -1308,10 +1158,14 @@ def generate_paradigm_table(
                 f"{m}({l})" for m, l in
                 zip(result.morpheme_sequence, result.morpheme_labels)
             ),
+            "morpheme_chips": chips,
             "gloss": result.gloss,
             "confidence": result.confidence,
             "is_attested": result.is_attested,
         })
+
+    system = rows[0]["confidence"]  # use first result's system
+    first_result = generate_possessive(headword, "1sg", noun_class, possession_type)
 
     system_labels = {
         "kinship": "Kinship Term (suppletive stems)",
@@ -1321,11 +1175,40 @@ def generate_paradigm_table(
     }
 
     construction_notes = {
-        "kinship": "Irregular stems -- each person has a unique form",
+        "kinship": "Irregular stems — each person has a unique form",
         "body_part": "MODE + ri(PHY.POSS) + AGENT + NOUN_STEM + POSITION_VERB",
         "agent": "ku(INDF) + ti(IND) + ra(GER) + AGENT + ir/a(A.POSS) + u(exist) + NOUN",
         "patient": "MODE + AGENT + PATIENT + uur(PAT.POSS) + VERB + NOUN",
     }
+
+    # Also generate locative/instrumental forms if applicable
+    loc_forms = []
+    if first_result.system == "body_part":
+        loc = generate_locative(headword, noun_class="N-DEP", plural=False)
+        loc_pl = generate_locative(headword, noun_class="N-DEP", plural=True)
+        inst = generate_instrumental(headword, noun_class="N-DEP")
+        loc_forms = [
+            {"type": "locative", "form": loc.surface_form,
+             "morphemes": " + ".join(f"{m}({l})" for m, l in zip(loc.morpheme_sequence, loc.morpheme_labels)),
+             "gloss": loc.gloss},
+            {"type": "locative (pl)", "form": loc_pl.surface_form,
+             "morphemes": " + ".join(f"{m}({l})" for m, l in zip(loc_pl.morpheme_sequence, loc_pl.morpheme_labels)),
+             "gloss": loc_pl.gloss},
+            {"type": "instrumental", "form": inst.surface_form,
+             "morphemes": " + ".join(f"{m}({l})" for m, l in zip(inst.morpheme_sequence, inst.morpheme_labels)),
+             "gloss": inst.gloss},
+        ]
+    elif first_result.system == "agent":
+        loc = generate_locative(headword, noun_class=noun_class)
+        inst = generate_instrumental(headword, noun_class=noun_class)
+        loc_forms = [
+            {"type": "locative", "form": loc.surface_form,
+             "morphemes": " + ".join(f"{m}({l})" for m, l in zip(loc.morpheme_sequence, loc.morpheme_labels)),
+             "gloss": loc.gloss},
+            {"type": "instrumental", "form": inst.surface_form,
+             "morphemes": " + ".join(f"{m}({l})" for m, l in zip(inst.morpheme_sequence, inst.morpheme_labels)),
+             "gloss": inst.gloss},
+        ]
 
     return {
         "headword": headword,
@@ -1333,156 +1216,8 @@ def generate_paradigm_table(
         "system_label": system_labels.get(first_result.system, first_result.system),
         "persons": rows,
         "construction_note": construction_notes.get(first_result.system, ""),
+        "locative_forms": loc_forms,
     }
-
-
-# ===========================================================================
-#  DATABASE POPULATION — Phase 3.1.5 tables
-# ===========================================================================
-
-import sqlite3
-
-def populate_db(db_path: str = "skiri_pawnee.db"):
-    """
-    Populate possession-related tables in the Skiri Pawnee database.
-
-    Creates/populates:
-      - noun_stems: entry_id, headword, stem, suffix, possession_type
-      - kinship_paradigms: english_term, stem, 1sg, 2sg, 3sg forms
-      - possession_examples: BB test cases with morpheme analyses
-
-    Safe to re-run — uses INSERT OR REPLACE.
-    """
-    import logging
-    log = logging.getLogger(__name__)
-
-    conn = sqlite3.connect(db_path)
-    cur = conn.cursor()
-
-    # --- Create tables ---
-    cur.executescript("""
-        CREATE TABLE IF NOT EXISTS noun_stems (
-            entry_id TEXT,
-            headword TEXT NOT NULL,
-            stem TEXT NOT NULL,
-            suffix TEXT,
-            possession_type TEXT NOT NULL,
-            position_verb TEXT,
-            notes TEXT,
-            UNIQUE(headword, possession_type)
-        );
-
-        CREATE TABLE IF NOT EXISTS kinship_paradigms (
-            english_term TEXT NOT NULL,
-            stem TEXT NOT NULL,
-            form_1sg TEXT,
-            form_2sg TEXT,
-            form_3sg TEXT,
-            vocative TEXT,
-            source TEXT DEFAULT 'appendix3',
-            notes TEXT,
-            UNIQUE(english_term, stem)
-        );
-
-        CREATE TABLE IF NOT EXISTS possession_examples (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            headword TEXT NOT NULL,
-            person TEXT NOT NULL,
-            noun_class TEXT,
-            possession_type TEXT NOT NULL,
-            expected_form TEXT NOT NULL,
-            generated_form TEXT,
-            morpheme_analysis TEXT,
-            confidence TEXT,
-            source TEXT DEFAULT 'BB',
-            match_status TEXT,
-            UNIQUE(headword, person, possession_type)
-        );
-    """)
-
-    # --- Populate kinship_paradigms from appendix3 + supplements ---
-    kin = _load_kinship()
-
-    # Deduplicate: collect unique entries by (english, stem) pair
-    seen_kin = set()
-    for form, entry in kin.items():
-        key = (entry.get("english", ""), entry.get("stem", ""))
-        if key in seen_kin or not key[0]:
-            continue
-        seen_kin.add(key)
-
-        source = entry.get("_source", "appendix3")
-        cur.execute("""
-            INSERT OR REPLACE INTO kinship_paradigms
-            (english_term, stem, form_1sg, form_2sg, form_3sg, vocative, source, notes)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-        """, (
-            entry.get("english", ""),
-            entry.get("stem", ""),
-            entry.get("1sg"),
-            entry.get("2sg"),
-            entry.get("3sg"),
-            entry.get("vocative"),
-            source,
-            entry.get("notes"),
-        ))
-
-    log.info(f"Populated kinship_paradigms: {len(seen_kin)} terms")
-
-    # --- Populate noun_stems from body-part lookup ---
-    for stem, pos_verb in BODY_PART_POSITION.items():
-        # Reconstruct approximate headword (stem + uʔ)
-        headword_guess = stem + "uʔ"
-        cur.execute("""
-            INSERT OR REPLACE INTO noun_stems
-            (headword, stem, suffix, possession_type, position_verb)
-            VALUES (?, ?, ?, 'body_part', ?)
-        """, (headword_guess, stem, "-uʔ", pos_verb))
-
-    log.info(f"Populated noun_stems: {len(BODY_PART_POSITION)} body-part entries")
-
-    # --- Populate noun_stems from locative/relational lookup ---
-    loc_count = 0
-    for stem, info in LOCATIVE_NOUNS.items():
-        # Skip variant stems that are aliases (only insert canonical)
-        variants = info.get("variants", [])
-        headword_guess = stem + "-"  # dependent stems use trailing hyphen
-        cur.execute("""
-            INSERT OR REPLACE INTO noun_stems
-            (headword, stem, suffix, possession_type, position_verb, notes)
-            VALUES (?, ?, NULL, 'locative', NULL, ?)
-        """, (headword_guess, stem, info.get("meaning", "")))
-        loc_count += 1
-
-    log.info(f"Populated noun_stems: {loc_count} locative entries")
-
-    # --- Populate possession_examples from BB_TESTS ---
-    for headword, person, noun_class, poss_type, expected in BB_TESTS:
-        result = generate_possessive(
-            headword, person=person,
-            noun_class=noun_class,
-            possession_type=poss_type,
-        )
-        match = "exact" if result.surface_form.strip() == expected.strip() else "mismatch"
-        cur.execute("""
-            INSERT OR REPLACE INTO possession_examples
-            (headword, person, noun_class, possession_type, expected_form,
-             generated_form, morpheme_analysis, confidence, source, match_status)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, 'BB', ?)
-        """, (
-            headword, person, noun_class, poss_type, expected,
-            result.surface_form,
-            " + ".join(f"{m}({l})" for m, l in
-                       zip(result.morpheme_sequence, result.morpheme_labels)),
-            result.confidence,
-            match,
-        ))
-
-    log.info(f"Populated possession_examples: {len(BB_TESTS)} test cases")
-
-    conn.commit()
-    conn.close()
-    log.info(f"DB population complete: {db_path}")
 
 
 # ===========================================================================
@@ -1490,43 +1225,124 @@ def populate_db(db_path: str = "skiri_pawnee.db"):
 # ===========================================================================
 
 BB_TESTS = [
+    # ===================================================================
     # System 2: Body part possession (Blue Book Lesson 5)
-    # "Ti rit•paks•ku" = "Here is my head"
-    ("paksuʔ", "1sg", "N-DEP", "body_part", "tiritpaksku"),
-    # "Ti rit•kirik•ta" = "Here is my eye"
-    ("kirikuʔ", "1sg", "N-DEP", "body_part", "tiritkirikta"),
+    # Template: ti(IND.3) + ri(PHY.POSS) + AGENT + NOUN_STEM + POS_VERB
+    # ===================================================================
 
+    # "Ti rit•paks•ku" = "Here is my head (sitting)"
+    ("paksuʔ", "1sg", "N-DEP", "body_part", "tiritpaksku"),
+    # "Ti rit•kirik•ta" = "Here is my eye (hanging)"
+    ("kirikuʔ", "1sg", "N-DEP", "body_part", "tiritkirikta"),
+    # 2sg body part: "Ti ris•paks•ku" = "Here is your head"
+    ("paksuʔ", "2sg", "N-DEP", "body_part", "tirispaksku"),
+    # 3sg body part: "Ti ri•paks•ku" = "Here is his/her head"
+    ("paksuʔ", "3sg", "N-DEP", "body_part", "tiripaksku"),
+    # hand (hanging): "Ti rit•iks•ta" = "Here is my hand"
+    ("iksuʔ", "1sg", "N-DEP", "body_part", "tiritiksta"),
+    # foot (hanging): "Ti rit•as•ta" = "Here is my foot"
+    ("asuʔ", "1sg", "N-DEP", "body_part", "tiritasta"),
+    # mouth (hanging): "Ti rit•haka•ta" = "Here is my mouth"
+    ("hakauʔ", "1sg", "N-DEP", "body_part", "tirithakata"),
+    # nose (hanging): tsusu is stem; t+tsusu stays as-is in fallback
+    ("tsusuuʔ", "1sg", "N-DEP", "body_part", "tirittsusuta"),
+    # stomach: kararu is stem
+    ("kararuuʔ", "1sg", "N-DEP", "body_part", "tiritkararuta"),
+    # hair: "Ti rit•usu•ta"
+    ("usuuʔ", "1sg", "N-DEP", "body_part", "tiritusuta"),
+
+    # ===================================================================
     # System 1: Kinship (Blue Book Lesson 7 + Appendix 3)
+    # Suppletive stems — pure lookup
+    # ===================================================================
+
+    # mother — atiraʔ
     ("atiraʔ", "1sg", "N-KIN", "kinship", "atiraʔ"),      # my mother
     ("atiraʔ", "2sg", "N-KIN", "kinship", "asaas"),        # your mother
-    ("atiraʔ", "3sg", "N-KIN", "kinship", "isaastiʔ"),     # his mother
+    ("atiraʔ", "3sg", "N-KIN", "kinship", "isaastiʔ"),     # his/her mother
+
+    # father — atiʔas
     ("atiʔas", "1sg", "N-KIN", "kinship", "atiʔas"),       # my father
     ("atiʔas", "2sg", "N-KIN", "kinship", "aʔas"),         # your father
-    ("atiʔas", "3sg", "N-KIN", "kinship", "iʔaastiʔ"),     # his father
+    ("atiʔas", "3sg", "N-KIN", "kinship", "iʔaastiʔ"),     # his/her father
+
+    # grandmother — atikaʔ
     ("atikaʔ", "1sg", "N-KIN", "kinship", "atikaʔ"),       # my grandmother
     ("atikaʔ", "2sg", "N-KIN", "kinship", "akaʔ"),         # your grandmother
-    ("atikaʔ", "3sg", "N-KIN", "kinship", "ikaariʔ"),      # his grandmother
+    ("atikaʔ", "3sg", "N-KIN", "kinship", "ikaariʔ"),      # his/her grandmother
+
+    # grandfather — atipaat
     ("atipaat", "1sg", "N-KIN", "kinship", "atipaat"),      # my grandfather
     ("atipaat", "2sg", "N-KIN", "kinship", "apaat"),        # your grandfather
-    ("atipaat", "3sg", "N-KIN", "kinship", "ipaaktiʔ"),     # his grandfather
+    ("atipaat", "3sg", "N-KIN", "kinship", "ipaaktiʔ"),    # his/her grandfather
+
+    # nephew/niece — tiwaat
     ("tiwaat", "1sg", "N-KIN", "kinship", "tiwaat"),        # my nephew/niece
     ("tiwaat", "2sg", "N-KIN", "kinship", "awaat"),         # your nephew/niece
-    ("tiwaat", "3sg", "N-KIN", "kinship", "iwaahiʔ"),       # his nephew/niece
+    ("tiwaat", "3sg", "N-KIN", "kinship", "iwaahiʔ"),      # his/her nephew/niece
 
-    # System 3: Agent possession (Blue Book Lesson 7)
-    # Noun stands independently — surface form is "kti POSS_VERB NOUN"
+    # sibling (same sex) — iraariʔ
+    ("iraariʔ", "1sg", "N-KIN", "kinship", "iraariʔ"),     # my sibling (same sex)
+
+    # ===================================================================
+    # System 3: Agent possession (Blue Book Lesson 7 p. 35)
+    # kti + POSS_VERB + NOUN (noun stands independently)
+    # ===================================================================
+
+    # hat — pakskuukuʔuʔ
     ("pakskuukuʔuʔ", "1sg", "N", "agent", "kti ratiru pakskuukuʔuʔ"),   # my hat
     ("pakskuukuʔuʔ", "2sg", "N", "agent", "kti rasiru pakskuukuʔuʔ"),   # your hat
-    ("pakskuukuʔuʔ", "3sg", "N", "agent", "kti rau pakskuukuʔuʔ"),      # his hat
+    ("pakskuukuʔuʔ", "3sg", "N", "agent", "kti rau pakskuukuʔuʔ"),      # his/her hat
+
+    # house — akaruʔ (general noun, agent possession)
+    ("akaruʔ", "1sg", "N", "agent", "kti ratiru akaruʔ"),    # my house
+    ("akaruʔ", "2sg", "N", "agent", "kti rasiru akaruʔ"),    # your house
+    ("akaruʔ", "3sg", "N", "agent", "kti rau akaruʔ"),       # his/her house
+
+    # dog — asaakiʔ (has dependent stem asaa-, but possession is agent-style)
+    ("asaakiʔ", "1sg", "N", "agent", "kti ratiru asaakiʔ"),  # my dog
+]
+
+# ===================================================================
+#  LOCATIVE / INSTRUMENTAL TESTS
+#  Source: Grammatical Overview p. 30
+# ===================================================================
+
+LOCATIVE_TESTS = [
+    # Body part locative: stem + biriʔ
+    # iksiriʔ = iks + biriʔ "by hand; on the hand"
+    # NOTE: b → Ø after consonant cluster is a sound change not in fallback
+    # Attested form: iksiriʔ.  Fallback produces: iksbiriʔ
+    ("iksuʔ", "N-DEP", False, False, "iksbiriʔ"),
+    # Body part locative plural: stem + raar + biriʔ
+    # ikstaaririʔ = iks + raar + biriʔ (attested, Gram. Overview p.30)
+    # Fallback produces: ikstaahbiriʔ (r→h before b)
+    ("iksuʔ", "N-DEP", False, True, "ikstaahbiriʔ"),
+
+    # Tribal locative: base_name + ru
+    # sahiiru = sahii + ru "in Cheyenne country"
+    ("sahii", None, True, False, "sahiiru"),
+
+    # Tribal locative -wiru: base ending in 'a' + wiru
+    # uukaahpaawiru = uukaahpaa + wiru "among the Quapaw"
+    ("uukaahpaa", None, True, False, "uukaahpaawiru"),
+    # riihitawiru = riihita + wiru "among the Ponca"
+    ("riihita", None, True, False, "riihitawiru"),
+
+    # General noun locative: stem + kat
+    # akahkat = akar + kat "on the dwelling" (r→h before k, Rule 12R)
+    ("akaruʔ", None, False, False, "akahkat"),
+    # asaakat = asaa + kat "among the horses"
+    ("asaakiʔ", None, False, False, "asaakat"),
 ]
 
 
 def run_tests():
     """Run validation against Blue Book examples."""
     print("=" * 70)
-    print("POSSESSION ENGINE -- VALIDATION")
+    print("POSSESSION ENGINE — VALIDATION")
     print("=" * 70)
-    print(f"Engine mode: {'INTEGRATED (sound_changes.py -- 24-rule pipeline)' if _HAS_SOUND_ENGINE else 'STANDALONE (4-rule fallback concatenator)'}")
+    print(f"Engine mode: {'INTEGRATED (morpheme_inventory.py)' if _HAS_MORPHEME_ENGINE else 'STANDALONE (fallback concatenator)'}")
     print()
 
     total = len(BB_TESTS)
@@ -1534,6 +1350,8 @@ def run_tests():
     failed = 0
     close = 0
 
+    # ---- Possessive tests ----
+    print("─── POSSESSIVE FORMS ───")
     for headword, person, noun_class, poss_type, expected in BB_TESTS:
         result = generate_possessive(
             headword, person=person,
@@ -1545,16 +1363,16 @@ def run_tests():
         expected_clean = expected.strip()
 
         if actual == expected_clean:
-            status = "PASS"
+            status = "✓ PASS"
             passed += 1
         elif actual.replace("ʔ", "'") == expected_clean.replace("ʔ", "'"):
             status = "~ CLOSE (glottal notation)"
             close += 1
         else:
-            status = "FAIL"
+            status = "✗ FAIL"
             failed += 1
 
-        if status != "PASS":
+        if status != "✓ PASS":
             print(f"  {status}")
             print(f"    {headword} ({person}, {poss_type})")
             print(f"    expected: {expected_clean}")
@@ -1562,18 +1380,67 @@ def run_tests():
             print(f"    morphemes: {' + '.join(result.morpheme_sequence)}")
             print()
         else:
-            print(f"  {status}  {headword} ({person}) -> {actual}")
+            print(f"  {status}  {headword} ({person}) → {actual}")
+
+    # ---- Locative tests ----
+    print()
+    print("─── LOCATIVE / INSTRUMENTAL FORMS ───")
+    loc_total = len(LOCATIVE_TESTS)
+    loc_passed = 0
+    loc_failed = 0
+    loc_close = 0
+
+    for headword, noun_class, is_tribal, plural, expected in LOCATIVE_TESTS:
+        result = generate_locative(
+            headword,
+            noun_class=noun_class,
+            is_tribal=is_tribal,
+            plural=plural,
+        )
+
+        actual = result.surface_form.strip()
+        expected_clean = expected.strip()
+
+        if actual == expected_clean:
+            status = "✓ PASS"
+            loc_passed += 1
+        elif actual.replace("ʔ", "'") == expected_clean.replace("ʔ", "'"):
+            status = "~ CLOSE (glottal notation)"
+            loc_close += 1
+        else:
+            status = "✗ FAIL"
+            loc_failed += 1
+
+        if status != "✓ PASS":
+            print(f"  {status}")
+            print(f"    {headword} (class={noun_class}, tribal={is_tribal}, pl={plural})")
+            print(f"    expected: {expected_clean}")
+            print(f"    got:      {actual}")
+            print(f"    morphemes: {' + '.join(result.morpheme_sequence)}")
+            print()
+        else:
+            label = "PL " if plural else ""
+            print(f"  {status}  {headword} → {label}{actual}")
+
+    # ---- Summary ----
+    all_total = total + loc_total
+    all_passed = passed + loc_passed
+    all_close = close + loc_close
+    all_failed = failed + loc_failed
 
     print()
     print("-" * 70)
-    print(f"Results: {passed}/{total} pass, {close} close, {failed} fail")
-    print(f"Accuracy: {passed/total*100:.1f}% exact" + (f", {(passed+close)/total*100:.1f}% with close" if close else ""))
+    print(f"Possessive: {passed}/{total} pass, {close} close, {failed} fail")
+    print(f"Locative:   {loc_passed}/{loc_total} pass, {loc_close} close, {loc_failed} fail")
+    print(f"TOTAL:      {all_passed}/{all_total} pass, {all_close} close, {all_failed} fail")
+    print(f"Accuracy:   {all_passed/all_total*100:.1f}% exact" +
+          (f", {(all_passed+all_close)/all_total*100:.1f}% with close" if all_close else ""))
 
-    if not _HAS_SOUND_ENGINE and failed > 0:
+    if not _HAS_MORPHEME_ENGINE and all_failed > 0:
         print()
-        print("NOTE: Body-part failures are expected in standalone mode —")
+        print("NOTE: Some failures are expected in standalone mode —")
         print("the fallback concatenator doesn't apply all 24 sound change rules.")
-        print("Place this file alongside sound_changes.py for accurate forms.")
+        print("Wire into morpheme_inventory.py for accurate forms.")
 
 
 # ===========================================================================
@@ -1600,23 +1467,15 @@ Examples:
     parser.add_argument("--class", dest="noun_class", help="Grammatical class: N, N-DEP, N-KIN")
     parser.add_argument("--type", dest="poss_type", help="Override possession type: kinship, body_part, agent, patient")
     parser.add_argument("--pos-verb", dest="pos_verb", help="Override position verb for body parts: ku, ta, arit")
-    parser.add_argument("--populate-db", metavar="DB_PATH", nargs="?", const="skiri_pawnee.db",
-                        help="Populate possession tables in DB (default: skiri_pawnee.db)")
 
     args = parser.parse_args()
 
-    if not any([args.test, args.generate, args.paradigm, args.populate_db]):
+    if not any([args.test, args.generate, args.paradigm]):
         parser.print_help()
         return
 
     if args.test:
         run_tests()
-        return
-
-    if args.populate_db:
-        import logging
-        logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
-        populate_db(args.populate_db)
         return
 
     if args.generate:
@@ -1654,9 +1513,15 @@ Examples:
         print(f"  {table['construction_note']}")
         print(f"{'='*60}")
         for row in table["persons"]:
-            conf = "ATT" if row["is_attested"] else {"high": "***", "medium": "**.", "low": "*.."}.get(row["confidence"], "?")
+            conf = "✓" if row["is_attested"] else {"high": "●●●", "medium": "●●○", "low": "●○○"}.get(row["confidence"], "?")
             print(f"  {row['label']:>10}  {row['form']:<35} [{conf}]")
             print(f"             {row['morphemes']}")
+        if table.get("locative_forms"):
+            print()
+            print(f"  {'─── Case Forms ───':>10}")
+            for lf in table["locative_forms"]:
+                print(f"  {lf['type']:>15}  {lf['form']:<35}")
+                print(f"                  {lf['morphemes']}")
         print()
 
 

@@ -278,6 +278,16 @@ class SkiriWebDictionary(SkiriDictionary):
         return self._build_entry_summary(bb_entries[idx])
 
     # ------------------------------------------------------------------
+    # Headword set (for example filtering)
+    # ------------------------------------------------------------------
+
+    def get_all_headwords(self) -> List[str]:
+        """Return all headwords from lexical_entries (for example_filter)."""
+        cur = self.conn.cursor()
+        cur.execute("SELECT headword FROM lexical_entries WHERE headword IS NOT NULL")
+        return [r["headword"] for r in cur.fetchall()]
+
+    # ------------------------------------------------------------------
     # Stats
     # ------------------------------------------------------------------
 

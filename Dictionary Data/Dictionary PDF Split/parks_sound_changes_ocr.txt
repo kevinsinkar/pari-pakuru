@@ -1,0 +1,409 @@
+3
+Major Sound Changes
+
+The basic meaningful elements, or morphemes, that comprise Skiri words generally
+have a single basic (or underlying) form. However, when they are combined with
+other morphemes to form words that are actually spoken, sound changes occur that
+fuse those morphemes into fully formed words. Often the changes are small, altering
+a consonant or vowel of a morpheme, but just as frequently the changes can be more
+extensive, sometimes resulting in contractions that mask the underlying identities of
+morpheme combinations. The user must be aware of these sound changes in order to
+understand word formation in Skiri and, more importantly, to create new words
+from the information provided in dictionary entries.
+
+Presented here is a summary of the major Skiri phonological processes that occur
+when combining morphemes to create new words. There are two types of processes,
+or sound rules: general rules that apply to all instances of specified sound sequences,
+no matter what the constituent morphemes are; and restricted rules that apply only
+to sequences of specified morphemes, which are highly restricted in number
+
+Vowels: Restricted Rules
+
+There are five restricted rules that apply to vowel sequences in specific morpheme
+sequences.
+
+Rule 1R. Dominant i. There are seven morpheme combinations in which a final i or
+ii in the preceding morpheme and the initial w of the following morpheme contract
+to i or it. Those combinations are the following:
+
+Preceding Prefixes Following Prefix or Resulting
+Stem-Initial Vowel Contraction
+rii- ‘assertive mode (ASSR)’ -uks- ‘aorist (AOR)? riiks-
+[ tt- ‘indicative mode (IND.3.A)’ [ t27-
+ii- ‘subyunctive mode (SUBJ.3.A)’ “u.. deem it-
+| ri- ‘contingent mode (CONT.3.A)’ L rii-
+[ -i- ‘sequential (SEQ)’ [ -dir-
+-ir- ‘preverb (PREV)’ -uuy- ‘preverb (PREV)’ -tir-
+L acir- ‘inclusive dual agent (INCL.DU.A)’ L -actir-
+
+19
+20
+
+MAJOR SOUND CHANGES
+
+Thus, the restricted rule:
+Lit+u > uu
+Examples:
+
+tithura ‘he is alone’ (< ti- IND + O- 3.A + uburah ‘be alone’ + -G PERF)
+
+taciihii ‘you and I are good’ (< ta- IND.1/2.A + aciiy- 1.DU.IN.A + uur- PREV +
+hiir ‘be good’ + -@ PERF)
+
+Rule 2R. Dominant a. Although the vowel sequence i + a contracts to i, in certain
+morpheme sequences the combination results in a; thus,
+
+i1+ara
+
+This rule occurs when any of the following modal prefixes is the first element and
+one of the a-dominant morphemes is the second element in the contraction:
+
+Modal Prefixes a-Dominant Morphemes
+ti- indicative mode, third person agent a- second person patient (2.P)
+(IND) a __ preverb (PREV); third person agt. possessor
+ri- contingent mode, third person agent (3.POss.A)
+(CONT) aca- inclusive dual patient (1D.IN.P)
+kuus...i- potential mode, third person agent ar- evidential proper (EV)
+(POT.1)
+it- subjunctive mode, third person agent
+(SUBJ)
+
+Examples of the preceding combinations are the following (with contracting vowels
+
+in boldface):
+
+tapiru® ‘he whipped you’ < ti- IND + @- 3.A + a- 2.P + piru ‘whip’ + -O
+PERF
+
+kusaakiraawa? ‘you will forget’ < kuus- POT.1/3A + a- 2.P + i- SEQ +
+kivaawaahc ‘be sick’ + -O PERF
+
+wiitaruutasitit ‘it would happen’ < wii- ‘now’ + ti- IND + O-3.A + ar- EV +
+ut- PREV + asitik ‘happen’ + -O PERF
+
+sitaawa*a ‘they (DU) should have come’ < si- DU + i# SUBJ + D-3.A + a-
+PREV + wa- DIST + a ‘come’ + -O SUB.3
+
+Rule 3R. -his ‘perfective’ Reduction. The suffix -his ‘perfective (PERF)’ reduces to s
+after verb stems with a final k; thus,
+
+VR) sey + -bis — ks
+MAJOR SOUND CHANGES
+
+21
+
+An example of this rule is:
+
+haks- ‘pass by (PERF)’ < hak ‘pass by’ + -his PERF, as in tihaksta ‘he is going
+to pass by’ < tz IND + © 3.A + hak ‘pass by’ + -his PERF + -ta INT
+
+Rule 4R. Stem-final Vocalic Reduplication. This rule, which applies to a class of
+descriptive verbs—approximately half of all descriptives—in their non-subordinate
+forms is
+
+V.(V;,) > V«V)eV; 7 C _ C + & (+ NON-SUB)
+
+tipahbaa “at ‘it is red’ < ti: IND + @ 3.A + pahaat ‘be red’ + D ‘be’; cf.
+irtirapahaatu ‘the one that is red’
+
+tihuraahtarari*it ‘the ground is burned off? < ti- IND + @ 3.4 + huraar-
+‘ground’ + tararit ‘be burned, scorched’ + -@ ‘be’; cf. iriiratarariitu ‘where it
+is scorched’
+
+Vowels: Unrestricted Rules
+
+Two or more contiguous vowels, either across a morpheme boundary or within a
+morpheme, contract, except when either of two conditions occurs:
+
+(1) the second of two vowels is long, or
+(2) two vowels are in word-final position or preceding a final consonant.
+
+Vowel contraction takes place when there is a sequence of a short or long vowel
+followed by a short vowel before one or two consonants. Thus,
+
+V,V.V; + V > VV /_ C(C)\V
+
+(where V, represents a vowel that is identical to another so-marked vowel in a rule
+and V,V; represents a long vowel).
+
+Rule 5. Same-vowel Contractions. When two identical vowels are contiguous, they
+contract to an identical long vowel. The first vowel in the sequence may be short or
+long. Thus,
+
+V(V) + Vi > VY;
+
+Rule 6. Contractions of Any Vowel + u: u-Domination. In a sequence of two
+vowels, in which the first one may be long or short, and where any vowel in the
+sequence is u“, the vowels contract to a long uu.
+
+V, VV, + 1
+uu) + V
+
+uu / _ C(C)V
+MAJOR SOUND CHANGES
+
+Examples are:
+
+tuurictisat ‘he is tired’ < ti- IND + @-3.A + @-3.P + uur- PREV + iciisat ‘be
+tired’ + -@ PERF; tuuriciisat ‘you are tired’ < ti- IND + @-3.A + a-2.P + uur-
+PREV + iciisat ‘be tired’ + -O PERF
+
+ku?euutkaksaa ‘if he could holler for him’ < ku- INDF + 77 SUBJ + G- 3.A + ut-
+BEN + kaksaa ‘holler, yell’ + -@ sus.4
+
+Rule 7. Contractions of i and a. In combinations of 7 or ii followed by a or a
+combination of a or aa followed by i, the vowels contract to i. (The result of
+contractions of 7 and a in South Band Pawnee and Arikara is ee.)
+
+i” + a
+
+da +i ii /  C(OV
+
+For example,
+
+tutkue ‘he hears’ < ti- IND + @-3.A + atka®u ‘hear’ + -O PERF
+
+Consonants: Restricted Rules
+
+There are four commonly occurring restricted rules for consonants. Those rules are
+the following.
+
+Rule 8R. Assibilation of raar-. This rule applies to the final consonant of raar-
+‘plural; iterative’ when followed by a stem-initial t. The r + t sequence results in a
+contraction to c, as follows:
+
+r+t— > ¢c/ raar+t.. deny
+
+Example:
+
+tiracakasis ‘they are close together’ < ti- IND + O- 3.A+ raar- PL.INDV.A +
+takasis ‘be together’ + -O PERF
+
+Rule 9R. Final-s Loss Rule. Certain nouns and suffixes that end in s regularly lose
+that s when it is in word-final position, but retain it when another morpheme follows
+the stem in derivation or inflection. The rule is:
+
+sra@O/_#
+
+A noun illustrating final-s loss is the form kubkus- ‘swine, pig; pork’, which in
+independent form is always kubku but is kubkus in compounds, as in kubkuska it ‘salt
+pork’ and kubkuskaasu? ‘ham’. A common example of this rule is the aspectual suffix
+-:hus/-hus ‘imperfective (IMPF)’ that loses its final s when the suffix is word final; for
+example, tikitkaahu® ‘he is drinking’ (< ti- IND + @- 3.4 + kitkaa ‘drink’ + -:hus
+IMPF).
+MAJOR SOUND CHANGES
+
+23
+
+Rule 10R. Prefixal Final-r Loss. Two prefixes, ir- ‘preverb (PREV); third person
+transitive agent plural (PL.3.A); obviative (OBV)’ and acir- ‘first person inclusive dual
+agent (1D.IN.A)’ lose their final y when they contract with any of the three prefixes,
+uur- ‘preverb (PREV); patient possessor (P.POSS)’; ut- ‘preverb (PREV); dative/
+benefactive (BEN)’; and wks- ‘aorist (AOR); jussive (JUSS)’. When final 7 of i7- and acir-
+is lost, the resulting final 7 of the two forms becomes dominant in the resulting
+contractions with initial u of the preceding three morphemes. Example:
+
+tattiturikataku ‘I am carrying it under my arm’ < ta- IND.1/2.A + t- 1.A + ir-
+PREV + ut- PREV + urikatakus ‘carry under one’s arm’ + -O PERF
+
+Rule 11R. wt- Affrication Rule. Final t of the prefix ut- ‘preverb (PREV); dative/
+benefactive (DAT/BEN)’ affricates to c when followed by i ‘sequential (SEQ)’. For
+example,
+
+Ruustuci °a ‘I will do it? < kuus... i- POT.1/3.A + t- 1.A + ut- PREV + aar ‘do’
++ -O PERF; cp. tatuuta ‘I did it’? < ta IND.1/2.A + t 1.A + ut- PREV + aar
+‘do’ + -O PERF
+Thus, ;
+ut- +> uc / _é
+In Skiri z- SEQ does not dominate over a following u in -uks AOR; JUSS, as it does in
+South Band. For example,
+
+sucuksa ‘do it!’ < t+ CONT.1/2.A + s- 2.A + ut- PREV + i SEQ + uks- JUSS +
+aar ‘do’ + -O PERF; cp. South Band suciksa “do it!’
+
+Rule 12R. Prefixal r-Laryngealization Rule. This rule applies only to sequences of r
++ rin which the preceding r is the final sound of one of the following two evidential
+
+prefixes:
+titr- ‘inferential (INFR)’
+ar- ‘evidential (proper) (EV)’
+
+The final 7 of these prefixes changes to ) when it precedes an r-initial morpheme.
+
+Thus,
+
+ra>h/_r
+
+Examples are:
+abicat ‘he went? < ar- EV + ri- CONT.3.A + D- 3.4 + at ‘go’ + -O PERF
+tithakuutit ‘he must have killed it’? < tiir- INF + ra- ABS + O- 3.A + kuutik
+
+‘kill’ + -O PERF
+
+Note that this rule must be applied before the more general Consonantal
+Degemination Rule below, which reduces r + r sequences to a single 7. It also must
+precede the 7-Reduction Rule below, which deletes the y of an ) + 7 sequence.
+24
+
+MAJOR SOUND CHANGES
+
+Consonants: Unrestricted Rules
+
+The following rules apply generally to consonants when the specified conditions
+
+occur.
+
+Rule 13. t-Laryngealization Rule. The stop t becomes laryngeal / when it precedes r.
+The rule can be symbolized thus:
+
+tr h/_r
+
+Examples are:
+
+tahbuuku? ‘T am making it? < ta IND.1/2.A + t- 1.A+ raeuk ‘make’ + -:hus
+IMPF
+
+pabaaha*uk ‘to redden’ < pahaat ‘be red’ + ra*uk ‘make; CAUS’
+
+Rule 14. Metathesis Rule. When underlying 7 is followed by h, the two sounds
+metathesize; hence
+
+r+h — br
+
+However, the sequence hr never occurs in spoken (or surface) forms in Skiri (as it
+does in South Band) because an hr sequence always reduces to /, as in the following
+rule. Note that the three sequential rules here—t-Laryngealization, Metathesis, and
+Sonorant Reduction—must be applied in the order given; that is, ¢-Laryngealization
+must be applied first and Sonorant Reduction last. An example of this rule is:
+
+tuubii ‘he is good’ < ti- IND + @- 3.A + uur- PREV + hiir ‘be good’ + -B
+PERF; to obtain tuuhii, the following Sonorant r-Reduction Rule must be
+applied.
+
+Rule 15. Sonorant Reduction Rule. This rule reduces the cluster hr to 4; hence
+r+ @GB/ _hb
+
+tahahuukat ‘I took it inside’ < ta- IND.1/2.A + t- 1.A + @- + rahuukat ‘take
+inside’ + -O PERF
+
+Rule 16. 4-Loss Rule. Laryngeal 4 is lost in several environments, one of which is
+when it is preceded by a consonant. Thus,
+
+hrw7OG/Cc_
+taturaas ‘I found it’? < ta- IND.1/2.A + t-1.A + huras ‘find’ + -O PERF
+
+Loss of also occurs when it precedes either a single word-final consonant or a two-
+consonant cluster. Thus,
+
+h + @/ _ CACC
+MAJOR SOUND CHANGES
+
+25
+
+abibt ‘be fat’: taatahit ‘I am fat’? < ta- IND.1/2.A + t 1.A+ ahiht ‘be fat’ + -O
+PERE; ahitki ‘fat’ < ahiht ‘be fat’ + -kis DIM; ahitkubku ‘bacon’ < ahiht ‘be fat’
++ kubkus ‘swine’
+
+tiiwacpiitit ‘he finally sat down’ < ti- IND + O-3.A + awahc- ‘finally’ + wiitik
+‘sit down’ + -O PERF
+
+Rule 17. Sibilant Hardening Rule. The sibilant s becomes c when it occurs after any
+consonant. Thus,
+
+sa>ceo/C
+
+sa ‘be lying’: tibcawaa ‘they are lying (there)’ < ti- IND + i7- 3.PL.A + sa ‘be
+lying’ + -waa DIST + -O PERF
+
+sakuriwihc (uur...) ‘sun to come out’: tubcakuriwihcue® ‘the sun is coming
+out’ < ti- IND + @- 1.4 + uur- PREV + sakuriwihc + -:hus IMPF
+
+Rule 18. Sibilant Loss Rule. When c immediately follows the two-consonant cluster
+ks, the s of the cluster is dropped. Thus,
+
+stra G/k_c
+
+sucukcii ‘be energetic!” < i- CONT.1/2A + s- 2.A + ut- PREV + i SEQ + uks-
+JUSS + ciir ‘be energetic’ + -O (-uk ‘be’)
+
+Rule 19. Alveolar Dissimilation Rule. A common underlying sequence across
+morpheme boundaries is t + ¢. In such a sequence the preceding ¢ changes to c, as in
+the following examples:
+
+tacta°uut ‘I stole it? < ta- IND.1/2.A + t- 1.A + ta@uut ‘steal’ + -O PERF
+
+kiiwa *uctaakaa ‘white sage’ < kiiwa ut ‘sage’ + taakaar ‘be white’
+The less common underlying sequence t + c metathesizes, resulting in ct, as in:
+
+tactat ‘I shot it’? < ta- IND.1/2A + t- 1.A + cak ‘shoot’ + -@ PERF
+
+wiituctactaaka ‘the plant is sprouting’ < wii- ‘now’ + ti: IND + @-3.A + ut-
+PREV + tat- ‘stalk; plant’ + caaka ‘be protruding’ + -O PERF
+
+Rule 20. Consonant Degemination Rule. When two identical consonants come
+together, one is lost, resulting in a single (short) consonant. This rule applies only
+after the consonantal changes specified by previous rules. Hence it operates for
+identical sequences of only two phonemes, r and k. Thus,
+
+Examples of this rule are the following:
+26
+
+MAJOR SOUND CHANGES
+
+tiraraahu® ‘they are ruined’ < ti IND + @ 3.A + raar- PLINDV.A + raahur
+‘be ruined’ + -O PERF
+
+tuurarii% ‘it is a mark’ < ti- IND + @- 3.A + uur- PREV + rariir ‘be marked’
++ -O PERF
+
+tuutakaksawaa ‘he called them’ < ti- IND + @- 3.A + ut- BEN + ak- 3.P.AN.P
++ kaksaa- ‘call’ + -waa DIST + -@ PERF
+
+Rule 21. r-Stopping Rule. The sonorant r becomes the voiceless stop ¢t when
+occurring after an obstruent. Thus,
+
+r —+ t / Obs. _
+kiriktaahkaa ‘wear eyeglasses’ < kirik- ‘eye’ + raar- PL + kaa ‘be inside’
+
+suksttisaapu ‘stake it!’ < i CONT.1/2.A + s- 2.A + uks- JUSS + riisaapuh +
+‘stake, stake down’ + -O PERF
+
+iraacti® ‘my brother (female speaker)’ < i- 1.POSS.A + raac- ‘brother’ + -rii
+1.POSS.B
+
+Note that ¢ is not included among the obstruents to which this rule applies since t has
+already been changed to ) when it precedes r (see rule above); that is, the combination
+t + r changes to hr (which then reduces to 4).
+
+Rule 22. Labial Glide Loss. Although the details of this process are more complex
+than presented here, in verb derivation a w in a preceding syllable is generally lost
+when the following morpheme begins in w. Thus,
+
+wreOB/V _V+wV(V)...
+
+awiwiita (ir...) ‘to bend over’: taa*iwiiea? ‘he bent over’ < ti- IND + @-3.A
++ a- PREV + awiwiia ‘bend over’ + -O PERF
+
+katawiwarik ‘swallow’: tatkata*iwarit ‘I swallowed it? < ta- IND.1/2.A + t- 1.A
++ katawiwarik ‘swallow’ + -O PERF
+Rule 23. Final r Loss. Word-final r is always dropped. Thus,
+r+ G/_ #
+witatuutaa ‘I have done it? < wii- ‘now’ + ta- IND.1/2.A + t- 1.A + ut- PREV
+
++ aar + ‘do’ + -O PERF; cf. wiitatuutaari? ‘I am doing it’
+
+Rule 24. Variants of c. The phoneme c has two phonetic variants. One is [ts], which
+occurs before consonants and in word-final position; the other is [¢], which occurs
+before vowels. Thus,
+MAJOR SOUND CHANGES 27
+
+[ts] / _ C,#
+Cc
+[c] / _V
+Examples are as follows:
+
+capaat [Cepaat] ‘woman’ cpasaast [tspesaasi] “Osage Woman’
+custit [¢ustit] ‘old woman’ askuc [askuts] ‘prairie dog’
+ckuraa°u? [tskuraa*u?] ‘female doctor; tikieic [tiki*its] ‘it’s watery’
+nurse’
+

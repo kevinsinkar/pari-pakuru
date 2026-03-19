@@ -1,0 +1,147 @@
+======================================================================
+STEM EXTRACTION — FORM_2 PREDICTION ACCURACY
+======================================================================
+Total verbs tested:  2211
+Exact matches:       1363 (61.6%)
+Close (glottal):     120
+Miss:                728
+Accuracy (exact):    61.6%
+Accuracy (w/ close): 67.1%
+
+──────────────────────────────────────────────────────────────────────
+Category                       Total  Exact      %  Close   Miss
+──────────────────────────────────────────────────────────────────────
+  (1)|none                       434    306  70.5%      4    124
+  (4)|none                       414    285  68.8%     24    105
+  (u)|none                       385    173  44.9%     58    154
+  (3)|none                       120     98  81.7%      0     22
+  (1)|(ut...)                    101     48  47.5%      0     53
+  (3)|(ir...)                     94     38  40.4%     20     36
+  (4)|(ut...)                     81     48  59.3%      6     27
+  (wi)|none                       80     54  67.5%      0     26
+  (1-i)|none                      54     48  88.9%      0      6
+  (1)|(uur...)                    47     35  74.5%      0     12
+  (2-i)|none                      44     37  84.1%      0      7
+  (2)|none                        42     32  76.2%      1      9
+  (1-a)|(uur...)                  32     25  78.1%      0      7
+  (4)|(uur...)                    28     25  89.3%      1      2
+  (wi)|(ut...)                    27     15  55.6%      0     12
+  (u)|(ut...)                     24      8  33.3%      3     13
+  (3)|(uur...)                    16     13  81.2%      0      3
+  (u)|(uur...)                    15      9  60.0%      1      5
+  (3)|(ir...ut...)                13      0   0.0%      0     13
+  (2-i)|(ut...)                   13      9  69.2%      0      4
+  (u)|(ir...)                     12      6  50.0%      1      5
+  (1-a)|none                      12      6  50.0%      0      6
+  (wi)|(ir...ut...)               10      0   0.0%      0     10
+  (1-i)|(ut...)                   10      6  60.0%      0      4
+  (3)|(ut...)                      9      4  44.4%      0      5
+  (wi)|(uur...)                    7      6  85.7%      0      1
+  (wi)|(ir...)                     7      6  85.7%      0      1
+  (2)|(uur...)                     7      0   0.0%      0      7
+  (2-i)|(uur...)                   6      6 100.0%      0      0
+  (2)|(ut...)                      5      5 100.0%      0      0
+  (4)|(ir...)                      5      1  20.0%      0      4
+
+──────────────────────────────────────────────────────────────────────
+SAMPLE MISMATCHES (first 30)
+──────────────────────────────────────────────────────────────────────
+  kaac                      class=         prev=
+    attested:  tikaa’ac
+    predicted: tikaac
+    prefix=ti  preverbs=[]
+
+  kaacuuh                   class=(1)      prev=
+    attested:  tikaacu’
+    predicted: tikaacuuʔ
+    prefix=ti  preverbs=[]
+
+  aahkacaraʔuk              class=(3)      prev=(ut...)
+    attested:  witituutaahkacaruʔ
+    predicted: wituutaahkacaruʔ
+    prefix=wituut  preverbs=['ut']
+
+  aahkarahwaasar            class=(1)      prev=[+ ruu-, i-]
+    attested:  ruutiihkarahwaasa
+    predicted: tiʔaahkarahwaasa
+    prefix=ti  preverbs=[]
+
+  aahkarahwaasariitik       class=(4)      prev=
+    attested:  tiihkarahwaasariitit
+    predicted: tiʔaahkarahwaasariitit
+    prefix=ti  preverbs=[]
+
+  acikstaʔuk                class=(3)      prev=
+    attested:  wititiicikstuʔ
+    predicted: tiicikstuʔ
+    prefix=ti  preverbs=[]
+
+  acikstaahiis              class=(u)      prev=
+    attested:  tiicikstahiis
+    predicted: tiicikstaahiis
+    prefix=ti  preverbs=[]
+
+  acikstiihac               class=(4)      prev=
+    attested:  wititiicikstiihac
+    predicted: tiicikstiihac
+    prefix=ti  preverbs=[]
+
+  aciksuhuriihac            class=(4)      prev=
+    attested:  wititiiciksuhuriihac
+    predicted: tiiciksuhuriihac
+    prefix=ti  preverbs=[]
+
+  aciksuhuriwaar [+ neg.]   class=(1-a)    prev=(uur...)
+    attested:  kaakuuraciksuhuriwaa
+    predicted: tuuraciksuhuriwaa
+    prefix=tuur  preverbs=['uur']
+
+  aciksuuwicaks             class=         prev=(ir...)
+    attested:  taaciksuuwicaks
+    predicted: taciksuuwicaks
+    prefix=ta  preverbs=['ir']
+
+  aciksuuwicakstaʔuk        class=(3)      prev=(ir...)
+    attested:  taaciksuuwicakstuʔ
+    predicted: taciksuuwicakstuʔ
+    prefix=ta  preverbs=['ir']
+
+  ackurus                   class=         prev=(ir...)
+    attested:  taackurus
+    predicted: tackurus
+    prefix=ta  preverbs=['ir']
+
+  acuuʔa                    class=(3)      prev=(ir...)
+    attested:  taacuuʔaʔ
+    predicted: tacuuʔaʔ
+    prefix=ta  preverbs=['ir']
+
+  ahitkarusik               class=(1)      prev=
+    attested:  wititiihitkarusit
+    predicted: tiihitkarusit
+    prefix=ti  preverbs=[]
+
+  ak [+ (ku-, ruu-, irii-), i-] class=(2)      prev=
+    attested:  kutiiʔat
+    predicted: tiit
+    prefix=ti  preverbs=[]
+
+  aktaku                    class=         prev=(ir...)
+    attested:  taaktakuʔ
+    predicted: taktakuʔ
+    prefix=ta  preverbs=['ir']
+
+  aktakuksaar               class=(1-i)    prev=(ir...)
+    attested:  taaktakuksaa
+    predicted: taktakuksaa
+    prefix=ta  preverbs=['ir']
+
+  aktakuraah                class=(1)      prev=
+    attested:  siwititiiktakuraa
+    predicted: tiiktakuraa
+    prefix=ti  preverbs=[]
+
+  arasiskatiit              class=         prev=
+    attested:  tiirasiskatiiʔit
+    predicted: tiirasiskatiit
+    prefix=ti  preverbs=[]

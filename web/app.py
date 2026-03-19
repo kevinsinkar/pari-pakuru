@@ -30,6 +30,95 @@ app.config["DATABASE"] = DATABASE
 
 
 # ------------------------------------------------------------------
+# Headword set cache (for example filtering)
+# ------------------------------------------------------------------
+
+_headword_set_cache = None
+
+def _get_headword_set() -> set:
+    """Lazily build and cache the normalized headword set for example filtering."""
+    global _headword_set_cache
+    if _headword_set_cache is not None:
+        return _headword_set_cache
+
+    from scripts.example_filter import _normalize_for_match
+    db = SkiriWebDictionary(DATABASE)
+    try:
+        raw_headwords = db.get_all_headwords()
+        _headword_set_cache = set()
+        for hw in raw_headwords:
+            norm = _normalize_for_match(hw)
+            _headword_set_cache.add(norm)
+            # Also add without trailing glottal for fuzzy matching
+            if norm.endswith("'"):
+                _headword_set_cache.add(norm[:-1])
+    finally:
+        db.close()
+    return _headword_set_cache
+
+
+def _filter_entry_examples(entry_data: dict) -> dict:
+    """
+    Filter examples and BB attestations on an entry to remove
+    false substring matches (e.g., 'kirike' pollution on 'kiri').
+
+    Modifies entry_data in place and returns it.
+    """
+    from scripts.example_filter import matches_headword
+    from scripts.possession_engine import extract_noun_stem
+
+    hw_set = _get_headword_set()
+    entry = entry_data.get("entry")
+    if not entry:
+        return entry_data
+
+    headword = entry.headword if hasattr(entry, 'headword') else ""
+    if not headword:
+        return entry_data
+
+    stem, _ = extract_noun_stem(headword)
+
+    # --- Filter dictionary examples ---
+    if hasattr(entry, 'examples') and entry.examples:
+        filtered = []
+        for ex in entry.examples:
+            skiri_text = ex.skiri_text if hasattr(ex, 'skiri_text') else ""
+            if not skiri_text:
+                filtered.append(ex)  # keep examples with no Skiri text
+                continue
+            if matches_headword(headword, skiri_text, hw_set, stem=stem):
+                filtered.append(ex)
+        entry.examples = filtered
+
+    # --- Filter Blue Book attestations ---
+    bb_info = entry_data.get("bb_info")
+    if bb_info and bb_info.get("attestations"):
+        filtered_bb = []
+        for att in bb_info["attestations"]:
+            bb_form = att.get("bb_skiri_form", "")
+            context = att.get("context_type", "")
+
+            # Always keep vocabulary listings (BASIC_WORDS, ADDITIONAL_WORDS)
+            # — these are pre-matched by the BB extraction pipeline
+            if context in ("BASIC_WORDS", "ADDITIONAL_WORDS"):
+                filtered_bb.append(att)
+                continue
+
+            # For dialogues, phrases, grammar examples: check the Skiri form
+            if bb_form and matches_headword(headword, bb_form, hw_set, stem=stem):
+                filtered_bb.append(att)
+                continue
+
+            # If bb_form is empty or very short, keep it (metadata row)
+            if not bb_form or len(bb_form) < 3:
+                filtered_bb.append(att)
+
+        bb_info["attestations"] = filtered_bb
+
+    return entry_data
+
+
+# ------------------------------------------------------------------
 # DB lifecycle
 # ------------------------------------------------------------------
 
@@ -240,6 +329,10 @@ def entry_detail(entry_id):
     data = db.build_full_entry(entry_id)
     if not data:
         abort(404)
+
+    # Filter out false-positive examples and BB refs (e.g., kirike ≠ kiri)
+    _filter_entry_examples(data)
+
     return render_template("entry.html", **data)
 
 
