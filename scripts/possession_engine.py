@@ -642,6 +642,16 @@ def _index_kinship_term(term: dict):
             bare = form[:-1]
             if bare not in _kinship_cache:
                 _kinship_cache[bare] = entry
+        # Index hi- variant of i- prefix (dictionary uses hi-, Appendix 3 uses i-)
+        # e.g., iʔaastiʔ (Parks) → hiʔaastiʔ (dictionary headword)
+        if form and form.startswith("i") and len(form) > 1 and form[1] not in "aeiou":
+            hi_form = "h" + form
+            if hi_form not in _kinship_cache:
+                _kinship_cache[hi_form] = entry
+            if hi_form.endswith("ʔ"):
+                hi_bare = hi_form[:-1]
+                if hi_bare not in _kinship_cache:
+                    _kinship_cache[hi_bare] = entry
 
 
 # ===========================================================================
@@ -675,13 +685,16 @@ def normalize_for_comparison(form: str) -> str:
     # Apostrophe variants → glottal
     s = s.replace("'", "ʔ").replace("'", "ʔ").replace("ʼ", "ʔ")
 
+    # Normalize hi- prefix to i- at word start BEFORE glottal removal
+    # (BB uses hi-, Parks uses i- for 3sg kinship prefix)
+    # Must run before ʔ removal because hiʔV- looks like hiV- after removal
+    if s.startswith("hi") and len(s) > 2:
+        # hi- before consonant or glottal → i-
+        if s[2] not in "aeiou" or s[2] == "ʔ":
+            s = s[1:]
+
     # Remove all glottal stops
     s = s.replace("ʔ", "")
-
-    # Normalize hi- prefix to i- at word start (BB vs Parks 3sg kinship)
-    if s.startswith("hi") and len(s) > 2 and s[2] not in "aeiou":
-        # hi- before consonant → i- (this is the 3sg kinship pattern)
-        s = s[1:]
 
     # Contract long vowels
     s = s.replace("aa", "a").replace("ii", "i").replace("uu", "u")

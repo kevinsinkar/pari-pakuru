@@ -459,11 +459,11 @@ Tasks remaining (priority order — revised 2026-03-15):
 - [ ] VD(u) descriptive verb stem extraction (1% exact in dict validation)
 - [ ] VT(3) Class 3 ut- fusion logic (0% exact in dict validation)
 
-### 🔲 Phase 3.1.5 — Noun Possession Morphology *(NEW — detailed 2026-03-15)*
+### 🟡 Phase 3.1.5 — Noun Possession Morphology *(NEW — detailed 2026-03-15)*
 **Priority:** 🔴 High (#1 on roadmap — learners encounter this in Blue Book Lessons 1–5; zero coverage currently)
 **Depends on:** Phase 3.1 (morpheme slot system — reuses pronominal prefixes), Appendix 3 kinship data (already extracted), Phase 2.3 sound changes (for stem concatenation)
 **Effort:** Medium-Large
-**Script:** `scripts/noun_possession.py`
+**Script:** `scripts/noun_possession.py` (extraction/classification), `scripts/possession_engine.py` (generation engine)
 **Output:** `extracted_data/noun_possession_catalog.json`, `reports/phase_3_1_5_noun_possession.txt`
 
 Skiri has **four distinct possession systems**, not one. Each applies to different noun classes with different morphological mechanisms. The grammar engine needs to know which system to use for any given noun, then generate the correct form.
@@ -517,6 +517,9 @@ Tasks:
 - [ ] **Populate DB tables** — `noun_stems` (entry_id, stem, suffix, possession_type), `kinship_paradigms` (1sg/2sg/3sg forms), `possession_examples` (BB test cases)
 - [ ] **Integrate into web UI** — "My / Your / His" toggle on noun entry cards; show morpheme breakdown of generated possessive form; mark all generated forms as COMPUTED with confidence tier (see Phase 4.3)
 - [ ] **Handle N-DEP relational nouns** — non-body dependent nouns (e.g., relational terms); determine whether they follow body-part or agent-possession pattern (may require per-entry annotation)
+
+**Bug fixes:**
+- [x] **Kinship dispatch fix (2026-03-15):** `possession_engine.py` dispatcher now tries kinship lookup first for any noun, regardless of `noun_class`. Core kinship terms (atiraʔ, atiʔas, atikaʔ, tiwaat) are classified as plain "N" in the DB, not "N-KIN", so the old `N-KIN` gate routed them to agent possession. The kinship cache is now the authority. Tests 20/20.
 
 ### 🔲 Phase 3.1.6 — Function Word & Particle Inventory *(NEW)*
 **Priority:** Medium (needed for sentence construction; these are the glue words)
@@ -607,20 +610,24 @@ flashcards, and live search. Mobile-responsive via Pico CSS framework.
 - [x] Bidirectional search: English -> Skiri (FTS on glosses + english_index), Skiri -> English (headword, normalized_form, paradigmatic forms)
 - [x] Entry detail view: headword, pronunciation (IPA + simplified), glosses, etymology with morpheme breakdown, paradigmatic forms, full conjugation tables, examples, cognates, cross-references, derived stems, Blue Book attestations, semantic tags
 - [x] Morpheme breakdown display: etymology constituent elements shown as morpheme table (prefix/stem/suffix labels from Parks)
-- [x] Fuzzy matching: LIKE pattern matching + Levenshtein distance (edit distance 1-2) on normalized forms for learner misspellings
-- [x] Filter sidebar: semantic category tags, grammatical class (on search results page)
+- [x] Fuzzy matching: LIKE pattern matching + Levenshtein distance (edit distance 1-2) on normalized forms for learner misspellings; aggressive fuzzy (strip glottals, collapse long vowels, normalize c/ts/ch) for learner-friendly lookups
+- [x] Filter sidebar: semantic category tags, grammatical class, verb class (on search results page)
 - [x] Blue Book attestation badge on entries and search result cards
 - [x] Mobile-responsive design (Pico CSS framework, responsive grid, touch-friendly flashcards)
 - [x] Mark generated vs. attested forms: "Attested (Parks Dictionary)" / "Attested (Appendix 1)" labels on paradigm tables
 - [x] Browse by semantic tag and grammatical class with paginated results
 - [x] Weekly flashcard study system: 19 categories, ~300 curated beginner words, flip-card UI with keyboard nav and shuffle
 - [x] Word-of-the-day on homepage with dictionary stats
+- [x] Search result re-ranking: exact matches first, BB-attested boosted, data completeness considered; example FTS matches surfaced with snippets
+- [x] JSON API endpoint (`/api/search`) for external consumers
+- [x] Detected language returned from search for UI display
 - [x] Deployment: `requirements.txt` provided; run with `python -m web.app`
 
 **Routes:**
 - `/` — Homepage with stats and random word
 - `/search?q=...` — Full search with filters
 - `/search/partial?q=...` — HTMX live search endpoint
+- `/api/search?q=...` — JSON API endpoint (limit capped at 100)
 - `/entry/<entry_id>` — Full entry detail
 - `/browse` — Browse by tag/class
 - `/browse/tag/<tag>` — Entries by semantic tag
@@ -751,6 +758,7 @@ These principles guide all user-facing features:
 | `retry_failed_grammar.py` | `scripts/` | Phase 3.1: retry failed grammar pages with plain-text Gemini or Claude API | Yes (GEMINI_API_KEY or ANTHROPIC_API_KEY) |
 | `merge_grammar_retries.py` | `scripts/` | Phase 3.1: merge recovered grammar page data into grammatical_overview.json | No |
 | `noun_possession.py` | `scripts/` | Phase 3.1.5: noun possession morphology — extract nouns, classify possession systems, build kinship paradigms, generate possessive forms, validate against BB (--extract, --report, --validate, --db, --generate HEADWORD) | No |
+| `possession_engine.py` | `scripts/` | Phase 3.1.5: possession form generation engine — dispatches to kinship/body_part/agent/locative/patient systems, integrates sound changes (--test, --paradigm HEADWORD) | No |
 
 ## Environment
 
