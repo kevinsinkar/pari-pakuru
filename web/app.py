@@ -23,12 +23,31 @@ sys.path.insert(0, PROJECT_ROOT)
 
 from web.db import SkiriWebDictionary
 from web.search import search_combined
+from web.search_ranking import rank_results
 from web.flashcards import generate_all_sets
 
 DATABASE = os.path.join(PROJECT_ROOT, "skiri_pawnee.db")
 
 app = Flask(__name__)
 app.config["DATABASE"] = DATABASE
+
+
+def _rerank(db, results, query):
+    """Re-rank EntrySummary results using search_ranking.rank_results()."""
+    if not results or not query:
+        return results
+    as_dicts = [
+        {
+            "entry_id": r.entry_id,
+            "headword": r.headword,
+            "grammatical_class": r.grammatical_class,
+            "blue_book_attested": r.blue_book_attested,
+        }
+        for r in results
+    ]
+    ranked = rank_results(db.conn, as_dicts, query)
+    by_id = {r.entry_id: r for r in results}
+    return [by_id[d["entry_id"]] for d in ranked if d["entry_id"] in by_id]
 
 
 # ------------------------------------------------------------------
@@ -243,6 +262,7 @@ def search_page():
         db, query, lang=lang, gram_class=gram_class, tag=tag,
         verb_class=verb_class, page=page, per_page=per_page,
     )
+    results = _rerank(db, results, query)
     total_pages = math.ceil(total / per_page) if total else 0
 
     return render_template(
@@ -288,6 +308,7 @@ def search_partial():
         db, query, lang=lang, gram_class=gram_class, tag=tag,
         verb_class=verb_class, page=page, per_page=20,
     )
+    results = _rerank(db, results, query)
     total_pages = math.ceil(total / 20) if total else 0
 
     return render_template(
@@ -326,6 +347,7 @@ def api_search():
         db, query, lang=lang, gram_class=gram_class, tag=tag,
         verb_class=verb_class, page=page, per_page=limit,
     )
+    results = _rerank(db, results, query)
 
     return jsonify({
         "query": query,
