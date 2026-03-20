@@ -11,9 +11,7 @@ __pycache__/
 *_checkpoint.json
 tag_review_queue.json
 
-# SQLite temp files
+# SQLite database (binary — upload separately to PythonAnywhere)
+*.db
 *.db-shm
 *.db-wal
-
-# Local DB copies
-DB/
