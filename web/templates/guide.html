@@ -29,9 +29,9 @@
             <tr>
                 {% if spelling_pref == 'parks' %}
                 <th>Parks</th>
-                <th>Respelling</th>
+                <th>Simplified</th>
                 {% else %}
-                <th>Respelling</th>
+                <th>Simplified</th>
                 <th>Parks</th>
                 {% endif %}
                 <th>English Approximation</th>
@@ -39,29 +39,129 @@
             </tr>
         </thead>
         <tbody>
-            {% macro consonant_row(parks, simplified, approx, notes='') %}
+            {% if spelling_pref == 'parks' %}
             <tr>
-                {% if spelling_pref == 'parks' %}
-                <td class="ipa guide-primary-col">{{ parks }}</td>
-                <td class="pronunciation guide-secondary-col">{{ simplified }}</td>
-                {% else %}
-                <td class="pronunciation guide-primary-col">{{ simplified }}</td>
-                <td class="ipa guide-secondary-col">{{ parks }}</td>
-                {% endif %}
-                <td>{{ approx }}</td>
-                <td>{{ notes }}</td>
+                <td class="ipa guide-primary-col">p</td>
+                <td class="guide-secondary-col">p</td>
+                <td><strong>sp</strong>ot (unaspirated, like the p in <em>spin</em>)</td>
+                <td>No puff of air</td>
             </tr>
-            {% endmacro %}
-
-            {{ consonant_row('p', 'p', '<strong>sp</strong>ot (unaspirated, like the p in <em>spin</em>)', 'No puff of air') }}
-            {{ consonant_row('t', 't', '<strong>st</strong>op (unaspirated, like the t in <em>start</em>)', 'No puff of air') }}
-            {{ consonant_row('k', 'k', '<strong>sk</strong>ate (unaspirated, like the k in <em>skin</em>)', 'No puff of air') }}
-            {{ consonant_row('c', 'ts', 'ca<strong>ts</strong>up, pa<strong>tch</strong>', 'A single sound, like <em>ts</em> said quickly') }}
-            {{ consonant_row('s', 's', '<strong>s</strong>it, <strong>s</strong>uper', '') }}
-            {{ consonant_row('r', 'd', 'Spanish <em>pero</em> &mdash; a soft, quick tap', 'Like a very soft <strong>d</strong> in <em>ready</em> said fast; sometimes sounds like <em>n</em> or <em>l</em>') }}
-            {{ consonant_row('w', 'w', '<strong>w</strong>all, <strong>w</strong>atch', 'Same sound as the vowel <strong>u</strong> when between consonants') }}
-            {{ consonant_row('h', 'h', '<strong>h</strong>it, <strong>h</strong>arm', 'Always pronounced in Skiri; silent at word start in South Band') }}
-            {{ consonant_row('&#660;', "'", 'The catch in <em>uh-oh</em>', 'Glottal stop &mdash; a brief closure of the throat. At word end, the vowel is cut short with a slight echo') }}
+            <tr>
+                <td class="ipa guide-primary-col">t</td>
+                <td class="guide-secondary-col">t</td>
+                <td><strong>st</strong>op (unaspirated, like the t in <em>start</em>)</td>
+                <td>No puff of air</td>
+            </tr>
+            <tr>
+                <td class="ipa guide-primary-col">k</td>
+                <td class="guide-secondary-col">k</td>
+                <td><strong>sk</strong>ate (unaspirated, like the k in <em>skin</em>)</td>
+                <td>No puff of air</td>
+            </tr>
+            <tr>
+                <td class="ipa guide-primary-col">c</td>
+                <td class="guide-secondary-col">c</td>
+                <td>ca<strong>ts</strong>up &mdash; a "ts" sound</td>
+                <td>A single sound, like <em>ts</em> said quickly</td>
+            </tr>
+            <tr>
+                <td class="ipa guide-primary-col">&#x010D; (c-caron)</td>
+                <td class="guide-secondary-col">&#x010D;</td>
+                <td><strong>ch</strong>urch, <strong>ch</strong>in</td>
+                <td>Only some words; Parks phonetic form shows /t&#x0283;/</td>
+            </tr>
+            <tr>
+                <td class="ipa guide-primary-col">s</td>
+                <td class="guide-secondary-col">s</td>
+                <td><strong>s</strong>it, <strong>s</strong>uper</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="ipa guide-primary-col">r</td>
+                <td class="guide-secondary-col">r</td>
+                <td>Spanish <em>pero</em> &mdash; a soft, quick tap</td>
+                <td>Like a very soft <strong>d</strong> in <em>ready</em> said fast; sometimes sounds like <em>n</em> or <em>l</em></td>
+            </tr>
+            <tr>
+                <td class="ipa guide-primary-col">w</td>
+                <td class="guide-secondary-col">w</td>
+                <td><strong>w</strong>all, <strong>w</strong>atch</td>
+                <td>Same sound as the vowel <strong>u</strong> when between consonants</td>
+            </tr>
+            <tr>
+                <td class="ipa guide-primary-col">h</td>
+                <td class="guide-secondary-col">h</td>
+                <td><strong>h</strong>it, <strong>h</strong>arm</td>
+                <td>Always pronounced in Skiri; silent at word start in South Band</td>
+            </tr>
+            <tr>
+                <td class="ipa guide-primary-col">&#x0294;</td>
+                <td class="guide-secondary-col">'</td>
+                <td>The catch in <em>uh-oh</em></td>
+                <td>Glottal stop &mdash; a brief closure of the throat. At word end, the vowel is cut short with a slight echo</td>
+            </tr>
+            {% else %}
+            <tr>
+                <td class="guide-primary-col">p</td>
+                <td class="ipa guide-secondary-col">p</td>
+                <td><strong>sp</strong>ot (unaspirated, like the p in <em>spin</em>)</td>
+                <td>No puff of air</td>
+            </tr>
+            <tr>
+                <td class="guide-primary-col">t</td>
+                <td class="ipa guide-secondary-col">t</td>
+                <td><strong>st</strong>op (unaspirated, like the t in <em>start</em>)</td>
+                <td>No puff of air</td>
+            </tr>
+            <tr>
+                <td class="guide-primary-col">k</td>
+                <td class="ipa guide-secondary-col">k</td>
+                <td><strong>sk</strong>ate (unaspirated, like the k in <em>skin</em>)</td>
+                <td>No puff of air</td>
+            </tr>
+            <tr>
+                <td class="guide-primary-col">c</td>
+                <td class="ipa guide-secondary-col">c</td>
+                <td>ca<strong>ts</strong>up &mdash; a "ts" sound</td>
+                <td>A single sound, like <em>ts</em> said quickly</td>
+            </tr>
+            <tr>
+                <td class="guide-primary-col">&#x010D;</td>
+                <td class="ipa guide-secondary-col">&#x010D; (c-caron)</td>
+                <td><strong>ch</strong>urch, <strong>ch</strong>in</td>
+                <td>Only some words; Parks phonetic form shows /t&#x0283;/</td>
+            </tr>
+            <tr>
+                <td class="guide-primary-col">s</td>
+                <td class="ipa guide-secondary-col">s</td>
+                <td><strong>s</strong>it, <strong>s</strong>uper</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="guide-primary-col">r</td>
+                <td class="ipa guide-secondary-col">r</td>
+                <td>Spanish <em>pero</em> &mdash; a soft, quick tap</td>
+                <td>Like a very soft <strong>d</strong> in <em>ready</em> said fast; sometimes sounds like <em>n</em> or <em>l</em></td>
+            </tr>
+            <tr>
+                <td class="guide-primary-col">w</td>
+                <td class="ipa guide-secondary-col">w</td>
+                <td><strong>w</strong>all, <strong>w</strong>atch</td>
+                <td>Same sound as the vowel <strong>u</strong> when between consonants</td>
+            </tr>
+            <tr>
+                <td class="guide-primary-col">h</td>
+                <td class="ipa guide-secondary-col">h</td>
+                <td><strong>h</strong>it, <strong>h</strong>arm</td>
+                <td>Always pronounced in Skiri; silent at word start in South Band</td>
+            </tr>
+            <tr>
+                <td class="guide-primary-col">'</td>
+                <td class="ipa guide-secondary-col">&#x0294;</td>
+                <td>The catch in <em>uh-oh</em></td>
+                <td>Glottal stop &mdash; a brief closure of the throat. At word end, the vowel is cut short with a slight echo</td>
+            </tr>
+            {% endif %}
         </tbody>
     </table>
     </div>
@@ -73,6 +173,13 @@
         Pawnee has four basic vowel qualities. Each can be <strong>short</strong>
         or <strong>long</strong> (held about twice as long). Vowel length changes
         meaning, so pay attention to it.
+        {% if spelling_pref != 'parks' %}
+        In the simplified spelling, long vowels use a <strong>circumflex</strong>:
+        &acirc;, &icirc;, &ucirc;.
+        {% else %}
+        In Parks notation, long vowels are simply <strong>doubled</strong>:
+        aa, ii, uu.
+        {% endif %}
     </p>
 
     <div class="guide-table-wrap">
@@ -81,38 +188,94 @@
             <tr>
                 {% if spelling_pref == 'parks' %}
                 <th>Parks</th>
-                <th>Respelling</th>
+                <th>Simplified</th>
                 {% else %}
-                <th>Respelling</th>
+                <th>Simplified</th>
                 <th>Parks</th>
                 {% endif %}
-                <th>English Approximation</th>
+                <th>Sounds Like</th>
                 <th>Mouth Position</th>
             </tr>
         </thead>
         <tbody>
-            {% macro vowel_row(parks, simplified, approx, position) %}
-            <tr>
-                {% if spelling_pref == 'parks' %}
-                <td class="ipa guide-primary-col">{{ parks }}</td>
-                <td class="pronunciation guide-secondary-col">{{ simplified }}</td>
-                {% else %}
-                <td class="pronunciation guide-primary-col">{{ simplified }}</td>
-                <td class="ipa guide-secondary-col">{{ parks }}</td>
-                {% endif %}
-                <td>{{ approx }}</td>
-                <td>{{ position }}</td>
-            </tr>
-            {% endmacro %}
-
             <tr class="guide-section-row"><td colspan="4"><strong>Short Vowels</strong></td></tr>
-            {{ vowel_row('a', 'uh', 'p<strong>u</strong>tt, <strong>a</strong>bove', 'Open &amp; relaxed &mdash; mouth wide, tongue low') }}
-            {{ vowel_row('i', 'ih', 'p<strong>i</strong>t, h<strong>i</strong>t', 'Close &mdash; tongue humped high in front') }}
-            {{ vowel_row('u', 'oo', 'p<strong>u</strong>sh, b<strong>oo</strong>t', 'Round &mdash; lips pursed and rounded') }}
+            {% if spelling_pref == 'parks' %}
+            <tr>
+                <td class="ipa guide-primary-col">a</td>
+                <td class="guide-secondary-col">a</td>
+                <td>p<strong>u</strong>tt, <strong>a</strong>bove</td>
+                <td>Open &amp; relaxed &mdash; mouth wide, tongue low</td>
+            </tr>
+            <tr>
+                <td class="ipa guide-primary-col">i</td>
+                <td class="guide-secondary-col">i</td>
+                <td>p<strong>i</strong>t, h<strong>i</strong>t</td>
+                <td>Close &mdash; tongue humped high in front</td>
+            </tr>
+            <tr>
+                <td class="ipa guide-primary-col">u</td>
+                <td class="guide-secondary-col">u</td>
+                <td>p<strong>u</strong>sh, b<strong>oo</strong>t</td>
+                <td>Round &mdash; lips pursed and rounded</td>
+            </tr>
             <tr class="guide-section-row"><td colspan="4"><strong>Long Vowels</strong> (held longer)</td></tr>
-            {{ vowel_row('aa', 'ah', 'f<strong>a</strong>ther', 'Same as <strong>a</strong> but held longer') }}
-            {{ vowel_row('ii', 'ee', 'w<strong>ee</strong>d, mach<strong>i</strong>ne', 'Same as <strong>i</strong> but held longer') }}
-            {{ vowel_row('uu', 'oo', 'r<strong>u</strong>de, r<strong>u</strong>ler', 'Same as <strong>u</strong> but held longer') }}
+            <tr>
+                <td class="ipa guide-primary-col">aa</td>
+                <td class="guide-secondary-col">&acirc;</td>
+                <td>f<strong>a</strong>ther</td>
+                <td>Same as <strong>a</strong> but held longer</td>
+            </tr>
+            <tr>
+                <td class="ipa guide-primary-col">ii</td>
+                <td class="guide-secondary-col">&icirc;</td>
+                <td>w<strong>ee</strong>d, mach<strong>i</strong>ne</td>
+                <td>Same as <strong>i</strong> but held longer</td>
+            </tr>
+            <tr>
+                <td class="ipa guide-primary-col">uu</td>
+                <td class="guide-secondary-col">&ucirc;</td>
+                <td>r<strong>u</strong>de, r<strong>u</strong>ler</td>
+                <td>Same as <strong>u</strong> but held longer</td>
+            </tr>
+            {% else %}
+            <tr>
+                <td class="guide-primary-col">a</td>
+                <td class="ipa guide-secondary-col">a</td>
+                <td>p<strong>u</strong>tt, <strong>a</strong>bove</td>
+                <td>Open &amp; relaxed &mdash; mouth wide, tongue low</td>
+            </tr>
+            <tr>
+                <td class="guide-primary-col">i</td>
+                <td class="ipa guide-secondary-col">i</td>
+                <td>p<strong>i</strong>t, h<strong>i</strong>t</td>
+                <td>Close &mdash; tongue humped high in front</td>
+            </tr>
+            <tr>
+                <td class="guide-primary-col">u</td>
+                <td class="ipa guide-secondary-col">u</td>
+                <td>p<strong>u</strong>sh, b<strong>oo</strong>t</td>
+                <td>Round &mdash; lips pursed and rounded</td>
+            </tr>
+            <tr class="guide-section-row"><td colspan="4"><strong>Long Vowels</strong> (circumflex = held longer)</td></tr>
+            <tr>
+                <td class="guide-primary-col">&acirc;</td>
+                <td class="ipa guide-secondary-col">aa</td>
+                <td>f<strong>a</strong>ther</td>
+                <td>Same as <strong>a</strong> but held longer</td>
+            </tr>
+            <tr>
+                <td class="guide-primary-col">&icirc;</td>
+                <td class="ipa guide-secondary-col">ii</td>
+                <td>w<strong>ee</strong>d, mach<strong>i</strong>ne</td>
+                <td>Same as <strong>i</strong> but held longer</td>
+            </tr>
+            <tr>
+                <td class="guide-primary-col">&ucirc;</td>
+                <td class="ipa guide-secondary-col">uu</td>
+                <td>r<strong>u</strong>de, r<strong>u</strong>ler</td>
+                <td>Same as <strong>u</strong> but held longer</td>
+            </tr>
+            {% endif %}
         </tbody>
     </table>
     </div>
@@ -126,7 +289,7 @@
             <strong>a</strong>. In the Parks dictionary, this is represented by
             the IPA symbols <span class="ipa">&#601;</span> (schwa) or
             <span class="ipa">&#618;</span>, and it's respelled as
-            <strong>uh</strong> or <strong>ih</strong> depending on context.
+            <strong>a</strong> or <strong>i</strong> depending on context.
         </p>
     </details>
 
@@ -134,7 +297,7 @@
     <h3>Whispered Vowels</h3>
     <!-- ============================================================ -->
     <p>
-        At the end of a word, after a hard consonant (<strong>p, t, k, s, ts</strong>),
+        At the end of a word, after a hard consonant (<strong>p, t, k, s, c</strong>),
         vowels are often <em>whispered</em> &mdash; barely voiced, more like a
         puff of breath. In fluent speech they may be almost inaudible. This is
         normal and not a mistake.
@@ -175,8 +338,10 @@
             (e.g., <span class="ipa" lang="x-paw">taraha</span>)
         </li>
         <li>
-            <strong>Respelling</strong> &mdash; an English-friendly pronunciation
-            (e.g., <span class="pronunciation">tuhduhuh</span>)
+            <strong>Simplified</strong> &mdash; a learner-friendly respelling
+            with circumflex long vowels
+            (e.g., <span lang="x-paw">taraha</span> &mdash; same here since
+            no long vowels)
         </li>
         <li>
             <strong>IPA</strong> &mdash; the precise phonetic transcription
@@ -184,8 +349,14 @@
         </li>
     </ol>
     <p>
-        The respelling is designed so you can read it aloud using English
-        pronunciation habits and be close to the Pawnee sounds.
+        {% if spelling_pref != 'parks' %}
+        The simplified spelling uses <strong>&acirc;</strong> for long a,
+        <strong>&icirc;</strong> for long i, <strong>&ucirc;</strong> for long u,
+        and <strong>'</strong> for the glottal stop.
+        {% else %}
+        The Parks spelling uses <strong>doubled vowels</strong> (aa, ii, uu)
+        for length and <strong>&#x0294;</strong> for the glottal stop.
+        {% endif %}
         When in doubt, the IPA form is the most precise guide.
     </p>
 
@@ -198,33 +369,68 @@
             <tr>
                 {% if spelling_pref == 'parks' %}
                 <th>Parks</th>
-                <th>Respelling</th>
+                <th>Simplified</th>
                 {% else %}
-                <th>Respelling</th>
+                <th>Simplified</th>
                 <th>Parks</th>
                 {% endif %}
                 <th>Meaning</th>
             </tr>
         </thead>
         <tbody>
-            {% macro example_row(parks, simplified, meaning) %}
+            {% if spelling_pref == 'parks' %}
             <tr>
-                {% if spelling_pref == 'parks' %}
-                <td class="ipa guide-primary-col" lang="x-paw">{{ parks }}</td>
-                <td class="pronunciation guide-secondary-col">{{ simplified }}</td>
-                {% else %}
-                <td class="pronunciation guide-primary-col">{{ simplified }}</td>
-                <td class="ipa guide-secondary-col" lang="x-paw">{{ parks }}</td>
-                {% endif %}
-                <td>{{ meaning }}</td>
+                <td class="ipa guide-primary-col" lang="x-paw">taraha</td>
+                <td class="guide-secondary-col" lang="x-paw">taraha</td>
+                <td>buffalo</td>
             </tr>
-            {% endmacro %}
-
-            {{ example_row('taraha', 'tuhduhuh-huh', 'buffalo') }}
-            {{ example_row('pa', 'puh', 'moon, elk') }}
-            {{ example_row('capat', 'tsuh-puht', 'woman') }}
-            {{ example_row('aruusa', 'uh-doo-suh', 'horse') }}
-            {{ example_row('kaki&#660;', "kuh-kih'", 'crow') }}
+            <tr>
+                <td class="ipa guide-primary-col" lang="x-paw">pa</td>
+                <td class="guide-secondary-col" lang="x-paw">pa</td>
+                <td>moon, elk</td>
+            </tr>
+            <tr>
+                <td class="ipa guide-primary-col" lang="x-paw">capat</td>
+                <td class="guide-secondary-col" lang="x-paw">capat</td>
+                <td>woman</td>
+            </tr>
+            <tr>
+                <td class="ipa guide-primary-col" lang="x-paw">aruusa</td>
+                <td class="guide-secondary-col" lang="x-paw">ar&ucirc;sa</td>
+                <td>horse</td>
+            </tr>
+            <tr>
+                <td class="ipa guide-primary-col" lang="x-paw">kaki&#x0294;</td>
+                <td class="guide-secondary-col" lang="x-paw">kaki'</td>
+                <td>crow</td>
+            </tr>
+            {% else %}
+            <tr>
+                <td class="guide-primary-col" lang="x-paw">taraha</td>
+                <td class="ipa guide-secondary-col" lang="x-paw">taraha</td>
+                <td>buffalo</td>
+            </tr>
+            <tr>
+                <td class="guide-primary-col" lang="x-paw">pa</td>
+                <td class="ipa guide-secondary-col" lang="x-paw">pa</td>
+                <td>moon, elk</td>
+            </tr>
+            <tr>
+                <td class="guide-primary-col" lang="x-paw">capat</td>
+                <td class="ipa guide-secondary-col" lang="x-paw">capat</td>
+                <td>woman</td>
+            </tr>
+            <tr>
+                <td class="guide-primary-col" lang="x-paw">ar&ucirc;sa</td>
+                <td class="ipa guide-secondary-col" lang="x-paw">aruusa</td>
+                <td>horse</td>
+            </tr>
+            <tr>
+                <td class="guide-primary-col" lang="x-paw">kaki'</td>
+                <td class="ipa guide-secondary-col" lang="x-paw">kaki&#x0294;</td>
+                <td>crow</td>
+            </tr>
+            {% endif %}
         </tbody>
     </table>
     </div>
