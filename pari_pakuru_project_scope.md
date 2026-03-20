@@ -233,7 +233,7 @@ High-impact items ordered by learner value, not technical dependency:
 | ✅ ~~5~~ | 4.4 | ~~Community feedback mechanism~~ | **DONE (2026-03-19)** — Flag/confirm buttons, admin review queue, writable DB, dashboard widget. Design Principle #6 enforced. |
 | 🔴 6 | 5.2 (exports) | Printable PDFs + Anki export | Design Principle #3 is underbuilt; teachers need offline materials now |
 | ✅ ~~7~~ | Ongoing | ~~Blue Book 518-gap triage~~ | **DONE (2026-03-19)** — 516 gaps classified: 38% phrases, 27% inflected verbs, 18% unlisted nouns, 8% descriptors, 3% possessed, 2% function words, 2% loanwords, 2% OCR artifacts. 65% are morphological (roots exist in Parks). 115 high-value items flagged for DB addition. |
-| 🟡 8 | 3.1.6 | Function word inventory | Needed before sentence construction can work |
+| 🟡 8 | 3.1.6 | Function word inventory | **SEEDED** — 414 function words in DB table (355 Parks + 59 BB). Needs: position rules, demonstrative classification, sentence builder integration. |
 | 🟡 9 | 3.2a | Template-based sentence assembly | First usable step toward sentence construction |
 | 🟡 10 | 5.1 | Structured lesson content | Blue Book curriculum extraction for progressive learning |
 
@@ -308,7 +308,7 @@ This is the wall between "a conjugation engine that works on 7 test verbs" (76.2
 **Script:** `scripts/import_to_db.py` (implied by DB existence)
 **What it does:** SQLite database (`skiri_pawnee.db`) unifying S2E and E2S data.
 
-**Tables:** `lexical_entries` (4,273 entries), `glosses`, `paradigmatic_forms`, `examples`, `etymology`, `cognates`, `derived_stems`, `english_index`, `cross_references`, `semantic_tags`, `blue_book_attestations`, `import_metadata` + FTS tables for glosses, examples, english_index.
+**Tables:** `lexical_entries` (4,366 entries: 4,273 Parks + 93 Blue Book), `glosses`, `paradigmatic_forms`, `examples`, `etymology`, `cognates`, `derived_stems`, `english_index`, `cross_references`, `semantic_tags`, `blue_book_attestations`, `import_metadata`, `bb_gap_triage`, `community_feedback`, `function_words` (414), `bb_function_words` + FTS tables for glosses, examples, english_index.
 
 ### ✅ Phase 2.1 — Semantic Category Tagging
 **Script:** `scripts/tag_entries.py`
@@ -579,24 +579,31 @@ Tasks completed:
 - Locative/instrumental are case forms, not possession — but they share stem extraction and are naturally displayed alongside possession paradigms
 - Example filter uses a global headword set (lazily cached at first request) for disambiguation; modifies entry data in-place before template rendering
 
-### 🔲 Phase 3.1.6 — Function Word & Particle Inventory *(NEW)*
+### 🟡 Phase 3.1.6 — Function Word & Particle Inventory *(seeded 2026-03-19)*
 **Priority:** Medium (needed for sentence construction; these are the glue words)
 **Depends on:** Phase 3.1 (morpheme slot system), Phase 2.1 (semantic tags)
 **Effort:** Medium
+**Scripts:** `scripts/function_word_inventory.py`, `scripts/extract_function_words.py`
+**DB table:** `function_words` (414 rows: 355 Parks dictionary + 2 BB direct + 57 Gemini-extracted from phrases)
 
 Dictionary entries classified as CONJ, DEM, PRON, QUAN, LOC, INTERJ, ADV need to be formalized into a structured inventory with usage rules — not just dictionary definitions. For sentence construction (Phase 3.2), these must be queryable: "which demonstrative goes with visible referents?" "where does the question particle go in the clause?"
 
-Sources:
-- S2E entries with grammatical_class in {CONJ, DEM, PRON, QUAN, LOC, INTERJ, ADV, NUM}
-- `extracted_data/grammatical_overview.json` — clause structure, word order rules
-- Blue Book dialogues — natural usage of particles in context
+**Seed data (2026-03-19):**
+- 355 function words from Parks dictionary (lexical_entries with class in CONJ/DEM/PRON/QUAN/LOC/INTERJ/ADV/NUM)
+- 2 new function words from BB gap triage direct classification
+- 57 new function words extracted from 196 BB phrases via Gemini batch analysis (5 batches, 69 unique forms, 12 already known)
+- ~5-6 OCR artifacts in the Gemini extraction need pruning (`.a`, `.ra`, `rd`, `t`, `ʔhr`)
+- Report: `reports/extract_function_words.txt`
 
 Tasks:
-- [ ] Inventory all function words from dictionary (~200–300 entries across classes)
+- [x] Inventory all function words from dictionary (~355 entries across classes)
+- [x] Seed from BB gap triage function_word category (11 items → 9 new after dedup)
+- [x] Gemini-extract function words from 196 BB phrase gaps (57 new items)
+- [ ] Prune OCR artifacts from Gemini extraction (~5-6 items)
 - [ ] Classify demonstratives by spatial/visibility distinction (if Parks documents this)
 - [ ] Map interrogative particles and their clause-position rules
 - [ ] Document discourse/evidential particles (evidentiality is marked by proclitics, but also by standalone particles)
-- [ ] Create `function_words` DB table with: word, class, subclass, position_rule, usage_notes
+- [ ] Add position_rule column for clause-position information
 - [ ] Cross-reference with Blue Book dialogue examples for natural usage patterns
 - [ ] Integrate into sentence builder (Phase 3.2) as selectable modifiers
 
@@ -826,7 +833,15 @@ Tasks:
 
 ### 🔲 Ongoing — Data Quality & Maintenance
 
-- [x] **~~Blue Book gap triage~~** — **DONE (2026-03-19)** via Gemini batch analysis. 516 of 984 BB vocabulary items classified into 8 categories: phrases (196/38%), inflected verbs (141/27%), unlisted nouns (94/18%), descriptors (40/8%), possessed forms (15/3%), function words (11/2%), loanwords (10/2%), OCR artifacts (9/2%). Key finding: 65% are morphological gaps (roots exist in Parks, inflected forms don't match). 115 high-value items (nouns + function words + loanwords) flagged for potential DB addition. DB table: `bb_gap_triage`. Report: `reports/bb_gap_triage.txt`. Script: `scripts/bb_gap_triage.py`.
+- [x] **~~Blue Book gap triage~~** — **DONE (2026-03-19)** via Gemini batch analysis. 516 of 984 BB vocabulary items classified into 8 categories: phrases (196/38%), inflected verbs (141/27%), unlisted nouns (94/18%), descriptors (40/8%), possessed forms (15/3%), function words (11/2%), loanwords (10/2%), OCR artifacts (9/2%). Key finding: 65% are morphological gaps (roots exist in Parks, inflected forms don't match). 115 high-value items flagged for potential DB addition. DB table: `bb_gap_triage`. Report: `reports/bb_gap_triage.txt`. Script: `scripts/bb_gap_triage.py`.
+
+**Follow-up actions completed (2026-03-19):**
+- [x] **Import 93 high-value BB items** — `scripts/import_bb_items.py`: 76 nouns, 9 function words, 8 loanwords added to `lexical_entries` (4,273 → 4,366). New `source` column = 'blue_book'. Entry IDs: `BB-{slug}-{seq}`.
+- [x] **Function word inventory seeded** — `scripts/function_word_inventory.py`: 414 items in `function_words` table (355 Parks + 2 BB direct + 57 Gemini-extracted from phrases).
+- [x] **Inflected verb reverse-lookup** (Opus analysis): 82% of 141 BB inflected verb gaps trace to existing Parks dictionary roots. Gap is morphological, not lexical. Top roots: `at` 'go', `aar` 'do', `kuutik` 'kill', `irik` 'see', `huras` 'find', `kawaahc` 'eat'. Validates that conjugation engine work is the right investment.
+- [ ] Prune ~5-6 OCR artifacts from Gemini function word extraction
+- [ ] Review 40 descriptor items for potential DB addition
+- [ ] Review 15 possessed forms for integration with possession engine
 - [ ] Resolve 362 unmatched E2S entries (most are parsing artifacts, some may be real terms)
 - [ ] Review 8 low-confidence homonym matches from linking
 - [ ] Version control: track changes to entries over time
@@ -883,6 +898,9 @@ These principles guide all user-facing features:
 | `add_feedback_table.py` | `scripts/` | Phase 4.4: migration script to create `community_feedback` table in SQLite DB | No |
 | `accent_rules.py` | `scripts/` | Phase 3.1: accent mark assignment rules — 4 rules (Agent-boundary í, Mode-prefix accent, Infinitive kú, Dual sí); validates against 85 Appendix 1 accented forms (--validate, --analyze) | No |
 | `bb_gap_triage.py` | `scripts/` | Phase 2.2/Ongoing: classify 516 unmatched Blue Book items via Gemini batch analysis into 8 categories (phrase, inflected_verb, noun_unlisted, descriptor, possessed_form, function_word, loanword, ocr_artifact); populates `bb_gap_triage` DB table with checkpointing | Yes (GEMINI_API_KEY) |
+| `import_bb_items.py` | `scripts/` | Import 93 high-value BB gap items (nouns, function words, loanwords) into `lexical_entries` + `glosses` tables with `source='blue_book'` flag; normalizes BB→Parks orthography; deduplicates against existing headwords (--dry-run, --db) | No |
+| `function_word_inventory.py` | `scripts/` | Phase 3.1.6: seed `function_words` table by merging Parks dictionary function-class entries (355) with BB gap triage function words (11); infers subclass from gloss keywords (--dry-run, --db) | No |
+| `extract_function_words.py` | `scripts/` | Phase 3.1.6: extract function words from 196 BB phrase gaps via Gemini batch analysis (5 batches); populates `bb_function_words` table; checkpointed; generates `reports/bb_function_words.txt` (--dry-run, --report-only, --clear) | Yes (GEMINI_API_KEY) |
 
 ## Environment
 
@@ -1026,20 +1044,23 @@ Copy-paste this to start the next session (claude.ai or Claude Code):
 > **What's done (session: 2026-03-19):**
 > - Phase 3.1.5 Noun possession: ✅ (4 systems, locative suffixes, web widget, example filter, 40/40 tests)
 > - Phase 3.1 Stem extraction: 🟡 86.6% exact (1,914/2,211 verbs), up from 14.8% baseline across 3 passes
-> - Phase 3.1 Accent rules: 🟡 91.8% (78/85 accented forms correct). 4 rules in `accent_rules.py`. Appendix 1: 76.2% → 86.4% pending integration into `morpheme_inventory.py`
+> - Phase 3.1 Accent rules: 🟡 91.8% (78/85 accented forms correct). 4 rules in `accent_rules.py`. Appendix 1: 76.2% → 86.4% pending integration
+> - Phase 3.1.6 Function word inventory: 🟡 SEEDED — 414 items in `function_words` table (355 Parks + 59 BB)
 > - Phase 4.3 Confidence scoring: ✅ (4-factor weighted score, DB column, web badges, 88.7% average)
 > - Phase 4.4 Community feedback: ✅ (flag/confirm buttons, admin review queue, writable DB, dashboard widget)
+> - Blue Book gap triage: ✅ (516 gaps classified, 93 items imported to dictionary, 82% inflected verbs trace to existing roots)
 > - Blue Book gap triage: ✅ (516 gaps classified — 65% morphological, 18% unlisted nouns, 115 high-value items flagged). Feeds into #8 Function word inventory.
 >
 > **Remaining roadmap priorities:**
-> - 🔴 #4 (integration): **Integrate accent rules into conjugation engine** — `accent_rules.py` has the rules validated, needs to be wired into `morpheme_inventory.py`'s output. **Good for Claude Code**.
-> - 🔴 #6: **Printable PDFs + Anki export** — teachers need offline materials now; Design Principle #3 is underbuilt. **Good for Claude Code**.
-> - 🟡 #8: **Function word inventory** — 11 function words identified in BB gap triage are a starting seed. Needed for sentence construction (Phase 3.2a).
+> - 🔴 #4 (integration): **Integrate accent rules into conjugation engine** — `accent_rules.py` validated, wire into `morpheme_inventory.py` output. **Claude Code**.
+> - 🔴 #6: **Printable PDFs + Anki export** — teachers need offline materials now. **Claude Code**.
+> - 🟡 #8 (remaining): **Function word classification** — 414 items seeded, needs position rules, demonstrative/interrogative classification. **Opus + Claude Code**.
+> - 🟡 #9: **Template-based sentence assembly** — function word inventory now supports this.
 > - 🟡 Optional: **Stem extraction fourth pass** (86.6%→90%+) — diminishing returns
 >
-> The scope doc (`pari_pakuru_project_scope.md`) has full context. The DB is `skiri_pawnee.db`. Scripts are in `scripts/`. Web app runs on PythonAnywhere.
+> The scope doc (`pari_pakuru_project_scope.md`) has full context. The DB is `skiri_pawnee.db` (4,366 entries). Scripts are in `scripts/`. Web app runs on PythonAnywhere.
 >
 > **Tool recommendations:**
 > - Accent integration → **Claude Code** (wire `apply_accent_rules()` into morpheme_inventory output)
 > - PDF/Anki export → **Claude Code** directly
-> - BB gap triage → **Gemini API** batch analysis
+> - Function word classification → **Opus** for linguistic analysis of position rules, then **Claude Code** for DB updates

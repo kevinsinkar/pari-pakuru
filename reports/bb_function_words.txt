@@ -1,0 +1,99 @@
+======================================================================
+BLUE BOOK FUNCTION WORD EXTRACTION
+======================================================================
+Phrases analyzed: 196
+Unique function words found: 35
+Total occurrences: 147
+
+Word                 Class    Count  Meaning
+----------------------------------------------------------------------
+  we                 DEM         39  that
+    ex: We rut•utsi•raru'.
+    ex: We t'at•atsfks•tat•at
+  ti                 DEM         21  this/proximal
+    ex: Pita tiwari'.
+    ex: Ti .wari'.
+  hiri               ADV         13  behind, there
+    ex: tuks•kata•ku hiri
+    ex: Hiri Ra•ka•hurah•katiit•u'
+  kiru               QW           9  Where
+    ex: Kiru ras•kirik•ta?
+    ex: Kiru rdspaks•ku?
+  nawa               CONJ         6  now, and, go ahead
+    ex: Nawa hfru'!
+    ex: Nawa niru!
+  ru                 PRON         6  it, there
+    ex: Ru tuks•kaku'.
+    ex: Ru tut•tsirau ' .
+  ka                 PART         5  interrogative particle
+    ex: Pita ka ra•kikat?
+    ex: Ka?
+  kitu               QUAN         4  all, together
+    ex: Kitu su'ksta•paku'.
+    ex: Ketuh•kusit papitsisu kitu.
+  tihe               DEM          4  next
+    ex: tihe ra•pa•ariki'
+    ex: tihe ra•sa'kurrarata
+  kirti              QUAN         3  where
+    ex: Kirti ra•'at rikutski?
+    ex: Kirti rira•awi•u tasih•ka•isa'?
+  re                 CONJ         3  and, then
+    ex: Rekits•tiwiru' we tat•u.
+    ex: Suks•u rekits•tiwiru'.
+  wi                 PART         3  it is said that
+    ex: Wi•tuks•ta tawe•kuki wi•tuks•ta•waruksti. Tsahriks•pa-kuhtu wi•tuks•paktiks.
+    ex: Wi•turuks•ka•hurar•ri hiri ah•ratukstak•kitkeu'. Tihe ra•akitarraruhat tsararat ra•hurit•at reh•kuhrah•witsa'. Resaru kuh•ri•ruhuru rakurak•tara hiri ra•saka•ku.
+  tiʔ                DEM          2  this
+    ex: Hau, ti hitu'.
+    ex: Ti .wu'.
+  kirike             QW           2  What
+    ex: Pita kirike rut•ari'?
+    ex: Paresu kirike rut•ari '?
+  tiku               DEM          2  that
+    ex: Tiku 'tskipi.
+    ex: (we) tiku•rapu
+  ut                 PART         2  for him/her/it
+    ex: ti + ut + ari
+    ex: Ut ras•a•hukita•ku
+  rariksisu          ADV          2  hard, very
+    ex: Rariksisu tatutsiks•a•wahri'.
+    ex: rariksisu tatutsiks•a•wahri '
+  pirau              CONJ         2  when
+    ex: Pirau Rarah•kata•ispu'
+    ex: Pirau Rarah•kata•ispu'
+  sihuks             QUAN         2  five
+    ex: sihuks ri•katiharu'
+    ex: sihuks sakuru '
+  kuh                PART         2  I guess, perhaps
+    ex: Wi•turuks•ka•hurar•ri hiri ah•ratukstak•kitkeu'. Tihe ra•akitarraruhat tsararat ra•hurit•at reh•kuhrah•witsa'. Resaru kuh•ri•ruhuru rakurak•tara hiri ra•saka•ku.
+    ex: or kuh +
+  hau                INTERJ       1  Yes
+    ex: Hau, ti hitu'.
+  wfs                ADV          1  quickly, hurry
+    ex: Wfs kutsu'!
+  i                  DEM          1  that yonder
+    ex: i ra•kti pita
+  niru               QUAN         1  where
+    ex: Niru ruks•ku?
+  ra                 PRON         1  it, that
+    ex: Ra kitu'.
+  ilanʔ              INTERJ       1  yes
+    ex: Ilan', tiku•ratsaus.
+  hirihe             DEM          1  there, that
+    ex: (hirihe) Situks•pa.
+  witi               PRON         1  myself
+    ex: Witi tatut•erit.
+  a                  CONJ         1  and
+    ex: we ti pitku a ikarikat
+  rahesa             ADV          1  tomorrow
+    ex: Rahesa ' tatut•a•wahri•usta.
+  taku               PRON         1  anyone
+    ex: Nawa, taku ka ra•ka .ku?
+  tireku             DEM          1  here is
+    ex: Sukspitit, tireku•skuskakusu.
+  resaru             ADV          1  perhaps
+    ex: Wi•turuks•ka•hurar•ri hiri ah•ratukstak•kitkeu'. Tihe ra•akitarraruhat tsararat ra•hurit•at reh•kuhrah•witsa'. Resaru kuh•ri•ruhuru rakurak•tara hiri ra•saka•ku.
+  ar                 PART         1  we know that
+    ex: ar +
+  ah                 PART         1  I'm sure even though I have not seen it
+    ex: or ah +
