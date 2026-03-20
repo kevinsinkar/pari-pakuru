@@ -27,18 +27,33 @@
         </li>
     </ul>
 
-    <h3>Features</h3>
+    <h3>Search &amp; Dictionary</h3>
     <ul>
-        <li>Bidirectional search: English to Skiri and Skiri to English</li>
-        <li>Multiple pronunciation guides: IPA phonetic, simplified respelling</li>
+        <li>Bidirectional search: English &rarr; Skiri and Skiri &rarr; English</li>
+        <li>Smart search ranking: exact matches first, Blue Book&ndash;attested terms boosted, example sentence snippets surfaced</li>
+        <li>Multiple pronunciation displays: IPA phonetic, simplified respelling with pitch accent highlighting</li>
+        <li>Spelling preference toggle: Parks linguistic orthography or simplified spelling</li>
         <li>Full verb conjugation tables for documented paradigms</li>
-        <li>Semantic categorization and browsing</li>
-        <li>Blue Book attestation badges marking terms used in teaching materials</li>
-        <li>Etymology and morpheme breakdowns</li>
-        <li>Cognate cross-references to related Caddoan languages</li>
+        <li>Semantic categorization and tag browsing</li>
+        <li>Blue Book attestation badges and confidence scores for data quality</li>
+        <li>Etymology, morpheme breakdowns, and cognate cross-references to related Caddoan languages</li>
     </ul>
 
-    <h3>Important Note on Data Quality</h3>
+    <h3>Learning Tools</h3>
+    <ul>
+        <li>Weekly flashcard study system with 21 categories and curated beginner vocabulary</li>
+        <li>Template-based sentence builder for practicing Skiri Pawnee word order</li>
+        <li>Interactive pronunciation guide with respelling symbols and pitch accent legend</li>
+        <li>Suggested learning path for new learners</li>
+        <li>Learner / Expert mode toggle to control detail level</li>
+        <li>Dashboard with personal study overview and dictionary statistics</li>
+    </ul>
+
+    <h3>Community &amp; Data Quality</h3>
+    <ul>
+        <li>Community feedback: flag uncertain entries or confirm correct ones, with admin review</li>
+        <li>Confidence scoring: each entry carries a weighted score based on attestation, completeness, and source agreement</li>
+    </ul>
     <p>
         This tool presents data extracted from published linguistic sources.
         Forms marked as <strong>"attested"</strong> appear directly in the
@@ -51,7 +66,9 @@
     <p>
         Built with Python, Flask, and SQLite. The dictionary database includes
         full-text search indexes for fast lookup. The interface uses
-        Pico CSS for responsive design and HTMX for live search.
+        Pico CSS for responsive, mobile-friendly design and HTMX for live search.
+        Accessibility features include keyboard navigation, collapsible entry
+        sections, and screen-reader-friendly markup.
     </p>
 </article>
 {% endblock %}
