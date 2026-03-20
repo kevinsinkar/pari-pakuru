@@ -67,6 +67,23 @@
     </div>
 </details>
 
+{# Learning path timeline #}
+<div class="fc-path" id="fc-path">
+    <span class="section-label">Your Progress</span>
+    <div class="fc-path-track">
+        {% for s in sets %}
+        <a href="/flashcards/{{ s.week }}" class="fc-path-dot" data-week="{{ s.week }}" data-total="{{ s.card_count }}" title="Week {{ s.week }}: {{ s.category_label }}">
+            <span class="fc-path-dot-num">{{ s.week }}</span>
+        </a>
+        {% endfor %}
+    </div>
+    <div class="fc-path-legend">
+        <span class="fc-path-legend-item"><span class="fc-path-swatch fc-path-swatch--done"></span> Mastered</span>
+        <span class="fc-path-legend-item"><span class="fc-path-swatch fc-path-swatch--partial"></span> In progress</span>
+        <span class="fc-path-legend-item"><span class="fc-path-swatch fc-path-swatch--todo"></span> Not started</span>
+    </div>
+</div>
+
 <div class="flashcard-overview">
     {% for cat, cat_sets in by_category.items() %}
     <section class="fc-category">
@@ -89,7 +106,8 @@
 </div>
 
 <script>
-// Show progress from localStorage on each week card
+// Show progress from localStorage on week cards and path dots
+var hasAnyProgress = false;
 document.querySelectorAll('.fc-week-progress').forEach(function(el) {
     var week = el.getAttribute('data-week');
     var total = parseInt(el.closest('.fc-week-card').getAttribute('data-total'));
@@ -98,7 +116,27 @@ document.querySelectorAll('.fc-week-progress').forEach(function(el) {
     if (known > 0) {
         el.textContent = known + '/' + total + ' mastered';
         el.style.display = '';
+        hasAnyProgress = true;
     }
 });
+
+// Color path dots based on progress
+document.querySelectorAll('.fc-path-dot').forEach(function(dot) {
+    var week = dot.getAttribute('data-week');
+    var total = parseInt(dot.getAttribute('data-total'));
+    var data = JSON.parse(localStorage.getItem('fc-progress-week-' + week) || '{}');
+    var known = (data.known || []).length;
+    if (known >= total && total > 0) {
+        dot.classList.add('fc-path-dot--done');
+    } else if (known > 0) {
+        dot.classList.add('fc-path-dot--partial');
+    }
+});
+
+// Hide path if no progress at all
+if (!hasAnyProgress) {
+    var pathEl = document.getElementById('fc-path');
+    if (pathEl) pathEl.style.display = 'none';
+}
 </script>
 {% endblock %}

@@ -50,6 +50,13 @@
         </div>
     </div>
 
+    {# ---- View mode toggle ---- #}
+    <div class="view-mode-toggle">
+        <button type="button" class="view-mode-btn" id="view-mode-btn" onclick="toggleViewMode()">
+            <span id="view-mode-label">Learner view</span>
+        </button>
+    </div>
+
     {# ---- Definitions ---- #}
     {% if entry.glosses %}
     <section class="entry-section">
@@ -417,6 +424,36 @@
             alert('Failed to submit confirmation. Please try again.');
         });
     };
+})();
+</script>
+
+<script>
+// Learner/Expert view toggle
+(function() {
+    var mode = localStorage.getItem('entry-view-mode') || 'learner';
+    var btn = document.getElementById('view-mode-btn');
+    var label = document.getElementById('view-mode-label');
+
+    function applyMode(m) {
+        var details = document.querySelectorAll('.entry-details');
+        details.forEach(function(d) {
+            if (m === 'expert') {
+                d.setAttribute('open', '');
+            } else {
+                d.removeAttribute('open');
+            }
+        });
+        label.textContent = m === 'expert' ? 'Expert view' : 'Learner view';
+        btn.className = 'view-mode-btn' + (m === 'expert' ? ' view-mode-btn--expert' : '');
+    }
+
+    window.toggleViewMode = function() {
+        mode = mode === 'learner' ? 'expert' : 'learner';
+        localStorage.setItem('entry-view-mode', mode);
+        applyMode(mode);
+    };
+
+    applyMode(mode);
 })();
 </script>
 {% endblock %}

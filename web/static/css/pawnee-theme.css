@@ -542,6 +542,32 @@
   padding-bottom: 0.25em;
 }
 
+/* ---------- View mode toggle ---------- */
+.view-mode-toggle {
+  margin: 0.75em 0 0.5em;
+  display: flex;
+  justify-content: flex-end;
+}
+.view-mode-btn {
+  padding: 0.2rem 0.7rem;
+  border-radius: 1rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid var(--earth-200);
+  background: var(--earth-50);
+  color: var(--earth-600);
+  transition: all 0.15s ease;
+}
+.view-mode-btn:hover {
+  background: var(--earth-100);
+}
+.view-mode-btn--expert {
+  background: var(--sky-50);
+  border-color: var(--sky-300);
+  color: var(--sky-900);
+}
+
 /* ---------- Collapsible entry sections ---------- */
 .entry-details {
   margin-top: 1.5em;
@@ -952,6 +978,79 @@
   padding: 0.15em 0.5em;
   border-radius: 0.75em;
   margin-top: 0.25em;
+}
+
+/* ---------- Flashcard learning path ---------- */
+.fc-path {
+  margin-bottom: 2em;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--earth-200);
+  border-radius: 0.875rem;
+}
+.fc-path-track {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0.5rem 0;
+  align-items: center;
+}
+.fc-path-dot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid var(--earth-200);
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.15s;
+}
+.fc-path-dot:hover {
+  border-color: var(--sky-500);
+  transform: scale(1.15);
+}
+.fc-path-dot-num {
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: var(--earth-500);
+}
+.fc-path-dot--partial {
+  background: var(--gold-200);
+  border-color: var(--gold-400);
+}
+.fc-path-dot--partial .fc-path-dot-num { color: var(--gold-800); }
+.fc-path-dot--done {
+  background: var(--sage-400);
+  border-color: var(--sage-600);
+}
+.fc-path-dot--done .fc-path-dot-num { color: white; }
+
+.fc-path-legend {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  font-size: 0.7rem;
+  color: var(--earth-500);
+}
+.fc-path-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.fc-path-swatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid;
+}
+.fc-path-swatch--done { background: var(--sage-400); border-color: var(--sage-600); }
+.fc-path-swatch--partial { background: var(--gold-200); border-color: var(--gold-400); }
+.fc-path-swatch--todo { background: white; border-color: var(--earth-200); }
+
+@media (prefers-color-scheme: dark) {
+  .fc-path-dot { background: #241C14; }
+  .fc-path-swatch--todo { background: #241C14; }
 }
 
 /* ---------- Flashcard study session ---------- */

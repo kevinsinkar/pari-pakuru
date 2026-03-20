@@ -30,7 +30,7 @@
       <input
         type="search"
         name="q"
-        placeholder="Search Skiri or English..."
+        placeholder="{% if spelling_pref == 'parks' %}Search Parks Skiri or English...{% else %}Search simplified Skiri or English...{% endif %}"
         autocomplete="off"
         autofocus
         aria-label="Search the dictionary"
