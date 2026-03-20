@@ -1012,7 +1012,6 @@
   inset: 0;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  border: 2px solid var(--earth-200);
   border-radius: 12px;
   padding: 2em 1.5em;
   display: flex;
@@ -1020,14 +1019,18 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: var(--pico-background-color);
+}
+
+.fc-front {
+  border: 2px solid var(--earth-200);
+  background: white;
 }
 
 .fc-back {
   transform: rotateY(180deg);
-  background: var(--earth-800);
-  color: var(--earth-100);
-  border-color: var(--earth-700);
+  background: var(--sky-900);
+  color: #F0F4F8;
+  border: 2px solid var(--sky-700);
 }
 
 /* Front side */
@@ -1041,7 +1044,7 @@
 }
 .fc-front-pron {
   font-size: 1.1em;
-  color: var(--earth-600);
+  color: var(--earth-700);
   margin-bottom: 0.3em;
 }
 .fc-front-parks {
@@ -1063,25 +1066,25 @@
   font-weight: 600;
   margin-bottom: 0.5em;
   line-height: 1.3;
-  color: var(--earth-100);
+  color: #FFFFFF;
 }
 .fc-back-word {
   font-size: 1.1em;
-  color: var(--earth-200);
+  color: var(--sky-100);
   margin-bottom: 0.15em;
 }
 .fc-back-pron {
   font-size: 0.95em;
-  color: var(--earth-300);
+  color: var(--sky-200);
   margin-bottom: 0.15em;
 }
 .fc-back-ipa {
   font-size: 0.9em;
-  color: var(--earth-300);
+  color: var(--sky-200);
 }
 .fc-back-parks {
   font-size: 0.85em;
-  color: var(--earth-400);
+  color: var(--sky-300);
   margin-top: 0.3em;
   font-family: 'Source Serif 4', 'Gentium Plus', 'Charis SIL', monospace;
 }
@@ -1089,10 +1092,10 @@
   font-size: 0.8em;
   margin-top: auto;
   padding-top: 1em;
-  color: var(--sky-300);
+  color: var(--gold-200);
 }
 .fc-back-link:hover {
-  color: var(--sky-200);
+  color: var(--gold-400);
 }
 
 /* Controls */
@@ -1147,6 +1150,18 @@
   font-size: 0.9em;
 }
 
+/* Dark mode: front card background */
+@media (prefers-color-scheme: dark) {
+  .fc-front {
+    background: #241C14;
+    border-color: #3D2E22;
+  }
+  .fc-front-word { color: var(--earth-100); }
+  .fc-front-pron { color: var(--earth-300); }
+  .fc-front-parks { color: var(--earth-400); }
+  .fc-hint { color: var(--earth-500); }
+}
+
 /* Mobile: smaller cards */
 @media (max-width: 480px) {
   .fc-front-word { font-size: 1.8em; }
@@ -1193,8 +1208,9 @@
   background: var(--pico-background-color);
 }
 .fc-example-back {
-  border: 2px solid var(--earth-700);
-  background: var(--earth-800);
+  border: 2px solid var(--sky-700);
+  background: var(--sky-900);
+  color: #F0F4F8;
 }
 .fc-example-row {
   display: flex;
@@ -1215,8 +1231,8 @@
   line-height: 1.3;
 }
 .fc-example-label-back {
-  color: var(--earth-400);
-  border-left-color: var(--sky-300);
+  color: var(--sky-200);
+  border-left-color: var(--gold-200);
 }
 
 /* ---------- Pronunciation help tooltip ---------- */
@@ -1284,6 +1300,16 @@
   padding-top: 0.6em;
   padding-bottom: 0.6em;
 }
+/* Guide column emphasis (preferred spelling = primary) */
+.guide-primary-col {
+  font-weight: 600;
+  font-size: 1.15em;
+}
+.guide-secondary-col {
+  color: var(--earth-500);
+  font-size: 0.9em;
+}
+
 .guide-note {
   margin: 1em 0 1.5em;
   border: 1px solid var(--earth-200);

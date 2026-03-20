@@ -1,6 +1,7 @@
 {#
   _pronunciation_help.html — Compact pronunciation key tooltip
   Include next to any pronunciation display.
+  Adapts content based on spelling_pref (parks vs simplified).
 #}
 <span class="pron-help-trigger" tabindex="0" aria-label="Pronunciation key" role="button">
   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;">
@@ -8,14 +9,30 @@
   </svg>
   <span class="pron-help-popup" role="tooltip">
     <strong>Pronunciation Key</strong>
+    {% if spelling_pref == 'parks' %}
     <table class="pron-help-table">
-      <tr><td>ah</td><td>=</td><td>a as in "father"</td></tr>
-      <tr><td>uh</td><td>=</td><td>a as in "about"</td></tr>
-      <tr><td>ee</td><td>=</td><td>i as in "meet"</td></tr>
-      <tr><td>ih</td><td>=</td><td>i as in "sit"</td></tr>
+      <tr><td class="ipa">a</td><td>=</td><td>short "uh" as in "about"</td></tr>
+      <tr><td class="ipa">aa</td><td>=</td><td>long "ah" as in "father"</td></tr>
+      <tr><td class="ipa">i</td><td>=</td><td>short "ih" as in "sit"</td></tr>
+      <tr><td class="ipa">ii</td><td>=</td><td>long "ee" as in "meet"</td></tr>
+      <tr><td class="ipa">u</td><td>=</td><td>short "oo" as in "push"</td></tr>
+      <tr><td class="ipa">uu</td><td>=</td><td>long "oo" as in "moon"</td></tr>
+      <tr><td class="ipa">c</td><td>=</td><td>"ts" as in "cats"</td></tr>
+      <tr><td class="ipa">r</td><td>=</td><td>soft tap, like "d" in "ready"</td></tr>
+      <tr><td class="ipa">&#660;</td><td>=</td><td>glottal stop (catch in "uh-oh")</td></tr>
+    </table>
+    {% else %}
+    <table class="pron-help-table">
+      <tr><td>uh</td><td>=</td><td>short a as in "about"</td></tr>
+      <tr><td>ah</td><td>=</td><td>long a as in "father"</td></tr>
+      <tr><td>ih</td><td>=</td><td>short i as in "sit"</td></tr>
+      <tr><td>ee</td><td>=</td><td>long i as in "meet"</td></tr>
       <tr><td>oo</td><td>=</td><td>u as in "moon"</td></tr>
+      <tr><td>ts</td><td>=</td><td>"ts" as in "cats"</td></tr>
+      <tr><td>d</td><td>=</td><td>soft tap, like "d" in "ready"</td></tr>
       <tr><td>'</td><td>=</td><td>glottal stop (catch in "uh-oh")</td></tr>
     </table>
+    {% endif %}
     <small><strong>UPPERCASE</strong> = high pitch syllable</small>
   </span>
 </span>
