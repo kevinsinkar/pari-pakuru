@@ -10,6 +10,16 @@
   <p>Build Skiri Pawnee sentences from Blue Book patterns. Pick a template, fill the slots, and see how it assembles.</p>
 </hgroup>
 
+<details class="sb-help" open>
+  <summary><strong>How does this work?</strong></summary>
+  <ul>
+    <li><strong>Noun / Subject / Object fields</strong> &mdash; Type an <em>English</em> word (like "water" or "man") and pick from the dictionary results that appear.</li>
+    <li><strong>Descriptive verb field</strong> &mdash; Type an English quality (like "red" or "big") and pick from the results.</li>
+    <li><strong>Verb form field</strong> &mdash; This needs a <em>Skiri Pawnee</em> verb that is already conjugated (e.g. <code>ra&bull;pahaat</code> for "it is red"). You can find conjugated forms in the Blue Book lessons or the dictionary.</li>
+    <li><strong>Dropdown fields</strong> (time words, imperative particles) &mdash; Just pick one from the list.</li>
+  </ul>
+</details>
+
 {# ── Step 1: Template Cards ─────────────────────────────────────── #}
 <section id="template-picker">
   <h3>Step 1: Pick a pattern</h3>
@@ -106,7 +116,7 @@ function selectTemplate(tid) {
       container.appendChild(buildCuratedField('yes_word', 'Affirmation word', tid));
     }
     container.appendChild(buildTextField('inner', 'Statement (Skiri text)', true,
-      tid === 'T6' ? 'e.g., kaki karitki' : 'e.g., ti hitu\''));
+      tid === 'T6' ? 'Skiri clause, e.g. kaki karitki (it is not a rock)' : 'Skiri clause, e.g. ti hitu\' (this is a feather)'));
     return;
   }
 
@@ -120,10 +130,21 @@ function selectTemplate(tid) {
     } else if (name === 'we_particle') {
       container.appendChild(buildCheckboxField(name, 'Add "we" (completed action particle)'));
     } else if (name === 'verb_form') {
+      const vfHints = {
+        T3: 'Skiri verb (absolutive), e.g. ra\u2022pahaat (it is red)',
+        T4: 'Skiri verb (absolutive), e.g. ru\' (it is)',
+        T5: 'Skiri verb (absolutive), e.g. rasuks\u2022at (you went)',
+        T8: 'Skiri verb (1st person), e.g. tatuks\u2022at (I went)',
+        T9: 'Skiri verb (3rd person), e.g. ti\u2022kuwutit (he killed)',
+        T10: 'Verb stem (imperative), e.g. teka (open)',
+      };
       container.appendChild(buildTextField(name, desc, required,
-        'Pre-conjugated verb form, e.g., ra\u2022pahaat'));
+        vfHints[tid] || 'Skiri verb form, e.g. ra\u2022pahaat'));
     } else if (name === 'noun' || name === 'subject' || name === 'object' || name === 'vd') {
       container.appendChild(buildSearchField(name, desc, required, slot.type));
+    } else if (name === 'locative') {
+      container.appendChild(buildTextField(name, desc, required,
+        'Place name, e.g. Pari (Pawnee), tuks\u2022kaku\' (store)'));
     } else {
       container.appendChild(buildTextField(name, desc, required));
     }
@@ -155,7 +176,16 @@ function buildCheckboxField(name, label) {
   return div;
 }
 
+// ── Placeholder hints per search slot ──
+const SEARCH_PLACEHOLDERS = {
+  noun:    'Type English, e.g. "water", "feather", "house"',
+  subject: 'Type English, e.g. "man", "woman", "boy"',
+  object:  'Type English, e.g. "deer", "corn", "door"',
+  vd:      'Type a quality, e.g. "red", "big", "good"',
+};
+
 function buildSearchField(name, label, required, slotType) {
+  const placeholder = SEARCH_PLACEHOLDERS[name] || 'Type an English word to search...';
   const div = document.createElement('div');
   div.className = 'sb-field sb-field--search';
   const classes = (slotType || '').split(',').map(c => c.trim()).filter(Boolean);
@@ -164,7 +194,7 @@ function buildSearchField(name, label, required, slotType) {
     <label for="slot-${name}">${label}${required ? ' *' : ''}</label>
     <input type="text" id="slot-${name}" name="${name}"
            ${required ? 'required' : ''}
-           placeholder="Type to search dictionary..."
+           placeholder="${placeholder || 'Type an English word to search...'}"
            autocomplete="off"
            hx-get="/api/search?limit=8${classParam}"
            hx-trigger="keyup changed delay:350ms"
@@ -339,6 +369,25 @@ document.addEventListener('click', function(e) {
 </script>
 
 <style>
+/* ── Sentence Builder help box ────────────────────────────────── */
+.sb-help {
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  background: var(--sky-50, #EDF6FD);
+  border: 1px solid var(--sky-200, #B3D4F0);
+  font-size: 0.9rem;
+}
+.sb-help summary { cursor: pointer; }
+.sb-help ul { margin: 0.5rem 0 0 0; padding-left: 1.25rem; }
+.sb-help li { margin-bottom: 0.35rem; }
+.sb-help code {
+  background: var(--earth-100, #f0ebe2);
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+  font-size: 0.85em;
+}
+
 /* ── Sentence Builder styles ──────────────────────────────────── */
 .sb-grid {
   display: grid;
