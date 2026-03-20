@@ -280,6 +280,25 @@
     </table>
     </div>
 
+    <details class="guide-note" open>
+        <summary>Note: <strong>u</strong> vs <strong>{% if spelling_pref == 'parks' %}uu{% else %}&ucirc;{% endif %}</strong> in pronunciation</summary>
+        <p>
+            In the pronunciation guide (e.g. <em>PIHT-koo</em>), both short
+            <strong>u</strong> and long
+            <strong>{% if spelling_pref == 'parks' %}uu{% else %}&ucirc;{% endif %}</strong>
+            are written as "oo" &mdash; English doesn't have a standard way to
+            show this difference. To tell them apart, check the spelling:
+            {% if spelling_pref == 'parks' %}
+            <strong>u</strong> = short, <strong>uu</strong> = long (held longer).
+            {% else %}
+            <strong>u</strong> = short, <strong>&ucirc;</strong> (circumflex) = long (held longer).
+            {% endif %}
+            For example: <span class="ipa" lang="x-paw">pitku</span> has short u,
+            while <span class="ipa" lang="x-paw">{% if spelling_pref == 'parks' %}aruusa{% else %}ar&ucirc;sa{% endif %}</span>
+            (horse) has long {% if spelling_pref == 'parks' %}uu{% else %}&ucirc;{% endif %}.
+        </p>
+    </details>
+
     <details class="guide-note">
         <summary>About the middle vowel <strong>e</strong></summary>
         <p>
