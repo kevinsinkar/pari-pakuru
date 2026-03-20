@@ -22,7 +22,7 @@
   <div class="wotd-body">
     {# The word #}
     <a href="/entry/{{ word_of_day.entry_id }}" style="text-decoration:none;">
-      <p class="wotd-headword">{{ word_of_day.headword }}</p>
+      <p class="wotd-headword" lang="x-paw">{{ word_of_day|primary_spelling }}</p>
     </a>
 
     {# Pronunciation #}

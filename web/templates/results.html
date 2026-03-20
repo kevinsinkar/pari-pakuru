@@ -8,7 +8,23 @@
 {% block content %}
 <!-- Search box at the top of the results page -->
 <section class="hero-search" style="margin-bottom:1.5rem;">
+  {# Direction toggle #}
+  <div role="radiogroup" aria-label="Search direction" style="
+    margin:0 0 0.5rem; display:flex; gap:2px; justify-content:center;
+  ">
+    <input type="radio" name="results_direction" id="res-dir-en-skiri" value="en-skiri"
+           {{ 'checked' if lang in ('english', 'auto') }} class="sr-only"
+           onchange="document.getElementById('results-lang-input').value='english'">
+    <label for="res-dir-en-skiri" class="search-dir {{ 'active' if lang in ('english', 'auto') }}">EN &rarr; Skiri</label>
+
+    <input type="radio" name="results_direction" id="res-dir-skiri-en" value="skiri-en"
+           {{ 'checked' if lang == 'skiri' }} class="sr-only"
+           onchange="document.getElementById('results-lang-input').value='skiri'">
+    <label for="res-dir-skiri-en" class="search-dir {{ 'active' if lang == 'skiri' }}">Skiri &rarr; EN</label>
+  </div>
+
   <form action="/search" method="get" role="search" style="position:relative;">
+    <input type="hidden" name="lang" id="results-lang-input" value="{{ lang }}">
     <input
       type="search"
       name="q"

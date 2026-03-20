@@ -131,15 +131,15 @@ function selectTemplate(tid) {
       container.appendChild(buildCheckboxField(name, 'Add "we" (completed action particle)'));
     } else if (name === 'verb_form') {
       const vfHints = {
-        T3: 'Skiri verb (absolutive), e.g. ra\u2022pahaat (it is red)',
-        T4: 'Skiri verb (absolutive), e.g. ru\' (it is)',
-        T5: 'Skiri verb (absolutive), e.g. rasuks\u2022at (you went)',
-        T8: 'Skiri verb (1st person), e.g. tatuks\u2022at (I went)',
-        T9: 'Skiri verb (3rd person), e.g. ti\u2022kuwutit (he killed)',
-        T10: 'Verb stem (imperative), e.g. teka (open)',
+        T3: 'Search BB verbs, e.g. "red" or "pahaat"',
+        T4: 'Search BB verbs, e.g. "is" or "ru"',
+        T5: 'Search BB verbs, e.g. "went" or "suks"',
+        T8: 'Search BB verbs, e.g. "went" or "tuks"',
+        T9: 'Search BB verbs, e.g. "killed" or "kuwutit"',
+        T10: 'Search BB verbs, e.g. "open" or "teka"',
       };
-      container.appendChild(buildTextField(name, desc, required,
-        vfHints[tid] || 'Skiri verb form, e.g. ra\u2022pahaat'));
+      container.appendChild(buildVerbFormField(name, desc, required,
+        vfHints[tid] || 'Search for a verb in English or Skiri...'));
     } else if (name === 'noun' || name === 'subject' || name === 'object' || name === 'vd') {
       container.appendChild(buildSearchField(name, desc, required, slot.type));
     } else if (name === 'locative') {
@@ -236,6 +236,51 @@ function buildSearchField(name, label, required, slotType) {
           });
       });
     }
+  }, 50);
+
+  return div;
+}
+
+function buildVerbFormField(name, label, required, placeholder) {
+  const div = document.createElement('div');
+  div.className = 'sb-field sb-field--search';
+  div.innerHTML = `
+    <label for="slot-${name}">${label}${required ? ' *' : ''}
+      <small style="font-weight:400; color:var(--earth-400);"> — search Blue Book verbs or type your own</small>
+    </label>
+    <input type="text" id="slot-${name}" name="${name}"
+           ${required ? 'required' : ''}
+           placeholder="${placeholder}"
+           autocomplete="off">
+    <div class="sb-dropdown" id="dropdown-${name}"></div>
+  `;
+
+  setTimeout(() => {
+    const input = document.getElementById(`slot-${name}`);
+    if (!input) return;
+    input.addEventListener('input', function() {
+      const q = this.value.trim();
+      if (q.length < 2) {
+        document.getElementById(`dropdown-${name}`).innerHTML = '';
+        return;
+      }
+      fetch(`/api/bb_verb_forms?q=${encodeURIComponent(q)}&limit=10`)
+        .then(r => r.json())
+        .then(data => {
+          const dd = document.getElementById(`dropdown-${name}`);
+          if (!data || data.length === 0) {
+            dd.innerHTML = '<div class="sb-dd-empty">No BB matches — you can type a form directly</div>';
+            return;
+          }
+          dd.innerHTML = data.map(r => `
+            <div class="sb-dd-item" onclick="pickResult('${name}', '${r.skiri_form.replace(/'/g, "\\'")}')">
+              <strong>${r.skiri_form}</strong>
+              <small style="color:var(--earth-500);">${r.english}</small>
+              ${r.lesson ? '<span class="badge badge--bluebook" style="font-size:0.65em;">L' + r.lesson + '</span>' : ''}
+            </div>
+          `).join('');
+        });
+    });
   }, 50);
 
   return div;
@@ -342,7 +387,7 @@ function renderResult(data) {
 
   document.getElementById('result-body').innerHTML = `
     <article class="sb-result">
-      <div class="sb-result__sentence font-serif">${data.skiri_sentence}</div>
+      <div class="sb-result__sentence font-serif" lang="x-paw">${data.skiri_sentence}</div>
       <div class="sb-result__gloss">${data.english_gloss}</div>
       <div class="sb-result__meta">
         <span class="badge ${confClass}">${data.confidence}</span>

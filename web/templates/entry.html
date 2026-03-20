@@ -6,18 +6,19 @@
 <article>
     {# ---- Header ---- #}
     <div class="entry-header">
-        <div class="headword">{{ entry.headword }}</div>
+        <div class="headword" lang="x-paw">{{ entry|primary_spelling }}</div>
 
-        {% if entry.normalized_form and entry.normalized_form != entry.headword %}
-        <div style="font-size: 1.2em; color: var(--pico-muted-color);">{{ entry.normalized_form }}</div>
+        {% set secondary = entry|secondary_spelling %}
+        {% if secondary %}
+        <div style="font-size: 1.2em; color: var(--pico-muted-color);" lang="x-paw">{{ secondary }}</div>
         {% endif %}
 
         <dl class="entry-pronunciations">
             {% if entry.simplified_pronunciation %}
-            <dt>Pronounce:</dt><dd class="pronunciation">{{ entry.simplified_pronunciation|format_pitch }}</dd>
+            <dt>Pronounce:</dt><dd class="pronunciation">{{ entry.simplified_pronunciation|format_pitch }} {% include "_pronunciation_help.html" %}</dd>
             {% endif %}
             {% if entry.phonetic_form %}
-            <dt>IPA:</dt><dd class="ipa">{{ entry.phonetic_form }}</dd>
+            <dt>IPA:</dt><dd class="ipa" lang="x-paw-fonipa">{{ entry.phonetic_form }}</dd>
             {% endif %}
         </dl>
         {% if entry.simplified_pronunciation %}
@@ -26,7 +27,7 @@
 
         <div>
             {% if entry.grammatical_class %}
-            <span class="badge badge-class">{{ entry.grammatical_class }}</span>
+            <span class="badge badge-class" title="{{ gram_class_labels.get(entry.grammatical_class, entry.grammatical_class) }}">{{ entry.grammatical_class }}</span>
             {% endif %}
             {% if entry.verb_class %}
             <span class="badge badge-verb-class">Class {{ entry.verb_class }}</span>
@@ -66,8 +67,9 @@
 
     {# ---- Etymology ---- #}
     {% if entry.etymology %}
-    <section class="entry-section">
-        <h3>Etymology</h3>
+    <details class="entry-details">
+        <summary>Etymology</summary>
+        <div class="entry-details-body">
         {% if entry.etymology.raw_etymology %}
         <p>{{ entry.etymology.raw_etymology }}</p>
         {% endif %}
@@ -87,13 +89,15 @@
             </tbody>
         </table>
         {% endif %}
-    </section>
+        </div>
+    </details>
     {% endif %}
 
     {# ---- Paradigmatic Forms (5-form table) ---- #}
     {% if entry.paradigmatic_forms %}
-    <section class="entry-section">
-        <h3>Paradigmatic Forms <span class="attested-label">Attested (Parks Dictionary)</span></h3>
+    <details class="entry-details">
+        <summary>Paradigmatic Forms <span class="attested-label">Attested (Parks Dictionary)</span></summary>
+        <div class="entry-details-body">
         <table class="paradigm-table">
             <thead>
                 <tr><th>#</th><th>Form</th><th>Description</th></tr>
@@ -108,13 +112,15 @@
                 {% endfor %}
             </tbody>
         </table>
-    </section>
+        </div>
+    </details>
     {% endif %}
 
     {# ---- Full Conjugation Table (verb_paradigms) ---- #}
     {% if paradigm_table %}
-    <section class="entry-section">
-        <h3>Full Conjugation: {{ paradigm_table.verb_heading }} <span class="attested-label">Attested (Appendix 1)</span></h3>
+    <details class="entry-details">
+        <summary>Full Conjugation: {{ paradigm_table.verb_heading }} <span class="attested-label">Attested (Appendix 1)</span></summary>
+        <div class="entry-details-body">
         <div class="conjugation-table" style="overflow-x: auto;">
             <table>
                 <thead>
@@ -140,7 +146,8 @@
                 </tbody>
             </table>
         </div>
-    </section>
+        </div>
+    </details>
     {% endif %}
 
     {# ---- Possession Paradigm (nouns only) ---- #}
@@ -154,7 +161,7 @@
         <h3>Examples</h3>
         {% for ex in entry.examples %}
         <blockquote>
-            <p class="ipa">{{ ex.skiri_text }}</p>
+            <p class="ipa" lang="x-paw">{{ ex.skiri_text }}</p>
             {% if ex.english_translation %}
             <p><em>{{ ex.english_translation }}</em></p>
             {% endif %}
@@ -168,8 +175,9 @@
 
     {# ---- Derived Stems ---- #}
     {% if derived_stems %}
-    <section class="entry-section">
-        <h3>Derived Stems</h3>
+    <details class="entry-details">
+        <summary>Derived Stems</summary>
+        <div class="entry-details-body">
         {% for ds in derived_stems %}
         <div style="margin-bottom: 0.5em;">
             <strong class="ipa">{{ ds.stem_form }}</strong>
@@ -177,25 +185,29 @@
             {% if ds.definition %}<span> — {{ ds.definition }}</span>{% endif %}
         </div>
         {% endfor %}
-    </section>
+        </div>
+    </details>
     {% endif %}
 
     {# ---- Cognates ---- #}
     {% if entry.cognates %}
-    <section class="entry-section">
-        <h3>Cognates</h3>
+    <details class="entry-details">
+        <summary>Cognates</summary>
+        <div class="entry-details-body">
         <ul>
             {% for c in entry.cognates %}
             <li><strong>{{ c.language }}</strong> {{ c.form }}</li>
             {% endfor %}
         </ul>
-    </section>
+        </div>
+    </details>
     {% endif %}
 
     {# ---- Cross-References ---- #}
     {% if entry.cross_references %}
-    <section class="entry-section">
-        <h3>See Also</h3>
+    <details class="entry-details">
+        <summary>See Also</summary>
+        <div class="entry-details-body">
         <ul>
             {% for xr in entry.cross_references %}
             <li>
@@ -206,13 +218,15 @@
             </li>
             {% endfor %}
         </ul>
-    </section>
+        </div>
+    </details>
     {% endif %}
 
     {# ---- Blue Book Attestations ---- #}
     {% if bb_info.attestations %}
-    <section class="entry-section">
-        <h3>Blue Book (P&acirc;ri Pak&ucirc;ru') References</h3>
+    <details class="entry-details">
+        <summary>Blue Book (P&acirc;ri Pak&ucirc;ru') References</summary>
+        <div class="entry-details-body">
         <table>
             <thead><tr><th>Lesson</th><th>Form</th><th>English</th><th>Context</th></tr></thead>
             <tbody>
@@ -226,7 +240,8 @@
                 {% endfor %}
             </tbody>
         </table>
-    </section>
+        </div>
+    </details>
     {% endif %}
 
     {# ---- Semantic Tags ---- #}
@@ -243,9 +258,12 @@
 
     {# ---- Page reference ---- #}
     {% if entry.page_number %}
-    <section class="entry-section" style="margin-top: 2em;">
+    <details class="entry-details">
+        <summary>Page Reference</summary>
+        <div class="entry-details-body">
         <small>Parks Dictionary, page {{ entry.page_number }}</small>
-    </section>
+        </div>
+    </details>
     {% endif %}
 
     {# ---- Community Feedback ---- #}
@@ -280,7 +298,7 @@
 <dialog id="feedback-modal" class="feedback-modal">
     <article>
         <header>
-            <button aria-label="Close" rel="prev" onclick="closeFeedbackModal()" class="feedback-modal-close">&times;</button>
+            <button type="button" aria-label="Close" rel="prev" onclick="closeFeedbackModal()" class="feedback-modal-close">&times;</button>
             <h3 id="feedback-modal-title">Flag an Issue</h3>
         </header>
         <form id="feedback-form" onsubmit="return submitFeedback(event)">

@@ -20,8 +20,11 @@
     <h3>Grammatical Classes</h3>
     <div class="class-grid">
         {% for cls, count in classes %}
-        <a href="/browse/class/{{ cls }}" class="class-card">
+        <a href="/browse/class/{{ cls }}" class="class-card" title="{{ gram_class_labels.get(cls, cls) }}">
             <strong>{{ cls }}</strong>
+            {% if gram_class_labels.get(cls) %}
+            <span class="class-desc">{{ gram_class_labels[cls] }}</span>
+            {% endif %}
             <span class="count">{{ count }} entries</span>
         </a>
         {% endfor %}

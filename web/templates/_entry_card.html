@@ -19,13 +19,14 @@
     {# Headword + Part of Speech #}
     <div style="display:flex; align-items:baseline; gap:0.75rem; flex-wrap:wrap;">
       <a href="/entry/{{ entry.entry_id }}" style="text-decoration:none;">
-        <span class="headword">{{ entry.headword }}</span>
+        <span class="headword" lang="x-paw">{{ entry|primary_spelling }}</span>
       </a>
-      {% if entry.normalized_form and entry.normalized_form != entry.headword %}
-      <span class="normalized">({{ entry.normalized_form }})</span>
+      {% set secondary = entry|secondary_spelling %}
+      {% if secondary %}
+      <span class="normalized" lang="x-paw">({{ secondary }})</span>
       {% endif %}
       {% if entry.grammatical_class %}
-      <span class="badge badge-class">{{ entry.grammatical_class }}</span>
+      <span class="badge badge-class" title="{{ gram_class_labels.get(entry.grammatical_class, entry.grammatical_class) }}">{{ entry.grammatical_class }}</span>
       {% endif %}
     </div>
 
@@ -33,6 +34,7 @@
     {% if entry.simplified_pronunciation %}
     <div style="margin-top:0.35rem;">
       <span class="font-serif pronunciation">{{ entry.simplified_pronunciation|format_pitch }}</span>
+      {% include "_pronunciation_help.html" %}
     </div>
     {% endif %}
 

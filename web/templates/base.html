@@ -20,9 +20,10 @@
   <script src="https://unpkg.com/htmx.org@2.0.4"></script>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   <!-- ====== Top Navigation ====== -->
   <header class="container">
-    <nav>
+    <nav class="site-nav">
       <ul>
         <li>
           <a href="/" class="contrast" style="text-decoration:none; display:flex; align-items:center; gap:0.75rem;">
@@ -44,7 +45,17 @@
           </a>
         </li>
       </ul>
-      <ul>
+
+      {# Hamburger toggle button — visible only on mobile #}
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleNav(this)">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+
+      <ul class="nav-links">
         <li><a href="/" {% if active_page == 'home' %}aria-current="page"{% endif %}>Dictionary</a></li>
         <li><a href="/search" {% if active_page == 'search' %}aria-current="page"{% endif %}>Search</a></li>
         <li><a href="/browse" {% if active_page == 'browse' %}aria-current="page"{% endif %}>Browse</a></li>
@@ -53,6 +64,17 @@
         <li><a href="/guide" {% if active_page == 'guide' %}aria-current="page"{% endif %}>Syllable Guide</a></li>
         <li><a href="/dashboard" {% if active_page == 'dashboard' %}aria-current="page"{% endif %}>Dashboard</a></li>
         <li><a href="/about" {% if active_page == 'about' %}aria-current="page"{% endif %}>About</a></li>
+
+        {# Spelling preference toggle — inside nav for mobile accessibility #}
+        <li class="nav-spelling-toggle">
+          <form action="/preferences" method="post" class="spelling-toggle-form">
+            <span class="spelling-toggle-label">Spelling:</span>
+            <button type="submit" name="spelling" value="parks"
+                    class="spelling-btn {{ 'spelling-btn--active' if spelling_pref == 'parks' }}">Parks</button>
+            <button type="submit" name="spelling" value="simplified"
+                    class="spelling-btn {{ 'spelling-btn--active' if spelling_pref == 'simplified' }}">Simplified</button>
+          </form>
+        </li>
       </ul>
     </nav>
     {% block header_search %}
@@ -75,7 +97,7 @@
   </header>
 
   <!-- ====== Main Content ====== -->
-  <main class="container">
+  <main class="container" id="main-content">
     <div id="live-results"></div>
     {% block content %}{% endblock %}
   </main>
@@ -89,6 +111,14 @@
     </small>
   </footer>
 
+  <script>
+    function toggleNav(btn) {
+      var nav = btn.closest('nav');
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('nav-open');
+    }
+  </script>
   <script src="/static/js/search.js"></script>
   {% block scripts %}{% endblock %}
 </body>

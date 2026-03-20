@@ -17,14 +17,15 @@
 <div class="fc-arena" id="fc-arena">
     {% for card in fset.cards %}
     <div class="fc-card-wrapper{% if not loop.first %} fc-hidden{% endif %}" data-index="{{ loop.index0 }}">
-        <div class="fc-card" onclick="this.classList.toggle('flipped')">
+        <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
             <div class="fc-front">
-                <div class="fc-front-word">{{ card.normalized_form or card.headword }}</div>
+                <div class="fc-front-word" lang="x-paw">{{ card|primary_spelling }}</div>
                 {% if card.simplified_pronunciation %}
                 <div class="fc-front-pron">{{ card.simplified_pronunciation|format_pitch }}</div>
                 {% endif %}
-                {% if card.headword and card.headword != (card.normalized_form or card.headword) %}
-                <div class="fc-front-parks">{{ card.headword }}</div>
+                {% set fc_secondary = card|secondary_spelling %}
+                {% if fc_secondary %}
+                <div class="fc-front-parks" lang="x-paw">{{ fc_secondary }}</div>
                 {% endif %}
                 {% if card.grammatical_class %}
                 <span class="badge badge-class">{{ card.grammatical_class }}</span>
@@ -36,15 +37,16 @@
             </div>
             <div class="fc-back">
                 <div class="fc-back-definition">{{ card.definition }}</div>
-                <div class="fc-back-word">{{ card.normalized_form or card.headword }}</div>
+                <div class="fc-back-word" lang="x-paw">{{ card|primary_spelling }}</div>
                 {% if card.simplified_pronunciation %}
                 <div class="fc-back-pron">{{ card.simplified_pronunciation|format_pitch }}</div>
                 {% endif %}
                 {% if card.phonetic_form %}
-                <div class="fc-back-ipa ipa">{{ card.phonetic_form }}</div>
+                <div class="fc-back-ipa ipa" lang="x-paw">{{ card.phonetic_form }}</div>
                 {% endif %}
-                {% if card.headword and card.headword != (card.normalized_form or card.headword) %}
-                <div class="fc-back-parks">Parks: {{ card.headword }}</div>
+                {% set fc_back_secondary = card|secondary_spelling %}
+                {% if fc_back_secondary %}
+                <div class="fc-back-parks" lang="x-paw">{{ 'Parks' if spelling_pref == 'simplified' else 'Simplified' }}: {{ fc_back_secondary }}</div>
                 {% endif %}
                 <a href="/entry/{{ card.entry_id }}" class="fc-back-link">View full entry</a>
             </div>
@@ -53,10 +55,26 @@
     {% endfor %}
 </div>
 
+<div class="fc-assess" id="fc-assess" style="display:none;">
+    <button class="fc-assess-btn fc-assess-btn--got" onclick="fcAssess('known')">Got it</button>
+    <button class="fc-assess-btn fc-assess-btn--miss" onclick="fcAssess('missed')">Missed</button>
+</div>
+
 <div class="fc-controls">
     <button id="fc-prev" class="outline" onclick="fcNav(-1)" disabled>&laquo; Previous</button>
     <button id="fc-shuffle" class="outline secondary" onclick="fcShuffle()">Shuffle</button>
     <button id="fc-next" onclick="fcNav(1)">Next &raquo;</button>
+</div>
+
+{# Session summary — shown when all cards reviewed #}
+<div id="fc-summary" style="display:none;">
+    <article style="text-align:center; padding:1.5rem; border:2px solid var(--sage-200); border-radius:0.875rem; background:var(--sage-50);">
+        <strong style="font-size:1.2rem;" id="fc-summary-text"></strong>
+        <div style="margin-top:0.75rem; display:flex; gap:0.5rem; justify-content:center;">
+            <button class="outline" onclick="fcReviewMissed()">Review Missed</button>
+            <button class="outline secondary" onclick="fcRestart()">Restart All</button>
+        </div>
+    </article>
 </div>
 
 <nav class="fc-week-nav">
@@ -71,31 +89,59 @@
 
 <script>
 (function() {
+    const WEEK = {{ fset.week }};
     const arena = document.getElementById('fc-arena');
     const wrappers = Array.from(arena.querySelectorAll('.fc-card-wrapper'));
     const total = wrappers.length;
+    const assessEl = document.getElementById('fc-assess');
     let current = 0;
-    let order = wrappers.map((_, i) => i); // display order
+    let order = wrappers.map((_, i) => i);
+
+    // Entry IDs for tracking
+    const entryIds = {{ fset.cards | map(attribute='entry_id') | list | tojson }};
+
+    // Load/save progress from localStorage
+    const STORAGE_KEY = `fc-progress-week-${WEEK}`;
+    let progress = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{"known":[],"missed":[]}');
+
+    function saveProgress() {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
+    }
+
+    function showAssessButtons() {
+        const card = wrappers[order[current]].querySelector('.fc-card');
+        if (card.classList.contains('flipped')) {
+            assessEl.style.display = '';
+        } else {
+            assessEl.style.display = 'none';
+        }
+    }
+
+    // Watch for card flips to show/hide assess buttons
+    const observer = new MutationObserver(showAssessButtons);
+    wrappers.forEach(w => {
+        observer.observe(w.querySelector('.fc-card'), { attributes: true, attributeFilter: ['class'] });
+    });
 
     function show(idx) {
         wrappers.forEach(w => w.classList.add('fc-hidden'));
         wrappers[order[idx]].classList.remove('fc-hidden');
-        // Unflip
         wrappers[order[idx]].querySelector('.fc-card').classList.remove('flipped');
         current = idx;
-        document.getElementById('fc-progress-text').textContent = `Card ${idx + 1} of ${total}`;
+        document.getElementById('fc-progress-text').textContent = `Card ${idx + 1} of ${order.length}`;
         document.getElementById('fc-progress-bar').value = idx + 1;
+        document.getElementById('fc-progress-bar').max = order.length;
         document.getElementById('fc-prev').disabled = (idx === 0);
-        document.getElementById('fc-next').disabled = (idx === total - 1);
+        document.getElementById('fc-next').disabled = (idx === order.length - 1);
+        assessEl.style.display = 'none';
     }
 
     window.fcNav = function(delta) {
         const next = current + delta;
-        if (next >= 0 && next < total) show(next);
+        if (next >= 0 && next < order.length) show(next);
     };
 
     window.fcShuffle = function() {
-        // Fisher-Yates shuffle
         for (let i = order.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [order[i], order[j]] = [order[j], order[i]];
@@ -103,17 +149,71 @@
         show(0);
     };
 
+    window.fcAssess = function(result) {
+        const eid = entryIds[order[current]];
+        // Remove from both lists first to avoid duplicates
+        progress.known = progress.known.filter(id => id !== eid);
+        progress.missed = progress.missed.filter(id => id !== eid);
+        if (result === 'known') {
+            progress.known.push(eid);
+        } else {
+            progress.missed.push(eid);
+        }
+        saveProgress();
+        assessEl.style.display = 'none';
+        // Auto-advance or show summary
+        if (current < order.length - 1) {
+            fcNav(1);
+        } else {
+            showSummary();
+        }
+    };
+
+    function showSummary() {
+        const k = progress.known.length;
+        const m = progress.missed.length;
+        document.getElementById('fc-summary-text').textContent =
+            `You knew ${k} of ${k + m} words!`;
+        document.getElementById('fc-summary').style.display = '';
+    }
+
+    window.fcReviewMissed = function() {
+        if (progress.missed.length === 0) return;
+        order = progress.missed.map(eid => entryIds.indexOf(eid)).filter(i => i >= 0);
+        document.getElementById('fc-summary').style.display = 'none';
+        show(0);
+    };
+
+    window.fcRestart = function() {
+        progress = { known: [], missed: [] };
+        saveProgress();
+        order = wrappers.map((_, i) => i);
+        document.getElementById('fc-summary').style.display = 'none';
+        show(0);
+    };
+
     // Keyboard navigation
     document.addEventListener('keydown', function(e) {
         if (e.key === 'ArrowRight' || e.key === ' ') {
             e.preventDefault();
-            if (current < total - 1) fcNav(1);
+            if (current < order.length - 1) fcNav(1);
         } else if (e.key === 'ArrowLeft') {
             e.preventDefault();
             if (current > 0) fcNav(-1);
         } else if (e.key === 'ArrowUp' || e.key === 'ArrowDown' || e.key === 'Enter') {
             e.preventDefault();
             wrappers[order[current]].querySelector('.fc-card').classList.toggle('flipped');
+        }
+    });
+
+    // Touch swipe support
+    let touchStartX = 0;
+    arena.addEventListener('touchstart', function(e) { touchStartX = e.changedTouches[0].screenX; });
+    arena.addEventListener('touchend', function(e) {
+        const diff = e.changedTouches[0].screenX - touchStartX;
+        if (Math.abs(diff) > 50) {
+            if (diff > 0 && current > 0) fcNav(-1);
+            else if (diff < 0 && current < order.length - 1) fcNav(1);
         }
     });
 

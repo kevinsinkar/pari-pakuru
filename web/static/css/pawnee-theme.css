@@ -157,6 +157,99 @@
   text-decoration: none;
 }
 
+/* ---------- Skip navigation link ---------- */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 1000;
+  padding: 0.5rem 1rem;
+  background: var(--sky-700);
+  color: white;
+  text-decoration: none;
+  border-radius: 0 0 0.5rem 0;
+}
+.skip-link:focus {
+  left: 0;
+}
+
+/* ---------- Mobile hamburger nav ---------- */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: 1px solid var(--earth-200);
+  border-radius: 0.5rem;
+  padding: 0.35rem 0.5rem;
+  cursor: pointer;
+  color: var(--earth-700);
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+  .site-nav {
+    flex-wrap: wrap;
+  }
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .nav-links li {
+    width: 100%;
+  }
+  .nav-links li a {
+    display: block;
+    padding: 0.5rem 0;
+  }
+  .nav-open .nav-links {
+    display: flex;
+  }
+}
+
+/* ---------- Spelling preference toggle ---------- */
+.nav-spelling-toggle {
+  list-style: none;
+}
+.spelling-toggle-form {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin: 0;
+  padding: 0.25rem 0;
+}
+.spelling-toggle-label {
+  font-size: 0.75rem;
+  color: var(--earth-500);
+  margin-right: 0.25rem;
+  white-space: nowrap;
+}
+.spelling-btn {
+  padding: 0.15rem 0.5rem;
+  border-radius: 0.4rem;
+  font-size: 0.7rem;
+  cursor: pointer;
+  border: 1px solid var(--earth-200);
+  background: transparent;
+  color: var(--earth-600);
+  transition: all 0.15s ease;
+  margin: 0;
+  line-height: 1.4;
+}
+.spelling-btn:hover {
+  background: var(--sky-50);
+}
+.spelling-btn--active {
+  background: var(--sky-50);
+  border-color: var(--sky-300);
+  color: var(--sky-900);
+  font-weight: 600;
+}
+
 /* ---------- Navigation search bar ---------- */
 .nav-search {
   margin-bottom: 0;
@@ -227,13 +320,13 @@
 
 .badge-conf-med {
   background: var(--gold-50);
-  color: var(--gold-800);
+  color: #5A4310; /* darkened from gold-800 for 4.5:1 AA contrast on gold-50 */
   border: 1px solid var(--gold-200);
 }
 
 .badge-conf-low {
   background: var(--clay-50);
-  color: var(--clay-700);
+  color: var(--clay-800); /* use 800 instead of 700 for better contrast */
   border: 1px solid var(--clay-200);
 }
 
@@ -296,6 +389,19 @@
   background: var(--earth-800);
   color: var(--earth-100);
   border-color: var(--earth-800);
+}
+
+/* ---------- Screen-reader only (visually hidden) ---------- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* ---------- Search direction toggle ---------- */
@@ -436,6 +542,44 @@
   padding-bottom: 0.25em;
 }
 
+/* ---------- Collapsible entry sections ---------- */
+.entry-details {
+  margin-top: 1.5em;
+  border: 1px solid var(--earth-200);
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+.entry-details + .entry-details {
+  margin-top: 0.75em;
+}
+.entry-details summary {
+  cursor: pointer;
+  padding: 0.6rem 1rem;
+  font-size: 1em;
+  font-weight: 500;
+  color: var(--earth-700);
+  background: var(--earth-50);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.entry-details summary::-webkit-details-marker {
+  display: none;
+}
+.entry-details summary::before {
+  content: '\25B6';
+  font-size: 0.55em;
+  color: var(--earth-400);
+  transition: transform 0.2s ease;
+}
+.entry-details[open] summary::before {
+  transform: rotate(90deg);
+}
+.entry-details .entry-details-body {
+  padding: 0.75rem 1rem 1rem;
+}
+
 /* ---------- Browse page ---------- */
 .tag-cloud {
   display: flex;
@@ -462,6 +606,13 @@
 .class-card:hover {
   background: var(--earth-50);
 }
+.class-card .class-desc {
+  display: block;
+  font-size: 0.75em;
+  color: var(--earth-500);
+  font-weight: 400;
+  margin-top: 0.15em;
+}
 .class-card .count {
   display: block;
   font-size: 0.8em;
@@ -478,6 +629,12 @@
 @media (max-width: 768px) {
   .search-layout {
     grid-template-columns: 1fr;
+  }
+  .filter-sidebar {
+    order: -1;
+  }
+  .filter-sidebar details:not([open]) {
+    margin-bottom: 0.25em;
   }
 }
 
@@ -611,6 +768,30 @@
   line-height: 1.5;
 }
 
+/* ---------- Start Here card ---------- */
+.start-here-card {
+  border: 2px solid var(--sage-200);
+  border-radius: 0.875rem;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  background: var(--sage-50);
+}
+.start-here-link {
+  display: block;
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.5rem;
+  background: white;
+  border: 1px solid var(--sage-200);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--sage-800);
+  transition: background 0.15s;
+}
+.start-here-link:hover {
+  background: var(--sage-100);
+}
+
 /* ---------- Sidebar stats ---------- */
 .stats-card {
   border: 1px solid var(--earth-200);
@@ -670,6 +851,7 @@
 .conjugation-table {
   font-size: 0.85em;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .conjugation-table th {
   white-space: nowrap;
@@ -677,6 +859,25 @@
 }
 .conjugation-table td {
   white-space: nowrap;
+}
+/* Sticky first column (mode name) on horizontal scroll */
+.conjugation-table td:first-child,
+.conjugation-table th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: white;
+}
+.conjugation-table th:first-child {
+  background: var(--earth-100);
+}
+@media (prefers-color-scheme: dark) {
+  .conjugation-table td:first-child {
+    background: #241C14;
+  }
+  .conjugation-table th:first-child {
+    background: #2A2018;
+  }
 }
 
 /* ---------- Morpheme table ---------- */
@@ -742,6 +943,15 @@
 .fc-week-count {
   font-size: 0.8em;
   color: var(--earth-500);
+}
+.fc-week-progress {
+  display: none;
+  font-size: 0.7em;
+  color: var(--sage-800);
+  background: var(--sage-50);
+  padding: 0.15em 0.5em;
+  border-radius: 0.75em;
+  margin-top: 0.25em;
 }
 
 /* ---------- Flashcard study session ---------- */
@@ -896,6 +1106,39 @@
   min-width: 120px;
 }
 
+/* Self-assessment buttons */
+.fc-assess {
+  display: flex;
+  justify-content: center;
+  gap: 0.75em;
+  margin-bottom: 0.75em;
+}
+.fc-assess-btn {
+  padding: 0.4em 1.5em;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9em;
+  cursor: pointer;
+  border: 2px solid;
+  transition: background 0.15s;
+}
+.fc-assess-btn--got {
+  background: var(--sage-50);
+  color: var(--sage-800);
+  border-color: var(--sage-200);
+}
+.fc-assess-btn--got:hover {
+  background: var(--sage-100);
+}
+.fc-assess-btn--miss {
+  background: var(--clay-50);
+  color: var(--clay-800);
+  border-color: var(--clay-200);
+}
+.fc-assess-btn--miss:hover {
+  background: var(--clay-200);
+}
+
 .fc-week-nav {
   display: flex;
   justify-content: center;
@@ -974,6 +1217,52 @@
 .fc-example-label-back {
   color: var(--earth-400);
   border-left-color: var(--sky-300);
+}
+
+/* ---------- Pronunciation help tooltip ---------- */
+.pron-help-trigger {
+  position: relative;
+  display: inline-block;
+  cursor: help;
+  color: var(--earth-400);
+  margin-left: 0.3em;
+}
+.pron-help-popup {
+  display: none;
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 8px);
+  transform: translateX(-50%);
+  background: white;
+  border: 1px solid var(--earth-200);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  min-width: 220px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  z-index: 200;
+  font-size: 0.8rem;
+  color: var(--earth-700);
+  text-align: left;
+  white-space: normal;
+}
+.pron-help-trigger:hover .pron-help-popup,
+.pron-help-trigger:focus .pron-help-popup {
+  display: block;
+}
+.pron-help-table {
+  margin: 0.4em 0;
+  border: none;
+  font-size: 0.9em;
+}
+.pron-help-table td {
+  padding: 0.1em 0.3em;
+  border: none;
+}
+@media (prefers-color-scheme: dark) {
+  .pron-help-popup {
+    background: #2A2018;
+    border-color: #4A3828;
+  }
 }
 
 /* ---------- Syllable guide ---------- */

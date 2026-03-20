@@ -12,21 +12,18 @@
     <h1 class="font-serif" style="text-align:center; margin-bottom:0.2em;">P&#226;ri Pak&#251;ru'</h1>
     <p style="text-align:center; color:var(--earth-500); margin-bottom:1.5rem;">Skiri Pawnee Dictionary &amp; Language Reference</p>
 
-    {# Direction toggle #}
-    <fieldset role="group" style="
-      margin:0 0 0.5rem; padding:0; border:none; display:flex; gap:2px; justify-content:center;
+    {# Direction toggle — accessible radio group #}
+    <div role="radiogroup" aria-label="Search direction" style="
+      margin:0 0 0.5rem; display:flex; gap:2px; justify-content:center;
     ">
-      <label style="margin:0;">
-        <input type="radio" name="direction" value="en-skiri" checked style="display:none;">
-        <small class="search-dir active" role="button"
-               onclick="setDirection(this, 'en-skiri')">EN &rarr; Skiri</small>
-      </label>
-      <label style="margin:0;">
-        <input type="radio" name="direction" value="skiri-en" style="display:none;">
-        <small class="search-dir" role="button"
-               onclick="setDirection(this, 'skiri-en')">Skiri &rarr; EN</small>
-      </label>
-    </fieldset>
+      <input type="radio" name="direction" id="dir-en-skiri" value="en-skiri" checked
+             class="sr-only" onchange="setDirection('en-skiri')">
+      <label for="dir-en-skiri" class="search-dir active">EN &rarr; Skiri</label>
+
+      <input type="radio" name="direction" id="dir-skiri-en" value="skiri-en"
+             class="sr-only" onchange="setDirection('skiri-en')">
+      <label for="dir-skiri-en" class="search-dir">Skiri &rarr; EN</label>
+    </div>
 
     {# Search input with HTMX live updates + form submit to full search page #}
     <form action="/search" method="get" role="search" style="position:relative;" id="hero-search-form">
@@ -90,6 +87,19 @@
 
   <!-- Right Column: Sidebar -->
   <aside>
+    {# Start Here — beginner pathway #}
+    <article class="start-here-card">
+      <span class="section-label">New to Skiri Pawnee?</span>
+      <strong style="display:block; margin-bottom:0.5rem; color:var(--earth-800);">Start Here</strong>
+      <p style="font-size:0.85rem; color:var(--earth-600); margin-bottom:0.75rem;">
+        Learn your first 20 words, then explore the syllable guide to understand pronunciation.
+      </p>
+      <div style="display:flex; flex-direction:column; gap:0.4rem;">
+        <a href="/flashcards/1" class="start-here-link">Flashcards: Week 1</a>
+        <a href="/guide" class="start-here-link">Syllable Guide</a>
+      </div>
+    </article>
+
     {# Word of the Day #}
     {% include "_word_of_day.html" %}
 
@@ -105,11 +115,9 @@
 {% block scripts %}
 <script>
   // Direction toggle handler
-  function setDirection(el, dir) {
+  function setDirection(dir) {
     document.querySelectorAll('.search-dir').forEach(function(d) { d.classList.remove('active'); });
-    el.classList.add('active');
-    // Update the hidden radio
-    document.querySelector('input[name="direction"][value="' + dir + '"]').checked = true;
+    document.querySelector('label[for="dir-' + dir + '"]').classList.add('active');
     // Re-trigger search if there's a query
     var input = document.querySelector('input[name="q"]');
     if (input.value.trim()) {

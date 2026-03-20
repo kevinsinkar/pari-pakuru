@@ -14,7 +14,7 @@ import re
 import sys
 from datetime import date
 
-from flask import Flask, g, jsonify, render_template, request, abort
+from flask import Flask, g, jsonify, redirect, render_template, request, abort, make_response
 from markupsafe import Markup
 
 # Ensure project root is on path
@@ -200,16 +200,55 @@ def set_charset(response):
 
 @app.context_processor
 def inject_helpers():
+    spelling_pref = request.cookies.get("spelling", "simplified")
     return {
         "abs": abs,
         "min": min,
         "max": max,
+        "spelling_pref": spelling_pref,
+        "gram_class_labels": GRAM_CLASS_LABELS,
     }
+
+
+@app.template_filter("primary_spelling")
+def primary_spelling(entry):
+    """Return the preferred primary spelling for an entry."""
+    pref = request.cookies.get("spelling", "simplified")
+    if pref == "parks":
+        return entry.headword if hasattr(entry, "headword") else entry.get("headword", "")
+    # simplified
+    nf = entry.normalized_form if hasattr(entry, "normalized_form") else entry.get("normalized_form")
+    hw = entry.headword if hasattr(entry, "headword") else entry.get("headword", "")
+    return nf if nf and nf != hw else hw
+
+
+@app.template_filter("secondary_spelling")
+def secondary_spelling(entry):
+    """Return the secondary (non-preferred) spelling for an entry."""
+    pref = request.cookies.get("spelling", "simplified")
+    hw = entry.headword if hasattr(entry, "headword") else entry.get("headword", "")
+    nf = entry.normalized_form if hasattr(entry, "normalized_form") else entry.get("normalized_form")
+    if pref == "parks":
+        return nf if nf and nf != hw else None
+    # simplified: secondary is Parks
+    return hw if nf and nf != hw else None
 
 
 # ------------------------------------------------------------------
 # Routes
 # ------------------------------------------------------------------
+
+@app.route("/preferences", methods=["POST"])
+def set_preferences():
+    """Set user preferences (spelling toggle) via cookie and redirect back."""
+    spelling = request.form.get("spelling", "simplified")
+    if spelling not in ("parks", "simplified"):
+        spelling = "simplified"
+    referrer = request.referrer or "/"
+    resp = make_response(redirect(referrer))
+    resp.set_cookie("spelling", spelling, max_age=365 * 24 * 3600, samesite="Lax")
+    return resp
+
 
 @app.route("/")
 def index():
@@ -392,12 +431,34 @@ def entry_detail(entry_id):
     return render_template("entry.html", **data)
 
 
+GRAM_CLASS_LABELS = {
+    "VI-S": "Intransitive verb (stative)",
+    "VI": "Intransitive verb",
+    "VT": "Transitive verb",
+    "VD": "Descriptive verb (qualities)",
+    "VR": "Reflexive verb",
+    "N": "Noun",
+    "N-DEP": "Noun (always possessed)",
+    "N-KIN": "Kinship noun",
+    "ADV": "Adverb",
+    "CONJ": "Conjunction",
+    "INTERJ": "Interjection",
+    "NUM": "Number",
+    "PART": "Particle",
+    "PRON": "Pronoun",
+    "QUANT": "Quantifier",
+    "VI-R": "Intransitive verb (reciprocal)",
+    "VT-R": "Transitive verb (reciprocal)",
+}
+
+
 @app.route("/browse")
 def browse():
     db = get_db()
     tags = db.get_all_tags()
     classes = db.get_all_classes()
-    return render_template("browse.html", tags=tags, classes=classes)
+    return render_template("browse.html", tags=tags, classes=classes,
+                           gram_class_labels=GRAM_CLASS_LABELS)
 
 
 @app.route("/browse/tag/<tag>")
@@ -762,6 +823,45 @@ def api_slot_options():
 
     options = get_slot_options(template_id, slot, bb_only=bb_only)
     return jsonify(options)
+
+
+# ------------------------------------------------------------------
+# BB Verb Form search (for sentence builder)
+# ------------------------------------------------------------------
+
+@app.route("/api/bb_verb_forms")
+def api_bb_verb_forms():
+    """Search Blue Book-attested verb forms for the sentence builder."""
+    db = get_db()
+    q = request.args.get("q", "").strip()
+    limit = request.args.get("limit", 10, type=int)
+    limit = min(limit, 30)
+
+    if not q or len(q) < 2:
+        return jsonify([])
+
+    cur = db.conn.cursor()
+    # Search BB forms by Skiri form or English gloss
+    # Include dialogues, phrases, grammar examples that look like verb forms
+    cur.execute("""
+        SELECT DISTINCT bb_skiri_form, bb_english, lesson_number, context_type
+        FROM blue_book_attestations
+        WHERE (bb_skiri_form LIKE ? OR bb_english LIKE ?)
+          AND context_type IN ('DIALOGUE', 'PHRASE', 'GRAMMAR_EXAMPLE', 'BASIC_WORDS', 'ADDITIONAL_WORDS')
+          AND bb_skiri_form IS NOT NULL AND bb_skiri_form != ''
+        ORDER BY lesson_number, bb_skiri_form
+        LIMIT ?
+    """, (f"%{q}%", f"%{q}%", limit))
+    results = [
+        {
+            "skiri_form": r[0],
+            "english": r[1] or "",
+            "lesson": r[2],
+            "context": r[3],
+        }
+        for r in cur.fetchall()
+    ]
+    return jsonify(results)
 
 
 # ------------------------------------------------------------------

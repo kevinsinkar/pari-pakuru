@@ -73,17 +73,32 @@
         <h3>{{ cat_sets[0].category_label }}</h3>
         <div class="fc-week-grid">
             {% for s in cat_sets %}
-            <a href="/flashcards/{{ s.week }}" class="fc-week-card">
+            <a href="/flashcards/{{ s.week }}" class="fc-week-card" data-week="{{ s.week }}" data-total="{{ s.card_count }}">
                 <span class="fc-week-num">Week {{ s.week }}</span>
                 <span class="fc-week-count">{{ s.card_count }} words</span>
                 {% set bb_count = s.cards|selectattr('blue_book_attested')|list|length %}
                 {% if bb_count %}
                 <span class="badge badge-bb" style="font-size: 0.7em;">{{ bb_count }} P&acirc;ri Pak&ucirc;ru'</span>
                 {% endif %}
+                <span class="fc-week-progress" data-week="{{ s.week }}"></span>
             </a>
             {% endfor %}
         </div>
     </section>
     {% endfor %}
 </div>
+
+<script>
+// Show progress from localStorage on each week card
+document.querySelectorAll('.fc-week-progress').forEach(function(el) {
+    var week = el.getAttribute('data-week');
+    var total = parseInt(el.closest('.fc-week-card').getAttribute('data-total'));
+    var data = JSON.parse(localStorage.getItem('fc-progress-week-' + week) || '{}');
+    var known = (data.known || []).length;
+    if (known > 0) {
+        el.textContent = known + '/' + total + ' mastered';
+        el.style.display = '';
+    }
+});
+</script>
 {% endblock %}
