@@ -1,0 +1,500 @@
+{% extends "base.html" %}
+{% set active_page = "sentences" %}
+{% block title %}Sentence Builder{% endblock %}
+
+{% block header_search %}{% endblock %}
+
+{% block content %}
+<hgroup>
+  <h2>Sentence Builder</h2>
+  <p>Build Skiri Pawnee sentences from Blue Book patterns. Pick a template, fill the slots, and see how it assembles.</p>
+</hgroup>
+
+{# ── Step 1: Template Cards ─────────────────────────────────────── #}
+<section id="template-picker">
+  <h3>Step 1: Pick a pattern</h3>
+  <div class="sb-grid">
+    {% for t in templates %}
+    <article class="sb-card" data-tid="{{ t.template_id }}"
+             onclick="selectTemplate('{{ t.template_id }}')">
+      <header>
+        <span class="badge badge-class">{{ t.template_id }}</span>
+        <strong>{{ t.name }}</strong>
+      </header>
+      <p class="sb-card__pattern">{{ t.english_pattern }}</p>
+      <p class="sb-card__example font-serif">{{ t.skiri_example }}</p>
+      <footer>
+        <small>{{ t.english_example }}</small>
+        <span class="badge badge--bluebook">{{ t.bb_count }} BB</span>
+      </footer>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+{# ── Step 2: Slot Form (hidden until template selected) ──────── #}
+<section id="slot-form-section" style="display:none;">
+  <h3>Step 2: Fill the slots</h3>
+  <p id="selected-template-label"></p>
+
+  <form id="slot-form" onsubmit="assembleSentence(event)">
+    <input type="hidden" name="template_id" id="template-id-input">
+    <div id="slot-fields"></div>
+    <button type="submit" class="contrast">Assemble Sentence</button>
+  </form>
+</section>
+
+{# ── Step 3: Result (hidden until assembled) ─────────────────── #}
+<section id="result-section" style="display:none;">
+  <h3>Result</h3>
+  <div id="result-body"></div>
+</section>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+// ── Template metadata (from server) ──────────────────────────────
+const TEMPLATES = {{ templates | tojson }};
+const TEMPLATE_MAP = {};
+TEMPLATES.forEach(t => TEMPLATE_MAP[t.template_id] = t);
+
+// ── Role → CSS chip class mapping (reuses possession widget palette) ──
+const ROLE_COLORS = {
+  'SUBJECT': 'poss-chip--agent',
+  'VERB': 'poss-chip--verb',
+  'OBJECT': 'poss-chip--noun',
+  'PARTICLE': 'poss-chip--mode',
+  'ADVERB': 'poss-chip--poss',
+  'LOCATIVE': 'poss-chip--case',
+  'TEMPORAL': 'poss-chip--kin',
+  'YES_WORD': 'poss-chip--mode',
+  'IMP_PARTICLE': 'poss-chip--mode',
+  'INNER': 'poss-chip--noun',
+  'WE_PARTICLE': 'poss-chip--mode',
+};
+
+// ── Curated slot types that get dropdowns (not free-text search) ──
+const CURATED_SLOTS = new Set(['temporal', 'adv_manner', 'yes_word', 'imp_particle']);
+
+// ── Wrapper templates that take inner text ──
+const WRAPPER_TEMPLATES = new Set(['T6', 'T7']);
+
+function selectTemplate(tid) {
+  const t = TEMPLATE_MAP[tid];
+  if (!t) return;
+
+  // Highlight selected card
+  document.querySelectorAll('.sb-card').forEach(c => c.classList.remove('sb-card--selected'));
+  document.querySelector(`.sb-card[data-tid="${tid}"]`).classList.add('sb-card--selected');
+
+  // Show form
+  document.getElementById('slot-form-section').style.display = '';
+  document.getElementById('result-section').style.display = 'none';
+  document.getElementById('template-id-input').value = tid;
+  document.getElementById('selected-template-label').innerHTML =
+    `<span class="badge badge-class">${tid}</span> <strong>${t.name}</strong> &mdash; ${t.english_pattern}`;
+
+  // Build slot fields
+  const container = document.getElementById('slot-fields');
+  container.innerHTML = '';
+
+  // Wrapper templates: single "inner" text slot
+  if (WRAPPER_TEMPLATES.has(tid)) {
+    if (tid === 'T7') {
+      // Yes word selector
+      container.appendChild(buildCuratedField('yes_word', 'Affirmation word', tid));
+    }
+    container.appendChild(buildTextField('inner', 'Statement (Skiri text)', true,
+      tid === 'T6' ? 'e.g., kaki karitki' : 'e.g., ti hitu\''));
+    return;
+  }
+
+  t.slots.forEach(slot => {
+    const name = slot.name;
+    const required = slot.required;
+    const desc = slot.description || name;
+
+    if (CURATED_SLOTS.has(name)) {
+      container.appendChild(buildCuratedField(name, desc, tid));
+    } else if (name === 'we_particle') {
+      container.appendChild(buildCheckboxField(name, 'Add "we" (completed action particle)'));
+    } else if (name === 'verb_form') {
+      container.appendChild(buildTextField(name, desc, required,
+        'Pre-conjugated verb form, e.g., ra\u2022pahaat'));
+    } else if (name === 'noun' || name === 'subject' || name === 'object' || name === 'vd') {
+      container.appendChild(buildSearchField(name, desc, required, slot.type));
+    } else {
+      container.appendChild(buildTextField(name, desc, required));
+    }
+  });
+}
+
+function buildTextField(name, label, required, placeholder) {
+  const div = document.createElement('div');
+  div.className = 'sb-field';
+  div.innerHTML = `
+    <label for="slot-${name}">${label}${required ? ' *' : ''}</label>
+    <input type="text" id="slot-${name}" name="${name}"
+           ${required ? 'required' : ''}
+           placeholder="${placeholder || ''}"
+           autocomplete="off">
+  `;
+  return div;
+}
+
+function buildCheckboxField(name, label) {
+  const div = document.createElement('div');
+  div.className = 'sb-field';
+  div.innerHTML = `
+    <label>
+      <input type="checkbox" id="slot-${name}" name="${name}" value="true">
+      ${label}
+    </label>
+  `;
+  return div;
+}
+
+function buildSearchField(name, label, required, slotType) {
+  const div = document.createElement('div');
+  div.className = 'sb-field sb-field--search';
+  const classes = (slotType || '').split(',').map(c => c.trim()).filter(Boolean);
+  const classParam = classes.length ? `&class=${classes[0]}` : '';
+  div.innerHTML = `
+    <label for="slot-${name}">${label}${required ? ' *' : ''}</label>
+    <input type="text" id="slot-${name}" name="${name}"
+           ${required ? 'required' : ''}
+           placeholder="Type to search dictionary..."
+           autocomplete="off"
+           hx-get="/api/search?limit=8${classParam}"
+           hx-trigger="keyup changed delay:350ms"
+           hx-target="#dropdown-${name}"
+           hx-params="q"
+           hx-swap="innerHTML"
+           hx-vals='{"q": ""}'
+           oninput="this.setAttribute('hx-vals', JSON.stringify({q: this.value}))"
+    >
+    <div class="sb-dropdown" id="dropdown-${name}"></div>
+  `;
+
+  // Wire up HTMX after insertion
+  setTimeout(() => {
+    const input = document.getElementById(`slot-${name}`);
+    if (input) {
+      input.addEventListener('input', function() {
+        const q = this.value.trim();
+        if (q.length < 2) {
+          document.getElementById(`dropdown-${name}`).innerHTML = '';
+          return;
+        }
+        fetch(`/api/search?q=${encodeURIComponent(q)}&limit=8${classParam}`)
+          .then(r => r.json())
+          .then(data => {
+            const dd = document.getElementById(`dropdown-${name}`);
+            if (!data.results || data.results.length === 0) {
+              dd.innerHTML = '<div class="sb-dd-empty">No matches</div>';
+              return;
+            }
+            dd.innerHTML = data.results.map(r => `
+              <div class="sb-dd-item" onclick="pickResult('${name}', '${r.headword.replace(/'/g, "\\'")}')">
+                <strong>${r.headword}</strong>
+                ${r.simplified_pronunciation ? '<small>' + r.simplified_pronunciation + '</small>' : ''}
+                <span class="badge badge-class">${r.grammatical_class || ''}</span>
+                <br><small class="sb-dd-gloss">${r.first_gloss || ''}</small>
+              </div>
+            `).join('');
+          });
+      });
+    }
+  }, 50);
+
+  return div;
+}
+
+function pickResult(name, value) {
+  document.getElementById(`slot-${name}`).value = value;
+  document.getElementById(`dropdown-${name}`).innerHTML = '';
+}
+
+function buildCuratedField(name, label, tid) {
+  const div = document.createElement('div');
+  div.className = 'sb-field';
+  div.innerHTML = `
+    <label for="slot-${name}">${label}</label>
+    <select id="slot-${name}" name="${name}">
+      <option value="">-- optional --</option>
+    </select>
+    <small class="sb-field-loading" id="loading-${name}">Loading options...</small>
+  `;
+
+  // Fetch curated options
+  fetch(`/api/slot-options?template=${tid}&slot=${name}`)
+    .then(r => r.json())
+    .then(options => {
+      const sel = document.getElementById(`slot-${name}`);
+      const loading = document.getElementById(`loading-${name}`);
+      if (loading) loading.style.display = 'none';
+      options.forEach(opt => {
+        const o = document.createElement('option');
+        o.value = opt.skiri_form;
+        o.textContent = `${opt.skiri_form} — ${opt.english}`;
+        if (opt.bb_lessons && opt.bb_lessons.length) {
+          o.textContent += ` (L${opt.bb_lessons.join(', L')})`;
+        }
+        sel.appendChild(o);
+      });
+    });
+
+  return div;
+}
+
+function assembleSentence(event) {
+  event.preventDefault();
+  const form = document.getElementById('slot-form');
+  const fd = new FormData(form);
+  const payload = {};
+  for (const [k, v] of fd.entries()) {
+    if (v) payload[k] = v;
+  }
+
+  // Handle checkbox (we_particle)
+  const weCheck = document.getElementById('slot-we_particle');
+  if (weCheck && weCheck.checked) {
+    payload.we_particle = 'true';
+  }
+
+  fetch('/api/assemble', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify(payload),
+  })
+    .then(r => r.json())
+    .then(renderResult);
+}
+
+function renderResult(data) {
+  const section = document.getElementById('result-section');
+  section.style.display = '';
+
+  if (data.error) {
+    document.getElementById('result-body').innerHTML = `
+      <article class="sb-result sb-result--error">
+        <p><strong>Error:</strong> ${data.error}</p>
+      </article>`;
+    return;
+  }
+
+  // Confidence badge class
+  const confClass = {
+    'HIGH': 'badge-conf-high',
+    'MEDIUM': 'badge-conf-med',
+    'LOW': 'badge-conf-low',
+  }[data.confidence] || 'badge-conf-low';
+
+  // Morpheme chips
+  const chips = (data.morpheme_breakdown || []).map(m => {
+    const roleClass = ROLE_COLORS[m.role] || '';
+    return `<span class="poss-chip ${roleClass}">
+      <span class="poss-chip__form">${m.form}</span>
+      <span class="poss-chip__label">${m.gloss}</span>
+    </span>`;
+  }).join('<span class="poss-chip-plus">+</span>');
+
+  // Collect roles for legend
+  const roles = [...new Set((data.morpheme_breakdown || []).map(m => m.role))];
+  const legend = roles.map(r => {
+    const cls = ROLE_COLORS[r] || '';
+    return `<span class="poss-chip-legend__item">
+      <span class="poss-chip-legend__swatch ${cls}" style="width:10px;height:10px;border-radius:3px;display:inline-block;"></span>
+      ${r}
+    </span>`;
+  }).join('');
+
+  document.getElementById('result-body').innerHTML = `
+    <article class="sb-result">
+      <div class="sb-result__sentence font-serif">${data.skiri_sentence}</div>
+      <div class="sb-result__gloss">${data.english_gloss}</div>
+      <div class="sb-result__meta">
+        <span class="badge ${confClass}">${data.confidence}</span>
+        ${data.bb_attestation ? `<span class="badge badge--bluebook">Blue Book ${data.bb_attestation}</span>` : ''}
+        <span class="badge badge-class">${data.template_id} ${data.template_name}</span>
+      </div>
+      ${data.word_order_note ? `<p class="sb-result__note">${data.word_order_note}</p>` : ''}
+      <div class="sb-result__breakdown">
+        <div class="sb-result__breakdown-label">Morpheme breakdown</div>
+        <div class="sb-result__chips">${chips}</div>
+        <div class="poss-chip-legend">${legend}</div>
+      </div>
+    </article>`;
+
+  section.scrollIntoView({behavior: 'smooth', block: 'start'});
+}
+
+// Close dropdowns when clicking outside
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.sb-field--search')) {
+    document.querySelectorAll('.sb-dropdown').forEach(dd => dd.innerHTML = '');
+  }
+});
+</script>
+
+<style>
+/* ── Sentence Builder styles ──────────────────────────────────── */
+.sb-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.sb-card {
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 2px solid var(--earth-200, #e0d5c4);
+  background: var(--earth-50, #faf7f2);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.sb-card:hover {
+  border-color: var(--sky-300, #89BDE0);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.sb-card--selected {
+  border-color: var(--sky-500, #4A90C4);
+  box-shadow: 0 0 0 3px var(--sky-100, #D6EAFA);
+}
+.sb-card header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0;
+  border: none;
+  background: none;
+}
+.sb-card__pattern {
+  font-size: 0.85rem;
+  color: var(--earth-600, #6b5d4a);
+  margin-bottom: 0.25rem;
+}
+.sb-card__example {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.sb-card footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  border: none;
+  background: none;
+}
+.sb-card footer small {
+  color: var(--earth-500, #8a7560);
+  font-style: italic;
+}
+
+/* Slot form */
+.sb-field {
+  margin-bottom: 1rem;
+  position: relative;
+}
+.sb-field label {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+.sb-field-loading {
+  color: var(--earth-500);
+  font-style: italic;
+}
+
+/* Search dropdown */
+.sb-dropdown {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  max-height: 280px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid var(--earth-200, #e0d5c4);
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.sb-dropdown:empty {
+  display: none;
+}
+.sb-dd-item {
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  border-bottom: 1px solid var(--earth-100, #f0ebe2);
+}
+.sb-dd-item:last-child { border-bottom: none; }
+.sb-dd-item:hover {
+  background: var(--sky-50, #EDF6FD);
+}
+.sb-dd-gloss {
+  color: var(--earth-500);
+}
+.sb-dd-empty {
+  padding: 0.5rem 0.75rem;
+  color: var(--earth-500);
+  font-style: italic;
+}
+
+/* Result */
+.sb-result {
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 2px solid var(--sage-200, #B8D8BC);
+  background: var(--sage-50, #EFF6F0);
+}
+.sb-result--error {
+  border-color: var(--clay-200);
+  background: var(--clay-50);
+}
+.sb-result__sentence {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--earth-800, #3a3126);
+}
+.sb-result__gloss {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--earth-600, #6b5d4a);
+  margin-bottom: 0.75rem;
+}
+.sb-result__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+.sb-result__note {
+  font-size: 0.85rem;
+  color: var(--earth-500);
+  margin-bottom: 0.75rem;
+}
+.sb-result__breakdown {
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--sage-200, #B8D8BC);
+}
+.sb-result__breakdown-label {
+  font-size: 0.7em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--earth-500, #8a7560);
+  font-family: var(--font-mono, monospace);
+  margin-bottom: 8px;
+}
+.sb-result__chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px;
+}
+</style>
+{% endblock %}

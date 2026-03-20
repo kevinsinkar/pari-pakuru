@@ -699,6 +699,50 @@ def about():
 
 
 # ------------------------------------------------------------------
+# Phase 3.2a — Sentence Builder
+# ------------------------------------------------------------------
+
+@app.route("/sentence-builder")
+def sentence_builder():
+    """Template selection + sentence assembly UI."""
+    from scripts.sentence_templates import list_templates
+    templates = list_templates()
+    return render_template("sentence_builder.html", templates=templates)
+
+
+@app.route("/api/assemble", methods=["POST"])
+def api_assemble():
+    """Assemble a sentence from a template + slot values."""
+    from scripts.sentence_templates import assemble
+    data = request.get_json(silent=True)
+    if not data:
+        return jsonify({"error": "invalid request"}), 400
+
+    template_id = data.get("template_id", "").strip()
+    if not template_id:
+        return jsonify({"error": "template_id required"}), 400
+
+    slots = {k: v for k, v in data.items() if k != "template_id"}
+    result = assemble(template_id, **slots)
+    return jsonify(result.to_dict())
+
+
+@app.route("/api/slot-options")
+def api_slot_options():
+    """Return curated dropdown options for a template slot."""
+    from scripts.sentence_templates import get_slot_options
+    template_id = request.args.get("template", "").strip()
+    slot = request.args.get("slot", "").strip()
+    bb_only = request.args.get("bb_only", "true").lower() != "false"
+
+    if not template_id or not slot:
+        return jsonify([])
+
+    options = get_slot_options(template_id, slot, bb_only=bb_only)
+    return jsonify(options)
+
+
+# ------------------------------------------------------------------
 # Community Feedback (Phase 4.4)
 # ------------------------------------------------------------------
 
