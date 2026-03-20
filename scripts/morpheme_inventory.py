@@ -74,6 +74,7 @@ from datetime import datetime
 # Import sound change pipeline from Phase 2.3
 sys.path.insert(0, str(Path(__file__).parent))
 from sound_changes import apply_sound_changes, apply_unrestricted_rules
+from accent_rules import apply_accent_rules
 
 logging.basicConfig(
     level=logging.INFO,
@@ -1774,6 +1775,12 @@ def conjugate(stem, verb_class, mode, person_number, aspect="perfective",
                                     actual_mode=actual_mode)
         surface = apply_unrestricted_rules(concat)
         surface = surface.replace(TR_MARKER, "")
+        # Apply pitch accent rules for non-preverb verbs (Phase 3.1 #4).
+        # ir-preverb accents are already handled by _apply_ir_accents
+        # inside _smart_concatenate (operates on morpheme parts pre-concat).
+        if preverb != "ir":
+            surface = apply_accent_rules(surface, actual_mode, person_number,
+                                         preverb=preverb)
     except Exception:
         surface = "".join(morph_forms)
 

@@ -233,7 +233,7 @@ High-impact items ordered by learner value, not technical dependency:
 | ✅ ~~5~~ | 4.4 | ~~Community feedback mechanism~~ | **DONE (2026-03-19)** — Flag/confirm buttons, admin review queue, writable DB, dashboard widget. Design Principle #6 enforced. |
 | 🔴 6 | 5.2 (exports) | Printable PDFs + Anki export | Design Principle #3 is underbuilt; teachers need offline materials now |
 | ✅ ~~7~~ | Ongoing | ~~Blue Book 518-gap triage~~ | **DONE (2026-03-19)** — 516 gaps classified: 38% phrases, 27% inflected verbs, 18% unlisted nouns, 8% descriptors, 3% possessed, 2% function words, 2% loanwords, 2% OCR artifacts. 65% are morphological (roots exist in Parks). 115 high-value items flagged for DB addition. |
-| 🟡 8 | 3.1.6 | Function word inventory | **SEEDED** — 414 function words in DB table (355 Parks + 59 BB). Needs: position rules, demonstrative classification, sentence builder integration. |
+| ✅ ~~8~~ | 3.1.6 | ~~Function word inventory~~ | **CLASSIFIED (2026-03-20)** — 418 function words with `position_rule` + `refined_subclass`. 149 PROCLITIC, 135 PRECEDES-VERB, 51 PRECEDES-NOUN, 44 CLAUSE-INITIAL, 28 STANDALONE, 11 BETWEEN-CLAUSES. Demonstratives + interrogatives mapped. |
 | 🟡 9 | 3.2a | Template-based sentence assembly | First usable step toward sentence construction |
 | 🟡 10 | 5.1 | Structured lesson content | Blue Book curriculum extraction for progressive learning |
 
@@ -308,7 +308,7 @@ This is the wall between "a conjugation engine that works on 7 test verbs" (76.2
 **Script:** `scripts/import_to_db.py` (implied by DB existence)
 **What it does:** SQLite database (`skiri_pawnee.db`) unifying S2E and E2S data.
 
-**Tables:** `lexical_entries` (4,366 entries: 4,273 Parks + 93 Blue Book), `glosses`, `paradigmatic_forms`, `examples`, `etymology`, `cognates`, `derived_stems`, `english_index`, `cross_references`, `semantic_tags`, `blue_book_attestations`, `import_metadata`, `bb_gap_triage`, `community_feedback`, `function_words` (414), `bb_function_words` + FTS tables for glosses, examples, english_index.
+**Tables:** `lexical_entries` (4,366 entries: 4,273 Parks + 93 Blue Book), `glosses`, `paradigmatic_forms`, `examples`, `etymology`, `cognates`, `derived_stems`, `english_index`, `cross_references`, `semantic_tags`, `blue_book_attestations`, `import_metadata`, `bb_gap_triage`, `community_feedback`, `function_words` (418), `bb_function_words` (63) + FTS tables for glosses, examples, english_index.
 
 ### ✅ Phase 2.1 — Semantic Category Tagging
 **Script:** `scripts/tag_entries.py`
@@ -504,8 +504,8 @@ Tasks completed:
 - [x] "to come" infinitive mode: preverb ih (1/2) / a (3rd) placed BEFORE INF.B ku via INF_PREV label; 3.A stem for all sg; short stem ʔ-deletion threshold tightened
 
 **Current validation (latest pass — 2026-03-19):**
-- Appendix 1: **76.2% exact (587/770)** without accents → **86.4% (665/770)** with accent rules (78/85 accented forms correct, pending integration)
-- Per verb: to go 94%, to drink it 89%, to be sick 88%, to have it 85%, to be good 79%, to do it 67%, to come 31% (to come jumps most with accent rules: +67 forms → ~92%)
+- Appendix 1: **90.3% exact (695/770)** — accent rules integrated via `_apply_ir_accents` (inline, morpheme-level) for ir-preverb verbs + `apply_accent_rules()` (surface-form, non-ir-preverb) for potential cí pattern
+- Per verb: to go 96%, to come 94%, to drink it 92%, to do it 89%, to be sick 88%, to have it 88%, to be good 85%
 - Dictionary: **86.6% exact** (1,914/2,211 form_2 predictions via `stem_extractor.py`), 88.4% with close — up from 14.8% → 62.0% → 83.5% → 86.6%
 
 **Major improvements since first pass (12.7% → 76.2%):**
@@ -525,7 +525,7 @@ Tasks remaining (priority order — revised 2026-03-19):
 - [x] **Dictionary stem extraction — second pass** — **done (2026-03-19)**: 62.0% → **83.5% exact** (1,846/2,211), 86.3% with close. 12 fixes: i+i coalescence bug, aa/ii/uu-initial glottal insertion, VR reflexive witi- prefix, bracket notation ([+ neg.], [+ i-], [+ raar-], [+ ruu-]), r-deletion vowel-specific ʔ rules (-uur→-uuʔ, -aar→-aa, -iir→-ii), VD ʔ-echo insertion before stops, ir+ut/uur preverb chains, class 3 -aʔu/-aʔa contractions, ut+w junction (w→p), uur+h/s junction (h-absorption, s→c), -sk→-s and -hc→-c cluster rules, (4)-sa no ʔ, (wi) k→t, -i notation stripping.
 - [x] **Dictionary stem extraction — third pass** — **done (2026-03-19)**: 83.5% → **86.6% exact** (1,914/2,211), 88.4% with close. 12 fixes: a+u/a+i coalescence for ir-preverb, VD echo false-positive prevention, VD echo for -Vht clusters, VD -wii/-wiir shortening, -uuh shortening, ir+ut junction (keep tuut), class 3 aaʔa contraction guard, ir+ri+uur fusion (ri+uur→ruur), ir+uur h-absorption.
 - [ ] **Dictionary stem extraction — fourth pass** (optional) — remaining 257 misses: `si-` prefix (16), `ruuti-` prefix (19), prothetic vowel (5), internal long-vowel shortening, multi-word/bracket headwords. Diminishing returns — remaining cases need morphological decomposition or manual analysis.
-- [x] **🟡 Accent mark generation** — **91.8% done (2026-03-19)**: `accent_rules.py` correctly assigns accent marks to 78/85 Appendix 1 accented forms. 4 rules: (A) Agent-boundary í after t/s/c, (B) Mode-prefix accent (assertive rí, contingent í, gerundial írii), (C) Infinitive kú, (D) Dual sí in absolutive/assertive/negative. Remaining 7 failures are verb-specific stem accents (not generalizable without per-verb annotation). **Impact: Appendix 1 accuracy 76.2% → 86.4%** (587+78=665/770). Integration into `morpheme_inventory.py` conjugation engine pending.
+- [x] **✅ Accent mark generation + integration** — **done (2026-03-20)**: `accent_rules.py` correctly assigns accent marks to 78/85 Appendix 1 accented forms. 4 rules: (A) Agent-boundary í after t/s/c, (B) Mode-prefix accent (assertive rí, contingent í, gerundial írii), (C) Infinitive kú, (D) Dual sí in absolutive/assertive/negative. Remaining 7 failures are verb-specific stem accents (not generalizable without per-verb annotation). **Integrated into `morpheme_inventory.py`**: ir-preverb accents handled by inline `_apply_ir_accents` (morpheme-level, pre-concatenation); non-ir-preverb accents handled by `apply_accent_rules()` (surface-form, post-sound-changes). Gated by preverb type: uur-preverb does not produce accented forms.
 - [ ] **"to do it" investigation** (74/110, 12 MISS) — largest remaining mismatch gap after "to come"
 - [ ] **"to come" remaining 6 MISS** — assertive/absolutive 3du (3.A stem used instead of du stem), gerundial 2sg (GER shortening fires on PREV label), 3pl sub suffix contraction (stem deleted); also 3pl sub `verb_class='1'` string adds SUB suffix incorrectly
 - [x] ~~VD(u) descriptive verb stem extraction~~ **now 78.2%** (was 1% → 44.7% → 78.2%) — remaining: internal long-vowel shortening, aw- absorption
@@ -584,26 +584,26 @@ Tasks completed:
 **Depends on:** Phase 3.1 (morpheme slot system), Phase 2.1 (semantic tags)
 **Effort:** Medium
 **Scripts:** `scripts/function_word_inventory.py`, `scripts/extract_function_words.py`
-**DB table:** `function_words` (414 rows: 355 Parks dictionary + 2 BB direct + 57 Gemini-extracted from phrases)
+**DB table:** `function_words` (418 rows: 355 Parks dictionary + 2 BB direct + 61 BB phrase-extracted via Gemini)
 
 Dictionary entries classified as CONJ, DEM, PRON, QUAN, LOC, INTERJ, ADV need to be formalized into a structured inventory with usage rules — not just dictionary definitions. For sentence construction (Phase 3.2), these must be queryable: "which demonstrative goes with visible referents?" "where does the question particle go in the clause?"
 
 **Seed data (2026-03-19):**
 - 355 function words from Parks dictionary (lexical_entries with class in CONJ/DEM/PRON/QUAN/LOC/INTERJ/ADV/NUM)
 - 2 new function words from BB gap triage direct classification
-- 57 new function words extracted from 196 BB phrases via Gemini batch analysis (5 batches, 69 unique forms, 12 already known)
-- ~5-6 OCR artifacts in the Gemini extraction need pruning (`.a`, `.ra`, `rd`, `t`, `ʔhr`)
+- 61 new function words from BB phrase extraction via Gemini (5 batches → 35 unique words, 147 occurrences; 4 genuinely new after dedup: `rahesa` "tomorrow", `rariksisu` "hard/very", `tiku` "that", `tireku` "here is")
+- OCR artifacts pruned from Gemini extraction; `bb_function_words` raw table has 63 rows (23 unique)
 - Report: `reports/extract_function_words.txt`
 
 Tasks:
 - [x] Inventory all function words from dictionary (~355 entries across classes)
 - [x] Seed from BB gap triage function_word category (11 items → 9 new after dedup)
 - [x] Gemini-extract function words from 196 BB phrase gaps (57 new items)
-- [ ] Prune OCR artifacts from Gemini extraction (~5-6 items)
-- [ ] Classify demonstratives by spatial/visibility distinction (if Parks documents this)
-- [ ] Map interrogative particles and their clause-position rules
+- [x] Prune OCR artifacts from Gemini extraction (done — length ≤ 2, dot-prefixed removed)
+- [x] Classify demonstratives by spatial/visibility distinction — **done (2026-03-20)**: `classify_function_words.py` assigns demonstrative-spatial subtypes (proximal, distal, distal-plural, far-distal, etc.) from Parks Ch. 4
+- [x] Map interrogative particles and their clause-position rules — **done (2026-03-20)**: 10 interrogatives mapped (content-question, location-question, yes-no-question, quantity-question, temporal-question, indefinite)
 - [ ] Document discourse/evidential particles (evidentiality is marked by proclitics, but also by standalone particles)
-- [ ] Add position_rule column for clause-position information
+- [x] Add position_rule + refined_subclass columns — **done (2026-03-20)**: `classify_function_words.py` classifies all 418 items. Distribution: 149 PROCLITIC, 135 PRECEDES-VERB, 51 PRECEDES-NOUN, 44 CLAUSE-INITIAL, 28 STANDALONE, 11 BETWEEN-CLAUSES
 - [ ] Cross-reference with Blue Book dialogue examples for natural usage patterns
 - [ ] Integrate into sentence builder (Phase 3.2) as selectable modifiers
 
@@ -681,7 +681,8 @@ flashcards, and live search. Mobile-responsive via Pico CSS framework.
 - [x] Mobile-responsive design (Pico CSS framework, responsive grid, touch-friendly flashcards)
 - [x] Mark generated vs. attested forms: "Attested (Parks Dictionary)" / "Attested (Appendix 1)" labels on paradigm tables
 - [x] Browse by semantic tag and grammatical class with paginated results
-- [x] Weekly flashcard study system: 19 categories, ~300 curated beginner words, flip-card UI with keyboard nav and shuffle
+- [x] Weekly flashcard study system: 21 categories, ~387 curated beginner words, flip-card UI with keyboard nav and shuffle. BB Essentials (Weeks 1-3) + Greetings & Common Words (Week 4) front-loaded; cross-category deduplication via `seen_ids`
+- [x] **Pitch accent display** *(2026-03-20)*: `format_pitch` Jinja filter wraps UPPERCASE syllables in `<span class="pitch-high">` (bold + underline). All-lowercase pronunciations show "(pitch not marked)" note. Legend on entry detail, flashcard study, and flashcard guide pages. Applied in: `_entry_card.html`, `entry.html`, `flashcard_study.html`, `flashcards.html`
 - [x] Word-of-the-day on homepage with dictionary stats
 - [x] Search result re-ranking: exact matches first, BB-attested boosted, data completeness considered; example FTS matches surfaced with snippets
 - [x] JSON API endpoint (`/api/search`) for external consumers
@@ -901,6 +902,8 @@ These principles guide all user-facing features:
 | `import_bb_items.py` | `scripts/` | Import 93 high-value BB gap items (nouns, function words, loanwords) into `lexical_entries` + `glosses` tables with `source='blue_book'` flag; normalizes BB→Parks orthography; deduplicates against existing headwords (--dry-run, --db) | No |
 | `function_word_inventory.py` | `scripts/` | Phase 3.1.6: seed `function_words` table by merging Parks dictionary function-class entries (355) with BB gap triage function words (11); infers subclass from gloss keywords (--dry-run, --db) | No |
 | `extract_function_words.py` | `scripts/` | Phase 3.1.6: extract function words from 196 BB phrase gaps via Gemini batch analysis (5 batches); populates `bb_function_words` table; checkpointed; generates `reports/bb_function_words.txt` (--dry-run, --report-only, --clear) | Yes (GEMINI_API_KEY) |
+| `classify_function_words.py` | `scripts/` | Phase 3.1.6: add `position_rule` + `refined_subclass` to all 418 function words; classifies demonstratives (spatial system), interrogatives, conjunctions, adverbs, locatives, numerals, particles by clause position (CLAUSE-INITIAL, PRECEDES-VERB, PRECEDES-NOUN, BETWEEN-CLAUSES, PROCLITIC, STANDALONE) (--dry-run, --db) | No |
+| `populate_bb_pronunciation.py` | `scripts/` | Phase 4.1: generate `simplified_pronunciation` for 93 BB-imported entries (headword→English respelling) + assign semantic tags from English glosses; enables BB entries to appear in flashcards (--dry-run, --db) | No |
 
 ## Environment
 
@@ -1041,26 +1044,20 @@ Copy-paste this to start the next session (claude.ai or Claude Code):
 
 > **Pick the next priority from the Pari Pakuru roadmap.**
 >
-> **What's done (session: 2026-03-19):**
+> **What's done (session: 2026-03-20):**
 > - Phase 3.1.5 Noun possession: ✅ (4 systems, locative suffixes, web widget, example filter, 40/40 tests)
 > - Phase 3.1 Stem extraction: 🟡 86.6% exact (1,914/2,211 verbs), up from 14.8% baseline across 3 passes
-> - Phase 3.1 Accent rules: 🟡 91.8% (78/85 accented forms correct). 4 rules in `accent_rules.py`. Appendix 1: 76.2% → 86.4% pending integration
-> - Phase 3.1.6 Function word inventory: 🟡 SEEDED — 414 items in `function_words` table (355 Parks + 59 BB)
+> - Phase 3.1 Accent rules: ✅ Integrated into `morpheme_inventory.py` — Appendix 1: 90.3% exact (695/770). ir-preverb accents via `_apply_ir_accents` (inline), non-ir via `apply_accent_rules()` (surface-form)
+> - Phase 3.1.6 Function word inventory: ✅ CLASSIFIED — 418 items with `position_rule` + `refined_subclass` (149 PROCLITIC, 135 PRECEDES-VERB, 51 PRECEDES-NOUN, 44 CLAUSE-INITIAL, 28 STANDALONE, 11 BETWEEN-CLAUSES)
+> - Phase 4.1 Flashcards: ✅ BB Essentials + Greetings categories, 93 BB entries with pronunciation + semantic tags, pitch accent display with `format_pitch` filter, 387 cards across 24 weeks
 > - Phase 4.3 Confidence scoring: ✅ (4-factor weighted score, DB column, web badges, 88.7% average)
 > - Phase 4.4 Community feedback: ✅ (flag/confirm buttons, admin review queue, writable DB, dashboard widget)
 > - Blue Book gap triage: ✅ (516 gaps classified, 93 items imported to dictionary, 82% inflected verbs trace to existing roots)
-> - Blue Book gap triage: ✅ (516 gaps classified — 65% morphological, 18% unlisted nouns, 115 high-value items flagged). Feeds into #8 Function word inventory.
 >
 > **Remaining roadmap priorities:**
-> - 🔴 #4 (integration): **Integrate accent rules into conjugation engine** — `accent_rules.py` validated, wire into `morpheme_inventory.py` output. **Claude Code**.
 > - 🔴 #6: **Printable PDFs + Anki export** — teachers need offline materials now. **Claude Code**.
-> - 🟡 #8 (remaining): **Function word classification** — 414 items seeded, needs position rules, demonstrative/interrogative classification. **Opus + Claude Code**.
-> - 🟡 #9: **Template-based sentence assembly** — function word inventory now supports this.
+> - 🟡 #9: **Template-based sentence assembly** — function word inventory (with position rules) now supports this. **Opus + Claude Code**.
 > - 🟡 Optional: **Stem extraction fourth pass** (86.6%→90%+) — diminishing returns
+> - 🟡 Optional: **"to do it" investigation** (74/110, 12 MISS) — largest verb-specific gap
 >
 > The scope doc (`pari_pakuru_project_scope.md`) has full context. The DB is `skiri_pawnee.db` (4,366 entries). Scripts are in `scripts/`. Web app runs on PythonAnywhere.
->
-> **Tool recommendations:**
-> - Accent integration → **Claude Code** (wire `apply_accent_rules()` into morpheme_inventory output)
-> - PDF/Anki export → **Claude Code** directly
-> - Function word classification → **Opus** for linguistic analysis of position rules, then **Claude Code** for DB updates

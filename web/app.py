@@ -10,10 +10,12 @@ import argparse
 import hashlib
 import math
 import os
+import re
 import sys
 from datetime import date
 
 from flask import Flask, g, jsonify, render_template, request, abort
+from markupsafe import Markup
 
 # Ensure project root is on path
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -27,6 +29,33 @@ DATABASE = os.path.join(PROJECT_ROOT, "skiri_pawnee.db")
 
 app = Flask(__name__)
 app.config["DATABASE"] = DATABASE
+
+
+# ------------------------------------------------------------------
+# Jinja template filters
+# ------------------------------------------------------------------
+
+_UPPER_RUN_RE = re.compile(r"([A-Z][A-Z']+)")
+
+
+@app.template_filter("format_pitch")
+def format_pitch(pronunciation: str) -> Markup:
+    """Wrap UPPERCASE pitch-accent syllables in <span class="pitch-high">.
+
+    If the pronunciation has no uppercase (pitch not marked), append a
+    small note so learners know the absence is intentional.
+    """
+    if not pronunciation:
+        return Markup("")
+    has_upper = any(c.isupper() for c in pronunciation)
+    if has_upper:
+        html = _UPPER_RUN_RE.sub(r'<span class="pitch-high">\1</span>', pronunciation)
+        return Markup(html)
+    # All-lowercase: display as-is with "pitch not marked" note
+    return Markup(
+        f'{pronunciation}'
+        ' <span class="pitch-unmarked">(pitch not marked)</span>'
+    )
 
 
 # ------------------------------------------------------------------

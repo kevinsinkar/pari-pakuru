@@ -30,6 +30,33 @@ body {
     color: var(--pico-secondary);
 }
 
+/* ---- Pitch accent display ---- */
+.pitch-high {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    text-decoration-color: var(--pico-primary);
+}
+.pitch-unmarked {
+    font-size: 0.75em;
+    color: var(--pico-muted-color);
+    font-style: italic;
+    font-weight: normal;
+}
+.pitch-note {
+    font-size: 0.8em;
+    color: var(--pico-muted-color);
+    margin-top: 0.25rem;
+}
+/* Flashcard front: pitch-high on dark bg already uses white bold */
+.fc-back .pitch-high {
+    text-decoration-color: #90cdf4;
+}
+.fc-back .pitch-unmarked {
+    color: #a0aec0;
+}
+
 /* ---- Badges ---- */
 .badge {
     display: inline-block;

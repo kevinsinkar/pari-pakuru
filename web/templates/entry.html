@@ -14,12 +14,15 @@
 
         <dl class="entry-pronunciations">
             {% if entry.simplified_pronunciation %}
-            <dt>Pronounce:</dt><dd class="pronunciation">{{ entry.simplified_pronunciation }}</dd>
+            <dt>Pronounce:</dt><dd class="pronunciation">{{ entry.simplified_pronunciation|format_pitch }}</dd>
             {% endif %}
             {% if entry.phonetic_form %}
             <dt>IPA:</dt><dd class="ipa">{{ entry.phonetic_form }}</dd>
             {% endif %}
         </dl>
+        {% if entry.simplified_pronunciation %}
+        <p class="pitch-note"><strong>UPPERCASE</strong> = high pitch. Pitch is meaningful in Pawnee.</p>
+        {% endif %}
 
         <div>
             {% if entry.grammatical_class %}

@@ -32,7 +32,7 @@
     {# Pronunciation #}
     {% if entry.simplified_pronunciation %}
     <div style="margin-top:0.35rem;">
-      <span class="font-serif pronunciation">{{ entry.simplified_pronunciation }}</span>
+      <span class="font-serif pronunciation">{{ entry.simplified_pronunciation|format_pitch }}</span>
     </div>
     {% endif %}
 

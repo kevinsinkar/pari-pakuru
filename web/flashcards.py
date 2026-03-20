@@ -43,6 +43,8 @@ class FlashCardSet:
 
 # Display labels and max cards per category
 CATEGORIES = {
+    "bb_essentials": {"label": "Blue Book Essentials",        "max": 40},
+    "greetings":     {"label": "Greetings & Common Words",    "max": 20},
     "kinship":   {"label": "Family & Kinship",         "max": 20},
     "number":    {"label": "Numbers & Counting",       "max": 20},
     "animal":    {"label": "Animals",                   "max": 30},
@@ -66,6 +68,7 @@ CATEGORIES = {
 
 # Category ordering for the curriculum (learner-friendly progression)
 CATEGORY_ORDER = [
+    "bb_essentials", "greetings",
     "kinship", "number", "animal", "body", "food", "clothing",
     "housing", "color", "celestial", "water", "plant", "tool",
     "land", "emotion", "ceremony", "social", "speech", "motion",
@@ -305,8 +308,137 @@ def _entry_matches_category(tag: str, definition: str, gram_class: str) -> bool:
     return True
 
 
+def _fetch_bb_essentials(
+    conn: sqlite3.Connection, limit: int, seen_ids: set
+) -> List[FlashCard]:
+    """Fetch BB-attested entries regardless of semantic tag."""
+    cur = conn.cursor()
+    cur.execute("""
+        SELECT le.entry_id, le.headword, le.normalized_form,
+               le.simplified_pronunciation, le.phonetic_form,
+               le.grammatical_class, le.blue_book_attested,
+               (SELECT definition FROM glosses g
+                WHERE g.entry_id = le.entry_id
+                ORDER BY sense_number LIMIT 1) as definition
+        FROM lexical_entries le
+        WHERE le.blue_book_attested = 1
+          AND le.simplified_pronunciation IS NOT NULL
+        ORDER BY
+            CASE WHEN le.grammatical_class IN ('N','N-KIN','NUM','INTERJ') THEN 0
+                 WHEN le.grammatical_class IN ('ADJ','ADV','DEM','CONJ') THEN 1
+                 ELSE 2 END,
+            LENGTH(le.headword), le.headword
+    """)
+    cards = []
+    for r in cur.fetchall():
+        if len(cards) >= limit:
+            break
+        if r["entry_id"] in seen_ids or not r["definition"]:
+            continue
+        defn = r["definition"]
+        if len(defn) > 120:
+            defn = defn[:117] + "..."
+        seen_ids.add(r["entry_id"])
+        cards.append(FlashCard(
+            entry_id=r["entry_id"],
+            headword=r["headword"],
+            normalized_form=r["normalized_form"],
+            simplified_pronunciation=r["simplified_pronunciation"],
+            phonetic_form=r["phonetic_form"],
+            definition=defn,
+            grammatical_class=r["grammatical_class"],
+            blue_book_attested=True,
+        ))
+    return cards
+
+
+def _fetch_greetings(
+    conn: sqlite3.Connection, limit: int, seen_ids: set
+) -> List[FlashCard]:
+    """Fetch greetings and common words from function_words + lexical_entries."""
+    cur = conn.cursor()
+    # Pull BB-attested function words that also exist in lexical_entries
+    cur.execute("""
+        SELECT le.entry_id, le.headword, le.normalized_form,
+               le.simplified_pronunciation, le.phonetic_form,
+               le.grammatical_class, le.blue_book_attested,
+               COALESCE(
+                   (SELECT definition FROM glosses g
+                    WHERE g.entry_id = le.entry_id
+                    ORDER BY sense_number LIMIT 1),
+                   fw.usage_notes
+               ) as definition
+        FROM function_words fw
+        JOIN lexical_entries le ON fw.headword = le.headword
+        WHERE fw.bb_attested = 1
+          AND le.simplified_pronunciation IS NOT NULL
+        ORDER BY
+            CASE WHEN fw.grammatical_class IN ('INTERJ','PRON','DEM') THEN 0
+                 WHEN fw.grammatical_class IN ('NUM','CONJ','PART') THEN 1
+                 ELSE 2 END,
+            LENGTH(le.headword), le.headword
+    """)
+    cards = []
+    for r in cur.fetchall():
+        if len(cards) >= limit:
+            break
+        if r["entry_id"] in seen_ids or not r["definition"]:
+            continue
+        defn = r["definition"]
+        if len(defn) > 120:
+            defn = defn[:117] + "..."
+        seen_ids.add(r["entry_id"])
+        cards.append(FlashCard(
+            entry_id=r["entry_id"],
+            headword=r["headword"],
+            normalized_form=r["normalized_form"],
+            simplified_pronunciation=r["simplified_pronunciation"],
+            phonetic_form=r["phonetic_form"],
+            definition=defn,
+            grammatical_class=r["grammatical_class"],
+            blue_book_attested=bool(r["blue_book_attested"]),
+        ))
+
+    # Also pull BB-source function word entries (from import_bb_items.py)
+    # that aren't in function_words table but have function-word gram classes
+    if len(cards) < limit:
+        cur.execute("""
+            SELECT le.entry_id, le.headword, le.normalized_form,
+                   le.simplified_pronunciation, le.phonetic_form,
+                   le.grammatical_class, le.blue_book_attested,
+                   (SELECT definition FROM glosses g
+                    WHERE g.entry_id = le.entry_id
+                    ORDER BY sense_number LIMIT 1) as definition
+            FROM lexical_entries le
+            WHERE le.source = 'blue_book'
+              AND le.grammatical_class IN ('INTERJ','PRON','DEM','CONJ','PART','ADV')
+              AND le.simplified_pronunciation IS NOT NULL
+            ORDER BY LENGTH(le.headword), le.headword
+        """)
+        for r in cur.fetchall():
+            if len(cards) >= limit:
+                break
+            if r["entry_id"] in seen_ids or not r["definition"]:
+                continue
+            defn = r["definition"]
+            if len(defn) > 120:
+                defn = defn[:117] + "..."
+            seen_ids.add(r["entry_id"])
+            cards.append(FlashCard(
+                entry_id=r["entry_id"],
+                headword=r["headword"],
+                normalized_form=r["normalized_form"],
+                simplified_pronunciation=r["simplified_pronunciation"],
+                phonetic_form=r["phonetic_form"],
+                definition=defn,
+                grammatical_class=r["grammatical_class"],
+                blue_book_attested=bool(r["blue_book_attested"]),
+            ))
+    return cards
+
+
 def _fetch_top_entries(
-    conn: sqlite3.Connection, tag: str, limit: int
+    conn: sqlite3.Connection, tag: str, limit: int, seen_ids: set
 ) -> List[FlashCard]:
     """
     Fetch the best beginner-friendly entries for a category.
@@ -338,11 +470,10 @@ def _fetch_top_entries(
     """, (tag,))
 
     cards = []
-    seen = set()
     for r in cur.fetchall():
         if len(cards) >= limit:
             break
-        if r["entry_id"] in seen or not r["definition"]:
+        if r["entry_id"] in seen_ids or not r["definition"]:
             continue
 
         defn = r["definition"]
@@ -351,7 +482,7 @@ def _fetch_top_entries(
         if not _entry_matches_category(tag, defn, gram):
             continue
 
-        seen.add(r["entry_id"])
+        seen_ids.add(r["entry_id"])
 
         defn = r["definition"]
         # Skip entries with very long/technical definitions
@@ -379,6 +510,7 @@ def generate_all_sets(db_path: str) -> List[FlashCardSet]:
 
     all_sets = []
     week_num = 1
+    seen_ids: set = set()  # dedup across categories
 
     for cat in CATEGORY_ORDER:
         info = CATEGORIES.get(cat)
@@ -387,7 +519,12 @@ def generate_all_sets(db_path: str) -> List[FlashCardSet]:
         label = info["label"]
         max_cards = info["max"]
 
-        entries = _fetch_top_entries(conn, cat, max_cards)
+        if cat == "bb_essentials":
+            entries = _fetch_bb_essentials(conn, max_cards, seen_ids)
+        elif cat == "greetings":
+            entries = _fetch_greetings(conn, max_cards, seen_ids)
+        else:
+            entries = _fetch_top_entries(conn, cat, max_cards, seen_ids)
         if not entries:
             continue
 

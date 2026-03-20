@@ -6,6 +6,7 @@
 <div class="fc-study-header">
     <h2>Week {{ fset.week }}: {{ fset.category_label }}</h2>
     <p>{{ fset.card_count }} words. Click a card to flip it.</p>
+    <p class="pitch-note"><strong>UPPERCASE</strong> syllable = high pitch. Pitch is meaningful in Pawnee.</p>
 </div>
 
 <div class="fc-progress">
@@ -20,7 +21,7 @@
             <div class="fc-front">
                 <div class="fc-front-word">{{ card.normalized_form or card.headword }}</div>
                 {% if card.simplified_pronunciation %}
-                <div class="fc-front-pron">{{ card.simplified_pronunciation }}</div>
+                <div class="fc-front-pron">{{ card.simplified_pronunciation|format_pitch }}</div>
                 {% endif %}
                 {% if card.headword and card.headword != (card.normalized_form or card.headword) %}
                 <div class="fc-front-parks">{{ card.headword }}</div>
@@ -37,7 +38,7 @@
                 <div class="fc-back-definition">{{ card.definition }}</div>
                 <div class="fc-back-word">{{ card.normalized_form or card.headword }}</div>
                 {% if card.simplified_pronunciation %}
-                <div class="fc-back-pron">{{ card.simplified_pronunciation }}</div>
+                <div class="fc-back-pron">{{ card.simplified_pronunciation|format_pitch }}</div>
                 {% endif %}
                 {% if card.phonetic_form %}
                 <div class="fc-back-ipa ipa">{{ card.phonetic_form }}</div>
