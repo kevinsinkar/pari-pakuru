@@ -338,13 +338,15 @@
 
     /* ── locative / instrumental case panel ───────────────────────── */
     function renderCasePanel(forms) {
+        if (!forms || !forms.length) return '';
         var html = '<div class="poss-case-panel">'
                  + '<div class="poss-case-panel__heading">Case Forms</div>';
         forms.forEach(function(f) {
+            if (!f || !f.form) return;  /* skip null/empty forms */
             html += '<div class="poss-case-row">'
-                  + '<span class="poss-case-row__type">' + esc(f.type) + '</span>'
+                  + '<span class="poss-case-row__type">' + esc(f.type || '') + '</span>'
                   + '<span class="poss-case-row__form ipa">' + esc(f.form) + '</span>'
-                  + '<span class="poss-case-row__gloss">' + esc(f.gloss) + '</span>'
+                  + '<span class="poss-case-row__gloss">' + esc(f.gloss || '') + '</span>'
                   + '</div>';
         });
         html += '</div>';

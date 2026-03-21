@@ -49,6 +49,7 @@ from pathlib import Path
 # Try to import from morpheme_inventory; fall back to built-in if unavailable
 # ---------------------------------------------------------------------------
 _HAS_MORPHEME_ENGINE = False
+_HAS_NOMINAL_SC = False
 try:
     # INTEGRATION POINT: adjust this import path to match your repo layout
     from morpheme_inventory import (
@@ -61,6 +62,12 @@ try:
     _HAS_MORPHEME_ENGINE = True
 except ImportError:
     pass
+
+try:
+    from sound_changes import apply_nominal_sc as _apply_nominal_sc
+    _HAS_NOMINAL_SC = True
+except ImportError:
+    _HAS_NOMINAL_SC = False
 
 # ---------------------------------------------------------------------------
 # Path configuration
@@ -405,15 +412,21 @@ def generate_locative(
 def generate_instrumental(
     headword: str,
     noun_class: Optional[str] = None,
-) -> LocativeResult:
+) -> Optional[LocativeResult]:
     """
     Generate the instrumental case form: stem + -biriʔ/-iriʔ.
 
-    Instrumental applies to ALL nouns ("with, using").
+    Instrumental applies to concrete nouns ("with, using").
+    Returns None for empty headwords or abstract/verbal entries where
+    instrumental case is semantically inapplicable.
     Allomorphy: -biriʔ after vowel-final stems, -iriʔ after consonants.
     For body parts this is the same form as locative.
     """
+    if not headword:
+        return None
     stem, suffix = extract_noun_stem(headword)
+    if not stem:
+        return None
     # -biriʔ allomorphy: b → Ø after any consonant (Parks Ch. 4)
     inst_suffix = "biriʔ" if stem[-1] in VOWELS else "iriʔ"
     morphemes = [stem, inst_suffix]
@@ -499,6 +512,18 @@ def _fallback_concatenate(morphemes: List[str]) -> str:
         Rule 4R:  i + u → u  (i drops before u; BB p.22 "ti+ku+iks=tiku'ks")
         Rule 8R:  r → t after {p,t,k,s,c}  (BB p.6 "rakis+rahkata=rakistahkata")
         Rule 12R: r → h before consonant  (BB p.13 "hir+wa=hihwa")
+
+    NOMINAL ALLOMORPHY NOTE — raar→taar after consonants:
+        The body-part plural marker -raar- surfaces as -taar- after consonant-
+        final stems. This is NOT a separate sound change rule — it's Rule 8R
+        (r→t after hard consonant) applying at the stem+suffix boundary:
+            iks + raar + iriʔ  →  iks + taar + iriʔ  →  ikstaaririʔ  (attested)
+        This parallels the -biriʔ → -iriʔ allomorphy (b→Ø after C) and the
+        -wiru → -ru tribal locative alternation. All three are conditioned by
+        the same environment: post-consonant morpheme junction in nominals.
+        The underlying pattern is consonant-cluster simplification at nominal
+        morpheme boundaries — initial sonorants/voiced stops reduce or delete
+        after obstruent-final stems.
     """
     result = ""
     for morph in morphemes:
@@ -563,7 +588,14 @@ def concatenate(morphemes: List[str], labels: Optional[List[str]] = None) -> str
 
 
 def apply_sc(form: str) -> str:
-    """Use real sound change pipeline if available, else fallback."""
+    """Apply nominal sound changes to a surface form.
+
+    Uses the dedicated nominal pipeline (excludes verb-specific rules
+    like Rule 17 sibilant hardening) when available. Falls back to the
+    full verb pipeline, then to the minimal built-in fallback.
+    """
+    if _HAS_NOMINAL_SC:
+        return _apply_nominal_sc(form)
     if _HAS_MORPHEME_ENGINE:
         return apply_sound_changes(form)
     return _fallback_apply_sound_changes(form)
@@ -1215,10 +1247,12 @@ def generate_paradigm_table(
             {"type": "locative (pl)", "form": loc_pl.surface_form,
              "morphemes": " + ".join(f"{m}({l})" for m, l in zip(loc_pl.morpheme_sequence, loc_pl.morpheme_labels)),
              "gloss": loc_pl.gloss},
-            {"type": "instrumental", "form": inst.surface_form,
-             "morphemes": " + ".join(f"{m}({l})" for m, l in zip(inst.morpheme_sequence, inst.morpheme_labels)),
-             "gloss": inst.gloss},
         ]
+        if inst:
+            loc_forms.append(
+                {"type": "instrumental", "form": inst.surface_form,
+                 "morphemes": " + ".join(f"{m}({l})" for m, l in zip(inst.morpheme_sequence, inst.morpheme_labels)),
+                 "gloss": inst.gloss})
     elif first_result.system == "agent":
         loc = generate_locative(headword, noun_class=noun_class)
         inst = generate_instrumental(headword, noun_class=noun_class)
@@ -1226,10 +1260,12 @@ def generate_paradigm_table(
             {"type": "locative", "form": loc.surface_form,
              "morphemes": " + ".join(f"{m}({l})" for m, l in zip(loc.morpheme_sequence, loc.morpheme_labels)),
              "gloss": loc.gloss},
-            {"type": "instrumental", "form": inst.surface_form,
-             "morphemes": " + ".join(f"{m}({l})" for m, l in zip(inst.morpheme_sequence, inst.morpheme_labels)),
-             "gloss": inst.gloss},
         ]
+        if inst:
+            loc_forms.append(
+                {"type": "instrumental", "form": inst.surface_form,
+                 "morphemes": " + ".join(f"{m}({l})" for m, l in zip(inst.morpheme_sequence, inst.morpheme_labels)),
+                 "gloss": inst.gloss})
 
     return {
         "headword": headword,
@@ -1332,15 +1368,11 @@ BB_TESTS = [
 LOCATIVE_TESTS = [
     # Body part locative: stem + -iriʔ (b → Ø after consonant)
     # Attested: iksiriʔ = iks + iriʔ "by hand; on the hand"
-    # NOTE: engine currently produces ikciriʔ due to verb Rule 17 (ks→kc)
-    # applying to nominal forms — a pre-existing pipeline issue.
-    # The b-deletion allomorphy (biriʔ→iriʔ after C) is correct.
-    ("iksuʔ", "N-DEP", False, False, "ikciriʔ"),
+    ("iksuʔ", "N-DEP", False, False, "iksiriʔ"),
     # Body part locative plural: stem + raar + iriʔ
     # Attested: ikstaaririʔ = iks + taar + iriʔ (Gram. Overview p.30)
-    # Two known gaps: (1) raar→taar after C not implemented,
-    # (2) verb Rule 17 (ks→kc) fires on nominal forms.
-    ("iksuʔ", "N-DEP", False, True, "ikctaaririʔ"),
+    # raar→taar handled by Rule 8R (r→t after hard C) in nominal pipeline
+    ("iksuʔ", "N-DEP", False, True, "ikstaaririʔ"),
 
     # Tribal locative: base_name + ru
     # sahiiru = sahii + ru "in Cheyenne country"

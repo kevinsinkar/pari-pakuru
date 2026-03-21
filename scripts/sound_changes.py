@@ -994,6 +994,49 @@ def apply_sound_changes(morphemes, final_s_loss=False):
     return surface
 
 
+def apply_nominal_sc(surface):
+    """Apply only noun-safe sound changes to a surface string.
+
+    Parks Ch. 3 rules are documented for verb morphology. Many also apply
+    at nominal morpheme boundaries, but several are verb-specific:
+      - Rule 17 (sibilant hardening: s→c / C_) — verb-internal only
+      - Rule 18 (sibilant loss: s→Ø / k_c) — verb cluster reduction
+      - Rule 19 (alveolar dissimilation: t+t→ct) — verb prefix interaction
+
+    Rules that DO apply to nominal forms:
+      - Rules 5, 6, 7: vowel coalescence at morpheme boundaries
+      - Rule 13: t→h before r (general phonotactic)
+      - Rule 14: r+h metathesis
+      - Rule 15: hr→h sonorant reduction
+      - Rule 16: h-loss (general)
+      - Rule 20: degemination (general)
+      - Rule 21: r-stopping (general)
+      - Rule 22: labial glide loss (general)
+      - Rule 23: final r loss (general)
+    """
+    s = surface
+
+    # --- Vowel rules (always apply) ---
+    s = apply_rule_5_same_vowel_contraction(s)
+    s = apply_rule_6_u_domination(s)
+    s = apply_rule_7_i_a_contraction(s)
+
+    # --- Consonant rules (noun-safe subset) ---
+    s = apply_rule_13_t_laryngealization(s)
+    s = apply_rule_14_metathesis(s)
+    s = apply_rule_15_sonorant_reduction(s)
+    s = apply_rule_16_h_loss(s)
+    # Rule 17 (sibilant hardening) EXCLUDED — verb-specific
+    # Rule 18 (sibilant loss) EXCLUDED — verb-specific
+    # Rule 19 (alveolar dissimilation) EXCLUDED — verb-specific
+    s = apply_rule_20_degemination(s)
+    s = apply_rule_21_r_stopping(s)
+    s = apply_rule_22_labial_glide_loss(s)
+    s = apply_rule_23_final_r_loss(s)
+
+    return s
+
+
 # ---------------------------------------------------------------------------
 # Test suite — examples from Parks Ch. 3
 # ---------------------------------------------------------------------------
