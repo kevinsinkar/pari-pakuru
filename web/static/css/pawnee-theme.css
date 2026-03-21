@@ -1356,13 +1356,15 @@
   display: none;
   position: absolute;
   left: 50%;
-  bottom: calc(100% + 8px);
+  top: calc(100% + 8px);
   transform: translateX(-50%);
   background: white;
   border: 1px solid var(--earth-200);
   border-radius: 0.5rem;
   padding: 0.75rem 1rem;
   min-width: 220px;
+  max-height: 70vh;
+  overflow-y: auto;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   z-index: 200;
   font-size: 0.8rem;
