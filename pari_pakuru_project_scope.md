@@ -691,6 +691,13 @@ flashcards, and live search. Mobile-responsive via Pico CSS framework.
 - [x] **Noun possession widget** — lazy-loaded via `/api/possession/<headword>` on noun entries; My/Your/His card toggle; color-coded morpheme chips by semantic role (mode/poss/agent/noun/verb/kin); ATTESTED/COMPUTED/LOW confidence badges; locative/instrumental case-form panel; auto-expand for N-DEP/N-KIN, lazy-expand for N
 - [x] **Example filter** — Skiri-aware word-boundary matching on entry detail pages; removes false substring matches (kirike "what?" ≠ kiri "cat") from both dictionary examples and Blue Book attestation tables; cached headword set (~4,273 entries) built lazily on first request
 - [x] **Data quality dashboard** — `/dashboard` route with corpus stats, field completeness, verb engine coverage, possession engine coverage, E2S linking health
+- [x] **UI/UX improvements** *(completed 2026-03-20)*:
+  - Spelling preference toggle (Parks vs. Simplified): cookie-persisted, nav toggle, `primary_spelling`/`secondary_spelling` Jinja filters, all templates respect preference, search placeholder updates dynamically
+  - Mobile responsive: hamburger nav (<768px), homepage grid stacking, filter sidebar collapse, conjugation table sticky first column, sentence builder bottom-sheet dropdowns, flashcard swipe gestures
+  - Accessibility: search direction `role="radiogroup"` with `sr-only` radio inputs, `lang="x-paw"` on all Skiri text elements (entry, cards, flashcards, possession widget, sentence builder, guide), `aria-labelledby` on feedback modal, skip-to-content link, badge contrast WCAG AA compliant, flashcard keyboard nav (arrows, Enter/Space)
+  - Learner-friendly: collapsible `<details>` entry sections, learner/expert view toggle (localStorage), pronunciation tooltip `_pronunciation_help.html`, flashcard self-assessment (Got it/Missed with localStorage progress tracking, Review Missed, session summary), "Start Here" beginner card on homepage, learning path timeline on flashcards overview
+  - Browse: human-readable grammatical class labels (`GRAM_CLASS_LABELS` dict via context processor, displayed on browse page and as badge `title` attributes)
+  - Search: direction toggle on both index and results pages, direction persisted in form params, BB verb form search endpoint (`/api/bb_verb_forms`)
 
 **Routes:**
 - `/` — Homepage with stats and random word
@@ -709,6 +716,12 @@ flashcards, and live search. Mobile-responsive via Pico CSS framework.
 - `/api/feedback` — POST: submit flag/confirm feedback on an entry
 - `/admin/feedback` — Review queue for community feedback (accept/reject with notes)
 - `/admin/feedback/<id>/review` — POST: accept or reject a feedback item
+- `/preferences` — POST: set spelling preference cookie (parks/simplified)
+- `/guide` — Syllable pronunciation guide
+- `/sentence-builder` — Sentence assembly UI
+- `/api/assemble` — POST: assemble sentence from template + slot values
+- `/api/slot-options` — Dropdown options for sentence builder slots
+- `/api/bb_verb_forms?q=...` — Blue Book verb form search
 
 ### 🔲 Phase 4.2 — Sentence Builder UI
 **Priority:** Low (depends on Phase 3.2a at minimum)
@@ -1052,6 +1065,7 @@ Copy-paste this to start the next session (claude.ai or Claude Code):
 > - Phase 4.1 Flashcards: ✅ BB Essentials + Greetings categories, 93 BB entries with pronunciation + semantic tags, pitch accent display with `format_pitch` filter, 387 cards across 24 weeks
 > - Phase 4.3 Confidence scoring: ✅ (4-factor weighted score, DB column, web badges, 88.7% average)
 > - Phase 4.4 Community feedback: ✅ (flag/confirm buttons, admin review queue, writable DB, dashboard widget)
+> - Phase 4.1 UI/UX: ✅ All TODO_UI_IMPROVEMENTS.md items complete — spelling toggle, mobile responsive, a11y (lang tagging, ARIA, contrast, keyboard), learner features (collapsible sections, self-assessment, Start Here), browse labels, search direction
 > - Blue Book gap triage: ✅ (516 gaps classified, 93 items imported to dictionary, 82% inflected verbs trace to existing roots)
 >
 > **Remaining roadmap priorities:**
