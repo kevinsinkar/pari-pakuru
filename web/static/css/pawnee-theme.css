@@ -1149,16 +1149,16 @@
   font-weight: 500;
   margin-bottom: 0.15em;
   line-height: 1.2;
-  color: var(--earth-900);
+  color: #1a0e08;
 }
 .fc-front-pron {
   font-size: 1.1em;
-  color: var(--earth-700);
+  color: var(--earth-900);
   margin-bottom: 0.3em;
 }
 .fc-front-parks {
   font-size: 0.95em;
-  color: var(--earth-500);
+  color: var(--earth-700);
   margin-bottom: 0.5em;
   font-family: 'Source Serif 4', 'Gentium Plus', 'Charis SIL', monospace;
 }
