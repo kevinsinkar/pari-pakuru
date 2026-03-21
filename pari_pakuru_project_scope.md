@@ -231,7 +231,7 @@ High-impact items ordered by learner value, not technical dependency:
 | ✅ ~~3~~ | 4.3 | ~~Confidence scoring on computed forms~~ | **DONE (2026-03-19)** — 4-factor weighted scoring (0.0-1.0), DB column, web badges, dashboard widget. 88.7% avg, 2,202 high / 30 med / 22 low. |
 | 🟡 4 | 3.1 (accent) | Accent mark generation | **IN PROGRESS** — 78/85 (91.8%) accented forms correct. 4 rules: Agent-boundary í, Mode-prefix í/rí, Infinitive kú, Dual sí. Appendix 1: 76.2% → **86.4%**. 7 remaining failures are verb-specific stem accents. |
 | ✅ ~~5~~ | 4.4 | ~~Community feedback mechanism~~ | **DONE (2026-03-19)** — Flag/confirm buttons, admin review queue, writable DB, dashboard widget. Design Principle #6 enforced. |
-| 🔴 6 | 5.2 (exports) | Printable PDFs + Anki export | Design Principle #3 is underbuilt; teachers need offline materials now |
+| 🟡 6 | 5.2 (exports) | Printable PDFs + Anki export | **Anki DONE (2026-03-20)** — 4,336 cards, 19 tag decks, dedup + display_headword + confidence gating. PDF export remaining. |
 | ✅ ~~7~~ | Ongoing | ~~Blue Book 518-gap triage~~ | **DONE (2026-03-19)** — 516 gaps classified: 38% phrases, 27% inflected verbs, 18% unlisted nouns, 8% descriptors, 3% possessed, 2% function words, 2% loanwords, 2% OCR artifacts. 65% are morphological (roots exist in Parks). 115 high-value items flagged for DB addition. |
 | ✅ ~~8~~ | 3.1.6 | ~~Function word inventory~~ | **CLASSIFIED (2026-03-20)** — 418 function words with `position_rule` + `refined_subclass`. 149 PROCLITIC, 135 PRECEDES-VERB, 51 PRECEDES-NOUN, 44 CLAUSE-INITIAL, 28 STANDALONE, 11 BETWEEN-CLAUSES. Demonstratives + interrogatives mapped. |
 | 🟡 9 | 3.2a | Template-based sentence assembly | First usable step toward sentence construction |
@@ -840,8 +840,10 @@ Tasks:
 - [x] Semantic category decks (19 categories: kinship, animals, body, food, etc.)
 - [x] Include pronunciation (IPA + simplified respelling) on every card
 - [x] Blue Book-attested entries prioritized in card selection
-- [ ] **🔴 Printable PDF wordlists and paradigm tables for offline use** — highest-impact export for classroom use; target users may have inconsistent internet access
-- [ ] **🔴 Anki deck export**: Skiri → English and English → Skiri cards (large self-directed learner community uses Anki)
+- [x] **Anki deck export** — **DONE (2026-03-20)**. `scripts/anki_export.py`: 4,336 cards across 19 semantic tag decks + "All Words" parent. genanki .apkg output. Stable model/deck/note IDs for safe re-import. CLI flags: `--dry-run`, `--deck TAG`, `--advanced` (per-sense Option B), `--verbs-only`, `--bb-only`, `--min-confidence`.
+- [x] **Pre-export data cleanup (2026-03-20):** `scripts/dedup_entries.py` removed 22 p2/p71 duplicate pairs + merged kusisaar parser artifact (4,366 → 4,343 entries). Preserved hiksukac (VD/VP) and racawaktaarik (VI/VT) as legitimate polysemy. `scripts/display_utils.py`: `display_headword()` with 5 rules (bracket, slash, paren onset, suffix paren, bound-morpheme dash), `gram_class_label()`, `morph_class_note()`. Tested against all 281 notation entries — zero problems.
+- [x] **Card template spec locked:** Option A multi-sense (primary sense + "+N more" note), form2_confidence >= 0.75 threshold for verb forms, format_pitch_anki() for HTML pitch accent, per-class back notes (N-KIN, N-DEP, LOC, ADV-P), example dedup on english_translation.
+- [ ] **🔴 Printable PDF wordlists and paradigm tables for offline use** — highest-impact remaining export for classroom use; target users may have inconsistent internet access. Same query as Anki, rendered via reportlab/weasyprint.
 - [ ] Blue Book lesson-aligned decks (vocabulary per lesson)
 - [ ] Audio placeholder fields (for future recordings)
 
@@ -851,6 +853,7 @@ Tasks:
 
 **Follow-up actions completed (2026-03-19):**
 - [x] **Import 93 high-value BB items** — `scripts/import_bb_items.py`: 76 nouns, 9 function words, 8 loanwords added to `lexical_entries` (4,273 → 4,366). New `source` column = 'blue_book'. Entry IDs: `BB-{slug}-{seq}`.
+- [x] **p2/p71 deduplication (2026-03-20)** — `scripts/dedup_entries.py`: 22 p2/p71 duplicate pairs removed (p2 kept for higher-quality IPA), kusisaar parser artifact merged (4,366 → 4,343). hiksukac (VD/VP) and racawaktaarik (VI/VT) preserved as polysemy. Examples migrated before deletion. Backup: `~/.pari_pakuru_backups/`.
 - [x] **Function word inventory seeded** — `scripts/function_word_inventory.py`: 414 items in `function_words` table (355 Parks + 2 BB direct + 57 Gemini-extracted from phrases).
 - [x] **Inflected verb reverse-lookup** (Opus analysis): 82% of 141 BB inflected verb gaps trace to existing Parks dictionary roots. Gap is morphological, not lexical. Top roots: `at` 'go', `aar` 'do', `kuutik` 'kill', `irik` 'see', `huras` 'find', `kawaahc` 'eat'. Validates that conjugation engine work is the right investment.
 - [ ] Prune ~5-6 OCR artifacts from Gemini function word extraction
@@ -924,7 +927,7 @@ These principles guide all user-facing features:
 - Gemini API key stored as environment variable `GEMINI_API_KEY`
 - Windows environment (paths use `\` in logs)
 - Repository: `pari-pakuru/` with structure documented in `DIRECTORY_LAYOUT.md`
-- **Production deployment:** PythonAnywhere at `/home/paripakuru/main/` — Flask app in `web/app.py`, SQLite DB at `skiri_pawnee.db`, scripts in `scripts/`
+- **Production deployment:** PythonAnywhere at `/home/paripakuru/main/` — Flask app in `web/app.py`, SQLite DB at `skiri_pawnee.db`, scripts in `scripts/`. DB is not git-tracked; run `python scripts/dedup_entries.py --apply` on PA after pull to sync dedup (backs up to `~/.pari_pakuru_backups/`).
 
 ---
 
@@ -1058,20 +1061,24 @@ Copy-paste this to start the next session (claude.ai or Claude Code):
 > **Pick the next priority from the Pari Pakuru roadmap.**
 >
 > **What's done (session: 2026-03-20):**
+> - Phase 5.2 Anki export: ✅ `scripts/anki_export.py` — 4,336 cards, 19 semantic tag decks + All Words parent, genanki .apkg. CLI: `--dry-run`, `--deck TAG`, `--advanced`, `--verbs-only`, `--bb-only`, `--min-confidence`
+> - DB dedup: ✅ `scripts/dedup_entries.py` — 22 p2/p71 pairs + kusisaar merge (4,366 → 4,343). Polysemy preserved (hiksukac VD/VP, racawaktaarik VI/VT)
+> - Display utils: ✅ `scripts/display_utils.py` — `display_headword()` 5 rules, `gram_class_label()`, `morph_class_note()`. 281 notation entries, zero problems
+> - Card spec locked: Option A multi-sense, form2_confidence >= 0.75, format_pitch_anki(), per-class back notes, example dedup on english_translation
 > - Phase 3.1.5 Noun possession: ✅ (4 systems, locative suffixes, web widget, example filter, 40/40 tests)
 > - Phase 3.1 Stem extraction: 🟡 86.6% exact (1,914/2,211 verbs), up from 14.8% baseline across 3 passes
-> - Phase 3.1 Accent rules: ✅ Integrated into `morpheme_inventory.py` — Appendix 1: 90.3% exact (695/770). ir-preverb accents via `_apply_ir_accents` (inline), non-ir via `apply_accent_rules()` (surface-form)
-> - Phase 3.1.6 Function word inventory: ✅ CLASSIFIED — 418 items with `position_rule` + `refined_subclass` (149 PROCLITIC, 135 PRECEDES-VERB, 51 PRECEDES-NOUN, 44 CLAUSE-INITIAL, 28 STANDALONE, 11 BETWEEN-CLAUSES)
-> - Phase 4.1 Flashcards: ✅ BB Essentials + Greetings categories, 93 BB entries with pronunciation + semantic tags, pitch accent display with `format_pitch` filter, 387 cards across 24 weeks
+> - Phase 3.1 Accent rules: ✅ Integrated into `morpheme_inventory.py` — Appendix 1: 90.3% exact (695/770)
+> - Phase 3.1.6 Function word inventory: ✅ CLASSIFIED — 418 items with `position_rule` + `refined_subclass`
+> - Phase 4.1 Flashcards: ✅ BB Essentials + Greetings, 93 BB entries, pitch accent display, 387 cards across 24 weeks
 > - Phase 4.3 Confidence scoring: ✅ (4-factor weighted score, DB column, web badges, 88.7% average)
 > - Phase 4.4 Community feedback: ✅ (flag/confirm buttons, admin review queue, writable DB, dashboard widget)
-> - Phase 4.1 UI/UX: ✅ All TODO_UI_IMPROVEMENTS.md items complete — spelling toggle, mobile responsive, a11y (lang tagging, ARIA, contrast, keyboard), learner features (collapsible sections, self-assessment, Start Here), browse labels, search direction
-> - Blue Book gap triage: ✅ (516 gaps classified, 93 items imported to dictionary, 82% inflected verbs trace to existing roots)
+> - Phase 4.1 UI/UX: ✅ All items complete — spelling toggle, mobile, a11y, learner features, tooltip fix
+> - Blue Book gap triage: ✅ (516 gaps classified, 93 items imported, 82% inflected verbs trace to existing roots)
 >
 > **Remaining roadmap priorities:**
-> - 🔴 #6: **Printable PDFs + Anki export** — teachers need offline materials now. **Claude Code**.
+> - 🔴 #6 (partial): **Printable PDF export** — same query as Anki, rendered via reportlab/weasyprint. Two-column vocab list + paradigm table appendix. **Claude Code**.
 > - 🟡 #9: **Template-based sentence assembly** — function word inventory (with position rules) now supports this. **Opus + Claude Code**.
 > - 🟡 Optional: **Stem extraction fourth pass** (86.6%→90%+) — diminishing returns
 > - 🟡 Optional: **"to do it" investigation** (74/110, 12 MISS) — largest verb-specific gap
 >
-> The scope doc (`pari_pakuru_project_scope.md`) has full context. The DB is `skiri_pawnee.db` (4,366 entries). Scripts are in `scripts/`. Web app runs on PythonAnywhere.
+> The scope doc (`pari_pakuru_project_scope.md`) has full context. The DB is `skiri_pawnee.db` (4,343 entries post-dedup). Scripts are in `scripts/`. Web app runs on PythonAnywhere.
