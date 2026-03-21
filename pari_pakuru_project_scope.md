@@ -557,6 +557,7 @@ Tasks completed:
 - [x] Implement agent possession constructor — `kti + GER-POSS-VERB + NOUN` for 1sg/2sg/3sg (ratiru/rasiru/rau); Blue Book p.35 attested
 - [x] Document patient possession pattern — uur- prefix construction; slot 18 in morpheme inventory
 - [x] Implement locative suffix system — -biriʔ (body part LOC/INST), -kat (general LOC), -ru/-wiru (tribal/geo LOC); body-part plural -raar- before -biriʔ; 3-class noun routing per Table 4
+- [x] **Fix -biriʔ allomorphy (2026-03-20):** b → Ø / C_ (any consonant-final stem). Parallel to -wiru/-ru tribal alternation. Vowel-final stems preserve b (kitkahahki+biriʔ), consonant-final delete it (iks+iriʔ). Parks' /b/ is an allophone (not a phoneme) surfacing only after vowels at morpheme boundaries.
 - [x] Handle N-DEP relational nouns — `KNOWN_BODY_PART_STEMS` (25 entries) and `KNOWN_RELATIONAL_STEMS` (5 entries) sets; asaa- "horse/dog", siis- "sharp object" route to agent possession instead of body-part incorporation
 - [x] Validate against 40 Blue Book + Grammatical Overview examples — all 4 systems + locative/instrumental
 - [x] Populate DB tables — `noun_stems`, `kinship_paradigms`, `possession_examples`
@@ -565,6 +566,11 @@ Tasks completed:
 - [x] Possession API — `/api/possession/<headword>` route; Flask blueprint; lazy headword set cache; stub `_lookup_noun_class()` for DB query
 - [x] Example filter — `example_filter.py` with Skiri-aware word boundary matching; rejects false substring matches (kirike "what?" ≠ kiri "cat"); handles OCR variants (J→E, 1→E), morpheme-boundary compounds (kiri•wusu' ✓), epenthetic-h compounds (kirihkaatit ✓), prefix disambiguation; wired into `entry_detail()` route filtering both dictionary examples and BB attestations; 14/14 tests
 - [x] Kinship dispatch fix — dispatcher tries kinship lookup first for any noun regardless of `noun_class`; handles N-KIN entries stored as plain "N" in DB
+
+**Known issues (nominal morphophonology):**
+- [ ] **Verb Rule 17 (ks→kc) fires on nominal forms** — `apply_sc()` routes nominal concatenation through the verb sound change pipeline. Produces `ikciriʔ` instead of attested `iksiriʔ`. Fix: implement `apply_nominal_sc()` with only noun-applicable rules (r→h before stops, vowel coalescence, b→Ø/C_). Blocks correct Anki/PDF export for any noun with `ks` in stem.
+- [ ] **raar→taar after consonants** — body-part plural locative: `iks+raar+iriʔ` should be `ikstaaririʔ` (attested). Low priority — narrow set of body-part plural forms.
+- **Pattern note:** Both alternations (b→Ø, raar→taar) are conditioned by the same environment (post-consonant morpheme junction). Likely a single underlying consonant-cluster simplification rule in nominal morphology.
 
 **Bug fixes applied during deployment:**
 - Kinship file path resolution (REPO_ROOT parent vs current dir)
