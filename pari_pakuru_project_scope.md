@@ -1092,6 +1092,7 @@ Copy-paste this to start the next session (claude.ai or Claude Code):
 > - Phase 3.1 Stem extraction: 🟡 86.6% exact (1,914/2,211 verbs)
 > - Phase 3.1.6 Function word inventory: ✅ 418 items classified
 > - Phase 4.1–4.4: ✅ Web app, flashcards, confidence scoring, community feedback, UI/UX all complete
+> - UI color audit: ✅ WCAG AA contrast fixes across all templates — dark mode tooltip, flashcard guide (matched to actual card dark bg), admin feedback, dashboard muted text, IPA text, pronunciation help
 >
 > **Remaining roadmap priorities:**
 > - 🔴 #6 (partial): **Printable PDF export** — same query as Anki, rendered via reportlab/weasyprint. Two-column vocab list + paradigm table appendix. **Claude Code**.
