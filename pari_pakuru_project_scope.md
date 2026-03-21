@@ -875,7 +875,8 @@ Tasks:
 - [ ] Prune ~5-6 OCR artifacts from Gemini function word extraction
 - [ ] Review 40 descriptor items for potential DB addition
 - [ ] Review 15 possessed forms for integration with possession engine
-- [ ] Resolve 362 unmatched E2S entries (most are parsing artifacts, some may be real terms)
+- [x] **E2S→S2E linking backfill (2026-03-21)** — `english_index.entry_id` populated from `english_to_skiri_linked.json`: 5,129/8,067 linked (63.6%). Match types: 4,723 exact_unique, 398 gloss_disambiguated, 8 first_homonym_fallback. 2,938 unlinked are genuine gaps (multi-word phrases, cross-references, parsing artifacts). 3 orphaned links from dedup (p71 kaaʔa, kusisaar -2018) skipped. Enables SQL joins from English words to full S2E entries for search, export, and AI verification.
+- [ ] Resolve remaining 2,938 unlinked E2S entries (most are parsing artifacts, some may be real terms)
 - [ ] Review 8 low-confidence homonym matches from linking
 - [ ] Version control: track changes to entries over time
 - [ ] Document Blue Book orthography differences (practical vs. linguistic spelling conventions)
@@ -1098,4 +1099,4 @@ Copy-paste this to start the next session (claude.ai or Claude Code):
 > - 🟡 Optional: **Stem extraction fourth pass** (86.6%→90%+) — diminishing returns
 > - 🟡 Optional: **"to do it" investigation** (74/110, 12 MISS) — largest verb-specific gap
 >
-> The scope doc (`pari_pakuru_project_scope.md`) has full context. The DB is `skiri_pawnee.db` (4,343 entries, `bb_variant_of` column, 181 BB-attested). Scripts in `scripts/`. Web app on PythonAnywhere.
+> The scope doc (`pari_pakuru_project_scope.md`) has full context. The DB is `skiri_pawnee.db` (4,343 entries, `bb_variant_of` column, 181 BB-attested, 5,129/8,067 E2S linked). Scripts in `scripts/`. Web app on PythonAnywhere.
