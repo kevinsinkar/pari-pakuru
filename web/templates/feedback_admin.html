@@ -42,7 +42,7 @@
             {{ item.feedback_type }}
           </span>
         </div>
-        <small style="color:var(--earth-400);">{{ item.created_at }}</small>
+        <small style="color:var(--earth-600);">{{ item.created_at }}</small>
       </div>
 
       {% if item.feedback_type == 'flag' %}
@@ -63,13 +63,13 @@
       {% endif %}
 
       {% if item.reporter_name %}
-      <div style="font-size:0.8em; color:var(--earth-400); margin-top:0.25em;">
+      <div style="font-size:0.8em; color:var(--earth-600); margin-top:0.25em;">
         Submitted by: {{ item.reporter_name }}
       </div>
       {% endif %}
 
       {% if item.reviewer_note %}
-      <div style="font-size:0.85em; color:var(--earth-500); margin-top:0.5em; padding:0.5em; background:var(--smoke); border-radius:0.35rem;">
+      <div style="font-size:0.85em; color:var(--earth-700); margin-top:0.5em; padding:0.5em; background:var(--smoke); border-radius:0.35rem;">
         <strong>Reviewer note:</strong> {{ item.reviewer_note }}
       </div>
       {% endif %}
@@ -89,7 +89,7 @@
     {% endfor %}
   </div>
   {% else %}
-  <p style="text-align:center; color:var(--earth-400); margin-top:2em;">
+  <p style="text-align:center; color:var(--earth-600); margin-top:2em;">
     No {{ status_filter }} feedback items.
   </p>
   {% endif %}

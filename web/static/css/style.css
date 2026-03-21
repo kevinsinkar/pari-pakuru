@@ -514,11 +514,11 @@ body {
 }
 .fc-back-ipa {
     font-size: 0.9em;
-    color: #a0aec0;
+    color: #cbd5e0;
 }
 .fc-back-parks {
     font-size: 0.85em;
-    color: #718096;
+    color: #b0bfd0;
     margin-top: 0.3em;
     font-family: 'Gentium Plus', 'Charis SIL', 'Doulos SIL', 'Noto Sans', monospace;
 }
@@ -619,8 +619,8 @@ body {
     line-height: 1.3;
 }
 .fc-example-label-back {
-    color: #718096;
-    border-left-color: #4299e1;
+    color: #a0b0c0;
+    border-left-color: #63b3ed;
 }
 
 /* ---- Syllable guide ---- */

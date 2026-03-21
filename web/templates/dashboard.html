@@ -104,7 +104,7 @@
         <span class="dash-engine-number">{{ "{:,}".format(verb.paradigm_forms) }}</span>
         <span class="dash-engine-detail">forms ({{ verb.distinct_verbs }} verbs)</span>
       {% else %}
-        <span class="dash-engine-detail" style="color:var(--earth-400);">Not generated yet</span>
+        <span class="dash-engine-detail" style="color:var(--earth-600);">Not generated yet</span>
       {% endif %}
     </div>
     <div class="dash-engine-card">
@@ -113,7 +113,7 @@
         <span class="dash-engine-number">{{ verb.sound_rules }}</span>
         <span class="dash-engine-detail">cataloged rules</span>
       {% else %}
-        <span class="dash-engine-detail" style="color:var(--earth-400);">Not generated yet</span>
+        <span class="dash-engine-detail" style="color:var(--earth-600);">Not generated yet</span>
       {% endif %}
     </div>
     <div class="dash-engine-card">
@@ -122,7 +122,7 @@
         <span class="dash-engine-number">{{ verb.morphemes }}</span>
         <span class="dash-engine-detail">mapped morphemes</span>
       {% else %}
-        <span class="dash-engine-detail" style="color:var(--earth-400);">Not generated yet</span>
+        <span class="dash-engine-detail" style="color:var(--earth-600);">Not generated yet</span>
       {% endif %}
     </div>
     <div class="dash-engine-card">
@@ -132,7 +132,7 @@
         <span class="dash-engine-detail">{{ "{:,}".format(verb.stem_exact) }}/{{ "{:,}".format(verb.stem_total) }} form_2 exact</span>
         <span class="dash-engine-detail">{{ verb.stem_pct_close }}% with close matches</span>
       {% else %}
-        <span class="dash-engine-detail" style="color:var(--earth-400);">Not available</span>
+        <span class="dash-engine-detail" style="color:var(--earth-600);">Not available</span>
       {% endif %}
     </div>
     {% if verb.confidence_dist %}
@@ -167,7 +167,7 @@
             ({{ (poss.bb_exact / poss.bb_total * 100) | round(0) | int }}%)</span>
         {% endif %}
       {% else %}
-        <span class="dash-engine-detail" style="color:var(--earth-400);">Not generated yet</span>
+        <span class="dash-engine-detail" style="color:var(--earth-600);">Not generated yet</span>
       {% endif %}
     </div>
   </div>

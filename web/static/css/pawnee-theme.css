@@ -262,7 +262,7 @@
 /* ---------- IPA / phonetic forms ---------- */
 .ipa {
   font-family: 'Source Serif 4', 'Gentium Plus', 'Charis SIL', 'Doulos SIL', monospace;
-  color: var(--earth-500);
+  color: var(--earth-700);
 }
 
 .pronunciation {
@@ -1391,8 +1391,19 @@
 }
 @media (prefers-color-scheme: dark) {
   .pron-help-popup {
-    background: #2A2018;
+    background: #1E1610;
     border-color: #4A3828;
+    color: #E8DDD0;
+  }
+  .pron-help-popup .ipa,
+  .pron-help-table td {
+    color: #E8DDD0;
+  }
+  .pron-help-popup strong {
+    color: #F5EDE3;
+  }
+  .pron-help-popup small {
+    color: #C4B5A4;
   }
 }
 
@@ -1965,6 +1976,13 @@
 @media (prefers-color-scheme: dark) {
   .feedback-item {
     background: #241C14;
+  }
+  .feedback-item-body,
+  .feedback-item-body div {
+    color: #DDD0C4;
+  }
+  .feedback-item-headword {
+    color: #F0E6DA;
   }
   .feedback-modal {
     border-color: #3D2E22;
