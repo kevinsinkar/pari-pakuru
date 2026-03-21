@@ -1316,8 +1316,22 @@
   padding: 1.25em 1em;
 }
 .fc-example-front {
-  border: 2px solid var(--earth-200);
-  background: var(--pico-background-color);
+  border: 2px solid var(--earth-700);
+  background: var(--earth-900);
+  color: #F0E6DA;
+}
+.fc-example-front .fc-front-word {
+  color: #FFFFFF;
+}
+.fc-example-front .fc-front-pron {
+  color: #E0D4C6;
+}
+.fc-example-front .fc-front-parks {
+  color: #B8A898;
+}
+.fc-example-front .fc-example-label {
+  color: #A09080;
+  border-left-color: var(--earth-600);
 }
 .fc-example-back {
   border: 2px solid var(--sky-700);
