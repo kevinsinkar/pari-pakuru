@@ -1308,6 +1308,9 @@
   letter-spacing: 0.05em;
   margin-bottom: 0.5em;
 }
+.fc-guide {
+  color: var(--earth-900);  /* Override Pico <details> muted color */
+}
 .fc-example-card {
   border-radius: 12px;
   padding: 1.25em 1em;
@@ -1334,7 +1337,7 @@
 }
 .fc-example-label {
   font-size: 0.75em;
-  color: var(--earth-500);
+  color: var(--earth-600);
   border-left: 2px solid var(--sky-500);
   padding-left: 0.5em;
   line-height: 1.3;
