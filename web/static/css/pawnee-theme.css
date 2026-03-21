@@ -530,6 +530,16 @@
   margin-left: 0.5em;
   margin-right: 1.5em;
 }
+/* Stack pronunciation and IPA vertically on mobile to avoid wrapping */
+@media (max-width: 768px) {
+  .entry-pronunciations dt,
+  .entry-pronunciations dd {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .entry-pronunciations dd { margin-bottom: 0.3em; }
+}
 
 .entry-section {
   margin-top: 1.5em;
@@ -1363,6 +1373,10 @@
 .pron-help-trigger:hover .pron-help-popup,
 .pron-help-trigger:focus .pron-help-popup {
   display: block;
+}
+/* Hide pronunciation tooltip on mobile — hard to dismiss on touch */
+@media (max-width: 768px) {
+  .pron-help-trigger { display: none; }
 }
 .pron-help-table {
   margin: 0.4em 0;

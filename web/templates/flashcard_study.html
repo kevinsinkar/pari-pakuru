@@ -6,7 +6,6 @@
 <div class="fc-study-header">
     <h2>Week {{ fset.week }}: {{ fset.category_label }}</h2>
     <p>{{ fset.card_count }} words. Click a card to flip it.</p>
-    <p class="pitch-note"><strong>UPPERCASE</strong> syllable = high pitch. Pitch is meaningful in Pawnee.</p>
 </div>
 
 <div class="fc-progress">
@@ -28,7 +27,7 @@
                 <div class="fc-front-parks" lang="x-paw">{{ fc_secondary }}</div>
                 {% endif %}
                 {% if card.grammatical_class %}
-                <span class="badge badge-class">{{ card.grammatical_class }}</span>
+                <span class="badge badge-class" title="{{ gram_class_labels.get(card.grammatical_class, card.grammatical_class) }}">{{ card.grammatical_class }}</span>
                 {% endif %}
                 {% if card.blue_book_attested %}
                 <span class="badge badge-bb">P&acirc;ri Pak&ucirc;ru'</span>

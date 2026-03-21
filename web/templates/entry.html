@@ -21,10 +21,6 @@
             <dt>IPA:</dt><dd class="ipa" lang="x-paw-fonipa">{{ entry.phonetic_form }}</dd>
             {% endif %}
         </dl>
-        {% if entry.simplified_pronunciation %}
-        <p class="pitch-note"><strong>UPPERCASE</strong> = high pitch. Pitch is meaningful in Pawnee.</p>
-        {% endif %}
-
         <div>
             {% if entry.grammatical_class %}
             <span class="badge badge-class" title="{{ gram_class_labels.get(entry.grammatical_class, entry.grammatical_class) }}">{{ entry.grammatical_class }}</span>
