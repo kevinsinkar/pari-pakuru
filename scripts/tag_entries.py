@@ -125,6 +125,13 @@ TAXONOMY: dict[str, dict] = {
             "older sister","younger sister","stepfather","stepmother",
             "stepson","stepdaughter","co-wife","co-husband",
         ],
+        # IMPORTANT: kinship keyword matching is restricted to noun entries only.
+        # Verbs whose *glosses* mention family members (e.g., "be married to",
+        # "adopt a child", "take care of someone") must NOT receive this tag —
+        # they describe kin-related actions, not kin terms themselves.
+        # This guard is enforced in tag_entry() below.
+        # Source of fix: piraski audit 2026-03-21 found 33 verb false positives.
+        "noun_only_keyword": True,
     },
     "food": {
         "gram_classes": [],
@@ -258,6 +265,12 @@ TAXONOMY: dict[str, dict] = {
             "treaty","trade","law","custom","rule","tradition","gift",
             "giveaway","exchange","marriage","divorce","widow","orphan",
             "adoption","elder","man","woman","boy","girl","male","female",
+            # Age/gender/social role terms — explicitly social, not kinship.
+            # These were previously mis-tagged as kinship via keyword match.
+            # boy, girl → social age category; elderly woman/man → social role
+            "youth","lad","maiden","lass","young man","young woman",
+            "old man","old woman","elderly","aged","infant","baby",
+            "adolescent","pubescent","adult","middle-aged",
         ],
     },
     "land": {
@@ -352,9 +365,20 @@ def tag_entry(gram_class: str, gloss_texts: list[str],
     """
     Returns deduplicated list of (tag, source, confidence).
     Priority: gram_class > keyword > etymology
+
+    Special rules:
+      kinship — keyword match is suppressed for verb grammatical classes.
+                Verbs whose glosses mention family (e.g. "be married to",
+                "adopt a child") are describing kin-related actions, not kin
+                terms. Only nouns (N, N-KIN, N-DEP) may receive kinship via
+                keyword match. gram_class route (N-KIN → kinship) is unaffected.
     """
     priority = {"gram_class": 3, "keyword": 2, "etymology": 1}
     best: dict[str, tuple[str, str, str]] = {}
+
+    # Noun grammatical classes (for kinship noun-only guard)
+    NOUN_CLASSES = {"N", "N-KIN", "N-DEP"}
+    is_noun = gram_class and any(nc in gram_class for nc in NOUN_CLASSES)
 
     # 1. Gram-class rules
     for gc_prefix, tags in GRAM_CLASS_TAGS.items():
@@ -367,6 +391,9 @@ def tag_entry(gram_class: str, gloss_texts: list[str],
     if gloss_blob:
         for tag, pattern in PATTERNS.items():
             if pattern.search(gloss_blob):
+                # Guard: kinship keyword only fires for noun grammatical classes
+                if tag == "kinship" and not is_noun:
+                    continue  # verbs mentioning family are not kinship terms
                 if tag not in best or priority["keyword"] > priority[best[tag][1]]:
                     best[tag] = (tag, "keyword", "medium")
 
@@ -375,6 +402,9 @@ def tag_entry(gram_class: str, gloss_texts: list[str],
     if etym_blob:
         for tag, pattern in PATTERNS.items():
             if pattern.search(etym_blob):
+                # Same guard applies at etymology level
+                if tag == "kinship" and not is_noun:
+                    continue
                 if tag not in best:
                     best[tag] = (tag, "etymology", "low")
 

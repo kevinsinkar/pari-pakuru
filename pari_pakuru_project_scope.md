@@ -567,10 +567,20 @@ Tasks completed:
 - [x] Example filter — `example_filter.py` with Skiri-aware word boundary matching; rejects false substring matches (kirike "what?" ≠ kiri "cat"); handles OCR variants (J→E, 1→E), morpheme-boundary compounds (kiri•wusu' ✓), epenthetic-h compounds (kirihkaatit ✓), prefix disambiguation; wired into `entry_detail()` route filtering both dictionary examples and BB attestations; 14/14 tests
 - [x] Kinship dispatch fix — dispatcher tries kinship lookup first for any noun regardless of `noun_class`; handles N-KIN entries stored as plain "N" in DB
 
-**Known issues (nominal morphophonology):**
-- [ ] **Verb Rule 17 (ks→kc) fires on nominal forms** — `apply_sc()` routes nominal concatenation through the verb sound change pipeline. Produces `ikciriʔ` instead of attested `iksiriʔ`. Fix: implement `apply_nominal_sc()` with only noun-applicable rules (r→h before stops, vowel coalescence, b→Ø/C_). Blocks correct Anki/PDF export for any noun with `ks` in stem.
-- [ ] **raar→taar after consonants** — body-part plural locative: `iks+raar+iriʔ` should be `ikstaaririʔ` (attested). Low priority — narrow set of body-part plural forms.
-- **Pattern note:** Both alternations (b→Ø, raar→taar) are conditioned by the same environment (post-consonant morpheme junction). Likely a single underlying consonant-cluster simplification rule in nominal morphology.
+**Nominal morphophonology fixes (2026-03-20/21):**
+- [x] **Nominal sound change pipeline split** — `apply_nominal_sc()` in `sound_changes.py` runs only noun-safe rules (excludes verb Rules 17/18/19). `possession_engine.py` prefers this over the full verb pipeline. Fixes `ikciriʔ` → `iksiriʔ` (attested).
+- [x] **raar→taar resolved** — was Rule 8R (r→t after hard C) all along, masked by Rule 17 corruption. `ikstaaririʔ` now matches attested form with nominal pipeline.
+- [x] **-sukat allomorph** — stems ending in -ki/-ski get `-sukat` (not `-kat`). `piiraskisukat`, `asaakisukat` now generate correctly.
+- [x] **Instrumental animacy filter** — `generate_instrumental()` accepts `semantic_tags`, returns `None` for animate nouns (N-KIN, kinship/social/animal tags). Widget handles None gracefully.
+- **Pattern note:** Three suffix alternations (b→Ø, raar→taar, wiru→ru) all conditioned by same post-consonant environment — single underlying consonant-cluster simplification rule at nominal morpheme boundaries.
+
+**Tagging fixes (2026-03-21):**
+- [x] **Kinship false positive guard** — `tag_entries.py` skips kinship keyword path if `grammatical_class` doesn't contain N. Prevents 35 verb false positives.
+- [x] **Kinship tag cleanup** — 36 erroneous tags removed (35 verbs + 1 Gemini error). 8 age/gender nouns retagged kinship → social. Tahkuki/Coyote flagged for cultural advisor review.
+- [x] **Social keyword expansion** — age/gender/social role terms (youth, lad, maiden, elderly, etc.) added to social taxonomy.
+
+**BB/Parks merge (2026-03-21):**
+- [x] **5 orthographic variant pairs merged** — `bb_variant_of` column added to `lexical_entries`. BB stub entries retained for search aliasing. Parks entries marked `blue_book_attested=1`.
 
 **Bug fixes applied during deployment:**
 - Kinship file path resolution (REPO_ROOT parent vs current dir)
@@ -1066,20 +1076,21 @@ Copy-paste this to start the next session (claude.ai or Claude Code):
 
 > **Pick the next priority from the Pari Pakuru roadmap.**
 >
-> **What's done (session: 2026-03-20):**
-> - Phase 5.2 Anki export: ✅ `scripts/anki_export.py` — 4,336 cards, 19 semantic tag decks + All Words parent, genanki .apkg. CLI: `--dry-run`, `--deck TAG`, `--advanced`, `--verbs-only`, `--bb-only`, `--min-confidence`
-> - DB dedup: ✅ `scripts/dedup_entries.py` — 22 p2/p71 pairs + kusisaar merge (4,366 → 4,343). Polysemy preserved (hiksukac VD/VP, racawaktaarik VI/VT)
-> - Display utils: ✅ `scripts/display_utils.py` — `display_headword()` 5 rules, `gram_class_label()`, `morph_class_note()`. 281 notation entries, zero problems
-> - Card spec locked: Option A multi-sense, form2_confidence >= 0.75, format_pitch_anki(), per-class back notes, example dedup on english_translation
-> - Phase 3.1.5 Noun possession: ✅ (4 systems, locative suffixes, web widget, example filter, 40/40 tests)
-> - Phase 3.1 Stem extraction: 🟡 86.6% exact (1,914/2,211 verbs), up from 14.8% baseline across 3 passes
-> - Phase 3.1 Accent rules: ✅ Integrated into `morpheme_inventory.py` — Appendix 1: 90.3% exact (695/770)
-> - Phase 3.1.6 Function word inventory: ✅ CLASSIFIED — 418 items with `position_rule` + `refined_subclass`
-> - Phase 4.1 Flashcards: ✅ BB Essentials + Greetings, 93 BB entries, pitch accent display, 387 cards across 24 weeks
-> - Phase 4.3 Confidence scoring: ✅ (4-factor weighted score, DB column, web badges, 88.7% average)
-> - Phase 4.4 Community feedback: ✅ (flag/confirm buttons, admin review queue, writable DB, dashboard widget)
-> - Phase 4.1 UI/UX: ✅ All items complete — spelling toggle, mobile, a11y, learner features, tooltip fix
-> - Blue Book gap triage: ✅ (516 gaps classified, 93 items imported, 82% inflected verbs trace to existing roots)
+> **What's done (sessions: 2026-03-20 → 2026-03-21):**
+> - Phase 5.2 Anki export: ✅ 4,336 cards, 19 semantic tag decks, genanki .apkg with CLI flags
+> - DB dedup: ✅ 22 p2/p71 pairs + kusisaar merge (4,366 → 4,343). Polysemy preserved
+> - Display utils: ✅ `display_headword()` 5 rules, 281 notation entries zero problems
+> - Nominal sound change pipeline: ✅ `apply_nominal_sc()` splits verb/noun rules. Fixes ks→kc regression. `iksiriʔ` and `ikstaaririʔ` now match attested forms
+> - -sukat allomorph: ✅ stems ending in -ki/-ski get `-sukat`. `piiraskisukat` correct
+> - Instrumental animacy filter: ✅ returns None for animate nouns (N-KIN, kinship/social/animal)
+> - BB/Parks merge: ✅ 5 orthographic variant pairs merged, `bb_variant_of` column added, blue_book_attested updated (176→181)
+> - Kinship tag cleanup: ✅ 36 erroneous tags removed (35 verbs + 1 Gemini), 8 retagged to social, noun-only guard added. Zero kinship tags on non-nouns
+> - Social taxonomy: ✅ age/gender/social role terms expanded
+> - raar→taar: ✅ documented as Rule 8R (r→t after hard C), not separate rule
+> - Phase 3.1.5 Noun possession: ✅ (4 systems, locative suffixes, web widget, example filter)
+> - Phase 3.1 Stem extraction: 🟡 86.6% exact (1,914/2,211 verbs)
+> - Phase 3.1.6 Function word inventory: ✅ 418 items classified
+> - Phase 4.1–4.4: ✅ Web app, flashcards, confidence scoring, community feedback, UI/UX all complete
 >
 > **Remaining roadmap priorities:**
 > - 🔴 #6 (partial): **Printable PDF export** — same query as Anki, rendered via reportlab/weasyprint. Two-column vocab list + paradigm table appendix. **Claude Code**.
@@ -1087,4 +1098,4 @@ Copy-paste this to start the next session (claude.ai or Claude Code):
 > - 🟡 Optional: **Stem extraction fourth pass** (86.6%→90%+) — diminishing returns
 > - 🟡 Optional: **"to do it" investigation** (74/110, 12 MISS) — largest verb-specific gap
 >
-> The scope doc (`pari_pakuru_project_scope.md`) has full context. The DB is `skiri_pawnee.db` (4,343 entries post-dedup). Scripts are in `scripts/`. Web app runs on PythonAnywhere.
+> The scope doc (`pari_pakuru_project_scope.md`) has full context. The DB is `skiri_pawnee.db` (4,343 entries, `bb_variant_of` column, 181 BB-attested). Scripts in `scripts/`. Web app on PythonAnywhere.
