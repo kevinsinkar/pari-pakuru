@@ -44,13 +44,16 @@ CREATE INDEX idx_lexical_page ON lexical_entries(page_number);
 -- -----------------------------------------------------------------------------
 -- Glosses / sense definitions (one entry can have multiple numbered senses)
 -- -----------------------------------------------------------------------------
+-- NOTE (2026-09-01 audit fix): sense_number is nullable and NOT unique per
+-- entry — Parks sub-senses ("2a.", "2b.") share one sense number, and some
+-- senses are unnumbered in the source. A UNIQUE(entry_id, sense_number)
+-- constraint here silently dropped sub-senses during import.
 CREATE TABLE IF NOT EXISTS glosses (
     id              INTEGER PRIMARY KEY AUTOINCREMENT,
     entry_id        TEXT NOT NULL REFERENCES lexical_entries(entry_id),
-    sense_number    INTEGER NOT NULL,                -- 1, 2, 3...
+    sense_number    INTEGER,                          -- 1, 2, 2, 3... (2a/2b share 2)
     definition      TEXT NOT NULL,                    -- English gloss text
-    usage_notes     TEXT,                             -- optional usage/context notes
-    UNIQUE(entry_id, sense_number)
+    usage_notes     TEXT                              -- optional usage/context notes
 );
 
 CREATE INDEX idx_glosses_entry ON glosses(entry_id);

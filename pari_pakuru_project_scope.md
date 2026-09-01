@@ -305,7 +305,7 @@ This is the wall between "a conjugation engine that works on 7 test verbs" (76.2
 - `parks_grammatical_overview_ocr.txt` — OCR of Parks Ch. 4 (23 pages: noun incorporation, compound formation, verb classes)
 
 ### ✅ Phase 1.2 — Database Schema
-**Script:** `scripts/import_to_db.py` (implied by DB existence)
+**Script:** `DB/import_to_sqlite.py`
 **What it does:** SQLite database (`skiri_pawnee.db`) unifying S2E and E2S data.
 
 **Tables:** `lexical_entries` (4,366 entries: 4,273 Parks + 93 Blue Book), `glosses`, `paradigmatic_forms`, `examples`, `etymology`, `cognates`, `derived_stems`, `english_index`, `cross_references`, `semantic_tags`, `blue_book_attestations`, `import_metadata`, `bb_gap_triage`, `community_feedback`, `function_words` (418), `bb_function_words` (63) + FTS tables for glosses, examples, english_index.

@@ -1,0 +1,2239 @@
+[
+ {
+  "word": "goat",
+  "class": "N",
+  "pn": 105,
+  "located": 167,
+  "cands": [
+   167
+  ],
+  "s2e_id": "SK-caraahku-p28-0414",
+  "match_type": "exact_unique",
+  "part_I": {
+   "skiri_term": "caraahku",
+   "stem_preverb": null,
+   "phonetic_form": "[čə-raáh-kʊ]",
+   "grammatical_classification": {
+    "class_abbr": "N",
+    "class_full_description": null,
+    "verb_class": null
+   },
+   "grammatical_forms": [],
+   "english_glosses": [
+    {
+     "number": null,
+     "definition": "g o a t .",
+     "usage_notes": null
+    }
+   ],
+   "etymology": {
+    "raw_etymology": "<icaraar+kus, sitting on the chin; ref. to its beard >",
+    "constituent_elements": [
+     {
+      "morpheme": "icaraar",
+      "gloss": "chin"
+     },
+     {
+      "morpheme": "kus",
+      "gloss": "sitting on"
+     }
+    ],
+    "literal_translation": "sitting on the chin"
+   }
+  },
+  "part_II": {
+   "paradigmatic_forms": [],
+   "additional_forms": [],
+   "examples": [
+    {
+     "skiri_text": "titawiiʔ caraahku iriirawaariki",
+     "english_translation": "it is among the goats."
+    }
+   ]
+  },
+  "part_III": null,
+  "resolved_e2s": [
+   167
+  ],
+  "s2e_page": 376
+ },
+ {
+  "word": "chick (of chicken)",
+  "class": "N",
+  "pn": 43,
+  "located": 105,
+  "cands": [
+   105
+  ],
+  "s2e_id": "SK-cikiriirihariq-p29-0444",
+  "match_type": "exact_unique",
+  "part_I": {
+   "skiri_term": "cikiriirihariʔ",
+   "stem_preverb": null,
+   "phonetic_form": "[čí-kɪ-rii-rɪ-hə-riʔ]",
+   "grammatical_classification": {
+    "class_abbr": "N",
+    "class_full_description": null,
+    "verb_class": null
+   },
+   "grammatical_forms": [],
+   "english_glosses": [
+    {
+     "number": null,
+     "definition": "chick, baby or young chicken.",
+     "usage_notes": null
+    }
+   ],
+   "etymology": {
+    "raw_etymology": "<cikiri(r)+iharir, young chicken>",
+    "constituent_elements": [
+     {
+      "morpheme": "cikiri(r)",
+      "gloss": "chicken"
+     },
+     {
+      "morpheme": "iharir",
+      "gloss": "young"
+     }
+    ],
+    "literal_translation": "young chicken"
+   }
+  },
+  "part_II": null,
+  "part_III": null,
+  "resolved_e2s": [
+   105
+  ],
+  "s2e_page": 377
+ },
+ {
+  "word": "horse, palomino",
+  "class": "N",
+  "pn": 122,
+  "located": 184,
+  "cands": [
+   184
+  ],
+  "s2e_id": "SK-kicakustaakaa-p85-1583",
+  "match_type": "exact_unique",
+  "part_I": {
+   "skiri_term": "kicakustaakaa",
+   "stem_preverb": null,
+   "phonetic_form": "[kí-čə-kʊs-taa-kaa]",
+   "grammatical_classification": {
+    "class_abbr": "N",
+    "class_full_description": null,
+    "verb_class": null
+   },
+   "grammatical_forms": [],
+   "english_glosses": [
+    {
+     "number": null,
+     "definition": "palomino; horse with a light-colored mane.",
+     "usage_notes": null
+    }
+   ],
+   "etymology": {
+    "raw_etymology": "<kicakus+taakaar, white mane>",
+    "constituent_elements": [
+     {
+      "morpheme": "kicakus",
+      "gloss": null
+     },
+     {
+      "morpheme": "taakaar",
+      "gloss": null
+     }
+    ],
+    "literal_translation": "white mane"
+   }
+  },
+  "part_II": null,
+  "part_III": null,
+  "resolved_e2s": [
+   184
+  ],
+  "s2e_page": 433
+ },
+ {
+  "word": "sack",
+  "class": "N",
+  "pn": 203,
+  "located": 162,
+  "cands": [
+   162,
+   249,
+   265,
+   267
+  ],
+  "s2e_id": "SK-kasiiquq-p79-1460",
+  "match_type": "exact_unique",
+  "part_I": {
+   "skiri_term": "kasiiʔuʔ",
+   "stem_preverb": null,
+   "phonetic_form": "[kà-sii-ʔuʔ]",
+   "grammatical_classification": {
+    "class_abbr": "N",
+    "class_full_description": null,
+    "verb_class": null
+   },
+   "grammatical_forms": [],
+   "english_glosses": [
+    {
+     "number": null,
+     "definition": "sack, bag.",
+     "usage_notes": null
+    }
+   ],
+   "etymology": {
+    "raw_etymology": "<kasii+uʔ, sack + NOM>",
+    "constituent_elements": [
+     {
+      "morpheme": "kasii",
+      "gloss": "sack"
+     },
+     {
+      "morpheme": "uʔ",
+      "gloss": "NOM"
+     }
+    ],
+    "literal_translation": null
+   }
+  },
+  "part_II": {
+   "paradigmatic_forms": [],
+   "additional_forms": [],
+   "examples": [
+    {
+     "skiri_text": "kasiikat",
+     "english_translation": "on the bag."
+    },
+    {
+     "skiri_text": "tatkasiiruʔ",
+     "english_translation": "I filled a sack."
+    },
+    {
+     "skiri_text": "tikasiiruuc",
+     "english_translation": "the sacks are lying there."
+    }
+   ]
+  },
+  "part_III": null,
+  "resolved_e2s": [
+   265
+  ],
+  "s2e_page": 427
+ },
+ {
+  "word": "bathtub",
+  "class": "N",
+  "pn": 78,
+  "located": 78,
+  "cands": [
+   78
+  ],
+  "s2e_id": "SK-raruuciriiwaq-p138-2719",
+  "match_type": "exact_unique",
+  "part_I": {
+   "skiri_term": "raruuciriiwaʔ",
+   "stem_preverb": null,
+   "phonetic_form": "[rə-ruu-čɪ-rií-wəʔ]",
+   "grammatical_classification": {
+    "class_abbr": "N",
+    "class_full_description": null,
+    "verb_class": null
+   },
+   "grammatical_forms": [],
+   "english_glosses": [
+    {
+     "number": null,
+     "definition": "bathtub.",
+     "usage_notes": null
+    }
+   ],
+   "etymology": {
+    "raw_etymology": "<raar+huuciriiwaa, ITER + swim/bathe>",
+    "constituent_elements": [
+     {
+      "morpheme": "raar",
+      "gloss": "ITER"
+     },
+     {
+      "morpheme": "huuciriiwaa",
+      "gloss": "swim/bathe"
+     }
+    ],
+    "literal_translation": null
+   }
+  },
+  "part_II": null,
+  "part_III": null,
+  "resolved_e2s": [
+   78
+  ],
+  "s2e_page": 486
+ },
+ {
+  "word": "bird",
+  "class": "N",
+  "pn": 23,
+  "located": 85,
+  "cands": [
+   66,
+   78,
+   85,
+   88,
+   221
+  ],
+  "s2e_id": "SK-rikucki-p492-4198",
+  "match_type": "exact_unique",
+  "part_I": {
+   "skiri_term": "rikucki",
+   "stem_preverb": null,
+   "phonetic_form": "[rí-kʊts-kɪ]",
+   "grammatical_classification": {
+    "class_abbr": "N",
+    "class_full_description": null,
+    "verb_class": null
+   },
+   "grammatical_forms": [
+    {
+     "form_type": "comb.",
+     "form": "rikuhc-"
+    },
+    {
+     "form_type": "comb.",
+     "form": "rikuc-"
+    }
+   ],
+   "english_glosses": [
+    {
+     "number": null,
+     "definition": "bird.",
+     "usage_notes": null
+    }
+   ],
+   "etymology": {
+    "raw_etymology": "<rikuhc+kis, bird + DIM>",
+    "constituent_elements": [
+     {
+      "morpheme": "rikuhc",
+      "gloss": "bird"
+     },
+     {
+      "morpheme": "kis",
+      "gloss": "DIM"
+     }
+    ],
+    "literal_translation": null
+   }
+  },
+  "part_II": {
+   "paradigmatic_forms": [],
+   "additional_forms": [
+    {
+     "form": "rikuckat",
+     "description": "among the birds."
+    },
+    {
+     "form": "rikuckiripahki",
+     "description": "little bird."
+    },
+    {
+     "form": "rikuhcihariʔ",
+     "description": "(obs.) chick, baby bird."
+    }
+   ],
+   "examples": []
+  },
+  "part_III": null,
+  "resolved_e2s": [
+   85
+  ],
+  "s2e_page": 492
+ },
+ {
+  "word": "turtle shell",
+  "class": "N",
+  "pn": 263,
+  "located": 325,
+  "cands": [
+   325
+  ],
+  "s2e_id": "SK-caastaakuq-p27-0386",
+  "match_type": "exact_unique",
+  "part_I": {
+   "skiri_term": "caastaakuʔ",
+   "stem_preverb": null,
+   "phonetic_form": "[čaas-taá-kʊʔ]",
+   "grammatical_classification": {
+    "class_abbr": "N",
+    "class_full_description": null,
+    "verb_class": null
+   },
+   "grammatical_forms": [],
+   "english_glosses": [
+    {
+     "number": null,
+     "definition": "turtle shell.",
+     "usage_notes": null
+    }
+   ],
+   "etymology": {
+    "raw_etymology": "<icaas+taak+uʔ, turtle back + NOM>",
+    "constituent_elements": [
+     {
+      "morpheme": "icaas",
+      "gloss": "turtle"
+     },
+     {
+      "morpheme": "taak",
+      "gloss": "back"
+     },
+     {
+      "morpheme": "uʔ",
+      "gloss": "NOM"
+     }
+    ],
+    "literal_translation": "turtle back"
+   }
+  },
+  "part_II": {
+   "paradigmatic_forms": [],
+   "additional_forms": [
+    {
+     "form": "caastaakiriʔ",
+     "description": "on a turtle shell."
+    }
+   ],
+   "examples": []
+  },
+  "part_III": null,
+  "resolved_e2s": [
+   325
+  ],
+  "s2e_page": 375
+ },
+ {
+  "word": "opossum",
+  "class": "N",
+  "pn": 166,
+  "located": 228,
+  "cands": [
+   228
+  ],
+  "s2e_id": "SK-caararuukuq-p27-0383",
+  "match_type": "exact_unique",
+  "part_I": {
+   "skiri_term": "caararuukuʔ",
+   "stem_preverb": null,
+   "phonetic_form": "[čaá-rə-ruu-kʊʔ]",
+   "grammatical_classification": {
+    "class_abbr": "N",
+    "class_full_description": null,
+    "verb_class": null
+   },
+   "grammatical_forms": [],
+   "english_glosses": [
+    {
+     "number": null,
+     "definition": "opossum (Didelphis virginiana).",
+     "usage_notes": null
+    }
+   ],
+   "etymology": {
+    "raw_etymology": "caararuuk+uʔ, opossum + NOM",
+    "constituent_elements": [
+     {
+      "morpheme": "caararuuk",
+      "gloss": "opossum"
+     },
+     {
+      "morpheme": "uʔ",
+      "gloss": "NOM"
+     }
+    ],
+    "literal_translation": null
+   }
+  },
+  "part_II": {
+   "paradigmatic_forms": [],
+   "additional_forms": [],
+   "examples": [
+    {
+     "skiri_text": "caararuukuʔ tiraraa kiripahki",
+     "english_translation": "the possum is carrying its young ones."
+    }
+   ]
+  },
+  "part_III": null,
+  "resolved_e2s": [
+   228
+  ],
+  "s2e_page": 375
+ },
+ {
+  "word": "bracelet",
+  "class": "N",
+  "pn": 29,
+  "located": 91,
+  "cands": [
+   91
+  ],
+  "s2e_id": "SK-ksawiquq-p448-3988",
+  "match_type": "exact_unique",
+  "part_I": {
+   "skiri_term": "ksawiʔuʔ",
+   "stem_preverb": null,
+   "phonetic_form": "[ksà-wi-ʔuʔ]",
+   "grammatical_classification": {
+    "class_abbr": "N",
+    "class_full_description": null,
+    "verb_class": null
+   },
+   "grammatical_forms": [],
+   "english_glosses": [
+    {
+     "number": null,
+     "definition": "bracelet.",
+     "usage_notes": null
+    }
+   ],
+   "etymology": {
+    "raw_etymology": "<iks+awi-+uʔ, something worn on the hand + NOM>",
+    "constituent_elements": [
+     {
+      "morpheme": "iks",
+      "gloss": "something worn on the hand"
+     },
+     {
+      "morpheme": "awi-",
+      "gloss": null
+     },
+     {
+      "morpheme": "uʔ",
+      "gloss": "NOM"
+     }
+    ],
+    "literal_translation": "something worn on the hand"
+   }
+  },
+  "part_II": {
+   "paradigmatic_forms": [],
+   "additional_forms": [],
+   "examples": [
+    {
+     "skiri_text": "ksawikat",
+     "english_translation": "on the bracelet."
+    },
+    {
+     "skiri_text": "ksawiʔuʔ tuutiksta",
+     "english_translation": "she has a bracelet on."
+    },
+    {
+     "skiri_text": "tatiitiksa ksawiʔuʔ",
+     "english_translation": "I am wearing a bracelet."
+    }
+   ]
+  },
+  "part_III": null,
+  "resolved_e2s": [
+   91
+  ],
+  "s2e_page": 448
+ },
+ {
+  "word": "hayrack",
+  "class": "N",
+  "pn": 116,
+  "located": 178,
+  "cands": [
+   178
+  ],
+  "s2e_id": "SK-hukaqiituq-p43-0723",
+  "match_type": "exact_unique",
+  "part_I": {
+   "skiri_term": "hukaʔiituʔ",
+   "stem_preverb": null,
+   "phonetic_form": "[hʊ-kə-ʔii-tʊʔ]",
+   "grammatical_classification": {
+    "class_abbr": "N",
+    "class_full_description": null,
+    "verb_class": null
+   },
+   "grammatical_forms": [],
+   "english_glosses": [
+    {
+     "number": 1,
+     "definition": "(formerly) wagon box; (contemp.) truck bed.",
+     "usage_notes": null
+    },
+    {
+     "number": 2,
+     "definition": "hayrack.",
+     "usage_notes": null
+    }
+   ],
+   "etymology": {
+    "raw_etymology": "<huka+iit+uʔ, in a circumscribed space in a line + NOM>",
+    "constituent_elements": [
+     {
+      "morpheme": "huka",
+      "gloss": "in a circumscribed space"
+     },
+     {
+      "morpheme": "iit",
+      "gloss": "in a line"
+     },
+     {
+      "morpheme": "uʔ",
+      "gloss": "NOM"
+     }
+    ],
+    "literal_translation": "in a circumscribed space in a line"
+   }
+  },
+  "part_II": {
+   "paradigmatic_forms": [],
+   "additional_forms": [],
+   "examples": [
+    {
+     "skiri_text": "hukaʔiitkat",
+     "english_translation": "in the bed of a truck."
+    }
+   ]
+  },
+  "part_III": {
+   "cross_references": [
+    {
+     "english_term": "bed (of a vehicle)",
+     "skiri_equivalents": [
+      "hukahaaruʔ"
+     ]
+    }
+   ]
+  },
+  "resolved_e2s": [
+   178
+  ],
+  "s2e_page": 391
+ },
+ {
+  "word": "proud of",
+  "class": "VT",
+  "pn": 183,
+  "located": 245,
+  "cands": [
+   245
+  ],
+  "s2e_id": "SK-rikiis-p492-4175",
+  "match_type": "gloss_disambiguated",
+  "part_I": {
+   "skiri_term": "rikiis",
+   "stem_preverb": "(ir...)",
+   "phonetic_form": "[•rɪ-kiis•]",
+   "grammatical_classification": {
+    "class_abbr": "VT",
+    "class_full_description": null,
+    "verb_class": "(u)"
+   },
+   "grammatical_forms": [],
+   "english_glosses": [
+    {
+     "number": null,
+     "definition": "be proud of, as a parent of a child.",
+     "usage_notes": null
+    }
+   ],
+   "etymology": {
+    "raw_etymology": "<ri+kiis (ir...), hold pridefully; cf. rikarahaa (ir...) be particular or fastidious with; be proud of, have pride in>",
+    "constituent_elements": [
+     {
+      "morpheme": "ri",
+      "gloss": null
+     },
+     {
+      "morpheme": "kiis (ir...)",
+      "gloss": null
+     }
+    ],
+    "literal_translation": "hold pridefully"
+   }
+  },
+  "part_II": {
+   "paradigmatic_forms": [
+    {
+     "form_number": 1,
+     "description": "1st Person Singular Subject, Indicative Mode, Perfective",
+     "skiri_form": "tatirikiis"
+    },
+    {
+     "form_number": 2,
+     "description": "3rd Person Singular Subject, Indicative Mode, Perfective",
+     "skiri_form": "tarikiis"
+    },
+    {
+     "form_number": 4,
+     "description": "3rd Person Singular Subject, Absolutive Mode, Subordinate Perfective",
+     "skiri_form": "iriirarikiisu"
+    },
+    {
+     "form_number": 5,
+     "description": "3rd Person Singular Subject, Indicative Mode, Perfective Intentive",
+     "skiri_form": "tarikiisuks-ta"
+    }
+   ],
+   "additional_forms": [],
+   "examples": []
+  },
+  "part_III": null,
+  "resolved_e2s": [
+   245
+  ],
+  "s2e_page": 492
+ },
+ {
+  "word": "blow on (musical instrument)",
+  "class": "VT",
+  "pn": 26,
+  "located": 88,
+  "cands": [
+   88
+  ],
+  "s2e_id": "SK-rahwaktaarik-p133-2605",
+  "match_type": "exact_unique",
+  "part_I": {
+   "skiri_term": "rahwaktaarik",
+   "stem_preverb": null,
+   "phonetic_form": "[•rəh-wək-taa-rɪ{k/t}•]",
+   "grammatical_classification": {
+    "class_abbr": "VT",
+    "class_full_description": null,
+    "verb_class": "(1)"
+   },
+   "grammatical_forms": [],
+   "english_glosses": [
+    {
+     "number": null,
+     "definition": "blow on, as a horn; sound, make sound, as a radio or television, phonograph, or piano.",
+     "usage_notes": null
+    }
+   ],
+   "etymology": {
+    "raw_etymology": "<raar+waktaa+rik, ITER + make a sound>",
+    "constituent_elements": [
+     {
+      "morpheme": "raar",
+      "gloss": "ITER"
+     },
+     {
+      "morpheme": "waktaa",
+      "gloss": null
+     },
+     {
+      "morpheme": "rik",
+      "gloss": "make a sound"
+     }
+    ],
+    "literal_translation": null
+   }
+  },
+  "part_II": {
+   "paradigmatic_forms": [
+    {
+     "form_number": 1,
+     "description": "1st Person Singular Subject, Indicative Mode, Perfective",
+     "skiri_form": "tahahwaktaarit"
+    },
+    {
+     "form_number": 2,
+     "description": "3rd Person Singular Subject, Indicative Mode, Perfective",
+     "skiri_form": "tirahwaktaarit"
+    },
+    {
+     "form_number": 3,
+     "description": "3rd Person Singular Subject, Indicative Mode, Imperfective",
+     "skiri_form": "tirahwaktaarikuʔ"
+    },
+    {
+     "form_number": 4,
+     "description": "3rd Person Singular Subject, Absolutive Mode, Subordinate Perfective",
+     "skiri_form": "iriirarahwaktaarika"
+    },
+    {
+     "form_number": 5,
+     "description": "3rd Person Singular Subject, Indicative Mode, Perfective Intentive",
+     "skiri_form": "tirahwaktaariksta"
+    }
+   ],
+   "additional_forms": [],
+   "examples": [
+    {
+     "skiri_text": "kataawaruucaku tirahwaktaarikuʔ",
+     "english_translation": "he is playing the horn."
+    }
+   ]
+  },
+  "part_III": null,
+  "resolved_e2s": [
+   88
+  ],
+  "s2e_page": 481
+ },
+ {
+  "word": "turn",
+  "class": "VT",
+  "pn": 262,
+  "located": 112,
+  "cands": [
+   112,
+   120,
+   147,
+   154,
+   200,
+   246
+  ],
+  "s2e_id": "SK-ikiraarahak-p61-1060",
+  "match_type": "exact_unique",
+  "part_I": {
+   "skiri_term": "ikiraarahak",
+   "stem_preverb": "(ut...)",
+   "phonetic_form": "[•ɪ-kɪ-raa-rə-hə{k/t}•]",
+   "grammatical_classification": {
+    "class_abbr": "VT",
+    "class_full_description": null,
+    "verb_class": "(4)"
+   },
+   "grammatical_forms": [],
+   "english_glosses": [
+    {
+     "number": null,
+     "definition": "turn, twist; turn around, twist around, as a wrench, pliers, or leather.",
+     "usage_notes": null
+    }
+   ],
+   "etymology": {
+    "raw_etymology": "<ikiraa (ut...)+ra+hak, hold turning>",
+    "constituent_elements": [
+     {
+      "morpheme": "ikiraa (ut...)",
+      "gloss": "hold turning"
+     },
+     {
+      "morpheme": "ra+hak",
+      "gloss": null
+     }
+    ],
+    "literal_translation": "hold turning"
+   }
+  },
+  "part_II": {
+   "paradigmatic_forms": [
+    {
+     "form_number": 1,
+     "description": "1st Person Singular Subject, Indicative Mode, Perfective",
+     "skiri_form": "tatuutikiraarahat"
+    },
+    {
+     "form_number": 2,
+     "description": "3rd Person Singular Subject, Indicative Mode, Perfective",
+     "skiri_form": "tuutikiraarahat"
+    },
+    {
+     "form_number": 3,
+     "description": "3rd Person Singular Subject, Indicative Mode, Imperfective",
+     "skiri_form": "tuutikiraarahaakuʔ"
+    },
+    {
+     "form_number": 4,
+     "description": "3rd Person Singular Subject, Absolutive Mode, Subordinate Perfective",
+     "skiri_form": "iriruutikiraarahat"
+    },
+    {
+     "form_number": 5,
+     "description": "3rd Person Singular Subject, Indicative Mode, Perfective Intentive",
+     "skiri_form": "tuutikiraarahaksta"
+    }
+   ],
+   "additional_forms": [],
+   "examples": []
+  },
+  "part_III": null,
+  "resolved_e2s": [
+   324
+  ],
+  "s2e_page": 409
+ },
+ {
+  "word": "open a door",
+  "class": "VT",
+  "pn": 165,
+  "located": 227,
+  "cands": [
+   227
+  ],
+  "s2e_id": "SK-riikakuspiruuqat-p141-2805",
+  "match_type": "exact_unique",
+  "part_I": {
+   "skiri_term": "riikakuspiruuʔat",
+   "stem_preverb": null,
+   "phonetic_form": "[•rii-kə-kʊs-pɪ-ruu-ʔət•]",
+   "grammatical_classification": {
+    "class_abbr": "VT",
+    "verb_class": "(1)"
+   },
+   "grammatical_forms": [],
+   "english_glosses": [
+    {
+     "number": null,
+     "definition": "open a door; open a gate; move or push open a door, gate; move a tent flap, hide door aside, as in opening a doorway.",
+     "usage_notes": null
+    }
+   ],
+   "etymology": {
+    "raw_etymology": "<riikakus+wiruuʔat, push aside a door>",
+    "constituent_elements": [
+     {
+      "morpheme": "riikakus",
+      "gloss": null
+     },
+     {
+      "morpheme": "wiruuʔat",
+      "gloss": "push aside a door"
+     }
+    ],
+    "literal_translation": "push aside a door"
+   }
+  },
+  "part_II": {
+   "paradigmatic_forms": [
+    {
+     "form_number": 1,
+     "description": "1st Person Singular Subject, Indicative Mode, Perfective",
+     "skiri_form": "tahiikakuspiruuʔat"
+    },
+    {
+     "form_number": 2,
+     "description": "3rd Person Singular Subject, Indicative Mode, Perfective",
+     "skiri_form": "tiriikakuspiruuʔat"
+    },
+    {
+     "form_number": 3,
+     "description": "3rd Person Singular Subject, Indicative Mode, Imperfective",
+     "skiri_form": "tiriikakuspirawuuʔ"
+    },
+    {
+     "form_number": 4,
+     "description": "3rd Person Singular Subject, Absolutive Mode, Subordinate Perfective",
+     "skiri_form": "iriirariikakuspiruuta"
+    },
+    {
+     "form_number": 5,
+     "description": "3rd Person Singular Subject, Indicative Mode, Perfective Intentive",
+     "skiri_form": "tiriikakuspiruuhuhta"
+    }
+   ],
+   "additional_forms": [],
+   "examples": []
+  },
+  "part_III": null,
+  "resolved_e2s": [
+   227
+  ],
+  "s2e_page": 489
+ },
+ {
+  "word": "do to",
+  "class": "VT",
+  "pn": 71,
+  "located": 133,
+  "cands": [
+   133
+  ],
+  "s2e_id": "SK-rahuruu-p133-2591",
+  "match_type": "exact_unique",
+  "part_I": {
+   "skiri_term": "rahuruu",
+   "stem_preverb": "(ut...)",
+   "phonetic_form": "[•rə-hʊ-ruu•]",
+   "grammatical_classification": {
+    "class_abbr": "VT",
+    "class_full_description": null,
+    "verb_class": "(1)"
+   },
+   "grammatical_forms": [],
+   "english_glosses": [
+    {
+     "number": 1,
+     "definition": "do to.",
+     "usage_notes": null
+    },
+    {
+     "number": 2,
+     "definition": "doctor, treat, as a doctor ministering to a patient.",
+     "usage_notes": null
+    },
+    {
+     "number": 3,
+     "definition": "attack.",
+     "usage_notes": null
+    }
+   ],
+   "etymology": {
+    "raw_etymology": "<ra+huruu (ut...), PORT + huruu (ut...), i.e., do to; cf. Ar. rahuunuu (ut...) do to; treat, handle>",
+    "constituent_elements": [
+     {
+      "morpheme": "ra",
+      "gloss": "PORT"
+     },
+     {
+      "morpheme": "huruu (ut...)",
+      "gloss": "i.e., do to"
+     }
+    ],
+    "literal_translation": null
+   }
+  },
+  "part_II": {
+   "paradigmatic_forms": [
+    {
+     "form_number": 1,
+     "description": "1st Person Singular Subject, Indicative Mode, Perfective",
+     "skiri_form": "tatuuhahuruuʔ"
+    },
+    {
+     "form_number": 2,
+     "description": "3rd Person Singular Subject, Indicative Mode, Perfective",
+     "skiri_form": "tuuhahuruuʔ"
+    },
+    {
+     "form_number": 3,
+     "description": "3rd Person Singular Subject, Indicative Mode, Imperfective",
+     "skiri_form": "tuuhahuruukuʔ"
+    },
+    {
+     "form_number": 4,
+     "description": "3rd Person Singular Subject, Absolutive Mode, Subordinate Perfective",
+     "skiri_form": "iriruurahuruuʔa"
+    },
+    {
+     "form_number": 5,
+     "description": "3rd Person Singular Subject, Indicative Mode, Perfective Intentive",
+     "skiri_form": "tuuhahuruuksta"
+    }
+   ],
+   "additional_forms": [],
+   "examples": []
+  },
+  "part_III": null,
+  "resolved_e2s": [
+   133
+  ],
+  "s2e_page": 481
+ },
+ {
+  "word": "awake",
+  "class": "VI",
+  "pn": 72,
+  "located": 72,
+  "cands": [
+   72
+  ],
+  "s2e_id": "SK-kirikaqu-p96-1827",
+  "match_type": "exact_unique",
+  "part_I": {
+   "skiri_term": "kirikaʔu",
+   "stem_preverb": null,
+   "phonetic_form": "[•kɪ-rɪ-kə-ʔu•]",
+   "grammatical_classification": {
+    "class_abbr": "VI",
+    "class_full_description": null,
+    "verb_class": "(3)"
+   },
+   "grammatical_forms": [],
+   "english_glosses": [
+    {
+     "number": null,
+     "definition": "be awake.",
+     "usage_notes": null
+    }
+   ],
+   "etymology": {
+    "raw_etymology": "<kirika+u, be awake>",
+    "constituent_elements": [
+     {
+      "morpheme": "kirika",
+      "gloss": "awake"
+     },
+     {
+      "morpheme": "u",
+      "gloss": "be"
+     }
+    ],
+    "literal_translation": "be awake"
+   }
+  },
+  "part_II": {
+   "paradigmatic_forms": [
+    {
+     "form_number": 1,
+     "description": "1st Person Singular Subject, Indicative Mode, Perfective",
+     "skiri_form": "tatkirikuʔ"
+    },
+    {
+     "form_number": 2,
+     "description": "3rd Person Singular Subject, Indicative Mode, Perfective",
+     "skiri_form": "tikirikuʔ"
+    },
+    {
+     "form_number": 3,
+     "description": "3rd Person Singular Subject, Indicative Mode, Imperfective",
+     "skiri_form": "tikirikuukuʔ"
+    },
+    {
+     "form_number": 4,
+     "description": "3rd Person Singular Subject, Absolutive Mode, Subordinate Perfective",
+     "skiri_form": "iriirakirikaʔu"
+    },
+    {
+     "form_number": 5,
+     "description": "3rd Person Singular Subject, Indicative Mode, Perfective Intentive",
+     "skiri_form": "tikirikuuksta"
+    }
+   ],
+   "additional_forms": [
+    {
+     "form": "tirahkirikuʔ",
+     "description": "they are awake."
+    }
+   ],
+   "examples": []
+  },
+  "part_III": null,
+  "resolved_e2s": [
+   72
+  ],
+  "s2e_page": 444
+ },
+ {
+  "word": "blow on (musical instrument)",
+  "class": "VI",
+  "pn": 26,
+  "located": 88,
+  "cands": [
+   88
+  ],
+  "s2e_id": "SK-riwakta/taa-p147-2852",
+  "match_type": "exact_unique",
+  "part_I": {
+   "skiri_term": "riwakta/taa",
+   "stem_preverb": null,
+   "phonetic_form": "[•rɪ-wək-tə/taa•]",
+   "grammatical_classification": {
+    "class_abbr": "VI",
+    "class_full_description": null,
+    "verb_class": "(4)"
+   },
+   "grammatical_forms": [],
+   "english_glosses": [
+    {
+     "number": 1,
+     "definition": "sound, be a characteristic sound, cry, as of a cricket, locust, or grasshopper.",
+     "usage_notes": null
+    },
+    {
+     "number": 2,
+     "definition": "blow, sound, blare, as a horn.",
+     "usage_notes": null
+    }
+   ],
+   "etymology": {
+    "raw_etymology": "<ri-+waktaa, ri + be a sound; cf. riiwaktaa groan>",
+    "constituent_elements": [
+     {
+      "morpheme": "ri-",
+      "gloss": "ri"
+     },
+     {
+      "morpheme": "waktaa",
+      "gloss": "be a sound"
+     }
+    ],
+    "literal_translation": null
+   }
+  },
+  "part_II": {
+   "paradigmatic_forms": [
+    {
+     "form_number": 2,
+     "description": "3rd Person Singular Subject, Indicative Mode, Perfective",
+     "skiri_form": "tiriwaktaʔ"
+    },
+    {
+     "form_number": 3,
+     "description": "3rd Person Singular Subject, Indicative Mode, Imperfective",
+     "skiri_form": "tiriwaktaahuʔ"
+    },
+    {
+     "form_number": 4,
+     "description": "3rd Person Singular Subject, Absolutive Mode, Subordinate Perfective",
+     "skiri_form": "iriirariwaktaa"
+    },
+    {
+     "form_number": 5,
+     "description": "3rd Person Singular Subject, Indicative Mode, Perfective Intentive",
+     "skiri_form": "tiriwaktaahista"
+    }
+   ],
+   "additional_forms": [],
+   "examples": [
+    {
+     "skiri_text": "tirariwaktaahuʔ",
+     "english_translation": "they are making their characteristic sound."
+    }
+   ]
+  },
+  "part_III": null,
+  "resolved_e2s": [
+   88
+  ],
+  "s2e_page": 495
+ },
+ {
+  "word": "lean over",
+  "class": "VI",
+  "pn": 138,
+  "located": 200,
+  "cands": [
+   200
+  ],
+  "s2e_id": "SK-icahpiitik-p54-0914",
+  "match_type": "exact_unique",
+  "part_I": {
+   "skiri_term": "icahpiitik",
+   "stem_preverb": null,
+   "phonetic_form": "[•ɪ-čəh-pii-tɪ{k/t}•]",
+   "grammatical_classification": {
+    "class_abbr": "VI",
+    "class_full_description": null,
+    "verb_class": "(4)"
+   },
+   "grammatical_forms": [
+    {
+     "form_type": "dist.",
+     "form": "icahpiiruutik"
+    }
+   ],
+   "english_glosses": [
+    {
+     "number": 1,
+     "definition": "bend over, stoop over.",
+     "usage_notes": null
+    },
+    {
+     "number": 2,
+     "definition": "lean over; bow, bend forward and over.",
+     "usage_notes": null
+    }
+   ],
+   "etymology": {
+    "raw_etymology": "<icahk.wi+itik, become stooped over>",
+    "constituent_elements": [
+     {
+      "morpheme": "icahk.wi",
+      "gloss": null
+     },
+     {
+      "morpheme": "itik",
+      "gloss": null
+     }
+    ],
+    "literal_translation": "become stooped over"
+   }
+  },
+  "part_II": {
+   "paradigmatic_forms": [
+    {
+     "form_number": 1,
+     "description": "1st Person Singular Subject, Indicative Mode, Perfective",
+     "skiri_form": "taaticaahpiitit, taaticahpiitit"
+    },
+    {
+     "form_number": 2,
+     "description": "3rd Person Singular Subject, Indicative Mode, Perfective",
+     "skiri_form": "tiicaahpiitit"
+    },
+    {
+     "form_number": 3,
+     "description": "3rd Person Singular Subject, Indicative Mode, Imperfective",
+     "skiri_form": "tiicaahpiitikuʔ"
+    },
+    {
+     "form_number": 4,
+     "description": "3rd Person Singular Subject, Absolutive Mode, Subordinate Perfective",
+     "skiri_form": "iririicahpiitit"
+    },
+    {
+     "form_number": 5,
+     "description": "3rd Person Singular Subject, Indicative Mode, Perfective Intentive",
+     "skiri_form": "tiicahpiitiksta"
+    }
+   ],
+   "additional_forms": [],
+   "examples": [
+    {
+     "skiri_text": "taaticahpiiruutikuʔ",
+     "english_translation": "I was bending over here and there, repeatedly."
+    }
+   ]
+  },
+  "part_III": {
+   "cross_references": [
+    {
+     "english_term": "bend forward",
+     "skiri_equivalents": [
+      "wiiʔat"
+     ]
+    }
+   ]
+  },
+  "resolved_e2s": [
+   200
+  ],
+  "s2e_page": 402
+ },
+ {
+  "word": "kneel (one knee)",
+  "class": "VI",
+  "pn": 133,
+  "located": 195,
+  "cands": [
+   195
+  ],
+  "s2e_id": "SK-paahurahwiitik-p453-4041",
+  "match_type": "exact_unique",
+  "part_I": {
+   "skiri_term": "paahurahwiitik",
+   "stem_preverb": "(ut...)",
+   "phonetic_form": "[•paa-hʊ-rəh-wii-tɪ{k/t}•]",
+   "grammatical_classification": {
+    "class_abbr": "VI",
+    "class_full_description": null,
+    "verb_class": "(4)"
+   },
+   "grammatical_forms": [
+    {
+     "form_type": "pl. (both knees)",
+     "form": "paaraarurahwiitik (ut...)"
+    }
+   ],
+   "english_glosses": [
+    {
+     "number": null,
+     "definition": "kneel on one knee, get down on one knee.",
+     "usage_notes": null
+    }
+   ],
+   "etymology": {
+    "raw_etymology": "<ut+paa+hurah.wi+itik, knee to go down touching the ground>",
+    "constituent_elements": [
+     {
+      "morpheme": "ut",
+      "gloss": null
+     },
+     {
+      "morpheme": "paa",
+      "gloss": "knee"
+     },
+     {
+      "morpheme": "hurah.wi",
+      "gloss": "go down touching the ground"
+     },
+     {
+      "morpheme": "itik",
+      "gloss": null
+     }
+    ],
+    "literal_translation": "knee to go down touching the ground"
+   }
+  },
+  "part_II": {
+   "paradigmatic_forms": [
+    {
+     "form_number": 1,
+     "description": "1st Person Singular Subject, Indicative Mode, Perfective",
+     "skiri_form": "tatutpaahurahwiitit"
+    },
+    {
+     "form_number": 2,
+     "description": "3rd Person Singular Subject, Indicative Mode, Perfective",
+     "skiri_form": "tutpaahurahwiitit"
+    },
+    {
+     "form_number": 3,
+     "description": "3rd Person Singular Subject, Indicative Mode, Imperfective",
+     "skiri_form": "tutpaahurahwiitikuʔ"
+    },
+    {
+     "form_number": 4,
+     "description": "3rd Person Singular Subject, Absolutive Mode, Subordinate Perfective",
+     "skiri_form": "iriirutpaahurahwiitit"
+    },
+    {
+     "form_number": 5,
+     "description": "3rd Person Singular Subject, Indicative Mode, Perfective Intentive",
+     "skiri_form": "tutpaahurahwiitiksta"
+    }
+   ],
+   "additional_forms": [],
+   "examples": [
+    {
+     "skiri_text": "tutpaaraarurahwiitit",
+     "english_translation": "he knelt on both knees."
+    }
+   ]
+  },
+  "part_III": null,
+  "resolved_e2s": [
+   195
+  ],
+  "s2e_page": 453
+ },
+ {
+  "word": "city",
+  "class": "VD",
+  "pn": 45,
+  "located": 107,
+  "cands": [
+   107
+  ],
+  "s2e_id": "SK-iturihuur-p418-3919",
+  "match_type": "exact_unique",
+  "part_I": {
+   "skiri_term": "iturihuur",
+   "stem_preverb": null,
+   "phonetic_form": "[•ɪ-tʊ-rɪ-huu(r)•]",
+   "grammatical_classification": {
+    "class_abbr": "VD",
+    "class_full_description": null,
+    "verb_class": null
+   },
+   "grammatical_forms": [],
+   "english_glosses": [
+    {
+     "number": 1,
+     "definition": "be a big village.",
+     "usage_notes": null
+    },
+    {
+     "number": 2,
+     "definition": "be a city.",
+     "usage_notes": "(contemp.)"
+    }
+   ],
+   "etymology": {
+    "raw_etymology": "<itur+rihuur, be a big village>",
+    "constituent_elements": [
+     {
+      "morpheme": "itur",
+      "gloss": null
+     },
+     {
+      "morpheme": "rihuur",
+      "gloss": "be a big village"
+     }
+    ],
+    "literal_translation": null
+   }
+  },
+  "part_II": {
+   "paradigmatic_forms": [
+    {
+     "form_number": 2,
+     "description": "3rd Person Singular Subject, Indicative Mode, Perfective",
+     "skiri_form": "tiiturihuuʔ"
+    },
+    {
+     "form_number": 4,
+     "description": "3rd Person Singular Subject, Absolutive Mode, Subordinate Perfective",
+     "skiri_form": "iriiraaturihuuru"
+    },
+    {
+     "form_number": 5,
+     "description": "3rd Person Singular Subject, Indicative Mode, Perfective Intentive",
+     "skiri_form": "tiiturihuuruks-ta"
+    }
+   ],
+   "additional_forms": [],
+   "examples": []
+  },
+  "part_III": null,
+  "resolved_e2s": [
+   107
+  ],
+  "s2e_page": 418
+ },
+ {
+  "word": "hurry",
+  "class": "VD",
+  "pn": 186,
+  "located": 186,
+  "cands": [
+   186,
+   251,
+   265
+  ],
+  "s2e_id": "SK-ikiraaruur-p61-1061",
+  "match_type": "exact_unique",
+  "part_I": {
+   "skiri_term": "ikiraaruur",
+   "stem_preverb": null,
+   "phonetic_form": "[•ɪ-kɪ-raa-ruu(r)•]",
+   "grammatical_classification": {
+    "class_abbr": "VD",
+    "class_full_description": null,
+    "verb_class": null
+   },
+   "grammatical_forms": [],
+   "english_glosses": [
+    {
+     "number": null,
+     "definition": "be in a hurry, in a rush; be rushed.",
+     "usage_notes": null
+    }
+   ],
+   "etymology": {
+    "raw_etymology": "<ikiraa(r)+huur, be in a hurried state>",
+    "constituent_elements": [
+     {
+      "morpheme": "ikiraa(r)",
+      "gloss": null
+     },
+     {
+      "morpheme": "huur",
+      "gloss": "be in a hurried state"
+     }
+    ],
+    "literal_translation": "be in a hurried state"
+   }
+  },
+  "part_II": {
+   "paradigmatic_forms": [
+    {
+     "form_number": 1,
+     "description": "1st Person Singular Subject, Indicative Mode, Perfective",
+     "skiri_form": "taatikiraaruuʔ"
+    },
+    {
+     "form_number": 2,
+     "description": "3rd Person Singular Subject, Indicative Mode, Perfective",
+     "skiri_form": "tiikiraaruuʔ"
+    },
+    {
+     "form_number": 4,
+     "description": "3rd Person Singular Subject, Absolutive Mode, Subordinate Perfective",
+     "skiri_form": "iriruukiraaruuru"
+    },
+    {
+     "form_number": 5,
+     "description": "3rd Person Singular Subject, Indicative Mode, Perfective Intentive",
+     "skiri_form": "tiikiraaruuruksta"
+    }
+   ],
+   "additional_forms": [],
+   "examples": []
+  },
+  "part_III": null,
+  "resolved_e2s": [
+   186
+  ],
+  "s2e_page": 409
+ },
+ {
+  "word": "crooked",
+  "class": "VD",
+  "pn": 59,
+  "located": 121,
+  "cands": [
+   121
+  ],
+  "s2e_id": "SK-piruus-p114-2201",
+  "match_type": "gloss_disambiguated",
+  "part_I": {
+   "skiri_term": "piruus",
+   "stem_preverb": null,
+   "phonetic_form": "[•pɪ-ruus•]",
+   "grammatical_classification": {
+    "class_abbr": "VD",
+    "class_full_description": null,
+    "verb_class": null
+   },
+   "grammatical_forms": [],
+   "english_glosses": [
+    {
+     "number": null,
+     "definition": "be crooked, bent, curved, as a deformed body part or elongated object; be bent, as a metal object like a car; be twisted.",
+     "usage_notes": null
+    }
+   ],
+   "etymology": {
+    "raw_etymology": "<i.q. SB piruus, Ar. piroox>",
+    "constituent_elements": [],
+    "literal_translation": null
+   }
+  },
+  "part_II": {
+   "paradigmatic_forms": [
+    {
+     "form_number": 2,
+     "description": "3rd Person Singular Subject, Indicative Mode, Perfective",
+     "skiri_form": "tipiruus"
+    },
+    {
+     "form_number": 4,
+     "description": "3rd Person Singular Subject, Absolutive Mode, Subordinate Perfective",
+     "skiri_form": "iriirapiruusu"
+    },
+    {
+     "form_number": 5,
+     "description": "3rd Person Singular Subject, Indicative Mode, Perfective Intentive",
+     "skiri_form": "tipiruusuksta"
+    }
+   ],
+   "additional_forms": [],
+   "examples": []
+  },
+  "part_III": null,
+  "resolved_e2s": [
+   121
+  ],
+  "s2e_page": 462
+ },
+ {
+  "word": "there",
+  "class": "ADV",
+  "pn": 250,
+  "located": 83,
+  "cands": [
+   83,
+   98,
+   131,
+   138,
+   190,
+   200
+  ],
+  "s2e_id": "SK-iritaku-p67-1189",
+  "match_type": "exact_unique",
+  "part_I": {
+   "skiri_term": "iritaku",
+   "stem_preverb": null,
+   "phonetic_form": "[í-rɪ-tə-kʊ]",
+   "grammatical_classification": {
+    "class_abbr": "ADV",
+    "class_full_description": null,
+    "verb_class": null
+   },
+   "grammatical_forms": [],
+   "english_glosses": [
+    {
+     "number": null,
+     "definition": "there, right there, general in location but not far away .",
+     "usage_notes": null
+    }
+   ],
+   "etymology": {
+    "raw_etymology": "<irii+taku, there + LOC.ADV>",
+    "constituent_elements": [
+     {
+      "morpheme": "irii",
+      "gloss": "there"
+     },
+     {
+      "morpheme": "taku",
+      "gloss": "LOC.ADV"
+     }
+    ],
+    "literal_translation": null
+   }
+  },
+  "part_II": null,
+  "part_III": null,
+  "resolved_e2s": [
+   312
+  ],
+  "s2e_page": 415
+ },
+ {
+  "word": "shoulder, over one's",
+  "class": "LOC",
+  "pn": 215,
+  "located": 277,
+  "cands": [
+   277
+  ],
+  "s2e_id": "SK-icawatka--p56-0954",
+  "match_type": "exact_unique",
+  "part_I": {
+   "skiri_term": "icawatka-",
+   "stem_preverb": null,
+   "phonetic_form": "[ɪ-čə-wət-kə•]",
+   "grammatical_classification": {
+    "class_abbr": "LOC",
+    "class_full_description": null,
+    "verb_class": null
+   },
+   "grammatical_forms": [],
+   "english_glosses": [
+    {
+     "number": 1,
+     "definition": "over one's shoulder.",
+     "usage_notes": null
+    },
+    {
+     "number": 2,
+     "definition": "over a raised horizontal object.",
+     "usage_notes": null
+    }
+   ],
+   "etymology": {
+    "raw_etymology": "<icawaat+ka, on over a raised horizontal object>",
+    "constituent_elements": [
+     {
+      "morpheme": "icawaat",
+      "gloss": "on over a raised horizontal object"
+     },
+     {
+      "morpheme": "ka",
+      "gloss": null
+     }
+    ],
+    "literal_translation": null
+   }
+  },
+  "part_II": {
+   "paradigmatic_forms": [],
+   "additional_forms": [
+    {
+     "form": "icawatkakus",
+     "description": "be across, over a raised horizontal object."
+    },
+    {
+     "form": "icawatkasa",
+     "description": "be lying on or over someone's shoulder."
+    },
+    {
+     "form": "awiicawatkaʔiir (ut...)",
+     "description": "sling over someone's shoulder."
+    }
+   ],
+   "examples": []
+  },
+  "part_III": null,
+  "resolved_e2s": [
+   277
+  ],
+  "s2e_page": 404
+ },
+ {
+  "word": "eighteen",
+  "class": "NUM",
+  "pn": 140,
+  "located": 140,
+  "cands": [
+   140
+  ],
+  "s2e_id": "SK-pitkus-kaakiiqiq-p114-2210",
+  "match_type": "exact_unique",
+  "part_I": {
+   "skiri_term": "pitkus-kaakiiʔiʔ",
+   "stem_preverb": null,
+   "phonetic_form": "[pít-kʊs•kaa-kii-ʔiʔ]",
+   "grammatical_classification": {
+    "class_abbr": "NUM",
+    "class_full_description": null,
+    "verb_class": null
+   },
+   "grammatical_forms": [],
+   "english_glosses": [
+    {
+     "number": null,
+     "definition": "eighteen.",
+     "usage_notes": null
+    }
+   ],
+   "etymology": {
+    "raw_etymology": "<pitkus kaakiiʔiʔ, it is not two, i.e., two less than twenty>",
+    "constituent_elements": [
+     {
+      "morpheme": "pitkus kaakiiʔiʔ",
+      "gloss": "it is not two"
+     }
+    ],
+    "literal_translation": "it is not two"
+   }
+  },
+  "part_II": null,
+  "part_III": null,
+  "resolved_e2s": [
+   140
+  ],
+  "s2e_page": 462
+ },
+ {
+  "word": "tangled",
+  "class": "VP",
+  "pn": 247,
+  "located": 309,
+  "cands": [
+   309
+  ],
+  "s2e_id": "SK-kariipaak-p78-1437",
+  "match_type": "exact_unique",
+  "part_I": {
+   "skiri_term": "kariipaak",
+   "stem_preverb": "(ut...)",
+   "phonetic_form": "[•kə-rii-paa{k/t}•]",
+   "grammatical_classification": {
+    "class_abbr": "VP",
+    "class_full_description": null,
+    "verb_class": "(2)"
+   },
+   "grammatical_forms": [],
+   "english_glosses": [
+    {
+     "number": null,
+     "definition": "be tangled, tangled up in; be entangled.",
+     "usage_notes": null
+    }
+   ],
+   "etymology": {
+    "raw_etymology": "<kariik (ut...).waa, tied in a bundle + DIST>",
+    "constituent_elements": [
+     {
+      "morpheme": "kariik (ut...).waa",
+      "gloss": "tied in a bundle"
+     },
+     {
+      "morpheme": "DIST",
+      "gloss": null
+     }
+    ],
+    "literal_translation": null
+   }
+  },
+  "part_II": {
+   "paradigmatic_forms": [
+    {
+     "form_number": 1,
+     "description": "1st Person Singular Subject, Indicative Mode, Perfective",
+     "skiri_form": "tikutkariipaat"
+    },
+    {
+     "form_number": 2,
+     "description": "3rd Person Singular Subject, Indicative Mode, Perfective",
+     "skiri_form": "tutkariipaat"
+    },
+    {
+     "form_number": 4,
+     "description": "3rd Person Singular Subject, Absolutive Mode, Subordinate Perfective",
+     "skiri_form": "iriruutkariipaaki"
+    },
+    {
+     "form_number": 5,
+     "description": "3rd Person Singular Subject, Indicative Mode, Perfective Intentive",
+     "skiri_form": "tutkariipaakista"
+    }
+   ],
+   "additional_forms": [
+    {
+     "form": "tuuhahkaripaat",
+     "description": "they are tangled up."
+    }
+   ],
+   "examples": []
+  },
+  "part_III": null,
+  "resolved_e2s": [
+   309
+  ],
+  "s2e_page": 426
+ },
+ {
+  "word": "hello",
+  "class": "INTERJ",
+  "pn": 117,
+  "located": 179,
+  "cands": [
+   179
+  ],
+  "s2e_id": "SK-rawa,_nawa-p139-2751",
+  "match_type": "exact_unique",
+  "part_I": {
+   "skiri_term": "rawa, nawa",
+   "stem_preverb": null,
+   "phonetic_form": "[rà-wə,nà-wə]",
+   "grammatical_classification": {
+    "class_abbr": "INTERJ",
+    "class_full_description": null,
+    "verb_class": null
+   },
+   "grammatical_forms": [],
+   "english_glosses": [
+    {
+     "number": 1,
+     "definition": "now, well now.",
+     "usage_notes": null
+    },
+    {
+     "number": 2,
+     "definition": "hello, a word of greeting.",
+     "usage_notes": null
+    }
+   ],
+   "etymology": null
+  },
+  "part_II": {
+   "paradigmatic_forms": [],
+   "additional_forms": [],
+   "examples": [
+    {
+     "skiri_text": "rawa, tiki",
+     "english_translation": "hello, sonny!"
+    },
+    {
+     "skiri_text": "rawa hiruu icihwa",
+     "english_translation": "now then we will go."
+    }
+   ]
+  },
+  "part_III": null,
+  "resolved_e2s": [
+   179
+  ],
+  "s2e_page": 487
+ },
+ {
+  "word": "finish",
+  "class": "VT",
+  "pn": 152,
+  "located": 152,
+  "cands": [
+   152
+  ],
+  "s2e_id": "SK-riihac-p141-2793",
+  "match_type": "gloss_disambiguated",
+  "part_I": {
+   "skiri_term": "riihac",
+   "stem_preverb": null,
+   "phonetic_form": "[•rii-həts•]",
+   "grammatical_classification": {
+    "class_abbr": "VT",
+    "class_full_description": null,
+    "verb_class": "(4)"
+   },
+   "grammatical_forms": [],
+   "english_glosses": [
+    {
+     "number": null,
+     "definition": "finish, complete",
+     "usage_notes": "as an activity or task."
+    }
+   ],
+   "etymology": {
+    "raw_etymology": "<i.q. SB reehac, Ar. reehas>",
+    "constituent_elements": [],
+    "literal_translation": null
+   }
+  },
+  "part_II": {
+   "paradigmatic_forms": [
+    {
+     "form_number": 1,
+     "description": "1st Person Singular Subject, Indicative Mode, Perfective",
+     "skiri_form": "tahiihac"
+    },
+    {
+     "form_number": 2,
+     "description": "3rd Person Singular Subject, Indicative Mode, Perfective",
+     "skiri_form": "tiriihac"
+    },
+    {
+     "form_number": 3,
+     "description": "3rd Person Singular Subject, Indicative Mode, Imperfective",
+     "skiri_form": "tiriihaacuʔ"
+    },
+    {
+     "form_number": 4,
+     "description": "3rd Person Singular Subject, Absolutive Mode, Subordinate Perfective",
+     "skiri_form": "iriirariihac"
+    },
+    {
+     "form_number": 5,
+     "description": "3rd Person Singular Subject, Indicative Mode, Perfective Intentive",
+     "skiri_form": "tiriihacista"
+    }
+   ],
+   "additional_forms": [
+    {
+     "form": "tirariihaacuʔ",
+     "description": "they are finishing it."
+    }
+   ],
+   "examples": []
+  },
+  "part_III": null,
+  "resolved_e2s": [
+   152
+  ],
+  "s2e_page": 489
+ },
+ {
+  "word": "take from someone's hand",
+  "class": "VT",
+  "pn": 245,
+  "located": 307,
+  "cands": [
+   307
+  ],
+  "s2e_id": "SK-ikstat-p64-1106",
+  "match_type": "gloss_disambiguated",
+  "part_I": {
+   "skiri_term": "ikstat",
+   "stem_preverb": "(uur...)",
+   "phonetic_form": "[•ɪks-tət•]",
+   "grammatical_classification": {
+    "class_abbr": "VT",
+    "class_full_description": null,
+    "verb_class": "(1)"
+   },
+   "grammatical_forms": [],
+   "english_glosses": [
+    {
+     "number": null,
+     "definition": "take from someone's hand, take from someone.",
+     "usage_notes": null
+    }
+   ],
+   "etymology": {
+    "raw_etymology": "<uur+iks+ra.at, take from someone's hand>",
+    "constituent_elements": [
+     {
+      "morpheme": "uur",
+      "gloss": "from someone's"
+     },
+     {
+      "morpheme": "iks",
+      "gloss": "hand"
+     },
+     {
+      "morpheme": "ra.at",
+      "gloss": "take"
+     }
+    ],
+    "literal_translation": null
+   }
+  },
+  "part_II": {
+   "paradigmatic_forms": [
+    {
+     "form_number": 1,
+     "description": "1st Person Singular Subject, Indicative Mode, Perfective",
+     "skiri_form": "tatuurikstat"
+    },
+    {
+     "form_number": 2,
+     "description": "3rd Person Singular Subject, Indicative Mode, Perfective",
+     "skiri_form": "tuurikstat"
+    },
+    {
+     "form_number": 3,
+     "description": "3rd Person Singular Subject, Indicative Mode, Imperfective",
+     "skiri_form": "tuurikstiwuuʔ"
+    },
+    {
+     "form_number": 4,
+     "description": "3rd Person Singular Subject, Absolutive Mode, Subordinate Perfective",
+     "skiri_form": "iriruurikstata"
+    },
+    {
+     "form_number": 5,
+     "description": "3rd Person Singular Subject, Indicative Mode, Perfective Intentive",
+     "skiri_form": "tuurikstahuhta"
+    }
+   ],
+   "additional_forms": [],
+   "examples": []
+  },
+  "part_III": null,
+  "resolved_e2s": [
+   307
+  ],
+  "s2e_page": 412
+ },
+ {
+  "word": "take from",
+  "class": "VT",
+  "pn": 245,
+  "located": 307,
+  "cands": [
+   307
+  ],
+  "s2e_id": "SK-rat-p138-2733",
+  "match_type": "gloss_disambiguated",
+  "part_I": {
+   "skiri_term": "rat",
+   "stem_preverb": "(uur...)",
+   "phonetic_form": "[•rət•]",
+   "grammatical_classification": {
+    "class_abbr": "VT",
+    "class_full_description": null,
+    "verb_class": "(1)"
+   },
+   "grammatical_forms": [],
+   "english_glosses": [
+    {
+     "number": null,
+     "definition": "take from, take away from.",
+     "usage_notes": null
+    }
+   ],
+   "etymology": {
+    "raw_etymology": "<uur+ra+at, go carrying from, lit. take one's>",
+    "constituent_elements": [
+     {
+      "morpheme": "uur",
+      "gloss": "from"
+     },
+     {
+      "morpheme": "ra",
+      "gloss": "go"
+     },
+     {
+      "morpheme": "at",
+      "gloss": "carrying"
+     }
+    ],
+    "literal_translation": "take one's"
+   }
+  },
+  "part_II": {
+   "paradigmatic_forms": [
+    {
+     "form_number": 1,
+     "description": "1st Person Singular Subject, Indicative Mode, Perfective",
+     "skiri_form": "taturat"
+    },
+    {
+     "form_number": 2,
+     "description": "3rd Person Singular Subject, Indicative Mode, Perfective",
+     "skiri_form": "turat"
+    },
+    {
+     "form_number": 3,
+     "description": "3rd Person Singular Subject, Indicative Mode, Imperfective",
+     "skiri_form": "turiwuuʔ"
+    },
+    {
+     "form_number": 4,
+     "description": "3rd Person Singular Subject, Absolutive Mode, Subordinate Perfective",
+     "skiri_form": "iriirurata"
+    },
+    {
+     "form_number": 5,
+     "description": "3rd Person Singular Subject, Indicative Mode, Perfective Intentive",
+     "skiri_form": "turahuhta"
+    }
+   ],
+   "additional_forms": [],
+   "examples": []
+  },
+  "part_III": null,
+  "resolved_e2s": [
+   307
+  ],
+  "s2e_page": 486
+ },
+ {
+  "word": "solder",
+  "class": "NONE",
+  "pn": 224,
+  "located": 286,
+  "cands": [
+   286
+  ],
+  "s2e_id": null,
+  "match_type": "no_part_I",
+  "part_I": {},
+  "part_II": null,
+  "part_III": {
+   "cross_references": [
+    {
+     "english_term": "join",
+     "skiri_equivalents": [
+      "uktawuh (ut...)"
+     ]
+    }
+   ]
+  },
+  "resolved_e2s": [
+   286
+  ],
+  "s2e_page": null
+ },
+ {
+  "word": "blended",
+  "class": "NONE",
+  "pn": 25,
+  "located": 87,
+  "cands": [
+   87
+  ],
+  "s2e_id": null,
+  "match_type": "no_part_I",
+  "part_I": {},
+  "part_II": null,
+  "part_III": {
+   "cross_references": [
+    {
+     "english_term": "mixed together",
+     "skiri_equivalents": [
+      "wiriis (ut...) [+ raar-]"
+     ]
+    }
+   ]
+  },
+  "resolved_e2s": [
+   87
+  ],
+  "s2e_page": null
+ },
+ {
+  "word": "smoked buckskin",
+  "class": "NONE",
+  "pn": 222,
+  "located": 284,
+  "cands": [
+   284
+  ],
+  "s2e_id": null,
+  "match_type": "no_part_I",
+  "part_I": {},
+  "part_II": null,
+  "part_III": {
+   "cross_references": [
+    {
+     "english_term": "buckskin (smoked)",
+     "skiri_equivalents": [
+      "akarawiisuʔ",
+      "akarawis",
+      "akarahkata"
+     ]
+    }
+   ]
+  },
+  "resolved_e2s": [
+   284
+  ],
+  "s2e_page": null
+ }
+]

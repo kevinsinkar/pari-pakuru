@@ -1,0 +1,208 @@
+=== fix_audit_issues.py — APPLY — 2026-09-01T17:33:20.591751 ===
+[2] entries with gloss loss to restore: 7 ['SK-akaaruq-p9-0108', 'SK-caahikspahat-p26-0366', 'SK-cahkahaaruq-p27-0400', 'SK-iriwaawarik-p67-1193', 'SK-pakstariipiiruq-p110-2114', 'SK-raakickuq-p119-2320', 'SK-kictakaahak-p436-3950']
+[7a] bracket drift fixed in JSON: 44 entries
+  [7b] SK-atiqas-p19-0228: JSON class 'N' := DB 'N-KIN'
+  [7b] SK-atikaq-p19-0233: JSON class 'N' := DB 'N-KIN'
+  [7b] SK-atiraq-p19-0243: JSON class 'N' := DB 'N-KIN'
+  [7b] SK-iraactiq-p64-1117: JSON class 'N' := DB 'N-KIN'
+  [7b] SK-iraariq-p64-1121: JSON class 'N' := DB 'N-KIN'
+  [7b] SK-itaahiq-p68-1216: JSON class 'N' := DB 'N-KIN'
+  [7b] SK-raktiiki-p135-2664: JSON class 'N' := DB 'N-KIN'
+  [7b] SK-tiwaat-p166-3278: JSON class 'N' := DB 'N-KIN'
+  [7b] SK-tiwaciriks-p166-3279: JSON class 'N' := DB 'N-KIN'
+[7b] grammatical_class backported DB->JSON: 9 entries
+[3] missing phonetic_form recovered: 23 (needs manual review: 9)
+  [3] RECOVERED SK-ahictarahaq-p9-0088 'ahictarahaʔ' -> [à-hɪts-tə-rə-həʔ]
+  [3] RECOVERED SK-cuskatit-p32-0521 'cuskatit' -> [čʊs-kà-tɪt]
+  [3] RECOVERED SK-haarutpahat-p36-0611 'haarutpahat' -> [haa-rʊt-pə-hət]
+  [3] RECOVERED SK-hariiquq-p37-0634 'hariiʔuʔ' -> [hə-rií-ʔuʔ]
+  [3] RECOVERED SK-hariipahat-p37-0637 'hariipahat' -> [hə-rií-pə-hət]
+  [3] RECOVERED SK-huuriktik-p51-0867 'huuriktik' -> [•huu-rɪk-tɪ{k/t}•]
+  [3] RECOVERED SK-huutawirihuur-p52-0882 'huutawirihuur' -> [•huu-tə-wɪ-rɪ-huu(r)•]
+  [3] RECOVERED SK-ikitawiqat-p62-1071 'ikitawiʔat' -> [•ɪ-kɪ-tə-wi-ʔət•]
+  [3] RECOVERED SK-kaawiracariiquus-p74-1342 'kaawiracariiʔuus' -> [•kaa-wɪ-rə-čə-rii-ʔuus•]
+  [3] RECOVERED SK-kactahaaruq-p75-1364 'kactahaaruʔ' -> [kàts-tə-haa-rʊʔ]
+  [3] RECOVERED SK-kukatit-p101-1967 'kukatit' -> [kʊ-kə-tɪt]
+  [3] RECOVERED SK-picuuwihiriq-p111-2164 'picuuwihiriʔ' -> [pí-čuu-wɪ-hɪ-riʔ]
+  [3] RECOVERED SK-piirustaruus-p113-2173 'piirustaruus' -> [pií-rʊs-tə-ruus]
+  [3] RECOVERED SK-piiruus-p113-2174 'piiruus' -> [pií-ruus]
+  [3] RECOVERED SK-raakiiskawaarasit-p119-2328 'raakiiskawaarasit' -> [•raa-kiis-kə-waa-rə-sɪt•]
+  [3] RECOVERED SK-raaripakusuq-p123-2402 'raaripakusuʔ' -> [raa-rɪ-pà-kʊ-sʊʔ]
+  [3] RECOVERED SK-rakaraaracaahisiku-p134-2621 'rakaraaracaahisiku' -> [rà-kə-raa-rə-čaa-hɪ-sɪ-kʊ]
+  [3] RECOVERED SK-takaas-p157-3063 'takaas' -> [•tə-kaas•]
+  [3] RECOVERED SK-tiraaktakaasikus-p166-3271 'tiraaktakaasikus' -> [tí-raak-tə-kaa-sɪ-kʊs]
+  [3] RECOVERED SK-asaarahkata-p362-3745 'asaarahkata' -> [ə-saa-ràh-kə-tə]
+  [3] RECOVERED SK-hiihpahat-p389-3821 'hiihpahat' -> [hiih-pà-hət]
+  [3] RECOVERED SK-piikawaa-p460-4081 'piikawaa' -> [pii-kà-waa]
+  [3] RECOVERED SK-rikakiis-p491-4156 'rikakiis' -> [•rɪ-kə-kiis•]
+  [3] REVIEW    SK-huuruhaahkaatiit-p51-0868 'huuruhaahkaatiit': skeleton mismatch: [huu-kɪ-wíh-kə-haa-rʊʔ]
+  [3] REVIEW    SK-kaaks-p72-1292 'kaaks': skeleton mismatch: [hàs-kə-rə-rɪ-kaak-sʊʔ]
+  [3] REVIEW    SK-kawiqat-p83-1555 'kawiʔat': skeleton mismatch: [•ɪts-kə-wi-ʔət•]
+  [3] REVIEW    SK-kiiskawaarasit-p92-1737 'kiiskawaarasit': skeleton mismatch: [•ə-čɪks-kiis-kə-waa-rə-sɪt•]
+  [3] REVIEW    SK-kiraar-p94-1787 'kiraar': skeleton mismatch: [•ə-čɪk-sɪ-kɪ-raa-ruu(r)•]
+  [3] REVIEW    SK-pahuks-p108-2058 'pahuks': skeleton mismatch: [ɪ-čə-taá-pə-hʊks]
+  [3] REVIEW    SK-uhurarik-p169-3333 'uhurarik': skeleton mismatch: [•raa-rʊ-hʊ-rə-rɪ{k/t}•]
+  [3] REVIEW    SK-wakta/taa-p175-3476 'wakta/taa': skeleton mismatch: [•aa-rəh-kɪ-čə-wək-tə/taa•]
+  [3] REVIEW    SK-ø-p349-3568 'Ø': not IPA-like: •Ø•
+[4] OCR artifact replacements: 227
+  [4] ÷->ː (phonetic_form): 163
+  [4] ÷->ː (raw_etymology, vowel-context): 39
+  [4] ÷->ː (form, vowel-context): 14
+  [4] ˆ->ɪ (phonetic_form): 4
+  [4] ÷->ː (gloss, vowel-context): 2
+  [4] Ò->a (phonetic_form): 1
+  [4] ø->ː (phonetic_form): 1
+  [4] ç->ʔ (phonetic_form): 1
+  [4] ‹->ʊ (phonetic_form): 1
+  [4] ÷->ː (morpheme, vowel-context): 1
+  [4] unresolved ÷ (non-vowel context, left for manual review): 47
+      [].subentries[].part_I.etymology.raw_etymology: ...i, Ar. neesk÷htó>...
+      [].subentries[].part_I.etymology.raw_etymology: ...it, Ar. teók÷NIt>...
+      [].subentries[].part_I.etymology.raw_etymology: ...q. Ar. WAxak÷suʔ>...
+      [].subentries[].part_I.etymology.raw_etymology: ...m Kiowa k?yg÷, the n...
+      [].subentries[].part_I.etymology.raw_etymology: ... Ar. wiiteeó÷tó>...
+      [].subentries[].part_I.etymology.raw_etymology: ...f. Ar. tAh-k÷tó erra...
+      [].subentries[].part_I.etymology.raw_etymology: ...i.q. Ar. WAh÷ruʔ, WA...
+      [].subentries[].part_I.etymology.raw_etymology: ...cf. Ar. skan÷suʔ ani...
+      [].subentries[].part_I.etymology.raw_etymology: ...rit, Ar. par÷NIt...
+      [].subentries[].part_I.etymology.raw_etymology: ..., Ar. čeewaʔ÷t; cf. ...
+      [].subentries[].part_I.etymology.raw_etymology: ...f. Ar. napaʔ÷t big s...
+      [].subentries[].part_I.etymology.raw_etymology: ...rutki, Ar. n÷t>...
+      [].subentries[].part_I.etymology.constituent_elements[].morpheme: ...Ar. n÷t...
+      [].subentries[].part_I.etymology.raw_etymology: ...tuʔ, Ar. saʔ÷htuʔ, i...
+      [].subentries[].part_I.etymology.raw_etymology: ...uks, Ar. WAh÷x>...
+      [].subentries[].part_I.etymology.raw_etymology: ...cf. Ar. tAhk÷tó e r ...
+      [].subentries[].part_I.etymology.raw_etymology: ...ukAhkaruuwat÷x wild ...
+      [].subentries[].part_I.etymology.constituent_elements[].gloss: ...ukAhkaruuwat÷x wild ...
+      [].part_I.etymology.raw_etymology: ...tuʔ, Ar. saʔ÷htuʔ, i...
+      [].part_I.cognates[].form: ...saʔ÷htuʔ...
+[6] JSON skiri-text cleanups: 315 paradigm forms, 54 examples
+  [6] example texts containing hyphens (compound numerals are legitimate; review for line-break leaks): 78
+      SK-kaaqas-p2-0004: 'tahaarukaʔi kaa-ʔaskat hii taharat'
+      SK-kaaqat-p2-0008: 'wiitaraarawaʔaahuʔ kaa-ʔat'
+      SK-akaraahuuruuhtuq-p11-0111: 'witii-karaahuraariʔ akaraahuuruuhtuʔ'
+      SK-akitaaruq-p11-0121: 'iriiraakitaahwi-waahat'
+      SK-akiwaasas-p11-0122: 'aki-waasas iriirahaapaawi'
+      SK-arahuuq-p13-0130: 'Arahuuʔ iriiku-riikaahuraaru'
+      SK-arasuq-p13-0140: 'taatarasta-carahat'
+      SK-arikawuh-p13-0153: 'ta-tuutarikawaawu'
+      SK-askiriktaaquq-p16-0171: 'iriiraataskirik-taatawi'
+      SK-asuq-p18-0202: 'As-kiwakuʔ'
+      SK-awiriirik-p25-0338: 'karasuu-raakawiriirit'
+      SK-ckaraaruq-p30-0467: 'taackaraa-raʔ'
+      SK-ckaraaruq-p30-0467: 'tiickarah-katasa'
+      SK-ckarus-p30-0472: 'tiic-kaarustahku'
+      SK-ckiisaakaratawiquq-p30-0477: 'iriiraatic-kiisaakaratawaawi'
+      SK-cuspaaraaruq-p32-0524: 'rakuuticus-paaraaruurikut'
+      SK-cuspaaraaruq-p32-0524: 'iriiraacus-paaracawi'
+      SK-custaruus-p32-0526: 'Cicusta-ruus'
+      SK-cuuhkataku-p32-0532: 'iriira-pakskaawi cuuhkataku'
+      SK-cuuhkatuus-p32-0533: 'cuuhka-tuusihariʔ'
+[1] normalized_form changed: 60 | simplified_pronunciation changed: 23
+  [1] SK-acikstiihac-p7-0063: 'acikstîhac' -> 'ačikstîhac'
+  [1] SK-aciksuhuriihac-p8-0068: 'aciksuhurîhac' -> 'ačiksuhurîhac'
+  [1] SK-aciksurahac-p8-0074: 'aciksurahac' -> 'ačiksurahac'
+  [1] SK-awaacic-p20-0253: 'awâcic' -> 'awâčic'
+  [1] SK-caahiksicaahiks-p26-0359: 'Câhiksicâhiks' -> 'Čâhiksičâhiks'
+  [1] SK-caahikspahat-p26-0366: 'Câhikspahat' -> 'Čâhikspahat'
+  [1] SK-cacikskaaskitawikiic-p27-0394: 'cacikskâskitawikîc' -> 'čačikskâskitawikîc'
+  [1] SK-cakaaqa-p27-0403: "Cakâ'a" -> "Čakâ'a"
+  [1] SK-cakickuutuq-p27-0405: "cakickûtu'" -> "čakickûtu'"
+  [1] SK-cawii-p28-0424: 'Cawî' -> 'Čawî'
+  [1] SK-cawiirikiripacki-p28-0426: 'Cawîrikiripački' -> 'Čawîrikiripacki'
+  [1] SK-cikic-p29-0438: 'cikic' -> 'čikic'
+  [1] SK-ckapicistuukus-p30-0465: 'ckapicistûkus' -> 'ckapičistûkus'
+  [1] SK-ckuhkucuuq-p31-0491: "ckuhkucû'" -> "ckuhkučû'"
+  [1] SK-cpiikicakusuq-p31-0507: "cpîkicakusu'" -> "cpîkičakusu'"
+  [1] SK-cuskatit-p32-0521: 'cuskatit' -> 'čuskatit'
+  [1] SK-cuskiic-p32-0522: 'cuskîc' -> 'čuskîc'
+  [1] SK-custaruus-p32-0526: 'Custarûs' -> 'Čustarûs'
+  [1] SK-cuuhaarukaqac-p32-0531: "cûhâruka'ac" -> "čûhâruka'ac"
+  [1] SK-cuupiriktaakaa-p32-0534: 'Cûpiriktâkâ' -> 'Čûpiriktâkâ'
+  [1] SK-icaquuc/uc--p53-0903: "ica'ûc/uc-" -> "iča'ûc/uc-"
+  [1] SK-icakickuuhaarawarik-p54-0922: 'icakickûhârawarik' -> 'ičakickûhârawarik'
+  [1] SK-icataapackis-p55-0943: 'icatâpackis' -> 'ičatâpackis'
+  [1] SK-icawic--p56-0959: 'icawic-' -> 'ičawic-'
+  [1] SK-icawicparik-p56-0961: 'icawicparik' -> 'ičawicparik'
+  [1] SK-ickaripiiktahca-p57-0986: 'ickaripîktahca' -> 'ickaripîktahča'
+  [1] SK-ickawaraaciks-p57-0989: 'ickawarâciks' -> 'ickawarâčiks'
+  [1] SK-ickuracaquuc/uc--p58-1003: "ickuraca'ûc/uc-" -> "ickurača'ûc/uc-"
+  [1] SK-ickuracakus-p58-1004: 'ickuracakus' -> 'ickuračakus'
+  [1] SK-ickuracasa-p58-1005: 'ickuracasa' -> 'ickuračasa'
+  [1] SK-ictakiicuq-p58-1013: "ictakîcu'" -> "ictakîču'"
+  [1] SK-icuuhaarukac-p59-1026: 'icûhârukac' -> 'ičûhârukac'
+  [1] SK-ihcickuusuq-p59-1028: "ihcickûsu'" -> "ihčickûsu'"
+  [1] SK-kaawiracariiquus-p74-1342: "kâwiracarî'ûs" -> "kâwiračarî'ûs"
+  [1] SK-kicapic-p85-1588: 'kicapic' -> 'kičapic'
+  [1] SK-kicapic-p85-1589: 'kicapic' -> 'kičapic'
+  [1] SK-kicapictaquk-p85-1590: "kicapicta'uk" -> "kičapicta'uk"
+  [1] SK-kiickaracariwis-p89-1665: 'kîckaracariwis' -> 'kîckaračariwis'
+  [1] SK-kiictikucuuq-p89-1676: "kîctikucû'" -> "kîctikučû'"
+  [1] SK-kisaactacapahtuq-p98-1884: "kisâctacapahtu'" -> "kisâctačapahtu'"
+  [1] SK-kisuckiicuq-p98-1901: "kisuckîcu'" -> "kisuckîču'"
+  [1] SK-kuckiicuq-p101-1954: "kuckîcu'" -> "kuckîču'"
+  [1] SK-kuhku_kisaactacapahtuq-p101-1963: "kuhku kisâctacapahtu'" -> "kuhku kisâctačapahtu'"
+  [1] SK-pakuckucuuq-p110-2119: "pakuckucû'" -> "pakuckučû'"
+  [1] SK-picuuwihiriq-p111-2164: "picûwihiri'" -> "pičûwihiri'"
+  [1] SK-rakaraaracaahisiku-p134-2621: 'rakarâracâhisiku' -> 'rakarâračâhisiku'
+  [1] SK-raruucpaca-p138-2721: 'rarûcpaca' -> 'rarûcpača'
+  [1] SK-raruucpaca-p138-2722: 'rarûcpaca' -> 'rarûcpača'
+  [1] SK-riicawicparii-p140-2770: 'rîcawicparî' -> 'rîčawicparî'
+  [1] SK-riicawicparik-p140-2771: 'rîcawicparik' -> 'rîčawicparik'
+  [1] SK-riicikiripacki-p140-2777: 'rîcikiripacki' -> 'rîčikiripacki'
+  [1] SK-riicipackisuq-p140-2780: "rîcipackisu'" -> "rîčipackisu'"
+  [1] SK-siraackuskiicu-p152-2978: 'sirâckuskîcu' -> 'sirâckuskîču'
+  [1] SK-taraqiicic-p159-3106: "tara'îcic" -> "tara'îčic"
+  [1] SK-kictaarikiicuq-p436-3948: "kictârikîcu'" -> "kictârikîču'"
+  [1] SK-kskiickucuuq-p448-3992: "kskîckucû'" -> "kskîckučû'"
+  [1] SK-paackiicuq-p453-4030: "pâckîcu'" -> "pâckîču'"
+  [1] SK-paapiciskaaruuc-p454-4055: 'pâpiciskârûc' -> 'pâpičiskârûc'
+  [1] SK-piicuuc-p460-4076: 'pîcûc' -> 'pîčûc'
+  [1] SK-rikucpakskiciis-p492-4201: 'rikucpakskicîs' -> 'rikucpakskičîs'
+  [1-pron] SK-ahictarahaq-p9-0088: None -> "UH-hihts-tuh-duh-huh'"
+  [1-pron] SK-cuskatit-p32-0521: None -> 'choos-KUH-tiht'
+  [1-pron] SK-haarutpahat-p36-0611: None -> 'hah-doot-puh-huht'
+  [1-pron] SK-hariiquq-p37-0634: None -> "huh-DEE-'oo'"
+  [1-pron] SK-hariipahat-p37-0637: None -> 'huh-DEE-puh-huht'
+  [1-pron] SK-huuriktik-p51-0867: None -> 'hoo-dihk-tih'
+  [1-pron] SK-huutawirihuur-p52-0882: None -> 'hoo-tuh-wih-dih-hood'
+  [1-pron] SK-ikitawiqat-p62-1071: None -> "ih-kih-tuh-wih-'uht"
+  [1-pron] SK-kaawiracariiquus-p74-1342: None -> "kah-wih-duh-chuh-dee-'oos"
+  [1-pron] SK-kactahaaruq-p75-1364: None -> "KUHTS-tuh-hah-doo'"
+  [1-pron] SK-kukatit-p101-1967: None -> 'koo-kuh-tiht'
+  [1-pron] SK-picuuwihiriq-p111-2164: None -> "PIH-choo-wih-hih-dih'"
+  [1-pron] SK-piirustaruus-p113-2173: None -> 'PEE-doos-tuh-doos'
+  [1-pron] SK-piiruus-p113-2174: None -> 'PEE-doos'
+  [1-pron] SK-raakiiskawaarasit-p119-2328: None -> 'dah-kees-kuh-wah-duh-siht'
+  [1-pron] ... and 8 more
+[backup] C:\Users\k1s4l\.pari_pakuru_backups\skiri_pawnee_backup_20260901_173320.db
+[backup] C:\Users\k1s4l\.pari_pakuru_backups\skiri_to_english_respelled_backup_20260901_173320.json
+[backup] C:\Users\k1s4l\.pari_pakuru_backups\english_to_skiri_linked_backup_20260901_173320.json
+[write] C:\Users\k1s4l\OneDrive\Desktop\Repos\pari-pakuru\Dictionary Data\skiri_to_english_respelled.json
+[write] C:\Users\k1s4l\OneDrive\Desktop\Repos\pari-pakuru\Dictionary Data\english_to_skiri_linked.json
+[DB] lexical_entries rows updated: 79
+[DB] text cleanups: 315 paradigmatic_forms, 54 examples
+  [5] SK--kaa--p2-0000: kept #1, deleted [2801] for 'atikaʔ'
+  [5] SK--kaa--p2-0000: kept #2, deleted [2802] for 'akaʔ'
+  [5] SK--kaa--p2-0000: kept #2803, deleted [3] for 'ikaariʔ'
+  [5] SK-kaaqa-p2-0002: kept #4, deleted [2808] for 'tarahkaaʔaahuʔ'
+  [5] SK-kaaqas-p2-0004: kept #6, deleted [2809] for 'kaasiriʔ'
+  [5] SK-kaaqas-p2-0004: kept #7, deleted [2810] for 'tahaarukaʔi kaa-ʔaskat hii taharat'
+  [5] SK-kaaqas-p2-0004: kept #8, deleted [2811] for 'kaasasuʔ'
+  [5] SK-kaaqaskucuuq-p2-0007: kept #9, deleted [2812] for 'kaaʔaskucuukat'
+  [5] SK-kaaqat-p2-0008: kept #10, deleted [2813] for 'kaaʔat tiʔit'
+  [5] SK-kaaqat-p2-0008: kept #11, deleted [2814] for 'wiitaraarawaʔaahuʔ kaa-ʔat'
+  [5] SK-kaaqiis--p2-0013: kept #12, deleted [2815] for 'rikaaʔiisat'
+  [5] SK-kaackaawiquq-p2-0019: kept #15, deleted [2804] for 'kaackaawihiriʔ'
+  [5] SK-kaacuuh-p2-0022: kept #17, deleted [2805] for 'tihkaacuuhuʔ'
+  [5] SK-kaahiikuq-p2-0024: kept #18, deleted [2806] for 'cuustikaahiikuʔ'
+[5] duplicate example rows deleted: 14
+  [2] SK-akaaruq-p9-0108: reinserted 3 glosses
+  [2] SK-caahikspahat-p26-0366: reinserted 4 glosses
+  [2] SK-cahkahaaruq-p27-0400: reinserted 4 glosses
+  [2] SK-iriwaawarik-p67-1193: reinserted 3 glosses
+  [2] SK-pakstariipiiruq-p110-2114: reinserted 3 glosses
+  [2] SK-raakickuq-p119-2320: reinserted 3 glosses
+  [2] SK-kictakaahak-p436-3950: reinserted 3 glosses
+[2] glosses table migrated (UNIQUE dropped, NULL allowed); 23 gloss rows reinserted for 7 entries
+[DB] committed

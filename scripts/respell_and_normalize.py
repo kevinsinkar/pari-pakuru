@@ -377,7 +377,7 @@ def _respell_single_variant(variant_str):
 # Normalized Form Engine
 # ---------------------------------------------------------------------------
 
-def extract_c_pattern_from_phonetic(phonetic_form):
+def extract_c_pattern_from_phonetic(phonetic_form, ts_as_c=False):
     """
     Extract the sequence of c/č from a phonetic_form string.
     Returns a list like ['č', 'c'] indicating the identity of each
@@ -385,20 +385,34 @@ def extract_c_pattern_from_phonetic(phonetic_form):
 
     This is used to disambiguate 'c' in headwords: if the phonetic form
     has 'č' at position N, the Nth 'c' in the headword should become 'č'.
+
+    Parks writes the /ts/ realization of orthographic 'c' as the digraph
+    'ts' in phonetic forms (e.g. headword 'cikic' = [čí-kɪts]).  With
+    ts_as_c=True each 'ts' digraph is counted as one 'c' so the pattern
+    aligns with the headword's c positions.
     """
     if not phonetic_form:
         return []
 
-    # Strip structural characters to get just the phonetic content
+    # Strip brackets/dashes but KEEP syllable separators (• and -) so a
+    # 'ts' digraph is only recognized within a syllable — a t ending one
+    # syllable followed by s starting the next is not a /ts/ affricate.
     content = phonetic_form
-    for ch in '[]•–—':
+    for ch in '[]–—':
         content = content.replace(ch, '')
-    content = content.replace('-', '')
 
     pattern = []
-    for ch in content:
-        if ch in ('c', 'č'):
+    i = 0
+    while i < len(content):
+        ch = content[i]
+        if ts_as_c and ch == 't' and i + 1 < len(content) and content[i + 1] == 's':
+            pattern.append('c')
+            i += 2
+        elif ch in ('c', 'č'):
             pattern.append(ch)
+            i += 1
+        else:
+            i += 1
     return pattern
 
 
@@ -421,7 +435,17 @@ def generate_normalized_form(headword, phonetic_form):
 
     # --- Step 1: c → č disambiguation ---
     phonetic_c_pattern = extract_c_pattern_from_phonetic(phonetic_form)
-    headword_c_positions = [i for i, ch in enumerate(result) if ch == 'c']
+    headword_c_positions = [i for i, ch in enumerate(result) if ch in ('c', 'C')]
+
+    # Fallback: Parks writes /ts/ as the digraph 'ts' in phonetic forms,
+    # so plain c/č counting under-counts (e.g. 'cikic' = [čí-kɪts]).
+    # Only retry with ts→c mapping when plain counting fails, so entries
+    # that already align are never affected.
+    if (headword_c_positions and phonetic_c_pattern
+            and len(headword_c_positions) != len(phonetic_c_pattern)):
+        ts_pattern = extract_c_pattern_from_phonetic(phonetic_form, ts_as_c=True)
+        if len(ts_pattern) == len(headword_c_positions):
+            phonetic_c_pattern = ts_pattern
 
     if len(headword_c_positions) != len(phonetic_c_pattern):
         if headword_c_positions and phonetic_c_pattern:
@@ -432,11 +456,11 @@ def generate_normalized_form(headword, phonetic_form):
         # If headword has c's but no phonetic form, or counts differ, skip disambiguation
         # (entries without phonetic_form are handled by the None check below)
     else:
-        # Apply č where phonetic form indicates it
+        # Apply č where phonetic form indicates it (preserving case)
         chars = list(result)
         for hw_pos, phon_val in zip(headword_c_positions, phonetic_c_pattern):
             if phon_val == 'č':
-                chars[hw_pos] = 'č'
+                chars[hw_pos] = 'Č' if chars[hw_pos] == 'C' else 'č'
         result = ''.join(chars)
 
     # --- Step 2: Long vowels → circumflex ---

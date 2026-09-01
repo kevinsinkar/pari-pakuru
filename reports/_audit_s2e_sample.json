@@ -1,0 +1,2722 @@
+[
+ {
+  "entry_id": "SK-akahtaahuruus-p358-3675",
+  "headword": "akahtaahuruus",
+  "primary_class": "N",
+  "json_page": 358,
+  "column": "right",
+  "located_pages": [
+   358
+  ],
+  "normalized_form": "akahtâhurûs",
+  "phonetic_form": "[ə-kəh-taá-hʊ-ruus]",
+  "simplified": "uh-kuhh-TAH-hoo-doos",
+  "gram": {
+   "grammatical_class": "N",
+   "verb_class": null,
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": 1,
+    "definition": "round house, as used for dances and ceremonial events .",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "akaar+taahuruus, round dwelling",
+   "constituent_elements": [
+    {
+     "morpheme": "akaar",
+     "gloss": "dwelling",
+     "morpheme_type": "noun"
+    },
+    {
+     "morpheme": "taahuruus",
+     "gloss": "round",
+     "morpheme_type": "adjective"
+    }
+   ],
+   "literal_translation": "round dwelling"
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": null,
+   "form_2": null,
+   "form_3": null,
+   "form_4": null,
+   "form_5": null,
+   "additional_forms": []
+  },
+  "examples": []
+ },
+ {
+  "entry_id": "SK-ckuskiisuq-p31-0501",
+  "headword": "ckuskiisuʔ",
+  "primary_class": "N",
+  "json_page": 31,
+  "column": "left",
+  "located_pages": [
+   379
+  ],
+  "normalized_form": "ckuskîsu'",
+  "phonetic_form": "[tskʊs-kií-sʊʔ]",
+  "simplified": "tskoos-KEE-soo'",
+  "gram": {
+   "grammatical_class": "N",
+   "verb_class": null,
+   "additional_forms": [
+    {
+     "form_type": "comb.",
+     "form": "(i)ckuskiis-"
+    }
+   ]
+  },
+  "glosses": [
+   {
+    "number": null,
+    "definition": "coccyx; tailbone, lower vertebrae, just above the tail on an animal.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "ickus+kiis+uʔ, (tail) end bone + NOM",
+   "constituent_elements": [
+    {
+     "morpheme": "ickus",
+     "gloss": "(tail) end",
+     "morpheme_type": "root"
+    },
+    {
+     "morpheme": "kiis",
+     "gloss": "bone",
+     "morpheme_type": "root"
+    },
+    {
+     "morpheme": "uʔ",
+     "gloss": "NOM",
+     "morpheme_type": "suffix"
+    }
+   ],
+   "literal_translation": "(tail) end bone"
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": null,
+   "form_2": null,
+   "form_3": null,
+   "form_4": null,
+   "form_5": null,
+   "additional_forms": []
+  },
+  "examples": [
+   {
+    "skiri_text": "ckuskiisiriʔ",
+    "english_translation": "area around the coccyx.",
+    "usage_context": null
+   },
+   {
+    "skiri_text": "iriiraackuskiistawi",
+    "english_translation": "where his coccyx is; his coccyx.",
+    "usage_context": null
+   },
+   {
+    "skiri_text": "tikuuckuskiistaʔaariʔ",
+    "english_translation": "my tailbone is aching.",
+    "usage_context": null
+   }
+  ]
+ },
+ {
+  "entry_id": "SK-arikariipiiruq-p13-0151",
+  "headword": "arikariipiiruʔ",
+  "primary_class": "N",
+  "json_page": 13,
+  "column": "right",
+  "located_pages": [
+   361
+  ],
+  "normalized_form": "arikarîpîru'",
+  "phonetic_form": "[à-rɪ-kə-rii-pii-rʊʔ]",
+  "simplified": "UH-dih-kuh-dee-pee-doo'",
+  "gram": {
+   "grammatical_class": "N",
+   "verb_class": null,
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": 1,
+    "definition": "hair tie, braid tie; decorative string of fur, yarn, or bright cloth wrapped around a man's braids; decorative trail of hair, string, or cloth tied to a horse's mane.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "<arik+kariik.wi.ir+uʔ, tied braid + NOM>",
+   "constituent_elements": [
+    {
+     "morpheme": "arik",
+     "gloss": "braid",
+     "morpheme_type": null
+    },
+    {
+     "morpheme": "kariik.wi.ir",
+     "gloss": "tied",
+     "morpheme_type": null
+    },
+    {
+     "morpheme": "uʔ",
+     "gloss": "NOM",
+     "morpheme_type": null
+    }
+   ],
+   "literal_translation": "tied braid"
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": null,
+   "form_2": null,
+   "form_3": null,
+   "form_4": null,
+   "form_5": null,
+   "additional_forms": []
+  },
+  "examples": []
+ },
+ {
+  "entry_id": "SK-piirakiripahki-p460-4092",
+  "headword": "piirakiripahki",
+  "primary_class": "N",
+  "json_page": 460,
+  "column": "right",
+  "located_pages": [
+   460
+  ],
+  "normalized_form": "pîrakiripahki",
+  "phonetic_form": "[pii-rə-kí-rɪ-pəh-kɪ]",
+  "simplified": "pee-duh-KIH-dih-puhh-kih",
+  "gram": {
+   "grammatical_class": "N",
+   "verb_class": null,
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": 1,
+    "definition": "baby, infant, as from birth to one to two years of age.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "piira+kiripah- kis, little baby",
+   "constituent_elements": [
+    {
+     "morpheme": "piira",
+     "gloss": "baby",
+     "morpheme_type": null
+    },
+    {
+     "morpheme": "kiripahkis",
+     "gloss": "little",
+     "morpheme_type": null
+    }
+   ],
+   "literal_translation": "little baby"
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": null,
+   "form_2": null,
+   "form_3": null,
+   "form_4": null,
+   "form_5": null,
+   "additional_forms": []
+  },
+  "examples": []
+ },
+ {
+  "entry_id": "SK-kicka-p85-1602",
+  "headword": "kicka",
+  "primary_class": "N",
+  "json_page": 85,
+  "column": "right",
+  "located_pages": [
+   433
+  ],
+  "normalized_form": "kicka",
+  "phonetic_form": "[kíts-kə]",
+  "simplified": "KIHTS-kuh",
+  "gram": {
+   "grammatical_class": "N",
+   "verb_class": null,
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": 1,
+    "definition": "Arkansas River.",
+    "usage_notes": null
+   },
+   {
+    "number": 2,
+    "definition": "river.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "kic-+ka, be water in/on",
+   "constituent_elements": [
+    {
+     "morpheme": "kic-",
+     "gloss": null,
+     "morpheme_type": "root"
+    },
+    {
+     "morpheme": "ka",
+     "gloss": "be water in/on",
+     "morpheme_type": "root"
+    }
+   ],
+   "literal_translation": "be water in/on"
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": null,
+   "form_2": null,
+   "form_3": null,
+   "form_4": null,
+   "form_5": null,
+   "additional_forms": []
+  },
+  "examples": [
+   {
+    "skiri_text": "kicka wiitiraasiit",
+    "english_translation": "the river is frozen.",
+    "usage_context": null
+   }
+  ]
+ },
+ {
+  "entry_id": "SK-kackaapit-p75-1360",
+  "headword": "kackaapit",
+  "primary_class": "N",
+  "json_page": 75,
+  "column": "right",
+  "located_pages": [
+   423
+  ],
+  "normalized_form": "kackâpit",
+  "phonetic_form": "[kəts-kaá-pɪt]",
+  "simplified": "kuhts-KAH-piht",
+  "gram": {
+   "grammatical_class": "N",
+   "verb_class": null,
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": null,
+    "definition": "black pepper; bell pepper; chili pepper.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "kahc+kaapit, wart medicine",
+   "constituent_elements": [
+    {
+     "morpheme": "kahc",
+     "gloss": null,
+     "morpheme_type": null
+    },
+    {
+     "morpheme": "kaapit",
+     "gloss": null,
+     "morpheme_type": null
+    }
+   ],
+   "literal_translation": "wart medicine"
+  },
+  "cognates": [],
+  "paradigmatic": null,
+  "examples": [
+   {
+    "skiri_text": "kackaapitkat",
+    "english_translation": "in the pepper.",
+    "usage_context": null
+   },
+   {
+    "skiri_text": "kiʔisiraruuwaʔ kackaapit",
+    "english_translation": "pass (me) the pepper!",
+    "usage_context": null
+   }
+  ]
+ },
+ {
+  "entry_id": "SK-itkasaaruq-p69-1232",
+  "headword": "itkasaaruʔ",
+  "primary_class": "N",
+  "json_page": 69,
+  "column": "left",
+  "located_pages": [
+   417
+  ],
+  "normalized_form": "itkasâru'",
+  "phonetic_form": "[ít-kə-saa-rʊʔ]",
+  "simplified": "IHT-kuh-sah-doo'",
+  "gram": {
+   "grammatical_class": "N",
+   "verb_class": null,
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": 1,
+    "definition": "dream, state of dreaming.",
+    "usage_notes": null
+   },
+   {
+    "number": 2,
+    "definition": "sleep, state of sleep.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "<itkas+haar+uʔ, be in a sleeping state + NOM>",
+   "constituent_elements": [
+    {
+     "morpheme": "itkas",
+     "gloss": "be in a sleeping state",
+     "morpheme_type": "root"
+    },
+    {
+     "morpheme": "haar",
+     "gloss": "state",
+     "morpheme_type": "suffix"
+    },
+    {
+     "morpheme": "uʔ",
+     "gloss": "NOM",
+     "morpheme_type": "suffix"
+    }
+   ],
+   "literal_translation": null
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": null,
+   "form_2": null,
+   "form_3": null,
+   "form_4": null,
+   "form_5": null,
+   "additional_forms": []
+  },
+  "examples": [
+   {
+    "skiri_text": "itkasaaririʔ",
+    "english_translation": "in a dream or dream state.",
+    "usage_context": null
+   }
+  ]
+ },
+ {
+  "entry_id": "SK-haaruutuq-p36-0612",
+  "headword": "haaruutuʔ",
+  "primary_class": "N",
+  "json_page": 36,
+  "column": "left",
+  "located_pages": [
+   384
+  ],
+  "normalized_form": "hârûtu'",
+  "phonetic_form": "[haa-ruː-tʊʔ]",
+  "simplified": "hah-doo-too'",
+  "gram": {
+   "grammatical_class": "N",
+   "verb_class": null,
+   "additional_forms": [
+    {
+     "form_type": "comb.",
+     "form": "haarut-"
+    }
+   ]
+  },
+  "glosses": [
+   {
+    "number": null,
+    "definition": "dry native grass, formerly used as a floor cover; hay, as used for horse feed.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "<haarut+uʔ, grass + NOM>",
+   "constituent_elements": [
+    {
+     "morpheme": "haarut",
+     "gloss": "grass",
+     "morpheme_type": "root"
+    },
+    {
+     "morpheme": "uʔ",
+     "gloss": "NOM",
+     "morpheme_type": "suffix"
+    }
+   ],
+   "literal_translation": null
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": null,
+   "form_2": null,
+   "form_3": null,
+   "form_4": null,
+   "form_5": null,
+   "additional_forms": []
+  },
+  "examples": [
+   {
+    "skiri_text": "piiruus tirahkaa haarutkat",
+    "english_translation": "there are bugs in the hay.",
+    "usage_context": null
+   }
+  ]
+ },
+ {
+  "entry_id": "SK-piikawaa-p460-4081",
+  "headword": "piikawaa",
+  "primary_class": "N",
+  "json_page": 460,
+  "column": "left",
+  "located_pages": [
+   460
+  ],
+  "normalized_form": "pîkawâ",
+  "phonetic_form": null,
+  "simplified": null,
+  "gram": {
+   "grammatical_class": "N",
+   "verb_class": null,
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": 1,
+    "definition": "stallion; stud.",
+    "usage_notes": null
+   },
+   {
+    "number": 2,
+    "definition": "bull.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "piik+kaa.waa, testicles inside (the scrotum)",
+   "constituent_elements": [
+    {
+     "morpheme": "piik",
+     "gloss": "testicles",
+     "morpheme_type": null
+    },
+    {
+     "morpheme": "kaa.waa",
+     "gloss": "inside (the scrotum)",
+     "morpheme_type": null
+    }
+   ],
+   "literal_translation": "testicles inside (the scrotum)"
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": null,
+   "form_2": null,
+   "form_3": null,
+   "form_4": null,
+   "form_5": null,
+   "additional_forms": []
+  },
+  "examples": [
+   {
+    "skiri_text": "piikawaakat",
+    "english_translation": "among the bulls, stallions.",
+    "usage_context": null
+   }
+  ]
+ },
+ {
+  "entry_id": "SK-ckipispahat-p30-0482",
+  "headword": "ckipispahat",
+  "primary_class": "N",
+  "json_page": 30,
+  "column": "right",
+  "located_pages": [
+   378
+  ],
+  "normalized_form": "ckipispahat",
+  "phonetic_form": "[tskí-pɪs-pə-hət]",
+  "simplified": "TSKIH-pihs-puh-huht",
+  "gram": {
+   "grammatical_class": "N",
+   "verb_class": null,
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": null,
+    "definition": "red squirrel, fox squirrel (Sciurus niger).",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "ckipis+pahaat, red squirrel",
+   "constituent_elements": [
+    {
+     "morpheme": "ckipis",
+     "gloss": "squirrel",
+     "morpheme_type": "root"
+    },
+    {
+     "morpheme": "pahaat",
+     "gloss": "red",
+     "morpheme_type": "root"
+    }
+   ],
+   "literal_translation": "red squirrel"
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": null,
+   "form_2": null,
+   "form_3": null,
+   "form_4": null,
+   "form_5": null,
+   "additional_forms": []
+  },
+  "examples": []
+ },
+ {
+  "entry_id": "SK-awihuksahustahkata-p370-3791",
+  "headword": "awihuksahustahkata",
+  "primary_class": "N",
+  "json_page": 370,
+  "column": "right",
+  "located_pages": [
+   370
+  ],
+  "normalized_form": "awihuksahustahkata",
+  "phonetic_form": "[à-wɪ-hʊk-sə-hʊs-təh-kə-tə]",
+  "simplified": "UH-wih-hook-suh-hoos-tuhh-kuh-tuh",
+  "gram": {
+   "grammatical_class": "N",
+   "verb_class": null,
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": 1,
+    "definition": "baking soda.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "<awihuksahus+rahkataar, yellow baking powder, so called because it became yellow when mixed with water>",
+   "constituent_elements": [
+    {
+     "morpheme": "awihuksahus",
+     "gloss": "baking powder",
+     "morpheme_type": "root"
+    },
+    {
+     "morpheme": "rahkataar",
+     "gloss": "yellow",
+     "morpheme_type": "root"
+    }
+   ],
+   "literal_translation": "yellow baking powder, so called because it became yellow when mixed with water"
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": null,
+   "form_2": null,
+   "form_3": null,
+   "form_4": null,
+   "form_5": null,
+   "additional_forms": []
+  },
+  "examples": []
+ },
+ {
+  "entry_id": "SK-piirakariq-p460-4090",
+  "headword": "piirakariʔ",
+  "primary_class": "N",
+  "json_page": 460,
+  "column": "right",
+  "located_pages": [
+   460
+  ],
+  "normalized_form": "pîrakari'",
+  "phonetic_form": "[pii-rà-kə-riʔ]",
+  "simplified": "pee-DUH-kuh-dih'",
+  "gram": {
+   "grammatical_class": "N",
+   "verb_class": null,
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": 1,
+    "definition": "false indigo, plains wild indigo, black rattlepod (Baptisia bracteata).",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "piira- +kari, many babies; ref. to the numerous seed pods; cf. kacpiirakariʔ sorrel",
+   "constituent_elements": [
+    {
+     "morpheme": "piira-",
+     "gloss": "babies",
+     "morpheme_type": null
+    },
+    {
+     "morpheme": "kari",
+     "gloss": "many",
+     "morpheme_type": null
+    }
+   ],
+   "literal_translation": "many babies"
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": null,
+   "form_2": null,
+   "form_3": null,
+   "form_4": null,
+   "form_5": null,
+   "additional_forms": []
+  },
+  "examples": []
+ },
+ {
+  "entry_id": "SK-rucaakawihu-p148-2866",
+  "headword": "rucaakawihu",
+  "primary_class": "N",
+  "json_page": 148,
+  "column": "left",
+  "located_pages": [
+   496
+  ],
+  "normalized_form": "ručâkawihu",
+  "phonetic_form": "[rʊ-čaa-kà-wɪ-hʊ]",
+  "simplified": "doo-chah-KUH-wih-hoo",
+  "gram": {
+   "grammatical_class": "N",
+   "verb_class": null,
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": null,
+    "definition": "stopper, cork.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "ra+caaka.wi (ut...)+hus, the one that sticks out",
+   "constituent_elements": [
+    {
+     "morpheme": "ra",
+     "gloss": null,
+     "morpheme_type": "prefix"
+    },
+    {
+     "morpheme": "caaka.wi (ut...)",
+     "gloss": "sticks out",
+     "morpheme_type": "root"
+    },
+    {
+     "morpheme": "hus",
+     "gloss": "the one that",
+     "morpheme_type": "suffix"
+    }
+   ],
+   "literal_translation": "the one that sticks out"
+  },
+  "cognates": [],
+  "paradigmatic": null,
+  "examples": []
+ },
+ {
+  "entry_id": "SK-cikic-p29-0438",
+  "headword": "cikic",
+  "primary_class": "N",
+  "json_page": 29,
+  "column": "left",
+  "located_pages": [
+   377
+  ],
+  "normalized_form": "cikic",
+  "phonetic_form": "[čí-kɪts]",
+  "simplified": "CHIH-kihts",
+  "gram": {
+   "grammatical_class": "N, ADJ",
+   "verb_class": null,
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": null,
+    "definition": "itch; itchy.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": null,
+  "cognates": [],
+  "paradigmatic": null,
+  "examples": [
+   {
+    "skiri_text": "tatuuʔut cikic",
+    "english_translation": "I am itchy."
+   },
+   {
+    "skiri_text": "tuuʔut cikic",
+    "english_translation": "he is itchy."
+   }
+  ]
+ },
+ {
+  "entry_id": "SK-taraquks-p159-3109",
+  "headword": "taraʔuks",
+  "primary_class": "N",
+  "json_page": 159,
+  "column": "left",
+  "located_pages": [
+   507
+  ],
+  "normalized_form": "tara'uks",
+  "phonetic_form": "[tə-rà-ʔuks]",
+  "simplified": "tuh-DUH-'ooks",
+  "gram": {
+   "grammatical_class": "N",
+   "verb_class": null,
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": null,
+    "definition": "scissors.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "taraʔuk.his, cut + PERF",
+   "constituent_elements": [
+    {
+     "morpheme": "taraʔuk.his",
+     "gloss": "cut",
+     "morpheme_type": "root"
+    }
+   ],
+   "literal_translation": null
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": null,
+   "form_2": null,
+   "form_3": null,
+   "form_4": null,
+   "form_5": null,
+   "additional_forms": []
+  },
+  "examples": [
+   {
+    "skiri_text": "taruuksiriʔ, taraʔuksiriʔ",
+    "english_translation": "with the scissors.",
+    "usage_context": null
+   },
+   {
+    "skiri_text": "taraʔuks ririiruuc",
+    "english_translation": "there are the scissors.",
+    "usage_context": null
+   }
+  ]
+ },
+ {
+  "entry_id": "SK-raaqiitusuq-p115-2242",
+  "headword": "raaʔiitusuʔ",
+  "primary_class": "N",
+  "json_page": 115,
+  "column": "right",
+  "located_pages": [
+   463
+  ],
+  "normalized_form": "râ'îtusu'",
+  "phonetic_form": "[raa-ʔií-tʊ-sʊʔ]",
+  "simplified": "dah-'EE-too-soo'",
+  "gram": {
+   "grammatical_class": "N",
+   "verb_class": null,
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": 1,
+    "definition": "word, words.",
+    "usage_notes": null
+   },
+   {
+    "number": 2,
+    "definition": "story, account, narrative.",
+    "usage_notes": null
+   },
+   {
+    "number": 3,
+    "definition": "news.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "raa.iitus+uʔ, be a story + NOM",
+   "constituent_elements": [
+    {
+     "morpheme": "raa.iitus",
+     "gloss": "be a story",
+     "morpheme_type": null
+    },
+    {
+     "morpheme": "uʔ",
+     "gloss": "NOM",
+     "morpheme_type": "suffix"
+    }
+   ],
+   "literal_translation": null
+  },
+  "cognates": [],
+  "paradigmatic": null,
+  "examples": [
+   {
+    "skiri_text": "taraaʔiitustaaʔ",
+    "english_translation": "he brought word.",
+    "usage_context": null
+   }
+  ]
+ },
+ {
+  "entry_id": "SK-askuraaquq-p16-0177",
+  "headword": "askuraaʔuʔ",
+  "primary_class": "N",
+  "json_page": 16,
+  "column": "right",
+  "located_pages": [
+   364
+  ],
+  "normalized_form": "askurâ'u'",
+  "phonetic_form": "[əs-kʊ-raa-ʔuʔ]",
+  "simplified": "uhs-koo-dah-'oo'",
+  "gram": {
+   "grammatical_class": "N",
+   "verb_class": null,
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": null,
+    "definition": "same, same thing; same way.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "asku+raa+uʔ, one way + NOM",
+   "constituent_elements": [
+    {
+     "morpheme": "asku",
+     "gloss": "one",
+     "morpheme_type": "root"
+    },
+    {
+     "morpheme": "raa",
+     "gloss": "way",
+     "morpheme_type": "root"
+    },
+    {
+     "morpheme": "uʔ",
+     "gloss": "NOM",
+     "morpheme_type": "suffix"
+    }
+   ],
+   "literal_translation": "one way"
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": null,
+   "form_2": null,
+   "form_3": null,
+   "form_4": null,
+   "form_5": null,
+   "additional_forms": []
+  },
+  "examples": []
+ },
+ {
+  "entry_id": "SK-askiiskatawicaku-p16-0168",
+  "headword": "askiiskatawicaku",
+  "primary_class": "N",
+  "json_page": 16,
+  "column": "right",
+  "located_pages": [
+   364
+  ],
+  "normalized_form": "askîskatawičaku",
+  "phonetic_form": "[às-kiis-kə-tə-wɪ-čə-kʊ]",
+  "simplified": "UHS-kees-kuh-tuh-wih-chuh-koo",
+  "gram": {
+   "grammatical_class": "N",
+   "verb_class": null,
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": null,
+    "definition": "flesher, made from the shaft of a buffalo tibia with a serrated end, used for removing bits of flesh and fat adhering to hides .",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "as.kiis+katawi.cak.hus, leg bone scraper",
+   "constituent_elements": [
+    {
+     "morpheme": "as.kiis",
+     "gloss": "leg bone",
+     "morpheme_type": "root"
+    },
+    {
+     "morpheme": "katawi.cak",
+     "gloss": "scraper",
+     "morpheme_type": "root"
+    },
+    {
+     "morpheme": "hus",
+     "gloss": null,
+     "morpheme_type": "suffix"
+    }
+   ],
+   "literal_translation": "leg bone scraper"
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": null,
+   "form_2": null,
+   "form_3": null,
+   "form_4": null,
+   "form_5": null,
+   "additional_forms": []
+  },
+  "examples": []
+ },
+ {
+  "entry_id": "SK-haaskiica-p36-0615",
+  "headword": "haaskiica",
+  "primary_class": "VT",
+  "json_page": 36,
+  "column": "left",
+  "located_pages": [
+   384
+  ],
+  "normalized_form": "hâskîča",
+  "phonetic_form": "[•haas-kii-čə•]",
+  "simplified": "hahs-kee-chuh",
+  "gram": {
+   "grammatical_class": "VT",
+   "verb_class": "(wi)",
+   "additional_forms": [
+    {
+     "form_type": "pl. obj.",
+     "form": "haastahkiica (ir...ut...)"
+    }
+   ]
+  },
+  "glosses": [
+   {
+    "number": 1,
+    "definition": "have a string around one's neck, as a string of beads, a necklace, or a collar; have a chain around one's neck.",
+    "usage_notes": null
+   },
+   {
+    "number": 2,
+    "definition": "have a rope around the neck, as an animal.",
+    "usage_notes": null
+   },
+   {
+    "number": 3,
+    "definition": "be wearing a necktie, have a necktie on; wear a rolled kerchief around the neck.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "<haas+kiic.a (ir ...ut...), wear a string around the neck>",
+   "constituent_elements": [
+    {
+     "morpheme": "haas",
+     "gloss": "string",
+     "morpheme_type": "root"
+    },
+    {
+     "morpheme": "kiic.a",
+     "gloss": "wear around neck",
+     "morpheme_type": "verb"
+    },
+    {
+     "morpheme": "(ir ...ut...)",
+     "gloss": null,
+     "morpheme_type": "preverb"
+    }
+   ],
+   "literal_translation": "wear a string around the neck"
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": "tatiitaaskiica",
+   "form_2": "tuutaaskiica",
+   "form_3": null,
+   "form_4": "iriruutaaskiicawi",
+   "form_5": "tuutaaskiicawista"
+  },
+  "examples": []
+ },
+ {
+  "entry_id": "SK-kaatiiwiquskaraquk-p74-1331",
+  "headword": "kaatiiwiʔuskaraʔuk",
+  "primary_class": "VT",
+  "json_page": 74,
+  "column": "right",
+  "located_pages": [
+   422
+  ],
+  "normalized_form": "kâtîwi'uskara'uk",
+  "phonetic_form": "[•kaa-tii-wi-ʔus-kə-rə-ʔu{k/t}•]",
+  "simplified": "kah-tee-wih-'oos-kuh-duh-'oo",
+  "gram": {
+   "grammatical_class": "VT",
+   "verb_class": "(3)",
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": null,
+    "definition": "cuss out, swear at; revile, rail at.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "kaatiiwiʔus+ka.raʔuk, kaatiiwiʔus + ITER + make",
+   "constituent_elements": [
+    {
+     "morpheme": "kaatiiwiʔus",
+     "gloss": "kaatiiwiʔus",
+     "morpheme_type": "root"
+    },
+    {
+     "morpheme": "ka.raʔuk",
+     "gloss": "ITER + make",
+     "morpheme_type": "suffix"
+    }
+   ],
+   "literal_translation": null
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": "tatkaatiiwiʔuskaruʔ",
+   "form_2": "tikaatiiwiʔuskaruʔ",
+   "form_3": "tikaatiiwiʔuskaruukuʔ",
+   "form_4": "iriirakaatiiwiʔuskaraʔu",
+   "form_5": "tikaatiiwuuskaruuksta",
+   "additional_forms": []
+  },
+  "examples": []
+ },
+ {
+  "entry_id": "SK-karihk-p78-1428",
+  "headword": "karihk",
+  "primary_class": "VT",
+  "json_page": 78,
+  "column": "left",
+  "located_pages": [
+   426
+  ],
+  "normalized_form": "karihk",
+  "phonetic_form": "[•kə-rɪ(h){k/t}•]",
+  "simplified": "kuh-dihh",
+  "gram": {
+   "grammatical_class": "VT",
+   "verb_class": "(1)",
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": null,
+    "definition": "count coup on.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": null,
+   "constituent_elements": [],
+   "literal_translation": null
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": "tatkarit",
+   "form_2": "tikarit",
+   "form_3": "tikarihkuʔ",
+   "form_4": "iriirakarihka",
+   "form_5": "tikarihkista",
+   "additional_forms": []
+  },
+  "examples": [
+   {
+    "skiri_text": "Tiiktiisaahkarihkuʔ",
+    "english_translation": "He Is Counting Coups On The Chiefs, (personal name).",
+    "usage_context": null
+   }
+  ]
+ },
+ {
+  "entry_id": "SK-ripihaahpiru-p145-2827",
+  "headword": "ripihaahpiru",
+  "primary_class": "VT",
+  "json_page": 145,
+  "column": "right",
+  "located_pages": [
+   493
+  ],
+  "normalized_form": "ripihâhpiru",
+  "phonetic_form": "[•rɪ-pɪ-haah-pɪ-rʊ•]",
+  "simplified": "dih-pih-hahh-pih-doo",
+  "gram": {
+   "grammatical_class": "VT",
+   "verb_class": "(4)",
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": null,
+    "definition": "spank.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "ri-piit+raar+piru, whip the buttocks",
+   "constituent_elements": [
+    {
+     "morpheme": "ripiit",
+     "gloss": "buttocks",
+     "morpheme_type": null
+    },
+    {
+     "morpheme": "raar",
+     "gloss": "the",
+     "morpheme_type": null
+    },
+    {
+     "morpheme": "piru",
+     "gloss": "whip",
+     "morpheme_type": null
+    }
+   ],
+   "literal_translation": "whip the buttocks"
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": "tahipihaahpiruʔ",
+   "form_2": "tiripihaahpiruʔ",
+   "form_3": null,
+   "form_4": "iriiraripi-haahpiru",
+   "form_5": "tiripihaahpirusta",
+   "additional_forms": []
+  },
+  "examples": []
+ },
+ {
+  "entry_id": "SK-tiirahk-p165-3245",
+  "headword": "tiirahk",
+  "primary_class": "VT",
+  "json_page": 165,
+  "column": "left",
+  "located_pages": [
+   513
+  ],
+  "normalized_form": "tîrahk",
+  "phonetic_form": "[•tii-rə(h){k/t}•]",
+  "simplified": "tee-duhh",
+  "gram": {
+   "grammatical_class": "VT",
+   "verb_class": "(wi)",
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": null,
+    "definition": "be around, encircling, as people around a person.",
+    "usage_notes": "(pl. subj.)"
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "<ut+tiirahk, TRANS + be around on the side of >",
+   "constituent_elements": [
+    {
+     "morpheme": "ut",
+     "gloss": "TRANS",
+     "morpheme_type": "prefix"
+    },
+    {
+     "morpheme": "tiirahk",
+     "gloss": "be around on the side of",
+     "morpheme_type": "root"
+    }
+   ],
+   "literal_translation": null
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": null,
+   "form_2": "tuuhaciirat",
+   "form_3": null,
+   "form_4": "iriruuhaciirahpi",
+   "form_5": "tuuhaciirahpista",
+   "additional_forms": []
+  },
+  "examples": []
+ },
+ {
+  "entry_id": "SK-asuuktik-p18-0215",
+  "headword": "asuuktik",
+  "primary_class": "VT",
+  "json_page": 18,
+  "column": "right",
+  "located_pages": [
+   366
+  ],
+  "normalized_form": "asûktik",
+  "phonetic_form": "[•ə-suuk-tɪ{k/t}•]",
+  "simplified": "uh-sook-tih",
+  "gram": {
+   "grammatical_class": "VT, VR",
+   "verb_class": "(1)",
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": null,
+    "definition": "put footwear on, put moccasins on; put shoes on.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "<asuuk-+rik, cause foot to be covered>",
+   "constituent_elements": [
+    {
+     "morpheme": "asuuk-",
+     "gloss": null,
+     "morpheme_type": null
+    },
+    {
+     "morpheme": "rik",
+     "gloss": null,
+     "morpheme_type": null
+    }
+   ],
+   "literal_translation": "cause foot to be covered"
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": "taatasuuktit; wititaatasuuktit",
+   "form_2": "tiisuuktit; wititiisuuktit",
+   "form_3": "tiisuuktiikuʔ; wititiisuuktiikuʔ",
+   "form_4": "iriiriirasuuktika; iriiwitiriirasuuktika",
+   "form_5": "tiisuuktiksta; wititiisuuktiksta",
+   "additional_forms": []
+  },
+  "examples": [
+   {
+    "skiri_text": "wititiirasuuktikuʔ",
+    "english_translation": "they are putting their shoes on.",
+    "usage_context": null
+   }
+  ]
+ },
+ {
+  "entry_id": "SK-takacat-p157-3066",
+  "headword": "takacat",
+  "primary_class": "VT",
+  "json_page": 157,
+  "column": "left",
+  "located_pages": [
+   505
+  ],
+  "normalized_form": "takačat",
+  "phonetic_form": "[•tə-kə-čət•]",
+  "simplified": "tuh-kuh-chuht",
+  "gram": {
+   "grammatical_class": "VT",
+   "verb_class": "(1)",
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": null,
+    "definition": "go to a stream to get water, to fetch water; go to a stream for water.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "takac+at, go to a stream to fetch water",
+   "constituent_elements": [
+    {
+     "morpheme": "takac",
+     "gloss": "go to a stream to fetch water",
+     "morpheme_type": "root"
+    },
+    {
+     "morpheme": "at",
+     "gloss": null,
+     "morpheme_type": "suffix"
+    }
+   ],
+   "literal_translation": "go to a stream to fetch water"
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": "tactakacat",
+   "form_2": "titakacat",
+   "form_3": "titakacpuuʔ",
+   "form_4": "iriiratakacata",
+   "form_5": "titakacuhta",
+   "additional_forms": [
+    {
+     "form": "tihtakacat",
+     "description": "they went to get water."
+    }
+   ]
+  },
+  "examples": []
+ },
+ {
+  "entry_id": "SK-iripiitik-p67-1179",
+  "headword": "iripiitik",
+  "primary_class": "VT",
+  "json_page": 67,
+  "column": "left",
+  "located_pages": [
+   415
+  ],
+  "normalized_form": "iripîtik",
+  "phonetic_form": "[•ɪ-rɪ-pii-tɪ{k/t}•]",
+  "simplified": "ih-dih-pee-tih",
+  "gram": {
+   "grammatical_class": "VT",
+   "verb_class": "(4)",
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": 1,
+    "definition": "turn on its side.",
+    "usage_notes": null
+   },
+   {
+    "number": 2,
+    "definition": "turn over, turn upside down, as a box.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "irik+wiitik, perh. settle face downward",
+   "constituent_elements": [
+    {
+     "morpheme": "irik",
+     "gloss": null,
+     "morpheme_type": null
+    },
+    {
+     "morpheme": "wiitik",
+     "gloss": null,
+     "morpheme_type": null
+    }
+   ],
+   "literal_translation": "perh. settle face downward"
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": "taatiripiitit",
+   "form_2": "tiiripiitit",
+   "form_3": "tiiripiitikuʔ",
+   "form_4": "iriiraaripiitit",
+   "form_5": "tiiripiitiksta",
+   "additional_forms": []
+  },
+  "examples": [
+   {
+    "skiri_text": "tiraariripiitit",
+    "english_translation": "they turned it upside down.",
+    "usage_context": null
+   }
+  ]
+ },
+ {
+  "entry_id": "SK-hiiwiik-p390-3857",
+  "headword": "hiiwiik",
+  "primary_class": "VT",
+  "json_page": 390,
+  "column": "left",
+  "located_pages": [
+   390
+  ],
+  "normalized_form": "hîwîk",
+  "phonetic_form": "[•hii-wii{k/t}•]",
+  "simplified": "hee-wee",
+  "gram": {
+   "grammatical_class": "VT",
+   "verb_class": "(1)",
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": null,
+    "definition": "chop weeds, grass; hoe weeds, grass.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "<hii(r)+wiik, dig up/extract grass>",
+   "constituent_elements": [
+    {
+     "morpheme": "hii(r)",
+     "gloss": "grass",
+     "morpheme_type": "root"
+    },
+    {
+     "morpheme": "wiik",
+     "gloss": "dig up/extract",
+     "morpheme_type": "root"
+    }
+   ],
+   "literal_translation": null
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": "tatiiwiit",
+   "form_2": "tihiiwiit",
+   "form_3": "tihiiwiikuʔ",
+   "form_4": "iriirahiiwiika",
+   "form_5": "tihiiwiksta",
+   "additional_forms": []
+  },
+  "examples": []
+ },
+ {
+  "entry_id": "SK-haturaahkaritihit-p387-3803",
+  "headword": "haturaahkaritihit",
+  "primary_class": "VI",
+  "json_page": 387,
+  "column": "left",
+  "located_pages": [
+   387
+  ],
+  "normalized_form": "haturâhkaritihit",
+  "phonetic_form": "[•hə-tʊ-raah-kə-rɪ-tɪ-hɪt•]",
+  "simplified": "huh-too-dahh-kuh-dih-tih-hiht",
+  "gram": {
+   "grammatical_class": "VI",
+   "verb_class": "(4)",
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": null,
+    "definition": "road to be paved; be a paved road.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "<haturaar+karit+hihit, be a road (with) rock spread out >",
+   "constituent_elements": [
+    {
+     "morpheme": "haturaar",
+     "gloss": "road",
+     "morpheme_type": null
+    },
+    {
+     "morpheme": "karit",
+     "gloss": "rock",
+     "morpheme_type": null
+    },
+    {
+     "morpheme": "hihit",
+     "gloss": "spread out",
+     "morpheme_type": null
+    }
+   ],
+   "literal_translation": "be a road (with) rock spread out"
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": null,
+   "form_2": "tihaturaahkaritihit",
+   "form_3": null,
+   "form_4": "iriirahaturaahkaritihit",
+   "form_5": "tihaturaahkaritihitista",
+   "additional_forms": []
+  },
+  "examples": []
+ },
+ {
+  "entry_id": "SK-piiriitik-p460-4102",
+  "headword": "piiriitik",
+  "primary_class": "VI",
+  "json_page": 460,
+  "column": "right",
+  "located_pages": [
+   460
+  ],
+  "normalized_form": "pîrîtik",
+  "phonetic_form": "[•pii-rii-tɪ{k/t}•]",
+  "simplified": "pee-dee-tih",
+  "gram": {
+   "grammatical_class": "VI",
+   "verb_class": "(4)",
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": 1,
+    "definition": "bend over, stoop over.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "piira (ut...)+itik, get in a vertically flexed position",
+   "constituent_elements": [
+    {
+     "morpheme": "piira (ut...)",
+     "gloss": "in a vertically flexed position",
+     "morpheme_type": null
+    },
+    {
+     "morpheme": "itik",
+     "gloss": "get",
+     "morpheme_type": null
+    }
+   ],
+   "literal_translation": "get in a vertically flexed position"
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": "tatutpiiriitit",
+   "form_2": "tutpiiriitit",
+   "form_3": "tutpiiriitikuʔ",
+   "form_4": "iriirut-piiriitit",
+   "form_5": "tutpiiriitiksta",
+   "additional_forms": []
+  },
+  "examples": []
+ },
+ {
+  "entry_id": "SK-uqat-p167-3296",
+  "headword": "uʔat",
+  "primary_class": "VI",
+  "json_page": 167,
+  "column": "left",
+  "located_pages": [
+   515
+  ],
+  "normalized_form": "u'at",
+  "phonetic_form": "[•u-ʔət•]",
+  "simplified": "oo-'uht",
+  "gram": {
+   "grammatical_class": "VI",
+   "verb_class": "(1)",
+   "additional_forms": [
+    {
+     "form_type": "impf.",
+     "form": "awuu"
+    },
+    {
+     "form_type": "dist.",
+     "form": "awarii"
+    }
+   ]
+  },
+  "glosses": [
+   {
+    "number": 1,
+    "definition": "fly in a line; fly over; fly by; fly off",
+    "usage_notes": "as a bird or an airplane."
+   },
+   {
+    "number": 2,
+    "definition": "extend, go in a straight line; be a streak",
+    "usage_notes": "as across the sky or an object."
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "<u+at, go in a line>",
+   "constituent_elements": [
+    {
+     "morpheme": "u",
+     "gloss": "in a line",
+     "morpheme_type": "prefix"
+    },
+    {
+     "morpheme": "at",
+     "gloss": "go",
+     "morpheme_type": "root"
+    }
+   ],
+   "literal_translation": "go in a line"
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": null,
+   "form_2": "tiiʔat",
+   "form_3": "tiiwuuʔ",
+   "form_4": "iriruuʔata",
+   "form_5": "tiihuhta",
+   "additional_forms": []
+  },
+  "examples": [
+   {
+    "skiri_text": "• tiraaruʔat",
+    "english_translation": "they flew away.",
+    "usage_context": null
+   }
+  ]
+ },
+ {
+  "entry_id": "SK-raakiiskawaah-p119-2327",
+  "headword": "raakiiskawaah",
+  "primary_class": "VI",
+  "json_page": 119,
+  "column": "right",
+  "located_pages": [
+   467
+  ],
+  "normalized_form": "râkîskawâh",
+  "phonetic_form": "[•raa-kiis-kə-waa(h)•]",
+  "simplified": "dah-kees-kuh-wahh",
+  "gram": {
+   "grammatical_class": "VI",
+   "verb_class": "(1-i)",
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": 1,
+    "definition": "become lively, as a celebration.",
+    "usage_notes": null
+   },
+   {
+    "number": 2,
+    "definition": "celebrate, enjoy oneselves, as a group at a social event.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "<raa+kiiskawaah, way to become lively>",
+   "constituent_elements": [
+    {
+     "morpheme": "raa",
+     "gloss": "way",
+     "morpheme_type": "prefix"
+    },
+    {
+     "morpheme": "kiiskawaah",
+     "gloss": "to become lively",
+     "morpheme_type": "root"
+    }
+   ],
+   "literal_translation": "way to become lively"
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": null,
+   "form_2": "tiraakiiskawaa",
+   "form_3": "tiraakiiskawaahiʔ",
+   "form_4": "iriiraraakiiskawaaha",
+   "form_5": "tiraakiiskawaahista",
+   "additional_forms": []
+  },
+  "examples": []
+ },
+ {
+  "entry_id": "SK-iriwaawarik-p67-1192",
+  "headword": "iriwaawarik",
+  "primary_class": "VI",
+  "json_page": 67,
+  "column": "right",
+  "located_pages": [
+   415
+  ],
+  "normalized_form": "iriwâwarik",
+  "phonetic_form": "[•ɪ-rɪ-waa-wə-rɪ{k/t}•]",
+  "simplified": "ih-dih-wah-wuh-dih",
+  "gram": {
+   "grammatical_class": "VI",
+   "verb_class": "(1)",
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": null,
+    "definition": "roll, as on the ground when playing.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "iri+waa.warik, cause to go iteratively in a reclined/horizontal position",
+   "constituent_elements": [
+    {
+     "morpheme": "iri",
+     "gloss": null,
+     "morpheme_type": null
+    },
+    {
+     "morpheme": "waa.warik",
+     "gloss": null,
+     "morpheme_type": null
+    }
+   ],
+   "literal_translation": "cause to go iteratively in a reclined/horizontal position"
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": "taatiriwaawarit",
+   "form_2": "tiiriwaawarit",
+   "form_3": "tiiriwaawarikuʔ",
+   "form_4": "iriiraariwaawarika",
+   "form_5": "tiiriwaawariksta",
+   "additional_forms": []
+  },
+  "examples": []
+ },
+ {
+  "entry_id": "SK-raawiquusik-p127-2484",
+  "headword": "raawiʔuusik",
+  "primary_class": "VI",
+  "json_page": 127,
+  "column": "left",
+  "located_pages": [
+   475
+  ],
+  "normalized_form": "râwi'ûsik",
+  "phonetic_form": "[•raa-wi-ʔuu-sɪ{k/t}•]",
+  "simplified": "dah-wih-'oo-sih",
+  "gram": {
+   "grammatical_class": "VI",
+   "verb_class": "(4)",
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": 1,
+    "definition": "stop, end, cease , as an activity .",
+    "usage_notes": null
+   },
+   {
+    "number": 2,
+    "definition": "quiet down, subside, as an activity or a sound .",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "raa+awi.uusik (uur...), a way to cease",
+   "constituent_elements": [],
+   "literal_translation": "a way to cease"
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": null,
+   "form_2": "turaawiʔuusit",
+   "form_3": "turaawiʔuusiikuʔ",
+   "form_4": "iriiruraawiʔuusit",
+   "form_5": "turaawiʔuusiksta",
+   "additional_forms": []
+  },
+  "examples": []
+ },
+ {
+  "entry_id": "SK-wakuhkiriwis-p176-3483",
+  "headword": "wakuhkiriwis",
+  "primary_class": "VI",
+  "json_page": 176,
+  "column": "left",
+  "located_pages": [
+   524
+  ],
+  "normalized_form": "wakuhkiriwis",
+  "phonetic_form": "[•wə-kʊh-kɪ-rɪ-wɪs•]",
+  "simplified": "wuh-kooh-kih-dih-wihs",
+  "gram": {
+   "grammatical_class": "VI",
+   "verb_class": "(4)",
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": null,
+    "definition": "be devious, deceptive in one's speech.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "<wakur+kiriwis, be deceptive speech>",
+   "constituent_elements": [
+    {
+     "morpheme": "wakur",
+     "gloss": "speech",
+     "morpheme_type": "root"
+    },
+    {
+     "morpheme": "kiriwis",
+     "gloss": "be deceptive",
+     "morpheme_type": "root"
+    }
+   ],
+   "literal_translation": "be deceptive speech"
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": "tatpakuhkiriwis",
+   "form_2": "tiwakuhkiriwis",
+   "form_3": "tiwakuhkiriwiisuʔ",
+   "form_4": "iriirawakuhkiriwis",
+   "form_5": "tiwakuhkiriwisista",
+   "additional_forms": []
+  },
+  "examples": []
+ },
+ {
+  "entry_id": "SK-karitihit-p78-1441",
+  "headword": "karitihit",
+  "primary_class": "VI",
+  "json_page": 78,
+  "column": "right",
+  "located_pages": [
+   426
+  ],
+  "normalized_form": "karitihit",
+  "phonetic_form": "[•kə-rɪ-tɪ-hɪt•]",
+  "simplified": "kuh-dih-tih-hiht",
+  "gram": {
+   "grammatical_class": "VI",
+   "verb_class": "(4)",
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": null,
+    "definition": "be paved, as a road; be pavement.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "<karit+hihit, rock to be spread out >",
+   "constituent_elements": [
+    {
+     "morpheme": "karit",
+     "gloss": "rock",
+     "morpheme_type": "root"
+    },
+    {
+     "morpheme": "hihit",
+     "gloss": "to be spread out",
+     "morpheme_type": "root"
+    }
+   ],
+   "literal_translation": "rock to be spread out"
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": null,
+   "form_2": "tikaritihit",
+   "form_3": null,
+   "form_4": "iriirakaritihit",
+   "form_5": "tikaritihitista",
+   "additional_forms": []
+  },
+  "examples": []
+ },
+ {
+  "entry_id": "SK-kicuucis-p436-3958",
+  "headword": "kicuucis",
+  "primary_class": "VD",
+  "json_page": 436,
+  "column": "right",
+  "located_pages": [
+   436
+  ],
+  "normalized_form": "kičûčis",
+  "phonetic_form": "[•kɪ-čuu-čɪs•]",
+  "simplified": "kih-choo-chihs",
+  "gram": {
+   "grammatical_class": "VD",
+   "verb_class": null,
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": null,
+    "definition": "be thick; be dense.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "<i.q. SB kicuucis, Ar. čituusió>",
+   "constituent_elements": [],
+   "literal_translation": null
+  },
+  "cognates": [
+   {
+    "language": "SB",
+    "form": "kicuucis",
+    "gloss": null
+   },
+   {
+    "language": "Ar",
+    "form": "čituusió",
+    "gloss": null
+   }
+  ],
+  "paradigmatic": {
+   "form_1": null,
+   "form_2": "tikicuucis",
+   "form_3": null,
+   "form_4": "iriirakicuucisu",
+   "form_5": "tikicuucisuksta",
+   "additional_forms": []
+  },
+  "examples": []
+ },
+ {
+  "entry_id": "SK-wiruuhuur-p528-4272",
+  "headword": "wiruuhuur",
+  "primary_class": "VD",
+  "json_page": 528,
+  "column": "right",
+  "located_pages": [
+   528
+  ],
+  "normalized_form": "wirûhûr",
+  "phonetic_form": "[•wɪ-ruu-huu(r)•]",
+  "simplified": "wih-doo-hood",
+  "gram": {
+   "grammatical_class": "VD",
+   "verb_class": null,
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": 1,
+    "definition": "be determined, as to have one's own way; stand one's ground.",
+    "usage_notes": null
+   },
+   {
+    "number": 2,
+    "definition": "be stubborn, bullheaded.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "<wiruu+huur, wiruu + have the quality of>",
+   "constituent_elements": [
+    {
+     "morpheme": "wiruu",
+     "gloss": null,
+     "morpheme_type": "preverb"
+    },
+    {
+     "morpheme": "huur",
+     "gloss": "have the quality of",
+     "morpheme_type": "suffix"
+    }
+   ],
+   "literal_translation": null
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": "tatpiruuhuuʔ",
+   "form_2": "tiwiruuhuuʔ",
+   "form_3": null,
+   "form_4": "iriirawiruuhuuru",
+   "form_5": "tiwiruuhuuruksta",
+   "additional_forms": []
+  },
+  "examples": []
+ },
+ {
+  "entry_id": "SK-acikstaraa-p7-0053",
+  "headword": "acikstaraa",
+  "primary_class": "VD",
+  "json_page": 7,
+  "column": "left",
+  "located_pages": [
+   355
+  ],
+  "normalized_form": "ačikstarâ",
+  "phonetic_form": "[•ə-čɪks-tə-raa•]",
+  "simplified": "uh-chihks-tuh-dah",
+  "gram": {
+   "grammatical_class": "VD",
+   "verb_class": null,
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": null,
+    "definition": "be uncertain, unsure; be in doubt; be undecided",
+    "usage_notes": "as what to do."
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "aciks+taraa, have twin thoughts, be twin-minded",
+   "constituent_elements": [
+    {
+     "morpheme": "aciks",
+     "gloss": "thoughts",
+     "morpheme_type": "root"
+    },
+    {
+     "morpheme": "taraa",
+     "gloss": "have twin",
+     "morpheme_type": "root"
+    }
+   ],
+   "literal_translation": "have twin thoughts, be twin-minded"
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": "taatacikstaraaʔ",
+   "form_2": "tiicikstaraaʔ",
+   "form_3": null,
+   "form_4": "iriiraacikstaraaʔu",
+   "form_5": "tiicikstaraacta",
+   "additional_forms": []
+  },
+  "examples": []
+ },
+ {
+  "entry_id": "SK-acikskaapaakis-p353-3634",
+  "headword": "acikskaapaakis",
+  "primary_class": "VD",
+  "json_page": 353,
+  "column": "left",
+  "located_pages": [
+   353
+  ],
+  "normalized_form": "ačikskâpâkis",
+  "phonetic_form": "[•ə-čɪks-kaa-paa-kɪs•]",
+  "simplified": "uh-chihks-kah-pah-kihs",
+  "gram": {
+   "grammatical_class": "VD",
+   "verb_class": null,
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": 1,
+    "definition": "feel sad, sorrowful.",
+    "usage_notes": null
+   },
+   {
+    "number": 2,
+    "definition": "feel pitiful.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "<aciks+kaapaakis, have pitiful feelings>",
+   "constituent_elements": [
+    {
+     "morpheme": "aciks",
+     "gloss": null,
+     "morpheme_type": "root"
+    },
+    {
+     "morpheme": "kaapaakis",
+     "gloss": null,
+     "morpheme_type": "root"
+    }
+   ],
+   "literal_translation": "have pitiful feelings"
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": "taatacikskaapaakis",
+   "form_2": "tiicikskaapaakis",
+   "form_3": null,
+   "form_4": "irii-raacikskaapaakisu",
+   "form_5": "tiicikskaapaakisuksta",
+   "additional_forms": []
+  },
+  "examples": [
+   {
+    "skiri_text": "tiraacikskaapaakis",
+    "english_translation": "they are all feeling sad, everyone is feeling sad.",
+    "usage_context": null
+   }
+  ]
+ },
+ {
+  "entry_id": "SK-kicpiirihuur-p436-3944",
+  "headword": "kicpiirihuur",
+  "primary_class": "VD",
+  "json_page": 436,
+  "column": "left",
+  "located_pages": [
+   436
+  ],
+  "normalized_form": "kicpîrihûr",
+  "phonetic_form": "[•kɪts-pii-rɪ-huu(r)•]",
+  "simplified": "kihts-pee-dih-hood",
+  "gram": {
+   "grammatical_class": "VD",
+   "verb_class": null,
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": null,
+    "definition": "be a steady shower; be a light, steady rain.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "<kicpiir+rihuur, be a big shower>",
+   "constituent_elements": [
+    {
+     "morpheme": "kicpiir",
+     "gloss": null,
+     "morpheme_type": "root"
+    },
+    {
+     "morpheme": "rihuur",
+     "gloss": "be a big shower",
+     "morpheme_type": "root"
+    }
+   ],
+   "literal_translation": null
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": null,
+   "form_2": "tikicpiirihuuʔ",
+   "form_3": null,
+   "form_4": "iriirakicpiirihuuru",
+   "form_5": "tikicpiirihuuruksta",
+   "additional_forms": []
+  },
+  "examples": []
+ },
+ {
+  "entry_id": "SK-icawi--p56-0956",
+  "headword": "icawi-",
+  "primary_class": "LOC",
+  "json_page": 56,
+  "column": "left",
+  "located_pages": [
+   404
+  ],
+  "normalized_form": "ičawi-",
+  "phonetic_form": "[ɪ-čə-wɪ•]",
+  "simplified": "ih-chuh-wih",
+  "gram": {
+   "grammatical_class": "LOC",
+   "verb_class": null,
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": null,
+    "definition": "begging.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": null,
+   "constituent_elements": [],
+   "literal_translation": null
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": null,
+   "form_2": null,
+   "form_3": null,
+   "form_4": null,
+   "form_5": null,
+   "additional_forms": []
+  },
+  "examples": []
+ },
+ {
+  "entry_id": "SK-uukickata--p172-3406",
+  "headword": "uukickata-",
+  "primary_class": "LOC",
+  "json_page": 172,
+  "column": "right",
+  "located_pages": [
+   520
+  ],
+  "normalized_form": "ûkickata-",
+  "phonetic_form": "[uu-kɪts-kə-tə•]",
+  "simplified": "oo-kihts-kuh-tuh",
+  "gram": {
+   "grammatical_class": "LOC",
+   "verb_class": null,
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": null,
+    "definition": "on the west side, as in an earthlodge; ref. to the location where chiefs and ritual leaders sit .",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "<uu.kata+kic, on the west side + kic>",
+   "constituent_elements": [
+    {
+     "morpheme": "uu.kata",
+     "gloss": "on the west side",
+     "morpheme_type": "root"
+    },
+    {
+     "morpheme": "kic",
+     "gloss": "kic",
+     "morpheme_type": "suffix"
+    }
+   ],
+   "literal_translation": null
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": null,
+   "form_2": null,
+   "form_3": null,
+   "form_4": null,
+   "form_5": null,
+   "additional_forms": []
+  },
+  "examples": [
+   {
+    "skiri_text": "uukickataarik",
+    "english_translation": "be standing on the west side.",
+    "usage_context": null
+   },
+   {
+    "skiri_text": "uukickatakus",
+    "english_translation": "be sitting at the west end, on the west side.",
+    "usage_context": null
+   },
+   {
+    "skiri_text": "uukickataʔiisat",
+    "english_translation": "go to the west end, to the west side.",
+    "usage_context": null
+   }
+  ]
+ },
+ {
+  "entry_id": "SK-ratkahaahkituuquq-p138-2739",
+  "headword": "ratkahaahkituuʔuʔ",
+  "primary_class": "ADV",
+  "json_page": 138,
+  "column": "right",
+  "located_pages": [
+   486
+  ],
+  "normalized_form": "ratkahâhkitû'u'",
+  "phonetic_form": "[ràt-kə-haah-kɪ-tuu-ʔuʔ]",
+  "simplified": "DUHT-kuh-hahh-kih-too-'oo'",
+  "gram": {
+   "grammatical_class": "ADV",
+   "verb_class": null,
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": null,
+    "definition": "all night, the entire night.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "<ratkahaar+kituu+uʔ, complete night + NOM>",
+   "constituent_elements": [
+    {
+     "morpheme": "ratkahaar",
+     "gloss": "night",
+     "morpheme_type": "root"
+    },
+    {
+     "morpheme": "kituu",
+     "gloss": "complete",
+     "morpheme_type": "root"
+    },
+    {
+     "morpheme": "uʔ",
+     "gloss": "NOM",
+     "morpheme_type": "suffix"
+    }
+   ],
+   "literal_translation": null
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": null,
+   "form_2": null,
+   "form_3": null,
+   "form_4": null,
+   "form_5": null,
+   "additional_forms": []
+  },
+  "examples": []
+ },
+ {
+  "entry_id": "SK-pakuuhtuq-p110-2124",
+  "headword": "pakuuhtuʔ",
+  "primary_class": "ADV",
+  "json_page": 110,
+  "column": "right",
+  "located_pages": [
+   458
+  ],
+  "normalized_form": "pakûhtu'",
+  "phonetic_form": "[pà-kuuh-tʊʔ]",
+  "simplified": "PUH-kooh-too'",
+  "gram": {
+   "grammatical_class": "ADV",
+   "verb_class": null,
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": null,
+    "definition": "long ago, a long time ago.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "<pakuuht+uʔ, long ago + NOM>",
+   "constituent_elements": [
+    {
+     "morpheme": "pakuuht",
+     "gloss": "long ago",
+     "morpheme_type": null
+    },
+    {
+     "morpheme": "uʔ",
+     "gloss": "NOM",
+     "morpheme_type": null
+    }
+   ],
+   "literal_translation": "long ago"
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": null,
+   "form_2": null,
+   "form_3": null,
+   "form_4": null,
+   "form_5": null,
+   "additional_forms": []
+  },
+  "examples": []
+ },
+ {
+  "entry_id": "SK-kaahikuut-p71-1272",
+  "headword": "kaahikuut",
+  "primary_class": "VP",
+  "json_page": 71,
+  "column": "right",
+  "located_pages": [
+   419
+  ],
+  "normalized_form": "kâhikût",
+  "phonetic_form": "•kaa-hi-kuut•",
+  "simplified": "kah-hih-koot",
+  "gram": {
+   "grammatical_class": "VP",
+   "verb_class": "(2)",
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": null,
+    "definition": "die of old age.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "<kaahiik+kuut, die old>",
+   "constituent_elements": [],
+   "literal_translation": null
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": "tikukaahikuut",
+   "form_2": "tikaahikuut",
+   "form_3": "tikaahikuutuʔ",
+   "form_4": "iriirakaahikuuti",
+   "form_5": "tikaahikuutista",
+   "additional_forms": []
+  },
+  "examples": []
+ },
+ {
+  "entry_id": "SK-huutuhkaa-p52-0883",
+  "headword": "huutuhkaa",
+  "primary_class": "VL",
+  "json_page": 52,
+  "column": "right",
+  "located_pages": [
+   400
+  ],
+  "normalized_form": "hûtuhkâ",
+  "phonetic_form": "[•huu-tʊh-kaa•]",
+  "simplified": "hoo-tooh-kah",
+  "gram": {
+   "grammatical_class": "VL",
+   "verb_class": null,
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": null,
+    "definition": "be inflated, as a tire.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "huutur+kaa, air to be inside",
+   "constituent_elements": [
+    {
+     "morpheme": "huutur",
+     "gloss": "air",
+     "morpheme_type": "root"
+    },
+    {
+     "morpheme": "kaa",
+     "gloss": "to be inside",
+     "morpheme_type": "root"
+    }
+   ],
+   "literal_translation": "air to be inside"
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": null,
+   "form_2": "tihuutuhkaa",
+   "form_3": null,
+   "form_4": "iriirahuutuhkaawi",
+   "form_5": "tihuutuhkaawista",
+   "additional_forms": []
+  },
+  "examples": []
+ },
+ {
+  "entry_id": "SK-tawiraaruq-ruksiriq,_tawiraaru-p164-3222",
+  "headword": "tawiraaruʔ-ruksiriʔ, tawiraaruʔ-a-ruksiriʔ",
+  "primary_class": "NUM",
+  "json_page": 164,
+  "column": "left",
+  "located_pages": [
+   512
+  ],
+  "normalized_form": "tawirâru'-ruksiri', tawirâru'-a-ruksiri'",
+  "phonetic_form": "[tà-wɪ-raa-ruu•rʊk-sɪ-riʔ,tà-wɪ-raa-ruuʔ•ə•rʊk-sɪ-riʔ]",
+  "simplified": "TUH-wih-dah-doo-dook-sih-dih' / TUH-wih-dah-doo'-uh-dook-sih-dih'",
+  "gram": {
+   "grammatical_class": "NUM",
+   "verb_class": null,
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": null,
+    "definition": "seventy .",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "tawiraaruʔ.(a.)ruksiriʔ, sixty (and) ten",
+   "constituent_elements": [],
+   "literal_translation": "sixty (and) ten"
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": null,
+   "form_2": null,
+   "form_3": null,
+   "form_4": null,
+   "form_5": null,
+   "additional_forms": []
+  },
+  "examples": [
+   {
+    "skiri_text": "tawiraaruʔ-ruksiriʔ-asku",
+    "english_translation": "seventy-one.",
+    "usage_context": null
+   }
+  ]
+ },
+ {
+  "entry_id": "SK-kiripacki-p97-1866",
+  "headword": "kiripacki",
+  "primary_class": "ADJ",
+  "json_page": 97,
+  "column": "left",
+  "located_pages": [
+   445
+  ],
+  "normalized_form": "kiripacki",
+  "phonetic_form": "[kí-rɪ-pəts-kɪ]",
+  "simplified": "KIH-dih-puhts-kih",
+  "gram": {
+   "grammatical_class": "ADJ",
+   "verb_class": null,
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": null,
+    "definition": "small, little, as an object or child.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "kiripac+kis, kiripac + DIM",
+   "constituent_elements": [
+    {
+     "morpheme": "kiripac",
+     "gloss": null,
+     "morpheme_type": null
+    },
+    {
+     "morpheme": "kis",
+     "gloss": "DIM",
+     "morpheme_type": "suffix"
+    }
+   ],
+   "literal_translation": "kiripac + DIM"
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": null,
+   "form_2": null,
+   "form_3": null,
+   "form_4": null,
+   "form_5": null,
+   "additional_forms": []
+  },
+  "examples": [
+   {
+    "skiri_text": "kiripacki tiʔ",
+    "english_translation": "it is little.",
+    "usage_context": null
+   }
+  ]
+ },
+ {
+  "entry_id": "SK-haaquq-p33-0549",
+  "headword": "haaʔuʔ",
+  "primary_class": "INTERJ",
+  "json_page": 33,
+  "column": "left",
+  "located_pages": [
+   381
+  ],
+  "normalized_form": "hâ'u'",
+  "phonetic_form": "[haá-ʔuʔ]",
+  "simplified": "HAH-'oo'",
+  "gram": {
+   "grammatical_class": "INTERJ",
+   "verb_class": null,
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": null,
+    "definition": "yes.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": null,
+   "constituent_elements": [],
+   "literal_translation": null
+  },
+  "cognates": [],
+  "paradigmatic": {
+   "form_1": null,
+   "form_2": null,
+   "form_3": null,
+   "form_4": null,
+   "form_5": null,
+   "additional_forms": []
+  },
+  "examples": []
+ },
+ {
+  "entry_id": "SK-kickuhki-p87-1639",
+  "headword": "kickuhki",
+  "primary_class": "QUAN",
+  "json_page": 87,
+  "column": "left",
+  "located_pages": [
+   435
+  ],
+  "normalized_form": "kickuhki",
+  "phonetic_form": "[kɪts-kʊh-kɪ]",
+  "simplified": "kihts-kooh-kih",
+  "gram": {
+   "grammatical_class": "QUAN",
+   "verb_class": null,
+   "additional_forms": []
+  },
+  "glosses": [
+   {
+    "number": null,
+    "definition": "few, a few, several.",
+    "usage_notes": null
+   }
+  ],
+  "etymology": {
+   "raw_etymology": "kickur+kis, several + DIM; i.q. SB keckuhki",
+   "constituent_elements": [
+    {
+     "morpheme": "kickur",
+     "gloss": "several",
+     "morpheme_type": null
+    },
+    {
+     "morpheme": "kis",
+     "gloss": "DIM",
+     "morpheme_type": null
+    }
+   ],
+   "literal_translation": null
+  },
+  "cognates": [
+   {
+    "language": "SB",
+    "form": "keckuhki",
+    "gloss": null
+   }
+  ],
+  "paradigmatic": {
+   "form_1": null,
+   "form_2": null,
+   "form_3": null,
+   "form_4": null,
+   "form_5": null,
+   "additional_forms": []
+  },
+  "examples": []
+ }
+]
