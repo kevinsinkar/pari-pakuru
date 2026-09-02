@@ -164,3 +164,84 @@ def morph_class_note(raw_class: str) -> Optional[str]:
         return None
     clean = re.sub(r"\(\d+\)", "", raw_class).strip()
     return MORPH_CLASS_NOTES.get(clean)
+
+
+# ── Surface-form modernization + respelling (Phase 3.2b sentence builder) ──
+#
+# For CONJUGATED verb forms there is no attested per-form phonetic, so the
+# c/č split uses a context rule validated against all attested dictionary
+# phonetics (2026-09-01): c is pronounced [č] before a vowel and [ts] before
+# a consonant or word-finally — correct for 1,366/1,387 attested c-positions
+# (98.5%; several of the misses are known low-fidelity duplicate-page
+# phonetics). Long-vowel circumflexes and ʔ→' are exact.
+#
+# IPA is deliberately NOT generated here: Parks's IPA marks vowel reduction
+# (ə/ɪ/ʊ) and pitch accent, neither of which is reliably predictable from
+# the practical orthography. Only attested IPA (from lexical_entries) should
+# ever be shown.
+
+_ACCENTS = {"\u00e1": "a", "\u00ed": "i", "\u00fa": "u",
+            "\u00e0": "a", "\u00ec": "i", "\u00f9": "u"}
+_VOWELS = set("aiu")
+
+
+def _apply_c_context(form: str, c_lower: str = "\u010d",
+                     c_upper: str = "\u010c") -> str:
+    """Replace c with č where the context rule says it is pronounced [č]."""
+    chars = list(form)
+    plain = "".join(_ACCENTS.get(ch, ch) for ch in form).lower()
+    for i, ch in enumerate(chars):
+        if ch in ("c", "C"):
+            nxt = plain[i + 1] if i + 1 < len(plain) else ""
+            if nxt in _VOWELS:
+                chars[i] = c_upper if ch == "C" else c_lower
+    return "".join(chars)
+
+
+def modernize_form(form: str) -> str:
+    """Practical-orthography surface form → learner orthography (â î û č ').
+
+    Matches the dictionary's normalized_form convention. The č placement is
+    rule-based (98.5% validated), not per-form attested — callers should
+    label the output as derived when the form is not a dictionary headword.
+    """
+    if not form:
+        return form
+    s = _apply_c_context(form)
+    for long_v, circ in (("aa", "\u00e2"), ("ii", "\u00ee"), ("uu", "\u00fb"),
+                         ("AA", "\u00c2"), ("II", "\u00ce"), ("UU", "\u00db"),
+                         ("Aa", "\u00c2"), ("Ii", "\u00ce"), ("Uu", "\u00db")):
+        s = s.replace(long_v, circ)
+    return s.replace("\u0294", "'")
+
+
+def respell_form(form: str) -> str:
+    """Practical-orthography surface form → approximate English respelling.
+
+    Same vowel/consonant mapping as Phase 1.1c (a→uh, aa→ah, i→ih, ii→ee,
+    u/uu→oo, r→d, ʔ→', c→ch/ts by the context rule). APPROXIMATE: derived
+    from spelling, so it cannot mark stress or the reduced vowels that
+    Parks's attested IPA records.
+    """
+    if not form:
+        return form
+    s = "".join(_ACCENTS.get(ch, ch) for ch in form.lower())
+    s = _apply_c_context(s, c_lower="\u010d")
+    out = []
+    i = 0
+    rules = [("aa", "ah"), ("ii", "ee"), ("uu", "oo"),
+             ("\u010d", "ch"), ("\u0294", "'"),
+             ("a", "uh"), ("i", "ih"), ("u", "oo"),
+             ("r", "d"), ("c", "ts")]
+    while i < len(s):
+        matched = False
+        for pat, rep in rules:
+            if s.startswith(pat, i):
+                out.append(rep)
+                i += len(pat)
+                matched = True
+                break
+        if not matched:
+            out.append(s[i])
+            i += 1
+    return "".join(out)

@@ -672,6 +672,17 @@ Integration: T3/T4/T5/T8/T9 accept `verb` + `person` (1sg/2sg/3sg) +
 at MEDIUM confidence with a derivation note. Web UI: verb search
 (`/api/verbs`) + who/when selectors. Validation: 34/34 template tests.
 
+**Modern spelling + pronunciation on sentences (added 2026-09-01):**
+`display_utils.modernize_form()` / `respell_form()` — c→č context rule
+(c = [č] before vowel, [ts] elsewhere) validated at 98.5% against 1,387
+attested phonetic c-positions; end-to-end 99.5% agreement reproducing
+attested normalized_forms from headwords. Sentence results now carry
+`modern_sentence` + `approx_pronunciation`, and each morpheme chip carries
+modern/pron/ipa. **Truth policy: IPA is never generated** — Parks's IPA marks
+vowel reduction (ə/ɪ/ʊ) and pitch accent, which are not predictable from
+spelling; chips show IPA only when the word is a dictionary headword with an
+attested phonetic_form. Spelling-derived pronunciations are labeled ≈.
+
 Remaining 3.2b tasks:
 - [ ] Plural persons (3pl raar-insertion; du/pl suppletive stems — hard, many
       verbs use distributive stems not recoverable by prefix swap)

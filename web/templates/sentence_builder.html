@@ -451,12 +451,17 @@ function renderResult(data) {
     'LOW': 'badge-conf-low',
   }[data.confidence] || 'badge-conf-low';
 
-  // Morpheme chips
+  // Morpheme chips — modern spelling, pronunciation, and (attested-only) IPA
   const chips = (data.morpheme_breakdown || []).map(m => {
     const roleClass = ROLE_COLORS[m.role] || '';
+    const extras = [];
+    if (m.modern && m.modern !== m.form) extras.push(`<span class="sb-chip-modern">${m.modern}</span>`);
+    if (m.pron) extras.push(`<span class="sb-chip-pron">${m.pron}${m.attested ? '' : ' ≈'}</span>`);
+    if (m.ipa) extras.push(`<span class="sb-chip-ipa">${m.ipa}</span>`);
     return `<span class="poss-chip ${roleClass}">
       <span class="poss-chip__form">${m.form}</span>
       <span class="poss-chip__label">${m.gloss}</span>
+      ${extras.length ? '<span class="sb-chip-extras">' + extras.join('<br>') + '</span>' : ''}
     </span>`;
   }).join('<span class="poss-chip-plus">+</span>');
 
@@ -473,6 +478,12 @@ function renderResult(data) {
   document.getElementById('result-body').innerHTML = `
     <article class="sb-result">
       <div class="sb-result__sentence font-serif" lang="x-paw">${data.skiri_sentence}</div>
+      ${data.modern_sentence && data.modern_sentence !== data.skiri_sentence ?
+        `<div class="sb-result__modern" lang="x-paw">${data.modern_sentence}
+           <small>modern spelling (rule-derived)</small></div>` : ''}
+      ${data.approx_pronunciation ?
+        `<div class="sb-result__pron">${data.approx_pronunciation}
+           <small>approximate — spelling-based, stress not marked</small></div>` : ''}
       <div class="sb-result__gloss">${data.english_gloss}</div>
       <div class="sb-result__meta">
         <span class="badge ${confClass}">${data.confidence}</span>
@@ -484,6 +495,12 @@ function renderResult(data) {
         <div class="sb-result__breakdown-label">Morpheme breakdown</div>
         <div class="sb-result__chips">${chips}</div>
         <div class="poss-chip-legend">${legend}</div>
+        <p class="sb-result__note" style="margin-top:0.5rem;">
+          Per-word lines: modern spelling &middot; pronunciation &middot; IPA.
+          IPA <code>[...]</code> is shown only where Parks recorded it (dictionary
+          headwords); &asymp; marks pronunciations derived from spelling, which
+          cannot show stress or reduced vowels.
+        </p>
       </div>
     </article>`;
 
@@ -685,6 +702,34 @@ document.addEventListener('click', function(e) {
   color: var(--earth-600, #6b5d4a);
   margin-bottom: 0.75rem;
 }
+.sb-result__modern {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--earth-700, #4d4232);
+  margin-bottom: 0.35rem;
+}
+.sb-result__pron {
+  font-size: 0.95rem;
+  color: var(--earth-500, #8a7560);
+  margin-bottom: 0.5rem;
+}
+.sb-result__modern small, .sb-result__pron small {
+  font-size: 0.7em;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--earth-400, #a99a85);
+  margin-left: 0.5em;
+}
+.sb-chip-extras {
+  display: block;
+  font-size: 0.72em;
+  line-height: 1.5;
+  margin-top: 2px;
+  color: var(--earth-600, #6b5d4a);
+}
+.sb-chip-modern { font-weight: 600; }
+.sb-chip-pron { font-style: italic; }
+.sb-chip-ipa { font-family: var(--font-mono, monospace); font-size: 0.95em; }
 .sb-result__meta {
   display: flex;
   flex-wrap: wrap;

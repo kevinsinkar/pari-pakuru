@@ -86,6 +86,12 @@ class MorphemeChip:
     gloss: str
     role: str  # SUBJECT, VERB, OBJECT, PARTICLE, ADVERB, LOCATIVE, etc.
     entry_id: Optional[str] = None
+    # Enrichment (Phase 3.2b): modern spelling, pronunciation, attested IPA.
+    # ipa is ONLY ever an attested dictionary phonetic_form — never generated.
+    modern: Optional[str] = None
+    pron: Optional[str] = None
+    ipa: Optional[str] = None
+    attested: bool = False  # True when modern/pron/ipa come from the entry
 
 
 @dataclass
@@ -100,6 +106,11 @@ class TemplateResult:
     bb_attestation: Optional[str] = None  # e.g., "L01, L02"
     word_order_note: Optional[str] = None
     error: Optional[str] = None
+    # Phase 3.2b enrichment: whole-sentence modern spelling (rule-derived,
+    # c→č context rule 98.5% / 99.5% vs attested normalized forms) and an
+    # APPROXIMATE spelling-based pronunciation (cannot mark stress/reduction).
+    modern_sentence: Optional[str] = None
+    approx_pronunciation: Optional[str] = None
 
     def to_dict(self) -> Dict[str, Any]:
         return {
@@ -109,12 +120,16 @@ class TemplateResult:
             "template_name": self.template_name,
             "confidence": self.confidence,
             "morpheme_breakdown": [
-                {"form": m.form, "gloss": m.gloss, "role": m.role, "entry_id": m.entry_id}
+                {"form": m.form, "gloss": m.gloss, "role": m.role,
+                 "entry_id": m.entry_id, "modern": m.modern, "pron": m.pron,
+                 "ipa": m.ipa, "attested": m.attested}
                 for m in self.morpheme_breakdown
             ],
             "bb_attestation": self.bb_attestation,
             "word_order_note": self.word_order_note,
             "error": self.error,
+            "modern_sentence": self.modern_sentence,
+            "approx_pronunciation": self.approx_pronunciation,
         }
 
 
@@ -437,11 +452,17 @@ def lookup_gloss(conn: sqlite3.Connection, entry_id: str) -> Optional[str]:
 
 try:
     from person_forms import derive_forms as _derive_person_forms
+    from display_utils import modernize_form as _modernize_form
+    from display_utils import respell_form as _respell_form
 except ImportError:  # imported as a package (web app): scripts.person_forms
     try:
         from scripts.person_forms import derive_forms as _derive_person_forms
+        from scripts.display_utils import modernize_form as _modernize_form
+        from scripts.display_utils import respell_form as _respell_form
     except ImportError:  # pragma: no cover
         _derive_person_forms = None
+        _modernize_form = None
+        _respell_form = None
 
 PERSON_LABELS = {"1sg": "I", "2sg": "you", "3sg": "he/she/it"}
 # (mode, tense) -> derive_forms key pattern; {p} is the person
@@ -1218,9 +1239,46 @@ def assemble(template_id: str, **slots) -> TemplateResult:
 
     conn = get_db_connection()
     try:
-        return _ASSEMBLERS[template_id](conn, **slots)
+        result = _ASSEMBLERS[template_id](conn, **slots)
+        _enrich_result(conn, result)
+        return result
     finally:
         conn.close()
+
+
+def _enrich_result(conn: sqlite3.Connection, result: TemplateResult) -> None:
+    """Attach modern spelling / pronunciation / IPA to the result.
+
+    Truth policy:
+      - Chips whose form IS a dictionary headword get the entry's ATTESTED
+        normalized_form, simplified_pronunciation, and IPA phonetic_form.
+      - Everything else (conjugated forms, particles) gets RULE-DERIVED
+        modern spelling (c→č context rule, 99.5% vs attested normalized
+        forms) and an APPROXIMATE spelling-based respelling. IPA is never
+        generated — it stays None where Parks did not record it.
+    """
+    if _modernize_form is None or result.error or not result.skiri_sentence:
+        return
+    result.modern_sentence = _modernize_form(result.skiri_sentence)
+    result.approx_pronunciation = _respell_form(result.skiri_sentence)
+
+    cur = conn.cursor()
+    for chip in result.morpheme_breakdown:
+        if chip.entry_id:
+            cur.execute(
+                "SELECT headword, normalized_form, simplified_pronunciation, "
+                "phonetic_form FROM lexical_entries WHERE entry_id = ?",
+                (chip.entry_id,))
+            row = cur.fetchone()
+            if row and chip.form in (row["headword"], row["normalized_form"]):
+                chip.modern = row["normalized_form"]
+                chip.pron = row["simplified_pronunciation"]
+                chip.ipa = row["phonetic_form"]
+                chip.attested = True
+                continue
+        chip.modern = _modernize_form(chip.form)
+        chip.pron = _respell_form(chip.form)
+        chip.attested = False
 
 
 def list_templates() -> List[Dict[str, Any]]:
