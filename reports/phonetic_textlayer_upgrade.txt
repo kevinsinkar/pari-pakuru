@@ -1,0 +1,412 @@
+=== phonetic text-layer upgrade — APPLY — 2026-09-01T19:27:14.098994 ===
+upgrades identified: 130
+  SK-kaaqa-p2-0001 (A: text layer strictly richer IPA)
+     old: [•kaa-ʔa•]
+     new: [•kaa-ʔə•]
+  SK-kaaqat-p2-0009 (A: text layer strictly richer IPA)
+     old: [kaa-ʔat]
+     new: [kaá-ʔət]
+  SK-kaaqat-p2-0010 (A: text layer strictly richer IPA)
+     old: [•kaa-ʔat•]
+     new: [•kaa-ʔət•]
+  SK-kaaqihwicat-p2-0012 (A: text layer strictly richer IPA)
+     old: [•kaa-ʔih-wi-cat•]
+     new: [•kaa-ʔɪh-wɪ-čət•]
+  SK-kaaqiisa-p2-0014 (A: text layer strictly richer IPA)
+     old: [•kaa-ʔii-sa•]
+     new: [•kaa-ʔii-sə•]
+  SK-kaackaraaruq-p2-0020 (A: text layer strictly richer IPA)
+     old: [kaats-ka-raa-ruʔ]
+     new: [kaáts-kə-raa-rʊʔ]
+  SK-kaahak-p2-0023 (A: text layer strictly richer IPA)
+     old: [•kaa-ha{k/t}•]
+     new: [•kaa-hə{k/t}•]
+  SK-akaq-p9-0103 (A: text layer strictly richer IPA)
+     old: [à-kaʔ]
+     new: [à-kəʔ]
+  SK-akuuktik-p11-0129 (A: text layer strictly richer IPA)
+     old: [•a-kuuk-ti{k/t}•]
+     new: [•ə-kuuk-tɪ{k/t}•]
+  SK-atikaq-p19-0233 (A: text layer strictly richer IPA)
+     old: [a-ti-kaʔ]
+     new: [ə-tí-kəʔ]
+  SK-atipat-p19-0241 (A: text layer strictly richer IPA)
+     old: [a-ti-pat]
+     new: [ə-tí-pət]
+  SK-awaah-p20-0254 (A: text layer strictly richer IPA)
+     old: [•a-waa(h)•]
+     new: [•ə-waa(h)•]
+  SK-awacitiksa-p20-0264 (A: text layer strictly richer IPA)
+     old: [•a-wa-ci-tik-sa•]
+     new: [•ə-wə-čɪ-tɪk-sə•]
+  SK-awakii-p20-0268 (A: text layer strictly richer IPA)
+     old: [•a-wa-kii•]
+     new: [•ə-wə-kii•]
+  SK-awakiir/kir-p21-0270 (A: text layer strictly richer IPA)
+     old: [•a-wa-kiir/ki(r)•]
+     new: [•ə-wə-kiir/kɪ(r)•]
+  SK-awikaaqa-p23-0309 (A: text layer strictly richer IPA)
+     old: [•a-wi-kaa-ʔa•]
+     new: [•ə-wɪ-kaa-ʔə•]
+  SK-awikatasa-p24-0315 (A: text layer strictly richer IPA)
+     old: [•a-wi-ka-ta-sa•]
+     new: [•ə-wɪ-kə-tə-sə•]
+  SK-cawiquuriirik-p28-0421 (A: text layer strictly richer IPA)
+     old: [•ca-wi-ʔuu-rii-ri{k/t}•]
+     new: [•čə-wi-ʔuu-rii-rɪ{k/t}•]
+  SK-ckiisaakaratawaa-p30-0476 (A: text layer strictly richer IPA)
+     old: [tskií-saa-ka-ra-ta-waa]
+     new: [tskií-saa-kə-rə-tə-waa]
+  SK-haakaawatatuuk-p33-0562 (C: reviewed conflict, headword corroborates text layer)
+     old: [•ha-kaa-wə-tə-tuu{k/t}•]
+     new: [•haa-kaa-wə-tə-tuu{k/t}•]
+  SK-hata-p38-0667 (A: text layer strictly richer IPA)
+     old: [•ha-ta•]
+     new: [•hə-tə•]
+  SK-hatawuh-p38-0669 (A: text layer strictly richer IPA)
+     old: [•ha-ta-wu(h)•]
+     new: [•hə-tə-wʊ(h)•]
+  SK-hiqaastiq-p40-0689 (A: text layer strictly richer IPA)
+     old: [hi-ʔaas-tiʔ]
+     new: [hi-ʔaás-tiʔ]
+  SK-huraahtiraaha-p46-0775 (A: text layer strictly richer IPA)
+     old: [•hu-raah-ti-raa-ha•]
+     new: [•hʊ-raah-tɪ-raa-hə•]
+  SK-huuka-p49-0839 (A: text layer strictly richer IPA)
+     old: [•huu-ka•]
+     new: [•huu-kə•]
+  SK-icis-p56-0970 (A: text layer strictly richer IPA)
+     old: [•i-cis•]
+     new: [•ɪ-čɪs•]
+  SK-ikaariq-p61-1056 (A: text layer strictly richer IPA)
+     old: [i-kaa-riʔ]
+     new: [ɪ-kaá-riʔ]
+  SK-iksapaaraar-p62-1078 (A: text layer strictly richer IPA)
+     old: [•ik-sa-paa-raa(r)•]
+     new: [•ɪk-sə-paa-raa(r)•]
+  SK-ikskatawuh-p63-1091 (A: text layer strictly richer IPA)
+     old: [•iks-ka-ta-wu(h)•]
+     new: [•ɪks-kə-tə-wʊ(h)•]
+  SK-ikskawiqat-p63-1092 (A: text layer strictly richer IPA)
+     old: [•iks-ka-wi-ʔat•]
+     new: [•ɪks-kə-wi-ʔət•]
+  SK-ikstawiqa-p64-1107 (A: text layer strictly richer IPA)
+     old: [•iks-ta-wi-ʔa•]
+     new: [•ɪks-tə-wi-ʔə•]
+  SK-ikstawiqat-p64-1108 (A: text layer strictly richer IPA)
+     old: [•iks-ta-wi-ʔat•]
+     new: [•ɪks-tə-wi-ʔət•]
+  SK-iksuhuraar-p64-1114 (A: text layer strictly richer IPA)
+     old: [•ik-su-hu-raa(r)•]
+     new: [•ɪk-sʊ-hʊ-raa(r)•]
+  SK-ipaaktiq-p64-1116 (A: text layer strictly richer IPA)
+     old: [i-paak-tiʔ]
+     new: [ɪ-paák-tiʔ]
+  SK-iraactiq-p64-1117 (A: text layer strictly richer IPA)
+     old: [i-raats-tiʔ]
+     new: [ɪ-raáts-tiʔ]
+  SK-iriiruuwarii-p66-1165 (A: text layer strictly richer IPA)
+     old: [•i-rii-ruu-wa-rii•]
+     new: [•ɪ-rii-ruu-wə-rii•]
+  SK-irikata--p66-1170 (A: text layer strictly richer IPA)
+     old: [i-ri-ka-ta•(ut...)]
+     new: [ɪ-rɪ-kə-tə•(ʊt...)]
+  SK-iriraaku-p67-1180 (A: text layer strictly richer IPA)
+     old: [i-ri-raa-ku]
+     new: [í-rɪ-raa-kʊ]
+  SK-isaastiq-p68-1213 (A: text layer strictly richer IPA)
+     old: [i-saas-tiʔ]
+     new: [ɪ-saás-tiʔ]
+  SK-itaahiq-p68-1216 (A: text layer strictly richer IPA)
+     old: [i-taa-hiʔ]
+     new: [ɪ-taá-hiʔ]
+  SK-kaahuraarawiriir-p72-1280 (A: text layer strictly richer IPA)
+     old: [•kaa-hu-raa-ra-wi-rii(r)•]
+     new: [•kaa-hʊ-raa-rə-wɪ-rii(r)•]
+  SK-kaahurariir-p72-1285 (A: text layer strictly richer IPA)
+     old: [•kaa-hu-ra-rii(r)•]
+     new: [•kaa-hʊ-rə-rii(r)•]
+  SK-kaapaakis_[+_neg.]-p73-1298 (A: text layer strictly richer IPA)
+     old: [•kaa-paa-kis•]
+     new: [•kaa-paa-kɪs•]
+  SK-kahaara-p76-1372 (A: text layer strictly richer IPA)
+     old: [•ka-haa-ra•]
+     new: [•kə-haa-rə•]
+  SK-kataraqa-p81-1499 (A: text layer strictly richer IPA)
+     old: [•ka-ta-raa•]
+     new: [•kə-tə-raa•]
+  SK-katariikiwat-p81-1504 (A: text layer strictly richer IPA)
+     old: [•ka-ta-rii-ki-wat•]
+     new: [•kə-tə-rii-kɪ-wət•]
+  SK-kawiqukta-p84-1557 (A: text layer strictly richer IPA)
+     old: [•ka-wi-ʔuk-ta•]
+     new: [•kə-wi-ʔuk-tə•]
+  SK-kiikaraquk-p90-1695 (A: text layer strictly richer IPA)
+     old: [•kii-ka-ra-ʔu{k/t}•]
+     new: [•kii-kə-rə-ʔu{k/t}•]
+  SK-kiiriitkatakus-p91-1715 (A: text layer strictly richer IPA)
+     old: [•kii-riit-ka-ta-ku(s)•]
+     new: [•kii-riit-kə-tə-kʊ(s)•]
+  SK-kirahwiriisk-p95-1807 (A: text layer strictly richer IPA)
+     old: [•ki-rah-wi-riis(k)•]
+     new: [•kɪ-rəh-wɪ-riis(k)•]
+  SK-kiriktawiqat-p97-1859 (A: text layer strictly richer IPA)
+     old: [•ki-rik-ta-wi-ʔat•]
+     new: [•kɪ-rɪk-tə-wi-ʔət•]
+  SK-kiruuskus-p97-1881 (A: text layer strictly richer IPA)
+     old: [•ki-ruus-ku(s)•]
+     new: [•kɪ-ruus-kʊ(s)•]
+  SK-kisaactacapahtuq-p98-1884 (C: reviewed conflict, headword corroborates text layer)
+     old: [kí-saa-ts-tə-čə-pəh-tʊʔ]
+     new: [kí-saats-tə-čə-pəh-tʊʔ]
+  SK-kukatawiiq,_ritkukatawiiq-p101-1966 (A: text layer strictly richer IPA)
+     old: [ku-kà-ta-wiiʔ,rit-ku-ka-ta-wiiʔ]
+     new: [kʊ-kà-tə-wiiʔ,rít-kʊ-kə-tə-wiiʔ]
+  SK-kuraciihaaqu-p102-1973 (A: text layer strictly richer IPA)
+     old: [ku-ra-cií-haa-ʔu]
+     new: [kʊ-rə-čií-haa-ʔu]
+  SK-kurahaaqu-p102-1974 (A: text layer strictly richer IPA)
+     old: [ku-rà-haa-ʔu]
+     new: [kʊ-rà-haa-ʔu]
+  SK-kurasiihaaqu-p102-1978 (A: text layer strictly richer IPA)
+     old: [ku-ra-sií-haa-ʔu]
+     new: [kʊ-rə-sií-haa-ʔu]
+  SK-kuratiihaaqu-p102-1979 (A: text layer strictly richer IPA)
+     old: [ku-ra-tií-haa-ʔu]
+     new: [kʊ-rə-tií-haa-ʔu]
+  SK-kusickawiqa-p103-2007 (A: text layer strictly richer IPA)
+     old: [•ku-sits-ka-wi-ʔa•]
+     new: [•kʊ-sɪts-kə-wi-ʔə•]
+  SK-kusisaar-p103-2019 (A: text layer strictly richer IPA)
+     old: [•ku-si-saa(r)•]
+     new: [•kʊ-sɪ-saa(r)•]
+  SK-paca-p107-2043 (A: text layer strictly richer IPA)
+     old: [•pa-ca•]
+     new: [•pə-čə•]
+  SK-paciriks-p107-2045 (A: text layer strictly richer IPA)
+     old: [pà-ci-riks]
+     new: [pà-čɪ-rɪks]
+  SK-pariictaqu-p110-2133 (A: text layer strictly richer IPA)
+     old: [•pa-riits-ta-ʔu•]
+     new: [•pə-riits-tə-ʔu•]
+  SK-piraqa-p113-2187 (A: text layer strictly richer IPA)
+     old: [•pi-raa•]
+     new: [•pɪ-raa•]
+  SK-piraahcuq,_ritpiraahcuq-p113-2189 (A: text layer strictly richer IPA)
+     old: [pi-raah-cuʔ,rit-pi-raah-cuʔ]
+     new: [pí-raah-čʊʔ,rɪt-pí-raah-čʊʔ]
+  SK-pis,_wis-p114-2203 (A: text layer strictly richer IPA)
+     old: [pis,wis]
+     new: [pís,wís]
+  SK-raaqahuk-p114-2227 (A: text layer strictly richer IPA)
+     old: [•raa-ʔa-hu{k/t}•]
+     new: [•raa-ʔə-hʊ{k/t}•]
+  SK-raacikstaqu-p116-2258 (A: text layer strictly richer IPA)
+     old: [•raa-ciks-ta-ʔu•]
+     new: [•raa-čɪks-tə-ʔu•]
+  SK-raacikstaqu-p116-2259 (A: text layer strictly richer IPA)
+     old: [•raa-ciks-ta-ʔu•]
+     new: [•raa-čɪks-tə-ʔu•]
+  SK-raacikstaapirihuur-p116-2260 (A: text layer strictly richer IPA)
+     old: [•raa-ciks-taa-pi-ri-huu(r)•]
+     new: [•raa-čɪks-taa-pɪ-rɪ-huu(r)•]
+  SK-raahurii-p118-2296 (A: text layer strictly richer IPA)
+     old: [•raa-hu-rii•]
+     new: [•raa-hʊ-rii•]
+  SK-raaka-p118-2303 (A: text layer strictly richer IPA)
+     old: [•raa-ka•]
+     new: [•raa-kə•]
+  SK-raakiicka-p119-2323 (A: text layer strictly richer IPA)
+     old: [•raa-kiits-ka•]
+     new: [•raa-kiits-kə•]
+  SK-raakiriktawiqat-p119-2333 (A: text layer strictly richer IPA)
+     old: [•raa-ki-rik-ta-wi-ʔat•]
+     new: [•raa-kɪ-rɪk-tə-wi-ʔət•]
+  SK-raarahak-p121-2371 (A: text layer strictly richer IPA)
+     old: [•raa-ra-ha{k/t}•]
+     new: [•raa-rə-hə{k/t}•]
+  SK-raarakaahki-p122-2378 (C: reviewed conflict, headword corroborates text layer)
+     old: [ra-rà-kaah-kɪ]
+     new: [raa-rà-kaah-kɪ]
+  SK-raariks_[+_i-]-p123-2398 (A: text layer strictly richer IPA)
+     old: [•raa-riks•]
+     new: [•raa-rɪks•]
+  SK-raawakiir/kir-p126-2467 (A: text layer strictly richer IPA)
+     old: [•raa-wa-kiir/ki(r)•]
+     new: [•raa-wə-kiir/kɪ(r)•]
+  SK-rahuraariwiiruku,_huraariwiiru-p132-2587 (A: text layer strictly richer IPA)
+     old: [rà-hu-raa-ri-wii-ru-ku,hu-raa-ri-wii-ru-ku]
+     new: [rà-hʊ-raa-rɪ-wii-rʊ-kʊ,hʊ-raa-rɪ-wii-rʊ-kʊ]
+  SK-rahwiqa-p133-2608 (A: text layer strictly richer IPA)
+     old: [•rah-wi-ʔa•]
+     new: [•rəh-wi-ʔə•]
+  SK-rakaaruuc,_akaaruuc-p134-2612 (A: text layer strictly richer IPA)
+     old: [ra-kaa-ruuts,a-kaa-ruuts]
+     new: [rə-kaá-ruuts,ə-kaá-ruuts]
+  SK-rarariihuuraruuwarii,_iriirara-p136-2689 (A: text layer strictly richer IPA)
+     old: [rà-ra-rii-huu-ra-ruu-wa-rii,i-rií-ra-ra-rii-huu-ra-ruu-wa-rii]
+     new: [rà-rə-rii-huu-rə-ruu-wə-rii,ɪ-rií-rə-rə-rii-huu-rə-ruu-wə-rii]
+  SK-rariis-p137-2706 (A: text layer strictly richer IPA)
+     old: [•ra-riis•]
+     new: [•rə-riis•]
+  SK-rariisk-p137-2708 (A: text layer strictly richer IPA)
+     old: [•ra-riis(k)•]
+     new: [•rə-riis(k)•]
+  SK-rasakuhaku,_iriirasakuhaku-p138-2729 (A: text layer strictly richer IPA)
+     old: [ra-sa-ku-ha-ku,i-rií-ra-sa-ku-ha-ku]
+     new: [rə-sə-kʊ-hə-kʊ,ɪ-rií-rə-sə-kʊ-hə-kʊ]
+  SK-ratawi-,_hatawi--p138-2735 (A: text layer strictly richer IPA)
+     old: [ra-ta-wi•,ha-ta-wi•]
+     new: [rə-tə-wɪ•,hə-tə-wɪ•]
+  SK-ratkahaahtiihaksa-p138-2740 (A: text layer strictly richer IPA)
+     old: [•rat-ka-haah-tii-hak-sa•]
+     new: [•rət-kə-haah-tii-hək-sə•]
+  SK-sakuhwiriir-p151-2956 (A: text layer strictly richer IPA)
+     old: [•sa-kuh-wi-rii(r)•]
+     new: [•sə-kʊh-wɪ-rii(r)•]
+  SK-sakuriir-p152-2959 (A: text layer strictly richer IPA)
+     old: [•sa-ku-rii(r)•]
+     new: [•sə-kʊ-rii(r)•]
+  SK-sakuurawiriir-p152-2963 (A: text layer strictly richer IPA)
+     old: [•sa-kuu-ra-wi-rii(r)•]
+     new: [•sə-kuu-rə-wɪ-rii(r)•]
+  SK-taqu-p153-2999 (A: text layer strictly richer IPA)
+     old: [•ta-ʔu•]
+     new: [•tə-ʔu•]
+  SK-tahaari-p155-3026 (A: text layer strictly richer IPA)
+     old: [•ta-haa-ri•]
+     new: [•tə-haa-rɪ•]
+  SK-tahataqu-p155-3035 (A: text layer strictly richer IPA)
+     old: [•ta-ha-ta-ʔu•]
+     new: [•tə-hə-tə-ʔu•]
+  SK-tahatii-p156-3036 (A: text layer strictly richer IPA)
+     old: [•ta-ha-tii•]
+     new: [•tə-hə-tii•]
+  SK-takus-p158-3089 (A: text layer strictly richer IPA)
+     old: [•ta-ku(s)•]
+     new: [•tə-kʊ(s)•]
+  SK-tariikiwat-p161-3149 (A: text layer strictly richer IPA)
+     old: [•ta-rii-ki-wat•]
+     new: [•tə-rii-kɪ-wət•]
+  SK-tatataqat-p162-3170 (A: text layer strictly richer IPA)
+     old: [•ta-ta-ta-ʔat•]
+     new: [•tə-tə-tə-ʔət•]
+  SK-tawakiks,_awakiks-p162-3184 (A: text layer strictly richer IPA)
+     old: [tà-wa-kiks,à-wa-kiks]
+     new: [tà-wə-kɪks,à-wə-kɪks]
+  SK-tawiqiita_(ir...)-p163-3200 (A: text layer strictly richer IPA)
+     old: [•ta-wi-ʔii-ta•]
+     new: [•tə-wi-ʔii-tə•]
+  SK-tawihuhtawii_(ut...)-p163-3207 (A: text layer strictly richer IPA)
+     old: [•ta-wi-huh-ta-wii•]
+     new: [•tə-wɪ-hʊh-tə-wii•]
+  SK-tawiraaqa-p164-3219 (A: text layer strictly richer IPA)
+     old: [•ta-wi-raa-ʔa•]
+     new: [•tə-wɪ-raa-ʔə•]
+  SK-tiituriirik-p165-3259 (A: text layer strictly richer IPA)
+     old: [•tii-tu-rii-ri{k/t}•]
+     new: [•tii-tʊ-rii-rɪ{k/t}•]
+  SK-tiwaat-p166-3278 (A: text layer strictly richer IPA)
+     old: [ti-waat]
+     new: [tí-waat]
+  SK-tiwaciriks-p166-3279 (A: text layer strictly richer IPA)
+     old: [ti-wa-ci-riks]
+     new: [tí-wə-čɪ-rɪks]
+  SK-tukaa-p166-3285 (A: text layer strictly richer IPA)
+     old: [•tu-kaa•]
+     new: [•tʊ-kaa•]
+  SK-uhuhkiraa-p167-3311 (A: text layer strictly richer IPA)
+     old: [•u-huh-ki-raa•]
+     new: [•ʊ-hʊh-kɪ-raa•]
+  SK-uhuhkiraawuh-p167-3313 (A: text layer strictly richer IPA)
+     old: [•u-huh-ki-raa-wu(h)•]
+     new: [•ʊ-hʊh-kɪ-raa-wʊ(h)•]
+  SK-ukta-p171-3374 (A: text layer strictly richer IPA)
+     old: [•uk-ta•]
+     new: [•ʊk-tə•]
+  SK-uktawuh-p171-3379 (A: text layer strictly richer IPA)
+     old: [•uk-ta-wu(h)•]
+     new: [•ʊk-tə-wʊ(h)•]
+  SK-uuskuuqat-p173-3425 (A: text layer strictly richer IPA)
+     old: [•uus-kuu-ʔat•]
+     new: [•uus-kuu-ʔət•]
+  SK-wakuhciiharisaar-p176-3479 (A: text layer strictly richer IPA)
+     old: [•wa-kuh-cii-ha-ri-saa(r)•]
+     new: [•wə-kʊh-čii-hə-rɪ-saa(r)•]
+  SK-war-p177-3500 (A: text layer strictly richer IPA)
+     old: [•wa(r)•]
+     new: [•wə(r)•]
+  SK-wita(wi)--p181-3561 (A: text layer strictly richer IPA)
+     old: [wi-ta(wi)•(ut...)]
+     new: [wɪ-tə(wɪ)•(ʊt...)]
+  SK-a,_aa-p349-3580 (A: text layer strictly richer IPA)
+     old: [a,aa]
+     new: [ə,aa]
+  SK-aqas-p349-3581 (A: text layer strictly richer IPA)
+     old: [à-ʔas]
+     new: [à-ʔəs]
+  SK-apat-p360-3693 (A: text layer strictly richer IPA)
+     old: [à-pat]
+     new: [à-pət]
+  SK-ara-p360-3704 (A: text layer strictly richer IPA)
+     old: [à-ra]
+     new: [à-rə]
+  SK-asas-p363-3759 (A: text layer strictly richer IPA)
+     old: [à-sas]
+     new: [à-səs]
+  SK-hiksukac-p390-3865 (A: text layer strictly richer IPA)
+     old: [•hik-su-kats•]
+     new: [•hɪk-sʊ-kəts•]
+  SK-iistir-p408-3916 (A: text layer strictly richer IPA)
+     old: [•iis-ti(r)•]
+     new: [•iis-tɪ(r)•]
+  SK-iwaahiq-p418-3921 (A: text layer strictly richer IPA)
+     old: [i-waa-hiʔ]
+     new: [ɪ-waá-hiʔ]
+  SK-iwariiriks-p418-3922 (A: text layer strictly richer IPA)
+     old: [i-wà-rii-riks]
+     new: [ɪ-wà-rii-rɪks]
+  SK-ka-p418-3926 (A: text layer strictly richer IPA)
+     old: [•ka•]
+     new: [•kə•]
+  SK-kiwak_[+_raar-]-p448-3974 (A: text layer strictly richer IPA)
+     old: [•ki-wa{k/t}•]
+     new: [•kɪ-wə{k/t}•]
+  SK-racaraatatk-p478-4106 (A: text layer strictly richer IPA)
+     old: [•ra-ca-raa-tat(k)•]
+     new: [•rə-čə-raa-tət(k)•]
+  SK-racawaktaarik-p478-4116 (A: text layer strictly richer IPA)
+     old: [•ra-ca-wak-taa-ri{k/t}•]
+     new: [•rə-čə-wək-taa-rɪ{k/t}•]
+  SK-ritkukatawiiq,_kukatawiiq-p494-4213 (A: text layer strictly richer IPA)
+     old: [rit-ku-ka-ta-wiiʔ,ku-kà-ta-wiiʔ]
+     new: [rít-kʊ-kə-tə-wiiʔ,kʊ-kà-tə-wiiʔ]
+  SK-taakaar-p502-4233 (C: reviewed conflict, headword corroborates text layer)
+     old: [•ta-kaa(r)•]
+     new: [•taa-kaa(r)•]
+  SK-taarikiihk-p502-4250 (A: text layer strictly richer IPA)
+     old: [•taa-ri-kii(h){k/t}•]
+     new: [•taa-rɪ-kii(h){k/t}•]
+  SK-wirariir-p528-4262 (A: text layer strictly richer IPA)
+     old: [•wi-ra-rii(r)•]
+     new: [•wɪ-rə-rii(r)•]
+     normalized_form: "kâ'ihwicat" -> "kâ'ihwičat"
+     normalized_form: 'awacitiksa' -> 'awačitiksa'
+     normalized_form: "cawi'ûrîrik" -> "čawi'ûrîrik"
+     normalized_form: 'icis' -> 'ičis'
+     normalized_form: "kuracîhâ'u" -> "kuračîhâ'u"
+     normalized_form: 'paca' -> 'pača'
+     normalized_form: 'paciriks' -> 'pačiriks'
+     normalized_form: "pirâhcu', ritpirâhcu'" -> "pirâhču', ritpirâhču'"
+     normalized_form: "râciksta'u" -> "râčiksta'u"
+     normalized_form: "râciksta'u" -> "râčiksta'u"
+     normalized_form: 'râcikstâpirihûr' -> 'râčikstâpirihûr'
+     normalized_form: 'tiwaciriks' -> 'tiwačiriks'
+     normalized_form: 'wakuhcîharisâr' -> 'wakuhčîharisâr'
+     normalized_form: 'racarâtatk' -> 'račarâtatk'
+     normalized_form: 'racawaktârik' -> 'račawaktârik'
+derived fields regenerated: 15 normalized_form, 36 simplified_pronunciation
+[backup] C:\Users\k1s4l\.pari_pakuru_backups\skiri_pawnee_backup_20260901_192717.db
+[backup] C:\Users\k1s4l\.pari_pakuru_backups\skiri_to_english_respelled_backup_20260901_192717.json
+[write] C:\Users\k1s4l\OneDrive\Desktop\Repos\pari-pakuru\Dictionary Data\skiri_to_english_respelled.json
+[DB] rows updated: 130

@@ -72,7 +72,7 @@
     },
     "part_I": {
       "stem_preverb": "(ir...)",
-      "phonetic_form": "[•kaa-ʔa•]",
+      "phonetic_form": "[•kaa-ʔə•]",
       "grammatical_info": {
         "grammatical_class": "VI",
         "verb_class": "(3)",
@@ -576,7 +576,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[kaa-ʔat]",
+      "phonetic_form": "[kaá-ʔət]",
       "grammatical_info": {
         "grammatical_class": "N",
         "verb_class": null,
@@ -606,7 +606,7 @@
           "gloss": null
         }
       ],
-      "simplified_pronunciation": "kah-'uht"
+      "simplified_pronunciation": "KAH-'uht"
     },
     "part_II": {
       "paradigmatic_forms": null,
@@ -627,7 +627,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[•kaa-ʔat•]",
+      "phonetic_form": "[•kaa-ʔət•]",
       "grammatical_info": {
         "grammatical_class": "VI",
         "verb_class": "(1)",
@@ -735,7 +735,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[•kaa-ʔih-wi-cat•]",
+      "phonetic_form": "[•kaa-ʔɪh-wɪ-čət•]",
       "grammatical_info": {
         "grammatical_class": "VI",
         "verb_class": "(1)",
@@ -770,7 +770,7 @@
         "literal_translation": "reach a point inside"
       },
       "cognates": [],
-      "simplified_pronunciation": "kah-'ihh-wih-tsuht"
+      "simplified_pronunciation": "kah-'ihh-wih-chuht"
     },
     "part_II": {
       "paradigmatic_forms": {
@@ -785,7 +785,7 @@
     "compound_structure": null,
     "derived_stems": [],
     "entry_id": "SK-kaaqihwicat-p2-0012",
-    "normalized_form": "kâ'ihwicat"
+    "normalized_form": "kâ'ihwičat"
   },
   {
     "headword": "kaaʔiis-",
@@ -854,7 +854,7 @@
     },
     "part_I": {
       "stem_preverb": "(ir...)",
-      "phonetic_form": "[•kaa-ʔii-sa•]",
+      "phonetic_form": "[•kaa-ʔii-sə•]",
       "grammatical_info": {
         "grammatical_class": "VI",
         "verb_class": "(3)",
@@ -1201,7 +1201,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[kaats-ka-raa-ruʔ]",
+      "phonetic_form": "[kaáts-kə-raa-rʊʔ]",
       "grammatical_info": {
         "grammatical_class": "N",
         "verb_class": null,
@@ -1236,7 +1236,7 @@
         "literal_translation": "gray belly + NOM"
       },
       "cognates": [],
-      "simplified_pronunciation": "kahts-kuh-dah-doo'"
+      "simplified_pronunciation": "KAHTS-kuh-dah-doo'"
     },
     "part_II": {
       "paradigmatic_forms": null,
@@ -1378,7 +1378,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[•kaa-ha{k/t}•]",
+      "phonetic_form": "[•kaa-hə{k/t}•]",
       "grammatical_info": {
         "grammatical_class": "VI",
         "verb_class": "(4)",
@@ -6330,7 +6330,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[à-kaʔ]",
+      "phonetic_form": "[à-kəʔ]",
       "grammatical_info": {
         "grammatical_class": "N",
         "verb_class": null,
@@ -8123,7 +8123,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•a-kuuk-ti{k/t}•]",
+      "phonetic_form": "[•ə-kuuk-tɪ{k/t}•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(1)",
@@ -15493,7 +15493,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[a-ti-kaʔ]",
+      "phonetic_form": "[ə-tí-kəʔ]",
       "grammatical_info": {
         "grammatical_class": "N-KIN",
         "verb_class": null,
@@ -15523,7 +15523,7 @@
         "literal_translation": null
       },
       "cognates": [],
-      "simplified_pronunciation": "uh-tih-kuh'"
+      "simplified_pronunciation": "uh-TIH-kuh'"
     },
     "part_II": {
       "paradigmatic_forms": {
@@ -16031,7 +16031,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[a-ti-pat]",
+      "phonetic_form": "[ə-tí-pət]",
       "grammatical_info": {
         "grammatical_class": "N",
         "verb_class": null,
@@ -16061,7 +16061,7 @@
         "literal_translation": null
       },
       "cognates": [],
-      "simplified_pronunciation": "uh-tih-puht"
+      "simplified_pronunciation": "uh-TIH-puht"
     },
     "part_II": {
       "paradigmatic_forms": {
@@ -16903,7 +16903,7 @@
     },
     "part_I": {
       "stem_preverb": "(ir...ri...ut...)",
-      "phonetic_form": "[•a-waa(h)•]",
+      "phonetic_form": "[•ə-waa(h)•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(1-i)",
@@ -17576,7 +17576,7 @@
     },
     "part_I": {
       "stem_preverb": "( i r . . . )",
-      "phonetic_form": "[•a-wa-ci-tik-sa•]",
+      "phonetic_form": "[•ə-wə-čɪ-tɪk-sə•]",
       "grammatical_info": {
         "grammatical_class": "VI",
         "verb_class": "(3)",
@@ -17606,7 +17606,7 @@
         "literal_translation": "come exiting"
       },
       "cognates": [],
-      "simplified_pronunciation": "uh-wuh-tsih-tihk-suh"
+      "simplified_pronunciation": "uh-wuh-chih-tihk-suh"
     },
     "part_II": {
       "paradigmatic_forms": {
@@ -17628,7 +17628,7 @@
     "compound_structure": null,
     "derived_stems": [],
     "entry_id": "SK-awacitiksa-p20-0264",
-    "normalized_form": "awacitiksa"
+    "normalized_form": "awačitiksa"
   },
   {
     "headword": "awahkis",
@@ -17830,7 +17830,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•a-wa-kii•]",
+      "phonetic_form": "[•ə-wə-kii•]",
       "grammatical_info": {
         "grammatical_class": "VR",
         "verb_class": "(4)",
@@ -17958,7 +17958,7 @@
     },
     "part_I": {
       "stem_preverb": "(ir...)",
-      "phonetic_form": "[•a-wa-kiir/ki(r)•]",
+      "phonetic_form": "[•ə-wə-kiir/kɪ(r)•]",
       "grammatical_info": {
         "grammatical_class": "VI",
         "verb_class": "(1-a)",
@@ -20422,7 +20422,7 @@
     },
     "part_I": {
       "stem_preverb": "(ir...)",
-      "phonetic_form": "[•a-wi-kaa-ʔa•]",
+      "phonetic_form": "[•ə-wɪ-kaa-ʔə•]",
       "grammatical_info": {
         "grammatical_class": "VI",
         "verb_class": "(3)",
@@ -20850,7 +20850,7 @@
     },
     "part_I": {
       "stem_preverb": "(uur...)",
-      "phonetic_form": "[•a-wi-ka-ta-sa•]",
+      "phonetic_form": "[•ə-wɪ-kə-tə-sə•]",
       "grammatical_info": {
         "grammatical_class": "VI",
         "verb_class": "(4)",
@@ -28031,7 +28031,7 @@
     },
     "part_I": {
       "stem_preverb": "(uur...)",
-      "phonetic_form": "[•ca-wi-ʔuu-rii-ri{k/t}•]",
+      "phonetic_form": "[•čə-wi-ʔuu-rii-rɪ{k/t}•]",
       "grammatical_info": {
         "grammatical_class": "VI",
         "verb_class": "(2-i)",
@@ -28061,7 +28061,7 @@
         "literal_translation": "be standing upright"
       },
       "cognates": [],
-      "simplified_pronunciation": "tsuh-wih-'oo-dee-dih"
+      "simplified_pronunciation": "chuh-wih-'oo-dee-dih"
     },
     "part_II": {
       "paradigmatic_forms": {
@@ -28082,7 +28082,7 @@
     },
     "derived_stems": [],
     "entry_id": "SK-cawiquuriirik-p28-0421",
-    "normalized_form": "cawi'ûrîrik"
+    "normalized_form": "čawi'ûrîrik"
   },
   {
     "headword": "cawihaahkuukuʔuʔ",
@@ -31629,7 +31629,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[tskií-saa-ka-ra-ta-waa]",
+      "phonetic_form": "[tskií-saa-kə-rə-tə-waa]",
       "grammatical_info": {
         "grammatical_class": "N",
         "verb_class": null,
@@ -37750,7 +37750,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[•ha-kaa-wə-tə-tuu{k/t}•]",
+      "phonetic_form": "[•haa-kaa-wə-tə-tuu{k/t}•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(1)",
@@ -37785,7 +37785,7 @@
         "literal_translation": "pick up a mouth cover"
       },
       "cognates": [],
-      "simplified_pronunciation": "huh-kah-wuh-tuh-too"
+      "simplified_pronunciation": "hah-kah-wuh-tuh-too"
     },
     "part_II": {
       "paradigmatic_forms": {
@@ -44811,7 +44811,7 @@
     },
     "part_I": {
       "stem_preverb": "(ir...)",
-      "phonetic_form": "[•ha-ta•]",
+      "phonetic_form": "[•hə-tə•]",
       "grammatical_info": {
         "grammatical_class": "VL",
         "verb_class": null,
@@ -44959,7 +44959,7 @@
     },
     "part_I": {
       "stem_preverb": "(uur...)",
-      "phonetic_form": "[•ha-ta-wu(h)•]",
+      "phonetic_form": "[•hə-tə-wʊ(h)•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(1)",
@@ -46344,7 +46344,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[hi-ʔaas-tiʔ]",
+      "phonetic_form": "[hi-ʔaás-tiʔ]",
       "grammatical_info": {
         "grammatical_class": "N",
         "verb_class": null,
@@ -46379,7 +46379,7 @@
         "literal_translation": "his father"
       },
       "cognates": [],
-      "simplified_pronunciation": "hih-'ahs-tih'"
+      "simplified_pronunciation": "hih-'AHS-tih'"
     },
     "part_II": {
       "paradigmatic_forms": {
@@ -52102,7 +52102,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•hu-raah-ti-raa-ha•]",
+      "phonetic_form": "[•hʊ-raah-tɪ-raa-hə•]",
       "grammatical_info": {
         "grammatical_class": "VL",
         "verb_class": null,
@@ -56493,7 +56493,7 @@
     },
     "part_I": {
       "stem_preverb": "(ir...)",
-      "phonetic_form": "[•huu-ka•]",
+      "phonetic_form": "[•huu-kə•]",
       "grammatical_info": {
         "grammatical_class": "VI",
         "verb_class": "(3)",
@@ -65349,7 +65349,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•i-cis•]",
+      "phonetic_form": "[•ɪ-čɪs•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(4)",
@@ -65374,7 +65374,7 @@
         "literal_translation": null
       },
       "cognates": [],
-      "simplified_pronunciation": "ih-tsihs"
+      "simplified_pronunciation": "ih-chihs"
     },
     "part_II": {
       "paradigmatic_forms": {
@@ -65395,7 +65395,7 @@
     },
     "derived_stems": [],
     "entry_id": "SK-icis-p56-0970",
-    "normalized_form": "icis"
+    "normalized_form": "ičis"
   },
   {
     "headword": "ickaʔat",
@@ -70812,7 +70812,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[i-kaa-riʔ]",
+      "phonetic_form": "[ɪ-kaá-riʔ]",
       "grammatical_info": {
         "grammatical_class": "N",
         "verb_class": null,
@@ -70831,7 +70831,7 @@
         "literal_translation": null
       },
       "cognates": [],
-      "simplified_pronunciation": "ih-kah-dih'"
+      "simplified_pronunciation": "ih-KAH-dih'"
     },
     "part_II": {
       "paradigmatic_forms": {
@@ -72227,7 +72227,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•ik-sa-paa-raa(r)•]",
+      "phonetic_form": "[•ɪk-sə-paa-raa(r)•]",
       "grammatical_info": {
         "grammatical_class": "VI",
         "verb_class": "(1-i)",
@@ -73168,7 +73168,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•iks-ka-ta-wu(h)•]",
+      "phonetic_form": "[•ɪks-kə-tə-wʊ(h)•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(1)",
@@ -73236,7 +73236,7 @@
     },
     "part_I": {
       "stem_preverb": "(uur...)",
-      "phonetic_form": "[•iks-ka-wi-ʔat•]",
+      "phonetic_form": "[•ɪks-kə-wi-ʔət•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(1)",
@@ -74294,7 +74294,7 @@
     },
     "part_I": {
       "stem_preverb": "(ir...ut...)",
-      "phonetic_form": "[•iks-ta-wi-ʔa•]",
+      "phonetic_form": "[•ɪks-tə-wi-ʔə•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(3)",
@@ -74378,7 +74378,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•iks-ta-wi-ʔat•]",
+      "phonetic_form": "[•ɪks-tə-wi-ʔət•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(1)",
@@ -74822,7 +74822,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•ik-su-hu-raa(r)•]",
+      "phonetic_form": "[•ɪk-sʊ-hʊ-raa(r)•]",
       "grammatical_info": {
         "grammatical_class": "VI",
         "verb_class": "(1-i)",
@@ -74959,7 +74959,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[i-paak-tiʔ]",
+      "phonetic_form": "[ɪ-paák-tiʔ]",
       "grammatical_info": {
         "grammatical_class": "N",
         "verb_class": null,
@@ -74994,7 +74994,7 @@
         "literal_translation": "his grandfather"
       },
       "cognates": [],
-      "simplified_pronunciation": "ih-pahk-tih'"
+      "simplified_pronunciation": "ih-PAHK-tih'"
     },
     "part_II": {
       "paradigmatic_forms": {
@@ -75027,7 +75027,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[i-raats-tiʔ]",
+      "phonetic_form": "[ɪ-raáts-tiʔ]",
       "grammatical_info": {
         "grammatical_class": "N-KIN",
         "verb_class": null,
@@ -75062,7 +75062,7 @@
         "literal_translation": "her brother"
       },
       "cognates": [],
-      "simplified_pronunciation": "ih-dahts-tih'"
+      "simplified_pronunciation": "ih-DAHTS-tih'"
     },
     "part_II": {
       "paradigmatic_forms": {
@@ -78103,7 +78103,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•i-rii-ruu-wa-rii•]",
+      "phonetic_form": "[•ɪ-rii-ruu-wə-rii•]",
       "grammatical_info": {
         "grammatical_class": "VP",
         "verb_class": "(4)",
@@ -78370,7 +78370,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[i-ri-ka-ta•(ut...)]",
+      "phonetic_form": "[ɪ-rɪ-kə-tə•(ʊt...)]",
       "grammatical_info": {
         "grammatical_class": "LOC",
         "verb_class": null,
@@ -78993,7 +78993,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[i-ri-raa-ku]",
+      "phonetic_form": "[í-rɪ-raa-kʊ]",
       "grammatical_info": {
         "grammatical_class": "DEM",
         "verb_class": null,
@@ -79018,7 +79018,7 @@
         "literal_translation": "that one sitting"
       },
       "cognates": [],
-      "simplified_pronunciation": "ih-dih-dah-koo"
+      "simplified_pronunciation": "IH-dih-dah-koo"
     },
     "part_II": {
       "paradigmatic_forms": {
@@ -81297,7 +81297,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[i-saas-tiʔ]",
+      "phonetic_form": "[ɪ-saás-tiʔ]",
       "grammatical_info": {
         "grammatical_class": "N",
         "verb_class": null,
@@ -81332,7 +81332,7 @@
         "literal_translation": "his mother"
       },
       "cognates": [],
-      "simplified_pronunciation": "ih-sahs-tih'"
+      "simplified_pronunciation": "ih-SAHS-tih'"
     },
     "part_II": {
       "paradigmatic_forms": {
@@ -81524,7 +81524,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[i-taa-hiʔ]",
+      "phonetic_form": "[ɪ-taá-hiʔ]",
       "grammatical_info": {
         "grammatical_class": "N-KIN",
         "verb_class": null,
@@ -81559,7 +81559,7 @@
         "literal_translation": "his sister (of a male)"
       },
       "cognates": [],
-      "simplified_pronunciation": "ih-tah-hih'"
+      "simplified_pronunciation": "ih-TAH-hih'"
     },
     "part_II": {
       "paradigmatic_forms": {
@@ -85373,7 +85373,7 @@
     },
     "part_I": {
       "stem_preverb": "(uur...)",
-      "phonetic_form": "[•kaa-hu-raa-ra-wi-rii(r)•]",
+      "phonetic_form": "[•kaa-hʊ-raa-rə-wɪ-rii(r)•]",
       "grammatical_info": {
         "grammatical_class": "VI",
         "verb_class": "(1-a)",
@@ -85707,7 +85707,7 @@
     },
     "part_I": {
       "stem_preverb": "(uur...)",
-      "phonetic_form": "[•kaa-hu-ra-rii(r)•]",
+      "phonetic_form": "[•kaa-hʊ-rə-rii(r)•]",
       "grammatical_info": {
         "grammatical_class": "VI",
         "verb_class": "(1-a)",
@@ -86529,7 +86529,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[•kaa-paa-kis•]",
+      "phonetic_form": "[•kaa-paa-kɪs•]",
       "grammatical_info": {
         "grammatical_class": "VD",
         "verb_class": null,
@@ -91153,7 +91153,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•ka-haa-ra•]",
+      "phonetic_form": "[•kə-haa-rə•]",
       "grammatical_info": {
         "grammatical_class": "VP",
         "verb_class": "(wi)",
@@ -99591,7 +99591,7 @@
     },
     "part_I": {
       "stem_preverb": "(ir...)",
-      "phonetic_form": "[•ka-ta-raa•]",
+      "phonetic_form": "[•kə-tə-raa•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(3)",
@@ -99927,7 +99927,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•ka-ta-rii-ki-wat•]",
+      "phonetic_form": "[•kə-tə-rii-kɪ-wət•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(2-i)",
@@ -103436,7 +103436,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•ka-wi-ʔuk-ta•]",
+      "phonetic_form": "[•kə-wi-ʔuk-tə•]",
       "grammatical_info": {
         "grammatical_class": "VL",
         "verb_class": null,
@@ -112605,7 +112605,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[•kii-ka-ra-ʔu{k/t}•]",
+      "phonetic_form": "[•kii-kə-rə-ʔu{k/t}•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(3)",
@@ -113985,7 +113985,7 @@
     },
     "part_I": {
       "stem_preverb": "(ir...ut...)",
-      "phonetic_form": "[•kii-riit-ka-ta-ku(s)•]",
+      "phonetic_form": "[•kii-riit-kə-tə-kʊ(s)•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(4)",
@@ -120193,7 +120193,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•ki-rah-wi-riis(k)•]",
+      "phonetic_form": "[•kɪ-rəh-wɪ-riis(k)•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(1)",
@@ -123718,7 +123718,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•ki-rik-ta-wi-ʔat•]",
+      "phonetic_form": "[•kɪ-rɪk-tə-wi-ʔət•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(1)",
@@ -125206,7 +125206,7 @@
     },
     "part_I": {
       "stem_preverb": "[+ raar-]",
-      "phonetic_form": "[•ki-ruus-ku(s)•]",
+      "phonetic_form": "[•kɪ-ruus-kʊ(s)•]",
       "grammatical_info": {
         "grammatical_class": "VI",
         "verb_class": "(4)",
@@ -125417,7 +125417,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[kí-saa-ts-tə-čə-pəh-tʊʔ]",
+      "phonetic_form": "[kí-saats-tə-čə-pəh-tʊʔ]",
       "grammatical_info": {
         "grammatical_class": "N",
         "verb_class": null,
@@ -125466,7 +125466,7 @@
         "literal_translation": "ground meat"
       },
       "cognates": [],
-      "simplified_pronunciation": "KIH-sah-ts-tuh-chuh-puhh-too'"
+      "simplified_pronunciation": "KIH-sahts-tuh-chuh-puhh-too'"
     },
     "part_II": {
       "paradigmatic_forms": {
@@ -130944,7 +130944,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[ku-kà-ta-wiiʔ,rit-ku-ka-ta-wiiʔ]",
+      "phonetic_form": "[kʊ-kà-tə-wiiʔ,rít-kʊ-kə-tə-wiiʔ]",
       "grammatical_info": {
         "grammatical_class": "N",
         "verb_class": null,
@@ -130974,7 +130974,7 @@
         "literal_translation": "curled up tail"
       },
       "cognates": [],
-      "simplified_pronunciation": "koo-KUH-tuh-wee' / diht-koo-kuh-tuh-wee'"
+      "simplified_pronunciation": "koo-KUH-tuh-wee' / DIHT-koo-kuh-tuh-wee'"
     },
     "part_II": {
       "paradigmatic_forms": {
@@ -131396,7 +131396,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[ku-ra-cií-haa-ʔu]",
+      "phonetic_form": "[kʊ-rə-čií-haa-ʔu]",
       "grammatical_info": {
         "grammatical_class": "N",
         "verb_class": null,
@@ -131421,7 +131421,7 @@
         "literal_translation": "one that we (incl. du.) have as a child"
       },
       "cognates": [],
-      "simplified_pronunciation": "koo-duh-TSEE-hah-'oo"
+      "simplified_pronunciation": "koo-duh-CHEE-hah-'oo"
     },
     "part_II": {
       "paradigmatic_forms": {
@@ -131437,7 +131437,7 @@
     "compound_structure": null,
     "derived_stems": [],
     "entry_id": "SK-kuraciihaaqu-p102-1973",
-    "normalized_form": "kuracîhâ'u"
+    "normalized_form": "kuračîhâ'u"
   },
   {
     "headword": "kurahaaʔu",
@@ -131449,7 +131449,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[ku-rà-haa-ʔu]",
+      "phonetic_form": "[kʊ-rà-haa-ʔu]",
       "grammatical_info": {
         "grammatical_class": "N",
         "verb_class": null,
@@ -131681,7 +131681,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[ku-ra-sií-haa-ʔu]",
+      "phonetic_form": "[kʊ-rə-sií-haa-ʔu]",
       "grammatical_info": {
         "grammatical_class": "N",
         "verb_class": null,
@@ -131734,7 +131734,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[ku-ra-tií-haa-ʔu]",
+      "phonetic_form": "[kʊ-rə-tií-haa-ʔu]",
       "grammatical_info": {
         "grammatical_class": "N",
         "verb_class": null,
@@ -133486,7 +133486,7 @@
     },
     "part_I": {
       "stem_preverb": "(ir...ut...)",
-      "phonetic_form": "[•ku-sits-ka-wi-ʔa•]",
+      "phonetic_form": "[•kʊ-sɪts-kə-wi-ʔə•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(3)",
@@ -134289,7 +134289,7 @@
     },
     "part_I": {
       "stem_preverb": "(ir...)",
-      "phonetic_form": "[•ku-si-saa(r)•]",
+      "phonetic_form": "[•kʊ-sɪ-saa(r)•]",
       "grammatical_info": {
         "grammatical_class": "VI",
         "verb_class": "(1-i)",
@@ -135966,7 +135966,7 @@
     },
     "part_I": {
       "stem_preverb": "(ir...)",
-      "phonetic_form": "[•pa-ca•]",
+      "phonetic_form": "[•pə-čə•]",
       "grammatical_info": {
         "grammatical_class": "VL, VT",
         "verb_class": "(wi)",
@@ -135996,7 +135996,7 @@
         "literal_translation": "have a lump"
       },
       "cognates": [],
-      "simplified_pronunciation": "puh-tsuh"
+      "simplified_pronunciation": "puh-chuh"
     },
     "part_II": {
       "paradigmatic_forms": {
@@ -136017,7 +136017,7 @@
     },
     "derived_stems": [],
     "entry_id": "SK-paca-p107-2043",
-    "normalized_form": "paca"
+    "normalized_form": "pača"
   },
   {
     "headword": "pacawaa",
@@ -136092,7 +136092,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[pà-ci-riks]",
+      "phonetic_form": "[pà-čɪ-rɪks]",
       "grammatical_info": {
         "grammatical_class": "N",
         "verb_class": null,
@@ -136122,7 +136122,7 @@
         "literal_translation": "your uncle"
       },
       "cognates": [],
-      "simplified_pronunciation": "PUH-tsih-dihks"
+      "simplified_pronunciation": "PUH-chih-dihks"
     },
     "part_II": {
       "paradigmatic_forms": {
@@ -136143,7 +136143,7 @@
     },
     "derived_stems": [],
     "entry_id": "SK-paciriks-p107-2045",
-    "normalized_form": "paciriks"
+    "normalized_form": "pačiriks"
   },
   {
     "headword": "pacit",
@@ -141844,7 +141844,7 @@
     },
     "part_I": {
       "stem_preverb": "(ir...)",
-      "phonetic_form": "[•pa-riits-ta-ʔu•]",
+      "phonetic_form": "[•pə-riits-tə-ʔu•]",
       "grammatical_info": {
         "grammatical_class": "VI",
         "verb_class": "(3)",
@@ -145463,7 +145463,7 @@
     },
     "part_I": {
       "stem_preverb": "(ir...)",
-      "phonetic_form": "[•pi-raa•]",
+      "phonetic_form": "[•pɪ-raa•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(3)",
@@ -145589,7 +145589,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[pi-raah-cuʔ,rit-pi-raah-cuʔ]",
+      "phonetic_form": "[pí-raah-čʊʔ,rɪt-pí-raah-čʊʔ]",
       "grammatical_info": {
         "grammatical_class": "N",
         "verb_class": null,
@@ -145624,7 +145624,7 @@
         "literal_translation": "(tail +) tail + NOM"
       },
       "cognates": [],
-      "simplified_pronunciation": "pih-dahh-tsoo' / diht-pih-dahh-tsoo'"
+      "simplified_pronunciation": "PIH-dahh-choo' / diht-PIH-dahh-choo'"
     },
     "part_II": {
       "paradigmatic_forms": {
@@ -145645,7 +145645,7 @@
     },
     "derived_stems": [],
     "entry_id": "SK-piraahcuq,_ritpiraahcuq-p113-2189",
-    "normalized_form": "pirâhcu', ritpirâhcu'"
+    "normalized_form": "pirâhču', ritpirâhču'"
   },
   {
     "headword": "piraahiriʔ",
@@ -146527,7 +146527,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[pis,wis]",
+      "phonetic_form": "[pís,wís]",
       "grammatical_info": {
         "grammatical_class": "ADV, INTERJ",
         "verb_class": null,
@@ -146551,7 +146551,7 @@
         "literal_translation": null
       },
       "cognates": [],
-      "simplified_pronunciation": "pihs / wihs"
+      "simplified_pronunciation": "PIHS / WIHS"
     },
     "part_II": {
       "paradigmatic_forms": {
@@ -148112,7 +148112,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•raa-ʔa-hu{k/t}•]",
+      "phonetic_form": "[•raa-ʔə-hʊ{k/t}•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(4)",
@@ -150191,7 +150191,7 @@
     },
     "part_I": {
       "stem_preverb": "(ir...)",
-      "phonetic_form": "[•raa-ciks-ta-ʔu•]",
+      "phonetic_form": "[•raa-čɪks-tə-ʔu•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(3)",
@@ -150221,7 +150221,7 @@
         "literal_translation": null
       },
       "cognates": [],
-      "simplified_pronunciation": "dah-tsihks-tuh-'oo"
+      "simplified_pronunciation": "dah-chihks-tuh-'oo"
     },
     "part_II": {
       "paradigmatic_forms": {
@@ -150242,7 +150242,7 @@
     },
     "derived_stems": [],
     "entry_id": "SK-raacikstaqu-p116-2258",
-    "normalized_form": "râciksta'u"
+    "normalized_form": "râčiksta'u"
   },
   {
     "headword": "raacikstaʔu",
@@ -150254,7 +150254,7 @@
     },
     "part_I": {
       "stem_preverb": "(ir...ri...uur...)",
-      "phonetic_form": "[•raa-ciks-ta-ʔu•]",
+      "phonetic_form": "[•raa-čɪks-tə-ʔu•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(3)",
@@ -150294,7 +150294,7 @@
         "literal_translation": "hold strong feelings for"
       },
       "cognates": [],
-      "simplified_pronunciation": "dah-tsihks-tuh-'oo"
+      "simplified_pronunciation": "dah-chihks-tuh-'oo"
     },
     "part_II": {
       "paradigmatic_forms": {
@@ -150315,7 +150315,7 @@
     },
     "derived_stems": [],
     "entry_id": "SK-raacikstaqu-p116-2259",
-    "normalized_form": "râciksta'u"
+    "normalized_form": "râčiksta'u"
   },
   {
     "headword": "raacikstaapirihuur",
@@ -150327,7 +150327,7 @@
     },
     "part_I": {
       "stem_preverb": "(ir...ri...uur...)",
-      "phonetic_form": "[•raa-ciks-taa-pi-ri-huu(r)•]",
+      "phonetic_form": "[•raa-čɪks-taa-pɪ-rɪ-huu(r)•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(u)",
@@ -150377,7 +150377,7 @@
         "literal_translation": "hold in esteem"
       },
       "cognates": [],
-      "simplified_pronunciation": "dah-tsihks-tah-pih-dih-hood"
+      "simplified_pronunciation": "dah-chihks-tah-pih-dih-hood"
     },
     "part_II": {
       "paradigmatic_forms": {
@@ -150398,7 +150398,7 @@
     },
     "derived_stems": [],
     "entry_id": "SK-raacikstaapirihuur-p116-2260",
-    "normalized_form": "râcikstâpirihûr"
+    "normalized_form": "râčikstâpirihûr"
   },
   {
     "headword": "raacikstawaawis",
@@ -152710,7 +152710,7 @@
     },
     "part_I": {
       "stem_preverb": "(uur...)",
-      "phonetic_form": "[•raa-hu-rii•]",
+      "phonetic_form": "[•raa-hʊ-rii•]",
       "grammatical_info": {
         "grammatical_class": "VI",
         "verb_class": "(4)",
@@ -153177,7 +153177,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•raa-ka•]",
+      "phonetic_form": "[•raa-kə•]",
       "grammatical_info": {
         "grammatical_class": "VL",
         "verb_class": null,
@@ -154609,7 +154609,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•raa-kiits-ka•]",
+      "phonetic_form": "[•raa-kiits-kə•]",
       "grammatical_info": {
         "grammatical_class": "VL",
         "verb_class": null,
@@ -155295,7 +155295,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•raa-ki-rik-ta-wi-ʔat•]",
+      "phonetic_form": "[•raa-kɪ-rɪk-tə-wi-ʔət•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(1)",
@@ -157919,7 +157919,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•raa-ra-ha{k/t}•]",
+      "phonetic_form": "[•raa-rə-hə{k/t}•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(4)",
@@ -158401,7 +158401,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[ra-rà-kaah-kɪ]",
+      "phonetic_form": "[raa-rà-kaah-kɪ]",
       "grammatical_info": {
         "grammatical_class": "N",
         "verb_class": null,
@@ -158450,7 +158450,7 @@
         "literal_translation": null
       },
       "cognates": [],
-      "simplified_pronunciation": "duh-DUH-kahh-kih"
+      "simplified_pronunciation": "dah-DUH-kahh-kih"
     },
     "part_II": {
       "paradigmatic_forms": {
@@ -159782,7 +159782,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[•raa-riks•]",
+      "phonetic_form": "[•raa-rɪks•]",
       "grammatical_info": {
         "grammatical_class": "VI",
         "verb_class": "(1)",
@@ -164493,7 +164493,7 @@
     },
     "part_I": {
       "stem_preverb": "(ir...)",
-      "phonetic_form": "[•raa-wa-kiir/ki(r)•]",
+      "phonetic_form": "[•raa-wə-kiir/kɪ(r)•]",
       "grammatical_info": {
         "grammatical_class": "VI",
         "verb_class": "(1-a)",
@@ -172082,7 +172082,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[rà-hu-raa-ri-wii-ru-ku,hu-raa-ri-wii-ru-ku]",
+      "phonetic_form": "[rà-hʊ-raa-rɪ-wii-rʊ-kʊ,hʊ-raa-rɪ-wii-rʊ-kʊ]",
       "grammatical_info": {
         "grammatical_class": "N",
         "verb_class": null,
@@ -173380,7 +173380,7 @@
     },
     "part_I": {
       "stem_preverb": "(ir...)",
-      "phonetic_form": "[•rah-wi-ʔa•]",
+      "phonetic_form": "[•rəh-wi-ʔə•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(3)",
@@ -173652,7 +173652,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[ra-kaa-ruuts,a-kaa-ruuts]",
+      "phonetic_form": "[rə-kaá-ruuts,ə-kaá-ruuts]",
       "grammatical_info": {
         "grammatical_class": "N",
         "verb_class": null,
@@ -173677,7 +173677,7 @@
         "literal_translation": null
       },
       "cognates": [],
-      "simplified_pronunciation": "duh-kah-doots / uh-kah-doots"
+      "simplified_pronunciation": "duh-KAH-doots / uh-KAH-doots"
     },
     "part_II": {
       "paradigmatic_forms": {
@@ -178836,7 +178836,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[rà-ra-rii-huu-ra-ruu-wa-rii,i-rií-ra-ra-rii-huu-ra-ruu-wa-rii]",
+      "phonetic_form": "[rà-rə-rii-huu-rə-ruu-wə-rii,ɪ-rií-rə-rə-rii-huu-rə-ruu-wə-rii]",
       "grammatical_info": {
         "grammatical_class": "N",
         "verb_class": null,
@@ -180029,7 +180029,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•ra-riis•]",
+      "phonetic_form": "[•rə-riis•]",
       "grammatical_info": {
         "grammatical_class": "VI",
         "verb_class": "(2)",
@@ -180178,7 +180178,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•ra-riis(k)•]",
+      "phonetic_form": "[•rə-riis(k)•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(1)",
@@ -181618,7 +181618,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[ra-sa-ku-ha-ku,i-rií-ra-sa-ku-ha-ku]",
+      "phonetic_form": "[rə-sə-kʊ-hə-kʊ,ɪ-rií-rə-sə-kʊ-hə-kʊ]",
       "grammatical_info": {
         "grammatical_class": "N, ADV",
         "verb_class": null,
@@ -182038,7 +182038,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[ra-ta-wi•,ha-ta-wi•]",
+      "phonetic_form": "[rə-tə-wɪ•,hə-tə-wɪ•]",
       "grammatical_info": {
         "grammatical_class": "N-DEP",
         "verb_class": null,
@@ -182380,7 +182380,7 @@
     },
     "part_I": {
       "stem_preverb": "(ir...)",
-      "phonetic_form": "[•rat-ka-haah-tii-hak-sa•]",
+      "phonetic_form": "[•rət-kə-haah-tii-hək-sə•]",
       "grammatical_info": {
         "grammatical_class": "VI",
         "verb_class": "(3)",
@@ -196954,7 +196954,7 @@
     },
     "part_I": {
       "stem_preverb": "(uur...)",
-      "phonetic_form": "[•sa-kuh-wi-rii(r)•]",
+      "phonetic_form": "[•sə-kʊh-wɪ-rii(r)•]",
       "grammatical_info": {
         "grammatical_class": "VI",
         "verb_class": "(1-a)",
@@ -197153,7 +197153,7 @@
     },
     "part_I": {
       "stem_preverb": "(uur...)",
-      "phonetic_form": "[•sa-ku-rii(r)•]",
+      "phonetic_form": "[•sə-kʊ-rii(r)•]",
       "grammatical_info": {
         "grammatical_class": "VI",
         "verb_class": "(1-a)",
@@ -197411,7 +197411,7 @@
     },
     "part_I": {
       "stem_preverb": "(uur...)",
-      "phonetic_form": "[•sa-kuu-ra-wi-rii(r)•]",
+      "phonetic_form": "[•sə-kuu-rə-wɪ-rii(r)•]",
       "grammatical_info": {
         "grammatical_class": "VI",
         "verb_class": "(1-a)",
@@ -199890,7 +199890,7 @@
     },
     "part_I": {
       "stem_preverb": "(ir...)",
-      "phonetic_form": "[•ta-ʔu•]",
+      "phonetic_form": "[•tə-ʔu•]",
       "grammatical_info": {
         "grammatical_class": "VI",
         "verb_class": "(3)",
@@ -201508,7 +201508,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•ta-haa-ri•]",
+      "phonetic_form": "[•tə-haa-rɪ•]",
       "grammatical_info": {
         "grammatical_class": "VL",
         "verb_class": null,
@@ -202085,7 +202085,7 @@
     },
     "part_I": {
       "stem_preverb": "(ir...)",
-      "phonetic_form": "[•ta-ha-ta-ʔu•]",
+      "phonetic_form": "[•tə-hə-tə-ʔu•]",
       "grammatical_info": {
         "grammatical_class": "VI",
         "verb_class": "(3)",
@@ -202148,7 +202148,7 @@
     },
     "part_I": {
       "stem_preverb": "(ir...ri...ut...)",
-      "phonetic_form": "[•ta-ha-tii•]",
+      "phonetic_form": "[•tə-hə-tii•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(4)",
@@ -205625,7 +205625,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•ta-ku(s)•]",
+      "phonetic_form": "[•tə-kʊ(s)•]",
       "grammatical_info": {
         "grammatical_class": "VI",
         "verb_class": "(4)",
@@ -209777,7 +209777,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•ta-rii-ki-wat•]",
+      "phonetic_form": "[•tə-rii-kɪ-wət•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(2-i)",
@@ -211177,7 +211177,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•ta-ta-ta-ʔat•]",
+      "phonetic_form": "[•tə-tə-tə-ʔət•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(1)",
@@ -212174,7 +212174,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[tà-wa-kiks,à-wa-kiks]",
+      "phonetic_form": "[tà-wə-kɪks,à-wə-kɪks]",
       "grammatical_info": {
         "grammatical_class": "N",
         "verb_class": null,
@@ -213173,7 +213173,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[•ta-wi-ʔii-ta•]",
+      "phonetic_form": "[•tə-wi-ʔii-tə•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(wi)",
@@ -213604,7 +213604,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•ta-wi-huh-ta-wii•]",
+      "phonetic_form": "[•tə-wɪ-hʊh-tə-wii•]",
       "grammatical_info": {
         "grammatical_class": "VD",
         "verb_class": null,
@@ -214295,7 +214295,7 @@
     },
     "part_I": {
       "stem_preverb": "(ir...)",
-      "phonetic_form": "[•ta-wi-raa-ʔa•]",
+      "phonetic_form": "[•tə-wɪ-raa-ʔə•]",
       "grammatical_info": {
         "grammatical_class": "VI",
         "verb_class": "(3)",
@@ -216813,7 +216813,7 @@
     },
     "part_I": {
       "stem_preverb": "(uur...)",
-      "phonetic_form": "[•tii-tu-rii-ri{k/t}•]",
+      "phonetic_form": "[•tii-tʊ-rii-rɪ{k/t}•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(1)",
@@ -218170,7 +218170,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[ti-waat]",
+      "phonetic_form": "[tí-waat]",
       "grammatical_info": {
         "grammatical_class": "N-KIN",
         "verb_class": null,
@@ -218200,7 +218200,7 @@
         "literal_translation": "my nephew/niece"
       },
       "cognates": [],
-      "simplified_pronunciation": "tih-waht"
+      "simplified_pronunciation": "TIH-waht"
     },
     "part_II": {
       "paradigmatic_forms": {
@@ -218233,7 +218233,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[ti-wa-ci-riks]",
+      "phonetic_form": "[tí-wə-čɪ-rɪks]",
       "grammatical_info": {
         "grammatical_class": "N-KIN",
         "verb_class": null,
@@ -218263,7 +218263,7 @@
         "literal_translation": "my uncle"
       },
       "cognates": [],
-      "simplified_pronunciation": "tih-wuh-tsih-dihks"
+      "simplified_pronunciation": "TIH-wuh-chih-dihks"
     },
     "part_II": {
       "paradigmatic_forms": {
@@ -218284,7 +218284,7 @@
     },
     "derived_stems": [],
     "entry_id": "SK-tiwaciriks-p166-3279",
-    "normalized_form": "tiwaciriks"
+    "normalized_form": "tiwačiriks"
   },
   {
     "headword": "Tuhaawit",
@@ -218653,7 +218653,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•tu-kaa•]",
+      "phonetic_form": "[•tʊ-kaa•]",
       "grammatical_info": {
         "grammatical_class": "VL",
         "verb_class": null,
@@ -220369,7 +220369,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•u-huh-ki-raa•]",
+      "phonetic_form": "[•ʊ-hʊh-kɪ-raa•]",
       "grammatical_info": {
         "grammatical_class": "VL",
         "verb_class": null,
@@ -220495,7 +220495,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•u-huh-ki-raa-wu(h)•]",
+      "phonetic_form": "[•ʊ-hʊh-kɪ-raa-wʊ(h)•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(1)",
@@ -224675,7 +224675,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•uk-ta•]",
+      "phonetic_form": "[•ʊk-tə•]",
       "grammatical_info": {
         "grammatical_class": "VL",
         "verb_class": null,
@@ -224959,7 +224959,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•uk-ta-wu(h)•]",
+      "phonetic_form": "[•ʊk-tə-wʊ(h)•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(1)",
@@ -227970,7 +227970,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•uus-kuu-ʔat•]",
+      "phonetic_form": "[•uus-kuu-ʔət•]",
       "grammatical_info": {
         "grammatical_class": "VD",
         "verb_class": null,
@@ -231481,7 +231481,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•wa-kuh-cii-ha-ri-saa(r)•]",
+      "phonetic_form": "[•wə-kʊh-čii-hə-rɪ-saa(r)•]",
       "grammatical_info": {
         "grammatical_class": "VI",
         "verb_class": "(1-i)",
@@ -231511,7 +231511,7 @@
         "literal_translation": "tease in speech"
       },
       "cognates": [],
-      "simplified_pronunciation": "wuh-kooh-tsee-huh-dih-sahd"
+      "simplified_pronunciation": "wuh-kooh-chee-huh-dih-sahd"
     },
     "part_II": {
       "paradigmatic_forms": {
@@ -231532,7 +231532,7 @@
     },
     "derived_stems": [],
     "entry_id": "SK-wakuhciiharisaar-p176-3479",
-    "normalized_form": "wakuhcîharisâr"
+    "normalized_form": "wakuhčîharisâr"
   },
   {
     "headword": "wakuhka",
@@ -232878,7 +232878,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[•wa(r)•]",
+      "phonetic_form": "[•wə(r)•]",
       "grammatical_info": {
         "grammatical_class": "VI",
         "verb_class": "(1)",
@@ -237042,7 +237042,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[wi-ta(wi)•(ut...)]",
+      "phonetic_form": "[wɪ-tə(wɪ)•(ʊt...)]",
       "grammatical_info": {
         "grammatical_class": "LOC",
         "verb_class": null,
@@ -238248,7 +238248,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[a,aa]",
+      "phonetic_form": "[ə,aa]",
       "grammatical_info": {
         "grammatical_class": "CONJ",
         "verb_class": null,
@@ -238304,7 +238304,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[à-ʔas]",
+      "phonetic_form": "[à-ʔəs]",
       "grammatical_info": {
         "grammatical_class": "N",
         "verb_class": null,
@@ -246056,7 +246056,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[à-pat]",
+      "phonetic_form": "[à-pət]",
       "grammatical_info": {
         "grammatical_class": "N",
         "verb_class": null,
@@ -246806,7 +246806,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[à-ra]",
+      "phonetic_form": "[à-rə]",
       "grammatical_info": {
         "grammatical_class": "N",
         "verb_class": null,
@@ -250530,7 +250530,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[à-sas]",
+      "phonetic_form": "[à-səs]",
       "grammatical_info": {
         "grammatical_class": "N",
         "verb_class": null,
@@ -257647,7 +257647,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[•hik-su-kats•]",
+      "phonetic_form": "[•hɪk-sʊ-kəts•]",
       "grammatical_info": {
         "grammatical_class": "VP",
         "verb_class": "(4)",
@@ -261015,7 +261015,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•iis-ti(r)•]",
+      "phonetic_form": "[•iis-tɪ(r)•]",
       "grammatical_info": {
         "grammatical_class": "VI",
         "verb_class": "(1-a)",
@@ -261380,7 +261380,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[i-waa-hiʔ]",
+      "phonetic_form": "[ɪ-waá-hiʔ]",
       "grammatical_info": {
         "grammatical_class": "N",
         "verb_class": null,
@@ -261415,7 +261415,7 @@
         "literal_translation": "his nephew/niece"
       },
       "cognates": [],
-      "simplified_pronunciation": "ih-wah-hih'"
+      "simplified_pronunciation": "ih-WAH-hih'"
     },
     "part_II": {
       "paradigmatic_forms": {
@@ -261448,7 +261448,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[i-wà-rii-riks]",
+      "phonetic_form": "[ɪ-wà-rii-rɪks]",
       "grammatical_info": {
         "grammatical_class": "N",
         "verb_class": null,
@@ -261692,7 +261692,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•ka•]",
+      "phonetic_form": "[•kə•]",
       "grammatical_info": {
         "grammatical_class": "VL",
         "verb_class": null,
@@ -264908,7 +264908,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[•ki-wa{k/t}•]",
+      "phonetic_form": "[•kɪ-wə{k/t}•]",
       "grammatical_info": {
         "grammatical_class": "VI",
         "verb_class": "(4)",
@@ -273682,7 +273682,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•ra-ca-raa-tat(k)•]",
+      "phonetic_form": "[•rə-čə-raa-tət(k)•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(1)",
@@ -273712,7 +273712,7 @@
         "literal_translation": null
       },
       "cognates": [],
-      "simplified_pronunciation": "duh-tsuh-dah-tuhtk"
+      "simplified_pronunciation": "duh-chuh-dah-tuhtk"
     },
     "part_II": {
       "paradigmatic_forms": {
@@ -273733,7 +273733,7 @@
     },
     "derived_stems": [],
     "entry_id": "SK-racaraatatk-p478-4106",
-    "normalized_form": "racarâtatk"
+    "normalized_form": "račarâtatk"
   },
   {
     "headword": "racarahak",
@@ -274327,7 +274327,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•ra-ca-wak-taa-ri{k/t}•]",
+      "phonetic_form": "[•rə-čə-wək-taa-rɪ{k/t}•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(1)",
@@ -274367,7 +274367,7 @@
         "literal_translation": "cause to ring for"
       },
       "cognates": [],
-      "simplified_pronunciation": "duh-tsuh-wuhk-tah-dih"
+      "simplified_pronunciation": "duh-chuh-wuhk-tah-dih"
     },
     "part_II": {
       "paradigmatic_forms": {
@@ -274388,7 +274388,7 @@
     },
     "derived_stems": [],
     "entry_id": "SK-racawaktaarik-p478-4116",
-    "normalized_form": "racawaktârik"
+    "normalized_form": "račawaktârik"
   },
   {
     "headword": "raciituʔ",
@@ -280629,7 +280629,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[rit-ku-ka-ta-wiiʔ,ku-kà-ta-wiiʔ]",
+      "phonetic_form": "[rít-kʊ-kə-tə-wiiʔ,kʊ-kà-tə-wiiʔ]",
       "grammatical_info": {
         "grammatical_class": "N",
         "verb_class": null,
@@ -280659,7 +280659,7 @@
         "literal_translation": "curled up tail"
       },
       "cognates": [],
-      "simplified_pronunciation": "diht-koo-kuh-tuh-wee' / koo-KUH-tuh-wee'"
+      "simplified_pronunciation": "DIHT-koo-kuh-tuh-wee' / koo-KUH-tuh-wee'"
     },
     "part_II": {
       "paradigmatic_forms": {
@@ -281954,7 +281954,7 @@
     },
     "part_I": {
       "stem_preverb": null,
-      "phonetic_form": "[•ta-kaa(r)•]",
+      "phonetic_form": "[•taa-kaa(r)•]",
       "grammatical_info": {
         "grammatical_class": "VD",
         "verb_class": null,
@@ -281978,7 +281978,7 @@
         "literal_translation": null
       },
       "cognates": [],
-      "simplified_pronunciation": "tuh-kahd"
+      "simplified_pronunciation": "tah-kahd"
     },
     "part_II": {
       "paradigmatic_forms": {
@@ -283090,7 +283090,7 @@
     },
     "part_I": {
       "stem_preverb": "(ut...)",
-      "phonetic_form": "[•taa-ri-kii(h){k/t}•]",
+      "phonetic_form": "[•taa-rɪ-kii(h){k/t}•]",
       "grammatical_info": {
         "grammatical_class": "VT",
         "verb_class": "(1)",
@@ -283908,7 +283908,7 @@
     },
     "part_I": {
       "stem_preverb": "(uur...)",
-      "phonetic_form": "[•wi-ra-rii(r)•]",
+      "phonetic_form": "[•wɪ-rə-rii(r)•]",
       "grammatical_info": {
         "grammatical_class": "VD",
         "verb_class": null,

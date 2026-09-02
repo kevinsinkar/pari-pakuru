@@ -24,6 +24,23 @@
 >
 > Still open: the AI-vs-print paradigm-form doubt, gloss-qualifier truncations, the 47
 > unresolved cognate `÷`, 78 example-hyphen candidates, and the 9 unrecovered phonetics.
+>
+> **SECOND-METHOD CROSS-VALIDATION (same day, later):** all 4,273 phonetic forms were
+> cross-checked against an independent extraction path — the PDF's embedded text layer
+> (pdftotext, `reports/_s2e_page_index.json`), which preserves IPA and pitch accents.
+> Initial agreement 96.7% exact. The disagreements decomposed into: 123 entries where
+> the AI extraction had degraded to plain ASCII while the text layer preserved the true
+> printed IPA (ə/ɪ/ʊ/č/accents), 3 accent-only gaps, 4 reviewed d=1 slips (dropped
+> long-vowel letters, headword-corroborated), 9 alignment-noise conflicts, and 1 case
+> where the DB was richer. `scripts/upgrade_phonetics_from_textlayer.py --apply`
+> adopted the 130 safe upgrades (plain-skeleton-identical, strictly richer only) and
+> regenerated 15 normalized_forms + 36 pronunciations — the 15 spelling corrections
+> were exactly the earlier c-context-rule "exceptions" (paca→pača, icis→ičis...),
+> confirming those were extraction artifacts. **Post-upgrade: 99.76% exact agreement**
+> between the two independent methods (4,194/4,204 compared; 9 residual conflicts are
+> regex alignment noise, listed in `reports/_crossval_phonetics.json`), and the
+> rule-based modernizer now reproduces attested normalized_forms at 99.84%.
+> Accent-mark confidence, previously the weakest link, is now second-source-verified.
 
 Scope: targeted (not full-scale) audit of (1) PDF → JSON → SQLite extraction fidelity and
 (2) the old-spelling → modern-spelling (`normalized_form`) conversion. Method: 50-entry
