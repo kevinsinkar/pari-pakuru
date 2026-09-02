@@ -172,8 +172,14 @@ TEMPLATES: Dict[str, TemplateInfo] = {
         slots=[
             {"name": "noun", "type": "N", "required": False,
              "description": "The subject (optional if clear from context)"},
-            {"name": "verb_form", "type": "VERB_FORM", "required": True,
+            {"name": "verb_form", "type": "VERB_FORM", "required": False,
              "description": "Pre-conjugated verb form (absolutive mode)"},
+            {"name": "verb", "type": "V", "required": False,
+             "description": "Dictionary verb — auto-conjugated (alternative "
+                            "to verb_form)"},
+            {"name": "person", "type": "PERSON", "required": False,
+             "description": "Who: 1sg (I) / 2sg (you) / 3sg (he,she,it); "
+                            "used with 'verb'"},
         ],
         lessons="L01–L20",
         bb_count=15,
@@ -187,8 +193,13 @@ TEMPLATES: Dict[str, TemplateInfo] = {
         slots=[
             {"name": "subject", "type": "N", "required": False,
              "description": "The subject (precedes kirike if present)"},
-            {"name": "verb_form", "type": "VERB_FORM", "required": True,
+            {"name": "verb_form", "type": "VERB_FORM", "required": False,
              "description": "Pre-conjugated verb form (absolutive mode)"},
+            {"name": "verb", "type": "V", "required": False,
+             "description": "Dictionary verb — auto-conjugated (alternative "
+                            "to verb_form)"},
+            {"name": "person", "type": "PERSON", "required": False,
+             "description": "Who: 1sg / 2sg / 3sg; used with 'verb'"},
         ],
         lessons="L01–L18",
         bb_count=17,
@@ -200,8 +211,13 @@ TEMPLATES: Dict[str, TemplateInfo] = {
         skiri_example="Kiru rasuks•at?",
         english_example="Where did you go?",
         slots=[
-            {"name": "verb_form", "type": "VERB_FORM", "required": True,
+            {"name": "verb_form", "type": "VERB_FORM", "required": False,
              "description": "Pre-conjugated verb form (absolutive mode)"},
+            {"name": "verb", "type": "V", "required": False,
+             "description": "Dictionary verb — auto-conjugated (alternative "
+                            "to verb_form)"},
+            {"name": "person", "type": "PERSON", "required": False,
+             "description": "Who: 1sg / 2sg / 3sg; used with 'verb'"},
             {"name": "noun", "type": "N", "required": False,
              "description": "Subject noun (optional)"},
         ],
@@ -249,8 +265,17 @@ TEMPLATES: Dict[str, TemplateInfo] = {
              "description": "Manner adverb (rariksisu 'hard', cikstit 'well')"},
             {"name": "object", "type": "N", "required": False,
              "description": "Object noun (for transitive verbs)"},
-            {"name": "verb_form", "type": "VERB_FORM", "required": True,
+            {"name": "verb_form", "type": "VERB_FORM", "required": False,
              "description": "1sg conjugated verb form"},
+            {"name": "verb", "type": "V", "required": False,
+             "description": "Dictionary verb — auto-conjugated (alternative "
+                            "to verb_form)"},
+            {"name": "person", "type": "PERSON", "required": False,
+             "description": "Who: 1sg (I, default) / 2sg (you) / 3sg; "
+                            "used with 'verb'"},
+            {"name": "tense", "type": "TENSE", "required": False,
+             "description": "past (default) / present / future; "
+                            "used with 'verb'"},
             {"name": "locative", "type": "LOCATIVE", "required": False,
              "description": "Place (Pari, tuks•kaku', etc.)"},
         ],
@@ -268,8 +293,14 @@ TEMPLATES: Dict[str, TemplateInfo] = {
              "description": "The subject (animate noun)"},
             {"name": "we_particle", "type": "BOOL", "required": False,
              "description": "Add 'we' particle (past/completed action)"},
-            {"name": "verb_form", "type": "VERB_FORM", "required": True,
+            {"name": "verb_form", "type": "VERB_FORM", "required": False,
              "description": "3sg conjugated verb form"},
+            {"name": "verb", "type": "V", "required": False,
+             "description": "Dictionary verb — auto-conjugated (alternative "
+                            "to verb_form)"},
+            {"name": "tense", "type": "TENSE", "required": False,
+             "description": "past (default) / present / future; "
+                            "used with 'verb'"},
             {"name": "object", "type": "N", "required": False,
              "description": "Object noun (for transitive verbs)"},
             {"name": "temporal", "type": "TEMPORAL", "required": False,
@@ -404,6 +435,100 @@ def lookup_gloss(conn: sqlite3.Connection, entry_id: str) -> Optional[str]:
     return row["definition"] if row else None
 
 
+try:
+    from person_forms import derive_forms as _derive_person_forms
+except ImportError:  # imported as a package (web app): scripts.person_forms
+    try:
+        from scripts.person_forms import derive_forms as _derive_person_forms
+    except ImportError:  # pragma: no cover
+        _derive_person_forms = None
+
+PERSON_LABELS = {"1sg": "I", "2sg": "you", "3sg": "he/she/it"}
+# (mode, tense) -> derive_forms key pattern; {p} is the person
+_FORM_KEY = {
+    ("ind", "past"): "{p}_ind",
+    ("ind", "present"): "{p}_ind_impf",
+    ("ind", "future"): "{p}_ind_int",
+    ("abs", "past"): "{p}_abs",
+}
+# keys that are attested dictionary forms verbatim (not derived)
+_ATTESTED_KEYS = {"1sg_ind", "3sg_ind", "3sg_ind_impf", "3sg_ind_int"}
+
+
+def resolve_verb_form(conn: sqlite3.Connection, verb: str,
+                      person: str = "3sg", tense: str = "past",
+                      mode: str = "ind") -> Dict[str, Any]:
+    """Resolve a dictionary verb + person/tense/mode to a surface form.
+
+    Uses the entry's attested paradigmatic forms directly when they cover the
+    request (1sg/3sg indicative), and person_forms.py derivation (validated
+    27/27 against Parks Appendix 1) for 2nd person and absolutive mode.
+
+    Returns {"form","gloss","entry_id","derived","note"} or {"error": ...}.
+    """
+    if _derive_person_forms is None:
+        return {"error": "person_forms.py not available"}
+    if person not in PERSON_LABELS:
+        return {"error": f"Unsupported person {person!r} (use 1sg/2sg/3sg)"}
+    key_pattern = _FORM_KEY.get((mode, tense))
+    if key_pattern is None:
+        return {"error": f"Unsupported mode/tense combination {mode}/{tense}"}
+
+    cur = conn.cursor()
+    cur.execute(
+        "SELECT le.entry_id, le.headword, le.stem_preverb, le.verb_class, "
+        "  le.grammatical_class, "
+        "  max(CASE WHEN pf.form_number=1 THEN pf.skiri_form END) AS f1, "
+        "  max(CASE WHEN pf.form_number=2 THEN pf.skiri_form END) AS f2, "
+        "  max(CASE WHEN pf.form_number=3 THEN pf.skiri_form END) AS f3, "
+        "  max(CASE WHEN pf.form_number=5 THEN pf.skiri_form END) AS f5 "
+        "FROM lexical_entries le "
+        "LEFT JOIN paradigmatic_forms pf ON le.entry_id = pf.entry_id "
+        "WHERE (le.headword = ? OR le.normalized_form = ? "
+        "       OR le.headword LIKE ?) "
+        "  AND le.grammatical_class LIKE 'V%' "
+        "GROUP BY le.entry_id "
+        "ORDER BY (le.headword = ?) DESC, (f1 IS NOT NULL) DESC, "
+        "         (f2 IS NOT NULL) DESC, length(le.headword) LIMIT 1",
+        (verb, verb, verb + "%", verb),
+    )
+    row = cur.fetchone()
+    if not row:
+        return {"error": f"No verb entry found for {verb!r}"}
+
+    forms = _derive_person_forms(
+        form_1=row["f1"], form_2=row["f2"], form_3=row["f3"],
+        form_5=row["f5"], headword=row["headword"],
+        stem_preverb=row["stem_preverb"],
+        gram_class=row["grammatical_class"],
+    )
+    key = key_pattern.format(p=person)
+    surface = forms.get(key)
+    if not surface:
+        return {"error": f"Form {key} not derivable for {row['headword']!r} "
+                         f"(paradigm forms incomplete or irregular shape)"}
+
+    gloss = lookup_gloss(conn, row["entry_id"]) or row["headword"]
+    # keep the gloss short for sentence display: first clause only
+    gloss = re.split(r'[;,]', gloss)[0].strip().rstrip('.')
+    derived = key not in _ATTESTED_KEYS
+    note = None
+    if derived:
+        if mode == "abs" or person == "2sg":
+            note = ("verb form derived from the attested paradigm by the "
+                    "person/mode prefix rules of Parks Appendix 1")
+        else:
+            note = ("verb form derived by prefix transplant across attested "
+                    "aspect forms (unattested combination — verify)")
+    return {
+        "form": surface,
+        "gloss": gloss,
+        "entry_id": row["entry_id"],
+        "derived": derived,
+        "note": note,
+    }
+
+
 def find_bb_attestation(
     conn: sqlite3.Connection, skiri_text: str
 ) -> Optional[str]:
@@ -431,6 +556,42 @@ def find_bb_attestation(
     if matches:
         return ", ".join(sorted(set(matches)))
     return None
+
+
+def _maybe_resolve_verb(conn, slots, mode, default_person="3sg",
+                        default_tense="past"):
+    """If slots carry a dictionary 'verb' (+person/tense) instead of a
+    pre-conjugated 'verb_form', resolve it via resolve_verb_form().
+
+    Returns (verb_form, resolution_or_None, error_or_None)."""
+    verb_form = (slots.get("verb_form") or "").strip()
+    if verb_form:
+        return verb_form, None, None
+    verb = (slots.get("verb") or "").strip()
+    if not verb:
+        return "", None, None
+    person = (slots.get("person") or default_person).strip() or default_person
+    tense = (slots.get("tense") or default_tense).strip() or default_tense
+    res = resolve_verb_form(conn, verb, person=person, tense=tense, mode=mode)
+    if "error" in res:
+        return "", None, res["error"]
+    res["person"] = person
+    res["tense"] = tense
+    return res["form"], res, None
+
+
+def _apply_resolution(result: "TemplateResult", res: Optional[Dict]) -> None:
+    """Cap confidence and attach the derivation note for resolved verbs."""
+    if not res:
+        return
+    if res.get("derived"):
+        if result.confidence == "HIGH" and not result.bb_attestation:
+            result.confidence = "MEDIUM"
+        if res.get("note"):
+            extra = f"Verb: {res['note']}"
+            result.word_order_note = (
+                f"{result.word_order_note} — {extra}"
+                if result.word_order_note else extra)
 
 
 # ---------------------------------------------------------------------------
@@ -529,14 +690,14 @@ def _assemble_t2(conn: sqlite3.Connection, **slots) -> TemplateResult:
 
 def _assemble_t3(conn: sqlite3.Connection, **slots) -> TemplateResult:
     """T3: Yes/No Question — 'ka [VERB_FORM] [NOUN]?'"""
-    verb_form = slots.get("verb_form", "").strip()
+    verb_form, res, err = _maybe_resolve_verb(conn, slots, mode="abs")
     noun = slots.get("noun", "").strip()
 
-    if not verb_form:
+    if err or not verb_form:
         return TemplateResult(
             skiri_sentence="", english_gloss="", template_id="T3",
             template_name="Yes/No Question", confidence="LOW",
-            error="Verb form slot is required",
+            error=err or "Verb form (or verb + person) slot is required",
         )
 
     parts = ["ka", verb_form]
@@ -544,10 +705,13 @@ def _assemble_t3(conn: sqlite3.Connection, **slots) -> TemplateResult:
         parts.append(noun)
     sentence = " ".join(parts) + "?"
 
+    verb_gloss = (f"{PERSON_LABELS.get(res['person'], '')} {res['gloss']}"
+                  if res else "verb (absolutive)")
     # Build breakdown
     breakdown = [
         MorphemeChip(form="ka", gloss="(yes/no question)", role="PARTICLE"),
-        MorphemeChip(form=verb_form, gloss="verb (absolutive)", role="VERB"),
+        MorphemeChip(form=verb_form, gloss=verb_gloss, role="VERB",
+                     entry_id=res["entry_id"] if res else None),
     ]
     if noun:
         noun_entry = lookup_entry(conn, noun)
@@ -561,11 +725,15 @@ def _assemble_t3(conn: sqlite3.Connection, **slots) -> TemplateResult:
             )
         )
 
-    english = f"Is {noun or 'it'} {verb_form}?"
+    if res:
+        subj = noun or PERSON_LABELS.get(res["person"], "it")
+        english = f"[yes/no?] {subj} — {res['gloss']}"
+    else:
+        english = f"Is {noun or 'it'} {verb_form}?"
     bb = find_bb_attestation(conn, sentence)
     confidence = "HIGH" if bb else "MEDIUM"
 
-    return TemplateResult(
+    result = TemplateResult(
         skiri_sentence=sentence,
         english_gloss=english,
         template_id="T3",
@@ -575,18 +743,20 @@ def _assemble_t3(conn: sqlite3.Connection, **slots) -> TemplateResult:
         bb_attestation=bb,
         word_order_note="Adverb (e.g., cikstit) can precede ka",
     )
+    _apply_resolution(result, res)
+    return result
 
 
 def _assemble_t4(conn: sqlite3.Connection, **slots) -> TemplateResult:
     """T4: What Question — '(SUBJECT) kirike [VERB_FORM]?'"""
     subject = slots.get("subject", "").strip()
-    verb_form = slots.get("verb_form", "").strip()
+    verb_form, res, err = _maybe_resolve_verb(conn, slots, mode="abs")
 
-    if not verb_form:
+    if err or not verb_form:
         return TemplateResult(
             skiri_sentence="", english_gloss="", template_id="T4",
             template_name="What Question", confidence="LOW",
-            error="Verb form slot is required",
+            error=err or "Verb form (or verb + person) slot is required",
         )
 
     parts = []
@@ -608,14 +778,20 @@ def _assemble_t4(conn: sqlite3.Connection, **slots) -> TemplateResult:
             )
         )
     breakdown.append(MorphemeChip(form="kirike", gloss="what", role="PARTICLE"))
-    breakdown.append(MorphemeChip(form=verb_form, gloss="verb (absolutive)", role="VERB"))
+    breakdown.append(MorphemeChip(
+        form=verb_form,
+        gloss=(f"{PERSON_LABELS.get(res['person'], '')} {res['gloss']}"
+               if res else "verb (absolutive)"),
+        role="VERB", entry_id=res["entry_id"] if res else None))
 
-    subj_str = f"the {subject}" if subject else "it"
-    english = f"What is {subj_str} doing?"
+    subj_str = (f"the {subject}" if subject
+                else PERSON_LABELS.get(res["person"], "it") if res else "it")
+    english = (f"What — {subj_str} — {res['gloss']}?" if res
+               else f"What is {subj_str} doing?")
     bb = find_bb_attestation(conn, sentence)
     confidence = "HIGH" if bb else "MEDIUM"
 
-    return TemplateResult(
+    result = TemplateResult(
         skiri_sentence=sentence,
         english_gloss=english,
         template_id="T4",
@@ -625,18 +801,20 @@ def _assemble_t4(conn: sqlite3.Connection, **slots) -> TemplateResult:
         bb_attestation=bb,
         word_order_note="Subject precedes kirike when present",
     )
+    _apply_resolution(result, res)
+    return result
 
 
 def _assemble_t5(conn: sqlite3.Connection, **slots) -> TemplateResult:
     """T5: Where Question — 'kiru [VERB_FORM] [NOUN]?'"""
-    verb_form = slots.get("verb_form", "").strip()
+    verb_form, res, err = _maybe_resolve_verb(conn, slots, mode="abs")
     noun = slots.get("noun", "").strip()
 
-    if not verb_form:
+    if err or not verb_form:
         return TemplateResult(
             skiri_sentence="", english_gloss="", template_id="T5",
             template_name="Where Question", confidence="LOW",
-            error="Verb form slot is required",
+            error=err or "Verb form (or verb + person) slot is required",
         )
 
     parts = ["kiru", verb_form]
@@ -646,7 +824,11 @@ def _assemble_t5(conn: sqlite3.Connection, **slots) -> TemplateResult:
 
     breakdown = [
         MorphemeChip(form="kiru", gloss="where", role="PARTICLE"),
-        MorphemeChip(form=verb_form, gloss="verb (absolutive)", role="VERB"),
+        MorphemeChip(
+            form=verb_form,
+            gloss=(f"{PERSON_LABELS.get(res['person'], '')} {res['gloss']}"
+                   if res else "verb (absolutive)"),
+            role="VERB", entry_id=res["entry_id"] if res else None),
     ]
     if noun:
         noun_entry = lookup_entry(conn, noun)
@@ -660,11 +842,15 @@ def _assemble_t5(conn: sqlite3.Connection, **slots) -> TemplateResult:
             )
         )
 
-    english = f"Where did {noun or 'it'} go/is?"
+    if res:
+        subj = noun or PERSON_LABELS.get(res["person"], "it")
+        english = f"Where — {subj} — {res['gloss']}?"
+    else:
+        english = f"Where did {noun or 'it'} go/is?"
     bb = find_bb_attestation(conn, sentence)
     confidence = "HIGH" if bb else "MEDIUM"
 
-    return TemplateResult(
+    result = TemplateResult(
         skiri_sentence=sentence,
         english_gloss=english,
         template_id="T5",
@@ -674,6 +860,8 @@ def _assemble_t5(conn: sqlite3.Connection, **slots) -> TemplateResult:
         bb_attestation=bb,
         word_order_note="Also 'kirti' for 'where (destination)'",
     )
+    _apply_resolution(result, res)
+    return result
 
 
 def _assemble_t6(conn: sqlite3.Connection, **slots) -> TemplateResult:
@@ -751,14 +939,15 @@ def _assemble_t8(conn: sqlite3.Connection, **slots) -> TemplateResult:
     temporal = slots.get("temporal", "").strip()
     adv_manner = slots.get("adv_manner", "").strip()
     obj = slots.get("object", "").strip()
-    verb_form = slots.get("verb_form", "").strip()
+    verb_form, res, err = _maybe_resolve_verb(conn, slots, mode="ind",
+                                              default_person="1sg")
     locative = slots.get("locative", "").strip()
 
-    if not verb_form:
+    if err or not verb_form:
         return TemplateResult(
             skiri_sentence="", english_gloss="", template_id="T8",
             template_name="I did/do/will [verb]", confidence="LOW",
-            error="Verb form slot is required",
+            error=err or "Verb form (or verb + person/tense) slot is required",
         )
 
     parts = []
@@ -781,7 +970,11 @@ def _assemble_t8(conn: sqlite3.Connection, **slots) -> TemplateResult:
     #   Tah•raspe' asaki   "I'm looking for my dog" (L08)
     # But quantified objects precede: Tawit kaas tatutak•erit (L13)
     parts.append(verb_form)
-    breakdown.append(MorphemeChip(form=verb_form, gloss="I (verb)", role="VERB"))
+    breakdown.append(MorphemeChip(
+        form=verb_form,
+        gloss=(f"{PERSON_LABELS.get(res['person'], 'I')} "
+               f"({res['tense']}) {res['gloss']}" if res else "I (verb)"),
+        role="VERB", entry_id=res["entry_id"] if res else None))
 
     if obj:
         parts.append(obj)
@@ -803,8 +996,13 @@ def _assemble_t8(conn: sqlite3.Connection, **slots) -> TemplateResult:
     sentence = " ".join(parts)
 
     # Build English gloss
-    eng_parts = ["I"]
-    eng_parts.append(verb_form)  # placeholder
+    if res:
+        tense_aux = {"past": "", "present": "(am/is -ing) ",
+                     "future": "(will) "}.get(res["tense"], "")
+        eng_parts = [PERSON_LABELS.get(res["person"], "I"),
+                     f"{tense_aux}{res['gloss']}"]
+    else:
+        eng_parts = ["I", verb_form]  # placeholder
     if adv_manner:
         eng_parts.append(f"({adv_manner})")
     if obj:
@@ -816,7 +1014,7 @@ def _assemble_t8(conn: sqlite3.Connection, **slots) -> TemplateResult:
     bb = find_bb_attestation(conn, sentence)
     confidence = "HIGH" if bb else "MEDIUM"
 
-    return TemplateResult(
+    result = TemplateResult(
         skiri_sentence=sentence,
         english_gloss=english,
         template_id="T8",
@@ -827,21 +1025,24 @@ def _assemble_t8(conn: sqlite3.Connection, **slots) -> TemplateResult:
         word_order_note="Temporal can be clause-initial or clause-final (both attested L17). "
                         "Manner adverbs precede verb (L18: rariksisu tatutsiks•a•wahri').",
     )
+    _apply_resolution(result, res)
+    return result
 
 
 def _assemble_t9(conn: sqlite3.Connection, **slots) -> TemplateResult:
     """T9: 3sg Narrative — '[SUBJECT] (we) [3SG_VERB] [OBJECT] (TEMPORAL)'"""
     subject = slots.get("subject", "").strip()
-    verb_form = slots.get("verb_form", "").strip()
+    verb_form, res, err = _maybe_resolve_verb(conn, slots, mode="ind",
+                                              default_person="3sg")
     obj = slots.get("object", "").strip()
     we_particle = slots.get("we_particle", "").strip().lower() in ("true", "1", "yes")
     temporal = slots.get("temporal", "").strip()
 
-    if not subject or not verb_form:
+    if err or not subject or not verb_form:
         return TemplateResult(
             skiri_sentence="", english_gloss="", template_id="T9",
             template_name="He/She [verb]s", confidence="LOW",
-            error="Subject and verb form are required",
+            error=err or "Subject and verb form (or verb + tense) are required",
         )
 
     parts = [subject]
@@ -866,7 +1067,11 @@ def _assemble_t9(conn: sqlite3.Connection, **slots) -> TemplateResult:
         breakdown.append(MorphemeChip(form="we", gloss="(completed action)", role="PARTICLE"))
 
     parts.append(verb_form)
-    breakdown.append(MorphemeChip(form=verb_form, gloss="he/she (verb)", role="VERB"))
+    breakdown.append(MorphemeChip(
+        form=verb_form,
+        gloss=(f"he/she ({res['tense']}) {res['gloss']}" if res
+               else "he/she (verb)"),
+        role="VERB", entry_id=res["entry_id"] if res else None))
 
     if obj:
         parts.append(obj)
@@ -890,7 +1095,12 @@ def _assemble_t9(conn: sqlite3.Connection, **slots) -> TemplateResult:
     sentence = " ".join(parts)
 
     eng_parts = [f"The {subj_gloss or subject}"]
-    eng_parts.append(verb_form)
+    if res:
+        tense_aux = {"past": "", "present": "(is -ing) ",
+                     "future": "(will) "}.get(res["tense"], "")
+        eng_parts.append(f"{tense_aux}{res['gloss']}")
+    else:
+        eng_parts.append(verb_form)
     if obj:
         eng_parts.append(f"the {obj}")
     if temporal:
@@ -900,7 +1110,7 @@ def _assemble_t9(conn: sqlite3.Connection, **slots) -> TemplateResult:
     bb = find_bb_attestation(conn, sentence)
     confidence = "HIGH" if bb else "MEDIUM"
 
-    return TemplateResult(
+    result = TemplateResult(
         skiri_sentence=sentence,
         english_gloss=english,
         template_id="T9",
@@ -912,6 +1122,8 @@ def _assemble_t9(conn: sqlite3.Connection, **slots) -> TemplateResult:
                         "'we' particle marks completed action (L09). "
                         "Temporal clause-final (L09: pitsikat).",
     )
+    _apply_resolution(result, res)
+    return result
 
 
 def _assemble_t10(conn: sqlite3.Connection, **slots) -> TemplateResult:
@@ -1173,6 +1385,44 @@ VALIDATION_TESTS = [
             "temporal": "pitsikat"},
      "pita ti•kuwutit rahurahki pitsikat",
      "The man killed a deer, in the winter (L09 — temporal slot)"),
+
+    # --- Phase 3.2b: auto-conjugation from dictionary verb + person/tense ---
+    # (person_forms.py derivation, validated 27/27 vs Parks Appendix 1)
+
+    # T3 yes/no with 3sg absolutive derived from form_2 (BB L02 pattern:
+    # 'Ka ra•pahaat rakis?' — Parks form keeps the VD echo vowel)
+    ("T3", {"verb": "pahaat", "person": "3sg", "noun": "rakis"},
+     "ka rapahaaʔat rakis?",
+     "Is the stick red? (derived 3sg absolutive, VD)"),
+
+    # T3 2sg absolutive (BB L08 pattern: 'Ka ras•huras asaki?')
+    ("T3", {"verb": "huraas", "person": "2sg", "noun": "asaaki"},
+     "ka rasuraas asaaki?",
+     "Have you found the dog? (derived 2sg absolutive)"),
+
+    # T8 1sg attested / 2sg derived (App.1 agent t->s)
+    ("T8", {"verb": "takacat", "person": "1sg"},
+     "tactakacat",
+     "I fetched water (attested form_1)"),
+    ("T8", {"verb": "takacat", "person": "2sg"},
+     "tastakacat",
+     "You fetched water (derived 2sg)"),
+
+    # T8 future via intentive prefix transplant
+    ("T8", {"verb": "takacat", "person": "1sg", "tense": "future"},
+     "tactakacuhta",
+     "I will fetch water (1sg intentive transplant)"),
+
+    # T5 where-question with derived 2sg absolutive (BB L13: Kiru rasuks•at?
+    # uses the uks- aorist; the plain absolutive is raasat)
+    ("T5", {"verb": "at", "person": "2sg"},
+     "kiru raasat?",
+     "Where did you go? (derived 2sg absolutive)"),
+
+    # T9 with auto-conjugated 3sg (attested form_2, ut-preverb verb)
+    ("T9", {"subject": "pita", "verb": "iirik", "object": "kuruks"},
+     "pita tuutiirit kuruks",
+     "The man saw the bear (attested form_2 via verb slot)"),
 ]
 
 

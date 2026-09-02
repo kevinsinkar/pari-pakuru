@@ -15,7 +15,8 @@
   <ul>
     <li><strong>Noun / Subject / Object fields</strong> &mdash; Type an <em>English</em> word (like "water" or "man") and pick from the dictionary results that appear.</li>
     <li><strong>Descriptive verb field</strong> &mdash; Type an English quality (like "red" or "big") and pick from the results.</li>
-    <li><strong>Verb form field</strong> &mdash; This needs a <em>Skiri Pawnee</em> verb that is already conjugated (e.g. <code>ra&bull;pahaat</code> for "it is red"). You can find conjugated forms in the Blue Book lessons or the dictionary.</li>
+    <li><strong>Verb field</strong> &mdash; Type an English verb (like "go" or "find") and pick a dictionary verb. Then choose <em>who</em> (I / you / he-she) and, where offered, <em>when</em> (past / present / future) &mdash; the builder conjugates it for you from Parks's attested paradigms.</li>
+    <li><strong>Advanced: verb form</strong> &mdash; You can instead type a <em>Skiri Pawnee</em> verb that is already conjugated (e.g. <code>ra&bull;pahaat</code> for "it is red"), found in the Blue Book lessons or the dictionary.</li>
     <li><strong>Dropdown fields</strong> (time words, imperative particles) &mdash; Just pick one from the list.</li>
   </ul>
 </details>
@@ -120,15 +121,23 @@ function selectTemplate(tid) {
     return;
   }
 
+  const slotNames = new Set(t.slots.map(s => s.name));
+  const hasAutoVerb = slotNames.has('verb');
+
   t.slots.forEach(slot => {
     const name = slot.name;
     const required = slot.required;
     const desc = slot.description || name;
 
+    if (name === 'person' || name === 'tense') {
+      return; // rendered inside the auto-verb block
+    }
     if (CURATED_SLOTS.has(name)) {
       container.appendChild(buildCuratedField(name, desc, tid));
     } else if (name === 'we_particle') {
       container.appendChild(buildCheckboxField(name, 'Add "we" (completed action particle)'));
+    } else if (name === 'verb') {
+      container.appendChild(buildAutoVerbField(tid, slotNames.has('tense')));
     } else if (name === 'verb_form') {
       const vfHints = {
         T3: 'Search BB verbs, e.g. "red" or "pahaat"',
@@ -138,8 +147,18 @@ function selectTemplate(tid) {
         T9: 'Search BB verbs, e.g. "killed" or "kuwutit"',
         T10: 'Search BB verbs, e.g. "open" or "teka"',
       };
-      container.appendChild(buildVerbFormField(name, desc, required,
-        vfHints[tid] || 'Search for a verb in English or Skiri...'));
+      const field = buildVerbFormField(name, desc, required && !hasAutoVerb,
+        vfHints[tid] || 'Search for a verb in English or Skiri...');
+      if (hasAutoVerb) {
+        // demote to an "advanced" alternative below the auto-verb picker
+        const det = document.createElement('details');
+        det.className = 'sb-advanced';
+        det.innerHTML = '<summary><small>Advanced: type an already-conjugated verb form instead</small></summary>';
+        det.appendChild(field);
+        container.appendChild(det);
+      } else {
+        container.appendChild(field);
+      }
     } else if (name === 'noun' || name === 'subject' || name === 'object' || name === 'vd') {
       container.appendChild(buildSearchField(name, desc, required, slot.type));
     } else if (name === 'locative') {
@@ -149,6 +168,72 @@ function selectTemplate(tid) {
       container.appendChild(buildTextField(name, desc, required));
     }
   });
+}
+
+// \u2500\u2500 Auto-conjugating verb picker (Phase 3.2b) \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
+const DEFAULT_PERSON = { T8: '1sg' };  // others default to 3sg
+
+function buildAutoVerbField(tid, withTense) {
+  const div = document.createElement('div');
+  div.className = 'sb-field sb-field--search sb-autoverb';
+  const defPerson = DEFAULT_PERSON[tid] || '3sg';
+  div.innerHTML = `
+    <label for="slot-verb">Verb (from the dictionary \u2014 conjugated for you)</label>
+    <input type="text" id="slot-verb" name="verb"
+           placeholder='Type English ("go", "find", "red") or Skiri...'
+           autocomplete="off">
+    <div class="sb-dropdown" id="dropdown-verb"></div>
+    <div class="sb-autoverb__opts">
+      <label>Who
+        <select id="slot-person" name="person">
+          <option value="1sg" ${defPerson === '1sg' ? 'selected' : ''}>I</option>
+          <option value="2sg">you</option>
+          <option value="3sg" ${defPerson === '3sg' ? 'selected' : ''}>he / she / it</option>
+        </select>
+      </label>
+      ${withTense ? `
+      <label>When
+        <select id="slot-tense" name="tense">
+          <option value="past" selected>past (did)</option>
+          <option value="present">present (is doing)</option>
+          <option value="future">future (will do)</option>
+        </select>
+      </label>` : ''}
+    </div>
+    <small class="sb-autoverb__hint">2nd-person and question forms are derived
+    from Parks's attested paradigms (validated against Appendix 1).</small>
+  `;
+
+  setTimeout(() => {
+    const input = document.getElementById('slot-verb');
+    if (!input) return;
+    input.addEventListener('input', function() {
+      const q = this.value.trim();
+      if (q.length < 2) {
+        document.getElementById('dropdown-verb').innerHTML = '';
+        return;
+      }
+      fetch(`/api/verbs?q=${encodeURIComponent(q)}&limit=8`)
+        .then(r => r.json())
+        .then(data => {
+          const dd = document.getElementById('dropdown-verb');
+          if (!data || data.length === 0) {
+            dd.innerHTML = '<div class="sb-dd-empty">No verbs found</div>';
+            return;
+          }
+          dd.innerHTML = data.map(r => `
+            <div class="sb-dd-item" onclick="pickResult('verb', '${r.headword.replace(/'/g, "\\'")}')">
+              <strong>${r.headword}</strong>
+              ${r.pronunciation ? '<small>' + r.pronunciation + '</small>' : ''}
+              <span class="badge badge-class">${r.gram_class || ''}${r.verb_class || ''}</span>
+              <br><small class="sb-dd-gloss">${r.gloss || ''} &mdash; <em>${r.persons}</em></small>
+            </div>
+          `).join('');
+        });
+    });
+  }, 50);
+
+  return div;
 }
 
 function buildTextField(name, label, required, placeholder) {
@@ -547,6 +632,34 @@ document.addEventListener('click', function(e) {
   padding: 0.5rem 0.75rem;
   color: var(--earth-500);
   font-style: italic;
+}
+
+/* Auto-verb picker (Phase 3.2b) */
+.sb-autoverb__opts {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+.sb-autoverb__opts label {
+  flex: 1;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.sb-autoverb__hint {
+  display: block;
+  margin-top: 0.25rem;
+  color: var(--earth-500, #8a7560);
+  font-style: italic;
+}
+.sb-advanced {
+  margin-bottom: 1rem;
+}
+.sb-advanced summary {
+  cursor: pointer;
+  color: var(--earth-500, #8a7560);
+}
+.sb-advanced .sb-field {
+  margin-top: 0.5rem;
 }
 
 /* Result */

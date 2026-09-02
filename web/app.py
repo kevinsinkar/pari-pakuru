@@ -864,6 +864,65 @@ def api_bb_verb_forms():
     return jsonify(results)
 
 
+@app.route("/api/verbs")
+def api_verbs():
+    """Search dictionary verbs (with paradigm forms) for auto-conjugation.
+
+    Matches English glosses or Skiri headwords; flags whether I/you forms
+    are available (needs form_1) vs only he/she forms (form_2)."""
+    db = get_db()
+    q = request.args.get("q", "").strip()
+    limit = min(request.args.get("limit", 8, type=int), 20)
+    if not q or len(q) < 2:
+        return jsonify([])
+
+    cur = db.conn.cursor()
+    # rank word-boundary gloss matches ("be red", "red, reddish") above
+    # substring hits ("scared", "interred"), then shorter headwords
+    cur.execute("""
+        SELECT le.entry_id, le.headword, le.normalized_form,
+               le.grammatical_class, le.verb_class,
+               le.simplified_pronunciation,
+               (SELECT definition FROM glosses g WHERE g.entry_id = le.entry_id
+                ORDER BY sense_number LIMIT 1) AS gloss,
+               max(CASE WHEN pf.form_number = 1 THEN 1 ELSE 0 END) AS has_f1,
+               max(CASE WHEN pf.form_number = 2 THEN 1 ELSE 0 END) AS has_f2,
+               (le.headword LIKE :pfx OR le.normalized_form LIKE :pfx) AS hw_hit,
+               EXISTS (SELECT 1 FROM glosses g2 WHERE g2.entry_id = le.entry_id
+                       AND (g2.definition LIKE :w1 OR g2.definition LIKE :w2
+                            OR g2.definition LIKE :w3 OR g2.definition = :q))
+                   AS word_hit
+        FROM lexical_entries le
+        JOIN paradigmatic_forms pf ON pf.entry_id = le.entry_id
+        WHERE le.grammatical_class LIKE 'V%'
+          AND (le.headword LIKE :pfx OR le.normalized_form LIKE :pfx
+               OR le.entry_id IN (
+                   SELECT entry_id FROM glosses WHERE definition LIKE :sub))
+        GROUP BY le.entry_id
+        ORDER BY hw_hit DESC, word_hit DESC, length(le.headword)
+        LIMIT :lim
+    """, {"pfx": q + "%", "sub": "%" + q + "%", "q": q,
+          "w1": q + " %", "w2": "% " + q + "%", "w3": "% " + q,
+          "lim": limit})
+    results = []
+    for r in cur.fetchall():
+        results.append({
+            "headword": r["headword"],
+            "normalized_form": r["normalized_form"],
+            "gram_class": r["grammatical_class"],
+            "verb_class": r["verb_class"],
+            "pronunciation": r["simplified_pronunciation"],
+            "gloss": (r["gloss"] or "").split(";")[0].strip(),
+            # descriptive verbs derive I/you via the desc-ku pattern even
+            # without a listed form_1
+            "persons": ("I / you / he-she"
+                        if r["has_f1"]
+                        or (r["grammatical_class"] or "").startswith(("VD", "VL"))
+                        else "he-she only"),
+        })
+    return jsonify(results)
+
+
 # ------------------------------------------------------------------
 # Community Feedback (Phase 4.4)
 # ------------------------------------------------------------------

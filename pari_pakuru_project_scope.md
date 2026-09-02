@@ -635,19 +635,49 @@ Sources:
 - `extracted_data/grammatical_overview.json` — 23 pages of grammar (clause structure, word order)
 - Blue Book lesson dialogues as test cases (88 examples currently in DB)
 
-#### Phase 3.2a — Template-Based Sentence Assembly *(start here)*
-**Priority:** Medium-High
-**Effort:** Medium
+#### ✅ Phase 3.2a — Template-Based Sentence Assembly
+**Scripts:** `scripts/sentence_templates.py`, `scripts/template_slot_fillers.py`
+**Design doc:** `phase_3_2a_sentence_templates.md`
 
-Not free-form translation — guided construction from a fixed set of sentence patterns drawn from Blue Book dialogues. The 88 dialogue examples are the test suite.
+DONE — 10 templates covering 73% of Blue Book sentences, web UI at
+`/sentence-builder` (template cards → slot fill → assembled sentence with
+morpheme chips, confidence badge, BB attestation). 27 exact-match validation
+tests against BB sentences.
 
-Tasks:
-- [ ] Extract sentence templates from Blue Book dialogues (e.g., "[person] [descriptive verb]", "I see the [noun]", "[person] is going to [place]")
-- [ ] Identify 10–15 high-frequency patterns that cover lessons 1–10
-- [ ] Build template engine: user selects pattern → fills slots with dictionary entries → engine inflects and assembles
-- [ ] Show full morpheme breakdown of assembled sentence (so learners see *why* it looks that way)
-- [ ] Validate each template output against attested Blue Book examples where available
-- [ ] Mark template outputs with confidence level (see Phase 4.3)
+#### 🟡 Phase 3.2b — Person/Mode Derivation *(first slice DONE 2026-09-01)*
+**Script:** `scripts/person_forms.py` (validated 27/27 vs Parks Appendix 1)
+
+Key insight: the from-scratch conjugation engine (`morpheme_inventory.conjugate`)
+reproduces only 14.8% of attested dictionary forms — but the person/mode
+prefixes sit at the LEFT EDGE of forms the dictionary already attests, and
+alternate regularly (IND ta-/ti- ↔ ABS ra-/ri-; 1.A t ↔ 2.A s). So derive
+unlisted forms FROM attested ones instead of computing from scratch:
+
+- **2sg indicative** from form_1 (agent t→s with junction repair: r-stems
+  tah-→tast-, t-stems tac-→tas-, w-stems tatp-→tasp-; junctions learned from
+  1,617 attested form_1/form_2 pairs)
+- **absolutive mode** (ka/kirike/kiru questions) by mode-prefix swap
+  (1st/2nd: t→r; 3rd: ti→ra, tu→ru, tih→riih desc, tiʔ→raʔ)
+- **descriptive-ku persons** for VD/VL (3sg ti+STEM → 1sg tiku+STEM,
+  2sg ta+STEM, 2sg-abs raa+STEM)
+- **present/future for 1sg/2sg** by person-prefix transplant onto attested
+  form_3 (IMPF) / form_5 (INT)
+
+Coverage (2,242 paradigm verbs): 2sg 78%, 3sg-absolutive 91%, 1sg/2sg
+future 77–78%, present 50–57%. Every derived form is one left-edge prefix
+swap away from an attested form.
+
+Integration: T3/T4/T5/T8/T9 accept `verb` + `person` (1sg/2sg/3sg) +
+`tense` (past/present/future) slots — auto-conjugated, derived forms capped
+at MEDIUM confidence with a derivation note. Web UI: verb search
+(`/api/verbs`) + who/when selectors. Validation: 34/34 template tests.
+
+Remaining 3.2b tasks:
+- [ ] Plural persons (3pl raar-insertion; du/pl suppletive stems — hard, many
+      verbs use distributive stems not recoverable by prefix swap)
+- [ ] Negative mode (kaaka- prefix swap — same left-edge pattern, easy win)
+- [ ] Imperfective coverage (only 57% of verbs list form_3)
+- [ ] Question particle placement + clause ordering (original 3.2b scope)
 
 #### Phase 3.2b — SOV Word-Order Engine
 **Priority:** Medium
