@@ -27,6 +27,7 @@ Dependencies: stdlib only.
 
 import argparse
 import json
+import os
 import re
 import shutil
 import sqlite3
@@ -46,7 +47,7 @@ S2E_PATH = ROOT / 'Dictionary Data' / 'skiri_to_english_respelled.json'
 E2S_PATH = ROOT / 'Dictionary Data' / 'english_to_skiri_linked.json'
 DB_PATH = ROOT / 'skiri_pawnee.db'
 PAGE_INDEX = ROOT / 'reports' / '_s2e_page_index.json'
-BACKUP_DIR = Path.home() / '.pari_pakuru_backups'
+BACKUP_DIR = Path(os.environ.get('OneDrive', str(Path.home()))) / 'pari_pakuru_backups'  # synced, not single-disk
 REPORT_PATH = ROOT / 'reports' / 'fix_audit_issues_report.txt'
 
 OCR_MAP = {'÷': 'ː', 'ˆ': 'ɪ', '‹': 'ʊ', 'Ò': 'a', 'ç': 'ʔ', 'ø': 'ː'}

@@ -28,6 +28,7 @@ Usage:
 
 import argparse
 import json
+import os
 import re
 import shutil
 import sqlite3
@@ -45,7 +46,7 @@ ROOT = Path(__file__).resolve().parent.parent
 S2E_PATH = ROOT / 'Dictionary Data' / 'skiri_to_english_respelled.json'
 DB_PATH = ROOT / 'skiri_pawnee.db'
 PAGE_INDEX = ROOT / 'reports' / '_s2e_page_index.json'
-BACKUP_DIR = Path.home() / '.pari_pakuru_backups'
+BACKUP_DIR = Path(os.environ.get('OneDrive', str(Path.home()))) / 'pari_pakuru_backups'  # synced, not single-disk
 REPORT_PATH = ROOT / 'reports' / 'phonetic_textlayer_upgrade.txt'
 
 # Manually reviewed conflicts (case C): headword corroborates the text layer.

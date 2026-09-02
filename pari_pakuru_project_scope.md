@@ -895,11 +895,21 @@ the sentence builder with the lesson's attested template preselected
 - [x] Extract grammar explanations per lesson
 - [x] Lesson sequencing (Blue Book's own 1979 order preserved)
 - [x] Link lessons to sentence-builder patterns (Phase 3.2a template map)
-- [ ] Interactive exercises: fill-in-the-blank, matching, translation drills
-- [ ] Lessons 3–4 vocabulary gap: source column-reflow garbled the vocab
-      tables (7 + 4 attestation items only; dialogues parse fine). Needs
-      either Gemini re-extraction of pp. 39–49 or manual entry.
+- [x] Interactive exercises *(2026-09-01)*: matching (click-to-pair vocab),
+      fill-in-the-blank (dialogue lines with a lesson word blanked, 4-way
+      multiple choice), and "say it in Pawnee" reveal drills. Generated
+      deterministically per page load from the lesson's own verbatim
+      material (`web/app.py:_build_exercises`) — no generated language.
+- [~] Lessons 3–4 vocabulary gap: Gemini re-extraction of pp. 39–49
+      (`scripts/extract_lesson_gaps.py`, dry-run/apply; existing rows never
+      modified, new items matched via Phase 2.2 machinery)
 - [ ] BB glossary pages (123–130, inside Lesson 20's span) not itemized
+
+**Data safety (2026-09-01):** community_feedback now auto-exports to
+git-tracked `exports/community_feedback.json` on every submit/review (the
+one table not rebuildable from sources); backup scripts write to the
+OneDrive-synced `pari_pakuru_backups/` (home-dir fallback), existing
+backups copied over.
 
 ### 🟡 Phase 5.2 — Spaced Repetition / Flashcard Export
 **Priority:** High — **elevated** (low effort, high impact; Design Principle #3 says "export everything" but the export tasks are still unbuilt. A teacher can hand out a printed paradigm table *today*; accuracy improvements help later.)

@@ -870,12 +870,83 @@ def lesson_detail(number):
          "english": TEMPLATES[t].english_example}
         for t in lesson["templates"] if t in TEMPLATES
     ]
+    exercises = _build_exercises(vocab, lesson["dialogues"], phrases)
     prev_n = number - 1 if number > 1 else None
     next_n = number + 1 if number < 20 else None
     return render_template("lesson_detail.html", lesson=lesson,
                            basic=basic, additional=additional,
                            phrases=phrases, practice=practice,
+                           exercises=exercises,
                            prev_n=prev_n, next_n=next_n)
+
+
+def _build_exercises(vocab, dialogues, phrases):
+    """Deterministically generate lesson exercises from Blue Book content.
+
+    Everything shown is verbatim lesson material — vocabulary pairs and
+    dialogue lines as printed; nothing is machine-generated language.
+    """
+    import random as _random
+    rng = _random.Random()   # fresh shuffle each page load
+
+    pairs = [(v["bb_skiri_form"].strip(), (v["bb_english"] or "").strip())
+             for v in vocab
+             if v["bb_skiri_form"] and (v["bb_english"] or "").strip()
+             and len((v["bb_english"] or "")) < 40]
+    # de-dup on the Skiri side
+    seen = set()
+    uniq = []
+    for s, e in pairs:
+        if s.lower() not in seen:
+            seen.add(s.lower())
+            uniq.append((s, e))
+
+    matching = rng.sample(uniq, min(8, len(uniq))) if len(uniq) >= 4 else []
+
+    # fill-in-the-blank: blank a lesson vocab word inside a dialogue line
+    def first_token(form):
+        t = re.split(r'[\s,(]', form.strip())[0]
+        return t if len(t) >= 3 else None
+
+    blanks = []
+    used_lines = set()
+    vocab_tokens = [(first_token(s), s, e) for s, e in uniq]
+    vocab_tokens = [(t, s, e) for t, s, e in vocab_tokens if t]
+    all_lines = [ln for d in dialogues for ln in d.get("lines", [])]
+    for ln in all_lines:
+        skiri, english = ln.get("skiri", ""), ln.get("english", "")
+        if not skiri or not english or skiri in used_lines:
+            continue
+        for tok, form, gloss in vocab_tokens:
+            m = re.search(r'(?<![\w•])' + re.escape(tok) + r'(?![\w•])',
+                          skiri, re.IGNORECASE)
+            if m:
+                blanked = (skiri[:m.start()] + "_____" + skiri[m.end():])
+                distractors = [t for t, s, e in vocab_tokens if t != tok]
+                if len(distractors) < 3:
+                    break
+                options = rng.sample(distractors, 3) + [tok]
+                rng.shuffle(options)
+                blanks.append({
+                    "blanked": blanked, "english": english,
+                    "answer": tok, "options": options,
+                })
+                used_lines.add(skiri)
+                break
+        if len(blanks) >= 6:
+            break
+
+    # "say it in Pawnee": English prompt -> reveal the printed Skiri line
+    say_pool = ([(p["bb_skiri_form"], p["bb_english"]) for p in phrases
+                 if p.get("bb_english")] +
+                [(ln["skiri"], ln["english"]) for ln in all_lines
+                 if ln.get("english")])
+    say_pool = [(s, e) for s, e in say_pool if 3 < len(e) < 60]
+    say = [{"skiri": s, "english": e}
+           for s, e in rng.sample(say_pool, min(5, len(say_pool)))]
+
+    return {"matching": [{"skiri": s, "english": e} for s, e in matching],
+            "blanks": blanks, "say": say}
 
 
 @app.route("/sentence-builder")
@@ -1043,7 +1114,30 @@ def submit_feedback():
         comment=data.get("comment", "").strip() or None,
         reporter_name=data.get("reporter_name", "").strip() or None,
     )
+    _export_feedback(db)
     return jsonify({"ok": True, "id": row_id})
+
+
+def _export_feedback(db):
+    """Mirror community_feedback to a git-tracked JSON file.
+
+    Community feedback is the one table that cannot be rebuilt from the
+    source PDFs — it is knowledge contributed by people. The DB itself is
+    gitignored, so every write also lands in exports/ for versioned,
+    off-machine safekeeping.
+    """
+    try:
+        cur = db.conn.cursor()
+        cur.execute("SELECT * FROM community_feedback ORDER BY id")
+        cols = [d[0] for d in cur.description]
+        rows = [dict(zip(cols, r)) for r in cur.fetchall()]
+        out_path = os.path.join(PROJECT_ROOT, "exports",
+                                "community_feedback.json")
+        with open(out_path, "w", encoding="utf-8") as f:
+            json.dump(rows, f, ensure_ascii=False, indent=1)
+    except Exception:
+        # export is belt-and-braces; never let it break a submission
+        app.logger.exception("community feedback export failed")
 
 
 @app.route("/admin/feedback")
@@ -1072,6 +1166,7 @@ def review_feedback(feedback_id):
 
     reviewer_note = data.get("reviewer_note", "").strip() or None
     db.review_feedback(feedback_id, status, reviewer_note)
+    _export_feedback(db)
     return jsonify({"ok": True})
 
 

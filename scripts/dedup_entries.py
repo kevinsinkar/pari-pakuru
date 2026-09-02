@@ -190,7 +190,7 @@ def main():
         log("=" * 60)
     else:
         # Back up the DB outside the working directory
-        backup_dir = Path.home() / ".pari_pakuru_backups"
+        backup_dir = Path(os.environ.get("OneDrive", str(Path.home()))) / "pari_pakuru_backups"
         backup_dir.mkdir(exist_ok=True)
         backup_name = f"{db_path.stem}_backup_{datetime.now():%Y%m%d_%H%M%S}{db_path.suffix}"
         backup_path = backup_dir / backup_name

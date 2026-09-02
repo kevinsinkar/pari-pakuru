@@ -1,0 +1,30 @@
+[
+ {
+  "id": 6,
+  "entry_id": "BB-riat-0068",
+  "form_field": "pronunciation",
+  "feedback_type": "flag",
+  "issue_type": "incorrect_form",
+  "suggested_correction": "dih-aht",
+  "comment": "no syllable separation",
+  "reporter_name": null,
+  "status": "pending",
+  "reviewer_note": null,
+  "created_at": "2026-03-20 21:56:02",
+  "reviewed_at": null
+ },
+ {
+  "id": 7,
+  "entry_id": "SK-tahkuki,_tahkutiriq-p156-3039",
+  "form_field": "semantic_tag",
+  "feedback_type": "flag",
+  "issue_type": "incorrect_form",
+  "suggested_correction": "ceremony or social",
+  "comment": "Auto-tagged kinship via keyword match (piraski audit 2026-03-21). Tahkuki/Coyote is a cultural/ceremonial figure, not a kinship term. Needs review by a Pawnee cultural advisor.",
+  "reporter_name": null,
+  "status": "pending",
+  "reviewer_note": null,
+  "created_at": "2026-03-21 14:59:28",
+  "reviewed_at": null
+ }
+]

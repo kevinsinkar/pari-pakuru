@@ -120,6 +120,39 @@
 </section>
 {% endif %}
 
+{% if exercises.matching or exercises.blanks or exercises.say %}
+<section id="exercises">
+  <h4>Exercises</h4>
+  <p><small>All exercise material is verbatim from this lesson — nothing is
+  machine-generated. Reload the page for a fresh shuffle.</small></p>
+
+  {% if exercises.matching %}
+  <details class="lesson-note" open>
+    <summary><strong>Matching</strong> — click a Pawnee word, then its meaning</summary>
+    <div class="ex-matching" id="ex-matching">
+      <div class="ex-col" id="ex-match-skiri"></div>
+      <div class="ex-col" id="ex-match-eng"></div>
+    </div>
+    <p class="ex-status" id="ex-match-status"></p>
+  </details>
+  {% endif %}
+
+  {% if exercises.blanks %}
+  <details class="lesson-note">
+    <summary><strong>Fill in the blank</strong> — complete the dialogue line</summary>
+    <div id="ex-blanks"></div>
+  </details>
+  {% endif %}
+
+  {% if exercises.say %}
+  <details class="lesson-note">
+    <summary><strong>Say it in Pawnee</strong> — think, then reveal</summary>
+    <div id="ex-say"></div>
+  </details>
+  {% endif %}
+</section>
+{% endif %}
+
 <nav class="lesson-nav lesson-nav--bottom">
   {% if prev_n %}<a href="/lessons/{{ prev_n }}">&larr; Lesson {{ prev_n }}</a>{% else %}<span></span>{% endif %}
   {% if next_n %}<a href="/lessons/{{ next_n }}">Lesson {{ next_n }} &rarr;</a>{% endif %}
@@ -127,6 +160,135 @@
 {% endblock %}
 
 {% block scripts %}
+<script>
+const EX = {{ exercises | tojson }};
+
+// ── Matching ─────────────────────────────────────────────────────
+(function() {
+  if (!EX.matching || !EX.matching.length) return;
+  const skiriCol = document.getElementById('ex-match-skiri');
+  const engCol = document.getElementById('ex-match-eng');
+  const status = document.getElementById('ex-match-status');
+  const pairs = EX.matching;
+  let sel = null, solved = 0;
+
+  function shuffled(a) { return a.map(x => [Math.random(), x]).sort((p,q)=>p[0]-q[0]).map(p=>p[1]); }
+
+  shuffled(pairs.map((p,i)=>({i, text:p.skiri}))).forEach(item => {
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'ex-chip ex-chip--skiri font-serif';
+    b.textContent = item.text; b.dataset.i = item.i;
+    b.onclick = () => {
+      if (b.disabled) return;
+      document.querySelectorAll('.ex-chip--skiri').forEach(x=>x.classList.remove('ex-chip--sel'));
+      b.classList.add('ex-chip--sel'); sel = b;
+    };
+    skiriCol.appendChild(b);
+  });
+  shuffled(pairs.map((p,i)=>({i, text:p.english}))).forEach(item => {
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'ex-chip';
+    b.textContent = item.text; b.dataset.i = item.i;
+    b.onclick = () => {
+      if (b.disabled || !sel) return;
+      if (b.dataset.i === sel.dataset.i) {
+        b.disabled = sel.disabled = true;
+        b.classList.add('ex-chip--ok'); sel.classList.add('ex-chip--ok');
+        sel.classList.remove('ex-chip--sel'); sel = null;
+        solved++;
+        status.textContent = solved === pairs.length ?
+          'All matched — nawa!' : `${solved} / ${pairs.length} matched`;
+      } else {
+        b.classList.add('ex-chip--no');
+        setTimeout(()=>b.classList.remove('ex-chip--no'), 500);
+      }
+    };
+    engCol.appendChild(b);
+  });
+})();
+
+// ── Fill in the blank ────────────────────────────────────────────
+(function() {
+  const host = document.getElementById('ex-blanks');
+  if (!host || !EX.blanks) return;
+  EX.blanks.forEach(q => {
+    const div = document.createElement('div');
+    div.className = 'ex-blank';
+    div.innerHTML = `
+      <div class="ex-blank__line font-serif" lang="x-paw">${q.blanked}</div>
+      <div class="ex-blank__eng">${q.english}</div>
+      <div class="ex-blank__opts"></div>`;
+    const opts = div.querySelector('.ex-blank__opts');
+    q.options.forEach(o => {
+      const b = document.createElement('button');
+      b.type = 'button'; b.className = 'ex-chip'; b.textContent = o;
+      b.onclick = () => {
+        if (div.dataset.done) return;
+        if (o === q.answer) {
+          div.dataset.done = '1';
+          b.classList.add('ex-chip--ok');
+          div.querySelector('.ex-blank__line').innerHTML =
+            div.querySelector('.ex-blank__line').innerHTML.replace('_____',
+              `<strong>${q.answer}</strong>`);
+        } else {
+          b.classList.add('ex-chip--no');
+          b.disabled = true;
+        }
+      };
+      opts.appendChild(b);
+    });
+    host.appendChild(div);
+  });
+})();
+
+// ── Say it in Pawnee ─────────────────────────────────────────────
+(function() {
+  const host = document.getElementById('ex-say');
+  if (!host || !EX.say) return;
+  EX.say.forEach(q => {
+    const div = document.createElement('div');
+    div.className = 'ex-say';
+    div.innerHTML = `
+      <span class="ex-say__eng">&ldquo;${q.english}&rdquo;</span>
+      <button type="button" class="ex-chip">reveal</button>
+      <span class="ex-say__skiri font-serif" lang="x-paw" hidden>${q.skiri}</span>`;
+    const btn = div.querySelector('button');
+    btn.onclick = () => {
+      div.querySelector('.ex-say__skiri').hidden = false;
+      btn.remove();
+    };
+    host.appendChild(div);
+  });
+})();
+</script>
+<style>
+/* ── Exercises ────────────────────────────────────────────────── */
+.ex-matching { display: flex; gap: 1.5rem; }
+.ex-col { display: flex; flex-direction: column; gap: 0.4rem; flex: 1; }
+.ex-chip {
+  padding: 0.35rem 0.7rem;
+  border: 2px solid var(--earth-200, #e0d5c4);
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-align: left;
+  width: auto;
+  margin: 0;
+  color: inherit;
+}
+.ex-chip--sel { border-color: var(--sky-500, #4A90C4); }
+.ex-chip--ok { border-color: var(--sage-400, #6FAE78); background: var(--sage-50, #EFF6F0); opacity: 0.75; }
+.ex-chip--no { border-color: var(--clay-400, #C4674A); animation: exshake 0.3s; }
+@keyframes exshake { 25% {transform: translateX(-3px);} 75% {transform: translateX(3px);} }
+.ex-status { font-weight: 600; color: var(--sage-600, #4A7A52); }
+.ex-blank { margin-bottom: 1rem; }
+.ex-blank__line { font-size: 1.1rem; font-weight: 600; }
+.ex-blank__eng { font-style: italic; color: var(--earth-500, #8a7560); font-size: 0.9rem; margin-bottom: 0.35rem; }
+.ex-blank__opts { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.ex-say { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.6rem; flex-wrap: wrap; }
+.ex-say__skiri { font-weight: 600; font-size: 1.05rem; }
+</style>
 <style>
 .lesson-nav {
   display: flex;
