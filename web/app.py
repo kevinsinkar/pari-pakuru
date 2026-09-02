@@ -8,6 +8,7 @@ Usage:
 
 import argparse
 import hashlib
+import json
 import math
 import os
 import re
@@ -784,6 +785,98 @@ def about():
 # ------------------------------------------------------------------
 # Phase 3.2a — Sentence Builder
 # ------------------------------------------------------------------
+
+# ------------------------------------------------------------------
+# Blue Book Lessons (Phase 5.1)
+# ------------------------------------------------------------------
+
+@app.route("/lessons")
+def lessons_index():
+    """Progressive Blue Book lesson list."""
+    db = get_db()
+    cur = db.conn.cursor()
+    cur.execute("SELECT lesson_number, skiri_title, english_title, "
+                "page_start, page_end, dialogues, template_ids "
+                "FROM lessons ORDER BY lesson_number")
+    lessons = []
+    for r in cur.fetchall():
+        cur.execute(
+            "SELECT count(*) FROM blue_book_attestations "
+            "WHERE lesson_number = ? "
+            "AND context_type IN ('BASIC_WORDS','ADDITIONAL_WORDS')",
+            (r["lesson_number"],))
+        vocab_count = cur.fetchone()[0]
+        dialogues = json.loads(r["dialogues"] or "[]")
+        lessons.append({
+            "number": r["lesson_number"],
+            "skiri_title": r["skiri_title"],
+            "english_title": r["english_title"],
+            "pages": f"{r['page_start']}–{r['page_end']}",
+            "vocab_count": vocab_count,
+            "dialogue_count": sum(len(d.get("lines", [])) for d in dialogues),
+            "templates": json.loads(r["template_ids"] or "[]"),
+        })
+    return render_template("lessons.html", lessons=lessons)
+
+
+@app.route("/lessons/<int:number>")
+def lesson_detail(number):
+    """One Blue Book lesson: vocabulary, dialogues, grammar notes."""
+    db = get_db()
+    cur = db.conn.cursor()
+    cur.execute("SELECT * FROM lessons WHERE lesson_number = ?", (number,))
+    row = cur.fetchone()
+    if not row:
+        abort(404)
+
+    # vocabulary from attestations, joined to dictionary entries where linked
+    cur.execute("""
+        SELECT a.bb_skiri_form, a.bb_english, a.context_type, a.entry_id,
+               a.match_type, le.headword, le.normalized_form,
+               le.simplified_pronunciation, le.grammatical_class
+        FROM blue_book_attestations a
+        LEFT JOIN lexical_entries le ON le.entry_id = a.entry_id
+        WHERE a.lesson_number = ?
+          AND a.context_type IN ('BASIC_WORDS', 'ADDITIONAL_WORDS')
+        ORDER BY a.context_type, a.id
+    """, (number,))
+    vocab = [dict(r) for r in cur.fetchall()]
+    basic = [v for v in vocab if v["context_type"] == "BASIC_WORDS"]
+    additional = [v for v in vocab if v["context_type"] == "ADDITIONAL_WORDS"]
+
+    # useful phrases + grammar examples from attestations
+    cur.execute("""
+        SELECT bb_skiri_form, bb_english FROM blue_book_attestations
+        WHERE lesson_number = ? AND context_type = 'PHRASE'
+        ORDER BY id
+    """, (number,))
+    phrases = [dict(r) for r in cur.fetchall()]
+
+    lesson = {
+        "number": row["lesson_number"],
+        "skiri_title": row["skiri_title"],
+        "english_title": row["english_title"],
+        "page_start": row["page_start"],
+        "page_end": row["page_end"],
+        "dialogues": json.loads(row["dialogues"] or "[]"),
+        "grammar_notes": json.loads(row["grammar_notes"] or "[]"),
+        "templates": json.loads(row["template_ids"] or "[]"),
+    }
+    # template metadata for practice links
+    from scripts.sentence_templates import TEMPLATES
+    practice = [
+        {"id": t, "name": TEMPLATES[t].name,
+         "example": TEMPLATES[t].skiri_example,
+         "english": TEMPLATES[t].english_example}
+        for t in lesson["templates"] if t in TEMPLATES
+    ]
+    prev_n = number - 1 if number > 1 else None
+    next_n = number + 1 if number < 20 else None
+    return render_template("lesson_detail.html", lesson=lesson,
+                           basic=basic, additional=additional,
+                           phrases=phrases, practice=practice,
+                           prev_n=prev_n, next_n=next_n)
+
 
 @app.route("/sentence-builder")
 def sentence_builder():

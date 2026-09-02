@@ -1,0 +1,188 @@
+{% extends "base.html" %}
+{% set active_page = "lessons" %}
+{% block title %}Lesson {{ lesson.number }} — {{ lesson.english_title or "Blue Book" }}{% endblock %}
+
+{% block content %}
+<nav class="lesson-nav">
+  <a href="/lessons">&larr; All lessons</a>
+  <span>
+    {% if prev_n %}<a href="/lessons/{{ prev_n }}">&larr; Lesson {{ prev_n }}</a>{% endif %}
+    {% if next_n %}<a href="/lessons/{{ next_n }}">Lesson {{ next_n }} &rarr;</a>{% endif %}
+  </span>
+</nav>
+
+<hgroup>
+  {% if lesson.skiri_title %}
+  <h2 class="font-serif" lang="x-paw">{{ lesson.skiri_title }}</h2>
+  {% endif %}
+  <h3>Lesson {{ lesson.number }}{% if lesson.english_title %} — {{ lesson.english_title }}{% endif %}</h3>
+  <p><small>Blue Book pp. {{ lesson.page_start }}–{{ lesson.page_end }}</small></p>
+</hgroup>
+
+{% macro vocab_table(items) %}
+<div class="table-scroll">
+<table class="lesson-vocab">
+  <thead><tr>
+    <th>Blue Book</th><th>English</th><th>Dictionary entry</th><th>Pronunciation</th>
+  </tr></thead>
+  <tbody>
+  {% for v in items %}
+  <tr>
+    <td lang="x-paw" class="font-serif">{{ v.bb_skiri_form }}</td>
+    <td>{{ v.bb_english or '' }}</td>
+    <td>
+      {% if v.entry_id %}
+        <a href="/entry/{{ v.entry_id }}" lang="x-paw">{{ v.normalized_form or v.headword }}</a>
+        <span class="badge badge-class">{{ v.grammatical_class or '' }}</span>
+      {% else %}
+        <small class="lesson-nolink">not in Parks dictionary</small>
+      {% endif %}
+    </td>
+    <td><small>{{ v.simplified_pronunciation or '' }}</small></td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+{% endmacro %}
+
+{% if basic %}
+<section>
+  <h4>Basic Words</h4>
+  {{ vocab_table(basic) }}
+</section>
+{% endif %}
+
+{% if lesson.dialogues %}
+<section>
+  <h4>Dialogues</h4>
+  {% for d in lesson.dialogues %}
+  <article class="lesson-dialogue">
+    {% for line in d.lines %}
+    <div class="lesson-dialogue__line">
+      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">{{ line.skiri }}</span>
+      <span class="lesson-dialogue__eng">{{ line.english }}</span>
+    </div>
+    {% endfor %}
+  </article>
+  {% endfor %}
+  <p><small>Dialogue lines are shown in the Blue Book's practical spelling,
+  exactly as printed.</small></p>
+</section>
+{% endif %}
+
+{% if additional %}
+<section>
+  <h4>Additional Words</h4>
+  {{ vocab_table(additional) }}
+</section>
+{% endif %}
+
+{% if phrases %}
+<section>
+  <h4>Useful Phrases</h4>
+  <ul class="lesson-phrases">
+    {% for p in phrases %}
+    <li><span class="font-serif" lang="x-paw">{{ p.bb_skiri_form }}</span>
+        — {{ p.bb_english or '' }}</li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+{% if lesson.grammar_notes %}
+<section>
+  <h4>Grammar &amp; Notes</h4>
+  {% for n in lesson.grammar_notes %}
+  <details class="lesson-note" {% if loop.first %}open{% endif %}>
+    <summary><strong>{{ n.heading }}</strong></summary>
+    <p>{{ n.text }}</p>
+  </details>
+  {% endfor %}
+</section>
+{% endif %}
+
+{% if practice %}
+<section>
+  <h4>Practice these patterns</h4>
+  <div class="lesson-practice">
+    {% for t in practice %}
+    <a class="lesson-practice__card" href="/sentence-builder?template={{ t.id }}">
+      <span class="badge badge-class">{{ t.id }}</span>
+      <strong>{{ t.name }}</strong>
+      <span class="font-serif" lang="x-paw">{{ t.example }}</span>
+      <small>{{ t.english }}</small>
+    </a>
+    {% endfor %}
+  </div>
+  <p><small>Opens the sentence builder with the pattern selected — build your
+  own sentences using this lesson's words.</small></p>
+</section>
+{% endif %}
+
+<nav class="lesson-nav lesson-nav--bottom">
+  {% if prev_n %}<a href="/lessons/{{ prev_n }}">&larr; Lesson {{ prev_n }}</a>{% else %}<span></span>{% endif %}
+  {% if next_n %}<a href="/lessons/{{ next_n }}">Lesson {{ next_n }} &rarr;</a>{% endif %}
+</nav>
+{% endblock %}
+
+{% block scripts %}
+<style>
+.lesson-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+.lesson-nav span a { margin-left: 1rem; }
+.lesson-nav--bottom { margin-top: 2rem; }
+.table-scroll { overflow-x: auto; }
+.lesson-vocab td, .lesson-vocab th { padding: 0.35rem 0.6rem; }
+.lesson-nolink { color: var(--earth-400, #a99a85); font-style: italic; }
+.lesson-dialogue {
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  border-left: 3px solid var(--sky-300, #89BDE0);
+  background: var(--sky-50, #EDF6FD);
+  border-radius: 0 8px 8px 0;
+}
+.lesson-dialogue__line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  margin-bottom: 0.3rem;
+}
+.lesson-dialogue__skiri { font-weight: 600; min-width: 14rem; }
+.lesson-dialogue__eng { color: var(--earth-600, #6b5d4a); font-style: italic; }
+.lesson-phrases li { margin-bottom: 0.3rem; }
+.lesson-note {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid var(--earth-200, #e0d5c4);
+  border-radius: 8px;
+  background: var(--earth-50, #faf7f2);
+}
+.lesson-note summary { cursor: pointer; }
+.lesson-note p { margin: 0.5rem 0 0.25rem; font-size: 0.92rem; }
+.lesson-practice {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 0.75rem;
+}
+.lesson-practice__card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.75rem 0.9rem;
+  border: 2px solid var(--sage-200, #B8D8BC);
+  border-radius: 8px;
+  background: var(--sage-50, #EFF6F0);
+  text-decoration: none;
+  color: inherit;
+}
+.lesson-practice__card:hover {
+  border-color: var(--sage-400, #6FAE78);
+  text-decoration: none;
+}
+</style>
+{% endblock %}

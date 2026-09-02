@@ -870,20 +870,36 @@ Tasks completed:
 - [ ] *(deferred)* Track acceptance rate analytics
 - [ ] *(deferred)* Email notification to maintainer on new feedback
 
-### 🔲 Phase 5.1 — Structured Lesson Content
-**Priority:** Medium (can start after Phase 4.1)
-**Depends on:** Phase 4.1 (web interface to host lessons)
-**Effort:** Medium
+### ✅ Phase 5.1 — Structured Lesson Content *(v1 DONE 2026-09-01)*
+**Script:** `scripts/build_lessons.py` (deterministic — no AI calls)
+**Data:** `lessons` DB table + `extracted_data/lessons.json`
+**Report:** `reports/phase_5_1_lessons.txt`
 
-Extract lesson structure from Blue Book (not just vocabulary) to provide ready-made curriculum.
+All 20 Blue Book lessons parsed straight from `Blue_Book_Pari_Pakuru.txt`:
+Skiri + English titles (as printed; Lesson 8 has no English title in the
+source and none was invented), page ranges, ordered dialogue exchanges
+(Skiri/English line pairs split at sentence punctuation, mid-form syllable
+dots preserved), and grammar/culture prose sections (NOUNS, PRONUNCIATION,
+COMBINING ROOTS, USEFUL PHRASES...).
 
-Tasks:
-- [ ] Extract lesson dialogue texts with English translations (20 lessons)
-- [ ] Map lesson vocabulary to dictionary entries (link each lesson word to its full entry)
-- [ ] Extract grammar explanations per lesson (progressive skill building)
-- [ ] Cultural context notes from Blue Book lesson introductions
-- [ ] Lesson sequencing: greetings → basic sentences → question forms → descriptive → narrative
+Web UI: `/lessons` (progressive lesson cards) + `/lessons/<n>` — vocabulary
+tables drawn from `blue_book_attestations` with dictionary-entry links
+(normalized form, pronunciation, class badge; "not in Parks dictionary"
+label when unlinked), dialogues in BB practical spelling as printed,
+collapsible grammar notes, and "Practice these patterns" cards that open
+the sentence builder with the lesson's attested template preselected
+(`/sentence-builder?template=Tx`).
+
+- [x] Extract lesson dialogue texts with English translations (20 lessons)
+- [x] Map lesson vocabulary to dictionary entries (via blue_book_attestations)
+- [x] Extract grammar explanations per lesson
+- [x] Lesson sequencing (Blue Book's own 1979 order preserved)
+- [x] Link lessons to sentence-builder patterns (Phase 3.2a template map)
 - [ ] Interactive exercises: fill-in-the-blank, matching, translation drills
+- [ ] Lessons 3–4 vocabulary gap: source column-reflow garbled the vocab
+      tables (7 + 4 attestation items only; dialogues parse fine). Needs
+      either Gemini re-extraction of pp. 39–49 or manual entry.
+- [ ] BB glossary pages (123–130, inside Lesson 20's span) not itemized
 
 ### 🟡 Phase 5.2 — Spaced Repetition / Flashcard Export
 **Priority:** High — **elevated** (low effort, high impact; Design Principle #3 says "export everything" but the export tasks are still unbuilt. A teacher can hand out a printed paradigm table *today*; accuracy improvements help later.)

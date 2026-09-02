@@ -507,6 +507,16 @@ function renderResult(data) {
   section.scrollIntoView({behavior: 'smooth', block: 'start'});
 }
 
+// Preselect a template from ?template=Tx (lesson practice links)
+(function() {
+  const tid = new URLSearchParams(window.location.search).get('template');
+  if (tid && TEMPLATE_MAP[tid]) {
+    selectTemplate(tid);
+    const card = document.querySelector(`.sb-card[data-tid="${tid}"]`);
+    if (card) card.scrollIntoView({block: 'center'});
+  }
+})();
+
 // Close dropdowns when clicking outside
 document.addEventListener('click', function(e) {
   if (!e.target.closest('.sb-field--search')) {

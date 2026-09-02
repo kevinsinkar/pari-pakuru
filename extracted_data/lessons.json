@@ -1,0 +1,1425 @@
+[
+ {
+  "lesson_number": 1,
+  "skiri_title": "KIRIK1 RU'?",
+  "english_title": "What Is It?",
+  "page_start": 29,
+  "page_end": 33,
+  "dialogues": [
+   {
+    "lines": [
+     {
+      "skiri": "Kirike ru'?",
+      "english": "What is it?"
+     },
+     {
+      "skiri": "Ti hitu '.",
+      "english": "This is a feather."
+     }
+    ]
+   },
+   {
+    "lines": [
+     {
+      "skiri": "Ka rii hitu '?",
+      "english": "Is this a feather?"
+     },
+     {
+      "skiri": "Ahu ', ti hitu'. (SB) Yes, this is a feather.",
+      "english": ""
+     },
+     {
+      "skiri": "Hau, ti hitu'. (SK)",
+      "english": ""
+     },
+     {
+      "skiri": "Ka ru karitki?",
+      "english": "Is this a rock?"
+     },
+     {
+      "skiri": "Kaki, kaki karitki.",
+      "english": "No, it is not a rock."
+     },
+     {
+      "skiri": "Kirike ru'?",
+      "english": "What is it?"
+     },
+     {
+      "skiri": "Ti hitu '.",
+      "english": "This is a feather."
+     }
+    ]
+   }
+  ],
+  "grammar_notes": [
+   {
+    "heading": "Nouns",
+    "text": "There are very few short words in Pawnee. Most words are more descriptive and are longer constructions of smaller parts. The shorter words are usually names of common objects, such as the things named in this chapter. Words that name things are called nouns, and nouns in Pawnee often end in the suffix -u'. (A suffix is a small part of a word attached to the end of it.) Some nouns in Pawnee are words which have been copied or borrowed from English; when this happens, the word is given a distinct Pawnee pronunciation, and often it is hard to hear the English equivalent. Look at the names for nickel, dime, and quarter above. What English words do they suggest?"
+   },
+   {
+    "heading": "Pronunciation",
+    "text": "At first, you may find some sounds of Pawnee hard to pronounce. One of the sounds is the letter r. It is easier to pronounce between vowels. There it sounds like a fast d as in the English word ready, but is softer. Drill: (iri) kiriks (ari) karitki (ira) tirakis When the r begins a word, it is helpful to stick in a very short a just before the r, so that you put the r between vowels. Drill: rakis (arakis) raku' (araku')"
+   },
+   {
+    "heading": "Useful Phrases",
+    "text": "1. Nawa! Hello, okay, now. The old pronunciation of this word is rawa, but the pronunciation and spelling with n is so common, we have included this word as the only one to use n. Common expressions tend to receive unique pronunciations. Notice that the Skidi word for yes (hail) ends with a strong nasal quality (sound coming through the nose). 2. Istu. Again. 3. Suks-paku'. Say it. 4. Aka! Oh my! Gee! 5. Ka? What?"
+   },
+   {
+    "heading": "Indicators",
+    "text": "Indicators are Pawnee words which indicate statements, questions, denials, and so on. Ka ru'? Ka ru kisu'? Ti'. Ti kisu'. Kaki'. Kaki kisu'. Is it? Is it a bone? It is. This is. This is a bone. It is not. No. It is not a bone. KIRIKJ RA•TARAWIS?"
+   }
+  ],
+  "templates": [
+   "T1",
+   "T3",
+   "T4",
+   "T6",
+   "T7"
+  ]
+ },
+ {
+  "lesson_number": 2,
+  "skiri_title": "KIRIKJ RA•TARAWIS?",
+  "english_title": "What Color Is it?",
+  "page_start": 33,
+  "page_end": 39,
+  "dialogues": [
+   {
+    "lines": [
+     {
+      "skiri": "Kirike ra•tarawis rakis?",
+      "english": "What color is the stick?"
+     },
+     {
+      "skiri": "Rakis ti pahaat.",
+      "english": "The stick is red."
+     }
+    ]
+   },
+   {
+    "lines": [
+     {
+      "skiri": "Ka ra•pahaat rakis?",
+      "english": "Is the stick red?"
+     },
+     {
+      "skiri": "Ahu', rakis ti pahaat.",
+      "english": "Yes, the stick is red."
+     }
+    ]
+   },
+   {
+    "lines": [
+     {
+      "skiri": "Ka rd .tareus rakis?",
+      "english": "Is the stick blue?"
+     },
+     {
+      "skiri": "Kaki tareus, ti pahaat.",
+      "english": "It is not blue, it is red."
+     },
+     {
+      "skiri": "NOUN PHRASE: Noun•Adjective",
+      "english": ""
+     },
+     {
+      "skiri": "A word which describes or qualifies a noun is an adjective.",
+      "english": ""
+     },
+     {
+      "skiri": "Words, for example, like red, tall, heavy, are adjectives.",
+      "english": "In Paw-"
+     },
+     {
+      "skiri": "nee, adjectives can come directly after the noun in a noun",
+      "english": ""
+     },
+     {
+      "skiri": "phrase, as in the following examples.",
+      "english": ""
+     },
+     {
+      "skiri": "kiriks•pahat",
+      "english": ""
+     },
+     {
+      "skiri": "a red bead",
+      "english": ""
+     },
+     {
+      "skiri": "kuruks•katit",
+      "english": ""
+     },
+     {
+      "skiri": "a black bear.",
+      "english": ""
+     },
+     {
+      "skiri": "Noun phrases like those above can be used as proper names.",
+      "english": ""
+     },
+     {
+      "skiri": "Or, as in the examples below, they can be used as statements.",
+      "english": ""
+     },
+     {
+      "skiri": "Ti kiriks•pahat.",
+      "english": "It's a red bead."
+     },
+     {
+      "skiri": "(The bead is red.)",
+      "english": ""
+     },
+     {
+      "skiri": "Ti kuru'ks•katit.",
+      "english": "It's a black bear."
+     },
+     {
+      "skiri": "(The bear is black.)",
+      "english": ""
+     },
+     {
+      "skiri": "Sometimes the noun will stand separately outside the adjec-",
+      "english": ""
+     },
+     {
+      "skiri": "tive phrase, as in:",
+      "english": ""
+     },
+     {
+      "skiri": "Kiriks ti pahaat.",
+      "english": "The bead is red."
+     },
+     {
+      "skiri": "Kuruks ti katiit.",
+      "english": "The bear is black."
+     }
+    ]
+   }
+  ],
+  "grammar_notes": [
+   {
+    "heading": "A Sound Change",
+    "text": "Many Pawnee roots begin with r. This beginning r will change to a t if the last letter of the root before it in a phrase ends with any of the following hard consonants: p, t, k, ts, or s. Note the following example: rakis + rahkata = rakis•tahkata a yellow stick"
+   },
+   {
+    "heading": "Pronunciation",
+    "text": "To speak Pawnee well, you must learn to draw out or lengthen certain vowels. It is not possible to make a simple rule that will tell you when to do this. So listen carefully to speakers of Pawnee and to the tapes which accompany these lessons. Listen for the vowels which are drawn out and those which are not. In this way you will learn to pronounce the words in a genuine Pawnee fashion. Here are some examples of simple words with both long and normal (short) vowels in the first syllable of the word: Short Vowels rakis kiriks nawa riwit (rd-kis) (ki-riks) (rd-wa) (ri-wit) wood bead now skunk Long Vowels Pari' (pd-ri ') Pawnee hitu ' (hi-tu ') feather raku' (ra-ku') box kitsu ' (ki-tsu ') liquid In addition, the Skidi pronunciation of a word may keep a syllable short where South Band pronunciation lengthens it. Suks•paku' (SB) (suks pa-ku') You (1) say it! (SK)(suks pd-ku ') You (1) say it! As a serious student of the Pawnee language, you should listen for and imitate these long syllables, and try to get the right quality of the vowel. To help in remembering a long syllable, use a pencil to underline the vowel of the long syllable right in your book. raku ' or raku ' box"
+   },
+   {
+    "heading": "Note On Research",
+    "text": "When you write down words you hear from Pawnee speakers, be sure to underline the long syllables."
+   },
+   {
+    "heading": "Interpretation",
+    "text": "Perhaps the most interesting and enjoyable part of studying Pawnee is learning how to interpret Pawnee words, or how to understand the meaning of a word by figuring out its smaller parts or roots. Notice how the two words for snake can be interpreted by comparing them to other words in the lesson. rutki (SB) snake rut + ki = serpent + small thing = snake rakis stick, piece of wood rak + kis = wood + small thing = stick Most Pawnee words are derived or made up from small roots. One of these small roots used to make up words is + kits + or + ki +, which means liquid. kitsu '\tliquid kits + u' hetu ' breast het•kitsu ' milk rasitu' ice kira•rasitu' water ki + ra + rasitu ' liquid from ice In addition, most objects in nature, which Engish may name simply river or tree, will be named in Pawnee by a descriptive phrase: ra .ha•pi tree or \"it's wood standing\" ti r I ha•pi There is a tree. + u + in a line + hat + goes by ti kits•u\"hat stream, river or \"it's liquid going by\""
+   },
+   {
+    "heading": "Names Of Rivers",
+    "text": "Kits .Ka Kits•Katus Kits•Paruksti Kits•Kait Uhaiwu' Kits•Katit Kits•Kuru'ks•Katit"
+   },
+   {
+    "heading": "Useful Phrases",
+    "text": "1. Stiks .atku! 2. Sisu'ks•atku! 3. Suksta'k•atku! 4. Ka rds•atkuku'? 5. Pahitu'! Asku su'ks•paku'. Kitu su'ksta•paku'. Arkansas River Platte River or \"flat river\" Missouri River or \"wise river\" Cimarron River or \"salt river\" Ohio River or \"something's always floating down\" Mississippi River Black Bear Creek You (1)* listen! (to one person) You (2) listen! You (3+) listen! Are you listening? Quiet, behave! One of you say it. (or, Say it one at a time.) All of you say it. (or, Say it together.) *When speaking Pawnee you use a different form for you when addressing one person, two people, or three or more people. In this book we will use (1), (2), or (3+) after the you to show how many people are referred to. KIRIKJ RUT•U'?"
+   }
+  ],
+  "templates": [
+   "T2",
+   "T3",
+   "T4",
+   "T6",
+   "T7"
+  ]
+ },
+ {
+  "lesson_number": 3,
+  "skiri_title": "KIRIKJ RUT•U'?",
+  "english_title": "What Does It Look Like?",
+  "page_start": 39,
+  "page_end": 43,
+  "dialogues": [
+   {
+    "lines": [
+     {
+      "skiri": "Kirike ru '?",
+      "english": "What is it?"
+     },
+     {
+      "skiri": "Ti hak•tsa.",
+      "english": "It's a log. (some wood lying)"
+     }
+    ]
+   },
+   {
+    "lines": [
+     {
+      "skiri": "Kirike tutu '?",
+      "english": "What does it look like?"
+     },
+     {
+      "skiri": "Ti ha'k•tihu'.",
+      "english": "It's big (wood)."
+     }
+    ]
+   },
+   {
+    "lines": [
+     {
+      "skiri": "Ka ra•ha'k•tihu '?",
+      "english": "Is the tree big?"
+     },
+     {
+      "skiri": "Kaki ha'k•tihu'.",
+      "english": "The tree is small."
+     }
+    ]
+   },
+   {
+    "lines": [
+     {
+      "skiri": "Rakis•pahat ka ra .rihu'?",
+      "english": "Is the red stick big?"
+     },
+     {
+      "skiri": "Ahu', rakis•pahat ti rihu'.",
+      "english": "Yes, the red stick is big."
+     }
+    ]
+   }
+  ],
+  "grammar_notes": [
+   {
+    "heading": "Combining Roots",
+    "text": "When roots are combined to form phrases, they change spelling. If you know the rules of these spelling changes, you will be able to interpret many words where the roots are disguised by different spellings. Here are some spelling rules which are active in the words given in this chapter. 1. r changes to t after a hard consonant ti rihu it's big ti ha\"k•tihu it's big wood 2. w changes to p after a hard consonant ti .wari' he goes about tat•pari '\tI go about 3. k drops off before p ti hak•tsa log tira ha•pi tree 4. r changes to h before any consonant hiru ' meadow ti hih•wa yard hir + wa 5. i + lay combine to make e ahitu' fat t'ehit he's fat ti + ahit Notice how these rules can interact: 1. ti + hak + wa + wi it's wood widely vertical _2. ti + hak + pa + wi w becomes p 3. ti + ha_ + pa + wi k drops off 4. ti ha•pa•wi there are trees"
+   },
+   {
+    "heading": "Pronunciation",
+    "text": "Remember that all the parts of a phrase are pronounced together without a pause. The last sound of one word will slur over into the beginning of the next word. ti hih•wa grass (ti-hi-hwa) or (ti-hi-wha)"
+   },
+   {
+    "heading": "Useful Phrases",
+    "text": "Hiri we ti risat. Wow, that's big! Kirike ratara•paki .ahu'? How do you say it in Pawnee? (How are we saying it?) 3. Take ru '. Who is it? 4. Tat. It's me. 5. Rat u'. Me. 6. Ras•u'. You. KIRIKJ RAS•TA?"
+   }
+  ],
+  "templates": [
+   "T3",
+   "T4",
+   "T6",
+   "T7"
+  ]
+ },
+ {
+  "lesson_number": 4,
+  "skiri_title": "KIRIKJ RAS•TA?",
+  "english_title": "What Do You Have?",
+  "page_start": 43,
+  "page_end": 49,
+  "dialogues": [
+   {
+    "lines": [
+     {
+      "skiri": "Kirike ras•ta?",
+      "english": "What do you have?"
+     },
+     {
+      "skiri": "Kiriks tahrarra.",
+      "english": "I have some beads."
+     },
+     {
+      "skiri": "Kiriks tah•ra.",
+      "english": "I have a bead."
+     }
+    ]
+   },
+   {
+    "lines": [
+     {
+      "skiri": "Kitske rastarra kiriks?",
+      "english": "How many beads do you have?"
+     },
+     {
+      "skiri": "Asku kiriks tah•ra.",
+      "english": "I have one bead."
+     },
+     {
+      "skiri": "Sihuks kiriks tahrarra.",
+      "english": "I have five beads."
+     }
+    ]
+   }
+  ],
+  "grammar_notes": [
+   {
+    "heading": "Pronunciation",
+    "text": "Remember that in the Skidi manner, an r is silent when it follows an h. tah•ra = (td-ha) (SK) (td-hra) (SB) The combination rr is actually pronounced as a single r."
+   },
+   {
+    "heading": "Pronunciation",
+    "text": "Remember that within a phrase, the last consonant of a root is slurred into the beginning of the next root. pitkus•iksapits = (pit-ku-sik-sa pits)"
+   },
+   {
+    "heading": "Useful Phrases",
+    "text": "1. Kitske'? How much? How many? 2. Turrahe It's good. 3. Kak'tirrahe. It's bad. (no good) 4. Siks•a'. Come here. (you, 1) 5. Siksut•tsa'. Stand up. (you, 1) 6. Ruru ' . (SB) Go (on). (you, 1) Hiru'. (SK)"
+   },
+   {
+    "heading": "Verb Phrase",
+    "text": "Words which refer to actions or events are called verbs. In English, have is a verb; in Pawnee, t ih-ra is a verb phrase, a group of roots meaning I have it. The first part, tab ., is an introducer, the second, •ra, the verb root meaning have. Introducers In Pawnee, an introducer carries information such as 1) MODE (indicators or markers) how does this information relate to what the speakers know? 2) PERSON: (markers) who is involved? 3) NUMBER: (markers) how many are involved? introducer•verb = mode + person + verb root tah•ra ta + h + ra I'm telling you + I + have I have it. ta +s +ra I'm telling you + you + have You have it. ra + s + ra we know + you + have (that) you have it. introducerverb = mode + person + number + verb root ta'hrarra ta + h + rar + ra I tell you + I + them + have I have some (them). 'INTRODUCER = MODE + PERSON + NUMBER Mode can be indicated either by a marker or an indicator which is joined to the introducer. The indicator may change its last letter according to who is the subject. Ta'h•ra. I have it. Kakah•ra. I don't have it. VERB SET: Tah .ra I have it. (May be used to play a classroom game like \"Who's got the button?\") Question: Take ra•ra? Who has it? Responses: Tah•ra. I have it. Tas•ta. You have it. TI ra. He or she has it. tas-ta ras•ta Question: Take rararra? Responses: Tahrarra. Tastarra. Tirarra. Si tahrarra. Si tastarra. Si tirarra. Tahraktarra Tastaktarra Tihrarra Who has them? I have them. You have them. He or she has them. We (2) have them. You (2) have them. They (2) have them. We (3+) have them. You (3+) have them. They (3+) have them."
+   },
+   {
+    "heading": "Plurals",
+    "text": "In English, a noun which refers to more than one thing is called a plural noun, and it ends in -s, the plural suffix. (Examples: dogs, cats, trees.) In Pawnee, there is really no plural ending, and any noun can refer to one thing, two things, or three or more things. pita a man, some men rakis a stick, some sticks hitu '\ta feather, some feathers Plurality is usually indicated by markers in the introducer of the verb phrase. Tah•ra. I have it. Thhrarra. I have some. + rar + plural (more than one) Tahra'ktarra. We have them. + rak + more than one of us Usually, the plural subject is marked by + rak +, the plural object by + rar +. There are other plural markers such as + it + for they and + atsir + for two of us, but these plurals are used in only a few places. Tihrarra. They (3+) have them. ti + it + rarra Tatsih•wari'. We (you and I) are going about. to + atsir + wari'"
+   }
+  ],
+  "templates": [
+   "T4"
+  ]
+ },
+ {
+  "lesson_number": 5,
+  "skiri_title": "TARIKTAU'",
+  "english_title": "The Body",
+  "page_start": 49,
+  "page_end": 55,
+  "dialogues": [
+   {
+    "lines": [
+     {
+      "skiri": "Kiru rdspaks•ku?",
+      "english": "Where is your head (sitting)?"
+     },
+     {
+      "skiri": "Ti rit•paks•ku.",
+      "english": "Here is my head. (rit + I have it)"
+     }
+    ]
+   },
+   {
+    "lines": [
+     {
+      "skiri": "Kiru ras•kirik•ta?",
+      "english": "Where is your eye (hanging)?"
+     },
+     {
+      "skiri": "Ti rit•kirik•ta.",
+      "english": "Here is my eye."
+     }
+    ]
+   },
+   {
+    "lines": [
+     {
+      "skiri": "Ka ra•paks•taari'?",
+      "english": "Does your head hurt?"
+     },
+     {
+      "skiri": "Kaki ku .paks•tdari', My head doesn't hurt,",
+      "english": ""
+     },
+     {
+      "skiri": "Tiku'ks•taari'.",
+      "english": "My hand hurts."
+     }
+    ]
+   }
+  ],
+  "grammar_notes": [
+   {
+    "heading": "Notes",
+    "text": "Position of Objects When talking about any object in Pawnee, you must consider its position or attitude: your head \"sits, \" (+ ku) almost every other part of your body \"hangs\" (+ ta). Spelling Rule When i follows u, it drops out. So ti + ku + iks = tiku 'ks, and the remainder of the root joins the introducer, in this case."
+   },
+   {
+    "heading": "More On The Verb Phrase",
+    "text": "A verb phrase is any group of written words which includes an introducer. To avoid confusion, we will talk of introducers being composed of markers; every other meaningful part of a verb phrase will be a root or will be composed of roots."
+   },
+   {
+    "heading": "Passive Introducers",
+    "text": "To say \"it hurts\" Pawnee uses a form of the introducer which means \"it does it to me.\" ti + I'm telling you that it .. . + ku . . . to me (person marker, first person object) tiku + perks + taari' it does it to me + head + hurts Tiku•paks•taari'. My head hurts."
+   },
+   {
+    "heading": "Physical Possession",
+    "text": "To express physical possession of body parts, the marker ri + is used in the introducer, following the modal marker (indicator) ti, and followed by the person marker. mode + phys. poss. + person + noun + verb ti + ri + t + kirik + to Ti rit•kirik•ta. Here is my eye."
+   },
+   {
+    "heading": "New Words",
+    "text": "Find a speaker of Pawnee who can tell you the words for: back navel knee"
+   },
+   {
+    "heading": "Interpretation",
+    "text": "Compare .the words for neck, finger, toe, thick (Chapter 3) and bone (Chapter 1). What root do they have in common? What does it seem to mean?"
+   },
+   {
+    "heading": "Useful Phrases",
+    "text": "Siiks•at. Suks .at kusaksi. Suks•at pihkawf .hiri'. Sutsiks .sapita•hat. Pahitu suks .ku! Suks•paka-rihu'. Kirike ras•paku'? You (1) go. Go left. Go right. Turn around. Behave yourself! Speak up (louder). What did you say?"
+   },
+   {
+    "heading": "Completed And Incomplete Action",
+    "text": "The simplest form of a verb is the perfect form. In this form the verb indicates action or events already completed. Tiku'ks•taa. My hand has been hurt. (my hand got hurt) Perfect Tiku'ks•taari'. My hand is hurting. (my hand hurts) Imperfect The imperfect form indicates action or events still happening, incomplete action. This is the form used in this chapter, though the perfect form could easily be substituted in the dialogues."
+   },
+   {
+    "heading": "Commands",
+    "text": "In Pawnee, commands to the hearer use the perfect form of the verb, and build an introducer out of the second person (hearer) marker s +, the command marker +uks, and number markers si + (two hearers) and +rak (three or more hearers). Tas•pa\"ku'. You have said it. Suks•paku'. You (1) say it! s + uks + wak + u' you + do it + say it + completed Sisuks•paku'. You (2) say it! Suksta•pdku ' . You (3+) say it. s + uks + rak + waki + u' VERB SETS: Commands and Responses (Imperative and Perfect Forms) Single Person Suks•paku'. Tat•paku'. You (1) say it. I have said it. Suks•pitit. Tat•pitit. You (1) sit down. I have sat down. Stiks•at. You (1) go (away). Two Persons (Dual) Sisukspaku'. You (2) say it. Sisukspitit. You (2) sit down. Sisuks .pa. You (2) go (away). Suksta-paku'. *s + uks + rak + wak + u' You (3+) say it. Suksta•pitit. You (3+) sit down. Stiksta•pu'. You (3+) go (away). Tat•at. I have gone (away). Sitat•paku'. We (2) have said it. Sitat .pitit. We (2) have sat down. Sitat•pa. We (2) have gone (away). Tahrapaku'. to + t + rak + wak + u' We (3+) have said it. Tahra .pitit. We (3+) have sat down. Tahra•pu'. We (3+) have gone (away)."
+   },
+   {
+    "heading": "Irregular Roots",
+    "text": "Normally, the root form of any particular verb, say eat, will stay the same, no matter who is eating or when they ate. However, some common verbs in Pawnee will have different forms for different subjects. Notice the roots for go are +at for one person, +wa (+pa) for two persons, and +wu (+pu) for three or more persons as subjects. This is somewhat like English I go and I went, rather than I goed. *SPELLING RULE Remember, w goes to p after a hard consonant, and k drops out before p."
+   }
+  ],
+  "templates": [
+   "T3",
+   "T5"
+  ]
+ },
+ {
+  "lesson_number": 6,
+  "skiri_title": null,
+  "english_title": "Words to substitute for pita in the dialogues.",
+  "page_start": 55,
+  "page_end": 60,
+  "dialogues": [
+   {
+    "lines": [
+     {
+      "skiri": "Pita kirike rut•ari'?",
+      "english": "What is the man doing?"
+     },
+     {
+      "skiri": "Pita tiwari'.",
+      "english": "The man is going (walking) about."
+     }
+    ]
+   },
+   {
+    "lines": [
+     {
+      "skiri": "Pita ka ra•kikat?",
+      "english": "Is the man crying?"
+     },
+     {
+      "skiri": "Kaki ', pita t'ewasku'.",
+      "english": "No, the man is laughing."
+     }
+    ]
+   }
+  ],
+  "grammar_notes": [
+   {
+    "heading": "Pre Verbs",
+    "text": "Some verbs in Pawnee are accompanied by markers which indicate certain relationships like those indicated by English prepositions in to it, for it, and on it. Two of these markers are + ut and + ur and are included in the introducer, which is why they are called preverbs. ti•ari' he's becoming tut•ari ' he 's making it or doing it (tu-td-ri') ti + ut + ari it is + for him + becoming"
+   },
+   {
+    "heading": "Useful Phrases",
+    "text": "1. Siksut•tsa' You (1) stand up. 2. We rut•utsi•raru'. That's all. 3. TI'tskipi. He's sleepy. 4. Tiku 'tskipi. I'm sleepy. 5. Ta'tskipi. You're sleepy."
+   },
+   {
+    "heading": "Verb Sets",
+    "text": "Questions Kirike ratut•ari '? What am I doing? Kirike rasut•ari'? What are you (1) doing? Kirike rutari '? What is he doing? Kirike rit•ari '? What are they (3+) doing? ri + ut Kirike sirut•ari'? What are they (2) doing? Responses All of the following responses would normally be preceded by the indicator we which means \"now \" or \"then.\" (we) Tat•pari ' . I am walking about. Tas•pari ' . You are walking about. Ti .wari'. He is walking about. Siti .wari'. They (2) are walking. Tirah•wari'. They (3+) are walking. (ti-rah-wha-ri') (we) Tat•kikat. I am crying. More responses can be built by adding the introducers tat ., taw, etc. above to the verb root + kikat."
+   },
+   {
+    "heading": "Person Markers",
+    "text": "In Pawnee verb phrases, the introducer will tell who is being talked about, that is, who the subject and object of the sentence are. When a single letter or root is used, we call this a person marker. There are four main person markers in Pawnee: 1. Subjects (who is doing it) + t first person, I or we (speaker or any group which includes him) tat. kikat I am crying sitat•kikat we (2) are crying + s second person, you tas•kikat you are crying sitas .kikat you (2) are crying 2. Objects (who is experiencing it) + ku first person, to me, to us tiku'tskipi I am sleepy sitiku'tskipi we (2) are sleepy tikurak•itskipi we (3+) are sleepy + a second person to you ta 'tskipi you (1) are sleepy sita'tskipi you (2) are sleepy tarak•itskipi you (3+) are sleepy 3. Third Person: he, she, it Third person refers to someone or something who is neither the speaker nor the hearer. In English, the words he, she, and it refer also to sex and the difference between a person and a thing. Pawnee makes no such distinctions. Ti pahaat means he is red or she is red or it is red. TAR1 RU'?"
+   }
+  ],
+  "templates": [
+   "T3",
+   "T4",
+   "T6",
+   "T9"
+  ]
+ },
+ {
+  "lesson_number": 7,
+  "skiri_title": "TAR1 RU'?",
+  "english_title": "Who Is It?",
+  "page_start": 60,
+  "page_end": 65,
+  "dialogues": [
+   {
+    "lines": [
+     {
+      "skiri": "Take ru '?",
+      "english": "Who is that (one)?"
+     },
+     {
+      "skiri": "Ti atira '.",
+      "english": "She's my mother."
+     }
+    ]
+   },
+   {
+    "lines": [
+     {
+      "skiri": "Tsiru ka rail apat?",
+      "english": "Is your grandfather still alive?"
+     },
+     {
+      "skiri": "(or ka ra .wari ')",
+      "english": ""
+     },
+     {
+      "skiri": "Kaki ', atipat we ti hura•hats.",
+      "english": "No, my grandfather has"
+     },
+     {
+      "skiri": "passed away.",
+      "english": ""
+     }
+    ]
+   }
+  ],
+  "grammar_notes": [
+   {
+    "heading": "Useful Phrases",
+    "text": "1. T'at•atsfks•ta I love you. 2. We t'at•atsfks•tat•at I love her. (We-ta-ta-tsiks-ta-tat) (My mind is ever on her) 3. We tat•uhure•hats. I'm ready. 4. Nawa hfru'! (SK) Go ahead! Nawa niru! (SB) Go ahead! 5. TsIru'. Wait! 6. Su'ksur•erit! Stop! 7. Wfs kutsu'! Hurry! 8. Kus•tutsi•erit I'll see you."
+   },
+   {
+    "heading": "Third Person Kinship Terms",
+    "text": "hidsti '\this father hisdsti' his mother hikdri' his grandmother hipdkti' his grandfather hiwdhri' his niece, nephew hiwdririks his uncle"
+   },
+   {
+    "heading": "Specifying Verbs",
+    "text": "There are verb phrases in Pawnee which describe nouns by further specifying which object or person is being referred to, and often describing its position. Demonstratives ti ra•kti pita ti ra•ariki pita i ra•kti pita i ra•ariki pita Possessives kti•ratiru paks-ktiku' ktI rasiru paks•ktiku' kti .ra•u paks•ktiku' ku + that sitting man that standing man that sitting man yonder that standing man yonder my hat your hat his hat \"indefinite,\" used with possessive verbs to (preverb) is"
+   },
+   {
+    "heading": "Pawnee Kinship",
+    "text": "One of the cultural habits of the old-time Pawnees that still survives today is the unique non-English way of using kinship terms. There seem to be complicated rules for figuring out what to call someone, but since the English system has been mixed in, the important thing to consider is the difference between a \"respect\" and a \"joking\" relationship, as suggested by Weltfish (1965: Chapter 3). A boy or man calls a woman atira and she calls him tiki or son if she is responsible for his welfare and for giving him advice on how to act properly. This represents a relationship of respect, and a man who calls a woman atira will call her sisters and daughters atira also, as relationships of respect are inherited. Atias is another term of respect. In the old days, the tribal agent was called atias or father and other white persons were likely to be called irari or brother, friend. Terms of a joking relationship are atipat or apat or grampa and atika or gramma. A man may call a woman atika to represent a more informal relationship and a woman may call a man apat or grampa to represent an informal, familiar relationship which calls for teasing and joking. Joking relationships are more easily created and two persons may easily choose to call each other, for example, apat or grampa and taka or sonny, whereas the use of atias, atira, and other terms of respect are more strict and inherited. KI Rid RA. KU?"
+   }
+  ],
+  "templates": [
+   "T1"
+  ]
+ },
+ {
+  "lesson_number": 8,
+  "skiri_title": "KI Rid RA. KU?",
+  "english_title": null,
+  "page_start": 65,
+  "page_end": 70,
+  "dialogues": [
+   {
+    "lines": [
+     {
+      "skiri": "Kirike ras•taspe'?",
+      "english": "What are you looking for?"
+     },
+     {
+      "skiri": "Tah•raspe ' asaki.",
+      "english": "I'm looking for my dog."
+     }
+    ]
+   },
+   {
+    "lines": [
+     {
+      "skiri": "Ka ras•huras asaki?",
+      "english": "Have you found the dog?"
+     },
+     {
+      "skiri": "Ahu', tat .huras asaki.",
+      "english": "Yes, I found the dog."
+     }
+    ]
+   },
+   {
+    "lines": [
+     {
+      "skiri": "Kiru ruks•ku'?",
+      "english": "Where was it (sitting)?"
+     },
+     {
+      "skiri": "Ru tuks•kaku'.",
+      "english": "It was in the house."
+     }
+    ]
+   }
+  ],
+  "grammar_notes": [
+   {
+    "heading": "Past Tense",
+    "text": "There is one marker in Pawnee which refers to time. This is the marker +uks, which follows the person marker in the introducer and means in a time past. We have seen that +uks also marks the command form, but in that usage, the introducer has no marker of mode. Suks .atku. Tasuks•atku. Listen! You listened. The u in +uks is a strong vowel which causes the a in modal marker +ra and i in modal marker ti + to drop out. question mode person past verb kiru +ra +0 +uks +ku kiru +ra +uks +ku (a drops out) Niru ruks•ku? Where was it? Pawnee does not use a letter or root to refer to the third person. It's the fact that no person marker is present which means third person. The symbol is used to denote the absence of a marker in the interpretation. tat .kiikat tat. =ta + t tas .kikat tas. = to + s ti .kikat ti. = ti + I am crying first person you are crying second person he, she, it is crying third person Notice also that the modal marker has a different vowel for third person. mode person past root root ti +1 +uks +ka +ku' ti +uks +ka +ku' Tuks .kaku '. He was in the house."
+   },
+   {
+    "heading": "Nouns In A Verb Phrase",
+    "text": "In Pawnee, a noun can often be included inside the verb phrase, as we saw in Lesson 3. That was a case of subject nouns being included. Nouns of location can also be included. First they are reduced to a root form and then inserted before the verb. 3g hatur•raru' road ti•kaarit he is standing in it ti +hatur +ka +arit r becomes h before k +ka + \"in\" ti +hatuh +ka +arit ti•hattih•kaarit he's standing in the road"
+   },
+   {
+    "heading": "Verbs",
+    "text": "tat•ira•ita' I know it kakat•ira ita' I don't know"
+   },
+   {
+    "heading": "More Numbers",
+    "text": "asku•hti .kita eleven (one on top) pitkus•htis•iri '\ttwelve tawi•rIhuks•iri '\tthirteen raku•kita sihuks•tarti .kita ksur awiu' (iks +ur +awiu') tawit•ka•ke' pitkti .ka•ke' askti .ka•ke' pitau ' pitati .asku fourteen fifteen sixteen seventeen eighteen nineteen twenty twenty-one"
+   },
+   {
+    "heading": "Useful Phrases",
+    "text": "1. Tari'. 2. Ka? 3. Ka ru rut•tsirau '? 4. Ru tut•tsirau ' . 5. Tat•atsiks•tehu'. Here it is (holding it). What? Is that right? That's right; Alright. Thank you."
+   },
+   {
+    "heading": "Objects In A House",
+    "text": "tsktis•kakusu' u•kaat•awi•eriku (SB) ru•kat•awi•riku (SK) reka .kusu' tuks•kata•ku hiri ra•reka .kusu' chair window, mirror, something to look through window, mirror door It was (sitting) behind the door"
+   }
+  ],
+  "templates": [
+   "T3",
+   "T4",
+   "T7",
+   "T8"
+  ]
+ },
+ {
+  "lesson_number": 9,
+  "skiri_title": "KIRK RA•'AT",
+  "english_title": "Where Has It Gone?",
+  "page_start": 70,
+  "page_end": 74,
+  "dialogues": [
+   {
+    "lines": [
+     {
+      "skiri": "Ka ra•awari rikutski?",
+      "english": ""
+     },
+     {
+      "skiri": "Kaki', rikutski ti .'isat.",
+      "english": ""
+     }
+    ]
+   },
+   {
+    "lines": [
+     {
+      "skiri": "Kirti ra•'at rikutski?",
+      "english": ""
+     },
+     {
+      "skiri": "Ti•kaisat.",
+      "english": ""
+     },
+     {
+      "skiri": "Is the bird (still) flying around?",
+      "english": ""
+     },
+     {
+      "skiri": "No, the bird has disappeared.",
+      "english": ""
+     },
+     {
+      "skiri": "Where has the bird gone?",
+      "english": ""
+     },
+     {
+      "skiri": "It flew into the woods.",
+      "english": ""
+     }
+    ]
+   }
+  ],
+  "grammar_notes": [
+   {
+    "heading": "Verbs",
+    "text": "ti•hu'at ti•hu•kata'at he has gone on the water (to go on a surface) he has crossed (the stream) 4; t 'ewi 'at he has jumped tut .awi'at he has jumped over"
+   },
+   {
+    "heading": "Objects",
+    "text": "ra .hak•tsa a log, the log ti hak•tsa that's a log karit•kutsu' boulder (big rock) Rahurahki we tut•awi 'at The deer jumped over karit•kutsu'. the big rock. NOUNS IN THE SENTENCE: WORD ORDER Remember, there are two main kinds of nouns you may find in a sentence, subjects (refer to who is doing it) and objects (refer to who or what is experiencing it, but not doing anything). Kiwaku we tu'h•kuksas . The fox ran away."
+   },
+   {
+    "heading": "Object Verb Phrase",
+    "text": "If there is only one noun in the sentence, it can come either before or after the verb, according to what is the most important new information in the sentence. Rikutski ti pahaat. The bird is red. Ti pahaat rikutski. The bird is red. Normally, what is important or in focus is first in the sentence; what is understood or presumed is last. When two nouns appear in the same sentence, the subject comes directly before the verb phrase, the object comes last, and time words may follow the object. Pita ti•kuwutit rahurahki pitsikat. subject verb phr. object time word The man killed a deer , in the winter."
+   },
+   {
+    "heading": "Useful Phrases",
+    "text": "1. Kiru ras•at Where are you going? 2. We tat•ka•isat I'm going home now. 3. Siks a'. Come here. 4. Wis. Hurry. 5. We tatir•a ' . I'm coming."
+   },
+   {
+    "heading": "Directions",
+    "text": "Hawit East Hatskat West Hiri Ra•ka•hurah•katiit•u' North Hiri Ra•saka•ku South KIRIK1 RUH•RA'?"
+   }
+  ],
+  "templates": [
+   "T2",
+   "T3",
+   "T9"
+  ]
+ },
+ {
+  "lesson_number": 10,
+  "skiri_title": "KIRIK1 RUH•RA'?",
+  "english_title": "What Is He Using?",
+  "page_start": 74,
+  "page_end": 78,
+  "dialogues": [
+   {
+    "lines": [
+     {
+      "skiri": "Paresu kirike rut•ari '?",
+      "english": ""
+     },
+     {
+      "skiri": "What is the hunter doing?",
+      "english": ""
+     },
+     {
+      "skiri": "Paresu ti•taka•asiku'.",
+      "english": ""
+     },
+     {
+      "skiri": "The hunter is shooting.",
+      "english": ""
+     }
+    ]
+   },
+   {
+    "lines": [
+     {
+      "skiri": "Kirike ruh•ra' paresu '?",
+      "english": ""
+     },
+     {
+      "skiri": "What is the hunter using?",
+      "english": ""
+     },
+     {
+      "skiri": "Paresu tuh•ra' tiraku ' .",
+      "english": ""
+     },
+     {
+      "skiri": "The hunter is using a rifle.",
+      "english": ""
+     }
+    ]
+   }
+  ],
+  "grammar_notes": [
+   {
+    "heading": "Pre Verbs",
+    "text": "There are many Pawnee verbs which add +ut or +ur to the introducer. +Ut can mean for him or on him and may be optional for some verbs. +Ur means for it, him, her or for that purpose. ti .ari' ti +ut +ari tut•ari ' ti .ra ti +ur +ra tur +ra tuh+ra tuh•ra' he is becoming he +for it +becomes i +u becomes u he is doing it, making it he has it he +for that (purpose) +has it i +u becomes u r+r becomes h +r he is using it"
+   },
+   {
+    "heading": "Useful Phrases",
+    "text": "1. Ra kitu'. Altogether. 2. Arisit suks•at. Go by yourself. 3. Suks•kata .hat! Get out of the way! 4. Suks•taka•hat! Get off (out)! 5. Tas•kitawe' You're the boss. KA RIiH•RATSAUS?"
+   }
+  ],
+  "templates": [
+   "T4"
+  ]
+ },
+ {
+  "lesson_number": 11,
+  "skiri_title": "KA RIiH•RATSAUS?",
+  "english_title": "Are You Hungry?",
+  "page_start": 78,
+  "page_end": 82,
+  "dialogues": [
+   {
+    "lines": [
+     {
+      "skiri": "Ka ruh•ratsaus?",
+      "english": ""
+     },
+     {
+      "skiri": "Ilan', tiku•ratsaus.",
+      "english": ""
+     },
+     {
+      "skiri": "Kaki', we tatuks•a .ka-",
+      "english": ""
+     },
+     {
+      "skiri": "wahtsu'.",
+      "english": ""
+     }
+    ]
+   },
+   {
+    "lines": [
+     {
+      "skiri": "Kirike rasuks•a?",
+      "english": ""
+     },
+     {
+      "skiri": "Tatuks•a kisatski.",
+      "english": ""
+     }
+    ]
+   },
+   {
+    "lines": [
+     {
+      "skiri": "Ka ruruks•tahare?",
+      "english": ""
+     },
+     {
+      "skiri": "Kaki', kakuruks•tahare.",
+      "english": ""
+     },
+     {
+      "skiri": "Are you hungry?",
+      "english": ""
+     },
+     {
+      "skiri": "Yes, I'm hungry.",
+      "english": ""
+     },
+     {
+      "skiri": "No, I ate (was eating).",
+      "english": ""
+     },
+     {
+      "skiri": "What did you eat?",
+      "english": ""
+     },
+     {
+      "skiri": "I ate (was eating) meat.",
+      "english": ""
+     },
+     {
+      "skiri": "Did it taste good?",
+      "english": ""
+     },
+     {
+      "skiri": "No, it tasted bad.",
+      "english": ""
+     }
+    ]
+   }
+  ],
+  "grammar_notes": [
+   {
+    "heading": "Useful Phrases",
+    "text": "1. Ketard .pu'! Let's (3+) go! 2. Tuhtira•pu'! Let's (3+) go now! 3. Ketsih .wa. Let's (2, you and I) go. 4. Tuhurak•a .kawats! Let's (3+) eat! 5. Suks•kits karihats! Drink up! 6. Stiks•kika'. Drink it. 7. Kesku•'ti kait. Give me salt. 8. Kirike ras•itska'? What do you want? 9. Sikstar•ru•a kait. Pass the salt (grains). 10. Siks•tu•a kait. Pass the salt. (shaker) 11. Istu ka ras•itska'? Do you want more? 12. Aka ' , hiri we ttih•kaharawere. Ah, that smells good. 13. We tat•ka•wakit. I'm full. Time and Subject Indicators: hiri and we Most statements in Pawnee begin with a time or subject indicator. We is used to begin almost any statement; it is a syllable which comes just before the introducer and means now or then. Really, it means at that certain time and is used to point out a time which may not be already understood by the hearer. Hiri means that thing or that place and refers to the real subject of a sentence which is known by the hearer but not necessarily understood without this word to point it out. If you are using one of the verb phrases given in this book to make a statement to somebody, you should normally start with we. Ta.tuks•at. I went We tatuks•at. I went (then) (or, I had gone) VERB SET (Various aspects): to drink Tat .kika'. I have drunk, I drank. (perfect aspect) Tat•kikahu ' . I am drinking. (imperfect aspect) Tatuks•kika'. I drank, I had drunk. (past tense, perfect aspect) Tatuks•kikahu'. I was drinking. (past tense, imperfect aspect) Suks•kika ' . Drink! (Command) The Suggestive Mode Some commands are given like suggestions, such as the comparison of \"Shut the door\" and \"Would you shut the door?\". These commands take the form of normal verb phrases with a suggestive modal indicator ke+. Tiku•'u. He gave it to me. Kesku•'u. Tasku•'u. Give it to me. You should give it to me. You gave it to me. SUKS • U."
+   }
+  ],
+  "templates": [
+   "T7",
+   "T8"
+  ]
+ },
+ {
+  "lesson_number": 12,
+  "skiri_title": "SUKS • U.",
+  "english_title": "Give It To Him.",
+  "page_start": 82,
+  "page_end": 85,
+  "dialogues": [
+   {
+    "lines": [
+     {
+      "skiri": "Suks•u rekits•tiwiru'.",
+      "english": "Give him the candy."
+     },
+     {
+      "skiri": "Rekits•tiwiru' we tat•u.",
+      "english": "I have given him the candy."
+     }
+    ]
+   },
+   {
+    "lines": [
+     {
+      "skiri": "Ka ras•tapu rekits•tiwiru'?",
+      "english": "Did you buy candy?"
+     },
+     {
+      "skiri": "Kaki', tiku•rapu rekits•tiwiru'.",
+      "english": "No, I sold candy."
+     }
+    ]
+   }
+  ],
+  "grammar_notes": [
+   {
+    "heading": "Useful Phrases",
+    "text": "1. Kitske rd•awitsu'? How much is it? 2. T'ewitsu asku. It costs a dollar. 3. Kuka ras•ta papitsisu '? Do you have any money? 4. Ketuh•kusit asku. Lend me a dollar. or Ketuh•kusit papitsisu kitu. VERB SET (imperative Ktisti•at Su'ks•at. Rtiruks•at. Tsiks•pa. (hirihe) Situks•pa. Siruks•pa. Tu'ksta•pu'. Stiksta•pu'. Rtiruks•pu'. form): Suks-at. Go! Let me go. You (1) go. Go! Let him go. Let's you and I go. Let us (2) go. Let them (2) go. Let's (3+) go. You (3+) go. Let them (3+) go."
+   },
+   {
+    "heading": "Indirect Object, Goal",
+    "text": "In English, we say \"I (subject) gave it (object) to her (indirect object).\" What is often referred to as indirect object is, in Pawnee, merely another object, and is indicated in the introducer by a person marker (which may be zero 0) and perhaps a number marker, usually +ak +. The natural or unmarked form of a verb phrase referring to two person (it, him, her). We tat-u. We tata•u. +a+ We sitat•u. +.9 + si+ We sitata•u. +a+ +si We tatarak•u. +a+ +rak + We tatak•u +ak + objects is when both objects are third I gave it to her. (have given) I gave it to you. to you I gave it to them (2). to them I gave it to you (2). to you I gave it to you (3+). to you 3+ I gave it to them (3+). to them (3+). KIRU RATSUKS•AT?"
+   }
+  ],
+  "templates": [
+   "T10"
+  ]
+ },
+ {
+  "lesson_number": 13,
+  "skiri_title": "KIRU RATSUKS•AT?",
+  "english_title": "Where Did You Go?",
+  "page_start": 85,
+  "page_end": 90,
+  "dialogues": [
+   {
+    "lines": [
+     {
+      "skiri": "Kiru rasuks•at?",
+      "english": ""
+     },
+     {
+      "skiri": "Where did you go?",
+      "english": ""
+     },
+     {
+      "skiri": "Tatuks•at Pari.",
+      "english": ""
+     },
+     {
+      "skiri": "I went to Pawnee.",
+      "english": ""
+     },
+     {
+      "skiri": "Tatuks•itsah•ka'isat.",
+      "english": ""
+     },
+     {
+      "skiri": "I went into town.",
+      "english": ""
+     }
+    ]
+   },
+   {
+    "lines": [
+     {
+      "skiri": "Kirike rasut•erit?",
+      "english": ""
+     },
+     {
+      "skiri": "What did you see?",
+      "english": ""
+     },
+     {
+      "skiri": "Kaas raku•kariu",
+      "english": ""
+     },
+     {
+      "skiri": "I saw many cars.",
+      "english": ""
+     },
+     {
+      "skiri": "tatutak•erit.",
+      "english": ""
+     }
+    ]
+   }
+  ],
+  "grammar_notes": [
+   {
+    "heading": "Adverbs",
+    "text": "Raku•kariu' and tsuskiit are adverbs and go directly before the verb. They are tied to the verb, not to the object noun as would be an adjective like tawit, \"three.\" Tawit kaas tatutak•erit. I saw three cars. adj. noun verb Kaas raku•kariu tatutak•erit. I saw many cars. noun adverb verb"
+   },
+   {
+    "heading": "Tskiri Akitaru'",
+    "text": "Pahuks•Tatu' \"Pumpkin Vine\" Tuhwits•Pihat . \"Camp on the Ridge\" Tuhwa•Hu'kasa \"Shady Lane\" Tskiri•Raru' \"Wolf Ways\" (English names given are nicknames, not necessarily strict interpretations. RESEARCH PROJECT: talk to various Skidi speakers about the interpretations of these names.)"
+   },
+   {
+    "heading": "Making Verb Phrases Into Nouns",
+    "text": "The indicator hiri is often used to make a verb phrase into a noun, like English turns it rains into where it rains. Hiri will come first in a, verb phrase, and will usually seem to replace an indicator like ti, coming just before a weak indicator like ra. ti .ra wa•raruhat there are mountains hiri .ra wa .raruhat (to) the mountains, where the mountains are ti ratukstak•kitkeu' that's where we used to live hiri ratukstak•kitkeu' where we used to live VERB SET: Take ra'at? Who Went? Tatuks•at. I went. Tasu'ks•at. You went. Tuks•at. He, she went. Sitatuks•pa. You and I went. Sitatukspa. She and I went (we 2). Sitasuks•pa. She and you went (you 2). Situks•pa. She and he went (they 2). Tatuksta•pu'. We (3+) went. Tasuksta•pu'. You (3+) went. Ti .wu'. They (3+) went. KA RUSUT•ERIT?"
+   }
+  ],
+  "templates": [
+   "T1",
+   "T5",
+   "T8"
+  ]
+ },
+ {
+  "lesson_number": 14,
+  "skiri_title": "KA RUSUT•ERIT?",
+  "english_title": "Did You See That?",
+  "page_start": 90,
+  "page_end": 95,
+  "dialogues": [
+   {
+    "lines": [
+     {
+      "skiri": "Pita ka rut•erit kuruks?",
+      "english": "Has the man seen the bear?"
+     },
+     {
+      "skiri": "Kaki', pita tur•dtku' kuruks.",
+      "english": "No, the man heard the"
+     },
+     {
+      "skiri": "bear.",
+      "english": ""
+     }
+    ]
+   },
+   {
+    "lines": [
+     {
+      "skiri": "Ka ruks•pakd•rihu?",
+      "english": "Was it loud?"
+     },
+     {
+      "skiri": "Kaki', kakuks•pakd•rihu', No, it wasn't loud,",
+      "english": ""
+     },
+     {
+      "skiri": "tuks•td•pahit.",
+      "english": ""
+     },
+     {
+      "skiri": "it was quiet.",
+      "english": ""
+     }
+    ]
+   }
+  ],
+  "grammar_notes": [
+   {
+    "heading": "Adjectives",
+    "text": "ru ti ra•pdrihrit ru tuks•ta•pdrihrit ti kasis ti katus ta rara•rdsitu' ta ta rd ritu' td taris kakd taris it is smooth it was smooth it's hard it's flat it's cold = indicator \"this\" it's hot it's heavy it's light (not heavy) Antonyms In English many adjectives come in pairs: big/small, light/ heavy. These opposites are called antonym s. In Pawnee, almost any adjective can be made into its antonym by using the negative indicator kaki or kaka. More on Indicators We have already pointed out that the model indicator ti is used for third person subjects, ta for first and second person. In the same way, the negative model indicator kaki is used for third person subjects, kaka for first and second persons. tat•at I went (have gone) tas•at you went tf•'at he went kakat•at I didn't go kakas•at you didn't go kakI 'at he didn't go In addition, there are adjective and verb roots which take the indicator ta, even though the subject may be third person. ta•rutsa' he (has) lifted it ta rara•rasitu it's cold ta na ritu' it's hot to taxis it's heavy Notice that these verb phrases imply an effect on the subject, like heat or weight."
+   },
+   {
+    "heading": "Useful Phrases",
+    "text": "1. Hais•tiwata! (SK) Look! Su'ks•tewata! (SB) Look! 2. Hais•atku! (SK) Listen! Su'ks•atku! (SB) Listen! 3. Ka ris•utsi•urikat! (SK) Don't touch! Ka res .- iI urtikat! (SB) Don't touch! SUBJECT AND OBJECT: Transitive Verbs The noun that refers to the doer is the subject. The noun that refers to the done-to thing is the object. Verbs that describe actions like seeing and killing may appear with both subject and object: these are called transitive verbs. The subject always appears before the object, if both are named by a noun; the English order subject-verb-object is acceptable, but old Pawnee speakers preferred both nouns together . Pita ti•kuwutit kuruks. The man has killed a bear. Pita kuruks ti .kuwutit. The man has killed a bear. TRANSITIVE VERB SET: Tut•erit. He has seen it (he saw it). Question: Take rut•erit? Tatut .erit. Tasut .erit. Tut•erit. Tatsi't•erit. +atsir + Sitatut•erit. Sitasuterit. Situt•erit. Kitu sitatut•erit. Tasuhra'k•erit. Kitu sititerit. kitu Who saw it? (Who has seen it?) I saw it (have seen it). You saw it. He saw it. You and I saw it. speaker and hearer together We (2) saw it. You (2) saw it. They (2) saw it. We (3+) saw it. You (3+) saw it. All of them (3+) saw it. all"
+   },
+   {
+    "heading": "Reflexive Marker",
+    "text": "The reflexive indicator witi means that the subject is also the object. Tatut•erit. Witi tatut•erit. Animal Voices Rikutski ti•waktahu ' . Asaki tirah•kI wat. Taraha kata•kaksa'. Arusa ti•kis•kata•wakta'. Kuruks ti•wa'ktahu'. Ti•kuruks•pa'ktahu'. I saw it. I saw myself. The bird is singing. The dog barked. The buffalo bellowed. The horse neighed. The bear is growling. He is growling (bear-talking)."
+   }
+  ],
+  "templates": [
+   "T3",
+   "T9"
+  ]
+ },
+ {
+  "lesson_number": 15,
+  "skiri_title": "RI•KATIHARU'",
+  "english_title": "The Year",
+  "page_start": 95,
+  "page_end": 98,
+  "dialogues": [
+   {
+    "lines": [
+     {
+      "skiri": "Kirike rut•kahu•raru' retskuhke?",
+      "english": "What does it do in the"
+     },
+     {
+      "skiri": "fall?",
+      "english": ""
+     },
+     {
+      "skiri": "'T'at•tstfa•usuku retskuhke.",
+      "english": "It rains in the fall."
+     }
+    ]
+   },
+   {
+    "lines": [
+     {
+      "skiri": "Kirike rusut-ari•tisuku retskuhke?",
+      "english": "What do you do in"
+     },
+     {
+      "skiri": "the fall?",
+      "english": ""
+     },
+     {
+      "skiri": "We to tut•a•wahri•usuku'.",
+      "english": "I work."
+     }
+    ]
+   }
+  ],
+  "grammar_notes": [
+   {
+    "heading": "Verb-Final K",
+    "text": "No Pawnee word ends in k. If there is a k in the underlying root form of a verb, it will show up only before a verb suffix (ending) such as the habitual +usuku ' or the imperfect +us or +u'. Everywhere else, the verb final k will drop off (or, for some verbs, change to t.) tirarah-karuk•usuku' they plant (habitual) tirarah .karuku they are planting (imperfect) tirardh•karu they have planted (perfect) tirarah•kiwik•usuku '\tthey roast corn tirardh•kiwiku' they are roasting corn tirardh•kiwi they have roasted corn"
+   },
+   {
+    "heading": "Useful Phrases",
+    "text": "1. Aka, hiri we ti•pitsi ' ! Gee, it's cold in here! 2. Aka, hiri we ta•hu•tuhtu'! Gee, it's cold in this wind! 3. Hiri we ta•hu•tawi•rihu! It's really windy'! 4. Suks•teka .rikut. Open the door. 5. Suks•teka•wu. Close the door. VERB SET (various aspects): We t'at .tszi-a. It's raining. It's raining. (incomplete, imperfect) It rains. (habitual) It was raining, has been raining. (past incomplete) It might be raining. (indefinite) It may rain. (doubtful, future) It will rain. (predictive) We t 'at•tsu•a. We t'at•tsu•a•tisuku'. We tuks•at•tsti .a. We kut'at-tsu .a. Kut'at•tsu•d ista. T'at•tsu•d .ista."
+   }
+  ],
+  "templates": [
+   "T10"
+  ]
+ },
+ {
+  "lesson_number": 16,
+  "skiri_title": "KITSKI WE RU'",
+  "english_title": "What Time Is It?",
+  "page_start": 98,
+  "page_end": 100,
+  "dialogues": [
+   {
+    "lines": [
+     {
+      "skiri": "Kitske --'e ru '?",
+      "english": "What time is it?"
+     },
+     {
+      "skiri": "We ti",
+      "english": ""
+     },
+     {
+      "skiri": "It's two o'clock.",
+      "english": ""
+     }
+    ]
+   },
+   {
+    "lines": [
+     {
+      "skiri": "Kirti rira•awi•u tasih•ka•isa'?",
+      "english": "When did you come home?"
+     },
+     {
+      "skiri": "Tatih•ka•isa' hiras.",
+      "english": "I came home at night."
+     }
+    ]
+   }
+  ],
+  "grammar_notes": [
+   {
+    "heading": "Useful Phrases",
+    "text": "1. Siks•pata'! 2. Ka we rasih•wata'? 3. We witi tat•titsi'sta. 4. Tat•atsiks•tehu'. I got up I lay down, I am lying down. I went to work it's sunrise it's twilight it's evening it's afternoon it's time (he arrived) it's time for me to work Get up! Are you up? I'm going to bed. I am happy."
+   }
+  ],
+  "templates": [
+   "T8"
+  ]
+ },
+ {
+  "lesson_number": 17,
+  "skiri_title": "TIRUKS • TSAK • ARIKI",
+  "english_title": "Verbs to substitute for tatutsiks•a•wahri' in the dialogues.",
+  "page_start": 100,
+  "page_end": 104,
+  "dialogues": [
+   {
+    "lines": [
+     {
+      "skiri": "Kirike rasutsiksari tiruks•tsak•ariki?",
+      "english": ""
+     },
+     {
+      "skiri": "What were you doing yesterday?",
+      "english": ""
+     },
+     {
+      "skiri": "Tatutsiks•d .wahri' tiruks•tsak•ariki.",
+      "english": ""
+     },
+     {
+      "skiri": "I was working yesterday.",
+      "english": ""
+     }
+    ]
+   },
+   {
+    "lines": [
+     {
+      "skiri": "Kirti rira•awiu' tasutsiks•a .wahri'?",
+      "english": ""
+     },
+     {
+      "skiri": "When were you working?",
+      "english": ""
+     },
+     {
+      "skiri": "Tiruks•tsak•ariki tatutsiks . wahri'.",
+      "english": ""
+     },
+     {
+      "skiri": "I was working yesterday.",
+      "english": ""
+     }
+    ]
+   }
+  ],
+  "grammar_notes": [
+   {
+    "heading": "Spelling Rules",
+    "text": "1. When words are constructed and the final s of one root or marker is followed by the beginning s of another root, then a t is added to the beginning of the second root. tiheruks. that other one, past sak .ariki a day (sun standing) tiheruks +sak•ariki s +s becomes s•ts tiheruks•tsak•ariki 2. When the preverb ut and past tense marker uks come together in an introducer, ut becomes uts, and uks often becomes iks."
+   },
+   {
+    "heading": "Mode Person Preverb Past Tense Verb Root",
+    "text": "to +t +ut +uks +ari' tatutsiks•ari' I was doing it"
+   },
+   {
+    "heading": "Useful Phrases",
+    "text": "1. Suks•aspatasit! 2. Ka ru rut•tsirau'? 3. Ka rurrahe ti rasut•ari'? 4. Ka we ras•tare•hats? 5. Kirike rasut•atsiks•u'? 6. Tasiratsiks•tius. Start! Is it alright? Are you doing okay? Are you finished? What do you think about it? You're smart. VERB SET: Take ra•ha .kawaats? Who ate? Tat•a .kawaats. Tas•a .kawaats. Ti•ha•kawaats. Sitat•a .kawaats. Sitas•a .kawaats. Siti ,ha•kawaats. Tahrak•a•kawaats. Tastak•a .kawaats. Ti 'hr i kawaats. I ate You ate. He, she ate. We (2) ate. You (2) ate. They (2) ate. We (3+) ate. You (3+) ate. They (3+) ate. VERB SET: Take ruks•a .kawahtsu'? Who was eating? Tatuks .a .kawahtsu'. Tasuks•a .kawahtsu'. Tuks•a .kawahtsu'. Tatsiks .a-kawahtsu'. Sitatuks•a•kawahtsu'. Sitasuks•a•kawahtsu'. Situks•a•kawahtsu'. Tatukstak .a.kawahtsu'. Tasukstak•a•kawahtsu'. Tiks•a .kawahtsu'. I was eating. You were eating. He, she was eating. You and I were eating. She and I were eating. You (2) were eating. They (2) were eating. We (3+) were eating. You (3 , ) were eating. They (3+) were eating."
+   }
+  ],
+  "templates": [
+   "T8"
+  ]
+ },
+ {
+  "lesson_number": 18,
+  "skiri_title": "KIRIKI RASUTSIKS•ARI'?",
+  "english_title": "What Have You Been Doing?",
+  "page_start": 104,
+  "page_end": 107,
+  "dialogues": [
+   {
+    "lines": [
+     {
+      "skiri": "1..",
+      "english": "Tsikstit ka ras•pari '? Are you well?"
+     },
+     {
+      "skiri": "Ahu ' , tsikstit tat•pari'.",
+      "english": "Yes, I'm fine."
+     }
+    ]
+   },
+   {
+    "lines": [
+     {
+      "skiri": "Kirike rasutsiks•ari?",
+      "english": "What have you been doing?"
+     },
+     {
+      "skiri": "ra +s +ut +uks-ari'",
+      "english": ""
+     },
+     {
+      "skiri": "Rariksisu tatutsiks•a•wahri'.",
+      "english": "I've been working hard."
+     }
+    ]
+   }
+  ],
+  "grammar_notes": [
+   {
+    "heading": "Useful Phrases",
+    "text": "1. Sutsiks•ahut. 2. Keskuruh•ra•wiat. 3. Ketuh•ra .wiat. 4. Tat•atsiks•kapakis. 5. Kesku•rahtirihu'. VERB SET (indefinite): Take ratutsiks•d .wahri'? Who's been busy? Hold this. Help me. Let me help. I'm sorry. Forgive me. We ktitatutawahri'. We ktitasut•a .wahri'. We ktitut .a.wahri'. I've been busy. You've been busy. He's been busy. We kusitatut•a•wahri'. We (2) have been busy. We kutatuhrak•a .wahri'. We (3+) have been busy. We kutasuhrak•a .wahri'. You (3+) have been busy. We kutit•a .wahri ' . They (3+) have been busy."
+   }
+  ],
+  "templates": [
+   "T3",
+   "T6",
+   "T8"
+  ]
+ },
+ {
+  "lesson_number": 19,
+  "skiri_title": "T'ARAWI•A",
+  "english_title": "The Future",
+  "page_start": 107,
+  "page_end": 111,
+  "dialogues": [
+   {
+    "lines": [
+     {
+      "skiri": "Kirike rasut•ari'sta rahesa '?",
+      "english": "What will you do tomorrow?"
+     },
+     {
+      "skiri": "Rahesa ' tatut•a•wahri•usta.",
+      "english": "Tomorrow I will work."
+     }
+    ]
+   },
+   {
+    "lines": [
+     {
+      "skiri": "Kiru rira•awiu' ras•uh .ta?",
+      "english": "When will you go?"
+     },
+     {
+      "skiri": "Tat•uh•ta tihe ra•pa•ariki'.",
+      "english": "I will go next month."
+     }
+    ]
+   }
+  ],
+  "grammar_notes": [
+   {
+    "heading": "Future Tense",
+    "text": "What is called in English future tense is expressed in Pawnee by the suffix +ta. It comes as the last part of a verb phrase, and means in a time yet to come. The future marker can occur as (h)ista or 'sta, the perfect (completed) aspect, or as usta, imperfect aspect. Tatutari'sta. I'll do it. (future completed) Tatut•ari .usta. I'll be doing it. (future incomplete) Tatut•a•wahri•usta. I'll be working. Months of the Year Any one of these words can be used in place of rahesa ' in the dialogues. Like the days of the week, phrases or even sentences, and will be capitalized. Pawnee months are descriptive only the first letter of the phrase Ri•katihah•tirara January Piraparu' February Pa•hutawi•u ' March Ra .pa•u R'at•tsuahu' April Hri•ratawi Ri•wariku' May Pa•riat June Ri•katihar•rikarikat July Tskirih•kapira August Pirau Rarah•kata•ispu' September Retskuhke October Ha•karu'h•kutsu' November Pitsikat December The New Year\" \"Dreary Month\" \"Windy Month\" \"Rainy Month\" \"Memorial Month\" \"Month of Summer\" \"Half Year\" \"Mad Dog Month\" \"When the kids go back to school\" \"Fall\" \"Feast\" \"Winter\" Days of the Week Words to be used in place of iras or other time words in the dialogues. Sakuh•waruksti' Sakuh•kiwatat Pitku Ra•sakuru' Tawit Ra•sakuru' Kskitiiks Ra sakuru' Parae Periku' Sunday \"Sacred Day\" Monday Tuesday \"Second Day\" Wednesday Thursday Friday Saturday \"Seeing (visiting) Day \" Tongue Twister Patsuka tirut•tatsta tat•stats•tak 'sta. turnip standing up I will shoot it I'm going to shoot that turnip plant. TAT.fTS KA"
+   }
+  ],
+  "templates": [
+   "T8"
+  ]
+ },
+ {
+  "lesson_number": 20,
+  "skiri_title": null,
+  "english_title": "I Want To Speak Pawnee.",
+  "page_start": 111,
+  "page_end": 130,
+  "dialogues": [
+   {
+    "lines": [
+     {
+      "skiri": "Kirike ras•itska raskut•ara?",
+      "english": "What do you want to do?"
+     },
+     {
+      "skiri": "Tat•itska ratkti .u .ta I want to go.",
+      "english": ""
+     }
+    ]
+   },
+   {
+    "lines": [
+     {
+      "skiri": "Ka rasiitska ratkti .u .ta Do you want me to go?",
+      "english": ""
+     },
+     {
+      "skiri": "Kaki', tatitska rakti•u•ta No, I want him to go.",
+      "english": ""
+     }
+    ]
+   }
+  ],
+  "grammar_notes": [
+   {
+    "heading": "Interpretation",
+    "text": "I want it, I want to .. . for (someone) to ... (secondary phrase marker) tatpd .waktit I have spoken + wa + of various things ratku•w&waktit Pari for me to speak Pawnee ratara•kuki (in) our (band's, tribe's) way raku•wa .waktit ratara•kuki for one to speak in our way tat•itska ra( )ku +"
+   },
+   {
+    "heading": "Primary And Secondary Verb Phrases",
+    "text": "Each of the verb phrases we have studied so far has been a primary verb phrase, which means it can be spoken by itself as a complete sentence. When two verb phrases are used together as in tatitska ratkti u•ta I want to go, there is a primary and also a secondary phrase. In English, we often use the word to to mark these verbs. In Pawnee, the introducer of a secondary phrase includes the markers ra + and +ku, with the person marker coming in between. In this chapter, we deal only with the future form of secondary verbs, the form that would naturally go with the primary verb: I want to (do something in the future). There are other forms and meanings of secondary verbs. raku•wa .waktit to speak (a language) (secondary, perfect) we raku•sakur•isat•ta when the sun goes down (see Lesson 17) raku•ka .pihat dwelling (see Reading)"
+   },
+   {
+    "heading": "Useful Conversations",
+    "text": "Here are two conversations which should be memorized and practiced by anyone who wants to be able to identify himself as a Pawnee speaker or encourage elders to speak Pawnee. Alternate phrases are in parentheses. 1. A. Nawa, taku ka ra•ka .ku? Hello, is anyone home? B. Nawa, siks .uka .a'. Hello, come in. Sukspitit, tireku•skuskakusu. Sit down. Here's a chair. A. Hiri we tur•rahe. Thank you. B. Ka ras•kika•ista rekits•katit? Do you want (will you drink) coffee? 2. A. Nawa, Tiwatsiriks. Hello, Uncle. B. Nawa, tsikstit ka ras•ku? (Tsikstit ka ras•pari?) Hi, are you well? (Are you doing well?) A. Ahu', tsikstit tat•ku, (Tsikstit tat•pari ' ,) Yes, Fm fine, (Pm doing fine) a tsikstit ka rasta•pi•hat? and are you all (family) doing well? B. Ahu', tsikstit tahra•pi•hat. Yes, we 're fine. Kirike rusutsiks•ari'? What have you been doing? A. Tika•riusis•ari ratku•wa•waktit Pari ' .. . I've been learning to speak Pawnee .. . (Pari pakuru ... ratara•kuki.) (the Pawnee language ... in our way.) B. Ka ras•i .waktits? Rarit ka ras•paku, Pari'? Is that true? Do you speak it well, Pawnee? A. Rarit kakat•paku', ketsi rfku•riusis•ari. I don't speak well, but I'm learning. B. Nawa, kirike haws rasut•ari'? Okay, what else are you doing?"
+   },
+   {
+    "heading": "Cultural Note",
+    "text": "It is traditional Pawnee courtesy to serve coffee or other refreshments without asking the guest whether or not he or she would like some. If the guest shows up at dinner time, he is immediately shown to a place at the table. No opportunity is given for polite refusal, as is the European custom, and visitors are expected to visit before doing business."
+   },
+   {
+    "heading": "Useful Phrases",
+    "text": "1. Keri? Really? 2. Tas•i .waktiks. That's correct. (you speak truly) 3. Kaki .ra•riks. That's wrong. 4. Suks•pa'ku ratara•kuki. Talk in Pawnee. (say it our way) 5. Ketara•pa .waktit Pari'. Let's talk Pawnee. 6. We tat•kata•ku'. I'm in school. (I'm seated behind a desk). 7. We tiku•paks•kaat. I've graduated. 8. Tiku•wihat. I failed. (it overcame me) 9. Tat dru .hukita•'at I succeeded, overcame. (went over the obstacle) + hu + a surface + kita + on top of"
+   },
+   {
+    "heading": "Epilogue",
+    "text": "Our Way (Our People) LIVING PAWNEE: Speaking, Singing, Writing. The Pawnee language lives when people talk to each other in their own way. Speech and conversation are the main ways but not the only ways people talk to each other. Singing and writing are important ways in which people talk with or communicate to other people. Listening to songs and reading any written material can help you learn Pawnee. The special Pawnee language material in this chapter can be used for classroom or private enjoyment of this written, sung and recited material."
+   },
+   {
+    "heading": "Helpful Roots And Words",
+    "text": "+kitkeu + +akitar + +it +at +ka +wihat+ +ka +wariki + +hurar + +ruhuru + +tar+ +witsa + pakuhtu takaski tsararat waruksti' dwell (in villages) tribe, band inhabit? live in put inside land decide at separate times attack ancient jerky, dried meat enemy wonderful, powerful, wise Indicators of Certainty and Doubt When a Pawnee speaker makes statements about events, he may use indicators of certainty or doubt. Though one allay occur inside the introducer, these indicators usually precede the introducer, and will be attached there to the introducer with, a link. wi + it is said that .. . ar + we know that .. . or ah + (I'm cure even though I have not seen it) tir + It must have been that .. . (because of other things we know) kur + perhaps .. . or kuh + (I guess)"
+   },
+   {
+    "heading": "A Reading",
+    "text": "By The Pawnee Cultural Retention Committee"
+   },
+   {
+    "heading": "Hiri Ah•Ratukstak•Kitkeu",
+    "text": "Ti ratarak•akitah•ku Pari tuh•raru kskitiiks akitaru', he hiri we tahrak•ut; Tsawii, Kitkahahki, Pitahawirata, a Tskiri. Hiri wi•tuks•it•at akarraratau t'eks•kurit Kits Katus. Pitkus•ihiri asku ri•katiharu tirah•pares•pari ' . Wi•tikskawutik•usuku taraha a rahurahki. Hawa tikstarah•kawa•karuku rikisu', atit, pahuks. Tirarah•kiwi a wi•tikstakas•karuk•usuku a tirah•tsaisiku atit a pahuks. Ku•kur•rutsiks•taru ruksiri•witau tsahriks raku•ka•wihat asku akarraratau. Hawa ah•rukstah•ka•wariki arusa pitsikat Wi•tuks•ta tawe•kuki wi•tuks•ta•waruksti. Tsahriks•pakuhtu wi•tuks•paktiks. Wi•turuks•ka•hurar•ri hiri ah•ratukstak•kitkeu'. Tihe ra•akitarraruhat tsararat ra•hurit•at reh•kuhrah•witsa'. Resaru kuh•ri•ruhuru rakurak•tara hiri ra•saka•ku. Translation of the Reading"
+   },
+   {
+    "heading": "Where We Used To Live",
+    "text": "This our Pawnee tribe is made up of four bands; we are these: Tsawii, Kitkahahki, Pitahawirata and Tskiri. And it (the tribe) used to live, it is said, in mud lodges near the Platte (\"Flat\") River. Twice a year they went hunting. It is said that they killed buffalo and deer, (game). In addition, they planted various things, corn, beans and squash. They would roast corn, and used to make jerky and they dried the beans and squash. Perhaps there were about thirty people dwelling in one mud lodge. Also they would put their horses inside in the winter. It is said that it (the tribe) had (many) customs which were very wonderful. The old ones were apparently sincere (about these things). It must have been good land there where we lived. Those other enemy tribes about (us), attacked us all the time. The leaders, perhaps, decided to come down here to the south. a B u"
+   },
+   {
+    "heading": "Song To A Quail",
+    "text": "Ut ras•a•hukita•ku Siwita•witu•rihu Take hawa riku•witu•ruhu Ti rat•ari wararuts•kitsau' Free Translation O quail, sitting up there, Someone may bewitch you. \"Someone else may bewitch you\" This is mine, this silky cutey. Lullaby Tsuraki suks•itka Rahesa kas•i•wawa Kiraritu kas .i•kika' Piraski suks•itka Rahesa kas•i•wawa Kiraritu kas•i•kika' kas•i•wawa you will eat kas•i•kika you will drink a II B Glossary In this glossary you will find a list of all the English words which have a Pawnee equivalent in Pari Pakuru'. To find the Pawnee equivalent of an English word, first find that word or one of its synonyms listed alphabetically below. Then turn to the page or pages listed beside the word and skim the text until you locate the word you are looking for. There you will find the Pawnee equivalent. If you are looking for a phrase such as, \"It's cold in here,\" look up the key word cold and follow the same procedure as above. A adolescent 28 afternoon 71 again 4 against 8 alive, still 32 alright 74 altogether 49 Amen ancient 88 April 81 are you doing well? 86 are you up? 71 Arikaree 59 arrive 71 arrow 2 asleep 27 attack 88 August 81 aunt 33 axe 47 B bad 17 bands 59 barked 66 bead 1 beans 51 bear 8 become .: 47 beer 52 before the hour 70 behave yourself 10, 24 bellowed 66 bewitch 92 big 11, 62 bird 42 black 5 blue 5 body 21 bone 1 boss 49 bow 2 boy 28 boulder 44 box 1 brave, warrior 48 brave (adj.) 28 breast 9 broad 11 brother 28, 32 bucket 48 buffalo 42 building 13 busy 76-78 but 86 buttocks 17 buy 54, 84 C \"Camp on the Ridge\" clan 60 candy 51 car 57 cat 37 chair 41, 85 chairman 48 Chawi 59 chief 48 child 27 chop weeds 46 city : 58 climb 43 close door 69 cloud, cloudy 8 coffee 51, 85 cook 48 cold 63,68, 69 color 5 come (future) 80 come back 79 come here 17, 45 come in 85 coming 45 corn 51 corn, ear 2 correct 87 cost 55 cow 37 coyote stories 68 cross-ways 47 crow 43, 59 cry 27, 30 cutey 92 D dancing 29 dancing (past) 72 daughter 33 day 73 days of the week 81 days past 72 December 81 decide 88 deer 43 dime 2, 40 disappear 42 disappear into 43 dollar 40 do 47,79 do (future) 80 doing 29 dog 37 dollar 55 door 41 drink 52-53, 92 drunk (adj.) 51 dwell 88 E eagle 43 East 45 ear 23 early 70,73 eat 51, 84, 92 let's eat 52 eat (past) 74, 75 eight 16 egg 52 eighteen 41 elderly 28 eleven 40 emotions 23 enemy 88 evening 71 expensive 55 eye 21 F fail 87 fall, autumn 67 farmer 46 fat 13 father 32 feather 1 feelings 23 female, adolescent 28 February 81 few 57 fifteen 41 find 55 fine, well 76 finger 24 finish 73-74, 80 fish 42 first 48 five 15 flat 63 flying 42 food 51 foot 21 forgive 77 for him to--- 84 for me to--- 84 for you to--- 84 four 15 fourteen 41 fox 8, 42 Friday 82 friend 28 frog 43 frost 68 full 52 future 79 fuzzy 92 G get up 71 give 53-54 give back 55 give me 52 give to 56 gee! 4 get it 55 get off 49 get out 49 get out of the way 49 girl 28 go 24,26,57 go (commands) 56 let's go 52 go (future) 79 go across 43 go ahead 34 go home 43, 57, 84 go left 24 gone 42 go on! 17 go on water 43 go right 24 go to bed 71 go to town 57, 84 go to town (future) 80 go to work 71 good 17 God iii, 8 graduate 87 grandchild 33 grandfather 32 grandmother 32 grass, green 8 grass, planted 12 green 5 grey 5 growling 66 gun 47 H half-dollar 40 half past the hour 70 hair 23 hand 21 hand game 58 happy 71, 77 happen 80 hard 63 harvest 68 hat 16 have 15, 18-19 head 16,21 hear 62 heart 23 heavy 63 help 77 here it is 41 hide it 58 hill 11 his 35 hit 62 hoe 47 hold this 77 home 57 is anyone home? 85 horn 49 horse 37 hot 63, 68 house 37 housefly 43 how much, cost 55 how much 17 hungry 50 hunter 46 hurry 34, 35 hurting 21 husband 46 I ice 9 it's time 71 in 38 inside 38 J January 81 jerky 88 judge (n.) 48 July 81 jump 44 jump over 44 June 81 K keep 55 kill 48 know 40 L lance 48 language xi large 13 last month 72 last year 73 laughing 27 leader 48 learn 84 learning 86 left, direction 24 leg 23 lend 55 let's talk 87 lie down 71 lift 63 light, weight 63 liquid 9 listen 10, 62, 64 little, amount 76 live, dwell 61 live in 88 living 27 log 11,44 long 11 long time ago 73 look 62,64 look like 11 lose 55 lot, much 76 loud 62 love iii, 34 M mad dog 81 making it 27 male, adolescent 28 man 27 man, elderly 28 many 57 March 81 May 81 me 14 meadow 12 meat 51 meat, dried 88 milk 9 mine 92 mirror 41 miser 55 moccasins 17 Monday 82 money 40, 55 month's of the year 81 moon 8 more than 12 morning 70 mosquito : 43 mother 32 mound 11 mountain 11 mountains 58, 61 mouse 43 mouth 21 mud lodge 37 mush 51 my 35 myself 66 N names v neighed 66 nephew 33 next month 79 next week 80 next year 79 nickel 2, 40 night 70 niece 33 nine 16 nineteen 41 no 1 noon 70 North 45 nose 23 November 81 now 3,52 o'clock 70 October 81 old 88 one 2, 15 open the door 69 other day 72 Oto 59 our way 83, 88 over 87 pants 17 pass it 52 passed away 32 past the hour 70 Pawnee 48, 57 Pawnee bands 59-60 penny 40 people 27 perhaps 89 person 27 picture 1 pig 37 pistol 48 plant (v.) 68 plant (n.) 82 play hand game 68 playing 29 playing (past) 72 prairie dog 43 preacher 48 police 48 Ponca 59 poor 55 pork 51 pot 48 potatoes 51 powerful 89 \"Pumpkin Vine \" clan 60 put inside 88 Q quail 92 quarter 2, 40 quiet 10, 62 quit 79 R rabbit 42 rain (v.) 67, 69 rainy 81 raining 69 ready 34 really? 87 red 5 rich 55 right? 41 right, direction 24 road 40 roast corn 68 rock 1 round house 37 run away 43 S Sac and Fox 59 sad 77 salt 51 salty 51 Saturday 82 save 55 say 4, 10, 14, 26 school 87 be in school 87 go to school 68, 81 school grounds 57 scout 48 seasons 67 see 57, 62,65 I'll see you 34 sell 54 send 55 September 81 seven 16 seventeen 41 seventy-five cents 40 \"Shady Lane \" clan 60 sheriff 48 shield 48 shoes 17 shoot 46, 82 shopping 58 short 11 sick 76 silky 92 sink (v.) 43 sister 32 singing 29 Sioux 59 sit down 26, 85 sitting 92 six 16 sixteen 41 Skedee 59 Skidi 59 Skidi clans 60 sky 8 skunk 42 sleep 92 sleepy 29,30 smart 74 smells bad 50 smells good small 11 smooth 63 snake 8 snow 68 sorry 77 Southern Bands 59-60 speak 85 speak up 24 spider 43 spear 48 spend 55 spoon 48 spring 67 something good iii son 33 soup 51 South 45 squash (n.) 51 standing 81 stand up 17, 29 star 8 start 73, 80 stick (n.) 1, 5 stomach 23 stop 34 stores 58 suds 52 sugar 51 succeed 87 summer 67 sun 8 Sunday 82 sunrise 71 start 73, 74 surface 43 T take 54 take hold 63 talking 72 tall 13 tastes bad 50 tastes good 50 tepee 37 tell 48 tell stories 68 telling time 70 ten 16 thank you 41, 85 that 35 that's all 29 that yonder 35 thief 55 thick 13 thin 13 thirsty 50 thirteen 40 this 1, 63 thinking 77 then 52 three 15 throat 23 throw 55 thumb 24 Thursday 82 time 70 tomorrow 79 town 57, 59 toe 24 toenail 24 touch it 63 travel (v.) 76 tree 12 tribal offices 57 tribe 88 tribes, various 59 Tuesday 82 turn around 24 turnip 82 turnips 51 twelve 40 twenty 41 twenty-one 41 twilight 71 two 2, 15 U uncle 33 universe 8 use 46 V vehicle 57 very 76 W wading 42 wait 34 walking 29, 30 want 52,83 warrior 28 water, in it 42 water 9, 52 well 86 Wednesday 82 went 61 West 45 what? 41 what 1 what did you say? 24 what else 86 what time? 70 when 85 when? 70 where 37, 42, 45 whiskey 52 white 5 who 14, 32, 61 window 41 windy 69 winter 67 wife 46 wise 88 \"Wolf Ways\" clan 60 woman 27 woman, elderly 28 wonderful 88 wood 11 work 67 work (future) 79 work (past) 72 working 29 worry 77 wrong 87 Y year 67 yellow 5 yes 1 yesterday 72 you 14 your 35 yourself 49"
+   }
+  ],
+  "templates": [
+   "T7",
+   "T10"
+  ]
+ }
+]

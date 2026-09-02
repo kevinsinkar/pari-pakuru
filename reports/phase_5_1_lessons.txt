@@ -1,0 +1,31 @@
+=== Phase 5.1 lesson build — APPLY — 2026-09-01T19:42:22.830716 ===
+lessons parsed: 20
+  L01 p29-33 'What Is It?'                            skiri="KIRIK1 RU'?"                  dlg=2ex/9ln notes=4 vocab=18(8 linked) tmpl=T1,T3,T4,T6,T7
+  L02 p33-39 'What Color Is it?'                      skiri='KIRIKJ RA•TARAWIS?'           dlg=3ex/25ln notes=6 vocab=29(18 linked) tmpl=T2,T3,T4,T6,T7
+  L03 p39-43 'What Does It Look Like?'                skiri="KIRIKJ RUT•U'?"               dlg=4ex/8ln notes=3 vocab=7(1 linked) tmpl=T3,T4,T6,T7
+  L04 p43-49 'What Do You Have?'                      skiri='KIRIKJ RAS•TA?'               dlg=2ex/6ln notes=5 vocab=4(3 linked) tmpl=T4
+  L05 p49-55 'The Body'                               skiri="TARIKTAU'"                    dlg=3ex/7ln notes=10 vocab=17(10 linked) tmpl=T3,T5
+  L06 p55-60 'Words to substitute for pita in the di' skiri=''                             dlg=2ex/4ln notes=4 vocab=21(7 linked) tmpl=T3,T4,T6,T9
+  L07 p60-65 'Who Is It?'                             skiri="TAR1 RU'?"                    dlg=2ex/6ln notes=4 vocab=35(20 linked) tmpl=T1
+  L08 p65-70 '?'                                      skiri='KI Rid RA. KU?'               dlg=3ex/6ln notes=6 vocab=45(20 linked) tmpl=T3,T4,T7,T8
+  L09 p70-74 'Where Has It Gone?'                     skiri="KIRK RA•'AT"                  dlg=2ex/8ln notes=5 vocab=29(13 linked) tmpl=T2,T3,T9
+  L10 p74-78 'What Is He Using?'                      skiri="KIRIK1 RUH•RA'?"              dlg=2ex/8ln notes=2 vocab=31(12 linked) tmpl=T4
+  L11 p78-82 'Are You Hungry?'                        skiri='KA RIiH•RATSAUS?'             dlg=3ex/15ln notes=1 vocab=32(12 linked) tmpl=T7,T8
+  L12 p82-85 'Give It To Him.'                        skiri='SUKS • U.'                    dlg=2ex/4ln notes=2 vocab=21(11 linked) tmpl=T10
+  L13 p85-90 'Where Did You Go?'                      skiri='KIRU RATSUKS•AT?'             dlg=2ex/11ln notes=3 vocab=33(17 linked) tmpl=T1,T5,T8
+  L14 p90-95 'Did You See That?'                      skiri='KA RUSUT•ERIT?'               dlg=2ex/7ln notes=3 vocab=29(13 linked) tmpl=T3,T9
+  L15 p95-98 'The Year'                               skiri="RI•KATIHARU'"                 dlg=2ex/6ln notes=2 vocab=26(13 linked) tmpl=T10
+  L16 p98-100 'What Time Is It?'                       skiri="KITSKI WE RU'"                dlg=2ex/5ln notes=1 vocab=18(2 linked) tmpl=T8
+  L17 p100-104 'Verbs to substitute for tatutsiks•a•wa' skiri='TIRUKS • TSAK • ARIKI'        dlg=2ex/8ln notes=3 vocab=15(8 linked) tmpl=T8
+  L18 p104-107 'What Have You Been Doing?'              skiri="KIRIKI RASUTSIKS•ARI'?"       dlg=2ex/5ln notes=1 vocab=13(9 linked) tmpl=T3,T6,T8
+  L19 p107-111 'The Future'                             skiri="T'ARAWI•A"                    dlg=2ex/4ln notes=1 vocab=53(18 linked) tmpl=T8
+  L20 p111-130 'I Want To Speak Pawnee.'                skiri=''                             dlg=2ex/4ln notes=11 vocab=13(9 linked) tmpl=T7,T10
+
+sample L1 dialogue exchange:
+    "Kirike ru'?"  =  'What is it?'
+    "Ti hitu '."  =  'This is a feather.'
+
+sample L1 note [Nouns]: There are very few short words in Pawnee. Most words are more descriptive and are longer constructions of smaller parts. The shorter words are usually names of common objects, such...
+
+[write] C:\Users\k1s4l\OneDrive\Desktop\Repos\pari-pakuru\extracted_data\lessons.json
+[DB] lessons table written: 20 rows

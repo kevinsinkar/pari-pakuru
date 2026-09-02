@@ -279,3 +279,19 @@ CREATE TABLE IF NOT EXISTS import_metadata (
     key     TEXT PRIMARY KEY,
     value   TEXT
 );
+
+-- -----------------------------------------------------------------------------
+-- Blue Book lessons (Phase 5.1) — built by scripts/build_lessons.py --apply
+-- Lesson VOCABULARY is not stored here: it lives in blue_book_attestations
+-- (context_type BASIC_WORDS / ADDITIONAL_WORDS, entry_id links to dictionary).
+-- -----------------------------------------------------------------------------
+CREATE TABLE IF NOT EXISTS lessons (
+    lesson_number  INTEGER PRIMARY KEY,
+    skiri_title    TEXT,     -- as printed (may carry source-scan OCR artifacts)
+    english_title  TEXT,     -- NULL when the book prints none (e.g. Lesson 8)
+    page_start     INTEGER,
+    page_end       INTEGER,
+    dialogues      TEXT,     -- JSON: [{lines:[{skiri,english}]}] in book order
+    grammar_notes  TEXT,     -- JSON: [{heading,text}] prose sections
+    template_ids   TEXT      -- JSON: sentence-builder templates attested in lesson
+);

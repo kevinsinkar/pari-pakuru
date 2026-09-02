@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% set active_page = "lessons" %}
+{% block title %}Lessons{% endblock %}
+
+{% block header_search %}{% endblock %}
+
+{% block content %}
+<hgroup>
+  <h2>Blue Book Lessons</h2>
+  <p>The 20 lessons of <em>Pari Pakuru'</em> (1979), the Pawnee Cultural
+     Retention Committee's textbook — in their original teaching order, with
+     vocabulary linked to the dictionary and sentence patterns to practice.</p>
+</hgroup>
+
+<div class="lesson-grid">
+  {% for l in lessons %}
+  <a class="lesson-card" href="/lessons/{{ l.number }}">
+    <div class="lesson-card__num">{{ l.number }}</div>
+    <div class="lesson-card__body">
+      {% if l.skiri_title %}
+      <div class="lesson-card__skiri font-serif" lang="x-paw">{{ l.skiri_title }}</div>
+      {% endif %}
+      <div class="lesson-card__title">{{ l.english_title or "Lesson " ~ l.number }}</div>
+      <div class="lesson-card__meta">
+        <span>{{ l.vocab_count }} words</span>
+        {% if l.dialogue_count %}<span>&middot; {{ l.dialogue_count }} dialogue lines</span>{% endif %}
+        {% if l.templates %}<span>&middot; {{ l.templates|length }} pattern{{ 's' if l.templates|length != 1 }}</span>{% endif %}
+      </div>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+
+<p><small>Source: <em>Pari Pakuru'</em> pp. 29–130. Lesson text was parsed
+directly from the book; Skiri titles are shown as printed (some carry OCR
+artifacts from the source scan).</small></p>
+{% endblock %}
+
+{% block scripts %}
+<style>
+.lesson-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+.lesson-card {
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+  padding: 0.85rem 1rem;
+  border: 2px solid var(--earth-200, #e0d5c4);
+  border-radius: 8px;
+  background: var(--earth-50, #faf7f2);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.lesson-card:hover {
+  border-color: var(--sky-300, #89BDE0);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  text-decoration: none;
+}
+.lesson-card__num {
+  flex: 0 0 auto;
+  width: 2.4rem;
+  height: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--sky-500, #4A90C4);
+  color: #fff;
+  font-weight: 700;
+}
+.lesson-card__skiri {
+  font-size: 0.85rem;
+  color: var(--earth-500, #8a7560);
+  letter-spacing: 0.02em;
+}
+.lesson-card__title {
+  font-weight: 600;
+  color: var(--earth-800, #3a3126);
+}
+.lesson-card__meta {
+  font-size: 0.78rem;
+  color: var(--earth-500, #8a7560);
+}
+</style>
+{% endblock %}
