@@ -295,3 +295,26 @@ CREATE TABLE IF NOT EXISTS lessons (
     grammar_notes  TEXT,     -- JSON: [{heading,text}] prose sections
     template_ids   TEXT      -- JSON: sentence-builder templates attested in lesson
 );
+
+-- -----------------------------------------------------------------------------
+-- Spaced repetition (Phase 5.2b) — created lazily by web/srs.py
+-- Review state is user-generated and lives only in the DB: it is covered by
+-- the OneDrive-synced backup regime; srs_reviews is an append-only log.
+-- -----------------------------------------------------------------------------
+CREATE TABLE IF NOT EXISTS srs_cards (
+    entry_id      TEXT PRIMARY KEY REFERENCES lexical_entries(entry_id),
+    ease          REAL NOT NULL DEFAULT 2.5,     -- SM-2 ease factor [1.3, 3.0]
+    interval_days REAL NOT NULL DEFAULT 0,
+    reps          INTEGER NOT NULL DEFAULT 0,
+    lapses        INTEGER NOT NULL DEFAULT 0,
+    due           TEXT,                          -- ISO date
+    last_review   TEXT
+);
+CREATE TABLE IF NOT EXISTS srs_reviews (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    entry_id        TEXT NOT NULL,
+    grade           TEXT NOT NULL,               -- again | hard | good | easy
+    interval_before REAL,
+    interval_after  REAL,
+    reviewed_at     TEXT DEFAULT CURRENT_TIMESTAMP
+);

@@ -1,0 +1,207 @@
+{% extends "base.html" %}
+{% set active_page = "study" %}
+{% block title %}Study — {{ scope_label }}{% endblock %}
+
+{% block header_search %}{% endblock %}
+
+{% block content %}
+<hgroup>
+  <h2>Study — {{ scope_label }}</h2>
+  <p>{{ stats.due }} due &middot; {{ stats.learning }} in rotation &middot;
+     {{ stats.reviews_today }} reviewed today.
+     Reviews are scheduled by spaced repetition: words you know well come back
+     less often, words you miss come back sooner.</p>
+</hgroup>
+
+{% if not queue %}
+<article>
+  <p><strong>Nothing to review right now.</strong>
+  {% if lesson or tag %}Every word in this scope is scheduled for a future
+  day. Come back tomorrow, or <a href="/study">study all words</a>.{% else %}
+  All caught up — come back tomorrow.{% endif %}</p>
+  <p><a href="/lessons">Browse lessons</a> &middot;
+     <a href="/flashcards">Flashcard decks</a></p>
+</article>
+{% else %}
+
+<div class="fc-progress">
+  <span id="srs-progress-text">Card 1 of {{ queue|length }}</span>
+  <progress id="srs-progress-bar" value="0" max="{{ queue|length }}"></progress>
+</div>
+
+<div class="fc-arena" id="srs-arena">
+  {% for card in queue %}
+  <div class="fc-card-wrapper{% if not loop.first %} fc-hidden{% endif %}"
+       data-index="{{ loop.index0 }}" data-entry="{{ card.entry_id }}">
+    <div class="fc-card" tabindex="0" role="button"
+         aria-label="Flip card to reveal answer"
+         onclick="this.classList.toggle('flipped')"
+         onkeydown="if(event.key==='Enter'){event.preventDefault();this.classList.toggle('flipped')}">
+      <div class="fc-front">
+        {% if card.is_new %}<span class="badge srs-badge-new">new word</span>{% endif %}
+        <div class="fc-front-word" lang="x-paw">{{ card|primary_spelling }}</div>
+        {% if card.simplified_pronunciation %}
+        <div class="fc-front-pron">{{ card.simplified_pronunciation|format_pitch }}</div>
+        {% endif %}
+        {% if card.grammatical_class %}
+        <span class="badge badge-class">{{ card.grammatical_class }}</span>
+        {% endif %}
+        {% if card.blue_book_attested %}
+        <span class="badge badge-bb">P&acirc;ri Pak&ucirc;ru'</span>
+        {% endif %}
+        <div class="fc-hint">tap to reveal</div>
+      </div>
+      <div class="fc-back">
+        <div class="fc-back-definition">{{ card.definition }}</div>
+        <div class="fc-back-word" lang="x-paw">{{ card|primary_spelling }}</div>
+        {% if card.simplified_pronunciation %}
+        <div class="fc-back-pron">{{ card.simplified_pronunciation|format_pitch }}</div>
+        {% endif %}
+        {% if card.phonetic_form %}
+        <div class="fc-back-ipa ipa" lang="x-paw">{{ card.phonetic_form }}</div>
+        {% endif %}
+        <a href="/entry/{{ card.entry_id }}" class="fc-back-link"
+           onclick="event.stopPropagation()">View full entry</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<div class="srs-grades" id="srs-grades" hidden>
+  <button class="srs-grade srs-grade--again" onclick="srsGrade('again')">
+    Again<small>&lt; 1 day &middot; 1</small></button>
+  <button class="srs-grade srs-grade--hard" onclick="srsGrade('hard')">
+    Hard<small>2</small></button>
+  <button class="srs-grade srs-grade--good" onclick="srsGrade('good')">
+    Good<small>3</small></button>
+  <button class="srs-grade srs-grade--easy" onclick="srsGrade('easy')">
+    Easy<small>4</small></button>
+</div>
+<p class="srs-keys"><small>Keyboard: <kbd>space</kbd> flip &middot;
+  <kbd>1</kbd>&ndash;<kbd>4</kbd> grade</small></p>
+
+<div id="srs-done" hidden>
+  <article>
+    <p><strong>Session complete — nawa!</strong>
+       <span id="srs-done-count"></span> cards reviewed.</p>
+    <p><a href="/study{% if lesson %}?lesson={{ lesson }}{% elif tag %}?tag={{ tag }}{% endif %}">Study more</a>
+       &middot; <a href="/lessons">Back to lessons</a></p>
+  </article>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+{% if queue %}
+<script>
+(function() {
+  const wrappers = Array.from(document.querySelectorAll('.fc-card-wrapper'));
+  const grades = document.getElementById('srs-grades');
+  const progressText = document.getElementById('srs-progress-text');
+  const progressBar = document.getElementById('srs-progress-bar');
+  let order = wrappers.map((_, i) => i);
+  let pos = 0, reviewed = 0, busy = false;
+
+  function currentWrapper() { return wrappers[order[pos]]; }
+
+  function showCurrent() {
+    wrappers.forEach(w => w.classList.add('fc-hidden'));
+    if (pos >= order.length) {
+      grades.hidden = true;
+      document.getElementById('srs-arena').style.display = 'none';
+      document.querySelector('.srs-keys').style.display = 'none';
+      document.getElementById('srs-done').hidden = false;
+      document.getElementById('srs-done-count').textContent = reviewed;
+      return;
+    }
+    const w = currentWrapper();
+    w.classList.remove('fc-hidden');
+    w.querySelector('.fc-card').classList.remove('flipped');
+    grades.hidden = true;
+    progressText.textContent = `Card ${Math.min(pos + 1, order.length)} of ${order.length}`;
+    progressBar.value = pos;
+    progressBar.max = order.length;
+  }
+
+  // show grade buttons once flipped
+  new MutationObserver(() => {
+    const w = currentWrapper();
+    if (w && w.querySelector('.fc-card').classList.contains('flipped')) {
+      grades.hidden = false;
+    }
+  }).observe(document.getElementById('srs-arena'),
+             {subtree: true, attributes: true, attributeFilter: ['class']});
+
+  window.srsGrade = function(grade) {
+    if (busy || pos >= order.length) return;
+    busy = true;
+    const w = currentWrapper();
+    fetch('/api/srs/review', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({entry_id: w.dataset.entry, grade: grade}),
+    }).then(r => r.json()).then(() => {
+      reviewed++;
+      if (grade === 'again') {
+        // requeue this card a few positions later in the session
+        const idx = order[pos];
+        order.splice(pos, 1);
+        order.splice(Math.min(pos + 3, order.length), 0, idx);
+      } else {
+        pos++;
+      }
+      busy = false;
+      showCurrent();
+    }).catch(() => { busy = false; });
+  };
+
+  document.addEventListener('keydown', function(e) {
+    if (e.target.tagName === 'INPUT') return;
+    if (e.key === ' ') {
+      e.preventDefault();
+      if (pos < order.length)
+        currentWrapper().querySelector('.fc-card').classList.toggle('flipped');
+    }
+    const map = {'1': 'again', '2': 'hard', '3': 'good', '4': 'easy'};
+    if (map[e.key] && !grades.hidden) srsGrade(map[e.key]);
+  });
+
+  showCurrent();
+})();
+</script>
+{% endif %}
+<style>
+.srs-badge-new {
+  background: var(--sky-500, #4A90C4);
+  color: #fff;
+}
+.srs-grades {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.srs-grade {
+  flex: 0 1 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  border: 2px solid var(--earth-200, #e0d5c4);
+  background: #fff;
+  color: var(--earth-800, #3a3126);
+  cursor: pointer;
+  font-weight: 600;
+}
+.srs-grade small { font-weight: 400; color: var(--earth-500, #8a7560); }
+.srs-grade--again { border-color: var(--clay-400, #C4674A); }
+.srs-grade--hard  { border-color: var(--earth-400, #a99a85); }
+.srs-grade--good  { border-color: var(--sage-400, #6FAE78); }
+.srs-grade--easy  { border-color: var(--sky-400, #6BA8D4); }
+.srs-grade:hover { filter: brightness(0.97); }
+.srs-keys { text-align: center; color: var(--earth-400, #a99a85); }
+</style>
+{% endblock %}

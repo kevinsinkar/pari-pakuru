@@ -787,6 +787,43 @@ def about():
 # ------------------------------------------------------------------
 
 # ------------------------------------------------------------------
+# Spaced repetition study (Phase 5.2b)
+# ------------------------------------------------------------------
+
+@app.route("/study")
+def study():
+    """Spaced-repetition review session (optionally scoped to a lesson/tag)."""
+    from web import srs
+    db = get_db()
+    conn = db._get_write_conn()   # SRS schedules live in the DB
+    lesson = request.args.get("lesson", type=int)
+    tag = request.args.get("tag", "").strip() or None
+    queue = srs.get_queue(conn, lesson=lesson, tag=tag)
+    stats = srs.get_stats(conn, lesson=lesson, tag=tag)
+    scope_label = (f"Lesson {lesson}" if lesson
+                   else tag.replace("_", " ").title() if tag else "All words")
+    return render_template("study.html", queue=queue, stats=stats,
+                           lesson=lesson, tag=tag, scope_label=scope_label)
+
+
+@app.route("/api/srs/review", methods=["POST"])
+def srs_review():
+    """Grade one card: {entry_id, grade: again|hard|good|easy}."""
+    from web import srs
+    db = get_db()
+    data = request.get_json(silent=True) or {}
+    entry_id = (data.get("entry_id") or "").strip()
+    grade = (data.get("grade") or "").strip()
+    if not entry_id or grade not in srs.GRADES:
+        return jsonify({"error": "entry_id and grade (again/hard/good/easy) "
+                                 "required"}), 400
+    conn = db._get_write_conn()
+    srs.ensure_tables(conn)
+    due = srs.grade_card(conn, entry_id, grade)
+    return jsonify({"ok": True, "due": due})
+
+
+# ------------------------------------------------------------------
 # Blue Book Lessons (Phase 5.1)
 # ------------------------------------------------------------------
 

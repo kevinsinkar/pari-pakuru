@@ -911,6 +911,19 @@ one table not rebuildable from sources); backup scripts write to the
 OneDrive-synced `pari_pakuru_backups/` (home-dir fallback), existing
 backups copied over.
 
+### ✅ Phase 5.2b — In-App Spaced Repetition *(2026-09-02)*
+**Module:** `web/srs.py` (SM-2 scheduler, unit-tested 7/7 transitions)
+**Route:** `/study` (+ `?lesson=N` / `?tag=X` scoping), `POST /api/srs/review`
+
+Server-side SM-2 scheduling over dictionary entries (user does not use Anki
+— review state lives in the DB: `srs_cards` + append-only `srs_reviews`,
+covered by the OneDrive backup regime). Study UI reuses the flashcard
+card-flip design with Again/Hard/Good/Easy grading (keyboard: space flip,
+1–4 grade); "again" requeues the card within the session and lapses it.
+New-card selection prefers BB-attested entries with pronunciations. Every
+lesson page has a "Study this lesson's words" button scoped to that
+lesson's vocabulary attestations. Nav: Study link.
+
 ### 🟡 Phase 5.2 — Spaced Repetition / Flashcard Export
 **Priority:** High — **elevated** (low effort, high impact; Design Principle #3 says "export everything" but the export tasks are still unbuilt. A teacher can hand out a printed paradigm table *today*; accuracy improvements help later.)
 **Depends on:** Phase 1.2 (dictionary data)
