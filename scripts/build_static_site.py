@@ -273,16 +273,52 @@ def copy_static_assets(output_dir: Path) -> dict:
     static_src = PROJECT_ROOT / "web" / "static"
     static_dst = output_dir / "static"
 
-    if static_dst.exists():
-        shutil.rmtree(static_dst)
-
-    shutil.copytree(static_src, static_dst)
+    # Overwrite in place (rmtree fights OneDrive file locks on Windows)
+    shutil.copytree(static_src, static_dst, dirs_exist_ok=True)
 
     # Count files
     count = sum(1 for _ in static_dst.rglob("*") if _.is_file())
     print(f"[OK] Copied {count} static files")
 
     return {"files": count}
+
+
+def _postprocess_for_static(html: str) -> str:
+    """Rewrite Flask-app URLs so pages work as plain files under any base path
+    (GitHub Pages serves this site at /pari-pakuru/, so absolute paths break)."""
+    import re
+
+    # Drop nav links to Flask-only routes that have no static equivalent
+    html = re.sub(
+        r'<li><a href="/(search|browse|lessons|study|flashcards|sentence-builder|dashboard)"[^>]*>[^<]*</a></li>',
+        "", html)
+
+    # Drop the spelling-preference form (posts to a Flask route)
+    html = re.sub(
+        r'<li class="nav-spelling-toggle">.*?</li>',
+        "", html, flags=re.DOTALL)
+
+    # Strip HTMX live-search attributes (their endpoints don't exist statically;
+    # search.js handles live search instead)
+    html = re.sub(r'\s+hx-[a-z-]+="[^"]*"', "", html)
+
+    # Absolute → relative paths (all generated pages sit at the site root)
+    html = html.replace('href="/static/', 'href="static/')
+    html = html.replace('src="/static/', 'src="static/')
+    html = html.replace('action="/search"', 'action="index.html"')
+    html = html.replace('href="/search?', 'href="index.html?')
+    html = html.replace('href="/about"', 'href="about.html"')
+    html = html.replace('href="/guide"', 'href="guide.html"')
+    html = re.sub(r'href="/"', 'href="index.html"', html)
+
+    # Category-tag links become client-side searches on the tag word
+    html = re.sub(r'href="/browse/tag/([^"]+)"', r'href="index.html?q=\1"', html)
+
+    # Any remaining Flask-route link (entry pages, flashcards, browse) has no
+    # static equivalent yet — fall back to the home page rather than a 404
+    html = re.sub(r'href="/[^"]*"', 'href="index.html"', html)
+
+    return html
 
 
 def generate_static_pages(db_path: str, output_dir: Path) -> dict:
@@ -359,6 +395,7 @@ def generate_static_pages(db_path: str, output_dir: Path) -> dict:
             context.update(extra_context)
 
             html = template.render(**context)
+            html = _postprocess_for_static(html)
 
             output_file = output_dir / output_name
             with open(output_file, "w", encoding="utf-8") as f:

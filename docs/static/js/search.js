@@ -9,12 +9,12 @@ let fuseIndex = null;
 // Load dictionary data on page load
 async function initializeSearch() {
   try {
-    const response = await fetch('/data/dictionary.json');
+    const response = await fetch('data/dictionary.json');
     dictionaryData = await response.json();
 
     // Create Fuse index for fuzzy search
     fuseIndex = new Fuse(dictionaryData, {
-      keys: ['headword', 'normalized_form', 'glosses.definition', 'examples.english_gloss'],
+      keys: ['headword', 'normalized_form', 'glosses.definition', 'examples.english_translation'],
       threshold: 0.3,
       minMatchCharLength: 2,
     });
@@ -40,7 +40,7 @@ function performSearch(query, lang = 'auto', gramClass = null, tag = null) {
   } else if (lang === 'english') {
     results = results.filter(e =>
       e.glosses.some(g => g.definition.toLowerCase().includes(query.toLowerCase())) ||
-      e.examples.some(ex => ex.english_gloss.toLowerCase().includes(query.toLowerCase()))
+      e.examples.some(ex => ex.english_translation && ex.english_translation.toLowerCase().includes(query.toLowerCase()))
     );
   }
 
@@ -67,7 +67,7 @@ function renderSearchResults(results) {
 
     html += `<article class="result-card">
       <div class="result-header">
-        <h3><a href="/entries/${entry.entry_id}.html">${primarySpelling}</a></h3>
+        <h3>${primarySpelling}</h3>
         ${secondarySpelling ? `<span class="secondary-spelling">${secondarySpelling}</span>` : ''}
       </div>
       <div class="result-meta">
@@ -93,7 +93,7 @@ function handleSearchSubmit(event) {
   const results = performSearch(query, lang);
   renderSearchResults(results);
 
-  const url = `/search?q=${encodeURIComponent(query)}&lang=${lang}`;
+  const url = `?q=${encodeURIComponent(query)}&lang=${lang}`;
   window.history.replaceState({}, '', url);
 }
 
@@ -108,6 +108,15 @@ document.addEventListener('DOMContentLoaded', async () => {
   const searchForm = document.getElementById('hero-search-form');
   if (searchForm) {
     searchForm.addEventListener('submit', handleSearchSubmit);
+  }
+
+  // Run search from ?q= URL parameter (quick-word chips, shared links)
+  const params = new URLSearchParams(window.location.search);
+  const urlQuery = (params.get('q') || '').trim();
+  if (urlQuery) {
+    const input = document.querySelector('input[name="q"]');
+    if (input) input.value = urlQuery;
+    renderSearchResults(performSearch(urlQuery));
   }
 
   const searchInput = document.querySelector('input[name="q"]');
