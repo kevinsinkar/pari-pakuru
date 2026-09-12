@@ -12,6 +12,8 @@ __pycache__/
 tag_review_queue.json
 
 # SQLite database (binary — upload separately to PythonAnywhere)
+# Exception: GitHub Pages builds to docs/
 *.db
 *.db-shm
 *.db-wal
+!docs/
