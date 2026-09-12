@@ -29,6 +29,27 @@ sys.path.insert(0, str(PROJECT_ROOT))
 
 from web.db import SkiriWebDictionary
 
+# Import grammatical class labels from Flask app
+GRAM_CLASS_LABELS = {
+    "VI-S": "Intransitive verb (stative)",
+    "VI": "Intransitive verb",
+    "VT": "Transitive verb",
+    "VD": "Descriptive verb (qualities)",
+    "VR": "Reflexive verb",
+    "N": "Noun",
+    "N-DEP": "Noun (always possessed)",
+    "N-KIN": "Kinship noun",
+    "ADV": "Adverb",
+    "CONJ": "Conjunction",
+    "INTERJ": "Interjection",
+    "NUM": "Number",
+    "PART": "Particle",
+    "PRON": "Pronoun",
+    "QUANT": "Quantifier",
+    "VI-R": "Intransitive verb (reciprocal)",
+    "VT-R": "Transitive verb (reciprocal)",
+}
+
 
 def export_dictionary_data(db_path: str, output_dir: Path) -> dict:
     """Export all dictionary entries to searchable JSON."""
@@ -47,6 +68,15 @@ def export_dictionary_data(db_path: str, output_dir: Path) -> dict:
         if not entry:
             continue
 
+        # Get blue_book_attested from database
+        cur_bb = db.conn.cursor()
+        cur_bb.execute(
+            "SELECT blue_book_attested FROM lexical_entries WHERE entry_id = ?",
+            (entry_id,)
+        )
+        bb_row = cur_bb.fetchone()
+        bb_attested = bool(bb_row["blue_book_attested"]) if bb_row else False
+
         # Flatten to JSON-serializable format
         entry_dict = {
             "entry_id": entry.entry_id,
@@ -55,19 +85,18 @@ def export_dictionary_data(db_path: str, output_dir: Path) -> dict:
             "simplified_pronunciation": entry.simplified_pronunciation,
             "grammatical_class": entry.grammatical_class,
             "verb_class": entry.verb_class,
-            "blue_book_attested": entry.blue_book_attested,
+            "blue_book_attested": bb_attested,
             "glosses": [
                 {
                     "sense_number": g.sense_number,
                     "definition": g.definition,
-                    "grammatical_notes": g.grammatical_notes,
                 }
                 for g in (entry.glosses or [])
             ],
             "examples": [
                 {
                     "skiri_text": e.skiri_text,
-                    "english_gloss": e.english_gloss,
+                    "english_translation": e.english_translation,
                 }
                 for e in (entry.examples or [])
             ],
@@ -91,8 +120,36 @@ def generate_entry_pages(db_path: str, output_dir: Path) -> dict:
     print("[*] Generating entry pages...")
     from jinja2 import Environment, FileSystemLoader
 
+    # Register custom filters for static rendering
+    def primary_spelling_filter(entry):
+        """Return primary spelling (normalized form preferred)."""
+        nf = entry.normalized_form if hasattr(entry, 'normalized_form') else None
+        hw = entry.headword if hasattr(entry, 'headword') else ""
+        return nf if nf and nf != hw else hw
+
+    def secondary_spelling_filter(entry):
+        """Return secondary spelling (non-preferred)."""
+        nf = entry.normalized_form if hasattr(entry, 'normalized_form') else None
+        hw = entry.headword if hasattr(entry, 'headword') else ""
+        return hw if nf and nf != hw else None
+
+    def format_pitch_filter(pronunciation: str):
+        """Format pitch accent (uppercase syllables)."""
+        if not pronunciation:
+            return ""
+        import re
+        _UPPER_RUN_RE = re.compile(r"([A-Z][A-Z']+)")
+        has_upper = any(c.isupper() for c in pronunciation)
+        if has_upper:
+            return _UPPER_RUN_RE.sub(r'<span class="pitch-high">\1</span>', pronunciation)
+        return pronunciation + ' <span class="pitch-unmarked">(pitch not marked)</span>'
+
     template_dir = PROJECT_ROOT / "web" / "templates"
     env = Environment(loader=FileSystemLoader(str(template_dir)))
+    env.filters['primary_spelling'] = primary_spelling_filter
+    env.filters['secondary_spelling'] = secondary_spelling_filter
+    env.filters['format_pitch'] = format_pitch_filter
+
     template = env.get_template("entry.html")
 
     db = SkiriWebDictionary(db_path)
@@ -105,13 +162,25 @@ def generate_entry_pages(db_path: str, output_dir: Path) -> dict:
     entries_dir = output_dir / "entries"
     entries_dir.mkdir(parents=True, exist_ok=True)
 
+    # Mock request object for static rendering
+    class MockRequest:
+        class Args:
+            def get(self, key, default=""):
+                return default
+        args = Args()
+
     count = 0
     for entry_id in entry_ids:
         entry = db._build_entry(entry_id)
         if not entry:
             continue
 
-        html = template.render(entry=entry)
+        html = template.render(
+            entry=entry,
+            request=MockRequest(),
+            spelling_pref="simplified",
+            gram_class_labels=GRAM_CLASS_LABELS
+        )
 
         page_file = entries_dir / f"{entry_id}.html"
         with open(page_file, "w", encoding="utf-8") as f:
@@ -131,11 +200,34 @@ def generate_browse_pages(db_path: str, output_dir: Path) -> dict:
     print("[*] Generating browse pages...")
     from jinja2 import Environment, FileSystemLoader
 
+    # Register custom filters for static rendering
+    def primary_spelling_filter(entry):
+        """Return primary spelling (normalized form preferred)."""
+        nf = entry.normalized_form if hasattr(entry, 'normalized_form') else None
+        hw = entry.headword if hasattr(entry, 'headword') else ""
+        return nf if nf and nf != hw else hw
+
+    def secondary_spelling_filter(entry):
+        """Return secondary spelling (non-preferred)."""
+        nf = entry.normalized_form if hasattr(entry, 'normalized_form') else None
+        hw = entry.headword if hasattr(entry, 'headword') else ""
+        return hw if nf and nf != hw else None
+
     template_dir = PROJECT_ROOT / "web" / "templates"
     env = Environment(loader=FileSystemLoader(str(template_dir)))
+    env.filters['primary_spelling'] = primary_spelling_filter
+    env.filters['secondary_spelling'] = secondary_spelling_filter
+
     template = env.get_template("browse.html")
 
     db = SkiriWebDictionary(db_path)
+
+    # Mock request object for static rendering
+    class MockRequest:
+        class Args:
+            def get(self, key, default=""):
+                return default
+        args = Args()
 
     classes = db.get_all_classes()
     browse_dir = output_dir / "browse"
@@ -157,7 +249,10 @@ def generate_browse_pages(db_path: str, output_dir: Path) -> dict:
         html = template.render(
             gram_class=gram_class,
             entries=summaries,
-            total=len(summaries)
+            total=len(summaries),
+            request=MockRequest(),
+            spelling_pref="simplified",
+            gram_class_labels=GRAM_CLASS_LABELS
         )
 
         page_file = browse_dir / f"{slug}.html"
@@ -195,12 +290,46 @@ def generate_static_pages(db_path: str, output_dir: Path) -> dict:
     print("[*] Generating static pages...")
     from jinja2 import Environment, FileSystemLoader
     from datetime import date
+    import re
+
+    # Register custom filters for static rendering
+    def primary_spelling_filter(entry):
+        """Return primary spelling (normalized form preferred)."""
+        nf = entry.normalized_form if hasattr(entry, 'normalized_form') else None
+        hw = entry.headword if hasattr(entry, 'headword') else ""
+        return nf if nf and nf != hw else hw
+
+    def secondary_spelling_filter(entry):
+        """Return secondary spelling (non-preferred)."""
+        nf = entry.normalized_form if hasattr(entry, 'normalized_form') else None
+        hw = entry.headword if hasattr(entry, 'headword') else ""
+        return hw if nf and nf != hw else None
+
+    def format_pitch_filter(pronunciation: str):
+        """Format pitch accent (uppercase syllables)."""
+        if not pronunciation:
+            return ""
+        _UPPER_RUN_RE = re.compile(r"([A-Z][A-Z']+)")
+        has_upper = any(c.isupper() for c in pronunciation)
+        if has_upper:
+            return _UPPER_RUN_RE.sub(r'<span class="pitch-high">\1</span>', pronunciation)
+        return pronunciation + ' <span class="pitch-unmarked">(pitch not marked)</span>'
 
     template_dir = PROJECT_ROOT / "web" / "templates"
     env = Environment(loader=FileSystemLoader(str(template_dir)))
+    env.filters['primary_spelling'] = primary_spelling_filter
+    env.filters['secondary_spelling'] = secondary_spelling_filter
+    env.filters['format_pitch'] = format_pitch_filter
 
     db = SkiriWebDictionary(db_path)
     stats = db.get_stats()
+
+    # Mock request object for static rendering
+    class MockRequest:
+        class Args:
+            def get(self, key, default=""):
+                return default
+        args = Args()
 
     pages_to_generate = [
         ("index.html", "index.html", {}),
@@ -223,6 +352,9 @@ def generate_static_pages(db_path: str, output_dir: Path) -> dict:
                     {"skiri": "piita", "en": "man"},
                     {"skiri": "capaat", "en": "woman"},
                 ],
+                "request": MockRequest(),
+                "spelling_pref": "simplified",
+                "gram_class_labels": GRAM_CLASS_LABELS,
             }
             context.update(extra_context)
 
@@ -276,8 +408,9 @@ def main():
     results = {}
     try:
         results["data"] = export_dictionary_data(str(db_path), output_dir)
-        results["entries"] = generate_entry_pages(str(db_path), output_dir)
-        results["browse"] = generate_browse_pages(str(db_path), output_dir)
+        # Skip individual entry page generation - use client-side JS instead
+        # results["entries"] = generate_entry_pages(str(db_path), output_dir)
+        # results["browse"] = generate_browse_pages(str(db_path), output_dir)
         results["static"] = copy_static_assets(output_dir)
         results["pages"] = generate_static_pages(str(db_path), output_dir)
     except Exception as e:
@@ -288,12 +421,12 @@ def main():
 
     # Summary
     print(f"\n[*] Build complete!")
-    print(f"  Entries: {results['entries']['entries']}")
-    print(f"  Browse pages: {results['browse']['pages']}")
+    print(f"  Dictionary data: {results['data']['entries']} entries exported")
     print(f"  Static pages: {results['pages']['pages']}")
     print(f"  Static files: {results['static']['files']}")
     print(f"\n[DIR] Output: {output_dir}/")
     print(f"[WEB] Ready for GitHub Pages!")
+    print(f"\nNote: Entry pages generated dynamically via client-side search.js")
 
 
 if __name__ == "__main__":

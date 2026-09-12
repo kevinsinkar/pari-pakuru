@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Syllable Guide — Skiri Pawnee Dictionary</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;1,8..60,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Pico CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+
+  <!-- Custom Pawnee theme -->
+  <link rel="stylesheet" href="/static/css/pawnee-theme.css">
+
+  <!-- HTMX (optional for live features) -->
+  <script src="https://unpkg.com/htmx.org@2.0.4"></script>
+
+  <!-- Fuse.js for client-side search -->
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+
+  <!-- Client-side search -->
+  <script src="/static/js/search.js"></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <!-- ====== Top Navigation ====== -->
+  <header class="container">
+    <nav class="site-nav">
+      <ul>
+        <li>
+          <a href="/" class="contrast" style="text-decoration:none; display:flex; align-items:center; gap:0.75rem;">
+            <span style="
+              width:36px; height:36px; border-radius:50%;
+              background: linear-gradient(135deg, var(--clay-600), var(--gold-400));
+              display:flex; align-items:center; justify-content:center;
+            ">
+              
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2L15.5 8.5L22 12L15.5 15.5L12 22L8.5 15.5L2 12L8.5 8.5L12 2Z" fill="white" opacity="0.9"/>
+              </svg>
+            </span>
+            <span>
+              <strong class="font-serif" style="font-size:1.2rem; letter-spacing:-0.3px;">P&#226;ri Pak&#251;ru'</strong>
+              <br>
+              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Skiri Pawnee Dictionary</small>
+            </span>
+          </a>
+        </li>
+      </ul>
+
+      
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleNav(this)">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="/" >Dictionary</a></li>
+        <li><a href="/search" >Search</a></li>
+        <li><a href="/browse" >Browse</a></li>
+        <li><a href="/lessons" >Lessons</a></li>
+        <li><a href="/study" >Study</a></li>
+        <li><a href="/flashcards" >Flashcards</a></li>
+        <li><a href="/sentence-builder" >Sentences</a></li>
+        <li><a href="/guide" >Syllable Guide</a></li>
+        <li><a href="/dashboard" >Dashboard</a></li>
+        <li><a href="/about" >About</a></li>
+
+        
+        <li class="nav-spelling-toggle">
+          <form action="/preferences" method="post" class="spelling-toggle-form">
+            <span class="spelling-toggle-label">Spelling:</span>
+            <button type="submit" name="spelling" value="parks"
+                    class="spelling-btn ">Parks</button>
+            <button type="submit" name="spelling" value="simplified"
+                    class="spelling-btn spelling-btn--active">Simplified</button>
+          </form>
+        </li>
+      </ul>
+    </nav>
+    
+    <form action="/search" method="get" class="nav-search" role="search">
+      <input
+        type="search"
+        name="q"
+        placeholder="Search Skiri or English..."
+        value=""
+        aria-label="Search the dictionary"
+        hx-get="/search/partial"
+        hx-trigger="keyup changed delay:400ms"
+        hx-target="#live-results"
+        hx-params="q"
+        hx-indicator="#search-spinner"
+        autocomplete="off"
+      >
+    </form>
+    
+  </header>
+
+  <!-- ====== Main Content ====== -->
+  <main class="container" id="main-content">
+    <div id="live-results"></div>
+    
+<article>
+    <h2>Syllable &amp; Pronunciation Guide</h2>
+    <p>
+        Skiri Pawnee uses a small set of sounds. Below you'll find the
+        <strong>Parks notation</strong> (used in the dictionary headwords),
+        our <strong>simplified respelling</strong> (shown throughout this site),
+        and English approximations to help with pronunciation.
+    </p>
+    <p style="font-size:0.85em; color:var(--earth-500);">
+        
+        You're viewing with <strong>Simplified spelling</strong> as primary.
+        
+        Use the spelling toggle in the nav bar to switch.
+    </p>
+
+    <!-- ============================================================ -->
+    <h3>Consonants</h3>
+    <!-- ============================================================ -->
+    <div class="guide-table-wrap">
+    <table class="guide-table">
+        <thead>
+            <tr>
+                
+                <th>Simplified</th>
+                <th>Parks</th>
+                
+                <th>English Approximation</th>
+                <th>Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td class="guide-primary-col">p</td>
+                <td class="ipa guide-secondary-col">p</td>
+                <td><strong>sp</strong>ot (unaspirated, like the p in <em>spin</em>)</td>
+                <td>No puff of air</td>
+            </tr>
+            <tr>
+                <td class="guide-primary-col">t</td>
+                <td class="ipa guide-secondary-col">t</td>
+                <td><strong>st</strong>op (unaspirated, like the t in <em>start</em>)</td>
+                <td>No puff of air</td>
+            </tr>
+            <tr>
+                <td class="guide-primary-col">k</td>
+                <td class="ipa guide-secondary-col">k</td>
+                <td><strong>sk</strong>ate (unaspirated, like the k in <em>skin</em>)</td>
+                <td>No puff of air</td>
+            </tr>
+            <tr>
+                <td class="guide-primary-col">c</td>
+                <td class="ipa guide-secondary-col">c</td>
+                <td>ca<strong>ts</strong>up &mdash; a "ts" sound</td>
+                <td>A single sound, like <em>ts</em> said quickly</td>
+            </tr>
+            <tr>
+                <td class="guide-primary-col">&#x010D;</td>
+                <td class="ipa guide-secondary-col">c</td>
+                <td><strong>ch</strong>urch, <strong>ch</strong>in</td>
+                <td>Parks writes both as <strong>c</strong>; simplified uses <strong>&#x010D;</strong> to mark the "ch" sound</td>
+            </tr>
+            <tr>
+                <td class="guide-primary-col">s</td>
+                <td class="ipa guide-secondary-col">s</td>
+                <td><strong>s</strong>it, <strong>s</strong>uper</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="guide-primary-col">r</td>
+                <td class="ipa guide-secondary-col">r</td>
+                <td>Spanish <em>pero</em> &mdash; a soft, quick tap</td>
+                <td>Like a very soft <strong>d</strong> in <em>ready</em> said fast; sometimes sounds like <em>n</em> or <em>l</em></td>
+            </tr>
+            <tr>
+                <td class="guide-primary-col">w</td>
+                <td class="ipa guide-secondary-col">w</td>
+                <td><strong>w</strong>all, <strong>w</strong>atch</td>
+                <td>Same sound as the vowel <strong>u</strong> when between consonants</td>
+            </tr>
+            <tr>
+                <td class="guide-primary-col">h</td>
+                <td class="ipa guide-secondary-col">h</td>
+                <td><strong>h</strong>it, <strong>h</strong>arm</td>
+                <td>Always pronounced in Skiri; silent at word start in South Band</td>
+            </tr>
+            <tr>
+                <td class="guide-primary-col">'</td>
+                <td class="ipa guide-secondary-col">&#x0294;</td>
+                <td>The catch in <em>uh-oh</em></td>
+                <td>Glottal stop &mdash; a brief closure of the throat. At word end, the vowel is cut short with a slight echo</td>
+            </tr>
+            
+        </tbody>
+    </table>
+    </div>
+
+    <!-- ============================================================ -->
+    <h3>Vowels</h3>
+    <!-- ============================================================ -->
+    <p>
+        Pawnee has four basic vowel qualities. Each can be <strong>short</strong>
+        or <strong>long</strong> (held about twice as long). Vowel length changes
+        meaning, so pay attention to it.
+        
+        In the simplified spelling, long vowels use a <strong>circumflex</strong>:
+        &acirc;, &icirc;, &ucirc;.
+        
+    </p>
+
+    <div class="guide-table-wrap">
+    <table class="guide-table">
+        <thead>
+            <tr>
+                
+                <th>Simplified</th>
+                <th>Parks</th>
+                
+                <th>Sounds Like</th>
+                <th>Mouth Position</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="guide-section-row"><td colspan="4"><strong>Short Vowels</strong></td></tr>
+            
+            <tr>
+                <td class="guide-primary-col">a</td>
+                <td class="ipa guide-secondary-col">a</td>
+                <td>p<strong>u</strong>tt, <strong>a</strong>bove</td>
+                <td>Open &amp; relaxed &mdash; mouth wide, tongue low</td>
+            </tr>
+            <tr>
+                <td class="guide-primary-col">i</td>
+                <td class="ipa guide-secondary-col">i</td>
+                <td>p<strong>i</strong>t, h<strong>i</strong>t</td>
+                <td>Close &mdash; tongue humped high in front</td>
+            </tr>
+            <tr>
+                <td class="guide-primary-col">u</td>
+                <td class="ipa guide-secondary-col">u</td>
+                <td>p<strong>u</strong>sh, b<strong>oo</strong>t</td>
+                <td>Round &mdash; lips pursed and rounded</td>
+            </tr>
+            <tr class="guide-section-row"><td colspan="4"><strong>Long Vowels</strong> (circumflex = held longer)</td></tr>
+            <tr>
+                <td class="guide-primary-col">&acirc;</td>
+                <td class="ipa guide-secondary-col">aa</td>
+                <td>f<strong>a</strong>ther</td>
+                <td>Same as <strong>a</strong> but held longer</td>
+            </tr>
+            <tr>
+                <td class="guide-primary-col">&icirc;</td>
+                <td class="ipa guide-secondary-col">ii</td>
+                <td>w<strong>ee</strong>d, mach<strong>i</strong>ne</td>
+                <td>Same as <strong>i</strong> but held longer</td>
+            </tr>
+            <tr>
+                <td class="guide-primary-col">&ucirc;</td>
+                <td class="ipa guide-secondary-col">uu</td>
+                <td>r<strong>u</strong>de, r<strong>u</strong>ler</td>
+                <td>Same as <strong>u</strong> but held longer</td>
+            </tr>
+            
+        </tbody>
+    </table>
+    </div>
+
+    <details class="guide-note" open>
+        <summary>Note: <strong>u</strong> vs <strong>&ucirc;</strong> in pronunciation</summary>
+        <p>
+            In the pronunciation guide (e.g. <em>PIHT-koo</em>), both short
+            <strong>u</strong> and long
+            <strong>&ucirc;</strong>
+            are written as "oo" &mdash; English doesn't have a standard way to
+            show this difference. To tell them apart, check the spelling:
+            
+            <strong>u</strong> = short, <strong>&ucirc;</strong> (circumflex) = long (held longer).
+            
+            For example: <span class="ipa" lang="x-paw">pitku</span> has short u,
+            while <span class="ipa" lang="x-paw">ar&ucirc;sa</span>
+            (horse) has long &ucirc;.
+        </p>
+    </details>
+
+    <details class="guide-note">
+        <summary>About the middle vowel <strong>e</strong></summary>
+        <p>
+            The Blue Book (P&acirc;ri Pak&ucirc;ru') uses <strong>e</strong> in
+            some spellings. This sound sits between <strong>i</strong> and
+            <strong>a</strong> &mdash; the tongue is relaxed but higher than for
+            <strong>a</strong>. In the Parks dictionary, this is represented by
+            the IPA symbols <span class="ipa">&#601;</span> (schwa) or
+            <span class="ipa">&#618;</span>, and it's respelled as
+            <strong>a</strong> or <strong>i</strong> depending on context.
+        </p>
+    </details>
+
+    <!-- ============================================================ -->
+    <h3>Whispered Vowels</h3>
+    <!-- ============================================================ -->
+    <p>
+        At the end of a word, after a hard consonant (<strong>p, t, k, s, c</strong>),
+        vowels are often <em>whispered</em> &mdash; barely voiced, more like a
+        puff of breath. In fluent speech they may be almost inaudible. This is
+        normal and not a mistake.
+    </p>
+
+    <!-- ============================================================ -->
+    <h3>Accent Marks</h3>
+    <!-- ============================================================ -->
+    <p>
+        Some forms in the dictionary carry accent marks
+        (<span class="ipa">&aacute;, &iacute;, &uacute;</span>).
+        These indicate <strong>high pitch</strong> on that syllable &mdash; Pawnee
+        uses pitch rather than stress to mark emphasis. In the respelling, accents
+        are not shown, but they can affect meaning.
+    </p>
+
+    <!-- ============================================================ -->
+    <h3>Syllable Structure</h3>
+    <!-- ============================================================ -->
+    <p>
+        In the dictionary's phonetic transcription, a dot
+        (<span class="ipa">&bull;</span>) marks syllable boundaries, and a dash
+        (<span class="ipa">&ndash;</span>) marks stem boundaries. For example:
+    </p>
+    <div class="guide-example">
+        <span class="ipa">[&bull;r&#601;&ndash;h&#650;h&ndash;kaa&ndash;paa&ndash;k&#618;s&bull;]</span>
+        <br>
+        <span class="pronunciation">duh-hooh-kah-pah-kihs</span>
+    </div>
+
+    <!-- ============================================================ -->
+    <h3>Quick Reference: Reading the Dictionary</h3>
+    <!-- ============================================================ -->
+    <p>Each entry in this dictionary shows up to three forms:</p>
+    <ol>
+        <li>
+            <strong>Headword</strong> &mdash; the Parks dictionary spelling
+            (e.g., <span class="ipa" lang="x-paw">taraha</span>)
+        </li>
+        <li>
+            <strong>Simplified</strong> &mdash; a learner-friendly respelling
+            with circumflex long vowels
+            (e.g., <span lang="x-paw">taraha</span> &mdash; same here since
+            no long vowels)
+        </li>
+        <li>
+            <strong>IPA</strong> &mdash; the precise phonetic transcription
+            in square brackets
+        </li>
+    </ol>
+    <p>
+        
+        The simplified spelling uses <strong>&acirc;</strong> for long a,
+        <strong>&icirc;</strong> for long i, <strong>&ucirc;</strong> for long u,
+        and <strong>'</strong> for the glottal stop.
+        
+        When in doubt, the IPA form is the most precise guide.
+    </p>
+
+    <!-- ============================================================ -->
+    <h3>Example Words</h3>
+    <!-- ============================================================ -->
+    <div class="guide-table-wrap">
+    <table class="guide-table">
+        <thead>
+            <tr>
+                
+                <th>Simplified</th>
+                <th>Parks</th>
+                
+                <th>Meaning</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td class="guide-primary-col" lang="x-paw">taraha'</td>
+                <td class="ipa guide-secondary-col" lang="x-paw">taraha&#x0294;</td>
+                <td>buffalo</td>
+            </tr>
+            <tr>
+                <td class="guide-primary-col" lang="x-paw">p&icirc;ta</td>
+                <td class="ipa guide-secondary-col" lang="x-paw">piita</td>
+                <td>man</td>
+            </tr>
+            <tr>
+                <td class="guide-primary-col" lang="x-paw">&#x010D;ap&acirc;t</td>
+                <td class="ipa guide-secondary-col" lang="x-paw">capaat</td>
+                <td>woman</td>
+            </tr>
+            <tr>
+                <td class="guide-primary-col" lang="x-paw">ar&ucirc;sa'</td>
+                <td class="ipa guide-secondary-col" lang="x-paw">aruusa&#x0294;</td>
+                <td>horse</td>
+            </tr>
+            <tr>
+                <td class="guide-primary-col" lang="x-paw">k&acirc;ka'</td>
+                <td class="ipa guide-secondary-col" lang="x-paw">kaaka&#x0294;</td>
+                <td>crow</td>
+            </tr>
+            
+        </tbody>
+    </table>
+    </div>
+
+    <p style="margin-top: 2em; font-size: 0.9em; color: var(--pico-muted-color);">
+        Based on the Sound Key from Douglas R. Parks,
+        <em>A Dictionary of Skiri Pawnee</em>, and the Pawnee Alphabet section
+        of the Blue Book <em>P&acirc;ri Pak&ucirc;ru'</em>.
+    </p>
+</article>
+
+  </main>
+
+  <!-- ====== Footer ====== -->
+  <footer class="container">
+    <small style="color:var(--earth-500);">
+      P&#226;ri Pak&#251;ru' — Skiri Pawnee Language Preservation Project.
+      Data: Douglas R. Parks Dictionary &amp; Blue Book Textbook.
+      Built with respect for the Pawnee Nation.
+    </small>
+  </footer>
+
+  <script>
+    function toggleNav(btn) {
+      var nav = btn.closest('nav');
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('nav-open');
+    }
+  </script>
+  <script src="/static/js/search.js"></script>
+  
+</body>
+</html>

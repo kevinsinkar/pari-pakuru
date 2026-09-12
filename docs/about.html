@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Skiri Pawnee Dictionary</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;1,8..60,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Pico CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+
+  <!-- Custom Pawnee theme -->
+  <link rel="stylesheet" href="/static/css/pawnee-theme.css">
+
+  <!-- HTMX (optional for live features) -->
+  <script src="https://unpkg.com/htmx.org@2.0.4"></script>
+
+  <!-- Fuse.js for client-side search -->
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+
+  <!-- Client-side search -->
+  <script src="/static/js/search.js"></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <!-- ====== Top Navigation ====== -->
+  <header class="container">
+    <nav class="site-nav">
+      <ul>
+        <li>
+          <a href="/" class="contrast" style="text-decoration:none; display:flex; align-items:center; gap:0.75rem;">
+            <span style="
+              width:36px; height:36px; border-radius:50%;
+              background: linear-gradient(135deg, var(--clay-600), var(--gold-400));
+              display:flex; align-items:center; justify-content:center;
+            ">
+              
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2L15.5 8.5L22 12L15.5 15.5L12 22L8.5 15.5L2 12L8.5 8.5L12 2Z" fill="white" opacity="0.9"/>
+              </svg>
+            </span>
+            <span>
+              <strong class="font-serif" style="font-size:1.2rem; letter-spacing:-0.3px;">P&#226;ri Pak&#251;ru'</strong>
+              <br>
+              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Skiri Pawnee Dictionary</small>
+            </span>
+          </a>
+        </li>
+      </ul>
+
+      
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleNav(this)">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="/" >Dictionary</a></li>
+        <li><a href="/search" >Search</a></li>
+        <li><a href="/browse" >Browse</a></li>
+        <li><a href="/lessons" >Lessons</a></li>
+        <li><a href="/study" >Study</a></li>
+        <li><a href="/flashcards" >Flashcards</a></li>
+        <li><a href="/sentence-builder" >Sentences</a></li>
+        <li><a href="/guide" >Syllable Guide</a></li>
+        <li><a href="/dashboard" >Dashboard</a></li>
+        <li><a href="/about" >About</a></li>
+
+        
+        <li class="nav-spelling-toggle">
+          <form action="/preferences" method="post" class="spelling-toggle-form">
+            <span class="spelling-toggle-label">Spelling:</span>
+            <button type="submit" name="spelling" value="parks"
+                    class="spelling-btn ">Parks</button>
+            <button type="submit" name="spelling" value="simplified"
+                    class="spelling-btn spelling-btn--active">Simplified</button>
+          </form>
+        </li>
+      </ul>
+    </nav>
+    
+    <form action="/search" method="get" class="nav-search" role="search">
+      <input
+        type="search"
+        name="q"
+        placeholder="Search Skiri or English..."
+        value=""
+        aria-label="Search the dictionary"
+        hx-get="/search/partial"
+        hx-trigger="keyup changed delay:400ms"
+        hx-target="#live-results"
+        hx-params="q"
+        hx-indicator="#search-spinner"
+        autocomplete="off"
+      >
+    </form>
+    
+  </header>
+
+  <!-- ====== Main Content ====== -->
+  <main class="container" id="main-content">
+    <div id="live-results"></div>
+    
+<article>
+    <h2>About P&acirc;ri Pak&ucirc;ru'</h2>
+
+    <p>
+        <strong>P&acirc;ri Pak&ucirc;ru'</strong> is a digital dictionary and language reference tool
+        for the <strong>Skiri Pawnee</strong> language, built to support language
+        preservation and revitalization efforts.
+    </p>
+
+    <h3>Data Sources</h3>
+    <ul>
+        <li>
+            <strong>A Dictionary of Skiri Pawnee</strong> by Douglas R. Parks &mdash;
+            the primary linguistic reference, containing over 4,200 headwords with
+            phonetic transcriptions, grammatical classifications, etymologies,
+            paradigmatic verb forms, and example sentences.
+        </li>
+        <li>
+            <strong>P&acirc;ri Pak&ucirc;ru' (Blue Book)</strong> &mdash; a Skiri Pawnee language
+            textbook used in community language classes, providing attested vocabulary
+            and usage in pedagogical contexts.
+        </li>
+    </ul>
+
+    <h3>Search &amp; Dictionary</h3>
+    <ul>
+        <li>Bidirectional search: English &rarr; Skiri and Skiri &rarr; English</li>
+        <li>Smart search ranking: exact matches first, Blue Book&ndash;attested terms boosted, example sentence snippets surfaced</li>
+        <li>Multiple pronunciation displays: IPA phonetic, simplified respelling with pitch accent highlighting</li>
+        <li>Spelling preference toggle: Parks linguistic orthography or simplified spelling</li>
+        <li>Full verb conjugation tables for documented paradigms</li>
+        <li>Semantic categorization and tag browsing</li>
+        <li>Blue Book attestation badges and confidence scores for data quality</li>
+        <li>Etymology, morpheme breakdowns, and cognate cross-references to related Caddoan languages</li>
+    </ul>
+
+    <h3>Learning Tools</h3>
+    <ul>
+        <li>Weekly flashcard study system with 21 categories and curated beginner vocabulary</li>
+        <li>Template-based sentence builder for practicing Skiri Pawnee word order</li>
+        <li>Interactive pronunciation guide with respelling symbols and pitch accent legend</li>
+        <li>Suggested learning path for new learners</li>
+        <li>Learner / Expert mode toggle to control detail level</li>
+        <li>Dashboard with personal study overview and dictionary statistics</li>
+    </ul>
+
+    <h3>Community &amp; Data Quality</h3>
+    <ul>
+        <li>Community feedback: flag uncertain entries or confirm correct ones, with admin review</li>
+        <li>Confidence scoring: each entry carries a weighted score based on attestation, completeness, and source agreement</li>
+    </ul>
+    <p>
+        This tool presents data extracted from published linguistic sources.
+        Forms marked as <strong>"attested"</strong> appear directly in the
+        Parks Dictionary or Blue Book. Any generated or computed forms are
+        clearly distinguished. For an endangered language, every verified form
+        is precious &mdash; treat unverified forms with appropriate caution.
+    </p>
+
+    <h3>Technology</h3>
+    <p>
+        Built with Python, Flask, and SQLite. The dictionary database includes
+        full-text search indexes for fast lookup. The interface uses
+        Pico CSS for responsive, mobile-friendly design and HTMX for live search.
+        Accessibility features include keyboard navigation, collapsible entry
+        sections, and screen-reader-friendly markup.
+    </p>
+</article>
+
+  </main>
+
+  <!-- ====== Footer ====== -->
+  <footer class="container">
+    <small style="color:var(--earth-500);">
+      P&#226;ri Pak&#251;ru' — Skiri Pawnee Language Preservation Project.
+      Data: Douglas R. Parks Dictionary &amp; Blue Book Textbook.
+      Built with respect for the Pawnee Nation.
+    </small>
+  </footer>
+
+  <script>
+    function toggleNav(btn) {
+      var nav = btn.closest('nav');
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('nav-open');
+    }
+  </script>
+  <script src="/static/js/search.js"></script>
+  
+</body>
+</html>
