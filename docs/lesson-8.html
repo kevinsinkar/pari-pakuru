@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 8 — Blue Book — Skiri Pawnee Dictionary</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;1,8..60,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Pico CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+
+  <!-- Custom Pawnee theme -->
+  <link rel="stylesheet" href="static/css/pawnee-theme.css">
+
+  <!-- HTMX (optional for live features) -->
+  <script src="https://unpkg.com/htmx.org@2.0.4"></script>
+
+  <!-- Fuse.js for client-side search -->
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+
+  <!-- Client-side search -->
+  <script src="static/js/search.js"></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <!-- ====== Top Navigation ====== -->
+  <header class="container">
+    <nav class="site-nav">
+      <ul>
+        <li>
+          <a href="index.html" class="contrast" style="text-decoration:none; display:flex; align-items:center; gap:0.75rem;">
+            <span style="
+              width:36px; height:36px; border-radius:50%;
+              background: linear-gradient(135deg, var(--clay-600), var(--gold-400));
+              display:flex; align-items:center; justify-content:center;
+            ">
+              
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2L15.5 8.5L22 12L15.5 15.5L12 22L8.5 15.5L2 12L8.5 8.5L12 2Z" fill="white" opacity="0.9"/>
+              </svg>
+            </span>
+            <span>
+              <strong class="font-serif" style="font-size:1.2rem; letter-spacing:-0.3px;">P&#226;ri Pak&#251;ru'</strong>
+              <br>
+              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Skiri Pawnee Dictionary</small>
+            </span>
+          </a>
+        </li>
+      </ul>
+
+      
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleNav(this)">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html" >Dictionary</a></li>
+        
+        
+        <li><a href="lessons.html" aria-current="page">Lessons</a></li>
+        
+        <li><a href="flashcards.html" >Flashcards</a></li>
+        
+        <li><a href="guide.html" >Syllable Guide</a></li>
+        
+        <li><a href="about.html" >About</a></li>
+
+        
+        
+      </ul>
+    </nav>
+    
+    <form action="index.html" method="get" class="nav-search" role="search">
+      <input
+        type="search"
+        name="q"
+        placeholder="Search Skiri or English..."
+        value=""
+        aria-label="Search the dictionary"
+        autocomplete="off"
+      >
+    </form>
+    
+  </header>
+
+  <!-- ====== Main Content ====== -->
+  <main class="container" id="main-content">
+    <div id="live-results"></div>
+    
+<nav class="lesson-nav">
+  <a href="lessons.html">&larr; All lessons</a>
+  <span>
+    <a href="lesson-7.html">&larr; Lesson 7</a>
+    <a href="lesson-9.html">Lesson 9 &rarr;</a>
+  </span>
+</nav>
+
+<hgroup>
+  
+  <h2 class="font-serif" lang="x-paw">KI Rid RA. KU?</h2>
+  
+  <h3>Lesson 8</h3>
+  <p><small>Blue Book pp. 65–70</small></p>
+</hgroup>
+
+
+
+
+<details class="lesson-note spelling-bridge">
+  <summary><strong>Why do the spellings differ?</strong></summary>
+  <p>The same Pawnee word appears in several writing systems, and they are
+     all telling you the same thing:</p>
+  <ul>
+    <li><strong>Blue Book</strong> — the practical spelling printed in
+        <em>Pari Pakuru'</em> (1979), exactly as the Pawnee Cultural Retention
+        Committee wrote it. Some letters follow English habits (for example
+        <em>d</em> for the soft Pawnee <em>r</em>).</li>
+    <li><strong>Dictionary entry</strong> — the learner spelling from the
+        Parks Dictionary, with a circumflex (&#226;) marking long vowels.</li>
+    <li><strong>Say it</strong> — the simplified pronunciation.
+        <strong>UPPERCASE</strong> syllables carry <strong>high pitch</strong>,
+        which changes meaning in Pawnee.</li>
+    <li><strong>IPA</strong> — the exact scholarly transcription recorded by
+        Douglas Parks from fluent speakers. When the other spellings disagree,
+        the IPA is the authority.</li>
+  </ul>
+</details>
+
+
+
+
+<section>
+  <h4>Basic Words</h4>
+  
+<div class="table-scroll">
+<table class="lesson-vocab">
+  <thead><tr>
+    <th>Blue Book</th><th>English</th><th>Dictionary entry</th><th>Say it</th><th>IPA</th>
+  </tr></thead>
+  <tbody>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">asaki</td>
+    <td>dog</td>
+    <td>
+      
+        <a href="index.html?q=a" lang="x-paw">a</a>
+        <span class="badge badge-class">VL</span>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small>uh/ah <span class="pitch-unmarked">(pitch not marked)</span></small></td>
+    <td class="ipa" lang="x-paw"><small>[a/aa]</small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">kiri, pus</td>
+    <td>cat</td>
+    <td>
+      
+        <a href="index.html?q=kiri" lang="x-paw">kiri</a>
+        <span class="badge badge-class">N</span>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small><span class="pitch-high">KIH</span>-dih</small></td>
+    <td class="ipa" lang="x-paw"><small>[kí-rɪ]</small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">arusa</td>
+    <td>horse</td>
+    <td>
+      
+        <a href="index.html?q=a" lang="x-paw">a</a>
+        <span class="badge badge-class">VL</span>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small>uh/ah <span class="pitch-unmarked">(pitch not marked)</span></small></td>
+    <td class="ipa" lang="x-paw"><small>[a/aa]</small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">akse</td>
+    <td>cow</td>
+    <td>
+      
+        <a href="index.html?q=a" lang="x-paw">a</a>
+        <span class="badge badge-class">VL</span>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small>uh/ah <span class="pitch-unmarked">(pitch not marked)</span></small></td>
+    <td class="ipa" lang="x-paw"><small>[a/aa]</small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">taraha•taka</td>
+    <td>"white (man 's) buffalo ", cow</td>
+    <td>
+      
+        <a href="index.html?q=ta" lang="x-paw">ta</a>
+        <span class="badge badge-class">VL</span>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(pitch not marked)</span></small></td>
+    <td class="ipa" lang="x-paw"><small>[•tə•]</small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">kuhku</td>
+    <td>pig</td>
+    <td>
+      
+        <a href="index.html?q=kuhku" lang="x-paw">kuhku</a>
+        <span class="badge badge-class">N</span>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small>kooh-koo <span class="pitch-unmarked">(pitch not marked)</span></small></td>
+    <td class="ipa" lang="x-paw"><small>[kʊh-kʊ]</small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">akaru'</td>
+    <td>house</td>
+    <td>
+      
+        <a href="index.html?q=aka'" lang="x-paw">aka'</a>
+        <span class="badge badge-class">N</span>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small><span class="pitch-high">UH</span>-kuh'</small></td>
+    <td class="ipa" lang="x-paw"><small>[à-kəʔ]</small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">akar•raratau '</td>
+    <td>mud lodge</td>
+    <td>
+      
+        <a href="index.html?q=aka'" lang="x-paw">aka'</a>
+        <span class="badge badge-class">N</span>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small><span class="pitch-high">UH</span>-kuh'</small></td>
+    <td class="ipa" lang="x-paw"><small>[à-kəʔ]</small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">akar•ratsape</td>
+    <td>teepee</td>
+    <td>
+      
+        <a href="index.html?q=aka'" lang="x-paw">aka'</a>
+        <span class="badge badge-class">N</span>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small><span class="pitch-high">UH</span>-kuh'</small></td>
+    <td class="ipa" lang="x-paw"><small>[à-kəʔ]</small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">akah•tahurus</td>
+    <td>round house</td>
+    <td>
+      
+        <a href="index.html?q=aka'" lang="x-paw">aka'</a>
+        <span class="badge badge-class">N</span>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small><span class="pitch-high">UH</span>-kuh'</small></td>
+    <td class="ipa" lang="x-paw"><small>[à-kəʔ]</small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">ti .raspe '</td>
+    <td>he's looking for it</td>
+    <td>
+      
+        <small class="lesson-nolink">not in Parks dictionary</small>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">ti•huras</td>
+    <td>he has found it</td>
+    <td>
+      
+        <small class="lesson-nolink">not in Parks dictionary</small>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">t'erit</td>
+    <td>he is standing</td>
+    <td>
+      
+        <small class="lesson-nolink">not in Parks dictionary</small>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">tuks•arit</td>
+    <td>he was standing</td>
+    <td>
+      
+        <small class="lesson-nolink">not in Parks dictionary</small>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">ti•hatuh•kaarit</td>
+    <td>he is standing around in the road</td>
+    <td>
+      
+        <small class="lesson-nolink">not in Parks dictionary</small>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">tuks•hatuh•kaarit</td>
+    <td>he was standing around in the road</td>
+    <td>
+      
+        <small class="lesson-nolink">not in Parks dictionary</small>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">ti .kaku'</td>
+    <td>he's inside, was inside</td>
+    <td>
+      
+        <small class="lesson-nolink">not in Parks dictionary</small>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">ti•ukah•kawari '</td>
+    <td>he is or has been walking around outside</td>
+    <td>
+      
+        <small class="lesson-nolink">not in Parks dictionary</small>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">ti .ukah .kaari t</td>
+    <td>he is or has been standing around outside</td>
+    <td>
+      
+        <small class="lesson-nolink">not in Parks dictionary</small>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
+  </tr>
+  
+  </tbody>
+</table>
+</div>
+
+</section>
+
+
+
+<section>
+  <h4>Dialogues</h4>
+  
+  <article class="lesson-dialogue">
+    
+    <div class="lesson-dialogue__line">
+      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Kirike ras•taspe'?</span>
+      <span class="lesson-dialogue__eng">What are you looking for?</span>
+    </div>
+    
+    <div class="lesson-dialogue__line">
+      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Tah•raspe ' asaki.</span>
+      <span class="lesson-dialogue__eng">I'm looking for my dog.</span>
+    </div>
+    
+  </article>
+  
+  <article class="lesson-dialogue">
+    
+    <div class="lesson-dialogue__line">
+      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Ka ras•huras asaki?</span>
+      <span class="lesson-dialogue__eng">Have you found the dog?</span>
+    </div>
+    
+    <div class="lesson-dialogue__line">
+      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Ahu', tat .huras asaki.</span>
+      <span class="lesson-dialogue__eng">Yes, I found the dog.</span>
+    </div>
+    
+  </article>
+  
+  <article class="lesson-dialogue">
+    
+    <div class="lesson-dialogue__line">
+      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Kiru ruks•ku'?</span>
+      <span class="lesson-dialogue__eng">Where was it (sitting)?</span>
+    </div>
+    
+    <div class="lesson-dialogue__line">
+      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Ru tuks•kaku'.</span>
+      <span class="lesson-dialogue__eng">It was in the house.</span>
+    </div>
+    
+  </article>
+  
+  <p><small>Dialogue lines are shown in the Blue Book's practical spelling,
+  exactly as printed.</small></p>
+</section>
+
+
+
+<section>
+  <h4>Additional Words</h4>
+  
+<div class="table-scroll">
+<table class="lesson-vocab">
+  <thead><tr>
+    <th>Blue Book</th><th>English</th><th>Dictionary entry</th><th>Say it</th><th>IPA</th>
+  </tr></thead>
+  <tbody>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">papitsisu '</td>
+    <td>metal, money, a dollar</td>
+    <td>
+      
+        <small class="lesson-nolink">not in Parks dictionary</small>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">papitsis•pahat</td>
+    <td>penny</td>
+    <td>
+      
+        <small class="lesson-nolink">not in Parks dictionary</small>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">paisits</td>
+    <td>nickel</td>
+    <td>
+      
+        <small class="lesson-nolink">not in Parks dictionary</small>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">teresits</td>
+    <td>dime</td>
+    <td>
+      
+        <small class="lesson-nolink">not in Parks dictionary</small>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">tupits</td>
+    <td>quarter</td>
+    <td>
+      
+        <small class="lesson-nolink">not in Parks dictionary</small>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">ikarikat</td>
+    <td>half-dollar</td>
+    <td>
+      
+        <a href="index.html?q=ikarikat" lang="x-paw">ikarikat</a>
+        <span class="badge badge-class">ADJ, N</span>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small><span class="pitch-high">IH</span>-kuh-dih-kuht</small></td>
+    <td class="ipa" lang="x-paw"><small>[í-kə-rɪ-kət]</small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">sikspits</td>
+    <td>75¢</td>
+    <td>
+      
+        <small class="lesson-nolink">not in Parks dictionary</small>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">asku papitsisu '</td>
+    <td>one dollar</td>
+    <td>
+      
+        <a href="index.html?q=asku" lang="x-paw">asku</a>
+        <span class="badge badge-class">NUM</span>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small><span class="pitch-high">UHS</span>-koo</small></td>
+    <td class="ipa" lang="x-paw"><small>[às-kʊ]</small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">tat•ira•ita'</td>
+    <td>I know it</td>
+    <td>
+      
+        <a href="index.html?q=ta" lang="x-paw">ta</a>
+        <span class="badge badge-class">VL</span>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(pitch not marked)</span></small></td>
+    <td class="ipa" lang="x-paw"><small>[•tə•]</small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">kakat•ira ita'</td>
+    <td>I don't know</td>
+    <td>
+      
+        <a href="index.html?q=ka" lang="x-paw">ka</a>
+        <span class="badge badge-class">VL</span>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small>kuh <span class="pitch-unmarked">(pitch not marked)</span></small></td>
+    <td class="ipa" lang="x-paw"><small>[•kə•]</small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">asku•hti .kita</td>
+    <td>eleven</td>
+    <td>
+      
+        <a href="index.html?q=asku" lang="x-paw">asku</a>
+        <span class="badge badge-class">NUM</span>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small><span class="pitch-high">UHS</span>-koo</small></td>
+    <td class="ipa" lang="x-paw"><small>[às-kʊ]</small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">pitkus•htis•iri '</td>
+    <td>twelve</td>
+    <td>
+      
+        <a href="index.html?q=pitku" lang="x-paw">pitku</a>
+        <span class="badge badge-class">NUM</span>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small><span class="pitch-high">PIHT</span>-koo</small></td>
+    <td class="ipa" lang="x-paw"><small>[pít-kʊ]</small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">tawi•rIhuks•iri '</td>
+    <td>thirteen</td>
+    <td>
+      
+        <a href="index.html?q=ta" lang="x-paw">ta</a>
+        <span class="badge badge-class">VL</span>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(pitch not marked)</span></small></td>
+    <td class="ipa" lang="x-paw"><small>[•tə•]</small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">raku•kita</td>
+    <td>fourteen</td>
+    <td>
+      
+        <small class="lesson-nolink">not in Parks dictionary</small>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">sihuks•tarti .kita</td>
+    <td>fifteen</td>
+    <td>
+      
+        <small class="lesson-nolink">not in Parks dictionary</small>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">ksur awiu'</td>
+    <td>sixteen</td>
+    <td>
+      
+        <a href="index.html?q=ksurawi'u'" lang="x-paw">ksurawi'u'</a>
+        <span class="badge badge-class">NUM</span>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small>ksoo-duh-wih-'oo' <span class="pitch-unmarked">(pitch not marked)</span></small></td>
+    <td class="ipa" lang="x-paw"><small>[ksʊ-rə-wi-ʔuʔ]</small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">tawit•ka•ke'</td>
+    <td>seventeen</td>
+    <td>
+      
+        <a href="index.html?q=ta" lang="x-paw">ta</a>
+        <span class="badge badge-class">VL</span>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(pitch not marked)</span></small></td>
+    <td class="ipa" lang="x-paw"><small>[•tə•]</small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">pitkti .ka•ke'</td>
+    <td>eighteen</td>
+    <td>
+      
+        <small class="lesson-nolink">not in Parks dictionary</small>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">askti .ka•ke'</td>
+    <td>nineteen</td>
+    <td>
+      
+        <a href="index.html?q=a" lang="x-paw">a</a>
+        <span class="badge badge-class">VL</span>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small>uh/ah <span class="pitch-unmarked">(pitch not marked)</span></small></td>
+    <td class="ipa" lang="x-paw"><small>[a/aa]</small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">pitau '</td>
+    <td>twenty</td>
+    <td>
+      
+        <small class="lesson-nolink">not in Parks dictionary</small>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">pitati .asku</td>
+    <td>twenty-one</td>
+    <td>
+      
+        <small class="lesson-nolink">not in Parks dictionary</small>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">tsktis•kakusu'</td>
+    <td>chair</td>
+    <td>
+      
+        <small class="lesson-nolink">not in Parks dictionary</small>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">ru•kat•awi•riku</td>
+    <td>window, mirror</td>
+    <td>
+      
+        <small class="lesson-nolink">not in Parks dictionary</small>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">reka .kusu'</td>
+    <td>door</td>
+    <td>
+      
+        <small class="lesson-nolink">not in Parks dictionary</small>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">tuks•kata•ku hiri</td>
+    <td>It was (sitting) behind the door</td>
+    <td>
+      
+        <small class="lesson-nolink">not in Parks dictionary</small>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
+  </tr>
+  
+  <tr>
+    <td lang="x-paw" class="font-serif">ra•reka .kusu'</td>
+    <td>door</td>
+    <td>
+      
+        <small class="lesson-nolink">not in Parks dictionary</small>
+      
+    </td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
+  </tr>
+  
+  </tbody>
+</table>
+</div>
+
+</section>
+
+
+
+<section>
+  <h4>Useful Phrases</h4>
+  <ul class="lesson-phrases">
+    
+    <li><span class="font-serif" lang="x-paw">Tari'.</span>
+        — Here it is (holding it).</li>
+    
+    <li><span class="font-serif" lang="x-paw">Ka?</span>
+        — What?</li>
+    
+    <li><span class="font-serif" lang="x-paw">Ka ru rut•tsirau '?</span>
+        — Is that right?</li>
+    
+    <li><span class="font-serif" lang="x-paw">Ru tut•tsirau ' .</span>
+        — That's right; Alright.</li>
+    
+    <li><span class="font-serif" lang="x-paw">Tat•atsiks•tehu'.</span>
+        — Thank you.</li>
+    
+  </ul>
+</section>
+
+
+
+<section>
+  <h4>Grammar &amp; Notes</h4>
+  
+  <details class="lesson-note" open>
+    <summary><strong>Past Tense</strong></summary>
+    <p>There is one marker in Pawnee which refers to time. This is the marker +uks, which follows the person marker in the introducer and means in a time past. We have seen that +uks also marks the command form, but in that usage, the introducer has no marker of mode. Suks .atku. Tasuks•atku. Listen! You listened. The u in +uks is a strong vowel which causes the a in modal marker +ra and i in modal marker ti + to drop out. question mode person past verb kiru +ra +0 +uks +ku kiru +ra +uks +ku (a drops out) Niru ruks•ku? Where was it? Pawnee does not use a letter or root to refer to the third person. It's the fact that no person marker is present which means third person. The symbol is used to denote the absence of a marker in the interpretation. tat .kiikat tat. =ta + t tas .kikat tas. = to + s ti .kikat ti. = ti + I am crying first person you are crying second person he, she, it is crying third person Notice also that the modal marker has a different vowel for third person. mode person past root root ti +1 +uks +ka +ku' ti +uks +ka +ku' Tuks .kaku '. He was in the house.</p>
+  </details>
+  
+  <details class="lesson-note" >
+    <summary><strong>Nouns In A Verb Phrase</strong></summary>
+    <p>In Pawnee, a noun can often be included inside the verb phrase, as we saw in Lesson 3. That was a case of subject nouns being included. Nouns of location can also be included. First they are reduced to a root form and then inserted before the verb. 3g hatur•raru' road ti•kaarit he is standing in it ti +hatur +ka +arit r becomes h before k +ka + "in" ti +hatuh +ka +arit ti•hattih•kaarit he's standing in the road</p>
+  </details>
+  
+  <details class="lesson-note" >
+    <summary><strong>Verbs</strong></summary>
+    <p>tat•ira•ita' I know it kakat•ira ita' I don't know</p>
+  </details>
+  
+  <details class="lesson-note" >
+    <summary><strong>More Numbers</strong></summary>
+    <p>asku•hti .kita eleven (one on top) pitkus•htis•iri '	twelve tawi•rIhuks•iri '	thirteen raku•kita sihuks•tarti .kita ksur awiu' (iks +ur +awiu') tawit•ka•ke' pitkti .ka•ke' askti .ka•ke' pitau ' pitati .asku fourteen fifteen sixteen seventeen eighteen nineteen twenty twenty-one</p>
+  </details>
+  
+  <details class="lesson-note" >
+    <summary><strong>Useful Phrases</strong></summary>
+    <p>1. Tari'. 2. Ka? 3. Ka ru rut•tsirau '? 4. Ru tut•tsirau ' . 5. Tat•atsiks•tehu'. Here it is (holding it). What? Is that right? That's right; Alright. Thank you.</p>
+  </details>
+  
+  <details class="lesson-note" >
+    <summary><strong>Objects In A House</strong></summary>
+    <p>tsktis•kakusu' u•kaat•awi•eriku (SB) ru•kat•awi•riku (SK) reka .kusu' tuks•kata•ku hiri ra•reka .kusu' chair window, mirror, something to look through window, mirror door It was (sitting) behind the door</p>
+  </details>
+  
+</section>
+
+
+
+
+
+<section id="exercises">
+  <h4>Exercises</h4>
+  <p><small>All exercise material is verbatim from this lesson — nothing is
+  machine-generated. Reload the page for a fresh shuffle.</small></p>
+
+  
+  <details class="lesson-note" open>
+    <summary><strong>Matching</strong> — click a Pawnee word, then its meaning</summary>
+    <div class="ex-matching" id="ex-matching">
+      <div class="ex-col" id="ex-match-skiri"></div>
+      <div class="ex-col" id="ex-match-eng"></div>
+    </div>
+    <p class="ex-status" id="ex-match-status"></p>
+  </details>
+  
+
+  
+  <details class="lesson-note">
+    <summary><strong>Fill in the blank</strong> — complete the dialogue line</summary>
+    <div id="ex-blanks"></div>
+  </details>
+  
+
+  
+  <details class="lesson-note">
+    <summary><strong>Say it in Pawnee</strong> — think, then reveal</summary>
+    <div id="ex-say"></div>
+  </details>
+  
+</section>
+
+
+<nav class="lesson-nav lesson-nav--bottom">
+  <a href="lesson-7.html">&larr; Lesson 7</a>
+  <a href="lesson-9.html">Lesson 9 &rarr;</a>
+</nav>
+
+  </main>
+
+  <!-- ====== Footer ====== -->
+  <footer class="container">
+    <small style="color:var(--earth-500);">
+      P&#226;ri Pak&#251;ru' — Skiri Pawnee Language Preservation Project.
+      Data: Douglas R. Parks Dictionary &amp; Blue Book Textbook.
+      Built with respect for the Pawnee Nation.
+    </small>
+  </footer>
+
+  <script>
+    function toggleNav(btn) {
+      var nav = btn.closest('nav');
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('nav-open');
+    }
+  </script>
+  <script src="static/js/search.js"></script>
+  
+<script>
+const EX = {"blanks": [{"answer": "asaki", "blanked": "Tah\u2022raspe \u0027 _____.", "english": "I\u0027m looking for my dog.", "options": ["taraha\u2022taka", "asaki", "kuhku", "ti\u2022huras"]}, {"answer": "asaki", "blanked": "Ka ras\u2022huras _____?", "english": "Have you found the dog?", "options": ["tuks\u2022hatuh\u2022kaarit", "reka", "kiri", "asaki"]}, {"answer": "asaki", "blanked": "Ahu\u0027, tat .huras _____.", "english": "Yes, I found the dog.", "options": ["sihuks\u2022tarti", "akar\u2022ratsape", "asaki", "arusa"]}], "matching": [{"english": "door", "skiri": "reka .kusu\u0027"}, {"english": "It was (sitting) behind the door", "skiri": "tuks\u2022kata\u2022ku hiri"}, {"english": "nickel", "skiri": "paisits"}, {"english": "eleven", "skiri": "asku\u2022hti .kita"}, {"english": "round house", "skiri": "akah\u2022tahurus"}, {"english": "he is standing", "skiri": "t\u0027erit"}, {"english": "fifteen", "skiri": "sihuks\u2022tarti .kita"}, {"english": "he is standing around in the road", "skiri": "ti\u2022hatuh\u2022kaarit"}], "say": [{"english": "Have you found the dog?", "skiri": "Ka ras\u2022huras asaki?"}, {"english": "That\u0027s right; Alright.", "skiri": "Ru tut\u2022tsirau \u0027 ."}, {"english": "Here it is (holding it).", "skiri": "Tari\u0027."}, {"english": "Yes, I found the dog.", "skiri": "Ahu\u0027, tat .huras asaki."}, {"english": "It was in the house.", "skiri": "Ru tuks\u2022kaku\u0027."}]};
+
+// ── Matching ─────────────────────────────────────────────────────
+(function() {
+  if (!EX.matching || !EX.matching.length) return;
+  const skiriCol = document.getElementById('ex-match-skiri');
+  const engCol = document.getElementById('ex-match-eng');
+  const status = document.getElementById('ex-match-status');
+  const pairs = EX.matching;
+  let sel = null, solved = 0;
+
+  function shuffled(a) { return a.map(x => [Math.random(), x]).sort((p,q)=>p[0]-q[0]).map(p=>p[1]); }
+
+  shuffled(pairs.map((p,i)=>({i, text:p.skiri}))).forEach(item => {
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'ex-chip ex-chip--skiri font-serif';
+    b.textContent = item.text; b.dataset.i = item.i;
+    b.onclick = () => {
+      if (b.disabled) return;
+      document.querySelectorAll('.ex-chip--skiri').forEach(x=>x.classList.remove('ex-chip--sel'));
+      b.classList.add('ex-chip--sel'); sel = b;
+    };
+    skiriCol.appendChild(b);
+  });
+  shuffled(pairs.map((p,i)=>({i, text:p.english}))).forEach(item => {
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'ex-chip';
+    b.textContent = item.text; b.dataset.i = item.i;
+    b.onclick = () => {
+      if (b.disabled || !sel) return;
+      if (b.dataset.i === sel.dataset.i) {
+        b.disabled = sel.disabled = true;
+        b.classList.add('ex-chip--ok'); sel.classList.add('ex-chip--ok');
+        sel.classList.remove('ex-chip--sel'); sel = null;
+        solved++;
+        status.textContent = solved === pairs.length ?
+          'All matched — nawa!' : `${solved} / ${pairs.length} matched`;
+      } else {
+        b.classList.add('ex-chip--no');
+        setTimeout(()=>b.classList.remove('ex-chip--no'), 500);
+      }
+    };
+    engCol.appendChild(b);
+  });
+})();
+
+// ── Fill in the blank ────────────────────────────────────────────
+(function() {
+  const host = document.getElementById('ex-blanks');
+  if (!host || !EX.blanks) return;
+  EX.blanks.forEach(q => {
+    const div = document.createElement('div');
+    div.className = 'ex-blank';
+    div.innerHTML = `
+      <div class="ex-blank__line font-serif" lang="x-paw">${q.blanked}</div>
+      <div class="ex-blank__eng">${q.english}</div>
+      <div class="ex-blank__opts"></div>`;
+    const opts = div.querySelector('.ex-blank__opts');
+    q.options.forEach(o => {
+      const b = document.createElement('button');
+      b.type = 'button'; b.className = 'ex-chip'; b.textContent = o;
+      b.onclick = () => {
+        if (div.dataset.done) return;
+        if (o === q.answer) {
+          div.dataset.done = '1';
+          b.classList.add('ex-chip--ok');
+          div.querySelector('.ex-blank__line').innerHTML =
+            div.querySelector('.ex-blank__line').innerHTML.replace('_____',
+              `<strong>${q.answer}</strong>`);
+        } else {
+          b.classList.add('ex-chip--no');
+          b.disabled = true;
+        }
+      };
+      opts.appendChild(b);
+    });
+    host.appendChild(div);
+  });
+})();
+
+// ── Say it in Pawnee ─────────────────────────────────────────────
+(function() {
+  const host = document.getElementById('ex-say');
+  if (!host || !EX.say) return;
+  EX.say.forEach(q => {
+    const div = document.createElement('div');
+    div.className = 'ex-say';
+    div.innerHTML = `
+      <span class="ex-say__eng">&ldquo;${q.english}&rdquo;</span>
+      <button type="button" class="ex-chip">reveal</button>
+      <span class="ex-say__skiri font-serif" lang="x-paw" hidden>${q.skiri}</span>`;
+    const btn = div.querySelector('button');
+    btn.onclick = () => {
+      div.querySelector('.ex-say__skiri').hidden = false;
+      btn.remove();
+    };
+    host.appendChild(div);
+  });
+})();
+</script>
+<style>
+/* ── Exercises ────────────────────────────────────────────────── */
+.ex-matching { display: flex; gap: 1.5rem; }
+.ex-col { display: flex; flex-direction: column; gap: 0.4rem; flex: 1; }
+.ex-chip {
+  padding: 0.35rem 0.7rem;
+  border: 2px solid var(--earth-200, #e0d5c4);
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-align: left;
+  width: auto;
+  margin: 0;
+  color: inherit;
+}
+.ex-chip--sel { border-color: var(--sky-500, #4A90C4); }
+.ex-chip--ok { border-color: var(--sage-400, #6FAE78); background: var(--sage-50, #EFF6F0); opacity: 0.75; }
+.ex-chip--no { border-color: var(--clay-400, #C4674A); animation: exshake 0.3s; }
+@keyframes exshake { 25% {transform: translateX(-3px);} 75% {transform: translateX(3px);} }
+.ex-status { font-weight: 600; color: var(--sage-600, #4A7A52); }
+.ex-blank { margin-bottom: 1rem; }
+.ex-blank__line { font-size: 1.1rem; font-weight: 600; }
+.ex-blank__eng { font-style: italic; color: var(--earth-500, #8a7560); font-size: 0.9rem; margin-bottom: 0.35rem; }
+.ex-blank__opts { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.ex-say { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.6rem; flex-wrap: wrap; }
+.ex-say__skiri { font-weight: 600; font-size: 1.05rem; }
+</style>
+<style>
+.lesson-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+.lesson-nav span a { margin-left: 1rem; }
+.lesson-nav--bottom { margin-top: 2rem; }
+.table-scroll { overflow-x: auto; }
+.lesson-vocab td, .lesson-vocab th { padding: 0.35rem 0.6rem; }
+.lesson-nolink { color: var(--earth-400, #a99a85); font-style: italic; }
+.lesson-dialogue {
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  border-left: 3px solid var(--sky-300, #89BDE0);
+  background: var(--sky-50, #EDF6FD);
+  border-radius: 0 8px 8px 0;
+}
+.lesson-dialogue__line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  margin-bottom: 0.3rem;
+}
+.lesson-dialogue__skiri { font-weight: 600; min-width: 14rem; }
+.lesson-dialogue__eng { color: var(--earth-600, #6b5d4a); font-style: italic; }
+.lesson-phrases li { margin-bottom: 0.3rem; }
+.lesson-note {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid var(--earth-200, #e0d5c4);
+  border-radius: 8px;
+  background: var(--earth-50, #faf7f2);
+}
+.lesson-note summary { cursor: pointer; }
+.lesson-note p { margin: 0.5rem 0 0.25rem; font-size: 0.92rem; }
+.lesson-practice {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 0.75rem;
+}
+.lesson-practice__card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.75rem 0.9rem;
+  border: 2px solid var(--sage-200, #B8D8BC);
+  border-radius: 8px;
+  background: var(--sage-50, #EFF6F0);
+  text-decoration: none;
+  color: inherit;
+}
+.lesson-practice__card:hover {
+  border-color: var(--sage-400, #6FAE78);
+  text-decoration: none;
+}
+</style>
+
+</body>
+</html>

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lessons — Skiri Pawnee Dictionary</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;1,8..60,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Pico CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+
+  <!-- Custom Pawnee theme -->
+  <link rel="stylesheet" href="static/css/pawnee-theme.css">
+
+  <!-- HTMX (optional for live features) -->
+  <script src="https://unpkg.com/htmx.org@2.0.4"></script>
+
+  <!-- Fuse.js for client-side search -->
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+
+  <!-- Client-side search -->
+  <script src="static/js/search.js"></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <!-- ====== Top Navigation ====== -->
+  <header class="container">
+    <nav class="site-nav">
+      <ul>
+        <li>
+          <a href="index.html" class="contrast" style="text-decoration:none; display:flex; align-items:center; gap:0.75rem;">
+            <span style="
+              width:36px; height:36px; border-radius:50%;
+              background: linear-gradient(135deg, var(--clay-600), var(--gold-400));
+              display:flex; align-items:center; justify-content:center;
+            ">
+              
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2L15.5 8.5L22 12L15.5 15.5L12 22L8.5 15.5L2 12L8.5 8.5L12 2Z" fill="white" opacity="0.9"/>
+              </svg>
+            </span>
+            <span>
+              <strong class="font-serif" style="font-size:1.2rem; letter-spacing:-0.3px;">P&#226;ri Pak&#251;ru'</strong>
+              <br>
+              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Skiri Pawnee Dictionary</small>
+            </span>
+          </a>
+        </li>
+      </ul>
+
+      
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleNav(this)">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html" >Dictionary</a></li>
+        
+        
+        <li><a href="lessons.html" aria-current="page">Lessons</a></li>
+        
+        <li><a href="flashcards.html" >Flashcards</a></li>
+        
+        <li><a href="guide.html" >Syllable Guide</a></li>
+        
+        <li><a href="about.html" >About</a></li>
+
+        
+        
+      </ul>
+    </nav>
+    
+  </header>
+
+  <!-- ====== Main Content ====== -->
+  <main class="container" id="main-content">
+    <div id="live-results"></div>
+    
+<hgroup>
+  <h2>The Blue Book — <span lang="x-paw" class="font-serif">Pari Pakuru'</span></h2>
+  <p>The best place to start learning Skiri Pawnee.</p>
+</hgroup>
+
+<article class="bb-intro">
+  <p><em>Pari Pakuru'</em> ("Blue Book", 1979) was created by the Pawnee
+     Cultural Retention Committee to keep the Skiri language alive — a
+     practical course written by and for the Pawnee community, built around
+     everyday questions and answers. Its 20 lessons are presented here in
+     their original teaching order: each one gives you the vocabulary,
+     dialogues, grammar notes, and exercises exactly as the book teaches
+     them, with every word linked to the Parks Dictionary.</p>
+  <p class="bb-intro__spelling">The Blue Book's spelling differs from the
+     dictionary's — that's normal, and nothing is wrong. Each lesson shows
+     the word in the Blue Book's own spelling <em>and</em> the dictionary
+     spelling, side by side with the simplified pronunciation
+     (<strong>UPPERCASE = high pitch</strong>) and the IPA transcription
+     recorded from fluent speakers. When spellings disagree, trust your ear
+     and the IPA.</p>
+</article>
+
+<div class="lesson-grid">
+  
+  <a class="lesson-card" href="lesson-1.html">
+    <div class="lesson-card__num">1</div>
+    <div class="lesson-card__body">
+      
+      <div class="lesson-card__skiri font-serif" lang="x-paw">KIRIK1 RU'?</div>
+      
+      <div class="lesson-card__title">What Is It?</div>
+      <div class="lesson-card__meta">
+        <span>18 words</span>
+        <span>&middot; 9 dialogue lines</span>
+        <span>&middot; 5 patterns</span>
+      </div>
+    </div>
+  </a>
+  
+  <a class="lesson-card" href="lesson-2.html">
+    <div class="lesson-card__num">2</div>
+    <div class="lesson-card__body">
+      
+      <div class="lesson-card__skiri font-serif" lang="x-paw">KIRIKJ RA•TARAWIS?</div>
+      
+      <div class="lesson-card__title">What Color Is it?</div>
+      <div class="lesson-card__meta">
+        <span>29 words</span>
+        <span>&middot; 25 dialogue lines</span>
+        <span>&middot; 5 patterns</span>
+      </div>
+    </div>
+  </a>
+  
+  <a class="lesson-card" href="lesson-3.html">
+    <div class="lesson-card__num">3</div>
+    <div class="lesson-card__body">
+      
+      <div class="lesson-card__skiri font-serif" lang="x-paw">KIRIKJ RUT•U'?</div>
+      
+      <div class="lesson-card__title">What Does It Look Like?</div>
+      <div class="lesson-card__meta">
+        <span>30 words</span>
+        <span>&middot; 8 dialogue lines</span>
+        <span>&middot; 4 patterns</span>
+      </div>
+    </div>
+  </a>
+  
+  <a class="lesson-card" href="lesson-4.html">
+    <div class="lesson-card__num">4</div>
+    <div class="lesson-card__body">
+      
+      <div class="lesson-card__skiri font-serif" lang="x-paw">KIRIKJ RAS•TA?</div>
+      
+      <div class="lesson-card__title">What Do You Have?</div>
+      <div class="lesson-card__meta">
+        <span>23 words</span>
+        <span>&middot; 6 dialogue lines</span>
+        <span>&middot; 1 pattern</span>
+      </div>
+    </div>
+  </a>
+  
+  <a class="lesson-card" href="lesson-5.html">
+    <div class="lesson-card__num">5</div>
+    <div class="lesson-card__body">
+      
+      <div class="lesson-card__skiri font-serif" lang="x-paw">TARIKTAU'</div>
+      
+      <div class="lesson-card__title">The Body</div>
+      <div class="lesson-card__meta">
+        <span>17 words</span>
+        <span>&middot; 7 dialogue lines</span>
+        <span>&middot; 2 patterns</span>
+      </div>
+    </div>
+  </a>
+  
+  <a class="lesson-card" href="lesson-6.html">
+    <div class="lesson-card__num">6</div>
+    <div class="lesson-card__body">
+      
+      <div class="lesson-card__title">Words to substitute for pita in the dialogues.</div>
+      <div class="lesson-card__meta">
+        <span>21 words</span>
+        <span>&middot; 4 dialogue lines</span>
+        <span>&middot; 4 patterns</span>
+      </div>
+    </div>
+  </a>
+  
+  <a class="lesson-card" href="lesson-7.html">
+    <div class="lesson-card__num">7</div>
+    <div class="lesson-card__body">
+      
+      <div class="lesson-card__skiri font-serif" lang="x-paw">TAR1 RU'?</div>
+      
+      <div class="lesson-card__title">Who Is It?</div>
+      <div class="lesson-card__meta">
+        <span>35 words</span>
+        <span>&middot; 6 dialogue lines</span>
+        <span>&middot; 1 pattern</span>
+      </div>
+    </div>
+  </a>
+  
+  <a class="lesson-card" href="lesson-8.html">
+    <div class="lesson-card__num">8</div>
+    <div class="lesson-card__body">
+      
+      <div class="lesson-card__skiri font-serif" lang="x-paw">KI Rid RA. KU?</div>
+      
+      <div class="lesson-card__title">Lesson 8</div>
+      <div class="lesson-card__meta">
+        <span>45 words</span>
+        <span>&middot; 6 dialogue lines</span>
+        <span>&middot; 4 patterns</span>
+      </div>
+    </div>
+  </a>
+  
+  <a class="lesson-card" href="lesson-9.html">
+    <div class="lesson-card__num">9</div>
+    <div class="lesson-card__body">
+      
+      <div class="lesson-card__skiri font-serif" lang="x-paw">KIRK RA•'AT</div>
+      
+      <div class="lesson-card__title">Where Has It Gone?</div>
+      <div class="lesson-card__meta">
+        <span>29 words</span>
+        <span>&middot; 8 dialogue lines</span>
+        <span>&middot; 3 patterns</span>
+      </div>
+    </div>
+  </a>
+  
+  <a class="lesson-card" href="lesson-10.html">
+    <div class="lesson-card__num">10</div>
+    <div class="lesson-card__body">
+      
+      <div class="lesson-card__skiri font-serif" lang="x-paw">KIRIK1 RUH•RA'?</div>
+      
+      <div class="lesson-card__title">What Is He Using?</div>
+      <div class="lesson-card__meta">
+        <span>31 words</span>
+        <span>&middot; 8 dialogue lines</span>
+        <span>&middot; 1 pattern</span>
+      </div>
+    </div>
+  </a>
+  
+  <a class="lesson-card" href="lesson-11.html">
+    <div class="lesson-card__num">11</div>
+    <div class="lesson-card__body">
+      
+      <div class="lesson-card__skiri font-serif" lang="x-paw">KA RIiH•RATSAUS?</div>
+      
+      <div class="lesson-card__title">Are You Hungry?</div>
+      <div class="lesson-card__meta">
+        <span>32 words</span>
+        <span>&middot; 15 dialogue lines</span>
+        <span>&middot; 2 patterns</span>
+      </div>
+    </div>
+  </a>
+  
+  <a class="lesson-card" href="lesson-12.html">
+    <div class="lesson-card__num">12</div>
+    <div class="lesson-card__body">
+      
+      <div class="lesson-card__skiri font-serif" lang="x-paw">SUKS • U.</div>
+      
+      <div class="lesson-card__title">Give It To Him.</div>
+      <div class="lesson-card__meta">
+        <span>21 words</span>
+        <span>&middot; 4 dialogue lines</span>
+        <span>&middot; 1 pattern</span>
+      </div>
+    </div>
+  </a>
+  
+  <a class="lesson-card" href="lesson-13.html">
+    <div class="lesson-card__num">13</div>
+    <div class="lesson-card__body">
+      
+      <div class="lesson-card__skiri font-serif" lang="x-paw">KIRU RATSUKS•AT?</div>
+      
+      <div class="lesson-card__title">Where Did You Go?</div>
+      <div class="lesson-card__meta">
+        <span>33 words</span>
+        <span>&middot; 11 dialogue lines</span>
+        <span>&middot; 3 patterns</span>
+      </div>
+    </div>
+  </a>
+  
+  <a class="lesson-card" href="lesson-14.html">
+    <div class="lesson-card__num">14</div>
+    <div class="lesson-card__body">
+      
+      <div class="lesson-card__skiri font-serif" lang="x-paw">KA RUSUT•ERIT?</div>
+      
+      <div class="lesson-card__title">Did You See That?</div>
+      <div class="lesson-card__meta">
+        <span>29 words</span>
+        <span>&middot; 7 dialogue lines</span>
+        <span>&middot; 2 patterns</span>
+      </div>
+    </div>
+  </a>
+  
+  <a class="lesson-card" href="lesson-15.html">
+    <div class="lesson-card__num">15</div>
+    <div class="lesson-card__body">
+      
+      <div class="lesson-card__skiri font-serif" lang="x-paw">RI•KATIHARU'</div>
+      
+      <div class="lesson-card__title">The Year</div>
+      <div class="lesson-card__meta">
+        <span>26 words</span>
+        <span>&middot; 6 dialogue lines</span>
+        <span>&middot; 1 pattern</span>
+      </div>
+    </div>
+  </a>
+  
+  <a class="lesson-card" href="lesson-16.html">
+    <div class="lesson-card__num">16</div>
+    <div class="lesson-card__body">
+      
+      <div class="lesson-card__skiri font-serif" lang="x-paw">KITSKI WE RU'</div>
+      
+      <div class="lesson-card__title">What Time Is It?</div>
+      <div class="lesson-card__meta">
+        <span>18 words</span>
+        <span>&middot; 5 dialogue lines</span>
+        <span>&middot; 1 pattern</span>
+      </div>
+    </div>
+  </a>
+  
+  <a class="lesson-card" href="lesson-17.html">
+    <div class="lesson-card__num">17</div>
+    <div class="lesson-card__body">
+      
+      <div class="lesson-card__skiri font-serif" lang="x-paw">TIRUKS • TSAK • ARIKI</div>
+      
+      <div class="lesson-card__title">Verbs to substitute for tatutsiks•a•wahri' in the dialogues.</div>
+      <div class="lesson-card__meta">
+        <span>15 words</span>
+        <span>&middot; 8 dialogue lines</span>
+        <span>&middot; 1 pattern</span>
+      </div>
+    </div>
+  </a>
+  
+  <a class="lesson-card" href="lesson-18.html">
+    <div class="lesson-card__num">18</div>
+    <div class="lesson-card__body">
+      
+      <div class="lesson-card__skiri font-serif" lang="x-paw">KIRIKI RASUTSIKS•ARI'?</div>
+      
+      <div class="lesson-card__title">What Have You Been Doing?</div>
+      <div class="lesson-card__meta">
+        <span>13 words</span>
+        <span>&middot; 5 dialogue lines</span>
+        <span>&middot; 3 patterns</span>
+      </div>
+    </div>
+  </a>
+  
+  <a class="lesson-card" href="lesson-19.html">
+    <div class="lesson-card__num">19</div>
+    <div class="lesson-card__body">
+      
+      <div class="lesson-card__skiri font-serif" lang="x-paw">T'ARAWI•A</div>
+      
+      <div class="lesson-card__title">The Future</div>
+      <div class="lesson-card__meta">
+        <span>53 words</span>
+        <span>&middot; 4 dialogue lines</span>
+        <span>&middot; 1 pattern</span>
+      </div>
+    </div>
+  </a>
+  
+  <a class="lesson-card" href="lesson-20.html">
+    <div class="lesson-card__num">20</div>
+    <div class="lesson-card__body">
+      
+      <div class="lesson-card__title">I Want To Speak Pawnee.</div>
+      <div class="lesson-card__meta">
+        <span>13 words</span>
+        <span>&middot; 4 dialogue lines</span>
+        <span>&middot; 2 patterns</span>
+      </div>
+    </div>
+  </a>
+  
+</div>
+
+<p><small>Source: <em>Pari Pakuru'</em> pp. 29–130. Lesson text was parsed
+directly from the book; Skiri titles are shown as printed (some carry OCR
+artifacts from the source scan).</small></p>
+
+  </main>
+
+  <!-- ====== Footer ====== -->
+  <footer class="container">
+    <small style="color:var(--earth-500);">
+      P&#226;ri Pak&#251;ru' — Skiri Pawnee Language Preservation Project.
+      Data: Douglas R. Parks Dictionary &amp; Blue Book Textbook.
+      Built with respect for the Pawnee Nation.
+    </small>
+  </footer>
+
+  <script>
+    function toggleNav(btn) {
+      var nav = btn.closest('nav');
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('nav-open');
+    }
+  </script>
+  <script src="static/js/search.js"></script>
+  
+<style>
+.bb-intro {
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  border-left: 3px solid var(--sky-300, #89BDE0);
+  background: var(--sky-50, #EDF6FD);
+  border-radius: 0 8px 8px 0;
+}
+.bb-intro p { margin-bottom: 0.6rem; font-size: 0.95rem; }
+.bb-intro p:last-child { margin-bottom: 0; }
+.lesson-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+.lesson-card {
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+  padding: 0.85rem 1rem;
+  border: 2px solid var(--earth-200, #e0d5c4);
+  border-radius: 8px;
+  background: var(--earth-50, #faf7f2);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.lesson-card:hover {
+  border-color: var(--sky-300, #89BDE0);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  text-decoration: none;
+}
+.lesson-card__num {
+  flex: 0 0 auto;
+  width: 2.4rem;
+  height: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--sky-500, #4A90C4);
+  color: #fff;
+  font-weight: 700;
+}
+.lesson-card__skiri {
+  font-size: 0.85rem;
+  color: var(--earth-500, #8a7560);
+  letter-spacing: 0.02em;
+}
+.lesson-card__title {
+  font-weight: 600;
+  color: var(--earth-800, #3a3126);
+}
+.lesson-card__meta {
+  font-size: 0.78rem;
+  color: var(--earth-500, #8a7560);
+}
+</style>
+
+</body>
+</html>

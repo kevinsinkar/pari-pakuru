@@ -870,7 +870,8 @@ def lesson_detail(number):
     cur.execute("""
         SELECT a.bb_skiri_form, a.bb_english, a.context_type, a.entry_id,
                a.match_type, le.headword, le.normalized_form,
-               le.simplified_pronunciation, le.grammatical_class
+               le.simplified_pronunciation, le.phonetic_form,
+               le.grammatical_class
         FROM blue_book_attestations a
         LEFT JOIN lexical_entries le ON le.entry_id = a.entry_id
         WHERE a.lesson_number = ?

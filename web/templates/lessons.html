@@ -6,11 +6,26 @@
 
 {% block content %}
 <hgroup>
-  <h2>Blue Book Lessons</h2>
-  <p>The 20 lessons of <em>Pari Pakuru'</em> (1979), the Pawnee Cultural
-     Retention Committee's textbook — in their original teaching order, with
-     vocabulary linked to the dictionary and sentence patterns to practice.</p>
+  <h2>The Blue Book — <span lang="x-paw" class="font-serif">Pari Pakuru'</span></h2>
+  <p>The best place to start learning Skiri Pawnee.</p>
 </hgroup>
+
+<article class="bb-intro">
+  <p><em>Pari Pakuru'</em> ("Blue Book", 1979) was created by the Pawnee
+     Cultural Retention Committee to keep the Skiri language alive — a
+     practical course written by and for the Pawnee community, built around
+     everyday questions and answers. Its 20 lessons are presented here in
+     their original teaching order: each one gives you the vocabulary,
+     dialogues, grammar notes, and exercises exactly as the book teaches
+     them, with every word linked to the Parks Dictionary.</p>
+  <p class="bb-intro__spelling">The Blue Book's spelling differs from the
+     dictionary's — that's normal, and nothing is wrong. Each lesson shows
+     the word in the Blue Book's own spelling <em>and</em> the dictionary
+     spelling, side by side with the simplified pronunciation
+     (<strong>UPPERCASE = high pitch</strong>) and the IPA transcription
+     recorded from fluent speakers. When spellings disagree, trust your ear
+     and the IPA.</p>
+</article>
 
 <div class="lesson-grid">
   {% for l in lessons %}
@@ -38,6 +53,15 @@ artifacts from the source scan).</small></p>
 
 {% block scripts %}
 <style>
+.bb-intro {
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  border-left: 3px solid var(--sky-300, #89BDE0);
+  background: var(--sky-50, #EDF6FD);
+  border-radius: 0 8px 8px 0;
+}
+.bb-intro p { margin-bottom: 0.6rem; font-size: 0.95rem; }
+.bb-intro p:last-child { margin-bottom: 0; }
 .lesson-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));

@@ -294,10 +294,15 @@ def _postprocess_for_static(html: str) -> str:
     import re
 
     # Drop nav links to Flask-only routes that have no static equivalent
-    # (flashcards HAS a static equivalent now — keep its nav link)
+    # (flashcards and lessons HAVE static equivalents now — keep those links)
     html = re.sub(
-        r'<li><a href="/(search|browse|lessons|study|sentence-builder|dashboard)"[^>]*>[^<]*</a></li>',
+        r'<li><a href="/(search|browse|study|sentence-builder|dashboard)"[^>]*>[^<]*</a></li>',
         "", html)
+
+    # Drop the spaced-repetition study button (server-side SRS only)
+    html = re.sub(
+        r'<p><a href="/study\?[^"]*"[^>]*>.*?</a></p>',
+        "", html, flags=re.DOTALL)
 
     # Drop the spelling-preference form (posts to a Flask route)
     html = re.sub(
@@ -324,10 +329,20 @@ def _postprocess_for_static(html: str) -> str:
     html = re.sub(r'href="/flashcards/(\d+)"', r'href="flashcard-\1.html"', html)
     html = html.replace('href="/flashcards"', 'href="flashcards.html"')
 
+    # Blue Book lesson pages are generated statically at the site root
+    html = re.sub(r'href="/lessons/(\d+)"', r'href="lesson-\1.html"', html)
+    html = html.replace('href="/lessons"', 'href="lessons.html"')
+
     # No static entry pages exist — drop the card-back "View full entry" link
     html = re.sub(
         r'<a href="/entry/[^"]*" class="fc-back-link">[^<]*</a>',
         "", html)
+
+    # Other entry links (e.g. lesson vocab tables) become client-side searches
+    # on the displayed spelling
+    html = re.sub(
+        r'<a href="/entry/[^"]*"([^>]*)>([^<]+)</a>',
+        r'<a href="index.html?q=\2"\1>\2</a>', html)
 
     # Any remaining Flask-route link (entry pages, flashcards, browse) has no
     # static equivalent yet — fall back to the home page rather than a 404
@@ -515,6 +530,140 @@ def generate_flashcard_pages(db_path: str, output_dir: Path) -> dict:
     return {"weeks": count, "cards": total_cards}
 
 
+def generate_lesson_pages(db_path: str, output_dir: Path) -> dict:
+    """Generate the Blue Book lessons index and one page per lesson.
+
+    Pages are written at the site root (lessons.html, lesson-N.html) so the
+    relative static/ asset paths work. Exercises are rendered by the same
+    client-side JS the Flask app uses; the server-only features (spaced
+    repetition, sentence-builder practice links) are omitted.
+    """
+    print("[*] Generating Blue Book lesson pages...")
+    import json as _json
+    import re
+    from jinja2 import Environment, FileSystemLoader
+    from web.app import _build_exercises
+
+    def format_pitch_filter(pronunciation: str):
+        """Format pitch accent (uppercase syllables)."""
+        if not pronunciation:
+            return ""
+        _UPPER_RUN_RE = re.compile(r"([A-Z][A-Z']+)")
+        has_upper = any(c.isupper() for c in pronunciation)
+        if has_upper:
+            return _UPPER_RUN_RE.sub(r'<span class="pitch-high">\1</span>', pronunciation)
+        return pronunciation + ' <span class="pitch-unmarked">(pitch not marked)</span>'
+
+    template_dir = PROJECT_ROOT / "web" / "templates"
+    env = Environment(loader=FileSystemLoader(str(template_dir)))
+    env.filters['format_pitch'] = format_pitch_filter
+
+    class MockRequest:
+        class Args:
+            def get(self, key, default=""):
+                return default
+        args = Args()
+
+    base_context = {
+        "request": MockRequest(),
+        "spelling_pref": "simplified",
+        "gram_class_labels": GRAM_CLASS_LABELS,
+    }
+
+    db = SkiriWebDictionary(db_path)
+    cur = db.conn.cursor()
+
+    # ---- Lessons index ----
+    cur.execute("SELECT lesson_number, skiri_title, english_title, "
+                "page_start, page_end, dialogues, template_ids "
+                "FROM lessons ORDER BY lesson_number")
+    lesson_rows = cur.fetchall()
+    lessons = []
+    for r in lesson_rows:
+        cur.execute(
+            "SELECT count(*) FROM blue_book_attestations "
+            "WHERE lesson_number = ? "
+            "AND context_type IN ('BASIC_WORDS','ADDITIONAL_WORDS')",
+            (r["lesson_number"],))
+        vocab_count = cur.fetchone()[0]
+        dialogues = _json.loads(r["dialogues"] or "[]")
+        lessons.append({
+            "number": r["lesson_number"],
+            "skiri_title": r["skiri_title"],
+            "english_title": r["english_title"],
+            "pages": f"{r['page_start']}–{r['page_end']}",
+            "vocab_count": vocab_count,
+            "dialogue_count": sum(len(d.get("lines", [])) for d in dialogues),
+            "templates": _json.loads(r["template_ids"] or "[]"),
+        })
+
+    template = env.get_template("lessons.html")
+    html = template.render(lessons=lessons, **base_context)
+    html = _postprocess_for_static(html)
+    with open(output_dir / "lessons.html", "w", encoding="utf-8") as f:
+        f.write(html)
+
+    # ---- One page per lesson ----
+    template = env.get_template("lesson_detail.html")
+    count = 0
+    max_lesson = max(l["number"] for l in lessons) if lessons else 0
+    for r in lesson_rows:
+        number = r["lesson_number"]
+        cur.execute("SELECT * FROM lessons WHERE lesson_number = ?", (number,))
+        row = cur.fetchone()
+
+        cur.execute("""
+            SELECT a.bb_skiri_form, a.bb_english, a.context_type, a.entry_id,
+                   a.match_type, le.headword, le.normalized_form,
+                   le.simplified_pronunciation, le.phonetic_form,
+                   le.grammatical_class
+            FROM blue_book_attestations a
+            LEFT JOIN lexical_entries le ON le.entry_id = a.entry_id
+            WHERE a.lesson_number = ?
+              AND a.context_type IN ('BASIC_WORDS', 'ADDITIONAL_WORDS')
+            ORDER BY a.context_type, a.id
+        """, (number,))
+        vocab = [dict(v) for v in cur.fetchall()]
+        basic = [v for v in vocab if v["context_type"] == "BASIC_WORDS"]
+        additional = [v for v in vocab if v["context_type"] == "ADDITIONAL_WORDS"]
+
+        cur.execute("""
+            SELECT bb_skiri_form, bb_english FROM blue_book_attestations
+            WHERE lesson_number = ? AND context_type = 'PHRASE'
+            ORDER BY id
+        """, (number,))
+        phrases = [dict(p) for p in cur.fetchall()]
+
+        lesson = {
+            "number": row["lesson_number"],
+            "skiri_title": row["skiri_title"],
+            "english_title": row["english_title"],
+            "page_start": row["page_start"],
+            "page_end": row["page_end"],
+            "dialogues": _json.loads(row["dialogues"] or "[]"),
+            "grammar_notes": _json.loads(row["grammar_notes"] or "[]"),
+            "templates": _json.loads(row["template_ids"] or "[]"),
+        }
+        exercises = _build_exercises(vocab, lesson["dialogues"], phrases)
+        prev_n = number - 1 if number > 1 else None
+        next_n = number + 1 if number < max_lesson else None
+
+        html = template.render(
+            lesson=lesson, basic=basic, additional=additional,
+            phrases=phrases, practice=[],  # sentence builder is Flask-only
+            exercises=exercises, prev_n=prev_n, next_n=next_n,
+            **base_context,
+        )
+        html = _postprocess_for_static(html)
+        with open(output_dir / f"lesson-{number}.html", "w", encoding="utf-8") as f:
+            f.write(html)
+        count += 1
+
+    print(f"[OK] Generated lessons.html + {count} lesson pages")
+    db.close()
+    return {"lessons": count}
+
+
 def main():
     parser = argparse.ArgumentParser(description="Build static GitHub Pages site")
     parser.add_argument(
@@ -556,6 +705,7 @@ def main():
         results["static"] = copy_static_assets(output_dir)
         results["pages"] = generate_static_pages(str(db_path), output_dir)
         results["flashcards"] = generate_flashcard_pages(str(db_path), output_dir)
+        results["lessons"] = generate_lesson_pages(str(db_path), output_dir)
     except Exception as e:
         print(f"\n[ERR] Build failed: {e}")
         import traceback
@@ -567,6 +717,7 @@ def main():
     print(f"  Dictionary data: {results['data']['entries']} entries exported")
     print(f"  Static pages: {results['pages']['pages']}")
     print(f"  Flashcard pages: {results['flashcards']['weeks']} weeks ({results['flashcards']['cards']} cards)")
+    print(f"  Blue Book lessons: {results['lessons']['lessons']} pages")
     print(f"  Static files: {results['static']['files']}")
     print(f"\n[DIR] Output: {output_dir}/")
     print(f"[WEB] Ready for GitHub Pages!")

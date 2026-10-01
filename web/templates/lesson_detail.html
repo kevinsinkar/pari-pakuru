@@ -23,7 +23,7 @@
 <div class="table-scroll">
 <table class="lesson-vocab">
   <thead><tr>
-    <th>Blue Book</th><th>English</th><th>Dictionary entry</th><th>Pronunciation</th>
+    <th>Blue Book</th><th>English</th><th>Dictionary entry</th><th>Say it</th><th>IPA</th>
   </tr></thead>
   <tbody>
   {% for v in items %}
@@ -38,13 +38,35 @@
         <small class="lesson-nolink">not in Parks dictionary</small>
       {% endif %}
     </td>
-    <td><small>{{ v.simplified_pronunciation or '' }}</small></td>
+    <td class="lesson-vocab__pron"><small>{{ v.simplified_pronunciation|format_pitch if v.simplified_pronunciation else '' }}</small></td>
+    <td class="ipa" lang="x-paw"><small>{{ v.phonetic_form or '' }}</small></td>
   </tr>
   {% endfor %}
   </tbody>
 </table>
 </div>
 {% endmacro %}
+
+{# Spelling bridge — the same word appears in up to four writing systems #}
+<details class="lesson-note spelling-bridge">
+  <summary><strong>Why do the spellings differ?</strong></summary>
+  <p>The same Pawnee word appears in several writing systems, and they are
+     all telling you the same thing:</p>
+  <ul>
+    <li><strong>Blue Book</strong> — the practical spelling printed in
+        <em>Pari Pakuru'</em> (1979), exactly as the Pawnee Cultural Retention
+        Committee wrote it. Some letters follow English habits (for example
+        <em>d</em> for the soft Pawnee <em>r</em>).</li>
+    <li><strong>Dictionary entry</strong> — the learner spelling from the
+        Parks Dictionary, with a circumflex (&#226;) marking long vowels.</li>
+    <li><strong>Say it</strong> — the simplified pronunciation.
+        <strong>UPPERCASE</strong> syllables carry <strong>high pitch</strong>,
+        which changes meaning in Pawnee.</li>
+    <li><strong>IPA</strong> — the exact scholarly transcription recorded by
+        Douglas Parks from fluent speakers. When the other spellings disagree,
+        the IPA is the authority.</li>
+  </ul>
+</details>
 
 <p><a href="/study?lesson={{ lesson.number }}" role="button" class="outline">
   Study this lesson's words (spaced repetition)</a></p>
