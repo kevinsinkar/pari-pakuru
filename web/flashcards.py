@@ -27,6 +27,9 @@ class FlashCard:
     definition: str = ""
     grammatical_class: Optional[str] = None
     blue_book_attested: bool = False
+    page_number: Optional[int] = None    # Parks Dictionary page (provenance)
+    source: Optional[str] = None         # 'blue_book' for textbook-only entries
+    sense_count: int = 1                 # total senses; card shows sense 1
 
 
 @dataclass
@@ -317,6 +320,9 @@ def _fetch_bb_essentials(
         SELECT le.entry_id, le.headword, le.normalized_form,
                le.simplified_pronunciation, le.phonetic_form,
                le.grammatical_class, le.blue_book_attested,
+               le.page_number, le.source,
+               (SELECT COUNT(*) FROM glosses gc
+                WHERE gc.entry_id = le.entry_id) as sense_count,
                (SELECT definition FROM glosses g
                 WHERE g.entry_id = le.entry_id
                 ORDER BY sense_number LIMIT 1) as definition
@@ -336,8 +342,6 @@ def _fetch_bb_essentials(
         if r["entry_id"] in seen_ids or not r["definition"]:
             continue
         defn = r["definition"]
-        if len(defn) > 120:
-            defn = defn[:117] + "..."
         seen_ids.add(r["entry_id"])
         cards.append(FlashCard(
             entry_id=r["entry_id"],
@@ -348,6 +352,9 @@ def _fetch_bb_essentials(
             definition=defn,
             grammatical_class=r["grammatical_class"],
             blue_book_attested=True,
+            page_number=r["page_number"],
+            source=r["source"],
+            sense_count=r["sense_count"],
         ))
     return cards
 
@@ -362,6 +369,9 @@ def _fetch_greetings(
         SELECT le.entry_id, le.headword, le.normalized_form,
                le.simplified_pronunciation, le.phonetic_form,
                le.grammatical_class, le.blue_book_attested,
+               le.page_number, le.source,
+               (SELECT COUNT(*) FROM glosses gc
+                WHERE gc.entry_id = le.entry_id) as sense_count,
                COALESCE(
                    (SELECT definition FROM glosses g
                     WHERE g.entry_id = le.entry_id
@@ -385,8 +395,6 @@ def _fetch_greetings(
         if r["entry_id"] in seen_ids or not r["definition"]:
             continue
         defn = r["definition"]
-        if len(defn) > 120:
-            defn = defn[:117] + "..."
         seen_ids.add(r["entry_id"])
         cards.append(FlashCard(
             entry_id=r["entry_id"],
@@ -397,6 +405,9 @@ def _fetch_greetings(
             definition=defn,
             grammatical_class=r["grammatical_class"],
             blue_book_attested=bool(r["blue_book_attested"]),
+            page_number=r["page_number"],
+            source=r["source"],
+            sense_count=r["sense_count"],
         ))
 
     # Also pull BB-source function word entries (from import_bb_items.py)
@@ -406,6 +417,12 @@ def _fetch_greetings(
             SELECT le.entry_id, le.headword, le.normalized_form,
                    le.simplified_pronunciation, le.phonetic_form,
                    le.grammatical_class, le.blue_book_attested,
+                   le.page_number, le.source,
+                   (SELECT COUNT(*) FROM glosses gc
+                    WHERE gc.entry_id = le.entry_id) as sense_count,
+               le.page_number, le.source,
+               (SELECT COUNT(*) FROM glosses gc
+                WHERE gc.entry_id = le.entry_id) as sense_count,
                    (SELECT definition FROM glosses g
                     WHERE g.entry_id = le.entry_id
                     ORDER BY sense_number LIMIT 1) as definition
@@ -421,8 +438,6 @@ def _fetch_greetings(
             if r["entry_id"] in seen_ids or not r["definition"]:
                 continue
             defn = r["definition"]
-            if len(defn) > 120:
-                defn = defn[:117] + "..."
             seen_ids.add(r["entry_id"])
             cards.append(FlashCard(
                 entry_id=r["entry_id"],
@@ -433,6 +448,9 @@ def _fetch_greetings(
                 definition=defn,
                 grammatical_class=r["grammatical_class"],
                 blue_book_attested=bool(r["blue_book_attested"]),
+                page_number=r["page_number"],
+                source=r["source"],
+                sense_count=r["sense_count"],
             ))
     return cards
 
@@ -450,6 +468,9 @@ def _fetch_top_entries(
         SELECT le.entry_id, le.headword, le.normalized_form,
                le.simplified_pronunciation, le.phonetic_form,
                le.grammatical_class, le.blue_book_attested,
+               le.page_number, le.source,
+               (SELECT COUNT(*) FROM glosses gc
+                WHERE gc.entry_id = le.entry_id) as sense_count,
                (SELECT definition FROM glosses g
                 WHERE g.entry_id = le.entry_id
                 ORDER BY sense_number LIMIT 1) as definition
@@ -484,11 +505,6 @@ def _fetch_top_entries(
 
         seen_ids.add(r["entry_id"])
 
-        defn = r["definition"]
-        # Skip entries with very long/technical definitions
-        if len(defn) > 120:
-            defn = defn[:117] + "..."
-
         cards.append(FlashCard(
             entry_id=r["entry_id"],
             headword=r["headword"],
@@ -498,6 +514,9 @@ def _fetch_top_entries(
             definition=defn,
             grammatical_class=r["grammatical_class"],
             blue_book_attested=bool(r["blue_book_attested"]),
+            page_number=r["page_number"],
+            source=r["source"],
+            sense_count=r["sense_count"],
         ))
 
     return cards

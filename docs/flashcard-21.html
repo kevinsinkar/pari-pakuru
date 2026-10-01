@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Week 21: People & Society — Skiri Pawnee Dictionary</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;1,8..60,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Pico CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+
+  <!-- Custom Pawnee theme -->
+  <link rel="stylesheet" href="static/css/pawnee-theme.css">
+
+  <!-- HTMX (optional for live features) -->
+  <script src="https://unpkg.com/htmx.org@2.0.4"></script>
+
+  <!-- Fuse.js for client-side search -->
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+
+  <!-- Client-side search -->
+  <script src="static/js/search.js"></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <!-- ====== Top Navigation ====== -->
+  <header class="container">
+    <nav class="site-nav">
+      <ul>
+        <li>
+          <a href="index.html" class="contrast" style="text-decoration:none; display:flex; align-items:center; gap:0.75rem;">
+            <span style="
+              width:36px; height:36px; border-radius:50%;
+              background: linear-gradient(135deg, var(--clay-600), var(--gold-400));
+              display:flex; align-items:center; justify-content:center;
+            ">
+              
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2L15.5 8.5L22 12L15.5 15.5L12 22L8.5 15.5L2 12L8.5 8.5L12 2Z" fill="white" opacity="0.9"/>
+              </svg>
+            </span>
+            <span>
+              <strong class="font-serif" style="font-size:1.2rem; letter-spacing:-0.3px;">P&#226;ri Pak&#251;ru'</strong>
+              <br>
+              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Skiri Pawnee Dictionary</small>
+            </span>
+          </a>
+        </li>
+      </ul>
+
+      
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleNav(this)">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html" >Dictionary</a></li>
+        
+        
+        
+        
+        <li><a href="flashcards.html" >Flashcards</a></li>
+        
+        <li><a href="guide.html" >Syllable Guide</a></li>
+        
+        <li><a href="about.html" >About</a></li>
+
+        
+        
+      </ul>
+    </nav>
+    
+    <form action="index.html" method="get" class="nav-search" role="search">
+      <input
+        type="search"
+        name="q"
+        placeholder="Search Skiri or English..."
+        value=""
+        aria-label="Search the dictionary"
+        autocomplete="off"
+      >
+    </form>
+    
+  </header>
+
+  <!-- ====== Main Content ====== -->
+  <main class="container" id="main-content">
+    <div id="live-results"></div>
+    
+<div class="fc-study-header">
+    <h2>Week 21: People & Society</h2>
+    <p>20 words. Click a card to flip it.</p>
+</div>
+
+<div class="fc-progress">
+    <span id="fc-progress-text">Card 1 of 20</span>
+    <progress id="fc-progress-bar" value="1" max="20"></progress>
+</div>
+
+<div class="fc-arena" id="fc-arena">
+    
+    <div class="fc-card-wrapper" data-index="0">
+        <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
+            <div class="fc-front">
+                <div class="fc-front-word" lang="x-paw">curaki</div>
+                
+                <div class="fc-front-pron">tsooduhkih <span class="pitch-unmarked">(pitch not marked)</span></div>
+                
+                
+                
+                
+                <span class="badge badge-class" title="Noun">N</span>
+                
+                
+                <span class="badge badge-bb">P&acirc;ri Pak&ucirc;ru'</span>
+                
+                <div class="fc-hint">tap to reveal</div>
+            </div>
+            <div class="fc-back">
+                <div class="fc-back-definition">girl</div>
+                
+                <div class="fc-back-word" lang="x-paw">curaki</div>
+                
+                <div class="fc-back-pron">tsooduhkih <span class="pitch-unmarked">(pitch not marked)</span></div>
+                
+                
+                <div class="fc-back-ipa ipa" lang="x-paw">[•tsuurəkɪ•]</div>
+                
+                
+                
+                
+                <div class="fc-back-citation">P&acirc;ri Pak&ucirc;ru' textbook</div>
+                
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="fc-card-wrapper fc-hidden" data-index="1">
+        <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
+            <div class="fc-front">
+                <div class="fc-front-word" lang="x-paw">custit</div>
+                
+                <div class="fc-front-pron">tsoostiht <span class="pitch-unmarked">(pitch not marked)</span></div>
+                
+                
+                
+                
+                <span class="badge badge-class" title="Noun">N</span>
+                
+                
+                <span class="badge badge-bb">P&acirc;ri Pak&ucirc;ru'</span>
+                
+                <div class="fc-hint">tap to reveal</div>
+            </div>
+            <div class="fc-back">
+                <div class="fc-back-definition">elderly woman</div>
+                
+                <div class="fc-back-word" lang="x-paw">custit</div>
+                
+                <div class="fc-back-pron">tsoostiht <span class="pitch-unmarked">(pitch not marked)</span></div>
+                
+                
+                <div class="fc-back-ipa ipa" lang="x-paw">[•tsuustɪt•]</div>
+                
+                
+                
+                
+                <div class="fc-back-citation">P&acirc;ri Pak&ucirc;ru' textbook</div>
+                
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="fc-card-wrapper fc-hidden" data-index="2">
+        <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
+            <div class="fc-front">
+                <div class="fc-front-word" lang="x-paw">hawiuʔ</div>
+                
+                <div class="fc-front-pron">huhwihoo' <span class="pitch-unmarked">(pitch not marked)</span></div>
+                
+                
+                
+                
+                <span class="badge badge-class" title="Noun">N</span>
+                
+                
+                <span class="badge badge-bb">P&acirc;ri Pak&ucirc;ru'</span>
+                
+                <div class="fc-hint">tap to reveal</div>
+            </div>
+            <div class="fc-back">
+                <div class="fc-back-definition">picture</div>
+                
+                <div class="fc-back-word" lang="x-paw">hawiuʔ</div>
+                
+                <div class="fc-back-pron">huhwihoo' <span class="pitch-unmarked">(pitch not marked)</span></div>
+                
+                
+                <div class="fc-back-ipa ipa" lang="x-paw">[•həwɪuuʔ•]</div>
+                
+                
+                
+                
+                <div class="fc-back-citation">P&acirc;ri Pak&ucirc;ru' textbook</div>
+                
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="fc-card-wrapper fc-hidden" data-index="3">
+        <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
+            <div class="fc-front">
+                <div class="fc-front-word" lang="x-paw">curasuʔ</div>
+                
+                <div class="fc-front-pron">tsooduhsoo' <span class="pitch-unmarked">(pitch not marked)</span></div>
+                
+                
+                
+                
+                <span class="badge badge-class" title="Noun">N</span>
+                
+                
+                <span class="badge badge-bb">P&acirc;ri Pak&ucirc;ru'</span>
+                
+                <div class="fc-hint">tap to reveal</div>
+            </div>
+            <div class="fc-back">
+                <div class="fc-back-definition">female adolescent, maiden</div>
+                
+                <div class="fc-back-word" lang="x-paw">curasuʔ</div>
+                
+                <div class="fc-back-pron">tsooduhsoo' <span class="pitch-unmarked">(pitch not marked)</span></div>
+                
+                
+                <div class="fc-back-ipa ipa" lang="x-paw">[•tsuurəsuuʔ•]</div>
+                
+                
+                
+                
+                <div class="fc-back-citation">P&acirc;ri Pak&ucirc;ru' textbook</div>
+                
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="fc-card-wrapper fc-hidden" data-index="4">
+        <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
+            <div class="fc-front">
+                <div class="fc-front-word" lang="x-paw">Astarahi</div>
+                
+                <div class="fc-front-pron">uhs-tuh-<span class="pitch-high">DUH</span>-hih</div>
+                
+                
+                
+                
+                <span class="badge badge-class" title="Noun">N</span>
+                
+                
+                <span class="badge badge-bb">P&acirc;ri Pak&ucirc;ru'</span>
+                
+                <div class="fc-hint">tap to reveal</div>
+            </div>
+            <div class="fc-back">
+                <div class="fc-back-definition">Arikara tribe; (hist.) Arickaree tribe, Ree tribe.</div>
+                
+                <div class="fc-back-senses">sense 1 of 2</div>
+                
+                <div class="fc-back-word" lang="x-paw">Astarahi</div>
+                
+                <div class="fc-back-pron">uhs-tuh-<span class="pitch-high">DUH</span>-hih</div>
+                
+                
+                <div class="fc-back-ipa ipa" lang="x-paw">[əs-tə-rà-hɪ]</div>
+                
+                
+                
+                
+                <div class="fc-back-citation">Parks Dictionary, p. 17</div>
+                
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="fc-card-wrapper fc-hidden" data-index="5">
+        <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
+            <div class="fc-front">
+                <div class="fc-front-word" lang="x-paw">pîraski</div>
+                
+                <div class="fc-front-pron"><span class="pitch-high">PEE</span>-duhs-kih</div>
+                
+                
+                
+                <div class="fc-front-parks" lang="x-paw">piiraski</div>
+                
+                
+                <span class="badge badge-class" title="Noun">N</span>
+                
+                
+                <span class="badge badge-bb">P&acirc;ri Pak&ucirc;ru'</span>
+                
+                <div class="fc-hint">tap to reveal</div>
+            </div>
+            <div class="fc-back">
+                <div class="fc-back-definition">boy.</div>
+                
+                <div class="fc-back-word" lang="x-paw">pîraski</div>
+                
+                <div class="fc-back-pron"><span class="pitch-high">PEE</span>-duhs-kih</div>
+                
+                
+                <div class="fc-back-ipa ipa" lang="x-paw">[pií-rəs-kɪ]</div>
+                
+                
+                
+                <div class="fc-back-parks" lang="x-paw">Parks: piiraski</div>
+                
+                
+                <div class="fc-back-citation">Parks Dictionary, p. 460</div>
+                
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="fc-card-wrapper fc-hidden" data-index="6">
+        <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
+            <div class="fc-front">
+                <div class="fc-front-word" lang="x-paw">hetkataʔku</div>
+                
+                <div class="fc-front-pron">hetkuhtuh'koo <span class="pitch-unmarked">(pitch not marked)</span></div>
+                
+                
+                
+                
+                <span class="badge badge-class" title="Noun">N</span>
+                
+                
+                <span class="badge badge-bb">P&acirc;ri Pak&ucirc;ru'</span>
+                
+                <div class="fc-hint">tap to reveal</div>
+            </div>
+            <div class="fc-back">
+                <div class="fc-back-definition">sheriff, office of the law</div>
+                
+                <div class="fc-back-word" lang="x-paw">hetkataʔku</div>
+                
+                <div class="fc-back-pron">hetkuhtuh'koo <span class="pitch-unmarked">(pitch not marked)</span></div>
+                
+                
+                <div class="fc-back-ipa ipa" lang="x-paw">[•hetkətəʔkuu•]</div>
+                
+                
+                
+                
+                <div class="fc-back-citation">P&acirc;ri Pak&ucirc;ru' textbook</div>
+                
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="fc-card-wrapper fc-hidden" data-index="7">
+        <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
+            <div class="fc-front">
+                <div class="fc-front-word" lang="x-paw">ka</div>
+                
+                <div class="fc-front-pron">kuh <span class="pitch-unmarked">(pitch not marked)</span></div>
+                
+                
+                
+                
+                <span class="badge badge-class" title="VL">VL</span>
+                
+                
+                <span class="badge badge-bb">P&acirc;ri Pak&ucirc;ru'</span>
+                
+                <div class="fc-hint">tap to reveal</div>
+            </div>
+            <div class="fc-back">
+                <div class="fc-back-definition">be outstanding, extraordinary, exceptional, as a warrior who stands out above others.</div>
+                
+                <div class="fc-back-word" lang="x-paw">ka</div>
+                
+                <div class="fc-back-pron">kuh <span class="pitch-unmarked">(pitch not marked)</span></div>
+                
+                
+                <div class="fc-back-ipa ipa" lang="x-paw">[•kə•]</div>
+                
+                
+                
+                
+                <div class="fc-back-citation">Parks Dictionary, p. 418</div>
+                
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="fc-card-wrapper fc-hidden" data-index="8">
+        <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
+            <div class="fc-front">
+                <div class="fc-front-word" lang="x-paw">rat</div>
+                
+                <div class="fc-front-pron">duht <span class="pitch-unmarked">(pitch not marked)</span></div>
+                
+                
+                
+                
+                <span class="badge badge-class" title="Transitive verb">VT</span>
+                
+                
+                <span class="badge badge-bb">P&acirc;ri Pak&ucirc;ru'</span>
+                
+                <div class="fc-hint">tap to reveal</div>
+            </div>
+            <div class="fc-back">
+                <div class="fc-back-definition">take, carry; move.</div>
+                
+                <div class="fc-back-senses">sense 1 of 2</div>
+                
+                <div class="fc-back-word" lang="x-paw">rat</div>
+                
+                <div class="fc-back-pron">duht <span class="pitch-unmarked">(pitch not marked)</span></div>
+                
+                
+                <div class="fc-back-ipa ipa" lang="x-paw">[•rət•]</div>
+                
+                
+                
+                
+                <div class="fc-back-citation">Parks Dictionary, p. 138</div>
+                
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="fc-card-wrapper fc-hidden" data-index="9">
+        <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
+            <div class="fc-front">
+                <div class="fc-front-word" lang="x-paw">tir</div>
+                
+                <div class="fc-front-pron">tihd <span class="pitch-unmarked">(pitch not marked)</span></div>
+                
+                
+                
+                
+                <span class="badge badge-class" title="Intransitive verb">VI</span>
+                
+                
+                <span class="badge badge-bb">P&acirc;ri Pak&ucirc;ru'</span>
+                
+                <div class="fc-hint">tap to reveal</div>
+            </div>
+            <div class="fc-back">
+                <div class="fc-back-definition">be together, always together, as companions.</div>
+                
+                <div class="fc-back-word" lang="x-paw">tir</div>
+                
+                <div class="fc-back-pron">tihd <span class="pitch-unmarked">(pitch not marked)</span></div>
+                
+                
+                <div class="fc-back-ipa ipa" lang="x-paw">[•tɪ(r)•]</div>
+                
+                
+                
+                
+                <div class="fc-back-citation">Parks Dictionary, p. 165</div>
+                
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="fc-card-wrapper fc-hidden" data-index="10">
+        <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
+            <div class="fc-front">
+                <div class="fc-front-word" lang="x-paw">Sahi</div>
+                
+                <div class="fc-front-pron"><span class="pitch-high">SUH</span>-hih</div>
+                
+                
+                
+                
+                <span class="badge badge-class" title="Noun">N</span>
+                
+                
+                <div class="fc-hint">tap to reveal</div>
+            </div>
+            <div class="fc-back">
+                <div class="fc-back-definition">Cheyenne tribe.</div>
+                
+                <div class="fc-back-senses">sense 1 of 2</div>
+                
+                <div class="fc-back-word" lang="x-paw">Sahi</div>
+                
+                <div class="fc-back-pron"><span class="pitch-high">SUH</span>-hih</div>
+                
+                
+                <div class="fc-back-ipa ipa" lang="x-paw">[sà-hɪ]</div>
+                
+                
+                
+                
+                <div class="fc-back-citation">Parks Dictionary, p. 151</div>
+                
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="fc-card-wrapper fc-hidden" data-index="11">
+        <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
+            <div class="fc-front">
+                <div class="fc-front-word" lang="x-paw">râ-</div>
+                
+                <div class="fc-front-pron">dah <span class="pitch-unmarked">(pitch not marked)</span></div>
+                
+                
+                
+                <div class="fc-front-parks" lang="x-paw">raa-</div>
+                
+                
+                <span class="badge badge-class" title="Noun (always possessed)">N-DEP</span>
+                
+                
+                <div class="fc-hint">tap to reveal</div>
+            </div>
+            <div class="fc-back">
+                <div class="fc-back-definition">way, custom, tradition.</div>
+                
+                <div class="fc-back-senses">sense 1 of 3</div>
+                
+                <div class="fc-back-word" lang="x-paw">râ-</div>
+                
+                <div class="fc-back-pron">dah <span class="pitch-unmarked">(pitch not marked)</span></div>
+                
+                
+                <div class="fc-back-ipa ipa" lang="x-paw">[raa•]</div>
+                
+                
+                
+                <div class="fc-back-parks" lang="x-paw">Parks: raa-</div>
+                
+                
+                <div class="fc-back-citation">Parks Dictionary, p. 114</div>
+                
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="fc-card-wrapper fc-hidden" data-index="12">
+        <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
+            <div class="fc-front">
+                <div class="fc-front-word" lang="x-paw">Pâri</div>
+                
+                <div class="fc-front-pron"><span class="pitch-high">PAH</span>-dih</div>
+                
+                
+                
+                <div class="fc-front-parks" lang="x-paw">Paari</div>
+                
+                
+                <span class="badge badge-class" title="Noun">N</span>
+                
+                
+                <div class="fc-hint">tap to reveal</div>
+            </div>
+            <div class="fc-back">
+                <div class="fc-back-definition">Pawnee tribe.</div>
+                
+                <div class="fc-back-senses">sense 1 of 3</div>
+                
+                <div class="fc-back-word" lang="x-paw">Pâri</div>
+                
+                <div class="fc-back-pron"><span class="pitch-high">PAH</span>-dih</div>
+                
+                
+                <div class="fc-back-ipa ipa" lang="x-paw">[paá-rɪ]</div>
+                
+                
+                
+                <div class="fc-back-parks" lang="x-paw">Parks: Paari</div>
+                
+                
+                <div class="fc-back-citation">Parks Dictionary, p. 454</div>
+                
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="fc-card-wrapper fc-hidden" data-index="13">
+        <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
+            <div class="fc-front">
+                <div class="fc-front-word" lang="x-paw">rahwa</div>
+                
+                <div class="fc-front-pron"><span class="pitch-high">DUHH</span>-wuh</div>
+                
+                
+                
+                
+                <span class="badge badge-class" title="Noun">N</span>
+                
+                
+                <div class="fc-hint">tap to reveal</div>
+            </div>
+            <div class="fc-back">
+                <div class="fc-back-definition">captive, prisoner; slave.</div>
+                
+                <div class="fc-back-word" lang="x-paw">rahwa</div>
+                
+                <div class="fc-back-pron"><span class="pitch-high">DUHH</span>-wuh</div>
+                
+                
+                <div class="fc-back-ipa ipa" lang="x-paw">[ràh-wə]</div>
+                
+                
+                
+                
+                <div class="fc-back-citation">Parks Dictionary, p. 133</div>
+                
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="fc-card-wrapper fc-hidden" data-index="14">
+        <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
+            <div class="fc-front">
+                <div class="fc-front-word" lang="x-paw">uhur-</div>
+                
+                <div class="fc-front-pron">oo-hood <span class="pitch-unmarked">(pitch not marked)</span></div>
+                
+                
+                
+                
+                <span class="badge badge-class" title="Noun (always possessed)">N-DEP</span>
+                
+                
+                <div class="fc-hint">tap to reveal</div>
+            </div>
+            <div class="fc-back">
+                <div class="fc-back-definition">way, behavior; image, shape.</div>
+                
+                <div class="fc-back-word" lang="x-paw">uhur-</div>
+                
+                <div class="fc-back-pron">oo-hood <span class="pitch-unmarked">(pitch not marked)</span></div>
+                
+                
+                <div class="fc-back-ipa ipa" lang="x-paw">[ʊ-hʊr•]</div>
+                
+                
+                
+                
+                <div class="fc-back-citation">Parks Dictionary, p. 168</div>
+                
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="fc-card-wrapper fc-hidden" data-index="15">
+        <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
+            <div class="fc-front">
+                <div class="fc-front-word" lang="x-paw">-tât-</div>
+                
+                <div class="fc-front-pron">taht <span class="pitch-unmarked">(pitch not marked)</span></div>
+                
+                
+                
+                <div class="fc-front-parks" lang="x-paw">-taat-</div>
+                
+                
+                <span class="badge badge-class" title="Kinship noun">N-KIN</span>
+                
+                
+                <div class="fc-hint">tap to reveal</div>
+            </div>
+            <div class="fc-back">
+                <div class="fc-back-definition">sister (of a male).</div>
+                
+                <div class="fc-back-word" lang="x-paw">-tât-</div>
+                
+                <div class="fc-back-pron">taht <span class="pitch-unmarked">(pitch not marked)</span></div>
+                
+                
+                <div class="fc-back-ipa ipa" lang="x-paw">[•taat•]</div>
+                
+                
+                
+                <div class="fc-back-parks" lang="x-paw">Parks: -taat-</div>
+                
+                
+                <div class="fc-back-citation">Parks Dictionary, p. 502</div>
+                
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="fc-card-wrapper fc-hidden" data-index="16">
+        <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
+            <div class="fc-front">
+                <div class="fc-front-word" lang="x-paw">-wât-</div>
+                
+                <div class="fc-front-pron">waht <span class="pitch-unmarked">(pitch not marked)</span></div>
+                
+                
+                
+                <div class="fc-front-parks" lang="x-paw">-waat-</div>
+                
+                
+                <span class="badge badge-class" title="Kinship noun">N-KIN</span>
+                
+                
+                <div class="fc-hint">tap to reveal</div>
+            </div>
+            <div class="fc-back">
+                <div class="fc-back-definition">niece, nephew; ref. to a man's sister's children, whom the uncle valued highly.</div>
+                
+                <div class="fc-back-word" lang="x-paw">-wât-</div>
+                
+                <div class="fc-back-pron">waht <span class="pitch-unmarked">(pitch not marked)</span></div>
+                
+                
+                <div class="fc-back-ipa ipa" lang="x-paw">[•waat•]</div>
+                
+                
+                
+                <div class="fc-back-parks" lang="x-paw">Parks: -waat-</div>
+                
+                
+                <div class="fc-back-citation">Parks Dictionary, p. 174</div>
+                
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="fc-card-wrapper fc-hidden" data-index="17">
+        <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
+            <div class="fc-front">
+                <div class="fc-front-word" lang="x-paw">Ckîri</div>
+                
+                <div class="fc-front-pron"><span class="pitch-high">TSKEE</span>-dih</div>
+                
+                
+                
+                <div class="fc-front-parks" lang="x-paw">Ckiiri</div>
+                
+                
+                <span class="badge badge-class" title="Noun">N</span>
+                
+                
+                <div class="fc-hint">tap to reveal</div>
+            </div>
+            <div class="fc-back">
+                <div class="fc-back-definition">Skiri tribe; Loup tribe, Wolf tribe.</div>
+                
+                <div class="fc-back-senses">sense 1 of 2</div>
+                
+                <div class="fc-back-word" lang="x-paw">Ckîri</div>
+                
+                <div class="fc-back-pron"><span class="pitch-high">TSKEE</span>-dih</div>
+                
+                
+                <div class="fc-back-ipa ipa" lang="x-paw">[tskií-rɪ]</div>
+                
+                
+                
+                <div class="fc-back-parks" lang="x-paw">Parks: Ckiiri</div>
+                
+                
+                <div class="fc-back-citation">Parks Dictionary, p. 30</div>
+                
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="fc-card-wrapper fc-hidden" data-index="18">
+        <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
+            <div class="fc-front">
+                <div class="fc-front-word" lang="x-paw">Ctu'u'</div>
+                
+                <div class="fc-front-pron">tst-'oo' <span class="pitch-unmarked">(pitch not marked)</span></div>
+                
+                
+                
+                <div class="fc-front-parks" lang="x-paw">Ctuʔuʔ</div>
+                
+                
+                <span class="badge badge-class" title="Noun">N</span>
+                
+                
+                <div class="fc-hint">tap to reveal</div>
+            </div>
+            <div class="fc-back">
+                <div class="fc-back-definition">Witch Woman, a mythological old woman who has supernatural power.</div>
+                
+                <div class="fc-back-word" lang="x-paw">Ctu'u'</div>
+                
+                <div class="fc-back-pron">tst-'oo' <span class="pitch-unmarked">(pitch not marked)</span></div>
+                
+                
+                <div class="fc-back-ipa ipa" lang="x-paw">[tstː-ʔuʔ]</div>
+                
+                
+                
+                <div class="fc-back-parks" lang="x-paw">Parks: Ctuʔuʔ</div>
+                
+                
+                <div class="fc-back-citation">Parks Dictionary, p. 31</div>
+                
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="fc-card-wrapper fc-hidden" data-index="19">
+        <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
+            <div class="fc-front">
+                <div class="fc-front-word" lang="x-paw">Ka'iwa</div>
+                
+                <div class="fc-front-pron"><span class="pitch-high">KUH</span>-'ih-wuh</div>
+                
+                
+                
+                <div class="fc-front-parks" lang="x-paw">Kaʔiwa</div>
+                
+                
+                <span class="badge badge-class" title="Noun">N</span>
+                
+                
+                <div class="fc-hint">tap to reveal</div>
+            </div>
+            <div class="fc-back">
+                <div class="fc-back-definition">Kiowa tribe.</div>
+                
+                <div class="fc-back-senses">sense 1 of 2</div>
+                
+                <div class="fc-back-word" lang="x-paw">Ka'iwa</div>
+                
+                <div class="fc-back-pron"><span class="pitch-high">KUH</span>-'ih-wuh</div>
+                
+                
+                <div class="fc-back-ipa ipa" lang="x-paw">[kà-ʔɪ-wə]</div>
+                
+                
+                
+                <div class="fc-back-parks" lang="x-paw">Parks: Kaʔiwa</div>
+                
+                
+                <div class="fc-back-citation">Parks Dictionary, p. 418</div>
+                
+                
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<div class="fc-assess" id="fc-assess" style="display:none;">
+    <button class="fc-assess-btn fc-assess-btn--got" onclick="fcAssess('known')">Got it</button>
+    <button class="fc-assess-btn fc-assess-btn--miss" onclick="fcAssess('missed')">Missed</button>
+</div>
+
+<div class="fc-controls">
+    <button id="fc-prev" class="outline" onclick="fcNav(-1)" disabled>&laquo; Previous</button>
+    <button id="fc-shuffle" class="outline secondary" onclick="fcShuffle()">Shuffle</button>
+    <button id="fc-next" onclick="fcNav(1)">Next &raquo;</button>
+</div>
+
+
+<div id="fc-summary" style="display:none;">
+    <article style="text-align:center; padding:1.5rem; border:2px solid var(--sage-200); border-radius:0.875rem; background:var(--sage-50);">
+        <strong style="font-size:1.2rem;" id="fc-summary-text"></strong>
+        <div style="margin-top:0.75rem; display:flex; gap:0.5rem; justify-content:center;">
+            <button class="outline" onclick="fcReviewMissed()">Review Missed</button>
+            <button class="outline secondary" onclick="fcRestart()">Restart All</button>
+        </div>
+    </article>
+</div>
+
+<nav class="fc-week-nav">
+    
+    <a href="flashcard-20.html">&laquo; Week 20</a>
+    
+    <a href="flashcards.html">All Weeks</a>
+    
+    <a href="flashcard-22.html">Week 22 &raquo;</a>
+    
+</nav>
+
+<script>
+(function() {
+    const WEEK = 21;
+    const arena = document.getElementById('fc-arena');
+    const wrappers = Array.from(arena.querySelectorAll('.fc-card-wrapper'));
+    const total = wrappers.length;
+    const assessEl = document.getElementById('fc-assess');
+    let current = 0;
+    let order = wrappers.map((_, i) => i);
+
+    // Entry IDs for tracking
+    const entryIds = ["BB-curaki-0006", "BB-custit-0008", "BB-hawiu-0015", "BB-curasu-0007", "SK-astarahi-p17-0194", "SK-piiraski-p460-4096", "BB-hetkata-ku-0016", "SK-ka-p418-3926", "SK-rat-p138-2732", "SK-tir-p165-3262", "SK-sahi-p151-2941", "SK-raa--p114-2225", "SK-paari-p454-4071", "SK-rahwa-p133-2602", "SK-uhur--p168-3323", "SK--taat--p502-4251", "SK--waat--p174-3453", "SK-ckiiri-p30-0474", "SK-ctuquq-p31-0513", "SK-kaqiwa-p418-3937"];
+
+    // Load/save progress from localStorage
+    const STORAGE_KEY = `fc-progress-week-${WEEK}`;
+    let progress = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{"known":[],"missed":[]}');
+
+    function saveProgress() {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
+    }
+
+    function showAssessButtons() {
+        const card = wrappers[order[current]].querySelector('.fc-card');
+        if (card.classList.contains('flipped')) {
+            assessEl.style.display = '';
+        } else {
+            assessEl.style.display = 'none';
+        }
+    }
+
+    // Watch for card flips to show/hide assess buttons
+    const observer = new MutationObserver(showAssessButtons);
+    wrappers.forEach(w => {
+        observer.observe(w.querySelector('.fc-card'), { attributes: true, attributeFilter: ['class'] });
+    });
+
+    function show(idx) {
+        wrappers.forEach(w => w.classList.add('fc-hidden'));
+        wrappers[order[idx]].classList.remove('fc-hidden');
+        wrappers[order[idx]].querySelector('.fc-card').classList.remove('flipped');
+        current = idx;
+        document.getElementById('fc-progress-text').textContent = `Card ${idx + 1} of ${order.length}`;
+        document.getElementById('fc-progress-bar').value = idx + 1;
+        document.getElementById('fc-progress-bar').max = order.length;
+        document.getElementById('fc-prev').disabled = (idx === 0);
+        document.getElementById('fc-next').disabled = (idx === order.length - 1);
+        assessEl.style.display = 'none';
+    }
+
+    window.fcNav = function(delta) {
+        const next = current + delta;
+        if (next >= 0 && next < order.length) show(next);
+    };
+
+    window.fcShuffle = function() {
+        for (let i = order.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [order[i], order[j]] = [order[j], order[i]];
+        }
+        show(0);
+    };
+
+    window.fcAssess = function(result) {
+        const eid = entryIds[order[current]];
+        // Remove from both lists first to avoid duplicates
+        progress.known = progress.known.filter(id => id !== eid);
+        progress.missed = progress.missed.filter(id => id !== eid);
+        if (result === 'known') {
+            progress.known.push(eid);
+        } else {
+            progress.missed.push(eid);
+        }
+        saveProgress();
+        assessEl.style.display = 'none';
+        // Auto-advance or show summary
+        if (current < order.length - 1) {
+            fcNav(1);
+        } else {
+            showSummary();
+        }
+    };
+
+    function showSummary() {
+        const k = progress.known.length;
+        const m = progress.missed.length;
+        document.getElementById('fc-summary-text').textContent =
+            `You knew ${k} of ${k + m} words!`;
+        document.getElementById('fc-summary').style.display = '';
+    }
+
+    window.fcReviewMissed = function() {
+        if (progress.missed.length === 0) return;
+        order = progress.missed.map(eid => entryIds.indexOf(eid)).filter(i => i >= 0);
+        document.getElementById('fc-summary').style.display = 'none';
+        show(0);
+    };
+
+    window.fcRestart = function() {
+        progress = { known: [], missed: [] };
+        saveProgress();
+        order = wrappers.map((_, i) => i);
+        document.getElementById('fc-summary').style.display = 'none';
+        show(0);
+    };
+
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+            e.preventDefault();
+            if (current < order.length - 1) fcNav(1);
+        } else if (e.key === 'ArrowLeft') {
+            e.preventDefault();
+            if (current > 0) fcNav(-1);
+        } else if (e.key === 'ArrowUp' || e.key === 'ArrowDown' || e.key === 'Enter') {
+            e.preventDefault();
+            wrappers[order[current]].querySelector('.fc-card').classList.toggle('flipped');
+        }
+    });
+
+    // Touch swipe support
+    let touchStartX = 0;
+    arena.addEventListener('touchstart', function(e) { touchStartX = e.changedTouches[0].screenX; });
+    arena.addEventListener('touchend', function(e) {
+        const diff = e.changedTouches[0].screenX - touchStartX;
+        if (Math.abs(diff) > 50) {
+            if (diff > 0 && current > 0) fcNav(-1);
+            else if (diff < 0 && current < order.length - 1) fcNav(1);
+        }
+    });
+
+    show(0);
+})();
+</script>
+
+  </main>
+
+  <!-- ====== Footer ====== -->
+  <footer class="container">
+    <small style="color:var(--earth-500);">
+      P&#226;ri Pak&#251;ru' — Skiri Pawnee Language Preservation Project.
+      Data: Douglas R. Parks Dictionary &amp; Blue Book Textbook.
+      Built with respect for the Pawnee Nation.
+    </small>
+  </footer>
+
+  <script>
+    function toggleNav(btn) {
+      var nav = btn.closest('nav');
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('nav-open');
+    }
+  </script>
+  <script src="static/js/search.js"></script>
+  
+</body>
+</html>

@@ -65,6 +65,17 @@ function renderSearchResults(results) {
     const primarySpelling = entry.normalized_form || entry.headword;
     const secondarySpelling = entry.normalized_form && entry.normalized_form !== entry.headword ? entry.headword : null;
 
+    // All senses, numbered when there is more than one; usage notes inline
+    const glosses = entry.glosses || [];
+    const glossHtml = glosses.map(g =>
+      `<p class="result-gloss">${glosses.length > 1 ? `<strong>${g.sense_number}.</strong> ` : ''}${g.definition}${g.usage_notes ? ` <em class="result-usage">(${g.usage_notes})</em>` : ''}</p>`
+    ).join('');
+
+    // Scholarly citation: Parks page or Blue Book textbook
+    const citation = entry.source === 'blue_book'
+      ? "Pâri Pakûru' textbook"
+      : (entry.page_number ? `Parks Dictionary, p. ${entry.page_number}` : '');
+
     html += `<article class="result-card">
       <div class="result-header">
         <h3>${primarySpelling}</h3>
@@ -74,8 +85,10 @@ function renderSearchResults(results) {
         <span class="gram-class">${entry.grammatical_class || 'word'}</span>
         ${entry.blue_book_attested ? '<span class="badge-attested">Blue Book</span>' : ''}
       </div>
-      ${entry.glosses && entry.glosses[0] ? `<p class="result-gloss">${entry.glosses[0].definition}</p>` : ''}
+      ${glossHtml}
       ${entry.simplified_pronunciation ? `<p class="result-pronunciation">${entry.simplified_pronunciation}</p>` : ''}
+      ${entry.phonetic_form ? `<p class="result-ipa" lang="x-paw">${entry.phonetic_form}</p>` : ''}
+      ${citation ? `<p class="result-citation">${citation}</p>` : ''}
     </article>`;
   }
   html += '</div>';

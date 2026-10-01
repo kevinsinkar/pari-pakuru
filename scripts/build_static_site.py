@@ -68,28 +68,33 @@ def export_dictionary_data(db_path: str, output_dir: Path) -> dict:
         if not entry:
             continue
 
-        # Get blue_book_attested from database
+        # Get blue_book_attested + source from database
         cur_bb = db.conn.cursor()
         cur_bb.execute(
-            "SELECT blue_book_attested FROM lexical_entries WHERE entry_id = ?",
+            "SELECT blue_book_attested, source FROM lexical_entries WHERE entry_id = ?",
             (entry_id,)
         )
         bb_row = cur_bb.fetchone()
         bb_attested = bool(bb_row["blue_book_attested"]) if bb_row else False
+        source = (bb_row["source"] if bb_row else None) or "parks"
 
         # Flatten to JSON-serializable format
         entry_dict = {
             "entry_id": entry.entry_id,
             "headword": entry.headword,
             "normalized_form": entry.normalized_form,
+            "phonetic_form": entry.phonetic_form,
             "simplified_pronunciation": entry.simplified_pronunciation,
             "grammatical_class": entry.grammatical_class,
             "verb_class": entry.verb_class,
             "blue_book_attested": bb_attested,
+            "source": source,
+            "page_number": entry.page_number,
             "glosses": [
                 {
                     "sense_number": g.sense_number,
                     "definition": g.definition,
+                    "usage_notes": g.usage_notes,
                 }
                 for g in (entry.glosses or [])
             ],
@@ -289,8 +294,9 @@ def _postprocess_for_static(html: str) -> str:
     import re
 
     # Drop nav links to Flask-only routes that have no static equivalent
+    # (flashcards HAS a static equivalent now — keep its nav link)
     html = re.sub(
-        r'<li><a href="/(search|browse|lessons|study|flashcards|sentence-builder|dashboard)"[^>]*>[^<]*</a></li>',
+        r'<li><a href="/(search|browse|lessons|study|sentence-builder|dashboard)"[^>]*>[^<]*</a></li>',
         "", html)
 
     # Drop the spelling-preference form (posts to a Flask route)
@@ -313,6 +319,15 @@ def _postprocess_for_static(html: str) -> str:
 
     # Category-tag links become client-side searches on the tag word
     html = re.sub(r'href="/browse/tag/([^"]+)"', r'href="index.html?q=\1"', html)
+
+    # Flashcard pages are generated statically at the site root
+    html = re.sub(r'href="/flashcards/(\d+)"', r'href="flashcard-\1.html"', html)
+    html = html.replace('href="/flashcards"', 'href="flashcards.html"')
+
+    # No static entry pages exist — drop the card-back "View full entry" link
+    html = re.sub(
+        r'<a href="/entry/[^"]*" class="fc-back-link">[^<]*</a>',
+        "", html)
 
     # Any remaining Flask-route link (entry pages, flashcards, browse) has no
     # static equivalent yet — fall back to the home page rather than a 404
@@ -410,6 +425,96 @@ def generate_static_pages(db_path: str, output_dir: Path) -> dict:
     return {"pages": count}
 
 
+def generate_flashcard_pages(db_path: str, output_dir: Path) -> dict:
+    """Generate the flashcards overview page and one study page per week.
+
+    All pages are written at the site root (flashcards.html, flashcard-N.html)
+    so the relative static/ asset paths work without a base-path rewrite.
+    Progress tracking already runs on localStorage, so the Flask templates
+    work statically as-is.
+    """
+    print("[*] Generating flashcard pages...")
+    import re
+    from jinja2 import Environment, FileSystemLoader
+    from web.flashcards import generate_all_sets
+
+    # Register custom filters for static rendering
+    def primary_spelling_filter(entry):
+        """Return primary spelling (normalized form preferred)."""
+        nf = entry.normalized_form if hasattr(entry, 'normalized_form') else None
+        hw = entry.headword if hasattr(entry, 'headword') else ""
+        return nf if nf and nf != hw else hw
+
+    def secondary_spelling_filter(entry):
+        """Return secondary spelling (non-preferred)."""
+        nf = entry.normalized_form if hasattr(entry, 'normalized_form') else None
+        hw = entry.headword if hasattr(entry, 'headword') else ""
+        return hw if nf and nf != hw else None
+
+    def format_pitch_filter(pronunciation: str):
+        """Format pitch accent (uppercase syllables)."""
+        if not pronunciation:
+            return ""
+        _UPPER_RUN_RE = re.compile(r"([A-Z][A-Z']+)")
+        has_upper = any(c.isupper() for c in pronunciation)
+        if has_upper:
+            return _UPPER_RUN_RE.sub(r'<span class="pitch-high">\1</span>', pronunciation)
+        return pronunciation + ' <span class="pitch-unmarked">(pitch not marked)</span>'
+
+    template_dir = PROJECT_ROOT / "web" / "templates"
+    env = Environment(loader=FileSystemLoader(str(template_dir)))
+    env.filters['primary_spelling'] = primary_spelling_filter
+    env.filters['secondary_spelling'] = secondary_spelling_filter
+    env.filters['format_pitch'] = format_pitch_filter
+
+    # Mock request object for static rendering
+    class MockRequest:
+        class Args:
+            def get(self, key, default=""):
+                return default
+        args = Args()
+
+    base_context = {
+        "request": MockRequest(),
+        "spelling_pref": "simplified",
+        "gram_class_labels": GRAM_CLASS_LABELS,
+    }
+
+    sets = generate_all_sets(db_path)
+    by_cat = {}
+    for s in sets:
+        by_cat.setdefault(s.category, []).append(s)
+
+    # Overview page
+    template = env.get_template("flashcards.html")
+    html = template.render(sets=sets, by_category=by_cat, **base_context)
+    html = _postprocess_for_static(html)
+    with open(output_dir / "flashcards.html", "w", encoding="utf-8") as f:
+        f.write(html)
+
+    # One study page per week
+    template = env.get_template("flashcard_study.html")
+    weeks = [s.week for s in sets]
+    count = 0
+    for idx, fset in enumerate(sets):
+        prev_week = weeks[idx - 1] if idx > 0 else None
+        next_week = weeks[idx + 1] if idx < len(weeks) - 1 else None
+        html = template.render(
+            fset=fset,
+            prev_week=prev_week,
+            next_week=next_week,
+            **base_context,
+        )
+        html = _postprocess_for_static(html)
+        with open(output_dir / f"flashcard-{fset.week}.html", "w", encoding="utf-8") as f:
+            f.write(html)
+        count += 1
+
+    total_cards = sum(s.card_count for s in sets)
+    print(f"[OK] Generated flashcards.html + {count} weekly pages ({total_cards} cards)")
+    return {"weeks": count, "cards": total_cards}
+
+
 def main():
     parser = argparse.ArgumentParser(description="Build static GitHub Pages site")
     parser.add_argument(
@@ -450,6 +555,7 @@ def main():
         # results["browse"] = generate_browse_pages(str(db_path), output_dir)
         results["static"] = copy_static_assets(output_dir)
         results["pages"] = generate_static_pages(str(db_path), output_dir)
+        results["flashcards"] = generate_flashcard_pages(str(db_path), output_dir)
     except Exception as e:
         print(f"\n[ERR] Build failed: {e}")
         import traceback
@@ -460,6 +566,7 @@ def main():
     print(f"\n[*] Build complete!")
     print(f"  Dictionary data: {results['data']['entries']} entries exported")
     print(f"  Static pages: {results['pages']['pages']}")
+    print(f"  Flashcard pages: {results['flashcards']['weeks']} weeks ({results['flashcards']['cards']} cards)")
     print(f"  Static files: {results['static']['files']}")
     print(f"\n[DIR] Output: {output_dir}/")
     print(f"[WEB] Ready for GitHub Pages!")

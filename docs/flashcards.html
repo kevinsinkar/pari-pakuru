@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weekly Flashcards — Skiri Pawnee Dictionary</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;1,8..60,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Pico CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+
+  <!-- Custom Pawnee theme -->
+  <link rel="stylesheet" href="static/css/pawnee-theme.css">
+
+  <!-- HTMX (optional for live features) -->
+  <script src="https://unpkg.com/htmx.org@2.0.4"></script>
+
+  <!-- Fuse.js for client-side search -->
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+
+  <!-- Client-side search -->
+  <script src="static/js/search.js"></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <!-- ====== Top Navigation ====== -->
+  <header class="container">
+    <nav class="site-nav">
+      <ul>
+        <li>
+          <a href="index.html" class="contrast" style="text-decoration:none; display:flex; align-items:center; gap:0.75rem;">
+            <span style="
+              width:36px; height:36px; border-radius:50%;
+              background: linear-gradient(135deg, var(--clay-600), var(--gold-400));
+              display:flex; align-items:center; justify-content:center;
+            ">
+              
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2L15.5 8.5L22 12L15.5 15.5L12 22L8.5 15.5L2 12L8.5 8.5L12 2Z" fill="white" opacity="0.9"/>
+              </svg>
+            </span>
+            <span>
+              <strong class="font-serif" style="font-size:1.2rem; letter-spacing:-0.3px;">P&#226;ri Pak&#251;ru'</strong>
+              <br>
+              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Skiri Pawnee Dictionary</small>
+            </span>
+          </a>
+        </li>
+      </ul>
+
+      
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleNav(this)">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html" >Dictionary</a></li>
+        
+        
+        
+        
+        <li><a href="flashcards.html" >Flashcards</a></li>
+        
+        <li><a href="guide.html" >Syllable Guide</a></li>
+        
+        <li><a href="about.html" >About</a></li>
+
+        
+        
+      </ul>
+    </nav>
+    
+    <form action="index.html" method="get" class="nav-search" role="search">
+      <input
+        type="search"
+        name="q"
+        placeholder="Search Skiri or English..."
+        value=""
+        aria-label="Search the dictionary"
+        autocomplete="off"
+      >
+    </form>
+    
+  </header>
+
+  <!-- ====== Main Content ====== -->
+  <main class="container" id="main-content">
+    <div id="live-results"></div>
+    
+<h2>Weekly Flashcards</h2>
+<p>
+    A 20-week study plan with 387 curated words
+    across 21 categories. Each week features 15-20 beginner-friendly
+    words, prioritizing terms from the P&acirc;ri Pak&ucirc;ru' textbook.
+</p>
+
+<!-- Example card guide -->
+<details class="fc-guide" open>
+    <summary><strong>How to read a flashcard</strong></summary>
+    <p class="pitch-note" style="margin:0.5rem 0;">
+        <strong>UPPERCASE</strong> syllables have <strong>HIGH PITCH</strong>.
+        Pitch changes meaning in Pawnee, so pay attention to which syllable is capitalized.
+    </p>
+    <div class="fc-guide-cards">
+        <div class="fc-guide-side">
+            <h4>Front (study side)</h4>
+            <div class="fc-example-card fc-example-front">
+                <div class="fc-example-row">
+                    <span class="fc-example-value fc-front-word">akahwi'&ucirc;sis</span>
+                    <span class="fc-example-label">Respelled form — learner-friendly spelling with accent marks</span>
+                </div>
+                <div class="fc-example-row">
+                    <span class="fc-example-value fc-front-pron"><span class="pitch-high">UH</span>-kuhh-wih-'oo-sihs</span>
+                    <span class="fc-example-label">Pronunciation guide — <strong>bold underline</strong> = high pitch syllable</span>
+                </div>
+                <div class="fc-example-row">
+                    <span class="fc-example-value fc-front-parks">akahwiʔuusis</span>
+                    <span class="fc-example-label">Parks Dictionary spelling — the linguistic transcription</span>
+                </div>
+                <div class="fc-example-row">
+                    <span class="fc-example-value"><span class="badge badge-class">N</span> <span class="badge badge-bb">P&acirc;ri Pak&ucirc;ru'</span></span>
+                    <span class="fc-example-label">Badges — grammatical class (N = noun) and textbook attestation</span>
+                </div>
+            </div>
+        </div>
+        <div class="fc-guide-side">
+            <h4>Back (answer side)</h4>
+            <div class="fc-example-card fc-example-back">
+                <div class="fc-example-row">
+                    <span class="fc-example-value fc-back-definition">boy</span>
+                    <span class="fc-example-label fc-example-label-back">English definition</span>
+                </div>
+                <div class="fc-example-row">
+                    <span class="fc-example-value fc-back-word">akahwi'&ucirc;sis</span>
+                    <span class="fc-example-label fc-example-label-back">Respelled form (same as front)</span>
+                </div>
+                <div class="fc-example-row">
+                    <span class="fc-example-value fc-back-pron"><span class="pitch-high">UH</span>-kuhh-wih-'oo-sihs</span>
+                    <span class="fc-example-label fc-example-label-back">Pronunciation guide — bold underline = high pitch</span>
+                </div>
+                <div class="fc-example-row">
+                    <span class="fc-example-value fc-back-ipa">[a.kah.wiʔ.uu.sis]</span>
+                    <span class="fc-example-label fc-example-label-back">IPA phonetic transcription (from Parks)</span>
+                </div>
+                <div class="fc-example-row">
+                    <span class="fc-example-value fc-back-parks">Parks: akahwiʔuusis</span>
+                    <span class="fc-example-label fc-example-label-back">Original Parks Dictionary spelling</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</details>
+
+
+<div class="fc-path" id="fc-path">
+    <span class="section-label">Your Progress</span>
+    <div class="fc-path-track">
+        
+        <a href="flashcard-1.html" class="fc-path-dot" data-week="1" data-total="15" title="Week 1: Blue Book Essentials">
+            <span class="fc-path-dot-num">1</span>
+        </a>
+        
+        <a href="flashcard-2.html" class="fc-path-dot" data-week="2" data-total="15" title="Week 2: Blue Book Essentials">
+            <span class="fc-path-dot-num">2</span>
+        </a>
+        
+        <a href="flashcard-3.html" class="fc-path-dot" data-week="3" data-total="10" title="Week 3: Blue Book Essentials">
+            <span class="fc-path-dot-num">3</span>
+        </a>
+        
+        <a href="flashcard-4.html" class="fc-path-dot" data-week="4" data-total="12" title="Week 4: Greetings & Common Words">
+            <span class="fc-path-dot-num">4</span>
+        </a>
+        
+        <a href="flashcard-5.html" class="fc-path-dot" data-week="5" data-total="20" title="Week 5: Family & Kinship">
+            <span class="fc-path-dot-num">5</span>
+        </a>
+        
+        <a href="flashcard-6.html" class="fc-path-dot" data-week="6" data-total="20" title="Week 6: Numbers & Counting">
+            <span class="fc-path-dot-num">6</span>
+        </a>
+        
+        <a href="flashcard-7.html" class="fc-path-dot" data-week="7" data-total="15" title="Week 7: Animals">
+            <span class="fc-path-dot-num">7</span>
+        </a>
+        
+        <a href="flashcard-8.html" class="fc-path-dot" data-week="8" data-total="15" title="Week 8: Animals">
+            <span class="fc-path-dot-num">8</span>
+        </a>
+        
+        <a href="flashcard-9.html" class="fc-path-dot" data-week="9" data-total="20" title="Week 9: Body & Health">
+            <span class="fc-path-dot-num">9</span>
+        </a>
+        
+        <a href="flashcard-10.html" class="fc-path-dot" data-week="10" data-total="20" title="Week 10: Food & Cooking">
+            <span class="fc-path-dot-num">10</span>
+        </a>
+        
+        <a href="flashcard-11.html" class="fc-path-dot" data-week="11" data-total="15" title="Week 11: Clothing & Adornment">
+            <span class="fc-path-dot-num">11</span>
+        </a>
+        
+        <a href="flashcard-12.html" class="fc-path-dot" data-week="12" data-total="15" title="Week 12: Home & Shelter">
+            <span class="fc-path-dot-num">12</span>
+        </a>
+        
+        <a href="flashcard-13.html" class="fc-path-dot" data-week="13" data-total="15" title="Week 13: Colors & Appearance">
+            <span class="fc-path-dot-num">13</span>
+        </a>
+        
+        <a href="flashcard-14.html" class="fc-path-dot" data-week="14" data-total="20" title="Week 14: Sky, Stars & Weather">
+            <span class="fc-path-dot-num">14</span>
+        </a>
+        
+        <a href="flashcard-15.html" class="fc-path-dot" data-week="15" data-total="15" title="Week 15: Water & Rivers">
+            <span class="fc-path-dot-num">15</span>
+        </a>
+        
+        <a href="flashcard-16.html" class="fc-path-dot" data-week="16" data-total="20" title="Week 16: Plants & Trees">
+            <span class="fc-path-dot-num">16</span>
+        </a>
+        
+        <a href="flashcard-17.html" class="fc-path-dot" data-week="17" data-total="15" title="Week 17: Tools & Objects">
+            <span class="fc-path-dot-num">17</span>
+        </a>
+        
+        <a href="flashcard-18.html" class="fc-path-dot" data-week="18" data-total="15" title="Week 18: Land & Earth">
+            <span class="fc-path-dot-num">18</span>
+        </a>
+        
+        <a href="flashcard-19.html" class="fc-path-dot" data-week="19" data-total="15" title="Week 19: Feelings & Emotions">
+            <span class="fc-path-dot-num">19</span>
+        </a>
+        
+        <a href="flashcard-20.html" class="fc-path-dot" data-week="20" data-total="15" title="Week 20: Ceremony & Sacred">
+            <span class="fc-path-dot-num">20</span>
+        </a>
+        
+        <a href="flashcard-21.html" class="fc-path-dot" data-week="21" data-total="20" title="Week 21: People & Society">
+            <span class="fc-path-dot-num">21</span>
+        </a>
+        
+        <a href="flashcard-22.html" class="fc-path-dot" data-week="22" data-total="15" title="Week 22: Language & Communication">
+            <span class="fc-path-dot-num">22</span>
+        </a>
+        
+        <a href="flashcard-23.html" class="fc-path-dot" data-week="23" data-total="15" title="Week 23: Movement & Travel">
+            <span class="fc-path-dot-num">23</span>
+        </a>
+        
+        <a href="flashcard-24.html" class="fc-path-dot" data-week="24" data-total="15" title="Week 24: Places & Directions">
+            <span class="fc-path-dot-num">24</span>
+        </a>
+        
+    </div>
+    <div class="fc-path-legend">
+        <span class="fc-path-legend-item"><span class="fc-path-swatch fc-path-swatch--done"></span> Mastered</span>
+        <span class="fc-path-legend-item"><span class="fc-path-swatch fc-path-swatch--partial"></span> In progress</span>
+        <span class="fc-path-legend-item"><span class="fc-path-swatch fc-path-swatch--todo"></span> Not started</span>
+    </div>
+</div>
+
+<div class="flashcard-overview">
+    
+    <section class="fc-category">
+        <h3>Blue Book Essentials</h3>
+        <div class="fc-week-grid">
+            
+            <a href="flashcard-1.html" class="fc-week-card" data-week="1" data-total="15">
+                <span class="fc-week-num">Week 1</span>
+                <span class="fc-week-count">15 words</span>
+                
+                
+                <span class="badge badge-bb" style="font-size: 0.7em;">15 P&acirc;ri Pak&ucirc;ru'</span>
+                
+                <span class="fc-week-progress" data-week="1"></span>
+            </a>
+            
+            <a href="flashcard-2.html" class="fc-week-card" data-week="2" data-total="15">
+                <span class="fc-week-num">Week 2</span>
+                <span class="fc-week-count">15 words</span>
+                
+                
+                <span class="badge badge-bb" style="font-size: 0.7em;">15 P&acirc;ri Pak&ucirc;ru'</span>
+                
+                <span class="fc-week-progress" data-week="2"></span>
+            </a>
+            
+            <a href="flashcard-3.html" class="fc-week-card" data-week="3" data-total="10">
+                <span class="fc-week-num">Week 3</span>
+                <span class="fc-week-count">10 words</span>
+                
+                
+                <span class="badge badge-bb" style="font-size: 0.7em;">10 P&acirc;ri Pak&ucirc;ru'</span>
+                
+                <span class="fc-week-progress" data-week="3"></span>
+            </a>
+            
+        </div>
+    </section>
+    
+    <section class="fc-category">
+        <h3>Greetings & Common Words</h3>
+        <div class="fc-week-grid">
+            
+            <a href="flashcard-4.html" class="fc-week-card" data-week="4" data-total="12">
+                <span class="fc-week-num">Week 4</span>
+                <span class="fc-week-count">12 words</span>
+                
+                
+                <span class="badge badge-bb" style="font-size: 0.7em;">12 P&acirc;ri Pak&ucirc;ru'</span>
+                
+                <span class="fc-week-progress" data-week="4"></span>
+            </a>
+            
+        </div>
+    </section>
+    
+    <section class="fc-category">
+        <h3>Family & Kinship</h3>
+        <div class="fc-week-grid">
+            
+            <a href="flashcard-5.html" class="fc-week-card" data-week="5" data-total="20">
+                <span class="fc-week-num">Week 5</span>
+                <span class="fc-week-count">20 words</span>
+                
+                
+                <span class="badge badge-bb" style="font-size: 0.7em;">7 P&acirc;ri Pak&ucirc;ru'</span>
+                
+                <span class="fc-week-progress" data-week="5"></span>
+            </a>
+            
+        </div>
+    </section>
+    
+    <section class="fc-category">
+        <h3>Numbers & Counting</h3>
+        <div class="fc-week-grid">
+            
+            <a href="flashcard-6.html" class="fc-week-card" data-week="6" data-total="20">
+                <span class="fc-week-num">Week 6</span>
+                <span class="fc-week-count">20 words</span>
+                
+                
+                <span class="badge badge-bb" style="font-size: 0.7em;">1 P&acirc;ri Pak&ucirc;ru'</span>
+                
+                <span class="fc-week-progress" data-week="6"></span>
+            </a>
+            
+        </div>
+    </section>
+    
+    <section class="fc-category">
+        <h3>Animals</h3>
+        <div class="fc-week-grid">
+            
+            <a href="flashcard-7.html" class="fc-week-card" data-week="7" data-total="15">
+                <span class="fc-week-num">Week 7</span>
+                <span class="fc-week-count">15 words</span>
+                
+                
+                <span class="badge badge-bb" style="font-size: 0.7em;">15 P&acirc;ri Pak&ucirc;ru'</span>
+                
+                <span class="fc-week-progress" data-week="7"></span>
+            </a>
+            
+            <a href="flashcard-8.html" class="fc-week-card" data-week="8" data-total="15">
+                <span class="fc-week-num">Week 8</span>
+                <span class="fc-week-count">15 words</span>
+                
+                
+                <span class="badge badge-bb" style="font-size: 0.7em;">1 P&acirc;ri Pak&ucirc;ru'</span>
+                
+                <span class="fc-week-progress" data-week="8"></span>
+            </a>
+            
+        </div>
+    </section>
+    
+    <section class="fc-category">
+        <h3>Body & Health</h3>
+        <div class="fc-week-grid">
+            
+            <a href="flashcard-9.html" class="fc-week-card" data-week="9" data-total="20">
+                <span class="fc-week-num">Week 9</span>
+                <span class="fc-week-count">20 words</span>
+                
+                
+                <span class="badge badge-bb" style="font-size: 0.7em;">7 P&acirc;ri Pak&ucirc;ru'</span>
+                
+                <span class="fc-week-progress" data-week="9"></span>
+            </a>
+            
+        </div>
+    </section>
+    
+    <section class="fc-category">
+        <h3>Food & Cooking</h3>
+        <div class="fc-week-grid">
+            
+            <a href="flashcard-10.html" class="fc-week-card" data-week="10" data-total="20">
+                <span class="fc-week-num">Week 10</span>
+                <span class="fc-week-count">20 words</span>
+                
+                
+                <span class="badge badge-bb" style="font-size: 0.7em;">4 P&acirc;ri Pak&ucirc;ru'</span>
+                
+                <span class="fc-week-progress" data-week="10"></span>
+            </a>
+            
+        </div>
+    </section>
+    
+    <section class="fc-category">
+        <h3>Clothing & Adornment</h3>
+        <div class="fc-week-grid">
+            
+            <a href="flashcard-11.html" class="fc-week-card" data-week="11" data-total="15">
+                <span class="fc-week-num">Week 11</span>
+                <span class="fc-week-count">15 words</span>
+                
+                
+                <span class="badge badge-bb" style="font-size: 0.7em;">2 P&acirc;ri Pak&ucirc;ru'</span>
+                
+                <span class="fc-week-progress" data-week="11"></span>
+            </a>
+            
+        </div>
+    </section>
+    
+    <section class="fc-category">
+        <h3>Home & Shelter</h3>
+        <div class="fc-week-grid">
+            
+            <a href="flashcard-12.html" class="fc-week-card" data-week="12" data-total="15">
+                <span class="fc-week-num">Week 12</span>
+                <span class="fc-week-count">15 words</span>
+                
+                
+                <span class="badge badge-bb" style="font-size: 0.7em;">6 P&acirc;ri Pak&ucirc;ru'</span>
+                
+                <span class="fc-week-progress" data-week="12"></span>
+            </a>
+            
+        </div>
+    </section>
+    
+    <section class="fc-category">
+        <h3>Colors & Appearance</h3>
+        <div class="fc-week-grid">
+            
+            <a href="flashcard-13.html" class="fc-week-card" data-week="13" data-total="15">
+                <span class="fc-week-num">Week 13</span>
+                <span class="fc-week-count">15 words</span>
+                
+                
+                <span class="fc-week-progress" data-week="13"></span>
+            </a>
+            
+        </div>
+    </section>
+    
+    <section class="fc-category">
+        <h3>Sky, Stars & Weather</h3>
+        <div class="fc-week-grid">
+            
+            <a href="flashcard-14.html" class="fc-week-card" data-week="14" data-total="20">
+                <span class="fc-week-num">Week 14</span>
+                <span class="fc-week-count">20 words</span>
+                
+                
+                <span class="badge badge-bb" style="font-size: 0.7em;">4 P&acirc;ri Pak&ucirc;ru'</span>
+                
+                <span class="fc-week-progress" data-week="14"></span>
+            </a>
+            
+        </div>
+    </section>
+    
+    <section class="fc-category">
+        <h3>Water & Rivers</h3>
+        <div class="fc-week-grid">
+            
+            <a href="flashcard-15.html" class="fc-week-card" data-week="15" data-total="15">
+                <span class="fc-week-num">Week 15</span>
+                <span class="fc-week-count">15 words</span>
+                
+                
+                <span class="badge badge-bb" style="font-size: 0.7em;">2 P&acirc;ri Pak&ucirc;ru'</span>
+                
+                <span class="fc-week-progress" data-week="15"></span>
+            </a>
+            
+        </div>
+    </section>
+    
+    <section class="fc-category">
+        <h3>Plants & Trees</h3>
+        <div class="fc-week-grid">
+            
+            <a href="flashcard-16.html" class="fc-week-card" data-week="16" data-total="20">
+                <span class="fc-week-num">Week 16</span>
+                <span class="fc-week-count">20 words</span>
+                
+                
+                <span class="fc-week-progress" data-week="16"></span>
+            </a>
+            
+        </div>
+    </section>
+    
+    <section class="fc-category">
+        <h3>Tools & Objects</h3>
+        <div class="fc-week-grid">
+            
+            <a href="flashcard-17.html" class="fc-week-card" data-week="17" data-total="15">
+                <span class="fc-week-num">Week 17</span>
+                <span class="fc-week-count">15 words</span>
+                
+                
+                <span class="badge badge-bb" style="font-size: 0.7em;">2 P&acirc;ri Pak&ucirc;ru'</span>
+                
+                <span class="fc-week-progress" data-week="17"></span>
+            </a>
+            
+        </div>
+    </section>
+    
+    <section class="fc-category">
+        <h3>Land & Earth</h3>
+        <div class="fc-week-grid">
+            
+            <a href="flashcard-18.html" class="fc-week-card" data-week="18" data-total="15">
+                <span class="fc-week-num">Week 18</span>
+                <span class="fc-week-count">15 words</span>
+                
+                
+                <span class="badge badge-bb" style="font-size: 0.7em;">3 P&acirc;ri Pak&ucirc;ru'</span>
+                
+                <span class="fc-week-progress" data-week="18"></span>
+            </a>
+            
+        </div>
+    </section>
+    
+    <section class="fc-category">
+        <h3>Feelings & Emotions</h3>
+        <div class="fc-week-grid">
+            
+            <a href="flashcard-19.html" class="fc-week-card" data-week="19" data-total="15">
+                <span class="fc-week-num">Week 19</span>
+                <span class="fc-week-count">15 words</span>
+                
+                
+                <span class="badge badge-bb" style="font-size: 0.7em;">2 P&acirc;ri Pak&ucirc;ru'</span>
+                
+                <span class="fc-week-progress" data-week="19"></span>
+            </a>
+            
+        </div>
+    </section>
+    
+    <section class="fc-category">
+        <h3>Ceremony & Sacred</h3>
+        <div class="fc-week-grid">
+            
+            <a href="flashcard-20.html" class="fc-week-card" data-week="20" data-total="15">
+                <span class="fc-week-num">Week 20</span>
+                <span class="fc-week-count">15 words</span>
+                
+                
+                <span class="badge badge-bb" style="font-size: 0.7em;">1 P&acirc;ri Pak&ucirc;ru'</span>
+                
+                <span class="fc-week-progress" data-week="20"></span>
+            </a>
+            
+        </div>
+    </section>
+    
+    <section class="fc-category">
+        <h3>People & Society</h3>
+        <div class="fc-week-grid">
+            
+            <a href="flashcard-21.html" class="fc-week-card" data-week="21" data-total="20">
+                <span class="fc-week-num">Week 21</span>
+                <span class="fc-week-count">20 words</span>
+                
+                
+                <span class="badge badge-bb" style="font-size: 0.7em;">10 P&acirc;ri Pak&ucirc;ru'</span>
+                
+                <span class="fc-week-progress" data-week="21"></span>
+            </a>
+            
+        </div>
+    </section>
+    
+    <section class="fc-category">
+        <h3>Language & Communication</h3>
+        <div class="fc-week-grid">
+            
+            <a href="flashcard-22.html" class="fc-week-card" data-week="22" data-total="15">
+                <span class="fc-week-num">Week 22</span>
+                <span class="fc-week-count">15 words</span>
+                
+                
+                <span class="fc-week-progress" data-week="22"></span>
+            </a>
+            
+        </div>
+    </section>
+    
+    <section class="fc-category">
+        <h3>Movement & Travel</h3>
+        <div class="fc-week-grid">
+            
+            <a href="flashcard-23.html" class="fc-week-card" data-week="23" data-total="15">
+                <span class="fc-week-num">Week 23</span>
+                <span class="fc-week-count">15 words</span>
+                
+                
+                <span class="badge badge-bb" style="font-size: 0.7em;">4 P&acirc;ri Pak&ucirc;ru'</span>
+                
+                <span class="fc-week-progress" data-week="23"></span>
+            </a>
+            
+        </div>
+    </section>
+    
+    <section class="fc-category">
+        <h3>Places & Directions</h3>
+        <div class="fc-week-grid">
+            
+            <a href="flashcard-24.html" class="fc-week-card" data-week="24" data-total="15">
+                <span class="fc-week-num">Week 24</span>
+                <span class="fc-week-count">15 words</span>
+                
+                
+                <span class="fc-week-progress" data-week="24"></span>
+            </a>
+            
+        </div>
+    </section>
+    
+</div>
+
+<script>
+// Show progress from localStorage on week cards and path dots
+var hasAnyProgress = false;
+document.querySelectorAll('.fc-week-progress').forEach(function(el) {
+    var week = el.getAttribute('data-week');
+    var total = parseInt(el.closest('.fc-week-card').getAttribute('data-total'));
+    var data = JSON.parse(localStorage.getItem('fc-progress-week-' + week) || '{}');
+    var known = (data.known || []).length;
+    if (known > 0) {
+        el.textContent = known + '/' + total + ' mastered';
+        el.style.display = '';
+        hasAnyProgress = true;
+    }
+});
+
+// Color path dots based on progress
+document.querySelectorAll('.fc-path-dot').forEach(function(dot) {
+    var week = dot.getAttribute('data-week');
+    var total = parseInt(dot.getAttribute('data-total'));
+    var data = JSON.parse(localStorage.getItem('fc-progress-week-' + week) || '{}');
+    var known = (data.known || []).length;
+    if (known >= total && total > 0) {
+        dot.classList.add('fc-path-dot--done');
+    } else if (known > 0) {
+        dot.classList.add('fc-path-dot--partial');
+    }
+});
+
+// Hide path if no progress at all
+if (!hasAnyProgress) {
+    var pathEl = document.getElementById('fc-path');
+    if (pathEl) pathEl.style.display = 'none';
+}
+</script>
+
+  </main>
+
+  <!-- ====== Footer ====== -->
+  <footer class="container">
+    <small style="color:var(--earth-500);">
+      P&#226;ri Pak&#251;ru' — Skiri Pawnee Language Preservation Project.
+      Data: Douglas R. Parks Dictionary &amp; Blue Book Textbook.
+      Built with respect for the Pawnee Nation.
+    </small>
+  </footer>
+
+  <script>
+    function toggleNav(btn) {
+      var nav = btn.closest('nav');
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('nav-open');
+    }
+  </script>
+  <script src="static/js/search.js"></script>
+  
+</body>
+</html>

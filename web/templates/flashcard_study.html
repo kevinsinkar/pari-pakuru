@@ -36,6 +36,9 @@
             </div>
             <div class="fc-back">
                 <div class="fc-back-definition">{{ card.definition }}</div>
+                {% if card.sense_count > 1 %}
+                <div class="fc-back-senses">sense 1 of {{ card.sense_count }}</div>
+                {% endif %}
                 <div class="fc-back-word" lang="x-paw">{{ card|primary_spelling }}</div>
                 {% if card.simplified_pronunciation %}
                 <div class="fc-back-pron">{{ card.simplified_pronunciation|format_pitch }}</div>
@@ -46,6 +49,11 @@
                 {% set fc_back_secondary = card|secondary_spelling %}
                 {% if fc_back_secondary %}
                 <div class="fc-back-parks" lang="x-paw">{{ 'Parks' if spelling_pref == 'simplified' else 'Simplified' }}: {{ fc_back_secondary }}</div>
+                {% endif %}
+                {% if card.source == 'blue_book' %}
+                <div class="fc-back-citation">P&acirc;ri Pak&ucirc;ru' textbook</div>
+                {% elif card.page_number %}
+                <div class="fc-back-citation">Parks Dictionary, p. {{ card.page_number }}</div>
                 {% endif %}
                 <a href="/entry/{{ card.entry_id }}" class="fc-back-link">View full entry</a>
             </div>

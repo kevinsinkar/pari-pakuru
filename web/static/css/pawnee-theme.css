@@ -270,6 +270,23 @@
   color: var(--earth-600);
 }
 
+/* Static-site search result extras (client-rendered by search.js) */
+.result-ipa {
+  font-family: 'Source Serif 4', 'Gentium Plus', 'Charis SIL', 'Doulos SIL', monospace;
+  color: var(--earth-700);
+  margin-bottom: 0.25rem;
+}
+
+.result-citation {
+  font-size: 0.78rem;
+  color: var(--earth-500);
+  margin-bottom: 0;
+}
+
+.result-usage {
+  color: var(--earth-500);
+}
+
 /* ---------- Badges ---------- */
 .badge {
   display: inline-flex;
@@ -1119,6 +1136,7 @@
 .fc-front, .fc-back {
   position: absolute;
   inset: 0;
+  overflow-y: auto; /* full definitions are never truncated; scroll within the card */
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   border-radius: 12px;
@@ -1176,6 +1194,19 @@
   margin-bottom: 0.5em;
   line-height: 1.3;
   color: #FFFFFF;
+}
+
+.fc-back-senses {
+  font-size: 0.75em;
+  color: #C7D5E0;
+  font-style: italic;
+  margin-bottom: 0.5em;
+}
+
+.fc-back-citation {
+  font-size: 0.7em;
+  color: #A9BCCB;
+  margin-top: 0.5em;
 }
 .fc-back-word {
   font-size: 1.1em;

@@ -78,6 +78,7 @@ CONSONANT_MAP = {
     's':  's',    # Parks: "sit"  / Blue Book: "super"
     'w':  'w',    # Parks: "wall" / Blue Book: "watch"
     'h':  'h',    # Parks: "hit"  / Blue Book: "harm"
+    'n':  'n',    # marginal in Pawnee (word-initial variant of r, e.g. rawa/nawa)
 }
 
 # All known phonetic characters (for validation in 1.1d, used here for unknown-char flagging)
@@ -203,6 +204,13 @@ def tokenize_syllable(syl):
             i += 1
             continue
 
+        # Parks stem-alternation slash (e.g. kiis/kis) passes through verbatim,
+        # mirroring the headword convention "acikstarahkiis/kis"
+        if ch == '/':
+            tokens.append(('literal', '/', False))
+            i += 1
+            continue
+
         tokens.append(('unknown', ch, False))
         i += 1
 
@@ -236,6 +244,8 @@ def respell_syllable(tokens):
             else:
                 parts.append(f'?{base}?')
                 unknowns.append(base)
+        elif ttype == 'literal':
+            parts.append(base)
         elif ttype == 'unknown':
             parts.append(f'?{base}?')
             unknowns.append(base)
