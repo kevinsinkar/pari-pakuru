@@ -12,9 +12,16 @@ Selection priorities:
   4. Entries with clear, concise definitions
 """
 
+import json
 import sqlite3
 from dataclasses import dataclass, field
+from pathlib import Path
 from typing import List, Optional
+
+# Frozen curriculum (audit B4): when this file exists, load_sets() serves it
+# instead of regenerating from the DB, so week numbers stay stable and
+# learners' saved progress stays attached to the right weeks.
+FROZEN_SETS_PATH = Path(__file__).parent.parent / "curriculum" / "flashcard_sets.json"
 
 
 @dataclass
@@ -566,9 +573,30 @@ def generate_all_sets(db_path: str) -> List[FlashCardSet]:
     return all_sets
 
 
+def load_sets(db_path: str) -> List[FlashCardSet]:
+    """Load the frozen curriculum if present; otherwise generate from the DB.
+
+    Use this (not generate_all_sets) for anything learner-facing — the
+    frozen file is what keeps week numbers stable across DB changes.
+    """
+    if FROZEN_SETS_PATH.exists():
+        with open(FROZEN_SETS_PATH, encoding="utf-8") as f:
+            data = json.load(f)
+        return [
+            FlashCardSet(
+                week=w["week"],
+                category=w["category"],
+                category_label=w["category_label"],
+                cards=[FlashCard(**c) for c in w["cards"]],
+            )
+            for w in data["weeks"]
+        ]
+    return generate_all_sets(db_path)
+
+
 def get_sets_by_category(db_path: str) -> dict:
     """Return sets grouped by category: {cat: [FlashCardSet, ...]}"""
-    all_sets = generate_all_sets(db_path)
+    all_sets = load_sets(db_path)
     by_cat = {}
     for s in all_sets:
         by_cat.setdefault(s.category, []).append(s)

@@ -25,7 +25,7 @@ sys.path.insert(0, PROJECT_ROOT)
 from web.db import SkiriWebDictionary
 from web.search import search_combined
 from web.search_ranking import rank_results
-from web.flashcards import generate_all_sets
+from web.flashcards import load_sets
 
 DATABASE = os.path.join(PROJECT_ROOT, "skiri_pawnee.db")
 
@@ -522,7 +522,7 @@ def browse_class(cls):
 @app.route("/flashcards")
 def flashcards_index():
     """Overview of all weekly flashcard sets."""
-    sets = generate_all_sets(app.config["DATABASE"])
+    sets = load_sets(app.config["DATABASE"])
     # Group by category for display
     by_cat = {}
     for s in sets:
@@ -533,7 +533,7 @@ def flashcards_index():
 @app.route("/flashcards/<int:week>")
 def flashcard_study(week):
     """Interactive flip-card study session for a specific week."""
-    sets = generate_all_sets(app.config["DATABASE"])
+    sets = load_sets(app.config["DATABASE"])
     current = None
     for s in sets:
         if s.week == week:

@@ -451,7 +451,7 @@ def generate_flashcard_pages(db_path: str, output_dir: Path) -> dict:
     print("[*] Generating flashcard pages...")
     import re
     from jinja2 import Environment, FileSystemLoader
-    from web.flashcards import generate_all_sets
+    from web.flashcards import load_sets
 
     # Register custom filters for static rendering
     def primary_spelling_filter(entry):
@@ -495,7 +495,7 @@ def generate_flashcard_pages(db_path: str, output_dir: Path) -> dict:
         "gram_class_labels": GRAM_CLASS_LABELS,
     }
 
-    sets = generate_all_sets(db_path)
+    sets = load_sets(db_path)
     by_cat = {}
     for s in sets:
         by_cat.setdefault(s.category, []).append(s)

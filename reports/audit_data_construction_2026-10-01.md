@@ -155,6 +155,23 @@ public static build until it has been explicitly reviewed and approved.
 3. ✅ **DONE 2026-10-01** — A3 + A4: definition truncation removed (card faces scroll);
    previously-cut Pitahawirata/Kitkahahki definitions verified complete; 56 multi-sense
    cards now show "sense 1 of N".
-4. B4 + B5 — freeze the curriculum to a reviewed, versioned file.
+4. ✅ **B4 DONE 2026-10-12** — curriculum frozen to `curriculum/flashcard_sets.json`
+   (24 weeks / 387 cards); `web/flashcards.py::load_sets()` serves the frozen file in
+   both the Flask app and the static build, so week numbers no longer shift with DB
+   changes. Regenerating it (`scripts/freeze_flashcard_sets.py --apply`) is now a
+   deliberate, git-reviewable act — which also gives B5 its editorial review hook.
+   B5's human review of the 387-card list itself is still pending.
 5. B2 + B3 — display-layer IPA cleanup + BB orthography labeling (after print-source check).
 6. B6 — community review of Week 20 before (re)publishing it.
+
+### Related work completed 2026-10-12
+- Lesson-vocab dictionary linkage raised from 234/531 (44%) to 339/531 (64%) via
+  `scripts/link_bb_vocab.py` — conservative orthographic matching (unique match +
+  gloss overlap required; Parks entry preferred over its Blue Book import twin).
+  337 lesson vocab rows now show full IPA. 4 judgment calls + 8 genuine homonym
+  ambiguities left unlinked for human review: `reports/bb_vocab_linking.txt`.
+  Remaining 180 unmatched rows are mostly inflected verb forms (expected — they
+  are not dictionary headwords).
+- 14 OCR artifacts in Blue Book lesson titles fixed, each with documented evidence
+  (`scripts/fix_lesson_titles.py`); Lesson 8's garbled title left as printed because
+  the scan offers no clean reading.

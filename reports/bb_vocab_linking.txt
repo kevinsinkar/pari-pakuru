@@ -1,0 +1,309 @@
+BB lesson vocab linking report (applied)
+======================================================================
+
+AUTO-LINKED (95) — unique match + gloss overlap:
+  L 1 "hitu '" (feather) -> SK-hiituq-p390-3856 'hiituʔ'  overlap=['feather']
+  L 1 "hawiu'" (picture) -> BB-hawiu-0015 'hawiuʔ'  overlap=['picture']
+  L 1 "ti'" (this is) -> BB-ti-0084 'tiʔ'  overlap=['<phrase>']
+  L 1 "had'" (yes) -> BB-had-0010 'hadʔ'  overlap=['ye']
+  L 1 "reksu '" (ear of corn) -> BB-reksu-0065 'reksuʔ'  overlap=['corn', 'ear']
+  L 1 'paisits' (nickel) -> BB-paisic-0032 'paisic'  overlap=['nickel']
+  L 1 'terisits' (dime) -> BB-terisic-0081 'terisic'  overlap=['dime']
+  L 1 'tupits' (quarter) -> SK-tuupic-p166-3289 'tuupic'  overlap=['quarter']
+  L 2 'rutpatsat' (snake) -> SK-rutpaacat-p148-2882 'rutpaacat'  overlap=['snake']
+  L 2 'hupirit' (star) -> SK-huupirit-p51-0850 'huupirit'  overlap=['star']
+  L 2 "Uhaiwu'" (Ohio River or "something's always floating down") -> BB-uhaiwu-0090 'uhaiwuʔ'  overlap=['alway', 'down', 'floating', 'ohio', 'river', 'something']
+  L 4 'kskitiiks' (four) -> SK-kskiitiqiks-p448-3997 'kskiitiʔiks'  overlap=['four']
+  L 4 "ksk'iksapits" (six) -> SK-kskiksaapic-p101-1943 'kskiksaapic'  overlap=['six']
+  L 4 'pitkus•iksapits' (seven) -> SK-pitkusiksaapic-p114-2209 'pitkusiksaapic'  overlap=['seven']
+  L 4 "paks•ku'ku'" (hat) -> SK-pakskuukuquq-p109-2106 'pakskuukuʔuʔ'  overlap=['hat']
+  L 4 "rus•ku'ku'" (pants) -> SK-ruuskuukuquq-p150-2923 'ruuskuukuʔuʔ'  overlap=['pant']
+  L 4 "asuru '" (shoes) -> SK-asuuruq-p18-0219 'asuuruʔ'  overlap=['shoe']
+  L 4 'pita' (a man, some men) -> SK-piita-p113-2176 'piita'  overlap=['man']
+  L 5 "hakau'" (mouth) -> BB-hakau-0012 'hakauʔ'  overlap=['mouth']
+  L 5 "usu'" (hair) -> SK-uusuq-p173-3430 'uusuʔ'  overlap=['hair']
+  L 5 "rusu'" (buttocks) -> SK-ruusuq-p150-2925 'ruusuʔ'  overlap=['buttock']
+  L 5 "kskits•kutsu'" (thumb) -> SK-kskiickucuuq-p448-3992 'kskiickucuuʔ'  overlap=['thumb']
+  L 6 "pirau'" (child) -> BB-pirau-0046 'pirauʔ'  overlap=['child']
+  L 6 "irari '" (friend, brother) -> SK-iraariq-p64-1121 'iraariʔ'  overlap=['brother', 'friend']
+  L 6 'piraski' (boy) -> SK-piiraski-p460-4096 'piiraski'  overlap=['boy']
+  L 6 'witesatki' (male adolescent, "buck") -> BB-witesatki-0093 'witesatki'  overlap=['adolescent', 'buck', 'male']
+  L 6 'tsuraki' (girl) -> SK-cuuraki-p32-0536 'cuuraki'  overlap=['girl']
+  L 6 "tsurasu'" (female adolescent, maiden) -> SK-cuuraasuq-p32-0535 'cuuraasuʔ'  overlap=['maiden']
+  L 6 'tsustit' (elderly woman) -> SK-cuustit-p32-0540 'cuustit'  overlap=['woman']
+  L 7 "irari'" (my brother (of a man)) -> SK-iraariq-p64-1121 'iraariʔ'  overlap=['brother']
+  L 7 "irari'" (my sister (of a woman)) -> SK-iraariq-p64-1121 'iraariʔ'  overlap=['sister']
+  L 7 "iratsti '" (my brother (of a woman)) -> SK-iraactiq-p64-1117 'iraactiʔ'  overlap=['brother']
+  L 7 'raktiki' (my grandchild) -> SK-raktiiki-p135-2664 'raktiiki'  overlap=['grandchild']
+  L 8 "papitsisu '" (metal, money, a dollar) -> SK-paapicisuq-p454-4063 'paapicisuʔ'  overlap=['metal', 'money']
+  L 8 'papitsis•pahat' (penny) -> SK-paapicispahat-p454-4057 'paapicispahat'  overlap=['penny']
+  L 8 'paisits' (nickel) -> BB-paisic-0032 'paisic'  overlap=['nickel']
+  L 8 'teresits' (dime) -> BB-teresic-0080 'teresic'  overlap=['dime']
+  L 8 'tupits' (quarter) -> SK-tuupic-p166-3289 'tuupic'  overlap=['quarter']
+  L 8 'sikspits' (75¢) -> BB-sikspic-0078 'sikspic'  overlap=['75']
+  L 8 'raku•kita' (fourteen) -> SK-rakuukita-p136-2671 'rakuukita'  overlap=['fourteen']
+  L 8 "pitau '" (twenty) -> SK-piitaquq-p113-2177 'piitaʔuʔ'  overlap=['twenty']
+  L 8 "tsktis•kakusu'" (chair) -> BB-cktiskakusu-0003 'cktiskakusuʔ'  overlap=['chair']
+  L 8 'ru•kat•awi•riku' (window, mirror) -> BB-rukatawiriku-0075 'rukatawiriku'  overlap=['mirror', 'window']
+  L 8 "reka .kusu'" (door) -> BB-reka-kusu-0062 'reka.kusuʔ'  overlap=['door']
+  L 8 "ra•reka .kusu'" (door) -> BB-rareka-kusu-0057 'rareka.kusuʔ'  overlap=['door']
+  L 9 'retahkats' (eagle) -> BB-retahkac-0067 'retahkac'  overlap=['eagle']
+  L 9 'rahrurahki' (deer, large mammal) -> BB-rahrurahki-0053 'rahrurahki'  overlap=['deer', 'large', 'mammal']
+  L 9 'tspirarus' (housefly) -> SK-cpiiraruus-p31-0508 'cpiiraruus'  overlap=['housefly']
+  L 9 'tskurahkeks' (frog) -> BB-ckurahkeks-0004 'ckurahkeks'  overlap=['frog']
+  L 9 'Hawit' (East) -> SK-haawit-p37-0630 'haawit'  overlap=['east']
+  L 9 'Hatskat' (West) -> BB-hackat-0009 'hackat'  overlap=['west']
+  L10 "paresu '" (hunter) -> BB-paresu-0036 'paresuʔ'  overlap=['hunter']
+  L10 'pawa' (farmer) -> BB-pawa-0041 'pawa'  overlap=['farmer']
+  L10 "pitarau '" (husband) -> BB-pitarau-0048 'pitarauʔ'  overlap=['husband']
+  L10 "raharisu'" (hoe) -> SK-raaharisuq-p117-2269 'raaharisuʔ'  overlap=['hoe']
+  L10 "pawaktiku'" (preacher) -> BB-pawaktiku-0042 'pawaktikuʔ'  overlap=['preacher']
+  L10 "het•kata'ku" (sheriff, office of the law) -> BB-hetkata-ku-0016 'hetkataʔku'  overlap=['law', 'office', 'sheriff']
+  L10 "ti•kuwtitiku'" (judge, 'says it one time') -> BB-tikuwtitiku-0083 'tikuwtitikuʔ'  overlap=['judge', 'say', 'time']
+  L10 'uruksas' (lance, spear) -> BB-uruksas-0091 'uruksas'  overlap=['lance', 'spear']
+  L10 "rahi•kutsu'" (brave) -> SK-raahikuucuq-p117-2276 'raahikuucuʔ'  overlap=['brave']
+  L10 "resaru'" (chief, leader) -> BB-resaru-0066 'resaruʔ'  overlap=['chief', 'leader']
+  L10 "rehkit•awiu'" (chairman) -> BB-rehkitawiu-0061 'rehkitawiuʔ'  overlap=['chairman']
+  L11 "ha .kawahtsisu '" (food) -> SK-haakawaahcisuq-p35-0588 'haakawaahcisuʔ'  overlap=['food']
+  L11 'kisatski' (meat) -> SK-kisaacki-p98-1883 'kisaacki'  overlap=['meat']
+  L11 "rekitsu'" (sugar) -> BB-rekicu-0064 'rekicuʔ'  overlap=['sugar']
+  L11 "rekits•tiwiru'" (candy) -> BB-rekictiwiru-0063 'rekictiwiruʔ'  overlap=['candy']
+  L11 'patsuka' (turnips) -> SK-pacuukaq-p107-2049 'pacuukaʔ'  overlap=['turnip']
+  L11 "rikisu'" (corn) -> SK-rikiisuq-p492-4194 'rikiisuʔ'  overlap=['corn']
+  L11 'ra•kits•katit' (coffee) -> SK-rakickaatiit-p134-2631 'rakickaatiit'  overlap=['coffee']
+  L11 "ripiku '" (eggs) -> SK-ripiikuq-p145-2831 'ripiikuʔ'  overlap=['egg']
+  L13 "Pari'" (Pawnee) -> BB-pari-0039 'pariʔ'  overlap=['pawnee']
+  L13 'skurihkat' ("school grounds," the tribal offices) -> BB-skurihkat-0079 'skurihkat'  overlap=['ground', 'office', 'school', 'tribal']
+  L13 'Rihita-wiru' (Ponca country) -> SK-riihitawiru-p141-2796 'Riihitawiru'  overlap=['country', 'ponca']
+  L13 'Kitkahahki' ("Little Mud Lodge Village." Or, perhaps "Little Swamp" from kit-kaharu ' , swamp, slough. Known in early literature as "Republican Pawnee," for the river where the villages were.) -> SK-kitkahaahki-p99-1923 'Kitkahaahki'  overlap=['republican']
+  L13 'Pitahawirata' ("Man Going East" or "Man Going Downstream." The first independent Southern Band, given birth by someone 's religious vision. Known as Tap-age (noisy) by the French on account of their "pentecostal" type of early morning prayers.) -> SK-piitahaawiraata-p113-2178 'Piitahaawiraata'  overlap=['band']
+  L13 'Tuhwits•Pihat .' ("Camp on the Ridge") -> BB-tuhwicpihat-0087 'tuhwicpihat'  overlap=['camp', 'ridge']
+  L13 "Tuhwa•Hu'kasa" ("Shady Lane") -> BB-tuhwahu-kasa-0086 'tuhwahuʔkasa'  overlap=['lane', 'shady']
+  L13 "Tskiri•Raru'" ("Wolf Ways") -> BB-ckiriraru-0002 'ckiriraruʔ'  overlap=['way', 'wolf']
+  L15 "RI•KATIHARU'" (The Year) -> SK-rikatihaaruq-p491-4167 'rikatihaaruʔ'  overlap=['year']
+  L15 'riat' (summer) -> SK-riqaat-p139-2753 'riʔaat'  overlap=['summer']
+  L15 'retskuhke' (fall) -> BB-reckuhke-0060 'reckuhke'  overlap=['fall']
+  L19 "rahesa'" (tomorrow (that day)) -> BB-rahesa-0051 'rahesaʔ'  overlap=['day', 'tomorrow']
+  L19 'Ri•katihah•tirara' (January) -> SK-rikatihaahtiiraraq-p491-4161 'rikatihaahtiiraraʔ'  overlap=['january']
+  L19 'Ri•katihah•tirara' (The New Year) -> SK-rikatihaahtiiraraq-p491-4161 'rikatihaahtiiraraʔ'  overlap=['new', 'year']
+  L19 "Piraparu'" (Dreary Month) -> BB-piraparu-0044 'piraparuʔ'  overlap=['dreary', 'month']
+  L19 "Pa•hutawi•u '" (Windy Month) -> BB-pahutawiu-0031 'pahutawiuʔ'  overlap=['month', 'windy']
+  L19 'Pa•riat' (Month of Summer) -> BB-pariat-0038 'pariat'  overlap=['month', 'summer']
+  L19 'Ri•katihar•rikarikat' (Half Year) -> BB-rikatiharrikarikat-0071 'rikatiharrikarikat'  overlap=['half', 'year']
+  L19 'Tskirih•kapira' (Mad Dog Month) -> BB-ckirihkapira-0001 'ckirihkapira'  overlap=['dog', 'mad', 'month']
+  L19 "Pirau Rarah•kata•ispu'" (September) -> SK-piiraquq_rarahkaataqiispuu-p460-4085 'Piiraʔuʔ Rarahkaataʔiispuu'  overlap=['september']
+  L19 'Retskuhke' (Fall) -> BB-reckuhke-0060 'reckuhke'  overlap=['fall']
+  L19 "Ha•karu'h•kutsu'" (Feast) -> BB-hakaru-hkucu-0011 'hakaruʔhkucuʔ'  overlap=['feast']
+  L19 "Kskitiiks Ra sakuru'" (Thursday) -> SK-kskiitiqiks_rasakuuru-p101-1939 'Kskiitiʔiks Rasakuuru'  overlap=['thursday']
+  L19 'Parae' (Friday) -> BB-parae-0035 'parae'  overlap=['friday']
+  L19 "Periku'" (Seeing (visiting) Day) -> BB-periku-0043 'perikuʔ'  overlap=['day', 'seeing', 'visiting']
+
+PROPAGATED (10) — same BB form already linked elsewhere:
+  L 3 "akaru '" (building) -> SK-akaq-p9-0103 akaaruʔ
+  L19 "Piraparu'" (February) -> BB-piraparu-0044 piraparuʔ
+  L19 "Pa•hutawi•u '" (March) -> BB-pahutawiu-0031 pahutawiuʔ
+  L19 'Pa•riat' (June) -> BB-pariat-0038 pariat
+  L19 'Ri•katihar•rikarikat' (July) -> BB-rikatiharrikarikat-0071 rikatiharrikarikat
+  L19 'Tskirih•kapira' (August) -> BB-ckirihkapira-0001 ckirihkapira
+  L19 "Pirau Rarah•kata•ispu'" (When the kids go back to school) -> SK-piiraquq_rarahkaataqiispuu-p460-4085 Piiraʔuʔ Rarahkaataʔiispuu
+  L19 'Retskuhke' (October) -> BB-reckuhke-0060 reckuhke
+  L19 "Ha•karu'h•kutsu'" (November) -> BB-hakaru-hkucu-0011 hakaruʔhkucuʔ
+  L19 "Periku'" (Saturday) -> BB-periku-0043 perikuʔ
+
+NEEDS REVIEW (4) — unique spelling match, no gloss overlap (NOT linked):
+  L11 'its' (potatoes) ~ SK-iic-p408-3895 'iic' glossed: Indian potato, wild potato (Apios americana).
+  L13 'Pasuhara•ru' (Oto country) ~ SK-pasuuhararu-p111-2148 'Pasuuhararu' glossed: Red Rock, Okla.
+  L13 "kit-kaharu '" (swamp, slough) ~ SK-kitkahaaruq-p99-1928 'kitkahaaruʔ' glossed: earthlodge village.
+  L18 "rariksisu '" (a lot, very) ~ SK-raariksisuq-p123-2399 'raariksisuʔ' glossed: true, real, authentic.
+
+AMBIGUOUS (8) — multiple entries share the key (NOT linked):
+  L 1 "raku'" (box) ~ ['BB-raku-0056', 'SK-raakuq-p120-2340', 'SK-raakuq-p120-2341']
+  L 1 "riksu '" (arrow) ~ ['BB-riksu-0074', 'SK-riiksuq-p141-2811', 'SK-riiksuq-p141-2812']
+  L 2 'pa' (moon) ~ ['BB-pa-0029', 'SK-paa--p453-4024', 'SK-paa-p453-4021', 'SK-paa-p453-4022', 'SK-paa-p453-4023']
+  L 3 'wa +' (mound, hill, mountain) ~ ['SK-waa-p173-3440', 'SK-waa-p174-3441']
+  L 4 '+ ra' (to have) ~ ['SK--raa-p114-2223', 'SK-raa--p114-2222', 'SK-raa--p114-2225', 'SK-raa-p114-2224', 'SK-raqa-p114-2217']
+  L 9 '+ha +' (in the water) ~ ['SK-haa-p33-0546', 'SK-haaqaq-p33-0547']
+  L 9 '+hu +' (it has sunk (beneath) a surface) ~ ['SK-huu--p48-0814', 'SK-huuq-p48-0815']
+  L11 "6u'" (mush) ~ ['SK-u--p167-3294', 'SK-uu-p171-3388']
+
+NO MATCH (180) — mostly inflected verbs/phrases, expected:
+  L 2 'ti pahaat' (it's red)
+  L 2 'ti tareus' (it's blue)
+  L 2 'ti takaa' (it's white)
+  L 2 'ti katiit' (it's black)
+  L 2 'ti kaats' (it's grey)
+  L 2 'ti katasa' (it's against it)
+  L 2 'ti•tska•katasa' (it's cloudy)
+  L 3 'ti hak•tsa' (a log, any lying wood)
+  L 3 'ti hak•tsa' (it's wood lying)
+  L 3 'hak +' (wood, tree)
+  L 3 'ti wa• ku' (a mountain, hill)
+  L 3 'ti wa• ku' (it's a mound sitting)
+  L 3 "ti kata•rihu'" (it's broad)
+  L 3 'ti keats' (it's long)
+  L 3 'kaki keats' (it's short)
+  L 3 "kaki rihu'" (it's small)
+  L 3 'tira ha•pi' (that's a tree,)
+  L 3 'tira ha•pa•wi' (those are trees)
+  L 3 'ti hih•wa' (that's a yard, grass planted)
+  L 3 'ti hih•tsa' (that's cut hay)
+  L 3 'ti ra•wa•ku' (there is a mountain, mountains)
+  L 3 'ti ra .wa•raruhat' (there are mountains)
+  L 3 'ti kitsu•tsis' (it's thick)
+  L 3 'kaki kItsu•tsis.' (it's thin)
+  L 3 'ti ha .pi•keats' (it 's a tall tree)
+  L 3 'ti htira•keats' (he's tall)
+  L 3 "t 'ekah•wi•keats" (it's a tall building)
+  L 3 "t'ehit" (he's fat)
+  L 3 'ti risat' (it's extra large)
+  L 3 'ti rihu' (it's big)
+  L 3 'ti ha"k•tihu' (it's big wood)
+  L 4 'sihuks' (five)
+  L 4 'taw .lksapits' (eight)
+  L 4 'rihuks•irfwara' (nine)
+  L 4 "rIhuks•iri'" (ten)
+  L 4 'asuri•tsahriks' (moccasins (shoes of the people))
+  L 5 "kirfku'" (eye)
+  L 5 "tiku•raari'" (it's hurting me)
+  L 5 "kskitsu '" (finger)
+  L 6 "ti•wari'" (he is going about, is still living)
+  L 6 "t 'itka" (he is asleep)
+  L 6 "tut•ari '" (he is doing it)
+  L 6 "t 'ewasku" (he is laughing)
+  L 6 "t'eku'h•taku'" (he is playing)
+  L 6 "tut•a•wahri'" (he's working)
+  L 6 "ti .raruku'" (he 's singing)
+  L 7 "itahri'" (my sister (of a man))
+  L 7 'hags' (your father)
+  L 7 'tsuwat' (my daughter)
+  L 7 'swat' (your niece, nephew)
+  L 7 "ti .wari '" (he's (still) getting around)
+  L 7 "hidsti '" (his father)
+  L 7 "hisdsti'" (his mother)
+  L 7 "hikdri'" (his grandmother)
+  L 7 "hipdkti'" (his grandfather)
+  L 7 "hiwdhri'" (his niece, nephew)
+  L 7 'hiwdririks' (his uncle)
+  L 8 "ti .raspe '" (he's looking for it)
+  L 8 'ti•huras' (he has found it)
+  L 8 "t'erit" (he is standing)
+  L 8 'tuks•arit' (he was standing)
+  L 8 'ti•hatuh•kaarit' (he is standing around in the road)
+  L 8 'tuks•hatuh•kaarit' (he was standing around in the road)
+  L 8 "ti .kaku'" (he's inside, was inside)
+  L 8 "ti•ukah•kawari '" (he is or has been walking around outside)
+  L 8 'ti .ukah .kaari t' (he is or has been standing around outside)
+  L 8 'sihuks•tarti .kita' (fifteen)
+  L 8 "pitkti .ka•ke'" (eighteen)
+  L 8 'pitati .asku' (twenty-one)
+  L 8 'tuks•kata•ku hiri' (It was (sitting) behind the door)
+  L 9 "t 'ewari '" (it is flying about)
+  L 9 "ti•hawari'" (it is swimming, wading)
+  L 9 "ti•'isat" (it has disappeared)
+  L 9 'ti•ka•isat' (it has disappeared into (woods, standing corn, buildings))
+  L 9 'ti•hu•isat' (he went home)
+  L 9 "tu'h•kuksas" (he ran away)
+  L 9 "Hiri Ra•ka•hurah•katiit•u'" (North)
+  L 9 'Hiri Ra•saka•ku' (South)
+  L10 "ti•taka•asiku '" (he's shooting)
+  L10 'ti•taka•asit' (he has shot)
+  L10 "ti•hih•katsaku '" (she's chopping weeds)
+  L10 'ti teriwis' (it's cross-ways)
+  L10 'ti .kuwutit' (he is killing it)
+  L10 "ti•kawutiku'" (he (has) killed it)
+  L10 "ti•wa'ktiku'" (he is killing them (here and there))
+  L10 'ti•hirasa' (he's first, he's the leader.)
+  L11 'tiku•kiktit' (I'm thirsty)
+  L11 'tiku•hatstahis' (I'm thirsty)
+  L11 'tuh•tahare' (it tastes good)
+  L11 'tuh•kaharawere' (it smells good)
+  L11 'tuks•kaharurit' (he smelled it)
+  L11 'tut•kirahkata' (he's drunk (full of whiskey))
+  L11 "tut•atsiks•u'" (he's drunk (he's feeling it))
+  L11 "tihr'a:kawahtsu'" (they are eating)
+  L11 "tihr'a•kawahtsista'" (they 're going to eat)
+  L11 "wusu '" (suds)
+  L12 'stiks•u' (give it to him)
+  L12 'stiruks•tat' (take it from him)
+  L12 'suks•tapu' (buy it)
+  L12 'rtiruks•tapu' (sell it (let him buy it))
+  L12 '(we) tiku•rapu' (I sold it)
+  L12 "kesku•'u" (give it to me)
+  L12 'tdt•huras' (I found it)
+  L12 'tut .stakis' (he's a miser)
+  L12 'ti kapakis' (he's poor)
+  L12 "ti witstI rihu'" (it's expensive)
+  L13 "raku•kariu'" (many)
+  L13 "hiri ra•ttirihu•ru'" (the big city)
+  L13 'hiri ra•wa•ra•ruhat' (the mountains, "where the mountains are ")
+  L13 'Pahriksukat hiri ra•huri•wawi' (Sioux country (where the Sioux live))
+  L13 "Tuhkaka' hiri rd .huri•wawi" (Crow country (where the Crow live))
+  L13 "TSKIRI AKITARU'" (Skiri Bands)
+  L14 'tut•erit' (he has seen it, he saw it)
+  L14 "tut•eriku'" (he is looking at it)
+  L14 'ttItsiks•erit' (he saw it)
+  L14 "tu'ks•tihu'" (it was big)
+  L14 'ti•waka•rihu' (it is loud)
+  L14 "tuks•paka•rihu'" (it was loud)
+  L14 'tuks•ta•pahit' (it was quiet)
+  L14 "t'iks•tauk•at" (he (has) touched it (he made his hand go))
+  L14 'tuks•iks•tauk•at' (he touched it)
+  L14 'ti .tahit' (he (has) hit it)
+  L14 'tut•urikut' (he has taken hold of it)
+  L14 'ru ti ra•pdrihrit' (it is smooth)
+  L14 'ru tuks•ta•pdrihrit' (it was smooth)
+  L14 'ti kasis' (it's hard)
+  L14 'ti katus' (it's flat)
+  L14 'td taris' (it's heavy)
+  L15 'we ra•katarah•kaa' (spring (when the green comes out))
+  L15 "(we) t'at•tstI a" (it's raining)
+  L15 "t'at•tsti•a•usuku '" (it rains (habitually))
+  L15 "we tuh•sa'" (it's snowing)
+  L15 "tuh•sa .usuku'" (it snows)
+  L15 "rahtiritat ta hti .tuhtu'" (it's always cold)
+  L15 "ti•pitsi'" (it's cold (in a room))
+  L15 'ti•hurerus' (it is a frost (imperfect))
+  L15 "ti•hurertisuku'" (it frosts)
+  L15 "tih•tawa•karukusuku'" (they harvest)
+  L16 'kiru rira•awi•u' (when?)
+  L16 'ti kekaruus' (it's early morning)
+  L16 "ti saku'h kit'arit" (it's noon)
+  L16 'we ti pitku' (it's two o'clock)
+  L16 'we ti pitku a ikarikat' (it's two thirty)
+  L16 "we tiu'h•kita•watat pitku" (it's past two)
+  L16 "we tiwitsuh•ta' tawit" (it's close to three)
+  L16 "we tatih•wata'" (I got up)
+  L16 'we tat•sta' (I lay down, I am lying down.)
+  L16 'we tatut•d .wahri•uls•at' (I went to work)
+  L16 'we to sak•ta' (it's sunrise)
+  L16 'we ti hurarawa' (it's twilight)
+  L16 'we ti sakurisat' (it's evening)
+  L16 'we ti sakuh .teriwi .ra-hat' (it's afternoon)
+  L16 'we ti .witsat' (it's time (he arrived))
+  L16 "we ti .witsat ratkut•a .wahri'" (it's time for me to work)
+  L17 'tiheruks•tsakariki' (the other day)
+  L17 'tiheraruks•tsaku•rarata' (in days past)
+  L17 'tiherukspa•ariki' (last month)
+  L17 "tiheruks•ti•katiharu'" (last year)
+  L17 'we ti•rakea' (a long time ago)
+  L17 "we ti sihuks sakuru'" (five days ago)
+  L17 'kekaruskat' (early this morning)
+  L18 'tiku•kskirawa' (I've been sick)
+  L18 "rariksisu tatutsiks•a•wahri '" (I've been very busy)
+  L18 "ru kakatut•te'tsiks•u'" (I'm worried, I feel bad)
+  L19 "tihe ra•pa•ariki'" (next month)
+  L19 "tihe ri•katiharu'" (next year)
+  L19 'we tat•kata•hat' (I quit!)
+  L19 "tihe ra•sa'kurrarata" (next week (those days that will come))
+  L19 "sihuks sakuru '" (in five days)
+  L19 "sihuks ri•katiharu'" (in five years)
+  L19 "t'a•hista" (he will come)
+  L19 "tu'h•ra•sitik'sta" (it will happen)
+  L19 "Ra .pa•u R'at•tsuahu'" (April)
+  L19 "Ra .pa•u R'at•tsuahu'" (Rainy Month)
+  L19 "Hri•ratawi Ri•wariku'" (May)
+  L19 "Hri•ratawi Ri•wariku'" (Memorial Month)
+  L20 'raskut•ara' (for you to do it)
+  L20 'rakut•ara' (for him or her to do it)
+  L20 'raskti .u•ta' (for you to go)
+  L20 'rakti•u•ta' (for him to go)
