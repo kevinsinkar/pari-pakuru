@@ -1,0 +1,81 @@
+fix_pronunciations report — 2026-11-08 08:42
+entries checked: 4330; entries to change: 1273
+
+== alternation_restored: 604
+   kaahak                       [•kaa-hə{k/t}•]                          'kah-huh'                          -> 'kah-huh(k/t)'
+   aahkacaraʔuk                 [•aah-kə-čə-rə-ʔu{k/t}•]                 "ahh-kuh-chuh-duh-'oo"             -> "ahh-kuh-chuh-duh-'oo(k/t)"
+   aahkarahwaasariitik          [•aah-kə-rəh-waa-sə-rii-tɪ{k/t}•]        'ahh-kuh-duhh-wah-suh-dee-tih'     -> 'ahh-kuh-duhh-wah-suh-dee-tih(k/t)'
+   aahkataarik                  [•aah-kə-taa-rɪ{k/t}•]                   'ahh-kuh-tah-dih'                  -> 'ahh-kuh-tah-dih(k/t)'
+   aahwiriik                    [•aah-wɪ-rii{k/t}•]                      'ahh-wih-dee'                      -> 'ahh-wih-dee(k/t)'
+   aahwirik                     [•aah-wɪ-rɪ{k/t}•]                       'ahh-wih-dih'                      -> 'ahh-wih-dih(k/t)'
+   acikstaʔuk                   [•ə-čɪks-tə-ʔu{k/t}•]                    "uh-chihks-tuh-'oo"                -> "uh-chihks-tuh-'oo(k/t)"
+   acikstaʔuukuk                [•ə-čɪks-tə-ʔuu-kʊ{k/t}•]                "uh-chihks-tuh-'oo-koo"            -> "uh-chihks-tuh-'oo-koo(k/t)"
+   acikstarahkistaʔuk           [•ə-čɪks-tə-rəh-kɪs-tə-ʔu{k/t}•]         "uh-chihks-tuh-duhh-kihs-tuh-'oo"  -> "uh-chihks-tuh-duhh-kihs-tuh-'oo(k/t)"
+   acikstiwarik                 [•ə-čɪks-tɪ-wə-rɪ{k/t}•]                 'uh-chihks-tih-wuh-dih'            -> 'uh-chihks-tih-wuh-dih(k/t)'
+   aciksuhuritik                [•ə-čɪk-sʊ-hʊ-rɪ-tɪ{k/t}•]               'uh-chihk-soo-hoo-dih-tih'         -> 'uh-chihk-soo-hoo-dih-tih(k/t)'
+   aciksuuwicakstaʔuk           [•ə-čɪk-suu-wɪ-čəks-tə-ʔu{k/t}•]         "uh-chihk-soo-wih-chuhks-tuh-'oo"  -> "uh-chihk-soo-wih-chuhks-tuh-'oo(k/t)"
+
+== optional_sound_marked: 578
+   kaaʔaah                      [•kaa-ʔaa(h)•]                           "kah-'ahh"                         -> "kah-'ah(h)"
+   kaacatk                      [•kaa-čət(k)•]                           'kah-chuhtk'                       -> 'kah-chuht(k)'
+   kaackawuh                    [•kaats-kə-wʊ(h)•]                       'kahts-kuh-wooh'                   -> 'kahts-kuh-woo(h)'
+   kaacuuh                      [•kaa-čuu(h)•]                           'kah-chooh'                        -> 'kah-choo(h)'
+   aahkarahwaasar               [•aah-kə-rəh-waa-sə(r)•]                 'ahh-kuh-duhh-wah-suhd'            -> 'ahh-kuh-duhh-wah-suh(d)'
+   aahkatakus                   [•aah-kə-tə-kʊ(s)•]                      'ahh-kuh-tuh-koos'                 -> 'ahh-kuh-tuh-koo(s)'
+   acikstaraaruhuur             [•ə-čɪks-tə-raa-rʊ-huu(r)•]              'uh-chihks-tuh-dah-doo-hood'       -> 'uh-chihks-tuh-dah-doo-hoo(d)'
+   acikstawiriir                [•ə-čɪks-tə-wɪ-rii(r)•]                  'uh-chihks-tuh-wih-deed'           -> 'uh-chihks-tuh-wih-dee(d)'
+   acikstiihuur                 [•ə-čɪks-tii-huu(r)•]                    'uh-chihks-tee-hood'               -> 'uh-chihks-tee-hoo(d)'
+   aciksuhuriwaar               [•ə-čɪk-sʊ-hʊ-rɪ-waa(r)•]                'uh-chihk-soo-hoo-dih-wahd'        -> 'uh-chihk-soo-hoo-dih-wah(d)'
+   aciksuhuriwaar [+ neg.]      [•a-cik-su-hu-ri-waa(r)•]                'uh-tsihk-soo-hoo-dih-wahd'        -> 'uh-tsihk-soo-hoo-dih-wah(d)'
+   acuhurihuur                  [•ə-čʊ-hʊ-rɪ-huu(r)•]                    'uh-choo-hoo-dih-hood'             -> 'uh-choo-hoo-dih-hoo(d)'
+
+== bb_resyllabified: 90
+   ckirihkapira                 [•tskɪrɪhkəpɪrə•]                        'tskihdihhkuhpihduh'               -> 'tskih-dihh-kuh-pih-duh'
+   ckiriraruʔ                   [•tskɪrɪrəruuʔ•]                         "tskihdihduhdoo'"                  -> "tskih-dih-duh-doo'"
+   cktiskakusuʔ                 [•tsktɪskəkuusuuʔ•]                      "tsktihskuhkoosoo'"                -> "tsktihs-kuh-koo-soo'"
+   ckurahkeks                   [•tskuurəhkeks•]                         'tskooduhhkeks'                    -> 'tskoo-duhh-kehks'
+   cpirarus                     [•tspɪrəruus•]                           'tspihduhdoos'                     -> 'tspih-duh-doos'
+   curaki                       [•tsuurəkɪ•]                             'tsooduhkih'                       -> 'choo-duh-kih'
+   curasuʔ                      [•tsuurəsuuʔ•]                           "tsooduhsoo'"                      -> "choo-duh-soo'"
+   custit                       [•tsuustɪt•]                             'tsoostiht'                        -> 'choos-tiht'
+   hackat                       [•hətskət•]                              'huhtskuht'                        -> 'huhts-kuht'
+   hadʔ                         [•hərʔ•]                                 "huhd'"                            -> "huh'"
+   hakaruʔhkucuʔ                [•həkəruuʔhkuutsuuʔ•]                    "huhkuhdoo'hkootsoo'"              -> "huh-kuh-doo'h-koo-choo'"
+   hakauʔ                       [•həkəuuʔ•]                              "huhkuhoo'"                        -> "huh-kuh-oo'"
+
+== vowel_run_fixed: 1
+   caʔuuhtuʔ                    [čə-ʔuʊh-tʊʔ]                            "chuh-'ooooh-too'"                 -> "chuh-'ooh-too'"
+
+== for review, not changed: headword ends in -ʔa but Parks's phonetic form has no glottal stop (32)
+   awaʔa                        [•a-waa•]                          uh-wah
+   awiiraʔa                     [•ə-wii-raa•]                      uh-wee-dah
+   awikaaraʔa                   [•ə-wɪ-kaa-raa•]                   uh-wih-kah-dah
+   awiraʔa                      [•a-wi-raa•]                       uh-wih-dah
+   huutaʔa                      [•huu-taa•]                        hoo-tah
+   iksucaʔa                     [•ɪk-sʊ-čaa•]                      ihk-soo-chah
+   kataʔa                       [•kə-taa•]                         kuh-tah
+   kataʔa                       [•kə-taa•]                         kuh-tah
+   kataraʔa                     [•kə-tə-raa•]                      kuh-tuh-dah
+   kicawihuukaaraʔa             [•kɪ-čə-wɪ-huu-kaa-raa•]           kih-chuh-wih-hoo-kah-dah
+   kickataʔa                    [•kɪts-kə-taa•]                    kihts-kuh-tah
+   kickataʔa                    [•kɪts-kə-taa•]                    kihts-kuh-tah
+   kickataraʔa                  [•kɪts-kə-tə-raa•]                 kihts-kuh-tuh-dah
+   kiispakaracaʔa               [•kiis-pə-kə-rə-čaa•]              kees-puh-kuh-duh-chah
+   kuriictaʔa                   [•kʊ-riits-taa•]                   koo-deets-tah
+   kuriictaraʔa                 [•kʊ-riits-tə-raa•]                koo-deets-tuh-dah
+   piraʔa                       [•pɪ-raa•]                         pih-dah
+   raʔa                         [•raa•]                            dah
+   raahuutaʔa                   [•raa-huu-taa•]                    dah-hoo-tah
+   racapiraʔa                   [•rə-čə-pɪ-raa•]                   duh-chuh-pih-dah
+   rahkataʔa                    [•rəh-kə-taa•]                     duhh-kuh-tah
+   rahkatapiraʔa                [•rəh-kə-tə-pɪ-raa•]               duhh-kuh-tuh-pih-dah
+   saaktaʔa                     [•saak-taa•]                       sahk-tah
+   taʔa                         [•taa•]                            tah
+   ucaʔa                        [•ʊ-čaa•]                          oo-chah
+   ukaaraʔa                     [•ʊ-kaa-raa•]                      oo-kah-dah
+   ukaawaʔa                     [•ʊ-kaa-waa•]                      oo-kah-wah
+   wakaahtaʔa                   [•wə-kaah-taa•]                    wuh-kahh-tah
+   wakahuutaʔa                  [•wə-kə-huu-taa•]                  wuh-kuh-hoo-tah
+   aakapahaʔa                   [•aa-kə-pə-haa•]                   ah-kuh-puh-hah
+   hikstaʔa                     [•hɪks-taa•]                       hihks-tah
+   kicuutaʔa                    [•kɪ-čuu-taa•]                     kih-choo-tah

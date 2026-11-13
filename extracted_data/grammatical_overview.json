@@ -10,10 +10,10 @@
       },
       {
         "heading": "Noun Inflection: Case and Plurality",
-        "content": "Nouns in Skiri fall into three classes on the basis of their inflectional marking. There are two cases, instrumental ('with, using') and locative ('in, on, at; among'). Plural number is also marked for some nouns. Instrumental case is marked on all nouns—or at least on all those where it is semantically appropriate—by the suffix biriʔ. One class of nouns also uses biriʔ to mark locative case, as in iksiriʔ 'by hand; on the hand'. These nouns, which are mostly body part terms, mark plural number with the suffix -raar-, which occurs after the noun stem and before -biriʔ, as in ikstaaririʔ 'with the hands; on the hands'. Other classes of nouns have no special marking for plural, and mark locative case by either -ru or -kat (table 4).\nIn addition to its productive uses as instrumental and body-part locative, -biriʔ also occurs with a small set of noun stems, again primarily body part terms, to derive their independent forms; i.e., the locative form of these nouns is also the independent form, even though independent nouns are usually derived with the nominal absolutive suffix -uʔ (see below). Examples of locative forms serving also as absolutive forms are askatahciruʔ 'sole (of the foot)' and riitiriʔ 'small of the back'.\nThe suffix -ru 'among, in the country/territory of' forms the locative of tribal names and at least one state name. Examples are sahiiru 'in Cheyenne country' (< sahii 'Cheyenne'); pasaasiru 'among the Osages; in Osage territory' (< pasaasi 'Osage'); and tiksastu 'in Texas' (< English Texas). A variant of -ru is -wiru, which occurs with many names, usually ones ending in the vowel a, as uukaahpaawiru 'among the Quapaw' (< uukaahpaa 'Quapaw') and riihitawiru 'among the Ponca' (< riihita 'Ponca').\nThe locative suffix -kat generally translates as 'in, on' but with animate nouns it frequently translates as 'among'; e.g., akahkat 'on the dwelling' (< akar- + -kat); asaakat 'among the horses' (< asaa- 'horse' + -kat).",
+        "content": "Nouns in Skiri fall into three classes on the basis of their inflectional marking. There are two cases, instrumental ('with, using') and locative ('in, on, at; among'). Plural number is also marked for some nouns. Instrumental case is marked on all nouns—or at least on all those where it is semantically appropriate—by the suffix hiriʔ. One class of nouns also uses hiriʔ to mark locative case, as in iksiriʔ 'by hand; on the hand'. These nouns, which are mostly body part terms, mark plural number with the suffix -raar-, which occurs after the noun stem and before -hiriʔ, as in ikstaaririʔ 'with the hands; on the hands'. Other classes of nouns have no special marking for plural, and mark locative case by either -ru or -kat (table 4).\nIn addition to its productive uses as instrumental and body-part locative, -hiriʔ also occurs with a small set of noun stems, again primarily body part terms, to derive their independent forms; i.e., the locative form of these nouns is also the independent form, even though independent nouns are usually derived with the nominal absolutive suffix -uʔ (see below). Examples of locative forms serving also as absolutive forms are askatahciruʔ 'sole (of the foot)' and riitiriʔ 'small of the back'.\nThe suffix -ru 'among, in the country/territory of' forms the locative of tribal names and at least one state name. Examples are sahiiru 'in Cheyenne country' (< sahii 'Cheyenne'); pasaasiru 'among the Osages; in Osage territory' (< pasaasi 'Osage'); and tiksastu 'in Texas' (< English Texas). A variant of -ru is -wiru, which occurs with many names, usually ones ending in the vowel a, as uukaahpaawiru 'among the Quapaw' (< uukaahpaa 'Quapaw') and riihitawiru 'among the Ponca' (< riihita 'Ponca').\nThe locative suffix -kat generally translates as 'in, on' but with animate nouns it frequently translates as 'among'; e.g., akahkat 'on the dwelling' (< akar- + -kat); asaakat 'among the horses' (< asaa- 'horse' + -kat).",
         "morphemes_mentioned": [
           {
-            "form": "biriʔ",
+            "form": "hiriʔ",
             "label": "suffix",
             "meaning": "instrumental ('with, using'), locative ('in, on, at; among')",
             "notes": "Marks instrumental case on all nouns; marks locative case for one class of nouns (mostly body part terms); also occurs with a small set of noun stems (primarily body part terms) to derive independent forms."
@@ -22,7 +22,7 @@
             "form": "-raar-",
             "label": "suffix",
             "meaning": "plural",
-            "notes": "Occurs after the noun stem and before -biriʔ for body part terms."
+            "notes": "Occurs after the noun stem and before -hiriʔ for body part terms."
           },
           {
             "form": "-ru",
@@ -61,7 +61,7 @@
               [
                 "Body Part Terms",
                 "-raar- PL",
-                "-biriʔ INST/LOC"
+                "-hiriʔ INST/LOC"
               ],
               [
                 "Tribal and Geographical Names",
@@ -71,7 +71,7 @@
               [
                 "Other Nouns",
                 "Ø",
-                "-kat LOC\n-biriʔ INST"
+                "-kat LOC\n-hiriʔ INST"
               ]
             ]
           }
