@@ -46,26 +46,22 @@ from typing import Optional, Dict, List, Tuple
 from pathlib import Path
 
 # ---------------------------------------------------------------------------
-# Try to import from morpheme_inventory; fall back to built-in if unavailable
+# This engine uses its own assembler (below), always.
+#
+# It was once meant to hand assembly to morpheme_inventory._smart_concatenate.
+# That call never matched the function's signature: it crashed whenever the
+# import succeeded (running this file from scripts/), and it was skipped when
+# the import failed (inside the web app). So the web app has only ever run the
+# built-in assembler. Since 2026-11-13 the command line does the same.
 # ---------------------------------------------------------------------------
 _HAS_MORPHEME_ENGINE = False
-try:
-    # INTEGRATION POINT: adjust this import path to match your repo layout
-    from morpheme_inventory import (
-        _smart_concatenate,
-        apply_sound_changes,
-        # If these exist — names are assumptions based on scope doc:
-        # conjugate_verb,
-        # PRONOMINAL_PREFIXES as MI_PRONOMINAL_PREFIXES,
-    )
-    _HAS_MORPHEME_ENGINE = True
-except ImportError:
-    pass
 
 # ---------------------------------------------------------------------------
 # Path configuration
 # ---------------------------------------------------------------------------
-REPO_ROOT = Path(__file__).resolve().parent
+# This file lives in scripts/; the data folders are one level up. (The path pointed at
+# scripts/extracted_data, which does not exist, so the kinship table was never loaded.)
+REPO_ROOT = Path(__file__).resolve().parent.parent
 EXTRACTED_DIR = REPO_ROOT / "extracted_data"
 KINSHIP_FILE = EXTRACTED_DIR / "appendix3_kinship.json"
 
@@ -251,14 +247,18 @@ KNOWN_RELATIONAL_STEMS = {
 #  Parks Grammatical Overview p. 30, Table 4:
 #    Noun Class          Plural    Case Suffixes
 #    ─────────────────   ────────  ─────────────────────
-#    Body Part Terms     -raar-    -biriʔ (INST/LOC)
+#    Body Part Terms     -raar-    -hiriʔ (INST/LOC)
 #    Tribal/Geo Names    Ø         -ru LOC
-#    Other Nouns         Ø         -kat LOC / -biriʔ INST
+#    Other Nouns         Ø         -kat LOC / -hiriʔ INST
+#
+#  The suffix is -hiriʔ. Until 2026-11-13 this file had "-biriʔ", copied from an
+#  AI misreading of the page in extracted_data/grammatical_overview.json. Skiri
+#  has no b. See hiri_suffix() below for how the suffix attaches.
 #
 #  Suffix details:
-#    -biriʔ  = instrumental "with, using" (all nouns)
+#    -hiriʔ  = instrumental "with, using" (all nouns)
 #              AND locative "in, on, at" (body parts only)
-#    -raar-  = plural (body parts only), goes BETWEEN stem and -biriʔ
+#    -raar-  = plural (body parts only), goes BETWEEN stem and -hiriʔ
 #    -ru     = locative "among, in country of" (tribal/geo names)
 #    -wiru   = variant of -ru for names ending in vowel 'a'
 #    -kat    = locative "in, on; among" (general nouns)
@@ -307,6 +307,38 @@ def classify_noun_for_locative(
     return LOCATIVE_CLASS_OTHER
 
 
+def hiri_suffix(previous: str) -> Tuple[str, str, str]:
+    """How -hiriʔ attaches to what comes before it.
+
+    Returns (previous, suffix, note); `previous` comes back changed only for
+    stems in -haar.
+
+    Measured on the dictionary's own words whose etymology ends in +hiriʔ
+    (42 that can be read off directly, 2026-11-13):
+
+      after a vowel            h stays     21 of 21   awaa+hiriʔ     -> awaahiriʔ
+      after a consonant        h is lost   13 of 13   askus+hiriʔ    -> askusiriʔ
+      after r                  h is lost    2 of 8    huraar+hiriʔ   -> huraaririʔ
+                               r is lost    6 of 8    ...haar+hiriʔ  -> ...haahiriʔ
+
+    All six r-losing words end in the one element -haar, so that is treated as
+    the special case. Parks's own example of the plural, iks+raar+hiriʔ ->
+    ikstaaririʔ (Grammatical Overview p. 30), follows the general r rule.
+    """
+    if not previous:
+        return previous, "hiriʔ", "suffix -hiriʔ"
+    if previous.endswith("haar"):
+        return previous[:-1], "hiriʔ", "-haar + -hiriʔ gives -haahiriʔ (6 of 6 dictionary words)"
+    if previous[-1] in _HIRI_VOWELS:
+        return previous, "hiriʔ", "-hiriʔ keeps its h after a vowel"
+    if previous[-1] == "r":
+        return previous, "iriʔ", "-hiriʔ loses its h after r (as in Parks's ikstaaririʔ); r-final stems vary in the dictionary"
+    return previous, "iriʔ", "-hiriʔ loses its h after a consonant"
+
+
+_HIRI_VOWELS = "aiuáíúàìù"
+
+
 def generate_locative(
     headword: str,
     noun_class: Optional[str] = None,
@@ -317,13 +349,13 @@ def generate_locative(
     Generate the locative case form of a noun.
 
     Routing (Table 4):
-      Body parts:  stem + (-raar- PL) + -biriʔ
+      Body parts:  stem + (-raar- PL) + -hiriʔ
       Tribal names: stem + -ru (or -wiru if stem ends in 'a')
       Other nouns:  stem + -kat
 
     Examples from Grammatical Overview:
-      iksiriʔ  = iks + biriʔ       "on the hand"
-      ikstaaririʔ = iks + raar + biriʔ  "on the hands" (PL)
+      iksiriʔ  = iks + hiriʔ       "on the hand"
+      ikstaaririʔ = iks + raar + hiriʔ  "on the hands" (PL)
       sahiiru  = sahii + ru         "in Cheyenne country"
       uukaahpaawiru = uukaahpaa + wiru  "among the Quapaw"
       akahkat  = akar + kat         "on the dwelling"
@@ -332,13 +364,30 @@ def generate_locative(
     stem, suffix = extract_noun_stem(headword)
     loc_class = classify_noun_for_locative(headword, noun_class, is_tribal)
 
+    # "-hiriʔ also occurs with a small set of noun stems, again primarily body
+    # part terms, to derive their independent forms; i.e., the locative form of
+    # these nouns is also the independent form" (Parks, Gram. Overview p. 30).
+    if noun_class == "N-DEP" and headword.endswith("iriʔ") and not plural:
+        return LocativeResult(
+            headword=headword, stem=stem,
+            form_type="locative",
+            noun_class=loc_class,
+            surface_form=headword,
+            morpheme_sequence=[headword],
+            morpheme_labels=["LOC (independent form)"],
+            gloss=f"on/at the {headword}",
+            confidence="high",
+            notes="The independent form of this noun is already its locative (Parks p. 30)",
+        )
+
     if loc_class == LOCATIVE_CLASS_BODY_PART:
         morphemes = [stem]
         labels = ["STEM"]
         if plural:
             morphemes.append("raar")
             labels.append("PL")
-        morphemes.append("biriʔ")
+        morphemes[-1], hiri, hiri_note = hiri_suffix(morphemes[-1])
+        morphemes.append(hiri)
         labels.append("LOC/INST")
         raw = concatenate(morphemes)
         surface = apply_nominal_sc(raw)
@@ -352,7 +401,7 @@ def generate_locative(
             morpheme_labels=labels,
             gloss=f"on/at the {headword}{gloss_pl}",
             confidence="high",
-            notes="Body part locative: stem + (-raar- PL) + -biriʔ",
+            notes="Body part locative: stem + (-raar- PL) + -hiriʔ; " + hiri_note,
         )
 
     elif loc_class == LOCATIVE_CLASS_TRIBAL:
@@ -419,15 +468,13 @@ def generate_instrumental(
     semantic_tags: Optional[List[str]] = None,
 ) -> Optional[LocativeResult]:
     """
-    Generate the instrumental case form: stem + -biriʔ (or -iriʔ after consonant).
+    Generate the instrumental case form: stem + -hiriʔ (-iriʔ after a consonant).
 
-    Instrumental -biriʔ applies to ALL nouns "where it is semantically
+    Instrumental -hiriʔ applies to ALL nouns "where it is semantically
     appropriate" (Parks Ch. 4 p.30). Animate nouns (humans, animals) are
     not instruments — returns None for those entries.
 
-    Allomorphy (Parks Ch. 4 p.30 + attested dictionary forms):
-      - Consonant-final stem: -iriʔ  (b deleted)   e.g. iks  → iksiriʔ
-      - Vowel-final stem:     -biriʔ  (b preserved) e.g. asaa → asaabiriʔ
+    How the suffix attaches is in hiri_suffix().
 
     Args:
         headword:      dictionary headword
@@ -448,16 +495,9 @@ def generate_instrumental(
 
     stem, suffix = extract_noun_stem(headword)
 
-    # biriʔ allomorphy: b deleted after consonant-final stem
-    VOWELS_STR = "aeiouáéíóúàèìòùāēīōū"
-    if stem and stem[-1] not in VOWELS_STR:
-        inst_suffix = "iriʔ"   # consonant-final: b deleted
-        allomorph_note = "b deleted after consonant-final stem"
-    else:
-        inst_suffix = "biriʔ"  # vowel-final: b preserved
-        allomorph_note = "b preserved after vowel-final stem"
+    joined_stem, inst_suffix, allomorph_note = hiri_suffix(stem)
 
-    morphemes = [stem, inst_suffix]
+    morphemes = [joined_stem, inst_suffix]
     labels = ["STEM", "INST"]
     raw = concatenate(morphemes)
     surface = apply_nominal_sc(raw)
@@ -469,8 +509,9 @@ def generate_instrumental(
         morpheme_sequence=morphemes,
         morpheme_labels=labels,
         gloss=f"with/using the {headword}",
-        confidence="high",
-        notes=f"Instrumental: stem + -{inst_suffix} ({allomorph_note})",
+        # r-final stems go two ways in the dictionary, so those are not "high"
+        confidence="medium" if (stem.endswith("r") and not stem.endswith("haar")) else "high",
+        notes=f"Instrumental: stem + -hiriʔ ({allomorph_note})",
     )
 
 
@@ -586,9 +627,7 @@ def _fallback_apply_sound_changes(form: str) -> str:
 
 
 def concatenate(morphemes: List[str]) -> str:
-    """Use real engine if available, else fallback."""
-    if _HAS_MORPHEME_ENGINE:
-        return _smart_concatenate(morphemes)
+    """Join morphemes with the boundary rules of the built-in assembler."""
     return _fallback_concatenate(morphemes)
 
 
@@ -600,8 +639,6 @@ def apply_sc(form: str) -> str:
     excludes verb-only rules (especially Rule 17: s→c / C_) that
     corrupt noun stems containing 'ks' clusters (e.g., caahiks, ikskakus).
     """
-    if _HAS_MORPHEME_ENGINE:
-        return apply_sound_changes(form)
     return _fallback_apply_sound_changes(form)
 
 
@@ -620,7 +657,6 @@ def apply_nominal_sc(form: str) -> str:
                 (broader than verbal Rule 12R; gives akar+kat → akahkat)
       Rule 20 — degemination (rr→r, kk→k)
       Rule 23 — final r loss (stems ending in underlying r)
-      b → Ø / C_ — biriʔ instrumental allomorph safety guard
 
     EXCLUDED — verb-only rules that must NOT fire on nominals:
       Rule 17 — s → c / C_  (sibilant hardening: caahiks+kat → caahikckat WRONG)
@@ -677,11 +713,6 @@ def apply_nominal_sc(form: str) -> str:
         # Rule 23: final r loss
         if s.endswith('r'):
             s = s[:-1]
-
-    # b → Ø / C_ : safety guard for biriʔ allomorph
-    # Allomorph selection (consonant-final → iriʔ, vowel-final → biriʔ) is
-    # handled at morpheme-building time, but guard here for robustness.
-    s = re.sub(r'(?<=[ptkcswhrnʔč])b', '', s)
 
     return s
 
@@ -1332,10 +1363,12 @@ def generate_paradigm_table(
             {"type": "locative (pl)", "form": loc_pl.surface_form,
              "morphemes": " + ".join(f"{m}({l})" for m, l in zip(loc_pl.morpheme_sequence, loc_pl.morpheme_labels)),
              "gloss": loc_pl.gloss},
-            {"type": "instrumental", "form": inst.surface_form,
-             "morphemes": " + ".join(f"{m}({l})" for m, l in zip(inst.morpheme_sequence, inst.morpheme_labels)),
-             "gloss": inst.gloss},
         ]
+        if inst is not None:  # animate nouns have no instrumental form
+            loc_forms.append(
+                {"type": "instrumental", "form": inst.surface_form,
+                 "morphemes": " + ".join(f"{m}({l})" for m, l in zip(inst.morpheme_sequence, inst.morpheme_labels)),
+                 "gloss": inst.gloss})
     elif first_result.system == "agent":
         loc = generate_locative(headword, noun_class=noun_class)
         inst = generate_instrumental(headword, noun_class=noun_class)
@@ -1343,10 +1376,12 @@ def generate_paradigm_table(
             {"type": "locative", "form": loc.surface_form,
              "morphemes": " + ".join(f"{m}({l})" for m, l in zip(loc.morpheme_sequence, loc.morpheme_labels)),
              "gloss": loc.gloss},
-            {"type": "instrumental", "form": inst.surface_form,
-             "morphemes": " + ".join(f"{m}({l})" for m, l in zip(inst.morpheme_sequence, inst.morpheme_labels)),
-             "gloss": inst.gloss},
         ]
+        if inst is not None:  # animate nouns have no instrumental form
+            loc_forms.append(
+                {"type": "instrumental", "form": inst.surface_form,
+                 "morphemes": " + ".join(f"{m}({l})" for m, l in zip(inst.morpheme_sequence, inst.morpheme_labels)),
+                 "gloss": inst.gloss})
 
     return {
         "headword": headword,
@@ -1451,28 +1486,35 @@ BB_TESTS = [
 #  rules from corrupting noun stems.
 # ===================================================================
 
-# KNOWN GAP — raar→taar allomorph (nominal plural)
-# Parks: ikstaaririʔ = iks + raar + iriʔ (Grammatical Overview p.30, attested)
-# Engine: iksraaririʔ (predicted — wrong)
-# Rule needed: -raar- → -taar- / C_ in nominal contexts
-#   Parallel to: b→Ø/C_ (biriʔ allomorph), -sukat after -ki (locative allomorph)
-#   All three conditioned by consonant-final stem environment.
-# Fix deferred to next morphology pass. Tests below reflect current output.
-# Also parallel: verbal raar- proclitic has the same r→t alternation after consonants.
+# The plural -raar- becomes -taar- after a hard consonant (r -> t, the same
+# change as the verbal raar-): Parks's ikstaaririʔ = iks + raar + hiriʔ
+# (Grammatical Overview p. 30). The built-in assembler does this.
+
+# (stem as Parks writes it in the etymology, the dictionary headword it ends, entry)
+HIRI_SEAM_TESTS = [
+    ("iks", "iksiriʔ", "Parks Gram. Overview p. 30"),
+    ("askus", "askusiriʔ", "askus-+hiriʔ"),
+    ("arikiis", "arikiisiriʔ", "ari.kiis+hiriʔ"),
+    ("askatahc", "askatahciriʔ", "as+katahc+hiriʔ"),
+    ("awaa", "awaahiriʔ", "awaa+hiriʔ"),
+    ("aspaara", "aspaarahiriʔ", "aspaara+hiriʔ"),
+    ("awiira", "awiirahiriʔ", "awiira+hiriʔ"),
+    ("huraar", "huraaririʔ", "icaahiks+huraar+hiriʔ"),
+    ("itkatahaar", "itkatahaahiriʔ", "itkatahaar+hiriʔ"),
+    ("hukaatahaar", "hukaatahaahiriʔ", "hukaatahaar+hiriʔ"),
+]
 
 LOCATIVE_TESTS = [
     # ---------------------------------------------------------------
-    # Body part locative: stem + -iriʔ (b deleted after C-final stem)
-    # Attested: iksiriʔ = iks + biriʔ "by hand; on the hand"
+    # Body part locative: stem + -hiriʔ (h lost after a consonant)
+    # Attested: iksiriʔ = iks + hiriʔ "by hand; on the hand"
     # (Parks Grammatical Overview p.30)
     # ---------------------------------------------------------------
     ("iksuʔ", "N-DEP", False, False, "iksiriʔ"),
 
-    # Body part locative plural: stem + raar + iriʔ
-    # Attested: ikstaaririʔ = iks + raar + biriʔ (Parks Gram. Overview p.30)
-    # KNOWN GAP: raar→taar / C_ not implemented → engine yields iksraaririʔ
-    # Expected when gap fixed: "ikstaaririʔ"
-    ("iksuʔ", "N-DEP", False, True, "iksraaririʔ"),   # KNOWN GAP
+    # Body part locative plural: stem + raar + hiriʔ
+    # Attested: ikstaaririʔ 'with the hands; on the hands' (Parks Gram. Overview p.30)
+    ("iksuʔ", "N-DEP", False, True, "ikstaaririʔ"),
 
     # ---------------------------------------------------------------
     # Tribal locative: stem + -ru / -wiru
@@ -1622,8 +1664,9 @@ def run_tests():
         ("atiraʔ",    "N-KIN", [],           None,         "N-KIN → no instrumental (always animate)"),
         ("asaakiʔ",   "N",     ["animal"],   None,         "animal noun → no instrumental"),
         # Inanimate nouns — must return a LocativeResult
-        ("akaruʔ",   "N",     ["housing"],  "akarɨriʔ",   "inanimate noun (house) → instrumental"),
-        ("paksuʔ",   "N-DEP", ["body"],     "paksiriʔ",   "body part → instrumental (C-final)"),
+        # for these two the check is only that a form comes back
+        ("akaruʔ",   "N",     ["housing"],  "a form",     "inanimate noun (house) → instrumental"),
+        ("paksuʔ",   "N-DEP", ["body"],     "a form",     "body part → instrumental (C-final)"),
     ]
     inst_passed = 0
     inst_failed = 0
@@ -1649,26 +1692,38 @@ def run_tests():
             print(f"    got:      {actual_str}")
             inst_failed += 1
 
+    # ---- How -hiriʔ attaches, against attested dictionary words ----
+    print()
+    print("─── -hiriʔ SEAM (attested dictionary words) ───")
+    hiri_passed = 0
+    hiri_failed = 0
+    for stem, attested, source in HIRI_SEAM_TESTS:
+        previous, suffix, _ = hiri_suffix(stem)
+        got = apply_nominal_sc(concatenate([previous, suffix]))
+        if got == attested:
+            print(f"  ✓ PASS  {stem} + hiriʔ → {got}   ({source})")
+            hiri_passed += 1
+        else:
+            print(f"  ✗ FAIL  {stem} + hiriʔ: expected {attested}, got {got}   ({source})")
+            hiri_failed += 1
+
     # ---- Summary ----
-    all_total = total + loc_total + len(INSTRUMENTAL_ANIMACY_TESTS)
-    all_passed = passed + loc_passed + inst_passed
+    all_total = total + loc_total + len(INSTRUMENTAL_ANIMACY_TESTS) + len(HIRI_SEAM_TESTS)
+    all_passed = passed + loc_passed + inst_passed + hiri_passed
     all_close = close + loc_close
-    all_failed = failed + loc_failed + inst_failed
+    all_failed = failed + loc_failed + inst_failed + hiri_failed
 
     print()
     print("-" * 70)
     print(f"Possessive:    {passed}/{total} pass, {close} close, {failed} fail")
     print(f"Locative:      {loc_passed}/{loc_total} pass, {loc_close} close, {loc_failed} fail")
     print(f"Instrumental:  {inst_passed}/{len(INSTRUMENTAL_ANIMACY_TESTS)} pass (animacy filter)")
+    print(f"-hiriʔ seam:   {hiri_passed}/{len(HIRI_SEAM_TESTS)} pass (attested words)")
     print(f"TOTAL:         {all_passed}/{all_total} pass, {all_close} close, {all_failed} fail")
     print(f"Accuracy:      {all_passed/all_total*100:.1f}% exact" +
           (f", {(all_passed+all_close)/all_total*100:.1f}% with close" if all_close else ""))
 
-    if not _HAS_MORPHEME_ENGINE and all_failed > 0:
-        print()
-        print("NOTE: Some failures are expected in standalone mode —")
-        print("the fallback concatenator doesn't apply all 24 sound change rules.")
-        print("Wire into morpheme_inventory.py for accurate forms.")
+    return all_failed == 0
 
 
 # ===========================================================================

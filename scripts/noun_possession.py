@@ -113,12 +113,12 @@ NOMINAL_SUFFIXES = {
     "-uʔ": "NOM (absolutive)",
     "-kis": "DIM (diminutive)",
     "-kusuʔ": "AUG (augmentative)",
-    "-biriʔ": "INST/LOC",
+    "-hiriʔ": "INST/LOC",
 }
 
 # Locative suffixes (Table 4)
 LOCATIVE_SUFFIXES = {
-    "-biriʔ": {"class": "body_part", "meaning": "instrumental/locative ('with, on')"},
+    "-hiriʔ": {"class": "body_part", "meaning": "instrumental/locative ('with, on')"},
     "-ru": {"class": "tribal_geo", "meaning": "locative ('among, in territory of')"},
     "-wiru": {"class": "tribal_geo_a", "meaning": "locative variant (names ending in -a)"},
     "-kat": {"class": "other", "meaning": "locative ('in, on; among')"},
@@ -225,12 +225,13 @@ def extract_stem(headword):
     if hw.endswith("kusuʔ"):
         return hw[:-5] + "-", "-kusuʔ"
 
-    # -biriʔ (instrumental/locative — some body parts use this as absolutive)
-    if hw.endswith("biriʔ") or hw.endswith("iriʔ"):
+    # -hiriʔ (instrumental/locative — some body parts use this as absolutive);
+    # the h is lost after a consonant, so the ending is -hiriʔ or -iriʔ
+    if hw.endswith("hiriʔ") or hw.endswith("iriʔ"):
         # Be cautious — only strip if the result looks like a valid stem
-        candidate = hw[:-5] if hw.endswith("biriʔ") else hw[:-4]
+        candidate = hw[:-5] if hw.endswith("hiriʔ") else hw[:-4]
         if len(candidate) >= 2:
-            return candidate + "-", "-biriʔ" if hw.endswith("biriʔ") else "-iriʔ"
+            return candidate + "-", "-hiriʔ" if hw.endswith("hiriʔ") else "-iriʔ"
 
     # -uʔ (absolutive — most common)
     if hw.endswith("uʔ"):
@@ -988,9 +989,9 @@ def generate_report(nouns, kinship_paradigms):
     for sfx, info in LOCATIVE_SUFFIXES.items():
         lines.append(f"  {sfx:<10} class: {info['class']:<15} {info['meaning']}")
     lines.append("")
-    lines.append("  Body part plural: -raar- (before -biriʔ)")
+    lines.append("  Body part plural: -raar- (before -hiriʔ)")
     lines.append("  Example: ikstaaririʔ 'with the hands; on the hands'")
-    lines.append("           < iks(hand) + -raar-(PL) + -biriʔ(INST/LOC)")
+    lines.append("           < iks(hand) + -raar-(PL) + -hiriʔ(INST/LOC)")
     lines.append("")
 
     return "\n".join(lines)
