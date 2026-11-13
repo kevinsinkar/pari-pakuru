@@ -25,7 +25,7 @@ sys.path.insert(0, PROJECT_ROOT)
 from web.db import SkiriWebDictionary
 from web.search import search_combined
 from web.search_ranking import rank_results
-from web.flashcards import load_sets
+from web.flashcards import held_weeks, load_sets
 
 DATABASE = os.path.join(PROJECT_ROOT, "skiri_pawnee.db")
 
@@ -527,7 +527,7 @@ def flashcards_index():
     by_cat = {}
     for s in sets:
         by_cat.setdefault(s.category, []).append(s)
-    return render_template("flashcards.html", sets=sets, by_category=by_cat)
+    return render_template("flashcards.html", sets=sets, by_category=by_cat, held=held_weeks())
 
 
 @app.route("/flashcards/<int:week>")

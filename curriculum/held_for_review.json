@@ -1,0 +1,11 @@
+{
+  "_comment": "Weeks of the frozen flashcard curriculum that are not shown in the web app or on the static site until they have been reviewed. The words stay in flashcard_sets.json and the week numbers do not change, so nothing shifts when a week is released: delete its entry here and rebuild the site. Read by web/flashcards.py (held_weeks, load_sets).",
+  "weeks": [
+    {
+      "week": 20,
+      "category_label": "Ceremony & Sacred",
+      "held_since": "2026-11-13",
+      "reason": "Ceremonial vocabulary (sacred bundles, dances, doctoring). Whether it belongs in a public flashcard deck is for the Pawnee Nation to decide; it has not been asked yet. See reports/audit_data_construction_2026-10-01.md, item B6."
+    }
+  ]
+}

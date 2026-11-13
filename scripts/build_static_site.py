@@ -451,7 +451,7 @@ def generate_flashcard_pages(db_path: str, output_dir: Path) -> dict:
     print("[*] Generating flashcard pages...")
     import re
     from jinja2 import Environment, FileSystemLoader
-    from web.flashcards import load_sets
+    from web.flashcards import held_weeks, load_sets
 
     # Register custom filters for static rendering
     def primary_spelling_filter(entry):
@@ -495,14 +495,22 @@ def generate_flashcard_pages(db_path: str, output_dir: Path) -> dict:
         "gram_class_labels": GRAM_CLASS_LABELS,
     }
 
-    sets = load_sets(db_path)
+    sets = load_sets(db_path)          # weeks held for review are left out
+    held = held_weeks()
     by_cat = {}
     for s in sets:
         by_cat.setdefault(s.category, []).append(s)
 
+    # a page built before a week was held must not stay on the site
+    for h in held:
+        stale = output_dir / f"flashcard-{h['week']}.html"
+        if stale.exists():
+            stale.unlink()
+            print(f"  removed {stale.name} (week {h['week']} is held for review)")
+
     # Overview page
     template = env.get_template("flashcards.html")
-    html = template.render(sets=sets, by_category=by_cat, **base_context)
+    html = template.render(sets=sets, by_category=by_cat, held=held, **base_context)
     html = _postprocess_for_static(html)
     with open(output_dir / "flashcards.html", "w", encoding="utf-8") as f:
         f.write(html)

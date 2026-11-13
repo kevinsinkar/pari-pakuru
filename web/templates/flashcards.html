@@ -5,7 +5,7 @@
 {% block content %}
 <h2>Weekly Flashcards</h2>
 <p>
-    A 20-week study plan with {{ sets|map(attribute='card_count')|sum }} curated words
+    A {{ sets|length }}-week study plan with {{ sets|map(attribute='card_count')|sum }} curated words
     across {{ by_category|length }} categories. Each week features 15-20 beginner-friendly
     words, prioritizing terms from the P&acirc;ri Pak&ucirc;ru' textbook.
 </p>
@@ -83,6 +83,13 @@
         <span class="fc-path-legend-item"><span class="fc-path-swatch fc-path-swatch--todo"></span> Not started</span>
     </div>
 </div>
+
+{% if held %}
+<p class="fc-held-note">
+    {% for h in held %}Week {{ h.week }} ({{ h.category_label }}) is not shown: its words are waiting for review by the Pawnee community.{% if not loop.last %} {% endif %}{% endfor %}
+    The other weeks keep their numbers.
+</p>
+{% endif %}
 
 <div class="flashcard-overview">
     {% for cat, cat_sets in by_category.items() %}

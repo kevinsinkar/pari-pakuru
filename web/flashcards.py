@@ -23,6 +23,11 @@ from typing import List, Optional
 # learners' saved progress stays attached to the right weeks.
 FROZEN_SETS_PATH = Path(__file__).parent.parent / "curriculum" / "flashcard_sets.json"
 
+# Weeks that are held back from the web app and the static site until they have
+# been reviewed (audit B6: ceremonial vocabulary). The cards stay in the frozen
+# file and week numbers do not change.
+HELD_PATH = Path(__file__).parent.parent / "curriculum" / "held_for_review.json"
+
 
 @dataclass
 class FlashCard:
@@ -573,15 +578,27 @@ def generate_all_sets(db_path: str) -> List[FlashCardSet]:
     return all_sets
 
 
-def load_sets(db_path: str) -> List[FlashCardSet]:
+def held_weeks() -> List[dict]:
+    """Weeks held back for review: [{"week": 20, "category_label": ..., "reason": ...}]."""
+    if not HELD_PATH.exists():
+        return []
+    with open(HELD_PATH, encoding="utf-8") as f:
+        return json.load(f).get("weeks", [])
+
+
+def load_sets(db_path: str, include_held: bool = False) -> List[FlashCardSet]:
     """Load the frozen curriculum if present; otherwise generate from the DB.
 
     Use this (not generate_all_sets) for anything learner-facing — the
     frozen file is what keeps week numbers stable across DB changes.
+
+    Weeks listed in curriculum/held_for_review.json are left out unless
+    include_held is true. The remaining weeks keep their numbers.
     """
     if FROZEN_SETS_PATH.exists():
         with open(FROZEN_SETS_PATH, encoding="utf-8") as f:
             data = json.load(f)
+        held = set() if include_held else {h["week"] for h in held_weeks()}
         return [
             FlashCardSet(
                 week=w["week"],
@@ -590,6 +607,7 @@ def load_sets(db_path: str) -> List[FlashCardSet]:
                 cards=[FlashCard(**c) for c in w["cards"]],
             )
             for w in data["weeks"]
+            if w["week"] not in held
         ]
     return generate_all_sets(db_path)
 
