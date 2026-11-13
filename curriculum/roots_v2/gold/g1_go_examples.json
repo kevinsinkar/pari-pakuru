@@ -1,0 +1,3738 @@
+{
+ "examples": [
+  {
+   "analysis_text": "iks- 'hand' + -uʔ",
+   "flags": [],
+   "go_page": 31,
+   "pieces": [
+    {
+     "form": "iks-",
+     "gloss": "hand",
+     "label": null
+    },
+    {
+     "form": "-uʔ",
+     "gloss": null,
+     "label": null
+    }
+   ],
+   "surface": "iksuʔ",
+   "translation": "hand"
+  },
+  {
+   "analysis_text": "asaa- 'dog; horse' + -kis DIM; riicikiʔ 'knife' < riici- 'knife' + kis DIM",
+   "flags": [],
+   "go_page": 31,
+   "pieces": [
+    {
+     "form": "asaa-",
+     "gloss": "dog; horse",
+     "label": null
+    },
+    {
+     "form": "-kis",
+     "gloss": "DIM; riicikiʔ 'knife' < riici- 'knife'",
+     "label": null
+    },
+    {
+     "form": "kis",
+     "gloss": null,
+     "label": "DIM"
+    }
+   ],
+   "surface": "asaakiʔ",
+   "translation": "dog"
+  },
+  {
+   "analysis_text": "wiita 'man' + kusuʔ 'big'",
+   "flags": [],
+   "go_page": 31,
+   "pieces": [
+    {
+     "form": "wiita",
+     "gloss": "man",
+     "label": null
+    },
+    {
+     "form": "kusuʔ",
+     "gloss": "big",
+     "label": null
+    }
+   ],
+   "surface": "wiitakusuʔ",
+   "translation": "large man"
+  },
+  {
+   "analysis_text": "paks- 'head' + -kuuku- 'covering' + -uʔ NOM",
+   "flags": [],
+   "go_page": 31,
+   "pieces": [
+    {
+     "form": "paks-",
+     "gloss": "head",
+     "label": null
+    },
+    {
+     "form": "-kuuku-",
+     "gloss": "covering",
+     "label": null
+    },
+    {
+     "form": "-uʔ",
+     "gloss": null,
+     "label": "NOM"
+    }
+   ],
+   "surface": "pakskuukuʔuʔ",
+   "translation": "hat; headwear"
+  },
+  {
+   "analysis_text": "iks- + -uʔ",
+   "flags": [],
+   "go_page": 31,
+   "pieces": [
+    {
+     "form": "iks-",
+     "gloss": null,
+     "label": null
+    },
+    {
+     "form": "-uʔ",
+     "gloss": null,
+     "label": null
+    }
+   ],
+   "surface": "iksuʔ",
+   "translation": "hand"
+  },
+  {
+   "analysis_text": "wii- 'now' + ta- IND.1/2.A + t- 1.A + ir- PREV + uks- AOR + a 'come' + -Ø PERF",
+   "flags": [],
+   "go_page": 31,
+   "pieces": [
+    {
+     "form": "wii-",
+     "gloss": "now",
+     "label": null
+    },
+    {
+     "form": "ta-",
+     "gloss": null,
+     "label": "IND.1/2.A"
+    },
+    {
+     "form": "t-",
+     "gloss": null,
+     "label": "1.A"
+    },
+    {
+     "form": "ir-",
+     "gloss": null,
+     "label": "PREV"
+    },
+    {
+     "form": "uks-",
+     "gloss": null,
+     "label": "AOR"
+    },
+    {
+     "form": "a",
+     "gloss": "come",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "wiitatiiksaʔ",
+   "translation": "I have come"
+  },
+  {
+   "analysis_text": "ti- IND + -Ø 3.A + uur- PREV + icaahiks- 'person' + hiir- 'be good; be good-looking' + -Ø PERF",
+   "flags": [],
+   "go_page": 32,
+   "pieces": [
+    {
+     "form": "ti-",
+     "gloss": null,
+     "label": "IND"
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "uur-",
+     "gloss": null,
+     "label": "PREV"
+    },
+    {
+     "form": "icaahiks-",
+     "gloss": "person",
+     "label": null
+    },
+    {
+     "form": "hiir-",
+     "gloss": "be good; be good-looking",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "tuuricaahiksii",
+   "translation": "he is a good-looking person"
+  },
+  {
+   "analysis_text": "wii- 'now' + ta- IND.1/2.A + t- 1.A + ut- PREV + raak- 1/2.P.A/P + aar 'do' + -Ø PERF",
+   "flags": [],
+   "go_page": 32,
+   "pieces": [
+    {
+     "form": "wii-",
+     "gloss": "now",
+     "label": null
+    },
+    {
+     "form": "ta-",
+     "gloss": null,
+     "label": "IND.1/2.A"
+    },
+    {
+     "form": "t-",
+     "gloss": null,
+     "label": "1.A"
+    },
+    {
+     "form": "ut-",
+     "gloss": null,
+     "label": "PREV"
+    },
+    {
+     "form": "raak-",
+     "gloss": null,
+     "label": "1/2.P.A/P"
+    },
+    {
+     "form": "aar",
+     "gloss": "do",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "wiitatuuhaaka",
+   "translation": "we have done that"
+  },
+  {
+   "analysis_text": "ta- IND.1/2.A + t- 1.A + ir- A.POSS + ri- PHY.POSS + ut- P.POSS + aar 'do' + -Ø",
+   "flags": [],
+   "go_page": 32,
+   "pieces": [
+    {
+     "form": "ta-",
+     "gloss": null,
+     "label": "IND.1/2.A"
+    },
+    {
+     "form": "t-",
+     "gloss": null,
+     "label": "1.A"
+    },
+    {
+     "form": "ir-",
+     "gloss": null,
+     "label": "A.POSS"
+    },
+    {
+     "form": "ri-",
+     "gloss": null,
+     "label": "PHY.POSS"
+    },
+    {
+     "form": "ut-",
+     "gloss": null,
+     "label": "P.POSS"
+    },
+    {
+     "form": "aar",
+     "gloss": "do",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": null
+    }
+   ],
+   "surface": "tatiriitaa",
+   "translation": "I did it for him"
+  },
+  {
+   "analysis_text": "ti- IND + Ø- 3.A + ir- 3.P.COLL.A + aspaatasik 'set out' + Ø PERF;",
+   "flags": [],
+   "go_page": 35,
+   "pieces": [
+    {
+     "form": "ti-",
+     "gloss": null,
+     "label": "IND"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "ir-",
+     "gloss": null,
+     "label": "3.P.COLL.A"
+    },
+    {
+     "form": "aspaatasik",
+     "gloss": "set out",
+     "label": null
+    },
+    {
+     "form": "Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "tiiraspaatasit",
+   "translation": "they (COLL) set out"
+  },
+  {
+   "analysis_text": "ti- IND + Ø- 3.A + raar- 3.P.INDV.A + aspaatasik 'set out' + Ø PERF;",
+   "flags": [],
+   "go_page": 35,
+   "pieces": [
+    {
+     "form": "ti-",
+     "gloss": null,
+     "label": "IND"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "raar-",
+     "gloss": null,
+     "label": "3.P.INDV.A"
+    },
+    {
+     "form": "aspaatasik",
+     "gloss": "set out",
+     "label": null
+    },
+    {
+     "form": "Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "tiiraaraspaatasit",
+   "translation": "they (INDV) set out"
+  },
+  {
+   "analysis_text": "ta- IND.1/2.A + t- 1.A + raar- 3.INAN.P + raspii 'look for' + Ø PERF; cp. taatakaraspiʔ 'I looked for",
+   "flags": [],
+   "go_page": 35,
+   "pieces": [
+    {
+     "form": "ta-",
+     "gloss": null,
+     "label": "IND.1/2.A"
+    },
+    {
+     "form": "t-",
+     "gloss": null,
+     "label": "1.A"
+    },
+    {
+     "form": "raar-",
+     "gloss": null,
+     "label": "3.INAN.P"
+    },
+    {
+     "form": "raspii",
+     "gloss": "look for",
+     "label": null
+    },
+    {
+     "form": "Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "taharaspiʔ",
+   "translation": "I looked for them (inanimate objects)"
+  },
+  {
+   "analysis_text": "ku- INDF + ti- IND + Ø- 3.A + a- A.POSS + kawirahur 'be an acre' + uk 'be, exist' + -Ø PERF",
+   "flags": [],
+   "go_page": 36,
+   "pieces": [
+    {
+     "form": "ku-",
+     "gloss": null,
+     "label": "INDF"
+    },
+    {
+     "form": "ti-",
+     "gloss": null,
+     "label": "IND"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "a-",
+     "gloss": null,
+     "label": "A.POSS"
+    },
+    {
+     "form": "kawirahur",
+     "gloss": "be an acre",
+     "label": null
+    },
+    {
+     "form": "uk",
+     "gloss": "be, exist",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "kutakawirahuʔ",
+   "translation": "he owns that acre"
+  },
+  {
+   "analysis_text": "ti- IND + Ø- 3.A + a- A.POSS + ri- PHY.POSS + uur- P.POSS + ariik 'be standing' + -Ø PERF",
+   "flags": [],
+   "go_page": 36,
+   "pieces": [
+    {
+     "form": "ti-",
+     "gloss": null,
+     "label": "IND"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "a-",
+     "gloss": null,
+     "label": "A.POSS"
+    },
+    {
+     "form": "ri-",
+     "gloss": null,
+     "label": "PHY.POSS"
+    },
+    {
+     "form": "uur-",
+     "gloss": null,
+     "label": "P.POSS"
+    },
+    {
+     "form": "ariik",
+     "gloss": "be standing",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "taruuraariit",
+   "translation": "he has it, possess it (something standing)"
+  },
+  {
+   "analysis_text": "ta- IND.1/2A + t- 1.A + ir- A.POSS + ri- PHY.POSS + uur- P.POSS + riiks- 'arrow' + raar- PL + ka 'be in' + -Ø PERF",
+   "flags": [],
+   "go_page": 36,
+   "pieces": [
+    {
+     "form": "ta-",
+     "gloss": null,
+     "label": "IND.1/2A"
+    },
+    {
+     "form": "t-",
+     "gloss": null,
+     "label": "1.A"
+    },
+    {
+     "form": "ir-",
+     "gloss": null,
+     "label": "A.POSS"
+    },
+    {
+     "form": "ri-",
+     "gloss": null,
+     "label": "PHY.POSS"
+    },
+    {
+     "form": "uur-",
+     "gloss": null,
+     "label": "P.POSS"
+    },
+    {
+     "form": "riiks-",
+     "gloss": "arrow",
+     "label": null
+    },
+    {
+     "form": "raar-",
+     "gloss": null,
+     "label": "PL"
+    },
+    {
+     "form": "ka",
+     "gloss": "be in",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "tatiriiriikstahka",
+   "translation": "he keeps his arrows in it"
+  },
+  {
+   "analysis_text": "ta- IND.1/2.A + t- 1.A + a- 2.P + uur- PHY.POSS + kuutik ‘kill’ + -Ø PERF",
+   "flags": [],
+   "go_page": 37,
+   "pieces": [
+    {
+     "form": "ta-",
+     "gloss": null,
+     "label": "IND.1/2.A"
+    },
+    {
+     "form": "t-",
+     "gloss": null,
+     "label": "1.A"
+    },
+    {
+     "form": "a-",
+     "gloss": null,
+     "label": "2.P"
+    },
+    {
+     "form": "uur-",
+     "gloss": null,
+     "label": "PHY.POSS"
+    },
+    {
+     "form": "kuutik",
+     "gloss": "kill",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "aruusaʔ",
+   "translation": "I killed your horse"
+  },
+  {
+   "analysis_text": "ta- IND.1/2.A + t- 1.A + ut- BEN + ak- PL.BEN + kusik ‘pick up’ + -Ø PERF",
+   "flags": [],
+   "go_page": 37,
+   "pieces": [
+    {
+     "form": "ta-",
+     "gloss": null,
+     "label": "IND.1/2.A"
+    },
+    {
+     "form": "t-",
+     "gloss": null,
+     "label": "1.A"
+    },
+    {
+     "form": "ut-",
+     "gloss": null,
+     "label": "BEN"
+    },
+    {
+     "form": "ak-",
+     "gloss": null,
+     "label": "PL.BEN"
+    },
+    {
+     "form": "kusik",
+     "gloss": "pick up",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "tatuutakusit",
+   "translation": "I picked it up for them"
+  },
+  {
+   "analysis_text": "wi- QUOT + ti- IND + Ø- 3.A + itak ‘be a village’ + -Ø PERF",
+   "flags": [],
+   "go_page": 38,
+   "pieces": [
+    {
+     "form": "wi-",
+     "gloss": null,
+     "label": "QUOT"
+    },
+    {
+     "form": "ti-",
+     "gloss": null,
+     "label": "IND"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "itak",
+     "gloss": "be a village",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "witiʔitat",
+   "translation": "there was a village"
+  },
+  {
+   "analysis_text": "kuur- DUB.1 + ra- ABS + Ø- 3.A + ut- PREV + iiʔirik ‘see’ + -Ø PERF",
+   "flags": [],
+   "go_page": 38,
+   "pieces": [
+    {
+     "form": "kuur-",
+     "gloss": null,
+     "label": "DUB.1"
+    },
+    {
+     "form": "ra-",
+     "gloss": null,
+     "label": "ABS"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "ut-",
+     "gloss": null,
+     "label": "PREV"
+    },
+    {
+     "form": "iiʔirik",
+     "gloss": "see",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "aruusaʔ",
+   "translation": "you must have seen the horse"
+  },
+  {
+   "analysis_text": "kuus- POT.1/3.A + Ø- 3.A + i- SEQ + ar- EV + kikak ‘cry’ + -Ø PERF",
+   "flags": [],
+   "go_page": 38,
+   "pieces": [
+    {
+     "form": "kuus-",
+     "gloss": null,
+     "label": "POT.1/3.A"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "i-",
+     "gloss": null,
+     "label": "SEQ"
+    },
+    {
+     "form": "ar-",
+     "gloss": null,
+     "label": "EV"
+    },
+    {
+     "form": "kikak",
+     "gloss": "cry",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "kusaahkikat",
+   "translation": "he might cry (at some future time when speaker will not see it)"
+  },
+  {
+   "analysis_text": "ta- IND.1/2.A + t- 1.A + uks- AOR + at ‘go’ + -Ø PERF;",
+   "flags": [],
+   "go_page": 38,
+   "pieces": [
+    {
+     "form": "ta-",
+     "gloss": null,
+     "label": "IND.1/2.A"
+    },
+    {
+     "form": "t-",
+     "gloss": null,
+     "label": "1.A"
+    },
+    {
+     "form": "uks-",
+     "gloss": null,
+     "label": "AOR"
+    },
+    {
+     "form": "at",
+     "gloss": "go",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "tatuksat",
+   "translation": "I went"
+  },
+  {
+   "analysis_text": "ta- IND.1/2.A + t- 1.A + at ‘go’ + -Ø PERF",
+   "flags": [],
+   "go_page": 38,
+   "pieces": [
+    {
+     "form": "ta-",
+     "gloss": null,
+     "label": "IND.1/2.A"
+    },
+    {
+     "form": "t-",
+     "gloss": null,
+     "label": "1.A"
+    },
+    {
+     "form": "at",
+     "gloss": "go",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "taatat",
+   "translation": "I went"
+  },
+  {
+   "analysis_text": "tiir- INFR + ra- ABS + t- 1.A + uks- AOR + itkas ‘sleep’ + waawa- DIST + a ‘eat’ + -Ø PERF",
+   "flags": [
+    "ocr_b"
+   ],
+   "go_page": 38,
+   "pieces": [
+    {
+     "form": "tiir-",
+     "gloss": null,
+     "label": "INFR"
+    },
+    {
+     "form": "ra-",
+     "gloss": null,
+     "label": "ABS"
+    },
+    {
+     "form": "t-",
+     "gloss": null,
+     "label": "1.A"
+    },
+    {
+     "form": "uks-",
+     "gloss": null,
+     "label": "AOR"
+    },
+    {
+     "form": "itkas",
+     "gloss": "sleep",
+     "label": null
+    },
+    {
+     "form": "waawa-",
+     "gloss": null,
+     "label": "DIST"
+    },
+    {
+     "form": "a",
+     "gloss": "eat",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "tiibatuuksitkaspaawaa",
+   "translation": "I must have been eating in my sleep"
+  },
+  {
+   "analysis_text": "i- CONT.1/2.A + s- 2.A + uks- JUSS + kirikaʔaar ‘wake up’ + -Ø PERF",
+   "flags": [],
+   "go_page": 38,
+   "pieces": [
+    {
+     "form": "i-",
+     "gloss": null,
+     "label": "CONT.1/2.A"
+    },
+    {
+     "form": "s-",
+     "gloss": null,
+     "label": "2.A"
+    },
+    {
+     "form": "uks-",
+     "gloss": null,
+     "label": "JUSS"
+    },
+    {
+     "form": "kirikaʔaar",
+     "gloss": "wake up",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "sukskirikaʔaaʔ",
+   "translation": "wake up!"
+  },
+  {
+   "analysis_text": "i- CONT.1/2.A + acir- 1.DU.IN.A + uks- JUSS + uhuur- ‘finally’ + awacitik ‘go outside’ + ruu- DIST + -Ø PERF",
+   "flags": [],
+   "go_page": 38,
+   "pieces": [
+    {
+     "form": "i-",
+     "gloss": null,
+     "label": "CONT.1/2.A"
+    },
+    {
+     "form": "acir-",
+     "gloss": null,
+     "label": "1.DU.IN.A"
+    },
+    {
+     "form": "uks-",
+     "gloss": null,
+     "label": "JUSS"
+    },
+    {
+     "form": "uhuur-",
+     "gloss": "finally",
+     "label": null
+    },
+    {
+     "form": "awacitik",
+     "gloss": "go outside",
+     "label": null
+    },
+    {
+     "form": "ruu-",
+     "gloss": null,
+     "label": "DIST"
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "ciksuhuurawaciiruutit",
+   "translation": "let’s go outside now!"
+  },
+  {
+   "analysis_text": "ruu- ‘there’ + ki- HORT + i- CONT.1/2.A + t- 1.A + at ‘go’ + -Ø PERF",
+   "flags": [],
+   "go_page": 38,
+   "pieces": [
+    {
+     "form": "ruu-",
+     "gloss": "there",
+     "label": null
+    },
+    {
+     "form": "ki-",
+     "gloss": null,
+     "label": "HORT"
+    },
+    {
+     "form": "i-",
+     "gloss": null,
+     "label": "CONT.1/2.A"
+    },
+    {
+     "form": "t-",
+     "gloss": null,
+     "label": "1.A"
+    },
+    {
+     "form": "at",
+     "gloss": "go",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "ruukiitaat",
+   "translation": "let me go there"
+  },
+  {
+   "analysis_text": "ki- HORT + i- CONT.1/2.A + t- 1.A + ir- PREV + uks- JUSS + uhuur- ‘at last’ + kaaʔa ‘dance’ + -Ø PERF",
+   "flags": [
+    "ocr_b"
+   ],
+   "go_page": 38,
+   "pieces": [
+    {
+     "form": "ki-",
+     "gloss": null,
+     "label": "HORT"
+    },
+    {
+     "form": "i-",
+     "gloss": null,
+     "label": "CONT.1/2.A"
+    },
+    {
+     "form": "t-",
+     "gloss": null,
+     "label": "1.A"
+    },
+    {
+     "form": "ir-",
+     "gloss": null,
+     "label": "PREV"
+    },
+    {
+     "form": "uks-",
+     "gloss": null,
+     "label": "JUSS"
+    },
+    {
+     "form": "uhuur-",
+     "gloss": "at last",
+     "label": null
+    },
+    {
+     "form": "kaaʔa",
+     "gloss": "dance",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "kiʔiitiksbuubkaaʔ",
+   "translation": "let me dance now"
+  },
+  {
+   "analysis_text": "ki- HORT + i- CONT. 1/2.A + s- 2.A + uks- JUSS + ku- 1.P + ut- PREV + iirik 'see, look at' + -Ø PERF",
+   "flags": [
+    "surface_suspect"
+   ],
+   "go_page": 39,
+   "pieces": [
+    {
+     "form": "ki-",
+     "gloss": null,
+     "label": "HORT"
+    },
+    {
+     "form": "i-",
+     "gloss": null,
+     "label": "CONT. 1/2.A"
+    },
+    {
+     "form": "s-",
+     "gloss": null,
+     "label": "2.A"
+    },
+    {
+     "form": "uks-",
+     "gloss": null,
+     "label": "JUSS"
+    },
+    {
+     "form": "ku-",
+     "gloss": null,
+     "label": "1.P"
+    },
+    {
+     "form": "ut-",
+     "gloss": null,
+     "label": "PREV"
+    },
+    {
+     "form": "iirik",
+     "gloss": "see, look at",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "cikstit.",
+   "translation": "Take a good look at me!"
+  },
+  {
+   "analysis_text": "pahiit- quiet; slow' + -uʔ NOM kaas- POT.2.A + s- 2.A + i- SEQ + kaa 'inside' + aah 'go around' + -Ø PERF",
+   "flags": [],
+   "go_page": 39,
+   "pieces": [
+    {
+     "form": "pahiit-",
+     "gloss": "quiet; slow'",
+     "label": null
+    },
+    {
+     "form": "-uʔ",
+     "gloss": "NOM kaas- POT.2.A",
+     "label": null
+    },
+    {
+     "form": "s-",
+     "gloss": null,
+     "label": "2.A"
+    },
+    {
+     "form": "i-",
+     "gloss": null,
+     "label": "SEQ"
+    },
+    {
+     "form": "kaa",
+     "gloss": "inside",
+     "label": null
+    },
+    {
+     "form": "aah",
+     "gloss": "go around",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "kaasíkaa",
+   "translation": "you must be quiet inside (there)"
+  },
+  {
+   "analysis_text": "kaaki- NEG.IND + Ø- 3.A + i- SEQ + raakiir 'be a long time' + -Ø PERF",
+   "flags": [],
+   "go_page": 39,
+   "pieces": [
+    {
+     "form": "kaaki-",
+     "gloss": null,
+     "label": "NEG.IND"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "i-",
+     "gloss": null,
+     "label": "SEQ"
+    },
+    {
+     "form": "raakiir",
+     "gloss": "be a long time",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "kaakiiraakii",
+   "translation": "don't be long"
+  },
+  {
+   "analysis_text": "karíi- EMPH.NEG + rii- ASSR + Ø- 3.A + i- SEQ + raakiir 'be a long time' + -Ø PERF",
+   "flags": [],
+   "go_page": 39,
+   "pieces": [
+    {
+     "form": "karíi-",
+     "gloss": null,
+     "label": "EMPH.NEG"
+    },
+    {
+     "form": "rii-",
+     "gloss": null,
+     "label": "ASSR"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "i-",
+     "gloss": null,
+     "label": "SEQ"
+    },
+    {
+     "form": "raakiir",
+     "gloss": "be a long time",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "kariiriiraakii",
+   "translation": "don't be long!"
+  },
+  {
+   "analysis_text": ". . . a 'and' + raa- 'just' + ku- INDF + ti- IND + Ø- 3.A + a- PREV + ku- 1.P + ri- PHY.BEN + ut- PREV + i- SEQ + awaahc- 'at least' + raawiiʔat 'help' + -Ø PERF",
+   "flags": [
+    "surface_suspect"
+   ],
+   "go_page": 39,
+   "pieces": [
+    {
+     "form": ".",
+     "gloss": ". . a 'and'",
+     "label": null
+    },
+    {
+     "form": "raa-",
+     "gloss": "just",
+     "label": null
+    },
+    {
+     "form": "ku-",
+     "gloss": null,
+     "label": "INDF"
+    },
+    {
+     "form": "ti-",
+     "gloss": null,
+     "label": "IND"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "a-",
+     "gloss": null,
+     "label": "PREV"
+    },
+    {
+     "form": "ku-",
+     "gloss": null,
+     "label": "1.P"
+    },
+    {
+     "form": "ri-",
+     "gloss": null,
+     "label": "PHY.BEN"
+    },
+    {
+     "form": "ut-",
+     "gloss": null,
+     "label": "PREV"
+    },
+    {
+     "form": "i-",
+     "gloss": null,
+     "label": "SEQ"
+    },
+    {
+     "form": "awaahc-",
+     "gloss": "at least",
+     "label": null
+    },
+    {
+     "form": "raawiiʔat",
+     "gloss": "help",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "raakutikuriiwictaawiiʔat.",
+   "translation": "Oh, you should help me!"
+  },
+  {
+   "analysis_text": "ra- INF.A + Ø- 3.A + ku- INF.B + i- SEQ + kaksa 'call out' + -Ø SUB.4",
+   "flags": [
+    "surface_suspect"
+   ],
+   "go_page": 39,
+   "pieces": [
+    {
+     "form": "ra-",
+     "gloss": null,
+     "label": "INF.A"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "ku-",
+     "gloss": null,
+     "label": "INF.B"
+    },
+    {
+     "form": "i-",
+     "gloss": null,
+     "label": "SEQ"
+    },
+    {
+     "form": "kaksa",
+     "gloss": "call out",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "SUB.4"
+    }
+   ],
+   "surface": "capáat.",
+   "translation": "Someone (should) call out for the women to gather!"
+  },
+  {
+   "analysis_text": "i- CONT.1/2.A + t- 1.A + uks- JUSS + uhuur- 'a while' + wiítik 'sit down' + -Ø PERF",
+   "flags": [
+    "ocr_b"
+   ],
+   "go_page": 39,
+   "pieces": [
+    {
+     "form": "i-",
+     "gloss": null,
+     "label": "CONT.1/2.A"
+    },
+    {
+     "form": "t-",
+     "gloss": null,
+     "label": "1.A"
+    },
+    {
+     "form": "uks-",
+     "gloss": null,
+     "label": "JUSS"
+    },
+    {
+     "form": "uhuur-",
+     "gloss": "a while",
+     "label": null
+    },
+    {
+     "form": "wiítik",
+     "gloss": "sit down",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "tuksuhuubwíitit",
+   "translation": "let me sit down a while!"
+  },
+  {
+   "analysis_text": "witi- REFL + ta- IND.1/2.A + t- 1.A + acikstarikus ‘hold one’s thoughts (to oneself)’ + -Ø PERF",
+   "flags": [],
+   "go_page": 40,
+   "pieces": [
+    {
+     "form": "witi-",
+     "gloss": null,
+     "label": "REFL"
+    },
+    {
+     "form": "ta-",
+     "gloss": null,
+     "label": "IND.1/2.A"
+    },
+    {
+     "form": "t-",
+     "gloss": null,
+     "label": "1.A"
+    },
+    {
+     "form": "acikstarikus",
+     "gloss": "hold one’s thoughts (to oneself)",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "wititaatacikstariku",
+   "translation": "I keep my thoughts to myself"
+  },
+  {
+   "analysis_text": "si- DU + ar- EV + ra- ABS + -Ø- 3.A + wicka ‘wish, want’ + -Ø PERF si- DU + witi- REFL + ra- INF.A + -Ø- 3.A + ku- INF.B + ut- PREV + iirik ‘see’ + -Ø PERF",
+   "flags": [],
+   "go_page": 40,
+   "pieces": [
+    {
+     "form": "si-",
+     "gloss": null,
+     "label": "DU"
+    },
+    {
+     "form": "ar-",
+     "gloss": null,
+     "label": "EV"
+    },
+    {
+     "form": "ra-",
+     "gloss": null,
+     "label": "ABS"
+    },
+    {
+     "form": "-Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "wicka",
+     "gloss": "wish, want",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": "PERF si- DU",
+     "label": null
+    },
+    {
+     "form": "witi-",
+     "gloss": null,
+     "label": "REFL"
+    },
+    {
+     "form": "ra-",
+     "gloss": null,
+     "label": "INF.A"
+    },
+    {
+     "form": "-Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "ku-",
+     "gloss": null,
+     "label": "INF.B"
+    },
+    {
+     "form": "ut-",
+     "gloss": null,
+     "label": "PREV"
+    },
+    {
+     "form": "iirik",
+     "gloss": "see",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "siwitiirakuutiirit",
+   "translation": "they (DU) wanted to see each other"
+  },
+  {
+   "analysis_text": "wii- ‘now’ + ti- IND + Ø- 3.A + a- PREV + huraah- ‘land’ + wiic- ‘moving close to a point’ + a ‘come’ + -Ø PERF",
+   "flags": [
+    "ocr_b"
+   ],
+   "go_page": 41,
+   "pieces": [
+    {
+     "form": "wii-",
+     "gloss": "now",
+     "label": null
+    },
+    {
+     "form": "ti-",
+     "gloss": null,
+     "label": "IND"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "a-",
+     "gloss": null,
+     "label": "PREV"
+    },
+    {
+     "form": "huraah-",
+     "gloss": "land",
+     "label": null
+    },
+    {
+     "form": "wiic-",
+     "gloss": "moving close to a point",
+     "label": null
+    },
+    {
+     "form": "a",
+     "gloss": "come",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "wiitahurabwiicaʔ",
+   "translation": "it is getting close now; it has come close now"
+  },
+  {
+   "analysis_text": "wii- ‘when’ + ra- INF.A + Ø- 3.A + ku- INF.B + huraar- ‘earth’ + kiwatak ‘change’ + -Ø SUB.4",
+   "flags": [
+    "ocr_b"
+   ],
+   "go_page": 41,
+   "pieces": [
+    {
+     "form": "wii-",
+     "gloss": "when",
+     "label": null
+    },
+    {
+     "form": "ra-",
+     "gloss": null,
+     "label": "INF.A"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "ku-",
+     "gloss": null,
+     "label": "INF.B"
+    },
+    {
+     "form": "huraar-",
+     "gloss": "earth",
+     "label": null
+    },
+    {
+     "form": "kiwatak",
+     "gloss": "change",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "SUB.4"
+    }
+   ],
+   "surface": "wiirakuhurabkiwatat",
+   "translation": "when the season changes"
+  },
+  {
+   "analysis_text": "ka- INTER + wii- ‘now’ + ra- ABS + s- 2.A + ir- PREV + a ‘come’ + -Ø PERF",
+   "flags": [],
+   "go_page": 41,
+   "pieces": [
+    {
+     "form": "ka-",
+     "gloss": null,
+     "label": "INTER"
+    },
+    {
+     "form": "wii-",
+     "gloss": "now",
+     "label": null
+    },
+    {
+     "form": "ra-",
+     "gloss": null,
+     "label": "ABS"
+    },
+    {
+     "form": "s-",
+     "gloss": null,
+     "label": "2.A"
+    },
+    {
+     "form": "ir-",
+     "gloss": null,
+     "label": "PREV"
+    },
+    {
+     "form": "a",
+     "gloss": "come",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "kawiirasiiraʔ",
+   "translation": "have you come (i.e., arrived)?"
+  },
+  {
+   "analysis_text": "ruu- ‘then’ + ar- EV + ri- CONT.3.A + Ø- 3.A + wakaʔu ‘say’ + -Ø PERF",
+   "flags": [],
+   "go_page": 41,
+   "pieces": [
+    {
+     "form": "ruu-",
+     "gloss": "then",
+     "label": null
+    },
+    {
+     "form": "ar-",
+     "gloss": null,
+     "label": "EV"
+    },
+    {
+     "form": "ri-",
+     "gloss": null,
+     "label": "CONT.3.A"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "wakaʔu",
+     "gloss": "say",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "ruuʔahiwakuʔ",
+   "translation": "then he said"
+  },
+  {
+   "analysis_text": "wii- ‘now’ + ruu- ‘then’ + ti- IND + Ø- 3.A + sakur- ‘sun’ + iis- ‘out of sight’ + at ‘go’ + -Ø PERF",
+   "flags": [],
+   "go_page": 41,
+   "pieces": [
+    {
+     "form": "wii-",
+     "gloss": "now",
+     "label": null
+    },
+    {
+     "form": "ruu-",
+     "gloss": "then",
+     "label": null
+    },
+    {
+     "form": "ti-",
+     "gloss": null,
+     "label": "IND"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "sakur-",
+     "gloss": "sun",
+     "label": null
+    },
+    {
+     "form": "iis-",
+     "gloss": "out of sight",
+     "label": null
+    },
+    {
+     "form": "at",
+     "gloss": "go",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "wiiruutisakuriisat",
+   "translation": "then the sun set"
+  },
+  {
+   "analysis_text": "raa- ‘just’ + ruu- ‘then’ + ti- IND + Ø- 3.A + kitaarik ‘be standing on top’ + -Ø PERF",
+   "flags": [],
+   "go_page": 41,
+   "pieces": [
+    {
+     "form": "raa-",
+     "gloss": "just",
+     "label": null
+    },
+    {
+     "form": "ruu-",
+     "gloss": "then",
+     "label": null
+    },
+    {
+     "form": "ti-",
+     "gloss": null,
+     "label": "IND"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "kitaarik",
+     "gloss": "be standing on top",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "pah",
+   "translation": "the moon was just on top"
+  },
+  {
+   "analysis_text": "iriruu- 'thereupon' + rii- ASSR + Ø- 3.A + wuu 'go PL.3.A' + -Ø PERF",
+   "flags": [],
+   "go_page": 42,
+   "pieces": [
+    {
+     "form": "iriruu-",
+     "gloss": "thereupon",
+     "label": null
+    },
+    {
+     "form": "rii-",
+     "gloss": null,
+     "label": "ASSR"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "wuu",
+     "gloss": "go PL.3.A",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "iriruuriíwuʔ",
+   "translation": "thereupon they went"
+  },
+  {
+   "analysis_text": "tii- 'here' + ar- EV + ra- ABS + Ø- 3.A + haak- 'wood' + sa 'be lying' + -Ø PERF",
+   "flags": [
+    "ocr_b"
+   ],
+   "go_page": 42,
+   "pieces": [
+    {
+     "form": "tii-",
+     "gloss": "here",
+     "label": null
+    },
+    {
+     "form": "ar-",
+     "gloss": null,
+     "label": "EV"
+    },
+    {
+     "form": "ra-",
+     "gloss": null,
+     "label": "ABS"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "haak-",
+     "gloss": "wood",
+     "label": null
+    },
+    {
+     "form": "sa",
+     "gloss": "be lying",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "tiiʔahabaacca",
+   "translation": "a log was lying here"
+  },
+  {
+   "analysis_text": "ii- 'then; when' + ra- ABS + Ø- 3.A + a- PREV + a 'come' + -Ø SUB.4",
+   "flags": [],
+   "go_page": 42,
+   "pieces": [
+    {
+     "form": "ii-",
+     "gloss": "then; when",
+     "label": null
+    },
+    {
+     "form": "ra-",
+     "gloss": null,
+     "label": "ABS"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "a-",
+     "gloss": null,
+     "label": "PREV"
+    },
+    {
+     "form": "a",
+     "gloss": "come",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "SUB.4"
+    }
+   ],
+   "surface": "iiraaʔa",
+   "translation": "when he came"
+  },
+  {
+   "analysis_text": "ii- 'that' + ra- ABS + Ø- 3.A + haak- 'wood' + sa 'be lying' + -Ø SUB.4",
+   "flags": [],
+   "go_page": 42,
+   "pieces": [
+    {
+     "form": "ii-",
+     "gloss": "that",
+     "label": null
+    },
+    {
+     "form": "ra-",
+     "gloss": null,
+     "label": "ABS"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "haak-",
+     "gloss": "wood",
+     "label": null
+    },
+    {
+     "form": "sa",
+     "gloss": "be lying",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "SUB.4"
+    }
+   ],
+   "surface": "iirahaacca",
+   "translation": "that log (lying)"
+  },
+  {
+   "analysis_text": "iri- 'that' + wii- 'now' + ta- IND.- 1/2.A + s- 2.A + asaar 'be named' + Ø 'be'",
+   "flags": [],
+   "go_page": 42,
+   "pieces": [
+    {
+     "form": "iri-",
+     "gloss": "that",
+     "label": null
+    },
+    {
+     "form": "wii-",
+     "gloss": "now",
+     "label": null
+    },
+    {
+     "form": "ta-",
+     "gloss": "IND.- 1/2.A",
+     "label": null
+    },
+    {
+     "form": "s-",
+     "gloss": null,
+     "label": "2.A"
+    },
+    {
+     "form": "asaar",
+     "gloss": "be named",
+     "label": null
+    },
+    {
+     "form": "Ø",
+     "gloss": "be",
+     "label": null
+    }
+   ],
+   "surface": "iriwiitaasasaa",
+   "translation": "you are named that"
+  },
+  {
+   "analysis_text": "iri- 'that' + wii- 'now' + ti- IND + Ø- 3.A + uur- PREV + raahiir 'be good' + -Ø PERF",
+   "flags": [],
+   "go_page": 42,
+   "pieces": [
+    {
+     "form": "iri-",
+     "gloss": "that",
+     "label": null
+    },
+    {
+     "form": "wii-",
+     "gloss": "now",
+     "label": null
+    },
+    {
+     "form": "ti-",
+     "gloss": null,
+     "label": "IND"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "uur-",
+     "gloss": null,
+     "label": "PREV"
+    },
+    {
+     "form": "raahiir",
+     "gloss": "be good",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "iriwiituraahi",
+   "translation": "that is good"
+  },
+  {
+   "analysis_text": "i- CONT.1/2.A + t- 1.A + a- 2.P + ir- PREV + ut- PREV + raarikaaʔa 'to tell to' + -Ø PERF",
+   "flags": [],
+   "go_page": 42,
+   "pieces": [
+    {
+     "form": "i-",
+     "gloss": null,
+     "label": "CONT.1/2.A"
+    },
+    {
+     "form": "t-",
+     "gloss": null,
+     "label": "1.A"
+    },
+    {
+     "form": "a-",
+     "gloss": null,
+     "label": "2.P"
+    },
+    {
+     "form": "ir-",
+     "gloss": null,
+     "label": "PREV"
+    },
+    {
+     "form": "ut-",
+     "gloss": null,
+     "label": "PREV"
+    },
+    {
+     "form": "raarikaaʔa",
+     "gloss": "to tell to",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "ituuhaarikaaʔ",
+   "translation": "I'll tell you what to do"
+  },
+  {
+   "analysis_text": "irii- 'where' + ar- EV + ra- ABS + Ø- 3.A + arasik 'cook' + -a SUB.1",
+   "flags": [],
+   "go_page": 42,
+   "pieces": [
+    {
+     "form": "irii-",
+     "gloss": "where",
+     "label": null
+    },
+    {
+     "form": "ar-",
+     "gloss": null,
+     "label": "EV"
+    },
+    {
+     "form": "ra-",
+     "gloss": null,
+     "label": "ABS"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "arasik",
+     "gloss": "cook",
+     "label": null
+    },
+    {
+     "form": "-a",
+     "gloss": null,
+     "label": "SUB.1"
+    }
+   ],
+   "surface": "icaas",
+   "translation": "where he cooked Turtle"
+  },
+  {
+   "analysis_text": "tii- 'here' + irii- 'where' + ra- ABS + s- 2.A + kus 'be sitting' + -Ø SUB.4",
+   "flags": [],
+   "go_page": 42,
+   "pieces": [
+    {
+     "form": "tii-",
+     "gloss": "here",
+     "label": null
+    },
+    {
+     "form": "irii-",
+     "gloss": "where",
+     "label": null
+    },
+    {
+     "form": "ra-",
+     "gloss": null,
+     "label": "ABS"
+    },
+    {
+     "form": "s-",
+     "gloss": null,
+     "label": "2.A"
+    },
+    {
+     "form": "kus",
+     "gloss": "be sitting",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "SUB.4"
+    }
+   ],
+   "surface": "tiiʔiriirasku",
+   "translation": "here where you are"
+  },
+  {
+   "analysis_text": "riku- 'the one that' + ar- EV + ri- CONT.3.A + Ø 'be' + -Ø PERF",
+   "flags": [],
+   "go_page": 42,
+   "pieces": [
+    {
+     "form": "riku-",
+     "gloss": "the one that",
+     "label": null
+    },
+    {
+     "form": "ar-",
+     "gloss": null,
+     "label": "EV"
+    },
+    {
+     "form": "ri-",
+     "gloss": null,
+     "label": "CONT.3.A"
+    },
+    {
+     "form": "Ø",
+     "gloss": "be",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "rikuʔahiʔ",
+   "translation": "he was the one; that was the one"
+  },
+  {
+   "analysis_text": "hii- 'other' + ra- ABS + sa 'be lying' + -Ø SUB.4",
+   "flags": [],
+   "go_page": 42,
+   "pieces": [
+    {
+     "form": "hii-",
+     "gloss": "other",
+     "label": null
+    },
+    {
+     "form": "ra-",
+     "gloss": null,
+     "label": "ABS"
+    },
+    {
+     "form": "sa",
+     "gloss": "be lying",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "SUB.4"
+    }
+   ],
+   "surface": "hiiraasa",
+   "translation": "the other one (lying)"
+  },
+  {
+   "analysis_text": "tii- 'this' + hii- 'other' + ra- ABS + Ø- 3.A + a- PREV + a 'come' + -Ø SUB.4",
+   "flags": [
+    "ocr_b"
+   ],
+   "go_page": 42,
+   "pieces": [
+    {
+     "form": "tii-",
+     "gloss": "this",
+     "label": null
+    },
+    {
+     "form": "hii-",
+     "gloss": "other",
+     "label": null
+    },
+    {
+     "form": "ra-",
+     "gloss": null,
+     "label": "ABS"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "a-",
+     "gloss": null,
+     "label": "PREV"
+    },
+    {
+     "form": "a",
+     "gloss": "come",
+     "label": null
+    },
+    {
+     "form": "-Ø",
+     "gloss": null,
+     "label": "SUB.4"
+    }
+   ],
+   "surface": "tiibiiraaʔa",
+   "translation": "this other one who came"
+  },
+  {
+   "analysis_text": "si- DU + wi- QUOT + ti- IND + Ø- 3.A + uks- AOR + akitaar- 'tribe' + kus 'be sitting' + Ø PERF",
+   "flags": [
+    "ocr_b"
+   ],
+   "go_page": 43,
+   "pieces": [
+    {
+     "form": "si-",
+     "gloss": null,
+     "label": "DU"
+    },
+    {
+     "form": "wi-",
+     "gloss": null,
+     "label": "QUOT"
+    },
+    {
+     "form": "ti-",
+     "gloss": null,
+     "label": "IND"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "uks-",
+     "gloss": null,
+     "label": "AOR"
+    },
+    {
+     "form": "akitaar-",
+     "gloss": "tribe",
+     "label": null
+    },
+    {
+     "form": "kus",
+     "gloss": "be sitting",
+     "label": null
+    },
+    {
+     "form": "Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "siwituksaakitaabku",
+   "translation": "there were two tribes"
+  },
+  {
+   "analysis_text": "ar- EV + ri- CONT.3.A + Ø- 3.A + kiis- 'bone' + raar- PL + takipuh 'gather' + Ø PERF",
+   "flags": [],
+   "go_page": 43,
+   "pieces": [
+    {
+     "form": "ar-",
+     "gloss": null,
+     "label": "EV"
+    },
+    {
+     "form": "ri-",
+     "gloss": null,
+     "label": "CONT.3.A"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "kiis-",
+     "gloss": "bone",
+     "label": null
+    },
+    {
+     "form": "raar-",
+     "gloss": null,
+     "label": "PL"
+    },
+    {
+     "form": "takipuh",
+     "gloss": "gather",
+     "label": null
+    },
+    {
+     "form": "Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "ahikiistacakipu",
+   "translation": "he gathered the bones"
+  },
+  {
+   "analysis_text": "ii- 'when' + wii- 'now' + ra- ABS + Ø- 3.A + sakur- 'sun' + iisat 'go out of sight; set' + -a SUB.1",
+   "flags": [],
+   "go_page": 43,
+   "pieces": [
+    {
+     "form": "ii-",
+     "gloss": "when",
+     "label": null
+    },
+    {
+     "form": "wii-",
+     "gloss": "now",
+     "label": null
+    },
+    {
+     "form": "ra-",
+     "gloss": null,
+     "label": "ABS"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "sakur-",
+     "gloss": "sun",
+     "label": null
+    },
+    {
+     "form": "iisat",
+     "gloss": "go out of sight; set",
+     "label": null
+    },
+    {
+     "form": "-a",
+     "gloss": null,
+     "label": "SUB.1"
+    }
+   ],
+   "surface": "iiwiirasakuriisata",
+   "translation": "as the sun set"
+  },
+  {
+   "analysis_text": "rii- ASSR + t- 1.A + riikakus- 'door flap' + wihak 'move aside' + Ø PERF",
+   "flags": [
+    "ocr_b"
+   ],
+   "go_page": 43,
+   "pieces": [
+    {
+     "form": "rii-",
+     "gloss": null,
+     "label": "ASSR"
+    },
+    {
+     "form": "t-",
+     "gloss": null,
+     "label": "1.A"
+    },
+    {
+     "form": "riikakus-",
+     "gloss": "door flap",
+     "label": null
+    },
+    {
+     "form": "wihak",
+     "gloss": "move aside",
+     "label": null
+    },
+    {
+     "form": "Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "riibiikakuspihat",
+   "translation": "I moved the door flap aside"
+  },
+  {
+   "analysis_text": "ti- IND + Ø- 3.A + uur- PREV + icaabiks 'person' + hiir 'be good looking' + Ø PERF",
+   "flags": [
+    "ocr_b"
+   ],
+   "go_page": 43,
+   "pieces": [
+    {
+     "form": "ti-",
+     "gloss": null,
+     "label": "IND"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "uur-",
+     "gloss": null,
+     "label": "PREV"
+    },
+    {
+     "form": "icaabiks",
+     "gloss": "person",
+     "label": null
+    },
+    {
+     "form": "hiir",
+     "gloss": "be good looking",
+     "label": null
+    },
+    {
+     "form": "Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "tuuricaabiksii",
+   "translation": "he is a good-looking person"
+  },
+  {
+   "analysis_text": "irii- 'the one' + ruu- 'there' + ra- INF.A + Ø- 3.A + ku- INF.B + i- SEQ + raburaar- 'animal' + -u SUB.D",
+   "flags": [
+    "ocr_b"
+   ],
+   "go_page": 44,
+   "pieces": [
+    {
+     "form": "irii-",
+     "gloss": "the one",
+     "label": null
+    },
+    {
+     "form": "ruu-",
+     "gloss": "there",
+     "label": null
+    },
+    {
+     "form": "ra-",
+     "gloss": null,
+     "label": "INF.A"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "ku-",
+     "gloss": null,
+     "label": "INF.B"
+    },
+    {
+     "form": "i-",
+     "gloss": null,
+     "label": "SEQ"
+    },
+    {
+     "form": "raburaar-",
+     "gloss": "animal",
+     "label": null
+    },
+    {
+     "form": "-u",
+     "gloss": null,
+     "label": "SUB.D"
+    }
+   ],
+   "surface": "iriiruurakuuraaru",
+   "translation": "whatever the kind of animal was,' that is, 'all kinds of animals"
+  },
+  {
+   "analysis_text": "ti- IND + Ø- 3.A + buras ‘find’ + Ø PERF; cp. tiburásista ‘he is going to find it’ < ti- IND + Ø- 3.A + buras ‘find’ + -his PERF + -ta INT",
+   "flags": [
+    "ocr_b"
+   ],
+   "go_page": 46,
+   "pieces": [
+    {
+     "form": "ti-",
+     "gloss": null,
+     "label": "IND"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "buras",
+     "gloss": "find",
+     "label": null
+    },
+    {
+     "form": "Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "tiburás",
+   "translation": "he found it"
+  },
+  {
+   "analysis_text": "ti- IND + Ø- 3.A + kikak ‘cry’ + Ø PERF; cp. tikikakísta ‘he is going to cry’ < ti- IND + Ø- 3.A + kikak ‘cry’ + -his PERF + -ta INT; takikaksaʔ ‘he came crying’ < ti- IND + Ø- 3.A + a- PREV.3.A + kikak ‘cry’ + -his PERF + a- ‘come’ + Ø PERF",
+   "flags": [],
+   "go_page": 46,
+   "pieces": [
+    {
+     "form": "ti-",
+     "gloss": null,
+     "label": "IND"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "kikak",
+     "gloss": "cry",
+     "label": null
+    },
+    {
+     "form": "Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "tikíkat",
+   "translation": "he cried"
+  },
+  {
+   "analysis_text": "ra- INF.A + s- 2.A + ku- INF.B + bisaask ‘call’ + -a SUB.1",
+   "flags": [
+    "ocr_b"
+   ],
+   "go_page": 46,
+   "pieces": [
+    {
+     "form": "ra-",
+     "gloss": null,
+     "label": "INF.A"
+    },
+    {
+     "form": "s-",
+     "gloss": null,
+     "label": "2.A"
+    },
+    {
+     "form": "ku-",
+     "gloss": null,
+     "label": "INF.B"
+    },
+    {
+     "form": "bisaask",
+     "gloss": "call",
+     "label": null
+    },
+    {
+     "form": "-a",
+     "gloss": null,
+     "label": "SUB.1"
+    }
+   ],
+   "surface": "raskuhisaaska",
+   "translation": "for you to call him"
+  },
+  {
+   "analysis_text": "ra- INF.A + t- 1.A + ku- INF.B + buras ‘find’ + -i SUB.2",
+   "flags": [
+    "ocr_b"
+   ],
+   "go_page": 46,
+   "pieces": [
+    {
+     "form": "ra-",
+     "gloss": null,
+     "label": "INF.A"
+    },
+    {
+     "form": "t-",
+     "gloss": null,
+     "label": "1.A"
+    },
+    {
+     "form": "ku-",
+     "gloss": null,
+     "label": "INF.B"
+    },
+    {
+     "form": "buras",
+     "gloss": "find",
+     "label": null
+    },
+    {
+     "form": "-i",
+     "gloss": null,
+     "label": "SUB.2"
+    }
+   ],
+   "surface": "ratkuburasi",
+   "translation": "for me to find him"
+  },
+  {
+   "analysis_text": "ti- IND + Ø- 3.A + raʔuk ‘make’ + Ø PERF; wiiraraʔu ‘when he made it’ < wii- ‘now’ + ra- ABS + Ø- 3.A + raʔuk ‘make’ + Ø SUB.3",
+   "flags": [],
+   "go_page": 46,
+   "pieces": [
+    {
+     "form": "ti-",
+     "gloss": null,
+     "label": "IND"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "raʔuk",
+     "gloss": "make",
+     "label": null
+    },
+    {
+     "form": "Ø",
+     "gloss": "PERF; wiiraraʔu ‘when he made it’ < wii- ‘now’",
+     "label": null
+    },
+    {
+     "form": "ra-",
+     "gloss": null,
+     "label": "ABS"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "raʔuk",
+     "gloss": "make",
+     "label": null
+    },
+    {
+     "form": "Ø",
+     "gloss": null,
+     "label": "SUB.3"
+    }
+   ],
+   "surface": "tiruʔ",
+   "translation": "he made it"
+  },
+  {
+   "analysis_text": "irii- ‘where’ + ra- ABS + Ø- 3.A + kikak ‘cry’ + Ø SUB.4",
+   "flags": [],
+   "go_page": 46,
+   "pieces": [
+    {
+     "form": "irii-",
+     "gloss": "where",
+     "label": null
+    },
+    {
+     "form": "ra-",
+     "gloss": null,
+     "label": "ABS"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "kikak",
+     "gloss": "cry",
+     "label": null
+    },
+    {
+     "form": "Ø",
+     "gloss": null,
+     "label": "SUB.4"
+    }
+   ],
+   "surface": "iriirakikat",
+   "translation": "where he cried"
+  },
+  {
+   "analysis_text": "ti- IND + Ø- 3.A + kacak 'cut, chop' + -:bus IMPF; cp. tikacat 'he cut it' < ti- IND + Ø- 3.A + kacak 'cut' + Ø PERF",
+   "flags": [
+    "ocr_b"
+   ],
+   "go_page": 47,
+   "pieces": [
+    {
+     "form": "ti-",
+     "gloss": null,
+     "label": "IND"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "kacak",
+     "gloss": "cut, chop",
+     "label": null
+    },
+    {
+     "form": "-:bus",
+     "gloss": null,
+     "label": "IMPF"
+    }
+   ],
+   "surface": "tikacaakuʔ",
+   "translation": "he is cutting it"
+  },
+  {
+   "analysis_text": "ti- IND + Ø- 3.A + kiikaa 'drink' + -:bus IMPF; cp. tikiikaahusta 'he is going to be drinking it' < ti- IND + Ø- 3.A + kiikaa 'drink' + -:bus IMPF + -ta INT; Tarahaʔ Takiihaahusaʔ 'Buffalo Comes to Drink' < ti- IND + Ø- 3.A + a- PREV + kiikaa 'drink' + -:bus IMPF + a 'come' + Ø PERF",
+   "flags": [
+    "ocr_b"
+   ],
+   "go_page": 47,
+   "pieces": [
+    {
+     "form": "ti-",
+     "gloss": null,
+     "label": "IND"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "kiikaa",
+     "gloss": "drink",
+     "label": null
+    },
+    {
+     "form": "-:bus",
+     "gloss": null,
+     "label": "IMPF"
+    }
+   ],
+   "surface": "tikiikaahuʔ",
+   "translation": "he is drinking it"
+  },
+  {
+   "analysis_text": "ra- INF.A + Ø- 3.A + a- PREV + ku- INF.B + raar- 3.P.INDV.A + a 'come' + -:bus IMPF.SUB; cp. non-subordinate taraaraahuʔ 'they are coming'",
+   "flags": [
+    "ocr_b"
+   ],
+   "go_page": 47,
+   "pieces": [
+    {
+     "form": "ra-",
+     "gloss": null,
+     "label": "INF.A"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "a-",
+     "gloss": null,
+     "label": "PREV"
+    },
+    {
+     "form": "ku-",
+     "gloss": null,
+     "label": "INF.B"
+    },
+    {
+     "form": "raar-",
+     "gloss": null,
+     "label": "3.P.INDV.A"
+    },
+    {
+     "form": "a",
+     "gloss": "come",
+     "label": null
+    },
+    {
+     "form": "-:bus",
+     "gloss": null,
+     "label": "IMPF.SUB"
+    }
+   ],
+   "surface": "raakuraarahuʔ",
+   "translation": "for them to be coming"
+  },
+  {
+   "analysis_text": "irii- 'the one' + ra- ABS + Ø- 3.A + kiwak 'bark' + -:bus IMPF.SUB; cp. non-subordinate tikiwaakuʔ 'it's barking' < ti- IND + Ø- 3.A + kiwak 'bark' + -:bus IMPF",
+   "flags": [
+    "ocr_b"
+   ],
+   "go_page": 47,
+   "pieces": [
+    {
+     "form": "irii-",
+     "gloss": "the one",
+     "label": null
+    },
+    {
+     "form": "ra-",
+     "gloss": null,
+     "label": "ABS"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "kiwak",
+     "gloss": "bark",
+     "label": null
+    },
+    {
+     "form": "-:bus",
+     "gloss": null,
+     "label": "IMPF.SUB"
+    }
+   ],
+   "surface": "iriirakiwakuʔ",
+   "translation": "the one that barked"
+  },
+  {
+   "analysis_text": "ta- IND.1/2.A + t- 1.A + uur- PREV + raaʔiiwaat 'tell a story' + -his PERF + -ta INT",
+   "flags": [],
+   "go_page": 47,
+   "pieces": [
+    {
+     "form": "ta-",
+     "gloss": null,
+     "label": "IND.1/2.A"
+    },
+    {
+     "form": "t-",
+     "gloss": null,
+     "label": "1.A"
+    },
+    {
+     "form": "uur-",
+     "gloss": null,
+     "label": "PREV"
+    },
+    {
+     "form": "raaʔiiwaat",
+     "gloss": "tell a story",
+     "label": null
+    },
+    {
+     "form": "-his",
+     "gloss": null,
+     "label": "PERF"
+    },
+    {
+     "form": "-ta",
+     "gloss": null,
+     "label": "INT"
+    }
+   ],
+   "surface": "taturaaʔiiwaatista",
+   "translation": "I am going to tell a story"
+  },
+  {
+   "analysis_text": "iri- 'that' + wii- 'now' + ta- IND.1/2.A + t- 1.A + a- 2.P + raahisaask 'call, address (by a kin term)' + -:bus IMPF + -ta INT; cp. iriwiitataraahisaaskuʔ 'I call you (by a certain kinship term)'",
+   "flags": [
+    "ocr_b"
+   ],
+   "go_page": 47,
+   "pieces": [
+    {
+     "form": "iri-",
+     "gloss": "that",
+     "label": null
+    },
+    {
+     "form": "wii-",
+     "gloss": "now",
+     "label": null
+    },
+    {
+     "form": "ta-",
+     "gloss": null,
+     "label": "IND.1/2.A"
+    },
+    {
+     "form": "t-",
+     "gloss": null,
+     "label": "1.A"
+    },
+    {
+     "form": "a-",
+     "gloss": null,
+     "label": "2.P"
+    },
+    {
+     "form": "raahisaask",
+     "gloss": "call, address (by a kin term)",
+     "label": null
+    },
+    {
+     "form": "-:bus",
+     "gloss": null,
+     "label": "IMPF"
+    },
+    {
+     "form": "-ta",
+     "gloss": null,
+     "label": "INT"
+    }
+   ],
+   "surface": "iriwiitataraahisaaskusta",
+   "translation": "I am going to be calling you (by a certain kinship term)"
+  },
+  {
+   "analysis_text": "wii- 'now' + ri- CONT.3.A + ut- PREV + raasiktik 'happen, occur' + -his PERF + -ta INT + -rit INT.SUB;",
+   "flags": [],
+   "go_page": 48,
+   "pieces": [
+    {
+     "form": "wii-",
+     "gloss": "now",
+     "label": null
+    },
+    {
+     "form": "ri-",
+     "gloss": null,
+     "label": "CONT.3.A"
+    },
+    {
+     "form": "ut-",
+     "gloss": null,
+     "label": "PREV"
+    },
+    {
+     "form": "raasiktik",
+     "gloss": "happen, occur",
+     "label": null
+    },
+    {
+     "form": "-his",
+     "gloss": null,
+     "label": "PERF"
+    },
+    {
+     "form": "-ta",
+     "gloss": null,
+     "label": "INT"
+    },
+    {
+     "form": "-rit",
+     "gloss": null,
+     "label": "INT.SUB"
+    }
+   ],
+   "surface": "wiiruuhaasitiiʔ",
+   "translation": "when it is going to occur"
+  },
+  {
+   "analysis_text": "wii- 'now' + ri- CONT.3.A + ut- PREV + raasiktik 'happen, occur' + -hus IMPF + -ta INT + -rit INT.SUB",
+   "flags": [],
+   "go_page": 48,
+   "pieces": [
+    {
+     "form": "wii-",
+     "gloss": "now",
+     "label": null
+    },
+    {
+     "form": "ri-",
+     "gloss": null,
+     "label": "CONT.3.A"
+    },
+    {
+     "form": "ut-",
+     "gloss": null,
+     "label": "PREV"
+    },
+    {
+     "form": "raasiktik",
+     "gloss": "happen, occur",
+     "label": null
+    },
+    {
+     "form": "-hus",
+     "gloss": null,
+     "label": "IMPF"
+    },
+    {
+     "form": "-ta",
+     "gloss": null,
+     "label": "INT"
+    },
+    {
+     "form": "-rit",
+     "gloss": null,
+     "label": "INT.SUB"
+    }
+   ],
+   "surface": "wiiruuhaasitiiʔkustarit",
+   "translation": "when it is going to be happening"
+  },
+  {
+   "analysis_text": null,
+   "flags": [
+    "structured"
+   ],
+   "go_page": 48,
+   "pieces": [
+    {
+     "form": "wii-",
+     "gloss": "now",
+     "label": null
+    },
+    {
+     "form": "ri-",
+     "gloss": null,
+     "label": "CONT.3.A"
+    },
+    {
+     "form": "ut-",
+     "gloss": null,
+     "label": "PREV"
+    },
+    {
+     "form": "raasiktik",
+     "gloss": "happen, occur",
+     "label": null
+    },
+    {
+     "form": "-his",
+     "gloss": null,
+     "label": "PERF"
+    },
+    {
+     "form": "-ta",
+     "gloss": null,
+     "label": "INT"
+    },
+    {
+     "form": "-rit",
+     "gloss": null,
+     "label": "INT.SUB"
+    }
+   ],
+   "surface": "wiiruuhaasitiiʔ",
+   "translation": "when it is going to occur"
+  },
+  {
+   "analysis_text": null,
+   "flags": [
+    "structured"
+   ],
+   "go_page": 48,
+   "pieces": [
+    {
+     "form": "wii-",
+     "gloss": "now",
+     "label": null
+    },
+    {
+     "form": "ri-",
+     "gloss": null,
+     "label": "CONT.3.A"
+    },
+    {
+     "form": "ut-",
+     "gloss": null,
+     "label": "PREV"
+    },
+    {
+     "form": "raasiktik",
+     "gloss": "happen, occur",
+     "label": null
+    },
+    {
+     "form": "-hus",
+     "gloss": null,
+     "label": "IMPF"
+    },
+    {
+     "form": "-ta",
+     "gloss": null,
+     "label": "INT"
+    },
+    {
+     "form": "-rit",
+     "gloss": null,
+     "label": "INT.SUB"
+    }
+   ],
+   "surface": "wiiruuhaasitiiʔkustarit",
+   "translation": "when it is going to be happening"
+  },
+  {
+   "analysis_text": null,
+   "flags": [
+    "structured"
+   ],
+   "go_page": 48,
+   "pieces": [
+    {
+     "form": "ti-",
+     "gloss": null,
+     "label": "IND"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "waawaktik",
+     "gloss": "talk",
+     "label": null
+    },
+    {
+     "form": "-hus",
+     "gloss": null,
+     "label": "IMPF"
+    },
+    {
+     "form": "-itik",
+     "gloss": null,
+     "label": "INCH"
+    }
+   ],
+   "surface": "tiwaawaktiikusitit",
+   "translation": "he began talking"
+  },
+  {
+   "analysis_text": null,
+   "flags": [
+    "structured"
+   ],
+   "go_page": 48,
+   "pieces": [
+    {
+     "form": "rii-",
+     "gloss": null,
+     "label": "ASSR"
+    },
+    {
+     "form": "t-",
+     "gloss": null,
+     "label": "1.A"
+    },
+    {
+     "form": "ak-",
+     "gloss": null,
+     "label": "3.P.AN.I"
+    },
+    {
+     "form": "waa-",
+     "gloss": null,
+     "label": "DIST"
+    },
+    {
+     "form": "warik",
+     "gloss": "shoot at",
+     "label": null
+    },
+    {
+     "form": "-hus",
+     "gloss": null,
+     "label": "IMPF"
+    },
+    {
+     "form": "-itik",
+     "gloss": null,
+     "label": "INCH"
+    }
+   ],
+   "surface": "riitapaawarikiikusitit rikucki",
+   "translation": "I began shooting birds"
+  },
+  {
+   "analysis_text": null,
+   "flags": [
+    "structured"
+   ],
+   "go_page": 48,
+   "pieces": [
+    {
+     "form": "wi-",
+     "gloss": null,
+     "label": "QUOT"
+    },
+    {
+     "form": "ti-",
+     "gloss": null,
+     "label": "IND"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "ir-",
+     "gloss": null,
+     "label": "3.P.COLL.A"
+    },
+    {
+     "form": "ut-",
+     "gloss": null,
+     "label": "PREV"
+    },
+    {
+     "form": "i-",
+     "gloss": null,
+     "label": "SEQ"
+    },
+    {
+     "form": "uks-",
+     "gloss": null,
+     "label": "AOR"
+    },
+    {
+     "form": "raawarii",
+     "gloss": "gather; go around gathering",
+     "label": null
+    },
+    {
+     "form": "-hus",
+     "gloss": null,
+     "label": "IMPF"
+    },
+    {
+     "form": "-uukuʔ",
+     "gloss": null,
+     "label": "HAB"
+    }
+   ],
+   "surface": "witiicikstaawariibusuukuʔ rakis",
+   "translation": "they used to gather wood"
+  },
+  {
+   "analysis_text": null,
+   "flags": [
+    "structured"
+   ],
+   "go_page": 48,
+   "pieces": [
+    {
+     "form": "ar-",
+     "gloss": null,
+     "label": "EV"
+    },
+    {
+     "form": "ri-",
+     "gloss": null,
+     "label": "CONT.3.A"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "ir-",
+     "gloss": null,
+     "label": "3.P.COLL.A"
+    },
+    {
+     "form": "ut-",
+     "gloss": null,
+     "label": "PREV"
+    },
+    {
+     "form": "i-",
+     "gloss": null,
+     "label": "SEQ"
+    },
+    {
+     "form": "uks-",
+     "gloss": null,
+     "label": "AOR"
+    },
+    {
+     "form": "raawarii",
+     "gloss": "gather; go around gathering",
+     "label": null
+    },
+    {
+     "form": "-hus",
+     "gloss": null,
+     "label": "IMPF"
+    },
+    {
+     "form": "-uku",
+     "gloss": null,
+     "label": "HAB.SUB"
+    }
+   ],
+   "surface": "ahicikstaawariibusuku",
+   "translation": "when they went to gather them"
+  },
+  {
+   "analysis_text": null,
+   "flags": [
+    "structured"
+   ],
+   "go_page": 48,
+   "pieces": [
+    {
+     "form": "ar-",
+     "gloss": null,
+     "label": "EV"
+    },
+    {
+     "form": "ra-",
+     "gloss": null,
+     "label": "ABS"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "uks-",
+     "gloss": null,
+     "label": "AOR"
+    },
+    {
+     "form": "paktik",
+     "gloss": "announce",
+     "label": null
+    },
+    {
+     "form": "-hus",
+     "gloss": null,
+     "label": "IMPF"
+    },
+    {
+     "form": "-uku",
+     "gloss": null,
+     "label": "HAB.SUB"
+    }
+   ],
+   "surface": "ahukspaktikusuku",
+   "translation": "the one who used to announce (i.e., camp crier)"
+  },
+  {
+   "analysis_text": "ti- IND + Ø- 3.A + pahaat 'be red' + -uk 'be'; cp. iriirapahaattu 'the one that is red'",
+   "flags": [],
+   "go_page": 49,
+   "pieces": [
+    {
+     "form": "ti-",
+     "gloss": null,
+     "label": "IND"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "pahaat",
+     "gloss": "be red",
+     "label": null
+    },
+    {
+     "form": "-uk",
+     "gloss": "be",
+     "label": null
+    }
+   ],
+   "surface": "tipahaaʔat",
+   "translation": "it is red"
+  },
+  {
+   "analysis_text": "ti- IND + Ø- 3.A + huraar- 'ground' + tararit 'be burned, scorched' + -uk 'be'; cp. iriiratarariitu 'where it is scorched'",
+   "flags": [
+    "ocr_b"
+   ],
+   "go_page": 49,
+   "pieces": [
+    {
+     "form": "ti-",
+     "gloss": null,
+     "label": "IND"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "huraar-",
+     "gloss": "ground",
+     "label": null
+    },
+    {
+     "form": "tararit",
+     "gloss": "be burned, scorched",
+     "label": null
+    },
+    {
+     "form": "-uk",
+     "gloss": "be",
+     "label": null
+    }
+   ],
+   "surface": "tihuraabtarariʔit",
+   "translation": "the ground is burned off"
+  },
+  {
+   "analysis_text": "ti- IND + Ø- 3.A + waarukstii 'be holy' + -uk 'be'; cp. iriwaaarukstiiʔu 'for one to be holy'",
+   "flags": [],
+   "go_page": 49,
+   "pieces": [
+    {
+     "form": "ti-",
+     "gloss": null,
+     "label": "IND"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "waarukstii",
+     "gloss": "be holy",
+     "label": null
+    },
+    {
+     "form": "-uk",
+     "gloss": "be",
+     "label": null
+    }
+   ],
+   "surface": "tiwaarukstiiʔ",
+   "translation": "he is holy"
+  },
+  {
+   "analysis_text": "ti- IND + Ø- 3.A + a- PREV + kuc- 'bucket' + taris 'be heavy' + -uk 'be'",
+   "flags": [],
+   "go_page": 49,
+   "pieces": [
+    {
+     "form": "ti-",
+     "gloss": null,
+     "label": "IND"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "a-",
+     "gloss": null,
+     "label": "PREV"
+    },
+    {
+     "form": "kuc-",
+     "gloss": "bucket",
+     "label": null
+    },
+    {
+     "form": "taris",
+     "gloss": "be heavy",
+     "label": null
+    },
+    {
+     "form": "-uk",
+     "gloss": "be",
+     "label": null
+    }
+   ],
+   "surface": "takuctaris",
+   "translation": "the bucket is heavy"
+  },
+  {
+   "analysis_text": "ti- IND + Ø- 3.A + wakarahiis 'be raspy voiced' + -uk 'be' + -his PERF + -ta INT",
+   "flags": [],
+   "go_page": 49,
+   "pieces": [
+    {
+     "form": "ti-",
+     "gloss": null,
+     "label": "IND"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "wakarahiis",
+     "gloss": "be raspy voiced",
+     "label": null
+    },
+    {
+     "form": "-uk",
+     "gloss": "be",
+     "label": null
+    },
+    {
+     "form": "-his",
+     "gloss": null,
+     "label": "PERF"
+    },
+    {
+     "form": "-ta",
+     "gloss": null,
+     "label": "INT"
+    }
+   ],
+   "surface": "tiwakarahiisuksta",
+   "translation": "he is going to have a raspy voice"
+  },
+  {
+   "analysis_text": "ti- IND + Ø- 3.A + pahaat 'be red' + uk 'be' + -his PERF + -ta INT",
+   "flags": [],
+   "go_page": 49,
+   "pieces": [
+    {
+     "form": "ti-",
+     "gloss": null,
+     "label": "IND"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "pahaat",
+     "gloss": "be red",
+     "label": null
+    },
+    {
+     "form": "uk",
+     "gloss": "be",
+     "label": null
+    },
+    {
+     "form": "-his",
+     "gloss": null,
+     "label": "PERF"
+    },
+    {
+     "form": "-ta",
+     "gloss": null,
+     "label": "INT"
+    }
+   ],
+   "surface": "tipahaatuksta",
+   "translation": "it is going to be red"
+  },
+  {
+   "analysis_text": "irii- 'the one' + ra- ABS + Ø- 3.A + pahaat 'red' + -uk SUB.D",
+   "flags": [],
+   "go_page": 49,
+   "pieces": [
+    {
+     "form": "irii-",
+     "gloss": "the one",
+     "label": null
+    },
+    {
+     "form": "ra-",
+     "gloss": null,
+     "label": "ABS"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "pahaat",
+     "gloss": "red",
+     "label": null
+    },
+    {
+     "form": "-uk",
+     "gloss": null,
+     "label": "SUB.D"
+    }
+   ],
+   "surface": "iriirapahaattu",
+   "translation": "the one that is red"
+  },
+  {
+   "analysis_text": "irii- 'the one' + ra- ABS + Ø- 3.A + wakarahiis 'be raspy voiced' + -uk SUB.D",
+   "flags": [],
+   "go_page": 50,
+   "pieces": [
+    {
+     "form": "irii-",
+     "gloss": "the one",
+     "label": null
+    },
+    {
+     "form": "ra-",
+     "gloss": null,
+     "label": "ABS"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "wakarahiis",
+     "gloss": "be raspy voiced",
+     "label": null
+    },
+    {
+     "form": "-uk",
+     "gloss": null,
+     "label": "SUB.D"
+    }
+   ],
+   "surface": "iriirawakarahiisu",
+   "translation": "the one who has a raspy voice"
+  },
+  {
+   "analysis_text": "ti- IND + Ø- 3.A + ikita 'be astride' + Ø PERF",
+   "flags": [],
+   "go_page": 50,
+   "pieces": [
+    {
+     "form": "ti-",
+     "gloss": null,
+     "label": "IND"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "ikita",
+     "gloss": "be astride",
+     "label": null
+    },
+    {
+     "form": "Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "aruusaʔ",
+   "translation": "he is riding the horse"
+  },
+  {
+   "analysis_text": "ti- IND + Ø- 3.A + kawihaar- 'projectile' + ka 'be on' + Ø PERF",
+   "flags": [],
+   "go_page": 50,
+   "pieces": [
+    {
+     "form": "ti-",
+     "gloss": null,
+     "label": "IND"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "kawihaar-",
+     "gloss": "projectile",
+     "label": null
+    },
+    {
+     "form": "ka",
+     "gloss": "be on",
+     "label": null
+    },
+    {
+     "form": "Ø",
+     "gloss": null,
+     "label": "PERF"
+    }
+   ],
+   "surface": "tikawihaahka",
+   "translation": "the projectile is on (i.e., attached to) the end of the shaft"
+  },
+  {
+   "analysis_text": "ti- IND + Ø- 3.A + ut- PREV + tiraaha 'be tilted' + -wi SUB.L + -his PERF + -ta INT",
+   "flags": [],
+   "go_page": 50,
+   "pieces": [
+    {
+     "form": "ti-",
+     "gloss": null,
+     "label": "IND"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "ut-",
+     "gloss": null,
+     "label": "PREV"
+    },
+    {
+     "form": "tiraaha",
+     "gloss": "be tilted",
+     "label": null
+    },
+    {
+     "form": "-wi",
+     "gloss": null,
+     "label": "SUB.L"
+    },
+    {
+     "form": "-his",
+     "gloss": null,
+     "label": "PERF"
+    },
+    {
+     "form": "-ta",
+     "gloss": null,
+     "label": "INT"
+    }
+   ],
+   "surface": "tuciraahawista",
+   "translation": "it is going to be tilted"
+  },
+  {
+   "analysis_text": "ra- INF.A + Ø- 3.A + ku- INF.A + kata 'be against (a vertical surface)' + -wi SUB.L",
+   "flags": [],
+   "go_page": 50,
+   "pieces": [
+    {
+     "form": "ra-",
+     "gloss": null,
+     "label": "INF.A"
+    },
+    {
+     "form": "Ø-",
+     "gloss": null,
+     "label": "3.A"
+    },
+    {
+     "form": "ku-",
+     "gloss": null,
+     "label": "INF.A"
+    },
+    {
+     "form": "kata",
+     "gloss": "be against (a vertical surface)",
+     "label": null
+    },
+    {
+     "form": "-wi",
+     "gloss": null,
+     "label": "SUB.L"
+    }
+   ],
+   "surface": "rakukatawi",
+   "translation": "to be against"
+  }
+ ],
+ "n": 93,
+ "source": "extracted_data/grammatical_overview.json"
+}

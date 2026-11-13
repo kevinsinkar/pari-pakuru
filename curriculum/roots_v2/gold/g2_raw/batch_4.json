@@ -1,0 +1,402 @@
+[
+  {
+    "entry_id": "SK-katuuskus-p83-1542",
+    "found": true,
+    "printed_headword": "katuuskus",
+    "printed_class": "VI",
+    "printed_verb_class": "(4)",
+    "printed_braces": null,
+    "first_gloss": "be open, opened out.",
+    "etymology_verbatim": "katuus+kus, be sitting flatly",
+    "etymology_kind": "analysis",
+    "pieces": ["katuus", "kus"],
+    "literal": "be sitting flatly",
+    "aligned_glosses": null,
+    "inferred_glosses": [
+      {"piece": "katuus", "meaning": "flatly", "basis": "literal"},
+      {"piece": "kus", "meaning": "be sitting", "basis": "literal"}
+    ],
+    "paradigm_forms": {"2": "tikatuusku", "4": "iriirakatuusku", "5": "tikatuuskusta"},
+    "notes": "Only forms 2, 4 and 5 are printed. The work list places this entry in the right column, but it is printed near the bottom of the LEFT column of book p. 431; there is only one katuuskus on the page, so the match is not in doubt."
+  },
+  {
+    "entry_id": "SK-kic-p84-1568",
+    "found": true,
+    "printed_headword": "kic",
+    "printed_class": "VD",
+    "printed_verb_class": null,
+    "printed_braces": null,
+    "first_gloss": "be a liquid; be watery.",
+    "etymology_verbatim": null,
+    "etymology_kind": "none",
+    "pieces": [],
+    "literal": null,
+    "aligned_glosses": null,
+    "inferred_glosses": [],
+    "paradigm_forms": {"2": "tikiʔic", "4": "iriirakiicu", "5": "tikicuksta"},
+    "notes": "No etymology printed. Only forms 2, 4 and 5 are printed. Form 4 is printed with long ii (iriirakiicu) while form 5 has short i (tikicuksta); both checked at high zoom and copied as printed."
+  },
+  {
+    "entry_id": "SK-kickuhki-p87-1639",
+    "found": true,
+    "printed_headword": "kickuhki",
+    "printed_class": "QUAN",
+    "printed_verb_class": null,
+    "printed_braces": null,
+    "first_gloss": "few, a few, several.",
+    "etymology_verbatim": "kickur+kis, several + DIM; i.q. SB keckuhki",
+    "etymology_kind": "analysis",
+    "pieces": ["kickur", "kis"],
+    "literal": "several + DIM",
+    "aligned_glosses": [
+      {"piece": "kickur", "gloss": "several"},
+      {"piece": "kis", "gloss": "DIM"}
+    ],
+    "inferred_glosses": [
+      {"piece": "kickur", "meaning": "several", "basis": "aligned"},
+      {"piece": "kis", "meaning": "DIM", "basis": "aligned"}
+    ],
+    "paradigm_forms": {},
+    "notes": "Etymology ends with a South Band cognate reference after the semicolon (i.q. SB keckuhki). No paradigm forms or examples."
+  },
+  {
+    "entry_id": "SK-kiickaa-p89-1663",
+    "found": true,
+    "printed_headword": "kiickaa",
+    "printed_class": "VL",
+    "printed_verb_class": null,
+    "printed_braces": "{pl. obj., rahkiickaa}",
+    "first_gloss": "be around one's neck; wear, have around one's neck, as a cape or collar.",
+    "etymology_verbatim": "kiic+kaa, neck to be inside",
+    "etymology_kind": "analysis",
+    "pieces": ["kiic", "kaa"],
+    "literal": "neck to be inside",
+    "aligned_glosses": null,
+    "inferred_glosses": [
+      {"piece": "kiic", "meaning": "neck", "basis": "literal"},
+      {"piece": "kaa", "meaning": "to be inside", "basis": "literal"}
+    ],
+    "paradigm_forms": {"1": "tatkiickaa", "2": "tikiickaa", "4": "iriirakiickaawi", "5": "tikiickaawista"},
+    "notes": "Forms 1, 2, 4 and 5 printed (no 3). Form 5 is broken across lines as ti-/kiickaawista and joined here. Distinct from the preceding entry kiicka (ut...) VL 'be the tallest', which has a short final a."
+  },
+  {
+    "entry_id": "SK-kiihaahkucuuq-p90-1681",
+    "found": true,
+    "printed_headword": "kiihaahkucuuʔ",
+    "printed_class": "N",
+    "printed_verb_class": null,
+    "printed_braces": null,
+    "first_gloss": "circus, large circus.",
+    "etymology_verbatim": "kiihaar+kucuu, big dance troupe",
+    "etymology_kind": "analysis",
+    "pieces": ["kiihaar", "kucuu"],
+    "literal": "big dance troupe",
+    "aligned_glosses": null,
+    "inferred_glosses": [
+      {"piece": "kiihaar", "meaning": "dance troupe", "basis": "literal"},
+      {"piece": "kucuu", "meaning": "big", "basis": "literal"}
+    ],
+    "paradigm_forms": {},
+    "notes": "No paradigm forms or examples. The etymology prints kucuu without the final glottal stop that the headword has."
+  },
+  {
+    "entry_id": "SK-kiikaa-p90-1694",
+    "found": true,
+    "printed_headword": "kiikaa",
+    "printed_class": "VT",
+    "printed_verb_class": "(4)",
+    "printed_braces": "{dist., kiikawaa}",
+    "first_gloss": "drink.",
+    "etymology_verbatim": null,
+    "etymology_kind": "none",
+    "pieces": [],
+    "literal": null,
+    "aligned_glosses": null,
+    "inferred_glosses": [],
+    "paradigm_forms": {"1": "tatkiikaʔ", "2": "tikiikaʔ", "3": "tikiikaahuʔ", "4": "iriirakikaa", "5": "tikiikaahista"},
+    "notes": "No etymology printed. Possible printing oddity: form 4 is printed iriirakikaa with a SHORT i in the stem (-kikaa), whereas forms 1, 2, 3 and 5 all have long ii (-kiika-). Checked at high zoom; copied exactly as printed, not corrected."
+  },
+  {
+    "entry_id": "SK-kiirihuur-p91-1710",
+    "found": true,
+    "printed_headword": "kiirihuur",
+    "printed_class": "VD",
+    "printed_verb_class": null,
+    "printed_braces": null,
+    "first_gloss": "be deep water; be a deep stream, as a flooding creek or river, or a deep one.",
+    "etymology_verbatim": "kiir+rihuur, be big water",
+    "etymology_kind": "analysis",
+    "pieces": ["kiir", "rihuur"],
+    "literal": "be big water",
+    "aligned_glosses": null,
+    "inferred_glosses": [
+      {"piece": "kiir", "meaning": "water", "basis": "literal"},
+      {"piece": "rihuur", "meaning": "be big", "basis": "literal"}
+    ],
+    "paradigm_forms": {"2": "tikiirihuuʔ", "4": "iriirakiirihuuru", "5": "tikiirihuuruksta"},
+    "notes": "Only forms 2, 4 and 5 are printed. Form 2 ends in a glottal stop."
+  },
+  {
+    "entry_id": "SK-kiisawataar-p92-1726",
+    "found": true,
+    "printed_headword": "kiisawataar",
+    "printed_class": "VD",
+    "printed_verb_class": null,
+    "printed_braces": null,
+    "first_gloss": "be pure white, bright white.",
+    "etymology_verbatim": "kiis+awataar, be bone bright",
+    "etymology_kind": "analysis",
+    "pieces": ["kiis", "awataar"],
+    "literal": "be bone bright",
+    "aligned_glosses": null,
+    "inferred_glosses": [
+      {"piece": "kiis", "meaning": "bone", "basis": "literal"},
+      {"piece": "awataar", "meaning": "be bright", "basis": "literal"}
+    ],
+    "paradigm_forms": {"2": "tikiisawataa", "4": "iriirakiisawataaru", "5": "tikiisawataaruksta"},
+    "notes": "Only forms 2, 4 and 5 are printed. Form 5 is broken across lines as tikiisawa-/taaruksta and joined here. First entry on the page (book p. 440, left column)."
+  },
+  {
+    "entry_id": "SK-kiisuq-p93-1757",
+    "found": true,
+    "printed_headword": "kiisuʔ",
+    "printed_class": "N",
+    "printed_verb_class": null,
+    "printed_braces": null,
+    "first_gloss": "bone.",
+    "etymology_verbatim": "kiis+uʔ, bone + NOM",
+    "etymology_kind": "analysis",
+    "pieces": ["kiis", "uʔ"],
+    "literal": "bone + NOM",
+    "aligned_glosses": [
+      {"piece": "kiis", "gloss": "bone"},
+      {"piece": "uʔ", "gloss": "NOM"}
+    ],
+    "inferred_glosses": [
+      {"piece": "kiis", "meaning": "bone", "basis": "aligned"},
+      {"piece": "uʔ", "meaning": "NOM", "basis": "aligned"}
+    ],
+    "paradigm_forms": {},
+    "notes": "No braces and no paradigm forms. One example follows (kiisiriʔ 'on/in the bone; with a bone.')."
+  },
+  {
+    "entry_id": "SK-kiraaruq-p94-1793",
+    "found": true,
+    "printed_headword": "kiraaruʔ",
+    "printed_class": "N",
+    "printed_verb_class": null,
+    "printed_braces": "{comb., kiraar-, kirah-}",
+    "first_gloss": "liquid, fluid in a container.",
+    "etymology_verbatim": "kiraar+uʔ, liquid + NOM",
+    "etymology_kind": "analysis",
+    "pieces": ["kiraar", "uʔ"],
+    "literal": "liquid + NOM",
+    "aligned_glosses": [
+      {"piece": "kiraar", "gloss": "liquid"},
+      {"piece": "uʔ", "gloss": "NOM"}
+    ],
+    "inferred_glosses": [
+      {"piece": "kiraar", "meaning": "liquid", "basis": "aligned"},
+      {"piece": "uʔ", "meaning": "NOM", "basis": "aligned"}
+    ],
+    "paradigm_forms": {},
+    "notes": "No paradigm forms or examples. The page also has two verb entries kiraar (VD), but only one noun kiraaruʔ, so the match is not in doubt."
+  },
+  {
+    "entry_id": "SK-kiraawaahcuq-p94-1795",
+    "found": true,
+    "printed_headword": "kiraawaahcuʔ",
+    "printed_class": "N",
+    "printed_verb_class": null,
+    "printed_braces": null,
+    "first_gloss": "sickness, illness; ailment; disease.",
+    "etymology_verbatim": "kiraawaahc+uʔ, sick + NOM",
+    "etymology_kind": "analysis",
+    "pieces": ["kiraawaahc", "uʔ"],
+    "literal": "sick + NOM",
+    "aligned_glosses": [
+      {"piece": "kiraawaahc", "gloss": "sick"},
+      {"piece": "uʔ", "gloss": "NOM"}
+    ],
+    "inferred_glosses": [
+      {"piece": "kiraawaahc", "meaning": "sick", "basis": "aligned"},
+      {"piece": "uʔ", "meaning": "NOM", "basis": "aligned"}
+    ],
+    "paradigm_forms": {},
+    "notes": "No braces, paradigm forms or examples. The gloss is unnumbered and is given whole."
+  },
+  {
+    "entry_id": "SK-kiraruuctaquk-p95-1813",
+    "found": true,
+    "printed_headword": "kiraruuctaʔuk",
+    "printed_class": "VT",
+    "printed_verb_class": "(3)",
+    "printed_braces": null,
+    "first_gloss": "cut the hair off, shave the head.",
+    "etymology_verbatim": "kiraruuc+raʔuk, make shaved",
+    "etymology_kind": "analysis",
+    "pieces": ["kiraruuc", "raʔuk"],
+    "literal": "make shaved",
+    "aligned_glosses": null,
+    "inferred_glosses": [
+      {"piece": "kiraruuc", "meaning": "shaved", "basis": "literal"},
+      {"piece": "raʔuk", "meaning": "make", "basis": "literal"}
+    ],
+    "paradigm_forms": {"1": "tatkiraruuctuʔ", "2": "tikiraruuctuʔ", "3": "tikiraruuctuukuʔ", "4": "iriirakiraruuctaʔu", "5": "tikiraruuctuuksta"},
+    "notes": "The etymology wraps to a new line between 'make' and 'shaved' with no hyphen, so no line-break marker is needed. Form 3 is broken across lines as tikiraruuctuu-/kuʔ and joined here."
+  },
+  {
+    "entry_id": "SK-kirikaaqat-p96-1828",
+    "found": true,
+    "printed_headword": "kirikaaʔat",
+    "printed_class": "VT",
+    "printed_verb_class": "(1)",
+    "printed_braces": null,
+    "first_gloss": "scrutinize, examine, study, look over carefully, as a person.",
+    "etymology_verbatim": "kirik-|+kaaʔat, eye to go inside",
+    "etymology_kind": "analysis",
+    "pieces": ["kirik-|", "kaaʔat"],
+    "literal": "eye to go inside",
+    "aligned_glosses": null,
+    "inferred_glosses": [
+      {"piece": "kirik-|", "meaning": "eye", "basis": "literal"},
+      {"piece": "kaaʔat", "meaning": "to go inside", "basis": "literal"}
+    ],
+    "paradigm_forms": {"1": "tatkirikaaʔat", "2": "tikirikaaʔat", "3": "tikirikaawuuʔ", "4": "iriirakirikaata", "5": "tikirikaahuhta"},
+    "notes": "The etymology breaks across lines as '<kirik-' / '+kaaʔat', i.e. a line-end hyphen directly before the plus sign. It is written -| in etymology_verbatim, and the first piece is kept as 'kirik-|' so the marker is visible there too; the morpheme itself is kirik. The gloss word 'examine' is broken across lines (exam-/ine) and joined."
+  },
+  {
+    "entry_id": "SK-kirikiir-p96-1837",
+    "found": true,
+    "printed_headword": "kirikiir",
+    "printed_class": "VD",
+    "printed_verb_class": null,
+    "printed_braces": null,
+    "first_gloss": "gawk, stare, gaze.",
+    "etymology_verbatim": "kirik+kiir, be long eyed",
+    "etymology_kind": "analysis",
+    "pieces": ["kirik", "kiir"],
+    "literal": "be long eyed",
+    "aligned_glosses": null,
+    "inferred_glosses": [
+      {"piece": "kirik", "meaning": "eyed", "basis": "literal"},
+      {"piece": "kiir", "meaning": "be long", "basis": "literal"}
+    ],
+    "paradigm_forms": {"1": "tatkirikii", "2": "tikirikii", "4": "iriirakirikiiru", "5": "tikirikiiruksta"},
+    "notes": "Forms 1, 2, 4 and 5 printed (no 3). Form 5 is broken across lines as tikirikii-/ruksta and joined here. The etymology wraps after the comma with no hyphen. Only one kirikiir on the page; the next entry is kirikiiraar."
+  },
+  {
+    "entry_id": "SK-kirikiiraar-p96-1838",
+    "found": true,
+    "printed_headword": "kirikiiraar",
+    "printed_class": "VI",
+    "printed_verb_class": "(1-i)",
+    "printed_braces": null,
+    "first_gloss": "gawk, stare.",
+    "etymology_verbatim": "kirik+kiir+aar, become long eyed",
+    "etymology_kind": "analysis",
+    "pieces": ["kirik", "kiir", "aar"],
+    "literal": "become long eyed",
+    "aligned_glosses": null,
+    "inferred_glosses": [
+      {"piece": "kirik", "meaning": "eyed", "basis": "literal"},
+      {"piece": "kiir", "meaning": "long", "basis": "literal"},
+      {"piece": "aar", "meaning": "become", "basis": "literal"}
+    ],
+    "paradigm_forms": {"3": "tikirikiirariʔ", "4": "iriirakirikiirari", "5": "tikirikiirarista"},
+    "notes": "An italic restriction '(impf. only)' is printed between the class and the gloss; it is not in braces, so it is recorded here and left out of first_gloss. Only forms 3, 4 and 5 are printed. All three forms have a short a before r (-kiirari-), unlike the long aa of the headword; copied as printed."
+  },
+  {
+    "entry_id": "SK-kisu-p98-1897",
+    "found": true,
+    "printed_headword": "kisu",
+    "printed_class": "VD",
+    "printed_verb_class": null,
+    "printed_braces": null,
+    "first_gloss": "be slender, thin.",
+    "etymology_verbatim": null,
+    "etymology_kind": "none",
+    "pieces": [],
+    "literal": null,
+    "aligned_glosses": null,
+    "inferred_glosses": [],
+    "paradigm_forms": {"1": "tatkisuʔ", "2": "tikisuʔ", "4": "iriirakisuʔu", "5": "tikisucta"},
+    "notes": "No etymology printed. Forms 1, 2, 4 and 5 printed (no 3). The work list places this entry in the right column, but it is printed at the bottom of the LEFT column of book p. 446, immediately before kisuʔaar; there is only one kisu on the page, so the match is not in doubt."
+  },
+  {
+    "entry_id": "SK-kiwatak-p448-3979",
+    "found": true,
+    "printed_headword": "kiwatak",
+    "printed_class": "VI",
+    "printed_verb_class": "(4)",
+    "printed_braces": null,
+    "first_gloss": "fade, turn pale, as from green to brown; bleach, blanch.",
+    "etymology_verbatim": "kiwat.ak, take apart INTR",
+    "etymology_kind": "analysis",
+    "pieces": ["kiwat.ak"],
+    "literal": "take apart INTR",
+    "aligned_glosses": null,
+    "inferred_glosses": [
+      {"piece": "kiwat.ak", "meaning": "take apart INTR", "basis": "literal"}
+    ],
+    "paradigm_forms": {"2": "tikiwatat", "3": "tikiwataakuʔ", "4": "iriirakiwatat", "5": "tikiwataksta"},
+    "notes": "The etymology joins the two parts with a dot (kiwat.ak), not a plus, so there is a single piece; the literal has no plus before INTR. Two numbered glosses are printed; the second is 'unravel, come unwound, as a piece of knit cloth; come apart.' Forms 2, 3, 4 and 5 printed (no 1). Form 5 is broken across lines as tiki-/wataksta and joined here."
+  },
+  {
+    "entry_id": "SK-ksapitaahaku-p448-3984",
+    "found": true,
+    "printed_headword": "ksapitaahaku",
+    "printed_class": "N",
+    "printed_verb_class": null,
+    "printed_braces": null,
+    "first_gloss": "purple coneflower (Echinacea angustifolia).",
+    "etymology_verbatim": "iks+api-|taa.hak.hus, hand going around + IMPF",
+    "etymology_kind": "analysis",
+    "pieces": ["iks", "api-|taa.hak.hus"],
+    "literal": "hand going around + IMPF",
+    "aligned_glosses": null,
+    "inferred_glosses": [
+      {"piece": "iks", "meaning": "hand", "basis": "literal"},
+      {"piece": "api-|taa.hak.hus", "meaning": "going around + IMPF", "basis": "literal"}
+    ],
+    "paradigm_forms": {},
+    "notes": "REVIEW: aligned_glosses deliberately left null. Counted mechanically, the literal splits at its plus into two parts ('hand going around' and 'IMPF') and there are two pieces, but pairing them in order would give iks = 'hand going around' and apitaa.hak.hus = 'IMPF', which the page contradicts: neighbouring entries on this page gloss iks as 'hand' (ksaraakuʔ <iks+araak+uʔ, hand + araak + NOM>). The '+ IMPF' evidently belongs to the dot-joined ending inside the second piece, so the plus in the literal does not line up with the plus in the morpheme string. Line break: the etymology breaks as '<iks+api-' / 'taa.hak.hus', written -| in etymology_verbatim and kept inside the second piece; the morpheme is apitaa.hak.hus. The gloss word 'coneflower' is broken across lines (cone-/flower) and joined. The scientific name is printed in italics."
+  },
+  {
+    "entry_id": "SK-kuuctakaahak-p452-4008",
+    "found": true,
+    "printed_headword": "kuuctakaahak",
+    "printed_class": "VP",
+    "printed_verb_class": "(4)",
+    "printed_braces": null,
+    "first_gloss": "fall unconscious.",
+    "etymology_verbatim": "kuut+takaahak, fall dead",
+    "etymology_kind": "analysis",
+    "pieces": ["kuut", "takaahak"],
+    "literal": "fall dead",
+    "aligned_glosses": null,
+    "inferred_glosses": [
+      {"piece": "kuut", "meaning": "dead", "basis": "literal"},
+      {"piece": "takaahak", "meaning": "fall", "basis": "literal"}
+    ],
+    "paradigm_forms": {"1": "tikukuuctakaahat", "2": "tikuuctakaahat", "3": "tikuuctakaahaakuʔ", "4": "iriirakuuctakaahat", "5": "tikuuctakaahaksta"},
+    "notes": "Forms 3 and 5 are each broken across lines after the initial ti- (ti-/kuuctakaahaakuʔ, ti-/kuuctakaahaksta) and joined here. The work list places this entry in the right column, but it is printed at the bottom of the LEFT column of book p. 452; there is only one kuuctakaahak on the page."
+  },
+  {
+    "entry_id": "SK-paac-p453-4029",
+    "found": true,
+    "printed_headword": "paac",
+    "printed_class": "N",
+    "printed_verb_class": null,
+    "printed_braces": null,
+    "first_gloss": "bee, wasp, hornet, yellow jacket.",
+    "etymology_verbatim": "i.q. SB paac, Ar. wás",
+    "etymology_kind": "cognate_only",
+    "pieces": [],
+    "literal": null,
+    "aligned_glosses": null,
+    "inferred_glosses": [],
+    "paradigm_forms": {},
+    "notes": "The etymology gives only cognates (South Band paac, Arikara wás). The Arikara form is printed with an acute accent on the a and a plain s (checked at high zoom). No braces, paradigm forms or examples. Only one paac on the page; the next entry is paackiicuʔ."
+  }
+]

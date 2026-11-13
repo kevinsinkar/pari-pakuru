@@ -1,0 +1,5992 @@
+[
+ {
+  "affix": "GER irii- + ra- ... + SUB (-a/-i/-Ø/-u/-wi)",
+  "category": "proclitic + mode + subordination suffix",
+  "slot": "slots 4, 10, 28",
+  "meaning": "gerundial/absolutive subordinate 'the one who / when ...'",
+  "frequency": 2190,
+  "examples": [
+   {
+    "word": "iriiraata",
+    "entry_id": "SK-at-p18-0220",
+    "parks_page": 18,
+    "class": "VI",
+    "gloss": "go; walk.",
+    "note": "dictionary form_4 of at"
+   },
+   {
+    "word": "iriruuhcawi",
+    "entry_id": "SK-ca-p26-0356",
+    "parks_page": 26,
+    "class": "VL",
+    "gloss": "be sticking up, standing upright; be upright, straight up; be erect.",
+    "note": "dictionary form_4 of ca"
+   },
+   {
+    "word": "iriirahiriitit",
+    "entry_id": "SK-hiriitik-p43-0704",
+    "parks_page": 43,
+    "class": "VI",
+    "gloss": "get into water, lie down in water; go down in water, as a bird diving.",
+    "note": "dictionary form_4 of hiriitik"
+   },
+   {
+    "word": "iriirahurahac",
+    "entry_id": "SK-hurahac-p47-0798",
+    "parks_page": 47,
+    "class": "VP",
+    "gloss": "disappear.",
+    "note": "dictionary form_4 of hurahac"
+   },
+   {
+    "word": "iriruutiksawi",
+    "entry_id": "SK-iksa-p62-1076",
+    "parks_page": 62,
+    "class": "VT",
+    "gloss": "be wearing on one's wrist, as a bracelet or wristwatch .",
+    "note": "dictionary form_4 of iksa"
+   }
+  ],
+  "sources": [
+   "every dictionary form_4 is gerundial (Parks Tables 8, 17)",
+   "paradigmatic_forms table"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [
+   "structural: identified by paradigm position, not by string match"
+  ],
+  "rank": 1
+ },
+ {
+  "affix": "IND ti- (3 agent)",
+  "category": "mode prefix",
+  "slot": "slot 10",
+  "meaning": "indicative mode, third-person agent (Ø-)",
+  "frequency": 2186,
+  "examples": [
+   {
+    "word": "tiʔat",
+    "entry_id": "SK-at-p18-0220",
+    "parks_page": 18,
+    "class": "VI",
+    "gloss": "go; walk.",
+    "note": "dictionary form_2 of at"
+   },
+   {
+    "word": "tuuhca",
+    "entry_id": "SK-ca-p26-0356",
+    "parks_page": 26,
+    "class": "VL",
+    "gloss": "be sticking up, standing upright; be upright, straight up; be erect.",
+    "note": "dictionary form_2 of ca"
+   },
+   {
+    "word": "tihiriitit",
+    "entry_id": "SK-hiriitik-p43-0704",
+    "parks_page": 43,
+    "class": "VI",
+    "gloss": "get into water, lie down in water; go down in water, as a bird diving.",
+    "note": "dictionary form_2 of hiriitik"
+   },
+   {
+    "word": "tihurahac",
+    "entry_id": "SK-hurahac-p47-0798",
+    "parks_page": 47,
+    "class": "VP",
+    "gloss": "disappear.",
+    "note": "dictionary form_2 of hurahac"
+   },
+   {
+    "word": "tuutiksa",
+    "entry_id": "SK-iksa-p62-1076",
+    "parks_page": 62,
+    "class": "VT",
+    "gloss": "be wearing on one's wrist, as a bracelet or wristwatch .",
+    "note": "dictionary form_2 of iksa"
+   }
+  ],
+  "sources": [
+   "every dictionary form_2 is 3sg indicative (Parks Table 8, p.34)",
+   "paradigmatic_forms table"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [
+   "structural: identified by paradigm position, not by string match"
+  ],
+  "rank": 2
+ },
+ {
+  "affix": "INT -his + -ta (-ista/-sta/-ksta)",
+  "category": "aspect suffix",
+  "slot": "slots 27, 29",
+  "meaning": "intentive 'is going to ...'",
+  "frequency": 2142,
+  "examples": [
+   {
+    "word": "tihuhta",
+    "entry_id": "SK-at-p18-0220",
+    "parks_page": 18,
+    "class": "VI",
+    "gloss": "go; walk.",
+    "note": "dictionary form_5 of at"
+   },
+   {
+    "word": "tihiriitiksta",
+    "entry_id": "SK-hiriitik-p43-0704",
+    "parks_page": 43,
+    "class": "VI",
+    "gloss": "get into water, lie down in water; go down in water, as a bird diving.",
+    "note": "dictionary form_5 of hiriitik"
+   },
+   {
+    "word": "tihurahacista",
+    "entry_id": "SK-hurahac-p47-0798",
+    "parks_page": 47,
+    "class": "VP",
+    "gloss": "disappear.",
+    "note": "dictionary form_5 of hurahac"
+   },
+   {
+    "word": "tuutiksawista",
+    "entry_id": "SK-iksa-p62-1076",
+    "parks_page": 62,
+    "class": "VT",
+    "gloss": "be wearing on one's wrist, as a bracelet or wristwatch .",
+    "note": "dictionary form_5 of iksa"
+   },
+   {
+    "word": "tiirikisuhta",
+    "entry_id": "SK-irikisat-p66-1171",
+    "parks_page": 66,
+    "class": "VI",
+    "gloss": "crawl, crawl on one's hands and knees; crawl to.",
+    "note": "dictionary form_5 of irikisat"
+   }
+  ],
+  "sources": [
+   "every dictionary form_5 is intentive (Parks Table 17, p.47)",
+   "paradigmatic_forms table"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [
+   "structural: identified by paradigm position, not by string match"
+  ],
+  "rank": 3
+ },
+ {
+  "affix": "IND ta- (1/2 agent) + 1.A t-",
+  "category": "mode + agent prefix",
+  "slot": "slots 10-11",
+  "meaning": "indicative mode, first/second-person agent; t- 'I'",
+  "frequency": 1602,
+  "examples": [
+   {
+    "word": "taatat",
+    "entry_id": "SK-at-p18-0220",
+    "parks_page": 18,
+    "class": "VI",
+    "gloss": "go; walk.",
+    "note": "dictionary form_1 of at"
+   },
+   {
+    "word": "tatiriitit",
+    "entry_id": "SK-hiriitik-p43-0704",
+    "parks_page": 43,
+    "class": "VI",
+    "gloss": "get into water, lie down in water; go down in water, as a bird diving.",
+    "note": "dictionary form_1 of hiriitik"
+   },
+   {
+    "word": "tikuhurahac",
+    "entry_id": "SK-hurahac-p47-0798",
+    "parks_page": 47,
+    "class": "VP",
+    "gloss": "disappear.",
+    "note": "dictionary form_1 of hurahac"
+   },
+   {
+    "word": "tatiitiksa",
+    "entry_id": "SK-iksa-p62-1076",
+    "parks_page": 62,
+    "class": "VT",
+    "gloss": "be wearing on one's wrist, as a bracelet or wristwatch .",
+    "note": "dictionary form_1 of iksa"
+   },
+   {
+    "word": "taatirikisat",
+    "entry_id": "SK-irikisat-p66-1171",
+    "parks_page": 66,
+    "class": "VI",
+    "gloss": "crawl, crawl on one's hands and knees; crawl to.",
+    "note": "dictionary form_1 of irikisat"
+   }
+  ],
+  "sources": [
+   "every dictionary form_1 is 1sg indicative (Parks Tables 8-9, p.34-35)",
+   "paradigmatic_forms table"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [
+   "structural: identified by paradigm position, not by string match"
+  ],
+  "rank": 4
+ },
+ {
+  "affix": "IMPF -huʔ / -:hus",
+  "category": "aspect suffix",
+  "slot": "slot 27",
+  "meaning": "imperfective aspect 'is ...-ing'",
+  "frequency": 1255,
+  "examples": [
+   {
+    "word": "tihurahaacuʔ",
+    "entry_id": "SK-hurahac-p47-0798",
+    "parks_page": 47,
+    "class": "VP",
+    "gloss": "disappear.",
+    "note": "dictionary form_3 of hurahac"
+   },
+   {
+    "word": "tiirikispuuʔ",
+    "entry_id": "SK-irikisat-p66-1171",
+    "parks_page": 66,
+    "class": "VI",
+    "gloss": "crawl, crawl on one's hands and knees; crawl to.",
+    "note": "dictionary form_3 of irikisat"
+   },
+   {
+    "word": "tiisuʔ",
+    "entry_id": "SK-is-p68-1212",
+    "parks_page": 68,
+    "class": "VT",
+    "gloss": "hit, slap with the hand.",
+    "note": "dictionary form_3 of is"
+   },
+   {
+    "word": "tikakuucuʔ",
+    "entry_id": "SK-kakaquc-p76-1389",
+    "parks_page": 76,
+    "class": "VT",
+    "gloss": "chew, chew on; bite on (several times).",
+    "note": "dictionary form_3 of kakaʔuc"
+   },
+   {
+    "word": "wititikituhuukuʔ",
+    "entry_id": "SK-kituhaquk-p99-1931",
+    "parks_page": 99,
+    "class": "VR",
+    "gloss": "clear one's throat.",
+    "note": "dictionary form_3 of kituhaʔuk"
+   }
+  ],
+  "sources": [
+   "every dictionary form_3 is imperfective (Parks Table 17, p.45-47)",
+   "paradigmatic_forms table"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [
+   "structural: identified by paradigm position, not by string match"
+  ],
+  "rank": 5
+ },
+ {
+  "affix": "NOM -uʔ",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "NOM",
+  "frequency": 677,
+  "examples": [
+   {
+    "word": "asuʔ",
+    "entry_id": "SK-asuq-p18-0202",
+    "parks_page": 18,
+    "class": "N",
+    "gloss": "foot; paw.",
+    "segmentation": "as + uʔ",
+    "blue_book": {
+     "form": "asu'",
+     "lesson": 5,
+     "page": 49
+    }
+   },
+   {
+    "word": "cuuraasuʔ",
+    "entry_id": "SK-cuuraasuq-p32-0535",
+    "parks_page": 32,
+    "class": "N",
+    "gloss": "young unmarried woman, pubescent girl, maiden, virgin.",
+    "segmentation": "cuuraas + uʔ",
+    "blue_book": {
+     "form": "tsurasu'",
+     "lesson": 6,
+     "page": 56
+    }
+   },
+   {
+    "word": "iksuʔ",
+    "entry_id": "SK-iksuq-p64-1111",
+    "parks_page": 64,
+    "class": "N",
+    "gloss": "hand.",
+    "segmentation": "iks + uʔ",
+    "blue_book": {
+     "form": "iksu'",
+     "lesson": 5,
+     "page": 49
+    }
+   },
+   {
+    "word": "pakskuukuʔuʔ",
+    "entry_id": "SK-pakskuukuquq-p109-2106",
+    "parks_page": 109,
+    "class": "N",
+    "gloss": "hat, cap.",
+    "segmentation": "paks + kuuku + uʔ",
+    "blue_book": {
+     "form": "paks•ku'ku'",
+     "lesson": 4,
+     "page": null
+    }
+   },
+   {
+    "word": "paksuʔ",
+    "entry_id": "SK-paksuq-p110-2116",
+    "parks_page": 110,
+    "class": "N",
+    "gloss": "head.",
+    "segmentation": "paks + uʔ",
+    "blue_book": {
+     "form": "paksu '",
+     "lesson": 4,
+     "page": null
+    }
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.101",
+   "Parks p.102",
+   "Parks p.107",
+   "Parks p.108",
+   "Parks p.109",
+   "Parks p.11"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 6
+ },
+ {
+  "affix": "PREV ut-",
+  "category": "preverb",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "PREV",
+  "frequency": 345,
+  "examples": [
+   {
+    "word": "acikstahuruu",
+    "entry_id": "SK-acikstahuruu-p7-0052",
+    "parks_page": 7,
+    "class": "VT",
+    "gloss": "convince, persuade",
+    "segmentation": "aciks + rahuruu"
+   },
+   {
+    "word": "acikstiiris",
+    "entry_id": "SK-acikstiiris-p7-0065",
+    "parks_page": 7,
+    "class": "VD",
+    "gloss": "feel reticent, reluctant",
+    "segmentation": "aciks + riiris"
+   },
+   {
+    "word": "aciksuu",
+    "entry_id": "SK-aciksuu-p8-0075",
+    "parks_page": 8,
+    "class": "VI",
+    "gloss": "be one's thought or opinion; think in a certain way, be the way one thinks.",
+    "segmentation": "aciks + uu"
+   },
+   {
+    "word": "arika",
+    "entry_id": "SK-arika-p13-0147",
+    "parks_page": 13,
+    "class": "VI",
+    "gloss": "have a braid, be wearing a braid.",
+    "segmentation": "ir + ut + arika"
+   },
+   {
+    "word": "arikawuh",
+    "entry_id": "SK-arikawuh-p13-0153",
+    "parks_page": 13,
+    "class": "VT",
+    "gloss": "braid, tie into a braid, as hair .",
+    "segmentation": "arika + wuh"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.103",
+   "Parks p.109",
+   "Parks p.11",
+   "Parks p.111",
+   "Parks p.114",
+   "Parks p.115"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 7
+ },
+ {
+  "affix": "LOC.V -wi (locative/positional formative; Parks 'upright')",
+  "category": "stem-element",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "upright",
+  "frequency": 205,
+  "examples": [
+   {
+    "word": "wihaaruʔ",
+    "entry_id": "SK-wihaaruq-p178-3532",
+    "parks_page": 178,
+    "class": "N",
+    "gloss": "game ground, where people played hoop and pole, shinny, and other games, or where they gambled.",
+    "segmentation": "wi + haar + uʔ"
+   },
+   {
+    "word": "wihak",
+    "entry_id": "SK-wihak-p178-3533",
+    "parks_page": 178,
+    "class": "VI",
+    "gloss": "be sitting, seated.",
+    "segmentation": "wi + hak"
+   },
+   {
+    "word": "wiʔak",
+    "entry_id": "SK-wiqak-p178-3521",
+    "parks_page": 178,
+    "class": "VI",
+    "gloss": "be a certain height, length.",
+    "segmentation": "wi + ak"
+   },
+   {
+    "word": "wiʔuu",
+    "entry_id": "SK-wiquu-p178-3524",
+    "parks_page": 178,
+    "class": "VI",
+    "gloss": "face, be facing, as a certain direction.",
+    "segmentation": "wi + uu"
+   },
+   {
+    "word": "wikasis",
+    "entry_id": "SK-wikasis-p528-4256",
+    "parks_page": 528,
+    "class": "VD",
+    "gloss": "be solidly anchored in an upright position, solidly upright.",
+    "segmentation": "wi + kasis"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.101",
+   "Parks p.102",
+   "Parks p.103",
+   "Parks p.108",
+   "Parks p.109",
+   "Parks p.110"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 8
+ },
+ {
+  "affix": "PREV ir-",
+  "category": "preverb",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "have",
+  "frequency": 200,
+  "examples": [
+   {
+    "word": "raʔa",
+    "entry_id": "SK-raqa-p114-2217",
+    "parks_page": 114,
+    "class": "VT",
+    "gloss": "bring.",
+    "segmentation": "ra + a",
+    "blue_book": {
+     "form": "ra'at?",
+     "lesson": 13,
+     "page": 89
+    }
+   },
+   {
+    "word": "kaaʔa",
+    "entry_id": "SK-kaaqa-p2-0001",
+    "parks_page": 2,
+    "class": "VI",
+    "gloss": "come through; sprout, come up, as a plant.",
+    "segmentation": "kaa + a"
+   },
+   {
+    "word": "kaaʔiisa",
+    "entry_id": "SK-kaaqiisa-p2-0014",
+    "parks_page": 2,
+    "class": "VI",
+    "gloss": "come home; come, return to one's village.",
+    "segmentation": "kaaʔiis + a"
+   },
+   {
+    "word": "aciksuuwicakstaʔuk",
+    "entry_id": "SK-aciksuuwicakstaquk-p8-0077",
+    "parks_page": 8,
+    "class": "VT",
+    "gloss": "remind; make someone remember something, cause someone to recall something.",
+    "segmentation": "aciksuuwicaks + raʔuk"
+   },
+   {
+    "word": "aktaku",
+    "entry_id": "SK-aktaku-p11-0124",
+    "parks_page": 11,
+    "class": "VD",
+    "gloss": "be married to a female; have as a wife.",
+    "segmentation": "ir + aktaku"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.102",
+   "Parks p.103",
+   "Parks p.107",
+   "Parks p.108",
+   "Parks p.11",
+   "Parks p.110"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 9
+ },
+ {
+  "affix": "PREV uur-",
+  "category": "preverb",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "PREV",
+  "frequency": 180,
+  "examples": [
+   {
+    "word": "acikstaʔuukuk",
+    "entry_id": "SK-acikstaquukuk-p7-0050",
+    "parks_page": 7,
+    "class": "VT",
+    "gloss": "like, be fond of; desire to be friends with, be attracted to",
+    "segmentation": "uur + aciks + taʔuukuk"
+   },
+   {
+    "word": "acikstatat",
+    "entry_id": "SK-acikstatat-p7-0059",
+    "parks_page": 7,
+    "class": "VT",
+    "gloss": "be fond of, attached to",
+    "segmentation": "uur + aciks + tatat"
+   },
+   {
+    "word": "awikataʔuukuk",
+    "entry_id": "SK-awikataquukuk-p23-0312",
+    "parks_page": 23,
+    "class": "VT",
+    "gloss": "bump, bump into, bump against.",
+    "segmentation": "uur + awi + kataʔuukuk"
+   },
+   {
+    "word": "awuh",
+    "entry_id": "SK-awuh-p26-0354",
+    "parks_page": 26,
+    "class": "VT",
+    "gloss": "draw, paint a picture; (pl. obj.) make, draw a pattern.",
+    "segmentation": "a + wuh"
+   },
+   {
+    "word": "haakariir",
+    "entry_id": "SK-haakariir-p34-0577",
+    "parks_page": 34,
+    "class": "VI",
+    "gloss": "speak well, nicely.",
+    "segmentation": "haaka + hiir"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.101",
+   "Parks p.103",
+   "Parks p.108",
+   "Parks p.111",
+   "Parks p.113",
+   "Parks p.114"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 10
+ },
+ {
+  "affix": "DU si-",
+  "category": "proclitic",
+  "slot": "slot 5 (Table 12:6)",
+  "meaning": "dual number",
+  "frequency": 180,
+  "examples": [
+   {
+    "word": "sitatihwaʔaʔ",
+    "appendix1_verb": "to come",
+    "gloss": "we came",
+    "parks_page": 2
+   },
+   {
+    "word": "sitatuutaa",
+    "appendix1_verb": "to do it",
+    "gloss": "we did it",
+    "parks_page": 3
+   },
+   {
+    "word": "sitatpa",
+    "appendix1_verb": "to go",
+    "gloss": "we went",
+    "parks_page": 4
+   },
+   {
+    "word": "sitatuuhii",
+    "appendix1_verb": "to be good",
+    "gloss": "we are good",
+    "parks_page": 5
+   },
+   {
+    "word": "sitatkiikaʔ",
+    "appendix1_verb": "to drink it",
+    "gloss": "we drank it",
+    "parks_page": 6
+   }
+  ],
+  "sources": [
+   "Parks Appendix 1",
+   "Parks p.35"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [
+   "counted only dual cells whose form begins with si-"
+  ],
+  "rank": 11
+ },
+ {
+  "affix": "PORT ra-",
+  "category": "stem-element",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "PORT",
+  "frequency": 161,
+  "examples": [
+   {
+    "word": "raʔa",
+    "entry_id": "SK-raqa-p114-2217",
+    "parks_page": 114,
+    "class": "VT",
+    "gloss": "bring.",
+    "segmentation": "ra + a",
+    "blue_book": {
+     "form": "ra'at?",
+     "lesson": 13,
+     "page": 89
+    }
+   },
+   {
+    "word": "Pitku Rasakuuru",
+    "entry_id": "SK-pitku_rasakuuru-p114-2207",
+    "parks_page": 114,
+    "class": "N",
+    "gloss": "Tuesday.",
+    "segmentation": "pitkus + ra + sakuur + u"
+   },
+   {
+    "word": "raah",
+    "entry_id": "SK-raah-p116-2264",
+    "parks_page": 116,
+    "class": "VT",
+    "gloss": "have, possess; carry .",
+    "segmentation": "ra + aah"
+   },
+   {
+    "word": "raarik",
+    "entry_id": "SK-raarik-p123-2395",
+    "parks_page": 123,
+    "class": "VT",
+    "gloss": "be standing holding.",
+    "segmentation": "ra + arik"
+   },
+   {
+    "word": "rahurahac",
+    "entry_id": "SK-rahurahac-p132-2588",
+    "parks_page": 132,
+    "class": "VT",
+    "gloss": "elope with, run away with; ref. to a male eloping with a female.",
+    "segmentation": "ra + hurahac"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.101",
+   "Parks p.102",
+   "Parks p.108",
+   "Parks p.109",
+   "Parks p.11",
+   "Parks p.113"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 12
+ },
+ {
+  "affix": "PL/ITER raar- (ambiguous without gloss)",
+  "category": "affix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "plural",
+  "frequency": 116,
+  "examples": [
+   {
+    "word": "arikaraaruʔ",
+    "entry_id": "SK-arikaraaruq-p13-0149",
+    "parks_page": 13,
+    "class": "N",
+    "gloss": "stag, buck deer.",
+    "segmentation": "arika + raar + uʔ"
+   },
+   {
+    "word": "astaaruukita",
+    "entry_id": "SK-astaaruukita-p17-0191",
+    "parks_page": 17,
+    "class": "VL",
+    "gloss": "feet to be on top, to be up on (an elevated surface).",
+    "segmentation": "as + raar + huukita"
+   },
+   {
+    "word": "kiispiraaruʔ",
+    "entry_id": "SK-kiispiraaruq-p93-1752",
+    "parks_page": 93,
+    "class": "N",
+    "gloss": "hips, both hips.",
+    "segmentation": "kiispi + raar + uʔ"
+   },
+   {
+    "word": "suhukstaaruʔ",
+    "entry_id": "SK-suhukstaaruq-p152-2988",
+    "parks_page": 152,
+    "class": "NUM",
+    "gloss": "hundred.",
+    "segmentation": "suhuks + raar + uʔ"
+   },
+   {
+    "word": "Piiraʔuʔ Rarahkaataʔiispuu",
+    "entry_id": "SK-piiraquq_rarahkaataqiispuu-p460-4085",
+    "parks_page": 460,
+    "class": "N",
+    "gloss": "September.",
+    "segmentation": "piira + uʔ + ra + raar + kaata + iis + wuu",
+    "blue_book": {
+     "form": "Pirau Rarah•kata•ispu'",
+     "lesson": 19,
+     "page": 109
+    }
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.101",
+   "Parks p.108",
+   "Parks p.109",
+   "Parks p.11",
+   "Parks p.114",
+   "Parks p.115"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "Parks gives no gloss; form is shared by two morphemes"
+  ],
+  "rank": 13
+ },
+ {
+  "affix": "CAUS -raʔuk",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "make",
+  "frequency": 102,
+  "examples": [
+   {
+    "word": "acikstaʔuk",
+    "entry_id": "SK-acikstaquk-p7-0049",
+    "parks_page": 7,
+    "class": "VR",
+    "gloss": "decide, make up one's mind; convince or persuade oneself.",
+    "segmentation": "aciks + raʔuk"
+   },
+   {
+    "word": "aciksuuwicakstaʔuk",
+    "entry_id": "SK-aciksuuwicakstaquk-p8-0077",
+    "parks_page": 8,
+    "class": "VT",
+    "gloss": "remind; make someone remember something, cause someone to recall something.",
+    "segmentation": "aciksuuwicaks + raʔuk"
+   },
+   {
+    "word": "atkaraʔuk",
+    "entry_id": "SK-atkaraquk-p19-0247",
+    "parks_page": 19,
+    "class": "VT",
+    "gloss": "invite, summon, as to a dinner or meeting.",
+    "segmentation": "atka + raʔuk"
+   },
+   {
+    "word": "awiʔiiktaʔuk",
+    "entry_id": "SK-awiqiiktaquk-p21-0286",
+    "parks_page": 21,
+    "class": "VT",
+    "gloss": "tire, tire out, exhaust, as workers.",
+    "segmentation": "awiʔiik + raʔuk"
+   },
+   {
+    "word": "iciiraraʔuk",
+    "entry_id": "SK-iciiraraquk-p56-0964",
+    "parks_page": 56,
+    "class": "VT",
+    "gloss": "ridicule, make fun of.",
+    "segmentation": "iciira + raʔuk"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.102",
+   "Parks p.109",
+   "Parks p.11",
+   "Parks p.111",
+   "Parks p.114",
+   "Parks p.115"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 14
+ },
+ {
+  "affix": "NOM -uʔ (ending match, no etymology)",
+  "category": "suffix",
+  "slot": "noun derivation (Parks Table 5, p.31)",
+  "meaning": "NOM -uʔ",
+  "frequency": 95,
+  "examples": [
+   {
+    "word": "ckiriraruʔ",
+    "entry_id": "BB-ckiriraru-0002",
+    "parks_page": null,
+    "class": "N",
+    "gloss": "\"Wolf Ways\"",
+    "segmentation": "",
+    "blue_book": {
+     "form": "Tskiri•Raru'",
+     "lesson": 13,
+     "page": 88
+    }
+   },
+   {
+    "word": "cktiskakusuʔ",
+    "entry_id": "BB-cktiskakusu-0003",
+    "parks_page": null,
+    "class": "N",
+    "gloss": "chair",
+    "segmentation": "",
+    "blue_book": {
+     "form": "tsktis•kakusu'",
+     "lesson": 8,
+     "page": 69
+    }
+   },
+   {
+    "word": "hakaruʔhkucuʔ",
+    "entry_id": "BB-hakaru-hkucu-0011",
+    "parks_page": null,
+    "class": "N",
+    "gloss": "Feast",
+    "segmentation": "",
+    "blue_book": {
+     "form": "Ha•karu'h•kutsu'",
+     "lesson": 19,
+     "page": 109
+    }
+   },
+   {
+    "word": "hakauʔ",
+    "entry_id": "BB-hakau-0012",
+    "parks_page": null,
+    "class": "N",
+    "gloss": "mouth",
+    "segmentation": "",
+    "blue_book": {
+     "form": "hakau'",
+     "lesson": 5,
+     "page": 49
+    }
+   },
+   {
+    "word": "hawiuʔ",
+    "entry_id": "BB-hawiu-0015",
+    "parks_page": null,
+    "class": "N",
+    "gloss": "picture",
+    "segmentation": "",
+    "blue_book": {
+     "form": "hawiu'",
+     "lesson": 1,
+     "page": 29
+    }
+   }
+  ],
+  "sources": [
+   "headword ending only; Parks gives no etymology",
+   "Parks p.114",
+   "Parks p.126",
+   "Parks p.127",
+   "Parks p.13",
+   "Parks p.136",
+   "Parks p.139"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "segmentation by ending match, not confirmed by Parks etymology"
+  ],
+  "rank": 15
+ },
+ {
+  "affix": "ITER ka- / LOC ka- 'on' (ambiguous without gloss)",
+  "category": "affix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "on",
+  "frequency": 90,
+  "examples": [
+   {
+    "word": "askakiiriituʔ",
+    "entry_id": "SK-askakiiriituq-p16-0157",
+    "parks_page": 16,
+    "class": "N",
+    "gloss": "heel (of foot).",
+    "segmentation": "as + ka + kiiriit + uʔ"
+   },
+   {
+    "word": "kaarik",
+    "entry_id": "SK-kaarik-p73-1306",
+    "parks_page": 73,
+    "class": "VI",
+    "gloss": "be standing there.",
+    "segmentation": "ka + arik"
+   },
+   {
+    "word": "kahuraar",
+    "entry_id": "SK-kahuraar-p76-1383",
+    "parks_page": 76,
+    "class": "VD",
+    "gloss": "be a brushy or wooded area; be brush; be woods, be a wooded or timbered area; be a woodland.",
+    "segmentation": "ka + huraar"
+   },
+   {
+    "word": "kahuruus",
+    "entry_id": "SK-kahuruus-p76-1386",
+    "parks_page": 76,
+    "class": "VD",
+    "gloss": "be pithy; be hollow, empty inside; be porous",
+    "segmentation": "ka + huruus"
+   },
+   {
+    "word": "kahuurik",
+    "entry_id": "SK-kahuurik-p76-1388",
+    "parks_page": 76,
+    "class": "VT",
+    "gloss": "burn, scorch",
+    "segmentation": "ka + huurik"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.109",
+   "Parks p.115",
+   "Parks p.119",
+   "Parks p.120",
+   "Parks p.121",
+   "Parks p.131"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "Parks gives no gloss; form is shared by two morphemes"
+  ],
+  "rank": 16
+ },
+ {
+  "affix": "DIST -waa",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "DIST",
+  "frequency": 87,
+  "examples": [
+   {
+    "word": "astawaa",
+    "entry_id": "SK-astawaa-p17-0197",
+    "parks_page": 17,
+    "class": "N",
+    "gloss": "Dutch oven.",
+    "segmentation": "as + ta + waa"
+   },
+   {
+    "word": "kataahwaa",
+    "entry_id": "SK-kataahwaa-p80-1473",
+    "parks_page": 80,
+    "class": "VL",
+    "gloss": "be grassy; green grass to grow.",
+    "segmentation": "kataar + waa"
+   },
+   {
+    "word": "pacawaa",
+    "entry_id": "SK-pacawaa-p107-2044",
+    "parks_page": 107,
+    "class": "N",
+    "gloss": "disease manifested in bumps on the body , as chicken pox .",
+    "segmentation": "paca + waa"
+   },
+   {
+    "word": "hawaahawaa",
+    "entry_id": "SK-hawaahawaa-p387-3815",
+    "parks_page": 387,
+    "class": "N",
+    "gloss": "cattail (Typha latifolia).",
+    "segmentation": "hawaa + ha + waa"
+   },
+   {
+    "word": "hawaaʔuʔ",
+    "entry_id": "SK-hawaaquq-p387-3813",
+    "parks_page": 387,
+    "class": "N",
+    "gloss": "island.",
+    "segmentation": "ha + waa + uʔ"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.101",
+   "Parks p.107",
+   "Parks p.108",
+   "Parks p.116",
+   "Parks p.117",
+   "Parks p.119"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 17
+ },
+ {
+  "affix": "IMPF -hus",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "IMPF",
+  "frequency": 87,
+  "examples": [
+   {
+    "word": "taruucuhus",
+    "entry_id": "SK-taruucuhus-p161-3167",
+    "parks_page": 161,
+    "class": "N",
+    "gloss": "errand man, fire keeper, fire tender, as in a ceremony.",
+    "segmentation": "taruucuh + hus"
+   },
+   {
+    "word": "awihuksahus",
+    "entry_id": "SK-awihuksahus-p370-3790",
+    "parks_page": 370,
+    "class": "N",
+    "gloss": "baking powder.",
+    "segmentation": "awihuksa + hus"
+   },
+   {
+    "word": "hiikuʔ, hiikusuʔ",
+    "entry_id": "SK-hiikuq,_hiikusuq-p389-3830",
+    "parks_page": 389,
+    "class": "N",
+    "gloss": "hiccough.",
+    "segmentation": "hiik + hus + uʔ"
+   },
+   {
+    "word": "kiwakuʔ",
+    "entry_id": "SK-kiwakuq-p448-3975",
+    "parks_page": 448,
+    "class": "N",
+    "gloss": "fox (generic) (Gray Fox, Urocyon cinereoargenteus and Red Fox, Vulpes vulpes).",
+    "segmentation": "kiwak + hus",
+    "blue_book": {
+     "form": "kiwaku'",
+     "lesson": 2,
+     "page": 36
+    }
+   },
+   {
+    "word": "askiisawihuku",
+    "entry_id": "SK-askiisawihuku-p16-0167",
+    "parks_page": 16,
+    "class": "N",
+    "gloss": "hopscotch.",
+    "segmentation": "askiisawihuk + hus"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.107",
+   "Parks p.108",
+   "Parks p.110",
+   "Parks p.117",
+   "Parks p.119",
+   "Parks p.120"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 18
+ },
+ {
+  "affix": "GEN.LOC ta-",
+  "category": "prefix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "GEN.LOC",
+  "frequency": 79,
+  "examples": [
+   {
+    "word": "astawaa",
+    "entry_id": "SK-astawaa-p17-0197",
+    "parks_page": 17,
+    "class": "N",
+    "gloss": "Dutch oven.",
+    "segmentation": "as + ta + waa"
+   },
+   {
+    "word": "ikstaʔuukuk",
+    "entry_id": "SK-ikstaquukuk-p63-1098",
+    "parks_page": 63,
+    "class": "VI, VT",
+    "gloss": "touch; touch one's hand on.",
+    "segmentation": "iks + ta + uukuk"
+   },
+   {
+    "word": "takaas",
+    "entry_id": "SK-takaas-p157-3063",
+    "parks_page": 157,
+    "class": "VD",
+    "gloss": "crack, pop, explode; go off, discharge, as a gun.",
+    "segmentation": "ta + kaas"
+   },
+   {
+    "word": "takaruus",
+    "entry_id": "SK-takaruus-p157-3067",
+    "parks_page": 157,
+    "class": "VD",
+    "gloss": "be deflated, flat, wilted, as a balloon, tire, flower .",
+    "segmentation": "ta + karuus"
+   },
+   {
+    "word": "takirir",
+    "entry_id": "SK-takirir-p158-3080",
+    "parks_page": 158,
+    "class": "VP",
+    "gloss": "s h a k e ,  s h i v e r , tremble; ref. to the effects of an illness or physical condition, as from a chill, stroke, fear ; have the chills, as when feverish or ill .",
+    "segmentation": "ta + kirir"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.102",
+   "Parks p.115",
+   "Parks p.116",
+   "Parks p.119",
+   "Parks p.129",
+   "Parks p.134"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 19
+ },
+ {
+  "affix": "ABS ra-",
+  "category": "mode prefix",
+  "slot": "slot 10",
+  "meaning": "absolutive (questions, narration)",
+  "frequency": 74,
+  "examples": [
+   {
+    "word": "ratiiraʔ",
+    "appendix1_verb": "to come",
+    "gloss": "I came",
+    "parks_page": 2
+   },
+   {
+    "word": "ratuutaa",
+    "appendix1_verb": "to do it",
+    "gloss": "I did it",
+    "parks_page": 3
+   },
+   {
+    "word": "raatat",
+    "appendix1_verb": "to go",
+    "gloss": "I went",
+    "parks_page": 4
+   },
+   {
+    "word": "ratuuhii",
+    "appendix1_verb": "to be good",
+    "gloss": "I am good",
+    "parks_page": 5
+   },
+   {
+    "word": "ratkiikaʔ",
+    "appendix1_verb": "to drink it",
+    "gloss": "I drank it",
+    "parks_page": 6
+   }
+  ],
+  "sources": [
+   "Parks Appendix 1 paradigms (verb_paradigms table)",
+   "Parks Table 8, p.34"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [
+   "structural: identified by paradigm cell"
+  ],
+  "rank": 20
+ },
+ {
+  "affix": "INF ra- ... ku-",
+  "category": "mode prefix (discontinuous)",
+  "slot": "slot 10 + 16",
+  "meaning": "infinitive 'for X to ...'",
+  "frequency": 74,
+  "examples": [
+   {
+    "word": "ratihkuʔa",
+    "appendix1_verb": "to come",
+    "gloss": "for me to come",
+    "parks_page": 2
+   },
+   {
+    "word": "ratkuutaara",
+    "appendix1_verb": "to do it",
+    "gloss": "for me to do it",
+    "parks_page": 3
+   },
+   {
+    "word": "ratkuuta",
+    "appendix1_verb": "to go",
+    "gloss": "for me to go",
+    "parks_page": 4
+   },
+   {
+    "word": "ratkuuhiira",
+    "appendix1_verb": "to be good",
+    "gloss": "for me to be good",
+    "parks_page": 5
+   },
+   {
+    "word": "ratkukikaa",
+    "appendix1_verb": "to drink it",
+    "gloss": "for me to drink it",
+    "parks_page": 6
+   }
+  ],
+  "sources": [
+   "Parks Appendix 1 paradigms (verb_paradigms table)",
+   "Parks Table 8, p.34"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [
+   "structural: identified by paradigm cell"
+  ],
+  "rank": 21
+ },
+ {
+  "affix": "NEG.IND kaakaa-/kaaki-",
+  "category": "mode prefix",
+  "slot": "slot 10",
+  "meaning": "negative indicative",
+  "frequency": 73,
+  "examples": [
+   {
+    "word": "kaakatiiraʔ",
+    "appendix1_verb": "to come",
+    "gloss": "I did not come",
+    "parks_page": 2
+   },
+   {
+    "word": "kaakatuutaa",
+    "appendix1_verb": "to do it",
+    "gloss": "I did not do it",
+    "parks_page": 3
+   },
+   {
+    "word": "kaakaatat",
+    "appendix1_verb": "to go",
+    "gloss": "I did not go",
+    "parks_page": 4
+   },
+   {
+    "word": "kaakatuuhii",
+    "appendix1_verb": "to be good",
+    "gloss": "I am not good",
+    "parks_page": 5
+   },
+   {
+    "word": "kaakaatkiikaʔ",
+    "appendix1_verb": "to drink it",
+    "gloss": "I did not drink it",
+    "parks_page": 6
+   }
+  ],
+  "sources": [
+   "Parks Appendix 1 paradigms (verb_paradigms table)",
+   "Parks Table 8, p.34"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [
+   "structural: identified by paradigm cell"
+  ],
+  "rank": 22
+ },
+ {
+  "affix": "ASSR rii-",
+  "category": "mode prefix",
+  "slot": "slot 10",
+  "meaning": "assertive / emphatic",
+  "frequency": 73,
+  "examples": [
+   {
+    "word": "ritiiraʔ",
+    "appendix1_verb": "to come",
+    "gloss": "I came",
+    "parks_page": 2
+   },
+   {
+    "word": "rituutaa",
+    "appendix1_verb": "to do it",
+    "gloss": "I did it",
+    "parks_page": 3
+   },
+   {
+    "word": "riitat",
+    "appendix1_verb": "to go",
+    "gloss": "I did go",
+    "parks_page": 4
+   },
+   {
+    "word": "rituuhii",
+    "appendix1_verb": "to be good",
+    "gloss": "I was good",
+    "parks_page": 5
+   },
+   {
+    "word": "riitkiikaʔ",
+    "appendix1_verb": "to drink it",
+    "gloss": "I drank it",
+    "parks_page": 6
+   }
+  ],
+  "sources": [
+   "Parks Appendix 1 paradigms (verb_paradigms table)",
+   "Parks Table 8, p.34"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [
+   "structural: identified by paradigm cell"
+  ],
+  "rank": 23
+ },
+ {
+  "affix": "CONT i-/ri-",
+  "category": "mode prefix",
+  "slot": "slot 10",
+  "meaning": "contingent (future, mild imperative)",
+  "frequency": 73,
+  "examples": [
+   {
+    "word": "itiiraʔ",
+    "appendix1_verb": "to come",
+    "gloss": "I'll come",
+    "parks_page": 2
+   },
+   {
+    "word": "ituutaa",
+    "appendix1_verb": "to do it",
+    "gloss": "I'll do it",
+    "parks_page": 3
+   },
+   {
+    "word": "itat",
+    "appendix1_verb": "to go",
+    "gloss": "I'll go",
+    "parks_page": 4
+   },
+   {
+    "word": "ituuhii",
+    "appendix1_verb": "to be good",
+    "gloss": "I'll be good",
+    "parks_page": 5
+   },
+   {
+    "word": "itkikaʔ",
+    "appendix1_verb": "to drink it",
+    "gloss": "I'll drink",
+    "parks_page": 6
+   }
+  ],
+  "sources": [
+   "Parks Appendix 1 paradigms (verb_paradigms table)",
+   "Parks Table 8, p.34"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [
+   "structural: identified by paradigm cell"
+  ],
+  "rank": 24
+ },
+ {
+  "affix": "POT kuus-/kaas- ... i-",
+  "category": "mode prefix (discontinuous)",
+  "slot": "slot 10 + 19",
+  "meaning": "potential 'might, will'",
+  "frequency": 73,
+  "examples": [
+   {
+    "word": "kuustiriiʔaʔ",
+    "appendix1_verb": "to come",
+    "gloss": "I will come",
+    "parks_page": 2
+   },
+   {
+    "word": "kuustuciʔaa",
+    "appendix1_verb": "to do it",
+    "gloss": "I will do it",
+    "parks_page": 3
+   },
+   {
+    "word": "kuustiʔat",
+    "appendix1_verb": "to go",
+    "gloss": "I will go",
+    "parks_page": 4
+   },
+   {
+    "word": "kuustuuhii",
+    "appendix1_verb": "to be good",
+    "gloss": "I will be good",
+    "parks_page": 5
+   },
+   {
+    "word": "kuustikiikaʔ",
+    "appendix1_verb": "to drink it",
+    "gloss": "I will drink",
+    "parks_page": 6
+   }
+  ],
+  "sources": [
+   "Parks Appendix 1 paradigms (verb_paradigms table)",
+   "Parks Table 8, p.34"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [
+   "structural: identified by paradigm cell"
+  ],
+  "rank": 25
+ },
+ {
+  "affix": "SUBJ aa-/ii-",
+  "category": "mode prefix",
+  "slot": "slot 10",
+  "meaning": "subjunctive (wish, unreal)",
+  "frequency": 73,
+  "examples": [
+   {
+    "word": "aatiira",
+    "appendix1_verb": "to come",
+    "gloss": "should I come",
+    "parks_page": 2
+   },
+   {
+    "word": "atuutaara",
+    "appendix1_verb": "to do it",
+    "gloss": "should I do it",
+    "parks_page": 3
+   },
+   {
+    "word": "aatata",
+    "appendix1_verb": "to go",
+    "gloss": "should I go",
+    "parks_page": 4
+   },
+   {
+    "word": "atuuhiira",
+    "appendix1_verb": "to be good",
+    "gloss": "should I be good",
+    "parks_page": 5
+   },
+   {
+    "word": "aatkikaa",
+    "appendix1_verb": "to drink it",
+    "gloss": "should I drink",
+    "parks_page": 6
+   }
+  ],
+  "sources": [
+   "Parks Appendix 1 paradigms (verb_paradigms table)",
+   "Parks Table 8, p.34"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [
+   "structural: identified by paradigm cell"
+  ],
+  "rank": 26
+ },
+ {
+  "affix": "CONT.SUB i-/ri- + SUB",
+  "category": "mode prefix",
+  "slot": "slot 10",
+  "meaning": "conditional 'if/when'",
+  "frequency": 73,
+  "examples": [
+   {
+    "word": "itiira",
+    "appendix1_verb": "to come",
+    "gloss": "if/when I come",
+    "parks_page": 2
+   },
+   {
+    "word": "ituutaara",
+    "appendix1_verb": "to do it",
+    "gloss": "if/when I do it",
+    "parks_page": 3
+   },
+   {
+    "word": "itata",
+    "appendix1_verb": "to go",
+    "gloss": "if/when I go",
+    "parks_page": 4
+   },
+   {
+    "word": "ituuhiira",
+    "appendix1_verb": "to be good",
+    "gloss": "if/when I am good",
+    "parks_page": 5
+   },
+   {
+    "word": "itkikaa",
+    "appendix1_verb": "to drink it",
+    "gloss": "if/when I drink it",
+    "parks_page": 6
+   }
+  ],
+  "sources": [
+   "Parks Appendix 1 paradigms (verb_paradigms table)",
+   "Parks Table 8, p.34"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [
+   "structural: identified by paradigm cell"
+  ],
+  "rank": 27
+ },
+ {
+  "affix": "1.PL.IN a- + rak-",
+  "category": "agent + plural prefix",
+  "slot": "slots 12-13",
+  "meaning": "we (inclusive) agent",
+  "frequency": 70,
+  "examples": [
+   {
+    "word": "tataraakaahuʔ",
+    "appendix1_verb": "to come",
+    "gloss": "we came",
+    "parks_page": 2
+   },
+   {
+    "word": "tatuuhaakaa",
+    "appendix1_verb": "to do it",
+    "gloss": "we did it",
+    "parks_page": 3
+   },
+   {
+    "word": "tataraapuuʔ",
+    "appendix1_verb": "to go",
+    "gloss": "we went",
+    "parks_page": 4
+   },
+   {
+    "word": "tatuuraakiwaa",
+    "appendix1_verb": "to be good",
+    "gloss": "we are good",
+    "parks_page": 5
+   },
+   {
+    "word": "tataraakiikaʔ",
+    "appendix1_verb": "to drink it",
+    "gloss": "we drank it",
+    "parks_page": 6
+   }
+  ],
+  "sources": [
+   "Parks Appendix 1 paradigms",
+   "Parks Tables 9-10, p.35-36"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [
+   "structural: identified by paradigm cell"
+  ],
+  "rank": 28
+ },
+ {
+  "affix": "PL rak- (with 1.A t-)",
+  "category": "plural prefix",
+  "slot": "slot 13",
+  "meaning": "we (exclusive) agent",
+  "frequency": 70,
+  "examples": [
+   {
+    "word": "tatiraakaahuʔ",
+    "appendix1_verb": "to come",
+    "gloss": "we came",
+    "parks_page": 2
+   },
+   {
+    "word": "tatuuhaakaa",
+    "appendix1_verb": "to do it",
+    "gloss": "we did it",
+    "parks_page": 3
+   },
+   {
+    "word": "tahapuuʔ",
+    "appendix1_verb": "to go",
+    "gloss": "we went",
+    "parks_page": 4
+   },
+   {
+    "word": "taturaakiwaa",
+    "appendix1_verb": "to be good",
+    "gloss": "we are good",
+    "parks_page": 5
+   },
+   {
+    "word": "tahakiikaʔ",
+    "appendix1_verb": "to drink it",
+    "gloss": "we drank it",
+    "parks_page": 6
+   }
+  ],
+  "sources": [
+   "Parks Appendix 1 paradigms",
+   "Parks Tables 9-10, p.35-36"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [
+   "structural: identified by paradigm cell"
+  ],
+  "rank": 29
+ },
+ {
+  "affix": "2.A s-",
+  "category": "agent prefix",
+  "slot": "slot 11",
+  "meaning": "second-person agent 'you'",
+  "frequency": 69,
+  "examples": [
+   {
+    "word": "tasiiraʔ",
+    "appendix1_verb": "to come",
+    "gloss": "you came",
+    "parks_page": 2
+   },
+   {
+    "word": "tasuutaa",
+    "appendix1_verb": "to do it",
+    "gloss": "you did it",
+    "parks_page": 3
+   },
+   {
+    "word": "taasat",
+    "appendix1_verb": "to go",
+    "gloss": "you went",
+    "parks_page": 4
+   },
+   {
+    "word": "tasuuhii",
+    "appendix1_verb": "to be good",
+    "gloss": "you are good",
+    "parks_page": 5
+   },
+   {
+    "word": "taskiikaʔ",
+    "appendix1_verb": "to drink it",
+    "gloss": "you drank it",
+    "parks_page": 6
+   }
+  ],
+  "sources": [
+   "Parks Appendix 1 paradigms",
+   "Parks Tables 9-10, p.35-36"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [
+   "structural: identified by paradigm cell"
+  ],
+  "rank": 30
+ },
+ {
+  "affix": "1.DU.IN.A acir-",
+  "category": "agent prefix",
+  "slot": "slot 12",
+  "meaning": "you-and-I agent",
+  "frequency": 69,
+  "examples": [
+   {
+    "word": "tacihwaʔaʔ",
+    "appendix1_verb": "to come",
+    "gloss": "we came",
+    "parks_page": 2
+   },
+   {
+    "word": "taciitaa",
+    "appendix1_verb": "to do it",
+    "gloss": "we did it",
+    "parks_page": 3
+   },
+   {
+    "word": "tacihwa",
+    "appendix1_verb": "to go",
+    "gloss": "we went",
+    "parks_page": 4
+   },
+   {
+    "word": "taciihii",
+    "appendix1_verb": "to be good",
+    "gloss": "we are good",
+    "parks_page": 5
+   },
+   {
+    "word": "tacihkiikaʔ",
+    "appendix1_verb": "to drink it",
+    "gloss": "we drank it",
+    "parks_page": 6
+   }
+  ],
+  "sources": [
+   "Parks Appendix 1 paradigms",
+   "Parks Tables 9-10, p.35-36"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [
+   "structural: identified by paradigm cell"
+  ],
+  "rank": 31
+ },
+ {
+  "affix": "PL rak- (with 2.A s-)",
+  "category": "plural prefix",
+  "slot": "slot 13",
+  "meaning": "you (plural) agent",
+  "frequency": 69,
+  "examples": [
+   {
+    "word": "tasiraakaahuʔ",
+    "appendix1_verb": "to come",
+    "gloss": "you came",
+    "parks_page": 2
+   },
+   {
+    "word": "tasuuhaakaa",
+    "appendix1_verb": "to do it",
+    "gloss": "you did it",
+    "parks_page": 3
+   },
+   {
+    "word": "tastapuuʔ",
+    "appendix1_verb": "to go",
+    "gloss": "you went",
+    "parks_page": 4
+   },
+   {
+    "word": "tasuraakiwaa",
+    "appendix1_verb": "to be good",
+    "gloss": "you are good",
+    "parks_page": 5
+   },
+   {
+    "word": "tastakiikaʔ",
+    "appendix1_verb": "to drink it",
+    "gloss": "you all drank it",
+    "parks_page": 6
+   }
+  ],
+  "sources": [
+   "Parks Appendix 1 paradigms",
+   "Parks Tables 9-10, p.35-36"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [
+   "structural: identified by paradigm cell"
+  ],
+  "rank": 32
+ },
+ {
+  "affix": "3.PL -aahuʔ / raar- / ir-",
+  "category": "plural marking",
+  "slot": "slots 13, 23 / suffix",
+  "meaning": "they (plural) agent",
+  "frequency": 60,
+  "examples": [
+   {
+    "word": "taaʔaahuʔ",
+    "appendix1_verb": "to come",
+    "gloss": "they came",
+    "parks_page": 2
+   },
+   {
+    "word": "tiitaa",
+    "appendix1_verb": "to do it",
+    "gloss": "they did it",
+    "parks_page": 3
+   },
+   {
+    "word": "tiiwuuʔ",
+    "appendix1_verb": "to go",
+    "gloss": "they went",
+    "parks_page": 4
+   },
+   {
+    "word": "tuuhiwaa",
+    "appendix1_verb": "to be good",
+    "gloss": "they are good",
+    "parks_page": 5
+   },
+   {
+    "word": "tihkiikaʔ",
+    "appendix1_verb": "to drink it",
+    "gloss": "they drank it",
+    "parks_page": 6
+   }
+  ],
+  "sources": [
+   "Parks Appendix 1 paradigms",
+   "Parks Tables 9-10, p.35-36"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [
+   "structural: identified by paradigm cell"
+  ],
+  "rank": 33
+ },
+ {
+  "affix": "DIM -kis",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "DIM",
+  "frequency": 58,
+  "examples": [
+   {
+    "word": "arakis",
+    "entry_id": "SK-arakis-p13-0132",
+    "parks_page": 13,
+    "class": "N",
+    "gloss": "sonny; daughter, an appelative for a young person, male or female .",
+    "segmentation": "a + rak + kis",
+    "blue_book": {
+     "form": "arakis",
+     "lesson": 7,
+     "page": 62
+    }
+   },
+   {
+    "word": "cuuraki",
+    "entry_id": "SK-cuuraki-p32-0536",
+    "parks_page": 32,
+    "class": "N",
+    "gloss": "girl.",
+    "segmentation": "cuura + kis",
+    "blue_book": {
+     "form": "tsuraki",
+     "lesson": 6,
+     "page": 56
+    }
+   },
+   {
+    "word": "kisaacki",
+    "entry_id": "SK-kisaacki-p98-1883",
+    "parks_page": 98,
+    "class": "N",
+    "gloss": "meat; flesh.",
+    "segmentation": "kisaac + kis",
+    "blue_book": {
+     "form": "kisatski",
+     "lesson": 11,
+     "page": 79
+    }
+   },
+   {
+    "word": "Kitkahaahki",
+    "entry_id": "SK-kitkahaahki-p99-1923",
+    "parks_page": 99,
+    "class": "N",
+    "gloss": "Kitkahahki band; (hist.) Republican band.",
+    "segmentation": "kitkahaar + kis",
+    "blue_book": {
+     "form": "Kitkahahki",
+     "lesson": 13,
+     "page": 88
+    }
+   },
+   {
+    "word": "rakis",
+    "entry_id": "SK-rakis-p135-2644",
+    "parks_page": 135,
+    "class": "N",
+    "gloss": "wood; stick, limb, branch; pole.",
+    "segmentation": "rak + kis",
+    "blue_book": {
+     "form": "rakis",
+     "lesson": 1,
+     "page": 29
+    }
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.101",
+   "Parks p.110",
+   "Parks p.111",
+   "Parks p.113",
+   "Parks p.122",
+   "Parks p.13"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 34
+ },
+ {
+  "affix": "PERF -his",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "PERF",
+  "frequency": 57,
+  "examples": [
+   {
+    "word": "haakawaahcisuʔ",
+    "entry_id": "SK-haakawaahcisuq-p35-0588",
+    "parks_page": 35,
+    "class": "N",
+    "gloss": "cooked food.",
+    "segmentation": "haaka + waahc + his + uʔ",
+    "blue_book": {
+     "form": "ha .kawahtsisu '",
+     "lesson": 11,
+     "page": 79
+    }
+   },
+   {
+    "word": "pitaksuʔ",
+    "entry_id": "SK-pitaksuq-p114-2204",
+    "parks_page": 114,
+    "class": "N",
+    "gloss": "wrap; shawl, blanket.",
+    "segmentation": "witak + his + uʔ",
+    "blue_book": {
+     "form": "pita",
+     "lesson": 6,
+     "page": 55
+    }
+   },
+   {
+    "word": "Sakuhkiwatat",
+    "entry_id": "SK-sakuhkiwatat-p151-2950",
+    "parks_page": 151,
+    "class": "N",
+    "gloss": "Monday.",
+    "segmentation": "sakuur + kiwatak + his",
+    "blue_book": {
+     "form": "Sakuh•kiwatat",
+     "lesson": 19,
+     "page": 110
+    }
+   },
+   {
+    "word": "akahwiriwisisuʔ",
+    "entry_id": "SK-akahwiriwisisuq-p11-0109",
+    "parks_page": 11,
+    "class": "N",
+    "gloss": "partition; partitioning wall.",
+    "segmentation": "akaar + wiriwis + his + uʔ"
+   },
+   {
+    "word": "akaraapiisuʔ",
+    "entry_id": "SK-akaraapiisuq-p11-0112",
+    "parks_page": 11,
+    "class": "N",
+    "gloss": "trading post; store.",
+    "segmentation": "akaar + raapi + his + uʔ"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.102",
+   "Parks p.107",
+   "Parks p.11",
+   "Parks p.113",
+   "Parks p.114",
+   "Parks p.115"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 35
+ },
+ {
+  "affix": "PORT ri-",
+  "category": "stem-element",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "holding",
+  "frequency": 55,
+  "examples": [
+   {
+    "word": "rikus",
+    "entry_id": "SK-rikus-p145-2823",
+    "parks_page": 145,
+    "class": "VT",
+    "gloss": "be holding.",
+    "segmentation": "ri + kus"
+   },
+   {
+    "word": "ripaaraar",
+    "entry_id": "SK-ripaaraar-p145-2824",
+    "parks_page": 145,
+    "class": "VT",
+    "gloss": "hide, conceal, put out of sight; secret; stash.",
+    "segmentation": "ri + paar + aar"
+   },
+   {
+    "word": "riwarik",
+    "entry_id": "SK-riwarik-p147-2854",
+    "parks_page": 147,
+    "class": "VT",
+    "gloss": "lose, be unable to find; mislay; miss, as a lost or misplaced object.",
+    "segmentation": "ri + warik"
+   },
+   {
+    "word": "riwuh",
+    "entry_id": "SK-riwuh-p148-2865",
+    "parks_page": 148,
+    "class": "VT",
+    "gloss": "throw and hit, hit with something thrown, as a projectile or other object.",
+    "segmentation": "ri + wuh"
+   },
+   {
+    "word": "ritawiʔat",
+    "entry_id": "SK-ritawiqat-p494-4210",
+    "parks_page": 494,
+    "class": "VT",
+    "gloss": "rub, rub down.",
+    "segmentation": "ri + tawiʔat"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.103",
+   "Parks p.116",
+   "Parks p.123",
+   "Parks p.134",
+   "Parks p.137",
+   "Parks p.145"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 36
+ },
+ {
+  "affix": "ITER raar-",
+  "category": "affix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "ITER",
+  "frequency": 55,
+  "examples": [
+   {
+    "word": "raarakaahki",
+    "entry_id": "SK-raarakaahki-p122-2378",
+    "parks_page": 122,
+    "class": "N",
+    "gloss": "tanned summer hide, as used for a tipi cover, tipi door flap, or rug.",
+    "segmentation": "raar + akaar + kis"
+   },
+   {
+    "word": "raarapitaarahak",
+    "entry_id": "SK-raarapitaarahak-p122-2379",
+    "parks_page": 122,
+    "class": "VT",
+    "gloss": "wind, as a clock.",
+    "segmentation": "raar + apitaarahak"
+   },
+   {
+    "word": "raaruhuuruʔ",
+    "entry_id": "SK-raaruhuuruq-p124-2422",
+    "parks_page": 124,
+    "class": "N",
+    "gloss": "direction, course; way.",
+    "segmentation": "raar + uhuur + uʔ"
+   },
+   {
+    "word": "raktaaruuhawiisisuʔ",
+    "entry_id": "SK-raktaaruuhawiisisuq-p135-2649",
+    "parks_page": 135,
+    "class": "N",
+    "gloss": "driftwood.",
+    "segmentation": "rak + raar + huuhawi + isis + uʔ"
+   },
+   {
+    "word": "pakstacaaka",
+    "entry_id": "SK-pakstacaaka-p110-2113",
+    "parks_page": 110,
+    "class": "N",
+    "gloss": "dandruff.",
+    "segmentation": "paks + raar + taakaar"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.110",
+   "Parks p.117",
+   "Parks p.122",
+   "Parks p.123",
+   "Parks p.124",
+   "Parks p.129"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 37
+ },
+ {
+  "affix": "NOM -u (variant) / SUB.D -u",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "in a line",
+  "frequency": 51,
+  "examples": [
+   {
+    "word": "kirikaʔu",
+    "entry_id": "SK-kirikaqu-p96-1827",
+    "parks_page": 96,
+    "class": "VI",
+    "gloss": "be awake.",
+    "segmentation": "kirika + u"
+   },
+   {
+    "word": "Pitku Rasakuuru",
+    "entry_id": "SK-pitku_rasakuuru-p114-2207",
+    "parks_page": 114,
+    "class": "N",
+    "gloss": "Tuesday.",
+    "segmentation": "pitkus + ra + sakuur + u"
+   },
+   {
+    "word": "uhak",
+    "entry_id": "SK-uhak-p167-3304",
+    "parks_page": 167,
+    "class": "VI",
+    "gloss": "extend in a line, pass by in a line",
+    "segmentation": "u + hak"
+   },
+   {
+    "word": "uʔa",
+    "entry_id": "SK-uqa-p167-3295",
+    "parks_page": 167,
+    "class": "VI",
+    "gloss": "come flying; fly this way.",
+    "segmentation": "u + a"
+   },
+   {
+    "word": "uʔat",
+    "entry_id": "SK-uqat-p167-3296",
+    "parks_page": 167,
+    "class": "VI",
+    "gloss": "fly in a line; fly over; fly by; fly off",
+    "segmentation": "u + at"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.101",
+   "Parks p.102",
+   "Parks p.113",
+   "Parks p.114",
+   "Parks p.134",
+   "Parks p.148"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 38
+ },
+ {
+  "affix": "CAUS -wuh",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "cause to be",
+  "frequency": 48,
+  "examples": [
+   {
+    "word": "kaackawuh",
+    "entry_id": "SK-kaackawuh-p2-0021",
+    "parks_page": 2,
+    "class": "VI",
+    "gloss": "look back, glance back.",
+    "segmentation": "kaacka + wuh"
+   },
+   {
+    "word": "arikawuh",
+    "entry_id": "SK-arikawuh-p13-0153",
+    "parks_page": 13,
+    "class": "VT",
+    "gloss": "braid, tie into a braid, as hair .",
+    "segmentation": "arika + wuh"
+   },
+   {
+    "word": "ataawuh",
+    "entry_id": "SK-ataawuh-p19-0226",
+    "parks_page": 19,
+    "class": "VT",
+    "gloss": "bury, place in the ground.",
+    "segmentation": "ut + ataa + wuh"
+   },
+   {
+    "word": "hatawuh",
+    "entry_id": "SK-hatawuh-p38-0669",
+    "parks_page": 38,
+    "class": "VT",
+    "gloss": "make, put a hole in; punch a hole in.",
+    "segmentation": "uur + hata + wuh"
+   },
+   {
+    "word": "iraahawuh",
+    "entry_id": "SK-iraahawuh-p64-1120",
+    "parks_page": 64,
+    "class": "VT",
+    "gloss": "tilt sideways, tip over, tip on its side, as when emptying a container.",
+    "segmentation": "iraaha + wuh"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.103",
+   "Parks p.115",
+   "Parks p.121",
+   "Parks p.122",
+   "Parks p.123",
+   "Parks p.124"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 39
+ },
+ {
+  "affix": "CAUS -ik",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "cause to",
+  "frequency": 40,
+  "examples": [
+   {
+    "word": "arasik",
+    "entry_id": "SK-arasik-p13-0135",
+    "parks_page": 13,
+    "class": "VT",
+    "gloss": "cook, as corn or meat .",
+    "segmentation": "aras + ik"
+   },
+   {
+    "word": "itkasik",
+    "entry_id": "SK-itkasik-p69-1233",
+    "parks_page": 69,
+    "class": "VT",
+    "gloss": "put to sleep.",
+    "segmentation": "itkas + ik"
+   },
+   {
+    "word": "kaasik",
+    "entry_id": "SK-kaasik-p73-1315",
+    "parks_page": 73,
+    "class": "VT",
+    "gloss": "break, crack, as a nut shell; split, break open, as a log, jar, can; divide.",
+    "segmentation": "kaas + ik"
+   },
+   {
+    "word": "raahiirik",
+    "entry_id": "SK-raahiirik-p117-2273",
+    "parks_page": 117,
+    "class": "VT",
+    "gloss": "fix, fix nicely, do nicely, as dressing someone; (dist.) dress nicely.",
+    "segmentation": "raa + hiir + ik"
+   },
+   {
+    "word": "raahiwihcik",
+    "entry_id": "SK-raahiwihcik-p117-2282",
+    "parks_page": 117,
+    "class": "VT",
+    "gloss": "expose, bring out into the open, make public, as an unknown matter or gossip.",
+    "segmentation": "raa + hiwihc + ik"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.115",
+   "Parks p.117",
+   "Parks p.120",
+   "Parks p.13",
+   "Parks p.133",
+   "Parks p.137"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 40
+ },
+ {
+  "affix": "LOC -hiriʔ",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "LOC",
+  "frequency": 36,
+  "examples": [
+   {
+    "word": "askusiriʔ",
+    "entry_id": "SK-askusiriq-p16-0180",
+    "parks_page": 16,
+    "class": "ADV",
+    "gloss": "once, one time.",
+    "segmentation": "askus + hiriʔ"
+   },
+   {
+    "word": "aspaarahiriʔ",
+    "entry_id": "SK-aspaarahiriq-p17-0182",
+    "parks_page": 17,
+    "class": "ADV",
+    "gloss": "backwards.",
+    "segmentation": "aspaara + hiriʔ"
+   },
+   {
+    "word": "awaahiriʔ",
+    "entry_id": "SK-awaahiriq-p20-0257",
+    "parks_page": 20,
+    "class": "N",
+    "gloss": "chest, bosom.",
+    "segmentation": "awaa + hiriʔ"
+   },
+   {
+    "word": "awiirahiriʔ",
+    "entry_id": "SK-awiirahiriq-p23-0301",
+    "parks_page": 23,
+    "class": "ADV",
+    "gloss": "behind, in back of, as an object.",
+    "segmentation": "awiira + hiriʔ"
+   },
+   {
+    "word": "hatkatakusiriʔ",
+    "entry_id": "SK-hatkatakusiriq-p38-0675",
+    "parks_page": 38,
+    "class": "N",
+    "gloss": "roof of the mouth; palatal, velar, and uvular regions of the mouth.",
+    "segmentation": "hat + katakus + hiriʔ"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.111",
+   "Parks p.114",
+   "Parks p.13",
+   "Parks p.141",
+   "Parks p.145",
+   "Parks p.148"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 41
+ },
+ {
+  "affix": "PL raar-",
+  "category": "affix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "PL",
+  "frequency": 33,
+  "examples": [
+   {
+    "word": "raariisat",
+    "entry_id": "SK-raariisat-p122-2392",
+    "parks_page": 122,
+    "class": "VD",
+    "gloss": "be many; be numerous, a large number; be a large quantity, large amount.",
+    "segmentation": "raar + riisat"
+   },
+   {
+    "word": "raaruhuhkaawarik",
+    "entry_id": "SK-raaruhuhkaawarik-p123-2419",
+    "parks_page": 123,
+    "class": "VT",
+    "gloss": "put in an oven to bake or to roast.",
+    "segmentation": "raar + uhuhkaa + warik"
+   },
+   {
+    "word": "raaruhura",
+    "entry_id": "SK-raaruhura-p124-2420",
+    "parks_page": 124,
+    "class": "VL",
+    "gloss": "(pl. subj.) be separated, sorted, divided,",
+    "segmentation": "raar + uhura"
+   },
+   {
+    "word": "raaruhurarik",
+    "entry_id": "SK-raaruhurarik-p124-2421",
+    "parks_page": 124,
+    "class": "VT",
+    "gloss": "separate, sort out from; divide, sort.",
+    "segmentation": "raar + uhura + rik"
+   },
+   {
+    "word": "hiiraaricakusuʔ, hiiraaricakus",
+    "entry_id": "SK-hiiraaricakusuq,_hiiraaricakus-p389-3835",
+    "parks_page": 389,
+    "class": "N",
+    "gloss": "pitchfork.",
+    "segmentation": "hiir + raar + icakus + uʔ"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.122",
+   "Parks p.123",
+   "Parks p.124",
+   "Parks p.129",
+   "Parks p.131",
+   "Parks p.132"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 42
+ },
+ {
+  "affix": "INCH -itik",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "become",
+  "frequency": 29,
+  "examples": [
+   {
+    "word": "awacitik",
+    "entry_id": "SK-awacitik-p20-0263",
+    "parks_page": 20,
+    "class": "VI",
+    "gloss": "go outside.",
+    "segmentation": "awac + itik"
+   },
+   {
+    "word": "ickawiitik",
+    "entry_id": "SK-ickawiitik-p58-0997",
+    "parks_page": 58,
+    "class": "VI",
+    "gloss": "turn to face, as a certain direction ; face, meet face to face.",
+    "segmentation": "uur + ickawi + itik"
+   },
+   {
+    "word": "itkasitik",
+    "entry_id": "SK-itkasitik-p69-1234",
+    "parks_page": 69,
+    "class": "VP",
+    "gloss": "fall asleep, go to sleep.",
+    "segmentation": "itkas + itik"
+   },
+   {
+    "word": "piiriitik",
+    "entry_id": "SK-piiriitik-p460-4102",
+    "parks_page": 460,
+    "class": "VI",
+    "gloss": "bend over, stoop over.",
+    "segmentation": "piira + itik"
+   },
+   {
+    "word": "hiriitik",
+    "entry_id": "SK-hiriitik-p43-0704",
+    "parks_page": 43,
+    "class": "VI",
+    "gloss": "get into water, lie down in water; go down in water, as a bird diving.",
+    "segmentation": "ha + iri + itik",
+    "blue_book": {
+     "form": "hiri",
+     "lesson": 13,
+     "page": 88
+    }
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.103",
+   "Parks p.113",
+   "Parks p.115",
+   "Parks p.119",
+   "Parks p.124",
+   "Parks p.129"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 43
+ },
+ {
+  "affix": "CAUS -rik",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "cause",
+  "frequency": 29,
+  "examples": [
+   {
+    "word": "icuskiispaktaarik",
+    "entry_id": "SK-icuskiispaktaarik-p59-1021",
+    "parks_page": 59,
+    "class": "VT",
+    "gloss": "hum, make a humming sound through the nose.",
+    "segmentation": "icus + kiispaktaa + rik"
+   },
+   {
+    "word": "katawihuuriktik",
+    "entry_id": "SK-katawihuuriktik-p82-1521",
+    "parks_page": 82,
+    "class": "VT",
+    "gloss": "fry, cook by frying.",
+    "segmentation": "katawihuurik + rik"
+   },
+   {
+    "word": "kiispaktaarik",
+    "entry_id": "SK-kiispaktaarik-p92-1748",
+    "parks_page": 92,
+    "class": "VT",
+    "gloss": "blow a whistle.",
+    "segmentation": "kiispaktaa + rik"
+   },
+   {
+    "word": "kirahwaktaarik",
+    "entry_id": "SK-kirahwaktaarik-p95-1806",
+    "parks_page": 95,
+    "class": "VT",
+    "gloss": "snap, crack; make a snapping, cracking sound, as when breaking something brittle.",
+    "segmentation": "kirahwaktaa + rik"
+   },
+   {
+    "word": "kisaktik",
+    "entry_id": "SK-kisaktik-p98-1887",
+    "parks_page": 98,
+    "class": "VT",
+    "gloss": "melt .",
+    "segmentation": "kisak + rik"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.11",
+   "Parks p.124",
+   "Parks p.131",
+   "Parks p.133",
+   "Parks p.162",
+   "Parks p.171"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 44
+ },
+ {
+  "affix": "CAUS -k",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "cause to",
+  "frequency": 28,
+  "examples": [
+   {
+    "word": "awatatk",
+    "entry_id": "SK-awatatk-p21-0279",
+    "parks_page": 21,
+    "class": "VT",
+    "gloss": "cover, put a cover over.",
+    "segmentation": "awatat + k"
+   },
+   {
+    "word": "kaacatk",
+    "entry_id": "SK-kaacatk-p2-0017",
+    "parks_page": 2,
+    "class": "VT",
+    "gloss": "bake in hot coals, in hot ashes.",
+    "segmentation": "kaa + icat + k"
+   },
+   {
+    "word": "haastawikuusk",
+    "entry_id": "SK-haastawikuusk-p36-0624",
+    "parks_page": 36,
+    "class": "VT",
+    "gloss": "tie to, tie a rope to, as when tying a horse to a tree or stake; tether; picket.",
+    "segmentation": "haastawikus + k"
+   },
+   {
+    "word": "hakuusk",
+    "entry_id": "SK-hakuusk-p37-0633",
+    "parks_page": 37,
+    "class": "VT",
+    "gloss": "put, set, place in water; soak.",
+    "segmentation": "ha + kus + k"
+   },
+   {
+    "word": "hihiitk",
+    "entry_id": "SK-hihiitk-p40-0693",
+    "parks_page": 40,
+    "class": "VT",
+    "gloss": "spread out, lay out, as a canvas, mat, rug .",
+    "segmentation": "hihit + k"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.155",
+   "Parks p.156",
+   "Parks p.158",
+   "Parks p.161",
+   "Parks p.171",
+   "Parks p.2"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 45
+ },
+ {
+  "affix": "LOC/INST -hiriʔ",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "in the",
+  "frequency": 21,
+  "examples": [
+   {
+    "word": "awiicahaahiriʔ",
+    "entry_id": "SK-awiicahaahiriq-p23-0295",
+    "parks_page": 23,
+    "class": "ADV",
+    "gloss": "along a bank, as a raised bank or ditch; along the edge of a precipice or cliff.",
+    "segmentation": "awiica + haar + hiriʔ"
+   },
+   {
+    "word": "caahiksuraaririʔ",
+    "entry_id": "SK-caahiksuraaririq-p26-0370",
+    "parks_page": 26,
+    "class": "ADV",
+    "gloss": "on foot, afoot, as when walking; ref. to humans only.",
+    "segmentation": "icaahiks + huraar + hiriʔ"
+   },
+   {
+    "word": "haakahuukitahaahiriʔ",
+    "entry_id": "SK-haakahuukitahaahiriq-p33-0565",
+    "parks_page": 33,
+    "class": "N",
+    "gloss": "upper lip.",
+    "segmentation": "haaka + huukita + haar + hiriʔ"
+   },
+   {
+    "word": "hurahwihiriʔ",
+    "entry_id": "SK-hurahwihiriq-p47-0801",
+    "parks_page": 47,
+    "class": "ADV",
+    "gloss": "at the bottom, base, as of a hanging object touching the ground.",
+    "segmentation": "hurahwi + hiriʔ"
+   },
+   {
+    "word": "huuwiicahaahiriʔ",
+    "entry_id": "SK-huuwiicahaahiriq-p53-0894",
+    "parks_page": 53,
+    "class": "ADV",
+    "gloss": "on the edge of a bank, ledge, drop-off; on the edge of a raised object, as a roof; on a ridge.",
+    "segmentation": "huuwiica + haar + hiriʔ"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.102",
+   "Parks p.113",
+   "Parks p.160",
+   "Parks p.167",
+   "Parks p.170",
+   "Parks p.172"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 46
+ },
+ {
+  "affix": "PORT ruu-",
+  "category": "stem-element",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "PORT",
+  "frequency": 18,
+  "examples": [
+   {
+    "word": "ruuwarii",
+    "entry_id": "SK-ruuwarii-p150-2930",
+    "parks_page": 150,
+    "class": "VT",
+    "gloss": "carry around; go around with.",
+    "segmentation": "ruu + warii"
+   },
+   {
+    "word": "raaʔiitustaruuwarii",
+    "entry_id": "SK-raaqiitustaruuwarii-p115-2241",
+    "parks_page": 115,
+    "class": "VI",
+    "gloss": "gossip, spread gossip, as when repeating words and stories.",
+    "segmentation": "raaʔiitus + raar + ruu + warii"
+   },
+   {
+    "word": "rakiikaruuwarii",
+    "entry_id": "SK-rakiikaruuwarii-p134-2639",
+    "parks_page": 134,
+    "class": "N",
+    "gloss": "lantern, flashlight.",
+    "segmentation": "ra + kiika + ruu + warii"
+   },
+   {
+    "word": "riwiruu",
+    "entry_id": "SK-riwiruu-p147-2861",
+    "parks_page": 147,
+    "class": "VD",
+    "gloss": "be round, spherical; be formed into a ball.",
+    "segmentation": "riwii + ruu + ruu"
+   },
+   {
+    "word": "riwiruuraʔuk",
+    "entry_id": "SK-riwiruuraquk-p148-2863",
+    "parks_page": 148,
+    "class": "VT",
+    "gloss": "wad up, wrinkle up, crumple up.",
+    "segmentation": "riwi + ruu + raʔuk"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.115",
+   "Parks p.134",
+   "Parks p.147",
+   "Parks p.148",
+   "Parks p.150",
+   "Parks p.153"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 47
+ },
+ {
+  "affix": "-i (class 1-i/2-i stem marker in Parks headwords)",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "-i",
+  "frequency": 15,
+  "examples": [
+   {
+    "word": "Arikaraariki",
+    "entry_id": "SK-arikaraariki-p13-0148",
+    "parks_page": 13,
+    "class": "N",
+    "gloss": "Many Elks Village, a former Skiri village in Nebraska.",
+    "segmentation": "arikaraar + ik + i"
+   },
+   {
+    "word": "askatatiir-i",
+    "entry_id": "SK-askatatiir-i-p16-0161",
+    "parks_page": 16,
+    "class": "VP",
+    "gloss": "stumble.",
+    "segmentation": "as + kata + tiir + i"
+   },
+   {
+    "word": "Ckirihki Kuuruuriki",
+    "entry_id": "SK-ckirihki_kuuruuriki-p30-0486",
+    "parks_page": 30,
+    "class": "N",
+    "gloss": "Pawnee tribe; Pawnees.",
+    "segmentation": "ickirihkis + ku + ra + uur + ik + i"
+   },
+   {
+    "word": "hatkatatawiir-i",
+    "entry_id": "SK-hatkatatawiir-i-p38-0677",
+    "parks_page": 38,
+    "class": "VP",
+    "gloss": "stutter, stammer; stumble over one's words; be tongue-tied.",
+    "segmentation": "hat + katata + wi + ir + i"
+   },
+   {
+    "word": "iriirapaapiciskaaruuci",
+    "entry_id": "SK-iriirapaapiciskaaruuci-p65-1148",
+    "parks_page": 65,
+    "class": "N",
+    "gloss": "bank, savings bank.",
+    "segmentation": "irii + ra + paapicis + kaa + ruuc + i"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.101",
+   "Parks p.113",
+   "Parks p.114",
+   "Parks p.13",
+   "Parks p.150",
+   "Parks p.16"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 48
+ },
+ {
+  "affix": "PREV ri-",
+  "category": "preverb",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "PREV",
+  "frequency": 14,
+  "examples": [
+   {
+    "word": "raatii",
+    "entry_id": "SK-raatii-p125-2449",
+    "parks_page": 125,
+    "class": "VT",
+    "gloss": "like, have an affinity for, as an activity, event, or a behavior; be comfortable with, as someone's company.",
+    "segmentation": "raa + tii"
+   },
+   {
+    "word": "tii",
+    "entry_id": "SK-tii-p164-3231",
+    "parks_page": 164,
+    "class": "VT",
+    "gloss": "like, care for, have an affinity for.",
+    "segmentation": "",
+    "blue_book": {
+     "form": "ti•it•iks•aparari•tisuku'",
+     "lesson": 15,
+     "page": 96
+    }
+   },
+   {
+    "word": "awaah",
+    "entry_id": "SK-awaah-p20-0254",
+    "parks_page": 20,
+    "class": "VT",
+    "gloss": "work for.",
+    "segmentation": "ir + ri + aar + waa"
+   },
+   {
+    "word": "hiwihcisat",
+    "entry_id": "SK-hiwihcisat-p43-0717",
+    "parks_page": 43,
+    "class": "VT",
+    "gloss": "go to visit someone.",
+    "segmentation": "hiwihc + his + at"
+   },
+   {
+    "word": "kitawi",
+    "entry_id": "SK-kitawi-p99-1917",
+    "parks_page": 99,
+    "class": "VT",
+    "gloss": "lead, be the leader of , as a group .",
+    "segmentation": "ir + ri + uur + kita + wi"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.116",
+   "Parks p.125",
+   "Parks p.127",
+   "Parks p.149",
+   "Parks p.156",
+   "Parks p.164"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 49
+ },
+ {
+  "affix": "LOC -kat",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "LOC",
+  "frequency": 13,
+  "examples": [
+   {
+    "word": "picikat",
+    "entry_id": "SK-picikat-p111-2162",
+    "parks_page": 111,
+    "class": "ADV",
+    "gloss": "in cold, frigid, freezing weather; in winter, during winter, during winter-time.",
+    "segmentation": "pici + kat",
+    "blue_book": {
+     "form": "pitsikat",
+     "lesson": 15,
+     "page": 95
+    }
+   },
+   {
+    "word": "iritkat",
+    "entry_id": "SK-iritkat-p67-1190",
+    "parks_page": 67,
+    "class": "ADV",
+    "gloss": "on the bottom, on the bottom side, as of an object.",
+    "segmentation": "irit + kat"
+   },
+   {
+    "word": "kahuraahkicuuciskat",
+    "entry_id": "SK-kahuraahkicuuciskat-p76-1382",
+    "parks_page": 76,
+    "class": "ADV",
+    "gloss": "in thick or dense brush, woods, timber.",
+    "segmentation": "kahuraar + kicuucis + kat"
+   },
+   {
+    "word": "paraakat, waraakat",
+    "entry_id": "SK-paraakat,_waraakat-p110-2131",
+    "parks_page": 110,
+    "class": "ADV",
+    "gloss": "in brush; in woods.",
+    "segmentation": "waraa + kat"
+   },
+   {
+    "word": "saksikat",
+    "entry_id": "SK-saksikat-p151-2943",
+    "parks_page": 151,
+    "class": "ADV",
+    "gloss": "during the day, in the daytime.",
+    "segmentation": "sak + si + kat"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.110",
+   "Parks p.111",
+   "Parks p.151",
+   "Parks p.177",
+   "Parks p.358",
+   "Parks p.453"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 50
+ },
+ {
+  "affix": "LOC -t",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "LOC",
+  "frequency": 12,
+  "examples": [
+   {
+    "word": "tawaturikat",
+    "entry_id": "SK-tawaturikat-p163-3195",
+    "parks_page": 163,
+    "class": "ADV",
+    "gloss": "between, in between, as between two objects or surfaces.",
+    "segmentation": "tawaturika + t"
+   },
+   {
+    "word": "uhuurickat",
+    "entry_id": "SK-uhuurickat-p169-3349",
+    "parks_page": 169,
+    "class": "ADV",
+    "gloss": "on the end; at the end; at the extremity, as of an object.",
+    "segmentation": "uhuur + icka + t"
+   },
+   {
+    "word": "uukaahkat",
+    "entry_id": "SK-uukaahkat-p172-3399",
+    "parks_page": 172,
+    "class": "N, ADV",
+    "gloss": "outside, outdoors.",
+    "segmentation": "uukaahka + t"
+   },
+   {
+    "word": "uukatat",
+    "entry_id": "SK-uukatat-p172-3403",
+    "parks_page": 172,
+    "class": "ADV",
+    "gloss": "west; in a westerly direction, westward, to the west.",
+    "segmentation": "uukata + t"
+   },
+   {
+    "word": "uukiihtatat",
+    "entry_id": "SK-uukiihtatat-p172-3411",
+    "parks_page": 172,
+    "class": "ADV",
+    "gloss": "along, close to, by a stream bank.",
+    "segmentation": "uukiihtata + t"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.111",
+   "Parks p.118",
+   "Parks p.163",
+   "Parks p.169",
+   "Parks p.170",
+   "Parks p.171"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 51
+ },
+ {
+  "affix": "COM ciras-",
+  "category": "stem-element",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "leading",
+  "frequency": 9,
+  "examples": [
+   {
+    "word": "cirasa",
+    "entry_id": "SK-cirasa-p29-0450",
+    "parks_page": 29,
+    "class": "VT",
+    "gloss": "bring, lead (coming).",
+    "segmentation": "ciras + a"
+   },
+   {
+    "word": "cirasat",
+    "entry_id": "SK-cirasat-p29-0451",
+    "parks_page": 29,
+    "class": "VT",
+    "gloss": "take, lead (going).",
+    "segmentation": "ciras + at"
+   },
+   {
+    "word": "ciraskaaʔiisa",
+    "entry_id": "SK-ciraskaaqiisa-p29-0452",
+    "parks_page": 29,
+    "class": "VT",
+    "gloss": "bring home, come leading home; come walking home with.",
+    "segmentation": "ciras + kaaʔiisa"
+   },
+   {
+    "word": "ciraskus",
+    "entry_id": "SK-ciraskus-p29-0454",
+    "parks_page": 29,
+    "class": "VT",
+    "gloss": "live with, live together with, have living with",
+    "segmentation": "ciras + kus"
+   },
+   {
+    "word": "ciraskaaʔiisat",
+    "entry_id": "SK-ciraskaaqiisat-p29-0453",
+    "parks_page": 29,
+    "class": "VT",
+    "gloss": "walk home with, take home walking, lead home walking.",
+    "segmentation": "ciras + kaaʔiis + at"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.29"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 52
+ },
+ {
+  "affix": "INDF ku-",
+  "category": "proclitic",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "INDF",
+  "frequency": 9,
+  "examples": [
+   {
+    "word": "kuucaʔis",
+    "entry_id": "SK-kuucaqis-p452-4005",
+    "parks_page": 452,
+    "class": "VT",
+    "gloss": "give a light shove, push; nudge, poke lightly.",
+    "segmentation": "ku + icaʔis"
+   },
+   {
+    "word": "Ckirihki Kuuruuriki",
+    "entry_id": "SK-ckirihki_kuuruuriki-p30-0486",
+    "parks_page": 30,
+    "class": "N",
+    "gloss": "Pawnee tribe; Pawnees.",
+    "segmentation": "ickirihkis + ku + ra + uur + ik + i"
+   },
+   {
+    "word": "kaakuriʔ",
+    "entry_id": "SK-kaakuriq-p72-1293",
+    "parks_page": 72,
+    "class": "ADV",
+    "gloss": "no.",
+    "segmentation": "ka + ku + ri + Ø"
+   },
+   {
+    "word": "kisuc kuruuru",
+    "entry_id": "SK-kisuc_kuruuru-p98-1899",
+    "parks_page": 98,
+    "class": "N, ADJ",
+    "gloss": "purple .",
+    "segmentation": "kisuhc + ku + ra + uur + u"
+   },
+   {
+    "word": "kuraciihaaʔu",
+    "entry_id": "SK-kuraciihaaqu-p102-1973",
+    "parks_page": 102,
+    "class": "N",
+    "gloss": "our (incl. du.) child.",
+    "segmentation": "ku + ra + acir + ir + haa + u"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.102",
+   "Parks p.30",
+   "Parks p.349",
+   "Parks p.452",
+   "Parks p.72",
+   "Parks p.98"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 53
+ },
+ {
+  "affix": "EXIST -uk 'be, exist' (descriptive-verb formative)",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "be",
+  "frequency": 8,
+  "examples": [
+   {
+    "word": "kaawiraʔuk",
+    "entry_id": "SK-kaawiraquk-p74-1341",
+    "parks_page": 74,
+    "class": "VI",
+    "gloss": "be jealous; be envious.",
+    "segmentation": "kaawira + uk"
+   },
+   {
+    "word": "aktakuksaar",
+    "entry_id": "SK-aktakuksaar-p11-0125",
+    "parks_page": 11,
+    "class": "VT",
+    "gloss": "marry a female, get married to a female.",
+    "segmentation": "aktaku + uk + his + aar"
+   },
+   {
+    "word": "atkaʔuk",
+    "entry_id": "SK-atkaquk-p19-0244",
+    "parks_page": 19,
+    "class": "VI",
+    "gloss": "hear, listen.",
+    "segmentation": "atka + uk"
+   },
+   {
+    "word": "raackuuki",
+    "entry_id": "SK-raackuuki-p116-2262",
+    "parks_page": 116,
+    "class": "N",
+    "gloss": "thorny bush, thorny plant.",
+    "segmentation": "ra + icka + uk + i"
+   },
+   {
+    "word": "rarituksuʔ",
+    "entry_id": "SK-rarituksuq-p138-2715",
+    "parks_page": 138,
+    "class": "N",
+    "gloss": "fever.",
+    "segmentation": "rarita + uk + his + uʔ"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.11",
+   "Parks p.116",
+   "Parks p.138",
+   "Parks p.171",
+   "Parks p.19",
+   "Parks p.360"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 54
+ },
+ {
+  "affix": "LOC.ADV -taku",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "LOC.ADV",
+  "frequency": 8,
+  "examples": [
+   {
+    "word": "irihaataku",
+    "entry_id": "SK-irihaataku-p65-1132",
+    "parks_page": 65,
+    "class": "ADV",
+    "gloss": "there, over there",
+    "segmentation": "iri + haa + taku"
+   },
+   {
+    "word": "tiitaku",
+    "entry_id": "SK-tiitaku-p165-3257",
+    "parks_page": 165,
+    "class": "ADV",
+    "gloss": "right here, here.",
+    "segmentation": "tii + taku"
+   },
+   {
+    "word": "hiitaku",
+    "entry_id": "SK-hiitaku-p390-3847",
+    "parks_page": 390,
+    "class": "ADV",
+    "gloss": "another place; the other place.",
+    "segmentation": "hii + taku"
+   },
+   {
+    "word": "iihaataku",
+    "entry_id": "SK-iihaataku-p408-3896",
+    "parks_page": 408,
+    "class": "ADV",
+    "gloss": "there, over there.",
+    "segmentation": "ii + haa + taku"
+   },
+   {
+    "word": "irihiitaku",
+    "entry_id": "SK-irihiitaku-p65-1134",
+    "parks_page": 65,
+    "class": "ADV",
+    "gloss": "over there.",
+    "segmentation": "irii + hii + taku"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.117",
+   "Parks p.150",
+   "Parks p.165",
+   "Parks p.390",
+   "Parks p.408",
+   "Parks p.65"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 55
+ },
+ {
+  "affix": "KIN.POSS 2 a-",
+  "category": "prefix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "your",
+  "frequency": 7,
+  "examples": [
+   {
+    "word": "arakis",
+    "entry_id": "SK-arakis-p13-0132",
+    "parks_page": 13,
+    "class": "N",
+    "gloss": "sonny; daughter, an appelative for a young person, male or female .",
+    "segmentation": "a + rak + kis",
+    "blue_book": {
+     "form": "arakis",
+     "lesson": 7,
+     "page": 62
+    }
+   },
+   {
+    "word": "ataat",
+    "entry_id": "SK-ataat-p19-0223",
+    "parks_page": 19,
+    "class": "N",
+    "gloss": "your sister (of a male).",
+    "segmentation": "a + taat"
+   },
+   {
+    "word": "aʔas",
+    "entry_id": "SK-aqas-p349-3581",
+    "parks_page": 349,
+    "class": "N",
+    "gloss": "your father.",
+    "segmentation": "a + as"
+   },
+   {
+    "word": "araac",
+    "entry_id": "SK-araac-p360-3706",
+    "parks_page": 360,
+    "class": "N",
+    "gloss": "your brother (of a female) .",
+    "segmentation": "a + raac"
+   },
+   {
+    "word": "paciriks",
+    "entry_id": "SK-paciriks-p107-2045",
+    "parks_page": 107,
+    "class": "N",
+    "gloss": "your uncle (mother's brother).",
+    "segmentation": "a + waciriks",
+    "blue_book": {
+     "form": "patsiriks",
+     "lesson": 7,
+     "page": 61
+    }
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.107",
+   "Parks p.13",
+   "Parks p.19",
+   "Parks p.349",
+   "Parks p.360"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 56
+ },
+ {
+  "affix": "TRANS uur-",
+  "category": "prefix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "TRANS",
+  "frequency": 7,
+  "examples": [
+   {
+    "word": "ariikicparik",
+    "entry_id": "SK-ariikicparik-p13-0142",
+    "parks_page": 13,
+    "class": "VT",
+    "gloss": "wring out, either by hand or through a wringer .",
+    "segmentation": "uur + arii + kic + warik"
+   },
+   {
+    "word": "kaapaakisaar",
+    "entry_id": "SK-kaapaakisaar-p73-1299",
+    "parks_page": 73,
+    "class": "VT",
+    "gloss": "beg for, beseech, supplicate; ask for.",
+    "segmentation": "uur + kaapaakis + aar"
+   },
+   {
+    "word": "raawuu",
+    "entry_id": "SK-raawuu-p129-2529",
+    "parks_page": 129,
+    "class": "VT",
+    "gloss": "doubt; be skeptical of, disbelieve, as when one does not believe someone knows what he is doing; deny.",
+    "segmentation": "uur + raa + wuu"
+   },
+   {
+    "word": "rariihuhkatakuusk",
+    "entry_id": "SK-rariihuhkatakuusk-p136-2694",
+    "parks_page": 136,
+    "class": "VT",
+    "gloss": "brand, put a brand on, as on an animal.",
+    "segmentation": "uur + rariihuur + katakuusk"
+   },
+   {
+    "word": "riru",
+    "entry_id": "SK-riru-p145-2839",
+    "parks_page": 145,
+    "class": "VT",
+    "gloss": "fear, have fear of, be afraid of.",
+    "segmentation": "uur + riru"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.129",
+   "Parks p.13",
+   "Parks p.136",
+   "Parks p.145",
+   "Parks p.168",
+   "Parks p.169"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 57
+ },
+ {
+  "affix": "TRANS ut-",
+  "category": "prefix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "TRANS",
+  "frequency": 7,
+  "examples": [
+   {
+    "word": "awiiraʔa",
+    "entry_id": "SK-awiiraqa-p23-0298",
+    "parks_page": 23,
+    "class": "VT",
+    "gloss": "follow (coming), come behind.",
+    "segmentation": "ut + awiira + a"
+   },
+   {
+    "word": "kahaara",
+    "entry_id": "SK-kahaara-p76-1372",
+    "parks_page": 76,
+    "class": "VP",
+    "gloss": "smell, smell an odor.",
+    "segmentation": "ut + kahaara"
+   },
+   {
+    "word": "kataʔa",
+    "entry_id": "SK-kataqa-p80-1466",
+    "parks_page": 80,
+    "class": "VP",
+    "gloss": "throw up, come up one's throat (involuntarily).",
+    "segmentation": "ut + kata + a"
+   },
+   {
+    "word": "riicikicakaraʔuk",
+    "entry_id": "SK-riicikicakaraquk-p140-2776",
+    "parks_page": 140,
+    "class": "VT",
+    "gloss": "tickle.",
+    "segmentation": "ut + riicikica + ka + raʔuk"
+   },
+   {
+    "word": "tahurar",
+    "entry_id": "SK-tahurar-p156-3046",
+    "parks_page": 156,
+    "class": "VT",
+    "gloss": "be close to, lightly touching, against, as when sitting in close quarters to someone.",
+    "segmentation": "ut + tahuraar"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.140",
+   "Parks p.156",
+   "Parks p.162",
+   "Parks p.165",
+   "Parks p.23",
+   "Parks p.76"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 58
+ },
+ {
+  "affix": "KIN.POSS 1 ati-/t-",
+  "category": "prefix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "my",
+  "frequency": 6,
+  "examples": [
+   {
+    "word": "atiʔas",
+    "entry_id": "SK-atiqas-p19-0228",
+    "parks_page": 19,
+    "class": "N-KIN",
+    "gloss": "my, our father.",
+    "segmentation": "ati + as"
+   },
+   {
+    "word": "atikaʔ",
+    "entry_id": "SK-atikaq-p19-0233",
+    "parks_page": 19,
+    "class": "N-KIN",
+    "gloss": "my grandmother.",
+    "segmentation": "ati + kaa",
+    "blue_book": {
+     "form": "atika'",
+     "lesson": 7,
+     "page": 60
+    }
+   },
+   {
+    "word": "atipat",
+    "entry_id": "SK-atipat-p19-0241",
+    "parks_page": 19,
+    "class": "N",
+    "gloss": "my, our grandfather.",
+    "segmentation": "ati + paak",
+    "blue_book": {
+     "form": "atipat",
+     "lesson": 7,
+     "page": 60
+    }
+   },
+   {
+    "word": "atiraʔ",
+    "entry_id": "SK-atiraq-p19-0243",
+    "parks_page": 19,
+    "class": "N-KIN",
+    "gloss": "my, our mother; my, our aunt, one's father's sister.",
+    "segmentation": "ati + raa",
+    "blue_book": {
+     "form": "atira'",
+     "lesson": 7,
+     "page": 60
+    }
+   },
+   {
+    "word": "tiwaciriks",
+    "entry_id": "SK-tiwaciriks-p166-3279",
+    "parks_page": 166,
+    "class": "N-KIN",
+    "gloss": "my, our uncle",
+    "segmentation": "ati + waciriks",
+    "blue_book": {
+     "form": "tiwatsiriks",
+     "lesson": 7,
+     "page": 61
+    }
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.166",
+   "Parks p.19"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 59
+ },
+ {
+  "affix": "PL -raar",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "PL",
+  "frequency": 6,
+  "examples": [
+   {
+    "word": "icakickuuhaarawarik",
+    "entry_id": "SK-icakickuuhaarawarik-p54-0922",
+    "parks_page": 54,
+    "class": "VT",
+    "gloss": "throw trash away; throw garbage away.",
+    "segmentation": "icakickuut + raar + awarik"
+   },
+   {
+    "word": "kituhaaruʔ",
+    "entry_id": "SK-kituhaaruq-p99-1932",
+    "parks_page": 99,
+    "class": "N",
+    "gloss": "turkey (wild and domestic) (Meleagris gallopavo).",
+    "segmentation": "kitut + raar + uʔ"
+   },
+   {
+    "word": "rikuraaruʔ",
+    "entry_id": "SK-rikuraaruq-p145-2822",
+    "parks_page": 145,
+    "class": "N",
+    "gloss": "chest, breast, bosom.",
+    "segmentation": "riku + raar + uʔ"
+   },
+   {
+    "word": "ckaraaruʔ",
+    "entry_id": "SK-ckaraaruq-p30-0467",
+    "parks_page": 30,
+    "class": "N",
+    "gloss": "clouds.",
+    "segmentation": "icka + raar + uʔ"
+   },
+   {
+    "word": "Ckiriraara",
+    "entry_id": "SK-ckiriraara-p30-0487",
+    "parks_page": 30,
+    "class": "N",
+    "gloss": "Wolves (Standing) In Water, a former Skiri village in Nebraska .",
+    "segmentation": "ickirir + raar + ha"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.145",
+   "Parks p.30",
+   "Parks p.54",
+   "Parks p.69",
+   "Parks p.99"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 60
+ },
+ {
+  "affix": "KIN.POSS 3 i-",
+  "category": "prefix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "his",
+  "frequency": 6,
+  "examples": [
+   {
+    "word": "iraactiʔ",
+    "entry_id": "SK-iraactiq-p64-1117",
+    "parks_page": 64,
+    "class": "N-KIN",
+    "gloss": "her brother; my, our brother (of female).",
+    "segmentation": "i + raac + riʔ",
+    "blue_book": {
+     "form": "iratsti '",
+     "lesson": 7,
+     "page": 60
+    }
+   },
+   {
+    "word": "iraariʔ",
+    "entry_id": "SK-iraariq-p64-1121",
+    "parks_page": 64,
+    "class": "N-KIN",
+    "gloss": "his, their brother; her, their sister; my, our brother (of male), my, our sister (of female).",
+    "segmentation": "i + raar + riʔ",
+    "blue_book": {
+     "form": "irari '",
+     "lesson": 6,
+     "page": 56
+    }
+   },
+   {
+    "word": "hiʔaastiʔ",
+    "entry_id": "SK-hiqaastiq-p40-0689",
+    "parks_page": 40,
+    "class": "N",
+    "gloss": "his, her, their father.",
+    "segmentation": "hi + aas + riʔ"
+   },
+   {
+    "word": "ipaaktiʔ",
+    "entry_id": "SK-ipaaktiq-p64-1116",
+    "parks_page": 64,
+    "class": "N",
+    "gloss": "his, her, their grandfather.",
+    "segmentation": "i + paak + riʔ"
+   },
+   {
+    "word": "isaastiʔ",
+    "entry_id": "SK-isaastiq-p68-1213",
+    "parks_page": 68,
+    "class": "N",
+    "gloss": "his, her, their mother.",
+    "segmentation": "i + saas + riʔ"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.40",
+   "Parks p.64",
+   "Parks p.68"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 61
+ },
+ {
+  "affix": "KIN.3 -riʔ (third-person kinship suffix)",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "KIN.3",
+  "frequency": 6,
+  "examples": [
+   {
+    "word": "iraactiʔ",
+    "entry_id": "SK-iraactiq-p64-1117",
+    "parks_page": 64,
+    "class": "N-KIN",
+    "gloss": "her brother; my, our brother (of female).",
+    "segmentation": "i + raac + riʔ",
+    "blue_book": {
+     "form": "iratsti '",
+     "lesson": 7,
+     "page": 60
+    }
+   },
+   {
+    "word": "iraariʔ",
+    "entry_id": "SK-iraariq-p64-1121",
+    "parks_page": 64,
+    "class": "N-KIN",
+    "gloss": "his, their brother; her, their sister; my, our brother (of male), my, our sister (of female).",
+    "segmentation": "i + raar + riʔ",
+    "blue_book": {
+     "form": "irari '",
+     "lesson": 6,
+     "page": 56
+    }
+   },
+   {
+    "word": "hiʔaastiʔ",
+    "entry_id": "SK-hiqaastiq-p40-0689",
+    "parks_page": 40,
+    "class": "N",
+    "gloss": "his, her, their father.",
+    "segmentation": "hi + aas + riʔ"
+   },
+   {
+    "word": "ipaaktiʔ",
+    "entry_id": "SK-ipaaktiq-p64-1116",
+    "parks_page": 64,
+    "class": "N",
+    "gloss": "his, her, their grandfather.",
+    "segmentation": "i + paak + riʔ"
+   },
+   {
+    "word": "isaastiʔ",
+    "entry_id": "SK-isaastiq-p68-1213",
+    "parks_page": 68,
+    "class": "N",
+    "gloss": "his, her, their mother.",
+    "segmentation": "i + saas + riʔ"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.40",
+   "Parks p.64",
+   "Parks p.68"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 62
+ },
+ {
+  "affix": "DIST waa-",
+  "category": "prefix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "DIST",
+  "frequency": 6,
+  "examples": [
+   {
+    "word": "paawaapicisuʔ",
+    "entry_id": "SK-paawaapicisuq-p107-2039",
+    "parks_page": 107,
+    "class": "N",
+    "gloss": "lightning.",
+    "segmentation": "waa + waapicis + uʔ"
+   },
+   {
+    "word": "paawaktiku, paawaktikus",
+    "entry_id": "SK-paawaktiku,_paawaktikus-p107-2040",
+    "parks_page": 107,
+    "class": "N",
+    "gloss": "preacher, minister, clergyman.",
+    "segmentation": "waa + waktik + hus"
+   },
+   {
+    "word": "waakaraʔuk",
+    "entry_id": "SK-waakaraquk-p174-3444",
+    "parks_page": 174,
+    "class": "VT",
+    "gloss": "pull up, as growing plants; pick up by the roots, dig up, dig out of the ground, as potatoes, carrots, or turnips.",
+    "segmentation": "waa + ka + raʔuk"
+   },
+   {
+    "word": "waarasik",
+    "entry_id": "SK-waarasik-p174-3447",
+    "parks_page": 174,
+    "class": "VT",
+    "gloss": "cook, as meat, corn, or beans.",
+    "segmentation": "waa + aras + ik"
+   },
+   {
+    "word": "iikawaawaaʔ, iikawaawaaʔa",
+    "entry_id": "SK-iikawaawaaq,_iikawaawaaqa-p408-3907",
+    "parks_page": 408,
+    "class": "INTERJ",
+    "gloss": "oh my goodness!",
+    "segmentation": "iika + waa + waa"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.107",
+   "Parks p.174",
+   "Parks p.408",
+   "Parks p.494"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 63
+ },
+ {
+  "affix": "FEM c-",
+  "category": "prefix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "FEM",
+  "frequency": 5,
+  "examples": [
+   {
+    "word": "ckuraaʔuʔ",
+    "entry_id": "SK-ckuraaquq-p31-0493",
+    "parks_page": 31,
+    "class": "N",
+    "gloss": "female doctor; nurse; midwife.",
+    "segmentation": "c + kuraa + uʔ"
+   },
+   {
+    "word": "ctiisaaruʔ",
+    "entry_id": "SK-ctiisaaruq-p31-0512",
+    "parks_page": 31,
+    "class": "N",
+    "gloss": "daughter of a chief; princess.",
+    "segmentation": "c + riisaar + uʔ"
+   },
+   {
+    "word": "Cuupiriktaakaa",
+    "entry_id": "SK-cuupiriktaakaa-p32-0534",
+    "parks_page": 32,
+    "class": "N",
+    "gloss": "Evening Star, Venus.",
+    "segmentation": "c + huupirik + taakaar"
+   },
+   {
+    "word": "cawiraaruukus",
+    "entry_id": "SK-cawiraaruukus-p28-0428",
+    "parks_page": 28,
+    "class": "N",
+    "gloss": "female chorus, four female singers who stand behind a group of male singers.",
+    "segmentation": "c + awiraaraʔuk + hus"
+   },
+   {
+    "word": "cpakaatakusuʔ",
+    "entry_id": "SK-cpakaatakusuq-p31-0506",
+    "parks_page": 31,
+    "class": "N",
+    "gloss": "female chorus, four female singers behind a group of male singers.",
+    "segmentation": "c + wak + kaata + kus + uʔ"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.28",
+   "Parks p.31",
+   "Parks p.32"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 64
+ },
+ {
+  "affix": "ITER ka-",
+  "category": "prefix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "ITER",
+  "frequency": 5,
+  "examples": [
+   {
+    "word": "kacak",
+    "entry_id": "SK-kacak-p75-1352",
+    "parks_page": 75,
+    "class": "VT",
+    "gloss": "prick, as with a pointed object ; stab.",
+    "segmentation": "ka + cak"
+   },
+   {
+    "word": "kakac",
+    "entry_id": "SK-kakac-p76-1390",
+    "parks_page": 76,
+    "class": "VD",
+    "gloss": "be cut up, sliced, torn up, torn into pieces, chopped up.",
+    "segmentation": "ka + ukac"
+   },
+   {
+    "word": "kapic/piʔic",
+    "entry_id": "SK-kapic/piqic-p77-1402",
+    "parks_page": 77,
+    "class": "VI",
+    "gloss": "break, break into pieces.",
+    "segmentation": "ka + apic"
+   },
+   {
+    "word": "kapitk",
+    "entry_id": "SK-kapitk-p77-1405",
+    "parks_page": 77,
+    "class": "VT",
+    "gloss": "break up, break into pieces.",
+    "segmentation": "ka + apitk"
+   },
+   {
+    "word": "karaʔuk",
+    "entry_id": "SK-karaquk-p77-1406",
+    "parks_page": 77,
+    "class": "VT",
+    "gloss": "make, build.",
+    "segmentation": "ka + raʔuk"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.75",
+   "Parks p.76",
+   "Parks p.77"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 65
+ },
+ {
+  "affix": "DU si-",
+  "category": "proclitic",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "one",
+  "frequency": 5,
+  "examples": [
+   {
+    "word": "saksikat",
+    "entry_id": "SK-saksikat-p151-2943",
+    "parks_page": 151,
+    "class": "ADV",
+    "gloss": "during the day, in the daytime.",
+    "segmentation": "sak + si + kat"
+   },
+   {
+    "word": "siraackuskasara",
+    "entry_id": "SK-siraackuskasara-p152-2977",
+    "parks_page": 152,
+    "class": "N",
+    "gloss": "scissor-tailed flycatcher ( Muscivora forficata ).",
+    "segmentation": "si + ra + ickus + kasara"
+   },
+   {
+    "word": "siraackuskiicu",
+    "entry_id": "SK-siraackuskiicu-p152-2978",
+    "parks_page": 152,
+    "class": "N",
+    "gloss": "scissor-tailed flycatcher ( Muscivora forficata ).",
+    "segmentation": "si + ra + ickus + kiiʔac + u"
+   },
+   {
+    "word": "siriirawikawariku",
+    "entry_id": "SK-siriirawikawariku-p152-2979",
+    "parks_page": 152,
+    "class": "N",
+    "gloss": "basketball.",
+    "segmentation": "si + ra + ir + awi + kawarik + hus"
+   },
+   {
+    "word": "siriirawikusihaku",
+    "entry_id": "SK-siriirawikusihaku-p152-2980",
+    "parks_page": 152,
+    "class": "N",
+    "gloss": "football.",
+    "segmentation": "si + ra + ir + awi + kusihak + hus"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.151",
+   "Parks p.152"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 66
+ },
+ {
+  "affix": "CAUS -kuk",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "CAUS",
+  "frequency": 4,
+  "examples": [
+   {
+    "word": "caakarikuk",
+    "entry_id": "SK-caakarikuk-p26-0373",
+    "parks_page": 26,
+    "class": "VT",
+    "gloss": "extract a nail, pull a nail out.",
+    "segmentation": "caaka + ri + kuk"
+   },
+   {
+    "word": "haakcaakarikuk",
+    "entry_id": "SK-haakcaakarikuk-p35-0590",
+    "parks_page": 35,
+    "class": "VT",
+    "gloss": "unlock, unlatch, as a door.",
+    "segmentation": "haak + caaka + ri + kuk"
+   },
+   {
+    "word": "haaktariikarikuk",
+    "entry_id": "SK-haaktariikarikuk-p35-0596",
+    "parks_page": 35,
+    "class": "VT",
+    "gloss": "open a gate.",
+    "segmentation": "haak + raar + riika + ri + kuk"
+   },
+   {
+    "word": "rakcaakarikuku",
+    "entry_id": "SK-rakcaakarikuku-p134-2628",
+    "parks_page": 134,
+    "class": "N",
+    "gloss": "key.",
+    "segmentation": "rak + caaka + ri + kuk + hus"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.134",
+   "Parks p.26",
+   "Parks p.35"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 67
+ },
+ {
+  "affix": "TRANS -k",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "TRANS",
+  "frequency": 4,
+  "examples": [
+   {
+    "word": "hisaask",
+    "entry_id": "SK-hisaask-p43-0709",
+    "parks_page": 43,
+    "class": "VT",
+    "gloss": "name, give a name to, bestow a name on.",
+    "segmentation": "hisaas + k"
+   },
+   {
+    "word": "icatk",
+    "entry_id": "SK-icatk-p55-0951",
+    "parks_page": 55,
+    "class": "VT",
+    "gloss": "cook over a fire, broil, grill, barbecue; cook over coals, roast.",
+    "segmentation": "icat + k"
+   },
+   {
+    "word": "rariisk",
+    "entry_id": "SK-rariisk-p137-2708",
+    "parks_page": 137,
+    "class": "VT",
+    "gloss": "mix, mix together; mix in.",
+    "segmentation": "rariis + k"
+   },
+   {
+    "word": "tapiitk",
+    "entry_id": "SK-tapiitk-p159-3103",
+    "parks_page": 159,
+    "class": "VT",
+    "gloss": "pinch.",
+    "segmentation": "tapic + k"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.137",
+   "Parks p.159",
+   "Parks p.43",
+   "Parks p.55"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 68
+ },
+ {
+  "affix": "LOC -ru",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "LOC",
+  "frequency": 4,
+  "examples": [
+   {
+    "word": "Riihitawiru",
+    "entry_id": "SK-riihitawiru-p141-2796",
+    "parks_page": 141,
+    "class": "N",
+    "gloss": "Ponca City, Okla.",
+    "segmentation": "riihita + wi + ru",
+    "blue_book": {
+     "form": "Rihita-wiru",
+     "lesson": 13,
+     "page": 87
+    }
+   },
+   {
+    "word": "Kirikuurukstu",
+    "entry_id": "SK-kirikuurukstu-p97-1864",
+    "parks_page": 97,
+    "class": "N",
+    "gloss": "Anadarko, Okla.",
+    "segmentation": "kirik + kuruks + ru"
+   },
+   {
+    "word": "Pasuuhararu",
+    "entry_id": "SK-pasuuhararu-p111-2148",
+    "parks_page": 111,
+    "class": "N",
+    "gloss": "Red Rock, Okla.",
+    "segmentation": "pasuuhara + ru"
+   },
+   {
+    "word": "Uwaahawiru",
+    "entry_id": "SK-uwaahawiru-p173-3439",
+    "parks_page": 173,
+    "class": "N",
+    "gloss": "Omaha, Nebr.",
+    "segmentation": "uwaaha + wi + ru"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.111",
+   "Parks p.141",
+   "Parks p.173",
+   "Parks p.97"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 69
+ },
+ {
+  "affix": "ABS ra-",
+  "category": "prefix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "ABS",
+  "frequency": 4,
+  "examples": [
+   {
+    "word": "raahku",
+    "entry_id": "SK-raahku-p117-2284",
+    "parks_page": 117,
+    "class": "DEM",
+    "gloss": "the one over there.",
+    "segmentation": "ra + ah + kus"
+   },
+   {
+    "word": "raahtaku",
+    "entry_id": "SK-raahtaku-p117-2286",
+    "parks_page": 117,
+    "class": "ADV",
+    "gloss": "over there.",
+    "segmentation": "ra + ar + taku"
+   },
+   {
+    "word": "Rakiiraruhuuturuuhat",
+    "entry_id": "SK-rakiiraruhuuturuuhat-p134-2640",
+    "parks_page": 134,
+    "class": "N",
+    "gloss": "Milky Way.",
+    "segmentation": "ra + kiiraruhuutur + u + hak"
+   },
+   {
+    "word": "ruuraahtaku",
+    "entry_id": "SK-ruuraahtaku-p150-2915",
+    "parks_page": 150,
+    "class": "ADV",
+    "gloss": "way over there, over there in the distance.",
+    "segmentation": "ruu + ra + ar + taku"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.117",
+   "Parks p.134",
+   "Parks p.150"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 70
+ },
+ {
+  "affix": "AUG -kusuʔ (ending match, no etymology)",
+  "category": "suffix",
+  "slot": "noun derivation (Parks Table 5, p.31)",
+  "meaning": "AUG -kusuʔ",
+  "frequency": 4,
+  "examples": [
+   {
+    "word": "cktiskakusuʔ",
+    "entry_id": "BB-cktiskakusu-0003",
+    "parks_page": null,
+    "class": "N",
+    "gloss": "chair",
+    "segmentation": "",
+    "blue_book": {
+     "form": "tsktis•kakusu'",
+     "lesson": 8,
+     "page": 69
+    }
+   },
+   {
+    "word": "rareka.kusuʔ",
+    "entry_id": "BB-rareka-kusu-0057",
+    "parks_page": null,
+    "class": "N",
+    "gloss": "door",
+    "segmentation": "",
+    "blue_book": {
+     "form": "ra•reka .kusu'",
+     "lesson": 8,
+     "page": 69
+    }
+   },
+   {
+    "word": "reka.kusuʔ",
+    "entry_id": "BB-reka-kusu-0062",
+    "parks_page": null,
+    "class": "N",
+    "gloss": "door",
+    "segmentation": "",
+    "blue_book": {
+     "form": "reka .kusu'",
+     "lesson": 8,
+     "page": 69
+    }
+   },
+   {
+    "word": "asataatkatakusuʔ",
+    "entry_id": "SK-asataatkatakusuq-p363-3761",
+    "parks_page": 363,
+    "class": "N",
+    "gloss": "saddle blanket.",
+    "segmentation": ""
+   }
+  ],
+  "sources": [
+   "headword ending only; Parks gives no etymology",
+   "Parks p.363"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "segmentation by ending match, not confirmed by Parks etymology"
+  ],
+  "rank": 71
+ },
+ {
+  "affix": "LOC -kat (ending match, no etymology)",
+  "category": "suffix",
+  "slot": "noun derivation (Parks Table 5, p.31)",
+  "meaning": "LOC -kat",
+  "frequency": 4,
+  "examples": [
+   {
+    "word": "hackat",
+    "entry_id": "BB-hackat-0009",
+    "parks_page": null,
+    "class": "N",
+    "gloss": "West",
+    "segmentation": "",
+    "blue_book": {
+     "form": "Hatskat",
+     "lesson": 9,
+     "page": 73
+    }
+   },
+   {
+    "word": "rikatiharrikarikat",
+    "entry_id": "BB-rikatiharrikarikat-0071",
+    "parks_page": null,
+    "class": "N",
+    "gloss": "Half Year",
+    "segmentation": "",
+    "blue_book": {
+     "form": "Ri•katihar•rikarikat",
+     "lesson": 19,
+     "page": 109
+    }
+   },
+   {
+    "word": "skurihkat",
+    "entry_id": "BB-skurihkat-0079",
+    "parks_page": null,
+    "class": "N",
+    "gloss": "\"school grounds,\" the tribal offices",
+    "segmentation": "",
+    "blue_book": {
+     "form": "skurihkat",
+     "lesson": 13,
+     "page": 85
+    }
+   },
+   {
+    "word": "ratkahaarikarikat",
+    "entry_id": "SK-ratkahaarikarikat-p139-2746",
+    "parks_page": 139,
+    "class": "N, ADV",
+    "gloss": "midnight, middle of the night.",
+    "segmentation": ""
+   }
+  ],
+  "sources": [
+   "headword ending only; Parks gives no etymology",
+   "Parks p.139"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "segmentation by ending match, not confirmed by Parks etymology"
+  ],
+  "rank": 72
+ },
+ {
+  "affix": "DIST -ik",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "DIST",
+  "frequency": 3,
+  "examples": [
+   {
+    "word": "atkiisik",
+    "entry_id": "SK-atkiisik-p19-0248",
+    "parks_page": 19,
+    "class": "VD",
+    "gloss": "be able to hear; hear well.",
+    "segmentation": "atkiis + ik"
+   },
+   {
+    "word": "wakuhkiisik",
+    "entry_id": "SK-wakuhkiisik-p176-3482",
+    "parks_page": 176,
+    "class": "VD",
+    "gloss": "brag, boast.",
+    "segmentation": "wakur + kiis + ik"
+   },
+   {
+    "word": "uuskiicik",
+    "entry_id": "SK-uuskiicik-p173-3424",
+    "parks_page": 173,
+    "class": "VD",
+    "gloss": "be long-haired, shaggy.",
+    "segmentation": "uus + kiiʔac + ik"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.173",
+   "Parks p.176",
+   "Parks p.19"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 73
+ },
+ {
+  "affix": "DIST -rik",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "DIST",
+  "frequency": 3,
+  "examples": [
+   {
+    "word": "cikstit",
+    "entry_id": "SK-cikstit-p29-0447",
+    "parks_page": 29,
+    "class": "ADV",
+    "gloss": "fine; in a good way, manner.",
+    "segmentation": "aciks + rik"
+   },
+   {
+    "word": "kickirarik",
+    "entry_id": "SK-kickirarik-p87-1635",
+    "parks_page": 87,
+    "class": "VI",
+    "gloss": "be clear water; water to be clear.",
+    "segmentation": "kic + kiraar + rik"
+   },
+   {
+    "word": "parihik",
+    "entry_id": "SK-parihik-p110-2132",
+    "parks_page": 110,
+    "class": "VI",
+    "gloss": "be sleek, smooth; be handsome, splendid, as a well-proportioned person or object .",
+    "segmentation": "ruu + i + parit + rik"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.110",
+   "Parks p.29",
+   "Parks p.87"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 74
+ },
+ {
+  "affix": "INTR -ak",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "INTR",
+  "frequency": 3,
+  "examples": [
+   {
+    "word": "icakawatak",
+    "entry_id": "SK-icakawatak-p54-0921",
+    "parks_page": 54,
+    "class": "VI",
+    "gloss": "peel off, as bark.",
+    "segmentation": "ica + kawat + ak"
+   },
+   {
+    "word": "kiwatak",
+    "entry_id": "SK-kiwatak-p448-3979",
+    "parks_page": 448,
+    "class": "VI",
+    "gloss": "fade, turn pale, as from green to brown; bleach, blanch.",
+    "segmentation": "kiwat + ak"
+   },
+   {
+    "word": "kawatak",
+    "entry_id": "SK-kawatak-p83-1554",
+    "parks_page": 83,
+    "class": "VI",
+    "gloss": "get out, exit.",
+    "segmentation": "kawat + ak"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.448",
+   "Parks p.54",
+   "Parks p.83"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 75
+ },
+ {
+  "affix": "ACT -u",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "ACT",
+  "frequency": 3,
+  "examples": [
+   {
+    "word": "ickaʔu",
+    "entry_id": "SK-ickaqu-p57-0974",
+    "parks_page": 57,
+    "class": "VI",
+    "gloss": "be pointed, sharp.",
+    "segmentation": "icka + u"
+   },
+   {
+    "word": "kicaʔu",
+    "entry_id": "SK-kicaqu-p84-1570",
+    "parks_page": 84,
+    "class": "VI",
+    "gloss": "be cute, dainty, delicate, as something small and pretty ; be tiny.",
+    "segmentation": "kica + u"
+   },
+   {
+    "word": "hiikaʔu",
+    "entry_id": "SK-hiikaqu-p389-3825",
+    "parks_page": 389,
+    "class": "VI",
+    "gloss": "be clean.",
+    "segmentation": "hiika + u"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.389",
+   "Parks p.57",
+   "Parks p.84"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 76
+ },
+ {
+  "affix": "AUG -kucuu",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "AUG",
+  "frequency": 3,
+  "examples": [
+   {
+    "word": "kiictikucuuʔ",
+    "entry_id": "SK-kiictikucuuq-p89-1676",
+    "parks_page": 89,
+    "class": "ADV",
+    "gloss": "far off, far away, a far distance away, a long way off.",
+    "segmentation": "kiictik + kucuu"
+   },
+   {
+    "word": "rakaraakucuuʔ",
+    "entry_id": "SK-rakaraakucuuq-p134-2617",
+    "parks_page": 134,
+    "class": "N",
+    "gloss": "dishpan.",
+    "segmentation": "rakaraa + kucuu"
+   },
+   {
+    "word": "wiskucuuʔ",
+    "entry_id": "SK-wiskucuuq-p181-3559",
+    "parks_page": 181,
+    "class": "INTERJ",
+    "gloss": "hurry! hurry up! be quick!",
+    "segmentation": "wis + kucuu"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.134",
+   "Parks p.181",
+   "Parks p.89"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 77
+ },
+ {
+  "affix": "INSTR -hiriʔ",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "INSTR",
+  "frequency": 3,
+  "examples": [
+   {
+    "word": "apaahiriʔ",
+    "entry_id": "SK-apaahiriq-p360-3684",
+    "parks_page": 360,
+    "class": "ADV",
+    "gloss": "furtively, stealthily, surreptitiously.",
+    "segmentation": "apaar + hiriʔ"
+   },
+   {
+    "word": "kskiitiksiriʔ",
+    "entry_id": "SK-kskiitiksiriq-p101-1940",
+    "parks_page": 101,
+    "class": "ADV",
+    "gloss": "four times.",
+    "segmentation": "kskiitiʔiks + hiriʔ"
+   },
+   {
+    "word": "tawihkihiriʔ",
+    "entry_id": "SK-tawihkihiriq-p163-3206",
+    "parks_page": 163,
+    "class": "ADV",
+    "gloss": "thrice, three times.",
+    "segmentation": "tawihki + hiriʔ"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.101",
+   "Parks p.163",
+   "Parks p.360"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 78
+ },
+ {
+  "affix": "INTS ruu-",
+  "category": "prefix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "INTS",
+  "frequency": 3,
+  "examples": [
+   {
+    "word": "parihik",
+    "entry_id": "SK-parihik-p110-2132",
+    "parks_page": 110,
+    "class": "VI",
+    "gloss": "be sleek, smooth; be handsome, splendid, as a well-proportioned person or object .",
+    "segmentation": "ruu + i + parit + rik"
+   },
+   {
+    "word": "raaʔiitusuu",
+    "entry_id": "SK-raaqiitusuu-p115-2243",
+    "parks_page": 115,
+    "class": "VI",
+    "gloss": "be a story; be the way a story is, the way a story goes.",
+    "segmentation": "ruu + i + raaʔiitus + uu"
+   },
+   {
+    "word": "awihurah",
+    "entry_id": "SK-awihurah-p370-3793",
+    "parks_page": 370,
+    "class": "VL",
+    "gloss": "be short, as a midget.",
+    "segmentation": "ruu + i + awi + hurah"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.110",
+   "Parks p.115",
+   "Parks p.370"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 79
+ },
+ {
+  "affix": "ACT -aʔu",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "ACT",
+  "frequency": 3,
+  "examples": [
+   {
+    "word": "raraasitaʔu",
+    "entry_id": "SK-raraasitaqu-p136-2680",
+    "parks_page": 136,
+    "class": "VI",
+    "gloss": "be cold ; ref. to an inan. object .",
+    "segmentation": "raraasit + aʔu"
+   },
+   {
+    "word": "tawakaʔu",
+    "entry_id": "SK-tawakaqu-p162-3182",
+    "parks_page": 162,
+    "class": "VI",
+    "gloss": "rustle, crinkle, make a soft crackle, as paper being wadded; rattle, as a gourd rattle.",
+    "segmentation": "ta + wak + aʔu"
+   },
+   {
+    "word": "wakaʔu",
+    "entry_id": "SK-wakaqu-p175-3463",
+    "parks_page": 175,
+    "class": "VI, VT",
+    "gloss": "say.",
+    "segmentation": "wak + aʔu"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.136",
+   "Parks p.162",
+   "Parks p.175"
+  ],
+  "confidence": "high",
+  "confidence_reasons": [],
+  "rank": 80
+ },
+ {
+  "affix": "PERF his-",
+  "category": "affix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "PERF",
+  "frequency": 2,
+  "examples": [
+   {
+    "word": "kaawiriwisisuʔ",
+    "entry_id": "SK-kaawiriwisisuq-p75-1348",
+    "parks_page": 75,
+    "class": "N",
+    "gloss": "partition; partitioning wall.",
+    "segmentation": "kaawiriwis + his + uʔ"
+   },
+   {
+    "word": "awaahaksuʔ",
+    "entry_id": "SK-awaahaksuq-p20-0256",
+    "parks_page": 20,
+    "class": "N",
+    "gloss": "Heavens; sky.",
+    "segmentation": "a + waa + hak + his + uʔ"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.20",
+   "Parks p.75"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 81
+ },
+ {
+  "affix": "PERF + NOM -uʔ",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "PERF + NOM",
+  "frequency": 2,
+  "examples": [
+   {
+    "word": "awiʔiirisuʔ",
+    "entry_id": "SK-awiqiirisuq-p21-0289",
+    "parks_page": 21,
+    "class": "N",
+    "gloss": "weight .",
+    "segmentation": "awiʔiir + his + uʔ"
+   },
+   {
+    "word": "raatuksuʔ",
+    "entry_id": "SK-raatuksuq-p125-2459",
+    "parks_page": 125,
+    "class": "N",
+    "gloss": "sickness, illness; ailment; disease.",
+    "segmentation": "raa + taʔuk + his + uʔ"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.125",
+   "Parks p.21"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 82
+ },
+ {
+  "affix": "PL/ITER raar-",
+  "category": "prefix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "PL/ITER",
+  "frequency": 2,
+  "examples": [
+   {
+    "word": "haakarahkuukuʔuʔ",
+    "entry_id": "SK-haakarahkuukuquq-p34-0572",
+    "parks_page": 34,
+    "class": "N",
+    "gloss": "bridle.",
+    "segmentation": "haaka + raar + kuuku + uʔ"
+   },
+   {
+    "word": "asaarahkuukuʔuʔ",
+    "entry_id": "SK-asaarahkuukuquq-p362-3746",
+    "parks_page": 362,
+    "class": "N",
+    "gloss": "harness.",
+    "segmentation": "asaa + raar + kuuku + uʔ"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.34",
+   "Parks p.362"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 83
+ },
+ {
+  "affix": "LOC -wi",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "LOC",
+  "frequency": 2,
+  "examples": [
+   {
+    "word": "hatawi-, ratawi-",
+    "entry_id": "SK-hatawi-,_ratawi--p38-0668",
+    "parks_page": 38,
+    "class": "N-DEP",
+    "gloss": "hole.",
+    "segmentation": "hata + wi"
+   },
+   {
+    "word": "ickawi-",
+    "entry_id": "SK-ickawi--p57-0991",
+    "parks_page": 57,
+    "class": "LOC",
+    "gloss": "facing.",
+    "segmentation": "icka + wi"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.38",
+   "Parks p.57"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 84
+ },
+ {
+  "affix": "EVID ar-",
+  "category": "prefix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "EVID",
+  "frequency": 2,
+  "examples": [
+   {
+    "word": "raahtaku",
+    "entry_id": "SK-raahtaku-p117-2286",
+    "parks_page": 117,
+    "class": "ADV",
+    "gloss": "over there.",
+    "segmentation": "ra + ar + taku"
+   },
+   {
+    "word": "ruuraahtaku",
+    "entry_id": "SK-ruuraahtaku-p150-2915",
+    "parks_page": 150,
+    "class": "ADV",
+    "gloss": "way over there, over there in the distance.",
+    "segmentation": "ruu + ra + ar + taku"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.117",
+   "Parks p.150"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 85
+ },
+ {
+  "affix": "PL raa-",
+  "category": "prefix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "PL",
+  "frequency": 2,
+  "examples": [
+   {
+    "word": "raakii",
+    "entry_id": "SK-raakii-p119-2322",
+    "parks_page": 119,
+    "class": "VD",
+    "gloss": "be strung, strung together, as on a line.",
+    "segmentation": "raa + kii"
+   },
+   {
+    "word": "raakiiraʔuk",
+    "entry_id": "SK-raakiiraquk-p119-2325",
+    "parks_page": 119,
+    "class": "VT",
+    "gloss": "string, as beads on a string.",
+    "segmentation": "raa + kii + raʔuk"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.119"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 86
+ },
+ {
+  "affix": "ITER ra-",
+  "category": "prefix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "ITER",
+  "frequency": 2,
+  "examples": [
+   {
+    "word": "raraarawarii",
+    "entry_id": "SK-raraarawarii-p136-2679",
+    "parks_page": 136,
+    "class": "N",
+    "gloss": "airplane.",
+    "segmentation": "ra + raar + a + warii"
+   },
+   {
+    "word": "rutaaktaarapitaahaku",
+    "entry_id": "SK-rutaaktaarapitaahaku-p148-2875",
+    "parks_page": 148,
+    "class": "N",
+    "gloss": "windmill.",
+    "segmentation": "ra + haak + raar + apitaa + hak + hus"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.136",
+   "Parks p.148"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 87
+ },
+ {
+  "affix": "DIST wa-",
+  "category": "prefix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "DIST",
+  "frequency": 2,
+  "examples": [
+   {
+    "word": "ruuwahuruu",
+    "entry_id": "SK-ruuwahuruu-p150-2929",
+    "parks_page": 150,
+    "class": "VT, VR",
+    "gloss": "dress, attire, outfit, as when putting a full set of clothes on a person or when ceremonially outfitting a person; assist in getting dressed.",
+    "segmentation": "ruu + wa + huruu"
+   },
+   {
+    "word": "wararuus",
+    "entry_id": "SK-wararuus-p177-3505",
+    "parks_page": 177,
+    "class": "VD",
+    "gloss": "be fuzzy, furry, as a peach or an animal that has short, stubbly fur; be stubbly.",
+    "segmentation": "wa + raaruus"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.150",
+   "Parks p.177"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 88
+ },
+ {
+  "affix": "ITER ut-",
+  "category": "prefix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "ITER",
+  "frequency": 2,
+  "examples": [
+   {
+    "word": "taawatatk",
+    "entry_id": "SK-taawatatk-p155-3019",
+    "parks_page": 155,
+    "class": "VT",
+    "gloss": "pile up, one on another; stack, stack up.",
+    "segmentation": "ut + taawat + ak + k"
+   },
+   {
+    "word": "waakuʔat",
+    "entry_id": "SK-waakuqat-p174-3445",
+    "parks_page": 174,
+    "class": "VT",
+    "gloss": "offer food in prayer to the deities; make a food offering, as when one raises food up in prayer to the deities.",
+    "segmentation": "ut + raar + waak + u + at"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.155",
+   "Parks p.174"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 89
+ },
+ {
+  "affix": "ITER tahuur-",
+  "category": "prefix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "ITER",
+  "frequency": 2,
+  "examples": [
+   {
+    "word": "tahuhkakatk",
+    "entry_id": "SK-tahuhkakatk-p156-3041",
+    "parks_page": 156,
+    "class": "VT",
+    "gloss": "thrash, beat severely, as when breaking someone's skin open with either a fist or club; bruise.",
+    "segmentation": "tahuur + ka + ukac + k"
+   },
+   {
+    "word": "tahurahcak",
+    "entry_id": "SK-tahurahcak-p156-3043",
+    "parks_page": 156,
+    "class": "VT",
+    "gloss": "beat a drum.",
+    "segmentation": "tahuur + raar + cak"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.156"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 90
+ },
+ {
+  "affix": "AOR/JUSS uks-",
+  "category": "prefix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "AOR/JUSS",
+  "frequency": 2,
+  "examples": [
+   {
+    "word": "tiirukcaakariki",
+    "entry_id": "SK-tiirukcaakariki-p165-3254",
+    "parks_page": 165,
+    "class": "N, ADV",
+    "gloss": "yesterday.",
+    "segmentation": "tii + ra + uks + saak + arik + i"
+   },
+   {
+    "word": "tiirukcaakata",
+    "entry_id": "SK-tiirukcaakata-p165-3255",
+    "parks_page": 165,
+    "class": "ADV",
+    "gloss": "yesterday.",
+    "segmentation": "tii + ra + uks + saak + at + a"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.165"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 91
+ },
+ {
+  "affix": "LOC/INST -riʔ",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "LOC/INST",
+  "frequency": 2,
+  "examples": [
+   {
+    "word": "aar iraariʔ",
+    "entry_id": "SK-aar_iraariq-p351-3600",
+    "parks_page": 351,
+    "class": "VI",
+    "gloss": "be close friends, companions, brothers; have as a brother, close friend.",
+    "segmentation": "ar i + raa + riʔ"
+   },
+   {
+    "word": "iwaahiʔ",
+    "entry_id": "SK-iwaahiq-p418-3921",
+    "parks_page": 418,
+    "class": "N",
+    "gloss": "his, her, their nephew; his, her, their niece.",
+    "segmentation": "i + waat + riʔ"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.351",
+   "Parks p.418"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 92
+ },
+ {
+  "affix": "PL + ITER raar-",
+  "category": "prefix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "PL + ITER",
+  "frequency": 2,
+  "examples": [
+   {
+    "word": "rahkacak",
+    "entry_id": "SK-rahkacak-p478-4125",
+    "parks_page": 478,
+    "class": "VT",
+    "gloss": "prick, punch holes in.",
+    "segmentation": "raar + ka + cak"
+   },
+   {
+    "word": "rahkakaʔus",
+    "entry_id": "SK-rahkakaqus-p478-4126",
+    "parks_page": 478,
+    "class": "VI, VP",
+    "gloss": "split, divide, separate, as into groups.",
+    "segmentation": "raar + ka + kaʔus"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.478"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 93
+ },
+ {
+  "affix": "DIM -kis (ending match, no etymology)",
+  "category": "suffix",
+  "slot": "noun derivation (Parks Table 5, p.31)",
+  "meaning": "DIM -kis",
+  "frequency": 2,
+  "examples": [
+   {
+    "word": "-rakis",
+    "entry_id": "SK--rakis-p135-2645",
+    "parks_page": 135,
+    "class": "N-KIN",
+    "gloss": "grandchild (only with 2nd person possessor).",
+    "segmentation": ""
+   },
+   {
+    "word": "iirikis",
+    "entry_id": "SK-iirikis-p408-3913",
+    "parks_page": 408,
+    "class": "N",
+    "gloss": "mouse (generic).",
+    "segmentation": ""
+   }
+  ],
+  "sources": [
+   "headword ending only; Parks gives no etymology",
+   "Parks p.135",
+   "Parks p.408"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "segmentation by ending match, not confirmed by Parks etymology"
+  ],
+  "rank": 94
+ },
+ {
+  "affix": "PORT -iir",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "PORT",
+  "frequency": 1,
+  "examples": [
+   {
+    "word": "awiraʔiir",
+    "entry_id": "SK-awiraqiir-p24-0325",
+    "parks_page": 24,
+    "class": "VT",
+    "gloss": "weigh, measure the weight of.",
+    "segmentation": "awi + ra + iir"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.24"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 95
+ },
+ {
+  "affix": "DIST -hus",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "DIST",
+  "frequency": 1,
+  "examples": [
+   {
+    "word": "ckataahisiku",
+    "entry_id": "SK-ckataahisiku-p30-0473",
+    "parks_page": 30,
+    "class": "N",
+    "gloss": "towel, face towel.",
+    "segmentation": "icka + taahis + ik + hus"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.30"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 96
+ },
+ {
+  "affix": "PREV ku-",
+  "category": "preverb",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "PREV",
+  "frequency": 1,
+  "examples": [
+   {
+    "word": "haa",
+    "entry_id": "SK-haa-p33-0546",
+    "parks_page": 33,
+    "class": "VD",
+    "gloss": "be one's child, one's offspring.",
+    "segmentation": ""
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.33"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 97
+ },
+ {
+  "affix": "ITER haarut-",
+  "category": "prefix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "ITER",
+  "frequency": 1,
+  "examples": [
+   {
+    "word": "haaruhaahkariipiiruʔ",
+    "entry_id": "SK-haaruhaahkariipiiruq-p36-0609",
+    "parks_page": 36,
+    "class": "N",
+    "gloss": "baling wire, as used for tying hay into bales.",
+    "segmentation": "haarut + raar + kariik + wi + ir + uʔ"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.36"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 98
+ },
+ {
+  "affix": "LOC.ADV -haa",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "LOC.ADV",
+  "frequency": 1,
+  "examples": [
+   {
+    "word": "irihaataku",
+    "entry_id": "SK-irihaataku-p65-1132",
+    "parks_page": 65,
+    "class": "ADV",
+    "gloss": "there, over there",
+    "segmentation": "iri + haa + taku"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.65"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 99
+ },
+ {
+  "affix": "TRANS -ik",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "TRANS",
+  "frequency": 1,
+  "examples": [
+   {
+    "word": "iriipacik",
+    "entry_id": "SK-iriipacik-p65-1138",
+    "parks_page": 65,
+    "class": "VT",
+    "gloss": "choke, choke to death.",
+    "segmentation": "uur + iriipac + ik"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.65"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 100
+ },
+ {
+  "affix": "PORT -ri",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "PORT",
+  "frequency": 1,
+  "examples": [
+   {
+    "word": "itkahaariwiitik",
+    "entry_id": "SK-itkahaariwiitik-p69-1228",
+    "parks_page": 69,
+    "class": "VI",
+    "gloss": "listen; overhear, as when one accidentally hears something; eavesdrop, as when listening to something not said to one; listen intently.",
+    "segmentation": "itkahaar + ri + wiitik"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.69"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 101
+ },
+ {
+  "affix": "TRANS -uhurik",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "TRANS",
+  "frequency": 1,
+  "examples": [
+   {
+    "word": "kahaaruhurik",
+    "entry_id": "SK-kahaaruhurik-p76-1375",
+    "parks_page": 76,
+    "class": "VT",
+    "gloss": "smell, take a smell of",
+    "segmentation": "kahaar + uhurik"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.76"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 102
+ },
+ {
+  "affix": "NEG kara-",
+  "category": "proclitic",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "NEG",
+  "frequency": 1,
+  "examples": [
+   {
+    "word": "Karariiwarii",
+    "entry_id": "SK-karariiwarii-p78-1418",
+    "parks_page": 78,
+    "class": "N",
+    "gloss": "North Star, Polaris.",
+    "segmentation": "kara + rii + warii"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.78"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 103
+ },
+ {
+  "affix": "ITER kii-",
+  "category": "prefix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "ITER",
+  "frequency": 1,
+  "examples": [
+   {
+    "word": "kiikaraʔuk",
+    "entry_id": "SK-kiikaraquk-p90-1695",
+    "parks_page": 90,
+    "class": "VT",
+    "gloss": "string together, braid, as ears of corn.",
+    "segmentation": "kii + ka + raʔuk"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.90"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 104
+ },
+ {
+  "affix": "DIST -kaʔuk",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "DIST",
+  "frequency": 1,
+  "examples": [
+   {
+    "word": "kiiskaʔuk",
+    "entry_id": "SK-kiiskaquk-p92-1728",
+    "parks_page": 92,
+    "class": "VD",
+    "gloss": "be lively, animated, spirited, as dancers.",
+    "segmentation": "kiis + kaʔuk"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.92"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 105
+ },
+ {
+  "affix": "INDF -kuʔ",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "INDF",
+  "frequency": 1,
+  "examples": [
+   {
+    "word": "kirikuʔ",
+    "entry_id": "SK-kirikuq-p97-1860",
+    "parks_page": 97,
+    "class": "PRON",
+    "gloss": "anything.",
+    "segmentation": "kirikii + kuʔ"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.97"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 106
+ },
+ {
+  "affix": "TRANS -kii",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "TRANS",
+  "frequency": 1,
+  "examples": [
+   {
+    "word": "kiriwiskii",
+    "entry_id": "SK-kiriwiskii-p97-1876",
+    "parks_page": 97,
+    "class": "VT",
+    "gloss": "cheat, swindle; deceive, trick, dupe.",
+    "segmentation": "kiriwis + kii"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.97"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 107
+ },
+ {
+  "affix": "PL/ITER + NOM -uʔ",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "PL/ITER + NOM",
+  "frequency": 1,
+  "examples": [
+   {
+    "word": "pakaraaruʔ",
+    "entry_id": "SK-pakaraaruq-p108-2073",
+    "parks_page": 108,
+    "class": "N",
+    "gloss": "speech, talk.",
+    "segmentation": "waka + raar + uʔ"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.108"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 108
+ },
+ {
+  "affix": "EVID ah-",
+  "category": "prefix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "EVID",
+  "frequency": 1,
+  "examples": [
+   {
+    "word": "raahku",
+    "entry_id": "SK-raahku-p117-2284",
+    "parks_page": 117,
+    "class": "DEM",
+    "gloss": "the one over there.",
+    "segmentation": "ra + ah + kus"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.117"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 109
+ },
+ {
+  "affix": "PL -wuh",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "PL",
+  "frequency": 1,
+  "examples": [
+   {
+    "word": "racakipuh",
+    "entry_id": "SK-racakipuh-p129-2539",
+    "parks_page": 129,
+    "class": "VT",
+    "gloss": "gather, gather up, gather together, as vegetables, clothes.",
+    "segmentation": "raar + takik + wuh"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.129"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 110
+ },
+ {
+  "affix": "PL kariik-",
+  "category": "affix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "PL",
+  "frequency": 1,
+  "examples": [
+   {
+    "word": "rahkariipuh",
+    "entry_id": "SK-rahkariipuh-p131-2549",
+    "parks_page": 131,
+    "class": "VT",
+    "gloss": "tie up a bundle, tie into a bundle.",
+    "segmentation": "raar + kariik + wuh"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.131"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 111
+ },
+ {
+  "affix": "ITER rariir-",
+  "category": "prefix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "ITER",
+  "frequency": 1,
+  "examples": [
+   {
+    "word": "rariihkaraʔuk",
+    "entry_id": "SK-rariihkaraquk-p136-2692",
+    "parks_page": 136,
+    "class": "VT, VI",
+    "gloss": "write; print.",
+    "segmentation": "rariir + ka + raʔuk"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.136"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 112
+ },
+ {
+  "affix": "DIST -uk",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "DIST",
+  "frequency": 1,
+  "examples": [
+   {
+    "word": "rariiwaatuksuʔ",
+    "entry_id": "SK-rariiwaatuksuq-p137-2709",
+    "parks_page": 137,
+    "class": "N",
+    "gloss": "onlookers, spectators; sightseers.",
+    "segmentation": "raar + riiwaat + uk + his + uʔ"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.137"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 113
+ },
+ {
+  "affix": "PL DIST -waa",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "PL DIST",
+  "frequency": 1,
+  "examples": [
+   {
+    "word": "ruucpaa",
+    "entry_id": "SK-ruucpaa-p149-2890",
+    "parks_page": 149,
+    "class": "VL",
+    "gloss": "be piles here and there.",
+    "segmentation": "ruuc + waa"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.149"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 114
+ },
+ {
+  "affix": "PORT -ra",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "PORT",
+  "frequency": 1,
+  "examples": [
+   {
+    "word": "takaarahak",
+    "entry_id": "SK-takaarahak-p157-3062",
+    "parks_page": 157,
+    "class": "VT",
+    "gloss": "drop down, drop.",
+    "segmentation": "takaa + ra + hak"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.157"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 115
+ },
+ {
+  "affix": "PL -taraa",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "PL",
+  "frequency": 1,
+  "examples": [
+   {
+    "word": "tiraaktacaraaʔ",
+    "entry_id": "SK-tiraaktacaraaq-p166-3270",
+    "parks_page": 166,
+    "class": "N",
+    "gloss": "double-barreled shotgun.",
+    "segmentation": "tiraak + raar + taraa"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.166"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 116
+ },
+ {
+  "affix": "DIST -k",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "DIST",
+  "frequency": 1,
+  "examples": [
+   {
+    "word": "uhuhtaʔuk",
+    "entry_id": "SK-uhuhtaquk-p168-3317",
+    "parks_page": 168,
+    "class": "VD",
+    "gloss": "act spitefully, hatefully; be hateful, spiteful.",
+    "segmentation": "uhuur + taʔu + k"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.168"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 117
+ },
+ {
+  "affix": "DIST -wuh",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "DIST",
+  "frequency": 1,
+  "examples": [
+   {
+    "word": "waawuh",
+    "entry_id": "SK-waawuh-p175-3460",
+    "parks_page": 175,
+    "class": "VT",
+    "gloss": "plant, set out, as growing plants.",
+    "segmentation": "waa + wuh"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.175"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 118
+ },
+ {
+  "affix": "TRANS -u",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "TRANS",
+  "frequency": 1,
+  "examples": [
+   {
+    "word": "wakaʔu",
+    "entry_id": "SK-wakaqu-p175-3464",
+    "parks_page": 175,
+    "class": "VT",
+    "gloss": "speak, as a language.",
+    "segmentation": "waka + u"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.175"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 119
+ },
+ {
+  "affix": "REFL witi-",
+  "category": "proclitic",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "REFL",
+  "frequency": 1,
+  "examples": [
+   {
+    "word": "Witiʔahuuhaʔu Piiraʔuʔ",
+    "entry_id": "SK-witiqahuuhaqu_piiraquq-p181-3565",
+    "parks_page": 181,
+    "class": "N",
+    "gloss": "Jesus.",
+    "segmentation": "witi + ar + ra + ut + raʔuk + piira + uʔ",
+    "blue_book": {
+     "form": "witi",
+     "lesson": 14,
+     "page": 94
+    }
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.181"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 120
+ },
+ {
+  "affix": "POSS ir-",
+  "category": "preverb",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "POSS",
+  "frequency": 1,
+  "examples": [
+   {
+    "word": "Ø",
+    "entry_id": "SK-ø-p349-3569",
+    "parks_page": 349,
+    "class": "VD",
+    "gloss": "be one's possession, have as one's.",
+    "segmentation": "ku + ir + Ø"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.349"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 121
+ },
+ {
+  "affix": "IMPF/NOM -hus/uʔ",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "IMPF/NOM",
+  "frequency": 1,
+  "examples": [
+   {
+    "word": "hiiraarukaʔiituʔ, hiiraarukaʔiitus",
+    "entry_id": "SK-hiiraarukaqiituq,_hiiraarukaqi-p389-3837",
+    "parks_page": 389,
+    "class": "N",
+    "gloss": "hayrack.",
+    "segmentation": "hiir + raar + huka + iit + hus/uʔ"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.389"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 122
+ },
+ {
+  "affix": "LOC.ADV haa-",
+  "category": "affix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "LOC.ADV",
+  "frequency": 1,
+  "examples": [
+   {
+    "word": "iihaataku",
+    "entry_id": "SK-iihaataku-p408-3896",
+    "parks_page": 408,
+    "class": "ADV",
+    "gloss": "there, over there.",
+    "segmentation": "ii + haa + taku"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.408"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 123
+ },
+ {
+  "affix": "PORT -hak",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "PORT",
+  "frequency": 1,
+  "examples": [
+   {
+    "word": "taakarahak",
+    "entry_id": "SK-taakarahak-p502-4237",
+    "parks_page": 502,
+    "class": "VT",
+    "gloss": "encircle, surround.",
+    "segmentation": "taaka + ra + hak"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.502"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 124
+ },
+ {
+  "affix": "ITER taakas-",
+  "category": "prefix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "ITER",
+  "frequency": 1,
+  "examples": [
+   {
+    "word": "taakaskaraʔuk",
+    "entry_id": "SK-taakaskaraquk-p502-4239",
+    "parks_page": 502,
+    "class": "VT",
+    "gloss": "make dried meat, prepare dried meat.",
+    "segmentation": "taakas + ka + raʔuk"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.502"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 125
+ },
+ {
+  "affix": "PORT -ruu",
+  "category": "suffix",
+  "slot": "stem / derivation (Parks Tables 5, 15; p.31, 44)",
+  "meaning": "PORT",
+  "frequency": 1,
+  "examples": [
+   {
+    "word": "wiruu-, piruu-",
+    "entry_id": "SK-wiruu-,_piruu--p528-4268",
+    "parks_page": 528,
+    "class": "LOC",
+    "gloss": "sweeping, brushing, raking motion.",
+    "segmentation": "wi + ruu"
+   }
+  ],
+  "sources": [
+   "Parks etymology (constituent_elements)",
+   "Parks p.528"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "fewer than 3 attesting words"
+  ],
+  "rank": 126
+ },
+ {
+  "affix": "LOC/INST -hiriʔ (ending match, no etymology)",
+  "category": "suffix",
+  "slot": "noun derivation (Parks Table 5, p.31)",
+  "meaning": "LOC/INST -hiriʔ",
+  "frequency": 1,
+  "examples": [
+   {
+    "word": "asikitahaahiriʔ",
+    "entry_id": "SK-asikitahaahiriq-p363-3772",
+    "parks_page": 363,
+    "class": "N",
+    "gloss": "instep of the foot, top of the middle part of the foot.",
+    "segmentation": ""
+   }
+  ],
+  "sources": [
+   "headword ending only; Parks gives no etymology",
+   "Parks p.363"
+  ],
+  "confidence": "medium",
+  "confidence_reasons": [
+   "segmentation by ending match, not confirmed by Parks etymology"
+  ],
+  "rank": 127
+ }
+]

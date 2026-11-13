@@ -1,0 +1,326 @@
+[
+ {
+  "underlying": "raak",
+  "variant": "rak",
+  "rule": "V-length",
+  "note": "short vowel lengthened (no engine rule)",
+  "shared_gloss": [
+   "tree",
+   "wood"
+  ],
+  "variant_words": [
+   "Raktaraaʔiwariihus",
+   "arakis",
+   "kiihaarakatuusuʔ",
+   "raakickuʔ",
+   "rakaapit"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "underlying": "paaks",
+  "variant": "paks",
+  "rule": "V-length",
+  "note": "short vowel lengthened (no engine rule)",
+  "shared_gloss": [
+   "head"
+  ],
+  "variant_words": [
+   "Pakskiciis Iriirarahkaawi",
+   "Ruuhaahpakskatariipi",
+   "asaapakspahat",
+   "haspaaksuʔ",
+   "icataapakskucuuʔ"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "underlying": "kiriik",
+  "variant": "kirik",
+  "rule": "V-length",
+  "note": "short vowel lengthened (no engine rule)",
+  "shared_gloss": [
+   "eye"
+  ],
+  "variant_words": [
+   "Kiriktahwasiiʔ",
+   "Kirikuruks",
+   "Kirikuurukstu",
+   "Kiripasiiʔ",
+   "askiriktaaʔuʔ"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "underlying": "haa",
+  "variant": "ha",
+  "rule": "V-length",
+  "note": "short vowel lengthened (no engine rule)",
+  "shared_gloss": [
+   "in water",
+   "water"
+  ],
+  "variant_words": [
+   "Ckiriraara",
+   "awihaʔuukuk",
+   "caapihasa",
+   "haarik",
+   "hakus"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "underlying": "kaatiit",
+  "variant": "katiit",
+  "rule": "V-length",
+  "note": "long vowel shortened (no engine rule)",
+  "shared_gloss": [
+   "black",
+   "dark"
+  ],
+  "variant_words": [
+   "Asuhkatiit",
+   "acikskatiit",
+   "akahkatiit",
+   "arasiskatiit",
+   "atiiktiwaackatiit"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "underlying": "haas",
+  "variant": "has",
+  "rule": "V-length",
+  "note": "short vowel lengthened (no engine rule)",
+  "shared_gloss": [
+   "string"
+  ],
+  "variant_words": [
+   "haakasuʔ",
+   "hasickariituʔ",
+   "haskaatiit",
+   "haskararikaaksuʔ",
+   "haski"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "underlying": "icaa",
+  "variant": "ica",
+  "rule": "V-length",
+  "note": "short vowel lengthened (no engine rule)",
+  "shared_gloss": [
+   "on the end"
+  ],
+  "variant_words": [
+   "awiica-",
+   "cawihaaruʔ",
+   "huuwiica-",
+   "icakaraʔuk",
+   "icakawat"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "underlying": "wiir",
+  "variant": "piir",
+  "rule": "w>p",
+  "note": "w -> p after obstruent (stem_extractor ut+w junction)",
+  "shared_gloss": [
+   "arm"
+  ],
+  "variant_words": [
+   "rahkasiipiiruʔ"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "underlying": "kuuc",
+  "variant": "kuc",
+  "rule": "V-length",
+  "note": "short vowel lengthened (no engine rule)",
+  "shared_gloss": [
+   "vessel"
+  ],
+  "variant_words": [
+   "kuckaritki",
+   "kuckaruusuʔ",
+   "kuckictahkata",
+   "kuckiicuʔ",
+   "kuckiraaʔ"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "underlying": "araas",
+  "variant": "aras",
+  "rule": "V-length",
+  "note": "short vowel lengthened (no engine rule)",
+  "shared_gloss": [
+   "cooked"
+  ],
+  "variant_words": [
+   "arasik",
+   "arasiskatiit",
+   "arasispahaat",
+   "arasistariiʔuus",
+   "arastarariituʔ"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "underlying": "hii",
+  "variant": "hi",
+  "rule": "V-length",
+  "note": "long vowel shortened (no engine rule)",
+  "shared_gloss": [
+   "and"
+  ],
+  "variant_words": [
+   "hici"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "underlying": "raak",
+  "variant": "haak",
+  "rule": "r>h",
+  "note": "r -> h (morpheme_inventory r->h before high vowel)",
+  "shared_gloss": [
+   "wood"
+  ],
+  "variant_words": [
+   "Ruuhkarihaapi",
+   "haakacak",
+   "haakahuruus",
+   "haakasar",
+   "haakasuʔ"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "underlying": "uuc",
+  "variant": "uc",
+  "rule": "V-length",
+  "note": "long vowel shortened (no engine rule)",
+  "shared_gloss": [
+   "lay"
+  ],
+  "variant_words": [
+   "hiitkitaʔuuc/uc-",
+   "ickuracaʔuuc/uc-"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "underlying": "warus",
+  "variant": "parus",
+  "rule": "w>p",
+  "note": "w -> p after obstruent (stem_extractor ut+w junction)",
+  "shared_gloss": [
+   "rabbit"
+  ],
+  "variant_words": [
+   "parusatkahaaruʔ"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "underlying": "askus",
+  "variant": "asku",
+  "rule": "9R",
+  "note": "final s loss",
+  "shared_gloss": [
+   "one"
+  ],
+  "variant_words": [
+   "askuhuuruʔ",
+   "askuraaʔuʔ"
+  ],
+  "confidence": "high"
+ },
+ {
+  "underlying": "raaruus",
+  "variant": "raruus",
+  "rule": "V-length",
+  "note": "long vowel shortened (no engine rule)",
+  "shared_gloss": [
+   "hairy"
+  ],
+  "variant_words": [
+   "haakararuus",
+   "ickawararuus",
+   "kitapaharuus",
+   "piirustaruus",
+   "tapaharuus"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "underlying": "raaruus",
+  "variant": "raarus",
+  "rule": "V-length",
+  "note": "long vowel shortened (no engine rule)",
+  "shared_gloss": [
+   "hairy"
+  ],
+  "variant_words": [
+   "ckitapiiraruus",
+   "raarusuʔ"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "underlying": "kuriit",
+  "variant": "kurit",
+  "rule": "V-length",
+  "note": "long vowel shortened (no engine rule)",
+  "shared_gloss": [
+   "blaze"
+  ],
+  "variant_words": [
+   "kurituukatawiʔuʔ",
+   "rakuriʔit"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "underlying": "kiraawaahc",
+  "variant": "kirawaahc",
+  "rule": "V-length",
+  "note": "long vowel shortened (no engine rule)",
+  "shared_gloss": [
+   "sick"
+  ],
+  "variant_words": [
+   "akahkirawaʔac"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "underlying": "paariik",
+  "variant": "paarik",
+  "rule": "V-length",
+  "note": "long vowel shortened (no engine rule)",
+  "shared_gloss": [
+   "horn"
+  ],
+  "variant_words": [
+   "paarikucuuʔ"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "underlying": "rarahuur",
+  "variant": "rarahur",
+  "rule": "V-length",
+  "note": "short vowel lengthened (no engine rule)",
+  "shared_gloss": [
+   "bundle"
+  ],
+  "variant_words": [
+   "hiirarahuuruʔ"
+  ],
+  "confidence": "medium"
+ }
+]

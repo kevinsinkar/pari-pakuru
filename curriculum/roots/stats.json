@@ -1,0 +1,22 @@
+{
+ "entries": 4343,
+ "roots": 1320,
+ "affixes": 127,
+ "variant_merges": 21,
+ "confidence": {
+  "low": 1683,
+  "medium": 1575,
+  "high": 1085
+ },
+ "methods": {
+  "no_etymology": 1016,
+  "unlocated": 647,
+  "glottal_epenthesis": 239,
+  "concatenation": 1184,
+  "engine_tolerant": 450,
+  "engine": 285,
+  "located": 336,
+  "located_tolerant": 160,
+  "glottal_epenthesis+engine": 26
+ }
+}

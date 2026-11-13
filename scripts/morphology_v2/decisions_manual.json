@@ -1,0 +1,251 @@
+[
+ {
+  "type": "role_default",
+  "form": "raar",
+  "role": "grammatical",
+  "label": "PL/ITER",
+  "evidence": "Parks, Grammatical Overview p.44 Table 15 slot 1 (raar-, ka- ITER) and p.30 Table 4 (-raar- PL on body-part nouns). Parks himself labels raar as PL, ITER or PL/ITER in 68 etymologies; where he prints no label the piece is counted as the same affix. An occurrence with its own lexical gloss in the literal translation stays lexical. Where the literal translation names a sibling or 'planted', the piece is a lexical homonym and is left lexical.",
+  "unless_literal_has": [
+   "sibling",
+   "brother",
+   "sister",
+   "planted"
+  ]
+ },
+ {
+  "type": "role_default",
+  "form": "ra",
+  "role": "grammatical",
+  "label_by_class": {
+   "N": "ABS",
+   "V": "PORT",
+   "other": "ABS/PORT"
+  },
+  "label": "ABS/PORT",
+  "evidence": "Two affixes share this shape. In verb stems ra- is the portative (Parks GO p.44 Table 15 slot 4: ri-, ra-, ruu- PORT; literal translations use 'take', 'carry', 'holding'). In nouns built on a verb (ra+caaka.wi+hus 'the one that sticks out') it is the absolutive mode prefix (GO p.34 Table 8 ra- ABS). The label is chosen by the word class of the headword; Parks prints PORT 4 times and ABS 3 times."
+ },
+ {
+  "type": "role_default",
+  "form": "ri",
+  "role": "grammatical",
+  "label": "PORT",
+  "classes": [
+   "V"
+  ],
+  "evidence": "Parks GO p.44 Table 15 slot 4 (ri-, ra-, ruu- PORT); Parks prints PORT for ri in 5 etymologies."
+ },
+ {
+  "type": "role_default",
+  "form": "waa",
+  "role": "grammatical",
+  "label": "DIST",
+  "evidence": "Parks prints DIST for waa in 16 etymologies (e.g. waa+waapic 'flash + DIST'); headword braces give {dist., ...} forms built with -waa-. An occurrence Parks glosses lexically ('hill') stays lexical. Where the literal translation says 'hill', 'mound' or 'growing', the piece is one of the lexical homonyms and is left lexical (the blind re-derivation found 15 such etymologies).",
+  "unless_literal_has": [
+   "hill",
+   "mound",
+   "growing",
+   "grow",
+   "planted"
+  ]
+ },
+ {
+  "type": "role_default",
+  "form": "wi",
+  "role": "grammatical",
+  "label": "LOC",
+  "evidence": "Parks GO p.44: 'locative verbs take the suffix -wi'; Parks prints LOC for wi in 3 etymologies and writes it as the last element of locative stems (kita.wi 'be on top', kaa.wi). His one lexical gloss, 'upright', is kept for the occurrence where he prints it. Where Parks's literal translation says 'upright' or 'vertical', the piece is his lexical wi 'upright' and is left lexical (the blind re-derivation found 29 such etymologies).",
+  "unless_literal_has": [
+   "upright",
+   "vertical",
+   "vertically",
+   "erect"
+  ]
+ },
+ {
+  "type": "role_default",
+  "form": "hus",
+  "role": "grammatical",
+  "label": "IMPF",
+  "evidence": "Parks GO pp.45-47 Table 17 (-:hus imperfective); Parks prints IMPF for hus in 5 etymologies. In nouns it forms 'one that ...s' (ra+caaka.wi+hus 'the one that sticks out')."
+ },
+ {
+  "type": "role_default",
+  "form": "his",
+  "role": "grammatical",
+  "label": "PERF",
+  "evidence": "Parks GO p.45 (perfective -his) and sound rule 3R; Parks prints PERF for his in 20 etymologies."
+ },
+ {
+  "type": "role_default",
+  "form": "rik",
+  "role": "grammatical",
+  "label": "CAUS",
+  "classes": [
+   "V"
+  ],
+  "position": "final",
+  "evidence": "Parks GO p.44 Table 15 slot 8 (Causative -rik-, -raʔuk). The literal translations of these words begin 'cause to ...'. An occurrence Parks glosses lexically stays lexical."
+ },
+ {
+  "type": "role_default",
+  "form": "ik",
+  "role": "grammatical",
+  "label": "CAUS",
+  "classes": [
+   "V"
+  ],
+  "position": "final",
+  "evidence": "Stem-final -ik in verbs whose literal translation is 'cause to ...' (acikskarusik 'cause the feelings to be deflated'); Parks prints CAUS or TRANS for ik in 3 etymologies. Variant of the causative -rik (GO p.44 Table 15 slot 8)."
+ },
+ {
+  "type": "role_default",
+  "form": "k",
+  "role": "grammatical",
+  "label": "TRANS",
+  "classes": [
+   "V"
+  ],
+  "position": "final",
+  "evidence": "Parks prints TRANS for stem-final k in 4 etymologies (kus+k 'cause to be sitting, set')."
+ },
+ {
+  "type": "role_default",
+  "form": "wuh",
+  "role": "grammatical",
+  "label": "CAUS",
+  "classes": [
+   "V"
+  ],
+  "position": "final",
+  "evidence": "Parks prints CAUS for wuh in 2 etymologies; literal translations of the other words are 'put ...', 'cause to be ...' (haakatawuh 'put a stick against a surface')."
+ },
+ {
+  "type": "role_default",
+  "form": "irii",
+  "role": "grammatical",
+  "label": "REL",
+  "evidence": "Parks GO p.42: irii- 'where; the one (that)', the proclitic of gerundial forms (every dictionary form 4 begins irii-ra-)."
+ },
+ {
+  "type": "role_default",
+  "form": "u",
+  "role": "grammatical",
+  "label": "SUB",
+  "classes": [
+   "N"
+  ],
+  "position": "final",
+  "evidence": "Parks GO p.44: 'Descriptive stems ... take the subordinate suffix -u'; in nouns built on a verb the final -u is that suffix (capaaraʔu 'being the woman'). Parks prints ACT for final u in 3 etymologies; both are recorded under SUB/ACT -u."
+ },
+ {
+  "type": "sense_anchor",
+  "form": "ati",
+  "gloss": "my",
+  "label": "KIN.POSS.1",
+  "evidence": "Parks Appendix 3 (kinship terminology): ati- 'my' on kinship stems (atiʔas 'my father', atikaʔ 'my grandmother')."
+ },
+ {
+  "type": "sense_anchor",
+  "form": "a",
+  "gloss": "your",
+  "label": "KIN.POSS.2",
+  "evidence": "Parks Appendix 3: a- 'your' on kinship stems (aʔas 'your father', akaʔ 'your grandmother')."
+ },
+ {
+  "type": "sense_anchor",
+  "form": "i",
+  "gloss": "his her",
+  "label": "KIN.POSS.3",
+  "evidence": "Parks Appendix 3: i- 'his, her' on kinship stems (iʔaastiʔ 'his father')."
+ },
+ {
+  "type": "sense_merge",
+  "form": "raʔuk",
+  "senses": [
+   "make",
+   "cause"
+  ],
+  "evidence": "One morpheme: Parks GO p.44 Table 15 slot 8 lists -raʔuk as the causative, and the standalone entry raʔuk is glossed 'make'. Parks's literal translations alternate 'make X' and 'cause to be X' for the same piece."
+ },
+ {
+  "type": "label_merge",
+  "form": "raar",
+  "labels": [
+   "PL",
+   "ITER",
+   "PL/ITER"
+  ],
+  "as": "PL/ITER",
+  "evidence": "One prefix with two readings that Parks labels PL on nouns and ITER on verbs, and PL/ITER where he does not choose (GO p.44 Table 15 slot 1; p.30 Table 4). Counted as one affix; the printed labels are kept on each word."
+ },
+ {
+  "type": "label_merge",
+  "form": "ut",
+  "labels": [
+   "PREV",
+   "TRANS"
+  ],
+  "as": "PREV",
+  "evidence": "Parks labels the preverb ut- TRANS in some etymologies and PREV in others; GO p.31 names ut- as one of the three preverbs, which 'do not have any tangible meaning' as part of a stem."
+ },
+ {
+  "type": "label_merge",
+  "form": "uur",
+  "labels": [
+   "PREV",
+   "TRANS"
+  ],
+  "as": "PREV",
+  "evidence": "Parks labels the preverb uur- TRANS in some etymologies and PREV in others; GO p.31 names uur- as one of the three preverbs."
+ },
+ {
+  "type": "sense_merge",
+  "form": "kucuu",
+  "senses": [
+   "big",
+   "large"
+  ],
+  "evidence": "Parks glosses the same piece in the same construction now 'big' and now 'large', even with the same first root: caahikskucuuʔ <icaahiks+kucuu, large person> and caahikstahkucuuʔ <icaahiks+raar+kucuu, big people>. Found by the adversarial pass (the two glosses share no word, so the automatic clustering kept them apart)."
+ },
+ {
+  "type": "sense_merge",
+  "form": "kiir",
+  "senses": [
+   "water",
+   "liquid"
+  ],
+  "evidence": "Parks glosses the same compound both ways: kiirahkata <kiir+rahkataar, yellow water> and kiirahkataaruʔ <kiir+rahkataar+uʔ, yellow liquid + NOM>. Found by the adversarial pass."
+ },
+ {
+  "type": "label_anchor",
+  "form": "raa",
+  "label": "PL",
+  "evidence": "Parks prints PL for raa in raakii <raa+kii, PL + to be strung> and raakirikaaʔat <raa+kirik.kaaʔat, eye to go inside + PL>. In the second the label stands last although the piece stands first, so position alone gives raa the gloss 'eye to go inside'. Found by the blind re-derivation, whose reviewer lists a plural use of raa in seven etymologies."
+ },
+ {
+  "type": "role_default",
+  "form": "a",
+  "role": "grammatical",
+  "label": "SUB",
+  "classes": [
+   "N"
+  ],
+  "position": "final",
+  "evidence": "Parks GO p.46 Table 17: verbs of class 1 take the subordinate suffix -a. In nouns built on a verb the final -a is that suffix (rahiisa <ra+a+hiis+a, the coming morning>, where the first a is 'come'). Found by the blind re-derivation."
+ },
+ {
+  "type": "ignore_anchor",
+  "form": "a",
+  "gloss": "come in a line",
+  "evidence": "One literal translation, 'come in a line', is the only thing that would join two separate dictionary entries of different classes: the verb a (ir...) 'come' (VI) and the bound locative a- 'extending in a line' (LOC). A single gloss containing words of both is not evidence that they are one morpheme, so it is not used to define a sense. The blind re-derivation lists the two as separate morphemes."
+ },
+ {
+  "type": "sense_merge",
+  "form": "akaar",
+  "senses": [
+   "hide",
+   "skin"
+  ],
+  "evidence": "Parks glosses the same piece 'hide' and 'skin' for the same thing, the covering of a tipi: akarahkata <akaar+rahkataar, yellow hide cover> and akahta, literal 'tipi skin to be suspended'. The blind re-derivation records them as one sense; the automatic clustering kept them apart because the two English words share no stem."
+ }
+]

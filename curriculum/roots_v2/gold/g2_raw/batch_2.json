@@ -1,0 +1,401 @@
+[
+  {
+    "entry_id": "SK-ci-p28-0430",
+    "found": true,
+    "printed_headword": "ci",
+    "printed_class": "CONJ",
+    "printed_verb_class": null,
+    "printed_braces": null,
+    "first_gloss": "but.",
+    "etymology_verbatim": null,
+    "etymology_kind": "none",
+    "pieces": [],
+    "literal": null,
+    "aligned_glosses": null,
+    "inferred_glosses": [],
+    "paradigm_forms": {},
+    "notes": ""
+  },
+  {
+    "entry_id": "SK-ciihtahaahiriq-p29-0435",
+    "found": true,
+    "printed_headword": "ciihtahaahiriʔ",
+    "printed_class": "ADV",
+    "printed_verb_class": null,
+    "printed_braces": null,
+    "first_gloss": "(contemp.) around the periphery, edge, border of an enclosure, as a yard or corral; around the edge or border of a settled space, as a campground.",
+    "etymology_verbatim": "iciihtahaar+hi-|riʔ, outskirts + LOC",
+    "etymology_kind": "analysis",
+    "pieces": ["iciihtahaar", "hi-|riʔ"],
+    "literal": "outskirts + LOC",
+    "aligned_glosses": [
+      {"piece": "iciihtahaar", "gloss": "outskirts"},
+      {"piece": "hi-|riʔ", "gloss": "LOC"}
+    ],
+    "inferred_glosses": [
+      {"piece": "iciihtahaar", "meaning": "outskirts", "basis": "aligned"},
+      {"piece": "hi-|riʔ", "meaning": "LOC", "basis": "aligned"}
+    ],
+    "paradigm_forms": {},
+    "notes": "The gloss is preceded by the italic usage label '(contemp.)', kept at the start of first_gloss as printed. The etymology breaks across lines inside its second piece ('hi-' at line end, 'riʔ' on the next line); written 'hi-|riʔ' per the line-break rule, in etymology_verbatim and in pieces. 'enclo-/sure' in the gloss joined."
+  },
+  {
+    "entry_id": "SK-ciksuq-p29-0448",
+    "found": true,
+    "printed_headword": "ciksuʔ",
+    "printed_class": "N",
+    "printed_verb_class": null,
+    "printed_braces": "{comb., (a)ciks-}",
+    "first_gloss": "esophagus, gullet; trachea, windpipe.",
+    "etymology_verbatim": "aciks+uʔ, mind + NOM",
+    "etymology_kind": "analysis",
+    "pieces": ["aciks", "uʔ"],
+    "literal": "mind + NOM",
+    "aligned_glosses": [
+      {"piece": "aciks", "gloss": "mind"},
+      {"piece": "uʔ", "gloss": "NOM"}
+    ],
+    "inferred_glosses": [
+      {"piece": "aciks", "meaning": "mind", "basis": "aligned"},
+      {"piece": "uʔ", "meaning": "NOM", "basis": "aligned"}
+    ],
+    "paradigm_forms": {},
+    "notes": ""
+  },
+  {
+    "entry_id": "SK-cuustiraqu-p32-0539",
+    "found": true,
+    "printed_headword": "cuustiraʔu",
+    "printed_class": "N",
+    "printed_verb_class": null,
+    "printed_braces": null,
+    "first_gloss": "the mother.",
+    "etymology_verbatim": "cuusti(k)-|+ra.u, being the old woman",
+    "etymology_kind": "analysis",
+    "pieces": ["cuusti(k)-|", "ra.u"],
+    "literal": "being the old woman",
+    "aligned_glosses": null,
+    "inferred_glosses": [
+      {"piece": "cuusti(k)-|", "meaning": "the old woman", "basis": "literal"},
+      {"piece": "ra.u", "meaning": "being", "basis": "literal"}
+    ],
+    "paradigm_forms": {},
+    "notes": "The etymology breaks across lines after 'cuusti(k)-', with '+ra.u' starting the next line; the line-end hyphen is written '-|' in etymology_verbatim and in the first piece."
+  },
+  {
+    "entry_id": "SK-haakita-p35-0593",
+    "found": true,
+    "printed_headword": "haakita",
+    "printed_class": "VL",
+    "printed_verb_class": null,
+    "printed_braces": null,
+    "first_gloss": "wood to be forked at one end, as a tree, pole, stick; be a tree limb; be a branch, tree with a limb.",
+    "etymology_verbatim": "haak+kita, be a wood fork",
+    "etymology_kind": "analysis",
+    "pieces": ["haak", "kita"],
+    "literal": "be a wood fork",
+    "aligned_glosses": null,
+    "inferred_glosses": [
+      {"piece": "haak", "meaning": "wood", "basis": "literal"},
+      {"piece": "kita", "meaning": "be a fork", "basis": "literal"}
+    ],
+    "paradigm_forms": {"2": "tihaakita", "4": "iriirahaakitawi", "5": "tihaakitawista"},
+    "notes": "Only forms 2, 4 and 5 are printed."
+  },
+  {
+    "entry_id": "SK-haaktariiraquk-p35-0598",
+    "found": true,
+    "printed_headword": "haaktariiraʔuk",
+    "printed_class": "VT",
+    "printed_verb_class": "(3)",
+    "printed_braces": null,
+    "first_gloss": "light, ignite wood; light a pipe.",
+    "etymology_verbatim": "haak+rarit.raʔuk, ignite (a piece of) wood",
+    "etymology_kind": "analysis",
+    "pieces": ["haak", "rarit.raʔuk"],
+    "literal": "ignite (a piece of) wood",
+    "aligned_glosses": null,
+    "inferred_glosses": [
+      {"piece": "haak", "meaning": "(a piece of) wood", "basis": "literal"},
+      {"piece": "rarit.raʔuk", "meaning": "ignite", "basis": "literal"}
+    ],
+    "paradigm_forms": {"1": "tataaktariiruʔ", "2": "tihaaktariiruʔ", "3": "tihaaktariiruukuʔ", "4": "iriirahaaktariiraʔu", "5": "tihaaktariiruuksta"},
+    "notes": "Form 3 is broken across lines (tihaaktarii- / ruukuʔ); joined."
+  },
+  {
+    "entry_id": "SK-haapiirahak-p35-0603",
+    "found": true,
+    "printed_headword": "haapiirahak",
+    "printed_class": "VT",
+    "printed_verb_class": "(4)",
+    "printed_braces": null,
+    "first_gloss": "fell, cut down, chop down a tree; knock down a tree.",
+    "etymology_verbatim": "haak+wii.ra.hak, knock down (a piece of) wood",
+    "etymology_kind": "analysis",
+    "pieces": ["haak", "wii.ra.hak"],
+    "literal": "knock down (a piece of) wood",
+    "aligned_glosses": null,
+    "inferred_glosses": [
+      {"piece": "haak", "meaning": "(a piece of) wood", "basis": "literal"},
+      {"piece": "wii.ra.hak", "meaning": "knock down", "basis": "literal"}
+    ],
+    "paradigm_forms": {"1": "tataapiirahat", "2": "tihaapiirahat", "3": "tihaapiirahaakuʔ", "4": "iriirahaapiirahat", "5": "tihaapiirahaksta"},
+    "notes": "Form 3 is broken across lines (tihaapiira- / haakuʔ); joined."
+  },
+  {
+    "entry_id": "SK-haski-p37-0650",
+    "found": true,
+    "printed_headword": "haski",
+    "printed_class": "N",
+    "printed_verb_class": null,
+    "printed_braces": "{comb., has-}",
+    "first_gloss": "string, twine, cord, line.",
+    "etymology_verbatim": "has+kis, string + DIM",
+    "etymology_kind": "analysis",
+    "pieces": ["has", "kis"],
+    "literal": "string + DIM",
+    "aligned_glosses": [
+      {"piece": "has", "gloss": "string"},
+      {"piece": "kis", "gloss": "DIM"}
+    ],
+    "inferred_glosses": [
+      {"piece": "has", "meaning": "string", "basis": "aligned"},
+      {"piece": "kis", "meaning": "DIM", "basis": "aligned"}
+    ],
+    "paradigm_forms": {},
+    "notes": ""
+  },
+  {
+    "entry_id": "SK-haspaaksuq-p38-0655",
+    "found": true,
+    "printed_headword": "haspaaksuʔ",
+    "printed_class": "N",
+    "printed_verb_class": null,
+    "printed_braces": null,
+    "first_gloss": "head strap, strap for attaching a bundle to one's body to carry.",
+    "etymology_verbatim": "has-|+paks+uʔ, head string + NOM",
+    "etymology_kind": "analysis",
+    "pieces": ["has-|", "paks", "uʔ"],
+    "literal": "head string + NOM",
+    "aligned_glosses": null,
+    "inferred_glosses": [
+      {"piece": "has-|", "meaning": "string", "basis": "literal"},
+      {"piece": "paks", "meaning": "head", "basis": "literal"},
+      {"piece": "uʔ", "meaning": "NOM", "basis": "literal"}
+    ],
+    "paradigm_forms": {},
+    "notes": "The etymology breaks across lines after 'has-', with '+paks+uʔ' starting the next line; the line-end hyphen is written '-|' in etymology_verbatim and in the first piece. The etymology prints 'paks' with a short a although the headword has 'paak'; copied as printed. The literal has two '+' parts ('head string' and 'NOM') against three pieces, so aligned_glosses is null."
+  },
+  {
+    "entry_id": "SK-hawat-p387-3818",
+    "found": true,
+    "printed_headword": "hawat",
+    "printed_class": "VT",
+    "printed_verb_class": "(2-i)",
+    "printed_braces": null,
+    "first_gloss": "spit out, as a seed, shell, piece of food; expectorate.",
+    "etymology_verbatim": null,
+    "etymology_kind": null,
+    "pieces": [],
+    "literal": null,
+    "aligned_glosses": null,
+    "inferred_glosses": [],
+    "paradigm_forms": {},
+    "notes": "INCOMPLETE, NOT SEEN RATHER THAN ABSENT. 'hawat' is the last entry on book page 387 (page_039.pdf) and runs over to the next page: the page ends in the middle of gloss 2 ('2. take out of the'). The continuation is on page_040.pdf, which is not named in the work list, so it was not opened. The headword, class, verb class, absence of braces and first gloss are transcribed from page 387 and are complete. The etymology and the numbered paradigm forms, if any, are on the next page and were not transcribed: etymology_verbatim, etymology_kind, pieces, literal, inferred_glosses and paradigm_forms are left empty or null for that reason and must not be read as 'none printed'. Any further 'hawat' homograph on the next page could not be checked either."
+  },
+  {
+    "entry_id": "SK-hiikaqu-p389-3825",
+    "found": true,
+    "printed_headword": "hiikaʔu (uur...)",
+    "printed_class": "VI",
+    "printed_verb_class": "(3)",
+    "printed_braces": null,
+    "first_gloss": "be clean.",
+    "etymology_verbatim": "hiika (uur...)+u, clean + ACT",
+    "etymology_kind": "analysis",
+    "pieces": ["hiika (uur...)", "u"],
+    "literal": "clean + ACT",
+    "aligned_glosses": [
+      {"piece": "hiika (uur...)", "gloss": "clean"},
+      {"piece": "u", "gloss": "ACT"}
+    ],
+    "inferred_glosses": [
+      {"piece": "hiika (uur...)", "meaning": "clean", "basis": "aligned"},
+      {"piece": "u", "meaning": "ACT", "basis": "aligned"}
+    ],
+    "paradigm_forms": {"1": "tatuuhiikuʔ", "2": "tuuhiikuʔ", "4": "iriruuhiikaʔu", "5": "tuuhiikuuksta"},
+    "notes": "No form 3 is printed. Form 5 is broken across lines (tuu- / hiikuuksta); joined. The etymology wraps at a space between 'hiika' and '(uur...)', with no hyphen."
+  },
+  {
+    "entry_id": "SK-hiiwiik-p390-3857",
+    "found": true,
+    "printed_headword": "hiiwiik",
+    "printed_class": "VT",
+    "printed_verb_class": "(1)",
+    "printed_braces": null,
+    "first_gloss": "chop weeds, grass; hoe weeds, grass.",
+    "etymology_verbatim": "hii(r)+wiik, dig up/extract grass",
+    "etymology_kind": "analysis",
+    "pieces": ["hii(r)", "wiik"],
+    "literal": "dig up/extract grass",
+    "aligned_glosses": null,
+    "inferred_glosses": [
+      {"piece": "hii(r)", "meaning": "grass", "basis": "literal"},
+      {"piece": "wiik", "meaning": "dig up/extract", "basis": "literal"}
+    ],
+    "paradigm_forms": {"1": "tatiiwiit", "2": "tihiiwiit", "3": "tihiiwiikuʔ", "4": "iriirahiiwiika", "5": "tihiiwiksta"},
+    "notes": "Form 5 is printed 'tihiiwiksta' with a single i in 'wik', while forms 1-4 all show 'wii'; copied as printed, possible printing oddity."
+  },
+  {
+    "entry_id": "SK-hiksukac-p390-3864",
+    "found": true,
+    "printed_headword": "hiksukac",
+    "printed_class": "VD",
+    "printed_verb_class": null,
+    "printed_braces": null,
+    "first_gloss": "be short-winded.",
+    "etymology_verbatim": "hiks+ukac, breath to be cut",
+    "etymology_kind": "analysis",
+    "pieces": ["hiks", "ukac"],
+    "literal": "breath to be cut",
+    "aligned_glosses": null,
+    "inferred_glosses": [
+      {"piece": "hiks", "meaning": "breath", "basis": "literal"},
+      {"piece": "ukac", "meaning": "to be cut", "basis": "literal"}
+    ],
+    "paradigm_forms": {"1": "tatiksukaac, tatiksukaʔac", "2": "tihiksukaac, tihiksukaʔac", "4": "iriirahiksukaacu", "5": "tihiksukacuksta"},
+    "notes": "Two homographs 'hiksukac' are printed one after the other in the right column, both glossed 'be short-winded.': the first is VD, the second VP(4) (etymology 'hiks+ukac, cut the breath', five forms beginning 1. tikuhiksukac). The first (VD) is transcribed here because it matches the work-list class. Forms 1 and 2 each print two variants separated by a comma. No form 3 is printed. Form 2's second variant and form 5 are broken across lines (ti- / hiksukaʔac; tihiksukacuks- / ta); joined."
+  },
+  {
+    "entry_id": "SK-huka--p43-0722",
+    "found": true,
+    "printed_headword": "huka-",
+    "printed_class": "LOC",
+    "printed_verb_class": null,
+    "printed_braces": null,
+    "first_gloss": "in a shallow circumscribed space; inside.",
+    "etymology_verbatim": "huka, be in a shallow circumscribed space",
+    "etymology_kind": "analysis",
+    "pieces": ["huka"],
+    "literal": "be in a shallow circumscribed space",
+    "aligned_glosses": null,
+    "inferred_glosses": [
+      {"piece": "huka", "meaning": "be in a shallow circumscribed space", "basis": "literal"}
+    ],
+    "paradigm_forms": {},
+    "notes": "A separate entry 'huka' (no hyphen, class VL, with forms 2, 4, 5) is printed immediately before this one; the hyphenated LOC entry is the one transcribed. The etymology has no '+' or '.': it names the source form 'huka' with its meaning, so it is classed as analysis with a single piece, and the whole literal is assigned to that piece (aligned_glosses left null because the literal is not split by '+'). The entry has one bullet example, not recorded."
+  },
+  {
+    "entry_id": "SK-hukatawi--p45-0746",
+    "found": true,
+    "printed_headword": "hukatawi-",
+    "printed_class": "LOC",
+    "printed_verb_class": null,
+    "printed_braces": null,
+    "first_gloss": "around in a circle.",
+    "etymology_verbatim": "hukata.wi, along a periphery, curve",
+    "etymology_kind": "analysis",
+    "pieces": ["hukata.wi"],
+    "literal": "along a periphery, curve",
+    "aligned_glosses": null,
+    "inferred_glosses": [
+      {"piece": "hukata.wi", "meaning": "along a periphery, curve", "basis": "literal"}
+    ],
+    "paradigm_forms": {},
+    "notes": "Single piece with an internal dot and no '+'. The literal itself contains a comma ('along a periphery, curve'); kept whole. The page does not show which part of the literal belongs to 'hukata' and which to 'wi'."
+  },
+  {
+    "entry_id": "SK-huta-p48-0813",
+    "found": true,
+    "printed_headword": "huta",
+    "printed_class": "VL",
+    "printed_verb_class": null,
+    "printed_braces": null,
+    "first_gloss": "be windy.",
+    "etymology_verbatim": null,
+    "etymology_kind": "none",
+    "pieces": [],
+    "literal": null,
+    "aligned_glosses": null,
+    "inferred_glosses": [],
+    "paradigm_forms": {"2": "tihuta", "4": "iriirahutawi", "5": "tihutawista"},
+    "notes": "Only forms 2, 4 and 5 are printed."
+  },
+  {
+    "entry_id": "SK-huu--p48-0814",
+    "found": true,
+    "printed_headword": "huu-",
+    "printed_class": "LOC",
+    "printed_verb_class": null,
+    "printed_braces": null,
+    "first_gloss": "through water, in water.",
+    "etymology_verbatim": null,
+    "etymology_kind": "none",
+    "pieces": [],
+    "literal": null,
+    "aligned_glosses": null,
+    "inferred_glosses": [],
+    "paradigm_forms": {},
+    "notes": "A separate noun entry 'huuʔ' (mush; porridge) follows immediately; the hyphenated LOC entry 'huu-' is the one transcribed. The entry has two bullet examples, not recorded."
+  },
+  {
+    "entry_id": "SK-huucakusuuqat-p49-0825",
+    "found": true,
+    "printed_headword": "huucakusuuʔat",
+    "printed_class": "VI",
+    "printed_verb_class": "(1)",
+    "printed_braces": null,
+    "first_gloss": "float, swim across water, as a stream or lake.",
+    "etymology_verbatim": "huucakus-|+huu.at, go through water seated on the surface",
+    "etymology_kind": "analysis",
+    "pieces": ["huucakus-|", "huu.at"],
+    "literal": "go through water seated on the surface",
+    "aligned_glosses": null,
+    "inferred_glosses": [
+      {"piece": "huucakus-|", "meaning": "seated on the surface", "basis": "literal"},
+      {"piece": "huu.at", "meaning": "go through water", "basis": "literal"}
+    ],
+    "paradigm_forms": {"1": "tatuucakusuuʔat", "2": "tihuucakusuuʔat", "3": "tihuucakusuuwuuʔ", "4": "iriirahuucakusuuta", "5": "tihuucakusuuhuhta"},
+    "notes": "The etymology breaks across lines after 'huucakus-', with '+huu.at' starting the next line; the line-end hyphen is written '-|' in etymology_verbatim and in the first piece. Forms 3 and 5 are broken across lines (tihuu- / cakusuuwuuʔ; tihuuca- / kusuuhuhta); joined."
+  },
+  {
+    "entry_id": "SK-huuhuhkuutik-p49-0836",
+    "found": true,
+    "printed_headword": "huuhuhkuutik",
+    "printed_class": "VT",
+    "printed_verb_class": "(1)",
+    "printed_braces": null,
+    "first_gloss": "drown, kill by drowning.",
+    "etymology_verbatim": "huuhur+kuutik, kill in water",
+    "etymology_kind": "analysis",
+    "pieces": ["huuhur", "kuutik"],
+    "literal": "kill in water",
+    "aligned_glosses": null,
+    "inferred_glosses": [
+      {"piece": "huuhur", "meaning": "in water", "basis": "literal"},
+      {"piece": "kuutik", "meaning": "kill", "basis": "literal"}
+    ],
+    "paradigm_forms": {"1": "tatuuhuhkuutit", "2": "tihuuhuhkuutit", "3": "tihuuhuhkuutikuʔ", "4": "iriirahuuhuhkuutika", "5": "tihuuhuhkuutiksta"},
+    "notes": "The related but distinct entry 'huuhuhkuut' VP(2) is printed immediately before this one. Forms 3 and 5 are broken across lines (tihuuhuh- / kuutikuʔ; tihuuhuhkuu- / tiksta); joined."
+  },
+  {
+    "entry_id": "SK-icataapahuks-p55-0944",
+    "found": true,
+    "printed_headword": "icataapahuks",
+    "printed_class": "N",
+    "printed_verb_class": null,
+    "printed_braces": null,
+    "first_gloss": "bread made of a mixture of cornmeal and squash.",
+    "etymology_verbatim": "icataa+pa-|huks, squash bread",
+    "etymology_kind": "analysis",
+    "pieces": ["icataa", "pa-|huks"],
+    "literal": "squash bread",
+    "aligned_glosses": null,
+    "inferred_glosses": [
+      {"piece": "icataa", "meaning": "bread", "basis": "literal"},
+      {"piece": "pa-|huks", "meaning": "squash", "basis": "literal"}
+    ],
+    "paradigm_forms": {},
+    "notes": "The etymology breaks across lines inside its second piece ('pa-' at line end, 'huks' on the next line); written 'pa-|huks' per the line-break rule, in etymology_verbatim and in pieces."
+  }
+]

@@ -1,0 +1,6535 @@
+{
+ "adversarial": [
+  {
+   "form": "uʔ",
+   "found": [],
+   "id": "uʔ=NOM",
+   "meaning": "nominal/absolutive suffix",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 340
+  },
+  {
+   "form": "raar",
+   "found": [
+    "shape has 5 other meaning(s) kept apart: do (0); ones looking (0); perh iter (0); sibling of same sex brother (0)"
+   ],
+   "id": "raar=PL/ITER",
+   "meaning": "plural prefix",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 127
+  },
+  {
+   "form": "at",
+   "found": [
+    "short form: the string occurs inside 928 headwords, an analysis places it in 133; only the analysed ones are counted"
+   ],
+   "id": "at#go",
+   "meaning": "go",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 120
+  },
+  {
+   "form": "wi",
+   "found": [
+    "variant candidate(s), not merged: wi ~ wii",
+    "label printed by Parks only 4 times against 190 uses labelled by default (manual)"
+   ],
+   "id": "wi=LOC",
+   "meaning": "locative/directional prefix or prefix string",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 110
+  },
+  {
+   "form": "raʔuk",
+   "found": [
+    "only 59 of 101 checked words mention the head meaning 'cause'; the sense groups several glosses"
+   ],
+   "id": "raʔuk#cause",
+   "meaning": "cause",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 109
+  },
+  {
+   "form": "raa",
+   "found": [
+    "its dictionary entries have different classes (N-DEP, VD): possibly more than one morpheme under one meaning",
+    "shape has 5 other meaning(s) kept apart: just (0); mother (0); now (0); object (0)",
+    "variant candidate(s), not merged: ra ~ raa",
+    "short form: the string occurs inside 661 headwords, an analysis places it in 149; only the analysed ones are counted"
+   ],
+   "id": "raa#way",
+   "meaning": "way",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 104
+  },
+  {
+   "form": "ut",
+   "found": [],
+   "id": "ut=PREV",
+   "meaning": "preverb",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 82
+  },
+  {
+   "form": "kus",
+   "found": [],
+   "id": "kus#sitting",
+   "meaning": "sitting",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 80
+  },
+  {
+   "form": "ra",
+   "found": [
+    "shape has 2 other meaning(s) kept apart: now (0); perh abs (0)",
+    "variant candidate(s), not merged: ra ~ raa",
+    "label printed by Parks only 12 times against 78 uses labelled by default (manual)"
+   ],
+   "id": "ra=PORT",
+   "meaning": "portative prefix",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 65
+  },
+  {
+   "form": "aciks",
+   "found": [
+    "only 26 of 60 checked words mention the head meaning 'mind'; the sense groups several glosses",
+    "its dictionary entries have different classes (N-DEP, VD): possibly more than one morpheme under one meaning",
+    "shape has 1 other meaning(s) kept apart: trachea (2)"
+   ],
+   "id": "aciks#mind",
+   "meaning": "mind",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 63
+  },
+  {
+   "form": "ta",
+   "found": [
+    "its dictionary entries have different classes (LOC, VL): possibly more than one morpheme under one meaning",
+    "short form: the string occurs inside 1176 headwords, an analysis places it in 77; only the analysed ones are counted"
+   ],
+   "id": "ta#suspended",
+   "meaning": "suspended",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 61
+  },
+  {
+   "form": "kic",
+   "found": [
+    "only 27 of 53 checked words mention the head meaning 'liquid'; the sense groups several glosses"
+   ],
+   "id": "kic#liquid",
+   "meaning": "liquid",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 60
+  },
+  {
+   "form": "awi",
+   "found": [
+    "shape has 1 other meaning(s) kept apart: worn (0)"
+   ],
+   "id": "awi#image",
+   "meaning": "image",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 57
+  },
+  {
+   "form": "kata",
+   "found": [
+    "shape has 1 other meaning(s) kept apart: throat (2)"
+   ],
+   "id": "kata#against",
+   "meaning": "against",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 56
+  },
+  {
+   "form": "ka",
+   "found": [
+    "shape has 2 other meaning(s) kept apart: outstanding (5); what (0)",
+    "variant candidate(s), not merged: ka ~ kaa",
+    "short form: the string occurs inside 1443 headwords, an analysis places it in 74; only the analysed ones are counted"
+   ],
+   "id": "ka#on",
+   "meaning": "on",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 53
+  },
+  {
+   "form": "a",
+   "found": [
+    "shape has 5 other meaning(s) kept apart: ones image (3); extending in a line (19); stretched out (2); wear (4)",
+    "variant candidate(s), not merged: ha ~ a; a ~ haa",
+    "short form: the string occurs inside 3858 headwords, an analysis places it in 66; only the analysed ones are counted"
+   ],
+   "id": "a#come",
+   "meaning": "come",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 48
+  },
+  {
+   "form": "aar",
+   "found": [
+    "shape has 2 other meaning(s) kept apart: tooth (5); do (3)",
+    "short form: the string occurs inside 600 headwords, an analysis places it in 51; only the analysed ones are counted"
+   ],
+   "id": "aar#become",
+   "meaning": "become",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 47
+  },
+  {
+   "form": "uur",
+   "found": [],
+   "id": "uur=PREV",
+   "meaning": "preverb",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 44
+  },
+  {
+   "form": "kaa",
+   "found": [
+    "its dictionary entries have different classes (LOC, VL): possibly more than one morpheme under one meaning",
+    "shape has 1 other meaning(s) kept apart: grandmother (0)",
+    "variant candidate(s), not merged: ka ~ kaa",
+    "short form: the string occurs inside 373 headwords, an analysis places it in 56; only the analysed ones are counted"
+   ],
+   "id": "kaa#inside",
+   "meaning": "inside",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 42
+  },
+  {
+   "form": "wuh",
+   "found": [
+    "shape has 2 other meaning(s) kept apart: cause to be upright (3); tied in a bundle (0)",
+    "label printed by Parks only 2 times against 61 uses labelled by default (manual)"
+   ],
+   "id": "wuh=CAUS",
+   "meaning": "causative",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 42
+  },
+  {
+   "form": "hak",
+   "found": [
+    "shape has 3 other meaning(s) kept apart: in a circle (0); hold (0); take (7)"
+   ],
+   "id": "hak#pass",
+   "meaning": "pass",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 38
+  },
+  {
+   "form": "waa",
+   "found": [
+    "shape has 3 other meaning(s) kept apart: hill (8); growing (1); now (0)"
+   ],
+   "id": "waa=DIST",
+   "meaning": "distributive suffix",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 36
+  },
+  {
+   "form": "his",
+   "found": [],
+   "id": "his=PERF",
+   "meaning": "perfective aspect suffix",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 35
+  },
+  {
+   "form": "as",
+   "found": [
+    "shape has 2 other meaning(s) kept apart: father (0); perseverance (1)",
+    "variant candidate(s), not merged: aas ~ as",
+    "short form: the string occurs inside 401 headwords, an analysis places it in 48; only the analysed ones are counted"
+   ],
+   "id": "as#foot",
+   "meaning": "foot",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 33
+  },
+  {
+   "form": "wi",
+   "found": [
+    "only 12 of 24 checked words mention the head meaning 'upright'; the sense groups several glosses",
+    "variant candidate(s), not merged: wi ~ wii",
+    "short form: the string occurs inside 750 headwords, an analysis places it in 42; only the analysed ones are counted"
+   ],
+   "id": "wi#upright",
+   "meaning": "upright",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 32
+  },
+  {
+   "form": "ri",
+   "found": [
+    "shape has 3 other meaning(s) kept apart: holding against a vertical surface (0); scrapes (0); taking (0)",
+    "label printed by Parks only 5 times against 49 uses labelled by default (manual)"
+   ],
+   "id": "ri=PORT",
+   "meaning": "portative prefix",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 32
+  },
+  {
+   "form": "iks",
+   "found": [],
+   "id": "iks#hand",
+   "meaning": "hand",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 31
+  },
+  {
+   "form": "warik",
+   "found": [
+    "its dictionary entries have different classes (VI(1), VT): possibly more than one morpheme under one meaning",
+    "shape has 1 other meaning(s) kept apart: send (2)"
+   ],
+   "id": "warik#cause to go",
+   "meaning": "cause to go",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 30
+  },
+  {
+   "form": "huraar",
+   "found": [
+    "shape has 1 other meaning(s) kept apart: source (0)"
+   ],
+   "id": "huraar#land",
+   "meaning": "land",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 29
+  },
+  {
+   "form": "paks",
+   "found": [
+    "shape has 1 other meaning(s) kept apart: white (0)",
+    "variant candidate(s), not merged: paks ~ paaks"
+   ],
+   "id": "paks#head",
+   "meaning": "head",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 29
+  },
+  {
+   "form": "kis",
+   "found": [],
+   "id": "kis=DIM",
+   "meaning": "diminutive suffix",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 29
+  },
+  {
+   "form": "hus",
+   "found": [],
+   "id": "hus=IMPF",
+   "meaning": "imperfective aspect suffix",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 27
+  },
+  {
+   "form": "kiis",
+   "found": [
+    "shape has 2 other meaning(s) kept apart: lively (0); vain (5)"
+   ],
+   "id": "kiis#bone",
+   "meaning": "bone",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 26
+  },
+  {
+   "form": "hiir",
+   "found": [
+    "only 10 of 25 checked words mention the head meaning 'good'; the sense groups several glosses",
+    "shape has 3 other meaning(s) kept apart: grass (13); night to elapse (1); tive (0)",
+    "15 of its 26 tier A/B words are reproduced only partially (they are tier B through paradigm or Blue Book confirmation)"
+   ],
+   "id": "hiir#good",
+   "meaning": "good",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 26
+  },
+  {
+   "form": "uhuur",
+   "found": [
+    "shape has 1 other meaning(s) kept apart: behavior (1)",
+    "variant candidate(s), not merged: uhuur ~ uhur; uhuur ~ uhur"
+   ],
+   "id": "uhuur#image",
+   "meaning": "image",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 25
+  },
+  {
+   "form": "kirik",
+   "found": [
+    "variant candidate(s), not merged: kirik ~ kiriik"
+   ],
+   "id": "kirik#eye",
+   "meaning": "eye",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 25
+  },
+  {
+   "form": "sa",
+   "found": [
+    "short form: the string occurs inside 338 headwords, an analysis places it in 27; only the analysed ones are counted"
+   ],
+   "id": "sa#lying",
+   "meaning": "lying",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 25
+  },
+  {
+   "form": "ir",
+   "found": [],
+   "id": "ir=PREV",
+   "meaning": "preverb",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 24
+  },
+  {
+   "form": "hiriʔ",
+   "found": [],
+   "id": "hiriʔ=LOC",
+   "meaning": "locative/directional prefix or prefix string",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 23
+  },
+  {
+   "form": "u",
+   "found": [
+    "variant candidate(s), not merged: u ~ huu",
+    "short form: the string occurs inside 2548 headwords, an analysis places it in 33; only the analysed ones are counted"
+   ],
+   "id": "u#extending in a line",
+   "meaning": "extending in a line",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 22
+  },
+  {
+   "form": "rihuur",
+   "found": [
+    "9 of its 22 tier A/B words are reproduced only partially (they are tier B through paradigm or Blue Book confirmation)"
+   ],
+   "id": "rihuur#big",
+   "meaning": "big",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 22
+  },
+  {
+   "form": "ik",
+   "found": [
+    "shape has 2 other meaning(s) kept apart: dark night (0); spread out (0)",
+    "label printed by Parks only 2 times against 37 uses labelled by default (manual)"
+   ],
+   "id": "ik=CAUS",
+   "meaning": "causative",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 22
+  },
+  {
+   "form": "ra",
+   "found": [
+    "shape has 2 other meaning(s) kept apart: now (0); perh abs (0)",
+    "variant candidate(s), not merged: ra ~ raa",
+    "label printed by Parks only 3 times against 130 uses labelled by default (manual)"
+   ],
+   "id": "ra=ABS",
+   "meaning": "absolutative mode prefix",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 22
+  },
+  {
+   "form": "kucuu",
+   "found": [
+    "only 12 of 21 checked words mention the head meaning 'big'; the sense groups several glosses"
+   ],
+   "id": "kucuu#big",
+   "meaning": "big",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 21
+  },
+  {
+   "form": "haak",
+   "found": [
+    "its dictionary entries have different classes (N-DEP, VL): possibly more than one morpheme under one meaning",
+    "variant candidate(s), not merged: haak ~ ak"
+   ],
+   "id": "haak#wood",
+   "meaning": "wood",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 20
+  },
+  {
+   "form": "ha",
+   "found": [
+    "variant candidate(s), not merged: ha ~ a; ha ~ haa",
+    "short form: the string occurs inside 638 headwords, an analysis places it in 27; only the analysed ones are counted"
+   ],
+   "id": "ha#in water",
+   "meaning": "in water",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 20
+  },
+  {
+   "form": "arik",
+   "found": [
+    "shape has 2 other meaning(s) kept apart: horn (5); have (3)"
+   ],
+   "id": "arik#standing",
+   "meaning": "standing",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 20
+  },
+  {
+   "form": "rik",
+   "found": [
+    "shape has 2 other meaning(s) kept apart: rik (0); separate (0)",
+    "label printed by Parks only 0 times against 32 uses labelled by default (manual)"
+   ],
+   "id": "rik=CAUS",
+   "meaning": "causative",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 20
+  },
+  {
+   "form": "a",
+   "found": [
+    "shape has 5 other meaning(s) kept apart: come (48); ones image (3); stretched out (2); wear (4)",
+    "variant candidate(s), not merged: ha ~ a; a ~ haa",
+    "short form: the string occurs inside 3858 headwords, an analysis places it in 23; only the analysed ones are counted"
+   ],
+   "id": "a#extending in a line",
+   "meaning": "extending in a line",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 19
+  },
+  {
+   "form": "icka",
+   "found": [
+    "shape has 4 other meaning(s) kept apart: cloud (4); sharp (1); end (3); extremity (1)"
+   ],
+   "id": "icka#face",
+   "meaning": "face",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 19
+  },
+  {
+   "form": "haar",
+   "found": [
+    "shape has 2 other meaning(s) kept apart: interior (0); state (0)"
+   ],
+   "id": "haar#place",
+   "meaning": "place",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 18
+  },
+  {
+   "form": "taakaar",
+   "found": [
+    "shape has 1 other meaning(s) kept apart: on the head (0)"
+   ],
+   "id": "taakaar#white",
+   "meaning": "white",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 17
+  },
+  {
+   "form": "icaahiks",
+   "found": [],
+   "id": "icaahiks#person",
+   "meaning": "person",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 17
+  },
+  {
+   "form": "warii",
+   "found": [],
+   "id": "warii#go around",
+   "meaning": "go around",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 17
+  },
+  {
+   "form": "kiraar",
+   "found": [
+    "shape has 4 other meaning(s) kept apart: light in color (3); clear (3); clay (0); water (0)"
+   ],
+   "id": "kiraar#liquid",
+   "meaning": "liquid",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 17
+  },
+  {
+   "form": "raah",
+   "found": [],
+   "id": "raah#have",
+   "meaning": "have",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 17
+  },
+  {
+   "form": "wiitik",
+   "found": [
+    "shape has 1 other meaning(s) kept apart: set (1)"
+   ],
+   "id": "wiitik#sit down",
+   "meaning": "sit down",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 17
+  },
+  {
+   "form": "ka",
+   "found": [
+    "shape has 3 other meaning(s) kept apart: on (53); outstanding (5); what (0)",
+    "variant candidate(s), not merged: ka ~ kaa"
+   ],
+   "id": "ka=ITER",
+   "meaning": "iterative prefix",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 17
+  },
+  {
+   "form": "kita",
+   "found": [
+    "shape has 1 other meaning(s) kept apart: a fork (4)"
+   ],
+   "id": "kita#on top",
+   "meaning": "on top",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 16
+  },
+  {
+   "form": "rak",
+   "found": [
+    "shape has 1 other meaning(s) kept apart: grandchild (0)",
+    "variant candidate(s), not merged: rak ~ raak; rak ~ raak"
+   ],
+   "id": "rak#wood",
+   "meaning": "wood",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 15
+  },
+  {
+   "form": "asaa",
+   "found": [],
+   "id": "asaa#horse",
+   "meaning": "horse",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 15
+  },
+  {
+   "form": "kuuku",
+   "found": [
+    "shape has 1 other meaning(s) kept apart: money (0)"
+   ],
+   "id": "kuuku#covering",
+   "meaning": "covering",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 15
+  },
+  {
+   "form": "katuus",
+   "found": [
+    "shape has 2 other meaning(s) kept apart: flatly (1); ravine (3)"
+   ],
+   "id": "katuus#flat",
+   "meaning": "flat",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 15
+  },
+  {
+   "form": "ica",
+   "found": [
+    "shape has 3 other meaning(s) kept apart: indentation around (0); stuck in (0); suspended across (3)",
+    "variant candidate(s), not merged: ica ~ icaa"
+   ],
+   "id": "ica#on the end",
+   "meaning": "on the end",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 15
+  },
+  {
+   "form": "kiic",
+   "found": [],
+   "id": "kiic#neck",
+   "meaning": "neck",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 15
+  },
+  {
+   "form": "ta",
+   "found": [],
+   "id": "ta=GEN.LOC",
+   "meaning": "general locative prefix",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 15
+  },
+  {
+   "form": "kaatiit",
+   "found": [
+    "its dictionary entries have different classes (N, VD): possibly more than one morpheme under one meaning",
+    "shape has 1 other meaning(s) kept apart: dark (3)",
+    "variant candidate(s), not merged: kaatiit ~ katiit; katiit ~ kaatiit"
+   ],
+   "id": "kaatiit#black",
+   "meaning": "black",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 14
+  },
+  {
+   "form": "huka",
+   "found": [
+    "its dictionary entries have different classes (LOC, VL): possibly more than one morpheme under one meaning",
+    "variant candidate(s), not merged: huka ~ hukaa; huka ~ huuka; huka ~ hukaa"
+   ],
+   "id": "huka#in",
+   "meaning": "in",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 14
+  },
+  {
+   "form": "akaar",
+   "found": [
+    "shape has 3 other meaning(s) kept apart: hide (4); sod (0); canvas (0)"
+   ],
+   "id": "akaar#dwelling",
+   "meaning": "dwelling",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 13
+  },
+  {
+   "form": "hiir",
+   "found": [
+    "shape has 3 other meaning(s) kept apart: good (26); night to elapse (1); tive (0)"
+   ],
+   "id": "hiir#grass",
+   "meaning": "grass",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 13
+  },
+  {
+   "form": "wic",
+   "found": [
+    "shape has 1 other meaning(s) kept apart: destination (1)",
+    "variant candidate(s), not merged: wic ~ wiic"
+   ],
+   "id": "wic#at a point",
+   "meaning": "at a point",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 13
+  },
+  {
+   "form": "has",
+   "found": [
+    "variant candidate(s), not merged: has ~ haas"
+   ],
+   "id": "has#string",
+   "meaning": "string",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 12
+  },
+  {
+   "form": "haaka",
+   "found": [
+    "shape has 2 other meaning(s) kept apart: drum (0); skull (0)"
+   ],
+   "id": "haaka#mouth",
+   "meaning": "mouth",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 12
+  },
+  {
+   "form": "katiit",
+   "found": [
+    "shape has 1 other meaning(s) kept apart: blackness (1)",
+    "variant candidate(s), not merged: kaatiit ~ katiit; katiit ~ kaatiit"
+   ],
+   "id": "katiit#black",
+   "meaning": "black",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 12
+  },
+  {
+   "form": "wakur",
+   "found": [
+    "shape has 2 other meaning(s) kept apart: voice to speak (3); words (1)"
+   ],
+   "id": "wakur#speech",
+   "meaning": "speech",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 12
+  },
+  {
+   "form": "kasis",
+   "found": [
+    "only 6 of 11 checked words mention the head meaning 'hard'; the sense groups several glosses",
+    "shape has 1 other meaning(s) kept apart: solidly (1)"
+   ],
+   "id": "kasis#hard",
+   "meaning": "hard",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 12
+  },
+  {
+   "form": "t",
+   "found": [],
+   "id": "t=LOC",
+   "meaning": "locative/directional prefix or prefix string",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 12
+  },
+  {
+   "form": "rikiis",
+   "found": [
+    "shape has 3 other meaning(s) kept apart: cooked (0); cut short (0); proud of (1)"
+   ],
+   "id": "rikiis#corn",
+   "meaning": "corn",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 11
+  },
+  {
+   "form": "haas",
+   "found": [
+    "its dictionary entries have different classes (N-DEP, VD): possibly more than one morpheme under one meaning",
+    "variant candidate(s), not merged: has ~ haas"
+   ],
+   "id": "haas#string",
+   "meaning": "string",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 11
+  },
+  {
+   "form": "hata",
+   "found": [],
+   "id": "hata#hole",
+   "meaning": "hole",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 11
+  },
+  {
+   "form": "iir",
+   "found": [
+    "shape has 1 other meaning(s) kept apart: carcass (0)",
+    "short form: the string occurs inside 390 headwords, an analysis places it in 15; only the analysed ones are counted"
+   ],
+   "id": "iir#put down",
+   "meaning": "put down",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 10
+  },
+  {
+   "form": "sakuur",
+   "found": [
+    "shape has 1 other meaning(s) kept apart: sun (6)"
+   ],
+   "id": "sakuur#a day",
+   "meaning": "a day",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 10
+  },
+  {
+   "form": "kituu",
+   "found": [
+    "only 5 of 9 checked words mention the head meaning 'complete'; the sense groups several glosses"
+   ],
+   "id": "kituu#complete",
+   "meaning": "complete",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 10
+  },
+  {
+   "form": "ruuc",
+   "found": [],
+   "id": "ruuc#lay down",
+   "meaning": "lay down",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 10
+  },
+  {
+   "form": "kaaʔa",
+   "found": [
+    "only 1 of 9 checked words mention the head meaning 'emerge'; the sense groups several glosses",
+    "shape has 1 other meaning(s) kept apart: dance (0)"
+   ],
+   "id": "kaaʔa#emerge",
+   "meaning": "emerge",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 10
+  },
+  {
+   "form": "riici",
+   "found": [],
+   "id": "riici#knife",
+   "meaning": "knife",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 10
+  },
+  {
+   "form": "pahaat",
+   "found": [
+    "shape has 1 other meaning(s) kept apart: mescal bean (0)"
+   ],
+   "id": "pahaat#red",
+   "meaning": "red",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 9
+  },
+  {
+   "form": "huukita",
+   "found": [
+    "its dictionary entries have different classes (LOC, VL): possibly more than one morpheme under one meaning"
+   ],
+   "id": "huukita#on top",
+   "meaning": "on top",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 9
+  },
+  {
+   "form": "itik",
+   "found": [
+    "shape has 2 other meaning(s) kept apart: go (6); holding (0)",
+    "variant candidate(s), not merged: itik ~ iitik; itik ~ iitik"
+   ],
+   "id": "itik#become",
+   "meaning": "become",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 9
+  },
+  {
+   "form": "huu",
+   "found": [
+    "shape has 2 other meaning(s) kept apart: through water (5); mush (7)",
+    "variant candidate(s), not merged: u ~ huu",
+    "short form: the string occurs inside 260 headwords, an analysis places it in 13; only the analysed ones are counted"
+   ],
+   "id": "huu#surface",
+   "meaning": "surface",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 9
+  },
+  {
+   "form": "kiihaar",
+   "found": [],
+   "id": "kiihaar#room",
+   "meaning": "room",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 9
+  },
+  {
+   "form": "tariiʔuus",
+   "found": [
+    "shape has 1 other meaning(s) kept apart: green (0)"
+   ],
+   "id": "tariiʔuus#blue",
+   "meaning": "blue",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 9
+  },
+  {
+   "form": "tiraak",
+   "found": [],
+   "id": "tiraak#gun",
+   "meaning": "gun",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 9
+  },
+  {
+   "form": "cak",
+   "found": [
+    "shape has 2 other meaning(s) kept apart: pierce (1); stick (1)",
+    "variant candidate(s), not merged: caak ~ cak"
+   ],
+   "id": "cak#strike",
+   "meaning": "strike",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 9
+  },
+  {
+   "form": "haturaar",
+   "found": [
+    "shape has 1 other meaning(s) kept apart: trail (1)"
+   ],
+   "id": "haturaar#road",
+   "meaning": "road",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 9
+  },
+  {
+   "form": "iis",
+   "found": [
+    "short form: the string occurs inside 219 headwords, an analysis places it in 9; only the analysed ones are counted"
+   ],
+   "id": "iis#out of sight",
+   "meaning": "out of sight",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 9
+  },
+  {
+   "form": "kuut",
+   "found": [],
+   "id": "kuut#die",
+   "meaning": "die",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 9
+  },
+  {
+   "form": "uuc",
+   "found": [
+    "its dictionary entries have different classes (VR, VT): possibly more than one morpheme under one meaning",
+    "variant candidate(s), not merged: uuc ~ uc",
+    "short form: the string occurs inside 85 headwords, an analysis places it in 9; only the analysed ones are counted"
+   ],
+   "id": "uuc#lay",
+   "meaning": "lay",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 9
+  },
+  {
+   "form": "icus",
+   "found": [],
+   "id": "icus#nose",
+   "meaning": "nose",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 8
+  },
+  {
+   "form": "raawis",
+   "found": [
+    "shape has 1 other meaning(s) kept apart: paint (0)"
+   ],
+   "id": "raawis#smoke",
+   "meaning": "smoke",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 8
+  }
+ ],
+ "blind": {
+  "files": [
+   "result_affixes.json",
+   "result_roots_1.json",
+   "result_roots_2.json"
+  ],
+  "rows": [
+   {
+    "form": "wi",
+    "headword": "aahkatawi-",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-aahkatawi--p2-0040",
+    "pipeline_treatment_of_piece": [
+     "literal"
+    ],
+    "raw_etymology": "<aahkata.wi, along a vertical bank>",
+    "sense": "wi=LOC"
+   },
+   {
+    "form": "wi",
+    "issue": "reviewer sense not matched",
+    "kind": "grammatical",
+    "pipeline_senses": [
+     "upright",
+     "LOC"
+    ],
+    "reviewer_label": "QUOT",
+    "reviewer_meaning": "quotative evidential: 'it is said' (speaker repeats what was told)",
+    "reviewer_n_words": 0
+   },
+   {
+    "form": "raar",
+    "issue": "reviewer sense not matched",
+    "kind": "lexical",
+    "pipeline_senses": [
+     "sibling of same sex brother",
+     "ones looking",
+     "perh iter",
+     "do",
+     "use",
+     "PL/ITER"
+    ],
+    "reviewer_label": null,
+    "reviewer_meaning": "be planted (said of seeds)",
+    "reviewer_n_words": 1
+   },
+   {
+    "form": "ut",
+    "issue": "reviewer sense not matched",
+    "kind": "grammatical",
+    "pipeline_senses": [
+     "PREV"
+    ],
+    "reviewer_label": "TRANS",
+    "reviewer_meaning": "transitivizer: adds an object to the stem",
+    "reviewer_n_words": 9
+   },
+   {
+    "form": "ut",
+    "issue": "reviewer sense not matched",
+    "kind": "grammatical",
+    "pipeline_senses": [
+     "PREV"
+    ],
+    "reviewer_label": "BEN",
+    "reviewer_meaning": "benefactive / dative: 'for, to, at (someone)'",
+    "reviewer_n_words": 39
+   },
+   {
+    "form": "ut",
+    "issue": "reviewer sense not matched",
+    "kind": "grammatical",
+    "pipeline_senses": [
+     "PREV"
+    ],
+    "reviewer_label": "P.POSS",
+    "reviewer_meaning": "patient-possessor member of the possessive / benefactive sequence ir ... (ri ...) ut-: 'wear, have on; do for'",
+    "reviewer_n_words": 10
+   },
+   {
+    "form": "ra",
+    "issue": "reviewer sense not matched",
+    "kind": "grammatical",
+    "pipeline_senses": [
+     "perh abs",
+     "now",
+     "PORT",
+     "ABS",
+     "ABS/PORT"
+    ],
+    "reviewer_label": "INF.A",
+    "reviewer_meaning": "first part of the infinitive mode prefix ra ... ku-",
+    "reviewer_n_words": 0
+   },
+   {
+    "form": "uur",
+    "issue": "reviewer sense not matched",
+    "kind": "grammatical",
+    "pipeline_senses": [
+     "PREV"
+    ],
+    "reviewer_label": "TRANS",
+    "reviewer_meaning": "transitivizer: adds an object to the stem",
+    "reviewer_n_words": 8
+   },
+   {
+    "form": "uur",
+    "issue": "reviewer sense not matched",
+    "kind": "grammatical",
+    "pipeline_senses": [
+     "PREV"
+    ],
+    "reviewer_label": "P.POSS",
+    "reviewer_meaning": "patient possession: the patient (someone other than the agent) owns the thing; translated 'someone's, one's, from (someone)', and with ir...ri... 'have, possess'",
+    "reviewer_n_words": 21
+   },
+   {
+    "form": "wuh",
+    "issue": "pipeline tier A/B sense the reviewer did not list",
+    "sense": "wuh#cause to be upright",
+    "words_AB": 3
+   },
+   {
+    "form": "waa",
+    "headword": "waa",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-waa-p174-3441",
+    "pipeline_treatment_of_piece": [
+     "DIST"
+    ],
+    "raw_etymology": "<waa, be upright + DIST>",
+    "sense": "waa#growing"
+   },
+   {
+    "form": "waa",
+    "headword": "waawuh",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-waawuh-p175-3460",
+    "pipeline_treatment_of_piece": [
+     "DIST"
+    ],
+    "raw_etymology": "<waa+wuh, cause to be upright + DIST>",
+    "sense": "waa#growing"
+   },
+   {
+    "form": "waa",
+    "headword": "uuspaa",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-uuspaa-p173-3428",
+    "pipeline_treatment_of_piece": [
+     "DIST"
+    ],
+    "raw_etymology": "<uus+waa, hair to be upright + DIST>",
+    "sense": "waa#growing"
+   },
+   {
+    "form": "ri",
+    "issue": "reviewer sense not matched",
+    "kind": "grammatical",
+    "pipeline_senses": [
+     "holding against a vertical surface",
+     "taking",
+     "scrapes",
+     "PORT"
+    ],
+    "reviewer_label": "PHY.POSS",
+    "reviewer_meaning": "physical possession, in the sequences ir ... ri ... uur- 'have, possess' and ir ... ri ... ut- 'do for'",
+    "reviewer_n_words": 10
+   },
+   {
+    "form": "ri",
+    "issue": "reviewer sense not matched",
+    "kind": "grammatical",
+    "pipeline_senses": [
+     "holding against a vertical surface",
+     "taking",
+     "scrapes",
+     "PORT"
+    ],
+    "reviewer_label": null,
+    "reviewer_meaning": "prefix that derives certain vocalization verbs (Parks's own wording)",
+    "reviewer_n_words": 2
+   },
+   {
+    "form": "ri",
+    "issue": "reviewer sense not matched",
+    "kind": "grammatical",
+    "pipeline_senses": [
+     "holding against a vertical surface",
+     "taking",
+     "scrapes",
+     "PORT"
+    ],
+    "reviewer_label": "CONT.3.A",
+    "reviewer_meaning": "contingent mode prefix with third-person agent",
+    "reviewer_n_words": 0
+   },
+   {
+    "form": "ir",
+    "headword": "Ø",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-ø-p349-3568",
+    "pipeline_treatment_of_piece": [
+     "PREV"
+    ],
+    "raw_etymology": "<ir+Ø, be one's>",
+    "sense": "ir=POSS"
+   },
+   {
+    "form": "ir",
+    "headword": "hata",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-hata-p38-0667",
+    "pipeline_treatment_of_piece": [
+     "PREV"
+    ],
+    "raw_etymology": "<ir+hata, have a hole>",
+    "sense": "ir=POSS"
+   },
+   {
+    "form": "ir",
+    "headword": "kuratiihaaʔu",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-kuratiihaaqu-p102-1979",
+    "pipeline_treatment_of_piece": [
+     "PREV"
+    ],
+    "raw_etymology": "<ku+ra-+t+ir+haa.u, one that I have as a child>",
+    "sense": "ir=POSS"
+   },
+   {
+    "form": "ir",
+    "headword": "ackurus",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-ackurus-p8-0081",
+    "pipeline_treatment_of_piece": [
+     "PREV"
+    ],
+    "raw_etymology": "ir+ackurus, have as a female in-law",
+    "sense": "ir=POSS"
+   },
+   {
+    "form": "ir",
+    "issue": "reviewer sense not matched",
+    "kind": "grammatical",
+    "pipeline_senses": [
+     "ir",
+     "PREV",
+     "POSS"
+    ],
+    "reviewer_label": "PL",
+    "reviewer_meaning": "third-person plural or indefinite agent: 'they' (collective plural / obviative)",
+    "reviewer_n_words": 10
+   },
+   {
+    "form": "ir",
+    "headword": "takipiir",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-takipiir-p157-3077",
+    "pipeline_treatment_of_piece": [
+     "meaning_unknown_to_parks"
+    ],
+    "raw_etymology": "takik.wi+ir, gather together + ir",
+    "sense": "ir#ir"
+   },
+   {
+    "form": "ir",
+    "headword": "riiwatir",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-riiwatir-p490-4149",
+    "pipeline_treatment_of_piece": [
+     "meaning_unknown_to_parks"
+    ],
+    "raw_etymology": "riiwat+ir, be looking + ir; i.q. SB reewatir; cf. Ar. reewatir be able to see",
+    "sense": "ir#ir"
+   },
+   {
+    "form": "ir",
+    "headword": "tahuriipiiruʔ",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-tahuriipiiruq-p156-3048",
+    "pipeline_treatment_of_piece": [
+     "PREV"
+    ],
+    "raw_etymology": "tahuriik.wi.ir+uʔ, belt + NOM; i.q. SB tahureepiiruʔ, Ar. tAhuneepiínuʔ",
+    "sense": "ir#ir"
+   },
+   {
+    "form": "ir",
+    "headword": "hastariipiiruʔ",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-hastariipiiruq-p38-0664",
+    "pipeline_treatment_of_piece": [
+     "PREV"
+    ],
+    "raw_etymology": "<has+ta-riik.wi.ir+uʔ, tied string + NOM>",
+    "sense": "ir#ir"
+   },
+   {
+    "form": "ir",
+    "headword": "hatkatatawiir-i",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-hatkatatawiir-i-p38-0677",
+    "pipeline_treatment_of_piece": [
+     "PREV"
+    ],
+    "raw_etymology": "<hat+katata.wi+ir.i, get the tongue entangled>",
+    "sense": "ir#ir"
+   },
+   {
+    "form": "hiriʔ",
+    "headword": "tarahkisiriʔ",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-tarahkisiriq-p160-3135",
+    "pipeline_treatment_of_piece": [
+     "LOC"
+    ],
+    "raw_etymology": "<tarahkiis+hiriʔ, by means of strength, i.e., with difficulty>",
+    "sense": "hiriʔ=INSTR"
+   },
+   {
+    "form": "ik",
+    "headword": "uuskiicik",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-uuskiicik-p173-3424",
+    "pipeline_treatment_of_piece": [
+     "CAUS"
+    ],
+    "raw_etymology": "<uus+kiiʔac+ik, hair to be long + DIST>",
+    "sense": "ik=DIST"
+   },
+   {
+    "form": "ik",
+    "headword": "ratkahaahkatiitik",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-ratkahaahkatiitik-p138-2738",
+    "pipeline_treatment_of_piece": [
+     "aligned"
+    ],
+    "raw_etymology": "<ratkahaar+katiit+ik, be a + DIST + dark night>",
+    "sense": "ik=DIST"
+   },
+   {
+    "form": "ik",
+    "headword": "wakuhkiisik",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-wakuhkiisik-p176-3482",
+    "pipeline_treatment_of_piece": [
+     "CAUS"
+    ],
+    "raw_etymology": "<wakur+kiis (ir...)+ik, be proud in speech + DIST>",
+    "sense": "ik=DIST"
+   },
+   {
+    "form": "rik",
+    "headword": "kickirarik",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-kickirarik-p87-1635",
+    "pipeline_treatment_of_piece": [
+     "CAUS"
+    ],
+    "raw_etymology": "kic+kira(a)r+rik, liquid to be clear + DIST",
+    "sense": "rik=DIST"
+   },
+   {
+    "form": "rik",
+    "headword": "parihik",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-parihik-p110-2132",
+    "pipeline_treatment_of_piece": [
+     "CAUS"
+    ],
+    "raw_etymology": "<ruu+i+parit+rik, INTS + be smooth + DIST>",
+    "sense": "rik=DIST"
+   },
+   {
+    "form": "rik",
+    "issue": "reviewer sense not matched",
+    "kind": "lexical",
+    "pipeline_senses": [
+     "rik",
+     "separate",
+     "CAUS",
+     "DIST"
+    ],
+    "reviewer_label": null,
+    "reviewer_meaning": "be true (of speech)",
+    "reviewer_n_words": 1
+   },
+   {
+    "form": "ka",
+    "issue": "reviewer sense not matched",
+    "kind": "grammatical",
+    "pipeline_senses": [
+     "on",
+     "outstanding",
+     "what",
+     "ITER"
+    ],
+    "reviewer_label": "NEG",
+    "reviewer_meaning": "simple negative proclitic",
+    "reviewer_n_words": 1
+   },
+   {
+    "form": "ka",
+    "issue": "reviewer sense not matched",
+    "kind": "grammatical",
+    "pipeline_senses": [
+     "on",
+     "outstanding",
+     "what",
+     "ITER"
+    ],
+    "reviewer_label": "INTER",
+    "reviewer_meaning": "yes-no question proclitic",
+    "reviewer_n_words": 0
+   },
+   {
+    "form": "ta",
+    "issue": "reviewer sense not matched",
+    "kind": "grammatical",
+    "pipeline_senses": [
+     "suspended",
+     "GEN.LOC"
+    ],
+    "reviewer_label": "INT",
+    "reviewer_meaning": "intentive aspect suffix: 'is going to ...'",
+    "reviewer_n_words": 0
+   },
+   {
+    "form": "ta",
+    "issue": "reviewer sense not matched",
+    "kind": "grammatical",
+    "pipeline_senses": [
+     "suspended",
+     "GEN.LOC"
+    ],
+    "reviewer_label": "IND.1/2.A",
+    "reviewer_meaning": "indicative mode prefix with first- and second-person agent",
+    "reviewer_n_words": 0
+   },
+   {
+    "form": "t",
+    "issue": "reviewer sense not matched",
+    "kind": "grammatical",
+    "pipeline_senses": [
+     "one that i have as a child",
+     "LOC"
+    ],
+    "reviewer_label": "1.A",
+    "reviewer_meaning": "first-person agent prefix: 'I'",
+    "reviewer_n_words": 1
+   },
+   {
+    "form": "k",
+    "issue": "reviewer sense not matched",
+    "kind": "grammatical",
+    "pipeline_senses": [
+     "TRANS"
+    ],
+    "reviewer_label": "CAUS",
+    "reviewer_meaning": "causative: 'cause to be ...; set, put (in a position)' - makes a transitive verb from a stative or positional stem",
+    "reviewer_n_words": 31
+   },
+   {
+    "form": "k",
+    "issue": "reviewer sense not matched",
+    "kind": "grammatical",
+    "pipeline_senses": [
+     "TRANS"
+    ],
+    "reviewer_label": "DIST",
+    "reviewer_meaning": "distributive, on a descriptive stem",
+    "reviewer_n_words": 1
+   },
+   {
+    "form": "u",
+    "headword": "kirikaʔu",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-kirikaqu-p96-1827",
+    "pipeline_treatment_of_piece": [
+     "default_single_sense"
+    ],
+    "raw_etymology": "<kirika+u, be awake>",
+    "sense": "u=ACT"
+   },
+   {
+    "form": "u",
+    "headword": "iciiraʔu",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-iciiraqu-p56-0963",
+    "pipeline_treatment_of_piece": [
+     "default_single_sense"
+    ],
+    "raw_etymology": "<iciira+u, be mischievous; cf. Ar. iseenaʔu be stingy>",
+    "sense": "u=ACT"
+   },
+   {
+    "form": "irii",
+    "headword": "irihii",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-irihii-p65-1133",
+    "pipeline_treatment_of_piece": [
+     "default_single_sense"
+    ],
+    "raw_etymology": "<irii+hii, that + other>",
+    "sense": "irii#there"
+   },
+   {
+    "form": "irii",
+    "headword": "irihiitaku",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-irihiitaku-p65-1134",
+    "pipeline_treatment_of_piece": [
+     "REL"
+    ],
+    "raw_etymology": "<irii+hii+taku, there other + LOC.ADV>",
+    "sense": "irii#there"
+   },
+   {
+    "form": "irii",
+    "headword": "iriraaku",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-iriraaku-p67-1180",
+    "pipeline_treatment_of_piece": [
+     "REL"
+    ],
+    "raw_etymology": "irii.ra.kus.Ø, that one sitting",
+    "sense": "irii#there"
+   },
+   {
+    "form": "irii",
+    "issue": "reviewer sense not matched",
+    "kind": "grammatical",
+    "pipeline_senses": [
+     "there",
+     "REL"
+    ],
+    "reviewer_label": null,
+    "reviewer_meaning": "relative: 'where ...; the one that / who ...' (with a following absolutive ra-)",
+    "reviewer_n_words": 31
+   },
+   {
+    "form": "kucuu",
+    "headword": "riicikucuuʔ",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-riicikucuuq-p140-2778",
+    "pipeline_treatment_of_piece": [
+     "literal"
+    ],
+    "raw_etymology": "riici+kucuu, large knife",
+    "sense": "kucuu=AUG"
+   },
+   {
+    "form": "kucuu",
+    "headword": "aahkucuuʔ",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-aahkucuuq-p2-0045",
+    "pipeline_treatment_of_piece": [
+     "literal"
+    ],
+    "raw_etymology": "<aar+kucuu, large tooth>",
+    "sense": "kucuu=AUG"
+   },
+   {
+    "form": "kucuu",
+    "issue": "pipeline tier A/B sense the reviewer did not list",
+    "sense": "kucuu#big",
+    "words_AB": 21
+   },
+   {
+    "form": "raa",
+    "headword": "raakiiraʔuk",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-raakiiraquk-p119-2325",
+    "pipeline_treatment_of_piece": [
+     "unassigned_homonym"
+    ],
+    "raw_etymology": "<raa+kii+raʔuk, cause PL to be strung in a line>",
+    "sense": "raa=PL"
+   },
+   {
+    "form": "raa",
+    "headword": "raatakipuh",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-raatakipuh-p124-2441",
+    "pipeline_treatment_of_piece": [
+     "literal"
+    ],
+    "raw_etymology": "<raa+takik.wuh, gather things together>",
+    "sense": "raa=PL"
+   },
+   {
+    "form": "raa",
+    "headword": "raaʔat",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-raaqat-p114-2228",
+    "pipeline_treatment_of_piece": [
+     "literal"
+    ],
+    "raw_etymology": "ut+raa+at, go for things",
+    "sense": "raa=PL"
+   },
+   {
+    "form": "a",
+    "issue": "reviewer sense not matched",
+    "kind": "lexical",
+    "pipeline_senses": [
+     "come",
+     "extending in a line",
+     "wear",
+     "your",
+     "ones image",
+     "stretched out",
+     "SUB"
+    ],
+    "reviewer_label": null,
+    "reviewer_meaning": "and",
+    "reviewer_n_words": 2
+   },
+   {
+    "form": "a",
+    "headword": "iksawuh",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-iksawuh-p63-1083",
+    "pipeline_treatment_of_piece": [
+     "inherited"
+    ],
+    "raw_etymology": "ut-+iks+a.wuh, cause to wear on one's wrist",
+    "sense": "a#wear"
+   },
+   {
+    "form": "a",
+    "issue": "reviewer sense not matched",
+    "kind": "lexical",
+    "pipeline_senses": [
+     "come",
+     "extending in a line",
+     "wear",
+     "your",
+     "ones image",
+     "stretched out",
+     "SUB"
+    ],
+    "reviewer_label": null,
+    "reviewer_meaning": "eat",
+    "reviewer_n_words": 1
+   },
+   {
+    "form": "a",
+    "headword": "tiirukcaakata",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-tiirukcaakata-p165-3255",
+    "pipeline_treatment_of_piece": [
+     "unassigned_homonym"
+    ],
+    "raw_etymology": "<tii+ra+uks+saak+at+a, this day that went>",
+    "sense": "a=SUB"
+   },
+   {
+    "form": "a",
+    "headword": "tiihiirukcaakata",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-tiihiirukcaakata-p164-3238",
+    "pipeline_treatment_of_piece": [
+     "unassigned_homonym"
+    ],
+    "raw_etymology": "tii+hii+ra+uks+saak+at+a, this other day that went",
+    "sense": "a=SUB"
+   },
+   {
+    "form": "a",
+    "issue": "pipeline tier A/B sense the reviewer did not list",
+    "sense": "a#your",
+    "words_AB": 3
+   },
+   {
+    "form": "ka",
+    "headword": "kahuraahkicuuciskat",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-kahuraahkicuuciskat-p76-1382",
+    "pipeline_treatment_of_piece": [],
+    "raw_etymology": "<ka- huraar+kicuucis+kat, thick woodland + LOC>",
+    "sense": "ka#on"
+   },
+   {
+    "form": "aar",
+    "headword": "riiʔuusisaar",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-riiquusisaar-p139-2766",
+    "pipeline_treatment_of_piece": [
+     "INCH"
+    ],
+    "raw_etymology": "<riiʔuus.his+aar, to know + PERF + INCH, i.e., become knowledgeable>",
+    "sense": "aar#become"
+   },
+   {
+    "form": "aar",
+    "headword": "aar ciksuʔ",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-aar_ciksuq-p351-3597",
+    "pipeline_treatment_of_piece": [
+     "unassigned_homonym"
+    ],
+    "raw_etymology": "<ir+ri+aar (ut...) (a)ciks.uʔ, pray for, think about for>",
+    "sense": "aar#do"
+   },
+   {
+    "form": "warik",
+    "headword": "rahwarik",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-rahwarik-p133-2607",
+    "pipeline_treatment_of_piece": [
+     "aligned"
+    ],
+    "raw_etymology": "<raar+warik, ITER + send>",
+    "sense": "warik#cause to go"
+   },
+   {
+    "form": "hiir",
+    "headword": "hawiir-i",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-hawiir-i-p40-0683",
+    "pipeline_treatment_of_piece": [
+     "inside_stem_unanalysed"
+    ],
+    "raw_etymology": "<hiir.i (ut...)+waa, stay overnight + DIST; cf. SB aweer (ut...) be so many nights, i.e., days>",
+    "sense": "hiir#night to elapse"
+   },
+   {
+    "form": "kiraar",
+    "headword": "kickiraar",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-kickiraar-p87-1634",
+    "pipeline_treatment_of_piece": [
+     "literal"
+    ],
+    "raw_etymology": "kic-+kiraar, liquid to be clear",
+    "sense": "kiraar#light in color"
+   },
+   {
+    "form": "kiraar",
+    "headword": "sakuhkiraar",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-sakuhkiraar-p151-2945",
+    "pipeline_treatment_of_piece": [
+     "literal"
+    ],
+    "raw_etymology": "<sakuur+kiraar, clear day>",
+    "sense": "kiraar#light in color"
+   },
+   {
+    "form": "kiraar",
+    "headword": "kuckiraaʔ",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-kuckiraaq-p101-1955",
+    "pipeline_treatment_of_piece": [
+     "literal"
+    ],
+    "raw_etymology": "<kuc+kiraar, transparent vessel/clay>",
+    "sense": "kiraar#light in color"
+   },
+   {
+    "form": "u",
+    "headword": "wakaʔu",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-wakaqu-p175-3464",
+    "pipeline_treatment_of_piece": [
+     "TRANS"
+    ],
+    "raw_etymology": "<waka+u, (to) voice + TRANS>",
+    "sense": "u=ACT"
+   },
+   {
+    "form": "u",
+    "headword": "kirikaʔu",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-kirikaqu-p96-1827",
+    "pipeline_treatment_of_piece": [
+     "default_single_sense"
+    ],
+    "raw_etymology": "<kirika+u, be awake>",
+    "sense": "u=ACT"
+   },
+   {
+    "form": "icka",
+    "headword": "ickaʔat",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-ickaqat-p56-0971",
+    "pipeline_treatment_of_piece": [
+     "literal"
+    ],
+    "raw_etymology": "<icka+at, go to the extremity>",
+    "sense": "icka#end"
+   },
+   {
+    "form": "icka",
+    "headword": "ickaʔu",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-ickaqu-p57-0974",
+    "pipeline_treatment_of_piece": [
+     "aligned"
+    ],
+    "raw_etymology": "<icka+u, sharp + ACT>",
+    "sense": "icka#end"
+   },
+   {
+    "form": "icka",
+    "headword": "ickaraʔuk",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-ickaraquk-p57-0981",
+    "pipeline_treatment_of_piece": [
+     "literal"
+    ],
+    "raw_etymology": "<icka+raʔuk, make sharp>",
+    "sense": "icka#end"
+   },
+   {
+    "form": "haar",
+    "headword": "awakiihaar",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-awakiihaar-p20-0269",
+    "pipeline_treatment_of_piece": [
+     "literal"
+    ],
+    "raw_etymology": "awakii+haar, be in a state of enjoyment",
+    "sense": "haar#place"
+   },
+   {
+    "form": "haar",
+    "headword": "itkasaaruʔ",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-itkasaaruq-p69-1232",
+    "pipeline_treatment_of_piece": [
+     "literal"
+    ],
+    "raw_etymology": "<itkas+haar+uʔ, be in a sleeping state + NOM>",
+    "sense": "haar#place"
+   },
+   {
+    "form": "haar",
+    "headword": "raawakiihaar",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-raawakiihaar-p126-2466",
+    "pipeline_treatment_of_piece": [],
+    "raw_etymology": "<raa+awakii- haar, be a plentiful way>",
+    "sense": "haar#place"
+   },
+   {
+    "form": "haar",
+    "headword": "ratkahaar",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-ratkahaar-p139-2743",
+    "pipeline_treatment_of_piece": [
+     "unassigned_homonym"
+    ],
+    "raw_etymology": "<ratka+haar, be night>",
+    "sense": "haar#place"
+   },
+   {
+    "form": "warii",
+    "issue": "reviewer sense not matched",
+    "kind": "lexical",
+    "pipeline_senses": [
+     "go around"
+    ],
+    "reviewer_label": null,
+    "reviewer_meaning": "be warm: a reduced shape of wariit, not the motion verb",
+    "reviewer_n_words": 1
+   },
+   {
+    "form": "rak",
+    "issue": "reviewer sense not matched",
+    "kind": "grammatical",
+    "pipeline_senses": [
+     "wood",
+     "grandchild"
+    ],
+    "reviewer_label": "1/2.PL",
+    "reviewer_meaning": "first and second person plural (plural agent of active, descriptive and locative verbs; plural patient of passive verbs)",
+    "reviewer_n_words": 0
+   },
+   {
+    "form": "ica",
+    "headword": "icarahii",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-icarahii-p55-0933",
+    "pipeline_treatment_of_piece": [
+     "literal"
+    ],
+    "raw_etymology": "<ica+rahii (uur...), indented on the end>",
+    "sense": "ica#indentation around"
+   },
+   {
+    "form": "ica",
+    "headword": "icakuusk",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-icakuusk-p54-0927",
+    "pipeline_treatment_of_piece": [
+     "unassigned_homonym"
+    ],
+    "raw_etymology": "<ut+ica.kuusk, cause to be pierced>",
+    "sense": "ica#stuck in"
+   },
+   {
+    "form": "kiic",
+    "issue": "reviewer sense not matched",
+    "kind": "lexical",
+    "pipeline_senses": [
+     "neck"
+    ],
+    "reviewer_label": null,
+    "reviewer_meaning": "juice, sap (a liquid); probably Parks's kic 'liquid' written long",
+    "reviewer_n_words": 1
+   },
+   {
+    "form": "akaar",
+    "headword": "asahcakaaruʔ",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-asahcakaaruq-p363-3755",
+    "pipeline_treatment_of_piece": [
+     "literal"
+    ],
+    "raw_etymology": "asahc-+akaar+uʔ, mosquito canvas + NOM",
+    "sense": "akaar#hide"
+   },
+   {
+    "form": "kucuu",
+    "headword": "kaciikucuuʔ",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-kaciikucuuq-p75-1359",
+    "pipeline_treatment_of_piece": [
+     "literal"
+    ],
+    "raw_etymology": "kacii+kucuu, large fish",
+    "sense": "kucuu=AUG"
+   },
+   {
+    "form": "kucuu",
+    "headword": "riicikucuuʔ",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-riicikucuuq-p140-2778",
+    "pipeline_treatment_of_piece": [
+     "literal"
+    ],
+    "raw_etymology": "riici+kucuu, large knife",
+    "sense": "kucuu=AUG"
+   },
+   {
+    "form": "kucuu",
+    "headword": "caahikskucuuʔ",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-caahikskucuuq-p26-0365",
+    "pipeline_treatment_of_piece": [
+     "literal"
+    ],
+    "raw_etymology": "<icaahiks+kucuu, large person>",
+    "sense": "kucuu=AUG"
+   },
+   {
+    "form": "kucuu",
+    "headword": "haturaahkucuuʔ",
+    "issue": "reviewer example not counted under this sense",
+    "lexeme_id": "SK-haturaahkucuuq-p387-3806",
+    "pipeline_treatment_of_piece": [
+     "literal"
+    ],
+    "raw_etymology": "<haturaar+kucuu, large road>",
+    "sense": "kucuu=AUG"
+   },
+   {
+    "form": "kucuu",
+    "issue": "pipeline tier A/B sense the reviewer did not list",
+    "sense": "kucuu#big",
+    "words_AB": 21
+   }
+  ],
+  "summary": {
+   "examples_given": 667,
+   "examples_in_pipeline_set": 611,
+   "forms": 86,
+   "grammatical_sense_matched": 46,
+   "grammatical_sense_not_in_inventory": 20,
+   "lexical_sense_matched": 108,
+   "lexical_sense_not_in_inventory": 6,
+   "pipeline_sense_not_found_by_reviewer": 4,
+   "reviewer_senses": 180
+  }
+ },
+ "extraction": {
+  "counts": {
+   "compared": 120,
+   "entries": 120,
+   "etymology_compared": 119,
+   "forms_compared": 340
+  },
+  "issues": []
+ },
+ "g1": {
+  "affix_tokens": {
+   "in inventory": 179,
+   "not in inventory": 105
+  },
+  "affixes_missing": {
+   "-rit INT.SUB": 4,
+   "-uk SUB.D": 2,
+   "-uku HAB.SUB": 2,
+   "-uukuʔ HAB": 1,
+   "-Ø 3.A": 1,
+   "-Ø PERF": 29,
+   "-Ø SUB.4": 4,
+   "-Ø- 3.A": 2,
+   "karíi- EMPH.NEG": 1,
+   "ki- HORT": 1,
+   "kuur- DUB.1": 1,
+   "si- DU": 1,
+   "uks- AOR": 5,
+   "uks- JUSS": 2,
+   "witi- REFL": 2,
+   "Ø PERF": 7,
+   "Ø SUB.3": 1,
+   "Ø SUB.4": 1,
+   "Ø- 3.A": 38
+  },
+  "clean_examples": 70,
+  "segmentation": {
+   "same": 2
+  },
+  "segmentation_rows": [
+   {
+    "go_page": 31,
+    "lexeme_id": "SK-iksuq-p64-1111",
+    "parks_overview": [
+     "iks",
+     "uʔ"
+    ],
+    "pipeline": [
+     "iks",
+     "uʔ"
+    ],
+    "same": true,
+    "word": "iksuʔ"
+   },
+   {
+    "go_page": 31,
+    "lexeme_id": "SK-iksuq-p64-1111",
+    "parks_overview": [
+     "iks",
+     "uʔ"
+    ],
+    "pipeline": [
+     "iks",
+     "uʔ"
+    ],
+    "same": true,
+    "word": "iksuʔ"
+   }
+  ],
+  "stem_rows": [
+   {
+    "form": "iks-",
+    "gloss": "hand",
+    "go_page": 31,
+    "status": "not a headword"
+   },
+   {
+    "form": "-kis",
+    "gloss": "DIM; riicikiʔ 'knife' < riici- 'knife'",
+    "go_page": 31,
+    "status": "not a headword"
+   },
+   {
+    "form": "wiita",
+    "gloss": "man",
+    "go_page": 31,
+    "status": "not a headword"
+   },
+   {
+    "form": "kusuʔ",
+    "gloss": "big",
+    "go_page": 31,
+    "status": "not a headword"
+   },
+   {
+    "form": "paks-",
+    "gloss": "head",
+    "go_page": 31,
+    "status": "not a headword"
+   },
+   {
+    "form": "-kuuku-",
+    "gloss": "covering",
+    "go_page": 31,
+    "status": "not a headword"
+   },
+   {
+    "form": "icaahiks-",
+    "gloss": "person",
+    "go_page": 32,
+    "status": "headword, gloss differs"
+   },
+   {
+    "form": "aspaatasik",
+    "gloss": "set out",
+    "go_page": 35,
+    "status": "not a headword"
+   },
+   {
+    "form": "kawirahur",
+    "gloss": "be an acre",
+    "go_page": 36,
+    "status": "not a headword"
+   },
+   {
+    "form": "uk",
+    "gloss": "be, exist",
+    "go_page": 36,
+    "status": "not a headword"
+   },
+   {
+    "form": "ariik",
+    "gloss": "be standing",
+    "go_page": 36,
+    "status": "not a headword"
+   },
+   {
+    "form": "riiks-",
+    "gloss": "arrow",
+    "go_page": 36,
+    "status": "not a headword"
+   },
+   {
+    "form": "iiʔirik",
+    "gloss": "see",
+    "go_page": 38,
+    "status": "not a headword"
+   },
+   {
+    "form": "uhuur-",
+    "gloss": "finally",
+    "go_page": 38,
+    "status": "headword, gloss differs"
+   },
+   {
+    "form": "pahiit-",
+    "gloss": "quiet; slow'",
+    "go_page": 39,
+    "status": "not a headword"
+   },
+   {
+    "form": "-uʔ",
+    "gloss": "NOM kaas- POT.2.A",
+    "go_page": 39,
+    "status": "not a headword"
+   },
+   {
+    "form": "aah",
+    "gloss": "go around",
+    "go_page": 39,
+    "status": "headword, gloss differs"
+   },
+   {
+    "form": "acikstarikus",
+    "gloss": "hold one’s thoughts (to oneself)",
+    "go_page": 40,
+    "status": "not a headword"
+   },
+   {
+    "form": "wicka",
+    "gloss": "wish, want",
+    "go_page": 40,
+    "status": "not a headword"
+   },
+   {
+    "form": "sakur-",
+    "gloss": "sun",
+    "go_page": 41,
+    "status": "not a headword"
+   },
+   {
+    "form": "kitaarik",
+    "gloss": "be standing on top",
+    "go_page": 41,
+    "status": "not a headword"
+   },
+   {
+    "form": "iriruu-",
+    "gloss": "thereupon",
+    "go_page": 42,
+    "status": "not a headword"
+   },
+   {
+    "form": "wuu",
+    "gloss": "go PL.3.A",
+    "go_page": 42,
+    "status": "headword, gloss differs"
+   },
+   {
+    "form": "ii-",
+    "gloss": "then; when",
+    "go_page": 42,
+    "status": "headword, gloss differs"
+   },
+   {
+    "form": "ii-",
+    "gloss": "that",
+    "go_page": 42,
+    "status": "headword, gloss differs"
+   },
+   {
+    "form": "iri-",
+    "gloss": "that",
+    "go_page": 42,
+    "status": "headword, gloss differs"
+   },
+   {
+    "form": "ta-",
+    "gloss": "IND.- 1/2.A",
+    "go_page": 42,
+    "status": "headword, gloss differs"
+   },
+   {
+    "form": "irii-",
+    "gloss": "where",
+    "go_page": 42,
+    "status": "not a headword"
+   },
+   {
+    "form": "riku-",
+    "gloss": "the one that",
+    "go_page": 42,
+    "status": "not a headword"
+   },
+   {
+    "form": "kiis-",
+    "gloss": "bone",
+    "go_page": 43,
+    "status": "headword, gloss differs"
+   },
+   {
+    "form": "ii-",
+    "gloss": "when",
+    "go_page": 43,
+    "status": "headword, gloss differs"
+   },
+   {
+    "form": "raasiktik",
+    "gloss": "happen, occur",
+    "go_page": 48,
+    "status": "not a headword"
+   },
+   {
+    "form": "waawaktik",
+    "gloss": "talk",
+    "go_page": 48,
+    "status": "not a headword"
+   },
+   {
+    "form": "paktik",
+    "gloss": "announce",
+    "go_page": 48,
+    "status": "not a headword"
+   },
+   {
+    "form": "-uk",
+    "gloss": "be",
+    "go_page": 49,
+    "status": "not a headword"
+   },
+   {
+    "form": "kuc-",
+    "gloss": "bucket",
+    "go_page": 49,
+    "status": "not a headword"
+   },
+   {
+    "form": "wakarahiis",
+    "gloss": "be raspy voiced",
+    "go_page": 49,
+    "status": "headword, gloss differs"
+   },
+   {
+    "form": "irii-",
+    "gloss": "the one",
+    "go_page": 49,
+    "status": "not a headword"
+   },
+   {
+    "form": "kawihaar-",
+    "gloss": "projectile",
+    "go_page": 50,
+    "status": "not a headword"
+   }
+  ],
+  "stems": {
+   "headword with matching gloss": 45,
+   "headword, gloss differs": 11,
+   "not a headword": 28
+  },
+  "worked_examples": 93
+ },
+ "g2_dev": {
+  "by_tier": {
+   "A": {
+    "correct": 16,
+    "gold_undetermined": 3
+   },
+   "B": {
+    "correct": 14,
+    "gold_undetermined": 2
+   },
+   "C": {
+    "correct": 20,
+    "gold_incomplete": 1
+   },
+   "none": {
+    "agree_no_claim": 4
+   }
+  },
+  "gloss_agree": 22,
+  "gloss_disagree": 4,
+  "n": 60,
+  "precision": {
+   "A": {
+    "ci95": [
+     0.806,
+     1.0
+    ],
+    "correct": 16,
+    "precision": 1.0,
+    "scored": 16
+   },
+   "A+B": {
+    "ci95": [
+     0.886,
+     1.0
+    ],
+    "correct": 30,
+    "precision": 1.0,
+    "scored": 30
+   },
+   "B": {
+    "ci95": [
+     0.785,
+     1.0
+    ],
+    "correct": 14,
+    "precision": 1.0,
+    "scored": 14
+   },
+   "C": {
+    "ci95": [
+     0.839,
+     1.0
+    ],
+    "correct": 20,
+    "precision": 1.0,
+    "scored": 20
+   }
+  },
+  "rows": [
+   {
+    "entry_id": "SK-acikstaquk-p7-0049",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "aciks",
+     "raʔuk"
+    ],
+    "headword": "acikstaʔuk",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "aciks",
+     "raʔuk"
+    ],
+    "status": "correct",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-acikstarahkiis/kis-p7-0055",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "aciks",
+     "tarahkiis"
+    ],
+    "headword": "acikstarahkiis/kis",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "aciks",
+     "tarahkiis"
+    ],
+    "status": "correct",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-acikstawis-p7-0061",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 2,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "aciks",
+     "tawis"
+    ],
+    "headword": "acikstawis",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "aciks",
+     "tawis"
+    ],
+    "status": "correct",
+    "tier": "C",
+    "tier_without_e5": "C"
+   },
+   {
+    "entry_id": "SK-aparuukaatiit-p360-3691",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "aparuu",
+     "kaatiit"
+    ],
+    "headword": "aparuukaatiit",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "aparuu",
+     "kaatiit"
+    ],
+    "status": "correct",
+    "tier": "C",
+    "tier_without_e5": "C"
+   },
+   {
+    "entry_id": "SK-aracik-p360-3711",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "arac",
+     "ik"
+    ],
+    "headword": "aracik",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "arac",
+     "ik"
+    ],
+    "status": "correct",
+    "tier": "B",
+    "tier_without_e5": "B"
+   },
+   {
+    "entry_id": "SK-arasispahaat-p13-0137",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "aras",
+     "his",
+     "pahaat"
+    ],
+    "headword": "arasispahaat",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "aras",
+     "his",
+     "pahaat"
+    ],
+    "status": "correct",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-astihaaruq-p17-0200",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 1,
+    "gloss_disagree": 2,
+    "gold_pieces": [
+     "astii",
+     "haar",
+     "uʔ"
+    ],
+    "headword": "astihaaruʔ",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "astii",
+     "haar",
+     "uʔ"
+    ],
+    "status": "correct",
+    "tier": "C",
+    "tier_without_e5": "C"
+   },
+   {
+    "entry_id": "SK-asuukitahaawarii-p18-0214",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "ut",
+     "as",
+     "huukita",
+     "haa",
+     "warii"
+    ],
+    "headword": "asuukitahaawarii (ut...)",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "ut",
+     "as",
+     "huukita",
+     "haa",
+     "warii"
+    ],
+    "status": "correct",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-awask-p21-0274",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [],
+    "headword": "awask",
+    "kind": "none",
+    "pipeline_pieces": [],
+    "status": "gold_undetermined",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-awihurah-p370-3793",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "ruu",
+     "i",
+     "awi",
+     "hurah"
+    ],
+    "headword": "awihurah [+ ruu-, i-]",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "ruu",
+     "i",
+     "awi",
+     "hurah"
+    ],
+    "status": "correct",
+    "tier": "C",
+    "tier_without_e5": "C"
+   },
+   {
+    "entry_id": "SK-caahiksuraaririq-p26-0370",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "icaahiks",
+     "huraar",
+     "hiriʔ"
+    ],
+    "headword": "caahiksuraaririʔ",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "icaahiks",
+     "huraar",
+     "hiriʔ"
+    ],
+    "status": "correct",
+    "tier": "C",
+    "tier_without_e5": "C"
+   },
+   {
+    "entry_id": "SK-caquuhtuq-p26-0357",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 2,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "icaʔuuht",
+     "uʔ"
+    ],
+    "headword": "caʔuuhtuʔ",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "icaʔuuht",
+     "uʔ"
+    ],
+    "status": "correct",
+    "tier": "C",
+    "tier_without_e5": "C"
+   },
+   {
+    "entry_id": "SK-ci-p28-0430",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [],
+    "headword": "ci",
+    "kind": "none",
+    "pipeline_pieces": [],
+    "status": "gold_undetermined",
+    "tier": "B",
+    "tier_without_e5": "B"
+   },
+   {
+    "entry_id": "SK-ciksuq-p29-0448",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 2,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "aciks",
+     "uʔ"
+    ],
+    "headword": "ciksuʔ",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "aciks",
+     "uʔ"
+    ],
+    "status": "correct",
+    "tier": "B",
+    "tier_without_e5": "B"
+   },
+   {
+    "entry_id": "SK-cuustiraqu-p32-0539",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "cuustik",
+     "ra",
+     "u"
+    ],
+    "headword": "cuustiraʔu",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "cuustik",
+     "ra",
+     "u"
+    ],
+    "status": "correct",
+    "tier": "C",
+    "tier_without_e5": "C"
+   },
+   {
+    "entry_id": "SK-haakita-p35-0593",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "haak",
+     "kita"
+    ],
+    "headword": "haakita",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "haak",
+     "kita"
+    ],
+    "status": "correct",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-haaktariiraquk-p35-0598",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "haak",
+     "rarit",
+     "raʔuk"
+    ],
+    "headword": "haaktariiraʔuk",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "haak",
+     "rarit",
+     "raʔuk"
+    ],
+    "status": "correct",
+    "tier": "C",
+    "tier_without_e5": "C"
+   },
+   {
+    "entry_id": "SK-haski-p37-0650",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 2,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "has",
+     "kis"
+    ],
+    "headword": "haski",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "has",
+     "kis"
+    ],
+    "status": "correct",
+    "tier": "B",
+    "tier_without_e5": "B"
+   },
+   {
+    "entry_id": "SK-hawat-p387-3818",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [],
+    "headword": "hawat",
+    "kind": null,
+    "pipeline_pieces": [
+     "ha",
+     "wat"
+    ],
+    "status": "gold_incomplete",
+    "tier": "C",
+    "tier_without_e5": "C"
+   },
+   {
+    "entry_id": "SK-hiksukac-p390-3864",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "hiks",
+     "ukac"
+    ],
+    "headword": "hiksukac",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "hiks",
+     "ukac"
+    ],
+    "status": "correct",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-huka--p43-0722",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "huka"
+    ],
+    "headword": "huka-",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "huka"
+    ],
+    "status": "correct",
+    "tier": "B",
+    "tier_without_e5": "B"
+   },
+   {
+    "entry_id": "SK-huucakusuuqat-p49-0825",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "huucakus",
+     "huu",
+     "at"
+    ],
+    "headword": "huucakusuuʔat",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "huucakus",
+     "huu",
+     "at"
+    ],
+    "status": "correct",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-icusawask-p59-1017",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "ut",
+     "icus",
+     "awask"
+    ],
+    "headword": "icusawask (ut...)",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "ut",
+     "icus",
+     "awask"
+    ],
+    "status": "correct",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-iisat-p408-3915",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "iis",
+     "at"
+    ],
+    "headword": "iisat",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "iis",
+     "at"
+    ],
+    "status": "correct",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-ikiriwit-p62-1065",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [],
+    "headword": "ikiriwit",
+    "kind": "cognate_only",
+    "pipeline_pieces": [],
+    "status": "gold_undetermined",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-iksuhuraar-p64-1114",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "iks",
+     "uhuraar"
+    ],
+    "headword": "iksuhuraar (ut...)",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "iks",
+     "uhuraar"
+    ],
+    "status": "correct",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-iruuc-p68-1211",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [],
+    "headword": "iruuc",
+    "kind": "none",
+    "pipeline_pieces": [],
+    "status": "agree_no_claim",
+    "tier": null,
+    "tier_without_e5": null
+   },
+   {
+    "entry_id": "SK-kaarik-p73-1306",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "ka",
+     "arik"
+    ],
+    "headword": "kaarik",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "ka",
+     "arik"
+    ],
+    "status": "correct",
+    "tier": "B",
+    "tier_without_e5": "B"
+   },
+   {
+    "entry_id": "SK-kaatahaahiriq-p74-1325",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 1,
+    "gloss_disagree": 2,
+    "gold_pieces": [
+     "kaata",
+     "haar",
+     "hiriʔ"
+    ],
+    "headword": "kaatahaahiriʔ",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "kaata",
+     "haar",
+     "hiriʔ"
+    ],
+    "status": "correct",
+    "tier": "C",
+    "tier_without_e5": "C"
+   },
+   {
+    "entry_id": "SK-katiitawaa-p83-1536",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "katiit",
+     "a",
+     "waa"
+    ],
+    "headword": "katiitawaa",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "katiit",
+     "a",
+     "waa"
+    ],
+    "status": "correct",
+    "tier": "B",
+    "tier_without_e5": "B"
+   },
+   {
+    "entry_id": "SK-kickuhki-p87-1639",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 2,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "kickur",
+     "kis"
+    ],
+    "headword": "kickuhki",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "kickur",
+     "kis"
+    ],
+    "status": "correct",
+    "tier": "C",
+    "tier_without_e5": "C"
+   },
+   {
+    "entry_id": "SK-kiihaahkucuuq-p90-1681",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "kiihaar",
+     "kucuu"
+    ],
+    "headword": "kiihaahkucuuʔ",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "kiihaar",
+     "kucuu"
+    ],
+    "status": "correct",
+    "tier": "B",
+    "tier_without_e5": "B"
+   },
+   {
+    "entry_id": "SK-kiisuq-p93-1757",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 2,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "kiis",
+     "uʔ"
+    ],
+    "headword": "kiisuʔ",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "kiis",
+     "uʔ"
+    ],
+    "status": "correct",
+    "tier": "B",
+    "tier_without_e5": "B"
+   },
+   {
+    "entry_id": "SK-kiraaruq-p94-1793",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 2,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "kiraar",
+     "uʔ"
+    ],
+    "headword": "kiraaruʔ",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "kiraar",
+     "uʔ"
+    ],
+    "status": "correct",
+    "tier": "B",
+    "tier_without_e5": "B"
+   },
+   {
+    "entry_id": "SK-kirikaaqat-p96-1828",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "kirik",
+     "kaaʔat"
+    ],
+    "headword": "kirikaaʔat",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "kirik",
+     "kaaʔat"
+    ],
+    "status": "correct",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-kirikiir-p96-1837",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "kirik",
+     "kiir"
+    ],
+    "headword": "kirikiir",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "kirik",
+     "kiir"
+    ],
+    "status": "correct",
+    "tier": "B",
+    "tier_without_e5": "B"
+   },
+   {
+    "entry_id": "SK-kisu-p98-1897",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [],
+    "headword": "kisu",
+    "kind": "none",
+    "pipeline_pieces": [],
+    "status": "gold_undetermined",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-kiwatak-p448-3979",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "kiwat",
+     "ak"
+    ],
+    "headword": "kiwatak",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "kiwat",
+     "ak"
+    ],
+    "status": "correct",
+    "tier": "C",
+    "tier_without_e5": "C"
+   },
+   {
+    "entry_id": "SK-ksapitaahaku-p448-3984",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "iks",
+     "apitaa",
+     "hak",
+     "hus"
+    ],
+    "headword": "ksapitaahaku",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "iks",
+     "apitaa",
+     "hak",
+     "hus"
+    ],
+    "status": "correct",
+    "tier": "C",
+    "tier_without_e5": "C"
+   },
+   {
+    "entry_id": "SK-kuuctakaahak-p452-4008",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "kuut",
+     "takaahak"
+    ],
+    "headword": "kuuctakaahak",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "kuut",
+     "takaahak"
+    ],
+    "status": "correct",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-paasaat-p107-2029",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [],
+    "headword": "paasaat",
+    "kind": "none",
+    "pipeline_pieces": [],
+    "status": "agree_no_claim",
+    "tier": null,
+    "tier_without_e5": null
+   },
+   {
+    "entry_id": "SK-paasit-p107-2031",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [],
+    "headword": "paasit",
+    "kind": "cognate_only",
+    "pipeline_pieces": [],
+    "status": "agree_no_claim",
+    "tier": null,
+    "tier_without_e5": null
+   },
+   {
+    "entry_id": "SK-pakskatiit-p109-2092",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "paks",
+     "katiit"
+    ],
+    "headword": "pakskatiit",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "paks",
+     "katiit"
+    ],
+    "status": "correct",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-pakuuhtuq-p110-2124",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 2,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "pakuuht",
+     "uʔ"
+    ],
+    "headword": "pakuuhtuʔ",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "pakuuht",
+     "uʔ"
+    ],
+    "status": "correct",
+    "tier": "C",
+    "tier_without_e5": "C"
+   },
+   {
+    "entry_id": "SK-pirusas-i-p113-2199",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "piru",
+     "his",
+     "as",
+     "i"
+    ],
+    "headword": "pirusas-i (uur...)",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "piru",
+     "his",
+     "as",
+     "i"
+    ],
+    "status": "correct",
+    "tier": "C",
+    "tier_without_e5": "C"
+   },
+   {
+    "entry_id": "SK-raqa-p114-2217",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "ra",
+     "a"
+    ],
+    "headword": "raʔa (ir...)",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "ra",
+     "a"
+    ],
+    "status": "correct",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-raaquu-p116-2251",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "raa",
+     "uu"
+    ],
+    "headword": "raaʔuu (ut...)",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "raa",
+     "uu"
+    ],
+    "status": "correct",
+    "tier": "C",
+    "tier_without_e5": "C"
+   },
+   {
+    "entry_id": "SK-raakiir-p119-2324",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "raa",
+     "kiir"
+    ],
+    "headword": "raakiir",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "raa",
+     "kiir"
+    ],
+    "status": "correct",
+    "tier": "B",
+    "tier_without_e5": "B"
+   },
+   {
+    "entry_id": "SK-raaraciihtis-p121-2369",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "raa",
+     "raciihtis"
+    ],
+    "headword": "raaraciihtis",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "raa",
+     "raciihtis"
+    ],
+    "status": "correct",
+    "tier": "C",
+    "tier_without_e5": "C"
+   },
+   {
+    "entry_id": "SK-raawiikatk-p127-2498",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "raa",
+     "awi",
+     "ukatk"
+    ],
+    "headword": "raawiikatk",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "raa",
+     "awi",
+     "ukatk"
+    ],
+    "status": "correct",
+    "tier": "C",
+    "tier_without_e5": "C"
+   },
+   {
+    "entry_id": "SK-raawiraraquk-p128-2515",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "raa",
+     "awi",
+     "raar",
+     "raʔuk"
+    ],
+    "headword": "raawiraraʔuk",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "raa",
+     "awi",
+     "raar",
+     "raʔuk"
+    ],
+    "status": "correct",
+    "tier": "B",
+    "tier_without_e5": "B"
+   },
+   {
+    "entry_id": "SK-racapaahaquk-p129-2542",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "raar",
+     "tapaht",
+     "raʔuk"
+    ],
+    "headword": "racapaahaʔuk",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "raar",
+     "tapaht",
+     "raʔuk"
+    ],
+    "status": "correct",
+    "tier": "B",
+    "tier_without_e5": "B"
+   },
+   {
+    "entry_id": "SK-rikatihaararuu-p491-4165",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "ir",
+     "ri",
+     "ut",
+     "rikatihaar",
+     "raar",
+     "uu"
+    ],
+    "headword": "rikatihaararuu (ir...ri...ut...)",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "ir",
+     "ri",
+     "ut",
+     "rikatihaar",
+     "raar",
+     "uu"
+    ],
+    "status": "correct",
+    "tier": "C",
+    "tier_without_e5": "C"
+   },
+   {
+    "entry_id": "SK-ruciik-p148-2867",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [],
+    "headword": "ruciik [+ ak-]",
+    "kind": "cognate_only",
+    "pipeline_pieces": [],
+    "status": "agree_no_claim",
+    "tier": null,
+    "tier_without_e5": null
+   },
+   {
+    "entry_id": "SK-saak--p151-2937",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [],
+    "headword": "saak-",
+    "kind": "none",
+    "pipeline_pieces": [],
+    "status": "gold_undetermined",
+    "tier": "B",
+    "tier_without_e5": "B"
+   },
+   {
+    "entry_id": "SK-taarikic-p502-4249",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 2,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "taari",
+     "kic"
+    ],
+    "headword": "taarikic",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "taari",
+     "kic"
+    ],
+    "status": "correct",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-tahaakaahc-p155-3023",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "tahaaka",
+     "ahc"
+    ],
+    "headword": "tahaakaahc",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "tahaaka",
+     "ahc"
+    ],
+    "status": "correct",
+    "tier": "C",
+    "tier_without_e5": "C"
+   },
+   {
+    "entry_id": "SK-tarahaks-p160-3128",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "tarahak",
+     "his"
+    ],
+    "headword": "tarahaks",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "tarahak",
+     "his"
+    ],
+    "status": "correct",
+    "tier": "B",
+    "tier_without_e5": "B"
+   },
+   {
+    "entry_id": "SK-tarahiiraquk-p160-3130",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "tarahii",
+     "raʔuk"
+    ],
+    "headword": "tarahiiraʔuk (uur...)",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "tarahii",
+     "raʔuk"
+    ],
+    "status": "correct",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-ukuuk-p171-3381",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 2,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "uk",
+     "kaʔuk"
+    ],
+    "headword": "ukuuk",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "uk",
+     "kaʔuk"
+    ],
+    "status": "correct",
+    "tier": "C",
+    "tier_without_e5": "C"
+   }
+  ],
+  "split": "dev"
+ },
+ "g2_heldout": {
+  "by_tier": {
+   "A": {
+    "correct": 18,
+    "gold_undetermined": 4
+   },
+   "B": {
+    "correct": 18,
+    "gold_undetermined": 1
+   },
+   "C": {
+    "correct": 12
+   },
+   "none": {
+    "agree_no_claim": 7
+   }
+  },
+  "gloss_agree": 13,
+  "gloss_disagree": 6,
+  "n": 60,
+  "precision": {
+   "A": {
+    "ci95": [
+     0.824,
+     1.0
+    ],
+    "correct": 18,
+    "precision": 1.0,
+    "scored": 18
+   },
+   "A+B": {
+    "ci95": [
+     0.904,
+     1.0
+    ],
+    "correct": 36,
+    "precision": 1.0,
+    "scored": 36
+   },
+   "B": {
+    "ci95": [
+     0.824,
+     1.0
+    ],
+    "correct": 18,
+    "precision": 1.0,
+    "scored": 18
+   },
+   "C": {
+    "ci95": [
+     0.757,
+     1.0
+    ],
+    "correct": 12,
+    "precision": 1.0,
+    "scored": 12
+   }
+  },
+  "rows": [
+   {
+    "entry_id": "SK-aciksicaraks-p352-3625",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "aciks",
+     "icaraks"
+    ],
+    "headword": "aciksicaraks",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "aciks",
+     "icaraks"
+    ],
+    "status": "correct",
+    "tier": "B",
+    "tier_without_e5": "B"
+   },
+   {
+    "entry_id": "SK-aciksikiraaruur-p352-3629",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "aciks",
+     "ikiraaruur"
+    ],
+    "headword": "aciksikiraaruur",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "aciks",
+     "ikiraaruur"
+    ],
+    "status": "correct",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-acikskawatak-p354-3649",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "aciks",
+     "kawatak"
+    ],
+    "headword": "acikskawatak",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "aciks",
+     "kawatak"
+    ],
+    "status": "correct",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-acikskiiskawaarasit-p354-3651",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "aciks",
+     "kiiskawaarasit"
+    ],
+    "headword": "acikskiiskawaarasit",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "aciks",
+     "kiiskawaarasit"
+    ],
+    "status": "correct",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-aciksuuwicakstaquk-p8-0077",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "aciksuuwicaks",
+     "raʔuk"
+    ],
+    "headword": "aciksuuwicakstaʔuk (ir...)",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "aciksuuwicaks",
+     "raʔuk"
+    ],
+    "status": "correct",
+    "tier": "B",
+    "tier_without_e5": "B"
+   },
+   {
+    "entry_id": "SK-awikatahak-p24-0314",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "uur",
+     "awi",
+     "kata",
+     "hak"
+    ],
+    "headword": "awikatahak (uur...)",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "uur",
+     "awi",
+     "kata",
+     "hak"
+    ],
+    "status": "correct",
+    "tier": "B",
+    "tier_without_e5": "B"
+   },
+   {
+    "entry_id": "SK-caas,_icaas-p27-0384",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "icaas"
+    ],
+    "headword": "caas, icaas",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "icaas"
+    ],
+    "status": "correct",
+    "tier": "B",
+    "tier_without_e5": "B"
+   },
+   {
+    "entry_id": "SK-cawiraaruukus-p28-0428",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 1,
+    "gloss_disagree": 2,
+    "gold_pieces": [
+     "c",
+     "awiraaraʔuk",
+     "hus"
+    ],
+    "headword": "cawiraaruukus",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "c",
+     "awiraaraʔuk",
+     "hus"
+    ],
+    "status": "correct",
+    "tier": "C",
+    "tier_without_e5": "C"
+   },
+   {
+    "entry_id": "SK-ciihtahaahiriq-p29-0435",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 2,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "iciihtahaar",
+     "hiriʔ"
+    ],
+    "headword": "ciihtahaahiriʔ",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "iciihtahaar",
+     "hiriʔ"
+    ],
+    "status": "correct",
+    "tier": "C",
+    "tier_without_e5": "C"
+   },
+   {
+    "entry_id": "SK-haapiirahak-p35-0603",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "haak",
+     "wii",
+     "ra",
+     "hak"
+    ],
+    "headword": "haapiirahak",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "haak",
+     "wii",
+     "ra",
+     "hak"
+    ],
+    "status": "correct",
+    "tier": "B",
+    "tier_without_e5": "B"
+   },
+   {
+    "entry_id": "SK-haspaaksuq-p38-0655",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "has",
+     "paks",
+     "uʔ"
+    ],
+    "headword": "haspaaksuʔ",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "has",
+     "paks",
+     "uʔ"
+    ],
+    "status": "correct",
+    "tier": "C",
+    "tier_without_e5": "C"
+   },
+   {
+    "entry_id": "SK-hiikaqu-p389-3825",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 2,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "hiika",
+     "u"
+    ],
+    "headword": "hiikaʔu (uur...)",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "hiika",
+     "u"
+    ],
+    "status": "correct",
+    "tier": "C",
+    "tier_without_e5": "C"
+   },
+   {
+    "entry_id": "SK-hiiwiik-p390-3857",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "hiir",
+     "wiik"
+    ],
+    "headword": "hiiwiik",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "hiir",
+     "wiik"
+    ],
+    "status": "correct",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-hukatawi--p45-0746",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "hukata",
+     "wi"
+    ],
+    "headword": "hukatawi-",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "hukata",
+     "wi"
+    ],
+    "status": "correct",
+    "tier": "B",
+    "tier_without_e5": "B"
+   },
+   {
+    "entry_id": "SK-huta-p48-0813",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [],
+    "headword": "huta",
+    "kind": "none",
+    "pipeline_pieces": [],
+    "status": "gold_undetermined",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-huu--p48-0814",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [],
+    "headword": "huu-",
+    "kind": "none",
+    "pipeline_pieces": [],
+    "status": "gold_undetermined",
+    "tier": "B",
+    "tier_without_e5": "B"
+   },
+   {
+    "entry_id": "SK-huuhuhkuutik-p49-0836",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "huuhur",
+     "kuutik"
+    ],
+    "headword": "huuhuhkuutik",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "huuhur",
+     "kuutik"
+    ],
+    "status": "correct",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-icataapahuks-p55-0944",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "icataa",
+     "pahuks"
+    ],
+    "headword": "icataapahuks",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "icataa",
+     "pahuks"
+    ],
+    "status": "correct",
+    "tier": "B",
+    "tier_without_e5": "B"
+   },
+   {
+    "entry_id": "SK-ickawiira--p58-0995",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "ickawiira"
+    ],
+    "headword": "ickawiira-",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "ickawiira"
+    ],
+    "status": "correct",
+    "tier": "C",
+    "tier_without_e5": "C"
+   },
+   {
+    "entry_id": "SK-ikiraawarik-p62-1063",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "ikiraa",
+     "warik"
+    ],
+    "headword": "ikiraawarik",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "ikiraa",
+     "warik"
+    ],
+    "status": "correct",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-ikskaa-p63-1087",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "iks",
+     "kaa"
+    ],
+    "headword": "ikskaa",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "iks",
+     "kaa"
+    ],
+    "status": "correct",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-ikstahkatapaktaarik-p63-1102",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "iks",
+     "raar",
+     "kata",
+     "waktaa",
+     "rik"
+    ],
+    "headword": "ikstahkatapaktaarik",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "iks",
+     "raar",
+     "kata",
+     "waktaa",
+     "rik"
+    ],
+    "status": "correct",
+    "tier": "C",
+    "tier_without_e5": "C"
+   },
+   {
+    "entry_id": "SK-iriipuh-p65-1139",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "iriik",
+     "wuh"
+    ],
+    "headword": "iriipuh (ut...)",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "iriik",
+     "wuh"
+    ],
+    "status": "correct",
+    "tier": "C",
+    "tier_without_e5": "C"
+   },
+   {
+    "entry_id": "SK-irikus-p66-1173",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 2,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "irik",
+     "hus"
+    ],
+    "headword": "irikus",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "irik",
+     "hus"
+    ],
+    "status": "correct",
+    "tier": "C",
+    "tier_without_e5": "C"
+   },
+   {
+    "entry_id": "SK-itka-p68-1218",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [],
+    "headword": "itka",
+    "kind": "none",
+    "pipeline_pieces": [],
+    "status": "agree_no_claim",
+    "tier": null,
+    "tier_without_e5": null
+   },
+   {
+    "entry_id": "SK-itkaar-p69-1226",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [],
+    "headword": "itkaar",
+    "kind": "none",
+    "pipeline_pieces": [],
+    "status": "gold_undetermined",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-kaakaq-p72-1287",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "kaakaa"
+    ],
+    "headword": "kaakaʔ",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "kaakaa"
+    ],
+    "status": "correct",
+    "tier": "C",
+    "tier_without_e5": "C"
+   },
+   {
+    "entry_id": "SK-kaatuhaaruq-p74-1334",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 3,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "kaatu",
+     "haar",
+     "uʔ"
+    ],
+    "headword": "kaatuhaaruʔ",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "kaatu",
+     "haar",
+     "uʔ"
+    ],
+    "status": "correct",
+    "tier": "C",
+    "tier_without_e5": "C"
+   },
+   {
+    "entry_id": "SK-kahuurik-p76-1388",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "ka",
+     "huurik"
+    ],
+    "headword": "kahuurik",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "ka",
+     "huurik"
+    ],
+    "status": "correct",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-katawiqat-p82-1519",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "ut",
+     "kata",
+     "wi",
+     "at"
+    ],
+    "headword": "katawiʔat (ut...)",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "ut",
+     "kata",
+     "wi",
+     "at"
+    ],
+    "status": "correct",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-katuuskus-p83-1542",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "katuus",
+     "kus"
+    ],
+    "headword": "katuuskus",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "katuus",
+     "kus"
+    ],
+    "status": "correct",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-kic-p84-1568",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [],
+    "headword": "kic",
+    "kind": "none",
+    "pipeline_pieces": [],
+    "status": "gold_undetermined",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-kiickaa-p89-1663",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "kiic",
+     "kaa"
+    ],
+    "headword": "kiickaa",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "kiic",
+     "kaa"
+    ],
+    "status": "correct",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-kiikaa-p90-1694",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [],
+    "headword": "kiikaa",
+    "kind": "none",
+    "pipeline_pieces": [],
+    "status": "agree_no_claim",
+    "tier": null,
+    "tier_without_e5": null
+   },
+   {
+    "entry_id": "SK-kiirihuur-p91-1710",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "kiir",
+     "rihuur"
+    ],
+    "headword": "kiirihuur",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "kiir",
+     "rihuur"
+    ],
+    "status": "correct",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-kiisawataar-p92-1726",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "kiis",
+     "awataar"
+    ],
+    "headword": "kiisawataar",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "kiis",
+     "awataar"
+    ],
+    "status": "correct",
+    "tier": "B",
+    "tier_without_e5": "B"
+   },
+   {
+    "entry_id": "SK-kiraawaahcuq-p94-1795",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 2,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "kiraawaahc",
+     "uʔ"
+    ],
+    "headword": "kiraawaahcuʔ",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "kiraawaahc",
+     "uʔ"
+    ],
+    "status": "correct",
+    "tier": "C",
+    "tier_without_e5": "C"
+   },
+   {
+    "entry_id": "SK-kiraruuctaquk-p95-1813",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "kiraruuc",
+     "raʔuk"
+    ],
+    "headword": "kiraruuctaʔuk",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "kiraruuc",
+     "raʔuk"
+    ],
+    "status": "correct",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-kirikiiraar-p96-1838",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "kirik",
+     "kiir",
+     "aar"
+    ],
+    "headword": "kirikiiraar",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "kirik",
+     "kiir",
+     "aar"
+    ],
+    "status": "correct",
+    "tier": "B",
+    "tier_without_e5": "B"
+   },
+   {
+    "entry_id": "SK-paac-p453-4029",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [],
+    "headword": "paac",
+    "kind": "cognate_only",
+    "pipeline_pieces": [],
+    "status": "agree_no_claim",
+    "tier": null,
+    "tier_without_e5": null
+   },
+   {
+    "entry_id": "SK-paaraar-p454-4066",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "paar",
+     "aar"
+    ],
+    "headword": "paaraar",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "paar",
+     "aar"
+    ],
+    "status": "correct",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-paksicaraks-p109-2084",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "paks",
+     "icaraks"
+    ],
+    "headword": "paksicaraks",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "paks",
+     "icaraks"
+    ],
+    "status": "correct",
+    "tier": "B",
+    "tier_without_e5": "B"
+   },
+   {
+    "entry_id": "SK-parit-p110-2134",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [],
+    "headword": "parit",
+    "kind": "cognate_only",
+    "pipeline_pieces": [],
+    "status": "agree_no_claim",
+    "tier": null,
+    "tier_without_e5": null
+   },
+   {
+    "entry_id": "SK-raquk-p114-2221",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [],
+    "headword": "raʔuk",
+    "kind": "none",
+    "pipeline_pieces": [],
+    "status": "gold_undetermined",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-raakus-p120-2342",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "raa",
+     "kus"
+    ],
+    "headword": "raakus",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "raa",
+     "kus"
+    ],
+    "status": "correct",
+    "tier": "B",
+    "tier_without_e5": "B"
+   },
+   {
+    "entry_id": "SK-raapakuuhtuq-p120-2350",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "raa",
+     "pakuuht",
+     "uʔ"
+    ],
+    "headword": "raapakuuhtuʔ",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "raa",
+     "pakuuht",
+     "uʔ"
+    ],
+    "status": "correct",
+    "tier": "B",
+    "tier_without_e5": "B"
+   },
+   {
+    "entry_id": "SK-racahiis-p129-2531",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "raar",
+     "taahiis"
+    ],
+    "headword": "racahiis",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "raar",
+     "taahiis"
+    ],
+    "status": "correct",
+    "tier": "B",
+    "tier_without_e5": "B"
+   },
+   {
+    "entry_id": "SK-rahaar-p478-4122",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [],
+    "headword": "rahaar (uur...)",
+    "kind": "none",
+    "pipeline_pieces": [],
+    "status": "agree_no_claim",
+    "tier": null,
+    "tier_without_e5": null
+   },
+   {
+    "entry_id": "SK-rakuuhuuruq-p136-2670",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "rak",
+     "huu",
+     "huur",
+     "uʔ"
+    ],
+    "headword": "rakuuhuuruʔ",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "rak",
+     "huu",
+     "huur",
+     "uʔ"
+    ],
+    "status": "correct",
+    "tier": "C",
+    "tier_without_e5": "C"
+   },
+   {
+    "entry_id": "SK-raruucpaca-p138-2721",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "raruuc",
+     "paca"
+    ],
+    "headword": "raruucpaca",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "raruuc",
+     "paca"
+    ],
+    "status": "correct",
+    "tier": "B",
+    "tier_without_e5": "B"
+   },
+   {
+    "entry_id": "SK-riwit-p148-2864",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": null
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [],
+    "headword": "riwit",
+    "kind": "none",
+    "pipeline_pieces": [],
+    "status": "agree_no_claim",
+    "tier": null,
+    "tier_without_e5": null
+   },
+   {
+    "entry_id": "SK-sakuhtawiraaqat-p151-2951",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "sakuur",
+     "tawiraaʔat"
+    ],
+    "headword": "sakuhtawiraaʔat",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "sakuur",
+     "tawiraaʔat"
+    ],
+    "status": "correct",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-taahpiiks-p153-3013",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 1,
+    "gloss_disagree": 2,
+    "gold_pieces": [
+     "taahk",
+     "wiik",
+     "his"
+    ],
+    "headword": "taahpiiks",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "taahk",
+     "wiik",
+     "his"
+    ],
+    "status": "correct",
+    "tier": "B",
+    "tier_without_e5": "B"
+   },
+   {
+    "entry_id": "SK-tahakitawi-p155-3032",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "taha",
+     "kitawi"
+    ],
+    "headword": "tahakitawi",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "taha",
+     "kitawi"
+    ],
+    "status": "correct",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-tawiqis-p163-3201",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "ta",
+     "wi",
+     "is"
+    ],
+    "headword": "tawiʔis",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "ta",
+     "wi",
+     "is"
+    ],
+    "status": "correct",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-tiihak-p164-3235",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "tii",
+     "hak"
+    ],
+    "headword": "tiihak",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "tii",
+     "hak"
+    ],
+    "status": "correct",
+    "tier": "B",
+    "tier_without_e5": "B"
+   },
+   {
+    "entry_id": "SK-usar-p171-3387",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [],
+    "headword": "usar (uur...)",
+    "kind": "none",
+    "pipeline_pieces": [],
+    "status": "agree_no_claim",
+    "tier": null,
+    "tier_without_e5": null
+   },
+   {
+    "entry_id": "SK-waawaktiik/tik--p174-3457",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 2,
+    "gold_pieces": [
+     "waa",
+     "waktiik"
+    ],
+    "headword": "waawaktiik/tik-",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "waa",
+     "waktiik"
+    ],
+    "status": "correct",
+    "tier": "A",
+    "tier_without_e5": "A"
+   },
+   {
+    "entry_id": "SK-wihak-p178-3533",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "wi",
+     "hak"
+    ],
+    "headword": "wihak",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "wi",
+     "hak"
+    ],
+    "status": "correct",
+    "tier": "B",
+    "tier_without_e5": "B"
+   },
+   {
+    "entry_id": "SK-wiqak-p178-3521",
+    "extraction": {
+     "class_matches": true,
+     "headword_matches": true,
+     "paradigm_matches": true
+    },
+    "gloss_agree": 0,
+    "gloss_disagree": 0,
+    "gold_pieces": [
+     "wi",
+     "ak"
+    ],
+    "headword": "wiʔak [+ (ku-, ruu-), i-]",
+    "kind": "analysis",
+    "pipeline_pieces": [
+     "wi",
+     "ak"
+    ],
+    "status": "correct",
+    "tier": "B",
+    "tier_without_e5": "B"
+   }
+  ],
+  "split": "heldout"
+ },
+ "g2_meaning_dev": {
+  "counts": {
+   "aligned | agree": 12,
+   "default_single_sense | page gives no separate meaning": 3,
+   "inherited | agree": 2,
+   "inside_stem_unanalysed | page gives no separate meaning": 1,
+   "literal | agree": 64,
+   "literal | page gives no separate meaning": 4,
+   "meaning_unknown_to_parks | no meaning assigned": 3,
+   "no_sense_known | no meaning assigned": 1,
+   "unassigned_homonym | no meaning assigned": 1,
+   "unassigned_homonym | page gives no separate meaning": 6,
+   "word_claimed_by_another_piece | no meaning assigned": 1
+  },
+  "differences": [],
+  "strict": {
+   "A": {
+    "correct": 16
+   },
+   "B": {
+    "correct": 14
+   },
+   "C": {
+    "correct": 20
+   }
+  }
+ },
+ "g2_meaning_heldout": {
+  "counts": {
+   "aligned | agree": 7,
+   "entry_gloss | page gives no separate meaning": 2,
+   "inherited | page gives no separate meaning": 7,
+   "literal | agree": 71,
+   "meaning_unknown_to_parks | no meaning assigned": 1,
+   "unassigned_homonym | page gives no separate meaning": 2
+  },
+  "differences": [],
+  "strict": {
+   "A": {
+    "correct": 18
+   },
+   "B": {
+    "correct": 18
+   },
+   "C": {
+    "correct": 12
+   }
+  }
+ },
+ "g3": {
+  "by_tier": {
+   "A, multi-piece": {
+    "seams_elsewhere": 1,
+    "seams_on_a_boundary": 9,
+    "stem_edge_seams": 4,
+    "words": 10
+   },
+   "A, single piece": {
+    "seams_elsewhere": 3,
+    "seams_on_a_boundary": 0,
+    "stem_edge_seams": 3,
+    "words": 7
+   },
+   "B, multi-piece": {
+    "seams_elsewhere": 9,
+    "seams_on_a_boundary": 19,
+    "stem_edge_seams": 4,
+    "words": 22
+   },
+   "C, multi-piece": {
+    "seams_elsewhere": 6,
+    "seams_on_a_boundary": 13,
+    "stem_edge_seams": 2,
+    "words": 16
+   },
+   "C, single piece": {
+    "seams_elsewhere": 0,
+    "seams_on_a_boundary": 0,
+    "stem_edge_seams": 1,
+    "words": 1
+   }
+  },
+  "rows": [
+   {
+    "bb": [
+     "t'a•hista"
+    ],
+    "elsewhere": 0,
+    "headword": "a",
+    "kind": "single piece",
+    "lexeme_id": "SK-a-p349-3577",
+    "on_boundary": 0,
+    "stem_edge": false,
+    "tier_without_e5": "A"
+   },
+   {
+    "bb": [
+     "ti•ari'"
+    ],
+    "elsewhere": 0,
+    "headword": "aar",
+    "kind": "single piece",
+    "lexeme_id": "SK-aar-p351-3596",
+    "on_boundary": 0,
+    "stem_edge": false,
+    "tier_without_e5": "A"
+   },
+   {
+    "bb": [
+     "Tat•atsiks•tehu'",
+     "tat•atsiks•tehu'"
+    ],
+    "elsewhere": 0,
+    "headword": "acikstiihuur",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-acikstiihuur-p7-0064",
+    "on_boundary": 2,
+    "stem_edge": true,
+    "tier_without_e5": "A"
+   },
+   {
+    "bb": [
+     "akah•tahurus"
+    ],
+    "elsewhere": 0,
+    "headword": "akahtaahuruus",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-akahtaahuruus-p358-3675",
+    "on_boundary": 1,
+    "stem_edge": false,
+    "tier_without_e5": "B"
+   },
+   {
+    "bb": [
+     "Ti•ha•kawaats"
+    ],
+    "elsewhere": 1,
+    "headword": "haakawaahc/waʔac",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-haakawaahc/waqac-p34-0586",
+    "on_boundary": 0,
+    "stem_edge": false,
+    "tier_without_e5": "B"
+   },
+   {
+    "bb": [
+     "ti•hih•katsaku"
+    ],
+    "elsewhere": 0,
+    "headword": "hiihkacak",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-hiihkacak-p389-3819",
+    "on_boundary": 1,
+    "stem_edge": false,
+    "tier_without_e5": "A"
+   },
+   {
+    "bb": [
+     "ti•hirasa"
+    ],
+    "elsewhere": 0,
+    "headword": "hirasaah",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-hirasaah-p390-3869",
+    "on_boundary": 0,
+    "stem_edge": true,
+    "tier_without_e5": "A"
+   },
+   {
+    "bb": [
+     "hura•hats",
+     "ti•hura•hats"
+    ],
+    "elsewhere": 2,
+    "headword": "hurahac",
+    "kind": "single piece",
+    "lexeme_id": "SK-hurahac-p47-0798",
+    "on_boundary": 0,
+    "stem_edge": true,
+    "tier_without_e5": "A"
+   },
+   {
+    "bb": [
+     "ti•tska•katasa"
+    ],
+    "elsewhere": 1,
+    "headword": "ickakatasa",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-ickakatasa-p57-0980",
+    "on_boundary": 1,
+    "stem_edge": false,
+    "tier_without_e5": "A"
+   },
+   {
+    "bb": [
+     "Tatut•erit",
+     "tatut•erit",
+     "tatut•erit",
+     "tut•eriku'"
+    ],
+    "elsewhere": 0,
+    "headword": "iirik",
+    "kind": "single piece",
+    "lexeme_id": "SK-iirik-p408-3912",
+    "on_boundary": 0,
+    "stem_edge": false,
+    "tier_without_e5": "A"
+   },
+   {
+    "bb": [
+     "ti•'isat"
+    ],
+    "elsewhere": 0,
+    "headword": "iisat",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-iisat-p408-3915",
+    "on_boundary": 0,
+    "stem_edge": false,
+    "tier_without_e5": "A"
+   },
+   {
+    "bb": [
+     "het•kata'ku"
+    ],
+    "elsewhere": 0,
+    "headword": "iitkataku",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-iitkataku-p61-1046",
+    "on_boundary": 1,
+    "stem_edge": false,
+    "tier_without_e5": "B"
+   },
+   {
+    "bb": [
+     "het•kitsu"
+    ],
+    "elsewhere": 0,
+    "headword": "iitkiicuʔ",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-iitkiicuq-p61-1050",
+    "on_boundary": 1,
+    "stem_edge": false,
+    "tier_without_e5": "C"
+   },
+   {
+    "bb": [
+     "tatur•iwit"
+    ],
+    "elsewhere": 0,
+    "headword": "iwiitk",
+    "kind": "single piece",
+    "lexeme_id": "SK-iwiitk-p418-3923",
+    "on_boundary": 0,
+    "stem_edge": true,
+    "tier_without_e5": "C"
+   },
+   {
+    "bb": [
+     "Tatih•ka•isa'"
+    ],
+    "elsewhere": 1,
+    "headword": "kaaʔiisa",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-kaaqiisa-p2-0014",
+    "on_boundary": 0,
+    "stem_edge": true,
+    "tier_without_e5": "B"
+   },
+   {
+    "bb": [
+     "tuh•kaharawere"
+    ],
+    "elsewhere": 0,
+    "headword": "kahaarawiriir",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-kahaarawiriir-p76-1373",
+    "on_boundary": 0,
+    "stem_edge": true,
+    "tier_without_e5": "B"
+   },
+   {
+    "bb": [
+     "kata•kaksa'"
+    ],
+    "elsewhere": 0,
+    "headword": "katakaksaa",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-katakaksaa-p81-1492",
+    "on_boundary": 1,
+    "stem_edge": false,
+    "tier_without_e5": "A"
+   },
+   {
+    "bb": [
+     "Kits•Katit"
+    ],
+    "elsewhere": 0,
+    "headword": "kickaatiit",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-kickaatiit-p86-1612",
+    "on_boundary": 1,
+    "stem_edge": false,
+    "tier_without_e5": "B"
+   },
+   {
+    "bb": [
+     "Kits•Katus"
+    ],
+    "elsewhere": 0,
+    "headword": "Kickatuus",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-kickatuus-p86-1625",
+    "on_boundary": 1,
+    "stem_edge": false,
+    "tier_without_e5": "B"
+   },
+   {
+    "bb": [
+     "Kits•Katus"
+    ],
+    "elsewhere": 0,
+    "headword": "kickatuus",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-kickatuus-p86-1626",
+    "on_boundary": 1,
+    "stem_edge": false,
+    "tier_without_e5": "A"
+   },
+   {
+    "bb": [
+     "Kits•Paruksti"
+    ],
+    "elsewhere": 0,
+    "headword": "Kicpaarukstiiʔ",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-kicpaarukstiiq-p87-1643",
+    "on_boundary": 1,
+    "stem_edge": false,
+    "tier_without_e5": "B"
+   },
+   {
+    "bb": [
+     "kitsu•tsis"
+    ],
+    "elsewhere": 1,
+    "headword": "kicuucis",
+    "kind": "single piece",
+    "lexeme_id": "SK-kicuucis-p436-3958",
+    "on_boundary": 0,
+    "stem_edge": false,
+    "tier_without_e5": "A"
+   },
+   {
+    "bb": [
+     "kits•u\"hat"
+    ],
+    "elsewhere": 0,
+    "headword": "kiicuʔat",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-kiicuqat-p90-1679",
+    "on_boundary": 1,
+    "stem_edge": false,
+    "tier_without_e5": "B"
+   },
+   {
+    "bb": [
+     "tiku•kiktit"
+    ],
+    "elsewhere": 0,
+    "headword": "kiiktik",
+    "kind": "single piece",
+    "lexeme_id": "SK-kiiktik-p90-1698",
+    "on_boundary": 0,
+    "stem_edge": true,
+    "tier_without_e5": "A"
+   },
+   {
+    "bb": [
+     "ki•rahkata"
+    ],
+    "elsewhere": 0,
+    "headword": "kiirahkata",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-kiirahkata-p91-1703",
+    "on_boundary": 1,
+    "stem_edge": false,
+    "tier_without_e5": "C"
+   },
+   {
+    "bb": [
+     "kira•rasitu'"
+    ],
+    "elsewhere": 1,
+    "headword": "kiiraraasiituʔ",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-kiiraraasiituq-p91-1705",
+    "on_boundary": 0,
+    "stem_edge": false,
+    "tier_without_e5": "C"
+   },
+   {
+    "bb": [
+     "ti•kis•kata•wakta'"
+    ],
+    "elsewhere": 0,
+    "headword": "kiiskatawakta/taa",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-kiiskatawakta/taa-p92-1734",
+    "on_boundary": 2,
+    "stem_edge": true,
+    "tier_without_e5": "C"
+   },
+   {
+    "bb": [
+     "Tat•kikat",
+     "ti•kikat"
+    ],
+    "elsewhere": 0,
+    "headword": "kikak",
+    "kind": "single piece",
+    "lexeme_id": "SK-kikak-p93-1767",
+    "on_boundary": 0,
+    "stem_edge": true,
+    "tier_without_e5": "A"
+   },
+   {
+    "bb": [
+     "kirik•erisu'"
+    ],
+    "elsewhere": 1,
+    "headword": "kirikiirisuʔ",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-kirikiirisuq-p96-1839",
+    "on_boundary": 0,
+    "stem_edge": false,
+    "tier_without_e5": "C"
+   },
+   {
+    "bb": [
+     "kskits•kutsu'"
+    ],
+    "elsewhere": 0,
+    "headword": "kskiickucuuʔ",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-kskiickucuuq-p448-3992",
+    "on_boundary": 1,
+    "stem_edge": false,
+    "tier_without_e5": "B"
+   },
+   {
+    "bb": [
+     "tu'h•kuksas",
+     "tu'h•kuksas"
+    ],
+    "elsewhere": 0,
+    "headword": "kuksas-i",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-kuksas-i-p101-1968",
+    "on_boundary": 0,
+    "stem_edge": true,
+    "tier_without_e5": "B"
+   },
+   {
+    "bb": [
+     "kuru'ks•katit",
+     "kuruks•katit"
+    ],
+    "elsewhere": 0,
+    "headword": "kurukskaatiit",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-kurukskaatiit-p102-1990",
+    "on_boundary": 2,
+    "stem_edge": false,
+    "tier_without_e5": "B"
+   },
+   {
+    "bb": [
+     "Pa•hutawi•u"
+    ],
+    "elsewhere": 0,
+    "headword": "Paahutawiʔuʔ",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-paahutawiquq-p453-4042",
+    "on_boundary": 2,
+    "stem_edge": false,
+    "tier_without_e5": "B"
+   },
+   {
+    "bb": [
+     "papitsis•pahat"
+    ],
+    "elsewhere": 0,
+    "headword": "paapicispahat",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-paapicispahat-p454-4057",
+    "on_boundary": 1,
+    "stem_edge": false,
+    "tier_without_e5": "C"
+   },
+   {
+    "bb": [
+     "Pahuks•Tatu'"
+    ],
+    "elsewhere": 0,
+    "headword": "pahukstaatuʔ",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-pahukstaatuq-p108-2063",
+    "on_boundary": 1,
+    "stem_edge": false,
+    "tier_without_e5": "C"
+   },
+   {
+    "bb": [
+     "Pitkus•ihiri"
+    ],
+    "elsewhere": 0,
+    "headword": "pitkusihiriʔ",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-pitkusihiriq-p114-2208",
+    "on_boundary": 1,
+    "stem_edge": false,
+    "tier_without_e5": "C"
+   },
+   {
+    "bb": [
+     "pitkus•iksapits"
+    ],
+    "elsewhere": 0,
+    "headword": "pitkusiksaapic",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-pitkusiksaapic-p114-2209",
+    "on_boundary": 1,
+    "stem_edge": false,
+    "tier_without_e5": "C"
+   },
+   {
+    "bb": [
+     "rahi•kutsu'"
+    ],
+    "elsewhere": 1,
+    "headword": "raahikuucuʔ",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-raahikuucuq-p117-2276",
+    "on_boundary": 0,
+    "stem_edge": false,
+    "tier_without_e5": "B"
+   },
+   {
+    "bb": [
+     "ra•hurit•at"
+    ],
+    "elsewhere": 2,
+    "headword": "raahuriitat",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-raahuriitat-p118-2298",
+    "on_boundary": 0,
+    "stem_edge": false,
+    "tier_without_e5": "C"
+   },
+   {
+    "bb": [
+     "tat•ira•ita'"
+    ],
+    "elsewhere": 0,
+    "headword": "raaʔiita",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-raaqiita-p115-2232",
+    "on_boundary": 1,
+    "stem_edge": false,
+    "tier_without_e5": "A"
+   },
+   {
+    "bb": [
+     "Ra•ka•hurah•katiit•u'"
+    ],
+    "elsewhere": 1,
+    "headword": "rakaahuraahkatiitu",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-rakaahuraahkatiitu-p134-2610",
+    "on_boundary": 3,
+    "stem_edge": false,
+    "tier_without_e5": "B"
+   },
+   {
+    "bb": [
+     "ra•kits•katit"
+    ],
+    "elsewhere": 0,
+    "headword": "rakickaatiit",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-rakickaatiit-p134-2631",
+    "on_boundary": 2,
+    "stem_edge": false,
+    "tier_without_e5": "B"
+   },
+   {
+    "bb": [
+     "raku•kita"
+    ],
+    "elsewhere": 1,
+    "headword": "rakuukita",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-rakuukita-p136-2671",
+    "on_boundary": 0,
+    "stem_edge": false,
+    "tier_without_e5": "B"
+   },
+   {
+    "bb": [
+     "Rihita•wiru"
+    ],
+    "elsewhere": 0,
+    "headword": "Riihitawiru",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-riihitawiru-p141-2796",
+    "on_boundary": 1,
+    "stem_edge": false,
+    "tier_without_e5": "C"
+   },
+   {
+    "bb": [
+     "Ri•katihah•tirara",
+     "Ri•katihah•tirara"
+    ],
+    "elsewhere": 2,
+    "headword": "rikatihaahtiiraraʔ",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-rikatihaahtiiraraq-p491-4161",
+    "on_boundary": 2,
+    "stem_edge": false,
+    "tier_without_e5": "C"
+   },
+   {
+    "bb": [
+     "RI•KATIHARU'",
+     "ri•katiharu",
+     "ri•katiharu'",
+     "ri•katiharu'"
+    ],
+    "elsewhere": 4,
+    "headword": "rikatihaaruʔ",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-rikatihaaruq-p491-4167",
+    "on_boundary": 0,
+    "stem_edge": false,
+    "tier_without_e5": "B"
+   },
+   {
+    "bb": [
+     "ruksiri•witau"
+    ],
+    "elsewhere": 0,
+    "headword": "ruksiriwiitaʔuʔ",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-ruksiriwiitaquq-p148-2873",
+    "on_boundary": 1,
+    "stem_edge": false,
+    "tier_without_e5": "C"
+   },
+   {
+    "bb": [
+     "Sakuh•kiwatat"
+    ],
+    "elsewhere": 0,
+    "headword": "Sakuhkiwatat",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-sakuhkiwatat-p151-2950",
+    "on_boundary": 1,
+    "stem_edge": false,
+    "tier_without_e5": "C"
+   },
+   {
+    "bb": [
+     "Sakuh•waruksti'"
+    ],
+    "elsewhere": 0,
+    "headword": "sakuhwaarukstiiʔ",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-sakuhwaarukstiiq-p151-2955",
+    "on_boundary": 1,
+    "stem_edge": false,
+    "tier_without_e5": "B"
+   },
+   {
+    "bb": [
+     "ti•ta•'at"
+    ],
+    "elsewhere": 0,
+    "headword": "taʔat",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-taqat-p153-2994",
+    "on_boundary": 1,
+    "stem_edge": true,
+    "tier_without_e5": "A"
+   },
+   {
+    "bb": [
+     "taraha•riki'"
+    ],
+    "elsewhere": 0,
+    "headword": "tarahaariki",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-tarahaariki-p159-3123",
+    "on_boundary": 1,
+    "stem_edge": false,
+    "tier_without_e5": "B"
+   },
+   {
+    "bb": [
+     "taraha•taka"
+    ],
+    "elsewhere": 0,
+    "headword": "tarahaataakaa",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-tarahaataakaa-p160-3125",
+    "on_boundary": 1,
+    "stem_edge": false,
+    "tier_without_e5": "B"
+   },
+   {
+    "bb": [
+     "tut•urikut"
+    ],
+    "elsewhere": 0,
+    "headword": "uurikuk",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-uurikuk-p173-3418",
+    "on_boundary": 0,
+    "stem_edge": false,
+    "tier_without_e5": "C"
+   },
+   {
+    "bb": [
+     "tatih•wata'"
+    ],
+    "elsewhere": 0,
+    "headword": "waata",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-waata-p174-3454",
+    "on_boundary": 0,
+    "stem_edge": true,
+    "tier_without_e5": "B"
+   },
+   {
+    "bb": [
+     "ti•waka•rihu"
+    ],
+    "elsewhere": 0,
+    "headword": "wakarihuur",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-wakarihuur-p175-3473",
+    "on_boundary": 1,
+    "stem_edge": true,
+    "tier_without_e5": "A"
+   },
+   {
+    "bb": [
+     "ti•waktahu"
+    ],
+    "elsewhere": 0,
+    "headword": "wakta/taa",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-wakta/taa-p175-3476",
+    "on_boundary": 0,
+    "stem_edge": true,
+    "tier_without_e5": "C"
+   }
+  ]
+ },
+ "suites": {
+  "build_root_curriculum.py --check": {
+   "exit": 0,
+   "summary": "spec check done; 0 unresolved"
+  },
+  "morphology_v2 unit tests": {
+   "exit": 0,
+   "summary": "OK"
+  },
+  "person_forms.py --validate-appendix": {
+   "exit": 0,
+   "summary": "Appendix 1 derivation validation: 27 passed, 0 failed, 1 skipped"
+  },
+  "sound_changes.py --test": {
+   "exit": 0,
+   "summary": "11 pass, 0 fail"
+  }
+ }
+}

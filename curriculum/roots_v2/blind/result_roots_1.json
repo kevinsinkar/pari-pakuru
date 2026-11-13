@@ -1,0 +1,2455 @@
+{
+  "batch": "roots_1",
+  "forms": [
+    {
+      "form": "at",
+      "senses": [
+        {
+          "meaning": "go; walk",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "verb root (own entry SK-at-p18-0220 'at' VI (1) 'go; walk'; Grammatical Overview: 'the root at to go')",
+          "evidence": "Own entry SK-at-p18-0220 'go; walk'. Etymologies: SK-kaaqat-p2-0010 <kaa+at, go inside>; SK-huukat-p398-3872 <huuk+at, go inside>; SK-wicat-p178-3529 <wic+at, go to a point>. Every one of the 178 uses is translated 'go' (or a motion reading built on it: ra.at 'go carrying = take', u.at 'go/extend in a line').",
+          "n_words": 178,
+          "examples": [
+            {
+              "entry_id": "SK-kaaqat-p2-0010",
+              "headword": "kaaʔat",
+              "raw_etymology": "<kaa+at, go inside>"
+            },
+            {
+              "entry_id": "SK-huuqat-p48-0816",
+              "headword": "huuʔat",
+              "raw_etymology": "<huu+at, go through water>"
+            },
+            {
+              "entry_id": "SK-kitaqat-p98-1907",
+              "headword": "kitaʔat",
+              "raw_etymology": "kita+at, go on top"
+            },
+            {
+              "entry_id": "SK-irikisat-p66-1171",
+              "headword": "irikisat",
+              "raw_etymology": "irikis-+at, go crawling"
+            },
+            {
+              "entry_id": "SK-rat-p138-2732",
+              "headword": "rat",
+              "raw_etymology": "<ra+at, go carrying>"
+            }
+          ],
+          "shapes": [],
+          "doubts": "None about the meaning. Parks's own entry lists suppletive partner stems (du. war, dist. warii, pl./impf. wuu, int. huhta); these are separate stems, not shapes of at."
+        }
+      ],
+      "unassigned_uses": 0,
+      "notes": "Counted: entries whose printed etymology has 'at' as an exact piece (split on +, . and spaces; bound/line-break hyphens stripped; preverb notes such as (ut...) ignored) = 178. The same counting method is used for every form in this file. Usually stem-final; common fixed combinations are ra.at 'take, carry', u.at 'go in a line', wic+at 'arrive (going)'."
+    },
+    {
+      "form": "raʔuk",
+      "senses": [
+        {
+          "meaning": "make; construct, build (something)",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "verb root (own entry SK-raquk-p114-2221 'raʔuk' VT (3) 'make; construct, build; give birth to; paint')",
+          "evidence": "Own entry SK-raquk-p114-2221. Etymologies with a noun object: SK-akaraquk-p11-0110 <akaar+raʔuk, make a dwelling>; SK-huuraquk-p51-0853 huu+raʔuk, make mush; SK-ituraquk-p418-3917 itur+raʔuk, make a village.",
+          "n_words": 37,
+          "examples": [
+            {
+              "entry_id": "SK-akaraquk-p11-0110",
+              "headword": "akaraʔuk",
+              "raw_etymology": "<akaar+raʔuk, make a dwelling>"
+            },
+            {
+              "entry_id": "SK-huuraquk-p51-0853",
+              "headword": "huuraʔuk",
+              "raw_etymology": "huu+raʔuk, make mush"
+            },
+            {
+              "entry_id": "SK-ituraquk-p418-3917",
+              "headword": "ituraʔuk",
+              "raw_etymology": "itur+raʔuk, make a village"
+            },
+            {
+              "entry_id": "SK-raaqiitustaquk-p115-2238",
+              "headword": "raaʔiitustaʔuk",
+              "raw_etymology": "raaʔiitus+raʔuk, make a story"
+            },
+            {
+              "entry_id": "SK-karaquk-p77-1406",
+              "headword": "karaʔuk",
+              "raw_etymology": "<ka+raʔuk, ITER + make>"
+            }
+          ],
+          "shapes": [
+            {
+              "shape": "karaʔuk",
+              "evidence": "Own entry gives 'pl. obj. karaʔuk'; SK-karaquk-p77-1406 <ka+raʔuk, ITER + make>. A derived stem (ka- + raʔuk), not a variant shape."
+            }
+          ],
+          "doubts": "The line between 'make N' and the causative sense below is mine: I put here the 37 etymologies whose literal translation is 'make' + a noun (or bare 'make'), including four 'pick/pluck/extract' verbs that Parks explains as 'make' (SK-taraquk-p159-3108 ta+raʔuk, make, i.e., pluck, suspended; also 3177, 3444, 0918). A few are borderline (e.g. SK-raaqiitustarahkistaquk-p115-2240 'make a strong word', SK-iciiraraquk-p56-0964 'make mischief')."
+        },
+        {
+          "meaning": "cause to be, make (into a state): causative of descriptive and other stems",
+          "kind": "grammatical",
+          "label": "CAUS",
+          "position": "suffix",
+          "class": null,
+          "evidence": "abbreviations.json: CAUS 'causative' lists '-ik, -k, raʔuk, -wuh'; Grammatical Overview Table 15, slot 8 Causative '-rik-, -raʔuk'. Etymologies: SK-tarahkistaquk-p160-3136 <tarahkiis+raʔuk, cause to be strong>; SK-ahihaquk-p9-0091 ahiht+raʔuk, cause to be fat; SK-iiraquk-p408-3909 ii+raʔuk, ii + cause. Parks alternates 'cause to be X' and 'make X' freely (SK-kasistaquk-p79-1463 <kasis+raʔuk, make hard>).",
+          "n_words": 87,
+          "examples": [
+            {
+              "entry_id": "SK-kasistaquk-p79-1463",
+              "headword": "kasistaʔuk",
+              "raw_etymology": "<kasis+raʔuk, make hard>"
+            },
+            {
+              "entry_id": "SK-tarahkistaquk-p160-3136",
+              "headword": "tarahkistaʔuk",
+              "raw_etymology": "<tarahkiis+raʔuk, cause to be strong>"
+            },
+            {
+              "entry_id": "SK-ahihaquk-p9-0091",
+              "headword": "ahihaʔuk",
+              "raw_etymology": "ahiht+raʔuk, cause to be fat"
+            },
+            {
+              "entry_id": "SK-wariihaquk-p177-3507",
+              "headword": "wariihaʔuk",
+              "raw_etymology": "<wariit+raʔuk, cause to be warm>"
+            },
+            {
+              "entry_id": "SK-katiihaquk-p82-1530",
+              "headword": "katiihaʔuk",
+              "raw_etymology": "<katiit+raʔuk, cause to be black>"
+            }
+          ],
+          "shapes": [
+            {
+              "shape": "ra-ʔuk",
+              "evidence": "Three further etymologies print the piece broken by a line-end hyphen: SK-ikiriwiihaquk-p62-1064 <ikiriwit+ra-ʔuk, cause to be changed>, SK-kicapictaquk-p85-1590, SK-kiiskawaarasihaquk-p92-1736 (checked on PDF page 92: line break). Not included in n_words."
+            }
+          ],
+          "doubts": "Almost certainly the same morpheme as the verb 'make' used as a causative; I separate the two only because Parks lists raʔuk both as a verb headword and under CAUS."
+        }
+      ],
+      "unassigned_uses": 0,
+      "notes": "124 exact-piece etymologies (37 + 87). Not counted: 3 with the line-break spelling ra-ʔuk and SK-ckahiikaraquks-p30-0462 (hiika-raʔuk.his). Always the last element of the stem; surface forms -taʔuk / -haʔuk / -raʔuk follow regular sound changes."
+    },
+    {
+      "form": "raa",
+      "senses": [
+        {
+          "meaning": "way, custom, tradition; activity, event; matter; time",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "noun root (dependent noun: own entry SK-raa--p114-2225 'raa-' N-DEP 'way, custom, tradition; activity, event; time'; independent noun SK-raaquq-p115-2248 raaʔuʔ; also SK-raa-p114-2224 'raa' VD 'be a way, matter; be a custom')",
+          "evidence": "SK-raaquq-p115-2248 raa+uʔ, way + NOM; SK-raahiir-p117-2271 <raa+hiir (uur...), be a nice way>; SK-raaqaawaa-p114-2226 raa+aawaa, leave a way. Nearly all literal translations say 'way'; 'time' in SK-raawiikatk-p127-2498 raa.awi+ukatk, cut time.",
+          "n_words": 152,
+          "examples": [
+            {
+              "entry_id": "SK-raaquq-p115-2248",
+              "headword": "raaʔuʔ",
+              "raw_etymology": "raa+uʔ, way + NOM"
+            },
+            {
+              "entry_id": "SK-raahiir-p117-2271",
+              "headword": "raahiir",
+              "raw_etymology": "<raa+hiir (uur...), be a nice way>"
+            },
+            {
+              "entry_id": "SK-raaqaawaa-p114-2226",
+              "headword": "raaʔaawaa",
+              "raw_etymology": "raa+aawaa, leave a way"
+            },
+            {
+              "entry_id": "SK-raarihuur-p122-2389",
+              "headword": "raarihuur",
+              "raw_etymology": "<raa+rihuur, be a big way>"
+            },
+            {
+              "entry_id": "SK-askuraaquq-p16-0177",
+              "headword": "askuraaʔuʔ",
+              "raw_etymology": "asku+raa+uʔ, one way + NOM"
+            }
+          ],
+          "shapes": [],
+          "doubts": "Includes a handful where Parks's literal translation does not say 'way' but the compound is built on a raa- stem he glosses that way elsewhere (e.g. SK-raaqiitusuq-p115-2242 raa.iitus+uʔ, be a story + NOM; SK-raasaar-p124-2431 <raa+asaar, be the name of an object>; SK-raaripakusuq-p123-2402)."
+        },
+        {
+          "meaning": "plural / 'things' (plural or indefinite object)",
+          "kind": "grammatical",
+          "label": "PL",
+          "position": "prefix",
+          "class": null,
+          "evidence": "SK-raakii-p119-2322 <raa+kii, PL + to be strung>; SK-raakirikaaqat-p119-2331 <raa+kirik.kaaʔat, eye to go inside + PL>; SK-raaqat-p114-2228 ut+raa+at, go for things. Also 'things/everything' in 2441, 2330, 2332.",
+          "n_words": 7,
+          "examples": [
+            {
+              "entry_id": "SK-raakii-p119-2322",
+              "headword": "raakii",
+              "raw_etymology": "<raa+kii, PL + to be strung>"
+            },
+            {
+              "entry_id": "SK-raakiiraquk-p119-2325",
+              "headword": "raakiiraʔuk",
+              "raw_etymology": "<raa+kii+raʔuk, cause PL to be strung in a line>"
+            },
+            {
+              "entry_id": "SK-raakirikaaqat-p119-2331",
+              "headword": "raakirikaaʔat",
+              "raw_etymology": "<raa+kirik.kaaʔat, eye to go inside + PL>"
+            },
+            {
+              "entry_id": "SK-raatakipuh-p124-2441",
+              "headword": "raatakipuh",
+              "raw_etymology": "<raa+takik.wuh, gather things together>"
+            },
+            {
+              "entry_id": "SK-raaqat-p114-2228",
+              "headword": "raaʔat",
+              "raw_etymology": "ut+raa+at, go for things"
+            }
+          ],
+          "shapes": [],
+          "doubts": "Parks prints the label PL for raa in only three etymologies (2322, 2325, 2331); the other four say 'things'/'everything'. This may simply be the noun raa- 'way, matter' used generically ('things'), or a variant of the plural prefix raar-; the sources do not decide. Treat as doubtful."
+        },
+        {
+          "meaning": "mother (only with 1st person possessor)",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "noun root (kin term stem: own entry SK--raa-p114-2223 '-raa' N-KIN)",
+          "evidence": "Own entry SK--raa-p114-2223 '-raa' N-KIN 'mother (only with 1st person possessor)'; SK-atiraq-p19-0243 ati+raa, my mother.",
+          "n_words": 1,
+          "examples": [
+            {
+              "entry_id": "SK-atiraq-p19-0243",
+              "headword": "atiraʔ",
+              "raw_etymology": "ati+raa, my mother"
+            }
+          ],
+          "shapes": [],
+          "doubts": ""
+        }
+      ],
+      "unassigned_uses": 6,
+      "notes": "166 exact-piece etymologies. Unassigned (6): SK-wakta/taa-p175-3476 <wak+raa, sound + raa> (Parks leaves raa unglossed); SK-aar_iraariq-p351-3600 <ar i+raa+riʔ, be friends + his/her same-sex sibling> (the kin stem is raar per SK-iraariq-p64-1121 <i+raar+riʔ>, so not this raa); SK-raawaasit-p126-2461 <raa.waa.asit, be cold + DIST>; SK-raawacuuquq-p126-2465 <raa.wacuu+uʔ, quiver + NOM>; SK-raawiiraarik-p127-2500 and SK-raawiirakus-p127-2501 (raa.awiira 'crowd'). Two further headwords have the same shape but do not occur as etymology pieces: SK-ra,_raa-p114-2216 'ra, raa' CONJ 'now; and' and SK-raa--p114-2222 'raa-' ADV-P 'just'. So raa is at least a three-way homonym (way / mother / conjunction-adverb), plus the doubtful PL use."
+    },
+    {
+      "form": "kus",
+      "senses": [
+        {
+          "meaning": "be sitting, be seated; (of things) be situated, be in a place",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "verb root (positional verb: own entry SK-kus-p102-1993 'kus' VI (4) 'be sitting, be seated; be, be living (in a place); live')",
+          "evidence": "Own entry SK-kus-p102-1993 (pl. subj. wihak). Etymologies: SK-kaakus-p72-1294 <kaa+kus, be sitting inside an enclosed space >; SK-kuusk-p452-4010 <kus+k, cause to be sitting>; SK-kitakus-p98-1912 kita+kus, be sitting on top.",
+          "n_words": 102,
+          "examples": [
+            {
+              "entry_id": "SK-kaakus-p72-1294",
+              "headword": "kaakus",
+              "raw_etymology": "<kaa+kus, be sitting inside an enclosed space >"
+            },
+            {
+              "entry_id": "SK-hakus-p37-0632",
+              "headword": "hakus",
+              "raw_etymology": "<ha+kus, be sitting in water>"
+            },
+            {
+              "entry_id": "SK-kitakus-p98-1912",
+              "headword": "kitakus",
+              "raw_etymology": "kita+kus, be sitting on top"
+            },
+            {
+              "entry_id": "SK-kuusk-p452-4010",
+              "headword": "kuusk",
+              "raw_etymology": "<kus+k, cause to be sitting>"
+            },
+            {
+              "entry_id": "SK-tawikus-p164-3215",
+              "headword": "tawikus",
+              "raw_etymology": "tawi+kus, be sitting among"
+            }
+          ],
+          "shapes": [],
+          "doubts": "None. With inanimate subjects the translation is often just 'be' (a village, a pool, a clump) but Parks still renders it 'to be sitting'."
+        }
+      ],
+      "unassigned_uses": 0,
+      "notes": "102 exact-piece etymologies, all 'sit'. Hyphenated extras not counted: SK-ihtatakuusk-p59-1036 (ihtata-kus+k) and SK-awirahkirikus-p25-0333 (kiri-kus) are the same verb; pit-kus (SK-pitkusuusiriq-p114-2213, 'two') and ic-kus (SK-siraackuskasara-p152-2977, ickus 'tail end') are not."
+    },
+    {
+      "form": "a",
+      "senses": [
+        {
+          "meaning": "come",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "verb root (own entry SK-a-p349-3577 'a' VI (3) (ir...) 'come'; takes the preverb ir-)",
+          "evidence": "Own entry SK-a-p349-3577; Grammatical Overview: stem 'a (ir-...) to come'. Etymologies: SK-raqa-p114-2217 ra+a (ir...), come carrying; SK-wica-p178-3526 <wic+a (ir...), come to a point>; SK-huuka-p49-0839 huuk+a (ir...), come inside.",
+          "n_words": 80,
+          "examples": [
+            {
+              "entry_id": "SK-raqa-p114-2217",
+              "headword": "raʔa",
+              "raw_etymology": "ra+a (ir...), come carrying"
+            },
+            {
+              "entry_id": "SK-wica-p178-3526",
+              "headword": "wica",
+              "raw_etymology": "<wic+a (ir...), come to a point>"
+            },
+            {
+              "entry_id": "SK-huuka-p49-0839",
+              "headword": "huuka",
+              "raw_etymology": "huuk+a (ir...), come inside"
+            },
+            {
+              "entry_id": "SK-acuuqa-p9-0086",
+              "headword": "acuuʔa",
+              "raw_etymology": "acuu+a (ir...), rain to come"
+            },
+            {
+              "entry_id": "SK-tawiraaqa-p164-3219",
+              "headword": "tawiraaʔa",
+              "raw_etymology": "tawiraa+a (ir...), come down"
+            }
+          ],
+          "shapes": [],
+          "doubts": "Stem-final, nearly always with the note (ir...). Paired with at 'go' (kaaʔa 'come inside' / kaaʔat 'go inside')."
+        },
+        {
+          "meaning": "extending in a line (distributive counterpart of u-)",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "locative (own entry SK-a--p349-3576 'a-' LOC 'extending in a line'; SK-u--p167-3294 'u-' LOC gives 'dist. a-')",
+          "evidence": "SK-ahak-p9-0087 a+hak, pass in a line; SK-awarik-p21-0273 <a-+warik, cause to go in a line>; SK-awarii-p21-0272 <a+warii, go around in a line>.",
+          "n_words": 23,
+          "examples": [
+            {
+              "entry_id": "SK-ahak-p9-0087",
+              "headword": "ahak",
+              "raw_etymology": "a+hak, pass in a line"
+            },
+            {
+              "entry_id": "SK-awarik-p21-0273",
+              "headword": "awarik",
+              "raw_etymology": "<a-+warik, cause to go in a line>"
+            },
+            {
+              "entry_id": "SK-awarii-p21-0272",
+              "headword": "awarii",
+              "raw_etymology": "<a+warii, go around in a line>"
+            },
+            {
+              "entry_id": "SK-awuu-p26-0355",
+              "headword": "awuu",
+              "raw_etymology": "<a- +wuu, be going in a line, i.e., flying>"
+            },
+            {
+              "entry_id": "SK-iksawuu-p63-1084",
+              "headword": "iksawuu",
+              "raw_etymology": "iks+a.wuu, hand to be going in a line"
+            }
+          ],
+          "shapes": [
+            {
+              "shape": "u",
+              "evidence": "SK-u--p167-3294 'u-' LOC 'extending in a line' lists a- as its distributive form (uhak / ahak 'extend in a line'). Paradigm partner rather than the same shape."
+            }
+          ],
+          "doubts": "A few are assigned by analogy with awarik/awaahak rather than by an explicit 'in a line' in the translation (SK-katiitawaa-p83-1536 <katiit+a.waa, black(ness) spreads out >, SK-kiicawarik-p89-1658, SK-uhuriiwaawarik-p169-3335)."
+        },
+        {
+          "meaning": "be stretched out (as a staked hide)",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "locative (locative-class verb: own entry SK-a-p349-3575 'a' VL 'be stretched out, as a staked hide being tanned')",
+          "evidence": "Own entry SK-a-p349-3575; SK-awuh-p26-0353 <a- +wuh, cause to be stretched out >.",
+          "n_words": 1,
+          "examples": [
+            {
+              "entry_id": "SK-awuh-p26-0353",
+              "headword": "awuh",
+              "raw_etymology": "<a- +wuh, cause to be stretched out >"
+            }
+          ],
+          "shapes": [],
+          "doubts": "Probably the same element as a- 'extending in a line'; kept apart because Parks has separate headwords."
+        },
+        {
+          "meaning": "be an image, picture, design (of someone/something); be decorated",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "other (locative-class verb with preverb: own entry SK-a-p349-3579 'a' VL (uur...) 'be decorated; have a picture or design; be a photograph')",
+          "evidence": "SK-a-p349-3579 <a (uur...), be one's image>; SK-awuh-p26-0354 <a (uur...)+wuh, cause to be an image>; SK-kaahuraara-p72-1278 <kaahuraar+a (uur...), be a picture of the world>.",
+          "n_words": 5,
+          "examples": [
+            {
+              "entry_id": "SK-a-p349-3579",
+              "headword": "a",
+              "raw_etymology": "<a (uur...), be one's image>"
+            },
+            {
+              "entry_id": "SK-awuh-p26-0354",
+              "headword": "awuh",
+              "raw_etymology": "<a (uur...)+wuh, cause to be an image>"
+            },
+            {
+              "entry_id": "SK-kaahuraara-p72-1278",
+              "headword": "kaahuraara",
+              "raw_etymology": "<kaahuraar+a (uur...), be a picture of the world>"
+            },
+            {
+              "entry_id": "SK-ruuraakawaawuhu-p150-2916",
+              "headword": "ruuraakawaawuhu",
+              "raw_etymology": "<ra+aak+a.waa.wuh (uur...)+hus, one that/who makes pictures of them >"
+            },
+            {
+              "entry_id": "SK-hiwata-p43-0711",
+              "headword": "hiwata",
+              "raw_etymology": "<hiwat+a, be a doorway image; i.q. SB hiwata; cf. Ar. huwaat, huuwaat be an entryway>"
+            }
+          ],
+          "shapes": [],
+          "doubts": "SK-hiwata-p43-0711 <hiwat+a, be a doorway image; ...> has no (uur...) note. Two similar 'be X' formations I left unassigned: SK-kica-p84-1569 <kic+a, be liquid> and SK-uukaqaata,_uukaata-p172-3396 <uukaʔaat+a, be a shadow; ...>."
+        },
+        {
+          "meaning": "your (second person possessor on kin terms)",
+          "kind": "grammatical",
+          "label": "2.POSS",
+          "position": "prefix",
+          "class": null,
+          "evidence": "SK-akaq-p9-0103 a+kaa, your grandmother; SK-aqas-p349-3581 <a+as, your father>; SK-asas-p363-3759 a+saas, your mother. abbreviations.json has 2.POSS 'second person possessive prefix' (no form printed) and 2.P 'second person patientive prefix' a-.",
+          "n_words": 10,
+          "examples": [
+            {
+              "entry_id": "SK-akaq-p9-0103",
+              "headword": "akaʔ",
+              "raw_etymology": "a+kaa, your grandmother"
+            },
+            {
+              "entry_id": "SK-aqas-p349-3581",
+              "headword": "aʔas",
+              "raw_etymology": "<a+as, your father>"
+            },
+            {
+              "entry_id": "SK-asas-p363-3759",
+              "headword": "asas",
+              "raw_etymology": "a+saas, your mother"
+            },
+            {
+              "entry_id": "SK-ataat-p19-0223",
+              "headword": "ataat",
+              "raw_etymology": "a+taat, your sister (of male)"
+            },
+            {
+              "entry_id": "SK-apat-p360-3693",
+              "headword": "apat",
+              "raw_etymology": "<a+paak, your grandfather>"
+            }
+          ],
+          "shapes": [],
+          "doubts": "The label 2.POSS is my choice from the abbreviation list; the etymologies only translate it 'your'. Occurs only on kinship terms."
+        },
+        {
+          "meaning": "and",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "other (conjunction: own entry SK-a,_aa-p349-3580 'a, aa' CONJ 'and')",
+          "evidence": "Own entry SK-a,_aa-p349-3580; SK-aki-p11-0117 <a+ki, and + here>; SK-aku-p11-0127 <a+ku, and perhaps>.",
+          "n_words": 2,
+          "examples": [
+            {
+              "entry_id": "SK-aki-p11-0117",
+              "headword": "aki",
+              "raw_etymology": "<a+ki, and + here>"
+            },
+            {
+              "entry_id": "SK-aku-p11-0127",
+              "headword": "aku",
+              "raw_etymology": "<a+ku, and perhaps>"
+            },
+            {
+              "entry_id": "SK-kskiitikstaaruq-ruksiriq,_kski-p101-1942",
+              "headword": "kskiitikstaaruʔ-ruksiriʔ, kskiitikstaaruʔ-a-ruk-siriʔ, kskiitiks-ruksiriʔ, kskiitiks-a-ruksiriʔ",
+              "raw_etymology": "<kskiitiks(.raaruʔ).(a.)ruksiriʔ, eighty (and) ten>"
+            }
+          ],
+          "shapes": [
+            {
+              "shape": "aa",
+              "evidence": "Headword 'a, aa' CONJ (SK-a,_aa-p349-3580)."
+            },
+            {
+              "shape": "(a.)",
+              "evidence": "Optional 'and' in numerals, not counted in n_words: SK-kskiitikstaaruq-ruksiriq,_kski-p101-1942 <kskiitiks(.raaruʔ).(a.)ruksiriʔ, eighty (and) ten>; also SK-pitkusuraaruq-ruksiriq,_pitkus-p114-2212 and SK-tawiraaruq-ruksiriq,_tawiraaru-p164-3222."
+            }
+          ],
+          "doubts": ""
+        },
+        {
+          "meaning": "wear, have on (a body part)",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "other (verb inflected like a locative verb, VT (wi), with preverbs ir...ut...)",
+          "evidence": "SK-iksa-p62-1076 <iks+a (ir...ut...), wear on the hand>; SK-kiica-p89-1655 <kiic+a (ir...ut...), wear on the neck>; SK-iksawuh-p63-1083 ut-+iks+a.wuh, cause to wear on one's wrist.",
+          "n_words": 5,
+          "examples": [
+            {
+              "entry_id": "SK-iksa-p62-1076",
+              "headword": "iksa",
+              "raw_etymology": "<iks+a (ir...ut...), wear on the hand>"
+            },
+            {
+              "entry_id": "SK-kiica-p89-1655",
+              "headword": "kiica",
+              "raw_etymology": "<kiic+a (ir...ut...), wear on the neck>"
+            },
+            {
+              "entry_id": "SK-haaskiica-p36-0615",
+              "headword": "haaskiica",
+              "raw_etymology": "<haas+kiic.a (ir ...ut...), wear a string around the neck>"
+            },
+            {
+              "entry_id": "SK-kiiriitarika-p91-1713",
+              "headword": "kiiriitarika",
+              "raw_etymology": "kiiriit.arik+a (ir...ut...), wear a horn, i.e., queue, on the nape"
+            },
+            {
+              "entry_id": "SK-iksawuh-p63-1083",
+              "headword": "iksawuh",
+              "raw_etymology": "ut-+iks+a.wuh, cause to wear on one's wrist"
+            }
+          ],
+          "shapes": [],
+          "doubts": "No headword of its own. Could be a use of the locative verb a ('be stretched out / be on') rather than a separate root; the sources do not say."
+        },
+        {
+          "meaning": "eat",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "verb root (own entry SK-aa/a-p349-3587 'aa/a' VT (4) 'eat'; dist. waawaa, waʔaa)",
+          "evidence": "Own entry SK-aa/a-p349-3587; SK-riiripiipahu-p141-2814 <ra+ir+ripiik-+wa.a.hus, eating eggs>; SK-raawisaa/a-p128-2518 raawis+aa/a, eat smoke (piece printed 'aa/a').",
+          "n_words": 1,
+          "examples": [
+            {
+              "entry_id": "SK-riiripiipahu-p141-2814",
+              "headword": "Riiripiipahu",
+              "raw_etymology": "<ra+ir+ripiik-+wa.a.hus, eating eggs>"
+            },
+            {
+              "entry_id": "SK-raawisaa/a-p128-2518",
+              "headword": "raawisaa/a",
+              "raw_etymology": "raawis+aa/a, eat smoke"
+            }
+          ],
+          "shapes": [
+            {
+              "shape": "aa",
+              "evidence": "Headword 'aa/a' (SK-aa/a-p349-3587); the piece is printed aa/a in SK-raawisaa/a-p128-2518, which is not included in n_words."
+            }
+          ],
+          "doubts": "Basic shape is aa; short a only by rule. Only one etymology has the bare piece 'a' in this meaning."
+        },
+        {
+          "meaning": "subordinate (dependent-form) suffix of class 1 verbs: 'that ...', '...ing'",
+          "kind": "grammatical",
+          "label": "SUB.1",
+          "position": "suffix",
+          "class": null,
+          "evidence": "abbreviations.json: verb class (1) '-a suffixed to dependent forms', (1-a) '-a, -asta', SUB.1 'subordinating suffix of Class 1 verbs'. Etymologies: SK-tiirukcaakata-p165-3255 <tii+ra+uks+saak+at+a, this day that went>; SK-ruuhtahariwaara-p149-2900 <ra+taha+hiir (uur...)+waa+a, ones that taste good + DIST>.",
+          "n_words": 6,
+          "examples": [
+            {
+              "entry_id": "SK-tiirukcaakata-p165-3255",
+              "headword": "tiirukcaakata",
+              "raw_etymology": "<tii+ra+uks+saak+at+a, this day that went>"
+            },
+            {
+              "entry_id": "SK-tiihiirukcaakata-p164-3238",
+              "headword": "tiihiirukcaakata",
+              "raw_etymology": "tii+hii+ra+uks+saak+at+a, this other day that went"
+            },
+            {
+              "entry_id": "SK-ruuhkicahariwaara-p149-2897",
+              "headword": "ruuhkicahariwaara",
+              "raw_etymology": "<ra+kic.taha+hiir (uur...)+waa+a, nice tasting liquids + DIST>"
+            },
+            {
+              "entry_id": "SK-ruuhtahariwaara-p149-2900",
+              "headword": "ruuhtahariwaara",
+              "raw_etymology": "<ra+taha+hiir (uur...)+waa+a, ones that taste good + DIST>"
+            },
+            {
+              "entry_id": "SK-piitahaawiraata-p113-2178",
+              "headword": "Piitahaawiraata",
+              "raw_etymology": "<wiita+haawiraat.a, man going downstream>"
+            }
+          ],
+          "shapes": [],
+          "doubts": "Parks does not label this piece in the etymologies; the identification rests on its position after class 1 stems (at, hiir) in nominalised forms and on the abbreviation list. SK-piitahaawiraata-p113-2178 <wiita+haawiraat.a, man going downstream> is the least certain."
+        }
+      ],
+      "unassigned_uses": 4,
+      "notes": "142 raw exact-piece hits; 7 are not uses of a morpheme and were dropped (English article 'a' inside cf.-notes: SK-aahka-p349-3590, SK-haahka-p33-0550, SK-hukaa-p43-0724, SK-iciis-p56-0966, SK-kuuskahaar-p452-4011, SK-rikiis-p492-4174; letter-spaced print in SK-ø_(ut...)_kiirahkata-p349-3572). That leaves 135 entries; SK-awica-p370-3780 <a.wic+a (ir...)> and SK-awaqa-p20-0251 a+wa.a (ir...) contain both 'in a line' and 'come' and are counted in both senses. Unassigned (4): SK-kica-p84-1569 and SK-uukaqaata,_uukaata-p172-3396 ('be X'), SK-awatata--p21-0277 <ut+awatat.a, on top of, covering> and SK-haakaawatataquq-p33-0561 (awatat.a). In SK-rahiisa-p478-4124 <ra+a+hiis+a, the coming morning> the last a is 'come' (counted) and the first is probably the third-person preverb a- (PREV.3.A in abbreviations.json), not counted. Hyphenated strings such as a-rii, a-paak, a-wis are line-break spellings of longer pieces. A learner should treat 'a' as at least five unrelated items: come, in-a-line, your, and, eat."
+    },
+    {
+      "form": "aciks",
+      "senses": [
+        {
+          "meaning": "mind, thoughts, feelings, spirit",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "noun root (dependent noun: own entry SK-aciks--p352-3615 'aciks-' N-DEP 'spirit, mind, thoughts, feelings, emotions; throat'; also SK-aciks-p352-3614 'aciks' VD 'have a thought')",
+          "evidence": "SK-ciksuq-p29-0448 <aciks+uʔ, mind + NOM>; SK-aciksiir-p352-3628 <aciks-+hiir (uur...), mind to be good>; SK-acikstarahkiis/kis-p7-0055 aciks+tarahkiis, mind to be strong.",
+          "n_words": 82,
+          "examples": [
+            {
+              "entry_id": "SK-ciksuq-p29-0448",
+              "headword": "ciksuʔ",
+              "raw_etymology": "<aciks+uʔ, mind + NOM>"
+            },
+            {
+              "entry_id": "SK-aciksiir-p352-3628",
+              "headword": "aciksiir",
+              "raw_etymology": "<aciks-+hiir (uur...), mind to be good>"
+            },
+            {
+              "entry_id": "SK-acikstarahkiis/kis-p7-0055",
+              "headword": "acikstarahkiis/kis",
+              "raw_etymology": "aciks+tarahkiis, mind to be strong"
+            },
+            {
+              "entry_id": "SK-acikspahit-p354-3655",
+              "headword": "acikspahit",
+              "raw_etymology": "<aciks+pahit, mind to be quiet>"
+            },
+            {
+              "entry_id": "SK-acikstaquk-p354-3661",
+              "headword": "acikstaʔuk",
+              "raw_etymology": "<aciks+raʔuk, make thoughts>"
+            }
+          ],
+          "shapes": [
+            {
+              "shape": "(a)ciks",
+              "evidence": "Own entry gives the combining form '(a)ciks-'; printed so in SK-aar_ciksuq-p351-3599 <aar (ut...) (a)ciks+uʔ, do thoughts>, SK-aar_ciksuq-p351-3597 and SK-ø_(ut...)_ciksuq-p349-3571 (3 more entries, not in n_words). The initial a also drops in independent words: ciksuʔ, cikstit."
+            }
+          ],
+          "doubts": "Parks translates the piece as 'mind', 'thoughts' or 'feelings' without a consistent difference."
+        },
+        {
+          "meaning": "throat; trachea, windpipe",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "noun root (second gloss 'throat' of the same headword SK-aciks--p352-3615, whose printed etymology is <aciks, throat>)",
+          "evidence": "SK-acikcak-p351-3613 <aciks+cak, strike the trachea>; SK-acikstaahiis-p7-0051 aciks+taahiis, trachea to be dry; SK-cikstiituq-p29-0446 <aciks-+tiit+uʔ, eye of the trachea + NOM>.",
+          "n_words": 6,
+          "examples": [
+            {
+              "entry_id": "SK-acikcak-p351-3613",
+              "headword": "acikcak",
+              "raw_etymology": "<aciks+cak, strike the trachea>"
+            },
+            {
+              "entry_id": "SK-aciksati-p352-3616",
+              "headword": "aciksati",
+              "raw_etymology": "<aciks+ati, trachea to expel air>"
+            },
+            {
+              "entry_id": "SK-acikstaahiis-p7-0051",
+              "headword": "acikstaahiis",
+              "raw_etymology": "aciks+taahiis, trachea to be dry"
+            },
+            {
+              "entry_id": "SK-cikstiituq-p29-0446",
+              "headword": "cikstiituʔ",
+              "raw_etymology": "<aciks-+tiit+uʔ, eye of the trachea + NOM>"
+            },
+            {
+              "entry_id": "SK-acikstiiwakta/taa-p7-0066",
+              "headword": "acikstiiwakta/taa",
+              "raw_etymology": "aciks+riiwaktaa, emit a groaning sound in the trachea"
+            }
+          ],
+          "shapes": [],
+          "doubts": "Not a homonym in Parks's treatment: one headword with two glosses (the throat as seat of thought and feeling; ciksuʔ means both 'esophagus, trachea' and 'mind'). Two entries carry both readings and are counted under 'mind': SK-acikskiwatak-p354-3653 <aciks+kiwatak, mind/windpipe to fade> and SK-ciksuq-p29-0448."
+        }
+      ],
+      "unassigned_uses": 0,
+      "notes": "88 exact-piece etymologies (82 + 6), nearly always stem-initial."
+    },
+    {
+      "form": "kic",
+      "senses": [
+        {
+          "meaning": "liquid; water",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "noun root (independent noun kiicuʔ 'water; liquid'; Parks's own headword is the descriptive verb SK-kic-p84-1568 'kic' VD 'be a liquid; be watery')",
+          "evidence": "SK-kiicuq-p89-1678 <kic+uʔ, water + NOM>; SK-kickus-p87-1640 kic+kus, water to be sitting; SK-iitkiicuq-p61-1050 <iit+kic+uʔ, breast liquid + NOM>.",
+          "n_words": 118,
+          "examples": [
+            {
+              "entry_id": "SK-kiicuq-p89-1678",
+              "headword": "kiicuʔ",
+              "raw_etymology": "<kic+uʔ, water + NOM>"
+            },
+            {
+              "entry_id": "SK-kickus-p87-1640",
+              "headword": "kickus",
+              "raw_etymology": "kic+kus, water to be sitting"
+            },
+            {
+              "entry_id": "SK-kiicat-p89-1657",
+              "headword": "kiicat",
+              "raw_etymology": "<kic+at, water to go>"
+            },
+            {
+              "entry_id": "SK-kirikiicuq-p96-1836",
+              "headword": "kirikiicuʔ",
+              "raw_etymology": "<kirik+kic+uʔ, eye liquid + NOM>"
+            },
+            {
+              "entry_id": "SK-iitkiicuq-p61-1050",
+              "headword": "iitkiicuʔ",
+              "raw_etymology": "<iit+kic+uʔ, breast liquid + NOM>"
+            }
+          ],
+          "shapes": [],
+          "doubts": "Parks alternates 'water' and 'liquid' with no difference. A second stem kiir is also translated 'water' (SK-kiiraquk-p90-1699 <kiir+raʔuk, make water>); I cannot tell from the sources whether it is related."
+        }
+      ],
+      "unassigned_uses": 1,
+      "notes": "119 exact-piece etymologies. Unassigned: SK-uukickata--p172-3406 <uu.kata+kic, on the west side + kic> (Parks leaves kic unglossed). Not counted: SK-kickaqaahis-p86-1603 'shoulder' (kic-ka.aahis, opaque)."
+    },
+    {
+      "form": "ta",
+      "senses": [
+        {
+          "meaning": "suspended, hanging; hang (be on, as from a line); with motion verbs 'up'",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "locative (own entries SK-ta--p153-2992 'ta-' LOC 'suspended, hanging, dangling' and SK-ta-p153-2991 'ta' VL 'hang suspended; be suspended, pendent')",
+          "evidence": "SK-tawuh-p164-3228 ta+wuh, cause to be suspended; SK-awita-p25-0345 <awi+ta, image to be suspended>; SK-taqat-p153-2994 ta+at, go suspended. 'Up' readings: SK-saaktaqa-p151-2939 <saak+ta.a (ir...), sun to come suspended>.",
+          "n_words": 77,
+          "examples": [
+            {
+              "entry_id": "SK-tawuh-p164-3228",
+              "headword": "tawuh",
+              "raw_etymology": "ta+wuh, cause to be suspended"
+            },
+            {
+              "entry_id": "SK-awita-p25-0345",
+              "headword": "awita",
+              "raw_etymology": "<awi+ta, image to be suspended>"
+            },
+            {
+              "entry_id": "SK-taqat-p153-2994",
+              "headword": "taʔat",
+              "raw_etymology": "ta+at, go suspended"
+            },
+            {
+              "entry_id": "SK-takusuq-p158-3092",
+              "headword": "takusuʔ",
+              "raw_etymology": "ta+kus+uʔ, sitting suspended + NOM"
+            },
+            {
+              "entry_id": "SK-haasta-p36-0621",
+              "headword": "haasta",
+              "raw_etymology": "<haas+ta, string to be suspended>"
+            }
+          ],
+          "shapes": [],
+          "doubts": "Includes ta.wi 'be suspended upright' = slope, incline (SK-tawi-p163-3196) and derived verbs where the translation is only 'over' or 'on' (SK-hactawiqat-p37-0631 <hat+ta.wi.at, rub the tongue over>; SK-hiihtakus-p389-3822 <hiir-+ta+kus, grass to be sitting on>, which could equally be the general locative below)."
+        },
+        {
+          "meaning": "general locative (no specific translation)",
+          "kind": "grammatical",
+          "label": "GEN.LOC",
+          "position": "prefix",
+          "class": null,
+          "evidence": "SK-takaas-p157-3063 ta+kaas, GEN.LOC + crack; SK-taraasit-p159-3114 ta+raasit, GEN.LOC + be frozen; SK-racakus-p129-2541 <raar-+ta+kus, PL + GEN.LOC + be sitting>. abbreviations.json: GEN.LOC 'general locative prefix'.",
+          "n_words": 19,
+          "examples": [
+            {
+              "entry_id": "SK-takaas-p157-3063",
+              "headword": "takaas",
+              "raw_etymology": "ta+kaas, GEN.LOC + crack"
+            },
+            {
+              "entry_id": "SK-taraasit-p159-3114",
+              "headword": "taraasit",
+              "raw_etymology": "ta+raasit, GEN.LOC + be frozen"
+            },
+            {
+              "entry_id": "SK-tawakta/taa-p162-3185",
+              "headword": "tawakta/taa",
+              "raw_etymology": "<ta+waktaa, GEN.LOC + be a sound>"
+            },
+            {
+              "entry_id": "SK-racakus-p129-2541",
+              "headword": "racakus",
+              "raw_etymology": "<raar-+ta+kus, PL + GEN.LOC + be sitting>"
+            },
+            {
+              "entry_id": "SK-tawatur-p163-3193",
+              "headword": "tawatur",
+              "raw_etymology": "<ta+watur, GEN.LOC + between; cf. Ar. tawatur be an open space>"
+            }
+          ],
+          "shapes": [
+            {
+              "shape": "taa-",
+              "evidence": "abbreviations.json prints the form of GEN.LOC as taa-; in the dictionary etymologies the piece labelled GEN.LOC is always ta. I found no etymology piece taa with this label."
+            }
+          ],
+          "doubts": "Whether this is a different morpheme from 'suspended' is unclear; SK-taruuc-p161-3165 <ta+ruuc, GEN.LOC + PL to be lying sus-pended> mixes the two. 18 entries carry the printed label; SK-kiictawakuq-p89-1673 (ta.wakaʔu) is added because tawakaʔu is labelled so in SK-tawakaqu-p162-3182."
+        }
+      ],
+      "unassigned_uses": 7,
+      "notes": "103 exact-piece etymologies. Unassigned (7), all with ta unglossed: SK-tararit-p160-3142 <ta+rarit, cf. rarit be lit, as a fire> and the toaster word SK-raracarariiruku_icataaquq-p136-2681; SK-rikiistakakaqus-p492-4190 (ta.ka.kaʔus); SK-racapirat-p129-2547 (ta.pira.at); and three with ta+uukuk 'touch': SK-ikstaquukuk-p63-1098, SK-ritaquukuk-p494-4208, SK-raakstacuukuku_ruurariiruku-p120-2339. The first two are probably GEN.LOC. 26 hyphenated strings (ka-ta = kata, ta-wihk 'three', ta-ha 'flavor', ta-hik 'hit' etc.) are line-break spellings of longer pieces and are not counted."
+    },
+    {
+      "form": "awi",
+      "senses": [
+        {
+          "meaning": "image, picture; fleeting image, hence quick motion ('quickly')",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "noun root (dependent noun: own entry SK-awi--p21-0281 'awi-' N-DEP 'fleeting image; quick motion', etymology <awi, image>; Grammatical Overview Table 15, slot 2 Noun: awi- 'image')",
+          "evidence": "SK-awiquq-p21-0290 <awi+uʔ, image + NOM>; SK-awiqat-p21-0283 <awi+at, image to go, i.e., go quickly>; SK-awiraquk-p24-0326 awi+raʔuk, make an image.",
+          "n_words": 107,
+          "examples": [
+            {
+              "entry_id": "SK-awiquq-p21-0290",
+              "headword": "awiʔuʔ",
+              "raw_etymology": "<awi+uʔ, image + NOM>"
+            },
+            {
+              "entry_id": "SK-awiqat-p21-0283",
+              "headword": "awiʔat",
+              "raw_etymology": "<awi+at, image to go, i.e., go quickly>"
+            },
+            {
+              "entry_id": "SK-awiraquk-p24-0326",
+              "headword": "awiraʔuk",
+              "raw_etymology": "awi+raʔuk, make an image"
+            },
+            {
+              "entry_id": "SK-awita-p25-0345",
+              "headword": "awita",
+              "raw_etymology": "<awi+ta, image to be suspended>"
+            },
+            {
+              "entry_id": "SK-awikusik-p24-0322",
+              "headword": "awikusik",
+              "raw_etymology": "awi+kusik, image to pick up, i.e., pick up quickly"
+            }
+          ],
+          "shapes": [
+            {
+              "shape": "aʔi",
+              "evidence": "Own entry gives the combining forms 'awi-, aʔi-'; printed in SK-aqiwaahcik-p349-3583 <aʔi-waahc+ik, cause to separate>. Surface aʔi- before w (aʔiwarik from awi.warik)."
+            }
+          ],
+          "doubts": "One morpheme with two uses that Parks links himself: literal 'image/picture' (71 of the translations use those words) and an adverb-like 'quickly' (32 say quick/fleeting/fast, usually as 'image to X, i.e., X quickly'). About 30 translations mention neither (e.g. awi.warik 'cause to shake', raa.awi 'time', awi+hiir 'nice'); I count them here because the stems are built on awi, but the meaning contribution is not shown."
+        }
+      ],
+      "unassigned_uses": 1,
+      "notes": "108 exact-piece etymologies. Unassigned: SK-picuuwihiriq-p111-2164 <prob. pic+huu.awi+hiriʔ, surface of the heart + LOC; ...> (Parks's own 'prob.')."
+    },
+    {
+      "form": "kata",
+      "senses": [
+        {
+          "meaning": "against (a vertical surface); up an incline, on an incline",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "locative (own entry SK-kata--p79-1464 'kata-' LOC 'against (a vertical surface); up an incline, on an incline, as steps, a bank, or a hill')",
+          "evidence": "SK-kataqat-p80-1467 kata+at, go against a vertical surface; SK-katakus-p81-1493 <kata+kus, be sitting against a vertical surface>; SK-katasa-p82-1509 <kata+sa, be lying against a vertical surface>.",
+          "n_words": 78,
+          "examples": [
+            {
+              "entry_id": "SK-kataqat-p80-1467",
+              "headword": "kataʔat",
+              "raw_etymology": "kata+at, go against a vertical surface"
+            },
+            {
+              "entry_id": "SK-katakus-p81-1493",
+              "headword": "katakus",
+              "raw_etymology": "<kata+kus, be sitting against a vertical surface>"
+            },
+            {
+              "entry_id": "SK-katasa-p82-1509",
+              "headword": "katasa",
+              "raw_etymology": "<kata+sa, be lying against a vertical surface>"
+            },
+            {
+              "entry_id": "SK-kataqiir-p80-1469",
+              "headword": "kataʔiir",
+              "raw_etymology": "kata+iir, put against a vertical surface"
+            },
+            {
+              "entry_id": "SK-kataquukuk-p80-1472",
+              "headword": "kataʔuukuk",
+              "raw_etymology": "kata-+uukuk, bump against a vertical surface"
+            }
+          ],
+          "shapes": [
+            {
+              "shape": "ka-ta",
+              "evidence": "Eight further etymologies print the piece with a line-break hyphen, e.g. SK-kataqa-p80-1466 ut+ka-ta+a (ir...), TRANS + come against a vertical surface; SK-rikatahak-p491-4159 ri+ka-ta+hak, take from a vertical surface. Not included in n_words."
+            },
+            {
+              "shape": "kata(.wi)",
+              "evidence": "SK-huukata(wi)--p398-3873 <huu.kata(.wi), against the surface of water>."
+            }
+          ],
+          "doubts": "None on the meaning; extended to 'up the throat' (vomiting, swallowing) and 'on a surface' (spots, patches)."
+        }
+      ],
+      "unassigned_uses": 0,
+      "notes": "78 exact-piece etymologies; 9 more with the hyphenated or parenthesised spellings above."
+    },
+    {
+      "form": "ka",
+      "senses": [
+        {
+          "meaning": "in, on (a circumscribed space; a bounded horizontal surface)",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "locative (own entry SK-ka--p418-3925 'ka-' LOC 'on a horizontal (bounded) surface'; Grammatical Overview Table 15, slot 5 Locative: ka- 'on')",
+          "evidence": "SK-kakus-p77-1397 <ka+kus, be sitting in a circumscribed space>; SK-kawarik-p83-1551 <ka+warik, cause to go in/on>; SK-kaquuc/uc--p418-3940 ka+uuc, lay in a circumscribed space.",
+          "n_words": 73,
+          "examples": [
+            {
+              "entry_id": "SK-kakus-p77-1397",
+              "headword": "kakus",
+              "raw_etymology": "<ka+kus, be sitting in a circumscribed space>"
+            },
+            {
+              "entry_id": "SK-kawarik-p83-1551",
+              "headword": "kawarik",
+              "raw_etymology": "<ka+warik, cause to go in/on>"
+            },
+            {
+              "entry_id": "SK-kaquuc/uc--p418-3940",
+              "headword": "kaʔuuc/uc-",
+              "raw_etymology": "ka+uuc, lay in a circumscribed space"
+            },
+            {
+              "entry_id": "SK-kaqiir-p418-3930",
+              "headword": "kaʔiir",
+              "raw_etymology": "ka+iir, put in"
+            },
+            {
+              "entry_id": "SK-hatuhka--p387-3798",
+              "headword": "hatuhka-",
+              "raw_etymology": "<hatur+ka, on the trail>"
+            }
+          ],
+          "shapes": [],
+          "doubts": "Parks's literal translations mostly say only 'in/on'. Several verbs here are glossed for both this sense and the 'brush' sense (kakus, kasa, kaarik, kawiitik, kaʔat, kaʔiir, kaʔuuc, kawiʔat). SK-karuuc-p79-1452 <ka+ruuc, ITER + be lying in/on> is ambiguous between this and ITER."
+        },
+        {
+          "meaning": "in brush, grass, timber, woods",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "locative (own entry SK-ka--p418-3924 'ka-' LOC 'in brush, grass, timber, woods')",
+          "evidence": "SK-kahuraar-p76-1383 <ka+huraar, be in brush land>; SK-kaqiis--p418-3931 ka+iis, out of sight in brush; SK-kaqiisat-p418-3932 ka.iis+at, go out of sight into brush.",
+          "n_words": 4,
+          "examples": [
+            {
+              "entry_id": "SK-kahuraar-p76-1383",
+              "headword": "kahuraar",
+              "raw_etymology": "<ka+huraar, be in brush land>"
+            },
+            {
+              "entry_id": "SK-kahuraahkicuuciskat-p76-1382",
+              "headword": "kahuraahkicuuciskat",
+              "raw_etymology": "<ka- huraar+kicuucis+kat, thick woodland + LOC>"
+            },
+            {
+              "entry_id": "SK-kaqiis--p418-3931",
+              "headword": "kaʔiis-",
+              "raw_etymology": "ka+iis, out of sight in brush"
+            },
+            {
+              "entry_id": "SK-kaqiisat-p418-3932",
+              "headword": "kaʔiisat",
+              "raw_etymology": "ka.iis+at, go out of sight into brush"
+            }
+          ],
+          "shapes": [],
+          "doubts": "Parks gives this a separate headword, but in practice it looks like a special reading of 'in a circumscribed space'; only the four etymologies that say 'brush/woodland' are counted here."
+        },
+        {
+          "meaning": "iterative: repeated action, or action on plural objects",
+          "kind": "grammatical",
+          "label": "ITER",
+          "position": "prefix",
+          "class": null,
+          "evidence": "abbreviations.json: ITER 'iterative prefix' ka-, raar-/rah-; Grammatical Overview Table 15, slot 1 Iterative 'raar-, ka- ITER'. Etymologies: SK-kacak-p75-1352 ka+cak, ITER + strike; SK-karaquk-p77-1406 <ka+raʔuk, ITER + make>; SK-kapic/piqic-p77-1402 <ka+apic, ITER + break>.",
+          "n_words": 30,
+          "examples": [
+            {
+              "entry_id": "SK-kacak-p75-1352",
+              "headword": "kacak",
+              "raw_etymology": "ka+cak, ITER + strike"
+            },
+            {
+              "entry_id": "SK-karaquk-p77-1406",
+              "headword": "karaʔuk",
+              "raw_etymology": "<ka+raʔuk, ITER + make>"
+            },
+            {
+              "entry_id": "SK-kakaquc-p76-1389",
+              "headword": "kakaʔuc",
+              "raw_etymology": "<ka.kaʔuc, ITER + bite>"
+            },
+            {
+              "entry_id": "SK-kapic/piqic-p77-1402",
+              "headword": "kapic/piʔic",
+              "raw_etymology": "<ka+apic, ITER + break>"
+            },
+            {
+              "entry_id": "SK-kakuusik-p77-1398",
+              "headword": "kakuusik",
+              "raw_etymology": "<ka.kaʔus+ik, ITER + cause to split>"
+            }
+          ],
+          "shapes": [],
+          "doubts": "Stands directly before the verb root (often after an incorporated noun: huraar+ka.raʔuk). 14 of the 30 are compounds built on karaʔuk 'make (pl. obj.)' where Parks does not always repeat the label (e.g. SK-icakaraquk-p54-0918 'extract/pull PL from the end')."
+        },
+        {
+          "meaning": "be outstanding, extraordinary, stand out above others",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "other (locative-class verb with preverb: own entry SK-ka-p418-3926 'ka' VL (ut...) 'be outstanding, extraordinary, exceptional')",
+          "evidence": "Own entry SK-ka-p418-3926; SK-raaka-p118-2303 raa+ka (ut...), way to be outstanding; SK-wakuhka-p176-3480 <wakur-+ka (ut...), speech to be outstanding>; SK-kawiitik-p84-1563 <ka.wi (ut...)+itik, become outstanding>.",
+          "n_words": 6,
+          "examples": [
+            {
+              "entry_id": "SK-raaka-p118-2303",
+              "headword": "raaka",
+              "raw_etymology": "raa+ka (ut...), way to be outstanding"
+            },
+            {
+              "entry_id": "SK-kiicka-p89-1662",
+              "headword": "kiicka",
+              "raw_etymology": "<kiiʔac+ka (ut...), be outstanding in length; cf. SB keecka (ut...) be above, over in height>"
+            },
+            {
+              "entry_id": "SK-wakuhka-p176-3480",
+              "headword": "wakuhka",
+              "raw_etymology": "<wakur-+ka (ut...), speech to be outstanding>"
+            },
+            {
+              "entry_id": "SK-kawiitik-p84-1563",
+              "headword": "kawiitik",
+              "raw_etymology": "<ka.wi (ut...)+itik, become outstanding>"
+            },
+            {
+              "entry_id": "SK-raakawiitik-p119-2318",
+              "headword": "raakawiitik",
+              "raw_etymology": "<raa+ka.wi (ut...)+itik, way to become outstanding>"
+            }
+          ],
+          "shapes": [],
+          "doubts": "Possibly the locative ka- 'on' with the preverb ut- ('be on top of others'), but Parks gives it its own headword."
+        }
+      ],
+      "unassigned_uses": 3,
+      "notes": "118 raw exact-piece hits; 2 dropped as line-break spellings of longer pieces (SK-kahaarawiriir-p76-1373 'ka- haara' = kahaara 'odor'; SK-kahuruucuh-p76-1385 'ka- hur'). Unassigned (3): SK-kaakuriq-p72-1293 <ka+ku+ri+Ø, it is not anything; ...> (ka apparently 'not'; Parks gives no label); SK-hatkahuuruq-p38-0674 <hat.ka.huur+uʔ, hair part + NOM>; SK-raapiraariikaraquk-p120-2354 (hii.ka.raʔuk, i.e. hiika 'clean'). 23 hyphenated strings (ka-ta = kata, ka-wi, ka-wat, kiis-ka = kiiska 'lively' etc.) are not counted."
+    },
+    {
+      "form": "aar",
+      "senses": [
+        {
+          "meaning": "become (inchoative: come to be in a state)",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "verb root (own entry SK-aar-p351-3596 'aar' VP (1-i) 'become'; pl. subj. waah)",
+          "evidence": "Own entry SK-aar-p351-3596. Etymologies: SK-ahihtaar-p9-0094 ahiht+aar, become fat; SK-rihuraar-p139-2763 <rihuur+aar, become big>; SK-riiquusisaar-p139-2766 <riiʔuus.his+aar, to know + PERF + INCH, i.e., become knowledgeable>.",
+          "n_words": 55,
+          "examples": [
+            {
+              "entry_id": "SK-ahihtaar-p9-0094",
+              "headword": "ahihtaar",
+              "raw_etymology": "ahiht+aar, become fat"
+            },
+            {
+              "entry_id": "SK-aruhtaar-p362-3722",
+              "headword": "aruhtaar",
+              "raw_etymology": "<aruht+aar, become soft>"
+            },
+            {
+              "entry_id": "SK-rihuraar-p139-2763",
+              "headword": "rihuraar",
+              "raw_etymology": "<rihuur+aar, become big>"
+            },
+            {
+              "entry_id": "SK-pahitaar-p108-2056",
+              "headword": "pahitaar",
+              "raw_etymology": "<pahit+aar, become quiet>"
+            },
+            {
+              "entry_id": "SK-riiquusisaar-p139-2766",
+              "headword": "riiʔuusisaar",
+              "raw_etymology": "<riiʔuus.his+aar, to know + PERF + INCH, i.e., become knowledgeable>"
+            }
+          ],
+          "shapes": [],
+          "doubts": "Could equally be called grammatical: abbreviations.json lists INCH 'inchoative' as '-aar, -itik', and Parks prints the label INCH for this piece in two etymologies (2766, 2767). I call it lexical because he gives it a verb headword and translates it 'become' in the other 53. Always stem-final, on descriptive stems."
+        },
+        {
+          "meaning": "tooth",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "noun root (independent noun SK-aaruq-p351-3606 aaruʔ 'tooth')",
+          "evidence": "SK-aaruq-p351-3606 <aar+uʔ, tooth + NOM>; SK-aahkucuuq-p2-0045 <aar+kucuu, large tooth>; SK-aahwirik-p2-0047 <aar+wirik, tooth to fall>.",
+          "n_words": 13,
+          "examples": [
+            {
+              "entry_id": "SK-aaruq-p351-3606",
+              "headword": "aaruʔ",
+              "raw_etymology": "<aar+uʔ, tooth + NOM>"
+            },
+            {
+              "entry_id": "SK-aahkucuuq-p2-0045",
+              "headword": "aahkucuuʔ",
+              "raw_etymology": "<aar+kucuu, large tooth>"
+            },
+            {
+              "entry_id": "SK-aahwirik-p2-0047",
+              "headword": "aahwirik",
+              "raw_etymology": "<aar+wirik, tooth to fall>"
+            },
+            {
+              "entry_id": "SK-aahwiriik-p2-0046",
+              "headword": "aahwiriik",
+              "raw_etymology": "<aar-+wiriik, pull out a tooth>"
+            },
+            {
+              "entry_id": "SK-riiciqaahwaa-p140-2773",
+              "headword": "riiciʔaahwaa",
+              "raw_etymology": "riici+aar+waa, knife with many teeth"
+            }
+          ],
+          "shapes": [],
+          "doubts": "None; stem-initial (surface aah- before a consonant)."
+        },
+        {
+          "meaning": "do; perform",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "verb root (own entry SK-aar-p351-3598 'aar' VT (1-i) (ut...) 'do; perform'; dist. awaah)",
+          "evidence": "Own entry SK-aar-p351-3598; SK-aar_ciksuq-p351-3599 <aar (ut...) (a)ciks+uʔ, do thoughts>; SK-awaah-p20-0254 ir+ri+aar (ut...)+waa, do for someone + DIST; SK-uhuraar-p168-3327 <uhuur+aar (ut...), image to do>.",
+          "n_words": 4,
+          "examples": [
+            {
+              "entry_id": "SK-aar_ciksuq-p351-3599",
+              "headword": "aar ciksuʔ",
+              "raw_etymology": "<aar (ut...) (a)ciks+uʔ, do thoughts>"
+            },
+            {
+              "entry_id": "SK-aar_ciksuq-p351-3597",
+              "headword": "aar ciksuʔ",
+              "raw_etymology": "<ir+ri+aar (ut...) (a)ciks.uʔ, pray for, think about for>"
+            },
+            {
+              "entry_id": "SK-awaah-p20-0254",
+              "headword": "awaah",
+              "raw_etymology": "ir+ri+aar (ut...)+waa, do for someone + DIST"
+            },
+            {
+              "entry_id": "SK-uhuraar-p168-3327",
+              "headword": "uhuraar",
+              "raw_etymology": "<uhuur+aar (ut...), image to do>"
+            }
+          ],
+          "shapes": [],
+          "doubts": "Distinguished from 'become' by the preverb ut- and the transitive class."
+        }
+      ],
+      "unassigned_uses": 0,
+      "notes": "72 exact-piece etymologies (55 + 13 + 4). Three homonyms: become / tooth / do."
+    },
+    {
+      "form": "kaa",
+      "senses": [
+        {
+          "meaning": "in, inside, within (an enclosed or covered space)",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "locative (own entries SK-kaa--p418-3943 'kaa-' LOC 'in, inside, within, as a covered space' and SK-kaa-p418-3942 'kaa' VL 'be inside'; Grammatical Overview Table 15, slot 5: kaa- 'inside')",
+          "evidence": "SK-kaaqat-p2-0010 <kaa+at, go inside>; SK-kaakus-p72-1294 <kaa+kus, be sitting inside an enclosed space >; SK-pakskaa-p109-2089 <paks+kaa, head to be inside>.",
+          "n_words": 63,
+          "examples": [
+            {
+              "entry_id": "SK-kaaqat-p2-0010",
+              "headword": "kaaʔat",
+              "raw_etymology": "<kaa+at, go inside>"
+            },
+            {
+              "entry_id": "SK-kaakus-p72-1294",
+              "headword": "kaakus",
+              "raw_etymology": "<kaa+kus, be sitting inside an enclosed space >"
+            },
+            {
+              "entry_id": "SK-kaasa-p73-1312",
+              "headword": "kaasa",
+              "raw_etymology": "kaa+sa, be lying inside an enclosed space"
+            },
+            {
+              "entry_id": "SK-kaawarik-p74-1336",
+              "headword": "kaawarik",
+              "raw_etymology": "kaa+warik, cause to go inside an enclosed space"
+            },
+            {
+              "entry_id": "SK-pakskaa-p109-2089",
+              "headword": "pakskaa",
+              "raw_etymology": "<paks+kaa, head to be inside>"
+            }
+          ],
+          "shapes": [],
+          "doubts": "Stem-final kaa with a body-part noun gives 'wear' verbs (head/hand/neck 'to be inside'). SK-irikisuhuhkaaqat-p66-1172 (uhuur.kaa 'underneath') and SK-hatkaahuuruq-p38-0670 are included although Parks does not translate kaa separately there."
+        },
+        {
+          "meaning": "grandmother",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "noun root (kin term stem: own entry SK--kaa--p2-0000 '-kaa-' N-KIN 'grandmother')",
+          "evidence": "SK-atikaq-p19-0233 ati+kaa, my grandmother; SK-akaq-p9-0103 a+kaa, your grandmother; SK-ikaariq-p61-1056 <i-+kaa+riʔ, his grandmother>.",
+          "n_words": 3,
+          "examples": [
+            {
+              "entry_id": "SK-atikaq-p19-0233",
+              "headword": "atikaʔ",
+              "raw_etymology": "ati+kaa, my grandmother"
+            },
+            {
+              "entry_id": "SK-akaq-p9-0103",
+              "headword": "akaʔ",
+              "raw_etymology": "a+kaa, your grandmother"
+            },
+            {
+              "entry_id": "SK-ikaariq-p61-1056",
+              "headword": "ikaariʔ",
+              "raw_etymology": "<i-+kaa+riʔ, his grandmother>"
+            }
+          ],
+          "shapes": [],
+          "doubts": ""
+        }
+      ],
+      "unassigned_uses": 0,
+      "notes": "66 exact-piece etymologies (63 + 3); several entries are printed twice in the dictionary data (kaaʔat, kaahak, kaaʔaah, kaaʔihwicat each have two entry_ids) and are counted as they stand. Not counted: SK-huukaa(wi)--p49-0840 huu.kaa(.wi) 'along a stream course' (unglossed) and hyphenated kaa-tiit (= kaatiit 'black'), kaa-wat."
+    },
+    {
+      "form": "hak",
+      "senses": [
+        {
+          "meaning": "pass, go by; move past",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "verb root (no headword of its own; Grammatical Overview, Verbs: 'The root hak to pass, go by ... has hundreds of different stems based on it')",
+          "evidence": "SK-uhak-p167-3304 <u+hak, pass in a line>; SK-kaahak-p2-0023 <kaa+hak, pass inside>; SK-takaahak-p157-3058 takaa+hak, pass downward.",
+          "n_words": 89,
+          "examples": [
+            {
+              "entry_id": "SK-uhak-p167-3304",
+              "headword": "uhak",
+              "raw_etymology": "<u+hak, pass in a line>"
+            },
+            {
+              "entry_id": "SK-kaahak-p2-0023",
+              "headword": "kaahak",
+              "raw_etymology": "<kaa+hak, pass inside>"
+            },
+            {
+              "entry_id": "SK-takaahak-p157-3058",
+              "headword": "takaahak",
+              "raw_etymology": "takaa+hak, pass downward"
+            },
+            {
+              "entry_id": "SK-ahak-p9-0087",
+              "headword": "ahak",
+              "raw_etymology": "a+hak, pass in a line"
+            },
+            {
+              "entry_id": "SK-tawihak-p163-3204",
+              "headword": "tawihak",
+              "raw_etymology": "<ta.wi+hak, pass down a slope/incline>"
+            }
+          ],
+          "shapes": [],
+          "doubts": "None. Fixed combinations: ra.hak 'take/carry past', u.hak 'pass or extend in a line', wi+hak 'pass upright' (the plural-subject stem of 'sit', SK-wihak-p178-3533)."
+        }
+      ],
+      "unassigned_uses": 0,
+      "notes": "89 exact-piece etymologies, all translated with 'pass' or a motion built on it. Stem-final; word-final k appears as t in headwords (Tiirawaahat)."
+    },
+    {
+      "form": "as",
+      "senses": [
+        {
+          "meaning": "foot; paw; by extension wheel, tire",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "noun root (independent noun SK-asuq-p18-0202 asuʔ 'foot; paw; wheel; tire'; no separate headword for as-)",
+          "evidence": "SK-asuq-p18-0202 <as+uʔ, foot + NOM>; SK-aspiituq-p17-0187 <as+wit+uʔ, foot nail + NOM>; SK-aspiitik-p17-0186 <as+wiitik, set one's foot down>.",
+          "n_words": 56,
+          "examples": [
+            {
+              "entry_id": "SK-asuq-p18-0202",
+              "headword": "asuʔ",
+              "raw_etymology": "<as+uʔ, foot + NOM>"
+            },
+            {
+              "entry_id": "SK-aspiituq-p17-0187",
+              "headword": "aspiituʔ",
+              "raw_etymology": "<as+wit+uʔ, foot nail + NOM>"
+            },
+            {
+              "entry_id": "SK-aspiitik-p17-0186",
+              "headword": "aspiitik",
+              "raw_etymology": "<as+wiitik, set one's foot down>"
+            },
+            {
+              "entry_id": "SK-askawarik-p16-0163",
+              "headword": "askawarik",
+              "raw_etymology": "as+kawarik, put the foot into"
+            },
+            {
+              "entry_id": "SK-parusasuq-p111-2138",
+              "headword": "parusasuʔ",
+              "raw_etymology": "<warus+as+uʔ, rabbit foot + NOM>"
+            }
+          ],
+          "shapes": [],
+          "doubts": "Seven of the 56 are the verb as.i (uur...) 'run' and its compounds; Parks analyses the base as 'foot' (SK-as-i-p362-3725 <uur+as.i, PREV +  foot>) but translates the compounds simply 'run' (SK-kuksas-i-p101-1968 <kuks+as.i (uur...), run fleeing>)."
+        },
+        {
+          "meaning": "father",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "noun root (kin term stem; no headword of its own)",
+          "evidence": "SK-atiqas-p19-0228 ati+as, my father; SK-aqas-p349-3581 <a+as, your father>.",
+          "n_words": 2,
+          "examples": [
+            {
+              "entry_id": "SK-atiqas-p19-0228",
+              "headword": "atiʔas",
+              "raw_etymology": "ati+as, my father"
+            },
+            {
+              "entry_id": "SK-aqas-p349-3581",
+              "headword": "aʔas",
+              "raw_etymology": "<a+as, your father>"
+            }
+          ],
+          "shapes": [],
+          "doubts": ""
+        }
+      ],
+      "unassigned_uses": 4,
+      "notes": "62 exact-piece etymologies. Unassigned (4), an element 'as (ut...)' that Parks does not translate on its own: SK-astaah-p17-0190 <as (ut...)+raah, have perseverance>; SK-astiwiitik-p18-0201 <as (ut...)+ri.wiitik, take hold of someone in dismay >; SK-asitik-p363-3774 as+itik (ut...) 'happen'; SK-raasitik-p124-2435 <raa+as.itik (ut...), way to happen>. Possibly a third homonym. Optional (as+/iks+) in SK-aspiqaahwiqaahus,_kspiqaahwiqa-p17-0185 'claws/talons' is not counted."
+    },
+    {
+      "form": "warik",
+      "senses": [
+        {
+          "meaning": "cause to go: put (into), throw, shoot, send",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "verb root (strictly a derived stem: own entry SK-warik-p177-3511 'warik' VT (1) 'shoot at; cause to go', etymology <war.ik, cause to go>)",
+          "evidence": "Own entries SK-warik-p177-3511 <war.ik, cause to go> and SK-warik_[+_i-]-p177-3512 <war+ik, cause to go>. Etymologies: SK-kaawarik-p74-1336 kaa+warik, cause to go inside an enclosed space; SK-awarik-p21-0273 <a-+warik, cause to go in a line>; SK-rahwarik-p133-2607 <raar+warik, ITER + send>.",
+          "n_words": 44,
+          "examples": [
+            {
+              "entry_id": "SK-kaawarik-p74-1336",
+              "headword": "kaawarik",
+              "raw_etymology": "kaa+warik, cause to go inside an enclosed space"
+            },
+            {
+              "entry_id": "SK-kawarik-p83-1551",
+              "headword": "kawarik",
+              "raw_etymology": "<ka+warik, cause to go in/on>"
+            },
+            {
+              "entry_id": "SK-awarik-p21-0273",
+              "headword": "awarik",
+              "raw_etymology": "<a-+warik, cause to go in a line>"
+            },
+            {
+              "entry_id": "SK-rahwarik-p133-2607",
+              "headword": "rahwarik",
+              "raw_etymology": "<raar+warik, ITER + send>"
+            },
+            {
+              "entry_id": "SK-hukawarik-p45-0747",
+              "headword": "hukawarik",
+              "raw_etymology": "huka+warik, cause to go into a shallow circumscribed space"
+            }
+          ],
+          "shapes": [
+            {
+              "shape": "war+ik / war.ik",
+              "evidence": "Parks's own analysis of the headword (3511, 3512); war is also the dual stem of at 'go' (SK-at-p18-0220)."
+            },
+            {
+              "shape": "wa-rik",
+              "evidence": "Line-break spelling in SK-ikiraawarik-p62-1063 <ikiraa+wa-rik, cause to go in a hurried state > and SK-tariihwaawariku-p161-3147; not in n_words."
+            }
+          ],
+          "doubts": "Functions as the causative partner of verbs in at 'go' (iciisat 'tire' / SK-iciisparik-p56-0968 <uur+iciis+warik, cause to be tired>), so some translations are only 'cause to ...'. SK-rukiihwarik-p148-2870 ruu+kiir+warik, PORT + dodge does not show the meaning."
+        }
+      ],
+      "unassigned_uses": 0,
+      "notes": "44 exact-piece etymologies. Surface -parik after a consonant (icawicparik, iciisparik)."
+    },
+    {
+      "form": "iks",
+      "senses": [
+        {
+          "meaning": "hand (also arm, finger; a hand as a tally unit in numerals)",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "noun root (independent noun SK-iksuq-p64-1111 iksuʔ 'hand'; Grammatical Overview Table 5: iksuʔ 'hand' < iks- + -uʔ)",
+          "evidence": "SK-iksuq-p64-1111 <iks+uʔ, hand + NOM>; SK-ikskaa-p63-1087 iks+kaa, hand to be in; SK-ikstat-p64-1105 <iks+ra.at, hand to carry>.",
+          "n_words": 55,
+          "examples": [
+            {
+              "entry_id": "SK-iksuq-p64-1111",
+              "headword": "iksuʔ",
+              "raw_etymology": "<iks+uʔ, hand + NOM>"
+            },
+            {
+              "entry_id": "SK-ikskaa-p63-1087",
+              "headword": "ikskaa",
+              "raw_etymology": "iks+kaa, hand to be in"
+            },
+            {
+              "entry_id": "SK-ikstat-p64-1105",
+              "headword": "ikstat",
+              "raw_etymology": "<iks+ra.at, hand to carry>"
+            },
+            {
+              "entry_id": "SK-ikskuukuquq-p63-1096",
+              "headword": "ikskuukuʔuʔ",
+              "raw_etymology": "iks+kuuku+uʔ, hand covering + NOM"
+            },
+            {
+              "entry_id": "SK-iksuqat-p64-1112",
+              "headword": "iksuʔat",
+              "raw_etymology": "<iks+u.at, hand to go in a line>"
+            }
+          ],
+          "shapes": [],
+          "doubts": "None. In a few plant and numeral names the second element is left untranslated (SK-kskiikaraakuq-p448-3996, SK-kskiitiqiks-p448-3997 'four')."
+        }
+      ],
+      "unassigned_uses": 0,
+      "notes": "55 exact-piece etymologies, all 'hand'. Initial i drops in independent words (ksawiʔuʔ 'bracelet', kspatuʔ)."
+    },
+    {
+      "form": "huraar",
+      "senses": [
+        {
+          "meaning": "land, ground, earth; place",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "noun root (independent noun SK-huraaruq-p47-0790 huraaruʔ 'land, ground; earth; season; mile'; Parks's own headword is the descriptive verb SK-huraar-p46-0779 'huraar' VD 'be land, ground, earth')",
+          "evidence": "SK-huraaruq-p47-0790 huraar-+uʔ, land + NOM; SK-huraahkatuus-p46-0766 <huraar+katuus, land to be flat>; SK-huraaruuh/uh-p47-0792 huraar+uuh, give land to.",
+          "n_words": 42,
+          "examples": [
+            {
+              "entry_id": "SK-huraaruq-p47-0790",
+              "headword": "huraaruʔ",
+              "raw_etymology": "huraar-+uʔ, land + NOM"
+            },
+            {
+              "entry_id": "SK-huraahkatuus-p46-0766",
+              "headword": "huraahkatuus",
+              "raw_etymology": "<huraar+katuus, land to be flat>"
+            },
+            {
+              "entry_id": "SK-huraaruuh/uh-p47-0792",
+              "headword": "huraaruuh/uh",
+              "raw_etymology": "huraar+uuh, give land to"
+            },
+            {
+              "entry_id": "SK-huraarikiwir-p47-0785",
+              "headword": "huraarikiwir",
+              "raw_etymology": "huraar+ikiwir, be different land"
+            },
+            {
+              "entry_id": "SK-aparuuhuraaruq-p360-3690",
+              "headword": "aparuuhuraaruʔ",
+              "raw_etymology": "<aparuu-+huraar+uʔ, ground berry + NOM>"
+            }
+          ],
+          "shapes": [
+            {
+              "shape": "hu-raar",
+              "evidence": "Line-break spelling in SK-hurariir-p47-0804 hu-raar+hiir (uur...), be nice land and SK-huraarikarikat-p47-0784; also '(ra+)huraar' in SK-huraariwiiruku,_rahuraariwiiru-p47-0789. Four more entries, not in n_words."
+            }
+          ],
+          "doubts": "Extended to 'place' (SK-huraariwicat-p47-0788) and 'mile' (SK-huraararuu-p46-0780). Do not confuse with huraa 'snow' (SK-huraasa-p47-0795)."
+        }
+      ],
+      "unassigned_uses": 1,
+      "notes": "43 exact-piece etymologies. Unassigned: SK-raahuraar-p118-2292 raa+huraar (ut...), be the source of a way ('source, origin'; may be 'ground' used figuratively)."
+    },
+    {
+      "form": "paks",
+      "senses": [
+        {
+          "meaning": "head",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "noun root (independent noun SK-paksuq-p110-2116 paksuʔ 'head'; no separate headword for paks-)",
+          "evidence": "SK-paksuq-p110-2116 <paks+uʔ, head + NOM>; SK-pakskiisuq-p109-2100 <paks-+kiis+uʔ, head bone + NOM>; SK-paksiitik-p109-2087 <paks+iitik, head to bow down>.",
+          "n_words": 44,
+          "examples": [
+            {
+              "entry_id": "SK-paksuq-p110-2116",
+              "headword": "paksuʔ",
+              "raw_etymology": "<paks+uʔ, head + NOM>"
+            },
+            {
+              "entry_id": "SK-pakskuukuquq-p109-2106",
+              "headword": "pakskuukuʔuʔ",
+              "raw_etymology": "<paks-+kuuku+uʔ, head covering + NOM>"
+            },
+            {
+              "entry_id": "SK-pakskiciis-p109-2097",
+              "headword": "pakskiciis",
+              "raw_etymology": "<paks+kiciis, head to be bald>"
+            },
+            {
+              "entry_id": "SK-pakskiisuq-p109-2100",
+              "headword": "pakskiisuʔ",
+              "raw_etymology": "<paks-+kiis+uʔ, head bone + NOM>"
+            },
+            {
+              "entry_id": "SK-paksiitik-p109-2087",
+              "headword": "paksiitik",
+              "raw_etymology": "<paks+iitik, head to bow down>"
+            }
+          ],
+          "shapes": [],
+          "doubts": "None. Often 'hair of the head' in colour terms (SK-pakskaac-p109-2090 <paks+kaac, be gray head(ed)>)."
+        }
+      ],
+      "unassigned_uses": 0,
+      "notes": "44 exact-piece etymologies, all 'head'."
+    },
+    {
+      "form": "uhuur",
+      "senses": [
+        {
+          "meaning": "way, manner of acting or doing; act, behavior, movement (Parks often translates it 'image')",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "noun root (independent noun SK-uhuuruq-p170-3353 uhuuruʔ 'way, manner of acting or of doing something'; also SK-uhuur_[+_raar-]-p169-3342 VD 'be thus, be a certain way')",
+          "evidence": "SK-uhuuruq-p170-3353 uhuur-+uʔ, image/way + NOM; SK-uhuhtaparit-p168-3318 <uhuur+taparit, image to be quick>; SK-asuhuuruq-p18-0208 <as+uhuur+uʔ, foot image/movement + NOM>; SK-uhuur_[+_raar-]-p169-3342 <raar+uhuur, PL + be a certain way>.",
+          "n_words": 46,
+          "examples": [
+            {
+              "entry_id": "SK-uhuuruq-p170-3353",
+              "headword": "uhuuruʔ",
+              "raw_etymology": "uhuur-+uʔ, image/way + NOM"
+            },
+            {
+              "entry_id": "SK-askuhuuruq-p16-0175",
+              "headword": "askuhuuruʔ",
+              "raw_etymology": "asku+uhuur+uʔ, one way + NOM"
+            },
+            {
+              "entry_id": "SK-uhuhtaparit-p168-3318",
+              "headword": "uhuhtaparit",
+              "raw_etymology": "<uhuur+taparit, image to be quick>"
+            },
+            {
+              "entry_id": "SK-asuhuuruq-p18-0208",
+              "headword": "asuhuuruʔ",
+              "raw_etymology": "<as+uhuur+uʔ, foot image/movement + NOM>"
+            },
+            {
+              "entry_id": "SK-uhuur_[+_raar-]-p169-3342",
+              "headword": "uhuur [+ raar-]",
+              "raw_etymology": "<raar+uhuur, PL + be a certain way>"
+            }
+          ],
+          "shapes": [
+            {
+              "shape": "uhuu(r)",
+              "evidence": "SK-uhuuwaturikat-p170-3355 uhuu(r)+waturika+t, image between + LOC."
+            },
+            {
+              "shape": "huur",
+              "evidence": "Possibly a short form: translated 'image' in SK-huhtaat/taqat-p43-0719 <huur-+ta.at, image goes suspended> and SK-huuricka--p51-0862 huur+icka, image face (compare SK-uhuurickat-p169-3349). Most other huur pieces mean 'have the quality of / place', so this is uncertain."
+            }
+          ],
+          "doubts": "The English glosses vary (image, way, act, behavior/activity/action, movement); Parks joins them himself ('image/way', 'image/act'), so I keep one sense. 'Image' here is not a picture but a moving figure, as with awi."
+        },
+        {
+          "meaning": "be capable of doing properly, correctly; (do) correctly",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "descriptive stem (own entry SK-uhuur-p169-3341 'uhuur' VD 'be capable of doing properly, correctly; do correctly, properly; be skilled, proficient, adept')",
+          "evidence": "Own entry SK-uhuur-p169-3341; SK-aciksuhuritik-p8-0069 aciks+uhuur.itik, mind to become capable; SK-tiihuur-p165-3241 <tii+uhuur, border to be correctly done; ...>.",
+          "n_words": 2,
+          "examples": [
+            {
+              "entry_id": "SK-aciksuhuritik-p8-0069",
+              "headword": "aciksuhuritik",
+              "raw_etymology": "aciks+uhuur.itik, mind to become capable"
+            },
+            {
+              "entry_id": "SK-tiihuur-p165-3241",
+              "headword": "tiihuur",
+              "raw_etymology": "<tii+uhuur, border to be correctly done; cf. SB raateehur be settled, in order, Ar. raateehun be in order>"
+            }
+          ],
+          "shapes": [],
+          "doubts": "May well be the same morpheme as 'way' (be the [proper] way); listed apart only because the headword gloss differs and two etymologies follow it."
+        }
+      ],
+      "unassigned_uses": 1,
+      "notes": "49 exact-piece etymologies. Unassigned: SK-irikisuhuhkaaqat-p66-1172 irikis+uhuur.kaa+at, go underneath crawling (uhuur.kaa 'underneath'). Line-break spelling u-huur in SK-aciksuhuruu-p8-0072 and SK-rahkarariihuriir-p131-2548 not counted. Surface uhuh- before k/t, uhur- before a vowel."
+    },
+    {
+      "form": "sa",
+      "senses": [
+        {
+          "meaning": "be lying, reclined",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "verb root (positional verb: own entry SK-sa-p150-2933 'sa' VI (4) 'be lying, reclined; be in bed')",
+          "evidence": "Own entry SK-sa-p150-2933. Etymologies: SK-kaasa-p73-1312 kaa+sa, be lying inside an enclosed space; SK-hasa-p37-0646 <ha+sa, be lying in water>; SK-katasa-p82-1509 <kata+sa, be lying against a vertical surface>.",
+          "n_words": 26,
+          "examples": [
+            {
+              "entry_id": "SK-kaasa-p73-1312",
+              "headword": "kaasa",
+              "raw_etymology": "kaa+sa, be lying inside an enclosed space"
+            },
+            {
+              "entry_id": "SK-hasa-p37-0646",
+              "headword": "hasa",
+              "raw_etymology": "<ha+sa, be lying in water>"
+            },
+            {
+              "entry_id": "SK-kasa-p79-1458",
+              "headword": "kasa",
+              "raw_etymology": "<ka-+sa, be lying in a circumscribed space >"
+            },
+            {
+              "entry_id": "SK-katasa-p82-1509",
+              "headword": "katasa",
+              "raw_etymology": "<kata+sa, be lying against a vertical surface>"
+            },
+            {
+              "entry_id": "SK-huukitasa-p398-3886",
+              "headword": "huukitasa",
+              "raw_etymology": "<huukita+sa, be lying on top>"
+            }
+          ],
+          "shapes": [],
+          "doubts": "None. Parallel to kus 'be sitting' after the same locatives."
+        }
+      ],
+      "unassigned_uses": 0,
+      "notes": "26 exact-piece etymologies, all 'be lying'. Two more with other spellings (SK-rahaahkasa,_rahaahkasahu-p478-4118 'sa(-+hus)', SK-waahukasa-p174-3443 'huka-sa') are the same verb. Surface -ca after s/r (itkahca)."
+    },
+    {
+      "form": "kiis",
+      "senses": [
+        {
+          "meaning": "bone",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "noun root (independent noun SK-kiisuq-p93-1757 kiisuʔ 'bone')",
+          "evidence": "SK-kiisuq-p93-1757 <kiis+uʔ, bone + NOM>; SK-pakskiisuq-p109-2100 <paks-+kiis+uʔ, head bone + NOM>; SK-rictaakiisuq-p139-2757 <rictaak+kiis+uʔ, back bone + NOM>.",
+          "n_words": 45,
+          "examples": [
+            {
+              "entry_id": "SK-kiisuq-p93-1757",
+              "headword": "kiisuʔ",
+              "raw_etymology": "<kiis+uʔ, bone + NOM>"
+            },
+            {
+              "entry_id": "SK-pakskiisuq-p109-2100",
+              "headword": "pakskiisuʔ",
+              "raw_etymology": "<paks-+kiis+uʔ, head bone + NOM>"
+            },
+            {
+              "entry_id": "SK-rictaakiisuq-p139-2757",
+              "headword": "rictaakiisuʔ",
+              "raw_etymology": "<rictaak+kiis+uʔ, back bone + NOM>"
+            },
+            {
+              "entry_id": "SK-kiiskiicuq-p92-1739",
+              "headword": "kiiskiicuʔ",
+              "raw_etymology": "<kiis+kic+uʔ, bone liquid + NOM>"
+            },
+            {
+              "entry_id": "SK-rahkiis-p131-2569",
+              "headword": "rahkiis",
+              "raw_etymology": "raar+kiis, ITER + be bony"
+            }
+          ],
+          "shapes": [],
+          "doubts": "Figurative uses stay 'bone' in Parks's translations: 'bone voice' = scream, whistle (SK-kiispakta/taa-p92-1746); 'bone bright/gray' = pure white; 'bone' = head in SK-kiiskuhka-p92-1741."
+        },
+        {
+          "meaning": "be vain, proud; exaggerate, lie",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "descriptive stem (own entry SK-kiis-p91-1723 'kiis' VD (ir...) 'be vain, proud; be one who exaggerates, prevaricates')",
+          "evidence": "Own entry SK-kiis-p91-1723; SK-kiisaar-p91-1725 kiis (ir...)+aar, become vain; SK-rikiis-p492-4175 <ri+kiis (ir...), hold pridefully; ...>; SK-kiiskucuuq-p92-1740 <kiis+kucuu, big liar>.",
+          "n_words": 4,
+          "examples": [
+            {
+              "entry_id": "SK-kiisaar-p91-1725",
+              "headword": "kiisaar",
+              "raw_etymology": "kiis (ir...)+aar, become vain"
+            },
+            {
+              "entry_id": "SK-rikiis-p492-4175",
+              "headword": "rikiis",
+              "raw_etymology": "<ri+kiis (ir...), hold pridefully; cf. rikarahaa (ir...) be particular or fastidious with; be proud of, have pride in>"
+            },
+            {
+              "entry_id": "SK-wakuhkiisik-p176-3482",
+              "headword": "wakuhkiisik",
+              "raw_etymology": "<wakur+kiis (ir...)+ik, be proud in speech + DIST>"
+            },
+            {
+              "entry_id": "SK-kiiskucuuq-p92-1740",
+              "headword": "kiiskucuuʔ",
+              "raw_etymology": "<kiis+kucuu, big liar>"
+            }
+          ],
+          "shapes": [],
+          "doubts": "Marked by the preverb ir- in three of the four."
+        }
+      ],
+      "unassigned_uses": 1,
+      "notes": "50 exact-piece etymologies. Unassigned: SK-kiiskaquk-p92-1728 <kiis+kaʔuk, lively + DIST> (so printed, checked on PDF page 92); the stem is really kiiska 'be lively' (same page: kiiskawaarasit <..., cf. kiiska be lively>), so this is neither 'bone' nor 'proud'. The hyphenated kiis-ka in SK-kiiskawaah-p92-1735 is the same kiiska split at a line end."
+    },
+    {
+      "form": "hiir",
+      "senses": [
+        {
+          "meaning": "be good, nice (in quality or appearance)",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "verb root (stative verb with preverb: own entry SK-hiir-p389-3832 'hiir' VI (1-a) (uur...) 'be good, nice in quality; be attractive, good looking'; descriptive in meaning but not in Parks's VD class)",
+          "evidence": "Own entry SK-hiir-p389-3832. Etymologies: SK-raahiir-p117-2271 <raa+hiir (uur...), be a nice way>; SK-kiciir-p85-1595 kic+hiir (uur...), water to be good; SK-hiirik-p389-3842 <hiir (uur...)+ik, make good>.",
+          "n_words": 40,
+          "examples": [
+            {
+              "entry_id": "SK-raahiir-p117-2271",
+              "headword": "raahiir",
+              "raw_etymology": "<raa+hiir (uur...), be a nice way>"
+            },
+            {
+              "entry_id": "SK-kiciir-p85-1595",
+              "headword": "kiciir",
+              "raw_etymology": "kic+hiir (uur...), water to be good"
+            },
+            {
+              "entry_id": "SK-kusiir-p103-2015",
+              "headword": "kusiir",
+              "raw_etymology": "kus+hiir (uur...), be sitting nicely"
+            },
+            {
+              "entry_id": "SK-hiirik-p389-3842",
+              "headword": "hiirik",
+              "raw_etymology": "<hiir (uur...)+ik, make good>"
+            },
+            {
+              "entry_id": "SK-sakuriir-p152-2959",
+              "headword": "sakuriir",
+              "raw_etymology": "sakuur+hiir (uur...), be a nice day"
+            }
+          ],
+          "shapes": [],
+          "doubts": "None; always printed with the preverb note (uur...). Initial h is lost after a consonant (kiciir, aciksiir)."
+        },
+        {
+          "meaning": "grass; hay; weeds",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "noun root (independent noun SK-hiiruq-p390-3845 hiiruʔ 'grass, dry grass, hay'; Parks's own headword is SK-hiir-p389-3831 'hiir' VD 'be grassy, grassland')",
+          "evidence": "SK-hiiruq-p390-3845 <hiir+uʔ, grass + NOM; ...>; SK-hiihpahat-p389-3821 <hiir+pahaat, red grass>; SK-hiirihuur-p389-3841 <hiir+rihuur, be big grass>.",
+          "n_words": 17,
+          "examples": [
+            {
+              "entry_id": "SK-hiiruq-p390-3845",
+              "headword": "hiiruʔ",
+              "raw_etymology": "<hiir+uʔ, grass + NOM; i.q. SB hiiruʔ, Ar. hu÷nuʔ>"
+            },
+            {
+              "entry_id": "SK-hiihpahat-p389-3821",
+              "headword": "hiihpahat",
+              "raw_etymology": "<hiir+pahaat, red grass>"
+            },
+            {
+              "entry_id": "SK-hiirihuur-p389-3841",
+              "headword": "hiirihuur",
+              "raw_etymology": "<hiir+rihuur, be big grass>"
+            },
+            {
+              "entry_id": "SK-hiihkasa-p389-3820",
+              "headword": "hiihkasa",
+              "raw_etymology": "<hiir+kasa, be lying on grass>"
+            },
+            {
+              "entry_id": "SK-hiihwikiiqac-p389-3824",
+              "headword": "hiihwikiiʔac",
+              "raw_etymology": "<hiir+wikiiʔac, be tall grass>"
+            }
+          ],
+          "shapes": [
+            {
+              "shape": "hii(r)",
+              "evidence": "SK-hiiwiik-p390-3857 <hii(r)+wiik, dig up/extract grass>; not in n_words."
+            }
+          ],
+          "doubts": "None; stem-initial (surface hiih- before a consonant)."
+        },
+        {
+          "meaning": "night (a night that passes, as a unit of counting time); stay overnight",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "other (no headword of its own; noun-like in SK-hiihis--p40-0700 'hiihis-' N-DEP 'night, as a twenty-four-hour period', verb-like in hiir.i (ut...))",
+          "evidence": "SK-hiihis--p40-0700 <hiir+his, night to elapse + PERF>; SK-hiihisuq-p40-0701 <hiir.his+uʔ, night + NOM; i.q. hiirisuʔ>; SK-hawiir-i-p40-0683 <hiir.i (ut...)+waa, stay overnight + DIST; ...>.",
+          "n_words": 4,
+          "examples": [
+            {
+              "entry_id": "SK-hiihis--p40-0700",
+              "headword": "hiihis-",
+              "raw_etymology": "<hiir+his, night to elapse + PERF>"
+            },
+            {
+              "entry_id": "SK-hiihisuq-p40-0701",
+              "headword": "hiihisuʔ",
+              "raw_etymology": "<hiir.his+uʔ, night + NOM; i.q. hiirisuʔ>"
+            },
+            {
+              "entry_id": "SK-hiirisuq-p389-3844",
+              "headword": "hiirisuʔ",
+              "raw_etymology": "<hiir.his+uʔ, night + NOM; i.q. hiihisuʔ>"
+            },
+            {
+              "entry_id": "SK-hawiir-i-p40-0683",
+              "headword": "hawiir-i",
+              "raw_etymology": "<hiir.i (ut...)+waa, stay overnight + DIST; cf. SB aweer (ut...) be so many nights, i.e., days>"
+            }
+          ],
+          "shapes": [],
+          "doubts": "Only in the 'night/overnight' words; whether the root is a noun 'night' or a verb 'pass the night' is not clear from the four etymologies."
+        }
+      ],
+      "unassigned_uses": 0,
+      "notes": "61 exact-piece etymologies (40 + 17 + 4). Three homonyms: good / grass / night."
+    },
+    {
+      "form": "kirik",
+      "senses": [
+        {
+          "meaning": "eye",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "noun root (independent noun SK-kiriikuq-p95-1819 kiriikuʔ 'eye; chit of a seed'; no separate headword for kirik-)",
+          "evidence": "SK-kirikiicuq-p96-1836 <kirik+kic+uʔ, eye liquid + NOM>; SK-kirikus-p97-1863 ut+kirik+kus, eye sitting on; SK-kirikaac-p96-1829 <kirik+kaac, gray eye>.",
+          "n_words": 38,
+          "examples": [
+            {
+              "entry_id": "SK-kirikiicuq-p96-1836",
+              "headword": "kirikiicuʔ",
+              "raw_etymology": "<kirik+kic+uʔ, eye liquid + NOM>"
+            },
+            {
+              "entry_id": "SK-kirikus-p97-1863",
+              "headword": "kirikus",
+              "raw_etymology": "ut+kirik+kus, eye sitting on"
+            },
+            {
+              "entry_id": "SK-kirikaac-p96-1829",
+              "headword": "kirikaac",
+              "raw_etymology": "<kirik+kaac, gray eye>"
+            },
+            {
+              "entry_id": "SK-kirikiisuq-p96-1840",
+              "headword": "kirikiisuʔ",
+              "raw_etymology": "<kirik+kiis+uʔ, eye bone + NOM>"
+            },
+            {
+              "entry_id": "SK-kirikaruus-p96-1832",
+              "headword": "kirikaruus",
+              "raw_etymology": "<kirik+karuus, eye to be deflated>"
+            }
+          ],
+          "shapes": [
+            {
+              "shape": "kiriik",
+              "evidence": "The independent noun is analysed with a long vowel: SK-kiriikuq-p95-1819 <kiriik+uʔ, eye + NOM> (but SK-rakiriikuq-p135-2641 <rak- +kirik+uʔ, wood eye + NOM>)."
+            },
+            {
+              "shape": "ki-rik",
+              "evidence": "Line-break spelling in SK-hiitkirikawaa-p390-3851 <hiit+ki-rik+ka+waa, eyes + DIST + on the feathers>; not in n_words."
+            }
+          ],
+          "doubts": "None. Verbs of looking are built on it ('eye to sit on' = watch). Not the same as kirikii 'what?' in SK-kirikuq-p97-1860 kirik(ii)+kuʔ."
+        }
+      ],
+      "unassigned_uses": 0,
+      "notes": "38 exact-piece etymologies, all 'eye'."
+    },
+    {
+      "form": "kiraar",
+      "senses": [
+        {
+          "meaning": "liquid, fluid (contained, in a vessel)",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "noun root (independent noun SK-kiraaruq-p94-1793 kiraaruʔ 'liquid, fluid in a container'; Parks's own headword is SK-kiraar-p94-1788 'kiraar' VD 'be liquid in (a container)')",
+          "evidence": "SK-kiraaruq-p94-1793 <kiraar+uʔ, liquid + NOM>; SK-kirahkaa,_kiirahkaa-p94-1801 <kiraar+kaa, liquid to be inside>; SK-kiraraquk-p95-1808 <kiraar+raʔuk, make liquid>.",
+          "n_words": 22,
+          "examples": [
+            {
+              "entry_id": "SK-kiraaruq-p94-1793",
+              "headword": "kiraaruʔ",
+              "raw_etymology": "<kiraar+uʔ, liquid + NOM>"
+            },
+            {
+              "entry_id": "SK-kirahkaa,_kiirahkaa-p94-1801",
+              "headword": "kirahkaa, kiirahkaa",
+              "raw_etymology": "<kiraar+kaa, liquid to be inside>"
+            },
+            {
+              "entry_id": "SK-kiraraquk-p95-1808",
+              "headword": "kiraraʔuk",
+              "raw_etymology": "<kiraar+raʔuk, make liquid>"
+            },
+            {
+              "entry_id": "SK-kiraraah-p95-1809",
+              "headword": "kiraraah",
+              "raw_etymology": "<kiraar+raah, have liquid in a vessel or container >"
+            },
+            {
+              "entry_id": "SK-pakskiraaruq-p109-2102",
+              "headword": "pakskiraaruʔ",
+              "raw_etymology": "<paks+kiraar+uʔ, head liquid + NOM>"
+            }
+          ],
+          "shapes": [
+            {
+              "shape": "kirar",
+              "evidence": "Cross-reference in SK-kiraar-p94-1787 <cf. kirar be liquid in>."
+            }
+          ],
+          "doubts": "Three colour terms are translated 'liquid-' but mean pale or faded and may belong to the next sense: SK-kiracaakaar-p94-1798 <kiraar+taakaar, be liquid-white> 'gray; faded', SK-kirahpahaat-p95-1804 'pink', SK-kirariiquus-p95-1810 'green' (Parks: 'perh.')."
+        },
+        {
+          "meaning": "be light in color; clear, bright, transparent",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "descriptive stem (own entry SK-kiraar-p94-1787 'kiraar' VD 'be light in color, pastel; be tan, buff; be fair, light in complexion')",
+          "evidence": "Own entry SK-kiraar-p94-1787; SK-kickiraar-p87-1634 kic-+kiraar, liquid to be clear; SK-sakuhkiraar-p151-2945 <sakuur+kiraar, clear day>; SK-asaakiraaq-p362-3738 <asaa+kiraar, light color horse>.",
+          "n_words": 5,
+          "examples": [
+            {
+              "entry_id": "SK-kickiraar-p87-1634",
+              "headword": "kickiraar",
+              "raw_etymology": "kic-+kiraar, liquid to be clear"
+            },
+            {
+              "entry_id": "SK-sakuhkiraar-p151-2945",
+              "headword": "sakuhkiraar",
+              "raw_etymology": "<sakuur+kiraar, clear day>"
+            },
+            {
+              "entry_id": "SK-asaakiraaq-p362-3738",
+              "headword": "asaakiraaʔ",
+              "raw_etymology": "<asaa+kiraar, light color horse>"
+            },
+            {
+              "entry_id": "SK-kuckiraaq-p101-1955",
+              "headword": "kuckiraaʔ",
+              "raw_etymology": "<kuc+kiraar, transparent vessel/clay>"
+            },
+            {
+              "entry_id": "SK-kiraarawataar-p94-1791",
+              "headword": "kiraarawataar",
+              "raw_etymology": "<kiraar+awataar, be light and bright>"
+            }
+          ],
+          "shapes": [
+            {
+              "shape": "kira(a)r",
+              "evidence": "SK-kickirarik-p87-1635 kic+kira(a)r+rik, liquid to be clear + DIST; not in n_words."
+            }
+          ],
+          "doubts": "Parks links the two himself (headword 1787 says 'cf. kirar be liquid in'), so these are probably related senses of one stem rather than true homonyms."
+        }
+      ],
+      "unassigned_uses": 0,
+      "notes": "27 exact-piece etymologies (22 + 5)."
+    },
+    {
+      "form": "u",
+      "senses": [
+        {
+          "meaning": "extending in a line; in a straight line",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "locative (own entry SK-u--p167-3294 'u-' LOC 'extending in a line'; dist. a-)",
+          "evidence": "SK-uhak-p167-3304 <u+hak, pass in a line>; SK-uqat-p167-3296 <u+at, go in a line>; SK-uqa-p167-3295 <u- +a (ir...), come in a line>.",
+          "n_words": 33,
+          "examples": [
+            {
+              "entry_id": "SK-uhak-p167-3304",
+              "headword": "uhak",
+              "raw_etymology": "<u+hak, pass in a line>"
+            },
+            {
+              "entry_id": "SK-uqat-p167-3296",
+              "headword": "uʔat",
+              "raw_etymology": "<u+at, go in a line>"
+            },
+            {
+              "entry_id": "SK-uqa-p167-3295",
+              "headword": "uʔa",
+              "raw_etymology": "<u- +a (ir...), come in a line>"
+            },
+            {
+              "entry_id": "SK-iksuqat-p64-1112",
+              "headword": "iksuʔat",
+              "raw_etymology": "<iks+u.at, hand to go in a line>"
+            },
+            {
+              "entry_id": "SK-kiicuqat-p90-1679",
+              "headword": "kiicuʔat",
+              "raw_etymology": "<kic+u.at, water to go in a line>"
+            }
+          ],
+          "shapes": [
+            {
+              "shape": "uu",
+              "evidence": "SK-haapiquuhak-p35-0602 haak.wi+uu.hak, upright tree to pass in a line; SK-hawiquuhak-p40-0682 <hawi+uu.hak, pass in a line on water>. (Most other uu pieces are a different verb, uu (ut...) 'be a certain way'.)"
+            },
+            {
+              "shape": "a",
+              "evidence": "Distributive form a- given in the headword SK-u--p167-3294 (see form 'a')."
+            }
+          ],
+          "doubts": "Almost always in u.at, u.hak, u.a. In ra+u.at / ra+u.hak 'hand over, carry' the 'line' reading is only in the literal translation."
+        },
+        {
+          "meaning": "subordinate (dependent-form) suffix of descriptive stems: 'that is ...', 'being ...'",
+          "kind": "grammatical",
+          "label": "SUB.D",
+          "position": "suffix",
+          "class": null,
+          "evidence": "abbreviations.json: SUB.D 'descriptive stem subordinating suffix' -u; Grammatical Overview: 'Descriptive stems ... take the subordinate suffix -u'. Etymologies: SK-rahaaktaakaaru-p478-4119 <ra+haak+taakaar+u, wood that is white>; SK-rakaahuraahkatiitu-p134-2610 <ra+kaahuraar+katiit+u, the world that is black>; SK-piitaraqu-p113-2181 <piita+ra.u, being the man>.",
+          "n_words": 22,
+          "examples": [
+            {
+              "entry_id": "SK-rahaaktaakaaru-p478-4119",
+              "headword": "rahaaktaakaaru",
+              "raw_etymology": "<ra+haak+taakaar+u, wood that is white>"
+            },
+            {
+              "entry_id": "SK-rakaahuraahkatiitu-p134-2610",
+              "headword": "rakaahuraahkatiitu",
+              "raw_etymology": "<ra+kaahuraar+katiit+u, the world that is black>"
+            },
+            {
+              "entry_id": "SK-pitku_rasakuuru-p114-2207",
+              "headword": "Pitku Rasakuuru",
+              "raw_etymology": "pitkus ra+sakuur+u, the second day"
+            },
+            {
+              "entry_id": "SK-rarahkirariiquusu-p136-2684",
+              "headword": "rarahkirariiʔuusu",
+              "raw_etymology": "<ra+raar+kirariiʔuus+u, ones that are green>"
+            },
+            {
+              "entry_id": "SK-piitaraqu-p113-2181",
+              "headword": "piitaraʔu",
+              "raw_etymology": "<piita+ra.u, being the man>"
+            }
+          ],
+          "shapes": [],
+          "doubts": "Parks never labels this piece in the etymologies; the identification is from its position after descriptive stems in ra- nominalisations (13 entries) and from the abbreviation list. Nine entries are less direct: the kin expressions with ra.u 'being' (0266, 0409, 0539, 1977, 2181) and haa.u 'have as a child' (1973, 1974, 1978, 1979)."
+        },
+        {
+          "meaning": "stem-forming suffix on descriptive bases ('activizer'; once 'transitivizer')",
+          "kind": "grammatical",
+          "label": "ACT",
+          "position": "suffix",
+          "class": null,
+          "evidence": "SK-ickaqu-p57-0974 <icka+u, sharp + ACT>; SK-hiikaqu-p389-3825 <hiika (uur...)+u, clean + ACT>; SK-wakaqu-p175-3464 <waka+u, (to) voice + TRANS>. abbreviations.json: ACT 'activizer suffix' -aʔu, -a, -uk; TRANS 'transitivizer affix' includes -u.",
+          "n_words": 6,
+          "examples": [
+            {
+              "entry_id": "SK-ickaqu-p57-0974",
+              "headword": "ickaʔu",
+              "raw_etymology": "<icka+u, sharp + ACT>"
+            },
+            {
+              "entry_id": "SK-hiikaqu-p389-3825",
+              "headword": "hiikaʔu",
+              "raw_etymology": "<hiika (uur...)+u, clean + ACT>"
+            },
+            {
+              "entry_id": "SK-kicaqu-p84-1570",
+              "headword": "kicaʔu",
+              "raw_etymology": "<kica-+u (ir...), be cute + ACT>"
+            },
+            {
+              "entry_id": "SK-wakaqu-p175-3464",
+              "headword": "wakaʔu",
+              "raw_etymology": "<waka+u, (to) voice + TRANS>"
+            },
+            {
+              "entry_id": "SK-kirikaqu-p96-1827",
+              "headword": "kirikaʔu",
+              "raw_etymology": "<kirika+u, be awake>"
+            }
+          ],
+          "shapes": [],
+          "doubts": "Label printed in four of the six (ACT in 0974, 3825, 1570; TRANS in 3464); SK-iciiraqu-p56-0963 <iciira+u, be mischievous; ...> and SK-kirikaqu-p96-1827 <kirika+u, be awake> are assigned by parallel shape. Whether ACT -u and TRANS -u are one suffix is not shown."
+        }
+      ],
+      "unassigned_uses": 1,
+      "notes": "64 raw exact-piece hits; 2 dropped (letter-spaced '( u t . . . )' in SK-ø_(ut...)_kiirahkata-p349-3572 and SK-ø_(ut...)_pak_siriq-p349-3573). Unassigned: SK-kitkahaahkisuraariksisuq-p99-1925 kitkahaahkis.u+raariksis+uʔ, real Kitkahahki + NOM. Not counted: u(k) 'legging?' in SK-ukuuk-p171-3381 and SK-ukuukuquq-p171-3383, and line-break strings u-huur, u-kac. Note the NOM suffix is uʔ, a different piece. So 'u' is one lexical locative plus two unrelated grammatical suffixes."
+    },
+    {
+      "form": "rihuur",
+      "senses": [
+        {
+          "meaning": "be big, large; (of rain, wind, sound) heavy, strong, loud",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "descriptive stem (own entry SK-rihuur-p139-2764 'rihuur' VD 'be big, large; be noted, prominent, socially important')",
+          "evidence": "Own entry SK-rihuur-p139-2764. Etymologies: SK-iturihuur-p418-3919 itur+rihuur, be a big village; SK-haakarihuur-p34-0576 <haaka+rihuur, mouth to be large>; SK-rihuraar-p139-2763 <rihuur+aar, become big>.",
+          "n_words": 21,
+          "examples": [
+            {
+              "entry_id": "SK-iturihuur-p418-3919",
+              "headword": "iturihuur",
+              "raw_etymology": "itur+rihuur, be a big village"
+            },
+            {
+              "entry_id": "SK-haakarihuur-p34-0576",
+              "headword": "haakarihuur",
+              "raw_etymology": "<haaka+rihuur, mouth to be large>"
+            },
+            {
+              "entry_id": "SK-rihuraar-p139-2763",
+              "headword": "rihuraar",
+              "raw_etymology": "<rihuur+aar, become big>"
+            },
+            {
+              "entry_id": "SK-hiirihuur-p389-3841",
+              "headword": "hiirihuur",
+              "raw_etymology": "<hiir+rihuur, be big grass>"
+            },
+            {
+              "entry_id": "SK-wakarihuur-p175-3473",
+              "headword": "wakarihuur",
+              "raw_etymology": "<waka+rihuur, voice to be big>"
+            }
+          ],
+          "shapes": [
+            {
+              "shape": "ri-huur",
+              "evidence": "Line-break spelling in SK-awirihuur-p25-0337 <awi+ri-huur, be a big image>; not in n_words."
+            }
+          ],
+          "doubts": "None; every etymology says 'big' or 'large'."
+        }
+      ],
+      "unassigned_uses": 0,
+      "notes": "21 exact-piece etymologies. Normally stem-final after a noun; surface -tihuur/-hihuur after some consonants."
+    },
+    {
+      "form": "haak",
+      "senses": [
+        {
+          "meaning": "wood; tree; a piece of wood (stick, pole, pipestem)",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "noun root (dependent noun: own entry SK-haak-,_rak--p33-0557 'haak-, rak-' N-DEP 'wood; tree'; also SK-haak/haaqak-p33-0558 VL 'be a tree; be wood, a pole, post, stick')",
+          "evidence": "SK-haaktaquk-p35-0594 haak+raʔuk, make a (piece of) wood; SK-haakahuruus-p33-0564 <haak+kahuruus, be hollow or pithy wood >; SK-sahtaakuq-p151-2942 <saht+haak+uʔ, walnut wood + NOM; cf. sat walnut>.",
+          "n_words": 31,
+          "examples": [
+            {
+              "entry_id": "SK-haaktaquk-p35-0594",
+              "headword": "haaktaʔuk",
+              "raw_etymology": "haak+raʔuk, make a (piece of) wood"
+            },
+            {
+              "entry_id": "SK-haakahuruus-p33-0564",
+              "headword": "haakahuruus",
+              "raw_etymology": "<haak+kahuruus, be hollow or pithy wood >"
+            },
+            {
+              "entry_id": "SK-haakasar-p34-0578",
+              "headword": "haakasar",
+              "raw_etymology": "<haak+kasar, be forked (piece of) wood>"
+            },
+            {
+              "entry_id": "SK-sahtaakuq-p151-2942",
+              "headword": "sahtaakuʔ",
+              "raw_etymology": "<saht+haak+uʔ, walnut wood + NOM; cf. sat walnut>"
+            },
+            {
+              "entry_id": "SK-haapuh-p35-0604",
+              "headword": "haapuh",
+              "raw_etymology": "haak+wuh, put (a piece of) wood upright"
+            }
+          ],
+          "shapes": [
+            {
+              "shape": "rak",
+              "evidence": "Same headword 'haak-, rak-' (SK-haak-,_rak--p33-0557); rak is the piece in 42 further etymologies meaning 'wood', e.g. SK-rakis-p135-2644 <rak+kis, wood + DIM>, SK-rakaatiit-p134-2613 <rak+kaatiit, black wood>. (rak also occurs as an unrelated 'grandchild' stem in SK-arakis-p13-0132 and SK-raktiiki-p135-2664.)"
+            },
+            {
+              "shape": "raak",
+              "evidence": "SK-raakickuusuq-p119-2321 <raak+ickuus+uʔ, tree peeling + NOM>; SK-kiriktaakuq-p96-1847 <kirik+raak+uʔ, eye wood + NOM, ...>; SK-raakuq-p120-2340 <raak+uʔ, wood + NOM> 'box'."
+            }
+          ],
+          "doubts": "None for haak. How haak-, rak- and raak are distributed is not explained in the sources I used."
+        }
+      ],
+      "unassigned_uses": 0,
+      "notes": "31 exact-piece etymologies, all 'wood/tree' (the 'pipe' readings are 'stick'). Do not confuse with haaka 'mouth'."
+    },
+    {
+      "form": "ha",
+      "senses": [
+        {
+          "meaning": "in water, on water",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "locative (own entry SK-ha-,_haa--p32-0541 'ha-, haa-' LOC 'in water')",
+          "evidence": "SK-hakus-p37-0632 <ha+kus, be sitting in water>; SK-hasa-p37-0646 <ha+sa, be lying in water>; SK-haqiir-p32-0542 ha+iir, put in water.",
+          "n_words": 26,
+          "examples": [
+            {
+              "entry_id": "SK-hakus-p37-0632",
+              "headword": "hakus",
+              "raw_etymology": "<ha+kus, be sitting in water>"
+            },
+            {
+              "entry_id": "SK-hasa-p37-0646",
+              "headword": "hasa",
+              "raw_etymology": "<ha+sa, be lying in water>"
+            },
+            {
+              "entry_id": "SK-haqiir-p32-0542",
+              "headword": "haʔiir",
+              "raw_etymology": "ha+iir, put in water"
+            },
+            {
+              "entry_id": "SK-hawiitik-p40-0685",
+              "headword": "hawiitik",
+              "raw_etymology": "<ha+wiitik, sit down in water>"
+            },
+            {
+              "entry_id": "SK-hawaaquq-p387-3813",
+              "headword": "hawaaʔuʔ",
+              "raw_etymology": "<ha+waa+uʔ, hill in water + NOM>"
+            }
+          ],
+          "shapes": [
+            {
+              "shape": "haa",
+              "evidence": "Headword 'ha-, haa-'; five etymologies use haa for 'in water', e.g. SK-haaqat-p33-0548 <haa-+at, go in water>, SK-huukitahaawarii-p398-3883 <huukita+haa+warii, go about on top of water>. (Other haa pieces are unrelated: 'child' in SK-haaraquk-p35-0605, LOC.ADV in SK-tiihaataku-p164-3234.)"
+            }
+          ],
+          "doubts": "ha.wi 'along on water' gives hawi- 'downstream; east' (SK-hawi--p40-0679)."
+        }
+      ],
+      "unassigned_uses": 1,
+      "notes": "27 exact-piece etymologies. Unassigned: SK-hawat-p387-3818 <ha+wat, extract from in the mouth; ...> 'spit out', where Parks translates ha as 'in the mouth' (a different element, or an extension I cannot confirm)."
+    },
+    {
+      "form": "icka",
+      "senses": [
+        {
+          "meaning": "face; facing, in front",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "noun root (independent noun SK-ckaquq-p30-0460 ckaʔuʔ 'face; cloud'; no separate headword for icka-)",
+          "evidence": "SK-ckaquq-p30-0460 icka+uʔ, face + NOM; SK-ickakaa-p57-0978 <icka+kaa, face to be inside>; SK-ickaqawask-p56-0972 <icka-+awask, face to laugh>.",
+          "n_words": 23,
+          "examples": [
+            {
+              "entry_id": "SK-ckaquq-p30-0460",
+              "headword": "ckaʔuʔ",
+              "raw_etymology": "icka+uʔ, face + NOM"
+            },
+            {
+              "entry_id": "SK-ickakaa-p57-0978",
+              "headword": "ickakaa",
+              "raw_etymology": "<icka+kaa, face to be inside>"
+            },
+            {
+              "entry_id": "SK-ickaqawask-p56-0972",
+              "headword": "ickaʔawask",
+              "raw_etymology": "<icka-+awask, face to laugh>"
+            },
+            {
+              "entry_id": "SK-ickawaraaciks-p57-0989",
+              "headword": "ickawaraaciks",
+              "raw_etymology": "<icka+waraaciks, be angry faced>"
+            },
+            {
+              "entry_id": "SK-ckakuukuquq-p30-0464",
+              "headword": "ckakuukuʔuʔ",
+              "raw_etymology": "icka+kuu-ku+uʔ, face covering + NOM"
+            }
+          ],
+          "shapes": [],
+          "doubts": "Includes the locative uses 'facing' (SK-ickawi--p57-0991 <icka.wi, face LOC>; SK-huuricka--p51-0862 huur+icka, image face)."
+        },
+        {
+          "meaning": "cloud",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "noun root (second gloss of the same noun ckaʔuʔ 'face; cloud'; plural SK-ckaraaruq-p30-0467 ckaraaruʔ 'clouds')",
+          "evidence": "SK-ckaraaruq-p30-0467 icka+raar+uʔ, cloud + PL + NOM; SK-ickakatakus-p57-0979 <icka+kata.kus, cloud to be sitting against (the vault of the Heavens)>; SK-ickakatasa-p57-0980 <icka-+kata.sa, cloud to be lying against (the vault of the Heavens)>.",
+          "n_words": 4,
+          "examples": [
+            {
+              "entry_id": "SK-ckaraaruq-p30-0467",
+              "headword": "ckaraaruʔ",
+              "raw_etymology": "icka+raar+uʔ, cloud + PL + NOM"
+            },
+            {
+              "entry_id": "SK-ickakatakus-p57-0979",
+              "headword": "ickakatakus",
+              "raw_etymology": "<icka+kata.kus, cloud to be sitting against (the vault of the Heavens)>"
+            },
+            {
+              "entry_id": "SK-ickakatasa-p57-0980",
+              "headword": "ickakatasa",
+              "raw_etymology": "<icka-+kata.sa, cloud to be lying against (the vault of the Heavens)>"
+            },
+            {
+              "entry_id": "SK-ickarahkatasa-p57-0982",
+              "headword": "ickarahkatasa",
+              "raw_etymology": "<icka+raar-+kata.sa, clouds + to be lying against (the vault of the Heavens)>"
+            }
+          ],
+          "shapes": [],
+          "doubts": "Parks gives 'face' and 'cloud' under one headword, so this may be one noun with two meanings rather than a homonym."
+        },
+        {
+          "meaning": "end, extremity, tip; pointed, sharp",
+          "kind": "lexical",
+          "label": null,
+          "position": null,
+          "class": "other (no headword of its own; noun-like 'end' in ickahak, ickaʔat and descriptive 'sharp' in ickaʔu, ickaraʔuk)",
+          "evidence": "SK-ickaqat-p56-0971 <icka+at, go to the extremity>; SK-ickahak-p57-0975 <icka+hak, end to pass by>; SK-ickaqu-p57-0974 <icka+u, sharp + ACT>; SK-ickaraquk-p57-0981 <icka+raʔuk, make sharp>.",
+          "n_words": 8,
+          "examples": [
+            {
+              "entry_id": "SK-ickaqat-p56-0971",
+              "headword": "ickaʔat",
+              "raw_etymology": "<icka+at, go to the extremity>"
+            },
+            {
+              "entry_id": "SK-ickahak-p57-0975",
+              "headword": "ickahak",
+              "raw_etymology": "<icka+hak, end to pass by>"
+            },
+            {
+              "entry_id": "SK-ickaqu-p57-0974",
+              "headword": "ickaʔu",
+              "raw_etymology": "<icka+u, sharp + ACT>"
+            },
+            {
+              "entry_id": "SK-ickaraquk-p57-0981",
+              "headword": "ickaraʔuk",
+              "raw_etymology": "<icka+raʔuk, make sharp>"
+            },
+            {
+              "entry_id": "SK-riickahak-p140-2787",
+              "headword": "riickahak",
+              "raw_etymology": "raa+icka.hak, be the end of a way"
+            }
+          ],
+          "shapes": [],
+          "doubts": "I join 'end/extremity' (4 entries plus SK-uhuurickaqat-p169-3347, whose literal translation says 'image to go facing' although the word means 'be the end') and 'sharp, pointed' (3 entries) as 'the point of something'; the sources do not state that they are the same, nor whether either is the 'face' noun used figuratively. Parks does give two separate ickahak entries, 'end to pass by' (0975) and 'face to pass by' (0976)."
+        }
+      ],
+      "unassigned_uses": 0,
+      "notes": "35 exact-piece etymologies (23 + 4 + 8). Initial i drops in independent words (ckaʔuʔ, ckaraaruʔ). Not counted: icka-riit in SK-ckariitkasisuq-p30-0469 (= ickariit 'hide')."
+    }
+  ]
+}

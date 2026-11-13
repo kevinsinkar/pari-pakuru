@@ -1,0 +1,105 @@
+{
+ "blind_resolutions": [
+  {
+   "case": "How the counts differ",
+   "resolution": "The reviewers counted every printed etymology that has the form as a piece (for the root 'go', 178). The inventory counts only words whose analysis is tier A or B and in which the meaning of the piece was checked (120 for the same root, 133 in all tiers). The two are different measures, not a disagreement."
+  },
+  {
+   "case": "The short root a",
+   "resolution": "The reviewer found eight separate uses. The pipeline had fused two of them, the verb 'come' and the bound locative 'extending in a line', through a single literal translation that contains words of both. A cited decision now stops that gloss from defining a sense. After the fix the inventory has 'come' in 48 tier A/B words and 'extending in a line' in 19, against the reviewer's 80 and 23 raw uses. The reviewer's class 1 subordinate suffix on nouns was also missing and is now a cited role default. The conjunction 'and' (2 uses) and 'eat' (1 use) are not in the inventory."
+  },
+  {
+   "case": "A plural use of raa",
+   "resolution": "The reviewer lists raa as a plural marker in seven etymologies. The pipeline had instead given it the gloss 'eye to go inside' in one word, because Parks prints the label PL last although the piece stands first. A cited decision now anchors that label on raa; the spurious sense is gone."
+  },
+  {
+   "case": "The causative that is also the verb 'make'",
+   "resolution": "The reviewer records two senses, the verb 'make' (37 uses) and a causative (87). The inventory keeps one morpheme, by a cited decision: Parks's stem template lists it as the causative and its dictionary entry is glossed 'make'. The reviewer notes that the pair 'may be one morpheme'. No change; the glosses Parks uses are listed with the morpheme in roots.json."
+  },
+  {
+   "case": "kucuu 'big, large'",
+   "resolution": "The reviewer classes it as the augmentative suffix, because Parks prints the label AUG for it three times, while noting that he translates it 'big' or 'large' in 30 of 33 etymologies. The inventory has both: the three labelled uses as an affix, the rest as a root meaning 'big' (21 tier A/B words). They are the same morpheme. Kept as is and listed for review; a learner needs the meaning either way."
+  },
+  {
+   "case": "One sense or two",
+   "resolution": "For several forms the reviewers recorded one morpheme whose literal translations diverge, where the inventory keeps separate senses because the glosses share no word: end and sharp, place and state, mouth and drum, hard and stunted, flat and ravine, person and sociable, and 'cause to go' and 'send'. The inventory's rule is to keep apart what Parks's wording does not join, so these stay separate and are listed in review_queue.md, section 5. One pair was merged on the reviewers' evidence because Parks glosses the same object both ways: 'hide' and 'skin' for a tipi cover."
+  },
+  {
+   "case": "A different name for the same sense",
+   "resolution": "For uhuur the reviewer's label is 'way, manner of acting', after the noun built on it; the inventory's is 'image', the gloss Parks gives the piece most often in compounds. The reviewer notes that Parks uses both. One sense in both analyses."
+  },
+  {
+   "case": "Reviewer senses not in the inventory",
+   "resolution": "Three single uses: 'be warm' (a reduced shape of another stem), 'juice' (probably the root 'liquid' written with a long vowel) and the conjunction 'and'. One is inflectional and so is in the inflectional table, not among the dictionary affixes: the first and second person plural prefix, which occurs in no etymology."
+  },
+  {
+   "case": "Affixes: where the two analyses agree",
+   "resolution": "For the suffixes Parks labels consistently the two counts are nearly the same: the noun suffix (reviewer 738 uses, inventory 735), perfective (70 and 70), imperfective (110 and 109), diminutive (60 and 60), the locative case suffix (60 and 61), and the general locative prefix (18 and 18). The reviewer independently reached the same reading of the unlabelled stem formatives that the inventory fixes by cited decision: the locative stem ending, the portative and absolutive prefixes, the distributive, and the causatives."
+  },
+  {
+   "case": "Lexical uses hidden under an affix default",
+   "resolution": "The reviewer found that three shapes the inventory labelled as affixes by default are lexical in some words: 'upright' (29 etymologies), 'hill' and 'be growing' (15), and a few uses of the plural/iterative shape. The default decisions now leave the piece lexical where Parks's literal translation uses one of those words. After the change the inventory has 'upright' in 32 tier A/B words and 'hill' in 8."
+  },
+  {
+   "case": "The preverb shapes",
+   "resolution": "Not resolved, and a real limit of the inventory. The reviewer separates, for the three preverb shapes, the meaningless preverb from the benefactive, possessor and transitivising prefixes of the same shape (for one of them: 61 preverb, 39 benefactive, 10 possessor, 9 transitiviser). Parks says the preverbs 'are identical in form to grammatical prefixes that have other functions'. The inventory puts all of these under PREV. The learner documents say so, and the split is listed for a linguist."
+  },
+  {
+   "case": "Senses that occur in no etymology",
+   "resolution": "Seven reviewer senses are inflectional prefixes and suffixes taken from the Grammatical Overview that occur in no dictionary etymology (quotative, infinitive, contingent, intentive, indicative, interrogative, first person). They are in the inflectional table of affixes.json, not among the dictionary affixes. One naming difference: the reviewer calls stem-final k a causative, the inventory uses Parks's printed label for it, TRANS."
+  },
+  {
+   "case": "Discrepancies between sources that the reviewer noted",
+   "resolution": "The augmentative is kucuu in the etymologies and abbreviations but is printed -kusuʔ in Overview Table 5. The general locative is ta in 18 etymologies but taa- in the abbreviations. The extracted Overview has OCR b for h. The locative -t and the distributive use of two causative shapes are attested only in etymologies. None of these is settled here; each is a question for a linguist."
+  }
+ ],
+ "adversarial_notes": [
+  {
+   "case": "What the pass changed",
+   "resolution": "Five findings led to changes, each recorded as a cited decision or a rule: (1) pieces Parks never glosses alone, such as 'big', had their meaning only from the old stored parse, so a commutation test was added (the remainder of the literal translation must agree across at least three words); (2) and (3) two pairs of synonymous glosses were merged on printed evidence (big and large; water and liquid); (4) a sense named after a gloss that fits few of its words is now named after the gloss that fits most; (5) a word of the literal translation can no longer vouch for two pieces at once, and a function word such as 'on' is not evidence unless Parks's own gloss for the piece is just that word."
+  },
+  {
+   "case": "Findings left standing",
+   "resolution": "Senses that group several of Parks's glosses (mind, feelings and thoughts; make and cause; good, nice and attractive) are one sense by his own dictionary entries, which list those glosses together. A bound locative and the locative verb of the same shape (inside; be inside) are counted as one morpheme with two dictionary entries. Short forms are reported with a chance baseline and are counted only where an analysis places them."
+  },
+  {
+   "case": "Affixes labelled by default",
+   "resolution": "This is the weakest part of the inventory and is only partly resolved. Several stem formatives carry their label by a cited decision in far more words than Parks labels them: the locative formative (labelled 4 times, default in about 190), the portatives, the absolutive on nouns built from verbs, and the causatives. The blind re-derivation reached the same reading of each independently, which supports the decisions, and it exposed lexical uses hidden under three of them, now excluded. A linguist should still confirm them. Each is in decisions.json with its counts."
+  },
+  {
+   "case": "How often the held-out half was scored",
+   "resolution": "It was first scored once the tier rules were final: tier A 18 of 18, tier B 16 of 16, tier C 14 of 14. The changes listed above were made afterwards, each prompted by the adversarial pass or the blind re-derivation and none by a held-out result, and the half was re-scored automatically after each. Tier A stayed at 18 of 18 throughout; two entries moved from tier C to tier B as meanings became checkable. The only edit prompted by a held-out item was to the scorer: it now removes the annotators' line-break marker from an English word before comparing."
+  }
+ ],
+ "changes_from_v1": [
+  "Meanings are re-read from Parks's printed etymologies. Version 1 took each piece's gloss from a stored parse that mis-aligns them, and checked Parks only against himself. Version 2 adds two independent checks: paradigms and Blue Book seams.",
+  "A count is now the number of tier A/B words in which the piece's meaning was checked, not the number of headwords whose stored piece list contains the string. The root 'go' falls from 156 to 120, 'liquid' from 114 to 60.",
+  "No shapes are merged on vowel length. Version 1's single root 'wood' (80 words) is three shapes counted separately, and 85 such pairs are listed for review instead.",
+  "Homonyms are found for every shape, not five chosen by hand (274 shapes are kept apart), and Parks's dotted compound stems are resolved to their own dictionary entries, so that the 'run' stem is no longer read as 'foot'.",
+  "Unlabelled stem formatives are classed as affixes by cited decisions, and the Blue Book's own seam rules (r to h before a consonant, w to p after a hard consonant, k dropping before p) were added to the round trip. Exact reproductions rise from version 1's 1,085 high-confidence segmentations to over 3,100, and the lesson order is computed, not set by hand."
+ ],
+ "open_questions": [
+  "Vowel length. Are the pairs that differ only in length (the shapes for 'wood', 'head', 'eye', 'string', 'black', and 80 more) one morpheme each, and what decides which shape appears?",
+  "587 printed analyses match their headword only if vowel length, ʔ or h is ignored, for example a short root vowel that is long before the noun suffix. Is that a regular sound change, a variant spelling of the piece, or an error?",
+  "Stem formatives labelled by default. Is the locative stem ending really present in the roughly 190 words where Parks prints no label for it? The same question for the portative prefixes, the absolutive on nouns built from verbs, and the four causative shapes.",
+  "The three preverb shapes. In which words are they meaningless preverbs, and in which benefactive, possessor or transitivising prefixes?",
+  "Is kucuu 'big, large' the augmentative suffix (which Overview Table 5 prints as -kusuʔ) or a root?",
+  "One shape, several meanings (274 shapes). Which are true homonyms and which one morpheme: 'face', 'cloud' and 'end, sharp'; 'place' and 'state'; 'cause to go' and 'send'; 'liquid in a container' and 'clear, light'?",
+  "The optional seam rules. What decides whether word-final s is lost (it is in 45% of the words where it could be), whether word-initial i or a is lost, whether ʔ follows a final vowel, and whether a long vowel shortens before h + consonant?",
+  "Seven compounds end their intentive form differently from their final root (-ista against -uksta), and 36 differ by one letter, among them every compound of 'be standing'. Printing errors, or real?",
+  "192 pieces have no known meaning: Parks glosses them with their own shape or not at all. What do they mean?",
+  "Thirteen words where the Blue Book writes a seam that Parks's analysis does not have. Does the seam mark a real boundary?"
+ ],
+ "gaps": [
+  "Gold-set size. Tier A precision on the held-out half is 18 of 18, but with 18 items the 95% interval reaches down to 82%. The gold set also tests fidelity to the printed page; it cannot show that Parks's own analysis is right.",
+  "The held-out half has now been scored several times (never tuned on). It is no longer unseen; future changes need fresh entries.",
+  "The blind re-derivation and the page transcriptions were done by independent AI reviewers with no access to the pipeline, not by a linguist or a speaker.",
+  "Token frequency counts example sentences attached to an entry, not occurrences in running text. There is no running-text corpus to count in.",
+  "Words Parks leaves unanalysed: the conservative proposer found one candidate. 361 words carry no segmentation claim.",
+  "Nouns have no paradigms, so they reach tier A only through a Blue Book seam; almost all analysed nouns are tier B or C.",
+  "Inflection (mode, person, aspect) was not re-analysed. It is taken from Parks's tables, his worked examples and the five dictionary forms.",
+  "Version 1's hand-made list of Blue Book against Parks conflicts was not re-verified. Version 2 reports only the seam conflicts it can detect.",
+  "The community-review flag is a keyword match on glosses and tags. It needs a person from the community to correct it.",
+  "The lessons cover the first 120 building blocks; the remaining 458 are given as an ordered table. The order is by usefulness, not by theme, and there is no audio."
+ ]
+}

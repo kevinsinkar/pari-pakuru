@@ -1,0 +1,130 @@
+{
+ "affix_tiers": {
+  "A": 21,
+  "B": 9,
+  "C": 27
+ },
+ "affixes": 57,
+ "blue_book_seams": {
+  "alignment_failed": 3,
+  "ambiguous_target": 24,
+  "certain": 77,
+  "english_mismatch": 39,
+  "no_target": 419,
+  "seamed_tokens": 635,
+  "skipped_ocr_spacing": 69,
+  "too_short": 4
+ },
+ "classes_AB": {
+  "derivational affix": 2,
+  "descriptive stem": 139,
+  "incorporated element (bound, inferred)": 41,
+  "locative": 93,
+  "noun root": 37,
+  "noun root (bound, inferred)": 91,
+  "particle or adverb": 9,
+  "verb root": 127,
+  "verb root (bound, inferred)": 15
+ },
+ "compound_stem_units": {
+  "commutation_anchors": 533,
+  "unit_ambiguous": 44,
+  "unit_not_a_headword": 547,
+  "unit_resolved_form_only": 71,
+  "unit_resolved_literal": 272
+ },
+ "decisions": {
+  "duplicate_rows": 63,
+  "homonym_split": 274,
+  "role_default": 21,
+  "sense_anchor": 3,
+  "sense_merge": 4,
+  "variant_candidate": 85
+ },
+ "e1": {
+  "citation": 354,
+  "none": 361,
+  "printed": 3621,
+  "proposed": 1
+ },
+ "e2": {
+  "exact": 3103,
+  "fail": 286,
+  "partial": 587
+ },
+ "e2_methods": {
+  "Parks rule engine": 11,
+  "Parks rule engine (vowel length, ʔ and h ignored)": 8,
+  "concatenation": 1363,
+  "concatenation (vowel length, ʔ and h ignored)": 287,
+  "none": 286,
+  "pieces located one at a time": 36,
+  "seam rules": 1374,
+  "seam rules (needs 3 optional rules)": 3,
+  "seam rules (vowel length, ʔ and h ignored)": 253
+ },
+ "e3": {
+  "confirm": 1306,
+  "contradict": 7,
+  "none": 2663
+ },
+ "e3b": {
+  "class_differs": 78,
+  "confirm": 1080,
+  "mismatch": 7,
+  "near": 36,
+  "not tested": 3136
+ },
+ "e5": {
+  "confirm": 36,
+  "contradict": 8,
+  "none": 3932
+ },
+ "lexeme_tiers": {
+  "A": 1086,
+  "B": 1320,
+  "C": 1569,
+  "D": 1,
+  "no claim": 361
+ },
+ "lexemes": 4337,
+ "lexical_morpheme_tiers": {
+  "A": 308,
+  "B": 246,
+  "C": 1145
+ },
+ "lexical_morphemes": 1699,
+ "rows": 4337,
+ "seam_rule_use": {
+  "#V>0/_C": 97,
+  "#w>p": 44,
+  "R13": 26,
+  "R14-15": 43,
+  "R15": 6,
+  "R16": 141,
+  "R16b": 37,
+  "R19": 15,
+  "R20": 118,
+  "R21": 109,
+  "R23": 39,
+  "R3": 24,
+  "R5": 77,
+  "R6": 14,
+  "R7": 41,
+  "R8": 41,
+  "R9": 111,
+  "V+V ʔ": 373,
+  "V:>V/_hC": 183,
+  "V>Vʔ/_#": 80,
+  "k>0/_p": 47,
+  "k>t/_#": 25,
+  "r>h/_C": 283,
+  "w>p/C_": 100
+ },
+ "verb_roots_AB": {
+  "basic root (its own entry is unanalysed)": 74,
+  "bound, no entry of its own": 15,
+  "derived stem (its own entry is analysed by Parks)": 53
+ },
+ "words_needing_community_review": 176
+}

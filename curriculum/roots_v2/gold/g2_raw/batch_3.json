@@ -1,0 +1,403 @@
+[
+ {
+  "entry_id": "SK-ickawiira--p58-0995",
+  "found": true,
+  "printed_headword": "ickawiira-",
+  "printed_class": "LOC",
+  "printed_verb_class": null,
+  "printed_braces": null,
+  "first_gloss": "upstream.",
+  "etymology_verbatim": "ickawiir(a), cf. SB ickaweera-, Ar. iskaweera- upward",
+  "etymology_kind": "analysis",
+  "pieces": ["ickawiir(a)"],
+  "literal": null,
+  "aligned_glosses": null,
+  "inferred_glosses": [
+   {"piece": "ickawiir(a)", "meaning": null, "basis": "unknown"}
+  ],
+  "paradigm_forms": {},
+  "notes": "HOMOGRAPH NOTE: two adjacent LOC entries stand in the left column. (a) 'ickawiir(a)-' LOC 'raised upward.' <ickawiira, cf. SB ickaweera-, Ar. iskaweera- upward>, example haakickawiirat; (b) 'ickawiira-' LOC '1. upstream. 2. westward, in a westerly direction.', transcribed here because its bold headword matches the work-list headword exactly. Etymology names one underlying form followed by cf. cognates (no + or .), so I classed it as analysis with a single piece; no literal translation is printed ('upward' glosses the SB/Ar. cognates), hence literal null and meaning unknown. Second gloss: 'westward, in a westerly direction.' Examples: ickawiiraʔat 'go upstream; go west.'; ickawiiraʔa (ir...) 'come upstream; come west.' (the second example is broken across lines as 'ickawiira-' / 'ʔa (ir...)')."
+ },
+ {
+  "entry_id": "SK-icusawask-p59-1017",
+  "found": true,
+  "printed_headword": "icusawask (ut...)",
+  "printed_class": "VT",
+  "printed_verb_class": "(1)",
+  "printed_braces": null,
+  "first_gloss": "smile at, grin at.",
+  "etymology_verbatim": "ut+icus+awask, nose to laugh at",
+  "etymology_kind": "analysis",
+  "pieces": ["ut", "icus", "awask"],
+  "literal": "nose to laugh at",
+  "aligned_glosses": null,
+  "inferred_glosses": [
+   {"piece": "ut", "meaning": "at", "basis": "literal"},
+   {"piece": "icus", "meaning": "nose", "basis": "literal"},
+   {"piece": "awask", "meaning": "to laugh", "basis": "literal"}
+  ],
+  "paradigm_forms": {"1": "tatuuticusawas", "2": "tuuticusawas", "3": "tuuticusawaskuʔ", "4": "iriruuticusawaska", "5": "tuuticusawaskista"},
+  "notes": "Two homographs in the left column: 'icusawask' VI(1) {dist., icusawaawask} 'smile, grin, as when laughing to oneself; snicker, titter.' <icus+awask, nose to laugh>, and 'icusawask (ut...)' VT(1), transcribed here because the work list gives class VT. The reading ut = 'at' comes from comparing the two etymologies on this page (the VI literal is 'nose to laugh'; the VT literal adds 'at'). Forms 3 and 5 are broken across lines ('tuuticusa-' / 'waskuʔ'; 'tuuticusawas-' / 'kista') and joined."
+ },
+ {
+  "entry_id": "SK-iisat-p408-3915",
+  "found": true,
+  "printed_headword": "iisat",
+  "printed_class": "VI",
+  "printed_verb_class": "(1)",
+  "printed_braces": "{dist., iisparii}",
+  "first_gloss": "go out of sight, disappear, disappear over, as when going over a hill; vanish, as when going off into the distance.",
+  "etymology_verbatim": "iis+at, go out of sight",
+  "etymology_kind": "analysis",
+  "pieces": ["iis", "at"],
+  "literal": "go out of sight",
+  "aligned_glosses": null,
+  "inferred_glosses": [
+   {"piece": "iis", "meaning": "out of sight", "basis": "literal"},
+   {"piece": "at", "meaning": "go", "basis": "literal"}
+  ],
+  "paradigm_forms": {"1": "tatiisat", "2": "tiʔiisat", "3": "tiʔiispuuʔ", "4": "iriiraʔiisata", "5": "tiʔiisuhta"},
+  "notes": "Only one 'iisat' on the page. The entry just above it is 'iis-' LOC 'out of sight.', which supports the iis reading. Second gloss: 'go down, set, as the sun on the horizon.' Example: tiʔiispariiʔ 'he is going back and forth out of sight, over a hill.'"
+ },
+ {
+  "entry_id": "SK-ikiraawarik-p62-1063",
+  "found": true,
+  "printed_headword": "ikiraawarik",
+  "printed_class": "VR",
+  "printed_verb_class": "(1)",
+  "printed_braces": null,
+  "first_gloss": "hurry, hurry oneself; be quick, make haste.",
+  "etymology_verbatim": "ikiraa+wa-|rik, cause to go in a hurried state",
+  "etymology_kind": "analysis",
+  "pieces": ["ikiraa", "wa-|rik"],
+  "literal": "cause to go in a hurried state",
+  "aligned_glosses": null,
+  "inferred_glosses": [
+   {"piece": "ikiraa", "meaning": "in a hurried state", "basis": "literal"},
+   {"piece": "wa-|rik", "meaning": "cause to go", "basis": "literal"}
+  ],
+  "paradigm_forms": {"1": "wititaatikiraawarit", "2": "wititiikiraawarit", "3": "wititiikiraawarikuʔ", "4": "iriiwitiraakiraawarika", "5": "wititiikiraawariksta"},
+  "notes": "The etymology is hyphenated at a line end ('ikiraa+wa-' / 'rik,'); kept as 'wa-|rik' in etymology_verbatim, pieces and inferred_glosses. The split of the literal ('in a hurried state' for ikiraa, 'cause to go' for warik) is my own reading of the wording; the page does not align the parts explicitly. Forms 3 and 5 are broken across lines and joined."
+ },
+ {
+  "entry_id": "SK-ikiriwit-p62-1065",
+  "found": true,
+  "printed_headword": "ikiriwit",
+  "printed_class": "VD",
+  "printed_verb_class": null,
+  "printed_braces": null,
+  "first_gloss": "be different, changed, transformed.",
+  "etymology_verbatim": "i.q. SB ikiriwiit, Ar. ičiwiniit",
+  "etymology_kind": "cognate_only",
+  "pieces": [],
+  "literal": null,
+  "aligned_glosses": null,
+  "inferred_glosses": [],
+  "paradigm_forms": {"1": "taatikiriwiʔit", "2": "tiikiriwiʔit", "4": "iriiraakiriwiitu", "5": "tiikiriwituksta"},
+  "notes": "No form 3 printed. The Arikara cognate is printed with a hacek c (ičiwiniit); copied as printed. Form 5 is broken across lines ('tii-' / 'kiriwituksta') and joined."
+ },
+ {
+  "entry_id": "SK-ikskaa-p63-1087",
+  "found": true,
+  "printed_headword": "ikskaa",
+  "printed_class": "VL",
+  "printed_verb_class": null,
+  "printed_braces": null,
+  "first_gloss": "have one's hand in, as a glove or drawer.",
+  "etymology_verbatim": "iks+kaa, hand to be in",
+  "etymology_kind": "analysis",
+  "pieces": ["iks", "kaa"],
+  "literal": "hand to be in",
+  "aligned_glosses": null,
+  "inferred_glosses": [
+   {"piece": "iks", "meaning": "hand", "basis": "literal"},
+   {"piece": "kaa", "meaning": "to be in", "basis": "literal"}
+  ],
+  "paradigm_forms": {"1": "taatikskaa", "2": "tiikskaa", "4": "iriiraakskaawi", "5": "tiikskaawista"},
+  "notes": "No form 3 printed. Example: taatikskaa rutaaktaahciihkuku 'I have my hand in a (dresser) drawer.'"
+ },
+ {
+  "entry_id": "SK-ikstahkatapaktaarik-p63-1102",
+  "found": true,
+  "printed_headword": "ikstahkatapaktaarik",
+  "printed_class": "VR",
+  "printed_verb_class": "(1)",
+  "printed_braces": null,
+  "first_gloss": "clap one's hands.",
+  "etymology_verbatim": "iks+raar+ka-|ta.waktaa+rik, hands to make a sound against a vertical surface",
+  "etymology_kind": "analysis",
+  "pieces": ["iks", "raar", "ka-|ta.waktaa", "rik"],
+  "literal": "hands to make a sound against a vertical surface",
+  "aligned_glosses": null,
+  "inferred_glosses": [
+   {"piece": "iks", "meaning": "hand", "basis": "literal"},
+   {"piece": "raar", "meaning": "plural (makes 'hand' into 'hands')", "basis": "literal"},
+   {"piece": "ka-|ta.waktaa", "meaning": "a sound against a vertical surface", "basis": "literal"},
+   {"piece": "rik", "meaning": "to make", "basis": "literal"}
+  ],
+  "paradigm_forms": {"1": "wititaatikstahkatapaktaarit", "2": "wititikstahkatapaktaarit", "3": "wititiikstahkatapaktaarikuʔ", "4": "iriiwitiraakstahkatapaktaarika", "5": "wititiikstahkatapaktaariksta"},
+  "notes": "PRINTING ODDITY: form 2 is printed 'wititikstahkatapaktaarit' with a short i after 'witit', whereas forms 3 and 5 have 'wititiiks...'; copied as printed (checked at high zoom). The etymology is hyphenated at a line end ('ka-' / 'ta.waktaa'); kept as 'ka-|ta.waktaa'. Gloss split is my reading: raar = plural rests on the same page printing <iks+kaa, hand to be in> for ikskaa beside <iks+raar+kaa, hands to be inside> for ikstahkaa; the division of 'to make a sound against a vertical surface' between kata.waktaa and rik is not made explicit by the page and is uncertain. Forms 2, 4 and 5 are broken across lines and joined."
+ },
+ {
+  "entry_id": "SK-iksuhuraar-p64-1114",
+  "found": true,
+  "printed_headword": "iksuhuraar (ut...)",
+  "printed_class": "VI",
+  "printed_verb_class": "(1-i)",
+  "printed_braces": null,
+  "first_gloss": "motion with one hand.",
+  "etymology_verbatim": "iks+uhuraar (ut...), hand to do ?",
+  "etymology_kind": "analysis",
+  "pieces": ["iks", "uhuraar (ut...)"],
+  "literal": "hand to do ?",
+  "aligned_glosses": null,
+  "inferred_glosses": [
+   {"piece": "iks", "meaning": "hand", "basis": "literal"},
+   {"piece": "uhuraar (ut...)", "meaning": "to do ?", "basis": "literal"}
+  ],
+  "paradigm_forms": {"1": "tatuutiksuhuraa", "2": "tuutiksuhuraa", "3": "tuutiksuhuraariʔ", "4": "iriruutiksuhuraara", "5": "tuutiksuhuraarista"},
+  "notes": "The entry is in the RIGHT column of book page 412 (the work list says left); it is the only 'iksuhuraar' on the page. The question mark in the literal translation is Parks's own: 'hand to do' ends a line and '?>' begins the next. The gloss is broken across lines as 'mo-' / 'tion' and joined. Forms 3 and 5 are broken across lines and joined."
+ },
+ {
+  "entry_id": "SK-iriipuh-p65-1139",
+  "found": true,
+  "printed_headword": "iriipuh (ut...)",
+  "printed_class": "VT",
+  "printed_verb_class": "(1)",
+  "printed_braces": null,
+  "first_gloss": "fold, fold up.",
+  "etymology_verbatim": "iriik (ut...)+wuh, cause to be folded",
+  "etymology_kind": "analysis",
+  "pieces": ["iriik (ut...)", "wuh"],
+  "literal": "cause to be folded",
+  "aligned_glosses": null,
+  "inferred_glosses": [
+   {"piece": "iriik (ut...)", "meaning": "to be folded", "basis": "literal"},
+   {"piece": "wuh", "meaning": "cause", "basis": "literal"}
+  ],
+  "paradigm_forms": {"1": "tatuutiriipu", "2": "tuutiriipu", "3": "tuutiriipuhuʔ", "4": "iriruutiriipuha", "5": "tuutiriipista"},
+  "notes": "The entry is in the RIGHT column of book page 413 (the work list says left); it is the only 'iriipuh' on the page. The same column prints 'iriik (ut...)' VL 'be folded, folded up.', which supports the gloss split. Form 4 is broken across lines ('iri-' / 'ruutiriipuha') and joined."
+ },
+ {
+  "entry_id": "SK-irikus-p66-1173",
+  "found": true,
+  "printed_headword": "irikus",
+  "printed_class": "N",
+  "printed_verb_class": null,
+  "printed_braces": null,
+  "first_gloss": "cough.",
+  "etymology_verbatim": "irik+hus, cough + IMPF",
+  "etymology_kind": "analysis",
+  "pieces": ["irik", "hus"],
+  "literal": "cough + IMPF",
+  "aligned_glosses": [
+   {"piece": "irik", "gloss": "cough"},
+   {"piece": "hus", "gloss": "IMPF"}
+  ],
+  "inferred_glosses": [
+   {"piece": "irik", "meaning": "cough", "basis": "aligned"},
+   {"piece": "hus", "meaning": "IMPF", "basis": "aligned"}
+  ],
+  "paradigm_forms": {},
+  "notes": "Example: tirahuriruuhciʔ irikus 'it is a bad cough.'"
+ },
+ {
+  "entry_id": "SK-iruuc-p68-1211",
+  "found": true,
+  "printed_headword": "iruuc",
+  "printed_class": "N",
+  "printed_verb_class": null,
+  "printed_braces": null,
+  "first_gloss": "snowbird.",
+  "etymology_verbatim": null,
+  "etymology_kind": "none",
+  "pieces": [],
+  "literal": null,
+  "aligned_glosses": null,
+  "inferred_glosses": [],
+  "paradigm_forms": {},
+  "notes": "The entry is near the top of the RIGHT column of book page 416 (the work list says left); it is the only 'iruuc' on the page. No etymology printed. Example: iruuc wiitarahwicaʔ 'the snowbirds have arrived.'"
+ },
+ {
+  "entry_id": "SK-itka-p68-1218",
+  "found": true,
+  "printed_headword": "itka",
+  "printed_class": "VI",
+  "printed_verb_class": "(4)",
+  "printed_braces": "{pl., itkawaa [+ ir-]; comb., itkas-, itkah-}",
+  "first_gloss": "sleep, be asleep.",
+  "etymology_verbatim": null,
+  "etymology_kind": "none",
+  "pieces": [],
+  "literal": null,
+  "aligned_glosses": null,
+  "inferred_glosses": [],
+  "paradigm_forms": {"1": "taatitka", "2": "titka", "4": "iriiraatka", "5": "titkahista"},
+  "notes": "No etymology and no form 3 printed. In the braces 'itkah-' is broken across lines as 'it-' / 'kah-' and joined; the final hyphens of itkas- and itkah- are printed (combining forms). Forms 2 and 5 are printed with a short i (titka, titkahista), unlike the tii- of most neighbouring entries; copied as printed (checked at high zoom). Example: tiiritkawaa 'they are asleep.'"
+ },
+ {
+  "entry_id": "SK-itkaar-p69-1226",
+  "found": true,
+  "printed_headword": "itkaar",
+  "printed_class": "VD",
+  "printed_verb_class": null,
+  "printed_braces": null,
+  "first_gloss": "be dusty.",
+  "etymology_verbatim": null,
+  "etymology_kind": "none",
+  "pieces": [],
+  "literal": null,
+  "aligned_glosses": null,
+  "inferred_glosses": [],
+  "paradigm_forms": {"2": "tiitkaaʔa, tiitkaa", "4": "iriiraatkaaru", "5": "tiitkaaruksta"},
+  "notes": "No etymology printed; forms 1 and 3 are not printed. Form 2 has two variants separated by a comma. Form 5 is broken across lines ('tiitkaaruks-' / 'ta') and joined."
+ },
+ {
+  "entry_id": "SK-kaakaq-p72-1287",
+  "found": true,
+  "printed_headword": "kaakaʔ",
+  "printed_class": "N",
+  "printed_verb_class": null,
+  "printed_braces": "{comb., kaakaa-}",
+  "first_gloss": "crow (Corvus brachyrhynchos); raven (Corvus corax).",
+  "etymology_verbatim": "kaakaa, crow (onom.)",
+  "etymology_kind": "analysis",
+  "pieces": ["kaakaa"],
+  "literal": "crow (onom.)",
+  "aligned_glosses": null,
+  "inferred_glosses": [
+   {"piece": "kaakaa", "meaning": "crow (onom.)", "basis": "literal"}
+  ],
+  "paradigm_forms": {},
+  "notes": "The etymology gives a single underlying form with a gloss (no + or .); I classed it as analysis with one piece. aligned_glosses is left null because the literal is not split by +. Examples: kaakaakat 'on the crow.'; ckaakaʔ 'female crow.'"
+ },
+ {
+  "entry_id": "SK-kaarik-p73-1306",
+  "found": true,
+  "printed_headword": "kaarik",
+  "printed_class": "VI",
+  "printed_verb_class": "(2-i)",
+  "printed_braces": null,
+  "first_gloss": "be standing there.",
+  "etymology_verbatim": "ka+arik, be standing in or on",
+  "etymology_kind": "analysis",
+  "pieces": ["ka", "arik"],
+  "literal": "be standing in or on",
+  "aligned_glosses": null,
+  "inferred_glosses": [
+   {"piece": "ka", "meaning": "in or on", "basis": "literal"},
+   {"piece": "arik", "meaning": "be standing", "basis": "literal"}
+  ],
+  "paradigm_forms": {"1": "tatkaarit", "2": "tikaarit", "4": "iriirakaariki", "5": "tikaariksta"},
+  "notes": "The entry begins at the bottom of the LEFT column of book page 421 and its last form runs over to the top of the right column ('tikaariks-' / 'ta'); joined as tikaariksta. No form 3 printed. Only one 'kaarik' on the page. Other glosses: '2. be standing in grass, brush, woods. 3. be standing in or on a circumscribed space, as on a blanket or road.'"
+ },
+ {
+  "entry_id": "SK-kaatahaahiriq-p74-1325",
+  "found": true,
+  "printed_headword": "kaatahaahiriʔ",
+  "printed_class": "ADV",
+  "printed_verb_class": null,
+  "printed_braces": null,
+  "first_gloss": "behind, in back of, as an object.",
+  "etymology_verbatim": "kaa-|ta+haar.hiriʔ, behind + LOC",
+  "etymology_kind": "analysis",
+  "pieces": ["kaa-|ta", "haar.hiriʔ"],
+  "literal": "behind + LOC",
+  "aligned_glosses": [
+   {"piece": "kaa-|ta", "gloss": "behind"},
+   {"piece": "haar.hiriʔ", "gloss": "LOC"}
+  ],
+  "inferred_glosses": [
+   {"piece": "kaa-|ta", "meaning": "behind", "basis": "aligned"},
+   {"piece": "haar.hiriʔ", "meaning": "LOC", "basis": "aligned"}
+  ],
+  "paradigm_forms": {},
+  "notes": "The etymology is hyphenated at a line end ('<kaa-' / 'ta+haar.hiriʔ'); kept as 'kaa-|ta'. Other glosses: '2. in the back, as in a room. 3. along a wall, against a wall, as in a room.' No examples printed."
+ },
+ {
+  "entry_id": "SK-kaatuhaaruq-p74-1334",
+  "found": true,
+  "printed_headword": "kaatuhaaruʔ",
+  "printed_class": "N",
+  "printed_verb_class": null,
+  "printed_braces": "{comb., kaatuhaar-, kaatuhaah-}",
+  "first_gloss": "grove, woods, timber, woodland, forest.",
+  "etymology_verbatim": "kaatu+haar+uʔ, kaatu + place + NOM",
+  "etymology_kind": "analysis",
+  "pieces": ["kaatu", "haar", "uʔ"],
+  "literal": "kaatu + place + NOM",
+  "aligned_glosses": [
+   {"piece": "kaatu", "gloss": "kaatu"},
+   {"piece": "haar", "gloss": "place"},
+   {"piece": "uʔ", "gloss": "NOM"}
+  ],
+  "inferred_glosses": [
+   {"piece": "kaatu", "meaning": "kaatu", "basis": "aligned"},
+   {"piece": "haar", "meaning": "place", "basis": "aligned"},
+   {"piece": "uʔ", "meaning": "NOM", "basis": "aligned"}
+  ],
+  "paradigm_forms": {},
+  "notes": "In the literal translation the first part is the Pawnee form 'kaatu' itself, printed untranslated in the sans-serif Pawnee type; so the page gives no English meaning for that piece. Examples: kaatuhaahiriʔ 'in the grove.'; iriirakaatuhaaruhat 'where the forest, woodland, timber is (i.e., extends).'; tikaatuhaaruʔat 'there are woods (i.e., extends).'"
+ },
+ {
+  "entry_id": "SK-kahuurik-p76-1388",
+  "found": true,
+  "printed_headword": "kahuurik",
+  "printed_class": "VT",
+  "printed_verb_class": "(1)",
+  "printed_braces": null,
+  "first_gloss": "burn, scorch, as when setting someone's clothes on fire.",
+  "etymology_verbatim": "ka+huurik, scorch in/on",
+  "etymology_kind": "analysis",
+  "pieces": ["ka", "huurik"],
+  "literal": "scorch in/on",
+  "aligned_glosses": null,
+  "inferred_glosses": [
+   {"piece": "ka", "meaning": "in/on", "basis": "literal"},
+   {"piece": "huurik", "meaning": "scorch", "basis": "literal"}
+  ],
+  "paradigm_forms": {"1": "tatkahuurit", "2": "tikahuurit", "4": "iriirakahuurika", "5": "tikahuuriksta"},
+  "notes": "No form 3 printed. Second gloss: 'scald.' Only one 'kahuurik' on the page."
+ },
+ {
+  "entry_id": "SK-katawiqat-p82-1519",
+  "found": true,
+  "printed_headword": "katawiʔat (ut...)",
+  "printed_class": "VI",
+  "printed_verb_class": "(1)",
+  "printed_braces": null,
+  "first_gloss": "go to meet, as when going to pick up someone.",
+  "etymology_verbatim": "ut+kata.wi+at, go to face a vertical surface",
+  "etymology_kind": "analysis",
+  "pieces": ["ut", "kata.wi", "at"],
+  "literal": "go to face a vertical surface",
+  "aligned_glosses": null,
+  "inferred_glosses": [
+   {"piece": "ut", "meaning": null, "basis": "unknown"},
+   {"piece": "kata.wi", "meaning": "to face a vertical surface", "basis": "literal"},
+   {"piece": "at", "meaning": "go", "basis": "literal"}
+  ],
+  "paradigm_forms": {"1": "tatutkatawiʔat", "2": "tutkatawiʔat", "3": "tutkataʔiwuuʔ", "4": "iriirutkatawiita", "5": "tutkatawihuhta"},
+  "notes": "HOMOGRAPH DOUBT. The work list says right column, but the only entry whose bold headword is 'katawiʔat' (short i) is 'katawiʔat (ut...)' VI(1) in the LEFT column, transcribed here. The RIGHT column has a near-homograph with long ii: 'katawiiʔat' VI(1) 'lean backwards.' <kata+wii+at, go slanting against a vertical surface> 1. tatkatawiiʔat 2. tikatawiiʔat 3. tikataʔiiwuuʔ 4. iriirakatawiiʔata 5. tikatawiihuhta. If the database entry is really the right-column one, use that record instead. I chose the left-column entry because the headword spelling matches and the column in the work list was wrong for several other entries in this batch. In the literal, 'to face' could belong to ut or to kata.wi; the page does not let me tell, so ut is left unknown."
+ },
+ {
+  "entry_id": "SK-katiitawaa-p83-1536",
+  "found": true,
+  "printed_headword": "katiitawaa",
+  "printed_class": "VL",
+  "printed_verb_class": null,
+  "printed_braces": null,
+  "first_gloss": "be dark, as at dusk, at night.",
+  "etymology_verbatim": "katiit+a.waa, black(ness) spreads out",
+  "etymology_kind": "analysis",
+  "pieces": ["katiit", "a.waa"],
+  "literal": "black(ness) spreads out",
+  "aligned_glosses": null,
+  "inferred_glosses": [
+   {"piece": "katiit", "meaning": "black(ness)", "basis": "literal"},
+   {"piece": "a.waa", "meaning": "spreads out", "basis": "literal"}
+  ],
+  "paradigm_forms": {"2": "tikatiitawaa", "4": "iriirakatiitawaawi", "5": "tikatiitawaawista"},
+  "notes": "Forms 1 and 3 are not printed. Form 5 is broken across lines ('tikatiita-' / 'waawista') and joined. Only one 'katiitawaa' on the page."
+ }
+]
