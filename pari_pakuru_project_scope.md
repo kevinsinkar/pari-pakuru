@@ -1,8 +1,47 @@
-# Pari Pakuru — Skiri Pawnee Language Tool: Project Scope & Todo
+# Pari Pakuru — Skiri Pawnee Language Tool: Project Log
+
+*Last updated 2026-11-13. This is the record of what was done in each phase,
+with its results, and of what is still open. For the folder layout see
+[README.md](README.md); for the script behind each step see
+[scripts/README.md](scripts/README.md).*
 
 ## Project Goal
 
 Build a comprehensive Skiri Pawnee language preservation tool: a searchable, linked dictionary with pronunciation guides, semantic tags, morphological grammar engine, and sentence construction — all validated against source materials.
+
+---
+
+## Status at a glance
+
+| When | Phase | What | State |
+|---|---|---|---|
+| 2026-02 | parse | Both dictionary sections read from page PDFs into JSON by an AI model; a second pass verified every field | done |
+| 2026-03-07 | 1.1a–d | Character repair, linking of the two sections, respelling and learner spelling, completeness audit | done |
+| 2026-03-08 | 1.2 | SQLite database | done |
+| 2026-03-08 | 2.1 | Topic tags | done |
+| 2026-03-08 | 2.2 | Blue Book cross-check | done |
+| 2026-03-08 | 2.3 | Sound-change rules (24) | done |
+| 2026-03-08 → 03-20 | 3.1 | Verb template, conjugation engine (90.3% of Appendix 1), form 2 prediction (86.7% of dictionary verbs), accent rules | paused: diminishing returns |
+| 2026-03-18 | 3.1.5 | Noun possession | done; repaired 2026-11-13; see open item 13 |
+| 2026-03-20 | 3.1.6 | Function words (418) | done |
+| 2026-03-10 → 03-21 | 4.1, 4.3, 4.4 | Web app, confidence scores, community feedback | done |
+| 2026-03-20 | 3.2a | Sentence templates (10) | done |
+| 2026-03-20 | 5.2 | Flashcards in the app; Anki export (unused) | done |
+| 2026-09-01 | audit | Extraction audit and repairs; IPA cross-checked against the PDF text layer | done; short residual list |
+| 2026-09-01 | 3.2b | Person and mode derived from attested forms | first slice done |
+| 2026-09-01 | 5.1 | Blue Book lessons in the app | done |
+| 2026-09-02 | 5.2b | Spaced-repetition study in the app | done |
+| 2026-09-12 | 5.3 | Static site on GitHub Pages | done |
+| 2026-10-01 | audit | Flashcard and static-site audit; IPA and page references restored on the site | done in part |
+| 2026-10-12 | 5.1, 5.2 | Lesson vocabulary linked; lesson titles repaired; flashcard curriculum frozen | done |
+| 2026-11-07 → 11-10 | 6.1 | Word-building guide, version 1; weekly paper flashcards and printable sheets; respelling repair | guide superseded by 6.2; flashcards in use |
+| 2026-11-12 | 6.2 | Word-construction analysis, version 2: evidence tiers, gold sets, learning path | done; awaiting human review |
+| 2026-11-13 | | Repository clean-up; documentation brought up to date | done |
+| 2026-11-13 | fixes | Data fixes (accent marks the decoding had dropped, page numbers, duplicates, letter-spaced text); possession suffix *-hiriʔ*; weekly flashcards rebuilt from version 2; flashcard Week 20 held for community review | done |
+
+The database on 2026-11-13, after that day's fixes: 4,337 entries (4,244 from
+Parks, 93 Blue Book only), 5,504 senses, 9,559 verb forms for 2,239 verbs,
+2,635 examples, IPA for 4,328 entries (1,800 with an accent mark). Full table list: [Quick_Reference_Guide.md](Quick_Reference_Guide.md).
 
 ---
 
@@ -12,23 +51,23 @@ Build a comprehensive Skiri Pawnee language preservation tool: a searchable, lin
 |------|-------------|----------|
 | Parks Dictionary (PDF) | Full Skiri Pawnee dictionary by Douglas Parks. Split into: Abbreviations/Sound Key, Sounds/Alphabet, Major Sound Changes, Grammatical Overview, Organization, English-to-Skiri section, Skiri-to-English section, 3 Appendices (Appendix 1: 7 verb conjugation paradigms ~770 forms; Appendix 2: irregular du/pl verb roots ~9 entries; Appendix 3: kinship terminology ~40 forms) | `Dictionary Data/Dictionary PDF Split/` |
 | Dictionary page PDFs | Individual pages split for AI processing | `Dictionary Data/split_pdf_pages_SKIRI_TO_ENGLISH/` and `split_pdf_pages_ENGLISH_TO_SKIRI/` |
-| Blue Book — Pari Pakuru' | 1979 Pawnee Cultural Retention Committee textbook. 21 lessons teaching spoken Pawnee with dialogues, vocabulary, grammar explanations | `pari pakuru/Blue Book - Pari Pakuru.pdf` and `.txt` extraction |
-| JSON Schemas | Defined structures for S2E and E2S parsed entries | `Dictionary Data/` |
-| Parks Ch. 3 OCR | OCR extraction of Major Sound Changes (24 rules with examples) | `parks_sound_changes_ocr.txt` |
-| Parks Ch. 4 OCR | OCR extraction of Grammatical Overview (23 pages: noun incorporation, verb classes, possession) | `parks_grammatical_overview_ocr.txt` |
+| Blue Book — Pari Pakuru' | 1979 Pawnee Cultural Retention Committee textbook. 20 lessons teaching spoken Pawnee with dialogues, vocabulary, grammar explanations | `pari pakuru/Blue Book - Pari Pakuru.pdf` and `.txt` extraction |
+| JSON Schemas | Defined structures for S2E and E2S parsed entries | `prompts/dictionary_parsing/` |
+| Parks Ch. 3 OCR | OCR extraction of Major Sound Changes (24 rules with examples) | `Dictionary Data/Dictionary PDF Split/parks_sound_changes_ocr.txt` |
+| Parks Ch. 4 OCR | OCR extraction of Grammatical Overview (23 pages: noun incorporation, verb classes, possession) | `Dictionary Data/Dictionary PDF Split/parks_grammatical_overview_ocr.txt` |
 
 ## Current Data State
 
 | File | Entries | Status |
 |------|---------|--------|
-| `skiri_to_english_respelled.json` | 4,273 | **CURRENT** — normalized, IPA synced, OCR fixed, `simplified_pronunciation` + `normalized_form` populated |
-| `skiri_to_english_fixed.json` | 4,273 | Intermediate — OCR fixes applied, pre-respelling |
-| `skiri_to_english_linked.json` | 4,273 | Linked + IPA synced (pre-fix, pre-respelling) |
-| `english_to_skiri_linked.json` | 6,414 | **CURRENT** — normalized, s2e_entry_id linked to S2E entries |
-| `skiri_to_english_normalized.json` | 4,273 | Normalized OCR artifacts, pre-linking |
-| `english_to_skiri_normalized.json` | 6,414 | Normalized OCR artifacts, pre-linking |
-| `skiri_to_english_complete.json` | 4,273 | Original parse (has OCR corruptions) |
-| `english_to_skiri_complete.json` | 6,414 | Original parse (has OCR corruptions) |
+| `Dictionary Data/skiri_to_english_respelled.json` | 4,273 | **CURRENT** — normalized, IPA synced, OCR fixed, `simplified_pronunciation` + `normalized_form` populated |
+| `Dictionary Data/english_to_skiri_linked.json` | 6,414 | **CURRENT** — normalized, `s2e_entry_id` linked to S2E entries |
+| `skiri_pawnee.db` | 4,337 | **CURRENT, and the working master copy** — the two files above plus 93 Blue Book-only entries, less 29 duplicate rows, plus everything later phases added. Not in git |
+
+The earlier stages of the two JSON files (`*_complete`, `*_verified`,
+`*_normalized`, `*_linked`, `*_fixed`, and their change logs) were removed from
+the repository on 2026-11-13. They are in git history at commit `2e77095`
+under `archived/dictionary_intermediates/`.
 
 ### Relationship Between S2E and E2S
 
@@ -40,17 +79,17 @@ Build a comprehensive Skiri Pawnee language preservation tool: a searchable, lin
 ### S2E Entry Structure
 ```json
 {
-  "entry_id": "SK-paaqatuq-p100-1234",
-  "headword": "paaʔatuʔ",
-  "normalized_form": "pâ'atu'",
-  "entry_metadata": { "page_number": 100, "column": "left", ... },
+  "entry_id": "SK-paatuq-p107-2038",
+  "headword": "paatuʔ",
+  "normalized_form": "pâtu'",
+  "entry_metadata": { "page_number": 107, "column": "left", ... },
   "part_I": {
-    "stem_preverb": "(ut...)",
-    "phonetic_form": "[•paa-ʔə-tʊʔ•]",
-    "simplified_pronunciation": "pah-'uh-too'",
+    "stem_preverb": null,
+    "phonetic_form": "[paá-tʊʔ]",
+    "simplified_pronunciation": "PAH-too'",
     "grammatical_info": { "grammatical_class": "N", "verb_class": null, "additional_forms": [] },
-    "glosses": [{ "number": 1, "definition": "blood.", "usage_notes": null }],
-    "etymology": { "raw_etymology": "<...>", "constituent_elements": [...], "literal_translation": "..." },
+    "glosses": [{ "number": 1, "definition": "blood; gore.", "usage_notes": null }],
+    "etymology": { "raw_etymology": "<paat+uʔ, blood + NOM>", "constituent_elements": [...], "literal_translation": "..." },
     "cognates": [{ "language": "Ar.", "form": "..." }]
   },
   "part_II": {
@@ -69,13 +108,13 @@ Build a comprehensive Skiri Pawnee language preservation tool: a searchable, lin
   "entry_metadata": { "page_number": 1, ... },
   "subentries": [{
     "subentry_number": 1,
-    "s2e_entry_id": "SK-paaqatuq-p100-1234",
+    "s2e_entry_id": "SK-paatuq-p107-2038",
     "s2e_match_type": "exact_unique",
     "part_I": {
-      "skiri_term": "paaʔatuʔ",
-      "phonetic_form": "[•paa-ʔə-tʊʔ•]",
+      "skiri_term": "paatuʔ",
+      "phonetic_form": "[paá-tʊʔ]",
       "grammatical_classification": { "class_abbr": "N", "verb_class": null },
-      "english_glosses": [{ "number": 1, "definition": "blood." }],
+      "english_glosses": [{ "number": 1, "definition": "blood; gore." }],
       "etymology": { ... }
     },
     "part_II": { "paradigmatic_forms": [{ "form_number": 1, "skiri_form": "..." }], "examples": [...] },
@@ -123,7 +162,7 @@ Verb classes: (1), (1-a), (1-i), (2), (2-i), (3), (4), (4-i), (u), (wi)
 
 ---
 
-## Completed Work
+## Phase log: 1.1 (cleaning the parsed dictionary)
 
 ### ✅ Phase 1.1a — OCR Normalization
 **Script:** `scripts/normalize_phonetic.py`
@@ -145,6 +184,31 @@ Verb classes: (1), (1-a), (1-i), (2), (2-i), (3), (4), (4-i), (u), (wi)
 | Š (U+0160) | ʊ (U+028A) | IPA near-close back rounded |
 
 Also strips whitespace from `phonetic_form` fields. Preserves `•` syllable dots.
+
+**Correction (2026-11-13).** The "corrupted" characters are not OCR errors. The
+PDF's text layer does not contain Parks's IPA letters; its font has them at the
+positions of other characters, so the text layer is full of stand-ins. The table
+above, and the six additions listed under Phase 1.1c, were worked out without
+looking at the page, and six rows were wrong. Read against page images:
+
+| Stand-in | Was decoded as | The page prints | Entries |
+|---|---|---|---|
+| `÷` | ː (a length mark) | **ú**, as in *huú* | 141 |
+| `Š` | ʊ | **ʊ́** (accented) | 125 |
+| `ˆ`, `ç` | ɪ, ʔ | **ì** | 3 |
+| `ø` | ː | **ù** | 1 |
+| `Ò` | a | **à** | 1 |
+| `à` (itself) | à | **ə́** | 545, not yet changed |
+| `‡` | í | what looks like **ɪ́** | 371, not yet changed |
+
+Parks prints no length mark anywhere: long vowels are doubled. The first five
+rows had removed the accent from 269 entries, and in two of them a vowel from
+the respelling as well. `scripts/fix_data_2026_11.py` restored them from the
+text layer, position by position (report:
+`reports/fix_data_2026-11-13_report.txt`). The last two rows keep the accent but
+not Parks's symbol; they are open item 6. The 2026-09-01 cross-check against the
+text layer could not see any of this, because it decoded the text layer with the
+same table.
 
 **Results:** 50,699 character replacements across 8,820 entries. Zero corruptions remaining.
 
@@ -194,7 +258,7 @@ Also strips whitespace from `phonetic_form` fields. Preserves `•` syllable dot
 **Also applied (`fix_priority_issues.py`):** 6 additional OCR corrections missed by Phase 1.1a (`÷`→`ː`, `ˆ`→`ɪ`, `‹`→`ʊ`, `Ò`→`a`, `ç`→`ʔ`, `ø`→`ː`), plus ~111 non-IPA phonetic form stubs nulled (`[cross-referenceonly]`, `NOT_PROVIDED`, `N/A`, `Seeentryfor'...'`, `[notprovided]`).
 
 ### ✅ Phase 1.1d — Parsing Completeness Audit
-**Scripts:** `scripts/audit_entries.py`, `scripts/generate_review_list.py`, `scripts/verify_glottal_from_phonetic.py`
+**Scripts:** `scripts/audit_entries.py`; `generate_review_list.py` and `verify_glottal_from_phonetic.py` (now in `archived/scripts/`)
 **What it does:** Validates every S2E entry (and optionally E2S) for data quality. Local rule-based checks + optional Gemini AI batch validation.
 
 **Local checks performed:**
@@ -218,31 +282,33 @@ Also strips whitespace from `phonetic_form` fields. Preserves `•` syllable dot
 
 ---
 
-## Todo: Remaining Work
+## Phase log: 1.2 onward
 
-### Priority Roadmap *(added 2026-03-15)*
+### Priority Roadmap *(added 2026-03-15; statuses brought up to date 2026-11-13)*
 
 High-impact items ordered by learner value, not technical dependency:
 
 | Priority | Phase | What | Why |
 |----------|-------|------|-----|
 | ✅ ~~1~~ | 3.1.5 | ~~Noun possession morphology~~ | **DONE (2026-03-18)** — 4 possession systems + locative suffixes + web widget + example filter. 40/40 tests. |
-| 🟡 2 | 3.1 (stem extraction) | Dictionary-wide stem extraction | **IN PROGRESS** — third pass: 83.5% → **86.6%** (1,914/2,211), 88.4% w/ close. Up from 14.8% → 62.0% → 83.5% → 86.6%. |
+| 🟡 2 | 3.1 (stem extraction) | Dictionary-wide stem extraction | **PAUSED at 86.7%** (re-measured 2026-11-12: 1,908 of 2,201) — third pass: 83.5% → **86.6%** (1,914/2,211), 88.4% w/ close. Up from 14.8% → 62.0% → 83.5% → 86.6%. |
 | ✅ ~~3~~ | 4.3 | ~~Confidence scoring on computed forms~~ | **DONE (2026-03-19)** — 4-factor weighted scoring (0.0-1.0), DB column, web badges, dashboard widget. 88.7% avg, 2,202 high / 30 med / 22 low. |
-| 🟡 4 | 3.1 (accent) | Accent mark generation | **IN PROGRESS** — 78/85 (91.8%) accented forms correct. 4 rules: Agent-boundary í, Mode-prefix í/rí, Infinitive kú, Dual sí. Appendix 1: 76.2% → **86.4%**. 7 remaining failures are verb-specific stem accents. |
+| 🟡 4 | 3.1 (accent) | Accent mark generation | **PAUSED** — 78/85 (91.8%) accented forms correct. 4 rules: Agent-boundary í, Mode-prefix í/rí, Infinitive kú, Dual sí. Appendix 1: 76.2% → **86.4%**. 7 remaining failures are verb-specific stem accents. |
 | ✅ ~~5~~ | 4.4 | ~~Community feedback mechanism~~ | **DONE (2026-03-19)** — Flag/confirm buttons, admin review queue, writable DB, dashboard widget. Design Principle #6 enforced. |
-| 🟡 6 | 5.2 (exports) | Printable PDFs + Anki export | **Anki DONE (2026-03-20)** — 4,336 cards, 19 tag decks, dedup + display_headword + confidence gating. PDF export remaining. |
+| 🟡 6 | 5.2 (exports) | Printable PDFs + Anki export | **Anki DONE (2026-03-20)** but unused. **Printable flashcard sheets DONE (2026-11-10)**, `curriculum/flashcard_pdfs/`. Printable word lists and paradigm tables remaining. |
 | ✅ ~~7~~ | Ongoing | ~~Blue Book 518-gap triage~~ | **DONE (2026-03-19)** — 516 gaps classified: 38% phrases, 27% inflected verbs, 18% unlisted nouns, 8% descriptors, 3% possessed, 2% function words, 2% loanwords, 2% OCR artifacts. 65% are morphological (roots exist in Parks). 115 high-value items flagged for DB addition. |
 | ✅ ~~8~~ | 3.1.6 | ~~Function word inventory~~ | **CLASSIFIED (2026-03-20)** — 418 function words with `position_rule` + `refined_subclass`. 149 PROCLITIC, 135 PRECEDES-VERB, 51 PRECEDES-NOUN, 44 CLAUSE-INITIAL, 28 STANDALONE, 11 BETWEEN-CLAUSES. Demonstratives + interrogatives mapped. |
-| 🟡 9 | 3.2a | Template-based sentence assembly | First usable step toward sentence construction |
-| 🟡 10 | 5.1 | Structured lesson content | Blue Book curriculum extraction for progressive learning |
+| ✅ ~~9~~ | 3.2a | ~~Template-based sentence assembly~~ | **DONE (2026-03-20)** — 10 templates, `/sentence-builder`. Person and mode derivation added 2026-09-01 (3.2b). |
+| ✅ ~~10~~ | 5.1 | ~~Structured lesson content~~ | **DONE (2026-09-01)** — all 20 Blue Book lessons in the app and on the static site. |
 
-### 🟡 Next Up: Phase 3.1 — Dictionary-Wide Stem Extraction *(Priority #2 — IN PROGRESS)*
+### 🟡 Phase 3.1 — Dictionary-Wide Stem Extraction *(paused after the third pass)*
 
-**Status:** Third pass complete — **83.5% → 86.6% exact** (1,914/2,211 verbs), 88.4% with close matches. Up from 14.8% → 62.0% → 83.5% → 86.6%.
+**Re-measured 2026-11-12:** 1,908 of 2,201 exact (86.7%), 40 close, 253 missed. The word-construction analysis (Phase 6.2) uses this predictor as one of its evidence channels and treats a miss as "no confirmation", never as a contradiction.
+
+**Status (2026-03-19):** Third pass complete — **83.5% → 86.6% exact** (1,914/2,211 verbs), 88.4% with close matches. Up from 14.8% → 62.0% → 83.5% → 86.6%.
 
 **Script:** `scripts/stem_extractor.py`
-**Reference files:** `parks_sound_changes_ocr.txt` (OCR of Parks Ch. 3), `parks_grammatical_overview_ocr.txt` (OCR of Parks Ch. 4)
+**Reference files:** `parks_sound_changes_ocr.txt` (OCR of Parks Ch. 3), `parks_grammatical_overview_ocr.txt` (OCR of Parks Ch. 4), both in `Dictionary Data/Dictionary PDF Split/`
 
 This is the wall between "a conjugation engine that works on 7 test verbs" (76.2% on Appendix 1) and "a tool that can inflect any verb a learner looks up." The first pass proved the approach works — headword IS the stem, and form_2 is predictable from `headword + verb_class + stem_preverb` with systematic sound change rules.
 
@@ -308,11 +374,13 @@ This is the wall between "a conjugation engine that works on 7 test verbs" (76.2
 **Script:** `DB/import_to_sqlite.py`
 **What it does:** SQLite database (`skiri_pawnee.db`) unifying S2E and E2S data.
 
-**Tables:** `lexical_entries` (4,366 entries: 4,273 Parks + 93 Blue Book), `glosses`, `paradigmatic_forms`, `examples`, `etymology`, `cognates`, `derived_stems`, `english_index`, `cross_references`, `semantic_tags`, `blue_book_attestations`, `import_metadata`, `bb_gap_triage`, `community_feedback`, `function_words` (418), `bb_function_words` (63) + FTS tables for glosses, examples, english_index.
+**Tables:** `lexical_entries` (4,337 entries on 2026-11-13: 4,273 imported from Parks, + 93 Blue Book-only words, − 23 duplicate rows in March, − 6 more in November), `glosses`, `paradigmatic_forms`, `examples`, `etymology`, `cognates`, `derived_stems`, `english_index`, `cross_references`, `semantic_tags`, `blue_book_attestations`, `import_metadata`, `bb_gap_triage`, `community_feedback`, `function_words` (418), `bb_function_words` (63) + FTS tables for glosses, examples, english_index. Which script created each table, and the row counts, are in `DB/README.md`.
+
+**The database cannot be rebuilt by one command.** The importer creates only the core tables; more than twenty later scripts changed the database in place, some with AI answers that were saved nowhere else. Restore a backup instead (`OneDrive/pari_pakuru_backups/`, `~/.pari_pakuru_backups/`).
 
 ### ✅ Phase 2.1 — Semantic Category Tagging
 **Script:** `scripts/tag_entries.py`
-**What it does:** Auto-tags entries by domain using rule-based keyword matching + Gemini AI for ambiguous cases. 7,097 tags stored in `semantic_tags` table.
+**What it does:** Auto-tags entries by domain using rule-based keyword matching + Gemini AI for ambiguous cases. 7,097 tags were stored at first. An AI audit on 2026-03-15 (`archived/scripts/audit_semantic_tags.py`, report `reports/audit_semantic_tags.txt`) removed 1,248 false matches caused by English words with several meanings, and 36 wrong kinship tags were removed on 2026-03-21. On 2026-11-13 the table holds **4,500 tags: 19 topics on 3,316 entries**. (The rest of the drop from 7,097 is not documented.)
 
 ### ✅ Phase 2.2 — Blue Book Cross-Verification
 **Script:** `scripts/blue_book_verify.py`
@@ -334,7 +402,9 @@ This is the wall between "a conjugation engine that works on 7 test verbs" (76.2
 - Gaps include: multi-word phrases, verb constructions, function words, loanwords (expected)
 - Normalization confirmed working: BB `ts`→Parks `c`, BB `'`→Parks `ʔ`
 
-**Checkpoint files:** `bb_extraction_checkpoint.json`, `blue_book_extracted.json`
+**Extraction output:** `extracted_data/blue_book_extracted.json` (984 items). The extraction checkpoint is in git history only.
+
+**State on 2026-11-13:** `blue_book_attestations` has 1,026 rows, 581 of them linked to a dictionary entry; 181 entries are marked `blue_book_attested`. The `prefix` match type (404 rows) is unreliable and is not used as evidence by the word-construction analysis.
 
 **Script features:**
 - `--rerun-failed`: clears empty checkpoint entries so failed lessons get re-extracted
@@ -348,7 +418,7 @@ This is the wall between "a conjugation engine that works on 7 test verbs" (76.2
 - Split into 4 chunks: p111-116 (35 entries), p117-122 (18 entries), p123-130 (0 — glossary only)
 - 58 total items, 33 matched (57%)
 
-**Follow-up: Pronunciation comparison (`scripts/bb_pronunciation_compare.py`):**
+**Follow-up: Pronunciation comparison (`archived/scripts/bb_pronunciation_compare.py`):**
 - Extracts BB parenthetical pronunciation guides from raw text (12 found in lesson pages 29+)
 - OCR normalization: consonant+'d' → consonant+'a' (stress-dotted vowel artifact)
 - 3-pass parser: inline `word (pron) gloss`, column-block (table format), preceding-line
@@ -548,7 +618,11 @@ Skiri has **four distinct possession systems**, not one. Each applies to differe
 | 3. Agent possession | N (general nouns) | ku-(INDF) + gerundial possessive verb + NOUN | kti ratiru pakskuuku' (my hat) |
 | 4. Patient possession | Any noun | uur- prefix when non-agent possesses | tatuuhkuutit aruusaʔ (I killed YOUR horse) |
 
-**Validation:** 40/40 tests passing (33 possessive + 7 locative/instrumental). Covers all 4 possession systems plus case suffixes, validated against Blue Book Lessons 5, 7, 8 and Grammatical Overview Table 4.
+**Validation (2026-03-18):** 40/40 tests passing (33 possessive + 7 locative/instrumental). Covers all 4 possession systems plus case suffixes, validated against Blue Book Lessons 5, 7, 8 and Grammatical Overview Table 4.
+
+**Validation (2026-11-13):** the built-in list now has 49 checks. When first re-run it gave 31 of 49: the engine was looking for `appendix3_kinship.json` under `scripts/`, so no kinship form was found and `/api/possession/<kinship noun>` returned a server error. With the path corrected: 47 of 49, and the API answers for every noun.
+
+**Suffix corrected (2026-11-13).** The engine built its instrumental and body-part locative with *-biriʔ*. Parks's suffix is *-hiriʔ* (Grammatical Overview p. 30, read from the page image); the `b` came from the AI extraction of that page, and the note above about `b` being an allophone was a rationalisation of the misreading. How *-hiriʔ* attaches was measured on the 42 dictionary words whose etymology ends in it: h stays after a vowel (21 of 21), is lost after a consonant (13 of 13), and after r either the h is lost (2) or, in the one element *-haar*, the r is (6). The engine follows that (`hiri_suffix()`), its plural check now expects Parks's attested *ikstaaririʔ*, ten attested words were added as checks, and it no longer tries to call the conjugation engine's assembler (a call that had never worked). **59 of 59**, the same from the command line and inside the web app; no generated form contains a `b`. What is still wrong with its output is open item 13.
 
 Tasks completed:
 - [x] Extract & classify all nouns — filter S2E for N/N-DEP/N-KIN; extract stems (strip -uʔ/-kis); classify by possession system
@@ -623,7 +697,7 @@ Tasks:
 - [ ] Cross-reference with Blue Book dialogue examples for natural usage patterns
 - [ ] Integrate into sentence builder (Phase 3.2) as selectable modifiers
 
-### 🔲 Phase 3.2 — Sentence Construction Framework
+### 🟡 Phase 3.2 — Sentence Construction Framework *(3.2a done; 3.2b first slice done)*
 **Priority:** Medium (depends on 3.1 accuracy improvements + 3.1.5 noun morphology)
 **Depends on:** Phase 3.1 (morpheme slot system at 60%+ accuracy — **now at 76.2%**), Phase 3.1.5 (noun possession), Phase 3.1.6 (function words)
 **Effort:** Very Large — **now broken into 3 sub-phases to make progress incremental**
@@ -637,7 +711,7 @@ Sources:
 
 #### ✅ Phase 3.2a — Template-Based Sentence Assembly
 **Scripts:** `scripts/sentence_templates.py`, `scripts/template_slot_fillers.py`
-**Design doc:** `phase_3_2a_sentence_templates.md`
+**Design doc:** `prompts/phase_3_2a_sentence_templates.md`
 
 DONE — 10 templates covering 73% of Blue Book sentences, web UI at
 `/sentence-builder` (template cards → slot fill → assembled sentence with
@@ -780,7 +854,7 @@ flashcards, and live search. Mobile-responsive via Pico CSS framework.
 - `/api/slot-options` — Dropdown options for sentence builder slots
 - `/api/bb_verb_forms?q=...` — Blue Book verb form search
 
-### 🔲 Phase 4.2 — Sentence Builder UI
+### ✅ Phase 4.2 — Sentence Builder UI *(delivered with Phase 3.2a, 2026-03-20; person and tense selectors added 2026-09-01)*
 **Priority:** Low (depends on Phase 3.2a at minimum)
 **Effort:** Large
 
@@ -831,14 +905,14 @@ Tasks completed:
 
 ### ✅ Phase 4.4 — Community Feedback Mechanism *(completed 2026-03-19)*
 **Priority:** ✅ Complete (#5 on roadmap)
-**Implemented in:** `web/app.py`, `web/db.py`, `web/templates/entry.html`, `web/templates/dashboard.html`, `scripts/add_feedback_table.py`
+**Implemented in:** `web/app.py`, `web/db.py`, `web/templates/entry.html`, `web/templates/dashboard.html`, `archived/scripts/add_feedback_table.py`
 **Built via:** Claude Code (VS Code)
 
 Knowledgeable community members (teachers, elders' family members, students) can now flag errors and confirm forms. All feedback goes through human review — never auto-accepted (Design Principle #6).
 
 **DB:**
 - `community_feedback` table: entry_id, feedback_type (flag/confirm), issue_type, suggested_correction, comment, reporter_name (optional), status workflow (pending→accepted/rejected), reviewer_note, timestamps
-- Migration script: `scripts/add_feedback_table.py`
+- Migration script: `archived/scripts/add_feedback_table.py`
 - Separate writable DB connection in `db.py` — main dictionary stays read-only
 
 **Entry detail page (`entry.html`):**
@@ -936,12 +1010,168 @@ Tasks:
 - [x] Semantic category decks (19 categories: kinship, animals, body, food, etc.)
 - [x] Include pronunciation (IPA + simplified respelling) on every card
 - [x] Blue Book-attested entries prioritized in card selection
-- [x] **Anki deck export** — **DONE (2026-03-20)**. `scripts/anki_export.py`: 4,336 cards across 19 semantic tag decks + "All Words" parent. genanki .apkg output. Stable model/deck/note IDs for safe re-import. CLI flags: `--dry-run`, `--deck TAG`, `--advanced` (per-sense Option B), `--verbs-only`, `--bb-only`, `--min-confidence`.
+- [x] **Anki deck export** — **DONE (2026-03-20), unused** (in-app study, Phase 5.2b, replaced it; the exported deck was removed from the repository on 2026-11-13). `scripts/anki_export.py`: 4,336 cards across 19 semantic tag decks + "All Words" parent. genanki .apkg output. Stable model/deck/note IDs for safe re-import. CLI flags: `--dry-run`, `--deck TAG`, `--advanced` (per-sense Option B), `--verbs-only`, `--bb-only`, `--min-confidence`.
 - [x] **Pre-export data cleanup (2026-03-20):** `scripts/dedup_entries.py` removed 22 p2/p71 duplicate pairs + merged kusisaar parser artifact (4,366 → 4,343 entries). Preserved hiksukac (VD/VP) and racawaktaarik (VI/VT) as legitimate polysemy. `scripts/display_utils.py`: `display_headword()` with 5 rules (bracket, slash, paren onset, suffix paren, bound-morpheme dash), `gram_class_label()`, `morph_class_note()`. Tested against all 281 notation entries — zero problems.
 - [x] **Card template spec locked:** Option A multi-sense (primary sense + "+N more" note), form2_confidence >= 0.75 threshold for verb forms, format_pitch_anki() for HTML pitch accent, per-class back notes (N-KIN, N-DEP, LOC, ADV-P), example dedup on english_translation.
+- [x] **Printable flashcard sheets** — **DONE (2026-11-10)**: `scripts/build_flashcard_pdfs.py` → `curriculum/flashcard_pdfs/` (24 weekly PDFs, four cards to a sheet, double-sided).
 - [ ] **🔴 Printable PDF wordlists and paradigm tables for offline use** — highest-impact remaining export for classroom use; target users may have inconsistent internet access. Same query as Anki, rendered via reportlab/weasyprint.
 - [ ] Blue Book lesson-aligned decks (vocabulary per lesson)
 - [ ] Audio placeholder fields (for future recordings)
+
+### ✅ Phase 5.3 — Static site on GitHub Pages *(2026-09-12)*
+**Script:** `scripts/build_static_site.py` · **Workflow:** `.github/workflows/static.yml` · **How to:** `DEPLOYMENT.md`
+
+The search, flashcard and lesson pages are rendered from the Flask templates
+into `docs/` and served by GitHub Pages. Search runs in the browser over
+`docs/data/dictionary.json` (Fuse.js); there are no per-entry pages. The
+workflow only uploads `docs/`; the site is rebuilt on a developer's machine,
+because the database is not in git. Links are relative, so the site works
+under the repository's Pages path.
+
+### ✅ Extraction audit *(2026-09-01)*
+**Report:** `reports/extraction_audit_2026-09-01.md` · **Repairs:** `scripts/fix_audit_issues.py`, `scripts/upgrade_phonetics_from_textlayer.py`
+
+Question: is the database a faithful copy of the printed dictionary, and is
+the learner spelling derived correctly?
+
+- A stratified sample of 50 Skiri-to-English entries was checked field by field against the page: all 47 that could be located matched. English-to-Skiri linking: 5,132 linked subentries, none dangling.
+- An independent re-implementation of the spelling rules reproduced the stored learner spelling for all 4,273 entries.
+- Seven issues were found and repaired the same day: c/č under-conversion (60 spellings corrected), seven entries that had lost senses on import (the uniqueness rule on the `glosses` table was dropped), 23 of 32 missing IPA forms recovered, 227 leftover OCR characters, doubled examples after de-duplication, 315 verb forms with line-break hyphens, and drift between the JSON and the database.
+- **Second-method cross-check.** Every IPA form was compared with the PDF's own text layer (`reports/_s2e_page_index.json`). 130 forms that had lost their special characters were replaced from the text layer; agreement between the two methods is now 99.76% (4,194 of 4,204 compared).
+
+### ✅ Flashcard and static-site audit *(2026-10-01, follow-ups 2026-10-12)*
+**Report:** `reports/audit_data_construction_2026-10-01.md`
+
+Question: do the flashcards and the public site carry the data faithfully?
+
+- Sound: pitch survived respelling in all 1,542 entries that have it; every flashcard carries IPA.
+- Fixed 2026-10-01: the static site had dropped the IPA and the page references (A1, A2); definitions were being cut at 120 characters, including two band-name explanations (A3); multi-sense words showed one sense with no sign of the others (A4); 68 respellings contained stray `?` marks (B1, `scripts/fix_respelling_artifacts.py`).
+- Fixed 2026-10-12: the flashcard curriculum is frozen in `curriculum/flashcard_sets.json` so that week numbers, to which learners' progress is keyed, no longer shift (B4, `scripts/freeze_flashcard_sets.py`). Lesson vocabulary linked to dictionary entries rose from 234 to 339 of 531 (`scripts/link_bb_vocab.py`). Fourteen OCR errors in lesson titles were repaired (`scripts/fix_lesson_titles.py`).
+- Open: B2, B3, B5, B6, C1 to C5. See "Open items".
+
+### ✅ Phase 6.1 — Word-building guide, version 1 *(2026-11-07 to 2026-11-10; superseded)*
+**Scripts:** `scripts/root_extraction.py`, `scripts/build_root_curriculum.py` (+ `root_curriculum_spec*.py`) · **Output:** `curriculum/roots/`
+
+First attempt to answer "which roots and affixes are used most, and in what
+order should they be learned?" Every entry was segmented from the stored
+parse of Parks's etymology and checked against the headword; roots were
+ranked by the number of headwords containing them; seven units of lessons
+were written by hand from a specification in which every Pawnee form is a
+database lookup. 1,320 root senses; segmentation confidence 1,085 high,
+1,575 medium, 1,683 low.
+
+Done in the same days and **still in use**:
+
+- `curriculum/weekly_flashcards.md` (`scripts/build_weekly_flashcards.py`): the 387 frozen flashcard words as 1,015 paper cards, Week 1 = Sunday 2026-11-08. (Rebuilt from version 2 on 2026-11-13: 372 words shown, 995 cards.)
+- `curriculum/flashcard_pdfs/` (`scripts/build_flashcard_pdfs.py`): the same cards as printable double-sided sheets.
+- Respelling repair (`scripts/fix_pronunciations.py`, report `reports/fix_pronunciations_report.txt`): optional sounds kept in parentheses, `{k/t}` alternations restored, Blue Book-only entries re-syllabified; 1,273 entries changed in the database, the JSON and the frozen sets; 32 stems left for review.
+
+Version 1's analysis is superseded by Phase 6.2, which found that the stored
+parse it relied on puts meanings on the wrong pieces. Its files are kept; see
+`curriculum/README.md` for why.
+
+### ✅ Phase 6.2 — Word-construction analysis, version 2 *(2026-11-12)*
+**Instruction:** `prompts/skiri_word_construction_v2.md` · **Code:** `scripts/morphology_v2/` · **Output:** `curriculum/roots_v2/` · **Method:** `curriculum/roots_v2/METHOD.md`
+
+A re-analysis built so that every claim can be checked: each Pawnee form is
+looked up from a source record, each analysis gets a tier that follows
+mechanically from its evidence, the rules were tested on entries not used to
+tune them, and one command regenerates everything byte for byte.
+
+**Evidence channels.** E1 Parks's printed etymology (re-parsed from the raw
+text); E2 the pieces joined by named sound rules reproduce the headword; E3
+the verb's five forms behave as the analysis predicts; E4 each piece recurs
+with the same meaning in other words; E5 a Blue Book seam falls on a boundary
+of the analysis; E6 Parks's grammar tables; E7 cognates (recorded only).
+
+**Results** (run of 2026-11-13, after that day's data fixes; the first run differed by one root and three words).
+
+| | |
+|---|---|
+| Words analysed | 4,337 lexemes (on 2026-11-12: 4,343 rows less six groups of true duplicates; those six rows have since been removed from the database) |
+| Tiers | A 1,086 · B 1,320 · C 1,569 · D 1 · no claim 361 |
+| Headword reproduced from Parks's pieces | exactly 3,103 · nearly 587 · not 286 (version 1 had 1,085 high-confidence segmentations) |
+| Inventory | 1,699 lexical morphemes (A 308, B 246, C 1,145); 57 affixes (A 21, B 9, C 27) |
+| Teachable building blocks (tier A or B) | 549 roots + 30 affixes |
+| Words a learner can take apart completely | 1,791 (41.3%) with all 579 blocks; 480 (11.1%) with the first 100 |
+| Held-back test entries | tier A 18 of 18, tier B 18 of 18, tier C 12 of 12 match the printed page; piece meanings 78 of 78 |
+| Compound verbs that inflect like their final root | 1,080 of 1,123 (96%) |
+| Independent re-derivation of the top 86 shapes | 154 of 180 senses matched; 91.6% of example words under the same sense |
+
+**What it established.**
+
+- The stored `constituent_elements` glosses are unreliable. Parks's printed etymology must be re-parsed, and his literal translation is not in the order of the pieces.
+- The Blue Book (Lesson 3, pp. 41–42) states seam rules the sound-change engine lacked: r becomes h before a consonant (195 of 196 cases), w becomes p after a hard consonant (64 of 64), k drops before p (32 of 32).
+- "This shape has only one known meaning, so assume it" was wrong every time it could be checked, and is never counted as evidence.
+- Shapes that differ only in vowel length are not merged; 85 such pairs are listed for review.
+- Parks's dotted compound stems are entries in their own right and must be resolved before their parts are read.
+- 74 basic and 15 bound verb roots reach tier A or B, in line with Parks's "approximately one hundred".
+
+**Limits.** The test set is small (18 of 18 leaves a 95% interval down to 82%)
+and tests faithfulness to Parks's page, not whether Parks is right. The page
+transcribers and independent reviewers were AI models. Affixes that Parks
+rarely labels, and the several functions of the three preverb shapes, are the
+weakest parts. The held-back half has been scored more than once and is no
+longer unseen.
+
+**Not done.** Nothing from it is on the public site. No speaker or linguist
+has reviewed `curriculum/roots_v2/review_queue.md`. (The 43 data errors it
+found were applied on 2026-11-13; see below.)
+
+**Weekly flashcards rebuilt from it (2026-11-13).** The cards took their
+"built from …" notes and their related-word cards from version 1. Checked
+against version 2, 12 of 162 notes read differently and 7 printed a piece's own
+shape as its meaning. `scripts/build_weekly_flashcards.py` now reads
+`curriculum/roots_v2/evidence.jsonl`. A piece gets a meaning only where Parks
+glosses that piece by itself, or where the checked meaning and the stored gloss
+(or Parks's translation of the word) agree; otherwise it is shown bare. Checking
+the two against each other showed that neither is always right: version 1 had
+the meanings of *Ickariʔ* on the wrong pieces, and version 2 reads the first
+piece of 'eleven' as "added" where Parks's "one" is plainly meant. Both are now
+shown bare.
+
+### ✅ Repository clean-up *(2026-11-13)*
+
+- Removed from the working tree, all recoverable from commit `2e77095`: 139 MB of intermediate dictionary JSON, run logs, superseded report drafts, nine debugging scripts, three overlapping GitHub Pages guides, the unused Anki deck, four page images, two dead scripts.
+- Ten checkpoint files that were never in git were moved to `OneDrive/pari_pakuru_backups/repo_cleanup_2026-11-13/`.
+- Design documents, parsing instructions and schemas gathered in `prompts/`; `blue_book_extracted.json` moved into `extracted_data/`.
+- A `README.md` in every folder; `DEPLOYMENT.md` replaces the three Pages guides; the quick reference rewritten from the live database.
+- Three faults found while checking the documentation against the code:
+  - `scripts/possession_engine.py` looked for the kinship table in a folder that does not exist, so kinship nouns were treated as ordinary nouns and `/api/possession/<kinship noun>` returned a server error. **Fixed**: the engine's own checks went from 31 to 47 of 49, and the API now answers for all 1,708 nouns.
+  - `DB/test_schema.py` could not read `schema.sql` on Windows. **Fixed**: 53 of 53.
+  - The possession engine builds instrumental forms with *-biriʔ*, a misreading of Parks's *-hiriʔ*. Fixed the same day; see Phase 3.1.5.
+
+### ✅ Data fixes *(2026-11-13)*
+**Script:** `scripts/fix_data_2026_11.py` (dry run by default) · **Report:** `reports/fix_data_2026-11-13_report.txt` · **Backups:** `OneDrive/pari_pakuru_backups/*_20261113_*`
+
+The 43 errors proposed by the word-construction analysis were each checked
+against the page image or the PDF text layer before anything was applied.
+Checking them turned up more of the same kinds, and one new kind.
+
+| Fix | Proposed | Applied | Checked against |
+|---|---|---|---|
+| Page number 2 where the entry is on book page 419 | 23 | 28 | text layer of both pages |
+| Letter-spaced text ("c l o s e  u p") | 12 glosses | 13 glosses, 12 example translations, 14 etymologies | page image (glosses); plain English (the rest) |
+| Duplicate rows of *kaa…* entries (`-p2-` and `-p71-`) | 6 | 6 removed; two cleaner fields kept from the copies; 7 English-index links moved or repaired | page image; the pairs are identical in headword, IPA, class, forms and examples |
+| *caʔuuhtuʔ*: etymology and cognates | 1 | 1 | page image |
+| *ciihtahaahiriʔ*: "(contemp.)" stored as a verb class | 1 | 1; the label put back in front of the gloss | page image |
+| Accent marks dropped by the character decoding | not proposed | 269 entries; plus ÷ → ú in 25 etymologies, 27 cognates, 10 English-index forms | page images for each stand-in character; the text layer for each position |
+
+The last row is described under Phase 1.1a. It changes what learners see: 260
+of the 269 entries had shown no accented syllable at all, 48 of them flashcard
+words (*kuruks* 'bear' is now `KOO-dooks`), and two respellings had lost a
+vowel.
+
+The JSON dictionaries and the frozen flashcard file were updated by the same
+script (week membership unchanged), the word-construction analysis was run
+again, and the static site was rebuilt.
+
+### ✅ Flashcard Week 20 held for community review *(2026-11-13)*
+
+Audit item B6. `curriculum/held_for_review.json` lists the week;
+`web/flashcards.py` leaves listed weeks out, so the web app, the static site
+and the paper cards no longer show it. Week numbers do not change. Releasing it
+is one deleted line and a rebuild, and is the Pawnee Nation's decision.
 
 ### 🔲 Ongoing — Data Quality & Maintenance
 
@@ -975,209 +1205,89 @@ These principles guide all user-facing features:
 4. **Record uncertainty with granularity** — mark generated (unattested) forms distinctly from documented ones. Learners must know what's verified vs. computed. **Go beyond binary**: use confidence tiers (high/medium/low) so learners know *how* uncertain a computed form is (see Phase 4.3).
 5. **Privilege primary sources** — Parks Dictionary and Blue Book are the authorities; computed forms are supplements, never replacements
 6. **Community governance over correctness** *(NEW)* — the tool should never be the sole authority on what counts as correct Skiri. Provide mechanisms for knowledgeable community members to flag errors, confirm forms, and contribute corrections. Human review gates all feedback before it enters the system (see Phase 4.4).
-7. **Accent is not optional** *(NEW)* — pitch/accent placement in Skiri is phonemic (changes meaning). Any generated form without correct accent marks is unreliable for speech. Treat accent assignment as a learner-safety issue, not a cosmetic improvement (see Phase 3.1 accent task).
+7. **Accent is not optional** *(NEW)* — pitch/accent placement in Skiri is phonemic (changes meaning). Any generated form without correct accent marks is unreliable for speech. Treat accent assignment as a learner-safety issue, not a cosmetic improvement (see Phase 3.1 accent task). *Correction, 2026-11-13: the claim that accent is phonemic is not supported by the source. Parks writes "Stress is not phonemic in Skiri and hence is not marked on words. (Phonetic forms in entries do, however, have accented syllables marked.)" (Sounds and Alphabet, p. 15). The marks are part of his IPA and must be preserved and shown for that reason; calling them "pitch" that changes meaning is not his description. See open item 9.*
 8. **Build for the classroom first** *(NEW)* — the primary users are teachers and students in community language classes. Prioritize features that serve that context: printable materials, lesson-aligned content, Word of the Day, simple UI that works on low-bandwidth connections. Self-directed online learners are an important secondary audience.
+9. **Never invent a Pawnee form; never generate IPA** *(2026-09-01, 2026-11-12)* — every form in learner material is looked up from a source record. Parks's IPA marks vowel reduction and pitch that cannot be predicted from spelling, so it is shown only where he prints it for that exact word. A derived form is always labelled as derived.
+10. **Ceremonial vocabulary waits for the community** *(2026-10-01)* — words to do with bundles, dances and doctoring are flagged and kept out of new learner material until the Pawnee Nation has reviewed them. That is a decision about protocol, not about data.
+11. **Same spelling is not the same word** *(2026-03-20, 2026-11-12)* — two entries, or two word-pieces, with one shape are merged only when meaning, class and forms agree, and the decision is recorded as data so that it can be undone.
 
 ---
 
 ## Scripts Reference
 
-| Script | Location | Purpose | API Required? |
-|--------|----------|---------|---------------|
-| `normalize_phonetic.py` | `scripts/` | Fix OCR artifacts across all fields | No |
-| `link_dictionaries.py` | `scripts/` | Link S2E↔E2S with shared IDs, sync IPA phonetics | No |
-| `fix_priority_issues.py` | `scripts/` | Phase 1.1a supplement: fix remaining OCR chars, null non-IPA stubs | No |
-| `respell_and_normalize.py` | `scripts/` | Generate `simplified_pronunciation` + `normalized_form` | No |
-| `audit_entries.py` | `scripts/` | Full data quality audit (local + optional Gemini) | Optional (GEMINI_API_KEY) |
-| `generate_review_list.py` | `scripts/` | Triage audit flags into actionable review list | No |
-| `verify_glottal_from_phonetic.py` | `scripts/` | Cross-reference phonetic_form to verify noun glottal stops | Optional (GEMINI_API_KEY) |
-| `test_phase_1_1.py` | `scripts/` | Test suite for 1.1c/1.1d engines (106 tests) | No |
-| `run_parser_e2s.py` | `scripts/` | Parse E2S dictionary pages | No |
-| `s2e_parser.py` | `scripts/` | Parse S2E dictionary pages | No |
-| `verify_with_gemini.py` | `scripts/` | Verify parsed entries with Gemini | Yes (GEMINI_API_KEY) |
-| `verify_with_claude.py` | `scripts/` | Verify parsed entries with Claude | Yes |
-| `tag_entries.py` | `scripts/` | Phase 2.1: semantic tag entries (rule-based + Gemini) | Optional (GEMINI_API_KEY) |
-| `blue_book_verify.py` | `scripts/` | Phase 2.2: Blue Book cross-verification — extract vocab, match to dictionary, populate examples | Yes (GEMINI_API_KEY) |
-| `bb_pronunciation_compare.py` | `scripts/` | Phase 2.2 follow-up: compare BB pronunciation guides with Parks simplified_pronunciation | No |
-| `sound_changes.py` | `scripts/` | Phase 2.3: sound change rule engine — 24 rules cataloged, pipeline, validation against paradigmatic forms | No |
-| `extract_appendices.py` | `scripts/` | Phase 3.1: extract appendix/grammar data from scanned PDFs via Gemini OCR (--appendix1, --appendix2, --appendix3) | Yes (GEMINI_API_KEY) |
-| `morpheme_inventory.py` | `scripts/` | Phase 3.1: morpheme slot system, conjugation engine, validation (--validate, --validate-dict, --report) | No |
-| `analyze_dual_plural.py` | `scripts/` | Phase 3.1: Gemini-powered morpheme breakdown analysis for dual/plural forms | Yes (GEMINI_API_KEY) |
-| `retry_failed_grammar.py` | `scripts/` | Phase 3.1: retry failed grammar pages with plain-text Gemini or Claude API | Yes (GEMINI_API_KEY or ANTHROPIC_API_KEY) |
-| `merge_grammar_retries.py` | `scripts/` | Phase 3.1: merge recovered grammar page data into grammatical_overview.json | No |
-| `noun_possession.py` | `scripts/` | Phase 3.1.5: noun possession morphology — extract nouns, classify possession systems, build kinship paradigms, generate possessive forms, validate against BB (--extract, --report, --validate, --db, --generate HEADWORD) | No |
-| `possession_engine.py` | `scripts/` | Phase 3.1.5: possession form generation engine — dispatches to kinship/body_part/agent/locative/patient systems, integrates sound changes, generates morpheme chips for web UI (--test, --paradigm HEADWORD) | No |
-| `example_filter.py` | `scripts/` | Phase 3.1.5: Skiri-aware headword matching for examples — rejects false substring matches (kirike≠kiri), handles OCR variants (J→E, 1→E), compound detection via epenthetic-h, prefix disambiguation against headword set; wired into entry_detail route | No |
-| `stem_extractor.py` | `scripts/` | Phase 3.1: dictionary-wide form_2 prediction — parses stem_preverb, infers verb class, applies preverb junction rules + coalescence + perfective finals (--validate, --predict HEADWORD, --report, --confidence) | No |
-| `add_feedback_table.py` | `scripts/` | Phase 4.4: migration script to create `community_feedback` table in SQLite DB | No |
-| `accent_rules.py` | `scripts/` | Phase 3.1: accent mark assignment rules — 4 rules (Agent-boundary í, Mode-prefix accent, Infinitive kú, Dual sí); validates against 85 Appendix 1 accented forms (--validate, --analyze) | No |
-| `bb_gap_triage.py` | `scripts/` | Phase 2.2/Ongoing: classify 516 unmatched Blue Book items via Gemini batch analysis into 8 categories (phrase, inflected_verb, noun_unlisted, descriptor, possessed_form, function_word, loanword, ocr_artifact); populates `bb_gap_triage` DB table with checkpointing | Yes (GEMINI_API_KEY) |
-| `import_bb_items.py` | `scripts/` | Import 93 high-value BB gap items (nouns, function words, loanwords) into `lexical_entries` + `glosses` tables with `source='blue_book'` flag; normalizes BB→Parks orthography; deduplicates against existing headwords (--dry-run, --db) | No |
-| `function_word_inventory.py` | `scripts/` | Phase 3.1.6: seed `function_words` table by merging Parks dictionary function-class entries (355) with BB gap triage function words (11); infers subclass from gloss keywords (--dry-run, --db) | No |
-| `extract_function_words.py` | `scripts/` | Phase 3.1.6: extract function words from 196 BB phrase gaps via Gemini batch analysis (5 batches); populates `bb_function_words` table; checkpointed; generates `reports/bb_function_words.txt` (--dry-run, --report-only, --clear) | Yes (GEMINI_API_KEY) |
-| `classify_function_words.py` | `scripts/` | Phase 3.1.6: add `position_rule` + `refined_subclass` to all 418 function words; classifies demonstratives (spatial system), interrogatives, conjunctions, adverbs, locatives, numerals, particles by clause position (CLAUSE-INITIAL, PRECEDES-VERB, PRECEDES-NOUN, BETWEEN-CLAUSES, PROCLITIC, STANDALONE) (--dry-run, --db) | No |
-| `populate_bb_pronunciation.py` | `scripts/` | Phase 4.1: generate `simplified_pronunciation` for 93 BB-imported entries (headword→English respelling) + assign semantic tags from English glosses; enables BB entries to appear in flashcards (--dry-run, --db) | No |
+The list of scripts, in pipeline order and with the status of each, is
+[scripts/README.md](scripts/README.md). It replaced the table that used to be
+here, so that there is one list to keep current.
 
 ## Environment
 
-- Python virtual environment at `pari-pakuru/.venv/`
-- Gemini API key stored as environment variable `GEMINI_API_KEY`
-- Windows environment (paths use `\` in logs)
-- Repository: `pari-pakuru/` with structure documented in `DIRECTORY_LAYOUT.md`
-- **Production deployment:** PythonAnywhere at `/home/paripakuru/main/` — Flask app in `web/app.py`, SQLite DB at `skiri_pawnee.db`, scripts in `scripts/`. DB is not git-tracked; run `python scripts/dedup_entries.py --apply` on PA after pull to sync dedup (backs up to `~/.pari_pakuru_backups/`).
+- Windows 11; the shell is Git Bash or PowerShell. Python virtual environment at `.venv/` (`.venv/Scripts/python`).
+- The console uses code page 1252. A script should write Pawnee text through `sys.stdout.buffer`, or be run with `PYTHONIOENCODING=utf-8`, and should open files with `encoding="utf-8"`.
+- AI extraction steps use the Gemini API (`GEMINI_API_KEY`, model `gemini-2.5-flash`) through the `google.genai` package. The two original page parsers still use the older `google.generativeai`.
+- The database is not in git. Backups: `OneDrive/pari_pakuru_backups/` and `~/.pari_pakuru_backups/`.
+- Hosted app: PythonAnywhere at `/home/paripakuru/main/`, entry point `wsgi.py`. Static site: GitHub Pages from `docs/`. See `DEPLOYMENT.md`.
 
 ---
 
-## AI Development Tools & Model Selection
+## Open items
 
-### Three-Tool Workflow
+*As of 2026-11-13, after that day's fixes. Within each group, most important first.*
 
-This project benefits from **three AI tools used in parallel**, each with different strengths:
+### Needs a person, not code
 
-| Tool | Model | Best for | Access |
-|------|-------|----------|--------|
-| **claude.ai Chat** | Opus 4.6 | Linguistic analysis, architecture, document review, complex debugging | Pro/Max plan, browser |
-| **Claude Code (VS Code)** | Sonnet 4.6 (default) | File editing, script writing, running commands, multi-file changes | Pro plan, VS Code extension or CLI |
-| **Gemini API** | gemini-2.5-flash | Batch OCR, large-scale pattern analysis, offloading repetitive analytical tasks | Free tier or API key (`GEMINI_API_KEY`) |
+1. **Speaker or linguist review of the word-construction analysis.** `curriculum/roots_v2/review_queue.md`; the ten main questions are at the top of `curriculum/roots_v2/validation_report.md` (vowel-length pairs, affixes labelled by default, the three preverb shapes, 274 shapes with several meanings, 192 pieces with no known meaning).
+2. **Community review of ceremonial vocabulary.** Flashcard Week 20 is held back until it has been done (`curriculum/held_for_review.json`). In the word-construction analysis 176 words are flagged, by keyword only.
+3. **A person has not reviewed the 387-word flashcard list** (audit item B5). Its membership was decided by English keywords.
+4. **Lesson vocabulary:** 4 judgement calls and 8 homonym ambiguities were left unlinked (`reports/bb_vocab_linking.txt`).
+5. **Feedback queue:** two flags are pending in `/admin/feedback`.
 
-### Parallel Processing Strategy
+### The IPA
 
-Many tasks in this project can be **split across tools simultaneously**:
+6. **Two accent symbols are still not Parks's.** He prints an accented short *a* as ə́ and, it appears, an accented short *i* as ɪ́ (the lax vowel with an acute). The database has `à` (545 entries) and `í` (371). The accent is there; the symbol is not his. `í` is also the correct symbol for the second half of a long *ii*, so the two uses cannot be told apart in the database without going back to the text layer. Needs a decision (store exactly what Parks prints?) and then a re-decoding that is checked against page images on a sample, not on one image per character as on 2026-11-13. One entry, *Tiihiiraraahkasa*, now holds a true grave *à*.
+7. **About 145 of 4,235 Parks IPA forms could not be matched to the text layer**, so they were not checked for a dropped accent (apart from `ː`, which is always wrong).
+8. **The grave accent** occurs in five forms (ì three times, ù, à). Parks's front matter does not say what it marks.
+9. **"Pitch" or "stress".** The web app, the static site and the paper cards call the marks "pitch accent" and label unmarked words "pitch not marked". Parks says stress is not phonemic and that phonetic forms mark accented syllables (p. 15). The wording should be settled with someone who knows the language, then changed in one pass.
+10. **Other stand-in characters in citations from other languages** are still undecoded: `ó` (as in Arikara *čeerió*), `Ý`, and `?` and one `÷` in a Kiowa word. Nobody has compared the cognate citations with the page.
+11. **Nine entries have no IPA**: the null root Ø and eight that need a look at the page (`huuruhaahkaatiit`, `kaaks`, `kawiʔat`, `kiiskawaarasit`, `kiraar`, `pahuks`, `uhurarik`, `wakta/taa`).
+12. 32 respellings of *-ʔa* stems where Parks's IPA lacks the glottal stop (`reports/fix_pronunciations_report.txt`); bullet characters shown in IPA (audit item B2; 2,522 entries have bulleted IPA).
 
-**Example: Stem extraction second pass (current priority)**
-- **claude.ai (Opus)**: Analyze the 728 remaining mismatches — categorize failure patterns, design rule fixes based on Parks Ch. 3, write the sound change logic
-- **Claude Code (Sonnet)**: Implement the fixes in `stem_extractor.py`, run validation, iterate on regex patterns for `[+ neg.]` / `witi-` / initial-ʔ handling
-- **Gemini API**: Batch-analyze the 385 VD verb mismatches — send headword+form_2 pairs to Gemini with Parks rule descriptions, get structured morpheme breakdowns for each, identify which internal sound change rules apply
+### Generated forms
 
-**Example: Phase 3.1 Accent Mark Generation (next deep-analysis priority)**
-- **claude.ai (Opus)**: Analyze Parks' pitch/stress rules from the scanned PDFs; design accent assignment algorithm using the ~70 "to come" accent-only close matches as test suite
-- **Claude Code (Sonnet)**: Implement accent rules in `stem_extractor.py` or `morpheme_inventory.py`, run validation
-- **Gemini API**: Batch-extract accent patterns from the 770 Appendix 1 forms (which ones have accents, where do they fall)
+13. **The possession engine offers forms it should not.** Through the API it builds an instrumental ("with, using …") for every noun, animals included, because its animacy filter needs topic tags that the API does not pass. Its stem stripper removes `-kis` wherever it finds it, so *rakis* 'wood' becomes the stem *ra*. For stems ending in r the dictionary shows two outcomes with *-hiriʔ* and the engine picks one (marked "medium"). These forms are shown as computed, but several are plainly wrong.
+14. **Bare pieces on the weekly flashcards** are places where two readings of Parks's etymology disagree, for example the first piece of *askuhuukita* 'eleven' and both pieces of *Ickariʔ*. Each is a small question for a person.
 
-**Example: Future Phase 5.2 (Anki Export)**
-- **Claude Code**: Write the export script (SQLite → Anki .apkg format)
-- **claude.ai**: Design card templates, select which fields to include, handle IPA rendering
+### Data
 
-### Gemini API Integration Points
+15. **`page_number` mixes file numbers and book pages** (book page = file number + 348 for values up to 181). The citation "Parks p. N" on the site and the cards is therefore a file number for most entries. Making the column uniform touches every published citation and should be its own reviewed change.
+16. **The `derived_stems` table is empty**; the JSON holds 21 derived stems in 10 entries.
+17. **Verb-class values that are not verb classes**: `(pl. subj.)` once and doubled values such as `(1), (1)` on four entries; `(3-i)` once, which may be genuine. The grammatical-class column has 41 distinct strings, some of them one class written two ways (`VI, VT` and `VT, VI`).
+18. **A space before punctuation** in many glosses and examples ("animals .", "cloth ;"), left by the parse.
+19. Letter-spaced text remains in the raw copies of the parsed entries (`raw_entry_json`, `raw_subentry_json`), which are deliberately not edited.
+20. From the 2026-09-01 audit: 78 example sentences with a possible line-break hyphen; rare truncated gloss qualifiers; a few verb forms where the AI reading and the PDF text layer differ.
+21. From the 2026-10-01 audit: the 93 Blue Book-only entries have no learner spelling and are not labelled as Blue Book spelling (B3); bare `Ø` headwords in search (C1); "word of the day" fixed at build time (C3); `search.js` loaded twice by `base.html` (C4); a join on bare headword in the greetings category (C5).
+22. 2,937 of 8,067 English-index rows are not linked to an entry (cross-references, phrases, parsing leftovers).
+23. **Nothing extracted by AI from page images has been compared with the pages in full**: Appendix 1 (770 forms, which the conjugation engine is scored against), Appendices 2 and 3, the abbreviation list, the grammar chapter (where *-biriʔ* came from), and the Blue Book vocabulary.
 
-The Gemini API (`GEMINI_API_KEY`) is already used for several tasks and is available for new ones:
+### Engines and features
 
-| Script | What Gemini does |
-|--------|-----------------|
-| `extract_appendices.py` | OCR scanned PDF pages → structured JSON (Appendix 1-3, Grammar pages) |
-| `tag_entries.py` | Classify ambiguous entries by semantic domain |
-| `blue_book_verify.py` | Extract structured vocabulary from Blue Book lesson text |
-| `analyze_dual_plural.py` | Morpheme breakdown analysis for dual/plural verb forms |
-| `audit_entries.py` | Batch validate parsed entries for data quality |
-| **`stem_extractor.py` (planned)** | Batch-analyze mismatch patterns for VD verbs; generate morpheme decompositions for compound headwords |
-| `bb_gap_triage.py` | Classify 516 unmatched Blue Book items into 8 categories via 11 Gemini batches (completed) |
-
-**Practical tip:** For analytical tasks with 100+ items (like "analyze why 385 VD verb predictions fail"), Gemini's batch processing is faster and cheaper than running them through claude.ai one by one. Structure the prompt as: "Given this headword and attested form_2, identify which Parks sound change rules explain the difference from this predicted form."
-
-### claude.ai Chat vs. Claude Code in VS Code
-
-**They are NOT the same model by default.** Understanding the difference matters for this project:
-
-| | claude.ai | Claude Code (VS Code extension / CLI) |
-|---|---|---|
-| **Default model** | Opus 4.6 (on Pro/Max) | **Sonnet 4.6** (on Pro plan, $20/mo) |
-| **Best for** | Long-form design discussion, architecture planning, document review, linguistic analysis | File editing, script writing, running commands, multi-file code changes |
-| **Context window** | 200K tokens (standard) | 200K standard; 1M beta on Max/Enterprise |
-| **Can run code?** | Yes (sandbox) | Yes (your actual local files + terminal) |
-| **Sees your codebase?** | Only uploaded files | Full repo access (reads/writes your files directly) |
-
-**Key implication for this project:** Claude Code on a Pro plan runs **Sonnet 4.6**, which is excellent for coding but less strong on the kind of deep linguistic reasoning this project requires (morpheme analysis, sound change rule design, Pawnee grammar interpretation). The intelligence gap matters most for Phases 3.x (morphology engine work).
-
-### Recommended Workflow
-
-**Use claude.ai (Opus) for:**
-- Linguistic analysis: morpheme breakdown design, sound change rule debugging, grammar interpretation from Parks
-- Architecture decisions: DB schema design, engine design, phase planning
-- Document review: reading this scope doc, analyzing Blue Book content, design decisions
-- Complex debugging: "why does my conjugation engine produce X instead of Y for this verb class?"
-
-**Use Claude Code (Sonnet) for:**
-- Writing and editing Python scripts (morpheme_inventory.py, sound_changes.py, stem_extractor.py, etc.)
-- Flask/web UI work (templates, CSS, routes)
-- Running validation scripts and interpreting output
-- Bulk file operations, refactoring, test writing
-- Database migrations and import scripts
-
-**Use Gemini API for:**
-- Batch OCR of scanned PDFs (appendices, grammar pages)
-- Large-scale pattern analysis (100+ entries needing morpheme breakdown)
-- Offloading repetitive analytical tasks that don't require deep reasoning
-- Cross-validation of computed forms against attested data
-
-**If you want Opus in Claude Code:**
-- **Max plan ($100–200/mo):** Opus 4.6 is available as default. Run `/model opus` in Claude Code.
-- **Pro plan ($20/mo):** Opus is available only via `/extra-usage` (pay-per-use on top of subscription). Run `/model opus` after enabling extra usage in settings.
-- **Hybrid approach (`opusplan`):** Uses Opus for planning/reasoning, Sonnet for code execution. Run `/model opusplan`. Good middle ground for this project — Opus reasons about the morphology, Sonnet writes the code.
-
-**Practical tip for this project:** Start complex morphology work sessions in claude.ai (Opus) to get the logic right, then move to Claude Code (Sonnet) to implement it. For batch analytical work (VD verb mismatch analysis, etymology parsing), offload to Gemini. Share this scope document at the start of each session so the AI has full context. The `opusplan` mode is worth trying for Phase 3.x work where the reasoning and the implementation are tightly coupled.
-
-### Model Configuration (Claude Code)
-
-```bash
-# Check current model
-claude /status
-
-# Switch model for current session
-claude /model          # interactive picker
-claude /model opus     # Opus 4.6 (requires Max or extra-usage)
-claude /model sonnet   # Sonnet 4.6 (default on Pro)
-claude /model opusplan # Opus plans, Sonnet executes
-
-# Set permanent default (add to shell profile)
-export ANTHROPIC_MODEL=claude-sonnet-4-6  # or claude-opus-4-6
-```
+24. Form 2 prediction: 253 of 2,197 verbs missed (`si-` and `ruuti-` prefixes, internal vowel shortening, multi-word headwords).
+25. Conjugation of Appendix 1: 13 mismatches and 62 near misses in 770 forms.
+26. Person derivation (3.2b): plural persons, negative mode, imperfective coverage, question-particle placement.
+27. Printable word lists and paradigm tables. (The flashcard sheets exist; these do not.)
+28. The Blue Book glossary pages (123–130) are not itemised.
+29. **The database is not under version control and cannot be rebuilt by one command.** A text dump in git, or a build script that replays every step, would make each future fix a reviewable difference.
 
 ---
 
 ## How to Use This Document
 
-Reference any section by name when starting a new chat. For example:
-- "Let's tackle **Phase 3.1 — Accent Mark Generation**"
-- "Build the **Anki deck export** from Phase 5.2"
-- "Start **Phase 3.1.6 — Function Word Inventory** using the BB gap triage seed data"
-- "Continue **Phase 3.1 — stem extraction fourth pass** targeting 90%+"
-- "I want to work on **Phase 5.1 — Structured Lesson Content**"
+Start a working session by reading "Status at a glance" and "Open items".
+Refer to a phase by its name ("Phase 6.2") or to an open item by its number.
 
-The AI should read this document, understand the current data state, and pick up from the referenced step without needing the full conversation history.
+When a phase is finished or a number changes, update this file in the same
+change. It is only useful while it is true. Figures here were read from the
+database and from the scripts' own output on the date given beside them; when
+you quote one elsewhere, run the command again.
 
-**For Claude Code sessions:** Share this file at session start with `@pari_pakuru_project_scope.md` or include it in your project's `CLAUDE.md` file. See the **AI Development Tools** section for model selection and parallel processing guidance.
-
-**For Gemini-offloaded tasks:** Many batch analytical tasks (VD verb mismatch analysis, etymology parsing, morpheme decomposition) can be offloaded to Gemini API via scripts. Check which scripts support `GEMINI_API_KEY` in the Scripts Reference table.
-
----
-
-## Next Chat Continuation Prompt
-
-Copy-paste this to start the next session (claude.ai or Claude Code):
-
-> **Pick the next priority from the Pari Pakuru roadmap.**
->
-> **What's done (sessions: 2026-03-20 → 2026-03-21):**
-> - Phase 5.2 Anki export: ✅ 4,336 cards, 19 semantic tag decks, genanki .apkg with CLI flags
-> - DB dedup: ✅ 22 p2/p71 pairs + kusisaar merge (4,366 → 4,343). Polysemy preserved
-> - Display utils: ✅ `display_headword()` 5 rules, 281 notation entries zero problems
-> - Nominal sound change pipeline: ✅ `apply_nominal_sc()` splits verb/noun rules. Fixes ks→kc regression. `iksiriʔ` and `ikstaaririʔ` now match attested forms
-> - -sukat allomorph: ✅ stems ending in -ki/-ski get `-sukat`. `piiraskisukat` correct
-> - Instrumental animacy filter: ✅ returns None for animate nouns (N-KIN, kinship/social/animal)
-> - BB/Parks merge: ✅ 5 orthographic variant pairs merged, `bb_variant_of` column added, blue_book_attested updated (176→181)
-> - Kinship tag cleanup: ✅ 36 erroneous tags removed (35 verbs + 1 Gemini), 8 retagged to social, noun-only guard added. Zero kinship tags on non-nouns
-> - Social taxonomy: ✅ age/gender/social role terms expanded
-> - raar→taar: ✅ documented as Rule 8R (r→t after hard C), not separate rule
-> - Phase 3.1.5 Noun possession: ✅ (4 systems, locative suffixes, web widget, example filter)
-> - Phase 3.1 Stem extraction: 🟡 86.6% exact (1,914/2,211 verbs)
-> - Phase 3.1.6 Function word inventory: ✅ 418 items classified
-> - Phase 4.1–4.4: ✅ Web app, flashcards, confidence scoring, community feedback, UI/UX all complete
-> - UI color audit: ✅ WCAG AA contrast fixes across all templates — dark mode tooltip, flashcard guide (matched to actual card dark bg), admin feedback, dashboard muted text, IPA text, pronunciation help
->
-> **Remaining roadmap priorities:**
-> - 🔴 #6 (partial): **Printable PDF export** — same query as Anki, rendered via reportlab/weasyprint. Two-column vocab list + paradigm table appendix. **Claude Code**.
-> - 🟡 #9: **Template-based sentence assembly** — function word inventory (with position rules) now supports this. **Opus + Claude Code**.
-> - 🟡 Optional: **Stem extraction fourth pass** (86.6%→90%+) — diminishing returns
-> - 🟡 Optional: **"to do it" investigation** (74/110, 12 MISS) — largest verb-specific gap
->
-> The scope doc (`pari_pakuru_project_scope.md`) has full context. The DB is `skiri_pawnee.db` (4,343 entries, `bb_variant_of` column, 181 BB-attested, 5,129/8,067 E2S linked). Scripts in `scripts/`. Web app on PythonAnywhere.
+The ground rules for all work here are the Design Principles above, and the
+rules section of `prompts/skiri_word_construction_v2.md`.

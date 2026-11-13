@@ -8,7 +8,7 @@ dictionary. Two-stage pipeline:
   STAGE 1 — Extraction (--extract):
     Parse the Blue Book text file lesson-by-lesson and send each chunk to
     Gemini API to extract structured vocabulary entries. Saves to a JSON
-    extraction file (blue_book_extracted.json) with checkpointing.
+    extraction file (extracted_data/blue_book_extracted.json) with checkpointing.
 
   STAGE 2 — Matching + DB Import (--match):
     Load extracted entries, normalize BB orthography → Parks orthography,
@@ -24,23 +24,23 @@ Usage:
     python scripts/blue_book_verify.py \\
         --text "pari pakuru/Blue_Book_Pari_Pakuru.txt" \\
         --db skiri_pawnee.db \\
-        --extracted blue_book_extracted.json \\
+        --extracted extracted_data/blue_book_extracted.json \\
         --report reports/phase_2_2_blue_book.txt
 
     # Extract only (uses Gemini):
     python scripts/blue_book_verify.py --extract-only \\
         --text "pari pakuru/Blue_Book_Pari_Pakuru.txt" \\
-        --extracted blue_book_extracted.json
+        --extracted extracted_data/blue_book_extracted.json
 
     # Match only (uses already-extracted JSON):
     python scripts/blue_book_verify.py --match-only \\
-        --extracted blue_book_extracted.json \\
+        --extracted extracted_data/blue_book_extracted.json \\
         --db skiri_pawnee.db \\
         --report reports/phase_2_2_blue_book.txt
 
     # Dry run (no DB writes):
     python scripts/blue_book_verify.py \\
-        --extracted blue_book_extracted.json \\
+        --extracted extracted_data/blue_book_extracted.json \\
         --db skiri_pawnee.db \\
         --dry-run
 
@@ -967,7 +967,7 @@ def main():
     )
     parser.add_argument(
         "--extracted",
-        default="blue_book_extracted.json",
+        default="extracted_data/blue_book_extracted.json",
         help="Path to save/load extracted BB vocabulary JSON",
     )
     parser.add_argument(

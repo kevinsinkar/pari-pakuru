@@ -270,7 +270,9 @@ def run_tests():
         # Create DB and apply schema
         conn = sqlite3.connect(db_path)
         conn.execute("PRAGMA foreign_keys = ON")
-        with open(schema_path, "r") as f:
+        # schema.sql holds non-ASCII characters; without an explicit encoding
+        # Windows reads it as cp1252 and fails
+        with open(schema_path, "r", encoding="utf-8") as f:
             conn.executescript(f.read())
 
         print("1. Schema creation")

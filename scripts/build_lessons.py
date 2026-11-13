@@ -14,7 +14,7 @@ entries. Known gap: lessons 3–4 vocabulary was garbled by column reflow in
 the source text (8 + 5 attestation items only); their dialogues parse fine.
 
 Sentence-builder template links per lesson come from the Phase 3.2a design
-doc's attestation table (phase_3_2a_sentence_templates.md, Appendix A).
+doc's attestation table (prompts/phase_3_2a_sentence_templates.md, Appendix A).
 
 Usage:
   python scripts/build_lessons.py            # dry-run: parse + report
@@ -43,7 +43,7 @@ def log(s):
     sys.stdout.buffer.write((s + '\n').encode('utf-8', errors='replace'))
 
 
-# Templates attested per lesson — from phase_3_2a_sentence_templates.md
+# Templates attested per lesson — from prompts/phase_3_2a_sentence_templates.md
 # Appendix A (sentence-to-template mapping) plus template `lessons` metadata.
 LESSON_TEMPLATES = {
     1: ['T1', 'T3', 'T4', 'T6', 'T7'],

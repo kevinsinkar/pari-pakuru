@@ -17,8 +17,10 @@ API_KEY = os.getenv("GEMINI_API_KEY", "YOUR_API_KEY")
 INPUT_PDF_FOLDER = "split_pdf_pages_ENGLISH_TO_SKIRI_missed"  # Folder with the English-to-Skiri pages
 OUTPUT_JSON_FILE = "english_to_skiri_complete_missed.json"
 
-SCHEMA_FILE = "English-to-Skiri_JSON_Schema.json"  # Path to the JSON schema file
-INSTRUCTIONS_FILE = "AI_Dictionary_Parsing_Instructions.md"  # Path to parsing instructions
+# The schema and the parsing instructions live in prompts/dictionary_parsing/ (repo root).
+_PROMPT_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "prompts", "dictionary_parsing")
+SCHEMA_FILE = os.path.join(_PROMPT_DIR, "English-to-Skiri_JSON_Schema.json")  # Path to the JSON schema file
+INSTRUCTIONS_FILE = os.path.join(_PROMPT_DIR, "AI_Dictionary_Parsing_Instructions.md")  # Path to parsing instructions
 
 # 3. LOAD PARSING INSTRUCTIONS
 def load_parsing_instructions():
