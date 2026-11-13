@@ -8,7 +8,7 @@ How a word is built, and which compounds are offered on C cards, comes from the 
 
 ## How the cards are designed
 
-- **Labels in capitals** are Parks's grammatical labels for pieces that have a job, not a dictionary meaning: ABS = absolutative mode prefix; ACT = activizer suffix; DIM = diminutive suffix; DIST = distributive suffix; IMPF = imperfective aspect suffix; LOC = locative/directional prefix or prefix string; NOM = nominal/absolutive suffix; PERF = perfective aspect suffix; PL/ITER = plural prefix; PORT = portative prefix; PREV = preverb; TRANS = transitivizer affix.
+- **Labels in capitals** are Parks's grammatical labels for pieces that have a job, not a dictionary meaning: ABS = absolutive mode prefix; ACT = activizer suffix; DIM = diminutive suffix; DIST = distributive suffix; IMPF = imperfective aspect suffix; LOC = locative/directional prefix or prefix string; NOM = nominal/absolutive suffix; PERF = perfective aspect suffix; PL/ITER = plural prefix; PORT = portative prefix; PREV = preverb; TRANS = transitivizer affix.
 - **One fact per card.** A word gets two core cards: **A** (see Pawnee → recall meaning) and **B** (see English → produce Pawnee). Testing both directions is what makes a word usable, not just recognisable.
 - **Pronunciation sits with the Pawnee word**, never alone on the front: on card A it is part of the cue (read it aloud before flipping), on card B it is part of the answer (say it, then check).
 - **Backs are short.** Meaning, word class, a source reference, and, when Parks gives one, how the word is built from its pieces. The source lets you check the dictionary later instead of trusting the card.
@@ -48,8 +48,8 @@ How a word is built, and which compounds are offered on C cards, comes from the 
 | 1.9B | foot<br>*(noun)* | **asu'** ⟨UH-soo'⟩ |
 | 1.9C1 | **astawâ** ⟨UHS-tuh-wah⟩<br>*(built on asu')* | **Dutch oven**<br>as + ta + wâ<br>Parks p.17, `SK-astawaa-p17-0197` |
 | 1.9C2 | **asawi'u'** ⟨UH-suh-wih-'oo'⟩<br>*(built on asu')* | **trap, snare**<br>as + awi + u'<br>Parks p.363, `SK-asawiquq-p363-3763` |
-| 1.10A | **had'** ⟨huh'⟩ | **yes**<br>interjection<br>dictionary spelling *hadʔ*; Blue Book only (no Parks entry); `BB-had-0010`; Blue Book *had'* (L1, p.29) |
-| 1.10B | yes<br>*(interjection)* | **had'** ⟨huh'⟩ |
+| 1.10A | **hau'** ⟨huh-oo'⟩ | **yes**<br>interjection<br>dictionary spelling *hauʔ*; Blue Book only (no Parks entry); `BB-had-0010`; Blue Book *haú'* (L1, p.29) |
+| 1.10B | yes<br>*(interjection)* | **hau'** ⟨huh-oo'⟩ |
 | 1.11A | **kiri** ⟨KIH-dih⟩ | **domestic cat**<br>noun<br>dictionary spelling *kiri*; Parks p.95, `SK-kiri-p95-1815` |
 | 1.11B | domestic cat<br>*(noun)* | **kiri** ⟨KIH-dih⟩ |
 | 1.12A | **nawa** ⟨nuh-wuh⟩ | **Hello**<br>interjection<br>dictionary spelling *nawa*; Blue Book only (no Parks entry); `BB-nawa-0027` |
@@ -69,13 +69,13 @@ How a word is built, and which compounds are offered on C cards, comes from the 
 |---|---|---|
 | 2.1A | **usu'** ⟨oo-soo'⟩ | **hair**<br>noun<br>dictionary spelling *usuʔ*; Blue Book only (no Parks entry); `BB-usu-0092` |
 | 2.1B | hair<br>*(noun)* | **usu'** ⟨oo-soo'⟩ |
-| 2.2A | **Čawî** ⟨chuh-WEE⟩ | **Chawi band** — Chawi band; (hist.) Republican Pawnee band (+1 more sense in the dictionary)<br>noun<br>dictionary spelling *Cawii*; Parks p.28, `SK-cawii-p28-0424`; Blue Book *Tsawii* (L13, p.87) |
+| 2.2A | **Čawî** ⟨chuh-WEE⟩ | **Chawi band** — Chawi band; (hist.) Republican Pawnee band (+1 more sense in the dictionary)<br>noun<br>dictionary spelling *Cawii*; Parks p.28, `SK-cawii-p28-0424`; Blue Book *Tsawíi* (L13, p.87) |
 | 2.2B | Chawi band<br>*(noun)* | **Čawî** ⟨chuh-WEE⟩ |
 | 2.3A | **askuc** ⟨UHS-koots⟩ | **prairie dog, black-tailed prairie dog ( Cynomys ludovicianus)**<br>noun<br>dictionary spelling *askuc*; Parks p.16, `SK-askuc-p16-0173`; Blue Book *askuts* (L9, p.71) |
 | 2.3B | prairie dog, black-tailed prairie dog ( Cynomys ludovicianus)<br>*(noun)* | **askuc** ⟨UHS-koots⟩ |
 | 2.4A | **aspit** ⟨UHS-piht⟩ | **spring peeper, chorus frog, tree frog (Pseudacris spp. and Hyla spp.)**<br>noun<br>dictionary spelling *aspit*; Parks p.17, `SK-aspit-p17-0189` |
 | 2.4B | spring peeper, chorus frog, tree frog (Pseudacris spp. and Hyla spp.)<br>*(noun)* | **aspit** ⟨UHS-piht⟩ |
-| 2.5A | **čusu'** ⟨CHOO-soo'⟩ | **nose** — nose; snout of an animal<br>noun<br>built from ičus 'nose' + u' 'NOM'<br>dictionary spelling *cusuʔ*; Parks p.32, `SK-cusuq-p32-0528`; Blue Book *tsusu '* (L5, p.51) |
+| 2.5A | **čusu'** ⟨CHOO-soo'⟩ | **nose** — nose; snout of an animal<br>noun<br>built from ičus 'nose' + u' 'NOM'<br>dictionary spelling *cusuʔ*; Parks p.32, `SK-cusuq-p32-0528`; Blue Book *tsusu'* (L5, p.51) |
 | 2.5B | nose<br>*(noun)* | **čusu'** ⟨CHOO-soo'⟩ |
 | 2.5C1 | **čusawi'** ⟨CHOO-suh-wih'⟩<br>*(built on čusu')* | **turkey vulture, buzzard**<br>ičus + awi<br>Parks p.32, `SK-cusawiq-p32-0520` |
 | 2.5C2 | **čuskatit** ⟨choos-KUH-tiht⟩<br>*(built on čusu')* | **buckskin horse with dark mane and tail and a black nose**<br>ičus + katît<br>Parks p.32, `SK-cuskatit-p32-0521` |
@@ -125,15 +125,15 @@ How a word is built, and which compounds are offered on C cards, comes from the 
 | 3.7A | **arakis** ⟨UH-duh-kihs⟩ | **sonny** — sonny; daughter, an appelative for a young person, male or female  (+1 more sense in the dictionary)<br>noun<br>built from a 'your' + rak 'grandchild' + kis 'DIM'<br>dictionary spelling *arakis*; Parks p.13, `SK-arakis-p13-0132`; Blue Book *arakis* (L7, p.62) |
 | 3.7B | sonny<br>*(noun)* | **arakis** ⟨UH-duh-kihs⟩ |
 | 3.7C1 | **raktîki** ⟨duhk-TEE-kih⟩<br>*(built on arakis)* | **grandchild**<br>rak + rî + kis<br>Parks p.135, `SK-raktiiki-p135-2664` |
-| 3.8A | **atika'** ⟨uh-TIH-kuh'⟩ | **my grandmother**<br>kinship noun<br>built from ati 'my' + kâ 'grandmother'<br>dictionary spelling *atikaʔ*; Parks p.19, `SK-atikaq-p19-0233`; Blue Book *atika'* (L7, p.60) |
+| 3.8A | **atika'** ⟨uh-TIH-kuh'⟩ | **my grandmother**<br>kinship noun<br>built from ati 'my' + kâ 'grandmother'<br>dictionary spelling *atikaʔ*; Parks p.19, `SK-atikaq-p19-0233`; Blue Book *atíka'* (L7, p.60) |
 | 3.8B | my grandmother<br>*(kinship noun)* | **atika'** ⟨uh-TIH-kuh'⟩ |
 | 3.8C1 | **aka'** ⟨UH-kuh'⟩<br>*(built on atika')* | **your grandmother**<br>a + kâ<br>Parks p.9, `SK-akaq-p9-0103` |
 | 3.8C2 | **ikâri'** ⟨ih-KAH-dih'⟩<br>*(built on atika')* | **his, her, their grandmother**<br>i + kâ + ri'<br>Parks p.61, `SK-ikaariq-p61-1056` |
-| 3.9A | **atipat** ⟨uh-TIH-puht⟩ | **my, our grandfather**<br>noun<br>built from ati 'my' + pâk 'grandfather'<br>dictionary spelling *atipat*; Parks p.19, `SK-atipat-p19-0241`; Blue Book *atipat* (L7, p.60) |
+| 3.9A | **atipat** ⟨uh-TIH-puht⟩ | **my, our grandfather**<br>noun<br>built from ati 'my' + pâk 'grandfather'<br>dictionary spelling *atipat*; Parks p.19, `SK-atipat-p19-0241`; Blue Book *atípat* (L7, p.60) |
 | 3.9B | my, our grandfather<br>*(noun)* | **atipat** ⟨uh-TIH-puht⟩ |
 | 3.9C1 | **apat** ⟨UH-puht⟩<br>*(built on atipat)* | **your grandfather**<br>a + pâk<br>Parks p.360, `SK-apat-p360-3693` |
 | 3.9C2 | **ipâkti'** ⟨ih-PAHK-tih'⟩<br>*(built on atipat)* | **his, her, their grandfather**<br>i + pâk + ri'<br>Parks p.64, `SK-ipaaktiq-p64-1116` |
-| 3.10A | **atira'** ⟨uh-TIH-duh'⟩ | **my, our mother** — my, our mother; my, our aunt, one's father's sister (+1 more sense in the dictionary)<br>kinship noun<br>built from ati 'my' + râ 'mother'<br>dictionary spelling *atiraʔ*; Parks p.19, `SK-atiraq-p19-0243`; Blue Book *atira'* (L7, p.60) |
+| 3.10A | **atira'** ⟨uh-TIH-duh'⟩ | **my, our mother** — my, our mother; my, our aunt, one's father's sister (+1 more sense in the dictionary)<br>kinship noun<br>built from ati 'my' + râ 'mother'<br>dictionary spelling *atiraʔ*; Parks p.19, `SK-atiraq-p19-0243`; Blue Book *atíra'* (L7, p.60) |
 | 3.10B | my, our mother<br>*(kinship noun)* | **atira'** ⟨uh-TIH-duh'⟩ |
 
 ## Week 4 — Sunday 2026-11-29 — Greetings & Common Words
@@ -154,7 +154,7 @@ How a word is built, and which compounds are offered on C cards, comes from the 
 | 4.5B | is<br>*(particle)* | **to** ⟨t⟩ |
 | 4.6A | **ku+** ⟨koo⟩ | **"indefinite," used with possessive verbs**<br>particle<br>dictionary spelling *ku+*; Blue Book only (no Parks entry); `BB-ku-0026` |
 | 4.6B | "indefinite," used with possessive verbs<br>*(particle)* | **ku+** ⟨koo⟩ |
-| 4.7A | **ksurawi'u'** ⟨KSOO-duh-wih-'oo'⟩ | **sixteen**<br>number<br>built from iks 'hand/finger' + hura + wi 'LOC' + u' 'NOM'<br>dictionary spelling *ksurawiʔuʔ*; Parks p.101, `SK-ksurawiquq-p101-1949`; Blue Book *ksur awiu'* (L8, p.69) |
+| 4.7A | **ksurawi'u'** ⟨KSOO-duh-wih-'oo'⟩ | **sixteen**<br>number<br>built from iks 'hand/finger' + hura + wi 'LOC' + u' 'NOM'<br>dictionary spelling *ksurawiʔuʔ*; Parks p.101, `SK-ksurawiquq-p101-1949`; Blue Book *ksúr•awiu'* (L8, p.69) |
 | 4.7B | sixteen<br>*(number)* | **ksurawi'u'** ⟨KSOO-duh-wih-'oo'⟩ |
 | 4.8A | **ku** ⟨koo⟩ | **perhaps**<br>adverb<br>dictionary spelling *ku*; Parks p.101, `SK-ku-p101-1950` |
 | 4.8B | perhaps<br>*(adverb)* | **ku** ⟨koo⟩ |
@@ -175,13 +175,13 @@ How a word is built, and which compounds are offered on C cards, comes from the 
 |---|---|---|
 | 5.1A | **pirau'** ⟨pih-duh-oo'⟩ | **child**<br>noun<br>dictionary spelling *pirauʔ*; Blue Book only (no Parks entry); `BB-pirau-0046`; Blue Book *pirau'* (L6, p.55) |
 | 5.1B | child<br>*(noun)* | **pirau'** ⟨pih-duh-oo'⟩ |
-| 5.2A | **irâri'** ⟨ih-DAH-dih'⟩ | **his, their brother** — his, their brother; her, their sister; my, our brother (of male), my, our sister (of female) (+1 more sense in the dictionary)<br>kinship noun<br>built from i 'his/her' + râr 'same-sex sibling' + ri'<br>dictionary spelling *iraariʔ*; Parks p.64, `SK-iraariq-p64-1121`; Blue Book *irari '* (L6, p.56) |
+| 5.2A | **irâri'** ⟨ih-DAH-dih'⟩ | **his, their brother** — his, their brother; her, their sister; my, our brother (of male), my, our sister (of female) (+1 more sense in the dictionary)<br>kinship noun<br>built from i 'his/her' + râr 'same-sex sibling' + ri'<br>dictionary spelling *iraariʔ*; Parks p.64, `SK-iraariq-p64-1121`; Blue Book *irári'* (L6, p.56) |
 | 5.2B | his, their brother<br>*(kinship noun)* | **irâri'** ⟨ih-DAH-dih'⟩ |
 | 5.3A | **pačiriks** ⟨PUH-chih-dihks⟩ | **your uncle (mother's brother)**<br>noun<br>dictionary spelling *paciriks*; Parks p.107, `SK-paciriks-p107-2045`; Blue Book *patsiriks* (L7, p.61) |
 | 5.3B | your uncle (mother's brother)<br>*(noun)* | **pačiriks** ⟨PUH-chih-dihks⟩ |
-| 5.4A | **pitarau'** ⟨pih-tuh-duh-oo'⟩ | **husband**<br>noun<br>dictionary spelling *pitarauʔ*; Blue Book only (no Parks entry); `BB-pitarau-0048`; Blue Book *pitarau '* (L10, p.74) |
+| 5.4A | **pitarau'** ⟨pih-tuh-duh-oo'⟩ | **husband**<br>noun<br>dictionary spelling *pitarauʔ*; Blue Book only (no Parks entry); `BB-pitarau-0048`; Blue Book *pitarau'* (L10, p.74) |
 | 5.4B | husband<br>*(noun)* | **pitarau'** ⟨pih-tuh-duh-oo'⟩ |
-| 5.5A | **witesatki** ⟨wih-teh-suht-kih⟩ | **male adolescent, "buck"**<br>noun<br>dictionary spelling *witesatki*; Blue Book only (no Parks entry); `BB-witesatki-0093`; Blue Book *witesatki* (L6, p.56) |
+| 5.5A | **witesatki** ⟨wih-teh-suht-kih⟩ | **male adolescent, "buck"**<br>noun<br>dictionary spelling *witesatki*; Blue Book only (no Parks entry); `BB-witesatki-0093`; Blue Book *witésatki* (L6, p.56) |
 | 5.5B | male adolescent, "buck"<br>*(noun)* | **witesatki** ⟨wih-teh-suht-kih⟩ |
 | 5.6A | **tiwačiriks** ⟨TIH-wuh-chih-dihks⟩ | **my, our uncle**<br>kinship noun<br>built from ati 'my' + wačiriks 'uncle'<br>dictionary spelling *tiwaciriks*; Parks p.166, `SK-tiwaciriks-p166-3279`; Blue Book *tiwatsiriks* (L7, p.61) |
 | 5.6B | my, our uncle<br>*(kinship noun)* | **tiwačiriks** ⟨TIH-wuh-chih-dihks⟩ |
@@ -224,7 +224,7 @@ How a word is built, and which compounds are offered on C cards, comes from the 
 
 | Card | Front | Back |
 |---|---|---|
-| 6.1A | **ikarikat** ⟨IH-kuh-dih-kuht⟩ | **half** — half; in the middle, in the center (+1 more sense in the dictionary)<br>adjective; noun<br>built from ikari + kat 'LOC'<br>dictionary spelling *ikarikat*; Parks p.61, `SK-ikarikat-p61-1057`; Blue Book *ikarikat* (L8, p.68) |
+| 6.1A | **ikarikat** ⟨IH-kuh-dih-kuht⟩ | **half** — half; in the middle, in the center (+1 more sense in the dictionary)<br>adjective; noun<br>built from ikari + kat 'LOC'<br>dictionary spelling *ikarikat*; Parks p.61, `SK-ikarikat-p61-1057`; Blue Book *ikárikat* (L8, p.68) |
 | 6.1B | half<br>*(adjective; noun)* | **ikarikat** ⟨IH-kuh-dih-kuht⟩ |
 | 6.2A | **râku'** ⟨DAH-koo'⟩ | **thousand**<br>number<br>built from râk 'box' + u' 'NOM'<br>dictionary spelling *raakuʔ*; Parks p.120, `SK-raakuq-p120-2341` |
 | 6.2B | thousand<br>*(number)* | **râku'** ⟨DAH-koo'⟩ |
@@ -234,13 +234,13 @@ How a word is built, and which compounds are offered on C cards, comes from the 
 | 6.4B | quarter, two bits<br>*(noun)* | **tûpic** ⟨TOO-pihts⟩ |
 | 6.5A | **pâhisic** ⟨PAH-hih-sihts⟩ | **nickel, five cent piece**<br>noun<br>dictionary spelling *paahisic*; Parks p.453, `SK-paahisic-p453-4039` |
 | 6.5B | nickel, five cent piece<br>*(noun)* | **pâhisic** ⟨PAH-hih-sihts⟩ |
-| 6.6A | **pîta'u'** ⟨PEE-tuh-'oo'⟩ | **twenty**<br>number<br>built from pîta 'twenty' + u' 'NOM'<br>dictionary spelling *piitaʔuʔ*; Parks p.113, `SK-piitaquq-p113-2177`; Blue Book *pitau '* (L8, p.69) |
+| 6.6A | **pîta'u'** ⟨PEE-tuh-'oo'⟩ | **twenty**<br>number<br>built from pîta 'twenty' + u' 'NOM'<br>dictionary spelling *piitaʔuʔ*; Parks p.113, `SK-piitaquq-p113-2177`; Blue Book *pitau'* (L8, p.69) |
 | 6.6B | twenty<br>*(number)* | **pîta'u'** ⟨PEE-tuh-'oo'⟩ |
 | 6.7A | **ruksiri'** ⟨DOOK-sih-dih'⟩ | **ten**<br>number<br>built from ruks + hiri' 'LOC'<br>dictionary spelling *ruksiriʔ*; Parks p.148, `SK-ruksiriq-p148-2871` |
 | 6.7B | ten<br>*(number)* | **ruksiri'** ⟨DOOK-sih-dih'⟩ |
 | 6.8A | **tîrisic** ⟨TEE-dih-sihts⟩ | **dime, ten cent piece**<br>noun<br>dictionary spelling *tiirisic*; Parks p.165, `SK-tiirisic-p165-3252` |
 | 6.8B | dime, ten cent piece<br>*(noun)* | **tîrisic** ⟨TEE-dih-sihts⟩ |
-| 6.9A | **rakûkita** ⟨duh-KOO-kih-tuh⟩ | **fourteen**<br>number<br>built from rak 'wood' + hûkita 'on top'<br>dictionary spelling *rakuukita*; Parks p.136, `SK-rakuukita-p136-2671`; Blue Book *raku•kita* (L8, p.69) |
+| 6.9A | **rakûkita** ⟨duh-KOO-kih-tuh⟩ | **fourteen**<br>number<br>built from rak 'wood' + hûkita 'on top'<br>dictionary spelling *rakuukita*; Parks p.136, `SK-rakuukita-p136-2671`; Blue Book *rakú•kita* (L8, p.69) |
 | 6.9B | fourteen<br>*(number)* | **rakûkita** ⟨duh-KOO-kih-tuh⟩ |
 | 6.10A | **tawirâru'** ⟨TUH-wih-dah-doo'⟩ | **sixty** — sixty <br>number<br>built from tawihk + râr 'PL/ITER' + u' 'NOM'<br>dictionary spelling *tawiraaruʔ*; Parks p.164, `SK-tawiraaruq-p164-3221` |
 | 6.10B | sixty<br>*(number)* | **tawirâru'** ⟨TUH-wih-dah-doo'⟩ |
@@ -274,7 +274,7 @@ How a word is built, and which compounds are offered on C cards, comes from the 
 |---|---|---|
 | 7.1A | **čačiks** ⟨CHUH-chihks⟩ | **spider**<br>noun<br>dictionary spelling *caciks*; Parks p.27, `SK-caciks-p27-0393`; Blue Book *tsatsiks* (L9, p.71) |
 | 7.1B | spider<br>*(noun)* | **čačiks** ⟨CHUH-chihks⟩ |
-| 7.2A | **hîtu'** ⟨HEE-too'⟩ | **feather**<br>noun<br>built from hît 'feather' + u' 'NOM'<br>dictionary spelling *hiituʔ*; Parks p.390, `SK-hiituq-p390-3856`; Blue Book *hitu '* (L1, p.29) |
+| 7.2A | **hîtu'** ⟨HEE-too'⟩ | **feather**<br>noun<br>built from hît 'feather' + u' 'NOM'<br>dictionary spelling *hiituʔ*; Parks p.390, `SK-hiituq-p390-3856`; Blue Book *hitu'* (L1, p.29) |
 | 7.2B | feather<br>*(noun)* | **hîtu'** ⟨HEE-too'⟩ |
 | 7.2C1 | **hîtkîsu'** ⟨HEET-kee-soo'⟩<br>*(built on hîtu')* | **quill of a feather**<br>hît + kîs + u'<br>Parks p.390, `SK-hiitkiisuq-p390-3850` |
 | 7.2C2 | **hîtaruhtu'** ⟨HEE-tuh-dooh-too'⟩<br>*(built on hîtu')* | **soft feather, plume**<br>hît + aruht + u'<br>Parks p.390, `SK-hiitaruhtuq-p390-3848` |
@@ -296,13 +296,13 @@ How a word is built, and which compounds are offered on C cards, comes from the 
 | 7.9B | eagle<br>*(noun)* | **retahkac** ⟨deh-tuhh-kuhts⟩ |
 | 7.10A | **rutpačat** ⟨doot-puh-chuht⟩ | **snake**<br>noun<br>dictionary spelling *rutpacat*; Blue Book only (no Parks entry); `BB-rutpacat-0077` |
 | 7.10B | snake<br>*(noun)* | **rutpačat** ⟨doot-puh-chuht⟩ |
-| 7.11A | **ckiriraru'** ⟨tskih-dih-duh-doo'⟩ | **"Wolf Ways"**<br>noun<br>dictionary spelling *ckiriraruʔ*; Blue Book only (no Parks entry); `BB-ckiriraru-0002`; Blue Book *Tskiri•Raru'* (L13, p.88) |
+| 7.11A | **ckiriraru'** ⟨tskih-dih-duh-doo'⟩ | **"Wolf Ways"**<br>noun<br>dictionary spelling *ckiriraruʔ*; Blue Book only (no Parks entry); `BB-ckiriraru-0002`; Blue Book *Tskiri•Ráru'* (L13, p.88) |
 | 7.11B | "Wolf Ways"<br>*(noun)* | **ckiriraru'** ⟨tskih-dih-duh-doo'⟩ |
 | 7.12A | **ckurahkeks** ⟨tskoo-duhh-kehks⟩ | **frog**<br>noun<br>dictionary spelling *ckurahkeks*; Blue Book only (no Parks entry); `BB-ckurahkeks-0004`; Blue Book *tskurahkeks* (L9, p.71) |
 | 7.12B | frog<br>*(noun)* | **ckurahkeks** ⟨tskoo-duhh-kehks⟩ |
-| 7.13A | **rahrurahki** ⟨duhh-doo-duhh-kih⟩ | **deer, large mammal**<br>noun<br>dictionary spelling *rahrurahki*; Blue Book only (no Parks entry); `BB-rahrurahki-0053`; Blue Book *rahrurahki* (L9, p.71) |
+| 7.13A | **rahrurahki** ⟨duhh-doo-duhh-kih⟩ | **deer, large mammal**<br>noun<br>dictionary spelling *rahrurahki*; Blue Book only (no Parks entry); `BB-rahrurahki-0053`; Blue Book *rahrúrahki* (L9, p.71) |
 | 7.13B | deer, large mammal<br>*(noun)* | **rahrurahki** ⟨duhh-doo-duhh-kih⟩ |
-| 7.14A | **ckirihkapira** ⟨tskih-dihh-kuh-pih-duh⟩ | **Mad Dog Month**<br>noun<br>dictionary spelling *ckirihkapira*; Blue Book only (no Parks entry); `BB-ckirihkapira-0001`; Blue Book *Tskirih•kapira* (L19, p.109) |
+| 7.14A | **ckirihkapira** ⟨tskih-dihh-kuh-pih-duh⟩ | **Mad Dog Month**<br>noun<br>dictionary spelling *ckirihkapira*; Blue Book only (no Parks entry); `BB-ckirihkapira-0001`; Blue Book *Tskirih•kápira* (L19, p.109) |
 | 7.14B | Mad Dog Month<br>*(noun)* | **ckirihkapira** ⟨tskih-dihh-kuh-pih-duh⟩ |
 | 7.15A | **ckirihkâpirât** ⟨TSKIH-dihh-kah-pih-daht⟩ | **wolf (Canis lupus lycaon)** (+2 more senses in the dictionary)<br>noun<br>built from ickirir 'wolf' + kâpirât 'rabid'<br>dictionary spelling *ckirihkaapiraat*; Parks p.30, `SK-ckirihkaapiraat-p30-0484` |
 | 7.15B | wolf (Canis lupus lycaon)<br>*(noun)* | **ckirihkâpirât** ⟨TSKIH-dihh-kah-pih-daht⟩ |
@@ -313,8 +313,8 @@ How a word is built, and which compounds are offered on C cards, comes from the 
 
 | Card | Front | Back |
 |---|---|---|
-| 8.1A | **rutki rahâwarî** ⟨DOOT-kihduh-HAH-wuh-dee⟩ | **water snake (Nerodia spp.)**<br>noun<br>built from rut 'snake' + kis 'DIM' + ra 'ABS' + hâ 'water' + warî 'go around'<br>dictionary spelling *rutki rahaawarii*; Parks p.148, `SK-rutki_rahaawarii-p148-2879` |
-| 8.1B | water snake (Nerodia spp.)<br>*(noun)* | **rutki rahâwarî** ⟨DOOT-kihduh-HAH-wuh-dee⟩ |
+| 8.1A | **rutki rahâwarî** ⟨DOOT-kih duh-HAH-wuh-dee⟩ | **water snake (Nerodia spp.)**<br>noun<br>built from rut 'snake' + kis 'DIM' + ra 'ABS' + hâ 'water' + warî 'go around'<br>dictionary spelling *rutki rahaawarii*; Parks p.148, `SK-rutki_rahaawarii-p148-2879` |
+| 8.1B | water snake (Nerodia spp.)<br>*(noun)* | **rutki rahâwarî** ⟨DOOT-kih duh-HAH-wuh-dee⟩ |
 | 8.2A | **pâ** ⟨PAH⟩ | **elk, wapiti (Cervus elaphus)**<br>noun<br>dictionary spelling *paa*; Parks p.453, `SK-paa-p453-4022` |
 | 8.2B | elk, wapiti (Cervus elaphus)<br>*(noun)* | **pâ** ⟨PAH⟩ |
 | 8.3A | **pic** ⟨PIHTS⟩ | **louse**<br>noun<br>dictionary spelling *pic*; Parks p.111, `SK-pic-p111-2154` |
@@ -350,7 +350,7 @@ How a word is built, and which compounds are offered on C cards, comes from the 
 
 | Card | Front | Back |
 |---|---|---|
-| 9.1A | **cka'u'** ⟨TSKUH-'oo'⟩ | **face** (+1 more sense in the dictionary)<br>noun<br>built from icka 'face' + u' 'NOM'<br>dictionary spelling *ckaʔuʔ*; Parks p.30, `SK-ckaquq-p30-0460`; Blue Book *tskau* (L2, p.36) |
+| 9.1A | **cka'u'** ⟨TSKUH-'oo'⟩ | **face** (+1 more sense in the dictionary)<br>noun<br>built from icka 'face' + u' 'NOM'<br>dictionary spelling *ckaʔuʔ*; Parks p.30, `SK-ckaquq-p30-0460`; Blue Book *tskau** (L2, p.36) |
 | 9.1B | face<br>*(noun)* | **cka'u'** ⟨TSKUH-'oo'⟩ |
 | 9.1C1 | **ckakûku'u'** ⟨tskuh-KOO-koo-'oo'⟩<br>*(built on cka'u')* | **mask**<br>icka + kûku + u'<br>Parks p.30, `SK-ckakuukuquq-p30-0464` |
 | 9.1C2 | **ckahîkara'uks** ⟨tskuh-HEE-kuh-duh-'ooks⟩<br>*(built on cka'u')* | **wash basin, wash pan**<br>icka + hîkara'uk + his<br>Parks p.30, `SK-ckahiikaraquks-p30-0462` |
@@ -360,13 +360,13 @@ How a word is built, and which compounds are offered on C cards, comes from the 
 | 9.3B | head<br>*(noun)* | **paksu'** ⟨PUHK-soo'⟩ |
 | 9.3C1 | **paksaku** ⟨puhk-SUH-koo⟩<br>*(built on paksu')* | **tadpole**<br>paks + ha + kus<br>Parks p.108, `SK-paksaku-p108-2080` |
 | 9.3C2 | **pakskatûs** ⟨PUHKS-kuh-toos⟩<br>*(built on paksu')* | **flat-headed**<br>paks + katûs<br>Parks p.109, `SK-pakskatuus-p109-2093` |
-| 9.4A | **reksu'** ⟨dehk-soo'⟩ | **ear of corn**<br>noun<br>dictionary spelling *reksuʔ*; Blue Book only (no Parks entry); `BB-reksu-0065`; Blue Book *reksu '* (L1, p.30) |
+| 9.4A | **reksu'** ⟨dehk-soo'⟩ | **ear of corn**<br>noun<br>dictionary spelling *reksuʔ*; Blue Book only (no Parks entry); `BB-reksu-0065`; Blue Book *reksu'* (L1, p.30) |
 | 9.4B | ear of corn<br>*(noun)* | **reksu'** ⟨dehk-soo'⟩ |
 | 9.5A | **pare'ku'** ⟨puh-deh'-koo'⟩ | **horn**<br>noun<br>dictionary spelling *pareʔkuʔ*; Blue Book only (no Parks entry); `BB-pare-ku-0037` |
 | 9.5B | horn<br>*(noun)* | **pare'ku'** ⟨puh-deh'-koo'⟩ |
 | 9.6A | **čuskîtu'** ⟨choos-KEE-too'⟩ | **cradleboard cloth used to wrap an infant** — cradleboard cloth used to wrap an infant ; the cloth is attached to the cradleboard and holds the baby on the board as well as shields its head<br>noun<br>built from ičus 'nose' + kit + u' 'NOM'<br>dictionary spelling *cuskiituʔ*; Parks p.32, `SK-cuskiituq-p32-0523` |
 | 9.6B | cradleboard cloth used to wrap an infant<br>*(noun)* | **čuskîtu'** ⟨choos-KEE-too'⟩ |
-| 9.7A | **tarikta'u'** ⟨tuh-DIHK-tuh-'oo'⟩ | **body**<br>noun<br>built from tarikta 'body' + u' 'NOM'<br>dictionary spelling *tariktaʔuʔ*; Parks p.161, `SK-tariktaquq-p161-3154`; Blue Book *TARIKTAU'* (L5, p.49) |
+| 9.7A | **tarikta'u'** ⟨tuh-DIHK-tuh-'oo'⟩ | **body**<br>noun<br>built from tarikta 'body' + u' 'NOM'<br>dictionary spelling *tariktaʔuʔ*; Parks p.161, `SK-tariktaquq-p161-3154`; Blue Book *TARÍKTAU'* (L5, p.49) |
 | 9.7B | body<br>*(noun)* | **tarikta'u'** ⟨tuh-DIHK-tuh-'oo'⟩ |
 | 9.8A | **îr-** ⟨eed⟩ | **carcass** — carcass; corpse<br>noun (bound stem)<br>dictionary spelling *iir-*; Parks p.408, `SK-iir--p408-3908` |
 | 9.8B | carcass<br>*(noun (bound stem))* | **îr-** ⟨eed⟩ |
@@ -423,7 +423,7 @@ How a word is built, and which compounds are offered on C cards, comes from the 
 | 10.3B | corn<br>*(noun)* | **rikîsu'** ⟨DIH-kee-soo'⟩ |
 | 10.3C1 | **rikîspîrûs** ⟨DIH-kees-pee-doos⟩<br>*(built on rikîsu')* | **rice**<br>rikîs + pîrûs<br>Parks p.492, `SK-rikiispiiruus-p492-4186` |
 | 10.3C2 | **rikîskipâču'** ⟨dih-KEES-kih-pah-choo'⟩<br>*(built on rikîsu')* | **raw, uncooked corn, fresh corn off the cob**<br>rikîs + kipâc + u'<br>Parks p.492, `SK-rikiiskipaacuq-p492-4181` |
-| 10.4A | **hakaru'hkuču'** ⟨huh-kuh-doo'h-koo-choo'⟩ | **Feast**<br>noun<br>dictionary spelling *hakaruʔhkucuʔ*; Blue Book only (no Parks entry); `BB-hakaru-hkucu-0011`; Blue Book *Ha•karu'h•kutsu'* (L19, p.109) |
+| 10.4A | **hakaru'hkuču'** ⟨huh-kuh-doo'h-koo-choo'⟩ | **Feast**<br>noun<br>dictionary spelling *hakaruʔhkucuʔ*; Blue Book only (no Parks entry); `BB-hakaru-hkucu-0011`; Blue Book *Ha•karúh•kutsu'* (L19, p.109) |
 | 10.4B | Feast<br>*(noun)* | **hakaru'hkuču'** ⟨huh-kuh-doo'h-koo-choo'⟩ |
 | 10.5A | **hû'** ⟨HOO'⟩ | **mush** — mush; porridge<br>noun<br>dictionary spelling *huuʔ*; Parks p.48, `SK-huuq-p48-0815` |
 | 10.5B | mush<br>*(noun)* | **hû'** ⟨HOO'⟩ |
@@ -518,13 +518,13 @@ How a word is built, and which compounds are offered on C cards, comes from the 
 | 12.1B | "school grounds," the tribal offices<br>*(noun)* | **skurihkat** ⟨skoo-dihh-kuht⟩ |
 | 12.2A | **kitkahahki** ⟨kiht-kuh-huhh-kih⟩ | **"Little Mud Lodge Village." Or, perhaps "Little Swamp" from kit-kaharu ' , swamp, slough. Known in early literature as "Republican Pawnee," for the river where the villages were**<br>noun<br>dictionary spelling *kitkahahki*; Blue Book only (no Parks entry); `BB-kitkahahki-0024` |
 | 12.2B | "Little Mud Lodge Village." Or, perhaps "Little Swamp" from kit-kaharu ' , swamp, slough. Known in early literature as "Republican Pawnee," for the river where the villages were<br>*(noun)* | **kitkahahki** ⟨kiht-kuh-huhh-kih⟩ |
-| 12.3A | **reka.kusu'** ⟨deh-kuh-koo-soo'⟩ | **door**<br>noun<br>dictionary spelling *reka.kusuʔ*; Blue Book only (no Parks entry); `BB-reka-kusu-0062`; Blue Book *reka .kusu'* (L8, p.69) |
+| 12.3A | **reka.kusu'** ⟨deh-kuh-koo-soo'⟩ | **door**<br>noun<br>dictionary spelling *reka.kusuʔ*; Blue Book only (no Parks entry); `BB-reka-kusu-0062`; Blue Book *reká•kusu'* (L8, p.69) |
 | 12.3B | door<br>*(noun)* | **reka.kusu'** ⟨deh-kuh-koo-soo'⟩ |
-| 12.4A | **tuhwicpihat** ⟨tooh-wihts-pih-huht⟩ | **"Camp on the Ridge"**<br>noun<br>dictionary spelling *tuhwicpihat*; Blue Book only (no Parks entry); `BB-tuhwicpihat-0087`; Blue Book *Tuhwits•Pihat .* (L13, p.88) |
+| 12.4A | **tuhwicpihat** ⟨tooh-wihts-pih-huht⟩ | **"Camp on the Ridge"**<br>noun<br>dictionary spelling *tuhwicpihat*; Blue Book only (no Parks entry); `BB-tuhwicpihat-0087`; Blue Book *Tuhwits•Píhat* (L13, p.88) |
 | 12.4B | "Camp on the Ridge"<br>*(noun)* | **tuhwicpihat** ⟨tooh-wihts-pih-huht⟩ |
-| 12.5A | **cktiskakusu'** ⟨tsktihs-kuh-koo-soo'⟩ | **chair**<br>noun<br>dictionary spelling *cktiskakusuʔ*; Blue Book only (no Parks entry); `BB-cktiskakusu-0003`; Blue Book *tsktis•kakusu'* (L8, p.69) |
-| 12.5B | chair<br>*(noun)* | **cktiskakusu'** ⟨tsktihs-kuh-koo-soo'⟩ |
-| 12.6A | **rareka.kusu'** ⟨duh-deh-kuh-koo-soo'⟩ | **door**<br>noun<br>dictionary spelling *rareka.kusuʔ*; Blue Book only (no Parks entry); `BB-rareka-kusu-0057`; Blue Book *ra•reka .kusu'* (L8, p.69) |
+| 12.5A | **ckuskakusu'** ⟨tskoos-kuh-koo-soo'⟩ | **chair**<br>noun<br>dictionary spelling *ckuskakusuʔ*; Blue Book only (no Parks entry); `BB-cktiskakusu-0003`; Blue Book *tskús•kakusu'* (L8, p.69) |
+| 12.5B | chair<br>*(noun)* | **ckuskakusu'** ⟨tskoos-kuh-koo-soo'⟩ |
+| 12.6A | **rareka.kusu'** ⟨duh-deh-kuh-koo-soo'⟩ | **door**<br>noun<br>dictionary spelling *rareka.kusuʔ*; Blue Book only (no Parks entry); `BB-rareka-kusu-0057`; Blue Book *ra•reká•kusu'* (L8, p.69) |
 | 12.6B | door<br>*(noun)* | **rareka.kusu'** ⟨duh-deh-kuh-koo-soo'⟩ |
 | 12.7A | **akâru'** ⟨UH-kah-doo'⟩ | **dwelling, lodge, house** (+2 more senses in the dictionary)<br>noun<br>built from akâr 'dwelling' + u' 'NOM'<br>dictionary spelling *akaaruʔ*; Parks p.9, `SK-akaaruq-p9-0108` |
 | 12.7B | dwelling, lodge, house<br>*(noun)* | **akâru'** ⟨UH-kah-doo'⟩ |
@@ -606,7 +606,7 @@ How a word is built, and which compounds are offered on C cards, comes from the 
 
 | Card | Front | Back |
 |---|---|---|
-| 14.1A | **pariat** ⟨puh-dih-uht⟩ | **Month of Summer**<br>noun<br>dictionary spelling *pariat*; Blue Book only (no Parks entry); `BB-pariat-0038`; Blue Book *Pa•riat* (L19, p.109) |
+| 14.1A | **pariat** ⟨puh-dih-uht⟩ | **Month of Summer**<br>noun<br>dictionary spelling *pariat*; Blue Book only (no Parks entry); `BB-pariat-0038`; Blue Book *Pa•ríat* (L19, p.109) |
 | 14.1B | Month of Summer<br>*(noun)* | **pariat** ⟨puh-dih-uht⟩ |
 | 14.2A | **hupirit** ⟨hoo-pih-diht⟩ | **star**<br>noun<br>dictionary spelling *hupirit*; Blue Book only (no Parks entry); `BB-hupirit-0019` |
 | 14.2B | star<br>*(noun)* | **hupirit** ⟨hoo-pih-diht⟩ |
@@ -665,7 +665,7 @@ How a word is built, and which compounds are offered on C cards, comes from the 
 |---|---|---|
 | 15.1A | **rasitu'** ⟨duh-sih-too'⟩ | **ice**<br>noun<br>dictionary spelling *rasituʔ*; Blue Book only (no Parks entry); `BB-rasitu-0059` |
 | 15.1B | ice<br>*(noun)* | **rasitu'** ⟨duh-sih-too'⟩ |
-| 15.2A | **uhaiwu'** ⟨oo-huh-ih-woo'⟩ | **Ohio River or "something's always floating down"**<br>noun<br>dictionary spelling *uhaiwuʔ*; Blue Book only (no Parks entry); `BB-uhaiwu-0090`; Blue Book *Uhaiwu'* (L2, p.38) |
+| 15.2A | **uhaiwu'** ⟨oo-huh-ih-woo'⟩ | **Ohio River or "something's always floating down"**<br>noun<br>dictionary spelling *uhaiwuʔ*; Blue Book only (no Parks entry); `BB-uhaiwu-0090`; Blue Book *Uháiwu'* (L2, p.38) |
 | 15.2B | Ohio River or "something's always floating down"<br>*(noun)* | **uhaiwu'** ⟨oo-huh-ih-woo'⟩ |
 | 15.3A | **kicka** ⟨KIHTS-kuh⟩ | **Arkansas River** (+1 more sense in the dictionary)<br>noun<br>built from kic 'water' + ka 'in/on'<br>dictionary spelling *kicka*; Parks p.85, `SK-kicka-p85-1602` |
 | 15.3B | Arkansas River<br>*(noun)* | **kicka** ⟨KIHTS-kuh⟩ |
@@ -880,7 +880,7 @@ How a word is built, and which compounds are offered on C cards, comes from the 
 | 19.1C3 | 'like, care for, have an affinity for': is going to … (intentive)<br>*(stem tî)* | **tarîctîsta** ⟨≈tuh-deets-tees-tuh⟩<br>dictionary form 5 of *tii*, Parks p.164 |
 | 19.2A | **ari'** ⟨UH-dih'⟩ | **oh! an exclamation of surprise**<br>exclamation<br>dictionary spelling *ariʔ*; Parks p.13, `SK-ariq-p13-0141` |
 | 19.2B | oh! an exclamation of surprise<br>*(exclamation)* | **ari'** ⟨UH-dih'⟩ |
-| 19.3A | **râhikûču'** ⟨DAH-hih-koo-choo'⟩ | **brave, warrior** — brave, warrior; brave or valorous man<br>noun<br>built from râhikûc 'brave' + u' 'NOM'<br>dictionary spelling *raahikuucuʔ*; Parks p.117, `SK-raahikuucuq-p117-2276`; Blue Book *rahi•kutsu'* (L10, p.76) |
+| 19.3A | **râhikûču'** ⟨DAH-hih-koo-choo'⟩ | **brave, warrior** — brave, warrior; brave or valorous man<br>noun<br>built from râhikûc 'brave' + u' 'NOM'<br>dictionary spelling *raahikuucuʔ*; Parks p.117, `SK-raahikuucuq-p117-2276`; Blue Book *ráhi•kutsu'* (L10, p.76) |
 | 19.3B | brave, warrior<br>*(noun)* | **râhikûču'** ⟨DAH-hih-koo-choo'⟩ |
 | 19.4A | **hâkastahkata** ⟨hah-kuhs-TUHH-kuh-tuh⟩ | **field dodder, love vine (Cuscuta spp.)**<br>noun<br>built from hâkas 'vine' + rahkatâr 'yellow'<br>dictionary spelling *haakastahkata*; Parks p.34, `SK-haakastahkata-p34-0580` |
 | 19.4B | field dodder, love vine (Cuscuta spp.)<br>*(noun)* | **hâkastahkata** ⟨hah-kuhs-TUHH-kuh-tuh⟩ |
@@ -953,7 +953,7 @@ How a word is built, and which compounds are offered on C cards, comes from the 
 | 21.6A | **pîraski** ⟨PEE-duhs-kih⟩ | **boy**<br>noun<br>built from pîras 'boy' + kis 'DIM'<br>dictionary spelling *piiraski*; Parks p.460, `SK-piiraski-p460-4096`; Blue Book *piraski* (L6, p.56) |
 | 21.6B | boy<br>*(noun)* | **pîraski** ⟨PEE-duhs-kih⟩ |
 | 21.6C1 | **pîraskiripacki** ⟨pee-duhs-KIH-dih-puhts-kih⟩<br>*(built on pîraski)* | **little boy**<br>pîras + kiripackis<br>Parks p.460, `SK-piiraskiripacki-p460-4097` |
-| 21.7A | **hetkata'ku** ⟨heht-kuh-tuh'-koo⟩ | **sheriff, office of the law**<br>noun<br>dictionary spelling *hetkataʔku*; Blue Book only (no Parks entry); `BB-hetkata-ku-0016`; Blue Book *het•kata'ku* (L10, p.76) |
+| 21.7A | **hetkata'ku** ⟨heht-kuh-tuh'-koo⟩ | **sheriff, office of the law**<br>noun<br>dictionary spelling *hetkataʔku*; Blue Book only (no Parks entry); `BB-hetkata-ku-0016`; Blue Book *het•katáku* (L10, p.76) |
 | 21.7B | sheriff, office of the law<br>*(noun)* | **hetkata'ku** ⟨heht-kuh-tuh'-koo⟩ |
 | 21.8A | **ka** ⟨kuh⟩ | **be outstanding, extraordinary, exceptional, as a warrior who stands out above others**<br>locative verb (be in/on/at)<br>dictionary spelling *ka*; Parks p.418, `SK-ka-p418-3926` |
 | 21.8B | be outstanding, extraordinary, exceptional, as a warrior who stands out above others<br>*(locative verb (be in/on/at) — dictionary stem)* | **ka** ⟨kuh⟩ |
@@ -1089,7 +1089,7 @@ How a word is built, and which compounds are offered on C cards, comes from the 
 | 23.4C4 | 'crawl, crawl on one's hands and knees': is going to … (intentive)<br>*(stem irikisat)* | **tîrikisuhta** ⟨≈tee-dih-kih-sooh-tuh⟩<br>dictionary form 5 of *irikisat*, Parks p.66 |
 | 23.5A | **haskîču'** ⟨HUHS-kee-choo'⟩ | **string, cord, twine, thong , as used for a belt or to hold or carry something** — string, cord, twine, thong , as used for a belt or to hold or carry something <br>noun<br>built from has 'string' + kîc 'neck' + u' 'NOM'<br>dictionary spelling *haskiicuʔ*; Parks p.37, `SK-haskiicuq-p37-0653` |
 | 23.5B | string, cord, twine, thong , as used for a belt or to hold or carry something<br>*(noun)* | **haskîču'** ⟨HUHS-kee-choo'⟩ |
-| 23.6A | **cpîrarûs** ⟨tspee-DUH-doos⟩ | **fly, housefly (Musca domestica)**<br>noun<br>built from cpî + rârûs 'hairy'<br>dictionary spelling *cpiiraruus*; Parks p.31, `SK-cpiiraruus-p31-0508`; Blue Book *tspirarus* (L9, p.71) |
+| 23.6A | **cpîrarûs** ⟨tspee-DUH-doos⟩ | **fly, housefly (Musca domestica)**<br>noun<br>built from cpî + rârûs 'hairy'<br>dictionary spelling *cpiiraruus*; Parks p.31, `SK-cpiiraruus-p31-0508`; Blue Book *tspirárus* (L9, p.71) |
 | 23.6B | fly, housefly (Musca domestica)<br>*(noun)* | **cpîrarûs** ⟨tspee-DUH-doos⟩ |
 | 23.7A | **haspâksu'** ⟨HUHS-pahk-soo'⟩ | **head strap, strap for attaching a bundle to one's body to carry**<br>noun<br>built from has 'string' + paks 'head' + u' 'NOM'<br>dictionary spelling *haspaaksuʔ*; Parks p.38, `SK-haspaaksuq-p38-0655` |
 | 23.7B | head strap, strap for attaching a bundle to one's body to carry<br>*(noun)* | **haspâksu'** ⟨HUHS-pahk-soo'⟩ |

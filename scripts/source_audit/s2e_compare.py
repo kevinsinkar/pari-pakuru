@@ -180,9 +180,8 @@ def classify(d):
     if kind in NOISE_RULES:
         d["class"], d["severity"] = "noise", 4
         return d
-    if kinds == {"lax-i-symbol"}:
-        d["class"], d["severity"] = "convention", 4
-        return d
+    # Until 2026-11-13 the database wrote í for Parks's lax ɪ́ everywhere, and that was counted once as a
+    # convention. It now stores his symbols, so an í where he prints ɪ́ is a difference like any other.
     d["class"] = "difference"
     if field in ("(entry)",):
         sev = 2

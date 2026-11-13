@@ -71,25 +71,29 @@ Parks cites these shapes with the same or overlapping meaning, and they differ o
 | *aruusaʔ* | 1 | *aruusaa* | 0 | hors | 1 |
 | *i* | 1 | *hi* | 0 | his | 1 |
 
-## 2. Blue Book and Parks divide a word differently (13 words)
+## 2. Blue Book and Parks divide a word differently (17 words)
 
 **Question:** does the Blue Book's seam mark a real boundary that Parks's analysis leaves out?
 
 | Word | Parks's pieces | Blue Book writes | Blue Book lesson | Source |
 |---|---|---|---|---|
-| *haakawaahc/waʔac* | *haaka* + *waahc* | *Ti•ha•kawaats* | L17, p. 102 | `SK-haakawaahc/waqac-p34-0586`, Parks p. 382 |
-| *hurahac* | *hurahac* | *hura•hats* | L7, p. 61 | `SK-hurahac-p47-0798`, Parks p. 395 |
-| *ickakatasa* | *icka* + *kata* + *sa* | *ti•tska•katasa* | L2, p. 36 | `SK-ickakatasa-p57-0980`, Parks p. 405 |
+| *askuhuukita* | *askus* + *huukita* | *asku•hú•kita* | L8, p. 68 | `SK-askuhuukita-p16-0174`, Parks p. 364 |
+| *haakawaahc/waʔac* | *haaka* + *waahc* | *Tat•á•kawaats* | L17, p. 102 | `SK-haakawaahc/waqac-p34-0586`, Parks p. 382 |
+| *haakawaahcisuʔ* | *haaka* + *waahc* + *his* + *uʔ* | *há•kawahtsisu'* | L11, p. 79 | `SK-haakawaahcisuq-p35-0588`, Parks p. 383 |
+| *hurahac* | *hurahac* | *tí•hura•hats* | L7, p. 60 | `SK-hurahac-p47-0798`, Parks p. 395 |
+| *ickakatasa* | *icka* + *kata* + *sa* | *ti•tska•kátasa* | L2, p. 36 | `SK-ickakatasa-p57-0980`, Parks p. 405 |
 | *kaaʔiisa* | *kaaʔiis* + *a* | *Tatih•ka•isa'* | L16, p. 99 | `SK-kaaqiisa-p2-0014`, Parks p. 419 |
 | *kicuucis* | *kicuucis* | *kitsu•tsis* | L3 | `SK-kicuucis-p436-3958`, Parks p. 436 |
-| *kiiraraasiituʔ* | *kiir* + *raraasit* + *uʔ* | *kira•rasitu'* | L2, p. 37 | `SK-kiiraraasiituq-p91-1705`, Parks p. 439 |
-| *kirikiirisuʔ* | *kirikiir* + *his* + *uʔ* | *kirik•erisu'* | L10, p. 76 | `SK-kirikiirisuq-p96-1839`, Parks p. 444 |
-| *raahikuucuʔ* | *raahikuuc* + *uʔ* | *rahi•kutsu'* | L10, p. 76 | `SK-raahikuucuq-p117-2276`, Parks p. 465 |
+| *kiiraraasiituʔ* | *kiir* + *raraasit* + *uʔ* | *kira•rásitu'* | L2, p. 37 | `SK-kiiraraasiituq-p91-1705`, Parks p. 439 |
+| *kirikiirisuʔ* | *kirikiir* + *his* + *uʔ* | *kirik•érisu'* | L10, p. 76 | `SK-kirikiirisuq-p96-1839`, Parks p. 444 |
+| *ksurawiʔuʔ* | *iks* + *hura* + *wi* + *uʔ* | *ksúr•awiu'* | L8, p. 69 | `SK-ksurawiquq-p101-1949`, Parks p. 449 |
+| *raahikuucuʔ* | *raahikuuc* + *uʔ* | *ráhi•kutsu'* | L10, p. 76 | `SK-raahikuucuq-p117-2276`, Parks p. 465 |
 | *raahuriitat* | *raahuriita* + *t* | *ra•hurit•at* | L20, p. 118 | `SK-raahuriitat-p118-2298`, Parks p. 466 |
-| *rakaahuraahkatiitu* | *ra* + *kaahuraar* + *katiit* + *u* | *Ra•ka•hurah•katiit•u'* | L9, p. 73 | `SK-rakaahuraahkatiitu-p134-2610`, Parks p. 482 |
-| *rakuukita* | *rak* + *huukita* | *raku•kita* | L8, p. 69 | `SK-rakuukita-p136-2671`, Parks p. 484 |
-| *rikatihaahtiiraraʔ* | *rikatihaar* + *tiiraraa* | *Ri•katihah•tirara* | L19, p. 109 | `SK-rikatihaahtiiraraq-p491-4161`, Parks p. 491 |
-| *rikatihaaruʔ* | *rikatihaar* + *uʔ* | *RI•KATIHARU'* | L15, p. 95 | `SK-rikatihaaruq-p491-4167`, Parks p. 491 |
+| *rakaahuraahkatiitu* | *ra* + *kaahuraar* + *katiit* + *u* | *Ra•ká•huráh•katiit•u'* | L9, p. 73 | `SK-rakaahuraahkatiitu-p134-2610`, Parks p. 482 |
+| *rakuukita* | *rak* + *huukita* | *rakú•kita* | L8, p. 69 | `SK-rakuukita-p136-2671`, Parks p. 484 |
+| *rikatihaahtiiraraʔ* | *rikatihaar* + *tiiraraa* | *Ri•katihah•tírara* | L19, p. 109 | `SK-rikatihaahtiiraraq-p491-4161`, Parks p. 491 |
+| *rikatihaaruʔ* | *rikatihaar* + *uʔ* | *RI•KÁTIHARU'* | L15, p. 95 | `SK-rikatihaaruq-p491-4167`, Parks p. 491 |
+| *taʔuutuʔ* | *taʔuut* + *uʔ* | *tá•utu'* | L12, p. 83 | `SK-taquutuq-p153-3003`, Parks p. 501 |
 
 ## 3. A compound that does not inflect like its last root (43 words)
 
@@ -125,10 +129,10 @@ Parks's etymology names a final root, but one of the word's paradigm forms ends 
 | *katawaarik* | *kata* + *waa* + *arik* | near | 5 | *tikatawaariksta* | *tiirikista* | `SK-katawaarik-p82-1515`, Parks p. 430 |
 | *katawaarik* | *katawaa* + *arik* | near | 5 | *tikatawaariksta* | *tiirikista* | `SK-katawaarik-p82-1516`, Parks p. 430 |
 | *katawiiraʔuuriirik* | *kata* + *wiira* + *uuri* + *arik* | near | 5 | *tikatawiiraʔuuriiriksta* | *tiirikista* | `SK-katawiiraquuriirik-p82-1524`, Parks p. 430 |
-| *kicuuruht* | *kic* + *huuruht* | near | 5 | *tikicuuruktuksta* | *tihuuruhtuksta* | `SK-kicuuruht-p436-3960`, Parks p. 436 |
 | *kiisawataar* | *kiis* + *awataar* | near | 2 | *tikiisawataa* | *tiiwataaʔa* | `SK-kiisawataar-p92-1726`, Parks p. 440 |
 | *kiraarawataar* | *kiraar* + *awataar* | near | 2 | *tikiraarawataa* | *tiiwataaʔa* | `SK-kiraarawataar-p94-1791`, Parks p. 442 |
 | *kirikiiraar* | *kirik* + *kiir* + *aar* | near | 4 | *iriirakirikiirari* | *iriiraʔaara* | `SK-kirikiiraar-p96-1838`, Parks p. 444 |
+| *kusisaar* | *kusis* + *aar* | near | 4 | *iriirakusisaari* | *iriiraʔaara* | `SK-kusisaar-p103-4273`, Parks p. 451 |
 | *piraarik* | *pira* + *arik* | near | 5 | *tipiraariksta* | *tiirikista* | `SK-piraarik-p113-2191`, Parks p. 461 |
 | *raakawahaar* | *raa* + *kawahaar* | near | 2 | *tiraakawahaaʔa* | *tikawahaa* | `SK-raakawahaar-p119-2316`, Parks p. 467 |
 | *raarik* | *ra* + *arik* | near | 5 | *tiraariksta* | *tiirikista* | `SK-raarik-p123-2395`, Parks p. 471 |
@@ -204,7 +208,7 @@ Parks's glosses for these shapes fall into groups that share no content word, so
 | *ka* | on (53); outstanding (5); what (0) |
 | *kata* | against (56); throat (2) |
 | *awi* | image (57); worn (0) |
-| *aar* | become (47); tooth (5); do (3) |
+| *aar* | become (48); tooth (5); do (3) |
 | *hak* | pass (38); in a circle (0); hold (0); take (7) |
 | *kaa* | inside (42); grandmother (0) |
 | *hiir* | grass (13); good (26); night to elapse (1); tive (0) |
@@ -269,7 +273,7 @@ Parks glosses these pieces with their own shape, or gives them no gloss anywhere
 
 ## 7. Analyses not in Parks (1 proposed)
 
-362 words have no printed analysis and are not cited by Parks as a piece of another word. A segmentation was proposed only where one or two well-established pieces reproduce the headword exactly and the gloss agrees. Proposals are hypotheses and are never taught.
+361 words have no printed analysis and are not cited by Parks as a piece of another word. A segmentation was proposed only where one or two well-established pieces reproduce the headword exactly and the gloss agrees. Proposals are hypotheses and are never taught.
 
 - *kicuuca-* 'on top of, onto, as something high; up high.': proposed *kic* + *huuca* (tier D; `SK-kicuuca--p436-3955`, Parks p. 436)
 
@@ -435,7 +439,7 @@ These words were flagged because their gloss or semantic tag refers to ceremony,
 | *tawaktaarik* | ring; buzz, as with a buzzer. | B | `SK-tawaktaarik-p162-3186`, Parks p. 510 |
 | *tawarukaar* | perform, put on an act, as a doctor, magician, actor. | A | `SK-tawarukaar-p162-3189`, Parks p. 510 |
 | *Tawaruukucuuʔ* | Doctors' Dance, a spectacular annual event held in late sum… | C | `SK-tawaruukucuuq-p162-3190`, Parks p. 510 |
-| *tawihuhtawii (ut...)* | be a give-away song, as sung immediately preceding a give-a… | B | `SK-tawihuhtawii_(ut...)-p163-3207`, Parks p. 511 |
+| *tawihuhtawii* | be a give-away song, as sung immediately preceding a give-a… | A | `SK-tawihuhtawii_(ut...)-p163-3207`, Parks p. 511 |
 | *tawii* | be among, as in a group of people or animals. | B | `SK-tawii-p163-3208`, Parks p. 511 |
 | *tawiʔiita (ir...)* | know a song, know the lyrics of a song. | B | `SK-tawiqiita_(ir...)-p163-3200`, Parks p. 511 |
 | *tawiʔuʔ* | song. | B | `SK-tawiquq-p163-3202`, Parks p. 511 |

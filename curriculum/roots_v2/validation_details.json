@@ -12,7 +12,7 @@
     "gloss fits only part of the hosts",
     "counterexample to seam behaviour"
    ],
-   "words_AB": 340
+   "words_AB": 339
   },
   {
    "form": "raar",
@@ -232,7 +232,7 @@
    "found": [
     "shape has 2 other meaning(s) kept apart: outstanding (5); what (0)",
     "variant candidate(s), not merged: ka ~ kaa",
-    "short form: the string occurs inside 1443 headwords, an analysis places it in 74; only the analysed ones are counted"
+    "short form: the string occurs inside 1442 headwords, an analysis places it in 74; only the analysed ones are counted"
    ],
    "id": "ka#on",
    "meaning": "on",
@@ -267,7 +267,7 @@
    "form": "aar",
    "found": [
     "shape has 2 other meaning(s) kept apart: tooth (5); do (3)",
-    "short form: the string occurs inside 600 headwords, an analysis places it in 51; only the analysed ones are counted"
+    "short form: the string occurs inside 601 headwords, an analysis places it in 52; only the analysed ones are counted"
    ],
    "id": "aar#become",
    "meaning": "become",
@@ -278,7 +278,7 @@
     "gloss fits only part of the hosts",
     "counterexample to seam behaviour"
    ],
-   "words_AB": 47
+   "words_AB": 48
   },
   {
    "form": "uur",
@@ -591,7 +591,7 @@
   {
    "form": "sa",
    "found": [
-    "short form: the string occurs inside 338 headwords, an analysis places it in 27; only the analysed ones are counted"
+    "short form: the string occurs inside 339 headwords, an analysis places it in 27; only the analysed ones are counted"
    ],
    "id": "sa#lying",
    "meaning": "lying",
@@ -603,6 +603,20 @@
     "counterexample to seam behaviour"
    ],
    "words_AB": 25
+  },
+  {
+   "form": "hiriʔ",
+   "found": [],
+   "id": "hiriʔ=LOC",
+   "meaning": "locative/directional prefix or prefix string",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 24
   },
   {
    "form": "ir",
@@ -619,24 +633,10 @@
    "words_AB": 24
   },
   {
-   "form": "hiriʔ",
-   "found": [],
-   "id": "hiriʔ=LOC",
-   "meaning": "locative/directional prefix or prefix string",
-   "tried": [
-    "homonym folded in",
-    "false variant merge",
-    "chance substring hits",
-    "gloss fits only part of the hosts",
-    "counterexample to seam behaviour"
-   ],
-   "words_AB": 23
-  },
-  {
    "form": "u",
    "found": [
     "variant candidate(s), not merged: u ~ huu",
-    "short form: the string occurs inside 2548 headwords, an analysis places it in 33; only the analysed ones are counted"
+    "short form: the string occurs inside 2550 headwords, an analysis places it in 33; only the analysed ones are counted"
    ],
    "id": "u#extending in a line",
    "meaning": "extending in a line",
@@ -690,7 +690,7 @@
     "label printed by Parks only 3 times against 130 uses labelled by default (manual)"
    ],
    "id": "ra=ABS",
-   "meaning": "absolutative mode prefix",
+   "meaning": "absolutive mode prefix",
    "tried": [
     "homonym folded in",
     "false variant merge",
@@ -1292,6 +1292,22 @@
    "words_AB": 11
   },
   {
+   "form": "huukita",
+   "found": [
+    "its dictionary entries have different classes (LOC, VL): possibly more than one morpheme under one meaning"
+   ],
+   "id": "huukita#on top",
+   "meaning": "on top",
+   "tried": [
+    "homonym folded in",
+    "false variant merge",
+    "chance substring hits",
+    "gloss fits only part of the hosts",
+    "counterexample to seam behaviour"
+   ],
+   "words_AB": 10
+  },
+  {
    "form": "iir",
    "found": [
     "shape has 1 other meaning(s) kept apart: carcass (0)",
@@ -1392,22 +1408,6 @@
    ],
    "id": "pahaat#red",
    "meaning": "red",
-   "tried": [
-    "homonym folded in",
-    "false variant merge",
-    "chance substring hits",
-    "gloss fits only part of the hosts",
-    "counterexample to seam behaviour"
-   ],
-   "words_AB": 9
-  },
-  {
-   "form": "huukita",
-   "found": [
-    "its dictionary entries have different classes (LOC, VL): possibly more than one morpheme under one meaning"
-   ],
-   "id": "huukita#on top",
-   "meaning": "on top",
    "tried": [
     "homonym folded in",
     "false variant merge",
@@ -5799,26 +5799,26 @@
    "A, multi-piece": {
     "seams_elsewhere": 1,
     "seams_on_a_boundary": 9,
-    "stem_edge_seams": 4,
-    "words": 10
+    "stem_edge_seams": 5,
+    "words": 11
    },
    "A, single piece": {
     "seams_elsewhere": 3,
     "seams_on_a_boundary": 0,
-    "stem_edge_seams": 3,
-    "words": 7
+    "stem_edge_seams": 5,
+    "words": 9
    },
    "B, multi-piece": {
-    "seams_elsewhere": 9,
-    "seams_on_a_boundary": 19,
-    "stem_edge_seams": 4,
-    "words": 22
+    "seams_elsewhere": 11,
+    "seams_on_a_boundary": 22,
+    "stem_edge_seams": 5,
+    "words": 26
    },
    "C, multi-piece": {
-    "seams_elsewhere": 6,
-    "seams_on_a_boundary": 13,
+    "seams_elsewhere": 10,
+    "seams_on_a_boundary": 17,
     "stem_edge_seams": 2,
-    "words": 16
+    "words": 20
    },
    "C, single piece": {
     "seams_elsewhere": 0,
@@ -5842,7 +5842,8 @@
    },
    {
     "bb": [
-     "ti•ari'"
+     "tí•ari'",
+     "tí•ari'"
     ],
     "elsewhere": 0,
     "headword": "aar",
@@ -5854,8 +5855,32 @@
    },
    {
     "bb": [
-     "Tat•atsiks•tehu'",
-     "tat•atsiks•tehu'"
+     "tat•atsiks•kápakis"
+    ],
+    "elsewhere": 0,
+    "headword": "acikskaapaakis",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-acikskaapaakis-p353-3634",
+    "on_boundary": 1,
+    "stem_edge": true,
+    "tier_without_e5": "A"
+   },
+   {
+    "bb": [
+     "T'at•atsíks•ta"
+    ],
+    "elsewhere": 0,
+    "headword": "aciksta",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-aciksta-p354-3657",
+    "on_boundary": 1,
+    "stem_edge": true,
+    "tier_without_e5": "B"
+   },
+   {
+    "bb": [
+     "Tat•atsíks•tehu'",
+     "tat•atsíks•tehu'"
     ],
     "elsewhere": 0,
     "headword": "acikstiihuur",
@@ -5867,7 +5892,7 @@
    },
    {
     "bb": [
-     "akah•tahurus"
+     "akah•táhurus"
     ],
     "elsewhere": 0,
     "headword": "akahtaahuruus",
@@ -5879,9 +5904,46 @@
    },
    {
     "bb": [
-     "Ti•ha•kawaats"
+     "asku•hú•kita"
     ],
     "elsewhere": 1,
+    "headword": "askuhuukita",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-askuhuukita-p16-0174",
+    "on_boundary": 1,
+    "stem_edge": false,
+    "tier_without_e5": "C"
+   },
+   {
+    "bb": [
+     "tat•áwarit"
+    ],
+    "elsewhere": 0,
+    "headword": "awarik",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-awarik-p21-0273",
+    "on_boundary": 0,
+    "stem_edge": true,
+    "tier_without_e5": "A"
+   },
+   {
+    "bb": [
+     "tskús•kakusu'"
+    ],
+    "elsewhere": 0,
+    "headword": "ckuskakusuʔ",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-ckuskakusuq-p31-0498",
+    "on_boundary": 1,
+    "stem_edge": false,
+    "tier_without_e5": "B"
+   },
+   {
+    "bb": [
+     "Tat•á•kawaats",
+     "Ti•há•kawaats"
+    ],
+    "elsewhere": 2,
     "headword": "haakawaahc/waʔac",
     "kind": "multi-piece",
     "lexeme_id": "SK-haakawaahc/waqac-p34-0586",
@@ -5891,7 +5953,19 @@
    },
    {
     "bb": [
-     "ti•hih•katsaku"
+     "há•kawahtsisu'"
+    ],
+    "elsewhere": 1,
+    "headword": "haakawaahcisuʔ",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-haakawaahcisuq-p35-0588",
+    "on_boundary": 0,
+    "stem_edge": false,
+    "tier_without_e5": "C"
+   },
+   {
+    "bb": [
+     "ti•hih•kátsaku'"
     ],
     "elsewhere": 0,
     "headword": "hiihkacak",
@@ -5903,7 +5977,7 @@
    },
    {
     "bb": [
-     "ti•hirasa"
+     "ti•hírasa"
     ],
     "elsewhere": 0,
     "headword": "hirasaah",
@@ -5915,8 +5989,8 @@
    },
    {
     "bb": [
-     "hura•hats",
-     "ti•hura•hats"
+     "tí•hura•hats",
+     "tí•hura•hats"
     ],
     "elsewhere": 2,
     "headword": "hurahac",
@@ -5928,7 +6002,7 @@
    },
    {
     "bb": [
-     "ti•tska•katasa"
+     "ti•tska•kátasa"
     ],
     "elsewhere": 1,
     "headword": "ickakatasa",
@@ -5940,10 +6014,11 @@
    },
    {
     "bb": [
-     "Tatut•erit",
+     "Tatut•érit",
+     "Tatut•érit",
      "tatut•erit",
-     "tatut•erit",
-     "tut•eriku'"
+     "tatut•érit",
+     "tut•ériku'"
     ],
     "elsewhere": 0,
     "headword": "iirik",
@@ -5955,7 +6030,8 @@
    },
    {
     "bb": [
-     "ti•'isat"
+     "tí•'isat",
+     "tí•'isat"
     ],
     "elsewhere": 0,
     "headword": "iisat",
@@ -5967,7 +6043,7 @@
    },
    {
     "bb": [
-     "het•kata'ku"
+     "het•katáku"
     ],
     "elsewhere": 0,
     "headword": "iitkataku",
@@ -5979,7 +6055,7 @@
    },
    {
     "bb": [
-     "het•kitsu"
+     "het•kítsu'"
     ],
     "elsewhere": 0,
     "headword": "iitkiicuʔ",
@@ -5991,7 +6067,7 @@
    },
    {
     "bb": [
-     "tatur•iwit"
+     "tatur•íwit"
     ],
     "elsewhere": 0,
     "headword": "iwiitk",
@@ -6015,7 +6091,8 @@
    },
    {
     "bb": [
-     "tuh•kaharawere"
+     "túh•kaharawere",
+     "túh•kaharawere"
     ],
     "elsewhere": 0,
     "headword": "kahaarawiriir",
@@ -6027,7 +6104,7 @@
    },
    {
     "bb": [
-     "kata•kaksa'"
+     "kata•káksa'"
     ],
     "elsewhere": 0,
     "headword": "katakaksaa",
@@ -6099,7 +6176,7 @@
    },
    {
     "bb": [
-     "kits•u\"hat"
+     "kits•úhat"
     ],
     "elsewhere": 0,
     "headword": "kiicuʔat",
@@ -6111,7 +6188,7 @@
    },
    {
     "bb": [
-     "tiku•kiktit"
+     "tíku•kiktit"
     ],
     "elsewhere": 0,
     "headword": "kiiktik",
@@ -6123,7 +6200,7 @@
    },
    {
     "bb": [
-     "ki•rahkata"
+     "ki•ráhkata"
     ],
     "elsewhere": 0,
     "headword": "kiirahkata",
@@ -6135,9 +6212,10 @@
    },
    {
     "bb": [
-     "kira•rasitu'"
+     "kira•rásitu'",
+     "kirá•rasitu'"
     ],
-    "elsewhere": 1,
+    "elsewhere": 2,
     "headword": "kiiraraasiituʔ",
     "kind": "multi-piece",
     "lexeme_id": "SK-kiiraraasiituq-p91-1705",
@@ -6147,7 +6225,7 @@
    },
    {
     "bb": [
-     "ti•kis•kata•wakta'"
+     "ti•kis•kata•wákta'"
     ],
     "elsewhere": 0,
     "headword": "kiiskatawakta/taa",
@@ -6160,7 +6238,8 @@
    {
     "bb": [
      "Tat•kikat",
-     "ti•kikat"
+     "ti•kíkat",
+     "ti•kíkat"
     ],
     "elsewhere": 0,
     "headword": "kikak",
@@ -6172,7 +6251,7 @@
    },
    {
     "bb": [
-     "kirik•erisu'"
+     "kirik•érisu'"
     ],
     "elsewhere": 1,
     "headword": "kirikiirisuʔ",
@@ -6196,8 +6275,20 @@
    },
    {
     "bb": [
-     "tu'h•kuksas",
-     "tu'h•kuksas"
+     "ksúr•awiu'"
+    ],
+    "elsewhere": 1,
+    "headword": "ksurawiʔuʔ",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-ksurawiquq-p101-1949",
+    "on_boundary": 0,
+    "stem_edge": false,
+    "tier_without_e5": "C"
+   },
+   {
+    "bb": [
+     "túh•kuksas",
+     "túh•kuksas"
     ],
     "elsewhere": 0,
     "headword": "kuksas-i",
@@ -6209,8 +6300,8 @@
    },
    {
     "bb": [
-     "kuru'ks•katit",
-     "kuruks•katit"
+     "kurúks•katit",
+     "kurúks•katit"
     ],
     "elsewhere": 0,
     "headword": "kurukskaatiit",
@@ -6222,7 +6313,7 @@
    },
    {
     "bb": [
-     "Pa•hutawi•u"
+     "Pa•hutáwi•u'"
     ],
     "elsewhere": 0,
     "headword": "Paahutawiʔuʔ",
@@ -6234,7 +6325,7 @@
    },
    {
     "bb": [
-     "papitsis•pahat"
+     "papitsis•páhat"
     ],
     "elsewhere": 0,
     "headword": "paapicispahat",
@@ -6246,7 +6337,7 @@
    },
    {
     "bb": [
-     "Pahuks•Tatu'"
+     "Páhuks•Tatu'"
     ],
     "elsewhere": 0,
     "headword": "pahukstaatuʔ",
@@ -6282,7 +6373,19 @@
    },
    {
     "bb": [
-     "rahi•kutsu'"
+     "pitkus•hús•iri'"
+    ],
+    "elsewhere": 0,
+    "headword": "pitkusuusiriʔ",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-pitkusuusiriq-p114-2213",
+    "on_boundary": 2,
+    "stem_edge": false,
+    "tier_without_e5": "C"
+   },
+   {
+    "bb": [
+     "ráhi•kutsu'"
     ],
     "elsewhere": 1,
     "headword": "raahikuucuʔ",
@@ -6306,7 +6409,7 @@
    },
    {
     "bb": [
-     "tat•ira•ita'"
+     "tat•irá•ita'"
     ],
     "elsewhere": 0,
     "headword": "raaʔiita",
@@ -6318,7 +6421,7 @@
    },
    {
     "bb": [
-     "Ra•ka•hurah•katiit•u'"
+     "Ra•ká•huráh•katiit•u'"
     ],
     "elsewhere": 1,
     "headword": "rakaahuraahkatiitu",
@@ -6330,7 +6433,7 @@
    },
    {
     "bb": [
-     "ra•kits•katit"
+     "ra•kíts•katit"
     ],
     "elsewhere": 0,
     "headword": "rakickaatiit",
@@ -6342,7 +6445,7 @@
    },
    {
     "bb": [
-     "raku•kita"
+     "rakú•kita"
     ],
     "elsewhere": 1,
     "headword": "rakuukita",
@@ -6354,20 +6457,45 @@
    },
    {
     "bb": [
-     "Rihita•wiru"
+     "tí•raspe'"
+    ],
+    "elsewhere": 0,
+    "headword": "raspii",
+    "kind": "single piece",
+    "lexeme_id": "SK-raspii-p138-2731",
+    "on_boundary": 0,
+    "stem_edge": true,
+    "tier_without_e5": "A"
+   },
+   {
+    "bb": [
+     "Rihitá•wiru",
+     "Rihitá•wiru"
     ],
     "elsewhere": 0,
     "headword": "Riihitawiru",
     "kind": "multi-piece",
     "lexeme_id": "SK-riihitawiru-p141-2796",
-    "on_boundary": 1,
+    "on_boundary": 2,
     "stem_edge": false,
     "tier_without_e5": "C"
    },
    {
     "bb": [
-     "Ri•katihah•tirara",
-     "Ri•katihah•tirara"
+     "reká•kusu'"
+    ],
+    "elsewhere": 0,
+    "headword": "riikakusuʔ",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-riikakusuq-p141-2806",
+    "on_boundary": 1,
+    "stem_edge": false,
+    "tier_without_e5": "B"
+   },
+   {
+    "bb": [
+     "Ri•katihah•tírara",
+     "Ri•katihah•tírara"
     ],
     "elsewhere": 2,
     "headword": "rikatihaahtiiraraʔ",
@@ -6379,10 +6507,10 @@
    },
    {
     "bb": [
-     "RI•KATIHARU'",
+     "RI•KÁTIHARU'",
      "ri•katiharu",
-     "ri•katiharu'",
-     "ri•katiharu'"
+     "ri•kátiharu'",
+     "ri•kátiharu'"
     ],
     "elsewhere": 4,
     "headword": "rikatihaaruʔ",
@@ -6406,7 +6534,7 @@
    },
    {
     "bb": [
-     "Sakuh•kiwatat"
+     "Sakuh•kíwatat"
     ],
     "elsewhere": 0,
     "headword": "Sakuhkiwatat",
@@ -6418,7 +6546,7 @@
    },
    {
     "bb": [
-     "Sakuh•waruksti'"
+     "Sakuh•wáruksti'"
     ],
     "elsewhere": 0,
     "headword": "sakuhwaarukstiiʔ",
@@ -6430,19 +6558,31 @@
    },
    {
     "bb": [
-     "ti•ta•'at"
+     "tí•tahit"
     ],
     "elsewhere": 0,
-    "headword": "taʔat",
-    "kind": "multi-piece",
-    "lexeme_id": "SK-taqat-p153-2994",
-    "on_boundary": 1,
+    "headword": "tahik",
+    "kind": "single piece",
+    "lexeme_id": "SK-tahik-p156-3037",
+    "on_boundary": 0,
     "stem_edge": true,
     "tier_without_e5": "A"
    },
    {
     "bb": [
-     "taraha•riki'"
+     "tá•utu'"
+    ],
+    "elsewhere": 1,
+    "headword": "taʔuutuʔ",
+    "kind": "multi-piece",
+    "lexeme_id": "SK-taquutuq-p153-3003",
+    "on_boundary": 0,
+    "stem_edge": false,
+    "tier_without_e5": "B"
+   },
+   {
+    "bb": [
+     "táraha•riki'"
     ],
     "elsewhere": 0,
     "headword": "tarahaariki",
@@ -6454,7 +6594,7 @@
    },
    {
     "bb": [
-     "taraha•taka"
+     "tarahá•taka"
     ],
     "elsewhere": 0,
     "headword": "tarahaataakaa",
@@ -6466,7 +6606,7 @@
    },
    {
     "bb": [
-     "tut•urikut"
+     "tut•uríkut"
     ],
     "elsewhere": 0,
     "headword": "uurikuk",
@@ -6478,7 +6618,7 @@
    },
    {
     "bb": [
-     "tatih•wata'"
+     "tatíh•wata'"
     ],
     "elsewhere": 0,
     "headword": "waata",
@@ -6490,7 +6630,7 @@
    },
    {
     "bb": [
-     "ti•waka•rihu"
+     "ti•waká•rihu"
     ],
     "elsewhere": 0,
     "headword": "wakarihuur",
@@ -6502,7 +6642,7 @@
    },
    {
     "bb": [
-     "ti•waktahu"
+     "ti•wáktahu'"
     ],
     "elsewhere": 0,
     "headword": "wakta/taa",
@@ -6525,7 +6665,7 @@
   },
   "person_forms.py --validate-appendix": {
    "exit": 0,
-   "summary": "Appendix 1 derivation validation: 27 passed, 0 failed, 1 skipped"
+   "summary": "Appendix 1 derivation validation: 25 passed, 2 failed, 1 skipped"
   },
   "sound_changes.py --test": {
    "exit": 0,

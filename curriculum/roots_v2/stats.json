@@ -7,13 +7,13 @@
  "affixes": 57,
  "blue_book_seams": {
   "alignment_failed": 3,
-  "ambiguous_target": 24,
-  "certain": 77,
-  "english_mismatch": 39,
-  "no_target": 419,
-  "seamed_tokens": 635,
-  "skipped_ocr_spacing": 69,
-  "too_short": 4
+  "ambiguous_target": 39,
+  "certain": 104,
+  "english_mismatch": 49,
+  "no_target": 514,
+  "seamed_tokens": 722,
+  "skipped_ocr_spacing": 10,
+  "too_short": 3
  },
  "classes_AB": {
   "derivational affix": 2,
@@ -27,14 +27,14 @@
   "verb root (bound, inferred)": 15
  },
  "compound_stem_units": {
-  "commutation_anchors": 533,
+  "commutation_anchors": 534,
   "unit_ambiguous": 44,
   "unit_not_a_headword": 547,
   "unit_resolved_form_only": 71,
   "unit_resolved_literal": 272
  },
  "decisions": {
-  "duplicate_rows": 63,
+  "duplicate_rows": 65,
   "homonym_split": 274,
   "role_default": 21,
   "sense_anchor": 3,
@@ -43,19 +43,19 @@
  },
  "e1": {
   "citation": 354,
-  "none": 361,
-  "printed": 3621,
+  "none": 360,
+  "printed": 3622,
   "proposed": 1
  },
  "e2": {
-  "exact": 3103,
+  "exact": 3104,
   "fail": 286,
   "partial": 587
  },
  "e2_methods": {
   "Parks rule engine": 11,
   "Parks rule engine (vowel length, ʔ and h ignored)": 8,
-  "concatenation": 1363,
+  "concatenation": 1364,
   "concatenation (vowel length, ʔ and h ignored)": 287,
   "none": 286,
   "pieces located one at a time": 36,
@@ -64,28 +64,28 @@
   "seam rules (vowel length, ʔ and h ignored)": 253
  },
  "e3": {
-  "confirm": 1306,
+  "confirm": 1308,
   "contradict": 7,
-  "none": 2663
+  "none": 2662
  },
  "e3b": {
   "class_differs": 78,
-  "confirm": 1080,
+  "confirm": 1081,
   "mismatch": 7,
   "near": 36,
-  "not tested": 3136
+  "not tested": 3135
  },
  "e5": {
-  "confirm": 36,
-  "contradict": 8,
-  "none": 3932
+  "confirm": 43,
+  "contradict": 11,
+  "none": 3923
  },
  "lexeme_tiers": {
-  "A": 1086,
-  "B": 1320,
-  "C": 1569,
+  "A": 1093,
+  "B": 1315,
+  "C": 1568,
   "D": 1,
-  "no claim": 361
+  "no claim": 360
  },
  "lexemes": 4337,
  "lexical_morpheme_tiers": {

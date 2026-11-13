@@ -3,11 +3,11 @@
   {
    "blue_book": {
     "first_lesson": 1,
-    "words_attested": 16
+    "words_attested": 18
    },
    "category": "derivational or stem-forming affix (found in dictionary etymologies)",
    "direct_vs_nested": {
-    "direct": 338,
+    "direct": 337,
     "inside_a_compound_stem": 2
    },
    "evidence": {
@@ -18,6 +18,45 @@
    },
    "examples": [
     {
+     "book_page": 489,
+     "class": "N",
+     "gloss": "door; frame door, as in a house.",
+     "headword": "riikakusuʔ",
+     "lexeme_id": "SK-riikakusuq-p141-2806",
+     "literal": "seated door + NOM",
+     "needs_community_review": false,
+     "phonetic_form": "[rií·kə·kʊ·sʊʔ]",
+     "pieces": [
+      "riika",
+      "kus",
+      "uʔ"
+     ],
+     "rules": [],
+     "tier": "A",
+     "verb_class": null
+    },
+    {
+     "book_page": 379,
+     "class": "N",
+     "gloss": "chair; stool.",
+     "headword": "ckuskakusuʔ",
+     "lexeme_id": "SK-ckuskakusuq-p31-0498",
+     "literal": "(hind) end sitting upon + NOM",
+     "needs_community_review": false,
+     "phonetic_form": "[tskʊ́s·kə·kʊ·sʊʔ]",
+     "pieces": [
+      "ickus",
+      "ka",
+      "kus",
+      "uʔ"
+     ],
+     "rules": [
+      "#V>0/_C"
+     ],
+     "tier": "A",
+     "verb_class": null
+    },
+    {
      "book_page": 453,
      "class": "N",
      "gloss": "March (approximately).",
@@ -25,7 +64,7 @@
      "lexeme_id": "SK-paahutawiquq-p453-4042",
      "literal": "windy moon + NOM",
      "needs_community_review": false,
-     "phonetic_form": "[paá-hʊ-tə-wi-ʔuʔ]",
+     "phonetic_form": "[paá·hʊ·tə·wi·ʔuʔ]",
      "pieces": [
       "paa",
       "huta",
@@ -46,7 +85,7 @@
      "lexeme_id": "SK-asuq-p18-0202",
      "literal": "foot + NOM",
      "needs_community_review": false,
-     "phonetic_form": "[à-sʊʔ]",
+     "phonetic_form": "[ə́·sʊʔ]",
      "pieces": [
       "as",
       "uʔ"
@@ -63,7 +102,7 @@
      "lexeme_id": "SK-ciksuq-p29-0448",
      "literal": "mind + NOM",
      "needs_community_review": false,
-     "phonetic_form": "[čík-sʊʔ]",
+     "phonetic_form": "[čɪ́k·sʊʔ]",
      "pieces": [
       "aciks",
       "uʔ"
@@ -82,7 +121,7 @@
      "lexeme_id": "SK-cusuq-p32-0528",
      "literal": "nose + NOM",
      "needs_community_review": false,
-     "phonetic_form": "[čʊ́-sʊʔ]",
+     "phonetic_form": "[čʊ́·sʊʔ]",
      "pieces": [
       "icus",
       "uʔ"
@@ -101,7 +140,7 @@
      "lexeme_id": "SK-hiituq-p390-3856",
      "literal": "feather + NOM",
      "needs_community_review": false,
-     "phonetic_form": "[hií-tʊʔ]",
+     "phonetic_form": "[hií·tʊʔ]",
      "pieces": [
       "hiit",
       "uʔ"
@@ -118,43 +157,9 @@
      "lexeme_id": "SK-iksuq-p64-1111",
      "literal": "hand + NOM",
      "needs_community_review": false,
-     "phonetic_form": "[ík-sʊʔ]",
+     "phonetic_form": "[ɪ́k·sʊʔ]",
      "pieces": [
       "iks",
-      "uʔ"
-     ],
-     "rules": [],
-     "tier": "B",
-     "verb_class": null
-    },
-    {
-     "book_page": 454,
-     "class": "N",
-     "gloss": "metal (generic); iron.",
-     "headword": "paapicisuʔ",
-     "lexeme_id": "SK-paapicisuq-p454-4063",
-     "literal": "metal + NOM",
-     "needs_community_review": false,
-     "phonetic_form": "[paá-pɪ-čɪ-sʊʔ]",
-     "pieces": [
-      "paapicis",
-      "uʔ"
-     ],
-     "rules": [],
-     "tier": "B",
-     "verb_class": null
-    },
-    {
-     "book_page": 458,
-     "class": "N",
-     "gloss": "head.",
-     "headword": "paksuʔ",
-     "lexeme_id": "SK-paksuq-p110-2116",
-     "literal": "head + NOM",
-     "needs_community_review": false,
-     "phonetic_form": "[pàk-sʊʔ]",
-     "pieces": [
-      "paks",
       "uʔ"
      ],
      "rules": [],
@@ -168,34 +173,34 @@
    "label": "NOM",
    "meaning": "nominal/absolutive suffix",
    "positions": {
-    "suffix": 340
+    "suffix": 339
    },
    "productivity": {
-    "distinct_partners": 266,
-    "formations": 340,
-    "formations_seen_once": 56,
-    "share_seen_once": 0.165
+    "distinct_partners": 265,
+    "formations": 339,
+    "formations_seen_once": 55,
+    "share_seen_once": 0.162
    },
    "rank": 1,
    "sense_evidence": {
     "label by default": 6,
-    "label printed": 334
+    "label printed": 333
    },
    "slot": null,
    "tier": "A",
-   "tier_reason": "label printed by Parks 714 times; in 340 tier A/B words",
+   "tier_reason": "label printed by Parks 714 times; in 339 tier A/B words",
    "token_frequency": {
     "ci95": [
-     0.14409,
-     0.1719
+     0.14414,
+     0.17197
     ],
     "example_sentences": 415,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
-    "share": 0.1575
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
+    "share": 0.15756
    },
    "transparency": {
-    "by_plain_concatenation": 163,
+    "by_plain_concatenation": 162,
     "rules_at_work": {
      "#V>0/_C": 28,
      "#w>p": 17,
@@ -217,12 +222,12 @@
      "r>h/_C": 24,
      "w>p/C_": 10
     },
-    "share_plain": 0.484,
-    "words_reproduced_exactly": 337
+    "share_plain": 0.482,
+    "words_reproduced_exactly": 336
    },
    "type_frequency": {
-    "A": 1,
-    "A+B": 340,
+    "A": 3,
+    "A+B": 339,
     "A+B+C": 735
    }
   },
@@ -251,7 +256,7 @@
      "lexeme_id": "SK-raarapitaarahak-p122-2379",
      "literal": "ITER + turn around circularly",
      "needs_community_review": false,
-     "phonetic_form": "[•raa-rə-pɪ-taa-rə-hə{k/t}•]",
+     "phonetic_form": "[–raa·rə·pɪ·taa·rə·hə{k/t}–]",
      "pieces": [
       "raar",
       "apitaarahak"
@@ -268,7 +273,7 @@
      "lexeme_id": "SK-raaricaahiks-p122-2385",
      "literal": "be populous",
      "needs_community_review": false,
-     "phonetic_form": "[•raa-rɪ-čaa-hɪks•]",
+     "phonetic_form": "[–raa·rɪ·čaa·hɪks–]",
      "pieces": [
       "raar",
       "icaahiks"
@@ -285,7 +290,7 @@
      "lexeme_id": "SK-raariisat-p122-2392",
      "literal": "PL + be large",
      "needs_community_review": false,
-     "phonetic_form": "[•raa-rii-sət•]",
+     "phonetic_form": "[–raa·rii·sət–]",
      "pieces": [
       "raar",
       "riisat"
@@ -304,7 +309,7 @@
      "lexeme_id": "SK-raaruhura-p124-2420",
      "literal": "PL + to be separated",
      "needs_community_review": false,
-     "phonetic_form": "[•raa-rʊ-hʊ-rə•]",
+     "phonetic_form": "[–raa·rʊ·hʊ·rə–]",
      "pieces": [
       "raar",
       "uhura"
@@ -321,7 +326,7 @@
      "lexeme_id": "SK-raaruuc/uc--p124-2427",
      "literal": "lay down + PL",
      "needs_community_review": false,
-     "phonetic_form": "[•raa-ruuts/ʊts•]",
+     "phonetic_form": "[–raa·ruuts/ʊts–]",
      "pieces": [
       "raar",
       "ruuc"
@@ -340,7 +345,7 @@
      "lexeme_id": "SK-racahiis-p129-2532",
      "literal": "ITER + be dry",
      "needs_community_review": false,
-     "phonetic_form": "[•rə-čə-hiis•]",
+     "phonetic_form": "[–rə·čə·hiis–]",
      "pieces": [
       "raar",
       "taahiis"
@@ -360,7 +365,7 @@
      "lexeme_id": "SK-rahkiis-p131-2569",
      "literal": "ITER + be bony",
      "needs_community_review": false,
-     "phonetic_form": "[•rəh-kiis•]",
+     "phonetic_form": "[–rəh·kiis–]",
      "pieces": [
       "raar",
       "kiis"
@@ -380,7 +385,7 @@
      "lexeme_id": "SK-rahkus-p132-2572",
      "literal": "PL + be sitting",
      "needs_community_review": false,
-     "phonetic_form": "[•rəh-kʊ(s)•]",
+     "phonetic_form": "[–rəh·kʊ(s)–]",
      "pieces": [
       "raar",
       "kus"
@@ -419,11 +424,11 @@
    "token_frequency": {
     "ci95": [
      0.01279,
-     0.02277
+     0.02278
     ],
     "example_sentences": 45,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.01708
    },
    "transparency": {
@@ -481,7 +486,7 @@
      "lexeme_id": "SK-riihitawiru-p141-2796",
      "literal": "Ponca + LOC, i.e., among the Ponca",
      "needs_community_review": false,
-     "phonetic_form": "[rií-hɪ-tə-wɪ-rʊ]",
+     "phonetic_form": "[rií·hɪ·tə·wɪ·rʊ]",
      "pieces": [
       "riihita",
       "wi",
@@ -499,7 +504,7 @@
      "lexeme_id": "SK-paahutawiquq-p453-4042",
      "literal": "windy moon + NOM",
      "needs_community_review": false,
-     "phonetic_form": "[paá-hʊ-tə-wi-ʔuʔ]",
+     "phonetic_form": "[paá·hʊ·tə·wi·ʔuʔ]",
      "pieces": [
       "paa",
       "huta",
@@ -520,7 +525,7 @@
      "lexeme_id": "SK-wirariir-p528-4262",
      "literal": "be marked",
      "needs_community_review": false,
-     "phonetic_form": "[•wɪ-rə-rii(r)•]",
+     "phonetic_form": "[–wɪ·rə·rii(r)–]",
      "pieces": [
       "wi",
       "rariir"
@@ -537,7 +542,7 @@
      "lexeme_id": "SK-ickawiqat-p57-0992",
      "literal": "face to go down/ rock",
      "needs_community_review": false,
-     "phonetic_form": "[•ɪts-kə-wi-ʔət•]",
+     "phonetic_form": "[–ɪts·kə·wi·ʔət–]",
      "pieces": [
       "icka",
       "wi",
@@ -557,7 +562,7 @@
      "lexeme_id": "SK-kawicak-p84-1559",
      "literal": "strike in/on (i.e., in a mortar)",
      "needs_community_review": false,
-     "phonetic_form": "[•kə-wɪ-čə{k/t}•]",
+     "phonetic_form": "[–kə·wɪ·čə{k/t}–]",
      "pieces": [
       "ka",
       "wi",
@@ -575,7 +580,7 @@
      "lexeme_id": "SK-kawiqat-p83-1555",
      "literal": "go along in/on",
      "needs_community_review": false,
-     "phonetic_form": null,
+     "phonetic_form": "[–kə·wi·ʔət–]",
      "pieces": [
       "ka",
       "wi",
@@ -595,7 +600,7 @@
      "lexeme_id": "SK-kawiqukta-p84-1557",
      "literal": "be joined on a surface",
      "needs_community_review": false,
-     "phonetic_form": "[•kə-wi-ʔuk-tə•]",
+     "phonetic_form": "[–kə·wi·ʔuk·tə–]",
      "pieces": [
       "ka",
       "wi",
@@ -615,7 +620,7 @@
      "lexeme_id": "SK-tawicak-p163-3203",
      "literal": "perh. strike suspended or strike with light contact",
      "needs_community_review": false,
-     "phonetic_form": "[•tə-wɪ-čə{k/t}•]",
+     "phonetic_form": "[–tə·wɪ·čə{k/t}–]",
      "pieces": [
       "ta",
       "wi",
@@ -652,13 +657,13 @@
    "tier_reason": "label printed by Parks 4 times; in 110 tier A/B words",
    "token_frequency": {
     "ci95": [
-     0.02344,
-     0.03637
+     0.02345,
+     0.03638
     ],
     "example_sentences": 77,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
-    "share": 0.02922
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
+    "share": 0.02923
    },
    "transparency": {
     "by_plain_concatenation": 40,
@@ -714,7 +719,7 @@
      "lexeme_id": "SK-icustaqat-p59-1024",
      "literal": "sniff TRANS",
      "needs_community_review": false,
-     "phonetic_form": "[•ɪ-čʊs-tə-ʔət•]",
+     "phonetic_form": "[–ɪ·čʊs·tə·ʔət–]",
      "pieces": [
       "ut",
       "icustaʔat"
@@ -731,7 +736,7 @@
      "lexeme_id": "SK-itki-p69-1243",
      "literal": null,
      "needs_community_review": true,
-     "phonetic_form": "[•ɪt-kɪ•]",
+     "phonetic_form": "[–ɪt·kɪ–]",
      "pieces": [
       "ut",
       "itki"
@@ -748,7 +753,7 @@
      "lexeme_id": "SK-kaakus-p72-1295",
      "literal": "be sitting inside (a dwelling) for",
      "needs_community_review": false,
-     "phonetic_form": "[•kaa-kʊ(s)•]",
+     "phonetic_form": "[–kaa·kʊ(s)–]",
      "pieces": [
       "ut",
       "kaakus"
@@ -765,7 +770,7 @@
      "lexeme_id": "SK-kaksaa-p77-1396",
      "literal": "call out for",
      "needs_community_review": false,
-     "phonetic_form": "[•kək-saa•]",
+     "phonetic_form": "[–kək·saa–]",
      "pieces": [
       "ut",
       "kaksaa"
@@ -782,7 +787,7 @@
      "lexeme_id": "SK-raarikaaqa-p123-2397",
      "literal": "bring out a way to someone",
      "needs_community_review": false,
-     "phonetic_form": "[•raa-rɪ-kaa-ʔə•]",
+     "phonetic_form": "[–raa·rɪ·kaa·ʔə–]",
      "pieces": [
       "ut",
       "raarikaaʔa"
@@ -799,7 +804,7 @@
      "lexeme_id": "SK-raaruuhc-p124-2428",
      "literal": "PREV + rusty",
      "needs_community_review": false,
-     "phonetic_form": "[•raa-ruu(h)ts•]",
+     "phonetic_form": "[–raa·ruu(h)ts–]",
      "pieces": [
       "ut",
       "raaruuhc"
@@ -816,7 +821,7 @@
      "lexeme_id": "SK-raritkaraak-p137-2713",
      "literal": null,
      "needs_community_review": false,
-     "phonetic_form": "[•rə-rɪt-kə-raa{k/t}•]",
+     "phonetic_form": "[–rə·rɪt·kə·raa{k/t}–]",
      "pieces": [
       "ut",
       "raritkaraak"
@@ -833,7 +838,7 @@
      "lexeme_id": "SK-waawaktiik/tik--p174-3458",
      "literal": "talk to",
      "needs_community_review": true,
-     "phonetic_form": "[•waa-wək-tiik/tɪ{k/t}•]",
+     "phonetic_form": "[–waa·wək·tiik/tɪ{k/t}–]",
      "pieces": [
       "ut",
       "waawaktiik"
@@ -868,11 +873,11 @@
    "token_frequency": {
     "ci95": [
      0.00522,
-     0.01215
+     0.01216
     ],
     "example_sentences": 21,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.00797
    },
    "transparency": {
@@ -924,7 +929,7 @@
      "lexeme_id": "SK-raah-p116-2264",
      "literal": "PORT + be around or exist",
      "needs_community_review": false,
-     "phonetic_form": "[•raa(h)•]",
+     "phonetic_form": "[–raa(h)–]",
      "pieces": [
       "ra",
       "aah"
@@ -943,7 +948,7 @@
      "lexeme_id": "SK-raawacitik-p126-2463",
      "literal": "take outside",
      "needs_community_review": false,
-     "phonetic_form": "[•raa-wə-čɪ-tɪ{k/t}•]",
+     "phonetic_form": "[–raa·wə·čɪ·tɪ{k/t}–]",
      "pieces": [
       "ra",
       "awacitik"
@@ -960,7 +965,7 @@
      "lexeme_id": "SK-raawask-p126-2474",
      "literal": "laugh + PORT",
      "needs_community_review": false,
-     "phonetic_form": "[•raa-wəs(k)•]",
+     "phonetic_form": "[–raa·wəs(k)–]",
      "pieces": [
       "ra",
       "awask"
@@ -977,7 +982,7 @@
      "lexeme_id": "SK-rahurahac-p132-2588",
      "literal": "disappear with",
      "needs_community_review": false,
-     "phonetic_form": "[•rə-hʊ-rə-həts•]",
+     "phonetic_form": "[–rə·hʊ·rə·həts–]",
      "pieces": [
       "ra",
       "hurahac"
@@ -994,7 +999,7 @@
      "lexeme_id": "SK-rahuuka-p133-2593",
      "literal": "come inside holding",
      "needs_community_review": false,
-     "phonetic_form": "[•rə-huu-kə•]",
+     "phonetic_form": "[–rə·huu·kə–]",
      "pieces": [
       "ra",
       "huuka"
@@ -1011,7 +1016,7 @@
      "lexeme_id": "SK-rahuukat-p133-2594",
      "literal": "go inside holding",
      "needs_community_review": false,
-     "phonetic_form": "[•rə-huu-kət•]",
+     "phonetic_form": "[–rə·huu·kət–]",
      "pieces": [
       "ra",
       "huukat"
@@ -1028,7 +1033,7 @@
      "lexeme_id": "SK-raqa-p114-2217",
      "literal": "come carrying",
      "needs_community_review": false,
-     "phonetic_form": "[•raa•]",
+     "phonetic_form": "[–raa–]",
      "pieces": [
       "ra",
       "a"
@@ -1047,7 +1052,7 @@
      "lexeme_id": "SK-raacikstaqu-p116-2258",
      "literal": "hold strong feelings",
      "needs_community_review": false,
-     "phonetic_form": "[•raa-čɪks-tə-ʔu•]",
+     "phonetic_form": "[–raa·čɪks·tə·ʔu–]",
      "pieces": [
       "ra",
       "aciks",
@@ -1087,8 +1092,8 @@
      0.01124
     ],
     "example_sentences": 19,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.00721
    },
    "transparency": {
@@ -1141,7 +1146,7 @@
      "lexeme_id": "SK-kaakus-p73-1296",
      "literal": "be sitting inside someoneʔs (dwelling)",
      "needs_community_review": false,
-     "phonetic_form": "[•kaa-kʊ(s)•]",
+     "phonetic_form": "[–kaa·kʊ(s)–]",
      "pieces": [
       "uur",
       "kaakus"
@@ -1158,7 +1163,7 @@
      "lexeme_id": "SK-kiciis-p85-1600",
      "literal": "have a bare/scarred area",
      "needs_community_review": false,
-     "phonetic_form": "[•kɪ-čiis•]",
+     "phonetic_form": "[–kɪ·čiis–]",
      "pieces": [
       "uur",
       "kiciis"
@@ -1175,7 +1180,7 @@
      "lexeme_id": "SK-raah-p116-2265",
      "literal": "have from",
      "needs_community_review": false,
-     "phonetic_form": "[•raa(h)•]",
+     "phonetic_form": "[–raa(h)–]",
      "pieces": [
       "uur",
       "raah"
@@ -1192,7 +1197,7 @@
      "lexeme_id": "SK-raapuh-p121-2357",
      "literal": "trade from",
      "needs_community_review": false,
-     "phonetic_form": "[•raa-pʊ(h)•]",
+     "phonetic_form": "[–raa·pʊ(h)–]",
      "pieces": [
       "uur",
       "raapuh"
@@ -1209,7 +1214,7 @@
      "lexeme_id": "SK-riru-p145-2839",
      "literal": "TRANS + fear",
      "needs_community_review": false,
-     "phonetic_form": "[•rɪ-rʊ•]",
+     "phonetic_form": "[–rɪ·rʊ–]",
      "pieces": [
       "uur",
       "riru"
@@ -1226,7 +1231,7 @@
      "lexeme_id": "SK-acikstatat-p7-0059",
      "literal": "feelings to be stuck on someone",
      "needs_community_review": false,
-     "phonetic_form": "[•ə-čɪks-tə-tət•]",
+     "phonetic_form": "[–ə·čɪks·tə·tət–]",
      "pieces": [
       "uur",
       "aciks",
@@ -1244,7 +1249,7 @@
      "lexeme_id": "SK-awikataquukuk-p23-0312",
      "literal": "image to get against a vertical surface, i.e., get against a vertical surface quickly",
      "needs_community_review": false,
-     "phonetic_form": "[•ə-wɪ-kə-tə-ʔuu-kʊ{k/t}•]",
+     "phonetic_form": "[–ə·wɪ·kə·tə·ʔuu·kʊ{k/t}–]",
      "pieces": [
       "uur",
       "awi",
@@ -1262,7 +1267,7 @@
      "lexeme_id": "SK-awikatasa-p24-0315",
      "literal": "image to be lying against a vertical surface",
      "needs_community_review": false,
-     "phonetic_form": "[•ə-wɪ-kə-tə-sə•]",
+     "phonetic_form": "[–ə·wɪ·kə·tə·sə–]",
      "pieces": [
       "uur",
       "awi",
@@ -1300,8 +1305,8 @@
      0.00598
     ],
     "example_sentences": 8,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.00304
    },
    "transparency": {
@@ -1350,7 +1355,7 @@
      "lexeme_id": "SK-arikawuh-p13-0153",
      "literal": "cause to be a horn, i.e., a braid",
      "needs_community_review": false,
-     "phonetic_form": "[•ə-rɪ-kə-wʊ(h)•]",
+     "phonetic_form": "[–ə·rɪ·kə·wʊ(h)–]",
      "pieces": [
       "arika",
       "wuh"
@@ -1367,7 +1372,7 @@
      "lexeme_id": "SK-awuh-p26-0353",
      "literal": "cause to be stretched out",
      "needs_community_review": false,
-     "phonetic_form": "[•ə-wʊ(h)•]",
+     "phonetic_form": "[–ə·wʊ(h)–]",
      "pieces": [
       "a",
       "wuh"
@@ -1384,7 +1389,7 @@
      "lexeme_id": "SK-awuh-p26-0354",
      "literal": "cause to be an image",
      "needs_community_review": false,
-     "phonetic_form": "[•ə-wʊ(h)•]",
+     "phonetic_form": "[–ə·wʊ(h)–]",
      "pieces": [
       "a",
       "wuh"
@@ -1401,7 +1406,7 @@
      "lexeme_id": "SK-cawuh-p28-0429",
      "literal": "cause to be upright",
      "needs_community_review": false,
-     "phonetic_form": "[•čə-wʊ(h)•]",
+     "phonetic_form": "[–čə·wʊ(h)–]",
      "pieces": [
       "ca",
       "wuh"
@@ -1418,7 +1423,7 @@
      "lexeme_id": "SK-haapuh-p35-0604",
      "literal": "put (a piece of) wood upright",
      "needs_community_review": false,
-     "phonetic_form": "[•haa-pʊ(h)•]",
+     "phonetic_form": "[–haa·pʊ(h)–]",
      "pieces": [
       "haak",
       "wuh"
@@ -1438,7 +1443,7 @@
      "lexeme_id": "SK-hawuh-p40-0688",
      "literal": "put into water, i.e., into dye",
      "needs_community_review": false,
-     "phonetic_form": "[•hə-wʊ(h)•]",
+     "phonetic_form": "[–hə·wʊ(h)–]",
      "pieces": [
       "ha",
       "wuh"
@@ -1455,7 +1460,7 @@
      "lexeme_id": "SK-huukitawuh-p398-3889",
      "literal": "put on top",
      "needs_community_review": true,
-     "phonetic_form": "[•huu-kɪ-tə-wʊ(h)•]",
+     "phonetic_form": "[–huu·kɪ·tə·wʊ(h)–]",
      "pieces": [
       "huukita",
       "wuh"
@@ -1472,7 +1477,7 @@
      "lexeme_id": "SK-icaawuh-p53-0910",
      "literal": "put on the end (of a pole)",
      "needs_community_review": false,
-     "phonetic_form": "[•ɪ-čaa-wʊ(h)•]",
+     "phonetic_form": "[–ɪ·čaa·wʊ(h)–]",
      "pieces": [
       "icaa",
       "wuh"
@@ -1506,12 +1511,12 @@
    "token_frequency": {
     "ci95": [
      0.00289,
-     0.00842
+     0.00843
     ],
     "example_sentences": 13,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
-    "share": 0.00493
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
+    "share": 0.00494
    },
    "transparency": {
     "by_plain_concatenation": 26,
@@ -1559,7 +1564,7 @@
      "lexeme_id": "SK-waa-p174-3441",
      "literal": "be upright + DIST",
      "needs_community_review": false,
-     "phonetic_form": "[•waa•]",
+     "phonetic_form": "[–waa–]",
      "pieces": [
       "waa"
      ],
@@ -1575,7 +1580,7 @@
      "lexeme_id": "SK-waawaktiik/tik--p174-3457",
      "literal": "announce + DIST",
      "needs_community_review": false,
-     "phonetic_form": "[•waa-wək-tiik/tɪ{k/t}•]",
+     "phonetic_form": "[–waa·wək·tiik/tɪ{k/t}–]",
      "pieces": [
       "waa",
       "waktiik"
@@ -1585,6 +1590,25 @@
      "verb_class": "(4)"
     },
     {
+     "book_page": 527,
+     "class": "VT",
+     "gloss": "cook over coals, over a fire; barbecue; ref. to more than one piece of meat.",
+     "headword": "wiicatk",
+     "lexeme_id": "SK-wiicat_k-p179-3542",
+     "literal": "cook over coals + DIST",
+     "needs_community_review": false,
+     "phonetic_form": "[–wii·čət(k)–]",
+     "pieces": [
+      "waa",
+      "icatk"
+     ],
+     "rules": [
+      "R7"
+     ],
+     "tier": "A",
+     "verb_class": "(1)"
+    },
+    {
      "book_page": 415,
      "class": "VI",
      "gloss": "roll, as on the ground when playing.",
@@ -1592,7 +1616,7 @@
      "lexeme_id": "SK-iriwaawarik-p67-1192",
      "literal": "cause to go iteratively in a reclined/horizontal position",
      "needs_community_review": false,
-     "phonetic_form": "[•ɪ-rɪ-waa-wə-rɪ{k/t}•]",
+     "phonetic_form": "[–ɪ·rɪ·waa·wə·rɪ{k/t}–]",
      "pieces": [
       "iri",
       "waa",
@@ -1610,7 +1634,7 @@
      "lexeme_id": "SK-waakaraquk-p174-3444",
      "literal": "DIST + extract PL.OBJ by roots",
      "needs_community_review": false,
-     "phonetic_form": "[•waa-kə-rə-ʔu{k/t}•]",
+     "phonetic_form": "[–waa·kə·rə·ʔu{k/t}–]",
      "pieces": [
       "waa",
       "ka",
@@ -1628,7 +1652,7 @@
      "lexeme_id": "SK-iriwaawarik-p67-1194",
      "literal": "PREV + cause to go iteratively in a reclined/horizontal position",
      "needs_community_review": false,
-     "phonetic_form": "[•ɪ-rɪ-waa-wə-rɪ{k/t}•]",
+     "phonetic_form": "[–ɪ·rɪ·waa·wə·rɪ{k/t}–]",
      "pieces": [
       "ut",
       "iri",
@@ -1647,7 +1671,7 @@
      "lexeme_id": "SK-racapatpaah-p129-2545",
      "literal": "become crumbled",
      "needs_community_review": false,
-     "phonetic_form": "[•rə-čə-pət-paa(h)•]",
+     "phonetic_form": "[–rə·čə·pət·paa(h)–]",
      "pieces": [
       "raar",
       "tapaht",
@@ -1672,7 +1696,7 @@
      "lexeme_id": "SK-kataahwaa-p80-1473",
      "literal": "be grass + DIST",
      "needs_community_review": false,
-     "phonetic_form": "[•kə-taah-waa•]",
+     "phonetic_form": "[–kə·taah·waa–]",
      "pieces": [
       "kataar",
       "waa"
@@ -1680,23 +1704,6 @@
      "rules": [
       "r>h/_C"
      ],
-     "tier": "B",
-     "verb_class": null
-    },
-    {
-     "book_page": 430,
-     "class": "LOC",
-     "gloss": "cut open, cut wide open.",
-     "headword": "katawaa-",
-     "lexeme_id": "SK-katawaa--p82-1514",
-     "literal": "vertical surface spread out",
-     "needs_community_review": false,
-     "phonetic_form": "[kə-tə-waa•]",
-     "pieces": [
-      "kata",
-      "waa"
-     ],
-     "rules": [],
      "tier": "B",
      "verb_class": null
     }
@@ -1728,11 +1735,11 @@
    "token_frequency": {
     "ci95": [
      0.00433,
-     0.01077
+     0.01078
     ],
     "example_sentences": 18,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.00683
    },
    "transparency": {
@@ -1759,7 +1766,7 @@
     "words_reproduced_exactly": 36
    },
    "type_frequency": {
-    "A": 6,
+    "A": 7,
     "A+B": 36,
     "A+B+C": 89
    }
@@ -1789,7 +1796,7 @@
      "lexeme_id": "SK-arasiskatiit-p13-0136",
      "literal": "be cooked dark",
      "needs_community_review": false,
-     "phonetic_form": "[•ə-rə-sɪs-kə-tiit•]",
+     "phonetic_form": "[–ə·rə·sɪs·kə·tiit–]",
      "pieces": [
       "aras",
       "his",
@@ -1809,7 +1816,7 @@
      "lexeme_id": "SK-arasispahaat-p13-0137",
      "literal": "be cooked red",
      "needs_community_review": false,
-     "phonetic_form": "[•ə-rə-sɪs-pə-haat•]",
+     "phonetic_form": "[–ə·rə·sɪs·pə·haat–]",
      "pieces": [
       "aras",
       "his",
@@ -1829,7 +1836,7 @@
      "lexeme_id": "SK-arasistariiquus-p13-0138",
      "literal": "be cooked blue",
      "needs_community_review": false,
-     "phonetic_form": "[•ə-rə-sɪs-tə-rii-ʔuus•]",
+     "phonetic_form": "[–ə·rə·sɪs·tə·rii·ʔuus–]",
      "pieces": [
       "aras",
       "his",
@@ -1849,7 +1856,7 @@
      "lexeme_id": "SK-hiwihcisat-p43-0717",
      "literal": "appear + PERF + go",
      "needs_community_review": false,
-     "phonetic_form": "[•hɪ-wɪh-čɪ-sət•]",
+     "phonetic_form": "[–hɪ·wɪh·čɪ·sət–]",
      "pieces": [
       "hiwihc",
       "his",
@@ -1869,7 +1876,7 @@
      "lexeme_id": "SK-raatukstaah-p125-2458",
      "literal": "have an illness",
      "needs_community_review": false,
-     "phonetic_form": "[•raa-tʊks-taa(h)•]",
+     "phonetic_form": "[–raa·tʊks·taa(h)–]",
      "pieces": [
       "raatuk",
       "his",
@@ -1890,7 +1897,7 @@
      "lexeme_id": "SK-kiiriwisistaah-p91-1722",
      "literal": "carry across on/in",
      "needs_community_review": true,
-     "phonetic_form": "[•kii-rɪ-wɪ-sɪs-taa(h)•]",
+     "phonetic_form": "[–kii·rɪ·wɪ·sɪs·taa(h)–]",
      "pieces": [
       "ka",
       "iriwis",
@@ -1913,7 +1920,7 @@
      "lexeme_id": "SK-uusiksat-p173-3421",
      "literal": "go to a stop",
      "needs_community_review": false,
-     "phonetic_form": "[•uu-sɪk-sət•]",
+     "phonetic_form": "[–uu·sɪk·sət–]",
      "pieces": [
       "uusik",
       "his",
@@ -1933,7 +1940,7 @@
      "lexeme_id": "SK-tarahaks-p160-3128",
      "literal": "sliced + PERF",
      "needs_community_review": false,
-     "phonetic_form": "[•tə-rə-həks•]",
+     "phonetic_form": "[–tə·rə·həks–]",
      "pieces": [
       "tarahak",
       "his"
@@ -1974,8 +1981,8 @@
      0.00984
     ],
     "example_sentences": 16,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.00607
    },
    "transparency": {
@@ -2029,7 +2036,7 @@
      "lexeme_id": "SK-rikaksaa-p491-4157",
      "literal": "ri + call out",
      "needs_community_review": false,
-     "phonetic_form": "[•rɪ-kək-saa•]",
+     "phonetic_form": "[–rɪ·kək·saa–]",
      "pieces": [
       "ri",
       "kaksaa"
@@ -2046,7 +2053,7 @@
      "lexeme_id": "SK-rikawat-p492-4170",
      "literal": "take out holding",
      "needs_community_review": false,
-     "phonetic_form": "[•rɪ-kə-wət•]",
+     "phonetic_form": "[–rɪ·kə·wət–]",
      "pieces": [
       "ri",
       "kawat"
@@ -2063,7 +2070,7 @@
      "lexeme_id": "SK-rikikak-p492-4195",
      "literal": "cry holding/ with",
      "needs_community_review": false,
-     "phonetic_form": "[•rɪ-kɪ-kə{k/t}•]",
+     "phonetic_form": "[–rɪ·kɪ·kə{k/t}–]",
      "pieces": [
       "ri",
       "kikak"
@@ -2080,7 +2087,7 @@
      "lexeme_id": "SK-rikus-p145-2823",
      "literal": "be sitting holding",
      "needs_community_review": false,
-     "phonetic_form": "[•rɪ-kʊ(s)•]",
+     "phonetic_form": "[–rɪ·kʊ(s)–]",
      "pieces": [
       "ri",
       "kus"
@@ -2097,7 +2104,7 @@
      "lexeme_id": "SK-ritawiqat-p494-4210",
      "literal": "slide down with the hand(s)",
      "needs_community_review": false,
-     "phonetic_form": "[•rɪ-tə-wi-ʔət•]",
+     "phonetic_form": "[–rɪ·tə·wi·ʔət–]",
      "pieces": [
       "ri",
       "tawiʔat"
@@ -2114,7 +2121,7 @@
      "lexeme_id": "SK-riwaktiik/tik--p147-2853",
      "literal": "announce holding",
      "needs_community_review": false,
-     "phonetic_form": "[•rɪ-wək-tiik/tɪ{k/t}•]",
+     "phonetic_form": "[–rɪ·wək·tiik/tɪ{k/t}–]",
      "pieces": [
       "ri",
       "waktiik"
@@ -2131,7 +2138,7 @@
      "lexeme_id": "SK-riwarik-p147-2854",
      "literal": "PORT + shoot/throw",
      "needs_community_review": false,
-     "phonetic_form": "[•rɪ-wə-rɪ{k/t}•]",
+     "phonetic_form": "[–rɪ·wə·rɪ{k/t}–]",
      "pieces": [
       "ri",
       "warik"
@@ -2148,7 +2155,7 @@
      "lexeme_id": "SK-irihaariwarik-p65-1130",
      "literal": "cause to be prepared",
      "needs_community_review": false,
-     "phonetic_form": "[•ɪ-rɪ-haa-rɪ-wə-rɪ{k/t}•]",
+     "phonetic_form": "[–ɪ·rɪ·haa·rɪ·wə·rɪ{k/t}–]",
      "pieces": [
       "irihaa",
       "ri",
@@ -2188,8 +2195,8 @@
      0.00648
     ],
     "example_sentences": 9,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.00342
    },
    "transparency": {
@@ -2234,7 +2241,7 @@
      "lexeme_id": "SK-tarahaariki-p159-3123",
      "literal": "buffalo horn + DIM",
      "needs_community_review": false,
-     "phonetic_form": "[tà-rə-haa-rɪ-kɪ]",
+     "phonetic_form": "[tə́·rə·haa·rɪ·kɪ]",
      "pieces": [
       "tarahaa",
       "arik",
@@ -2256,7 +2263,7 @@
      "lexeme_id": "SK-ahitki-p9-0097",
      "literal": "fat + DIM",
      "needs_community_review": false,
-     "phonetic_form": "[ə-hít-kɪ]",
+     "phonetic_form": "[ə·hɪ́t·kɪ]",
      "pieces": [
       "ahiht",
       "kis"
@@ -2276,7 +2283,7 @@
      "lexeme_id": "SK-karitki-p79-1443",
      "literal": "rock + DIM",
      "needs_community_review": false,
-     "phonetic_form": "[kà-rɪt-kɪ]",
+     "phonetic_form": "[kə́·rɪt·kɪ]",
      "pieces": [
       "karit",
       "kis"
@@ -2295,7 +2302,7 @@
      "lexeme_id": "SK-kisaacki-p98-1883",
      "literal": "meat + DIM",
      "needs_community_review": false,
-     "phonetic_form": "[kí-saats-kɪ]",
+     "phonetic_form": "[kɪ́·saats·kɪ]",
      "pieces": [
       "kisaac",
       "kis"
@@ -2314,7 +2321,7 @@
      "lexeme_id": "SK-kitkahaahki-p99-1923",
      "literal": "earthlodge village + DIM",
      "needs_community_review": false,
-     "phonetic_form": "[kít-kə-haah-kɪ]",
+     "phonetic_form": "[kɪ́t·kə·haah·kɪ]",
      "pieces": [
       "kitkahaar",
       "kis"
@@ -2334,7 +2341,7 @@
      "lexeme_id": "SK-rakis-p135-2644",
      "literal": "wood + DIM",
      "needs_community_review": false,
-     "phonetic_form": "[rà-kɪs]",
+     "phonetic_form": "[rə́·kɪs]",
      "pieces": [
       "rak",
       "kis"
@@ -2353,7 +2360,7 @@
      "lexeme_id": "SK-rikucki-p492-4198",
      "literal": "bird + DIM",
      "needs_community_review": false,
-     "phonetic_form": "[rí-kʊts-kɪ]",
+     "phonetic_form": "[rɪ́·kʊts·kɪ]",
      "pieces": [
       "rikuhc",
       "kis"
@@ -2373,7 +2380,7 @@
      "lexeme_id": "SK-asaaki-p362-3736",
      "literal": "dog + DIM",
      "needs_community_review": false,
-     "phonetic_form": "[ə-saá-kɪ]",
+     "phonetic_form": "[ə·saá·kɪ]",
      "pieces": [
       "asaa",
       "kis"
@@ -2411,11 +2418,11 @@
    "token_frequency": {
     "ci95": [
      0.01377,
-     0.02407
+     0.02408
     ],
     "example_sentences": 48,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.01822
    },
    "transparency": {
@@ -2463,7 +2470,7 @@
      "lexeme_id": "SK-kiwakuq-p448-3975",
      "literal": "barks, i.e., barker",
      "needs_community_review": false,
-     "phonetic_form": "[kí-wə-kʊʔ]",
+     "phonetic_form": "[kɪ́·wə·kʊʔ]",
      "pieces": [
       "kiwak",
       "hus"
@@ -2484,7 +2491,7 @@
      "lexeme_id": "SK-apakus-p360-3688",
      "literal": "fighting",
      "needs_community_review": false,
-     "phonetic_form": "[ə-pà-kʊs]",
+     "phonetic_form": "[ə·pə́·kʊs]",
      "pieces": [
       "apak",
       "hus"
@@ -2503,7 +2510,7 @@
      "lexeme_id": "SK-askiisawihuku-p16-0167",
      "literal": "skipping",
      "needs_community_review": false,
-     "phonetic_form": "[əs-kií-sə-wɪ-hʊ-kʊ]",
+     "phonetic_form": "[əs·kií·sə·wɪ·hʊ·kʊ]",
      "pieces": [
       "askiisawihuk",
       "hus"
@@ -2523,7 +2530,7 @@
      "lexeme_id": "SK-awihuksahus-p370-3790",
      "literal": "riser, rises + IMPF",
      "needs_community_review": false,
-     "phonetic_form": "[à-wɪ-hʊk-sə-hʊs]",
+     "phonetic_form": "[ə́·wɪ·hʊk·sə·hʊs]",
      "pieces": [
       "awihuksa",
       "hus"
@@ -2540,7 +2547,7 @@
      "lexeme_id": "SK-kiispaktaahus-p92-1747",
      "literal": "whistling",
      "needs_community_review": false,
-     "phonetic_form": "[kiís-pək-taa-hʊs]",
+     "phonetic_form": "[kiís·pək·taa·hʊs]",
      "pieces": [
       "kiispaktaa",
       "hus"
@@ -2557,7 +2564,7 @@
      "lexeme_id": "SK-taruucuhus-p161-3167",
      "literal": "building fires",
      "needs_community_review": true,
-     "phonetic_form": "[tà-ruu-čʊ-hʊs]",
+     "phonetic_form": "[tə́·ruu·čʊ·hʊs]",
      "pieces": [
       "taruucuh",
       "hus"
@@ -2576,7 +2583,7 @@
      "lexeme_id": "SK-rakawicaku-p134-2627",
      "literal": "one that grinds",
      "needs_community_review": false,
-     "phonetic_form": "[rə-kə-wí-čə-kʊ]",
+     "phonetic_form": "[rə·kə·wɪ́·čə·kʊ]",
      "pieces": [
       "ra",
       "kawicak",
@@ -2597,7 +2604,7 @@
      "lexeme_id": "SK-raktawicaku-p135-2661",
      "literal": "pecks wood",
      "needs_community_review": false,
-     "phonetic_form": "[rək-tà-wɪ-čə-kʊ]",
+     "phonetic_form": "[rək·tə́·wɪ·čə·kʊ]",
      "pieces": [
       "rak",
       "tawicak",
@@ -2640,9 +2647,9 @@
      0.00746
     ],
     "example_sentences": 11,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
-    "share": 0.00417
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
+    "share": 0.00418
    },
    "transparency": {
     "by_plain_concatenation": 2,
@@ -2664,6 +2671,219 @@
     "A": 0,
     "A+B": 27,
     "A+B+C": 109
+   }
+  },
+  {
+   "blue_book": {
+    "first_lesson": 8,
+    "words_attested": 2
+   },
+   "category": "derivational or stem-forming affix (found in dictionary etymologies)",
+   "direct_vs_nested": {
+    "direct": 24,
+    "inside_a_compound_stem": 0
+   },
+   "evidence": {
+    "E1_label_printed_by_parks_in": 57,
+    "default_basis": "label_statistics",
+    "default_evidence": "Parks prints the label LOC for this form in 57 of its 64 occurrences",
+    "label_supplied_by_default_in": 4
+   },
+   "examples": [
+    {
+     "book_page": 462,
+     "class": "ADV",
+     "gloss": "twice, two times; two by two.",
+     "headword": "pitkusihiriʔ",
+     "lexeme_id": "SK-pitkusihiriq-p114-2208",
+     "literal": "two + i + LOC",
+     "needs_community_review": false,
+     "phonetic_form": "[pɪ́t·kʊ·sɪ·hɪ·riʔ]",
+     "pieces": [
+      "pitkus",
+      "i",
+      "hiriʔ"
+     ],
+     "rules": [],
+     "tier": "A",
+     "verb_class": null
+    },
+    {
+     "book_page": 462,
+     "class": "NUM",
+     "gloss": "twelve.",
+     "headword": "pitkusuusiriʔ",
+     "lexeme_id": "SK-pitkusuusiriq-p114-2213",
+     "literal": "two + huus + LOC",
+     "needs_community_review": false,
+     "phonetic_form": "[pɪt·kʊ·suú·sɪ·riʔ]",
+     "pieces": [
+      "pitkus",
+      "huus",
+      "hiriʔ"
+     ],
+     "rules": [
+      "R16",
+      "R16"
+     ],
+     "tier": "A",
+     "verb_class": null
+    },
+    {
+     "book_page": 365,
+     "class": "ADV",
+     "gloss": "backwards.",
+     "headword": "aspaarahiriʔ",
+     "lexeme_id": "SK-aspaarahiriq-p17-0182",
+     "literal": "leaning backward + LOC",
+     "needs_community_review": false,
+     "phonetic_form": "[ə́s·paa·rə·hɪ·riʔ]",
+     "pieces": [
+      "aspaara",
+      "hiriʔ"
+     ],
+     "rules": [],
+     "tier": "B",
+     "verb_class": null
+    },
+    {
+     "book_page": 371,
+     "class": "ADV",
+     "gloss": "behind, in back of, as an object.",
+     "headword": "awiirahiriʔ",
+     "lexeme_id": "SK-awiirahiriq-p23-0301",
+     "literal": "behind + LOC",
+     "needs_community_review": false,
+     "phonetic_form": "[ə́·wii·rə·hɪ·riʔ]",
+     "pieces": [
+      "awiira",
+      "hiriʔ"
+     ],
+     "rules": [],
+     "tier": "B",
+     "verb_class": null
+    },
+    {
+     "book_page": 375,
+     "class": "ADV",
+     "gloss": "in a village; (contemp.) in a town, city; in town.",
+     "headword": "cahkahaahiriʔ",
+     "lexeme_id": "SK-cahkahaahiriq-p27-0399",
+     "literal": "interior of village + LOC",
+     "needs_community_review": false,
+     "phonetic_form": "[čə́h·kə·haa·hɪ·riʔ]",
+     "pieces": [
+      "icahkahaar",
+      "hiriʔ"
+     ],
+     "rules": [
+      "R14-15",
+      "#V>0/_C"
+     ],
+     "tier": "B",
+     "verb_class": null
+    },
+    {
+     "book_page": 390,
+     "class": "ADV",
+     "gloss": "in front, in the fore , as at the head of a procession or in the front seat of an automobile.",
+     "headword": "hirasiriʔ",
+     "lexeme_id": "SK-hirasiriq-p390-3871",
+     "literal": "in the lead + LOC",
+     "needs_community_review": false,
+     "phonetic_form": "[hɪ·rə́·sɪ·riʔ]",
+     "pieces": [
+      "hiras",
+      "hiriʔ"
+     ],
+     "rules": [
+      "R16"
+     ],
+     "tier": "B",
+     "verb_class": null
+    },
+    {
+     "book_page": 395,
+     "class": "ADV",
+     "gloss": "at the bottom, base, as of a hanging object touching the ground.",
+     "headword": "hurahwihiriʔ",
+     "lexeme_id": "SK-hurahwihiriq-p47-0801",
+     "literal": "on the ground + LOC",
+     "needs_community_review": false,
+     "phonetic_form": "[hʊ́·rəh·wɪ·hɪ·riʔ]",
+     "pieces": [
+      "hurahwi",
+      "hiriʔ"
+     ],
+     "rules": [],
+     "tier": "B",
+     "verb_class": null
+    },
+    {
+     "book_page": 399,
+     "class": "ADV",
+     "gloss": "in front, in the fore, in the lead; at the front, at the head, as of a procession or traffic.",
+     "headword": "huurickahiriʔ",
+     "lexeme_id": "SK-huurickahiriq-p51-0863",
+     "literal": "in front + LOC",
+     "needs_community_review": false,
+     "phonetic_form": "[huú·rɪts·kə·hɪ·riʔ]",
+     "pieces": [
+      "huuricka",
+      "hiriʔ"
+     ],
+     "rules": [],
+     "tier": "B",
+     "verb_class": null
+    }
+   ],
+   "form": "hiriʔ",
+   "id": "hiriʔ=LOC",
+   "kind": "suffix",
+   "label": "LOC",
+   "meaning": "locative/directional prefix or prefix string",
+   "positions": {
+    "suffix": 24
+   },
+   "productivity": {
+    "distinct_partners": 30,
+    "formations": 24,
+    "formations_seen_once": 15,
+    "share_seen_once": 0.625
+   },
+   "rank": 13,
+   "sense_evidence": {
+    "label printed": 24
+   },
+   "slot": null,
+   "tier": "A",
+   "tier_reason": "label printed by Parks 57 times; in 24 tier A/B words",
+   "token_frequency": {
+    "ci95": [
+     0.00129,
+     0.00548
+    ],
+    "example_sentences": 7,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
+    "share": 0.00266
+   },
+   "transparency": {
+    "by_plain_concatenation": 12,
+    "rules_at_work": {
+     "#V>0/_C": 1,
+     "R14-15": 3,
+     "R16": 7,
+     "R20": 1,
+     "w>p/C_": 1
+    },
+    "share_plain": 0.5,
+    "words_reproduced_exactly": 24
+   },
+   "type_frequency": {
+    "A": 2,
+    "A+B": 24,
+    "A+B+C": 61
    }
   },
   {
@@ -2691,7 +2911,7 @@
      "lexeme_id": "SK-ackurus-p8-0081",
      "literal": "have as a female in-law",
      "needs_community_review": false,
-     "phonetic_form": "[•əts-kʊ-rʊs•]",
+     "phonetic_form": "[–əts·kʊ·rʊs–]",
      "pieces": [
       "ir",
       "ackurus"
@@ -2708,7 +2928,7 @@
      "lexeme_id": "SK-aktaku-p11-0124",
      "literal": null,
      "needs_community_review": false,
-     "phonetic_form": "[•ək-tə-kʊ•]",
+     "phonetic_form": "[–ək·tə·kʊ–]",
      "pieces": [
       "ir",
       "aktaku"
@@ -2725,7 +2945,7 @@
      "lexeme_id": "SK-hata-p38-0667",
      "literal": "have a hole",
      "needs_community_review": false,
-     "phonetic_form": "[•hə-tə•]",
+     "phonetic_form": "[–hə·tə–]",
      "pieces": [
       "ir",
       "hata"
@@ -2742,7 +2962,7 @@
      "lexeme_id": "SK-iita-p61-1040",
      "literal": "PREV + know",
      "needs_community_review": false,
-     "phonetic_form": "[•ii-tə•]",
+     "phonetic_form": "[–ii·tə–]",
      "pieces": [
       "ir",
       "iita"
@@ -2759,7 +2979,7 @@
      "lexeme_id": "SK-paca-p107-2043",
      "literal": "have a lump",
      "needs_community_review": false,
-     "phonetic_form": "[•pə-čə•]",
+     "phonetic_form": "[–pə·čə–]",
      "pieces": [
       "ir",
       "paca"
@@ -2776,7 +2996,7 @@
      "lexeme_id": "SK-arika-p13-0147",
      "literal": "wear a horn",
      "needs_community_review": false,
-     "phonetic_form": "[•ə-rɪ-kə•]",
+     "phonetic_form": "[–ə·rɪ·kə–]",
      "pieces": [
       "ir",
       "ut",
@@ -2794,7 +3014,7 @@
      "lexeme_id": "SK-kusisaar-p103-2019",
      "literal": "become lively",
      "needs_community_review": false,
-     "phonetic_form": "[•kʊ-sɪ-saa(r)•]",
+     "phonetic_form": "[–kʊ·sɪ·saa(r)–]",
      "pieces": [
       "ir",
       "kusis",
@@ -2812,7 +3032,7 @@
      "lexeme_id": "SK-raruucpaca-p138-2722",
      "literal": "have a bump on the throat",
      "needs_community_review": false,
-     "phonetic_form": "[•rə-ruuts-pə-čə•]",
+     "phonetic_form": "[–rə·ruuts·pə·čə–]",
      "pieces": [
       "ir",
       "raruuc",
@@ -2838,7 +3058,7 @@
     "formations_seen_once": 7,
     "share_seen_once": 0.292
    },
-   "rank": 13,
+   "rank": 14,
    "sense_evidence": {
     "label printed": 24
    },
@@ -2851,8 +3071,8 @@
      0.00648
     ],
     "example_sentences": 9,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.00342
    },
    "transparency": {
@@ -2870,217 +3090,6 @@
     "A": 12,
     "A+B": 24,
     "A+B+C": 59
-   }
-  },
-  {
-   "blue_book": {
-    "first_lesson": 20,
-    "words_attested": 1
-   },
-   "category": "derivational or stem-forming affix (found in dictionary etymologies)",
-   "direct_vs_nested": {
-    "direct": 23,
-    "inside_a_compound_stem": 0
-   },
-   "evidence": {
-    "E1_label_printed_by_parks_in": 57,
-    "default_basis": "label_statistics",
-    "default_evidence": "Parks prints the label LOC for this form in 57 of its 64 occurrences",
-    "label_supplied_by_default_in": 4
-   },
-   "examples": [
-    {
-     "book_page": 462,
-     "class": "ADV",
-     "gloss": "twice, two times; two by two.",
-     "headword": "pitkusihiriʔ",
-     "lexeme_id": "SK-pitkusihiriq-p114-2208",
-     "literal": "two + i + LOC",
-     "needs_community_review": false,
-     "phonetic_form": "[pít-kʊ-sɪ-hɪ-riʔ]",
-     "pieces": [
-      "pitkus",
-      "i",
-      "hiriʔ"
-     ],
-     "rules": [],
-     "tier": "A",
-     "verb_class": null
-    },
-    {
-     "book_page": 365,
-     "class": "ADV",
-     "gloss": "backwards.",
-     "headword": "aspaarahiriʔ",
-     "lexeme_id": "SK-aspaarahiriq-p17-0182",
-     "literal": "leaning backward + LOC",
-     "needs_community_review": false,
-     "phonetic_form": "[às-paa-rə-hɪ-riʔ]",
-     "pieces": [
-      "aspaara",
-      "hiriʔ"
-     ],
-     "rules": [],
-     "tier": "B",
-     "verb_class": null
-    },
-    {
-     "book_page": 371,
-     "class": "ADV",
-     "gloss": "behind, in back of, as an object.",
-     "headword": "awiirahiriʔ",
-     "lexeme_id": "SK-awiirahiriq-p23-0301",
-     "literal": "behind + LOC",
-     "needs_community_review": false,
-     "phonetic_form": "[à-wii-rə-hɪ-riʔ]",
-     "pieces": [
-      "awiira",
-      "hiriʔ"
-     ],
-     "rules": [],
-     "tier": "B",
-     "verb_class": null
-    },
-    {
-     "book_page": 375,
-     "class": "ADV",
-     "gloss": "in a village; (contemp.) in a town, city; in town.",
-     "headword": "cahkahaahiriʔ",
-     "lexeme_id": "SK-cahkahaahiriq-p27-0399",
-     "literal": "interior of village + LOC",
-     "needs_community_review": false,
-     "phonetic_form": "[čàh-kə-haa-hɪ-riʔ]",
-     "pieces": [
-      "icahkahaar",
-      "hiriʔ"
-     ],
-     "rules": [
-      "R14-15",
-      "#V>0/_C"
-     ],
-     "tier": "B",
-     "verb_class": null
-    },
-    {
-     "book_page": 390,
-     "class": "ADV",
-     "gloss": "in front, in the fore , as at the head of a procession or in the front seat of an automobile.",
-     "headword": "hirasiriʔ",
-     "lexeme_id": "SK-hirasiriq-p390-3871",
-     "literal": "in the lead + LOC",
-     "needs_community_review": false,
-     "phonetic_form": "[hɪ-rà-sɪ-riʔ]",
-     "pieces": [
-      "hiras",
-      "hiriʔ"
-     ],
-     "rules": [
-      "R16"
-     ],
-     "tier": "B",
-     "verb_class": null
-    },
-    {
-     "book_page": 395,
-     "class": "ADV",
-     "gloss": "at the bottom, base, as of a hanging object touching the ground.",
-     "headword": "hurahwihiriʔ",
-     "lexeme_id": "SK-hurahwihiriq-p47-0801",
-     "literal": "on the ground + LOC",
-     "needs_community_review": false,
-     "phonetic_form": "[hʊ́-rəh-wɪ-hɪ-riʔ]",
-     "pieces": [
-      "hurahwi",
-      "hiriʔ"
-     ],
-     "rules": [],
-     "tier": "B",
-     "verb_class": null
-    },
-    {
-     "book_page": 399,
-     "class": "ADV",
-     "gloss": "in front, in the fore, in the lead; at the front, at the head, as of a procession or traffic.",
-     "headword": "huurickahiriʔ",
-     "lexeme_id": "SK-huurickahiriq-p51-0863",
-     "literal": "in front + LOC",
-     "needs_community_review": false,
-     "phonetic_form": "[huú-rɪts-kə-hɪ-riʔ]",
-     "pieces": [
-      "huuricka",
-      "hiriʔ"
-     ],
-     "rules": [],
-     "tier": "B",
-     "verb_class": null
-    },
-    {
-     "book_page": 438,
-     "class": "ADV",
-     "gloss": "on the floor.",
-     "headword": "kiihaahiriʔ",
-     "lexeme_id": "SK-kiihaahiriq-p90-1680",
-     "literal": "room + LOC",
-     "needs_community_review": false,
-     "phonetic_form": "[kii-haá-hɪ-riʔ]",
-     "pieces": [
-      "kiihaar",
-      "hiriʔ"
-     ],
-     "rules": [
-      "R14-15"
-     ],
-     "tier": "B",
-     "verb_class": null
-    }
-   ],
-   "form": "hiriʔ",
-   "id": "hiriʔ=LOC",
-   "kind": "suffix",
-   "label": "LOC",
-   "meaning": "locative/directional prefix or prefix string",
-   "positions": {
-    "suffix": 23
-   },
-   "productivity": {
-    "distinct_partners": 30,
-    "formations": 23,
-    "formations_seen_once": 16,
-    "share_seen_once": 0.696
-   },
-   "rank": 14,
-   "sense_evidence": {
-    "label printed": 23
-   },
-   "slot": null,
-   "tier": "A",
-   "tier_reason": "label printed by Parks 57 times; in 23 tier A/B words",
-   "token_frequency": {
-    "ci95": [
-     0.00129,
-     0.00547
-    ],
-    "example_sentences": 7,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
-    "share": 0.00266
-   },
-   "transparency": {
-    "by_plain_concatenation": 12,
-    "rules_at_work": {
-     "#V>0/_C": 1,
-     "R14-15": 3,
-     "R16": 6,
-     "R20": 1,
-     "w>p/C_": 1
-    },
-    "share_plain": 0.522,
-    "words_reproduced_exactly": 23
-   },
-   "type_frequency": {
-    "A": 1,
-    "A+B": 23,
-    "A+B+C": 61
    }
   },
   {
@@ -3108,7 +3117,7 @@
      "lexeme_id": "SK-aqiwaahcik-p349-3583",
      "literal": "cause to separate",
      "needs_community_review": false,
-     "phonetic_form": "[•ə-ʔɪ-waah-čɪ{k/t}•]",
+     "phonetic_form": "[–ə·ʔɪ·waah·čɪ{k/t}–]",
      "pieces": [
       "aʔiwaahc",
       "ik"
@@ -3125,7 +3134,7 @@
      "lexeme_id": "SK-aracik-p360-3711",
      "literal": "cause to freeze",
      "needs_community_review": false,
-     "phonetic_form": "[•ə-rə-čɪ{k/t}•]",
+     "phonetic_form": "[–ə·rə·čɪ{k/t}–]",
      "pieces": [
       "arac",
       "ik"
@@ -3142,7 +3151,7 @@
      "lexeme_id": "SK-arasik-p13-0135",
      "literal": "cause to be cooked",
      "needs_community_review": false,
-     "phonetic_form": "[•ə-rə-sɪ{k/t}•]",
+     "phonetic_form": "[–ə·rə·sɪ{k/t}–]",
      "pieces": [
       "aras",
       "ik"
@@ -3159,7 +3168,7 @@
      "lexeme_id": "SK-awaaksik-p20-0261",
      "literal": "cause to be stretched out",
      "needs_community_review": false,
-     "phonetic_form": "[•ə-waak-sɪ{k/t}•]",
+     "phonetic_form": "[–ə·waak·sɪ{k/t}–]",
      "pieces": [
       "awaaks",
       "ik"
@@ -3176,7 +3185,7 @@
      "lexeme_id": "SK-hiirik-p389-3842",
      "literal": "make good",
      "needs_community_review": false,
-     "phonetic_form": "[•hii-rɪ{k/t}•]",
+     "phonetic_form": "[–hii·rɪ{k/t}–]",
      "pieces": [
       "hiir",
       "ik"
@@ -3193,7 +3202,7 @@
      "lexeme_id": "SK-irisirik-p67-1188",
      "literal": "cause to be buried",
      "needs_community_review": false,
-     "phonetic_form": "[•ɪ-rɪ-sɪ-rɪ{k/t}•]",
+     "phonetic_form": "[–ɪ·rɪ·sɪ·rɪ{k/t}–]",
      "pieces": [
       "irisir",
       "ik"
@@ -3210,7 +3219,7 @@
      "lexeme_id": "SK-itkasik-p69-1233",
      "literal": "cause to be sleeping",
      "needs_community_review": false,
-     "phonetic_form": "[•ɪt-kə-sɪ{k/t}•]",
+     "phonetic_form": "[–ɪt·kə·sɪ{k/t}–]",
      "pieces": [
       "itkas",
       "ik"
@@ -3227,7 +3236,7 @@
      "lexeme_id": "SK-raakusiksiirik-p120-2346",
      "literal": "cause everything to be ready",
      "needs_community_review": false,
-     "phonetic_form": "[•raa-kʊ-sɪk-sii-rɪ{k/t}•]",
+     "phonetic_form": "[–raa·kʊ·sɪk·sii·rɪ{k/t}–]",
      "pieces": [
       "raakusiksiir",
       "ik"
@@ -3265,8 +3274,8 @@
      0.00598
     ],
     "example_sentences": 8,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.00304
    },
    "transparency": {
@@ -3314,7 +3323,7 @@
      "lexeme_id": "SK-rakickaatiit-p134-2631",
      "literal": "dark liquid",
      "needs_community_review": false,
-     "phonetic_form": "[rə-kíts-kaa-tiit]",
+     "phonetic_form": "[rə·kɪ́ts·kaa·tiit]",
      "pieces": [
       "ra",
       "kic",
@@ -3332,7 +3341,7 @@
      "lexeme_id": "SK-rakaahuraahkatiitu-p134-2610",
      "literal": "the world that is black",
      "needs_community_review": false,
-     "phonetic_form": "[rə-kaa-hʊ-raáh-kə-tii-tʊ]",
+     "phonetic_form": "[rə·kaa·hʊ·raáh·kə·tii·tʊ]",
      "pieces": [
       "ra",
       "kaahuraar",
@@ -3353,7 +3362,7 @@
      "lexeme_id": "SK-rataqu-p138-2734",
      "literal": "one that is bitter",
      "needs_community_review": false,
-     "phonetic_form": "[rà-tə-ʔu]",
+     "phonetic_form": "[rə́·tə·ʔu]",
      "pieces": [
       "ra",
       "taʔu"
@@ -3370,7 +3379,7 @@
      "lexeme_id": "SK-ariisit_rawarii-p13-0144",
      "literal": "one going around by itself",
      "needs_community_review": false,
-     "phonetic_form": "[ə-rii-sɪtrà-wə-rii]",
+     "phonetic_form": "[ə·rii·sɪt rə́·wə·rii]",
      "pieces": [
       "ariisit",
       "ra",
@@ -3388,7 +3397,7 @@
      "lexeme_id": "SK-ckipis_raawarii-p30-0481",
      "literal": "squirrel that flies around",
      "needs_community_review": false,
-     "phonetic_form": "[tskí-pɪsraa-wə-rii]",
+     "phonetic_form": "[tskɪ́·pɪs raa·wə·rii]",
      "pieces": [
       "ckipis",
       "ra",
@@ -3406,7 +3415,7 @@
      "lexeme_id": "SK-raapaku-p120-2349",
      "literal": "one fighting",
      "needs_community_review": false,
-     "phonetic_form": "[raá-pə-kʊ]",
+     "phonetic_form": "[raá·pə·kʊ]",
      "pieces": [
       "ra",
       "apak",
@@ -3428,7 +3437,7 @@
      "lexeme_id": "SK-rakawicaku-p134-2627",
      "literal": "one that grinds",
      "needs_community_review": false,
-     "phonetic_form": "[rə-kə-wí-čə-kʊ]",
+     "phonetic_form": "[rə·kə·wɪ́·čə·kʊ]",
      "pieces": [
       "ra",
       "kawicak",
@@ -3449,7 +3458,7 @@
      "lexeme_id": "SK-rahaahkasa,_rahaahkasahu-p478-4118",
      "literal": "one lying attached to (slices of bread) (+ IMPF)",
      "needs_community_review": false,
-     "phonetic_form": "[rə-haáh-kə-sə,rə-haah-kà-sə-hʊ]",
+     "phonetic_form": "[rə·haáh·kə·sə, rə·haah·kə́·sə·hʊ]",
      "pieces": [
       "ra",
       "haahka",
@@ -3467,7 +3476,7 @@
    "id": "ra=ABS",
    "kind": "inner",
    "label": "ABS",
-   "meaning": "absolutative mode prefix",
+   "meaning": "absolutive mode prefix",
    "positions": {
     "inner": 9,
     "prefix": 13
@@ -3491,8 +3500,8 @@
      0.00697
     ],
     "example_sentences": 10,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.0038
    },
    "transparency": {
@@ -3542,7 +3551,7 @@
      "lexeme_id": "SK-aciksawiquusiktik-p352-3621",
      "literal": "cause to calm down",
      "needs_community_review": false,
-     "phonetic_form": "[•ə-čɪk-sə-wi-ʔuu-sɪk-tɪ{k/t}•]",
+     "phonetic_form": "[–ə·čɪk·sə·wi·ʔuu·sɪk·tɪ{k/t}–]",
      "pieces": [
       "aciksawiʔuusik",
       "rik"
@@ -3561,7 +3570,7 @@
      "lexeme_id": "SK-acikskiwataktik-p354-3654",
      "literal": "cause to suffocate",
      "needs_community_review": false,
-     "phonetic_form": "[•ə-čɪks-kɪ-wə-tək-tɪ{k/t}•]",
+     "phonetic_form": "[–ə·čɪks·kɪ·wə·tək·tɪ{k/t}–]",
      "pieces": [
       "acikskiwatak",
       "rik"
@@ -3580,7 +3589,7 @@
      "lexeme_id": "SK-asuuktik-p18-0215",
      "literal": "cause foot to be covered",
      "needs_community_review": false,
-     "phonetic_form": "[•ə-suuk-tɪ{k/t}•]",
+     "phonetic_form": "[–ə·suuk·tɪ{k/t}–]",
      "pieces": [
       "asuuk",
       "rik"
@@ -3599,7 +3608,7 @@
      "lexeme_id": "SK-huuriktik-p51-0867",
      "literal": "cause to get scorched",
      "needs_community_review": false,
-     "phonetic_form": "[•huu-rɪk-tɪ{k/t}•]",
+     "phonetic_form": "[–huu·rɪk·tɪ{k/t}–]",
      "pieces": [
       "huurik",
       "rik"
@@ -3618,7 +3627,7 @@
      "lexeme_id": "SK-katawihuuriktik-p82-1521",
      "literal": "cause to be fried",
      "needs_community_review": false,
-     "phonetic_form": "[•kə-tə-wɪ-huu-rɪk-tɪ{k/t}•]",
+     "phonetic_form": "[–kə·tə·wɪ·huu·rɪk·tɪ{k/t}–]",
      "pieces": [
       "katawihuurik",
       "rik"
@@ -3637,7 +3646,7 @@
      "lexeme_id": "SK-kiispaktaarik-p92-1748",
      "literal": "make a bone sound",
      "needs_community_review": false,
-     "phonetic_form": "[•kiis-pək-taa-rɪ{k/t}•]",
+     "phonetic_form": "[–kiis·pək·taa·rɪ{k/t}–]",
      "pieces": [
       "kiispaktaa",
       "rik"
@@ -3654,7 +3663,7 @@
      "lexeme_id": "SK-kisaktik-p98-1887",
      "literal": "cause to melt",
      "needs_community_review": false,
-     "phonetic_form": "[•kɪ-sək-tɪ{k/t}•]",
+     "phonetic_form": "[–kɪ·sək·tɪ{k/t}–]",
      "pieces": [
       "kisak",
       "rik"
@@ -3673,7 +3682,7 @@
      "lexeme_id": "SK-kiwataktik-p448-3980",
      "literal": "cause to fade",
      "needs_community_review": false,
-     "phonetic_form": "[•kɪ-wə-tək-tɪ{k/t}•]",
+     "phonetic_form": "[–kɪ·wə·tək·tɪ{k/t}–]",
      "pieces": [
       "kiwatak",
       "rik"
@@ -3712,8 +3721,8 @@
      0.00334
     ],
     "example_sentences": 3,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.00114
    },
    "transparency": {
@@ -3760,7 +3769,7 @@
      "lexeme_id": "SK-kacak-p75-1352",
      "literal": "ITER + strike",
      "needs_community_review": false,
-     "phonetic_form": "[•kə-čə{k/t}•]",
+     "phonetic_form": "[–kə·čə{k/t}–]",
      "pieces": [
       "ka",
       "cak"
@@ -3777,7 +3786,7 @@
      "lexeme_id": "SK-kakaquc-p76-1389",
      "literal": "ITER + bite",
      "needs_community_review": false,
-     "phonetic_form": "[•kə-kə-ʔuts•]",
+     "phonetic_form": "[–kə·kə·ʔuts–]",
      "pieces": [
       "ka",
       "kaʔuc"
@@ -3794,7 +3803,7 @@
      "lexeme_id": "SK-karaquk-p77-1406",
      "literal": "ITER + make",
      "needs_community_review": false,
-     "phonetic_form": "[•kə-rə-ʔu{k/t}•]",
+     "phonetic_form": "[–kə·rə·ʔu{k/t}–]",
      "pieces": [
       "ka",
       "raʔuk"
@@ -3811,7 +3820,7 @@
      "lexeme_id": "SK-karuuc-p79-1452",
      "literal": "ITER + be lying in/on",
      "needs_community_review": false,
-     "phonetic_form": "[•kə-ruuts•]",
+     "phonetic_form": "[–kə·ruuts–]",
      "pieces": [
       "ka",
       "ruuc"
@@ -3828,7 +3837,7 @@
      "lexeme_id": "SK-hiihkacak-p389-3819",
      "literal": "chop weeds",
      "needs_community_review": false,
-     "phonetic_form": "[•hiih-kə-čə{k/t}•]",
+     "phonetic_form": "[–hiih·kə·čə{k/t}–]",
      "pieces": [
       "hiir",
       "ka",
@@ -3848,7 +3857,7 @@
      "lexeme_id": "SK-haakacak-p33-0563",
      "literal": "ITER + cut wood",
      "needs_community_review": false,
-     "phonetic_form": "[•haa-kə-čə{k/t}•]",
+     "phonetic_form": "[–haa·kə·čə{k/t}–]",
      "pieces": [
       "haak",
       "ka",
@@ -3868,7 +3877,7 @@
      "lexeme_id": "SK-huraahkaraquk-p45-0761",
      "literal": "ITER + make (i.e., prepare) soil",
      "needs_community_review": false,
-     "phonetic_form": "[•hʊ-raah-kə-rə-ʔu{k/t}•]",
+     "phonetic_form": "[–hʊ·raah·kə·rə·ʔu{k/t}–]",
      "pieces": [
       "huraar",
       "ka",
@@ -3888,7 +3897,7 @@
      "lexeme_id": "SK-kaatiiwiquskaraquk-p74-1331",
      "literal": "kaatiiwiʔus + ITER + make",
      "needs_community_review": false,
-     "phonetic_form": "[•kaa-tii-wi-ʔus-kə-rə-ʔu{k/t}•]",
+     "phonetic_form": "[–kaa·tii·wi·ʔus·kə·rə·ʔu{k/t}–]",
      "pieces": [
       "kaatiiwiʔus",
       "ka",
@@ -3928,8 +3937,8 @@
      0.00334
     ],
     "example_sentences": 3,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.00114
    },
    "transparency": {
@@ -3974,7 +3983,7 @@
      "lexeme_id": "SK-takirir-p158-3080",
      "literal": "GEN.LOC + shake",
      "needs_community_review": false,
-     "phonetic_form": "[•tə-kɪ-rɪ(r)•]",
+     "phonetic_form": "[–tə·kɪ·rɪ(r)–]",
      "pieces": [
       "ta",
       "kirir"
@@ -3991,7 +4000,7 @@
      "lexeme_id": "SK-taraasit-p159-3114",
      "literal": "GEN.LOC + be frozen",
      "needs_community_review": false,
-     "phonetic_form": "[•tə-raa-sɪt•]",
+     "phonetic_form": "[–tə·raa·sɪt–]",
      "pieces": [
       "ta",
       "raasit"
@@ -4008,7 +4017,7 @@
      "lexeme_id": "SK-taraawis-p159-3118",
      "literal": "GEN.LOC + be smoky, i.e., colored",
      "needs_community_review": false,
-     "phonetic_form": "[•tə-raa-wɪs•]",
+     "phonetic_form": "[–tə·raa·wɪs–]",
      "pieces": [
       "ta",
       "raawis"
@@ -4025,7 +4034,7 @@
      "lexeme_id": "SK-taruuc-p161-3165",
      "literal": "GEN.LOC + PL to be lying sus-pended",
      "needs_community_review": false,
-     "phonetic_form": "[•tə-ruuts•]",
+     "phonetic_form": "[–tə·ruuts–]",
      "pieces": [
       "ta",
       "ruuc"
@@ -4042,7 +4051,7 @@
      "lexeme_id": "SK-racakus-p129-2541",
      "literal": "PL + GEN.LOC + be sitting",
      "needs_community_review": false,
-     "phonetic_form": "[•rə-čə-kʊ(s)•]",
+     "phonetic_form": "[–rə·čə·kʊ(s)–]",
      "pieces": [
       "raar",
       "ta",
@@ -4063,7 +4072,7 @@
      "lexeme_id": "SK-takickuut-p157-3071",
      "literal": "GEN.LOC + liquid to spoil",
      "needs_community_review": false,
-     "phonetic_form": "[•tə-kɪts-kuut•]",
+     "phonetic_form": "[–tə·kɪts·kuut–]",
      "pieces": [
       "ta",
       "kic",
@@ -4081,7 +4090,7 @@
      "lexeme_id": "SK-tariwiikus-p161-3159",
      "literal": "GEN.LOC + be a large pile sitting",
      "needs_community_review": false,
-     "phonetic_form": "[•tə-rɪ-wii-kʊ(s)•]",
+     "phonetic_form": "[–tə·rɪ·wii·kʊ(s)–]",
      "pieces": [
       "ta",
       "riwii",
@@ -4099,7 +4108,7 @@
      "lexeme_id": "SK-taarik-p502-4248",
      "literal": "GEN.LOC + be standing",
      "needs_community_review": false,
-     "phonetic_form": "[•taa-rɪ{k/t}•]",
+     "phonetic_form": "[–taa·rɪ{k/t}–]",
      "pieces": [
       "ta",
       "arik"
@@ -4137,8 +4146,8 @@
      0.00598
     ],
     "example_sentences": 8,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.00304
    },
    "transparency": {
@@ -4181,7 +4190,7 @@
      "lexeme_id": "SK-hatuhkat-p387-3800",
      "literal": "in the rear + LOC",
      "needs_community_review": false,
-     "phonetic_form": "[hà-tʊh-kət]",
+     "phonetic_form": "[hə́·tʊh·kət]",
      "pieces": [
       "hatuhka",
       "t"
@@ -4198,7 +4207,7 @@
      "lexeme_id": "SK-paturikat-p111-2151",
      "literal": "between + LOC",
      "needs_community_review": false,
-     "phonetic_form": "[pə-tʊ́-rɪ-kət]",
+     "phonetic_form": "[pə·tʊ́·rɪ·kət]",
      "pieces": [
       "waturika",
       "t"
@@ -4217,7 +4226,7 @@
      "lexeme_id": "SK-tawaturikat-p163-3195",
      "literal": "between + LOC",
      "needs_community_review": false,
-     "phonetic_form": "[tə-wə-tʊ́-rɪ-kət]",
+     "phonetic_form": "[tə·wə·tʊ́·rɪ·kət]",
      "pieces": [
       "tawaturika",
       "t"
@@ -4234,7 +4243,7 @@
      "lexeme_id": "SK-uktatakat-p171-3378",
      "literal": "at the bottom + LOC",
      "needs_community_review": false,
-     "phonetic_form": "[ʊk-tà-tə-kət]",
+     "phonetic_form": "[ʊk·tə́·tə·kət]",
      "pieces": [
       "uktataka",
       "t"
@@ -4251,7 +4260,7 @@
      "lexeme_id": "SK-uukaahkat-p172-3399",
      "literal": "outdoors + LOC",
      "needs_community_review": false,
-     "phonetic_form": "[uu-kaáh-kət]",
+     "phonetic_form": "[uu·kaáh·kət]",
      "pieces": [
       "uukaahka",
       "t"
@@ -4268,7 +4277,7 @@
      "lexeme_id": "SK-uukatat-p172-3403",
      "literal": "on the west side + LOC",
      "needs_community_review": false,
-     "phonetic_form": "[uú-kə-tət]",
+     "phonetic_form": "[uú·kə·tət]",
      "pieces": [
       "uukata",
       "t"
@@ -4285,7 +4294,7 @@
      "lexeme_id": "SK-uukiihtatat-p172-3411",
      "literal": "along a stream bank + LOC",
      "needs_community_review": false,
-     "phonetic_form": "[uu-kiíh-tə-tət]",
+     "phonetic_form": "[uu·kiíh·tə·tət]",
      "pieces": [
       "uukiihtata",
       "t"
@@ -4302,7 +4311,7 @@
      "lexeme_id": "SK-uuwatkat-p173-3436",
      "literal": "outside + LOC",
      "needs_community_review": false,
-     "phonetic_form": "[uú-wət-kət]",
+     "phonetic_form": "[uú·wət·kət]",
      "pieces": [
       "uuwatka",
       "t"
@@ -4340,8 +4349,8 @@
      0.00146
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.0
    },
    "transparency": {
@@ -4383,7 +4392,7 @@
      "lexeme_id": "SK-hiitaku-p390-3847",
      "literal": "other + LOC.ADV",
      "needs_community_review": false,
-     "phonetic_form": "[hií-tə-kʊ]",
+     "phonetic_form": "[hií·tə·kʊ]",
      "pieces": [
       "hii",
       "taku"
@@ -4400,7 +4409,7 @@
      "lexeme_id": "SK-iitaku-p61-1041",
      "literal": "there + LOC.ADV",
      "needs_community_review": false,
-     "phonetic_form": "[ií-tə-kʊ]",
+     "phonetic_form": "[ií·tə·kʊ]",
      "pieces": [
       "ii",
       "taku"
@@ -4417,7 +4426,7 @@
      "lexeme_id": "SK-tiitaku-p165-3257",
      "literal": "here + LOC.ADV",
      "needs_community_review": false,
-     "phonetic_form": "[tií-tə-kʊ]",
+     "phonetic_form": "[tií·tə·kʊ]",
      "pieces": [
       "tii",
       "taku"
@@ -4434,7 +4443,7 @@
      "lexeme_id": "SK-iihaataku-p408-3896",
      "literal": "there + LOC.ADV + LOC.ADV",
      "needs_community_review": false,
-     "phonetic_form": "[ii-haá-tə-kʊ]",
+     "phonetic_form": "[ii·haá·tə·kʊ]",
      "pieces": [
       "ii",
       "haa",
@@ -4452,7 +4461,7 @@
      "lexeme_id": "SK-irihaataku-p65-1132",
      "literal": "there + LOC.ADV + LOC.ADV",
      "needs_community_review": false,
-     "phonetic_form": "[ɪ-rɪ-haá-tə-kʊ]",
+     "phonetic_form": "[ɪ·rɪ·haá·tə·kʊ]",
      "pieces": [
       "iri",
       "haa",
@@ -4470,7 +4479,7 @@
      "lexeme_id": "SK-tiihaataku-p164-3234",
      "literal": "here + LOC.ADV + LOC.ADV",
      "needs_community_review": false,
-     "phonetic_form": "[tii-haá-tə-kʊ]",
+     "phonetic_form": "[tii·haá·tə·kʊ]",
      "pieces": [
       "tii",
       "haa",
@@ -4508,8 +4517,8 @@
      0.00146
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.0
    },
    "transparency": {
@@ -4549,7 +4558,7 @@
      "lexeme_id": "SK-rakaahuraahkatiitu-p134-2610",
      "literal": "the world that is black",
      "needs_community_review": false,
-     "phonetic_form": "[rə-kaa-hʊ-raáh-kə-tii-tʊ]",
+     "phonetic_form": "[rə·kaa·hʊ·raáh·kə·tii·tʊ]",
      "pieces": [
       "ra",
       "kaahuraar",
@@ -4570,7 +4579,7 @@
      "lexeme_id": "SK-rahaaktaakaaru-p478-4119",
      "literal": "wood that is white",
      "needs_community_review": false,
-     "phonetic_form": "[rà-haak-taa-kaa-rʊ]",
+     "phonetic_form": "[rə́·haak·taa·kaa·rʊ]",
      "pieces": [
       "ra",
       "haak",
@@ -4589,7 +4598,7 @@
      "lexeme_id": "SK-rarahkirariiquusu-p136-2684",
      "literal": "ones that are green",
      "needs_community_review": false,
-     "phonetic_form": "[rà-rəh-kɪ-rə-rii-ʔuu-sʊ]",
+     "phonetic_form": "[rə́·rəh·kɪ·rə·rii·ʔuu·sʊ]",
      "pieces": [
       "ra",
       "raar",
@@ -4611,7 +4620,7 @@
      "lexeme_id": "SK-ratawirahkawarikusu-p138-2736",
      "literal": "one that puts songs inside",
      "needs_community_review": false,
-     "phonetic_form": "[rə-tà-wɪ-rəh-kə-wə-rɪ-kʊ-sʊ]",
+     "phonetic_form": "[rə·tə́·wɪ·rəh·kə·wə·rɪ·kʊ·sʊ]",
      "pieces": [
       "ra",
       "tawi",
@@ -4636,7 +4645,7 @@
      "lexeme_id": "SK-piitaraqu-p113-2181",
      "literal": "being the man",
      "needs_community_review": false,
-     "phonetic_form": "[pii-tà-rə-ʔu]",
+     "phonetic_form": "[pii·tə́·rə·ʔu]",
      "pieces": [
       "piita",
       "ra",
@@ -4676,8 +4685,8 @@
      0.00146
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.0
    },
    "transparency": {
@@ -4722,7 +4731,7 @@
      "lexeme_id": "SK-awatatk-p21-0279",
      "literal": "cause to be covered",
      "needs_community_review": false,
-     "phonetic_form": "[•ə-wə-tət(k)•]",
+     "phonetic_form": "[–ə·wə·tət(k)–]",
      "pieces": [
       "awatat",
       "k"
@@ -4739,7 +4748,7 @@
      "lexeme_id": "SK-kaawiriwisk-p75-1349",
      "literal": "cause to be a partition inside",
      "needs_community_review": false,
-     "phonetic_form": "[•kaa-wɪ-rɪ-wɪs(k)•]",
+     "phonetic_form": "[–kaa·wɪ·rɪ·wɪs(k)–]",
      "pieces": [
       "kaawiriwis",
       "k"
@@ -4756,7 +4765,7 @@
      "lexeme_id": "SK-rariisk-p137-2708",
      "literal": "be mixed + TRANS",
      "needs_community_review": false,
-     "phonetic_form": "[•rə-riis(k)•]",
+     "phonetic_form": "[–rə·riis(k)–]",
      "pieces": [
       "rariis",
       "k"
@@ -4773,7 +4782,7 @@
      "lexeme_id": "SK-kirahwiriisk-p95-1807",
      "literal": "cause liquids to be mixed together",
      "needs_community_review": false,
-     "phonetic_form": "[•kɪ-rəh-wɪ-riis(k)•]",
+     "phonetic_form": "[–kɪ·rəh·wɪ·riis(k)–]",
      "pieces": [
       "kiraar",
       "wiriis",
@@ -4815,8 +4824,8 @@
      0.00215
     ],
     "example_sentences": 1,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.00038
    },
    "transparency": {
@@ -4859,7 +4868,7 @@
      "lexeme_id": "SK-akahtaatkat,_akahtaakat-p358-3676",
      "literal": "house(ʔs) back + LOC",
      "needs_community_review": false,
-     "phonetic_form": "[à-kəh-taat-kət,à-kəh-taa-kət]",
+     "phonetic_form": "[ə́·kəh·taat·kət, ə́·kəh·taa·kət]",
      "pieces": [
       "akaar",
       "taat",
@@ -4880,7 +4889,7 @@
      "lexeme_id": "SK-hurariiwikat-p48-0806",
      "literal": "at the base + LOC",
      "needs_community_review": false,
-     "phonetic_form": "[hʊ-rə-rií-wɪ-kət]",
+     "phonetic_form": "[hʊ·rə·rií·wɪ·kət]",
      "pieces": [
       "hurarii",
       "wi",
@@ -4898,7 +4907,7 @@
      "lexeme_id": "SK-kahuraahkicuuciskat-p76-1382",
      "literal": "thick woodland + LOC",
      "needs_community_review": false,
-     "phonetic_form": "[kà-hʊ-raah-kɪ-čuu-čɪs-kət]",
+     "phonetic_form": "[kə́·hʊ·raah·kɪ·čuu·čɪs·kət]",
      "pieces": [
       "kahuraar",
       "kicuucis",
@@ -4918,7 +4927,7 @@
      "lexeme_id": "SK-paakawikat-p454-4048",
      "literal": "on a hill + LOC",
      "needs_community_review": false,
-     "phonetic_form": "[paa-kà-wɪ-kət]",
+     "phonetic_form": "[paa·kə́·wɪ·kət]",
      "pieces": [
       "waa",
       "ka",
@@ -4959,8 +4968,8 @@
      0.00146
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.0
    },
    "transparency": {
@@ -5004,7 +5013,7 @@
      "lexeme_id": "SK-iihaataku-p408-3896",
      "literal": "there + LOC.ADV + LOC.ADV",
      "needs_community_review": false,
-     "phonetic_form": "[ii-haá-tə-kʊ]",
+     "phonetic_form": "[ii·haá·tə·kʊ]",
      "pieces": [
       "ii",
       "haa",
@@ -5022,7 +5031,7 @@
      "lexeme_id": "SK-irihaataku-p65-1132",
      "literal": "there + LOC.ADV + LOC.ADV",
      "needs_community_review": false,
-     "phonetic_form": "[ɪ-rɪ-haá-tə-kʊ]",
+     "phonetic_form": "[ɪ·rɪ·haá·tə·kʊ]",
      "pieces": [
       "iri",
       "haa",
@@ -5040,7 +5049,7 @@
      "lexeme_id": "SK-tiihaataku-p164-3234",
      "literal": "here + LOC.ADV + LOC.ADV",
      "needs_community_review": false,
-     "phonetic_form": "[tii-haá-tə-kʊ]",
+     "phonetic_form": "[tii·haá·tə·kʊ]",
      "pieces": [
       "tii",
       "haa",
@@ -5078,8 +5087,8 @@
      0.00146
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.0
    },
    "transparency": {
@@ -5119,7 +5128,7 @@
      "lexeme_id": "SK-iriiraraaririitiku-p66-1152",
      "literal": "where they land + IMPF",
      "needs_community_review": false,
-     "phonetic_form": "[ɪ-rií-rə-raa-rɪ-rii-tɪ-kʊ]",
+     "phonetic_form": "[ɪ·rií·rə·raa·rɪ·rii·tɪ·kʊ]",
      "pieces": [
       "irii",
       "ra",
@@ -5142,7 +5151,7 @@
      "lexeme_id": "SK-iriirasaakaku-p66-1157",
      "literal": "where the sun passes + IMPF",
      "needs_community_review": false,
-     "phonetic_form": "[ɪ-rií-rə-saa-kə-kʊ]",
+     "phonetic_form": "[ɪ·rií·rə·saa·kə·kʊ]",
      "pieces": [
       "irii",
       "ra",
@@ -5166,7 +5175,7 @@
      "lexeme_id": "SK-iriiraawirahkatawihaku-p65-1144",
      "literal": "where the images are passing against a vertical surface, i.e., screen or wall",
      "needs_community_review": false,
-     "phonetic_form": "[ɪ-rií-raa-wɪ-rəh-kə-tə-wɪ-hə-kʊ]",
+     "phonetic_form": "[ɪ·rií·raa·wɪ·rəh·kə·tə·wɪ·hə·kʊ]",
      "pieces": [
       "irii",
       "ra",
@@ -5215,8 +5224,8 @@
      0.00215
     ],
     "example_sentences": 1,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.00038
    },
    "transparency": {
@@ -5262,7 +5271,7 @@
      "lexeme_id": "SK-wakaqu-p175-3463",
      "literal": "sound + ACT",
      "needs_community_review": false,
-     "phonetic_form": "[•wə-kə-ʔu•]",
+     "phonetic_form": "[–wə·kə·ʔu–]",
      "pieces": [
       "wak",
       "aʔu"
@@ -5279,7 +5288,7 @@
      "lexeme_id": "SK-tawakaqu-p162-3182",
      "literal": "GEN.LOC + voice + ACT",
      "needs_community_review": true,
-     "phonetic_form": "[•ta-wa-ka-ʔu•]",
+     "phonetic_form": "[–tə·wə·kə·ʔu–]",
      "pieces": [
       "ta",
       "wak",
@@ -5317,8 +5326,8 @@
      0.00215
     ],
     "example_sentences": 1,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.00038
    },
    "transparency": {
@@ -5358,7 +5367,7 @@
      "lexeme_id": "SK-atkiisik-p19-0248",
      "literal": "hear + DIST",
      "needs_community_review": false,
-     "phonetic_form": "[•ət-kii-sɪ{k/t}•]",
+     "phonetic_form": "[–ət·kii·sɪ{k/t}–]",
      "pieces": [
       "atkiis",
       "ik"
@@ -5375,7 +5384,7 @@
      "lexeme_id": "SK-raaqiksuq-p115-2246",
      "literal": "way + DIST + PERF + NOM",
      "needs_community_review": true,
-     "phonetic_form": "[raá-ʔɪk-sʊʔ]",
+     "phonetic_form": "[raá·ʔɪk·sʊʔ]",
      "pieces": [
       "raa",
       "ik",
@@ -5418,8 +5427,8 @@
      0.00276
     ],
     "example_sentences": 2,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.00076
    },
    "transparency": {
@@ -5462,7 +5471,7 @@
      "lexeme_id": "SK-rakaraakucuuq-p134-2617",
      "literal": "dish + AUG",
      "needs_community_review": false,
-     "phonetic_form": "[rə-kə-raá-kʊ-čuuʔ]",
+     "phonetic_form": "[rə·kə·raá·kʊ·čuuʔ]",
      "pieces": [
       "rakaraa",
       "kucuu"
@@ -5481,7 +5490,7 @@
      "lexeme_id": "SK-wiskucuuq-p181-3559",
      "literal": "hurry + AUG",
      "needs_community_review": false,
-     "phonetic_form": "[wís-kʊ-čuuʔ]",
+     "phonetic_form": "[wɪ́s·kʊ·čuuʔ]",
      "pieces": [
       "wis",
       "kucuu"
@@ -5520,8 +5529,8 @@
      0.00215
     ],
     "example_sentences": 1,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.00038
    },
    "transparency": {
@@ -5563,7 +5572,7 @@
      "lexeme_id": "SK-raakirikaaqat-p119-2331",
      "literal": "eye to go inside + PL",
      "needs_community_review": false,
-     "phonetic_form": "[•raa-kɪ-rɪ-kaa-ʔət•]",
+     "phonetic_form": "[–raa·kɪ·rɪ·kaa·ʔət–]",
      "pieces": [
       "raa",
       "kirik",
@@ -5583,7 +5592,7 @@
      "lexeme_id": "SK-raakii-p119-2322",
      "literal": "PL + to be strung",
      "needs_community_review": false,
-     "phonetic_form": "[•raa-kii•]",
+     "phonetic_form": "[–raa·kii–]",
      "pieces": [
       "raa",
       "kii"
@@ -5620,8 +5629,8 @@
      0.00215
     ],
     "example_sentences": 1,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.00038
    },
    "transparency": {
@@ -5663,7 +5672,7 @@
      "lexeme_id": "SK-ruuca--p148-2888",
      "literal": "up (as from a surface) holding",
      "needs_community_review": false,
-     "phonetic_form": "[ruu-čə•]",
+     "phonetic_form": "[ruu·čə–]",
      "pieces": [
       "ra",
       "uca"
@@ -5679,7 +5688,7 @@
    "id": "ra=ABS/PORT",
    "kind": "inner",
    "label": "ABS/PORT",
-   "meaning": "absolutative mode prefix",
+   "meaning": "absolutive mode prefix",
    "positions": {
     "prefix": 1
    },
@@ -5702,8 +5711,8 @@
      0.00334
     ],
     "example_sentences": 3,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.00114
    },
    "transparency": {
@@ -5745,7 +5754,7 @@
      "lexeme_id": "SK-cikstit-p29-0447",
      "literal": "feeling + DIST",
      "needs_community_review": false,
-     "phonetic_form": "[číks-tɪt]",
+     "phonetic_form": "[čɪ́ks·tɪt]",
      "pieces": [
       "aciks",
       "rik"
@@ -5786,8 +5795,8 @@
      0.00276
     ],
     "example_sentences": 2,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.00076
    },
    "transparency": {
@@ -5831,7 +5840,7 @@
      "lexeme_id": "SK-wakaqu-p175-3464",
      "literal": "(to) voice + TRANS",
      "needs_community_review": false,
-     "phonetic_form": "[•wə-kə-ʔu•]",
+     "phonetic_form": "[–wə·kə·ʔu–]",
      "pieces": [
       "waka",
       "u"
@@ -5870,8 +5879,8 @@
      0.00146
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.0
    },
    "transparency": {
@@ -5928,8 +5937,8 @@
      0.00146
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.0
    },
    "transparency": {
@@ -5984,8 +5993,8 @@
      0.00146
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.0
    },
    "transparency": {
@@ -6040,8 +6049,8 @@
      0.00146
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.0
    },
    "transparency": {
@@ -6096,8 +6105,8 @@
      0.00146
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.0
    },
    "transparency": {
@@ -6152,8 +6161,8 @@
      0.00146
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.0
    },
    "transparency": {
@@ -6208,8 +6217,8 @@
      0.00146
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.0
    },
    "transparency": {
@@ -6264,8 +6273,8 @@
      0.00146
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.0
    },
    "transparency": {
@@ -6320,8 +6329,8 @@
      0.00146
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.0
    },
    "transparency": {
@@ -6376,8 +6385,8 @@
      0.00146
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.0
    },
    "transparency": {
@@ -6432,8 +6441,8 @@
      0.00146
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.0
    },
    "transparency": {
@@ -6488,8 +6497,8 @@
      0.00146
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.0
    },
    "transparency": {
@@ -6544,8 +6553,8 @@
      0.00146
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.0
    },
    "transparency": {
@@ -6600,8 +6609,8 @@
      0.00146
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.0
    },
    "transparency": {
@@ -6656,8 +6665,8 @@
      0.00146
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.0
    },
    "transparency": {
@@ -6712,8 +6721,8 @@
      0.00146
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.0
    },
    "transparency": {
@@ -6768,8 +6777,8 @@
      0.00146
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.0
    },
    "transparency": {
@@ -6824,8 +6833,8 @@
      0.00146
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.0
    },
    "transparency": {
@@ -6880,8 +6889,8 @@
      0.00146
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.0
    },
    "transparency": {
@@ -6936,8 +6945,8 @@
      0.00146
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.0
    },
    "transparency": {
@@ -6992,8 +7001,8 @@
      0.00146
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.0
    },
    "transparency": {
@@ -7048,8 +7057,8 @@
      0.00146
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.0
    },
    "transparency": {
@@ -7104,8 +7113,8 @@
      0.00146
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.0
    },
    "transparency": {
@@ -7160,8 +7169,8 @@
      0.00146
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.0
    },
    "transparency": {
@@ -7216,8 +7225,8 @@
      0.00146
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2635 sentences, so treat as a secondary signal",
-    "of_total": 2635,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2634 sentences, so treat as a secondary signal",
+    "of_total": 2634,
     "share": 0.0
    },
    "transparency": {

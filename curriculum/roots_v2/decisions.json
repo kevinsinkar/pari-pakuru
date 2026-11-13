@@ -209,6 +209,32 @@
    "verdict": "kept_apart"
   },
   {
+   "class": "N",
+   "evidence": [
+    {
+     "a": "BB-cktiskakusu-0003",
+     "b": "SK-ckuskakusuq-p31-0498",
+     "reason": "etymology differs",
+     "same_record": false
+    }
+   ],
+   "headword": "ckuskakusuʔ",
+   "lexemes": [
+    [
+     "BB-cktiskakusu-0003"
+    ],
+    [
+     "SK-ckuskakusuq-p31-0498"
+    ]
+   ],
+   "rows": [
+    "BB-cktiskakusu-0003",
+    "SK-ckuskakusuq-p31-0498"
+   ],
+   "type": "duplicate_rows",
+   "verdict": "kept_apart"
+  },
+  {
    "class": "VL",
    "evidence": [
     {
@@ -918,6 +944,32 @@
    "rows": [
     "SK-kuruks-p102-1986",
     "SK-kuruks-p102-1987"
+   ],
+   "type": "duplicate_rows",
+   "verdict": "kept_apart"
+  },
+  {
+   "class": "VI",
+   "evidence": [
+    {
+     "a": "SK-kusisaar-p103-2019",
+     "b": "SK-kusisaar-p103-4273",
+     "reason": "preverb differs (['ir'] vs [])",
+     "same_record": false
+    }
+   ],
+   "headword": "kusisaar",
+   "lexemes": [
+    [
+     "SK-kusisaar-p103-2019"
+    ],
+    [
+     "SK-kusisaar-p103-4273"
+    ]
+   ],
+   "rows": [
+    "SK-kusisaar-p103-2019",
+    "SK-kusisaar-p103-4273"
    ],
    "type": "duplicate_rows",
    "verdict": "kept_apart"
@@ -2221,7 +2273,7 @@
      "sample_glosses": [
       "become"
      ],
-     "words_AB": 47
+     "words_AB": 48
     },
     {
      "aligned_glosses": 2,
@@ -7604,7 +7656,7 @@
      "sample_glosses": [
       "two"
      ],
-     "words_AB": 3
+     "words_AB": 4
     },
     {
      "aligned_glosses": 0,
@@ -10185,7 +10237,7 @@
       "steal",
       "steal, rob, pilfer"
      ],
-     "words_AB": 3
+     "words_AB": 2
     },
     {
      "aligned_glosses": 0,
@@ -13348,5 +13400,5 @@
    }
   }
  ],
- "n": 450
+ "n": 452
 }

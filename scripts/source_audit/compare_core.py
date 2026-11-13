@@ -42,8 +42,16 @@ def nfc(s):
 
 
 def stored_phonetic_as_printed(s):
-    """The database's phonetic convention -> the printed one, where the mapping loses nothing."""
-    s = nfc(s).replace("-", SYLLABLE_DOT).replace("•", EDGE_DASH)
+    """A stored phonetic form in the printed notation.
+
+    Since 2026-11-13 the database stores Parks's own notation, and such a form is returned as it
+    is. A form still in the old working notation (hyphen for the syllable dot, bullet for the edge
+    dash, à for ə́) is converted, so that files not yet rewritten can still be compared.
+    """
+    s = nfc(s)
+    if SYLLABLE_DOT in s or EDGE_DASH in s or not ("-" in s or "•" in s):
+        return s
+    s = s.replace("-", SYLLABLE_DOT).replace("•", EDGE_DASH)
     # the stored a-grave is the printed schwa-acute, except directly after a plain a, where it is
     # the second half of a long vowel and a true a-grave (two forms in the dictionary)
     return nfc(re.sub("(?<!a)à", "ə" + ACUTE, s))
