@@ -451,3 +451,45 @@ changes: 807   {'appendix 1': 152, 'appendix 2': 2, 'appendix 3': 10, 'abbreviat
   combining form of takasis: 'takasistik [- + raar-]': a hyphen at a line end that could not be resolved
 
 backups: OneDrive/pari_pakuru_backups (stamp 20261113_135745)
+
+
+---- second run (the one headword the first run did not reach) ----
+apply_audit_fixes_2026_11 — APPLY — 2026-11-13 14:06
+changes: 1   {'headwords': 1}
+
+== 1. Appendix 1: stored verb forms that differ from the page (each confirmed by a third look)
+
+== 2. Appendix 2: b read for h
+
+== 3. Appendix 3: kin term forms
+
+== 4. Abbreviations
+
+== 5. Grammar chapter extraction: b read for h
+
+== 6. Sound-change rules: example forms
+
+== 7. Dictionary verb forms
+
+== 8. Stand-in characters in words cited from other languages
+  (cognate forms still holding ó or Ý before this run: 21)
+
+== 9. Combining forms: a space or a line-break hyphen inside the form
+
+== 10. Headwords
+  SK-ø_(ut...)_pak_siriq-p349-3573, headword: 'Ø (ut...) pak siriʔ' -> 'Ø (ut...) paksiriʔ'
+
+== 11. The column an entry is printed in
+
+== 12. Entries
+
+== Left for a person (7)
+  Appendix 2, tir 'to be together': the singular cell is empty in print; 'tir' is stored. Left as it is: the conjugation engine reads this value
+  Grammar chapter: 51 stored words differ from the blind reading in an accent, a vowel or a glottal stop. They were matched by likeness, not by position, and need a person with the page (chapter4_differences.json)
+  verb form 2 of itkaakahaaruʔ (SK-itkaakahaaruq-p69-1225): stored 'tiitkaakahaa', printed stretch '. • tiitkaakahaa': the match is not clean
+  verb form 4 of itkaakahaaruʔ (SK-itkaakahaaruq-p69-1225): stored 'iriiraatkaakahaaru', printed stretch '. • iriiraatkaakahaaru': the match is not clean
+  verb form 5 of itkaakahaaruʔ (SK-itkaakahaaruq-p69-1225): stored 'tiitkaakahaaruksta', printed stretch 'is. • tiitkaakahaaruʔa': the match is not clean
+  example of apak: stored 'rihkuupa´kstarit', printed 'rihkuupaȞkstarit' (a printing oddity inside a Skiri word; left as stored)
+  combining form of takasis: 'takasistik [- + raar-]': a hyphen at a line end that could not be resolved
+
+backups: OneDrive/pari_pakuru_backups (stamp 20261113_140615)

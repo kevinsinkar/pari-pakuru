@@ -38,6 +38,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 from build_root_curriculum import respell_orthography  # noqa: E402
+from ipa_notation import to_working  # noqa: E402
 
 DB = ROOT / "skiri_pawnee.db"
 RESPELLED_JSON = ROOT / "Dictionary Data" / "skiri_to_english_respelled.json"
@@ -99,6 +100,8 @@ def respell_syllable(syl):
 
 def respell_phonetic(pf):
     """IPA phonetic form -> simplified pronunciation (variants joined by ' / ')."""
+    # the database stores Parks's printed notation (syllable dot, edge dash); the rules below read the working one
+    pf = to_working(pf)
     pf = unicodedata.normalize("NFC", pf).strip().strip("[]")
     pf = re.sub(r"^\+[a-zʔ]+-\]?\[?", "", pf)
     pf = re.sub(r"•?\((ʊt|ut|ir|uur|ɪr)\.\.\.\)", "", pf)
@@ -107,16 +110,20 @@ def respell_phonetic(pf):
         v = variant.strip().strip("•–— ").replace("•", "-").replace(".", "-")
         if not v:
             continue
-        sylls = []
-        for syl in [s for s in v.split("-") if s.strip()]:
-            s, acc = respell_syllable(syl.strip())
-            if not s:
-                continue
-            if s.startswith("-"):      # optional syllable wrapped by respell_syllable
-                s = s[1:]
-            sylls.append(s.upper() if acc else s)
-        if sylls:
-            outv.append("-".join(sylls).replace("-(-", "-(").replace("--", "-"))
+        words = []
+        for word in v.split():         # a phonetic form of two words is printed with a space between them
+            sylls = []
+            for syl in [s for s in word.split("-") if s.strip()]:
+                s, acc = respell_syllable(syl.strip())
+                if not s:
+                    continue
+                if s.startswith("-"):      # optional syllable wrapped by respell_syllable
+                    s = s[1:]
+                sylls.append(s.upper() if acc else s)
+            if sylls:
+                words.append("-".join(sylls).replace("-(-", "-(").replace("--", "-"))
+        if words:
+            outv.append(" ".join(words))
     return " / ".join(outv)
 
 

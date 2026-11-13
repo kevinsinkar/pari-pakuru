@@ -342,7 +342,7 @@ class Fixer:
 
         self.head("10. Headwords")
         manual = {
-            "SK-ø_(ut...)_pak_siriq-p349-3573": ("headword", "Ø pak siriʔ", "Ø paksiriʔ"),
+            "SK-ø_(ut...)_pak_siriq-p349-3573": ("headword", "Ø (ut...) pak siriʔ", "Ø (ut...) paksiriʔ"),
             "SK-wiicat_k-p179-3542": ("headword", "wiicat k", "wiicatk"),
             "SK-awacitiksa-p20-0264": ("stem_preverb", "(i r...)", "(ir...)"),
             "SK-hiitka-p390-3849": ("stem_preverb", "(i r...ut...)", "(ir...ut...)"),
@@ -495,6 +495,8 @@ def main():
         (EXTRACTED / name).write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     subprocess.run([sys.executable, str(ROOT / "scripts" / "db_dump.py"), "--write"], cwd=str(ROOT), check=False, stdout=subprocess.DEVNULL)
     text += "\nbackups: OneDrive/pari_pakuru_backups (stamp %s)\n" % stamp
+    if REPORT.exists():            # the record of an earlier run is kept; this run is added below it
+        text = REPORT.read_text(encoding="utf-8").rstrip("\n") + "\n\n---- a later run ----\n" + text
     REPORT.write_text(text, encoding="utf-8", newline="\n")
     out("\n".join(header))
     out("left for a person: %d" % len(fx.left))

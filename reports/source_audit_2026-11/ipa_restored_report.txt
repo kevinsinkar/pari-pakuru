@@ -1,0 +1,164 @@
+restore_parks_ipa — APPLY — 2026-11-13 14:06
+Parks entries paired with their printed entry: 4244 of 4244
+phonetic forms set to the printed form: 4231   {'symbols only': 4147, 'added': 9, 'content corrected': 75, 'already as printed': 13}
+simplified pronunciations that change: 54
+learner spellings corrected because the phonetic form they were made from was wrong: 3
+learner spellings that differ from the rule for another reason (listed, not changed): 2
+
+written: database 4231 entries; skiri_to_english_respelled.json 4231 entries; english_to_skiri_linked.json 4942 subentries (132 left: their form differed from the entry they are linked to); frozen flashcards 320 cards (membership unchanged)
+backups: OneDrive/pari_pakuru_backups (stamp 20261113_140640)
+
+== content corrected (75)
+  Ø (ut...) ciksuʔ           [•Ø•čík-sʊʔ] -> [–Ø– čɪ́k·sʊʔ]   [book p. 349]
+  Ø (ut...) kiirahkata       [•Ø•kii-ràh-kə-tə] -> [–Ø– kii·rə́h·kə·tə]   [book p. 349]
+  Ø (ut...) paksiriʔ         [•pàk-si-riʔ] -> [–Ø– pə́k·sɪ·riʔ]   [book p. 349]
+  a                          [a/aa] -> [–ə–]   [book p. 349]
+  a (ir...) istuʔ            [•ə•ɪs-tʊʔ] -> [–ə– ɪs·tʊʔ]   [book p. 349]
+  aar ciksuʔ                 [•aar•čík-sʊʔ] -> [–aar– čɪ́k·sʊʔ]   [book p. 351]
+  aar ciksuʔ                 [•aar•čík-sʊʔ] -> [–aar– čɪ́k·sʊʔ]   [book p. 351]
+  aar iraariʔ                [•aar•ɪ-raá-riʔ] -> [–aar– ɪ·raá·riʔ]   [book p. 351]
+  aciksuhuriwaar [+ neg.]    [•a-cik-su-hu-ri-waa(r)•] -> [–ə·čɪk·sʊ·hʊ·rɪ·waa(r)–]   [book p. 356]
+  akarahkata                 [à-kə-rəh-ká-tə] -> [ə́·kə·rəh·kə̀·tə]   [book p. 359]
+  apac ruurickuuki           [à-pətsruu-rɪts-kuu-kɪ] -> [ə́·pəts ruu·rɪts·kuu·kɪ]   [book p. 360]
+  ariisit rawarii            [ə-rii-sɪtrà-wə-rii] -> [ə·rii·sɪt rə́·wə·rii]   [book p. 361]
+  askatatawiʔuʔ              [às-kə-tə-tə-wɪ-ʔuʔ] -> [ə́s·kə·tə·tə·wi·ʔuʔ]   [book p. 364]
+  at istuʔ                   [•ət•ɪs-tʊʔ] -> [–ət– ɪs·tʊʔ]   [book p. 367]
+  awaʔa                      [•a-waa•] -> [–ə·waa–]   [book p. 368]
+  awiʔu                      [•a-wi-ʔu•] -> [–ə·wi·ʔu–]   [book p. 369]
+  awihurah                   [•a-wi-hu-ra(h)•] -> [–ə·wɪ·hʊ·rə(h)–]   [book p. 370]
+  awiraʔa                    [•a-wi-raa•] -> [–ə·wɪ·raa–]   [book p. 372]
+  cak, icak                  [•čək,•ɪ-čə{k/t}] -> [–čək,– ɪ·čə{k/t}]   [book p. 375]
+  ckipis raawarii            [tskí-pɪsraa-wə-rii] -> [tskɪ́·pɪs raa·wə·rii]   [book p. 378]
+  Ckirihki Kuuruuriki        [tskí-rɪh-kɪkuu-ruú-rɪ-kɪ] -> [tskɪ́·rɪh·kɪ kuu·ruú·rɪ·kɪ]   [book p. 378]
+  ckuskakusaʔiwiiʔaahus      [tskʊs-kə-kʊ-sə-ʔɪ-wii-ʔaa-hʊs] -> [tskʊ́s·kə·kʊ·sə·ʔɪ·wii·ʔaa·hʊs]   [book p. 379]
+  hukawirahaku, hukawirahakusuʔ [hʊ-kə-wɪ-rə-hə-kʊ,hʊ-kə-wɪ-rə-hə-kʊ-sʊʔ] -> [hʊ́·kə·wɪ·rə·hə·kʊ, hʊ́·kə·wɪ·rə·hə·kʊ·sʊʔ]   [book p. 393]
+  huraaririʔ rakaawarii      [hʊ-raá-rɪ-riʔrə-kaa-wə-rii] -> [hʊ·raá·rɪ·riʔ rə·kaa·wə·rii]   [book p. 395]
+  huraariwiiruku, rahuraariwiiruku [hʊ-raa-rɪ-wii-rʊ-kʊ,rà-hʊ-raa-rɪ-wii-rʊ-kʊ] -> [hʊ́·raa·rɪ·wii·rʊ·kʊ, rə́·hʊ·raa·rɪ·wii·rʊ·kʊ]   [book p. 395]
+  Huupirit Rakiciirikiisu    [huu-pí-rɪtrə-kɪ-čii-rɪ-kii-sʊ] -> [huu·pɪ́·rɪt rə·kɪ·čii·rɪ·kii·sʊ]   [book p. 399]
+  iriirasakuhaku, rasakuhaku [ɪ-rií-rə-sə-kʊ-hə-kʊ,rə-sə-kʊ-hə-kʊ] -> [ɪ·rií·rə·sə·kʊ̀·hə·kʊ, rə·sə·kʊ́·hə·kʊ]   [book p. 414]
+  iriitik                    [•i-rii-ti{k/t}•] -> [–ɪ·rii·tɪ{k/t}–]   [book p. 414]
+  Kaʔit Iriirakiicuhat       [kà-ʔɪtɪ-rií-rə-kii-čʊ-hət] -> [kə́·ʔɪt ɪ·rií·rə·kii·čʊ·hət]   [book p. 418]
+  kaʔit rarahkaawi           [kà-ʔɪtrə-ráh-kaa-wɪ] -> [kə́·ʔɪt rə·rə̀h·kaa·wɪ]   [book p. 418]
+  kariikiwat                 [•ka-rii-ki-wat•] -> [–kə·rii·kɪ·wət–]   [book p. 426]
+  kawiʔuktawuh               [•ka-wi-ʔuk-ta-wu(h)•] -> [–kə·wi·ʔuk·tə·wʊ(h)–]   [book p. 432]
+  kawitaat                   [•ka-wi-taat•] -> [–kə·wɪ·taat–]   [book p. 432]
+  kirahkaa, kiirahkaa        [•kɪ-rəh-kaa,•kii-rəh-kaa] -> [–kɪ·rəh·kaa,– kii·rəh·kaa]   [book p. 442]
+  kisuc kuruuru              [kí-sʊtskʊ-ruu-rʊ] -> [kɪ́·sʊts kʊ·ruu·rʊ]   [book p. 446]
+  Kskiitiʔiks Rasakuuru      [kskií-ti-ʔɪksrə-sə-kuu-rʊ] -> [kskií·ti·ʔɪks rə·sə·kuu·rʊ]   [book p. 449]
+  kskiitikstaaruʔ-ruksiriʔ, kskiitikstaaruʔ-a-ruk-siriʔ, kskiitiks-ruksiriʔ, kskiitiks-a-ruksiriʔ [kskii-tiks-taa-ruu•ruk-si-riʔ,kskii-tiks-taa-ruuʔ•a•ruk-si-riʔ,kskii-tiks•ruk-si-riʔ,kskii-tiks•a•ruk-si-riʔ] -> [kskii·tɪks·taa·ruu–rʊk·sɪ·riʔ, kskii·tɪks·taa·ruuʔ–ə– rʊk·sɪ·riʔ, kskii·tɪ́ks–rʊk·sɪ·riʔ, kskii·tɪks–ə–rʊk·sɪ·riʔ]   [book p. 449]
+  kuhku kisaactacapahtuʔ     [kʊh-kʊkí-saats-tə-čə-pəh-tʊʔ] -> [kʊ́h·kʊ kɪ́·saats·tə·čə·pəh·tʊʔ]   [book p. 449]
+  kuraaʔuʔ iriiraʔaahwaakaraʔu [kʊ-raa-ʔuʔɪ-rií-rə-ʔaah-waa-kə-rə-ʔu] -> [kʊ́·raa·ʔuʔ ɪ·rií·rə·ʔaah·waa·kə·rə·ʔu]   [book p. 449]
+  kutawikucuutariiʔuus       [kʊ-tə-wɪ-kʊ-čuu-tə-rii-ʔuus] -> [kʊ́·tə·wɪ·kʊ·čuu·tə·rii·ʔuus]   [book p. 452]
+  Paa Hiihwaakaruks          [paáhiih-waa-kə-rʊks] -> [paá hiih·waa·kə·rʊks]   [book p. 453]
+  pahuruʔ raarikawaawi       [pà-hʊ-rʊʔraa-rɪ-kə-waa-wɪ] -> [pə́·hʊ·rʊʔ raa·rɪ̀·kə·waa·wɪ]   [book p. 456]
+  Pakskiciis Iriirarahkaawi  [pàks-kɪ-čiisɪ-rií-rə-rəh-kaa-wɪ] -> [pə́ks·kɪ·čiis ɪ·rií·rə·rəh·kaa·wɪ]   [book p. 457]
+  pakuuʔat, pakuuht          [•pə-kuu-ʔət,•pə-kuu(h)t] -> [–pə·kuu·ʔət,– pə·kuu(h)t]   [book p. 458]
+  pic Ø                      [•pɪts•Ø] -> [–pɪts– Ø]   [book p. 459]
+  Piiraʔuʔ Rarahkaataʔiispuu [pií-rə-ʔuʔrə-rəh-kaa-tə-ʔiis-puu] -> [pií·rə·ʔuʔ rə·rəh·kaa·tə·ʔiis·puu]   [book p. 460]
+  Pitku Rasakuuru            [pɪt-kʊrà-sə-kuu-rʊ] -> [pɪt·kʊ rə́·sə·kuu·rʊ]   [book p. 462]
+  pitkusuraaruʔ-ruksiriʔ, pitkusuraaruʔ-a-ruksiriʔ [pít-kʊ-sʊ-raa-ruu•rʊk-sɪ-riʔ,pít-kʊ-sʊ-raa-ruuʔ•ə•rʊk-sɪ-riʔ] -> [pɪ́t·kʊ·sʊ·raa·ruu–rʊk·sɪ·riʔ, pɪ́t·kʊ·sʊ·raa·ruuʔ –ə–rʊk·sɪ·riʔ]   [book p. 462]
+  raakstacuukuku ruurariiruku [raáks-tə-čuu-kʊ-kʊruu-rà-rii-rʊ-kʊ] -> [raáks·tə·čuu·kʊ·kʊ ruu·rə́·rii·rʊ·kʊ]   [book p. 468]
+  raaripakusuʔ raraarikitawi [raa-rɪ-pà-kʊ-sʊʔrə-raa-rɪ-kɪ-tə-wɪ] -> [raa·rɪ·pə́·kʊ·sʊʔ rə·raa·rɪ·kɪ·tə·wɪ]   [book p. 471]
+  raawita                    [•raa-wi-ta•] -> [–raa·wɪ·tə–]   [book p. 477]
+  rahpiks, rahpiiks          [•rəh-pɪks,•rəh-piiks] -> [–rəh·pɪks,– rəh·piiks]   [book p. 480]
+  rahuraariwiiruku, huraariwiiruku [rà-hʊ-raa-rɪ-wii-rʊ-kʊ,hʊ-raa-rɪ-wii-rʊ-kʊ] -> [rə́·hʊ·raa·rɪ·wii·rʊ·kʊ, hʊ́·raa·rɪ·wii·rʊ·kʊ]   [book p. 480]
+  rakickaatiit rakiraruku    [rə-kíts-kaa-tiitrə-kí-rə-rʊ-kʊ] -> [rə·kɪ́ts·kaa·tiit rə·kɪ́·rə·rʊ·kʊ]   [book p. 482]
+  raracarariiruku icataaʔuʔ  [rà-rə-čə-rə-rii-rʊ-kʊɪ-čə-taa-ʔuʔ] -> [rə́·rə·čə·rə·rii·rʊ·kʊ ɪ·čə·taa·ʔuʔ]   [book p. 484]
+  rasakuhaku, iriirasakuhaku [rə-sə-kʊ-hə-kʊ,ɪ-rií-rə-sə-kʊ-hə-kʊ] -> [rə·sə·kʊ́·hə·kʊ, ɪ·rií·rə·sə·kʊ̀·hə·kʊ]   [book p. 486]
+  riruuhci [+ raar-]         [•ri-ruuh-ci•] -> [–rɪ·ruuh·čɪ–]   [book p. 494]
+  rutaaktaarapitaahaku       [rʊ-taak-taa-rə-pɪ-taa-hə-kʊ] -> [rʊ́·taak·taa·rə·pɪ·taa·hə·kʊ]   [book p. 496]
+  rutki rahaawarii           [rʊ́t-kɪrə-haá-wə-rii] -> [rʊ́t·kɪ rə·haá·wə·rii]   [book p. 496]
+  rutki raracawaktahu        [rʊ́t-kɪrə-rà-čə-wək-tə-hʊ] -> [rʊ́t·kɪ rə·rə́·čə·wək·tə·hʊ]   [book p. 496]
+  taawatat                   [•taa-wa-tat•] -> [–taa·wə·tət–]   [book p. 503]
+  taawatatk                  [+raar-][•taa-wə-tət(k)•] -> [–taa·wə·tət(k)–]   [book p. 503]
+  tahaariwiʔat               [•ta-haa-ri-wi-ʔat•] -> [–tə·haa·rɪ·wi·ʔət–]   [book p. 503]
+  takasis                    [•ta-ka-sis•] -> [–tə·kə·sɪs–]   [book p. 505]
+  tawakaʔu                   [•ta-wa-ka-ʔu•] -> [–tə·wə·kə·ʔu–]   [book p. 510]
+  Tawit Rasakuuru            [tà-wɪtrà-sə-kuu-rʊ] -> [tə́·wɪt rə́·sə·kuu·rʊ]   [book p. 512]
+  tiirisa                    [•tii-ri-sa•] -> [–tii·rɪ·sə–]   [book p. 513]
+  ukaʔaatawiʔuʔ, ukaatawiʔuʔ [ʊ-kə-ʔaa-tə-wi-ʔuʔ,ʊ-kaa-tə-wi-ʔuʔ] -> [ʊ́·kə·ʔaa·tə·wi·ʔuʔ, ʊ́·kaa·tə·wi·ʔuʔ]   [book p. 518]
+  ukaʔaatawiiriku, ukaatawiiriku [ʊ-kə-ʔaa-tə-wii-rɪ-kʊ,ʊ-kaa-tə-wii-rɪ-kʊ] -> [ʊ́·kə·ʔaa·tə·wii·rɪ·kʊ, ʊ́·kaa·tə·wii·rɪ·kʊ]   [book p. 518]
+  uukaʔaata, uukaata         [•uu-kə-ʔaa-tə,•uu-kaa-tə] -> [–uu·kə·ʔaa·tə,– uu·kaa·tə]   [book p. 520]
+  wiʔak                      [•wi-ʔa{k/t}•] -> [–wi·ʔə{k/t}–]   [book p. 526]
+  wickaa, ickaa              [•wɪts-kaa,•ɪts-kaa] -> [–wɪts·kaa,– ɪts·kaa]   [book p. 526]
+  wiicatk                    [•wii-cat(k)•] -> [–wii·čət(k)–]   [book p. 527]
+  wiriis                     [•wi-riis•] -> [–wɪ·riis–]   [book p. 528]
+  Witiʔahuuhaʔu Piiraʔuʔ     [wí-ti-ʔə-huu-hə-ʔupií-rə-ʔuʔ] -> [wɪ́·ti·ʔə·huu·hə·ʔu pií·rə·ʔuʔ]   [book p. 529]
+
+== added (9)
+  Ø                          [–Ø–]   [book p. 349]
+  huuruhaahkaatiit           [huú·rʊ·haah·kaa·tiit]   [book p. 399]
+  kaaks                      [–kaaks–]   [book p. 420]
+  kawiʔat                    [–kə·wi·ʔət–]   [book p. 431]
+  kiiskawaarasit             [–kiis·kə·waa·rə·sɪt–]   [book p. 440]
+  kiraar                     [–kɪ·raa(r)–]   [book p. 442]
+  pahuks                     [pə́·hʊks]   [book p. 456]
+  uhurarik                   [–ʊ·hʊ·rə·rɪ{k/t}–]   [book p. 517]
+  wakta/taa                  [–wək·tə/taa–]   [book p. 523]
+
+== printed form not found (0)
+
+== respelling changed (54)
+  a                          uh/ah -> uh   (content corrected)
+  a (ir...) istuʔ            uh-ihs-too' -> uh ihs-too'   (content corrected)
+  aar ciksuʔ                 ahd-CHIHK-soo' -> ahd CHIHK-soo'   (content corrected)
+  aar ciksuʔ                 ahd-CHIHK-soo' -> ahd CHIHK-soo'   (content corrected)
+  aar iraariʔ                ahd-ih-DAH-dih' -> ahd ih-DAH-dih'   (content corrected)
+  aciksuhuriwaar [+ neg.]    uh-tsihk-soo-hoo-dih-wah(d) -> uh-chihk-soo-hoo-dih-wah(d)   (content corrected)
+  apac ruurickuuki           UH-puhtsdoo-dihts-koo-kih -> UH-puhts doo-dihts-koo-kih   (content corrected)
+  ariisit rawarii            uh-dee-SIHTDUH-wuh-dee -> uh-dee-siht DUH-wuh-dee   (content corrected)
+  at istuʔ                   uht-ihs-too' -> uht ihs-too'   (content corrected)
+  ckipis raawarii            TSKIH-pihsdah-wuh-dee -> TSKIH-pihs dah-wuh-dee   (content corrected)
+  Ckirihki Kuuruuriki        TSKIH-dihh-kihkoo-DOO-dih-kih -> TSKIH-dihh-kih koo-DOO-dih-kih   (content corrected)
+  ckuskakusaʔiwiiʔaahus      tskoos-kuh-koo-suh-'ih-wee-'ah-hoos -> TSKOOS-kuh-koo-suh-'ih-wee-'ah-hoos   (content corrected)
+  hukawirahaku, hukawirahakusuʔ hoo-kuh-wih-duh-huh-koo / hoo-kuh-wih-duh-huh-koo-soo' -> HOO-kuh-wih-duh-huh-koo / HOO-kuh-wih-duh-huh-koo-soo'   (content corrected)
+  huraaririʔ rakaawarii      hoo-DAH-dih-dih'duh-kah-wuh-dee -> hoo-DAH-dih-dih' duh-kah-wuh-dee   (content corrected)
+  huraariwiiruku, rahuraariwiiruku hoo-dah-dih-wee-doo-koo / DUH-hoo-dah-dih-wee-doo-koo -> HOO-dah-dih-wee-doo-koo / DUH-hoo-dah-dih-wee-doo-koo   (content corrected)
+  Huupirit Rakiciirikiisu    hoo-PIH-dihtduh-kih-chee-dih-kee-soo -> hoo-PIH-diht duh-kih-chee-dih-kee-soo   (content corrected)
+  huuruhaahkaatiit           None -> HOO-doo-hahh-kah-teet   (added)
+  iriirasakuhaku, rasakuhaku ih-DEE-duh-suh-koo-huh-koo / duh-suh-koo-huh-koo -> ih-DEE-duh-suh-KOO-huh-koo / duh-suh-KOO-huh-koo   (content corrected)
+  Kaʔit Iriirakiicuhat       KUH-'ihtih-DEE-duh-kee-choo-huht -> KUH-'iht ih-DEE-duh-kee-choo-huht   (content corrected)
+  kaʔit rarahkaawi           KUH-'ihtduh-DUHH-kah-wih -> KUH-'iht duh-DUHH-kah-wih   (content corrected)
+  kaaks                      None -> kahks   (added)
+  kawiʔat                    None -> kuh-wih-'uht   (added)
+  kiiskawaarasit             None -> kees-kuh-wah-duh-siht   (added)
+  kiraar                     None -> kih-dah(d)   (added)
+  kisuc kuruuru              KIH-sootskoo-doo-doo -> KIH-soots koo-doo-doo   (content corrected)
+  Kskiitiʔiks Rasakuuru      KSKEE-tih-'ihksduh-suh-koo-doo -> KSKEE-tih-'ihks duh-suh-koo-doo   (content corrected)
+  kskiitikstaaruʔ-ruksiriʔ, kskiitikstaaruʔ-a-ruk-siriʔ, kskiitiks-ruksiriʔ, kskiitiks-a-ruksiriʔ kskee-tihks-tah-doo-dook-sih-dih' / kskee-tihks-tah-doo'-uh-dook-sih-dih' / kskee-tihks-dook-sih-dih' / kskee-tihks-uh-dook-sih-dih' -> kskee-tihks-tah-doo-dook-sih-dih' / kskee-tihks-tah-doo'-uh dook-sih-dih' / kskee-TIHKS-dook-sih-dih' / kskee-tihks-uh-dook-sih-dih'   (content corrected)
+  kuhku kisaactacapahtuʔ     kooh-KOOKIH-sahts-tuh-chuh-puhh-too' -> KOOH-koo KIH-sahts-tuh-chuh-puhh-too'   (content corrected)
+  kuraaʔuʔ iriiraʔaahwaakaraʔu koo-dah-'oo'ih-DEE-duh-'ahh-wah-kuh-duh-'oo -> KOO-dah-'oo' ih-DEE-duh-'ahh-wah-kuh-duh-'oo   (content corrected)
+  kutawikucuutariiʔuus       koo-tuh-wih-koo-choo-tuh-dee-'oos -> KOO-tuh-wih-koo-choo-tuh-dee-'oos   (content corrected)
+  Paa Hiihwaakaruks          PAHHEEH-wah-kuh-dooks -> PAH heeh-wah-kuh-dooks   (content corrected)
+  pahuks                     None -> PUH-hooks   (added)
+  pahuruʔ raarikawaawi       PUH-hoo-doo'dah-dih-kuh-wah-wih -> PUH-hoo-doo' dah-DIH-kuh-wah-wih   (content corrected)
+  Pakskiciis Iriirarahkaawi  PUHKS-kih-cheesih-DEE-duh-duhh-kah-wih -> PUHKS-kih-chees ih-DEE-duh-duhh-kah-wih   (content corrected)
+  Piiraʔuʔ Rarahkaataʔiispuu PEE-duh-'oo'duh-duhh-kah-tuh-'ees-poo -> PEE-duh-'oo' duh-duhh-kah-tuh-'ees-poo   (content corrected)
+  Pitku Rasakuuru            piht-KOODUH-suh-koo-doo -> piht-koo DUH-suh-koo-doo   (content corrected)
+  pitkusuraaruʔ-ruksiriʔ, pitkusuraaruʔ-a-ruksiriʔ PIHT-koo-soo-dah-doo-dook-sih-dih' / PIHT-koo-soo-dah-doo'-uh-dook-sih-dih' -> PIHT-koo-soo-dah-doo-dook-sih-dih' / PIHT-koo-soo-dah-doo' uh-dook-sih-dih'   (content corrected)
+  raakstacuukuku ruurariiruku DAHKS-tuh-choo-koo-koodoo-DUH-dee-doo-koo -> DAHKS-tuh-choo-koo-koo doo-DUH-dee-doo-koo   (content corrected)
+  raaripakusuʔ raraarikitawi dah-dih-PUH-koo-soo'duh-dah-dih-kih-tuh-wih -> dah-dih-PUH-koo-soo' duh-dah-dih-kih-tuh-wih   (content corrected)
+  rahuraariwiiruku, huraariwiiruku DUH-hoo-dah-dih-wee-doo-koo / hoo-dah-dih-wee-doo-koo -> DUH-hoo-dah-dih-wee-doo-koo / HOO-dah-dih-wee-doo-koo   (content corrected)
+  rakickaatiit rakiraruku    duh-KIHTS-kah-teetduh-KIH-duh-doo-koo -> duh-KIHTS-kah-teet duh-KIH-duh-doo-koo   (content corrected)
+  raracarariiruku icataaʔuʔ  DUH-duh-chuh-duh-dee-doo-kooih-chuh-tah-'oo' -> DUH-duh-chuh-duh-dee-doo-koo ih-chuh-tah-'oo'   (content corrected)
+  rasakuhaku, iriirasakuhaku duh-suh-koo-huh-koo / ih-DEE-duh-suh-koo-huh-koo -> duh-suh-KOO-huh-koo / ih-DEE-duh-suh-KOO-huh-koo   (content corrected)
+  riruuhci [+ raar-]         dih-dooh-tsih -> dih-dooh-chih   (content corrected)
+  rutaaktaarapitaahaku       doo-tahk-tah-duh-pih-tah-huh-koo -> DOO-tahk-tah-duh-pih-tah-huh-koo   (content corrected)
+  rutki rahaawarii           DOOT-kihduh-HAH-wuh-dee -> DOOT-kih duh-HAH-wuh-dee   (content corrected)
+  rutki raracawaktahu        DOOT-kihduh-DUH-chuh-wuhk-tuh-hoo -> DOOT-kih duh-DUH-chuh-wuhk-tuh-hoo   (content corrected)
+  Tawit Rasakuuru            TUH-WIHTDUH-suh-koo-doo -> TUH-wiht DUH-suh-koo-doo   (content corrected)
+  uhurarik                   None -> oo-hoo-duh-dih(k/t)   (added)
+  ukaʔaatawiʔuʔ, ukaatawiʔuʔ oo-kuh-'ah-tuh-wih-'oo' / oo-kah-tuh-wih-'oo' -> OO-kuh-'ah-tuh-wih-'oo' / OO-kah-tuh-wih-'oo'   (content corrected)
+  ukaʔaatawiiriku, ukaatawiiriku oo-kuh-'ah-tuh-wee-dih-koo / oo-kah-tuh-wee-dih-koo -> OO-kuh-'ah-tuh-wee-dih-koo / OO-kah-tuh-wee-dih-koo   (content corrected)
+  wakta/taa                  None -> wuhk-tuh/tah   (added)
+  wiicatk                    wee-tsuht(k) -> wee-chuht(k)   (content corrected)
+  Witiʔahuuhaʔu Piiraʔuʔ     WIH-tih-'uh-hoo-huh-'OOPEE-duh-'oo' -> WIH-tih-'uh-hoo-huh-'oo PEE-duh-'oo'   (content corrected)
+
+== learner spelling corrected (3)
+  aciksuhuriwaar [+ neg.]    aciksuhuriwâr [+ neg.] -> ačiksuhuriwâr [+ neg.]
+  riruuhci [+ raar-]         rirûhci [+ râr-] -> rirûhči [+ râr-]
+  wiicatk                    wîcat k -> wîčatk
+
+== learner spelling differs from the rule (2)
+  Ø (ut...) paksiriʔ         stored Ø (ut...) pak siri'; the rule gives Ø (ut...) paksiri'
+  tawihuhtawii               stored tawihuhtawî (ut...); the rule gives tawihuhtawî

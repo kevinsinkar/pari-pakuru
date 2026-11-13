@@ -2,7 +2,7 @@
  "audit": "source-fidelity audit 2026-11",
  "prompt": "prompts/source_fidelity_audit.md",
  "created": "2026-11-13 12:35",
- "updated": "2026-11-13 13:58",
+ "updated": "2026-11-13 14:07",
  "cost": {
   "images_read_by_model": 238,
   "subagents_started": 18
@@ -219,14 +219,21 @@
   },
   "9": {
    "name": "Store Parks's own IPA symbols; regenerate and check the simplified forms",
-   "status": "pending",
+   "status": "running",
    "units_total": null,
    "units_done": 0,
-   "counts": {},
+   "counts": {
+    "phonetic_forms_set_to_print": 4231,
+    "symbols_only": 4147,
+    "content_corrected": 75,
+    "added": 9,
+    "respellings_changed": 54,
+    "learner_spellings_corrected": 3
+   },
    "outputs": [],
-   "started": null,
+   "started": "2026-11-13 14:06",
    "finished": null,
-   "note": ""
+   "note": "database, both JSON files and the frozen flashcards in step; derived material (site, cards, word-construction outputs) still to rebuild"
   }
  }
 }

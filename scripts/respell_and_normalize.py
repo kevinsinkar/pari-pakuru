@@ -35,6 +35,9 @@ from collections import Counter, defaultdict
 from datetime import datetime
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from ipa_notation import to_working  # noqa: E402
+
 # ---------------------------------------------------------------------------
 # Constants — Mapping tables derived from Parks & Blue Book
 # ---------------------------------------------------------------------------
@@ -122,6 +125,8 @@ def parse_phonetic_form(pf):
 
     Returns (None, error_string) on failure.
     """
+    pf = to_working(pf, old_vowels=True)   # stored forms are in Parks's printed notation since 2026-11-13
+
     if not pf or not pf.strip():
         return None, "empty_phonetic_form"
 
@@ -269,6 +274,8 @@ def generate_simplified_pronunciation(phonetic_form):
     Returns (pronunciation, warnings_list).
     Warnings are non-fatal notes (unknown chars, edge cases).
     """
+    phonetic_form = to_working(phonetic_form, old_vowels=True)   # stored forms are in Parks's printed notation since 2026-11-13
+
     warnings = []
 
     if not phonetic_form or not phonetic_form.strip():
@@ -401,6 +408,8 @@ def extract_c_pattern_from_phonetic(phonetic_form, ts_as_c=False):
     ts_as_c=True each 'ts' digraph is counted as one 'c' so the pattern
     aligns with the headword's c positions.
     """
+    phonetic_form = to_working(phonetic_form, old_vowels=True)   # stored forms are in Parks's printed notation since 2026-11-13
+
     if not phonetic_form:
         return []
 
@@ -437,6 +446,8 @@ def generate_normalized_form(headword, phonetic_form):
 
     Returns (normalized_form, warnings_list).
     """
+    phonetic_form = to_working(phonetic_form, old_vowels=True)   # stored forms are in Parks's printed notation since 2026-11-13
+
     if not headword:
         return None, ["empty_headword"]
 
