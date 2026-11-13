@@ -11,7 +11,7 @@ __pycache__/
 *_checkpoint.json
 tag_review_queue.json
 
-# SQLite database (binary — upload separately to PythonAnywhere)
+# SQLite database (binary; its contents are in git as text under DB/dump/)
 # Exception: GitHub Pages builds to docs/
 *.db
 *.db-shm

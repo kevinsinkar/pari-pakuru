@@ -1,13 +1,19 @@
 # Deployment
 
-The project is published in two ways. Both read the same database.
+The project is published in one place: the static site on GitHub Pages, built
+into the [docs/](docs/) folder. Nothing else is hosted.
 
-| | Static site | Hosted web app |
+The Flask app in [web/](web/) is a local tool. It runs on your own machine,
+and the static site is built from its templates. It was hosted on
+PythonAnywhere until that was retired on 2026-11-13; see
+[the note at the end](#the-retired-hosted-app).
+
+| | Static site (published) | Flask app (local only) |
 |---|---|---|
-| Where | GitHub Pages, from the [docs/](docs/) folder | PythonAnywhere, running [web/](web/) through [wsgi.py](wsgi.py) |
+| Where | GitHub Pages, from [docs/](docs/) | `http://localhost:5000` on your machine |
 | What it offers | Search, Blue Book lessons, weekly flashcards, pronunciation guide | Everything: entry pages, sentence builder, spaced-repetition study, feedback, dashboard |
-| Needs a server | No | Yes |
-| Updated by | Rebuilding `docs/` on your machine and pushing | Pulling the code and uploading the database |
+| Needs a server | No | No; you start it when you want it |
+| Updated by | Rebuilding `docs/` on your machine and pushing | Nothing to do: it reads the database directly |
 
 ## Static site (GitHub Pages)
 
@@ -33,6 +39,11 @@ cd docs && python -m http.server 8000                         # look at it: http
 git add docs && git commit -m "Rebuild static site" && git push
 ```
 
+Every build draws a new random sample of exercise items for each lesson, so
+all twenty `lesson-N.html` files show a one-line difference after a rebuild
+even when no data changed. That difference is harmless; commit it or restore
+those files, as you prefer.
+
 The site uses relative links, so it works from the repository's Pages address
 (`https://<user>.github.io/pari-pakuru/`) without any base-path setting.
 `docs/.nojekyll` stops GitHub from running Jekyll over the files.
@@ -43,7 +54,10 @@ Repository **Settings → Pages → Source: GitHub Actions**. Nothing else is ne
 
 ### What the static site cannot do
 
-- No feedback form, no study progress on a server, no sentence builder, no dashboard. Those need the hosted app.
+- No feedback form, no study progress on a server, no sentence builder, no
+  per-entry pages, no dashboard. Those exist only in the local Flask app, so
+  no visitor can reach them. Corrections from visitors come in as GitHub
+  issues.
 - Flashcard progress is kept in the visitor's browser, keyed to week numbers. That is why the flashcard sets are frozen: see [curriculum/README.md](curriculum/README.md).
 - The "word of the day" is whatever word was chosen when the site was last built.
 
@@ -52,35 +66,28 @@ Repository **Settings → Pages → Source: GitHub Actions**. Nothing else is ne
 - Do not publish ceremonial vocabulary that the community has not reviewed. Flashcard Week 20 ("Ceremony & Sacred") is held back: it is listed in `curriculum/held_for_review.json`, so the app returns "not found" for it and the build writes no page for it (and removes an old one). To release a week, delete its entry from that file and rebuild. Week numbers never change, so learners' saved progress is not disturbed either way ([reports/audit_data_construction_2026-10-01.md](reports/audit_data_construction_2026-10-01.md), item B6).
 - The word-building guide in `curriculum/roots_v2/` is **not** on the site. Putting it there is a publishing decision, not a build step.
 
-## Hosted web app (PythonAnywhere)
-
-`wsgi.py` is the entry point. In PythonAnywhere's **Web** tab:
-
-| Setting | Value |
-|---|---|
-| WSGI file | `/home/<username>/pari-pakuru/wsgi.py` |
-| Source code and working directory | `/home/<username>/pari-pakuru` |
-| Static files | URL `/static/` → `/home/<username>/pari-pakuru/web/static` |
-
-`requirements.txt` lists what the app needs (Flask).
-
-The database is not in git, so upload `skiri_pawnee.db` to the project root
-separately. `wsgi.py` points the app at it through the `SKIRI_DB_PATH`
-environment variable.
-
-### Update the hosted app
-
-1. Back up the database on the server if it holds feedback or study progress that your local copy does not.
-2. `git pull` on the server.
-3. Upload the new `skiri_pawnee.db` if the data changed.
-4. Press **Reload** in the Web tab.
-
-Feedback that visitors submit is written to the server's database and exported
-to `exports/community_feedback.json` after each submission, so that it can be
-committed. It is the one table that cannot be rebuilt from the sources.
-
-## Run locally
+## Run the Flask app locally
 
 ```bash
-.venv/Scripts/python -m web.app          # http://localhost:5000
+.venv/Scripts/python -m pip install -r requirements.txt   # Flask
+.venv/Scripts/python -m web.app                            # http://localhost:5000
 ```
+
+Use it to look up full entries, to try the sentence builder, and to check a
+template before rebuilding the site. Feedback entered in the local app is
+written to your database and exported to `exports/community_feedback.json`.
+
+## The retired hosted app
+
+Until 2026-11-13 the Flask app was also hosted on PythonAnywhere, through a
+`wsgi.py` in the repository root. That hosting is no longer in use, and
+`wsgi.py` and the instructions for it were removed (they are in git history
+before that date).
+
+If the PythonAnywhere account still exists, check that the web app there is
+disabled or deleted. Nothing from this repository was uploaded to it on or
+after 2026-11-13, so unless someone updated it by hand its copy of the code
+and database predates that day's corrections: it would have the uncorrected
+forms, and it would still serve flashcard Week 20, which is held for
+community review everywhere else. Removing it is done in the PythonAnywhere
+dashboard; nothing in this repository can do it.

@@ -3,6 +3,10 @@
 The Flask web app (Flask, SQLite, Pico CSS, HTMX). It reads
 `skiri_pawnee.db` from the repository root.
 
+**It runs locally only.** It was hosted on PythonAnywhere until 2026-11-13;
+that hosting is retired. What the public sees is the static site in
+[../docs/](../docs/), which is built from the templates here.
+
 ```bash
 .venv/Scripts/python -m web.app            # http://localhost:5000
 .venv/Scripts/python -m web.app --port 8080 --debug
@@ -27,19 +31,24 @@ The routes are listed in the [quick reference](../Quick_Reference_Guide.md#web-a
 brings in `person_forms.py`, `template_slot_fillers.py`, `display_utils.py`).
 Changing those changes the app.
 
-## Two ways it is published
+## How it reaches the public
 
-The same templates serve both the hosted app and the static site:
-`scripts/build_static_site.py` renders a subset of them into `docs/` and
-rewrites the links. See [../DEPLOYMENT.md](../DEPLOYMENT.md). When you change a
-template, check both.
+Only through the static site: `scripts/build_static_site.py` renders a subset
+of these templates (home, about, guide, flashcards, lessons) into `docs/` and
+rewrites the links. See [../DEPLOYMENT.md](../DEPLOYMENT.md). When you change
+one of those templates, rebuild the site and look at the result.
+
+Everything else here (entry pages, browse, sentence builder, study, feedback,
+dashboard) is seen only by someone running the app on their own machine.
 
 ## Rules the app keeps
 
 - IPA is shown only when Parks prints it for that word.
 - A generated form is always marked as generated, with a confidence level.
 - A flashcard week that is held for review is not served: `/flashcards/<week>` answers "not found" for it.
-- Feedback from visitors is never applied automatically. It waits in
-  `/admin/feedback` for a person to accept or reject it.
+- Feedback is never applied automatically. It waits in `/admin/feedback` for
+  a person to accept or reject it. With no hosted app, feedback can only be
+  entered by someone running the app locally; visitors to the public site
+  send corrections as GitHub issues.
 - Every feedback submission is also written to `exports/community_feedback.json`
   so that it reaches git.

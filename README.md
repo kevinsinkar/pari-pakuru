@@ -25,8 +25,8 @@ No other source is used. Where the two disagree, both readings are shown.
 |---|---|
 | **Dictionary database** | 4,337 entries (4,244 from Parks, 93 words found only in the Blue Book), 5,504 senses, 9,562 attested verb forms for 2,240 verbs, 2,634 example sentences. Compared with the printed pages in full on 2026-11-13 and corrected: 99.7% of the dictionary fields are now identical to print |
 | **Pronunciation** | Parks's IPA for all 4,244 of his entries, stored in his own symbols, 2,218 of them with the accented syllable marked; a learner respelling for 4,332. IPA is never generated, only copied from Parks; the Blue Book-only words have none |
-| **Web app** | Flask app: two-way search, entry pages, Blue Book lessons, weekly flashcards, spaced-repetition study, sentence builder, community feedback |
-| **Public static site** | The search, flashcard and lesson pages, built into [docs/](docs/) and served by GitHub Pages |
+| **Public site** | The search, flashcard, lesson and pronunciation-guide pages, built into [docs/](docs/) and served by GitHub Pages. This is the only place the project is published |
+| **Local web app** | Flask app that runs on your own machine: full entry pages, sentence builder, spaced-repetition study, feedback queue, dashboard. Not hosted anywhere since 2026-11-13; the public site is built from its templates |
 | **Blue Book lessons** | All 20 lessons with dialogues, vocabulary and grammar notes |
 | **Flashcards** | 24 weekly sets, 387 words, frozen on 2026-10-12; 23 sets (372 words) are shown and one is held for community review; printable sheets for writing cards by hand |
 | **Word-building guide** | 549 roots and 30 affixes that let a learner take apart 1,791 of the dictionary's words completely (41%); 15 lessons. See [curriculum/roots_v2/](curriculum/roots_v2/) |
@@ -43,7 +43,7 @@ No other source is used. Where the two disagree, both readings are shown.
 | [scripts/](scripts/) | Every processing step, one script per step. [scripts/README.md](scripts/README.md) lists them in order | Yes |
 | [scripts/morphology_v2/](scripts/morphology_v2/) | The word-construction analysis (2026-11) | Yes |
 | [curriculum/](curriculum/) | Learner material built from the database: flashcard sets and the word-building guides | Only `flashcard_sets.json`, deliberately |
-| [web/](web/) | The Flask web app | Yes |
+| [web/](web/) | The Flask web app, run locally; its templates are what the static site is built from | Yes |
 | [docs/](docs/) | **Generated.** The static site that GitHub Pages serves | No, rebuild |
 | [reports/](reports/) | What each step found: validation results, audits, change logs | No |
 | [prompts/](prompts/) | The written instructions each stage was built from: AI prompts, design specs, JSON schemas | Yes |
@@ -56,9 +56,9 @@ Files in the root:
 |---|---|
 | [pari_pakuru_project_scope.md](pari_pakuru_project_scope.md) | The project log: every phase, what was done, the results, what is still open |
 | [Quick_Reference_Guide.md](Quick_Reference_Guide.md) | Cheat sheet: how a dictionary entry is laid out, sound system, database tables, web routes |
-| [DEPLOYMENT.md](DEPLOYMENT.md) | How the static site and the hosted web app are published |
+| [DEPLOYMENT.md](DEPLOYMENT.md) | How the static site is published, and how to run the web app locally |
 | `skiri_pawnee.db` | The database. **Not in git** (see below) |
-| `requirements.txt`, `wsgi.py` | What the hosted web app needs |
+| `requirements.txt` | What the web app and the site build need (Flask) |
 
 ## How the data flows
 
@@ -73,7 +73,7 @@ Blue Book text ────────┘           (Dictionary Data/)         
 1. **Parse.** Each dictionary page was read by an AI model into JSON, then verified, normalised and linked (phases 1.1a to 1.1d).
 2. **Import.** The JSON was loaded into SQLite (phase 1.2).
 3. **Enrich.** Later steps added semantic tags, Blue Book attestations, lessons, grammar tables and repairs straight into the database.
-4. **Publish.** The web app reads the database; the static site and the flashcards are built from it.
+4. **Publish.** The static site and the flashcards are built from the database and pushed to GitHub Pages. The web app reads the database directly and runs only on your own machine.
 5. **Analyse.** The word-construction analysis reads the database and writes its own outputs; it never changes the database.
 
 [scripts/README.md](scripts/README.md) gives the script for each step. The project log gives the results.
@@ -199,8 +199,9 @@ Measurements, not pass or fail:
 
 Corrections are welcome, most of all from Pawnee community members, language
 learners and linguists. Please open an issue with the headword and the page
-number, or use the flag button on an entry page in the web app. Every
-correction is reviewed by a person before it is accepted.
+number. (The flag button on entry pages exists only in the local web app,
+which is not hosted.) Every correction is reviewed by a person before it is
+accepted.
 
 ## References
 

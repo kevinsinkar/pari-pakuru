@@ -4,7 +4,7 @@ Data written out of the database so that it is kept in git.
 
 | File | What it is |
 |---|---|
-| `community_feedback.json` | A copy of the `community_feedback` table: the flags and confirmations people have submitted through the web app. The app rewrites this file after every submission and every review |
+| `community_feedback.json` | A copy of the `community_feedback` table: the flags and confirmations submitted through the web app. The app rewrites this file after every submission and every review. The app is not hosted any more (since 2026-11-13), so new rows can only come from someone running it locally |
 
 This is the one table that cannot be rebuilt from the two sources, because it
 is knowledge that people contributed. The database is not in git, so this file

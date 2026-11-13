@@ -1,7 +1,8 @@
 # Pari Pakuru — Skiri Pawnee Language Tool: Project Log
 
 *Last updated 2026-11-13. This is the record of what was done in each phase,
-with its results, and of what is still open. For the folder layout see
+with its results, and of what is still open. What to do next, in order, is in
+[What's next](#whats-next). For the folder layout see
 [README.md](README.md); for the script behind each step see
 [scripts/README.md](scripts/README.md).*
 
@@ -43,12 +44,70 @@ Build a comprehensive Skiri Pawnee language preservation tool: a searchable, lin
 | 2026-11-13 | IPA | Parks's own phonetic symbols stored for all 4,244 of his entries (ə́, ɪ́, the syllable dot, the edge dash); 75 forms corrected in content, 9 added; respelling and learner spelling made again and checked | done |
 | 2026-11-13 | Blue Book | The rest of the Blue Book forms read from the scan (843 more crops; with the audit's 153 that is 949 distinct forms, every one that has a page): 715 corrected (565 accents restored, 105 OCR slips, 45 apostrophes, dots and spaces); three entries built on misread forms corrected; made-up phonetic forms removed from the 93 Blue Book-only entries | done; 77 forms left for a person (open item 42) |
 | 2026-11-13 | rebuild | Static site, weekly flashcards, printable sheets and word-construction outputs rebuilt from the corrected data; engines measured again | done |
+| 2026-11-13 | hosting | The PythonAnywhere hosting of the web app retired; `wsgi.py` removed. GitHub Pages is the only place the project is published; the Flask app is a local tool | done |
 
 The database on 2026-11-13, after that day's fixes: 4,337 entries (4,244 from
 Parks, 93 Blue Book only), 5,504 senses, 9,562 verb forms for 2,240 verbs,
 2,634 examples, IPA for the 4,244 Parks entries (2,218 with an accent mark)
 and for none of the Blue Book-only ones. Compared with the printed page,
 50,597 of 50,757 dictionary fields are identical (99.68%). Full table list: [Quick_Reference_Guide.md](Quick_Reference_Guide.md).
+
+---
+
+## What's next
+
+*Ranked on 2026-11-13, after the audit's fixes and with GitHub Pages as the
+only publication. Numbers in the last column are open items, further down.*
+
+How the ranking was made: first what only people outside the project can
+settle and takes longest to arrange; then what is wrong or missing in front
+of learners on the public site today; then what makes the stored data more
+complete; last, what nobody outside this repository can see.
+
+Size: **small** is part of one working session, **medium** one or two
+sessions, **large** more.
+
+| Rank | What | Why at this rank | Who | Size | Open items |
+|---|---|---|---|---|---|
+| 1 | **Ask the Pawnee Nation's language and culture people to review**: the ceremonial vocabulary, the 387-word flashcard list, and the word-building guide | Nothing in code replaces it, and it takes the longest to arrange. It decides whether flashcard Week 20 is ever shown, whether the word-building guide is published, and whether ceremonial entries should stay searchable on the public site | You make the contact; the review material can be prepared here | Small to prepare; the review itself is theirs to pace | 1, 2, 3, 14, 43 |
+| 2 | **Correct the page citations** | The public site and the cards cite "Parks Dictionary, p. N" for every entry, and for 3,511 of the 4,244 Parks entries N is the number of a PDF file, 348 less than the book page. A citation that leads to the wrong page undermines everything else. It is mechanical now: the audit paired every entry with its printed page | Code | Small | 15 |
+| 3 | **Make the public site carry the dictionary, and describe itself truthfully** | It is now the only thing anyone sees. It shows headword, spellings, IPA, senses and examples, and leaves out the five verb forms of 2,240 verbs, the etymologies and the cognates. Its About page lists features only the local app has. A visitor has no way to send a correction. It says "pitch" where Parks says the marks show the accented syllable | Code; you decide the wording and how much of an entry to show | Medium | 47, 48, 49, 9, 21 |
+| 4 | **Settle the forms that still need a look at the page** | 77 Blue Book forms, 51 words of the grammar chapter and a handful of others are known to be doubtful and are listed one by one. Blue Book forms outside the corrected tables still lack their accents. A bounded job that closes the audit | A person with the books; or one or two more blind readings (about 230,000 tokens each), with wider crops | Small to medium | 42, 45 |
+| 5 | **Add what the dictionary prints and the database lacks** | 58 printed stretches are missing: about 15 examples, the derived stems under ten bound stems, qualifiers. 38 values keep a line-break hyphen. All of it can be taken from the PDF's text layer and checked by the existing comparison, with no AI reading | Code | Medium | 34, 41, 16 |
+| 6 | **Decide what becomes of the engines** | The conjugation engine gets 79.4% of Appendix 1 and its accent rules were worked out from misread data. None of it is on the public site, so nothing wrong is in front of learners; that is why it ranks low. Recommended: withdraw the accent rules, leave from-scratch conjugation paused, and extend person derivation from attested forms instead | Decision yours; then code | Medium to large | 39, 40, 25, 26, 13, 24 |
+| 7 | **Repair the English-to-Skiri file and re-import the English index** | The database's English index is an early, uncleaned copy. Only the local app reads it; the public search does not. Worth doing before anything new is built on those tables | Code | Medium | 32, 22 |
+| 8 | **Read what has not been read, build what has not been built** | Front-matter chapters 2 and 5; the Blue Book glossary (pages 123 to 130); Blue Book headwords as the book prints them; printable word lists and paradigm tables | Code, with blind readings for the scanned pages | Medium each | 37, 28, 35, 27 |
+
+Small things to do along the way, whenever the file concerned is open: retire
+the older respelling function (46); the space before punctuation in glosses
+(18); the bare `Ø` headwords in search and the script loaded twice (21).
+
+### The first step of each of the top three
+
+1. **Review.** Put together one packet a reviewer can read without the
+   repository: the Week 20 cards and the 176 words flagged as ceremonial (by
+   keyword only, so the list needs a person in any case); the 387-word list;
+   the ten questions at the top of `curriculum/roots_v2/validation_report.md`;
+   and the two teaching questions, whether learners should see Parks's
+   difference between tense and lax short vowels (43) and what to call the
+   accent marks (9). Ask at the same time whether the ceremonial entries
+   should be searchable on the public site at all.
+2. **Page citations.** A script, dry run first, that sets `page_number` to the
+   book page for every Parks entry from the audit's pairing of entries with
+   printed pages (`scripts/source_audit/s2e_segment.py`), then the JSON, the
+   frozen flashcards, the printable sheets and the site. Entry ids keep their
+   old page fragment: ids must stay stable.
+3. **Public site.** Decide how much of an entry to show. The recommendation is
+   everything Parks prints: verb forms, etymology and cognates added to
+   `docs/data/dictionary.json` and to the search result. Then rewrite the
+   About page for the site as it is, add a "send a correction" link, and
+   change "pitch" to the agreed word in one pass.
+
+### What not to do next
+
+- Do not show Week 20 or publish the word-building guide before rank 1 has an answer.
+- Do not take up from-scratch conjugation again without a decision (rank 6). The standing rule is that derived forms start from attested ones.
+- Do not build on `english_index` or `cross_references` before rank 7.
 
 ---
 
@@ -1407,7 +1466,7 @@ here, so that there is one list to keep current.
 - The console uses code page 1252. A script should write Pawnee text through `sys.stdout.buffer`, or be run with `PYTHONIOENCODING=utf-8`, and should open files with `encoding="utf-8"`.
 - AI extraction steps use the Gemini API (`GEMINI_API_KEY`, model `gemini-2.5-flash`) through the `google.genai` package. The two original page parsers still use the older `google.generativeai`.
 - The database is not in git. Backups: `OneDrive/pari_pakuru_backups/` and `~/.pari_pakuru_backups/`.
-- Hosted app: PythonAnywhere at `/home/paripakuru/main/`, entry point `wsgi.py`. Static site: GitHub Pages from `docs/`. See `DEPLOYMENT.md`.
+- Published: the static site only, on GitHub Pages from `docs/`. The Flask app runs locally. The PythonAnywhere hosting was retired on 2026-11-13 and `wsgi.py` removed. See `DEPLOYMENT.md`.
 
 ---
 
@@ -1478,15 +1537,24 @@ here, so that there is one list to keep current.
 41. **218 differences between the dictionary entries and the page are left** (`reports/source_audit_2026-11/after_fixes/s2e_differences.jsonl`): 58 printed stretches the database lacks (item 34); 38 values that keep a line-break hyphen, 34 of them etymologies; 31 differences of spacing; 13 grammatical classes, nine of them the project's own N-KIN (item 17); the rest single letters, hyphens and glottal stops in etymologies and cognates, and a few words of English. Two are headwords (a hyphen), three are verb forms of one entry (item 45), none is a phonetic form.
 42. **77 Blue Book forms the readers could not settle** (`reports/source_audit_2026-11/bluebook_rest_graded.json` and the last section of `bluebook_applied_report.txt`): letters differ in 49, capitals in 12, the reader was unsure of 8, the crop missed 8. Blue Book forms held outside the corrected tables still lack the printed accents: `bb_gap_triage`, `bb_function_words`, `function_words`, and the forms written into the sentence templates.
 43. **Tense and lax short vowels in the respelling.** Parks writes [i], [u] in some places and [ɪ], [ʊ] in others; the respelling writes `ih` and `oo` for both (589 entries, counted by `scripts/check_simplified_forms.py`). Whether learners should see the difference is a teaching decision for someone who knows the language.
-44. **The hosted web app** (PythonAnywhere) runs the code and the database from before 2026-11-13 until they are uploaded (`DEPLOYMENT.md`).
+44. *(Closed 2026-11-13: the PythonAnywhere hosting is no longer in use and was taken out of the repository.)* If the account still exists, its web app should be disabled there: unless someone updated it by hand, it holds the data from before the corrections and would still serve flashcard Week 20.
 45. **Left by the fix script for a person with the page** (end of `applied_fixes_report.txt`): the singular cell of *tir* 'to be together' in Appendix 2, empty in print and stored as `tir`, which the conjugation engine reads; 51 words of the grammar chapter that were matched by likeness (`chapter4_differences.json`); verb forms 2, 4 and 5 of *itkaakahaaruʔ*; *rihkuupa´kstarit* in an example of *apak*, a printing oddity; the combining form `takasistik [- + raar-]`.
 46. **An older respelling function is still in the code.** `generate_simplified_pronunciation` in `scripts/respell_and_normalize.py` returns `? ?` for a phonetic form of several words. Stored respellings are made by `scripts/fix_pronunciations.py`, which handles them; the older function should be retired.
+
+### The public site, now the only publication (2026-11-13)
+
+47. **The About page lists features the public site does not have**: the sentence builder, conjugation tables, tag browsing, the learner and expert modes, the dashboard, community feedback. It was written for the hosted app (`web/templates/about.html`, rendered into `docs/about.html`).
+48. **Most of a dictionary entry is not on the public site.** `docs/data/dictionary.json` carries headword, learner spelling, IPA, respelling, class, page, senses and examples. The five verb forms (9,562 forms for 2,240 verbs), the etymologies, the cognates, the cross-references and the topic tags were reachable through the hosted app's entry pages and are not published anywhere now.
+49. **A visitor cannot send a correction from the site.** The flag button and the feedback queue belong to the Flask app, which is not hosted. Corrections can come only as GitHub issues, and the site does not say so.
 
 ---
 
 ## How to Use This Document
 
-Start a working session by reading "Status at a glance" and "Open items".
+Start a working session by reading "Status at a glance", "What's next" and
+"Open items". When an item of "What's next" is done, take it out of the
+ranking and re-rank what is left; the ranking is a recommendation made on the
+date it carries, not a plan anyone has agreed to.
 Refer to a phase by its name ("Phase 6.2") or to an open item by its number.
 
 When a phase is finished or a number changes, update this file in the same

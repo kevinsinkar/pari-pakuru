@@ -216,6 +216,10 @@ proclitics (slots 1-8) → inner prefixes (10-26) → STEM → suffixes (27-30)
 
 ## Web app routes
 
+The Flask app runs locally only (`python -m web.app`). The public site on
+GitHub Pages has the search, flashcard, lesson and guide pages and none of
+the others.
+
 | Route | Page |
 |---|---|
 | `/` | home, word of the day |
