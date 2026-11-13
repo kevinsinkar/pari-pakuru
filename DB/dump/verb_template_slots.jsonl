@@ -1,0 +1,27 @@
+{"slot_number": 1, "slot_name": "QUOTATIVE", "slot_group": "proclitic", "description": "Proclitic: QUOTATIVE", "required": 0}
+{"slot_number": 2, "slot_name": "DUBITATIVE", "slot_group": "proclitic", "description": "Proclitic: DUBITATIVE", "required": 0}
+{"slot_number": 3, "slot_name": "INFERENTIAL", "slot_group": "proclitic", "description": "Proclitic: INFERENTIAL", "required": 0}
+{"slot_number": 4, "slot_name": "EVIDENTIAL", "slot_group": "proclitic", "description": "Proclitic: EVIDENTIAL", "required": 0}
+{"slot_number": 5, "slot_name": "DUAL", "slot_group": "proclitic", "description": "Proclitic: DUAL", "required": 0}
+{"slot_number": 6, "slot_name": "INDEFINITE", "slot_group": "proclitic", "description": "Proclitic: INDEFINITE", "required": 0}
+{"slot_number": 7, "slot_name": "REFLEXIVE", "slot_group": "proclitic", "description": "Proclitic: REFLEXIVE", "required": 0}
+{"slot_number": 8, "slot_name": "NEGATIVE", "slot_group": "proclitic", "description": "Proclitic: NEGATIVE", "required": 0}
+{"slot_number": 10, "slot_name": "MODE", "slot_group": "inner_prefix", "description": "Modal prefix (required)", "required": 1}
+{"slot_number": 11, "slot_name": "AGENT", "slot_group": "inner_prefix", "description": "Agent pronoun / Obviative", "required": 0}
+{"slot_number": 12, "slot_name": "INCLUSIVE", "slot_group": "inner_prefix", "description": "Inclusive agent pronoun", "required": 0}
+{"slot_number": 13, "slot_name": "AGT_PL_POSS_PREV", "slot_group": "inner_prefix", "description": "Agent plural / Agent possessor / Preverb", "required": 0}
+{"slot_number": 15, "slot_name": "PATIENT", "slot_group": "inner_prefix", "description": "Patient pronoun", "required": 0}
+{"slot_number": 16, "slot_name": "INF_MODE", "slot_group": "inner_prefix", "description": "Infinitive modal (ku-)", "required": 0}
+{"slot_number": 17, "slot_name": "PHY_POSS", "slot_group": "inner_prefix", "description": "Physical possession (ri-)", "required": 0}
+{"slot_number": 18, "slot_name": "BEN_POSS_PREV", "slot_group": "inner_prefix", "description": "Benefactive / Patient possessor / Preverb", "required": 0}
+{"slot_number": 19, "slot_name": "RESULTATIVE", "slot_group": "inner_prefix", "description": "Resultative/Sequential (i-)", "required": 0}
+{"slot_number": 20, "slot_name": "AORIST", "slot_group": "inner_prefix", "description": "Aorist/Jussive (uks-)", "required": 0}
+{"slot_number": 22, "slot_name": "COMPOUND_PL", "slot_group": "inner_prefix", "description": "Compound plural markers", "required": 0}
+{"slot_number": 23, "slot_name": "PAT_PL", "slot_group": "inner_prefix", "description": "Patient plural / Possessor plural", "required": 0}
+{"slot_number": 24, "slot_name": "INDIV_PL", "slot_group": "inner_prefix", "description": "Individuative plural", "required": 0}
+{"slot_number": 25, "slot_name": "NOUN", "slot_group": "inner_prefix", "description": "Incorporated noun", "required": 0}
+{"slot_number": 26, "slot_name": "STEM", "slot_group": "inner_prefix", "description": "Verb stem (required)", "required": 1}
+{"slot_number": 27, "slot_name": "ASPECT", "slot_group": "suffix", "description": "Aspect marker", "required": 0}
+{"slot_number": 28, "slot_name": "SUBORDINATION", "slot_group": "suffix", "description": "Subordination suffix (class-dependent)", "required": 0}
+{"slot_number": 29, "slot_name": "INTENTIVE", "slot_group": "suffix", "description": "Intentive (-ta)", "required": 0}
+{"slot_number": 30, "slot_name": "SUB_INTENTIVE", "slot_group": "suffix", "description": "Subordinate intentive (-rit)", "required": 0}

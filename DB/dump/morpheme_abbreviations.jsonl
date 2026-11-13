@@ -1,0 +1,164 @@
+{"id": 1, "abbreviation": "an.", "meaning": "animate", "morpheme_form": null, "notes": null}
+{"id": 2, "abbreviation": "Ar.", "meaning": "Arikara", "morpheme_form": null, "notes": null}
+{"id": 3, "abbreviation": "colloq.", "meaning": "colloquial(ly)", "morpheme_form": null, "notes": null}
+{"id": 4, "abbreviation": "comb.", "meaning": "combining form", "morpheme_form": null, "notes": null}
+{"id": 5, "abbreviation": "cp.", "meaning": "compare", "morpheme_form": null, "notes": null}
+{"id": 6, "abbreviation": "contemp.", "meaning": "contemporary", "morpheme_form": null, "notes": null}
+{"id": 7, "abbreviation": "dist.", "meaning": "distributive", "morpheme_form": null, "notes": null}
+{"id": 8, "abbreviation": "du.", "meaning": "dual", "morpheme_form": null, "notes": null}
+{"id": 9, "abbreviation": "ex.", "meaning": "exclusive", "morpheme_form": null, "notes": null}
+{"id": 10, "abbreviation": "gen.", "meaning": "generic(ally)", "morpheme_form": null, "notes": null}
+{"id": 11, "abbreviation": "hist.", "meaning": "historical(ly)", "morpheme_form": null, "notes": null}
+{"id": 12, "abbreviation": "impf.", "meaning": "imperfective", "morpheme_form": null, "notes": null}
+{"id": 13, "abbreviation": "inan.", "meaning": "inanimate", "morpheme_form": null, "notes": null}
+{"id": 14, "abbreviation": "incl.", "meaning": "inclusive, including", "morpheme_form": null, "notes": null}
+{"id": 15, "abbreviation": "indef.", "meaning": "indefinite", "morpheme_form": null, "notes": null}
+{"id": 16, "abbreviation": "int.", "meaning": "intentive", "morpheme_form": null, "notes": null}
+{"id": 17, "abbreviation": "irr.", "meaning": "irregular", "morpheme_form": null, "notes": null}
+{"id": 18, "abbreviation": "isol.", "meaning": "isolation form", "morpheme_form": null, "notes": null}
+{"id": 19, "abbreviation": "iter.", "meaning": "iterative", "morpheme_form": null, "notes": null}
+{"id": 20, "abbreviation": "Ki.", "meaning": "Kitsai", "morpheme_form": null, "notes": null}
+{"id": 21, "abbreviation": "Nebr.", "meaning": "Nebraska", "morpheme_form": null, "notes": null}
+{"id": 22, "abbreviation": "neg.", "meaning": "negative", "morpheme_form": null, "notes": null}
+{"id": 23, "abbreviation": "obj.", "meaning": "object", "morpheme_form": null, "notes": null}
+{"id": 24, "abbreviation": "obs.", "meaning": "obsolete", "morpheme_form": null, "notes": null}
+{"id": 25, "abbreviation": "Okla.", "meaning": "Oklahoma", "morpheme_form": null, "notes": null}
+{"id": 26, "abbreviation": "Pa.", "meaning": "Pawnee (general)", "morpheme_form": null, "notes": null}
+{"id": 27, "abbreviation": "pl.", "meaning": "plural", "morpheme_form": null, "notes": null}
+{"id": 28, "abbreviation": "refl.", "meaning": "reflexive", "morpheme_form": null, "notes": null}
+{"id": 29, "abbreviation": "SB", "meaning": "South Band Pawnee", "morpheme_form": null, "notes": null}
+{"id": 30, "abbreviation": "sg.", "meaning": "singular", "morpheme_form": null, "notes": null}
+{"id": 31, "abbreviation": "Sk.", "meaning": "Skiri Pawnee", "morpheme_form": null, "notes": null}
+{"id": 32, "abbreviation": "sub.", "meaning": "subordinate/dependent", "morpheme_form": null, "notes": null}
+{"id": 33, "abbreviation": "subj.", "meaning": "subject", "morpheme_form": null, "notes": null}
+{"id": 34, "abbreviation": "Wi.", "meaning": "Wichita", "morpheme_form": null, "notes": null}
+{"id": 35, "abbreviation": "ABS", "meaning": "absolutative mode prefix", "morpheme_form": null, "notes": null}
+{"id": 36, "abbreviation": "ADJ", "meaning": "adjective", "morpheme_form": null, "notes": null}
+{"id": 37, "abbreviation": "ADV", "meaning": "adverb(ial)", "morpheme_form": null, "notes": null}
+{"id": 38, "abbreviation": "COLL", "meaning": "collective", "morpheme_form": null, "notes": null}
+{"id": 39, "abbreviation": "CONJ", "meaning": "conjunction", "morpheme_form": null, "notes": null}
+{"id": 40, "abbreviation": "CONT", "meaning": "contingent mode prefix", "morpheme_form": null, "notes": null}
+{"id": 41, "abbreviation": "DEM", "meaning": "demonstrative", "morpheme_form": null, "notes": null}
+{"id": 42, "abbreviation": "INTER", "meaning": "interrogative of quantity", "morpheme_form": null, "notes": null}
+{"id": 43, "abbreviation": "INTERJ", "meaning": "interjection", "morpheme_form": null, "notes": null}
+{"id": 44, "abbreviation": "LOC", "meaning": "locative/directional prefix or prefix string", "morpheme_form": null, "notes": null}
+{"id": 45, "abbreviation": "N", "meaning": "noun", "morpheme_form": null, "notes": null}
+{"id": 46, "abbreviation": "N-DEP", "meaning": "dependent noun stem", "morpheme_form": null, "notes": null}
+{"id": 47, "abbreviation": "N-KIN", "meaning": "inalienably possessed kinship term", "morpheme_form": null, "notes": null}
+{"id": 48, "abbreviation": "NUM", "meaning": "numeral", "morpheme_form": null, "notes": null}
+{"id": 49, "abbreviation": "PRON", "meaning": "pronoun", "morpheme_form": null, "notes": null}
+{"id": 50, "abbreviation": "QUAN", "meaning": "quantifier", "morpheme_form": null, "notes": null}
+{"id": 51, "abbreviation": "VD", "meaning": "descriptive verb", "morpheme_form": null, "notes": null}
+{"id": 52, "abbreviation": "VI", "meaning": "intransitive verb", "morpheme_form": null, "notes": null}
+{"id": 53, "abbreviation": "VL", "meaning": "locative verb", "morpheme_form": null, "notes": null}
+{"id": 54, "abbreviation": "VP", "meaning": "patientive, or passive, verb", "morpheme_form": null, "notes": null}
+{"id": 55, "abbreviation": "VR", "meaning": "reflexive verb", "morpheme_form": null, "notes": null}
+{"id": 56, "abbreviation": "VT", "meaning": "transitive verb", "morpheme_form": null, "notes": null}
+{"id": 57, "abbreviation": "(1)", "meaning": "verb class 1", "morpheme_form": "-a", "notes": "suffixed to dependent forms"}
+{"id": 58, "abbreviation": "(1-a)", "meaning": "verb class 1-a", "morpheme_form": "-a, -asta", "notes": "suffixed to dependent forms, intentive perfective"}
+{"id": 59, "abbreviation": "(1-i)", "meaning": "verb class 1-i", "morpheme_form": "-i", "notes": "suffixed to dependent forms, imperfective"}
+{"id": 60, "abbreviation": "(2)", "meaning": "verb class 2", "morpheme_form": "-i", "notes": "suffixed to dependent forms"}
+{"id": 61, "abbreviation": "(2-i)", "meaning": "verb class 2-i", "morpheme_form": "-i", "notes": "suffixed to dependent forms, imperfective"}
+{"id": 62, "abbreviation": "(3)", "meaning": "verb class 3", "morpheme_form": null, "notes": "various stem-specific changes in dependent forms"}
+{"id": 63, "abbreviation": "(4)", "meaning": "verb class 4", "morpheme_form": null, "notes": "no stem change in dependent forms"}
+{"id": 64, "abbreviation": "(4-i)", "meaning": "verb class 4-i", "morpheme_form": "-i", "notes": "no stem change in dependent forms, imperfective"}
+{"id": 65, "abbreviation": "(u)", "meaning": "verb inflected like descriptive verbs", "morpheme_form": "-u", "notes": "suffix to dependent forms"}
+{"id": 66, "abbreviation": "(wi)", "meaning": "verb inflected locative verbs", "morpheme_form": "-wi", "notes": "suffix to dependent forms"}
+{"id": 67, "abbreviation": "1.A", "meaning": "first person agentive prefix", "morpheme_form": "t-", "notes": null}
+{"id": 68, "abbreviation": "1/2.A", "meaning": "first and second person agentive prefix", "morpheme_form": null, "notes": null}
+{"id": 69, "abbreviation": "1.P", "meaning": "first person patientive prefix", "morpheme_form": "ku-", "notes": null}
+{"id": 70, "abbreviation": "1.POSS", "meaning": "first person possessive prefix", "morpheme_form": null, "notes": null}
+{"id": 71, "abbreviation": "1/2.PL", "meaning": "first and second person plural agentive prefix; first and second person plural patientive prefix of active and passive verbs", "morpheme_form": "rak-", "notes": null}
+{"id": 72, "abbreviation": "1.DU.IN.A", "meaning": "first person inclusive dual agentive prefix", "morpheme_form": "acir-", "notes": null}
+{"id": 73, "abbreviation": "1.DU.IN.P", "meaning": "first person inclusive dual patientive prefix", "morpheme_form": "aca-", "notes": null}
+{"id": 74, "abbreviation": "1.PL.IN.A", "meaning": "first person inclusive plural agentive prefix", "morpheme_form": "a-", "notes": null}
+{"id": 75, "abbreviation": "2.A", "meaning": "second person agentive prefix", "morpheme_form": "s-", "notes": null}
+{"id": 76, "abbreviation": "2.P", "meaning": "second person patientive prefix", "morpheme_form": "a-", "notes": null}
+{"id": 77, "abbreviation": "2.POSS", "meaning": "second person possessive prefix", "morpheme_form": null, "notes": null}
+{"id": 78, "abbreviation": "3.A", "meaning": "third person agentive prefix", "morpheme_form": "Ø-", "notes": null}
+{"id": 79, "abbreviation": "3.P", "meaning": "third person patientive prefix", "morpheme_form": "Ø-", "notes": null}
+{"id": 80, "abbreviation": "3.POSS.A", "meaning": "third person inalienable possessive prefix", "morpheme_form": "i-", "notes": null}
+{"id": 81, "abbreviation": "3.POSS.B", "meaning": "third person inalienable possessive suffix", "morpheme_form": "-riʔ", "notes": null}
+{"id": 82, "abbreviation": "3.PL.AN.P", "meaning": "third person animate plural patientive, or direct object, prefix", "morpheme_form": "ak-", "notes": null}
+{"id": 83, "abbreviation": "3.PL.COLL.A", "meaning": "third person collective plural agentive prefix", "morpheme_form": "ir-", "notes": null}
+{"id": 84, "abbreviation": "3.PL.INAN.P", "meaning": "third person inanimate plural patientive, or direct object, prefix", "morpheme_form": "raar-", "notes": null}
+{"id": 85, "abbreviation": "3.PL.INDV.A", "meaning": "third person individuative plural agentive prefix", "morpheme_form": "raar-", "notes": null}
+{"id": 86, "abbreviation": "ACT", "meaning": "activizer suffix", "morpheme_form": "-aʔu, -a, -uk", "notes": null}
+{"id": 87, "abbreviation": "AOR", "meaning": "aorist tense prefix", "morpheme_form": "uks-", "notes": null}
+{"id": 88, "abbreviation": "ASSR", "meaning": "assertive mode prefix", "morpheme_form": "rii-", "notes": null}
+{"id": 89, "abbreviation": "AUG", "meaning": "augmentative suffix", "morpheme_form": "-kucuu", "notes": null}
+{"id": 90, "abbreviation": "BEN", "meaning": "benefactive/dative, or indirect, object prefix", "morpheme_form": "ut-", "notes": null}
+{"id": 91, "abbreviation": "CAUS", "meaning": "causative", "morpheme_form": "-ik, -k, raʔuk, -wuh, etc.", "notes": null}
+{"id": 92, "abbreviation": "CLIT", "meaning": "clitic", "morpheme_form": null, "notes": null}
+{"id": 93, "abbreviation": "COM", "meaning": "comitative prefix", "morpheme_form": null, "notes": null}
+{"id": 94, "abbreviation": "CONT.1/2.A", "meaning": "contingent mode prefix with first or second person agentive prefixes", "morpheme_form": "i-", "notes": null}
+{"id": 95, "abbreviation": "CONT.3.A", "meaning": "contingent mode prefix with third person agentive prefixes", "morpheme_form": "ri-", "notes": null}
+{"id": 96, "abbreviation": "DEIC", "meaning": "deictic", "morpheme_form": null, "notes": null}
+{"id": 97, "abbreviation": "DIM", "meaning": "diminutive suffix", "morpheme_form": "-kis", "notes": null}
+{"id": 98, "abbreviation": "DIST", "meaning": "distributive suffix", "morpheme_form": "-ik, -ruu, -waa", "notes": "etc."}
+{"id": 99, "abbreviation": "DU", "meaning": "dual proclitic", "morpheme_form": "si-", "notes": null}
+{"id": 100, "abbreviation": "DUB", "meaning": "dubitative evidential prefix", "morpheme_form": null, "notes": null}
+{"id": 101, "abbreviation": "DUB.1", "meaning": "first dubitative prefix", "morpheme_form": "kuur-", "notes": null}
+{"id": 102, "abbreviation": "DUB.2", "meaning": "second dubitative prefix", "morpheme_form": "kuruur-", "notes": null}
+{"id": 103, "abbreviation": "EMPH.NEG", "meaning": "emphatic negative proclitic", "morpheme_form": "karii-...i-", "notes": null}
+{"id": 104, "abbreviation": "EV", "meaning": "evidential", "morpheme_form": "ar-", "notes": null}
+{"id": 105, "abbreviation": "EX", "meaning": "existential", "morpheme_form": null, "notes": null}
+{"id": 106, "abbreviation": "FEM", "meaning": "feminine prefix", "morpheme_form": "c-", "notes": null}
+{"id": 107, "abbreviation": "GEN.LOC", "meaning": "general locative prefix", "morpheme_form": "taa-", "notes": null}
+{"id": 108, "abbreviation": "GER", "meaning": "gerundial (absolutive subordinate) mode prefix", "morpheme_form": "ra-", "notes": null}
+{"id": 109, "abbreviation": "HAB", "meaning": "habitual aspect suffix", "morpheme_form": "-uukuʔ/-uku", "notes": null}
+{"id": 110, "abbreviation": "HORT", "meaning": "hortative proclitic", "morpheme_form": "ki-", "notes": null}
+{"id": 111, "abbreviation": "IMPF", "meaning": "imperfective aspect suffix", "morpheme_form": "-:hus/-:huʔ", "notes": null}
+{"id": 112, "abbreviation": "IMPF.SUB", "meaning": "subordinate imperfective aspect suffix", "morpheme_form": "-hus/-hu", "notes": null}
+{"id": 113, "abbreviation": "INCH", "meaning": "inchoative", "morpheme_form": "-aar, -itik", "notes": null}
+{"id": 114, "abbreviation": "IND.1/2.A", "meaning": "indicative mode prefix with first and second person agentives", "morpheme_form": "ta-", "notes": null}
+{"id": 115, "abbreviation": "IND.3.A", "meaning": "indicative mode prefix with third person agentives", "morpheme_form": "ti-", "notes": null}
+{"id": 116, "abbreviation": "INDF", "meaning": "indefinite proclitic", "morpheme_form": "ku-", "notes": null}
+{"id": 117, "abbreviation": "INDV", "meaning": "individuative", "morpheme_form": null, "notes": null}
+{"id": 118, "abbreviation": "INF.A", "meaning": "infinitive mode prefix, first part", "morpheme_form": "ra-", "notes": null}
+{"id": 119, "abbreviation": "INF.B", "meaning": "infinitive mode prefix, second part", "morpheme_form": "ku-", "notes": null}
+{"id": 120, "abbreviation": "INFR", "meaning": "inferential evidential prefix", "morpheme_form": "tiir-", "notes": null}
+{"id": 121, "abbreviation": "INST", "meaning": "instrumental suffix", "morpheme_form": "-hiriʔ", "notes": null}
+{"id": 122, "abbreviation": "INT", "meaning": "intentive aspect suffix", "morpheme_form": "-ta", "notes": null}
+{"id": 123, "abbreviation": "INT.SUB", "meaning": "intentive subordinating suffix", "morpheme_form": "-rit", "notes": null}
+{"id": 124, "abbreviation": "INTR", "meaning": "intransitivizer suffix", "morpheme_form": "-ak", "notes": null}
+{"id": 125, "abbreviation": "INTS", "meaning": "intensive prefix", "morpheme_form": "ruu-...i-", "notes": null}
+{"id": 126, "abbreviation": "ITER", "meaning": "iterative prefix", "morpheme_form": "ka-, raar/-rah-", "notes": "etc."}
+{"id": 127, "abbreviation": "JUSS", "meaning": "jussive prefix", "morpheme_form": "uks-", "notes": null}
+{"id": 128, "abbreviation": "LOC.ADV", "meaning": "locative adverbial base", "morpheme_form": "-haa, -taku", "notes": null}
+{"id": 129, "abbreviation": "NEG.IND.1/2.A", "meaning": "negative indicative mode prefix with first and second person agentives", "morpheme_form": "kaaka-", "notes": null}
+{"id": 130, "abbreviation": "NEG.IND.3.A", "meaning": "negative indicative mode prefix with third person agentives", "morpheme_form": "kaaki-", "notes": null}
+{"id": 131, "abbreviation": "NEG.POSS", "meaning": "negative possessive proclitic", "morpheme_form": "kaaku-", "notes": null}
+{"id": 132, "abbreviation": "NOM", "meaning": "nominal/absolutive suffix", "morpheme_form": "-uʔ", "notes": null}
+{"id": 133, "abbreviation": "OBV", "meaning": "obviative/de-focusing/switch-reference prefix", "morpheme_form": "ir-", "notes": null}
+{"id": 134, "abbreviation": "P.POSS", "meaning": "patientive possessive prefix", "morpheme_form": null, "notes": null}
+{"id": 135, "abbreviation": "PERF", "meaning": "perfective aspect suffix", "morpheme_form": "-his/-is", "notes": null}
+{"id": 136, "abbreviation": "PHY.BEN", "meaning": "physical benefactive", "morpheme_form": null, "notes": null}
+{"id": 137, "abbreviation": "PHY.POSS", "meaning": "physical possession marking", "morpheme_form": null, "notes": null}
+{"id": 138, "abbreviation": "PL", "meaning": "plural prefix", "morpheme_form": "ak-, ir-, raak-, raar-/rab-", "notes": null}
+{"id": 139, "abbreviation": "PL.3.A", "meaning": "third person collective (unitary) plural agentive prefix", "morpheme_form": null, "notes": null}
+{"id": 140, "abbreviation": "PL.BEN", "meaning": "plural benefactive, or indirect object, prefix", "morpheme_form": null, "notes": null}
+{"id": 141, "abbreviation": "PL.INDV.A", "meaning": "individuative plural agentive prefix", "morpheme_form": null, "notes": null}
+{"id": 142, "abbreviation": "PL.P.POSS", "meaning": "plural patientive possessor", "morpheme_form": null, "notes": null}
+{"id": 143, "abbreviation": "PORT", "meaning": "portative prefix", "morpheme_form": "ra-, rii-, ruu-", "notes": null}
+{"id": 144, "abbreviation": "POSS", "meaning": "possessive prefix", "morpheme_form": "ir-...uur-...ri-", "notes": null}
+{"id": 145, "abbreviation": "POSS.1/2.A", "meaning": "possessor prefix with first and second person agentives", "morpheme_form": null, "notes": null}
+{"id": 146, "abbreviation": "POSS.3.A", "meaning": "possessor prefix with third person agentives", "morpheme_form": null, "notes": null}
+{"id": 147, "abbreviation": "POT.1/3.A", "meaning": "potential mode prefix with first and third person agentives", "morpheme_form": "kuus-...i-", "notes": null}
+{"id": 148, "abbreviation": "POT.2.A", "meaning": "potential mode prefix with second person agentives", "morpheme_form": "kaas-...i-", "notes": null}
+{"id": 149, "abbreviation": "PREV", "meaning": "preverb", "morpheme_form": "ir-, ut-, uur-", "notes": null}
+{"id": 150, "abbreviation": "PREV.1/2.A", "meaning": "preverb with first and second person agentives", "morpheme_form": "ir-", "notes": null}
+{"id": 151, "abbreviation": "PREV.3.A", "meaning": "preverb with third person agentives", "morpheme_form": "a-", "notes": null}
+{"id": 152, "abbreviation": "QUOT", "meaning": "quotative evidential prefix", "morpheme_form": "wi-", "notes": null}
+{"id": 153, "abbreviation": "REFL", "meaning": "reflexive-reciprocal proclitic", "morpheme_form": "witii-", "notes": null}
+{"id": 154, "abbreviation": "SEQ", "meaning": "sequential/resultative prefix", "morpheme_form": "i-", "notes": null}
+{"id": 155, "abbreviation": "SG", "meaning": "singular number", "morpheme_form": null, "notes": null}
+{"id": 156, "abbreviation": "SUB.1", "meaning": "subordinating suffix of Class 1 verbs", "morpheme_form": null, "notes": null}
+{"id": 157, "abbreviation": "SUB.2", "meaning": "subordinating suffix of Class 2 verbs", "morpheme_form": null, "notes": null}
+{"id": 158, "abbreviation": "SUB.3", "meaning": "subordinating form of Class 3 verbs", "morpheme_form": null, "notes": null}
+{"id": 159, "abbreviation": "SUB.4", "meaning": "subordinating suffix of Class 4 verbs", "morpheme_form": null, "notes": null}
+{"id": 160, "abbreviation": "SUB.D", "meaning": "descriptive stem subordinating suffix", "morpheme_form": "-u", "notes": null}
+{"id": 161, "abbreviation": "SUB.L", "meaning": "locative stem subordinating suffix", "morpheme_form": "-wi", "notes": null}
+{"id": 162, "abbreviation": "SUBJ.1/2.A", "meaning": "subjunctive mode prefix with first and second person agentives", "morpheme_form": "aa-", "notes": null}
+{"id": 163, "abbreviation": "SUBJ.3.A", "meaning": "subjunctive mode prefix with third person agentives", "morpheme_form": "ii-", "notes": null}
+{"id": 164, "abbreviation": "TRANS", "meaning": "transitivizer affix", "morpheme_form": "ut-..., uur-..., -ik, -kii, -u, etc.", "notes": null}

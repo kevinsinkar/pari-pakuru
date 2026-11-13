@@ -27,7 +27,7 @@ later by the script named. Row counts on 2026-11-13.
 | `etymology` | 3,825 | importer |
 | `cognates` | 608 | importer |
 | `derived_stems` | 0 | importer. **Empty**, although the JSON holds 21 derived stems in 10 entries: an open item |
-| `english_index` | 8,067 | importer |
+| `english_index` | 8,067 | importer, **from an earlier file than the current JSON** (`import_metadata` names `english_to_skiri_verified.json`). Its Skiri terms and IPA were never cleaned: 3,986 IPA forms are not in Parks's notation and 177 still hold raw stand-in characters. The current `english_to_skiri_linked.json` is clean. Re-import from it; see the 2026-11 audit |
 | `cross_references` | 4,585 | importer |
 | `fts_glosses`, `fts_examples`, `fts_english_index` | | full-text indexes, kept current by triggers |
 | `import_metadata` | 6 | importer |
@@ -54,7 +54,18 @@ Everything after that (tags, Blue Book links, the 93 Blue Book words, the
 de-duplication, the audit repairs, lessons, grammar tables) was applied to the
 database by later scripts, in the order given in
 [../scripts/README.md](../scripts/README.md). Some of those steps called an AI
-service. In practice, **restore a backup; do not rebuild.** Backups are in
+service. In practice, **restore; do not rebuild.** Since 2026-11-13 the whole
+database is in git as text, in [dump/](dump/):
+
+```bash
+python scripts/db_dump.py --restore skiri_pawnee.db   # build the database from DB/dump/ (refuses to overwrite a file)
+python scripts/db_dump.py --write                     # after changing the database: bring DB/dump/ up to date, then commit it
+python scripts/db_dump.py                             # is DB/dump/ in step with the database?
+```
+
+A restored database has everything except the community feedback and study
+progress, which are private and are not written to the dump. Binary backups
+are still made by every script that changes the database, in
 `OneDrive/pari_pakuru_backups/` and `~/.pari_pakuru_backups/`.
 
 ```bash

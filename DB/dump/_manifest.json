@@ -1,0 +1,112 @@
+{
+ "tables": {
+  "lexical_entries": {
+   "rows": 4337,
+   "sha256": "de760a9cb8fc474d03ed164e3685f88514320037cbcac7ce52e1f523f7dfcaaf"
+  },
+  "paradigmatic_forms": {
+   "rows": 9559,
+   "sha256": "e9aa6589bdbec92563375989d95f0de10a02a1f40ac2b6fb5ff05f87c3e141dc"
+  },
+  "examples": {
+   "rows": 2635,
+   "sha256": "449a4a85bff8cf6ad4ef3d8a1046e31c74871503bc5a709b896b25da16aa16b0"
+  },
+  "etymology": {
+   "rows": 3825,
+   "sha256": "89f90cbb09d8c9de5ff9d78eb18bd93232aa9eed017ddd51d4b0370ce5c5250a"
+  },
+  "cognates": {
+   "rows": 608,
+   "sha256": "fd09ee793b1cd7c33c2486acd3773b003482209f1c9d1f2e62958e99aa0473af"
+  },
+  "derived_stems": {
+   "rows": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "english_index": {
+   "rows": 8067,
+   "sha256": "86fd0bed4b5922d2b614841293f05bc968ca2a089cb1d642562dad4e1e0ae9f1"
+  },
+  "cross_references": {
+   "rows": 4585,
+   "sha256": "653c1e0502da9a3900120e414af09764db20014e9b0c90cb064a4100745712ed"
+  },
+  "import_metadata": {
+   "rows": 6,
+   "sha256": "76987eda6e62c203c3f93d7668e9d164d911ca7a3de46a2de1431bee966044a3"
+  },
+  "semantic_tags": {
+   "rows": 4500,
+   "sha256": "d660eaa329f4d269b6c9d48c978d17a18e09149ac3fe740ae032e1339ecc7178"
+  },
+  "blue_book_attestations": {
+   "rows": 1026,
+   "sha256": "83acdd31e1aee000c5d2603cf5f8fd315cc9551275ded2d71a85b7a53475b996"
+  },
+  "sound_change_rules": {
+   "rows": 24,
+   "sha256": "8ee77a7f219602cc6ddedad4c8090159aa79775c66ae74bd81cb3d3a3a3dc9ae"
+  },
+  "verb_paradigms": {
+   "rows": 770,
+   "sha256": "7ea303b0a26ea4b3bc98af0b89c8b292f740319c7fb135d0bf71152ea32c3b62"
+  },
+  "irregular_verb_roots": {
+   "rows": 9,
+   "sha256": "66704daff8274279d04614d26f5c35736576bd5309836c76245362cc0d7590bf"
+  },
+  "morpheme_abbreviations": {
+   "rows": 164,
+   "sha256": "fe9ceed9b3d168df679b188467e051293679185781919c1a3bc1565056eecdb7"
+  },
+  "morpheme_inventory": {
+   "rows": 37,
+   "sha256": "28c64f0e814ec1fcda967881a374203fe92311e6c5a99f6fa3b9ba4123ed26cd"
+  },
+  "verb_template_slots": {
+   "rows": 27,
+   "sha256": "cf8bc4b40be0fcf8dfd9e2e499a879b3bf688e17501da924c87d99acae28d84f"
+  },
+  "noun_stems": {
+   "rows": 49,
+   "sha256": "6eb3b0a3e5e7b6ea295bce0f72ec794e431e9c9a51bf2f38c6abadaa20076c81"
+  },
+  "kinship_paradigms": {
+   "rows": 14,
+   "sha256": "3e168023fce4c3564f1d3e9263294d13a1783e2f595eba098da928a88e21f537"
+  },
+  "possession_examples": {
+   "rows": 20,
+   "sha256": "e8fe3612d591cde6f5e799d3fed621a85c3812980a89a665a9c2445649baacee"
+  },
+  "bb_gap_triage": {
+   "rows": 516,
+   "sha256": "ab384a2e727cee0c9a8fb637e7df4055b1708e06c551fef67b8bcf4faf29b7a7"
+  },
+  "function_words": {
+   "rows": 418,
+   "sha256": "29d12ad9877113c947f64d4a9471ff0d443426939fdfe076125efa004023066d"
+  },
+  "bb_function_words": {
+   "rows": 63,
+   "sha256": "6387f9f0537a6547945fcb782736d13cfbc687a6622d680f10ef8e9b7ba8f1ba"
+  },
+  "glosses": {
+   "rows": 5504,
+   "sha256": "57d0c373a573ff83f067dd4889af58f95e32e783a6fcae9bd6eb8607f9bf00e0"
+  },
+  "lessons": {
+   "rows": 20,
+   "sha256": "427f74326448b80ef1fd7cb13192d96ac9633c63a019af94c743d7ade65d9953"
+  }
+ },
+ "left_out": [
+  "community_feedback",
+  "srs_cards",
+  "srs_reviews",
+  "fts_* (rebuilt on restore)"
+ ],
+ "journal_mode": "wal",
+ "user_version": 0
+}
