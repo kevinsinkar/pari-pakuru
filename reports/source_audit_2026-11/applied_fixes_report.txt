@@ -1,0 +1,453 @@
+apply_audit_fixes_2026_11 — APPLY — 2026-11-13 13:57
+changes: 807   {'appendix 1': 152, 'appendix 2': 2, 'appendix 3': 10, 'abbreviations': 3, 'chapter 4': 22, 'sound changes': 5, 'verb forms': 19, 'citations': 162, 'combining forms': 10, 'headwords': 27, 'column': 393, 'entries': 2}
+
+== 1. Appendix 1: stored verb forms that differ from the page (each confirmed by a third look)
+  book p. 532  negative_indicative_perfective       3sg       kaakaaʔ -> kaakaaʔaʔ
+  book p. 532  negative_indicative_perfective       1du_excl  síkaakaatíhwaʔaʔ -> síkaakaatihwaʔaʔ
+  book p. 532  negative_indicative_perfective       2du       síkaakaasíhwaʔaʔ -> síkaakaasihwaʔaʔ
+  book p. 532  negative_indicative_perfective       3du       síkaakaawaʔaʔ -> sikaakaawaʔaʔ
+  book p. 532  negative_indicative_perfective       1pl_excl  kaakaatíraakaahuʔ -> kaakaatiraakaahuʔ
+  book p. 532  negative_indicative_perfective       2pl       kaakaasíraakaahuʔ -> kaakaasiraakaahuʔ
+  book p. 532  contingent_perfective                3du       sirawaʔaʔ -> sírawaʔaʔ
+  book p. 532  contingent_perfective                1pl_excl  itíraakaahuʔ -> itiraakaahuʔ
+  book p. 532  contingent_perfective                2pl       isíraakaahuʔ -> isiraakaahuʔ
+  book p. 532  contingent_perfective                3pl       raaʔaahuʔ, raaraaraʔ -> raaʔaahuʔ, raraaraʔ
+  book p. 532  assertive_perfective                 1du_excl  siríitíhwaʔaʔ -> siriítihwaʔaʔ
+  book p. 532  assertive_perfective                 2du       siríisíhwaʔaʔ -> siriisihwaʔaʔ
+  book p. 532  assertive_perfective                 3du       síraaʔaʔ -> siraaʔaʔ
+  book p. 532  assertive_perfective                 1pl_incl  ríitaraakaahuʔ -> riítaraakaahuʔ
+  book p. 532  assertive_perfective                 1pl_excl  ríitíraakaahuʔ -> riítiraakaahuʔ
+  book p. 532  assertive_perfective                 2pl       ríisíraakaahuʔ -> riísiraakaahuʔ
+  book p. 532  absolutive_perfective                2sg       rasiiraʔ -> rasiíraʔ
+  book p. 532  absolutive_perfective                1du_excl  síratíhwaʔaʔ -> síratihwaʔaʔ
+  book p. 532  absolutive_perfective                2du       sírasíhwaʔaʔ -> sírasihwaaʔ
+  book p. 532  absolutive_perfective                3du       sírawáaʔ -> sírawaaʔ
+  book p. 532  absolutive_perfective                1pl_excl  ratíraakaahuʔ -> ratiraakaahuʔ
+  book p. 532  absolutive_perfective                2pl       rasíraakaahuʔ -> rasiraakaahuʔ
+  book p. 532  potential_perfective                 1sg       kuustíriiʔaʔ -> kuustiriiʔaʔ
+  book p. 532  potential_perfective                 2sg       kaasíriiʔaʔ -> kaasiriiʔaʔ
+  book p. 532  potential_perfective                 1du_incl  kaacíriíwaʔaʔ -> kaaciriiwaʔaʔ
+  book p. 532  potential_perfective                 1du_excl  sikuustíriiwaʔaʔ -> sikuustiriiwaʔaʔ
+  book p. 532  potential_perfective                 2du       sikaasíriiwaʔaʔ -> sikaasiriiwaʔaʔ
+  book p. 532  potential_perfective                 3du       sikusaaʔaʔ -> sikusaawaʔaʔ
+  book p. 532  potential_perfective                 1pl_excl  kuustíriiraakaahuʔ -> kuustiriiraakaahuʔ
+  book p. 532  potential_perfective                 2pl       kaasíriiraakaahuʔ -> kaasiriiraakaahuʔ
+  book p. 532  gerundial_perfective_subordinate     1sg       íriira -> iriiratiira
+  book p. 532  gerundial_perfective_subordinate     2sg       íriisíira -> iriirasiira
+  book p. 532  gerundial_perfective_subordinate     3sg       íriiraʔa -> iriraʔa
+  book p. 532  gerundial_perfective_subordinate     1du_incl  íriiracíhwaʔa -> iriiracihwaʔa
+  book p. 532  gerundial_perfective_subordinate     1du_excl  íriisiratíhwaʔa -> iriisiratihwaʔa
+  book p. 532  gerundial_perfective_subordinate     2du       íriisirasíhwaʔa -> iriisirasihwaʔa
+  book p. 532  gerundial_perfective_subordinate     3du       íriisirawaʔa -> iriisirawaʔa
+  book p. 532  gerundial_perfective_subordinate     1pl_incl  íriirataraakaahu -> iriirataraakahu
+  book p. 532  gerundial_perfective_subordinate     1pl_excl  íriiratíraakaahu -> iriiratiraakahu
+  book p. 532  gerundial_perfective_subordinate     2pl       íriirasíraakaahu -> iriirasiraakahu
+  book p. 532  gerundial_perfective_subordinate     3pl       íriiraʔaahu, íriiraara -> iriraaʔahu, iriiraraara
+  book p. 532  contingent_perfective_subordinate    1sg       ítiira -> itiira
+  book p. 532  contingent_perfective_subordinate    2sg       ísiira -> isiira
+  book p. 532  contingent_perfective_subordinate    1du_incl  icíhwaʔa -> icihwaʔa
+  book p. 532  contingent_perfective_subordinate    1du_excl  siʔitíhwaʔa -> siʔitihwaʔa
+  book p. 532  contingent_perfective_subordinate    2du       siʔisíhwaʔa -> siʔisihwaʔa
+  book p. 532  contingent_perfective_subordinate    1pl_incl  itaraakaahu -> itaraakahu
+  book p. 532  contingent_perfective_subordinate    1pl_excl  itíraakaahu -> itiraakahu
+  book p. 532  contingent_perfective_subordinate    2pl       isíraakaahu -> isiraakahu
+  book p. 532  contingent_perfective_subordinate    3pl       raaʔaahu, raaraara -> raaʔahu, raraara
+  book p. 532  subjunctive_perfective_subordinate   1du_incl  aacíhwaʔa -> aacihwaʔa
+  book p. 532  subjunctive_perfective_subordinate   1du_excl  siʔaatíhwaʔa -> siʔaatihwaʔa
+  book p. 532  subjunctive_perfective_subordinate   2du       siʔaasíhwaʔa -> siʔaasihwaʔa
+  book p. 532  subjunctive_perfective_subordinate   1pl_incl  aataraakaahu -> aataraakahu
+  book p. 532  subjunctive_perfective_subordinate   1pl_excl  aatíraakaahu -> aatiraakahu
+  book p. 532  subjunctive_perfective_subordinate   2pl       aasíraakaahu -> aasiraakahu
+  book p. 532  subjunctive_perfective_subordinate   3pl       aaʔaahu, aaraara -> aaʔahu, aaraara
+  book p. 532  infinitive_perfective_subordinate    1sg       ratihkúʔa -> ratihkuʔa
+  book p. 532  infinitive_perfective_subordinate    2sg       rasihkúʔa -> rasihkuʔa
+  book p. 532  infinitive_perfective_subordinate    3sg       raakúʔa -> raakuʔa
+  book p. 532  infinitive_perfective_subordinate    1du_incl  racihkúwaʔa -> racihkuwaʔa
+  book p. 532  infinitive_perfective_subordinate    1du_excl  siratihkúwaʔa -> siratihkuwaʔa
+  book p. 532  infinitive_perfective_subordinate    2du       sirasihkúwaʔa -> sirasihkuwaʔa
+  book p. 532  infinitive_perfective_subordinate    3du       siraakúwaʔa -> siraakuwaʔa
+  book p. 532  infinitive_perfective_subordinate    1pl_incl  rataakúraakahu -> rataakuraakahu
+  book p. 532  infinitive_perfective_subordinate    1pl_excl  ratihkúraakahu -> ratihkuraakahu
+  book p. 532  infinitive_perfective_subordinate    2pl       rasihkúraakahu -> rasihkuraakahu
+  book p. 532  infinitive_perfective_subordinate    3pl       raakúhu, raakúraara -> raakuhu, raakuraara
+  book p. 533  negative_indicative_perfective       2pl       kaakasuuhakaa -> kaakasuuhaakaa
+  book p. 533  potential_perfective                 2sg       kaasucíʔaa -> kaasuciʔaa
+  book p. 533  potential_perfective                 3sg       kuusucíʔaa -> kuusuciʔaa
+  book p. 533  potential_perfective                 1du_incl  kaciicíʔaa -> kaciiciʔaa
+  book p. 533  potential_perfective                 1du_excl  sikuustucíʔaa -> sikuustuciʔaa
+  book p. 533  potential_perfective                 2du       sikaasucíʔaa -> sikaasuciʔaa
+  book p. 533  potential_perfective                 3du       sikuusucíʔaa -> sikuusuciʔaa
+  book p. 533  potential_perfective                 3pl       kusiicíʔaa -> kusiiciʔaa
+  book p. 533  gerundial_perfective_subordinate     1sg       iriratuutaara -> iriiratuutaara
+  book p. 533  gerundial_perfective_subordinate     2sg       irirasuutaara -> iriirasuutaara
+  book p. 533  gerundial_perfective_subordinate     3sg       iriruuutaara -> iriiruutaara
+  book p. 533  gerundial_perfective_subordinate     1du_incl  iriraciitaara -> iriiraciitaara
+  book p. 533  gerundial_perfective_subordinate     1du_excl  iririsiratuutaara -> iriisiratuutaara
+  book p. 533  gerundial_perfective_subordinate     2du       iririsirasuutaara -> iriisirasuutaara
+  book p. 533  gerundial_perfective_subordinate     3du       iririsiruutaara -> iriisiruutaara
+  book p. 533  gerundial_perfective_subordinate     1pl_incl  iriratuuhaakaara -> iriiratuuhaakaara
+  book p. 533  gerundial_perfective_subordinate     1pl_excl  iriratuuhaakaara -> iriiratuuhaakaara
+  book p. 533  gerundial_perfective_subordinate     2pl       irirasuuhaakaara -> iriirasuuhaakaara
+  book p. 533  contingent_perfective_subordinate    2sg       isuutara -> isuutaara
+  book p. 533  subjunctive_perfective_subordinate   1du_incl  aaciiriitaara -> aaciriitaara
+  book p. 533  infinitive_perfective_subordinate    1pl_excl  ratkuuhakaara -> ratkuuhaakaara
+  book p. 534  contingent_perfective                1pl_incl  itaraapuuʔ -> itarapuuʔ
+  book p. 534  gerundial_perfective_subordinate     3pl       iriiraawuu -> iriraawuu
+  book p. 534  contingent_perfective_subordinate    1pl_incl  itaraapuu -> itarapuu
+  book p. 534  infinitive_perfective_subordinate    2du       siraskuara -> siraskuwara
+  book p. 535  negative_indicative_perfective       2sg       kaakasuuhíi -> kaakasuuhii
+  book p. 535  negative_indicative_perfective       3sg       kaakuuhii -> kaakuhii
+  book p. 535  negative_indicative_perfective       2du       sikaakasuuhíi -> sikaakasuuhii
+  book p. 535  negative_indicative_perfective       3du       sikaakuuhii -> sikaakuhii
+  book p. 535  negative_indicative_perfective       1pl_excl  kaakaturaakiwaa -> kaakaaturaakiwaa
+  book p. 535  negative_indicative_perfective       2pl       kaakasuraakiwaa -> kaakaasuraakiwaa
+  book p. 535  assertive_perfective                 1pl_excl  rituraakiwaa -> riituraakiwaa
+  book p. 535  assertive_perfective                 2pl       risuraakiwaa -> riisuraakiwaa
+  book p. 535  absolutive_perfective                3sg       ruhii -> ruuhii
+  book p. 535  potential_perfective                 1pl_incl  kuusturaakiwaa -> kuustuuraakiwaa
+  book p. 535  gerundial_perfective_subordinate     1sg       iriratuuhiira -> iriiratuuhiira
+  book p. 535  gerundial_perfective_subordinate     2sg       irirasuuhiira -> iriirasuuhiira
+  book p. 535  gerundial_perfective_subordinate     1du_incl  iriraciihiira -> iriiraciihiira
+  book p. 535  gerundial_perfective_subordinate     1pl_incl  iriratuuraakiwaara -> iriiratuuraakiwaara
+  book p. 535  gerundial_perfective_subordinate     1pl_excl  iriraturaakiwaara -> iriiraturaakiwaara
+  book p. 535  gerundial_perfective_subordinate     2pl       irirasuraakiwaara -> iriirasuraakiwaara
+  book p. 535  subjunctive_perfective_subordinate   2pl       aasuuraakiwaara -> aasuraakiwaara
+  book p. 535  infinitive_perfective_subordinate    3sg       racihkuuhiira -> rakuuhiira
+  book p. 536  negative_indicative_perfective       1pl_incl  kaakaataraakiikaʔ -> kaakaataaraakiikaʔ
+  book p. 536  assertive_perfective                 3pl       riihkiikaʔ -> rihkiikaʔ
+  book p. 536  absolutive_perfective                3pl       rihkikaʔ -> rihkiikaʔ
+  book p. 537  negative_indicative_perfective       2sg       kaakiraawaʔ -> kaakaakiraawaʔ
+  book p. 537  negative_indicative_perfective       1du_incl  kaakacukukiraawaʔ -> kaakaacakukiraawaʔ
+  book p. 537  negative_indicative_perfective       2du       sikaakiraawaʔ -> sikaakaakiraawaʔ
+  book p. 537  negative_indicative_perfective       1pl_incl  kaakaacukuraakiraawaʔ -> kaakaacakuraakiraawaʔ
+  book p. 537  assertive_perfective                 1sg       riikuukiraawaʔ -> rikuukiraawaʔ
+  book p. 537  assertive_perfective                 1du_excl  siriikuukiraawaʔ -> sirikuukiraawaʔ
+  book p. 537  assertive_perfective                 1pl_excl  riikuuraktahkiraawaʔ -> rikuuraktahkiraawaʔ
+  book p. 537  absolutive_perfective                3sg       riihkiraawaʔ -> rihkiraawaʔ
+  book p. 537  absolutive_perfective                2du       siraakiraawaʔ -> raakiraawaʔ
+  book p. 537  absolutive_perfective                2pl       raaraktahkiraawaʔ -> raraktahkiraawaʔ
+  book p. 537  potential_perfective                 1pl_excl  kuusikuuraktahkiraawaʔ -> kuusikuuraakiraawaʔ
+  book p. 537  potential_perfective                 3pl       kusiriktahkiraawaʔ -> kusiriktaahkiraawaʔ
+  book p. 537  gerundial_perfective_subordinate     1du_incl  iriiracukukiraawaa -> iriiracakukiraawaa
+  book p. 537  gerundial_perfective_subordinate     1du_excl  iriirisirikukiraawaa -> iriisirikukiraawaa
+  book p. 537  gerundial_perfective_subordinate     2du       iriirisiraawaa -> iriisirakiraawaa
+  book p. 537  gerundial_perfective_subordinate     3du       iriirisirihkiraawaa -> iriisirihkiraawaa
+  book p. 537  gerundial_perfective_subordinate     1pl_incl  iriiracuraktahkiraawaa -> iriiracakuraktahkiraawaa
+  book p. 537  gerundial_perfective_subordinate     3pl       iriiriraktahkiraawaa -> iririiraktahkirawaa
+  book p. 537  contingent_perfective_subordinate    3pl       riiraktahkiraawaa -> riiraktahkirawaa
+  book p. 537  subjunctive_perfective_subordinate   2sg       aakiraawaa -> aakirawaa
+  book p. 537  subjunctive_perfective_subordinate   3sg       iihkiraawaa -> iihkirawaa
+  book p. 537  subjunctive_perfective_subordinate   2pl       aaraakiraawaa -> araakiraawaa
+  book p. 537  infinitive_perfective_subordinate    1du_excl  sirakukiraawaa -> sirakukukiraawaa
+  book p. 537  infinitive_perfective_subordinate    2du       sirihkukiraawaa -> siraakukiraawaa
+  book p. 537  infinitive_perfective_subordinate    3du       racakukuraaktahkiraawaa -> sirihkukiraawaa
+  book p. 537  infinitive_perfective_subordinate    1pl_incl  rakukuraaktahkiraawaa -> racakukuraktahkiraawaa
+  book p. 537  infinitive_perfective_subordinate    1pl_excl  raakuraktahkiraawaa -> rakukuraktahkiraawaa
+  book p. 537  infinitive_perfective_subordinate    2pl       rihkuraaktahkiraawaa -> raakuraktahkiraawaa
+  book p. 537  infinitive_perfective_subordinate    3pl       riihkuraktahkiraawaa -> rihkuraktahkiraawaa
+  book p. 538  negative_indicative_perfective       1du_incl  kaakaciraa -> kaakaaciraa
+  book p. 538  negative_indicative_perfective       1pl_incl  sikaakaciraa -> sikaakaaciraa
+  book p. 538  assertive_perfective                 1du_excl  siriiháa -> siriihaa
+  book p. 538  assertive_perfective                 1pl_excl  siriiháa -> siriihaa
+  book p. 538  gerundial_perfective_subordinate     1sg       iriiraaha -> iriirahaaha
+  book p. 538  gerundial_perfective_subordinate     2sg       iriiraastaaha -> iriirastaaha
+  book p. 538  gerundial_perfective_subordinate     3sg       iriiraraha -> iriiraraaha
+  book p. 538  gerundial_perfective_subordinate     3du       iriisiraraha -> iriisiraraaha
+  book p. 538  contingent_perfective_subordinate    3du       siʔiraaha -> siriraaha
+
+== 2. Appendix 2: b read for h
+  aah, plural stem: burii-waa -> hurii-waa
+  tir, plural stem: burii -> hurii
+
+== 3. Appendix 3: kin term forms
+  kinship_paradigms, mother, form_2sg: asaas -> asas
+  kinship_paradigms, grandfather, stem: atipaat -> atipat
+  kinship_paradigms, grandfather, form_1sg: atipaat -> atipat
+  kinship_paradigms, grandfather, form_2sg: apaat -> apat
+  kinship_paradigms, sister (of male), form_2sg: ataati -> ataat
+  appendix3_kinship.json, mother, your: asaas -> asas
+  appendix3_kinship.json, grandfather, skiri_term: atipaat -> atipat
+  appendix3_kinship.json, grandfather, my: atipaat -> atipat
+  appendix3_kinship.json, grandfather, your: apaat -> apat
+  appendix3_kinship.json: 2 empty terms replaced by the five rows of book page 543 (mother's brother, sister (of male), sibling (of same sex as speaker), brother (of female), grandchild)
+
+== 4. Abbreviations
+  ABS, meaning: absolutative mode prefix -> absolutive mode prefix
+  PL, morpheme_form: ak-, ir-, raak-, raar-/rab- -> ak-, ir-, raak-, raar-/rah-
+  REFL, morpheme_form: witii- -> witi-
+
+== 5. Grammar chapter extraction: b read for h
+  witiicikstaawariibusuukuʔ -> witiicikstaawariihusuukuʔ  (in 1 string)
+  tiibatuuksitkaspaawaa -> tiihatuksitkaspaawaa  (in 1 string)
+  ahicikstaawariibusuku -> ahicikstaawariihusuku  (in 1 string)
+  wiirakuhurabkiwatat -> wiirakuhuraahkiwatat  (in 1 string)
+  siwituksaakitaabku -> siwituksakitaahku  (in 1 string)
+  kiʔiitiksbuubkaaʔ -> kiʔitiksuhuuhkaaʔ  (in 1 string)
+  tihuraabtarariʔit -> tihuraahtarariʔit  (in 1 string)
+  wiitahurabwiicaʔ -> wiitahurahwiicaʔ  (in 1 string)
+  riibiikakuspihat -> riihiikakuspihat  (in 1 string)
+  kuubasuutiiʔit -> kuuhasuutiirit  (in 1 string)
+  tuuricaabiksii -> tuuricaahiksii  (in 1 string)
+  tiiʔahabaacca -> tiiʔahahaacca  (in 1 string)
+  tiibiiraaʔa -> tiihiiraaʔa  (in 1 string)
+  icaabiks -> icaahiks  (in 2 strings)
+  raburaar -> rahuraar  (in 1 string)
+  bustarit -> hustarit  (in 4 strings)
+  busuukuʔ -> husuukuʔ  (in 3 strings)
+  busitit -> husitit  (in 4 strings)
+  bisaask -> hisaask  (in 2 strings)
+  busuku -> husuku  (in 3 strings)
+  busta -> husta  (in 2 strings)
+  buras -> huras  (in 3 strings)
+
+== 6. Sound-change rules: example forms
+  rule 2R: kusaakiraawa -> kusaakiraawaʔ
+  rule 9R: tikiikaahu -> tikiikaahuʔ
+  rule 16: ahibt -> ahiht
+  rule 20: tiraraahu -> tiraraahuʔ
+  rule 22: katawiwari -> katawiwarik
+
+== 7. Dictionary verb forms
+  acikstiwarik           form 3: tiicikstiwariikuʔ -> tiicikstiwarikuʔ   [confirmed, book p. 356]
+  asukaaʔat              form 3: tuutasukawuuʔ -> tuutasukaawuuʔ   [confirmed, book p. 366]
+  asuuktik               form 4: iriiriirasuuktika; iriiwitiriirasuuktika -> iririirasuuktika; iriiwitiriirasuuktika   [confirmed, book p. 366]
+  awatatk                form 4: ririiwatatka -> iririiwatatka   [confirmed, book p. 369]
+  icakahuur              form 4: iriiraacakahuru -> iriiraacakahuuru   [confirmed, book p. 402]
+  karusik                form 2: tikarusi -> tikarusit   [confirmed, book p. 427]
+  karusik                form 3: tikusikuʔ -> tikarusikuʔ   [confirmed, book p. 427]
+  karusik                form 5: tikusiksta -> tikarusiksta   [confirmed, book p. 427]
+  kicuuruht              form 5: tikicuuruktuksta -> tikicuuruhtuksta   [confirmed, book p. 436]
+  kituus                 form 2: tikituum -> tikituus   [confirmed, book p. 448]
+  kituus                 form 5: tituusista -> tikituusista   [confirmed, book p. 448]
+  raariihac              form 5: tiraariihaacuksta -> tiraariihacuksta   [confirmed, book p. 470]
+  riicis                 form 4: iriruuhicis -> iriruuhiicis   [confirmed, book p. 488]
+  riisaapuh              form 4: iriirarariisaapuha -> iriirariisaapuha   [confirmed, book p. 490]
+  riiwataar              form 4: iriirarariiwataara -> iriirariiwataara   [confirmed, book p. 490]
+  riwaawaktiik/tik-      form 4: iriisirarariwaawaktit -> iriisirariwaawaktit   [confirmed, book p. 495]
+  riwaktiik/tik-         form 4: iriirarariwaktit -> iriirariwaktit   [confirmed, book p. 495]
+  tahak                  form 2: tithat -> titahat   [confirmed, book p. 503]
+  waktiks [+ i-]         form 4: iririwaktiksa -> iririiwaktiksa   [confirmed, book p. 524]
+
+== 8. Stand-in characters in words cited from other languages
+  aar iraariʔ            etymology: ó -> š
+  aar iraariʔ            cognate: óinaatáNI -> šinaatáNI
+  asahi                  etymology: Ý -> é
+  asahi                  cognate: xaahÝʔ -> xaahéʔ
+  askuruurit             etymology: í -> ó
+  askuruurit             cognate: AxkunoíNIt -> AxkunoóNIt
+  awakiks, tawakiks      etymology: ó -> š
+  awakiks, tawakiks      cognate: nuutawáčeó -> nuutawáčeš
+  caahiks                etymology: ó -> š
+  caahiks                cognate: sáhnió -> sáhniš
+  cikstit                etymology: ó -> š
+  cikstit                cognate: atíótIt -> atíštIt
+  ckaapiruus             etymology: í -> ó
+  ckaapiruus             cognate: skaapiríx -> skaapiróx
+  ckuraahkiiks           etymology: Ýó -> éš
+  cuuʔat                 etymology: í -> ó
+  cuuʔat                 cognate: soíʔAt -> soóʔAt
+  haakakuut              etymology: í -> ó
+  haakakuut              cognate: haakakoítuʔ -> haakakoótuʔ
+  hikuc                  etymology: í -> ó
+  hikuc                  cognate: hukís -> hukós
+  Hiruuska               etymology: ó -> š
+  Hiruuska               cognate: heduóka -> heduška
+  huriirusuʔ             etymology: Ý -> é
+  huriirusuʔ             cognate: hunaneÝnux -> hunaneénux
+  huuruhaahkaatiit       etymology: ó -> š
+  huuruhaahkaatiit       cognate: neeóoorahkaátiit -> neešoorahkaátiit
+  huuwiʔ                 etymology: í -> ó
+  icaahiks               etymology: ó -> š
+  icaahiks               cognate: isáh-nió -> isáh-niš
+  iciis                  etymology: ó -> š
+  iciis                  cognate: isió -> isiš
+  isiirit                etymology: ó -> š; Ý -> é
+  isiirit                cognate: óeÝNIt -> šeéNIt
+  kaariiksuʔ             etymology: ó -> š
+  kaariiksuʔ             cognate: kaaniió -> kaaniiš
+  kaatpiks               etymology: ó -> š
+  kaatpiks               cognate: kátwiʔIó -> kátwiʔIš
+  kaatuʔ                 etymology: Ý -> é
+  katahiis               etymology: ó -> š
+  katahiis               cognate: iskačitahiió -> iskačitahiiš
+  katuurat               etymology: í -> ó
+  katuurat               cognate: katoíRIt -> katoóRIt
+  kawahki                etymology: ó -> š
+  kawahki                cognate: ka-wáhtó -> ka-wáhtš
+  kiciirikiis            etymology: ó -> š
+  kiciirikiis            cognate: tseeričiió -> tseeričiiš
+  kickaʔaahis            etymology: ó -> š
+  kickaʔaahis            cognate: tskaʔaahNIó -> tskaʔaahNIš
+  kickuʔ                 etymology: Ý -> é
+  kickuʔ                 cognate: čÝskoʔ -> čéskoʔ
+  kictuuksuʔ             etymology: í -> ó
+  kictuuksuʔ             cognate: tstoíxuʔ -> tstoóxuʔ
+  kicuucis               etymology: ó -> š
+  kicuucis               cognate: čituusió -> čituusiš
+  kiiciʔ, kiciʔ          etymology: Ý -> é; Ý -> é
+  kiiciʔ, kiciʔ          cognate: čeÝsiʔ, čeÝsuʔ -> čeésiʔ, čeésuʔ
+  kiictikucuuʔ           etymology: Ý -> é
+  kiictikucuuʔ           cognate: čeÝstIt -> čeéstIt
+  kiiriks                etymology: ó -> š
+  kiiriks                cognate: čeerió -> čeeriš
+  kiis                   etymology: ó -> š
+  kiis                   cognate: čeeó (in...) -> čeeš (in...)
+  kiispatuʔ              etymology: ó -> š
+  kiispatuʔ              cognate: čiówátU -> čišwátU
+  kikii, kirikii         etymology: Ý -> é
+  kikii, kirikii         cognate: tičeÝ -> tičeé
+  kipisuʔ                etymology: ó -> š
+  kipisuʔ                cognate: čipió -> čipiš
+  kirikii, kikii         etymology: Ý -> é
+  kirikii, kikii         cognate: tičÝ -> tičé
+  kiriwis                etymology: ó -> š
+  kiriwis                cognate: čiwinió -> čiwiniš
+  kiriwiskii             etymology: ó -> š
+  kiriwiskii             cognate: čiwinióčee -> čiwiniščee
+  kitahiis               cognate: iskačitahiió -> iskačitahiiš
+  kskiikahki             etymology: ó -> š
+  kskiikahki             cognate: sčeekáhtó -> sčeekáhtš
+  kuruks                 etymology: í -> ó
+  kuruks                 cognate: koíRUx -> koóRUx
+  kuucki                 etymology: í -> ó; ó -> š
+  kuucki                 cognate: koístó -> koóstš
+  paahiksuʔ              etymology: ó -> š
+  paahiksuʔ              cognate: paahníóuʔ -> paahníšuʔ
+  paakahisuʔ             etymology: ó -> š
+  paakahisuʔ             cognate: paakAhíóuʔ -> paakAhíšuʔ
+  paapicisuʔ             etymology: ó -> š
+  paapicisuʔ             cognate: waapIsíóuʔ -> waapIsíšuʔ
+  paapiis                etymology: ó -> š
+  paapiis                cognate: kaápió -> kaápiš
+  Paari                  etymology: è -> į
+  paariisuʔ              etymology: ó -> š
+  paariisuʔ              cognate: paaniíóuʔ -> paaniíšuʔ
+  paaruris               etymology: ó -> š
+  paaruris               cognate: neswaanuníóuʔ -> neswaanuníšuʔ
+  paatisuʔ               etymology: ó -> š
+  paatisuʔ               cognate: waatíóuʔ -> waatíšuʔ
+  paatkariis             etymology: ó -> š
+  paatkariis             cognate: wátó -> wátš
+  Pasaasi                etymology: ü -> ž; ü -> ž
+  piʔaakis               etymology: ó -> š
+  piʔaakis               cognate: piʔaátó -> piʔaátš
+  piiraruus              etymology: í -> ó
+  piiraruus              cognate: wiraaniwíx -> wiraaniwóx
+  piitiisutki            etymology: ó -> š; ó -> š
+  piitiisutki            cognate: wiiteeóútó -> wiiteešútš
+  raahuriiʔ              etymology: Ý -> é
+  raahuriiʔ              cognate: naahuuneÝʔ -> naahuuneéʔ
+  raariktis              etymology: ó -> š
+  raariktis              cognate: raanihtió -> raanihtiš
+  rahuraahki             etymology: ó -> š
+  rahuraahki             cognate: NAhnunaáhtó -> NAhnunaáhtš
+  -rakis                 etymology: ó -> š; š -> ⁱ; ó -> š; ó -> š
+  -rakis                 cognate: nátó -> nátš
+  -rakis                 cognate: anátó -> anátš
+  raktiiki               etymology: ó -> š
+  raktiiki               cognate: ii-NAhniító -> ii-NAhniítš
+  rariis                 etymology: ó -> š
+  riiciki                cognate: neesító -> neesítš
+  riickuhki              cognate: neeskúhtó -> neeskúhtš
+  riicuʔ                 etymology: Ý -> é
+  riicuʔ                 cognate: neÝsuʔ -> neésuʔ
+  riiksuʔ                etymology: ó -> š
+  riiksuʔ                cognate: niíóuʔ -> niíšuʔ
+  riiksuʔ                etymology: Ýó -> éš
+  riisaapiʔuʔ            etymology: ó -> š
+  riisaapiʔuʔ            cognate: neeóaapíʔuʔ -> neešaapíʔuʔ
+  riisaar                etymology: ó -> š
+  riisaar                cognate: reeóaan -> reešaan
+  riisaaruʔ              etymology: ó -> š
+  riisaaruʔ              cognate: neeóaánuʔ -> neešaánuʔ
+  riisuuruʔ              etymology: ó -> š
+  riisuuruʔ              cognate: neeóuúnuʔ -> neešuúnuʔ
+  rikiis                 etymology: ó -> š
+  rikiis                 cognate: ričiióaan -> ričiišaan
+  Sahi                   etymology: ó -> š; ó -> š; ó -> š; Ý -> é; ó -> š
+  Sahi                   cognate: óahiyela -> šahiyela
+  Sahi                   cognate: óaayeena -> šaayeena
+  Sahi                   cognate: óaahÝʔ -> šaahéʔ
+  Sahi                   cognate: óaaheerákAt -> šaaheerákAt
+  siistitpaat            etymology: ó -> š; ó -> š
+  siistitpaat            cognate: óiótItwaáʔ -> šištItwaáʔ
+  suhuks                 etymology: ó -> š
+  suhuks                 cognate: óíhUx -> šíhUx
+  suuhuriʔ               etymology: ó -> š
+  suuhuriʔ               cognate: óuúhuniʔ -> šuúhuniʔ
+  Tahkuki, Tahkutiriʔ    etymology: ó -> š
+  Tahkuki, Tahkutiriʔ    cognate: tAhkútó -> tAhkútš
+  takii                  etymology: Ý -> é
+  takii                  cognate: tačeÝ -> tačeé
+  tiikskurit             etymology: ó -> š
+  tiikskurit             cognate: teókúNIt -> teškúNIt
+  tiraakasiiʔuʔ          etymology: š -> ⁱ
+  tiraakasiiʔuʔ          cognate: tšnaakAxiíʔuʔ -> tⁱnaakAxiíʔuʔ
+  Uktaka                 etymology: Ó -> ą; Ó -> ą
+  uutikis                etymology: ó -> š
+  uutikis                cognate: ootító -> ootítš
+  wakarahiis             etymology: ó -> š
+  waktiks [+ i-]         etymology: ó -> š
+  waktiks [+ i-]         cognate: wahnió -> wahniš
+  wiriis                 etymology: ó -> š
+  etymology pieces (constituent_elements): the same stand-in characters replaced in 2 rows
+  (cognate forms still holding ó or Ý before this run: 21)
+
+== 9. Combining forms: a space or a line-break hyphen inside the form
+  askatawihaaruʔ         askatawihaar-, askatawi haah- -> askatawihaar-, askatawihaah-
+  hukaatahaaruʔ          hukaatahaar-, hukaata haah- -> hukaatahaar-, hukaatahaah-
+  hukiwahaaruʔ           hukiwahaar-, hukiwa haah- -> hukiwahaar-, hukiwahaah-
+  hurii                  hurii- waawikaʔuk -> huriiwaawikaʔuk   (hyphen at a line end read as a line break)
+  huukiwihkahaaruʔ       huukiwihka haah- -> huukiwihkahaah-
+  itkahaaruʔ             itkahaar-, itka- haah- -> itkahaar-, itkahaah-   (hyphen at a line end read as a line break)
+  itkarahkakus           it- karahkaarik -> itkarahkaarik   (hyphen at a line end read as a line break)
+  ituhwiitik             ituhwiiruu- tik -> ituhwiiruutik   (hyphen at a line end read as a line break)
+  Kitkahaahki            Kitka haah- -> Kitkahaah-
+  Raawaruhki             raawaruhki- si- -> raawaruhkisi-   (hyphen at a line end read as a line break)
+
+== 10. Headwords
+  SK-wiicat_k-p179-3542, headword: 'wiicat k' -> 'wiicatk'
+  SK-awacitiksa-p20-0264, stem_preverb: '( i r . . . )' -> '(ir...)'
+  SK-hiitka-p390-3849, stem_preverb: '(i r...ut...)' -> '(ir...ut...)'
+  SK-tahaariwi--p155-3027, stem_preverb: '(u t...)' -> '(ut...)'
+  tawihuhtawii: the preverb (ut...) was stored twice, in the headword and in its own column; removed from the headword
+  awaʔa                  bracket note [+ raar-] added after the headword (kept with the preverb): '(ir...) [+ raar-]'
+  awaahkiir              bracket note [+ raar-] added after the headword (kept with the preverb): '[+ raar-]'
+  awihurah               bracket note [+ ruu-, i-] added after the headword (kept with the preverb): '[+ ruu-, i-]'
+  awikickakuusik         bracket note [+ ruu-, i-] added after the headword (kept with the preverb): '[+ ruu-, i-]'
+  awiraʔa                bracket note [+ neg.] added after the headword (kept with the preverb): '(ir...) [+ neg.]'
+  iriitik                bracket note [+ raar-] added after the headword (kept with the preverb): '[+ raar-]'
+  kariikiwat             bracket note [+ raar-] added after the headword (kept with the preverb): '(ut...) [+ raar-]'
+  kawiʔuktawuh           bracket note [+ si-] added after the headword (kept with the preverb): '(ut...) [+ si-]'
+  kawitaat               bracket note [+ ruu-, i-] added after the headword (kept with the preverb): '[+ ruu-, i-]'
+  kicpakaʔu              bracket note [+ ruu-] added after the headword (kept with the preverb): '[+ ruu-]'
+  kisik                  bracket note [+ i-] added after the headword (kept with the preverb): '[+ i-]'
+  parihik                bracket note [+ruu-, i-] added after the headword (kept with the preverb): '[+ruu-, i-]'
+  raaʔiitusuu            bracket note [+ruu-, i-] added after the headword (kept with the preverb): '(ut...) [+ruu-, i-]'
+  raawiʔuu               bracket note [+ ruu-, i-] added after the headword (kept with the preverb): '[+ ruu-, i-]'
+  raawita                bracket note [i-] added after the headword (kept with the preverb): '(ut...) [i-]'
+  rihik                  bracket note [+ ruu-, i-] added after the headword (kept with the preverb): '(ir...) [+ ruu-, i-]'
+  ruuhuruu               bracket note [+ riku-] added after the headword (kept with the preverb): '(ut...) [+ riku-]'
+  tawakaʔu               bracket note [+ ruu-] added after the headword (kept with the preverb): '[+ ruu-]'
+  waakuʔat               bracket note [+ raar-] added after the headword (kept with the preverb): '(ut...) [+ raar-]'
+  waasar                 bracket note [+ ruu-] added after the headword (kept with the preverb): '[+ ruu-]'
+  wakaawiraariks         bracket note [+ i-] added after the headword (kept with the preverb): '[+ i-]'
+  wiʔak                  bracket note [+ (ku-, ruu-), i-] added after the headword (kept with the preverb): '[+ (ku-, ruu-), i-]'
+
+== 11. The column an entry is printed in
+  393 entries: left/right corrected from the position of the headword on the page
+
+== 12. Entries
+  added SK-kusisaar-p103-4273: kusisaar VI(1-i) '(impf. only) play.', forms 3 tikusisaariʔ, 4 iriirakusisaari, 5 tikusisaarista (book p. 451)
+  removed SK-aakaqa-p351-3592 'aakaʔa (ir...)': not a headword in the book; it repeated the third variant of 'aaka, aakaʔ, aakaʔa', whose gloss and example the real entry already has
+
+== Left for a person (7)
+  Appendix 2, tir 'to be together': the singular cell is empty in print; 'tir' is stored. Left as it is: the conjugation engine reads this value
+  Grammar chapter: 51 stored words differ from the blind reading in an accent, a vowel or a glottal stop. They were matched by likeness, not by position, and need a person with the page (chapter4_differences.json)
+  verb form 2 of itkaakahaaruʔ (SK-itkaakahaaruq-p69-1225): stored 'tiitkaakahaa', printed stretch '. • tiitkaakahaa': the match is not clean
+  verb form 4 of itkaakahaaruʔ (SK-itkaakahaaruq-p69-1225): stored 'iriiraatkaakahaaru', printed stretch '. • iriiraatkaakahaaru': the match is not clean
+  verb form 5 of itkaakahaaruʔ (SK-itkaakahaaruq-p69-1225): stored 'tiitkaakahaaruksta', printed stretch 'is. • tiitkaakahaaruʔa': the match is not clean
+  example of apak: stored 'rihkuupa´kstarit', printed 'rihkuupaȞkstarit' (a printing oddity inside a Skiri word; left as stored)
+  combining form of takasis: 'takasistik [- + raar-]': a hyphen at a line end that could not be resolved
+
+backups: OneDrive/pari_pakuru_backups (stamp 20261113_135745)

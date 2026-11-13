@@ -11,7 +11,7 @@ and Blue Book Lessons 5, 7):
   System 1: KINSHIP POSSESSION (N-KIN)
     Suppletive stems — each kinship term has irregular my/your/his forms.
     Source: appendix3_kinship.json (23 terms with possessive paradigms).
-    Example: "mother" → my: atiraʔ, your: asaas, his: isaastiʔ
+    Example: "mother" → my: atiraʔ, your: asas, his: isaastiʔ
 
   System 2: BODY-PART / PHYSICAL POSSESSION (N-DEP, some N)
     Expressed via the ri- (PHY.POSS) prefix in the verb introducer.

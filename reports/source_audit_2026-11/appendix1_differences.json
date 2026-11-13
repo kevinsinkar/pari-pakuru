@@ -225,8 +225,9 @@
    "stored": "ríitíraakaahuʔ",
    "blind_reading": "riítiraakaahuʔ",
    "english": "we came",
-   "grade": "blind-reading",
-   "printed": "riítiraakaahuʔ"
+   "grade": "confirmed",
+   "printed": "riítiraakaahuʔ",
+   "third_look": "riítiraakaahuʔ"
   },
   {
    "id": "p2-L4-r10",
@@ -239,8 +240,9 @@
    "stored": "ríisíraakaahuʔ",
    "blind_reading": "riísiraakaahuʔ",
    "english": "you came",
-   "grade": "blind-reading",
-   "printed": "riísiraakaahuʔ"
+   "grade": "confirmed",
+   "printed": "riísiraakaahuʔ",
+   "third_look": "riísiraakaahuʔ"
   },
   {
    "id": "p2-L5-r2",
@@ -253,8 +255,9 @@
    "stored": "rasiiraʔ",
    "blind_reading": "rasiíraʔ",
    "english": "you came",
-   "grade": "blind-reading",
-   "printed": "rasiíraʔ"
+   "grade": "confirmed",
+   "printed": "rasiíraʔ",
+   "third_look": "rasiíraʔ"
   },
   {
    "id": "p2-L5-r5",
@@ -267,8 +270,9 @@
    "stored": "síratíhwaʔaʔ",
    "blind_reading": "síratihwaʔaʔ",
    "english": "we came",
-   "grade": "blind-reading",
-   "printed": "síratihwaʔaʔ"
+   "grade": "confirmed",
+   "printed": "síratihwaʔaʔ",
+   "third_look": "síratihwaʔaʔ"
   },
   {
    "id": "p2-L5-r6",
@@ -281,8 +285,9 @@
    "stored": "sírasíhwaʔaʔ",
    "blind_reading": "sírasihwaaʔ",
    "english": "you came",
-   "grade": "blind-reading",
-   "printed": "sírasihwaaʔ"
+   "grade": "confirmed",
+   "printed": "sírasihwaaʔ",
+   "third_look": "sírasihwaaʔ"
   },
   {
    "id": "p2-L5-r7",
@@ -295,8 +300,9 @@
    "stored": "sírawáaʔ",
    "blind_reading": "sírawaaʔ",
    "english": "they came",
-   "grade": "blind-reading",
-   "printed": "sírawaaʔ"
+   "grade": "confirmed",
+   "printed": "sírawaaʔ",
+   "third_look": "sírawaaʔ"
   },
   {
    "id": "p2-L5-r9",
@@ -309,8 +315,9 @@
    "stored": "ratíraakaahuʔ",
    "blind_reading": "ratiraakaahuʔ",
    "english": "we came",
-   "grade": "blind-reading",
-   "printed": "ratiraakaahuʔ"
+   "grade": "confirmed",
+   "printed": "ratiraakaahuʔ",
+   "third_look": "ratiraakaahuʔ"
   },
   {
    "id": "p2-L5-r10",
@@ -323,8 +330,9 @@
    "stored": "rasíraakaahuʔ",
    "blind_reading": "rasiraakaahuʔ",
    "english": "you came",
-   "grade": "blind-reading",
-   "printed": "rasiraakaahuʔ"
+   "grade": "confirmed",
+   "printed": "rasiraakaahuʔ",
+   "third_look": "rasiraakaahuʔ"
   },
   {
    "id": "p2-R1-r1",
@@ -337,8 +345,9 @@
    "stored": "kuustíriiʔaʔ",
    "blind_reading": "kuustiriiʔaʔ",
    "english": "I will come",
-   "grade": "blind-reading",
-   "printed": "kuustiriiʔaʔ"
+   "grade": "confirmed",
+   "printed": "kuustiriiʔaʔ",
+   "third_look": "kuustiriiʔaʔ"
   },
   {
    "id": "p2-R1-r2",
@@ -351,8 +360,9 @@
    "stored": "kaasíriiʔaʔ",
    "blind_reading": "kaasiriiʔaʔ",
    "english": "you will come",
-   "grade": "blind-reading",
-   "printed": "kaasiriiʔaʔ"
+   "grade": "confirmed",
+   "printed": "kaasiriiʔaʔ",
+   "third_look": "kaasiriiʔaʔ"
   },
   {
    "id": "p2-R1-r4",
@@ -365,8 +375,9 @@
    "stored": "kaacíriíwaʔaʔ",
    "blind_reading": "kaaciriiwaʔaʔ",
    "english": "we will come",
-   "grade": "blind-reading",
-   "printed": "kaaciriiwaʔaʔ"
+   "grade": "confirmed",
+   "printed": "kaaciriiwaʔaʔ",
+   "third_look": "kaaciriiwaʔaʔ"
   },
   {
    "id": "p2-R1-r5",
@@ -379,8 +390,9 @@
    "stored": "sikuustíriiwaʔaʔ",
    "blind_reading": "sikuustiriiwaʔaʔ",
    "english": "we will come",
-   "grade": "blind-reading",
-   "printed": "sikuustiriiwaʔaʔ"
+   "grade": "confirmed",
+   "printed": "sikuustiriiwaʔaʔ",
+   "third_look": "sikuustiriiwaʔaʔ"
   },
   {
    "id": "p2-R1-r6",
@@ -393,8 +405,9 @@
    "stored": "sikaasíriiwaʔaʔ",
    "blind_reading": "sikaasiriiwaʔaʔ",
    "english": "you will come",
-   "grade": "blind-reading",
-   "printed": "sikaasiriiwaʔaʔ"
+   "grade": "confirmed",
+   "printed": "sikaasiriiwaʔaʔ",
+   "third_look": "sikaasiriiwaʔaʔ"
   },
   {
    "id": "p2-R1-r7",
@@ -407,8 +420,9 @@
    "stored": "sikusaaʔaʔ",
    "blind_reading": "sikusaawaʔaʔ",
    "english": "they will come",
-   "grade": "blind-reading",
-   "printed": "sikusaawaʔaʔ"
+   "grade": "confirmed",
+   "printed": "sikusaawaʔaʔ",
+   "third_look": "sikusaawaʔaʔ"
   },
   {
    "id": "p2-R1-r9",
@@ -421,8 +435,9 @@
    "stored": "kuustíriiraakaahuʔ",
    "blind_reading": "kuustiriiraakaahuʔ",
    "english": "we will come",
-   "grade": "blind-reading",
-   "printed": "kuustiriiraakaahuʔ"
+   "grade": "confirmed",
+   "printed": "kuustiriiraakaahuʔ",
+   "third_look": "kuustiriiraakaahuʔ"
   },
   {
    "id": "p2-R1-r10",
@@ -435,8 +450,9 @@
    "stored": "kaasíriiraakaahuʔ",
    "blind_reading": "kaasiriiraakaahuʔ",
    "english": "you will come",
-   "grade": "blind-reading",
-   "printed": "kaasiriiraakaahuʔ"
+   "grade": "confirmed",
+   "printed": "kaasiriiraakaahuʔ",
+   "third_look": "kaasiriiraakaahuʔ"
   },
   {
    "id": "p2-R2-r1",
@@ -449,8 +465,9 @@
    "stored": "íriira",
    "blind_reading": "iriiratiira",
    "english": "where I'm coming from",
-   "grade": "blind-reading",
-   "printed": "iriiratiira"
+   "grade": "confirmed",
+   "printed": "iriiratiira",
+   "third_look": "iriiratiira"
   },
   {
    "id": "p2-R2-r2",
@@ -463,8 +480,9 @@
    "stored": "íriisíira",
    "blind_reading": "iriirasiira",
    "english": "where you're coming from",
-   "grade": "blind-reading",
-   "printed": "iriirasiira"
+   "grade": "confirmed",
+   "printed": "iriirasiira",
+   "third_look": "iriirasiira"
   },
   {
    "id": "p2-R2-r3",
@@ -477,8 +495,9 @@
    "stored": "íriiraʔa",
    "blind_reading": "iriraʔa",
    "english": "where he's coming from",
-   "grade": "blind-reading",
-   "printed": "iriraʔa"
+   "grade": "confirmed",
+   "printed": "iriraʔa",
+   "third_look": "iriraʔa"
   },
   {
    "id": "p2-R2-r4",
@@ -491,8 +510,9 @@
    "stored": "íriiracíhwaʔa",
    "blind_reading": "iriiracihwaʔa",
    "english": "where we're coming from",
-   "grade": "blind-reading",
-   "printed": "iriiracihwaʔa"
+   "grade": "confirmed",
+   "printed": "iriiracihwaʔa",
+   "third_look": "iriiracihwaʔa"
   },
   {
    "id": "p2-R2-r5",
@@ -505,8 +525,9 @@
    "stored": "íriisiratíhwaʔa",
    "blind_reading": "iriisiratihwaʔa",
    "english": "where we're coming from",
-   "grade": "blind-reading",
-   "printed": "iriisiratihwaʔa"
+   "grade": "confirmed",
+   "printed": "iriisiratihwaʔa",
+   "third_look": "iriisiratihwaʔa"
   },
   {
    "id": "p2-R2-r6",
@@ -519,8 +540,9 @@
    "stored": "íriisirasíhwaʔa",
    "blind_reading": "iriisirasihwaʔa",
    "english": "where you're coming from",
-   "grade": "blind-reading",
-   "printed": "iriisirasihwaʔa"
+   "grade": "confirmed",
+   "printed": "iriisirasihwaʔa",
+   "third_look": "iriisirasihwaʔa"
   },
   {
    "id": "p2-R2-r7",
@@ -533,8 +555,9 @@
    "stored": "íriisirawaʔa",
    "blind_reading": "iriisirawaʔa",
    "english": "where they're coming from",
-   "grade": "blind-reading",
-   "printed": "iriisirawaʔa"
+   "grade": "confirmed",
+   "printed": "iriisirawaʔa",
+   "third_look": "iriisirawaʔa"
   },
   {
    "id": "p2-R2-r8",
@@ -547,8 +570,9 @@
    "stored": "íriirataraakaahu",
    "blind_reading": "iriirataraakahu",
    "english": "where we're coming from",
-   "grade": "blind-reading",
-   "printed": "iriirataraakahu"
+   "grade": "confirmed",
+   "printed": "iriirataraakahu",
+   "third_look": "iriirataraakahu"
   },
   {
    "id": "p2-R2-r9",
@@ -561,8 +585,9 @@
    "stored": "íriiratíraakaahu",
    "blind_reading": "iriiratiraakahu",
    "english": "where we're coming from",
-   "grade": "blind-reading",
-   "printed": "iriiratiraakahu"
+   "grade": "confirmed",
+   "printed": "iriiratiraakahu",
+   "third_look": "iriiratiraakahu"
   },
   {
    "id": "p2-R2-r10",
@@ -575,8 +600,9 @@
    "stored": "íriirasíraakaahu",
    "blind_reading": "iriirasiraakahu",
    "english": "where you're coming from",
-   "grade": "blind-reading",
-   "printed": "iriirasiraakahu"
+   "grade": "confirmed",
+   "printed": "iriirasiraakahu",
+   "third_look": "iriirasiraakahu"
   },
   {
    "id": "p2-R2-r11",
@@ -589,8 +615,9 @@
    "stored": "íriiraʔaahu, íriiraara",
    "blind_reading": "iriraaʔahu, iriiraraara",
    "english": "where they're coming from",
-   "grade": "blind-reading",
-   "printed": "iriraaʔahu, iriiraraara"
+   "grade": "confirmed",
+   "printed": "iriraaʔahu, iriiraraara",
+   "third_look": "iriraaʔahu, iriiraraara"
   },
   {
    "id": "p2-R3-r1",
@@ -603,8 +630,9 @@
    "stored": "ítiira",
    "blind_reading": "itiira",
    "english": "if/when I come",
-   "grade": "blind-reading",
-   "printed": "itiira"
+   "grade": "confirmed",
+   "printed": "itiira",
+   "third_look": "itiira"
   },
   {
    "id": "p2-R3-r2",
@@ -617,8 +645,9 @@
    "stored": "ísiira",
    "blind_reading": "isiira",
    "english": "if/when you come",
-   "grade": "blind-reading",
-   "printed": "isiira"
+   "grade": "confirmed",
+   "printed": "isiira",
+   "third_look": "isiira"
   },
   {
    "id": "p2-R3-r4",
@@ -631,8 +660,9 @@
    "stored": "icíhwaʔa",
    "blind_reading": "icihwaʔa",
    "english": "if/when we come",
-   "grade": "blind-reading",
-   "printed": "icihwaʔa"
+   "grade": "confirmed",
+   "printed": "icihwaʔa",
+   "third_look": "icihwaʔa"
   },
   {
    "id": "p2-R3-r5",
@@ -645,8 +675,9 @@
    "stored": "siʔitíhwaʔa",
    "blind_reading": "siʔitihwaʔa",
    "english": "if/when we come",
-   "grade": "blind-reading",
-   "printed": "siʔitihwaʔa"
+   "grade": "confirmed",
+   "printed": "siʔitihwaʔa",
+   "third_look": "siʔitihwaʔa"
   },
   {
    "id": "p2-R3-r6",
@@ -659,8 +690,9 @@
    "stored": "siʔisíhwaʔa",
    "blind_reading": "siʔisihwaʔa",
    "english": "if/when you come",
-   "grade": "blind-reading",
-   "printed": "siʔisihwaʔa"
+   "grade": "confirmed",
+   "printed": "siʔisihwaʔa",
+   "third_look": "siʔisihwaʔa"
   },
   {
    "id": "p2-R3-r8",
@@ -673,8 +705,9 @@
    "stored": "itaraakaahu",
    "blind_reading": "itaraakahu",
    "english": "if/when we come",
-   "grade": "blind-reading",
-   "printed": "itaraakahu"
+   "grade": "confirmed",
+   "printed": "itaraakahu",
+   "third_look": "itaraakahu"
   },
   {
    "id": "p2-R3-r9",
@@ -687,8 +720,9 @@
    "stored": "itíraakaahu",
    "blind_reading": "itiraakahu",
    "english": "if/when we come",
-   "grade": "blind-reading",
-   "printed": "itiraakahu"
+   "grade": "confirmed",
+   "printed": "itiraakahu",
+   "third_look": "itiraakahu"
   },
   {
    "id": "p2-R3-r10",
@@ -701,8 +735,9 @@
    "stored": "isíraakaahu",
    "blind_reading": "isiraakahu",
    "english": "if/when you come",
-   "grade": "blind-reading",
-   "printed": "isiraakahu"
+   "grade": "confirmed",
+   "printed": "isiraakahu",
+   "third_look": "isiraakahu"
   },
   {
    "id": "p2-R3-r11",
@@ -715,8 +750,9 @@
    "stored": "raaʔaahu, raaraara",
    "blind_reading": "raaʔahu, raraara",
    "english": "if/when they come",
-   "grade": "blind-reading",
-   "printed": "raaʔahu, raraara"
+   "grade": "confirmed",
+   "printed": "raaʔahu, raraara",
+   "third_look": "raaʔahu, raraara"
   },
   {
    "id": "p2-R4-r4",
@@ -729,8 +765,9 @@
    "stored": "aacíhwaʔa",
    "blind_reading": "aacihwaʔa",
    "english": "should we come",
-   "grade": "blind-reading",
-   "printed": "aacihwaʔa"
+   "grade": "confirmed",
+   "printed": "aacihwaʔa",
+   "third_look": "aacihwaʔa"
   },
   {
    "id": "p2-R4-r5",
@@ -743,8 +780,9 @@
    "stored": "siʔaatíhwaʔa",
    "blind_reading": "siʔaatihwaʔa",
    "english": "should we come",
-   "grade": "blind-reading",
-   "printed": "siʔaatihwaʔa"
+   "grade": "confirmed",
+   "printed": "siʔaatihwaʔa",
+   "third_look": "siʔaatihwaʔa"
   },
   {
    "id": "p2-R4-r6",
@@ -757,8 +795,9 @@
    "stored": "siʔaasíhwaʔa",
    "blind_reading": "siʔaasihwaʔa",
    "english": "should you come",
-   "grade": "blind-reading",
-   "printed": "siʔaasihwaʔa"
+   "grade": "confirmed",
+   "printed": "siʔaasihwaʔa",
+   "third_look": "siʔaasihwaʔa"
   },
   {
    "id": "p2-R4-r8",
@@ -771,8 +810,9 @@
    "stored": "aataraakaahu",
    "blind_reading": "aataraakahu",
    "english": "should we come",
-   "grade": "blind-reading",
-   "printed": "aataraakahu"
+   "grade": "confirmed",
+   "printed": "aataraakahu",
+   "third_look": "aataraakahu"
   },
   {
    "id": "p2-R4-r9",
@@ -785,8 +825,9 @@
    "stored": "aatíraakaahu",
    "blind_reading": "aatiraakahu",
    "english": "should we come",
-   "grade": "blind-reading",
-   "printed": "aatiraakahu"
+   "grade": "confirmed",
+   "printed": "aatiraakahu",
+   "third_look": "aatiraakahu"
   },
   {
    "id": "p2-R4-r10",
@@ -799,8 +840,9 @@
    "stored": "aasíraakaahu",
    "blind_reading": "aasiraakahu",
    "english": "should you come",
-   "grade": "blind-reading",
-   "printed": "aasiraakahu"
+   "grade": "confirmed",
+   "printed": "aasiraakahu",
+   "third_look": "aasiraakahu"
   },
   {
    "id": "p2-R4-r11",
@@ -813,8 +855,9 @@
    "stored": "aaʔaahu, aaraara",
    "blind_reading": "aaʔahu, aaraara",
    "english": "should they come",
-   "grade": "blind-reading",
-   "printed": "aaʔahu, aaraara"
+   "grade": "confirmed",
+   "printed": "aaʔahu, aaraara",
+   "third_look": "aaʔahu, aaraara"
   },
   {
    "id": "p2-R5-r1",
@@ -827,8 +870,9 @@
    "stored": "ratihkúʔa",
    "blind_reading": "ratihkuʔa",
    "english": "for me to come",
-   "grade": "blind-reading",
-   "printed": "ratihkuʔa"
+   "grade": "confirmed",
+   "printed": "ratihkuʔa",
+   "third_look": "ratihkuʔa"
   },
   {
    "id": "p2-R5-r2",
@@ -841,8 +885,9 @@
    "stored": "rasihkúʔa",
    "blind_reading": "rasihkuʔa",
    "english": "for you to come",
-   "grade": "blind-reading",
-   "printed": "rasihkuʔa"
+   "grade": "confirmed",
+   "printed": "rasihkuʔa",
+   "third_look": "rasihkuʔa"
   },
   {
    "id": "p2-R5-r3",
@@ -855,8 +900,9 @@
    "stored": "raakúʔa",
    "blind_reading": "raakuʔa",
    "english": "for him to come",
-   "grade": "blind-reading",
-   "printed": "raakuʔa"
+   "grade": "confirmed",
+   "printed": "raakuʔa",
+   "third_look": "raakuʔa"
   },
   {
    "id": "p2-R5-r4",
@@ -869,8 +915,9 @@
    "stored": "racihkúwaʔa",
    "blind_reading": "racihkuwaʔa",
    "english": "for us to come",
-   "grade": "blind-reading",
-   "printed": "racihkuwaʔa"
+   "grade": "confirmed",
+   "printed": "racihkuwaʔa",
+   "third_look": "racihkuwaʔa"
   },
   {
    "id": "p2-R5-r5",
@@ -883,8 +930,9 @@
    "stored": "siratihkúwaʔa",
    "blind_reading": "siratihkuwaʔa",
    "english": "for us to come",
-   "grade": "blind-reading",
-   "printed": "siratihkuwaʔa"
+   "grade": "confirmed",
+   "printed": "siratihkuwaʔa",
+   "third_look": "siratihkuwaʔa"
   },
   {
    "id": "p2-R5-r6",
@@ -897,8 +945,9 @@
    "stored": "sirasihkúwaʔa",
    "blind_reading": "sirasihkuwaʔa",
    "english": "for you two to come",
-   "grade": "blind-reading",
-   "printed": "sirasihkuwaʔa"
+   "grade": "confirmed",
+   "printed": "sirasihkuwaʔa",
+   "third_look": "sirasihkuwaʔa"
   },
   {
    "id": "p2-R5-r7",
@@ -911,8 +960,9 @@
    "stored": "siraakúwaʔa",
    "blind_reading": "siraakuwaʔa",
    "english": "for them to come",
-   "grade": "blind-reading",
-   "printed": "siraakuwaʔa"
+   "grade": "confirmed",
+   "printed": "siraakuwaʔa",
+   "third_look": "siraakuwaʔa"
   },
   {
    "id": "p2-R5-r8",
@@ -925,8 +975,9 @@
    "stored": "rataakúraakahu",
    "blind_reading": "rataakuraakahu",
    "english": "for us to come",
-   "grade": "blind-reading",
-   "printed": "rataakuraakahu"
+   "grade": "confirmed",
+   "printed": "rataakuraakahu",
+   "third_look": "rataakuraakahu"
   },
   {
    "id": "p2-R5-r9",
@@ -939,8 +990,9 @@
    "stored": "ratihkúraakahu",
    "blind_reading": "ratihkuraakahu",
    "english": "for us to come",
-   "grade": "blind-reading",
-   "printed": "ratihkuraakahu"
+   "grade": "confirmed",
+   "printed": "ratihkuraakahu",
+   "third_look": "ratihkuraakahu"
   },
   {
    "id": "p2-R5-r10",
@@ -953,8 +1005,9 @@
    "stored": "rasihkúraakahu",
    "blind_reading": "rasihkuraakahu",
    "english": "for you to come",
-   "grade": "blind-reading",
-   "printed": "rasihkuraakahu"
+   "grade": "confirmed",
+   "printed": "rasihkuraakahu",
+   "third_look": "rasihkuraakahu"
   },
   {
    "id": "p2-R5-r11",
@@ -967,8 +1020,9 @@
    "stored": "raakúhu, raakúraara",
    "blind_reading": "raakuhu, raakuraara",
    "english": "for them to come",
-   "grade": "blind-reading",
-   "printed": "raakuhu, raakuraara"
+   "grade": "confirmed",
+   "printed": "raakuhu, raakuraara",
+   "third_look": "raakuhu, raakuraara"
   },
   {
    "id": "p3-L2-r10",
@@ -981,8 +1035,9 @@
    "stored": "kaakasuuhakaa",
    "blind_reading": "kaakasuuhaakaa",
    "english": "you did not do it",
-   "grade": "blind-reading",
-   "printed": "kaakasuuhaakaa"
+   "grade": "confirmed",
+   "printed": "kaakasuuhaakaa",
+   "third_look": "kaakasuuhaakaa"
   },
   {
    "id": "p3-R1-r2",
@@ -995,8 +1050,9 @@
    "stored": "kaasucíʔaa",
    "blind_reading": "kaasuciʔaa",
    "english": "you will do it",
-   "grade": "blind-reading",
-   "printed": "kaasuciʔaa"
+   "grade": "confirmed",
+   "printed": "kaasuciʔaa",
+   "third_look": "kaasuciʔaa"
   },
   {
    "id": "p3-R1-r3",
@@ -1009,8 +1065,9 @@
    "stored": "kuusucíʔaa",
    "blind_reading": "kuusuciʔaa",
    "english": "he will do it",
-   "grade": "blind-reading",
-   "printed": "kuusuciʔaa"
+   "grade": "confirmed",
+   "printed": "kuusuciʔaa",
+   "third_look": "kuusuciʔaa"
   },
   {
    "id": "p3-R1-r4",
@@ -1023,8 +1080,9 @@
    "stored": "kaciicíʔaa",
    "blind_reading": "kaciiciʔaa",
    "english": "we will do it",
-   "grade": "blind-reading",
-   "printed": "kaciiciʔaa"
+   "grade": "confirmed",
+   "printed": "kaciiciʔaa",
+   "third_look": "kaciiciʔaa"
   },
   {
    "id": "p3-R1-r5",
@@ -1037,8 +1095,9 @@
    "stored": "sikuustucíʔaa",
    "blind_reading": "sikuustuciʔaa",
    "english": "we will do it",
-   "grade": "blind-reading",
-   "printed": "sikuustuciʔaa"
+   "grade": "confirmed",
+   "printed": "sikuustuciʔaa",
+   "third_look": "sikuustuciʔaa"
   },
   {
    "id": "p3-R1-r6",
@@ -1051,8 +1110,9 @@
    "stored": "sikaasucíʔaa",
    "blind_reading": "sikaasuciʔaa",
    "english": "you will do it",
-   "grade": "blind-reading",
-   "printed": "sikaasuciʔaa"
+   "grade": "confirmed",
+   "printed": "sikaasuciʔaa",
+   "third_look": "sikaasuciʔaa"
   },
   {
    "id": "p3-R1-r7",
@@ -1065,8 +1125,9 @@
    "stored": "sikuusucíʔaa",
    "blind_reading": "sikuusuciʔaa",
    "english": "they will do it",
-   "grade": "blind-reading",
-   "printed": "sikuusuciʔaa"
+   "grade": "confirmed",
+   "printed": "sikuusuciʔaa",
+   "third_look": "sikuusuciʔaa"
   },
   {
    "id": "p3-R1-r11",
@@ -1079,8 +1140,9 @@
    "stored": "kusiicíʔaa",
    "blind_reading": "kusiiciʔaa",
    "english": "they will do it",
-   "grade": "blind-reading",
-   "printed": "kusiiciʔaa"
+   "grade": "confirmed",
+   "printed": "kusiiciʔaa",
+   "third_look": "kusiiciʔaa"
   },
   {
    "id": "p3-R2-r1",
@@ -1093,8 +1155,9 @@
    "stored": "iriratuutaara",
    "blind_reading": "iriiratuutaara",
    "english": "the way I did it",
-   "grade": "blind-reading",
-   "printed": "iriiratuutaara"
+   "grade": "confirmed",
+   "printed": "iriiratuutaara",
+   "third_look": "iriiratuutaara"
   },
   {
    "id": "p3-R2-r2",
@@ -1107,8 +1170,9 @@
    "stored": "irirasuutaara",
    "blind_reading": "iriirasuutaara",
    "english": "the way you did it",
-   "grade": "blind-reading",
-   "printed": "iriirasuutaara"
+   "grade": "confirmed",
+   "printed": "iriirasuutaara",
+   "third_look": "iriirasuutaara"
   },
   {
    "id": "p3-R2-r3",
@@ -1121,8 +1185,9 @@
    "stored": "iriruuutaara",
    "blind_reading": "iriiruutaara",
    "english": "the way he did it",
-   "grade": "blind-reading",
-   "printed": "iriiruutaara"
+   "grade": "confirmed",
+   "printed": "iriiruutaara",
+   "third_look": "iriiruutaara"
   },
   {
    "id": "p3-R2-r4",
@@ -1135,8 +1200,9 @@
    "stored": "iriraciitaara",
    "blind_reading": "iriiraciitaara",
    "english": "the way we did it",
-   "grade": "blind-reading",
-   "printed": "iriiraciitaara"
+   "grade": "confirmed",
+   "printed": "iriiraciitaara",
+   "third_look": "iriiraciitaara"
   },
   {
    "id": "p3-R2-r5",
@@ -1149,8 +1215,9 @@
    "stored": "iririsiratuutaara",
    "blind_reading": "iriisiratuutaara",
    "english": "the way we did it",
-   "grade": "blind-reading",
-   "printed": "iriisiratuutaara"
+   "grade": "confirmed",
+   "printed": "iriisiratuutaara",
+   "third_look": "iriisiratuutaara"
   },
   {
    "id": "p3-R2-r6",
@@ -1163,8 +1230,9 @@
    "stored": "iririsirasuutaara",
    "blind_reading": "iriisirasuutaara",
    "english": "the way you did it",
-   "grade": "blind-reading",
-   "printed": "iriisirasuutaara"
+   "grade": "confirmed",
+   "printed": "iriisirasuutaara",
+   "third_look": "iriisirasuutaara"
   },
   {
    "id": "p3-R2-r7",
@@ -1177,8 +1245,9 @@
    "stored": "iririsiruutaara",
    "blind_reading": "iriisiruutaara",
    "english": "the way they did it",
-   "grade": "blind-reading",
-   "printed": "iriisiruutaara"
+   "grade": "confirmed",
+   "printed": "iriisiruutaara",
+   "third_look": "iriisiruutaara"
   },
   {
    "id": "p3-R2-r8",
@@ -1191,8 +1260,9 @@
    "stored": "iriratuuhaakaara",
    "blind_reading": "iriiratuuhaakaara",
    "english": "the way we did it",
-   "grade": "blind-reading",
-   "printed": "iriiratuuhaakaara"
+   "grade": "confirmed",
+   "printed": "iriiratuuhaakaara",
+   "third_look": "iriiratuuhaakaara"
   },
   {
    "id": "p3-R2-r9",
@@ -1205,8 +1275,9 @@
    "stored": "iriratuuhaakaara",
    "blind_reading": "iriiratuuhaakaara",
    "english": "the way we did it",
-   "grade": "blind-reading",
-   "printed": "iriiratuuhaakaara"
+   "grade": "confirmed",
+   "printed": "iriiratuuhaakaara",
+   "third_look": "iriiratuuhaakaara"
   },
   {
    "id": "p3-R2-r10",
@@ -1219,8 +1290,9 @@
    "stored": "irirasuuhaakaara",
    "blind_reading": "iriirasuuhaakaara",
    "english": "the way you did it",
-   "grade": "blind-reading",
-   "printed": "iriirasuuhaakaara"
+   "grade": "confirmed",
+   "printed": "iriirasuuhaakaara",
+   "third_look": "iriirasuuhaakaara"
   },
   {
    "id": "p3-R3-r2",
@@ -1233,8 +1305,9 @@
    "stored": "isuutara",
    "blind_reading": "isuutaara",
    "english": "if/when you do it",
-   "grade": "blind-reading",
-   "printed": "isuutaara"
+   "grade": "confirmed",
+   "printed": "isuutaara",
+   "third_look": "isuutaara"
   },
   {
    "id": "p3-R4-r4",
@@ -1247,8 +1320,9 @@
    "stored": "aaciiriitaara",
    "blind_reading": "aaciriitaara",
    "english": "should we do it",
-   "grade": "blind-reading",
-   "printed": "aaciriitaara"
+   "grade": "confirmed",
+   "printed": "aaciriitaara",
+   "third_look": "aaciriitaara"
   },
   {
    "id": "p3-R5-r9",
@@ -1261,8 +1335,9 @@
    "stored": "ratkuuhakaara",
    "blind_reading": "ratkuuhaakaara",
    "english": "for us to do it",
-   "grade": "blind-reading",
-   "printed": "ratkuuhaakaara"
+   "grade": "confirmed",
+   "printed": "ratkuuhaakaara",
+   "third_look": "ratkuuhaakaara"
   },
   {
    "id": "p4-L3-r8",
@@ -1275,8 +1350,9 @@
    "stored": "itaraapuuʔ",
    "blind_reading": "itarapuuʔ",
    "english": "we'll go",
-   "grade": "blind-reading",
-   "printed": "itarapuuʔ"
+   "grade": "confirmed",
+   "printed": "itarapuuʔ",
+   "third_look": "itarapuuʔ"
   },
   {
    "id": "p4-R2-r11",
@@ -1289,8 +1365,9 @@
    "stored": "iriiraawuu",
    "blind_reading": "iriraawuu",
    "english": "where they went",
-   "grade": "blind-reading",
-   "printed": "iriraawuu"
+   "grade": "confirmed",
+   "printed": "iriraawuu",
+   "third_look": "iriraawuu"
   },
   {
    "id": "p4-R3-r8",
@@ -1303,8 +1380,9 @@
    "stored": "itaraapuu",
    "blind_reading": "itarapuu",
    "english": "if/when we go",
-   "grade": "blind-reading",
-   "printed": "itarapuu"
+   "grade": "confirmed",
+   "printed": "itarapuu",
+   "third_look": "itarapuu"
   },
   {
    "id": "p4-R5-r6",
@@ -1317,8 +1395,9 @@
    "stored": "siraskuara",
    "blind_reading": "siraskuwara",
    "english": "for you to go",
-   "grade": "blind-reading",
-   "printed": "siraskuwara"
+   "grade": "confirmed",
+   "printed": "siraskuwara",
+   "third_look": "siraskuwara"
   },
   {
    "id": "p5-L2-r2",
@@ -1331,8 +1410,9 @@
    "stored": "kaakasuuhíi",
    "blind_reading": "kaakasuuhii",
    "english": "you are not good",
-   "grade": "blind-reading",
-   "printed": "kaakasuuhii"
+   "grade": "confirmed",
+   "printed": "kaakasuuhii",
+   "third_look": "kaakasuuhii"
   },
   {
    "id": "p5-L2-r3",
@@ -1345,8 +1425,9 @@
    "stored": "kaakuuhii",
    "blind_reading": "kaakuhii",
    "english": "he is not good",
-   "grade": "blind-reading",
-   "printed": "kaakuhii"
+   "grade": "confirmed",
+   "printed": "kaakuhii",
+   "third_look": "kaakuhii"
   },
   {
    "id": "p5-L2-r6",
@@ -1359,8 +1440,9 @@
    "stored": "sikaakasuuhíi",
    "blind_reading": "sikaakasuuhii",
    "english": "you are not good",
-   "grade": "blind-reading",
-   "printed": "sikaakasuuhii"
+   "grade": "confirmed",
+   "printed": "sikaakasuuhii",
+   "third_look": "sikaakasuuhii"
   },
   {
    "id": "p5-L2-r7",
@@ -1373,8 +1455,9 @@
    "stored": "sikaakuuhii",
    "blind_reading": "sikaakuhii",
    "english": "they are not good",
-   "grade": "blind-reading",
-   "printed": "sikaakuhii"
+   "grade": "confirmed",
+   "printed": "sikaakuhii",
+   "third_look": "sikaakuhii"
   },
   {
    "id": "p5-L2-r9",
@@ -1387,8 +1470,9 @@
    "stored": "kaakaturaakiwaa",
    "blind_reading": "kaakaaturaakiwaa",
    "english": "we are not good",
-   "grade": "blind-reading",
-   "printed": "kaakaaturaakiwaa"
+   "grade": "confirmed",
+   "printed": "kaakaaturaakiwaa",
+   "third_look": "kaakaaturaakiwaa"
   },
   {
    "id": "p5-L2-r10",
@@ -1401,8 +1485,9 @@
    "stored": "kaakasuraakiwaa",
    "blind_reading": "kaakaasuraakiwaa",
    "english": "you are not good",
-   "grade": "blind-reading",
-   "printed": "kaakaasuraakiwaa"
+   "grade": "confirmed",
+   "printed": "kaakaasuraakiwaa",
+   "third_look": "kaakaasuraakiwaa"
   },
   {
    "id": "p5-L4-r9",
@@ -1415,8 +1500,9 @@
    "stored": "rituraakiwaa",
    "blind_reading": "riituraakiwaa",
    "english": "we were good",
-   "grade": "blind-reading",
-   "printed": "riituraakiwaa"
+   "grade": "confirmed",
+   "printed": "riituraakiwaa",
+   "third_look": "riituraakiwaa"
   },
   {
    "id": "p5-L4-r10",
@@ -1429,8 +1515,9 @@
    "stored": "risuraakiwaa",
    "blind_reading": "riisuraakiwaa",
    "english": "you were good",
-   "grade": "blind-reading",
-   "printed": "riisuraakiwaa"
+   "grade": "confirmed",
+   "printed": "riisuraakiwaa",
+   "third_look": "riisuraakiwaa"
   },
   {
    "id": "p5-L5-r3",
@@ -1443,8 +1530,9 @@
    "stored": "ruhii",
    "blind_reading": "ruuhii",
    "english": "he is good",
-   "grade": "blind-reading",
-   "printed": "ruuhii"
+   "grade": "confirmed",
+   "printed": "ruuhii",
+   "third_look": "ruuhii"
   },
   {
    "id": "p5-R1-r8",
@@ -1457,8 +1545,9 @@
    "stored": "kuusturaakiwaa",
    "blind_reading": "kuustuuraakiwaa",
    "english": "we will be good",
-   "grade": "blind-reading",
-   "printed": "kuustuuraakiwaa"
+   "grade": "confirmed",
+   "printed": "kuustuuraakiwaa",
+   "third_look": "kuustuuraakiwaa"
   },
   {
    "id": "p5-R2-r1",
@@ -1471,8 +1560,9 @@
    "stored": "iriratuuhiira",
    "blind_reading": "iriiratuuhiira",
    "english": "my being good",
-   "grade": "blind-reading",
-   "printed": "iriiratuuhiira"
+   "grade": "confirmed",
+   "printed": "iriiratuuhiira",
+   "third_look": "iriiratuuhiira"
   },
   {
    "id": "p5-R2-r2",
@@ -1485,8 +1575,9 @@
    "stored": "irirasuuhiira",
    "blind_reading": "iriirasuuhiira",
    "english": "your being good",
-   "grade": "blind-reading",
-   "printed": "iriirasuuhiira"
+   "grade": "confirmed",
+   "printed": "iriirasuuhiira",
+   "third_look": "iriirasuuhiira"
   },
   {
    "id": "p5-R2-r4",
@@ -1499,8 +1590,9 @@
    "stored": "iriraciihiira",
    "blind_reading": "iriiraciihiira",
    "english": "our being good",
-   "grade": "blind-reading",
-   "printed": "iriiraciihiira"
+   "grade": "confirmed",
+   "printed": "iriiraciihiira",
+   "third_look": "iriiraciihiira"
   },
   {
    "id": "p5-R2-r8",
@@ -1513,8 +1605,9 @@
    "stored": "iriratuuraakiwaara",
    "blind_reading": "iriiratuuraakiwaara",
    "english": "our being good",
-   "grade": "blind-reading",
-   "printed": "iriiratuuraakiwaara"
+   "grade": "confirmed",
+   "printed": "iriiratuuraakiwaara",
+   "third_look": "iriiratuuraakiwaara"
   },
   {
    "id": "p5-R2-r9",
@@ -1527,8 +1620,9 @@
    "stored": "iriraturaakiwaara",
    "blind_reading": "iriiraturaakiwaara",
    "english": "our being good",
-   "grade": "blind-reading",
-   "printed": "iriiraturaakiwaara"
+   "grade": "confirmed",
+   "printed": "iriiraturaakiwaara",
+   "third_look": "iriiraturaakiwaara"
   },
   {
    "id": "p5-R2-r10",
@@ -1541,8 +1635,9 @@
    "stored": "irirasuraakiwaara",
    "blind_reading": "iriirasuraakiwaara",
    "english": "your being good",
-   "grade": "blind-reading",
-   "printed": "iriirasuraakiwaara"
+   "grade": "confirmed",
+   "printed": "iriirasuraakiwaara",
+   "third_look": "iriirasuraakiwaara"
   },
   {
    "id": "p5-R4-r10",
@@ -1555,8 +1650,9 @@
    "stored": "aasuuraakiwaara",
    "blind_reading": "aasuraakiwaara",
    "english": "should you be good",
-   "grade": "blind-reading",
-   "printed": "aasuraakiwaara"
+   "grade": "confirmed",
+   "printed": "aasuraakiwaara",
+   "third_look": "aasuraakiwaara"
   },
   {
    "id": "p5-R5-r3",
@@ -1569,8 +1665,9 @@
    "stored": "racihkuuhiira",
    "blind_reading": "rakuuhiira",
    "english": "for him to be good",
-   "grade": "blind-reading",
-   "printed": "rakuuhiira"
+   "grade": "confirmed",
+   "printed": "rakuuhiira",
+   "third_look": "rakuuhiira"
   },
   {
    "id": "p6-L2-r8",
@@ -1583,8 +1680,9 @@
    "stored": "kaakaataraakiikaʔ",
    "blind_reading": "kaakaataaraakiikaʔ",
    "english": "we did not drink it",
-   "grade": "blind-reading",
-   "printed": "kaakaataaraakiikaʔ"
+   "grade": "confirmed",
+   "printed": "kaakaataaraakiikaʔ",
+   "third_look": "kaakaataaraakiikaʔ"
   },
   {
    "id": "p6-L4-r11",
@@ -1597,8 +1695,9 @@
    "stored": "riihkiikaʔ",
    "blind_reading": "rihkiikaʔ",
    "english": "they drank it",
-   "grade": "blind-reading",
-   "printed": "rihkiikaʔ"
+   "grade": "confirmed",
+   "printed": "rihkiikaʔ",
+   "third_look": "rihkiikaʔ"
   },
   {
    "id": "p6-L5-r11",
@@ -1611,8 +1710,9 @@
    "stored": "rihkikaʔ",
    "blind_reading": "rihkiikaʔ",
    "english": "they drank it",
-   "grade": "blind-reading",
-   "printed": "rihkiikaʔ"
+   "grade": "confirmed",
+   "printed": "rihkiikaʔ",
+   "third_look": "rihkiikaʔ"
   },
   {
    "id": "p7-L2-r2",
@@ -1625,8 +1725,9 @@
    "stored": "kaakiraawaʔ",
    "blind_reading": "kaakaakiraawaʔ",
    "english": "you are not sick",
-   "grade": "blind-reading",
-   "printed": "kaakaakiraawaʔ"
+   "grade": "confirmed",
+   "printed": "kaakaakiraawaʔ",
+   "third_look": "kaakaakiraawaʔ"
   },
   {
    "id": "p7-L2-r4",
@@ -1639,8 +1740,9 @@
    "stored": "kaakacukukiraawaʔ",
    "blind_reading": "kaakaacakukiraawaʔ",
    "english": "we are not sick",
-   "grade": "blind-reading",
-   "printed": "kaakaacakukiraawaʔ"
+   "grade": "confirmed",
+   "printed": "kaakaacakukiraawaʔ",
+   "third_look": "kaakaacakukiraawaʔ"
   },
   {
    "id": "p7-L2-r6",
@@ -1653,8 +1755,9 @@
    "stored": "sikaakiraawaʔ",
    "blind_reading": "sikaakaakiraawaʔ",
    "english": "you are not sick",
-   "grade": "blind-reading",
-   "printed": "sikaakaakiraawaʔ"
+   "grade": "confirmed",
+   "printed": "sikaakaakiraawaʔ",
+   "third_look": "sikaakaakiraawaʔ"
   },
   {
    "id": "p7-L2-r8",
@@ -1667,8 +1770,9 @@
    "stored": "kaakaacukuraakiraawaʔ",
    "blind_reading": "kaakaacakuraakiraawaʔ",
    "english": "we are not sick",
-   "grade": "blind-reading",
-   "printed": "kaakaacakuraakiraawaʔ"
+   "grade": "confirmed",
+   "printed": "kaakaacakuraakiraawaʔ",
+   "third_look": "kaakaacakuraakiraawaʔ"
   },
   {
    "id": "p7-L4-r1",
@@ -1681,8 +1785,9 @@
    "stored": "riikuukiraawaʔ",
    "blind_reading": "rikuukiraawaʔ",
    "english": "I am sick",
-   "grade": "blind-reading",
-   "printed": "rikuukiraawaʔ"
+   "grade": "confirmed",
+   "printed": "rikuukiraawaʔ",
+   "third_look": "rikuukiraawaʔ"
   },
   {
    "id": "p7-L4-r5",
@@ -1695,8 +1800,9 @@
    "stored": "siriikuukiraawaʔ",
    "blind_reading": "sirikuukiraawaʔ",
    "english": "we are sick",
-   "grade": "blind-reading",
-   "printed": "sirikuukiraawaʔ"
+   "grade": "confirmed",
+   "printed": "sirikuukiraawaʔ",
+   "third_look": "sirikuukiraawaʔ"
   },
   {
    "id": "p7-L4-r9",
@@ -1709,8 +1815,9 @@
    "stored": "riikuuraktahkiraawaʔ",
    "blind_reading": "rikuuraktahkiraawaʔ",
    "english": "we are sick",
-   "grade": "blind-reading",
-   "printed": "rikuuraktahkiraawaʔ"
+   "grade": "confirmed",
+   "printed": "rikuuraktahkiraawaʔ",
+   "third_look": "rikuuraktahkiraawaʔ"
   },
   {
    "id": "p7-L5-r3",
@@ -1723,8 +1830,9 @@
    "stored": "riihkiraawaʔ",
    "blind_reading": "rihkiraawaʔ",
    "english": "he is sick",
-   "grade": "blind-reading",
-   "printed": "rihkiraawaʔ"
+   "grade": "confirmed",
+   "printed": "rihkiraawaʔ",
+   "third_look": "rihkiraawaʔ"
   },
   {
    "id": "p7-L5-r6",
@@ -1737,8 +1845,9 @@
    "stored": "siraakiraawaʔ",
    "blind_reading": "raakiraawaʔ",
    "english": "you are sick",
-   "grade": "blind-reading",
-   "printed": "raakiraawaʔ"
+   "grade": "confirmed",
+   "printed": "raakiraawaʔ",
+   "third_look": "raakiraawaʔ"
   },
   {
    "id": "p7-L5-r10",
@@ -1751,8 +1860,9 @@
    "stored": "raaraktahkiraawaʔ",
    "blind_reading": "raraktahkiraawaʔ",
    "english": "you are sick",
-   "grade": "blind-reading",
-   "printed": "raraktahkiraawaʔ"
+   "grade": "confirmed",
+   "printed": "raraktahkiraawaʔ",
+   "third_look": "raraktahkiraawaʔ"
   },
   {
    "id": "p7-R1-r9",
@@ -1765,8 +1875,9 @@
    "stored": "kuusikuuraktahkiraawaʔ",
    "blind_reading": "kuusikuuraakiraawaʔ",
    "english": "we will be sick",
-   "grade": "blind-reading",
-   "printed": "kuusikuuraakiraawaʔ"
+   "grade": "confirmed",
+   "printed": "kuusikuuraakiraawaʔ",
+   "third_look": "kuusikuuraakiraawaʔ"
   },
   {
    "id": "p7-R1-r11",
@@ -1779,8 +1890,9 @@
    "stored": "kusiriktahkiraawaʔ",
    "blind_reading": "kusiriktaahkiraawaʔ",
    "english": "they will be sick",
-   "grade": "blind-reading",
-   "printed": "kusiriktaahkiraawaʔ"
+   "grade": "confirmed",
+   "printed": "kusiriktaahkiraawaʔ",
+   "third_look": "kusiriktaahkiraawaʔ"
   },
   {
    "id": "p7-R2-r4",

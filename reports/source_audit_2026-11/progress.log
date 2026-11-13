@@ -39,3 +39,7 @@
 2026-11-13 13:35  stage 7 done: nothing applied; documents updated; sub-agent tokens 2,778,123
 2026-11-13 13:50  cost: +77 images read, +6 sub-agents (total 233, 18)
 2026-11-13 13:50  user decisions 2026-11-13: commit; review and apply the fixes; store Parks's IPA symbols and keep the simplified forms accurate; read the rest of the Blue Book (6 blind readers started, 843 crops)
+2026-11-13 13:53  stage 8 started: third look at the remaining 112 Appendix 1 forms before applying
+2026-11-13 13:53  cost: +5 images read, +0 sub-agents (total 238, 18)
+2026-11-13 13:57  Blue Book rest: reader 1 finished (143 crops, 228k tokens)
+2026-11-13 13:58  stage 8: 0 of None units; applied by scripts/apply_audit_fixes_2026_11.py; report applied_fixes_report.txt; conjugation engine now 611 of 770 (79.4%) against the corrected Appendix 1

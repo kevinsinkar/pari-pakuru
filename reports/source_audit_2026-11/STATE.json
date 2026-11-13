@@ -2,9 +2,9 @@
  "audit": "source-fidelity audit 2026-11",
  "prompt": "prompts/source_fidelity_audit.md",
  "created": "2026-11-13 12:35",
- "updated": "2026-11-13 13:50",
+ "updated": "2026-11-13 13:58",
  "cost": {
-  "images_read_by_model": 233,
+  "images_read_by_model": 238,
   "subagents_started": 18
  },
  "stages": {
@@ -202,14 +202,20 @@
   },
   "8": {
    "name": "Apply the fixes that were approved",
-   "status": "pending",
+   "status": "running",
    "units_total": null,
    "units_done": 0,
-   "counts": {},
+   "counts": {
+    "changes_applied": 807,
+    "appendix1_forms": 152,
+    "dictionary_verb_forms": 19,
+    "citations": 162,
+    "left_for_a_person": 7
+   },
    "outputs": [],
-   "started": null,
+   "started": "2026-11-13 13:53",
    "finished": null,
-   "note": ""
+   "note": "applied by scripts/apply_audit_fixes_2026_11.py; report applied_fixes_report.txt; conjugation engine now 611 of 770 (79.4%) against the corrected Appendix 1"
   },
   "9": {
    "name": "Store Parks's own IPA symbols; regenerate and check the simplified forms",

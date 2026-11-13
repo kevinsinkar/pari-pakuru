@@ -61,7 +61,7 @@
           "english": "you did not come"
         },
         "3sg": {
-          "skiri": "kaakaaʔ",
+          "skiri": "kaakaaʔaʔ",
           "english": "he did not come"
         },
         "1du_incl": {
@@ -69,15 +69,15 @@
           "english": "we did not come"
         },
         "1du_excl": {
-          "skiri": "síkaakaatíhwaʔaʔ",
+          "skiri": "síkaakaatihwaʔaʔ",
           "english": "we did not come"
         },
         "2du": {
-          "skiri": "síkaakaasíhwaʔaʔ",
+          "skiri": "síkaakaasihwaʔaʔ",
           "english": "you did not come"
         },
         "3du": {
-          "skiri": "síkaakaawaʔaʔ",
+          "skiri": "sikaakaawaʔaʔ",
           "english": "they did not come"
         },
         "1pl_incl": {
@@ -85,11 +85,11 @@
           "english": "we did not come"
         },
         "1pl_excl": {
-          "skiri": "kaakaatíraakaahuʔ",
+          "skiri": "kaakaatiraakaahuʔ",
           "english": "we did not come"
         },
         "2pl": {
-          "skiri": "kaakaasíraakaahuʔ",
+          "skiri": "kaakaasiraakaahuʔ",
           "english": "you did not come"
         },
         "3pl": {
@@ -123,7 +123,7 @@
           "english": "you'll come"
         },
         "3du": {
-          "skiri": "sirawaʔaʔ",
+          "skiri": "sírawaʔaʔ",
           "english": "they'll come"
         },
         "1pl_incl": {
@@ -131,15 +131,15 @@
           "english": "we'll come"
         },
         "1pl_excl": {
-          "skiri": "itíraakaahuʔ",
+          "skiri": "itiraakaahuʔ",
           "english": "we'll come"
         },
         "2pl": {
-          "skiri": "isíraakaahuʔ",
+          "skiri": "isiraakaahuʔ",
           "english": "you'll come"
         },
         "3pl": {
-          "skiri": "raaʔaahuʔ, raaraaraʔ",
+          "skiri": "raaʔaahuʔ, raraaraʔ",
           "english": "they'll come"
         }
       },
@@ -161,27 +161,27 @@
           "english": "we came"
         },
         "1du_excl": {
-          "skiri": "siríitíhwaʔaʔ",
+          "skiri": "siriítihwaʔaʔ",
           "english": "we came"
         },
         "2du": {
-          "skiri": "siríisíhwaʔaʔ",
+          "skiri": "siriisihwaʔaʔ",
           "english": "you came"
         },
         "3du": {
-          "skiri": "síraaʔaʔ",
+          "skiri": "siraaʔaʔ",
           "english": "they came"
         },
         "1pl_incl": {
-          "skiri": "ríitaraakaahuʔ",
+          "skiri": "riítaraakaahuʔ",
           "english": "we came"
         },
         "1pl_excl": {
-          "skiri": "ríitíraakaahuʔ",
+          "skiri": "riítiraakaahuʔ",
           "english": "we came"
         },
         "2pl": {
-          "skiri": "ríisíraakaahuʔ",
+          "skiri": "riísiraakaahuʔ",
           "english": "you came"
         },
         "3pl": {
@@ -195,7 +195,7 @@
           "english": "I came"
         },
         "2sg": {
-          "skiri": "rasiiraʔ",
+          "skiri": "rasiíraʔ",
           "english": "you came"
         },
         "3sg": {
@@ -207,15 +207,15 @@
           "english": "we came"
         },
         "1du_excl": {
-          "skiri": "síratíhwaʔaʔ",
+          "skiri": "síratihwaʔaʔ",
           "english": "we came"
         },
         "2du": {
-          "skiri": "sírasíhwaʔaʔ",
+          "skiri": "sírasihwaaʔ",
           "english": "you came"
         },
         "3du": {
-          "skiri": "sírawáaʔ",
+          "skiri": "sírawaaʔ",
           "english": "they came"
         },
         "1pl_incl": {
@@ -223,11 +223,11 @@
           "english": "we came"
         },
         "1pl_excl": {
-          "skiri": "ratíraakaahuʔ",
+          "skiri": "ratiraakaahuʔ",
           "english": "we came"
         },
         "2pl": {
-          "skiri": "rasíraakaahuʔ",
+          "skiri": "rasiraakaahuʔ",
           "english": "you came"
         },
         "3pl": {
@@ -237,11 +237,11 @@
       },
       "potential_perfective": {
         "1sg": {
-          "skiri": "kuustíriiʔaʔ",
+          "skiri": "kuustiriiʔaʔ",
           "english": "I will come"
         },
         "2sg": {
-          "skiri": "kaasíriiʔaʔ",
+          "skiri": "kaasiriiʔaʔ",
           "english": "you will come"
         },
         "3sg": {
@@ -249,19 +249,19 @@
           "english": "he will come"
         },
         "1du_incl": {
-          "skiri": "kaacíriíwaʔaʔ",
+          "skiri": "kaaciriiwaʔaʔ",
           "english": "we will come"
         },
         "1du_excl": {
-          "skiri": "sikuustíriiwaʔaʔ",
+          "skiri": "sikuustiriiwaʔaʔ",
           "english": "we will come"
         },
         "2du": {
-          "skiri": "sikaasíriiwaʔaʔ",
+          "skiri": "sikaasiriiwaʔaʔ",
           "english": "you will come"
         },
         "3du": {
-          "skiri": "sikusaaʔaʔ",
+          "skiri": "sikusaawaʔaʔ",
           "english": "they will come"
         },
         "1pl_incl": {
@@ -269,11 +269,11 @@
           "english": "we will come"
         },
         "1pl_excl": {
-          "skiri": "kuustíriiraakaahuʔ",
+          "skiri": "kuustiriiraakaahuʔ",
           "english": "we will come"
         },
         "2pl": {
-          "skiri": "kaasíriiraakaahuʔ",
+          "skiri": "kaasiriiraakaahuʔ",
           "english": "you will come"
         },
         "3pl": {
@@ -283,57 +283,57 @@
       },
       "gerundial_perfective_subordinate": {
         "1sg": {
-          "skiri": "íriira",
+          "skiri": "iriiratiira",
           "english": "where I'm coming from"
         },
         "2sg": {
-          "skiri": "íriisíira",
+          "skiri": "iriirasiira",
           "english": "where you're coming from"
         },
         "3sg": {
-          "skiri": "íriiraʔa",
+          "skiri": "iriraʔa",
           "english": "where he's coming from"
         },
         "1du_incl": {
-          "skiri": "íriiracíhwaʔa",
+          "skiri": "iriiracihwaʔa",
           "english": "where we're coming from"
         },
         "1du_excl": {
-          "skiri": "íriisiratíhwaʔa",
+          "skiri": "iriisiratihwaʔa",
           "english": "where we're coming from"
         },
         "2du": {
-          "skiri": "íriisirasíhwaʔa",
+          "skiri": "iriisirasihwaʔa",
           "english": "where you're coming from"
         },
         "3du": {
-          "skiri": "íriisirawaʔa",
+          "skiri": "iriisirawaʔa",
           "english": "where they're coming from"
         },
         "1pl_incl": {
-          "skiri": "íriirataraakaahu",
+          "skiri": "iriirataraakahu",
           "english": "where we're coming from"
         },
         "1pl_excl": {
-          "skiri": "íriiratíraakaahu",
+          "skiri": "iriiratiraakahu",
           "english": "where we're coming from"
         },
         "2pl": {
-          "skiri": "íriirasíraakaahu",
+          "skiri": "iriirasiraakahu",
           "english": "where you're coming from"
         },
         "3pl": {
-          "skiri": "íriiraʔaahu, íriiraara",
+          "skiri": "iriraaʔahu, iriiraraara",
           "english": "where they're coming from"
         }
       },
       "contingent_perfective_subordinate": {
         "1sg": {
-          "skiri": "ítiira",
+          "skiri": "itiira",
           "english": "if/when I come"
         },
         "2sg": {
-          "skiri": "ísiira",
+          "skiri": "isiira",
           "english": "if/when you come"
         },
         "3sg": {
@@ -341,15 +341,15 @@
           "english": "if/when he comes"
         },
         "1du_incl": {
-          "skiri": "icíhwaʔa",
+          "skiri": "icihwaʔa",
           "english": "if/when we come"
         },
         "1du_excl": {
-          "skiri": "siʔitíhwaʔa",
+          "skiri": "siʔitihwaʔa",
           "english": "if/when we come"
         },
         "2du": {
-          "skiri": "siʔisíhwaʔa",
+          "skiri": "siʔisihwaʔa",
           "english": "if/when you come"
         },
         "3du": {
@@ -357,19 +357,19 @@
           "english": "if/when they come"
         },
         "1pl_incl": {
-          "skiri": "itaraakaahu",
+          "skiri": "itaraakahu",
           "english": "if/when we come"
         },
         "1pl_excl": {
-          "skiri": "itíraakaahu",
+          "skiri": "itiraakahu",
           "english": "if/when we come"
         },
         "2pl": {
-          "skiri": "isíraakaahu",
+          "skiri": "isiraakahu",
           "english": "if/when you come"
         },
         "3pl": {
-          "skiri": "raaʔaahu, raaraara",
+          "skiri": "raaʔahu, raraara",
           "english": "if/when they come"
         }
       },
@@ -387,15 +387,15 @@
           "english": "should he come"
         },
         "1du_incl": {
-          "skiri": "aacíhwaʔa",
+          "skiri": "aacihwaʔa",
           "english": "should we come"
         },
         "1du_excl": {
-          "skiri": "siʔaatíhwaʔa",
+          "skiri": "siʔaatihwaʔa",
           "english": "should we come"
         },
         "2du": {
-          "skiri": "siʔaasíhwaʔa",
+          "skiri": "siʔaasihwaʔa",
           "english": "should you come"
         },
         "3du": {
@@ -403,65 +403,65 @@
           "english": "should they come"
         },
         "1pl_incl": {
-          "skiri": "aataraakaahu",
+          "skiri": "aataraakahu",
           "english": "should we come"
         },
         "1pl_excl": {
-          "skiri": "aatíraakaahu",
+          "skiri": "aatiraakahu",
           "english": "should we come"
         },
         "2pl": {
-          "skiri": "aasíraakaahu",
+          "skiri": "aasiraakahu",
           "english": "should you come"
         },
         "3pl": {
-          "skiri": "aaʔaahu, aaraara",
+          "skiri": "aaʔahu, aaraara",
           "english": "should they come"
         }
       },
       "infinitive_perfective_subordinate": {
         "1sg": {
-          "skiri": "ratihkúʔa",
+          "skiri": "ratihkuʔa",
           "english": "for me to come"
         },
         "2sg": {
-          "skiri": "rasihkúʔa",
+          "skiri": "rasihkuʔa",
           "english": "for you to come"
         },
         "3sg": {
-          "skiri": "raakúʔa",
+          "skiri": "raakuʔa",
           "english": "for him to come"
         },
         "1du_incl": {
-          "skiri": "racihkúwaʔa",
+          "skiri": "racihkuwaʔa",
           "english": "for us to come"
         },
         "1du_excl": {
-          "skiri": "siratihkúwaʔa",
+          "skiri": "siratihkuwaʔa",
           "english": "for us to come"
         },
         "2du": {
-          "skiri": "sirasihkúwaʔa",
+          "skiri": "sirasihkuwaʔa",
           "english": "for you two to come"
         },
         "3du": {
-          "skiri": "siraakúwaʔa",
+          "skiri": "siraakuwaʔa",
           "english": "for them to come"
         },
         "1pl_incl": {
-          "skiri": "rataakúraakahu",
+          "skiri": "rataakuraakahu",
           "english": "for us to come"
         },
         "1pl_excl": {
-          "skiri": "ratihkúraakahu",
+          "skiri": "ratihkuraakahu",
           "english": "for us to come"
         },
         "2pl": {
-          "skiri": "rasihkúraakahu",
+          "skiri": "rasihkuraakahu",
           "english": "for you to come"
         },
         "3pl": {
-          "skiri": "raakúhu, raakúraara",
+          "skiri": "raakuhu, raakuraara",
           "english": "for them to come"
         }
       }
@@ -557,7 +557,7 @@
           "english": "we did not do it"
         },
         "2pl": {
-          "skiri": "kaakasuuhakaa",
+          "skiri": "kaakasuuhaakaa",
           "english": "you did not do it"
         },
         "3pl": {
@@ -709,27 +709,27 @@
           "english": "I will do it"
         },
         "2sg": {
-          "skiri": "kaasucíʔaa",
+          "skiri": "kaasuciʔaa",
           "english": "you will do it"
         },
         "3sg": {
-          "skiri": "kuusucíʔaa",
+          "skiri": "kuusuciʔaa",
           "english": "he will do it"
         },
         "1du_incl": {
-          "skiri": "kaciicíʔaa",
+          "skiri": "kaciiciʔaa",
           "english": "we will do it"
         },
         "1du_excl": {
-          "skiri": "sikuustucíʔaa",
+          "skiri": "sikuustuciʔaa",
           "english": "we will do it"
         },
         "2du": {
-          "skiri": "sikaasucíʔaa",
+          "skiri": "sikaasuciʔaa",
           "english": "you will do it"
         },
         "3du": {
-          "skiri": "sikuusucíʔaa",
+          "skiri": "sikuusuciʔaa",
           "english": "they will do it"
         },
         "1pl_incl": {
@@ -745,49 +745,49 @@
           "english": "you will do it"
         },
         "3pl": {
-          "skiri": "kusiicíʔaa",
+          "skiri": "kusiiciʔaa",
           "english": "they will do it"
         }
       },
       "gerundial_perfective_subordinate": {
         "1sg": {
-          "skiri": "iriratuutaara",
+          "skiri": "iriiratuutaara",
           "english": "the way I did it"
         },
         "2sg": {
-          "skiri": "irirasuutaara",
+          "skiri": "iriirasuutaara",
           "english": "the way you did it"
         },
         "3sg": {
-          "skiri": "iriruuutaara",
+          "skiri": "iriiruutaara",
           "english": "the way he did it"
         },
         "1du_incl": {
-          "skiri": "iriraciitaara",
+          "skiri": "iriiraciitaara",
           "english": "the way we did it"
         },
         "1du_excl": {
-          "skiri": "iririsiratuutaara",
+          "skiri": "iriisiratuutaara",
           "english": "the way we did it"
         },
         "2du": {
-          "skiri": "iririsirasuutaara",
+          "skiri": "iriisirasuutaara",
           "english": "the way you did it"
         },
         "3du": {
-          "skiri": "iririsiruutaara",
+          "skiri": "iriisiruutaara",
           "english": "the way they did it"
         },
         "1pl_incl": {
-          "skiri": "iriratuuhaakaara",
+          "skiri": "iriiratuuhaakaara",
           "english": "the way we did it"
         },
         "1pl_excl": {
-          "skiri": "iriratuuhaakaara",
+          "skiri": "iriiratuuhaakaara",
           "english": "the way we did it"
         },
         "2pl": {
-          "skiri": "irirasuuhaakaara",
+          "skiri": "iriirasuuhaakaara",
           "english": "the way you did it"
         },
         "3pl": {
@@ -801,7 +801,7 @@
           "english": "if/when I do it"
         },
         "2sg": {
-          "skiri": "isuutara",
+          "skiri": "isuutaara",
           "english": "if/when you do it"
         },
         "3sg": {
@@ -855,7 +855,7 @@
           "english": "should he do it"
         },
         "1du_incl": {
-          "skiri": "aaciiriitaara",
+          "skiri": "aaciriitaara",
           "english": "should we do it"
         },
         "1du_excl": {
@@ -921,7 +921,7 @@
           "english": "for us to do it"
         },
         "1pl_excl": {
-          "skiri": "ratkuuhakaara",
+          "skiri": "ratkuuhaakaara",
           "english": "for us to do it"
         },
         "2pl": {
@@ -1063,7 +1063,7 @@
           "english": "they'll go"
         },
         "1pl_incl": {
-          "skiri": "itaraapuuʔ",
+          "skiri": "itarapuuʔ",
           "english": "we'll go"
         },
         "1pl_excl": {
@@ -1259,7 +1259,7 @@
           "english": "where you went"
         },
         "3pl": {
-          "skiri": "iriiraawuu",
+          "skiri": "iriraawuu",
           "english": "where they went"
         }
       },
@@ -1293,7 +1293,7 @@
           "english": "if/when they go"
         },
         "1pl_incl": {
-          "skiri": "itaraapuu",
+          "skiri": "itarapuu",
           "english": "if/when we go"
         },
         "1pl_excl": {
@@ -1377,7 +1377,7 @@
           "english": "for us to go"
         },
         "2du": {
-          "skiri": "siraskuara",
+          "skiri": "siraskuwara",
           "english": "for you to go"
         },
         "3du": {
@@ -1461,11 +1461,11 @@
           "english": "I am not good"
         },
         "2sg": {
-          "skiri": "kaakasuuhíi",
+          "skiri": "kaakasuuhii",
           "english": "you are not good"
         },
         "3sg": {
-          "skiri": "kaakuuhii",
+          "skiri": "kaakuhii",
           "english": "he is not good"
         },
         "1du_incl": {
@@ -1477,11 +1477,11 @@
           "english": "we are not good"
         },
         "2du": {
-          "skiri": "sikaakasuuhíi",
+          "skiri": "sikaakasuuhii",
           "english": "you are not good"
         },
         "3du": {
-          "skiri": "sikaakuuhii",
+          "skiri": "sikaakuhii",
           "english": "they are not good"
         },
         "1pl_incl": {
@@ -1489,11 +1489,11 @@
           "english": "we are not good"
         },
         "1pl_excl": {
-          "skiri": "kaakaturaakiwaa",
+          "skiri": "kaakaaturaakiwaa",
           "english": "we are not good"
         },
         "2pl": {
-          "skiri": "kaakasuraakiwaa",
+          "skiri": "kaakaasuraakiwaa",
           "english": "you are not good"
         },
         "3pl": {
@@ -1581,11 +1581,11 @@
           "english": "we were good"
         },
         "1pl_excl": {
-          "skiri": "rituraakiwaa",
+          "skiri": "riituraakiwaa",
           "english": "we were good"
         },
         "2pl": {
-          "skiri": "risuraakiwaa",
+          "skiri": "riisuraakiwaa",
           "english": "you were good"
         },
         "3pl": {
@@ -1603,7 +1603,7 @@
           "english": "you are good"
         },
         "3sg": {
-          "skiri": "ruhii",
+          "skiri": "ruuhii",
           "english": "he is good"
         },
         "1du_incl": {
@@ -1669,7 +1669,7 @@
           "english": "they will be good"
         },
         "1pl_incl": {
-          "skiri": "kuusturaakiwaa",
+          "skiri": "kuustuuraakiwaa",
           "english": "we will be good"
         },
         "1pl_excl": {
@@ -1687,11 +1687,11 @@
       },
       "gerundial_perfective_subordinate": {
         "1sg": {
-          "skiri": "iriratuuhiira",
+          "skiri": "iriiratuuhiira",
           "english": "my being good"
         },
         "2sg": {
-          "skiri": "irirasuuhiira",
+          "skiri": "iriirasuuhiira",
           "english": "your being good"
         },
         "3sg": {
@@ -1699,7 +1699,7 @@
           "english": "his being good"
         },
         "1du_incl": {
-          "skiri": "iriraciihiira",
+          "skiri": "iriiraciihiira",
           "english": "our being good"
         },
         "1du_excl": {
@@ -1715,15 +1715,15 @@
           "english": "their being good"
         },
         "1pl_incl": {
-          "skiri": "iriratuuraakiwaara",
+          "skiri": "iriiratuuraakiwaara",
           "english": "our being good"
         },
         "1pl_excl": {
-          "skiri": "iriraturaakiwaara",
+          "skiri": "iriiraturaakiwaara",
           "english": "our being good"
         },
         "2pl": {
-          "skiri": "irirasuraakiwaara",
+          "skiri": "iriirasuraakiwaara",
           "english": "your being good"
         },
         "3pl": {
@@ -1815,7 +1815,7 @@
           "english": "should we be good"
         },
         "2pl": {
-          "skiri": "aasuuraakiwaara",
+          "skiri": "aasuraakiwaara",
           "english": "should you be good"
         },
         "3pl": {
@@ -1833,7 +1833,7 @@
           "english": "for you to be good"
         },
         "3sg": {
-          "skiri": "racihkuuhiira",
+          "skiri": "rakuuhiira",
           "english": "for him to be good"
         },
         "1du_incl": {
@@ -1953,7 +1953,7 @@
           "english": "they did not drink it"
         },
         "1pl_incl": {
-          "skiri": "kaakaataraakiikaʔ",
+          "skiri": "kaakaataaraakiikaʔ",
           "english": "we did not drink it"
         },
         "1pl_excl": {
@@ -2057,7 +2057,7 @@
           "english": "you drank it"
         },
         "3pl": {
-          "skiri": "riihkiikaʔ",
+          "skiri": "rihkiikaʔ",
           "english": "they drank it"
         }
       },
@@ -2103,7 +2103,7 @@
           "english": "you drank it"
         },
         "3pl": {
-          "skiri": "rihkikaʔ",
+          "skiri": "rihkiikaʔ",
           "english": "they drank it"
         }
       },
@@ -2397,7 +2397,7 @@
           "english": "I am not sick"
         },
         "2sg": {
-          "skiri": "kaakiraawaʔ",
+          "skiri": "kaakaakiraawaʔ",
           "english": "you are not sick"
         },
         "3sg": {
@@ -2405,7 +2405,7 @@
           "english": "he is not sick"
         },
         "1du_incl": {
-          "skiri": "kaakacukukiraawaʔ",
+          "skiri": "kaakaacakukiraawaʔ",
           "english": "we are not sick"
         },
         "1du_excl": {
@@ -2413,7 +2413,7 @@
           "english": "we are not sick"
         },
         "2du": {
-          "skiri": "sikaakiraawaʔ",
+          "skiri": "sikaakaakiraawaʔ",
           "english": "you are not sick"
         },
         "3du": {
@@ -2421,7 +2421,7 @@
           "english": "they are not sick"
         },
         "1pl_incl": {
-          "skiri": "kaakaacukuraakiraawaʔ",
+          "skiri": "kaakaacakuraakiraawaʔ",
           "english": "we are not sick"
         },
         "1pl_excl": {
@@ -2485,7 +2485,7 @@
       },
       "assertive_perfective": {
         "1sg": {
-          "skiri": "riikuukiraawaʔ",
+          "skiri": "rikuukiraawaʔ",
           "english": "I am sick"
         },
         "2sg": {
@@ -2501,7 +2501,7 @@
           "english": "we are sick"
         },
         "1du_excl": {
-          "skiri": "siriikuukiraawaʔ",
+          "skiri": "sirikuukiraawaʔ",
           "english": "we are sick"
         },
         "2du": {
@@ -2517,7 +2517,7 @@
           "english": "we are sick"
         },
         "1pl_excl": {
-          "skiri": "riikuuraktahkiraawaʔ",
+          "skiri": "rikuuraktahkiraawaʔ",
           "english": "we are sick"
         },
         "2pl": {
@@ -2539,7 +2539,7 @@
           "english": "you are sick"
         },
         "3sg": {
-          "skiri": "riihkiraawaʔ",
+          "skiri": "rihkiraawaʔ",
           "english": "he is sick"
         },
         "1du_incl": {
@@ -2551,7 +2551,7 @@
           "english": "we are sick"
         },
         "2du": {
-          "skiri": "siraakiraawaʔ",
+          "skiri": "raakiraawaʔ",
           "english": "you are sick"
         },
         "3du": {
@@ -2567,7 +2567,7 @@
           "english": "we are sick"
         },
         "2pl": {
-          "skiri": "raaraktahkiraawaʔ",
+          "skiri": "raraktahkiraawaʔ",
           "english": "you are sick"
         },
         "3pl": {
@@ -2609,7 +2609,7 @@
           "english": "we will be sick"
         },
         "1pl_excl": {
-          "skiri": "kuusikuuraktahkiraawaʔ",
+          "skiri": "kuusikuuraakiraawaʔ",
           "english": "we will be sick"
         },
         "2pl": {
@@ -2617,7 +2617,7 @@
           "english": "you will be sick"
         },
         "3pl": {
-          "skiri": "kusiriktahkiraawaʔ",
+          "skiri": "kusiriktaahkiraawaʔ",
           "english": "they will be sick"
         }
       },
@@ -2635,23 +2635,23 @@
           "english": "where he is sick"
         },
         "1du_incl": {
-          "skiri": "iriiracukukiraawaa",
+          "skiri": "iriiracakukiraawaa",
           "english": "where we are sick"
         },
         "1du_excl": {
-          "skiri": "iriirisirikukiraawaa",
+          "skiri": "iriisirikukiraawaa",
           "english": "where we are sick"
         },
         "2du": {
-          "skiri": "iriirisiraawaa",
+          "skiri": "iriisirakiraawaa",
           "english": "where you are sick"
         },
         "3du": {
-          "skiri": "iriirisirihkiraawaa",
+          "skiri": "iriisirihkiraawaa",
           "english": "where they are sick"
         },
         "1pl_incl": {
-          "skiri": "iriiracuraktahkiraawaa",
+          "skiri": "iriiracakuraktahkiraawaa",
           "english": "where we are sick"
         },
         "1pl_excl": {
@@ -2663,7 +2663,7 @@
           "english": "where you are sick"
         },
         "3pl": {
-          "skiri": "iriiriraktahkiraawaa",
+          "skiri": "iririiraktahkirawaa",
           "english": "where they are sick"
         }
       },
@@ -2709,7 +2709,7 @@
           "english": "if/when you are sick"
         },
         "3pl": {
-          "skiri": "riiraktahkiraawaa",
+          "skiri": "riiraktahkirawaa",
           "english": "if/when they are sick"
         }
       },
@@ -2719,11 +2719,11 @@
           "english": "should I be sick"
         },
         "2sg": {
-          "skiri": "aakiraawaa",
+          "skiri": "aakirawaa",
           "english": "should you be sick"
         },
         "3sg": {
-          "skiri": "iihkiraawaa",
+          "skiri": "iihkirawaa",
           "english": "should he be sick"
         },
         "1du_incl": {
@@ -2751,7 +2751,7 @@
           "english": "should we be sick"
         },
         "2pl": {
-          "skiri": "aaraakiraawaa",
+          "skiri": "araakiraawaa",
           "english": "should you be sick"
         },
         "3pl": {
@@ -2777,31 +2777,31 @@
           "english": "for us to be sick"
         },
         "1du_excl": {
-          "skiri": "sirakukiraawaa",
+          "skiri": "sirakukukiraawaa",
           "english": "for us to be sick"
         },
         "2du": {
-          "skiri": "sirihkukiraawaa",
+          "skiri": "siraakukiraawaa",
           "english": "for you to be sick"
         },
         "3du": {
-          "skiri": "racakukuraaktahkiraawaa",
+          "skiri": "sirihkukiraawaa",
           "english": "for them to be sick"
         },
         "1pl_incl": {
-          "skiri": "rakukuraaktahkiraawaa",
+          "skiri": "racakukuraktahkiraawaa",
           "english": "for us to be sick"
         },
         "1pl_excl": {
-          "skiri": "raakuraktahkiraawaa",
+          "skiri": "rakukuraktahkiraawaa",
           "english": "for us to be sick"
         },
         "2pl": {
-          "skiri": "rihkuraaktahkiraawaa",
+          "skiri": "raakuraktahkiraawaa",
           "english": "for you to be sick"
         },
         "3pl": {
-          "skiri": "riihkuraktahkiraawaa",
+          "skiri": "rihkuraktahkiraawaa",
           "english": "for them to be sick"
         }
       }
@@ -2873,7 +2873,7 @@
           "english": "he does not have it"
         },
         "1du_incl": {
-          "skiri": "kaakaciraa",
+          "skiri": "kaakaaciraa",
           "english": "we do not have it"
         },
         "1du_excl": {
@@ -2889,7 +2889,7 @@
           "english": "they do not have it"
         },
         "1pl_incl": {
-          "skiri": "sikaakaciraa",
+          "skiri": "sikaakaaciraa",
           "english": "we do not have it"
         },
         "1pl_excl": {
@@ -2969,7 +2969,7 @@
           "english": "we have it"
         },
         "1du_excl": {
-          "skiri": "siriiháa",
+          "skiri": "siriihaa",
           "english": "we have it"
         },
         "2du": {
@@ -2985,7 +2985,7 @@
           "english": "we have it"
         },
         "1pl_excl": {
-          "skiri": "siriiháa",
+          "skiri": "siriihaa",
           "english": "we have it"
         },
         "2pl": {
@@ -3091,15 +3091,15 @@
       },
       "gerundial_perfective_subordinate": {
         "1sg": {
-          "skiri": "iriiraaha",
+          "skiri": "iriirahaaha",
           "english": "where I have it"
         },
         "2sg": {
-          "skiri": "iriiraastaaha",
+          "skiri": "iriirastaaha",
           "english": "where you have it"
         },
         "3sg": {
-          "skiri": "iriiraraha",
+          "skiri": "iriiraraaha",
           "english": "where he has them"
         },
         "1du_incl": {
@@ -3115,7 +3115,7 @@
           "english": "where you have it"
         },
         "3du": {
-          "skiri": "iriisiraraha",
+          "skiri": "iriisiraraaha",
           "english": "where they have it"
         },
         "1pl_incl": {
@@ -3161,7 +3161,7 @@
           "english": "if/when you have it"
         },
         "3du": {
-          "skiri": "siʔiraaha",
+          "skiri": "siriraaha",
           "english": "if/when they have it"
         },
         "1pl_incl": {

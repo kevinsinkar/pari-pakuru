@@ -1,5 +1,5 @@
 {
-  "total_terms": 23,
+  "total_terms": "26",
   "pages_extracted": 6,
   "terms": [
     {
@@ -21,7 +21,7 @@
       "grammatical_class": "N-KIN",
       "possessive_forms": {
         "my": "atiraʔ",
-        "your": "asaas",
+        "your": "asas",
         "his_her": "isaastiʔ",
         "vocative": null
       },
@@ -56,11 +56,11 @@
     },
     {
       "english_term": "grandfather",
-      "skiri_term": "atipaat",
+      "skiri_term": "atipat",
       "grammatical_class": "N-KIN",
       "possessive_forms": {
-        "my": "atipaat",
-        "your": "apaat",
+        "my": "atipat",
+        "your": "apat",
         "his_her": "ipaaktiʔ",
         "vocative": null
       },
@@ -81,103 +81,69 @@
       "notes": null
     },
     {
-      "category": "consanguineal",
-      "terms": [
-        {
-          "english_term": "mother's brother",
-          "skiri_term": "-waciriks, -waariiriks",
-          "grammatical_class": "N-KIN",
-          "possessive_forms": {
-            "my": "tiwaciriks",
-            "your": "paciriks",
-            "his_her": "iwariiriks",
-            "vocative": null
-          },
-          "verb_construction": null,
-          "notes": "mother's male parallel cousin; male's father's mother's brother's daughter"
-        },
-        {
-          "english_term": "sister (of male)",
-          "skiri_term": "-taat",
-          "grammatical_class": "N-KIN",
-          "possessive_forms": {
-            "my": "itaahiʔ",
-            "your": "ataati",
-            "his_her": "itaahiʔ",
-            "vocative": null
-          },
-          "verb_construction": null,
-          "notes": "male's parallel female cousin"
-        },
-        {
-          "english_term": "sibling (of same sex as speaker)",
-          "skiri_term": "-raar",
-          "grammatical_class": "N-KIN",
-          "possessive_forms": {
-            "my": "iraariʔ",
-            "your": "ara",
-            "his_her": "iraariʔ",
-            "vocative": null
-          },
-          "verb_construction": null,
-          "notes": "male's parallel male cousin; female's parallel female cousin; father's mother's brother's child (of same sex as speaker)"
-        },
-        {
-          "english_term": "brother (of female)",
-          "skiri_term": "-raac",
-          "grammatical_class": "N-KIN",
-          "possessive_forms": {
-            "my": "iraactiʔ",
-            "your": "araac",
-            "his_her": "iraactiʔ",
-            "vocative": null
-          },
-          "verb_construction": null,
-          "notes": "female's parallel male cousin; female's father's mother's brother's son"
-        },
-        {
-          "english_term": "grandchild",
-          "skiri_term": "-rak-tiikis",
-          "grammatical_class": "N-KIN",
-          "possessive_forms": {
-            "my": "raktiiki",
-            "your": "arakis",
-            "his_her": "raktiiki",
-            "vocative": null
-          },
-          "verb_construction": null,
-          "notes": "brother's grandchild; sister's grandchild; mother's brother's grandchild"
-        }
-      ]
+      "english_term": "mother's brother",
+      "skiri_term": "-waciriks, -waariiriks",
+      "grammatical_class": "N-KIN",
+      "possessive_forms": {
+        "my": "tiwaciriks",
+        "your": "paciriks",
+        "his_her": "iwariiriks",
+        "vocative": null
+      },
+      "verb_construction": null,
+      "notes": "Row of book page 543. Missing from the first extraction; added 2026-11-13 from the database table after a blind reading and a third look at the page."
     },
     {
-      "category": "affinal",
-      "terms": [
-        {
-          "english_term": "to have as spouse",
-          "skiri_term": "aktaku",
-          "grammatical_class": "V-KIN",
-          "possessive_forms": null,
-          "verb_construction": null,
-          "notes": "(ir...)"
-        },
-        {
-          "english_term": "to have as an in-law",
-          "skiri_term": "kaakus",
-          "grammatical_class": "V-KIN",
-          "possessive_forms": null,
-          "verb_construction": null,
-          "notes": "generally used for males marrying into a family; (ut...)"
-        },
-        {
-          "english_term": "to have as a female in-law",
-          "skiri_term": "ackirius",
-          "grammatical_class": "V-KIN",
-          "possessive_forms": null,
-          "verb_construction": null,
-          "notes": "e.g., mother-, sister-, daughter-in-law; (ir...)"
-        }
-      ]
+      "english_term": "sister (of male)",
+      "skiri_term": "-taat",
+      "grammatical_class": "N-KIN",
+      "possessive_forms": {
+        "my": "itaahiʔ",
+        "your": "ataat",
+        "his_her": "itaahiʔ",
+        "vocative": null
+      },
+      "verb_construction": null,
+      "notes": "Row of book page 543. Missing from the first extraction; added 2026-11-13 from the database table after a blind reading and a third look at the page."
+    },
+    {
+      "english_term": "sibling (of same sex as speaker)",
+      "skiri_term": "-raar",
+      "grammatical_class": "N-KIN",
+      "possessive_forms": {
+        "my": "iraariʔ",
+        "your": "ara",
+        "his_her": "iraariʔ",
+        "vocative": null
+      },
+      "verb_construction": null,
+      "notes": "Row of book page 543. Missing from the first extraction; added 2026-11-13 from the database table after a blind reading and a third look at the page."
+    },
+    {
+      "english_term": "brother (of female)",
+      "skiri_term": "-raac",
+      "grammatical_class": "N-KIN",
+      "possessive_forms": {
+        "my": "iraactiʔ",
+        "your": "araac",
+        "his_her": "iraactiʔ",
+        "vocative": null
+      },
+      "verb_construction": null,
+      "notes": "Row of book page 543. Missing from the first extraction; added 2026-11-13 from the database table after a blind reading and a third look at the page."
+    },
+    {
+      "english_term": "grandchild",
+      "skiri_term": "-rak-tiikis",
+      "grammatical_class": "N-KIN",
+      "possessive_forms": {
+        "my": "raktiiki",
+        "your": "arakis",
+        "his_her": "raktiiki",
+        "vocative": null
+      },
+      "verb_construction": null,
+      "notes": "Row of book page 543. Missing from the first extraction; added 2026-11-13 from the database table after a blind reading and a third look at the page."
     },
     {
       "english_term": "to have as a wife (male speaker)",

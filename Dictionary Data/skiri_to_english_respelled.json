@@ -2110,7 +2110,7 @@
     "headword": "aahkata-",
     "entry_metadata": {
       "page_number": 2,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -2168,7 +2168,7 @@
     "headword": "aahkataarik",
     "entry_metadata": {
       "page_number": 2,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -3375,7 +3375,7 @@
     "headword": "acikstarahkistaʔuk",
     "entry_metadata": {
       "page_number": 7,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -3438,7 +3438,7 @@
     "headword": "acikstat",
     "entry_metadata": {
       "page_number": 7,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -4179,7 +4179,7 @@
       "paradigmatic_forms": {
         "form_1": "tikuucikstiwarit",
         "form_2": "tiicikstiwarit",
-        "form_3": "tiicikstiwariikuʔ",
+        "form_3": "tiicikstiwarikuʔ",
         "form_4": "iriiraacikstiwarika",
         "form_5": "tiicikstiwariksta",
         "additional_forms": []
@@ -5923,7 +5923,7 @@
     "headword": "ahitkarusik",
     "entry_metadata": {
       "page_number": 9,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -5970,7 +5970,7 @@
     "headword": "ahitkaruusawiʔat",
     "entry_metadata": {
       "page_number": 9,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -7486,7 +7486,7 @@
     "headword": "akitaar",
     "entry_metadata": {
       "page_number": 11,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -8992,7 +8992,7 @@
     "headword": "ariikicparik",
     "entry_metadata": {
       "page_number": 13,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -9060,7 +9060,7 @@
     "headword": "ariisit",
     "entry_metadata": {
       "page_number": 13,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -10423,7 +10423,7 @@
         "additional_forms": [
           {
             "form_type": "comb.",
-            "form": "askatawihaar-, askatawi haah-"
+            "form": "askatawihaar-, askatawihaah-"
           }
         ]
       },
@@ -10647,7 +10647,7 @@
     "headword": "askiiruʔ",
     "entry_metadata": {
       "page_number": 16,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -10736,7 +10736,7 @@
     "headword": "askiisawihuk",
     "entry_metadata": {
       "page_number": 16,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -11677,7 +11677,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "asku(s) + ruurik, one + ruurik; i.q. Ar. AxkunoíNIt",
+        "raw_etymology": "asku(s) + ruurik, one + ruurik; i.q. Ar. AxkunoóNIt",
         "constituent_elements": [
           {
             "morpheme": "asku(s)",
@@ -11695,7 +11695,7 @@
       "cognates": [
         {
           "language": "Ar",
-          "form": "AxkunoíNIt",
+          "form": "AxkunoóNIt",
           "gloss": null
         }
       ],
@@ -12546,7 +12546,7 @@
     "headword": "astaaruukita",
     "entry_metadata": {
       "page_number": 17,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -13946,7 +13946,7 @@
     "headword": "asukaaʔat",
     "entry_metadata": {
       "page_number": 18,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -13998,7 +13998,7 @@
       "paradigmatic_forms": {
         "form_1": "tatuutasukaaʔat",
         "form_2": "tuutasukaaʔat",
-        "form_3": "tuutasukawuuʔ",
+        "form_3": "tuutasukaawuuʔ",
         "form_4": "iriruutasukaata",
         "form_5": "tuutasukaahuhta",
         "additional_forms": []
@@ -14324,7 +14324,7 @@
         "form_1": "taatasuuktit; wititaatasuuktit",
         "form_2": "tiisuuktit; wititiisuuktit",
         "form_3": "tiisuuktiikuʔ; wititiisuuktiikuʔ",
-        "form_4": "iriiriirasuuktika; iriiwitiriirasuuktika",
+        "form_4": "iririirasuuktika; iriiwitiriirasuuktika",
         "form_5": "tiisuuktiksta; wititiisuuktiksta",
         "additional_forms": []
       },
@@ -16734,7 +16734,7 @@
       "continues_to_next_page": false
     },
     "part_I": {
-      "stem_preverb": "(ir...)",
+      "stem_preverb": "(ir...) [+ raar-]",
       "phonetic_form": "[•a-waa•]",
       "grammatical_info": {
         "grammatical_class": "VI",
@@ -17118,7 +17118,7 @@
     "headword": "awaahiriʔ",
     "entry_metadata": {
       "page_number": 20,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -17187,12 +17187,12 @@
     "headword": "awaahkiir",
     "entry_metadata": {
       "page_number": 20,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
     "part_I": {
-      "stem_preverb": null,
+      "stem_preverb": "[+ raar-]",
       "phonetic_form": "[•ə-waah-kii(r)•]",
       "grammatical_info": {
         "grammatical_class": "VT",
@@ -17259,7 +17259,7 @@
     "headword": "awaaks",
     "entry_metadata": {
       "page_number": 20,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -17575,7 +17575,7 @@
       "continues_to_next_page": false
     },
     "part_I": {
-      "stem_preverb": "( i r . . . )",
+      "stem_preverb": "(ir...)",
       "phonetic_form": "[•ə-wə-čɪ-tɪk-sə•]",
       "grammatical_info": {
         "grammatical_class": "VI",
@@ -18046,7 +18046,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<(t)awakiks, i.q. SB aawakeks, Ar. nuutawáčeó>",
+        "raw_etymology": "<(t)awakiks, i.q. SB aawakeks, Ar. nuutawáčeš>",
         "constituent_elements": [],
         "literal_translation": null
       },
@@ -18058,7 +18058,7 @@
         },
         {
           "language": "Ar",
-          "form": "nuutawáčeó",
+          "form": "nuutawáčeš",
           "gloss": null
         }
       ],
@@ -18558,7 +18558,7 @@
         "form_1": "taatawatat",
         "form_2": "tiiwatat",
         "form_3": "tiiwatatkuʔ",
-        "form_4": "ririiwatatka",
+        "form_4": "iririiwatatka",
         "form_5": "tiiwatatkista",
         "additional_forms": []
       },
@@ -19881,7 +19881,7 @@
     "headword": "awiirahiriʔ",
     "entry_metadata": {
       "page_number": 23,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -19937,7 +19937,7 @@
     "headword": "awiirahuukat",
     "entry_metadata": {
       "page_number": 23,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -20005,7 +20005,7 @@
     "headword": "awiirakus",
     "entry_metadata": {
       "page_number": 23,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -20917,7 +20917,7 @@
       "continues_to_next_page": false
     },
     "part_I": {
-      "stem_preverb": null,
+      "stem_preverb": "[+ ruu-, i-]",
       "phonetic_form": "[•ə-wɪ-kɪts-kə-kuu-sɪ{k/t}•]",
       "grammatical_info": {
         "grammatical_class": "VI",
@@ -21410,7 +21410,7 @@
       "continues_to_next_page": false
     },
     "part_I": {
-      "stem_preverb": "(ir...)",
+      "stem_preverb": "(ir...) [+ neg.]",
       "phonetic_form": "[•a-wi-raa•]",
       "grammatical_info": {
         "grammatical_class": "VR",
@@ -22601,7 +22601,7 @@
     "headword": "awiritukuk",
     "entry_metadata": {
       "page_number": 25,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -23637,7 +23637,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<icaahiks, i.q. SB caahriks, Ar. sáhnió>",
+        "raw_etymology": "<icaahiks, i.q. SB caahriks, Ar. sáhniš>",
         "constituent_elements": [
           {
             "morpheme": "icaahiks",
@@ -23655,7 +23655,7 @@
         },
         {
           "language": "Ar",
-          "form": "sáhnió",
+          "form": "sáhniš",
           "gloss": null
         }
       ],
@@ -23964,7 +23964,7 @@
     "headword": "caahikski",
     "entry_metadata": {
       "page_number": 26,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -24033,7 +24033,7 @@
     "headword": "caahikskiisuʔ",
     "entry_metadata": {
       "page_number": 26,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -24101,7 +24101,7 @@
     "headword": "caahikskucuuʔ",
     "entry_metadata": {
       "page_number": 26,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -24164,7 +24164,7 @@
     "headword": "Caahikspahat",
     "entry_metadata": {
       "page_number": 26,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -26049,7 +26049,7 @@
     "headword": "caciks",
     "entry_metadata": {
       "page_number": 27,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -26128,7 +26128,7 @@
     "headword": "cacikskaaskitawikiic",
     "entry_metadata": {
       "page_number": 27,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -26201,7 +26201,7 @@
     "headword": "cacikskaatiit, cacikskatiit",
     "entry_metadata": {
       "page_number": 27,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -28167,7 +28167,7 @@
     "headword": "cawihaaruʔ",
     "entry_metadata": {
       "page_number": 28,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -28251,7 +28251,7 @@
     "headword": "Cawii",
     "entry_metadata": {
       "page_number": 28,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -28324,7 +28324,7 @@
     "headword": "cawiirik",
     "entry_metadata": {
       "page_number": 28,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -29631,7 +29631,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<aciks+rik, feeling + DIST; i.q. SB cikstit, Ar. atíótIt>",
+        "raw_etymology": "<aciks+rik, feeling + DIST; i.q. SB cikstit, Ar. atíštIt>",
         "constituent_elements": [
           {
             "morpheme": "aciks",
@@ -29651,7 +29651,7 @@
         },
         {
           "language": "Ar",
-          "form": "atíótIt"
+          "form": "atíštIt"
         }
       ],
       "simplified_pronunciation": "CHIHKS-tiht"
@@ -29869,7 +29869,7 @@
     "headword": "cirasat",
     "entry_metadata": {
       "page_number": 29,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -30503,7 +30503,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "ickaa+piruus, ickaa + crooked; i.q. Ar. skaapiríx",
+        "raw_etymology": "ickaa+piruus, ickaa + crooked; i.q. Ar. skaapiróx",
         "constituent_elements": [
           {
             "morpheme": "ickaa",
@@ -30521,7 +30521,7 @@
       "cognates": [
         {
           "language": "Ar",
-          "form": "skaapiríx",
+          "form": "skaapiróx",
           "gloss": null
         }
       ],
@@ -31229,7 +31229,7 @@
     "headword": "ckarucki",
     "entry_metadata": {
       "page_number": 30,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -31309,7 +31309,7 @@
     "headword": "ckarus",
     "entry_metadata": {
       "page_number": 30,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -31387,7 +31387,7 @@
     "headword": "ckataahisiku",
     "entry_metadata": {
       "page_number": 30,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -31461,7 +31461,7 @@
     "headword": "Ckiiri",
     "entry_metadata": {
       "page_number": 30,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -32932,7 +32932,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "i.q. SB ckuraahkeeks; cf. Ar. skunakaáhkUx toad, sčÝó frog",
+        "raw_etymology": "i.q. SB ckuraahkeeks; cf. Ar. skunakaáhkUx toad, sčéš frog",
         "constituent_elements": [],
         "literal_translation": null
       },
@@ -33640,7 +33640,7 @@
     "headword": "ckuusuʔ",
     "entry_metadata": {
       "page_number": 31,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -35536,7 +35536,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "i.q. SB cuuʔat, Ar. soíʔAt",
+        "raw_etymology": "i.q. SB cuuʔat, Ar. soóʔAt",
         "constituent_elements": [],
         "literal_translation": null
       },
@@ -35548,7 +35548,7 @@
         },
         {
           "language": "Ar",
-          "form": "soíʔAt",
+          "form": "soóʔAt",
           "gloss": null
         }
       ],
@@ -37018,7 +37018,7 @@
     "headword": "haahkahaaruʔ",
     "entry_metadata": {
       "page_number": 33,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -37101,7 +37101,7 @@
     "headword": "haahkahaaruʔat",
     "entry_metadata": {
       "page_number": 33,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -37164,7 +37164,7 @@
     "headword": "haahkahaaruhak",
     "entry_metadata": {
       "page_number": 33,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -38212,7 +38212,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<haaka+kuuʔat, sore mouth; cf. SB aakakuutuʔ moonseed, Ar. haakakoítuʔ buckbrush berry>",
+        "raw_etymology": "<haaka+kuuʔat, sore mouth; cf. SB aakakuutuʔ moonseed, Ar. haakakoótuʔ buckbrush berry>",
         "constituent_elements": [
           {
             "morpheme": "haaka",
@@ -38235,7 +38235,7 @@
         },
         {
           "language": "Ar",
-          "form": "haakakoítuʔ",
+          "form": "haakakoótuʔ",
           "gloss": "buckbrush berry"
         }
       ],
@@ -38696,7 +38696,7 @@
     "headword": "haakaratawiʔuʔ",
     "entry_metadata": {
       "page_number": 34,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -38775,7 +38775,7 @@
     "headword": "haakarihuur",
     "entry_metadata": {
       "page_number": 34,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -40085,7 +40085,7 @@
     "headword": "haaktariika",
     "entry_metadata": {
       "page_number": 35,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -40153,7 +40153,7 @@
     "headword": "haaktariikarikuk",
     "entry_metadata": {
       "page_number": 35,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -40231,7 +40231,7 @@
     "headword": "haaktariikawuh",
     "entry_metadata": {
       "page_number": 35,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -41640,7 +41640,7 @@
     "headword": "haaskiihkiiriwat",
     "entry_metadata": {
       "page_number": 36,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -41697,7 +41697,7 @@
     "headword": "haaskiiraʔuk",
     "entry_metadata": {
       "page_number": 36,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -42988,7 +42988,7 @@
     "headword": "harikictaarikic",
     "entry_metadata": {
       "page_number": 37,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -44953,7 +44953,7 @@
     "headword": "hatawuh",
     "entry_metadata": {
       "page_number": 38,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -46338,7 +46338,7 @@
     "headword": "hiʔaastiʔ",
     "entry_metadata": {
       "page_number": 40,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -46406,7 +46406,7 @@
     "headword": "hici",
     "entry_metadata": {
       "page_number": 40,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -47660,14 +47660,14 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<widespread regional term of unknown origin, likely either Pawnee or Omaha-Ponca; akin to Omaha heduóka>",
+        "raw_etymology": "<widespread regional term of unknown origin, likely either Pawnee or Omaha-Ponca; akin to Omaha heduška>",
         "constituent_elements": [],
         "literal_translation": null
       },
       "cognates": [
         {
           "language": "Omaha",
-          "form": "heduóka",
+          "form": "heduška",
           "gloss": null
         }
       ],
@@ -47914,7 +47914,7 @@
     "headword": "hiwata",
     "entry_metadata": {
       "page_number": 43,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -47988,7 +47988,7 @@
     "headword": "hiwatuhta",
     "entry_metadata": {
       "page_number": 43,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -48051,7 +48051,7 @@
     "headword": "hiwatuhtawiʔuʔ",
     "entry_metadata": {
       "page_number": 43,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -48119,7 +48119,7 @@
     "headword": "hiwatur",
     "entry_metadata": {
       "page_number": 43,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -49307,7 +49307,7 @@
         "additional_forms": [
           {
             "form_type": "comb.",
-            "form": "hukaatahaar-, hukaata haah-"
+            "form": "hukaatahaar-, hukaatahaah-"
           }
         ]
       },
@@ -49599,7 +49599,7 @@
     "headword": "hukaka-",
     "entry_metadata": {
       "page_number": 44,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -50799,7 +50799,7 @@
     "headword": "hukiriikas",
     "entry_metadata": {
       "page_number": 45,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -50949,7 +50949,7 @@
         "additional_forms": [
           {
             "form_type": "comb.",
-            "form": "hukiwahaar-, hukiwa haah-"
+            "form": "hukiwahaar-, hukiwahaah-"
           }
         ]
       },
@@ -52002,7 +52002,7 @@
     "headword": "huraahtaruuwispar",
     "entry_metadata": {
       "page_number": 46,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -53241,7 +53241,7 @@
     "headword": "huraaruukat",
     "entry_metadata": {
       "page_number": 47,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -53320,7 +53320,7 @@
     "headword": "huraas/ras-",
     "entry_metadata": {
       "page_number": 47,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -54316,7 +54316,7 @@
           },
           {
             "form_type": "dist.",
-            "form": "hurii- waawikaʔuk"
+            "form": "huriiwaawikaʔuk"
           }
         ]
       },
@@ -54522,7 +54522,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<huriirus+uʔ, frost + NOM; i.q. Ar. hunaneÝnux, hunaneenuúxuʔ>",
+        "raw_etymology": "<huriirus+uʔ, frost + NOM; i.q. Ar. hunaneénux, hunaneenuúxuʔ>",
         "constituent_elements": [
           {
             "morpheme": "huriirus",
@@ -54540,7 +54540,7 @@
       "cognates": [
         {
           "language": "Ar",
-          "form": "hunaneÝnux",
+          "form": "hunaneénux",
           "gloss": null
         },
         {
@@ -54844,7 +54844,7 @@
     "headword": "huuʔat",
     "entry_metadata": {
       "page_number": 48,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -54913,7 +54913,7 @@
     "headword": "huuʔiitik",
     "entry_metadata": {
       "page_number": 48,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -56953,7 +56953,7 @@
           },
           {
             "form_type": "comb.",
-            "form": "huukiwihka haah-"
+            "form": "huukiwihkahaah-"
           }
         ]
       },
@@ -57721,7 +57721,7 @@
     "headword": "huurahkuuckusuʔ",
     "entry_metadata": {
       "page_number": 51,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -58417,7 +58417,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "huuruhaar+kaatiit, huuruhaar + black; i.q. SB huuraʔahkaatiit, Ar. neeóoorahkaátiit",
+        "raw_etymology": "huuruhaar+kaatiit, huuruhaar + black; i.q. SB huuraʔahkaatiit, Ar. neešoorahkaátiit",
         "constituent_elements": [
           {
             "morpheme": "huuruhaar",
@@ -58440,7 +58440,7 @@
         },
         {
           "language": "Ar",
-          "form": "neeóoorahkaátiit",
+          "form": "neešoorahkaátiit",
           "gloss": null
         }
       ],
@@ -59142,7 +59142,7 @@
     "headword": "huutaaʔuʔ",
     "entry_metadata": {
       "page_number": 52,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -59227,7 +59227,7 @@
     "headword": "huutarahaʔ",
     "entry_metadata": {
       "page_number": 52,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -59301,7 +59301,7 @@
     "headword": "huutariiʔuus",
     "entry_metadata": {
       "page_number": 52,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -60042,7 +60042,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "huu+wii, thick mush; i.q. SB uuweʔ, Ar. hoíweʔ",
+        "raw_etymology": "huu+wii, thick mush; i.q. SB uuweʔ, Ar. hoóweʔ",
         "constituent_elements": [
           {
             "morpheme": "huu",
@@ -60713,7 +60713,7 @@
     "headword": "icaʔis",
     "entry_metadata": {
       "page_number": 53,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -60776,7 +60776,7 @@
     "headword": "icaʔuuc/uc-",
     "entry_metadata": {
       "page_number": 53,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -60952,7 +60952,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<icaahiks, person; i.q. SB icaahriks, Ar. isáh-nió>",
+        "raw_etymology": "<icaahiks, person; i.q. SB icaahriks, Ar. isáh-niš>",
         "constituent_elements": [
           {
             "morpheme": "icaahiks",
@@ -60970,7 +60970,7 @@
         },
         {
           "language": "Ar",
-          "form": "isáh-nió",
+          "form": "isáh-niš",
           "gloss": null
         }
       ],
@@ -61636,7 +61636,7 @@
         "form_1": "taaticakahuuʔ",
         "form_2": "tiicakahuuʔ",
         "form_3": null,
-        "form_4": "iriiraacakahuru",
+        "form_4": "iriiraacakahuuru",
         "form_5": "tiicakahuuruksta",
         "additional_forms": []
       },
@@ -61851,7 +61851,7 @@
     "headword": "icakawat",
     "entry_metadata": {
       "page_number": 54,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -61930,7 +61930,7 @@
     "headword": "icakawatak",
     "entry_metadata": {
       "page_number": 54,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -63078,7 +63078,7 @@
     "headword": "icat",
     "entry_metadata": {
       "page_number": 55,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -63136,7 +63136,7 @@
     "headword": "icataaʔatikawaa",
     "entry_metadata": {
       "page_number": 55,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -64742,7 +64742,7 @@
     "headword": "icawicparik",
     "entry_metadata": {
       "page_number": 56,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -64805,7 +64805,7 @@
     "headword": "icawuh",
     "entry_metadata": {
       "page_number": 56,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -65105,14 +65105,14 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<cf. Ar. isió be a relative>",
+        "raw_etymology": "<cf. Ar. isiš be a relative>",
         "constituent_elements": [],
         "literal_translation": null
       },
       "cognates": [
         {
           "language": "Ar",
-          "form": "isió",
+          "form": "isiš",
           "gloss": "be a relative"
         }
       ],
@@ -66138,7 +66138,7 @@
     "headword": "ickarahkatasa",
     "entry_metadata": {
       "page_number": 57,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -67496,7 +67496,7 @@
     "headword": "ickuhkakuusk",
     "entry_metadata": {
       "page_number": 58,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -67563,7 +67563,7 @@
     "headword": "ickuracaʔuuc/uc-",
     "entry_metadata": {
       "page_number": 58,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -68966,7 +68966,7 @@
     "headword": "icustaʔat",
     "entry_metadata": {
       "page_number": 59,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -69024,7 +69024,7 @@
     "headword": "icustaaraʔuk",
     "entry_metadata": {
       "page_number": 59,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -69082,7 +69082,7 @@
     "headword": "icuuhaarukac",
     "entry_metadata": {
       "page_number": 59,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -70259,7 +70259,7 @@
     "headword": "iitkickaruuwat",
     "entry_metadata": {
       "page_number": 61,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -70322,7 +70322,7 @@
     "headword": "iitkickaruuwatiihus",
     "entry_metadata": {
       "page_number": 61,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -73230,7 +73230,7 @@
     "headword": "ikskawiʔat",
     "entry_metadata": {
       "page_number": 63,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -73303,7 +73303,7 @@
     "headword": "ikskiickaa",
     "entry_metadata": {
       "page_number": 63,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -74753,7 +74753,7 @@
     "headword": "iksucaʔa",
     "entry_metadata": {
       "page_number": 64,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -74816,7 +74816,7 @@
     "headword": "iksuhuraar",
     "entry_metadata": {
       "page_number": 64,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -74879,7 +74879,7 @@
     "headword": "iksuurikuk",
     "entry_metadata": {
       "page_number": 64,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -76322,7 +76322,7 @@
     "headword": "iriik",
     "entry_metadata": {
       "page_number": 65,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -76380,7 +76380,7 @@
     "headword": "iriikiwat",
     "entry_metadata": {
       "page_number": 65,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -76443,7 +76443,7 @@
     "headword": "iriipacik",
     "entry_metadata": {
       "page_number": 65,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -76517,7 +76517,7 @@
     "headword": "iriipuh",
     "entry_metadata": {
       "page_number": 65,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -77832,7 +77832,7 @@
     "headword": "iriirasakuhaku, rasakuhaku",
     "entry_metadata": {
       "page_number": 66,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -77884,7 +77884,7 @@
     "headword": "iriirasakuriispuu",
     "entry_metadata": {
       "page_number": 66,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -77936,7 +77936,7 @@
     "headword": "iriirihaakawaahcu",
     "entry_metadata": {
       "page_number": 66,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -77988,7 +77988,7 @@
     "headword": "iriirirahcaku",
     "entry_metadata": {
       "page_number": 66,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -78040,7 +78040,7 @@
     "headword": "iriiriritpaahwiiku",
     "entry_metadata": {
       "page_number": 66,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -78097,7 +78097,7 @@
     "headword": "iriiruuwarii",
     "entry_metadata": {
       "page_number": 66,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -78153,7 +78153,7 @@
       "continues_to_next_page": false
     },
     "part_I": {
-      "stem_preverb": null,
+      "stem_preverb": "[+ raar-]",
       "phonetic_form": "[•i-rii-ti{k/t}•]",
       "grammatical_info": {
         "grammatical_class": "VI",
@@ -79670,7 +79670,7 @@
     "headword": "iritaku",
     "entry_metadata": {
       "page_number": 67,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -79733,7 +79733,7 @@
     "headword": "iritkat",
     "entry_metadata": {
       "page_number": 67,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -81170,7 +81170,7 @@
     "headword": "iruuc",
     "entry_metadata": {
       "page_number": 68,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -81379,7 +81379,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "hi-sii+rik, prominent + rik ?; i.q. SB iseerit, Ar. óeÝNIt",
+        "raw_etymology": "hi-sii+rik, prominent + rik ?; i.q. SB iseerit, Ar. šeéNIt",
         "constituent_elements": [
           {
             "morpheme": "hi-sii",
@@ -81402,7 +81402,7 @@
         },
         {
           "language": "Ar",
-          "form": "óeÝNIt",
+          "form": "šeéNIt",
           "gloss": null
         }
       ],
@@ -82437,7 +82437,7 @@
         "additional_forms": [
           {
             "form_type": "comb.",
-            "form": "itkahaar-, itka- haah-"
+            "form": "itkahaar-, itkahaah-"
           }
         ]
       },
@@ -82590,7 +82590,7 @@
         "additional_forms": [
           {
             "form_type": "dist.",
-            "form": "it- karahkaarik"
+            "form": "itkarahkaarik"
           }
         ]
       },
@@ -82935,7 +82935,7 @@
     "headword": "itkaskuuʔat",
     "entry_metadata": {
       "page_number": 69,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -82998,7 +82998,7 @@
     "headword": "itkaspaawaktiik/tik-",
     "entry_metadata": {
       "page_number": 69,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -83620,7 +83620,7 @@
         "additional_forms": [
           {
             "form_type": "dist.",
-            "form": "ituhwiiruu- tik"
+            "form": "ituhwiiruutik"
           }
         ]
       },
@@ -85633,7 +85633,7 @@
     "headword": "kaahuraaruu",
     "entry_metadata": {
       "page_number": 72,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -86746,7 +86746,7 @@
     "headword": "kaar",
     "entry_metadata": {
       "page_number": 73,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -86815,7 +86815,7 @@
     "headword": "kaaraktuʔ",
     "entry_metadata": {
       "page_number": 73,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -86866,7 +86866,7 @@
     "headword": "kaariiksati",
     "entry_metadata": {
       "page_number": 73,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -86917,7 +86917,7 @@
     "headword": "kaariiksuʔ",
     "entry_metadata": {
       "page_number": 73,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -86937,7 +86937,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "kaariiks+uʔ, drying meat + NOM; cf. Ar. kaaniió be an abundance of dried meat",
+        "raw_etymology": "kaariiks+uʔ, drying meat + NOM; cf. Ar. kaaniiš be an abundance of dried meat",
         "constituent_elements": [
           {
             "morpheme": "kaariiks",
@@ -86955,7 +86955,7 @@
       "cognates": [
         {
           "language": "Ar",
-          "form": "kaaniió",
+          "form": "kaaniiš",
           "gloss": "be an abundance of dried meat"
         }
       ],
@@ -86985,7 +86985,7 @@
     "headword": "kaarik",
     "entry_metadata": {
       "page_number": 73,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -88634,7 +88634,7 @@
     "headword": "kaatiiwiʔuskaraʔuk",
     "entry_metadata": {
       "page_number": 74,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -88697,7 +88697,7 @@
     "headword": "kaatpiks",
     "entry_metadata": {
       "page_number": 74,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -88717,7 +88717,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "i.q. kaariiksati, Ar. kátwiʔIó",
+        "raw_etymology": "i.q. kaariiksati, Ar. kátwiʔIš",
         "constituent_elements": [],
         "literal_translation": null
       },
@@ -88729,7 +88729,7 @@
         },
         {
           "language": "Ar",
-          "form": "kátwiʔIó",
+          "form": "kátwiʔIš",
           "gloss": null
         }
       ],
@@ -88760,7 +88760,7 @@
     "headword": "kaatuʔ",
     "entry_metadata": {
       "page_number": 74,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -88780,7 +88780,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "i.q. SB keetuʔ, keeʔetuʔ; cf. Ar. čaátoʔ, čeÝtoʔ perhaps; let's see if; whether",
+        "raw_etymology": "i.q. SB keetuʔ, keeʔetuʔ; cf. Ar. čaátoʔ, čeétoʔ perhaps; let's see if; whether",
         "constituent_elements": [],
         "literal_translation": null
       },
@@ -90330,7 +90330,7 @@
     "headword": "kaciiki",
     "entry_metadata": {
       "page_number": 75,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -90403,7 +90403,7 @@
     "headword": "kaciikucuuʔ",
     "entry_metadata": {
       "page_number": 75,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -91756,7 +91756,7 @@
     "headword": "kahuraahkicuucis",
     "entry_metadata": {
       "page_number": 76,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -91819,7 +91819,7 @@
     "headword": "kahuraahkicuuciskat",
     "entry_metadata": {
       "page_number": 76,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -91887,7 +91887,7 @@
     "headword": "kahuraar",
     "entry_metadata": {
       "page_number": 76,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -91950,7 +91950,7 @@
     "headword": "kahuraaruʔ",
     "entry_metadata": {
       "page_number": 76,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -93444,7 +93444,7 @@
     "headword": "karaʔuk",
     "entry_metadata": {
       "page_number": 77,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -95049,7 +95049,7 @@
     "headword": "kariiʔuʔ",
     "entry_metadata": {
       "page_number": 78,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -95118,7 +95118,7 @@
     "headword": "kariiʔuuka",
     "entry_metadata": {
       "page_number": 78,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -95333,7 +95333,7 @@
       "continues_to_next_page": false
     },
     "part_I": {
-      "stem_preverb": "(ut...)",
+      "stem_preverb": "(ut...) [+ raar-]",
       "phonetic_form": "[•ka-rii-ki-wat•]",
       "grammatical_info": {
         "grammatical_class": "VT",
@@ -96486,10 +96486,10 @@
     "part_II": {
       "paradigmatic_forms": {
         "form_1": "tatkarusit",
-        "form_2": "tikarusi",
-        "form_3": "tikusikuʔ",
+        "form_2": "tikarusit",
+        "form_3": "tikarusikuʔ",
         "form_4": "iriirakarusika",
-        "form_5": "tikusiksta",
+        "form_5": "tikarusiksta",
         "additional_forms": []
       },
       "examples": []
@@ -96699,7 +96699,7 @@
     "headword": "karuusawiʔat",
     "entry_metadata": {
       "page_number": 79,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -98028,7 +98028,7 @@
     "headword": "kataarahkaaʔa",
     "entry_metadata": {
       "page_number": 80,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -98101,7 +98101,7 @@
     "headword": "kataarit",
     "entry_metadata": {
       "page_number": 80,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -98175,7 +98175,7 @@
     "headword": "kataaruʔ",
     "entry_metadata": {
       "page_number": 80,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -98435,7 +98435,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "kata+hiis, rough on a vertical surface; i.q. kitahiis, SB katahiis, ic-katahiis, Ar. iskačitahiió",
+        "raw_etymology": "kata+hiis, rough on a vertical surface; i.q. kitahiis, SB katahiis, ic-katahiis, Ar. iskačitahiiš",
         "constituent_elements": [
           {
             "morpheme": "kata",
@@ -98458,7 +98458,7 @@
         },
         {
           "language": "Ar",
-          "form": "iskačitahiió",
+          "form": "iskačitahiiš",
           "gloss": null
         }
       ],
@@ -99459,7 +99459,7 @@
     "headword": "katapirat",
     "entry_metadata": {
       "page_number": 81,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -99522,7 +99522,7 @@
     "headword": "katapiriwus",
     "entry_metadata": {
       "page_number": 81,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -100730,7 +100730,7 @@
     "headword": "katawaarik",
     "entry_metadata": {
       "page_number": 82,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -100793,7 +100793,7 @@
     "headword": "katawaarit",
     "entry_metadata": {
       "page_number": 82,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -100851,7 +100851,7 @@
     "headword": "katawaruuc",
     "entry_metadata": {
       "page_number": 82,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -100920,7 +100920,7 @@
     "headword": "katawiʔat",
     "entry_metadata": {
       "page_number": 82,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -100988,7 +100988,7 @@
     "headword": "katawihuurik",
     "entry_metadata": {
       "page_number": 82,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -102272,7 +102272,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<katuurak, cf. SB katuurit duck, Ar. katoíRIt whooping crane>",
+        "raw_etymology": "<katuurak, cf. SB katuurit duck, Ar. katoóRIt whooping crane>",
         "constituent_elements": [
           {
             "morpheme": "katuurak",
@@ -102290,7 +102290,7 @@
         },
         {
           "language": "Ar",
-          "form": "katoíRIt",
+          "form": "katoóRIt",
           "gloss": "whooping crane"
         }
       ],
@@ -102314,7 +102314,7 @@
     "headword": "katuus",
     "entry_metadata": {
       "page_number": 83,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -102377,7 +102377,7 @@
     "headword": "katuusawiʔa",
     "entry_metadata": {
       "page_number": 83,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -102445,7 +102445,7 @@
     "headword": "katuuskus",
     "entry_metadata": {
       "page_number": 83,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -102508,7 +102508,7 @@
     "headword": "katuustaʔuk",
     "entry_metadata": {
       "page_number": 83,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -102571,7 +102571,7 @@
     "headword": "katuusuʔ",
     "entry_metadata": {
       "page_number": 83,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -102973,7 +102973,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<kawaar+kis, kawaar + DIM; i.q. Ar. ka-wáhtó>",
+        "raw_etymology": "<kawaar+kis, kawaar + DIM; i.q. Ar. ka-wáhtš>",
         "constituent_elements": [
           {
             "morpheme": "kawaar",
@@ -102991,7 +102991,7 @@
       "cognates": [
         {
           "language": "Ar",
-          "form": "ka-wáhtó",
+          "form": "ka-wáhtš",
           "gloss": null
         }
       ],
@@ -103498,7 +103498,7 @@
       "continues_to_next_page": false
     },
     "part_I": {
-      "stem_preverb": "(ut...)",
+      "stem_preverb": "(ut...) [+ si-]",
       "phonetic_form": "[•ka-wi-ʔuk-ta-wu(h)•]",
       "grammatical_info": {
         "grammatical_class": "VT",
@@ -104029,12 +104029,12 @@
     "headword": "kawitaat",
     "entry_metadata": {
       "page_number": 84,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
     "part_I": {
-      "stem_preverb": null,
+      "stem_preverb": "[+ ruu-, i-]",
       "phonetic_form": "[•ka-wi-taat•]",
       "grammatical_info": {
         "grammatical_class": "VI",
@@ -106042,7 +106042,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "kica+iirikiis, liquid + iirikiis; i.q. SB kiceerikiis, Ar. tseeričiió",
+        "raw_etymology": "kica+iirikiis, liquid + iirikiis; i.q. SB kiceerikiis, Ar. tseeričiiš",
         "constituent_elements": [
           {
             "morpheme": "kica",
@@ -106065,7 +106065,7 @@
         },
         {
           "language": "Ar",
-          "form": "tseeričiió",
+          "form": "tseeričiiš",
           "gloss": null
         }
       ],
@@ -106533,7 +106533,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "kic-ka.aahis, i.q. SB kickaʔaahris, Ar. tskaʔaahNIó",
+        "raw_etymology": "kic-ka.aahis, i.q. SB kickaʔaahris, Ar. tskaʔaahNIš",
         "constituent_elements": [
           {
             "morpheme": "kic-ka.aahis",
@@ -106551,7 +106551,7 @@
         },
         {
           "language": "Ar",
-          "form": "tskaʔaahNIó",
+          "form": "tskaʔaahNIš",
           "gloss": null
         }
       ],
@@ -107249,7 +107249,7 @@
     "headword": "kickahuu",
     "entry_metadata": {
       "page_number": 86,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -107312,7 +107312,7 @@
     "headword": "kickahuuraʔuk",
     "entry_metadata": {
       "page_number": 86,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -107375,7 +107375,7 @@
     "headword": "kickakuusis",
     "entry_metadata": {
       "page_number": 86,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -108851,7 +108851,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "kickur, i.q. SB keckuʔ; cf. Ar. čÝskoʔ here and there",
+        "raw_etymology": "kickur, i.q. SB keckuʔ; cf. Ar. čéskoʔ here and there",
         "constituent_elements": [
           {
             "morpheme": "kickur",
@@ -108869,7 +108869,7 @@
         },
         {
           "language": "Ar",
-          "form": "čÝskoʔ",
+          "form": "čéskoʔ",
           "gloss": "here and there"
         }
       ],
@@ -108965,7 +108965,7 @@
     "headword": "kickus",
     "entry_metadata": {
       "page_number": 87,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -109023,7 +109023,7 @@
     "headword": "kickuuʔat",
     "entry_metadata": {
       "page_number": 87,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -109329,7 +109329,7 @@
       "continues_to_next_page": false
     },
     "part_I": {
-      "stem_preverb": null,
+      "stem_preverb": "[+ ruu-]",
       "phonetic_form": "[•kɪts-pə-kə-ʔu•]",
       "grammatical_info": {
         "grammatical_class": "VI",
@@ -110252,7 +110252,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<kii-+ci, here + but; cf. SB keeciʔ but, and yet, Ar. čeÝsiʔ, čeÝsuʔ too, also>",
+        "raw_etymology": "<kii-+ci, here + but; cf. SB keeciʔ but, and yet, Ar. čeésiʔ, čeésuʔ too, also>",
         "constituent_elements": [
           {
             "morpheme": "kii-",
@@ -110275,7 +110275,7 @@
         },
         {
           "language": "Ar",
-          "form": "čeÝsiʔ, čeÝsuʔ",
+          "form": "čeésiʔ, čeésuʔ",
           "gloss": "too, also"
         }
       ],
@@ -110698,7 +110698,7 @@
     "headword": "kiickisu",
     "entry_metadata": {
       "page_number": 89,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -111251,7 +111251,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<kiictik+kucuu, kiictik + AUG; cf. kiiʔac be long; i.q. SB keectikucuʔ, Ar. čeÝstIt>",
+        "raw_etymology": "<kiictik+kucuu, kiictik + AUG; cf. kiiʔac be long; i.q. SB keectikucuʔ, Ar. čeéstIt>",
         "constituent_elements": [
           {
             "morpheme": "kiictik",
@@ -111274,7 +111274,7 @@
         },
         {
           "language": "Ar",
-          "form": "čeÝstIt",
+          "form": "čeéstIt",
           "gloss": null
         }
       ],
@@ -112010,7 +112010,7 @@
     "headword": "kiihaarat",
     "entry_metadata": {
       "page_number": 90,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -112073,7 +112073,7 @@
     "headword": "kiihaariirik",
     "entry_metadata": {
       "page_number": 90,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -112141,7 +112141,7 @@
     "headword": "kiihaaruʔ",
     "entry_metadata": {
       "page_number": 90,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -113717,7 +113717,7 @@
     "headword": "kiiriictaakaa",
     "entry_metadata": {
       "page_number": 91,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -113780,7 +113780,7 @@
     "headword": "Kiiriitarika",
     "entry_metadata": {
       "page_number": 91,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -113848,7 +113848,7 @@
     "headword": "kiiriitarika",
     "entry_metadata": {
       "page_number": 91,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -113916,7 +113916,7 @@
     "headword": "kiiriitkaatiit",
     "entry_metadata": {
       "page_number": 91,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -114214,7 +114214,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "cf. SB keeriks be smooth, hairless, Ar. čeerió be smooth and glossy",
+        "raw_etymology": "cf. SB keeriks be smooth, hairless, Ar. čeeriš be smooth and glossy",
         "constituent_elements": [],
         "literal_translation": null
       },
@@ -114226,7 +114226,7 @@
         },
         {
           "language": "Ar",
-          "form": "čeerió",
+          "form": "čeeriš",
           "gloss": "be smooth and glossy"
         }
       ],
@@ -114544,7 +114544,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "i.q. SB kees (ir...), Ar. čeeó (in...)",
+        "raw_etymology": "i.q. SB kees (ir...), Ar. čeeš (in...)",
         "constituent_elements": [],
         "literal_translation": null
       },
@@ -114556,7 +114556,7 @@
         },
         {
           "language": "Ar",
-          "form": "čeeó (in...)",
+          "form": "čeeš (in...)",
           "gloss": null
         }
       ],
@@ -115407,7 +115407,7 @@
     "headword": "kiiskawaarasihaʔuk",
     "entry_metadata": {
       "page_number": 92,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -115470,7 +115470,7 @@
     "headword": "kiiskawaarasit",
     "entry_metadata": {
       "page_number": 92,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -116383,7 +116383,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<kiis+watur, curved bone; cf. askiispátuʔ elk antler scraper, Ar. čiówátU>",
+        "raw_etymology": "<kiis+watur, curved bone; cf. askiispátuʔ elk antler scraper, Ar. čišwátU>",
         "constituent_elements": [
           {
             "morpheme": "kiis",
@@ -116401,7 +116401,7 @@
       "cognates": [
         {
           "language": "Ar",
-          "form": "čiówátU",
+          "form": "čišwátU",
           "gloss": null
         }
       ],
@@ -117819,7 +117819,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<ki(ri)kii, i.q. SB kirikee, Ar. tičeÝ>",
+        "raw_etymology": "<ki(ri)kii, i.q. SB kirikee, Ar. tičeé>",
         "constituent_elements": [
           {
             "morpheme": "ki(ri)kii",
@@ -117837,7 +117837,7 @@
         },
         {
           "language": "Ar",
-          "form": "tičeÝ",
+          "form": "tičeé",
           "gloss": null
         }
       ],
@@ -118769,7 +118769,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<kipis+uʔ, shaft + NOM; cf. Ar. čipió be stripped, as a corn plant>",
+        "raw_etymology": "<kipis+uʔ, shaft + NOM; cf. Ar. čipiš be stripped, as a corn plant>",
         "constituent_elements": [
           {
             "morpheme": "kipis",
@@ -118787,7 +118787,7 @@
       "cognates": [
         {
           "language": "Ar",
-          "form": "čipió",
+          "form": "čipiš",
           "gloss": "be stripped, as a corn plant"
         }
       ],
@@ -118829,7 +118829,7 @@
     "headword": "kira",
     "entry_metadata": {
       "page_number": 94,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -118892,7 +118892,7 @@
     "headword": "kiraar",
     "entry_metadata": {
       "page_number": 94,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -118960,7 +118960,7 @@
     "headword": "kiraar",
     "entry_metadata": {
       "page_number": 94,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -120311,7 +120311,7 @@
     "headword": "kiraraah",
     "entry_metadata": {
       "page_number": 95,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -120379,7 +120379,7 @@
     "headword": "kirariiʔuus",
     "entry_metadata": {
       "page_number": 95,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -120447,7 +120447,7 @@
     "headword": "kiraruuc",
     "entry_metadata": {
       "page_number": 95,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -121919,7 +121919,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<ki(ri)kii, i.q. SB kirikee, Ar. tičÝ>",
+        "raw_etymology": "<ki(ri)kii, i.q. SB kirikee, Ar. tičé>",
         "constituent_elements": [
           {
             "morpheme": "ki(ri)kii",
@@ -121937,7 +121937,7 @@
         },
         {
           "language": "Ar",
-          "form": "tičÝ",
+          "form": "tičé",
           "gloss": null
         }
       ],
@@ -124365,7 +124365,7 @@
     "headword": "Kiripasiiʔ",
     "entry_metadata": {
       "page_number": 97,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -124757,7 +124757,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "i.q. SB kiriwis, Ar. čiwinió; cf. iriwis be across",
+        "raw_etymology": "i.q. SB kiriwis, Ar. čiwiniš; cf. iriwis be across",
         "constituent_elements": [],
         "literal_translation": null
       },
@@ -124769,7 +124769,7 @@
         },
         {
           "language": "Ar",
-          "form": "čiwinió",
+          "form": "čiwiniš",
           "gloss": null
         },
         {
@@ -124888,7 +124888,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "kiriwis+kii, be deceitful + TRANS; i.q. SB kiriwiskee, Ar. čiwinióčee",
+        "raw_etymology": "kiriwis+kii, be deceitful + TRANS; i.q. SB kiriwiskee, Ar. čiwiniščee",
         "constituent_elements": [
           {
             "morpheme": "kiriwis",
@@ -124911,7 +124911,7 @@
         },
         {
           "language": "Ar",
-          "form": "čiwinióčee",
+          "form": "čiwiniščee",
           "gloss": null
         }
       ],
@@ -125809,7 +125809,7 @@
       "continues_to_next_page": false
     },
     "part_I": {
-      "stem_preverb": null,
+      "stem_preverb": "[+ i-]",
       "phonetic_form": "[•kɪ-sɪ{k/t}•]",
       "grammatical_info": {
         "grammatical_class": "VI",
@@ -126056,7 +126056,7 @@
     "headword": "kisikitkaa",
     "entry_metadata": {
       "page_number": 98,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -126119,7 +126119,7 @@
     "headword": "kisikitkuukuʔuʔ",
     "entry_metadata": {
       "page_number": 98,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -126198,7 +126198,7 @@
     "headword": "kisit",
     "entry_metadata": {
       "page_number": 98,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -126260,7 +126260,7 @@
     "headword": "kisu",
     "entry_metadata": {
       "page_number": 98,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -126312,7 +126312,7 @@
     "headword": "kisuʔaar",
     "entry_metadata": {
       "page_number": 98,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -127212,7 +127212,7 @@
         },
         {
           "language": "Ar",
-          "form": "iskačitahiió",
+          "form": "iskačitahiiš",
           "gloss": null
         }
       ],
@@ -128018,7 +128018,7 @@
     "headword": "Kitkahaahki",
     "entry_metadata": {
       "page_number": 99,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -128043,7 +128043,7 @@
           },
           {
             "form_type": "comb.",
-            "form": "Kitka haah-"
+            "form": "Kitkahaah-"
           }
         ]
       },
@@ -128114,7 +128114,7 @@
     "headword": "Kitkahaahkiripacki",
     "entry_metadata": {
       "page_number": 99,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -128177,7 +128177,7 @@
     "headword": "Kitkahaahkisuraariksisuʔ",
     "entry_metadata": {
       "page_number": 99,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -130105,7 +130105,7 @@
     "headword": "kuckiicuʔ",
     "entry_metadata": {
       "page_number": 101,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -132240,7 +132240,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<cf. SB kuurus, Ar. koíRUx boil>",
+        "raw_etymology": "<cf. SB kuurus, Ar. koóRUx boil>",
         "constituent_elements": [],
         "literal_translation": null
       },
@@ -132252,7 +132252,7 @@
         },
         {
           "language": "Ar",
-          "form": "koíRUx",
+          "form": "koóRUx",
           "gloss": "boil"
         }
       ],
@@ -132399,7 +132399,7 @@
     "headword": "kurukskaatiit",
     "entry_metadata": {
       "page_number": 102,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -132457,7 +132457,7 @@
     "headword": "kurukspahat",
     "entry_metadata": {
       "page_number": 102,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -132515,7 +132515,7 @@
     "headword": "kurukstaakaa",
     "entry_metadata": {
       "page_number": 102,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -133827,7 +133827,7 @@
     "headword": "kusihwicat",
     "entry_metadata": {
       "page_number": 103,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -134288,6 +134288,69 @@
       "continues_to_next_page": false
     },
     "part_I": {
+      "stem_preverb": null,
+      "phonetic_form": "[•kʊ-sɪ-saa(r)•]",
+      "grammatical_info": {
+        "grammatical_class": "VI",
+        "verb_class": "(1-i)",
+        "additional_forms": []
+      },
+      "glosses": [
+        {
+          "number": null,
+          "definition": "play.",
+          "usage_notes": "(impf. only)"
+        }
+      ],
+      "etymology": {
+        "raw_etymology": "kusis+aar, become lively",
+        "constituent_elements": [
+          {
+            "morpheme": "kusis",
+            "gloss": "lively",
+            "morpheme_type": null
+          },
+          {
+            "morpheme": "aar",
+            "gloss": "become",
+            "morpheme_type": null
+          }
+        ],
+        "literal_translation": "become lively"
+      },
+      "cognates": [],
+      "simplified_pronunciation": "koo-sih-sah(d)"
+    },
+    "part_II": {
+      "paradigmatic_forms": {
+        "form_1": null,
+        "form_2": null,
+        "form_3": "tikusisaariʔ",
+        "form_4": "iriirakusisaari",
+        "form_5": "tikusisaarista",
+        "additional_forms": []
+      },
+      "examples": []
+    },
+    "compound_structure": {
+      "has_null_stem": false,
+      "preverb": null,
+      "verb_stem": null,
+      "noun": null
+    },
+    "derived_stems": [],
+    "entry_id": "SK-kusisaar-p103-4273",
+    "normalized_form": "kusisâr"
+  },
+  {
+    "headword": "kusisaar",
+    "entry_metadata": {
+      "page_number": 103,
+      "column": "right",
+      "continues_from_previous_page": false,
+      "continues_to_next_page": false
+    },
+    "part_I": {
       "stem_preverb": "(ir...)",
       "phonetic_form": "[•kʊ-sɪ-saa(r)•]",
       "grammatical_info": {
@@ -134634,7 +134697,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<paariis+uʔ, hunter + NOM; i.q. SB paareesuʔ; cf. Ar. paaniíóuʔ hunting party>",
+        "raw_etymology": "<paariis+uʔ, hunter + NOM; i.q. SB paareesuʔ; cf. Ar. paaniíšuʔ hunting party>",
         "constituent_elements": [
           {
             "morpheme": "paariis",
@@ -134657,7 +134720,7 @@
         },
         {
           "language": "Ar",
-          "form": "paaniíóuʔ",
+          "form": "paaniíšuʔ",
           "gloss": "hunting party"
         }
       ],
@@ -134914,7 +134977,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<waarur+his, blow (into), i.e., inflate + PERF; cf. Ar. waanun blow on; neswaanuníóuʔ large intestine casing>",
+        "raw_etymology": "<waarur+his, blow (into), i.e., inflate + PERF; cf. Ar. waanun blow on; neswaanuníšuʔ large intestine casing>",
         "constituent_elements": [
           {
             "morpheme": "waarur",
@@ -134937,7 +135000,7 @@
         },
         {
           "language": "Ar",
-          "form": "neswaanuníóuʔ",
+          "form": "neswaanuníšuʔ",
           "gloss": "large intestine casing"
         }
       ],
@@ -135475,7 +135538,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<waatis+uʔ, line + NOM; cf. Ar. waatíóuʔ thread>",
+        "raw_etymology": "<waatis+uʔ, line + NOM; cf. Ar. waatíšuʔ thread>",
         "constituent_elements": [
           {
             "morpheme": "waatis",
@@ -135493,7 +135556,7 @@
       "cognates": [
         {
           "language": "Ar",
-          "form": "waatíóuʔ",
+          "form": "waatíšuʔ",
           "gloss": "thread"
         }
       ],
@@ -135550,7 +135613,7 @@
     "headword": "paatkariis",
     "entry_metadata": {
       "page_number": 107,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -135570,7 +135633,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<waat+kariis, awkward dove; i.q. Ar. wátó>",
+        "raw_etymology": "<waat+kariis, awkward dove; i.q. Ar. wátš>",
         "constituent_elements": [
           {
             "morpheme": "waat",
@@ -135588,7 +135651,7 @@
       "cognates": [
         {
           "language": "Ar",
-          "form": "wátó",
+          "form": "wátš",
           "gloss": null
         }
       ],
@@ -137417,7 +137480,7 @@
     "headword": "pahuruʔ",
     "entry_metadata": {
       "page_number": 108,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -137485,7 +137548,7 @@
     "headword": "pahuruʔ raarikawaawi",
     "entry_metadata": {
       "page_number": 108,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -140724,7 +140787,7 @@
     "headword": "paktiku, paktikus",
     "entry_metadata": {
       "page_number": 110,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -140788,7 +140851,7 @@
     "headword": "pakucki",
     "entry_metadata": {
       "page_number": 110,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -140851,7 +140914,7 @@
     "headword": "pakuckucuuʔ",
     "entry_metadata": {
       "page_number": 110,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -140914,7 +140977,7 @@
     "headword": "pakuhcuʔ",
     "entry_metadata": {
       "page_number": 110,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -140988,7 +141051,7 @@
     "headword": "pakuhuuruʔ",
     "entry_metadata": {
       "page_number": 110,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -141755,7 +141818,7 @@
       "continues_to_next_page": false
     },
     "part_I": {
-      "stem_preverb": null,
+      "stem_preverb": "[+ruu-, i-]",
       "phonetic_form": "[•pə-rɪ-hɪ{k/t}•]",
       "grammatical_info": {
         "grammatical_class": "VI",
@@ -142603,7 +142666,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<wasaasi, from Osage waüáüe, their self-designation>",
+        "raw_etymology": "<wasaasi, from Osage wažáže, their self-designation>",
         "constituent_elements": [
           {
             "morpheme": "wasaasi",
@@ -143057,7 +143120,7 @@
     "headword": "paturikat",
     "entry_metadata": {
       "page_number": 111,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -143120,7 +143183,7 @@
     "headword": "piʔaakis",
     "entry_metadata": {
       "page_number": 111,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -143140,7 +143203,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<piʔaa+kis, hawk + DIM; cf. Ar. píʔaʔ hawk, maturing eagle, piʔaátó young hawk, small hawk, young eagle>",
+        "raw_etymology": "<piʔaa+kis, hawk + DIM; cf. Ar. píʔaʔ hawk, maturing eagle, piʔaátš young hawk, small hawk, young eagle>",
         "constituent_elements": [
           {
             "morpheme": "piʔaa",
@@ -143163,7 +143226,7 @@
         },
         {
           "language": "Ar",
-          "form": "piʔaátó",
+          "form": "piʔaátš",
           "gloss": "young hawk, small hawk, young eagle"
         }
       ],
@@ -145277,7 +145340,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<wiita+isut+kis, man + isut +  DIM; i.q. SB piiteesutki, Ar. wiiteeóútó>",
+        "raw_etymology": "<wiita+isut+kis, man + isut +  DIM; i.q. SB piiteesutki, Ar. wiiteešútš>",
         "constituent_elements": [
           {
             "morpheme": "wiita",
@@ -145305,7 +145368,7 @@
         },
         {
           "language": "Ar",
-          "form": "wiiteeóútó",
+          "form": "wiiteešútš",
           "gloss": null
         }
       ],
@@ -145457,7 +145520,7 @@
     "headword": "piraʔa",
     "entry_metadata": {
       "page_number": 113,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -145520,7 +145583,7 @@
     "headword": "piraah",
     "entry_metadata": {
       "page_number": 113,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -145583,7 +145646,7 @@
     "headword": "piraahcuʔ, ritpiraahcuʔ",
     "entry_metadata": {
       "page_number": 113,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -145651,7 +145714,7 @@
     "headword": "piraahiriʔ",
     "entry_metadata": {
       "page_number": 113,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -145714,7 +145777,7 @@
     "headword": "piraarik",
     "entry_metadata": {
       "page_number": 113,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -145782,7 +145845,7 @@
     "headword": "pirahuuruʔ",
     "entry_metadata": {
       "page_number": 113,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -145865,7 +145928,7 @@
     "headword": "pirakus",
     "entry_metadata": {
       "page_number": 113,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -147385,7 +147448,7 @@
     "headword": "ra, raa",
     "entry_metadata": {
       "page_number": 114,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -148674,7 +148737,7 @@
     "headword": "raaʔiitusiir",
     "entry_metadata": {
       "page_number": 115,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -148737,7 +148800,7 @@
     "headword": "raaʔiitustaʔiir",
     "entry_metadata": {
       "page_number": 115,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -148800,7 +148863,7 @@
     "headword": "raaʔiitustaʔuk",
     "entry_metadata": {
       "page_number": 115,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -148858,7 +148921,7 @@
     "headword": "raaʔiitustarahkiskaraʔuk",
     "entry_metadata": {
       "page_number": 115,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -149130,7 +149193,7 @@
       "continues_to_next_page": false
     },
     "part_I": {
-      "stem_preverb": "(ut...)",
+      "stem_preverb": "(ut...) [+ruu-, i-]",
       "phonetic_form": "[•raa-ʔii-tʊ-suu•]",
       "grammatical_info": {
         "grammatical_class": "VI",
@@ -150117,7 +150180,7 @@
     "headword": "raaciksta",
     "entry_metadata": {
       "page_number": 116,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -151574,7 +151637,7 @@
     "headword": "raahiwaar",
     "entry_metadata": {
       "page_number": 117,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -152792,14 +152855,14 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "cf. Ar. naahuuneÝʔ far off",
+        "raw_etymology": "cf. Ar. naahuuneéʔ far off",
         "constituent_elements": [],
         "literal_translation": null
       },
       "cognates": [
         {
           "language": "Ar",
-          "form": "naahuuneÝʔ",
+          "form": "naahuuneéʔ",
           "gloss": "far off"
         }
       ],
@@ -153046,7 +153109,7 @@
     "headword": "raahuuwicaks",
     "entry_metadata": {
       "page_number": 118,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -154437,7 +154500,7 @@
     "headword": "raakickuusuʔ",
     "entry_metadata": {
       "page_number": 119,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -154516,7 +154579,7 @@
     "headword": "raakii",
     "entry_metadata": {
       "page_number": 119,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -156004,7 +156067,7 @@
     "headword": "raakusiʔ",
     "entry_metadata": {
       "page_number": 120,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -156062,7 +156125,7 @@
     "headword": "raakusik",
     "entry_metadata": {
       "page_number": 120,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -157473,7 +157536,7 @@
     "headword": "raaraacikstaʔu",
     "entry_metadata": {
       "page_number": 121,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -158693,7 +158756,7 @@
     "headword": "raaratawuh",
     "entry_metadata": {
       "page_number": 122,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -159286,7 +159349,7 @@
         "form_2": "tiraariihaʔac",
         "form_3": null,
         "form_4": "iriiraraariihaacu",
-        "form_5": "tiraariihaacuksta",
+        "form_5": "tiraariihacuksta",
         "additional_forms": []
       },
       "examples": []
@@ -159931,14 +159994,14 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<i.q. Ar. raanihtió>",
+        "raw_etymology": "<i.q. Ar. raanihtiš>",
         "constituent_elements": [],
         "literal_translation": null
       },
       "cognates": [
         {
           "language": "Ar",
-          "form": "raanihtió",
+          "form": "raanihtiš",
           "gloss": null
         }
       ],
@@ -160036,7 +160099,7 @@
     "headword": "raaripakusuʔ",
     "entry_metadata": {
       "page_number": 123,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -160105,7 +160168,7 @@
     "headword": "raaripakusuʔ raraarikitawi",
     "entry_metadata": {
       "page_number": 123,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -160168,7 +160231,7 @@
     "headword": "raarirahaar",
     "entry_metadata": {
       "page_number": 123,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -160230,7 +160293,7 @@
     "headword": "raaririispuh",
     "entry_metadata": {
       "page_number": 123,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -161933,7 +161996,7 @@
     "headword": "raaruuhcuʔ",
     "entry_metadata": {
       "page_number": 124,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -162017,7 +162080,7 @@
     "headword": "raaruukusuʔ",
     "entry_metadata": {
       "page_number": 124,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -163363,7 +163426,7 @@
     "headword": "raatiihak",
     "entry_metadata": {
       "page_number": 125,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -163436,7 +163499,7 @@
     "headword": "raatiihuraʔuk",
     "entry_metadata": {
       "page_number": 125,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -164648,7 +164711,7 @@
     "headword": "raawarii",
     "entry_metadata": {
       "page_number": 126,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -164834,7 +164897,7 @@
         "additional_forms": [
           {
             "form_type": "comb.",
-            "form": "raawaruhki- si-"
+            "form": "raawaruhkisi-"
           }
         ]
       },
@@ -165395,7 +165458,7 @@
       "continues_to_next_page": false
     },
     "part_I": {
-      "stem_preverb": null,
+      "stem_preverb": "[+ ruu-, i-]",
       "phonetic_form": "[•raa-wi-ʔuu•]",
       "grammatical_info": {
         "grammatical_class": "VI",
@@ -165676,7 +165739,7 @@
     "headword": "raawihaakaraaʔiitusuʔ",
     "entry_metadata": {
       "page_number": 127,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -165738,7 +165801,7 @@
     "headword": "raawihak",
     "entry_metadata": {
       "page_number": 127,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -165790,7 +165853,7 @@
     "headword": "raawihak",
     "entry_metadata": {
       "page_number": 127,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -168248,7 +168311,7 @@
       "continues_to_next_page": false
     },
     "part_I": {
-      "stem_preverb": "(ut...)",
+      "stem_preverb": "(ut...) [i-]",
       "phonetic_form": "[•raa-wi-ta•]",
       "grammatical_info": {
         "grammatical_class": "VL",
@@ -168717,7 +168780,7 @@
     "headword": "racahtuʔ",
     "entry_metadata": {
       "page_number": 129,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -171626,7 +171689,7 @@
     "headword": "rahuhkaapaakis",
     "entry_metadata": {
       "page_number": 132,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -172018,7 +172081,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "rahuraar+kis, animal + DIM; i.q. SB rahruraahki, Ar. NAhnunaáhtó",
+        "raw_etymology": "rahuraar+kis, animal + DIM; i.q. SB rahruraahki, Ar. NAhnunaáhtš",
         "constituent_elements": [
           {
             "morpheme": "rahuraar",
@@ -172041,7 +172104,7 @@
         },
         {
           "language": "Ar",
-          "form": "NAhnunaáhtó",
+          "form": "NAhnunaáhtš",
           "gloss": null
         }
       ],
@@ -174550,7 +174613,7 @@
     "headword": "rakasis",
     "entry_metadata": {
       "page_number": 134,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -174619,7 +174682,7 @@
     "headword": "rakataatuʔ",
     "entry_metadata": {
       "page_number": 134,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -174693,7 +174756,7 @@
     "headword": "rakatuusuʔ",
     "entry_metadata": {
       "page_number": 134,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -174777,7 +174840,7 @@
     "headword": "rakawicaku",
     "entry_metadata": {
       "page_number": 134,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -174840,7 +174903,7 @@
     "headword": "rakcaakarikuku",
     "entry_metadata": {
       "page_number": 134,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -174903,7 +174966,7 @@
     "headword": "rakcaku",
     "entry_metadata": {
       "page_number": 134,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -176050,14 +176113,14 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<cf. Ar. nátó grandchildren, atšnátó my grandchild, anátó your grandchild>",
+        "raw_etymology": "<cf. Ar. nátš grandchildren, atⁱnátš my grandchild, anátš your grandchild>",
         "constituent_elements": [],
         "literal_translation": null
       },
       "cognates": [
         {
           "language": "Ar",
-          "form": "nátó",
+          "form": "nátš",
           "gloss": "grandchildren"
         },
         {
@@ -176067,7 +176130,7 @@
         },
         {
           "language": "Ar",
-          "form": "anátó",
+          "form": "anátš",
           "gloss": "your grandchild"
         }
       ],
@@ -176431,7 +176494,7 @@
     "headword": "raktaawiskaaruʔ",
     "entry_metadata": {
       "page_number": 135,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -176507,7 +176570,7 @@
     "headword": "raktahcuʔ",
     "entry_metadata": {
       "page_number": 135,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -176584,7 +176647,7 @@
     "headword": "raktakaawiʔuʔ",
     "entry_metadata": {
       "page_number": 135,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -176640,7 +176703,7 @@
     "headword": "raktapahtuʔ",
     "entry_metadata": {
       "page_number": 135,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -177233,7 +177296,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<rak+rii+kis, grandchild + rii + DIM; cf. Ar. ii-NAhniító her grandchild>",
+        "raw_etymology": "<rak+rii+kis, grandchild + rii + DIM; cf. Ar. ii-NAhniítš her grandchild>",
         "constituent_elements": [
           {
             "morpheme": "rak",
@@ -177256,7 +177319,7 @@
       "cognates": [
         {
           "language": "Ar",
-          "form": "ii-NAhniító",
+          "form": "ii-NAhniítš",
           "gloss": "her grandchild"
         }
       ],
@@ -178344,7 +178407,7 @@
     "headword": "raracarariiruku icataaʔuʔ",
     "entry_metadata": {
       "page_number": 136,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -178396,7 +178459,7 @@
     "headword": "raracawakataku",
     "entry_metadata": {
       "page_number": 136,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -178448,7 +178511,7 @@
     "headword": "raracawaktahu",
     "entry_metadata": {
       "page_number": 136,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -178500,7 +178563,7 @@
     "headword": "rarahkirariiʔuusu",
     "entry_metadata": {
       "page_number": 136,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -179861,7 +179924,7 @@
     "headword": "rariiraʔuk",
     "entry_metadata": {
       "page_number": 137,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -180048,7 +180111,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "raar+riis (ut...), PL + be mixed; i.q. wiriis (ut...); Ar. čiineeó (ut...) be mixed in liquid",
+        "raw_etymology": "raar+riis (ut...), PL + be mixed; i.q. wiriis (ut...); Ar. čiineeš (ut...) be mixed in liquid",
         "constituent_elements": [
           {
             "morpheme": "raar",
@@ -181560,7 +181623,7 @@
     "headword": "rasahat",
     "entry_metadata": {
       "page_number": 138,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -183252,7 +183315,7 @@
     "headword": "rickuusuʔ",
     "entry_metadata": {
       "page_number": 139,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -183310,7 +183373,7 @@
     "headword": "rictaakawihiriʔ",
     "entry_metadata": {
       "page_number": 139,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -183597,7 +183660,7 @@
       "continues_to_next_page": false
     },
     "part_I": {
-      "stem_preverb": "(ir...)",
+      "stem_preverb": "(ir...) [+ ruu-, i-]",
       "phonetic_form": "[•rɪ-hɪ{k/t}•]",
       "grammatical_info": {
         "grammatical_class": "VI",
@@ -184486,7 +184549,7 @@
         },
         {
           "language": "Ar",
-          "form": "neesító",
+          "form": "neesítš",
           "gloss": null
         }
       ],
@@ -184617,7 +184680,7 @@
     "headword": "riicikiripacki",
     "entry_metadata": {
       "page_number": 140,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -184669,7 +184732,7 @@
     "headword": "riicikucuuʔ",
     "entry_metadata": {
       "page_number": 140,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -184737,7 +184800,7 @@
     "headword": "riicikuukuʔuʔ",
     "entry_metadata": {
       "page_number": 140,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -185075,7 +185138,7 @@
         "form_1": "tatuuhiicis",
         "form_2": "tuuhiiicis",
         "form_3": "tuuhiiciisuʔ",
-        "form_4": "iriruuhicis",
+        "form_4": "iriruuhiicis",
         "form_5": "tuuhiicisista",
         "additional_forms": []
       },
@@ -185477,7 +185540,7 @@
         },
         {
           "language": "Ar",
-          "form": "neeskúhtó",
+          "form": "neeskúhtš",
           "gloss": null
         }
       ],
@@ -185539,7 +185602,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<riic+uʔ, intestine + NOM; i.q. SB reecuʔ, Ar. neÝsuʔ>",
+        "raw_etymology": "<riic+uʔ, intestine + NOM; i.q. SB reecuʔ, Ar. neésuʔ>",
         "constituent_elements": [
           {
             "morpheme": "riic",
@@ -185562,7 +185625,7 @@
         },
         {
           "language": "Ar",
-          "form": "neÝsuʔ",
+          "form": "neésuʔ",
           "gloss": null
         }
       ],
@@ -186491,7 +186554,7 @@
     "headword": "riikactikiisuʔ",
     "entry_metadata": {
       "page_number": 141,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -187040,7 +187103,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<riiks-+uʔ, arrow + NOM; i.q. SB riiksuʔ, Ar. niíóuʔ>",
+        "raw_etymology": "<riiks-+uʔ, arrow + NOM; i.q. SB riiksuʔ, Ar. niíšuʔ>",
         "constituent_elements": [
           {
             "morpheme": "riiks-",
@@ -187063,7 +187126,7 @@
         },
         {
           "language": "Ar",
-          "form": "niíóuʔ",
+          "form": "niíšuʔ",
           "gloss": null
         }
       ],
@@ -187140,7 +187203,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<riiks+uʔ, unshelled corn + NOM; i.q. SB reeksuʔ, Ar. neÝóuʔ>",
+        "raw_etymology": "<riiks+uʔ, unshelled corn + NOM; i.q. SB reeksuʔ, Ar. neéšuʔ>",
         "constituent_elements": [
           {
             "morpheme": "riiks",
@@ -188106,7 +188169,7 @@
     "headword": "ripak",
     "entry_metadata": {
       "page_number": 145,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -188174,7 +188237,7 @@
     "headword": "ripihaahpiru",
     "entry_metadata": {
       "page_number": 145,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -188242,7 +188305,7 @@
     "headword": "ripiikickuusuʔ",
     "entry_metadata": {
       "page_number": 145,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -188316,7 +188379,7 @@
     "headword": "ripiikiicuʔ",
     "entry_metadata": {
       "page_number": 145,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -188401,7 +188464,7 @@
     "headword": "ripiiktahca",
     "entry_metadata": {
       "page_number": 145,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -189278,7 +189341,7 @@
         "form_1": null,
         "form_2": "sitiriwaawaktiit",
         "form_3": "sitiriwaawaktiikuʔ",
-        "form_4": "iriisirarariwaawaktit",
+        "form_4": "iriisirariwaawaktit",
         "form_5": "sitiriwaawaktiksta",
         "additional_forms": []
       },
@@ -189812,7 +189875,7 @@
     "headword": "riwaks",
     "entry_metadata": {
       "page_number": 147,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -189861,7 +189924,7 @@
     "headword": "riwakta/taa",
     "entry_metadata": {
       "page_number": 147,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -189973,7 +190036,7 @@
         "form_1": "tahiwaktiit",
         "form_2": "tiriwaktiit",
         "form_3": "tiriwaktiikuʔ",
-        "form_4": "iriirarariwaktit",
+        "form_4": "iriirariwaktit",
         "form_5": "tiriwaktiksta",
         "additional_forms": []
       },
@@ -191379,7 +191442,7 @@
     "headword": "rutaaktaarapitaahaku",
     "entry_metadata": {
       "page_number": 148,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -191450,7 +191513,7 @@
     "headword": "rutaaktahciihkuku",
     "entry_metadata": {
       "page_number": 148,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -191521,7 +191584,7 @@
     "headword": "rutkaatiit",
     "entry_metadata": {
       "page_number": 148,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -193233,7 +193296,7 @@
     "headword": "ruuhurahak",
     "entry_metadata": {
       "page_number": 149,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -193506,7 +193569,7 @@
       "continues_to_next_page": false
     },
     "part_I": {
-      "stem_preverb": "(ut...)",
+      "stem_preverb": "(ut...) [+ riku-]",
       "phonetic_form": "[•ruu-hʊ-ruu•]",
       "grammatical_info": {
         "grammatical_class": "VI",
@@ -194400,7 +194463,7 @@
     "headword": "ruuskaa",
     "entry_metadata": {
       "page_number": 150,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -194479,7 +194542,7 @@
     "headword": "ruuskawarik",
     "entry_metadata": {
       "page_number": 150,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -194547,7 +194610,7 @@
     "headword": "ruuskiriʔis",
     "entry_metadata": {
       "page_number": 150,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -194621,7 +194684,7 @@
     "headword": "ruuskuukuʔuʔ",
     "entry_metadata": {
       "page_number": 150,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -194695,7 +194758,7 @@
     "headword": "ruuskuukukaawiʔuʔ",
     "entry_metadata": {
       "page_number": 150,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -194763,7 +194826,7 @@
     "headword": "ruusuʔ",
     "entry_metadata": {
       "page_number": 150,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -194832,7 +194895,7 @@
     "headword": "ruuwaʔas-i",
     "entry_metadata": {
       "page_number": 150,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -195919,19 +195982,19 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<sahii, a widespread designation borrowed into many plains languages; cf. Lakota óahiyela, Fox óaayeena; SB sahe, Ar. óaahÝʔ; óaaheerákAt among the Cheyenne>",
+        "raw_etymology": "<sahii, a widespread designation borrowed into many plains languages; cf. Lakota šahiyela, Fox šaayeena; SB sahe, Ar. šaahéʔ; šaaheerákAt among the Cheyenne>",
         "constituent_elements": [],
         "literal_translation": null
       },
       "cognates": [
         {
           "language": "Lakota",
-          "form": "óahiyela",
+          "form": "šahiyela",
           "gloss": null
         },
         {
           "language": "Fox",
-          "form": "óaayeena",
+          "form": "šaayeena",
           "gloss": null
         },
         {
@@ -195941,12 +196004,12 @@
         },
         {
           "language": "Ar",
-          "form": "óaahÝʔ",
+          "form": "šaahéʔ",
           "gloss": null
         },
         {
           "language": "Cheyenne",
-          "form": "óaaheerákAt",
+          "form": "šaaheerákAt",
           "gloss": "among the Cheyenne"
         }
       ],
@@ -196119,7 +196182,7 @@
     "headword": "sakuhkaʔiirus",
     "entry_metadata": {
       "page_number": 151,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -196208,7 +196271,7 @@
     "headword": "sakuhkiraar",
     "entry_metadata": {
       "page_number": 151,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -196271,7 +196334,7 @@
     "headword": "sakuhkiriku",
     "entry_metadata": {
       "page_number": 151,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -197931,7 +197994,7 @@
     "headword": "sihwiiʔaʔ",
     "entry_metadata": {
       "page_number": 152,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -197983,7 +198046,7 @@
     "headword": "siistaatuʔ",
     "entry_metadata": {
       "page_number": 152,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -198249,7 +198312,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "siis+tit+waaht, awl + eye (as of needle) + waaht; i.q. Ar. óiótItwaáʔ",
+        "raw_etymology": "siis+tit+waaht, awl + eye (as of needle) + waaht; i.q. Ar. šištItwaáʔ",
         "constituent_elements": [
           {
             "morpheme": "siis",
@@ -198272,7 +198335,7 @@
       "cognates": [
         {
           "language": "Ar",
-          "form": "óiótItwaáʔ",
+          "form": "šištItwaáʔ",
           "gloss": null
         }
       ],
@@ -199180,7 +199243,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "i.q. SB sihuks, Ar. óíhUx",
+        "raw_etymology": "i.q. SB sihuks, Ar. šíhUx",
         "constituent_elements": [],
         "literal_translation": null
       },
@@ -199192,7 +199255,7 @@
         },
         {
           "language": "Ar",
-          "form": "óíhUx",
+          "form": "šíhUx",
           "gloss": null
         }
       ],
@@ -199372,7 +199435,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "i.q. SB suuhuriʔ, Ar. óuúhuniʔ",
+        "raw_etymology": "i.q. SB suuhuriʔ, Ar. šuúhuniʔ",
         "constituent_elements": [],
         "literal_translation": null
       },
@@ -199384,7 +199447,7 @@
         },
         {
           "language": "Ar",
-          "form": "óuúhuniʔ",
+          "form": "šuúhuniʔ",
           "gloss": null
         }
       ],
@@ -199938,7 +200001,7 @@
     "headword": "taʔuuc/uc-",
     "entry_metadata": {
       "page_number": 153,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -200001,7 +200064,7 @@
     "headword": "taʔuut",
     "entry_metadata": {
       "page_number": 153,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -200044,7 +200107,7 @@
     "headword": "taʔuut",
     "entry_metadata": {
       "page_number": 153,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -200098,7 +200161,7 @@
     "headword": "taʔuutuʔ",
     "entry_metadata": {
       "page_number": 153,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -201239,7 +201302,7 @@
     "headword": "tahaʔiirariihk",
     "entry_metadata": {
       "page_number": 155,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -201302,7 +201365,7 @@
     "headword": "tahaakaahc",
     "entry_metadata": {
       "page_number": 155,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -201371,7 +201434,7 @@
     "headword": "tahaakaahcik",
     "entry_metadata": {
       "page_number": 155,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -201559,7 +201622,7 @@
       "continues_to_next_page": false
     },
     "part_I": {
-      "stem_preverb": "(u t...)",
+      "stem_preverb": "(ut...)",
       "phonetic_form": "[tə-haa-rɪ-wɪ•(ʊt...)]",
       "grammatical_info": {
         "grammatical_class": "LOC",
@@ -201852,7 +201915,7 @@
     "part_II": {
       "paradigmatic_forms": {
         "form_1": null,
-        "form_2": "tithat",
+        "form_2": "titahat",
         "form_3": null,
         "form_4": "iriiratahat",
         "form_5": "titahaksta",
@@ -202345,7 +202408,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "i.q. SB tahkuki, tahkutireʔeʔ ; cf. Ar. tAhkútó errand man, server, Ki. tahku coyote",
+        "raw_etymology": "i.q. SB tahkuki, tahkutireʔeʔ ; cf. Ar. tAhkútš errand man, server, Ki. tahku coyote",
         "constituent_elements": [],
         "literal_translation": null
       },
@@ -202357,7 +202420,7 @@
         },
         {
           "language": "Ar",
-          "form": "tAhkútó",
+          "form": "tAhkútš",
           "gloss": "errand man, server"
         },
         {
@@ -202816,7 +202879,7 @@
     "headword": "tahuriipiihkiriks",
     "entry_metadata": {
       "page_number": 156,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -202868,7 +202931,7 @@
     "headword": "tahuriipiiruʔ",
     "entry_metadata": {
       "page_number": 156,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -202958,7 +203021,7 @@
     "headword": "tahuriipuh",
     "entry_metadata": {
       "page_number": 156,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -203010,7 +203073,7 @@
     "headword": "tahuriwi-",
     "entry_metadata": {
       "page_number": 156,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -203073,7 +203136,7 @@
     "headword": "tahuriwiitik",
     "entry_metadata": {
       "page_number": 156,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -203125,7 +203188,7 @@
     "headword": "tahuuruʔ",
     "entry_metadata": {
       "page_number": 156,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -203214,7 +203277,7 @@
     "headword": "tahuurukatk",
     "entry_metadata": {
       "page_number": 156,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -204131,7 +204194,7 @@
     "headword": "takaruus",
     "entry_metadata": {
       "page_number": 157,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -204508,7 +204571,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "i.q. SB takee, Ar. tačeÝ",
+        "raw_etymology": "i.q. SB takee, Ar. tačeé",
         "constituent_elements": [],
         "literal_translation": null
       },
@@ -204520,7 +204583,7 @@
         },
         {
           "language": "Ar",
-          "form": "tačeÝ",
+          "form": "tačeé",
           "gloss": null
         }
       ],
@@ -205481,7 +205544,7 @@
     "headword": "takuritkaaʔa",
     "entry_metadata": {
       "page_number": 158,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -205550,7 +205613,7 @@
     "headword": "takus-",
     "entry_metadata": {
       "page_number": 158,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -207074,7 +207137,7 @@
     "headword": "taraa",
     "entry_metadata": {
       "page_number": 159,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -207148,7 +207211,7 @@
     "headword": "taraahki",
     "entry_metadata": {
       "page_number": 159,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -208699,7 +208762,7 @@
     "headword": "tarahkisiciisat",
     "entry_metadata": {
       "page_number": 160,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -210055,7 +210118,7 @@
     "headword": "Tarikawa",
     "entry_metadata": {
       "page_number": 161,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -210128,7 +210191,7 @@
     "headword": "tariktaʔuʔ",
     "entry_metadata": {
       "page_number": 161,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -210203,7 +210266,7 @@
     "headword": "tarikuc",
     "entry_metadata": {
       "page_number": 161,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -210255,7 +210318,7 @@
     "headword": "taripas",
     "entry_metadata": {
       "page_number": 161,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -210307,7 +210370,7 @@
     "headword": "taripastaʔuk",
     "entry_metadata": {
       "page_number": 161,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -211602,7 +211665,7 @@
     "headword": "tawaa",
     "entry_metadata": {
       "page_number": 162,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -211671,7 +211734,7 @@
     "headword": "tawaakaraʔuk",
     "entry_metadata": {
       "page_number": 162,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -211744,7 +211807,7 @@
     "headword": "Tawaakaruuʔ",
     "entry_metadata": {
       "page_number": 162,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -211812,7 +211875,7 @@
     "headword": "tawaarik",
     "entry_metadata": {
       "page_number": 162,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -211885,7 +211948,7 @@
     "headword": "tawaas",
     "entry_metadata": {
       "page_number": 162,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -212037,7 +212100,7 @@
       "continues_to_next_page": false
     },
     "part_I": {
-      "stem_preverb": null,
+      "stem_preverb": "[+ ruu-]",
       "phonetic_form": "[•ta-wa-ka-ʔu•]",
       "grammatical_info": {
         "grammatical_class": "VI",
@@ -213236,7 +213299,7 @@
     "headword": "tawiʔis",
     "entry_metadata": {
       "page_number": 163,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -213595,7 +213658,7 @@
     "normalized_form": "tawihkihiri'"
   },
   {
-    "headword": "tawihuhtawii (ut...)",
+    "headword": "tawihuhtawii",
     "entry_metadata": {
       "page_number": 163,
       "column": "right",
@@ -215706,7 +215769,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<i.q. SB teekskurit, Ar. teókúNIt>",
+        "raw_etymology": "<i.q. SB teekskurit, Ar. teškúNIt>",
         "constituent_elements": [],
         "literal_translation": null
       },
@@ -215718,7 +215781,7 @@
         },
         {
           "language": "Ar",
-          "form": "teókúNIt",
+          "form": "teškúNIt",
           "gloss": null
         }
       ],
@@ -216258,7 +216321,7 @@
     "headword": "tiirisa",
     "entry_metadata": {
       "page_number": 165,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -216321,7 +216384,7 @@
     "headword": "tiirisic",
     "entry_metadata": {
       "page_number": 165,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -217312,7 +217375,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "tiraak-+kasii+uʔ, bow sack + NOM; i.q. SB kasiiruʔ, tiraakasii-ruʔ, Ar. tšnaakAxiíʔuʔ",
+        "raw_etymology": "tiraak-+kasii+uʔ, bow sack + NOM; i.q. SB kasiiruʔ, tiraakasii-ruʔ, Ar. tⁱnaakAxiíʔuʔ",
         "constituent_elements": [
           {
             "morpheme": "tiraak-",
@@ -217345,7 +217408,7 @@
         },
         {
           "language": "Ar",
-          "form": "tšnaakAxiíʔuʔ",
+          "form": "tⁱnaakAxiíʔuʔ",
           "gloss": null
         }
       ],
@@ -217901,7 +217964,7 @@
     "headword": "tiraakuʔ",
     "entry_metadata": {
       "page_number": 166,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -217970,7 +218033,7 @@
     "headword": "tiraakucuuʔ",
     "entry_metadata": {
       "page_number": 166,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -218033,7 +218096,7 @@
     "headword": "tiraakuukuʔuʔ",
     "entry_metadata": {
       "page_number": 166,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -218101,7 +218164,7 @@
     "headword": "tirik",
     "entry_metadata": {
       "page_number": 166,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -219807,7 +219870,7 @@
     "headword": "uhaarihaktik",
     "entry_metadata": {
       "page_number": 167,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -221176,7 +221239,7 @@
     "headword": "uhur-",
     "entry_metadata": {
       "page_number": 168,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -222346,7 +222409,7 @@
     "headword": "uhuuhurahak",
     "entry_metadata": {
       "page_number": 169,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -223662,7 +223725,7 @@
     "headword": "ukaʔaatawiʔuʔ, ukaatawiʔuʔ",
     "entry_metadata": {
       "page_number": 170,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -224758,7 +224821,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "uktaka, from Winnebago self-designation hoočÓk, hoočÓgra big voice, prob. through an intermediate Siouan language",
+        "raw_etymology": "uktaka, from Winnebago self-designation hoočąk, hoočągra big voice, prob. through an intermediate Siouan language",
         "constituent_elements": [],
         "literal_translation": null
       },
@@ -224778,7 +224841,7 @@
     "headword": "uktata-",
     "entry_metadata": {
       "page_number": 171,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -224825,7 +224888,7 @@
     "headword": "uktataka-",
     "entry_metadata": {
       "page_number": 171,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -224892,7 +224955,7 @@
     "headword": "uktatakat",
     "entry_metadata": {
       "page_number": 171,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -224953,7 +225016,7 @@
     "headword": "uktawuh",
     "entry_metadata": {
       "page_number": 171,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -226498,7 +226561,7 @@
     "headword": "uukatawi-",
     "entry_metadata": {
       "page_number": 172,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -226577,7 +226640,7 @@
     "headword": "uukawuh",
     "entry_metadata": {
       "page_number": 172,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -227822,7 +227885,7 @@
     "headword": "uuskaraaruʔ",
     "entry_metadata": {
       "page_number": 173,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -227896,7 +227959,7 @@
     "headword": "uuskiicik",
     "entry_metadata": {
       "page_number": 173,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -227964,7 +228027,7 @@
     "headword": "uuskuuʔat",
     "entry_metadata": {
       "page_number": 173,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -228038,7 +228101,7 @@
     "headword": "uuskuut",
     "entry_metadata": {
       "page_number": 173,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -228519,7 +228582,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<uu+tikis, uu + tikis; cf. tiki sonny; Ar. ootító sonny>",
+        "raw_etymology": "<uu+tikis, uu + tikis; cf. tiki sonny; Ar. ootítš sonny>",
         "constituent_elements": [
           {
             "morpheme": "uu",
@@ -228537,7 +228600,7 @@
       "cognates": [
         {
           "language": "Ar",
-          "form": "ootító",
+          "form": "ootítš",
           "gloss": "sonny"
         }
       ],
@@ -229358,7 +229421,7 @@
       "continues_to_next_page": false
     },
     "part_I": {
-      "stem_preverb": "(ut...)",
+      "stem_preverb": "(ut...) [+ raar-]",
       "phonetic_form": "[•waa-ku-ʔət•]",
       "grammatical_info": {
         "grammatical_class": "VT",
@@ -229600,7 +229663,7 @@
     "headword": "waarukstiiraʔuk",
     "entry_metadata": {
       "page_number": 174,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -229712,7 +229775,7 @@
       "continues_to_next_page": false
     },
     "part_I": {
-      "stem_preverb": null,
+      "stem_preverb": "[+ ruu-]",
       "phonetic_form": "[•waa-sə(r)•]",
       "grammatical_info": {
         "grammatical_class": "VI",
@@ -230614,7 +230677,7 @@
     "headword": "wakaarawirihuur",
     "entry_metadata": {
       "page_number": 175,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -230672,12 +230735,12 @@
     "headword": "wakaawiraariks",
     "entry_metadata": {
       "page_number": 175,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
     "part_I": {
-      "stem_preverb": null,
+      "stem_preverb": "[+ i-]",
       "phonetic_form": "[•wə-kaa-wɪ-raa-rɪks•]",
       "grammatical_info": {
         "grammatical_class": "VI",
@@ -230735,7 +230798,7 @@
     "headword": "wakahuutaʔa",
     "entry_metadata": {
       "page_number": 175,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -230955,7 +231018,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<waka+rahiis, voice to be hoarse; cf. Ar. rahiió be hoarse>",
+        "raw_etymology": "<waka+rahiis, voice to be hoarse; cf. Ar. rahiiš be hoarse>",
         "constituent_elements": [
           {
             "morpheme": "waka",
@@ -231420,7 +231483,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<wak+rik.his, voice to be true; i.q. Ar. wahnió; cf. raariks be true (way)>",
+        "raw_etymology": "<wak+rik.his, voice to be true; i.q. Ar. wahniš; cf. raariks be true (way)>",
         "constituent_elements": [
           {
             "morpheme": "wak",
@@ -231438,7 +231501,7 @@
       "cognates": [
         {
           "language": "Ar",
-          "form": "wahnió",
+          "form": "wahniš",
           "gloss": null
         }
       ],
@@ -231449,7 +231512,7 @@
         "form_1": "tatiiwaktiks",
         "form_2": "tiiwaktiks",
         "form_3": "tiiwaktiksuʔ",
-        "form_4": "iririwaktiksa",
+        "form_4": "iririiwaktiksa",
         "form_5": "tiiwaktiksista",
         "additional_forms": []
       },
@@ -232000,7 +232063,7 @@
     "headword": "wakuhtiirariihk",
     "entry_metadata": {
       "page_number": 176,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -233223,7 +233286,7 @@
     "headword": "wararuus",
     "entry_metadata": {
       "page_number": 177,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -234280,7 +234343,7 @@
       "continues_to_next_page": false
     },
     "part_I": {
-      "stem_preverb": null,
+      "stem_preverb": "[+ (ku-, ruu-), i-]",
       "phonetic_form": "[•wi-ʔa{k/t}•]",
       "grammatical_info": {
         "grammatical_class": "VI",
@@ -234537,7 +234600,7 @@
     "headword": "wic-",
     "entry_metadata": {
       "page_number": 178,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -234595,7 +234658,7 @@
     "headword": "wica",
     "entry_metadata": {
       "page_number": 178,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -235732,7 +235795,7 @@
     "normalized_form": "wîčat"
   },
   {
-    "headword": "wiicat k",
+    "headword": "wiicatk",
     "entry_metadata": {
       "page_number": 179,
       "column": "left",
@@ -235876,7 +235939,7 @@
     "headword": "wiihkaraaruʔat",
     "entry_metadata": {
       "page_number": 179,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -235943,7 +236006,7 @@
     "headword": "wiihkawiʔuu",
     "entry_metadata": {
       "page_number": 179,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -236015,7 +236078,7 @@
     "headword": "wiihkitawuh",
     "entry_metadata": {
       "page_number": 179,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -237103,7 +237166,7 @@
     "headword": "witak",
     "entry_metadata": {
       "page_number": 181,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -237152,7 +237215,7 @@
     "headword": "witaktik",
     "entry_metadata": {
       "page_number": 181,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -237210,7 +237273,7 @@
     "headword": "witata-",
     "entry_metadata": {
       "page_number": 181,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -237262,7 +237325,7 @@
     "headword": "Witiʔahuuhaʔu Piiraʔuʔ",
     "entry_metadata": {
       "page_number": 181,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -237313,7 +237376,7 @@
     "headword": "wuu",
     "entry_metadata": {
       "page_number": 181,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -238242,7 +238305,7 @@
     "headword": "a, aa",
     "entry_metadata": {
       "page_number": 349,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -238298,7 +238361,7 @@
     "headword": "aʔas",
     "entry_metadata": {
       "page_number": 349,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -238354,7 +238417,7 @@
     "headword": "aʔiwaahc/waʔac",
     "entry_metadata": {
       "page_number": 349,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -238417,7 +238480,7 @@
     "headword": "aʔiwaahcik",
     "entry_metadata": {
       "page_number": 349,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -238495,7 +238558,7 @@
     "headword": "aʔiwarik",
     "entry_metadata": {
       "page_number": 349,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -238568,7 +238631,7 @@
     "headword": "aʔiwarik",
     "entry_metadata": {
       "page_number": 349,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -238631,7 +238694,7 @@
     "headword": "aʔiwiiʔa",
     "entry_metadata": {
       "page_number": 349,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -238995,64 +239058,6 @@
     "derived_stems": [],
     "entry_id": "SK-aahka-,_haahka--p349-3591",
     "normalized_form": "âhka-, hâhka-"
-  },
-  {
-    "headword": "aakaʔa",
-    "entry_metadata": {
-      "page_number": 351,
-      "column": "left",
-      "continues_from_previous_page": false,
-      "continues_to_next_page": false
-    },
-    "part_I": {
-      "stem_preverb": "(ir...)",
-      "phonetic_form": "[•aa-ka-ʔa•]",
-      "grammatical_info": {
-        "grammatical_class": "INTERJ",
-        "verb_class": null,
-        "additional_forms": []
-      },
-      "glosses": [
-        {
-          "number": null,
-          "definition": "oh! oh my! my!",
-          "usage_notes": null
-        }
-      ],
-      "etymology": {
-        "raw_etymology": "<i.q. iika, uuka>",
-        "constituent_elements": [],
-        "literal_translation": null
-      },
-      "cognates": [],
-      "simplified_pronunciation": "ah-kuh-'uh"
-    },
-    "part_II": {
-      "paradigmatic_forms": {
-        "form_1": null,
-        "form_2": null,
-        "form_3": null,
-        "form_4": null,
-        "form_5": null,
-        "additional_forms": []
-      },
-      "examples": [
-        {
-          "skiri_text": "aakaʔa, karawitasuurasaarariruuhciʔ",
-          "english_translation": "oh my, there were indeed many horses!",
-          "usage_context": null
-        }
-      ]
-    },
-    "compound_structure": {
-      "has_null_stem": false,
-      "preverb": null,
-      "verb_stem": null,
-      "noun": null
-    },
-    "derived_stems": [],
-    "entry_id": "SK-aakaqa-p351-3592",
-    "normalized_form": "âka'a"
   },
   {
     "headword": "aakapahaʔa",
@@ -239551,7 +239556,7 @@
     "headword": "aar iraariʔ",
     "entry_metadata": {
       "page_number": 351,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -239571,7 +239576,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<ar i+raa+riʔ, be friends + his/her same-sex sibling; cf. Ar. siináNI friend, óinaatáNI my friend>",
+        "raw_etymology": "<ar i+raa+riʔ, be friends + his/her same-sex sibling; cf. Ar. siináNI friend, šinaatáNI my friend>",
         "constituent_elements": [
           {
             "morpheme": "ar i",
@@ -239599,7 +239604,7 @@
         },
         {
           "language": "Ar",
-          "form": "óinaatáNI",
+          "form": "šinaatáNI",
           "gloss": "my friend"
         }
       ],
@@ -239630,7 +239635,7 @@
     "headword": "aaraarukaaʔat",
     "entry_metadata": {
       "page_number": 351,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -239709,7 +239714,7 @@
     "headword": "aaracaʔiwuu",
     "entry_metadata": {
       "page_number": 351,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -240990,7 +240995,7 @@
     "headword": "aciksawiʔuusiktik",
     "entry_metadata": {
       "page_number": 352,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -244654,7 +244659,7 @@
     "headword": "akahta",
     "entry_metadata": {
       "page_number": 358,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -246380,7 +246385,7 @@
     "headword": "apitk",
     "entry_metadata": {
       "page_number": 360,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -246463,7 +246468,7 @@
     "headword": "apukaac",
     "entry_metadata": {
       "page_number": 360,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -248277,7 +248282,7 @@
     "headword": "as-i",
     "entry_metadata": {
       "page_number": 362,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -248346,7 +248351,7 @@
     "headword": "asaa-, asa-",
     "entry_metadata": {
       "page_number": 362,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -248419,7 +248424,7 @@
     "headword": "asaac",
     "entry_metadata": {
       "page_number": 362,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -250371,7 +250376,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "asaa+hii, dog + hii; i.q. SB asaaheʔ, Ar. xaahÝʔ",
+        "raw_etymology": "asaa+hii, dog + hii; i.q. SB asaaheʔ, Ar. xaahéʔ",
         "constituent_elements": [],
         "literal_translation": "dog + hii"
       },
@@ -250383,7 +250388,7 @@
         },
         {
           "language": "Ar",
-          "form": "xaahÝʔ",
+          "form": "xaahéʔ",
           "gloss": null
         }
       ],
@@ -250633,7 +250638,7 @@
     "headword": "asataatkatakusuʔ",
     "entry_metadata": {
       "page_number": 363,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -251994,7 +251999,7 @@
     "headword": "awicurihuur",
     "entry_metadata": {
       "page_number": 370,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -252062,7 +252067,7 @@
     "headword": "awicuur",
     "entry_metadata": {
       "page_number": 370,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -252110,7 +252115,7 @@
     "headword": "awicuuruʔ",
     "entry_metadata": {
       "page_number": 370,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -252182,7 +252187,7 @@
     "headword": "awihaʔuukuk",
     "entry_metadata": {
       "page_number": 370,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -252644,7 +252649,7 @@
       "continues_to_next_page": false
     },
     "part_I": {
-      "stem_preverb": null,
+      "stem_preverb": "[+ ruu-, i-]",
       "phonetic_form": "[•a-wi-hu-ra(h)•]",
       "grammatical_info": {
         "grammatical_class": "VL",
@@ -255270,7 +255275,7 @@
     "headword": "hiir",
     "entry_metadata": {
       "page_number": 389,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -255322,7 +255327,7 @@
     "headword": "hiir",
     "entry_metadata": {
       "page_number": 389,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -256586,7 +256591,7 @@
       "continues_to_next_page": false
     },
     "part_I": {
-      "stem_preverb": "(i r...ut...)",
+      "stem_preverb": "(ir...ut...)",
       "phonetic_form": "[•hiit-kə•]",
       "grammatical_info": {
         "grammatical_class": "VT",
@@ -257134,7 +257139,7 @@
     "headword": "hiiwiik",
     "entry_metadata": {
       "page_number": 390,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -257197,7 +257202,7 @@
     "headword": "hikaawat",
     "entry_metadata": {
       "page_number": 390,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -257260,7 +257265,7 @@
     "headword": "hikskawicaku",
     "entry_metadata": {
       "page_number": 390,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -257321,7 +257326,7 @@
     "headword": "hikstaʔa",
     "entry_metadata": {
       "page_number": 390,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -257389,7 +257394,7 @@
     "headword": "hikstaahisuʔ",
     "entry_metadata": {
       "page_number": 390,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -257450,7 +257455,7 @@
     "headword": "hiksuʔ",
     "entry_metadata": {
       "page_number": 390,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -257506,7 +257511,7 @@
     "headword": "hiksuʔ",
     "entry_metadata": {
       "page_number": 390,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -257724,14 +257729,14 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<i.q. Ar. hukís>",
+        "raw_etymology": "<i.q. Ar. hukós>",
         "constituent_elements": [],
         "literal_translation": null
       },
       "cognates": [
         {
           "language": "Ar",
-          "form": "hukís",
+          "form": "hukós",
           "gloss": null
         }
       ],
@@ -258587,7 +258592,7 @@
     "headword": "huukita",
     "entry_metadata": {
       "page_number": 398,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -258645,7 +258650,7 @@
     "headword": "huukita-",
     "entry_metadata": {
       "page_number": 398,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -258707,7 +258712,7 @@
     "headword": "huukitahaahiriʔ",
     "entry_metadata": {
       "page_number": 398,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -260079,7 +260084,7 @@
     "headword": "iikaarik",
     "entry_metadata": {
       "page_number": 408,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -260142,7 +260147,7 @@
     "headword": "iikahaahiriʔ",
     "entry_metadata": {
       "page_number": 408,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -260205,7 +260210,7 @@
     "headword": "iikakus",
     "entry_metadata": {
       "page_number": 408,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -261573,7 +261578,7 @@
     "headword": "ka-",
     "entry_metadata": {
       "page_number": 418,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -261632,7 +261637,7 @@
     "headword": "ka-",
     "entry_metadata": {
       "page_number": 418,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -261686,7 +261691,7 @@
     "headword": "ka",
     "entry_metadata": {
       "page_number": 418,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -261734,7 +261739,7 @@
     "headword": "kaʔas",
     "entry_metadata": {
       "page_number": 418,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -261782,7 +261787,7 @@
     "headword": "kaʔat",
     "entry_metadata": {
       "page_number": 418,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -261861,7 +261866,7 @@
     "headword": "kaʔiihcuʔ",
     "entry_metadata": {
       "page_number": 418,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -263567,7 +263572,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<kic+tuuks+uʔ, water + tuuks + NOM; cf. Ar. tstoíxuʔ water>",
+        "raw_etymology": "<kic+tuuks+uʔ, water + tuuks + NOM; cf. Ar. tstoóxuʔ water>",
         "constituent_elements": [
           {
             "morpheme": "kic",
@@ -263590,7 +263595,7 @@
       "cognates": [
         {
           "language": "Ar",
-          "form": "tstoíxuʔ",
+          "form": "tstoóxuʔ",
           "gloss": "water"
         }
       ],
@@ -263867,7 +263872,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<i.q. SB kicuucis, Ar. čituusió>",
+        "raw_etymology": "<i.q. SB kicuucis, Ar. čituusiš>",
         "constituent_elements": [],
         "literal_translation": null
       },
@@ -263879,7 +263884,7 @@
         },
         {
           "language": "Ar",
-          "form": "čituusió",
+          "form": "čituusiš",
           "gloss": null
         }
       ],
@@ -264022,7 +264027,7 @@
         "form_2": "tikicuuruʔut",
         "form_3": null,
         "form_4": "iriirakicuuruuhtu",
-        "form_5": "tikicuuruktuksta",
+        "form_5": "tikicuuruhtuksta",
         "additional_forms": []
       },
       "examples": []
@@ -264645,10 +264650,10 @@
     "part_II": {
       "paradigmatic_forms": {
         "form_1": "tatkituus",
-        "form_2": "tikituum",
+        "form_2": "tikituus",
         "form_3": "tikituusuʔ",
         "form_4": "iriirakituus",
-        "form_5": "tituusista",
+        "form_5": "tikituusista",
         "additional_forms": []
       },
       "examples": []
@@ -266194,7 +266199,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<ikskiikaar+kis, ikskiikaar + DIM; i.q. SB kskeekahki, Ar. sčeekáhtó>",
+        "raw_etymology": "<ikskiikaar+kis, ikskiikaar + DIM; i.q. SB kskeekahki, Ar. sčeekáhtš>",
         "constituent_elements": [
           {
             "morpheme": "ikskiikaar",
@@ -266217,7 +266222,7 @@
         },
         {
           "language": "Ar",
-          "form": "sčeekáhtó",
+          "form": "sčeekáhtš",
           "gloss": null
         }
       ],
@@ -266988,7 +266993,7 @@
     "headword": "kuucki",
     "entry_metadata": {
       "page_number": 452,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -267013,7 +267018,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<kuc+kis, vessel + DIM; i.q. SB kucki, Ar. koístó>",
+        "raw_etymology": "<kuc+kis, vessel + DIM; i.q. SB kucki, Ar. koóstš>",
         "constituent_elements": [
           {
             "morpheme": "kuc",
@@ -267036,7 +267041,7 @@
         },
         {
           "language": "Ar",
-          "form": "koístó",
+          "form": "koóstš",
           "gloss": null
         }
       ],
@@ -267073,7 +267078,7 @@
     "headword": "kuuctakaahak",
     "entry_metadata": {
       "page_number": 452,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -267130,7 +267135,7 @@
     "headword": "kuuhaaruʔ",
     "entry_metadata": {
       "page_number": 452,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -268534,7 +268539,7 @@
     "headword": "paaharikus",
     "entry_metadata": {
       "page_number": 453,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -268870,7 +268875,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<paahiks+uʔ, throat + NOM; i.q. SB paahriksuʔ, Ar. paahníóuʔ>",
+        "raw_etymology": "<paahiks+uʔ, throat + NOM; i.q. SB paahriksuʔ, Ar. paahníšuʔ>",
         "constituent_elements": [
           {
             "morpheme": "paahiks",
@@ -268893,7 +268898,7 @@
         },
         {
           "language": "Ar",
-          "form": "paahníóuʔ",
+          "form": "paahníšuʔ",
           "gloss": null
         }
       ],
@@ -269387,7 +269392,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<paakahis (ut...)+uʔ, have tassels + NOM; cf. Ar. paakAhíóuʔ squash blossom>",
+        "raw_etymology": "<paakahis (ut...)+uʔ, have tassels + NOM; cf. Ar. paakAhíšuʔ squash blossom>",
         "constituent_elements": [
           {
             "morpheme": "paakahis (ut...)",
@@ -269405,7 +269410,7 @@
       "cognates": [
         {
           "language": "Ar",
-          "form": "paakAhíóuʔ",
+          "form": "paakAhíšuʔ",
           "gloss": "squash blossom"
         }
       ],
@@ -270345,7 +270350,7 @@
     "headword": "paapicistahkata",
     "entry_metadata": {
       "page_number": 454,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -270408,7 +270413,7 @@
     "headword": "paapicistahkuukuʔuʔ",
     "entry_metadata": {
       "page_number": 454,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -270487,7 +270492,7 @@
     "headword": "paapicistiwiruucaku",
     "entry_metadata": {
       "page_number": 454,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -270550,7 +270555,7 @@
     "headword": "paapicisuʔ",
     "entry_metadata": {
       "page_number": 454,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -270575,7 +270580,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<paapicis+uʔ, metal + NOM; i.q. Ar. waapIsíóuʔ>",
+        "raw_etymology": "<paapicis+uʔ, metal + NOM; i.q. Ar. waapIsíšuʔ>",
         "constituent_elements": [
           {
             "morpheme": "paapicis",
@@ -270593,7 +270598,7 @@
       "cognates": [
         {
           "language": "Ar",
-          "form": "waapIsíóuʔ",
+          "form": "waapIsíšuʔ",
           "gloss": null
         }
       ],
@@ -270660,7 +270665,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<i.q. SB paapiis, Ar. kaápió>",
+        "raw_etymology": "<i.q. SB paapiis, Ar. kaápiš>",
         "constituent_elements": [],
         "literal_translation": null
       },
@@ -270672,7 +270677,7 @@
         },
         {
           "language": "Ar",
-          "form": "kaápió",
+          "form": "kaápiš",
           "gloss": null
         }
       ],
@@ -271164,7 +271169,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<paari(r), prob. from the common Dhegiha Siouan name ppádè and variants>",
+        "raw_etymology": "<paari(r), prob. from the common Dhegiha Siouan name ppádį and variants>",
         "constituent_elements": [
           {
             "morpheme": "paari(r)",
@@ -272118,7 +272123,7 @@
     "headword": "piiraʔuʔ",
     "entry_metadata": {
       "page_number": 460,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -272197,7 +272202,7 @@
     "headword": "Piiraʔuʔ Rarahkaataʔiispuu",
     "entry_metadata": {
       "page_number": 460,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -272270,7 +272275,7 @@
     "headword": "piiracaahuuruʔ",
     "entry_metadata": {
       "page_number": 460,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -272872,7 +272877,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "i.q. SB piiraarus, Ar. wiraaniwíx; cf. piirahaatus cocklebur",
+        "raw_etymology": "i.q. SB piiraarus, Ar. wiraaniwóx; cf. piirahaatus cocklebur",
         "constituent_elements": [],
         "literal_translation": null
       },
@@ -272884,7 +272889,7 @@
         },
         {
           "language": "Ar",
-          "form": "wiraaniwíx",
+          "form": "wiraaniwóx",
           "gloss": null
         }
       ],
@@ -274321,7 +274326,7 @@
     "headword": "racawaktaarik",
     "entry_metadata": {
       "page_number": 478,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -275286,7 +275291,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "riisaak.wi+uʔ, stake(d) + NOM; i.q. SB reesaapiʔuʔ, Ar. neeóaapíʔuʔ",
+        "raw_etymology": "riisaak.wi+uʔ, stake(d) + NOM; i.q. SB reesaapiʔuʔ, Ar. neešaapíʔuʔ",
         "constituent_elements": [
           {
             "morpheme": "riisaak.wi",
@@ -275309,7 +275314,7 @@
         },
         {
           "language": "Ar",
-          "form": "neeóaapíʔuʔ",
+          "form": "neešaapíʔuʔ",
           "gloss": null
         }
       ],
@@ -275394,7 +275399,7 @@
         "form_1": "tahiisaapu",
         "form_2": "tiriisaapu",
         "form_3": "tiriisaapuhuʔ",
-        "form_4": "iriirarariisaapuha",
+        "form_4": "iriirariisaapuha",
         "form_5": "tiriisaapista",
         "additional_forms": []
       },
@@ -275440,7 +275445,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "i.q. SB reesaar; cf. Ar. reeóaan be wealthy",
+        "raw_etymology": "i.q. SB reesaar; cf. Ar. reešaan be wealthy",
         "constituent_elements": [],
         "literal_translation": null
       },
@@ -275452,7 +275457,7 @@
         },
         {
           "language": "Ar",
-          "form": "reeóaan",
+          "form": "reešaan",
           "gloss": "be wealthy"
         }
       ],
@@ -275522,7 +275527,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "riisaar+uʔ, chief + NOM; i.q. SB reesaaruʔ, Ar. neeóaánuʔ",
+        "raw_etymology": "riisaar+uʔ, chief + NOM; i.q. SB reesaaruʔ, Ar. neešaánuʔ",
         "constituent_elements": [
           {
             "morpheme": "riisaar",
@@ -275545,7 +275550,7 @@
         },
         {
           "language": "Ar",
-          "form": "neeóaánuʔ",
+          "form": "neešaánuʔ",
           "gloss": null
         }
       ],
@@ -275937,7 +275942,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "riisur+uʔ, dawn twilight + NOM; cf. SB reesuuruʔ, Ar. neeóuúnuʔ dawn",
+        "raw_etymology": "riisur+uʔ, dawn twilight + NOM; cf. SB reesuuruʔ, Ar. neešuúnuʔ dawn",
         "constituent_elements": [
           {
             "morpheme": "riisur",
@@ -275960,7 +275965,7 @@
         },
         {
           "language": "Ar",
-          "form": "neeóuúnuʔ",
+          "form": "neešuúnuʔ",
           "gloss": "dawn"
         }
       ],
@@ -275991,7 +275996,7 @@
     "headword": "riitahkaac",
     "entry_metadata": {
       "page_number": 490,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -276589,7 +276594,7 @@
         "form_1": "tahiiwataa",
         "form_2": "tiriiwataa",
         "form_3": "tiriiwataariʔ",
-        "form_4": "iriirarariiwataara",
+        "form_4": "iriirariiwataara",
         "form_5": "tiriiwataarista",
         "additional_forms": []
       },
@@ -277249,7 +277254,7 @@
     "headword": "rikarahaar",
     "entry_metadata": {
       "page_number": 491,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -277307,7 +277312,7 @@
     "headword": "rikatahak",
     "entry_metadata": {
       "page_number": 491,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -278289,14 +278294,14 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<cf. Ar. ričiióaan corn to have kernels; corn to ripen, get ripe>",
+        "raw_etymology": "<cf. Ar. ričiišaan corn to have kernels; corn to ripen, get ripe>",
         "constituent_elements": [],
         "literal_translation": null
       },
       "cognates": [
         {
           "language": "Ar",
-          "form": "ričiióaan",
+          "form": "ričiišaan",
           "gloss": "corn to have kernels; corn to ripen, get ripe"
         }
       ],
@@ -278878,7 +278883,7 @@
     "headword": "rikiispasaasi",
     "entry_metadata": {
       "page_number": 492,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -278929,7 +278934,7 @@
     "headword": "rikiispiiruus",
     "entry_metadata": {
       "page_number": 492,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -278980,7 +278985,7 @@
     "headword": "rikiistaahiisuʔ",
     "entry_metadata": {
       "page_number": 492,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -279036,7 +279041,7 @@
     "headword": "rikiistacapahtuʔ",
     "entry_metadata": {
       "page_number": 492,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -279092,7 +279097,7 @@
     "headword": "rikiistahkata",
     "entry_metadata": {
       "page_number": 492,
-      "column": "left",
+      "column": "right",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -280749,7 +280754,7 @@
     "headword": "ritkutaripas",
     "entry_metadata": {
       "page_number": 494,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -284033,7 +284038,7 @@
     "headword": "wiriis",
     "entry_metadata": {
       "page_number": 528,
-      "column": "right",
+      "column": "left",
       "continues_from_previous_page": false,
       "continues_to_next_page": false
     },
@@ -284053,7 +284058,7 @@
         }
       ],
       "etymology": {
-        "raw_etymology": "<wi+riis (ut...), be mixed; i.q. rariis (ut...); cf. Ar. čiineeó (ut...) be mixed in liquid>",
+        "raw_etymology": "<wi+riis (ut...), be mixed; i.q. rariis (ut...); cf. Ar. čiineeš (ut...) be mixed in liquid>",
         "constituent_elements": [
           {
             "morpheme": "wi",

@@ -1,43 +1,573 @@
 {
- "_about": {"reading": "Third look at 40 of the 152 Appendix 1 forms on which the stored copy and the blind reading differ, from crops at 6x (work/appendix/appendix1/third_look_01.png, _10.png, _11.png), 2026-11-13. In all 40 the page shows the blind reading."},
- "p2-L2-r3": {"reading": "kaakaaʔaʔ"},
- "p2-L2-r5": {"reading": "síkaakaatihwaʔaʔ"},
- "p2-L2-r6": {"reading": "síkaakaasihwaʔaʔ"},
- "p2-L2-r7": {"reading": "sikaakaawaʔaʔ"},
- "p2-L2-r9": {"reading": "kaakaatiraakaahuʔ"},
- "p2-L2-r10": {"reading": "kaakaasiraakaahuʔ"},
- "p2-L3-r7": {"reading": "sírawaʔaʔ"},
- "p2-L3-r9": {"reading": "itiraakaahuʔ"},
- "p2-L3-r10": {"reading": "isiraakaahuʔ"},
- "p2-L3-r11": {"reading": "raaʔaahuʔ, raraaraʔ"},
- "p2-L4-r5": {"reading": "siriítihwaʔaʔ"},
- "p2-L4-r6": {"reading": "siriisihwaʔaʔ"},
- "p2-L4-r7": {"reading": "siraaʔaʔ"},
- "p2-L4-r8": {"reading": "riítaraakaahuʔ"},
- "p7-R2-r4": {"reading": "iriiracakukiraawaa"},
- "p7-R2-r5": {"reading": "iriisirikukiraawaa"},
- "p7-R2-r6": {"reading": "iriisirakiraawaa"},
- "p7-R2-r7": {"reading": "iriisirihkiraawaa"},
- "p7-R2-r8": {"reading": "iriiracakuraktahkiraawaa"},
- "p7-R2-r11": {"reading": "iririiraktahkirawaa"},
- "p7-R3-r11": {"reading": "riiraktahkirawaa"},
- "p7-R4-r2": {"reading": "aakirawaa"},
- "p7-R4-r3": {"reading": "iihkirawaa"},
- "p7-R4-r10": {"reading": "araakiraawaa"},
- "p7-R5-r5": {"reading": "sirakukukiraawaa"},
- "p7-R5-r6": {"reading": "siraakukiraawaa"},
- "p7-R5-r7": {"reading": "sirihkukiraawaa"},
- "p7-R5-r8": {"reading": "racakukuraktahkiraawaa"},
- "p7-R5-r9": {"reading": "rakukuraktahkiraawaa"},
- "p7-R5-r10": {"reading": "raakuraktahkiraawaa"},
- "p7-R5-r11": {"reading": "rihkuraktahkiraawaa"},
- "p8-L2-r4": {"reading": "kaakaaciraa"},
- "p8-L2-r8": {"reading": "sikaakaaciraa"},
- "p8-L4-r5": {"reading": "siriihaa"},
- "p8-L4-r9": {"reading": "siriihaa"},
- "p8-R2-r1": {"reading": "iriirahaaha"},
- "p8-R2-r2": {"reading": "iriirastaaha"},
- "p8-R2-r3": {"reading": "iriiraraaha"},
- "p8-R2-r7": {"reading": "iriisiraraaha"},
- "p8-R3-r7": {"reading": "siriraaha"}
+ "_about": {
+  "reading": "Third look at all 152 Appendix 1 forms on which the stored copy and the blind reading differ, 2026-11-13. 40 were transcribed from crops at 6x before the user's go-ahead; the other 112 were checked afterwards on sheets that show each crop with the blind reading beside it. In all 152 the page shows the blind reading."
+ },
+ "p2-L2-r3": {
+  "reading": "kaakaaʔaʔ"
+ },
+ "p2-L2-r5": {
+  "reading": "síkaakaatihwaʔaʔ"
+ },
+ "p2-L2-r6": {
+  "reading": "síkaakaasihwaʔaʔ"
+ },
+ "p2-L2-r7": {
+  "reading": "sikaakaawaʔaʔ"
+ },
+ "p2-L2-r9": {
+  "reading": "kaakaatiraakaahuʔ"
+ },
+ "p2-L2-r10": {
+  "reading": "kaakaasiraakaahuʔ"
+ },
+ "p2-L3-r7": {
+  "reading": "sírawaʔaʔ"
+ },
+ "p2-L3-r9": {
+  "reading": "itiraakaahuʔ"
+ },
+ "p2-L3-r10": {
+  "reading": "isiraakaahuʔ"
+ },
+ "p2-L3-r11": {
+  "reading": "raaʔaahuʔ, raraaraʔ"
+ },
+ "p2-L4-r5": {
+  "reading": "siriítihwaʔaʔ"
+ },
+ "p2-L4-r6": {
+  "reading": "siriisihwaʔaʔ"
+ },
+ "p2-L4-r7": {
+  "reading": "siraaʔaʔ"
+ },
+ "p2-L4-r8": {
+  "reading": "riítaraakaahuʔ"
+ },
+ "p7-R2-r4": {
+  "reading": "iriiracakukiraawaa"
+ },
+ "p7-R2-r5": {
+  "reading": "iriisirikukiraawaa"
+ },
+ "p7-R2-r6": {
+  "reading": "iriisirakiraawaa"
+ },
+ "p7-R2-r7": {
+  "reading": "iriisirihkiraawaa"
+ },
+ "p7-R2-r8": {
+  "reading": "iriiracakuraktahkiraawaa"
+ },
+ "p7-R2-r11": {
+  "reading": "iririiraktahkirawaa"
+ },
+ "p7-R3-r11": {
+  "reading": "riiraktahkirawaa"
+ },
+ "p7-R4-r2": {
+  "reading": "aakirawaa"
+ },
+ "p7-R4-r3": {
+  "reading": "iihkirawaa"
+ },
+ "p7-R4-r10": {
+  "reading": "araakiraawaa"
+ },
+ "p7-R5-r5": {
+  "reading": "sirakukukiraawaa"
+ },
+ "p7-R5-r6": {
+  "reading": "siraakukiraawaa"
+ },
+ "p7-R5-r7": {
+  "reading": "sirihkukiraawaa"
+ },
+ "p7-R5-r8": {
+  "reading": "racakukuraktahkiraawaa"
+ },
+ "p7-R5-r9": {
+  "reading": "rakukuraktahkiraawaa"
+ },
+ "p7-R5-r10": {
+  "reading": "raakuraktahkiraawaa"
+ },
+ "p7-R5-r11": {
+  "reading": "rihkuraktahkiraawaa"
+ },
+ "p8-L2-r4": {
+  "reading": "kaakaaciraa"
+ },
+ "p8-L2-r8": {
+  "reading": "sikaakaaciraa"
+ },
+ "p8-L4-r5": {
+  "reading": "siriihaa"
+ },
+ "p8-L4-r9": {
+  "reading": "siriihaa"
+ },
+ "p8-R2-r1": {
+  "reading": "iriirahaaha"
+ },
+ "p8-R2-r2": {
+  "reading": "iriirastaaha"
+ },
+ "p8-R2-r3": {
+  "reading": "iriiraraaha"
+ },
+ "p8-R2-r7": {
+  "reading": "iriisiraraaha"
+ },
+ "p8-R3-r7": {
+  "reading": "siriraaha"
+ },
+ "p2-L4-r9": {
+  "reading": "riítiraakaahuʔ",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-L4-r10": {
+  "reading": "riísiraakaahuʔ",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-L5-r2": {
+  "reading": "rasiíraʔ",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-L5-r5": {
+  "reading": "síratihwaʔaʔ",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-L5-r6": {
+  "reading": "sírasihwaaʔ",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-L5-r7": {
+  "reading": "sírawaaʔ",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-L5-r9": {
+  "reading": "ratiraakaahuʔ",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-L5-r10": {
+  "reading": "rasiraakaahuʔ",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R1-r1": {
+  "reading": "kuustiriiʔaʔ",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R1-r2": {
+  "reading": "kaasiriiʔaʔ",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R1-r4": {
+  "reading": "kaaciriiwaʔaʔ",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R1-r5": {
+  "reading": "sikuustiriiwaʔaʔ",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R1-r6": {
+  "reading": "sikaasiriiwaʔaʔ",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R1-r7": {
+  "reading": "sikusaawaʔaʔ",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R1-r9": {
+  "reading": "kuustiriiraakaahuʔ",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R1-r10": {
+  "reading": "kaasiriiraakaahuʔ",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R2-r1": {
+  "reading": "iriiratiira",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R2-r2": {
+  "reading": "iriirasiira",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R2-r3": {
+  "reading": "iriraʔa",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R2-r4": {
+  "reading": "iriiracihwaʔa",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R2-r5": {
+  "reading": "iriisiratihwaʔa",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R2-r6": {
+  "reading": "iriisirasihwaʔa",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R2-r7": {
+  "reading": "iriisirawaʔa",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R2-r8": {
+  "reading": "iriirataraakahu",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R2-r9": {
+  "reading": "iriiratiraakahu",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R2-r10": {
+  "reading": "iriirasiraakahu",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R2-r11": {
+  "reading": "iriraaʔahu, iriiraraara",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R3-r1": {
+  "reading": "itiira",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R3-r2": {
+  "reading": "isiira",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R3-r4": {
+  "reading": "icihwaʔa",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R3-r5": {
+  "reading": "siʔitihwaʔa",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R3-r6": {
+  "reading": "siʔisihwaʔa",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R3-r8": {
+  "reading": "itaraakahu",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R3-r9": {
+  "reading": "itiraakahu",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R3-r10": {
+  "reading": "isiraakahu",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R3-r11": {
+  "reading": "raaʔahu, raraara",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R4-r4": {
+  "reading": "aacihwaʔa",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R4-r5": {
+  "reading": "siʔaatihwaʔa",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R4-r6": {
+  "reading": "siʔaasihwaʔa",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R4-r8": {
+  "reading": "aataraakahu",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R4-r9": {
+  "reading": "aatiraakahu",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R4-r10": {
+  "reading": "aasiraakahu",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R4-r11": {
+  "reading": "aaʔahu, aaraara",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R5-r1": {
+  "reading": "ratihkuʔa",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R5-r2": {
+  "reading": "rasihkuʔa",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R5-r3": {
+  "reading": "raakuʔa",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R5-r4": {
+  "reading": "racihkuwaʔa",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R5-r5": {
+  "reading": "siratihkuwaʔa",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R5-r6": {
+  "reading": "sirasihkuwaʔa",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R5-r7": {
+  "reading": "siraakuwaʔa",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R5-r8": {
+  "reading": "rataakuraakahu",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R5-r9": {
+  "reading": "ratihkuraakahu",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R5-r10": {
+  "reading": "rasihkuraakahu",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p2-R5-r11": {
+  "reading": "raakuhu, raakuraara",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p3-L2-r10": {
+  "reading": "kaakasuuhaakaa",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p3-R1-r2": {
+  "reading": "kaasuciʔaa",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p3-R1-r3": {
+  "reading": "kuusuciʔaa",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p3-R1-r4": {
+  "reading": "kaciiciʔaa",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p3-R1-r5": {
+  "reading": "sikuustuciʔaa",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p3-R1-r6": {
+  "reading": "sikaasuciʔaa",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p3-R1-r7": {
+  "reading": "sikuusuciʔaa",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p3-R1-r11": {
+  "reading": "kusiiciʔaa",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p3-R2-r1": {
+  "reading": "iriiratuutaara",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p3-R2-r2": {
+  "reading": "iriirasuutaara",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p3-R2-r3": {
+  "reading": "iriiruutaara",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p3-R2-r4": {
+  "reading": "iriiraciitaara",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p3-R2-r5": {
+  "reading": "iriisiratuutaara",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p3-R2-r6": {
+  "reading": "iriisirasuutaara",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p3-R2-r7": {
+  "reading": "iriisiruutaara",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p3-R2-r8": {
+  "reading": "iriiratuuhaakaara",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p3-R2-r9": {
+  "reading": "iriiratuuhaakaara",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p3-R2-r10": {
+  "reading": "iriirasuuhaakaara",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p3-R3-r2": {
+  "reading": "isuutaara",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p3-R4-r4": {
+  "reading": "aaciriitaara",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p3-R5-r9": {
+  "reading": "ratkuuhaakaara",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p4-L3-r8": {
+  "reading": "itarapuuʔ",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p4-R2-r11": {
+  "reading": "iriraawuu",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p4-R3-r8": {
+  "reading": "itarapuu",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p4-R5-r6": {
+  "reading": "siraskuwara",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p5-L2-r2": {
+  "reading": "kaakasuuhii",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p5-L2-r3": {
+  "reading": "kaakuhii",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p5-L2-r6": {
+  "reading": "sikaakasuuhii",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p5-L2-r7": {
+  "reading": "sikaakuhii",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p5-L2-r9": {
+  "reading": "kaakaaturaakiwaa",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p5-L2-r10": {
+  "reading": "kaakaasuraakiwaa",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p5-L4-r9": {
+  "reading": "riituraakiwaa",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p5-L4-r10": {
+  "reading": "riisuraakiwaa",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p5-L5-r3": {
+  "reading": "ruuhii",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p5-R1-r8": {
+  "reading": "kuustuuraakiwaa",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p5-R2-r1": {
+  "reading": "iriiratuuhiira",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p5-R2-r2": {
+  "reading": "iriirasuuhiira",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p5-R2-r4": {
+  "reading": "iriiraciihiira",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p5-R2-r8": {
+  "reading": "iriiratuuraakiwaara",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p5-R2-r9": {
+  "reading": "iriiraturaakiwaara",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p5-R2-r10": {
+  "reading": "iriirasuraakiwaara",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p5-R4-r10": {
+  "reading": "aasuraakiwaara",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p5-R5-r3": {
+  "reading": "rakuuhiira",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p6-L2-r8": {
+  "reading": "kaakaataaraakiikaʔ",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p6-L4-r11": {
+  "reading": "rihkiikaʔ",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p6-L5-r11": {
+  "reading": "rihkiikaʔ",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p7-L2-r2": {
+  "reading": "kaakaakiraawaʔ",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p7-L2-r4": {
+  "reading": "kaakaacakukiraawaʔ",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p7-L2-r6": {
+  "reading": "sikaakaakiraawaʔ",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p7-L2-r8": {
+  "reading": "kaakaacakuraakiraawaʔ",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p7-L4-r1": {
+  "reading": "rikuukiraawaʔ",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p7-L4-r5": {
+  "reading": "sirikuukiraawaʔ",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p7-L4-r9": {
+  "reading": "rikuuraktahkiraawaʔ",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p7-L5-r3": {
+  "reading": "rihkiraawaʔ",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p7-L5-r6": {
+  "reading": "raakiraawaʔ",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p7-L5-r10": {
+  "reading": "raraktahkiraawaʔ",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p7-R1-r9": {
+  "reading": "kuusikuuraakiraawaʔ",
+  "how": "crop compared with the blind reading printed beside it"
+ },
+ "p7-R1-r11": {
+  "reading": "kusiriktaahkiraawaʔ",
+  "how": "crop compared with the blind reading printed beside it"
+ }
 }

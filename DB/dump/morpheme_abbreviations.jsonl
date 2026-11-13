@@ -32,7 +32,7 @@
 {"id": 32, "abbreviation": "sub.", "meaning": "subordinate/dependent", "morpheme_form": null, "notes": null}
 {"id": 33, "abbreviation": "subj.", "meaning": "subject", "morpheme_form": null, "notes": null}
 {"id": 34, "abbreviation": "Wi.", "meaning": "Wichita", "morpheme_form": null, "notes": null}
-{"id": 35, "abbreviation": "ABS", "meaning": "absolutative mode prefix", "morpheme_form": null, "notes": null}
+{"id": 35, "abbreviation": "ABS", "meaning": "absolutive mode prefix", "morpheme_form": null, "notes": null}
 {"id": 36, "abbreviation": "ADJ", "meaning": "adjective", "morpheme_form": null, "notes": null}
 {"id": 37, "abbreviation": "ADV", "meaning": "adverb(ial)", "morpheme_form": null, "notes": null}
 {"id": 38, "abbreviation": "COLL", "meaning": "collective", "morpheme_form": null, "notes": null}
@@ -135,7 +135,7 @@
 {"id": 135, "abbreviation": "PERF", "meaning": "perfective aspect suffix", "morpheme_form": "-his/-is", "notes": null}
 {"id": 136, "abbreviation": "PHY.BEN", "meaning": "physical benefactive", "morpheme_form": null, "notes": null}
 {"id": 137, "abbreviation": "PHY.POSS", "meaning": "physical possession marking", "morpheme_form": null, "notes": null}
-{"id": 138, "abbreviation": "PL", "meaning": "plural prefix", "morpheme_form": "ak-, ir-, raak-, raar-/rab-", "notes": null}
+{"id": 138, "abbreviation": "PL", "meaning": "plural prefix", "morpheme_form": "ak-, ir-, raak-, raar-/rah-", "notes": null}
 {"id": 139, "abbreviation": "PL.3.A", "meaning": "third person collective (unitary) plural agentive prefix", "morpheme_form": null, "notes": null}
 {"id": 140, "abbreviation": "PL.BEN", "meaning": "plural benefactive, or indirect object, prefix", "morpheme_form": null, "notes": null}
 {"id": 141, "abbreviation": "PL.INDV.A", "meaning": "individuative plural agentive prefix", "morpheme_form": null, "notes": null}
@@ -150,7 +150,7 @@
 {"id": 150, "abbreviation": "PREV.1/2.A", "meaning": "preverb with first and second person agentives", "morpheme_form": "ir-", "notes": null}
 {"id": 151, "abbreviation": "PREV.3.A", "meaning": "preverb with third person agentives", "morpheme_form": "a-", "notes": null}
 {"id": 152, "abbreviation": "QUOT", "meaning": "quotative evidential prefix", "morpheme_form": "wi-", "notes": null}
-{"id": 153, "abbreviation": "REFL", "meaning": "reflexive-reciprocal proclitic", "morpheme_form": "witii-", "notes": null}
+{"id": 153, "abbreviation": "REFL", "meaning": "reflexive-reciprocal proclitic", "morpheme_form": "witi-", "notes": null}
 {"id": 154, "abbreviation": "SEQ", "meaning": "sequential/resultative prefix", "morpheme_form": "i-", "notes": null}
 {"id": 155, "abbreviation": "SG", "meaning": "singular number", "morpheme_form": null, "notes": null}
 {"id": 156, "abbreviation": "SUB.1", "meaning": "subordinating suffix of Class 1 verbs", "morpheme_form": null, "notes": null}

@@ -1431,7 +1431,7 @@ BB_TESTS = [
 
     # mother — atiraʔ
     ("atiraʔ", "1sg", "N-KIN", "kinship", "atiraʔ"),      # my mother
-    ("atiraʔ", "2sg", "N-KIN", "kinship", "asaas"),        # your mother
+    ("atiraʔ", "2sg", "N-KIN", "kinship", "asas"),         # your mother (Appendix 3, p. 542: asas)
     ("atiraʔ", "3sg", "N-KIN", "kinship", "isaastiʔ"),     # his/her mother
 
     # father — atiʔas
@@ -1444,10 +1444,10 @@ BB_TESTS = [
     ("atikaʔ", "2sg", "N-KIN", "kinship", "akaʔ"),         # your grandmother
     ("atikaʔ", "3sg", "N-KIN", "kinship", "ikaariʔ"),      # his/her grandmother
 
-    # grandfather — atipaat
-    ("atipaat", "1sg", "N-KIN", "kinship", "atipaat"),      # my grandfather
-    ("atipaat", "2sg", "N-KIN", "kinship", "apaat"),        # your grandfather
-    ("atipaat", "3sg", "N-KIN", "kinship", "ipaaktiʔ"),    # his/her grandfather
+    # grandfather — atipat (Appendix 3, p. 542; the first extraction had misread it as atipaat, apaat)
+    ("atipat", "1sg", "N-KIN", "kinship", "atipat"),        # my grandfather
+    ("atipat", "2sg", "N-KIN", "kinship", "apat"),          # your grandfather
+    ("atipat", "3sg", "N-KIN", "kinship", "ipaaktiʔ"),    # his/her grandfather
 
     # nephew/niece — tiwaat
     ("tiwaat", "1sg", "N-KIN", "kinship", "tiwaat"),        # my nephew/niece
