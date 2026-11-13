@@ -1,0 +1,915 @@
+{
+ "tiles_read": 46,
+ "tally": {
+  "words": 797,
+  "same": 704,
+  "differs": 51,
+  "b-for-h and more": 6,
+  "b-for-h": 28,
+  "not-found": 8
+ },
+ "differences": [
+  {
+   "page": 1,
+   "stored": "-taar",
+   "blind_reading": "akar",
+   "kind": "differs",
+   "ratio": 0.75,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 1,
+   "stored": "-taar",
+   "blind_reading": "akar",
+   "kind": "differs",
+   "ratio": 0.75,
+   "where": "sections/morphemes_mentioned/form",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 2,
+   "stored": "askatahciruʔ",
+   "blind_reading": "askatahciriʔ",
+   "kind": "differs",
+   "ratio": 0.917,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 2,
+   "stored": "uukaahpaa",
+   "blind_reading": "uukahpaa",
+   "kind": "differs",
+   "ratio": 0.941,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 3,
+   "stored": "asaakiʔ",
+   "blind_reading": "asaaki",
+   "kind": "differs",
+   "ratio": 0.923,
+   "where": "sections/morphemes_mentioned/notes",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 3,
+   "stored": "riicikiʔ",
+   "blind_reading": "riiciki",
+   "kind": "differs",
+   "ratio": 0.933,
+   "where": "sections/morphemes_mentioned/notes",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 3,
+   "stored": "asaakiʔ",
+   "blind_reading": "asaaki",
+   "kind": "differs",
+   "ratio": 0.923,
+   "where": "sections/tables/rows",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 3,
+   "stored": "riicikiʔ",
+   "blind_reading": "riiciki",
+   "kind": "differs",
+   "ratio": 0.933,
+   "where": "sections/tables/rows",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 7,
+   "stored": "tiiraaraspaatasit",
+   "blind_reading": "tiraaraspaatasit",
+   "kind": "differs",
+   "ratio": 0.97,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 7,
+   "stored": "taatakaraspiʔ",
+   "blind_reading": "taataktaraspiʔ",
+   "kind": "differs",
+   "ratio": 0.963,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 8,
+   "stored": "taruuraariit",
+   "blind_reading": "taruuraarit",
+   "kind": "differs",
+   "ratio": 0.957,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 8,
+   "stored": "ariik",
+   "blind_reading": "arik",
+   "kind": "differs",
+   "ratio": 0.889,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 8,
+   "stored": "ariik",
+   "blind_reading": "arik",
+   "kind": "differs",
+   "ratio": 0.889,
+   "where": "sections/morphemes_mentioned/form",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 10,
+   "stored": "kuubasuutiiʔit",
+   "blind_reading": "kuuhasuutiirit",
+   "kind": "b-for-h and more",
+   "ratio": 0.857,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 10,
+   "stored": "iiʔirik",
+   "blind_reading": "iirik",
+   "kind": "differs",
+   "ratio": 0.833,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 10,
+   "stored": "st",
+   "blind_reading": "sit",
+   "kind": "differs",
+   "ratio": 0.8,
+   "where": "sections/morphemes_mentioned/notes",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 10,
+   "stored": "iiʔirik",
+   "blind_reading": "iirik",
+   "kind": "differs",
+   "ratio": 0.833,
+   "where": "sections/morphemes_mentioned/form",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 10,
+   "stored": "tiibatuuksitkaspaawaa",
+   "blind_reading": "tiihatuksitkaspaawaa",
+   "kind": "b-for-h and more",
+   "ratio": 0.927,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 10,
+   "stored": "sukskirikaʔaaʔ",
+   "blind_reading": "sukskirikaʔaa",
+   "kind": "differs",
+   "ratio": 0.963,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 10,
+   "stored": "ciksuhuurawaciiruutit",
+   "blind_reading": "ciksuhuurawaciruutit",
+   "kind": "differs",
+   "ratio": 0.976,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 10,
+   "stored": "ruukiitaat",
+   "blind_reading": "ruukiitat",
+   "kind": "differs",
+   "ratio": 0.947,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 10,
+   "stored": "kiʔiitiksbuubkaaʔ",
+   "blind_reading": "kiʔitiksuhuuhkaaʔ",
+   "kind": "b-for-h and more",
+   "ratio": 0.824,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 11,
+   "stored": "Kiʔíisukskuutíirit",
+   "blind_reading": "Kiʔisukskuutiirit",
+   "kind": "differs",
+   "ratio": 0.914,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 11,
+   "stored": "pahíituʔ",
+   "blind_reading": "pahiituʔ",
+   "kind": "differs",
+   "ratio": 0.875,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 11,
+   "stored": "kaasíkaa",
+   "blind_reading": "kaasikaa",
+   "kind": "differs",
+   "ratio": 0.875,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 11,
+   "stored": "st",
+   "blind_reading": "sit",
+   "kind": "differs",
+   "ratio": 0.8,
+   "where": "sections/morphemes_mentioned/notes",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 11,
+   "stored": "raakutikuriiwictaawiiʔat",
+   "blind_reading": "raakutikuriiciwactaawiiʔat",
+   "kind": "differs",
+   "ratio": 0.92,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 11,
+   "stored": "awaahc-",
+   "blind_reading": "awahc",
+   "kind": "differs",
+   "ratio": 0.909,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 11,
+   "stored": "karíi-",
+   "blind_reading": "karii",
+   "kind": "differs",
+   "ratio": 0.8,
+   "where": "sections/morphemes_mentioned/form",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 11,
+   "stored": "awaahc-",
+   "blind_reading": "awahc",
+   "kind": "differs",
+   "ratio": 0.909,
+   "where": "sections/morphemes_mentioned/form",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 11,
+   "stored": "kararukuukikahu",
+   "blind_reading": "kararakuukiikahu",
+   "kind": "differs",
+   "ratio": 0.903,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 11,
+   "stored": "tuksuhuubwíitit",
+   "blind_reading": "tuksuhuuhwiitit",
+   "kind": "b-for-h and more",
+   "ratio": 0.867,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 11,
+   "stored": "wiítik",
+   "blind_reading": "wiitik",
+   "kind": "differs",
+   "ratio": 0.833,
+   "where": "sections/morphemes_mentioned/form",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 12,
+   "stored": "siwitiirakuutiirit",
+   "blind_reading": "siwitirakuutiirit",
+   "kind": "differs",
+   "ratio": 0.971,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 12,
+   "stored": "st",
+   "blind_reading": "set",
+   "kind": "differs",
+   "ratio": 0.8,
+   "where": "sections/morphemes_mentioned/notes",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 13,
+   "stored": "wiitahurabwiicaʔ",
+   "blind_reading": "wiitahurahwiicaʔ",
+   "kind": "b-for-h",
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 13,
+   "stored": "wiirakuhurabkiwatat",
+   "blind_reading": "wiirakuhuraahkiwatat",
+   "kind": "b-for-h and more",
+   "ratio": 0.923,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 14,
+   "stored": "iriruuriíwuʔ",
+   "blind_reading": "iriruuriiwuʔ",
+   "kind": "differs",
+   "ratio": 0.917,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 14,
+   "stored": "tiiʔahabaacca",
+   "blind_reading": "tiiʔahahaacca",
+   "kind": "b-for-h",
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 14,
+   "stored": "st",
+   "blind_reading": "set",
+   "kind": "differs",
+   "ratio": 0.8,
+   "where": "sections/morphemes_mentioned/notes",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 14,
+   "stored": "tiibiiraaʔa",
+   "blind_reading": "tiihiiraaʔa",
+   "kind": "b-for-h",
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 15,
+   "stored": "siwituksaakitaabku",
+   "blind_reading": "siwituksakitaahku",
+   "kind": "b-for-h and more",
+   "ratio": 0.914,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 15,
+   "stored": "riibiikakuspihat",
+   "blind_reading": "riihiikakuspihat",
+   "kind": "b-for-h",
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 15,
+   "stored": "tuuricaabiksii",
+   "blind_reading": "tuuricaahiksii",
+   "kind": "b-for-h",
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 15,
+   "stored": "icaabiks",
+   "blind_reading": "icaahiks",
+   "kind": "b-for-h",
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 15,
+   "stored": "st",
+   "blind_reading": "set",
+   "kind": "differs",
+   "ratio": 0.8,
+   "where": "sections/morphemes_mentioned/notes",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 15,
+   "stored": "icaabiks",
+   "blind_reading": "icaahiks",
+   "kind": "b-for-h",
+   "where": "sections/morphemes_mentioned/form",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 16,
+   "stored": "iriiruurakuuraaru",
+   "blind_reading": "siwituksakitaahku",
+   "kind": "not-found",
+   "ratio": 0.471,
+   "where": "sections/content",
+   "grade": "unresolved",
+   "severity": 3
+  },
+  {
+   "page": 16,
+   "stored": "raburaar-",
+   "blind_reading": "rahuraar",
+   "kind": "b-for-h",
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 17,
+   "stored": "-bustarit",
+   "blind_reading": "hustarit",
+   "kind": "b-for-h",
+   "where": "sections/morphemes_mentioned/notes",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 17,
+   "stored": "-bustarit",
+   "blind_reading": "hustarit",
+   "kind": "b-for-h",
+   "where": "sections/morphemes_mentioned/form",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 17,
+   "stored": "-busta",
+   "blind_reading": "husta",
+   "kind": "b-for-h",
+   "where": "sections/morphemes_mentioned/form",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 17,
+   "stored": "-busitit",
+   "blind_reading": "husitit",
+   "kind": "b-for-h",
+   "where": "sections/morphemes_mentioned/notes",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 17,
+   "stored": "-busitit",
+   "blind_reading": "husitit",
+   "kind": "b-for-h",
+   "where": "sections/morphemes_mentioned/form",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 17,
+   "stored": "-busuukuʔ",
+   "blind_reading": "husuukuʔ",
+   "kind": "b-for-h",
+   "where": "sections/morphemes_mentioned/notes",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 17,
+   "stored": "-busuukuʔ",
+   "blind_reading": "husuukuʔ",
+   "kind": "b-for-h",
+   "where": "sections/morphemes_mentioned/form",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 17,
+   "stored": "-busuku",
+   "blind_reading": "husuku",
+   "kind": "b-for-h",
+   "where": "sections/morphemes_mentioned/notes",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 17,
+   "stored": "-busuku",
+   "blind_reading": "husuku",
+   "kind": "b-for-h",
+   "where": "sections/morphemes_mentioned/form",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 17,
+   "stored": "-bustarit",
+   "blind_reading": "hustarit",
+   "kind": "b-for-h",
+   "where": "sections/tables/rows",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 17,
+   "stored": "-busta",
+   "blind_reading": "husta",
+   "kind": "b-for-h",
+   "where": "sections/tables/rows",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 17,
+   "stored": "-busitit",
+   "blind_reading": "husitit",
+   "kind": "b-for-h",
+   "where": "sections/tables/rows",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 17,
+   "stored": "-busuukuʔ",
+   "blind_reading": "husuukuʔ",
+   "kind": "b-for-h",
+   "where": "sections/tables/rows",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 17,
+   "stored": "-busuku",
+   "blind_reading": "husuku",
+   "kind": "b-for-h",
+   "where": "sections/tables/rows",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 18,
+   "stored": "has",
+   "blind_reading": "huras",
+   "kind": "differs",
+   "ratio": 0.75,
+   "where": "sections/morphemes_mentioned/notes",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 18,
+   "stored": "buras",
+   "blind_reading": "huras",
+   "kind": "b-for-h",
+   "where": "sections/morphemes_mentioned/form",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 18,
+   "stored": "bisaask",
+   "blind_reading": "hisaask",
+   "kind": "b-for-h",
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 18,
+   "stored": "uciihu",
+   "blind_reading": "uciihuʔ",
+   "kind": "differs",
+   "ratio": 0.923,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 18,
+   "stored": "bisaask",
+   "blind_reading": "hisaask",
+   "kind": "b-for-h",
+   "where": "sections/morphemes_mentioned/form",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 18,
+   "stored": "st",
+   "blind_reading": "t",
+   "kind": "not-found",
+   "ratio": 0.667,
+   "where": "sections/morphemes_mentioned/notes",
+   "grade": "unresolved",
+   "severity": 3
+  },
+  {
+   "page": 18,
+   "stored": "uciihu",
+   "blind_reading": "uciihuʔ",
+   "kind": "differs",
+   "ratio": 0.923,
+   "where": "sections/morphemes_mentioned/form",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 19,
+   "stored": "Takiihaahusaʔ",
+   "blind_reading": "Takiikaahusaʔ",
+   "kind": "differs",
+   "ratio": 0.923,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 19,
+   "stored": "raakuraarahuʔ",
+   "blind_reading": "raakuraarahu",
+   "kind": "differs",
+   "ratio": 0.96,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 19,
+   "stored": "iriirakiwakuʔ",
+   "blind_reading": "iriirakiwaku",
+   "kind": "differs",
+   "ratio": 0.96,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 19,
+   "stored": "tikiwaakuʔ",
+   "blind_reading": "tikiwaaku",
+   "kind": "differs",
+   "ratio": 0.947,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 20,
+   "stored": "wiiruuhaasitiiʔ",
+   "blind_reading": "tiwaarukstiʔ",
+   "kind": "not-found",
+   "ratio": 0.519,
+   "where": "sections/content",
+   "grade": "unresolved",
+   "severity": 3
+  },
+  {
+   "page": 20,
+   "stored": "wiiruuhaasitiiʔkustarit",
+   "blind_reading": "wiiruuhaasitikustarit",
+   "kind": "differs",
+   "ratio": 0.955,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 20,
+   "stored": "wiiruuhaasitiiʔ",
+   "blind_reading": "tiwaarukstiʔ",
+   "kind": "not-found",
+   "ratio": 0.519,
+   "where": "sections/examples/pawnee_form",
+   "grade": "unresolved",
+   "severity": 3
+  },
+  {
+   "page": 20,
+   "stored": "wiiruuhaasitiiʔkustarit",
+   "blind_reading": "wiiruuhaasitikustarit",
+   "kind": "differs",
+   "ratio": 0.955,
+   "where": "sections/examples/pawnee_form",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 20,
+   "stored": "st",
+   "blind_reading": "s",
+   "kind": "not-found",
+   "ratio": 0.667,
+   "where": "sections/morphemes_mentioned/notes",
+   "grade": "unresolved",
+   "severity": 3
+  },
+  {
+   "page": 20,
+   "stored": "riitapaawarikiikusitit",
+   "blind_reading": "riitapaawarikusitit",
+   "kind": "differs",
+   "ratio": 0.927,
+   "where": "sections/examples/pawnee_form",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 20,
+   "stored": "witiicikstaawariibusuukuʔ",
+   "blind_reading": "witiicikstaawariihusuukuʔ",
+   "kind": "b-for-h",
+   "where": "sections/examples/pawnee_form",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 20,
+   "stored": "ahicikstaawariibusuku",
+   "blind_reading": "ahicikstaawariihusuku",
+   "kind": "b-for-h",
+   "where": "sections/examples/pawnee_form",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 21,
+   "stored": "iriirapahaattu",
+   "blind_reading": "iriirapahaatu",
+   "kind": "differs",
+   "ratio": 0.963,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 21,
+   "stored": "tihuraabtarariʔit",
+   "blind_reading": "tihuraahtarariʔit",
+   "kind": "b-for-h",
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 21,
+   "stored": "tiwaarukstiiʔ",
+   "blind_reading": "tiwaarukstiʔ",
+   "kind": "differs",
+   "ratio": 0.96,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 21,
+   "stored": "iriwaaarukstiiʔu",
+   "blind_reading": "rakuwaarukstiiʔu",
+   "kind": "differs",
+   "ratio": 0.812,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 21,
+   "stored": "an",
+   "blind_reading": "a",
+   "kind": "not-found",
+   "ratio": 0.667,
+   "where": "sections/morphemes_mentioned/notes",
+   "grade": "unresolved",
+   "severity": 3
+  },
+  {
+   "page": 21,
+   "stored": "iriirapahaattu",
+   "blind_reading": "iriirapahaatu",
+   "kind": "differs",
+   "ratio": 0.963,
+   "where": "sections/morphemes_mentioned/form",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 21,
+   "stored": "iriwaaarukstiiʔu",
+   "blind_reading": "rakuwaarukstiiʔu",
+   "kind": "differs",
+   "ratio": 0.812,
+   "where": "sections/morphemes_mentioned/form",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 22,
+   "stored": "tuciraahawista",
+   "blind_reading": "tuctiraahawista",
+   "kind": "differs",
+   "ratio": 0.966,
+   "where": "sections/content",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "page": 23,
+   "stored": "INCH",
+   "blind_reading": "IND",
+   "kind": "not-found",
+   "ratio": 0.571,
+   "where": "sections/morphemes_mentioned/notes",
+   "grade": "unresolved",
+   "severity": 3
+  },
+  {
+   "page": 23,
+   "stored": "Input",
+   "blind_reading": "ut",
+   "kind": "not-found",
+   "ratio": 0.571,
+   "where": "sections/tables/rows",
+   "grade": "unresolved",
+   "severity": 3
+  },
+  {
+   "page": 23,
+   "stored": "-itiik",
+   "blind_reading": "itik",
+   "kind": "differs",
+   "ratio": 0.889,
+   "where": "sections/tables/rows",
+   "grade": "blind-reading",
+   "severity": 1
+  }
+ ]
+}

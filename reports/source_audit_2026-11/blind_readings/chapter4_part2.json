@@ -1,0 +1,329 @@
+{
+  "p9-b1": {
+    "book_page": "37",
+    "forms": [
+      ["uur-", "patient possession"],
+      ["tatuuhkuutit aruusaʔ", "I killed your horse"],
+      ["ta- IND.1/2.A + t- 1.A +a- 2.P + uur- PHY.POSS + kuutik ‘kill’ + -Ø PERF", ""],
+      ["ut-", "benefactive; dative"],
+      ["tatuutakusit", "I picked it up for them"],
+      ["ta- IND.1/2.A + t- 1.A + ut- BEN + ak- PL.BEN + kusik ‘pick up’ + -Ø PERF", ""],
+      ["wi-", "it is said"]
+    ],
+    "tables": [
+      {
+        "title": "Table 11. Evidential Prefixes: Meanings and Distributions",
+        "rows": [
+          ["Evidential", "Approximate gloss", "Co-occurring modes", "Position relative to modal", "Usage contexts", "Meaning"],
+          ["wi- QUOT", "‘it is said’", "Indicative", "Precedes", "Narratives, discourse", "Speaker is repeating what has been told"]
+        ]
+      }
+    ]
+  },
+  "p9-b2": {
+    "book_page": "",
+    "forms": [
+      ["wi-", "it is said"],
+      ["ar-", "evidently; it seems"],
+      ["ar-", ""],
+      ["ar-", "would"],
+      ["kuur-", "must have"],
+      ["kuurur-", "then (presumably)"],
+      ["tiir-", "must have"]
+    ],
+    "tables": [
+      {
+        "title": "",
+        "rows": [
+          ["wi- QUOT", "‘it is said’", "Indicative", "Precedes", "Narratives, discourse", "Speaker is repeating what has been told"],
+          ["ar- EV", "‘evidently; it seems’", "Absolutive Contingent", "Precedes", "Past activity or one begun", "Speaker has not witnessed an event Speaker cannot see a designated object"],
+          ["ar- EV", "", "Absolutive Contingent Potential Subjunctive", "Follows", "Unrealized activity", "Speaker will not witness an event"],
+          ["ar- EV", "‘would’ +V", "Indicative Infinitive", "Follows", "Periodic past activity, usu. indef. time", "Speaker describes an expected or normative activity"],
+          ["kuur- DUB.1", "‘must have’ + V", "Absolutive", "Precedes", "Narratives, accounts", "Speaker has not witnessed an event Statement indicates element of doubt"],
+          ["kuurur- DUB.2", "‘then (presumably)’ + V", "Contingent", "Precedes", "Sequential activity in narratives", "Speaker has not witnessed an event Statement indicates element of doubt"],
+          ["tiir- INFR", "‘must have’ + V", "Absolutive", "Precedes", "Narratives, conversations", "Speaker infers occurrence of event"]
+        ]
+      }
+    ]
+  },
+  "p10-b1": {
+    "book_page": "38",
+    "forms": [
+      ["witiʔitat", "there was a village"],
+      ["wi- QUOT + ti- IND+ Ø- 3.A + itak ‘be a village’ + -Ø PERF", ""],
+      ["kuuhasuutiirit aruusaʔ", "you must have seen the horse"],
+      ["kuur- DUB.1 + ra- ABS + Ø- 3.A + ut- PREV + iirik ‘see’ + -Ø PERF", ""],
+      ["kusaahkikat", "he might cry (at some future time when speaker will not see it)"],
+      ["kuus- POT.1/3.A+ Ø- 3.A + i- SEQ + ar- EV + kikak ‘cry’ + -Ø PERF", ""],
+      ["uks-", ""],
+      ["tatuksat", "I went"],
+      ["ta- IND.1/2.A + t- 1.A + uks- AOR + at ‘go’ + -Ø PERF", ""],
+      ["taatat", "I went"],
+      ["ta- IND.1/2.A + t- 1.A + at ‘go’ + -Ø PERF", ""],
+      ["tiihatuksitkaspaawaa", "I must have been eating in my sleep"],
+      ["tiir- INFR + ra- ABS + t- 1.A + uks- AOR + itkas ‘sleep’ + waawa- DIST + a ‘eat’ + -Ø PERF", ""]
+    ],
+    "tables": []
+  },
+  "p10-b2": {
+    "book_page": "",
+    "forms": [
+      ["uks-", ""],
+      ["sukskirikaʔaa", "wake up!"],
+      ["i- CONT.1/2.A+ s- 2.A + uks- JUSS + kirikaʔaar ‘wake up’ + -Ø PERF", ""],
+      ["ciksuhuurawaciruutit", "let’s go outside now!"],
+      ["i- CONT.1/2.A + acir- 1.DU.IN.A + uks- JUSS + uhuur- ‘finally’ + awacitik ‘go outside’ + ruu- DIST + -Ø PERF", ""],
+      ["ki-", ""],
+      ["ruukiitat", "let me go there"],
+      ["ruu- ‘there’ + ki- HORT + i- CONT.1/2.A + t- 1.A + at ‘go’ + -Ø PERF", ""],
+      ["kiʔitiksuhuuhkaaʔ", "let me dance now"],
+      ["ki- HORT + i- CONT.1/2.A+ t- 1.A + ir- PREV + uks- JUSS + uhuur- ‘at last’ + kaaʔa ‘dance’ + -Ø PERF", ""]
+    ],
+    "tables": []
+  },
+  "p11-b1": {
+    "book_page": "39",
+    "forms": [
+      ["Kiʔisukskuutiirit cikstit.", "Take a good look at me!"],
+      ["ki- HORT + i- CONT.1/2.A+ s- 2.A + uks- JUSS + ku- 1.P + ut- PREV + iirik ‘see, look at’ + -Ø PERF", ""],
+      ["pahiituʔ kaasikaa", "you must be quiet inside (there)"],
+      ["pahiit- quiet; slow’ + -uʔ NOM kaas- POT.2.A + s- 2.A + i- SEQ + kaa ‘inside’ + aah ‘go around’ + -Ø PERF", ""],
+      ["kaakiiraakii", "don’t be long"],
+      ["kaaki- NEG.IND + Ø- 3.A + i- SEQ + raakiir ‘be a long time’ + -Ø PERF", ""],
+      ["kariiriiraakii", "don’t be long!"],
+      ["karii- EMPH.NEG + rii- ASSR + Ø- 3.A + i- SEQ + raakiir ‘be a long time’ + -Ø PERF", ""],
+      ["Aaka, a raakutikuriiciwactaawiiʔat.", "Oh, you should help me!"],
+      [". . . a ‘and’ + raa- ‘just’ + ku- INDF + ti- IND + Ø- 3.A + a- PREV + ku- 1.P + ri-", ""]
+    ],
+    "tables": []
+  },
+  "p11-b2": {
+    "book_page": "",
+    "forms": [
+      ["+ raa- ‘just’ + ku- INDF + ti- IND + Ø- 3.A + a- PREV + ku- 1.P + ri- PHY.BEN + ut- PREV + i- SEQ + awahc- ‘at least’ + raawii’at ‘help’ + -Ø PERF", ""],
+      ["kararakuukiikahu", "don’t be drinking,"],
+      ["kara- NEG + ra- INF.A + Ø- 3.A + ku- INF.B + i- SEQ + kiikaa ‘drink’ + -hus IMPF", ""],
+      ["Taku rakuukaksa rakuracakipiitit capaat.", "Someone (should) call out for the women to gather!"],
+      ["ra- INF.A + Ø- 3.A + ku- INF.B + i- SEQ + kaksa ‘call out’ + -Ø SUB.4", ""],
+      ["uhuur-", "now, finally; a while"],
+      ["awahc-", "even, at least"],
+      ["tuksuhuuhwiitit", "let me sit down a while!"],
+      ["i- CONT.1/2.A + t- 1.A + uks- JUSS + uhuur- ‘a while’ + wiitik ‘sit down’ + -Ø PERF", ""]
+    ],
+    "tables": []
+  },
+  "p12-b1": {
+    "book_page": "40",
+    "forms": [
+      ["witi-", ""]
+    ],
+    "tables": [
+      {
+        "title": "Table 12. The Outer Prefix, or Proclitic, Template",
+        "rows": [
+          ["1", "2", "3", "4"],
+          ["LOC & TEMP ADVERBIALS", "INDEFINITE", "ADVERBIALS", "DEMONSTRATIVES / DEICTICS"],
+          ["5", "6", "7", "8"],
+          ["ADVERBIAL", "DUAL (PL) NUMBER", "REFLEXIVE / RECIPROCAL", "NEGATIVES, YES/NO INTERROG"]
+        ]
+      }
+    ]
+  },
+  "p12-b2": {
+    "book_page": "",
+    "forms": [
+      ["wititaatacikstariku", "I keep my thoughts to myself"],
+      ["witi- REFL + ta- IND.1/2.A + t- 1.A+ acikstarikus ‘hold one’s thoughts (to oneself)’ + -Ø PERF", ""],
+      ["siʔahawickaʔ siwitirakuutiirit", "they (DU) wanted to see each other"],
+      ["si- DU + ar- EV + ra- ABS + Ø- 3.A + wicka ‘wish, want’ + -Ø PERF si- DU + witi- REFL + ra- INF.A + Ø - 3.A + ku- INF.B + ut- PREV + iirik ‘see’ + -Ø PERF", ""],
+      ["kara-", ""],
+      ["wi-", ""],
+      ["ka-", ""],
+      ["kaaku-", ""],
+      ["karii . . . i-", ""]
+    ],
+    "tables": [
+      {
+        "title": "Table 13. Negative Prefixes",
+        "rows": [
+          ["Negative Prefix", "Function", "Modal Co-occurrences"],
+          ["kara- (NEG.1)", "Simple negative", "Indicative (+ wi- QUOT), Contingent, Absolutive, Conditional, Subjunctive, Infinitive"],
+          ["ka- (NEG.2)", "", "Absolutive, Gerundial, Infinitive"],
+          ["kaaku- (NEG.POSS)", "Negative possession", "Subjunctive (non-subordinate)"],
+          ["karii . . . i- (EMPH.NEG)", "Emphatic negative", "Assertive, Contingent, Absolutive"]
+        ]
+      }
+    ]
+  },
+  "p13-b1": {
+    "book_page": "41",
+    "forms": [
+      ["ka-", ""],
+      ["ka- . . . i-", ""],
+      ["takii", "who"],
+      ["kirikii", "what, why, how"],
+      ["kikii", "what, why, how"],
+      ["kickii", "how many"],
+      ["kiruu", "where"]
+    ],
+    "tables": [
+      {
+        "title": "Table 14. Interrogative Pronouns",
+        "rows": [
+          ["Interrogative Pronoun", "English Translation", "Modal Agreement"],
+          ["ka-", "yes-no question", "Absolutive mode"],
+          ["ka- . . . i-", "negative yes-no questions", ""],
+          ["takii", "‘who’", ""],
+          ["kirikii, kikii", "‘what, why, how’", ""],
+          ["kickii", "‘how many’", ""],
+          ["kiruu", "‘where’", ""]
+        ]
+      }
+    ]
+  },
+  "p13-b2": {
+    "book_page": "",
+    "forms": [
+      ["wii-", "now; when"],
+      ["wiitahurahwiicaʔ", "it is getting close now; it has come close now"],
+      ["wii- ‘now’ + ti- IND + Ø- 3.A + a- PREV + huraah- ‘land’ + wiic- ‘moving close to a point’ + a ‘come’ + -Ø PERF", ""],
+      ["wiirakuhuraahkiwatat", "when the season changes"],
+      ["wii- ‘when’ + ra- INF.A + Ø- 3.A + ku- INF.B + huraar- ‘earth’ + kiwatak ‘change’ + -Ø SUB.4", ""],
+      ["kawiirasiiraʔ", "have you come (i.e., arrived)?"],
+      ["ka- INTER + wii- ‘now’ + ra- ABS + s- 2.A + ir- PREV + a ‘come’ + -Ø PERF", ""],
+      ["ruu-", "then; there"],
+      ["ruuʔahiwakuʔ", "then he said"],
+      ["ruu- ‘then’ + ar- EV + ri- CONT.3.A + Ø- 3.A + wakaʔu ‘say’ + -Ø PERF", ""],
+      ["wiiruutisakuriisat", "then the sun set"],
+      ["wii- ‘now’ + ruu- ‘then’ + ti- IND + Ø- 3.A + sakur- ‘sun’ + iis- ‘out of sight’ + at ‘go’ + -Ø PERF", ""],
+      ["raa-", "just"],
+      ["raaruutikitaarit pah", "the moon was just on top"],
+      ["raa- ‘just’ + ruu- ‘then’ + ti- IND + Ø- 3.A + kitaarik ‘be standing on top’ + -Ø PERF", ""]
+    ],
+    "tables": []
+  },
+  "p14-b1": {
+    "book_page": "42",
+    "forms": [
+      ["iriruu-", "thereupon"],
+      ["iriruuriiwuʔ", "thereupon they went"],
+      ["iriruu- ‘thereupon’ + rii- ASSR + Ø- 3.A + wuu ‘go PL.3.A’ + -Ø PERF", ""],
+      ["tii-", "this; here"],
+      ["tiiʔahahaacca", "a log was lying here"],
+      ["tii- ‘here’ + ar- EV + ra- ABS + Ø- 3.A + haak- ‘wood’ + sa ‘be lying’ + -Ø PERF", ""],
+      ["ii-", "that; there"],
+      ["iiraaʔa", "when he came"],
+      ["ii- ‘then; when’ + ra- ABS + Ø- 3.A + a- PREV + a ‘come’ + -Ø SUB.4", ""],
+      ["iirahaacca", "that log (lying)"],
+      ["ii- ‘that’ + ra- ABS + Ø- 3.A + haak- ‘wood’ + sa ‘be lying’ + -Ø SUB.4", ""],
+      ["iri-", "that (generalized)"],
+      ["iriwiitaasasaa", "you are named that"],
+      ["iri- ‘that’ + wii- ‘now’ + ta- IND.-1/2.A + s- 2.A + asaar ‘be named’ + Ø ‘be’", ""]
+    ],
+    "tables": []
+  },
+  "p14-b2": {
+    "book_page": "",
+    "forms": [
+      ["1/2.A + s- 2.A + asaar ‘be named’ + Ø ‘be’", ""],
+      ["iriwiituraahi", "that is good"],
+      ["iri- ‘that’ + wii- ‘now’ + ti- IND + Ø- 3.A + uur- PREV + raahiir ‘be good’ + -Ø PERF", ""],
+      ["irii-", "what, where"],
+      ["ituuhaarikaaʔ iriiraskuutaara", "I’ll tell you what to do"],
+      ["i- CONT.1/2.A + t- 1.A + a- 2.P + ir- PREV + ut- PREV + raarikaaʔa ‘to tell to’ + -Ø PERF", ""],
+      ["iriiʔahaarasika icaas", "where he cooked Turtle"],
+      ["irii- ‘where’ + ar- EV + ra- ABS + Ø- 3.A + arasik ‘cook’ + -a SUB.1", ""],
+      ["tiiʔiriirasku", "here where you are"],
+      ["tii- ‘here’ + irii- ‘where’ + ra- ABS + s- 2.A + kus ‘be sitting’ + -Ø SUB.4", ""],
+      ["riku-", "the one that/who; what"],
+      ["rikuʔahiʔ", "he was the one; that was the one"],
+      ["riku- ‘the one that’ + ar- EV + ri- CONT.3.A + Ø ‘be’ + -Ø PERF", ""],
+      ["hii-", "other"],
+      ["hiiraasa", "the other one (lying)"],
+      ["hii- ‘other’ + ra- ABS + sa ‘be lying’ + -Ø SUB.4", ""],
+      ["tiihiiraaʔa", "this other one who came"],
+      ["tii- ‘this’ + hii- ‘other’ + ra- ABS + Ø- 3.A + a- PREV + a ‘come’ + -Ø SUB.4", ""]
+    ],
+    "tables": []
+  },
+  "p15-b1": {
+    "book_page": "43",
+    "forms": [
+      ["-uʔ", ""],
+      ["-kis", ""],
+      ["si-", ""],
+      ["raar-", ""],
+      ["siwituksakitaahku", "there were two tribes"],
+      ["si- DU + wi- QUOT + ti- IND + Ø- 3.A + uks- AOR + akitaar- ‘tribe’ + kus ‘be sitting’ + -Ø PERF", ""],
+      ["ahikiistacakipu", "he gathered the bones"],
+      ["ar- EV + ri- CONT.3.A + Ø- 3.A +", ""]
+    ],
+    "tables": []
+  },
+  "p15-b2": {
+    "book_page": "",
+    "forms": [
+      ["ahikiistacakipu", "he gathered the bones"],
+      ["ar- EV + ri- CONT.3.A + Ø- 3.A + kiis- ‘bone’ + raar- PL + takipuh ‘gather’ + -Ø PERF", ""],
+      ["iiwiirasakuriisata", "as the sun set"],
+      ["ii- ‘when’ + wii- ‘now’ + ra- ABS + Ø- 3.A + sakur- ‘sun’ + iisat ‘go out of sight; set’ + -a SUB.1", ""],
+      ["riihiikakuspihat", "I moved the door flap aside"],
+      ["rii- ASSR + t- 1.A + riikakus- ‘door flap’ + wihak ‘move aside’ + -Ø PERF", ""],
+      ["tuuricaahiksii", "he is a good-looking person"],
+      ["ti- IND + Ø- 3.A + uur- PREV + icaahiks ‘person’ + hiir ‘be good looking’ + -Ø PERF", ""]
+    ],
+    "tables": []
+  },
+  "p16-b1": {
+    "book_page": "44",
+    "forms": [
+      ["iriiruurakuurahuraaru", "whatever the kind of animal was,’ that is, ‘all kinds of animals"],
+      ["irii- ‘the one’ + ruu- ‘there’ + ra- INF.A + Ø- 3.A + ku- INF.B + i- SEQ + rahuraar- ‘animal’ + -u SUB.D", ""],
+      ["raar-", ""],
+      ["ka-", ""],
+      ["awi-", "image"],
+      ["wak-", "sound"],
+      ["kasis", "hard"],
+      ["tarahkis", "strong"],
+      ["ri-", ""],
+      ["ra-", ""],
+      ["ruu-", ""],
+      ["cir-", ""],
+      ["ciras-", ""],
+      ["ka-", "on"],
+      ["kaa-", "inside"],
+      ["kiikak", "drink"],
+      ["-his", ""],
+      ["at", "go"],
+      ["-rik", ""],
+      ["-raʔuk", ""]
+    ],
+    "tables": [
+      {
+        "title": "Table 15. The Verb Stem Template",
+        "rows": [
+          ["1. Iterative", "2. Noun", "3. Descriptive Stem", "4. Portative/ Comitative", "5. Locative"],
+          ["raar-, ka- ITER", "awi- ‘image’ wak- ‘sound’", "kasis ‘hard’ tarahkis ‘strong’", "ri-, ra-, ruu- PORT cir-, ciras- COM", "ka- ‘on’ kaa- ‘inside’"],
+          ["6. Active Verb Complement", "7. Verb Root", "8. Causative"],
+          ["kiikak ‘drink’ + -his PERF", "at ‘go’", "-rik, -raʔuk"]
+        ]
+      }
+    ]
+  },
+  "p16-b2": {
+    "book_page": "",
+    "forms": [
+      ["-u", ""],
+      ["-wi", ""]
+    ],
+    "tables": [
+      {
+        "title": "Table 16. Verb Suffix Template",
+        "rows": [
+          ["25", "26", "27", "28"],
+          ["VERB STEM", "PERFECTIVE, PERFECTIVE SUBORDINATE, IMPERFECTIVE, IMPERFECTIVE SUBORDINATE", "INTENTIVE, HABITUAL, INCHOATIVE", "INTENTIVE SUBORDINATE"]
+        ]
+      }
+    ]
+  }
+}

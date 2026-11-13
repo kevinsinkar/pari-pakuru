@@ -13,6 +13,7 @@ stage was *asked* to do; read the project log and `reports/` to see what it did.
 | `Phase_1_1_Pronunciation_Respelling_Roadmap.md` | 2026-03 | The design of the learner respelling: which English letters stand for which sound, and why |
 | `phase_3_2a_sentence_templates.md` | 2026-03-20 | The design of the sentence builder: the ten templates and the Blue Book sentences each comes from |
 | `skiri_word_construction_v2.md` | 2026-11-12 | The instruction for the word-construction analysis in `curriculum/roots_v2/`: what "bulletproof" means, the evidence channels, the ground rules |
+| `source_fidelity_audit.md` | 2026-11-13 | The instruction for the source-fidelity audit in `reports/source_audit_2026-11/`: full coverage, two readings with the page image deciding, the stages, the checkpoint file that lets an interrupted run be picked up, the grades of evidence. Nothing is applied by the audit |
 
 ## Things to know
 

@@ -1,0 +1,55 @@
+{
+ "rows": 164,
+ "values_checked": 411,
+ "values_printed": 407,
+ "differences": [
+  {
+   "id": 35,
+   "abbreviation": "ABS",
+   "field": "meaning",
+   "stored": "absolutative mode prefix",
+   "printed_nearest": "absolutive mode prefix",
+   "ratio": 0.909,
+   "pieces_not_printed": [],
+   "grade": "text-layer",
+   "severity": 3
+  },
+  {
+   "id": 58,
+   "abbreviation": "(1-a)",
+   "field": "meaning",
+   "stored": "verb class 1-a",
+   "printed_nearest": "verb class 1: -a",
+   "ratio": 0.957,
+   "pieces_not_printed": [],
+   "grade": "text-layer",
+   "severity": 3
+  },
+  {
+   "id": 138,
+   "abbreviation": "PL",
+   "field": "morpheme_form",
+   "stored": "ak-, ir-, raak-, raar-/rab-",
+   "printed_nearest": "ak-, ir-, raak-, raar-/rah",
+   "ratio": 0.947,
+   "pieces_not_printed": [
+    "rab"
+   ],
+   "grade": "text-layer",
+   "severity": 1
+  },
+  {
+   "id": 153,
+   "abbreviation": "REFL",
+   "field": "morpheme_form",
+   "stored": "witii-",
+   "printed_nearest": "witi-)",
+   "ratio": 0.8,
+   "pieces_not_printed": [
+    "witii"
+   ],
+   "grade": "text-layer",
+   "severity": 1
+  }
+ ]
+}

@@ -1,0 +1,263 @@
+{
+ "_about": "What is printed at the ticked character on each row of the contact sheets (work/char_sheets/sheet_NN.png), read 2026-11-13 from the images before the key was opened. 'printed' is the glyph; 'seen' is how many occurrences on the sheets show it.",
+ "K01": {
+  "printed": "í",
+  "seen": "8 of 8",
+  "note": "i with acute: piíta, kariíkuʔ, cíkic, hiítuʔ, pítku, díʔida"
+ },
+ "K02": {
+  "printed": ",",
+  "seen": "4 of 4",
+  "note": "comma between two phonetic variants"
+ },
+ "K03": {
+  "printed": "•",
+  "seen": "4 of 4",
+  "note": "a raised dot between syllables: tə•rɪ•kə, kɪ•tuu"
+ },
+ "K04": {
+  "printed": "‘",
+  "seen": "4 of 4",
+  "note": "opening single quotation mark before an English gloss"
+ },
+ "K05": {
+  "printed": "í",
+  "seen": "12 of 12",
+  "note": "i with acute, every time directly after a plain i: rií, siís, kií, pií, tií, hií"
+ },
+ "K06": {
+  "printed": "ú",
+  "seen": "12 of 12",
+  "note": "u with acute, every time directly after a plain u: suú, ruú, kuú, tuú, huú"
+ },
+ "K07": {
+  "printed": "?",
+  "seen": "8 of 8",
+  "note": "a question mark ending a Skiri question: asku?, kitaa?"
+ },
+ "K08": {
+  "printed": "š",
+  "seen": "8 of 8",
+  "note": "s with caron, in citations from other languages: neešaá-, tiš, čeeriš, heduška"
+ },
+ "K09": {
+  "printed": "á",
+  "seen": "8 of 8",
+  "note": "a with acute, in citations: káhtš, anátš, oowátkAt, okáxpa"
+ },
+ "K10": {
+  "printed": "ɪ̀",
+  "seen": "7 of 7",
+  "note": "a stem with grave, always a single short vowel: wɪ̀, rɪ̀, kɪ̀. At higher zoom the stem has the hooked foot of the lax i"
+ },
+ "K11": {
+  "printed": "ó",
+  "seen": "8 of 8",
+  "note": "o with acute, in citations: koóRUx, tstoóxuʔ, aapiróx, ištóh"
+ },
+ "K12": {
+  "printed": "ą",
+  "seen": "6 of 6",
+  "note": "a with ogonek (nasal a): hoočąk, hoočągra, hą, mąhą"
+ },
+ "K13": {
+  "printed": "ə̀",
+  "seen": "5 of 5",
+  "note": "schwa with grave: rəh•kə̀•tə, rə•rə̀h•kaa"
+ },
+ "K14": {
+  "printed": "ù",
+  "seen": "2 of 2",
+  "note": "u with grave directly after a plain u: tə•ruù•wə"
+ },
+ "K15": {
+  "printed": ".",
+  "seen": "4 of 4",
+  "note": "a full stop, one of the three in (ʊt...)"
+ },
+ "K16": {
+  "printed": "ʊ̀",
+  "seen": "3 of 3",
+  "note": "lax u (upsilon shape) with grave: sə•kʊ̀•hə"
+ },
+ "K17": {
+  "printed": "í",
+  "seen": "8 of 8",
+  "note": "i with acute, in citations and Skiri: aahniítuʔ, teehiítuʔ, awíya, kUxíniʔ"
+ },
+ "K18": {
+  "printed": "ú",
+  "seen": "8 of 8",
+  "note": "u with acute: kAhuúnuʔ, WAhúruʔ, napaʔút, teškúNIt"
+ },
+ "K19": {
+  "printed": "'",
+  "seen": "4 of 4",
+  "note": "straight apostrophe in English: someone's, one's, spirit's"
+ },
+ "K20": {
+  "printed": "Ȟ",
+  "seen": "2 of 2",
+  "note": "a capital-height H with a caron above it, inside a word: upaȞks-. The same word twice. At higher zoom: a capital H with a caron. The word is rihkuupaȞks-tarit in an example sentence"
+ },
+ "K21": {
+  "printed": "ə́",
+  "seen": "12 of 12",
+  "note": "schwa with acute: kə́h, ə́•taa, tskə́, rə́•kɪts, ə́s•kʊ"
+ },
+ "K22": {
+  "printed": "à",
+  "seen": "2 of 2",
+  "note": "a with grave directly after a plain a: rə•raàh•kə"
+ },
+ "K23": {
+  "printed": "•",
+  "seen": "4 of 4",
+  "note": "a large bullet between example sentences"
+ },
+ "K24": {
+  "printed": "á",
+  "seen": "12 of 12",
+  "note": "a with acute, every time directly after a plain a: paá, haá, raá, taá, čaá, saá"
+ },
+ "K25": {
+  "printed": "ⁱ",
+  "seen": "4 of 4",
+  "note": "a small raised i: atⁱnátš, tⁱnaakA"
+ },
+ "K26": {
+  "printed": "é",
+  "seen": "8 of 8",
+  "note": "e with acute, in citations: šaahéʔ, sčéš, šeéNIt, tičeé, čeésuʔ"
+ },
+ "K27": {
+  "printed": "'",
+  "seen": "9 of 9",
+  "note": "a straight apostrophe inside a Skiri word where a glottal stop is expected: ra'uk, ahwa'ac, sit+a'u, ka'uk"
+ },
+ "K28": {
+  "printed": "Ø",
+  "seen": "4 of 4",
+  "note": "the null sign"
+ },
+ "K29": {
+  "printed": "ʔ",
+  "seen": "4 of 4",
+  "note": "glottal stop, drawn small and raised: htataʔuuku, tuuʔut, raaruʔat"
+ },
+ "K30": {
+  "printed": "ì",
+  "seen": "2 of 2",
+  "note": "i with grave directly after a plain i: kɪ•čiì"
+ },
+ "K31": {
+  "printed": "č",
+  "seen": "4 of 4",
+  "note": "c with caron in a phonetic form: čaát, čə́•čɪk"
+ },
+ "K32": {
+  "printed": "ą́",
+  "seen": "2 of 2",
+  "note": "a with ogonek and acute: umą́hą"
+ },
+ "K33": {
+  "printed": "ž",
+  "seen": "4 of 4",
+  "note": "z with caron: wažáže (the same word four times)"
+ },
+ "K34": {
+  "printed": "’",
+  "seen": "4 of 4",
+  "note": "closing single quotation mark after an English gloss"
+ },
+ "K35": {
+  "printed": "ʊ",
+  "seen": "4 of 4",
+  "note": "lax u: rʊ, kʊ, wʊs"
+ },
+ "K36": {
+  "printed": "’",
+  "seen": "2 of 2",
+  "note": "a curly apostrophe at the end of a Skiri-font word: wuhu’ (the same place twice)"
+ },
+ "K37": {
+  "printed": "č",
+  "seen": "8 of 8",
+  "note": "c with caron in citations: huučíRIt, nehčítA, čis+wi, sčéš"
+ },
+ "K38": {
+  "printed": "ɪ",
+  "seen": "4 of 4",
+  "note": "lax i, drawn as a stem with no dot: čɪ, wɪ, kɪ, rɪ"
+ },
+ "K39": {
+  "printed": "!",
+  "seen": "4 of 4",
+  "note": "exclamation mark ending a Skiri command: uksat!, iihac!"
+ },
+ "K40": {
+  "printed": "j",
+  "seen": "2 of 2",
+  "note": "j in páxoje"
+ },
+ "K41": {
+  "printed": "á",
+  "seen": "7 of 7",
+  "note": "a with acute in the serif font: taátuʔ, sát, áwiʔu, rákis, paátuʔ, ásku, haátuʔ"
+ },
+ "K42": {
+  "printed": "b",
+  "seen": "6 of 6",
+  "note": "b, every time in the English abbreviation 'prob.' inside an etymology bracket. Not a Skiri letter"
+ },
+ "K43": {
+  "printed": "d",
+  "seen": "4 of 4",
+  "note": "d in the English words 'islands' and 'lands' in italic sans. Not a Skiri letter"
+ },
+ "K44": {
+  "printed": "ʔ",
+  "seen": "8 of 8",
+  "note": "glottal stop, small and raised, in the serif font: -aʔu, -huʔ, -hiriʔ, aátuʔ, iíkuʔ"
+ },
+ "K45": {
+  "printed": "ɪ́",
+  "seen": "12 of 12",
+  "note": "a stem with acute, every time a single short vowel, never after a plain i: kɪ́•tuu, rɪ́h, kɪ́ts, pɪ́•čuu. At higher zoom (work/char_sheets/zoom.png) the stem has the hooked foot of the lax i, which the tense í of K05 does not"
+ },
+ "K46": {
+  "printed": "Ø",
+  "seen": "2 of 2",
+  "note": "the null sign in the serif font: (Ø-)"
+ },
+ "K47": {
+  "printed": "ʔ",
+  "seen": "4 of 4",
+  "note": "glottal stop in a phonetic form: rʊʔ, wi•ʔuʔ"
+ },
+ "K48": {
+  "printed": "į",
+  "seen": "2 of 2",
+  "note": "i with ogonek, last letter of ppádį (the same word twice)"
+ },
+ "K49": {
+  "printed": "ə",
+  "seen": "4 of 4",
+  "note": "schwa"
+ },
+ "K50": {
+  "printed": "ʊ́",
+  "seen": "12 of 12",
+  "note": "lax u (upsilon shape) with acute, a single short vowel: rʊ́, kʊ́, sʊ́, čʊ́, ʊ́•kə"
+ },
+ "K51": {
+  "printed": "–",
+  "seen": "4 of 4",
+  "note": "a dash at the edge of a phonetic form, just inside the bracket: [–ruu, –]"
+ },
+ "K52": {
+  "printed": "?",
+  "seen": "8 of 8",
+  "note": "a question mark set in a third font inside words cited from other languages, where those languages have a glottal stop: k?ygú, dí?ida, sariit?hkat?. At higher zoom it is an ordinary question mark with its dot"
+ }
+}

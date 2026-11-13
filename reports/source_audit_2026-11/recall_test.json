@@ -1,0 +1,94 @@
+{
+ "seed": 20261113,
+ "planted": 510,
+ "caught": 510,
+ "recall": 1.0,
+ "by_kind": {
+  "a consonant changed in a verb form": {
+   "planted": 30,
+   "caught": 30,
+   "recall": 1.0
+  },
+  "h written as b in a verb form": {
+   "planted": 30,
+   "caught": 30,
+   "recall": 1.0
+  },
+  "a glottal stop dropped from an example": {
+   "planted": 30,
+   "caught": 30,
+   "recall": 1.0
+  },
+  "a long vowel shortened in a verb form": {
+   "planted": 30,
+   "caught": 30,
+   "recall": 1.0
+  },
+  "a space put inside an example word": {
+   "planted": 30,
+   "caught": 30,
+   "recall": 1.0
+  },
+  "an accent dropped from the IPA": {
+   "planted": 30,
+   "caught": 30,
+   "recall": 1.0
+  },
+  "a lax vowel made tense in the IPA": {
+   "planted": 30,
+   "caught": 30,
+   "recall": 1.0
+  },
+  "a consonant changed in the IPA": {
+   "planted": 30,
+   "caught": 30,
+   "recall": 1.0
+  },
+  "a letter changed in a gloss": {
+   "planted": 30,
+   "caught": 30,
+   "recall": 1.0
+  },
+  "an example translation cut short": {
+   "planted": 30,
+   "caught": 30,
+   "recall": 1.0
+  },
+  "a consonant changed in an etymology": {
+   "planted": 30,
+   "caught": 30,
+   "recall": 1.0
+  },
+  "a letter changed in a cognate": {
+   "planted": 30,
+   "caught": 30,
+   "recall": 1.0
+  },
+  "the grammatical class changed": {
+   "planted": 30,
+   "caught": 30,
+   "recall": 1.0
+  },
+  "the verb class changed": {
+   "planted": 30,
+   "caught": 30,
+   "recall": 1.0
+  },
+  "a sense deleted": {
+   "planted": 30,
+   "caught": 30,
+   "recall": 1.0
+  },
+  "an example deleted": {
+   "planted": 30,
+   "caught": 30,
+   "recall": 1.0
+  },
+  "an entry deleted": {
+   "planted": 30,
+   "caught": 30,
+   "recall": 1.0
+  }
+ },
+ "missed": []
+}

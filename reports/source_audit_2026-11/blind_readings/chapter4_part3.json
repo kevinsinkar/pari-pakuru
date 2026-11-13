@@ -1,0 +1,325 @@
+{
+  "p17-b1": {
+    "book_page": "45",
+    "forms": [
+      ["-Ø /-ʔ", ""],
+      ["-his", ""],
+      ["-a", ""],
+      ["-i", ""],
+      ["-Ø", ""],
+      ["-his + -ta", ""],
+      ["-his + -ta + -rit", ""]
+    ],
+    "tables": [
+      {
+        "title": "Table 17. Suffixes for Aspect and Subordination",
+        "rows": [
+          ["Categories", "Suffixes"],
+          ["Perfective/ Imperfective", "Non-Intentive/Intentive Habitual/Inchoative", "Non-Subordinate/ Subordinate", ""],
+          ["Perfective", "Non-intentive", "Non-subordinate", "-Ø /-ʔ"],
+          ["", "", "", "-his (when incorporated)"],
+          ["", "", "Subordinate", "Class I", "-a"],
+          ["", "", "", "Class II", "-i"],
+          ["", "", "", "Class III", "final syllable change"],
+          ["", "", "", "Class IV", "-Ø"],
+          ["", "Intentive", "Non-subordinate", "-his + -ta"],
+          ["", "", "Subordinate", "-his + -ta + -rit"]
+        ]
+      }
+    ]
+  },
+  "p17-b2": {
+    "book_page": "",
+    "forms": [
+      ["-:huʔ", ""],
+      ["-:hus", ""],
+      ["-hu", ""],
+      ["-:hus + -ta", ""],
+      ["-:husta", ""],
+      ["-hus + -ta +-rit", ""],
+      ["-hustarit", ""],
+      ["-:hus + -itik", ""],
+      ["-:husitit", ""],
+      ["-hus + -itik", ""],
+      ["-husitit", ""],
+      ["-:hus + -uukuʔ", ""],
+      ["-:husuukuʔ", ""],
+      ["-hus + -uku", ""],
+      ["-husuku", ""],
+      ["-his", ""],
+      ["k", ""],
+      ["Vk", ""],
+      ["-s", ""],
+      ["-his", ""]
+    ],
+    "tables": [
+      {
+        "title": "[continuation of Table 17; title not in this tile]",
+        "rows": [
+          ["Imperfective", "Non-intentive", "Non-subordinate", "-:huʔ"],
+          ["", "", "", "-:hus (when incorporated)"],
+          ["", "", "Subordinate", "-hu"],
+          ["", "Intentive", "Non-subordinate", "-:hus + -ta", "→", "-:husta"],
+          ["", "", "Subordinate", "-hus + -ta +-rit", "→", "-hustarit"],
+          ["", "Inchoative", "Non-subordinate", "-:hus + -itik", "→", "-:husitit"],
+          ["", "", "Subordinate", "-hus + -itik", "→", "-husitit"],
+          ["", "Habitual", "Non-subordinate", "-:hus + -uukuʔ", "→", "-:husuukuʔ"],
+          ["", "", "Subordinate", "-hus + -uku", "→", "-husuku"]
+        ]
+      }
+    ]
+  },
+  "p18-b1": {
+    "book_page": "46",
+    "forms": [
+      ["-ta", ""],
+      ["-his", ""],
+      ["tihuras", "he found it"],
+      ["ti- IND + Ø- 3.A + huras ‘find’ + -Ø PERF", ""],
+      ["tihurasista", "he is going to find it"],
+      ["ti- IND + Ø- 3.A + huras ‘find’ + -his PERF + -ta INT", ""],
+      ["tikikat", "he cried"],
+      ["ti- IND + Ø- 3.A + kikak ‘cry’ + -Ø PERF", ""],
+      ["tikikaksta", "he is going to cry"],
+      ["ti- IND + Ø- 3.A + kikak ‘cry’ + -his PERF + -ta INT", ""],
+      ["takikaksaʔ", "he came crying"],
+      ["ti- IND + Ø- 3.A + a- PREV.3.A + kikak ‘cry’ + -his PERF + a ‘come’ + -Ø PERF", ""],
+      ["-Ø", ""],
+      ["raskuhisaaska", "for you to call him"],
+      ["ra- INF.A + s- 2.A + ku- INF.B + hisaask ‘call’ + -a SUB.1", ""]
+    ],
+    "tables": []
+  },
+  "p18-b2": {
+    "book_page": "",
+    "forms": [
+      ["+ hisaask ‘call’ + -a SUB.1", ""],
+      ["ratkuhurasi", "for me to find him"],
+      ["ra- INF.A + t- 1.A + ku- INF.B + huras ‘find’ + -i SUB.2", ""],
+      ["i", ""],
+      ["i", ""],
+      ["i", ""],
+      ["-i", ""],
+      ["as-i (uur...)", "to run"],
+      ["itk-i (ut...)", "to dream about"],
+      ["i", ""],
+      ["uc-i", "to be lying"],
+      ["uc", "be lying"],
+      ["ucista", "is going to lie"],
+      ["uci", "be lying"],
+      ["uciihuʔ", "be lying"],
+      ["uciihusta", "is going to be lying"],
+      ["ucihu", "be lying"],
+      ["tiruʔ", "he made it"],
+      ["ti- IND + Ø- 3.A + raʔuk ‘make’ + -Ø PERF", ""],
+      ["wiiraraʔu", "when he made it"],
+      ["wii- ‘now’ + ra- ABS + Ø- 3.A + raʔuk ‘make’ + SUB.3", ""],
+      ["iriirakikat", "where he cried"],
+      ["irii- ‘where’ + ra- ABS + Ø- 3.A + kikak ‘cry’ + -Ø SUB.4", ""],
+      ["-:hus", ""]
+    ],
+    "tables": []
+  },
+  "p19-b1": {
+    "book_page": "47",
+    "forms": [
+      ["-:hus", ""],
+      ["-:hus", ""],
+      ["s", ""],
+      ["-:hus", ""],
+      ["-ta", ""],
+      ["tikacaakuʔ", "he is cutting it"],
+      ["ti- IND + Ø - 3.A + kacak ‘cut, chop’ + -:hus IMPF", ""],
+      ["tikacat", "he cut it"],
+      ["ti- IND + Ø- 3.A + kacak ‘cut’ + -Ø PERF", ""],
+      ["tikiikaahuʔ", "he is drinking it"],
+      ["ti- IND + Ø- 3.A + kiikaa ‘drink’ + -:hus IMPF", ""],
+      ["tikiikaahusta", "he is going to be drinking it"],
+      ["ti- IND + Ø- 3.A + kiikaa ‘drink’ + -:hus IMPF + -ta INT", ""],
+      ["Tarahaʔ Takiikaahusaʔ", "Buffalo Comes to Drink"],
+      ["ti- IND + Ø- 3.A + a- PREV+ kiikaa ‘drink’ + -:hus IMPF + a ‘come’ + -Ø PERF", ""],
+      ["-hus", ""],
+      ["-hus", ""],
+      ["u", ""],
+      ["-hus", ""],
+      ["-hu", ""],
+      ["raakuraarahu", "for them to be coming"],
+      ["ra- INF.A + Ø- 3.A + a- PREV + ku- INF.B + raar- 3.P.INDV.A + a ‘come’ + -hus IMPF.SUB", ""],
+      ["taraaraahuʔ", "they are coming"]
+    ],
+    "tables": []
+  },
+  "p19-b2": {
+    "book_page": "",
+    "forms": [
+      ["taraaraahuʔ", "they are coming"],
+      ["iriirakiwaku", "the one that barked"],
+      ["irii- ‘the one’ + ra- ABS + Ø- 3.A + kiwak ‘bark’ + -hus IMPF.SUB", ""],
+      ["tikiwaaku’", "it’s barking"],
+      ["ti- IND + Ø- 3.A + kiwak ‘bark’ + -:hus IMPF", ""],
+      ["-ta", ""],
+      ["-ta", ""],
+      ["taturaaʔiiwaatista", "I am going to tell a story"],
+      ["ta- IND.1/2.A + t- 1.A + uur- PREV + raaʔiiwaat ‘tell a story’ + -his PERF + -ta INT", ""],
+      ["iriwiitataraahisaaskusta", "I am going to be calling you (by a certain kinship term)"],
+      ["iri- ‘that’ + wii- ‘now’ + ta- IND.1/2.A + t- 1.A + a- 2.P + raahisaask ‘call, address (by a kin term)’ + -:hus IMPF + -ta INT", ""],
+      ["iriwii-tataraahisaaskuʔ", "I call you (by a certain kinship term)"],
+      ["-rit", ""],
+      ["-ta", ""],
+      ["-rit", ""]
+    ],
+    "tables": []
+  },
+  "p20-b1": {
+    "book_page": "48",
+    "forms": [
+      ["wiiruuhaasitikstarit", "when it is going to occur"],
+      ["wii- ‘now’ + ri- CONT.3.A + ut- PREV + raasiktik ‘happen, occur’ + -his PERF + -ta INT + -rit INT.SUB", ""],
+      ["wiiruuhaasitikustarit", "when it is going to be happening"],
+      ["wii- ‘now’ + ri- CONT.3.A + ut- PREV + raasiktik ‘happen, occur’ + -hus IMPF + -ta INT + -rit INT.SUB", ""],
+      ["-itik", ""],
+      ["-itik", ""],
+      ["tiwaawaktiikusitit", "he began talking"],
+      ["ti- IND + Ø- 3.A + waawaktik ‘talk’ -:hus IMPF + -itik INCH", ""],
+      ["riitapaawarikusitit rikucki", "I began shooting birds"],
+      ["rii- ASSR + t- 1.A + ak- 3.P.AN.I + waa- DIST + warik ‘shoot at’ + -hus IMPF + -itik INCH", ""],
+      ["-uukuʔ/-uku", ""],
+      ["-uukuʔ", ""],
+      ["uu", ""],
+      ["u", ""]
+    ],
+    "tables": []
+  },
+  "p20-b2": {
+    "book_page": "",
+    "forms": [
+      ["witiicikstaawariihusuukuʔ rakis", "they used to gather wood"],
+      ["wi- QUOT + ti- IND + Ø- 3.A + ir- 3.P.COLL.A+ ut- PREV + i- SEQ + uks- AOR + raawarii ‘gather; go around gathering’ + -hus IMPF + -uukuʔ HAB", ""],
+      ["ahicikstaawarii-husuku", "when they went to gather them"],
+      ["ar- EV + ri- CONT.3.A + Ø- 3.A + ir- 3.P.COLL.A + ut- PREV + i- SEQ + uks- AOR + raawarii ‘gather; go around gathering’ + -hus IMPF + -uku HAB.SUB", ""],
+      ["ahukspaktikusuku", "the one who used to announce (i.e., camp crier)"],
+      ["ar- EV + ra- ABS + Ø- 3.A + uks- AOR + paktik ‘announce’ + -hus IMPF + -uku HAB.SUB", ""]
+    ],
+    "tables": []
+  },
+  "p21-b1": {
+    "book_page": "49",
+    "forms": [
+      ["uk", "to exist, be"],
+      ["uk", ""],
+      ["Vᵢ(Vᵢ) → Vᵢ(Vᵢ)ʔVᵢ / C _ C + uk (+ NON-SUB)", ""],
+      ["tipahaaʔat", "it is red"],
+      ["ti- IND + Ø- 3.A + pahaat ‘be red’ + -uk ‘be’", ""],
+      ["iriirapahaatu", "the one that is red"],
+      ["tihuraahtarariʔit", "the ground is burned off"],
+      ["ti- IND + Ø- 3.A + huraar- ‘ground’ + tararit ‘be burned, scorched’ + -uk ‘be’", ""],
+      ["iriiratarariitu", "where it is scorched"]
+    ],
+    "tables": []
+  },
+  "p21-b2": {
+    "book_page": "",
+    "forms": [
+      ["tiwaarukstiʔ", "he is holy"],
+      ["ti- IND + Ø- 3.A + waarukstii ‘be holy’ + -uk ‘be’", ""],
+      ["rakuwaarukstiiʔu", "for one to be holy"],
+      ["takuctaris", "the bucket is heavy"],
+      ["ti- IND + Ø- 3.A + a- PREV + kuc- ‘bucket’ + taris ‘be heavy’ + -uk ‘be’", ""],
+      ["-ta", ""],
+      ["STEM + -uk ‘be’ + -his PERF + -ta", ""],
+      ["STEM + -uksta", ""],
+      ["tiwakarahiisuksta", "he is going to have a raspy voice"],
+      ["ti- IND + Ø- 3.A + wakarahiis ‘be raspy voiced’ + -uk; ‘be’ + -his PERF + -ta INT", ""],
+      ["tipahaatuksta", "it is going to be red"],
+      ["ti- IND + Ø- 3.A + pahaat ‘be red’ + uk ‘be’ + -his PERF + -ta INT", ""],
+      ["uk", "to be"],
+      ["-u", ""],
+      ["iriirapahaatu", "the one that is red"],
+      ["irii- ‘the one’ + ra- ABS + Ø- 3.A + pahaat ‘red’ + -uk SUB.D", ""]
+    ],
+    "tables": []
+  },
+  "p22-b1": {
+    "book_page": "50",
+    "forms": [
+      ["iriirawakarahiisu", "the one who has a raspy voice"],
+      ["irii- ‘the one’ + ra- ABS + Ø- 3.A + wakarahiis ‘be raspy voiced’ + -uk SUB.D", ""],
+      ["-aar", "become, get"],
+      ["-aar", ""],
+      ["-aar + -Ø", ""],
+      ["-aa", ""],
+      ["-aar + -a", ""],
+      ["-aara", ""],
+      ["-aar + -his + -ta", ""],
+      ["-aarista", ""],
+      ["-aar + -i", ""],
+      ["-aariʔ", ""],
+      ["-aar + -i", ""],
+      ["-aari", ""],
+      ["-wi", ""]
+    ],
+    "tables": [
+      {
+        "title": "[untitled list of the principal forms of -aar as a suffix for descriptive verbs]",
+        "rows": [
+          ["-aar + -Ø", "PERF", "→", "-aa"],
+          ["-aar + -a", "PERF.SUB", "→", "-aara"],
+          ["-aar + -his + -ta", "PERF.INT", "→", "-aarista"],
+          ["-aar + -i", "IMPF", "→", "-aariʔ"],
+          ["-aar + -i", "IMPF.SUB", "→", "-aari"]
+        ]
+      }
+    ]
+  },
+  "p22-b2": {
+    "book_page": "",
+    "forms": [
+      ["tiikita aruusaʔ", "he is riding the horse"],
+      ["ti- IND + Ø- 3.A + ikita ‘be astride’+ -Ø PERF", ""],
+      ["tikawihaahka", "the projectile is on (i.e., attached to) the end of the shaft"],
+      ["ti- IND + Ø- 3.A + kawihaar- ‘projectile’ + ka ‘be on’ + -Ø PERF", ""],
+      ["-wi + -his PERF + -ta INT", ""],
+      ["-wista", ""],
+      ["tuctiraahawista", "it is going to be tilted"],
+      ["ti- IND + Ø- 3.A + ut- PREV + tiraaha ‘be tilted’ + -wi SUB.L + -his PERF + -ta INT", ""],
+      ["-wi", ""],
+      ["rakukatawi", "to be against"],
+      ["ra- INF.A + Ø- 3.A + ku- INF.A + kata ‘be against (a vertical surface)’ + -wi SUB.L", ""]
+    ],
+    "tables": []
+  },
+  "p23-b1": {
+    "book_page": "51",
+    "forms": [
+      ["-wi", ""],
+      ["-itik", ""],
+      ["-itik + -Ø", ""],
+      ["-itit", ""],
+      ["-itik + -Ø", ""],
+      ["-itit", ""],
+      ["-itik + -his + -ta", ""],
+      ["-itiksta", ""],
+      ["-itik + -:hus", ""],
+      ["-itiikuʔ", ""],
+      ["-itik + -hus", ""],
+      ["-itiku", ""]
+    ],
+    "tables": [
+      {
+        "title": "[untitled list of the inchoative forms of locative verbs]",
+        "rows": [
+          ["-itik + -Ø", "PERF", "→", "-itit"],
+          ["-itik + -Ø", "PERF.SUB", "→", "-itit"],
+          ["-itik + -his + -ta", "PERF.INT", "→", "-itiksta"],
+          ["-itik + -:hus", "IMPF", "→", "-itiikuʔ"],
+          ["-itik + -hus", "IMPF.SUB", "→", "-itiku"]
+        ]
+      }
+    ]
+  },
+  "p23-b2": {
+    "book_page": "",
+    "forms": [],
+    "tables": []
+  }
+}

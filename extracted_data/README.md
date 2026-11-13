@@ -20,6 +20,23 @@ script.
 
 ## Things to know
 
+- **These files were compared with the pages in full on 2026-11-13, and they
+  have errors that are not yet fixed.** A second reader transcribed the pages
+  without seeing these files
+  ([../reports/source_audit_2026-11/findings.md](../reports/source_audit_2026-11/findings.md)):
+
+  | File | Differs from the page |
+  |---|---|
+  | `appendix1_conjugations.json` | 152 of 770 forms: accents the page does not have, vowels dropped or doubled, one block shifted by a row |
+  | `appendix2_irregular_roots.json` | 3 of 27 cells: *burii-waa* and *burii* are printed *hurii-waa* and *hurii*; one stem stored where the cell is empty |
+  | `appendix3_kinship.json` | *asaas*, *atipaat*, *apaat* are printed *asas*, *atipat*, *apat*; the five rows of book page 543 are missing (two empty terms stand in their place) |
+  | `grammatical_overview.json` | 85 of 797 Skiri words: 34 have a `b` where the page has an `h` (*-busuukuʔ* is *-husuukuʔ*), the rest differ by an accent, a vowel or a glottal stop |
+  | `abbreviations.json` | 4 of 411 values (*raar-/rab-* is *raar-/rah-*) |
+
+  The list, with the printed value beside each stored one, is
+  `../reports/source_audit_2026-11/proposed_fixes.jsonl`. Check a form there
+  before relying on it.
+
 - **`grammatical_overview.json` was read from page images by an AI model, and
   it can misread.** Until 2026-11-13 it gave Parks's locative/instrumental
   suffix as *-biriʔ* in eight places. The page has *-hiriʔ* (Grammatical

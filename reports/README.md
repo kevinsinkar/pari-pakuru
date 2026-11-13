@@ -17,7 +17,15 @@ Read these first. They say how far the data can be trusted.
 | `fix_data_2026-11-13_report.txt` | 2026-11-13 | Every change made by `scripts/fix_data_2026_11.py`, old value and new: 269 accent marks restored, 28 page numbers, letter-spaced text, six duplicate rows, two single entries |
 | `bb_vocab_linking.txt` | 2026-10-12 | Lesson vocabulary linked to dictionary entries, and the cases left for a person to decide |
 
-The newest and largest audit, the word-construction analysis of 2026-11-12, has
+**The source-fidelity audit of 2026-11-13 has its own folder:
+[source_audit_2026-11/](source_audit_2026-11/).** It is the first audit that
+compared everything with the page instead of a sample: every dictionary entry
+against the PDF's text layer, and every table that an AI model had read from
+page images against a second, blind reading. Start with its `findings.md`. It
+supersedes the "verdict: sound" of the 2026-09-01 audit for the appendices,
+the grammar chapter and the English index, which that audit did not reach.
+
+The word-construction analysis of 2026-11-12 has
 its own folder: [../curriculum/roots_v2/validation_report.md](../curriculum/roots_v2/validation_report.md).
 
 ## Phase reports

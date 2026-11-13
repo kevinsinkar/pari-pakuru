@@ -17,3 +17,6 @@ tag_review_queue.json
 *.db-shm
 *.db-wal
 !docs/
+
+# Source-fidelity audit: rendered crops and per-page working files
+reports/source_audit_2026-11/work/

@@ -1,0 +1,121 @@
+{
+ "printed_entries": 4244,
+ "stored_entries": 4244,
+ "paired": 4243,
+ "paired_by": {
+  "headword": 4048,
+  "homograph": 161,
+  "headword-loose": 33,
+  "headword-near": 1
+ },
+ "stored_entry_not_printed": 1,
+ "printed_entry_not_stored": 1,
+ "fields_checked": 50736,
+ "fields_equal": 49443,
+ "page_number_convention": {
+  "book-page": 733,
+  "file-number": 3510
+ },
+ "by_class": {
+  "noise": 9759,
+  "difference": 900,
+  "convention": 387
+ },
+ "differences_by_severity": {
+  "1": 407,
+  "4": 430,
+  "2": 46,
+  "3": 17
+ },
+ "noise_rules": {
+  "structural-marks": {
+   "rule": "printed marks that separate the parts of an entry and are not stored as such: the bullets before examples, < > round an etymology, { } round extra forms, sense numbers, commas between fields, and the labels that introduce a cognate (i.q. SB, cf. Ar.)",
+   "count": 9680
+  },
+  "phonetic-spacing-at-punctuation": {
+   "rule": "the stored phonetic form has no space after the comma between two variants, or before a bracketed preverb; the print has one",
+   "count": 79
+  }
+ },
+ "conventions": {
+  "lax-i-symbol": {
+   "what": "printed lax i with an accent (ɪ́, ɪ̀) is stored as í, ì",
+   "count": 387
+  }
+ },
+ "by_class_field_kind": {
+  "noise | (printed text) | structural-marks": 9680,
+  "difference | column_position | wrong-column": 393,
+  "convention | phonetic_form | lax-i-symbol": 387,
+  "difference | etymology | citation-standin": 82,
+  "noise | phonetic_form | phonetic-spacing-at-punctuation": 79,
+  "difference | cognate.form | citation-standin": 79,
+  "difference | (printed text) | printed-not-stored": 71,
+  "difference | etymology | stored-keeps-line-break": 34,
+  "difference | phonetic_form | letters": 23,
+  "difference | headword | bracket-note-not-stored": 22,
+  "difference | phonetic_form | phonetic-word-space-lost": 15,
+  "difference | etymology | spacing": 13,
+  "difference | grammatical_class | class-differs": 13,
+  "difference | phonetic_form | accent": 12,
+  "difference | form | vowel-length": 9,
+  "difference | etymology_literal | spacing": 9,
+  "difference | cognate.form | hyphen": 8,
+  "difference | etymology | glottal-stop": 8,
+  "difference | etymology_literal | letters": 7,
+  "difference | cognate.form | letters": 7,
+  "difference | example.english | spacing": 6,
+  "difference | additional_form | stored-keeps-line-break": 6,
+  "difference | headword | spacing": 5,
+  "difference | additional_form | spacing": 5,
+  "difference | cognate.form | not-printed-in-entry": 4,
+  "difference | form | stored-has-more": 4,
+  "difference | additional_form_type | not-printed-in-entry": 3,
+  "difference | form | printed-has-more": 3,
+  "difference | headword | hyphen": 2,
+  "difference | etymology | letters": 2,
+  "difference | etymology | printed-has-more+stored-has-more": 2,
+  "difference | cognate.form | printed-has-more+stored-has-more": 2,
+  "difference | form | punctuation+stored-has-more": 2,
+  "difference | example.skiri | stored-has-more": 2,
+  "difference | example.skiri | stored-keeps-line-break": 2,
+  "difference | additional_form | glottal-stop": 2,
+  "difference | gloss_usage | not-printed-in-entry": 2,
+  "difference | etymology_literal | punctuation": 2,
+  "difference | form | letters": 2,
+  "difference | phonetic_form | accent+punctuation": 2,
+  "difference | etymology_literal | letters+stored-has-more": 2,
+  "difference | etymology | punctuation": 2,
+  "difference | phonetic_form | letters+printed-has-more": 1,
+  "difference | phonetic_form | not-printed-in-entry": 1,
+  "difference | example.skiri | citation-standin": 1,
+  "difference | example.skiri | spacing": 1,
+  "difference | additional_form_type | letters": 1,
+  "difference | example.skiri | glottal-stop": 1,
+  "difference | gloss_usage | letters+punctuation": 1,
+  "difference | gloss | vowel-length": 1,
+  "difference | etymology_literal | not-printed-in-entry": 1,
+  "difference | additional_form | letters": 1,
+  "difference | additional_form | stored-has-more+vowel-length": 1,
+  "difference | etymology | letters+stored-has-more": 1,
+  "difference | gloss | printed-has-more+stored-has-more": 1,
+  "difference | cognate.form | spacing": 1,
+  "difference | form | letters+punctuation": 1,
+  "difference | example.english | stored-keeps-line-break": 1,
+  "difference | form | stored-is-part-of-a-printed-word": 1,
+  "difference | phonetic_form | accent+lax-i-symbol": 1,
+  "difference | gloss | stored-has-more": 1,
+  "difference | gloss | spacing": 1,
+  "difference | example.skiri | vowel-length": 1,
+  "difference | additional_form | vowel-length": 1,
+  "difference | cognate.form | letters+stored-has-more": 1,
+  "difference | gloss_usage | letters+punctuation+stored-has-more": 1,
+  "difference | etymology | hyphen": 1,
+  "difference | phonetic_form | punctuation": 1,
+  "difference | headword | stored-has-more": 1,
+  "difference | gloss_usage | printed-has-more": 1,
+  "difference | etymology | citation-standin+letters": 1,
+  "difference | (entry) | stored-entry-not-printed": 1,
+  "difference | (entry) | printed-entry-not-stored": 1
+ }
+}

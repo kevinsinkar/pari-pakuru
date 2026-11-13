@@ -24,8 +24,20 @@ rename it.
   page NNN + 348. The `page_number` stored with an entry is sometimes the file
   number and sometimes the book page; see the quick reference.
 - **The page PDFs have a text layer.** `reports/_s2e_page_index.json` holds that
-  text by page. It is an independent second reading of every page and was used
-  to check the AI parse (99.76% agreement on IPA after repairs).
+  text by page. It is the typesetter's own text, and the best check there is
+  on the parse. Two cautions, both learned in the 2026-11 audit:
+  it is **not independent** of the parse (the AI model was given these PDFs
+  and its output carried the text layer's stand-in characters, so an error in
+  decoding those characters is shared by both); and what a character code
+  stands for **depends on its font**. The verified table is
+  `scripts/source_audit/chartable.py`; the decoded pages, with fonts and
+  positions, are rebuilt by `scripts/source_audit/decode_pages.py`.
+- **`english_to_skiri_linked.json` is cleaner than the database's copy of it.**
+  The database tables `english_index` and `cross_references` were loaded from
+  an earlier file. The JSON itself still has about 400 placeholder values
+  ("N/A", "[cross-reference]") stored as Skiri terms, 244 cross-reference
+  terms with spaces inside the word, and lacks 25 printed English headwords
+  (twelve of them in a row on page file 278).
 - **Earlier versions of the JSON** (the raw parse, the verified, normalised and
   linked stages, and their change logs) were removed from the repository on
   2026-11-13. They are in git history at commit `2e77095`, under

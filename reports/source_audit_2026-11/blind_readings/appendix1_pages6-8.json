@@ -1,0 +1,482 @@
+{
+  "p6-L1": {
+    "heading": "Indicative (Perfective)",
+    "rows": [
+      ["tatkiikaʔ", "I drank it"],
+      ["taskiikaʔ", "you drank it"],
+      ["tikiikaʔ", "he drank it"],
+      ["tacihkiikaʔ", "we drank it"],
+      ["sitatkiikaʔ", "we drank it"],
+      ["sitaskiikaʔ", "you drank it"],
+      ["sitikiikaʔ", "they drank it"],
+      ["tataraakiikaʔ", "we drank it"],
+      ["tahakiikaʔ", "we drank it"],
+      ["tastakiikaʔ", "you drank it"],
+      ["tihkiikaʔ", "they drank it"]
+    ]
+  },
+  "p6-L2": {
+    "heading": "Negative Indicative (Perfective)",
+    "rows": [
+      ["kaakaatkiikaʔ", "I did not drink it"],
+      ["kaakaaskiikaʔ", "you did not drink it"],
+      ["kaakiikiikaʔ", "he did not drink it"],
+      ["kaakaacihkiikaʔ", "we did not drink it"],
+      ["sikaakaatkiikaʔ", "we did not drink it"],
+      ["sikaakaaskiikaʔ", "you did not drink it"],
+      ["sikaakiikiikaʔ", "they did not drink it"],
+      ["kaakaataaraakiikaʔ", "we did not drink it"],
+      ["kaakaahakiikaʔ", "we did not drink it"],
+      ["kaakaastakiikaʔ", "you did not drink it"],
+      ["kaakihkiikaʔ", "they did not drink it"]
+    ]
+  },
+  "p6-L3": {
+    "heading": "Contingent (Perfective)",
+    "rows": [
+      ["itkikaʔ", "I'll drink"],
+      ["iskikaʔ", "you'll drink"],
+      ["rikikaʔ", "he'll drink"],
+      ["icihkikaʔ", "we'll drink"],
+      ["siʔitkikaʔ", "we'll drink"],
+      ["siʔiskikaʔ", "you'll drink"],
+      ["sirikikaʔ", "they'll drink"],
+      ["itaraakikaʔ", "we'll drink"],
+      ["ihakikaʔ", "we'll drink"],
+      ["istakikaʔ", "you'll drink"],
+      ["rihkikaʔ", "they'll drink"]
+    ]
+  },
+  "p6-L4": {
+    "heading": "Assertive (Perfective)",
+    "rows": [
+      ["riitkiikaʔ", "I drank it"],
+      ["riiskiikaʔ", "you drank it"],
+      ["riikiikaʔ", "he drank it"],
+      ["riicihkiikaʔ", "we drank it"],
+      ["siriitkiikaʔ", "we drank it"],
+      ["siriiskiikaʔ", "you drank it"],
+      ["siriikiikaʔ", "they drank it"],
+      ["riitaraakiikaʔ", "we drank it"],
+      ["riihakiikaʔ", "we drank it"],
+      ["riistakiikaʔ", "you drank it"],
+      ["rihkiikaʔ", "they drank it"]
+    ]
+  },
+  "p6-L5": {
+    "heading": "Absolutive (Perfective)",
+    "rows": [
+      ["ratkiikaʔ", "I drank it"],
+      ["raskiikaʔ", "you drank it"],
+      ["rakiikaʔ", "he drank it"],
+      ["racihkiikaʔ", "we drank it"],
+      ["siratkiikaʔ", "we drank it"],
+      ["siraskiikaʔ", "you drank it"],
+      ["sirakiikaʔ", "they drank it"],
+      ["rataraakiikaʔ", "we drank it"],
+      ["rahakiikaʔ", "we drank it"],
+      ["rastakiikaʔ", "you drank it"],
+      ["rihkiikaʔ", "they drank it"]
+    ]
+  },
+  "p6-R1": {
+    "heading": "Potential (Perfective)",
+    "rows": [
+      ["kuustikiikaʔ", "I will drink"],
+      ["kaasikiikaʔ", "you will drink"],
+      ["kuusikiikaʔ", "he will drink"],
+      ["kaaciriikiikaʔ", "we will drink"],
+      ["sikuustikiikaʔ", "we will drink"],
+      ["sikaasikiikaʔ", "you will drink"],
+      ["sikuusikiikaʔ", "they will drink"],
+      ["kuustaaraakiikaʔ", "we will drink"],
+      ["kuustiraakiikaʔ", "we will drink"],
+      ["kaasiraakiikaʔ", "you will drink"],
+      ["kusiriikiikaʔ", "they will drink"]
+    ]
+  },
+  "p6-R2": {
+    "heading": "Gerundial (Perfective Subordinate)",
+    "rows": [
+      ["iriiratkikaa", "where I drank it"],
+      ["iriiraskikaa", "where you drank it"],
+      ["iriirakikaa", "where he drank it"],
+      ["iriiracihkikaa", "where we drank it"],
+      ["iriisiratkikaa", "where we drank it"],
+      ["iriisiraskikaa", "where you drank it"],
+      ["iriisirakikaa", "where they drank it"],
+      ["iriirataraakikaa", "where we drank it"],
+      ["iriirahakikaa", "where we drank it"],
+      ["iriirastakikaa", "where you drank it"],
+      ["iriirihkikaa", "where they drank it"]
+    ]
+  },
+  "p6-R3": {
+    "heading": "Contingent (Perfective Subordinate)",
+    "rows": [
+      ["itkikaa", "if/when I drink it"],
+      ["iskikaa", "if/when you drink it"],
+      ["rikikaa", "if/when he drinks it"],
+      ["icihkikaa", "if/when we drink it"],
+      ["siʔitkikaa", "if/when we drink it"],
+      ["siʔiskikaa", "if/when you drink it"],
+      ["sirikikaa", "if/when they drink it"],
+      ["itaraakikaa", "if/when we drink it"],
+      ["ihakikaa", "if/when we drink it"],
+      ["istakikaa", "if/when you drink it"],
+      ["rihkikaa", "if/when they drink it"]
+    ]
+  },
+  "p6-R4": {
+    "heading": "Subjunctive (Perfective Subordinate)",
+    "rows": [
+      ["aatkikaa", "should I drink it"],
+      ["aaskikaa", "should you drink it"],
+      ["iikikaa", "should he drink it"],
+      ["aacihkikaa", "should we drink it"],
+      ["siʔaatkikaa", "should we drink it"],
+      ["siʔaaskikaa", "should you drink it"],
+      ["siʔiikikaa", "should they drink it"],
+      ["aataraakikaa", "should we drink it"],
+      ["aahakikaa", "should we drink it"],
+      ["astakikaa", "should you drink it"],
+      ["ihkikaa", "should they drink it"]
+    ]
+  },
+  "p6-R5": {
+    "heading": "Infinitive (Perfective Subordinate)",
+    "rows": [
+      ["ratkukikaa", "for me to drink it"],
+      ["raskukikaa", "for you to drink it"],
+      ["rakukikaa", "for him to drink it"],
+      ["racihkukikaa", "for us to drink it"],
+      ["siratkukikaa", "for us to drink it"],
+      ["siraskukikaa", "for you to drink it"],
+      ["sirakukikaa", "for them to drink it"],
+      ["rataakuraakikaa", "for us to drink it"],
+      ["ratkuraakikaa", "for us to drink it"],
+      ["raskuraakikaa", "for you to drink it"],
+      ["rihkukikaa", "for them to drink it"]
+    ]
+  },
+  "p7-L1": {
+    "heading": "Indicative (Perfective)",
+    "rows": [
+      ["tikukiraawaʔ", "I am sick"],
+      ["takiraawaʔ", "you are sick"],
+      ["tihkiraawaʔ", "he is sick"],
+      ["tacakukiraawaʔ", "we are sick"],
+      ["sitikukiraawaʔ", "we are sick"],
+      ["sirakiraawaʔ", "you are sick"],
+      ["sirihkiraawaʔ", "they are sick"],
+      ["tacakuraakiraawaʔ", "we are sick"],
+      ["tikuraakiraawaʔ", "we are sick"],
+      ["taraakiraawaʔ", "you are sick"],
+      ["tiirakiraawaʔ", "they are sick"]
+    ]
+  },
+  "p7-L2": {
+    "heading": "Negative Indicative (Perfective)",
+    "rows": [
+      ["kaakikukiraawaʔ", "I am not sick"],
+      ["kaakaakiraawaʔ", "you are not sick"],
+      ["kaakihkiraawaʔ", "he is not sick"],
+      ["kaakaacakukiraawaʔ", "we are not sick"],
+      ["sikaakikukiraawaʔ", "we are not sick"],
+      ["sikaakaakiraawaʔ", "you are not sick"],
+      ["sikaakihkiraawaʔ", "they are not sick"],
+      ["kaakaacakuraakiraawaʔ", "we are not sick"],
+      ["kaakikuraakiraawaʔ", "we are not sick"],
+      ["kaakaraakiraawaʔ", "you are not sick"],
+      ["kaakirakiraawaʔ", "they are not sick"]
+    ]
+  },
+  "p7-L3": {
+    "heading": "Contingent (Perfective)",
+    "rows": [
+      ["rikukiraawaʔ", "I'll be sick"],
+      ["rakiraawaʔ", "you'll be sick"],
+      ["rihkiraawaʔ", "he'll be sick"],
+      ["racakukiraawaʔ", "we'll be sick"],
+      ["sirikukiraawaʔ", "we'll be sick"],
+      ["sirakiraawaʔ", "you'll be sick"],
+      ["sirihkiraawaʔ", "they'll be sick"],
+      ["racakuraktahkiraawaʔ", "we'll be sick"],
+      ["rikuraktahkiraawaʔ", "we'll be sick"],
+      ["raraktahkiraawaʔ", "you'll be sick"],
+      ["riiraktahkiraawaʔ", "they'll be sick"]
+    ]
+  },
+  "p7-L4": {
+    "heading": "Assertive (Perfective)",
+    "rows": [
+      ["rikuukiraawaʔ", "I am sick"],
+      ["raakiraawaʔ", "you are sick"],
+      ["riihkiraawaʔ", "he is sick"],
+      ["riicakuukiraawaʔ", "we are sick"],
+      ["sirikuukiraawaʔ", "we are sick"],
+      ["siraakiraawaʔ", "you are sick"],
+      ["siriihkiraawaʔ", "they are sick"],
+      ["riicakuuraktahkiraawaʔ", "we are sick"],
+      ["rikuuraktahkiraawaʔ", "we are sick"],
+      ["raaraktahkiraawaʔ", "you are sick"],
+      ["riiraktahkiraawaʔ", "they are sick"]
+    ]
+  },
+  "p7-L5": {
+    "heading": "Absolutive (Perfective)",
+    "rows": [
+      ["riikukiraawaʔ", "I am sick"],
+      ["raakiraawaʔ", "you are sick"],
+      ["rihkiraawaʔ", "he is sick"],
+      ["riicakukiraawaʔ", "we are sick"],
+      ["siriikukiraawaʔ", "we are sick"],
+      ["raakiraawaʔ", "you are sick"],
+      ["sirihkiraawaʔ", "they are sick"],
+      ["riicakuraktahkiraawaʔ", "we are sick"],
+      ["riikuraktahkiraawaʔ", "we are sick"],
+      ["raraktahkiraawaʔ", "you are sick"],
+      ["riiraktahkiraawaʔ", "they are sick"]
+    ]
+  },
+  "p7-R1": {
+    "heading": "Potential (Perfective)",
+    "rows": [
+      ["kuusikuukiraawaʔ", "I will be sick"],
+      ["kusaakiraawaʔ", "you will be sick"],
+      ["kusiriikiraawaʔ", "he will be sick"],
+      ["kaacakuukiraawaʔ", "we will be sick"],
+      ["sikuusikuukiraawaʔ", "we will be sick"],
+      ["sikusaakiraawaʔ", "you will be sick"],
+      ["sikusiriikiraawaʔ", "they will be sick"],
+      ["kaacakuuraktahkiraawaʔ", "we will be sick"],
+      ["kuusikuuraakiraawaʔ", "we will be sick"],
+      ["kusaaraktahkiraawaʔ", "you will be sick"],
+      ["kusiriktaahkiraawaʔ", "they will be sick"]
+    ]
+  },
+  "p7-R2": {
+    "heading": "Gerundial (Perfective Subordinate)",
+    "rows": [
+      ["iriirikukiraawaa", "where I am sick"],
+      ["iriirakiraawaa", "where you are sick"],
+      ["iriirihkiraawaa", "where he is sick"],
+      ["iriiracakukiraawaa", "where we are sick"],
+      ["iriisirikukiraawaa", "where we are sick"],
+      ["iriisirakiraawaa", "where you are sick"],
+      ["iriisirihkiraawaa", "where they are sick"],
+      ["iriiracakuraktahkiraawaa", "where we are sick"],
+      ["iriirikuraktahkiraawaa", "where we are sick"],
+      ["iriiraraktahkiraawaa", "where you are sick"],
+      ["iririiraktahkirawaa", "where they are sick"]
+    ]
+  },
+  "p7-R3": {
+    "heading": "Contingent (Perfective Subordinate)",
+    "rows": [
+      ["rikukiraawaa", "if/when I am sick"],
+      ["rakiraawaa", "if/when you are sick"],
+      ["rihkiraawaa", "if/when he is sick"],
+      ["racakukiraawaa", "if/when we are sick"],
+      ["sirikukiraawaa", "if/when we are sick"],
+      ["sirakiraawaa", "if/when you are sick"],
+      ["sirihkiraawaa", "if/when they are sick"],
+      ["racakuraktahkiraawaa", "if/when we are sick"],
+      ["rikuraktahkiraawaa", "if/when we are sick"],
+      ["raraktahkiraawaa", "if/when you are sick"],
+      ["riiraktahkirawaa", "if/when they are sick"]
+    ]
+  },
+  "p7-R4": {
+    "heading": "Subjunctive (Perfective Subordinate)",
+    "rows": [
+      ["iikukiraawaa", "should I be sick"],
+      ["aakirawaa", "should you be sick"],
+      ["iihkirawaa", "should he be sick"],
+      ["aacakukiraawaa", "should we be sick"],
+      ["siʔiikukiraawaa", "should we be sick"],
+      ["siʔaakiraawaa", "should you be sick"],
+      ["siʔiihkiraawaa", "should they be sick"],
+      ["aacakuraakiraawaa", "should we be sick"],
+      ["iikuraakiraawaa", "should we be sick"],
+      ["araakiraawaa", "should you be sick"],
+      ["iiraakiraawaa", "should they be sick"]
+    ]
+  },
+  "p7-R5": {
+    "heading": "Infinitive (Perfective Subordinate)",
+    "rows": [
+      ["rakukukiraawaa", "for me to be sick"],
+      ["raakukiraawaa", "for you to be sick"],
+      ["rihkukiraawaa", "for him to be sick"],
+      ["racakukiraawaa", "for us to be sick"],
+      ["sirakukukiraawaa", "for us to be sick"],
+      ["siraakukiraawaa", "for you to be sick"],
+      ["sirihkukiraawaa", "for them to be sick"],
+      ["racakukuraktahkiraawaa", "for us to be sick"],
+      ["rakukuraktahkiraawaa", "for us to be sick"],
+      ["raakuraktahkiraawaa", "for you to be sick"],
+      ["rihkuraktahkiraawaa", "for them to be sick"]
+    ]
+  },
+  "p8-L1": {
+    "heading": "Indicative (Perfective)",
+    "rows": [
+      ["tahaa", "I have it"],
+      ["tastaa", "you have it"],
+      ["tiraa", "he have it"],
+      ["taciraa", "we have it"],
+      ["sitahaa", "we have it"],
+      ["sitastaa", "you have it"],
+      ["sitiraa", "they have it"],
+      ["sitaciraa", "we have it"],
+      ["sitahaa", "we have it"],
+      ["sitastaa", "you have it"],
+      ["sitiraa", "they have it"]
+    ]
+  },
+  "p8-L2": {
+    "heading": "Negative Indicative (Perfective)",
+    "rows": [
+      ["kaakahaa", "I do not have it"],
+      ["kaakastaa", "you do not have it"],
+      ["kaakiraa", "he does not have it"],
+      ["kaakaaciraa", "we do not have it"],
+      ["sikaakahaa", "we do not have it"],
+      ["sikaakastaa", "you do not have it"],
+      ["sikaakiraa", "they do not have it"],
+      ["sikaakaaciraa", "we do not have it"],
+      ["sikaakahaa", "we do not have it"],
+      ["sikaakastaa", "you do not have it"],
+      ["sikaakiraa", "they do not have it"]
+    ]
+  },
+  "p8-L3": {
+    "heading": "Contingent (Perfective)",
+    "rows": [
+      ["ihaa", "I'll have it"],
+      ["istaa", "you'll have it"],
+      ["riraa", "he'll have it"],
+      ["iciraa", "we'll have it"],
+      ["siʔihaa", "we'll have it"],
+      ["siʔistaa", "you'll have it"],
+      ["siriraa", "they'll have it"],
+      ["siʔiciraa", "we'll have it"],
+      ["siʔihaa", "we'll have it"],
+      ["siʔistaa", "you'll have it"],
+      ["siriraa", "they'll have it"]
+    ]
+  },
+  "p8-L4": {
+    "heading": "Assertive (Perfective)",
+    "rows": [
+      ["rihaa", "I have it"],
+      ["ristaa", "you have it"],
+      ["riraa", "he has it"],
+      ["riiciraa", "we have it"],
+      ["siriihaa", "we have it"],
+      ["siriistaa", "you have it"],
+      ["siriiraa", "they have it"],
+      ["siriiciraa", "we have it"],
+      ["siriihaa", "we have it"],
+      ["siriistaa", "you have it"],
+      ["siriiraa", "they have it"]
+    ]
+  },
+  "p8-L5": {
+    "heading": "Absolutive (Perfective)",
+    "rows": [
+      ["rahaa", "I had it"],
+      ["rastaa", "you had it"],
+      ["raraa", "he had it"],
+      ["raciraa", "we had it"],
+      ["sirahaa", "we had it"],
+      ["sirastaa", "you had it"],
+      ["siraraa", "they had it"],
+      ["siraciraa", "we had it"],
+      ["sirahaa", "we had it"],
+      ["sirastaa", "you had it"],
+      ["siriraa", "they had it"]
+    ]
+  },
+  "p8-R1": {
+    "heading": "Potential (Perfective)",
+    "rows": [
+      ["kuustiraa", "I will have it"],
+      ["kaasiraa", "you will have it"],
+      ["kuusiraa", "he will have it"],
+      ["kaaciriiraa", "we will have it"],
+      ["sikuustiraa", "we will have it"],
+      ["sikaasiraa", "you will have it"],
+      ["sikuusiraa", "they will have it"],
+      ["sikaaciriiraa", "we will have it"],
+      ["sikuustiraa", "we will have it"],
+      ["sikaasiraa", "you will have it"],
+      ["kuusiriiraraa", "they will have it"]
+    ]
+  },
+  "p8-R2": {
+    "heading": "Gerundial (Perfective Subordinate)",
+    "rows": [
+      ["iriirahaaha", "where I have it"],
+      ["iriirastaaha", "where you have it"],
+      ["iriiraraaha", "where he has them"],
+      ["iriiraciraaha", "where we have it"],
+      ["iriisirahaaha", "where we have it"],
+      ["iriisirastaaha", "where you have it"],
+      ["iriisiraraaha", "where they have it"],
+      ["iriisiraciraaha", "where we have it"],
+      ["iriisirahaaha", "where we have it"],
+      ["iriisirastaaha", "where you have it"],
+      ["iriiriraraaha", "where they have them"]
+    ]
+  },
+  "p8-R3": {
+    "heading": "Contingent (Perfective Subordinate)",
+    "rows": [
+      ["ihaaha", "if/when I have it"],
+      ["istaaha", "if/when you have it"],
+      ["riraaha", "if/when he has it"],
+      ["iciraaha", "if/when we have it"],
+      ["siʔihaaha", "if/when we have it"],
+      ["siʔistaaha", "if/when you have it"],
+      ["siriraaha", "if/when they have it"],
+      ["siʔiciraaha", "if/when we have it"],
+      ["siʔihaaha", "if/when we have it"],
+      ["siʔistaaha", "if/when you have it"],
+      ["siʔiraaha", "if/when they have it"]
+    ]
+  },
+  "p8-R4": {
+    "heading": "Subjunctive (Perfective Subordinate)",
+    "rows": [
+      ["aahaaha", "should I have it"],
+      ["aastaaha", "should you have it"],
+      ["iiraaha", "should he have it"],
+      ["aaciraaha", "should we have it"],
+      ["siʔaahaaha", "should we have it"],
+      ["siʔaastaaha", "should you have it"],
+      ["siʔiiraaha", "should they have it"],
+      ["siʔaaciraaha", "should we have it"],
+      ["siʔaahaaha", "should we have it"],
+      ["siʔaastaaha", "should you have it"],
+      ["siʔiiraaha", "should they have it"]
+    ]
+  },
+  "p8-R5": {
+    "heading": "Infinitive (Perfective Subordinate)",
+    "rows": [
+      ["ratkuraaha", "for me to have it"],
+      ["raskuraaha", "for you to have it"],
+      ["rakuraaha", "for him to have it"],
+      ["racihkuraaha", "for us to have it"],
+      ["siratkuraaha", "for us to have it"],
+      ["siraskuraaha", "for you to have it"],
+      ["sirakuraaha", "for them to have it"],
+      ["siracihkuraaha", "for us to have it"],
+      ["siratkuraaha", "for us to have it"],
+      ["siraskuraaha", "for you to have it"],
+      ["sirihkuraaha", "for them to have it"]
+    ]
+  }
+}

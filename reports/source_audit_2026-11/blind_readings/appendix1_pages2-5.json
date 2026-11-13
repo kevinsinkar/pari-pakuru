@@ -1,0 +1,642 @@
+{
+  "p2-L1": {
+    "heading": "Indicative (Perfective)",
+    "rows": [
+      ["tatiiraʔ", "I came"],
+      ["tasiiraʔ", "you came"],
+      ["taaʔ", "he came"],
+      ["tacíhwaʔaʔ", "we came"],
+      ["sitatíhwaʔaʔ", "we came"],
+      ["sitasíhwaʔaʔ", "you came"],
+      ["sitawaʔaʔ", "they came"],
+      ["tataraakaahuʔ", "we came"],
+      ["tatíraakaahuʔ", "we came"],
+      ["tasíraakaahuʔ", "you came"],
+      ["taaʔaahuʔ", "they came"]
+    ]
+  },
+  "p2-L2": {
+    "heading": "Negative Indicative (Perfective)",
+    "rows": [
+      ["kaakatiiraʔ", "I did not come"],
+      ["kaakasiiraʔ", "you did not come"],
+      ["kaakaaʔaʔ", "he did not come"],
+      ["kaakaacíhwaʔaʔ", "we did not come"],
+      ["síkaakaatihwaʔaʔ", "we did not come"],
+      ["síkaakaasihwaʔaʔ", "you did not come"],
+      ["sikaakaawaʔaʔ", "they did not come"],
+      ["kaakaataraakaahuʔ", "we did not come"],
+      ["kaakaatiraakaahuʔ", "we did not come"],
+      ["kaakaasiraakaahuʔ", "you did not come"],
+      ["kaakaaʔaahuʔ, kaakaaraaraʔ", "they did not come"]
+    ]
+  },
+  "p2-L3": {
+    "heading": "Contingent (Perfective)",
+    "rows": [
+      ["ítiiraʔ", "I'll come"],
+      ["ísiiraʔ", "you'll come"],
+      ["raʔaʔ", "he'll come"],
+      ["icíhwaʔaʔ", "we'll come"],
+      ["siʔitíhwaʔaʔ", "we'll come"],
+      ["siʔisíhwaʔaʔ", "you'll come"],
+      ["sírawaʔaʔ", "they'll come"],
+      ["itaraakaahuʔ", "we'll come"],
+      ["itiraakaahuʔ", "we'll come"],
+      ["isiraakaahuʔ", "you'll come"],
+      ["raaʔaahuʔ, raraaraʔ", "they'll come"]
+    ]
+  },
+  "p2-L4": {
+    "heading": "Assertive (Perfective)",
+    "rows": [
+      ["rítiiraʔ", "I came"],
+      ["rísiiraʔ", "you came"],
+      ["raaʔaʔ", "he came"],
+      ["riicíhwaʔaʔ", "we came"],
+      ["siriítihwaʔaʔ", "we came"],
+      ["siriisihwaʔaʔ", "you came"],
+      ["siraaʔaʔ", "they came"],
+      ["riítaraakaahuʔ", "we came"],
+      ["riítiraakaahuʔ", "we came"],
+      ["riísiraakaahuʔ", "you came"],
+      ["raaʔaahuʔ", "they came"]
+    ]
+  },
+  "p2-L5": {
+    "heading": "Absolutive (Perfective)",
+    "rows": [
+      ["ratiiraʔ", "I came"],
+      ["rasiíraʔ", "you came"],
+      ["raʔaʔ", "he came"],
+      ["racíhwaʔaʔ", "we came"],
+      ["síratihwaʔaʔ", "we came"],
+      ["sírasihwaaʔ", "you came"],
+      ["sírawaaʔ", "they came"],
+      ["rataraakaahuʔ", "we came"],
+      ["ratiraakaahuʔ", "we came"],
+      ["rasiraakaahuʔ", "you came"],
+      ["raaʔaahuʔ", "they came"]
+    ]
+  },
+  "p2-R1": {
+    "heading": "Potential (Perfective)",
+    "rows": [
+      ["kuustiriiʔaʔ", "I will come"],
+      ["kaasiriiʔaʔ", "you will come"],
+      ["kusaaʔaʔ", "he will come"],
+      ["kaaciriiwaʔaʔ", "we will come"],
+      ["sikuustiriiwaʔaʔ", "we will come"],
+      ["sikaasiriiwaʔaʔ", "you will come"],
+      ["sikusaawaʔaʔ", "they will come"],
+      ["kuustaaraakaahuʔ", "we will come"],
+      ["kuustiriiraakaahuʔ", "we will come"],
+      ["kaasiriiraakaahuʔ", "you will come"],
+      ["kusaaʔaahuʔ, kusaaraaraʔ", "they will come"]
+    ]
+  },
+  "p2-R2": {
+    "heading": "Gerundial (Perfective Subordinate)",
+    "rows": [
+      ["iriiratiira", "where I'm coming from"],
+      ["iriirasiira", "where you're coming from"],
+      ["iriraʔa", "where he's coming from"],
+      ["iriiracihwaʔa", "where we're coming from"],
+      ["iriisiratihwaʔa", "where we're coming from"],
+      ["iriisirasihwaʔa", "where you're coming from"],
+      ["iriisirawaʔa", "where they're coming from"],
+      ["iriirataraakahu", "where we're coming from"],
+      ["iriiratiraakahu", "where we're coming from"],
+      ["iriirasiraakahu", "where you're coming from"],
+      ["iriraaʔahu, iriiraraara", "where they're coming from"]
+    ]
+  },
+  "p2-R3": {
+    "heading": "Contingent (Perfective Subordinate)",
+    "rows": [
+      ["itiira", "if/when I come"],
+      ["isiira", "if/when you come"],
+      ["raʔa", "if/when he comes"],
+      ["icihwaʔa", "if/when we come"],
+      ["siʔitihwaʔa", "if/when we come"],
+      ["siʔisihwaʔa", "if/when you come"],
+      ["sirawaʔa", "if/when they come"],
+      ["itaraakahu", "if/when we come"],
+      ["itiraakahu", "if/when we come"],
+      ["isiraakahu", "if/when you come"],
+      ["raaʔahu, raraara", "if/when they come"]
+    ]
+  },
+  "p2-R4": {
+    "heading": "Subjunctive (Perfective Subordinate)",
+    "rows": [
+      ["aatiira", "should I come"],
+      ["aasiira", "should you come"],
+      ["aaʔa", "should he come"],
+      ["aacihwaʔa", "should we come"],
+      ["siʔaatihwaʔa", "should we come"],
+      ["siʔaasihwaʔa", "should you come"],
+      ["siʔaawaʔa", "should they come"],
+      ["aataraakahu", "should we come"],
+      ["aatiraakahu", "should we come"],
+      ["aasiraakahu", "should you come"],
+      ["aaʔahu, aaraara", "should they come"]
+    ]
+  },
+  "p2-R5": {
+    "heading": "Infinitive (Perfective Subordinate)",
+    "rows": [
+      ["ratihkuʔa", "for me to come"],
+      ["rasihkuʔa", "for you to come"],
+      ["raakuʔa", "for him to come"],
+      ["racihkuwaʔa", "for us to come"],
+      ["siratihkuwaʔa", "for us to come"],
+      ["sirasihkuwaʔa", "for you to come"],
+      ["siraakuwaʔa", "for them to come"],
+      ["rataakuraakahu", "for us to come"],
+      ["ratihkuraakahu", "for us to come"],
+      ["rasihkuraakahu", "for you to come"],
+      ["raakuhu, raakuraara", "for them to come"]
+    ]
+  },
+  "p3-L1": {
+    "heading": "Indicative (Perfective)",
+    "rows": [
+      ["tatuutaa", "I did it"],
+      ["tasuutaa", "you did it"],
+      ["tuutaa", "he did it"],
+      ["taciitaa", "we did it"],
+      ["sitatuutaa", "we did it"],
+      ["sitasuutaa", "you did it"],
+      ["situutaa", "they did it"],
+      ["tatuuhaakaa", "we did it"],
+      ["tatuuhaakaa", "we did it"],
+      ["tasuuhaakaa", "you did it"],
+      ["tiitaa", "they did it"]
+    ]
+  },
+  "p3-L2": {
+    "heading": "Negative Indicative (Perfective)",
+    "rows": [
+      ["kaakatuutaa", "I did not do it"],
+      ["kaakasuutaa", "you did not do it"],
+      ["kaakuutaa", "he did not do it"],
+      ["kaakaciitaa", "we did not do it"],
+      ["sikaakatuutaa", "we did not do it"],
+      ["sikaakasuutaa", "you did not do it"],
+      ["sikaakuutaa", "they did not do it"],
+      ["kaakatuuhaakaa", "we did not do it"],
+      ["kaakatuuhaakaa", "we did not do it"],
+      ["kaakasuuhaakaa", "you did not do it"],
+      ["kaakiitaa", "they did not do it"]
+    ]
+  },
+  "p3-L3": {
+    "heading": "Contingent (Perfective)",
+    "rows": [
+      ["ituutaa", "I'll do it"],
+      ["isuutaa", "you'll do it"],
+      ["ruutaa", "he'll do it"],
+      ["iciitaa", "we'll do it"],
+      ["siʔituutaa", "we'll do it"],
+      ["siʔisuutaa", "you'll do it"],
+      ["siruutaa", "they'll do it"],
+      ["ituhaakaa", "we'll do it"],
+      ["ituhaakaa", "we'll do it"],
+      ["isuhaakaa", "you'll do it"],
+      ["riitaa", "they'll do it"]
+    ]
+  },
+  "p3-L4": {
+    "heading": "Assertive (Perfective)",
+    "rows": [
+      ["rituutaa", "I did it"],
+      ["risuutaa", "you did it"],
+      ["ruutaa", "he did it"],
+      ["riciitaa", "we did it"],
+      ["siriituutaa", "we did it"],
+      ["siriisuutaa", "you did it"],
+      ["siruutaa", "they did it"],
+      ["rituuhaakaa", "we did it"],
+      ["rituuhaakaa", "we did it"],
+      ["risuuhaakaa", "you did it"],
+      ["riitaa", "they did it"]
+    ]
+  },
+  "p3-L5": {
+    "heading": "Absolutive (Perfective)",
+    "rows": [
+      ["ratuutaa", "I did it"],
+      ["rasuutaa", "you did it"],
+      ["ruutaa", "did he do it?"],
+      ["raciitaa", "we did it"],
+      ["siratuutaa", "we did it"],
+      ["sirasuutaa", "you did it"],
+      ["siruutaa", "they did it"],
+      ["ratuuhaakaa", "we did it"],
+      ["ratuuhaakaa", "we did it"],
+      ["rasuuhaakaa", "you did it"],
+      ["riitaa", "they did it"]
+    ]
+  },
+  "p3-R1": {
+    "heading": "Potential (Perfective)",
+    "rows": [
+      ["kuustuciʔaa", "I will do it"],
+      ["kaasuciʔaa", "you will do it"],
+      ["kuusuciʔaa", "he will do it"],
+      ["kaciiciʔaa", "we will do it"],
+      ["sikuustuciʔaa", "we will do it"],
+      ["sikaasuciʔaa", "you will do it"],
+      ["sikuusuciʔaa", "they will do it"],
+      ["kuustuciraakaa", "we will do it"],
+      ["kuustuciraakaa", "we will do it"],
+      ["kaasuciraakaa", "you will do it"],
+      ["kusiiciʔaa", "they will do it"]
+    ]
+  },
+  "p3-R2": {
+    "heading": "Gerundial (Perfective Subordinate)",
+    "rows": [
+      ["iriiratuutaara", "the way I did it"],
+      ["iriirasuutaara", "the way you did it"],
+      ["iriiruutaara", "the way he did it"],
+      ["iriiraciitaara", "the way we did it"],
+      ["iriisiratuutaara", "the way we did it"],
+      ["iriisirasuutaara", "the way you did it"],
+      ["iriisiruutaara", "the way they did it"],
+      ["iriiratuuhaakaara", "the way we did it"],
+      ["iriiratuuhaakaara", "the way we did it"],
+      ["iriirasuuhaakaara", "the way you did it"],
+      ["iririitaara", "the way they did it"]
+    ]
+  },
+  "p3-R3": {
+    "heading": "Contingent (Perfective Subordinate)",
+    "rows": [
+      ["ituutaara", "if/when I do it"],
+      ["isuutaara", "if/when you do it"],
+      ["ruutaara", "if/when he does it"],
+      ["iciitaara", "if/when we do it"],
+      ["siʔituutaara", "if/when we do it"],
+      ["siʔisuutaara", "if/when you do it"],
+      ["siruutaara", "if/when they do it"],
+      ["ituhaakaara", "if/when we do it"],
+      ["ituhaakaara", "if/when we do it"],
+      ["isuhaakaara", "if/when you do it"],
+      ["riitaara", "if/when they do it"]
+    ]
+  },
+  "p3-R4": {
+    "heading": "Subjunctive (Perfective Subordinate)",
+    "rows": [
+      ["atuutaara", "should I do it"],
+      ["asuutaara", "should you do it"],
+      ["uutaara", "should he do it"],
+      ["aaciriitaara", "should we do it"],
+      ["siʔatuutaara", "should we do it"],
+      ["siʔasuutaara", "should you do it"],
+      ["siʔuutaara", "should they do it"],
+      ["atuuhaakaara", "should we do it"],
+      ["atuuhaakaara", "should we do it"],
+      ["asuuhaakaara", "should you do it"],
+      ["iitaara", "should they do it"]
+    ]
+  },
+  "p3-R5": {
+    "heading": "Infinitive (Perfective Subordinate)",
+    "rows": [
+      ["ratkuutaara", "for me to do it"],
+      ["raskuutaara", "for you to do it"],
+      ["rakuutaara", "for him to do it"],
+      ["racihkuutaara", "for us to do it"],
+      ["siratkuutaara", "for us to do it"],
+      ["siraskuutaara", "for you to do it"],
+      ["sirakuutaara", "for them to do it"],
+      ["rataakuuhaakaara", "for us to do it"],
+      ["ratkuuhaakaara", "for us to do it"],
+      ["raskuuhaakaara", "for you to do it"],
+      ["rihkuutaara", "for them to do it"]
+    ]
+  },
+  "p4-L1": {
+    "heading": "Indicative (Perfective)",
+    "rows": [
+      ["taatat", "I went"],
+      ["taasat", "you went"],
+      ["tiʔat", "he went"],
+      ["tacihwa", "we went"],
+      ["sitatpa", "we went"],
+      ["sitaspa", "you went"],
+      ["sitiwa", "they went"],
+      ["tataraapuuʔ", "we went"],
+      ["tahapuuʔ", "we went"],
+      ["tastapuuʔ", "you went"],
+      ["tiiwuuʔ, tiraarat", "they went"]
+    ]
+  },
+  "p4-L2": {
+    "heading": "Negative Indicative (Perfective)",
+    "rows": [
+      ["kaakaatat", "I did not go"],
+      ["kaakaasat", "you did not go"],
+      ["kaakiiʔat", "he did not go"],
+      ["kaakaacihwa", "we did not go"],
+      ["sikaakatpa", "we did not go"],
+      ["sikaakaspa", "you did not go"],
+      ["sikaakiiwa", "they did not go"],
+      ["kaakaataraapuuʔ", "we did not go"],
+      ["kaakaahapuuʔ", "we did not go"],
+      ["kaakaastapuuʔ", "you did not go"],
+      ["kaakiiwuuʔ, kaakiraarat", "they did not go"]
+    ]
+  },
+  "p4-L3": {
+    "heading": "Contingent (Perfective)",
+    "rows": [
+      ["itat", "I'll go"],
+      ["isat", "you'll go"],
+      ["riʔat", "he'll go"],
+      ["icihwa", "we'll go"],
+      ["siʔitpa", "we'll go"],
+      ["siʔispa", "you'll go"],
+      ["siriwa", "they'll go"],
+      ["itarapuuʔ", "we'll go"],
+      ["ihapuuʔ", "we'll go"],
+      ["istapuuʔ", "you'll go"],
+      ["riwuuʔ, raraarat", "they'll go"]
+    ]
+  },
+  "p4-L4": {
+    "heading": "Assertive (Perfective)",
+    "rows": [
+      ["riitat", "I did go"],
+      ["riisat", "you did go"],
+      ["riiʔat", "he did go"],
+      ["riicihwa", "we did go"],
+      ["siriitpa", "we did go"],
+      ["siriispa", "you did go"],
+      ["siriiwa", "they did go"],
+      ["riitaraapuuʔ", "we did go"],
+      ["riihapuuʔ", "we did go"],
+      ["riistapuuʔ", "you did go"],
+      ["riiwuuʔ", "they did go"]
+    ]
+  },
+  "p4-L5": {
+    "heading": "Absolutive (Perfective)",
+    "rows": [
+      ["raatat", "I went"],
+      ["raasat", "you went"],
+      ["raʔat", "he went"],
+      ["racihwa", "we went"],
+      ["siratpa", "we went"],
+      ["siraspa", "you went"],
+      ["sirawa", "they went"],
+      ["rataraapuuʔ", "we went"],
+      ["rahapuuʔ", "we went"],
+      ["rastapuuʔ", "you went"],
+      ["raawuuʔ, raraarat", "they went"]
+    ]
+  },
+  "p4-R1": {
+    "heading": "Potential (Perfective)",
+    "rows": [
+      ["kuustiʔat", "I will go"],
+      ["kaasiʔat", "you will go"],
+      ["kuusiʔat", "he will go"],
+      ["kaaciriiwa", "we will go"],
+      ["sikuustiwa", "we will go"],
+      ["sikaasiwa", "you will go"],
+      ["sikuusiwa", "they will go"],
+      ["kuustaaraapuuʔ", "we will go"],
+      ["kuustiraapuuʔ", "we will go"],
+      ["kaasiraapuuʔ", "you will go"],
+      ["kusiiwuuʔ", "they will go"]
+    ]
+  },
+  "p4-R2": {
+    "heading": "Gerundial (Perfective Subordinate)",
+    "rows": [
+      ["iriiraatata", "where I went"],
+      ["iriiraasata", "where you went"],
+      ["iriiraata", "where he went"],
+      ["iriiracihwara", "where we went"],
+      ["iriisiratpara", "where we went"],
+      ["iriisiraspara", "where you went"],
+      ["iriisirawara", "where they went"],
+      ["iriirataraapuu", "where we went"],
+      ["iriirahapuu", "where we went"],
+      ["iriirastapuu", "where you went"],
+      ["iriraawuu", "where they went"]
+    ]
+  },
+  "p4-R3": {
+    "heading": "Contingent (Perfective Subordinate)",
+    "rows": [
+      ["itata", "if/when I go"],
+      ["isata", "if/when you go"],
+      ["riita", "if/when he goes"],
+      ["icihwara", "if/when we go"],
+      ["siʔitpara", "if/when we go"],
+      ["siʔispara", "if/when you go"],
+      ["siriwara", "if/when they go"],
+      ["itarapuu", "if/when we go"],
+      ["ihapuu", "if/when we go"],
+      ["istapuu", "if/when you go"],
+      ["riwuu", "if/when they go"]
+    ]
+  },
+  "p4-R4": {
+    "heading": "Subjunctive (Perfective Subordinate)",
+    "rows": [
+      ["aatata", "should I go"],
+      ["aasata", "should you go"],
+      ["iita", "should he go"],
+      ["aacihwara", "should we go"],
+      ["siʔaatpara", "should we go"],
+      ["siʔaaspara", "should you go"],
+      ["siʔiiwara", "should they go"],
+      ["aataraapuu", "should we go"],
+      ["aahapuu", "should we go"],
+      ["aastapuu", "should you go"],
+      ["iiwuu", "should they go"]
+    ]
+  },
+  "p4-R5": {
+    "heading": "Infinitive (Perfective Subordinate)",
+    "rows": [
+      ["ratkuuta", "for me to go"],
+      ["raskuuta", "for you to go"],
+      ["rakuuta", "for him to go"],
+      ["racihkuwara", "for us to go"],
+      ["siratkuwara", "for us to go"],
+      ["siraskuwara", "for you to go"],
+      ["sirakuwara", "for them to go"],
+      ["rataakuraapuu", "for us to go"],
+      ["ratkuraapuu", "for us to go"],
+      ["raskuraapuu", "for you to go"],
+      ["rakuuwuu, rakuraarata", "for them to go"]
+    ]
+  },
+  "p5-L1": {
+    "heading": "Indicative (Perfective)",
+    "rows": [
+      ["tatuuhii", "I am good"],
+      ["tasuuhii", "you are good"],
+      ["tuuhii", "he is good"],
+      ["taciihii", "we are good"],
+      ["sitatuuhii", "we are good"],
+      ["sitasuuhii", "you are good"],
+      ["situuhii", "they are good"],
+      ["tatuuraakiwaa", "we are good"],
+      ["taturaakiwaa", "we are good"],
+      ["tasuraakiwaa", "you are good"],
+      ["tuuhiwaa", "they are good"]
+    ]
+  },
+  "p5-L2": {
+    "heading": "Negative Indicative (Perfective)",
+    "rows": [
+      ["kaakatuuhii", "I am not good"],
+      ["kaakasuuhii", "you are not good"],
+      ["kaakuhii", "he is not good"],
+      ["kaakaciihii", "we are not good"],
+      ["sikaakatuuhii", "we are not good"],
+      ["sikaakasuuhii", "you are not good"],
+      ["sikaakuhii", "they are not good"],
+      ["kaakatuuraakiwaa", "we are not good"],
+      ["kaakaaturaakiwaa", "we are not good"],
+      ["kaakaasuraakiwaa", "you are not good"],
+      ["kaakuuhiwaa", "they are not good"]
+    ]
+  },
+  "p5-L3": {
+    "heading": "Contingent (Perfective)",
+    "rows": [
+      ["ituuhii", "I'll be good"],
+      ["isuuhii", "you'll be good"],
+      ["ruuhii", "he'll be good"],
+      ["iciihii", "we'll be good"],
+      ["siʔituuhii", "we'll be good"],
+      ["siʔisuuhii", "you'll be good"],
+      ["siruuhii", "they'll be good"],
+      ["ituuraakiwaa", "we'll be good"],
+      ["ituraakiwaa", "we'll be good"],
+      ["isuraakiwaa", "you'll be good"],
+      ["ruuhiwaa", "they'll be good"]
+    ]
+  },
+  "p5-L4": {
+    "heading": "Assertive (Perfective)",
+    "rows": [
+      ["rituuhii", "I was good"],
+      ["risuuhii", "you were good"],
+      ["ruhii", "he was good"],
+      ["riciihii", "we were good"],
+      ["siriituuhii", "we were good"],
+      ["siriisuuhii", "you were good"],
+      ["siruuhii", "they were good"],
+      ["rituuraakiwaa", "we were good"],
+      ["riituraakiwaa", "we were good"],
+      ["riisuraakiwaa", "you were good"],
+      ["ruuhiwaa", "they were good"]
+    ]
+  },
+  "p5-L5": {
+    "heading": "Absolutive (Perfective)",
+    "rows": [
+      ["ratuuhii", "I am good"],
+      ["rasuuhii", "you are good"],
+      ["ruuhii", "he is good"],
+      ["raciihii", "we are good"],
+      ["siratuuhii", "we are good"],
+      ["sirasuuhii", "you are good"],
+      ["siruuhii", "they are good"],
+      ["ratuuraakiwaa", "we are good"],
+      ["raturaakiwaa", "we are good"],
+      ["rasuraakiwaa", "you are good"],
+      ["ruuhiwaa", "they are good"]
+    ]
+  },
+  "p5-R1": {
+    "heading": "Potential (Perfective)",
+    "rows": [
+      ["kuustuuhii", "I will be good"],
+      ["kasuuhii", "you will be good"],
+      ["kusuuhii", "he will be good"],
+      ["kaciihii", "we will be good"],
+      ["sikuustuuhii", "we will be good"],
+      ["sikasuuhii", "you will be good"],
+      ["sikusuuhii", "they will be good"],
+      ["kuustuuraakiwaa", "we will be good"],
+      ["kuusturaakiwaa", "we will be good"],
+      ["kaasuraakiwaa", "you will be good"],
+      ["kusuuhiwaa", "they will be good"]
+    ]
+  },
+  "p5-R2": {
+    "heading": "Gerundial (Perfective Subordinate)",
+    "rows": [
+      ["iriiratuuhiira", "my being good"],
+      ["iriirasuuhiira", "your being good"],
+      ["iriruuhiira", "his being good"],
+      ["iriiraciihiira", "our being good"],
+      ["iriisiratuuhiira", "our being good"],
+      ["iriisirasuuhiira", "your being good"],
+      ["iriisiruuhiira", "their being good"],
+      ["iriiratuuraakiwaara", "our being good"],
+      ["iriiraturaakiwaara", "our being good"],
+      ["iriirasuraakiwaara", "your being good"],
+      ["iriruuhiwaara", "their being good"]
+    ]
+  },
+  "p5-R3": {
+    "heading": "Contingent (Perfective Subordinate)",
+    "rows": [
+      ["ituuhiira", "if/when I am good"],
+      ["isuuhiira", "if/when you are good"],
+      ["ruuhiira", "if/when he is good"],
+      ["iciihiira", "if/when we are good"],
+      ["siʔituuhiira", "if/when we are good"],
+      ["siʔisuuhiira", "if/when you are good"],
+      ["siruuhiira", "if/when they are good"],
+      ["ituuraakiwaara", "if/when we are good"],
+      ["ituraakiwaara", "if/when we are good"],
+      ["isuraakiwaara", "if/when you are good"],
+      ["ruuhiwaara", "if/when they are good"]
+    ]
+  },
+  "p5-R4": {
+    "heading": "Subjunctive (Perfective Subordinate)",
+    "rows": [
+      ["atuuhiira", "should I be good"],
+      ["asuuhiira", "should you be good"],
+      ["uuhiira", "should he be good"],
+      ["aciihiira", "should we be good"],
+      ["siʔatuuhiira", "should we be good"],
+      ["siʔasuuhiira", "should you be good"],
+      ["siʔuuhiira", "should they be good"],
+      ["atuuraakiwaara", "should we be good"],
+      ["aaturaakiwaara", "should we be good"],
+      ["aasuraakiwaara", "should you be good"],
+      ["uuhiwaara", "should they be good"]
+    ]
+  },
+  "p5-R5": {
+    "heading": "Infinitive (Perfective Subordinate)",
+    "rows": [
+      ["ratkuuhiira", "for me to be good"],
+      ["raskuuhiira", "for you to be good"],
+      ["rakuuhiira", "for him to be good"],
+      ["racihkuuhiira", "for us to be good"],
+      ["siratkuuhiira", "for us to be good"],
+      ["siraskuuhiira", "for you to be good"],
+      ["sirakuuhiira", "for them to be good"],
+      ["rataakuraakiwaara", "for us to be good"],
+      ["ratkuraakiwaara", "for us to be good"],
+      ["raskuraakiwaara", "for you to be good"],
+      ["rakuuhiwaara, rihkuhiwaara", "for them to be good"]
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+ "tiles_read": 18,
+ "tally": {
+  "words": 138,
+  "same": 132,
+  "differs": 4,
+  "b-for-h": 2
+ },
+ "differences": [
+  {
+   "stored": "kusaakiraawa",
+   "blind_reading": "kusaakiraawaʔ",
+   "kind": "differs",
+   "ratio": 0.96,
+   "where": "rule 2R surface",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "stored": "tikiikaahu",
+   "blind_reading": "tikiikaahuʔ",
+   "kind": "differs",
+   "ratio": 0.952,
+   "where": "rule 9R surface",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "stored": "ahibt",
+   "blind_reading": "ahiht",
+   "kind": "b-for-h",
+   "where": "rule 16 underlying",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "stored": "ahibt",
+   "blind_reading": "ahiht",
+   "kind": "b-for-h",
+   "where": "rule 16 surface",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "stored": "tiraraahu",
+   "blind_reading": "tiraraahuʔ",
+   "kind": "differs",
+   "ratio": 0.947,
+   "where": "rule 20 surface",
+   "grade": "blind-reading",
+   "severity": 1
+  },
+  {
+   "stored": "katawiwari",
+   "blind_reading": "katawiwarik",
+   "kind": "differs",
+   "ratio": 0.952,
+   "where": "rule 22 underlying",
+   "grade": "blind-reading",
+   "severity": 1
+  }
+ ]
+}

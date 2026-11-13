@@ -131,8 +131,41 @@ unlisted forms by changing the prefix of a form the dictionary does attest.
 Version 1's outputs are superseded by version 2; see
 [../curriculum/README.md](../curriculum/README.md) for why both are still here.
 
+## 8. Source-fidelity audit (November 2026)
+
+Does every stored value match the printed page? The instruction is
+[../prompts/source_fidelity_audit.md](../prompts/source_fidelity_audit.md); the
+results are in [../reports/source_audit_2026-11/](../reports/source_audit_2026-11/).
+The audit **changed no data**. It ends in a list of proposed fixes.
+
+| Script | Status | What it does |
+|---|---|---|
+| `db_dump.py` | **live** | Writes the database to [../DB/dump/](../DB/dump/) as text, one row per line, so that it is in git; `--restore` builds a database from that text; `--verify` proves the round trip. Run `--write` after any change to the database |
+| [`source_audit/`](source_audit/) | test | The audit, stage by stage. `status.py` prints how far it has got. See its README |
+
+The audit's two findings that matter for every other script:
+
+- **The dictionary PDFs' text layer is the typesetter's own text**, and the AI
+  parse was made from it. With the character table in
+  `source_audit/chartable.py` (verified against the printed glyphs) it can be
+  compared with the database field by field: `source_audit/s2e_compare.py`.
+  Run it after any change to dictionary data.
+- **Anything read by an AI model from a page image needs a second reading.**
+  Appendix 1 as stored had 152 wrong forms in 770.
+
 ## Known problems
 
+- **The answer keys have errors.** `morpheme_inventory.py --validate` and
+  `person_forms.py --validate-appendix` score the engines against the stored
+  copy of Appendix 1, in which the 2026-11 audit found 152 of 770 forms
+  differing from the page. Until the approved fixes are applied
+  (`source_audit/apply_fixes.py`), the 90.3% figure measures agreement with a
+  faulty key. `stem_extractor.py --validate` is scored against dictionary verb
+  forms, 22 of which differ from the page. `sound_changes.py --test` uses
+  examples of which six differ (three lack a final glottal stop).
+- `possession_engine.py` reads `kinship_paradigms`, where four forms differ
+  from Appendix 3 (*asaas* for *asas*, *atipaat* for *atipat*, *apaat* for
+  *apat*, *ataati* for *ataat*).
 - `possession_engine.py` offers an instrumental form ("with, using ...") for
   every noun the web app asks about, animals included: its animacy filter needs
   topic tags, and the API does not pass them. Its stem stripper also removes

@@ -131,7 +131,7 @@ def compare_with_disk(files):
         p = DUMP / name
         if not p.exists():
             missing.append(name)
-        elif p.read_bytes() != text.encode("utf-8"):
+        elif p.read_bytes().replace(b"\r\n", b"\n") != text.encode("utf-8"):   # a checkout on Windows may have CRLF
             changed.append(name)
     if DUMP.exists():
         extra = sorted(p.name for p in DUMP.iterdir() if p.is_file() and p.name not in files and p.name != "README.md")

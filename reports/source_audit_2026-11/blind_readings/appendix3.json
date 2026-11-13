@@ -1,0 +1,457 @@
+{
+  "p1": {
+    "book_page": "",
+    "tables": [],
+    "italic_forms": [
+      {"form": "ati-", "gloss": "my, our"},
+      {"form": "a-", "gloss": "your (SG), your (PL)"},
+      {"form": "i- ... -riʔ", "gloss": "his, her; their"},
+      {"form": "iraariʔ", "gloss": "his/her (same sex) sibling"},
+      {"form": "a", "gloss": ""},
+      {"form": "ati-", "gloss": "my, our"},
+      {"form": "a-", "gloss": ""},
+      {"form": "w", "gloss": ""},
+      {"form": "p", "gloss": ""},
+      {"form": "piiraʔuʔ", "gloss": "child"},
+      {"form": "piira-", "gloss": "child"},
+      {"form": "-uʔ", "gloss": ""},
+      {"form": "kt", "gloss": ""}
+    ]
+  },
+  "p2": {
+    "book_page": "[?]42",
+    "tables": [
+      {
+        "title": "Table 1. Skiri Kinship Terminology: Consanguineal Terms",
+        "columns": ["Kin Term Root", "English Translation", "Basic Extended Usages", "1st Possessor", "2nd Possessor", "3rd Possessor"],
+        "rows": [
+          {
+            "root": "-raa, -saas",
+            "english": "mother",
+            "first_usage": "mother’s sister",
+            "possessor_1": "atiraʔ",
+            "possessor_2": "asas",
+            "possessor_3": "isaastiʔ",
+            "other_cells": {}
+          },
+          {
+            "root": "-aas",
+            "english": "father",
+            "first_usage": "father’s brother",
+            "possessor_1": "atiʔas",
+            "possessor_2": "aʔas",
+            "possessor_3": "iʔaastiʔ",
+            "other_cells": {}
+          },
+          {
+            "root": "-kaa",
+            "english": "grandmother",
+            "first_usage": "maternal, paternal grandmother",
+            "possessor_1": "atikaʔ",
+            "possessor_2": "akaʔ",
+            "possessor_3": "ikaariʔ",
+            "other_cells": {}
+          },
+          {
+            "root": "-paak",
+            "english": "grandfather",
+            "first_usage": "maternal, paternal grandfather",
+            "possessor_1": "atipat",
+            "possessor_2": "apat",
+            "possessor_3": "ipaaktiʔ",
+            "other_cells": {}
+          },
+          {
+            "root": "-waat",
+            "english": "male’s nephew, niece",
+            "first_usage": "male’s sister’s son, daughter",
+            "possessor_1": "tiwaat",
+            "possessor_2": "awaat",
+            "possessor_3": "iwaahiʔ",
+            "other_cells": {}
+          }
+        ]
+      }
+    ],
+    "italic_forms": [
+      {"form": "haa (ku-...ir-...)", "gloss": "be one’s child; be one’s offspring"},
+      {"form": "tiki", "gloss": "sonny"},
+      {"form": "cuuʔat", "gloss": "daughter, dear"}
+    ]
+  },
+  "p3": {
+    "book_page": "",
+    "tables": [
+      {
+        "title": "",
+        "columns": [],
+        "note": "Continuation of Table 1 from the previous page. No title and no column headings are printed on this page; cells are assigned to root / English / usages / 1st / 2nd / 3rd possessor by position. The right edge of the image cuts through the last (3rd possessor) column.",
+        "rows": [
+          {
+            "root": "-waciriks, -waariiriks",
+            "english": "mother’s brother",
+            "first_usage": "mother’s male parallel cousin",
+            "possessor_1": "tiwaciriks",
+            "possessor_2": "paciriks",
+            "possessor_3": "iwariiri[?]",
+            "other_cells": {}
+          },
+          {
+            "root": "-taat",
+            "english": "sister (of male)",
+            "first_usage": "male’s parallel female cousin",
+            "possessor_1": "itaahiʔ",
+            "possessor_2": "ataat",
+            "possessor_3": "itaahiʔ",
+            "other_cells": {}
+          },
+          {
+            "root": "-raar",
+            "english": "sibling (of same sex as speaker)",
+            "first_usage": "male’s parallel male cousin",
+            "possessor_1": "iraariʔ",
+            "possessor_2": "ara",
+            "possessor_3": "iraariʔ",
+            "other_cells": {}
+          },
+          {
+            "root": "-raac",
+            "english": "brother (of female)",
+            "first_usage": "female’s parallel male cousin",
+            "possessor_1": "iraactiʔ",
+            "possessor_2": "araac",
+            "possessor_3": "iraactiʔ",
+            "other_cells": {}
+          },
+          {
+            "root": "-rak-tiikis",
+            "english": "grandchild",
+            "first_usage": "brother’s grandchild",
+            "possessor_1": "raktiiki",
+            "possessor_2": "arakis",
+            "possessor_3": "raktiiki[?]",
+            "other_cells": {}
+          }
+        ]
+      }
+    ],
+    "italic_forms": [
+      {"form": "aktaku (ir...)", "gloss": "to have as a spouse"},
+      {"form": "kaakus (ut...)", "gloss": "to have as an in-law"},
+      {"form": "ackurus (ir...)", "gloss": "to have as a female in-law, e.g., mother-, sister-, daughter-in-law"},
+      {"form": "tatiiraktakuʔ", "gloss": "‘I have her as a wife’ or ‘she is my wife’"},
+      {"form": "tikuuktakuʔ", "gloss": "‘he has me as a wife’ or ‘I am his wife’"}
+    ]
+  },
+  "p4": {
+    "book_page": "[?]44",
+    "tables": [
+      {
+        "title": "Table 2a. Terms Designating Spouses",
+        "columns": ["Skiri Forms: Indicative Mode", "English translation", "Skiri Forms: Gerundial Mode", "English Translation"],
+        "section_headings": [
+          "aktaku (ir...) (VA) ‘to have as a wife (male speaker)’ (also extended to mother’s brother’s wife, wife’s sister, sister’s son’s wife)",
+          "aktaku (ir...) (VP) ‘to have as a husband (female speaker)’ (also extended to husband’s brother, sister’s husband)"
+        ],
+        "rows": [
+          {
+            "root": "", "english": "", "first_usage": "", "possessor_1": "", "possessor_2": "", "possessor_3": "",
+            "section": "aktaku (ir...) (VA) ‘to have as a wife (male speaker)’",
+            "other_cells": {
+              "Skiri Forms: Indicative Mode": "tatiiraktakuʔ",
+              "English translation": "I have her as a wife; she is my wife",
+              "Skiri Forms: Gerundial Mode": "ratiiraktaku",
+              "English Translation": "the one I have as a wife; my wife"
+            }
+          },
+          {
+            "root": "", "english": "", "first_usage": "", "possessor_1": "", "possessor_2": "", "possessor_3": "",
+            "section": "aktaku (ir...) (VA) ‘to have as a wife (male speaker)’",
+            "other_cells": {
+              "Skiri Forms: Indicative Mode": "tasiiraktakuʔ",
+              "English translation": "you have her as a wife; she is your wife",
+              "Skiri Forms: Gerundial Mode": "rasiiraktaku",
+              "English Translation": "the one you have as a wife; your wife"
+            }
+          },
+          {
+            "root": "", "english": "", "first_usage": "", "possessor_1": "", "possessor_2": "", "possessor_3": "",
+            "section": "aktaku (ir...) (VA) ‘to have as a wife (male speaker)’",
+            "other_cells": {
+              "Skiri Forms: Indicative Mode": "taaktakuʔ",
+              "English translation": "he has her as his wife; she is his wife",
+              "Skiri Forms: Gerundial Mode": "raaktaku",
+              "English Translation": "the one he has as a wife; his wife"
+            }
+          },
+          {
+            "root": "", "english": "", "first_usage": "", "possessor_1": "", "possessor_2": "", "possessor_3": "",
+            "section": "aktaku (ir...) (VA) ‘to have as a wife (male speaker)’",
+            "other_cells": {
+              "Skiri Forms: Indicative Mode": "taciiraktakuʔ",
+              "English translation": "you and I have her as a wife; she is our wife",
+              "Skiri Forms: Gerundial Mode": "raciiraktaku",
+              "English Translation": "the one you and I have as a wife; our wife"
+            }
+          },
+          {
+            "root": "", "english": "", "first_usage": "", "possessor_1": "", "possessor_2": "", "possessor_3": "",
+            "section": "aktaku (ir...) (VP) ‘to have as a husband (female speaker)’",
+            "other_cells": {
+              "Skiri Forms: Indicative Mode": "tikuuktakuʔ",
+              "English translation": "he has me as a wife; I am his wife",
+              "Skiri Forms: Gerundial Mode": "rakuuktaku",
+              "English Translation": "the one who has me as a wife; my husband"
+            }
+          },
+          {
+            "root": "", "english": "", "first_usage": "", "possessor_1": "", "possessor_2": "", "possessor_3": "",
+            "section": "aktaku (ir...) (VP) ‘to have as a husband (female speaker)’",
+            "other_cells": {
+              "Skiri Forms: Indicative Mode": "taaktakuʔ",
+              "English translation": "he has you as a wife; you are his wife",
+              "Skiri Forms: Gerundial Mode": "raaktaku",
+              "English Translation": "the one who has you as a wife; your husband"
+            }
+          },
+          {
+            "root": "", "english": "", "first_usage": "", "possessor_1": "", "possessor_2": "", "possessor_3": "",
+            "section": "aktaku (ir...) (VP) ‘to have as a husband (female speaker)’",
+            "other_cells": {
+              "Skiri Forms: Indicative Mode": "taaktakuʔ",
+              "English translation": "he has her as a wife; she is his wife",
+              "Skiri Forms: Gerundial Mode": "raaktaku",
+              "English Translation": "the one who has her as a wife; her husband"
+            }
+          },
+          {
+            "root": "", "english": "", "first_usage": "", "possessor_1": "", "possessor_2": "", "possessor_3": "",
+            "section": "aktaku (ir...) (VP) ‘to have as a husband (female speaker)’",
+            "other_cells": {
+              "Skiri Forms: Indicative Mode": "tacakuuktakuʔ",
+              "English translation": "he has you and me as a wife; he is our husband",
+              "Skiri Forms: Gerundial Mode": "racakuuktaku",
+              "English Translation": "the one who has you and me as wives; our (IN.DU) husband"
+            }
+          },
+          {
+            "root": "", "english": "", "first_usage": "", "possessor_1": "", "possessor_2": "", "possessor_3": "",
+            "section": "aktaku (ir...) (VP) ‘to have as a husband (female speaker)’",
+            "other_cells": {
+              "Skiri Forms: Indicative Mode": "sitikuuktakuʔ",
+              "English translation": "he has her and me as a wife; he is our husband",
+              "Skiri Forms: Gerundial Mode": "sirikuuktaku",
+              "English Translation": "the one who has her and me as a wife; our (EX.DU) husband"
+            }
+          }
+        ]
+      }
+    ],
+    "italic_forms": [
+      {"form": "aktaku (ir...)", "gloss": "to have as a wife (male speaker)"},
+      {"form": "aktaku (ir...)", "gloss": "to have as a husband (female speaker)"}
+    ]
+  },
+  "p5": {
+    "book_page": "",
+    "tables": [
+      {
+        "title": "Table 2b. Terms Designating In-Laws: kaakus (ut...)",
+        "columns": ["Skiri Forms: Indicative Mode", "English translation", "Skiri Forms: Gerundial Mode", "English Translation"],
+        "note": "The right edge of the image cuts through the last column (English Translation) and the end of the first section heading; [?] marks each place where printed text runs off the edge.",
+        "section_headings": [
+          "kaakus (ut...) (VA) ‘to have as an in-law (male speaking)’, ref. to one’s wife’s parents and brother[?]",
+          "kaakus (ut...) (VP) ‘to have as a son-in-law or brother-in-law (male speaking)’"
+        ],
+        "rows": [
+          {
+            "root": "", "english": "", "first_usage": "", "possessor_1": "", "possessor_2": "", "possessor_3": "",
+            "section": "kaakus (ut...) (VA) ‘to have as an in-law (male speaking)’",
+            "other_cells": {
+              "Skiri Forms: Indicative Mode": "tatutkaaku",
+              "English translation": "I have him/her as an in-law",
+              "Skiri Forms: Gerundial Mode": "ratutkaaku",
+              "English Translation": "the one I have as an in-law;[?] in-law"
+            }
+          },
+          {
+            "root": "", "english": "", "first_usage": "", "possessor_1": "", "possessor_2": "", "possessor_3": "",
+            "section": "kaakus (ut...) (VA) ‘to have as an in-law (male speaking)’",
+            "other_cells": {
+              "Skiri Forms: Indicative Mode": "tasutkaaku",
+              "English translation": "you have him/her as an in-law",
+              "Skiri Forms: Gerundial Mode": "rasutkaaku",
+              "English Translation": "the one you have as an in-la[?] your in-law"
+            }
+          },
+          {
+            "root": "", "english": "", "first_usage": "", "possessor_1": "", "possessor_2": "", "possessor_3": "",
+            "section": "kaakus (ut...) (VA) ‘to have as an in-law (male speaking)’",
+            "other_cells": {
+              "Skiri Forms: Indicative Mode": "tutkaaku",
+              "English translation": "he has him/her as an in-law",
+              "Skiri Forms: Gerundial Mode": "rutkaaku",
+              "English Translation": "the one he/she has as an in-[?] his/her in-law"
+            }
+          },
+          {
+            "root": "", "english": "", "first_usage": "", "possessor_1": "", "possessor_2": "", "possessor_3": "",
+            "section": "kaakus (ut...) (VA) ‘to have as an in-law (male speaking)’",
+            "other_cells": {
+              "Skiri Forms: Indicative Mode": "tacuutkaaku",
+              "English translation": "you and I have him/her as an in-law",
+              "Skiri Forms: Gerundial Mode": "racuutkaaku",
+              "English Translation": "the one you and I have as an[?] law; our (IN.DU) in-law"
+            }
+          },
+          {
+            "root": "", "english": "", "first_usage": "", "possessor_1": "", "possessor_2": "", "possessor_3": "",
+            "section": "kaakus (ut...) (VA) ‘to have as an in-law (male speaking)’",
+            "other_cells": {
+              "Skiri Forms: Indicative Mode": "sitatutkaaku",
+              "English translation": "he and I have him/her as an in-law",
+              "Skiri Forms: Gerundial Mode": "sirutkaaku",
+              "English Translation": "the one he and I have as an [?] law; our (EX.DU) in-law"
+            }
+          },
+          {
+            "root": "", "english": "", "first_usage": "", "possessor_1": "", "possessor_2": "", "possessor_3": "",
+            "section": "kaakus (ut...) (VP) ‘to have as a son-in-law or brother-in-law (male speaking)’",
+            "other_cells": {
+              "Skiri Forms: Indicative Mode": "tikuutkaaku",
+              "English translation": "he/she has me as a son-in-law/brother-in-law",
+              "Skiri Forms: Gerundial Mode": "rikuutkaaku",
+              "English Translation": "the one who has me as a son[?] law/brother-in-law; my son[?] law/brother-in-law"
+            }
+          },
+          {
+            "root": "", "english": "", "first_usage": "", "possessor_1": "", "possessor_2": "", "possessor_3": "",
+            "section": "kaakus (ut...) (VP) ‘to have as a son-in-law or brother-in-law (male speaking)’",
+            "other_cells": {
+              "Skiri Forms: Indicative Mode": "tuutkaaku",
+              "English translation": "he/she has you as a son-in-law/brother-in-law",
+              "Skiri Forms: Gerundial Mode": "ruutkaaku",
+              "English Translation": "the one who has you as a so[?] in-law/brother-in-law; your son-in-law/brother-in-law"
+            }
+          },
+          {
+            "root": "", "english": "", "first_usage": "", "possessor_1": "", "possessor_2": "", "possessor_3": "",
+            "section": "kaakus (ut...) (VP) ‘to have as a son-in-law or brother-in-law (male speaking)’",
+            "other_cells": {
+              "Skiri Forms: Indicative Mode": "tiitkaaku",
+              "English translation": "he/she has him as a son-in-law/brother-in-law",
+              "Skiri Forms: Gerundial Mode": "riitkaaku",
+              "English Translation": "the one who has him as a so[?] in-law/brother-in-law; his brother-in-law/son-in-law"
+            }
+          },
+          {
+            "root": "", "english": "", "first_usage": "", "possessor_1": "", "possessor_2": "", "possessor_3": "",
+            "section": "kaakus (ut...) (VP) ‘to have as a son-in-law or brother-in-law (male speaking)’",
+            "other_cells": {
+              "Skiri Forms: Indicative Mode": "tacuutkaaku",
+              "English translation": "he/she has you and me as sons-in-law/brothers-in-law",
+              "Skiri Forms: Gerundial Mode": "racakuutkaaku",
+              "English Translation": "the one who has you and m[?] sons-in-law/brothers-in-law[?]"
+            }
+          },
+          {
+            "root": "", "english": "", "first_usage": "", "possessor_1": "", "possessor_2": "", "possessor_3": "",
+            "section": "kaakus (ut...) (VP) ‘to have as a son-in-law or brother-in-law (male speaking)’",
+            "other_cells": {
+              "Skiri Forms: Indicative Mode": "situutkaaku",
+              "English translation": "he/she has him and me as sons-in-law/brothers-in-law",
+              "Skiri Forms: Gerundial Mode": "siriitkaaku",
+              "English Translation": "the one who has him and m[?] sons-in-law/ brothers-in-law[?]"
+            }
+          }
+        ]
+      }
+    ],
+    "italic_forms": [
+      {"form": "kaakus (ut...)", "gloss": ""},
+      {"form": "kaakus (ut...)", "gloss": "to have as an in-law (male speaking)"},
+      {"form": "kaakus (ut...)", "gloss": "to have as a son-in-law or brother-in-law (male speaking)"}
+    ]
+  },
+  "p6": {
+    "book_page": "[?]46",
+    "tables": [
+      {
+        "title": "Table 2c. Terms Designating Female In-Laws: ackurus (ir...)",
+        "columns": ["Skiri Forms: Indicative Mode", "English translation", "Skiri Forms: Gerundial Mode", "English Translation"],
+        "section_headings": [
+          "ackurus (ir...) (VA) ‘to have as a female in-law’, i.e., as a mother-in-law, daughter-in-law (male and female speaking); sister-in-law, mother’s brother’s wife (female speaking)",
+          "ackurus (ir...) (VP) ‘to be one’s female in-law’, i.e., as a mother-in-law, daughter-in-law; sister-in-law, mother’s brother’s wife (female speaking)"
+        ],
+        "rows": [
+          {
+            "root": "", "english": "", "first_usage": "", "possessor_1": "", "possessor_2": "", "possessor_3": "",
+            "section": "ackurus (ir...) (VA) ‘to have as a female in-law’",
+            "other_cells": {
+              "Skiri Forms: Indicative Mode": "tatiirackurus",
+              "English translation": "I have her as a female in-law, as a daughter-in-law/sister-in-law",
+              "Skiri Forms: Gerundial Mode": "ratiirackurusu",
+              "English Translation": "the one I have as a female in-law, as a daughter-in-law/sister-in-law"
+            }
+          },
+          {
+            "root": "", "english": "", "first_usage": "", "possessor_1": "", "possessor_2": "", "possessor_3": "",
+            "section": "ackurus (ir...) (VA) ‘to have as a female in-law’",
+            "other_cells": {
+              "Skiri Forms: Indicative Mode": "tasiirackurus",
+              "English translation": "you have her as a female in-law, as a daughter-in-law/sister-in-law",
+              "Skiri Forms: Gerundial Mode": "rasiirackurusu",
+              "English Translation": "the one who has you as a female in-law, as a daughter-in-law/sister-in-law"
+            }
+          },
+          {
+            "root": "", "english": "", "first_usage": "", "possessor_1": "", "possessor_2": "", "possessor_3": "",
+            "section": "ackurus (ir...) (VA) ‘to have as a female in-law’",
+            "other_cells": {
+              "Skiri Forms: Indicative Mode": "taackurus",
+              "English translation": "she has her as a female in-law; she is her daughter-in-law/sister-in-law",
+              "Skiri Forms: Gerundial Mode": "raackurusu",
+              "English Translation": "the one who has her as a female in-law, as a daughter-in-law/sister-in-law"
+            }
+          },
+          {
+            "root": "", "english": "", "first_usage": "", "possessor_1": "", "possessor_2": "", "possessor_3": "",
+            "section": "ackurus (ir...) (VP) ‘to be one’s female in-law’",
+            "other_cells": {
+              "Skiri Forms: Indicative Mode": "tikuuckurus",
+              "English translation": "she has me as a female in-law; I am her daughter-in-law/sister-in-law",
+              "Skiri Forms: Gerundial Mode": "rikuuckurusu",
+              "English Translation": "the one who has me as a female in-law; i.e., my mother-in-law/sister-in-law"
+            }
+          },
+          {
+            "root": "", "english": "", "first_usage": "", "possessor_1": "", "possessor_2": "", "possessor_3": "",
+            "section": "ackurus (ir...) (VP) ‘to be one’s female in-law’",
+            "other_cells": {
+              "Skiri Forms: Indicative Mode": "taackurus",
+              "English translation": "she has you as a female in-law; you are her daughter-in-law/sister-in-law",
+              "Skiri Forms: Gerundial Mode": "raackurusu",
+              "English Translation": "the one who has you as a female in-law; your mother-in-law/sister-in-law"
+            }
+          },
+          {
+            "root": "", "english": "", "first_usage": "", "possessor_1": "", "possessor_2": "", "possessor_3": "",
+            "section": "ackurus (ir...) (VP) ‘to be one’s female in-law’",
+            "other_cells": {
+              "Skiri Forms: Indicative Mode": "taackurus",
+              "English translation": "she has her as a female in-law; she is her daughter-in-law/sister-in-law",
+              "Skiri Forms: Gerundial Mode": "raackurusu",
+              "English Translation": "the one who has her as a female in-law; her daughter -in-law/sister-in-law"
+            }
+          }
+        ]
+      }
+    ],
+    "italic_forms": [
+      {"form": "ackurus (ir...)", "gloss": ""},
+      {"form": "ackurus (ir...)", "gloss": "to have as a female in-law"},
+      {"form": "ackurus (ir...)", "gloss": "to be one’s female in-law"},
+      {"form": "kustawihcuʔ", "gloss": "son-in-law"}
+    ]
+  }
+}

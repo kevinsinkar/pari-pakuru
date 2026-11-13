@@ -1,0 +1,2 @@
+# The text copy of the database is compared byte for byte by scripts/db_dump.py: keep LF on every system
+DB/dump/** text eol=lf

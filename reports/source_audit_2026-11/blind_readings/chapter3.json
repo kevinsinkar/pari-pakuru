@@ -1,0 +1,855 @@
+{
+  "p1-b1": {
+    "book_page": "",
+    "rules": [],
+    "examples": [],
+    "other_forms": [],
+    "notes": "Chapter opening: '3 / Major Sound Changes' and two paragraphs of introduction in roman type. No Skiri forms, no running head in this tile."
+  },
+  "p1-b2": {
+    "book_page": "19",
+    "rules": [
+      {
+        "label": "Rule 1R.",
+        "name": "Dominant i.",
+        "formal": "",
+        "note": "No formula in this tile; the rule is set out as a three-column table (Preceding Prefixes / Following Prefix or Stem-Initial Vowel / Resulting Contraction). The formula is printed at the top of the next page (tile p2-b1). Section heading above the rule: 'Vowels: Restricted Rules'."
+      }
+    ],
+    "examples": [],
+    "other_forms": [
+      ["i", ""],
+      ["ii", ""],
+      ["u", ""],
+      ["i", ""],
+      ["ii", ""],
+      ["rii-", "‘assertive mode (ASSR)’"],
+      ["-uks-", "‘aorist (AOR)’"],
+      ["riiks-", ""],
+      ["ti-", "‘indicative mode (IND.3.A)’"],
+      ["ii-", "‘subjunctive mode (SUBJ.3.A)’"],
+      ["ri-", "‘contingent mode (CONT.3.A)’"],
+      ["u . . .]STEM", ""],
+      ["tii-", ""],
+      ["ii-", ""],
+      ["rii-", ""],
+      ["-i-", "‘sequential (SEQ)’"],
+      ["-ir-", "‘preverb (PREV)’"],
+      ["acir-", "‘inclusive dual agent (INCL.DU.A)’"],
+      ["-uur-", "‘preverb (PREV)’"],
+      ["-iir-", ""],
+      ["-iir-", ""],
+      ["-aciir-", ""]
+    ],
+    "notes": "The first five other_forms are from the running text of Rule 1R ('a final i or ii ... the initial u ... contract to i or ii'). The rest is the table, read block by block. Row 1: rii- | -uks- | riiks-. Block 2 (bracketed): ti-, ii-, ri- | u . . .]STEM (STEM is a small-capital subscript) | tii-, ii-, rii-. Block 3 (bracketed): -i-, -ir-, acir- | -uur- | -iir-, -iir-, -aciir-. In block 3 'acir-' is printed with no leading hyphen although its contraction is printed '-aciir-' with one."
+  },
+  "p2-b1": {
+    "book_page": "20",
+    "rules": [
+      {
+        "label": "Rule 1R.",
+        "name": "",
+        "formal": "i, ii + u → i, ii",
+        "note": "Heading is on the previous page; this tile has only 'Thus, the restricted rule:' and the formula, then 'Examples:'."
+      },
+      {
+        "label": "Rule 2R.",
+        "name": "Dominant a.",
+        "formal": "i + a → a"
+      }
+    ],
+    "examples": [
+      {
+        "rule": "Rule 1R.",
+        "underlying": "ti- IND + Ø- 3.A + uhurah ‘be alone’ + -Ø PERF",
+        "surface": "tiihura",
+        "gloss": "he is alone"
+      },
+      {
+        "rule": "Rule 1R.",
+        "underlying": "ta- IND.1/2.A + aciir- 1.DU.IN.A + uur- PREV + hiir ‘be good’ + -Ø PERF",
+        "surface": "taciihii",
+        "gloss": "you and I are good"
+      }
+    ],
+    "other_forms": [
+      ["i + a", ""],
+      ["ii", ""],
+      ["a", ""],
+      ["a", "(in 'a-dominant morphemes')"],
+      ["ti-", "indicative mode, third person agent (IND)"],
+      ["ri-", "contingent mode, third person agent (CONT)"],
+      ["a-", "second person patient (2.P)"],
+      ["a-", "preverb (PREV); third person agt. possessor (3.POSS.A)"],
+      ["aca-", "inclusive dual patient (1D.IN.P)"]
+    ],
+    "notes": "Both examples are printed as: surface ‘gloss’ (< parts joined by +). Table at the foot has two independent columns, 'Modal Prefixes' (ti-, ri-, continued in the next tile) and 'a-Dominant Morphemes' (a-, a-, aca-, continued); listed here left column first, then right column. The example has 'aciir- 1.DU.IN.A' where the table on p. 19 has 'acir- ... (INCL.DU.A)'."
+  },
+  "p2-b2": {
+    "book_page": "",
+    "rules": [
+      {
+        "label": "Rule 3R.",
+        "name": "-his ‘perfective’ Reduction.",
+        "formal": "Vk]STEM + -his → ks",
+        "note": "STEM is a small-capital subscript after the bracket. Vk, -his and ks are italic."
+      }
+    ],
+    "examples": [
+      {
+        "rule": "Rule 2R.",
+        "underlying": "ti- IND + Ø- 3.A + a- 2.P + piru ‘whip’ + -Ø PERF",
+        "surface": "tapiruʔ",
+        "gloss": "he whipped you",
+        "note": "Bold in print: the a of tapiruʔ; ti- IND; a- 2.P."
+      },
+      {
+        "rule": "Rule 2R.",
+        "underlying": "kuus- POT.1/3A + a- 2.P + i- SEQ + kiraawaahc ‘be sick’ + -Ø PERF",
+        "surface": "kusaakiraawaʔ",
+        "gloss": "you will forget",
+        "note": "Bold in print: kusaa of the surface form; kuus- POT.1/3A; a- 2.P; i- SEQ. The stem gloss is printed ‘be sick’ although the word gloss is ‘you will forget’."
+      },
+      {
+        "rule": "Rule 2R.",
+        "underlying": "wii- ‘now’ + ti- IND + Ø- 3.A + ar- EV + ut- PREV + asitik ‘happen’ + -Ø PERF",
+        "surface": "wiitaruutasitit",
+        "gloss": "it would happen",
+        "note": "Bold in print: ar of the surface form; ti- IND; ar- EV."
+      },
+      {
+        "rule": "Rule 2R.",
+        "underlying": "si- DU + ii- SUBJ + Ø- 3.A + a- PREV + wa- DIST + a ‘come’ + -Ø SUB.3",
+        "surface": "siʔaawaʔa",
+        "gloss": "they (DU) should have come",
+        "note": "Bold in print: aaw (or aa) of the surface form; ii-; a- (the PREV one)."
+      }
+    ],
+    "other_forms": [
+      ["aca-", "inclusive dual patient (1D.IN.P)"],
+      ["kuus...i-", "potential mode, third person agent (POT.1)"],
+      ["ar-", "evidential proper (EV)"],
+      ["ii-", "subjunctive mode, third person agent (SUBJ)"],
+      ["-his", "‘perfective’ (in the heading of Rule 3R)"],
+      ["-his", "‘perfective (PERF)’"],
+      ["s", ""],
+      ["k", ""]
+    ],
+    "notes": "Top of tile is the end of the Rule 2R table: left column (Modal Prefixes) continues '(CONT)', kuus...i-, ii-; right column (a-Dominant Morphemes) continues aca-, ar-. Examples are introduced by 'Examples of the preceding combinations are the following (with contracting vowels in boldface):' and are printed as: surface ‘gloss’ < parts joined by +."
+  },
+  "p3-b1": {
+    "book_page": "21",
+    "rules": [
+      {
+        "label": "Rule 4R.",
+        "name": "Stem-final Vocalic Reduplication.",
+        "formal": "Vᵢ(Vᵢ) → Vᵢ(Vᵢ)ʔVᵢ / C _ C + Ø (+ NON-SUB)",
+        "note": "Each i is a subscript on the V; ʔ is the raised glottal-stop hook; NON-SUB is in small capitals. V and C are roman capitals."
+      }
+    ],
+    "examples": [
+      {
+        "rule": "Rule 3R.",
+        "underlying": "hak ‘pass by’ + -his PERF",
+        "surface": "haks-",
+        "gloss": "pass by (PERF)",
+        "note": "Introduced by 'An example of this rule is:'. Bold in print: hak ‘pass by’ + -his PERF."
+      },
+      {
+        "rule": "Rule 3R.",
+        "underlying": "ti- IND + Ø- 3.A + hak ‘pass by’ + -his PERF + -ta INT",
+        "surface": "tihaksta",
+        "gloss": "he is going to pass by",
+        "note": "Continues the same sentence: '..., as in tihaksta ‘he is going to pass by’ < ...'. The ks of tihaksta looks bold."
+      },
+      {
+        "rule": "Rule 4R.",
+        "underlying": "ti- IND + Ø- 3.A + pahaat ‘be red’ + Ø ‘be’",
+        "surface": "tipahaaʔat",
+        "gloss": "it is red",
+        "note": "Followed by '; cf. iriirapahaatu ‘the one that is red’'. The last element is printed 'Ø' with no hyphen before it."
+      },
+      {
+        "rule": "Rule 4R.",
+        "underlying": "ti- IND + Ø- 3.A + huraar- ‘ground’ + tararit ‘be burned, scorched’ + -Ø ‘be’",
+        "surface": "tihuraahtarariʔit",
+        "gloss": "the ground is burned off",
+        "note": "Followed by '; cf. iriiratarariitu ‘where it is scorched’'. Here the last element is printed '-Ø' with a hyphen."
+      }
+    ],
+    "other_forms": [
+      ["iriirapahaatu", "‘the one that is red’"],
+      ["iriiratarariitu", "‘where it is scorched’"]
+    ],
+    "notes": "After the Rule 4R examples comes the section heading 'Vowels: Unrestricted Rules' and roman text ('Two or more contiguous vowels ... contract, except when either of two conditions occurs: (1) the second of two vowels is long, or (2) two vowels are in word-final position or preceding a final consonant.'); no Skiri forms there."
+  },
+  "p3-b2": {
+    "book_page": "",
+    "rules": [
+      {
+        "label": "",
+        "name": "",
+        "formal": "V, VᵢVᵢ + V → VV / _ C(C)V",
+        "note": "Unnumbered general statement of vowel contraction (section 'Vowels: Unrestricted Rules'), after 'Vowel contraction takes place when there is a sequence of a short or long vowel followed by a short vowel before one or two consonants. Thus,'. Followed by '(where Vᵢ represents a vowel that is identical to another so-marked vowel in a rule and VᵢVᵢ represents a long vowel).' The i's are subscripts."
+      },
+      {
+        "label": "Rule 5.",
+        "name": "Same-vowel Contractions.",
+        "formal": "Vᵢ(Vᵢ) + Vᵢ → VᵢVᵢ",
+        "note": "The i's are subscripts. No examples are printed for this rule."
+      },
+      {
+        "label": "Rule 6.",
+        "name": "Contractions of Any Vowel + u: u-Domination.",
+        "formal": "[ V, VᵢVᵢ + u | u(u) + V ] → uu / _ C(C)V",
+        "note": "The left side is two lines inside one pair of square brackets: top line 'V, VᵢVᵢ + u', bottom line 'u(u) + V' (shown here separated by |). u, u(u) and uu are italic; V and C roman."
+      }
+    ],
+    "examples": [],
+    "other_forms": [
+      ["u", "(in the heading of Rule 6: 'Any Vowel + u')"],
+      ["u", "(in the heading of Rule 6: 'u-Domination')"],
+      ["u", ""],
+      ["uu", ""]
+    ],
+    "notes": "Tile ends after the Rule 6 formula; the rest of the tile is blank. Examples for Rule 6 follow on the next page."
+  },
+  "p4-b1": {
+    "book_page": "22",
+    "rules": [
+      {
+        "label": "Rule 7.",
+        "name": "Contractions of i and a.",
+        "formal": "[ i(i) + a | a(a) + i ] → ii / _ C(C)V",
+        "note": "The left side is two lines inside one pair of square brackets: top line 'i(i) + a', bottom line 'a(a) + i' (shown here separated by |). Lower-case letters italic; C(C)V roman."
+      }
+    ],
+    "examples": [
+      {
+        "rule": "Rule 6.",
+        "underlying": "ti- IND + Ø- 3.A + Ø- 3.P + uur- PREV + iciisat ‘be tired’ + -Ø PERF",
+        "surface": "tuuriciisat",
+        "gloss": "he is tired"
+      },
+      {
+        "rule": "Rule 6.",
+        "underlying": "ti- IND + Ø- 3.A + a- 2.P + uur- PREV + iciisat ‘be tired’ + -Ø PERF",
+        "surface": "tuuriciisat",
+        "gloss": "you are tired",
+        "note": "Printed in the same paragraph as the previous example, after a semicolon. The surface form is printed identically to the previous one."
+      },
+      {
+        "rule": "Rule 6.",
+        "underlying": "ku- INDF + ii- SUBJ + Ø- 3.A + ut- BEN + kaksaa ‘holler, yell’ + -Ø SUB.4",
+        "surface": "kuʔuutkaksaa",
+        "gloss": "if he could holler for him"
+      },
+      {
+        "rule": "Rule 7.",
+        "underlying": "ti- IND + Ø- 3.A + atkaʔu ‘hear’ + -Ø PERF",
+        "surface": "tiitkuʔ",
+        "gloss": "he hears"
+      }
+    ],
+    "other_forms": [
+      ["i", "(heading of Rule 7)"],
+      ["a", "(heading of Rule 7)"],
+      ["i", ""],
+      ["ii", ""],
+      ["a", ""],
+      ["a", ""],
+      ["aa", ""],
+      ["i", ""],
+      ["ii", ""],
+      ["i", ""],
+      ["a", ""],
+      ["ee", "(result of contractions of i and a in South Band Pawnee and Arikara)"]
+    ],
+    "notes": "Tile opens with 'Examples are:' (examples for Rule 6, whose heading is on the previous page). After the Rule 7 example comes the section heading 'Consonants: Restricted Rules' and 'There are four commonly occurring restricted rules for consonants. Those rules are the following.'"
+  },
+  "p4-b2": {
+    "book_page": "",
+    "rules": [
+      {
+        "label": "Rule 8R.",
+        "name": "Assibilation of raar-.",
+        "formal": "r + t → c / raar- + t . . .]STEM",
+        "note": "STEM is a small-capital subscript after the closing bracket. All lower-case letters italic."
+      },
+      {
+        "label": "Rule 9R.",
+        "name": "Final-s Loss Rule.",
+        "formal": "s → Ø / _ #"
+      }
+    ],
+    "examples": [
+      {
+        "rule": "Rule 8R.",
+        "underlying": "ti- IND + Ø- 3.A+ raar- PL.INDV.A + takasis ‘be together’ + -Ø PERF",
+        "surface": "tiracakasis",
+        "gloss": "they are close together",
+        "note": "Bold in print: the c of tiracakasis, the final r of raar-, the initial t of takasis. '3.A+' is printed with no space before the plus sign."
+      },
+      {
+        "rule": "Rule 9R.",
+        "underlying": "ti- IND + Ø- 3.A + kiikaa ‘drink’ + -:hus IMPF",
+        "surface": "tikiikaahuʔ",
+        "gloss": "he is drinking",
+        "note": "In running text: 'for example, tikiikaahuʔ ‘he is drinking’ (< ti- IND + Ø- 3.A + kiikaa ‘drink’ + -:hus IMPF).'"
+      }
+    ],
+    "other_forms": [
+      ["raar-", "(heading of Rule 8R)"],
+      ["raar-", "‘plural; iterative’"],
+      ["t", ""],
+      ["r + t", ""],
+      ["c", ""],
+      ["s", "(heading of Rule 9R: 'Final-s')"],
+      ["s", ""],
+      ["s", ""],
+      ["s", "(in 'final-s loss')"],
+      ["kuhkus-", "‘swine, pig; pork’"],
+      ["kuhku", "(independent form)"],
+      ["kuhkus", "(in compounds)"],
+      ["kuhkuskaʔit", "‘salt pork’"],
+      ["kuhkuskaasuʔ", "‘ham’"],
+      ["-:hus/-hus", "‘imperfective (IMPF)’"],
+      ["s", ""]
+    ],
+    "notes": "Tile opens with the last words of the section introduction ('the following.'). The lower part of the tile is blank after the Rule 9R paragraph."
+  },
+  "p5-b1": {
+    "book_page": "23",
+    "rules": [
+      {
+        "label": "Rule 10R.",
+        "name": "Prefixal Final-r Loss.",
+        "formal": "",
+        "note": "No formula is printed for this rule; it is stated in prose only."
+      },
+      {
+        "label": "Rule 11R.",
+        "name": "ut- Affrication Rule.",
+        "formal": "ut- → uc- / _ i-",
+        "note": "The formula is printed after the examples, introduced by 'Thus,'."
+      }
+    ],
+    "examples": [
+      {
+        "rule": "Rule 10R.",
+        "underlying": "ta- IND.1/2.A + t- 1.A + ir- PREV + ut- PREV + urikatakus ‘carry under one’s arm’ + -Ø PERF",
+        "surface": "tatiiturikataku",
+        "gloss": "I am carrying it under my arm",
+        "note": "Bold in print: iit of the surface form; ir- PREV; ut- PREV."
+      },
+      {
+        "rule": "Rule 11R.",
+        "underlying": "kuus . . . i- POT.1/3.A + t- 1.A + ut- PREV + aar ‘do’ + -Ø PERF",
+        "surface": "kuustuciʔa",
+        "gloss": "I will do it"
+      },
+      {
+        "rule": "Rule 11R.",
+        "underlying": "ta- IND.1/2.A + t- 1.A + ut- PREV + aar ‘do’ + -Ø PERF",
+        "surface": "tatuuta",
+        "gloss": "I did it",
+        "note": "Printed in the same paragraph as the previous example, after '; cp.'."
+      }
+    ],
+    "other_forms": [
+      ["r", "(heading of Rule 10R: 'Final-r')"],
+      ["ir-", "‘preverb (PREV); third person transitive agent plural (PL.3.A); obviative (OBV)’"],
+      ["acir-", "‘first person inclusive dual agent (1D.IN.A)’"],
+      ["r", ""],
+      ["uur-", "‘preverb (PREV); patient possessor (P.POSS)’"],
+      ["ut-", "‘preverb (PREV); dative/benefactive (BEN)’"],
+      ["uks-", "‘aorist (AOR); jussive (JUSS)’"],
+      ["r", ""],
+      ["ir-", ""],
+      ["acir-", ""],
+      ["i", ""],
+      ["u", ""],
+      ["ut-", "(heading of Rule 11R)"],
+      ["t", ""],
+      ["ut-", "‘preverb (PREV); dative/benefactive (DAT/BEN)’"],
+      ["c", ""],
+      ["i-", "‘sequential (SEQ)’"],
+      ["i-", "SEQ"],
+      ["u", ""],
+      ["-uks", "AOR; JUSS"]
+    ],
+    "notes": "Last paragraph of the tile: 'In Skiri i- SEQ does not dominate over a following u in -uks AOR; JUSS, as it does in South Band. For example,' (its example is at the top of the next tile). The aorist/jussive morpheme is printed 'uks-' in the Rule 10R paragraph and '-uks' in this last paragraph."
+  },
+  "p5-b2": {
+    "book_page": "",
+    "rules": [
+      {
+        "label": "Rule 12R.",
+        "name": "Prefixal r-Laryngealization Rule.",
+        "formal": "r → h / _ r"
+      }
+    ],
+    "examples": [
+      {
+        "rule": "Rule 11R.",
+        "underlying": "i- CONT.1/2.A + s- 2.A + ut- PREV + i- SEQ + uks- JUSS + aar ‘do’ + -Ø PERF",
+        "surface": "sucuksa",
+        "gloss": "do it!",
+        "note": "Example for the remark at the end of Rule 11R (i- SEQ does not dominate a following u in -uks). Followed by '; cp. South Band suciksa ‘do it!’'."
+      },
+      {
+        "rule": "Rule 12R.",
+        "underlying": "ar- EV + ri- CONT.3.A + Ø- 3.A + at ‘go’ + -Ø PERF",
+        "surface": "ahiʔat",
+        "gloss": "he went",
+        "note": "Bold in print: the h of ahiʔat."
+      },
+      {
+        "rule": "Rule 12R.",
+        "underlying": "tiir- INF + ra- ABS + Ø- 3.A + kuutik ‘kill’ + -Ø PERF",
+        "surface": "tiihakuutit",
+        "gloss": "he must have killed it",
+        "note": "Bold in print: ih (second i and the h) of tiihakuutit. The gloss label here is INF; the list above it has INFR."
+      }
+    ],
+    "other_forms": [
+      ["suciksa", "‘do it!’ (South Band)"],
+      ["r", "(heading of Rule 12R)"],
+      ["r + r", ""],
+      ["r", ""],
+      ["tiir-", "‘inferential (INFR)’"],
+      ["ar-", "‘evidential (proper) (EV)’"],
+      ["r", ""],
+      ["h", ""],
+      ["r", "(in 'r-initial morpheme')"],
+      ["r + r", ""],
+      ["r", ""],
+      ["r", "(in 'r-Reduction Rule')"],
+      ["r", ""],
+      ["h + r", ""]
+    ],
+    "notes": "Closing paragraph: 'Note that this rule must be applied before the more general Consonantal Degemination Rule below, which reduces r + r sequences to a single r. It also must precede the r-Reduction Rule below, which deletes the r of an h + r sequence.'"
+  },
+  "p6-b1": {
+    "book_page": "24",
+    "rules": [
+      {
+        "label": "Rule 13.",
+        "name": "t-Laryngealization Rule.",
+        "formal": "t → h / _ r"
+      },
+      {
+        "label": "Rule 14.",
+        "name": "Metathesis Rule.",
+        "formal": "r + h → hr"
+      }
+    ],
+    "examples": [
+      {
+        "rule": "Rule 13.",
+        "underlying": "ta- IND.1/2.A + t- 1.A+ raʔuk ‘make’ + -:hus IMPF",
+        "surface": "tahuukuʔ",
+        "gloss": "I am making it",
+        "note": "'1.A+' is printed with no space before the plus sign."
+      },
+      {
+        "rule": "Rule 13.",
+        "underlying": "pahaat ‘be red’ + raʔuk ‘make; CAUS’",
+        "surface": "pahaahaʔuk",
+        "gloss": "to redden"
+      }
+    ],
+    "other_forms": [
+      ["t", "(heading of Rule 13)"],
+      ["t", ""],
+      ["h", ""],
+      ["r", ""],
+      ["r", ""],
+      ["h", ""],
+      ["hr", ""],
+      ["hr", ""],
+      ["h", ""],
+      ["t", "(in 't-Laryngealization')"],
+      ["t", "(in 't-Laryngealization', last line, cut by the tile edge)"]
+    ],
+    "notes": "Section heading at the top: 'Consonants: Unrestricted Rules'. The paragraph after the Rule 14 formula ('However, the sequence hr never occurs in spoken (or surface) forms in Skiri (as it does in South Band) because an hr sequence always reduces to h, as in the following rule. Note that the three sequential rules here—t-Laryngealization, Metathesis, and Sonorant Reduction—must be applied in the order given; that is, t-Laryngealization') runs on into the next tile."
+  },
+  "p6-b2": {
+    "book_page": "",
+    "rules": [
+      {
+        "label": "Rule 15.",
+        "name": "Sonorant Reduction Rule.",
+        "formal": "r → Ø / _ h"
+      },
+      {
+        "label": "Rule 16.",
+        "name": "h-Loss Rule.",
+        "formal": "h → Ø / C _",
+        "note": "First of two formulas for this rule ('when it is preceded by a consonant')."
+      },
+      {
+        "label": "Rule 16.",
+        "name": "",
+        "formal": "h → Ø / _ C#, CC",
+        "note": "Second formula of Rule 16, after 'Loss of h also occurs when it precedes either a single word-final consonant or a two-consonant cluster. Thus,'. Examples for it follow on the next page."
+      }
+    ],
+    "examples": [
+      {
+        "rule": "Rule 14.",
+        "underlying": "ti- IND + Ø- 3.A + uur- PREV + hiir ‘be good’ + -Ø PERF",
+        "surface": "tuuhii",
+        "gloss": "he is good",
+        "note": "Introduced by 'An example of this rule is:' at the end of the Rule 14 paragraph. Continues: '; to obtain tuuhii, the following Sonorant r-Reduction Rule must be applied.'"
+      },
+      {
+        "rule": "Rule 15.",
+        "underlying": "ta- IND.1/2.A + t- 1.A + Ø- + rahuukat ‘take inside’ + -Ø PERF",
+        "surface": "tahahuukat",
+        "gloss": "I took it inside",
+        "note": "'Ø-' is printed with no gloss label after it."
+      },
+      {
+        "rule": "Rule 16.",
+        "underlying": "ta- IND.1/2.A + t- 1.A + huras ‘find’ + -Ø PERF",
+        "surface": "taturaas",
+        "gloss": "I found it",
+        "note": "Stands under the first formula (h → Ø / C _). Surface form is printed with aa, the stem huras with a single a."
+      }
+    ],
+    "other_forms": [
+      ["t", "(in 't-Laryngealization')"],
+      ["tuuhii", "(repeated: 'to obtain tuuhii')"],
+      ["r", "(in 'Sonorant r-Reduction Rule')"],
+      ["hr", ""],
+      ["h", ""],
+      ["h", "(heading of Rule 16)"],
+      ["h", ""],
+      ["h", ""]
+    ],
+    "notes": "The rule is named 'Sonorant r-Reduction Rule' in the example text and 'Sonorant Reduction Rule' in the heading of Rule 15. The foot of the tile is blank."
+  },
+  "p7-b1": {
+    "book_page": "25",
+    "rules": [
+      {
+        "label": "Rule 17.",
+        "name": "Sibilant Hardening Rule.",
+        "formal": "s → c / C _"
+      },
+      {
+        "label": "Rule 18.",
+        "name": "Sibilant Loss Rule.",
+        "formal": "s → Ø / k _ c"
+      }
+    ],
+    "examples": [
+      {
+        "rule": "Rule 16.",
+        "underlying": "ta- IND.1/2.A + t- 1.A+ ahiht ‘be fat’ + -Ø PERF",
+        "surface": "taatahit",
+        "gloss": "I am fat",
+        "note": "Stands under the second formula of Rule 16 (h → Ø / _ C#, CC), which is on the previous page. Printed as: ahiht ‘be fat’: taatahit ‘I am fat’ < ... '1.A+' has no space before the plus sign."
+      },
+      {
+        "rule": "Rule 16.",
+        "underlying": "ahiht ‘be fat’ + -kis DIM",
+        "surface": "ahitki",
+        "gloss": "fat",
+        "note": "Same paragraph, after a semicolon."
+      },
+      {
+        "rule": "Rule 16.",
+        "underlying": "ahiht ‘be fat’ + kuhkus ‘swine’",
+        "surface": "ahitkuhku",
+        "gloss": "bacon",
+        "note": "Same paragraph, after a semicolon."
+      },
+      {
+        "rule": "Rule 16.",
+        "underlying": "ti- IND + Ø- 3.A + awahc- ‘finally’ + wiitik ‘sit down’ + -Ø PERF",
+        "surface": "tiiwacpiitit",
+        "gloss": "he finally sat down"
+      },
+      {
+        "rule": "Rule 17.",
+        "underlying": "ti- IND + ir- 3.PL.A + sa ‘be lying’ + -waa DIST + -Ø PERF",
+        "surface": "tihcawaa",
+        "gloss": "they are lying (there)",
+        "note": "Printed as: sa ‘be lying’: tihcawaa ‘they are lying (there)’ < ... Bold in print: hc of tihcawaa."
+      },
+      {
+        "rule": "Rule 17.",
+        "underlying": "ti- IND + Ø- 1.A + uur- PREV + sakuriwihc + -:hus IMPF",
+        "surface": "tuhcakuriwihcuʔ",
+        "gloss": "the sun is coming out",
+        "note": "Printed as: sakuriwihc (uur . . .) ‘sun to come out’: tuhcakuriwihcuʔ ‘the sun is coming out’ < ... Bold in print: the first hc of tuhcakuriwihcuʔ. The agent prefix is printed 'Ø- 1.A' (digit 1, not 3)."
+      },
+      {
+        "rule": "Rule 18.",
+        "underlying": "i- CONT.1/2A + s- 2.A + ut- PREV + i- SEQ + uks- JUSS + ciir ‘be energetic’ + -Ø (-uk ‘be’)",
+        "surface": "sucukcii",
+        "gloss": "be energetic!",
+        "note": "Bold in print: kc of sucukcii. 'CONT.1/2A' is printed with no full stop before A."
+      }
+    ],
+    "other_forms": [
+      ["ahiht", "‘be fat’ (citation form before the colon)"],
+      ["s", ""],
+      ["c", ""],
+      ["sa", "‘be lying’ (citation form before the colon)"],
+      ["sakuriwihc (uur . . .)", "‘sun to come out’ (citation form before the colon)"],
+      ["c", ""],
+      ["ks", ""],
+      ["s", ""]
+    ],
+    "notes": "Tile opens with the examples for the second formula of Rule 16."
+  },
+  "p7-b2": {
+    "book_page": "",
+    "rules": [
+      {
+        "label": "Rule 19.",
+        "name": "Alveolar Dissimilation Rule.",
+        "formal": "",
+        "note": "No formula is printed. Prose only: 'A common underlying sequence across morpheme boundaries is t + t. In such a sequence the preceding t changes to c, as in the following examples:' and, after two examples, 'The less common underlying sequence t + c metathesizes, resulting in ct, as in:'."
+      },
+      {
+        "label": "Rule 20.",
+        "name": "Consonant Degemination Rule.",
+        "formal": "CᵢCᵢ → Cᵢ",
+        "note": "The i's are subscripts. Followed by 'Examples of this rule are the following:'; the examples are on the next page."
+      }
+    ],
+    "examples": [
+      {
+        "rule": "Rule 19.",
+        "underlying": "ta- IND.1/2.A + t- 1.A + taʔuut ‘steal’ + -Ø PERF",
+        "surface": "tactaʔuut",
+        "gloss": "I stole it",
+        "note": "Bold in print: ct of tactaʔuut."
+      },
+      {
+        "rule": "Rule 19.",
+        "underlying": "kiiwaʔut ‘sage’ + taakaar ‘be white’",
+        "surface": "kiiwaʔuctaakaa",
+        "gloss": "white sage",
+        "note": "Bold in print: ct of kiiwaʔuctaakaa."
+      },
+      {
+        "rule": "Rule 19.",
+        "underlying": "ta- IND.1/2A + t- 1.A + cak ‘shoot’ + -Ø PERF",
+        "surface": "tactat",
+        "gloss": "I shot it",
+        "note": "Under 't + c metathesizes, resulting in ct'. Bold in print: ct of tactat. 'IND.1/2A' is printed with no full stop before A."
+      },
+      {
+        "rule": "Rule 19.",
+        "underlying": "wii- ‘now’ + ti- IND + Ø- 3.A + ut- PREV + tat- ‘stalk; plant’ + caaka ‘be protruding’ + -Ø PERF",
+        "surface": "wiituctactaaka",
+        "gloss": "the plant is sprouting",
+        "note": "Bold in print: both ct sequences of wiituctactaaka."
+      }
+    ],
+    "other_forms": [
+      ["t + t", ""],
+      ["t", ""],
+      ["c", ""],
+      ["t + c", ""],
+      ["ct", ""],
+      ["r", ""],
+      ["k", ""]
+    ],
+    "notes": "The top edge of the tile shows the lower half of the last line of the Rule 18 example from the previous tile (cut, not transcribed here). The foot of the tile is blank."
+  },
+  "p8-b1": {
+    "book_page": "26",
+    "rules": [
+      {
+        "label": "Rule 21.",
+        "name": "r-Stopping Rule.",
+        "formal": "r → t / Obs. _",
+        "note": "In the heading the r of 'r-Stopping' is printed bold upright, not italic."
+      }
+    ],
+    "examples": [
+      {
+        "rule": "Rule 20.",
+        "underlying": "ti- IND + Ø- 3.A + raar- PL.INDV.A + raahur ‘be ruined’ + -Ø PERF",
+        "surface": "tiraraahuʔ",
+        "gloss": "they are ruined"
+      },
+      {
+        "rule": "Rule 20.",
+        "underlying": "ti- IND + Ø- 3.A + uur- PREV + rariir ‘be marked’ + -Ø PERF",
+        "surface": "tuurariiʔi",
+        "gloss": "it is a mark"
+      },
+      {
+        "rule": "Rule 20.",
+        "underlying": "ti- IND + Ø- 3.A + ut- BEN + ak- 3.P.AN.P + kaksaa- ‘call’ + -waa DIST + -Ø PERF",
+        "surface": "tuutakaksawaa",
+        "gloss": "he called them"
+      },
+      {
+        "rule": "Rule 21.",
+        "underlying": "kirik- ‘eye’ + raar- PL + kaa ‘be inside’",
+        "surface": "kiriktaahkaa",
+        "gloss": "wear eyeglasses",
+        "note": "Bold in print: kt of kiriktaahkaa; the final k of kirik-; the initial r of raar-."
+      },
+      {
+        "rule": "Rule 21.",
+        "underlying": "i- CONT.1/2.A + s- 2.A + uks- JUSS + riisaapuh + ‘stake, stake down’ + -Ø PERF",
+        "surface": "sukstiisaapu",
+        "gloss": "stake it!",
+        "note": "Bold in print: st of sukstiisaapu; the s of uks-; the initial r of riisaapuh. A plus sign is printed between riisaapuh and its gloss ‘stake, stake down’."
+      },
+      {
+        "rule": "Rule 21.",
+        "underlying": "i- 1.POSS.A + raac- ‘brother’ + -rii 1.POSS.B",
+        "surface": "iraactiʔ",
+        "gloss": "my brother (female speaker)",
+        "note": "Bold in print: ct of iraactiʔ; the c of raac-; the r of -rii."
+      }
+    ],
+    "other_forms": [
+      ["r", ""],
+      ["t", ""],
+      ["t", ""],
+      ["t", ""],
+      ["h", ""],
+      ["r", ""],
+      ["t + r", ""],
+      ["hr", ""],
+      ["h", ""]
+    ],
+    "notes": "Tile opens with the examples for Rule 20 (heading and formula on the previous page). Closing paragraph: 'Note that t is not included among the obstruents to which this rule applies since t has already been changed to h when it precedes r (see rule above); that is, the combination t + r changes to hr (which then reduces to h).'"
+  },
+  "p8-b2": {
+    "book_page": "",
+    "rules": [
+      {
+        "label": "Rule 22.",
+        "name": "Labial Glide Loss.",
+        "formal": "w → Ø / V _ V + wV(V) . . .",
+        "note": "w is italic, V roman. In this heading (and those of Rules 23 and 24) the full stop after the name is not bold."
+      },
+      {
+        "label": "Rule 23.",
+        "name": "Final r Loss.",
+        "formal": "r → Ø / _ #"
+      },
+      {
+        "label": "Rule 24.",
+        "name": "Variants of c.",
+        "formal": "",
+        "note": "The formula is at the top of the next page. Text here: 'The phoneme c has two phonetic variants. One is [ts], which occurs before consonants and in word-final position; the other is [č], which occurs before vowels. Thus,'"
+      }
+    ],
+    "examples": [
+      {
+        "rule": "Rule 22.",
+        "underlying": "ti- IND + Ø- 3.A + a- PREV + awiwiiʔa ‘bend over’ + -Ø PERF",
+        "surface": "taaʔiwiiʔaʔ",
+        "gloss": "he bent over",
+        "note": "Printed as: awiwiiʔa (ir . . .) ‘to bend over’: taaʔiwiiʔaʔ ‘he bent over’ < ... Bold in print: the first w of awiwiiʔa in both places (bold italic, a light bold, confirmed at high zoom)."
+      },
+      {
+        "rule": "Rule 22.",
+        "underlying": "ta- IND.1/2.A + t- 1.A + katawiwarik ‘swallow’ + -Ø PERF",
+        "surface": "tatkataʔiwarit",
+        "gloss": "I swallowed it",
+        "note": "Printed as: katawiwarik ‘swallow’: tatkataʔiwarit ‘I swallowed it’ < ... Bold in print: the first w of katawiwarik in both places; in the citation form before the colon that w is bold upright (not italic), in the underlying form it is bold italic."
+      },
+      {
+        "rule": "Rule 23.",
+        "underlying": "wii- ‘now’ + ta- IND.1/2.A + t- 1.A + ut- PREV + aar + ‘do’ + -Ø PERF",
+        "surface": "wiitatuutaa",
+        "gloss": "I have done it",
+        "note": "Followed by '; cf. wiitatuutaariʔ ‘I am doing it’'. A plus sign is printed between aar and its gloss ‘do’."
+      }
+    ],
+    "other_forms": [
+      ["t + r", "(top line, repeated from the previous tile)"],
+      ["hr", ""],
+      ["h", ""],
+      ["w", ""],
+      ["w", ""],
+      ["awiwiiʔa (ir . . .)", "‘to bend over’ (citation form before the colon)"],
+      ["katawiwarik", "‘swallow’ (citation form before the colon)"],
+      ["r", "(heading of Rule 23)"],
+      ["r", ""],
+      ["wiitatuutaariʔ", "‘I am doing it’"],
+      ["c", "(heading of Rule 24)"],
+      ["c", ""]
+    ],
+    "notes": "Top line of the tile repeats the last line of the previous tile: 't + r changes to hr (which then reduces to h).' Phonetic symbols in the Rule 24 text: [ts] and [č] (c with a háček), in roman type inside square brackets."
+  },
+  "p9-b1": {
+    "book_page": "27",
+    "rules": [
+      {
+        "label": "Rule 24.",
+        "name": "",
+        "formal": "c → [ [ts] / _ C, # | [č] / _ V ]",
+        "note": "Heading is on the previous page. The right side is two lines inside one tall pair of square brackets: top line '[ts] / _ C, #', bottom line '[č] / _ V' (shown here separated by |). c is italic; the phonetic symbols are roman in their own square brackets."
+      }
+    ],
+    "examples": [
+      {
+        "rule": "Rule 24.",
+        "underlying": "",
+        "surface": "capaat",
+        "phonetic": "[čəpaat]",
+        "gloss": "woman"
+      },
+      {
+        "rule": "Rule 24.",
+        "underlying": "",
+        "surface": "custit",
+        "phonetic": "[čustɪt]",
+        "gloss": "old woman",
+        "note": "The second vowel of the phonetic form is printed as a small dotless i (ɪ or ı); the first vowel is a plain u."
+      },
+      {
+        "rule": "Rule 24.",
+        "underlying": "",
+        "surface": "ckuraaʔuʔ",
+        "phonetic": "[tskuraaʔuʔ]",
+        "gloss": "female doctor; nurse"
+      },
+      {
+        "rule": "Rule 24.",
+        "underlying": "",
+        "surface": "cpasaasi",
+        "phonetic": "[tspəsaasi]",
+        "gloss": "Osage Woman"
+      },
+      {
+        "rule": "Rule 24.",
+        "underlying": "",
+        "surface": "askuc",
+        "phonetic": "[əskuts]",
+        "gloss": "prairie dog"
+      },
+      {
+        "rule": "Rule 24.",
+        "underlying": "",
+        "surface": "tikiʔic",
+        "phonetic": "[tikiʔits]",
+        "gloss": "it’s watery"
+      }
+    ],
+    "other_forms": [],
+    "notes": "After the formula: 'Examples are as follows:' and a two-column list divided by a vertical rule. Left column (read first): capaat, custit, ckuraaʔuʔ. Right column: cpasaasi, askuc, tikiʔic. Each item is: italic form, phonetic form in square brackets (roman), gloss. No underlying forms with + are given. The rest of the tile is blank (end of chapter)."
+  },
+  "p9-b2": {
+    "book_page": "",
+    "rules": [],
+    "examples": [],
+    "other_forms": [],
+    "notes": "Blank tile."
+  }
+}

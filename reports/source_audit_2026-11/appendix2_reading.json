@@ -1,0 +1,22 @@
+{
+ "_about": "Parks Appendix 2 (book page 539), read 2026-11-13 from the page image at 2.7x (work/appendix/appendix2/appendix2_p1_1.png) before the stored extraction was opened. An empty string is an empty cell in print.",
+ "table_1": {
+  "title": "Table 1. Agent Number and Suppletive Verb Roots.",
+  "rows": [
+   {"root": "aah", "gloss": "to be around", "singular": "aah", "dual": "aah", "plural": "hurii-waa"},
+   {"root": "at", "gloss": "to go", "singular": "at", "dual": "war", "plural": "at/wuu"},
+   {"root": "kus", "gloss": "to be sitting", "singular": "kus", "dual": "kus", "plural": "wihak"},
+   {"root": "tir", "gloss": "to be together", "singular": "", "dual": "tir", "plural": "hurii"},
+   {"root": "waak", "gloss": "to say", "singular": "waakaʔu", "dual": "waakaʔu", "plural": "waci"}
+  ]
+ },
+ "table_2": {
+  "title": "Table 2. Verb Roots That Require the Distributive in Dual/Plural Agent Forms.",
+  "rows": [
+   {"root": "arik", "gloss": "to be standing", "singular": "arik", "dual": "waa + arik", "plural": "waa + arik"},
+   {"root": "hiir (ur...)", "gloss": "to be good", "singular": "hiir", "dual": "hiir", "plural": "hi + waa + r"},
+   {"root": "sa", "gloss": "to be lying", "singular": "sa", "dual": "sa + waa", "plural": "sa + waa"},
+   {"root": "wiitik", "gloss": "to sit down", "singular": "wiitik", "dual": "wii +ruu + itik", "plural": "wii + ruu + itik"}
+  ]
+ }
+}

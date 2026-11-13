@@ -1,0 +1,13 @@
+{
+ "_about": "Parks Appendix 3 (book pages 541-546): the stored kinship data against a blind reading of the six pages (work/appendix/appendix3/blind.json), with a third look at the possessor columns of the consanguineal table at 4x (work/appendix/appendix3/third_look_possessors.png), 2026-11-13.",
+ "compared": {"consanguineal_rows": 10, "possessor_forms": 30, "affinal_verb_forms": 41},
+ "affinal_verb_forms_that_differ": 0,
+ "differences": [
+  {"where": "kinship_paradigms.form_2sg and appendix3_kinship.json, 'mother'", "stored": "asaas", "printed": "asas", "book_page": 542, "grade": "confirmed", "severity": 1},
+  {"where": "kinship_paradigms.stem, form_1sg and appendix3_kinship.json, 'grandfather'", "stored": "atipaat", "printed": "atipat", "book_page": 542, "grade": "confirmed", "severity": 1},
+  {"where": "kinship_paradigms.form_2sg and appendix3_kinship.json, 'grandfather'", "stored": "apaat", "printed": "apat", "book_page": 542, "grade": "confirmed", "severity": 1},
+  {"where": "kinship_paradigms.form_2sg, 'sister (of male)'", "stored": "ataati", "printed": "ataat", "book_page": 543, "grade": "confirmed", "severity": 1},
+  {"where": "appendix3_kinship.json, terms 7 and 8", "stored": "two empty terms (every field null)", "printed": "the five rows of book page 543 (mother's brother, sister of male, sibling of same sex, brother of female, grandchild); the database table has them, the JSON file does not", "book_page": 543, "grade": "confirmed", "severity": 2}
+ ],
+ "not_from_the_appendix": "kinship_paradigms has three rows marked BB_supplement (tikiʔ, tsuwat, swat). They are the project's additions from the Blue Book, in Blue Book spelling, and are checked in stage 5."
+}

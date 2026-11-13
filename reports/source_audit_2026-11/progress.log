@@ -1,0 +1,41 @@
+2026-11-13 12:35  stage 0 started
+2026-11-13 12:36  stage 0 done: round trip exact; backup skiri_pawnee_backup_20261113_audit_baseline.db
+2026-11-13 12:36  stage 1 started
+2026-11-13 12:41  cost: +7 images read, +0 sub-agents (total 7, 0)
+2026-11-13 12:44  cost: +1 images read, +0 sub-agents (total 8, 0)
+2026-11-13 12:44  stage 1 done: 12 accent codes form a regular grid (tense/lax x acute/grave); stored hyphen is the printed syllable dot, stored bullet the printed edge dash; citations: o-acute code is s-caron
+2026-11-13 12:51  stage 2 started
+2026-11-13 13:02  stage 2 done: 1 printed entry not stored, 1 stored entry not printed; 393 of the differences are the column label
+2026-11-13 13:03  stage 3 started
+2026-11-13 13:05  cost: +39 images read, +4 sub-agents (total 47, 4)
+2026-11-13 13:09  cost: +16 images read, +2 sub-agents (total 63, 6)
+2026-11-13 13:09  stage 4 started: Appendix 1 blind reading running (70 tiles)
+2026-11-13 13:10  cost: +9 images read, +1 sub-agents (total 72, 7)
+2026-11-13 13:13  cost: +65 images read, +4 sub-agents (total 137, 11)
+2026-11-13 13:14  stage 6 started
+2026-11-13 13:15  blind reader 4 (sheets 30-38) finished: 89 crops, 278k sub-agent tokens
+2026-11-13 13:15  blind reader Appendix 1 pp2-5 finished: 40 tiles, 189k sub-agent tokens
+2026-11-13 13:16  blind reader Appendix 1 pp6-8 finished: 30 tiles, 202k sub-agent tokens
+2026-11-13 13:18  cost: +4 images read, +0 sub-agents (total 141, 11)
+2026-11-13 13:18  stage 4: 9 of 60 units; Appendix 1 and 2 done; Appendix 3 and chapters 3-4 with blind readers
+2026-11-13 13:18  blind reader Appendix 3 finished: 6 pages, 215k sub-agent tokens
+2026-11-13 13:19  cost: +1 images read, +0 sub-agents (total 142, 11)
+2026-11-13 13:20  stage 5 started
+2026-11-13 13:20  blind reader 1 (sheets 1-10) finished: 100 crops, 258k sub-agent tokens
+2026-11-13 13:21  blind reader chapter 4 pp17-23 finished: 187 forms, 221k sub-agent tokens
+2026-11-13 13:22  blind readers chapter 4 pp1-8 and pp9-16 finished: 167 + 158 forms, 167k + 186k sub-agent tokens
+2026-11-13 13:23  cost: +14 images read, +1 sub-agents (total 156, 12)
+2026-11-13 13:23  blind reader 2 (sheets 11-20) finished: 87 crops, 270k sub-agent tokens; Blue Book reader started (153 crops)
+2026-11-13 13:23  stage 3 done: every one of 303 read differences shows the text-layer reading on the page; 6 were artefacts of the comparison, not differences
+2026-11-13 13:24  blind reader 3 (sheets 21-29) finished: 93 crops, 340k sub-agent tokens
+2026-11-13 13:24  stage 6 done: the database tables english_index and cross_references were loaded from an earlier, uncleaned file; the current JSON is 95.9% identical to print; differences graded from the text layer, no images read
+2026-11-13 13:26  blind reader chapter 3 finished: 18 tiles, 53 examples, 199k sub-agent tokens
+2026-11-13 13:27  stage 4 done: chapters 2 and 5 and the first page of Appendix 1 were not read: nothing stored comes from them
+2026-11-13 13:33  blind reader Blue Book finished: 153 crops, 252k sub-agent tokens
+2026-11-13 13:34  stage 5: 153 of 153 units
+2026-11-13 13:34  stage 5 done: the stored Blue Book forms were taken from the OCR text, which has none of the printed accent marks and misreads about one form in seven; only the 93 entries and a sample of 60 were read from the scan
+2026-11-13 13:35  stage 5 marked partial: the 93 Blue Book-only entries and a sample of 60 forms were read from the scan; about 890 forms and the lesson texts were not
+2026-11-13 13:35  stage 7 started
+2026-11-13 13:35  stage 7 done: nothing applied; documents updated; sub-agent tokens 2,778,123
+2026-11-13 13:50  cost: +77 images read, +6 sub-agents (total 233, 18)
+2026-11-13 13:50  user decisions 2026-11-13: commit; review and apply the fixes; store Parks's IPA symbols and keep the simplified forms accurate; read the rest of the Blue Book (6 blind readers started, 843 crops)

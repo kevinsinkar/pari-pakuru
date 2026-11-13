@@ -37,3 +37,19 @@ rename it.
 | 93 words found only here, added as entries with ids `BB-…` | `scripts/import_bb_items.py` |
 | 88 dialogue sentences added to `examples` | `scripts/blue_book_verify.py` |
 | Ten sentence templates | `scripts/sentence_templates.py` |
+
+## What the 2026-11 audit found
+
+- **Everything taken from this book was taken from `Blue_Book_Pari_Pakuru.txt`,
+  the OCR text, and that text is a poor copy of the scan.** The book prints an
+  accent on the stressed vowel of most words (*tí kaats*, *paréku'*); the OCR
+  text has none. It also misreads about one form in seven, most often an
+  accented vowel as other letters (*ktitasut* for *kútasut*, *pakd* for
+  *paká*). The word for "yes" is in the database as *had'*; the scan has
+  *haú'*.
+- Only the 93 Blue Book-only dictionary entries and a sample of 60 other forms
+  have been read from the scan. See
+  [../reports/source_audit_2026-11/findings.md](../reports/source_audit_2026-11/findings.md),
+  section 5, and `bluebook_graded.json` there.
+- The scan's PDF has the OCR's word positions, so a form can be found on its
+  page and cut out for reading: `scripts/source_audit/bluebook_crops.py`.

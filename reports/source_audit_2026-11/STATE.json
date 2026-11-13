@@ -1,0 +1,226 @@
+{
+ "audit": "source-fidelity audit 2026-11",
+ "prompt": "prompts/source_fidelity_audit.md",
+ "created": "2026-11-13 12:35",
+ "updated": "2026-11-13 13:50",
+ "cost": {
+  "images_read_by_model": 233,
+  "subagents_started": 18
+ },
+ "stages": {
+  "0": {
+   "name": "Baseline: backup, text dump of the database, hashes, test suites",
+   "status": "done",
+   "units_total": 5,
+   "units_done": 5,
+   "counts": {
+    "db_rows_dumped": 46783,
+    "inputs_hashed": 649,
+    "test_suites_passing": 10
+   },
+   "outputs": [
+    "DB/dump/",
+    "baseline.json"
+   ],
+   "started": "2026-11-13 12:35",
+   "finished": "2026-11-13 12:36",
+   "note": "round trip exact; backup skiri_pawnee_backup_20261113_audit_baseline.db"
+  },
+  "1": {
+   "name": "Character table, by font, against rendered glyphs",
+   "status": "done",
+   "units_total": null,
+   "units_done": 0,
+   "counts": {
+    "pairs_checked": 52,
+    "pairs_verified": 52,
+    "pairs_decoded_wrongly_or_never": 16,
+    "pages_decoded": 471
+   },
+   "outputs": [
+    "character_table.json",
+    "character_readings.json",
+    "work/textlayer/"
+   ],
+   "started": "2026-11-13 12:36",
+   "finished": "2026-11-13 12:44",
+   "note": "12 accent codes form a regular grid (tense/lax x acute/grave); stored hyphen is the printed syllable dot, stored bullet the printed edge dash; citations: o-acute code is s-caron"
+  },
+  "2": {
+   "name": "Skiri-to-English against the text layer, both directions",
+   "status": "done",
+   "units_total": 181,
+   "units_done": 181,
+   "counts": {
+    "entries_printed": 4244,
+    "entries_paired": 4243,
+    "fields_checked": 50736,
+    "fields_equal": 49443,
+    "noise": 9759,
+    "convention_lax_i": 387,
+    "differences": 900,
+    "recall_planted": 510,
+    "recall_caught": 510
+   },
+   "outputs": [
+    "s2e_differences.jsonl",
+    "s2e_summary.json",
+    "recall_test.json"
+   ],
+   "started": "2026-11-13 12:51",
+   "finished": "2026-11-13 13:02",
+   "note": "1 printed entry not stored, 1 stored entry not printed; 393 of the differences are the column label"
+  },
+  "3": {
+   "name": "Settle the Skiri-to-English differences from the page",
+   "status": "done",
+   "units_total": null,
+   "units_done": 0,
+   "counts": {
+    "crops_read_blind": 369,
+    "confirmed": 303,
+    "text_layer": 591,
+    "stored_is_right": 6,
+    "unresolved": 0,
+    "agreement_sample_agrees": 60,
+    "agreement_sample_size": 60
+   },
+   "outputs": [
+    "s2e_graded.jsonl"
+   ],
+   "started": "2026-11-13 13:03",
+   "finished": "2026-11-13 13:23",
+   "note": "every one of 303 read differences shows the text-layer reading on the page; 6 were artefacts of the comparison, not differences"
+  },
+  "4": {
+   "name": "Image-only parts: appendices and front-matter chapters",
+   "status": "done",
+   "units_total": 60,
+   "units_done": 60,
+   "counts": {
+    "appendix1_forms_compared": 770,
+    "appendix1_forms_that_differ": 152,
+    "appendix1_third_looks_agreeing_with_blind_reading": 40,
+    "appendix2_cells_that_differ": 3,
+    "pages_read_blind": 46,
+    "pages_compared_by_text_layer": 6,
+    "pages_not_read_nothing_stored_from_them": 14,
+    "appendix1_forms_that_differ_of_770": 152,
+    "appendix2_cells_that_differ_of_27": 3,
+    "appendix3_forms_that_differ_of_71": 4,
+    "chapter4_words_that_differ_of_797": 85,
+    "chapter4_b_for_h": 34,
+    "chapter3_words_that_differ_of_138": 6,
+    "abbreviation_values_that_differ_of_411": 4
+   },
+   "outputs": [
+    "appendix1_differences.json",
+    "appendix1_third_look.json",
+    "appendix2_reading.json",
+    "appendix3_findings.json",
+    "chapter4_differences.json",
+    "chapter3_differences.json",
+    "abbreviations_differences.json",
+    "alphabet_check.json"
+   ],
+   "started": "2026-11-13 13:09",
+   "finished": "2026-11-13 13:27",
+   "note": "chapters 2 and 5 and the first page of Appendix 1 were not read: nothing stored comes from them"
+  },
+  "5": {
+   "name": "Blue Book",
+   "status": "partial",
+   "units_total": 153,
+   "units_done": 153,
+   "counts": {
+    "blue_book_only_entries_read": 93,
+    "sample_of_other_forms_read": 60,
+    "sample_same_as_scan": 9,
+    "sample_accent_mark_missing": 41,
+    "sample_letters_differ": 9,
+    "entries_built_on_a_misread_form": 3,
+    "forms_not_read": 890
+   },
+   "outputs": [
+    "bluebook_check.json",
+    "bluebook_readings.json",
+    "bluebook_graded.json"
+   ],
+   "started": "2026-11-13 13:20",
+   "finished": "2026-11-13 13:34",
+   "note": "the stored Blue Book forms were taken from the OCR text, which has none of the printed accent marks and misreads about one form in seven; only the 93 entries and a sample of 60 were read from the scan"
+  },
+  "6": {
+   "name": "English-to-Skiri against the text layer",
+   "status": "done",
+   "units_total": 284,
+   "units_done": 284,
+   "counts": {
+    "printed_english_entries": 6431,
+    "json_fields_checked": 33231,
+    "json_fields_equal": 31868,
+    "json_differences": 1090,
+    "db_table_fields_equal_of_33207": 25797,
+    "db_table_ipa_not_in_parks_notation": 3986,
+    "db_table_ipa_with_raw_standins": 177,
+    "printed_english_headwords_not_stored": 25
+   },
+   "outputs": [
+    "e2s_differences.jsonl",
+    "e2s_summary.json",
+    "e2s_db_tables_differences.jsonl",
+    "e2s_db_tables_summary.json"
+   ],
+   "started": "2026-11-13 13:14",
+   "finished": "2026-11-13 13:24",
+   "note": "the database tables english_index and cross_references were loaded from an earlier, uncleaned file; the current JSON is 95.9% identical to print; differences graded from the text layer, no images read"
+  },
+  "7": {
+   "name": "Report and proposed fixes",
+   "status": "done",
+   "units_total": null,
+   "units_done": 0,
+   "counts": {
+    "proposed_fixes": 2250,
+    "with_a_value_that_can_be_applied": 827,
+    "grade_confirmed": 351,
+    "grade_text_layer": 1685,
+    "grade_blind_reading": 214,
+    "fixes_applied": 0,
+    "inputs_changed_by_the_audit": 0
+   },
+   "outputs": [
+    "findings.md",
+    "proposed_fixes.jsonl",
+    "audit_numbers.json",
+    "work/review.html",
+    "blind_readings/"
+   ],
+   "started": "2026-11-13 13:35",
+   "finished": "2026-11-13 13:35",
+   "note": "nothing applied; documents updated; sub-agent tokens 2,778,123"
+  },
+  "8": {
+   "name": "Apply the fixes that were approved",
+   "status": "pending",
+   "units_total": null,
+   "units_done": 0,
+   "counts": {},
+   "outputs": [],
+   "started": null,
+   "finished": null,
+   "note": ""
+  },
+  "9": {
+   "name": "Store Parks's own IPA symbols; regenerate and check the simplified forms",
+   "status": "pending",
+   "units_total": null,
+   "units_done": 0,
+   "counts": {},
+   "outputs": [],
+   "started": null,
+   "finished": null,
+   "note": ""
+  }
+ }
+}

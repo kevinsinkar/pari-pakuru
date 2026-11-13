@@ -23,7 +23,7 @@ No other source is used. Where the two disagree, both readings are shown.
 
 | | State on 2026-11-13 |
 |---|---|
-| **Dictionary database** | 4,337 entries (4,244 from Parks, 93 words found only in the Blue Book), 5,504 senses, 9,559 attested verb forms for 2,239 verbs, 2,635 example sentences |
+| **Dictionary database** | 4,337 entries (4,244 from Parks, 93 words found only in the Blue Book), 5,504 senses, 9,559 attested verb forms for 2,250 verbs, 2,635 example sentences |
 | **Pronunciation** | Parks's IPA for 4,328 entries, 1,800 of them with the accented syllable marked; a learner respelling for 4,324. IPA is never generated, only copied from Parks |
 | **Web app** | Flask app: two-way search, entry pages, Blue Book lessons, weekly flashcards, spaced-repetition study, sentence builder, community feedback |
 | **Public static site** | The search, flashcard and lesson pages, built into [docs/](docs/) and served by GitHub Pages |
@@ -39,7 +39,7 @@ No other source is used. Where the two disagree, both readings are shown.
 | [Dictionary Data/](Dictionary%20Data/) | **Source.** The Parks dictionary PDFs, and the two JSON dictionaries parsed from them | The JSON only through scripts |
 | [pari pakuru/](pari%20pakuru/) | **Source.** The Blue Book PDF and its text | No |
 | [extracted_data/](extracted_data/) | Structured data pulled out of the sources: Parks's appendices and grammar chapter, Blue Book vocabulary and lessons | No, regenerate |
-| [DB/](DB/) | Database schema, the importer that builds the database from the JSON, and the query library | Yes |
+| [DB/](DB/) | Database schema, the importer that builds the database from the JSON, and the query library. [DB/dump/](DB/dump/) is the database itself, written out as text so that it is in git | Yes; `dump/` only through `scripts/db_dump.py` |
 | [scripts/](scripts/) | Every processing step, one script per step. [scripts/README.md](scripts/README.md) lists them in order | Yes |
 | [scripts/morphology_v2/](scripts/morphology_v2/) | The word-construction analysis (2026-11) | Yes |
 | [curriculum/](curriculum/) | Learner material built from the database: flashcard sets and the word-building guides | Only `flashcard_sets.json`, deliberately |
@@ -80,11 +80,16 @@ Blue Book text ────────┘           (Dictionary Data/)         
 
 ### The database is the working master copy
 
-`skiri_pawnee.db` is not in git, and it cannot be rebuilt with one command.
-After the first import, more than twenty scripts changed it in place, and
-several of those used an AI service whose answers went straight into the
-database. So:
+`skiri_pawnee.db` is not in git, and it cannot be rebuilt from the sources with
+one command. After the first import, more than twenty scripts changed it in
+place, and several of those used an AI service whose answers went straight
+into the database. So:
 
+- **The database is in git as text**, in [DB/dump/](DB/dump/) (since
+  2026-11-13). `python scripts/db_dump.py --restore new.db` builds a database
+  from it; `--write` brings the text up to date after a change, so that the
+  change can be read as a difference in git. The feedback table and study
+  progress are left out of the text.
 - Keep backups. Scripts that change the database back it up first to
   `OneDrive/pari_pakuru_backups/` (or `~/.pari_pakuru_backups/`).
 - The JSON files in `Dictionary Data/` hold the dictionary text itself and are
@@ -128,6 +133,9 @@ All of these were run on 2026-11-13.
 | Its outputs are reproducible | `scripts/morphology_v2/run.py --all`, hashes compared | byte-identical |
 | Every Pawnee form in the guide has a source | `scripts/morphology_v2/check_forms.py` | 3,781 forms, 250 IPA, 204 respellings: all resolved |
 | Noun possession and the *-hiriʔ* suffix | `scripts/possession_engine.py --test` | 59 of 59, ten of them attested dictionary words |
+| The text copy of the database restores to the same database | `scripts/db_dump.py --verify` | round trip exact: 46,783 rows in 25 tables |
+| Dictionary entries against the printed page | `scripts/source_audit/s2e_compare.py` | 49,443 of 50,736 fields identical (97.45%); the differences are in `reports/source_audit_2026-11/` |
+| That comparison catches errors | `scripts/source_audit/recall_test.py` | 510 of 510 planted errors reported |
 | Web app | 25 routes requested through Flask's test client; the possession API for all 1,706 nouns | all answer |
 
 Measurements, not pass or fail:
@@ -149,12 +157,21 @@ Measurements, not pass or fail:
   static site and the printable cards (`curriculum/held_for_review.json`).
   Whether it is shown is the Pawnee Nation's decision, and it has not been
   asked yet.
+- **The database has been compared with the printed pages in full, and the
+  fixes are not applied yet.** The source-fidelity audit of 2026-11-13
+  ([reports/source_audit_2026-11/findings.md](reports/source_audit_2026-11/findings.md))
+  found the dictionary entries 97.5% identical to print, field for field, and
+  the tables read from page images much worse: 152 of the 770 verb forms of
+  Appendix 1 differ from the page. It proposes 2,250 fixes and applies none.
+  Until they are reviewed and applied, treat a form from the appendices, the
+  grammar chapter or the English index as unchecked.
 - **The IPA is close to Parks's, not yet identical.** The PDF encodes his
-  accented vowels with stand-in characters, and two were decoded wrongly until
-  2026-11-13, which dropped the accent from 269 entries. Those are restored.
-  Still open: he prints an accented short *a* as ə́ (and, it appears, an accented
-  short *i* as ɪ́); the database has à and í for them. The accent is right, the
-  symbol is not.
+  symbols with stand-in characters. The table is now verified against the
+  printed glyphs for every character (`scripts/source_audit/chartable.py`).
+  What the database still writes differently, everywhere: à for his ə́, í for
+  his lax ɪ́, a hyphen for his syllable dot and a bullet for his dash at the
+  edge of a bound form. Whether to change the stored symbols is an open
+  decision.
 - **"Accent", not "pitch".** Parks writes that stress is not phonemic in Skiri
   and that his phonetic forms mark the accented syllable. Parts of the app
   still call this "pitch".

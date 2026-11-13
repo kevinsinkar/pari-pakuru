@@ -1,0 +1,534 @@
+{
+ "skiri_letters": "a i u p t k c s w r h ʔ (č ə ɪ ʊ and accents in phonetic forms; n in a few words)",
+ "findings": [
+  {
+   "source": "db:irregular_verb_roots",
+   "where": "plural_stem rowid 1",
+   "word": "burii-waa",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "form",
+   "value": "burii-waa"
+  },
+  {
+   "source": "db:irregular_verb_roots",
+   "where": "plural_stem rowid 4",
+   "word": "burii",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "form",
+   "value": "burii"
+  },
+  {
+   "source": "db:morpheme_abbreviations",
+   "where": "morpheme_form rowid 91",
+   "word": "etc",
+   "letters": [
+    "e"
+   ],
+   "field_kind": "form",
+   "value": "-ik, -k, raʔuk, -wuh, etc."
+  },
+  {
+   "source": "db:morpheme_abbreviations",
+   "where": "morpheme_form rowid 138",
+   "word": "rab",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "form",
+   "value": "ak-, ir-, raak-, raar-/rab-"
+  },
+  {
+   "source": "db:morpheme_abbreviations",
+   "where": "morpheme_form rowid 164",
+   "word": "etc",
+   "letters": [
+    "e"
+   ],
+   "field_kind": "form",
+   "value": "ut-..., uur-..., -ik, -kii, -u, etc."
+  },
+  {
+   "source": "db:paradigmatic_forms",
+   "where": "skiri_form rowid 9074",
+   "word": "tikituum",
+   "letters": [
+    "m"
+   ],
+   "field_kind": "form",
+   "value": "tikituum"
+  },
+  {
+   "source": "db:lexical_entries",
+   "where": "headword rowid 72",
+   "word": "neg",
+   "letters": [
+    "e",
+    "g"
+   ],
+   "field_kind": "form",
+   "value": "aciksuhuriwaar [+ neg.]"
+  },
+  {
+   "source": "db:lexical_entries",
+   "where": "headword rowid 1299",
+   "word": "neg",
+   "letters": [
+    "e",
+    "g"
+   ],
+   "field_kind": "form",
+   "value": "kaapaakis [+ neg.]"
+  },
+  {
+   "source": "db:lexical_entries",
+   "where": "headword rowid 3633",
+   "word": "neg",
+   "letters": [
+    "e",
+    "g"
+   ],
+   "field_kind": "form",
+   "value": "aciksisit [+ neg.]"
+  },
+  {
+   "source": "extracted_data/appendix2_irregular_roots.json",
+   "where": "0/plural_stem",
+   "word": "burii-waa",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "form",
+   "value": "burii-waa"
+  },
+  {
+   "source": "extracted_data/appendix2_irregular_roots.json",
+   "where": "3/plural_stem",
+   "word": "burii",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "form",
+   "value": "burii"
+  },
+  {
+   "source": "extracted_data/abbreviations.json",
+   "where": "abbreviations/90/morpheme_form",
+   "word": "etc",
+   "letters": [
+    "e"
+   ],
+   "field_kind": "form",
+   "value": "-ik, -k, raʔuk, -wuh, etc."
+  },
+  {
+   "source": "extracted_data/abbreviations.json",
+   "where": "abbreviations/137/morpheme_form",
+   "word": "rab",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "form",
+   "value": "ak-, ir-, raak-, raar-/rab-"
+  },
+  {
+   "source": "extracted_data/abbreviations.json",
+   "where": "abbreviations/163/morpheme_form",
+   "word": "etc",
+   "letters": [
+    "e"
+   ],
+   "field_kind": "form",
+   "value": "ut-..., uur-..., -ik, -kii, -u, etc."
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_10/sections/0/content",
+   "word": "kuubasuutiiʔit",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "mixed",
+   "value": "Examples of verb forms with evidential prefixes are the following:\n\nwitiʔitat ‘there was a village’ < wi- QUOT + ti- IND + Ø- 3.A + itak ‘be a village’ + -Ø PER"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_10/sections/1/content",
+   "word": "tiibatuuksitkaspaawaa",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "mixed",
+   "value": "As a grammatical category, tense is little developed in Skiri. Most verb forms are not marked for tense and translate temporally as either past or present or so"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_10/sections/2/content",
+   "word": "kiʔiitiksbuubkaaʔ",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "mixed",
+   "value": "Exhortation. There are many constructions that are used to form commands and requests of varying degrees of urgency.\n\n*   The most common, and strongest, compri"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_11/sections/3/content",
+   "word": "tuksuhuubwíitit",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "mixed",
+   "value": "Occurring after all prefixes except those for subject and object number and before the verb stem are two adverbial morphemes, uhuur- 'now, finally; a while' and"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_13/sections/1/content",
+   "word": "wiitahurabwiicaʔ",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "mixed",
+   "value": "There are several adverbial proclitics that serve as introductory or transitional elements (translating as ‘then’, ‘and so’) and as temporal anchors (‘now’, ‘th"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_13/sections/1/content",
+   "word": "wiirakuhurabkiwatat",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "mixed",
+   "value": "There are several adverbial proclitics that serve as introductory or transitional elements (translating as ‘then’, ‘and so’) and as temporal anchors (‘now’, ‘th"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_14/sections/2/content",
+   "word": "tiiʔahabaacca",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "mixed",
+   "value": "tii- 'this; here'\ntiiʔahabaacca 'a log was lying here' < tii- 'here' + ar- EV + ra- ABS + Ø- 3.A + haak- 'wood' + sa 'be lying' + -Ø PERF"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_14/sections/7/content",
+   "word": "tiibiiraaʔa",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "mixed",
+   "value": "hii- 'other'\nhiiraasa 'the other one (lying)' < hii- 'other' + ra- ABS + sa 'be lying' + -Ø SUB.4\ntiibiiraaʔa 'this other one who came' < tii- 'this' + hii- 'ot"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_15/sections/0/content",
+   "word": "siwituksaakitaabku",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "mixed",
+   "value": "In addition to the prefixes discussed above, Skiri generally incorporates nouns that are the agents of intransitive verbs and the patients of transitive verbs ["
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_15/sections/0/content",
+   "word": "riibiikakuspihat",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "mixed",
+   "value": "In addition to the prefixes discussed above, Skiri generally incorporates nouns that are the agents of intransitive verbs and the patients of transitive verbs ["
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_15/sections/0/content",
+   "word": "tuuricaabiksii",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "mixed",
+   "value": "In addition to the prefixes discussed above, Skiri generally incorporates nouns that are the agents of intransitive verbs and the patients of transitive verbs ["
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_15/sections/0/content",
+   "word": "icaabiks",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "mixed",
+   "value": "In addition to the prefixes discussed above, Skiri generally incorporates nouns that are the agents of intransitive verbs and the patients of transitive verbs ["
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_15/sections/0/morphemes_mentioned/26/form",
+   "word": "icaabiks",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "form",
+   "value": "icaabiks"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_17/sections/0/morphemes_mentioned/4/form",
+   "word": "final",
+   "letters": [
+    "f",
+    "l"
+   ],
+   "field_kind": "form",
+   "value": "final syllable change"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_17/sections/0/morphemes_mentioned/4/form",
+   "word": "syllable",
+   "letters": [
+    "b",
+    "e",
+    "l",
+    "y"
+   ],
+   "field_kind": "form",
+   "value": "final syllable change"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_17/sections/0/morphemes_mentioned/4/form",
+   "word": "change",
+   "letters": [
+    "e",
+    "g"
+   ],
+   "field_kind": "form",
+   "value": "final syllable change"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_17/sections/0/morphemes_mentioned/9/form",
+   "word": "bustarit",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "form",
+   "value": "-bustarit"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_17/sections/0/morphemes_mentioned/13/form",
+   "word": "busta",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "form",
+   "value": "-busta"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_17/sections/0/morphemes_mentioned/15/form",
+   "word": "busitit",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "form",
+   "value": "-busitit"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_17/sections/0/morphemes_mentioned/16/notes",
+   "word": "busuukuʔ",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "mixed",
+   "value": "Combines with -hus for imperfective, habitual, non-subordinate forms, resulting in -busuukuʔ."
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_17/sections/0/morphemes_mentioned/17/form",
+   "word": "busuukuʔ",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "form",
+   "value": "-busuukuʔ"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_17/sections/0/morphemes_mentioned/19/form",
+   "word": "busuku",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "form",
+   "value": "-busuku"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_17/sections/0/tables/0/rows/14/3",
+   "word": "busuukuʔ",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "mixed",
+   "value": "-hus + -uukuʔ → -busuukuʔ"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_18/sections/0/morphemes_mentioned/4/form",
+   "word": "buras",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "form",
+   "value": "buras"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_18/sections/1/content",
+   "word": "bisaask",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "mixed",
+   "value": "In active and passive verbs, however, subordinate perfective forms are marked in one of three ways: by one of two overt vowel suffixes, by a final-syllable chan"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_18/sections/1/morphemes_mentioned/3/form",
+   "word": "bisaask",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "form",
+   "value": "bisaask"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_19/sections/0/morphemes_mentioned/0/form",
+   "word": ":bus",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "form",
+   "value": "-:bus"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_19/sections/1/morphemes_mentioned/0/form",
+   "word": "bus",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "form",
+   "value": "-bus"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_20/sections/2/examples/0/pawnee_form",
+   "word": "witiicikstaawariibusuukuʔ",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "form",
+   "value": "witiicikstaawariibusuukuʔ rakis"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_20/sections/2/examples/1/pawnee_form",
+   "word": "ahicikstaawariibusuku",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "form",
+   "value": "ahicikstaawariibusuku"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_21/sections/0/content",
+   "word": "tihuraabtarariʔit",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "mixed",
+   "value": "Simple existential descriptive forms. The simple existential forms of descriptive verbs comprise a descriptive stem followed by the verb uk 'to exist, be', whic"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_21/sections/0/morphemes_mentioned/1/form",
+   "word": "Vᵢ",
+   "letters": [
+    "V"
+   ],
+   "field_kind": "form",
+   "value": "Vᵢ(Vᵢ)²Vᵢ / C _ C + uk (+ NON-SUB)"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_21/sections/0/morphemes_mentioned/1/form",
+   "word": "Vᵢ",
+   "letters": [
+    "V"
+   ],
+   "field_kind": "form",
+   "value": "Vᵢ(Vᵢ)²Vᵢ / C _ C + uk (+ NON-SUB)"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_21/sections/0/morphemes_mentioned/1/form",
+   "word": "²Vᵢ",
+   "letters": [
+    "V"
+   ],
+   "field_kind": "form",
+   "value": "Vᵢ(Vᵢ)²Vᵢ / C _ C + uk (+ NON-SUB)"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_21/sections/0/morphemes_mentioned/1/form",
+   "word": "NON-SUB",
+   "letters": [
+    "B",
+    "O"
+   ],
+   "field_kind": "form",
+   "value": "Vᵢ(Vᵢ)²Vᵢ / C _ C + uk (+ NON-SUB)"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_16/sections/0/content",
+   "word": "raburaar",
+   "letters": [
+    "b"
+   ],
+   "field_kind": "mixed",
+   "value": "iriiruurakuuraaru 'whatever the kind of animal was,' that is, 'all kinds of animals' < irii- 'the one' + ruu- 'there' + ra- INF.A + Ø- 3.A + ku- INF.B + i- SEQ "
+  },
+  {
+   "source": "db:sound_change_rules",
+   "where": "formal rule 4R",
+   "word": "ʔV",
+   "letters": [
+    "V"
+   ],
+   "field_kind": "mixed",
+   "value": "V(V) -> V(V)ʔV / C _ C + NULL (non-subordinate)"
+  },
+  {
+   "source": "db:sound_change_rules",
+   "where": "examples rule 24",
+   "word": "chepaat",
+   "letters": [
+    "e"
+   ],
+   "field_kind": "mixed",
+   "value": "[{\"underlying\": \"capaat\", \"surface_phonetic\": \"[chepaat]\", \"gloss\": \"woman (c before vowel = ch)\"}, {\"underlying\": \"askuc\", \"surface_phonetic\": \"[eskuts]\", \"glo"
+  }
+ ]
+}
