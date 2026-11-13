@@ -111,7 +111,7 @@ RULES = [
         "examples": [
             {"underlying": "ti- + a- + piru", "surface": "tapiruʔ",
              "gloss": "he whipped you"},
-            {"underlying": "kuus- + a- + i- + kiraawaahc", "surface": "kusaakiraawa",
+            {"underlying": "kuus- + a- + i- + kiraawaahc", "surface": "kusaakiraawaʔ",
              "gloss": "you will forget"},
             {"underlying": "ti- + ar- + ut- + asitik", "surface": "wiitaruutasitit",
              "gloss": "it would happen"},
@@ -244,7 +244,7 @@ RULES = [
         "examples": [
             {"underlying": "kuhkus", "surface": "kuhku",
              "gloss": "swine (independent)"},
-            {"underlying": "ti- + kiikaa + -:hus", "surface": "tikiikaahu",
+            {"underlying": "ti- + kiikaa + -:hus", "surface": "tikiikaahuʔ",
              "gloss": "he is drinking (IMPF, word-final s lost)"},
         ],
     },
@@ -375,7 +375,7 @@ RULES = [
         ),
         "ordering": 16,
         "examples": [
-            {"underlying": "ahibt + -NULL", "surface": "ahibt",
+            {"underlying": "ahiht + -NULL", "surface": "ahiht",
              "gloss": "be fat (h retained before single C in cluster)"},
             {"underlying": "ti- + awahc- + wiitik", "surface": "tiiwacpiitit",
              "gloss": "he finally sat down"},
@@ -450,7 +450,7 @@ RULES = [
         ),
         "ordering": 20,
         "examples": [
-            {"underlying": "ti- + raar- + raahur", "surface": "tiraraahu",
+            {"underlying": "ti- + raar- + raahur", "surface": "tiraraahuʔ",
              "gloss": "they are ruined (rr -> r)"},
             {"underlying": "ti- + uur- + rariir", "surface": "tuurariiʔi",
              "gloss": "it is a mark (rr -> r, after r-loss at word end)"},
@@ -489,7 +489,7 @@ RULES = [
         "examples": [
             {"underlying": "ti- + a- + awiwiiʔa", "surface": "taaʔiwiiʔaʔ",
              "gloss": "he bent over"},
-            {"underlying": "ta- + t- + katawiwari k", "surface": "tatkataʔiwarit",
+            {"underlying": "ta- + t- + katawiwarik", "surface": "tatkataʔiwarit",
              "gloss": "I swallowed it"},
         ],
     },
@@ -513,17 +513,18 @@ RULES = [
         "name": "Variants of c",
         "type": "unrestricted",
         "domain": "consonant",
-        "formal": "c -> [ts] / _ C, # ; c -> [ch] / _ V",
+        "formal": "c -> [ts] / _ C, # ; c -> [č] / _ V",
         "description": (
             "The phoneme c has two phonetic variants: [ts] before consonants "
-            "and word-finally; [ch] (IPA [tsh] or [ch]) before vowels. This is "
-            "an allophonic rule (surface realization only)."
+            "and word-finally; [č] (the ch of English 'church') before vowels. "
+            "This is an allophonic rule (surface realization only)."
         ),
         "ordering": 24,
+        # The phonetic forms are the ones Parks prints with this rule (book p. 27), read from the page on 2026-11-13.
         "examples": [
-            {"underlying": "capaat", "surface_phonetic": "[chepaat]",
+            {"underlying": "capaat", "surface_phonetic": "[čəpaat]",
              "gloss": "woman (c before vowel = ch)"},
-            {"underlying": "askuc", "surface_phonetic": "[eskuts]",
+            {"underlying": "askuc", "surface_phonetic": "[əskuts]",
              "gloss": "prairie dog (c word-final = ts)"},
         ],
     },

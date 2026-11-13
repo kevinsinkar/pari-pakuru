@@ -67,9 +67,9 @@ Archived: `audit_semantic_tags.py` (AI audit that removed 1,248 wrong tags),
 |---|---|---|---|
 | `sound_changes.py` | 2.3 | **live** | Parks's 24 sound-change rules as code. `--test` runs 11 examples from the book |
 | `extract_appendices.py` | 3.1 | pipeline, **AI** | Reads Parks's appendices, abbreviation list and grammar chapter from scanned pages into [../extracted_data/](../extracted_data/) |
-| `morpheme_inventory.py` | 3.1 | **live** | The 30-slot verb template and a conjugation engine. `--validate`: 695 of 770 Appendix 1 forms exact (90.3%) |
-| `accent_rules.py` | 3.1 | **live** | Four rules for where the pitch accent falls in conjugated forms |
-| `stem_extractor.py` | 3.1, 4.3 | **live** | Predicts form 2 from headword, class and preverb. `--validate`: 1,904 of 2,197 exact (86.7%). `--confidence` fills `form2_confidence` |
+| `morpheme_inventory.py` | 3.1 | **live** | The 30-slot verb template and a conjugation engine. `--validate`: 611 of 770 Appendix 1 forms exact (79.4%) against the appendix as corrected from the page on 2026-11-13; the 90.3% reported before was against a copy with 152 misread forms |
+| `accent_rules.py` | 3.1 | **live** (used only by `morpheme_inventory.py`) | Four rules for where the accent falls in conjugated forms. Worked out from the misread copy of Appendix 1 and not checked since it was corrected |
+| `stem_extractor.py` | 3.1, 4.3 | **live** | Predicts form 2 from headword, class and preverb. `--validate`: 1,915 of 2,197 exact (87.2%). `--confidence` fills `form2_confidence` |
 | `noun_possession.py` | 3.1.5 | pipeline | Classifies nouns by possession system; fills `noun_stems`, `kinship_paradigms`, `possession_examples` |
 | `possession_engine.py` | 3.1.5 | **live** | Builds "my / your / his" forms and locative forms for a noun; behind `/api/possession/<headword>`. `--test`: 59 of 59, including ten attested *-hiriʔ* words |
 | `example_filter.py` | 3.1.5 | **live** | Decides whether an example sentence really contains a headword or only looks as if it does |
@@ -136,12 +136,22 @@ Version 1's outputs are superseded by version 2; see
 Does every stored value match the printed page? The instruction is
 [../prompts/source_fidelity_audit.md](../prompts/source_fidelity_audit.md); the
 results are in [../reports/source_audit_2026-11/](../reports/source_audit_2026-11/).
-The audit **changed no data**. It ends in a list of proposed fixes.
+The audit itself **changed no data**; it ended in a list of proposed fixes.
+The fixes with solid evidence were then applied by the three `applied` scripts
+below, each of which wrote a record into the same reports folder.
 
 | Script | Status | What it does |
 |---|---|---|
 | `db_dump.py` | **live** | Writes the database to [../DB/dump/](../DB/dump/) as text, one row per line, so that it is in git; `--restore` builds a database from that text; `--verify` proves the round trip. Run `--write` after any change to the database |
 | [`source_audit/`](source_audit/) | test | The audit, stage by stage. `status.py` prints how far it has got. See its README |
+| `apply_audit_fixes_2026_11.py` | applied | The reviewed fixes: 807 changes to the database, the JSON dictionary and `extracted_data/` (Appendix 1: 152 forms; appendices 2 and 3; chapters 3 and 4; verb forms; citations; headwords; column labels; one entry added, one removed). Lists what it left for a person. Record: `applied_fixes_report.txt` |
+| `restore_parks_ipa.py` | applied | Sets every Parks entry's phonetic form to the form printed in its entry, in Parks's own symbols; makes the respelling again; brings both JSON dictionaries and the frozen flashcards in step. Record: `ipa_restored_report.txt` |
+| `apply_bluebook_scan_fixes.py` | applied | Corrects the Blue Book forms from the blind readings of the scan (accents, OCR slips) in attestations, examples, lessons and `extracted_data/`; corrects three entries built on misread forms; removes the made-up phonetic forms of the Blue Book-only entries. Record: `bluebook_applied_report.txt` |
+| `ipa_notation.py` | **live** | The one place that knows both notations: Parks's (`·`, `–`, ə́, ɪ́), which is stored, and the older working one (hyphen, bullet, à, í), which the respelling code was written for. `to_working()` converts; the respelling scripts call it on the way in |
+| `check_simplified_forms.py` | test | Makes the respelling and the learner spelling again for every Parks entry and compares them with what is stored. Changes nothing. Run it after any change to phonetic forms or headwords |
+
+All three `applied` scripts change nothing without `--apply`, back the files
+up first, and add to their record on a later run without overwriting it.
 
 The audit's two findings that matter for every other script:
 
@@ -155,17 +165,26 @@ The audit's two findings that matter for every other script:
 
 ## Known problems
 
-- **The answer keys have errors.** `morpheme_inventory.py --validate` and
-  `person_forms.py --validate-appendix` score the engines against the stored
-  copy of Appendix 1, in which the 2026-11 audit found 152 of 770 forms
-  differing from the page. Until the approved fixes are applied
-  (`source_audit/apply_fixes.py`), the 90.3% figure measures agreement with a
-  faulty key. `stem_extractor.py --validate` is scored against dictionary verb
-  forms, 22 of which differ from the page. `sound_changes.py --test` uses
-  examples of which six differ (three lack a final glottal stop).
-- `possession_engine.py` reads `kinship_paradigms`, where four forms differ
-  from Appendix 3 (*asaas* for *asas*, *atipaat* for *atipat*, *apaat* for
-  *apat*, *ataati* for *ataat*).
+- **The engines were tuned against answer keys that had errors.** The stored
+  copy of Appendix 1 had 152 of 770 forms differing from the page; it was
+  corrected on 2026-11-13. Against the corrected appendix
+  `morpheme_inventory.py --validate` gives 79.4% (it gave 90.3% against the
+  faulty one) and `person_forms.py --validate-appendix` 25 of 27. The rules in
+  `accent_rules.py` came from the faulty copy and have not been checked again.
+  The verb forms `stem_extractor.py --validate` is scored against, the
+  sound-change examples and the kin terms `possession_engine.py` reads were
+  corrected the same day.
+- **Phonetic forms are stored in Parks's notation since 2026-11-13.** A script
+  that splits a phonetic form on a hyphen, or looks for a bullet, à or
+  unaccented-looking í, was written for the older working notation. Pass the
+  form through `ipa_notation.to_working()` first, as `fix_pronunciations.py`
+  and `respell_and_normalize.py` do. `generate_simplified_pronunciation` in
+  `respell_and_normalize.py` is the older respelling function and gives `? ?`
+  for a phonetic form of several words; stored respellings are made by
+  `fix_pronunciations.respell_phonetic`.
+- **Blue Book forms outside the corrected tables still lack the printed
+  accents**: `bb_gap_triage`, `bb_function_words`, `function_words`, and the
+  forms written into `sentence_templates.py` and `template_slot_fillers.py`.
 - `possession_engine.py` offers an instrumental form ("with, using ...") for
   every noun the web app asks about, animals included: its animacy filter needs
   topic tags, and the API does not pass them. Its stem stripper also removes

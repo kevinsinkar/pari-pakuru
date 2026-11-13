@@ -213,6 +213,26 @@ class Fixer:
             n = walk(data, lambda s: pattern.sub(new, s))
             if n:
                 self.say("chapter 4", "%s -> %s  (in %d string%s)" % (old, new, n, "" if n == 1 else "s"))
+
+        # What the pass above cannot reach: the bare imperfective suffix, forms that hold the misread stem inside a
+        # longer word, and a word whose accent is stored as a separate combining character. The blind reading has h
+        # in every one (blind_readings/chapter4_part2.json and part3.json: -:hus, -hus, tihurasista, ratkuhurasi,
+        # tuksuhuuhwiitit), and no Skiri word has a b. Only the b is changed; a stored accent that the blind reading
+        # lacks stays, with the other differences left for a person. The one exception is the word the audit graded
+        # "b-for-h and more", which takes the blind reading like the others of that grade.
+        import unicodedata
+
+        def nfc(s):
+            return unicodedata.normalize("NFC", s)
+        inside = [(r"-:bus(?![A-Za-zʔ])", "-:hus"), (r"(?<![A-Za-zʔ:])-bus(?![A-Za-zʔ])", "-hus"),
+                  (r"(?<![A-Za-zʔ])tiburás", "tihurás"), (r"(?<![A-Za-zʔ])ratkuburasi(?![A-Za-zʔ])", "ratkuhurasi"),
+                  (r"(?<![A-Za-zʔ])tuksuhuubwíitit(?![A-Za-zʔ])", "tuksuhuuhwiitit")]
+        for source, new in inside:
+            pattern = re.compile(nfc(source))
+            n = walk(data, lambda s: pattern.sub(new, nfc(s)) if pattern.search(nfc(s)) else s)
+            if n:
+                shown = re.sub(r"\(\?[<!][^)]*\)", "", source)
+                self.say("chapter 4", "%s -> %s  (in %d string%s)" % (shown, new, n, "" if n == 1 else "s"))
         rest = sum(1 for d in diffs if d["kind"] == "differs")
         self.left.append("Grammar chapter: %d stored words differ from the blind reading in an accent, a vowel or a glottal stop. They were matched "
                          "by likeness, not by position, and need a person with the page (chapter4_differences.json)" % rest)
@@ -220,8 +240,11 @@ class Fixer:
     # ---- 6 ----
     def sound_changes(self):
         self.head("6. Sound-change rules: example forms")
+        # "katawiwarik k": the stored form was "katawiwari k", and the first run of this script made it "katawiwarik k".
+        # The last two are the phonetic forms printed with Rule 24 (book p. 27, read from the page): the stored ones
+        # were an ASCII stand-in, ch for č and e for ə.
         fixes = [("kusaakiraawa", "kusaakiraawaʔ"), ("tikiikaahu", "tikiikaahuʔ"), ("ahibt", "ahiht"), ("tiraraahu", "tiraraahuʔ"),
-                 ("katawiwari", "katawiwarik")]
+                 ("katawiwari", "katawiwarik"), ("katawiwarik k", "katawiwarik"), ("chepaat", "čəpaat"), ("eskuts", "əskuts")]
         for rule_id, examples in self.conn.execute("select rule_id, examples from sound_change_rules").fetchall():
             new = examples or ""
             for old, good in fixes:
@@ -231,6 +254,14 @@ class Fixer:
                     self.say("sound changes", "rule %s: %s -> %s" % (rule_id, old, good))
             if new != (examples or ""):
                 self.run("update sound_change_rules set examples=? where rule_id=?", (new, rule_id))
+        # Rule 24 as printed: the variant before a vowel is [č]. The stored formula and description wrote it [ch].
+        formal = "c -> [ts] / _ C, # ; c -> [č] / _ V"
+        description = ("The phoneme c has two phonetic variants: [ts] before consonants and word-finally; [č] (the ch of English "
+                       "'church') before vowels. This is an allophonic rule (surface realization only).")
+        row = self.conn.execute("select formal, description from sound_change_rules where rule_id='24'").fetchone()
+        if row and (row[0], row[1]) != (formal, description):
+            self.run("update sound_change_rules set formal=?, description=? where rule_id='24'", (formal, description))
+            self.say("sound changes", "rule 24: formula and description write the variant before a vowel as [č], as printed (was [ch])")
 
     # ---- 7 to 11: the dictionary, from the graded differences ----
     def dictionary(self):
@@ -456,6 +487,24 @@ class Fixer:
                                     "whose gloss and example the real entry already has" % PHANTOM)
 
 
+    # ---- 13 ----
+    def learner_spelling(self):
+        """The learner spelling is made from the headword; where section 10 changed a headword it has to follow."""
+        self.head("13. Learner spelling of the headwords corrected in section 10")
+        from respell_and_normalize import generate_normalized_form
+        for entry_id in ("SK-ø_(ut...)_pak_siriq-p349-3573", "SK-wiicat_k-p179-3542", "SK-tawihuhtawii_(ut...)-p163-3207"):
+            row = self.conn.execute("select headword, phonetic_form, normalized_form from lexical_entries where entry_id=?", (entry_id,)).fetchone()
+            if not row or not row[1]:
+                continue
+            made = generate_normalized_form(row[0], row[1])[0]
+            if made and made != row[2]:
+                self.run("update lexical_entries set normalized_form=? where entry_id=?", (made, entry_id))
+                e = self.by_id.get(entry_id) or {}
+                if "normalized_form" in e:
+                    e["normalized_form"] = made
+                self.say("learner spelling", "%s: %s -> %s" % (row[0], row[2], made))
+
+
 def cc_tidy(s):
     return re.sub(r"\s+", " ", s or "").strip()
 
@@ -474,7 +523,7 @@ def main():
         shutil.copy2(S2E_JSON, backups / ("skiri_to_english_respelled_backup_%s.json" % stamp))
         conn = sqlite3.connect(str(DB))
     fx = Fixer(conn, args.apply)
-    fx.appendix1(); fx.appendix2(); fx.appendix3(); fx.abbreviations(); fx.chapter4(); fx.sound_changes(); fx.dictionary(); fx.entries()
+    fx.appendix1(); fx.appendix2(); fx.appendix3(); fx.abbreviations(); fx.chapter4(); fx.sound_changes(); fx.dictionary(); fx.entries(); fx.learner_spelling()
     total = sum(fx.counts.values())
     header = ["apply_audit_fixes_2026_11 — %s — %s" % ("APPLY" if args.apply else "dry run", dt.datetime.now().strftime("%Y-%m-%d %H:%M")),
               "changes: %d   %s" % (total, dict(fx.counts))]

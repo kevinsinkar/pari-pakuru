@@ -20,31 +20,30 @@ script.
 
 ## Things to know
 
-- **These files were compared with the pages in full on 2026-11-13, and they
-  have errors that are not yet fixed.** A second reader transcribed the pages
-  without seeing these files
-  ([../reports/source_audit_2026-11/findings.md](../reports/source_audit_2026-11/findings.md)):
+- **These files were compared with the pages in full on 2026-11-13 and
+  corrected the same day.** A second reader transcribed the pages without
+  seeing these files
+  ([../reports/source_audit_2026-11/findings.md](../reports/source_audit_2026-11/findings.md));
+  the changes are listed in `../reports/source_audit_2026-11/applied_fixes_report.txt`.
 
-  | File | Differs from the page |
-  |---|---|
-  | `appendix1_conjugations.json` | 152 of 770 forms: accents the page does not have, vowels dropped or doubled, one block shifted by a row |
-  | `appendix2_irregular_roots.json` | 3 of 27 cells: *burii-waa* and *burii* are printed *hurii-waa* and *hurii*; one stem stored where the cell is empty |
-  | `appendix3_kinship.json` | *asaas*, *atipaat*, *apaat* are printed *asas*, *atipat*, *apat*; the five rows of book page 543 are missing (two empty terms stand in their place) |
-  | `grammatical_overview.json` | 85 of 797 Skiri words: 34 have a `b` where the page has an `h` (*-busuukuʔ* is *-husuukuʔ*), the rest differ by an accent, a vowel or a glottal stop |
-  | `abbreviations.json` | 4 of 411 values (*raar-/rab-* is *raar-/rah-*) |
-
-  The list, with the printed value beside each stored one, is
-  `../reports/source_audit_2026-11/proposed_fixes.jsonl`. Check a form there
-  before relying on it.
+  | File | What was wrong | Now |
+  |---|---|---|
+  | `appendix1_conjugations.json` | 152 of 770 forms: accents the page does not have, vowels dropped or doubled, one block shifted by a row | all 152 corrected, each after a third look at the page |
+  | `appendix2_irregular_roots.json` | *burii-waa* and *burii* for printed *hurii-waa* and *hurii*; one stem stored where the cell is empty | the two forms corrected. The singular of *tir* 'to be together' is still stored though the cell is empty in print: the conjugation engine reads it, so it was left for a person |
+  | `appendix3_kinship.json` | *asaas*, *atipaat*, *apaat* for printed *asas*, *atipat*, *apat*; the five rows of book page 543 missing | corrected; the five rows added |
+  | `grammatical_overview.json` | 85 of 797 Skiri words: 34 with a `b` where the page has an `h` (*-busuukuʔ* is *-husuukuʔ*), the rest differing by an accent, a vowel or a glottal stop | the 34 corrected, and after them the forms a second letter check still found (*-:hus*, *-hus*, *tihurás*, *ratkuhurasi*, *tuksuhuuhwiitit*); no `b` is left in a Skiri form. **51 words are not corrected**: they were matched to the second reading by likeness, not by position, and need a person with the page (`../reports/source_audit_2026-11/chapter4_differences.json`) |
+  | `abbreviations.json` | 4 of 411 values (*raar-/rab-* is *raar-/rah-*) | three corrected; "verb class 1-a" is printed "verb class 1: -a" and was left |
+  | `blue_book_extracted.json`, `lessons.json` | Blue Book forms taken from the OCR text: no accents, about one form in seven misread | 960 strings corrected from the scan; 77 forms left for a person |
+  | `noun_possession_catalog.json` | carried the misread kin terms and *-biriʔ* | made again from the corrected data |
 
 - **`grammatical_overview.json` was read from page images by an AI model, and
   it can misread.** Until 2026-11-13 it gave Parks's locative/instrumental
   suffix as *-biriʔ* in eight places. The page has *-hiriʔ* (Grammatical
   Overview p. 30), 65 dictionary etymologies have it, and no Skiri word
-  contains a `b`. The eight places are corrected, and the possession engine,
-  which had been built on the misreading, with them. Nobody has compared the
-  rest of this file with the pages. Check a form against the PDF in
-  `Dictionary Data/Dictionary PDF Split/` before relying on it.
+  contains a `b`. Those places, and 34 more words with the same misreading,
+  are corrected. For the 51 words still listed as differing, check the form
+  against the PDF in `Dictionary Data/Dictionary PDF Split/` before relying on
+  it.
 - `blue_book_extracted.json` was moved here from the repository root on
   2026-11-13.
 - The page images that were used to recover the four lost grammar pages were

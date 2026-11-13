@@ -8,8 +8,8 @@ rename it.
 
 | Item | What it is |
 |---|---|
-| `skiri_to_english_respelled.json` | **Current.** The Skiri-to-English section: 4,273 entries with headword, IPA, class, senses, etymology, verb forms, examples, plus the derived `normalized_form` and `simplified_pronunciation` |
-| `english_to_skiri_linked.json` | **Current.** The English-to-Skiri section: 6,414 English headwords, each subentry linked to a Skiri entry by `s2e_entry_id` |
+| `skiri_to_english_respelled.json` | **Current.** The Skiri-to-English section: 4,273 entries with headword, IPA, class, senses, etymology, verb forms, examples, plus the derived `normalized_form` and `simplified_pronunciation`. Corrected from the printed page on 2026-11-13; phonetic forms in Parks's own symbols. For the 4,244 entries it shares with the database, headword, phonetic form, respelling and learner spelling are identical to the database's |
+| `english_to_skiri_linked.json` | **Current.** The English-to-Skiri section: 6,414 English headwords, each subentry linked to a Skiri entry by `s2e_entry_id`. Phonetic forms were brought to Parks's symbols with the entries they link to; 295 of 5,399 still show the older notation |
 | `Dictionary PDF Split/` | The book cut into its parts: front matter (abbreviations and sound key, sounds and alphabet, major sound changes, grammatical overview, organisation of the dictionary), the two dictionary sections, and the three appendices. Also two text files, `parks_sound_changes_ocr.txt` and `parks_grammatical_overview_ocr.txt`, with the text of chapters 3 and 4 |
 | `split_pdf_pages_SKIRI_TO_ENGLISH/` | The Skiri-to-English section, one PDF per page: `page_001.pdf` to `page_181.pdf` |
 | `split_pdf_pages_ENGLISH_TO_SKIRI/` | The English-to-Skiri section, one PDF per page |

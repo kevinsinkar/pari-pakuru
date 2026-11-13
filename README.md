@@ -23,8 +23,8 @@ No other source is used. Where the two disagree, both readings are shown.
 
 | | State on 2026-11-13 |
 |---|---|
-| **Dictionary database** | 4,337 entries (4,244 from Parks, 93 words found only in the Blue Book), 5,504 senses, 9,559 attested verb forms for 2,250 verbs, 2,635 example sentences |
-| **Pronunciation** | Parks's IPA for 4,328 entries, 1,800 of them with the accented syllable marked; a learner respelling for 4,324. IPA is never generated, only copied from Parks |
+| **Dictionary database** | 4,337 entries (4,244 from Parks, 93 words found only in the Blue Book), 5,504 senses, 9,562 attested verb forms for 2,240 verbs, 2,634 example sentences. Compared with the printed pages in full on 2026-11-13 and corrected: 99.7% of the dictionary fields are now identical to print |
+| **Pronunciation** | Parks's IPA for all 4,244 of his entries, stored in his own symbols, 2,218 of them with the accented syllable marked; a learner respelling for 4,332. IPA is never generated, only copied from Parks; the Blue Book-only words have none |
 | **Web app** | Flask app: two-way search, entry pages, Blue Book lessons, weekly flashcards, spaced-repetition study, sentence builder, community feedback |
 | **Public static site** | The search, flashcard and lesson pages, built into [docs/](docs/) and served by GitHub Pages |
 | **Blue Book lessons** | All 20 lessons with dialogues, vocabulary and grammar notes |
@@ -124,17 +124,18 @@ All of these were run on 2026-11-13.
 | Check | Command | Result |
 |---|---|---|
 | Sound-change rules | `scripts/sound_changes.py --test` | 11 of 11 |
-| Person and mode derivation | `scripts/person_forms.py --validate-appendix` | 27 of 27 against Parks Appendix 1 |
+| Person and mode derivation | `scripts/person_forms.py --validate-appendix` | 25 of 27 against Parks Appendix 1 as corrected from the page (it was 27 of 27 against two misread forms; the derivation gives *ruhii*, *riihkiraawaʔ* where Parks prints *ruuhii*, *rihkiraawaʔ*) |
 | Sentence templates | `scripts/sentence_templates.py test` | 34 of 34 |
 | Respelling and audit code | `scripts/test_phase_1_1.py` | 106 of 106 |
 | Database schema and query library | `DB/test_schema.py` | 53 of 53 |
 | Word-construction analysis | `python -m unittest discover -s scripts/morphology_v2 -p "test_*.py"` | 34 of 34 |
 | Its test sets are unchanged | `scripts/morphology_v2/gold_build.py --verify` | 17 files match their hashes |
 | Its outputs are reproducible | `scripts/morphology_v2/run.py --all`, hashes compared | byte-identical |
-| Every Pawnee form in the guide has a source | `scripts/morphology_v2/check_forms.py` | 3,781 forms, 250 IPA, 204 respellings: all resolved |
+| Every Pawnee form in the guide has a source | `scripts/morphology_v2/check_forms.py` | 3,809 forms, 250 IPA, 203 respellings: all resolved |
 | Noun possession and the *-hiriʔ* suffix | `scripts/possession_engine.py --test` | 59 of 59, ten of them attested dictionary words |
-| The text copy of the database restores to the same database | `scripts/db_dump.py --verify` | round trip exact: 46,783 rows in 25 tables |
-| Dictionary entries against the printed page | `scripts/source_audit/s2e_compare.py` | 49,443 of 50,736 fields identical (97.45%); the differences are in `reports/source_audit_2026-11/` |
+| The text copy of the database restores to the same database | `scripts/db_dump.py --verify` | round trip exact: 46,784 rows in 25 tables |
+| Dictionary entries against the printed page | `scripts/source_audit/s2e_compare.py` | 50,597 of 50,757 fields identical (99.68%; it was 97.45% before the fixes); the 218 differences left are listed in `reports/source_audit_2026-11/` |
+| Learner spelling and respelling follow from Parks's forms | `scripts/check_simplified_forms.py` | no difference in 4,244 entries |
 | That comparison catches errors | `scripts/source_audit/recall_test.py` | 510 of 510 planted errors reported |
 | Web app | 25 routes requested through Flask's test client; the possession API for all 1,706 nouns | all answer |
 
@@ -142,8 +143,8 @@ Measurements, not pass or fail:
 
 | What | Command | Result |
 |---|---|---|
-| Conjugation engine against Parks Appendix 1 | `scripts/morpheme_inventory.py --validate` | 695 of 770 forms exact (90.3%) |
-| Form 2 predicted from headword, class and preverb | `scripts/stem_extractor.py --validate` | 1,904 of 2,197 verbs exact (86.7%) |
+| Conjugation engine against Parks Appendix 1 | `scripts/morpheme_inventory.py --validate` | 611 of 770 forms exact (79.4%), 137 within two letters, 22 further off. The 90.3% reported before 2026-11-13 was measured against a copy of Appendix 1 with 152 misread forms |
+| Form 2 predicted from headword, class and preverb | `scripts/stem_extractor.py --validate` | 1,915 of 2,197 verbs exact (87.2%) |
 
 ## What to be careful about
 
@@ -158,20 +159,33 @@ Measurements, not pass or fail:
   Whether it is shown is the Pawnee Nation's decision, and it has not been
   asked yet.
 - **The database has been compared with the printed pages in full, and the
-  fixes are not applied yet.** The source-fidelity audit of 2026-11-13
-  ([reports/source_audit_2026-11/findings.md](reports/source_audit_2026-11/findings.md))
+  fixes with solid evidence are applied.** The source-fidelity audit of
+  2026-11-13 ([reports/source_audit_2026-11/findings.md](reports/source_audit_2026-11/findings.md))
   found the dictionary entries 97.5% identical to print, field for field, and
   the tables read from page images much worse: 152 of the 770 verb forms of
-  Appendix 1 differ from the page. It proposes 2,250 fixes and applies none.
-  Until they are reviewed and applied, treat a form from the appendices, the
-  grammar chapter or the English index as unchecked.
-- **The IPA is close to Parks's, not yet identical.** The PDF encodes his
-  symbols with stand-in characters. The table is now verified against the
-  printed glyphs for every character (`scripts/source_audit/chartable.py`).
-  What the database still writes differently, everywhere: à for his ə́, í for
-  his lax ɪ́, a hyphen for his syllable dot and a bullet for his dash at the
-  edge of a bound form. Whether to change the stored symbols is an open
-  decision.
+  Appendix 1 differed from the page. 807 fixes were applied the same day; the
+  dictionary entries are now 99.7% identical. What is left is for a person to
+  decide: 218 small differences in the dictionary, 77 Blue Book forms the
+  readers could not settle, and the English index, which is still loaded from
+  an early file. Use the entry a row of the English index points to, not the
+  Skiri form the row itself holds.
+- **The IPA is Parks's, in his own symbols.** The PDF encodes his symbols with
+  stand-in characters; the table is verified against the printed glyphs for
+  every character (`scripts/source_audit/chartable.py`), and every phonetic
+  form was set from it on 2026-11-13: ə́ and ɪ́ for the accented short vowels,
+  `·` between syllables, `–` at the edge of a bound form. The learner
+  respelling is coarser in one known way: it does not show his difference
+  between tense and lax short i and u (589 entries). See the
+  [quick reference](Quick_Reference_Guide.md#sounds-and-spellings).
+- **The conjugation engine is weaker than was reported.** Against Appendix 1
+  as Parks prints it, it gets 611 of 770 forms exactly (79.4%), not 90.3%. The
+  accent rules in `scripts/accent_rules.py` were also worked out from the
+  misread copy and have not been checked again.
+- **The Blue Book forms now carry the printed accents.** The stored forms came
+  from OCR, which dropped or garbled the accented vowels. 949 forms were read
+  again from the scan and 715 corrected. One of them is on a flashcard a
+  learner meets in Week 1: "yes" was stored as *had'* and is *haú'* in the
+  book.
 - **"Accent", not "pitch".** Parks writes that stress is not phonemic in Skiri
   and that his phonetic forms mark the accented syllable. Parts of the app
   still call this "pitch".

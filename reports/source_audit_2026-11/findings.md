@@ -3,6 +3,24 @@
 *Run on 2026-11-13 from `prompts/source_fidelity_audit.md`. The audit changed
 no data: the 649 input hashes taken at the start were identical at the end.*
 
+> **What happened next (same day).** This document describes the data as the
+> audit found it. The fixes with solid evidence were then applied:
+>
+> - 807 changes from the list of proposed fixes, among them all 152 forms of
+>   Appendix 1 (`applied_fixes_report.txt`);
+> - every phonetic form set to Parks's own symbols, 75 corrected in content
+>   and 9 added (`ipa_restored_report.txt`);
+> - the rest of the Blue Book forms read from the scan (949 distinct forms in
+>   all, every one that has a page) and 715 corrected
+>   (`bluebook_applied_report.txt`).
+>
+> After that the dictionary entries are 99.68% identical to print (50,597 of
+> 50,757 fields; it was 97.45%), with 218 differences left
+> (`after_fixes/`). The conjugation engine scores 79.4% against the corrected
+> Appendix 1, not 90.3%. The English index has not been repaired or
+> re-imported. What is still open is in the project log,
+> `pari_pakuru_project_scope.md`, open items 32 and 39 to 46.
+
 ## The short answer
 
 **The dictionary entries are a good copy of the printed dictionary with a
@@ -12,7 +30,7 @@ the page in a Pawnee form or in meaning, and every one is now listed with the
 printed value beside it. Of the 770 verb forms of Parks's Appendix 1, the
 answer key the conjugation engine is scored against, 152 differ from the page.
 
-Nothing has been fixed. The audit proposes 2,250 changes
+The audit itself fixed nothing. It proposes 2,250 changes
 (`proposed_fixes.jsonl`); 827 of them carry a value that can be applied as it
 stands, and the rest need a person.
 

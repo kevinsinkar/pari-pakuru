@@ -22,8 +22,8 @@ later by the script named. Row counts on 2026-11-13.
 |---|---|---|
 | `lexical_entries` | 4,337 | importer (4,273), then `scripts/import_bb_items.py` (+93), `scripts/dedup_entries.py` (−23) and `scripts/fix_data_2026_11.py` (−6) |
 | `glosses` | 5,504 | importer |
-| `paradigmatic_forms` | 9,559 | importer |
-| `examples` | 2,635 | importer; `scripts/blue_book_verify.py` added 88 Blue Book sentences |
+| `paradigmatic_forms` | 9,562 | importer; 19 forms corrected from the page on 2026-11-13 |
+| `examples` | 2,634 | importer; `scripts/blue_book_verify.py` added 88 Blue Book sentences |
 | `etymology` | 3,825 | importer |
 | `cognates` | 608 | importer |
 | `derived_stems` | 0 | importer. **Empty**, although the JSON holds 21 derived stems in 10 entries: an open item |
@@ -31,7 +31,7 @@ later by the script named. Row counts on 2026-11-13.
 | `cross_references` | 4,585 | importer |
 | `fts_glosses`, `fts_examples`, `fts_english_index` | | full-text indexes, kept current by triggers |
 | `import_metadata` | 6 | importer |
-| `semantic_tags` | 4,500 | `scripts/tag_entries.py` |
+| `semantic_tags` | 4,499 | `scripts/tag_entries.py` |
 | `blue_book_attestations` | 1,026 | `scripts/blue_book_verify.py` |
 | `bb_gap_triage` | 516 | `scripts/bb_gap_triage.py` |
 | `sound_change_rules` | 24 | `scripts/sound_changes.py` |
@@ -105,5 +105,5 @@ with SkiriDictionary("skiri_pawnee.db") as db:
 - **Senses can share a number.** Parks's sub-senses 2a and 2b are both stored as sense 2. The `glosses` table has no uniqueness rule on `(entry_id, sense_number)`; an earlier rule silently dropped seven entries' senses.
 - **`etymology.constituent_elements`** is JSON made by an automatic parse. Its per-piece glosses are often attached to the wrong piece. Use `raw_etymology`, and see `scripts/morphology_v2/etymology.py` for a parser that reads it correctly.
 - **Two entries with one headword are usually two words.** Parks lists, for example, a descriptive and a passive verb of the same shape separately. Never merge on the headword alone.
-- **`phonetic_form` is decoded from stand-in characters.** The PDF's text layer does not hold Parks's IPA letters but other characters in their place (`ß` for ə, `÷` for ú, `Š` for ʊ́ ...). The table is in `scripts/fix_data_2026_11.py`, with what is still undecided.
+- **`phonetic_form` holds Parks's own symbols**, since 2026-11-13: `·` between syllables, `–` at the edge of a bound form, ə́ and ɪ́ for the accented short vowels. The PDF's text layer does not hold his IPA letters but other characters in their place (`ß` for ə, `÷` for ú, `Š` for ʊ́ ...), and which character stands for what depends on the font; the verified table is `scripts/source_audit/chartable.py`. Code written for the older notation (hyphen, bullet, à, í) must convert with `scripts/ipa_notation.py`. The 93 Blue Book-only entries have no phonetic form.
 - **Reading connections open the file read-only.** Only the feedback and study tables are written by the web app, through a separate connection.

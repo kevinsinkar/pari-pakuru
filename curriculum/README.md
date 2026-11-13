@@ -25,6 +25,12 @@ Repairs to a word's data (its IPA, respelling or page number) are copied into
 the frozen file by the script that makes the repair. Membership and week
 numbers are never touched by a repair.
 
+The repairs of 2026-11-13 changed cards in 16 of the 24 weeks: the IPA is in
+Parks's own symbols (`[kʊ́·rʊks]`), the 57 Blue Book-only words no longer show
+a phonetic form (the ones they had were made from the spelling, not taken
+from a source), and one word changed: Week 1 "yes" was *had'*, an OCR
+misreading of the Blue Book's *haú'*, and is now *hauʔ*.
+
 Not yet done: a person has not reviewed the 387 words as a list.
 
 ## Holding a week back

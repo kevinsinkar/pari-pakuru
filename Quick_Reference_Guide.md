@@ -1,7 +1,8 @@
 # Quick reference
 
 A cheat sheet for working in this repository. Every example word and every
-count below was read from `skiri_pawnee.db` on 2026-11-13.
+count below was read from `skiri_pawnee.db` on 2026-11-13, after the
+source-fidelity audit's fixes were applied.
 
 ## How a dictionary entry is laid out
 
@@ -11,7 +12,7 @@ the database.
 | Field | How Parks prints it | Example (entry `SK-kuutik-p453-4018`) |
 |---|---|---|
 | Headword | bold | *kuutik* |
-| Phonetic form | `[...]` | [•kuu-tɪ{k/t}•] |
+| Phonetic form | `[...]` | [–kuu·tɪ{k/t}–] |
 | Preverb | `(ut...)`, `(uur...)`, `(ir...)` before the class | none here; *awiʔuusik* has `(uur...)` |
 | Grammatical class | small capitals | VT |
 | Verb class | in parentheses after the class | (1) |
@@ -20,7 +21,7 @@ the database.
 | Five verb forms | numbered 1 to 5 | see below |
 | Examples | after a bullet | *tikawuutit* 'he killed them.' |
 
-A noun entry, `SK-paatuq-p107-2038`: *paatuʔ* [paá-tʊʔ], N, 'blood; gore.',
+A noun entry, `SK-paatuq-p107-2038`: *paatuʔ* [paá·tʊʔ], N, 'blood; gore.',
 etymology `<paat+uʔ, blood + NOM>`.
 
 ### The five verb forms
@@ -47,7 +48,7 @@ literal translation after the comma is **not** in the same order as the pieces.
 |---|---|---|
 | N | noun | 1,634 |
 | VT | transitive verb | 777 |
-| VI | intransitive verb | 711 |
+| VI | intransitive verb | 712 |
 | VD | descriptive verb | 444 |
 | LOC | locative | 147 |
 | ADV | adverb | 141 |
@@ -58,7 +59,7 @@ literal translation after the comma is **not** in the same order as the pieces.
 Some entries carry two classes, such as `VT, VR`. Two entries with the same
 headword and different classes are two words, not duplicates.
 
-Verb classes, by number of entries: (1) 589, (4) 548, (3) 253, (1-i) 74,
+Verb classes, by number of entries: (1) 589, (4) 548, (3) 253, (1-i) 75,
 (2-i) 63, (2) 57, (1-a) 50, (u) 23, (wi) 23. Descriptive and locative verbs
 usually have no printed class.
 
@@ -72,26 +73,63 @@ Three spellings of the same word are stored side by side:
 | | Example | Where it comes from |
 |---|---|---|
 | Parks's headword | *paatuʔ* | the dictionary, unchanged |
-| Parks's phonetic form (IPA) | [paá-tʊʔ] | the dictionary, unchanged. Never generated |
-| Learner spelling (`normalized_form`) | `pâtu'` | rule: aa→â, ii→î, uu→û, ʔ→', and c→č where it is said "ch" |
+| Parks's phonetic form (IPA) | [paá·tʊʔ] | the dictionary, in his own symbols. Never generated |
+| Learner spelling (`normalized_form`) | `pâtu'` | rule: aa→â, ii→î, uu→û, ʔ→', and c→č where the phonetic form has [č] |
 | Respelling (`simplified_pronunciation`) | `PAH-too'` | derived from the IPA; CAPITALS = the syllable Parks marks as accented |
+
+The 93 Blue Book-only words have no phonetic form: the book gives none, and
+the ones the database used to hold had been made from the spelling. Their
+respelling is made from the spelling and shown with ≈.
+
+`python scripts/check_simplified_forms.py` makes the learner spelling and the
+respelling again for every Parks entry and compares them with what is stored.
+On 2026-11-13: no difference in 4,244 entries.
 
 ### Respelling key
 
 | Pawnee | Respelled | Example |
 |---|---|---|
-| a | uh | *rakis* [rà-kɪs] `DUH-kihs` 'wood' |
-| aa | ah | *paatuʔ* [paá-tʊʔ] `PAH-too'` 'blood' |
-| i | ih | *kiri* [kí-rɪ] `KIH-dih` 'domestic cat' |
-| ii | ee | *kariikuʔ* [kə-rií-kʊʔ] `kuh-DEE-koo'` 'liver' |
-| u, uu | oo | *kuruks* [kʊ́-rʊks] `KOO-dooks` 'bear' |
+| a | uh | *rakis* [rə́·kɪs] `DUH-kihs` 'wood' |
+| aa | ah | *paatuʔ* [paá·tʊʔ] `PAH-too'` 'blood' |
+| i | ih | *kiri* [kɪ́·rɪ] `KIH-dih` 'domestic cat' |
+| ii | ee | *kariikuʔ* [kə·rií·kʊʔ] `kuh-DEE-koo'` 'liver' |
+| u, uu | oo | *kuruks* [kʊ́·rʊks] `KOO-dooks` 'bear' |
 | r | d (a light tap) | *kiri* `KIH-dih`, *rakis* `DUH-kihs` |
-| c | ch before a vowel, ts elsewhere | *cikic* [čí-kɪts] `CHIH-kihts` 'itch; itchy' |
-| ʔ | ' | *awiʔuʔ* [à-wi-ʔuʔ] `UH-wih-'oo'` 'picture, image' |
-| optional sound | in parentheses | *kuutik* [•kuu-tɪ{k/t}•] `koo-tih(k/t)` |
+| c | ch before a vowel, ts elsewhere | *cikic* [čɪ́·kɪts] `CHIH-kihts` 'itch; itchy' |
+| ʔ | ' | *awiʔuʔ* [ə́·wi·ʔuʔ] `UH-wih-'oo'` 'picture, image' |
+| optional sound | in parentheses | *kuutik* [–kuu·tɪ{k/t}–] `koo-tih(k/t)` |
 
 A respelling with no capitals means Parks marks no accent on that form (he
 cites verb stems without one). It does not mean the word has no accent.
+
+**Where the respelling is coarser than the IPA.** Parks writes a short i or u
+in two ways: lax [ɪ], [ʊ] in most places, tense [i], [u] in others (before a
+glottal stop, for one: *awiʔuʔ* [ə́·wi·ʔuʔ]). The respelling writes both as
+`ih` and `oo`, as his sound key does for the spelling. 589 entries have such a
+vowel. Whether learners should see the difference is a teaching decision that
+has not been made; the IPA keeps it either way.
+
+### Parks's phonetic notation
+
+Since 2026-11-13 the database stores the phonetic forms in the symbols Parks
+prints, character for character, read from the typesetter's text of the PDF
+with a table verified against the printed glyphs
+(`scripts/source_audit/chartable.py`).
+
+| Symbol | Meaning | Example |
+|---|---|---|
+| `·` | syllable boundary | [kʊ́·rʊks] |
+| `–` at an edge | the form is bound: something must come before or after | *kuutik* [–kuu·tɪ{k/t}–] |
+| ə ɪ ʊ | the short vowels a, i, u in their usual (lax) quality | *rakis* [rə́·kɪs] |
+| i u (single) | a short vowel with tense quality | *awiʔuʔ* [ə́·wi·ʔuʔ] |
+| aa ii uu | long vowels | *paatuʔ* [paá·tʊʔ] |
+| č | the "ch" sound of c | *cikic* [čɪ́·kɪts] |
+| `{k/t}` | the final consonant alternates | *kuutik* |
+
+Before that date the database wrote a hyphen for the syllable dot, a bullet
+for the edge dash, à for ə́ and í for ɪ́. Older reports and frozen files from
+before 2026-11-13 still show that working notation. `scripts/ipa_notation.py`
+converts Parks's notation to it for the respelling code, nowhere else.
 
 ### Accent marks in the IPA
 
@@ -100,21 +138,21 @@ Parks: "Stress is not phonemic in Skiri and hence is not marked on words.
 (Sounds and Alphabet, p. 15.) So the marks show the accented syllable; they are
 not a pitch that changes meaning.
 
-| On | Parks prints | Stored as | Example |
-|---|---|---|---|
-| a long vowel | acute on its second half: aá, ií, uú | the same | *paatuʔ* [paá-tʊʔ]; *askuhuukita* [əs-kʊ-huú-kɪ-tə] |
-| a short u | ʊ́ | the same | *kuruks* [kʊ́-rʊks] |
-| a short a | ə́ | **à** (not his symbol) | *rakis* [rà-kɪs]; he prints [rə́-kɪs] |
-| a short i | what looks like ɪ́ (to be confirmed) | **í** | *cikic* [čí-kɪts] |
+| On | Parks prints, and the database stores | Example |
+|---|---|---|
+| a long vowel | acute on its second half: aá, ií, uú | *paatuʔ* [paá·tʊʔ]; *askuhuukita* [əs·kʊ·huú·kɪ·tə] |
+| a short u | ʊ́ | *kuruks* [kʊ́·rʊks] |
+| a short a | ə́ | *rakis* [rə́·kɪs] |
+| a short i | ɪ́ | *cikic* [čɪ́·kɪts] |
 
-1,800 entries carry an accent mark. The last two rows are an open item: the
-accent is stored, but the vowel symbol under it is not the one Parks prints
-(certain for a; for i the print has still to be compared closely). A
-grave accent (ì, ù, à as its own mark) occurs in five forms; Parks does not
-explain it.
+2,218 of the 4,244 Parks entries carry an accent mark. A grave accent (a
+second, weaker mark, as in *aacikicii* [aá·čɪ·kɪ·čiì]) occurs in ten entries;
+Parks does not explain it.
 
 The Blue Book uses its own practical spelling (ts for c, ' for ʔ, a dot `•`
-between the parts of a word). Blue Book forms are quoted as printed.
+between the parts of a word) and prints an acute accent on the stressed
+vowel. Blue Book forms are quoted as printed; the accents, lost when the book
+was read by OCR, were restored from the scan on 2026-11-13.
 
 ## Database tables
 
@@ -124,16 +162,16 @@ between the parts of a word). Blue Book forms are quoted as printed.
 |---|---|---|
 | `lexical_entries` | 4,337 | one row per headword; 4,244 from Parks, 93 Blue Book only |
 | `glosses` | 5,504 | numbered senses |
-| `paradigmatic_forms` | 9,559 | the five forms, for 2,239 verbs |
-| `examples` | 2,635 | example sentences (2,547 Parks, 88 Blue Book) |
+| `paradigmatic_forms` | 9,562 | the five forms, for 2,240 verbs |
+| `examples` | 2,634 | example sentences (2,546 Parks, 88 Blue Book) |
 | `etymology` | 3,825 | Parks's printed etymology; `constituent_elements` is a derived parse whose per-piece glosses are unreliable |
 | `cognates` | 608 | related forms in Arikara, Kitsai, Wichita ... |
-| `english_index` | 8,067 | English-to-Skiri lookup rows; 5,130 linked to an entry |
-| `cross_references` | 4,585 | "see also" links |
-| `semantic_tags` | 4,500 | 19 topic tags on 3,316 entries |
+| `english_index` | 8,067 | English-to-Skiri lookup rows; 5,130 linked to an entry. Loaded from an early, uncleaned file: its own copies of the Skiri forms are unreliable, so follow the link to the entry |
+| `cross_references` | 4,585 | "see also" links (same early file) |
+| `semantic_tags` | 4,499 | 19 topic tags on 3,315 entries |
 | `blue_book_attestations` | 1,026 | Blue Book vocabulary items; 581 linked to an entry |
 | `lessons` | 20 | Blue Book lessons |
-| `verb_paradigms` | 770 | Parks Appendix 1: 7 verbs × 10 modes × 11 persons |
+| `verb_paradigms` | 770 | Parks Appendix 1: 7 verbs × 10 modes × 11 persons; 152 forms corrected from the printed pages on 2026-11-13 |
 | `irregular_verb_roots` | 9 | Parks Appendix 2 |
 | `morpheme_abbreviations` | 164 | Parks's abbreviation list |
 | `morpheme_inventory` | 37 | inflectional prefixes and suffixes with slot numbers |
@@ -203,6 +241,9 @@ proclitics (slots 1-8) → inner prefixes (10-26) → STEM → suffixes (27-30)
 .venv/Scripts/python scripts/morphology_v2/run.py --all       # word-construction analysis
 .venv/Scripts/python scripts/sound_changes.py --test          # sound-change rules
 .venv/Scripts/python scripts/stem_extractor.py --validate     # form 2 prediction
+.venv/Scripts/python scripts/check_simplified_forms.py        # learner forms follow from Parks's forms
+.venv/Scripts/python scripts/source_audit/s2e_compare.py      # dictionary entries against the printed page
+.venv/Scripts/python scripts/db_dump.py --write               # refresh DB/dump/ after any database change
 .venv/Scripts/python DB/query_api.py --db skiri_pawnee.db --english "bear"
 ```
 

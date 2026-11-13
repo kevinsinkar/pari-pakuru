@@ -1,0 +1,164 @@
+{
+ "skiri_letters": "a i u p t k c s w r h ʔ (č ə ɪ ʊ and accents in phonetic forms; n in a few words)",
+ "findings": [
+  {
+   "source": "db:morpheme_abbreviations",
+   "where": "morpheme_form rowid 91",
+   "word": "etc",
+   "letters": [
+    "e"
+   ],
+   "field_kind": "form",
+   "value": "-ik, -k, raʔuk, -wuh, etc."
+  },
+  {
+   "source": "db:morpheme_abbreviations",
+   "where": "morpheme_form rowid 164",
+   "word": "etc",
+   "letters": [
+    "e"
+   ],
+   "field_kind": "form",
+   "value": "ut-..., uur-..., -ik, -kii, -u, etc."
+  },
+  {
+   "source": "db:lexical_entries",
+   "where": "headword rowid 72",
+   "word": "neg",
+   "letters": [
+    "e",
+    "g"
+   ],
+   "field_kind": "form",
+   "value": "aciksuhuriwaar [+ neg.]"
+  },
+  {
+   "source": "db:lexical_entries",
+   "where": "headword rowid 1299",
+   "word": "neg",
+   "letters": [
+    "e",
+    "g"
+   ],
+   "field_kind": "form",
+   "value": "kaapaakis [+ neg.]"
+  },
+  {
+   "source": "db:lexical_entries",
+   "where": "headword rowid 3633",
+   "word": "neg",
+   "letters": [
+    "e",
+    "g"
+   ],
+   "field_kind": "form",
+   "value": "aciksisit [+ neg.]"
+  },
+  {
+   "source": "extracted_data/abbreviations.json",
+   "where": "abbreviations/90/morpheme_form",
+   "word": "etc",
+   "letters": [
+    "e"
+   ],
+   "field_kind": "form",
+   "value": "-ik, -k, raʔuk, -wuh, etc."
+  },
+  {
+   "source": "extracted_data/abbreviations.json",
+   "where": "abbreviations/163/morpheme_form",
+   "word": "etc",
+   "letters": [
+    "e"
+   ],
+   "field_kind": "form",
+   "value": "ut-..., uur-..., -ik, -kii, -u, etc."
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_17/sections/0/morphemes_mentioned/4/form",
+   "word": "final",
+   "letters": [
+    "f",
+    "l"
+   ],
+   "field_kind": "form",
+   "value": "final syllable change"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_17/sections/0/morphemes_mentioned/4/form",
+   "word": "syllable",
+   "letters": [
+    "b",
+    "e",
+    "l",
+    "y"
+   ],
+   "field_kind": "form",
+   "value": "final syllable change"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_17/sections/0/morphemes_mentioned/4/form",
+   "word": "change",
+   "letters": [
+    "e",
+    "g"
+   ],
+   "field_kind": "form",
+   "value": "final syllable change"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_21/sections/0/morphemes_mentioned/1/form",
+   "word": "Vᵢ",
+   "letters": [
+    "V"
+   ],
+   "field_kind": "form",
+   "value": "Vᵢ(Vᵢ)²Vᵢ / C _ C + uk (+ NON-SUB)"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_21/sections/0/morphemes_mentioned/1/form",
+   "word": "Vᵢ",
+   "letters": [
+    "V"
+   ],
+   "field_kind": "form",
+   "value": "Vᵢ(Vᵢ)²Vᵢ / C _ C + uk (+ NON-SUB)"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_21/sections/0/morphemes_mentioned/1/form",
+   "word": "²Vᵢ",
+   "letters": [
+    "V"
+   ],
+   "field_kind": "form",
+   "value": "Vᵢ(Vᵢ)²Vᵢ / C _ C + uk (+ NON-SUB)"
+  },
+  {
+   "source": "extracted_data/grammatical_overview.json",
+   "where": "page_21/sections/0/morphemes_mentioned/1/form",
+   "word": "NON-SUB",
+   "letters": [
+    "B",
+    "O"
+   ],
+   "field_kind": "form",
+   "value": "Vᵢ(Vᵢ)²Vᵢ / C _ C + uk (+ NON-SUB)"
+  },
+  {
+   "source": "db:sound_change_rules",
+   "where": "formal rule 4R",
+   "word": "ʔV",
+   "letters": [
+    "V"
+   ],
+   "field_kind": "mixed",
+   "value": "V(V) -> V(V)ʔV / C _ C + NULL (non-subordinate)"
+  }
+ ]
+}

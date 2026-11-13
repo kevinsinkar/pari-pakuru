@@ -21,7 +21,10 @@ Read these first. They say how far the data can be trusted.
 [source_audit_2026-11/](source_audit_2026-11/).** It is the first audit that
 compared everything with the page instead of a sample: every dictionary entry
 against the PDF's text layer, and every table that an AI model had read from
-page images against a second, blind reading. Start with its `findings.md`. It
+page images against a second, blind reading. Start with its `findings.md`.
+The fixes it led to were applied the same day; the three reports of what was
+changed (`applied_fixes_report.txt`, `ipa_restored_report.txt`,
+`bluebook_applied_report.txt`) are in the same folder. It
 supersedes the "verdict: sound" of the 2026-09-01 audit for the appendices,
 the grammar chapter and the English index, which that audit did not reach.
 

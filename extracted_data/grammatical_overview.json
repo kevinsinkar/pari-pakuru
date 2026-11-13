@@ -1605,7 +1605,7 @@
       },
       {
         "heading": "Adverbials",
-        "content": "Occurring after all prefixes except those for subject and object number and before the verb stem are two adverbial morphemes, uhuur- 'now, finally; a while' and awaahc- 'even, at least' [table 7:21]. An example is:\ntuksuhuubwíitit 'let me sit down a while!' < i- CONT.1/2.A + t- 1.A + uks- JUSS + uhuur- 'a while' + wiítik 'sit down' + -Ø PERF",
+        "content": "Occurring after all prefixes except those for subject and object number and before the verb stem are two adverbial morphemes, uhuur- 'now, finally; a while' and awaahc- 'even, at least' [table 7:21]. An example is:\ntuksuhuuhwiitit 'let me sit down a while!' < i- CONT.1/2.A + t- 1.A + uks- JUSS + uhuur- 'a while' + wiítik 'sit down' + -Ø PERF",
         "morphemes_mentioned": [
           {
             "form": "uhuur-",
@@ -2712,7 +2712,7 @@
     "sections": [
       {
         "heading": null,
-        "content": "independent perfective form; but if it ends in a vowel, a glottal stop occurs after the vowel. If the perfective form of the verb has the intentive suffix (-ta INT) following it or if the perfective form of the verb is compounded with a following stem, -his does occur. Examples are:\ntiburás ‘he found it’ < ti- IND + Ø- 3.A + huras ‘find’ + Ø PERF; cp. tiburásista ‘he is going to find it’ < ti- IND + Ø- 3.A + huras ‘find’ + -his PERF + -ta INT\ntikíkat ‘he cried’ < ti- IND + Ø- 3.A + kikak ‘cry’ + Ø PERF; cp. tikikakísta ‘he is going to cry’ < ti- IND + Ø- 3.A + kikak ‘cry’ + -his PERF + -ta INT; takikaksaʔ ‘he came crying’ < ti- IND + Ø- 3.A + a- PREV.3.A + kikak ‘cry’ + -his PERF + a- ‘come’ + Ø PERF",
+        "content": "independent perfective form; but if it ends in a vowel, a glottal stop occurs after the vowel. If the perfective form of the verb has the intentive suffix (-ta INT) following it or if the perfective form of the verb is compounded with a following stem, -his does occur. Examples are:\ntihurás ‘he found it’ < ti- IND + Ø- 3.A + huras ‘find’ + Ø PERF; cp. tihurásista ‘he is going to find it’ < ti- IND + Ø- 3.A + huras ‘find’ + -his PERF + -ta INT\ntikíkat ‘he cried’ < ti- IND + Ø- 3.A + kikak ‘cry’ + Ø PERF; cp. tikikakísta ‘he is going to cry’ < ti- IND + Ø- 3.A + kikak ‘cry’ + -his PERF + -ta INT; takikaksaʔ ‘he came crying’ < ti- IND + Ø- 3.A + a- PREV.3.A + kikak ‘cry’ + -his PERF + a- ‘come’ + Ø PERF",
         "morphemes_mentioned": [
           {
             "form": "-ta",
@@ -2764,7 +2764,7 @@
       },
       {
         "heading": "Perfective aspect, subordinate (SUB)",
-        "content": "In active and passive verbs, however, subordinate perfective forms are marked in one of three ways: by one of two overt vowel suffixes, by a final-syllable change, or by no overt marking (i.e., Ø). Which subordinating suffix a verb takes is unpredictable, and so each active and passive verb stem belongs to one of four classes, each of which is defined by its subordinate perfective marker. These classes are given in table 14.\nClass 1: raskuhisaaska ‘for you to call him’ < ra- INF.A + s- 2.A + ku- INF.B + hisaask ‘call’ + -a SUB.1\nClass 2: ratkuburasi ‘for me to find him’ < ra- INF.A + t- 1.A + ku- INF.B + huras ‘find’ + -i SUB.2\nA subclass of Class 2 verbs comprises the small set of verbs called i-stems, which have a stem-final vowel i that occurs in imperfective forms but not in perfective ones. In the base form of these stems that i is indicated by a stem-final -i, as in as-i (uur...) ‘to run’ and itk-i (ut...) ‘to dream about’. The principal parts of an i-stem are illustrated as follows:\nuc-i ‘to be lying’: uc ‘be lying’ PERF; ucista ‘is going to lie’ PERF.INT; uci ‘be lying’ SUB.2; uciihuʔ ‘be lying’ IMPF; uciihusta ‘is going to be lying’ IMPF.INT; uciihu ‘be lying’ IMPF.SUB\nClass 3: tiruʔ ‘he made it’ < ti- IND + Ø- 3.A + raʔuk ‘make’ + Ø PERF; wiiraraʔu ‘when he made it’ < wii- ‘now’ + ra- ABS + Ø- 3.A + raʔuk ‘make’ + Ø SUB.3\nClass 4: iriirakikat ‘where he cried’ < irii- ‘where’ + ra- ABS + Ø- 3.A + kikak ‘cry’ + Ø SUB.4",
+        "content": "In active and passive verbs, however, subordinate perfective forms are marked in one of three ways: by one of two overt vowel suffixes, by a final-syllable change, or by no overt marking (i.e., Ø). Which subordinating suffix a verb takes is unpredictable, and so each active and passive verb stem belongs to one of four classes, each of which is defined by its subordinate perfective marker. These classes are given in table 14.\nClass 1: raskuhisaaska ‘for you to call him’ < ra- INF.A + s- 2.A + ku- INF.B + hisaask ‘call’ + -a SUB.1\nClass 2: ratkuhurasi ‘for me to find him’ < ra- INF.A + t- 1.A + ku- INF.B + huras ‘find’ + -i SUB.2\nA subclass of Class 2 verbs comprises the small set of verbs called i-stems, which have a stem-final vowel i that occurs in imperfective forms but not in perfective ones. In the base form of these stems that i is indicated by a stem-final -i, as in as-i (uur...) ‘to run’ and itk-i (ut...) ‘to dream about’. The principal parts of an i-stem are illustrated as follows:\nuc-i ‘to be lying’: uc ‘be lying’ PERF; ucista ‘is going to lie’ PERF.INT; uci ‘be lying’ SUB.2; uciihuʔ ‘be lying’ IMPF; uciihusta ‘is going to be lying’ IMPF.INT; uciihu ‘be lying’ IMPF.SUB\nClass 3: tiruʔ ‘he made it’ < ti- IND + Ø- 3.A + raʔuk ‘make’ + Ø PERF; wiiraraʔu ‘when he made it’ < wii- ‘now’ + ra- ABS + Ø- 3.A + raʔuk ‘make’ + Ø SUB.3\nClass 4: iriirakikat ‘where he cried’ < irii- ‘where’ + ra- ABS + Ø- 3.A + kikak ‘cry’ + Ø SUB.4",
         "morphemes_mentioned": [
           {
             "form": "ra-",
@@ -2902,11 +2902,11 @@
     "page_number": 47,
     "sections": [
       {
-        "heading": "GRAMMATICAL OVERVIEW (Imperfective aspect -:bus, continued)",
-        "content": "of the imperfective is -:bus, where the colon preceding -:bus represents lengthening of the preceding, stem-final vowel. Here, too, the final s of -:bus is dropped when this suffix is the last element in a word, but is retained when -ta INT or any other morpheme immediately follows it. Examples:\ntikacaakuʔ 'he is cutting it' < ti- IND + Ø- 3.A + kacak 'cut, chop' + -:bus IMPF; cp. tikacat 'he cut it' < ti- IND + Ø- 3.A + kacak 'cut' + Ø PERF\ntikiikaahuʔ 'he is drinking it' < ti- IND + Ø- 3.A + kiikaa 'drink' + -:bus IMPF; cp. tikiikaahusta 'he is going to be drinking it' < ti- IND + Ø- 3.A + kiikaa 'drink' + -:bus IMPF + -ta INT; Tarahaʔ Takiihaahusaʔ 'Buffalo Comes to Drink' < ti- IND + Ø- 3.A + a- PREV + kiikaa 'drink' + -:bus IMPF + a 'come' + Ø PERF",
+        "heading": "GRAMMATICAL OVERVIEW (Imperfective aspect -:hus, continued)",
+        "content": "of the imperfective is -:hus, where the colon preceding -:hus represents lengthening of the preceding, stem-final vowel. Here, too, the final s of -:hus is dropped when this suffix is the last element in a word, but is retained when -ta INT or any other morpheme immediately follows it. Examples:\ntikacaakuʔ 'he is cutting it' < ti- IND + Ø- 3.A + kacak 'cut, chop' + -:hus IMPF; cp. tikacat 'he cut it' < ti- IND + Ø- 3.A + kacak 'cut' + Ø PERF\ntikiikaahuʔ 'he is drinking it' < ti- IND + Ø- 3.A + kiikaa 'drink' + -:hus IMPF; cp. tikiikaahusta 'he is going to be drinking it' < ti- IND + Ø- 3.A + kiikaa 'drink' + -:hus IMPF + -ta INT; Tarahaʔ Takiihaahusaʔ 'Buffalo Comes to Drink' < ti- IND + Ø- 3.A + a- PREV + kiikaa 'drink' + -:hus IMPF + a 'come' + Ø PERF",
         "morphemes_mentioned": [
           {
-            "form": "-:bus",
+            "form": "-:hus",
             "label": "Imperfective aspect",
             "slot": "suffix",
             "notes": "Non-subordinate. Colon indicates lengthening of preceding stem-final vowel. Final 's' dropped when word-final, retained when followed by -ta INT or other morphemes."
@@ -2951,11 +2951,11 @@
         "tables": []
       },
       {
-        "heading": "Imperfective aspect (IMPF), subordinate: -bus",
-        "content": "The form of the imperfective in subordinate verb forms is -bus, the same as the non-subordinate form except that it does not lengthen the preceding stem-final vowel and, when the suffix is word-final, the final vowel (i.e., u) of -bus, which becomes -hu in its surface form, is not followed by a glottal stop, as it is in non-subordinate forms. Examples are:\nraakuraarahuʔ 'for them to be coming' < ra- INF.A + Ø- 3.A + a- PREV + ku- INF.B + raar- 3.P.INDV.A + a 'come' + -:bus IMPF.SUB; cp. non-subordinate taraaraahuʔ 'they are coming'\niriirakiwakuʔ 'the one that barked' < irii- 'the one' + ra- ABS + Ø- 3.A + kiwak 'bark' + -:bus IMPF.SUB; cp. non-subordinate tikiwaakuʔ 'it's barking' < ti- IND + Ø- 3.A + kiwak 'bark' + -:bus IMPF",
+        "heading": "Imperfective aspect (IMPF), subordinate: -hus",
+        "content": "The form of the imperfective in subordinate verb forms is -hus, the same as the non-subordinate form except that it does not lengthen the preceding stem-final vowel and, when the suffix is word-final, the final vowel (i.e., u) of -hus, which becomes -hu in its surface form, is not followed by a glottal stop, as it is in non-subordinate forms. Examples are:\nraakuraarahuʔ 'for them to be coming' < ra- INF.A + Ø- 3.A + a- PREV + ku- INF.B + raar- 3.P.INDV.A + a 'come' + -:hus IMPF.SUB; cp. non-subordinate taraaraahuʔ 'they are coming'\niriirakiwakuʔ 'the one that barked' < irii- 'the one' + ra- ABS + Ø- 3.A + kiwak 'bark' + -:hus IMPF.SUB; cp. non-subordinate tikiwaakuʔ 'it's barking' < ti- IND + Ø- 3.A + kiwak 'bark' + -:hus IMPF",
         "morphemes_mentioned": [
           {
-            "form": "-bus",
+            "form": "-hus",
             "label": "Imperfective aspect",
             "slot": "suffix",
             "notes": "Subordinate. Does not lengthen preceding stem-final vowel. Final 'u' becomes '-hu' when word-final and followed by a glottal stop, but the glottal stop is not present in subordinate forms."
@@ -2995,7 +2995,7 @@
       },
       {
         "heading": "Intentive aspect (INT), non-subordinate: -ta",
-        "content": "The intentive aspect, represented by the form -ta, denotes an activity or state that is expected to occur and differs from a simple future tense in that there is no doubt or potentiality implied. It translates into English most commonly as '... is going to ...'. The suffix occurs in both perfective and imperfective forms, illustrated by the following:\ntaturaaʔiiwaatista 'I am going to tell a story' < ta- IND.1/2.A + t- 1.A + uur- PREV + raaʔiiwaat 'tell a story' + -his PERF + -ta INT\niriwiitataraahisaaskusta 'I am going to be calling you (by a certain kinship term)' < iri- 'that' + wii- 'now' + ta- IND.1/2.A + t- 1.A + a- 2.P + raahisaask 'call, address (by a kin term)' + -:bus IMPF + -ta INT; cp. iriwiitataraahisaaskuʔ 'I call you (by a certain kinship term)'",
+        "content": "The intentive aspect, represented by the form -ta, denotes an activity or state that is expected to occur and differs from a simple future tense in that there is no doubt or potentiality implied. It translates into English most commonly as '... is going to ...'. The suffix occurs in both perfective and imperfective forms, illustrated by the following:\ntaturaaʔiiwaatista 'I am going to tell a story' < ta- IND.1/2.A + t- 1.A + uur- PREV + raaʔiiwaat 'tell a story' + -his PERF + -ta INT\niriwiitataraahisaaskusta 'I am going to be calling you (by a certain kinship term)' < iri- 'that' + wii- 'now' + ta- IND.1/2.A + t- 1.A + a- 2.P + raahisaask 'call, address (by a kin term)' + -:hus IMPF + -ta INT; cp. iriwiitataraahisaaskuʔ 'I call you (by a certain kinship term)'",
         "morphemes_mentioned": [
           {
             "form": "-ta",

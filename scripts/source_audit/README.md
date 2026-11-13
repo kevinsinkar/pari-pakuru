@@ -8,6 +8,13 @@ Results: [../../reports/source_audit_2026-11/](../../reports/source_audit_2026-1
 Every script here reads the database read-only, except `apply_fixes.py`, which
 changes nothing without `--apply` and a file of approved fix ids.
 
+The fixes were applied on 2026-11-13 by three scripts one folder up, which
+build on this code: `../apply_audit_fixes_2026_11.py`,
+`../restore_parks_ipa.py` and `../apply_bluebook_scan_fixes.py`. Since then
+the database stores phonetic forms in Parks's own symbols, and the comparison
+treats any other symbol as a difference (it used to fold í into his ɪ́ as a
+known convention).
+
 ```bash
 python scripts/source_audit/status.py        # how far the audit has got
 ```
@@ -29,7 +36,8 @@ python scripts/source_audit/status.py        # how far the audit has got
 | 3 | `crops.py`, `grade.py` | Cuts differences out of the page onto sheets for a blind reading; grades them from the readings |
 | 4 | `appendix_tiles.py` | Tiles of the pages that have no text layer |
 | 4 | `appendix1_compare.py`, `chapters_compare.py`, `abbrev_compare.py`, `alphabet_check.py` | Appendix 1, chapters 3 and 4 and the abbreviation list against their second readings; the check that every stored Skiri form uses only Skiri letters |
-| 5 | `bluebook_check.py`, `bluebook_crops.py` | Blue Book forms against the scan |
+| 5 | `bluebook_check.py`, `bluebook_crops.py` | Blue Book forms against the scan: the Blue Book-only entries and a sample of 60 |
+| 5 | `bluebook_rest.py` | The 843 Blue Book forms the audit had not reached, cut from the scan for reading (after the audit); `--grade` compares the readings with the stored forms |
 | 6 | `e2s_compare.py` | The English-to-Skiri section against its text layer; `--source db` for the database tables, `--source json` for the current JSON |
 | 7 | `build_report.py`, `apply_fixes.py` | The list of proposed fixes and the review page; the script that applies approved fixes |
 
@@ -40,7 +48,9 @@ The comparisons with the text layer take seconds and need no AI:
 ```bash
 python scripts/source_audit/decode_pages.py       # once; a minute
 python scripts/source_audit/s2e_segment.py
-python scripts/source_audit/s2e_compare.py        # the live database against the page
+python scripts/source_audit/s2e_compare.py --out reports/source_audit_2026-11/after_fixes
+                                                  # the live database against the page; without --out it
+                                                  # overwrites the audit's own record of what it found
 python scripts/source_audit/recall_test.py        # does the comparison still catch planted errors?
 python scripts/source_audit/e2s_compare.py --source json
 python scripts/source_audit/alphabet_check.py

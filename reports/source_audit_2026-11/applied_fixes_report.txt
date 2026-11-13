@@ -493,3 +493,140 @@ changes: 1   {'headwords': 1}
   combining form of takasis: 'takasistik [- + raar-]': a hyphen at a line end that could not be resolved
 
 backups: OneDrive/pari_pakuru_backups (stamp 20261113_140615)
+
+---- a later run ----
+apply_audit_fixes_2026_11 — APPLY — 2026-11-13 14:15
+changes: 2   {'learner spelling': 2}
+
+== 1. Appendix 1: stored verb forms that differ from the page (each confirmed by a third look)
+
+== 2. Appendix 2: b read for h
+
+== 3. Appendix 3: kin term forms
+
+== 4. Abbreviations
+
+== 5. Grammar chapter extraction: b read for h
+
+== 6. Sound-change rules: example forms
+
+== 7. Dictionary verb forms
+
+== 8. Stand-in characters in words cited from other languages
+  (cognate forms still holding ó or Ý before this run: 21)
+
+== 9. Combining forms: a space or a line-break hyphen inside the form
+
+== 10. Headwords
+
+== 11. The column an entry is printed in
+
+== 12. Entries
+
+== 13. Learner spelling of the headwords corrected in section 10
+  Ø (ut...) paksiriʔ: Ø (ut...) pak siri' -> Ø (ut...) paksiri'
+  tawihuhtawii: tawihuhtawî (ut...) -> tawihuhtawî
+
+== Left for a person (7)
+  Appendix 2, tir 'to be together': the singular cell is empty in print; 'tir' is stored. Left as it is: the conjugation engine reads this value
+  Grammar chapter: 51 stored words differ from the blind reading in an accent, a vowel or a glottal stop. They were matched by likeness, not by position, and need a person with the page (chapter4_differences.json)
+  verb form 2 of itkaakahaaruʔ (SK-itkaakahaaruq-p69-1225): stored 'tiitkaakahaa', printed stretch '. • tiitkaakahaa': the match is not clean
+  verb form 4 of itkaakahaaruʔ (SK-itkaakahaaruq-p69-1225): stored 'iriiraatkaakahaaru', printed stretch '. • iriiraatkaakahaaru': the match is not clean
+  verb form 5 of itkaakahaaruʔ (SK-itkaakahaaruq-p69-1225): stored 'tiitkaakahaaruksta', printed stretch 'is. • tiitkaakahaaruʔa': the match is not clean
+  example of apak: stored 'rihkuupa´kstarit', printed 'rihkuupaȞkstarit' (a printing oddity inside a Skiri word; left as stored)
+  combining form of takasis: 'takasistik [- + raar-]': a hyphen at a line end that could not be resolved
+
+backups: OneDrive/pari_pakuru_backups (stamp 20261113_141535)
+
+---- a later run ----
+apply_audit_fixes_2026_11 — APPLY — 2026-11-13 14:31
+changes: 5   {'chapter 4': 5}
+
+== 1. Appendix 1: stored verb forms that differ from the page (each confirmed by a third look)
+
+== 2. Appendix 2: b read for h
+
+== 3. Appendix 3: kin term forms
+
+== 4. Abbreviations
+
+== 5. Grammar chapter extraction: b read for h
+  -:bus -> -:hus  (in 5 strings)
+  -bus -> -hus  (in 3 strings)
+  tiburás -> tihurás  (in 1 string)
+  ratkuburasi -> ratkuhurasi  (in 1 string)
+  tuksuhuubwíitit -> tuksuhuuhwiitit  (in 1 string)
+
+== 6. Sound-change rules: example forms
+
+== 7. Dictionary verb forms
+
+== 8. Stand-in characters in words cited from other languages
+  (cognate forms still holding ó or Ý before this run: 21)
+
+== 9. Combining forms: a space or a line-break hyphen inside the form
+
+== 10. Headwords
+
+== 11. The column an entry is printed in
+
+== 12. Entries
+
+== 13. Learner spelling of the headwords corrected in section 10
+
+== Left for a person (7)
+  Appendix 2, tir 'to be together': the singular cell is empty in print; 'tir' is stored. Left as it is: the conjugation engine reads this value
+  Grammar chapter: 51 stored words differ from the blind reading in an accent, a vowel or a glottal stop. They were matched by likeness, not by position, and need a person with the page (chapter4_differences.json)
+  verb form 2 of itkaakahaaruʔ (SK-itkaakahaaruq-p69-1225): stored 'tiitkaakahaa', printed stretch '. • tiitkaakahaa': the match is not clean
+  verb form 4 of itkaakahaaruʔ (SK-itkaakahaaruq-p69-1225): stored 'iriiraatkaakahaaru', printed stretch '. • iriiraatkaakahaaru': the match is not clean
+  verb form 5 of itkaakahaaruʔ (SK-itkaakahaaruq-p69-1225): stored 'tiitkaakahaaruksta', printed stretch 'is. • tiitkaakahaaruʔa': the match is not clean
+  example of apak: stored 'rihkuupa´kstarit', printed 'rihkuupaȞkstarit' (a printing oddity inside a Skiri word; left as stored)
+  combining form of takasis: 'takasistik [- + raar-]': a hyphen at a line end that could not be resolved
+
+backups: OneDrive/pari_pakuru_backups (stamp 20261113_143158)
+
+---- a later run ----
+apply_audit_fixes_2026_11 — APPLY — 2026-11-13 14:34
+changes: 4   {'sound changes': 4}
+
+== 1. Appendix 1: stored verb forms that differ from the page (each confirmed by a third look)
+
+== 2. Appendix 2: b read for h
+
+== 3. Appendix 3: kin term forms
+
+== 4. Abbreviations
+
+== 5. Grammar chapter extraction: b read for h
+
+== 6. Sound-change rules: example forms
+  rule 22: katawiwarik k -> katawiwarik
+  rule 24: chepaat -> čəpaat
+  rule 24: eskuts -> əskuts
+  rule 24: formula and description write the variant before a vowel as [č], as printed (was [ch])
+
+== 7. Dictionary verb forms
+
+== 8. Stand-in characters in words cited from other languages
+  (cognate forms still holding ó or Ý before this run: 21)
+
+== 9. Combining forms: a space or a line-break hyphen inside the form
+
+== 10. Headwords
+
+== 11. The column an entry is printed in
+
+== 12. Entries
+
+== 13. Learner spelling of the headwords corrected in section 10
+
+== Left for a person (7)
+  Appendix 2, tir 'to be together': the singular cell is empty in print; 'tir' is stored. Left as it is: the conjugation engine reads this value
+  Grammar chapter: 51 stored words differ from the blind reading in an accent, a vowel or a glottal stop. They were matched by likeness, not by position, and need a person with the page (chapter4_differences.json)
+  verb form 2 of itkaakahaaruʔ (SK-itkaakahaaruq-p69-1225): stored 'tiitkaakahaa', printed stretch '. • tiitkaakahaa': the match is not clean
+  verb form 4 of itkaakahaaruʔ (SK-itkaakahaaruq-p69-1225): stored 'iriiraatkaakahaaru', printed stretch '. • iriiraatkaakahaaru': the match is not clean
+  verb form 5 of itkaakahaaruʔ (SK-itkaakahaaruq-p69-1225): stored 'tiitkaakahaaruksta', printed stretch 'is. • tiitkaakahaaruʔa': the match is not clean
+  example of apak: stored 'rihkuupa´kstarit', printed 'rihkuupaȞkstarit' (a printing oddity inside a Skiri word; left as stored)
+  combining form of takasis: 'takasistik [- + raar-]': a hyphen at a line end that could not be resolved
+
+backups: OneDrive/pari_pakuru_backups (stamp 20261113_143411)

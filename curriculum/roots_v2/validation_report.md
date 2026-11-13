@@ -310,13 +310,13 @@ For each of the 100 most frequent morphemes the following were tried: a homonym 
 `python scripts/morphology_v2/check_determinism.py` ran the pipeline twice: all 9 output files are byte-identical. Hashes of the second run:
 
 ```
-5273745df6aeaf6d  affixes.json
-4670ff0f7c1b3fed  construction_guide.md
-2fc5a82fb9a19b5b  coverage.json
-3308c19d6275620b  decisions.json
-53ec733e956b9bfd  evidence.jsonl
-c2690cd7e6f795a8  learning_path.md
-bd1eb02b8f4b99d3  review_queue.md
-7adb9ad1e8e728b5  roots.json
-95ca93994d9feb51  stats.json
+4bc4a7176e4169ac  affixes.json
+0e229231ba19bfe2  construction_guide.md
+c07041297af512c4  coverage.json
+3ffad0034b82dfcd  decisions.json
+ca0f7e439f9b5eee  evidence.jsonl
+25207678dc5e30dc  learning_path.md
+7eec81646abff2be  review_queue.md
+6d2cb2a18d723bc6  roots.json
+c75c86f9998ce2e3  stats.json
 ```

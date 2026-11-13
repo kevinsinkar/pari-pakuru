@@ -2,7 +2,7 @@
  "tables": {
   "lexical_entries": {
    "rows": 4337,
-   "sha256": "ddc9d80bda46308755bc91828d2cc2cd443d5d956e2ae5d2756a513e9489eb40"
+   "sha256": "8d7923639ae21a3ba57c97dfc06131f78dc2a25655f157984fe188c153526b33"
   },
   "paradigmatic_forms": {
    "rows": 9562,
@@ -46,7 +46,7 @@
   },
   "sound_change_rules": {
    "rows": 24,
-   "sha256": "48d24928f4010799ff0e78fb9f053533ad6a29b12d68d265f20b6320c27bf91b"
+   "sha256": "61b7a278462a1a64e20af63a18b8edcc9d6ca1138414cfd388402f605ab8728d"
   },
   "verb_paradigms": {
    "rows": 770,

@@ -38,18 +38,33 @@ rename it.
 | 88 dialogue sentences added to `examples` | `scripts/blue_book_verify.py` |
 | Ten sentence templates | `scripts/sentence_templates.py` |
 
-## What the 2026-11 audit found
+## What the 2026-11 audit found, and what was done
 
 - **Everything taken from this book was taken from `Blue_Book_Pari_Pakuru.txt`,
   the OCR text, and that text is a poor copy of the scan.** The book prints an
   accent on the stressed vowel of most words (*tí kaats*, *paréku'*); the OCR
   text has none. It also misreads about one form in seven, most often an
   accented vowel as other letters (*ktitasut* for *kútasut*, *pakd* for
-  *paká*). The word for "yes" is in the database as *had'*; the scan has
+  *paká*). The word for "yes" was in the database as *had'*; the scan has
   *haú'*.
-- Only the 93 Blue Book-only dictionary entries and a sample of 60 other forms
-  have been read from the scan. See
-  [../reports/source_audit_2026-11/findings.md](../reports/source_audit_2026-11/findings.md),
-  section 5, and `bluebook_graded.json` there.
+- **The stored forms were corrected from the scan on 2026-11-13.** Every
+  distinct form that has a page (949: the audit's 153 crops and 843 more) was
+  cut out of the scan and read by readers who saw only the image: 157 were
+  right, 565 had their accent restored, 45 an apostrophe, dot or space
+  corrected, 105 an OCR slip corrected. The corrections went into
+  `blue_book_attestations`, the Blue Book examples, the lesson dialogues and
+  `extracted_data/`. Record:
+  `../reports/source_audit_2026-11/bluebook_applied_report.txt`.
+- **77 forms are left for a person** (the same report, last section): the
+  reading and the stored form differ in letters (49) or capitals (12), the
+  reader was unsure (8), or the crop missed the form (8).
+- **Not corrected:** `Blue_Book_Pari_Pakuru.txt` itself, which stays as the
+  OCR produced it; the Blue Book forms in the tables `bb_gap_triage`,
+  `bb_function_words` and `function_words`; the forms written into the
+  sentence templates. These still lack the printed accents.
+- The 93 Blue Book-only dictionary entries have no phonetic form. The book
+  gives none; the ones the database held until 2026-11-13 had been made from
+  the spelling.
 - The scan's PDF has the OCR's word positions, so a form can be found on its
-  page and cut out for reading: `scripts/source_audit/bluebook_crops.py`.
+  page and cut out for reading: `scripts/source_audit/bluebook_crops.py` and
+  `bluebook_rest.py`.

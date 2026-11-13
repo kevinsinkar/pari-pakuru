@@ -21,7 +21,7 @@ Build a comprehensive Skiri Pawnee language preservation tool: a searchable, lin
 | 2026-03-08 | 2.1 | Topic tags | done |
 | 2026-03-08 | 2.2 | Blue Book cross-check | done |
 | 2026-03-08 | 2.3 | Sound-change rules (24) | done |
-| 2026-03-08 → 03-20 | 3.1 | Verb template, conjugation engine (90.3% of Appendix 1), form 2 prediction (86.7% of dictionary verbs), accent rules | paused: diminishing returns |
+| 2026-03-08 → 03-20 | 3.1 | Verb template, conjugation engine (79.4% of Appendix 1 as Parks prints it; the 90.3% reported until 2026-11-13 was measured against a misread copy), form 2 prediction (87.2% of dictionary verbs), accent rules | paused; see open items 25, 39 and 40 |
 | 2026-03-18 | 3.1.5 | Noun possession | done; repaired 2026-11-13; see open item 13 |
 | 2026-03-20 | 3.1.6 | Function words (418) | done |
 | 2026-03-10 → 03-21 | 4.1, 4.3, 4.4 | Web app, confidence scores, community feedback | done |
@@ -38,11 +38,17 @@ Build a comprehensive Skiri Pawnee language preservation tool: a searchable, lin
 | 2026-11-12 | 6.2 | Word-construction analysis, version 2: evidence tiers, gold sets, learning path | done; awaiting human review |
 | 2026-11-13 | | Repository clean-up; documentation brought up to date | done |
 | 2026-11-13 | fixes | Data fixes (accent marks the decoding had dropped, page numbers, duplicates, letter-spaced text); possession suffix *-hiriʔ*; weekly flashcards rebuilt from version 2; flashcard Week 20 held for community review | done |
-| 2026-11-13 | audit | Source-fidelity audit: every stored value compared with the printed page; character table verified against the glyphs; database written to git as text | done; 2,250 fixes proposed, **none applied yet** |
+| 2026-11-13 | audit | Source-fidelity audit: every stored value compared with the printed page; character table verified against the glyphs; database written to git as text | done; 2,250 fixes proposed; applied in the next rows |
+| 2026-11-13 | fixes | The audit's fixes reviewed and applied where the evidence is solid: 807 changes (152 forms of Appendix 1; appendices 2 and 3; chapters 3 and 4; 19 dictionary verb forms; 162 citations from other languages; 27 headwords; 393 column labels; one missing entry added, one phantom removed) | done; judgement calls left for a person (open items 41, 45) |
+| 2026-11-13 | IPA | Parks's own phonetic symbols stored for all 4,244 of his entries (ə́, ɪ́, the syllable dot, the edge dash); 75 forms corrected in content, 9 added; respelling and learner spelling made again and checked | done |
+| 2026-11-13 | Blue Book | The rest of the Blue Book forms read from the scan (843 more crops; with the audit's 153 that is 949 distinct forms, every one that has a page): 715 corrected (565 accents restored, 105 OCR slips, 45 apostrophes, dots and spaces); three entries built on misread forms corrected; made-up phonetic forms removed from the 93 Blue Book-only entries | done; 77 forms left for a person (open item 42) |
+| 2026-11-13 | rebuild | Static site, weekly flashcards, printable sheets and word-construction outputs rebuilt from the corrected data; engines measured again | done |
 
 The database on 2026-11-13, after that day's fixes: 4,337 entries (4,244 from
-Parks, 93 Blue Book only), 5,504 senses, 9,559 verb forms for 2,250 verbs,
-2,635 examples, IPA for 4,328 entries (1,800 with an accent mark). Full table list: [Quick_Reference_Guide.md](Quick_Reference_Guide.md).
+Parks, 93 Blue Book only), 5,504 senses, 9,562 verb forms for 2,240 verbs,
+2,634 examples, IPA for the 4,244 Parks entries (2,218 with an accent mark)
+and for none of the Blue Book-only ones. Compared with the printed page,
+50,597 of 50,757 dictionary fields are identical (99.68%). Full table list: [Quick_Reference_Guide.md](Quick_Reference_Guide.md).
 
 ---
 
@@ -61,8 +67,8 @@ Parks, 93 Blue Book only), 5,504 senses, 9,559 verb forms for 2,250 verbs,
 
 | File | Entries | Status |
 |------|---------|--------|
-| `Dictionary Data/skiri_to_english_respelled.json` | 4,273 | **CURRENT** — normalized, IPA synced, OCR fixed, `simplified_pronunciation` + `normalized_form` populated |
-| `Dictionary Data/english_to_skiri_linked.json` | 6,414 | **CURRENT** — normalized, `s2e_entry_id` linked to S2E entries |
+| `Dictionary Data/skiri_to_english_respelled.json` | 4,273 | **CURRENT** — normalized, OCR fixed, `simplified_pronunciation` + `normalized_form` populated. Since 2026-11-13: audit fixes applied and phonetic forms in Parks's own symbols; headword, phonetic form, respelling and learner spelling identical to the database for all 4,244 entries the two share (the other 29 are the duplicate rows the database dropped) |
+| `Dictionary Data/english_to_skiri_linked.json` | 6,414 | **CURRENT** — normalized, `s2e_entry_id` linked to S2E entries. Phonetic forms in Parks's symbols since 2026-11-13, except 295 of 5,399 subentries (197 of them linked to no entry). Its own faults are not repaired (open item 32) |
 | `skiri_pawnee.db` | 4,337 | **CURRENT, and the working master copy** — the two files above plus 93 Blue Book-only entries, less 29 duplicate rows, plus everything later phases added. Not in git |
 
 The earlier stages of the two JSON files (`*_complete`, `*_verified`,
@@ -126,14 +132,24 @@ under `archived/dictionary_intermediates/`.
 
 ### Phonetic Notation System (Parks Dictionary)
 
-The phonetic forms use IPA in square brackets with syllable dots:
-- `•` (U+2022) — syllable separator (PRESERVED, never modified)
-- `–` (U+2013) — stem boundary marker at edges
+Stored exactly as Parks prints it since 2026-11-13. Before that the database
+used a working notation: a hyphen for the syllable dot, a bullet for the edge
+dash, à for ə́ and í for ɪ́. Reports and frozen files older than that date
+still show it.
+
+- `·` (U+00B7) — syllable boundary
+- `–` (U+2013) — at the edge of a bound form: something must come before or after
 - Consonants: p, t, k, c/č, s, w, r, h, ʔ (glottal stop)
-- Vowels: a, aa (long), i, ii (long), u, uu (long)
-- IPA vowels: ɪ (near-close front), ʊ (near-close back), ə (schwa)
-- Accent: á, í, ú (acute = high pitch), à (grave)
-- Example: `[•rə-hʊh-kaa-paa-kɪs•]`
+- Long vowels: aa, ii, uu
+- Short vowels: ə, ɪ, ʊ (lax, the usual quality); a single i or u is a short vowel with tense quality
+- Accent: an acute on the accented syllable: ə́ ɪ́ ʊ́ on a short vowel, on the second half of a long one (aá, ií, uú). A grave occurs in ten entries and is not explained
+- `{k/t}` — the final consonant alternates; `(r)` — an optional sound
+- Example: `[–rə·hʊh·kaa·paa·kɪs–]`
+
+The PDF's text layer encodes these with stand-in characters that depend on
+the font. The verified table is `scripts/source_audit/chartable.py`.
+`scripts/ipa_notation.py` converts the stored notation to the old working one
+for the respelling code, and nowhere else.
 
 ### Sound Key (PDF 01 p. xvii)
 ```
@@ -574,7 +590,7 @@ Tasks completed:
 - [x] "to come" potential mode: preverb irii (1/2) / aa (3rd+1pl_incl); no POT.i; TR_MARKER boundary protection; mode shortening only before aa preverb; 1du_incl uses acir+POT.i instead
 - [x] "to come" infinitive mode: preverb ih (1/2) / a (3rd) placed BEFORE INF.B ku via INF_PREV label; 3.A stem for all sg; short stem ʔ-deletion threshold tightened
 
-**Current validation (latest pass — 2026-03-19):**
+**Validation at the time (latest pass — 2026-03-19).** These figures were measured against the stored copy of Appendix 1, which had 152 misread forms. Against the appendix as corrected from the page on 2026-11-13 the engine gets 611 of 770 exact (79.4%).
 - Appendix 1: **90.3% exact (695/770)** — accent rules integrated via `_apply_ir_accents` (inline, morpheme-level) for ir-preverb verbs + `apply_accent_rules()` (surface-form, non-ir-preverb) for potential cí pattern
 - Per verb: to go 96%, to come 94%, to drink it 92%, to do it 89%, to be sick 88%, to have it 88%, to be good 85%
 - Dictionary: **86.6% exact** (1,914/2,211 form_2 predictions via `stem_extractor.py`), 88.4% with close — up from 14.8% → 62.0% → 83.5% → 86.6%
@@ -720,7 +736,7 @@ morpheme chips, confidence badge, BB attestation). 27 exact-match validation
 tests against BB sentences.
 
 #### 🟡 Phase 3.2b — Person/Mode Derivation *(first slice DONE 2026-09-01)*
-**Script:** `scripts/person_forms.py` (validated 27/27 vs Parks Appendix 1)
+**Script:** `scripts/person_forms.py` (validated 27/27 vs the stored Appendix 1 at the time; 25/27 vs the appendix as corrected from the page on 2026-11-13, see open item 26)
 
 Key insight: the from-scratch conjugation engine (`morpheme_inventory.conjugate`)
 reproduces only 14.8% of attested dictionary forms — but the person/mode
@@ -1195,7 +1211,7 @@ everything, verified the table first, and let the page image decide.
 | 4 | Appendices 1 to 3, chapters 3 and 4 read blind from tiles; abbreviations against their text layer | Appendix 1: 152 of 770 forms differ; chapter 4: 85 of 797 words; see below |
 | 5 | Blue Book: the 93 Blue Book-only entries and a sample of 60 other forms read from the scan | of the sample, 9 match the scan, 41 lack the printed accent, 9 have a wrong letter |
 | 6 | English-to-Skiri: 6,431 printed entries against the JSON and against the database tables | JSON 95.9% identical; database tables 77.7% |
-| 7 | 2,250 proposed fixes, 827 with a value that can be applied as it stands; review page; `apply_fixes.py` | nothing applied |
+| 7 | 2,250 proposed fixes, 827 with a value that can be applied as it stands; review page; `apply_fixes.py` | nothing applied by the audit itself; see the next entry |
 
 What it found, most important first:
 
@@ -1239,6 +1255,105 @@ engines generate is right. It does not replace a speaker.
 Cost: 12 sub-agents for blind readings, 2.78 million tokens (about 230,000
 each); 156 images read in all. The comparisons with the text layer cost nothing and can
 be re-run after any change (`scripts/source_audit/README.md`).
+
+### ✅ Audit fixes applied; Parks's IPA symbols; Blue Book forms from the scan *(2026-11-13)*
+
+The decisions taken on the audit's four questions: commit; review and apply;
+keep Parks's notation, retain the IPA and make sure the simplified forms
+follow from it accurately; read the rest of the Blue Book.
+
+**1. Fixes applied.** `scripts/apply_audit_fixes_2026_11.py`; record in
+`reports/source_audit_2026-11/applied_fixes_report.txt`. 807 changes, each
+backed by the text layer or by a blind reading confirmed on a third look.
+
+| What | Changes |
+|---|---|
+| Appendix 1 (`verb_paradigms` and `extracted_data/appendix1_conjugations.json`) | 152 forms |
+| Appendix 2: *hurii-waa*, *hurii* | 2 |
+| Appendix 3: *asas*, *atipat*, *apat*, *ataat*; five rows of book p. 543 added to the JSON | 10 |
+| Abbreviation list | 3 |
+| Grammar chapter extraction: `b` read for `h` | 22 strings, 34 words; then, in a later run, the forms the first pass could not reach (*-:hus*, *-hus*, *tihurás*, *ratkuhurasi*, *tuksuhuuhwiitit*) |
+| Sound-change rules: example forms | 5; then, in a later run, the two phonetic forms printed with Rule 24, which had been stored in an ASCII stand-in (`[chepaat]` for printed [čəpaat], `[eskuts]` for [əskuts]) |
+| Dictionary verb forms | 19 |
+| Stand-in characters in words cited from other languages | 162 |
+| Combining forms: a space or a line-break hyphen inside the form | 10 |
+| Headwords: the 22 bracket notes Parks prints after a headword, and 5 other fixes | 27 |
+| `column_position` | 393 |
+| Entries: *kusisaar* added (book p. 451); `SK-aakaqa-p351-3592` removed (not a headword in the book) | 2 |
+
+The record has the first run (807 changes) and four later runs (12 more):
+one headword the first run did not reach, two learner spellings, and the two
+rows marked "later run" above, which were found when the letter check
+(`scripts/source_audit/alphabet_check.py`) was run again after the fixes.
+`scripts/sound_changes.py`, which can refill the `sound_change_rules` table,
+was corrected in the same places, so that refilling it does not bring the
+misreadings back; table and script now agree field for field.
+
+Not applied, because each needs a person with the page: open item 45.
+
+**2. Parks's IPA symbols.** `scripts/restore_parks_ipa.py`; record in
+`ipa_restored_report.txt`. Every Parks entry's phonetic form was set to the
+form printed in its own entry, decoded with the verified table: 4,147 changed
+in symbols only, 75 were corrected in content (some had been the spelling cut
+into syllables, not his IPA), 9 were added, 13 were already as printed. No
+Parks entry is without a phonetic form now. `scripts/ipa_notation.py` is the
+one place that knows the old working notation; the respelling code converts
+through it. 54 respellings changed, and three learner spellings that had been
+made from a wrong phonetic form. Both JSON dictionaries and the frozen
+flashcard file were brought in step.
+
+`scripts/check_simplified_forms.py` makes the respelling and the learner
+spelling again for every Parks entry and compares them with what is stored:
+no difference in 4,244 entries. One known coarseness, which is not a copying
+error: Parks writes a short i or u as tense [i], [u] in some places and as lax
+[ɪ], [ʊ] in others, and the respelling writes `ih` and `oo` for both. 589
+entries have such a vowel (open item 43).
+
+**3. Blue Book.** `scripts/source_audit/bluebook_rest.py` (crops and grading)
+and `scripts/apply_bluebook_scan_fixes.py`; record in
+`bluebook_applied_report.txt`. Six blind readers read the 843 crops the audit
+had not reached. With the audit's 153 crops that makes 949 distinct stored
+forms: every one that has a page.
+
+| Result | Forms |
+|---|---|
+| Same as stored | 157 |
+| Accent restored | 565 |
+| Apostrophe, dot or space corrected | 45 |
+| OCR slip corrected (ú read as *ti* or *ii*, á as *d*, í as *f*, é as *j*) | 105 |
+| Left for a person (letters differ 49, capitals 12, reader unsure 8, crop missed the form 8) | 77 |
+
+738 attestation rows, 79 Blue Book examples, 76 dialogue lines in 18 lessons
+and 960 strings in `extracted_data/` were corrected. Three entries built on
+misread forms have new headwords: *hauʔ* "yes" (was *had*), *ckuskakusuʔ*
+"chair", *tikuwutikuʔ*. The 93 Blue Book-only entries no longer have a
+phonetic form: the book prints none, and the stored ones had been made from
+the spelling.
+
+**4. Rebuilt and measured again.** Static site, weekly flashcards (cards
+changed in 16 of the 24 weeks; the Week 1 card "yes" now reads *hauʔ*),
+printable sheets, word-construction outputs (still 549 roots and 30 affixes,
+1,791 words taken apart completely).
+
+| Check | Before | After |
+|---|---|---|
+| Dictionary fields identical to print | 49,443 of 50,736 (97.45%) | 50,597 of 50,757 (99.68%) |
+| Planted-error test | 510 of 510 | 510 of 510 |
+| Conjugation engine, Appendix 1 | 695 of 770 (90.3%), against the misread copy | 611 of 770 (79.4%); 137 within two letters; 22 further off |
+| Form 2 prediction | 1,904 of 2,197 (86.7%) | 1,915 of 2,197 (87.2%) |
+| Person derivation | 27 of 27 | 25 of 27 |
+| Noun possession | 59 of 59 | 59 of 59, after three expected kin forms were corrected |
+| Sound changes, sentence templates, schema, respelling tests | pass | pass |
+
+The lower conjugation figure is the true one: the earlier figure counted
+forms that agreed with a misreading of the page.
+
+The comparison after the fixes is kept in
+`reports/source_audit_2026-11/after_fixes/`; the audit's own record of what
+it found is unchanged beside it.
+
+Cost: six more blind readers, 1.31 million tokens. The audit and its
+follow-up together: 18 sub-agents, 4.09 million tokens.
 
 ### 🔲 Ongoing — Data Quality & Maintenance
 
@@ -1298,7 +1413,7 @@ here, so that there is one list to keep current.
 
 ## Open items
 
-*As of 2026-11-13, after that day's fixes. Within each group, most important first.*
+*As of 2026-11-13, after the audit's fixes were applied. Within each group, most important first. Items that are done keep their number, so that older notes still point to the right place.*
 
 ### Needs a person, not code
 
@@ -1310,13 +1425,13 @@ here, so that there is one list to keep current.
 
 ### The IPA
 
-6. *(Answered by the 2026-11 audit; the decision is still open.)* Parks prints ə́ for the accented lax a (confirmed on 12 of 12 glyphs; 1,257 occurrences in the text layer, never after a plain a) and ɪ́ for the accented lax i (the stem has the hooked foot of the lax i; 834 occurrences, never after a plain i). The database writes à and í. With `scripts/source_audit/chartable.py` the re-decoding is mechanical. **Two accent symbols are still not Parks's.** He prints an accented short *a* as ə́ and, it appears, an accented short *i* as ɪ́ (the lax vowel with an acute). The database has `à` (545 entries) and `í` (371). The accent is there; the symbol is not his. `í` is also the correct symbol for the second half of a long *ii*, so the two uses cannot be told apart in the database without going back to the text layer. Needs a decision (store exactly what Parks prints?) and then a re-decoding that is checked against page images on a sample, not on one image per character as on 2026-11-13. One entry, *Tiihiiraraahkasa*, now holds a true grave *à*.
-7. *(Closed by the 2026-11 audit: every IPA form is now matched; 12 more dropped accents and 14 forms that are not Parks's IPA are in `proposed_fixes.jsonl`.)* **About 145 of 4,235 Parks IPA forms could not be matched to the text layer**, so they were not checked for a dropped accent (apart from `ː`, which is always wrong).
-8. *(2026-11 audit: there are sixteen, in a regular system: à ì ù on the second half of a long vowel, ə̀ ɪ̀ ʊ̀ on a short one. Five of them are stored wrongly, as á or with no accent. What the grave marks is still unexplained.)* **The grave accent** occurs in five forms (ì three times, ù, à). Parks's front matter does not say what it marks.
+6. *(Done 2026-11-13.)* **The stored IPA uses Parks's own symbols**: ə́ and ɪ́ for the accented short a and i, `·` between syllables, `–` at the edge of a bound form. Set for every entry from the text layer with the verified table (`scripts/restore_parks_ipa.py`).
+7. *(Done 2026-11-13.)* Every Parks IPA form has been matched to its printed form and set from it; 75 were corrected in content.
+8. **The grave accent.** Parks's phonetic font has a regular system: à ì ù on the second half of a long vowel, ə̀ ɪ̀ ʊ̀ on a short one. Ten entries have one, stored as printed since 2026-11-13. His front matter does not say what it marks.
 9. **"Pitch" or "stress".** The web app, the static site and the paper cards call the marks "pitch accent" and label unmarked words "pitch not marked". Parks says stress is not phonemic and that phonetic forms mark accented syllables (p. 15). The wording should be settled with someone who knows the language, then changed in one pass.
-10. *(Decoded by the 2026-11 audit: `ó` is š, `Ý` is é, `í` is ó, `Ó` is ą, `Ô` is ą́, `è` is į, `ü` is ž, `š` is a raised i; the `?` in Kiowa, Ponca and Arapaho words is printed as a question mark. 162 stored cognates and etymologies are affected; fixes proposed.)* **Other stand-in characters in citations from other languages** are still undecoded: `ó` (as in Arikara *čeerió*), `Ý`, and `?` and one `÷` in a Kiowa word. Nobody has compared the cognate citations with the page.
-11. *(2026-11 audit: the page has an IPA form for every one of them, and for three more; they are in `proposed_fixes.jsonl` as printed text the database lacks.)* **Nine entries have no IPA**: the null root Ø and eight that need a look at the page (`huuruhaahkaatiit`, `kaaks`, `kawiʔat`, `kiiskawaarasit`, `kiraar`, `pahuks`, `uhurarik`, `wakta/taa`).
-12. 32 respellings of *-ʔa* stems where Parks's IPA lacks the glottal stop (`reports/fix_pronunciations_report.txt`); bullet characters shown in IPA (audit item B2; 2,522 entries have bulleted IPA).
+10. *(Done 2026-11-13: 162 stored cognates and etymologies corrected. `ó` is š, `Ý` is é, `í` is ó, `Ó` is ą, `Ô` is ą́, `è` is į, `ü` is ž, `š` is a raised i; the `?` in Kiowa, Ponca and Arapaho words is printed as a question mark.)* About 20 cognate forms still differ from the page in a letter or a hyphen (item 41).
+11. *(Done 2026-11-13.)* Every Parks entry has its printed IPA; the nine that had none were added from the page.
+12. 32 respellings of *-ʔa* stems where Parks's IPA lacks the glottal stop (`reports/fix_pronunciations_report.txt`). *(The bullet shown in the IPA of bound forms was the working notation for Parks's dash; the dash is stored and shown since 2026-11-13.)*
 
 ### Generated forms
 
@@ -1333,28 +1448,39 @@ here, so that there is one list to keep current.
 20. From the 2026-09-01 audit: 78 example sentences with a possible line-break hyphen; rare truncated gloss qualifiers; a few verb forms where the AI reading and the PDF text layer differ.
 21. From the 2026-10-01 audit: the 93 Blue Book-only entries have no learner spelling and are not labelled as Blue Book spelling (B3); bare `Ø` headwords in search (C1); "word of the day" fixed at build time (C3); `search.js` loaded twice by `base.html` (C4); a join on bare headword in the greetings category (C5).
 22. 2,937 of 8,067 English-index rows are not linked to an entry (cross-references, phrases, parsing leftovers).
-23. *(Done by the 2026-11 audit, except the Blue Book beyond a sample. The result is the main finding: see the phase entry.)* **Nothing extracted by AI from page images has been compared with the pages in full**: Appendix 1 (770 forms, which the conjugation engine is scored against), Appendices 2 and 3, the abbreviation list, the grammar chapter (where *-biriʔ* came from), and the Blue Book vocabulary.
+23. *(Done 2026-11-13: the audit compared all of it, and the Blue Book forms were then read from the scan as well.)* Everything extracted by AI from page images has been compared with the pages: Appendix 1, Appendices 2 and 3, the abbreviation list, the grammar chapter and the Blue Book vocabulary.
 
 ### Engines and features
 
-24. Form 2 prediction: 253 of 2,197 verbs missed (`si-` and `ruuti-` prefixes, internal vowel shortening, multi-word headwords).
-25. Conjugation of Appendix 1: 13 mismatches and 62 near misses in 770 forms.
-26. Person derivation (3.2b): plural persons, negative mode, imperfective coverage, question-particle placement.
+24. Form 2 prediction: 241 of 2,197 verbs missed and 41 more off by a glottal stop (`si-` and `ruuti-` prefixes, internal vowel shortening, multi-word headwords).
+25. Conjugation of Appendix 1: 22 mismatches and 137 near misses in 770 forms, against the appendix as corrected from the page (item 39).
+26. Person derivation (3.2b): plural persons, negative mode, imperfective coverage, question-particle placement. Two of the 27 checked forms differ from Appendix 1 as corrected: *ruhii* for printed *ruuhii* ('to be good', 3rd singular absolutive) and *riihkiraawaʔ* for *rihkiraawaʔ* ('to be sick').
 27. Printable word lists and paradigm tables. (The flashcard sheets exist; these do not.)
 28. The Blue Book glossary pages (123–130) are not itemised.
 29. *(Done 2026-11-13: `DB/dump/` and `scripts/db_dump.py`.)* **The database is not under version control and cannot be rebuilt by one command.** A text dump in git, or a build script that replays every step, would make each future fix a reviewable difference.
 
 ### From the source-fidelity audit (2026-11-13)
 
-30. **Review and apply the proposed fixes.** `reports/source_audit_2026-11/proposed_fixes.jsonl` (2,250 lines); the review page with a crop beside each fix is built by `python scripts/source_audit/build_report.py --review`. Approve by id in `approved_fixes.txt`, then `apply_fixes.py`. Appendix 1 first: it is the answer key.
-31. **Re-measure the engines after the fixes.** Conjugation (90.3%), form 2 prediction (86.7%), person derivation (27 of 27) and the sound-change tests were all scored against copies that have errors.
-32. **Re-import the English index** from `english_to_skiri_linked.json`, after its own faults are repaired (about 400 placeholder values, 244 cross-reference terms with spaces, 25 missing headwords).
-33. **Decide the IPA conventions**, in one pass with item 6: ə́ and ɪ́; the syllable dot and the edge dash (stored as hyphen and bullet); whether the respelling should show the lax/tense difference in accented i.
-34. **Add what the database lacks**: the entry *kusisaar* (imperfective only), 12 IPA forms, about 15 examples, the derived stems under ten bound stems, the bracket notes on 22 headwords (`[+ raar-]`, `[+ ruu-, i-]`, `[+ neg.]`). Remove or merge `SK-aakaqa-p351-3592`.
+30. *(Done 2026-11-13 for the fixes with solid evidence: 807 applied.)* What remains of `proposed_fixes.jsonl`: the 1,090 English-index differences (item 32) and the judgement calls of items 41 and 45.
+31. *(Done 2026-11-13; table in the phase entry.)* Conjugation 79.4% (was 90.3%), form 2 prediction 87.2%, person derivation 25 of 27, sound-change tests 11 of 11.
+32. **Re-import the English index** from `english_to_skiri_linked.json`, after its own faults are repaired (about 400 placeholder values, 244 cross-reference terms with spaces, 25 missing headwords, 295 subentries still in the working IPA notation). Until then `english_index` and `cross_references` hold the uncleaned early copy.
+33. *(Decided and done 2026-11-13: Parks's notation is stored.)* What is left of this is item 43.
+34. *(Partly done 2026-11-13: kusisaar added, the missing IPA forms added, the 22 bracket notes stored with the preverb, the phantom entry removed.)* **Still lacking: 58 printed stretches**, among them about 15 examples, the derived stems under ten bound stems, and qualifiers such as "(personal name)". Listed in `after_fixes/s2e_differences.jsonl`, kind `printed-not-stored`.
 35. **Blue Book headwords.** The 93 Blue Book-only entries carry headwords respelled into Parks's letters (*paisic* for printed *paisits*); only 5 are identical to a printed form, and 45 have no printed form on record. The audit's ground rule is to quote the Blue Book as printed.
-36. **Correct the Blue Book forms from the scan.** Three entries first (`BB-had-0010`, `BB-cktiskakusu-0003`, `BB-tikuwtitiku-0083`). Then the rest: the stored forms were taken from the OCR text, which has none of the printed accents and misreads about one form in seven. About 890 forms have not been read from the scan.
+36. *(Done 2026-11-13: 715 forms corrected from the scan, the three entries first.)* 77 forms are left (item 42).
 37. **Chapters 2 and 5 of the front matter** have never been extracted or read. Nothing stored comes from them.
-38. **`column_position`** is wrong for 393 entries. Correct it from the page geometry or drop the column.
+38. *(Done 2026-11-13: corrected for the 393 entries from the page geometry.)* Nothing uses `column_position`.
+
+### After the fixes (2026-11-13)
+
+39. **The conjugation engine gets 611 of 770 forms of Appendix 1 (79.4%), not 90.3%.** Its rules were tuned against a copy with 152 misread forms. `scripts/morpheme_inventory.py --validate` lists the 159 that differ. Whether to take this work up again is a decision for the project; until someone makes it, the rule not to retry from-scratch conjugation stands.
+40. **`scripts/accent_rules.py` was worked out from the accents of the misread Appendix 1**, many of which the page does not have. Only the conjugation engine uses it. It should be checked against the corrected appendix or withdrawn.
+41. **218 differences between the dictionary entries and the page are left** (`reports/source_audit_2026-11/after_fixes/s2e_differences.jsonl`): 58 printed stretches the database lacks (item 34); 38 values that keep a line-break hyphen, 34 of them etymologies; 31 differences of spacing; 13 grammatical classes, nine of them the project's own N-KIN (item 17); the rest single letters, hyphens and glottal stops in etymologies and cognates, and a few words of English. Two are headwords (a hyphen), three are verb forms of one entry (item 45), none is a phonetic form.
+42. **77 Blue Book forms the readers could not settle** (`reports/source_audit_2026-11/bluebook_rest_graded.json` and the last section of `bluebook_applied_report.txt`): letters differ in 49, capitals in 12, the reader was unsure of 8, the crop missed 8. Blue Book forms held outside the corrected tables still lack the printed accents: `bb_gap_triage`, `bb_function_words`, `function_words`, and the forms written into the sentence templates.
+43. **Tense and lax short vowels in the respelling.** Parks writes [i], [u] in some places and [ɪ], [ʊ] in others; the respelling writes `ih` and `oo` for both (589 entries, counted by `scripts/check_simplified_forms.py`). Whether learners should see the difference is a teaching decision for someone who knows the language.
+44. **The hosted web app** (PythonAnywhere) runs the code and the database from before 2026-11-13 until they are uploaded (`DEPLOYMENT.md`).
+45. **Left by the fix script for a person with the page** (end of `applied_fixes_report.txt`): the singular cell of *tir* 'to be together' in Appendix 2, empty in print and stored as `tir`, which the conjugation engine reads; 51 words of the grammar chapter that were matched by likeness (`chapter4_differences.json`); verb forms 2, 4 and 5 of *itkaakahaaruʔ*; *rihkuupa´kstarit* in an example of *apak*, a printing oddity; the combining form `takasistik [- + raar-]`.
+46. **An older respelling function is still in the code.** `generate_simplified_pronunciation` in `scripts/respell_and_normalize.py` returns `? ?` for a phonetic form of several words. Stored respellings are made by `scripts/fix_pronunciations.py`, which handles them; the older function should be retired.
 
 ---
 

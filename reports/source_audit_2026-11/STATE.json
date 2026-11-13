@@ -2,7 +2,7 @@
  "audit": "source-fidelity audit 2026-11",
  "prompt": "prompts/source_fidelity_audit.md",
  "created": "2026-11-13 12:35",
- "updated": "2026-11-13 14:10",
+ "updated": "2026-11-13 14:34",
  "cost": {
   "images_read_by_model": 238,
   "subagents_started": 18
@@ -208,7 +208,7 @@
   },
   "8": {
    "name": "Apply the fixes that were approved",
-   "status": "running",
+   "status": "done",
    "units_total": null,
    "units_done": 0,
    "counts": {
@@ -220,12 +220,12 @@
    },
    "outputs": [],
    "started": "2026-11-13 13:53",
-   "finished": null,
-   "note": "applied by scripts/apply_audit_fixes_2026_11.py; report applied_fixes_report.txt; conjugation engine now 611 of 770 (79.4%) against the corrected Appendix 1"
+   "finished": "2026-11-13 14:34",
+   "note": "807 changes applied by scripts/apply_audit_fixes_2026_11.py, and 12 more in four later runs; record applied_fixes_report.txt; seven judgement calls left for a person; dictionary fields identical to print 50,597 of 50,757 (99.68%); no stored Skiri form has a letter Skiri lacks; conjugation engine 611 of 770 (79.4%) against the corrected Appendix 1"
   },
   "9": {
    "name": "Store Parks's own IPA symbols; regenerate and check the simplified forms",
-   "status": "running",
+   "status": "done",
    "units_total": null,
    "units_done": 0,
    "counts": {
@@ -238,8 +238,8 @@
    },
    "outputs": [],
    "started": "2026-11-13 14:06",
-   "finished": null,
-   "note": "database, both JSON files and the frozen flashcards in step; derived material (site, cards, word-construction outputs) still to rebuild"
+   "finished": "2026-11-13 14:28",
+   "note": "all 4,244 Parks entries hold the printed phonetic form in Parks's notation; Blue Book: 949 distinct forms read, 715 corrected, 77 left; check_simplified_forms.py: 0 differences; site, flashcards and word-construction outputs rebuilt; documentation updated"
   }
  }
 }
