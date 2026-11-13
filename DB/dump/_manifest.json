@@ -2,7 +2,7 @@
  "tables": {
   "lexical_entries": {
    "rows": 4337,
-   "sha256": "8e1ddf244ab09bab26d3b30c7b8162cdcdfe00f39ecb49a0d8e2b62a8040f126"
+   "sha256": "ddc9d80bda46308755bc91828d2cc2cd443d5d956e2ae5d2756a513e9489eb40"
   },
   "paradigmatic_forms": {
    "rows": 9562,
@@ -10,7 +10,7 @@
   },
   "examples": {
    "rows": 2634,
-   "sha256": "756140a622c333151cd03a0b2d0c783b783915281f9b343bd3a58488699c8c36"
+   "sha256": "7e54f0017be7715fba42aa589573c4d14c1b8f2e22ee6f7c38dee488d1258784"
   },
   "etymology": {
    "rows": 3825,
@@ -42,7 +42,7 @@
   },
   "blue_book_attestations": {
    "rows": 1026,
-   "sha256": "83acdd31e1aee000c5d2603cf5f8fd315cc9551275ded2d71a85b7a53475b996"
+   "sha256": "7dcfb0dd3e42618b358542592f80231a9718adc2919794f684f9c50f62c1652d"
   },
   "sound_change_rules": {
    "rows": 24,
@@ -98,7 +98,7 @@
   },
   "lessons": {
    "rows": 20,
-   "sha256": "427f74326448b80ef1fd7cb13192d96ac9633c63a019af94c743d7ade65d9953"
+   "sha256": "8b5eaaf9290121f9da107201a6dcf2a0363693b9f4f62c7d05e9336a08790c91"
   }
  },
  "left_out": [

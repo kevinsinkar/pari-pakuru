@@ -2,7 +2,7 @@
  "audit": "source-fidelity audit 2026-11",
  "prompt": "prompts/source_fidelity_audit.md",
  "created": "2026-11-13 12:35",
- "updated": "2026-11-13 14:07",
+ "updated": "2026-11-13 14:10",
  "cost": {
   "images_read_by_model": 238,
   "subagents_started": 18
@@ -129,9 +129,9 @@
   },
   "5": {
    "name": "Blue Book",
-   "status": "partial",
-   "units_total": 153,
-   "units_done": 153,
+   "status": "done",
+   "units_total": 996,
+   "units_done": 996,
    "counts": {
     "blue_book_only_entries_read": 93,
     "sample_of_other_forms_read": 60,
@@ -139,7 +139,13 @@
     "sample_accent_mark_missing": 41,
     "sample_letters_differ": 9,
     "entries_built_on_a_misread_form": 3,
-    "forms_not_read": 890
+    "forms_read_from_the_scan": 949,
+    "same_as_stored": 157,
+    "accent_restored": 565,
+    "ocr_slip_corrected": 105,
+    "apostrophe_dot_or_space": 45,
+    "left_for_a_person": 77,
+    "attestation_rows_corrected": 738
    },
    "outputs": [
     "bluebook_check.json",
@@ -148,7 +154,7 @@
    ],
    "started": "2026-11-13 13:20",
    "finished": "2026-11-13 13:34",
-   "note": "the stored Blue Book forms were taken from the OCR text, which has none of the printed accent marks and misreads about one form in seven; only the 93 entries and a sample of 60 were read from the scan"
+   "note": "every stored Blue Book form with a page was read from the scan (996 crops in two passes); corrections applied by scripts/apply_bluebook_scan_fixes.py; 77 forms left for a person; 42 stored rows have no page and 2 forms were not found on their page"
   },
   "6": {
    "name": "English-to-Skiri against the text layer",

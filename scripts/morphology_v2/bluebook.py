@@ -73,7 +73,9 @@ def _letters(s):
 
 def bb_norm_part(part):
     """One seam-delimited piece of a Blue Book word -> Parks-like letters."""
-    t = norm(part).lower()
+    # the Blue Book prints an accent on the stressed vowel (restored in the data on 2026-11-13);
+    # it is not a letter, and must not make the vowel under it disappear below
+    t = strip_accents(norm(part)).lower()
     t = t.replace("ts", "c")
     t = t.replace("e", "i").replace("o", "u")
     return _letters(t)

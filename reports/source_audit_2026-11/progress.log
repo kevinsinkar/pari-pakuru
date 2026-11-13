@@ -45,3 +45,4 @@
 2026-11-13 13:58  stage 8: 0 of None units; applied by scripts/apply_audit_fixes_2026_11.py; report applied_fixes_report.txt; conjugation engine now 611 of 770 (79.4%) against the corrected Appendix 1
 2026-11-13 14:06  stage 9 started: setting every Parks phonetic form to the printed form
 2026-11-13 14:07  stage 9: 0 of None units; database, both JSON files and the frozen flashcards in step; derived material (site, cards, word-construction outputs) still to rebuild
+2026-11-13 14:10  Blue Book: all six readers finished (843 crops; 1,309,340 sub-agent tokens); corrections applied: 738 attestation rows, 79 examples, 76 lesson lines, 3 entries; made-up phonetic forms removed from 93 Blue Book-only entries

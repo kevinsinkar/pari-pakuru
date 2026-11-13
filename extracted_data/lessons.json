@@ -9,11 +9,11 @@
    {
     "lines": [
      {
-      "skiri": "Kirike ru'?",
+      "skiri": "Kiriké ru'?",
       "english": "What is it?"
      },
      {
-      "skiri": "Ti hitu '.",
+      "skiri": "Tí hitu'.",
       "english": "This is a feather."
      }
     ]
@@ -21,7 +21,7 @@
    {
     "lines": [
      {
-      "skiri": "Ka rii hitu '?",
+      "skiri": "Ka rú hitu'?",
       "english": "Is this a feather?"
      },
      {
@@ -33,19 +33,19 @@
       "english": ""
      },
      {
-      "skiri": "Ka ru karitki?",
+      "skiri": "Ka rú karitki?",
       "english": "Is this a rock?"
      },
      {
-      "skiri": "Kaki, kaki karitki.",
+      "skiri": "Kakí, kakí karitki.",
       "english": "No, it is not a rock."
      },
      {
-      "skiri": "Kirike ru'?",
+      "skiri": "Kiriké ru'?",
       "english": "What is it?"
      },
      {
-      "skiri": "Ti hitu '.",
+      "skiri": "Tí hitu'.",
       "english": "This is a feather."
      }
     ]
@@ -79,7 +79,7 @@
  },
  {
   "lesson_number": 2,
-  "skiri_title": "KIRIKJ RA•TARAWIS?",
+  "skiri_title": "KIRIKÉ RA•TARAWIS?",
   "english_title": "What Color Is it?",
   "page_start": 33,
   "page_end": 39,
@@ -87,11 +87,11 @@
    {
     "lines": [
      {
-      "skiri": "Kirike ra•tarawis rakis?",
+      "skiri": "Kiriké ra•tarawis rakis?",
       "english": "What color is the stick?"
      },
      {
-      "skiri": "Rakis ti pahaat.",
+      "skiri": "Rakis tí pahaat.",
       "english": "The stick is red."
      }
     ]
@@ -99,11 +99,11 @@
    {
     "lines": [
      {
-      "skiri": "Ka ra•pahaat rakis?",
+      "skiri": "Ka rá•pahaat rakis?",
       "english": "Is the stick red?"
      },
      {
-      "skiri": "Ahu', rakis ti pahaat.",
+      "skiri": "Áhu', rakis tí pahaat.",
       "english": "Yes, the stick is red."
      }
     ]
@@ -111,11 +111,11 @@
    {
     "lines": [
      {
-      "skiri": "Ka rd .tareus rakis?",
+      "skiri": "Ka rá•tareus rakis?",
       "english": "Is the stick blue?"
      },
      {
-      "skiri": "Kaki tareus, ti pahaat.",
+      "skiri": "Kakí tareus, tí pahaat.",
       "english": "It is not blue, it is red."
      },
      {
@@ -139,7 +139,7 @@
       "english": ""
      },
      {
-      "skiri": "kiriks•pahat",
+      "skiri": "kiríks•pahat",
       "english": ""
      },
      {
@@ -147,7 +147,7 @@
       "english": ""
      },
      {
-      "skiri": "kuruks•katit",
+      "skiri": "kurúks•katit",
       "english": ""
      },
      {
@@ -163,7 +163,7 @@
       "english": ""
      },
      {
-      "skiri": "Ti kiriks•pahat.",
+      "skiri": "Ti kiríks•pahat.",
       "english": "It's a red bead."
      },
      {
@@ -171,7 +171,7 @@
       "english": ""
      },
      {
-      "skiri": "Ti kuru'ks•katit.",
+      "skiri": "Ti kurúks•katit.",
       "english": "It's a black bear."
      },
      {
@@ -187,11 +187,11 @@
       "english": ""
      },
      {
-      "skiri": "Kiriks ti pahaat.",
+      "skiri": "Kiriks tí pahaat.",
       "english": "The bead is red."
      },
      {
-      "skiri": "Kuruks ti katiit.",
+      "skiri": "Kuruks tí katiit.",
       "english": "The bear is black."
      }
     ]
@@ -233,7 +233,7 @@
  },
  {
   "lesson_number": 3,
-  "skiri_title": "KIRIKJ RUT•U'?",
+  "skiri_title": "KIRIKÉ RUT•U'?",
   "english_title": "What Does It Look Like?",
   "page_start": 39,
   "page_end": 43,
@@ -310,7 +310,7 @@
  },
  {
   "lesson_number": 4,
-  "skiri_title": "KIRIKJ RAS•TA?",
+  "skiri_title": "KIRIKÉ RAS•TA?",
   "english_title": "What Do You Have?",
   "page_start": 43,
   "page_end": 49,
@@ -376,7 +376,7 @@
  },
  {
   "lesson_number": 5,
-  "skiri_title": "TARIKTAU'",
+  "skiri_title": "TARÍKTAU'",
   "english_title": "The Body",
   "page_start": 49,
   "page_end": 55,
@@ -384,11 +384,11 @@
    {
     "lines": [
      {
-      "skiri": "Kiru rdspaks•ku?",
+      "skiri": "Kiru rás•paks•ku?",
       "english": "Where is your head (sitting)?"
      },
      {
-      "skiri": "Ti rit•paks•ku.",
+      "skiri": "Ti rit•páks•ku.",
       "english": "Here is my head. (rit + I have it)"
      }
     ]
@@ -396,11 +396,11 @@
    {
     "lines": [
      {
-      "skiri": "Kiru ras•kirik•ta?",
+      "skiri": "Kiru rás•kirik•ta?",
       "english": "Where is your eye (hanging)?"
      },
      {
-      "skiri": "Ti rit•kirik•ta.",
+      "skiri": "Ti rit•kírik•ta.",
       "english": "Here is my eye."
      }
     ]
@@ -408,7 +408,7 @@
    {
     "lines": [
      {
-      "skiri": "Ka ra•paks•taari'?",
+      "skiri": "Ka ra•paks•táari'?",
       "english": "Does your head hurt?"
      },
      {
@@ -416,7 +416,7 @@
       "english": ""
      },
      {
-      "skiri": "Tiku'ks•taari'.",
+      "skiri": "Tiku'ks•táari'.",
       "english": "My hand hurts."
      }
     ]
@@ -479,11 +479,11 @@
    {
     "lines": [
      {
-      "skiri": "Pita kirike rut•ari'?",
+      "skiri": "Pita kiriké rut•ari'?",
       "english": "What is the man doing?"
      },
      {
-      "skiri": "Pita tiwari'.",
+      "skiri": "Pita tí•wari'.",
       "english": "The man is going (walking) about."
      }
     ]
@@ -491,11 +491,11 @@
    {
     "lines": [
      {
-      "skiri": "Pita ka ra•kikat?",
+      "skiri": "Pita ká ra•kikat?",
       "english": "Is the man crying?"
      },
      {
-      "skiri": "Kaki ', pita t'ewasku'.",
+      "skiri": "Kakí', pita t'éwasku'.",
       "english": "No, the man is laughing."
      }
     ]
@@ -536,11 +536,11 @@
    {
     "lines": [
      {
-      "skiri": "Take ru '?",
+      "skiri": "Také ru'?",
       "english": "Who is that (one)?"
      },
      {
-      "skiri": "Ti atira '.",
+      "skiri": "Tí atira'.",
       "english": "She's my mother."
      }
     ]
@@ -556,7 +556,7 @@
       "english": ""
      },
      {
-      "skiri": "Kaki ', atipat we ti hura•hats.",
+      "skiri": "Kakí', atipat we tí•hura•hats.",
       "english": "No, my grandfather has"
      },
      {
@@ -598,11 +598,11 @@
    {
     "lines": [
      {
-      "skiri": "Kirike ras•taspe'?",
+      "skiri": "Kirike rás•taspe'?",
       "english": "What are you looking for?"
      },
      {
-      "skiri": "Tah•raspe ' asaki.",
+      "skiri": "Táh•raspe' asaki.",
       "english": "I'm looking for my dog."
      }
     ]
@@ -614,7 +614,7 @@
       "english": "Have you found the dog?"
      },
      {
-      "skiri": "Ahu', tat .huras asaki.",
+      "skiri": "Ahu', tat•huras asaki.",
       "english": "Yes, I found the dog."
      }
     ]
@@ -622,11 +622,11 @@
    {
     "lines": [
      {
-      "skiri": "Kiru ruks•ku'?",
+      "skiri": "Kíru ruks•ku'?",
       "english": "Where was it (sitting)?"
      },
      {
-      "skiri": "Ru tuks•kaku'.",
+      "skiri": "Rú tuks•kaku'.",
       "english": "It was in the house."
      }
     ]
@@ -675,11 +675,11 @@
    {
     "lines": [
      {
-      "skiri": "Ka ra•awari rikutski?",
+      "skiri": "Ka rá•awari rikutski?",
       "english": ""
      },
      {
-      "skiri": "Kaki', rikutski ti .'isat.",
+      "skiri": "Kakí', rikutski tí•'isat.",
       "english": ""
      }
     ]
@@ -687,11 +687,11 @@
    {
     "lines": [
      {
-      "skiri": "Kirti ra•'at rikutski?",
+      "skiri": "Kirú ra•'at rikutski?",
       "english": ""
      },
      {
-      "skiri": "Ti•kaisat.",
+      "skiri": "ti•káisat",
       "english": ""
      },
      {
@@ -751,7 +751,7 @@
    {
     "lines": [
      {
-      "skiri": "Paresu kirike rut•ari '?",
+      "skiri": "Paresu kiriké rut•ari'?",
       "english": ""
      },
      {
@@ -759,7 +759,7 @@
       "english": ""
      },
      {
-      "skiri": "Paresu ti•taka•asiku'.",
+      "skiri": "Paresu ti•taka•asíku'.",
       "english": ""
      },
      {
@@ -771,7 +771,7 @@
    {
     "lines": [
      {
-      "skiri": "Kirike ruh•ra' paresu '?",
+      "skiri": "Kiriké ruh•ra' paresu'?",
       "english": ""
      },
      {
@@ -779,7 +779,7 @@
       "english": ""
      },
      {
-      "skiri": "Paresu tuh•ra' tiraku ' .",
+      "skiri": "Paresu tuh•ra' tiraku'.",
       "english": ""
      },
      {
@@ -805,7 +805,7 @@
  },
  {
   "lesson_number": 11,
-  "skiri_title": "KA RIiH•RATSAUS?",
+  "skiri_title": "KA RÚH•RATSAUS?",
   "english_title": "Are You Hungry?",
   "page_start": 78,
   "page_end": 82,
@@ -813,7 +813,7 @@
    {
     "lines": [
      {
-      "skiri": "Ka ruh•ratsaus?",
+      "skiri": "Ka rúh•ratsaus?",
       "english": ""
      },
      {
@@ -833,11 +833,11 @@
    {
     "lines": [
      {
-      "skiri": "Kirike rasuks•a?",
+      "skiri": "Kiriké rasuks•a?",
       "english": ""
      },
      {
-      "skiri": "Tatuks•a kisatski.",
+      "skiri": "Tatuks•a kísatski.",
       "english": ""
      }
     ]
@@ -845,11 +845,11 @@
    {
     "lines": [
      {
-      "skiri": "Ka ruruks•tahare?",
+      "skiri": "Ka ruruks•táhare?",
       "english": ""
      },
      {
-      "skiri": "Kaki', kakuruks•tahare.",
+      "skiri": "Kakí', kakuruks•táhare.",
       "english": ""
      },
      {
@@ -904,11 +904,11 @@
    {
     "lines": [
      {
-      "skiri": "Suks•u rekits•tiwiru'.",
+      "skiri": "Suks•u rekits•tíwiru'.",
       "english": "Give him the candy."
      },
      {
-      "skiri": "Rekits•tiwiru' we tat•u.",
+      "skiri": "Rekits•tíwiru' we tat•u.",
       "english": "I have given him the candy."
      }
     ]
@@ -916,11 +916,11 @@
    {
     "lines": [
      {
-      "skiri": "Ka ras•tapu rekits•tiwiru'?",
+      "skiri": "Ka rás•tapu rekits•tíwiru'?",
       "english": "Did you buy candy?"
      },
      {
-      "skiri": "Kaki', tiku•rapu rekits•tiwiru'.",
+      "skiri": "Kakí', tiku•rapu rekits•tíwiru'.",
       "english": "No, I sold candy."
      }
     ]
@@ -950,7 +950,7 @@
    {
     "lines": [
      {
-      "skiri": "Kiru rasuks•at?",
+      "skiri": "Kiru rásuks•at?",
       "english": ""
      },
      {
@@ -958,7 +958,7 @@
       "english": ""
      },
      {
-      "skiri": "Tatuks•at Pari.",
+      "skiri": "Tatuks•at Pári.",
       "english": ""
      },
      {
@@ -966,7 +966,7 @@
       "english": ""
      },
      {
-      "skiri": "Tatuks•itsah•ka'isat.",
+      "skiri": "Tatuks•itsah•ká'isat.",
       "english": ""
      },
      {
@@ -978,7 +978,7 @@
    {
     "lines": [
      {
-      "skiri": "Kirike rasut•erit?",
+      "skiri": "Kiriké rasut•erit?",
       "english": ""
      },
      {
@@ -1022,7 +1022,7 @@
  },
  {
   "lesson_number": 14,
-  "skiri_title": "KA RUSUT•ERIT?",
+  "skiri_title": "KÁ RUSUT•ERIT?",
   "english_title": "Did You See That?",
   "page_start": 90,
   "page_end": 95,
@@ -1030,11 +1030,11 @@
    {
     "lines": [
      {
-      "skiri": "Pita ka rut•erit kuruks?",
+      "skiri": "Pita ká rut•erit kuruks?",
       "english": "Has the man seen the bear?"
      },
      {
-      "skiri": "Kaki', pita tur•dtku' kuruks.",
+      "skiri": "Kaki', pita tur•átku' kuruks.",
       "english": "No, the man heard the"
      },
      {
@@ -1046,7 +1046,7 @@
    {
     "lines": [
      {
-      "skiri": "Ka ruks•pakd•rihu?",
+      "skiri": "Ka ruks•paká•rihu?",
       "english": "Was it loud?"
      },
      {
@@ -1085,7 +1085,7 @@
  },
  {
   "lesson_number": 15,
-  "skiri_title": "RI•KATIHARU'",
+  "skiri_title": "RI•KÁTIHARU'",
   "english_title": "The Year",
   "page_start": 95,
   "page_end": 98,
@@ -1093,7 +1093,7 @@
    {
     "lines": [
      {
-      "skiri": "Kirike rut•kahu•raru' retskuhke?",
+      "skiri": "Kirike rut•káhu•raru' retskuhke?",
       "english": "What does it do in the"
      },
      {
@@ -1101,7 +1101,7 @@
       "english": ""
      },
      {
-      "skiri": "'T'at•tstfa•usuku retskuhke.",
+      "skiri": "T'at•tsú•a•usuku retskuhke.",
       "english": "It rains in the fall."
      }
     ]
@@ -1109,7 +1109,7 @@
    {
     "lines": [
      {
-      "skiri": "Kirike rusut-ari•tisuku retskuhke?",
+      "skiri": "Kiriké rusut•ari•úsuku retskuhke?",
       "english": "What do you do in"
      },
      {
@@ -1163,7 +1163,7 @@
    {
     "lines": [
      {
-      "skiri": "Kirti rira•awi•u tasih•ka•isa'?",
+      "skiri": "Kirú rira•awi•u tasih•ká•isa'?",
       "english": "When did you come home?"
      },
      {
@@ -1193,7 +1193,7 @@
    {
     "lines": [
      {
-      "skiri": "Kirike rasutsiksari tiruks•tsak•ariki?",
+      "skiri": "Kirike rasutsíks•ari tiruks•tsak•ariki?",
       "english": ""
      },
      {
@@ -1201,7 +1201,7 @@
       "english": ""
      },
      {
-      "skiri": "Tatutsiks•d .wahri' tiruks•tsak•ariki.",
+      "skiri": "Tatutsiks•á•wahri' tiruks•tsak•ariki.",
       "english": ""
      },
      {
@@ -1213,7 +1213,7 @@
    {
     "lines": [
      {
-      "skiri": "Kirti rira•awiu' tasutsiks•a .wahri'?",
+      "skiri": "Kirú rira•awiu' tasutsiks•á•wahri'?",
       "english": ""
      },
      {
@@ -1263,7 +1263,7 @@
       "english": "Tsikstit ka ras•pari '? Are you well?"
      },
      {
-      "skiri": "Ahu ' , tsikstit tat•pari'.",
+      "skiri": "Ahu', tsikstít tat•pari'.",
       "english": "Yes, I'm fine."
      }
     ]
@@ -1271,7 +1271,7 @@
    {
     "lines": [
      {
-      "skiri": "Kirike rasutsiks•ari?",
+      "skiri": "Kiriké rasutsíks•ari?",
       "english": "What have you been doing?"
      },
      {
@@ -1279,7 +1279,7 @@
       "english": ""
      },
      {
-      "skiri": "Rariksisu tatutsiks•a•wahri'.",
+      "skiri": "Rariksisu tatutsiks•á•wahri'.",
       "english": "I've been working hard."
      }
     ]
@@ -1299,7 +1299,7 @@
  },
  {
   "lesson_number": 19,
-  "skiri_title": "T'ARAWI•A",
+  "skiri_title": "T'ÁR•AWI•A",
   "english_title": "The Future",
   "page_start": 107,
   "page_end": 111,
@@ -1307,11 +1307,11 @@
    {
     "lines": [
      {
-      "skiri": "Kirike rasut•ari'sta rahesa '?",
+      "skiri": "Kirike rasut•ari'sta rahesa'?",
       "english": "What will you do tomorrow?"
      },
      {
-      "skiri": "Rahesa ' tatut•a•wahri•usta.",
+      "skiri": "Rahesa' tatut•á•wahri•usta.",
       "english": "Tomorrow I will work."
      }
     ]
@@ -1319,11 +1319,11 @@
    {
     "lines": [
      {
-      "skiri": "Kiru rira•awiu' ras•uh .ta?",
+      "skiri": "Kirú rira•awiu' rás•uh•ta?",
       "english": "When will you go?"
      },
      {
-      "skiri": "Tat•uh•ta tihe ra•pa•ariki'.",
+      "skiri": "Tát•uh•ta tihé ra•pa•ariki'.",
       "english": "I will go next month."
      }
     ]
@@ -1349,7 +1349,7 @@
    {
     "lines": [
      {
-      "skiri": "Kirike ras•itska raskut•ara?",
+      "skiri": "Kirike rás•itska raskut•ara?",
       "english": "What do you want to do?"
      },
      {
