@@ -162,10 +162,11 @@ was read by OCR, were restored from the scan on 2026-11-13.
 |---|---|---|
 | `lexical_entries` | 4,337 | one row per headword; 4,244 from Parks, 93 Blue Book only |
 | `glosses` | 5,504 | numbered senses |
-| `paradigmatic_forms` | 9,562 | the five forms, for 2,240 verbs |
-| `examples` | 2,634 | example sentences (2,546 Parks, 88 Blue Book) |
+| `paradigmatic_forms` | 9,559 | the five forms, for 2,239 verbs |
+| `examples` | 2,652 | example sentences (2,564 Parks, 88 Blue Book) |
 | `etymology` | 3,825 | Parks's printed etymology; `constituent_elements` is a derived parse whose per-piece glosses are unreliable |
-| `cognates` | 608 | related forms in Arikara, Kitsai, Wichita ... |
+| `cognates` | 609 | related forms in Arikara, Kitsai, Wichita ... |
+| `derived_stems` | 21 | the stems Parks lists, with their glosses, under ten bound stems such as *iri-* and *piira-* |
 | `english_index` | 8,067 | English-to-Skiri lookup rows; 5,130 linked to an entry. Loaded from an early, uncleaned file: its own copies of the Skiri forms are unreliable, so follow the link to the entry |
 | `cross_references` | 4,585 | "see also" links (same early file) |
 | `semantic_tags` | 4,499 | 19 topic tags on 3,315 entries |
@@ -187,10 +188,13 @@ Useful columns on `lexical_entries`: `blue_book_attested` (181 entries),
 `source` (`blue_book` for the 93 Blue Book-only words), `form2_confidence`,
 `bb_variant_of`, `page_number`.
 
-**`page_number` mixes two conventions.** Values up to 181 are the number of the
-split PDF file; larger values are the printed book page (book page = file
-number + 348). The `page_NNN` in an entry id is not a reliable page either:
-the 28 `kaa…` entries with `-p2-` ids are on book page 419.
+**`page_number` is the page of the printed book** (349 to 529) for every Parks
+entry since 2026-11-14 (`scripts/fix_page_citations.py`). Until then most
+values were the number of the split PDF file, which is 348 less. The `-pNNN-`
+inside an entry id still holds the old number and is not a page reference:
+ids are kept stable, and the 28 `kaa…` entries with `-p2-` ids are on book
+page 419. `english_index.page_number` belongs to the English-to-Skiri section
+and still holds file numbers (there the book page is the file number plus 60).
 
 ### Confidence on predicted verb forms
 

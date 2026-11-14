@@ -21,11 +21,11 @@ No other source is used. Where the two disagree, both readings are shown.
 
 ## What has been built
 
-| | State on 2026-11-13 |
+| | State on 2026-11-14 |
 |---|---|
-| **Dictionary database** | 4,337 entries (4,244 from Parks, 93 words found only in the Blue Book), 5,504 senses, 9,562 attested verb forms for 2,240 verbs, 2,634 example sentences. Compared with the printed pages in full on 2026-11-13 and corrected: 99.7% of the dictionary fields are now identical to print |
+| **Dictionary database** | 4,337 entries (4,244 from Parks, 93 words found only in the Blue Book), 5,504 senses, 9,559 attested verb forms for 2,239 verbs, 2,652 example sentences, 21 derived stems. Compared with the printed pages in full on 2026-11-13 and corrected, then completed from the print on 2026-11-14: 99.94% of the dictionary fields are identical to print, and every entry cites the page of the book it stands on |
 | **Pronunciation** | Parks's IPA for all 4,244 of his entries, stored in his own symbols, 2,218 of them with the accented syllable marked; a learner respelling for 4,332. IPA is never generated, only copied from Parks; the Blue Book-only words have none |
-| **Public site** | The search, flashcard, lesson and pronunciation-guide pages, built into [docs/](docs/) and served by GitHub Pages. This is the only place the project is published |
+| **Public site** | The search, flashcard, lesson and pronunciation-guide pages, built into [docs/](docs/) and served by GitHub Pages. A search result opens the whole entry (examples, verb forms, Parks's analysis, the forms he cites from related languages) and has a link for sending a correction. This is the only place the project is published |
 | **Local web app** | Flask app that runs on your own machine: full entry pages, sentence builder, spaced-repetition study, feedback queue, dashboard. Not hosted anywhere since 2026-11-13; the public site is built from its templates |
 | **Blue Book lessons** | All 20 lessons with dialogues, vocabulary and grammar notes |
 | **Flashcards** | 24 weekly sets, 387 words, frozen on 2026-10-12; 23 sets (372 words) are shown and one is held for community review; printable sheets for writing cards by hand |
@@ -119,7 +119,7 @@ needed to run the app, the site build or the analysis.
 
 ## Checks
 
-All of these were run on 2026-11-13.
+All of these were run on 2026-11-14.
 
 | Check | Command | Result |
 |---|---|---|
@@ -133,10 +133,12 @@ All of these were run on 2026-11-13.
 | Its outputs are reproducible | `scripts/morphology_v2/run.py --all`, hashes compared | byte-identical |
 | Every Pawnee form in the guide has a source | `scripts/morphology_v2/check_forms.py` | 3,809 forms, 250 IPA, 203 respellings: all resolved |
 | Noun possession and the *-hiriʔ* suffix | `scripts/possession_engine.py --test` | 59 of 59, ten of them attested dictionary words |
-| The text copy of the database restores to the same database | `scripts/db_dump.py --verify` | round trip exact: 46,784 rows in 25 tables |
-| Dictionary entries against the printed page | `scripts/source_audit/s2e_compare.py` | 50,597 of 50,757 fields identical (99.68%; it was 97.45% before the fixes); the 218 differences left are listed in `reports/source_audit_2026-11/` |
+| The text copy of the database restores to the same database | `scripts/db_dump.py --verify` | round trip exact: 46,821 rows in 25 tables |
+| Dictionary entries against the printed page | `scripts/source_audit/s2e_compare.py` | 50,807 of 50,837 fields identical (99.94%; 97.45% before the first fixes, 99.68% after them). The 37 differences left are each explained in `reports/source_audit_2026-11/print_completion_report.txt` |
+| Every entry cites the page of the book | `scripts/fix_page_citations.py --check` | 4,244 of 4,244 Parks entries; the printed page number was read from all 181 pages |
 | Learner spelling and respelling follow from Parks's forms | `scripts/check_simplified_forms.py` | no difference in 4,244 entries |
 | That comparison catches errors | `scripts/source_audit/recall_test.py` | 510 of 510 planted errors reported |
+| The published search page | `node scripts/check_static_site.js` (needs Node.js) | 13 checks pass; all 4,337 entries render, every value escaped |
 | Web app | 25 routes requested through Flask's test client; the possession API for all 1,706 nouns | all answer |
 
 Measurements, not pass or fail:
@@ -163,11 +165,13 @@ Measurements, not pass or fail:
   2026-11-13 ([reports/source_audit_2026-11/findings.md](reports/source_audit_2026-11/findings.md))
   found the dictionary entries 97.5% identical to print, field for field, and
   the tables read from page images much worse: 152 of the 770 verb forms of
-  Appendix 1 differed from the page. 807 fixes were applied the same day; the
-  dictionary entries are now 99.7% identical. What is left is for a person to
-  decide: 218 small differences in the dictionary, 77 Blue Book forms the
-  readers could not settle, and the English index, which is still loaded from
-  an early file. Use the entry a row of the English index points to, not the
+  Appendix 1 differed from the page. 807 fixes were applied the same day. On
+  2026-11-14 everything else the PDF's text layer can settle was set from it
+  (1,447 values, most of them hyphens the typesetter put at line ends and the
+  parse kept); the dictionary entries are now 99.94% identical. What is left
+  is for a person to decide: 37 small differences in the dictionary, 42 Blue
+  Book forms two readings could not settle, about 40 words of the grammar
+  chapter, and the English index, which is still loaded from an early file. Use the entry a row of the English index points to, not the
   Skiri form the row itself holds.
 - **The IPA is Parks's, in his own symbols.** The PDF encodes his symbols with
   stand-in characters; the table is verified against the printed glyphs for

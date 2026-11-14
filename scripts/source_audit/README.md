@@ -30,14 +30,16 @@ python scripts/source_audit/status.py        # how far the audit has got
 | 1 | `chartable.py` | **The verified character table**, as code. `decode()` turns text-layer text into what is printed |
 | 1 | `decode_pages.py` | The whole text layer decoded, one file per page |
 | 2 | `s2e_segment.py` | Cuts the Skiri-to-English text layer into its 4,244 entries |
-| 2 | `compare_core.py`, `s2e_compare.py` | Every stored field looked for in its printed entry, and every printed stretch looked for among the stored fields. Noise rules and conventions are named in `s2e_compare.py` |
-| 2 | `recall_test.py` | Plants 510 known errors in a copy and counts how many the comparison reports |
+| 2 | `compare_core.py`, `s2e_compare.py` | Every stored field looked for in its printed entry, and every printed stretch looked for among the stored fields. Noise rules and conventions are named in `s2e_compare.py`. Since 2026-11-14 it also looks at the qualifier stored with an example and at the derived stems, and a page number that is a file number counts as a difference |
+| 2 | `recall_test.py` | Plants 510 known errors in a copy and counts how many the comparison reports. A deleted sense is caught by the amount of printed text left unaccounted for, so that it is seen even beside a stretch that is already listed |
 | 2, 6 | `show.py` | Lists differences by field and kind |
 | 3 | `crops.py`, `grade.py` | Cuts differences out of the page onto sheets for a blind reading; grades them from the readings |
 | 4 | `appendix_tiles.py` | Tiles of the pages that have no text layer |
 | 4 | `appendix1_compare.py`, `chapters_compare.py`, `abbrev_compare.py`, `alphabet_check.py` | Appendix 1, chapters 3 and 4 and the abbreviation list against their second readings; the check that every stored Skiri form uses only Skiri letters |
 | 5 | `bluebook_check.py`, `bluebook_crops.py` | Blue Book forms against the scan: the Blue Book-only entries and a sample of 60 |
 | 5 | `bluebook_rest.py` | The 843 Blue Book forms the audit had not reached, cut from the scan for reading (after the audit); `--grade` compares the readings with the stored forms |
+| 5 | `bluebook_second_look.py` | The 77 forms the first reading left open, cut again with the whole line and its neighbours, for a second reader who sees only the images (2026-11-14); `--grade` says where the two readings agree. `scripts/apply_bluebook_scan_fixes.py` takes the agreed ones |
+| 4 | `chapter4_third_witness.py` | The grammar chapter's doubtful words weighed against the dictionary's printed forms: where the blind reader's form is a dictionary form and the stored one is printed nowhere, both witnesses agree. Corrects only the three words where they differ in letters (`--apply`); records a verdict for all of them |
 | 6 | `e2s_compare.py` | The English-to-Skiri section against its text layer; `--source db` for the database tables, `--source json` for the current JSON |
 | 7 | `build_report.py`, `apply_fixes.py` | The list of proposed fixes and the review page; the script that applies approved fixes |
 

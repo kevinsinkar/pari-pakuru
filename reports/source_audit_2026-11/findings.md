@@ -20,6 +20,18 @@ no data: the 649 input hashes taken at the start were identical at the end.*
 > Appendix 1, not 90.3%. The English index has not been repaired or
 > re-imported. What is still open is in the project log,
 > `pari_pakuru_project_scope.md`, open items 32 and 39 to 46.
+>
+> **And the day after (2026-11-14).** Every page citation was set to the page
+> of the book (`reports/page_citations_report.txt`). What the text layer could
+> still settle was set from it: 1,447 values, among them 684 hyphens the
+> typesetter put at line ends and the parse had kept, 21 derived stems and 18
+> examples that were never stored (`print_completion_report.txt`). The
+> dictionary entries are now 99.94% identical to print (50,807 of 50,837
+> fields), with 37 differences left, each explained in that report. A second
+> blind reading settled 35 of the 77 Blue Book forms; 42 are left
+> (`bluebook_second_look.json`). Three words of the grammar chapter were
+> corrected where the blind reading and the dictionary agree
+> (`chapter4_third_witness.json`).
 
 ## The short answer
 

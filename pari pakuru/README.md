@@ -55,13 +55,20 @@ rename it.
   `blue_book_attestations`, the Blue Book examples, the lesson dialogues and
   `extracted_data/`. Record:
   `../reports/source_audit_2026-11/bluebook_applied_report.txt`.
-- **77 forms are left for a person** (the same report, last section): the
-  reading and the stored form differ in letters (49) or capitals (12), the
-  reader was unsure (8), or the crop missed the form (8).
+- **42 forms are left for a person.** After the first reading 77 were open:
+  the reading and the stored form differed in letters (49) or capitals (12),
+  the reader was unsure (8), or the crop missed the form (8). On 2026-11-14 a
+  second reader, who saw only wider crops of the same places, read them
+  again. On 35 the two readers agree and what they read is the stored row's
+  own form; those were corrected. The 42 left: both readers read a longer or
+  another word at that place (the stored form may be right and printed
+  elsewhere on the page), a reader was unsure, or the text at that place is
+  English (`../reports/source_audit_2026-11/bluebook_second_look.json`).
 - **Not corrected:** `Blue_Book_Pari_Pakuru.txt` itself, which stays as the
-  OCR produced it; the Blue Book forms in the tables `bb_gap_triage`,
-  `bb_function_words` and `function_words`; the forms written into the
-  sentence templates. These still lack the printed accents.
+  OCR produced it, and the forms written into the sentence templates
+  (`scripts/sentence_templates.py`), which still lack the printed accents.
+  The copies in `bb_gap_triage`, `bb_function_words` and the attestations'
+  full sentences were corrected on 2026-11-14 (628 values).
 - The 93 Blue Book-only dictionary entries have no phonetic form. The book
   gives none; the ones the database held until 2026-11-13 had been made from
   the spelling.

@@ -137,8 +137,10 @@ Does every stored value match the printed page? The instruction is
 [../prompts/source_fidelity_audit.md](../prompts/source_fidelity_audit.md); the
 results are in [../reports/source_audit_2026-11/](../reports/source_audit_2026-11/).
 The audit itself **changed no data**; it ended in a list of proposed fixes.
-The fixes with solid evidence were then applied by the three `applied` scripts
-below, each of which wrote a record into the same reports folder.
+The fixes with solid evidence were then applied by the `applied` scripts
+below, each of which wrote a record into the same reports folder. On
+2026-11-14 two more followed: the page citations, and everything else the
+text layer could settle.
 
 | Script | Status | What it does |
 |---|---|---|
@@ -146,12 +148,16 @@ below, each of which wrote a record into the same reports folder.
 | [`source_audit/`](source_audit/) | test | The audit, stage by stage. `status.py` prints how far it has got. See its README |
 | `apply_audit_fixes_2026_11.py` | applied | The reviewed fixes: 807 changes to the database, the JSON dictionary and `extracted_data/` (Appendix 1: 152 forms; appendices 2 and 3; chapters 3 and 4; verb forms; citations; headwords; column labels; one entry added, one removed). Lists what it left for a person. Record: `applied_fixes_report.txt` |
 | `restore_parks_ipa.py` | applied | Sets every Parks entry's phonetic form to the form printed in its entry, in Parks's own symbols; makes the respelling again; brings both JSON dictionaries and the frozen flashcards in step. Record: `ipa_restored_report.txt` |
-| `apply_bluebook_scan_fixes.py` | applied | Corrects the Blue Book forms from the blind readings of the scan (accents, OCR slips) in attestations, examples, lessons and `extracted_data/`; corrects three entries built on misread forms; removes the made-up phonetic forms of the Blue Book-only entries. Record: `bluebook_applied_report.txt` |
+| `apply_bluebook_scan_fixes.py` | applied | Corrects the Blue Book forms from the blind readings of the scan (accents, OCR slips) in attestations, examples, lessons and `extracted_data/`; corrects three entries built on misread forms; removes the made-up phonetic forms of the Blue Book-only entries. Since 2026-11-14 it also takes a form on which two independent readings agree (35 of the 77 the first reading left open) and carries the corrected forms into `bb_gap_triage`, `bb_function_words` and the attestations' full sentences (628 values). 42 forms are left. Record: `bluebook_applied_report.txt` |
+| `fix_page_citations.py` | applied | Sets `page_number` to the page of the printed book for every Parks entry (3,511 held the number of a PDF file, 348 less). The page comes from the audit's pairing of each entry with its printed entry; the step from file number to book page is read off the page number printed on all 181 pages. Follows through to the JSON dictionary and the frozen flashcards; entry ids are left alone. `--check` exits 0 when every citation is a book page. Record: `reports/page_citations_report.txt` |
+| `complete_from_print.py` | applied | Adds what the dictionary prints and the database lacked, from the text layer alone: 21 derived stems, 18 examples, citations still in stand-in characters, hyphens the typesetter put at line ends (684 values), letter-spaced words, the printed wording of 31 etymology glosses, spaces before punctuation, and removes three verb forms that are not printed. Refuses any new value it cannot find in the printed entry. 1,447 values in 1,178 entries, and 441 piece lists brought in step. Record: `print_completion_report.txt`, which also lists what was left and why |
 | `ipa_notation.py` | **live** | The one place that knows both notations: Parks's (`·`, `–`, ə́, ɪ́), which is stored, and the older working one (hyphen, bullet, à, í), which the respelling code was written for. `to_working()` converts; the respelling scripts call it on the way in |
 | `check_simplified_forms.py` | test | Makes the respelling and the learner spelling again for every Parks entry and compares them with what is stored. Changes nothing. Run it after any change to phonetic forms or headwords |
+| `check_static_site.js` | test | Runs the published search page's own code (`docs/static/js/search.js`) against the published data with a stand-in for the browser: a headword and a verb form are found, citations are book pages, etymologies are escaped, held entries carry no added detail, all entries render. Needs Node.js. Run it after `build_static_site.py` |
 
-All three `applied` scripts change nothing without `--apply`, back the files
-up first, and add to their record on a later run without overwriting it.
+All the `applied` scripts change nothing without `--apply`, back the files
+up first, and add to their record on a later run without overwriting it. A
+second run of any of them finds nothing to change.
 
 The audit's two findings that matter for every other script:
 

@@ -15,6 +15,7 @@ Read these first. They say how far the data can be trusted.
 | `audit_data_construction_2026-10-01.md` | 2026-10-01 | Are the flashcards and the public site built correctly? IPA preservation, provenance, truncation, cultural review. Items A1 to A4, B1 and B4 are done; B2, B3, B5, B6 and C1 to C5 are open |
 | `fix_pronunciations_report.txt` | 2026-11-08 | The respelling repair: 1,273 entries, with the 32 left for review |
 | `fix_data_2026-11-13_report.txt` | 2026-11-13 | Every change made by `scripts/fix_data_2026_11.py`, old value and new: 269 accent marks restored, 28 page numbers, letter-spaced text, six duplicate rows, two single entries |
+| `page_citations_report.txt` | 2026-11-14 | `scripts/fix_page_citations.py`: the 3,511 entries whose page citation was the number of a PDF file, each with the old value and the page of the book |
 | `bb_vocab_linking.txt` | 2026-10-12 | Lesson vocabulary linked to dictionary entries, and the cases left for a person to decide |
 
 **The source-fidelity audit of 2026-11-13 has its own folder:
@@ -22,9 +23,10 @@ Read these first. They say how far the data can be trusted.
 compared everything with the page instead of a sample: every dictionary entry
 against the PDF's text layer, and every table that an AI model had read from
 page images against a second, blind reading. Start with its `findings.md`.
-The fixes it led to were applied the same day; the three reports of what was
+The fixes it led to were applied the same day; the reports of what was
 changed (`applied_fixes_report.txt`, `ipa_restored_report.txt`,
-`bluebook_applied_report.txt`) are in the same folder. It
+`bluebook_applied_report.txt`, and from 2026-11-14 `print_completion_report.txt`)
+are in the same folder. It
 supersedes the "verdict: sound" of the 2026-09-01 audit for the appendices,
 the grammar chapter and the English index, which that audit did not reach.
 

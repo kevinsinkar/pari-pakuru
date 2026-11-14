@@ -16,17 +16,17 @@ The database file itself, `skiri_pawnee.db`, sits in the repository root and is
 ## Where each table comes from
 
 `schema.sql` and the importer create only the core tables. The rest were added
-later by the script named. Row counts on 2026-11-13.
+later by the script named. Row counts on 2026-11-14.
 
 | Table | Rows | Created by |
 |---|---|---|
 | `lexical_entries` | 4,337 | importer (4,273), then `scripts/import_bb_items.py` (+93), `scripts/dedup_entries.py` (−23) and `scripts/fix_data_2026_11.py` (−6) |
 | `glosses` | 5,504 | importer |
-| `paradigmatic_forms` | 9,562 | importer; 19 forms corrected from the page on 2026-11-13 |
-| `examples` | 2,634 | importer; `scripts/blue_book_verify.py` added 88 Blue Book sentences |
+| `paradigmatic_forms` | 9,559 | importer; 19 forms corrected from the page on 2026-11-13; three forms stored for a noun, which the page does not print, removed on 2026-11-14 |
+| `examples` | 2,652 | importer; `scripts/blue_book_verify.py` added 88 Blue Book sentences; `scripts/complete_from_print.py` added 18 printed examples the parse had left out |
 | `etymology` | 3,825 | importer |
-| `cognates` | 608 | importer |
-| `derived_stems` | 0 | importer. **Empty**, although the JSON holds 21 derived stems in 10 entries: an open item |
+| `cognates` | 609 | importer |
+| `derived_stems` | 21 | `scripts/complete_from_print.py` (2026-11-14): the stems Parks lists under ten bound stems, each checked against the printed entry |
 | `english_index` | 8,067 | importer, **from an earlier file than the current JSON** (`import_metadata` names `english_to_skiri_verified.json`). Its Skiri terms and IPA were never cleaned: 3,986 IPA forms are not in Parks's notation and 177 still hold raw stand-in characters. The current `english_to_skiri_linked.json` is clean. Re-import from it; see the 2026-11 audit |
 | `cross_references` | 4,585 | importer |
 | `fts_glosses`, `fts_examples`, `fts_english_index` | | full-text indexes, kept current by triggers |

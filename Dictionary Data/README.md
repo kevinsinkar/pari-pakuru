@@ -21,8 +21,9 @@ rename it.
   fields. They do not contain what was added to the database later (the 93
   Blue Book-only words, tags, lessons).
 - **Page numbers.** A Skiri-to-English page file `page_NNN.pdf` is printed book
-  page NNN + 348. The `page_number` stored with an entry is sometimes the file
-  number and sometimes the book page; see the quick reference.
+  page NNN + 348. Since 2026-11-14 the `page_number` stored with a
+  Skiri-to-English entry is the book page (`scripts/fix_page_citations.py`);
+  the number inside an entry id is the old one and may be a file number.
 - **The page PDFs have a text layer.** `reports/_s2e_page_index.json` holds that
   text by page. It is the typesetter's own text, and the best check there is
   on the parse. Two cautions, both learned in the 2026-11 audit:
