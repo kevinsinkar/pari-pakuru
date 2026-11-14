@@ -67,11 +67,11 @@ def load_db(path):
     for r in conn.execute("select * from lexical_entries where coalesce(source, '') != 'blue_book'"):
         e = dict(r)
         e.pop("raw_entry_json", None)
-        e.update(glosses=[], etymology=[], forms=[], examples=[], cognates=[])
+        e.update(glosses=[], etymology=[], forms=[], examples=[], cognates=[], derived=[])
         entries[e["entry_id"]] = e
     for table, key, order in (("glosses", "glosses", "id"), ("etymology", "etymology", "id"),
                               ("paradigmatic_forms", "forms", "form_number, id"), ("examples", "examples", "id"),
-                              ("cognates", "cognates", "id")):
+                              ("cognates", "cognates", "id"), ("derived_stems", "derived", "id")):
         for r in conn.execute('select * from "%s" order by %s' % (table, order)):
             if r["entry_id"] in entries:
                 if table == "examples" and (r["source"] or "parks_dictionary") != "parks_dictionary":
@@ -169,7 +169,7 @@ def pair_entries(db, printed, blocks):
 
 def is_skiri_field(field):
     f = re.sub(r"\[.*\]", "", field)
-    return f in ("headword", "phonetic_form", "additional_form", "form", "example.skiri", "cognate.form", "etymology")
+    return f in ("headword", "phonetic_form", "additional_form", "form", "example.skiri", "cognate.form", "etymology", "derived.form")
 
 
 def classify(d):
@@ -250,7 +250,7 @@ class Finder:
                 return
             raw = b.printed(pos, pos + len(sk), value)
             rs = cc.readings(raw)
-            if cc.tidy(value) in rs:
+            if cc.tidy(value) in rs or (not phonetic and cc.nfc(value.strip()) in b.orig):
                 self.equal += 1
                 return
             extra = {}
@@ -402,14 +402,19 @@ class Finder:
         for n, x in enumerate(e["examples"], 1):
             self.look("example.skiri[%d]" % n, x["skiri_text"], prefer="S")
             self.look("example.english[%d]" % n, x["english_translation"], prefer="E")
+            self.look("example.context[%d]" % n, x["usage_context"], prefer="E")
+        for n, x in enumerate(e["derived"], 1):
+            self.look("derived.form[%d]" % n, x["stem_form"], prefer="S")
+            self.look("derived.definition[%d]" % n, x["definition"], prefer="E")
         # page and column
         self.checked += 1
-        if e["page_number"] == p["page"]:
-            self.equal += 1
-            self.page_convention = "file-number"
-        elif e["page_number"] == p["page"] + BOOK_PAGE_OFFSET:
+        if e["page_number"] == p["page"] + BOOK_PAGE_OFFSET:
             self.equal += 1
             self.page_convention = "book-page"
+        elif e["page_number"] == p["page"]:
+            # until 2026-11-14 most entries held the number of the PDF file; scripts/fix_page_citations.py set the book page
+            self.page_convention = "file-number"
+            self.add("page_number", "file-number-not-book-page", e["page_number"], "book page %d" % (p["page"] + BOOK_PAGE_OFFSET))
         else:
             self.page_convention = "wrong"
             self.add("page_number", "wrong-page", e["page_number"], "file %d = book page %d" % (p["page"], p["page"] + BOOK_PAGE_OFFSET))

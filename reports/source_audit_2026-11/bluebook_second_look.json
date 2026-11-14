@@ -1,0 +1,1706 @@
+{
+ "crops": 77,
+ "tally": {
+  "readings differ": 13,
+  "two readings agree": 55,
+  "reader unsure": 9
+ },
+ "rows": [
+  {
+   "first_crop": "B118",
+   "page": 29,
+   "box": [
+    40.3,
+    52.4,
+    81.9,
+    65.9
+   ],
+   "stored_form": "ti'",
+   "attestation_ids": [],
+   "entry_id": "BB-ti-0084",
+   "first_reading": "What Is",
+   "first_kind": "crop shows something else",
+   "crop": "S001",
+   "second_reading": "What Is It?",
+   "english_read": "",
+   "pawnee": false,
+   "note": "Underlined text is English (the italic subtitle under a lesson heading). Red line covers only 'What Is'. The Pawnee heading above it is cut off at the top of the strip; what shows reads KIRIKE RU'? (accent area not fully visible).",
+   "verdict": "readings differ"
+  },
+  {
+   "first_crop": "B126",
+   "page": 29,
+   "box": [
+    142.1,
+    523.2,
+    163.3,
+    537.8
+   ],
+   "stored_form": "had'",
+   "attestation_ids": [],
+   "entry_id": "BB-had-0010",
+   "first_reading": "haú'",
+   "first_kind": "letters differ",
+   "crop": "S002",
+   "second_reading": "haú'",
+   "english_read": "yes",
+   "pawnee": true,
+   "note": "Followed by (SK). The accent stands over the u, close to the apostrophe; it is not over the a.",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0001",
+   "page": 29,
+   "box": [
+    41.0,
+    16.9,
+    159.4,
+    46.0
+   ],
+   "stored_form": "KIRIK1 RU'?",
+   "attestation_ids": [
+    1891
+   ],
+   "first_reading": "KIRIKÉ RU'?",
+   "first_kind": "letters differ",
+   "crop": "S003",
+   "second_reading": "KIRIKÉ RU'?",
+   "english_read": "What Is It?",
+   "pawnee": true,
+   "note": "Lesson heading in capitals (LESSON 1). Accent over the final E of KIRIKÉ.",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0024",
+   "page": 31,
+   "box": [
+    307.5,
+    261.0,
+    343.7,
+    277.0
+   ],
+   "stored_form": "rakis",
+   "attestation_ids": [
+    1922
+   ],
+   "first_reading": "tirakis",
+   "first_kind": "letters differ",
+   "crop": "S004",
+   "second_reading": "tirakis",
+   "english_read": "",
+   "pawnee": true,
+   "note": "Word stands at the end of a row of dot leaders; no gloss in the strip. No accent seen.",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0033",
+   "page": 32,
+   "box": [
+    24.2,
+    178.4,
+    52.0,
+    191.7
+   ],
+   "stored_form": "Ti'.",
+   "attestation_ids": [
+    1931
+   ],
+   "first_reading": "tions,",
+   "first_kind": "crop shows something else",
+   "crop": "S005",
+   "second_reading": "tions,",
+   "english_read": "",
+   "pawnee": false,
+   "note": "Underlined text is English: the tail of a word broken across two lines (the line above is cut off at the right edge, ending 'statemen...'). The whole line reads 'tions, denials, and so on.'",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0070",
+   "page": 36,
+   "box": [
+    27.1,
+    344.5,
+    68.2,
+    360.5
+   ],
+   "stored_form": "sakurti'",
+   "attestation_ids": [
+    1974
+   ],
+   "first_reading": "sakúru[?]'",
+   "first_kind": "reader unsure",
+   "crop": "S006",
+   "second_reading": "sakúr[?]'",
+   "english_read": "sun",
+   "pawnee": true,
+   "note": "[?] = the letter u, which is clear; the doubt is whether it carries a mark. Clear accent over the first u. Above the second u there is also a small faint stroke, smaller than the first accent and leaning the other way (like a grave); it may be a speck or show-through from the back of the page. Reading without it: sakúru'.",
+   "verdict": "reader unsure"
+  },
+  {
+   "first_crop": "R0071",
+   "page": 36,
+   "box": [
+    181.4,
+    32.3,
+    222.8,
+    47.0
+   ],
+   "stored_form": "pa",
+   "attestation_ids": [
+    1975
+   ],
+   "first_reading": "Pawnee",
+   "first_kind": "crop shows something else",
+   "crop": "S007",
+   "second_reading": "Pawnee",
+   "english_read": "",
+   "pawnee": false,
+   "note": "Underlined text is English: the word Pawnee in the sentence 'As a serious student of the Pawnee language, you should lis-'.",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0085",
+   "page": 37,
+   "box": [
+    46.3,
+    501.3,
+    97.7,
+    515.9
+   ],
+   "stored_form": "ti r I ha•pi",
+   "attestation_ids": [
+    1989
+   ],
+   "first_reading": "ti rá•ha•pi",
+   "first_kind": "letters differ",
+   "crop": "S008",
+   "second_reading": "ti rá•ha•pi",
+   "english_read": "There is a tree.",
+   "pawnee": true,
+   "note": "",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0102",
+   "page": 39,
+   "box": [
+    121.2,
+    394.6,
+    161.5,
+    409.9
+   ],
+   "stored_form": "hak +",
+   "attestation_ids": [
+    2749
+   ],
+   "first_reading": "hak•tsa",
+   "first_kind": "letters differ",
+   "crop": "S009",
+   "second_reading": "tí hak•tsa",
+   "english_read": "a log, any lying wood; “it's wood lying”",
+   "pawnee": true,
+   "note": "Red line covers only the second word, hak•tsa. Accent over the i of the first word tí.",
+   "verdict": "readings differ"
+  },
+  {
+   "first_crop": "R0104",
+   "page": 39,
+   "box": [
+    122.9,
+    440.5,
+    140.5,
+    455.7
+   ],
+   "stored_form": "wa +",
+   "attestation_ids": [
+    2752
+   ],
+   "first_reading": "wá•ku",
+   "first_kind": "letters differ",
+   "crop": "S010",
+   "second_reading": "ti wá•ku",
+   "english_read": "a mountain, hill; “it's a mound sitting”",
+   "pawnee": true,
+   "note": "Red line covers only 'wá'. No accent seen on ti.",
+   "verdict": "readings differ"
+  },
+  {
+   "first_crop": "R0108",
+   "page": 43,
+   "box": [
+    111.8,
+    24.6,
+    193.8,
+    47.3
+   ],
+   "stored_form": "+ ra",
+   "attestation_ids": [
+    2757
+   ],
+   "first_reading": "RAS•TA?",
+   "first_kind": "crop shows something else",
+   "crop": "S011",
+   "second_reading": "KIRIKÉ RAS•TA?",
+   "english_read": "What Do You Have?",
+   "pawnee": true,
+   "note": "Lesson heading in capitals (LESSON 4). Red line covers only the second word, RAS•TA?",
+   "verdict": "readings differ"
+  },
+  {
+   "first_crop": "R0153",
+   "page": 54,
+   "box": [
+    29.8,
+    102.1,
+    100.5,
+    118.1
+   ],
+   "stored_form": "Sisuks .pa.",
+   "attestation_ids": [
+    2055
+   ],
+   "first_reading": "Sísuks•paku'.",
+   "first_kind": "letters differ",
+   "crop": "S012",
+   "second_reading": "Sísuks•paku'.",
+   "english_read": "You (2) say it.",
+   "pawnee": true,
+   "note": "A faint coloured streak (scan artifact) runs across the line; letters are still clear.",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0154",
+   "page": 54,
+   "box": [
+    206.9,
+    102.3,
+    269.1,
+    118.3
+   ],
+   "stored_form": "Sitat•pa.",
+   "attestation_ids": [
+    2056
+   ],
+   "first_reading": "Sítat•paku'.",
+   "first_kind": "letters differ",
+   "crop": "S013",
+   "second_reading": "Sítat•paku'.",
+   "english_read": "We (2) have said it.",
+   "pawnee": true,
+   "note": "A faint coloured streak (scan artifact) runs across the line; letters are still clear.",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "B086",
+   "page": 57,
+   "box": [
+    220.8,
+    23.5,
+    255.0,
+    38.1
+   ],
+   "stored_form": "Ti .wari'.",
+   "attestation_ids": [
+    2104
+   ],
+   "entry_id": null,
+   "first_reading": "tí•wari'",
+   "first_kind": "capitals differ",
+   "crop": "S014",
+   "second_reading": "tí•wari'",
+   "english_read": "",
+   "pawnee": true,
+   "note": "Pawnee word inside an English sentence: '...s to substitute for ti•kíkat or tí•wari' in the dialogues.' No gloss beside it.",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0187",
+   "page": 57,
+   "box": [
+    64.3,
+    212.6,
+    113.4,
+    227.2
+   ],
+   "stored_form": "TI'tskipi.",
+   "attestation_ids": [
+    2094
+   ],
+   "first_reading": "Tí'tskipi.",
+   "first_kind": "capitals differ",
+   "crop": "S015",
+   "second_reading": "Tí'tskipi.",
+   "english_read": "He's sleepy.",
+   "pawnee": true,
+   "note": "Numbered item 3.",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0209",
+   "page": 60,
+   "box": [
+    25.2,
+    37.4,
+    124.8,
+    65.5
+   ],
+   "stored_form": "TAR1 RU'?",
+   "attestation_ids": [
+    2119
+   ],
+   "first_reading": "TAKÉ RU'?",
+   "first_kind": "letters differ",
+   "crop": "S016",
+   "second_reading": "TAKÉ RU'?",
+   "english_read": "Who Is It?",
+   "pawnee": true,
+   "note": "Lesson heading in capitals (LESSON 7). Accent over the E.",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0210",
+   "page": 60,
+   "box": [
+    92.9,
+    421.2,
+    118.9,
+    435.8
+   ],
+   "stored_form": "atlas",
+   "attestation_ids": [
+    2120
+   ],
+   "first_reading": "atías",
+   "first_kind": "letters differ",
+   "crop": "S017",
+   "second_reading": "atías",
+   "english_read": "my father",
+   "pawnee": true,
+   "note": "",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0220",
+   "page": 61,
+   "box": [
+    55.2,
+    145.5,
+    79.9,
+    161.5
+   ],
+   "stored_form": "hags",
+   "attestation_ids": [
+    2132
+   ],
+   "first_reading": "haas",
+   "first_kind": "letters differ",
+   "crop": "S018",
+   "second_reading": "haas",
+   "english_read": "your father",
+   "pawnee": true,
+   "note": "No accent seen.",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0225",
+   "page": 61,
+   "box": [
+    78.5,
+    294.8,
+    182.4,
+    310.8
+   ],
+   "stored_form": "Tsiru ka rail apat?",
+   "attestation_ids": [
+    2138
+   ],
+   "first_reading": "Tsiru ka ra•á apat?",
+   "first_kind": "letters differ",
+   "crop": "S019",
+   "second_reading": "Tsiru ka ra•á apat?",
+   "english_read": "Is your grandfather still alive?",
+   "pawnee": true,
+   "note": "Next line reads (or ka rá•wari').",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0230",
+   "page": 61,
+   "box": [
+    56.4,
+    422.3,
+    104.2,
+    438.3
+   ],
+   "stored_form": "patsi",
+   "attestation_ids": [
+    2143
+   ],
+   "first_reading": "patsiriks",
+   "first_kind": "letters differ",
+   "crop": "S020",
+   "second_reading": "patsiriks",
+   "english_read": "your uncle",
+   "pawnee": true,
+   "note": "No accent seen.",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0235",
+   "page": 61,
+   "box": [
+    56.4,
+    406.9,
+    115.2,
+    422.9
+   ],
+   "stored_form": "tiwat",
+   "attestation_ids": [
+    2148
+   ],
+   "first_reading": "tiwatsiriks",
+   "first_kind": "letters differ",
+   "crop": "S021",
+   "second_reading": "tiwatsiriks",
+   "english_read": "my uncle",
+   "pawnee": true,
+   "note": "No accent seen.",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0236",
+   "page": 61,
+   "box": [
+    56.2,
+    527.4,
+    82.5,
+    543.4
+   ],
+   "stored_form": "swat",
+   "attestation_ids": [
+    2149
+   ],
+   "first_reading": "awat",
+   "first_kind": "letters differ",
+   "crop": "S022",
+   "second_reading": "awat",
+   "english_read": "your niece, nephew",
+   "pawnee": true,
+   "note": "",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0239",
+   "page": 62,
+   "box": [
+    34.5,
+    67.4,
+    114.6,
+    82.0
+   ],
+   "stored_form": "tsikstit tI wari'",
+   "attestation_ids": [
+    2153
+   ],
+   "first_reading": "tsikstit tí•wari'",
+   "first_kind": "capitals differ",
+   "crop": "S023",
+   "second_reading": "tsikstit tí•wari'",
+   "english_read": "he's doing fine",
+   "pawnee": true,
+   "note": "",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0244",
+   "page": 62,
+   "box": [
+    53.0,
+    216.4,
+    115.5,
+    231.1
+   ],
+   "stored_form": "Nawa niru!",
+   "attestation_ids": [
+    2158
+   ],
+   "first_reading": "Nawa rúru!",
+   "first_kind": "letters differ",
+   "crop": "S024",
+   "second_reading": "Nawa rúru!",
+   "english_read": "Go ahead!",
+   "pawnee": true,
+   "note": "Followed by (SB). No apostrophe seen before the exclamation mark (the SK line just above it reads Nawa híru'! with one).",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0245",
+   "page": 62,
+   "box": [
+    53.0,
+    231.2,
+    88.1,
+    246.4
+   ],
+   "stored_form": "TsIru'.",
+   "attestation_ids": [
+    2159
+   ],
+   "first_reading": "Tsíru'.",
+   "first_kind": "capitals differ",
+   "crop": "S025",
+   "second_reading": "Tsíru'.",
+   "english_read": "Wait!",
+   "pawnee": true,
+   "note": "Numbered item 5.",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0257",
+   "page": 63,
+   "box": [
+    37.2,
+    44.8,
+    103.3,
+    59.5
+   ],
+   "stored_form": "i ra•kti pita",
+   "attestation_ids": [
+    2171
+   ],
+   "first_reading": "ti ra•kú pita",
+   "first_kind": "letters differ",
+   "crop": "S026",
+   "second_reading": "ti ra•kú pita",
+   "english_read": "that sitting man",
+   "pawnee": true,
+   "note": "",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0258",
+   "page": 63,
+   "box": [
+    37.2,
+    59.7,
+    115.3,
+    74.4
+   ],
+   "stored_form": "i ra•ariki pita",
+   "attestation_ids": [
+    2172
+   ],
+   "first_reading": "ti ra•arikí pita",
+   "first_kind": "letters differ",
+   "crop": "S027",
+   "second_reading": "ti ra•arikí pita",
+   "english_read": "that standing man",
+   "pawnee": true,
+   "note": "",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0262",
+   "page": 63,
+   "box": [
+    100.3,
+    143.2,
+    159.2,
+    157.9
+   ],
+   "stored_form": "ku +",
+   "attestation_ids": [
+    2176
+   ],
+   "first_reading": "paks•kúku'",
+   "first_kind": "crop shows something else",
+   "crop": "S028",
+   "second_reading": "kú•ratir•u paks•kúku'",
+   "english_read": "my hat",
+   "pawnee": true,
+   "note": "Red line covers only the second word, paks•kúku'. The two words are set with a wide gap between them.",
+   "verdict": "readings differ"
+  },
+  {
+   "first_crop": "B123",
+   "page": 66,
+   "box": [
+    68.7,
+    218.1,
+    144.5,
+    233.0
+   ],
+   "stored_form": "ti .ukah .kaari t",
+   "attestation_ids": [
+    2196
+   ],
+   "entry_id": null,
+   "first_reading": "ti•ukah•kaari•[?]t",
+   "first_kind": "reader unsure",
+   "crop": "S029",
+   "second_reading": "ti•ukah•kaari[?]t",
+   "english_read": "he is or has been standing around outside",
+   "pawnee": true,
+   "note": "[?] = an unusually wide gap between 'kaari' and the final 't'. I see no dot in it, but cannot exclude a faint raised dot. Without it: ti•ukah•kaarit. The gloss runs over two lines.",
+   "verdict": "reader unsure"
+  },
+  {
+   "first_crop": "R0287",
+   "page": 67,
+   "box": [
+    107.1,
+    133.1,
+    182.1,
+    146.9
+   ],
+   "stored_form": "Niru ruks•ku?",
+   "attestation_ids": [
+    2205
+   ],
+   "first_reading": "Kíru ruks•ku?",
+   "first_kind": "letters differ",
+   "crop": "S030",
+   "second_reading": "Kíru ruks•ku?",
+   "english_read": "Where was it?",
+   "pawnee": true,
+   "note": "",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0288",
+   "page": 67,
+   "box": [
+    71.0,
+    220.9,
+    118.1,
+    237.4
+   ],
+   "stored_form": "tat .kiikat",
+   "attestation_ids": [
+    2206
+   ],
+   "first_reading": "tat•kíkat",
+   "first_kind": "letters differ",
+   "crop": "S031",
+   "second_reading": "tat•kíkat",
+   "english_read": "I am crying",
+   "pawnee": true,
+   "note": "",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0305",
+   "page": 68,
+   "box": [
+    16.8,
+    537.8,
+    96.7,
+    552.5
+   ],
+   "stored_form": "tawi•rIhuks•iri '",
+   "attestation_ids": [
+    2225
+   ],
+   "first_reading": "tawi•ríhuks•iri'",
+   "first_kind": "capitals differ",
+   "crop": "S032",
+   "second_reading": "tawi•ríhuks•iri'",
+   "english_read": "thirteen",
+   "pawnee": true,
+   "note": "",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0327",
+   "page": 70,
+   "box": [
+    47.8,
+    64.6,
+    68.4,
+    78.1
+   ],
+   "stored_form": "+ha +",
+   "attestation_ids": [
+    2252
+   ],
+   "first_reading": "Has",
+   "first_kind": "letters differ",
+   "crop": "S033",
+   "second_reading": "Where Has It Gone?",
+   "english_read": "",
+   "pawnee": false,
+   "note": "Underlined text is English (the italic subtitle under a lesson heading). Red line covers only 'Has'. The Pawnee heading above it is cut off at the top of the strip; what shows reads KIRU RA•'AT.",
+   "verdict": "readings differ"
+  },
+  {
+   "first_crop": "B150",
+   "page": 71,
+   "box": [
+    64.5,
+    88.1,
+    110.9,
+    103.4
+   ],
+   "stored_form": "+hu +",
+   "attestation_ids": [
+    2257
+   ],
+   "entry_id": null,
+   "first_reading": "ti•hú•isat",
+   "first_kind": "crop shows something else",
+   "crop": "S034",
+   "second_reading": "ti•hú•isat",
+   "english_read": "it has sunk (beneath)",
+   "pawnee": true,
+   "note": "The next line reads '+hu+   a surface'; 'a surface' may be the continuation of this gloss (it has sunk (beneath) a surface).",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0374",
+   "page": 75,
+   "box": [
+    71.5,
+    201.5,
+    109.7,
+    216.2
+   ],
+   "stored_form": "paresu '",
+   "attestation_ids": [
+    2310
+   ],
+   "first_reading": "Paresu",
+   "first_kind": "capitals differ",
+   "crop": "S035",
+   "second_reading": "Paresu kiriké rut•ari'?",
+   "english_read": "What is the hunter doing?",
+   "pawnee": true,
+   "note": "Red line covers only the first word, Paresu. Whole sentence given.",
+   "verdict": "readings differ"
+  },
+  {
+   "first_crop": "R0378",
+   "page": 75,
+   "box": [
+    51.6,
+    65.9,
+    89.0,
+    80.6
+   ],
+   "stored_form": "ti .ra",
+   "attestation_ids": [
+    2315
+   ],
+   "first_reading": "tiraku'",
+   "first_kind": "letters differ",
+   "crop": "S036",
+   "second_reading": "tiraku'",
+   "english_read": "gun",
+   "pawnee": true,
+   "note": "No accent seen.",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0412",
+   "page": 79,
+   "box": [
+    69.1,
+    83.5,
+    172.2,
+    98.1
+   ],
+   "stored_form": "Ilan', tiku•ratsaus.",
+   "attestation_ids": [
+    2768
+   ],
+   "first_reading": "Háu', tikú•ratsaus.",
+   "first_kind": "letters differ",
+   "crop": "S037",
+   "second_reading": "Háu', tikú•ratsaus.",
+   "english_read": "Yes, I'm hungry.",
+   "pawnee": true,
+   "note": "In Háu' the accent stands over the a (leaning toward the u), not over the u.",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0420",
+   "page": 79,
+   "box": [
+    48.0,
+    307.4,
+    136.8,
+    322.0
+   ],
+   "stored_form": "tihr'a:kawahtsu'",
+   "attestation_ids": [
+    2777
+   ],
+   "first_reading": "tihr'á•[?]kawahtsu'",
+   "first_kind": "reader unsure",
+   "crop": "S038",
+   "second_reading": "tihr'á•kawahtsu'",
+   "english_read": "they are eating",
+   "pawnee": true,
+   "note": "Apostrophe between tihr and á, raised dot after á.",
+   "verdict": "reader unsure"
+  },
+  {
+   "first_crop": "R0424",
+   "page": 79,
+   "box": [
+    47.0,
+    360.8,
+    65.2,
+    383.5
+   ],
+   "stored_form": "6u'",
+   "attestation_ids": [
+    2781
+   ],
+   "first_reading": "hu'",
+   "first_kind": "crop shows something else",
+   "crop": "S039",
+   "second_reading": "hu'",
+   "english_read": "mush",
+   "pawnee": true,
+   "note": "A thin upright stroke stands immediately left of the h, touching it. It is hairline-thin and unlike the printed letters, so it looks like a stray mark and not a letter; the word starts at the same left margin as the words above and below.",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0428",
+   "page": 79,
+   "box": [
+    48.7,
+    457.4,
+    90.2,
+    472.0
+   ],
+   "stored_form": "tI ra•hu'",
+   "attestation_ids": [
+    2787
+   ],
+   "first_reading": "tí•ra•hu'",
+   "first_kind": "capitals differ",
+   "crop": "S040",
+   "second_reading": "tí•ra•hu'",
+   "english_read": "it's spoiled",
+   "pawnee": true,
+   "note": "",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0432",
+   "page": 79,
+   "box": [
+    48.7,
+    411.3,
+    90.8,
+    426.0
+   ],
+   "stored_form": "its",
+   "attestation_ids": [
+    2791
+   ],
+   "first_reading": "rekitsu'",
+   "first_kind": "letters differ",
+   "crop": "S041",
+   "second_reading": "rekitsu'",
+   "english_read": "sugar",
+   "pawnee": true,
+   "note": "No accent seen.",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0438",
+   "page": 80,
+   "box": [
+    21.9,
+    62.6,
+    74.7,
+    77.3
+   ],
+   "stored_form": "wusu '",
+   "attestation_ids": [
+    2797
+   ],
+   "first_reading": "kíri•wusu'",
+   "first_kind": "letters differ",
+   "crop": "S042",
+   "second_reading": "kíri•wusu'",
+   "english_read": "beer",
+   "pawnee": true,
+   "note": "",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0453",
+   "page": 81,
+   "box": [
+    54.0,
+    126.2,
+    143.9,
+    162.9
+   ],
+   "stored_form": "We tatuks•at.",
+   "attestation_ids": [
+    2813
+   ],
+   "first_reading": "Tátuks•at.",
+   "first_kind": "letters differ",
+   "crop": "S043",
+   "second_reading": "Tátuks•at.",
+   "english_read": "I went",
+   "pawnee": true,
+   "note": "The red line starts well to the left of the word, under blank space. Smaller type than most strips. Accent over the first a.",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0497",
+   "page": 85,
+   "box": [
+    48.2,
+    38.2,
+    216.6,
+    60.9
+   ],
+   "stored_form": "KIRU RATSUKS•AT?",
+   "attestation_ids": [
+    2392
+   ],
+   "first_reading": "KIRU RÁSUKS•AT?",
+   "first_kind": "letters differ",
+   "crop": "S044",
+   "second_reading": "KIRU RÁSUKS•AT?",
+   "english_read": "Where Did You Go?",
+   "pawnee": true,
+   "note": "Lesson heading in capitals (LESSON 13). Accent over the A of RÁ.",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0537",
+   "page": 88,
+   "box": [
+    19.2,
+    105.3,
+    81.5,
+    120.0
+   ],
+   "stored_form": "Kitkahahki",
+   "attestation_ids": [
+    2435
+   ],
+   "first_reading": "Kítkahahki[?]",
+   "first_kind": "reader unsure",
+   "crop": "S045",
+   "second_reading": "Kítkahahki",
+   "english_read": "“Little Mud Lodge Village.”",
+   "pawnee": true,
+   "note": "A thin upright stroke rises above the final i. It is hairline-thin and vertical, unlike the short slanted printed accent on the first í, so I take it for a stray mark and not an accent; some doubt remains.",
+   "verdict": "reader unsure"
+  },
+  {
+   "first_crop": "R0542",
+   "page": 89,
+   "box": [
+    106.6,
+    76.0,
+    195.1,
+    90.9
+   ],
+   "stored_form": "ti .ra wa•raruhat",
+   "attestation_ids": [
+    2444
+   ],
+   "first_reading": "ti•rá [?]wa•rar•uhat",
+   "first_kind": "reader unsure",
+   "crop": "S046",
+   "second_reading": "ti•rá[?]wa•rar•uhat",
+   "english_read": "there are mountains",
+   "pawnee": true,
+   "note": "[?] = I cannot tell whether a small raised dot or nothing stands between rá and wa (there is a narrow gap and the accent of á leans over it). All letters are clear. The dot after ti is heavier than the other dots.",
+   "verdict": "reader unsure"
+  },
+  {
+   "first_crop": "R0543",
+   "page": 89,
+   "box": [
+    94.6,
+    91.4,
+    191.2,
+    106.3
+   ],
+   "stored_form": "hiri .ra wa .raruhat",
+   "attestation_ids": [
+    2445
+   ],
+   "first_reading": "hiri•rá•[?]wa•rar•uhat",
+   "first_kind": "reader unsure",
+   "crop": "S047",
+   "second_reading": "hiri•rá[?]wa•rar•uhat",
+   "english_read": "(to) the mountains, where the mountains are",
+   "pawnee": true,
+   "note": "[?] = I cannot tell whether a small raised dot or nothing stands between rá and wa. All letters are clear. The dot after hiri is heavier than the other dots. The gloss runs over two lines.",
+   "verdict": "reader unsure"
+  },
+  {
+   "first_crop": "R0548",
+   "page": 89,
+   "box": [
+    111.6,
+    252.3,
+    166.4,
+    267.5
+   ],
+   "stored_form": "Tuks•at.",
+   "attestation_ids": [
+    2451
+   ],
+   "first_reading": "Tatúks•at.",
+   "first_kind": "letters differ",
+   "crop": "S048",
+   "second_reading": "Tatúks•at.",
+   "english_read": "I went.",
+   "pawnee": true,
+   "note": "Accent over the u.",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0579",
+   "page": 91,
+   "box": [
+    78.5,
+    68.1,
+    101.0,
+    82.8
+   ],
+   "stored_form": "ta",
+   "attestation_ids": [
+    2487
+   ],
+   "first_reading": "Pita",
+   "first_kind": "letters differ",
+   "crop": "S049",
+   "second_reading": "Pita ká rut•erit kuruks?",
+   "english_read": "Has the man seen the bear",
+   "pawnee": true,
+   "note": "Red line covers only the first word, Pita. Whole sentence given. The English is cut off at the right edge of the strip after 'bear'.",
+   "verdict": "readings differ"
+  },
+  {
+   "first_crop": "R0588",
+   "page": 92,
+   "box": [
+    40.5,
+    294.4,
+    81.8,
+    309.3
+   ],
+   "stored_form": "kakI 'at",
+   "attestation_ids": [
+    2496
+   ],
+   "first_reading": "kakí·'at",
+   "first_kind": "capitals differ",
+   "crop": "S050",
+   "second_reading": "kakí'at",
+   "english_read": "he didn't go",
+   "pawnee": true,
+   "note": "Apostrophe between í and at; no raised dot seen there.",
+   "verdict": "readings differ"
+  },
+  {
+   "first_crop": "R0591",
+   "page": 92,
+   "box": [
+    16.5,
+    376.3,
+    68.8,
+    390.9
+   ],
+   "stored_form": "ta na ritu'",
+   "attestation_ids": [
+    2499
+   ],
+   "first_reading": "ta rá·ritu'",
+   "first_kind": "letters differ",
+   "crop": "S051",
+   "second_reading": "ta rá•ritu'",
+   "english_read": "it's hot",
+   "pawnee": true,
+   "note": "",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0592",
+   "page": 92,
+   "box": [
+    16.5,
+    390.9,
+    56.6,
+    405.5
+   ],
+   "stored_form": "to taxis",
+   "attestation_ids": [
+    2500
+   ],
+   "first_reading": "tá taris",
+   "first_kind": "crop shows something else",
+   "crop": "S052",
+   "second_reading": "tá taris",
+   "english_read": "it's heavy",
+   "pawnee": true,
+   "note": "Accent over the a of the first word.",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0608",
+   "page": 93,
+   "box": [
+    50.7,
+    506.6,
+    75.6,
+    521.2
+   ],
+   "stored_form": "kitu",
+   "attestation_ids": [
+    2517
+   ],
+   "first_reading": "Kitú",
+   "first_kind": "capitals differ",
+   "crop": "S053",
+   "second_reading": "Kitú sitatut•erit.",
+   "english_read": "We (3+) saw it.",
+   "pawnee": true,
+   "note": "Red line covers only the first word, Kitú. Whole sentence given.",
+   "verdict": "readings differ"
+  },
+  {
+   "first_crop": "R0613",
+   "page": 94,
+   "box": [
+    15.1,
+    177.3,
+    116.8,
+    191.9
+   ],
+   "stored_form": "Asaki tirah•kI wat.",
+   "attestation_ids": [
+    2522
+   ],
+   "first_reading": "Asaki tirah·kí·wat.",
+   "first_kind": "capitals differ",
+   "crop": "S054",
+   "second_reading": "Asaki tirah•kí•wat.",
+   "english_read": "The dog barked.",
+   "pawnee": true,
+   "note": "",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0622",
+   "page": 95,
+   "box": [
+    76.1,
+    492.8,
+    185.3,
+    508.0
+   ],
+   "stored_form": "tatut• i wahri•tisuku'",
+   "attestation_ids": [
+    2533
+   ],
+   "first_reading": "tatut·á·wahri·úsuku'",
+   "first_kind": "letters differ",
+   "crop": "S055",
+   "second_reading": "tatut•á•wahri•úsuku'",
+   "english_read": "I work (habitually)",
+   "pawnee": true,
+   "note": "Two accents: on á and on the first u of úsuku'.",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0628",
+   "page": 96,
+   "box": [
+    40.3,
+    141.8,
+    188.4,
+    156.4
+   ],
+   "stored_form": "We to tut•a•wahri•usuku'.",
+   "attestation_ids": [
+    2539
+   ],
+   "first_reading": "We tatut·a·wahri·usuku'.",
+   "first_kind": "letters differ",
+   "crop": "S056",
+   "second_reading": "We tatut•a•wahri•usuku'.",
+   "english_read": "I work.",
+   "pawnee": true,
+   "note": "No accent marks seen anywhere on this line. Wide space after We. There is also a slight gap between 'ta' and 'tut', narrower than a word space; I read it as one word.",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0645",
+   "page": 97,
+   "box": [
+    53.5,
+    88.0,
+    168.0,
+    102.7
+   ],
+   "stored_form": "tirarah .karuku",
+   "attestation_ids": [
+    2558
+   ],
+   "first_reading": "tiraráh·karuk·usuku'",
+   "first_kind": "letters differ",
+   "crop": "S057",
+   "second_reading": "tiraráh•karuk•usuku'",
+   "english_read": "they plant (habitual)",
+   "pawnee": true,
+   "note": "",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0649",
+   "page": 97,
+   "box": [
+    53.3,
+    155.9,
+    135.7,
+    170.6
+   ],
+   "stored_form": "tirardh•kiwi",
+   "attestation_ids": [
+    2562
+   ],
+   "first_reading": "tiraráh·kiwiku'",
+   "first_kind": "letters differ",
+   "crop": "S058",
+   "second_reading": "tiraráh•kiwiku'",
+   "english_read": "they are roasting corn",
+   "pawnee": true,
+   "note": "",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0654",
+   "page": 97,
+   "box": [
+    227.1,
+    370.8,
+    296.9,
+    385.4
+   ],
+   "stored_form": "We t'at .tszi-a.",
+   "attestation_ids": [
+    2568
+   ],
+   "first_reading": "We t'at·tsú·a.",
+   "first_kind": "letters differ",
+   "crop": "S059",
+   "second_reading": "We t'at•tsú•a.",
+   "english_read": "It's raining.",
+   "pawnee": true,
+   "note": "Printed in bold italics inside a heading line: '...RB SET (various aspects): We t'at•tsú•a. It's raining.'",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0660",
+   "page": 97,
+   "box": [
+    55.0,
+    521.9,
+    142.7,
+    536.6
+   ],
+   "stored_form": "T'at•tsu•d .ista.",
+   "attestation_ids": [
+    2574
+   ],
+   "first_reading": "Kut'at·tsu·á·ista.",
+   "first_kind": "letters differ",
+   "crop": "S060",
+   "second_reading": "Kut'at•tsu•á•ista.",
+   "english_read": "It may rain. (doubtful, future)",
+   "pawnee": true,
+   "note": "The gloss runs over two lines.",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0661",
+   "page": 98,
+   "box": [
+    19.5,
+    22.1,
+    171.0,
+    46.1
+   ],
+   "stored_form": "KITSKI WE RU'",
+   "attestation_ids": [
+    2575
+   ],
+   "first_reading": "KITSKÉ WE RU'",
+   "first_kind": "letters differ",
+   "crop": "S061",
+   "second_reading": "KITSKÉ WE RU'",
+   "english_read": "What Time Is It?",
+   "pawnee": true,
+   "note": "Lesson heading in capitals. No question mark seen after RU' (the heading ends with the apostrophe).",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0670",
+   "page": 99,
+   "box": [
+    77.1,
+    63.3,
+    156.2,
+    78.0
+   ],
+   "stored_form": "Kitske --'e ru '?",
+   "attestation_ids": [
+    2585
+   ],
+   "first_reading": "Kitské w[?]e ru'?",
+   "first_kind": "reader unsure",
+   "crop": "S062",
+   "second_reading": "Kitské [?]e ru'?",
+   "english_read": "What time is it?",
+   "pawnee": true,
+   "note": "[?] = one letter before 'e' is almost wholly missing (damaged print); only a short trace at the top of the line remains. The line below is damaged at the same place ('We ti p..ku.').",
+   "verdict": "reader unsure"
+  },
+  {
+   "first_crop": "R0675",
+   "page": 99,
+   "box": [
+    55.5,
+    238.5,
+    173.6,
+    253.2
+   ],
+   "stored_form": "we tatut•d .wahri•uls•at",
+   "attestation_ids": [
+    2591
+   ],
+   "first_reading": "we tatut·á·wahri·us·at",
+   "first_kind": "letters differ",
+   "crop": "S063",
+   "second_reading": "we tatut•á•wahri•u[?]s•at",
+   "english_read": "I went to work",
+   "pawnee": true,
+   "note": "[?] = between u and s there is a narrow upright stroke, or the s is malformed; I cannot tell whether it is an extra thin letter or a print flaw. Without it the word reads we tatut•á•wahri•us•at.",
+   "verdict": "reader unsure"
+  },
+  {
+   "first_crop": "R0676",
+   "page": 99,
+   "box": [
+    55.5,
+    253.4,
+    120.9,
+    268.0
+   ],
+   "stored_form": "we to sak•ta",
+   "attestation_ids": [
+    2592
+   ],
+   "first_reading": "we ta sák·ta",
+   "first_kind": "letters differ",
+   "crop": "S064",
+   "second_reading": "we ta sák•ta",
+   "english_read": "it's sunrise",
+   "pawnee": true,
+   "note": "",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0685",
+   "page": 100,
+   "box": [
+    9.1,
+    24.3,
+    203.6,
+    37.6
+   ],
+   "stored_form": "tiruks•tsakariki",
+   "attestation_ids": [
+    2602
+   ],
+   "first_reading": "TÍRU[?]KS·TSAK·ARIKI",
+   "first_kind": "reader unsure",
+   "crop": "S065",
+   "second_reading": "TÍRUKS•TSAK•ARIKI",
+   "english_read": "",
+   "pawnee": true,
+   "note": "Lesson heading in capitals (LESSON 17); the raised dots are set with space on both sides. Accent over the first I. A hairline slanted stroke also shows above the U, leaning the other way; it is much thinner than the printed accent and looks like a scratch or stray mark. No English subtitle in the strip.",
+   "verdict": "reader unsure"
+  },
+  {
+   "first_crop": "R0692",
+   "page": 101,
+   "box": [
+    77.1,
+    167.7,
+    271.6,
+    182.8
+   ],
+   "stored_form": "Tiruks•tsak•ariki tatutsiks . wahri'.",
+   "attestation_ids": [
+    2613
+   ],
+   "first_reading": "Tíruks·tsak·ariki tatutsiks·á·wahri'.",
+   "first_kind": "letters differ",
+   "crop": "S066",
+   "second_reading": "Tíruks•tsak•ariki tatutsiks•á•wahri'.",
+   "english_read": "I was working yesterday.",
+   "pawnee": true,
+   "note": "The English stands on the line below.",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0700",
+   "page": 101,
+   "box": [
+    56.9,
+    280.5,
+    166.7,
+    295.1
+   ],
+   "stored_form": "tiheruks.",
+   "attestation_ids": [
+    2621
+   ],
+   "first_reading": "tiheruks·ti·kátiharu'",
+   "first_kind": "letters differ",
+   "crop": "S067",
+   "second_reading": "tiheruks•ti•kátiharu'",
+   "english_read": "last year",
+   "pawnee": true,
+   "note": "",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0701",
+   "page": 101,
+   "box": [
+    185.5,
+    70.0,
+    282.5,
+    84.7
+   ],
+   "stored_form": "sak .ariki",
+   "attestation_ids": [
+    2622
+   ],
+   "first_reading": "tiruks·tsak·ariki?",
+   "first_kind": "letters differ",
+   "crop": "S068",
+   "second_reading": "Kirike rasutsíks•ari tiruks•tsak•ariki?",
+   "english_read": "What were you doing yesterday?",
+   "pawnee": true,
+   "note": "Red line covers only the last word, tiruks•tsak•ariki? Whole sentence given. No accent seen on Kirike or on tiruks. The English stands on the line below.",
+   "verdict": "readings differ"
+  },
+  {
+   "first_crop": "R0717",
+   "page": 102,
+   "box": [
+    42.5,
+    521.0,
+    131.6,
+    535.6
+   ],
+   "stored_form": "Ti 'hr i kawaats.",
+   "attestation_ids": [
+    2639
+   ],
+   "first_reading": "Ti 'hrá•kawaats.",
+   "first_kind": "letters differ",
+   "crop": "S069",
+   "second_reading": "Ti 'hrá•kawaats.",
+   "english_read": "They (3+) ate.",
+   "pawnee": true,
+   "note": "Printed as Ti, a space, then an apostrophe directly before hrá. A small dark smudge sits under 'rá' on the red line.",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0719",
+   "page": 103,
+   "box": [
+    80.7,
+    82.0,
+    189.4,
+    96.9
+   ],
+   "stored_form": "Tuks•a .kawahtsu'.",
+   "attestation_ids": [
+    2643
+   ],
+   "first_reading": "Tatuks•á•kawahtsu'.",
+   "first_kind": "letters differ",
+   "crop": "S070",
+   "second_reading": "Tatuks•á•kawahtsu'.",
+   "english_read": "I was eating.",
+   "pawnee": true,
+   "note": "",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0742",
+   "page": 105,
+   "box": [
+    55.5,
+    275.0,
+    165.3,
+    289.6
+   ],
+   "stored_form": "tsiksu tatut• I wahri'",
+   "attestation_ids": [
+    2666
+   ],
+   "first_reading": "tsiksu tatut•á•wahri'",
+   "first_kind": "letters differ",
+   "crop": "S071",
+   "second_reading": "tsiksu tatut•á•wahri'",
+   "english_read": "I'm thinking",
+   "pawnee": true,
+   "note": "",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0759",
+   "page": 107,
+   "box": [
+    74.2,
+    535.9,
+    159.4,
+    550.5
+   ],
+   "stored_form": "tat•kat I hak'sta",
+   "attestation_ids": [
+    2689
+   ],
+   "first_reading": "tat•katá•hak'sta",
+   "first_kind": "letters differ",
+   "crop": "S072",
+   "second_reading": "tat•katá•hak'sta",
+   "english_read": "I will quit",
+   "pawnee": true,
+   "note": "The mark between hak and sta looks like an apostrophe (higher and comma-shaped), not a raised dot.",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0777",
+   "page": 108,
+   "box": [
+    87.3,
+    72.6,
+    186.7,
+    87.3
+   ],
+   "stored_form": "Tatut•a•wahri•usta.",
+   "attestation_ids": [
+    2707
+   ],
+   "first_reading": "tatut•á•wahri•usta.",
+   "first_kind": "capitals differ",
+   "crop": "S073",
+   "second_reading": "Rahesa' tatut•á•wahri•usta.",
+   "english_read": "Tomorrow I will work.",
+   "pawnee": true,
+   "note": "Red line covers only the second word, tatut•á•wahri•usta. Whole sentence given.",
+   "verdict": "readings differ"
+  },
+  {
+   "first_crop": "R0795",
+   "page": 111,
+   "box": [
+    71.0,
+    525.8,
+    185.4,
+    540.4
+   ],
+   "stored_form": "ratku•w&waktit Pari",
+   "attestation_ids": [
+    2819,
+    2824
+   ],
+   "first_reading": "ratku•wá•waktit Pari",
+   "first_kind": "letters differ",
+   "crop": "S074",
+   "second_reading": "ratku•wá•waktit Pari",
+   "english_read": "for me to speak Pawnee",
+   "pawnee": true,
+   "note": "Capital P in Pari. The next line reads 'rátara•kuki   (in) our (band's, tribe's) way'.",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0805",
+   "page": 112,
+   "box": [
+    42.0,
+    244.5,
+    166.1,
+    259.4
+   ],
+   "stored_form": "Ka rasiitska ratkti .u .ta",
+   "attestation_ids": [
+    2835
+   ],
+   "first_reading": "Ka rás•itska ratkú•u•ta",
+   "first_kind": "letters differ",
+   "crop": "S075",
+   "second_reading": "Ka rás•itska ratkú•u•ta",
+   "english_read": "Do you want me to go?",
+   "pawnee": true,
+   "note": "Numbered item 2. No question mark printed after the Pawnee words.",
+   "verdict": "two readings agree"
+  },
+  {
+   "first_crop": "R0808",
+   "page": 112,
+   "box": [
+    41.5,
+    222.4,
+    91.7,
+    237.1
+   ],
+   "stored_form": "tatitska",
+   "attestation_ids": [
+    2838
+   ],
+   "first_reading": "Tát•itska",
+   "first_kind": "capitals differ",
+   "crop": "S076",
+   "second_reading": "Tát•itska ratkú•u•ta",
+   "english_read": "I want to go.",
+   "pawnee": true,
+   "note": "Red line covers only the first word, Tát•itska. Whole phrase given. No period printed after the Pawnee words.",
+   "verdict": "readings differ"
+  },
+  {
+   "first_crop": "R0827",
+   "page": 117,
+   "box": [
+    104.4,
+    108.0,
+    124.1,
+    122.6
+   ],
+   "stored_form": "wi +",
+   "attestation_ids": [
+    2857
+   ],
+   "first_reading": "will",
+   "first_kind": "letters differ",
+   "crop": "S077",
+   "second_reading": "will",
+   "english_read": "",
+   "pawnee": false,
+   "note": "Underlined text is English: the word 'will' in the line 'ducer, and will be attached there to the introducer with a link.'",
+   "verdict": "two readings agree"
+  }
+ ]
+}

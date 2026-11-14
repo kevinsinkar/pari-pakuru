@@ -103,6 +103,27 @@ def decide(stored, reading):
     return None, "letters differ"
 
 
+def same_place(stored, read):
+    """Two readers agree on what stands over the red line. Is that the stored row's own form?
+
+    The line was placed where the OCR text matched the stored form. A short stored form can match
+    inside a longer printed word ("rakis" inside "tirakis"), and then the readers read a neighbour,
+    not the row's form. So the reading is taken only when it is no longer or shorter than the stored
+    form by more than two letters, neither contains the other, and both begin and end alike (capital
+    or small letter; the same final stop). Anything else stays open.
+    """
+    a, b = ocr_fold(stored), ocr_fold(read)
+    if not a or not b or abs(len(plain(stored)) - len(plain(read))) > 2:
+        return False
+    if a != b and (a in b or b in a):
+        return False
+    first = lambda s: next((ch for ch in s if ch.isalpha()), "")
+    if first(stored).isupper() != first(read).isupper():
+        return False
+    last = lambda s: s.strip()[-1] if s.strip() and s.strip()[-1] in ".?!" else ""
+    return last(stored) == last(read)
+
+
 def replace_strings(node, mapping):
     """Replace string values that are exactly a key of mapping; returns the number replaced."""
     n = 0
@@ -122,7 +143,7 @@ def main():
     ap.add_argument("--apply", action="store_true", help="write the changes (default: dry run)")
     args = ap.parse_args()
     conn = sqlite3.connect("file:%s?mode=ro" % DB.resolve().as_posix(), uri=True)
-    log, kinds, left = [], Counter(), []
+    log, kinds, left, confirmed = [], Counter(), [], []
     updates = []                                    # (attestation id, old, new)
 
     # ---- 1. the readings ----
@@ -140,9 +161,28 @@ def main():
             ids = [x[0] for x in conn.execute("select id from blue_book_attestations where entry_id=? and bb_skiri_form=?",
                                               (r.get("entry_id"), r["stored_form"]))]
         groups.append((ids, r["stored_form"], r["read"], r["page"], r["crop"]))
+    # the second reading of the forms the first one left open (scripts/source_audit/bluebook_second_look.py --grade)
+    second = {}
+    second_file = AUDIT / "bluebook_second_look.json"
+    if second_file.exists():
+        for r in json.loads(second_file.read_text(encoding="utf-8"))["rows"]:
+            second[(r["page"], r["first_crop"])] = r
     for ids, stored, reading, page, crop in groups:
         new, kind = decide(stored, reading)
-        kinds[kind] += 1
+        if new is None and kind != "same":
+            two = second.get((page, crop))
+            if two and two["verdict"] == "two readings agree" and two.get("pawnee", True) and same_place(stored, two["second_reading"]):
+                new, kind = clean(two["second_reading"]), "two readings agree"
+            elif two and two["verdict"] == "two readings agree":
+                kind += "; both readers read %s, which is %s" % (
+                    clean(two["second_reading"]), "English" if not two.get("pawnee", True) else "a longer or another word at that place")
+            elif two and two["verdict"] == "second reading agrees with the stored form":
+                kind = "same"                         # the first reader slipped; the stored form stands
+                confirmed.append("p. %-4s %-5s stored %r; the first reader saw %r, the second read the stored form" % (
+                    page, crop, stored, clean(reading)))
+            elif two:
+                kind += "; second reading: %s" % clean(two["second_reading"])
+        kinds[kind.split(";")[0]] += 1
         if new is None:
             if kind not in ("same",):
                 left.append("p. %-4s %-5s %-26s stored %r; the reader saw %r" % (page, crop, kind, stored, clean(reading)))
@@ -152,12 +192,58 @@ def main():
             # every row of the group holds the same letters; rows may differ from one another in spacing
             if row and plain(row[0]) == plain(stored) and row[0] != new:
                 updates.append((rid, row[0], new))
+        if not ids and kind == "two readings agree":
+            for rid, form in conn.execute("select id, bb_skiri_form from blue_book_attestations where page_number=? and bb_skiri_form=?", (page, stored)):
+                updates.append((rid, form, new))
         log.append("  p. %-4s %-22s %s -> %s" % (page, kind, stored, new))
     mapping = {}
     for rid, old, new in updates:
         mapping.setdefault(old, new)
 
-    # ---- 2. copies ----
+    # Every stored form with its corrected reading, including those corrected by an earlier run: the
+    # attestation rows no longer hold the old form, but copies of it elsewhere may.
+    for ids, stored, reading, page, crop in groups:
+        new, kind = decide(stored, reading)
+        if new is None:
+            two = second.get((page, crop))
+            if two and two["verdict"] == "two readings agree" and two.get("pawnee", True) and same_place(stored, two["second_reading"]):
+                new = clean(two["second_reading"])
+        if new and new != stored:
+            mapping.setdefault(stored, new)
+    for r in rest:
+        new = mapping.get(r["stored_form"])
+        for alt in r.get("stored_forms_all", []):
+            if new and alt != new:
+                mapping.setdefault(alt, new)
+
+    # ---- 5. the same forms held in other tables (they were filled from the same OCR text) ----
+    other = []                                      # (table, column, key column, key, old, new)
+    for table, column, key, where in (("bb_gap_triage", "bb_skiri_form", "id", ""),
+                                      ("blue_book_attestations", "bb_skiri_form", "id", ""),
+                                      ("blue_book_attestations", "full_sentence_pawnee", "id", ""),
+                                      ("bb_function_words", "source_phrase", "id", ""),
+                                      ("function_words", "headword", "id", " where source in ('blue_book', 'blue_book_phrase')")):
+        for k, v in conn.execute("select %s, %s from %s%s" % (key, column, table, where)).fetchall():
+            if v in mapping and mapping[v] != v:
+                other.append((table, column, key, k, v, mapping[v]))
+    done = {u[0] for u in updates}
+    other = [o for o in other if not (o[0] == "blue_book_attestations" and o[1] == "bb_skiri_form" and o[3] in done)]
+    # one word taken out of a phrase: it follows the word at the same place in the corrected phrase
+    phrase_now = {k: new for table, column, key, k, old, new in other if table == "bb_function_words"}
+    for k, word, phrase in conn.execute("select id, word, source_phrase from bb_function_words").fetchall():
+        old_phrase = phrase
+        new_phrase = phrase_now.get(k) or mapping.get(phrase)
+        if not new_phrase or not word:
+            continue
+        a, b = old_phrase.split(), new_phrase.split()
+        if len(a) != len(b):
+            continue
+        strip = lambda t: t.strip(".,?!")
+        for x, y in zip(a, b):
+            if strip(x) == word and strip(y) != word and plain(strip(y)) == plain(word):
+                other.append(("bb_function_words", "word", "id", k, word, strip(y)))
+                break
+
     ex_rows = [(i, t) for i, t in conn.execute("select id, skiri_text from examples where source='blue_book'") if t in mapping]
     lessons = []
     for num, dialogues, notes in conn.execute("select lesson_number, dialogues, grammar_notes from lessons"):
@@ -181,13 +267,22 @@ def main():
               "attestation rows to correct: %d; Blue Book example rows: %d; lessons with corrected dialogue lines: %d (%d lines)" % (
                   len(updates), len(ex_rows), len(lessons), sum(l[2] for l in lessons)),
               "entries whose headword was made from a misread form: %d; made-up phonetic forms to remove from Blue Book-only entries: %d" % (
-                  len(entry_changes), synthetic)]
+                  len(entry_changes), synthetic),
+              "the same forms in other tables: %d values; stored forms confirmed by the second reading: %d; left for a person: %d" % (
+                  len(other), len(confirmed), len(left))]
     body = ["", "== 1. Forms corrected (%d distinct)" % len(log)] + sorted(log)
     body += ["", "== 3. Entries"] + ["  %s: headword %s -> %s; pronunciation from the spelling %s; printed form %s -> %s" % c for c in entry_changes]
+    body += ["", "== 5. The same forms in other tables (%d values)" % len(other)]
+    body += ["  %-34s %d" % ("%s.%s" % k, n) for k, n in sorted(Counter((o[0], o[1]) for o in other).items())]
+    body += ["  %s.%s  %s -> %s" % (o[0], o[1], o[4], o[5]) for o in other]
+    body += ["", "== Stored form confirmed by the second reading (%d)" % len(confirmed)] + ["  " + x for x in sorted(confirmed)]
     body += ["", "== Left for a person (%d)" % len(left)] + ["  " + x for x in sorted(left)]
     if not args.apply:
         out("\n".join(header))
-        out("\n".join(body[:44]))
+        out("\n".join(body[:24]))
+        out("  ...")
+        at = next(i for i, line in enumerate(body) if line.startswith("== 5."))
+        out("\n".join(body[at:at + 22]))
         out("  ...")
         out("\n".join(body[-34:]))
         out("")
@@ -201,6 +296,8 @@ def main():
     conn = sqlite3.connect(str(DB))
     conn.executemany("update blue_book_attestations set bb_skiri_form=? where id=?", [(new, rid) for rid, old, new in updates])
     conn.executemany("update examples set skiri_text=? where id=?", [(mapping[t], i) for i, t in ex_rows])
+    for table, column, key, k, old, new in other:
+        conn.execute("update %s set %s=? where %s=? and %s=?" % (table, column, key, column), (new, k, old))
     conn.executemany("update lessons set dialogues=? where lesson_number=?", [(d, num) for num, d, n in lessons])
     for entry_id, old_head, new_head, resp, old_form, new_form in entry_changes:
         conn.execute("update lexical_entries set headword=?, simplified_pronunciation=? where entry_id=?", (new_head, resp, entry_id))

@@ -9,26 +9,25 @@
  },
  "stored_entry_not_printed": 0,
  "printed_entry_not_stored": 0,
- "fields_checked": 50757,
- "fields_equal": 50597,
+ "fields_checked": 50837,
+ "fields_equal": 50807,
  "page_number_convention": {
-  "book-page": 733,
-  "file-number": 3511
+  "book-page": 4244
  },
  "by_class": {
-  "noise": 9682,
-  "difference": 218
+  "noise": 9734,
+  "difference": 37
  },
  "differences_by_severity": {
-  "1": 136,
-  "4": 21,
-  "2": 44,
-  "3": 17
+  "1": 12,
+  "3": 13,
+  "2": 9,
+  "4": 3
  },
  "noise_rules": {
   "structural-marks": {
    "rule": "printed marks that separate the parts of an entry and are not stored as such: the bullets before examples, < > round an etymology, { } round extra forms, sense numbers, commas between fields, and the labels that introduce a cognate (i.q. SB, cf. Ar.)",
-   "count": 9682
+   "count": 9734
   },
   "phonetic-spacing-at-punctuation": {
    "rule": "the stored phonetic form has no space after the comma between two variants, or before a bracketed preverb; the print has one",
@@ -42,54 +41,17 @@
   }
  },
  "by_class_field_kind": {
-  "noise | (printed text) | structural-marks": 9682,
-  "difference | (printed text) | printed-not-stored": 58,
-  "difference | etymology | stored-keeps-line-break": 34,
-  "difference | etymology | spacing": 13,
+  "noise | (printed text) | structural-marks": 9734,
   "difference | grammatical_class | class-differs": 13,
-  "difference | etymology_literal | spacing": 9,
-  "difference | cognate.form | hyphen": 8,
-  "difference | etymology | glottal-stop": 8,
-  "difference | etymology_literal | letters": 7,
-  "difference | cognate.form | letters": 7,
-  "difference | example.english | spacing": 6,
-  "difference | cognate.form | not-printed-in-entry": 4,
-  "difference | additional_form_type | not-printed-in-entry": 3,
+  "difference | (printed text) | printed-not-stored": 7,
+  "difference | etymology | spacing": 6,
   "difference | headword | hyphen": 2,
-  "difference | etymology | letters": 2,
-  "difference | etymology | printed-has-more+stored-has-more": 2,
-  "difference | cognate.form | printed-has-more+stored-has-more": 2,
-  "difference | form | punctuation+stored-has-more": 2,
-  "difference | example.skiri | stored-has-more": 2,
-  "difference | example.skiri | stored-keeps-line-break": 2,
-  "difference | additional_form | glottal-stop": 2,
-  "difference | gloss_usage | not-printed-in-entry": 2,
-  "difference | etymology_literal | punctuation": 2,
-  "difference | etymology_literal | letters+stored-has-more": 2,
-  "difference | etymology | punctuation": 2,
+  "difference | etymology | stored-keeps-line-break": 2,
+  "difference | etymology_literal | spacing": 2,
   "difference | example.skiri | citation-standin": 1,
-  "difference | example.skiri | spacing": 1,
-  "difference | additional_form_type | letters": 1,
   "difference | example.skiri | glottal-stop": 1,
   "difference | gloss_usage | letters+punctuation": 1,
-  "difference | gloss | vowel-length": 1,
-  "difference | etymology_literal | not-printed-in-entry": 1,
-  "difference | additional_form | letters": 1,
-  "difference | additional_form | stored-has-more+vowel-length": 1,
-  "difference | etymology | letters+stored-has-more": 1,
-  "difference | gloss | printed-has-more+stored-has-more": 1,
-  "difference | cognate.form | spacing": 1,
-  "difference | form | letters+punctuation": 1,
-  "difference | example.english | stored-keeps-line-break": 1,
-  "difference | gloss | stored-has-more": 1,
-  "difference | gloss | spacing": 1,
-  "difference | example.skiri | vowel-length": 1,
-  "difference | additional_form | vowel-length": 1,
-  "difference | cognate.form | letters+stored-has-more": 1,
-  "difference | gloss_usage | letters+punctuation+stored-has-more": 1,
-  "difference | etymology | hyphen": 1,
-  "difference | additional_form | stored-keeps-line-break": 1,
-  "difference | gloss_usage | printed-has-more": 1,
-  "difference | etymology | citation-standin+letters": 1
+  "difference | etymology_literal | punctuation": 1,
+  "difference | gloss_usage | printed-has-more": 1
  }
 }

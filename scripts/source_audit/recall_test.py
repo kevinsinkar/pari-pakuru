@@ -151,7 +151,12 @@ def main():
 
     base_diffs, base_pairs, _, _ = s2e_compare.compare(str(live))
     dirty = {(d["entry_id"], base_field(d["field"])) for d in base_diffs if d["class"] == "difference"}
-    base_residue = collections.Counter(d["entry_id"] for d in base_diffs if d["kind"] == "printed-not-stored")
+    # how much printed text of each entry no stored value accounts for, in characters: a deleted sense
+    # beside a stretch that is already listed makes that stretch longer, not one more stretch
+    base_residue = collections.Counter()
+    for d in base_diffs:
+        if d["kind"] == "printed-not-stored":
+            base_residue[d["entry_id"]] += len(d["printed"])
     paired = {r["entry_id"] for r in base_pairs}
     touched = set()                                   # one plant per entry, so that hits cannot be confused
     plants = []
@@ -232,7 +237,7 @@ def main():
         if d["class"] != "difference":
             continue
         if d["kind"] == "printed-not-stored":
-            residue[d["entry_id"]] += 1
+            residue[d["entry_id"]] += len(d["printed"])
         elif d["kind"] == "printed-entry-not-stored":
             missing_heads[d["headword"].split(" (")[0].split(" [")[0]] += 1
         else:

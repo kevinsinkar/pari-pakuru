@@ -1,6 +1,6 @@
 [
   {
-    "skiri_form": "KIRIK1 RU'?",
+    "skiri_form": "KIRIKÉ RU'?",
     "bb_pronunciation": null,
     "english_translation": "What Is It?",
     "context_type": "PHRASE",
@@ -110,7 +110,7 @@
     "page_number": 29
   },
   {
-    "skiri_form": "had'",
+    "skiri_form": "haú'",
     "bb_pronunciation": null,
     "english_translation": "yes",
     "context_type": "BASIC_WORDS",
@@ -1078,7 +1078,7 @@
     "page_number": 37
   },
   {
-    "skiri_form": "ti r I ha•pi",
+    "skiri_form": "ti rá•ha•pi",
     "bb_pronunciation": null,
     "english_translation": "There is a tree.",
     "context_type": "GRAMMAR_EXAMPLE",
@@ -2233,7 +2233,7 @@
     "page_number": 57
   },
   {
-    "skiri_form": "TI'tskipi.",
+    "skiri_form": "Tí'tskipi.",
     "bb_pronunciation": null,
     "english_translation": "He's sleepy.",
     "context_type": "PHRASE",
@@ -2508,7 +2508,7 @@
     "page_number": 59
   },
   {
-    "skiri_form": "TAR1 RU'?",
+    "skiri_form": "TAKÉ RU'?",
     "bb_pronunciation": null,
     "english_translation": "Who Is It?",
     "context_type": "PHRASE",
@@ -2519,7 +2519,7 @@
     "page_number": 60
   },
   {
-    "skiri_form": "atlas",
+    "skiri_form": "atías",
     "bb_pronunciation": null,
     "english_translation": "my father",
     "context_type": "BASIC_WORDS",
@@ -2651,7 +2651,7 @@
     "page_number": 61
   },
   {
-    "skiri_form": "hags",
+    "skiri_form": "haas",
     "bb_pronunciation": null,
     "english_translation": "your father",
     "context_type": "ADDITIONAL_WORDS",
@@ -2717,12 +2717,12 @@
     "page_number": 61
   },
   {
-    "skiri_form": "Tsiru ka rail apat?",
+    "skiri_form": "Tsiru ka ra•á apat?",
     "bb_pronunciation": null,
     "english_translation": "Is your grandfather still alive?",
     "context_type": "DIALOGUE",
     "dialect_note": null,
-    "full_sentence_pawnee": "Tsiru ka rail apat?",
+    "full_sentence_pawnee": "Tsiru ka ra•á apat?",
     "full_sentence_english": "Is your grandfather still alive?",
     "lesson_number": 7,
     "page_number": 61
@@ -2838,7 +2838,7 @@
     "page_number": 61
   },
   {
-    "skiri_form": "swat",
+    "skiri_form": "awat",
     "bb_pronunciation": null,
     "english_translation": "your niece, nephew",
     "context_type": "ADDITIONAL_WORDS",
@@ -2882,7 +2882,7 @@
     "page_number": 62
   },
   {
-    "skiri_form": "tsikstit tI wari'",
+    "skiri_form": "tsikstit tí•wari'",
     "bb_pronunciation": null,
     "english_translation": "he's doing fine",
     "context_type": "ADDITIONAL_WORDS",
@@ -2937,7 +2937,7 @@
     "page_number": 62
   },
   {
-    "skiri_form": "Nawa niru!",
+    "skiri_form": "Nawa rúru!",
     "bb_pronunciation": null,
     "english_translation": "Go ahead!",
     "context_type": "PHRASE",
@@ -2948,7 +2948,7 @@
     "page_number": 62
   },
   {
-    "skiri_form": "TsIru'.",
+    "skiri_form": "Tsíru'.",
     "bb_pronunciation": null,
     "english_translation": "Wait!",
     "context_type": "PHRASE",
@@ -3080,7 +3080,7 @@
     "page_number": 63
   },
   {
-    "skiri_form": "i ra•kti pita",
+    "skiri_form": "ti ra•kú pita",
     "bb_pronunciation": null,
     "english_translation": "that sitting man yonder",
     "context_type": "GRAMMAR_EXAMPLE",
@@ -3091,7 +3091,7 @@
     "page_number": 63
   },
   {
-    "skiri_form": "i ra•ariki pita",
+    "skiri_form": "ti ra•arikí pita",
     "bb_pronunciation": null,
     "english_translation": "that standing man yonder",
     "context_type": "GRAMMAR_EXAMPLE",
@@ -3454,7 +3454,7 @@
     "page_number": 66
   },
   {
-    "skiri_form": "Niru ruks•ku?",
+    "skiri_form": "Kíru ruks•ku?",
     "bb_pronunciation": null,
     "english_translation": "Where was it?",
     "context_type": "GRAMMAR_EXAMPLE",
@@ -3465,7 +3465,7 @@
     "page_number": 67
   },
   {
-    "skiri_form": "tat .kiikat",
+    "skiri_form": "tat•kíkat",
     "bb_pronunciation": null,
     "english_translation": "I am crying",
     "context_type": "GRAMMAR_EXAMPLE",
@@ -3674,7 +3674,7 @@
     "page_number": 68
   },
   {
-    "skiri_form": "tawi•rIhuks•iri '",
+    "skiri_form": "tawi•ríhuks•iri'",
     "bb_pronunciation": null,
     "english_translation": "thirteen",
     "context_type": "ADDITIONAL_WORDS",
@@ -5511,12 +5511,12 @@
     "page_number": 84
   },
   {
-    "skiri_form": "KIRU RATSUKS•AT?",
+    "skiri_form": "KIRU RÁSUKS•AT?",
     "bb_pronunciation": null,
     "english_translation": "Where Did You Go?",
     "context_type": "PHRASE",
     "dialect_note": null,
-    "full_sentence_pawnee": "KIRU RATSUKS•AT?",
+    "full_sentence_pawnee": "KIRU RÁSUKS•AT?",
     "full_sentence_english": "Where Did You Go?",
     "lesson_number": 13,
     "page_number": 85
@@ -6688,7 +6688,7 @@
     "page_number": 92
   },
   {
-    "skiri_form": "ta na ritu'",
+    "skiri_form": "ta rá•ritu'",
     "bb_pronunciation": null,
     "english_translation": "it's hot",
     "context_type": "GRAMMAR_EXAMPLE",
@@ -6699,7 +6699,7 @@
     "page_number": 92
   },
   {
-    "skiri_form": "to taxis",
+    "skiri_form": "tá taris",
     "bb_pronunciation": null,
     "english_translation": "it's heavy",
     "context_type": "GRAMMAR_EXAMPLE",
@@ -6941,12 +6941,12 @@
     "page_number": 94
   },
   {
-    "skiri_form": "Asaki tirah•kI wat.",
+    "skiri_form": "Asaki tirah•kí•wat.",
     "bb_pronunciation": null,
     "english_translation": "The dog barked.",
     "context_type": "GRAMMAR_EXAMPLE",
     "dialect_note": "SK",
-    "full_sentence_pawnee": "Asaki tirah•kI wat.",
+    "full_sentence_pawnee": "Asaki tirah•kí•wat.",
     "full_sentence_english": "The dog barked.",
     "lesson_number": 14,
     "page_number": 94
@@ -7062,7 +7062,7 @@
     "page_number": 95
   },
   {
-    "skiri_form": "tatut• i wahri•tisuku'",
+    "skiri_form": "tatut•á•wahri•úsuku'",
     "bb_pronunciation": null,
     "english_translation": "I work (habitually)",
     "context_type": "BASIC_WORDS",
@@ -7128,12 +7128,12 @@
     "page_number": 96
   },
   {
-    "skiri_form": "We to tut•a•wahri•usuku'.",
+    "skiri_form": "We tatut•a•wahri•usuku'.",
     "bb_pronunciation": null,
     "english_translation": "I work.",
     "context_type": "DIALOGUE",
     "dialect_note": null,
-    "full_sentence_pawnee": "We to tut•a•wahri•usuku'.",
+    "full_sentence_pawnee": "We tatut•a•wahri•usuku'.",
     "full_sentence_english": "I work.",
     "lesson_number": 15,
     "page_number": 96
@@ -7447,7 +7447,7 @@
     "page_number": 97
   },
   {
-    "skiri_form": "We t'at .tszi-a.",
+    "skiri_form": "We t'at•tsú•a.",
     "bb_pronunciation": null,
     "english_translation": "It's raining.",
     "context_type": "GRAMMAR_EXAMPLE",
@@ -7524,7 +7524,7 @@
     "page_number": 97
   },
   {
-    "skiri_form": "KITSKI WE RU'",
+    "skiri_form": "KITSKÉ WE RU'",
     "bb_pronunciation": null,
     "english_translation": "What Time Is It?",
     "context_type": "PHRASE",
@@ -7711,7 +7711,7 @@
     "page_number": 99
   },
   {
-    "skiri_form": "we to sak•ta",
+    "skiri_form": "we ta sák•ta",
     "bb_pronunciation": null,
     "english_translation": "it's sunrise",
     "context_type": "ADDITIONAL_WORDS",
@@ -7942,12 +7942,12 @@
     "page_number": 101
   },
   {
-    "skiri_form": "Tiruks•tsak•ariki tatutsiks . wahri'.",
+    "skiri_form": "Tíruks•tsak•ariki tatutsiks•á•wahri'.",
     "bb_pronunciation": null,
     "english_translation": "I was working yesterday.",
     "context_type": "DIALOGUE",
     "dialect_note": null,
-    "full_sentence_pawnee": "Tiruks•tsak•ariki tatutsiks . wahri'.",
+    "full_sentence_pawnee": "Tíruks•tsak•ariki tatutsiks•á•wahri'.",
     "full_sentence_english": "I was working yesterday.",
     "lesson_number": 17,
     "page_number": 101
@@ -8228,7 +8228,7 @@
     "page_number": 102
   },
   {
-    "skiri_form": "Ti 'hr i kawaats.",
+    "skiri_form": "Ti 'hrá•kawaats.",
     "bb_pronunciation": null,
     "english_translation": "They (3+) ate.",
     "context_type": "GRAMMAR_EXAMPLE",
@@ -8525,7 +8525,7 @@
     "page_number": 105
   },
   {
-    "skiri_form": "tsiksu tatut• I wahri'",
+    "skiri_form": "tsiksu tatut•á•wahri'",
     "bb_pronunciation": null,
     "english_translation": "I'm thinking",
     "context_type": "ADDITIONAL_WORDS",
@@ -8778,7 +8778,7 @@
     "page_number": 107
   },
   {
-    "skiri_form": "tat•kat I hak'sta",
+    "skiri_form": "tat•katá•hak'sta",
     "bb_pronunciation": null,
     "english_translation": "I will quit",
     "context_type": "BASIC_WORDS",
@@ -9647,12 +9647,12 @@
     "page_number": 79
   },
   {
-    "skiri_form": "Ilan', tiku•ratsaus.",
+    "skiri_form": "Háu', tikú•ratsaus.",
     "bb_pronunciation": null,
     "english_translation": "Yes, I'm hungry.",
     "context_type": "DIALOGUE",
     "dialect_note": null,
-    "full_sentence_pawnee": "Ilan', tiku•ratsaus.",
+    "full_sentence_pawnee": "Háu', tikú•ratsaus.",
     "full_sentence_english": "Yes, I'm hungry.",
     "lesson_number": 11,
     "page_number": 79
@@ -9790,7 +9790,7 @@
     "page_number": 79
   },
   {
-    "skiri_form": "6u'",
+    "skiri_form": "hu'",
     "bb_pronunciation": null,
     "english_translation": "mush",
     "context_type": "ADDITIONAL_WORDS",
@@ -9856,7 +9856,7 @@
     "page_number": 79
   },
   {
-    "skiri_form": "tI ra•hu'",
+    "skiri_form": "tí•ra•hu'",
     "bb_pronunciation": null,
     "english_translation": "it's spoiled",
     "context_type": "ADDITIONAL_WORDS",
@@ -10208,7 +10208,7 @@
     "page_number": 111
   },
   {
-    "skiri_form": "ratku•w&waktit Pari",
+    "skiri_form": "ratku•wá•waktit Pari",
     "bb_pronunciation": null,
     "english_translation": "for me to speak Pawnee",
     "context_type": "GRAMMAR_EXAMPLE",
@@ -10263,7 +10263,7 @@
     "page_number": 111
   },
   {
-    "skiri_form": "ratku•w&waktit Pari",
+    "skiri_form": "ratku•wá•waktit Pari",
     "bb_pronunciation": null,
     "english_translation": "for me to speak Pawnee",
     "context_type": "GRAMMAR_EXAMPLE",
@@ -10384,12 +10384,12 @@
     "page_number": 112
   },
   {
-    "skiri_form": "Ka rasiitska ratkti .u .ta",
+    "skiri_form": "Ka rás•itska ratkú•u•ta",
     "bb_pronunciation": null,
     "english_translation": "Do you want me to go?",
     "context_type": "DIALOGUE",
     "dialect_note": null,
-    "full_sentence_pawnee": "Ka rasiitska ratkti .u .ta",
+    "full_sentence_pawnee": "Ka rás•itska ratkú•u•ta",
     "full_sentence_english": "Do you want me to go?",
     "lesson_number": 20,
     "page_number": 112
