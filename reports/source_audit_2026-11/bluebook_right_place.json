@@ -1,0 +1,857 @@
+{
+ "crops": 25,
+ "tally": {
+  "stored form confirmed at its own place": 7,
+  "settled at its own place": 18
+ },
+ "rows": [
+  {
+   "first_crop": "B118",
+   "second_crop": "S001",
+   "page": 29,
+   "old_box": [
+    40.3,
+    52.4,
+    81.9,
+    65.9
+   ],
+   "stored_form": "ti'",
+   "stored_english": "It is. This is.",
+   "attestation_ids": [],
+   "entry_id": "BB-ti-0084",
+   "earlier_verdict": "readings differ",
+   "earlier_reading": "What Is It?",
+   "box": [
+    141.5989990234375,
+    492.9169921875,
+    152.58029174804688,
+    507.59100341796875
+   ],
+   "placed_by": "the only whole word",
+   "crop": "T001",
+   "reading": "ti'",
+   "english_read": "this is",
+   "pawnee": true,
+   "note": "",
+   "kind": "same",
+   "new_form": null,
+   "verdict": "stored form confirmed at its own place"
+  },
+  {
+   "first_crop": "R0024",
+   "second_crop": "S004",
+   "page": 31,
+   "old_box": [
+    307.5,
+    261.0,
+    343.7,
+    277.0
+   ],
+   "stored_form": "rakis",
+   "stored_english": "stick",
+   "attestation_ids": [
+    1922
+   ],
+   "entry_id": null,
+   "earlier_verdict": "two readings agree",
+   "earlier_reading": "tirakis",
+   "box": [
+    96.69999694824219,
+    320.71502685546875,
+    124.148193359375,
+    336.7230224609375
+   ],
+   "placed_by": "the only whole word",
+   "crop": "T002",
+   "reading": "rakis",
+   "english_read": "",
+   "pawnee": true,
+   "note": "No English gloss on the line. After a row of leader dots the line ends with (arakis) in parentheses, where the first a is printed in a smaller size than the other letters.",
+   "kind": "same",
+   "new_form": null,
+   "verdict": "stored form confirmed at its own place"
+  },
+  {
+   "first_crop": "R0071",
+   "second_crop": "S007",
+   "page": 36,
+   "old_box": [
+    181.4,
+    32.3,
+    222.8,
+    47.0
+   ],
+   "stored_form": "pa",
+   "stored_english": "moon",
+   "attestation_ids": [
+    1975
+   ],
+   "entry_id": null,
+   "earlier_verdict": "two readings agree",
+   "earlier_reading": "Pawnee",
+   "box": [
+    26.899999618530273,
+    359.364013671875,
+    39.55399703979492,
+    375.37200927734375
+   ],
+   "placed_by": "the row's English follows",
+   "crop": "T003",
+   "reading": "pa",
+   "english_read": "moon",
+   "pawnee": true,
+   "note": "",
+   "kind": "same",
+   "new_form": null,
+   "verdict": "stored form confirmed at its own place"
+  },
+  {
+   "first_crop": "R0102",
+   "second_crop": "S009",
+   "page": 39,
+   "old_box": [
+    121.2,
+    394.6,
+    161.5,
+    409.9
+   ],
+   "stored_form": "hak +",
+   "stored_english": "wood, tree",
+   "attestation_ids": [
+    2749
+   ],
+   "entry_id": null,
+   "earlier_verdict": "readings differ",
+   "earlier_reading": "tí hak•tsa",
+   "box": [
+    121.44999694824219,
+    424.8869934082031,
+    141.73599243164062,
+    440.4389953613281
+   ],
+   "placed_by": "the only whole word",
+   "crop": "T004",
+   "reading": "hak +",
+   "english_read": "wood, tree",
+   "pawnee": true,
+   "note": "Printed in bold italic. Red line is under hak only; a plus sign follows it after a narrow gap (the gap is small, it could also be read as hak+ with no space).",
+   "kind": "same",
+   "new_form": null,
+   "verdict": "stored form confirmed at its own place"
+  },
+  {
+   "first_crop": "R0108",
+   "second_crop": "S011",
+   "page": 43,
+   "old_box": [
+    111.8,
+    24.6,
+    193.8,
+    47.3
+   ],
+   "stored_form": "+ ra",
+   "stored_english": "to have",
+   "attestation_ids": [
+    2757
+   ],
+   "entry_id": null,
+   "earlier_verdict": "readings differ",
+   "earlier_reading": "KIRIKÉ RAS•TA?",
+   "box": [
+    112.30000305175781,
+    408.1390075683594,
+    123.58120727539062,
+    422.7909851074219
+   ],
+   "placed_by": "the row's English follows",
+   "crop": "T005",
+   "reading": "+ ra",
+   "english_read": "to have",
+   "pawnee": true,
+   "note": "ra is printed in bold italic. Red line is under ra only; a plus sign stands before it with a clear space. No plus sign after ra.",
+   "kind": "same",
+   "new_form": null,
+   "verdict": "stored form confirmed at its own place"
+  },
+  {
+   "first_crop": "R0153",
+   "second_crop": "S012",
+   "page": 54,
+   "old_box": [
+    29.8,
+    102.1,
+    100.5,
+    118.1
+   ],
+   "stored_form": "Sisuks .pa.",
+   "stored_english": "You (2) go (away).",
+   "attestation_ids": [
+    2055
+   ],
+   "entry_id": null,
+   "earlier_verdict": "two readings agree",
+   "earlier_reading": "Sísuks•paku'.",
+   "box": [
+    29.049999237060547,
+    162.0649871826172,
+    82.19599914550781,
+    178.07298278808594
+   ],
+   "placed_by": "the row's English follows",
+   "crop": "T006",
+   "reading": "Sísuks•pa.",
+   "english_read": "You (2) go (away).",
+   "pawnee": true,
+   "note": "Two-column layout: the same printed line has Sítat•pa. in the right column; its English, We (2) have gone (away)., is below it. The English for the underlined form is on the line below it in the left column.",
+   "kind": "accent restored",
+   "new_form": "Sísuks•pa.",
+   "verdict": "settled at its own place"
+  },
+  {
+   "first_crop": "R0154",
+   "second_crop": "S013",
+   "page": 54,
+   "old_box": [
+    206.9,
+    102.3,
+    269.1,
+    118.3
+   ],
+   "stored_form": "Sitat•pa.",
+   "stored_english": "We (2) have gone (away).",
+   "attestation_ids": [
+    2056
+   ],
+   "entry_id": null,
+   "earlier_verdict": "two readings agree",
+   "earlier_reading": "Sítat•paku'.",
+   "box": [
+    206.39999389648438,
+    162.0649871826172,
+    251.27999877929688,
+    178.07298278808594
+   ],
+   "placed_by": "the row's English follows",
+   "crop": "T007",
+   "reading": "Sítat•pa.",
+   "english_read": "We (2) have gone (away).",
+   "pawnee": true,
+   "note": "Two-column layout: the left column of the same line is cut off at the strip edge (only ...ks•pa. is visible). The English is printed on the line below the form.",
+   "kind": "accent restored",
+   "new_form": "Sítat•pa.",
+   "verdict": "settled at its own place"
+  },
+  {
+   "first_crop": "B086",
+   "second_crop": "S014",
+   "page": 57,
+   "old_box": [
+    220.8,
+    23.5,
+    255.0,
+    38.1
+   ],
+   "stored_form": "Ti .wari'.",
+   "stored_english": "He is walking about.",
+   "attestation_ids": [
+    2104
+   ],
+   "entry_id": null,
+   "earlier_verdict": "two readings agree",
+   "earlier_reading": "tí•wari'",
+   "box": [
+    103.9000015258789,
+    540.4169921875,
+    149.1075897216797,
+    555.0910034179688
+   ],
+   "placed_by": "the row's English follows",
+   "crop": "T008",
+   "reading": "Tí•wari'.",
+   "english_read": "He is walking about.",
+   "pawnee": true,
+   "note": "",
+   "kind": "accent restored",
+   "new_form": "Tí•wari'.",
+   "verdict": "settled at its own place"
+  },
+  {
+   "first_crop": "R0230",
+   "second_crop": "S020",
+   "page": 61,
+   "old_box": [
+    56.4,
+    422.3,
+    104.2,
+    438.3
+   ],
+   "stored_form": "patsi",
+   "stored_english": "\"unc\"",
+   "attestation_ids": [
+    2143
+   ],
+   "entry_id": null,
+   "earlier_verdict": "two readings agree",
+   "earlier_reading": "patsiriks",
+   "box": [
+    56.400001525878906,
+    437.364013671875,
+    82.84800720214844,
+    453.37200927734375
+   ],
+   "placed_by": "the row's English follows",
+   "crop": "T009",
+   "reading": "patsí",
+   "english_read": "“unc”",
+   "pawnee": true,
+   "note": "The English gloss is printed inside double quotation marks.",
+   "kind": "accent restored",
+   "new_form": "patsí",
+   "verdict": "settled at its own place"
+  },
+  {
+   "first_crop": "R0235",
+   "second_crop": "S021",
+   "page": 61,
+   "old_box": [
+    56.4,
+    406.9,
+    115.2,
+    422.9
+   ],
+   "stored_form": "tiwat",
+   "stored_english": "my niece, nephew",
+   "attestation_ids": [
+    2148
+   ],
+   "entry_id": null,
+   "earlier_verdict": "two readings agree",
+   "earlier_reading": "tiwatsiriks",
+   "box": [
+    55.900001525878906,
+    512.2640380859375,
+    84.43240356445312,
+    528.2720336914062
+   ],
+   "placed_by": "the row's English follows",
+   "crop": "T010",
+   "reading": "tiwat",
+   "english_read": "my niece, nephew",
+   "pawnee": true,
+   "note": "",
+   "kind": "same",
+   "new_form": null,
+   "verdict": "stored form confirmed at its own place"
+  },
+  {
+   "first_crop": "R0262",
+   "second_crop": "S028",
+   "page": 63,
+   "old_box": [
+    100.3,
+    143.2,
+    159.2,
+    157.9
+   ],
+   "stored_form": "ku +",
+   "stored_english": "\"indefinite,\" used with possessive verbs",
+   "attestation_ids": [
+    2176
+   ],
+   "entry_id": null,
+   "earlier_verdict": "readings differ",
+   "earlier_reading": "kú•ratir•u paks•kúku'",
+   "box": [
+    36.25,
+    188.4879913330078,
+    50.05000305175781,
+    203.13999938964844
+   ],
+   "placed_by": "the only whole word",
+   "crop": "T011",
+   "reading": "ku +",
+   "english_read": "“indefinite,” used with possessive verbs",
+   "pawnee": true,
+   "note": "ku is printed in bold italic. Red line is under ku only; a plus sign follows after a clear space. The gloss runs over two lines.",
+   "kind": "same",
+   "new_form": null,
+   "verdict": "stored form confirmed at its own place"
+  },
+  {
+   "first_crop": "R0327",
+   "second_crop": "S033",
+   "page": 70,
+   "old_box": [
+    47.8,
+    64.6,
+    68.4,
+    78.1
+   ],
+   "stored_form": "+ha +",
+   "stored_english": "in the water",
+   "attestation_ids": [
+    2252
+   ],
+   "entry_id": null,
+   "earlier_verdict": "readings differ",
+   "earlier_reading": "Where Has It Gone?",
+   "box": [
+    87.5999984741211,
+    517.3079833984375,
+    109.11600494384766,
+    531.5640258789062
+   ],
+   "placed_by": "the row's English follows",
+   "crop": "T012",
+   "reading": "+ha+",
+   "english_read": "in the water",
+   "pawnee": true,
+   "note": "ha is printed in bold italic with a plus sign directly before and directly after. Red line covers the first plus and ha. The words in the English column, in the water, may be the continuation of the gloss of the line above (it is swimming, wading / in the water) rather than a gloss of +ha+ itself.",
+   "kind": "apostrophe, dot or space",
+   "new_form": "+ha+",
+   "verdict": "settled at its own place"
+  },
+  {
+   "first_crop": "B150",
+   "second_crop": "S034",
+   "page": 71,
+   "old_box": [
+    64.5,
+    88.1,
+    110.9,
+    103.4
+   ],
+   "stored_form": "+hu +",
+   "stored_english": "it has sunk (beneath) a surface",
+   "attestation_ids": [
+    2257
+   ],
+   "entry_id": null,
+   "earlier_verdict": "two readings agree",
+   "earlier_reading": "ti•hú•isat",
+   "box": [
+    66.25,
+    101.81401062011719,
+    88.15499877929688,
+    118.6620101928711
+   ],
+   "placed_by": "the only whole word",
+   "crop": "T013",
+   "reading": "+hu+",
+   "english_read": "a surface",
+   "pawnee": true,
+   "note": "hu is printed in bold italic with a plus sign directly before and directly after. Red line covers the first plus and hu. The words in the English column, a surface, look like the continuation of the gloss of the line above (it has sunk (beneath) / a surface) rather than a gloss of +hu+ itself.",
+   "kind": "apostrophe, dot or space",
+   "new_form": "+hu+",
+   "verdict": "settled at its own place"
+  },
+  {
+   "first_crop": "R0378",
+   "second_crop": "S036",
+   "page": 75,
+   "old_box": [
+    51.6,
+    65.9,
+    89.0,
+    80.6
+   ],
+   "stored_form": "ti .ra",
+   "stored_english": "he has it",
+   "attestation_ids": [
+    2315
+   ],
+   "entry_id": null,
+   "earlier_verdict": "two readings agree",
+   "earlier_reading": "tiraku'",
+   "box": [
+    74.6500015258789,
+    457.36798095703125,
+    96.92079162597656,
+    472.2919921875
+   ],
+   "placed_by": "the only whole word",
+   "crop": "T014",
+   "reading": "tí•ra",
+   "english_read": "he has it",
+   "pawnee": true,
+   "note": "",
+   "kind": "accent restored",
+   "new_form": "tí•ra",
+   "verdict": "settled at its own place"
+  },
+  {
+   "first_crop": "R0438",
+   "second_crop": "S042",
+   "page": 80,
+   "old_box": [
+    21.9,
+    62.6,
+    74.7,
+    77.3
+   ],
+   "stored_form": "wusu '",
+   "stored_english": "suds",
+   "attestation_ids": [
+    2797
+   ],
+   "entry_id": null,
+   "earlier_verdict": "two readings agree",
+   "earlier_reading": "kíri•wusu'",
+   "box": [
+    21.600000381469727,
+    78.16699981689453,
+    52.78095245361328,
+    92.84100341796875
+   ],
+   "placed_by": "the row's English follows",
+   "crop": "T015",
+   "reading": "wusu'",
+   "english_read": "suds",
+   "pawnee": true,
+   "note": "",
+   "kind": "apostrophe, dot or space",
+   "new_form": "wusu'",
+   "verdict": "settled at its own place"
+  },
+  {
+   "first_crop": "R0453",
+   "second_crop": "S043",
+   "page": 81,
+   "old_box": [
+    54.0,
+    126.2,
+    143.9,
+    162.9
+   ],
+   "stored_form": "We tatuks•at.",
+   "stored_english": "I went (then) (or, I had gone)",
+   "attestation_ids": [
+    2813
+   ],
+   "entry_id": null,
+   "earlier_verdict": "two readings agree",
+   "earlier_reading": "Tátuks•at.",
+   "box": [
+    89.05000305175781,
+    163.36798095703125,
+    161.97671508789062,
+    178.0419921875
+   ],
+   "placed_by": "the row's English follows",
+   "crop": "T016",
+   "reading": "We tátuks•at.",
+   "english_read": "I went (then) (or, I had gone)",
+   "pawnee": true,
+   "note": "The gloss runs on to the next line (gone) is on the second line).",
+   "kind": "accent restored",
+   "new_form": "We tátuks•at.",
+   "verdict": "settled at its own place"
+  },
+  {
+   "first_crop": "R0548",
+   "second_crop": "S048",
+   "page": 89,
+   "old_box": [
+    111.6,
+    252.3,
+    166.4,
+    267.5
+   ],
+   "stored_form": "Tuks•at.",
+   "stored_english": "He, she went.",
+   "attestation_ids": [
+    2451
+   ],
+   "entry_id": null,
+   "earlier_verdict": "two readings agree",
+   "earlier_reading": "Tatúks•at.",
+   "box": [
+    111.5999984741211,
+    282.4169921875,
+    155.18971252441406,
+    297.09100341796875
+   ],
+   "placed_by": "the row's English follows",
+   "crop": "T017",
+   "reading": "Túks•at.",
+   "english_read": "He, she went.",
+   "pawnee": true,
+   "note": "",
+   "kind": "accent restored",
+   "new_form": "Túks•at.",
+   "verdict": "settled at its own place"
+  },
+  {
+   "first_crop": "R0645",
+   "second_crop": "S057",
+   "page": 97,
+   "old_box": [
+    53.5,
+    88.0,
+    168.0,
+    102.7
+   ],
+   "stored_form": "tirarah .karuku",
+   "stored_english": "they are planting (imperfect)",
+   "attestation_ids": [
+    2558
+   ],
+   "entry_id": null,
+   "earlier_verdict": "two readings agree",
+   "earlier_reading": "tiraráh•karuk•usuku'",
+   "box": [
+    53.29999923706055,
+    103.11701202392578,
+    134.94700622558594,
+    117.84100341796875
+   ],
+   "placed_by": "the row's English follows",
+   "crop": "T018",
+   "reading": "tiraráh•karuku",
+   "english_read": "they are planting (imperfect)",
+   "pawnee": true,
+   "note": "No apostrophe is printed at the end of this word (the line above, tiraráh•karuk•usuku', has one).",
+   "kind": "accent restored",
+   "new_form": "tiraráh•karuku",
+   "verdict": "settled at its own place"
+  },
+  {
+   "first_crop": "R0649",
+   "second_crop": "S058",
+   "page": 97,
+   "old_box": [
+    53.3,
+    155.9,
+    135.7,
+    170.6
+   ],
+   "stored_form": "tirardh•kiwi",
+   "stored_english": "they have roasted corn",
+   "attestation_ids": [
+    2562
+   ],
+   "entry_id": null,
+   "earlier_verdict": "two readings agree",
+   "earlier_reading": "tiraráh•kiwiku'",
+   "box": [
+    53.5,
+    170.56698608398438,
+    118.05018615722656,
+    185.24099731445312
+   ],
+   "placed_by": "the row's English follows",
+   "crop": "T019",
+   "reading": "tiraráh•kiwi",
+   "english_read": "they have roasted corn",
+   "pawnee": true,
+   "note": "",
+   "kind": "OCR slip corrected",
+   "new_form": "tiraráh•kiwi",
+   "verdict": "settled at its own place"
+  },
+  {
+   "first_crop": "R0660",
+   "second_crop": "S060",
+   "page": 97,
+   "old_box": [
+    55.0,
+    521.9,
+    142.7,
+    536.6
+   ],
+   "stored_form": "T'at•tsu•d .ista.",
+   "stored_english": "It will rain.",
+   "attestation_ids": [
+    2574
+   ],
+   "entry_id": null,
+   "earlier_verdict": "two readings agree",
+   "earlier_reading": "Kut'at•tsu•á•ista.",
+   "box": [
+    54.70000076293945,
+    552.4169921875,
+    129.66900634765625,
+    567.0910034179688
+   ],
+   "placed_by": "the only whole word",
+   "crop": "T020",
+   "reading": "T'at•tsu•á•ista.",
+   "english_read": "It will rain. (predictive)",
+   "pawnee": true,
+   "note": "The word (predictive) is printed on the line below the English sentence.",
+   "kind": "OCR slip corrected",
+   "new_form": "T'at•tsu•á•ista.",
+   "verdict": "settled at its own place"
+  },
+  {
+   "first_crop": "R0700",
+   "second_crop": "S067",
+   "page": 101,
+   "old_box": [
+    56.9,
+    280.5,
+    166.7,
+    295.1
+   ],
+   "stored_form": "tiheruks.",
+   "stored_english": "that other one, past",
+   "attestation_ids": [
+    2621
+   ],
+   "entry_id": null,
+   "earlier_verdict": "two readings agree",
+   "earlier_reading": "tiheruks•ti•kátiharu'",
+   "box": [
+    82.0999984741211,
+    538.2680053710938,
+    131.2392120361328,
+    552.9420166015625
+   ],
+   "placed_by": "the row's English follows",
+   "crop": "T021",
+   "reading": "tihéruks.",
+   "english_read": "that other one, past",
+   "pawnee": true,
+   "note": "A full stop on the baseline is printed after the word.",
+   "kind": "accent restored",
+   "new_form": "tihéruks.",
+   "verdict": "settled at its own place"
+  },
+  {
+   "first_crop": "R0701",
+   "second_crop": "S068",
+   "page": 101,
+   "old_box": [
+    185.5,
+    70.0,
+    282.5,
+    84.7
+   ],
+   "stored_form": "sak .ariki",
+   "stored_english": "a day (sun standing)",
+   "attestation_ids": [
+    2622
+   ],
+   "entry_id": null,
+   "earlier_verdict": "readings differ",
+   "earlier_reading": "Kirike rasutsíks•ari tiruks•tsak•ariki?",
+   "box": [
+    82.30000305175781,
+    553.1669921875,
+    128.90480041503906,
+    568.2919921875
+   ],
+   "placed_by": "the row's English follows",
+   "crop": "T022",
+   "reading": "sák•ariki",
+   "english_read": "a day (sun standing)",
+   "pawnee": true,
+   "note": "",
+   "kind": "accent restored",
+   "new_form": "sák•ariki",
+   "verdict": "settled at its own place"
+  },
+  {
+   "first_crop": "R0719",
+   "second_crop": "S070",
+   "page": 103,
+   "old_box": [
+    80.7,
+    82.0,
+    189.4,
+    96.9
+   ],
+   "stored_form": "Tuks•a .kawahtsu'.",
+   "stored_english": "He, she was eating.",
+   "attestation_ids": [
+    2643
+   ],
+   "entry_id": null,
+   "earlier_verdict": "two readings agree",
+   "earlier_reading": "Tatuks•á•kawahtsu'.",
+   "box": [
+    80.1500015258789,
+    112.26801300048828,
+    177.39309692382812,
+    126.9420166015625
+   ],
+   "placed_by": "the only whole word",
+   "crop": "T023",
+   "reading": "Tuks•á•kawahtsu'.",
+   "english_read": "He, she was eating.",
+   "pawnee": true,
+   "note": "",
+   "kind": "accent restored",
+   "new_form": "Tuks•á•kawahtsu'.",
+   "verdict": "settled at its own place"
+  },
+  {
+   "first_crop": "R0777",
+   "second_crop": "S073",
+   "page": 108,
+   "old_box": [
+    87.3,
+    72.6,
+    186.7,
+    87.3
+   ],
+   "stored_form": "Tatut•a•wahri•usta.",
+   "stored_english": "I'll be working.",
+   "attestation_ids": [
+    2707
+   ],
+   "entry_id": null,
+   "earlier_verdict": "readings differ",
+   "earlier_reading": "Rahesa' tatut•á•wahri•usta.",
+   "box": [
+    27.850000381469727,
+    541.8679809570312,
+    129.75564575195312,
+    556.5419921875
+   ],
+   "placed_by": "the row's English follows",
+   "crop": "T024",
+   "reading": "Tatut•á•wahri•usta.",
+   "english_read": "I'll be working.",
+   "pawnee": true,
+   "note": "",
+   "kind": "accent restored",
+   "new_form": "Tatut•á•wahri•usta.",
+   "verdict": "settled at its own place"
+  },
+  {
+   "first_crop": "R0827",
+   "second_crop": "S077",
+   "page": 117,
+   "old_box": [
+    104.4,
+    108.0,
+    124.1,
+    122.6
+   ],
+   "stored_form": "wi +",
+   "stored_english": "it is said that . . .",
+   "attestation_ids": [
+    2857
+   ],
+   "entry_id": null,
+   "earlier_verdict": "two readings agree",
+   "earlier_reading": "will",
+   "box": [
+    47.5,
+    131.8900146484375,
+    59.758399963378906,
+    145.32101440429688
+   ],
+   "placed_by": "the row's English follows",
+   "crop": "T025",
+   "reading": "wi+",
+   "english_read": "it is said that . . .",
+   "pawnee": true,
+   "note": "wi is printed in bold italic. Red line is under wi only; a plus sign follows directly.",
+   "kind": "apostrophe, dot or space",
+   "new_form": "wi+",
+   "verdict": "settled at its own place"
+  }
+ ]
+}

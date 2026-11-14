@@ -10,7 +10,7 @@
   },
   "examples": {
    "rows": 2652,
-   "sha256": "76cef2713440c8a4dd1560d6f77ff51f89769eda177bd565304ec7f206240f7a"
+   "sha256": "c70b033988ecd390246083b3d216422867e315aa2434ec5579489407ace2431b"
   },
   "etymology": {
    "rows": 3825,
@@ -42,7 +42,7 @@
   },
   "blue_book_attestations": {
    "rows": 1026,
-   "sha256": "9b9b032746128e0f740fcc93e8bd6ecc5dcf7ebc7059dc739084688b3a9a71a9"
+   "sha256": "5d7daa3aa5901e68cd40ee7ddafe238659ea3bd947cfa8dc6df9f435089a8f07"
   },
   "sound_change_rules": {
    "rows": 24,
@@ -82,7 +82,7 @@
   },
   "bb_gap_triage": {
    "rows": 516,
-   "sha256": "12d911493ff735b9bd2f9b08b582709906f1942cdd76dae3ae101af5e18300a8"
+   "sha256": "7c31a091a028ec71d5b81b1398092be52371611bbe9662e5a48195acfe698e9e"
   },
   "function_words": {
    "rows": 418,

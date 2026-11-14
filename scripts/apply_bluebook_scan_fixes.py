@@ -18,6 +18,10 @@ This script puts the readings into the database:
        OCR slip           the letters differ in a way the OCR is known to misread accented vowels
                           (ú read as ti or ii, á as d or i, í as f, É as J): the reading replaces it
        left for a person  anything else (other letters, a reader's doubt, a crop that missed the form)
+     Two later readings settle more of these: a second blind reading of the same crops (taken where
+     both readers agree and what they read is the row's own form), and a reading of the forms whose
+     crop had missed them, cut again at the place where the row's English stands
+     (scripts/source_audit/bluebook_second_look.py and bluebook_right_place.py).
   2. the copies of those forms: Blue Book rows of `examples`, the dialogue lines in `lessons`, and
      extracted_data/blue_book_extracted.json and lessons.json, wherever a copy is identical to the old form
   3. three dictionary entries whose headword was made from a misread form
@@ -167,11 +171,27 @@ def main():
     if second_file.exists():
         for r in json.loads(second_file.read_text(encoding="utf-8"))["rows"]:
             second[(r["page"], r["first_crop"])] = r
+    # the forms whose own place on the page was found by their English and read there
+    # (scripts/source_audit/bluebook_right_place.py --grade)
+    third, short = {}, set()
+    third_file = AUDIT / "bluebook_right_place.json"
+    if third_file.exists():
+        for r in json.loads(third_file.read_text(encoding="utf-8"))["rows"]:
+            third[(r["page"], r["first_crop"])] = r
     for ids, stored, reading, page, crop in groups:
         new, kind = decide(stored, reading)
         if new is None and kind != "same":
             two = second.get((page, crop))
-            if two and two["verdict"] == "two readings agree" and two.get("pawnee", True) and same_place(stored, two["second_reading"]):
+            three = third.get((page, crop))
+            if three and three["verdict"] == "settled at its own place":
+                new, kind = three["new_form"], "read at its own place"
+                if len(plain(stored)) < 5:
+                    short.add(stored)          # too short to stand for the same word in another table
+            elif three and three["verdict"] == "stored form confirmed at its own place":
+                kind = "same"
+                confirmed.append("p. %-4s %-5s stored %r; found at its own place (%s) and read there as stored" % (
+                    page, crop, stored, three["placed_by"]))
+            elif two and two["verdict"] == "two readings agree" and two.get("pawnee", True) and same_place(stored, two["second_reading"]):
                 new, kind = clean(two["second_reading"]), "two readings agree"
             elif two and two["verdict"] == "two readings agree":
                 kind += "; both readers read %s, which is %s" % (
@@ -182,6 +202,8 @@ def main():
                     page, crop, stored, clean(reading)))
             elif two:
                 kind += "; second reading: %s" % clean(two["second_reading"])
+            if new is None and kind != "same" and three:
+                kind += "; at its own place the reader saw %s (%s)" % (three["reading"], three["verdict"])
         kinds[kind.split(";")[0]] += 1
         if new is None:
             if kind not in ("same",):
@@ -192,13 +214,16 @@ def main():
             # every row of the group holds the same letters; rows may differ from one another in spacing
             if row and plain(row[0]) == plain(stored) and row[0] != new:
                 updates.append((rid, row[0], new))
-        if not ids and kind == "two readings agree":
+                if stored in short:
+                    short.add(row[0])
+        if not ids and kind in ("two readings agree", "read at its own place"):
             for rid, form in conn.execute("select id, bb_skiri_form from blue_book_attestations where page_number=? and bb_skiri_form=?", (page, stored)):
                 updates.append((rid, form, new))
         log.append("  p. %-4s %-22s %s -> %s" % (page, kind, stored, new))
     mapping = {}
     for rid, old, new in updates:
-        mapping.setdefault(old, new)
+        if old not in short:
+            mapping.setdefault(old, new)
 
     # Every stored form with its corrected reading, including those corrected by an earlier run: the
     # attestation rows no longer hold the old form, but copies of it elsewhere may.
@@ -206,9 +231,12 @@ def main():
         new, kind = decide(stored, reading)
         if new is None:
             two = second.get((page, crop))
-            if two and two["verdict"] == "two readings agree" and two.get("pawnee", True) and same_place(stored, two["second_reading"]):
+            three = third.get((page, crop))
+            if three and three["verdict"] == "settled at its own place":
+                new = three["new_form"]
+            elif two and two["verdict"] == "two readings agree" and two.get("pawnee", True) and same_place(stored, two["second_reading"]):
                 new = clean(two["second_reading"])
-        if new and new != stored:
+        if new and new != stored and stored not in short:
             mapping.setdefault(stored, new)
     for r in rest:
         new = mapping.get(r["stored_form"])
@@ -268,14 +296,14 @@ def main():
                   len(updates), len(ex_rows), len(lessons), sum(l[2] for l in lessons)),
               "entries whose headword was made from a misread form: %d; made-up phonetic forms to remove from Blue Book-only entries: %d" % (
                   len(entry_changes), synthetic),
-              "the same forms in other tables: %d values; stored forms confirmed by the second reading: %d; left for a person: %d" % (
+              "the same forms in other tables: %d values; stored forms confirmed by a later reading: %d; left for a person: %d" % (
                   len(other), len(confirmed), len(left))]
     body = ["", "== 1. Forms corrected (%d distinct)" % len(log)] + sorted(log)
     body += ["", "== 3. Entries"] + ["  %s: headword %s -> %s; pronunciation from the spelling %s; printed form %s -> %s" % c for c in entry_changes]
     body += ["", "== 5. The same forms in other tables (%d values)" % len(other)]
     body += ["  %-34s %d" % ("%s.%s" % k, n) for k, n in sorted(Counter((o[0], o[1]) for o in other).items())]
     body += ["  %s.%s  %s -> %s" % (o[0], o[1], o[4], o[5]) for o in other]
-    body += ["", "== Stored form confirmed by the second reading (%d)" % len(confirmed)] + ["  " + x for x in sorted(confirmed)]
+    body += ["", "== Stored form confirmed by a later reading (%d)" % len(confirmed)] + ["  " + x for x in sorted(confirmed)]
     body += ["", "== Left for a person (%d)" % len(left)] + ["  " + x for x in sorted(left)]
     if not args.apply:
         out("\n".join(header))

@@ -75,11 +75,12 @@ def open_forms():
     return out
 
 
-def sheets():
-    items = [r for r in open_forms() if r["box"]]
+def draw(items, folder, prefix, letter):
+    """Sheets of crops, eight to a sheet: the line of each form with the lines above and below, the form underlined
+    in red. items: dicts with "page" and "box". Returns {crop id: item}."""
     doc = fitz.open(str(PDF))
-    FOLDER.mkdir(parents=True, exist_ok=True)
-    for old in FOLDER.glob("bb2_*.png"):
+    folder.mkdir(parents=True, exist_ok=True)
+    for old in folder.glob("%s_*.png" % prefix):
         old.unlink()
     key = {}
     for s in range(0, len(items), PER_SHEET):
@@ -88,7 +89,7 @@ def sheets():
         row_h = 190
         pg = sheet.new_page(width=1280, height=len(chunk) * row_h + 10)
         for i, it in enumerate(chunk):
-            cid = "S%03d" % (s + i + 1)
+            cid = "%s%03d" % (letter, s + i + 1)
             x0, y0, x1, y1 = it["box"]
             src = doc[it["page"] - 1]
             # the whole line across the column, with the line above and the line below
@@ -103,9 +104,15 @@ def sheets():
             pg.draw_line((ux0, uy), (ux1, uy), color=(1, 0, 0), width=2)
             pg.draw_line((84, y + row_h - 8), (1270, y + row_h - 8), color=(0.75, 0.75, 0.75), width=0.5)
             key[cid] = it
-        sheet[0].get_pixmap(matrix=fitz.Matrix(1.25, 1.25), alpha=False).save(str(FOLDER / ("bb2_%02d.png" % (s // PER_SHEET + 1))))
+        sheet[0].get_pixmap(matrix=fitz.Matrix(1.25, 1.25), alpha=False).save(str(folder / ("%s_%02d.png" % (prefix, s // PER_SHEET + 1))))
         sheet.close()
-    (FOLDER / "key.json").write_text(json.dumps(key, ensure_ascii=False, indent=1), encoding="utf-8")
+    (folder / "key.json").write_text(json.dumps(key, ensure_ascii=False, indent=1), encoding="utf-8")
+    return key
+
+
+def sheets():
+    items = [r for r in open_forms() if r["box"]]
+    key = draw(items, FOLDER, "bb2", "S")
     state.out("forms left open by the first reading: %d; crops: %d on %d sheets (%s)" % (
         len(open_forms()), len(key), (len(items) + PER_SHEET - 1) // PER_SHEET, FOLDER.relative_to(state.ROOT).as_posix()))
 

@@ -2251,3 +2251,825 @@ backups: OneDrive/pari_pakuru_backups (stamp 20261114_091212)
   p. 97   R0660 letters differ; both readers read Kut'at•tsu•á•ista., which is a longer or another word at that place stored "T'at•tsu•d .ista."; the reader saw "Kut'at•tsu•á•ista."
   p. 99   R0670 reader unsure; second reading: Kitské [?]e ru'? stored "Kitske --'e ru '?"; the reader saw "Kitské w[?]e ru'?"
   p. 99   R0675 letters differ; second reading: we tatut•á•wahri•u[?]s•at stored 'we tatut•d .wahri•uls•at'; the reader saw 'we tatut•á•wahri•us•at'
+
+---- a later run ----
+apply_bluebook_scan_fixes — APPLY — 2026-11-14 10:59
+distinct forms read from the scan: 949   {'two readings agree': 35, 'apostrophe, dot or space': 45, 'same': 164, 'accent restored': 565, 'OCR slip corrected': 105, 'crop shows something else': 1, 'reader unsure': 8, 'letters differ': 4, 'read at its own place': 18, 'capitals differ': 4}
+attestation rows to correct: 18; Blue Book example rows: 1; lessons with corrected dialogue lines: 0 (0 lines)
+entries whose headword was made from a misread form: 0; made-up phonetic forms to remove from Blue Book-only entries: 0
+the same forms in other tables: 8 values; stored forms confirmed by a later reading: 7; left for a person: 17
+
+written: 18 attestation rows, 1 example rows, 0 lessons, 14 strings in extracted_data, 0 flashcards cleared of a made-up phonetic form
+backups: OneDrive/pari_pakuru_backups (stamp 20261114_105952)
+
+== 1. Forms corrected (768 distinct)
+  p. 100  accent restored        tatiks•kaahu ' -> tatiks•káahu'
+  p. 100  accent restored        tatu'ks•pawa'ktiku ' -> tatúks•pawáktiku'
+  p. 100  accent restored        tatuks•aku'htaku ' -> tatuks•akúhtaku'
+  p. 100  accent restored        tatutsiks .a•wahri ' -> tatutsiks•á•wahri'
+  p. 100  accent restored        tiheraruks•tsaku•rarata -> tiheraruks•tsáku•rarata
+  p. 100  accent restored        tiherukspa•ariki -> tiheruks•pá•ariki
+  p. 100  accent restored        tiheruks•tsakariki -> tihéruks•tsak•ariki
+  p. 101  OCR slip corrected     Kirti rira•awiu' tasutsiks•a .wahri'? -> Kirú rira•awiu' tasutsiks•á•wahri'?
+  p. 101  OCR slip corrected     Tatutsiks•d .wahri' tiruks•tsak•ariki. -> Tatutsiks•á•wahri' tiruks•tsak•ariki.
+  p. 101  accent restored        Kirike rasutsiksari tiruks•tsak•ariki? -> Kirike rasutsíks•ari tiruks•tsak•ariki?
+  p. 101  accent restored        kekaruskat -> kekáruskat
+  p. 101  accent restored        tah•rarehats -> táh•rarehats
+  p. 101  accent restored        tat•aspatasit -> tat•aspátasit
+  p. 101  accent restored        tiheruks•ti•katiharu' -> tiheruks•ti•kátiharu'
+  p. 101  accent restored        we ti sihuks sakuru' -> we ti síhuks sakuru'
+  p. 101  accent restored        we ti•rakea -> we tí•rakea
+  p. 101  read at its own place  sak .ariki -> sák•ariki
+  p. 101  read at its own place  tiheruks. -> tihéruks.
+  p. 101  two readings agree     Tiruks•tsak•ariki tatutsiks . wahri'. -> Tíruks•tsak•ariki tatutsiks•á•wahri'.
+  p. 102  accent restored        Ka ru rut•tsirau'? -> Ka ru rut•tsírau'?
+  p. 102  accent restored        Ka rurrahe ti rasut•ari'? -> Ka rúr•rahe ti rasut•ari'?
+  p. 102  accent restored        Ka we ras•tare•hats? -> Ka we ras•taré•hats?
+  p. 102  accent restored        Kirike rasut•atsiks•u'? -> Kiriké rasut•atsiks•u'?
+  p. 102  accent restored        Sitas•a .kawaats. -> Sitas•á•kawaats.
+  p. 102  accent restored        Sitat•a .kawaats. -> Sitat•á•kawaats.
+  p. 102  accent restored        Siti ,ha•kawaats. -> Siti•há•kawaats.
+  p. 102  accent restored        Suks•aspatasit! -> Suks•aspátasit!
+  p. 102  accent restored        Tahrak•a•kawaats. -> Tahrak•á•kawaats.
+  p. 102  accent restored        Take ra•ha .kawaats? -> Také ra•há•kawaats?
+  p. 102  accent restored        Tasiratsiks•tius. -> Tasir•atsiks•tíus.
+  p. 102  accent restored        Tastak•a .kawaats. -> Tastak•á•kawaats.
+  p. 102  accent restored        Tas•a .kawaats. -> Tas•á•kawaats.
+  p. 102  accent restored        Tat•a .kawaats. -> Tat•á•kawaats.
+  p. 102  accent restored        Ti•ha•kawaats. -> Ti•há•kawaats.
+  p. 102  accent restored        tatutsiks•ari' -> tatutsíks•ari'
+  p. 102  two readings agree     Ti 'hr i kawaats. -> Ti 'hrá•kawaats.
+  p. 103  accent restored        Sitasuks•a•kawahtsu'. -> Sitasuks•á•kawahtsu'.
+  p. 103  accent restored        Sitatuks•a•kawahtsu'. -> Sitatuks•á•kawahtsu'.
+  p. 103  accent restored        Situks•a•kawahtsu'. -> Situks•á•kawahtsu'.
+  p. 103  accent restored        Take ruks•a .kawahtsu'? -> Také ruks•á•kawahtsu'?
+  p. 103  accent restored        Tasukstak•a•kawahtsu'. -> Tasukstak•á•kawahtsu'.
+  p. 103  accent restored        Tasuks•a .kawahtsu'. -> Tasuks•á•kawahtsu'.
+  p. 103  accent restored        Tatsiks .a-kawahtsu'. -> Tatsiks•á•kawahtsu'.
+  p. 103  accent restored        Tatuks .a .kawahtsu'. -> Tatuks•á•kawahtsu'.
+  p. 103  accent restored        Tatukstak .a.kawahtsu'. -> Tatukstak•á•kawahtsu'.
+  p. 103  accent restored        Tiks•a .kawahtsu'. -> Tiks•á•kawahtsu'.
+  p. 103  read at its own place  Tuks•a .kawahtsu'. -> Tuks•á•kawahtsu'.
+  p. 104  accent restored        rariksisu tatutsiks•a•wahri ' -> rariksisu tatutsiks•á•wahri'
+  p. 104  accent restored        tatutsi ks•kahurah .weriku' -> tatutsiks•kahurah•wériku'
+  p. 104  accent restored        tatutsiks•a•wahri' -> tatutsiks•á•wahri'
+  p. 104  accent restored        tiku•kskirawa -> tiku•kskírawa
+  p. 104  accent restored        tsaskit -> tsaskít
+  p. 104  accent restored        tsikstit tat•pari ' -> tsikstit tát•pari'
+  p. 104  apostrophe, dot or space rariksisu ' -> rariksisu
+  p. 105  OCR slip corrected     Kesku•rahtirihu'. -> Kesku•rahúrihu'.
+  p. 105  OCR slip corrected     Take ratutsiks•d .wahri'? -> Také ratutsiks•á•wahri'?
+  p. 105  OCR slip corrected     We ktitasut•a .wahri'. -> We kútasut•á•wahri'.
+  p. 105  OCR slip corrected     We ktitatutawahri'. -> We kútatut•á•wahri'.
+  p. 105  OCR slip corrected     We ktitut .a.wahri'. -> We kútut•á•wahri'.
+  p. 105  accent restored        Ahu ' , tsikstit tat•pari'. -> Ahu', tsikstít tat•pari'.
+  p. 105  accent restored        Keskuruh•ra•wiat. -> Keskuruh•ra•wíat.
+  p. 105  accent restored        Ketuh•ra .wiat. -> Ketuh•rá•wiat.
+  p. 105  accent restored        Kirike rasutsiks•ari? -> Kiriké rasutsíks•ari?
+  p. 105  accent restored        Rariksisu tatutsiks•a•wahri'. -> Rariksisu tatutsiks•á•wahri'.
+  p. 105  accent restored        Sutsiks•ahut. -> Sutsiks•áhut.
+  p. 105  accent restored        Tsikstit ka ras•pari '? -> Tsikstit ka rás•pari'?
+  p. 105  accent restored        ru kakatut•te'tsiks•u' -> ru kakátut•te'tsiks•u'
+  p. 105  accent restored        tatuks•atsiks•tehu' -> tatuks•atsíks•tehu'
+  p. 105  accent restored        tat•atsiks .kapakis -> tat•atsiks•kápakis
+  p. 105  accent restored        tat•atsiks•tehu' -> tat•atsíks•tehu'
+  p. 105  two readings agree     tsiksu tatut• I wahri' -> tsiksu tatut•á•wahri'
+  p. 106  accent restored        We kusitatut•a•wahri'. -> We kusítatut•a•wahri'.
+  p. 106  accent restored        We kutasuhrak•a .wahri'. -> We kútasuhrak•á•wahri'.
+  p. 106  accent restored        We kutatuhrak•a .wahri'. -> We kútatuhrak•á•wahri'.
+  p. 106  accent restored        We kutit•a .wahri ' . -> Wé kutit•á•wahri'.
+  p. 107  accent restored        T'ARAWI•A -> T'ÁR•AWI•A
+  p. 107  accent restored        istu tatira•hista -> istú tatir•a•hista
+  p. 107  accent restored        tatutari'sta -> tatut•ári'sta
+  p. 107  accent restored        tatut•a•wahri•usta -> tatut•á•wahri•usta
+  p. 107  accent restored        tat•uh•ta -> tát•uh•ta
+  p. 107  accent restored        tihe ra•pa•ariki' -> tihe ra•pá•ariki'
+  p. 107  accent restored        tihe ri•katiharu' -> tihe ri•kátiharu'
+  p. 107  accent restored        we tat•kata•hat -> we tat•katá•hat
+  p. 107  two readings agree     tat•kat I hak'sta -> tat•katá•hak'sta
+  p. 108  accent restored        Kiru rira•awiu' ras•uh .ta? -> Kirú rira•awiu' rás•uh•ta?
+  p. 108  accent restored        Rahesa ' tatut•a•wahri•usta. -> Rahesa' tatut•á•wahri•usta.
+  p. 108  accent restored        Tatutari'sta. -> Tatut•ári'sta.
+  p. 108  accent restored        Tatut•ari .usta. -> Tatut•arí•usta.
+  p. 108  accent restored        Tat•uh•ta tihe ra•pa•ariki'. -> Tát•uh•ta tihé ra•pa•ariki'.
+  p. 108  accent restored        sihuks ri•katiharu' -> sihuks ri•kátiharu'
+  p. 108  accent restored        tatira -> tatír•a
+  p. 108  accent restored        tatira•hista -> tatír•a•hista
+  p. 108  accent restored        tat•aspatasik'sta -> tat•aspátasik'sta
+  p. 108  accent restored        tat•itsah•kaisuh•ta -> tat•itsah•kaísuh•ta
+  p. 108  accent restored        tihe ra•sa'kurrarata -> tihe ra•sákur•rar•ata
+  p. 108  accent restored        tu'h•ra•sitik'sta -> túh•ra•sitik'sta
+  p. 108  apostrophe, dot or space Kirike rasut•ari'sta rahesa '? -> Kirike rasut•ari'sta rahesa'?
+  p. 108  apostrophe, dot or space sihuks sakuru ' -> sihuks sakuru'
+  p. 108  read at its own place  Tatut•a•wahri•usta. -> Tatut•á•wahri•usta.
+  p. 109  accent restored        Ha•karu'h•kutsu' -> Ha•karúh•kutsu'
+  p. 109  accent restored        Pa•hutawi•u ' -> Pa•hutáwi•u'
+  p. 109  accent restored        Pa•riat -> Pa•ríat
+  p. 109  accent restored        Piraparu' -> Piráparu'
+  p. 109  accent restored        Pirau Rarah•kata•ispu' -> Pirau Rarah•katá•ispu'
+  p. 109  accent restored        Ri•katihah•tirara -> Ri•katihah•tírara
+  p. 109  accent restored        Ri•katihar•rikarikat -> Ri•katihar•rikárikat
+  p. 109  accent restored        Tskirih•kapira -> Tskirih•kápira
+  p. 109  apostrophe, dot or space Ra .pa•u R'at•tsuahu' -> Ra•pa•u R'at•tsuahu'
+  p. 110  accent restored        Kskitiiks Ra sakuru' -> Kskitiiks Rá•sakuru'
+  p. 110  accent restored        Patsuka -> Patsúka
+  p. 110  accent restored        Patsuka tirut•tatsta tat•stats•tak 'sta. -> Patsúka tirút•tatsta tat•státs•tak'sta.
+  p. 110  accent restored        Pitku Ra•sakuru' -> Pitku Rá•sakuru'
+  p. 110  accent restored        Sakuh•kiwatat -> Sakuh•kíwatat
+  p. 110  accent restored        Sakuh•waruksti' -> Sakuh•wáruksti'
+  p. 110  accent restored        Tawit Ra•sakuru' -> Tawit Rá•sakuru'
+  p. 110  accent restored        tat•stats•tak 'sta -> tat•státs•tak'sta.
+  p. 110  accent restored        tirut•tatsta -> tirút•tatsta
+  p. 111  OCR slip corrected     tatpd .waktit -> tat•pá•waktit
+  p. 111  accent restored        raku•wa .waktit ratara•kuki -> raku•wá•waktit ratara•kuki
+  p. 111  accent restored        ratara•kuki -> rátara•kuki
+  p. 111  two readings agree     ratku•w&waktit Pari -> ratku•wá•waktit Pari
+  p. 112  OCR slip corrected     Kaki', tatitska rakti•u•ta -> Kakí', tat•itska rakú•u•ta
+  p. 112  OCR slip corrected     Tat•itska ratkti .u .ta -> Tát•itska ratkú•u•ta
+  p. 112  OCR slip corrected     rakti•u•ta -> rakú•u•ta
+  p. 112  OCR slip corrected     raskti .u•ta -> raskú•u•ta
+  p. 112  OCR slip corrected     ratktI u•ta -> ratkú•u•ta
+  p. 112  accent restored        Kaki' -> Kakí',
+  p. 112  accent restored        Kirike ras•itska raskut•ara? -> Kirike rás•itska raskut•ara?
+  p. 112  accent restored        rakut•ara -> rakut•ára
+  p. 112  accent restored        raskut•ara -> raskut•ára
+  p. 112  accent restored        ratihku•riusis•ara' -> ratíhku•riusis•ára'
+  p. 112  accent restored        ratkut•ara -> ratkut•ára
+  p. 112  accent restored        ratku•'tsah•kaisat•ta -> ratku•'tsah•káisat•ta
+  p. 112  accent restored        ratku•ha•kawaats -> ratku•há•kawaats
+  p. 112  accent restored        ratku•kaisuh•ta -> ratku•kaísuh•ta
+  p. 112  accent restored        ratku•rapiha' -> ratku•rapíha'
+  p. 112  two readings agree     Ka rasiitska ratkti .u .ta -> Ka rás•itska ratkú•u•ta
+  p. 113  accent restored        Hiri we tur•rahe. -> Hiri we túr•rahe.
+  p. 113  accent restored        Ka ras•kika•ista rekits•katit? -> Ka rás•kika•ista rekíts•katit?
+  p. 113  accent restored        Nawa, siks .uka .a'. -> Nawa, síks•uka•a'.
+  p. 113  accent restored        Nawa, taku ka ra•ka .ku? -> Nawa, taku ká ra•ka•ku?
+  p. 113  accent restored        Sukspitit, tireku•skuskakusu. -> Suks•pitit, tireku•skúskakusu.
+  p. 113  accent restored        raku•ka .pihat -> raku•ká•pihat
+  p. 113  accent restored        raku•wa .waktit -> raku•wá•waktit
+  p. 113  accent restored        we raku•sakur•isat•ta -> we raku•sakur•ísat•ta
+  p. 113  apostrophe, dot or space Nawa -> Nawa,
+  p. 114  accent restored        Ahu', tsikstit tat•ku, -> Ahu', tsikstit tát•ku,
+  p. 114  accent restored        Nawa, tsikstit ka ras•ku? -> Nawa, tsikstit ka rás•ku?
+  p. 114  accent restored        Tsikstit ka ras•pari? -> (Tsikstit ka rás•pari?)
+  p. 117  apostrophe, dot or space ar + -> ar
+  p. 117  apostrophe, dot or space kur + -> kur
+  p. 117  apostrophe, dot or space or ah + -> or ah
+  p. 117  apostrophe, dot or space or kuh + -> or kuh
+  p. 117  apostrophe, dot or space tir + -> tir
+  p. 117  read at its own place  wi + -> wi+
+  p. 118  apostrophe, dot or space Ku•kur•rutsiks•taru ruksiri•witau tsahriks raku•ka•wihat asku akarraratau. Hawa ah•rukstah•ka•wariki arusa pitsikat -> Ku•kur•rutsiks•taru ruksiri•witau tsahriks raku•ka•wihat asku akar•raratau. Hawa ah•rukstah•ka•wariki arusa pit-sikat
+  p. 118  apostrophe, dot or space Pitkus•ihiri asku ri•katiharu tirah•pares•pari ' . Wi•tiks-kawutik•usuku taraha a rahurahki. Hawa tikstarah•ka-wa•karuku rikisu', atit, pahuks. Tirarah•kiwi a wi•tiks-takas•karuk•usuku a tirah•tsaisiku atit a pahuks. -> Pitkus•ihiri asku ri•katiharu tirah•pares•pari'. Wi•tiks-kawutik•usuku taraha a rahurahki. Hawa tikstarah•ka-wa•karuku rikisu', atit, pahuks. Tirarah•kiwi a wi•tiks-takas•karuk•usuku a tirah•tsaisiku atit a pahuks.
+  p. 118  apostrophe, dot or space Ti ratarak•akitah•ku Pari tuh•raru kskitiiks akitaru', he hiri we tahrak•ut; Tsawii, Kitkahahki, Pitahawirata, a Tskiri. Hiri wi•tuks•it•at akarraratau t'eks•kurit Kits Katus. -> Ti ratarak•akitah•ku Pari tuh•raru kskitiiks akitaru', he hiri we tahrak•ut; Tsawii, Kitkahahki, Pitahawirata, a Tskiri. Hiri wi•tuks•it•at akar•raratau t'eks•kurit Kits Katus.
+  p. 118  apostrophe, dot or space Wi•turuks•ka•hurar•ri hiri ah•ratukstak•kitkeu'. Tihe ra•akitarraruhat tsararat ra•hurit•at reh•kuhrah•witsa'. Resaru kuh•ri•ruhuru rakurak•tara hiri ra•saka•ku. -> Wi•turuks•ka•hurar•ri hiri ah•ratukstak•kitkeu'. Tihe ra•akitar•rar•uhat tsararat ra•hurit•at reh•kuhrah•witsa'. Resaru kuh•ri•ruhuru rakurak•tar•a hiri ra•saka•ku.
+  p. 121  apostrophe, dot or space kas•i•kika -> kas•i•kika'
+  p. 29   accent restored        kaki' -> kakí'
+  p. 29   apostrophe, dot or space hitu ' -> hitu'
+  p. 29   two readings agree     KIRIK1 RU'? -> KIRIKÉ RU'?
+  p. 29   two readings agree     had' -> haú'
+  p. 30   OCR slip corrected     Ka rii hitu '? -> Ka rú hitu'?
+  p. 30   accent restored        Ahu ', ti hitu'. -> Ahu', tí hitu'.
+  p. 30   accent restored        Hau, ti hitu'. -> Haú, tí hitu'.
+  p. 30   accent restored        Ka ru karitki? -> Ka rú karitki?
+  p. 30   accent restored        Kaki, kaki karitki. -> Kakí, kakí karitki.
+  p. 30   accent restored        Kirike ru'? -> Kiriké ru'?
+  p. 30   accent restored        Ti hitu '. -> Tí hitu'.
+  p. 30   apostrophe, dot or space reksu ' -> reksu'
+  p. 30   apostrophe, dot or space riksu ' -> riksu'
+  p. 32   accent restored        Ka ru kisu'? -> Ka rú kisu'?
+  p. 32   accent restored        Ka ru'? -> Ká ru'?
+  p. 32   accent restored        Kaki kisu'. -> Kakí kisu'.
+  p. 32   accent restored        Kaki'. -> Kakí'.
+  p. 32   accent restored        Suks-paku'. -> Suks•páku'.
+  p. 32   accent restored        Ti kisu'. -> Tí kisu'.
+  p. 33   OCR slip corrected     KIRIKJ RA•TARAWIS? -> KIRIKÉ RA•TARAWIS?
+  p. 33   accent restored        rakis•pahat -> rakís•pahat
+  p. 33   accent restored        rakis•tahkata -> rakis•táhkata
+  p. 33   accent restored        rakis•taka -> rakís•taka
+  p. 33   accent restored        ti kaats -> tí kaats
+  p. 33   accent restored        ti katiit -> tí katiit
+  p. 33   accent restored        ti kirareus -> ti kírareus
+  p. 33   accent restored        ti pahaat -> tí pahaat
+  p. 33   accent restored        ti rahkataa -> ti ráhkataa
+  p. 33   accent restored        ti takaa -> tí takaa
+  p. 33   accent restored        ti tareus -> tí tareus
+  p. 34   OCR slip corrected     Ka rd .tareus rakis? -> Ka rá•tareus rakis?
+  p. 34   accent restored        Ahu', rakis ti pahaat. -> Áhu', rakis tí pahaat.
+  p. 34   accent restored        Ka ra•pahaat rakis? -> Ka rá•pahaat rakis?
+  p. 34   accent restored        Kaki tareus, ti pahaat. -> Kakí tareus, tí pahaat.
+  p. 34   accent restored        Kirike ra•tarawis rakis? -> Kiriké ra•tarawis rakis?
+  p. 34   accent restored        Kiriks ti pahaat. -> Kiriks tí pahaat.
+  p. 34   accent restored        Kuruks ti katiit. -> Kuruks tí katiit.
+  p. 34   accent restored        Rakis ti pahaat. -> Rakis tí pahaat.
+  p. 34   accent restored        Ti kiriks•pahat. -> Ti kiríks•pahat.
+  p. 34   accent restored        Ti kuru'ks•katit. -> Ti kurúks•katit.
+  p. 34   accent restored        kiriks•pahat -> kiríks•pahat
+  p. 34   accent restored        kuruks•katit -> kurúks•katit
+  p. 35   accent restored        Suks•paku' -> Suks•páku'
+  p. 35   accent restored        rakis•tahkata -> rakis•táhkata
+  p. 35   apostrophe, dot or space hitu ' -> hitu'
+  p. 35   apostrophe, dot or space kitsu ' -> kitsu'
+  p. 36   accent restored        rutpatsat -> rutpátsat
+  p. 36   accent restored        ti katasa -> ti kátasa
+  p. 36   accent restored        ti ra .wa•hat -> ti rá•wa•hat
+  p. 36   accent restored        ti•tska•katasa -> ti•tska•kátasa
+  p. 36   apostrophe, dot or space kataru ' -> kataru'
+  p. 36   apostrophe, dot or space raku ' -> raku'
+  p. 36   apostrophe, dot or space tskau -> tskau*
+  p. 37   accent restored        het•kitsu ' -> het•kítsu'
+  p. 37   accent restored        kira•rasitu' -> kira•rásitu'
+  p. 37   accent restored        ra .ha•pi -> rá•ha•pi
+  p. 37   accent restored        rasitu' -> rasítu'
+  p. 37   accent restored        ti kits•u"hat -> ti kits•úhat
+  p. 37   apostrophe, dot or space hetu ' -> hetu'
+  p. 37   apostrophe, dot or space kitsu ' -> kitsu'
+  p. 37   two readings agree     ti r I ha•pi -> ti rá•ha•pi
+  p. 38   OCR slip corrected     Ka rds•atkuku'? -> Ka rás•atkuku'?
+  p. 38   OCR slip corrected     Stiks .atku! -> Súks•atku!
+  p. 38   accent restored        Asku su'ks•paku'. -> Asku súks•paku'.
+  p. 38   accent restored        Kits•Kuru'ks•Katit -> Kits•Kurúks•Katit
+  p. 38   accent restored        Kitu su'ksta•paku'. -> Kitu súksta•paku'.
+  p. 38   accent restored        Pahitu'! -> Pahítu'!
+  p. 38   accent restored        Sisu'ks•atku! -> Sisúks•atku!
+  p. 38   accent restored        Suksta'k•atku! -> Suksták•atku!
+  p. 38   accent restored        Uhaiwu' -> Uháiwu'
+  p. 38   apostrophe, dot or space Kits .Ka -> Kits•Ka
+  p. 39   OCR slip corrected     KIRIKJ RUT•U'? -> KIRIKÉ RUT•U'?
+  p. 39   accent restored        ti hak•tsa -> tí hak•tsa
+  p. 39   accent restored        ti rihu' -> tí rihu'
+  p. 39   accent restored        ti wa• ku -> ti wá•ku
+  p. 43   OCR slip corrected     KIRIKJ RAS•TA? -> KIRIKÉ RAS•TA?
+  p. 43   accent restored        tahrar•ra -> táhrar•ra
+  p. 43   accent restored        tah•ra -> táh•ra
+  p. 43   accent restored        tas•ta -> tás•ta
+  p. 49   OCR slip corrected     kirfku' -> kiríku'
+  p. 49   accent restored        TARIKTAU' -> TARÍKTAU'
+  p. 49   accent restored        tiku•raari' -> tiku•ráari'
+  p. 50   OCR slip corrected     Kaki ku .paks•tdari', -> Kaki ku•paks•táari',
+  p. 50   OCR slip corrected     Kiru rdspaks•ku? -> Kiru rás•paks•ku?
+  p. 50   accent restored        Ka ra•paks•taari'? -> Ka ra•paks•táari'?
+  p. 50   accent restored        Kiru ras•kirik•ta? -> Kiru rás•kirik•ta?
+  p. 50   accent restored        Ti rit•kirik•ta. -> Ti rit•kírik•ta.
+  p. 50   accent restored        Ti rit•paks•ku. -> Ti rit•páks•ku.
+  p. 50   accent restored        Tiku'ks•taari'. -> Tiku'ks•táari'.
+  p. 51   accent restored        Ti rit•kirik•ta. -> Ti rit•kírik•ta.
+  p. 51   accent restored        Tiku•paks•taari'. -> Tiku•paks•táari'.
+  p. 51   apostrophe, dot or space kararu ' -> kararu'
+  p. 51   apostrophe, dot or space tsiksu ' -> tsiksu'
+  p. 51   apostrophe, dot or space tsusu ' -> tsusu'
+  p. 52   OCR slip corrected     Siiks•at. -> Súks•at.
+  p. 52   OCR slip corrected     Suks•at pihkawf .hiri'. -> Suks•at pihkawí•hiri'.
+  p. 52   accent restored        Kirike ras•paku'? -> Kirike ras•páku'?
+  p. 52   accent restored        Pahitu suks .ku! -> Pahitu súks•ku!
+  p. 52   accent restored        Suks .at kusaksi. -> Suks•at kúsaksi.
+  p. 52   accent restored        Suks•paka-rihu'. -> Suks•paká•rihu'.
+  p. 52   accent restored        Sutsiks .sapita•hat. -> Sutsiks•sápita•hat.
+  p. 52   accent restored        aspitu ' -> aspítu'
+  p. 52   apostrophe, dot or space kskitsu ' -> kskitsu'
+  p. 53   OCR slip corrected     Suksta•pdku ' . -> Suksta•páku'.
+  p. 53   accent restored        Sisuks•paku'. -> Sísuks•paku'.
+  p. 53   accent restored        Suks•paku'. -> Suks•páku'.
+  p. 53   accent restored        Suks•pitit. -> Suks•pítit.
+  p. 53   accent restored        Tas•pa"ku'. -> Tas•páku'.
+  p. 53   accent restored        Tat•paku'. -> Tat•páku'.
+  p. 53   accent restored        Tat•pitit. -> Tat•pítit.
+  p. 53   accent restored        Tiku'ks•taa. -> Tiku'ks•táa.
+  p. 53   accent restored        Tiku'ks•taari'. -> Tiku'ks•táari'.
+  p. 54   OCR slip corrected     Stiksta•pu'. -> Súksta•pu'.
+  p. 54   OCR slip corrected     Stiks•at. -> Súks•at.
+  p. 54   accent restored        Sisukspaku'. -> Sísuks•paku'.
+  p. 54   accent restored        Sisukspitit. -> Sísuks•pitit.
+  p. 54   accent restored        Sitat .pitit. -> Sítat•pitit.
+  p. 54   accent restored        Sitat•paku'. -> Sítat•paku'.
+  p. 54   accent restored        Suksta-paku'. -> Suksta•páku'.
+  p. 54   accent restored        Suksta•pitit. -> Suksta•pítit.
+  p. 54   accent restored        Tahra .pitit. -> Tahrá•pitit.
+  p. 54   accent restored        Tahrapaku'. -> Tahra•páku'.
+  p. 54   accent restored        Tahra•pu'. -> Táhra•pu'.
+  p. 54   accent restored        Tat•at. -> Tát•at.
+  p. 54   read at its own place  Sisuks .pa. -> Sísuks•pa.
+  p. 54   read at its own place  Sitat•pa. -> Sítat•pa.
+  p. 55   accent restored        t 'ewasku -> t'éwasku
+  p. 55   accent restored        ti•kikat -> ti•kíkat
+  p. 55   accent restored        ti•wari' -> tí•wari'
+  p. 55   accent restored        tut•ari ' -> tut•ári'
+  p. 55   apostrophe, dot or space t 'itka -> t'itka
+  p. 56   accent restored        Kaki ' -> Kakí'
+  p. 56   accent restored        Kaki ', pita t'ewasku'. -> Kakí', pita t'éwasku'.
+  p. 56   accent restored        Pita ka ra•kikat? -> Pita ká ra•kikat?
+  p. 56   accent restored        Pita kirike rut•ari'? -> Pita kiriké rut•ari'?
+  p. 56   accent restored        Pita tiwari'. -> Pita tí•wari'.
+  p. 56   accent restored        irari ' -> irári'
+  p. 56   accent restored        ti•ari' -> tí•ari'
+  p. 56   accent restored        tsurasu' -> tsurásu'
+  p. 56   accent restored        tut•ari ' -> tut•ári'
+  p. 56   accent restored        witesatki -> witésatki
+  p. 57   accent restored        Kirike rasut•ari'? -> Kiriké rasut•ari'?
+  p. 57   accent restored        Kirike ratut•ari '? -> Kiriké ratut•ari'?
+  p. 57   accent restored        Kirike rit•ari '? -> Kiriké rit•ari'?
+  p. 57   accent restored        Kirike rutari '? -> Kiriké rut•ari'?
+  p. 57   accent restored        Kirike sirut•ari'? -> Kiriké sirut•ari'?
+  p. 57   accent restored        Siksut•tsa' -> Siksút•tsa'
+  p. 57   accent restored        Ta'tskipi. -> Tá'tskipi.
+  p. 57   accent restored        Tas•pari ' . -> Tás•pari'.
+  p. 57   accent restored        Tat•pari ' . -> Tát•pari'.
+  p. 57   accent restored        Tiku 'tskipi. -> Tikú'tskipi.
+  p. 57   accent restored        We rut•utsi•raru'. -> We rút•utsi•raru'.
+  p. 57   accent restored        t'eku'h•taku' -> t'ekúh•taku'
+  p. 57   accent restored        tat•akuh•taku ' -> tat•akúh•taku'
+  p. 57   accent restored        ta•kaahu' -> ta•káahu'
+  p. 57   accent restored        ti .raruku' -> tí•raruku'
+  p. 57   accent restored        tut•a•wahri' -> tut•á•wahri'
+  p. 57   read at its own place  Ti .wari'. -> Tí•wari'.
+  p. 57   two readings agree     TI'tskipi. -> Tí'tskipi.
+  p. 58   accent restored        Siti .wari'. -> Sití•wari'.
+  p. 58   accent restored        Tirah•wari'. -> Tiráh•wari'.
+  p. 58   accent restored        sita'tskipi -> sitá'tskipi
+  p. 58   accent restored        sitas .kikat -> sítas•kikat
+  p. 58   accent restored        sitat•kikat -> sítat•kikat
+  p. 58   accent restored        sitiku'tskipi -> sítiku'tskipi
+  p. 58   accent restored        ta 'tskipi -> tá'tskipi
+  p. 58   accent restored        tarak•itskipi -> tarak•ítskipi
+  p. 58   accent restored        tas•kikat -> tas•kíkat
+  p. 58   accent restored        tiku'tskipi -> tikú'tskipi
+  p. 58   accent restored        tikurak•itskipi -> tikurak•ítskipi
+  p. 59   accent restored        Ti pahaat -> Tí pahaat
+  p. 60   accent restored        atika' -> atíka'
+  p. 60   accent restored        atipat -> atípat
+  p. 60   accent restored        atira' -> atíra'
+  p. 60   accent restored        irari' -> irári'
+  p. 60   accent restored        iratsti ' -> irátsti'
+  p. 60   accent restored        itahri' -> itáhri'
+  p. 60   accent restored        tsiru ti•a -> tsirú ti•a
+  p. 60   accent restored        we ti•hura•hats -> we tí•hura•hats
+  p. 60   two readings agree     TAR1 RU'? -> TAKÉ RU'?
+  p. 60   two readings agree     atlas -> atías
+  p. 61   accent restored        Kaki ', atipat we ti hura•hats. -> Kakí', atipat we tí•hura•hats.
+  p. 61   accent restored        Take ru '? -> Také ru'?
+  p. 61   accent restored        Ti atira '. -> Tí atira'.
+  p. 61   accent restored        ka ra .wari ' -> ka rá•wari'
+  p. 61   accent restored        raktiki -> raktíki
+  p. 61   apostrophe, dot or space atira' -> atira'.
+  p. 61   read at its own place  patsi -> patsí
+  p. 61   two readings agree     Tsiru ka rail apat? -> Tsiru ka ra•á apat?
+  p. 61   two readings agree     hags -> haas
+  p. 61   two readings agree     swat -> awat
+  p. 62   OCR slip corrected     Nawa hfru'! -> Nawa híru'!
+  p. 62   OCR slip corrected     T'at•atsfks•ta -> T'at•atsíks•ta
+  p. 62   OCR slip corrected     We t'at•atsfks•tat•at -> We t'at•atsíks•tat•at
+  p. 62   OCR slip corrected     Wfs kutsu'! -> Wís kutsu'!
+  p. 62   OCR slip corrected     hidsti ' -> hiásti'
+  p. 62   OCR slip corrected     hikdri' -> hikári'
+  p. 62   OCR slip corrected     hipdkti' -> hipákti'
+  p. 62   OCR slip corrected     hisdsti' -> hisásti'
+  p. 62   OCR slip corrected     hiwdhri' -> hiwáhri'
+  p. 62   OCR slip corrected     hiwdririks -> hiwáririks
+  p. 62   accent restored        Kus•tutsi•erit -> Kus•tútsi•erit
+  p. 62   accent restored        Su'ksur•erit! -> Súksur•erit!
+  p. 62   accent restored        We tat•uhure•hats. -> We tat•uhúre•hats.
+  p. 62   accent restored        ti .wari ' -> tí•wari'
+  p. 62   two readings agree     Nawa niru! -> Nawa rúru!
+  p. 62   two readings agree     TsIru'. -> Tsíru'.
+  p. 62   two readings agree     tsikstit tI wari' -> tsikstit tí•wari'
+  p. 63   OCR slip corrected     ktI rasiru paks•ktiku' -> kú•rasir•u paks•kúku'
+  p. 63   OCR slip corrected     kti .ra•u paks•ktiku' -> kú•ra•u paks•kúku'
+  p. 63   OCR slip corrected     kti•ratiru paks-ktiku' -> kú•ratir•u paks•kúku'
+  p. 63   OCR slip corrected     ti ra•kti pita -> ti ra•kú pita
+  p. 63   accent restored        ti ra•ariki pita -> ti ra•arikí pita
+  p. 63   two readings agree     i ra•ariki pita -> ti ra•arikí pita
+  p. 63   two readings agree     i ra•kti pita -> ti ra•kú pita
+  p. 65   accent restored        akah•tahurus -> akah•táhurus
+  p. 65   accent restored        akar•raratau ' -> akar•rarátau'
+  p. 65   accent restored        akar•ratsape -> akar•ratsápe
+  p. 65   accent restored        arusa -> arúsa
+  p. 65   accent restored        asaki -> asáki
+  p. 65   accent restored        taraha•taka -> tarahá•taka
+  p. 66   accent restored        Kirike ras•taspe'? -> Kirike rás•taspe'?
+  p. 66   accent restored        Kiru ruks•ku'? -> Kíru ruks•ku'?
+  p. 66   accent restored        Ru tuks•kaku'. -> Rú tuks•kaku'.
+  p. 66   accent restored        Suks .atku. -> Suks•átku.
+  p. 66   accent restored        Tah•raspe ' asaki. -> Táh•raspe' asaki.
+  p. 66   accent restored        Tasuks•atku. -> Tasuks•átku.
+  p. 66   accent restored        t'erit -> t'érit
+  p. 66   accent restored        ti .kaku' -> ti•káku'
+  p. 66   accent restored        ti .raspe ' -> tí•raspe'
+  p. 66   accent restored        ti•hatuh•kaarit -> ti•hátuh•kaarit
+  p. 66   accent restored        ti•ukah•kawari ' -> ti•ukah•káwari'
+  p. 66   accent restored        tuks•arit -> túks•arit
+  p. 66   accent restored        tuks•hatuh•kaarit -> tuks•hátuh•kaarit
+  p. 66   apostrophe, dot or space Ahu', tat .huras asaki. -> Ahu', tat•huras asaki.
+  p. 67   accent restored        tas .kikat -> tas•kíkat
+  p. 67   accent restored        ti .kikat -> ti•kíkat
+  p. 67   apostrophe, dot or space Tuks .kaku '. -> Tuks•kaku'.
+  p. 67   two readings agree     Niru ruks•ku? -> Kíru ruks•ku?
+  p. 67   two readings agree     tat .kiikat -> tat•kíkat
+  p. 68   OCR slip corrected     asku•hti .kita -> asku•hú•kita
+  p. 68   OCR slip corrected     pitkus•htis•iri ' -> pitkus•hús•iri'
+  p. 68   OCR slip corrected     ti•hattih•kaarit -> ti•hatúh•kaarit
+  p. 68   accent restored        asku papitsisu ' -> asku papítsisu'
+  p. 68   accent restored        hatur•raru' -> hatur•ráru'
+  p. 68   accent restored        ikarikat -> ikárikat
+  p. 68   accent restored        kakat•ira ita' -> kakat•irá•ita'
+  p. 68   accent restored        papitsisu ' -> papítsisu'
+  p. 68   accent restored        papitsis•pahat -> papitsis•páhat
+  p. 68   accent restored        tat•ira•ita' -> tat•irá•ita'
+  p. 68   accent restored        ti•kaarit -> ti•káarit
+  p. 68   two readings agree     tawi•rIhuks•iri ' -> tawi•ríhuks•iri'
+  p. 69   OCR slip corrected     askti .ka•ke' -> askú•ka•ke'
+  p. 69   OCR slip corrected     pitati .asku -> pitaú•asku
+  p. 69   OCR slip corrected     pitkti .ka•ke' -> pitkú•ka•ke'
+  p. 69   OCR slip corrected     sihuks•tarti .kita -> sihuks•tarú•kita
+  p. 69   OCR slip corrected     tsktis•kakusu' -> tskús•kakusu'
+  p. 69   accent restored        Ka ru rut•tsirau '? -> Ka ru rut•tsírau'?
+  p. 69   accent restored        Ru tut•tsirau ' . -> Ru tut•tsírau'.
+  p. 69   accent restored        Tari'. -> Tarí'.
+  p. 69   accent restored        Tat•atsiks•tehu'. -> Tat•atsíks•tehu'.
+  p. 69   accent restored        ksur awiu' -> ksúr•awiu'
+  p. 69   accent restored        raku•kita -> rakú•kita
+  p. 69   accent restored        ra•reka .kusu' -> ra•reká•kusu'
+  p. 69   accent restored        reka .kusu' -> reká•kusu'
+  p. 69   accent restored        ru•kat•awi•riku -> ru•kat•awi•ríku
+  p. 69   accent restored        tawit•ka•ke' -> tawít•ka•ke'
+  p. 69   accent restored        tuks•kata•ku hiri -> tuks•katá•ku hiri
+  p. 69   apostrophe, dot or space pitau ' -> pitau'
+  p. 70   accent restored        t 'ewari ' -> t'éwari'
+  p. 70   accent restored        ti•'isat -> tí•'isat
+  p. 70   accent restored        ti•hawari' -> ti•háwari'
+  p. 70   read at its own place  +ha + -> +ha+
+  p. 71   OCR slip corrected     Kirti ra•'at rikutski? -> Kirú ra•'at rikutski?
+  p. 71   accent restored        Ka ra•awari rikutski? -> Ka rá•awari rikutski?
+  p. 71   accent restored        Kaki', rikutski ti .'isat. -> Kakí', rikutski tí•'isat.
+  p. 71   accent restored        rahrurahki -> rahrúrahki
+  p. 71   accent restored        ti•hu'at -> ti•hú'at
+  p. 71   accent restored        ti•hu•isat -> ti•hú•isat
+  p. 71   accent restored        ti•hu•kata'at -> ti•hu•káta'at
+  p. 71   accent restored        ti•ka•isat -> ti•káisat
+  p. 71   accent restored        tspirarus -> tspirárus
+  p. 71   accent restored        tu'h•kuksas -> túh•kuksas
+  p. 71   read at its own place  +hu + -> +hu+
+  p. 72   accent restored        Kiwaku ti pahaat. -> Kiwaku tí pahaat.
+  p. 72   accent restored        Kiwaku we tu'h•kuksas . -> Kiwaku wé túh•kuksas.
+  p. 72   accent restored        Rikutski ti pahaat. -> Rikutski tí pahaat.
+  p. 72   accent restored        Ti pahaat rikutski. -> Tí pahaat rikutski.
+  p. 72   accent restored        karit•kutsu' -> karít•kutsu'
+  p. 72   accent restored        ra .hak•tsa -> rá•hak•tsa
+  p. 72   accent restored        t 'ewi 'at -> t'ewí'at
+  p. 72   accent restored        ti hak•tsa -> tí hak•tsa
+  p. 72   accent restored        tut .awi'at -> tut•awí'at
+  p. 73   accent restored        Hiri Ra•ka•hurah•katiit•u' -> Hiri Ra•ká•huráh•katiit•u'
+  p. 73   accent restored        Hiri Ra•saka•ku -> Hiri Ra•sáka•ku
+  p. 73   accent restored        Kiru ras•at -> Kirú ras•at
+  p. 73   accent restored        Siks a'. -> Síks•a'.
+  p. 73   accent restored        We tat•ka•isat -> We tat•ká•isat
+  p. 73   apostrophe, dot or space We tatir•a ' . -> We tatir•a'.
+  p. 74   accent restored        paresu ' -> parésu'
+  p. 74   accent restored        ti•hih•katsaku ' -> ti•hih•kátsaku'
+  p. 74   accent restored        ti•taka•asiku ' -> ti•taka•asíku'
+  p. 74   accent restored        ti•taka•asit -> ti•taká•asit
+  p. 74   apostrophe, dot or space pitarau ' -> pitarau'
+  p. 74   apostrophe, dot or space tsaparau ' -> tsaparau'
+  p. 75   accent restored        Kirike ruh•ra' paresu '? -> Kiriké ruh•ra' paresu'?
+  p. 75   accent restored        Paresu kirike rut•ari '? -> Paresu kiriké rut•ari'?
+  p. 75   accent restored        Paresu ti•taka•asiku'. -> Paresu ti•taka•asíku'.
+  p. 75   accent restored        kataraki -> katáraki
+  p. 75   accent restored        raharisu' -> rahárisu'
+  p. 75   accent restored        ti .ari' -> tí•ari'
+  p. 75   accent restored        ti teriwis -> ti teríwis
+  p. 75   accent restored        tut•ari ' -> tut•ári'
+  p. 75   apostrophe, dot or space Paresu tuh•ra' tiraku ' . -> Paresu tuh•ra' tiraku'.
+  p. 75   read at its own place  ti .ra -> tí•ra
+  p. 76   OCR slip corrected     ti•kuwtitiku' -> ti•kuwútiku'
+  p. 76   accent restored        asku•ra•wa'kahu ' -> asku•ra•wákahu'
+  p. 76   accent restored        het•kata'ku -> het•katáku
+  p. 76   accent restored        kahike -> kahíke
+  p. 76   accent restored        kirik•erisu' -> kirik•érisu'
+  p. 76   accent restored        paresu ' -> parésu'
+  p. 76   accent restored        pawaktiku' -> pawaktíku'
+  p. 76   accent restored        rahi•kutsu' -> ráhi•kutsu'
+  p. 76   accent restored        rehkit•awiu' -> rehkit•áwiu'
+  p. 76   accent restored        resaru' -> resáru'
+  p. 76   accent restored        tahrak•ut paresu ' -> tahrák•ut parésu'
+  p. 76   accent restored        taraha•riki' -> táraha•riki'
+  p. 76   accent restored        ti .kuwutit -> tí•kuwutit
+  p. 76   accent restored        tira'k•tarikuts -> tirák•tarikuts
+  p. 76   accent restored        tirak•a•raruku ' -> tirak•á•raruku'
+  p. 76   accent restored        ti•hirasa -> ti•hírasa
+  p. 76   accent restored        ti•wa'ktiku' -> ti•wáktiku'
+  p. 76   accent restored        tsahriks•tahrurikukus -> tsahriks•táhrurikukus
+  p. 76   accent restored        uruksas -> urúksas
+  p. 77   accent restored        Arisit suks•at. -> Arisít suks•at.
+  p. 77   accent restored        Ra kitu'. -> Ra kítu'.
+  p. 77   accent restored        Suks•kata .hat! -> Suks•katá•hat!
+  p. 77   accent restored        Suks•taka•hat! -> Súks•taka•hat!
+  p. 77   accent restored        Tas•kitawe' -> Tas•kítawe'
+  p. 77   accent restored        pare'ku' -> paréku'
+  p. 78   OCR slip corrected     KA RIiH•RATSAUS? -> KA RÚH•RATSAUS?
+  p. 78   OCR slip corrected     kaktih•kaharawere -> kakúh•kaharawere
+  p. 78   OCR slip corrected     tikiih•ratsaus -> tikúh•ratsaus
+  p. 78   accent restored        kakuh•tahare -> kakuh•táhare
+  p. 78   accent restored        tiku•hatstahis -> tikú•hatstahis
+  p. 78   accent restored        tiku•kiktit -> tíku•kiktit
+  p. 78   accent restored        tuh•kaharawere -> túh•kaharawere
+  p. 78   accent restored        tuh•tahare -> tuh•táhare
+  p. 79   accent restored        Ka ruh•ratsaus? -> Ka rúh•ratsaus?
+  p. 79   accent restored        Ka ruruks•tahare? -> Ka ruruks•táhare?
+  p. 79   accent restored        Kaki', kakuruks•tahare. -> Kakí', kakuruks•táhare.
+  p. 79   accent restored        Kaki', we tatuks•a .ka-wahtsu'. -> Kakí', we tatuks•á•ka-wahtsu'.
+  p. 79   accent restored        Kirike rasuks•a? -> Kiriké rasuks•a?
+  p. 79   accent restored        Tatuks•a kisatski. -> Tatuks•a kísatski.
+  p. 79   accent restored        ha .kawahtsisu ' -> há•kawahtsisu'
+  p. 79   accent restored        kait ta .taha' -> kait tá•taha'
+  p. 79   accent restored        kisatski -> kísatski.
+  p. 79   accent restored        ra•kits•katit -> ra•kíts•katit
+  p. 79   accent restored        rekits•tiwiru' -> rekits•tíwiru'
+  p. 79   accent restored        tihr'a•kawahtsista' -> tihr'á•kawahtsista'
+  p. 79   accent restored        tuks•kaharurit -> túks•kahar•urit
+  p. 79   accent restored        tut•atsiks•u' -> tút•atsiks•u'
+  p. 79   accent restored        tut•kirahkata -> tut•kiráhkata
+  p. 79   two readings agree     6u' -> hu'
+  p. 79   two readings agree     Ilan', tiku•ratsaus. -> Háu', tikú•ratsaus.
+  p. 79   two readings agree     tI ra•hu' -> tí•ra•hu'
+  p. 80   OCR slip corrected     Aka ' , hiri we ttih•kaharawere. -> Aka', hiri we túh•kaharawere.
+  p. 80   OCR slip corrected     Kesku•'ti kait. -> Kesku•'ú kait.
+  p. 80   OCR slip corrected     Ketard .pu'! -> Ketará•pu'!
+  p. 80   OCR slip corrected     Stiks•kika'. -> Súks•kika'.
+  p. 80   OCR slip corrected     Tuhtira•pu'! -> Tuhúra•pu'!
+  p. 80   accent restored        Istu ka ras•itska'? -> Istu ka rás•itska'?
+  p. 80   accent restored        Ketsih .wa. -> Kétsih•wa.
+  p. 80   accent restored        Kirike ras•itska'? -> Kirike rás•itska'?
+  p. 80   accent restored        Suks•kits karihats! -> Suks•kíts karihats!
+  p. 80   accent restored        Tuhurak•a .kawats! -> Tuhurak•á•kawats!
+  p. 80   accent restored        We tat•ka•wakit. -> We tat•ká•wakit.
+  p. 80   accent restored        kira•rasitu' -> kirá•rasitu'
+  p. 80   accent restored        kiri•wusu' -> kíri•wusu'
+  p. 80   accent restored        ki•rahkata -> ki•ráhkata
+  p. 80   apostrophe, dot or space ripiku ' -> ripiku'
+  p. 80   read at its own place  wusu ' -> wusu'
+  p. 81   accent restored        Ta.tuks•at. -> Tátuks•at.
+  p. 81   accent restored        Tat .kika'. -> Tat•kíka'.
+  p. 81   accent restored        Tatuks•kika'. -> Tatúks•kika'.
+  p. 81   accent restored        Tat•kikahu ' . -> Tat•kíkahu'.
+  p. 81   read at its own place  We tatuks•at. -> We tátuks•at.
+  p. 82   OCR slip corrected     rtiruks•tapu -> rúruks•tapu
+  p. 82   OCR slip corrected     stiks•u -> súks•u
+  p. 82   OCR slip corrected     stiruks•tat -> súruks•tat
+  p. 82   accent restored        (we) tah .rapu -> (we) táh•rapu
+  p. 82   accent restored        (we) tata•u -> (we) táta•u
+  p. 82   accent restored        (we) taturrat -> (we) tátur•rat
+  p. 82   accent restored        (we) tat•u -> (we) tát•u
+  p. 82   accent restored        (we) tiku•rapu -> (we) tikú•rapu
+  p. 82   accent restored        kesku•'u -> késku•'u
+  p. 82   accent restored        suks•tapu -> súks•tapu
+  p. 83   OCR slip corrected     Kitske rd•awitsu'? -> Kitske rá•awitsu'?
+  p. 83   OCR slip corrected     tat•dwarit -> tat•áwarit
+  p. 83   OCR slip corrected     tdt•huras -> tát•huras
+  p. 83   OCR slip corrected     ti witstI rihu' -> ti witsú•rihu'
+  p. 83   accent restored        Ka ras•tapu rekits•tiwiru'? -> Ka rás•tapu rekits•tíwiru'?
+  p. 83   accent restored        Kaki', tiku•rapu rekits•tiwiru'. -> Kakí', tiku•rapu rekits•tíwiru'.
+  p. 83   accent restored        Ketuh•kusit asku. -> Kétuh•kusit asku.
+  p. 83   accent restored        Ketuh•kusit papitsisu kitu. -> Kétuh•kusit papítsisu kitu.
+  p. 83   accent restored        Kuka ras•ta papitsisu '? -> Kuka ras•tá papitsisu'?
+  p. 83   accent restored        Rekits•tiwiru' we tat•u. -> Rekits•tíwiru' we tat•u.
+  p. 83   accent restored        Suks•u rekits•tiwiru'. -> Suks•u rekits•tíwiru'.
+  p. 83   accent restored        T'ewitsu asku. -> T'éwitsu asku.
+  p. 83   accent restored        hiru suks•kusit -> hirú suks•kusit
+  p. 83   accent restored        istu suks•u -> istú suks•u
+  p. 83   accent restored        kaki kapakis -> kaki kápakis
+  p. 83   accent restored        ta .utu' -> tá•utu'
+  p. 83   accent restored        tah•riwarit -> tah•ríwarit
+  p. 83   accent restored        tatur•iwit -> tatur•íwit
+  p. 83   accent restored        ti kapakis -> ti kápakis
+  p. 83   accent restored        tut .stakis -> tút•stakis
+  p. 84   OCR slip corrected     Ktisti•at -> Kústi•at
+  p. 84   OCR slip corrected     Rtiruks•at. -> Rúruks•at.
+  p. 84   OCR slip corrected     Rtiruks•pu'. -> Rúruks•pu'.
+  p. 84   OCR slip corrected     Stiksta•pu'. -> Súksta•pu'.
+  p. 84   accent restored        (hirihe) Situks•pa. -> (hirihe) Sítuks•pa.
+  p. 84   accent restored        Siruks•pa. -> Síruks•pa.
+  p. 84   accent restored        Su'ks•at. -> Súks•at.
+  p. 84   accent restored        Tsiks•pa. -> Tsíks•pa.
+  p. 84   accent restored        Tu'ksta•pu'. -> Túksta•pu'.
+  p. 84   accent restored        We sitata•u. -> We sitáta•u.
+  p. 84   accent restored        We sitat•u. -> We sitát•u.
+  p. 84   accent restored        We tat-u. -> We tát•u.
+  p. 84   accent restored        We tatak•u -> We tátak•u
+  p. 84   accent restored        We tatarak•u. -> We tatárak•u.
+  p. 84   accent restored        We tata•u. -> We táta•u.
+  p. 85   accent restored        raku•kariu' -> raku•káriu'
+  p. 85   accent restored        ta.tuks•at -> tátuks•at
+  p. 85   accent restored        tatuks•itsah•ka'isat -> tatuks•itsah•ká'isat
+  p. 85   accent restored        tatuks•ka•isat -> tatuks•ká•isat
+  p. 85   accent restored        tatutak•erit -> tatutak•érit
+  p. 85   accent restored        tatut•erit -> tatut•érit
+  p. 85   accent restored        tsuskiit -> tsuskíit
+  p. 85   two readings agree     KIRU RATSUKS•AT? -> KIRU RÁSUKS•AT?
+  p. 86   OCR slip corrected     hiri ra•ttirihu•ru' -> hiri ra•túrihu•ru'
+  p. 86   accent restored        Kaas raku•kariu tatutak•erit. -> Kaas raku•kariu tatutak•érit.
+  p. 86   accent restored        Kirike rasut•erit? -> Kiriké rasut•erit?
+  p. 86   accent restored        Kiru rasuks•at? -> Kiru rásuks•at?
+  p. 86   accent restored        Tatuks•at Pari. -> Tatuks•at Pári.
+  p. 86   accent restored        Tatuks•itsah•ka'isat. -> Tatuks•itsah•ká'isat.
+  p. 86   accent restored        Tawit kaas tatutak•erit. -> Tawit kaas tatutak•érit.
+  p. 86   accent restored        akarra•pisu ' -> akar•ra•písu'
+  p. 86   accent restored        hiri ra•wa•ra•ruhat -> hiri rá•wa•ra•ruhat
+  p. 86   accent restored        iks•aparari•hus -> iks•aparári•hus
+  p. 86   apostrophe, dot or space tawit -> tawit,
+  p. 86   apostrophe, dot or space ti ri•parari ' -> ti ri•parari'
+  p. 87   OCR slip corrected     Tuhkaka' hiri rd .huri•wawi -> Tuhkaka' hiri rá•huri•wawi
+  p. 87   accent restored        Akitaru' -> Akitáru'
+  p. 87   accent restored        Asakiwa•ru -> Asakíwa•ru
+  p. 87   accent restored        Astarahi•ru' -> Astarahí•ru'
+  p. 87   accent restored        Kiru rasu'ks•at? -> Kiru rasúks•at?
+  p. 87   accent restored        Pahriksukat hiri ra•huri•wawi -> Pahríksukat hiri rá•huri•wawi
+  p. 87   accent restored        Pasuhara•ru -> Pasuhára•ru
+  p. 87   accent restored        Rihita-wiru -> Rihitá•wiru.
+  p. 87   accent restored        Ru tatuks•at Rihita•wiru. -> Ru tatuks•at Rihitá•wiru.
+  p. 87   accent restored        Tatuks•itsah•kaa. -> Tatuks•itsah•káa.
+  p. 87   accent restored        Ti Rihita. -> Ti Ríhita.
+  p. 87   accent restored        Tsawii -> Tsawíi
+  p. 88   accent restored        Pahuks•Tatu' -> Páhuks•Tatu'
+  p. 88   accent restored        Pitahawirata -> Pitahawírata
+  p. 88   accent restored        Tskiri•Raru' -> Tskiri•Ráru'
+  p. 88   accent restored        Tuhwa•Hu'kasa -> Tuhwa•Húkasa
+  p. 88   accent restored        Tuhwits•Pihat . -> Tuhwits•Píhat
+  p. 88   apostrophe, dot or space kit-kaharu ' -> kit-kaharu'
+  p. 89   accent restored        Sitasuks•pa. -> Sitásuks•pa.
+  p. 89   accent restored        Sitatuks•pa. -> Sítatuks•pa.
+  p. 89   accent restored        Situks•pa. -> Sítuks•pa.
+  p. 89   accent restored        Tasu'ks•at. -> Tasúks•at.
+  p. 89   accent restored        Tasuksta•pu'. -> Tasúksta•pu'.
+  p. 89   accent restored        Tatuksta•pu'. -> Tatúksta•pu'.
+  p. 89   accent restored        Tatuks•at. -> Tatúks•at.
+  p. 89   accent restored        Ti .wu'. -> Tí•wu'.
+  p. 89   accent restored        hiri ratukstak•kitkeu' -> hiri ratukstak•kítkeu'
+  p. 89   accent restored        ti ratukstak•kitkeu' -> ti ratukstak•kítkeu'
+  p. 89   apostrophe, dot or space ra'at? -> ra•'at?
+  p. 89   read at its own place  Tuks•at. -> Túks•at.
+  p. 90   OCR slip corrected     taturuks•atktiku' -> taturuks•atkúku'
+  p. 90   OCR slip corrected     ttItsiks•erit -> tútsiks•erit
+  p. 90   accent restored        KA RUSUT•ERIT? -> KÁ RUSUT•ERIT?
+  p. 90   accent restored        taturatku' -> tatur•átku'
+  p. 90   accent restored        taturatku'ku' -> tatur•atkúku'
+  p. 90   accent restored        taturu'ks•atku' -> taturúks•atku'
+  p. 90   accent restored        tira•pahit -> ti•rá•pahit
+  p. 90   accent restored        ti•waka•rihu -> ti•waká•rihu
+  p. 90   accent restored        tu'ks•tihu' -> túks•tihu'
+  p. 90   accent restored        tuks•paka•rihu' -> tuks•paká•rihu'
+  p. 90   accent restored        tuks•ta•pahit -> tuks•tá•pahit
+  p. 90   accent restored        tut•eriku' -> tut•ériku'
+  p. 90   accent restored        tut•erit -> tut•érit
+  p. 91   OCR slip corrected     Ka ruks•pakd•rihu? -> Ka ruks•paká•rihu?
+  p. 91   OCR slip corrected     Kaki', pita tur•dtku' kuruks. -> Kaki', pita tur•átku' kuruks.
+  p. 91   OCR slip corrected     kakd taris -> kaká taris
+  p. 91   OCR slip corrected     ru ti ra•pdrihrit -> ru ti ra•párihrit
+  p. 91   OCR slip corrected     ru tuks•ta•pdrihrit -> ru tuks•ta•párihrit
+  p. 91   OCR slip corrected     ta rara•rdsitu' -> ta rara•rásitu'
+  p. 91   OCR slip corrected     ta rd ritu' -> ta rá•ritu'
+  p. 91   OCR slip corrected     ta•rti .tsa ' -> ta•rú•tsa'
+  p. 91   OCR slip corrected     td taris -> tá taris
+  p. 91   accent restored        Pita ka rut•erit kuruks? -> Pita ká rut•erit kuruks?
+  p. 91   accent restored        t'iks•tauk•at -> t'íks•tauk•at
+  p. 91   accent restored        ti .tahit -> tí•tahit
+  p. 91   accent restored        ti kasis -> tí kasis
+  p. 91   accent restored        ti katus -> tí katus
+  p. 91   accent restored        tuks•iks•tauk•at -> tuks•íks•tauk•at
+  p. 91   accent restored        tut•urikut -> tut•uríkut
+  p. 92   OCR slip corrected     tf•'at -> tí•'at
+  p. 92   accent restored        Hais•atku! -> Háis•atku!
+  p. 92   accent restored        Hais•tiwata! -> Háis•tiwáta!
+  p. 92   accent restored        kakas•at -> kakás•at
+  p. 92   accent restored        kakat•at -> kakát•at
+  p. 92   accent restored        ta rara•rasitu -> ta rara•rásitu
+  p. 92   accent restored        tas•at -> tás•at
+  p. 92   accent restored        tat•at -> tát•at
+  p. 92   accent restored        ta•rutsa' -> ta•rútsa'
+  p. 92   two readings agree     ta na ritu' -> ta rá•ritu'
+  p. 92   two readings agree     to taxis -> tá taris
+  p. 93   accent restored        Ka ris•utsi•urikat! -> Ka ris•utsí•uríkat!
+  p. 93   accent restored        Kitu sitatut•erit. -> Kitú sitatut•erit.
+  p. 93   accent restored        Kitu sititerit. -> Kitú sitit•erit.
+  p. 93   accent restored        Pita kuruks ti .kuwutit. -> Pita kuruks tí•kuwutit.
+  p. 93   accent restored        Pita ti•kuwutit kuruks. -> Pitá ti•kuwutit kuruks.
+  p. 93   accent restored        Sitasuterit. -> Sítasut•erit.
+  p. 93   accent restored        Sitatut•erit. -> Sítatut•erit.
+  p. 93   accent restored        Situt•erit. -> Situt•érit.
+  p. 93   accent restored        Take rut•erit? -> Také rut•erit?
+  p. 93   accent restored        Tasuhra'k•erit. -> Tasuhrák•erit.
+  p. 93   accent restored        Tasut .erit. -> Tasut•érit.
+  p. 93   accent restored        Tatsi't•erit. -> Tatsi't•érit.
+  p. 93   accent restored        Tatut .erit. -> Tatut•érit.
+  p. 93   accent restored        Tut•erit. -> Tut•érit.
+  p. 94   accent restored        Arusa ti•kis•kata•wakta'. -> Arusa ti•kis•kata•wákta'.
+  p. 94   accent restored        Kuruks ti•wa'ktahu'. -> Kuruks ti•wáktahu'.
+  p. 94   accent restored        Rikutski ti•waktahu ' . -> Rikutski ti•wáktahu'.
+  p. 94   accent restored        Taraha kata•kaksa'. -> Taraha kata•káksa'.
+  p. 94   accent restored        Tatut•erit. -> Tatut•érit.
+  p. 94   accent restored        Ti•kuruks•pa'ktahu'. -> Ti•kuruks•páktahu'.
+  p. 94   accent restored        Witi tatut•erit. -> Wití tatut•erit.
+  p. 94   two readings agree     Asaki tirah•kI wat. -> Asaki tirah•kí•wat.
+  p. 95   OCR slip corrected     (we) t'at•tstI a -> (we) t'at•tsú•a
+  p. 95   OCR slip corrected     t'at•tsti•a•usuku ' -> t'at•tsú•a•usuku'
+  p. 95   accent restored        RI•KATIHARU' -> RI•KÁTIHARU'
+  p. 95   accent restored        tatut•a•wahri' -> tatut•á•wahri'
+  p. 95   accent restored        we ra•katarah•kaa -> we ra•katárah•kaa
+  p. 95   two readings agree     tatut• i wahri•tisuku' -> tatut•á•wahri•úsuku'
+  p. 96   OCR slip corrected     'T'at•tstfa•usuku retskuhke. -> T'at•tsú•a•usuku retskuhke.
+  p. 96   OCR slip corrected     Kirike rusut-ari•tisuku retskuhke? -> Kiriké rusut•ari•úsuku retskuhke?
+  p. 96   OCR slip corrected     rahtiritat ta hti .tuhtu' -> rahúritat ta hú•tuhtu'
+  p. 96   OCR slip corrected     ta htftuhtu' -> ta hú•tuhtu'
+  p. 96   OCR slip corrected     tahra•pares•pa•tisuku' -> tahra•pares•pa•úsuku'
+  p. 96   OCR slip corrected     tatuhra•rawe•tisuku' -> tatuhra•rawe•úsuku'
+  p. 96   OCR slip corrected     tirara 'h•kiwiktisuku ' -> tiraráh•kiwik•úsuku'
+  p. 96   OCR slip corrected     tirarah•karuktisuku' -> tiraráh•karuk•úsuku'
+  p. 96   OCR slip corrected     tira•iwawattisuku' -> tira•íwawat•úsuku'
+  p. 96   OCR slip corrected     ti•hurertisuku' -> ti•hurer•úsuku'
+  p. 96   OCR slip corrected     ti•it•iks•aparari•tisuku' -> ti•it•iks•aparari•úsuku'
+  p. 96   accent restored        Kirike rut•kahu•raru' retskuhke? -> Kirike rut•káhu•raru' retskuhke?
+  p. 96   accent restored        ta .wiritstu' -> tá•wiritstu'
+  p. 96   accent restored        tat•kata•ispu'suku' -> tat•kata•íspu'suku'
+  p. 96   accent restored        tih•tawa•karukusuku' -> tih•tawá•karuk•usuku'
+  p. 96   accent restored        ti•hurerus -> tí•hurer•us
+  p. 96   accent restored        ti•pitsi' -> tí•pitsi'
+  p. 96   accent restored        tuh•sa .usuku' -> tuh•sá•usuku'
+  p. 96   two readings agree     We to tut•a•wahri•usuku'. -> We tatut•a•wahri•usuku'.
+  p. 97   OCR slip corrected     Kut'at•tsu•d ista. -> Kut'at•tsu•á•ista.
+  p. 97   OCR slip corrected     We t'at•tsu•a•tisuku'. -> We t'at•tsu•a•úsuku'.
+  p. 97   OCR slip corrected     We tuks•at•tsti .a. -> We tuks•at•tsú•a.
+  p. 97   OCR slip corrected     tirardh•karu -> tiraráh•karu
+  p. 97   OCR slip corrected     tirardh•kiwiku' -> tiraráh•kiwiku'
+  p. 97   accent restored        Aka, hiri we ta•hu•tuhtu'! -> Aka, hiri we ta•hú•tuhtu'!
+  p. 97   accent restored        Aka, hiri we ti•pitsi ' ! -> Aka, hiri we ti•pítsi'!
+  p. 97   accent restored        Hiri we ta•hu•tawi•rihu! -> Hiri we ta•hu•tawí•rihu!
+  p. 97   accent restored        Suks•teka .rikut. -> Suks•teká•rikut.
+  p. 97   accent restored        Suks•teka•wu. -> Suks•teká•wu.
+  p. 97   accent restored        We kut'at-tsu .a. -> We kut'at•tsú•a.
+  p. 97   accent restored        We t 'at•tsu•a. -> We t'at•tsú•a.
+  p. 97   accent restored        tirarah-karuk•usuku' -> tiraráh•karuk•usuku'
+  p. 97   accent restored        tirarah•kiwik•usuku ' -> tiraráh•kiwik•usuku'
+  p. 97   read at its own place  T'at•tsu•d .ista. -> T'at•tsu•á•ista.
+  p. 97   read at its own place  tirarah .karuku -> tiraráh•karuku
+  p. 97   read at its own place  tirardh•kiwi -> tiraráh•kiwi
+  p. 97   two readings agree     We t'at .tszi-a. -> We t'at•tsú•a.
+  p. 98   accent restored        kiru rira•awi•u -> kirú rira•awi•u
+  p. 98   accent restored        kitske we ru' -> kitské we ru'
+  p. 98   accent restored        ti saku'h kit'arit -> ti sakúh kit'arit
+  p. 98   accent restored        we ti pitku -> we tí pitku
+  p. 98   accent restored        we ti pitku a ikarikat -> we ti pitku á ikarikat
+  p. 98   accent restored        we tiu'h•kita•watat pitku -> we tiúh•kita•watat pitku
+  p. 98   accent restored        we tiwitsuh•ta' tawit -> we tiwítsuh•ta' tawit
+  p. 98   two readings agree     KITSKI WE RU' -> KITSKÉ WE RU'
+  p. 99   OCR slip corrected     Kirti rira•awi•u tasih•ka•isa'? -> Kirú rira•awi•u tasih•ká•isa'?
+  p. 99   OCR slip corrected     We witi tat•titsi'sta. -> We wíti tat•útsi'sta.
+  p. 99   accent restored        Ka we rasih•wata'? -> Ka we rásih•wata'?
+  p. 99   accent restored        Siks•pata'! -> Siks•páta'!
+  p. 99   accent restored        Tat•atsiks•tehu'. -> Tat•atsíks•tehu'.
+  p. 99   accent restored        we tatih•wata' -> we tatíh•wata'
+  p. 99   accent restored        we tat•sta -> we tát•sta
+  p. 99   accent restored        we ti .witsat -> we tí•witsat
+  p. 99   accent restored        we ti .witsat ratkut•a .wahri' -> we tí•witsat ratkut•á•wahri'
+  p. 99   accent restored        we ti hurarawa -> we tí hurar•awa
+  p. 99   accent restored        we ti sakuh .teriwi .ra-hat -> we ti sakuh•teriwí•ra•hat
+  p. 99   apostrophe, dot or space we ti sakurisat -> we ti sakur•isat
+  p. 99   two readings agree     we to sak•ta -> we ta sák•ta
+
+== 3. Entries
+
+== 5. The same forms in other tables (8 values)
+  bb_gap_triage.bb_skiri_form        7
+  blue_book_attestations.full_sentence_pawnee 1
+  bb_gap_triage.bb_skiri_form  Sisuks .pa. -> Sísuks•pa.
+  bb_gap_triage.bb_skiri_form  Sitat•pa. -> Sítat•pa.
+  bb_gap_triage.bb_skiri_form  Ti .wari'. -> Tí•wari'.
+  bb_gap_triage.bb_skiri_form  We tatuks•at. -> We tátuks•at.
+  bb_gap_triage.bb_skiri_form  T'at•tsu•d .ista. -> T'at•tsu•á•ista.
+  bb_gap_triage.bb_skiri_form  Tuks•a .kawahtsu'. -> Tuks•á•kawahtsu'.
+  bb_gap_triage.bb_skiri_form  tiheruks. -> tihéruks.
+  blue_book_attestations.full_sentence_pawnee  Tuks•at. -> Túks•at.
+
+== Stored form confirmed by a later reading (7)
+  p. 29   B118  stored "ti'"; found at its own place (the only whole word) and read there as stored
+  p. 31   R0024 stored 'rakis'; found at its own place (the only whole word) and read there as stored
+  p. 36   R0071 stored 'pa'; found at its own place (the row's English follows) and read there as stored
+  p. 39   R0102 stored 'hak +'; found at its own place (the only whole word) and read there as stored
+  p. 43   R0108 stored '+ ra'; found at its own place (the row's English follows) and read there as stored
+  p. 61   R0235 stored 'tiwat'; found at its own place (the row's English follows) and read there as stored
+  p. 63   R0262 stored 'ku +'; found at its own place (the only whole word) and read there as stored
+
+== Left for a person (17)
+  p. 100  R0685 reader unsure; second reading: TÍRUKS•TSAK•ARIKI stored 'tiruks•tsakariki'; the reader saw 'TÍRU[?]KS•TSAK•ARIKI'
+  p. 112  R0808 capitals differ; second reading: Tát•itska ratkú•u•ta stored 'tatitska'; the reader saw 'Tát•itska'
+  p. 32   R0033 crop shows something else; both readers read tions,, which is English stored "Ti'."; the reader saw 'tions,'
+  p. 36   R0070 reader unsure; second reading: sakúr[?]' stored "sakurti'"; the reader saw "sakúru[?]'"
+  p. 39   R0104 letters differ; second reading: ti wá•ku stored 'wa +'; the reader saw 'wá•ku'
+  p. 66   B123  reader unsure; second reading: ti•ukah•kaari[?]t stored 'ti .ukah .kaari t'; the reader saw 'ti•ukah•kaari•[?]t'
+  p. 75   R0374 capitals differ; second reading: Paresu kiriké rut•ari'? stored "paresu '"; the reader saw 'Paresu'
+  p. 79   R0420 reader unsure; second reading: tihr'á•kawahtsu' stored "tihr'a:kawahtsu'"; the reader saw "tihr'á•[?]kawahtsu'"
+  p. 79   R0432 letters differ; both readers read rekitsu', which is a longer or another word at that place stored 'its'; the reader saw "rekitsu'"
+  p. 88   R0537 reader unsure; second reading: Kítkahahki stored 'Kitkahahki'; the reader saw 'Kítkahahki[?]'
+  p. 89   R0542 reader unsure; second reading: ti•rá[?]wa•rar•uhat stored 'ti .ra wa•raruhat'; the reader saw 'ti•rá [?]wa•rar•uhat'
+  p. 89   R0543 reader unsure; second reading: hiri•rá[?]wa•rar•uhat stored 'hiri .ra wa .raruhat'; the reader saw 'hiri•rá•[?]wa•rar•uhat'
+  p. 91   R0579 letters differ; second reading: Pita ká rut•erit kuruks? stored 'ta'; the reader saw 'Pita'
+  p. 92   R0588 capitals differ; second reading: kakí'at stored "kakI 'at"; the reader saw "kakí•'at"
+  p. 93   R0608 capitals differ; second reading: Kitú sitatut•erit. stored 'kitu'; the reader saw 'Kitú'
+  p. 99   R0670 reader unsure; second reading: Kitské [?]e ru'? stored "Kitske --'e ru '?"; the reader saw "Kitské w[?]e ru'?"
+  p. 99   R0675 letters differ; second reading: we tatut•á•wahri•u[?]s•at stored 'we tatut•d .wahri•uls•at'; the reader saw 'we tatut•á•wahri•us•at'
