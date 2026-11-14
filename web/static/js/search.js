@@ -1,57 +1,152 @@
 ﻿/**
- * Client-side dictionary search using Fuse.js
- * Works entirely in the browser after data is loaded
+ * Dictionary search for the published site. It runs in the visitor's browser:
+ * the whole dictionary is one file, data/dictionary.json, written by
+ * scripts/build_static_site.py, and Fuse.js searches it.
+ *
+ * A result shows the entry as Parks prints it: headword, phonetic form,
+ * class, senses, and, behind "More from this entry", the examples, the
+ * numbered verb forms, the other forms he gives, the stems listed under a
+ * bound stem, his analysis of the word and the forms he cites from related
+ * languages. Nothing shown here is computed; it is all stored text.
  */
+
+// Where a visitor sends a correction: a new issue in the project's repository.
+const CORRECTIONS_URL = 'https://github.com/kevinsinkar/pari-pakuru/issues/new';
+
+// What the five numbered forms of a verb entry are. The same labels as the local app
+// shows (DB/query_api.py, FORM_DESCRIPTIONS); keep the two in step.
+const FORM_LABELS = {
+  1: '1st person singular, indicative, perfective',
+  2: '3rd person singular, indicative, perfective',
+  3: '3rd person singular, indicative, imperfective',
+  4: '3rd person singular, absolutive, subordinate perfective',
+  5: '3rd person singular, indicative, perfective intentive',
+};
+
+// Parks's abbreviations for the languages he cites.
+const LANGUAGES = {
+  'SB': 'South Band Pawnee', 'Ar': 'Arikara', 'Ar.': 'Arikara', 'Ki': 'Kitsai', 'Ki.': 'Kitsai',
+  'Wi': 'Wichita', 'Wi.': 'Wichita', 'Sk': 'Skiri Pawnee', 'Sk.': 'Skiri Pawnee', 'Pa': 'Pawnee', 'Pa.': 'Pawnee',
+};
+
+const MAX_SHOWN = 60;
 
 let dictionaryData = null;
 let fuseIndex = null;
 
-// Load dictionary data on page load
+function esc(value) {
+  return String(value == null ? '' : value).replace(/[&<>"']/g, c => (
+    { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+
 async function initializeSearch() {
   try {
     const response = await fetch('data/dictionary.json');
     dictionaryData = await response.json();
-
-    // Create Fuse index for fuzzy search
     fuseIndex = new Fuse(dictionaryData, {
-      keys: ['headword', 'normalized_form', 'glosses.definition', 'examples.english_translation'],
+      keys: ['headword', 'normalized_form', 'glosses.definition', 'examples.english_translation',
+             'verb_forms.form', 'other_forms.form', 'derived_stems.form'],
       threshold: 0.3,
       minMatchCharLength: 2,
     });
-
-    console.log(`Loaded ${dictionaryData.length} dictionary entries`);
   } catch (error) {
     console.error('Failed to load dictionary data:', error);
   }
 }
 
-function performSearch(query, lang = 'auto', gramClass = null, tag = null) {
+function performSearch(query, lang = 'auto', gramClass = null) {
   if (!dictionaryData || !fuseIndex || !query) {
     return [];
   }
-
   let results = fuseIndex.search(query).map(r => r.item);
+  const q = query.toLowerCase();
+  const has = text => Boolean(text) && text.toLowerCase().includes(q);
 
   if (lang === 'skiri') {
     results = results.filter(e =>
-      e.headword.toLowerCase().includes(query.toLowerCase()) ||
-      (e.normalized_form && e.normalized_form.toLowerCase().includes(query.toLowerCase()))
-    );
+      has(e.headword) || has(e.normalized_form) ||
+      (e.verb_forms || []).some(f => has(f.form)) ||
+      (e.other_forms || []).some(f => has(f.form)) ||
+      (e.derived_stems || []).some(f => has(f.form)));
   } else if (lang === 'english') {
     results = results.filter(e =>
-      e.glosses.some(g => g.definition.toLowerCase().includes(query.toLowerCase())) ||
-      e.examples.some(ex => ex.english_translation && ex.english_translation.toLowerCase().includes(query.toLowerCase()))
-    );
+      (e.glosses || []).some(g => has(g.definition)) ||
+      (e.examples || []).some(ex => has(ex.english_translation)));
   }
-
   if (gramClass) {
     results = results.filter(e => e.grammatical_class === gramClass);
   }
-
   return results;
 }
 
-function renderSearchResults(results) {
+function correctionLink(entry) {
+  const name = entry.headword + (entry.stem_preverb ? ' ' + entry.stem_preverb : '');
+  const where = entry.source === 'blue_book' ? "Pâri Pakûru' textbook"
+    : (entry.page_number ? `Parks Dictionary, p. ${entry.page_number}` : 'Parks Dictionary');
+  const title = `Correction: ${name}`;
+  const body = `Entry: ${name}\nEntry id: ${entry.entry_id}\nSource: ${where}\n\n` +
+    'What is wrong on the site:\n\n\nWhat the source says (page, and the form as printed):\n\n';
+  return `${CORRECTIONS_URL}?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
+}
+
+function moreOfEntry(entry) {
+  const parts = [];
+
+  const examples = entry.examples || [];
+  if (examples.length) {
+    parts.push('<h4>Examples</h4><ul class="result-examples">' + examples.map(ex =>
+      `<li><span lang="x-paw" class="result-skiri">${esc(ex.skiri_text)}</span>` +
+      `${ex.english_translation ? ` &mdash; ${esc(ex.english_translation)}` : ''}` +
+      `${ex.usage_context ? ` <em class="result-usage">${esc(ex.usage_context)}</em>` : ''}` +
+      `${ex.source === 'blue_book' ? ' <small class="result-usage">(Blue Book)</small>' : ''}</li>`
+    ).join('') + '</ul>');
+  }
+
+  const forms = entry.verb_forms || [];
+  if (forms.length) {
+    parts.push('<h4>The forms Parks gives for this verb</h4><table class="result-forms"><tbody>' + forms.map(f =>
+      `<tr><td>${esc(f.n)}.</td><td lang="x-paw" class="result-skiri">${esc(f.form)}</td>` +
+      `<td><small>${esc(FORM_LABELS[f.n] || '')}</small></td></tr>`
+    ).join('') + '</tbody></table>');
+  }
+
+  const others = entry.other_forms || [];
+  if (others.length) {
+    parts.push('<h4>Other forms</h4><ul class="result-examples">' + others.map(f =>
+      `<li>${f.type ? `<em>${esc(f.type)}</em> ` : ''}<span lang="x-paw" class="result-skiri">${esc(f.form)}</span></li>`
+    ).join('') + '</ul>');
+  }
+
+  const stems = entry.derived_stems || [];
+  if (stems.length) {
+    parts.push('<h4>Stems Parks lists under this one</h4><ul class="result-examples">' + stems.map(s =>
+      `<li><span lang="x-paw" class="result-skiri">${esc(s.form)}</span>${s.definition ? ` &mdash; ${esc(s.definition)}` : ''}</li>`
+    ).join('') + '</ul>');
+  }
+
+  if (entry.etymology && entry.etymology.raw) {
+    parts.push(`<h4>Parks's analysis of the word</h4><p class="result-etymology" lang="x-paw">${esc(entry.etymology.raw)}</p>`);
+  }
+
+  const cognates = entry.cognates || [];
+  if (cognates.length) {
+    parts.push('<h4>Forms Parks cites from related languages</h4><ul class="result-examples">' + cognates.map(c =>
+      `<li>${esc(LANGUAGES[c.language] || c.language)}: <span class="result-skiri">${esc(c.form)}</span></li>`
+    ).join('') + '</ul>');
+  }
+
+  if (entry.detail_held) {
+    parts.push('<p class="result-usage">The verb forms and the analysis of this word are not shown here. ' +
+      'Words to do with ceremony are waiting for review by the Pawnee community.</p>');
+  }
+
+  if (!parts.length) {
+    return '';
+  }
+  return `<details class="result-more"><summary>More from this entry</summary>${parts.join('')}</details>`;
+}
+
+function renderSearchResults(results, total) {
   const container = document.getElementById('search-results');
   if (!container) return;
 
@@ -61,38 +156,49 @@ function renderSearchResults(results) {
   }
 
   let html = '<div class="results-list">';
+  if (total && total > results.length) {
+    html += `<p class="result-citation">Showing the first ${results.length} of ${total} results. Add a letter or a word to narrow the search.</p>`;
+  }
   for (const entry of results) {
+    const parks = entry.headword + (entry.stem_preverb ? ' ' + entry.stem_preverb : '');
     const primarySpelling = entry.normalized_form || entry.headword;
-    const secondarySpelling = entry.normalized_form && entry.normalized_form !== entry.headword ? entry.headword : null;
+    const secondarySpelling = (entry.normalized_form && entry.normalized_form !== entry.headword) || entry.stem_preverb ? parks : null;
 
     // All senses, numbered when there is more than one; usage notes inline
     const glosses = entry.glosses || [];
     const glossHtml = glosses.map(g =>
-      `<p class="result-gloss">${glosses.length > 1 ? `<strong>${g.sense_number}.</strong> ` : ''}${g.definition}${g.usage_notes ? ` <em class="result-usage">(${g.usage_notes})</em>` : ''}</p>`
+      `<p class="result-gloss">${glosses.length > 1 ? `<strong>${esc(g.sense_number)}.</strong> ` : ''}${esc(g.definition)}` +
+      `${g.usage_notes ? ` <em class="result-usage">(${esc(g.usage_notes)})</em>` : ''}</p>`
     ).join('');
 
-    // Scholarly citation: Parks page or Blue Book textbook
+    // Where the entry stands in the printed source
     const citation = entry.source === 'blue_book'
       ? "Pâri Pakûru' textbook"
-      : (entry.page_number ? `Parks Dictionary, p. ${entry.page_number}` : '');
+      : (entry.page_number ? `Parks Dictionary, p. ${esc(entry.page_number)}` : '');
+    const wordClass = [entry.grammatical_class, entry.verb_class].filter(Boolean).join(' ');
 
     html += `<article class="result-card">
       <div class="result-header">
-        <h3>${primarySpelling}</h3>
-        ${secondarySpelling ? `<span class="secondary-spelling">${secondarySpelling}</span>` : ''}
+        <h3>${esc(primarySpelling)}</h3>
+        ${secondarySpelling ? `<span class="secondary-spelling" lang="x-paw">${esc(secondarySpelling)}</span>` : ''}
       </div>
       <div class="result-meta">
-        <span class="gram-class">${entry.grammatical_class || 'word'}</span>
+        <span class="gram-class">${esc(wordClass || 'word')}</span>
         ${entry.blue_book_attested ? '<span class="badge-attested">Blue Book</span>' : ''}
       </div>
       ${glossHtml}
-      ${entry.simplified_pronunciation ? `<p class="result-pronunciation">${entry.simplified_pronunciation}</p>` : ''}
-      ${entry.phonetic_form ? `<p class="result-ipa" lang="x-paw">${entry.phonetic_form}</p>` : ''}
-      ${citation ? `<p class="result-citation">${citation}</p>` : ''}
+      ${entry.simplified_pronunciation ? `<p class="result-pronunciation">${esc(entry.simplified_pronunciation)}</p>` : ''}
+      ${entry.phonetic_form ? `<p class="result-ipa" lang="x-paw">${esc(entry.phonetic_form)}</p>` : ''}
+      ${moreOfEntry(entry)}
+      <p class="result-citation">${citation ? citation + ' &middot; ' : ''}<a href="${esc(correctionLink(entry))}" target="_blank" rel="noopener">Send a correction</a></p>
     </article>`;
   }
   html += '</div>';
   container.innerHTML = html;
+}
+
+function showResults(results, limit) {
+  renderSearchResults(results.slice(0, limit), results.length);
 }
 
 function handleSearchSubmit(event) {
@@ -103,8 +209,7 @@ function handleSearchSubmit(event) {
 
   if (!query) return;
 
-  const results = performSearch(query, lang);
-  renderSearchResults(results);
+  showResults(performSearch(query, lang), MAX_SHOWN);
 
   const url = `?q=${encodeURIComponent(query)}&lang=${lang}`;
   window.history.replaceState({}, '', url);
@@ -116,7 +221,10 @@ function setDirection(direction) {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
+  // Only the published site carries data/dictionary.json; the local app searches on the server.
+  if (!document.getElementById('hero-search-form') && !document.getElementById('search-results')) return;
   await initializeSearch();
+  if (!dictionaryData) return;
 
   const searchForm = document.getElementById('hero-search-form');
   if (searchForm) {
@@ -129,7 +237,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (urlQuery) {
     const input = document.querySelector('input[name="q"]');
     if (input) input.value = urlQuery;
-    renderSearchResults(performSearch(urlQuery));
+    showResults(performSearch(urlQuery, params.get('lang') || 'auto'), MAX_SHOWN);
   }
 
   const searchInput = document.querySelector('input[name="q"]');
@@ -137,8 +245,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     searchInput.addEventListener('input', (e) => {
       const query = e.target.value.trim();
       if (query.length > 2) {
-        const results = performSearch(query);
-        renderSearchResults(results.slice(0, 10));
+        showResults(performSearch(query), 10);
       }
     });
   }

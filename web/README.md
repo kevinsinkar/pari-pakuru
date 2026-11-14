@@ -14,14 +14,14 @@ that hosting is retired. What the public sees is the static site in
 
 | File | What it does |
 |---|---|
-| `app.py` | Routes, template filters (pitch display, spelling preference), the lesson exercises, the feedback export |
+| `app.py` | Routes, template filters (the accented syllable shown in capitals, spelling preference), the lesson exercises, the feedback export |
 | `db.py` | Database access. Builds on `DB/query_api.py`. The dictionary is opened read-only; a second, writable connection serves feedback and study progress |
 | `search.py` | Language detection, full-text search, fuzzy matching for misspellings |
 | `search_ranking.py` | Orders results: exact matches first, Blue Book words boosted |
 | `flashcards.py` | The weekly flashcard sets. `load_sets()` serves the frozen `curriculum/flashcard_sets.json` and leaves out any week listed in `curriculum/held_for_review.json`; use it, not `generate_all_sets()`, in anything a learner sees |
 | `srs.py` | Spaced-repetition scheduling (SM-2) for `/study` |
 | `templates/` | Jinja templates. Files starting with `_` are fragments included by others |
-| `static/` | CSS and `js/search.js` (the in-browser search the static site uses) |
+| `static/` | CSS and `js/search.js`: the search of the published site, which runs in the visitor's browser over `docs/data/dictionary.json` and shows the whole entry, with a link for sending a correction. The local app searches on the server and does not use it |
 
 The routes are listed in the [quick reference](../Quick_Reference_Guide.md#web-app-routes).
 

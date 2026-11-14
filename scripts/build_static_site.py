@@ -78,6 +78,34 @@ def export_dictionary_data(db_path: str, output_dir: Path) -> dict:
         bb_attested = bool(bb_row["blue_book_attested"]) if bb_row else False
         source = (bb_row["source"] if bb_row else None) or "parks"
 
+        # What the public page shows of an entry. Everything Parks prints for it goes out:
+        # the numbered verb forms, the other forms in braces, the etymology, the forms cited
+        # from related languages, the stems listed under a bound stem. Entries tagged
+        # "ceremony" keep to headword, senses and examples until the community review of
+        # ceremonial vocabulary has an answer (project log, "What's next", rank 1).
+        tags = [r[0] for r in db.conn.execute(
+            "SELECT DISTINCT tag FROM semantic_tags WHERE entry_id = ? ORDER BY tag", (entry_id,))]
+        held = "ceremony" in tags
+        detail = {}
+        if not held:
+            raw_forms = db.conn.execute(
+                "SELECT additional_forms FROM lexical_entries WHERE entry_id = ?", (entry_id,)).fetchone()[0]
+            try:
+                other_forms = [f for f in json.loads(raw_forms or "[]") if isinstance(f, dict) and f.get("form")]
+            except ValueError:
+                other_forms = []
+            detail = {
+                "verb_forms": [{"n": p.form_number, "form": p.skiri_form} for p in (entry.paradigmatic_forms or [])],
+                "other_forms": [{"type": f.get("form_type"), "form": f["form"]} for f in other_forms],
+                "etymology": ({"raw": entry.etymology.raw_etymology, "literal": entry.etymology.literal_translation}
+                              if entry.etymology and entry.etymology.raw_etymology else None),
+                "cognates": [{"language": c.language, "form": c.form} for c in (entry.cognates or [])],
+                "derived_stems": [{"form": r[0], "definition": r[1]} for r in db.conn.execute(
+                    "SELECT stem_form, definition FROM derived_stems WHERE entry_id = ? ORDER BY id", (entry_id,))],
+            }
+        contexts = dict(db.conn.execute(
+            "SELECT skiri_text, usage_context FROM examples WHERE entry_id = ? AND usage_context IS NOT NULL", (entry_id,)).fetchall())
+
         # Flatten to JSON-serializable format
         entry_dict = {
             "entry_id": entry.entry_id,
@@ -85,6 +113,7 @@ def export_dictionary_data(db_path: str, output_dir: Path) -> dict:
             "normalized_form": entry.normalized_form,
             "phonetic_form": entry.phonetic_form,
             "simplified_pronunciation": entry.simplified_pronunciation,
+            "stem_preverb": entry.stem_preverb,
             "grammatical_class": entry.grammatical_class,
             "verb_class": entry.verb_class,
             "blue_book_attested": bb_attested,
@@ -102,18 +131,24 @@ def export_dictionary_data(db_path: str, output_dir: Path) -> dict:
                 {
                     "skiri_text": e.skiri_text,
                     "english_translation": e.english_translation,
+                    "usage_context": contexts.get(e.skiri_text),
+                    "source": e.source,
                 }
                 for e in (entry.examples or [])
             ],
+            "tags": tags,
+            "detail_held": held,
         }
+        entry_dict.update(detail)
         entries.append(entry_dict)
 
     # Write JSON
     data_dir = output_dir / "data"
     data_dir.mkdir(parents=True, exist_ok=True)
 
-    with open(data_dir / "dictionary.json", "w", encoding="utf-8") as f:
-        json.dump(entries, f, ensure_ascii=False, indent=2)
+    # one entry to a line: a change to one entry is one line of difference in git
+    with open(data_dir / "dictionary.json", "w", encoding="utf-8", newline="\n") as f:
+        f.write("[\n" + ",\n".join(json.dumps(e, ensure_ascii=False, separators=(",", ":")) for e in entries) + "\n]\n")
 
     print(f"[OK] Exported {len(entries)} entries to data/dictionary.json")
     db.close()
@@ -147,7 +182,7 @@ def generate_entry_pages(db_path: str, output_dir: Path) -> dict:
         has_upper = any(c.isupper() for c in pronunciation)
         if has_upper:
             return _UPPER_RUN_RE.sub(r'<span class="pitch-high">\1</span>', pronunciation)
-        return pronunciation + ' <span class="pitch-unmarked">(pitch not marked)</span>'
+        return pronunciation + ' <span class="pitch-unmarked">(accent not marked)</span>'
 
     template_dir = PROJECT_ROOT / "web" / "templates"
     env = Environment(loader=FileSystemLoader(str(template_dir)))
@@ -379,7 +414,7 @@ def generate_static_pages(db_path: str, output_dir: Path) -> dict:
         has_upper = any(c.isupper() for c in pronunciation)
         if has_upper:
             return _UPPER_RUN_RE.sub(r'<span class="pitch-high">\1</span>', pronunciation)
-        return pronunciation + ' <span class="pitch-unmarked">(pitch not marked)</span>'
+        return pronunciation + ' <span class="pitch-unmarked">(accent not marked)</span>'
 
     template_dir = PROJECT_ROOT / "web" / "templates"
     env = Environment(loader=FileSystemLoader(str(template_dir)))
@@ -413,8 +448,8 @@ def generate_static_pages(db_path: str, output_dir: Path) -> dict:
                 "wotd_date": date.today().strftime("%b %d"),
                 "tags": db.get_all_tags(),
                 "quick_words": [
-                    {"skiri": "raawi", "en": "sun"},
-                    {"skiri": "aatius", "en": "father"},
+                    {"skiri": "sakuuruʔ", "en": "sun"},
+                    {"skiri": "rikucki", "en": "bird"},
                     {"skiri": "piita", "en": "man"},
                     {"skiri": "capaat", "en": "woman"},
                 ],
@@ -474,7 +509,7 @@ def generate_flashcard_pages(db_path: str, output_dir: Path) -> dict:
         has_upper = any(c.isupper() for c in pronunciation)
         if has_upper:
             return _UPPER_RUN_RE.sub(r'<span class="pitch-high">\1</span>', pronunciation)
-        return pronunciation + ' <span class="pitch-unmarked">(pitch not marked)</span>'
+        return pronunciation + ' <span class="pitch-unmarked">(accent not marked)</span>'
 
     template_dir = PROJECT_ROOT / "web" / "templates"
     env = Environment(loader=FileSystemLoader(str(template_dir)))
@@ -560,7 +595,7 @@ def generate_lesson_pages(db_path: str, output_dir: Path) -> dict:
         has_upper = any(c.isupper() for c in pronunciation)
         if has_upper:
             return _UPPER_RUN_RE.sub(r'<span class="pitch-high">\1</span>', pronunciation)
-        return pronunciation + ' <span class="pitch-unmarked">(pitch not marked)</span>'
+        return pronunciation + ' <span class="pitch-unmarked">(accent not marked)</span>'
 
     template_dir = PROJECT_ROOT / "web" / "templates"
     env = Environment(loader=FileSystemLoader(str(template_dir)))

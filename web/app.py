@@ -62,7 +62,7 @@ _UPPER_RUN_RE = re.compile(r"([A-Z][A-Z']+)")
 def format_pitch(pronunciation: str) -> Markup:
     """Wrap UPPERCASE pitch-accent syllables in <span class="pitch-high">.
 
-    If the pronunciation has no uppercase (pitch not marked), append a
+    If the pronunciation has no uppercase (accent not marked), append a
     small note so learners know the absence is intentional.
     """
     if not pronunciation:
@@ -74,7 +74,7 @@ def format_pitch(pronunciation: str) -> Markup:
     # All-lowercase: display as-is with "pitch not marked" note
     return Markup(
         f'{pronunciation}'
-        ' <span class="pitch-unmarked">(pitch not marked)</span>'
+        ' <span class="pitch-unmarked">(accent not marked)</span>'
     )
 
 
@@ -261,8 +261,8 @@ def index():
 
     # Quick-access hint chips for the search bar
     quick_words = [
-        {"skiri": "raawi", "en": "sun"},
-        {"skiri": "aatius", "en": "father"},
+        {"skiri": "sakuuruʔ", "en": "sun"},
+        {"skiri": "rikucki", "en": "bird"},
         {"skiri": "piita", "en": "man"},
         {"skiri": "capaat", "en": "woman"},
     ]
