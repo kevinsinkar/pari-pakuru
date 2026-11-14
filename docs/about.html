@@ -95,72 +95,101 @@
   <main class="container" id="main-content">
     <div id="live-results"></div>
     
+
 <article>
     <h2>About P&acirc;ri Pak&ucirc;ru'</h2>
 
     <p>
-        <strong>P&acirc;ri Pak&ucirc;ru'</strong> is a digital dictionary and language reference tool
-        for the <strong>Skiri Pawnee</strong> language, built to support language
-        preservation and revitalization efforts.
+        This site is a study aid for the <strong>Skiri Pawnee</strong> language.
+        It puts two printed books into a form you can search: a dictionary and a
+        textbook. Everything you read here comes from those books. Nothing has been
+        made up, and nothing is shown that a program worked out by itself.
     </p>
 
-    <h3>Data Sources</h3>
+    <h3>The two books</h3>
     <ul>
         <li>
-            <strong>A Dictionary of Skiri Pawnee</strong> by Douglas R. Parks &mdash;
-            the primary linguistic reference, containing over 4,200 headwords with
-            phonetic transcriptions, grammatical classifications, etymologies,
-            paradigmatic verb forms, and example sentences.
+            Douglas R. Parks and Lula Nora Pratt, <em>A Dictionary of Skiri Pawnee</em>
+            (Lincoln: University of Nebraska Press, 2008). The dictionary entries on
+            this site are the Skiri-to-English entries of that book: about 4,200 of them.
         </li>
         <li>
-            <strong>P&acirc;ri Pak&ucirc;ru' (Blue Book)</strong> &mdash; a Skiri Pawnee language
-            textbook used in community language classes, providing attested vocabulary
-            and usage in pedagogical contexts.
+            Pawnee Cultural Retention Committee, <em>Pari Pakuru'</em> (1979), the
+            textbook often called the Blue Book. Its twenty lessons are here, and 93
+            words that are in the textbook and not in the dictionary. Those 93 are shown
+            in the textbook's own spelling and have no phonetic form, because the
+            textbook gives none.
         </li>
-    </ul>
-
-    <h3>Search &amp; Dictionary</h3>
-    <ul>
-        <li>Bidirectional search: English &rarr; Skiri and Skiri &rarr; English</li>
-        <li>Smart search ranking: exact matches first, Blue Book&ndash;attested terms boosted, example sentence snippets surfaced</li>
-        <li>Multiple pronunciation displays: IPA phonetic, simplified respelling with pitch accent highlighting</li>
-        <li>Spelling preference toggle: Parks linguistic orthography or simplified spelling</li>
-        <li>Full verb conjugation tables for documented paradigms</li>
-        <li>Semantic categorization and tag browsing</li>
-        <li>Blue Book attestation badges and confidence scores for data quality</li>
-        <li>Etymology, morpheme breakdowns, and cognate cross-references to related Caddoan languages</li>
-    </ul>
-
-    <h3>Learning Tools</h3>
-    <ul>
-        <li>Weekly flashcard study system with 21 categories and curated beginner vocabulary</li>
-        <li>Template-based sentence builder for practicing Skiri Pawnee word order</li>
-        <li>Interactive pronunciation guide with respelling symbols and pitch accent legend</li>
-        <li>Suggested learning path for new learners</li>
-        <li>Learner / Expert mode toggle to control detail level</li>
-        <li>Dashboard with personal study overview and dictionary statistics</li>
-    </ul>
-
-    <h3>Community &amp; Data Quality</h3>
-    <ul>
-        <li>Community feedback: flag uncertain entries or confirm correct ones, with admin review</li>
-        <li>Confidence scoring: each entry carries a weighted score based on attestation, completeness, and source agreement</li>
     </ul>
     <p>
-        This tool presents data extracted from published linguistic sources.
-        Forms marked as <strong>"attested"</strong> appear directly in the
-        Parks Dictionary or Blue Book. Any generated or computed forms are
-        clearly distinguished. For an endangered language, every verified form
-        is precious &mdash; treat unverified forms with appropriate caution.
+        The books belong to their authors and publishers. The language belongs to the
+        Pawnee people.
     </p>
 
-    <h3>Technology</h3>
+    <h3>What you can do here</h3>
+    <ul>
+        <li>
+            <strong>Search the dictionary</strong> in Skiri or in English. A result
+            shows the word, how to say it, its class, its meanings and the page of the
+            dictionary it stands on. <em>More from this entry</em> opens the rest of
+            what the dictionary prints: examples, the numbered verb forms, other forms
+            of the word, the way Parks takes the word apart, and the forms he cites
+            from related languages.
+        </li>
+        <li><strong>Read the twenty lessons</strong> of the textbook, with their dialogues and word lists.</li>
+        <li><strong>Practise with flashcards</strong>: weekly sets of everyday words. Your progress is kept in your own browser, not on a server.</li>
+        <li><strong>Learn the sounds</strong> from the pronunciation guide.</li>
+    </ul>
+
+    <h3>How a word is written</h3>
+    <ul>
+        <li>The large spelling is a learner spelling, with a circumflex for a long vowel (<span lang="x-paw">&acirc;</span>) and an apostrophe for the glottal stop.</li>
+        <li>Beside it is the spelling of the dictionary itself.</li>
+        <li>The form in square brackets is Parks's phonetic form, in his own symbols, exactly as the dictionary prints it.</li>
+        <li>The line in plain letters with hyphens is a rough guide to saying the word, made from the phonetic form by fixed rules. Capitals mark the accented syllable. It is a help, not a second source: where it and the phonetic form disagree, the phonetic form is right.</li>
+    </ul>
+
+    <h3>How far to trust it</h3>
+    <ul>
+        <li>
+            The dictionary entries have been compared with the text of the printed
+            pages, value by value, most recently in November 2026. A short list of
+            small differences is left, and each is recorded in the project's files.
+        </li>
+        <li>
+            The textbook was read from a scan. Its accent marks and raised dots were
+            restored by reading the scan a second time; a few dozen forms are still
+            in doubt.
+        </li>
+        <li>
+            <strong>No speaker of Pawnee and no one from the Pawnee Nation has yet
+            reviewed this site.</strong> It was put together from the two books with
+            computer tools. Treat it as a way into the books, and trust speakers and
+            teachers before it.
+        </li>
+        <li>
+            Words to do with ceremony are waiting for review by the Pawnee community.
+            Until then the flashcard set for them is not shown, and their entries show
+            the meanings and examples only.
+        </li>
+    </ul>
+
+    <h3>If you find a mistake</h3>
     <p>
-        Built with Python, Flask, and SQLite. The dictionary database includes
-        full-text search indexes for fast lookup. The interface uses
-        Pico CSS for responsive, mobile-friendly design and HTMX for live search.
-        Accessibility features include keyboard navigation, collapsible entry
-        sections, and screen-reader-friendly markup.
+        Every search result has a link, <em>Send a correction</em>. It opens a form on
+        GitHub, where the project is kept, with the word already filled in; you need a
+        free GitHub account to send it. You can also
+        <a href="https://github.com/kevinsinkar/pari-pakuru/issues/new" target="_blank" rel="noopener">write a note about anything else on the site</a>.
+        Say what is wrong and, if you can, what the book has on which page.
+    </p>
+
+    <h3>What is not on this site</h3>
+    <p>
+        The project also has a program that runs on a single computer, with a page for
+        every entry, a sentence builder and study tools. Parts of it work forms out by
+        rule, and those are not reliable enough to publish, so they are kept off this
+        site. The program, the data and a record of every check are in the
+        <a href="https://github.com/kevinsinkar/pari-pakuru" target="_blank" rel="noopener">project's repository</a>.
     </p>
 </article>
 
@@ -183,7 +212,6 @@
       nav.classList.toggle('nav-open');
     }
   </script>
-  <script src="static/js/search.js"></script>
   
 </body>
 </html>

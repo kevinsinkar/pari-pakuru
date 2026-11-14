@@ -2504,7 +2504,7 @@
       "SK-ara-p360-3704"
      ],
      "sample_glosses": [
-      "your same-sex sibling ; i ; e ; your brother   , your sister"
+      "your same-sex sibling ; i ; e ; your brother  , your sister"
      ],
      "words_AB": 0
     }
@@ -2901,7 +2901,7 @@
       "image",
       "picture, image ; photograph"
      ],
-     "words_AB": 57
+     "words_AB": 58
     },
     {
      "aligned_glosses": 0,
@@ -3491,16 +3491,6 @@
       "night to elapse"
      ],
      "words_AB": 1
-    },
-    {
-     "aligned_glosses": 0,
-     "id": "hiir#tive",
-     "meaning": "tive",
-     "own_entries": [],
-     "sample_glosses": [
-      "attrac tive"
-     ],
-     "words_AB": 0
     }
    ],
    "type": "homonym_split",
@@ -4966,34 +4956,6 @@
    "verdict": "kept_apart"
   },
   {
-   "form": "itur",
-   "reason": "Parks's glosses for this shape fall into groups that share no content word",
-   "senses": [
-    {
-     "aligned_glosses": 1,
-     "id": "itur#village",
-     "meaning": "village",
-     "own_entries": [],
-     "sample_glosses": [
-      "village"
-     ],
-     "words_AB": 6
-    },
-    {
-     "aligned_glosses": 0,
-     "id": "itur#vil",
-     "meaning": "vil",
-     "own_entries": [],
-     "sample_glosses": [
-      "vil lage"
-     ],
-     "words_AB": 1
-    }
-   ],
-   "type": "homonym_split",
-   "verdict": "kept_apart"
-  },
-  {
    "form": "ka",
    "reason": "Parks's glosses for this shape fall into groups that share no content word",
    "senses": [
@@ -5528,26 +5490,17 @@
    "reason": "Parks's glosses for this shape fall into groups that share no content word",
    "senses": [
     {
-     "aligned_glosses": 0,
-     "id": "karuus#deflate",
-     "meaning": "deflate",
+     "aligned_glosses": 1,
+     "id": "karuus#deflated",
+     "meaning": "deflated",
      "own_entries": [
       "SK-karuus-p79-1453"
      ],
      "sample_glosses": [
-      "back down ; give up, surrender ; reduce, lose weight ; lose interest i"
+      "back down ; give up, surrender ; reduce, lose weight ; lose interest i",
+      "be deflated"
      ],
-     "words_AB": 5
-    },
-    {
-     "aligned_glosses": 1,
-     "id": "karuus#bede - flated",
-     "meaning": "bede - flated",
-     "own_entries": [],
-     "sample_glosses": [
-      "bede - flated"
-     ],
-     "words_AB": 0
+     "words_AB": 6
     },
     {
      "aligned_glosses": 1,
@@ -5621,8 +5574,8 @@
    "senses": [
     {
      "aligned_glosses": 4,
-     "id": "kata#against",
-     "meaning": "against",
+     "id": "kata#on a vertical surface",
+     "meaning": "on a vertical surface",
      "own_entries": [
       "SK-kata--p79-1464"
      ],
@@ -8853,7 +8806,7 @@
      "meaning": "rik",
      "own_entries": [],
      "sample_glosses": [
-      "rik ?"
+      "rik?"
      ],
      "words_AB": 0
     },
@@ -9677,13 +9630,13 @@
    "senses": [
     {
      "aligned_glosses": 1,
-     "id": "tapaht#crum-bled",
-     "meaning": "crum-bled",
+     "id": "tapaht#crumbled",
+     "meaning": "crumbled",
      "own_entries": [],
      "sample_glosses": [
-      "be crum-bled"
+      "be crumbled"
      ],
-     "words_AB": 3
+     "words_AB": 5
     },
     {
      "aligned_glosses": 1,
@@ -9695,16 +9648,6 @@
       "ground (substance)"
      ],
      "words_AB": 6
-    },
-    {
-     "aligned_glosses": 0,
-     "id": "tapaht#crumbled",
-     "meaning": "crumbled",
-     "own_entries": [],
-     "sample_glosses": [
-      "crumbled"
-     ],
-     "words_AB": 2
     },
     {
      "aligned_glosses": 0,
@@ -13354,8 +13297,8 @@
    "type": "variant_candidate",
    "verdict": "not_merged",
    "words_AB": {
-    "combined": 37,
-    "wi": 32,
+    "combined": 38,
+    "wi": 33,
     "wii": 5
    }
   },
@@ -13400,5 +13343,5 @@
    }
   }
  ],
- "n": 452
+ "n": 451
 }

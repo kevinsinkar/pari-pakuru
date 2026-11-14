@@ -12,7 +12,7 @@ Parks cites these shapes with the same or overlapping meaning, and they differ o
 |---|---|---|---|---|---|
 | *ka* | 53 | *kaa* | 42 | in | 95 |
 | *ha* | 20 | *a* | 19 | in | 39 |
-| *wi* | 32 | *wii* | 5 | position | 37 |
+| *wi* | 33 | *wii* | 5 | position | 38 |
 | *paks* | 29 | *paaks* | 0 | head | 29 |
 | *u* | 22 | *huu* | 5 | in | 27 |
 | *kaatiit* | 14 | *katiit* | 12 | black | 26 |
@@ -194,7 +194,7 @@ Parks's etymology names a final root, but one of the word's paradigm forms ends 
 | *apukiicuʔ* | *apu* + *kic* + *uʔ* | `SK-apukiicuq-p360-3702`, Parks p. 360 |
 | *ara* | *a* + *raar* | `SK-ara-p360-3704`, Parks p. 360 |
 
-## 5. One shape, several meanings (274 shapes kept apart)
+## 5. One shape, several meanings (273 shapes kept apart)
 
 Parks's glosses for these shapes fall into groups that share no content word, so each group is treated as a separate morpheme. Some will be true homonyms and some one morpheme with a wide meaning.
 
@@ -205,13 +205,13 @@ Parks's glosses for these shapes fall into groups that share no content word, so
 | *raa* | way (104); just (0); mother (0); now (0); object (0); things (2) |
 | *a* | come (48); ones image (3); extending in a line (19); stretched out (2); wear (4); your (3) |
 | *aciks* | mind (63); trachea (2) |
+| *awi* | image (58); worn (0) |
 | *ka* | on (53); outstanding (5); what (0) |
-| *kata* | against (56); throat (2) |
-| *awi* | image (57); worn (0) |
+| *kata* | on a vertical surface (56); throat (2) |
 | *aar* | become (48); tooth (5); do (3) |
 | *hak* | pass (38); in a circle (0); hold (0); take (7) |
 | *kaa* | inside (42); grandmother (0) |
-| *hiir* | grass (13); good (26); night to elapse (1); tive (0) |
+| *hiir* | grass (13); good (26); night to elapse (1) |
 | *as* | foot (33); father (0); perseverance (1) |
 | *warik* | cause to go (30); send (2) |
 | *kiis* | bone (26); lively (0); vain (5) |
@@ -246,12 +246,13 @@ Parks's glosses for these shapes fall into groups that share no content word, so
 | *rikiis* | corn (11); cooked (0); cut short (0); proud of (1) |
 | *cak* | strike (9); pierce (1); stick (1) |
 | *iri* | there (2); in a horizontal position (8); reclined (1) |
-| *tapaht* | crum-bled (3); ground (6); crumbled (2); pulverized (0) |
+| *tapaht* | crumbled (5); ground (6); pulverized (0) |
 | *haturaar* | road (9); trail (1) |
 | *iir* | carcass (0); put down (10) |
 | *kaaʔa* | emerge (10); dance (0) |
 | *tawi* | sloped (0); song (4); among (5); lyrics (1); suspended (0) |
 | *haa* | in water (5); ones child (4) |
+| *karuus* | deflated (6); sack (3); shriveled (0); lost (0) |
 | *katakus* | on (2); against (7) |
 | *pahaat* | red (9); mescal bean (0) |
 | *tarahkiis* | strong (6); strongly (3) |
@@ -261,7 +262,6 @@ Parks's glosses for these shapes fall into groups that share no content word, so
 | *waa* | hill (8); growing (1); now (0) |
 | *aras* | cooked (8); corn (0) |
 | *haahka* | a ditch (6); attached to (2) |
-| *huur* | have the quality of (2); tracks (3); image (3); traditional (0); way (0) |
 
 ## 6. Pieces with no known meaning (192 shapes)
 
@@ -273,7 +273,7 @@ Parks glosses these pieces with their own shape, or gives them no gloss anywhere
 
 ## 7. Analyses not in Parks (1 proposed)
 
-361 words have no printed analysis and are not cited by Parks as a piece of another word. A segmentation was proposed only where one or two well-established pieces reproduce the headword exactly and the gloss agrees. Proposals are hypotheses and are never taught.
+360 words have no printed analysis and are not cited by Parks as a piece of another word. A segmentation was proposed only where one or two well-established pieces reproduce the headword exactly and the gloss agrees. Proposals are hypotheses and are never taught.
 
 - *kicuuca-* 'on top of, onto, as something high; up high.': proposed *kic* + *huuca* (tier D; `SK-kicuuca--p436-3955`, Parks p. 436)
 
@@ -292,9 +292,9 @@ These words were flagged because their gloss or semantic tag refers to ceremony,
 | *acikskapaakis* | pity, feel pity for, feel sorry for; feel compassion for, h… | C | `SK-acikskapaakis-p353-3637`, Parks p. 353 |
 | *ahictarahaʔ* | buffalo fat, used for cooking and as a salve base for the a… | C | `SK-ahictarahaq-p9-0088`, Parks p. 357 |
 | *Akaarickariituʔ* | Sun Dance. | C | `SK-akaarickariituq-p9-0106`, Parks p. 357 |
-| *akahtaahuruus* | round house, as used for dances and ceremonial events . | A | `SK-akahtaahuruus-p358-3675`, Parks p. 358 |
+| *akahtaahuruus* | round house, as used for dances and ceremonial events. | A | `SK-akahtaahuruus-p358-3675`, Parks p. 358 |
 | *akarawiisuʔ, akarawis* | smoke-stained tipi cover, especially one stained at the top… | C | `SK-akarawiisuq,_akarawis-p11-0115`, Parks p. 359 |
-| *aʔiwarik* | shake, tremble,as when chilled, frightened, nervous . | C | `SK-aqiwarik-p349-3584`, Parks p. 349 |
+| *aʔiwarik* | shake, tremble,as when chilled, frightened, nervous. | C | `SK-aqiwarik-p349-3584`, Parks p. 349 |
 | *arika* | horn. | B | `SK-arika-p13-0146`, Parks p. 361 |
 | *Asaakipiriiruʔ* | Young Dog Dance. | B | `SK-asaakipiriiruq-p362-3737`, Parks p. 362 |
 | *asataakaa* | white horse. | C | `SK-asataakaa-p363-3760`, Parks p. 363 |
@@ -319,7 +319,7 @@ These words were flagged because their gloss or semantic tag refers to ceremony,
 | *haakaʔuʔ* | mouth. | B | `SK-haakaquq-p33-0559`, Parks p. 381 |
 | *haakatawuh* | extend a pipe, offer a pipe mouthpiece first, as when givin… | B | `SK-haakatawuh-p34-0584`, Parks p. 382 |
 | *haakatawuh* | hand a pipe to, offer a pipe to, mouthpiece first, as when… | B | `SK-haakatawuh-p34-0585`, Parks p. 382 |
-| *haaktaʔuk* | make a pipestem, as for a Pipe Dance. | A | `SK-haaktaquk-p35-0594`, Parks p. 383 |
+| *haaktaʔuk* | make pipestem, as for a Pipe Dance. | A | `SK-haaktaquk-p35-0594`, Parks p. 383 |
 | *haaktariiraʔuk* | light, ignite wood; light a pipe. | C | `SK-haaktariiraquk-p35-0598`, Parks p. 383 |
 | *haaktuuʔat* | raise a piece of wood upward, as a stick. | A | `SK-haaktuuqat-p35-0600`, Parks p. 383 |
 | *haaskiihkaʔuuc/uc-* | lace up, tie up, as a bundle or parfleche; cord, bind with… | A | `SK-haaskiihkaquuc/uc--p36-0616`, Parks p. 384 |
@@ -328,7 +328,7 @@ These words were flagged because their gloss or semantic tag refers to ceremony,
 | *hatkaahuuruʔ* | elongated hole, tubular hole, as in a pipestem, hairpipe, h… | C | `SK-hatkaahuuruq-p38-0670`, Parks p. 386 |
 | *hawiis* | be dyed, smoke-dyed, as a hide or robe. | — | `SK-hawiis-p40-0684`, Parks p. 388 |
 | *hiikuʔ, hiikusuʔ* | hiccough. | C | `SK-hiikuq,_hiikusuq-p389-3830`, Parks p. 389 |
-| *Hiruuska* | War Dance . | C | `SK-hiruuska-p43-0707`, Parks p. 391 |
+| *Hiruuska* | War Dance. | C | `SK-hiruuska-p43-0707`, Parks p. 391 |
 | *Hiruuskaʔipakuuhtuʔ* | Old War Dance, a designation for the war dance as practiced… | C | `SK-hiruuskaqipakuuhtuq-p43-0708`, Parks p. 391 |
 | *hukakusuʔ* | drummers, group of singers at a drum. | B | `SK-hukakusuq-p44-0740`, Parks p. 392 |
 | *huraahwaarukstii* | be holy ground; be a sacred site, as an animal lodge site o… | A | `SK-huraahwaarukstii-p46-0776`, Parks p. 394 |
@@ -348,7 +348,7 @@ These words were flagged because their gloss or semantic tag refers to ceremony,
 | *kariikiwat* | untie, unwrap; ref. to a cloth bundle. | C | `SK-kariikiwat-p78-1433`, Parks p. 426 |
 | *kataʔiir* | sing. | B | `SK-kataqiir-p80-1468`, Parks p. 428 |
 | *kawarik* | put into, inside, as an oven, sack, bundle, or jar. | A | `SK-kawarik-p83-1551`, Parks p. 431 |
-| *kawiiraraah* | carry on one's back , as a bundle . | A | `SK-kawiiraraah-p84-1560`, Parks p. 432 |
+| *kawiiraraah* | carry on one's back, as a bundle. | A | `SK-kawiiraraah-p84-1560`, Parks p. 432 |
 | *kicahuruksuʔ* | scalped person, someone who survives after being scalped an… | C | `SK-kicahuruksuq-p85-1581`, Parks p. 433 |
 | *kiihaar* | be a (certain) dance. | A | `SK-kiihaar-p90-1685`, Parks p. 438 |
 | *kiihaarat* | be a parade, as of dancers, a men's society, circus perform… | A | `SK-kiihaarat-p90-1687`, Parks p. 438 |
@@ -363,7 +363,7 @@ These words were flagged because their gloss or semantic tag refers to ceremony,
 | *kiriktaakuʔ* | ash tree (Fraxinus spp.), the wood of which was used for pi… | B | `SK-kiriktaakuq-p96-1847`, Parks p. 444 |
 | *kiriktawiʔat* | examine, look over, as a doctor a patient. | A | `SK-kiriktawiqat-p97-1859`, Parks p. 445 |
 | *kituus* | suck, as a doctor does when curing. | — | `SK-kituus-p448-3969`, Parks p. 448 |
-| *kuckiicuʔ* | white clay, as used for painting the body in rituals . | C | `SK-kuckiicuq-p101-1954`, Parks p. 449 |
+| *kuckiicuʔ* | white clay, as used for painting the body in rituals. | C | `SK-kuckiicuq-p101-1954`, Parks p. 449 |
 | *kuraaʔuʔ* | doctor, healer; medical practitioner. | C | `SK-kuraaquq-p101-1971`, Parks p. 449 |
 | *kurahuus* | old man. | C | `SK-kurahuus-p102-1976`, Parks p. 450 |
 | *kusaar* | be a bed. | B | `SK-kusaar-p102-1998`, Parks p. 450 |
@@ -400,10 +400,10 @@ These words were flagged because their gloss or semantic tag refers to ceremony,
 | *raawiskataʔiwarik* | inhale smoke, as when smoking. | C | `SK-raawiskataqiwarik-p129-2524`, Parks p. 477 |
 | *raawisurahcak* | blow smoke to the ground; ref. only to the gesture made in… | A | `SK-raawisurahcak-p129-2526`, Parks p. 477 |
 | *racakihtuʔ* | commercial tobacco; cigarette tobacco, pipe tobacco. | B | `SK-racakihtuq-p129-2536`, Parks p. 477 |
-| *racariipuh* | tie up in a bundle, as when tying the covering at the top ;… | C | `SK-racariipuh-p478-4110`, Parks p. 478 |
+| *racariipuh* | tie up in a bundle, as when tying the covering at the top;… | C | `SK-racariipuh-p478-4110`, Parks p. 478 |
 | *rahkariipuh* | tie up a bundle, tie into a bundle. | C | `SK-rahkariipuh-p131-2549`, Parks p. 479 |
 | *rahuraʔuk* | doctor, treat, as a doctor ministering to a patient. | B | `SK-rahuraquk-p132-2584`, Parks p. 480 |
-| *rahuruu* | do to . | C | `SK-rahuruu-p133-2591`, Parks p. 481 |
+| *rahuruu* | do to. | C | `SK-rahuruu-p133-2591`, Parks p. 481 |
 | *Rakiciirikistihuuru* | Morning Star, Mars; also Jupiter, in certain seasons. | C | `SK-rakiciirikistihuuru-p134-2630`, Parks p. 482 |
 | *raktaawiskaaruʔ* | pipe, calumet. | C | `SK-raktaawiskaaruq-p135-2651`, Parks p. 483 |
 | *raktakaawiʔuʔ* | pipestem. | C | `SK-raktakaawiquq-p135-2653`, Parks p. 483 |
@@ -412,7 +412,7 @@ These words were flagged because their gloss or semantic tag refers to ceremony,
 | *rapahat* | red osier, red dogwood, kinnikinnick (Cornus amomum), the i… | C | `SK-rapahat-p136-2672`, Parks p. 484 |
 | *rapatiis* | European smoking pipe, small pipe for smoking; ref. to the… | C | `SK-rapatiis-p136-2675`, Parks p. 484 |
 | *rarahuuruʔ* | bundle, tied bundle, bundle of objects that are tied or wra… | C | `SK-rarahuuruq-p136-2685`, Parks p. 484 |
-| *rariiraʔuk* | ignite, spark, light, as a blaze, fire . | A | `SK-rariiraquk-p137-2704`, Parks p. 485 |
+| *rariiraʔuk* | ignite, spark, light, as a blaze, fire. | A | `SK-rariiraquk-p137-2704`, Parks p. 485 |
 | *Rariisaara* | Ghost Dance. | — | `SK-rariisaara-p137-2707`, Parks p. 485 |
 | *raruksuʔ* | pipe bag, used for carrying a pipe and tobacco. | C | `SK-raruksuq-p138-2718`, Parks p. 486 |
 | *raruukaʔaatuʔ* | phantom, ghost, spirit; apparition, as of a spirit that app… | C | `SK-raruukaqaatuq-p138-2726`, Parks p. 486 |
@@ -426,11 +426,11 @@ These words were flagged because their gloss or semantic tag refers to ceremony,
 | *taahaaruʔ* | bundle. | C | `SK-taahaaruq-p153-3007`, Parks p. 501 |
 | *taaraaruʔ* | bundle. | C | `SK-taaraaruq-p502-4247`, Parks p. 502 |
 | *taarikiihk* | hang up, onto; suspend on. | C | `SK-taarikiihk-p502-4250`, Parks p. 502 |
-| *taawiruus* | be round, circular, as a plate, drum, or hoop . | A | `SK-taawiruus-p155-3021`, Parks p. 503 |
+| *taawiruus* | be round, circular, as a plate, drum, or hoop. | A | `SK-taawiruus-p155-3021`, Parks p. 503 |
 | *tahipiruus* | whip; dance whip. | C | `SK-tahipiruus-p156-3038`, Parks p. 504 |
 | *tahurahcak* | beat a drum. | B | `SK-tahurahcak-p156-3043`, Parks p. 504 |
 | *tahurar* | be close to, lightly touching, against, as when sitting in… | C | `SK-tahurar-p156-3046`, Parks p. 504 |
-| *takustaah* | carry, pack, have on one's back , as a baby . | A | `SK-takustaah-p158-3090`, Parks p. 506 |
+| *takustaah* | carry, pack, have on one's back, as a baby. | A | `SK-takustaah-p158-3090`, Parks p. 506 |
 | *tariikiwat* | untie, as a knot or bundle. | C | `SK-tariikiwat-p161-3149`, Parks p. 509 |
 | *tariʔ* | here! here it is! | — | `SK-tariq-p161-3145`, Parks p. 509 |
 | *taruucuhus* | errand man, fire keeper, fire tender, as in a ceremony. | B | `SK-taruucuhus-p161-3167`, Parks p. 509 |
@@ -445,7 +445,7 @@ These words were flagged because their gloss or semantic tag refers to ceremony,
 | *tawiʔuʔ* | song. | B | `SK-tawiquq-p163-3202`, Parks p. 511 |
 | *tawiraʔuk* | make up, compose a song | A | `SK-tawiraquk-p164-3217`, Parks p. 512 |
 | *tiiraʔuk* | marry, marry off, as an older male relative marrying one's… | A | `SK-tiiraquk-p165-3243`, Parks p. 513 |
-| *Tiirawaahat* | The Heavens, the all-pervasive power of the universe, refer… | C | `SK-tiirawaahat-p165-3250`, Parks p. 513 |
+| *Tiirawaahat* | (formerly) The Heavens, the all-pervasive power of the univ… | C | `SK-tiirawaahat-p165-3250`, Parks p. 513 |
 | *uhaksat* | dance, dance around, move while dancing; dance in or toward… | B | `SK-uhaksat-p167-3305`, Parks p. 515 |
 | *uhuraaraʔuk* | imitate, impersonate, as a doctor impersonating his animal… | A | `SK-uhuraaraquk-p168-3328`, Parks p. 516 |
 | *uhuur [+ raar-]* | be in a row. | C | `SK-uhuur_[+_raar-]-p169-3342`, Parks p. 517 |

@@ -126,8 +126,8 @@
     <li><strong>Dictionary entry</strong> — the learner spelling from the
         Parks Dictionary, with a circumflex (&#226;) marking long vowels.</li>
     <li><strong>Say it</strong> — the simplified pronunciation.
-        <strong>UPPERCASE</strong> syllables carry <strong>high pitch</strong>,
-        which changes meaning in Pawnee.</li>
+        <strong>UPPERCASE</strong> marks the <strong>accented syllable</strong>,
+        the one Parks marks with an accent in his phonetic form.</li>
     <li><strong>IPA</strong> — the exact scholarly transcription recorded by
         Douglas Parks from fluent speakers. When the other spellings disagree,
         the IPA is the authority.</li>
@@ -156,7 +156,7 @@
         <span class="badge badge-class">VL</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(pitch not marked)</span></small></td>
+    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
     <td class="ipa" lang="x-paw"><small>[–tə–]</small></td>
   </tr>
   
@@ -169,7 +169,7 @@
         <span class="badge badge-class">VL</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(pitch not marked)</span></small></td>
+    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
     <td class="ipa" lang="x-paw"><small>[–tə–]</small></td>
   </tr>
   
@@ -194,7 +194,7 @@
         <span class="badge badge-class">VL</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(pitch not marked)</span></small></td>
+    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
     <td class="ipa" lang="x-paw"><small>[–tə–]</small></td>
   </tr>
   
@@ -225,7 +225,7 @@
   </tr>
   
   <tr>
-    <td lang="x-paw" class="font-serif">tawit</td>
+    <td lang="x-paw" class="font-serif">tawit,</td>
     <td>three</td>
     <td>
       
@@ -424,7 +424,7 @@
         <span class="badge badge-class">N</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small>doo-soo' <span class="pitch-unmarked">(pitch not marked)</span></small></td>
+    <td class="lesson-vocab__pron"><small>doo-soo' <span class="pitch-unmarked">(accent not marked)</span></small></td>
     <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
@@ -493,7 +493,7 @@
   </tr>
   
   <tr>
-    <td lang="x-paw" class="font-serif">hitu '</td>
+    <td lang="x-paw" class="font-serif">hitu'</td>
     <td>a feather, some feathers</td>
     <td>
       
@@ -501,7 +501,7 @@
         <span class="badge badge-class">N</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small>hih-too' <span class="pitch-unmarked">(pitch not marked)</span></small></td>
+    <td class="lesson-vocab__pron"><small>hih-too' <span class="pitch-unmarked">(accent not marked)</span></small></td>
     <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
@@ -605,10 +605,9 @@
       nav.classList.toggle('nav-open');
     }
   </script>
-  <script src="static/js/search.js"></script>
   
 <script>
-const EX = {"blanks": [{"answer": "asku", "blanked": "_____ kiriks tah\u2022ra.", "english": "I have one bead.", "options": ["asku", "asuri\u2022tsahriks", "pita", "pitkus\u2022iksapits"]}, {"answer": "sihuks", "blanked": "_____ kiriks tahrarra.", "english": "I have five beads.", "options": ["rIhuks\u2022iri\u0027", "sihuks", "kskitiiks", "rakis"]}], "matching": [{"english": "five", "skiri": "sihuks"}, {"english": "one", "skiri": "asku"}, {"english": "buttocks", "skiri": "rusu\u0027"}, {"english": "a stick, some sticks", "skiri": "rakis"}, {"english": "shoes", "skiri": "asuru \u0027"}, {"english": "four", "skiri": "kskitiiks"}, {"english": "eight", "skiri": "taw .lksapits"}, {"english": "a man, some men", "skiri": "pita"}], "say": [{"english": "What do you have?", "skiri": "Kirike ras\u2022ta?"}, {"english": "I have some beads.", "skiri": "Kiriks tahrarra."}, {"english": "I have one bead.", "skiri": "Asku kiriks tah\u2022ra."}, {"english": "I have a bead.", "skiri": "Kiriks tah\u2022ra."}, {"english": "I have five beads.", "skiri": "Sihuks kiriks tahrarra."}]};
+const EX = {"blanks": [{"answer": "asku", "blanked": "_____ kiriks tah\u2022ra.", "english": "I have one bead.", "options": ["tawit", "asku", "paksu", "pitku"]}, {"answer": "sihuks", "blanked": "_____ kiriks tahrarra.", "english": "I have five beads.", "options": ["paksu", "paks\u2022ku\u0027ku\u0027", "sihuks", "rakis"]}], "matching": [{"english": "a man, some men", "skiri": "pita"}, {"english": "four", "skiri": "kskitiiks"}, {"english": "two", "skiri": "pitku"}, {"english": "ten", "skiri": "rIhuks\u2022iri\u0027"}, {"english": "to have", "skiri": "+ ra"}, {"english": "head", "skiri": "paksu \u0027"}, {"english": "a feather, some feathers", "skiri": "hitu\u0027"}, {"english": "three", "skiri": "tawit,"}], "say": [{"english": "I have one bead.", "skiri": "Asku kiriks tah\u2022ra."}, {"english": "How many beads do you have?", "skiri": "Kitske rastarra kiriks?"}, {"english": "What do you have?", "skiri": "Kirike ras\u2022ta?"}, {"english": "I have some beads.", "skiri": "Kiriks tahrarra."}, {"english": "I have a bead.", "skiri": "Kiriks tah\u2022ra."}]};
 
 // ── Matching ─────────────────────────────────────────────────────
 (function() {

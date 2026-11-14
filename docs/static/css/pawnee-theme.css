@@ -287,6 +287,75 @@
   color: var(--earth-500);
 }
 
+/* The rest of an entry, behind "More from this entry" */
+.result-more {
+  margin: 0.5rem 0 0.75rem;
+  padding: 0.25rem 0 0;
+  border-top: 1px solid var(--earth-200, #e6dfd3);
+}
+
+.result-more summary {
+  font-size: 0.85rem;
+  color: var(--earth-600);
+  cursor: pointer;
+}
+
+.result-more h4 {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--earth-500);
+  margin: 0.9rem 0 0.25rem;
+}
+
+.result-more ul.result-examples {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.92rem;
+}
+
+.result-more ul.result-examples li {
+  margin-bottom: 0.2rem;
+}
+
+.result-skiri,
+.result-etymology {
+  font-family: 'Source Serif 4', 'Gentium Plus', 'Charis SIL', 'Doulos SIL', serif;
+  color: var(--earth-700);
+}
+
+.result-etymology {
+  font-size: 0.92rem;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+table.result-forms {
+  width: auto;
+  margin: 0;
+  font-size: 0.92rem;
+}
+
+table.result-forms td {
+  padding: 0.15rem 0.75rem 0.15rem 0;
+  border: 0;
+  background: transparent;
+  vertical-align: baseline;
+}
+
+@media (max-width: 480px) {
+  table.result-forms td:last-child {
+    display: block;
+    padding-bottom: 0.4rem;
+  }
+  table.result-forms tr {
+    display: block;
+  }
+  table.result-forms td {
+    display: inline-block;
+  }
+}
+
 /* ---------- Badges ---------- */
 .badge {
   display: inline-flex;

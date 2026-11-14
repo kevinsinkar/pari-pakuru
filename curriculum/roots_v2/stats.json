@@ -7,12 +7,12 @@
  "affixes": 57,
  "blue_book_seams": {
   "alignment_failed": 3,
-  "ambiguous_target": 39,
-  "certain": 104,
+  "ambiguous_target": 43,
+  "certain": 105,
   "english_mismatch": 49,
-  "no_target": 514,
-  "seamed_tokens": 722,
-  "skipped_ocr_spacing": 10,
+  "no_target": 517,
+  "seamed_tokens": 726,
+  "skipped_ocr_spacing": 6,
   "too_short": 3
  },
  "classes_AB": {
@@ -21,13 +21,13 @@
   "incorporated element (bound, inferred)": 41,
   "locative": 93,
   "noun root": 37,
-  "noun root (bound, inferred)": 91,
+  "noun root (bound, inferred)": 90,
   "particle or adverb": 9,
   "verb root": 127,
-  "verb root (bound, inferred)": 15
+  "verb root (bound, inferred)": 16
  },
  "compound_stem_units": {
-  "commutation_anchors": 534,
+  "commutation_anchors": 531,
   "unit_ambiguous": 44,
   "unit_not_a_headword": 547,
   "unit_resolved_form_only": 71,
@@ -35,7 +35,7 @@
  },
  "decisions": {
   "duplicate_rows": 65,
-  "homonym_split": 274,
+  "homonym_split": 273,
   "role_default": 21,
   "sense_anchor": 3,
   "sense_merge": 4,
@@ -43,13 +43,13 @@
  },
  "e1": {
   "citation": 354,
-  "none": 360,
-  "printed": 3622,
+  "none": 359,
+  "printed": 3623,
   "proposed": 1
  },
  "e2": {
   "exact": 3104,
-  "fail": 286,
+  "fail": 287,
   "partial": 587
  },
  "e2_methods": {
@@ -57,7 +57,7 @@
   "Parks rule engine (vowel length, ʔ and h ignored)": 8,
   "concatenation": 1364,
   "concatenation (vowel length, ʔ and h ignored)": 287,
-  "none": 286,
+  "none": 287,
   "pieces located one at a time": 36,
   "seam rules": 1374,
   "seam rules (needs 3 optional rules)": 3,
@@ -66,7 +66,7 @@
  "e3": {
   "confirm": 1308,
   "contradict": 7,
-  "none": 2662
+  "none": 2663
  },
  "e3b": {
   "class_differs": 78,
@@ -78,22 +78,22 @@
  "e5": {
   "confirm": 43,
   "contradict": 11,
-  "none": 3923
+  "none": 3924
  },
  "lexeme_tiers": {
   "A": 1093,
-  "B": 1315,
+  "B": 1316,
   "C": 1568,
   "D": 1,
-  "no claim": 360
+  "no claim": 359
  },
  "lexemes": 4337,
  "lexical_morpheme_tiers": {
-  "A": 308,
-  "B": 246,
-  "C": 1145
+  "A": 309,
+  "B": 245,
+  "C": 1142
  },
- "lexical_morphemes": 1699,
+ "lexical_morphemes": 1696,
  "rows": 4337,
  "seam_rule_use": {
   "#V>0/_C": 97,
@@ -123,7 +123,7 @@
  },
  "verb_roots_AB": {
   "basic root (its own entry is unanalysed)": 74,
-  "bound, no entry of its own": 15,
+  "bound, no entry of its own": 16,
   "derived stem (its own entry is analysed by Parks)": 53
  },
  "words_needing_community_review": 176
