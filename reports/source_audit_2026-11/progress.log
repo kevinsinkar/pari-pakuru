@@ -49,3 +49,9 @@
 2026-11-13 14:28  stage 8 done: 807 changes applied by scripts/apply_audit_fixes_2026_11.py (plus three in two later runs); record applied_fixes_report.txt; seven judgement calls left for a person; dictionary fields identical to print 50,597 of 50,757 (99.68%); conjugation engine 611 of 770 (79.4%) against the corrected Appendix 1
 2026-11-13 14:28  stage 9 done: all 4,244 Parks entries hold the printed phonetic form in Parks's notation; Blue Book: 949 distinct forms read, 715 corrected, 77 left; check_simplified_forms.py: 0 differences; site, flashcards and word-construction outputs rebuilt; documentation updated
 2026-11-13 14:34  stage 8 done: 807 changes applied by scripts/apply_audit_fixes_2026_11.py, and 12 more in four later runs; record applied_fixes_report.txt; seven judgement calls left for a person; dictionary fields identical to print 50,597 of 50,757 (99.68%); no stored Skiri form has a letter Skiri lacks; conjugation engine 611 of 770 (79.4%) against the corrected Appendix 1
+2026-11-14 10:37  second blind reading of chapter 4: 92 tiles cut (work/chapter4_second), three readers started
+2026-11-14 10:45  second blind reader chapter 4 pp17-23 finished: 200 forms, no [?], 169k sub-agent tokens
+2026-11-14 10:46  second blind reader chapter 4 pp1-8 finished: 252 forms, no [?], 171k sub-agent tokens
+2026-11-14 10:48  second blind reader chapter 4 pp9-16 finished: 161 forms, no [?], 194k sub-agent tokens; the second reading of the chapter is complete (613 forms, 535k tokens)
+2026-11-14 10:59  chapter 4 corrected from the two blind readings: 38 words, 22 pieces of breakdown lines, 22 named places (Table 17)
+2026-11-14 10:59  Blue Book: 25 open forms cut again at their own place and read blind (58k sub-agent tokens): 18 settled, 7 confirmed as stored

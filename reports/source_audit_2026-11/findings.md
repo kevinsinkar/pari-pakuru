@@ -28,10 +28,15 @@ no data: the 649 input hashes taken at the start were identical at the end.*
 > examples that were never stored (`print_completion_report.txt`). The
 > dictionary entries are now 99.94% identical to print (50,807 of 50,837
 > fields), with 37 differences left, each explained in that report. A second
-> blind reading settled 35 of the 77 Blue Book forms; 42 are left
-> (`bluebook_second_look.json`). Three words of the grammar chapter were
-> corrected where the blind reading and the dictionary agree
-> (`chapter4_third_witness.json`).
+> blind reading settled 35 of the 77 Blue Book forms
+> (`bluebook_second_look.json`), and 25 more were found at their own place
+> on the page and read there (`bluebook_right_place.json`): 17 are left.
+> The grammar chapter was read a second time, blind, in full
+> (`chapter4_second_reading.json`). The two blind readings do not differ on
+> one Skiri word; the stored chapter was corrected to them in 38 words, 22
+> pieces of breakdown lines and Table 17, and every Skiri word in it now
+> stands in both readings. What this audit says below about "Chapter 4's 51
+> differing words" is therefore settled.
 
 ## The short answer
 

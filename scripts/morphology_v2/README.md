@@ -68,5 +68,9 @@ meaning is recorded, rebuild the flashcards and read the difference.
 - IPA is never generated.
 - The same spelling is not assumed to be the same morpheme.
 - The gold sets are locked; a change to them is visible in `gold/HASHES.json`.
+  `--verify` only says that the files are as they were when they were hashed, not that they
+  still follow their sources. When Appendix 1, the grammar chapter or the Blue Book forms are
+  corrected, run `gold_build.py` and then `gold_build.py --hash` before `run.py --all`. (This
+  was missed after the corrections of 2026-11-13 and made good on 2026-11-14.)
 - The held-back half of the test set has now been scored several times. Any
   further tuning needs fresh entries.

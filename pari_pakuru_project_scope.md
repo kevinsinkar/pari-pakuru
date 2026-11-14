@@ -47,8 +47,11 @@ Build a comprehensive Skiri Pawnee language preservation tool: a searchable, lin
 | 2026-11-13 | hosting | The PythonAnywhere hosting of the web app retired; `wsgi.py` removed. GitHub Pages is the only place the project is published; the Flask app is a local tool | done |
 | 2026-11-14 | fixes | Page citations: every Parks entry cites the page of the printed book (3,511 held the number of a PDF file, 348 less) | done |
 | 2026-11-14 | fixes | What the dictionary prints and the database lacked, set from the PDF's text layer: 1,447 values (684 hyphens the typesetter put at line ends, 21 derived stems, 18 examples, citations, spacing, punctuation); three verb forms that are not printed removed | done; 37 differences left, each explained |
-| 2026-11-14 | Blue Book | A second blind reading of the 77 forms left open: 35 settled. Corrected forms carried into three more tables (628 values). Three words of the grammar chapter corrected | done in part; 42 forms and about 40 chapter words left (open items 42, 45) |
+| 2026-11-14 | Blue Book | A second blind reading of the 77 forms left open: 35 settled. Corrected forms carried into three more tables (628 values). Three words of the grammar chapter corrected | done in part; continued the same day (the three rows below) |
 | 2026-11-14 | site | The public site shows the whole entry (examples, verb forms, Parks's analysis, cited forms) and says truthfully what it is: About page rewritten, a "Send a correction" link on every result, "accent" in place of "pitch" | done |
+| 2026-11-14 | grammar chapter | A second blind reading of the whole grammar chapter (three readers, 613 forms). The two blind readings do not differ on one Skiri word, and every Skiri word of the stored chapter now stands in both: 38 words corrected (vowel length, glottal stops, and twelve accents the page does not have), 22 pieces of breakdown lines (*-Ø PERF*, *-hus*), Table 17 put back as printed | done |
+| 2026-11-14 | Blue Book | 25 of the 42 open forms found at their own place on the page by the English stored with them, and read there: 18 corrected, 7 confirmed as stored | done; 17 left for a person (open item 42) |
+| 2026-11-14 | decisions | Confirmed by the project owner: the ceremony-tagged entries show senses and examples only until the community review; "accent" is the word for the marks; the About page as rewritten; corrections come in as GitHub issues | recorded (open items 9, 50) |
 
 The database on 2026-11-14: 4,337 entries (4,244 from Parks, 93 Blue Book
 only), 5,504 senses, 9,559 verb forms for 2,239 verbs, 2,652 examples, 21
@@ -60,11 +63,12 @@ and for none of the Blue Book-only ones. Compared with the printed page,
 
 ## What's next
 
-*Ranked again on 2026-11-14. The ranking of 2026-11-13 had eight items; three
-were completed the next day (page citations, the public site, what the
-dictionary prints and the database lacked) and one in part (the forms that
-need a look at the page). They are in the phase log under 2026-11-14. Numbers
-in the last column are open items, further down.*
+*Ranked again on 2026-11-14, twice. The ranking of 2026-11-13 had eight items;
+four were completed the next day: page citations, the public site, what the
+dictionary prints and the database lacked, and the forms that needed a look
+at the page (the grammar chapter in full; the Blue Book down to 17 forms that
+only a person with the book can settle). They are in the phase log under
+2026-11-14. Numbers in the last column are open items, further down.*
 
 How the ranking is made: first what only people outside the project can
 settle and takes longest to arrange; then what is wrong or missing in front
@@ -77,10 +81,10 @@ sessions, **large** more.
 | Rank | What | Why at this rank | Who | Size | Open items |
 |---|---|---|---|---|---|
 | 1 | **Ask the Pawnee Nation's language and culture people to review**: the ceremonial vocabulary, the 387-word flashcard list, the word-building guide, and now the About page of the public site | Nothing in code replaces it, and it takes the longest to arrange. It decides whether flashcard Week 20 is ever shown, whether the word-building guide is published, whether the 143 entries tagged as ceremony stay searchable and show their full detail, and what the accent marks are to be called | You make the contact; the review material can be prepared here | Small to prepare; the review itself is theirs to pace | 1, 2, 3, 14, 43, 50, 9 |
-| 2 | **Settle the forms that still need a look at the page** | 42 Blue Book forms, about 40 words of the grammar chapter and a handful of dictionary values are known to be doubtful and are listed one by one. What scripts and one more reading could settle has been settled; what is left needs the book in a person's hands, or a full second blind reading of the grammar chapter | A person with the books. Or blind readings: about 700,000 tokens for the grammar chapter (three readers), about 130,000 for another look at the Blue Book forms | Small for a person; medium by readings | 42, 45, 41 |
-| 3 | **Decide what becomes of the engines** | The conjugation engine gets 79.4% of Appendix 1 and its accent rules were worked out from misread data. None of it is on the public site, so nothing wrong is in front of learners. Recommended: withdraw the accent rules, leave from-scratch conjugation paused, and extend person derivation from attested forms instead. The sentence templates still write Blue Book forms without their printed accents | Decision yours; then code | Medium to large | 39, 40, 25, 26, 13, 24, 42 |
-| 4 | **Repair the English-to-Skiri file and re-import the English index** | The database's English index is an early, uncleaned copy, page numbers included. Only the local app reads it; the public search does not. Worth doing before anything new is built on those tables | Code | Medium | 32, 22 |
-| 5 | **Read what has not been read, build what has not been built** | Front-matter chapters 2 and 5; the Blue Book glossary (pages 123 to 130); Blue Book headwords as the book prints them; printable word lists and paradigm tables | Code, with blind readings for the scanned pages | Medium each | 37, 28, 35, 27 |
+| 2 | **Decide what becomes of the engines** | The conjugation engine gets 79.4% of Appendix 1 and its accent rules were worked out from misread data. None of it is on the public site, so nothing wrong is in front of learners. Recommended: withdraw the accent rules, leave from-scratch conjugation paused, and extend person derivation from attested forms instead. The sentence templates still write Blue Book forms without their printed accents. The second reading of the grammar chapter showed one more thing of this kind: a rule in the possession engine had been built on two misread words (removed, item 13) | Decision yours; then code | Medium to large | 39, 40, 25, 26, 13, 24, 42 |
+| 3 | **Repair the English-to-Skiri file and re-import the English index** | The database's English index is an early, uncleaned copy, page numbers included. Only the local app reads it; the public search does not. Worth doing before anything new is built on those tables | Code | Medium | 32, 22 |
+| 4 | **Read what has not been read, build what has not been built** | Front-matter chapters 2 and 5; the Blue Book glossary (pages 123 to 130); Blue Book headwords as the book prints them; printable word lists and paradigm tables; the tables of the grammar chapter as printed, which can now be put together from the two blind readings without another reading (51) | Code, with blind readings for the scanned pages | Medium each | 37, 28, 35, 27, 51 |
+| – | *For a person with the books, whenever one is at hand* | 17 Blue Book forms where the scan itself is in doubt or the stored form is a fragment; the 37 small differences in the dictionary, each explained; the empty cell of *tir* in Appendix 2. Nothing more can be settled by scripts or readings | A person with the books | Small | 42, 45, 41 |
 
 Small things to do along the way, whenever the file concerned is open: retire
 the older respelling function (46); the "word of the day" fixed at build
@@ -88,7 +92,7 @@ time and the Blue Book-only entries without a learner spelling (21); the
 style names `pitch-high` and `pitch-unmarked`, which no reader sees but which
 still say "pitch" (9).
 
-### The first step of each of the top three
+### The first step of each of the top two
 
 1. **Review.** Put together one packet a reviewer can read without the
    repository: the Week 20 cards and the 176 words flagged as ceremonial (by
@@ -100,21 +104,21 @@ still say "pitch" (9).
    same time whether the ceremonial entries should be searchable on the
    public site at all, and whether they may show their verb forms and
    analysis like the others (50).
-2. **Forms that need the page.** Print or open three lists beside the books:
-   the last section of `reports/source_audit_2026-11/bluebook_applied_report.txt`
-   (42 forms, with what each of two readers saw), the words marked `open` in
-   `chapter4_third_witness.json` (with what the stored text, the blind reader
-   and the dictionary each say), and the section "left as they are" of
-   `print_completion_report.txt`. Each line is one look at one page.
-3. **Engines.** Read open items 39 and 40 and decide: keep, repair or
+2. **Engines.** Read open items 39 and 40 and decide: keep, repair or
    withdraw `accent_rules.py`; and whether from-scratch conjugation is taken
    up again or person derivation from attested forms is extended instead.
+
+For the person with the books: the last section of
+`reports/source_audit_2026-11/bluebook_applied_report.txt` (17 forms, with
+what each reader saw) and the section "left as they are" of
+`print_completion_report.txt`. Each line is one look at one page.
 
 ### What not to do next
 
 - Do not show Week 20, publish the word-building guide, or give the ceremony-tagged entries their full detail before rank 1 has an answer.
-- Do not take up from-scratch conjugation again without a decision (rank 3). The standing rule is that derived forms start from attested ones.
-- Do not build on `english_index` or `cross_references` before rank 4.
+- Do not take up from-scratch conjugation again without a decision (rank 2). The standing rule is that derived forms start from attested ones.
+- Do not build on `english_index` or `cross_references` before rank 3.
+- Do not spend more blind readings on the 17 Blue Book forms: three readings agree that the scan does not show what is there.
 
 ---
 
@@ -1558,6 +1562,119 @@ static site, the text copy of the database.
 Cost: one sub-agent, 128,000 tokens.
 
 
+### ✅ The grammar chapter read a second time; Blue Book forms read at their own place *(2026-11-14, continued)*
+
+Asked for: "continue rank 4, you can do the second reading of the chapter",
+with the decisions of the morning confirmed and leave to push.
+
+**Grammar chapter (Chapter 4, book pages 29 to 51).** The stored copy,
+`extracted_data/grammatical_overview.json`, is one AI reading of the page
+images from March 2026 with the prose paraphrased. The audit had read every
+Skiri form once more, blind. Where the two differed, one reading stood
+against one.
+
+- *The second blind reading.* The 23 pages were cut again, differently (92
+  tiles, one band to an image, larger; a reader could have any part drawn at
+  twice the size from the PDF). Three readers saw only their tiles: not the
+  stored text, not the first reading. 613 forms, no letter marked unclear.
+  535,000 tokens (the first reading had taken 574,000).
+- *The two blind readings agree.* They do not differ on one Skiri-looking
+  word in the whole chapter. So wherever the stored word differed from the
+  first reading, it differs from the second in the same way; in no case did
+  the second reading come out for the stored word.
+- *38 words corrected* (`scripts/source_audit/chapter4_second_reading.py`):
+  11 in vowel length (*tiiraaraspaatasit* is *tiraaraspaatasit*, *ruukiitaat*
+  is *ruukiitat*), 10 where only an accent was wrong, 5 with a glottal stop
+  the page does not have (*asaakiʔ* is *asaaki*, *riicikiʔ* is *riiciki*), 1
+  with both, and 11 in other letters (*taatakaraspiʔ* is *taataktaraspiʔ*,
+  *Takiihaahusaʔ* is *Takiikaahusaʔ*, *iriiruurakuuraaru* is
+  *iriiruurakuurahuraaru*, *wiiruuhaasitiiʔ* is *wiiruuhaasitikstarit*). The
+  stored copy had twelve words with an accent; neither reader saw an accent
+  anywhere in the chapter.
+- *One stored word stands.* *tikiwaakuʔ* 'it's barking' had been listed as
+  doubtful. Both readers copied an apostrophe where the glottal stop belongs:
+  the print has the wrong sign, and the comparison had cut it off as a
+  quotation mark.
+- *How a correction is tied to its place.* The blind reader's word must have
+  the same English gloss after it as the stored word, or the same Skiri word
+  before or after it; or the stored word differs only in an accent and
+  neither reader saw any; or it is a long word and the only one like it on
+  the page. No word of fewer than four letters. Twelve stored "words" that
+  are English (*st* from "1st", *an*, *has*) are named in the script and left.
+- *Breakdown lines.* The analyses after "<" were compared piece by piece
+  with both readings, which a comparison of words cannot do: 22 pieces
+  corrected. 15 are *-Ø PERF* stored as *Ø PERF*; 3 are *Ø- 3.A* stored as
+  *-Ø- 3.A* or *-Ø 3.A*; 2 are the subordinate *-hus* stored with the length
+  mark of the non-subordinate *-:hus*; also *a* 'come' and *-Ø SUB.4*.
+- *Table 17 and 21 places beside it* (named one by one in the script, each
+  applied only while both readings hold the text given as its evidence). The
+  stored Table 17 (suffixes for aspect and subordination) had merged the
+  cells of *-ʔ* and *-his* and of *-:huʔ* and *-:hus*, had given the
+  perfective a combined form *-hustarit* that the table does not print, and
+  had lost the length mark of *-:hus* in every non-subordinate row. It now
+  reads as both readers have it. The summary lines the extraction had written
+  from the wrong table were corrected with it. Also: *-:hus* in the heading
+  of the non-subordinate imperfective (p. 46); the breakdown of
+  *tiwaawaktiikusitit* (p. 48); *-itik + -:hus* and *-itiikuʔ* in the list on
+  p. 51 (the stored copy had a raised *u* for the last two letters); and a
+  zero the stored copy had put before *SUB.3* (p. 46).
+- *Where the chapter and the dictionary differ, both are kept.* The chapter
+  prints *tiwaarukstiʔ* 'he is holy' where the dictionary's verb form is
+  *tiwaarukstiiʔ*; it prints the name *uukahpaa* 'Quapaw' beside
+  *uukaahpaawiru* 'among the Quapaw'. The stored chapter now says what the
+  chapter prints; the dictionary data is untouched.
+- *What this reading did not compare.* The English prose (the stored copy
+  paraphrases it); the labels and glosses inside breakdown lines beyond what
+  the pieces show; the cells of the other tables, which were compared word
+  by word only (open item 51).
+
+**What had been built on the misread words.**
+
+- *The possession engine* took 'dog' to be *asaakiʔ* and, on that word and
+  *riicikiʔ*, stripped a final *-kiʔ* from any noun as a "diminutive
+  variant". Neither word is printed. With *asaaki* the engine gives
+  *asaakisukat* 'among the dogs', which the dictionary attests and which the
+  tests had set aside as unexplained. The rule is removed (it would have cut
+  *asaawakiʔ* 'pinto' to *asaawa*); the tests use the printed words: 60 of 60.
+- *The word-construction analysis* (v2) draws its worked examples from the
+  chapter: 90 of 93 are now usable (70 before), and the spurious affixes *Ø
+  PERF*, *-Ø- 3.A* and *karíi-* are gone from its list. Rebuilding its test
+  sets showed that two of them (the Appendix 1 cells and the Blue Book seams)
+  had been made before the audit's corrections and only hash-checked since;
+  they are now made from the corrected data. The tiers did not move (A 1,093
+  / B 1,316 / C 1,568 / D 1 / none 359).
+- *The superseded v1 word-building files* quoted ten of the words; the
+  quotations were corrected in the files and in the spec they are made from.
+
+**Blue Book.** Of the 42 forms two readings had left open, 20 were cases
+where both readers had read a longer or another word: the red line stood at
+the first place where the OCR text holds the stored letters. The English
+stored with the row shows which place is meant (the row says "He, she went",
+the readers had found "I went" beside *Tatúks•at.*).
+`scripts/source_audit/bluebook_right_place.py` finds the place where the
+stored letters stand directly before the row's own English, or stand once as
+a word by itself, and cuts it. 25 forms were found at another place than the
+one read before; one reader read them blind (58,000 tokens). 18 corrected,
+by the rule of the first reading (the reader's letters are the stored
+letters; the accents, raised dots and apostrophes the OCR cannot see are
+taken): *Tuks•at.* is *Túks•at.*, *tirardh•kiwi* is *tiraráh•kiwi*, *patsi*
+is *patsí*. 7 read exactly as stored. 17 are left: in eight a reader could
+not tell whether a raised dot or a faint mark is there, and the others are
+fragments or sentence-initial words the stored row cites in another form.
+
+| Check | Before | After |
+|---|---|---|
+| Stored Skiri words of the chapter (counted page by page) that stand in both blind readings | 491 of 530 | 526 of 526; twelve more stored "words" are English |
+| Stored breakdown lines identical to the first reader's line | 65 of 97 | 91 of 97; the other six differ in an oddity of the print (an apostrophe for ʔ, a stray semicolon, a missing quotation mark) or run across two tiles |
+| Blue Book forms left for a person | 42 | 17 |
+| Noun possession | 59 of 59 | 60 of 60 |
+| Dictionary against the page, planted-error test, learner spelling, page citations, site check, database round trip | pass | unchanged, pass |
+| Word-construction analysis | 34 tests, 17 gold files, 3,809 forms resolved | 34 tests, 17 gold files (three rebuilt), 3,811 forms resolved |
+
+Cost: four sub-agents, 593,000 tokens (535,000 for the chapter, 58,000 for
+the Blue Book forms).
+
+
 ### 🔲 Ongoing — Data Quality & Maintenance
 
 - [x] **~~Blue Book gap triage~~** — **DONE (2026-03-19)** via Gemini batch analysis. 516 of 984 BB vocabulary items classified into 8 categories: phrases (196/38%), inflected verbs (141/27%), unlisted nouns (94/18%), descriptors (40/8%), possessed forms (15/3%), function words (11/2%), loanwords (10/2%), OCR artifacts (9/2%). Key finding: 65% are morphological gaps (roots exist in Parks, inflected forms don't match). 115 high-value items flagged for potential DB addition. DB table: `bb_gap_triage`. Report: `reports/bb_gap_triage.txt`. Script: `scripts/bb_gap_triage.py`.
@@ -1631,14 +1748,14 @@ here, so that there is one list to keep current.
 6. *(Done 2026-11-13.)* **The stored IPA uses Parks's own symbols**: ə́ and ɪ́ for the accented short a and i, `·` between syllables, `–` at the edge of a bound form. Set for every entry from the text layer with the verified table (`scripts/restore_parks_ipa.py`).
 7. *(Done 2026-11-13.)* Every Parks IPA form has been matched to its printed form and set from it; 75 were corrected in content.
 8. **The grave accent.** Parks's phonetic font has a regular system: à ì ù on the second half of a long vowel, ə̀ ɪ̀ ʊ̀ on a short one. Ten entries have one, stored as printed since 2026-11-13. His front matter does not say what it marks.
-9. *(Changed 2026-11-14 to "accent", Parks's own word, everywhere a reader sees it; the sentences saying that pitch changes meaning were removed.)* **What to call the marks.** Parks says stress is not phonemic and that phonetic forms mark accented syllables (p. 15). Whether "accent" is the right word for learners is for someone who knows the language; changing it is one pass over `web/templates/` and the two `format_pitch` filters. The style names `pitch-high` and `pitch-unmarked` still say "pitch".
+9. *(Changed 2026-11-14 to "accent", Parks's own word, everywhere a reader sees it; the sentences saying that pitch changes meaning were removed. The project owner confirmed the word the same day.)* **What to call the marks.** Parks says stress is not phonemic and that phonetic forms mark accented syllables (p. 15). Whether "accent" is the right word for learners is for someone who knows the language; changing it is one pass over `web/templates/` and the two `format_pitch` filters. The style names `pitch-high` and `pitch-unmarked` still say "pitch".
 10. *(Done 2026-11-13: 162 stored cognates and etymologies corrected. `ó` is š, `Ý` is é, `í` is ó, `Ó` is ą, `Ô` is ą́, `è` is į, `ü` is ž, `š` is a raised i; the `?` in Kiowa, Ponca and Arapaho words is printed as a question mark.)* About 20 cognate forms still differ from the page in a letter or a hyphen (item 41).
 11. *(Done 2026-11-13.)* Every Parks entry has its printed IPA; the nine that had none were added from the page.
 12. 32 respellings of *-ʔa* stems where Parks's IPA lacks the glottal stop (`reports/fix_pronunciations_report.txt`). *(The bullet shown in the IPA of bound forms was the working notation for Parks's dash; the dash is stored and shown since 2026-11-13.)*
 
 ### Generated forms
 
-13. **The possession engine offers forms it should not.** Through the API it builds an instrumental ("with, using …") for every noun, animals included, because its animacy filter needs topic tags that the API does not pass. Its stem stripper removes `-kis` wherever it finds it, so *rakis* 'wood' becomes the stem *ra*. For stems ending in r the dictionary shows two outcomes with *-hiriʔ* and the engine picks one (marked "medium"). These forms are shown as computed, but several are plainly wrong.
+13. **The possession engine offers forms it should not.** Through the API it builds an instrumental ("with, using …") for every noun, animals included, because its animacy filter needs topic tags that the API does not pass. Its stem stripper removes `-kis` wherever it finds it, so *rakis* 'wood' becomes the stem *ra*. *(It also removed a final* -kiʔ*, a rule built on two words the grammar chapter does not print; that rule was taken out on 2026-11-14.)* For stems ending in r the dictionary shows two outcomes with *-hiriʔ* and the engine picks one (marked "medium"). These forms are shown as computed, but several are plainly wrong.
 14. **Bare pieces on the weekly flashcards** are places where two readings of Parks's etymology disagree, for example the first piece of *askuhuukita* 'eleven' and both pieces of *Ickariʔ*. Each is a small question for a person.
 
 ### Data
@@ -1679,10 +1796,10 @@ here, so that there is one list to keep current.
 39. **The conjugation engine gets 611 of 770 forms of Appendix 1 (79.4%), not 90.3%.** Its rules were tuned against a copy with 152 misread forms. `scripts/morpheme_inventory.py --validate` lists the 159 that differ. Whether to take this work up again is a decision for the project; until someone makes it, the rule not to retry from-scratch conjugation stands.
 40. **`scripts/accent_rules.py` was worked out from the accents of the misread Appendix 1**, many of which the page does not have. Only the conjugation engine uses it. It should be checked against the corrected appendix or withdrawn.
 41. **37 differences between the dictionary entries and the page are left** (`reports/source_audit_2026-11/after_fixes/s2e_differences.jsonl`; 218 before 2026-11-14). Each has its reason in `print_completion_report.txt`: 13 grammatical classes, nine of them the project's own N-KIN (item 17); seven stretches the comparison cannot place although the text is stored; ten places where the page breaks a line after a slash, inside a cited word or at a hyphen that belongs to the word; and seven values where the page itself is in doubt or the stored value rearranges a qualifier. None is a phonetic form or a verb form.
-42. **42 Blue Book forms that two readings could not settle** (`reports/source_audit_2026-11/bluebook_second_look.json` and the last section of `bluebook_applied_report.txt`; 77 before the second reading of 2026-11-14). For 20 of them both readers read a longer or another word at the place the OCR pointed to, so the stored form may be right and stand elsewhere on the page; on 13 the readings differ; in 9 a reader was unsure. The forms written into the sentence templates (`scripts/sentence_templates.py`) still lack the printed accents; the other tables were corrected on 2026-11-14.
+42. **17 Blue Book forms that three readings could not settle** (the last section of `reports/source_audit_2026-11/bluebook_applied_report.txt`; 77 after the first reading, 42 after the second, 17 after the forms were read at their own place on 2026-11-14). In eight a reader could not tell whether a raised dot or a faint mark is printed (*ti•rá?wa•rar•uhat*, *sakúru'*), or the print is damaged (*Kitské ?e ru'?*); four are words that begin a sentence on the page and are stored in another form (*paresu*, *kitu*, *tatitska*); the rest are fragments (*wa +*, *its*, *ta*) whose place cannot be told. More readings will not help; a person with the book can settle each at a glance. The forms written into the sentence templates (`scripts/sentence_templates.py`) still lack the printed accents; the other tables are corrected.
 43. **Tense and lax short vowels in the respelling.** Parks writes [i], [u] in some places and [ɪ], [ʊ] in others; the respelling writes `ih` and `oo` for both (589 entries, counted by `scripts/check_simplified_forms.py`). Whether learners should see the difference is a teaching decision for someone who knows the language.
 44. *(Closed 2026-11-13: the PythonAnywhere hosting is no longer in use and was taken out of the repository.)* If the account still exists, its web app should be disabled there: unless someone updated it by hand, it holds the data from before the corrections and would still serve flashcard Week 20.
-45. **Left for a person with the page:** the singular cell of *tir* 'to be together' in Appendix 2, empty in print and stored as `tir`, which the conjugation engine reads; about 40 words of the grammar chapter (`chapter4_third_witness.json` says for each what the stored text, the blind reader and the dictionary have; five of them differ from a dictionary form only in an accent or a final glottal stop); *rihkuupa´kstarit* in an example of *apak*, a printing oddity; the values listed as left in `print_completion_report.txt`. *(Settled 2026-11-14: the three "verb forms" of* itkaakahaaruʔ *are not printed and were removed; the combining form is* `takasistik [+ raar-]`*; three chapter words corrected.)*
+45. **Left for a person with the page:** the singular cell of *tir* 'to be together' in Appendix 2, empty in print and stored as `tir`, which the conjugation engine reads; *rihkuupa´kstarit* in an example of *apak*, a printing oddity; the values listed as left in `print_completion_report.txt`. *(Settled 2026-11-14: the three "verb forms" of* itkaakahaaruʔ *are not printed and were removed; the combining form is* `takasistik [+ raar-]`*; the grammar chapter was read a second time and all its Skiri words are settled, see the phase entry.)*
 46. **An older respelling function is still in the code.** `generate_simplified_pronunciation` in `scripts/respell_and_normalize.py` returns `? ?` for a phonetic form of several words. Stored respellings are made by `scripts/fix_pronunciations.py`, which handles them; the older function should be retired.
 
 ### The public site, now the only publication (2026-11-13)
@@ -1690,7 +1807,8 @@ here, so that there is one list to keep current.
 47. *(Done 2026-11-14: the About page was written again for the site as it is.)* Its wording is the project's and has not been read by anyone from the community (rank 1).
 48. *(Done 2026-11-14: the verb forms, other forms, etymology, cited forms and derived stems are in `docs/data/dictionary.json` and behind "More from this entry".)* The topic tags are in the data and not shown; the cross-references wait for item 32.
 49. *(Done 2026-11-14: "Send a correction" on every search result and on the About page opens a GitHub issue with the entry filled in.)* It needs a GitHub account; there is no other route.
-50. **The 143 entries tagged `ceremony` show less than the others on the public site.** They are searchable and show senses and examples, as before; the verb forms, etymology and cited forms added on 2026-11-14 are held back for them, and the result says so. The tag was given by keyword, so the list is rough both ways. Whether these entries are shown at all, and how fully, belongs to the community review (rank 1). The switch is in `export_dictionary_data`, `scripts/build_static_site.py`.
+50. *(Confirmed by the project owner on 2026-11-14 as the arrangement until the community review.)* **The 143 entries tagged `ceremony` show less than the others on the public site.** They are searchable and show senses and examples, as before; the verb forms, etymology and cited forms added on 2026-11-14 are held back for them, and the result says so. The tag was given by keyword, so the list is rough both ways. Whether these entries are shown at all, and how fully, belongs to the community review (rank 1). The switch is in `export_dictionary_data`, `scripts/build_static_site.py`.
+51. **The tables of the grammar chapter are stored as the March 2026 extraction rebuilt them, not as printed.** Table 17 was put back as printed on 2026-11-14 after it turned out to have merged cells and lost the length mark of *-:hus*. The other tables were compared with the two blind readings word by word, which finds a wrong word but not a cell in the wrong row. The `morphemes_mentioned` lists in the same file are summaries the extraction wrote, not Parks's text. The two blind readings (`reports/source_audit_2026-11/blind_readings/chapter4_part*.json` and `chapter4_second_part*.json`) hold every form and table of the chapter twice and agree on every Skiri word, so the tables as printed can be put together from them without another reading. No code reads the stored tables.
 
 ---
 

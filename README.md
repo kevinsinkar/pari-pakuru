@@ -129,15 +129,17 @@ All of these were run on 2026-11-14.
 | Respelling and audit code | `scripts/test_phase_1_1.py` | 106 of 106 |
 | Database schema and query library | `DB/test_schema.py` | 53 of 53 |
 | Word-construction analysis | `python -m unittest discover -s scripts/morphology_v2 -p "test_*.py"` | 34 of 34 |
-| Its test sets are unchanged | `scripts/morphology_v2/gold_build.py --verify` | 17 files match their hashes |
+| Its test sets are unchanged | `scripts/morphology_v2/gold_build.py --verify` | 17 files match their hashes. Three of them (Parks's worked examples, the Appendix 1 cells, the Blue Book seams) were made again from the corrected data on 2026-11-14 |
 | Its outputs are reproducible | `scripts/morphology_v2/run.py --all`, hashes compared | byte-identical |
-| Every Pawnee form in the guide has a source | `scripts/morphology_v2/check_forms.py` | 3,809 forms, 250 IPA, 203 respellings: all resolved |
-| Noun possession and the *-hiriʔ* suffix | `scripts/possession_engine.py --test` | 59 of 59, ten of them attested dictionary words |
+| Every Pawnee form in the guide has a source | `scripts/morphology_v2/check_forms.py` | 3,811 forms, 250 IPA, 203 respellings: all resolved |
+| Noun possession and the *-hiriʔ* suffix | `scripts/possession_engine.py --test` | 60 of 60, ten of them attested dictionary words in *-hiriʔ* |
 | The text copy of the database restores to the same database | `scripts/db_dump.py --verify` | round trip exact: 46,821 rows in 25 tables |
 | Dictionary entries against the printed page | `scripts/source_audit/s2e_compare.py` | 50,807 of 50,837 fields identical (99.94%; 97.45% before the first fixes, 99.68% after them). The 37 differences left are each explained in `reports/source_audit_2026-11/print_completion_report.txt` |
 | Every entry cites the page of the book | `scripts/fix_page_citations.py --check` | 4,244 of 4,244 Parks entries; the printed page number was read from all 181 pages |
 | Learner spelling and respelling follow from Parks's forms | `scripts/check_simplified_forms.py` | no difference in 4,244 entries |
 | That comparison catches errors | `scripts/source_audit/recall_test.py` | 510 of 510 planted errors reported |
+| The grammar chapter against two blind readings of the page | `scripts/source_audit/chapter4_second_reading.py` | all 526 Skiri words of the stored chapter stand in both readings; nothing left to correct |
+| Blue Book forms against the readings of the scan | `scripts/apply_bluebook_scan_fixes.py` (a dry run) | nothing left to apply; 17 forms listed for a person |
 | The published search page | `node scripts/check_static_site.js` (needs Node.js) | 13 checks pass; all 4,337 entries render, every value escaped |
 | Web app | 25 routes requested through Flask's test client; the possession API for all 1,706 nouns | all answer |
 
@@ -168,10 +170,13 @@ Measurements, not pass or fail:
   Appendix 1 differed from the page. 807 fixes were applied the same day. On
   2026-11-14 everything else the PDF's text layer can settle was set from it
   (1,447 values, most of them hyphens the typesetter put at line ends and the
-  parse kept); the dictionary entries are now 99.94% identical. What is left
-  is for a person to decide: 37 small differences in the dictionary, 42 Blue
-  Book forms two readings could not settle, about 40 words of the grammar
-  chapter, and the English index, which is still loaded from an early file. Use the entry a row of the English index points to, not the
+  parse kept); the dictionary entries are now 99.94% identical. The grammar
+  chapter, which exists only as page images, was read a second time by
+  readers who saw nothing but the page: both blind readings agree on every
+  Skiri word, and the stored chapter was corrected to them (38 words, Table
+  17). What is left is for a person with the books: 37 small differences in
+  the dictionary and 17 Blue Book forms that three readings could not settle.
+  The English index is still loaded from an early file. Use the entry a row of the English index points to, not the
   Skiri form the row itself holds.
 - **The IPA is Parks's, in his own symbols.** The PDF encodes his symbols with
   stand-in characters; the table is verified against the printed glyphs for

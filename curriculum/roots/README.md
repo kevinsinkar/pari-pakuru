@@ -32,6 +32,15 @@ The full list is in [../roots_v2/changelog_vs_v1.md](../roots_v2/changelog_vs_v1
 | `roots_ranked.json` | `scripts/morphology_v2/report.py` (to write the list of changes) |
 | the rest | nothing. Kept so that the list of changes can be checked against what version 1 actually said |
 
+One thing was changed after the files were set aside. They quote ten words
+from Parks's grammar chapter as the stored chapter then had them, and the
+second blind reading of 2026-11-14 showed those ten to be misreadings
+(*asaakiʔ* for *asaaki*, *taruuraariit* for *taruuraarit*, *tikíkat* for
+*tikikat*). The quotations were corrected in the four guide and lesson files,
+in `review_log.md` and in the two spec files they are made from
+(`scripts/root_curriculum_spec_guide.py`, `root_curriculum_spec_units_b.py`),
+41 places in all. Nothing else was touched.
+
 ## What the files are
 
 | File | Contents |

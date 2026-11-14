@@ -39,7 +39,9 @@ python scripts/source_audit/status.py        # how far the audit has got
 | 5 | `bluebook_check.py`, `bluebook_crops.py` | Blue Book forms against the scan: the Blue Book-only entries and a sample of 60 |
 | 5 | `bluebook_rest.py` | The 843 Blue Book forms the audit had not reached, cut from the scan for reading (after the audit); `--grade` compares the readings with the stored forms |
 | 5 | `bluebook_second_look.py` | The 77 forms the first reading left open, cut again with the whole line and its neighbours, for a second reader who sees only the images (2026-11-14); `--grade` says where the two readings agree. `scripts/apply_bluebook_scan_fixes.py` takes the agreed ones |
+| 5 | `bluebook_right_place.py` | The Blue Book forms two readings left open because the crop had shown a longer or another word: finds the row's own place on the page (where the stored letters stand directly before the English stored with the row, or once as a word by itself), cuts it, and `--grade` judges the reading as the first reading was judged (2026-11-14: 25 found, 18 corrected, 7 confirmed) |
 | 4 | `chapter4_third_witness.py` | The grammar chapter's doubtful words weighed against the dictionary's printed forms: where the blind reader's form is a dictionary form and the stored one is printed nowhere, both witnesses agree. Corrects only the three words where they differ in letters (`--apply`); records a verdict for all of them |
+| 4 | `chapter4_second_reading.py` | **The grammar chapter against two blind readings** (2026-11-14). `--sheets` cuts the pages for the second readers, one folder each; `--zoom` draws part of a tile larger for a reader. Without options it grades: every stored Skiri word against both readings, the breakdown lines piece by piece, and the places named one by one in `BY_HAND` (Table 17). `--apply` corrects what both blind readings agree on. Run it after any change to `extracted_data/grammatical_overview.json`: it should report nothing to correct |
 | 6 | `e2s_compare.py` | The English-to-Skiri section against its text layer; `--source db` for the database tables, `--source json` for the current JSON |
 | 7 | `build_report.py`, `apply_fixes.py` | The list of proposed fixes and the review page; the script that applies approved fixes |
 
@@ -71,6 +73,18 @@ reading anything again.
 - **Blind readings are expensive.** Each reader used about 230,000 tokens for
   eight to ten sheets, because it enlarges each image several times to be sure
   of accents. Use them where there is no text layer or where two readings
-  disagree, not as a first pass.
+  disagree, not as a first pass. The second reading of the grammar chapter
+  took 535,000 tokens for 23 pages (three readers); a reader for 25 small
+  crops took 58,000.
+- **Give the second reader other cuts than the first,** and a folder that
+  holds nothing but its images: the first reading's files lie in the work
+  folder beside the first tiles.
+- **A comparison of words does not see everything.** In the grammar chapter
+  the stored copy had lost the length mark of *-:hus* and merged cells of a
+  table, and every word in it was still a word of the page. Compare the
+  breakdown lines piece by piece and the tables row by row as well.
+- **A crop drawn where the OCR text matches can be the wrong place** when the
+  stored form is short. The English stored with the row says which place is
+  meant (`bluebook_right_place.py`).
 - `work/` in the reports folder holds rendered crops and per-page files. It is
   not in git and can be rebuilt.
