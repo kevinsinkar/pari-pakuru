@@ -15,7 +15,7 @@ Part 1 is written by hand from the comparison of sources during curriculum desig
 - ⚠ 'it is red': BB *ti pahaat* (L2 p.33) vs Parks *tipahaaʔat* (p.107; GO p.49). BB omits the reduplicated *-ʔa-* of Class I descriptives.
 - ⚠ 'he is doing it': BB *tut•ari'* (L6 p.56) vs Parks 3sg perfective *tuutaa*, imperfective *tuutariʔ*. BB glosses an imperfective form as the citation form.
 - ⚠ nominaliser: BB *hiri* (L13 p.88–89) vs Parks *irii-* (GO p.42). Initial *h* and vowel length.
-- ⚠ commands: BB *Suks•paku'* (L5 p.53) vs Parks *i-* CONT + *s-* + *uks-* (GO p.38, *sukskirikaʔaaʔ*). BB does not write the contingent *i-*.
+- ⚠ commands: BB *Suks•paku'* (L5 p.53) vs Parks *i-* CONT + *s-* + *uks-* (GO p.38, *sukskirikaʔaa*). BB does not write the contingent *i-*.
 - ⚠ spelling rules: BB 'k drops off before p' (L3 p.41) and 's + s → s•ts' (L17 p.102) have no counterpart among Parks's 24 rules; BB 'i + a → e' corresponds to Parks Rule 7 (→ ii); BB 'w → p' is attested in 115 headwords but unnumbered in Parks.
 - ⚠ BB *tsau* 'face' (L2 p.36 *tskau*) vs Parks *ckaʔuʔ*; BB *kskitsu'* 'finger' (L5 p.52) vs Parks *ikskiicuʔ*: BB drops the initial *i-* of *icka-*/*iks-* in these words; Parks does so only in *ckaʔuʔ*, *cusuʔ*, *caahiks*.
 - ⚠ Parks Table 4 (GO p.30) prints the instrumental/locative suffix as *-biriʔ* (OCR); dictionary etymologies have *-hiriʔ*, *-piriʔ*, *-iriʔ*.

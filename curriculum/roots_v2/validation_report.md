@@ -166,12 +166,12 @@ Every difference is listed in `proposed_data_fixes.json` for checking by eye. No
 
 ## 2. Parks's own worked examples (G1)
 
-93 worked examples were read from the Grammatical Overview; 70 are free of OCR damage and were used.
+93 worked examples were read from the Grammatical Overview; 90 are free of OCR damage and were used.
 
 - **Words Parks analyses there that are also dictionary headwords:** the pipeline's pieces equal his in 2 / 2 (100.0%).
-- **Stems he cites with a gloss:** 45 / 84 (53.6%) are dictionary headwords whose gloss shares a content word with his; 11 are headwords with a different gloss wording; 28 are not headwords (bound stems and combining forms).
-- **Labelled prefixes and suffixes in his analyses:** 179 / 284 (63.0%) were already in the project's `morpheme_inventory` table or among the dictionary affixes. The rest, mostly zero morphemes and less common proclitics, were added to the inflectional list in `affixes.json` straight from his worked examples, with the page of the example.
-  - Added from the worked examples: Ø- 3.A ×38, -Ø PERF ×29, Ø PERF ×7, uks- AOR ×5, -Ø SUB.4 ×4, -rit INT.SUB ×4, uks- JUSS ×2, witi- REFL ×2, -Ø- 3.A ×2, -uku HAB.SUB ×2, -uk SUB.D ×2, -Ø 3.A ×1, kuur- DUB.1 ×1, ki- HORT ×1, karíi- EMPH.NEG ×1, si- DU ×1, Ø SUB.3 ×1, Ø SUB.4 ×1, -uukuʔ HAB ×1.
+- **Stems he cites with a gloss:** 59 / 108 (54.6%) are dictionary headwords whose gloss shares a content word with his; 18 are headwords with a different gloss wording; 31 are not headwords (bound stems and combining forms).
+- **Labelled prefixes and suffixes in his analyses:** 230 / 366 (62.8%) were already in the project's `morpheme_inventory` table or among the dictionary affixes. The rest, mostly zero morphemes and less common proclitics, were added to the inflectional list in `affixes.json` straight from his worked examples, with the page of the example.
+  - Added from the worked examples: Ø- 3.A ×54, -Ø PERF ×45, uks- AOR ×7, -Ø SUB.4 ×7, uks- JUSS ×4, -rit INT.SUB ×4, ki- HORT ×2, witi- REFL ×2, si- DU ×2, -uku HAB.SUB ×2, -uk SUB.D ×2, kuur- DUB.1 ×1, tiir- INFR ×1, waawa- DIST ×1, karii- EMPH.NEG ×1, -uukuʔ HAB ×1.
 - **Appendix 1:** `person_forms.py --validate-appendix` reproduces the paradigm cells it derives (result below under existing suites).
 
 ## 3. Blue Book seams (G3)

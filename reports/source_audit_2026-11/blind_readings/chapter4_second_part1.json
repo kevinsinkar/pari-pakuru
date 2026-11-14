@@ -1,0 +1,442 @@
+{
+  "p1-b1": {"book_page": "", "forms": [], "tables": []},
+  "p1-b2": {"book_page": "", "forms": [], "tables": []},
+  "p1-b3": {"book_page": "", "forms": [["-uʔ", ""]], "tables": []},
+  "p1-b4": {"book_page": "", "forms": [
+    ["siis-", "sharp, pointed object"],
+    ["siiski", "awl"],
+    ["siis-", ""],
+    ["-kis", "DIM"],
+    ["siistacaraʔ", "fork"],
+    ["siis-", ""],
+    ["-raar", "PL"],
+    ["taraa", "be side by side"],
+    ["asaa-", "horse; dog"],
+    ["asaaki", "dog"],
+    ["asaa-", ""],
+    ["-kis", "DIM"],
+    ["asiicapaat", "mare"],
+    ["asaa-", ""],
+    ["icapaak", "woman; female"],
+    ["aruusaʔ", ""]
+  ], "tables": []},
+  "p2-b1": {"book_page": "", "forms": [
+    ["hiriʔ", ""],
+    ["-hiriʔ", ""],
+    ["iksiriʔ", "by hand; on the hand"]
+  ], "tables": []},
+  "p2-b2": {"book_page": "", "forms": [
+    ["-hiriʔ", ""],
+    ["iksiriʔ", "by hand; on the hand"],
+    ["-raar-", ""],
+    ["-hiriʔ", ""],
+    ["ikstaaririʔ", "with the hands; on the hands"],
+    ["-ru", ""],
+    ["-kat", ""],
+    ["-raar-", "PL"],
+    ["-hiriʔ", "INST/LOC"],
+    ["Ø", ""],
+    ["-ru", "LOC"]
+  ], "tables": [
+    {"title": "Table 4. Skiri Case and Number Suffixes", "rows": [
+      ["Noun Class", "Plural Marking", "Case Suffixes"],
+      ["Body Part Terms", "-raar- PL", "-hiriʔ INST/LOC"],
+      ["Tribal and Geographical Names", "Ø", "-ru LOC"]
+    ]}
+  ]},
+  "p2-b3": {"book_page": "", "forms": [
+    ["Ø", ""],
+    ["-ru", "LOC"],
+    ["Ø", ""],
+    ["-kat", "LOC"],
+    ["-hiriʔ", "INST"],
+    ["-hiriʔ", ""],
+    ["-uʔ", ""],
+    ["askatahciriʔ", "sole (of the foot)"],
+    ["riitiriʔ", "small of the back"]
+  ], "tables": [
+    {"title": "(continuation of Table 4; title not in this tile)", "rows": [
+      ["Tribal and Geographical Names", "Ø", "-ru LOC"],
+      ["Other Nouns", "Ø", "-kat LOC"],
+      ["", "", "-hiriʔ INST"]
+    ]}
+  ]},
+  "p2-b4": {"book_page": "", "forms": [
+    ["-ru", "among, in the country/territory of"],
+    ["sahiiru", "in Cheyenne country"],
+    ["sahii", "Cheyenne"],
+    ["pasaasiru", "among the Osages; in Osage territory"],
+    ["pasaasi", "Osage"],
+    ["tiksastu", "in Texas"],
+    ["-ru", ""],
+    ["-wiru", ""],
+    ["a", ""],
+    ["uukaahpaawiru", "among the Quapa"],
+    ["uukahpaa", "Quapaw"],
+    ["riihitawiru", "among the Ponca"],
+    ["riihita", "Ponca"],
+    ["-kat", ""],
+    ["akahkat", "on the dwelling"],
+    ["akar-", ""],
+    ["-kat", ""],
+    ["asaakat", "among the horses"],
+    ["asaa-", "horse"],
+    ["-kat", ""]
+  ], "tables": []},
+  "p3-b1": {"book_page": "", "forms": [
+    ["-uʔ", ""],
+    ["iksuʔ", "hand"],
+    ["iks-", "hand"],
+    ["-uʔ", ""]
+  ], "tables": [
+    {"title": "Table 5. Nominal Derivational Affixes", "rows": [
+      ["Category", "Skiri", "Translation", "Example"],
+      ["Nominal Absolutive (NOM)", "-uʔ", "No translation", "iksuʔ ‘hand’ < iks- ‘hand’ + -uʔ"]
+    ]}
+  ]},
+  "p3-b2": {"book_page": "", "forms": [
+    ["-kis", ""],
+    ["asaaki", "dog"],
+    ["asaa-", "dog; horse"],
+    ["-kis", "DIM"],
+    ["riiciki", "knife"],
+    ["riici-", "knife"],
+    ["kis", "DIM"],
+    ["-kusuʔ", ""],
+    ["wiitakusuʔ", "large man"],
+    ["wiita", "man"],
+    ["kusuʔ", "big"],
+    ["-kuukuʔuʔ", ""],
+    ["pakskuukuʔuʔ", "hat; headwear"],
+    ["paks-", "head"],
+    ["-kuuku-", "covering"],
+    ["-uʔ", "NOM"],
+    ["c-", ""],
+    ["ckuraaʔuʔ", ""],
+    ["c-", "FEM"],
+    ["kuraa-", "doctor"],
+    ["-uʔ", "NOM"]
+  ], "tables": [
+    {"title": "(continuation of Table 5; title not in this tile)", "rows": [
+      ["Diminutive (DIM)", "-kis", "‘small N’; no", "asaaki ‘dog’ < asaa- ‘dog; horse’"],
+      ["", "", "trans.", "+ -kis DIM; riiciki ‘knife’"],
+      ["", "", "", "< riici- ‘knife’ + kis DIM"],
+      ["Augmentative (AUG)", "-kusuʔ", "‘large, big’", "wiitakusuʔ ‘large man’"],
+      ["", "", "", "< wiita ‘man’ + kusuʔ ‘big’"],
+      ["‘covering’", "-kuukuʔuʔ", "‘covering’", "pakskuukuʔuʔ ‘hat; headwear’"],
+      ["", "", "", "< paks- ‘head’ + -kuuku- ‘covering’ +"],
+      ["", "", "", "-uʔ NOM"],
+      ["Feminine (FEM)", "c-", "‘female’", "ckuraaʔuʔ < c- FEM + kuraa- ‘doctor’ +"],
+      ["", "", "", "-uʔ NOM"]
+    ]}
+  ]},
+  "p3-b3": {"book_page": "", "forms": [
+    ["hak", "to pass, go by"],
+    ["at", "to go"]
+  ], "tables": []},
+  "p3-b4": {"book_page": "", "forms": [
+    ["ir-/a-", ""],
+    ["uur-", ""],
+    ["ut-", ""],
+    ["wiitatiiksaʔ", "I have come"],
+    ["wii-", "now"],
+    ["ta-", "IND.1/2.A"],
+    ["t-", "1.A"],
+    ["ir-", "PREV"],
+    ["uks-", "AOR"],
+    ["a", "come"],
+    ["-Ø", "PERF"]
+  ], "tables": []},
+  "p4-b1": {"book_page": "", "forms": [
+    ["a (ir-...)", "to come"],
+    ["ir-", ""],
+    ["uks-", ""],
+    ["a", ""],
+    ["hiir (uur . . .)", "be good; be good-looking"],
+    ["a", ""],
+    ["hiir", ""],
+    ["tuuricaahiksii", "he is a good-looking person"],
+    ["ti-", "IND"],
+    ["Ø-", "3.A"],
+    ["uur-", "PREV"],
+    ["icaahiks-", "person"],
+    ["hiir-", "be good; be good-looking"],
+    ["-Ø", "PERF"],
+    ["wiitatuuhaaka", "we have done that"],
+    ["wii-", "now"],
+    ["ta-", "IND.1/2.A"],
+    ["t-", "1.A"],
+    ["ut-", "PREV"],
+    ["raak-", "1/2.P.A/P"],
+    ["aar", "do"],
+    ["-Ø", "PERF"]
+  ], "tables": []},
+  "p4-b2": {"book_page": "", "forms": [
+    ["raak-", "1/2.P.A/P"],
+    ["aar", "do"],
+    ["-Ø", "PERF"],
+    ["ut-", ""],
+    ["ut-", ""],
+    ["ir . . .ri . . .ut-", ""],
+    ["ir-", ""],
+    ["ri-", ""],
+    ["ut-", ""],
+    ["tatiriitaa", "I did it for him"],
+    ["ta-", "IND.1/2.A"],
+    ["t-", "1.A"],
+    ["ir-", "A.POSS"],
+    ["ri-", "PHY.POSS"],
+    ["ut-", "P.POSS"],
+    ["aar", "do"],
+    ["-Ø", ""]
+  ], "tables": []},
+  "p4-b3": {"book_page": "", "forms": [], "tables": []},
+  "p4-b4": {"book_page": "", "forms": [], "tables": []},
+  "p5-b1": {"book_page": "", "forms": [], "tables": [
+    {"title": "Table 6. Major Positions in the Inflected Verb", "rows": [
+      ["Verb"],
+      ["Proclitics", "Prefixes + Preverbs", "Incorporated Noun", "STEM", "Suffixes"],
+      ["(Outer Prefixes)", "(Inner Prefixes)", "(Agent/Patient)", "", ""]
+    ]}
+  ]},
+  "p5-b2": {"book_page": "", "forms": [], "tables": [
+    {"title": "Table 7. The Inner Prefix Template", "rows": [
+      ["9", "10", "11", "12", "13", "14"],
+      ["EVIDENTIALS", "MODALS", "AGENT", "INCLUSIVE", "AGENT PL,", "EVIDENTIA"]
+    ]}
+  ]},
+  "p5-b3": {"book_page": "", "forms": [], "tables": [
+    {"title": "(continuation of Table 7; title not in this tile)", "rows": [
+      ["EVIDENTIALS", "MODALS", "AGENT", "INCLUSIVE", "AGENT PL,", "EVIDENTIA"],
+      ["", "", "PRONOUNS,", "PRONOUNS", "AGENT POSS,", ""],
+      ["", "", "OBVIATIVE", "", "PREVERB", ""],
+      ["15", "16", "17", "18", "19", "20"],
+      ["PATIENT", "INFINITIVE", "PHYSICAL", "AGENT POSS,", "RESULTATIVE/", "AORIST,"],
+      ["PRONOUNS", "MODAL", "POSSESSION", "BENEFACTIVE,", "SEQUENTIAL", "JUSSIVE"],
+      ["", "", "", "PREVERB", "", ""],
+      ["21", "22", "23", "24", "25", "26"]
+    ]}
+  ]},
+  "p5-b4": {"book_page": "", "forms": [], "tables": [
+    {"title": "(continuation of Table 7; title not in this tile)", "rows": [
+      ["21", "22", "23", "24", "25", "26"],
+      ["ADVERBIALS", "AGENT PL,", "PATIENT PL,", "INDIV AGT PL,", "NOUN ± PL", "STEM"],
+      ["", "PATIENT PL", "POSS PL,", "PATIENT PL", "", ""],
+      ["", "", "INDIR PAT PL", "", "", ""]
+    ]}
+  ]},
+  "p6-b1": {"book_page": "34", "forms": [
+    ["ta-", "1/2.A"],
+    ["ti-", "3.A"]
+  ], "tables": [
+    {"title": "Table 8. Modal Prefixes: Forms and Functions", "rows": [
+      ["Mode", "Subordinate/ Non-subordinate", "Form(s)", "Function(s)"],
+      ["Indicative IND", "Non-subordinate", "ta- 1/2.A", "• Statements"],
+      ["", "", "ti- 3.A", "• Directive statements"]
+    ]}
+  ]},
+  "p6-b2": {"book_page": "", "forms": [
+    ["ti-", "3.A"],
+    ["kaakaa-", "1/2.A"],
+    ["kaaki-", "3.A"],
+    ["rii-", ""],
+    ["i-", "1/2.A"],
+    ["ri-", "3.A"],
+    ["kuus ... i-", "1/3.A"]
+  ], "tables": [
+    {"title": "(continuation of Table 8; title not in this tile)", "rows": [
+      ["", "", "ti- 3.A", "• Directive statements"],
+      ["Negative Indicative", "Non-subordinate", "kaakaa- 1/2.A", "• Negative statements"],
+      ["NEG.IND", "", "kaaki- 3.A", "• Negative directive statements"],
+      ["Assertive ASSR", "Non-subordinate", "rii-", "• Emphatic statements"],
+      ["", "", "", "• Directive statements"],
+      ["", "", "", "• Demonstration, presentation statements"],
+      ["Contingent CONT", "Non-subordinate", "i- 1/2.A", "• Future, resultative statements"],
+      ["", "", "ri- 3.A", "• Sequential statements"],
+      ["", "", "", "• Mild imperative statements, requests"],
+      ["Potential POT", "Non-subordinate", "kuus ... i- 1/3.A", "• Future statements"]
+    ]}
+  ]},
+  "p6-b3": {"book_page": "", "forms": [
+    ["kuus ... i-", "1/3.A"],
+    ["kaas ... i-", "2.A"],
+    ["ra-", ""],
+    ["aa-", "1/2.A"],
+    ["ii-", "3.A"],
+    ["ra . . . ku-", ""],
+    ["i-", "1/2.A"]
+  ], "tables": [
+    {"title": "(continuation of Table 8; title not in this tile)", "rows": [
+      ["Potential POT", "Non-subordinate", "kuus ... i- 1/3.A", "• Future statements"],
+      ["", "", "kaas ... i- 2.A", "• Statements of possibility, potentiality,"],
+      ["", "", "", "probability"],
+      ["Absolutive ABS", "Non-subordinate", "ra-", "• Interrogative statements"],
+      ["", "", "", "• Statements in narration"],
+      ["", "", "", "• Demonstrative statements"],
+      ["Subjunctive", "Non-subordinate", "aa- 1/2.A", "Statements of wish, desire"],
+      ["(Optative) SUBJ", "", "ii- 3.A", ""],
+      ["Infinitive", "Non-subordinate", "ra . . . ku-", "Directive statements"],
+      ["(Admonitive) INF", "", "", ""],
+      ["Contingent", "Subordinate", "i- 1/2.A", "Conditional, contingent statements"]
+    ]}
+  ]},
+  "p6-b4": {"book_page": "", "forms": [
+    ["i-", "1/2.A"],
+    ["ri-", "3.A"],
+    ["ra-", ""],
+    ["aa-", "1/2.A"],
+    ["ii-", "3.A"],
+    ["ra . . . ku-", ""]
+  ], "tables": [
+    {"title": "(continuation of Table 8; title not in this tile)", "rows": [
+      ["Contingent", "Subordinate", "i- 1/2.A", "Conditional, contingent statements"],
+      ["(Conditional) CONT", "", "ri- 3.A", ""],
+      ["Absolutive", "Subordinate", "ra-", "• Subordinate statements"],
+      ["(Gerundial) ABS", "", "", "• Gerundial forms"],
+      ["Subjunctive SUBJ", "Subordinate", "aa- 1/2.A", "Unrealized, hypothetical, contrary to fact"],
+      ["", "", "ii- 3.A", "statements"],
+      ["Infinitive INF", "Subordinate", "ra . . . ku-", "• Complement statements after verbs of"],
+      ["", "", "", "wishing, thinking, feeling"],
+      ["", "", "", "• Subordinate statements"],
+      ["", "", "", "• Directive statements"]
+    ]}
+  ]},
+  "p7-b1": {"book_page": "", "forms": [
+    ["ir-", ""]
+  ], "tables": [
+    {"title": "Table 9. Pronominal Prefixes", "rows": [
+      ["Person", "Agent", "Patient"]
+    ]}
+  ]},
+  "p7-b2": {"book_page": "", "forms": [
+    ["t-", ""],
+    ["ku-", ""],
+    ["s-", ""],
+    ["a-", ""],
+    ["ir-", ""],
+    ["acir-", ""],
+    ["aca-", ""],
+    ["a-", ""],
+    ["si-", "DU"]
+  ], "tables": [
+    {"title": "(continuation of Table 9; title not in this tile)", "rows": [
+      ["1st", "t-", "ku-"],
+      ["2nd", "s-", "a-"],
+      ["Obviative", "ir-", ""],
+      ["Dual inclusive", "acir-", "aca-"],
+      ["Plural inclusive", "a-", ""]
+    ]}
+  ]},
+  "p7-b3": {"book_page": "", "forms": [
+    ["rak-", ""],
+    ["ir-", ""],
+    ["raar-", ""],
+    ["si-", "DU"],
+    ["ir-", "COLL.PL"]
+  ], "tables": []},
+  "p7-b4": {"book_page": "", "forms": [
+    ["tiiraspaatasit", "they (COLL) set out"],
+    ["ti-", "IND"],
+    ["Ø-", "3.A"],
+    ["ir-", "3.P.COLL.A"],
+    ["aspaatasik", "set out"],
+    ["-Ø", "PERF"],
+    ["tiraaraspaatasit", "they (INDV) set out"],
+    ["ti-", "IND"],
+    ["Ø-", "3.A"],
+    ["raar-", "3.P.INDV.A"],
+    ["aspaatasik", "set out"],
+    ["-Ø", "PERF"],
+    ["taharaspiʔ", "I looked for them (inanimate objects)"],
+    ["ta-", "IND.1/2.A"],
+    ["t-", "1.A"],
+    ["raar-", "3.INAN.P"],
+    ["raspii", "look for"],
+    ["-Ø", "PERF"],
+    ["taataktaraspiʔ", "I looked for"]
+  ], "tables": []},
+  "p8-b1": {"book_page": "", "forms": [
+    ["ta-", "IND.1/2.A"],
+    ["t-", "1.A"],
+    ["ak-", "3.AN.P"],
+    ["raar-", "3.P.INDV.A"],
+    ["raspii", "look for"],
+    ["-Ø", "PERF"],
+    ["rak-", ""],
+    ["rak-", "COLL"],
+    ["rak-", ""],
+    ["rak-", ""],
+    ["rak- + raar-", "INDV"]
+  ], "tables": [
+    {"title": "Table 10. Plural Prefixes", "rows": [
+      ["", "Person", "Active transitive", "Active intransitive", "Passive", "Descriptive", "Locative"],
+      ["", "1st, 2nd", "rak-", "rak- COLL", "", "rak-", "rak-"],
+      ["", "", "", "rak- + raar-", "", "", ""],
+      ["AGENT", "", "", "INDV", "", "", ""]
+    ]}
+  ]},
+  "p8-b2": {"book_page": "", "forms": [
+    ["si...ir-", ""],
+    ["ir-", "COLL"],
+    ["ir-", "COLL"],
+    ["ir-", "COLL"],
+    ["raar-", "INDV"],
+    ["raar-", "INDV"],
+    ["raar-", "INDV"],
+    ["rak-", ""],
+    ["rak-", ""],
+    ["ak-", "AN"],
+    ["raar-", "INAN"],
+    ["ir- . . . ak-", ""],
+    ["ak- + raar-", "AN INDV"]
+  ], "tables": [
+    {"title": "(continuation of Table 10; title not in this tile)", "rows": [
+      ["AGENT", "", "", "INDV", "", "", ""],
+      ["", "3rd", "si...ir-", "ir- COLL", "", "ir- COLL", "ir- COLL"],
+      ["", "", "", "raar- INDV", "", "raar- INDV", "raar- INDV"],
+      ["", "1st, 2nd", "rak-", "", "rak-", "", ""],
+      ["PATIENT", "", "ak- AN", "", "", "", ""],
+      ["", "3rd", "raar- INAN", "", "ir- . . . ak-", "", ""],
+      ["", "", "ak- + raar- AN INDV", "", "", "", ""]
+    ]}
+  ]},
+  "p8-b3": {"book_page": "", "forms": [
+    ["ir . . . uk [+ ku-]", "agent possessor"],
+    ["ku-", "indefinite"],
+    ["ir-", ""],
+    ["a-", ""],
+    ["uk", "be, exist"],
+    ["kutakawirahuʔ", "he owns that acre"],
+    ["ku-", "INDF"],
+    ["ti-", "IND"],
+    ["Ø-", "3.A"],
+    ["a-", "A.POSS"],
+    ["kawirahur", "be an acre"],
+    ["uk", "be, exist"],
+    ["-Ø", "PERF"]
+  ], "tables": []},
+  "p8-b4": {"book_page": "", "forms": [
+    ["kawirahur", "be an acre"],
+    ["uk", "be, exist"],
+    ["-Ø", "PERF"],
+    ["ir . . . ri . . . uur-", "physical agent possessor"],
+    ["taruuraarit", "he has it, possess it (something standing)"],
+    ["ti-", "IND"],
+    ["Ø-", "3.A"],
+    ["a-", "A.POSS"],
+    ["ri-", "PHY.POSS"],
+    ["uur-", "P.POSS"],
+    ["arik", "be standing"],
+    ["-Ø", "PERF"],
+    ["tatiriiriikstahka", "he keeps his arrows in it"],
+    ["ta-", "IND.1/2A"],
+    ["t-", "1.A"],
+    ["ir-", "A.POSS"],
+    ["ri-", "PHY.POSS"],
+    ["uur-", "P.POSS"],
+    ["riiks-", "arrow"],
+    ["raar-", "PL"],
+    ["ka", "be in"],
+    ["-Ø", "PERF"]
+  ], "tables": []}
+}

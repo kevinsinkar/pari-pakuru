@@ -2608,31 +2608,28 @@
  },
  "g1": {
   "affix_tokens": {
-   "in inventory": 179,
-   "not in inventory": 105
+   "in inventory": 230,
+   "not in inventory": 136
   },
   "affixes_missing": {
    "-rit INT.SUB": 4,
    "-uk SUB.D": 2,
    "-uku HAB.SUB": 2,
    "-uukuʔ HAB": 1,
-   "-Ø 3.A": 1,
-   "-Ø PERF": 29,
-   "-Ø SUB.4": 4,
-   "-Ø- 3.A": 2,
-   "karíi- EMPH.NEG": 1,
-   "ki- HORT": 1,
+   "-Ø PERF": 45,
+   "-Ø SUB.4": 7,
+   "karii- EMPH.NEG": 1,
+   "ki- HORT": 2,
    "kuur- DUB.1": 1,
-   "si- DU": 1,
-   "uks- AOR": 5,
-   "uks- JUSS": 2,
+   "si- DU": 2,
+   "tiir- INFR": 1,
+   "uks- AOR": 7,
+   "uks- JUSS": 4,
+   "waawa- DIST": 1,
    "witi- REFL": 2,
-   "Ø PERF": 7,
-   "Ø SUB.3": 1,
-   "Ø SUB.4": 1,
-   "Ø- 3.A": 38
+   "Ø- 3.A": 54
   },
-  "clean_examples": 70,
+  "clean_examples": 90,
   "segmentation": {
    "same": 2
   },
@@ -2675,7 +2672,7 @@
    },
    {
     "form": "-kis",
-    "gloss": "DIM; riicikiʔ 'knife' < riici- 'knife'",
+    "gloss": "DIM; riiciki 'knife' < riici- 'knife'",
     "go_page": 31,
     "status": "not a headword"
    },
@@ -2728,26 +2725,32 @@
     "status": "not a headword"
    },
    {
-    "form": "ariik",
-    "gloss": "be standing",
-    "go_page": 36,
-    "status": "not a headword"
-   },
-   {
     "form": "riiks-",
     "gloss": "arrow",
     "go_page": 36,
     "status": "not a headword"
    },
    {
-    "form": "iiʔirik",
-    "gloss": "see",
+    "form": "itkas",
+    "gloss": "sleep",
     "go_page": 38,
     "status": "not a headword"
    },
    {
+    "form": "a",
+    "gloss": "eat",
+    "go_page": 38,
+    "status": "headword, gloss differs"
+   },
+   {
     "form": "uhuur-",
     "gloss": "finally",
+    "go_page": 38,
+    "status": "headword, gloss differs"
+   },
+   {
+    "form": "uhuur-",
+    "gloss": "at last",
     "go_page": 38,
     "status": "headword, gloss differs"
    },
@@ -2770,6 +2773,12 @@
     "status": "headword, gloss differs"
    },
    {
+    "form": "uhuur-",
+    "gloss": "a while",
+    "go_page": 39,
+    "status": "headword, gloss differs"
+   },
+   {
     "form": "acikstarikus",
     "gloss": "hold one’s thoughts (to oneself)",
     "go_page": 40,
@@ -2780,6 +2789,24 @@
     "gloss": "wish, want",
     "go_page": 40,
     "status": "not a headword"
+   },
+   {
+    "form": "huraah-",
+    "gloss": "land",
+    "go_page": 41,
+    "status": "not a headword"
+   },
+   {
+    "form": "wii-",
+    "gloss": "when",
+    "go_page": 41,
+    "status": "headword, gloss differs"
+   },
+   {
+    "form": "kiwatak",
+    "gloss": "change",
+    "go_page": 41,
+    "status": "headword, gloss differs"
    },
    {
     "form": "sakur-",
@@ -2842,6 +2869,12 @@
     "status": "not a headword"
    },
    {
+    "form": "tii-",
+    "gloss": "this",
+    "go_page": 42,
+    "status": "headword, gloss differs"
+   },
+   {
     "form": "kiis-",
     "gloss": "bone",
     "go_page": 43,
@@ -2854,58 +2887,28 @@
     "status": "headword, gloss differs"
    },
    {
-    "form": "raasiktik",
-    "gloss": "happen, occur",
-    "go_page": 48,
+    "form": "riikakus-",
+    "gloss": "door flap",
+    "go_page": 43,
     "status": "not a headword"
    },
    {
-    "form": "waawaktik",
-    "gloss": "talk",
-    "go_page": 48,
-    "status": "not a headword"
-   },
-   {
-    "form": "paktik",
-    "gloss": "announce",
-    "go_page": 48,
-    "status": "not a headword"
-   },
-   {
-    "form": "-uk",
-    "gloss": "be",
-    "go_page": 49,
-    "status": "not a headword"
-   },
-   {
-    "form": "kuc-",
-    "gloss": "bucket",
-    "go_page": 49,
-    "status": "not a headword"
-   },
-   {
-    "form": "wakarahiis",
-    "gloss": "be raspy voiced",
-    "go_page": 49,
+    "form": "wihak",
+    "gloss": "move aside",
+    "go_page": 43,
     "status": "headword, gloss differs"
    },
    {
     "form": "irii-",
     "gloss": "the one",
-    "go_page": 49,
-    "status": "not a headword"
-   },
-   {
-    "form": "kawihaar-",
-    "gloss": "projectile",
-    "go_page": 50,
+    "go_page": 44,
     "status": "not a headword"
    }
   ],
   "stems": {
-   "headword with matching gloss": 45,
-   "headword, gloss differs": 11,
-   "not a headword": 28
+   "headword with matching gloss": 59,
+   "headword, gloss differs": 18,
+   "not a headword": 31
   },
   "worked_examples": 93
  },

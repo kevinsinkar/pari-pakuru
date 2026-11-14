@@ -48,17 +48,17 @@ Parks's Table 6 (GO p.33): **proclitics → inner prefixes → incorporated noun
 | 13 Agent PL / A.POSS / preverb | rak- PL; ir- A.POSS; preverb | *tahakiikaʔ*; *kutakawirahuʔ* 'he owns that acre' < ku- INDF + ti- IND + Ø- 3.A + a- A.POSS + kawirahur 'be an acre' + uk 'be, exist' + -Ø PERF (GO p.36) | GO p.35–36 |
 | 15 Patient | ku- 1.P, a- 2.P, Ø 3.P, ak- 3.PL.AN.P | *tikukuut* 'I died' (*ku-*); App.1 *takiraawaʔ* (*a-*) | GO p.35 Table 9 |
 | 16 Infinitive ku- | ra- ... ku- | App.1 *rakuuta* | GO p.34 |
-| 17 Physical possession | ri- | *taruuraariit* 'he has it, possess it (something standing)' < ti- IND + Ø- 3.A + a- A.POSS + ri- PHY.POSS + uur- P.POSS + ariik 'be standing' + -Ø PERF (GO p.36) | GO p.36 |
+| 17 Physical possession | ri- | *taruuraarit* 'he has it, possess it (something standing)' < ti- IND + Ø- 3.A + a- A.POSS + ri- PHY.POSS + uur- P.POSS + arik 'be standing' + -Ø PERF (GO p.36) | GO p.36 |
 | 18 Benefactive / P.POSS / preverb | ut- BEN, uur- P.POSS, preverbs ut-/uur- | *tuutaa* 'he did it' (ut-); *tuuhii* 'he is good' (uur-) | GO p.31, 37 |
 | 19 Sequential | i- | *kusaahkikat* 'he might cry' < kuus- POT.1/3.A + Ø- 3.A + i- SEQ + ar- EV + kikak 'cry' + -Ø PERF (GO p.38, quoted as extracted) | GO p.38 |
 | 20 Aorist / jussive | uks- | *taatat* 'I went' < ta- IND.1/2.A + t- 1.A + at ‘go’ + -Ø PERF (GO p.38) vs Parks *tatuksat* 'I went' (GO p.38) | GO p.38 |
-| 21 Adverbials | uhuur- 'now, finally', awaahc- 'even' | Parks *tuksuhuubwíitit* 'let me sit down a while!' (GO p.39, OCR b = h) | GO p.39 |
-| 22–24 Plurals | ak-, raar-, ir- | *tiiraspaatasit* 'they (COLL) set out' < ti- IND + Ø- 3.A + ir- 3.P.COLL.A + aspaatasik 'set out' + Ø PERF (GO p.35); *tiiraaraspaatasit* 'they (INDV) set out' < ti- IND + Ø- 3.A + raar- 3.P.INDV.A + aspaatasik 'set out' + Ø PERF (GO p.35) | GO p.35–36 Table 10 |
+| 21 Adverbials | uhuur- 'now, finally', awahc- 'even' | Parks *tuksuhuubwíitit* 'let me sit down a while!' (GO p.39, OCR b = h) | GO p.39 |
+| 22–24 Plurals | ak-, raar-, ir- | *tiiraspaatasit* 'they (COLL) set out' < ti- IND + Ø- 3.A + ir- 3.P.COLL.A + aspaatasik 'set out' + Ø PERF (GO p.35); *tiraaraspaatasit* 'they (INDV) set out' < ti- IND + Ø- 3.A + raar- 3.P.INDV.A + aspaatasik 'set out' + Ø PERF (GO p.35) | GO p.35–36 Table 10 |
 | 25 Incorporated noun | body parts, nature, food, cultural products (± raar- PL) | *ahikiistacakipu* 'he gathered the bones' < ar- EV + ri- CONT.3.A + Ø- 3.A + kiis- 'bone' + raar- PL + takipuh 'gather' + Ø PERF (GO p.43); dictionary *tiikskaa* 'his hand is in it' | GO p.43 |
 | 26 Stem | root ± preverb ± stem elements | *at*, *kaaʔat*, *raʔuk* | GO p.31, 44 |
 | 27 Aspect | -Ø/-his PERF, -:hus IMPF, -ta INT, -itik INCH, -uukuʔ HAB | *tikikat* / *tikikaakuʔ* / *tikikaksta* | GO p.45–48 Table 17 |
 | 28 Subordination | class 1 -a, 2 -i, 3 change, 4 Ø, D -u, L -wi | *iriiraata*, *iriiraariki*, *iriiraraʔu*, *iriirawiitit*, *iriirapahaatu*, *iriirakaawi* | GO p.46 Table 17 |
-| 29–30 Intentive | -ta, -rit INT.SUB | *wiiruuhaasitiiʔ* 'when it is going to occur' < wii- 'now' + ri- CONT.3.A + ut- PREV + raasiktik 'happen, occur' + -his PERF + -ta INT + -rit INT.SUB (GO p.48) | GO p.47–48 |
+| 29–30 Intentive | -ta, -rit INT.SUB | *wiiruuhaasitikstarit* 'when it is going to occur' < wii- 'now' + ri- CONT.3.A + ut- PREV + raasiktik 'happen, occur' + -his PERF + -ta INT + -rit INT.SUB (GO p.48) | GO p.47–48 |
 
 **Blue Book statement of the same structure:** BB p.46: “introducer•verb = mode + person + verb root” (BB L4); BB p.102: “gether in an introducer, ut becomes uts, and uks often becomes” … (BB L17, on *ut* + *uks*).
 
@@ -118,7 +118,7 @@ Parks GO p.44–48 (Tables 16–17): perfective is unmarked word-finally (*-his*
 | *kaa* 'be inside, as in a dwelling or enclosed space' | VL | *tikaa* | — | *tikaawista* | *iriirakaawi* | p.418 |
 | *warii* 'go around, walk around' | 4 | *tiwariiʔ* | *tiwariihuʔ* | *tiwariihusta* | *iriirawarii* | p.177 |
 
-Parks's own illustrations: *tikacat* 'he cut it' / *tikacaakuʔ* 'he is cutting it' (GO p.47); *tikíkat* / *tikikakísta* 'he is going to cry' (GO p.46); descriptive *tipahaaʔat* 'it is red' / *tipahaatuksta* / *iriirapahaattu* (GO p.49). Blue Book: BB p.97: “+u'. Everywhere else, the verb final k will drop off (or, for some” (L15); BB p.108: “by the suffix +ta. It comes as the last part of a verb phrase, and” (L19).
+Parks's own illustrations: *tikacat* 'he cut it' / *tikacaakuʔ* 'he is cutting it' (GO p.47); *tikikat* / *tikikaksta* 'he is going to cry' (GO p.46); descriptive *tipahaaʔat* 'it is red' / *tipahaatuksta* / *iriirapahaattu* (GO p.49). Blue Book: BB p.97: “+u'. Everywhere else, the verb final k will drop off (or, for some” (L15); BB p.108: “by the suffix +ta. It comes as the last part of a verb phrase, and” (L19).
 
 ## 7. Nouns: formation, case, incorporation, possession
 

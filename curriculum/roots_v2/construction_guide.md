@@ -426,53 +426,52 @@ These are Parks's own tables (Grammatical Overview, Tables 7 to 17), not a segme
 | 13 PL | *iraak-* | PL.2pl | 0 | — |
 | 28 SUB | *-a* | SUB.1 | 3 | *icaas* 'where he cooked Turtle' (GO p. 42) |
 | 28 SUB | *-a* | SUB.1-a | 3 | *icaas* 'where he cooked Turtle' (GO p. 42) |
-| 28 SUB | *-i* | SUB.1-i | 1 | — |
-| 28 SUB | *-i* | SUB.2 | 1 | — |
-| 28 SUB | *-i* | SUB.2-i | 1 | — |
-| 28 SUB | *-u* | SUB.u | 1 | — |
-| 28 SUB | *-wi* | SUB.wi | 2 | *tuciraahawista* 'it is going to be tilted' (GO p. 50) |
-| None not in the slot table | *Ø-* | 3.A | 38 | *tiiraspaatasit* 'they (COLL) set out' (GO p. 35) |
-| None not in the slot table | *-Ø* | PERF | 29 | *wiitatiiksaʔ* 'I have come' (GO p. 31) |
+| 28 SUB | *-i* | SUB.1-i | 1 | *ratkuhurasi* 'for me to find him' (GO p. 46) |
+| 28 SUB | *-i* | SUB.2 | 1 | *ratkuhurasi* 'for me to find him' (GO p. 46) |
+| 28 SUB | *-i* | SUB.2-i | 1 | *ratkuhurasi* 'for me to find him' (GO p. 46) |
+| 28 SUB | *-u* | SUB.u | 1 | *iriiruurakuurahuraaru* 'whatever the kind of animal was,' that is, 'all kinds of animals' (GO p. 44) |
+| 28 SUB | *-wi* | SUB.wi | 2 | *tuctiraahawista* 'it is going to be tilted' (GO p. 50) |
+| None not in the slot table | *Ø-* | 3.A | 54 | *tuuricaahiksii* 'he is a good-looking person' (GO p. 32) |
+| None not in the slot table | *-Ø* | PERF | 45 | *wiitatiiksaʔ* 'I have come' (GO p. 31) |
 | None not in the slot table | *ut-* | PREV | 11 | *wiitatuuhaaka* 'we have done that' (GO p. 32) |
-| None not in the slot table | *ar-* | EV | 8 | *kusaahkikat* 'he might cry (at some future time when speaker will not see it)' (GO p. 38) |
-| None not in the slot table | *-hus* | IMPF | 7 | *wiiruuhaasitiiʔkustarit* 'when it is going to be happening' (GO p. 48) |
-| None not in the slot table | *Ø* | PERF | 7 | *tiiraspaatasit* 'they (COLL) set out' (GO p. 35) |
+| None not in the slot table | *ar-* | EV | 9 | *kusaahkikat* 'he might cry (at some future time when speaker will not see it)' (GO p. 38) |
+| None not in the slot table | *-Ø* | SUB.4 | 7 | *wiirakuhuraahkiwatat* 'when the season changes' (GO p. 41) |
+| None not in the slot table | *uks-* | AOR | 7 | *wiitatiiksaʔ* 'I have come' (GO p. 31) |
 | None not in the slot table | *-his* | PERF | 6 | *taturaaʔiiwaatista* 'I am going to tell a story' (GO p. 47) |
-| None not in the slot table | *uks-* | AOR | 5 | *wiitatiiksaʔ* 'I have come' (GO p. 31) |
-| None not in the slot table | *-rit* | INT.SUB | 4 | *wiiruuhaasitiiʔ* 'when it is going to occur' (GO p. 48) |
-| None not in the slot table | *-Ø* | SUB.4 | 4 | *iiraaʔa* 'when he came' (GO p. 42) |
+| None not in the slot table | *-hus* | IMPF | 6 | *wiiruuhaasitikustarit* 'when it is going to be happening' (GO p. 48) |
+| None not in the slot table | *ku-* | INF.B | 6 | *siwitirakuutiirit* 'they (DU) wanted to see each other' (GO p. 40) |
+| None not in the slot table | *-:hus* | IMPF | 4 | *tikacaakuʔ* 'he is cutting it' (GO p. 47) |
+| None not in the slot table | *-rit* | INT.SUB | 4 | *wiiruuhaasitikstarit* 'when it is going to occur' (GO p. 48) |
+| None not in the slot table | *ir-* | PREV | 4 | *wiitatiiksaʔ* 'I have come' (GO p. 31) |
+| None not in the slot table | *uks-* | JUSS | 4 | *sukskirikaʔaa* 'wake up!' (GO p. 38) |
+| None not in the slot table | *uur-* | PREV | 4 | *tuuricaahiksii* 'he is a good-looking person' (GO p. 32) |
 | None not in the slot table | *ir-* | 3.P.COLL.A | 3 | *tiiraspaatasit* 'they (COLL) set out' (GO p. 35) |
-| None not in the slot table | *ir-* | PREV | 3 | *wiitatiiksaʔ* 'I have come' (GO p. 31) |
-| None not in the slot table | *uur-* | PREV | 3 | *tuuricaahiksii* 'he is a good-looking person' (GO p. 32) |
+| None not in the slot table | *-hus* | IMPF.SUB | 2 | *raakuraarahu* 'for them to be coming' (GO p. 47) |
 | None not in the slot table | *-itik* | INCH | 2 | *tiwaawaktiikusitit* 'he began talking' (GO p. 48) |
-| None not in the slot table | *-uk* | SUB.D | 2 | *iriirapahaattu* 'the one that is red' (GO p. 49) |
-| None not in the slot table | *-uku* | HAB.SUB | 2 | *ahicikstaawariibusuku* 'when they went to gather them' (GO p. 48) |
-| None not in the slot table | *-Ø-* | 3.A | 2 | *siwitiirakuutiirit* 'they (DU) wanted to see each other' (GO p. 40) |
+| None not in the slot table | *-uk* | SUB.D | 2 | *iriirapahaatu* 'the one that is red' (GO p. 49) |
+| None not in the slot table | *-uku* | HAB.SUB | 2 | *ahicikstaawariihusuku* 'when they went to gather them' (GO p. 48) |
 | None not in the slot table | *ir-* | A.POSS | 2 | *tatiriitaa* 'I did it for him' (GO p. 32) |
+| None not in the slot table | *ki-* | HORT | 2 | *ruukiitat* 'let me go there' (GO p. 38) |
+| None not in the slot table | *raar-* | 3.P.INDV.A | 2 | *tiraaraspaatasit* 'they (INDV) set out' (GO p. 35) |
 | None not in the slot table | *raar-* | PL | 2 | *tatiriiriikstahka* 'he keeps his arrows in it' (GO p. 36) |
-| None not in the slot table | *uks-* | JUSS | 2 | *sukskirikaʔaaʔ* 'wake up!' (GO p. 38) |
-| None not in the slot table | *uur-* | P.POSS | 2 | *taruuraariit* 'he has it, possess it (something standing)' (GO p. 36) |
+| None not in the slot table | *si-* | DU | 2 | *siwitirakuutiirit* 'they (DU) wanted to see each other' (GO p. 40) |
+| None not in the slot table | *uur-* | P.POSS | 2 | *taruuraarit* 'he has it, possess it (something standing)' (GO p. 36) |
 | None not in the slot table | *witi-* | REFL | 2 | *wititaatacikstariku* 'I keep my thoughts to myself' (GO p. 40) |
-| None not in the slot table | *-uukuʔ* | HAB | 1 | *witiicikstaawariibusuukuʔ rakis* 'they used to gather wood' (GO p. 48) |
+| None not in the slot table | *-uukuʔ* | HAB | 1 | *witiicikstaawariihusuukuʔ rakis* 'they used to gather wood' (GO p. 48) |
 | None not in the slot table | *-uʔ* | NOM | 1 | *pakskuukuʔuʔ* 'hat; headwear' (GO p. 31) |
-| None not in the slot table | *-Ø* | 3.A | 1 | *tuuricaahiksii* 'he is a good-looking person' (GO p. 32) |
-| None not in the slot table | *ak-* | 3.P.AN.I | 1 | *riitapaawarikiikusitit rikucki* 'I began shooting birds' (GO p. 48) |
+| None not in the slot table | *ak-* | 3.P.AN.I | 1 | *riitapaawarikusitit rikucki* 'I began shooting birds' (GO p. 48) |
 | None not in the slot table | *ak-* | PL.BEN | 1 | *tatuutakusit* 'I picked it up for them' (GO p. 37) |
 | None not in the slot table | *ka-* | INTER | 1 | *kawiirasiiraʔ* 'have you come (i.e., arrived)?' (GO p. 41) |
-| None not in the slot table | *karíi-* | EMPH.NEG | 1 | *kariiriiraakii* 'don't be long!' (GO p. 39) |
-| None not in the slot table | *ki-* | HORT | 1 | *ruukiitaat* 'let me go there' (GO p. 38) |
-| None not in the slot table | *kis* | DIM | 1 | *asaakiʔ* 'dog' (GO p. 31) |
+| None not in the slot table | *karii-* | EMPH.NEG | 1 | *kariiriiraakii* 'don't be long!' (GO p. 39) |
+| None not in the slot table | *kis* | DIM | 1 | *asaaki* 'dog' (GO p. 31) |
 | None not in the slot table | *ku-* | INDF | 1 | *kutakawirahuʔ* 'he owns that acre' (GO p. 36) |
 | None not in the slot table | *ku-* | INF.A | 1 | *rakukatawi* 'to be against' (GO p. 50) |
-| None not in the slot table | *ku-* | INF.B | 1 | *siwitiirakuutiirit* 'they (DU) wanted to see each other' (GO p. 40) |
 | None not in the slot table | *kuur-* | DUB.1 | 1 | *aruusaʔ* 'you must have seen the horse' (GO p. 38) |
 | None not in the slot table | *raar-* | 3.INAN.P | 1 | *taharaspiʔ* 'I looked for them (inanimate objects)' (GO p. 35) |
-| None not in the slot table | *raar-* | 3.P.INDV.A | 1 | *tiiraaraspaatasit* 'they (INDV) set out' (GO p. 35) |
-| None not in the slot table | *ruu-* | DIST | 1 | *ciksuhuurawaciiruutit* 'let’s go outside now!' (GO p. 38) |
-| None not in the slot table | *si-* | DU | 1 | *siwitiirakuutiirit* 'they (DU) wanted to see each other' (GO p. 40) |
+| None not in the slot table | *ruu-* | DIST | 1 | *ciksuhuurawaciruutit* 'let’s go outside now!' (GO p. 38) |
+| None not in the slot table | *tiir-* | INFR | 1 | *tiihatuksitkaspaawaa* 'I must have been eating in my sleep' (GO p. 38) |
 | None not in the slot table | *ut-* | BEN | 1 | *tatuutakusit* 'I picked it up for them' (GO p. 37) |
 | None not in the slot table | *ut-* | P.POSS | 1 | *tatiriitaa* 'I did it for him' (GO p. 32) |
 | None not in the slot table | *uur-* | PHY.POSS | 1 | *aruusaʔ* 'I killed your horse' (GO p. 37) |
-| None not in the slot table | *waa-* | DIST | 1 | *riitapaawarikiikusitit rikucki* 'I began shooting birds' (GO p. 48) |
-| None not in the slot table | *Ø* | SUB.3 | 1 | *tiruʔ* 'he made it' (GO p. 46) |
-| None not in the slot table | *Ø* | SUB.4 | 1 | *iriirakikat* 'where he cried' (GO p. 46) |
+| None not in the slot table | *waa-* | DIST | 1 | *riitapaawarikusitit rikucki* 'I began shooting birds' (GO p. 48) |
+| None not in the slot table | *waawa-* | DIST | 1 | *tiihatuksitkaspaawaa* 'I must have been eating in my sleep' (GO p. 38) |

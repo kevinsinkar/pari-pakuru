@@ -106,14 +106,14 @@ UNITS_B = [
                 "objectives": ["Form diminutives with *-kis* and see its two surface shapes (*-kis*, *-ki*).", "Know the augmentative and 'covering' suffixes from Parks Table 5."],
                 "morphemes": [
                     {"label": "DIM *-kis*", "meaning": "diminutive; also simply forms free nouns", "forms": ["kis"],
-                     "source": "Parks GO p.31 Table 5 (asaakiʔ 'dog', riicikiʔ 'knife'); 58 etymologies", "note": "word-final *s* is often dropped (Parks Rule 9R): *-ki*"},
+                     "source": "Parks GO p.31 Table 5 (asaaki 'dog', riiciki 'knife'); 58 etymologies", "note": "word-final *s* is often dropped (Parks Rule 9R): *-ki*"},
                     {"label": "AUG *-kusuʔ*", "meaning": "augmentative 'large, big'", "forms": ["kusuʔ"],
                      "source": "Parks GO p.31 Table 5 (wiitakusuʔ 'large man')", "note": "⚠ no dictionary etymology labels AUG; the only analysed example is Parks's own (data gap)"},
                     {"label": "*-kuukuʔuʔ* 'covering'", "meaning": "covering of N", "forms": ["kuuku"],
                      "source": "Parks GO p.31 Table 5 (pakskuukuʔuʔ 'hat'); dictionary *kuuku* 'covering' root, 22 words"},
                 ],
                 "walkthrough": lambda d: (
-                    f"*{d.W(ASAAKI)}* 'dog' = *asaa* + *kis* with the final *s* lost (Rule 9R; Parks writes *asaakiʔ* in GO p.31 and *{d.W(ASAAKI)}* in the entry). "
+                    f"*{d.W(ASAAKI)}* 'dog' = *asaa* + *kis* with the final *s* lost (Rule 9R). "
                     f"*{d.W(RAKIS)}* = *rak* + *kis* with *kk* → *k* (Rule 20, degemination); *{d.W(TIRAAKIS)}* 'bow' likewise. *{d.W(KARITKI)}* '{d.G(KARITKI)}' and "
                     f"*{d.W(HASKI)}* '{d.G(HASKI)}' show *-ki*. The 'covering' suffix: *{d.W(PAKSKUUKU)}* 'hat' (head-covering) and *{d.W(HAAKARAHKUUKU)}* "
                     f"'{d.G(HAAKARAHKUUKU)}' (mouth + PL + covering + NOM)."),
@@ -233,13 +233,13 @@ UNITS_B = [
                 "morphemes": [{"label": "Incorporated noun (slot 25)", "meaning": "body parts, natural phenomena, foods and cultural products are placed before the stem and drop their *-uʔ*", "forms": [],
                                "source": "Parks GO p.43; Table 7 slot 25; BB L8 p.67–68 'Nouns in a verb phrase'"},
                               {"label": "PHY.POSS *ri-* and P.POSS *uur-*", "meaning": "the subject physically possesses the noun", "forms": ["ri", "uur"],
-                               "source": "Parks GO p.36 (taruuraariit 'he has it (standing)'; tatiriiriikstahka); BB L5 p.51"}],
+                               "source": "Parks GO p.36 (taruuraarit 'he has it (standing)'; tatiriiriikstahka); BB L5 p.51"}],
                 "walkthrough": lambda d: (
                     f"Parks GO p.43: 'An incorporated noun drops the nominal suffix of its independent form'. So *iks-* 'hand' + *kaa* 'be inside' = *{d.W(IKSKAA)}* "
                     f"'{d.G(IKSKAA)}' (3sg *{d.F(IKSKAA, 2)}*, 1sg *{d.F(IKSKAA, 1)}*); *icka-* + *kaa* = *{d.W(ICKAKAA)}* '{d.G(ICKAKAA)}' (3sg *{d.F(ICKAKAA, 2)}*); *iks* + *ta* 'be hanging' = "
                     f"*{d.W(IKSTA)}* '{d.G(IKSTA)}'; *kiis* + *ta* = *{d.W(KIISTA)}* '{d.G(KIISTA)}'; *haas* + *ta* = *{d.W(HAASTA)}*; *iks* + *raah* = *{d.W(IKSTAAH)}* (Rule 21), 3sg *{d.F(IKSTAAH, 2)}*. "
-                    f"*as* + *wiitik* = *{d.W(ASPIITIK)}* '{d.G(ASPIITIK)}' with *w* → *p* after *s*. Possession: Parks's *taruuraariit* 'he has it (something standing)' is "
-                    f"*ti-* + *a-* + *ri-* + *uur-* + *ariik* (GO p.36); the Blue Book frame is {d.bbq(51, 'mode + phys. poss.')}."),
+                    f"*as* + *wiitik* = *{d.W(ASPIITIK)}* '{d.G(ASPIITIK)}' with *w* → *p* after *s*. Possession: Parks's *taruuraarit* 'he has it (something standing)' is "
+                    f"*ti-* + *a-* + *ri-* + *uur-* + *arik* (GO p.36); the Blue Book frame is {d.bbq(51, 'mode + phys. poss.')}."),
                 "examples": [IKSKAA, ICKAKAA, IKSTA, KIISTA, HAASTA, KIICKAA, ASPIITIK, ASKAWAT, HAAKARIIR, IKSTAAH],
                 "paradigms": [IKSKAA, ICKAKAA, IKSTAAH],
                 "bb_notes": lambda d: ("BB L5 p.50: *Ti rit•paks•ku* 'Here is my head (sitting)', *Ti rit•kirik•ta* 'Here is my eye (hanging)' — BB analyses these as *ti* + *ri* + *t* + *paks* + *ku*. "
@@ -300,7 +300,7 @@ UNITS_B = [
                 "morphemes": [{"label": "INT *-ta* after PERF *-his* (→ *-ista*, after *Vk*: *-ksta*; after IMPF *-hus*: *-usta*)", "meaning": "'is going to ...'", "forms": ["his", "ta"],
                                "source": "Parks GO p.46–47, Table 17; Rule 3R (-his reduction); 2142 dictionary form-5 words; BB L19 p.108"}],
                 "walkthrough": lambda d: (
-                    f"Parks GO p.46: *tikíkat* 'he cried' vs *tikikakísta* 'he is going to cry' — the perfective *-his* appears only when *-ta* follows, and after a stem-final *k* it "
+                    f"Parks GO p.46: *tikikat* 'he cried' vs *tikikaksta* 'he is going to cry' — the perfective *-his* appears only when *-ta* follows, and after a stem-final *k* it "
                     f"reduces to *-s* (Rule 3R): dictionary *{d.F(KIKAK, 5)}*, *{d.F(WIITIK, 5)}*, *{d.F(RAQUK, 5)}*. After a vowel: *{d.F(SA, 5)}*, *{d.F(KIIKAA, 5)}*, *{d.F(RAAH, 5)}*, "
                     f"*{d.F(ARIK, 5)}*. With the imperfective inside: *{d.F(WARII, 5)}* (= *warii* + *hus* + *ta*). Descriptive verbs add *-uk* first: *{d.F(PAHAAT, 5)}* "
                     f"(Parks GO p.49 cites exactly *tipahaatuksta* 'it is going to be red'). The Blue Book: {d.bbq(108, 'suffix +ta')}."),
@@ -316,7 +316,7 @@ UNITS_B = [
                               {"label": "PL *rak-* (1st/2nd agent)", "meaning": "'we (excl.), you (pl.)'", "forms": ["rak", "raak"], "source": "Parks GO p.35 Table 10; App.1; BB L4 p.47 '+ rak +'"},
                               {"label": "1.PL.IN *a-* + *rak-*", "meaning": "'we (inclusive)'", "forms": ["a"], "source": "Parks GO p.35 Table 9; App.1 1pl_incl cells"},
                               {"label": "1.DU.IN *acir-*", "meaning": "'you and I'", "forms": ["acir"], "source": "Parks GO p.35 Table 9; App.1 (BB L4 p.47 writes *+ atsir +*)"},
-                              {"label": "3.PL *ir-* (collective) / *raar-* (individuative) / suffix *-aahuʔ*", "meaning": "'they'", "forms": ["ir", "raar"], "source": "Parks GO p.35–36 Table 10 (tiiraspaatasit / tiiraaraspaatasit); App.1 3pl cells; BB L4 p.47 '+ it + for they'"}],
+                              {"label": "3.PL *ir-* (collective) / *raar-* (individuative) / suffix *-aahuʔ*", "meaning": "'they'", "forms": ["ir", "raar"], "source": "Parks GO p.35–36 Table 10 (tiiraspaatasit / tiraaraspaatasit); App.1 3pl cells; BB L4 p.47 '+ it + for they'"}],
                 "walkthrough": lambda d: (
                     f"Singular is unmarked (GO p.35). Dual adds *si-* in front of everything: *{d.A('to go', IND, '1sg')}* 'I went' → *{d.A('to go', IND, '1du_excl')}* 'we two went' — and the stem "
                     f"of 'go' changes to *war* (surfacing as *pa* after *t*). Plural first/second person adds *rak-*: *{d.A('to go', IND, '1pl_excl')}*, *{d.A('to go', IND, '2pl')}*, with the plural "
@@ -334,12 +334,12 @@ UNITS_B = [
                 "id": "6.4", "title": "uks-: past time and commands",
                 "objectives": ["Recognise the aorist/jussive prefix *uks-* in Parks's examples and the Blue Book's past and command forms."],
                 "morphemes": [{"label": "AOR/JUSS *uks-*", "meaning": "optional past tense; with the contingent mode, a command", "forms": ["uks"],
-                               "source": "Parks GO p.38 (tatuksat 'I went'; sukskirikaʔaaʔ 'wake up!'); BB L5 p.53, L8 p.66–67, L13 p.89", "note": "⚠ no dictionary paradigm form contains uks-; Appendix 1 has no aorist mode — attested only in Parks's grammar examples and the Blue Book"}],
+                               "source": "Parks GO p.38 (tatuksat 'I went'; sukskirikaʔaa 'wake up!'); BB L5 p.53, L8 p.66–67, L13 p.89", "note": "⚠ no dictionary paradigm form contains uks-; Appendix 1 has no aorist mode — attested only in Parks's grammar examples and the Blue Book"}],
                 "walkthrough": lambda d: (
                     f"Parks GO p.38 contrasts *{d.A('to go', IND, '1sg')}* 'I went' with *tatuksat* 'I went' < *ta-* + *t-* + *uks-* AOR + *at*; the Blue Book builds the same word: "
                     f"BB L13 p.89 *Tatuks•at* 'I went', *Tasu'ks•at* 'You went', *Tuks•at* 'He went'. {d.bbq(66, '+uks, which follows')} … (BB L8). With a third person the mode vowel disappears: "
                     f"{d.bbq(67, 'strong vowel')}, hence BB *Tuks•kaku'* 'He was in the house' (Parks's rule 1R/6: *ti* + *u...* → *tu...*). Commands: contingent *i-* + *s-* + *uks-* + stem (GO p.38, "
-                    f"*sukskirikaʔaaʔ* 'wake up!'); BB L5 p.53 *Suks•paku'* 'Say it!', *Sisuks•paku'* (two hearers), *Suksta•paku'* (three or more; *rak-* → *ta* after *s*)."),
+                    f"*sukskirikaʔaa* 'wake up!'); BB L5 p.53 *Suks•paku'* 'Say it!', *Sisuks•paku'* (two hearers), *Suksta•paku'* (three or more; *rak-* → *ta* after *s*)."),
                 "bb_notes": lambda d: f"{d.bbq(53, 'command marker')} (BB L5). Parks writes the command with the contingent mode prefix *i-* (GO p.38); BB's forms begin directly with *s-* — the *i-* is not written ⚠.",
                 "exercises": ([], []),
                 "extra_practice": lambda d: ("Break down the Blue Book forms using Parks's slots (mode, person, *uks-*, stem). Answers follow BB's own analyses (L8 p.67; L5 p.53).\n\n"

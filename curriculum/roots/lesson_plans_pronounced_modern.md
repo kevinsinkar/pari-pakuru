@@ -1004,13 +1004,13 @@ B5. *asâ* 'horse' + *akâr* 'dwelling' + *u'* 'NOM -uʔ' (Parks p.362, `SK-asaa
 
 **New morphemes**
 
-- DIM *-kis* — diminutive; also simply forms free nouns — source: Parks GO p.31 Table 5 (asaakiʔ 'dog', riicikiʔ 'knife'); 58 etymologies — word-final *s* is often dropped (Parks Rule 9R): *-ki*
+- DIM *-kis* — diminutive; also simply forms free nouns — source: Parks GO p.31 Table 5 (asaaki 'dog', riiciki 'knife'); 58 etymologies — word-final *s* is often dropped (Parks Rule 9R): *-ki*
 - AUG *-kusuʔ* — augmentative 'large, big' — source: Parks GO p.31 Table 5 (wiitakusuʔ 'large man') — ⚠ no dictionary etymology labels AUG; the only analysed example is Parks's own (data gap)
 - *-kuukuʔuʔ* 'covering' — covering of N — source: Parks GO p.31 Table 5 (pakskuukuʔuʔ 'hat'); dictionary *kuuku* 'covering' root, 22 words
 
 **Construction walkthrough**
 
-*asâki ⟨uh-SAH-kih⟩* 'dog' = *asaa* + *kis* with the final *s* lost (Rule 9R; Parks writes *asaakiʔ* in GO p.31 and *asâki ⟨uh-SAH-kih⟩* in the entry). *rakis ⟨DUH-kihs⟩* = *rak* + *kis* with *kk* → *k* (Rule 20, degemination); *tirâkis ⟨TIH-dah-kihs⟩* 'bow' likewise. *karitki ⟨KUH-diht-kih⟩* 'rock, stone, pebble' and *haski ⟨HUHS-kih⟩* 'string, twine, cord, line' show *-ki*. The 'covering' suffix: *pakskûku'u' ⟨puhks-koo-koo-'oo'⟩* 'hat' (head-covering) and *hâkarahkûku'u' ⟨HAH-kuh-duhh-koo-koo-'oo'⟩* 'bridle' (mouth + PL + covering + NOM).
+*asâki ⟨uh-SAH-kih⟩* 'dog' = *asaa* + *kis* with the final *s* lost (Rule 9R; Parks writes *asaaki* in GO p.31 and *asâki ⟨uh-SAH-kih⟩* in the entry). *rakis ⟨DUH-kihs⟩* = *rak* + *kis* with *kk* → *k* (Rule 20, degemination); *tirâkis ⟨TIH-dah-kihs⟩* 'bow' likewise. *karitki ⟨KUH-diht-kih⟩* 'rock, stone, pebble' and *haski ⟨HUHS-kih⟩* 'string, twine, cord, line' show *-ki*. The 'covering' suffix: *pakskûku'u' ⟨puhks-koo-koo-'oo'⟩* 'hat' (head-covering) and *hâkarahkûku'u' ⟨HAH-kuh-duhh-koo-koo-'oo'⟩* 'bridle' (mouth + PL + covering + NOM).
 
 **Attested example words**
 
@@ -1461,11 +1461,11 @@ C5. *tikupahitâ ⟨≈tih-koo-puh-hih-tah⟩* (Parks p.108, `SK-pahitaar-p108-2
 **New morphemes**
 
 - Incorporated noun (slot 25) — body parts, natural phenomena, foods and cultural products are placed before the stem and drop their *-uʔ* — source: Parks GO p.43; Table 7 slot 25; BB L8 p.67–68 'Nouns in a verb phrase'
-- PHY.POSS *ri-* and P.POSS *uur-* — the subject physically possesses the noun — source: Parks GO p.36 (taruuraariit 'he has it (standing)'; tatiriiriikstahka); BB L5 p.51
+- PHY.POSS *ri-* and P.POSS *uur-* — the subject physically possesses the noun — source: Parks GO p.36 (taruuraarit 'he has it (standing)'; tatiriiriikstahka); BB L5 p.51
 
 **Construction walkthrough**
 
-Parks GO p.43: 'An incorporated noun drops the nominal suffix of its independent form'. So *iks-* 'hand' + *kaa* 'be inside' = *ikskâ ⟨ihks-kah⟩* 'have one's hand in, as a glove or drawer' (3sg *tîkskâ ⟨≈teeks-kah⟩*, 1sg *tâtikskâ ⟨≈tah-tihks-kah⟩*); *icka-* + *kaa* = *ickakâ ⟨ihts-kuh-kah⟩* 'be wearing a mask, have a mask on' (3sg *tîckakâ ⟨≈teets-kuh-kah⟩*); *iks* + *ta* 'be hanging' = *iksta ⟨ihks-tuh⟩* 'be a handle'; *kiis* + *ta* = *kîsta ⟨kees-tuh⟩* 'be lame, crippled'; *haas* + *ta* = *hâsta ⟨hahs-tuh⟩*; *iks* + *raah* = *ikstâh ⟨ihks-tah(h)⟩* (Rule 21), 3sg *ti'ikstâ ⟨≈tih-'ihks-tah⟩*. *as* + *wiitik* = *aspîtik ⟨uhs-pee-tih(k/t)⟩* 'set, put one's foot down' with *w* → *p* after *s*. Possession: Parks's *taruuraariit* 'he has it (something standing)' is *ti-* + *a-* + *ri-* + *uur-* + *ariik* (GO p.36); the Blue Book frame is BB p.51: “mode + phys. poss. + person + noun + verb”.
+Parks GO p.43: 'An incorporated noun drops the nominal suffix of its independent form'. So *iks-* 'hand' + *kaa* 'be inside' = *ikskâ ⟨ihks-kah⟩* 'have one's hand in, as a glove or drawer' (3sg *tîkskâ ⟨≈teeks-kah⟩*, 1sg *tâtikskâ ⟨≈tah-tihks-kah⟩*); *icka-* + *kaa* = *ickakâ ⟨ihts-kuh-kah⟩* 'be wearing a mask, have a mask on' (3sg *tîckakâ ⟨≈teets-kuh-kah⟩*); *iks* + *ta* 'be hanging' = *iksta ⟨ihks-tuh⟩* 'be a handle'; *kiis* + *ta* = *kîsta ⟨kees-tuh⟩* 'be lame, crippled'; *haas* + *ta* = *hâsta ⟨hahs-tuh⟩*; *iks* + *raah* = *ikstâh ⟨ihks-tah(h)⟩* (Rule 21), 3sg *ti'ikstâ ⟨≈tih-'ihks-tah⟩*. *as* + *wiitik* = *aspîtik ⟨uhs-pee-tih(k/t)⟩* 'set, put one's foot down' with *w* → *p* after *s*. Possession: Parks's *taruuraarit* 'he has it (something standing)' is *ti-* + *a-* + *ri-* + *uur-* + *arik* (GO p.36); the Blue Book frame is BB p.51: “mode + phys. poss. + person + noun + verb”.
 
 **Attested example words**
 
@@ -1692,7 +1692,7 @@ C5. *tirâhu' ⟨≈tih-dah-hoo'⟩* (Parks p.116, `SK-raah-p116-2264`)
 
 **Construction walkthrough**
 
-Parks GO p.46: *tikíkat* 'he cried' vs *tikikakísta* 'he is going to cry' — the perfective *-his* appears only when *-ta* follows, and after a stem-final *k* it reduces to *-s* (Rule 3R): dictionary *tikikaksta ⟨≈tih-kih-kuhks-tuh⟩*, *tiwîtiksta ⟨≈tih-wee-tihks-tuh⟩*, *tirûksta ⟨≈tih-dooks-tuh⟩*. After a vowel: *tisahista ⟨≈tih-suh-hihs-tuh⟩*, *tikîkâhista ⟨≈tih-kee-kah-hihs-tuh⟩*, *tirâhista ⟨≈tih-dah-hihs-tuh⟩*, *tîrikista ⟨≈tee-dih-kihs-tuh⟩*. With the imperfective inside: *tiwarîhusta ⟨≈tih-wuh-dee-hoos-tuh⟩* (= *warii* + *hus* + *ta*). Descriptive verbs add *-uk* first: *tipahâtuksta ⟨≈tih-puh-hah-tooks-tuh⟩* (Parks GO p.49 cites exactly *tipahaatuksta* 'it is going to be red'). The Blue Book: BB p.108: “by the suffix +ta. It comes as the last part of a verb phrase, and”.
+Parks GO p.46: *tikikat* 'he cried' vs *tikikaksta* 'he is going to cry' — the perfective *-his* appears only when *-ta* follows, and after a stem-final *k* it reduces to *-s* (Rule 3R): dictionary *tikikaksta ⟨≈tih-kih-kuhks-tuh⟩*, *tiwîtiksta ⟨≈tih-wee-tihks-tuh⟩*, *tirûksta ⟨≈tih-dooks-tuh⟩*. After a vowel: *tisahista ⟨≈tih-suh-hihs-tuh⟩*, *tikîkâhista ⟨≈tih-kee-kah-hihs-tuh⟩*, *tirâhista ⟨≈tih-dah-hihs-tuh⟩*, *tîrikista ⟨≈tee-dih-kihs-tuh⟩*. With the imperfective inside: *tiwarîhusta ⟨≈tih-wuh-dee-hoos-tuh⟩* (= *warii* + *hus* + *ta*). Descriptive verbs add *-uk* first: *tipahâtuksta ⟨≈tih-puh-hah-tooks-tuh⟩* (Parks GO p.49 cites exactly *tipahaatuksta* 'it is going to be red'). The Blue Book: BB p.108: “by the suffix +ta. It comes as the last part of a verb phrase, and”.
 
 **Dictionary paradigm forms** (Parks Part II of each entry)
 
@@ -1748,7 +1748,7 @@ C5. *tiwarîhusta ⟨≈tih-wuh-dee-hoos-tuh⟩* (Parks p.177, `SK-warii-p177-35
 - PL *rak-* (1st/2nd agent) — 'we (excl.), you (pl.)' — source: Parks GO p.35 Table 10; App.1; BB L4 p.47 '+ rak +'
 - 1.PL.IN *a-* + *rak-* — 'we (inclusive)' — source: Parks GO p.35 Table 9; App.1 1pl_incl cells
 - 1.DU.IN *acir-* — 'you and I' — source: Parks GO p.35 Table 9; App.1 (BB L4 p.47 writes *+ atsir +*)
-- 3.PL *ir-* (collective) / *raar-* (individuative) / suffix *-aahuʔ* — 'they' — source: Parks GO p.35–36 Table 10 (tiiraspaatasit / tiiraaraspaatasit); App.1 3pl cells; BB L4 p.47 '+ it + for they'
+- 3.PL *ir-* (collective) / *raar-* (individuative) / suffix *-aahuʔ* — 'they' — source: Parks GO p.35–36 Table 10 (tiiraspaatasit / tiraaraspaatasit); App.1 3pl cells; BB L4 p.47 '+ it + for they'
 
 **Construction walkthrough**
 
@@ -1824,11 +1824,11 @@ C6. 3pl *tihkîka' ⟨≈tihh-kee-kuh'⟩* 'they drank it'
 
 **New morphemes**
 
-- AOR/JUSS *uks-* — optional past tense; with the contingent mode, a command — source: Parks GO p.38 (tatuksat 'I went'; sukskirikaʔaaʔ 'wake up!'); BB L5 p.53, L8 p.66–67, L13 p.89 — ⚠ no dictionary paradigm form contains uks-; Appendix 1 has no aorist mode — attested only in Parks's grammar examples and the Blue Book
+- AOR/JUSS *uks-* — optional past tense; with the contingent mode, a command — source: Parks GO p.38 (tatuksat 'I went'; sukskirikaʔaa 'wake up!'); BB L5 p.53, L8 p.66–67, L13 p.89 — ⚠ no dictionary paradigm form contains uks-; Appendix 1 has no aorist mode — attested only in Parks's grammar examples and the Blue Book
 
 **Construction walkthrough**
 
-Parks GO p.38 contrasts *tâtat ⟨≈tah-tuht⟩* 'I went' with *tatuksat* 'I went' < *ta-* + *t-* + *uks-* AOR + *at*; the Blue Book builds the same word: BB L13 p.89 *Tatuks•at* 'I went', *Tasu'ks•at* 'You went', *Tuks•at* 'He went'. BB p.66: “the marker +uks, which follows the person marker in the intro-” … (BB L8). With a third person the mode vowel disappears: BB p.67: “The u in +uks is a strong vowel which causes the a in modal”, hence BB *Tuks•kaku'* 'He was in the house' (Parks's rule 1R/6: *ti* + *u...* → *tu...*). Commands: contingent *i-* + *s-* + *uks-* + stem (GO p.38, *sukskirikaʔaaʔ* 'wake up!'); BB L5 p.53 *Suks•paku'* 'Say it!', *Sisuks•paku'* (two hearers), *Suksta•paku'* (three or more; *rak-* → *ta* after *s*).
+Parks GO p.38 contrasts *tâtat ⟨≈tah-tuht⟩* 'I went' with *tatuksat* 'I went' < *ta-* + *t-* + *uks-* AOR + *at*; the Blue Book builds the same word: BB L13 p.89 *Tatuks•at* 'I went', *Tasu'ks•at* 'You went', *Tuks•at* 'He went'. BB p.66: “the marker +uks, which follows the person marker in the intro-” … (BB L8). With a third person the mode vowel disappears: BB p.67: “The u in +uks is a strong vowel which causes the a in modal”, hence BB *Tuks•kaku'* 'He was in the house' (Parks's rule 1R/6: *ti* + *u...* → *tu...*). Commands: contingent *i-* + *s-* + *uks-* + stem (GO p.38, *sukskirikaʔaa* 'wake up!'); BB L5 p.53 *Suks•paku'* 'Say it!', *Sisuks•paku'* (two hearers), *Suksta•paku'* (three or more; *rak-* → *ta* after *s*).
 
 **Blue Book cross-reference**
 

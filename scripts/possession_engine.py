@@ -357,7 +357,8 @@ def generate_locative(
       iksiriʔ  = iks + hiriʔ       "on the hand"
       ikstaaririʔ = iks + raar + hiriʔ  "on the hands" (PL)
       sahiiru  = sahii + ru         "in Cheyenne country"
-      uukaahpaawiru = uukaahpaa + wiru  "among the Quapaw"
+      uukaahpaawiru = stem + wiru  "among the Quapaw" (the chapter prints the word so,
+                                    and beside it the name as uukahpaa, with one a)
       akahkat  = akar + kat         "on the dwelling"
       asaakat  = asaa + kat         "among the horses"
     """
@@ -529,15 +530,21 @@ def extract_noun_stem(headword: str) -> Tuple[str, Optional[str]]:
     suffix (Grammatical Overview p. 13):
         -uʔ  (absolutive, most common)
         -kis (diminutive)
-        -kiʔ (diminutive variant)
         -kusuʔ (augmentative)
+
+    Until 2026-11-14 a final -kiʔ was stripped as well, as a "diminutive variant". That came
+    from asaakiʔ and riicikiʔ, two misreadings in the stored copy of the grammar chapter: the
+    page has asaaki 'dog' and riiciki 'knife', as the dictionary does. The dictionary's own
+    nouns in -kiʔ (asaawakiʔ 'pinto', kiriirawakiʔ 'appaloosa', tahaawakiʔ 'fruit') are not
+    diminutives, so nothing is stripped from them now.
 
     Examples:
         iksuʔ   → iks     (hand)
         paksuʔ  → paks    (head)
         kirikuʔ → kirik   (eye)
         akaruʔ  → akar    (house)
-        asaakiʔ → asaa    (dog, < asaa- + -kis DIM)
+        asaaki  → asaaki  (dog; Parks derives it from asaa- + -kis DIM, but the word as it
+                           stands has no suffix left to drop)
     """
     hw = headword.strip()
 
@@ -548,10 +555,6 @@ def extract_noun_stem(headword: str) -> Tuple[str, Optional[str]]:
     # Absolutive -uʔ (most common)
     if hw.endswith("uʔ") and len(hw) > 2:
         return hw[:-2], "-uʔ"
-
-    # Diminutive -kiʔ
-    if hw.endswith("kiʔ") and len(hw) > 3:
-        return hw[:-3], "-kiʔ"
 
     # Diminutive -kis
     if hw.endswith("kis") and len(hw) > 3:
@@ -1472,8 +1475,8 @@ BB_TESTS = [
     ("akaruʔ", "2sg", "N", "agent", "kti rasiru akaruʔ"),    # your house
     ("akaruʔ", "3sg", "N", "agent", "kti rau akaruʔ"),       # his/her house
 
-    # dog — asaakiʔ (has dependent stem asaa-, but possession is agent-style)
-    ("asaakiʔ", "1sg", "N", "agent", "kti ratiru asaakiʔ"),  # my dog
+    # dog — asaaki (has dependent stem asaa-, but possession is agent-style)
+    ("asaaki", "1sg", "N", "agent", "kti ratiru asaaki"),  # my dog
 ]
 
 # ===================================================================
@@ -1522,7 +1525,8 @@ LOCATIVE_TESTS = [
     # ---------------------------------------------------------------
     ("sahii", None, True, False, "sahiiru"),
 
-    # uukaahpaawiru = uukaahpaa + wiru "among the Quapaw" (Parks p.30)
+    # uukaahpaawiru "among the Quapaw" (Parks p.30). The page prints the name beside it as
+    # uukahpaa, with one a; the stem here is the one the printed word itself shows.
     ("uukaahpaa", None, True, False, "uukaahpaawiru"),
 
     # riihitawiru = riihita + wiru "among the Ponca" (Parks p.30)
@@ -1534,25 +1538,20 @@ LOCATIVE_TESTS = [
     # ---------------------------------------------------------------
     ("akaruʔ", None, False, False, "akahkat"),
 
-    # asaakat = asaa + kat "among the horses"  (Parks p.30, asaa-final = 'a')
-    # NOTE: asaakiʔ strips -kiʔ → stem=asaa (vowel-a final) → bare -kat
-    ("asaakiʔ", None, False, False, "asaakat"),
+    # asaakat = asaa- 'horse' + -kat "among the horses"  (Parks p.30, asaa-final = 'a').
+    # asaa- is the combining stem; the test gives it as printed.
+    ("asaa", None, False, False, "asaakat"),
 
     # Task D: -sukat allomorph for -ki/-ski final stems
     # piiraskisukat "among the boys" (attested Parks dictionary examples)
     # piiraski strips no suffix (no -uʔ/-kis) → stem=piiraski (ends in -ski)
     ("piiraski", "N", False, False, "piiraskisukat"),
 
-    # asaakisukat "among the dogs" (attested Parks dictionary examples)
-    # asaakiʔ strips -kiʔ → stem=asaaki (ends in -ki) → -sukat
-    # NOTE: asaakiʔ stem extraction yields 'asaa' (strips -kiʔ → "asaa")
-    # but Parks attests asaakisukat not asaakat, suggesting for animate nouns
-    # the full form asaaki (with ki retained) takes -sukat.
-    # IMPLEMENTATION NOTE: asaakiʔ → extract_noun_stem → "asaa" (strips -kiʔ)
-    # This means asaakiʔ routes to asaa+kat=asaakat, not asaakisukat.
-    # The -sukat path fires when stem itself ends in -ki (i.e., no suffix stripped).
-    # asaakisukat likely from base form asaaki (not asaakiʔ). Document for review.
-    # ("asaakiʔ", None, False, False, "asaakisukat"),   # DEFERRED — stem stripping ambiguity
+    # asaakisukat "among the dogs" (attested Parks dictionary examples), from asaaki 'dog'.
+    # This case was set aside while the word was taken to be "asaakiʔ" (a misreading in the stored
+    # grammar chapter, corrected 2026-11-14): with the word as printed the stem ends in -ki and
+    # takes -sukat, as piiraski does.
+    ("asaaki", None, False, False, "asaakisukat"),
 
     # Task E regression: Rule 17 (ks→kc) must NOT fire on nominal forms
     # caahiks "person" — stem=caahiks, ks cluster must remain ks
@@ -1662,7 +1661,7 @@ def run_tests():
         ("piiraski",  "N",     ["social"],   None,         "human noun (boy) → no instrumental"),
         ("curaki",    "N",     ["social"],   None,         "human noun (girl) → no instrumental"),
         ("atiraʔ",    "N-KIN", [],           None,         "N-KIN → no instrumental (always animate)"),
-        ("asaakiʔ",   "N",     ["animal"],   None,         "animal noun → no instrumental"),
+        ("asaaki",    "N",     ["animal"],   None,         "animal noun → no instrumental"),
         # Inanimate nouns — must return a LocativeResult
         # for these two the check is only that a form comes back
         ("akaruʔ",   "N",     ["housing"],  "a form",     "inanimate noun (house) → instrumental"),

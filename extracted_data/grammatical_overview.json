@@ -10,7 +10,7 @@
       },
       {
         "heading": "Noun Inflection: Case and Plurality",
-        "content": "Nouns in Skiri fall into three classes on the basis of their inflectional marking. There are two cases, instrumental ('with, using') and locative ('in, on, at; among'). Plural number is also marked for some nouns. Instrumental case is marked on all nouns—or at least on all those where it is semantically appropriate—by the suffix hiriʔ. One class of nouns also uses hiriʔ to mark locative case, as in iksiriʔ 'by hand; on the hand'. These nouns, which are mostly body part terms, mark plural number with the suffix -raar-, which occurs after the noun stem and before -hiriʔ, as in ikstaaririʔ 'with the hands; on the hands'. Other classes of nouns have no special marking for plural, and mark locative case by either -ru or -kat (table 4).\nIn addition to its productive uses as instrumental and body-part locative, -hiriʔ also occurs with a small set of noun stems, again primarily body part terms, to derive their independent forms; i.e., the locative form of these nouns is also the independent form, even though independent nouns are usually derived with the nominal absolutive suffix -uʔ (see below). Examples of locative forms serving also as absolutive forms are askatahciriʔ 'sole (of the foot)' and riitiriʔ 'small of the back'.\nThe suffix -ru 'among, in the country/territory of' forms the locative of tribal names and at least one state name. Examples are sahiiru 'in Cheyenne country' (< sahii 'Cheyenne'); pasaasiru 'among the Osages; in Osage territory' (< pasaasi 'Osage'); and tiksastu 'in Texas' (< English Texas). A variant of -ru is -wiru, which occurs with many names, usually ones ending in the vowel a, as uukaahpaawiru 'among the Quapaw' (< uukaahpaa 'Quapaw') and riihitawiru 'among the Ponca' (< riihita 'Ponca').\nThe locative suffix -kat generally translates as 'in, on' but with animate nouns it frequently translates as 'among'; e.g., akahkat 'on the dwelling' (< akar- + -kat); asaakat 'among the horses' (< asaa- 'horse' + -kat).",
+        "content": "Nouns in Skiri fall into three classes on the basis of their inflectional marking. There are two cases, instrumental ('with, using') and locative ('in, on, at; among'). Plural number is also marked for some nouns. Instrumental case is marked on all nouns—or at least on all those where it is semantically appropriate—by the suffix hiriʔ. One class of nouns also uses hiriʔ to mark locative case, as in iksiriʔ 'by hand; on the hand'. These nouns, which are mostly body part terms, mark plural number with the suffix -raar-, which occurs after the noun stem and before -hiriʔ, as in ikstaaririʔ 'with the hands; on the hands'. Other classes of nouns have no special marking for plural, and mark locative case by either -ru or -kat (table 4).\nIn addition to its productive uses as instrumental and body-part locative, -hiriʔ also occurs with a small set of noun stems, again primarily body part terms, to derive their independent forms; i.e., the locative form of these nouns is also the independent form, even though independent nouns are usually derived with the nominal absolutive suffix -uʔ (see below). Examples of locative forms serving also as absolutive forms are askatahciriʔ 'sole (of the foot)' and riitiriʔ 'small of the back'.\nThe suffix -ru 'among, in the country/territory of' forms the locative of tribal names and at least one state name. Examples are sahiiru 'in Cheyenne country' (< sahii 'Cheyenne'); pasaasiru 'among the Osages; in Osage territory' (< pasaasi 'Osage'); and tiksastu 'in Texas' (< English Texas). A variant of -ru is -wiru, which occurs with many names, usually ones ending in the vowel a, as uukaahpaawiru 'among the Quapaw' (< uukahpaa 'Quapaw') and riihitawiru 'among the Ponca' (< riihita 'Ponca').\nThe locative suffix -kat generally translates as 'in, on' but with animate nouns it frequently translates as 'among'; e.g., akahkat 'on the dwelling' (< akar- + -kat); asaakat 'among the horses' (< asaa- 'horse' + -kat).",
         "morphemes_mentioned": [
           {
             "form": "hiriʔ",
@@ -84,7 +84,7 @@
     "sections": [
       {
         "heading": null,
-        "content": "The stem in the preceding form is a (ir-...) 'to come', and in it the preverb ir- (which has contracted with the aorist prefix uks-) has no independent meaning that relates to the activity of coming. Similarly, the root a has no independent meaning of 'come'.\nIn the following example the stem is the discontinuous form hiir (uur . . .) 'be good; be good-looking' and, as with a in the preceding example, the stem base hiir has no independent meaning.\ntuuricaahiksii 'he is a good-looking person' < ti- IND + -Ø 3.A + uur- PREV + icaahiks- 'person' + hiir- 'be good; be good-looking' + -Ø PERF\nwiitatuuhaaka 'we have done that' < wii- 'now' + ta- IND.1/2.A + t- 1.A + ut- PREV + raak- 1/2.P.A/P + aar 'do' + -Ø PERF\nThe preverb ut- is identical in form to the benefactive/dative ut-, and when a verb such as 'to do' has a benefactive patient, the benefactive is expressed by the sequence ir . . . ri . . . ut-, where the agentive possessive prefix ir- and the physical possessive prefix ri- combine with ut-, as in,\ntatiriitaa 'I did it for him' < ta- IND.1/2.A + t- 1.A + ir- A.POSS + ri- PHY.POSS + ut- P.POSS + aar 'do' + -Ø",
+        "content": "The stem in the preceding form is a (ir-...) 'to come', and in it the preverb ir- (which has contracted with the aorist prefix uks-) has no independent meaning that relates to the activity of coming. Similarly, the root a has no independent meaning of 'come'.\nIn the following example the stem is the discontinuous form hiir (uur . . .) 'be good; be good-looking' and, as with a in the preceding example, the stem base hiir has no independent meaning.\ntuuricaahiksii 'he is a good-looking person' < ti- IND + Ø- 3.A + uur- PREV + icaahiks- 'person' + hiir- 'be good; be good-looking' + -Ø PERF\nwiitatuuhaaka 'we have done that' < wii- 'now' + ta- IND.1/2.A + t- 1.A + ut- PREV + raak- 1/2.P.A/P + aar 'do' + -Ø PERF\nThe preverb ut- is identical in form to the benefactive/dative ut-, and when a verb such as 'to do' has a benefactive patient, the benefactive is expressed by the sequence ir . . . ri . . . ut-, where the agentive possessive prefix ir- and the physical possessive prefix ri- combine with ut-, as in,\ntatiriitaa 'I did it for him' < ta- IND.1/2.A + t- 1.A + ir- A.POSS + ri- PHY.POSS + ut- P.POSS + aar 'do' + -Ø",
         "morphemes_mentioned": [
           {
             "form": "a (ir-...)",
@@ -796,7 +796,7 @@
       },
       {
         "heading": "Possession.",
-        "content": "Both subject and object possession are marked by either single prefixes or combinations of prefixes. There is a distinction between regular and partitive possession, and between simple subject ownership and actual subject physical possession. Independent possessive constructions, which are gerundial forms of the verb 'to be one's' and serve as modifiers of nouns, are rarely used.\n\n• ir . . . uk [ + ku-] 'agent possessor' (A.POSS) The construction that forms agent possession is ordinarily preceded by the proclitic ku- 'indefinite' [table 12:2] followed by the prefix ir- (first and second agent) or a- (third person agent) [table 7:13] and the verb stem uk 'be, exist' [table 7:26], as in the following example,\n\nkutakawirahuʔ 'he owns that acre' < ku- INDF + ti- IND + Ø- 3.A + a- A.POSS + kawirahur 'be an acre' + uk 'be, exist' + -Ø PERF\n\n• ir . . . ri . . . uur- 'physical agent possessor' (PHY.POSS) These three prefixes [table 7:13, 17, 18], when occurring with active verb stems designating positions and with certain locative and descriptive stems, translate as 'have, possess', as in,\n\ntaruuraariit 'he has it, possess it (something standing)' < ti- IND + Ø- 3.A + a- A.POSS + ri- PHY.POSS + uur- P.POSS + ariik 'be standing' + -Ø PERF\n\ntatiriiriikstahka 'he keeps his arrows in it' < ta- IND.1/2A + t- 1.A + ir- A.POSS + ri- PHY.POSS + uur- P.POSS + riiks- 'arrow' + raar- PL + ka 'be in' + -Ø PERF",
+        "content": "Both subject and object possession are marked by either single prefixes or combinations of prefixes. There is a distinction between regular and partitive possession, and between simple subject ownership and actual subject physical possession. Independent possessive constructions, which are gerundial forms of the verb 'to be one's' and serve as modifiers of nouns, are rarely used.\n\n• ir . . . uk [ + ku-] 'agent possessor' (A.POSS) The construction that forms agent possession is ordinarily preceded by the proclitic ku- 'indefinite' [table 12:2] followed by the prefix ir- (first and second agent) or a- (third person agent) [table 7:13] and the verb stem uk 'be, exist' [table 7:26], as in the following example,\n\nkutakawirahuʔ 'he owns that acre' < ku- INDF + ti- IND + Ø- 3.A + a- A.POSS + kawirahur 'be an acre' + uk 'be, exist' + -Ø PERF\n\n• ir . . . ri . . . uur- 'physical agent possessor' (PHY.POSS) These three prefixes [table 7:13, 17, 18], when occurring with active verb stems designating positions and with certain locative and descriptive stems, translate as 'have, possess', as in,\n\ntaruuraarit 'he has it, possess it (something standing)' < ti- IND + Ø- 3.A + a- A.POSS + ri- PHY.POSS + uur- P.POSS + arik 'be standing' + -Ø PERF\n\ntatiriiriikstahka 'he keeps his arrows in it' < ta- IND.1/2A + t- 1.A + ir- A.POSS + ri- PHY.POSS + uur- P.POSS + riiks- 'arrow' + raar- PL + ka 'be in' + -Ø PERF",
         "morphemes_mentioned": [
           {
             "form": "ku-",
@@ -866,7 +866,7 @@
             "notes": "Patient Possessor"
           },
           {
-            "form": "ariik",
+            "form": "arik",
             "label": "verb stem",
             "notes": "'be standing'"
           },
@@ -1152,7 +1152,7 @@
     "sections": [
       {
         "heading": "Examples of verb forms with evidential prefixes",
-        "content": "Examples of verb forms with evidential prefixes are the following:\n\nwitiʔitat ‘there was a village’ < wi- QUOT + ti- IND + Ø- 3.A + itak ‘be a village’ + -Ø PERF\n\nkuuhasuutiirit aruusaʔ ‘you must have seen the horse’ < kuur- DUB.1 + ra- ABS + Ø- 3.A + ut- PREV + iiʔirik ‘see’ + -Ø PERF\n\nkusaahkikat ‘he might cry (at some future time when speaker will not see it)’ < kuus- POT.1/3.A + Ø- 3.A + i- SEQ + ar- EV + kikak ‘cry’ + -Ø PERF",
+        "content": "Examples of verb forms with evidential prefixes are the following:\n\nwitiʔitat ‘there was a village’ < wi- QUOT + ti- IND + Ø- 3.A + itak ‘be a village’ + -Ø PERF\n\nkuuhasuutiirit aruusaʔ ‘you must have seen the horse’ < kuur- DUB.1 + ra- ABS + Ø- 3.A + ut- PREV + iirik ‘see’ + -Ø PERF\n\nkusaahkikat ‘he might cry (at some future time when speaker will not see it)’ < kuus- POT.1/3.A + Ø- 3.A + i- SEQ + ar- EV + kikak ‘cry’ + -Ø PERF",
         "morphemes_mentioned": [
           {
             "form": "wi-",
@@ -1195,7 +1195,7 @@
             "notes": "preverb"
           },
           {
-            "form": "iiʔirik",
+            "form": "iirik",
             "label": "verb stem",
             "notes": "'see'"
           },
@@ -1271,7 +1271,7 @@
       },
       {
         "heading": "Exhortation",
-        "content": "Exhortation. There are many constructions that are used to form commands and requests of varying degrees of urgency.\n\n*   The most common, and strongest, comprises the contingent mode and the jussive prefix uks- [7:20], which is identical in shape to the aorist prefix. It is a simple imperative that forms commands and is inflected for all personal agents. Examples are:\n    sukskirikaʔaaʔ ‘wake up!’ < i- CONT.1/2.A + s- 2.A + uks- JUSS + kirikaʔaar ‘wake up’ + -Ø PERF\n    ciksuhuurawaciiruutit ‘let’s go outside now!’ < i- CONT.1/2.A + acir- 1.DU.IN.A + uks- JUSS + uhuur- ‘finally’ + awacitik ‘go outside’ + ruu- DIST + -Ø PERF\n\n*   Almost as common in usage as the preceding construction is the use of the contingent mode, often preceded by the hortatory (HORT) proclitic ki- [table 12:8]. It is a milder imperative that expresses exhortation, as in\n    ruukiitaat ‘let me go there’ < ruu- ‘there’ + ki- HORT + i- CONT.1/2.A + t- 1.A + at ‘go’ + -Ø PERF\n    kiʔitiksuhuuhkaaʔ ‘let me dance now’ < ki- HORT + i- CONT.1/2.A + t- 1.A + ir- PREV + uks- JUSS + uhuur- ‘at last’ + kaaʔa ‘dance’ + -Ø PERF",
+        "content": "Exhortation. There are many constructions that are used to form commands and requests of varying degrees of urgency.\n\n*   The most common, and strongest, comprises the contingent mode and the jussive prefix uks- [7:20], which is identical in shape to the aorist prefix. It is a simple imperative that forms commands and is inflected for all personal agents. Examples are:\n    sukskirikaʔaa ‘wake up!’ < i- CONT.1/2.A + s- 2.A + uks- JUSS + kirikaʔaar ‘wake up’ + -Ø PERF\n    ciksuhuurawaciruutit ‘let’s go outside now!’ < i- CONT.1/2.A + acir- 1.DU.IN.A + uks- JUSS + uhuur- ‘finally’ + awacitik ‘go outside’ + ruu- DIST + -Ø PERF\n\n*   Almost as common in usage as the preceding construction is the use of the contingent mode, often preceded by the hortatory (HORT) proclitic ki- [table 12:8]. It is a milder imperative that expresses exhortation, as in\n    ruukiitat ‘let me go there’ < ruu- ‘there’ + ki- HORT + i- CONT.1/2.A + t- 1.A + at ‘go’ + -Ø PERF\n    kiʔitiksuhuuhkaaʔ ‘let me dance now’ < ki- HORT + i- CONT.1/2.A + t- 1.A + ir- PREV + uks- JUSS + uhuur- ‘at last’ + kaaʔa ‘dance’ + -Ø PERF",
         "morphemes_mentioned": [
           {
             "form": "uks-",
@@ -1344,7 +1344,7 @@
     "sections": [
       {
         "heading": null,
-        "content": "Kiʔíisukskuutíirit cikstit. 'Take a good look at me!' < ki- HORT + i- CONT. 1/2.A + s- 2.A + uks- JUSS + ku- 1.P + ut- PREV + iirik 'see, look at' + -Ø PERF\nFrequently the potential mode is used to admonish someone, as in\npahíituʔ kaasíkaa 'you must be quiet inside (there)' < pahiit- quiet; slow' + -uʔ NOM kaas- POT.2.A + s- 2.A + i- SEQ + kaa 'inside' + aah 'go around' + -Ø PERF",
+        "content": "Kiʔisukskuutiirit cikstit. 'Take a good look at me!' < ki- HORT + i- CONT. 1/2.A + s- 2.A + uks- JUSS + ku- 1.P + ut- PREV + iirik 'see, look at' + -Ø PERF\nFrequently the potential mode is used to admonish someone, as in\npahiituʔ kaasikaa 'you must be quiet inside (there)' < pahiit- quiet; slow' + -uʔ NOM kaas- POT.2.A + s- 2.A + i- SEQ + kaa 'inside' + aah 'go around' + -Ø PERF",
         "morphemes_mentioned": [
           {
             "form": "ki-",
@@ -1435,7 +1435,7 @@
       },
       {
         "heading": "Directives or instructions",
-        "content": "Directives or instructions are expressed by the indicative, negative indicative, and assertive modes with third person singular agent [table 7:10]. They are used, for example, when explaining to someone what one does in a certain situation or context or when telling someone how to make something.\nkaakiiraakii 'don't be long' < kaaki- NEG.IND + Ø- 3.A + i- SEQ + raakiir 'be a long time' + -Ø PERF\nkariiriiraakii 'don't be long!' < karíi- EMPH.NEG + rii- ASSR + Ø- 3.A + i- SEQ + raakiir 'be a long time' + -Ø PERF\nAaka, a raakutikuriiwictaawiiʔat. 'Oh, you should help me!' < . . . a 'and' + raa- 'just' + ku- INDF + ti- IND + Ø- 3.A + a- PREV + ku- 1.P + ri- PHY.BEN + ut- PREV + i- SEQ + awaahc- 'at least' + raawiiʔat 'help' + -Ø PERF",
+        "content": "Directives or instructions are expressed by the indicative, negative indicative, and assertive modes with third person singular agent [table 7:10]. They are used, for example, when explaining to someone what one does in a certain situation or context or when telling someone how to make something.\nkaakiiraakii 'don't be long' < kaaki- NEG.IND + Ø- 3.A + i- SEQ + raakiir 'be a long time' + -Ø PERF\nkariiriiraakii 'don't be long!' < karii- EMPH.NEG + rii- ASSR + Ø- 3.A + i- SEQ + raakiir 'be a long time' + -Ø PERF\nAaka, a raakutikuriiciwactaawiiʔat. 'Oh, you should help me!' < . . . a 'and' + raa- 'just' + ku- INDF + ti- IND + Ø- 3.A + a- PREV + ku- 1.P + ri- PHY.BEN + ut- PREV + i- SEQ + awahc- 'at least' + raawiiʔat 'help' + -Ø PERF",
         "morphemes_mentioned": [
           {
             "form": "kaaki-",
@@ -1468,7 +1468,7 @@
             "notes": "Perfective"
           },
           {
-            "form": "karíi-",
+            "form": "karii-",
             "label": "EMPH.NEG",
             "slot": null,
             "notes": "Emphatic Negative"
@@ -1528,7 +1528,7 @@
             "notes": "Preverb"
           },
           {
-            "form": "awaahc-",
+            "form": "awahc-",
             "label": "preverb/adverb",
             "slot": null,
             "notes": "'at least'"
@@ -1544,7 +1544,7 @@
       },
       {
         "heading": null,
-        "content": "The subordinate form of the infinitive mode with a third person agent is often used to implore, entreat, or admonish a person, as when urging someone to take a certain course of action or to refrain from certain behavior [table 7:10, 16]. Examples:\nkararukuukikahu 'don't be drinking,' as when admonishing a person < kara- NEG + ra- INF.A + Ø- 3.A + ku- INF.B + i- SEQ + kiikaa 'drink' + -hus IMPF\nTaku rakuukaksa rakuracakipíitit capáat. 'Someone (should) call out for the women to gather!' < ra- INF.A + Ø- 3.A + ku- INF.B + i- SEQ + kaksa 'call out' + -Ø SUB.4",
+        "content": "The subordinate form of the infinitive mode with a third person agent is often used to implore, entreat, or admonish a person, as when urging someone to take a certain course of action or to refrain from certain behavior [table 7:10, 16]. Examples:\nkararakuukiikahu 'don't be drinking,' as when admonishing a person < kara- NEG + ra- INF.A + Ø- 3.A + ku- INF.B + i- SEQ + kiikaa 'drink' + -hus IMPF\nTaku rakuukaksa rakuracakipiitit capaat. 'Someone (should) call out for the women to gather!' < ra- INF.A + Ø- 3.A + ku- INF.B + i- SEQ + kaksa 'call out' + -Ø SUB.4",
         "morphemes_mentioned": [
           {
             "form": "kara-",
@@ -1605,7 +1605,7 @@
       },
       {
         "heading": "Adverbials",
-        "content": "Occurring after all prefixes except those for subject and object number and before the verb stem are two adverbial morphemes, uhuur- 'now, finally; a while' and awaahc- 'even, at least' [table 7:21]. An example is:\ntuksuhuuhwiitit 'let me sit down a while!' < i- CONT.1/2.A + t- 1.A + uks- JUSS + uhuur- 'a while' + wiítik 'sit down' + -Ø PERF",
+        "content": "Occurring after all prefixes except those for subject and object number and before the verb stem are two adverbial morphemes, uhuur- 'now, finally; a while' and awahc- 'even, at least' [table 7:21]. An example is:\ntuksuhuuhwiitit 'let me sit down a while!' < i- CONT.1/2.A + t- 1.A + uks- JUSS + uhuur- 'a while' + wiitik 'sit down' + -Ø PERF",
         "morphemes_mentioned": [
           {
             "form": "uhuur-",
@@ -1614,7 +1614,7 @@
             "notes": "'now, finally; a while'"
           },
           {
-            "form": "awaahc-",
+            "form": "awahc-",
             "label": "adverbial morpheme",
             "slot": "after all prefixes except subject/object number, before verb stem",
             "notes": "'even, at least'"
@@ -1638,7 +1638,7 @@
             "notes": "Jussive"
           },
           {
-            "form": "wiítik",
+            "form": "wiitik",
             "label": "verb stem",
             "slot": null,
             "notes": "'sit down'"
@@ -1695,7 +1695,7 @@
       },
       {
         "heading": "Categories represented by proclitics",
-        "content": "There are five categories represented by proclitics, as follows.\n\n*   Reflexive and reciprocal (REFL). A single prefix witi- marks reflexive and reciprocal agents/patients [table 12:7], as in the following examples:\n    *   wititaatacikstariku ‘I keep my thoughts to myself’ < witi- REFL + ta- IND.1/2.A + t- 1.A + acikstarikus ‘hold one’s thoughts (to oneself)’ + -Ø PERF\n    *   siʔahawickaʔ siwitiirakuutiirit ‘they (DU) wanted to see each other’ < si- DU + ar- EV + ra- ABS + -Ø- 3.A + wicka ‘wish, want’ + -Ø PERF si- DU + witi- REFL + ra- INF.A + -Ø- 3.A + ku- INF.B + ut- PREV + iirik ‘see’ + -Ø PERF\n*   Negatives. Although there is a negative indicative mode that parallels the indicative mode, other modes, including the indicative, require or optionally use one of several negative prefixes that precede them [table 7:8]. The negative prefixes, together with meaning and modal co-occurrence restrictions, are given in table 13.",
+        "content": "There are five categories represented by proclitics, as follows.\n\n*   Reflexive and reciprocal (REFL). A single prefix witi- marks reflexive and reciprocal agents/patients [table 12:7], as in the following examples:\n    *   wititaatacikstariku ‘I keep my thoughts to myself’ < witi- REFL + ta- IND.1/2.A + t- 1.A + acikstarikus ‘hold one’s thoughts (to oneself)’ + -Ø PERF\n    *   siʔahawickaʔ siwitirakuutiirit ‘they (DU) wanted to see each other’ < si- DU + ar- EV + ra- ABS + Ø- 3.A + wicka ‘wish, want’ + -Ø PERF si- DU + witi- REFL + ra- INF.A + Ø- 3.A + ku- INF.B + ut- PREV + iirik ‘see’ + -Ø PERF\n*   Negatives. Although there is a negative indicative mode that parallels the indicative mode, other modes, including the indicative, require or optionally use one of several negative prefixes that precede them [table 7:8]. The negative prefixes, together with meaning and modal co-occurrence restrictions, are given in table 13.",
         "morphemes_mentioned": [
           {
             "form": "witi-",
@@ -2078,7 +2078,7 @@
     "sections": [
       {
         "heading": "iriruu- 'thereupon'",
-        "content": "iriruu- 'thereupon'\niriruuriíwuʔ 'thereupon they went' < iriruu- 'thereupon' + rii- ASSR + Ø- 3.A + wuu 'go PL.3.A' + -Ø PERF",
+        "content": "iriruu- 'thereupon'\niriruuriiwuʔ 'thereupon they went' < iriruu- 'thereupon' + rii- ASSR + Ø- 3.A + wuu 'go PL.3.A' + -Ø PERF",
         "morphemes_mentioned": [
           {
             "form": "iriruu-",
@@ -2318,7 +2318,7 @@
     "sections": [
       {
         "heading": "Noun Incorporation",
-        "content": "In addition to the prefixes discussed above, Skiri generally incorporates nouns that are the agents of intransitive verbs and the patients of transitive verbs [table 7:25]. Among the nouns that typically incorporate rather than appear in independent form in sentences are those for body parts and body products, natural phenomena, foods, and cultural products. Examples are:\n\n* body parts and body products; e.g., hand, head, etc.; tears, sweat, urine, etc.; voice, word;\n* natural phenomena, such as land, water, sun, moon, road;\n* foods, such as meat, soup, meal; and\n* cultural products, such as dwelling, village; moccasin, rope, pipe.\n\nAn incorporated noun drops the nominal suffix of its independent form; i.e., -uʔ, -kis, etc. (see above). If the noun referent is dual, the prefix si- DU occurs in its normal position at the beginning of the verb complex, and if it is plural, the suffix raar- PL immediately follows the incorporated noun stem. Examples are:\n\nsiwituksakitaahku 'there were two tribes' < si- DU + wi- QUOT + ti- IND + Ø- 3.A + uks- AOR + akitaar- 'tribe' + kus 'be sitting' + Ø PERF\n\nahikiistacakipu 'he gathered the bones' < ar- EV + ri- CONT.3.A + Ø- 3.A + kiis- 'bone' + raar- PL + takipuh 'gather' + Ø PERF\n\niiwiirasakuriisata 'as the sun set' < ii- 'when' + wii- 'now' + ra- ABS + Ø- 3.A + sakur- 'sun' + iisat 'go out of sight; set' + -a SUB.1\n\nriihiikakuspihat 'I moved the door flap aside' < rii- ASSR + t- 1.A + riikakus- 'door flap' + wihak 'move aside' + Ø PERF\n\nNouns that ordinarily do not incorporate are the following:\n\n* personal names of individuals and tribes;\n* geographical names;\n* kinship terms;\n* personal nouns, such as man, woman, etc.;\n* animal names, such as bear, deer, dog;\n\nThere are, however, exceptions to many of the preceding and related classes of terms. For example:\n\ntuuricaahiksii 'he is a good-looking person' < ti- IND + Ø- 3.A + uur- PREV + icaahiks 'person' + hiir 'be good looking' + Ø PERF",
+        "content": "In addition to the prefixes discussed above, Skiri generally incorporates nouns that are the agents of intransitive verbs and the patients of transitive verbs [table 7:25]. Among the nouns that typically incorporate rather than appear in independent form in sentences are those for body parts and body products, natural phenomena, foods, and cultural products. Examples are:\n\n* body parts and body products; e.g., hand, head, etc.; tears, sweat, urine, etc.; voice, word;\n* natural phenomena, such as land, water, sun, moon, road;\n* foods, such as meat, soup, meal; and\n* cultural products, such as dwelling, village; moccasin, rope, pipe.\n\nAn incorporated noun drops the nominal suffix of its independent form; i.e., -uʔ, -kis, etc. (see above). If the noun referent is dual, the prefix si- DU occurs in its normal position at the beginning of the verb complex, and if it is plural, the suffix raar- PL immediately follows the incorporated noun stem. Examples are:\n\nsiwituksakitaahku 'there were two tribes' < si- DU + wi- QUOT + ti- IND + Ø- 3.A + uks- AOR + akitaar- 'tribe' + kus 'be sitting' + -Ø PERF\n\nahikiistacakipu 'he gathered the bones' < ar- EV + ri- CONT.3.A + Ø- 3.A + kiis- 'bone' + raar- PL + takipuh 'gather' + -Ø PERF\n\niiwiirasakuriisata 'as the sun set' < ii- 'when' + wii- 'now' + ra- ABS + Ø- 3.A + sakur- 'sun' + iisat 'go out of sight; set' + -a SUB.1\n\nriihiikakuspihat 'I moved the door flap aside' < rii- ASSR + t- 1.A + riikakus- 'door flap' + wihak 'move aside' + -Ø PERF\n\nNouns that ordinarily do not incorporate are the following:\n\n* personal names of individuals and tribes;\n* geographical names;\n* kinship terms;\n* personal nouns, such as man, woman, etc.;\n* animal names, such as bear, deer, dog;\n\nThere are, however, exceptions to many of the preceding and related classes of terms. For example:\n\ntuuricaahiksii 'he is a good-looking person' < ti- IND + Ø- 3.A + uur- PREV + icaahiks 'person' + hiir 'be good looking' + -Ø PERF",
         "morphemes_mentioned": [
           {
             "form": "-uʔ",
@@ -2484,7 +2484,7 @@
             "form": "-ʔ",
             "label": "perfective aspect, non-intentive, non-subordinate",
             "slot": "suffix",
-            "notes": "Occurs when incorporated in perfective, non-intentive, non-subordinate contexts."
+            "notes": "Beside -Ø in perfective, non-intentive, non-subordinate contexts. The form given for incorporation is -his."
           },
           {
             "form": "-a",
@@ -2526,19 +2526,19 @@
             "form": "-rit",
             "label": "subordinate",
             "slot": "suffix",
-            "notes": "Combines with -his + -ta for perfective, intentive, subordinate forms, resulting in -hustarit. Combines with -hus + -ta for imperfective, intentive, subordinate forms, resulting in -hustarit."
+            "notes": "Combines with -his + -ta for perfective, intentive, subordinate forms. Combines with -hus + -ta for imperfective, intentive, subordinate forms, resulting in -hustarit."
           },
           {
             "form": "-hustarit",
-            "label": "perfective/imperfective, intentive, subordinate",
+            "label": "imperfective, intentive, subordinate",
             "slot": "suffix",
-            "notes": "Combined form of -his + -ta + -rit (perfective) or -hus + -ta + -rit (imperfective)."
+            "notes": "Combined form of -hus + -ta + -rit."
           },
           {
-            "form": "-huʔ",
+            "form": "-:huʔ",
             "label": "imperfective aspect, non-intentive, non-subordinate",
             "slot": "suffix",
-            "notes": "Occurs when incorporated in imperfective, non-intentive, non-subordinate contexts."
+            "notes": "Occurs in imperfective, non-intentive, non-subordinate contexts. The form given for incorporation is -:hus. The colon stands for lengthening of the vowel before it."
           },
           {
             "form": "-hu",
@@ -2550,37 +2550,37 @@
             "form": "-hus",
             "label": "imperfective aspect, intentive/inchoative/habitual",
             "slot": "suffix",
-            "notes": "Combines with -ta, -itik, -uukuʔ, -uku for various imperfective categories."
+            "notes": "Combines with -ta, -itik, -uukuʔ, -uku for various imperfective categories. Table 17 gives it as -:hus in non-subordinate forms and as -hus in subordinate forms."
           },
           {
-            "form": "-husta",
+            "form": "-:husta",
             "label": "imperfective, intentive, non-subordinate",
             "slot": "suffix",
-            "notes": "Combined form of -hus + -ta."
+            "notes": "Combined form of -:hus + -ta."
           },
           {
             "form": "-itik",
             "label": "inchoative",
             "slot": "suffix",
-            "notes": "Combines with -hus for imperfective, inchoative forms, resulting in -husitit."
+            "notes": "Combines with the imperfective suffix for inchoative forms: -:husitit non-subordinate, -husitit subordinate."
           },
           {
-            "form": "-husitit",
+            "form": "-:husitit / -husitit",
             "label": "imperfective, inchoative, non-subordinate/subordinate",
             "slot": "suffix",
-            "notes": "Combined form of -hus + -itik."
+            "notes": "Combined form of -:hus + -itik (non-subordinate) and of -hus + -itik (subordinate)."
           },
           {
             "form": "-uukuʔ",
             "label": "habitual, non-subordinate",
             "slot": "suffix",
-            "notes": "Combines with -hus for imperfective, habitual, non-subordinate forms, resulting in -husuukuʔ."
+            "notes": "Combines with -:hus for imperfective, habitual, non-subordinate forms, resulting in -:husuukuʔ."
           },
           {
-            "form": "-husuukuʔ",
+            "form": "-:husuukuʔ",
             "label": "imperfective, habitual, non-subordinate",
             "slot": "suffix",
-            "notes": "Combined form of -hus + -uukuʔ."
+            "notes": "Combined form of -:hus + -uukuʔ."
           },
           {
             "form": "-uku",
@@ -2615,7 +2615,13 @@
                 "Perfective",
                 "Non-intentive",
                 "Non-subordinate",
-                "-Ø / -ʔ (when incorporated)"
+                "-Ø / -ʔ"
+              ],
+              [
+                "Perfective",
+                "Non-intentive",
+                "Non-subordinate",
+                "-his (when incorporated)"
               ],
               [
                 "Perfective",
@@ -2651,13 +2657,19 @@
                 "Perfective",
                 "Intentive",
                 "Subordinate",
-                "-his + -ta + -rit → -hustarit"
+                "-his + -ta + -rit"
               ],
               [
                 "Imperfective",
                 "Non-intentive",
                 "Non-subordinate",
-                "-huʔ (when incorporated)"
+                "-:huʔ"
+              ],
+              [
+                "Imperfective",
+                "Non-intentive",
+                "Non-subordinate",
+                "-:hus (when incorporated)"
               ],
               [
                 "Imperfective",
@@ -2669,7 +2681,7 @@
                 "Imperfective",
                 "Intentive",
                 "Non-subordinate",
-                "-hus + -ta → -husta"
+                "-:hus + -ta → -:husta"
               ],
               [
                 "Imperfective",
@@ -2681,7 +2693,7 @@
                 "Imperfective",
                 "Inchoative",
                 "Non-subordinate",
-                "-hus + -itik → -husitit"
+                "-:hus + -itik → -:husitit"
               ],
               [
                 "Imperfective",
@@ -2693,7 +2705,7 @@
                 "Imperfective",
                 "Habitual",
                 "Non-subordinate",
-                "-hus + -uukuʔ → -husuukuʔ"
+                "-:hus + -uukuʔ → -:husuukuʔ"
               ],
               [
                 "Imperfective",
@@ -2712,7 +2724,7 @@
     "sections": [
       {
         "heading": null,
-        "content": "independent perfective form; but if it ends in a vowel, a glottal stop occurs after the vowel. If the perfective form of the verb has the intentive suffix (-ta INT) following it or if the perfective form of the verb is compounded with a following stem, -his does occur. Examples are:\ntihurás ‘he found it’ < ti- IND + Ø- 3.A + huras ‘find’ + Ø PERF; cp. tihurásista ‘he is going to find it’ < ti- IND + Ø- 3.A + huras ‘find’ + -his PERF + -ta INT\ntikíkat ‘he cried’ < ti- IND + Ø- 3.A + kikak ‘cry’ + Ø PERF; cp. tikikakísta ‘he is going to cry’ < ti- IND + Ø- 3.A + kikak ‘cry’ + -his PERF + -ta INT; takikaksaʔ ‘he came crying’ < ti- IND + Ø- 3.A + a- PREV.3.A + kikak ‘cry’ + -his PERF + a- ‘come’ + Ø PERF",
+        "content": "independent perfective form; but if it ends in a vowel, a glottal stop occurs after the vowel. If the perfective form of the verb has the intentive suffix (-ta INT) following it or if the perfective form of the verb is compounded with a following stem, -his does occur. Examples are:\ntihuras ‘he found it’ < ti- IND + Ø- 3.A + huras ‘find’ + -Ø PERF; cp. tihurasista ‘he is going to find it’ < ti- IND + Ø- 3.A + huras ‘find’ + -his PERF + -ta INT\ntikikat ‘he cried’ < ti- IND + Ø- 3.A + kikak ‘cry’ + -Ø PERF; cp. tikikaksta ‘he is going to cry’ < ti- IND + Ø- 3.A + kikak ‘cry’ + -his PERF + -ta INT; takikaksaʔ ‘he came crying’ < ti- IND + Ø- 3.A + a- PREV.3.A + kikak ‘cry’ + -his PERF + a ‘come’ + -Ø PERF",
         "morphemes_mentioned": [
           {
             "form": "-ta",
@@ -2764,7 +2776,7 @@
       },
       {
         "heading": "Perfective aspect, subordinate (SUB)",
-        "content": "In active and passive verbs, however, subordinate perfective forms are marked in one of three ways: by one of two overt vowel suffixes, by a final-syllable change, or by no overt marking (i.e., Ø). Which subordinating suffix a verb takes is unpredictable, and so each active and passive verb stem belongs to one of four classes, each of which is defined by its subordinate perfective marker. These classes are given in table 14.\nClass 1: raskuhisaaska ‘for you to call him’ < ra- INF.A + s- 2.A + ku- INF.B + hisaask ‘call’ + -a SUB.1\nClass 2: ratkuhurasi ‘for me to find him’ < ra- INF.A + t- 1.A + ku- INF.B + huras ‘find’ + -i SUB.2\nA subclass of Class 2 verbs comprises the small set of verbs called i-stems, which have a stem-final vowel i that occurs in imperfective forms but not in perfective ones. In the base form of these stems that i is indicated by a stem-final -i, as in as-i (uur...) ‘to run’ and itk-i (ut...) ‘to dream about’. The principal parts of an i-stem are illustrated as follows:\nuc-i ‘to be lying’: uc ‘be lying’ PERF; ucista ‘is going to lie’ PERF.INT; uci ‘be lying’ SUB.2; uciihuʔ ‘be lying’ IMPF; uciihusta ‘is going to be lying’ IMPF.INT; uciihu ‘be lying’ IMPF.SUB\nClass 3: tiruʔ ‘he made it’ < ti- IND + Ø- 3.A + raʔuk ‘make’ + Ø PERF; wiiraraʔu ‘when he made it’ < wii- ‘now’ + ra- ABS + Ø- 3.A + raʔuk ‘make’ + Ø SUB.3\nClass 4: iriirakikat ‘where he cried’ < irii- ‘where’ + ra- ABS + Ø- 3.A + kikak ‘cry’ + Ø SUB.4",
+        "content": "In active and passive verbs, however, subordinate perfective forms are marked in one of three ways: by one of two overt vowel suffixes, by a final-syllable change, or by no overt marking (i.e., Ø). Which subordinating suffix a verb takes is unpredictable, and so each active and passive verb stem belongs to one of four classes, each of which is defined by its subordinate perfective marker. These classes are given in table 14.\nClass 1: raskuhisaaska ‘for you to call him’ < ra- INF.A + s- 2.A + ku- INF.B + hisaask ‘call’ + -a SUB.1\nClass 2: ratkuhurasi ‘for me to find him’ < ra- INF.A + t- 1.A + ku- INF.B + huras ‘find’ + -i SUB.2\nA subclass of Class 2 verbs comprises the small set of verbs called i-stems, which have a stem-final vowel i that occurs in imperfective forms but not in perfective ones. In the base form of these stems that i is indicated by a stem-final -i, as in as-i (uur...) ‘to run’ and itk-i (ut...) ‘to dream about’. The principal parts of an i-stem are illustrated as follows:\nuc-i ‘to be lying’: uc ‘be lying’ PERF; ucista ‘is going to lie’ PERF.INT; uci ‘be lying’ SUB.2; uciihuʔ ‘be lying’ IMPF; uciihusta ‘is going to be lying’ IMPF.INT; ucihu ‘be lying’ IMPF.SUB\nClass 3: tiruʔ ‘he made it’ < ti- IND + Ø- 3.A + raʔuk ‘make’ + -Ø PERF; wiiraraʔu ‘when he made it’ < wii- ‘now’ + ra- ABS + Ø- 3.A + raʔuk ‘make’ + SUB.3\nClass 4: iriirakikat ‘where he cried’ < irii- ‘where’ + ra- ABS + Ø- 3.A + kikak ‘cry’ + -Ø SUB.4",
         "morphemes_mentioned": [
           {
             "form": "ra-",
@@ -2847,7 +2859,7 @@
             "notes": "'is going to be lying'"
           },
           {
-            "form": "uciihu",
+            "form": "ucihu",
             "label": "IMPF.SUB",
             "notes": "'be lying'"
           },
@@ -2885,11 +2897,11 @@
         "tables": []
       },
       {
-        "heading": "Imperfective aspect (IMPF), non-subordinate: -hus",
+        "heading": "Imperfective aspect (IMPF), non-subordinate: -:hus",
         "content": "The imperfective aspect (IMPF) denotes an uncompleted activity or one in progress—i.e., one that expresses an action without denoting a beginning or end. In non-subordinate verbs the form...",
         "morphemes_mentioned": [
           {
-            "form": "-hus",
+            "form": "-:hus",
             "label": "IMPF",
             "notes": "non-subordinate imperfective marker"
           }
@@ -2903,7 +2915,7 @@
     "sections": [
       {
         "heading": "GRAMMATICAL OVERVIEW (Imperfective aspect -:hus, continued)",
-        "content": "of the imperfective is -:hus, where the colon preceding -:hus represents lengthening of the preceding, stem-final vowel. Here, too, the final s of -:hus is dropped when this suffix is the last element in a word, but is retained when -ta INT or any other morpheme immediately follows it. Examples:\ntikacaakuʔ 'he is cutting it' < ti- IND + Ø- 3.A + kacak 'cut, chop' + -:hus IMPF; cp. tikacat 'he cut it' < ti- IND + Ø- 3.A + kacak 'cut' + Ø PERF\ntikiikaahuʔ 'he is drinking it' < ti- IND + Ø- 3.A + kiikaa 'drink' + -:hus IMPF; cp. tikiikaahusta 'he is going to be drinking it' < ti- IND + Ø- 3.A + kiikaa 'drink' + -:hus IMPF + -ta INT; Tarahaʔ Takiihaahusaʔ 'Buffalo Comes to Drink' < ti- IND + Ø- 3.A + a- PREV + kiikaa 'drink' + -:hus IMPF + a 'come' + Ø PERF",
+        "content": "of the imperfective is -:hus, where the colon preceding -:hus represents lengthening of the preceding, stem-final vowel. Here, too, the final s of -:hus is dropped when this suffix is the last element in a word, but is retained when -ta INT or any other morpheme immediately follows it. Examples:\ntikacaakuʔ 'he is cutting it' < ti- IND + Ø- 3.A + kacak 'cut, chop' + -:hus IMPF; cp. tikacat 'he cut it' < ti- IND + Ø- 3.A + kacak 'cut' + -Ø PERF\ntikiikaahuʔ 'he is drinking it' < ti- IND + Ø- 3.A + kiikaa 'drink' + -:hus IMPF; cp. tikiikaahusta 'he is going to be drinking it' < ti- IND + Ø- 3.A + kiikaa 'drink' + -:hus IMPF + -ta INT; Tarahaʔ Takiikaahusaʔ 'Buffalo Comes to Drink' < ti- IND + Ø- 3.A + a- PREV + kiikaa 'drink' + -:hus IMPF + a 'come' + -Ø PERF",
         "morphemes_mentioned": [
           {
             "form": "-:hus",
@@ -2952,7 +2964,7 @@
       },
       {
         "heading": "Imperfective aspect (IMPF), subordinate: -hus",
-        "content": "The form of the imperfective in subordinate verb forms is -hus, the same as the non-subordinate form except that it does not lengthen the preceding stem-final vowel and, when the suffix is word-final, the final vowel (i.e., u) of -hus, which becomes -hu in its surface form, is not followed by a glottal stop, as it is in non-subordinate forms. Examples are:\nraakuraarahuʔ 'for them to be coming' < ra- INF.A + Ø- 3.A + a- PREV + ku- INF.B + raar- 3.P.INDV.A + a 'come' + -:hus IMPF.SUB; cp. non-subordinate taraaraahuʔ 'they are coming'\niriirakiwakuʔ 'the one that barked' < irii- 'the one' + ra- ABS + Ø- 3.A + kiwak 'bark' + -:hus IMPF.SUB; cp. non-subordinate tikiwaakuʔ 'it's barking' < ti- IND + Ø- 3.A + kiwak 'bark' + -:hus IMPF",
+        "content": "The form of the imperfective in subordinate verb forms is -hus, the same as the non-subordinate form except that it does not lengthen the preceding stem-final vowel and, when the suffix is word-final, the final vowel (i.e., u) of -hus, which becomes -hu in its surface form, is not followed by a glottal stop, as it is in non-subordinate forms. Examples are:\nraakuraarahu 'for them to be coming' < ra- INF.A + Ø- 3.A + a- PREV + ku- INF.B + raar- 3.P.INDV.A + a 'come' + -hus IMPF.SUB; cp. non-subordinate taraaraahuʔ 'they are coming'\niriirakiwaku 'the one that barked' < irii- 'the one' + ra- ABS + Ø- 3.A + kiwak 'bark' + -hus IMPF.SUB; cp. non-subordinate tikiwaakuʔ 'it's barking' < ti- IND + Ø- 3.A + kiwak 'bark' + -:hus IMPF",
         "morphemes_mentioned": [
           {
             "form": "-hus",
@@ -3071,7 +3083,7 @@
     "sections": [
       {
         "heading": "Subordinate Clauses (continued)",
-        "content": "wiiruuhaasitiiʔ 'when it is going to occur' < wii- 'now' + ri- CONT.3.A + ut- PREV + raasiktik 'happen, occur' + -his PERF + -ta INT + -rit INT.SUB;\nwiiruuhaasitiiʔkustarit 'when it is going to be happening' < wii- 'now' + ri- CONT.3.A + ut- PREV + raasiktik 'happen, occur' + -hus IMPF + -ta INT + -rit INT.SUB",
+        "content": "wiiruuhaasitikstarit 'when it is going to occur' < wii- 'now' + ri- CONT.3.A + ut- PREV + raasiktik 'happen, occur' + -his PERF + -ta INT + -rit INT.SUB;\nwiiruuhaasitikustarit 'when it is going to be happening' < wii- 'now' + ri- CONT.3.A + ut- PREV + raasiktik 'happen, occur' + -hus IMPF + -ta INT + -rit INT.SUB",
         "morphemes_mentioned": [
           {
             "form": "wii-",
@@ -3117,7 +3129,7 @@
         "tables": [],
         "examples": [
           {
-            "pawnee_form": "wiiruuhaasitiiʔ",
+            "pawnee_form": "wiiruuhaasitikstarit",
             "translation": "when it is going to occur",
             "breakdown": [
               {
@@ -3151,7 +3163,7 @@
             ]
           },
           {
-            "pawnee_form": "wiiruuhaasitiiʔkustarit",
+            "pawnee_form": "wiiruuhaasitikustarit",
             "translation": "when it is going to be happening",
             "breakdown": [
               {
@@ -3260,7 +3272,7 @@
                 "label": "'talk'"
               },
               {
-                "morpheme": "-hus",
+                "morpheme": "-:hus",
                 "label": "IMPF"
               },
               {
@@ -3270,7 +3282,7 @@
             ]
           },
           {
-            "pawnee_form": "riitapaawarikiikusitit rikucki",
+            "pawnee_form": "riitapaawarikusitit rikucki",
             "translation": "I began shooting birds",
             "breakdown": [
               {
@@ -3529,7 +3541,7 @@
     "sections": [
       {
         "heading": "Existential Forms: Descriptive Verbs",
-        "content": "Simple existential descriptive forms. The simple existential forms of descriptive verbs comprise a descriptive stem followed by the verb uk 'to exist, be', which here functions as an inflectional suffix. In non-subordinate forms uk is a null form when it is word final. There are two classes of descriptive verbs based on their surface forms:\n\nClass I descriptive verbs, which are the most numerous, are characterized by a reduplication of the vowel in their final syllable when the forms are non-subordinate. The rule for this reduplication is:\n\nVᵢ(Vᵢ) → Vᵢ(Vᵢ)²Vᵢ / C _ C + uk (+ NON-SUB)\n\ntipahaaʔat 'it is red' < ti- IND + Ø- 3.A + pahaat 'be red' + -uk 'be'; cp. iriirapahaatu 'the one that is red'\n\ntihuraahtarariʔit 'the ground is burned off' < ti- IND + Ø- 3.A + huraar- 'ground' + tararit 'be burned, scorched' + -uk 'be'; cp. iriiratarariitu 'where it is scorched'\n\nClass II descriptive verbs comprise stems that do not undergo the final-syllable vocalic reduplication that Class I verbs do, illustrated by:\n\ntiwaarukstiiʔ 'he is holy' < ti- IND + Ø- 3.A + waarukstii 'be holy' + -uk 'be'; cp. iriwaaarukstiiʔu 'for one to be holy'\n\ntakuctaris 'the bucket is heavy' < ti- IND + Ø- 3.A + a- PREV + kuc- 'bucket' + taris 'be heavy' + -uk 'be'\n\nIntentive existential descriptive verbs. These intentives are formed by suffixing -ta INT to the perfective form of descriptive stems (i.e., STEM + -uk 'be' + -his PERF + -ta, which results in STEM + -uksta). The following are examples:\n\ntiwakarahiisuksta 'he is going to have a raspy voice' < ti- IND + Ø- 3.A + wakarahiis 'be raspy voiced' + -uk 'be' + -his PERF + -ta INT\n\ntipahaatuksta 'it is going to be red' < ti- IND + Ø- 3.A + pahaat 'be red' + uk 'be' + -his PERF + -ta INT\n\nSubordinate existential descriptive verbs. The subordinate form of existential descriptive verbs is represented by the subordinate form of uk 'to be', which is -u in word-final position. Examples:\n\niriirapahaatu 'the one that is red' < irii- 'the one' + ra- ABS + Ø- 3.A + pahaat 'red' + -uk SUB.D",
+        "content": "Simple existential descriptive forms. The simple existential forms of descriptive verbs comprise a descriptive stem followed by the verb uk 'to exist, be', which here functions as an inflectional suffix. In non-subordinate forms uk is a null form when it is word final. There are two classes of descriptive verbs based on their surface forms:\n\nClass I descriptive verbs, which are the most numerous, are characterized by a reduplication of the vowel in their final syllable when the forms are non-subordinate. The rule for this reduplication is:\n\nVᵢ(Vᵢ) → Vᵢ(Vᵢ)²Vᵢ / C _ C + uk (+ NON-SUB)\n\ntipahaaʔat 'it is red' < ti- IND + Ø- 3.A + pahaat 'be red' + -uk 'be'; cp. iriirapahaatu 'the one that is red'\n\ntihuraahtarariʔit 'the ground is burned off' < ti- IND + Ø- 3.A + huraar- 'ground' + tararit 'be burned, scorched' + -uk 'be'; cp. iriiratarariitu 'where it is scorched'\n\nClass II descriptive verbs comprise stems that do not undergo the final-syllable vocalic reduplication that Class I verbs do, illustrated by:\n\ntiwaarukstiʔ 'he is holy' < ti- IND + Ø- 3.A + waarukstii 'be holy' + -uk 'be'; cp. rakuwaarukstiiʔu 'for one to be holy'\n\ntakuctaris 'the bucket is heavy' < ti- IND + Ø- 3.A + a- PREV + kuc- 'bucket' + taris 'be heavy' + -uk 'be'\n\nIntentive existential descriptive verbs. These intentives are formed by suffixing -ta INT to the perfective form of descriptive stems (i.e., STEM + -uk 'be' + -his PERF + -ta, which results in STEM + -uksta). The following are examples:\n\ntiwakarahiisuksta 'he is going to have a raspy voice' < ti- IND + Ø- 3.A + wakarahiis 'be raspy voiced' + -uk 'be' + -his PERF + -ta INT\n\ntipahaatuksta 'it is going to be red' < ti- IND + Ø- 3.A + pahaat 'be red' + uk 'be' + -his PERF + -ta INT\n\nSubordinate existential descriptive verbs. The subordinate form of existential descriptive verbs is represented by the subordinate form of uk 'to be', which is -u in word-final position. Examples:\n\niriirapahaatu 'the one that is red' < irii- 'the one' + ra- ABS + Ø- 3.A + pahaat 'red' + -uk SUB.D",
         "morphemes_mentioned": [
           {
             "form": "uk",
@@ -3588,7 +3600,7 @@
             "notes": "'be holy'"
           },
           {
-            "form": "iriwaaarukstiiʔu",
+            "form": "rakuwaarukstiiʔu",
             "label": "example form",
             "notes": "'for one to be holy'"
           },
@@ -3778,7 +3790,7 @@
       },
       {
         "heading": null,
-        "content": "• Simple existential locative forms. Existential locative verbs in non-subordinate forms have no overt marking on the verb. Examples are:\ntiikita aruusaʔ 'he is riding the horse' < ti- IND + Ø- 3.A + ikita 'be astride' + Ø PERF\ntikawihaahka 'the projectile is on (i.e., attached to) the end of the shaft' < ti- IND + Ø- 3.A + kawihaar- 'projectile' + ka 'be on' + Ø PERF",
+        "content": "• Simple existential locative forms. Existential locative verbs in non-subordinate forms have no overt marking on the verb. Examples are:\ntiikita aruusaʔ 'he is riding the horse' < ti- IND + Ø- 3.A + ikita 'be astride' + -Ø PERF\ntikawihaahka 'the projectile is on (i.e., attached to) the end of the shaft' < ti- IND + Ø- 3.A + kawihaar- 'projectile' + ka 'be on' + -Ø PERF",
         "morphemes_mentioned": [
           {
             "form": "ti-",
@@ -3963,9 +3975,9 @@
                 "-itiksta"
               ],
               [
-                "-itik + -hus",
+                "-itik + -:hus",
                 "IMPF",
-                "-itiikᵘ"
+                "-itiikuʔ"
               ],
               [
                 "-itik + -hus",
@@ -3989,7 +4001,7 @@
       },
       {
         "heading": "Nouns",
-        "content": "In Skiri there are two types of noun stems, independent and dependent. The independent stem is a noun that stands freely, with or without the nominal absolutive suffix -uʔ (see below). A dependent stem, in contrast, is one that cannot by itself stand independently as a word. To become a free form it must have a suffix, although generally it occurs only in compounds.\n\nExamples of dependent nouns (cited as N-DEP herein) are:\nsiis- 'sharp, pointed object': siiski 'awl' (< siis- + -kis DIM); siistacaraʔ 'fork' (< siis- + -taar PL + taraa 'be side by side')\nasaa- 'horse; dog': asaaki 'dog' (< asaa- + -kis DIM); asiicapaat 'mare' (< asaa- + icapaak 'woman; female'). The independent form of 'horse' is aruusaʔ.",
+        "content": "In Skiri there are two types of noun stems, independent and dependent. The independent stem is a noun that stands freely, with or without the nominal absolutive suffix -uʔ (see below). A dependent stem, in contrast, is one that cannot by itself stand independently as a word. To become a free form it must have a suffix, although generally it occurs only in compounds.\n\nExamples of dependent nouns (cited as N-DEP herein) are:\nsiis- 'sharp, pointed object': siiski 'awl' (< siis- + -kis DIM); siistacaraʔ 'fork' (< siis- + -raar PL + taraa 'be side by side')\nasaa- 'horse; dog': asaaki 'dog' (< asaa- + -kis DIM); asiicapaat 'mare' (< asaa- + icapaak 'woman; female'). The independent form of 'horse' is aruusaʔ.",
         "morphemes_mentioned": [
           {
             "form": "-uʔ",
@@ -4004,7 +4016,7 @@
             "notes": "DIM"
           },
           {
-            "form": "-taar",
+            "form": "-raar",
             "label": "plural",
             "meaning": "plural marker for nouns",
             "notes": "PL"
@@ -4032,7 +4044,7 @@
             "form": "-kis",
             "label": "Diminutive (DIM)",
             "meaning": "small N; no translation",
-            "notes": "asaakiʔ 'dog' < asaa- 'dog; horse' + -kis DIM; riicikiʔ 'knife' < riici- 'knife' + kis DIM"
+            "notes": "asaaki 'dog' < asaa- 'dog; horse' + -kis DIM; riiciki 'knife' < riici- 'knife' + kis DIM"
           },
           {
             "form": "-kusuʔ",
@@ -4073,7 +4085,7 @@
                 "Diminutive (DIM)",
                 "-kis",
                 "small N; no trans.",
-                "asaakiʔ 'dog'; riicikiʔ 'knife'"
+                "asaaki 'dog'; riiciki 'knife'"
               ],
               [
                 "Augmentative (AUG)",
@@ -4203,7 +4215,7 @@
       },
       {
         "heading": null,
-        "content": "Singular number is unmarked in Skiri verbs. Dual number for both agent and patient is marked by the prefix si- DU, which precedes the modal prefix [table 12:6]. Plurality, in contrast, is represented by several morphemes (table 7:13, 22-24):\n\n*   first and second person agents in active, descriptive, and locative verbs take rak-;\n*   third person plural agents that are a group or single entity in active intransitive, descriptive, and locative verbs take the collective plural prefix ir-;\n*   third person plural agents that are individuals acting or existing separately in active intransitive, descriptive, and locative verbs take the individuative plural prefix raar-;\n*   third person agents of active transitive verbs are marked by the combination si- DU and ir- COLL.PL.\n\nIn active intransitive, descriptive, and locative verbs there is a marked distinction between collective and **non-collective plural agents**, as in,\n\ntiiraspaatasit 'they (COLL) set out' < ti- IND + Ø- 3.A + ir- 3.P.COLL.A + aspaatasik 'set out' + Ø PERF;\ntiiraaraspaatasit 'they (INDV) set out' < ti- IND + Ø- 3.A + raar- 3.P.INDV.A + aspaatasik 'set out' + Ø PERF;\n\nand in many transitive verbs there are separate prefixes that distinguish animate and inanimate third-person plural objects, as in,\n\ntaharaspiʔ 'I looked for them (inanimate objects)' < ta- IND.1/2.A + t- 1.A + raar- 3.INAN.P + raspii 'look for' + Ø PERF; cp. taatakaraspiʔ 'I looked for",
+        "content": "Singular number is unmarked in Skiri verbs. Dual number for both agent and patient is marked by the prefix si- DU, which precedes the modal prefix [table 12:6]. Plurality, in contrast, is represented by several morphemes (table 7:13, 22-24):\n\n*   first and second person agents in active, descriptive, and locative verbs take rak-;\n*   third person plural agents that are a group or single entity in active intransitive, descriptive, and locative verbs take the collective plural prefix ir-;\n*   third person plural agents that are individuals acting or existing separately in active intransitive, descriptive, and locative verbs take the individuative plural prefix raar-;\n*   third person agents of active transitive verbs are marked by the combination si- DU and ir- COLL.PL.\n\nIn active intransitive, descriptive, and locative verbs there is a marked distinction between collective and **non-collective plural agents**, as in,\n\ntiiraspaatasit 'they (COLL) set out' < ti- IND + Ø- 3.A + ir- 3.P.COLL.A + aspaatasik 'set out' + -Ø PERF;\ntiraaraspaatasit 'they (INDV) set out' < ti- IND + Ø- 3.A + raar- 3.P.INDV.A + aspaatasik 'set out' + -Ø PERF;\n\nand in many transitive verbs there are separate prefixes that distinguish animate and inanimate third-person plural objects, as in,\n\ntaharaspiʔ 'I looked for them (inanimate objects)' < ta- IND.1/2.A + t- 1.A + raar- 3.INAN.P + raspii 'look for' + -Ø PERF; cp. taataktaraspiʔ 'I looked for",
         "morphemes_mentioned": [
           {
             "form": "si-",
@@ -4300,7 +4312,7 @@
     "sections": [
       {
         "heading": null,
-        "content": "iriiruurakuuraaru 'whatever the kind of animal was,' that is, 'all kinds of animals' < irii- 'the one' + ruu- 'there' + ra- INF.A + Ø- 3.A + ku- INF.B + i- SEQ + rahuraar- 'animal' + -u SUB.D",
+        "content": "iriiruurakuurahuraaru 'whatever the kind of animal was,' that is, 'all kinds of animals' < irii- 'the one' + ruu- 'there' + ra- INF.A + Ø- 3.A + ku- INF.B + i- SEQ + rahuraar- 'animal' + -u SUB.D",
         "morphemes_mentioned": [
           {
             "form": "irii-",

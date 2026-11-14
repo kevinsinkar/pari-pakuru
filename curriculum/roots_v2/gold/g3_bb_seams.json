@@ -1,13 +1,13 @@
 {
  "counts": {
   "alignment_failed": 3,
-  "ambiguous_target": 24,
-  "certain": 77,
-  "english_mismatch": 39,
-  "no_target": 419,
-  "seamed_tokens": 635,
-  "skipped_ocr_spacing": 69,
-  "too_short": 4
+  "ambiguous_target": 45,
+  "certain": 105,
+  "english_mismatch": 49,
+  "no_target": 522,
+  "seamed_tokens": 731,
+  "skipped_ocr_spacing": 4,
+  "too_short": 3
  },
  "matches": [
   {
@@ -17,7 +17,7 @@
     "tahurus"
    ],
    "bb_row": 2187,
-   "bb_token": "akah•tahurus",
+   "bb_token": "akah•táhurus",
    "boundaries": [
     [
      3,
@@ -29,33 +29,88 @@
    "target": "akahtaahuruus",
    "targets": [
     {
-     "english": "round house, as used for dances and ceremonial events .",
+     "english": "round house, as used for dances and ceremonial events.",
      "entry_id": "SK-akahtaahuruus-p358-3675",
      "type": "headword"
     }
    ]
   },
   {
-   "bb_english": "No, my grandfather has passed away.",
+   "bb_english": "eleven",
    "bb_parts": [
-    "hura",
-    "hac"
+    "asku",
+    "hu",
+    "kita"
    ],
-   "bb_row": 2140,
-   "bb_token": "hura•hats",
+   "bb_row": 2223,
+   "bb_token": "asku•hú•kita",
    "boundaries": [
     [
      4,
      5
+    ],
+    [
+     7,
+     7
     ]
    ],
-   "lesson": 7,
-   "page": 61,
-   "target": "hurahac",
+   "lesson": 8,
+   "page": 68,
+   "target": "askuhuukita",
    "targets": [
     {
-     "english": "disappear. ; die, pass away.",
-     "entry_id": "SK-hurahac-p47-0798",
+     "english": "eleven.",
+     "entry_id": "SK-askuhuukita-p16-0174",
+     "type": "headword"
+    }
+   ]
+  },
+  {
+   "bb_english": "chair",
+   "bb_parts": [
+    "ckus",
+    "kakusuʔ"
+   ],
+   "bb_row": 2239,
+   "bb_token": "tskús•kakusu'",
+   "boundaries": [
+    [
+     4,
+     4
+    ]
+   ],
+   "lesson": 8,
+   "page": 69,
+   "target": "ckuskakusuʔ",
+   "targets": [
+    {
+     "english": "chair; stool.",
+     "entry_id": "SK-ckuskakusuq-p31-0498",
+     "type": "headword"
+    }
+   ]
+  },
+  {
+   "bb_english": "food",
+   "bb_parts": [
+    "ha",
+    "kawahcisuʔ"
+   ],
+   "bb_row": 2779,
+   "bb_token": "há•kawahtsisu'",
+   "boundaries": [
+    [
+     3,
+     3
+    ]
+   ],
+   "lesson": 11,
+   "page": 79,
+   "target": "haakawaahcisuʔ",
+   "targets": [
+    {
+     "english": "cooked food. ; food, groceries.",
+     "entry_id": "SK-haakawaahcisuq-p35-0588",
      "type": "headword"
     }
    ]
@@ -64,10 +119,10 @@
    "bb_english": "sheriff, office of the law",
    "bb_parts": [
     "hit",
-    "kataʔku"
+    "kataku"
    ],
    "bb_row": 2319,
-   "bb_token": "het•kata'ku",
+   "bb_token": "het•katáku",
    "boundaries": [
     [
      3,
@@ -89,10 +144,10 @@
    "bb_english": "milk",
    "bb_parts": [
     "hit",
-    "kicu"
+    "kicuʔ"
    ],
    "bb_row": 1985,
-   "bb_token": "het•kitsu",
+   "bb_token": "het•kítsu'",
    "boundaries": [
     [
      3,
@@ -115,10 +170,10 @@
    "bb_parts": [
     "kas",
     "i",
-    "kika"
+    "kikaʔ"
    ],
    "bb_row": 2874,
-   "bb_token": "kas•i•kika",
+   "bb_token": "kas•i•kika'",
    "boundaries": [
     [
      4,
@@ -150,7 +205,7 @@
     "kaksaʔ"
    ],
    "bb_row": 2523,
-   "bb_token": "kata•kaksa'",
+   "bb_token": "kata•káksa'",
    "boundaries": [
     [
      4,
@@ -162,7 +217,7 @@
    "target": "katakaksaa",
    "targets": [
     {
-     "english": "be the roar, deep loud cry, snort of an animal, as a bear or buffalo; bellow, as a cow .",
+     "english": "be the roar, deep loud cry, snort of an animal, as a bear or buffalo; bellow, as a cow.",
      "entry_id": "SK-katakaksaa-p81-1492",
      "type": "headword"
     }
@@ -280,7 +335,7 @@
     "uhat"
    ],
    "bb_row": 1990,
-   "bb_token": "kits•u\"hat",
+   "bb_token": "kits•úhat",
    "boundaries": [
     [
      4,
@@ -305,7 +360,7 @@
     "rahkata"
    ],
    "bb_row": 2798,
-   "bb_token": "ki•rahkata",
+   "bb_token": "ki•ráhkata",
    "boundaries": [
     [
      3,
@@ -330,7 +385,7 @@
     "rasituʔ"
    ],
    "bb_row": 1987,
-   "bb_token": "kira•rasitu'",
+   "bb_token": "kira•rásitu'",
    "boundaries": [
     [
      5,
@@ -349,13 +404,38 @@
    ]
   },
   {
+   "bb_english": "water",
+   "bb_parts": [
+    "kira",
+    "rasituʔ"
+   ],
+   "bb_row": 2794,
+   "bb_token": "kirá•rasitu'",
+   "boundaries": [
+    [
+     5,
+     5
+    ]
+   ],
+   "lesson": 11,
+   "page": 80,
+   "target": "kiiraraasiituʔ",
+   "targets": [
+    {
+     "english": "cold water, chilled water, as for drinking. ; water, drinking water, well water.",
+     "entry_id": "SK-kiiraraasiituq-p91-1705",
+     "type": "headword"
+    }
+   ]
+  },
+  {
    "bb_english": "scout",
    "bb_parts": [
     "kirik",
     "irisuʔ"
    ],
    "bb_row": 2333,
-   "bb_token": "kirik•erisu'",
+   "bb_token": "kirik•érisu'",
    "boundaries": [
     [
      5,
@@ -399,13 +479,38 @@
    ]
   },
   {
-   "bb_english": "It's a black bear.",
+   "bb_english": "sixteen",
    "bb_parts": [
-    "kuruʔks",
+    "ksur",
+    "awiuʔ"
+   ],
+   "bb_row": 2228,
+   "bb_token": "ksúr•awiu'",
+   "boundaries": [
+    [
+     4,
+     4
+    ]
+   ],
+   "lesson": 8,
+   "page": 69,
+   "target": "ksurawiʔuʔ",
+   "targets": [
+    {
+     "english": "sixteen.",
+     "entry_id": "SK-ksurawiquq-p101-1949",
+     "type": "headword"
+    }
+   ]
+  },
+  {
+   "bb_english": "a black bear.",
+   "bb_parts": [
+    "kuruks",
     "katit"
    ],
-   "bb_row": 1955,
-   "bb_token": "kuru'ks•katit",
+   "bb_row": 1953,
+   "bb_token": "kurúks•katit",
    "boundaries": [
     [
      6,
@@ -424,13 +529,13 @@
    ]
   },
   {
-   "bb_english": "a black bear.",
+   "bb_english": "It's a black bear.",
    "bb_parts": [
     "kuruks",
     "katit"
    ],
-   "bb_row": 1953,
-   "bb_token": "kuruks•katit",
+   "bb_row": 1955,
+   "bb_token": "kurúks•katit",
    "boundaries": [
     [
      6,
@@ -453,10 +558,10 @@
    "bb_parts": [
     "pa",
     "hutawi",
-    "u"
+    "uʔ"
    ],
    "bb_row": 2712,
-   "bb_token": "Pa•hutawi•u",
+   "bb_token": "Pa•hutáwi•u'",
    "boundaries": [
     [
      3,
@@ -485,7 +590,7 @@
     "pahat"
    ],
    "bb_row": 2214,
-   "bb_token": "papitsis•pahat",
+   "bb_token": "papitsis•páhat",
    "boundaries": [
     [
      8,
@@ -510,7 +615,7 @@
     "tatuʔ"
    ],
    "bb_row": 2439,
-   "bb_token": "Pahuks•Tatu'",
+   "bb_token": "Páhuks•Tatu'",
    "boundaries": [
     [
      6,
@@ -579,13 +684,43 @@
    ]
   },
   {
+   "bb_english": "twelve",
+   "bb_parts": [
+    "pitkus",
+    "hus",
+    "iriʔ"
+   ],
+   "bb_row": 2224,
+   "bb_token": "pitkus•hús•iri'",
+   "boundaries": [
+    [
+     6,
+     6
+    ],
+    [
+     9,
+     9
+    ]
+   ],
+   "lesson": 8,
+   "page": 68,
+   "target": "pitkusuusiriʔ",
+   "targets": [
+    {
+     "english": "twelve.",
+     "entry_id": "SK-pitkusuusiriq-p114-2213",
+     "type": "headword"
+    }
+   ]
+  },
+  {
    "bb_english": "brave",
    "bb_parts": [
     "rahi",
     "kucuʔ"
    ],
    "bb_row": 2332,
-   "bb_token": "rahi•kutsu'",
+   "bb_token": "ráhi•kutsu'",
    "boundaries": [
     [
      5,
@@ -643,7 +778,7 @@
     "uʔ"
    ],
    "bb_row": 2293,
-   "bb_token": "Ra•ka•hurah•katiit•u'",
+   "bb_token": "Ra•ká•huráh•katiit•u'",
    "boundaries": [
     [
      2,
@@ -681,7 +816,7 @@
     "katit"
    ],
    "bb_row": 2793,
-   "bb_token": "ra•kits•katit",
+   "bb_token": "ra•kíts•katit",
    "boundaries": [
     [
      2,
@@ -710,7 +845,7 @@
     "kita"
    ],
    "bb_row": 2226,
-   "bb_token": "raku•kita",
+   "bb_token": "rakú•kita",
    "boundaries": [
     [
      5,
@@ -735,7 +870,7 @@
     "wiru"
    ],
    "bb_row": 2420,
-   "bb_token": "Rihita•wiru",
+   "bb_token": "Rihitá•wiru",
    "boundaries": [
     [
      7,
@@ -754,6 +889,56 @@
    ]
   },
   {
+   "bb_english": "Ponca country",
+   "bb_parts": [
+    "rihita",
+    "wiru"
+   ],
+   "bb_row": 2421,
+   "bb_token": "Rihitá•wiru",
+   "boundaries": [
+    [
+     7,
+     7
+    ]
+   ],
+   "lesson": 13,
+   "page": 87,
+   "target": "riihitawiru",
+   "targets": [
+    {
+     "english": "Ponca City, Okla. ; among the Poncas, Ponca country.",
+     "entry_id": "SK-riihitawiru-p141-2796",
+     "type": "headword"
+    }
+   ]
+  },
+  {
+   "bb_english": "door",
+   "bb_parts": [
+    "rika",
+    "kusuʔ"
+   ],
+   "bb_row": 2241,
+   "bb_token": "reká•kusu'",
+   "boundaries": [
+    [
+     5,
+     5
+    ]
+   ],
+   "lesson": 8,
+   "page": 69,
+   "target": "riikakusuʔ",
+   "targets": [
+    {
+     "english": "door; frame door, as in a house. ; gate.",
+     "entry_id": "SK-riikakusuq-p141-2806",
+     "type": "headword"
+    }
+   ]
+  },
+  {
    "bb_english": "January",
    "bb_parts": [
     "ri",
@@ -761,7 +946,7 @@
     "tirara"
    ],
    "bb_row": 2708,
-   "bb_token": "Ri•katihah•tirara",
+   "bb_token": "Ri•katihah•tírara",
    "boundaries": [
     [
      2,
@@ -791,7 +976,7 @@
     "tirara"
    ],
    "bb_row": 2709,
-   "bb_token": "Ri•katihah•tirara",
+   "bb_token": "Ri•katihah•tírara",
    "boundaries": [
     [
      2,
@@ -820,7 +1005,7 @@
     "katiharuʔ"
    ],
    "bb_row": 2527,
-   "bb_token": "RI•KATIHARU'",
+   "bb_token": "RI•KÁTIHARU'",
    "boundaries": [
     [
      2,
@@ -870,7 +1055,7 @@
     "katiharuʔ"
    ],
    "bb_row": 2684,
-   "bb_token": "ri•katiharu'",
+   "bb_token": "ri•kátiharu'",
    "boundaries": [
     [
      2,
@@ -895,7 +1080,7 @@
     "katiharuʔ"
    ],
    "bb_row": 2697,
-   "bb_token": "ri•katiharu'",
+   "bb_token": "ri•kátiharu'",
    "boundaries": [
     [
      2,
@@ -945,7 +1130,7 @@
     "kiwatat"
    ],
    "bb_row": 2734,
-   "bb_token": "Sakuh•kiwatat",
+   "bb_token": "Sakuh•kíwatat",
    "boundaries": [
     [
      4,
@@ -970,7 +1155,7 @@
     "warukstiʔ"
    ],
    "bb_row": 2732,
-   "bb_token": "Sakuh•waruksti'",
+   "bb_token": "Sakuh•wáruksti'",
    "boundaries": [
     [
      4,
@@ -1015,6 +1200,68 @@
    ]
   },
   {
+   "bb_english": "I'm sad (poor in spirit)",
+   "bb_parts": [
+    "tat",
+    "aciks",
+    "kapakis"
+   ],
+   "bb_row": 2662,
+   "bb_token": "tat•atsiks•kápakis",
+   "boundaries": [
+    [
+     4,
+     4
+    ],
+    [
+     9,
+     9
+    ]
+   ],
+   "lesson": 18,
+   "page": 105,
+   "target": "taatacikskaapaakis",
+   "targets": [
+    {
+     "english": "feel sad, sorrowful. ; feel pitiful.",
+     "entry_id": "SK-acikskaapaakis-p353-3634",
+     "form_number": 1,
+     "type": "form"
+    }
+   ]
+  },
+  {
+   "bb_english": "I love you.",
+   "bb_parts": [
+    "tʔat",
+    "aciks",
+    "ta"
+   ],
+   "bb_row": 2154,
+   "bb_token": "T'at•atsíks•ta",
+   "boundaries": [
+    [
+     4,
+     4
+    ],
+    [
+     9,
+     9
+    ]
+   ],
+   "lesson": 7,
+   "page": 62,
+   "target": "taataciksta",
+   "targets": [
+    {
+     "english": "cherish, love, think highly of, esteem, value highly",
+     "entry_id": "SK-aciksta-p354-3657",
+     "form_number": 1,
+     "type": "form"
+    }
+   ]
+  },
+  {
    "bb_english": "I am happy.",
    "bb_parts": [
     "tat",
@@ -1022,7 +1269,7 @@
     "tihuʔ"
    ],
    "bb_row": 2601,
-   "bb_token": "Tat•atsiks•tehu'",
+   "bb_token": "Tat•atsíks•tehu'",
    "boundaries": [
     [
      4,
@@ -1053,7 +1300,7 @@
     "tihuʔ"
    ],
    "bb_row": 2664,
-   "bb_token": "tat•atsiks•tehu'",
+   "bb_token": "tat•atsíks•tehu'",
    "boundaries": [
     [
      4,
@@ -1081,10 +1328,10 @@
    "bb_parts": [
     "tat",
     "akuh",
-    "taku"
+    "takuʔ"
    ],
    "bb_row": 2088,
-   "bb_token": "tat•akuh•taku",
+   "bb_token": "tat•akúh•taku'",
    "boundaries": [
     [
      4,
@@ -1100,9 +1347,61 @@
    "target": "taatakuhtakuʔ",
    "targets": [
     {
-     "english": "play, as children .",
+     "english": "play, as children.",
      "entry_id": "SK-akuhtaku-p11-0128",
      "form_number": 1,
+     "type": "form"
+    }
+   ]
+  },
+  {
+   "bb_english": "I sent it, threw it",
+   "bb_parts": [
+    "tat",
+    "awarit"
+   ],
+   "bb_row": 2363,
+   "bb_token": "tat•áwarit",
+   "boundaries": [
+    [
+     4,
+     4
+    ]
+   ],
+   "lesson": 12,
+   "page": 83,
+   "target": "taatawarit",
+   "targets": [
+    {
+     "english": "throw, sling, toss. ; throw away. ; spit out.",
+     "entry_id": "SK-awarik-p21-0273",
+     "form_number": 1,
+     "type": "form"
+    }
+   ]
+  },
+  {
+   "bb_english": "it's' hot",
+   "bb_parts": [
+    "ta",
+    "wirictuʔ"
+   ],
+   "bb_row": 2546,
+   "bb_token": "tá•wiritstu'",
+   "boundaries": [
+    [
+     3,
+     3
+    ]
+   ],
+   "lesson": 15,
+   "page": 96,
+   "target": "taawirictuʔ",
+   "targets": [
+    {
+     "english": "be hot, sweltering, as the heat on a hot, dry summer day.",
+     "entry_id": "SK-awirictaqu-p25-0335",
+     "form_number": 2,
      "type": "form"
     }
    ]
@@ -1114,7 +1413,7 @@
     "sta"
    ],
    "bb_row": 2590,
-   "bb_token": "tat•sta",
+   "bb_token": "tát•sta",
    "boundaries": [
     [
      2,
@@ -1140,7 +1439,7 @@
     "rikiʔ"
    ],
    "bb_row": 2329,
-   "bb_token": "taraha•riki'",
+   "bb_token": "táraha•riki'",
    "boundaries": [
     [
      7,
@@ -1165,7 +1464,7 @@
     "taka"
    ],
    "bb_row": 2182,
-   "bb_token": "taraha•taka",
+   "bb_token": "tarahá•taka",
    "boundaries": [
     [
      7,
@@ -1180,6 +1479,89 @@
      "english": "white buffalo, albino buffalo. ; domestic cow.",
      "entry_id": "SK-tarahaataakaa-p160-3125",
      "type": "headword"
+    }
+   ]
+  },
+  {
+   "bb_english": "I ate",
+   "bb_parts": [
+    "tat",
+    "a",
+    "kawaac"
+   ],
+   "bb_row": 2631,
+   "bb_token": "Tat•á•kawaats",
+   "boundaries": [
+    [
+     3,
+     3
+    ],
+    [
+     5,
+     5
+    ]
+   ],
+   "lesson": 17,
+   "page": 102,
+   "target": "tataakawaac",
+   "targets": [
+    {
+     "english": "eat, take food, take a meal; dine.",
+     "entry_id": "SK-haakawaahc/waqac-p34-0586",
+     "form_number": 1,
+     "type": "form"
+    }
+   ]
+  },
+  {
+   "bb_english": "I want to go.",
+   "bb_parts": [
+    "tat",
+    "icka"
+   ],
+   "bb_row": 2834,
+   "bb_token": "Tát•itska",
+   "boundaries": [
+    [
+     3,
+     3
+    ]
+   ],
+   "lesson": 20,
+   "page": 112,
+   "target": "tatickaaʔ",
+   "targets": [
+    {
+     "english": "want, desire, as an object. ; think; wish.",
+     "entry_id": "SK-wickaa,_ickaa-p178-3530",
+     "form_number": 1,
+     "type": "form"
+    }
+   ]
+  },
+  {
+   "bb_english": "No, I want him to go.",
+   "bb_parts": [
+    "tat",
+    "icka"
+   ],
+   "bb_row": 2836,
+   "bb_token": "tat•itska",
+   "boundaries": [
+    [
+     3,
+     3
+    ]
+   ],
+   "lesson": 20,
+   "page": 112,
+   "target": "tatickaaʔ",
+   "targets": [
+    {
+     "english": "want, desire, as an object. ; think; wish.",
+     "entry_id": "SK-wickaa,_ickaa-p178-3530",
+     "form_number": 1,
+     "type": "form"
     }
    ]
   },
@@ -1221,7 +1603,7 @@
     "wataʔ"
    ],
    "bb_row": 2589,
-   "bb_token": "tatih•wata'",
+   "bb_token": "tatíh•wata'",
    "boundaries": [
     [
      4,
@@ -1248,7 +1630,7 @@
     "itaʔ"
    ],
    "bb_row": 2221,
-   "bb_token": "tat•ira•ita'",
+   "bb_token": "tat•irá•ita'",
    "boundaries": [
     [
      3,
@@ -1266,6 +1648,40 @@
     {
      "english": "know, as a fact or routine; remember. ; be conscious.",
      "entry_id": "SK-raaqiita-p115-2232",
+     "form_number": 1,
+     "type": "form"
+    }
+   ]
+  },
+  {
+   "bb_english": "I have drunk, I drank.",
+   "bb_parts": [
+    "tat",
+    "kikaʔ"
+   ],
+   "bb_row": 2814,
+   "bb_token": "Tat•kíka'",
+   "boundaries": [
+    [
+     3,
+     3
+    ]
+   ],
+   "lesson": 11,
+   "page": 81,
+   "target": "tatkiikaʔ",
+   "targets": [
+    {
+     "app1_id": 441,
+     "english": "I drank it ; to drink it",
+     "mode": "indicative_perfective",
+     "person": "1sg",
+     "type": "app1",
+     "verb": "to drink it"
+    },
+    {
+     "english": "drink.",
+     "entry_id": "SK-kiikaa-p90-1694",
      "form_number": 1,
      "type": "form"
     }
@@ -1298,13 +1714,70 @@
    ]
   },
   {
+   "bb_english": "I am crying",
+   "bb_parts": [
+    "tat",
+    "kikat"
+   ],
+   "bb_row": 2206,
+   "bb_token": "tat•kíkat",
+   "boundaries": [
+    [
+     3,
+     3
+    ]
+   ],
+   "lesson": 8,
+   "page": 67,
+   "target": "tatkikat",
+   "targets": [
+    {
+     "english": "cry; mourn. ; howl, as a coyote or dog.",
+     "entry_id": "SK-kikak-p93-1767",
+     "form_number": 1,
+     "type": "form"
+    }
+   ]
+  },
+  {
+   "bb_english": "I have spoken",
+   "bb_parts": [
+    "tat",
+    "pa",
+    "waktit"
+   ],
+   "bb_row": 2818,
+   "bb_token": "tat•pá•waktit",
+   "boundaries": [
+    [
+     3,
+     3
+    ],
+    [
+     6,
+     6
+    ]
+   ],
+   "lesson": 20,
+   "page": 111,
+   "target": "tatpaawaktiit",
+   "targets": [
+    {
+     "english": "talk, speak.",
+     "entry_id": "SK-waawaktiik/tik--p174-3457",
+     "form_number": 1,
+     "type": "form"
+    }
+   ]
+  },
+  {
    "bb_english": "I have said it.",
    "bb_parts": [
     "tat",
     "pakuʔ"
    ],
    "bb_row": 2046,
-   "bb_token": "Tat•paku'",
+   "bb_token": "Tat•páku'",
    "boundaries": [
     [
      3,
@@ -1327,10 +1800,10 @@
    "bb_english": "I am walking about.",
    "bb_parts": [
     "tat",
-    "pari"
+    "pariʔ"
    ],
    "bb_row": 2102,
-   "bb_token": "Tat•pari",
+   "bb_token": "Tát•pari'",
    "boundaries": [
     [
      3,
@@ -1356,7 +1829,7 @@
     "pitit"
    ],
    "bb_row": 2048,
-   "bb_token": "Tat•pitit",
+   "bb_token": "Tat•pítit",
    "boundaries": [
     [
      3,
@@ -1376,13 +1849,39 @@
    ]
   },
   {
+   "bb_english": "I (have) heard it",
+   "bb_parts": [
+    "tatur",
+    "atkuʔ"
+   ],
+   "bb_row": 2464,
+   "bb_token": "tatur•átku'",
+   "boundaries": [
+    [
+     6,
+     6
+    ]
+   ],
+   "lesson": 14,
+   "page": 90,
+   "target": "tatuuratkuʔ",
+   "targets": [
+    {
+     "english": "hear, listen to; hear from. ; understand.",
+     "entry_id": "SK-atkaquk-p19-0245",
+     "form_number": 1,
+     "type": "form"
+    }
+   ]
+  },
+  {
    "bb_english": "I saved it, kept it",
    "bb_parts": [
     "tatur",
     "iwit"
    ],
    "bb_row": 2360,
-   "bb_token": "tatur•iwit",
+   "bb_token": "tatur•íwit",
    "boundaries": [
     [
      6,
@@ -1402,13 +1901,13 @@
    ]
   },
   {
-   "bb_english": "I saw it.",
+   "bb_english": "I saw it (have seen it).",
    "bb_parts": [
     "tatut",
     "irit"
    ],
-   "bb_row": 2518,
-   "bb_token": "Tatut•erit",
+   "bb_row": 2507,
+   "bb_token": "Tatut•érit",
    "boundaries": [
     [
      6,
@@ -1416,7 +1915,7 @@
     ]
    ],
    "lesson": 14,
-   "page": 94,
+   "page": 93,
    "target": "tatuutiirit",
    "targets": [
     {
@@ -1428,21 +1927,21 @@
    ]
   },
   {
-   "bb_english": "I saw it (have seen it)",
+   "bb_english": "I saw it.",
    "bb_parts": [
     "tatut",
     "irit"
    ],
-   "bb_row": 2396,
-   "bb_token": "tatut•erit",
+   "bb_row": 2518,
+   "bb_token": "Tatut•érit",
    "boundaries": [
     [
      6,
      6
     ]
    ],
-   "lesson": 13,
-   "page": 85,
+   "lesson": 14,
+   "page": 94,
    "target": "tatuutiirit",
    "targets": [
     {
@@ -1480,6 +1979,57 @@
    ]
   },
   {
+   "bb_english": "I saw it (have seen it)",
+   "bb_parts": [
+    "tatut",
+    "irit"
+   ],
+   "bb_row": 2396,
+   "bb_token": "tatut•érit",
+   "boundaries": [
+    [
+     6,
+     6
+    ]
+   ],
+   "lesson": 13,
+   "page": 85,
+   "target": "tatuutiirit",
+   "targets": [
+    {
+     "english": "see, look at. ; check on, see to, as when tending animals.",
+     "entry_id": "SK-iirik-p408-3912",
+     "form_number": 1,
+     "type": "form"
+    }
+   ]
+  },
+  {
+   "bb_english": "he's a thief",
+   "bb_parts": [
+    "ta",
+    "utuʔ"
+   ],
+   "bb_row": 2366,
+   "bb_token": "tá•utu'",
+   "boundaries": [
+    [
+     2,
+     3
+    ]
+   ],
+   "lesson": 12,
+   "page": 83,
+   "target": "taʔuutuʔ",
+   "targets": [
+    {
+     "english": "thief; robber.",
+     "entry_id": "SK-taquutuq-p153-3003",
+     "type": "headword"
+    }
+   ]
+  },
+  {
    "bb_english": "He, she ate.",
    "bb_parts": [
     "ti",
@@ -1487,7 +2037,7 @@
     "kawaac"
    ],
    "bb_row": 2633,
-   "bb_token": "Ti•ha•kawaats",
+   "bb_token": "Ti•há•kawaats",
    "boundaries": [
     [
      2,
@@ -1515,10 +2065,10 @@
    "bb_parts": [
     "ti",
     "hih",
-    "kacaku"
+    "kacakuʔ"
    ],
    "bb_row": 2301,
-   "bb_token": "ti•hih•katsaku",
+   "bb_token": "ti•hih•kátsaku'",
    "boundaries": [
     [
      2,
@@ -1534,7 +2084,7 @@
    "target": "tihiihkacaakuʔ",
    "targets": [
     {
-     "english": "hoe weeds, grass; chop, cut down grass or weeds , as with a hoe .",
+     "english": "hoe weeds, grass; chop, cut down grass or weeds, as with a hoe.",
      "entry_id": "SK-hiihkacak-p389-3819",
      "form_number": 3,
      "type": "form"
@@ -1548,7 +2098,7 @@
     "hirasa"
    ],
    "bb_row": 2337,
-   "bb_token": "ti•hirasa",
+   "bb_token": "ti•hírasa",
    "boundaries": [
     [
      2,
@@ -1560,7 +2110,7 @@
    "target": "tihirasaa",
    "targets": [
     {
-     "english": "be first, in the lead. ; be the leader of , as a social or political leader.",
+     "english": "be first, in the lead. ; be the leader of, as a social or political leader.",
      "entry_id": "SK-hirasaah-p390-3869",
      "form_number": 2,
      "type": "form"
@@ -1601,7 +2151,7 @@
     "hac"
    ],
    "bb_row": 2129,
-   "bb_token": "ti•hura•hats",
+   "bb_token": "tí•hura•hats",
    "boundaries": [
     [
      2,
@@ -1625,6 +2175,37 @@
    ]
   },
   {
+   "bb_english": "No, my grandfather has passed away.",
+   "bb_parts": [
+    "ti",
+    "hura",
+    "hac"
+   ],
+   "bb_row": 2140,
+   "bb_token": "tí•hura•hats",
+   "boundaries": [
+    [
+     2,
+     3
+    ],
+    [
+     6,
+     7
+    ]
+   ],
+   "lesson": 7,
+   "page": 61,
+   "target": "tihurahac",
+   "targets": [
+    {
+     "english": "disappear. ; die, pass away.",
+     "entry_id": "SK-hurahac-p47-0798",
+     "form_number": 2,
+     "type": "form"
+    }
+   ]
+  },
+  {
    "bb_english": "it's cloudy",
    "bb_parts": [
     "ti",
@@ -1632,7 +2213,7 @@
     "katasa"
    ],
    "bb_row": 1980,
-   "bb_token": "ti•tska•katasa",
+   "bb_token": "ti•tska•kátasa",
    "boundaries": [
     [
      3,
@@ -1683,11 +2264,11 @@
   {
    "bb_english": "he is playing",
    "bb_parts": [
-    "tʔikuʔh",
+    "tʔikuh",
     "takuʔ"
    ],
    "bb_row": 2087,
-   "bb_token": "t'eku'h•taku'",
+   "bb_token": "t'ekúh•taku'",
    "boundaries": [
     [
      5,
@@ -1699,7 +2280,7 @@
    "target": "tiikuhtakuʔ",
    "targets": [
     {
-     "english": "play, as children .",
+     "english": "play, as children.",
      "entry_id": "SK-akuhtaku-p11-0128",
      "form_number": 2,
      "type": "form"
@@ -1715,7 +2296,7 @@
     "waktaʔ"
    ],
    "bb_row": 2524,
-   "bb_token": "ti•kis•kata•wakta'",
+   "bb_token": "ti•kis•kata•wákta'",
    "boundaries": [
     [
      2,
@@ -1735,7 +2316,7 @@
    "target": "tikiiskatawaktaʔ",
    "targets": [
     {
-     "english": "neigh; whinny, as a horse .",
+     "english": "neigh; whinny, as a horse.",
      "entry_id": "SK-kiiskatawakta/taa-p92-1734",
      "form_number": 2,
      "type": "form"
@@ -1749,7 +2330,7 @@
     "kikat"
    ],
    "bb_row": 2067,
-   "bb_token": "ti•kikat",
+   "bb_token": "ti•kíkat",
    "boundaries": [
     [
      2,
@@ -1769,13 +2350,39 @@
    ]
   },
   {
+   "bb_english": "he, she, it is crying",
+   "bb_parts": [
+    "ti",
+    "kikat"
+   ],
+   "bb_row": 2208,
+   "bb_token": "ti•kíkat",
+   "boundaries": [
+    [
+     2,
+     2
+    ]
+   ],
+   "lesson": 8,
+   "page": 67,
+   "target": "tikikat",
+   "targets": [
+    {
+     "english": "cry; mourn. ; howl, as a coyote or dog.",
+     "entry_id": "SK-kikak-p93-1767",
+     "form_number": 2,
+     "type": "form"
+    }
+   ]
+  },
+  {
    "bb_english": "I'm thirsty",
    "bb_parts": [
     "tiku",
     "kiktit"
    ],
    "bb_row": 2761,
-   "bb_token": "tiku•kiktit",
+   "bb_token": "tíku•kiktit",
    "boundaries": [
     [
      4,
@@ -1790,6 +2397,58 @@
      "english": "be thirsty, want to drink.",
      "entry_id": "SK-kiiktik-p90-1698",
      "form_number": 1,
+     "type": "form"
+    }
+   ]
+  },
+  {
+   "bb_english": "he 's singing",
+   "bb_parts": [
+    "ti",
+    "rarukuʔ"
+   ],
+   "bb_row": 2090,
+   "bb_token": "tí•raruku'",
+   "boundaries": [
+    [
+     2,
+     2
+    ]
+   ],
+   "lesson": 6,
+   "page": 57,
+   "target": "tiraaruukuʔ",
+   "targets": [
+    {
+     "english": "sing",
+     "entry_id": "SK-raaraquk-p121-2362",
+     "form_number": 3,
+     "type": "form"
+    }
+   ]
+  },
+  {
+   "bb_english": "he's looking for it",
+   "bb_parts": [
+    "ti",
+    "raspiʔ"
+   ],
+   "bb_row": 2188,
+   "bb_token": "tí•raspe'",
+   "boundaries": [
+    [
+     2,
+     2
+    ]
+   ],
+   "lesson": 8,
+   "page": 66,
+   "target": "tiraspiiʔ",
+   "targets": [
+    {
+     "english": "look for, seek.",
+     "entry_id": "SK-raspii-p138-2731",
+     "form_number": 2,
      "type": "form"
     }
    ]
@@ -1821,31 +2480,26 @@
    ]
   },
   {
-   "bb_english": "he climbed up (the tree)",
+   "bb_english": "he (has) hit it",
    "bb_parts": [
     "ti",
-    "ta",
-    "ʔat"
+    "tahit"
    ],
-   "bb_row": 2258,
-   "bb_token": "ti•ta•'at",
+   "bb_row": 2480,
+   "bb_token": "tí•tahit",
    "boundaries": [
     [
      2,
      2
-    ],
-    [
-     4,
-     5
     ]
    ],
-   "lesson": 9,
-   "page": 71,
-   "target": "titaʔat",
+   "lesson": 14,
+   "page": 91,
+   "target": "titahit",
    "targets": [
     {
-     "english": "climb, climb up, as a vertical surface like a tree, pole, or mountain side.",
-     "entry_id": "SK-taqat-p153-2994",
+     "english": "hit, strike, whip with an object or instrument, as a stick, whip, or hand; count coup on.",
+     "entry_id": "SK-tahik-p156-3037",
      "form_number": 2,
      "type": "form"
     }
@@ -1859,7 +2513,7 @@
     "rihu"
    ],
    "bb_row": 2469,
-   "bb_token": "ti•waka•rihu",
+   "bb_token": "ti•waká•rihu",
    "boundaries": [
     [
      2,
@@ -1886,10 +2540,10 @@
    "bb_english": "The bird is singing.",
    "bb_parts": [
     "ti",
-    "waktahu"
+    "waktahuʔ"
    ],
    "bb_row": 2521,
-   "bb_token": "ti•waktahu",
+   "bb_token": "ti•wáktahu'",
    "boundaries": [
     [
      2,
@@ -1915,7 +2569,7 @@
     "ariʔ"
    ],
    "bb_row": 2077,
-   "bb_token": "ti•ari'",
+   "bb_token": "tí•ari'",
    "boundaries": [
     [
      2,
@@ -1935,13 +2589,39 @@
    ]
   },
   {
+   "bb_english": "he is becoming",
+   "bb_parts": [
+    "ti",
+    "ariʔ"
+   ],
+   "bb_row": 2312,
+   "bb_token": "tí•ari'",
+   "boundaries": [
+    [
+     2,
+     3
+    ]
+   ],
+   "lesson": 10,
+   "page": 75,
+   "target": "tiʔaariʔ",
+   "targets": [
+    {
+     "english": "become.",
+     "entry_id": "SK-aar-p351-3596",
+     "form_number": 3,
+     "type": "form"
+    }
+   ]
+  },
+  {
    "bb_english": "it has disappeared",
    "bb_parts": [
     "ti",
     "ʔisat"
    ],
    "bb_row": 2254,
-   "bb_token": "ti•'isat",
+   "bb_token": "tí•'isat",
    "boundaries": [
     [
      2,
@@ -1961,13 +2641,39 @@
    ]
   },
   {
+   "bb_english": "No, the bird has disappeared.",
+   "bb_parts": [
+    "ti",
+    "ʔisat"
+   ],
+   "bb_row": 2261,
+   "bb_token": "tí•'isat",
+   "boundaries": [
+    [
+     2,
+     3
+    ]
+   ],
+   "lesson": 9,
+   "page": 71,
+   "target": "tiʔiisat",
+   "targets": [
+    {
+     "english": "go out of sight, disappear, disappear over, as when going over a hill; vanish, as when going off into the distance. ; go down, set, as the sun on the horizon.",
+     "entry_id": "SK-iisat-p408-3915",
+     "form_number": 2,
+     "type": "form"
+    }
+   ]
+  },
+  {
    "bb_english": "it smells good",
    "bb_parts": [
     "tuh",
     "kaharawiri"
    ],
    "bb_row": 2765,
-   "bb_token": "tuh•kaharawere",
+   "bb_token": "túh•kaharawere",
    "boundaries": [
     [
      3,
@@ -1987,13 +2693,39 @@
    ]
   },
   {
+   "bb_english": "Ah, that smells good.",
+   "bb_parts": [
+    "tuh",
+    "kaharawiri"
+   ],
+   "bb_row": 2810,
+   "bb_token": "túh•kaharawere",
+   "boundaries": [
+    [
+     3,
+     4
+    ]
+   ],
+   "lesson": 11,
+   "page": 80,
+   "target": "tuuhkahaarawirii",
+   "targets": [
+    {
+     "english": "smell nice; have a nice or pleasant odor.",
+     "entry_id": "SK-kahaarawiriir-p76-1373",
+     "form_number": 2,
+     "type": "form"
+    }
+   ]
+  },
+  {
    "bb_english": "he ran away",
    "bb_parts": [
-    "tuʔh",
+    "tuh",
     "kuksas"
    ],
    "bb_row": 2259,
-   "bb_token": "tu'h•kuksas",
+   "bb_token": "túh•kuksas",
    "boundaries": [
     [
      3,
@@ -2015,11 +2747,11 @@
   {
    "bb_english": "The fox ran away.",
    "bb_parts": [
-    "tuʔh",
+    "tuh",
     "kuksas"
    ],
    "bb_row": 2281,
-   "bb_token": "tu'h•kuksas",
+   "bb_token": "túh•kuksas",
    "boundaries": [
     [
      3,
@@ -2039,13 +2771,39 @@
    ]
   },
   {
+   "bb_english": "No, the man heard the bear.",
+   "bb_parts": [
+    "tur",
+    "atkuʔ"
+   ],
+   "bb_row": 2474,
+   "bb_token": "tur•átku'",
+   "boundaries": [
+    [
+     4,
+     4
+    ]
+   ],
+   "lesson": 14,
+   "page": 91,
+   "target": "tuuratkuʔ",
+   "targets": [
+    {
+     "english": "hear, listen to; hear from. ; understand.",
+     "entry_id": "SK-atkaquk-p19-0245",
+     "form_number": 2,
+     "type": "form"
+    }
+   ]
+  },
+  {
    "bb_english": "he is looking at it",
    "bb_parts": [
     "tut",
     "irikuʔ"
    ],
    "bb_row": 2461,
-   "bb_token": "tut•eriku'",
+   "bb_token": "tut•ériku'",
    "boundaries": [
     [
      4,
@@ -2071,7 +2829,7 @@
     "urikut"
    ],
    "bb_row": 2481,
-   "bb_token": "tut•urikut",
+   "bb_token": "tut•uríkut",
    "boundaries": [
     [
      4,
@@ -2091,6 +2849,6 @@
    ]
   }
  ],
- "n": 77,
+ "n": 105,
  "source": "blue_book_attestations seamed tokens"
 }

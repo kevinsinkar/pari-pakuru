@@ -7,12 +7,12 @@
  "affixes": 57,
  "blue_book_seams": {
   "alignment_failed": 3,
-  "ambiguous_target": 43,
+  "ambiguous_target": 45,
   "certain": 105,
   "english_mismatch": 49,
-  "no_target": 517,
-  "seamed_tokens": 726,
-  "skipped_ocr_spacing": 6,
+  "no_target": 522,
+  "seamed_tokens": 731,
+  "skipped_ocr_spacing": 4,
   "too_short": 3
  },
  "classes_AB": {

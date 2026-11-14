@@ -106,17 +106,17 @@ def sec_template(d):
         ["13 Agent PL / A.POSS / preverb", "rak- PL; ir- A.POSS; preverb", f"*{d.A('to drink it', IND, '1pl_excl')}*; " + go("kutakawirahuʔ"), "GO p.35–36"],
         ["15 Patient", "ku- 1.P, a- 2.P, Ø 3.P, ak- 3.PL.AN.P", f"*{d.F(KUUT, 1)}* 'I died' (*ku-*); App.1 *{d.A('to be sick', IND, '2sg')}* (*a-*)", "GO p.35 Table 9"],
         ["16 Infinitive ku-", "ra- ... ku-", f"App.1 *{d.A('to go', INF, '3sg')}*", "GO p.34"],
-        ["17 Physical possession", "ri-", go("taruuraariit"), "GO p.36"],
+        ["17 Physical possession", "ri-", go("taruuraarit"), "GO p.36"],
         ["18 Benefactive / P.POSS / preverb", "ut- BEN, uur- P.POSS, preverbs ut-/uur-", f"*{d.F(AAR_DO, 2)}* 'he did it' (ut-); *{d.F('SK-hiir-p389-3832', 2)}* 'he is good' (uur-)", "GO p.31, 37"],
         ["19 Sequential", "i-", "*kusaahkikat* 'he might cry' < kuus- POT.1/3.A + Ø- 3.A + i- SEQ + ar- EV + kikak 'cry' + -Ø PERF (GO p.38, quoted as extracted)", "GO p.38"],
         ["20 Aorist / jussive", "uks-", go("taatat") + " vs Parks *tatuksat* 'I went' (GO p.38)", "GO p.38"],
-        ["21 Adverbials", "uhuur- 'now, finally', awaahc- 'even'", "Parks *tuksuhuubwíitit* 'let me sit down a while!' (GO p.39, OCR b = h)", "GO p.39"],
-        ["22–24 Plurals", "ak-, raar-, ir-", go("tiiraspaatasit") + "; " + go("tiiraaraspaatasit"), "GO p.35–36 Table 10"],
+        ["21 Adverbials", "uhuur- 'now, finally', awahc- 'even'", "Parks *tuksuhuubwíitit* 'let me sit down a while!' (GO p.39, OCR b = h)", "GO p.39"],
+        ["22–24 Plurals", "ak-, raar-, ir-", go("tiiraspaatasit") + "; " + go("tiraaraspaatasit"), "GO p.35–36 Table 10"],
         ["25 Incorporated noun", "body parts, nature, food, cultural products (± raar- PL)", go("ahikiistacakipu") + f"; dictionary *{d.F(IKSKAA, 2)}* 'his hand is in it'", "GO p.43"],
         ["26 Stem", "root ± preverb ± stem elements", f"*{d.W(AT)}*, *{d.W(KAAQAT)}*, *{d.W(RAQUK)}*", "GO p.31, 44"],
         ["27 Aspect", "-Ø/-his PERF, -:hus IMPF, -ta INT, -itik INCH, -uukuʔ HAB", f"*{d.F(KIKAK, 2)}* / *{d.F(KIKAK, 3)}* / *{d.F(KIKAK, 5)}*", "GO p.45–48 Table 17"],
         ["28 Subordination", "class 1 -a, 2 -i, 3 change, 4 Ø, D -u, L -wi", f"*{d.F(AT, 4)}*, *{d.F(ARIK, 4)}*, *{d.F(RAQUK, 4)}*, *{d.F(WIITIK, 4)}*, *{d.F(PAHAAT, 4)}*, *{d.F(KAA, 4)}*", "GO p.46 Table 17"],
-        ["29–30 Intentive", "-ta, -rit INT.SUB", go("wiiruuhaasitiiʔ"), "GO p.47–48"],
+        ["29–30 Intentive", "-ta, -rit INT.SUB", go("wiiruuhaasitikstarit"), "GO p.47–48"],
     ]
     return "\n".join([
         "Parks's Table 6 (GO p.33): **proclitics → inner prefixes → incorporated noun → STEM → suffixes**; Table 7 numbers the inner slots 9–26. "
@@ -160,7 +160,7 @@ def sec_aspect(d):
         "Parks GO p.44–48 (Tables 16–17): perfective is unmarked word-finally (*-his* surfaces only before *-ta*), imperfective is *-:hus* (final *s* dropped → *-huʔ*), "
         "intentive *-ta*, habitual *-uukuʔ*, inchoative *-itik*. Subordinate perfectives take a class-specific ending, which is why Parks assigns each verb a class.", "",
         _md(["Stem", "Class", "3sg PERF (form 2)", "IMPF (form 3)", "INT (form 5)", "GER (form 4)", "Parks"], rows), "",
-        "Parks's own illustrations: *tikacat* 'he cut it' / *tikacaakuʔ* 'he is cutting it' (GO p.47); *tikíkat* / *tikikakísta* 'he is going to cry' (GO p.46); "
+        "Parks's own illustrations: *tikacat* 'he cut it' / *tikacaakuʔ* 'he is cutting it' (GO p.47); *tikikat* / *tikikaksta* 'he is going to cry' (GO p.46); "
         f"descriptive *tipahaaʔat* 'it is red' / *tipahaatuksta* / *iriirapahaattu* (GO p.49). Blue Book: {d.bbq(97, 'drop off')} (L15); "
         f"{d.bbq(108, 'suffix +ta')} (L19)."])
 
@@ -255,7 +255,7 @@ def rev_conflicts(d):
         f"'it is red': BB *ti pahaat* (L2 p.33) vs Parks *{d.F(PAHAAT, 2)}* (p.107; GO p.49). BB omits the reduplicated *-ʔa-* of Class I descriptives.",
         f"'he is doing it': BB *tut•ari'* (L6 p.56) vs Parks 3sg perfective *{d.F(AAR_DO, 2)}*, imperfective *{d.F(AAR_DO, 3)}*. BB glosses an imperfective form as the citation form.",
         "nominaliser: BB *hiri* (L13 p.88–89) vs Parks *irii-* (GO p.42). Initial *h* and vowel length.",
-        "commands: BB *Suks•paku'* (L5 p.53) vs Parks *i-* CONT + *s-* + *uks-* (GO p.38, *sukskirikaʔaaʔ*). BB does not write the contingent *i-*.",
+        "commands: BB *Suks•paku'* (L5 p.53) vs Parks *i-* CONT + *s-* + *uks-* (GO p.38, *sukskirikaʔaa*). BB does not write the contingent *i-*.",
         "spelling rules: BB 'k drops off before p' (L3 p.41) and 's + s → s•ts' (L17 p.102) have no counterpart among Parks's 24 rules; BB 'i + a → e' corresponds to Parks Rule 7 (→ ii); BB 'w → p' is attested in 115 headwords but unnumbered in Parks.",
         "BB *tsau* 'face' (L2 p.36 *tskau*) vs Parks *" + d.W('SK-ckaquq-p30-0460') + "*; BB *kskitsu'* 'finger' (L5 p.52) vs Parks *" + d.W('SK-ikskiicuq-p63-1094') + "*: BB drops the initial *i-* of *icka-*/*iks-* in these words; Parks does so only in *ckaʔuʔ*, *cusuʔ*, *caahiks*.",
         "Parks Table 4 (GO p.30) prints the instrumental/locative suffix as *-biriʔ* (OCR); dictionary etymologies have *-hiriʔ*, *-piriʔ*, *-iriʔ*.",

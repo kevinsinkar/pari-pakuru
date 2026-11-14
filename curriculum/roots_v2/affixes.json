@@ -7834,7 +7834,11 @@
     "person": null,
     "verb_class": "1-i"
    },
-   "example": null,
+   "example": {
+    "form": "ratkuhurasi",
+    "go_page": 46,
+    "translation": "for me to find him"
+   },
    "form": "-i",
    "label": "SUB.1-i",
    "notes": "Class 1-i: -i (imperfective)",
@@ -7852,7 +7856,11 @@
     "person": null,
     "verb_class": "2"
    },
-   "example": null,
+   "example": {
+    "form": "ratkuhurasi",
+    "go_page": 46,
+    "translation": "for me to find him"
+   },
    "form": "-i",
    "label": "SUB.2",
    "notes": "Class 2: subordinate suffix -i",
@@ -7870,7 +7878,11 @@
     "person": null,
     "verb_class": "2-i"
    },
-   "example": null,
+   "example": {
+    "form": "ratkuhurasi",
+    "go_page": 46,
+    "translation": "for me to find him"
+   },
    "form": "-i",
    "label": "SUB.2-i",
    "notes": "Class 2-i: -i (imperfective)",
@@ -7888,7 +7900,11 @@
     "person": null,
     "verb_class": "u"
    },
-   "example": null,
+   "example": {
+    "form": "iriiruurakuurahuraaru",
+    "go_page": 44,
+    "translation": "whatever the kind of animal was,' that is, 'all kinds of animals"
+   },
    "form": "-u",
    "label": "SUB.u",
    "notes": "Descriptive verb: suffix -u",
@@ -7907,7 +7923,7 @@
     "verb_class": "wi"
    },
    "example": {
-    "form": "tuciraahawista",
+    "form": "tuctiraahawista",
     "go_page": 50,
     "translation": "it is going to be tilted"
    },
@@ -7925,9 +7941,9 @@
    "category": "inflectional affix (labelled in Parks's worked examples)",
    "constraints": {},
    "example": {
-    "form": "tiiraspaatasit",
-    "go_page": 35,
-    "translation": "they (COLL) set out"
+    "form": "tuuricaahiksii",
+    "go_page": 32,
+    "translation": "he is a good-looking person"
    },
    "form": "Ø-",
    "label": "3.A",
@@ -7936,8 +7952,8 @@
     "name": "not in the slot table",
     "number": null
    },
-   "source": "Parks, Grammatical Overview, worked examples on p. 35, 36, 38, 39, 41, 42, 43, 46, 48, 49, 50",
-   "worked_examples_in_grammatical_overview": 38
+   "source": "Parks, Grammatical Overview, worked examples on p. 32, 35, 36, 38, 39, 40, 41, 42, 43, 44, 46, 47, 48, 49, 50",
+   "worked_examples_in_grammatical_overview": 54
   },
   {
    "category": "inflectional affix (labelled in Parks's worked examples)",
@@ -7954,8 +7970,8 @@
     "name": "not in the slot table",
     "number": null
    },
-   "source": "Parks, Grammatical Overview, worked examples on p. 31, 32, 36, 37, 38, 39, 40, 41, 42",
-   "worked_examples_in_grammatical_overview": 29
+   "source": "Parks, Grammatical Overview, worked examples on p. 31, 32, 35, 36, 37, 38, 39, 40, 41, 42, 43, 46, 50",
+   "worked_examples_in_grammatical_overview": 45
   },
   {
    "category": "inflectional affix (labelled in Parks's worked examples)",
@@ -7991,42 +8007,42 @@
     "number": null
    },
    "source": "Parks, Grammatical Overview, worked examples on p. 38, 40, 41, 42, 43, 48",
-   "worked_examples_in_grammatical_overview": 8
+   "worked_examples_in_grammatical_overview": 9
   },
   {
    "category": "inflectional affix (labelled in Parks's worked examples)",
    "constraints": {},
    "example": {
-    "form": "wiiruuhaasitiiʔkustarit",
-    "go_page": 48,
-    "translation": "when it is going to be happening"
+    "form": "wiirakuhuraahkiwatat",
+    "go_page": 41,
+    "translation": "when the season changes"
    },
-   "form": "-hus",
-   "label": "IMPF",
+   "form": "-Ø",
+   "label": "SUB.4",
    "notes": null,
    "slot": {
     "name": "not in the slot table",
     "number": null
    },
-   "source": "Parks, Grammatical Overview, worked examples on p. 48",
+   "source": "Parks, Grammatical Overview, worked examples on p. 41, 42, 46",
    "worked_examples_in_grammatical_overview": 7
   },
   {
    "category": "inflectional affix (labelled in Parks's worked examples)",
    "constraints": {},
    "example": {
-    "form": "tiiraspaatasit",
-    "go_page": 35,
-    "translation": "they (COLL) set out"
+    "form": "wiitatiiksaʔ",
+    "go_page": 31,
+    "translation": "I have come"
    },
-   "form": "Ø",
-   "label": "PERF",
+   "form": "uks-",
+   "label": "AOR",
    "notes": null,
    "slot": {
     "name": "not in the slot table",
     "number": null
    },
-   "source": "Parks, Grammatical Overview, worked examples on p. 35, 43, 46, 50",
+   "source": "Parks, Grammatical Overview, worked examples on p. 31, 38, 43, 48",
    "worked_examples_in_grammatical_overview": 7
   },
   {
@@ -8051,25 +8067,61 @@
    "category": "inflectional affix (labelled in Parks's worked examples)",
    "constraints": {},
    "example": {
-    "form": "wiitatiiksaʔ",
-    "go_page": 31,
-    "translation": "I have come"
+    "form": "wiiruuhaasitikustarit",
+    "go_page": 48,
+    "translation": "when it is going to be happening"
    },
-   "form": "uks-",
-   "label": "AOR",
+   "form": "-hus",
+   "label": "IMPF",
    "notes": null,
    "slot": {
     "name": "not in the slot table",
     "number": null
    },
-   "source": "Parks, Grammatical Overview, worked examples on p. 31, 38, 48",
-   "worked_examples_in_grammatical_overview": 5
+   "source": "Parks, Grammatical Overview, worked examples on p. 48",
+   "worked_examples_in_grammatical_overview": 6
   },
   {
    "category": "inflectional affix (labelled in Parks's worked examples)",
    "constraints": {},
    "example": {
-    "form": "wiiruuhaasitiiʔ",
+    "form": "siwitirakuutiirit",
+    "go_page": 40,
+    "translation": "they (DU) wanted to see each other"
+   },
+   "form": "ku-",
+   "label": "INF.B",
+   "notes": null,
+   "slot": {
+    "name": "not in the slot table",
+    "number": null
+   },
+   "source": "Parks, Grammatical Overview, worked examples on p. 40, 41, 44, 46, 47",
+   "worked_examples_in_grammatical_overview": 6
+  },
+  {
+   "category": "inflectional affix (labelled in Parks's worked examples)",
+   "constraints": {},
+   "example": {
+    "form": "tikacaakuʔ",
+    "go_page": 47,
+    "translation": "he is cutting it"
+   },
+   "form": "-:hus",
+   "label": "IMPF",
+   "notes": null,
+   "slot": {
+    "name": "not in the slot table",
+    "number": null
+   },
+   "source": "Parks, Grammatical Overview, worked examples on p. 47, 48",
+   "worked_examples_in_grammatical_overview": 4
+  },
+  {
+   "category": "inflectional affix (labelled in Parks's worked examples)",
+   "constraints": {},
+   "example": {
+    "form": "wiiruuhaasitikstarit",
     "go_page": 48,
     "translation": "when it is going to occur"
    },
@@ -8087,18 +8139,54 @@
    "category": "inflectional affix (labelled in Parks's worked examples)",
    "constraints": {},
    "example": {
-    "form": "iiraaʔa",
-    "go_page": 42,
-    "translation": "when he came"
+    "form": "wiitatiiksaʔ",
+    "go_page": 31,
+    "translation": "I have come"
    },
-   "form": "-Ø",
-   "label": "SUB.4",
+   "form": "ir-",
+   "label": "PREV",
    "notes": null,
    "slot": {
     "name": "not in the slot table",
     "number": null
    },
-   "source": "Parks, Grammatical Overview, worked examples on p. 42",
+   "source": "Parks, Grammatical Overview, worked examples on p. 31, 38, 41, 42",
+   "worked_examples_in_grammatical_overview": 4
+  },
+  {
+   "category": "inflectional affix (labelled in Parks's worked examples)",
+   "constraints": {},
+   "example": {
+    "form": "sukskirikaʔaa",
+    "go_page": 38,
+    "translation": "wake up!"
+   },
+   "form": "uks-",
+   "label": "JUSS",
+   "notes": null,
+   "slot": {
+    "name": "not in the slot table",
+    "number": null
+   },
+   "source": "Parks, Grammatical Overview, worked examples on p. 38, 39",
+   "worked_examples_in_grammatical_overview": 4
+  },
+  {
+   "category": "inflectional affix (labelled in Parks's worked examples)",
+   "constraints": {},
+   "example": {
+    "form": "tuuricaahiksii",
+    "go_page": 32,
+    "translation": "he is a good-looking person"
+   },
+   "form": "uur-",
+   "label": "PREV",
+   "notes": null,
+   "slot": {
+    "name": "not in the slot table",
+    "number": null
+   },
+   "source": "Parks, Grammatical Overview, worked examples on p. 32, 42, 43, 47",
    "worked_examples_in_grammatical_overview": 4
   },
   {
@@ -8123,37 +8211,19 @@
    "category": "inflectional affix (labelled in Parks's worked examples)",
    "constraints": {},
    "example": {
-    "form": "wiitatiiksaʔ",
-    "go_page": 31,
-    "translation": "I have come"
+    "form": "raakuraarahu",
+    "go_page": 47,
+    "translation": "for them to be coming"
    },
-   "form": "ir-",
-   "label": "PREV",
+   "form": "-hus",
+   "label": "IMPF.SUB",
    "notes": null,
    "slot": {
     "name": "not in the slot table",
     "number": null
    },
-   "source": "Parks, Grammatical Overview, worked examples on p. 31, 41, 42",
-   "worked_examples_in_grammatical_overview": 3
-  },
-  {
-   "category": "inflectional affix (labelled in Parks's worked examples)",
-   "constraints": {},
-   "example": {
-    "form": "tuuricaahiksii",
-    "go_page": 32,
-    "translation": "he is a good-looking person"
-   },
-   "form": "uur-",
-   "label": "PREV",
-   "notes": null,
-   "slot": {
-    "name": "not in the slot table",
-    "number": null
-   },
-   "source": "Parks, Grammatical Overview, worked examples on p. 32, 42, 47",
-   "worked_examples_in_grammatical_overview": 3
+   "source": "Parks, Grammatical Overview, worked examples on p. 47",
+   "worked_examples_in_grammatical_overview": 2
   },
   {
    "category": "inflectional affix (labelled in Parks's worked examples)",
@@ -8177,7 +8247,7 @@
    "category": "inflectional affix (labelled in Parks's worked examples)",
    "constraints": {},
    "example": {
-    "form": "iriirapahaattu",
+    "form": "iriirapahaatu",
     "go_page": 49,
     "translation": "the one that is red"
    },
@@ -8195,7 +8265,7 @@
    "category": "inflectional affix (labelled in Parks's worked examples)",
    "constraints": {},
    "example": {
-    "form": "ahicikstaawariibusuku",
+    "form": "ahicikstaawariihusuku",
     "go_page": 48,
     "translation": "when they went to gather them"
    },
@@ -8207,24 +8277,6 @@
     "number": null
    },
    "source": "Parks, Grammatical Overview, worked examples on p. 48",
-   "worked_examples_in_grammatical_overview": 2
-  },
-  {
-   "category": "inflectional affix (labelled in Parks's worked examples)",
-   "constraints": {},
-   "example": {
-    "form": "siwitiirakuutiirit",
-    "go_page": 40,
-    "translation": "they (DU) wanted to see each other"
-   },
-   "form": "-Ø-",
-   "label": "3.A",
-   "notes": null,
-   "slot": {
-    "name": "not in the slot table",
-    "number": null
-   },
-   "source": "Parks, Grammatical Overview, worked examples on p. 40",
    "worked_examples_in_grammatical_overview": 2
   },
   {
@@ -8249,6 +8301,42 @@
    "category": "inflectional affix (labelled in Parks's worked examples)",
    "constraints": {},
    "example": {
+    "form": "ruukiitat",
+    "go_page": 38,
+    "translation": "let me go there"
+   },
+   "form": "ki-",
+   "label": "HORT",
+   "notes": null,
+   "slot": {
+    "name": "not in the slot table",
+    "number": null
+   },
+   "source": "Parks, Grammatical Overview, worked examples on p. 38",
+   "worked_examples_in_grammatical_overview": 2
+  },
+  {
+   "category": "inflectional affix (labelled in Parks's worked examples)",
+   "constraints": {},
+   "example": {
+    "form": "tiraaraspaatasit",
+    "go_page": 35,
+    "translation": "they (INDV) set out"
+   },
+   "form": "raar-",
+   "label": "3.P.INDV.A",
+   "notes": null,
+   "slot": {
+    "name": "not in the slot table",
+    "number": null
+   },
+   "source": "Parks, Grammatical Overview, worked examples on p. 35, 47",
+   "worked_examples_in_grammatical_overview": 2
+  },
+  {
+   "category": "inflectional affix (labelled in Parks's worked examples)",
+   "constraints": {},
+   "example": {
     "form": "tatiriiriikstahka",
     "go_page": 36,
     "translation": "he keeps his arrows in it"
@@ -8267,25 +8355,25 @@
    "category": "inflectional affix (labelled in Parks's worked examples)",
    "constraints": {},
    "example": {
-    "form": "sukskirikaʔaaʔ",
-    "go_page": 38,
-    "translation": "wake up!"
+    "form": "siwitirakuutiirit",
+    "go_page": 40,
+    "translation": "they (DU) wanted to see each other"
    },
-   "form": "uks-",
-   "label": "JUSS",
+   "form": "si-",
+   "label": "DU",
    "notes": null,
    "slot": {
     "name": "not in the slot table",
     "number": null
    },
-   "source": "Parks, Grammatical Overview, worked examples on p. 38",
+   "source": "Parks, Grammatical Overview, worked examples on p. 40, 43",
    "worked_examples_in_grammatical_overview": 2
   },
   {
    "category": "inflectional affix (labelled in Parks's worked examples)",
    "constraints": {},
    "example": {
-    "form": "taruuraariit",
+    "form": "taruuraarit",
     "go_page": 36,
     "translation": "he has it, possess it (something standing)"
    },
@@ -8321,7 +8409,7 @@
    "category": "inflectional affix (labelled in Parks's worked examples)",
    "constraints": {},
    "example": {
-    "form": "witiicikstaawariibusuukuʔ rakis",
+    "form": "witiicikstaawariihusuukuʔ rakis",
     "go_page": 48,
     "translation": "they used to gather wood"
    },
@@ -8357,25 +8445,7 @@
    "category": "inflectional affix (labelled in Parks's worked examples)",
    "constraints": {},
    "example": {
-    "form": "tuuricaahiksii",
-    "go_page": 32,
-    "translation": "he is a good-looking person"
-   },
-   "form": "-Ø",
-   "label": "3.A",
-   "notes": null,
-   "slot": {
-    "name": "not in the slot table",
-    "number": null
-   },
-   "source": "Parks, Grammatical Overview, worked examples on p. 32",
-   "worked_examples_in_grammatical_overview": 1
-  },
-  {
-   "category": "inflectional affix (labelled in Parks's worked examples)",
-   "constraints": {},
-   "example": {
-    "form": "riitapaawarikiikusitit rikucki",
+    "form": "riitapaawarikusitit rikucki",
     "go_page": 48,
     "translation": "I began shooting birds"
    },
@@ -8433,7 +8503,7 @@
     "go_page": 39,
     "translation": "don't be long!"
    },
-   "form": "karíi-",
+   "form": "karii-",
    "label": "EMPH.NEG",
    "notes": null,
    "slot": {
@@ -8447,25 +8517,7 @@
    "category": "inflectional affix (labelled in Parks's worked examples)",
    "constraints": {},
    "example": {
-    "form": "ruukiitaat",
-    "go_page": 38,
-    "translation": "let me go there"
-   },
-   "form": "ki-",
-   "label": "HORT",
-   "notes": null,
-   "slot": {
-    "name": "not in the slot table",
-    "number": null
-   },
-   "source": "Parks, Grammatical Overview, worked examples on p. 38",
-   "worked_examples_in_grammatical_overview": 1
-  },
-  {
-   "category": "inflectional affix (labelled in Parks's worked examples)",
-   "constraints": {},
-   "example": {
-    "form": "asaakiʔ",
+    "form": "asaaki",
     "go_page": 31,
     "translation": "dog"
    },
@@ -8519,24 +8571,6 @@
    "category": "inflectional affix (labelled in Parks's worked examples)",
    "constraints": {},
    "example": {
-    "form": "siwitiirakuutiirit",
-    "go_page": 40,
-    "translation": "they (DU) wanted to see each other"
-   },
-   "form": "ku-",
-   "label": "INF.B",
-   "notes": null,
-   "slot": {
-    "name": "not in the slot table",
-    "number": null
-   },
-   "source": "Parks, Grammatical Overview, worked examples on p. 40",
-   "worked_examples_in_grammatical_overview": 1
-  },
-  {
-   "category": "inflectional affix (labelled in Parks's worked examples)",
-   "constraints": {},
-   "example": {
     "form": "aruusaʔ",
     "go_page": 38,
     "translation": "you must have seen the horse"
@@ -8573,25 +8607,7 @@
    "category": "inflectional affix (labelled in Parks's worked examples)",
    "constraints": {},
    "example": {
-    "form": "tiiraaraspaatasit",
-    "go_page": 35,
-    "translation": "they (INDV) set out"
-   },
-   "form": "raar-",
-   "label": "3.P.INDV.A",
-   "notes": null,
-   "slot": {
-    "name": "not in the slot table",
-    "number": null
-   },
-   "source": "Parks, Grammatical Overview, worked examples on p. 35",
-   "worked_examples_in_grammatical_overview": 1
-  },
-  {
-   "category": "inflectional affix (labelled in Parks's worked examples)",
-   "constraints": {},
-   "example": {
-    "form": "ciksuhuurawaciiruutit",
+    "form": "ciksuhuurawaciruutit",
     "go_page": 38,
     "translation": "let’s go outside now!"
    },
@@ -8609,18 +8625,18 @@
    "category": "inflectional affix (labelled in Parks's worked examples)",
    "constraints": {},
    "example": {
-    "form": "siwitiirakuutiirit",
-    "go_page": 40,
-    "translation": "they (DU) wanted to see each other"
+    "form": "tiihatuksitkaspaawaa",
+    "go_page": 38,
+    "translation": "I must have been eating in my sleep"
    },
-   "form": "si-",
-   "label": "DU",
+   "form": "tiir-",
+   "label": "INFR",
    "notes": null,
    "slot": {
     "name": "not in the slot table",
     "number": null
    },
-   "source": "Parks, Grammatical Overview, worked examples on p. 40",
+   "source": "Parks, Grammatical Overview, worked examples on p. 38",
    "worked_examples_in_grammatical_overview": 1
   },
   {
@@ -8681,7 +8697,7 @@
    "category": "inflectional affix (labelled in Parks's worked examples)",
    "constraints": {},
    "example": {
-    "form": "riitapaawarikiikusitit rikucki",
+    "form": "riitapaawarikusitit rikucki",
     "go_page": 48,
     "translation": "I began shooting birds"
    },
@@ -8699,36 +8715,18 @@
    "category": "inflectional affix (labelled in Parks's worked examples)",
    "constraints": {},
    "example": {
-    "form": "tiruʔ",
-    "go_page": 46,
-    "translation": "he made it"
+    "form": "tiihatuksitkaspaawaa",
+    "go_page": 38,
+    "translation": "I must have been eating in my sleep"
    },
-   "form": "Ø",
-   "label": "SUB.3",
+   "form": "waawa-",
+   "label": "DIST",
    "notes": null,
    "slot": {
     "name": "not in the slot table",
     "number": null
    },
-   "source": "Parks, Grammatical Overview, worked examples on p. 46",
-   "worked_examples_in_grammatical_overview": 1
-  },
-  {
-   "category": "inflectional affix (labelled in Parks's worked examples)",
-   "constraints": {},
-   "example": {
-    "form": "iriirakikat",
-    "go_page": 46,
-    "translation": "where he cried"
-   },
-   "form": "Ø",
-   "label": "SUB.4",
-   "notes": null,
-   "slot": {
-    "name": "not in the slot table",
-    "number": null
-   },
-   "source": "Parks, Grammatical Overview, worked examples on p. 46",
+   "source": "Parks, Grammatical Overview, worked examples on p. 38",
    "worked_examples_in_grammatical_overview": 1
   }
  ],

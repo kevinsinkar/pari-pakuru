@@ -214,7 +214,8 @@ def extract_stem(headword):
     Examples:
         iksuʔ → iks-   (hand)
         paksuʔ → paks-  (head)
-        asaakiʔ → asaa- (dog; from asaa- + -kis → asaaki → asaakiʔ)
+        asaaki (dog; from asaa- + -kis) keeps its whole form. This note used to give the word
+        as "asaakiʔ", a misreading in the stored grammar chapter (corrected 2026-11-14).
         aruusaʔ → aruusa- (horse)
         akaruʔ → akar-  (house)
     """
@@ -240,11 +241,11 @@ def extract_stem(headword):
         # If stem ends in consonant, same
         return stem + "-", "-uʔ"
 
-    # -kis/-kiʔ (diminutive — surface as -ki or -kiʔ after sound changes)
-    if hw.endswith("kiʔ") or hw.endswith("kis"):
+    # -kis (diminutive). A final -kiʔ was treated the same way until 2026-11-14, on the strength of
+    # "asaakiʔ" and "riicikiʔ", which the grammar chapter does not print (it has asaaki, riiciki).
+    if hw.endswith("kis"):
         suffix = hw[-3:]
         stem = hw[:-3]
-        # -kis DIM sometimes surfaces with final ʔ (kiʔ)
         if len(stem) >= 2:
             return stem + "-", f"-{suffix}"
 

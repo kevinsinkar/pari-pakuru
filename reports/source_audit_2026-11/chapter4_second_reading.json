@@ -1,0 +1,1148 @@
+{
+ "made": "2026-11-14 10:59",
+ "readers": {
+  "first_reading": {
+   "tiles": 46,
+   "forms": 512
+  },
+  "second_reading": {
+   "tiles": 92,
+   "forms": 613
+  },
+  "distinct_words_per_page_in_both": 1390,
+  "only_in_first": 72,
+  "only_in_second": 8
+ },
+ "tally": {
+  "words": 538,
+  "three readings agree": 526,
+  "not a Skiri word": 12
+ },
+ "breakdown_lines": {
+  "breakdown lines": 97,
+  "as the first reader has it": 91,
+  "no such line in the first reading": 1,
+  "pieces both readers have otherwise": 0,
+  "left": 2
+ },
+ "applied": [
+  {
+   "page": 1,
+   "book_page": 29,
+   "stored": "-taar",
+   "now": "-raar",
+   "placed_by": "label, word after, word before",
+   "strings_changed": 2,
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 2,
+   "book_page": 30,
+   "stored": "uukaahpaa",
+   "now": "uukahpaa",
+   "placed_by": "gloss, word after, word before",
+   "strings_changed": 1,
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 3,
+   "book_page": 31,
+   "stored": "asaakiʔ",
+   "now": "asaaki",
+   "placed_by": "gloss, word after",
+   "strings_changed": 2,
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 3,
+   "book_page": 31,
+   "stored": "riicikiʔ",
+   "now": "riiciki",
+   "placed_by": "gloss, word after, word before",
+   "strings_changed": 2,
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 7,
+   "book_page": 35,
+   "stored": "tiiraaraspaatasit",
+   "now": "tiraaraspaatasit",
+   "placed_by": "gloss, word before",
+   "strings_changed": 1,
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 7,
+   "book_page": 35,
+   "stored": "taatakaraspiʔ",
+   "now": "taataktaraspiʔ",
+   "placed_by": "word before",
+   "strings_changed": 1,
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 8,
+   "book_page": 36,
+   "stored": "taruuraariit",
+   "now": "taruuraarit",
+   "placed_by": "gloss, word before",
+   "strings_changed": 1,
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 8,
+   "book_page": 36,
+   "stored": "ariik",
+   "now": "arik",
+   "placed_by": "gloss, word after, word before",
+   "strings_changed": 2,
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 10,
+   "book_page": 38,
+   "stored": "iiʔirik",
+   "now": "iirik",
+   "placed_by": "gloss",
+   "strings_changed": 2,
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 10,
+   "book_page": 38,
+   "stored": "sukskirikaʔaaʔ",
+   "now": "sukskirikaʔaa",
+   "placed_by": "gloss",
+   "strings_changed": 1,
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 10,
+   "book_page": 38,
+   "stored": "ciksuhuurawaciiruutit",
+   "now": "ciksuhuurawaciruutit",
+   "placed_by": "gloss",
+   "strings_changed": 1,
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 10,
+   "book_page": 38,
+   "stored": "ruukiitaat",
+   "now": "ruukiitat",
+   "placed_by": "gloss, word after",
+   "strings_changed": 1,
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 11,
+   "book_page": 39,
+   "stored": "Kiʔíisukskuutíirit",
+   "now": "Kiʔisukskuutiirit",
+   "placed_by": "the only word like it on the page",
+   "strings_changed": 1,
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 11,
+   "book_page": 39,
+   "stored": "pahíituʔ",
+   "now": "pahiituʔ",
+   "placed_by": "neither reader saw an accent anywhere on these pages",
+   "strings_changed": 1,
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 11,
+   "book_page": 39,
+   "stored": "kaasíkaa",
+   "now": "kaasikaa",
+   "placed_by": "neither reader saw an accent anywhere on these pages",
+   "strings_changed": 1,
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 11,
+   "book_page": 39,
+   "stored": "raakutikuriiwictaawiiʔat",
+   "now": "raakutikuriiciwactaawiiʔat",
+   "placed_by": "gloss",
+   "strings_changed": 1,
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 11,
+   "book_page": 39,
+   "stored": "awaahc-",
+   "now": "awahc-",
+   "placed_by": "gloss",
+   "strings_changed": 4,
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 11,
+   "book_page": 39,
+   "stored": "karíi-",
+   "now": "karii-",
+   "placed_by": "neither reader saw an accent anywhere on these pages",
+   "strings_changed": 2,
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 11,
+   "book_page": 39,
+   "stored": "kararukuukikahu",
+   "now": "kararakuukiikahu",
+   "placed_by": "gloss",
+   "strings_changed": 1,
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 11,
+   "book_page": 39,
+   "stored": "wiítik",
+   "now": "wiitik",
+   "placed_by": "neither reader saw an accent anywhere on these pages",
+   "strings_changed": 2,
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 12,
+   "book_page": 40,
+   "stored": "siwitiirakuutiirit",
+   "now": "siwitirakuutiirit",
+   "placed_by": "gloss, word before",
+   "strings_changed": 1,
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 14,
+   "book_page": 42,
+   "stored": "iriruuriíwuʔ",
+   "now": "iriruuriiwuʔ",
+   "placed_by": "neither reader saw an accent anywhere on these pages",
+   "strings_changed": 1,
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 16,
+   "book_page": 44,
+   "stored": "iriiruurakuuraaru",
+   "now": "iriiruurakuurahuraaru",
+   "placed_by": "gloss alone",
+   "strings_changed": 1,
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 18,
+   "book_page": 46,
+   "stored": "uciihu",
+   "now": "ucihu",
+   "placed_by": "gloss, word after, word before",
+   "strings_changed": 2,
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 19,
+   "book_page": 47,
+   "stored": "Takiihaahusaʔ",
+   "now": "Takiikaahusaʔ",
+   "placed_by": "gloss, word before",
+   "strings_changed": 1,
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 19,
+   "book_page": 47,
+   "stored": "raakuraarahuʔ",
+   "now": "raakuraarahu",
+   "placed_by": "gloss",
+   "strings_changed": 1,
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 19,
+   "book_page": 47,
+   "stored": "iriirakiwakuʔ",
+   "now": "iriirakiwaku",
+   "placed_by": "gloss, word after, word before",
+   "strings_changed": 1,
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 20,
+   "book_page": 48,
+   "stored": "wiiruuhaasitiiʔ",
+   "now": "wiiruuhaasitikstarit",
+   "placed_by": "gloss alone",
+   "strings_changed": 2,
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 20,
+   "book_page": 48,
+   "stored": "wiiruuhaasitiiʔkustarit",
+   "now": "wiiruuhaasitikustarit",
+   "placed_by": "gloss, word after",
+   "strings_changed": 2,
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 20,
+   "book_page": 48,
+   "stored": "riitapaawarikiikusitit",
+   "now": "riitapaawarikusitit",
+   "placed_by": "word after",
+   "strings_changed": 1,
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 21,
+   "book_page": 49,
+   "stored": "tiwaarukstiiʔ",
+   "now": "tiwaarukstiʔ",
+   "placed_by": "gloss",
+   "strings_changed": 1,
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 21,
+   "book_page": 49,
+   "stored": "iriwaaarukstiiʔu",
+   "now": "rakuwaarukstiiʔu",
+   "placed_by": "gloss",
+   "strings_changed": 2,
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 11,
+   "book_page": 39,
+   "stored": "rakuracakipíitit",
+   "now": "rakuracakipiitit",
+   "placed_by": "neither reader saw an accent anywhere on these pages",
+   "strings_changed": 1,
+   "when": "2026-11-14 10:59"
+  },
+  {
+   "page": 11,
+   "book_page": 39,
+   "stored": "capáat",
+   "now": "capaat",
+   "placed_by": "neither reader saw an accent anywhere on these pages",
+   "strings_changed": 1,
+   "when": "2026-11-14 10:59"
+  },
+  {
+   "page": 18,
+   "book_page": 46,
+   "stored": "tihurás",
+   "now": "tihuras",
+   "placed_by": "neither reader saw an accent anywhere on these pages",
+   "strings_changed": 1,
+   "when": "2026-11-14 10:59"
+  },
+  {
+   "page": 18,
+   "book_page": 46,
+   "stored": "tihurásista",
+   "now": "tihurasista",
+   "placed_by": "neither reader saw an accent anywhere on these pages",
+   "strings_changed": 1,
+   "when": "2026-11-14 10:59"
+  },
+  {
+   "page": 18,
+   "book_page": 46,
+   "stored": "tikíkat",
+   "now": "tikikat",
+   "placed_by": "neither reader saw an accent anywhere on these pages",
+   "strings_changed": 1,
+   "when": "2026-11-14 10:59"
+  },
+  {
+   "page": 18,
+   "book_page": 46,
+   "stored": "tikikakísta",
+   "now": "tikikaksta",
+   "placed_by": "gloss",
+   "strings_changed": 1,
+   "when": "2026-11-14 10:59"
+  }
+ ],
+ "applied_in_breakdown_lines": [
+  {
+   "page": 4,
+   "book_page": 32,
+   "stored": "-Ø 3.A",
+   "now": "Ø- 3.A",
+   "line": "ti- IND + -Ø 3.A + uur- PREV + icaahiks- 'person' + hiir- 'be good; be good-looking' + -Ø PERF",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 12,
+   "book_page": 40,
+   "stored": "-Ø- 3.A",
+   "now": "Ø- 3.A",
+   "line": "si- DU + ar- EV + ra- ABS + -Ø- 3.A + wicka 'wish, want' + -Ø PERF si- DU + witi- REFL + ra- INF.A + -Ø- 3.A + ku- INF.B + ut- PREV + iirik 'see' + -Ø PERF",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 12,
+   "book_page": 40,
+   "stored": "-Ø- 3.A",
+   "now": "Ø- 3.A",
+   "line": "si- DU + ar- EV + ra- ABS + -Ø- 3.A + wicka 'wish, want' + -Ø PERF si- DU + witi- REFL + ra- INF.A + -Ø- 3.A + ku- INF.B + ut- PREV + iirik 'see' + -Ø PERF",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 15,
+   "book_page": 43,
+   "stored": "Ø PERF",
+   "now": "-Ø PERF",
+   "line": "ti- IND + Ø- 3.A + uur- PREV + icaahiks 'person' + hiir 'be good looking' + Ø PERF",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 15,
+   "book_page": 43,
+   "stored": "Ø PERF",
+   "now": "-Ø PERF",
+   "line": "rii- ASSR + t- 1.A + riikakus- 'door flap' + wihak 'move aside' + Ø PERF",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 15,
+   "book_page": 43,
+   "stored": "Ø PERF",
+   "now": "-Ø PERF",
+   "line": "ar- EV + ri- CONT.3.A + Ø- 3.A + kiis- 'bone' + raar- PL + takipuh 'gather' + Ø PERF",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 15,
+   "book_page": 43,
+   "stored": "Ø PERF",
+   "now": "-Ø PERF",
+   "line": "si- DU + wi- QUOT + ti- IND + Ø- 3.A + uks- AOR + akitaar- 'tribe' + kus 'be sitting' + Ø PERF",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 18,
+   "book_page": 46,
+   "stored": "a- come",
+   "now": "a come",
+   "line": "ti- IND + Ø- 3.A + a- PREV.3.A + kikak 'cry' + -his PERF + a- 'come' + Ø PERF",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 18,
+   "book_page": 46,
+   "stored": "Ø PERF",
+   "now": "-Ø PERF",
+   "line": "ti- IND + Ø- 3.A + a- PREV.3.A + kikak 'cry' + -his PERF + a- 'come' + Ø PERF",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 18,
+   "book_page": 46,
+   "stored": "Ø PERF",
+   "now": "-Ø PERF",
+   "line": "ti- IND + Ø- 3.A + kikak 'cry' + Ø PERF",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 18,
+   "book_page": 46,
+   "stored": "Ø PERF",
+   "now": "-Ø PERF",
+   "line": "ti- IND + Ø- 3.A + huras 'find' + Ø PERF",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 18,
+   "book_page": 46,
+   "stored": "Ø SUB.4",
+   "now": "-Ø SUB.4",
+   "line": "irii- 'where' + ra- ABS + Ø- 3.A + kikak 'cry' + Ø SUB.4",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 18,
+   "book_page": 46,
+   "stored": "Ø PERF",
+   "now": "-Ø PERF",
+   "line": "ti- IND + Ø- 3.A + raʔuk 'make' + Ø PERF",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 19,
+   "book_page": 47,
+   "stored": "Ø PERF",
+   "now": "-Ø PERF",
+   "line": "ti- IND + Ø- 3.A + a- PREV + kiikaa 'drink' + -:hus IMPF + a 'come' + Ø PERF",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 19,
+   "book_page": 47,
+   "stored": "Ø PERF",
+   "now": "-Ø PERF",
+   "line": "ti- IND + Ø- 3.A + kacak 'cut' + Ø PERF",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 19,
+   "book_page": 47,
+   "stored": "-:hus IMPF.SUB",
+   "now": "-hus IMPF.SUB",
+   "line": "irii- 'the one' + ra- ABS + Ø- 3.A + kiwak 'bark' + -:hus IMPF.SUB",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 19,
+   "book_page": 47,
+   "stored": "-:hus IMPF.SUB",
+   "now": "-hus IMPF.SUB",
+   "line": "ra- INF.A + Ø- 3.A + a- PREV + ku- INF.B + raar- 3.P.INDV.A + a 'come' + -:hus IMPF.SUB",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 22,
+   "book_page": 50,
+   "stored": "Ø PERF",
+   "now": "-Ø PERF",
+   "line": "ti- IND + Ø- 3.A + kawihaar- 'projectile' + ka 'be on' + Ø PERF",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 22,
+   "book_page": 50,
+   "stored": "Ø PERF",
+   "now": "-Ø PERF",
+   "line": "ti- IND + Ø- 3.A + ikita 'be astride' + Ø PERF",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 7,
+   "book_page": 35,
+   "stored": "Ø PERF",
+   "now": "-Ø PERF",
+   "line": "ta- IND.1/2.A + t- 1.A + raar- 3.INAN.P + raspii 'look for' + Ø PERF",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 7,
+   "book_page": 35,
+   "stored": "Ø PERF",
+   "now": "-Ø PERF",
+   "line": "ti- IND + Ø- 3.A + raar- 3.P.INDV.A + aspaatasik 'set out' + Ø PERF",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "page": 7,
+   "book_page": 35,
+   "stored": "Ø PERF",
+   "now": "-Ø PERF",
+   "line": "ti- IND + Ø- 3.A + ir- 3.P.COLL.A + aspaatasik 'set out' + Ø PERF",
+   "when": "2026-11-14 10:58"
+  }
+ ],
+ "applied_by_hand": [
+  {
+   "what": "the breakdown of wiiraraʔu ends in the label alone; the stored copy had put a zero before it",
+   "where": "page_18/sections/1/content",
+   "stored": "raʔuk ‘make’ + Ø SUB.3",
+   "now": "raʔuk ‘make’ + SUB.3",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "what": "Table 17 as both readers have it: the stored copy had merged the cells of -ʔ and -his and of -:huʔ and -:hus, had given the perfective a combined form -hustarit that the table does not print, and had lost the length mark of -:hus",
+   "where": "page_17/sections/0/tables/0/rows",
+   "stored": "(the table's 16 rows)",
+   "now": "(the table's 18 rows as both readers have them)",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "what": "the summary of Table 17 made by the March 2026 extraction, brought in line with the table",
+   "where": "page_17/sections/0/morphemes_mentioned/1/notes",
+   "stored": "Occurs when incorporated in perfective, non-intentive, non-subordinate contexts.",
+   "now": "Beside -Ø in perfective, non-intentive, non-subordinate contexts. The form given for incorporation is -his.",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "what": "the same",
+   "where": "page_17/sections/0/morphemes_mentioned/8/notes",
+   "stored": "Combines with -his + -ta for perfective, intentive, subordinate forms, resulting in -hustarit. Combines with -hus + -ta for imperfective, intentive, subordinate forms, resulting in -hustarit.",
+   "now": "Combines with -his + -ta for perfective, intentive, subordinate forms. Combines with -hus + -ta for imperfective, intentive, subordinate forms, resulting in -hustarit.",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "what": "the same",
+   "where": "page_17/sections/0/morphemes_mentioned/9/label",
+   "stored": "perfective/imperfective, intentive, subordinate",
+   "now": "imperfective, intentive, subordinate",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "what": "the same",
+   "where": "page_17/sections/0/morphemes_mentioned/9/notes",
+   "stored": "Combined form of -his + -ta + -rit (perfective) or -hus + -ta + -rit (imperfective).",
+   "now": "Combined form of -hus + -ta + -rit.",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "what": "the same",
+   "where": "page_17/sections/0/morphemes_mentioned/10/form",
+   "stored": "-huʔ",
+   "now": "-:huʔ",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "what": "the same",
+   "where": "page_17/sections/0/morphemes_mentioned/10/notes",
+   "stored": "Occurs when incorporated in imperfective, non-intentive, non-subordinate contexts.",
+   "now": "Occurs in imperfective, non-intentive, non-subordinate contexts. The form given for incorporation is -:hus. The colon stands for lengthening of the vowel before it.",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "what": "the same",
+   "where": "page_17/sections/0/morphemes_mentioned/12/notes",
+   "stored": "Combines with -ta, -itik, -uukuʔ, -uku for various imperfective categories.",
+   "now": "Combines with -ta, -itik, -uukuʔ, -uku for various imperfective categories. Table 17 gives it as -:hus in non-subordinate forms and as -hus in subordinate forms.",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "what": "the same",
+   "where": "page_17/sections/0/morphemes_mentioned/13/form",
+   "stored": "-husta",
+   "now": "-:husta",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "what": "the same",
+   "where": "page_17/sections/0/morphemes_mentioned/13/notes",
+   "stored": "Combined form of -hus + -ta.",
+   "now": "Combined form of -:hus + -ta.",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "what": "the same",
+   "where": "page_17/sections/0/morphemes_mentioned/14/notes",
+   "stored": "Combines with -hus for imperfective, inchoative forms, resulting in -husitit.",
+   "now": "Combines with the imperfective suffix for inchoative forms: -:husitit non-subordinate, -husitit subordinate.",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "what": "the same",
+   "where": "page_17/sections/0/morphemes_mentioned/15/form",
+   "stored": "-husitit",
+   "now": "-:husitit / -husitit",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "what": "the same",
+   "where": "page_17/sections/0/morphemes_mentioned/15/notes",
+   "stored": "Combined form of -hus + -itik.",
+   "now": "Combined form of -:hus + -itik (non-subordinate) and of -hus + -itik (subordinate).",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "what": "the same",
+   "where": "page_17/sections/0/morphemes_mentioned/16/notes",
+   "stored": "Combines with -hus for imperfective, habitual, non-subordinate forms, resulting in -husuukuʔ.",
+   "now": "Combines with -:hus for imperfective, habitual, non-subordinate forms, resulting in -:husuukuʔ.",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "what": "the same",
+   "where": "page_17/sections/0/morphemes_mentioned/17/form",
+   "stored": "-husuukuʔ",
+   "now": "-:husuukuʔ",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "what": "the same",
+   "where": "page_17/sections/0/morphemes_mentioned/17/notes",
+   "stored": "Combined form of -hus + -uukuʔ.",
+   "now": "Combined form of -:hus + -uukuʔ.",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "what": "the non-subordinate imperfective is printed -:hus on this page, once, and nowhere as -hus",
+   "where": "page_18/sections/2/heading",
+   "stored": "Imperfective aspect (IMPF), non-subordinate: -hus",
+   "now": "Imperfective aspect (IMPF), non-subordinate: -:hus",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "what": "the same",
+   "where": "page_18/sections/2/morphemes_mentioned/0/form",
+   "stored": "-hus",
+   "now": "-:hus",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "what": "the breakdown of tiwaawaktiikusitit has -:hus",
+   "where": "page_20/sections/1/examples/0/breakdown/3/morpheme",
+   "stored": "-hus",
+   "now": "-:hus",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "what": "the imperfective row of the list of inchoative forms: -itik + -:hus gives -itiikuʔ",
+   "where": "page_23/sections/0/tables/0/rows/4/0",
+   "stored": "-itik + -hus",
+   "now": "-itik + -:hus",
+   "when": "2026-11-14 10:58"
+  },
+  {
+   "what": "the same; the stored copy had a raised u for the last two letters",
+   "where": "page_23/sections/0/tables/0/rows/4/2",
+   "stored": "-itiikᵘ",
+   "now": "-itiikuʔ",
+   "when": "2026-11-14 10:58"
+  }
+ ],
+ "words": [
+  {
+   "page": 11,
+   "book_page": 39,
+   "stored": "rakuracakipíitit",
+   "where": "sections/content",
+   "stored_text": "Taku rakuukaksa rakuracakipíitit capáat. 'Someone (should) call out for the women to gather!' < ra- INF.A + Ø- 3.A + ku- I",
+   "first_reading": "rakuracakipiitit",
+   "second_reading": "rakuracakipiitit",
+   "stored_is_dictionary_form": false,
+   "first_reading_is_dictionary_form": false,
+   "second_reading_is_dictionary_form": false,
+   "first_tile": "p11-b2",
+   "first_text": "Taku rakuukaksa rakuracakipiitit capaat.",
+   "second_tile": "p11-b4",
+   "second_text": "Taku rakuukaksa rakuracakipiitit capaat.",
+   "correct_to": "rakuracakipiitit",
+   "placed_by": "neither reader saw an accent anywhere on these pages",
+   "verdict": "corrected",
+   "was": "rakuracakipíitit"
+  },
+  {
+   "page": 11,
+   "book_page": 39,
+   "stored": "capáat",
+   "where": "sections/content",
+   "stored_text": "Taku rakuukaksa rakuracakipíitit capáat. 'Someone (should) call out for the women to gather!' < ra- INF.A + Ø- 3.A + ku- INF.B +",
+   "first_reading": "capaat",
+   "second_reading": "capaat",
+   "stored_is_dictionary_form": false,
+   "first_reading_is_dictionary_form": true,
+   "second_reading_is_dictionary_form": true,
+   "first_tile": "p11-b2",
+   "first_text": "Taku rakuukaksa rakuracakipiitit capaat.",
+   "second_tile": "p11-b4",
+   "second_text": "Taku rakuukaksa rakuracakipiitit capaat.",
+   "correct_to": "capaat",
+   "placed_by": "neither reader saw an accent anywhere on these pages",
+   "verdict": "corrected",
+   "was": "capáat"
+  },
+  {
+   "page": 18,
+   "book_page": 46,
+   "stored": "tihurás",
+   "where": "sections/content",
+   "stored_text": "tihurás ‘he found it’ < ti- IND + Ø- 3.A + huras ‘find’ + -Ø PERF; cp. tihurásista ‘he is going t",
+   "first_reading": "tihuras",
+   "second_reading": "tihuras",
+   "stored_is_dictionary_form": false,
+   "first_reading_is_dictionary_form": false,
+   "second_reading_is_dictionary_form": false,
+   "first_tile": "p18-b1",
+   "first_text": "tihuras",
+   "second_tile": "p18-b1",
+   "second_text": "tihuras",
+   "correct_to": "tihuras",
+   "placed_by": "neither reader saw an accent anywhere on these pages",
+   "verdict": "corrected",
+   "was": "tihurás"
+  },
+  {
+   "page": 18,
+   "book_page": 46,
+   "stored": "tihurásista",
+   "where": "sections/content",
+   "stored_text": "ihurás ‘he found it’ < ti- IND + Ø- 3.A + huras ‘find’ + -Ø PERF; cp. tihurásista ‘he is going to find it’ < ti- IND + Ø- 3.A + huras ‘find’ + -his PERF + -ta INT",
+   "first_reading": "tihurasista",
+   "second_reading": "tihurasista",
+   "stored_is_dictionary_form": false,
+   "first_reading_is_dictionary_form": true,
+   "second_reading_is_dictionary_form": true,
+   "first_tile": "p18-b1",
+   "first_text": "tihurasista",
+   "second_tile": "p18-b1",
+   "second_text": "tihurasista",
+   "correct_to": "tihurasista",
+   "placed_by": "neither reader saw an accent anywhere on these pages",
+   "verdict": "corrected",
+   "was": "tihurásista"
+  },
+  {
+   "page": 18,
+   "book_page": 46,
+   "stored": "tikíkat",
+   "where": "sections/content",
+   "stored_text": "tikíkat ‘he cried’ < ti- IND + Ø- 3.A + kikak ‘cry’ + -Ø PERF; cp. tikikakísta ‘he is going to cr",
+   "first_reading": "tikikat",
+   "second_reading": "tikikat",
+   "stored_is_dictionary_form": false,
+   "first_reading_is_dictionary_form": true,
+   "second_reading_is_dictionary_form": true,
+   "first_tile": "p18-b1",
+   "first_text": "tikikat",
+   "second_tile": "p18-b1",
+   "second_text": "tikikat",
+   "correct_to": "tikikat",
+   "placed_by": "neither reader saw an accent anywhere on these pages",
+   "verdict": "corrected",
+   "was": "tikíkat"
+  },
+  {
+   "page": 18,
+   "book_page": 46,
+   "stored": "tikikakísta",
+   "where": "sections/content",
+   "stored_text": "tikíkat ‘he cried’ < ti- IND + Ø- 3.A + kikak ‘cry’ + -Ø PERF; cp. tikikakísta ‘he is going to cry’ < ti- IND + Ø- 3.A + kikak ‘cry’ + -his PERF + -ta INT; takikaksaʔ ‘",
+   "first_reading": "tikikaksta",
+   "second_reading": "tikikaksta",
+   "stored_is_dictionary_form": false,
+   "first_reading_is_dictionary_form": true,
+   "second_reading_is_dictionary_form": true,
+   "first_tile": "p18-b1",
+   "first_text": "tikikaksta",
+   "second_tile": "p18-b1",
+   "second_text": "tikikaksta",
+   "correct_to": "tikikaksta",
+   "placed_by": "gloss",
+   "verdict": "corrected",
+   "was": "tikikakísta"
+  },
+  {
+   "page": 7,
+   "book_page": 35,
+   "stored": "an",
+   "where": "sections/morphemes_mentioned/notes",
+   "stored_text": "Occurs as an agent prefix for obviative forms, and as a patient prefix for obviative forms (in combina",
+   "first_reading": "an",
+   "second_reading": "and",
+   "stored_is_dictionary_form": false,
+   "second_reading_is_dictionary_form": false,
+   "second_tile": "p6-b1",
+   "second_text": "Table 8. Modal Prefixes: Forms and Functions",
+   "verdict": "not a Skiri word"
+  },
+  {
+   "page": 10,
+   "book_page": 38,
+   "stored": "st",
+   "where": "sections/morphemes_mentioned/notes",
+   "stored_text": "dubitative, 1st person",
+   "first_reading": "sit",
+   "second_reading": "sit",
+   "stored_is_dictionary_form": false,
+   "first_reading_is_dictionary_form": false,
+   "second_reading_is_dictionary_form": false,
+   "first_tile": "p11-b2",
+   "first_text": "i- CONT.1/2.A + t- 1.A + uks- JUSS + uhuur- ‘a while’ + wiitik ‘sit down’ + -Ø PERF",
+   "second_tile": "p11-b4",
+   "second_text": "i- CONT.1/2.A + t- 1.A + uks- JUSS + uhuur- ‘a while’ + wiitik ‘sit down’ + -Ø PERF",
+   "verdict": "not a Skiri word"
+  },
+  {
+   "page": 11,
+   "book_page": 39,
+   "stored": "st",
+   "where": "sections/morphemes_mentioned/notes",
+   "stored_text": "1st person Patient",
+   "first_reading": "sit",
+   "second_reading": "sit",
+   "stored_is_dictionary_form": false,
+   "first_reading_is_dictionary_form": false,
+   "second_reading_is_dictionary_form": false,
+   "first_tile": "p11-b2",
+   "first_text": "i- CONT.1/2.A + t- 1.A + uks- JUSS + uhuur- ‘a while’ + wiitik ‘sit down’ + -Ø PERF",
+   "second_tile": "p11-b4",
+   "second_text": "i- CONT.1/2.A + t- 1.A + uks- JUSS + uhuur- ‘a while’ + wiitik ‘sit down’ + -Ø PERF",
+   "verdict": "not a Skiri word"
+  },
+  {
+   "page": 12,
+   "book_page": 40,
+   "stored": "st",
+   "where": "sections/morphemes_mentioned/notes",
+   "stored_text": "1st/2nd person singular indicative",
+   "first_reading": "sit",
+   "second_reading": "sit",
+   "stored_is_dictionary_form": false,
+   "first_reading_is_dictionary_form": false,
+   "second_reading_is_dictionary_form": false,
+   "first_tile": "p11-b2",
+   "first_text": "i- CONT.1/2.A + t- 1.A + uks- JUSS + uhuur- ‘a while’ + wiitik ‘sit down’ + -Ø PERF",
+   "second_tile": "p11-b4",
+   "second_text": "i- CONT.1/2.A + t- 1.A + uks- JUSS + uhuur- ‘a while’ + wiitik ‘sit down’ + -Ø PERF",
+   "verdict": "not a Skiri word"
+  },
+  {
+   "page": 14,
+   "book_page": 42,
+   "stored": "st",
+   "where": "sections/morphemes_mentioned/notes",
+   "stored_text": "IND.- (1st/2nd person Agent slot)",
+   "first_reading": "set",
+   "second_reading": "set",
+   "stored_is_dictionary_form": false,
+   "first_reading_is_dictionary_form": false,
+   "second_reading_is_dictionary_form": false,
+   "first_tile": "p15-b2",
+   "first_text": "ii- ‘when’ + wii- ‘now’ + ra- ABS + Ø- 3.A + sakur- ‘sun’ + iisat ‘go out of sight; set’ + -a SUB.1",
+   "second_tile": "p15-b3",
+   "second_text": "ii- ‘when’ + wii- ‘now’ + ra- ABS + Ø- 3.A + sakur- ‘sun’ + iisat ‘go out of sight; set’ + -a SUB.1",
+   "verdict": "not a Skiri word"
+  },
+  {
+   "page": 15,
+   "book_page": 43,
+   "stored": "st",
+   "where": "sections/morphemes_mentioned/notes",
+   "stored_text": "1st person agent",
+   "first_reading": "set",
+   "second_reading": "set",
+   "stored_is_dictionary_form": false,
+   "first_reading_is_dictionary_form": false,
+   "second_reading_is_dictionary_form": false,
+   "first_tile": "p15-b2",
+   "first_text": "ii- ‘when’ + wii- ‘now’ + ra- ABS + Ø- 3.A + sakur- ‘sun’ + iisat ‘go out of sight; set’ + -a SUB.1",
+   "second_tile": "p15-b3",
+   "second_text": "ii- ‘when’ + wii- ‘now’ + ra- ABS + Ø- 3.A + sakur- ‘sun’ + iisat ‘go out of sight; set’ + -a SUB.1",
+   "verdict": "not a Skiri word"
+  },
+  {
+   "page": 18,
+   "book_page": 46,
+   "stored": "has",
+   "where": "sections/morphemes_mentioned/notes",
+   "stored_text": "occurs when perfective form has intentive suffix or is compounded with a following stem",
+   "first_reading": "huras",
+   "second_reading": "huras",
+   "stored_is_dictionary_form": true,
+   "first_reading_is_dictionary_form": false,
+   "second_reading_is_dictionary_form": false,
+   "first_tile": "p18-b1",
+   "first_text": "ti- IND + Ø- 3.A + huras ‘find’ + -Ø PERF",
+   "second_tile": "p18-b1",
+   "second_text": "ti- IND + Ø- 3.A + huras ‘find’ + -Ø PERF",
+   "verdict": "not a Skiri word"
+  },
+  {
+   "page": 18,
+   "book_page": 46,
+   "stored": "st",
+   "where": "sections/morphemes_mentioned/notes",
+   "stored_text": "1st person A-set prefix",
+   "first_reading": "s-",
+   "second_reading": "s-",
+   "stored_is_dictionary_form": false,
+   "first_reading_is_dictionary_form": true,
+   "second_reading_is_dictionary_form": true,
+   "first_tile": "p18-b1",
+   "first_text": "ra- INF.A + s- 2.A + ku- INF.B + hisaask ‘call’ + -a SUB.1",
+   "second_tile": "p18-b2",
+   "second_text": "ra- INF.A + s- 2.A + ku- INF.B + hisaask ‘call’ + -a SUB.1",
+   "verdict": "not a Skiri word"
+  },
+  {
+   "page": 20,
+   "book_page": 48,
+   "stored": "st",
+   "where": "sections/morphemes_mentioned/notes",
+   "stored_text": "prefix, 1st person animate",
+   "first_reading": "t-",
+   "second_reading": "t-",
+   "stored_is_dictionary_form": false,
+   "first_reading_is_dictionary_form": true,
+   "second_reading_is_dictionary_form": true,
+   "first_tile": "p20-b1",
+   "first_text": "rii- ASSR + t- 1.A + ak- 3.P.AN.I + waa- DIST + warik ‘shoot at’ + -hus IMPF + -itik INCH",
+   "second_tile": "p20-b2",
+   "second_text": "rii- ASSR + t- 1.A + ak- 3.P.AN.I + waa- DIST + warik ‘shoot at’ + -hus IMPF + -itik INCH",
+   "verdict": "not a Skiri word"
+  },
+  {
+   "page": 21,
+   "book_page": 49,
+   "stored": "an",
+   "where": "sections/morphemes_mentioned/notes",
+   "stored_text": "functions as an inflectional suffix, 'to exist, be'; null in non-subordinate word-final forms",
+   "first_reading": "a-",
+   "second_reading": "a-",
+   "stored_is_dictionary_form": false,
+   "first_reading_is_dictionary_form": true,
+   "second_reading_is_dictionary_form": true,
+   "first_tile": "p21-b2",
+   "first_text": "ti- IND + Ø- 3.A + a- PREV + kuc- ‘bucket’ + taris ‘be heavy’ + -uk ‘be’",
+   "second_tile": "p21-b3",
+   "second_text": "ti- IND + Ø- 3.A + a- PREV + kuc- ‘bucket’ + taris ‘be heavy’ + -uk ‘be’",
+   "verdict": "not a Skiri word"
+  },
+  {
+   "page": 23,
+   "book_page": 51,
+   "stored": "INCH",
+   "where": "sections/morphemes_mentioned/notes",
+   "stored_text": "Inchoative (INCH) suffix, follows -wi in forming inchoative aspects.",
+   "first_reading": "",
+   "second_reading": "",
+   "stored_is_dictionary_form": false,
+   "verdict": "not a Skiri word"
+  },
+  {
+   "page": 23,
+   "book_page": 51,
+   "stored": "Input",
+   "where": "sections/tables/rows",
+   "stored_text": "Input Morphemes",
+   "first_reading": "",
+   "second_reading": "",
+   "stored_is_dictionary_form": false,
+   "verdict": "not a Skiri word"
+  }
+ ],
+ "breakdown_pieces_to_correct": [],
+ "breakdown_pieces_left": [
+  {
+   "page": 11,
+   "book_page": 39,
+   "stored": "slow'",
+   "first_reading": "pahiit- quiet; slow",
+   "line": "slow' + -uʔ NOM kaas- POT.2.A + s- 2.A + i- SEQ + kaa 'inside' + aah 'go around' + -Ø PERF",
+   "why": "the label or gloss differs: not judged"
+  },
+  {
+   "page": 11,
+   "book_page": 39,
+   "stored": ". . a 'and + raa- just",
+   "first_reading": "+ raa- 'just",
+   "line": ". . a 'and' + raa- 'just' + ku- INDF + ti- IND + Ø- 3.A + a- PREV + ku- 1.P + ri- PHY.BEN + ut- PREV + i- SEQ + awahc- 'at least' + raawiiʔat 'help' + -Ø PERF",
+   "why": "pieces added or missing: not judged"
+  }
+ ],
+ "places_named_one_by_one": [
+  {
+   "what": "the breakdown of wiiraraʔu ends in the label alone; the stored copy had put a zero before it",
+   "where": "page_18/sections/1/content",
+   "state": "done"
+  },
+  {
+   "what": "Table 17 as both readers have it: the stored copy had merged the cells of -ʔ and -his and of -:huʔ and -:hus, had given the perfective a combined form -hustarit that the table does not print, and had lost the length mark of -:hus",
+   "where": "page_17/sections/0/tables/0/rows",
+   "state": "done"
+  },
+  {
+   "what": "the summary of Table 17 made by the March 2026 extraction, brought in line with the table",
+   "where": "page_17/sections/0/morphemes_mentioned/1/notes",
+   "state": "done"
+  },
+  {
+   "what": "the same",
+   "where": "page_17/sections/0/morphemes_mentioned/8/notes",
+   "state": "done"
+  },
+  {
+   "what": "the same",
+   "where": "page_17/sections/0/morphemes_mentioned/9/label",
+   "state": "done"
+  },
+  {
+   "what": "the same",
+   "where": "page_17/sections/0/morphemes_mentioned/9/notes",
+   "state": "done"
+  },
+  {
+   "what": "the same",
+   "where": "page_17/sections/0/morphemes_mentioned/10/form",
+   "state": "done"
+  },
+  {
+   "what": "the same",
+   "where": "page_17/sections/0/morphemes_mentioned/10/notes",
+   "state": "done"
+  },
+  {
+   "what": "the same",
+   "where": "page_17/sections/0/morphemes_mentioned/12/notes",
+   "state": "done"
+  },
+  {
+   "what": "the same",
+   "where": "page_17/sections/0/morphemes_mentioned/13/form",
+   "state": "done"
+  },
+  {
+   "what": "the same",
+   "where": "page_17/sections/0/morphemes_mentioned/13/notes",
+   "state": "done"
+  },
+  {
+   "what": "the same",
+   "where": "page_17/sections/0/morphemes_mentioned/14/notes",
+   "state": "done"
+  },
+  {
+   "what": "the same",
+   "where": "page_17/sections/0/morphemes_mentioned/15/form",
+   "state": "done"
+  },
+  {
+   "what": "the same",
+   "where": "page_17/sections/0/morphemes_mentioned/15/notes",
+   "state": "done"
+  },
+  {
+   "what": "the same",
+   "where": "page_17/sections/0/morphemes_mentioned/16/notes",
+   "state": "done"
+  },
+  {
+   "what": "the same",
+   "where": "page_17/sections/0/morphemes_mentioned/17/form",
+   "state": "done"
+  },
+  {
+   "what": "the same",
+   "where": "page_17/sections/0/morphemes_mentioned/17/notes",
+   "state": "done"
+  },
+  {
+   "what": "the non-subordinate imperfective is printed -:hus on this page, once, and nowhere as -hus",
+   "where": "page_18/sections/2/heading",
+   "state": "done"
+  },
+  {
+   "what": "the same",
+   "where": "page_18/sections/2/morphemes_mentioned/0/form",
+   "state": "done"
+  },
+  {
+   "what": "the breakdown of tiwaawaktiikusitit has -:hus",
+   "where": "page_20/sections/1/examples/0/breakdown/3/morpheme",
+   "state": "done"
+  },
+  {
+   "what": "the imperfective row of the list of inchoative forms: -itik + -:hus gives -itiikuʔ",
+   "where": "page_23/sections/0/tables/0/rows/4/0",
+   "state": "done"
+  },
+  {
+   "what": "the same; the stored copy had a raised u for the last two letters",
+   "where": "page_23/sections/0/tables/0/rows/4/2",
+   "state": "done"
+  }
+ ]
+}
