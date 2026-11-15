@@ -1,0 +1,1554 @@
+{
+ "_about": {
+  "source": "Parks and Pratt, A Dictionary of Skiri Pawnee (2008), chapter 4, \"Grammatical Overview\", pp. 29-51",
+  "what": "The tables of the chapter as printed, row by row, put together from the two blind readings of the page images (reports/source_audit_2026-11/blind_readings/chapter4_part*.json and chapter4_second_part*.json) by scripts/source_audit/chapter4_tables.py. No third reading was made.",
+  "status": "\"the same in both readings\": both readers wrote the same rows and cells. \"the same text, rows divided differently\": every column reads the same from top to bottom in both; one reader wrote each printed line as a row, and both divisions are given. \"the readings differ\": the table is given in both readings with the columns that differ; neither is chosen.",
+  "supersedes": "The tables inside extracted_data/grammatical_overview.json, which an extraction of March 2026 rebuilt with merged cells. Use this file for a table; that file for the chapter's examples.",
+  "tables": 14,
+  "the_same_in_both_readings": 6,
+  "the_same_text_rows_divided_differently": 6,
+  "the_readings_differ": 2
+ },
+ "tables": [
+  {
+   "number": 4,
+   "title": "Table 4. Skiri Case and Number Suffixes",
+   "book_pages": [
+    30
+   ],
+   "status": "the same text, rows divided differently",
+   "rows": [
+    [
+     "Noun Class",
+     "Plural Marking",
+     "Case Suffixes"
+    ],
+    [
+     "Body Part Terms",
+     "-raar- PL",
+     "-hiriʔ INST/LOC"
+    ],
+    [
+     "Tribal and Geographical Names",
+     "Ø",
+     "-ru LOC"
+    ],
+    [
+     "Other Nouns",
+     "Ø",
+     "-kat LOC -hiriʔ INST"
+    ]
+   ],
+   "rows_as_the_other_reader_divided_them": [
+    [
+     "Noun Class",
+     "Plural Marking",
+     "Case Suffixes"
+    ],
+    [
+     "Body Part Terms",
+     "-raar- PL",
+     "-hiriʔ INST/LOC"
+    ],
+    [
+     "Tribal and Geographical Names",
+     "Ø",
+     "-ru LOC"
+    ],
+    [
+     "Other Nouns",
+     "Ø",
+     "-kat LOC"
+    ],
+    [
+     "",
+     "",
+     "-hiriʔ INST"
+    ]
+   ]
+  },
+  {
+   "number": 5,
+   "title": "Table 5. Nominal Derivational Affixes",
+   "book_pages": [
+    31
+   ],
+   "status": "the same text, rows divided differently",
+   "rows": [
+    [
+     "Category",
+     "Skiri",
+     "Translation",
+     "Example"
+    ],
+    [
+     "Nominal Absolutive (NOM)",
+     "-uʔ",
+     "No translation",
+     "iksuʔ 'hand' < iks- 'hand' + -uʔ"
+    ],
+    [
+     "Diminutive (DIM)",
+     "-kis",
+     "'small N'; no trans.",
+     "asaaki 'dog' < asaa- 'dog; horse' + -kis DIM; riiciki 'knife' < riici- 'knife' + kis DIM"
+    ],
+    [
+     "Augmentative (AUG)",
+     "-kusuʔ",
+     "'large, big'",
+     "wiitakusuʔ 'large man' < wiita 'man' + kusuʔ 'big'"
+    ],
+    [
+     "'covering'",
+     "-kuukuʔuʔ",
+     "'covering'",
+     "pakskuukuʔuʔ 'hat; headwear' < paks- 'head' + -kuuku- 'covering' + -uʔ NOM"
+    ],
+    [
+     "Feminine (FEM)",
+     "c-",
+     "'female'",
+     "ckuraaʔuʔ < c- FEM + kuraa- 'doctor' + -uʔ NOM"
+    ]
+   ],
+   "rows_as_the_other_reader_divided_them": [
+    [
+     "Category",
+     "Skiri",
+     "Translation",
+     "Example"
+    ],
+    [
+     "Nominal Absolutive (NOM)",
+     "-uʔ",
+     "No translation",
+     "iksuʔ 'hand' < iks- 'hand' + -uʔ"
+    ],
+    [
+     "Diminutive (DIM)",
+     "-kis",
+     "'small N'; no",
+     "asaaki 'dog' < asaa- 'dog; horse'"
+    ],
+    [
+     "",
+     "",
+     "trans.",
+     " + -kis DIM; riiciki 'knife'"
+    ],
+    [
+     "",
+     "",
+     "",
+     "< riici- 'knife' + kis DIM"
+    ],
+    [
+     "Augmentative (AUG)",
+     "-kusuʔ",
+     "'large, big'",
+     "wiitakusuʔ 'large man'"
+    ],
+    [
+     "",
+     "",
+     "",
+     "< wiita 'man' + kusuʔ 'big'"
+    ],
+    [
+     "'covering'",
+     "-kuukuʔuʔ",
+     "'covering'",
+     "pakskuukuʔuʔ 'hat; headwear'"
+    ],
+    [
+     "",
+     "",
+     "",
+     "< paks- 'head' + -kuuku- 'covering' + "
+    ],
+    [
+     "",
+     "",
+     "",
+     "-uʔ NOM"
+    ],
+    [
+     "Feminine (FEM)",
+     "c-",
+     "'female'",
+     "ckuraaʔuʔ < c- FEM + kuraa- 'doctor' + "
+    ],
+    [
+     "",
+     "",
+     "",
+     "-uʔ NOM"
+    ]
+   ]
+  },
+  {
+   "number": 6,
+   "title": "Table 6. Major Positions in the Inflected Verb",
+   "book_pages": [
+    33
+   ],
+   "status": "the readings differ",
+   "rows_first_reading": [
+    [
+     "Verb"
+    ],
+    [
+     "Proclitics (Outer Prefixes)",
+     "Prefixes + Preverbs (Inner Prefixes)",
+     "Incorporated Noun (Agent/Patient)",
+     "STEM",
+     "Suffixes"
+    ]
+   ],
+   "rows_second_reading": [
+    [
+     "Verb"
+    ],
+    [
+     "Proclitics",
+     "Prefixes + Preverbs",
+     "Incorporated Noun",
+     "STEM",
+     "Suffixes"
+    ],
+    [
+     "(Outer Prefixes)",
+     "(Inner Prefixes)",
+     "(Agent/Patient)",
+     "",
+     ""
+    ]
+   ],
+   "differences": [
+    {
+     "column": "whole table",
+     "first": "Verb Proclitics (Outer Prefixes) Prefixes + Preverbs (Inner Prefixes) Incorporated Noun (Agent/Patient) STEM Suffixes",
+     "second": "Verb Proclitics Prefixes + Preverbs Incorporated Noun STEM Suffixes (Outer Prefixes) (Inner Prefixes) (Agent/Patient)"
+    }
+   ]
+  },
+  {
+   "number": 7,
+   "title": "Table 7. The Inner Prefix Template",
+   "book_pages": [
+    33
+   ],
+   "status": "the readings differ",
+   "rows_first_reading": [
+    [
+     "9",
+     "10",
+     "11",
+     "12",
+     "13",
+     "14"
+    ],
+    [
+     "EVIDENTIALS",
+     "MODALS",
+     "AGENT",
+     "INCLUSIVE",
+     "AGENT PL,[?]",
+     "EVIDENTIAL"
+    ],
+    [
+     "EVIDENTIALS",
+     "MODALS",
+     "AGENT PRONOUNS, OBVIATIVE",
+     "INCLUSIVE PRONOUNS",
+     "AGENT PL, AGENT POSS, PREVERB",
+     "EVIDENTIAL"
+    ],
+    [
+     "15",
+     "16",
+     "17",
+     "18",
+     "19",
+     "20"
+    ],
+    [
+     "PATIENT PRONOUNS",
+     "INFINITIVE MODAL",
+     "PHYSICAL POSSESSION",
+     "AGENT POSS, BENEFACTIVE, PREVERB",
+     "RESULTATIVE/ SEQUENTIAL",
+     "AORIST, JUSSIVE"
+    ],
+    [
+     "21",
+     "22",
+     "23",
+     "24",
+     "25",
+     "26"
+    ],
+    [
+     "ADVERBIALS",
+     "AGENT PL, PATIENT PL",
+     "PATIENT PL, POSS PL, INDIR PAT PL",
+     "INDIV AGT PL, PATIENT PL",
+     "NOUN ± PL",
+     "STEM"
+    ]
+   ],
+   "rows_second_reading": [
+    [
+     "9",
+     "10",
+     "11",
+     "12",
+     "13",
+     "14"
+    ],
+    [
+     "EVIDENTIALS",
+     "MODALS",
+     "AGENT",
+     "INCLUSIVE",
+     "AGENT PL,",
+     "EVIDENTIA"
+    ],
+    [
+     "",
+     "",
+     "PRONOUNS,",
+     "PRONOUNS",
+     "AGENT POSS,",
+     ""
+    ],
+    [
+     "",
+     "",
+     "OBVIATIVE",
+     "",
+     "PREVERB",
+     ""
+    ],
+    [
+     "15",
+     "16",
+     "17",
+     "18",
+     "19",
+     "20"
+    ],
+    [
+     "PATIENT",
+     "INFINITIVE",
+     "PHYSICAL",
+     "AGENT POSS,",
+     "RESULTATIVE/",
+     "AORIST,"
+    ],
+    [
+     "PRONOUNS",
+     "MODAL",
+     "POSSESSION",
+     "BENEFACTIVE,",
+     "SEQUENTIAL",
+     "JUSSIVE"
+    ],
+    [
+     "",
+     "",
+     "",
+     "PREVERB",
+     "",
+     ""
+    ],
+    [
+     "21",
+     "22",
+     "23",
+     "24",
+     "25",
+     "26"
+    ],
+    [
+     "ADVERBIALS",
+     "AGENT PL,",
+     "PATIENT PL,",
+     "INDIV AGT PL,",
+     "NOUN ± PL",
+     "STEM"
+    ],
+    [
+     "",
+     "PATIENT PL",
+     "POSS PL,",
+     "PATIENT PL",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "INDIR PAT PL",
+     "",
+     "",
+     ""
+    ]
+   ],
+   "differences": [
+    {
+     "column": 1,
+     "first": "9 EVIDENTIALS EVIDENTIALS 15 PATIENT PRONOUNS 21 ADVERBIALS",
+     "second": "9 EVIDENTIALS 15 PATIENT PRONOUNS 21 ADVERBIALS"
+    },
+    {
+     "column": 2,
+     "first": "10 MODALS MODALS 16 INFINITIVE MODAL 22 AGENT PL, PATIENT PL",
+     "second": "10 MODALS 16 INFINITIVE MODAL 22 AGENT PL, PATIENT PL"
+    },
+    {
+     "column": 3,
+     "first": "11 AGENT AGENT PRONOUNS, OBVIATIVE 17 PHYSICAL POSSESSION 23 PATIENT PL, POSS PL, INDIR PAT PL",
+     "second": "11 AGENT PRONOUNS, OBVIATIVE 17 PHYSICAL POSSESSION 23 PATIENT PL, POSS PL, INDIR PAT PL"
+    },
+    {
+     "column": 4,
+     "first": "12 INCLUSIVE INCLUSIVE PRONOUNS 18 AGENT POSS, BENEFACTIVE, PREVERB 24 INDIV AGT PL, PATIENT PL",
+     "second": "12 INCLUSIVE PRONOUNS 18 AGENT POSS, BENEFACTIVE, PREVERB 24 INDIV AGT PL, PATIENT PL"
+    },
+    {
+     "column": 5,
+     "first": "13 AGENT PL,[?] AGENT PL, AGENT POSS, PREVERB 19 RESULTATIVE/ SEQUENTIAL 25 NOUN ± PL",
+     "second": "13 AGENT PL, AGENT POSS, PREVERB 19 RESULTATIVE/ SEQUENTIAL 25 NOUN ± PL"
+    },
+    {
+     "column": 6,
+     "first": "14 EVIDENTIAL EVIDENTIAL 20 AORIST, JUSSIVE 26 STEM",
+     "second": "14 EVIDENTIA 20 AORIST, JUSSIVE 26 STEM"
+    }
+   ]
+  },
+  {
+   "number": 8,
+   "title": "Table 8. Modal Prefixes: Forms and Functions",
+   "book_pages": [
+    34
+   ],
+   "status": "the same text, rows divided differently",
+   "rows": [
+    [
+     "Mode",
+     "Subordinate/ Non-subordinate",
+     "Form(s)",
+     "Function(s)"
+    ],
+    [
+     "Indicative IND",
+     "Non-subordinate",
+     "ta- 1/2.A ti- 3.A",
+     "• Statements • Directive statements"
+    ],
+    [
+     "Negative Indicative NEG.IND",
+     "Non-subordinate",
+     "kaakaa- 1/2.A kaaki- 3.A",
+     "• Negative statements • Negative directive statements"
+    ],
+    [
+     "Assertive ASSR",
+     "Non-subordinate",
+     "rii-",
+     "• Emphatic statements • Directive statements • Demonstration, presentation statements"
+    ],
+    [
+     "Contingent CONT",
+     "Non-subordinate",
+     "i- 1/2.A ri- 3.A",
+     "• Future, resultative statements • Sequential statements • Mild imperative statements, requests"
+    ],
+    [
+     "Potential POT",
+     "Non-subordinate",
+     "kuus ... i- 1/3.A kaas ... i- 2.A",
+     "• Future statements • Statements of possibility, potentiality, probability"
+    ],
+    [
+     "Absolutive ABS",
+     "Non-subordinate",
+     "ra-",
+     "• Interrogative statements • Statements in narration • Demonstrative statements"
+    ],
+    [
+     "Subjunctive (Optative) SUBJ",
+     "Non-subordinate",
+     "aa- 1/2.A ii- 3.A",
+     "Statements of wish, desire"
+    ],
+    [
+     "Infinitive (Admonitive) INF",
+     "Non-subordinate",
+     "ra . . . ku-",
+     "Directive statements"
+    ],
+    [
+     "Contingent (Conditional) CONT",
+     "Subordinate",
+     "i- 1/2.A ri- 3.A",
+     "Conditional, contingent statements"
+    ],
+    [
+     "Absolutive (Gerundial) ABS",
+     "Subordinate",
+     "ra-",
+     "• Subordinate statements • Gerundial forms"
+    ],
+    [
+     "Subjunctive SUBJ",
+     "Subordinate",
+     "aa- 1/2.A ii- 3.A",
+     "Unrealized, hypothetical, contrary to fact statements"
+    ],
+    [
+     "Infinitive INF",
+     "Subordinate",
+     "ra . . . ku-",
+     "• Complement statements after verbs of wishing, thinking, feeling • Subordinate statements • Directive statements"
+    ]
+   ],
+   "rows_as_the_other_reader_divided_them": [
+    [
+     "Mode",
+     "Subordinate/ Non-subordinate",
+     "Form(s)",
+     "Function(s)"
+    ],
+    [
+     "Indicative IND",
+     "Non-subordinate",
+     "ta- 1/2.A",
+     "• Statements"
+    ],
+    [
+     "",
+     "",
+     "ti- 3.A",
+     "• Directive statements"
+    ],
+    [
+     "Negative Indicative",
+     "Non-subordinate",
+     "kaakaa- 1/2.A",
+     "• Negative statements"
+    ],
+    [
+     "NEG.IND",
+     "",
+     "kaaki- 3.A",
+     "• Negative directive statements"
+    ],
+    [
+     "Assertive ASSR",
+     "Non-subordinate",
+     "rii-",
+     "• Emphatic statements"
+    ],
+    [
+     "",
+     "",
+     "",
+     "• Directive statements"
+    ],
+    [
+     "",
+     "",
+     "",
+     "• Demonstration, presentation statements"
+    ],
+    [
+     "Contingent CONT",
+     "Non-subordinate",
+     "i- 1/2.A",
+     "• Future, resultative statements"
+    ],
+    [
+     "",
+     "",
+     "ri- 3.A",
+     "• Sequential statements"
+    ],
+    [
+     "",
+     "",
+     "",
+     "• Mild imperative statements, requests"
+    ],
+    [
+     "Potential POT",
+     "Non-subordinate",
+     "kuus ... i- 1/3.A",
+     "• Future statements"
+    ],
+    [
+     "",
+     "",
+     "kaas ... i- 2.A",
+     "• Statements of possibility, potentiality,"
+    ],
+    [
+     "",
+     "",
+     "",
+     "probability"
+    ],
+    [
+     "Absolutive ABS",
+     "Non-subordinate",
+     "ra-",
+     "• Interrogative statements"
+    ],
+    [
+     "",
+     "",
+     "",
+     "• Statements in narration"
+    ],
+    [
+     "",
+     "",
+     "",
+     "• Demonstrative statements"
+    ],
+    [
+     "Subjunctive",
+     "Non-subordinate",
+     "aa- 1/2.A",
+     "Statements of wish, desire"
+    ],
+    [
+     "(Optative) SUBJ",
+     "",
+     "ii- 3.A",
+     ""
+    ],
+    [
+     "Infinitive",
+     "Non-subordinate",
+     "ra . . . ku-",
+     "Directive statements"
+    ],
+    [
+     "(Admonitive) INF",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Contingent",
+     "Subordinate",
+     "i- 1/2.A",
+     "Conditional, contingent statements"
+    ],
+    [
+     "(Conditional) CONT",
+     "",
+     "ri- 3.A",
+     ""
+    ],
+    [
+     "Absolutive",
+     "Subordinate",
+     "ra-",
+     "• Subordinate statements"
+    ],
+    [
+     "(Gerundial) ABS",
+     "",
+     "",
+     "• Gerundial forms"
+    ],
+    [
+     "Subjunctive SUBJ",
+     "Subordinate",
+     "aa- 1/2.A",
+     "Unrealized, hypothetical, contrary to fact"
+    ],
+    [
+     "",
+     "",
+     "ii- 3.A",
+     "statements"
+    ],
+    [
+     "Infinitive INF",
+     "Subordinate",
+     "ra . . . ku-",
+     "• Complement statements after verbs of"
+    ],
+    [
+     "",
+     "",
+     "",
+     "wishing, thinking, feeling"
+    ],
+    [
+     "",
+     "",
+     "",
+     "• Subordinate statements"
+    ],
+    [
+     "",
+     "",
+     "",
+     "• Directive statements"
+    ]
+   ]
+  },
+  {
+   "number": 9,
+   "title": "Table 9. Pronominal Prefixes",
+   "book_pages": [
+    35
+   ],
+   "status": "the same in both readings",
+   "rows": [
+    [
+     "Person",
+     "Agent",
+     "Patient"
+    ],
+    [
+     "1st",
+     "t-",
+     "ku-"
+    ],
+    [
+     "2nd",
+     "s-",
+     "a-"
+    ],
+    [
+     "Obviative",
+     "ir-",
+     ""
+    ],
+    [
+     "Dual inclusive",
+     "acir-",
+     "aca-"
+    ],
+    [
+     "Plural inclusive",
+     "a-",
+     ""
+    ]
+   ]
+  },
+  {
+   "number": 10,
+   "title": "Table 10. Plural Prefixes",
+   "book_pages": [
+    36
+   ],
+   "status": "the same text, rows divided differently",
+   "rows": [
+    [
+     "",
+     "Person",
+     "Active transitive",
+     "Active intransitive",
+     "Passive",
+     "Descriptive",
+     "Locative"
+    ],
+    [
+     "AGENT",
+     "1st, 2nd",
+     "rak-",
+     "rak- COLL rak- + raar- INDV",
+     "",
+     "rak-",
+     "rak-"
+    ],
+    [
+     "",
+     "3rd",
+     "si...ir-",
+     "ir- COLL raar- INDV",
+     "",
+     "ir- COLL raar- INDV",
+     "ir- COLL raar- INDV"
+    ],
+    [
+     "PATIENT",
+     "1st, 2nd",
+     "rak-",
+     "",
+     "rak-",
+     "",
+     ""
+    ],
+    [
+     "",
+     "3rd",
+     "ak- AN raar- INAN ak- + raar- AN INDV",
+     "",
+     "ir- . . . ak-",
+     "",
+     ""
+    ]
+   ],
+   "rows_as_the_other_reader_divided_them": [
+    [
+     "",
+     "Person",
+     "Active transitive",
+     "Active intransitive",
+     "Passive",
+     "Descriptive",
+     "Locative"
+    ],
+    [
+     "",
+     "1st, 2nd",
+     "rak-",
+     "rak- COLL",
+     "",
+     "rak-",
+     "rak-"
+    ],
+    [
+     "",
+     "",
+     "",
+     "rak- + raar-",
+     "",
+     "",
+     ""
+    ],
+    [
+     "AGENT",
+     "",
+     "",
+     "INDV",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "3rd",
+     "si...ir-",
+     "ir- COLL",
+     "",
+     "ir- COLL",
+     "ir- COLL"
+    ],
+    [
+     "",
+     "",
+     "",
+     "raar- INDV",
+     "",
+     "raar- INDV",
+     "raar- INDV"
+    ],
+    [
+     "",
+     "1st, 2nd",
+     "rak-",
+     "",
+     "rak-",
+     "",
+     ""
+    ],
+    [
+     "PATIENT",
+     "",
+     "ak- AN",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "3rd",
+     "raar- INAN",
+     "",
+     "ir- . . . ak-",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     "ak- + raar- AN INDV",
+     "",
+     "",
+     "",
+     ""
+    ]
+   ]
+  },
+  {
+   "number": 11,
+   "title": "Table 11. Evidential Prefixes: Meanings and Distributions",
+   "book_pages": [
+    37
+   ],
+   "status": "the same in both readings",
+   "rows": [
+    [
+     "Evidential",
+     "Approximate gloss",
+     "Co-occurring modes",
+     "Position relative to modal",
+     "Usage contexts",
+     "Meaning"
+    ],
+    [
+     "wi- QUOT",
+     "'it is said'",
+     "Indicative",
+     "Precedes",
+     "Narratives, discourse",
+     "Speaker is repeating what has been told"
+    ],
+    [
+     "ar- EV",
+     "'evidently; it seems'",
+     "Absolutive Contingent",
+     "Precedes",
+     "Past activity or one begun",
+     "Speaker has not witnessed an event Speaker cannot see a designated object"
+    ],
+    [
+     "ar- EV",
+     "",
+     "Absolutive Contingent Potential Subjunctive",
+     "Follows",
+     "Unrealized activity",
+     "Speaker will not witness an event"
+    ],
+    [
+     "ar- EV",
+     "'would' + V",
+     "Indicative Infinitive",
+     "Follows",
+     "Periodic past activity, usu. indef. time",
+     "Speaker describes an expected or normative activity"
+    ],
+    [
+     "kuur- DUB.1",
+     "'must have' + V",
+     "Absolutive",
+     "Precedes",
+     "Narratives, accounts",
+     "Speaker has not witnessed an event Statement indicates element of doubt"
+    ],
+    [
+     "kuurur- DUB.2",
+     "'then (presumably)' + V",
+     "Contingent",
+     "Precedes",
+     "Sequential activity in narratives",
+     "Speaker has not witnessed an event Statement indicates element of doubt"
+    ],
+    [
+     "tiir- INFR",
+     "'must have' + V",
+     "Absolutive",
+     "Precedes",
+     "Narratives, conversations",
+     "Speaker infers occurrence of event"
+    ]
+   ]
+  },
+  {
+   "number": 12,
+   "title": "Table 12. The Outer Prefix, or Proclitic, Template",
+   "book_pages": [
+    40
+   ],
+   "status": "the same in both readings",
+   "rows": [
+    [
+     "1",
+     "2",
+     "3",
+     "4"
+    ],
+    [
+     "LOC & TEMP ADVERBIALS",
+     "INDEFINITE",
+     "ADVERBIALS",
+     "DEMONSTRATIVES / DEICTICS"
+    ],
+    [
+     "5",
+     "6",
+     "7",
+     "8"
+    ],
+    [
+     "ADVERBIAL",
+     "DUAL (PL) NUMBER",
+     "REFLEXIVE / RECIPROCAL",
+     "NEGATIVES, YES/NO INTERROG"
+    ]
+   ]
+  },
+  {
+   "number": 13,
+   "title": "Table 13. Negative Prefixes",
+   "book_pages": [
+    40
+   ],
+   "status": "the same in both readings",
+   "rows": [
+    [
+     "Negative Prefix",
+     "Function",
+     "Modal Co-occurrences"
+    ],
+    [
+     "kara- (NEG.1)",
+     "Simple negative",
+     "Indicative ( + wi- QUOT), Contingent, Absolutive, Conditional, Subjunctive, Infinitive"
+    ],
+    [
+     "ka- (NEG.2)",
+     "",
+     "Absolutive, Gerundial, Infinitive"
+    ],
+    [
+     "kaaku- (NEG.POSS)",
+     "Negative possession",
+     "Subjunctive (non-subordinate)"
+    ],
+    [
+     "karii . . . i- (EMPH.NEG)",
+     "Emphatic negative",
+     "Assertive, Contingent, Absolutive"
+    ]
+   ]
+  },
+  {
+   "number": 14,
+   "title": "Table 14. Interrogative Pronouns",
+   "book_pages": [
+    41
+   ],
+   "status": "the same text, rows divided differently",
+   "rows": [
+    [
+     "Interrogative Pronoun",
+     "English Translation",
+     "Modal Agreement"
+    ],
+    [
+     "ka-",
+     "yes-no question",
+     "Absolutive mode"
+    ],
+    [
+     "ka- . . . i-",
+     "negative yes-no questions",
+     ""
+    ],
+    [
+     "takii",
+     "'who'",
+     ""
+    ],
+    [
+     "kirikii, kikii",
+     "'what, why, how'",
+     ""
+    ],
+    [
+     "kickii",
+     "'how many'",
+     ""
+    ],
+    [
+     "kiruu",
+     "'where'",
+     ""
+    ]
+   ],
+   "rows_as_the_other_reader_divided_them": [
+    [
+     "Interrogative Pronoun",
+     "English Translation",
+     "Modal Agreement"
+    ],
+    [
+     "ka-",
+     "yes-no question",
+     ""
+    ],
+    [
+     "ka- . . . i-",
+     "negative yes-no questions",
+     ""
+    ],
+    [
+     "takii",
+     "'who'",
+     "Absolutive mode"
+    ],
+    [
+     "kirikii, kikii",
+     "'what, why, how'",
+     ""
+    ],
+    [
+     "kickii",
+     "'how many'",
+     ""
+    ],
+    [
+     "kiruu",
+     "'where'",
+     ""
+    ]
+   ]
+  },
+  {
+   "number": 15,
+   "title": "Table 15. The Verb Stem Template",
+   "book_pages": [
+    44
+   ],
+   "status": "the same in both readings",
+   "rows": [
+    [
+     "1. Iterative",
+     "2. Noun",
+     "3. Descriptive Stem",
+     "4. Portative/ Comitative",
+     "5. Locative"
+    ],
+    [
+     "raar-, ka- ITER",
+     "awi- 'image' wak- 'sound'",
+     "kasis 'hard' tarahkis 'strong'",
+     "ri-, ra-, ruu- PORT cir-, ciras- COM",
+     "ka- 'on' kaa- 'inside'"
+    ],
+    [
+     "6. Active Verb Complement",
+     "7. Verb Root",
+     "8. Causative"
+    ],
+    [
+     "kiikak 'drink' + -his PERF",
+     "at 'go'",
+     "-rik, -raʔuk"
+    ]
+   ]
+  },
+  {
+   "number": 16,
+   "title": "Table 16. Verb Suffix Template",
+   "book_pages": [
+    44
+   ],
+   "status": "the same in both readings",
+   "rows": [
+    [
+     "25",
+     "26",
+     "27",
+     "28"
+    ],
+    [
+     "VERB STEM",
+     "PERFECTIVE, PERFECTIVE SUBORDINATE, IMPERFECTIVE, IMPERFECTIVE SUBORDINATE",
+     "INTENTIVE, HABITUAL, INCHOATIVE",
+     "INTENTIVE SUBORDINATE"
+    ]
+   ]
+  },
+  {
+   "number": 17,
+   "title": "Table 17. Suffixes for Aspect and Subordination",
+   "book_pages": [
+    45,
+    50,
+    51
+   ],
+   "status": "the same text, rows divided differently",
+   "rows": [
+    [
+     "Categories",
+     "Suffixes"
+    ],
+    [
+     "Perfective/ Imperfective",
+     "Non-Intentive/Intentive Habitual/Inchoative",
+     "Non-Subordinate/ Subordinate",
+     ""
+    ],
+    [
+     "Perfective",
+     "Non-intentive",
+     "Non-subordinate",
+     "-Ø /-ʔ"
+    ],
+    [
+     "",
+     "",
+     "",
+     "-his (when incorporated)"
+    ],
+    [
+     "",
+     "",
+     "Subordinate",
+     "Class I",
+     "-a"
+    ],
+    [
+     "",
+     "",
+     "",
+     "Class II",
+     "-i"
+    ],
+    [
+     "",
+     "",
+     "",
+     "Class III",
+     "final syllable change"
+    ],
+    [
+     "",
+     "",
+     "",
+     "Class IV",
+     "-Ø"
+    ],
+    [
+     "",
+     "Intentive",
+     "Non-subordinate",
+     "-his + -ta"
+    ],
+    [
+     "",
+     "",
+     "Subordinate",
+     "-his + -ta + -rit"
+    ],
+    [
+     "Imperfective",
+     "Non-intentive",
+     "Non-subordinate",
+     "-:huʔ"
+    ],
+    [
+     "",
+     "",
+     "",
+     "-:hus (when incorporated)"
+    ],
+    [
+     "",
+     "",
+     "Subordinate",
+     "-hu"
+    ],
+    [
+     "",
+     "Intentive",
+     "Non-subordinate",
+     "-:hus + -ta",
+     "→",
+     "-:husta"
+    ],
+    [
+     "",
+     "",
+     "Subordinate",
+     "-hus + -ta + -rit",
+     "→",
+     "-hustarit"
+    ],
+    [
+     "",
+     "Inchoative",
+     "Non-subordinate",
+     "-:hus + -itik",
+     "→",
+     "-:husitit"
+    ],
+    [
+     "",
+     "",
+     "Subordinate",
+     "-hus + -itik",
+     "→",
+     "-husitit"
+    ],
+    [
+     "",
+     "Habitual",
+     "Non-subordinate",
+     "-:hus + -uukuʔ",
+     "→",
+     "-:husuukuʔ"
+    ],
+    [
+     "",
+     "",
+     "Subordinate",
+     "-hus + -uku",
+     "→",
+     "-husuku"
+    ],
+    [
+     "-aar + -Ø",
+     "PERF",
+     "→",
+     "-aa"
+    ],
+    [
+     "-aar + -a",
+     "PERF.SUB",
+     "→",
+     "-aara"
+    ],
+    [
+     "-aar + -his + -ta",
+     "PERF.INT",
+     "→",
+     "-aarista"
+    ],
+    [
+     "-aar + -i",
+     "IMPF",
+     "→",
+     "-aariʔ"
+    ],
+    [
+     "-aar + -i",
+     "IMPF.SUB",
+     "→",
+     "-aari"
+    ],
+    [
+     "-itik + -Ø",
+     "PERF.SUB",
+     "→",
+     "-itit"
+    ],
+    [
+     "-itik + -his + -ta",
+     "PERF.INT",
+     "→",
+     "-itiksta"
+    ],
+    [
+     "-itik + -:hus",
+     "IMPF",
+     "→",
+     "-itiikuʔ"
+    ],
+    [
+     "-itik + -hus",
+     "IMPF.SUB",
+     "→",
+     "-itiku"
+    ]
+   ],
+   "rows_as_the_other_reader_divided_them": [
+    [
+     "Categories",
+     "Suffixes"
+    ],
+    [
+     "Perfective/ Imperfective",
+     "Non-Intentive/Intentive Habitual/Inchoative",
+     "Non-Subordinate/ Subordinate"
+    ],
+    [
+     "Perfective",
+     "Non-intentive",
+     "Non-subordinate",
+     "-Ø /-ʔ"
+    ],
+    [
+     "",
+     "",
+     "",
+     "-his (when incorporated)"
+    ],
+    [
+     "",
+     "",
+     "Subordinate",
+     "Class I",
+     "-a"
+    ],
+    [
+     "",
+     "",
+     "",
+     "Class II",
+     "-i"
+    ],
+    [
+     "",
+     "",
+     "",
+     "Class III",
+     "final syllable change"
+    ],
+    [
+     "",
+     "",
+     "",
+     "Class IV",
+     "-Ø"
+    ],
+    [
+     "",
+     "Intentive",
+     "Non-subordinate",
+     "-his + -ta"
+    ],
+    [
+     "",
+     "",
+     "Subordinate",
+     "-his + -ta + -rit"
+    ],
+    [
+     "Imperfective",
+     "Non-intentive",
+     "Non-subordinate",
+     "-:huʔ"
+    ],
+    [
+     "",
+     "",
+     "",
+     "-:hus (when incorporated)"
+    ],
+    [
+     "",
+     "",
+     "Subordinate",
+     "-hu"
+    ],
+    [
+     "",
+     "Intentive",
+     "Non-subordinate",
+     "-:hus + -ta",
+     "→",
+     "-:husta"
+    ],
+    [
+     "",
+     "",
+     "Subordinate",
+     "-hus + -ta + -rit",
+     "→",
+     "-hustarit"
+    ],
+    [
+     "",
+     "Inchoative",
+     "Non-subordinate",
+     "-:hus + -itik",
+     "→",
+     "-:husitit"
+    ],
+    [
+     "",
+     "",
+     "Subordinate",
+     "-hus + -itik",
+     "→",
+     "-husitit"
+    ],
+    [
+     "",
+     "Habitual",
+     "Non-subordinate",
+     "-:hus + -uukuʔ",
+     "→",
+     "-:husuukuʔ"
+    ],
+    [
+     "",
+     "",
+     "Subordinate",
+     "-hus + -uku",
+     "→",
+     "-husuku"
+    ],
+    [
+     "-aar + -Ø",
+     "PERF",
+     "→",
+     "-aa"
+    ],
+    [
+     "-aar + -a",
+     "PERF.SUB",
+     "→",
+     "-aara"
+    ],
+    [
+     "-aar + -his + -ta",
+     "PERF.INT",
+     "→",
+     "-aarista"
+    ],
+    [
+     "-aar + -i",
+     "IMPF",
+     "→",
+     "-aariʔ"
+    ],
+    [
+     "-aar + -i",
+     "IMPF.SUB",
+     "→",
+     "-aari"
+    ],
+    [
+     "-itik + -Ø",
+     "PERF.SUB",
+     "→",
+     "-itit"
+    ],
+    [
+     "-itik + -his + -ta",
+     "PERF.INT",
+     "→",
+     "-itiksta"
+    ],
+    [
+     "-itik + -:hus",
+     "IMPF",
+     "→",
+     "-itiikuʔ"
+    ],
+    [
+     "-itik + -hus",
+     "IMPF.SUB",
+     "→",
+     "-itiku"
+    ]
+   ]
+  }
+ ]
+}

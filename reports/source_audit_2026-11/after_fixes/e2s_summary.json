@@ -1,0 +1,23 @@
+{
+ "printed_english_entries": 6431,
+ "index_rows": 7806,
+ "rows_without_a_skiri_term": 2641,
+ "cross_references": 4578,
+ "fields_checked": 32636,
+ "fields_equal": 32632,
+ "phonetic_forms_not_in_parks_notation": {},
+ "by_class": {
+  "difference": 158
+ },
+ "differences_by_severity": {
+  "2": 2,
+  "1": 156
+ },
+ "by_class_field_kind": {
+  "difference | (printed skiri term) | printed-term-not-stored": 152,
+  "difference | xref.skiri | spacing": 2,
+  "difference | xref.skiri | stored-keeps-line-break": 2,
+  "difference | (english headword) | stored-headword-not-printed": 1,
+  "difference | (english headword) | printed-headword-not-stored": 1
+ }
+}

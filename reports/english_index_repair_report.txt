@@ -1,0 +1,316 @@
+The English index rebuilt from the printed page: applied, 2026-11-14 14:08
+
+The page: 6431 printed English entries on 284 pages; the page number printed on 284 of them is the file number plus 60 (the others print none)
+  5165 Skiri terms under them; 2641 entries are cross-references only; 4578 cross-references with 5209 Skiri forms in braces
+  terms linked to a dictionary entry: 5162 of 5165
+      headword                                             4902
+      headword, phonetic form, class                       100
+      headword, phonetic form                              92
+      headword, phonetic form, class, glosses              68
+      2 dictionary entries fit equally                     2
+      3 dictionary entries fit equally                     1
+  cross-references: 4573 of 4578 point to a printed English headword; 5202 of 5209 Skiri forms in braces are a dictionary headword or a term of this section
+
+The file english_to_skiri_linked.json: 6414 entries, 8073 subentries before; 6431 entries, 7806 subentries after
+  entries changed in all                                             6407
+  page numbers set to the page of the book                           5659
+  placeholder subentries (no term on the page) removed               516
+  entries whose cross-references changed                             314
+  phonetic forms: notation only                                      221
+  Skiri terms corrected (term or preverb)                            168
+  links to a dictionary entry set or changed                         165
+  cross-reference forms the first reading had stored as terms (removed; they are in the cross-references) 133
+  printed headwords the file lacked (added)                          24
+  subentries of the file no printed term accounts for (removed)      15
+  classes corrected                                                  12
+  phonetic forms: content corrected                                  7
+  subentries stored under a neighbouring headword (moved to the one they are printed under) 7
+  entries the first reading had split in two (put together)          6
+  printed terms the file lacked (added)                              2
+  entries of the file no printed headword accounts for (removed)     1
+
+The tables: english_index 8067 rows before, 7806 after (0 already as they will be); cross_references 4585 before, 4578 after (2492 already)
+
+Left for a person: 3 terms without a link, 0 forms where a hyphen at a line end could not be settled, 1 notes on the print
+
+Applied.
+backups: OneDrive/pari_pakuru_backups (stamp 20261114_140836); integrity check: ok
+
+Terms without a link (3)
+  and (p. 67): a [a/aa] CONJ  [2 dictionary entries fit equally]
+  end, on the (p. 142): ica- [ɪ·čə–] LOC  [3 dictionary entries fit equally]
+  say (p. 267): wakaʔu [–wə·kə·ʔu–] VI VT  [2 dictionary entries fit equally]
+
+Line-end hyphens not settled (the hyphen is dropped) (0)
+
+Line-end hyphens settled one by one (1)
+  ninety (p. 223): kskiitikstaaruʔ-ruksiriʔ, kskiitikstaaruʔ-a- | ruksiriʔ, kskiitiks-ruksiriʔ, kskiitiks-a-ruksiriʔ  read as kskiitikstaaruʔ-ruksiriʔ, kskiitikstaaruʔ-a-ruksiriʔ, kskiitiks-ruksiriʔ, kskiitiks-a-ruksiriʔ: the same head prints kskiitiks-a-ruksiriʔ on one line: the hyphen after a belongs to the word
+
+Links changed from one dictionary entry to another, or taken away (16)
+  and (p. 67) a: SK-a-p349-3575 -> none  [2 dictionary entries fit equally]
+  bark (p. 77) kiwak [+ raar-]: SK-kiwak-p448-3973 -> SK-kiwak_[+_raar-]-p448-3974  [headword]
+  belong to a group (p. 83) uhuur [+ raar-]: SK-uhuur-p169-3341 -> SK-uhuur_[+_raar-]-p169-3342  [headword]
+  end, on the (p. 142) ica-: SK-ica--p53-0898 -> none  [3 dictionary entries fit equally]
+  follow behind (p. 156) tatataʔat (ut...): SK-tatataqat-p162-3169 -> SK-tatataqat-p162-3170  [headword]
+  many (p. 209) riruuhci (uur...) [+ raar-]: SK-riruuhci-p494-4204 -> SK-riruuhci_[+_raar-]-p494-4205  [headword, phonetic form, class, glosses]
+  play (p. 239) kusisaar: SK-kusisaar-p103-2018 -> SK-kusisaar-p103-4273  [headword]
+  play (p. 239) kusisaar (ir...): SK-kusisaar-p103-2018 -> SK-kusisaar-p103-2019  [headword]
+  say (p. 267) wakaʔu: SK-wakaqu-p175-3463 -> none  [2 dictionary entries fit equally]
+  short-winded (p. 276) hiksukac: SK-hiksukac-p390-3864 -> SK-hiksukac-p390-3865  [headword, phonetic form, class]
+  smell (p. 283) kahaara (ut...): SK-kahaara-p75-1371 -> SK-kahaara-p76-1372  [headword]
+  telephone (p. 311) racawaktaarik (ut...): SK-racawaktaarik-p478-4115 -> SK-racawaktaarik-p478-4116  [headword]
+  thus (be) (p. 316) uhuur [+ raar-]: SK-uhuur-p169-3341 -> SK-uhuur_[+_raar-]-p169-3342  [headword]
+  unfriendly (p. 327) aciksuhuriwaar (uur...) [+ neg.]: SK-aciksuhuriwaar-p8-0070 -> SK-aciksuhuriwaar_[+_neg.]-p8-0071  [headword, phonetic form, class, glosses]
+  wait (p. 332) raahurii (uur...): SK-raahurii-p118-2295 -> SK-raahurii-p118-2296  [headword]
+  wealthy (p. 337) kaapaakis [+ neg.]: SK-kaapaakis-p73-1297 -> SK-kaapaakis_[+_neg.]-p73-1298  [headword]
+
+Notes on the print (1)
+  house,stone (p. 185): the text layer has no space after the comma; read as 'house, stone', as every other headword of this pattern is printed
+
+Entries removed from the file (1)
+  horse (file page 122); its terms: cuskatit; printed, and kept, under 'horse, buckskin', kukatit; printed, and kept, under 'horse, buckskin'
+
+Entries added from the page (24)
+  angry at (p. 68)
+  appear to be (p. 69)
+  bank, over a (p. 77)
+  bold (p. 90)
+  consider (a way) (p. 114)
+  give up (a habit) (p. 164)
+  offer smoke (p. 226)
+  picture to hang (p. 236)
+  shawl (fringed) (p. 275)
+  shell (of a firearm) (p. 275)
+  shell (of a mollusk) (p. 275)
+  weather to change (p. 338)
+  weather, cold (p. 338)
+  web (p. 338)
+  weeds, in (p. 338)
+  week, beginning of a (p. 338)
+  welcome (p. 338)
+  well behaved (p. 338)
+  well now (p. 338)
+  well water (p. 338)
+  well, dig a (p. 338)
+  well-off (p. 338)
+  well-watered (p. 338)
+  Welsh pony (p. 338)
+
+English headwords corrected (0)
+
+Subentries removed from the file (15)
+  fade (p. 147): ʔuuksta; printed under no headword near by
+  knife, large (p. 196): riiciraariksisuʔ; printed, and kept, under 'knife, butcher'
+  live (p. 204): hurii; printed, and kept, under 'live (pl.)'
+  oak (p. 224): rapaksparaaʔ; printed, and kept, under 'oak, blackjack'
+  paint (p. 230): piciistaʔuk; printed, and kept, under 'paint'
+  paint (p. 230): raawisuʔ; printed, and kept, under 'paint'
+  sliced (p. 282): racarahak; printed, and kept, under 'slice'
+  sliced (p. 282): racarat; printed, and kept, under 'slice'
+  sliced (p. 282): tarahak; printed, and kept, under 'slice'
+  sliced (p. 282): tarat; printed, and kept, under 'slice'
+  tease (p. 310): ciiharistaʔuk (ut...); printed, and kept, under 'tease'
+  tease (p. 310): icaktuukus; printed, and kept, under 'tease'
+  wild animal (p. 341): icaktuukus; printed, and kept, under 'wild'
+  wild animal (p. 341): kahuraaruʔ; printed, and kept, under 'wild', 'woods'
+  worry (p. 344): tarahwii; printed, and kept, under 'worried'
+
+Subentries added from the page (2)
+  bold (p. 90): awiraʔa (ir...) [+ neg.] [–ə·wɪ·raa–]
+  bold (p. 90): kiiskawaarasit [–kiis·kə·waa·rə·sɪt–]
+
+Skiri terms corrected (168)
+  age, a certain (p. 65): 'awiʔu [+ wiiruu-, i-]' None -> 'awiʔu' '[+ wiiruu-, i-]'
+  aim (p. 66): 'warik [+ i-]' None -> 'warik' '[+ i-]'
+  appoint (p. 69): 'ruciik [+ ak-]' None -> 'ruciik' '[+ ak-]'
+  arm, under one's (p. 69): 'irikata- (ut...)' None -> 'irikata-' '(ut...)'
+  associated (p. 71): 'tahurar (ut...)' None -> 'tahurar' '(ut...)'
+  attached (p. 71): 'tatat (ut...)' None -> 'tatat' '(ut...)'
+  attack (p. 71): 'racaraatatk (ut...)' None -> 'racaraatatk' '(ut...)'
+  attack (p. 71): 'rahuruu (ut...)' None -> 'rahuruu' '(ut...)'
+  be (thus) (p. 79): 'Ø' '( u t . . . )' -> 'Ø' '(ut...)'
+  believe (p. 82): 'wakuriiriksik [+ i-]' None -> 'wakuriiriksik' '[+ i-]'
+  belong to a group (p. 83): 'uhuur' None -> 'uhuur' '[+ raar-]'
+  beside (p. 84): 'awikatasa (uur...)' None -> 'awikatasa' '(uur...)'
+  beside (p. 84): 'tahaari (ut...)' None -> 'tahaari' '(ut...)'
+  bitter (p. 85): 'taʔu (ir...)' None -> 'taʔu' '(ir...)'
+  bitter (p. 85): 'tahataʔu (ir...)' None -> 'tahataʔu' '(ir...)'
+  bubble (liquid) (p. 95): 'kickataʔa (ir...)' None -> 'kickataʔa' '(ir...)'
+  buck (horse) (p. 95): 'awikaaʔa (ir...)' None -> 'awikaaʔa' '(ir...)'
+  bump (p. 96): 'paca (ir...)' None -> 'paca' '(ir...)'
+  bun, wear a (p. 96): 'kiiriitkatakus (ir...ut...)' None -> 'kiiriitkatakus' '(ir...ut...)'
+  bunch (p. 96): 'kiruuskus [+ raar-]' None -> 'kiruuskus' '[+ raar-]'
+  bushy (p. 97): 'waasar [+ ruu-]' None -> 'waasar' '[+ ruu-]'
+  certain (p. 103): 'waktiks' None -> 'waktiks' '[+ i-]'
+  close together (p. 109): 'takasis [+ raar-]' None -> 'takasis' '[+ raar-]'
+  come down (pl.) (p. 112): 'awaʔa (ir...) [+ raar-]' None -> 'awaʔa' '(ir...) [+ raar-]'
+  come down an incline (p. 112): 'tawiraaʔa (ir...)' None -> 'tawiraaʔa' '(ir...)'
+  come home (p. 112): 'kaaʔiisa (ir...)' None -> 'kaaʔiisa' '(ir...)'
+  come hopping (p. 112): 'awikaaʔa (ir...)' None -> 'awikaaʔa' '(ir...)'
+  come inside (p. 112): 'huuka (ir...)' None -> 'huuka' '(ir...)'
+  come outside (p. 112): 'awacitiksa (ir...)' None -> 'awacitiksa' '(ir...)'
+  come to a stop (p. 112): 'iriitik [+ raar-]' None -> 'iriitik' '[+ raar-]'
+  come together (p. 112): 'tiirisa (ir...) [+ raar-]' None -> 'tiirisa' '(ir...) [+ raar-]'
+  come toward (p. 112): 'kusickawiʔa (ir...ut...)' None -> 'kusickawiʔa' '(ir...ut...)'
+  come up (p. 112): 'kaaʔa (ir...)' None -> 'kaaʔa' '(ir...)'
+  come up (celestial object) (p. 112): 'taʔa (ir...)' None -> 'taʔa' '(ir...)'
+  conclusion (of a story) (p. 113): 'raaʔiitusuu' '(ut...)' -> 'raaʔiitusuu' '(ut...) [+ruu-, i-]'
+  considerate (p. 114): 'Ø ciksuʔ' '(ut...)' -> 'Ø (ut...) ciksuʔ' None
+  crowded (p. 121): 'taawatat (ut...) [+ raar-]' '(ut...)' -> 'taawatat' '(ut...) [+ raar-]'
+  depend on (p. 128): 'iistir (ut...)' None -> 'iistir' '(ut...)'
+  depend on (p. 128): 'raaʔiistir (ut...)' None -> 'raaʔiistir' '(ut...)'
+  describe to (p. 128): 'iitawuh (ut...)' None -> 'iitawuh' '(ut...)'
+  design (p. 128): 'wirariir (uur...)' None -> 'wirariir' '(uur...)'
+  determined (p. 128): 'aciksisit [+ neg.]' None -> 'aciksisit' '[+ neg.]'
+  determined (p. 128): 'rirahkaaʔat (ut...)' None -> 'rirahkaaʔat' '(ut...)'
+  end (of a way) (p. 141): 'raawita (ut...) [i-]' None -> 'raawita' '(ut...) [i-]'
+  end, at the (p. 142): 'wita(wi)- (ut...)' None -> 'wita(wi)-' '(ut...)'
+  enjoy oneself (p. 142): 'awakii (ut...)' None -> 'awakii' '(ut...)'
+  exaggerate (p. 143): 'kiis (ir...)' None -> 'kiis' '(ir...)'
+  examine (p. 143): 'kiriktawiʔat (ut...)' None -> 'kiriktawiʔat' '(ut...)'
+  examine (p. 143): 'raakiriktawiʔat (ut...)' None -> 'raakiriktawiʔat' '(ut...)'
+  faithful (p. 147): 'waktiks' None -> 'waktiks' '[+ i-]'
+  feather on one's head, wear a (p. 149): 'hiitka' '(ir... ut...)' -> 'hiitka (ir... ut...)' None
+  funny (p. 161): 'awakiir/kir (ir...)' None -> 'awakiir/kir' '(ir...)'
+  funny (p. 161): 'raawakiir/kir (ir...)' None -> 'raawakiir/kir' '(ir...)'
+  gamble (p. 161): 'riisk (ut...)' None -> 'riisk' '(ut...)'
+  gamble (p. 161): 'warik [+ i-]' None -> 'warik' '[+ i-]'
+  go close to (p. 165): 'tahaariwiʔat [+ ruu-]' None -> 'tahaariwiʔat' '[+ ruu-]'
+  hand over (p. 175): 'ruuʔa (ir...)' None -> 'ruuʔa' '(ir...)'
+  hand, put in one's (p. 175): 'ikskatawuh (ut...)' None -> 'ikskatawuh' '(ut...)'
+  handgame, play (p. 175): 'iksapaaraar (ut...)' None -> 'iksapaaraar' '(ut...)'
+  handle (p. 175): 'awaʔuurikuk (ut...)' None -> 'awaʔuurikuk' '(ut...)'
+  hang (p. 175): 'takus (ut...)' None -> 'takus' '(ut...)'
+  hang (p. 175): 'uhuhkiraa (ut...)' None -> 'uhuhkiraa' '(ut...)'
+  hang (p. 175): 'uhuhkiraawuh (ut...)' None -> 'uhuhkiraawuh' '(ut...)'
+  hold onto (a way) (p. 182): 'raaʔahuk (ut...)' None -> 'raaʔahuk' '(ut...)'
+  hole (p. 182): 'hata (ir...)' None -> 'hata' '(ir...)'
+  hole (p. 182): 'hatawuh (uur...)' None -> 'hatawuh' '(uur...)'
+  hole in the ground (p. 182): 'huraahata (ir...)' None -> 'huraahata' '(ir...)'
+  horse, light-colored with black mane (p. 184): 'kiiriit-kaatiit' None -> 'kiiriitkaatiit' None
+  join (p. 192): 'kawiʔuktawuh (ut...) [+ si-]' None -> 'kawiʔuktawuh' '(ut...) [+ si-]'
+  join (p. 192): 'uktawuh (ut...)' None -> 'uktawuh' '(ut...)'
+  joined (p. 193): 'kawiʔukta (ut...)' None -> 'kawiʔukta' '(ut...)'
+  joint (p. 193): 'ukta (ut...)' None -> 'ukta' '(ut...)'
+  joke (verbally) (p. 193): 'wakuhciiharisaar (ut...)' None -> 'wakuhciiharisaar' '(ut...)'
+  jump away from (p. 193): 'awikatahak (uur...)' None -> 'awikatahak' '(uur...)'
+  jump up (coming) (p. 193): 'awikaaʔa (ir...)' None -> 'awikaaʔa' '(ir...)'
+  leave (pl. obj.) (p. 201): 'awaahkiir [+ raar-]' None -> 'awaahkiir' '[+ raar-]'
+  length (a certain) (p. 201): 'ak [+ (ku-, ruu-, irii-), i-]' None -> 'ak' '[+ (ku-, ruu-, irii-), i-]'
+  length (a certain) (p. 201): 'wiʔak [+ (ku-, ruu-), i-]' None -> 'wiʔak' '[+ (ku-, ruu-), i-]'
+  look like (p. 207): 'Ø' '(uur...)' -> 'Ø' '(uur...) [+ ku-]'
+  many (p. 209): 'riruuhci' '(uur...)' -> 'riruuhci' '(uur...) [+ raar-]'
+  meet face to face (p. 213): 'kusickawiriwuh' '(uur...)' -> 'kusickawiriwuh' None
+  mislead (p. 215): 'uhurahuruu (ut...)' None -> 'uhurahuruu' '(ut...)'
+  mix (p. 216): 'rariisk (ut...)' None -> 'rariisk' '(ut...)'
+  mix together (liquids) (p. 216): 'kirahwiriisk (ut...)' None -> 'kirahwiriisk' '(ut...)'
+  mixed together (p. 216): 'rariis (ut...)' None -> 'rariis' '(ut...)'
+  mixed together (p. 216): 'wiriis (ut...)' '[+ raar-]' -> 'wiriis' '(ut...) [+ raar-]'
+  mold (p. 216): 'uuskuut (ut...)' None -> 'uuskuut' '(ut...)'
+  moldy (p. 216): 'uuskuuʔat (ut...)' None -> 'uuskuuʔat' '(ut...)'
+  motion with one hand (p. 217): 'iksuhuraar (ut...)' None -> 'iksuhuraar' '(ut...)'
+  nice country (p. 222): 'kaahurariir (uur...)' '(uur...)' -> 'kaahurariir' '(uur...)'
+  nice day (p. 222): 'sakuhwiriir (uur...)' '(uur...)' -> 'sakuhwiriir' '(uur...)'
+  nice day (p. 222): 'sakuriir (uur...)' '(uur...)' -> 'sakuriir' '(uur...)'
+  nice day (p. 222): 'sakuurawiriir (uur...)' '(uur...)' -> 'sakuurawiriir' '(uur...)'
+  nice design, make a (p. 222): 'awiriirik (uur...)' '(uur...)' -> 'awiriirik' '(uur...)'
+  nice looking (p. 222): 'hiir (uur...)' '(uur...)' -> 'hiir' '(uur...)'
+  nice weather (p. 222): 'kaahuraarawiriir (uur...)' '(uur...)' -> 'kaahuraarawiriir' '(uur...)'
+  nice weather (p. 222): 'kaahurariir (uur...)' '(uur...)' -> 'kaahurariir' '(uur...)'
+  nightfall (p. 222): 'ratkahaahtiihaksa (ir...)' '(ir...)' -> 'ratkahaahtiihaksa' '(ir...)'
+  offer food (in prayer) (p. 225): 'waakuʔat' '(ut...)' -> 'waakuʔat' '(ut...) [+ raar-]'
+  offspring, have (p. 226): 'raaʔukta (ut...)' None -> 'raaʔukta' '(ut...)'
+  outfit (p. 229): 'akuuktik (ut...)' None -> 'akuuktik' '(ut...)'
+  outstanding (p. 229): 'ka (ut...)' None -> 'ka' '(ut...)'
+  outstanding (of a way) (p. 229): 'raaka (ut...)' None -> 'raaka' '(ut...)'
+  outstanding (of a way) (p. 229): 'raakiicka (ut...)' None -> 'raakiicka' '(ut...)'
+  painted with a design (p. 231): 'rariihuriir (uur...)' '(uur...)' -> 'rariihuriir' '(uur...)'
+  pants, wear (p. 231): 'ruuskaa (ir...ut...)' '(ir...ut...)' -> 'ruuskaa' '(ir...ut...)'
+  pile up (p. 237): 'taawatatk' '(ut...)' -> 'taawatatk' '(ut...) [+ raar-]'
+  rake (p. 253): 'wiruuʔa (ir...)' None -> 'wiruuʔa' '(ir...)'
+  rake (coals) (p. 253): 'rahwiʔa (ir...)' None -> 'rahwiʔa' '(ir...)'
+  rake (towards speaker) (p. 253): 'piraʔa (ir...)' None -> 'piraʔa' '(ir...)'
+  rascal (p. 253): 'kawitaat [+ ruu-, i-]' None -> 'kawitaat' '[+ ruu-, i-]'
+  rattle (p. 253): 'tawakaʔu [+ ruu-]' None -> 'tawakaʔu' '[+ ruu-]'
+  real (p. 255): 'raariks' None -> 'raariks' '[+ i-]'
+  related to (p. 256): 'icis (ut...)' None -> 'icis' '(ut...)'
+  relative (p. 256): 'Ø (ir...)' None -> 'Ø' '(ir...)'
+  relish the taste of (p. 256): 'tahatii (ir...ri...ut...)' None -> 'tahatii' '(ir...ri...ut...)'
+  remove (p. 257): 'ruwaahaahkiir' None -> 'ruwaahaahkiir' '[+ raar-]'
+  row, in a (p. 264): 'uhuur [+ raar-]' None -> 'uhuur' '[+ raar-]'
+  rusty (p. 265): 'raaruuhc (ut...)' None -> 'raaruuhc' '(ut...)'
+  scorpion (p. 269): 'ritkukatawiiʔ, kukata wiiʔ' None -> 'ritkukatawiiʔ, kukatawiiʔ' None
+  shoot (p. 276): 'icakuusk (ut...)' None -> 'icakuusk' '(ut...)'
+  short (of a person) (p. 276): 'awihurah [+ ruu-, i-]' None -> 'awihurah' '[+ ruu-, i-]'
+  sit down (a large group) (p. 279): 'rirahak [+ raar-]' None -> 'rirahak' '[+ raar-]'
+  sit down (a large group) (p. 279): 'rirat [+ raar-]' None -> 'rirat' '[+ raar-]'
+  sleek (p. 281): 'parihik [+ruu-, i-]' None -> 'parihik' '[+ruu-, i-]'
+  slice (p. 281): 'kataraʔa (ir...)' None -> 'kataraʔa' '(ir...)'
+  slippery (p. 282): 'pariictaʔu (ir...)' None -> 'pariictaʔu' '(ir...)'
+  slope (of land) (p. 282): 'huraahtiraaha (ut...)' None -> 'huraahtiraaha' '(ut...)'
+  slope downward (p. 282): 'tukaa (ut...)' None -> 'tukaa' '(ut...)'
+  spread out (p. 291): 'kuuskatuusitik [+ raar-]' None -> 'kuuskatuusitik' '[+ raar-]'
+  stacked up (p. 293): 'taawatat (ut...) [+ raar-]' None -> 'taawatat' '(ut...) [+ raar-]'
+  stagger (p. 293): 'iriiruuwarii (ut...)' None -> 'iriiruuwarii' '(ut...)'
+  stamp the foot (p. 293): 'asukaaʔa (ir...)' None -> 'asukaaʔa' '(ir...)'
+  stand upright (p. 293): 'cawiʔuuriirik (uur...)' '(uur...)' -> 'cawiʔuuriirik' '(uur...)'
+  story (p. 297): 'raaʔiitusuu' '(ut...)' -> 'raaʔiitusuu' '(ut...) [+ruu-, i-]'
+  straighten out for (p. 298): 'tiituriirik (uur...)' None -> 'tiituriirik' '(uur...)'
+  strange (of a person or animal) (p. 298): 'awakiir/kir (ir...)' None -> 'awakiir/kir' '(ir...)'
+  strange (of a way) (p. 298): 'raawakiir/kir (ir...)' None -> 'raawakiir/kir' '(ir...)'
+  strip covers (p. 300): 'ruwaahaahkiir [+ raar-]' None -> 'ruwaahaahkiir' '[+ raar-]'
+  stripe (p. 300): 'tariwiisk (uur...)' '(uur...)' -> 'tariwiisk' '(uur...)'
+  striped (p. 300): 'tariwis (uur...)' '(uur...)' -> 'tariwis' '(uur...)'
+  stroke (p. 300): 'ikskawiʔat (uur...)' '(uur...)' -> 'ikskawiʔat' '(uur...)'
+  stroke in blessing (p. 300): 'ikstawiʔa (ir...ut...)' '(ir...ut...)' -> 'ikstawiʔa' '(ir...ut...)'
+  stroke in blessing (p. 300): 'ikstawiʔat (ut...)' '(ut...)' -> 'ikstawiʔat' '(ut...)'
+  surround (p. 304): 'tuuwirik' '(ut...)' -> 'tuuwirik' '(ut...) [+ ir-]'
+  survive (p. 304): 'kisik' None -> 'kisik' '[+ i-]'
+  sweat (p. 304): 'awikickakuusik' None -> 'awikickakuusik' '[+ ruu-, i-]'
+  take off clothes (p. 308): 'awaahkiir [+ raar-]' None -> 'awaahkiir' '[+ raar-]'
+  think about (p. 313): 'Ø ciksuʔ' '(ut...)' -> 'Ø (ut...) ciksuʔ' None
+  think about (p. 313): 'aar ciksuʔ' '(ir...ri...ut...)' -> 'aar (ir...ri...ut...) ciksuʔ' None
+  think about (p. 313): 'aar ciksuʔ' '(ut...)' -> 'aar (ut...) ciksuʔ' None
+  time (p. 317): 'raawiʔuu' None -> 'raawiʔuu' '[+ ruu-, i-]'
+  truthful (p. 323): 'waktiks [+ i-]' None -> 'waktiks' '[+ i-]'
+  uncooperative (p. 326): 'huhtawii (ut...)' None -> 'huhtawii' '(ut...)'
+  uncover (p. 326): 'katariikiwat (ut...)' None -> 'katariikiwat' '(ut...)'
+  untie (p. 328): 'kariikiwat (ut...) [+ raar-]' None -> 'kariikiwat' '(ut...) [+ raar-]'
+  untie (p. 328): 'tariikiwat (ut...)' None -> 'tariikiwat' '(ut...)'
+  use (p. 329): 'raar (ir...ut...)' None -> 'raar' '(ir...ut...)'
+  use (p. 329): 'raarahak (ut...)' None -> 'raarahak' '(ut...)'
+  vain (p. 329): 'kiis (ir...)' None -> 'kiis' '(ir...)'
+  vain (p. 329): 'kiisaar (ir...)' None -> 'kiisaar' '(ir...)'
+  value (p. 329): 'raacikstaʔu (ir...)' None -> 'raacikstaʔu' '(ir...)'
+  value (p. 329): 'raacikstaʔu (ir...ri...uur...)' None -> 'raacikstaʔu' '(ir...ri...uur...)'
+  value (p. 329): 'raacikstaapirihuur (ir...ri...uur...)' None -> 'raacikstaapirihuur' '(ir...ri...uur...)'
+  way, a certain (p. 337): 'ruuhuruu' '(ut...)' -> 'ruuhuruu' '(ut...) [+ riku-]'
+  wealthy (p. 337): 'kaapaakis' None -> 'kaapaakis' '[+ neg.]'
+  work for (p. 343): 'awaah (ir...ri...ut...)' None -> 'awaah' '(ir...ri...ut...)'
+  work on (p. 343): 'astaah (ut...)' None -> 'astaah' '(ut...)'
+
+Phonetic forms corrected in content (7)
+  and (p. 67) a: '[–ə–]' -> '[a/aa]'
+  canvas tarp (p. 100) raarakaahki: '[ra-rà-kaah-kɪ]' -> '[raa·rə́·kaah·kɪ]'
+  hamburger (p. 174) kisaactacapahtuʔ: '[kí-saa-ts-tə-čə-pəh-tʊʔ]' -> '[kɪ́·saats·tə·čə·pəh·tʊʔ]'
+  stop (p. 296) awiʔuusik (uur...): '[•ə-wɪ-ʔuu-sɪ{k/t}•]' -> '[–ə·wi·ʔuu·sɪ{k/t}–]'
+  stop (p. 296) awiʔuusik (uur...): '[•ə-wɪ-ʔuu-sɪ{k/t}•]' -> '[–ə·wi·ʔuu·sɪ{k/t}–]'
+  take off (a lid) (p. 308) haakaawatatuuk: '[•ha-kaa-wə-tə-tuu{k/t}•]' -> '[–haa·kaa·wə·tə·tuu{k/t}–]'
+  white (p. 340) taakaar: '[•ta-kaa(r)•]' -> '[–taa·kaa(r)–]'
+
+Classes corrected (12)
+  get ahead (p. 163) hirasuritik: 'VI' '(4)' -> 'VI, VT' '(4), (4)'
+  grasp (p. 169) ikskariwiiʔaar: 'VT' '1-i' -> 'VT' '(1-i)'
+  grasp (p. 169) uurikuk (ut...): 'VT' '4' -> 'VT' '(4)'
+  grass to come up (p. 169) hiirahkaaʔa (ir...): 'VI' '3' -> 'VI' '(3)'
+  grass to sprout (p. 169) kataarahkaaʔa (ir...): 'VI' '3' -> 'VI' '(3)'
+  grass, in (p. 169) hiihkasa: 'VI' '4' -> 'VI' '(4)'
+  grassland (p. 169) hiiruʔat: 'VI' '1' -> 'VI' '(1)'
+  prominent (p. 245) hisii: 'VD' '(1)' -> 'VD' None
+  reluctant (p. 257) acikstiiris (ut...): 'VD' '(1)' -> 'VD' None
+  remember (p. 257) aciksuuwicaks (ir...): 'VD' '(1)' -> 'VD' None
+  room (p. 263) kiihaar: 'VD' '(1)' -> 'VD' None
+  worried (p. 343) acikskaruus: 'VI' '(u)' -> 'VI, VP' '(u), (u)'
+
+====================================================================================================
+

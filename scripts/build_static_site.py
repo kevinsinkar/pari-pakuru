@@ -139,6 +139,27 @@ def export_dictionary_data(db_path: str, output_dir: Path) -> dict:
             "tags": tags,
             "detail_held": held,
         }
+        if source == "blue_book":
+            # A word taken from the textbook is headed in the dictionary's letters. Show beside it what the book
+            # prints (forms read from the scan) and, where it is a word Parks has, the dictionary's own entry
+            # (both set by scripts/bluebook_only_entries.py).
+            from bluebook_only_entries import letters as bb_letters
+            same = db.conn.execute(
+                "SELECT p.entry_id, p.headword FROM lexical_entries b JOIN lexical_entries p ON p.entry_id = b.bb_variant_of "
+                "WHERE b.entry_id = ?", (entry_id,)).fetchone()
+            printed = []
+            # the book's form may be filed under the dictionary's entry for the same word: take it from there
+            # when it is this entry's headword letter for letter
+            for form, page, owner in db.conn.execute(
+                    "SELECT bb_skiri_form, page_number, entry_id FROM blue_book_attestations WHERE entry_id IN (?, ?) ORDER BY id",
+                    (entry_id, same[0] if same else entry_id)):
+                form = (form or "").strip()
+                if owner != entry_id and bb_letters(form) != bb_letters(entry.headword):
+                    continue
+                if form and form not in [p["form"] for p in printed]:
+                    printed.append({"form": form, "page": (page - 28) if page else None})   # book page = PDF page - 28
+            entry_dict["bb_printed"] = printed
+            entry_dict["bb_variant_of"] = {"entry_id": same[0], "headword": same[1]} if same else None
         entry_dict.update(detail)
         entries.append(entry_dict)
 

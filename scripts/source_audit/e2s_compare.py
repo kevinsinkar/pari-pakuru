@@ -14,6 +14,8 @@ cross-reference likewise. Printed English headwords and printed Skiri terms
 that no row accounts for are listed too.
 
     python scripts/source_audit/e2s_compare.py     # writes e2s_differences.jsonl and e2s_summary.json
+    python scripts/source_audit/e2s_compare.py --source json --out reports/source_audit_2026-11/after_fixes
+                                                   # a later run: without --out it overwrites the audit's own record
 
 Reads the database read-only. Changes nothing.
 """
@@ -109,8 +111,12 @@ def main():
     ap.add_argument("--source", choices=["json", "db"], default="json",
                     help="json: Dictionary Data/english_to_skiri_linked.json (the current copy). db: the english_index and "
                          "cross_references tables, which were loaded from an earlier file")
+    ap.add_argument("--out", help="folder for the two result files (default: the audit's own folder, whose record a "
+                                  "later run would overwrite)")
     args = ap.parse_args()
     source = args.source
+    out_dir = (state.ROOT / args.out) if args.out else state.OUT
+    out_dir.mkdir(parents=True, exist_ok=True)
     tag = "e2s" if source == "json" else "e2s_db_tables"
     printed = segment()
     blocks = {p["seq"]: cc.Block(p["spans"]) for p in printed}
@@ -121,7 +127,14 @@ def main():
     conn.row_factory = sqlite3.Row
     if source == "db":
         rows = [dict(r) for r in conn.execute("select id, english_word, subentry_number, entry_id, skiri_term, phonetic_form, "
-                                              "grammatical_class, verb_class, page_number from english_index order by id")]
+                                              "grammatical_class, verb_class, page_number, raw_subentry_json from english_index order by id")]
+        for r in rows:           # the table has no column for the preverb; it is in the stored subentry
+            try:
+                pre = ((json.loads(r.pop("raw_subentry_json") or "{}").get("part_I") or {}).get("stem_preverb"))
+            except ValueError:
+                pre = None
+            if r["skiri_term"] and pre and pre not in r["skiri_term"]:
+                r["skiri_term"] = "%s %s" % (r["skiri_term"], pre)
         xrefs = [dict(r) for r in conn.execute("select id, from_english_word, to_english_term, skiri_equivalents, source_page from cross_references order by id")]
     else:
         rows, xrefs = rows_from_json()
@@ -136,7 +149,8 @@ def main():
         if not seqs:
             return None
         used_heads.update(seqs)
-        return seqs
+        # "Crow" and "crow", "Mother" and "mother" are different printed entries: the one spelled like the row first
+        return sorted(seqs, key=lambda s: printed[s - 1]["head"] != cc.tidy(word or ""))
 
     def finder(row_id, word, seq):
         p = printed[seq - 1]
@@ -235,8 +249,8 @@ def main():
                 d["severity"] = 3
             else:
                 d["severity"] = 4 if kind in ("spacing", "hyphen", "stored-keeps-line-break", "punctuation", "capital") else 2
-    if source == "json":       # for the database tables the counts are enough: the remedy is to re-import them
-        with (state.OUT / ("%s_differences.jsonl" % tag)).open("w", encoding="utf-8", newline="\n") as fh:
+    if source == "json" or args.out:   # in the audit the counts were enough for the tables: the remedy was to load them again
+        with (out_dir / ("%s_differences.jsonl" % tag)).open("w", encoding="utf-8", newline="\n") as fh:
             for d in diffs:
                 fh.write(json.dumps(d, ensure_ascii=False) + "\n")
     by_kind = collections.Counter((d["class"], re.sub(r"\[.*\]", "", d["field"]), d["kind"]) for d in diffs)
@@ -246,7 +260,7 @@ def main():
                "by_class": dict(collections.Counter(d["class"] for d in diffs)),
                "differences_by_severity": dict(collections.Counter(str(d["severity"]) for d in diffs if d["class"] == "difference")),
                "by_class_field_kind": {"%s | %s | %s" % k: n for k, n in by_kind.most_common()}}
-    (state.OUT / ("%s_summary.json" % tag)).write_text(json.dumps(summary, ensure_ascii=False, indent=1) + "\n", encoding="utf-8", newline="\n")
+    (out_dir / ("%s_summary.json" % tag)).write_text(json.dumps(summary, ensure_ascii=False, indent=1) + "\n", encoding="utf-8", newline="\n")
     state.out("printed English entries %d; index rows %d (%d without a Skiri term); cross-references %d" % (
         len(printed), totals["index_rows"], totals["rows_without_term"], totals["cross_references"]))
     state.out("fields checked %d, equal %d (%.2f%%)" % (totals["fields_checked"], totals["fields_equal"],

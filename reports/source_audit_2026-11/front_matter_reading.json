@@ -1,0 +1,28 @@
+{
+ "made": "2026-11-14",
+ "chapters": {
+  "ch2": {
+   "pages": "13-17",
+   "forms": 138,
+   "forms_in_both_readings": 138,
+   "tables": 2,
+   "tables_in_both_readings": 2,
+   "figures": 0,
+   "places_where_the_readings_differ": [],
+   "running_text": {
+    "words": 1609,
+    "places_that_differ": 0
+   }
+  },
+  "ch5": {
+   "pages": "53-60",
+   "forms": 57,
+   "forms_in_both_readings": 57,
+   "tables": 0,
+   "tables_in_both_readings": 0,
+   "figures": 6,
+   "places_where_the_readings_differ": [],
+   "running_text": "not compared: reading A was stopped by the content filter and has its text shortened"
+  }
+ }
+}

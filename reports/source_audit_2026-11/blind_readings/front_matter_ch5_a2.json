@@ -1,0 +1,90 @@
+{
+ "p7": {
+  "book_page": "59",
+  "forms": [
+   [
+    "Ø",
+    "",
+    ""
+   ],
+   [
+    "(ut...)",
+    "",
+    ""
+   ],
+   [
+    "Ø (ut...)",
+    "",
+    ""
+   ],
+   [
+    "tatuuʔut",
+    "",
+    ""
+   ],
+   [
+    "ta- IND + t- 1.A + ut- PREV",
+    "",
+    ""
+   ],
+   [
+    "Ø (ut...)",
+    "",
+    "to be (in a condition)"
+   ],
+   [
+    "ciksuʔ",
+    "",
+    "thought, mind"
+   ]
+  ],
+  "headings": [],
+  "tables": [],
+  "examples": [],
+  "figures": []
+ },
+ "p8": {
+  "book_page": "",
+  "forms": [],
+  "headings": [],
+  "tables": [],
+  "examples": [],
+  "figures": [
+   {
+    "caption": "Figure 6. Structure of a Skiri-to-English verb entry illustrating the class of compound stems with the constituents preverb + null verb stem (Ø) + noun",
+    "labels": [
+     "STEM PREVERB",
+     "PHONETIC FORM",
+     "VERB STEM BASE",
+     "NOUN",
+     "GRAMMATICAL CLASSIFICATION",
+     "SKIRI ENTRY WORD",
+     "ENGLISH GLOSS",
+     "ETYMOLOGY",
+     "STANDARD INFLECTED FORMS"
+    ],
+    "forms": [
+     "Ø",
+     "(ut...)",
+     "ciksuʔ",
+     "Ø",
+     "(ut...)",
+     "(a)ciks+uʔ",
+     "tatuuʔut",
+     "ciksuʔ",
+     "ciksuʔ",
+     "tatuuʔut",
+     "tuuʔut",
+     "ciksuʔ",
+     "iriruuta",
+     "ciksuʔ",
+     "tuutasta",
+     "ciksuʔ"
+    ],
+    "phonetic": [
+     "[–Ø– čík·sʊʔ]"
+    ]
+   }
+  ]
+ }
+}

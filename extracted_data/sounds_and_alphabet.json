@@ -1,0 +1,1150 @@
+{
+ "_about": {
+  "source": "Parks and Pratt, A Dictionary of Skiri Pawnee (2008), chapter 2, \"Sounds and Alphabet\", pp. 13-17",
+  "read": "2026-11-14, twice, from the page images, by readers who saw nothing but the page (scripts/source_audit/front_matter_reading.py)",
+  "what_is_here": "Every Skiri form of the chapter with the phonetic form and the gloss printed beside it, the tables, the section headings and the figure captions, as printed. A form marked \"readings\": 2 stands letter for letter in both readings.",
+  "what_is_not_here": "The chapter's running text. Each section has a summary in the project's own words; it is not Parks's text. The sentences under \"quoted\" are his.",
+  "notation": "The lax short vowels are printed with a letter like a small iota and one like an upsilon; they are stored as ɪ and ʊ, the symbols the dictionary's phonetic forms are stored in. No accent mark is printed in either chapter outside figure 6.",
+  "agreement": {
+   "pages": "13-17",
+   "forms": 138,
+   "forms_in_both_readings": 138,
+   "tables": 2,
+   "tables_in_both_readings": 2,
+   "figures": 0,
+   "running_text": {
+    "words": 1609,
+    "places_that_differ": 0
+   }
+  }
+ },
+ "sections": [
+  {
+   "heading": "Sounds and Alphabet",
+   "pages": [
+    13
+   ],
+   "summary": "Skiri has nine consonants and three vowels, each vowel short and long: fifteen phonemes (tables 2 and 3).",
+   "quoted": []
+  },
+  {
+   "heading": "Consonants",
+   "pages": [
+    13,
+    14
+   ],
+   "summary": "p, t, k and c are always voiceless and unaspirated, like English stops after s. c has two regular variants: [ts] before a consonant and at the end of a word, [č] before a vowel. s is as in English for most speakers, further back (like sh) for some. h is as in English, breathier before a consonant. w is as in English. r is usually a tap; at the start of a word many speakers often say it as [n], and some occasionally as [l].",
+   "quoted": []
+  },
+  {
+   "heading": "Vowels",
+   "pages": [
+    14,
+    15
+   ],
+   "summary": "i and ii are front, u and uu back and rounded, a and aa central. The short vowels have tense and lax variants: for i the chapter gives lax [ɪ]; u varies between tense [u] and lax [ʊ]; a between lower [a] and higher [ə]. Long vowels are always tense. Length is usually clear, but before h or a syllable-final consonant measured length varies widely, and some prefixes and stems alternate between a long and a short vowel (raar-/rar-, -taakaa/-taka, asaa-/asa-). Stress is not phonemic and is not written on words; the phonetic forms of entries mark accented syllables. Some accent patterns recur (the first syllable, or the second when the first is short and the second long; the third from the end, less often the second from the end), but the chapter calls most patterns variable in the end.",
+   "quoted": [
+    {
+     "page": 14,
+     "text": "This alternation occurs frequently, but the difference in vowel length is not predictable."
+    },
+    {
+     "page": 15,
+     "text": "Stress is not phonemic in Skiri and hence is not marked on words. (Phonetic forms in entries do, however, have accented syllables marked.)"
+    }
+   ],
+   "bears_on": "open items 9 (the word for the marks), 40 (accent rules), 43 (tense and lax short vowels), and questions 1, 2 and 7 of the word-construction analysis (vowel length)"
+  },
+  {
+   "heading": "Skiri Alphabet",
+   "pages": [
+    15
+   ],
+   "summary": "The alphabet is the fifteen phonemic symbols. Because only two consonants and the three vowels have variants it is close to phonetic; every entry still gives a phonetic form. Alphabetical order in the Skiri-to-English section: a, aa, c, h, i, ii, k, p, r, s, t, u, uu, w. The glottal stop occurs only between vowels and at the end of a word after a vowel, where it mainly sets non-subordinate imperfective verb forms (with it) apart from subordinate ones (without); it is passed over in alphabetical order.",
+   "quoted": []
+  },
+  {
+   "heading": "Speaker Variation",
+   "pages": [
+    15,
+    16
+   ],
+   "summary": "The Skiri and South Band speakers Parks worked with from 1965 on kept their dialects apart; Weltfish's forecast of 1937 that the differences would level did not come true for them. One Skiri speaker, Harry Mad Bear, sometimes used the South Band vowel e in texts (reesaaruʔ for riisaaruʔ 'chief', he for hi 'and'). Late-twentieth-century Skiri speech was uniform and close to that of Roaming Scout a century earlier.",
+   "quoted": []
+  },
+  {
+   "heading": "The Cluster kt",
+   "pages": [
+    16
+   ],
+   "summary": "In Skiri k became t before t (kt to tt). Roaming Scout's texts have tt in nearly 70 percent of the cases; Murie, the speakers Lesser and Weltfish worked with, and all speakers Parks worked with in the 1960s and 1970s had tt throughout, except Mrs. Pratt, who consistently said kt. The dictionary writes kt, following her.",
+   "quoted": [
+    {
+     "page": 16,
+     "text": "In this dictionary forms are written with kt rather than tt in conformance with Mrs. Pratt’s usage throughout our collaboration, but users should realize that all other twentieth-century Skiri speakers replaced kt clusters with tt."
+    }
+   ],
+   "bears_on": "the pronunciation guide and the respelling: every kt of the dictionary was tt for the other speakers"
+  },
+  {
+   "heading": "Other Sound Differences",
+   "pages": [
+    16,
+    17
+   ],
+   "summary": "Three more differences between Roaming Scout and twentieth-century speakers: kirikii 'what' is now usually kikii; the imperfective distributive of aar 'to become' is waahi where Roaming Scout often said waari (South Band waahri, Arikara waahnu); ut- + uks- is ucuks- today and icuks in Roaming Scout's speech, as in South Band; si- + ar- (siʔah-) is now usually contracted to siih-, which Roaming Scout did not do.",
+   "quoted": []
+  }
+ ],
+ "tables": [
+  {
+   "title": "Table 2. Skiri Pawnee Consonants",
+   "page": 13,
+   "rows": [
+    [
+     "",
+     "",
+     "Labial",
+     "Alveolar",
+     "Velar",
+     "Laryngeal"
+    ],
+    [
+     "Obstruents",
+     "Stops: voiceless",
+     "p",
+     "t",
+     "k",
+     "ʔ"
+    ],
+    [
+     "",
+     "Affricate: voiceless",
+     "",
+     "c",
+     "",
+     ""
+    ],
+    [
+     "",
+     "Fricatives: voiceless",
+     "",
+     "s",
+     "",
+     "h"
+    ],
+    [
+     "Sonorants",
+     "Glide and Tap: voiced",
+     "w",
+     "r",
+     "",
+     ""
+    ]
+   ],
+   "readings": 2
+  },
+  {
+   "title": "Table 3. Skiri Pawnee Vowels",
+   "page": 14,
+   "rows": [
+    [
+     "",
+     "Front",
+     "Central",
+     "Back"
+    ],
+    [
+     "High",
+     "i, ii",
+     "",
+     "u, uu"
+    ],
+    [
+     "Low",
+     "",
+     "a, aa",
+     ""
+    ]
+   ],
+   "readings": 2
+  }
+ ],
+ "figures": [],
+ "forms": [
+  {
+   "page": 13,
+   "form": "p",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 13,
+   "form": "t",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 13,
+   "form": "k",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 13,
+   "form": "ʔ",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 13,
+   "form": "c",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 13,
+   "form": "s",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 13,
+   "form": "h",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 13,
+   "form": "w",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 13,
+   "form": "r",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 13,
+   "form": "p",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 13,
+   "form": "t",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 13,
+   "form": "k",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 13,
+   "form": "c",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 13,
+   "form": "c",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2,
+   "phonetic_one_reader": "[ts]"
+  },
+  {
+   "page": 13,
+   "form": "riictaaruʔ",
+   "phonetic": "[riitstaaruʔ]",
+   "gloss": "intestines",
+   "readings": 2
+  },
+  {
+   "page": 13,
+   "form": "apiic",
+   "phonetic": "[əpiits]",
+   "gloss": "on the other side of water",
+   "readings": 2
+  },
+  {
+   "page": 13,
+   "form": "c",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2,
+   "phonetic_one_reader": "[č]"
+  },
+  {
+   "page": 13,
+   "form": "capaat",
+   "phonetic": "[čəpaat]",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 13,
+   "form": "s",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 13,
+   "form": "h",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 13,
+   "form": "s",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 13,
+   "form": "h",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 13,
+   "form": "kuhku",
+   "phonetic": "",
+   "gloss": "pig",
+   "readings": 2
+  },
+  {
+   "page": 13,
+   "form": "w",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 13,
+   "form": "r",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 13,
+   "form": "w",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 13,
+   "form": "r",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "i",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "ii",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "u",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "uu",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "a",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "aa",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "i",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "ii",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "u",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "uu",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "uu",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "a",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "aa",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "i",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2,
+   "phonetic_one_reader": "[ɪ]"
+  },
+  {
+   "page": 14,
+   "form": "istu",
+   "phonetic": "[ɪstu]",
+   "gloss": "again",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "pitku",
+   "phonetic": "[pɪtku]",
+   "gloss": "two",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "u",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2,
+   "phonetic_one_reader": "[u] / [ʊ]"
+  },
+  {
+   "page": 14,
+   "form": "iksuʔ",
+   "phonetic": "[ɪksuʔ]",
+   "gloss": "hand",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "tiʔukut",
+   "phonetic": "[tiʔukʊt]",
+   "gloss": "it dropped",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "a",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2,
+   "phonetic_one_reader": "[a] / [ə]"
+  },
+  {
+   "page": 14,
+   "form": "rahwa",
+   "phonetic": "[rahwa]",
+   "gloss": "captive",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "akaʔ",
+   "phonetic": "[əkəʔ]",
+   "gloss": "your grandmother",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "ii",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2,
+   "phonetic_one_reader": "[ii]"
+  },
+  {
+   "page": 14,
+   "form": "uu",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2,
+   "phonetic_one_reader": "[uu]"
+  },
+  {
+   "page": 14,
+   "form": "aa",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2,
+   "phonetic_one_reader": "[aa]"
+  },
+  {
+   "page": 14,
+   "form": "piita",
+   "phonetic": "[piitə]",
+   "gloss": "man",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "uusuʔ",
+   "phonetic": "[uusuʔ]",
+   "gloss": "hair",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "aaruʔ",
+   "phonetic": "[aaruʔ]",
+   "gloss": "tooth",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "h",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "raar-",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "raar-",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "raah-",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "rar-",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "rah-",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "taakaar",
+   "phonetic": "",
+   "gloss": "be white",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "-taakaa",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "-taka",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "cahikstaakaa",
+   "phonetic": "",
+   "gloss": "white man",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "cahiks",
+   "phonetic": "",
+   "gloss": "person; human",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "atikataka",
+   "phonetic": "",
+   "gloss": "navy bean",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "atik",
+   "phonetic": "",
+   "gloss": "bean",
+   "readings": 2
+  },
+  {
+   "page": 14,
+   "form": "asaa-",
+   "phonetic": "",
+   "gloss": "horse; dog",
+   "readings": 2
+  },
+  {
+   "page": 15,
+   "form": "asa-",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 15,
+   "form": "asawiita",
+   "phonetic": "",
+   "gloss": "male horse",
+   "readings": 2
+  },
+  {
+   "page": 15,
+   "form": "asataakaa",
+   "phonetic": "",
+   "gloss": "white horse",
+   "readings": 2
+  },
+  {
+   "page": 15,
+   "form": "asaapahat",
+   "phonetic": "",
+   "gloss": "bay horse",
+   "readings": 2
+  },
+  {
+   "page": 15,
+   "form": "a",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 15,
+   "form": "aa",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 15,
+   "form": "c",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 15,
+   "form": "h",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 15,
+   "form": "i",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 15,
+   "form": "ii",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 15,
+   "form": "k",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 15,
+   "form": "p",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 15,
+   "form": "r",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 15,
+   "form": "s",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 15,
+   "form": "t",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 15,
+   "form": "u",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 15,
+   "form": "uu",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 15,
+   "form": "w",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 15,
+   "form": "ʔ",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 15,
+   "form": "riʔaat",
+   "phonetic": "",
+   "gloss": "summer",
+   "readings": 2
+  },
+  {
+   "page": 15,
+   "form": "kaaʔata",
+   "phonetic": "",
+   "gloss": "upland plover",
+   "readings": 2
+  },
+  {
+   "page": 15,
+   "form": "tiwaktiikuʔ",
+   "phonetic": "",
+   "gloss": "he is announcing",
+   "readings": 2
+  },
+  {
+   "page": 15,
+   "form": "rakuwaktiku",
+   "phonetic": "",
+   "gloss": "for him to be announcing",
+   "readings": 2
+  },
+  {
+   "page": 15,
+   "form": "e",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 16,
+   "form": "i",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 16,
+   "form": "reesaaruʔ",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 16,
+   "form": "riisaaruʔ",
+   "phonetic": "",
+   "gloss": "chief",
+   "readings": 2
+  },
+  {
+   "page": 16,
+   "form": "he",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 16,
+   "form": "hi",
+   "phonetic": "",
+   "gloss": "and",
+   "readings": 2
+  },
+  {
+   "page": 16,
+   "form": "kt",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 16,
+   "form": "k",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 16,
+   "form": "t",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 16,
+   "form": "kt",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 16,
+   "form": "tt",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 16,
+   "form": "kt",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 16,
+   "form": "tt",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 16,
+   "form": "tt",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 16,
+   "form": "tt",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 16,
+   "form": "kt",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 16,
+   "form": "tt",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 16,
+   "form": "tt",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 16,
+   "form": "kt",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 16,
+   "form": "kt",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 16,
+   "form": "tt",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 16,
+   "form": "kt",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 16,
+   "form": "tt",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 16,
+   "form": "tt",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 16,
+   "form": "kt",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 16,
+   "form": "tt",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 16,
+   "form": "kt",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 16,
+   "form": "tt",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 16,
+   "form": "kirikii",
+   "phonetic": "",
+   "gloss": "what",
+   "readings": 2
+  },
+  {
+   "page": 16,
+   "form": "kikii",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 16,
+   "form": "aar",
+   "phonetic": "",
+   "gloss": "to become",
+   "readings": 2
+  },
+  {
+   "page": 16,
+   "form": "waahi",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 16,
+   "form": "waa-",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 16,
+   "form": "aar",
+   "phonetic": "",
+   "gloss": "do",
+   "readings": 2
+  },
+  {
+   "page": 16,
+   "form": "-i",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 17,
+   "form": "waari",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 17,
+   "form": "waahri",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 17,
+   "form": "waahnu",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 17,
+   "form": "ut-",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 17,
+   "form": "uks-",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 17,
+   "form": "icuks",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 17,
+   "form": "ucuks-",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 17,
+   "form": "si-",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 17,
+   "form": "ar-",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 17,
+   "form": "siʔah-",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 17,
+   "form": "siih-",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  }
+ ]
+}

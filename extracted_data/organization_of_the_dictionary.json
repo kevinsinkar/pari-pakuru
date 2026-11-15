@@ -1,0 +1,560 @@
+{
+ "_about": {
+  "source": "Parks and Pratt, A Dictionary of Skiri Pawnee (2008), chapter 5, \"Organization of the Dictionary\", pp. 53-60",
+  "read": "2026-11-14, twice, from the page images, by readers who saw nothing but the page (scripts/source_audit/front_matter_reading.py)",
+  "what_is_here": "Every Skiri form of the chapter with the phonetic form and the gloss printed beside it, the tables, the section headings and the figure captions, as printed. A form marked \"readings\": 2 stands letter for letter in both readings.",
+  "what_is_not_here": "The chapter's running text. Each section has a summary in the project's own words; it is not Parks's text. The sentences under \"quoted\" are his.",
+  "notation": "The lax short vowels are printed with a letter like a small iota and one like an upsilon; they are stored as ɪ and ʊ, the symbols the dictionary's phonetic forms are stored in. No accent mark is printed in either chapter outside figure 6.",
+  "agreement": {
+   "pages": "53-60",
+   "forms": 57,
+   "forms_in_both_readings": 57,
+   "tables": 0,
+   "tables_in_both_readings": 0,
+   "figures": 6,
+   "running_text": "not compared: reading A was stopped by the content filter and has its text shortened"
+  }
+ },
+ "sections": [
+  {
+   "heading": "Organization of the Dictionary",
+   "pages": [
+    53
+   ],
+   "summary": "Two sections, English-to-Skiri first because most users will not be speakers; entries in both hold the same information.",
+   "quoted": []
+  },
+  {
+   "heading": "General Conventions for Citing Skiri Forms",
+   "pages": [
+    53,
+    54
+   ],
+   "summary": "Verbs are cited as uninflected stems, which never occur as words. A stem that needs a preverb (ir-/a-, ut-, uur-) has it in parentheses after the stem, as in tii (ut...); in a word the preverb comes before the stem. A few stems have a zero base, Ø (ut...) 'to be (in a condition)' and Ø (ir...) 'to be one's'; in their non-subordinate forms the vowel of the preverb, or of a subject plural prefix after it, is reduplicated. Nouns are cited in their independent form, with the nominal suffix they need (-uʔ NOM, -hiriʔ INST/LOC, -kat LOC, -ru LOC); the suffix is absent when the noun is incorporated or stands first in a compound. Dependent noun roots (N-DEP), which occur only before another stem, are cited with a final dash (asaa- 'horse; dog', as in asaaki 'dog'). Locatives that occur only in derived forms are also cited with a final dash (iis- 'out of sight'). Other classes are cited in their independent forms.",
+   "quoted": [],
+   "bears_on": "open item 13 (noun possession: the suffix -hiriʔ, and asaaki 'dog' printed here a third time without a final glottal stop)"
+  },
+  {
+   "heading": "English-to-Skiri Entries",
+   "pages": [
+    55,
+    56,
+    57,
+    58
+   ],
+   "summary": "An entry begins with the English word in bold; each Skiri translation begins a subentry of up to three parts. Part I: the Skiri word or stem in bold; its phonetic form in square brackets, with small bullets between syllables; the class in small capitals, followed by a dash for dependent elements or by the verb class, which rests on the verb's subordinate form; grammatical forms in curly brackets where they are irregular (usually for a dual or plural agent, or the distributive); the English glosses, numbered when there are several, with clarifying phrases in italics; the derivation in angled brackets, with a hyphen between morphemes inside a stem and a plus sign between major constituents, then a literal translation, sometimes with cognates from South Band, Arikara, Kitsai or Wichita. Part II: for verbs the five standard forms; for a dependent form, derived stems that contain it. Part III: cross-references, beginning with 'see', each an English entry head followed by its Skiri equivalent in curly brackets.",
+   "quoted": [
+    {
+     "page": 56,
+     "text": "(1) first person agent (for active, descriptive, and locative verbs) or first person patient (for passive verbs), in the indicative mode, perfective aspect; (2) third person agent or patient, indicative mode, perfective aspect; (3) third person agent, indicative mode, imperfective aspect; (4) third person agent, gerundial mode (i.e., subordinate absolutive mode), usually perfective aspect; and (5) third person agent, indicative mode, intentive aspect."
+    },
+    {
+     "page": 57,
+     "text": "Certain verb classes do not allow some of these forms and thus are lacking here."
+    }
+   ],
+   "bears_on": "the five verb forms of every entry (form 1 of a passive verb is a first person patient; form 4 is 'usually' perfective); the English index (scripts/repair_english_index.py reads the entries by this structure)"
+  },
+  {
+   "heading": "Skiri-to-English Entries",
+   "pages": [
+    58,
+    59,
+    60
+   ],
+   "summary": "The same structure without subentries. The head is a stem or root for verbs and the independent form for nouns, with a final dash for dependent nouns and locatives. After it come the phonetic form, the class, entry-specific information in curly brackets (grammatical forms for verbs; for most nouns the variant shapes the noun takes when it is incorporated), the glosses and the derivation. Part II holds the same five forms, or derived forms, as in the English section. Figure 6 shows a compound of the zero verb stem with a noun, Ø (ut...) ciksuʔ; such collocations are cited with the verb base first, though the noun may come first in speech.",
+   "quoted": []
+  }
+ ],
+ "tables": [],
+ "figures": [
+  {
+   "page": 55,
+   "caption": "Figure 1. Structure of an English-to-Skiri verb entry",
+   "labels": [
+    "ENGLISH ENTRY WORD",
+    "SKIRI SUBENTRIES",
+    "PART I",
+    "PART II",
+    "PART I",
+    "PART II",
+    "PART I",
+    "PART II"
+   ],
+   "caption_in_both_readings": true
+  },
+  {
+   "page": 57,
+   "caption": "Figure 2. Skiri subentry structure (in a Skiri-to-English entry): Part I, basic information",
+   "labels": [
+    "GRAMMATICAL CLASSIFICATION",
+    "GRAMMATICAL CATEGORY",
+    "PHONETIC FORM",
+    "GRAMMATICAL FORM",
+    "SKIRI ENTRY WORD",
+    "ENGLISH GLOSS",
+    "USAGE",
+    "CONSTITUENT ELEMENTS",
+    "LITERAL ENGLISH TRANSLATION",
+    "ETYMOLOGY"
+   ],
+   "caption_in_both_readings": true
+  },
+  {
+   "page": 57,
+   "caption": "Figure 3. Skiri subentry structure (in a Skiri-to-English entry): Part II, paradigmatic forms and examples",
+   "labels": [
+    "STANDARD VERBAL PARADIGMATIC FORMS*",
+    "EXAMPLE(S)",
+    "* KEY TO NUMBERED FORMS"
+   ],
+   "caption_in_both_readings": true
+  },
+  {
+   "page": 58,
+   "caption": "Figure 4. Skiri verb subentry structure (in a Skiri-to-English entry): Part III, cross-references",
+   "labels": [
+    "ENGLISH ENTRY",
+    "SKIRI EQUIVALENT",
+    "ENGLISH ENTRY",
+    "CROSS-REFERENCES",
+    "MULTIPLE SKIRI EQUIVALENTS"
+   ],
+   "caption_in_both_readings": true
+  },
+  {
+   "page": 58,
+   "caption": "Figure 5. Structure of a Skiri-to-English verb entry",
+   "labels": [
+    "STEM PREVERB",
+    "DUAL (PATIENT) NUMBER PREFIX",
+    "SKIRI ENTRY WORD",
+    "GRAMMATICAL FORM",
+    "PLURAL PATIENT PREFIX",
+    "LANGUAGE COGNATE",
+    "PART I",
+    "STANDARD PARADIGMATIC FORMS",
+    "EXAMPLE",
+    "PART II"
+   ],
+   "caption_in_both_readings": true
+  },
+  {
+   "page": 60,
+   "caption": "Figure 6. Structure of a Skiri-to-English verb entry illustrating the class of compound stems with the constituents preverb + null verb stem (Ø) + noun",
+   "labels": [
+    "STEM PREVERB",
+    "PHONETIC FORM",
+    "VERB STEM BASE",
+    "NOUN",
+    "GRAMMATICAL CLASSIFICATION",
+    "SKIRI ENTRY WORD",
+    "ENGLISH GLOSS",
+    "ETYMOLOGY",
+    "STANDARD INFLECTED FORMS"
+   ],
+   "caption_in_both_readings": true
+  }
+ ],
+ "forms": [
+  {
+   "page": 53,
+   "form": "ir-/a-",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 53,
+   "form": "ut-",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 53,
+   "form": "uur-",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 53,
+   "form": "tii (ut...)",
+   "phonetic": "",
+   "gloss": "be tame; be accustomed to",
+   "readings": 2
+  },
+  {
+   "page": 53,
+   "form": "Ø (ut...)",
+   "phonetic": "",
+   "gloss": "to be (in a condition)",
+   "readings": 2
+  },
+  {
+   "page": 53,
+   "form": "Ø (ir...)",
+   "phonetic": "",
+   "gloss": "to be one’s",
+   "readings": 2
+  },
+  {
+   "page": 53,
+   "form": "ut-",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 53,
+   "form": "ir-",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 53,
+   "form": "kutatiiʔi",
+   "phonetic": "",
+   "gloss": "it is mine",
+   "readings": 2
+  },
+  {
+   "page": 53,
+   "form": "ku- POSS + ta- IND.1/2.A + t- 1.A + ir- POSS.1/2.A + Ø ‘be one’s’ + -Ø PERF",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 53,
+   "form": "i",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 54,
+   "form": "ir-",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 54,
+   "form": "iiʔi",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 54,
+   "form": "kutatiraaʔat",
+   "phonetic": "",
+   "gloss": "it is ours",
+   "readings": 2
+  },
+  {
+   "page": 54,
+   "form": "ku- POSS + ta- IND.1/2.A + t- 1.A + ir- POSS.1/2.A + raak- 1/2.P + Ø ‘to be one’s’ + -Ø PERF",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 54,
+   "form": "aa",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 54,
+   "form": "raak-",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 54,
+   "form": "aaʔa",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 54,
+   "form": "r",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 54,
+   "form": "k",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 54,
+   "form": "t",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 54,
+   "form": "-uʔ",
+   "phonetic": "",
+   "gloss": "NOM",
+   "readings": 2
+  },
+  {
+   "page": 54,
+   "form": "-hiriʔ",
+   "phonetic": "",
+   "gloss": "INST/LOC",
+   "readings": 2
+  },
+  {
+   "page": 54,
+   "form": "-kat",
+   "phonetic": "",
+   "gloss": "LOC",
+   "readings": 2
+  },
+  {
+   "page": 54,
+   "form": "-ru",
+   "phonetic": "",
+   "gloss": "LOC",
+   "readings": 2
+  },
+  {
+   "page": 54,
+   "form": "paksuʔ",
+   "phonetic": "",
+   "gloss": "head",
+   "readings": 2
+  },
+  {
+   "page": 54,
+   "form": "-uʔ",
+   "phonetic": "",
+   "gloss": "NOM",
+   "readings": 2
+  },
+  {
+   "page": 54,
+   "form": "-uʔ",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 54,
+   "form": "tatpaksiitit",
+   "phonetic": "",
+   "gloss": "I nodded",
+   "readings": 2
+  },
+  {
+   "page": 54,
+   "form": "ta- IND.1/2.A + t- 1.A + paks- ‘head’ + iitik ‘nod’ + -Ø PERF",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 54,
+   "form": "pakskiisuʔ",
+   "phonetic": "",
+   "gloss": "skull",
+   "readings": 2
+  },
+  {
+   "page": 54,
+   "form": "paks- ‘head’ + kiis- ‘bone’ + -uʔ NOM",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 54,
+   "form": "asaa-",
+   "phonetic": "",
+   "gloss": "horse; dog",
+   "readings": 2
+  },
+  {
+   "page": 54,
+   "form": "asaaki",
+   "phonetic": "",
+   "gloss": "dog",
+   "readings": 2
+  },
+  {
+   "page": 54,
+   "form": "asaa- + -kis DIM",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 54,
+   "form": "asaapahat",
+   "phonetic": "",
+   "gloss": "roan horse",
+   "readings": 2
+  },
+  {
+   "page": 54,
+   "form": "asaa- + pahat ‘be red’",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 54,
+   "form": "asiicapaat",
+   "phonetic": "",
+   "gloss": "mare",
+   "readings": 2
+  },
+  {
+   "page": 54,
+   "form": "asaa- + icapaak ‘woman’",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 54,
+   "form": "aruusaʔ",
+   "phonetic": "",
+   "gloss": "horse",
+   "readings": 2
+  },
+  {
+   "page": 54,
+   "form": "iis-",
+   "phonetic": "",
+   "gloss": "out of sight",
+   "readings": 2
+  },
+  {
+   "page": 54,
+   "form": "iisat",
+   "phonetic": "",
+   "gloss": "go out of sight, disappear over",
+   "readings": 2
+  },
+  {
+   "page": 54,
+   "form": "iis- + at ‘go’",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 54,
+   "form": "hirasiisat",
+   "phonetic": "",
+   "gloss": "go out of sight in the lead",
+   "readings": 2
+  },
+  {
+   "page": 55,
+   "form": "awiʔuusik (uur...)",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 55,
+   "form": "cawiirik (uur...)",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 55,
+   "form": "wiitik",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 55,
+   "form": "uur-",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 56,
+   "form": "wiitik",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 56,
+   "form": "wiiruutik",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 59,
+   "form": "Ø",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 59,
+   "form": "(ut...)",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 59,
+   "form": "Ø (ut...)",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 59,
+   "form": "tatuuʔut",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 59,
+   "form": "ta- IND + t- 1.A + ut- PREV",
+   "phonetic": "",
+   "gloss": "",
+   "readings": 2
+  },
+  {
+   "page": 59,
+   "form": "Ø (ut...)",
+   "phonetic": "",
+   "gloss": "to be (in a condition)",
+   "readings": 2
+  },
+  {
+   "page": 59,
+   "form": "ciksuʔ",
+   "phonetic": "",
+   "gloss": "thought, mind",
+   "readings": 2
+  }
+ ]
+}
