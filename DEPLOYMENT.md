@@ -11,7 +11,7 @@ PythonAnywhere until that was retired on 2026-11-13; see
 | | Static site (published) | Flask app (local only) |
 |---|---|---|
 | Where | GitHub Pages, from [docs/](docs/) | `http://localhost:5000` on your machine |
-| What it offers | Search, a "Start here" path, pages on sounds, word building and verbs, practice games, words by topic, Blue Book lessons, weekly flashcards | Everything: entry pages, sentence builder, spaced-repetition study, feedback, dashboard |
+| What it offers | Search, a "Start here" path, pages on sounds, word building and verbs, practice games with the words due each day, words by topic, Blue Book lessons, the textbook's phrases by situation, weekly flashcards | Everything: entry pages, sentence builder, spaced-repetition study, feedback, dashboard |
 | Needs a server | No | No; you start it when you want it |
 | Updated by | Rebuilding `docs/` on your machine and pushing | Nothing to do: it reads the database directly |
 
@@ -21,7 +21,7 @@ PythonAnywhere until that was retired on 2026-11-13; see
 
 1. `scripts/build_static_site.py` reads `skiri_pawnee.db` and writes the site into `docs/`:
    - `data/dictionary.json`: all 4,337 entries, one to a line, with everything the dictionary prints for each: headword and preverb, learner spelling, IPA, respelling, class, page of the book, senses, examples, the numbered verb forms, the other forms, the etymology, the forms cited from related languages, the stems listed under a bound stem. The 143 entries tagged `ceremony` carry senses and examples only (see "Before you publish");
-   - `index.html`, `about.html`, and the learning pages `learn.html` ("Start here"), `guide.html` ("Sounds"), `words.html`, `verbs.html`, `practice.html`, `topics.html`;
+   - `index.html`, `about.html`, and the learning pages `learn.html` ("Start here"), `guide.html` ("Sounds"), `words.html`, `verbs.html`, `practice.html`, `topics.html`, `phrases.html` (the lessons' Useful Phrases, written into the page from `curriculum/everyday_phrases.json`);
    - `data/wordbuilding.json`, `data/verbs.json`, `data/practice.json`, which those pages read in the browser: the derivation the dictionary prints for an entry, cut at its plus signs (entries tagged `ceremony` left out); Appendix 1 and 2 and the tables of chapter 4; the flashcard words. All of it is copied from the database and `extracted_data/` by `web/learning.py`; no form is made;
    - `printables/word_list.pdf` and `printables/paradigm_tables.pdf`, copied from `curriculum/printables/` (build them first with `scripts/build_printables.py` when the data has changed);
    - `flashcards.html` and one `flashcard-N.html` for each weekly set in the frozen `curriculum/flashcard_sets.json` that is not held for review (23 of 24);

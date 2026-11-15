@@ -117,7 +117,9 @@ is the pattern.
 | `fix_lesson_text_ocr.py` | 5.1 | applied | Brought the lessons' running text and titles in step with the audit's reading of the scan: 214 places in 17 lessons, 12 titles; `extracted_data/lessons.json` made a copy of the table. It left 196 places where only an accent differed, for the page; they were settled by `apply_lesson_page_reading.py`. `--check` |
 | `apply_lesson_page_reading.py` | 5.1 | applied | **The lessons' text as the page prints it** (2026-11-14). Puts into the `lessons` table what `source_audit/lesson_text_reading.py` read from the scan, line by line: 42 changes by hand after a second look, 8 titles, 286 words where one reading settles it (an accent, a raised dot, an apostrophe, the OCR's known slips), the next lesson's title and the glossary cut from the end of the notes; 13 rows of the Blue Book table that are lines of the lessons and had never been read at their own line. Never takes away an accent, dot or apostrophe on one reading. `--check` |
 | `pair_lesson_dialogues.py` | 5.1 | applied | **Each dialogue line with its English** (2026-11-14). The parser had stored the two columns of a dialogue as separate lines: in 83 of 156 lines the English stood in the Pawnee field or was missing. A Pawnee line now takes the English the page prints to its right on the same row (from the scan's text layer); merged lines are cut, continuation lines joined, and the section of notes that sat inside lesson 2's third dialogue is the first of that lesson's notes. 105 lines. Changes no Pawnee word. `--check` |
-| `relink_bluebook.py` | 5.1 | applied | Judged again every tie of a Blue Book word to a dictionary entry that was not made by the form: 65 re-tied, 349 untied (257 of 1,026 rows are tied now). A Blue Book sentence is an example of an entry only if one of its words is tied to it: 43 of 88 kept. Sets `blue_book_attested` from the ties. `--check` |
+| `relink_bluebook.py` | 5.1 | applied | Judged again every tie of a Blue Book word to a dictionary entry that was not made by the form: 65 re-tied, 349 untied (257 of 1,027 rows are tied now). A Blue Book sentence is an example of an entry only if one of its words is tied to it: 43 of 88 kept. Sets `blue_book_attested` from the ties. `--check` |
+| `fix_bluebook_pairing.py` | 5.1 | applied | **A Blue Book word has the English of its own row of the page** (2026-11-15). The extraction read the two columns of a word list one after the other; where a gloss runs over two lines or a heading stands between, every following word got its neighbour's meaning. The text layer of the scan gives each word its place, so the script reads what stands to the right of a form on its row. `--survey` compares all 649 word-list and phrase rows. The corrections (`reports/source_audit_2026-11/bluebook_pairing_fixes.json`): the five Useful Phrases of lesson 18, six words of lesson 10, two lines of lesson 9 and the word between them that had no row (*ti•ká•isat* 'he went home'), two slips of the OCR in English, and the gloss, class and tag of the one Blue Book-only entry made from a mis-paired row. Each correction marked `layer` is proved again on the text layer whenever the script runs. `--check` |
+| `everyday_phrases.py` | 5.1 | test | **The phrases the site lists by situation are the book's.** Proves `curriculum/everyday_phrases.json` (113 Useful Phrases of 18 lessons, the two Useful Conversations of lesson 20): every line stands letter for letter in a note of its lesson, shares a row of the printed page with its English (or stands over it), and agrees with the Blue Book table. `--list` prints them by situation. The file is edited by hand; run `--check` after any change to it or to the lessons' text |
 
 ## 5. Audits and repairs (September to November 2026)
 
@@ -134,7 +136,7 @@ is the pattern.
 
 | Script | Status | What it does |
 |---|---|---|
-| `build_static_site.py` | **live** | Builds [../docs/](../docs/) from the database: the dictionary file, the data of the learning pages (`web/learning.py`), the pages, the two printable documents. See [../DEPLOYMENT.md](../DEPLOYMENT.md) |
+| `build_static_site.py` | **live** | Builds [../docs/](../docs/) from the database: the dictionary file, the data of the learning pages (`web/learning.py`), the pages, the two printable documents. The lesson pages and the phrases page get their content from `web/learning.py` (`lesson_context`, `phrases_data`), the same as the local app; the build stops if a line of `curriculum/everyday_phrases.json` does not stand in the lessons' text. See [../DEPLOYMENT.md](../DEPLOYMENT.md) |
 | `freeze_flashcard_sets.py` | pipeline | Writes `curriculum/flashcard_sets.json`. Run only for a deliberate change to the curriculum: learners' progress is keyed to its week numbers |
 | `build_weekly_flashcards.py` | pipeline | Writes `curriculum/weekly_flashcards.md`: every card as front and back, for copying by hand. Word-building notes come from the version 2 analysis; weeks held for review are left out |
 | `build_flashcard_pdfs.py` | pipeline | Turns that file into printable sheets, four cards to a page |
@@ -178,7 +180,7 @@ text layer could settle.
 | `bluebook_glossary.py` | pipeline | Itemises the Blue Book's glossary from the scan's text layer, checks every page reference against the page it points to, and writes `extracted_data/blue_book_glossary.json` |
 | `ipa_notation.py` | **live** | The one place that knows both notations: Parks's (`·`, `–`, ə́, ɪ́), which is stored, and the older working one (hyphen, bullet, à, í), which the respelling code was written for. `to_working()` converts; the respelling scripts call it on the way in |
 | `check_simplified_forms.py` | test | Makes the respelling and the learner spelling again for every Parks entry and compares them with what is stored. Changes nothing. Run it after any change to phonetic forms or headwords |
-| `check_static_site.js` | test | Runs the published search page's own code (`docs/static/js/skiri.js`, `search.js`) against the published data with a stand-in for the browser: a headword and a verb form are found, citations are book pages, etymologies are escaped, held entries carry no added detail, all entries render. Then the learning pages: every piece shown for a word stands in the derivation the dictionary prints, the seven verbs agree with forms 1 and 2 of their entries, no held entry and no held flashcard week is in the data files, and every link between the pages leads to a file. 28 checks. Needs Node.js. Run it after `build_static_site.py` |
+| `check_static_site.js` | test | Runs the published search page's own code (`docs/static/js/skiri.js`, `search.js`) against the published data with a stand-in for the browser: a headword and a verb form are found, citations are book pages, etymologies are escaped, held entries carry no added detail, all entries render. Then the learning pages: every piece shown for a word stands in the derivation the dictionary prints, the seven verbs agree with forms 1 and 2 of their entries, no held entry and no held flashcard week is in the data files, and every link between the pages leads to a file. Then the lessons and the phrases (2026-11-15): a Blue Book word that is a form of a verb shows no pronunciation of the stem, the lesson pages keep the book's order and cite the book's page numbers, the corrected meanings of lessons 10 and 18 are on the page, every phrase of the phrases page is printed on the page of a lesson it names; and the practice box, run with days it is given, moves a word as the page says. 39 checks. Needs Node.js. Run it after `build_static_site.py` |
 
 All the `applied` scripts change nothing without `--apply`, back the files
 up first, and add to their record on a later run without overwriting it. A
@@ -239,6 +241,17 @@ eight decisions the same day.
   (65 re-tied, 349 untied). A row with two forms (*kiri, pus* 'cat') stays
   untied. The Blue Book examples cite the page of the scan, which is the
   book's page plus 28.
+- **The extraction of the Blue Book could give a word its neighbour's
+  meaning.** It read the two columns of a list one after the other. Three
+  runs were out of step by one row and were on the lesson pages until
+  2026-11-15 (`fix_bluebook_pairing.py`); one of them had made a dictionary
+  entry glossed 'judge' out of a verb form that means 'he is killing it'.
+  The check that found them compares only rows whose form the scan's text
+  layer has legibly: ten word-list rows it garbles are unchecked (`--survey`
+  lists them), and the rows of grammar examples and dialogues were surveyed
+  once, not corrected (324 of 376 the same and 9 a gloss on two lines; the 23
+  that differ looked like layout, not a slide; 20 could not be found).
+  Anything new taken from a two-column page should be checked by its row.
 - **The Pawnee of the lessons is as read from the page; the rest of their
   text is not.** `apply_lesson_page_reading.py` holds every Pawnee word of
   the titles, dialogues and notes to what its line of the scan shows. The

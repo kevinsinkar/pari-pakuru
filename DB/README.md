@@ -31,8 +31,8 @@ later by the script named. Row counts on 2026-11-14.
 | `cross_references` | 4,578 | the same script: Parks's "see ..." lists as printed, each English term with the Skiri forms in braces after it |
 | `fts_glosses`, `fts_examples`, `fts_english_index` | | full-text indexes, kept current by triggers |
 | `import_metadata` | 6 | importer |
-| `semantic_tags` | 4,499 | `scripts/tag_entries.py` |
-| `blue_book_attestations` | 1,026 | `scripts/blue_book_verify.py`; forms corrected from the scan on 2026-11-13 and 14. 257 rows are tied to an entry, each by its form and a shared meaning (`scripts/relink_bluebook.py`, 2026-11-14; before that 414 more were tied by a shared beginning). 13 rows that are lines of the lessons were corrected at their own line by `scripts/apply_lesson_page_reading.py` |
+| `semantic_tags` | 4,498 | `scripts/tag_entries.py` |
+| `blue_book_attestations` | 1,027 | `scripts/blue_book_verify.py`; forms corrected from the scan on 2026-11-13 and 14; on 2026-11-15 sixteen rows were given the English of their own row of the page and one printed word that had no row was added (`scripts/fix_bluebook_pairing.py`). 257 rows are tied to an entry, each by its form and a shared meaning (`scripts/relink_bluebook.py`, 2026-11-14; before that 414 more were tied by a shared beginning). 13 rows that are lines of the lessons were corrected at their own line by `scripts/apply_lesson_page_reading.py` |
 | `bb_gap_triage` | 516 | `scripts/bb_gap_triage.py` |
 | `sound_change_rules` | 24 | `scripts/sound_changes.py` |
 | `verb_paradigms`, `irregular_verb_roots`, `morpheme_abbreviations` | 770, 9, 164 | `scripts/extract_appendices.py` |

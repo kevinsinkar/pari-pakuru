@@ -66,8 +66,10 @@ Build a comprehensive Skiri Pawnee language preservation tool: a searchable, lin
 | 2026-11-14 | Blue Book | **The ties of Blue Book words to dictionary entries made again**: the 414 ties that had been made by a shared beginning (*asáki* 'dog' under the entry *a*) judged by form and meaning; 65 re-tied, 349 untied. A Blue Book sentence is an example of an entry only if one of its words is tied to it: 43 of 88 kept | done (item 61); 257 of 1,026 rows tied |
 | 2026-11-14 | function words | The two function-word tables gone over against the scan's readings: 32 rows corrected, 9 deleted | done (item 62); meanings and word classes not checked |
 | 2026-11-14 | lessons | **The lessons read from the page, line by line.** Every line of the titles, dialogues and notes that is not plain English cut from the scan and read: 911 lines, 79 a second time. 328 places corrected (at 164 of the 286 that one reading settles, the audit's reader had read the same at that place; none where it had read otherwise), 8 titles set, the next lesson's title and the glossary cut from the end of the notes; 13 rows of the Blue Book table corrected at their own line, two of them because the audit's crop had been cut at a line above. Then **the dialogues paired**: each Pawnee line with the English the page prints on its row (105 lines; in 83 of 156 stored lines the English had stood in the Pawnee field or was missing) | done (items 60, 69); committed and pushed (`fad4a3e`). Three places under a flaw in the scan and three doubts of reading are for a person with the book (item 70) |
+| 2026-11-15 | Blue Book | **A Blue Book word given the English of its own row of the page.** The extraction had read the two columns of a word list one after the other, and in three places every word had its neighbour's meaning: the five Useful Phrases of lesson 18, six words of lesson 10 (*asku•ra•wákahu'* stood as 'police man'; it is 'judge'), two lines of lesson 9. Found by reading, from the scan's text layer, what stands to the right of each form on its row; 16 meanings corrected, one printed word that had no row added (*ti•ká•isat* 'he went home'), one Blue Book-only dictionary entry corrected ('judge' for a verb form that means 'he is killing it') | done; committed and pushed the same day (`4c32588`). Ten rows whose form the text layer garbles are unchecked (item 73) |
+| 2026-11-15 | site | **The first five points of the feedback on the learner pages carried out**, at the owner's word: the lesson pages keep the book's order (the feedback had said the book begins with the dialogue; it begins with the basic words) and let a learner cover one side of a dialogue; a Phrases page with the 113 Useful Phrases by situation and the two conversations of lesson 20; a practice box in the browser that brings a word back after 1, 3, 7, 14 and 30 days; one visible line on which spelling to learn to write; no pronunciation of a stem beside a Blue Book word that is a form of it. "Start here" has seven steps, the lessons second | done; committed and pushed the same day at the owner's word (`58d6ae9`, site `0168bb1`). Decisions in it await the owner (rank 2) |
 
-The database on 2026-11-14: 4,337 entries (4,244 from Parks, 93 Blue Book
+The database on 2026-11-15: 4,337 entries (4,244 from Parks, 93 Blue Book
 only), 5,504 senses, 9,559 verb forms for 2,239 verbs, 2,607 examples, 21
 derived stems, IPA for the 4,244 Parks entries (2,218 with an accent mark)
 and for none of the Blue Book-only ones. Compared with the printed page,
@@ -88,7 +90,10 @@ lessons read from the page, the Blue Book ties, the function-word tables)
 were done the same evening, the dialogues were paired, and all of it was
 published together with the learner pages. Rank 2 is therefore new again:
 the owner has not yet looked at what went public in their name. The other
-ranks are as they were.*
+ranks are as they were. On 2026-11-15 the owner asked for the first five
+points of the feedback file; they were done that day and, at the owner's word,
+committed and pushed (`4c32588`, `58d6ae9`, `0168bb1`). Rank 2 now also holds
+what that work decided.*
 
 How the ranking is made: first what only people outside the project can
 settle and takes longest to arrange; then what is wrong or missing in front
@@ -101,7 +106,7 @@ sessions, **large** more.
 | Rank | What | Why at this rank | Who | Size | Open items |
 |---|---|---|---|---|---|
 | 1 | **Send the review packet to the Pawnee Nation's language and culture people** | The packet is ready ([community_review/](community_review/)). Nothing in code replaces the review, and it takes the longest to arrange. It decides whether flashcard Week 20 is ever shown, whether the word-building guide is published, how much of the ceremony-tagged entries is shown, and what learners are told about *kt* and *tt* | You: fill in the contact line and make the contact. The review itself is theirs to pace | Small | 1, 2, 3, 14, 43, 50, 9, 53 |
-| 2 | **Look at the published site and settle the decisions made for you** | On the evening of 2026-11-14 the learner pages, the corrected lessons and the paired dialogues went public on the owner's word ("I leave it to your judgement"), with choices in them that two sessions made and the owner has not confirmed. Five on the learner pages: the project's own word-construction analysis stays unpublished; nothing on *kt* and *tt* on the Sounds page; two sentences of the About page; the heading "Learn Skiri Pawnee"; the weekly flashcard PDFs not linked. Three in the lessons: square brackets where the scan is damaged; the glossary and the next lesson's title cut from the end of the notes; 13 rows of the Blue Book table changed on one reading. One session's feedback on the learner pages is in [reports/learner_site_feedback_2026-11-14.md](reports/learner_site_feedback_2026-11-14.md); its first five points are the next work on the site if the owner agrees with them | You; then code | small, then medium | 65 to 68, 70 |
+| 2 | **Look at the published site and settle the decisions made for you** | On the evening of 2026-11-14 the learner pages, the corrected lessons and the paired dialogues went public on the owner's word ("I leave it to your judgement"), with choices in them that two sessions made and the owner has not confirmed. Five on the learner pages: the project's own word-construction analysis stays unpublished; nothing on *kt* and *tt* on the Sounds page; two sentences of the About page; the heading "Learn Skiri Pawnee"; the weekly flashcard PDFs not linked. Three in the lessons: square brackets where the scan is damaged; the glossary and the next lesson's title cut from the end of the notes; 13 rows of the Blue Book table changed on one reading. One session's feedback on the learner pages is in [reports/learner_site_feedback_2026-11-14.md](reports/learner_site_feedback_2026-11-14.md); its first five points were carried out on 2026-11-15 and pushed the same day at the owner's word. That work made choices too: the lesson pages keep the book's order, with the basic words before the dialogue; the phrases are listed under eight situations of the project's choosing; the menu has an eleventh link, "Phrases", and folds below 1,024 pixels; "Start here" has seven steps with the lessons second; the wording of the line on spelling; 16 meanings of Blue Book words changed by the row of the page. Say what to change | You; then code | small | 65 to 68, 70, 73 to 76 |
 | 3 | **Decide what the 93 "Blue Book-only" entries are** | 37 of them are words Parks has, written in the textbook without long vowels; more are likely (the textbook writes *e* where Parks writes *ii*). They sit in the first three flashcard weeks as if they were other words, with a learner respelling made from the textbook's spelling. The site now names the dictionary's entry beside them; whether to teach the dictionary's form instead is a decision about the frozen flashcard list | Your decision, with a person who knows the language if one can be asked; then code | Small to medium | 52, 35, 21 |
 | 4 | **Use what was rebuilt** | The English index now links 5,162 Skiri terms to their entries and holds Parks's cross-references as printed. The public search does not use either yet; the local search still joins on the spelling of the headword. The pronunciation guide said nothing of what chapter 2 tells learners (*c* as [ts] or [č], *r* often *n* at the start of a word); since the sixth part of 2026-11-14 the Sounds page does, and the topic tags are shown, so what is left of this rank is the index, the cross-references and *kt*/*tt* | Code; the wording about speakers after rank 1 | Medium | 48, 53 |
 | – | *For a person with the books, whenever one is at hand* | 17 Blue Book forms the scan cannot settle; in the lessons, three places under a flaw in the scan and four small doubts (70); 37 small differences in the dictionary; the empty cell of *tir* in Appendix 2; tables 6 and 7 of the grammar chapter (two diagrams the readers wrote down differently); 55 glossary references whose English is not on the page they point to; three Skiri terms of the English index that fit two dictionary entries equally; six Blue Book-only entries with no printed form found | A person with the books | Small | 42, 70, 45, 41, 51, 28, 32, 35 |
@@ -128,8 +133,10 @@ The weak rule of person derivation stays in force: the owner's decision of
    beginner would; then open lesson 9 (a dialogue, now with its English
    beside each line) and lesson 16 (the square brackets). The decisions are
    listed in the phase entries "The public site rebuilt around the learner"
-   and "The lessons read from the page": say yes to each or change it. Then
-   read the feedback file and say which of its points should be done.
+   and "The lessons read from the page": say yes to each or change it.
+   The five changes of 2026-11-15 are public too: open "Start here",
+   lesson 1, "Phrases" and "Practice". Their decisions are in the phase
+   entry "The five changes to the learner pages".
 
 For the person with the books: the last section of
 `reports/source_audit_2026-11/bluebook_applied_report.txt` (17 forms, with
@@ -2159,6 +2166,152 @@ nothing to apply), and every other check of the README (32 in all, and the
 site's 28); the public site was built again from the corrected tables and
 the learner pages.
 
+### ✅ The five changes to the learner pages; a Blue Book word with the English of its own row (2026-11-15)
+
+The owner's instruction, after reading the feedback on the learner pages:
+"continue with your five changes". The five are the first five points of
+[reports/learner_site_feedback_2026-11-14.md](reports/learner_site_feedback_2026-11-14.md).
+Everything below was built and checked, and then committed and pushed the
+same day when the owner said "commit and push": `4c32588` (the data),
+`58d6ae9` (the site's sources), `0168bb1` (the built site).
+
+**What the work found before it changed a page.** The phrases page was to
+gather the lessons' Useful Phrases, so each phrase's English had to be
+certain. The stored pairs of lesson 18 did not read like pairs
+(*Sutsiks•áhut* 'Who's been busy?'). The scan's text layer gives every word
+its place on the page, so what stands to the right of a form on its own row
+can be read without reading an image (`scripts/fix_bluebook_pairing.py
+--survey`: 649 word-list and phrase rows). Three runs were out of step, each
+by one row, and all three were on the public lesson pages:
+
+- Lesson 18, Useful Phrases. 'Who's been busy?' is the English of the heading
+  of the verb set that follows; the extraction put it first and moved the
+  five meanings down. As printed: *Sutsiks•áhut.* 'Hold this.',
+  *Keskuruh•ra•wíat.* 'Help me.', *Ketuh•rá•wiat.* 'Let me help.',
+  *Tat•atsiks•kápakis.* 'I'm sorry.', *Kesku•rahúrihu'.* 'Forgive me.'
+- Lesson 10, Additional Words. The second line of the gloss of *het•katáku*
+  ('sheriff, office of the law', then '"(badge) against the breast"') was
+  taken for the next word's meaning, and six words each got the meaning of
+  the word above: *tsahriks•táhrurikukus* is 'police man, "person catcher"',
+  *asku•ra•wákahu'* is 'judge, "says it one time"', *ti•kuwútiku'* is 'he is
+  killing it', and so on to *ti•wáktiku'* 'he is telling it', which had been
+  lost. A Blue Book-only dictionary entry had been made from the third of
+  these: the public search answered 'judge' with a verb form that means 'he
+  is killing it'. Its gloss is corrected; its class (N) and its tag
+  ('number', from "one time") were worked out from the wrong meaning and are
+  removed.
+- Lesson 9, Basic Words. *ti•ká•isat* 'he went home' had no row, and its
+  English stood beside *ti•hú•isat*, which is 'it has sunk (beneath) a
+  surface'. The missing word has a row now (it comes last in the lesson's
+  list, because rows are shown in the order of their numbers).
+
+16 meanings corrected, 1 row added, 1 entry corrected, with their copies in
+`bb_gap_triage` and `extracted_data/blue_book_extracted.json`. Each
+correction is proved again on the text layer whenever the script runs; all
+three places were also looked at in a cut of the scan (two sheets, six
+places: the only images read in this part, a few thousand tokens, no
+sub-agents). The same cut settled four slips of the OCR in the English of
+the notes (*Yes, Fm fine* for "Yes, I'm fine"; *hail* for the Skidi word
+*haú* inside a sentence of lesson 1) and the form of row 2671. Record:
+`reports/source_audit_2026-11/bluebook_pairing_fixes.json`,
+`lesson_text_reading/second_02.json` and `decisions.json`,
+`reports/bluebook_pairing_report.txt`. The engines review's check puts the
+old English back before it compares its test set
+(`scripts/engines_review/build_test_sets.py`).
+
+**1. The dialogue. The feedback was wrong about the book.** It said the Blue
+Book opens every lesson with a dialogue and the page should too. The book
+opens every lesson with its Basic Words (6 to 20 of them; 43 in lesson 19,
+where the months and weekdays are stored as basic words), then the
+dialogues, then Additional Words. The page already had that order, and it
+is kept. What was done for the point behind the advice: links at the top of
+a lesson to each of its parts; "Cover the English" and "Cover the Pawnee"
+over the dialogues, with a covered line shown again when chosen; and on
+"Start here" the lessons are step 2, straight after the sounds, as in the
+book, where they were step 5.
+
+**2. Phrases.** [curriculum/everyday_phrases.json](curriculum/everyday_phrases.json)
+lists the 113 Useful Phrases of 18 lessons and the 16 lines of the two
+Useful Conversations of lesson 20, each with one of eight situations
+("Meeting someone", "Around the house", "At the table", "Coming and going",
+"Thanks, feelings and helping", "Learning and speaking Pawnee", "Weather",
+"Money"). `scripts/everyday_phrases.py --check` proves every line: it stands
+letter for letter in the lessons' text, it shares a row of the printed page
+with its English or stands over it (127 of 127), and the Blue Book table
+agrees (95 rows). The new page `phrases.html` shows them with the lesson
+each is from; a phrase the book prints in two lessons with two English
+renderings shows both (*Tat•atsíks•tehu'.*: 'Thank you.', lesson 8, and 'I
+am happy.', lesson 16). The lesson pages take their Useful Phrases from the
+same file, so they no longer list a lesson's title, the pieces of a tongue
+twister or the lines of a song under that heading, as the table's PHRASE
+rows had made them do. One South Band form is left off the phrases page
+because two of its letters lie under a flaw in the scan.
+
+**3. Spaced practice.** A Leitner box in the visitor's browser
+(`Skiri.box` in `web/static/js/skiri.js`): five boxes; a right answer on a
+word that is due moves it up, and it comes back after 1, 3, 7, 14 or 30
+days; a miss sends it to the first box, due the same day; one day cannot
+move a word twice. The Practice page opens with "Today" (how many words are
+due, the count in each box) and "Today's words" is the first choice of
+words: the due ones, then new ones in the order of the flashcard weeks. The
+flashcards' "Got it" and "Missed" feed the same box, and "Start here" says
+how many words are due. Nothing leaves the browser, and the box holds entry
+ids, never forms.
+
+**4. One line on spelling.** `web/templates/_spelling_line.html`, in view on
+every lesson page, on the flashcard pages and on the phrases page: the
+learner spelling is the one to learn to write; the Blue Book column is the
+1979 textbook's spelling; "Say it" is a rough guide, not a spelling;
+dialogues and phrases are printed only in the textbook's spelling and stay
+in it; where a teacher or a speaker writes a word another way, follow them.
+
+**5. No stem's pronunciation beside a word.** In the word lists of a lesson
+the columns "Say it" and "Phonetic form" stand under the heading "In the
+dictionary", because they are the entry's. The three rows tied to an entry
+as a form of its stem (*ti•'at*, *ti•ta•'at*, *we tí•hura•hats*) keep the
+link, marked "a form of", and show no pronunciation. "not in Parks
+dictionary" reads "no entry linked".
+
+**Also set right on the way.** The lesson pages cite the page numbers
+printed in the book (lesson 1 is pages 1 to 5; the page had said 29 to 33,
+the pages of the scan). The lessons' index no longer says that every word
+is linked to the dictionary or that titles carry OCR slips. The notes of a
+lesson say that their English is unread OCR text. The menu folds below
+1,024 pixels, where "About" used to stand alone on a second line.
+
+**Decisions made in this part, for the owner to confirm or change:**
+- The lesson pages keep the book's order; the dialogue is not moved above
+  the basic words.
+- The eight situations and which phrase stands under which; the phrases page
+  has a link in the menu, the eleventh.
+- "Start here" has seven steps: sounds, lessons, phrases, flashcards, word
+  building, verbs, practice. It says "in an order we suggest".
+- The spelling line says the learner spelling is the one to write. That
+  rests on the owner's report of what Pawnee people write today
+  (2026-11-14), not on anything from the Pawnee Nation.
+- The gaps of the practice box (1, 3, 7, 14, 30 days) and that a round of
+  "Today's words" fills up with new words.
+- 16 meanings of Blue Book rows changed, a row added and an entry's class
+  emptied, on the evidence of the page's rows and one look at a cut.
+- The word-construction outputs were made again (`run.py --all`): one entry
+  lost its class and one more Blue Book word has a seam, so three files in
+  `curriculum/roots_v2` changed by a line or two.
+
+**Not done.** The book prints, over the Additional Words of 11 lessons, what
+they are for ("Nouns to substitute for *rakis* in the dialogues."). Those
+lines are not stored, and they are the book's own way of making the dialogue
+the centre of a lesson (item 74). The other points of the feedback file
+(sound, a plan for today, feedback after a miss, folding the reference
+tables, pointing outward, `lang="paw"`) were not asked for.
+
+Checks: every check of the README was run again on 2026-11-15 (two new:
+`fix_bluebook_pairing.py --check`, `everyday_phrases.py --check`); the
+site's own check has 39 (11 new: the stem row, the order and page numbers
+of a lesson, the corrected meanings, every phrase on the page of a lesson
+it names, the box's arithmetic on days it is given). The changed pages were
+driven in a headless browser at desktop and phone width: covering a side, a
+round of today's words, the counts after it and three days later.
+
 ### 🔲 Ongoing — Data Quality & Maintenance
 
 - [x] **~~Blue Book gap triage~~** — **DONE (2026-03-19)** via Gemini batch analysis. 516 of 984 BB vocabulary items classified into 8 categories: phrases (196/38%), inflected verbs (141/27%), unlisted nouns (94/18%), descriptors (40/8%), possessed forms (15/3%), function words (11/2%), loanwords (10/2%), OCR artifacts (9/2%). Key finding: 65% are morphological gaps (roots exist in Parks, inflected forms don't match). 115 high-value items flagged for potential DB addition. DB table: `bb_gap_triage`. Report: `reports/bb_gap_triage.txt`. Script: `scripts/bb_gap_triage.py`.
@@ -2324,6 +2477,13 @@ here, so that there is one list to keep current.
 70. **For a person with the Blue Book: six places in the lessons.** Three lie under a flaw in the scan and carry square brackets. Lesson 16, first dialogue (scan page 99, book page 71): *Kitské [w]e ru'?* and *We ti p[it]ku.*; the bracketed letters are those of the same sentences on the page before. Lesson 14, the South Band line under "Don't touch!" (scan page 93, book page 65): *Ka res•[..]sí•urúkat!*; about two letters, not filled in. Three are doubts of reading: whether a raised dot or nothing stands between *rá* and *wa* in *ti•rá wa•rar•uhat* and *hiri•rá wa•rar•uhat* (lesson 13, scan page 89, book page 61; three readers could not tell, and the OCR's space is stored); *tuh•rá'*, the last line of the breakdown on scan page 75 (book page 47), where one reader sees an accent in three looks and the audit had read the dialogue line above instead; and a small stroke over the U of the title *TÍRUKS•TSAK•ARIKI* (lesson 17), which may be a speck. The same six stand in the Blue Book table.
 71. **The English of the lessons' notes is OCR text nobody has proofread.** Only the Pawnee was read on 2026-11-14. The prose has the OCR's slips, the hyphens of line breaks and none of the book's italics, and the breakdown lines keep the OCR's spacing around the plus signs.
 72. **The function-word tables: meanings and word classes were never checked.** `fix_function_words.py` set the words to the scan's readings; the English and the class of a row are what the extraction gave (*pirau* is glossed 'when'). `bb_gap_triage` is corrected only in the 13 rows that are lines of a lesson.
+
+### From the phrases and the pairing (2026-11-15)
+
+73. **Ten word-list rows could not be checked against their row of the page**, because the scan's text layer garbles the form: *ti'* (lesson 1), *haas* and *awat* (7), *hu'* (11), *kit-kaharu'* (13), *tatut•á•wahri•úsuku'* (15), *we ta sák•ta* (16), *tsiksu tatut•á•wahri'* (18), *tat•katá•hak'sta* (19), and the phrase *Nawa rúru!* (7, which the lessons' text pairs soundly). The rows of grammar examples and dialogues were surveyed once and not corrected: 324 of 376 the same, 23 that differ and looked like layout. One of those is worth a look: *tiraku'* in lesson 10 is stored as 'rifle' and the page has 'gun' beside it. `python scripts/fix_bluebook_pairing.py --survey` lists what differs.
+74. **The book's line over a lesson's Additional Words is not stored.** Eleven lessons say what the words are for: "Nouns to substitute for *rakis* in the dialogues." (lesson 2), "Body parts to replace "head" and "eye" in the dialogues." (5), and so on. It is how the book makes the dialogue the centre of a lesson. To show the lines, their Pawnee words have to be read at their own place on the page (about a dozen lines, one small sheet) and the lines need a place in the `lessons` table.
+75. **The word added to lesson 9 stands last in its list.** *ti•ká•isat* 'he went home' is printed between *ti•káisat* and *ti•hú•isat*; a lesson's words are shown in the order of their row numbers, and a new row gets the highest. Putting it in its place needs an order column in `blue_book_attestations`.
+76. **The Blue Book-only entry *tikuwutikuʔ* 'he is killing it' is a form of a verb Parks has**, with no class since its gloss was corrected. It belongs with the decision about the 93 Blue Book-only entries (item 52). The word the entry was meant to be, 'judge' (*asku•ra•wákahu'*), has no entry.
 
 ---
 

@@ -10,6 +10,18 @@ practice code. I did not click through every game.
 Every suggestion below keeps the site's rule: nothing computed is shown, no
 form is made, ceremony-tagged material stays held.
 
+**Added on 2026-11-15.** The owner asked for the first five points and they
+were carried out that day (project log, "The five changes to the learner
+pages"). One of them rested on a mistake of mine, which is corrected where
+it stands: point 1 says the Blue Book opens every lesson with a dialogue.
+It does not. Every lesson opens with its Basic Words, then the dialogues,
+then Additional Words, and the lesson page already followed that order. The
+order was kept. The same day's work also found that the English beside
+some Blue Book words was the English of the row above (the Useful Phrases
+of lesson 18 among them), which matters for point 2: the phrases are
+gathered from the lessons' text and each is proved against its row of the
+page.
+
 ## What already follows good practice
 
 - **It says what it is.** "No speaker of Pawnee and no one from the Pawnee
@@ -30,7 +42,13 @@ form is made, ceremony-tagged material stays held.
 
 ## What I would change first
 
-1. **Lead with the dialogue.** The Blue Book opens every lesson with a short
+1. **Lead with the dialogue.** *(Wrong about the book: see the note of
+   2026-11-15 above. The book opens a lesson with 6 to 20 basic words and
+   then the dialogue; only lesson 19 has a list of forty, because the months
+   and weekdays are stored there as basic words. What was done instead: the
+   order kept, links to each part at the top of a lesson, one side of a
+   dialogue can be covered, and the lessons moved up to step 2 of "Start
+   here".)* The Blue Book opens every lesson with a short
    exchange; the lesson page opens with a table of up to forty words and the
    dialogue comes after it. Connected language that means something ("What is
    it? It is a feather.") is what a beginner remembers and can use the same

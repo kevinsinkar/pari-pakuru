@@ -169,8 +169,8 @@ was read by OCR, were restored from the scan on 2026-11-13.
 | `derived_stems` | 21 | the stems Parks lists, with their glosses, under ten bound stems such as *iri-* and *piira-* |
 | `english_index` | 7,806 | English-to-Skiri lookup rows, rebuilt from the printed page on 2026-11-14: 5,165 with a Skiri term, 5,162 of them linked to an entry; the other 2,641 are headwords that only refer to another |
 | `cross_references` | 4,578 | "see also" links as printed, with the Skiri forms in braces |
-| `semantic_tags` | 4,499 | 19 topic tags on 3,315 entries |
-| `blue_book_attestations` | 1,026 | Blue Book words, phrases and sentences as read from the scan; 257 tied to an entry, each by its form |
+| `semantic_tags` | 4,498 | 19 topic tags on 3,314 entries |
+| `blue_book_attestations` | 1,027 | Blue Book words, phrases and sentences as read from the scan, each with the English of its own row of the page; 257 tied to an entry, each by its form |
 | `lessons` | 20 | Blue Book lessons: titles, dialogues, notes. The Pawnee is as read from the scan line by line (2026-11-14) |
 | `verb_paradigms` | 770 | Parks Appendix 1: 7 verbs × 10 modes × 11 persons; 152 forms corrected from the printed pages on 2026-11-13 |
 | `irregular_verb_roots` | 9 | Parks Appendix 2 |
@@ -222,7 +222,7 @@ conjugation engine, which was withdrawn on 2026-11-14.
 
 The Flask app runs locally only (`python -m web.app`). The public site on
 GitHub Pages has the search, the learning pages (`/learn`, `/guide`, `/words`,
-`/verbs`, `/practice`, and a topics page of its own), the flashcards and the
+`/verbs`, `/practice`, `/phrases`, and a topics page of its own), the flashcards and the
 lessons, and none of the others.
 
 | Route | Page |
@@ -231,16 +231,17 @@ lessons, and none of the others.
 | `/search`, `/search/partial`, `/api/search` | search (page, live results, JSON) |
 | `/entry/<id>` | full entry |
 | `/browse`, `/browse/tag/<tag>`, `/browse/class/<class>` | browse |
-| `/lessons`, `/lessons/<n>` | Blue Book lessons |
+| `/lessons`, `/lessons/<n>` | Blue Book lessons, each in the book's order |
+| `/phrases` | the lessons' Useful Phrases by situation, and the two conversations of lesson 20 |
 | `/flashcards`, `/flashcards/<week>` | weekly flashcards |
 | `/study`, `/api/srs/review` | spaced-repetition study |
 | `/sentence-builder`, `/api/assemble`, `/api/slot-options` | sentence builder: a printed Blue Book sentence with words swapped for other printed words |
 | `/api/verbs`, `/api/verb-forms`, `/api/dictionary-sentence` | a dictionary verb by its entry: printed and derived forms, and a sentence in Parks's spelling |
-| `/learn` | "Start here": six steps for a new learner |
+| `/learn` | "Start here": seven steps for a new learner |
 | `/guide` | "Sounds": the letters, and a word taken syllable by syllable |
 | `/words` | word building: the pieces the dictionary prints, and the words that share a piece |
 | `/verbs` | verbs: the five forms, the seven verbs of Appendix 1, Parks's tables |
-| `/practice` | six practice games over printed forms |
+| `/practice` | six practice games over printed forms; "Today": the words due again (kept in the browser) |
 | `/topics` | leads to `/browse` (the published site has its own topics page) |
 | `/data/<name>.json`, `/printables/<file>` | the data the learning pages read (`wordbuilding`, `verbs`, `practice`); the two printable documents |
 | `/dashboard` | data-quality dashboard |
