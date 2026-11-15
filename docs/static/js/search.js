@@ -89,6 +89,17 @@ function correctionLink(entry) {
   return `${CORRECTIONS_URL}?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
 }
 
+// A word taken from the textbook: the form the book prints, and the dictionary's entry for the same word if it has one.
+function textbookLine(entry) {
+  if (entry.source !== 'blue_book') return '';
+  const printed = (entry.bb_printed || []).map(p =>
+    `<span lang="x-paw">${esc(p.form)}</span>${p.page ? ` (p. ${esc(p.page)})` : ''}`).join(', ');
+  const same = entry.bb_variant_of
+    ? ` The dictionary has this word as <span lang="x-paw">${esc(entry.bb_variant_of.headword)}</span>.` : '';
+  if (!printed && !same) return '';
+  return `<p class="result-usage">${printed ? `As the textbook prints it: ${printed}.` : ''}${same}</p>`;
+}
+
 function moreOfEntry(entry) {
   const parts = [];
 
@@ -187,6 +198,7 @@ function renderSearchResults(results, total) {
         ${entry.blue_book_attested ? '<span class="badge-attested">Blue Book</span>' : ''}
       </div>
       ${glossHtml}
+      ${textbookLine(entry)}
       ${entry.simplified_pronunciation ? `<p class="result-pronunciation">${esc(entry.simplified_pronunciation)}</p>` : ''}
       ${entry.phonetic_form ? `<p class="result-ipa" lang="x-paw">${esc(entry.phonetic_form)}</p>` : ''}
       ${moreOfEntry(entry)}

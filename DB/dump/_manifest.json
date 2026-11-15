@@ -2,7 +2,7 @@
  "tables": {
   "lexical_entries": {
    "rows": 4337,
-   "sha256": "b964e839a31ef905dee2d8d817bd46a139dbed0795c2d33dcbfb91352cf1f5e9"
+   "sha256": "f0544068f1f9b4b261f93fa881043d1aa19b42859ae4fa809b998a66018825c0"
   },
   "paradigmatic_forms": {
    "rows": 9559,
@@ -25,12 +25,12 @@
    "sha256": "5e37c70b8eb5850f11d1d9625e2ec6a109cb1c1fb551d4d3f6cbf5dfa37d159b"
   },
   "english_index": {
-   "rows": 8067,
-   "sha256": "86fd0bed4b5922d2b614841293f05bc968ca2a089cb1d642562dad4e1e0ae9f1"
+   "rows": 7806,
+   "sha256": "cf68398790f7a69ca91651ee363c71cac5bed4e69886d1b93c4c6bcc2c5d30e1"
   },
   "cross_references": {
-   "rows": 4585,
-   "sha256": "653c1e0502da9a3900120e414af09764db20014e9b0c90cb064a4100745712ed"
+   "rows": 4578,
+   "sha256": "60aada254ece49562dfda78c75b7d29c954d8273ff03e8fc4073b75fe1ea16a5"
   },
   "import_metadata": {
    "rows": 6,
@@ -42,7 +42,7 @@
   },
   "blue_book_attestations": {
    "rows": 1026,
-   "sha256": "5d7daa3aa5901e68cd40ee7ddafe238659ea3bd947cfa8dc6df9f435089a8f07"
+   "sha256": "41d5842de4d2a7d2c9ce71d08b779c05a66ae4bb0e1baa49c26524bda0e2b1b8"
   },
   "sound_change_rules": {
    "rows": 24,
@@ -60,33 +60,17 @@
    "rows": 164,
    "sha256": "7e7104c1b62173f328ef04d078cb48a20f3fefe732b1452a89dc829b1ecc60ef"
   },
-  "morpheme_inventory": {
-   "rows": 37,
-   "sha256": "28c64f0e814ec1fcda967881a374203fe92311e6c5a99f6fa3b9ba4123ed26cd"
-  },
-  "verb_template_slots": {
-   "rows": 27,
-   "sha256": "cf8bc4b40be0fcf8dfd9e2e499a879b3bf688e17501da924c87d99acae28d84f"
-  },
-  "noun_stems": {
-   "rows": 49,
-   "sha256": "6eb3b0a3e5e7b6ea295bce0f72ec794e431e9c9a51bf2f38c6abadaa20076c81"
-  },
   "kinship_paradigms": {
-   "rows": 14,
-   "sha256": "00670cf4dc7cd2848062727568f468b5ebdea1eb5d09fa6adc8e228679fc5d4c"
-  },
-  "possession_examples": {
-   "rows": 20,
-   "sha256": "e8fe3612d591cde6f5e799d3fed621a85c3812980a89a665a9c2445649baacee"
+   "rows": 11,
+   "sha256": "f430629fea0c84e3b6fa7e2ea56135ed7de03074f792b77023ca2dfbfab409ef"
   },
   "bb_gap_triage": {
    "rows": 516,
    "sha256": "7c31a091a028ec71d5b81b1398092be52371611bbe9662e5a48195acfe698e9e"
   },
   "function_words": {
-   "rows": 418,
-   "sha256": "29d12ad9877113c947f64d4a9471ff0d443426939fdfe076125efa004023066d"
+   "rows": 414,
+   "sha256": "e144e73c68b077a32897956b4aee631dd8555128e1d07df60432c189f32745ac"
   },
   "bb_function_words": {
    "rows": 63,
@@ -98,7 +82,7 @@
   },
   "lessons": {
    "rows": 20,
-   "sha256": "79e0196d452431c3f9cc5e03176c42d1fcc17d67b99644179be3d69f1b543a37"
+   "sha256": "74f10e18b94abfc20012148a9188fab14549c6a3817eb6dddb3785787d46c761"
   }
  },
  "left_out": [

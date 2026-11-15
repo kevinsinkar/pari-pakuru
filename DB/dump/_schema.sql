@@ -256,38 +256,6 @@ CREATE TABLE morpheme_abbreviations (
             notes TEXT
         );
 
-CREATE TABLE morpheme_inventory (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            slot_number INTEGER NOT NULL,
-            slot_name TEXT NOT NULL,
-            morpheme_form TEXT NOT NULL,
-            label TEXT NOT NULL,
-            person_constraint TEXT,
-            mode_constraint TEXT,
-            verb_class_constraint TEXT,
-            notes TEXT,
-            UNIQUE(slot_number, morpheme_form, label)
-        );
-
-CREATE TABLE verb_template_slots (
-            slot_number INTEGER PRIMARY KEY,
-            slot_name TEXT NOT NULL,
-            slot_group TEXT NOT NULL,
-            description TEXT,
-            required INTEGER DEFAULT 0
-        );
-
-CREATE TABLE noun_stems (
-            entry_id TEXT,
-            headword TEXT NOT NULL,
-            stem TEXT NOT NULL,
-            suffix TEXT,
-            possession_type TEXT NOT NULL,
-            position_verb TEXT,
-            notes TEXT,
-            UNIQUE(headword, possession_type)
-        );
-
 CREATE TABLE kinship_paradigms (
             english_term TEXT NOT NULL,
             stem TEXT NOT NULL,
@@ -298,21 +266,6 @@ CREATE TABLE kinship_paradigms (
             source TEXT DEFAULT 'appendix3',
             notes TEXT,
             UNIQUE(english_term, stem)
-        );
-
-CREATE TABLE possession_examples (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            headword TEXT NOT NULL,
-            person TEXT NOT NULL,
-            noun_class TEXT,
-            possession_type TEXT NOT NULL,
-            expected_form TEXT NOT NULL,
-            generated_form TEXT,
-            morpheme_analysis TEXT,
-            confidence TEXT,
-            source TEXT DEFAULT 'BB',
-            match_status TEXT,
-            UNIQUE(headword, person, possession_type)
         );
 
 CREATE TABLE community_feedback (
