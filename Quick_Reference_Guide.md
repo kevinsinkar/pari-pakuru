@@ -163,26 +163,26 @@ was read by OCR, were restored from the scan on 2026-11-13.
 | `lexical_entries` | 4,337 | one row per headword; 4,244 from Parks, 93 made from Blue Book words (37 of those are words Parks has too: `bb_variant_of`) |
 | `glosses` | 5,504 | numbered senses |
 | `paradigmatic_forms` | 9,559 | the five forms, for 2,239 verbs |
-| `examples` | 2,652 | example sentences (2,564 Parks, 88 Blue Book) |
+| `examples` | 2,607 | example sentences (2,564 Parks, 43 Blue Book) |
 | `etymology` | 3,825 | Parks's printed etymology; `constituent_elements` is a derived parse whose per-piece glosses are unreliable |
 | `cognates` | 609 | related forms in Arikara, Kitsai, Wichita ... |
 | `derived_stems` | 21 | the stems Parks lists, with their glosses, under ten bound stems such as *iri-* and *piira-* |
 | `english_index` | 7,806 | English-to-Skiri lookup rows, rebuilt from the printed page on 2026-11-14: 5,165 with a Skiri term, 5,162 of them linked to an entry; the other 2,641 are headwords that only refer to another |
 | `cross_references` | 4,578 | "see also" links as printed, with the Skiri forms in braces |
 | `semantic_tags` | 4,499 | 19 topic tags on 3,315 entries |
-| `blue_book_attestations` | 1,026 | Blue Book vocabulary items; 581 linked to an entry |
-| `lessons` | 20 | Blue Book lessons |
+| `blue_book_attestations` | 1,026 | Blue Book words, phrases and sentences as read from the scan; 257 tied to an entry, each by its form |
+| `lessons` | 20 | Blue Book lessons: titles, dialogues, notes. The Pawnee is as read from the scan line by line (2026-11-14) |
 | `verb_paradigms` | 770 | Parks Appendix 1: 7 verbs × 10 modes × 11 persons; 152 forms corrected from the printed pages on 2026-11-13 |
 | `irregular_verb_roots` | 9 | Parks Appendix 2 |
 | `morpheme_abbreviations` | 164 | Parks's abbreviation list |
 | `sound_change_rules` | 24 | Parks chapter 3: the rules and his examples |
 | `kinship_paradigms` | 11 | Parks Appendix 3: kin terms with "my", "your", "his/her" |
-| `function_words`, `bb_function_words` | 414, 63 | particles, demonstratives, conjunctions. The rows taken from Blue Book phrases are still OCR text |
+| `function_words`, `bb_function_words` | 406, 62 | particles, demonstratives, conjunctions. The rows taken from Blue Book phrases hold the scan's readings since 2026-11-14; their meanings were not checked |
 | `bb_gap_triage` | 516 | Blue Book items with no dictionary match, classified |
 | `community_feedback` | 2 | flags and confirmations from the web app |
 | `srs_cards`, `srs_reviews` | 0, 0 | spaced-repetition state |
 
-Useful columns on `lexical_entries`: `blue_book_attested` (181 entries),
+Useful columns on `lexical_entries`: `blue_book_attested` (242 entries),
 `source` (`blue_book` for the 93 Blue Book-only words), `bb_variant_of`,
 `page_number`. (`form2_confidence` is empty since 2026-11-14.)
 
@@ -221,8 +221,9 @@ conjugation engine, which was withdrawn on 2026-11-14.
 ## Web app routes
 
 The Flask app runs locally only (`python -m web.app`). The public site on
-GitHub Pages has the search, flashcard, lesson and guide pages and none of
-the others.
+GitHub Pages has the search, the learning pages (`/learn`, `/guide`, `/words`,
+`/verbs`, `/practice`, and a topics page of its own), the flashcards and the
+lessons, and none of the others.
 
 | Route | Page |
 |---|---|
@@ -235,7 +236,13 @@ the others.
 | `/study`, `/api/srs/review` | spaced-repetition study |
 | `/sentence-builder`, `/api/assemble`, `/api/slot-options` | sentence builder: a printed Blue Book sentence with words swapped for other printed words |
 | `/api/verbs`, `/api/verb-forms`, `/api/dictionary-sentence` | a dictionary verb by its entry: printed and derived forms, and a sentence in Parks's spelling |
-| `/guide` | pronunciation guide |
+| `/learn` | "Start here": six steps for a new learner |
+| `/guide` | "Sounds": the letters, and a word taken syllable by syllable |
+| `/words` | word building: the pieces the dictionary prints, and the words that share a piece |
+| `/verbs` | verbs: the five forms, the seven verbs of Appendix 1, Parks's tables |
+| `/practice` | six practice games over printed forms |
+| `/topics` | leads to `/browse` (the published site has its own topics page) |
+| `/data/<name>.json`, `/printables/<file>` | the data the learning pages read (`wordbuilding`, `verbs`, `practice`); the two printable documents |
 | `/dashboard` | data-quality dashboard |
 | `/about` | about |
 | `/api/feedback`, `/admin/feedback`, `/admin/feedback/<id>/review` | community feedback and its review queue |

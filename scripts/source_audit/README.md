@@ -40,6 +40,7 @@ python scripts/source_audit/status.py        # how far the audit has got
 | 5 | `bluebook_rest.py` | The 843 Blue Book forms the audit had not reached, cut from the scan for reading (after the audit); `--grade` compares the readings with the stored forms |
 | 5 | `bluebook_second_look.py` | The 77 forms the first reading left open, cut again with the whole line and its neighbours, for a second reader who sees only the images (2026-11-14); `--grade` says where the two readings agree. `scripts/apply_bluebook_scan_fixes.py` takes the agreed ones |
 | 5 | `bluebook_right_place.py` | The Blue Book forms two readings left open because the crop had shown a longer or another word: finds the row's own place on the page (where the stored letters stand directly before the English stored with the row, or once as a word by itself), cuts it, and `--grade` judges the reading as the first reading was judged (2026-11-14: 25 found, 18 corrected, 7 confirmed) |
+| 5 | `lesson_text_reading.py` | **The lessons' text against the scan, line by line** (2026-11-14). Lines the stored titles, dialogues and notes up with the words of the text layer; `--sheets` cuts every line that is not plain English onto sheets of strips; `--grade` compares the readings with the stored words, names each difference by kind, and says what the audit's reader read **at the same place on the page**; `--second --only IDS` cuts chosen lines again, wider and larger; `--open`, `--where ID`. Decisions made by hand are in `lesson_text_reading/decisions.json`. `scripts/apply_lesson_page_reading.py` writes the result |
 | 4 | `chapter4_third_witness.py` | The grammar chapter's doubtful words weighed against the dictionary's printed forms: where the blind reader's form is a dictionary form and the stored one is printed nowhere, both witnesses agree. Corrects only the three words where they differ in letters (`--apply`); records a verdict for all of them |
 | 4 | `chapter4_second_reading.py` | **The grammar chapter against two blind readings** (2026-11-14). `--sheets` cuts the pages for the second readers, one folder each; `--zoom` draws part of a tile larger for a reader. Without options it grades: every stored Skiri word against both readings, the breakdown lines piece by piece, and the places named one by one in `BY_HAND` (Table 17). `--apply` corrects what both blind readings agree on. Run it after any change to `extracted_data/grammatical_overview.json`: it should report nothing to correct |
 | 4 | `chapter4_tables.py` | **The tables of the grammar chapter as printed**, put together from the two blind readings without another reading (2026-11-14). Tells a difference of writing down (one reader wrote each printed line as a row) from a difference of reading; `--show N` prints one table in both readings; `--write` writes `extracted_data/grammatical_overview_tables.json` |
@@ -87,7 +88,25 @@ reading anything again.
   breakdown lines piece by piece and the tables row by row as well.
 - **A crop drawn where the OCR text matches can be the wrong place** when the
   stored form is short. The English stored with the row says which place is
-  meant (`bluebook_right_place.py`).
+  meant (`bluebook_right_place.py`). That tool looked only at forms the
+  readings had left open. Two forms graded "same" or corrected had also been
+  read from a line above their own (*tuh•ra'*, *kas•i•kika*): they came to
+  light when every line of the lessons was read and the readings were
+  compared by their place on the page (`lesson_text_reading.py`,
+  `bluebook_crops_at_another_line.json`). Compare by place, not by row.
+- **Strips of single lines can be read in the main session.** The 911 lines
+  of the lessons that hold Pawnee were read from 42 sheets of strips (each
+  line cut with its number, one and a half times the scan's 150 dpi) and 13
+  smaller sheets for a second look: about 55 images, where whole pages for
+  blind readers would have been some 200. The reader writes the Pawnee of
+  each strip and nothing else; the comparison with the stored text is made
+  afterwards by the script. It is one reading by a reader who had seen parts
+  of the stored text earlier in the session, not a blind one: the script
+  therefore takes from it only what the OCR is known to get wrong, never
+  takes a mark away, and asks for a second look at anything else.
+- **The text layer splits a line of two columns into two lines.** A form
+  beside its English is another "line" than the English, and the stored word
+  can be lined up with either. Cut the second look from the left margin.
 - **Ask a reader for forms, not for pages of text.** On 2026-11-14 four readers were asked to write out chapters 2 and
   5 in full. One was stopped by the service's content filter, and two reported an automated notice about not
   reproducing sections of books. The fifth reader was asked for the Skiri forms and figure labels only, as the readers

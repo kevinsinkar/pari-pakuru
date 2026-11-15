@@ -23,7 +23,7 @@ later by the script named. Row counts on 2026-11-14.
 | `lexical_entries` | 4,337 | importer (4,273), then `scripts/import_bb_items.py` (+93), `scripts/dedup_entries.py` (−23) and `scripts/fix_data_2026_11.py` (−6) |
 | `glosses` | 5,504 | importer |
 | `paradigmatic_forms` | 9,559 | importer; 19 forms corrected from the page on 2026-11-13; three forms stored for a noun, which the page does not print, removed on 2026-11-14 |
-| `examples` | 2,652 | importer; `scripts/blue_book_verify.py` added 88 Blue Book sentences; `scripts/complete_from_print.py` added 18 printed examples the parse had left out |
+| `examples` | 2,607 | importer; `scripts/blue_book_verify.py` added 88 Blue Book sentences, of which `scripts/relink_bluebook.py` kept 43 on 2026-11-14 (the others stood under an entry none of their words is a form of); `scripts/complete_from_print.py` added 18 printed examples the parse had left out |
 | `etymology` | 3,825 | importer |
 | `cognates` | 609 | importer |
 | `derived_stems` | 21 | `scripts/complete_from_print.py` (2026-11-14): the stems Parks lists under ten bound stems, each checked against the printed entry |
@@ -32,14 +32,14 @@ later by the script named. Row counts on 2026-11-14.
 | `fts_glosses`, `fts_examples`, `fts_english_index` | | full-text indexes, kept current by triggers |
 | `import_metadata` | 6 | importer |
 | `semantic_tags` | 4,499 | `scripts/tag_entries.py` |
-| `blue_book_attestations` | 1,026 | `scripts/blue_book_verify.py` |
+| `blue_book_attestations` | 1,026 | `scripts/blue_book_verify.py`; forms corrected from the scan on 2026-11-13 and 14. 257 rows are tied to an entry, each by its form and a shared meaning (`scripts/relink_bluebook.py`, 2026-11-14; before that 414 more were tied by a shared beginning). 13 rows that are lines of the lessons were corrected at their own line by `scripts/apply_lesson_page_reading.py` |
 | `bb_gap_triage` | 516 | `scripts/bb_gap_triage.py` |
 | `sound_change_rules` | 24 | `scripts/sound_changes.py` |
 | `verb_paradigms`, `irregular_verb_roots`, `morpheme_abbreviations` | 770, 9, 164 | `scripts/extract_appendices.py` |
 | `kinship_paradigms` | 11 | Parks's Appendix 3, read from the page. The three rows typed from the OCR text of the Blue Book were deleted on 2026-11-14 (the Blue Book's forms are in `blue_book_attestations`) |
-| `function_words` | 414 | `scripts/function_word_inventory.py`; four OCR slips deleted on 2026-11-14. Its 59 Blue Book rows are still OCR text: 32 are words of the scan's readings |
-| `bb_function_words` | 63 | `scripts/extract_function_words.py` |
-| `lessons` | 20 | `scripts/build_lessons.py`; dialogues corrected from the scan on 2026-11-13; running text and titles brought in step with the audit by `scripts/fix_lesson_text_ocr.py` on 2026-11-14 |
+| `function_words` | 406 | `scripts/function_word_inventory.py`; four OCR slips deleted on 2026-11-14; then `scripts/fix_function_words.py` went over its Blue Book rows against the scan's readings (10 corrected, 8 deleted; 51 are left, each a word or a bulleted part of a form of the Blue Book table). Meanings and word classes were not checked |
+| `bb_function_words` | 62 | `scripts/extract_function_words.py`; `scripts/fix_function_words.py` set 22 words to what their phrase prints and deleted one row (2026-11-14) |
+| `lessons` | 20 | `scripts/build_lessons.py`; dialogues corrected from the scan on 2026-11-13; running text and titles brought in step with the audit by `scripts/fix_lesson_text_ocr.py` on 2026-11-14; then every line read from the scan and the Pawnee of titles, dialogues and notes set to it by `scripts/apply_lesson_page_reading.py` (the same day). The glossary that stood at the end of lesson 20's notes was cut; it is in `extracted_data/blue_book_glossary.json`. `dialogues` holds 105 lines, each a Pawnee line with the English of its row (`scripts/pair_lesson_dialogues.py`; 156 unpaired lines before). Do not run `build_lessons.py` again: it would write the OCR text back |
 | `community_feedback` | 2 | `archived/scripts/add_feedback_table.py`; written by the web app |
 | `srs_cards`, `srs_reviews` | 0, 0 | `web/srs.py` |
 

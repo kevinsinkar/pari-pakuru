@@ -72,6 +72,7 @@ Archived: `audit_semantic_tags.py` (AI audit that removed 1,248 wrong tags),
 | `example_filter.py` | 3.1.5 | **live** | Decides whether a Blue Book sentence tied to an entry really contains the headword. No longer applied to Parks's own examples, which it hid (2,224 of 2,652) |
 | `function_word_inventory.py` | 3.1.6 | applied | Seeded the `function_words` table |
 | `extract_function_words.py` | 3.1.6 | pipeline, **AI** | Pulled function words out of Blue Book phrases |
+| `fix_function_words.py` | 3.1.6 | applied | The pass over the two function-word tables against the scan's readings (2026-11-14): in `bb_function_words` 22 words corrected and 1 row deleted; in the Blue Book rows of `function_words` 10 corrected and 8 deleted. Meanings and word classes were not checked. `--check` |
 | `classify_function_words.py` | 3.1.6 | applied | Added position rules and subclasses to all 418 function words |
 
 Archived: `analyze_dual_plural.py`, `conjugation_gemini_collab.py` (AI-assisted
@@ -109,11 +110,14 @@ is the pattern.
 | `template_slot_fillers.py` | 3.2a | **live** | The 13 printed sentences the builder starts from, each named by the number and the text of its row, and Parks's three question words by entry. No form is typed here in any other way; `sentence_templates.py --check` enforces it |
 | `person_forms.py` | 3.2b | **live** | Makes "you" forms and question forms from a printed form, each to be shown with the label "derived; not checked against a printed form". Repaired on 2026-11-14: three rules built on misread forms removed, no first person invented, no present or future for "I" and "you". `--validate-appendix`: 26 passed, 0 failed, 2 declined; it fails on any mismatch. On 1,059 verbs it never saw, its "he/she" question form starts as the dictionary's form 4 starts for 794 of 816 (97.3%); it gives no form for 243 |
 | `display_utils.py` | 5.2 | **live** | Cleans headword notation for display; learner spelling and respelling of inflected forms |
-| `build_lessons.py` | 5.1 | pipeline | Parses the 20 Blue Book lessons from the text file into the `lessons` table and `extracted_data/lessons.json`. No AI |
+| `build_lessons.py` | 5.1 | applied; do not run again | Parsed the 20 Blue Book lessons from the OCR text file into the `lessons` table and `extracted_data/lessons.json`. No AI. The table has since been corrected from the scan and its dialogues paired; `--apply` now refuses to write over it unless `--from-scratch` is given, and a dry run no longer writes the JSON file |
 | `extract_lesson_gaps.py` | 5.1 | applied, **AI** | Re-extracted the vocabulary of Lessons 3 and 4, which the two-column layout had scrambled |
 | `link_bb_vocab.py` | 5.1 | applied | Linked more lesson vocabulary to dictionary entries (339 of 531), conservatively |
 | `fix_lesson_titles.py` | 5.1 | applied, superseded | Repaired OCR errors in lesson titles by rule (*KIRIKJ* to *KIRIKI*). The scan reads *KIRIKÉ*: 12 titles were set from the Blue Book table on 2026-11-14 by `fix_lesson_text_ocr.py`. Do not run again |
-| `fix_lesson_text_ocr.py` | 5.1 | applied | Brought the lessons' running text and titles in step with the audit's reading of the scan: 214 places in 17 lessons, 12 titles; `extracted_data/lessons.json` made a copy of the table. Leaves, and counts, 196 places where only an accent differs. `--check` |
+| `fix_lesson_text_ocr.py` | 5.1 | applied | Brought the lessons' running text and titles in step with the audit's reading of the scan: 214 places in 17 lessons, 12 titles; `extracted_data/lessons.json` made a copy of the table. It left 196 places where only an accent differed, for the page; they were settled by `apply_lesson_page_reading.py`. `--check` |
+| `apply_lesson_page_reading.py` | 5.1 | applied | **The lessons' text as the page prints it** (2026-11-14). Puts into the `lessons` table what `source_audit/lesson_text_reading.py` read from the scan, line by line: 42 changes by hand after a second look, 8 titles, 286 words where one reading settles it (an accent, a raised dot, an apostrophe, the OCR's known slips), the next lesson's title and the glossary cut from the end of the notes; 13 rows of the Blue Book table that are lines of the lessons and had never been read at their own line. Never takes away an accent, dot or apostrophe on one reading. `--check` |
+| `pair_lesson_dialogues.py` | 5.1 | applied | **Each dialogue line with its English** (2026-11-14). The parser had stored the two columns of a dialogue as separate lines: in 83 of 156 lines the English stood in the Pawnee field or was missing. A Pawnee line now takes the English the page prints to its right on the same row (from the scan's text layer); merged lines are cut, continuation lines joined, and the section of notes that sat inside lesson 2's third dialogue is the first of that lesson's notes. 105 lines. Changes no Pawnee word. `--check` |
+| `relink_bluebook.py` | 5.1 | applied | Judged again every tie of a Blue Book word to a dictionary entry that was not made by the form: 65 re-tied, 349 untied (257 of 1,026 rows are tied now). A Blue Book sentence is an example of an entry only if one of its words is tied to it: 43 of 88 kept. Sets `blue_book_attested` from the ties. `--check` |
 
 ## 5. Audits and repairs (September to November 2026)
 
@@ -130,7 +134,7 @@ is the pattern.
 
 | Script | Status | What it does |
 |---|---|---|
-| `build_static_site.py` | **live** | Builds [../docs/](../docs/) from the database. See [../DEPLOYMENT.md](../DEPLOYMENT.md) |
+| `build_static_site.py` | **live** | Builds [../docs/](../docs/) from the database: the dictionary file, the data of the learning pages (`web/learning.py`), the pages, the two printable documents. See [../DEPLOYMENT.md](../DEPLOYMENT.md) |
 | `freeze_flashcard_sets.py` | pipeline | Writes `curriculum/flashcard_sets.json`. Run only for a deliberate change to the curriculum: learners' progress is keyed to its week numbers |
 | `build_weekly_flashcards.py` | pipeline | Writes `curriculum/weekly_flashcards.md`: every card as front and back, for copying by hand. Word-building notes come from the version 2 analysis; weeks held for review are left out |
 | `build_flashcard_pdfs.py` | pipeline | Turns that file into printable sheets, four cards to a page |
@@ -174,7 +178,7 @@ text layer could settle.
 | `bluebook_glossary.py` | pipeline | Itemises the Blue Book's glossary from the scan's text layer, checks every page reference against the page it points to, and writes `extracted_data/blue_book_glossary.json` |
 | `ipa_notation.py` | **live** | The one place that knows both notations: Parks's (`·`, `–`, ə́, ɪ́), which is stored, and the older working one (hyphen, bullet, à, í), which the respelling code was written for. `to_working()` converts; the respelling scripts call it on the way in |
 | `check_simplified_forms.py` | test | Makes the respelling and the learner spelling again for every Parks entry and compares them with what is stored. Changes nothing. Run it after any change to phonetic forms or headwords |
-| `check_static_site.js` | test | Runs the published search page's own code (`docs/static/js/search.js`) against the published data with a stand-in for the browser: a headword and a verb form are found, citations are book pages, etymologies are escaped, held entries carry no added detail, all entries render. Needs Node.js. Run it after `build_static_site.py` |
+| `check_static_site.js` | test | Runs the published search page's own code (`docs/static/js/skiri.js`, `search.js`) against the published data with a stand-in for the browser: a headword and a verb form are found, citations are book pages, etymologies are escaped, held entries carry no added detail, all entries render. Then the learning pages: every piece shown for a word stands in the derivation the dictionary prints, the seven verbs agree with forms 1 and 2 of their entries, no held entry and no held flashcard week is in the data files, and every link between the pages leads to a file. 28 checks. Needs Node.js. Run it after `build_static_site.py` |
 
 All the `applied` scripts change nothing without `--apply`, back the files
 up first, and add to their record on a later run without overwriting it. A
@@ -223,25 +227,31 @@ eight decisions the same day.
   `respell_and_normalize.py` is the older respelling function and gives `? ?`
   for a phonetic form of several words; stored respellings are made by
   `fix_pronunciations.respell_phonetic`.
-- **Blue Book forms outside the corrected tables are still OCR text**:
-  `bb_gap_triage`, `bb_function_words` and `function_words`. In
-  `function_words`, 59 rows came from Blue Book phrases: 32 are whole words
-  of the scan's readings, 18 are parts of words, and 9 are found neither way
-  (*pihkawf*, *rd*, *wfs* and others look like the same OCR slips as the four
-  removed on 2026-11-14). Nothing shows them to a learner; they need their own
-  pass.
-- **Many Blue Book words are tied to the wrong dictionary entry.** The table
-  `blue_book_attestations` ties *asáki* 'dog' and *arúsa* 'horse' to the entry
-  *a*, and *tsapat* 'woman' to *ca*, by a shared beginning (`match_type`
-  "prefix"): 77 single listed words are tied that way to a locative verb. Code
-  that needs a sound tie uses only "exact_normalized", "orthographic" and
-  "bb_only_form_and_english" (`printed_noun_forms.py`, `sentence_templates.py`).
-  The entry page of *a* still lists those words.
-- **The running text of the lessons is OCR text that was corrected where the
-  audit had a reading.** 196 places differ from the audit's reading only by an
-  accent, and were left because the same letters may be printed elsewhere on
-  the page without it; some OCR damage matches no reading at all (lesson 20,
-  *tatitska ratkti u•ta*). `fix_lesson_text_ocr.py --check` counts the first.
+- **The function-word tables hold the scan's readings since 2026-11-14, but
+  their meanings were never checked.** `fix_function_words.py` corrected or
+  deleted every Blue Book row that was an OCR slip. The English and the word
+  class of a row are still what the extraction gave (*pirau* is glossed
+  'when'). `bb_gap_triage` is corrected only where a row is a line of a
+  lesson (13 rows).
+- **A Blue Book word is tied to a dictionary entry only by its form.** Until
+  2026-11-14 the table tied *asáki* 'dog' and *arúsa* 'horse' to the entry
+  *a* by a shared beginning; `relink_bluebook.py` judged those 414 ties again
+  (65 re-tied, 349 untied). A row with two forms (*kiri, pus* 'cat') stays
+  untied. The Blue Book examples cite the page of the scan, which is the
+  book's page plus 28.
+- **The Pawnee of the lessons is as read from the page; the rest of their
+  text is not.** `apply_lesson_page_reading.py` holds every Pawnee word of
+  the titles, dialogues and notes to what its line of the scan shows. The
+  English prose of the notes is OCR text nobody has proofread. The dialogue
+  lines are pairs since `pair_lesson_dialogues.py` (the parser had not paired
+  the two columns of the page). `build_lessons.py` would write the OCR text
+  back over all of it, which is why it now asks for `--from-scratch`. Three
+  places lie under a flaw in the scan and are marked with square brackets.
+- **A crop cut where the stored letters match can be another line.** Two
+  corrections of the audit's first Blue Book reading had been read from a
+  line above the row's own (`bluebook_crops_at_another_line.json`);
+  `source_audit/lesson_text_reading.py` compares readings by their place on
+  the page, which is how they were found.
 - **A dry run can overwrite a report.** Some applied scripts (for example
   `build_lessons.py` and `link_bb_vocab.py`) write their report file on a dry
   run too. Run one today and the record of what it changed when it was applied

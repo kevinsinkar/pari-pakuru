@@ -23,14 +23,14 @@ No other source is used. Where the two disagree, both readings are shown.
 
 | | State on 2026-11-14 |
 |---|---|
-| **Dictionary database** | 4,337 entries (4,244 from Parks, 93 made from words of the Blue Book, of which 37 are words Parks has too, in the textbook's spelling), 5,504 senses, 9,559 attested verb forms for 2,239 verbs, 2,652 example sentences, 21 derived stems. Compared with the printed pages in full on 2026-11-13 and corrected, then completed from the print on 2026-11-14: 99.94% of the dictionary fields are identical to print, and every entry cites the page of the book it stands on |
+| **Dictionary database** | 4,337 entries (4,244 from Parks, 93 made from words of the Blue Book, of which 37 are words Parks has too, in the textbook's spelling), 5,504 senses, 9,559 attested verb forms for 2,239 verbs, 2,607 example sentences, 21 derived stems. Compared with the printed pages in full on 2026-11-13 and corrected, then completed from the print on 2026-11-14: 99.94% of the dictionary fields are identical to print, and every entry cites the page of the book it stands on |
 | **Pronunciation** | Parks's IPA for all 4,244 of his entries, stored in his own symbols, 2,218 of them with the accented syllable marked; a learner respelling for 4,332. IPA is never generated, only copied from Parks; the Blue Book-only words have none |
-| **Public site** | The search, flashcard, lesson and pronunciation-guide pages, built into [docs/](docs/) and served by GitHub Pages. A search result opens the whole entry (examples, verb forms, Parks's analysis, the forms he cites from related languages) and has a link for sending a correction. This is the only place the project is published |
+| **Public site** | A learner's site, built into [docs/](docs/) and served by GitHub Pages: the search, a "Start here" path, pages on the sounds, on how words are built and on how verbs change, practice games, words by topic, the lessons and the flashcards. The learning pages show only what the books print (a phonetic form cut at its syllables, a derivation cut into its pieces, the seven verbs of Appendix 1) and make no form. A search result opens the whole entry (examples, verb forms, Parks's analysis, the forms he cites from related languages) and has a link for sending a correction. This is the only place the project is published |
 | **Local web app** | Flask app that runs on your own machine: full entry pages, the printed forms of a noun, a sentence builder, spaced-repetition study, feedback queue, dashboard. Not hosted anywhere since 2026-11-13; the public site is built from its templates |
-| **Blue Book lessons** | All 20 lessons with dialogues, vocabulary and grammar notes. Dialogues, vocabulary and 13 titles are as read from the scan; the running text of the notes was corrected on 2026-11-14 wherever the audit had a reading (214 places), and is otherwise OCR text |
+| **Blue Book lessons** | All 20 lessons with dialogues, vocabulary and grammar notes. Every Pawnee word in them is as read from the scan: the vocabulary by the audit of 2026-11-13, the titles, dialogues and notes line by line on 2026-11-14 (911 lines). Each dialogue line stands with its English, paired by the row of the page it is printed on. The English prose of the notes is OCR text |
 | **English index** | Parks's English-to-Skiri section, rebuilt from the printed page on 2026-11-14: 6,431 English headwords, 5,165 Skiri terms under them (5,162 linked to their entry), 4,578 cross-references. Used by the local app's search; the public search does not use it yet |
 | **Flashcards** | 24 weekly sets, 387 words, frozen on 2026-10-12; 23 sets (372 words) are shown and one is held for community review; printable sheets for writing cards by hand |
-| **Word-building guide** | 549 roots and 30 affixes that let a learner take apart 1,791 of the dictionary's words completely (41%); 15 lessons. See [curriculum/roots_v2/](curriculum/roots_v2/) |
+| **Word-building guide** | 549 roots and 30 affixes that let a learner take apart 1,794 of the dictionary's words completely (41%); 15 lessons. See [curriculum/roots_v2/](curriculum/roots_v2/) |
 | **Printables** | A word list of the 372 flashcard words and Parks's seven verbs in full (Appendix 1), as PDFs: [curriculum/printables/](curriculum/printables/) |
 | **Review packet** | What the project asks the Pawnee Nation's language and culture people to look at, as one 41-page document with an answer sheet: [community_review/](community_review/). Ready; not sent |
 | **Grammar tools** | What the app shows of grammar is copied, with two narrow exceptions that are labelled. Copied: Parks's 24 sound changes with his examples; his tables of the verb, printed in the word-building guide; for a noun, the forms he and the Blue Book print. Labelled as made here, and in the local app only: "you" and question forms of a verb ("derived; not checked against a printed form") and sentences put together from printed words ("put together here; not printed"). The conjugation engine, the accent rules and the possession engine were withdrawn on 2026-11-14 after being measured on forms they had not been fitted to: [reports/engines_review/](reports/engines_review/) |
@@ -137,24 +137,28 @@ All of these were run on 2026-11-14.
 | Word-construction analysis | `python -m unittest discover -s scripts/morphology_v2 -p "test_*.py"` | 34 of 34 |
 | Its test sets are unchanged | `scripts/morphology_v2/gold_build.py --verify` | 17 files match their hashes. Three of them (Parks's worked examples, the Appendix 1 cells, the Blue Book seams) were made again from the corrected data on 2026-11-14 |
 | Its outputs are reproducible | `scripts/morphology_v2/run.py --all`, hashes compared | byte-identical |
-| Every Pawnee form in the guide has a source | `scripts/morphology_v2/check_forms.py` | 3,815 forms, 250 IPA, 203 respellings, 412 cells of Parks's tables: all resolved |
-| The printed forms of a noun | `scripts/printed_noun_forms.py --check` | 734 of 1,706 nouns have something printed (38 Appendix 3 rows, 680 forms with a case ending, 537 combining forms, 15 Blue Book forms); every form shown is a stored value of the entry it is shown on |
+| Every Pawnee form in the guide has a source | `scripts/morphology_v2/check_forms.py` | 3,833 forms, 250 IPA, 202 respellings, 412 cells of Parks's tables: all resolved |
+| The printed forms of a noun | `scripts/printed_noun_forms.py --check` | 734 of 1,706 nouns have something printed (38 Appendix 3 rows, 680 forms with a case ending, 537 combining forms, 18 Blue Book forms); every form shown is a stored value of the entry it is shown on |
 | No engine output is left in the database | `scripts/remove_engine_output.py --check` | the four engine tables are gone, the form 2 score is empty, the kin table holds Appendix 3 only |
-| The lessons are in step with the audit's reading of the scan | `scripts/fix_lesson_text_ocr.py --check` | none of the 381 readings the audit corrected in letters, spacing or punctuation stands in the text; 13 titles are the table's reading; 196 places where only an accent differs are left on purpose and counted |
-| The text copy of the database restores to the same database | `scripts/db_dump.py --verify` | round trip exact: 46,413 rows in 21 tables |
+| The lessons' text is what the page prints | `scripts/apply_lesson_page_reading.py --check` | every line of the twenty lessons that is not plain English was cut from the scan and read: 910 lines of the text as it now stands (79 read a second time), 1,368 Pawnee words. No difference is open; 21 are left by decision, each with its reason; the 20 titles are the title lines of the page |
+| Every dialogue line is a Pawnee line with its English | `scripts/pair_lesson_dialogues.py --check` | 105 lines in 46 dialogues; 102 have their English beside them, 3 are printed without one (a second dialect's form, an alternative in brackets, a breakdown line) |
+| The lessons are in step with the audit's reading of the scan | `scripts/fix_lesson_text_ocr.py --check` | none of the 380 readings the audit corrected in letters, spacing or punctuation stands in the text; 13 titles hold the table's reading of the title line (the table has none for the other 7) |
+| Blue Book words are tied to the entry they are a form of | `scripts/relink_bluebook.py --check` | 257 of 1,026 rows are tied, every one by its form and a shared meaning; 43 Blue Book sentences stand as examples, each under an entry one of its words is tied to |
+| The function-word tables against the scan's readings | `scripts/fix_function_words.py --check` | all 62 rows of `bb_function_words` hold the word their phrase prints; all 51 Blue Book rows of `function_words` are a word or a bulleted part of a form of the Blue Book table |
+| The text copy of the database restores to the same database | `scripts/db_dump.py --verify` | round trip exact: 46,359 rows in 21 tables |
 | Dictionary entries against the printed page | `scripts/source_audit/s2e_compare.py` | 50,807 of 50,837 fields identical (99.94%; 97.45% before the first fixes, 99.68% after them). The 37 differences left are each explained in `reports/source_audit_2026-11/print_completion_report.txt` |
 | Every entry cites the page of the book | `scripts/fix_page_citations.py --check` | 4,244 of 4,244 Parks entries; the printed page number was read from all 181 pages |
 | Learner spelling and respelling follow from Parks's forms | `scripts/check_simplified_forms.py` | no difference in 4,244 entries |
 | That comparison catches errors | `scripts/source_audit/recall_test.py` | 510 of 510 planted errors reported |
 | The grammar chapter against two blind readings of the page | `scripts/source_audit/chapter4_second_reading.py` | all 526 Skiri words of the stored chapter stand in both readings; nothing left to correct |
-| Blue Book forms against the readings of the scan | `scripts/apply_bluebook_scan_fixes.py` (a dry run) | nothing left to apply; 17 forms listed for a person |
+| Blue Book forms against the readings of the scan | `scripts/apply_bluebook_scan_fixes.py` (a dry run) | nothing left to apply; 17 forms listed for a person; 2 crops passed over because they were cut at another line than the row's own |
 | The English index against the printed page | `scripts/repair_english_index.py --check` | the file and both tables say what the page says; 118,262 letters printed in the type of Skiri terms, 118,262 stored. The audit's own comparison (`source_audit/e2s_compare.py`): 32,632 of 32,636 fields equal |
 | Chapters 2 and 5 against two readings of the page | `scripts/source_audit/front_matter_reading.py` | all 138 and 57 Skiri forms the same in both readings |
 | The grammar chapter's tables in two readings | `scripts/source_audit/chapter4_tables.py` | 14 tables: 6 the same, 6 the same text with rows divided differently, 2 differ |
 | The Blue Book glossary against the pages it points to | `scripts/bluebook_glossary.py` | 589 of 644 page references confirmed |
-| The published search page | `node scripts/check_static_site.js` (needs Node.js) | 13 checks pass; all 4,337 entries render, every value escaped |
+| The published site | `node scripts/check_static_site.js` (needs Node.js) | 28 checks pass (2026-11-14): all 4,337 entries render, every value escaped; each of the 3,319 word derivations shown piece by piece stands in the printed derivation; 770 forms of Appendix 1; no link between the 53 pages is broken |
 | Web app | 49 addresses requested through Flask's test client, on a copy of the database | every page and read-only route answers; the two withdrawn routes (`/api/possession`, `/api/bb_verb_forms`) answer 404 |
-| The engines review's test sets still match their sources | `scripts/engines_review/run_all.py --check` | 10 sets as recorded |
+| The engines review's test sets still match their sources | `scripts/engines_review/run_all.py --check` | 10 sets as recorded (the Blue Book sentences once the 13 rows corrected from the page since the review are put back) |
 
 Measurements, not pass or fail. "Seen" means the rules were read from those
 very forms, so the figure proves little; "unseen" is the kind to go by.
@@ -225,14 +229,24 @@ instrumental forms (unseen, 44.4%).
   repair; the "you" forms can be checked against nothing but Appendix 1's
   seven verbs. None of it is a speaker's judgement. What was done, decision
   by decision: [reports/engines_review/stage4.md](reports/engines_review/stage4.md).
-- **The lessons' running text is not yet the book's, letter for letter.** The
-  dialogues and vocabulary are as read from the scan. The grammar notes are
-  OCR text in which every reading the audit established was put in on
-  2026-11-14 (214 places, and 12 titles). Left: 196 places where the audit's
-  reading differs only by an accent (the OCR dropped all accents, and the same
-  letters may be printed elsewhere on the page without one), seven titles the
-  scan was never read for, and OCR damage that matches no reading. Settling
-  those needs the page.
+- **The Pawnee of the lessons was read from the page, line by line; their
+  English and their layout were not.** On 2026-11-14 every line of the twenty
+  lessons' titles, dialogues and notes that is not plain English was cut from
+  the scan and read (911 lines, 79 of them a second time at a larger cut):
+  328 places were corrected (42 by hand after a second look, 286 where one
+  reading settles it: an accent, a raised dot, an apostrophe), 8 titles set,
+  and the title of the next lesson and the Blue Book's glossary cut from the
+  end of the notes where the extraction had left them. At 164 of the 286
+  places the audit's reader had read the same; the others rest on one
+  reading, made in the main session, of a line no reader had looked at. Three places lie under a
+  flaw in the scan and carry square brackets (*Kitské [w]e ru'?*,
+  *We ti p[it]ku.*, *Ka res•[..]sí•urúkat!*); they need the book. The
+  dialogues were then paired: in 83 of 156 stored lines the English had stood
+  in the place of a Pawnee line or was missing, and each Pawnee line now has
+  the English the page prints on its row (105 lines). Still as the extraction
+  left it: the English prose of the notes. Records:
+  [reports/lesson_text_ocr_report.txt](reports/lesson_text_ocr_report.txt),
+  [reports/lesson_dialogues_pairing_report.txt](reports/lesson_dialogues_pairing_report.txt).
 - **The Blue Book forms now carry the printed accents.** The stored forms came
   from OCR, which dropped or garbled the accented vowels. 949 forms were read
   again from the scan and 715 corrected. One of them is on a flashcard a
