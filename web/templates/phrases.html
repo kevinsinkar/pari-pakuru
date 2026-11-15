@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% set active_page = 'phrases' %}
+{% import "_phrase_rows.html" as pr %}
+
+{% block title %}Phrases{% endblock %}
+
+{% block content %}
+{# The lessons' "Useful Phrases" and the two "Useful Conversations" of lesson 20, gathered by situation
+   (curriculum/everyday_phrases.json, read by web/learning.py: phrases_data). Every Pawnee line and every English
+   line is copied from the lessons' text; scripts/everyday_phrases.py --check proves each against the page.
+   The page makes no form and respells none. #}
+<article class="learn-page cover-scope">
+  <p class="learn-kicker">Phrases</p>
+  <h2>Phrases to use today</h2>
+  <p class="learn-lead">
+    Short things to say at home, at the table and to each other. All {{ phrases.count }} are the
+    “Useful Phrases” of the textbook <em>Pari Pakuru'</em> (1979), gathered here by situation,
+    with the two conversations the book asks every learner to know by heart.
+  </p>
+  <nav class="learn-jump" aria-label="Situations">
+    {% for s in phrases.situations %}<a href="#s-{{ s.key }}">{{ s.label }}</a>{% endfor %}
+    <a href="#conversations">Two conversations</a>
+  </nav>
+
+  {% set spelling_for = 'phrases' %}
+  {% include "_spelling_line.html" %}
+
+  <section class="practice-setup" aria-label="How to use this page">
+    <p class="phrase-how">
+      <strong>Pick three and use them today.</strong> Say each one aloud when the moment comes: at the door, at the table,
+      at bedtime. Tomorrow keep those three and add one. To test yourself, cover one side and say it from memory;
+      choose a covered line to see it.
+    </p>
+    {{ pr.cover_tools('Cover one side of every phrase on this page') }}
+  </section>
+
+  {% for s in phrases.situations %}
+  <section id="s-{{ s.key }}">
+    <h3>{{ s.label }}</h3>
+    <p class="result-usage">{{ s.about }}</p>
+    {{ pr.phrase_list(s.rows, true) }}
+  </section>
+  {% endfor %}
+
+  <section id="conversations">
+    <h3>Two conversations to know by heart</h3>
+    {% set note = phrases.notes.get('the two conversations') %}
+    {% if note %}
+    <blockquote class="book-quote">{{ note.text }}
+      <footer><em>Pari Pakuru'</em>, <a href="/lessons/{{ note.lesson }}#phrases">lesson {{ note.lesson }}</a></footer>
+    </blockquote>
+    {% endif %}
+    <p class="result-usage">Two people, A and B. A line with no letter goes on from the line above. Take both parts aloud.</p>
+    {% for conv in phrases.conversations %}
+    <h4>Conversation {{ conv.number }}</h4>
+    {{ pr.conversation(conv) }}
+    {% endfor %}
+  </section>
+
+  <section class="honest-note">
+    <h3>About these phrases</h3>
+    <p>
+      Every phrase and its English is printed in the textbook, in the lesson named beside it; this page copies them
+      and makes none. Putting them under situations is this site's arrangement, not the book's.
+      Where the book prints one phrase in two lessons with two English renderings, both are shown.
+    </p>
+    <p>
+      <strong>(1), (2), (3+).</strong>
+      {% set you = phrases.notes.get('you (1), you (2), you (3+)') %}
+      {% if you %}The book explains: “{{ you.text.lstrip('*') }}” (<a href="/lessons/{{ you.lesson }}#phrases">lesson {{ you.lesson }}</a>).{% endif %}
+      <strong>(SK) and (SB).</strong> The book marks a form of the Skiri band (it writes “Skidi”) with (SK) and a
+      form of the South Bands with (SB). One South Band form is left out here because two of its letters stand
+      under a flaw in the scan; <a href="/lessons/14#phrases">lesson 14</a> shows it with the gap marked.
+    </p>
+    <p>
+      No speaker of Pawnee has reviewed this page, and it cannot let you hear a phrase. If a speaker says one
+      of these another way, theirs is the one to learn.
+    </p>
+  </section>
+</article>
+{% endblock %}

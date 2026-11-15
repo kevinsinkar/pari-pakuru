@@ -812,48 +812,17 @@ def lessons_index():
 
 @app.route("/lessons/<int:number>")
 def lesson_detail(number):
-    """One Blue Book lesson: vocabulary, dialogues, grammar notes."""
+    """One Blue Book lesson: vocabulary, dialogues, phrases, grammar notes.
+
+    What the page shows is put together in web/learning.py (lesson_context), the same for this app and for
+    the published site."""
+    from web import learning
+
     db = get_db()
-    cur = db.conn.cursor()
-    cur.execute("SELECT * FROM lessons WHERE lesson_number = ?", (number,))
-    row = cur.fetchone()
-    if not row:
+    ctx = learning.lesson_context(db.conn, number)
+    if ctx is None:
         abort(404)
-
-    # vocabulary from attestations, joined to dictionary entries where linked
-    cur.execute("""
-        SELECT a.bb_skiri_form, a.bb_english, a.context_type, a.entry_id,
-               a.match_type, le.headword, le.normalized_form,
-               le.simplified_pronunciation, le.phonetic_form,
-               le.grammatical_class
-        FROM blue_book_attestations a
-        LEFT JOIN lexical_entries le ON le.entry_id = a.entry_id
-        WHERE a.lesson_number = ?
-          AND a.context_type IN ('BASIC_WORDS', 'ADDITIONAL_WORDS')
-        ORDER BY a.context_type, a.id
-    """, (number,))
-    vocab = [dict(r) for r in cur.fetchall()]
-    basic = [v for v in vocab if v["context_type"] == "BASIC_WORDS"]
-    additional = [v for v in vocab if v["context_type"] == "ADDITIONAL_WORDS"]
-
-    # useful phrases + grammar examples from attestations
-    cur.execute("""
-        SELECT bb_skiri_form, bb_english FROM blue_book_attestations
-        WHERE lesson_number = ? AND context_type = 'PHRASE'
-        ORDER BY id
-    """, (number,))
-    phrases = [dict(r) for r in cur.fetchall()]
-
-    lesson = {
-        "number": row["lesson_number"],
-        "skiri_title": row["skiri_title"],
-        "english_title": row["english_title"],
-        "page_start": row["page_start"],
-        "page_end": row["page_end"],
-        "dialogues": json.loads(row["dialogues"] or "[]"),
-        "grammar_notes": json.loads(row["grammar_notes"] or "[]"),
-        "templates": json.loads(row["template_ids"] or "[]"),
-    }
+    lesson = ctx["lesson"]
     # the patterns practised in this lesson: each with a sentence the Blue Book prints, read from its row
     from scripts.sentence_templates import list_templates
     patterns = {t["template_id"]: t for t in list_templates(db.conn)}
@@ -863,14 +832,23 @@ def lesson_detail(number):
          "english": patterns[t]["english_example"]}
         for t in lesson["templates"] if t in patterns
     ]
-    exercises = _build_exercises(vocab, lesson["dialogues"], phrases)
+    exercises = _build_exercises(ctx["vocab"], lesson["dialogues"], ctx["phrase_pairs"])
     prev_n = number - 1 if number > 1 else None
     next_n = number + 1 if number < 20 else None
     return render_template("lesson_detail.html", lesson=lesson,
-                           basic=basic, additional=additional,
-                           phrases=phrases, practice=practice,
+                           basic=ctx["basic"], additional=ctx["additional"],
+                           phrases=ctx["phrases"], conversations=ctx["conversations"],
+                           conversation_note=ctx["conversation_note"], practice=practice,
                            exercises=exercises,
                            prev_n=prev_n, next_n=next_n)
+
+
+@app.route("/phrases")
+def phrases_page():
+    """The lessons' Useful Phrases gathered by situation (curriculum/everyday_phrases.json)."""
+    from web import learning
+
+    return render_template("phrases.html", phrases=learning.phrases_data(get_db().conn))
 
 
 def _build_exercises(vocab, dialogues, phrases):

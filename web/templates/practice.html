@@ -12,8 +12,13 @@
   <h2>Practice</h2>
   <p class="learn-lead">
     Six short games over the same words as the flashcards, the seven verbs the dictionary writes out in full,
-    and the pieces words are built from. Ten questions a round. A little every day does more than a lot once a week.
+    and the pieces words are built from. Ten questions a round. A little every day does more than a lot once a week,
+    so the page keeps track of which words are due today.
   </p>
+
+  {# What is due today (static/js/practice.js, showToday). The box that remembers it is in the visitor's own
+     browser (Skiri.box in skiri.js): a right answer brings a word back after 1 day, then 3, 7, 14 and 30. #}
+  <section id="pr-today" class="today-box" aria-live="polite"></section>
 
   <section class="practice-setup" aria-label="Choose a game">
     <div class="choice-row" role="group" aria-label="Game" id="pr-games">
@@ -43,7 +48,14 @@
     <p>
       Every Skiri form in a question or an answer is printed in the dictionary or the textbook; a game never
       makes a form. The words are the flashcard words, chosen by this project and not yet reviewed by a speaker.
-      The words you miss are remembered in this browser only, so that you can practise them again.
+    </p>
+    <p>
+      <strong>How the page remembers.</strong> Each flashcard word you answer goes into one of five boxes. A word you
+      get right comes back later each time: the next day, then after three days, a week, two weeks and a month.
+      A word you miss goes back to the first box and is asked again the same day. “Today's words” asks the words
+      that are due, and fills the round with new ones in the order of the flashcard weeks. The flashcards'
+      “Got it” and “Missed” move a word the same way. All of it is kept in this browser only: on another
+      device, or after the browser's data is cleared, the boxes start empty.
     </p>
   </section>
 </article>

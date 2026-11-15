@@ -4,10 +4,11 @@
  *   verbs                           Appendix 1, seven verbs    (data/verbs.json)
  *   pieces                          the printed derivations    (data/wordbuilding.json)
  * A game only ever shows forms that are in those files; it makes none.
- * Missed words are kept in the visitor's browser (localStorage "practice-missed").
+ * Missed words are kept in the visitor's browser (localStorage "practice-missed"), and so is the box that says
+ * when a flashcard word is due again (Skiri.box in skiri.js: after 1 day, then 3, 7, 14 and 30).
  */
 (() => {
-  const { esc, shuffle, store, load, entryLink, pieceChips, literalHtml } = Skiri;
+  const { esc, shuffle, store, load, entryLink, pieceChips, literalHtml, box } = Skiri;
   const ROUND = 10;
   const PAIRS = 5;
   const BLURB = {
@@ -19,7 +20,7 @@
     pieces: 'You see the pieces the dictionary prints for a word, and its literal translation. Choose the word.',
   };
   const files = {};
-  const state = { game: 'meaning', week: 'all', verbMode: 'indicative_perfective', questions: [], at: 0, right: 0, missed: [] };
+  const state = { game: 'meaning', week: 'today', verbMode: 'indicative_perfective', questions: [], at: 0, right: 0, missed: [] };
   const stage = () => document.getElementById('pr-stage');
 
   async function need(name) {
@@ -32,7 +33,24 @@
     return files.practice.weeks.reduce((a, w) => a.concat(w.cards), []);
   }
 
+  // Every flashcard word once, in the order of the weeks.
+  function wordIds() {
+    return Array.from(new Set(allCards().map(c => c.id)));
+  }
+
+  // Today's words: the words that are due, the longest overdue first; when fewer than a round are due,
+  // words not met yet fill it up, in the order of the flashcard weeks.
+  function todays() {
+    const byId = new Map();
+    allCards().forEach(c => { if (!byId.has(c.id)) byId.set(c.id, c); });
+    const order = Array.from(byId.keys());
+    const due = box.due(order).slice(0, ROUND);
+    const fresh = box.fresh(order).slice(0, ROUND - due.length);
+    return due.concat(fresh).map(id => byId.get(id));
+  }
+
   function pool() {
+    if (state.week === 'today') return todays();
     if (state.week === 'all') return allCards();
     if (state.week === 'missed') {
       const ids = new Set(store.get('practice-missed', []));
@@ -86,7 +104,7 @@
   // ---------------------------------------------------------------- building a round
   function buildChoice(game) {
     const cards = pool();
-    const wide = cards.length >= 4 ? cards : allCards();
+    const wide = cards.length >= 4 && state.week !== 'today' ? cards : allCards();
     return shuffle(cards).slice(0, ROUND).map(card => {
       const field = game === 'meaning' ? 'def' : 'w';
       const options = shuffle([card].concat(others(card, wide, field, 3)));
@@ -157,6 +175,7 @@
     let missed = store.get('practice-missed', []).filter(x => x !== id);
     if (!wasRight) missed = [id].concat(missed).slice(0, 60);
     store.set('practice-missed', missed);
+    box.answer(id, wasRight);          // when the word is due again
   }
 
   function nextButton() {
@@ -299,21 +318,35 @@
     };
     const finish = () => {
       stage().innerHTML = `<div class="summary"><h3>${pairs} pairs matched${slips ? `, ${slips} ${slips === 1 ? 'slip' : 'slips'}` : ', no slips'}</h3>
-        <p>${slips ? 'The words you slipped on are kept under “Words I missed”.' : 'Try a week you have not done yet.'}</p>${againButtons()}</div>`;
+        <p>${slips ? 'The words you slipped on are kept under “Words I missed”.' : 'Try a week you have not done yet.'}</p>${todayLine()}${againButtons()}</div>`;
       wireAgain();
     };
     if (!boards.length) { empty(); return; }
     show();
   }
 
+  // After a round of today's words: what is left for today.
+  function todayLine() {
+    if (state.week !== 'today') return '';
+    const n = box.counts(wordIds());
+    return `<p class="today-line">${n.due
+      ? `${n.due} ${n.due === 1 ? 'word is' : 'words are'} still due today.`
+      : 'Nothing more is due today. That is enough for one day: come back tomorrow.'}</p>`;
+  }
+
   function againButtons() {
-    return '<p class="choice-row"><button type="button" id="pr-again">Another round</button>' +
+    let label = 'Another round';
+    if (state.week === 'today' && !box.counts(wordIds()).due) {
+      label = box.fresh(wordIds()).length ? 'Ten new words' : '';
+    }
+    return '<p class="choice-row">' + (label ? `<button type="button" id="pr-again">${label}</button>` : '') +
       '<a role="button" class="outline" href="flashcards.html">Go to the flashcards</a></p>';
   }
   function wireAgain() {
     const again = document.getElementById('pr-again');
     if (again) again.addEventListener('click', start);
     fillWeeks();
+    showToday();
   }
 
   function summary() {
@@ -321,12 +354,14 @@
     stage().onkeydown = null;
     stage().innerHTML = `<div class="summary"><h3>${state.right} of ${total} right</h3>
       ${state.missed.length ? `<p>Look once more at the ones you missed:</p><div class="missed-list">${state.missed.join('')}</div>` : '<p>All of them. Try another game, or another week.</p>'}
-      ${againButtons()}</div>`;
+      ${todayLine()}${againButtons()}</div>`;
     wireAgain();
   }
 
   function empty() {
-    stage().innerHTML = '<p class="result-usage">There are no words in this choice yet. Choose a week, or play a round first.</p>';
+    stage().innerHTML = state.week === 'today'
+      ? '<p class="result-usage">Nothing is due today, and you have met every word. Come back tomorrow, or choose a week.</p>'
+      : '<p class="result-usage">There are no words in this choice yet. Choose a week, or play a round first.</p>';
   }
 
   async function start() {
@@ -354,11 +389,58 @@
     const select = document.getElementById('pr-week');
     if (!files.practice) return;
     const missed = store.get('practice-missed', []).length;
-    select.innerHTML = '<option value="all">All the flashcard words</option>' +
+    const due = box.counts(wordIds()).due;
+    select.innerHTML = `<option value="today">Today’s words${due ? ` (${due} due)` : ''}</option>` +
+      '<option value="all">All the flashcard words</option>' +
       (missed ? `<option value="missed">Words I missed (${missed})</option>` : '') +
       files.practice.weeks.map(w => `<option value="${w.week}">Week ${w.week}: ${esc(w.label)} (${w.cards.length})</option>`).join('');
-    select.value = Array.from(select.options).some(o => o.value === String(state.week)) ? String(state.week) : 'all';
+    select.value = Array.from(select.options).some(o => o.value === String(state.week)) ? String(state.week) : 'today';
     state.week = select.value;
+  }
+
+  // The panel at the top of the page: what is due today, and where the words stand.
+  function showToday() {
+    const host = document.getElementById('pr-today');
+    if (!host || !files.practice) return;
+    const ids = wordIds();
+    const n = box.counts(ids);
+    const fresh = box.fresh(ids).length;
+    const words = k => `${k} ${k === 1 ? 'word' : 'words'}`;
+    let lead, action;
+    if (!n.seen) {
+      lead = 'Start with ten words. A word you get right comes back tomorrow, then after three days, a week, two weeks and a month. A word you miss comes back the same day.';
+      action = 'Start with ten words';
+    } else if (n.due) {
+      lead = `<strong>${words(n.due)} ${n.due === 1 ? 'is' : 'are'} due today.</strong> A round asks up to ten of them.`;
+      action = 'Practise today’s words';
+    } else {
+      lead = '<strong>Nothing is due today.</strong> ' + (n.tomorrow ? `${words(n.tomorrow)} ${n.tomorrow === 1 ? 'comes' : 'come'} back tomorrow. ` : '') +
+        (fresh ? 'You can stop here, or meet ten new words.' : 'You have met every word.');
+      action = fresh ? 'Ten new words' : '';
+    }
+    const back = ['', 'the next day', 'after 3 days', 'after a week', 'after 2 weeks', 'after a month'];
+    const boxes = !n.seen ? '' : '<ol class="box-row" aria-label="Where your words stand">' +
+      [1, 2, 3, 4, 5].map(b => `<li><span class="box-n">${n.boxes[b]}</span><span class="box-label">box ${b}<br>${back[b]}</span></li>`).join('') +
+      `<li class="box-new"><span class="box-n">${fresh}</span><span class="box-label">not met<br>yet</span></li></ol>` +
+      '<p class="box-note">A right answer on a word that is due moves it one box up; a miss sends it back to box 1. ' +
+      'This is kept in this browser only. <button type="button" class="link-btn" id="pr-box-reset">Empty the boxes</button></p>';
+    host.innerHTML = `<h3>Today</h3><p>${lead}</p>` +
+      (action ? `<p><button type="button" id="pr-today-go">${action}</button></p>` : '') + boxes;
+    const go = document.getElementById('pr-today-go');
+    if (go) {
+      go.addEventListener('click', () => {
+        if (state.game === 'verbs' || state.game === 'pieces') setGame('meaning');
+        state.week = 'today';
+        fillWeeks();
+        start();
+      });
+    }
+    const reset = document.getElementById('pr-box-reset');
+    if (reset) {
+      reset.addEventListener('click', () => {
+        if (window.confirm('Empty the boxes? Every word will count as not met yet.')) { box.reset(); fillWeeks(); showToday(); }
+      });
+    }
   }
 
   function setGame(game) {
@@ -378,6 +460,7 @@
     try {
       await need('practice');
       fillWeeks();
+      showToday();
       const verbs = await need('verbs');
       document.getElementById('pr-verbmode').innerHTML = verbs.modes.map(m =>
         `<option value="${esc(m.key)}">${esc(m.label)}${m.subordinate ? ' (subordinate)' : ''}</option>`).join('') +

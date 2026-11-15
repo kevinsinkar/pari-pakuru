@@ -7,6 +7,12 @@
  *     as on the Sounds page);
  *   - a derivation, as Parks prints it, is shown piece by piece (the pieces were
  *     cut at his plus signs by web/learning.py).
+ *
+ * Two helpers for study are here as well, and they touch no form either:
+ *   - Skiri.box: which flashcard words are due again today (a Leitner box kept in
+ *     the visitor's browser);
+ *   - Skiri.coverTools: "cover the English" / "cover the Pawnee" on the lesson
+ *     pages and the phrases page.
  */
 const Skiri = (() => {
   function esc(value) {
@@ -215,5 +221,133 @@ const Skiri = (() => {
     return response.json();
   }
 
-  return { esc, SOUNDS, parsePhonetic, soundItOut, pieceChips, literalHtml, buildBlock, entryLink, shuffle, store, load };
+  // ---------------------------------------------------------------- spaced practice
+  // A Leitner box in the visitor's own browser (localStorage "practice-box"): word id -> [box, day due, day last
+  // answered]. A word answered right comes back later and later: after 1 day, then 3, 7, 14 and 30. A word missed
+  // goes back to box 1 and is due the same day. Nothing is sent anywhere, and no Skiri form is involved: the box
+  // only remembers which printed words to ask again, and when.
+  const BOX_KEY = 'practice-box';
+  const GAPS = [0, 1, 3, 7, 14, 30];             // GAPS[n]: days until a word put into box n comes back
+  const BOXES = 5;
+
+  /** The number of the local day (days since 1970 by the visitor's own clock): a new day begins at midnight. */
+  function dayNumber(now) {
+    const d = now || new Date();
+    return Math.floor((d.getTime() - d.getTimezoneOffset() * 60000) / 86400000);
+  }
+
+  const box = {
+    GAPS, BOXES, dayNumber,
+    all() {
+      const kept = store.get(BOX_KEY, {});
+      return kept && typeof kept === 'object' && !Array.isArray(kept) ? kept : {};
+    },
+    /**
+     * One answer to one word; returns the word's [box, day due, day answered].
+     *   wrong                              -> box 1, due today
+     *   right, never seen                  -> box 1, due tomorrow
+     *   right, due, first answer today     -> one box up, due after that box's gap
+     *   right, due, but met earlier today  -> stays in its box, due tomorrow (one day cannot move a word twice)
+     *   right, not yet due                 -> unchanged (extra practice does not hurry a word along)
+     */
+    answer(id, right, now) {
+      const all = this.all();
+      const day = dayNumber(now);
+      const was = Array.isArray(all[id]) ? all[id] : null;
+      let next;
+      if (!right) next = [1, day, day];
+      else if (!was) next = [1, day + GAPS[1], day];
+      else if (was[1] > day) next = was;
+      else if (was[2] === day) next = [was[0], day + 1, day];
+      else {
+        const up = Math.min(was[0] + 1, BOXES);
+        next = [up, day + GAPS[up], day];
+      }
+      all[id] = next;
+      store.set(BOX_KEY, all);
+      return next;
+    },
+    /** Of these ids, the ones due today or earlier: the longest overdue first. */
+    due(ids, now) {
+      const all = this.all();
+      const day = dayNumber(now);
+      return ids.filter(id => Array.isArray(all[id]) && all[id][1] <= day)
+        .sort((a, b) => all[a][1] - all[b][1] || all[a][0] - all[b][0]);
+    },
+    /** Of these ids, the ones never answered, in the order given. */
+    fresh(ids) {
+      const all = this.all();
+      return ids.filter(id => !Array.isArray(all[id]));
+    },
+    /** {due, seen, boxes: [_, n1..n5], tomorrow} for these ids (or for every word in the box). */
+    counts(ids, now) {
+      const all = this.all();
+      const day = dayNumber(now);
+      const out = { due: 0, seen: 0, tomorrow: 0, boxes: [0, 0, 0, 0, 0, 0] };
+      (ids || Object.keys(all)).forEach(id => {
+        const w = all[id];
+        if (!Array.isArray(w)) return;
+        out.seen += 1;
+        out.boxes[Math.max(1, Math.min(BOXES, w[0]))] += 1;
+        if (w[1] <= day) out.due += 1;
+        else if (w[1] === day + 1) out.tomorrow += 1;
+      });
+      return out;
+    },
+    reset() { store.set(BOX_KEY, {}); },
+  };
+
+  // ---------------------------------------------------------------- covering one side
+  // On a lesson page and on the phrases page: "Cover the English" / "Cover the Pawnee". A covered line is shown
+  // again when it is chosen. Inside an element with class cover-scope, the buttons are .cover-tools [data-cover]
+  // and the two sides are .cover-eng and .cover-paw.
+  function coverTools(root) {
+    const doc = root || document;
+    if (!doc.querySelectorAll) return;
+    doc.querySelectorAll('.cover-scope').forEach(scope => {
+      const buttons = Array.from(scope.querySelectorAll('.cover-tools [data-cover]'));
+      if (!buttons.length) return;
+      const cells = side => Array.from(scope.querySelectorAll(side === 'eng' ? '.cover-eng' : '.cover-paw'));
+      const uncover = el => {
+        el.classList.remove('is-covered');
+        ['tabindex', 'role', 'aria-label'].forEach(a => el.removeAttribute(a));
+      };
+      const set = side => {
+        cells('eng').concat(cells('paw')).forEach(uncover);
+        if (side !== 'none') {
+          cells(side).forEach(el => {
+            if (!el.textContent.trim()) return;
+            if (side === 'paw') {
+              // a line printed without English has nothing to recall it from: it stays in view
+              const line = el.closest('.lesson-dialogue__line, .phrase');
+              if (line && !Array.from(line.querySelectorAll('.cover-eng')).some(e => e.textContent.trim())) return;
+            }
+            el.classList.add('is-covered');
+            el.setAttribute('tabindex', '0');
+            el.setAttribute('role', 'button');
+            el.setAttribute('aria-label', side === 'eng' ? 'Show the English' : 'Show the Pawnee');
+          });
+        }
+        buttons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.cover === side)));
+      };
+      buttons.forEach(b => b.addEventListener('click', () => set(b.dataset.cover)));
+      scope.addEventListener('click', e => {
+        const el = e.target.closest ? e.target.closest('.is-covered') : null;
+        if (el && scope.contains(el)) { e.preventDefault(); uncover(el); }
+      });
+      scope.addEventListener('keydown', e => {
+        const el = e.target;
+        if ((e.key === 'Enter' || e.key === ' ') && el.classList && el.classList.contains('is-covered')) {
+          e.preventDefault();
+          uncover(el);
+        }
+      });
+    });
+  }
+  if (typeof document !== 'undefined' && document.addEventListener) {
+    document.addEventListener('DOMContentLoaded', () => coverTools());
+  }
+
+  return { esc, SOUNDS, parsePhonetic, soundItOut, pieceChips, literalHtml, buildBlock, entryLink, shuffle, store, load,
+    box, coverTools };
 })();

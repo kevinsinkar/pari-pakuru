@@ -5,8 +5,12 @@
 {% block content %}
 <div class="fc-study-header">
     <h2>Week {{ fset.week }}: {{ fset.category_label }}</h2>
-    <p>{{ fset.card_count }} words. Click a card to flip it.</p>
+    <p>{{ fset.card_count }} words. Click a card to flip it. “Got it” and “Missed” also tell the
+       <a href="/practice">Practice</a> page when to bring a word back.</p>
 </div>
+
+{% set spelling_for = 'cards' %}
+{% include "_spelling_line.html" %}
 
 <div class="fc-progress">
     <span id="fc-progress-text">Card 1 of {{ fset.card_count }}</span>
@@ -167,6 +171,8 @@
             progress.missed.push(eid);
         }
         saveProgress();
+        // the same box the Practice page uses: when the word is due again (static/js/skiri.js, Skiri.box)
+        if (window.Skiri && Skiri.box) Skiri.box.answer(eid, result === 'known');
         assessEl.style.display = 'none';
         // Auto-advance or show summary
         if (current < order.length - 1) {

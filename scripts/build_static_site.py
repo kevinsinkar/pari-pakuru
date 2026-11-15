@@ -436,7 +436,7 @@ def _postprocess_for_static(html: str) -> str:
     html = re.sub(r'href="/"', 'href="index.html"', html)
 
     # The learning pages sit at the site root; a query string or an anchor is kept
-    html = re.sub(r'href="/(learn|words|verbs|practice|topics)((?:\?|#)[^"]*)?"',
+    html = re.sub(r'href="/(learn|words|verbs|practice|topics|phrases)((?:\?|#)[^"]*)?"',
                   lambda m: 'href="%s.html%s"' % (m.group(1), m.group(2) or ""), html)
 
     # A category link opens that topic's word list (topics.html). A tag that is not offered as a topic
@@ -450,8 +450,8 @@ def _postprocess_for_static(html: str) -> str:
     html = re.sub(r'href="/flashcards/(\d+)"', r'href="flashcard-\1.html"', html)
     html = html.replace('href="/flashcards"', 'href="flashcards.html"')
 
-    # Blue Book lesson pages are generated statically at the site root
-    html = re.sub(r'href="/lessons/(\d+)"', r'href="lesson-\1.html"', html)
+    # Blue Book lesson pages are generated statically at the site root; an anchor is kept
+    html = re.sub(r'href="/lessons/(\d+)(#[^"]*)?"', lambda m: 'href="lesson-%s.html%s"' % (m.group(1), m.group(2) or ""), html)
     html = html.replace('href="/lessons"', 'href="lessons.html"')
 
     # A link to an entry page opens that one entry on the home page (search.js, ?id=)
@@ -522,6 +522,8 @@ def generate_static_pages(db_path: str, output_dir: Path) -> dict:
         ("verbs.html", "verbs.html", {}),
         ("practice.html", "practice.html", {}),
         ("topics.html", "topics.html", {"topics": learning.topics_data(db.conn)}),
+        # the lessons' Useful Phrases by situation, written into the page (curriculum/everyday_phrases.json)
+        ("phrases.html", "phrases.html", {"phrases": learning.phrases_data(db.conn)}),
     ]
 
     count = 0
@@ -739,48 +741,18 @@ def generate_lesson_pages(db_path: str, output_dir: Path) -> dict:
     max_lesson = max(l["number"] for l in lessons) if lessons else 0
     for r in lesson_rows:
         number = r["lesson_number"]
-        cur.execute("SELECT * FROM lessons WHERE lesson_number = ?", (number,))
-        row = cur.fetchone()
-
-        cur.execute("""
-            SELECT a.bb_skiri_form, a.bb_english, a.context_type, a.entry_id,
-                   a.match_type, le.headword, le.normalized_form,
-                   le.simplified_pronunciation, le.phonetic_form,
-                   le.grammatical_class
-            FROM blue_book_attestations a
-            LEFT JOIN lexical_entries le ON le.entry_id = a.entry_id
-            WHERE a.lesson_number = ?
-              AND a.context_type IN ('BASIC_WORDS', 'ADDITIONAL_WORDS')
-            ORDER BY a.context_type, a.id
-        """, (number,))
-        vocab = [dict(v) for v in cur.fetchall()]
-        basic = [v for v in vocab if v["context_type"] == "BASIC_WORDS"]
-        additional = [v for v in vocab if v["context_type"] == "ADDITIONAL_WORDS"]
-
-        cur.execute("""
-            SELECT bb_skiri_form, bb_english FROM blue_book_attestations
-            WHERE lesson_number = ? AND context_type = 'PHRASE'
-            ORDER BY id
-        """, (number,))
-        phrases = [dict(p) for p in cur.fetchall()]
-
-        lesson = {
-            "number": row["lesson_number"],
-            "skiri_title": row["skiri_title"],
-            "english_title": row["english_title"],
-            "page_start": row["page_start"],
-            "page_end": row["page_end"],
-            "dialogues": _json.loads(row["dialogues"] or "[]"),
-            "grammar_notes": _json.loads(row["grammar_notes"] or "[]"),
-            "templates": _json.loads(row["template_ids"] or "[]"),
-        }
-        exercises = _build_exercises(vocab, lesson["dialogues"], phrases)
+        # the same data as the local app shows (web/learning.py): word lists, dialogues, the book's phrases
+        ctx = learning.lesson_context(db.conn, number)
+        lesson = ctx["lesson"]
+        exercises = _build_exercises(ctx["vocab"], lesson["dialogues"], ctx["phrase_pairs"])
         prev_n = number - 1 if number > 1 else None
         next_n = number + 1 if number < max_lesson else None
 
         html = template.render(
-            lesson=lesson, basic=basic, additional=additional,
-            phrases=phrases, practice=[],  # sentence builder is Flask-only
+            lesson=lesson, basic=ctx["basic"], additional=ctx["additional"],
+            phrases=ctx["phrases"], conversations=ctx["conversations"],
+            conversation_note=ctx["conversation_note"],
+            practice=[],  # sentence builder is Flask-only
             exercises=exercises, prev_n=prev_n, next_n=next_n,
             **base_context,
         )

@@ -12,6 +12,11 @@ Every Skiri form it returns is copied from a printed source:
     verbs          Appendix 1 (seven verbs in full), Appendix 2, the tables of
                    chapter 4, and the five numbered forms of a verb entry
     practice       the flashcard weeks, as the flashcard pages show them
+    lessons        the Blue Book lessons as the tables hold them (lesson_context)
+    phrases        the lessons' Useful Phrases and the two conversations of
+                   lesson 20, listed by situation in
+                   curriculum/everyday_phrases.json; every line must stand in
+                   the lessons' text or the page is not built (phrases_data)
 
 What the pages add is arrangement: words that share a printed piece are listed
 together, a phonetic form is cut at its syllable dots. The project's own
@@ -400,6 +405,196 @@ def topics_data(conn: sqlite3.Connection) -> list:
     counts = dict(conn.execute("SELECT tag, count(DISTINCT entry_id) FROM semantic_tags GROUP BY tag"))
     return [{"tag": tag, "label": label, "count": counts.get(tag, 0)}
             for tag, label in TOPIC_LABELS.items() if counts.get(tag)]
+
+
+# ---------------------------------------------------------------------------
+# The Blue Book: the lesson pages and the phrases
+# ---------------------------------------------------------------------------
+# The scan of Pari Pakuru' has 28 pages before the page the book numbers 1. The tables store pages of the scan;
+# a reader holding the book needs the number printed on the page.
+BLUE_BOOK_PAGE_OFFSET = 28
+PHRASES_FILE = PROJECT_ROOT / "curriculum" / "everyday_phrases.json"
+DIALECT_NAMES = {"SK": "Skiri", "SB": "South Band"}       # the book writes (SK) and (SB) after a form
+
+
+def _stands(text: str, piece: str) -> bool:
+    """A piece stands in a text as whole words."""
+    return bool(re.search(r"(?<!\S)" + re.escape(piece) + r"(?!\S)", text or ""))
+
+
+def _lesson_notes(conn: sqlite3.Connection) -> dict:
+    return {n: json.loads(raw or "[]") for n, raw in conn.execute("SELECT lesson_number, grammar_notes FROM lessons")}
+
+
+def phrase_problems(conn: sqlite3.Connection, data: dict | None = None) -> list:
+    """What in curriculum/everyday_phrases.json does not stand, letter for letter, in the lessons' text.
+
+    The file holds copied forms. Every Pawnee line, its dialect label and its English must stand in a note of its
+    lesson headed "Useful Phrases" or "Useful Conversations" (the page reading of the lessons). Whether a line
+    and its English also share a row of the printed page is checked by scripts/everyday_phrases.py, which needs
+    the scan."""
+    data = data or json.loads(PHRASES_FILE.read_text(encoding="utf-8"))
+    notes = _lesson_notes(conn)
+    known = {s["key"] for s in data["situations"]}
+    problems = []
+
+    def texts(lesson, heading):
+        return [n.get("text") or "" for n in notes.get(lesson, []) if n.get("heading") == heading]
+
+    for p in data["phrases"]:
+        where = texts(p["lesson"], "Useful Phrases")
+        form = p["skiri"] + (" (%s)" % p["dialect"] if p.get("dialect") else "")
+        if not any(_stands(t, form) for t in where):
+            problems.append("lesson %d: %r is not in the Useful Phrases" % (p["lesson"], form))
+        for piece in filter(None, [p.get("english"), p.get("also_printed")]):
+            if not any(_stands(t, piece) for t in where):
+                problems.append("lesson %d: the English %r is not in the Useful Phrases" % (p["lesson"], piece))
+        if not p.get("english") and not (p.get("same_meaning_as_line_above") or p.get("printed_after_or")):
+            problems.append("lesson %d: %r has no English and no reason" % (p["lesson"], p["skiri"]))
+        if p.get("printed_after_or") and not any(("or " + p["skiri"]) in t for t in where):
+            problems.append("lesson %d: %r is not printed after 'or'" % (p["lesson"], p["skiri"]))
+        if p.get("situation") not in known:
+            problems.append("lesson %d: %r has the unknown situation %r" % (p["lesson"], p["skiri"], p.get("situation")))
+        if p.get("dialect") and p["dialect"] not in DIALECT_NAMES:
+            problems.append("lesson %d: unknown dialect label %r" % (p["lesson"], p["dialect"]))
+    for conv in data["conversations"]:
+        where = texts(conv["lesson"], "Useful Conversations")
+        for line in conv["lines"]:
+            for piece in (line["skiri"], line["english"]):
+                if not any(_stands(t, piece) for t in where):
+                    problems.append("lesson %d, conversation %d: %r is not in the Useful Conversations" % (conv["lesson"], conv["number"], piece))
+    for note in data.get("notes_of_the_book", []):
+        if not any(note["text"] in (n.get("text") or "") for n in notes.get(note["lesson"], [])):
+            problems.append("lesson %d: the book's note %r is not in the lesson" % (note["lesson"], note["text"][:40]))
+    return problems
+
+
+def _phrase_key(skiri: str) -> str:
+    return skiri.rstrip(".!?,").strip()
+
+
+def phrases_data(conn: sqlite3.Connection) -> dict:
+    """The lessons' Useful Phrases, by lesson and by situation, and the two conversations of lesson 20.
+
+    {"by_lesson": {lesson: [row]}, "situations": [{key, label, about, rows: [row]}], "conversations": [...],
+     "notes": {...}, "count": phrases, "lessons": lessons with phrases}
+
+    A row is one numbered item of the book: {"forms": [{skiri, dialect, dialect_name, after_or}],
+    "printings": [{lesson, english}], "also": [str]}. A second dialect's form, or a form printed after "or",
+    belongs to the row of the item it stands under. In a situation, the same phrase printed in two lessons is
+    one row with both printings: where the book gives it two English renderings, both are shown.
+    Raises ValueError if a line of the file does not stand in the lessons' text."""
+    data = json.loads(PHRASES_FILE.read_text(encoding="utf-8"))
+    problems = phrase_problems(conn, data)
+    if problems:
+        raise ValueError("curriculum/everyday_phrases.json: " + "; ".join(problems[:5]))
+
+    rows, last = [], None
+    for p in data["phrases"]:
+        form = {"skiri": p["skiri"], "dialect": p.get("dialect") or "", "dialect_name": DIALECT_NAMES.get(p.get("dialect"), ""),
+                "after_or": bool(p.get("printed_after_or"))}
+        same_item = (last is not None and last["lesson"] == p["lesson"] and p.get("number") is not None
+                     and last["number"] == p.get("number")
+                     and (not p.get("english") or p["english"] == last["printings"][0]["english"]))
+        if same_item:
+            last["forms"].append(form)
+            continue
+        last = {"lesson": p["lesson"], "number": p.get("number"), "situation": p["situation"], "forms": [form],
+                "printings": [{"lesson": p["lesson"], "english": p.get("english") or ""}],
+                "also": [p["also_printed"]] if p.get("also_printed") else []}
+        rows.append(last)
+
+    by_lesson = {}
+    for row in rows:
+        by_lesson.setdefault(row["lesson"], []).append(row)
+
+    situations = []
+    for s in data["situations"]:
+        merged, index = [], {}
+        for row in rows:
+            if row["situation"] != s["key"]:
+                continue
+            key = (_phrase_key(row["forms"][0]["skiri"]), row["forms"][0]["dialect"]) if len(row["forms"]) == 1 else None
+            if key is not None and key in index:
+                index[key]["printings"].extend(row["printings"])
+                continue
+            copy = {"forms": row["forms"], "printings": list(row["printings"]), "also": row["also"]}
+            merged.append(copy)
+            if key is not None:
+                index[key] = copy
+        for row in merged:
+            # one English with the lessons that print it, in the order they print it
+            glosses = []
+            for printing in row["printings"]:
+                found = next((g for g in glosses if g["english"] == printing["english"]), None)
+                if found:
+                    found["lessons"].append(printing["lesson"])
+                else:
+                    glosses.append({"english": printing["english"], "lessons": [printing["lesson"]]})
+            row["glosses"] = glosses
+        situations.append({"key": s["key"], "label": s["label"], "about": s["about"], "rows": merged})
+
+    return {
+        "by_lesson": by_lesson,
+        "situations": situations,
+        "conversations": data["conversations"],
+        "notes": {n["about"]: n for n in data.get("notes_of_the_book", [])},
+        "count": len(data["phrases"]),
+        "lessons": sorted(by_lesson),
+    }
+
+
+def lesson_context(conn: sqlite3.Connection, number: int) -> dict | None:
+    """What one lesson page shows, for the local app and the published site alike; None if there is no such lesson.
+
+    The word lists are rows of blue_book_attestations with the dictionary entry they are tied to. A row tied to an
+    entry as a form of its stem (match_type "stem": ti•'at, a form of the verb at) gets the link but not the
+    entry's pronunciation: "uht" is how the dictionary writes the stem, not how the word is said."""
+    cur = conn.cursor()
+    cur.row_factory = sqlite3.Row
+    row = cur.execute("SELECT * FROM lessons WHERE lesson_number = ?", (number,)).fetchone()
+    if row is None:
+        return None
+    vocab = [dict(v) for v in cur.execute("""
+        SELECT a.id, a.bb_skiri_form, a.bb_english, a.context_type, a.entry_id, a.match_type, a.dialect_note,
+               le.headword, le.normalized_form, le.simplified_pronunciation, le.phonetic_form, le.grammatical_class
+        FROM blue_book_attestations a
+        LEFT JOIN lexical_entries le ON le.entry_id = a.entry_id
+        WHERE a.lesson_number = ? AND a.context_type IN ('BASIC_WORDS', 'ADDITIONAL_WORDS')
+        ORDER BY a.context_type, a.id""", (number,))]
+    for v in vocab:
+        v["form_of_stem"] = bool(v["entry_id"]) and v["match_type"] == "stem"
+        v["entry_sound"] = bool(v["entry_id"]) and not v["form_of_stem"]
+    phrases = phrases_data(conn)
+    rows = phrases["by_lesson"].get(number, [])
+    dialogues = json.loads(row["dialogues"] or "[]")
+    notes = json.loads(row["grammar_notes"] or "[]")
+    text = " ".join([ln.get("skiri") or "" for d in dialogues for ln in d.get("lines", [])] + [n.get("text") or "" for n in notes])
+    lesson = {
+        "number": row["lesson_number"],
+        "skiri_title": row["skiri_title"],
+        "english_title": row["english_title"],
+        "page_start": row["page_start"],
+        "page_end": row["page_end"],
+        "book_page_start": row["page_start"] - BLUE_BOOK_PAGE_OFFSET,
+        "book_page_end": row["page_end"] - BLUE_BOOK_PAGE_OFFSET,
+        "dialogues": dialogues,
+        "grammar_notes": notes,
+        "templates": json.loads(row["template_ids"] or "[]"),
+        "has_gap": "[" in text,          # letters under a flaw in the scan stand in square brackets
+    }
+    return {
+        "lesson": lesson,
+        "vocab": vocab,
+        "basic": [v for v in vocab if v["context_type"] == "BASIC_WORDS"],
+        "additional": [v for v in vocab if v["context_type"] == "ADDITIONAL_WORDS"],
+        "phrases": rows,
+        # the same lines as pairs, for the exercises (one form, its English)
+        "phrase_pairs": [{"bb_skiri_form": r["forms"][0]["skiri"], "bb_english": r["printings"][0]["english"]}
+                         for r in rows if len(r["forms"]) == 1 and r["printings"][0]["english"]],
+        "conversations": [c for c in phrases["conversations"] if c["lesson"] == number],
+        "conversation_note": (phrases["notes"].get("the two conversations") or {}).get("text", "") if number == 20 else "",
+    }
 
 
 def data_files(db_path: str) -> dict:

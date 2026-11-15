@@ -1,0 +1,47 @@
+{# The lessons' Useful Phrases as a list (web/learning.py, phrases_data). Used by the lesson pages and the
+   phrases page. Every Pawnee line and every English line is copied from the lessons' text; the page makes none.
+   The classes cover-paw and cover-eng are what the "cover one side" buttons hide (static/js/skiri.js). #}
+{% macro cover_tools(label) %}
+<div class="choice-row cover-tools" role="group" aria-label="{{ label or 'Cover one side' }}">
+  <button type="button" class="choice-btn" data-cover="none" aria-pressed="true">Show both</button>
+  <button type="button" class="choice-btn" data-cover="eng" aria-pressed="false">Cover the English</button>
+  <button type="button" class="choice-btn" data-cover="paw" aria-pressed="false">Cover the Pawnee</button>
+</div>
+{% endmacro %}
+
+{% macro phrase_list(rows, with_lessons) %}
+<ul class="phrase-list">
+  {% for row in rows %}
+  <li class="phrase">
+    <span class="phrase-forms cover-paw">
+      {% for f in row.forms %}
+      <span class="phrase-form">{% if f.after_or %}<span class="phrase-or">or</span> {% endif %}<span lang="x-paw" class="font-serif">{{ f.skiri }}</span>{% if f.dialect %} <abbr class="dialect" title="{{ f.dialect_name }} form">{{ f.dialect }}</abbr>{% endif %}</span>
+      {% endfor %}
+    </span>
+    <span class="phrase-glosses">
+      {% if with_lessons %}
+        {% for g in row.glosses %}
+        <span class="phrase-gloss"><span class="phrase-eng cover-eng">{{ g.english }}</span>
+          <span class="phrase-where">{% for n in g.lessons %}<a href="/lessons/{{ n }}#phrases" title="Lesson {{ n }} of the textbook">lesson {{ n }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</span></span>
+        {% endfor %}
+      {% else %}
+        <span class="phrase-gloss"><span class="phrase-eng cover-eng">{{ row.printings[0].english }}</span></span>
+      {% endif %}
+      {% for extra in row.also %}<span class="phrase-also cover-eng">{{ extra }}</span>{% endfor %}
+    </span>
+  </li>
+  {% endfor %}
+</ul>
+{% endmacro %}
+
+{% macro conversation(conv) %}
+<article class="lesson-dialogue">
+  {% for line in conv.lines %}
+  <div class="lesson-dialogue__line lesson-dialogue__line--spoken">
+    <span class="lesson-dialogue__who">{{ line.who }}</span>
+    <span class="lesson-dialogue__skiri font-serif cover-paw" lang="x-paw">{{ line.skiri }}</span>
+    <span class="lesson-dialogue__eng cover-eng">{{ line.english }}</span>
+  </div>
+  {% endfor %}
+</article>
+{% endmacro %}

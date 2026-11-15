@@ -15,17 +15,28 @@
      Cultural Retention Committee to keep the Skiri language alive — a
      practical course written by and for the Pawnee community, built around
      everyday questions and answers. Its 20 lessons are presented here in
-     their original teaching order: each one gives you the vocabulary,
-     dialogues, grammar notes, and exercises exactly as the book teaches
-     them, with every word linked to the Parks Dictionary.</p>
+     their original teaching order, and each in the book's own order:
+     a few basic words, the dialogues that use them, more words, useful
+     phrases and the notes on grammar. A word is linked to the Parks
+     Dictionary wherever it could be tied to an entry, and each lesson ends
+     with exercises made from its own lines.</p>
   <p class="bb-intro__spelling">The Blue Book's spelling differs from the
      dictionary's — that's normal, and nothing is wrong. Each lesson shows
-     the word in the Blue Book's own spelling <em>and</em> the dictionary
-     spelling, side by side with the simplified pronunciation
-     (<strong>UPPERCASE = the accented syllable</strong>) and the IPA transcription
-     recorded from fluent speakers. When spellings disagree, trust your ear
-     and the IPA.</p>
+     a word in the Blue Book's own spelling <em>and</em>, where the dictionary
+     has it, in the dictionary's, with the simplified pronunciation
+     (<strong>UPPERCASE = the accented syllable</strong>) and the phonetic form
+     Parks recorded from fluent speakers. When spellings disagree about a sound,
+     the phonetic form is the authority. The spelling to learn to write is the
+     dictionary's learner spelling; every lesson page says which column that is.</p>
 </article>
+
+<a class="lesson-card lesson-card--phrases" href="/phrases">
+  <div class="lesson-card__num" aria-hidden="true">&rarr;</div>
+  <div class="lesson-card__body">
+    <div class="lesson-card__title">Phrases to use today</div>
+    <div class="lesson-card__meta"><span>The “Useful Phrases” of all the lessons, gathered by situation, and the two conversations of lesson 20.</span></div>
+  </div>
+</a>
 
 <div class="lesson-grid">
   {% for l in lessons %}
@@ -46,9 +57,9 @@
   {% endfor %}
 </div>
 
-<p><small>Source: <em>Pari Pakuru'</em> pp. 29–130. Lesson text was parsed
-directly from the book; Skiri titles are shown as printed (some carry OCR
-artifacts from the source scan).</small></p>
+<p><small>Source: <em>Pari Pakuru'</em> (1979), pp. 1–102 of the book. The Pawnee of the titles,
+dialogues, word lists, phrases and notes was read from a scan of the book; the English of the
+notes is the scan's machine-read text and has not been proofread.</small></p>
 {% endblock %}
 
 {% block scripts %}
@@ -85,6 +96,8 @@ artifacts from the source scan).</small></p>
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
   text-decoration: none;
 }
+.lesson-card--phrases { margin-bottom: 1rem; border-color: var(--sage-200, #B8D8BC); background: var(--sage-50, #EFF6F0); }
+.lesson-card--phrases .lesson-card__num { background: var(--sage-600, #4A7A52); }
 .lesson-card__num {
   flex: 0 0 auto;
   width: 2.4rem;

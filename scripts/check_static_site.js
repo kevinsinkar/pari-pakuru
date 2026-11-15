@@ -120,10 +120,77 @@ vm.runInContext(fs.readFileSync(path.join(docs, 'static', 'js', 'search.js'), 'u
   check(`practice: ${cards.length} words in ${pr.weeks.length} weeks, week 20 held back`,
     cards.length > 300 && !pr.weeks.some(w => w.week === 20) && cards.every(c => byId.has(c.id) && c.w && c.def));
 
+  // ---- the lessons, the phrases and the practice box (2026-11-15)
+  const page = name => fs.readFileSync(path.join(docs, name), 'utf8');
+  const text = h => h.replace(/<[^>]+>/g, ' ').replace(/&#39;/g, "'").replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/\s+/g, ' ');
+  // the row of a word list that begins with a form (an apostrophe may be written as it is or as &#39;)
+  const row = (h, form) => {
+    const i = [form, form.replace(/'/g, '&#39;')].map(f => h.indexOf('>' + f + '<')).find(k => k >= 0);
+    return i === undefined ? '' : h.slice(i, h.indexOf('</tr>', i));
+  };
+  const l9 = page('lesson-9.html');
+  const stemRow = row(l9, "ti•'at");
+  check("lesson 9: ti•'at links to its verb and shows no pronunciation of the stem",
+    stemRow.includes('a form of') && stemRow.includes('index.html?id=') && !/uht/.test(stemRow) && !stemRow.includes('ət'));
+  check('lesson pages: the pronunciation columns stand under "In the dictionary", and the line on spelling is in view',
+    l9.includes('In the dictionary') && l9.includes('class="spelling-line"') && !l9.includes('not in Parks dictionary'));
+  check('lesson pages cite the pages printed in the book (lesson 1: pp. 1–5)', /pp\. 1–5</.test(page('lesson-1.html')));
+  const l1 = page('lesson-1.html');
+  check('lesson pages: the basic words stand before the dialogues, as in the book; one side can be covered',
+    l1.indexOf('id="basic-words"') > 0 && l1.indexOf('id="basic-words"') < l1.indexOf('id="dialogues"') &&
+    l1.includes('data-cover="eng"') && l1.includes('cover-paw') && l1.includes('cover-eng'));
+  const l18 = text(page('lesson-18.html'));
+  const l10 = text(row(page('lesson-10.html'), "asku•ra•wákahu'"));
+  check('lessons 10 and 18: a word has the English of its own row of the page',
+    /Sutsiks•áhut\. Hold this\./.test(l18) && /Kesku•rahúrihu'\. Forgive me\./.test(l18) && !/Sutsiks•áhut\. Who's been busy/.test(l18) &&
+    l10.includes('judge') && !l10.includes('police'));
+  const killing = byId.get('BB-tikuwtitiku-0083');
+  check('the entry made from a mis-paired row has its own meaning', Boolean(killing) && killing.glosses[0].definition === 'he is killing it');
+
+  const ph = page('phrases.html');
+  const items = Array.from(ph.matchAll(/<li class="phrase">([\s\S]*?)<\/li>/g)).map(m => ({
+    forms: Array.from(m[1].matchAll(/<span lang="x-paw" class="font-serif">([^<]*)<\/span>/g)).map(f => text(f[1]).trim()),
+    lessons: Array.from(m[1].matchAll(/href="lesson-(\d+)\.html#phrases"/g)).map(l => Number(l[1])),
+    english: Array.from(m[1].matchAll(/class="phrase-eng cover-eng">([^<]*)</g)).map(e => text(e[1]).trim()),
+  }));
+  const lessonText = {};
+  const inLesson = (n, s) => { lessonText[n] = lessonText[n] || text(page('lesson-' + n + '.html')); return lessonText[n].includes(s); };
+  const astray = items.filter(it => !it.forms.length || !it.lessons.length ||
+    !it.forms.every(f => it.lessons.some(n => inLesson(n, f))) || !it.english.every(e => !e || it.lessons.some(n => inLesson(n, e))));
+  check(`phrases: ${items.length} rows, every phrase and its English printed on the page of a lesson it names (${astray.length} not)`,
+    items.length >= 95 && astray.length === 0);
+  if (astray.length) console.log('  e.g. ' + astray.slice(0, 4).map(it => JSON.stringify(it)).join('\n       '));
+  check('phrases: the two conversations, the line on spelling, and what the page is not',
+    (ph.match(/lesson-dialogue__line--spoken/g) || []).length === 16 && ph.includes('class="spelling-line"') &&
+    ph.includes('No speaker of Pawnee has reviewed this page') && /Hold this\./.test(text(ph)));
+
+  // the box that says when a word is due again: a store that keeps what it is given, and days we choose
+  const kept = new Map();
+  sandbox.window.localStorage = { getItem: k => (kept.has(k) ? kept.get(k) : null), setItem: (k, v) => { kept.set(k, String(v)); } };
+  const box = vm.runInContext('Skiri.box', sandbox);
+  const day = n => new Date(2026, 10, 15 + n, 9, 30);
+  const at = n => box.dayNumber(day(n)) - box.dayNumber(day(0));
+  const moves = [];
+  const step = (id, right, n) => { const w = box.answer(id, right, day(n)); moves.push([w[0], w[1] - box.dayNumber(day(0))]); return w; };
+  step('a', true, 0); step('a', true, 0); step('a', true, 1); step('a', true, 2); step('a', true, 4);
+  step('a', true, 11); step('a', true, 25); step('a', true, 55); step('a', false, 60); step('a', true, 60); step('a', true, 61);
+  step('b', false, 0);
+  const expect = [[1, 1], [1, 1], [2, 4], [2, 4], [3, 11], [4, 25], [5, 55], [5, 85], [1, 60], [1, 61], [2, 64], [1, 0]];
+  check('practice box: a right answer brings a word back after 1, 3, 7, 14 and 30 days; a miss starts it again the same day',
+    at(1) === 1 && JSON.stringify(moves) === JSON.stringify(expect));
+  check('practice box: what is due, what is new, and the count for the day',
+    JSON.stringify(box.due(['a', 'b', 'c'], day(0))) === '["b"]' && JSON.stringify(box.due(['a', 'b', 'c'], day(64))) === '["b","a"]' &&
+    JSON.stringify(box.fresh(['a', 'b', 'c'])) === '["c"]' && box.counts(['a', 'b', 'c'], day(63)).due === 1 &&
+    box.counts(['a', 'b', 'c'], day(63)).tomorrow === 1 && box.counts(null, day(0)).seen === 2);
+  const prJs = page('static/js/practice.js');
+  check('practice page: today\'s words are offered first, and the flashcards feed the same box',
+    page('practice.html').includes('id="pr-today"') && prJs.includes("box.answer(id, wasRight)") && prJs.includes('value="today"') &&
+    page('flashcard-1.html').includes('Skiri.box.answer(eid') && page('flashcard-1.html').includes('class="spelling-line"'));
+
   // every page is there, has no link left over from the local app, and links only to files that exist
   const pages = fs.readdirSync(docs).filter(f => f.endsWith('.html'));
-  const wanted = ['index', 'learn', 'guide', 'words', 'verbs', 'practice', 'topics', 'lessons', 'flashcards', 'about'];
-  check('the ten main pages are built', wanted.every(p => pages.includes(p + '.html')));
+  const wanted = ['index', 'learn', 'guide', 'words', 'verbs', 'practice', 'topics', 'lessons', 'phrases', 'flashcards', 'about'];
+  check('the eleven main pages are built', wanted.every(p => pages.includes(p + '.html')));
   const broken = [];
   for (const page of pages) {
     const text = fs.readFileSync(path.join(docs, page), 'utf8');
