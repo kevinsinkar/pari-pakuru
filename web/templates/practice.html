@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% set active_page = 'practice' %}
+
+{% block title %}Practice{% endblock %}
+
+{% block content %}
+{# Practice games over printed forms only: the flashcard words (data/practice.json), the seven verbs of
+   Appendix 1 (data/verbs.json) and the printed derivations (data/wordbuilding.json). Nothing is kept on a
+   server: the list of missed words lives in the visitor's own browser. #}
+<article class="learn-page">
+  <p class="learn-kicker">Practice</p>
+  <h2>Practice</h2>
+  <p class="learn-lead">
+    Six short games over the same words as the flashcards, the seven verbs the dictionary writes out in full,
+    and the pieces words are built from. Ten questions a round. A little every day does more than a lot once a week.
+  </p>
+
+  <section class="practice-setup" aria-label="Choose a game">
+    <div class="choice-row" role="group" aria-label="Game" id="pr-games">
+      <button type="button" class="choice-btn" data-game="meaning" aria-pressed="true">Choose the meaning</button>
+      <button type="button" class="choice-btn" data-game="word" aria-pressed="false">Choose the word</button>
+      <button type="button" class="choice-btn" data-game="match" aria-pressed="false">Match the pairs</button>
+      <button type="button" class="choice-btn" data-game="type" aria-pressed="false">Type the word</button>
+      <button type="button" class="choice-btn" data-game="verbs" aria-pressed="false">Verb forms</button>
+      <button type="button" class="choice-btn" data-game="pieces" aria-pressed="false">Word pieces</button>
+    </div>
+    <div class="practice-options">
+      <label id="pr-week-label">Which words
+        <select id="pr-week"></select>
+      </label>
+      <label id="pr-verbmode-label" style="display:none">Which mode
+        <select id="pr-verbmode"></select>
+      </label>
+      <button type="button" id="pr-start">Start</button>
+    </div>
+    <p class="result-usage" id="pr-blurb"></p>
+  </section>
+
+  <section id="pr-stage" class="practice-stage" aria-live="polite"></section>
+
+  <section class="honest-note">
+    <h3>About these games</h3>
+    <p>
+      Every Skiri form in a question or an answer is printed in the dictionary or the textbook; a game never
+      makes a form. The words are the flashcard words, chosen by this project and not yet reviewed by a speaker.
+      The words you miss are remembered in this browser only, so that you can practise them again.
+    </p>
+  </section>
+</article>
+{% endblock %}
+
+{% block scripts %}
+<script src="/static/js/practice.js"></script>
+{% endblock %}

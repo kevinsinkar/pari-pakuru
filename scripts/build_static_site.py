@@ -8,12 +8,14 @@ Usage:
     python scripts/build_static_site.py --dry-run           # preview changes
 
 This script:
-1. Exports dictionary data to JSON
-2. Generates all entry pages
-3. Generates browse/category pages
-4. Generates lesson pages
-5. Copies static assets
-6. Updates templates for client-side compatibility
+1. Exports dictionary data to JSON (data/dictionary.json)
+2. Exports the data of the learning pages (data/wordbuilding.json, verbs.json, practice.json)
+3. Copies static assets and the two printable documents
+4. Generates the main pages, the learning pages, the flashcard pages and the lesson pages
+5. Rewrites the app's links so the pages work as plain files
+
+Everything a page shows is copied from the database or from extracted_data/;
+no step makes a Skiri form (see web/learning.py for the learning pages).
 """
 
 import argparse
@@ -28,6 +30,7 @@ PROJECT_ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from web.db import SkiriWebDictionary
+from web import learning
 
 # Import grammatical class labels from Flask app
 GRAM_CLASS_LABELS = {
@@ -94,7 +97,19 @@ def export_dictionary_data(db_path: str, output_dir: Path) -> dict:
                 other_forms = [f for f in json.loads(raw_forms or "[]") if isinstance(f, dict) and f.get("form")]
             except ValueError:
                 other_forms = []
+            # the printed derivation cut at its plus signs (web/learning.py); only for a Parks entry whose
+            # derivation has two or more pieces
+            parts = (learning.split_derivation(entry.etymology.raw_etymology)
+                     if entry.etymology and entry.etymology.raw_etymology and source != "blue_book" else None)
+            build = None
+            if parts:
+                build = {"u": parts["units"], "k": parts["keys"], "lit": parts["literal"]}
+                if parts.get("unsure"):
+                    build["unsure"] = True
+                if parts.get("words"):
+                    build["words"] = parts["words"]
             detail = {
+                "build": build,
                 "verb_forms": [{"n": p.form_number, "form": p.skiri_form} for p in (entry.paradigmatic_forms or [])],
                 "other_forms": [{"type": f.get("form_type"), "form": f["form"]} for f in other_forms],
                 "etymology": ({"raw": entry.etymology.raw_etymology, "literal": entry.etymology.literal_translation}
@@ -327,6 +342,47 @@ def generate_browse_pages(db_path: str, output_dir: Path) -> dict:
     return {"pages": count}
 
 
+def export_learning_data(db_path: str, output_dir: Path) -> dict:
+    """Write the files the learning pages read: data/wordbuilding.json, verbs.json, practice.json."""
+    print("[*] Exporting the data of the learning pages...")
+    data_dir = output_dir / "data"
+    data_dir.mkdir(parents=True, exist_ok=True)
+    files = learning.data_files(db_path)
+
+    # wordbuilding: one entry to a line, so that a changed derivation is one line of difference in git
+    wb = files["wordbuilding"]
+    head = {k: v for k, v in wb.items() if k != "entries"}
+    with open(data_dir / "wordbuilding.json", "w", encoding="utf-8", newline="\n") as f:
+        f.write(json.dumps(head, ensure_ascii=False, separators=(",", ":"))[:-1] + ',"entries":[\n')
+        f.write(",\n".join(json.dumps(e, ensure_ascii=False, separators=(",", ":")) for e in wb["entries"]))
+        f.write("\n]}\n")
+    for name in ("verbs", "practice"):
+        with open(data_dir / f"{name}.json", "w", encoding="utf-8", newline="\n") as f:
+            f.write(json.dumps(files[name], ensure_ascii=False, indent=1) + "\n")
+
+    forms = sum(1 for v in files["verbs"]["verbs"] for m in v["modes"].values() for form in m.values() if form)
+    cards = sum(len(w["cards"]) for w in files["practice"]["weeks"])
+    print(f"[OK] Word building: {len(wb['entries'])} entries with a printed derivation of two or more pieces")
+    print(f"[OK] Verbs: {len(files['verbs']['verbs'])} verbs of Appendix 1, {forms} forms; practice: {cards} words")
+    return {"wordbuilding": len(wb["entries"]), "verb_forms": forms, "practice_words": cards}
+
+
+def copy_printables(output_dir: Path) -> dict:
+    """Copy the two documents for paper (curriculum/printables/*.pdf) to printables/."""
+    src = PROJECT_ROOT / "curriculum" / "printables"
+    dst = output_dir / "printables"
+    dst.mkdir(parents=True, exist_ok=True)
+    count = 0
+    for name in ("word_list.pdf", "paradigm_tables.pdf"):
+        if (src / name).exists():
+            shutil.copyfile(src / name, dst / name)
+            count += 1
+        else:
+            print(f"  [!] {name} is missing: run scripts/build_printables.py")
+    print(f"[OK] Copied {count} printable documents")
+    return {"files": count}
+
+
 def copy_static_assets(output_dir: Path) -> dict:
     """Copy CSS, JS, and other static assets."""
     print("[*] Copying static assets...")
@@ -360,10 +416,11 @@ def _postprocess_for_static(html: str) -> str:
         r'<p><a href="/study\?[^"]*"[^>]*>.*?</a></p>',
         "", html, flags=re.DOTALL)
 
-    # Drop the spelling-preference form (posts to a Flask route)
+    # Drop the spelling-preference form (posts to a Flask route), and the sentence that points to it
     html = re.sub(
         r'<li class="nav-spelling-toggle">.*?</li>',
         "", html, flags=re.DOTALL)
+    html = html.replace("Use the spelling toggle in the nav bar to switch.", "")
 
     # Strip HTMX live-search attributes (their endpoints don't exist statically;
     # search.js handles live search instead)
@@ -378,8 +435,16 @@ def _postprocess_for_static(html: str) -> str:
     html = html.replace('href="/guide"', 'href="guide.html"')
     html = re.sub(r'href="/"', 'href="index.html"', html)
 
-    # Category-tag links become client-side searches on the tag word
-    html = re.sub(r'href="/browse/tag/([^"]+)"', r'href="index.html?q=\1"', html)
+    # The learning pages sit at the site root; a query string or an anchor is kept
+    html = re.sub(r'href="/(learn|words|verbs|practice|topics)((?:\?|#)[^"]*)?"',
+                  lambda m: 'href="%s.html%s"' % (m.group(1), m.group(2) or ""), html)
+
+    # A category link opens that topic's word list (topics.html). A tag that is not offered as a topic
+    # ("ceremony") stays a search on the tag word, as before.
+    html = re.sub(r'href="/browse/tag/([^"]+)"',
+                  lambda m: 'href="topics.html?tag=%s"' % m.group(1) if m.group(1) in learning.TOPIC_LABELS
+                  else 'href="index.html?q=%s"' % m.group(1), html)
+    html = html.replace('href="/browse"', 'href="topics.html"')
 
     # Flashcard pages are generated statically at the site root
     html = re.sub(r'href="/flashcards/(\d+)"', r'href="flashcard-\1.html"', html)
@@ -389,16 +454,10 @@ def _postprocess_for_static(html: str) -> str:
     html = re.sub(r'href="/lessons/(\d+)"', r'href="lesson-\1.html"', html)
     html = html.replace('href="/lessons"', 'href="lessons.html"')
 
-    # No static entry pages exist — drop the card-back "View full entry" link
-    html = re.sub(
-        r'<a href="/entry/[^"]*" class="fc-back-link">[^<]*</a>',
-        "", html)
-
-    # Other entry links (e.g. lesson vocab tables) become client-side searches
-    # on the displayed spelling
-    html = re.sub(
-        r'<a href="/entry/[^"]*"([^>]*)>([^<]+)</a>',
-        r'<a href="index.html?q=\2"\1>\2</a>', html)
+    # A link to an entry page opens that one entry on the home page (search.js, ?id=)
+    from urllib.parse import quote
+    html = re.sub(r'href="/entry/([^"]*)"',
+                  lambda m: 'href="index.html?id=%s"' % quote(m.group(1), safe=""), html)
 
     # Any remaining Flask-route link (entry pages, flashcards, browse) has no
     # static equivalent yet — fall back to the home page rather than a 404
@@ -457,6 +516,12 @@ def generate_static_pages(db_path: str, output_dir: Path) -> dict:
         ("index.html", "index.html", {}),
         ("about.html", "about.html", {}),
         ("guide.html", "guide.html", {}),
+        # the learning pages; what they show is read in the browser from data/*.json
+        ("learn.html", "learn.html", {}),
+        ("words.html", "words.html", {}),
+        ("verbs.html", "verbs.html", {}),
+        ("practice.html", "practice.html", {}),
+        ("topics.html", "topics.html", {"topics": learning.topics_data(db.conn)}),
     ]
 
     count = 0
@@ -489,7 +554,8 @@ def generate_static_pages(db_path: str, output_dir: Path) -> dict:
 
             count += 1
         except Exception as e:
-            print(f"  [!]  Skipped {template_name}: {e}")
+            # a page that cannot be built is an error, not something to pass over: the navigation links to it
+            raise RuntimeError(f"{template_name}: {e}") from e
 
     print(f"[OK] Generated {count} static pages")
     db.close()
@@ -763,10 +829,12 @@ def main():
     results = {}
     try:
         results["data"] = export_dictionary_data(str(db_path), output_dir)
+        results["learning"] = export_learning_data(str(db_path), output_dir)
         # Skip individual entry page generation - use client-side JS instead
         # results["entries"] = generate_entry_pages(str(db_path), output_dir)
         # results["browse"] = generate_browse_pages(str(db_path), output_dir)
         results["static"] = copy_static_assets(output_dir)
+        results["printables"] = copy_printables(output_dir)
         results["pages"] = generate_static_pages(str(db_path), output_dir)
         results["flashcards"] = generate_flashcard_pages(str(db_path), output_dir)
         results["lessons"] = generate_lesson_pages(str(db_path), output_dir)
@@ -779,6 +847,8 @@ def main():
     # Summary
     print(f"\n[*] Build complete!")
     print(f"  Dictionary data: {results['data']['entries']} entries exported")
+    print(f"  Learning data: {results['learning']['wordbuilding']} word derivations, "
+          f"{results['learning']['verb_forms']} verb forms, {results['learning']['practice_words']} practice words")
     print(f"  Static pages: {results['pages']['pages']}")
     print(f"  Flashcard pages: {results['flashcards']['weeks']} weeks ({results['flashcards']['cards']} cards)")
     print(f"  Blue Book lessons: {results['lessons']['lessons']} pages")

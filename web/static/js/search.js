@@ -8,6 +8,13 @@
  * numbered verb forms, the other forms he gives, the stems listed under a
  * bound stem, his analysis of the word and the forms he cites from related
  * languages. Nothing shown here is computed; it is all stored text.
+ *
+ * Two more openings help a learner read the entry (helpers in skiri.js):
+ * "Say it, syllable by syllable" cuts the printed phonetic form at its
+ * syllable dots, and "How the word is built" shows the pieces of the printed
+ * derivation, cut at Parks's plus signs. Both arrange what is printed.
+ *
+ * index.html?id=<entry id> shows one entry, opened; other pages link to it.
  */
 
 // Where a visitor sends a correction: a new issue in the project's repository.
@@ -100,7 +107,32 @@ function textbookLine(entry) {
   return `<p class="result-usage">${printed ? `As the textbook prints it: ${printed}.` : ''}${same}</p>`;
 }
 
-function moreOfEntry(entry) {
+// "Say it, syllable by syllable": the printed phonetic form cut at its dots, each symbol with a hint.
+function sayItBlock(entry, open) {
+  if (typeof Skiri === 'undefined' || !entry.phonetic_form) return '';
+  const body = Skiri.soundItOut(entry.phonetic_form, entry.simplified_pronunciation);
+  if (!body) return '';
+  return `<details class="result-more result-say"${open ? ' open' : ''}><summary>Say it, syllable by syllable</summary>${body}` +
+    '<p class="result-usage"><a href="guide.html">All the sounds, with examples</a></p></details>';
+}
+
+// "How the word is built": the pieces of Parks's derivation and his literal translation.
+function builtBlock(entry, open) {
+  if (typeof Skiri === 'undefined' || !entry.build) return '';
+  const body = Skiri.buildBlock(entry.build);
+  if (!body) return '';
+  return `<details class="result-more result-built"${open ? ' open' : ''}><summary>How the word is built</summary>${body}</details>`;
+}
+
+// The topics an entry is filed under (a rough sorting by English keywords), as links to the topic lists.
+function topicLine(entry) {
+  const tags = (entry.tags || []).filter(t => t !== 'ceremony');
+  if (!tags.length) return '';
+  return '<p class="result-topics">' + tags.map(t =>
+    `<a class="cat-tag" href="topics.html?tag=${encodeURIComponent(t)}">${esc(t)}</a>`).join(' ') + '</p>';
+}
+
+function moreOfEntry(entry, open) {
   const parts = [];
 
   const examples = entry.examples || [];
@@ -154,10 +186,10 @@ function moreOfEntry(entry) {
   if (!parts.length) {
     return '';
   }
-  return `<details class="result-more"><summary>More from this entry</summary>${parts.join('')}</details>`;
+  return `<details class="result-more"${open ? ' open' : ''}><summary>More from this entry</summary>${parts.join('')}</details>`;
 }
 
-function renderSearchResults(results, total) {
+function renderSearchResults(results, total, open) {
   const container = document.getElementById('search-results');
   if (!container) return;
 
@@ -201,8 +233,11 @@ function renderSearchResults(results, total) {
       ${textbookLine(entry)}
       ${entry.simplified_pronunciation ? `<p class="result-pronunciation">${esc(entry.simplified_pronunciation)}</p>` : ''}
       ${entry.phonetic_form ? `<p class="result-ipa" lang="x-paw">${esc(entry.phonetic_form)}</p>` : ''}
-      ${moreOfEntry(entry)}
-      <p class="result-citation">${citation ? citation + ' &middot; ' : ''}<a href="${esc(correctionLink(entry))}" target="_blank" rel="noopener">Send a correction</a></p>
+      ${sayItBlock(entry, open)}
+      ${builtBlock(entry, open)}
+      ${moreOfEntry(entry, open)}
+      ${topicLine(entry)}
+      <p class="result-citation">${citation ? citation + ' &middot; ' : ''}<a href="index.html?id=${encodeURIComponent(entry.entry_id)}">Link to this entry</a> &middot; <a href="${esc(correctionLink(entry))}" target="_blank" rel="noopener">Send a correction</a></p>
     </article>`;
   }
   html += '</div>';
@@ -211,6 +246,14 @@ function renderSearchResults(results, total) {
 
 function showResults(results, limit) {
   renderSearchResults(results.slice(0, limit), results.length);
+}
+
+// One entry by its id, with everything opened (index.html?id=...).
+function showEntry(entryId) {
+  const entry = (dictionaryData || []).find(e => e.entry_id === entryId);
+  if (!entry) return false;
+  renderSearchResults([entry], 1, true);
+  return true;
 }
 
 function handleSearchSubmit(event) {
@@ -246,7 +289,11 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Run search from ?q= URL parameter (quick-word chips, shared links)
   const params = new URLSearchParams(window.location.search);
   const urlQuery = (params.get('q') || '').trim();
-  if (urlQuery) {
+  const urlId = (params.get('id') || '').trim();
+  if (urlId && showEntry(urlId)) {
+    const shown = document.getElementById('search-results');
+    if (shown && shown.scrollIntoView) shown.scrollIntoView({ block: 'start' });
+  } else if (urlQuery) {
     const input = document.querySelector('input[name="q"]');
     if (input) input.value = urlQuery;
     showResults(performSearch(urlQuery, params.get('lang') || 'auto'), MAX_SHOWN);

@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+{% set active_page = 'words' %}
+
+{% block title %}How words are built{% endblock %}
+
+{% block content %}
+{# Word building, from what the dictionary prints: Parks's tables 4 and 5 and the derivation in angled
+   brackets of each entry, cut at its plus signs (web/learning.py). The page arranges; it adds no analysis.
+   The project's own word-construction analysis (curriculum/roots_v2) is not shown here: it waits for review. #}
+<article class="learn-page">
+  <p class="learn-kicker">Word building</p>
+  <h2>How Skiri words are built</h2>
+  <p class="learn-lead">
+    Many Skiri words are made of smaller pieces, and the dictionary prints the pieces
+    for most of its words. Learn to read them and one known piece opens up
+    dozens of words.
+  </p>
+
+  <div class="learn-jump">
+    <a href="#noun-pieces">Noun endings</a>
+    <a href="#reading">Reading a derivation</a>
+    <a href="#explorer">Words that share a piece</a>
+    <a href="#labels">The labels</a>
+  </div>
+
+  <section id="noun-pieces">
+    <h3>1. Start with five pieces that make nouns</h3>
+    <p>
+      Parks lists five pieces that are added to make nouns, each with a word taken apart.
+      The first, <span lang="x-paw" class="result-skiri">-uʔ</span>, ends hundreds of nouns:
+      it marks a noun that stands on its own, and it has no translation.
+    </p>
+    <div id="wb-table5" class="affix-grid" aria-live="polite"><p class="loading-note">Loading the dictionary's tables…</p></div>
+    <p class="source-note">Parks and Pratt, <em>A Dictionary of Skiri Pawnee</em>, Table 5, p. 31, as printed.</p>
+
+    <details class="learn-details">
+      <summary>Endings for place and means (Table 4)</summary>
+      <div id="wb-table4" class="guide-table-wrap"></div>
+      <p class="source-note">Table 4, p. 30, as printed. INST is “with, by means of”; LOC is “in, at, on”.</p>
+    </details>
+  </section>
+
+  <section id="reading">
+    <h3>2. Read what the dictionary prints</h3>
+    <p>
+      After the meaning of a word the dictionary gives its derivation in angled brackets:
+      first the pieces, then a literal translation. Here are six words as it prints them.
+      Choose any piece to see the other words that have it.
+    </p>
+    <div id="wb-examples" class="example-grid"></div>
+    <ul class="notation-list">
+      <li><span class="notation-sign">+</span> <span>A plus sign stands between the main pieces of the word.</span></li>
+      <li><span class="notation-sign">. -</span> <span>A dot or a hyphen inside a piece joins the smaller parts of one stem.</span></li>
+      <li><span class="notation-sign" lang="x-paw">asaa-</span> <span>A dash at the end marks a piece that never stands alone as a word.</span></li>
+      <li><span class="notation-sign" lang="x-paw">(ut...)</span> <span>A note like this after a verb stem names the small piece (the <em>preverb</em>:
+        <span lang="x-paw">ut</span>, <span lang="x-paw">ir</span> or <span lang="x-paw">uur</span>) that the stem needs. In a word it comes before the stem.</span></li>
+      <li><span class="notation-sign">NOM</span> <span>Capital letters are grammatical labels. They are <a href="#labels">listed below</a>.</span></li>
+      <li><span class="notation-sign">, …</span> <span>The literal translation follows the comma. Its words are not always in the order of the pieces.</span></li>
+    </ul>
+  </section>
+
+  <section id="explorer">
+    <h3>3. Find the words that share a piece</h3>
+    <p>
+      Type a piece, or an English word, or choose one of the pieces the dictionary prints most often.
+      Reading a list of words side by side is how the meaning of a piece becomes clear.
+    </p>
+    <form id="wb-form" class="wb-form" onsubmit="return false">
+      <input type="search" id="wb-q" autocomplete="off" spellcheck="false"
+             placeholder="A piece (kaa, kic, uʔ) or an English word (water, inside)"
+             aria-label="A piece or an English word">
+      <div class="key-row" aria-label="Letters that are not on a keyboard">
+        <button type="button" class="key-btn" data-insert="ʔ" title="glottal stop">ʔ</button>
+        <button type="button" class="key-btn" data-insert="Ø" title="zero stem">Ø</button>
+      </div>
+    </form>
+    <div id="wb-common" class="piece-cloud" aria-label="The pieces printed most often"></div>
+    <div id="wb-result" aria-live="polite"></div>
+  </section>
+
+  <section id="labels">
+    <h3>4. The labels in capital letters</h3>
+    <p>These are Parks's own abbreviations, with the forms he lists for each.</p>
+    <div class="guide-table-wrap">
+      <table class="guide-table" id="wb-labels">
+        <thead><tr><th>Label</th><th>Stands for</th><th>Forms Parks lists</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="honest-note">
+    <h3>What this page is, and is not</h3>
+    <p>
+      Every piece and every literal translation here is printed in the dictionary; the page only cuts a
+      derivation at its plus signs and lists together the words in which the same piece is printed.
+      It does not say which word of a translation belongs to which piece. Where a piece is spelled like
+      a dictionary entry, the entries are listed, but several entries often share a spelling and the
+      dictionary does not say which one a piece is.
+    </p>
+    <p>
+      Words to do with ceremony are left out until the Pawnee community has reviewed them.
+      No speaker of Pawnee has reviewed this page.
+    </p>
+  </section>
+</article>
+{% endblock %}
+
+{% block scripts %}
+<script src="/static/js/words.js"></script>
+{% endblock %}

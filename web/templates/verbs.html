@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+{% set active_page = 'verbs' %}
+
+{% block title %}How verbs change{% endblock %}
+
+{% block content %}
+{# Verbs, from what the dictionary prints: the five numbered forms of an entry (chapter 5), Appendix 1
+   (seven verbs in full), Appendix 2, and the tables of chapter 4 (web/learning.py, verbs_data).
+   No form on this page is made by a rule. The conjugation engine was withdrawn on 2026-11-14. #}
+<article class="learn-page">
+  <p class="learn-kicker">Verbs</p>
+  <h2>How verbs change</h2>
+  <p class="learn-lead">
+    A Skiri verb is built around a stem. Pieces before and after the stem say who does it,
+    how many, and how the statement is meant, so one word often does the work of an English sentence.
+    The dictionary shows this in two places: five forms under every verb, and seven verbs written out in full.
+  </p>
+
+  <div class="learn-jump">
+    <a href="#five-forms">The five forms</a>
+    <a href="#positions">The parts of a verb</a>
+    <a href="#paradigms">Seven verbs in full</a>
+    <a href="#stems-change">Stems that change</a>
+    <a href="#tables">Parks's tables</a>
+  </div>
+
+  <section id="five-forms">
+    <h3>1. The five forms under every verb</h3>
+    <p>
+      The dictionary lists a verb under its <strong>stem</strong>. A stem is never a word by itself:
+      nobody says <span lang="x-paw" class="result-skiri">at</span> for “go”. So under each verb the
+      dictionary prints up to five whole words that people do say. Learn what the five are and you can
+      read any verb entry. Choose a verb:
+    </p>
+    <div id="vb-form-verbs" class="choice-row" role="group" aria-label="Verb"></div>
+    <div id="vb-forms" aria-live="polite"><p class="loading-note">Loading the verbs…</p></div>
+    <p class="source-note">
+      The five forms are defined in the dictionary, p. 56. Not every verb has all five:
+      “Certain verb classes do not allow some of these forms and thus are lacking here” (p. 57).
+      The plain-English lines are this site's, and only rough.
+    </p>
+  </section>
+
+  <section id="positions">
+    <h3>2. The parts of a verb</h3>
+    <p>Parks describes the whole verb as five positions, always in this order (his Table 6):</p>
+    <div id="vb-positions" class="position-row"></div>
+    <p>
+      The stem is the part the dictionary lists. Two kinds of piece before it matter most to a beginner:
+      the <strong>mode</strong> prefix, which says how the statement is meant, and the <strong>person</strong>
+      prefix, which says who does it.
+    </p>
+    <div class="two-col">
+      <div>
+        <h4>Who does it (Table 9)</h4>
+        <div id="vb-table9" class="guide-table-wrap"></div>
+        <p class="source-note">Agent: the one who does it. Patient: the one it is done to. Table 9, p. 35, as printed.</p>
+      </div>
+      <div>
+        <h4>How it is meant: the modes (Table 8)</h4>
+        <div id="vb-modes-list"></div>
+        <p class="source-note">Table 8, p. 34, as printed. “1/2.A” is the form used when <em>I</em> or <em>you</em> does it; “3.A” when <em>he, she</em> or <em>it</em> does.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="paradigms">
+    <h3>3. Seven verbs in full</h3>
+    <p>
+      In an appendix Parks writes out seven verbs in ten modes and eleven persons: 770 words.
+      Read down a column to see how one verb changes with the person. Read across to see how
+      seven different verbs take the same pieces. Then hide the forms and test yourself.
+    </p>
+    <div class="vb-controls">
+      <div class="choice-row" role="group" aria-label="What to show">
+        <button type="button" class="choice-btn" data-view="one" aria-pressed="true">One verb, one mode</button>
+        <button type="button" class="choice-btn" data-view="verbs" aria-pressed="false">Compare the seven verbs</button>
+        <button type="button" class="choice-btn" data-view="modes" aria-pressed="false">Compare the ten modes</button>
+      </div>
+      <div class="vb-selects">
+        <label id="vb-verb-label">Verb
+          <select id="vb-verb"></select>
+        </label>
+        <label id="vb-mode-label">Mode
+          <select id="vb-mode"></select>
+        </label>
+        <button type="button" class="outline" id="vb-test" aria-pressed="false">Hide the forms: test yourself</button>
+      </div>
+    </div>
+    <div id="vb-mode-card" aria-live="polite"></div>
+    <div id="vb-table" class="guide-table-wrap paradigm-wrap" aria-live="polite"></div>
+    <p class="source-note">
+      Parks and Pratt, <em>A Dictionary of Skiri Pawnee</em>, Appendix 1, “Illustrative Skiri Verb Conjugations”,
+      as printed; the forms were read again from the page in November 2026. All ten modes are in the
+      perfective aspect. The names of the persons are this site's.
+      <a href="printables/paradigm_tables.pdf">Print all seven verbs (PDF)</a>.
+    </p>
+    <p><a href="/practice?mode=verbs" role="button" class="outline">Practise these forms</a></p>
+  </section>
+
+  <section id="stems-change">
+    <h3>4. Stems that change with the number of people</h3>
+    <p>
+      Nine common verbs use a different stem when two people, or more than two, do the thing.
+      “Go” is <span lang="x-paw" class="result-skiri">at</span> for one person and
+      <span lang="x-paw" class="result-skiri">war</span> for two.
+    </p>
+    <div id="vb-roots" class="guide-table-wrap"></div>
+    <p class="source-note">Appendix 2, as printed. An empty cell is empty on the page.</p>
+  </section>
+
+  <section id="tables">
+    <h3>5. Parks's tables, for looking things up</h3>
+    <p>These are reference tables from the dictionary's grammar chapter, as printed. They are dense; come back to them as you meet the pieces.</p>
+    <div id="vb-reference"></div>
+    <p class="source-note">
+      Chapter 4, “Grammatical Overview”, pp. 33-51. Table 7 (the order of the inner prefixes) is not shown:
+      the project's two readings of that page differ, and it is left for a person with the book.
+    </p>
+  </section>
+
+  <section class="honest-note">
+    <h3>What this page is, and is not</h3>
+    <p>
+      Every Skiri form here is printed in the dictionary. This site does not conjugate verbs: a program
+      that tried was right for too few forms and was taken out. To find a form of another verb, look at
+      its five forms in the dictionary and at the seven verbs here, and ask a speaker or a teacher.
+      No speaker of Pawnee has reviewed this page.
+    </p>
+  </section>
+</article>
+{% endblock %}
+
+{% block scripts %}
+<script src="/static/js/verbs.js"></script>
+{% endblock %}

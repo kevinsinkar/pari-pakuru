@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+{% set active_page = 'learn' %}
+
+{% block title %}Start here{% endblock %}
+
+{% block content %}
+{# The way in for a new learner: six steps, each a page of the site, and the other ways to study.
+   The ticks are kept in the visitor's own browser (localStorage "learn-steps"). #}
+<article class="learn-page">
+  <p class="learn-kicker">Start here</p>
+  <h2>Learning Skiri Pawnee with this site</h2>
+  <p class="learn-lead">
+    Six steps, in an order that works for most beginners. Each one is a page of this site.
+    Tick a step when you have done it; the ticks stay in this browser.
+  </p>
+
+  <ol class="path" id="learn-path">
+    <li class="path-step" data-step="sounds">
+      <label class="path-tick"><input type="checkbox" aria-label="Done: the sounds"><span></span></label>
+      <div class="path-body">
+        <h3><a href="/guide">1. Learn the sounds</a></h3>
+        <p>
+          Skiri has nine consonants and three vowels, each short or long. Most are close to English.
+          Four things are new: the letter <span lang="x-paw">c</span>, the tapped <span lang="x-paw">r</span>,
+          the glottal stop <span lang="x-paw">ʔ</span>, and holding a long vowel twice as long.
+        </p>
+        <p class="path-do"><strong>Do:</strong> read the page once, then take ten words through “Sound it out”.</p>
+      </div>
+    </li>
+    <li class="path-step" data-step="words">
+      <label class="path-tick"><input type="checkbox" aria-label="Done: first words"><span></span></label>
+      <div class="path-body">
+        <h3><a href="/flashcards">2. Learn your first words</a></h3>
+        <p>
+          The flashcards are sets of 10 to 20 everyday words. The first three weeks are words from the
+          textbook <em>Pari Pakuru'</em>; the later weeks go by topic, from family to places.
+        </p>
+        <p class="path-do"><strong>Do:</strong> one set a week. Say every word aloud before you turn the card.
+          <a href="printables/word_list.pdf">Print the word list (PDF)</a>.</p>
+      </div>
+    </li>
+    <li class="path-step" data-step="building">
+      <label class="path-tick"><input type="checkbox" aria-label="Done: how words are built"><span></span></label>
+      <div class="path-body">
+        <h3><a href="/words">3. See how words are built</a></h3>
+        <p>
+          <span lang="x-paw">iksuʔ</span> “hand” is <span lang="x-paw">iks</span> + <span lang="x-paw">uʔ</span>.
+          <span lang="x-paw">asaaki</span> “dog” is <span lang="x-paw">asaa</span> + <span lang="x-paw">kis</span>.
+          The dictionary prints the pieces of most words. Once you can read them, a new word is often
+          two pieces you already know.
+        </p>
+        <p class="path-do"><strong>Do:</strong> look up the pieces of five words you have learned, and read the other words that share them.</p>
+      </div>
+    </li>
+    <li class="path-step" data-step="verbs">
+      <label class="path-tick"><input type="checkbox" aria-label="Done: verbs"><span></span></label>
+      <div class="path-body">
+        <h3><a href="/verbs">4. Meet the verb</a></h3>
+        <p>
+          A Skiri verb changes with who does the thing and how it is meant, and much of the change is at
+          the front of the word. The dictionary gives five forms of every verb and writes seven verbs out in full.
+        </p>
+        <p class="path-do"><strong>Do:</strong> learn “to go” in the indicative: eleven words. Then compare it with “to come”.</p>
+      </div>
+    </li>
+    <li class="path-step" data-step="lessons">
+      <label class="path-tick"><input type="checkbox" aria-label="Done: lessons"><span></span></label>
+      <div class="path-body">
+        <h3><a href="/lessons">5. Work through the lessons</a></h3>
+        <p>
+          The twenty lessons of <em>Pari Pakuru'</em>, the 1979 textbook of the Pawnee Cultural Retention
+          Committee: dialogues, word lists, notes on grammar, and exercises after each lesson.
+        </p>
+        <p class="path-do"><strong>Do:</strong> one lesson at a time. Read the dialogue aloud, both parts.</p>
+      </div>
+    </li>
+    <li class="path-step" data-step="practice">
+      <label class="path-tick"><input type="checkbox" aria-label="Done: practice"><span></span></label>
+      <div class="path-body">
+        <h3><a href="/practice">6. Practise a little every day</a></h3>
+        <p>
+          Six short games: choose the meaning, choose the word, match pairs, type the word, verb forms and
+          word pieces. The words you miss are kept in a list, so you can practise them again.
+        </p>
+        <p class="path-do"><strong>Do:</strong> one round a day, ten questions. It takes about three minutes.</p>
+      </div>
+    </li>
+  </ol>
+
+  <section>
+    <h3>Other ways in</h3>
+    <div class="ways-grid">
+      <a class="way-card" href="/">
+        <span class="way-name">Look a word up</span>
+        <span class="way-text">Search the dictionary in English or in Skiri. Each result opens to its syllables, its pieces and its examples.</span>
+      </a>
+      <a class="way-card" href="/topics">
+        <span class="way-name">Go by topic</span>
+        <span class="way-text">Animals, food, family, the sky: the words for one part of life at a time.</span>
+      </a>
+      <a class="way-card" href="printables/word_list.pdf">
+        <span class="way-name">Study on paper</span>
+        <span class="way-text">The flashcard words as a printed list, week by week.</span>
+      </a>
+      <a class="way-card" href="printables/paradigm_tables.pdf">
+        <span class="way-name">Seven verbs on paper</span>
+        <span class="way-text">The verbs the dictionary writes out in full, as tables to print.</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="honest-note">
+    <h3>Before you start</h3>
+    <p>
+      This site was put together from two printed books with computer tools.
+      <strong>No speaker of Pawnee and no one from the Pawnee Nation has reviewed it yet.</strong>
+      It can show you how a word is written and how the books say it is built; it cannot let you hear it.
+      Learn from speakers and teachers wherever you can, and trust them before this site.
+      <a href="/about">More about the site and its sources</a>.
+    </p>
+  </section>
+</article>
+{% endblock %}
+
+{% block scripts %}
+<script>
+(function () {
+  var KEY = 'learn-steps';
+  var done = {};
+  try { done = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { done = {}; }
+  document.querySelectorAll('.path-step').forEach(function (step) {
+    var box = step.querySelector('input[type="checkbox"]');
+    var name = step.getAttribute('data-step');
+    box.checked = Boolean(done[name]);
+    step.classList.toggle('path-step--done', box.checked);
+    box.addEventListener('change', function () {
+      done[name] = box.checked;
+      step.classList.toggle('path-step--done', box.checked);
+      try { localStorage.setItem(KEY, JSON.stringify(done)); } catch (e) { /* not kept */ }
+    });
+  });
+})();
+</script>
+{% endblock %}

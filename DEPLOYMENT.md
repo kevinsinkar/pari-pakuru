@@ -11,7 +11,7 @@ PythonAnywhere until that was retired on 2026-11-13; see
 | | Static site (published) | Flask app (local only) |
 |---|---|---|
 | Where | GitHub Pages, from [docs/](docs/) | `http://localhost:5000` on your machine |
-| What it offers | Search, Blue Book lessons, weekly flashcards, pronunciation guide | Everything: entry pages, sentence builder, spaced-repetition study, feedback, dashboard |
+| What it offers | Search, a "Start here" path, pages on sounds, word building and verbs, practice games, words by topic, Blue Book lessons, weekly flashcards | Everything: entry pages, sentence builder, spaced-repetition study, feedback, dashboard |
 | Needs a server | No | No; you start it when you want it |
 | Updated by | Rebuilding `docs/` on your machine and pushing | Nothing to do: it reads the database directly |
 
@@ -21,10 +21,12 @@ PythonAnywhere until that was retired on 2026-11-13; see
 
 1. `scripts/build_static_site.py` reads `skiri_pawnee.db` and writes the site into `docs/`:
    - `data/dictionary.json`: all 4,337 entries, one to a line, with everything the dictionary prints for each: headword and preverb, learner spelling, IPA, respelling, class, page of the book, senses, examples, the numbered verb forms, the other forms, the etymology, the forms cited from related languages, the stems listed under a bound stem. The 143 entries tagged `ceremony` carry senses and examples only (see "Before you publish");
-   - `index.html`, `about.html`, `guide.html`;
+   - `index.html`, `about.html`, and the learning pages `learn.html` ("Start here"), `guide.html` ("Sounds"), `words.html`, `verbs.html`, `practice.html`, `topics.html`;
+   - `data/wordbuilding.json`, `data/verbs.json`, `data/practice.json`, which those pages read in the browser: the derivation the dictionary prints for an entry, cut at its plus signs (entries tagged `ceremony` left out); Appendix 1 and 2 and the tables of chapter 4; the flashcard words. All of it is copied from the database and `extracted_data/` by `web/learning.py`; no form is made;
+   - `printables/word_list.pdf` and `printables/paradigm_tables.pdf`, copied from `curriculum/printables/` (build them first with `scripts/build_printables.py` when the data has changed);
    - `flashcards.html` and one `flashcard-N.html` for each weekly set in the frozen `curriculum/flashcard_sets.json` that is not held for review (23 of 24);
    - `lessons.html` and `lesson-1.html` to `lesson-20.html`;
-   - `static/` (CSS and `search.js`).
+   - `static/` (CSS, `search.js`, and the scripts of the learning pages).
 2. Search runs in the browser: `search.js` loads `dictionary.json` once and searches it with Fuse.js, in headwords, senses, example translations and verb forms. There are no per-entry pages; a search result shows the entry, with the rest of it behind "More from this entry", and a "Send a correction" link that opens a GitHub issue with the entry filled in.
 3. `.github/workflows/static.yml` runs on every push to `main`. It uploads `docs/` as it is and deploys it. **It does not build anything**, because the database is not in git.
 
@@ -35,7 +37,7 @@ So the site changes only when you rebuild `docs/` locally and push the result.
 ```bash
 .venv/Scripts/python scripts/build_static_site.py --dry-run   # show what would be built
 .venv/Scripts/python scripts/build_static_site.py             # write docs/
-node scripts/check_static_site.js                             # runs the search page's code against the new data (needs Node.js)
+node scripts/check_static_site.js                             # runs the pages' code against the new data and checks the learning pages and every link (needs Node.js)
 cd docs && python -m http.server 8000                         # look at it: http://localhost:8000/
 git add docs && git commit -m "Rebuild static site" && git push
 ```

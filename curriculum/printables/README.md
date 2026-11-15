@@ -28,4 +28,7 @@ python scripts/build_printables.py --no-pdf   # the web pages only; they print w
   you)" for the first person dual exclusive). The stored file also has an
   English line for every form; those were written by the extraction, not by
   Parks, and are not printed.
-- Neither document is linked from the public site yet.
+- Both PDFs are linked from the public site since 2026-11-14: the word list
+  from "Start here", the seven verbs from "Start here" and the Verbs page.
+  `scripts/build_static_site.py` copies them to `docs/printables/`, so build
+  them here first when the data has changed.

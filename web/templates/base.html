@@ -22,7 +22,8 @@
   <!-- Fuse.js for client-side search -->
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
 
-  <!-- Client-side search -->
+  <!-- Shared helpers of the learning pages (syllables, word pieces), then the client-side search -->
+  <script src="/static/js/skiri.js"></script>
   <script src="/static/js/search.js"></script>
 </head>
 <body>
@@ -46,7 +47,7 @@
             <span>
               <strong class="font-serif" style="font-size:1.2rem; letter-spacing:-0.3px;">P&#226;ri Pak&#251;ru'</strong>
               <br>
-              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Skiri Pawnee Dictionary</small>
+              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Learn Skiri Pawnee</small>
             </span>
           </a>
         </li>
@@ -62,14 +63,22 @@
       </button>
 
       <ul class="nav-links">
+        {# The learner's order: the way in, the dictionary, then sounds, words, verbs, lessons, practice.
+           The links to /search, /browse, /study, /sentence-builder and /dashboard exist only in the local
+           app; scripts/build_static_site.py takes them out of the published pages. #}
+        <li><a href="/learn" {% if active_page == 'learn' %}aria-current="page"{% endif %}>Start here</a></li>
         <li><a href="/" {% if active_page == 'home' %}aria-current="page"{% endif %}>Dictionary</a></li>
         <li><a href="/search" {% if active_page == 'search' %}aria-current="page"{% endif %}>Search</a></li>
         <li><a href="/browse" {% if active_page == 'browse' %}aria-current="page"{% endif %}>Browse</a></li>
+        <li><a href="/guide" {% if active_page == 'guide' %}aria-current="page"{% endif %}>Sounds</a></li>
+        <li><a href="/words" {% if active_page == 'words' %}aria-current="page"{% endif %}>Word building</a></li>
+        <li><a href="/verbs" {% if active_page == 'verbs' %}aria-current="page"{% endif %}>Verbs</a></li>
         <li><a href="/lessons" {% if active_page == 'lessons' %}aria-current="page"{% endif %}>Lessons</a></li>
-        <li><a href="/study" {% if active_page == 'study' %}aria-current="page"{% endif %}>Study</a></li>
         <li><a href="/flashcards" {% if active_page == 'flashcards' %}aria-current="page"{% endif %}>Flashcards</a></li>
+        <li><a href="/practice" {% if active_page == 'practice' %}aria-current="page"{% endif %}>Practice</a></li>
+        <li><a href="/study" {% if active_page == 'study' %}aria-current="page"{% endif %}>Study</a></li>
         <li><a href="/sentence-builder" {% if active_page == 'sentences' %}aria-current="page"{% endif %}>Sentences</a></li>
-        <li><a href="/guide" {% if active_page == 'guide' %}aria-current="page"{% endif %}>Syllable Guide</a></li>
+        <li><a href="/topics" {% if active_page == 'topics' %}aria-current="page"{% endif %}>Topics</a></li>
         <li><a href="/dashboard" {% if active_page == 'dashboard' %}aria-current="page"{% endif %}>Dashboard</a></li>
         <li><a href="/about" {% if active_page == 'about' %}aria-current="page"{% endif %}>About</a></li>
 

@@ -554,6 +554,60 @@ def syllable_guide():
     return render_template("guide.html")
 
 
+# ---------------------------------------------------------------------------
+# The learning pages: Start here, Word building, Verbs, Practice.
+# The same templates and data as the published site (scripts/build_static_site.py);
+# what they show is in web/learning.py. Nothing here makes a form.
+# ---------------------------------------------------------------------------
+_learning_cache = {}
+
+
+@app.route("/learn")
+def learn():
+    return render_template("learn.html")
+
+
+@app.route("/words")
+def word_building():
+    return render_template("words.html")
+
+
+@app.route("/verbs")
+def verbs_page():
+    return render_template("verbs.html")
+
+
+@app.route("/practice")
+def practice():
+    return render_template("practice.html")
+
+
+@app.route("/topics")
+def topics():
+    # The published site filters its one dictionary file in the browser; here /browse does the same job.
+    return redirect("/browse")
+
+
+@app.route("/data/<name>.json")
+def learning_data(name):
+    """The files the learning pages read: wordbuilding, verbs, practice (built once per run of the app)."""
+    from web import learning
+
+    if name not in ("wordbuilding", "verbs", "practice"):
+        abort(404)
+    if not _learning_cache:
+        _learning_cache.update(learning.data_files(app.config["DATABASE"]))
+    return jsonify(_learning_cache[name])
+
+
+@app.route("/printables/<path:filename>")
+def printables(filename):
+    """The two documents for paper (curriculum/printables/), as the published site links them."""
+    from flask import send_from_directory
+
+    return send_from_directory(os.path.join(PROJECT_ROOT, "curriculum", "printables"), filename)
+
+
 @app.route("/dashboard")
 def dashboard():
     db = get_db()

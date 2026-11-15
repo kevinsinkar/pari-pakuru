@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% set active_page = 'topics' %}
+
+{% block title %}Words by topic{% endblock %}
+
+{% block content %}
+{# Published site only: the lists are filtered in the browser from data/dictionary.json.
+   (The local app has /browse for the same purpose.) "ceremony" is not offered as a topic. #}
+<article class="learn-page">
+  <p class="learn-kicker">Topics</p>
+  <h2>Words by topic</h2>
+  <p class="learn-lead">
+    Learn the words for one part of life at a time. Choose a topic, then narrow it to nouns or verbs,
+    or to a word you type.
+  </p>
+
+  <div class="topic-grid" id="tp-topics">
+    {% for t in topics %}
+    <a class="topic-card" href="?tag={{ t.tag }}" data-tag="{{ t.tag }}" data-label="{{ t.label }}">
+      <span class="topic-name">{{ t.label }}</span>
+      <span class="topic-count">{{ t.count }} words</span>
+    </a>
+    {% endfor %}
+  </div>
+
+  <section id="tp-list-section" hidden>
+    <h3 id="tp-title"></h3>
+    <div class="practice-options">
+      <div class="choice-row" role="group" aria-label="Kind of word">
+        <button type="button" class="choice-btn" data-kind="all" aria-pressed="true">All</button>
+        <button type="button" class="choice-btn" data-kind="noun" aria-pressed="false">Nouns</button>
+        <button type="button" class="choice-btn" data-kind="verb" aria-pressed="false">Verbs</button>
+        <button type="button" class="choice-btn" data-kind="other" aria-pressed="false">Other words</button>
+      </div>
+      <input type="search" id="tp-filter" placeholder="Narrow by an English or Skiri word" aria-label="Narrow the list" autocomplete="off">
+    </div>
+    <p class="result-usage" id="tp-count"></p>
+    <ol class="family-list" id="tp-list" aria-live="polite"></ol>
+    <p><button type="button" class="outline secondary" id="tp-more" hidden>Show more</button></p>
+  </section>
+
+  <section class="honest-note">
+    <h3>About the topics</h3>
+    <p>
+      The dictionary is not sorted by topic. This project sorted its entries by key words in their English
+      meanings, so a list holds some words that do not belong and lacks some that do. Words to do with
+      ceremony are not offered as a topic: they are waiting for review by the Pawnee community.
+    </p>
+  </section>
+</article>
+{% endblock %}
+
+{% block scripts %}
+<script src="/static/js/topics.js"></script>
+{% endblock %}
