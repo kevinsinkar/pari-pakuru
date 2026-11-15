@@ -22,7 +22,8 @@
   <!-- Fuse.js for client-side search -->
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
 
-  <!-- Client-side search -->
+  <!-- Shared helpers of the learning pages (syllables, word pieces), then the client-side search -->
+  <script src="static/js/skiri.js"></script>
   <script src="static/js/search.js"></script>
 </head>
 <body>
@@ -46,7 +47,7 @@
             <span>
               <strong class="font-serif" style="font-size:1.2rem; letter-spacing:-0.3px;">P&#226;ri Pak&#251;ru'</strong>
               <br>
-              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Skiri Pawnee Dictionary</small>
+              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Learn Skiri Pawnee</small>
             </span>
           </a>
         </li>
@@ -62,14 +63,20 @@
       </button>
 
       <ul class="nav-links">
+        
+        <li><a href="learn.html" >Start here</a></li>
         <li><a href="index.html" >Dictionary</a></li>
         
         
+        <li><a href="guide.html" >Sounds</a></li>
+        <li><a href="words.html" >Word building</a></li>
+        <li><a href="verbs.html" >Verbs</a></li>
         <li><a href="lessons.html" aria-current="page">Lessons</a></li>
-        
         <li><a href="flashcards.html" >Flashcards</a></li>
+        <li><a href="practice.html" >Practice</a></li>
         
-        <li><a href="guide.html" >Syllable Guide</a></li>
+        
+        <li><a href="topics.html" >Topics</a></li>
         
         <li><a href="about.html" >About</a></li>
 
@@ -152,7 +159,7 @@
     <td>tomorrow (that day)</td>
     <td>
       
-        <a href="index.html?q=rahesaʔ" lang="x-paw">rahesaʔ</a>
+        <a href="index.html?id=BB-rahesa-0051" lang="x-paw">rahesaʔ</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -189,12 +196,11 @@
     <td>I will go</td>
     <td>
       
-        <a href="index.html?q=ta" lang="x-paw">ta</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -202,12 +208,11 @@
     <td>I will come back</td>
     <td>
       
-        <a href="index.html?q=is" lang="x-paw">is</a>
-        <span class="badge badge-class">VT</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>ihs <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–ɪs–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -215,12 +220,11 @@
     <td>I will do it</td>
     <td>
       
-        <a href="index.html?q=ta" lang="x-paw">ta</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -228,12 +232,11 @@
     <td>I will work (I will be working)</td>
     <td>
       
-        <a href="index.html?q=ta" lang="x-paw">ta</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -241,12 +244,11 @@
     <td>I will quit</td>
     <td>
       
-        <a href="index.html?q=ta" lang="x-paw">ta</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -266,7 +268,7 @@
     <td>January</td>
     <td>
       
-        <a href="index.html?q=rikatihâhtîrara'" lang="x-paw">rikatihâhtîrara'</a>
+        <a href="index.html?id=SK-rikatihaahtiiraraq-p491-4161" lang="x-paw">rikatihâhtîrara'</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -279,7 +281,7 @@
     <td>The New Year</td>
     <td>
       
-        <a href="index.html?q=rikatihâhtîrara'" lang="x-paw">rikatihâhtîrara'</a>
+        <a href="index.html?id=SK-rikatihaahtiiraraq-p491-4161" lang="x-paw">rikatihâhtîrara'</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -292,7 +294,7 @@
     <td>February</td>
     <td>
       
-        <a href="index.html?q=piraparuʔ" lang="x-paw">piraparuʔ</a>
+        <a href="index.html?id=BB-piraparu-0044" lang="x-paw">piraparuʔ</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -305,7 +307,7 @@
     <td>Dreary Month</td>
     <td>
       
-        <a href="index.html?q=piraparuʔ" lang="x-paw">piraparuʔ</a>
+        <a href="index.html?id=BB-piraparu-0044" lang="x-paw">piraparuʔ</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -318,7 +320,7 @@
     <td>March</td>
     <td>
       
-        <a href="index.html?q=pahutawiuʔ" lang="x-paw">pahutawiuʔ</a>
+        <a href="index.html?id=BB-pahutawiu-0031" lang="x-paw">pahutawiuʔ</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -331,7 +333,7 @@
     <td>Windy Month</td>
     <td>
       
-        <a href="index.html?q=pahutawiuʔ" lang="x-paw">pahutawiuʔ</a>
+        <a href="index.html?id=BB-pahutawiu-0031" lang="x-paw">pahutawiuʔ</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -392,7 +394,7 @@
     <td>June</td>
     <td>
       
-        <a href="index.html?q=pariat" lang="x-paw">pariat</a>
+        <a href="index.html?id=BB-pariat-0038" lang="x-paw">pariat</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -405,7 +407,7 @@
     <td>Month of Summer</td>
     <td>
       
-        <a href="index.html?q=pariat" lang="x-paw">pariat</a>
+        <a href="index.html?id=BB-pariat-0038" lang="x-paw">pariat</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -418,7 +420,7 @@
     <td>July</td>
     <td>
       
-        <a href="index.html?q=rikatiharrikarikat" lang="x-paw">rikatiharrikarikat</a>
+        <a href="index.html?id=BB-rikatiharrikarikat-0071" lang="x-paw">rikatiharrikarikat</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -431,7 +433,7 @@
     <td>Half Year</td>
     <td>
       
-        <a href="index.html?q=rikatiharrikarikat" lang="x-paw">rikatiharrikarikat</a>
+        <a href="index.html?id=BB-rikatiharrikarikat-0071" lang="x-paw">rikatiharrikarikat</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -444,7 +446,7 @@
     <td>August</td>
     <td>
       
-        <a href="index.html?q=ckirihkapira" lang="x-paw">ckirihkapira</a>
+        <a href="index.html?id=BB-ckirihkapira-0001" lang="x-paw">ckirihkapira</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -457,7 +459,7 @@
     <td>Mad Dog Month</td>
     <td>
       
-        <a href="index.html?q=ckirihkapira" lang="x-paw">ckirihkapira</a>
+        <a href="index.html?id=BB-ckirihkapira-0001" lang="x-paw">ckirihkapira</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -470,7 +472,7 @@
     <td>September</td>
     <td>
       
-        <a href="index.html?q=Pîra'u' Rarahkâta'îspû" lang="x-paw">Pîra'u' Rarahkâta'îspû</a>
+        <a href="index.html?id=SK-piiraquq_rarahkaataqiispuu-p460-4085" lang="x-paw">Pîra'u' Rarahkâta'îspû</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -483,7 +485,7 @@
     <td>When the kids go back to school</td>
     <td>
       
-        <a href="index.html?q=Pîra'u' Rarahkâta'îspû" lang="x-paw">Pîra'u' Rarahkâta'îspû</a>
+        <a href="index.html?id=SK-piiraquq_rarahkaataqiispuu-p460-4085" lang="x-paw">Pîra'u' Rarahkâta'îspû</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -496,7 +498,7 @@
     <td>October</td>
     <td>
       
-        <a href="index.html?q=reckuhke" lang="x-paw">reckuhke</a>
+        <a href="index.html?id=BB-reckuhke-0060" lang="x-paw">reckuhke</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -509,7 +511,7 @@
     <td>Fall</td>
     <td>
       
-        <a href="index.html?q=reckuhke" lang="x-paw">reckuhke</a>
+        <a href="index.html?id=BB-reckuhke-0060" lang="x-paw">reckuhke</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -522,7 +524,7 @@
     <td>November</td>
     <td>
       
-        <a href="index.html?q=hakaruʔhkucuʔ" lang="x-paw">hakaruʔhkucuʔ</a>
+        <a href="index.html?id=BB-hakaru-hkucu-0011" lang="x-paw">hakaruʔhkucuʔ</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -535,7 +537,7 @@
     <td>Feast</td>
     <td>
       
-        <a href="index.html?q=hakaruʔhkucuʔ" lang="x-paw">hakaruʔhkucuʔ</a>
+        <a href="index.html?id=BB-hakaru-hkucu-0011" lang="x-paw">hakaruʔhkucuʔ</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -548,7 +550,7 @@
     <td>December</td>
     <td>
       
-        <a href="index.html?q=pičikat" lang="x-paw">pičikat</a>
+        <a href="index.html?id=SK-picikat-p111-2162" lang="x-paw">pičikat</a>
         <span class="badge badge-class">ADV</span>
       
     </td>
@@ -561,7 +563,7 @@
     <td>Winter</td>
     <td>
       
-        <a href="index.html?q=pičikat" lang="x-paw">pičikat</a>
+        <a href="index.html?id=SK-picikat-p111-2162" lang="x-paw">pičikat</a>
         <span class="badge badge-class">ADV</span>
       
     </td>
@@ -574,12 +576,12 @@
     <td>Sunday</td>
     <td>
       
-        <a href="index.html?q=sa" lang="x-paw">sa</a>
-        <span class="badge badge-class">VI</span>
+        <a href="index.html?id=SK-sakuhwaarukstiiq-p151-2955" lang="x-paw">sakuhwârukstî'</a>
+        <span class="badge badge-class">N</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small>suh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–sa–]</small></td>
+    <td class="lesson-vocab__pron"><small><span class="pitch-high">SUH</span>-kooh-wah-dooks-tee'</small></td>
+    <td class="ipa" lang="x-paw"><small>[sə́·kʊh·waa·rʊks·tiiʔ]</small></td>
   </tr>
   
   <tr>
@@ -587,12 +589,12 @@
     <td>Sacred Day</td>
     <td>
       
-        <a href="index.html?q=sa" lang="x-paw">sa</a>
-        <span class="badge badge-class">VI</span>
+        <a href="index.html?id=SK-sakuhwaarukstiiq-p151-2955" lang="x-paw">sakuhwârukstî'</a>
+        <span class="badge badge-class">N</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small>suh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–sa–]</small></td>
+    <td class="lesson-vocab__pron"><small><span class="pitch-high">SUH</span>-kooh-wah-dooks-tee'</small></td>
+    <td class="ipa" lang="x-paw"><small>[sə́·kʊh·waa·rʊks·tiiʔ]</small></td>
   </tr>
   
   <tr>
@@ -600,7 +602,7 @@
     <td>Monday</td>
     <td>
       
-        <a href="index.html?q=Sakuhkiwatat" lang="x-paw">Sakuhkiwatat</a>
+        <a href="index.html?id=SK-sakuhkiwatat-p151-2950" lang="x-paw">Sakuhkiwatat</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -613,12 +615,12 @@
     <td>Tuesday</td>
     <td>
       
-        <a href="index.html?q=pitku" lang="x-paw">pitku</a>
-        <span class="badge badge-class">NUM</span>
+        <a href="index.html?id=SK-pitku_rasakuuru-p114-2207" lang="x-paw">Pitku Rasakûru</a>
+        <span class="badge badge-class">N</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small><span class="pitch-high">PIHT</span>-koo</small></td>
-    <td class="ipa" lang="x-paw"><small>[pɪ́t·kʊ]</small></td>
+    <td class="lesson-vocab__pron"><small>piht-koo <span class="pitch-high">DUH</span>-suh-koo-doo</small></td>
+    <td class="ipa" lang="x-paw"><small>[pɪt·kʊ rə́·sə·kuu·rʊ]</small></td>
   </tr>
   
   <tr>
@@ -626,12 +628,12 @@
     <td>Second Day</td>
     <td>
       
-        <a href="index.html?q=pitku" lang="x-paw">pitku</a>
-        <span class="badge badge-class">NUM</span>
+        <a href="index.html?id=SK-pitku_rasakuuru-p114-2207" lang="x-paw">Pitku Rasakûru</a>
+        <span class="badge badge-class">N</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small><span class="pitch-high">PIHT</span>-koo</small></td>
-    <td class="ipa" lang="x-paw"><small>[pɪ́t·kʊ]</small></td>
+    <td class="lesson-vocab__pron"><small>piht-koo <span class="pitch-high">DUH</span>-suh-koo-doo</small></td>
+    <td class="ipa" lang="x-paw"><small>[pɪt·kʊ rə́·sə·kuu·rʊ]</small></td>
   </tr>
   
   <tr>
@@ -639,12 +641,12 @@
     <td>Wednesday</td>
     <td>
       
-        <a href="index.html?q=ta" lang="x-paw">ta</a>
-        <span class="badge badge-class">VL</span>
+        <a href="index.html?id=SK-tawit_rasakuuru-p164-3226" lang="x-paw">Tawit Rasakûru</a>
+        <span class="badge badge-class">N</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tə–]</small></td>
+    <td class="lesson-vocab__pron"><small><span class="pitch-high">TUH</span>-wiht <span class="pitch-high">DUH</span>-suh-koo-doo</small></td>
+    <td class="ipa" lang="x-paw"><small>[tə́·wɪt rə́·sə·kuu·rʊ]</small></td>
   </tr>
   
   <tr>
@@ -652,7 +654,7 @@
     <td>Thursday</td>
     <td>
       
-        <a href="index.html?q=Kskîti'iks Rasakûru" lang="x-paw">Kskîti'iks Rasakûru</a>
+        <a href="index.html?id=SK-kskiitiqiks_rasakuuru-p101-1939" lang="x-paw">Kskîti'iks Rasakûru</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -665,7 +667,7 @@
     <td>Friday</td>
     <td>
       
-        <a href="index.html?q=parae" lang="x-paw">parae</a>
+        <a href="index.html?id=BB-parae-0035" lang="x-paw">parae</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -678,7 +680,7 @@
     <td>Saturday</td>
     <td>
       
-        <a href="index.html?q=perikuʔ" lang="x-paw">perikuʔ</a>
+        <a href="index.html?id=BB-periku-0043" lang="x-paw">perikuʔ</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -691,7 +693,7 @@
     <td>Seeing (visiting) Day</td>
     <td>
       
-        <a href="index.html?q=perikuʔ" lang="x-paw">perikuʔ</a>
+        <a href="index.html?id=BB-periku-0043" lang="x-paw">perikuʔ</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -807,12 +809,11 @@
     <td>I am coming</td>
     <td>
       
-        <a href="index.html?q=ta" lang="x-paw">ta</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -820,12 +821,11 @@
     <td>I will come</td>
     <td>
       
-        <a href="index.html?q=ta" lang="x-paw">ta</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -833,12 +833,11 @@
     <td>I will go to town</td>
     <td>
       
-        <a href="index.html?q=ta" lang="x-paw">ta</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -846,12 +845,11 @@
     <td>I will start</td>
     <td>
       
-        <a href="index.html?q=ta" lang="x-paw">ta</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -859,12 +857,11 @@
     <td>I will finish</td>
     <td>
       
-        <a href="index.html?q=ta" lang="x-paw">ta</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -916,7 +913,7 @@
   
   <details class="lesson-note" open>
     <summary><strong>Future Tense</strong></summary>
-    <p>What is called in English future tense is expressed in Pawnee by the suffix +ta. It comes as the last part of a verb phrase, and means in a time yet to come. The future marker can occur as (h)ista or 'sta, the perfect (completed) aspect, or as usta, imperfect aspect. Tatut•ári'sta. I'll do it. (future completed) Tatut•arí•usta. I'll be doing it. (future incomplete) Tatut•a•wahri•usta. I'll be working. Months of the Year Any one of these words can be used in place of rahesa ' in the dialogues. Like the days of the week, phrases or even sentences, and will be capitalized. Pawnee months are descriptive only the first letter of the phrase Ri•katihah•tirara January Piraparu' February Pa•hutáwi•u' March Ra•pa•u R'at•tsuahu' April Hri•ratawi Ri•wariku' May Pa•riat June Ri•katihar•rikarikat July Tskirih•kapira August Pirau Rarah•kata•ispu' September Retskuhke October Ha•karúh•kutsu' November Pitsikat December The New Year" "Dreary Month" "Windy Month" "Rainy Month" "Memorial Month" "Month of Summer" "Half Year" "Mad Dog Month" "When the kids go back to school" "Fall" "Feast" "Winter" Days of the Week Words to be used in place of iras or other time words in the dialogues. Sakuh•waruksti' Sakuh•kiwatat Pitku Ra•sakuru' Tawit Ra•sakuru' Kskitiiks Rá•sakuru' Parae Periku' Sunday "Sacred Day" Monday Tuesday "Second Day" Wednesday Thursday Friday Saturday "Seeing (visiting) Day " Tongue Twister Patsúka tirút•tatsta tat•státs•tak'sta. turnip standing up I will shoot it I'm going to shoot that turnip plant. TAT.fTS KA</p>
+    <p>What is called in English future tense is expressed in Pawnee by the suffix +ta. It comes as the last part of a verb phrase, and means in a time yet to come. The future marker can occur as (h)ista or 'sta, the perfect (completed) aspect, or as usta, imperfect aspect. Tatut•ári'sta. I'll do it. (future completed) Tatut•arí•usta. I'll be doing it. (future incomplete) Tatut•á•wahri•usta. I'll be working. Months of the Year Any one of these words can be used in place of rahesa' in the dialogues. Like the days of the week, phrases or even sentences, and will be capitalized. Pawnee months are descriptive only the first letter of the phrase Ri•katihah•tírara January Piráparu' February Pa•hutáwi•u' March Ra•pa•u R'at•tsuahu' April Hri•ratawi Ri•wariku' May Pa•ríat June Ri•katihar•rikárikat July Tskirih•kápira August Pirau Rarah•katá•ispu' September Retskuhke October Ha•karúh•kutsu' November Pitsikat December The New Year" "Dreary Month" "Windy Month" "Rainy Month" "Memorial Month" "Month of Summer" "Half Year" "Mad Dog Month" "When the kids go back to school" "Fall" "Feast" "Winter" Days of the Week Words to be used in place of iras or other time words in the dialogues. Sakuh•wáruksti' Sakuh•kíwatat Pitku Rá•sakuru' Tawit Rá•sakuru' Kskitiiks Rá•sakuru' Parae Periku' Sunday "Sacred Day" Monday Tuesday "Second Day" Wednesday Thursday Friday Saturday "Seeing (visiting) Day " Tongue Twister Patsúka tirút•tatsta tat•státs•tak'sta. turnip standing up I will shoot it I'm going to shoot that turnip plant.</p>
   </details>
   
 </section>
@@ -983,7 +980,7 @@
   </script>
   
 <script>
-const EX = {"blanks": [{"answer": "rahesa\u0027", "blanked": "Kirike rasut\u2022ari\u0027sta _____?", "english": "What will you do tomorrow?", "options": ["Retskuhke", "Pitsikat", "tatut\u2022\u00e1\u2022wahri\u2022usta", "rahesa\u0027"]}, {"answer": "rahesa\u0027", "blanked": "_____ tatut\u2022\u00e1\u2022wahri\u2022usta.", "english": "Tomorrow I will work.", "options": ["Kskitiiks", "tat\u00edr\u2022a", "Pir\u00e1paru\u0027", "rahesa\u0027"]}, {"answer": "t\u00e1t\u2022uh\u2022ta", "blanked": "_____ tih\u00e9 ra\u2022pa\u2022ariki\u0027.", "english": "I will go next month.", "options": ["rahesa\u0027", "tihe", "t\u00e1t\u2022uh\u2022ta", "t\u0027a\u2022hista"]}], "matching": [{"english": "December", "skiri": "Pitsikat"}, {"english": "March", "skiri": "Pa\u2022hut\u00e1wi\u2022u\u0027"}, {"english": "September", "skiri": "Pirau Rarah\u2022kat\u00e1\u2022ispu\u0027"}, {"english": "Thursday", "skiri": "Kskitiiks R\u00e1\u2022sakuru\u0027"}, {"english": "Friday", "skiri": "Parae"}, {"english": "October", "skiri": "Retskuhke"}, {"english": "November", "skiri": "Ha\u2022kar\u00fah\u2022kutsu\u0027"}, {"english": "in five years", "skiri": "sihuks ri\u2022k\u00e1tiharu\u0027"}], "say": [{"english": "I will go next month.", "skiri": "T\u00e1t\u2022uh\u2022ta tih\u00e9 ra\u2022pa\u2022ariki\u0027."}, {"english": "Tomorrow I will work.", "skiri": "Rahesa\u0027 tatut\u2022\u00e1\u2022wahri\u2022usta."}, {"english": "When will you go?", "skiri": "Kir\u00fa rira\u2022awiu\u0027 r\u00e1s\u2022uh\u2022ta?"}, {"english": "The Future", "skiri": "T\u0027\u00c1R\u2022AWI\u2022A"}, {"english": "I\u0027m going to shoot that turnip plant.", "skiri": "Pats\u00faka tir\u00fat\u2022tatsta tat\u2022st\u00e1ts\u2022tak\u0027sta."}]};
+const EX = {"blanks": [{"answer": "rahesa\u0027", "blanked": "Kirike rasut\u2022ari\u0027sta _____?", "english": "What will you do tomorrow?", "options": ["Ri\u2022katihar\u2022rik\u00e1rikat", "t\u0027a\u2022hista", "Tskirih\u2022k\u00e1pira", "rahesa\u0027"]}, {"answer": "rahesa\u0027", "blanked": "_____ tatut\u2022\u00e1\u2022wahri\u2022usta.", "english": "Tomorrow I will work.", "options": ["sihuks", "rahesa\u0027", "Tskirih\u2022k\u00e1pira", "Hri\u2022ratawi"]}, {"answer": "t\u00e1t\u2022uh\u2022ta", "blanked": "_____ tih\u00e9 ra\u2022pa\u2022ariki\u0027.", "english": "I will go next month.", "options": ["tat\u00edr\u2022a", "t\u00e1t\u2022uh\u2022ta", "Parae", "sihuks"]}], "matching": [{"english": "Monday", "skiri": "Sakuh\u2022k\u00edwatat"}, {"english": "Friday", "skiri": "Parae"}, {"english": "I will start", "skiri": "tat\u2022asp\u00e1tasik\u0027sta"}, {"english": "May", "skiri": "Hri\u2022ratawi Ri\u2022wariku\u0027"}, {"english": "I will go to town", "skiri": "tat\u2022itsah\u2022ka\u00edsuh\u2022ta"}, {"english": "I will come back", "skiri": "ist\u00fa tatir\u2022a\u2022hista"}, {"english": "Wednesday", "skiri": "Tawit R\u00e1\u2022sakuru\u0027"}, {"english": "next week (those days that will come)", "skiri": "tihe ra\u2022s\u00e1kur\u2022rar\u2022ata"}], "say": [{"english": "What will you do tomorrow?", "skiri": "Kirike rasut\u2022ari\u0027sta rahesa\u0027?"}, {"english": "standing up", "skiri": "tir\u00fat\u2022tatsta"}, {"english": "I\u0027m going to shoot that turnip plant.", "skiri": "Pats\u00faka tir\u00fat\u2022tatsta tat\u2022st\u00e1ts\u2022tak\u0027sta."}, {"english": "turnip", "skiri": "Pats\u00faka"}, {"english": "Tomorrow I will work.", "skiri": "Rahesa\u0027 tatut\u2022\u00e1\u2022wahri\u2022usta."}]};
 
 // ── Matching ─────────────────────────────────────────────────────
 (function() {

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Syllable Guide — Skiri Pawnee Dictionary</title>
+  <title>Sounds — Skiri Pawnee Dictionary</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +22,8 @@
   <!-- Fuse.js for client-side search -->
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
 
-  <!-- Client-side search -->
+  <!-- Shared helpers of the learning pages (syllables, word pieces), then the client-side search -->
+  <script src="static/js/skiri.js"></script>
   <script src="static/js/search.js"></script>
 </head>
 <body>
@@ -46,7 +47,7 @@
             <span>
               <strong class="font-serif" style="font-size:1.2rem; letter-spacing:-0.3px;">P&#226;ri Pak&#251;ru'</strong>
               <br>
-              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Skiri Pawnee Dictionary</small>
+              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Learn Skiri Pawnee</small>
             </span>
           </a>
         </li>
@@ -62,14 +63,20 @@
       </button>
 
       <ul class="nav-links">
+        
+        <li><a href="learn.html" >Start here</a></li>
         <li><a href="index.html" >Dictionary</a></li>
         
         
+        <li><a href="guide.html" aria-current="page">Sounds</a></li>
+        <li><a href="words.html" >Word building</a></li>
+        <li><a href="verbs.html" >Verbs</a></li>
         <li><a href="lessons.html" >Lessons</a></li>
-        
         <li><a href="flashcards.html" >Flashcards</a></li>
+        <li><a href="practice.html" >Practice</a></li>
         
-        <li><a href="guide.html" >Syllable Guide</a></li>
+        
+        <li><a href="topics.html" >Topics</a></li>
         
         <li><a href="about.html" >About</a></li>
 
@@ -95,11 +102,37 @@
   <main class="container" id="main-content">
     <div id="live-results"></div>
     
-<article>
-    <h2>Syllable &amp; Pronunciation Guide</h2>
+<article class="learn-page">
+    <p class="learn-kicker">Sounds</p>
+    <h2>The sounds of Skiri Pawnee</h2>
+    <p class="learn-lead">
+        Skiri has nine consonants and three vowels, and each vowel is short or long:
+        fifteen sounds in all. Take a word apart first, then read how each sound is made.
+    </p>
+
+    
+    <section class="sound-tool" id="sound-it-out">
+        <h3>Sound it out</h3>
+        <p>
+            Choose one of the flashcard words. Its phonetic form, as the dictionary prints it, is cut into
+            syllables, and each sound in it is explained. Every dictionary search result has the same view
+            under <em>Say it, syllable by syllable</em>.
+        </p>
+        <div class="practice-options">
+            <label>Week
+                <select id="so-week"></select>
+            </label>
+            <label>Word
+                <select id="so-word"></select>
+            </label>
+            <button type="button" class="outline" id="so-random">Another word</button>
+        </div>
+        <div id="so-out" aria-live="polite"><p class="loading-note">Loading the words…</p></div>
+    </section>
+
+    <h3>The letters</h3>
     <p>
-        Skiri Pawnee uses a small set of sounds. Below you'll find the
-        <strong>Parks notation</strong> (used in the dictionary headwords),
+        Below you'll find the <strong>Parks notation</strong> (used in the dictionary headwords),
         our <strong>simplified respelling</strong> (shown throughout this site),
         and English approximations to help with pronunciation.
     </p>
@@ -107,7 +140,7 @@
         
         You're viewing with <strong>Simplified spelling</strong> as primary.
         
-        Use the spelling toggle in the nav bar to switch.
+        
     </p>
 
     <!-- ============================================================ -->
@@ -191,6 +224,44 @@
         </tbody>
     </table>
     </div>
+
+    <!-- ============================================================ -->
+    <h3>Two letters that change their sound</h3>
+    <!-- ============================================================ -->
+    
+    <p>
+        The dictionary says two things about <strong>c</strong> and <strong>r</strong> that the table above
+        cannot show. Its own examples:
+    </p>
+    <div class="guide-table-wrap">
+    <table class="guide-table">
+        <thead><tr><th>Letter</th><th>Where</th><th>Said as</th><th>The dictionary's example</th></tr></thead>
+        <tbody>
+            <tr>
+                <td class="ipa guide-primary-col">c</td>
+                <td>before a consonant, and at the end of a word</td>
+                <td>ts</td>
+                <td><span class="ipa" lang="x-paw">riictaaru&#x0294;</span> <span class="ipa" lang="x-paw">[riitstaaru&#x0294;]</span> intestines;
+                    <span class="ipa" lang="x-paw">apiic</span> <span class="ipa" lang="x-paw">[&#x0259;piits]</span> on the other side of water</td>
+            </tr>
+            <tr>
+                <td class="ipa guide-primary-col">c</td>
+                <td>before a vowel</td>
+                <td>ch</td>
+                <td><span class="ipa" lang="x-paw">capaat</span> <span class="ipa" lang="x-paw">[&#x010D;&#x0259;paat]</span> woman</td>
+            </tr>
+            <tr>
+                <td class="ipa guide-primary-col">r</td>
+                <td>anywhere</td>
+                <td>a quick tap of the tongue</td>
+                <td>At the start of a word many speakers often said it as <strong>n</strong>, and some now and then as <strong>l</strong></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <p style="font-size:0.85em; color:var(--earth-500);">
+        Parks and Pratt, <em>A Dictionary of Skiri Pawnee</em>, chapter 2, pp. 13-14.
+    </p>
 
     <!-- ============================================================ -->
     <h3>Vowels</h3>
@@ -279,6 +350,41 @@
         </p>
     </details>
 
+    <details class="guide-note" open>
+        <summary>Short vowels have two shades</summary>
+        <p>
+            In the phonetic forms you will see two symbols for each short vowel. The dictionary writes
+            the tenser sound with the plain letter and the laxer one with its own symbol. Long vowels
+            are always tense. Its examples:
+        </p>
+        <ul>
+            <li><span class="ipa" lang="x-paw">istu</span> <span class="ipa" lang="x-paw">[&#x026A;stu]</span> again;
+                <span class="ipa" lang="x-paw">pitku</span> <span class="ipa" lang="x-paw">[p&#x026A;tku]</span> two:
+                <span class="ipa">&#x026A;</span> is the <em>i</em> of p<strong>i</strong>t</li>
+            <li><span class="ipa" lang="x-paw">ti&#x0294;ukut</span> <span class="ipa" lang="x-paw">[ti&#x0294;uk&#x028A;t]</span> it dropped:
+                <span class="ipa">&#x028A;</span> is the <em>u</em> of p<strong>u</strong>t</li>
+            <li><span class="ipa" lang="x-paw">aka&#x0294;</span> <span class="ipa" lang="x-paw">[&#x0259;k&#x0259;&#x0294;]</span> your grandmother:
+                <span class="ipa">&#x0259;</span> is the <em>a</em> of <strong>a</strong>bove;
+                <span class="ipa" lang="x-paw">rahwa</span> <span class="ipa" lang="x-paw">[rahwa]</span> captive has the lower <em>a</em></li>
+            <li>Long: <span class="ipa" lang="x-paw">piita</span> <span class="ipa" lang="x-paw">[piit&#x0259;]</span> man;
+                <span class="ipa" lang="x-paw">uusu&#x0294;</span> <span class="ipa" lang="x-paw">[uusu&#x0294;]</span> hair;
+                <span class="ipa" lang="x-paw">aaru&#x0294;</span> <span class="ipa" lang="x-paw">[aaru&#x0294;]</span> tooth</li>
+        </ul>
+        <p style="font-size:0.85em; color:var(--earth-500);">Chapter 2, p. 14.</p>
+    </details>
+
+    <details class="guide-note">
+        <summary>Where the glottal stop stands</summary>
+        <p>
+            The glottal stop (<span class="ipa">&#x0294;</span>) stands only between vowels, as in
+            <span class="ipa" lang="x-paw">ri&#x0294;aat</span> summer, and at the end of a word after a vowel.
+            At the end of a verb it often makes a difference:
+            <span class="ipa" lang="x-paw">tiwaktiiku&#x0294;</span> he is announcing, beside
+            <span class="ipa" lang="x-paw">rakuwaktiku</span> for him to be announcing.
+        </p>
+        <p style="font-size:0.85em; color:var(--earth-500);">Chapter 2, p. 15.</p>
+    </details>
+
     <details class="guide-note">
         <summary>About the middle vowel <strong>e</strong></summary>
         <p>
@@ -319,14 +425,19 @@
     <h3>Syllable Structure</h3>
     <!-- ============================================================ -->
     <p>
-        In the dictionary's phonetic transcription, a dot
-        (<span class="ipa">&bull;</span>) marks syllable boundaries, and a dash
-        (<span class="ipa">&ndash;</span>) marks stem boundaries. For example:
+        In the dictionary's phonetic forms a raised dot (<span class="ipa">&middot;</span>) stands between
+        syllables. A dash (<span class="ipa">&ndash;</span>) at the edge of a form means it is a stem, not a
+        whole word: something is always added on that side. For example:
     </p>
     <div class="guide-example">
-        <span class="ipa">[&bull;r&#601;&ndash;h&#650;h&ndash;kaa&ndash;paa&ndash;k&#618;s&bull;]</span>
+        <span class="ipa" lang="x-paw">sakuuru&#x0294;</span> sun:
+        <span class="ipa" lang="x-paw">[s&#601;&middot;ku&uacute;&middot;r&#650;&#x0294;]</span>
         <br>
-        <span class="pronunciation">duh-hooh-kah-pah-kihs</span>
+        <span class="pronunciation">suh-KOO-doo'</span>
+    </div>
+    <div class="guide-example">
+        <span class="ipa" lang="x-paw">at</span> go (a verb stem):
+        <span class="ipa" lang="x-paw">[&ndash;&#601;t&ndash;]</span>
     </div>
 
     <!-- ============================================================ -->
@@ -405,9 +516,10 @@
     </div>
 
     <p style="margin-top: 2em; font-size: 0.9em; color: var(--pico-muted-color);">
-        Based on the Sound Key from Douglas R. Parks,
+        Based on the Sound Key and chapter 2 of Parks and Pratt,
         <em>A Dictionary of Skiri Pawnee</em>, and the Pawnee Alphabet section
-        of the Blue Book <em>P&acirc;ri Pak&ucirc;ru'</em>.
+        of the Blue Book <em>P&acirc;ri Pak&ucirc;ru'</em>. The English comparisons are rough:
+        no speaker of Pawnee has reviewed this page, and a page cannot let you hear the language.
     </p>
 </article>
 
@@ -431,5 +543,7 @@
     }
   </script>
   
+<script src="static/js/sounds.js"></script>
+
 </body>
 </html>

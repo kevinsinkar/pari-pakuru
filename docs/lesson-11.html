@@ -22,7 +22,8 @@
   <!-- Fuse.js for client-side search -->
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
 
-  <!-- Client-side search -->
+  <!-- Shared helpers of the learning pages (syllables, word pieces), then the client-side search -->
+  <script src="static/js/skiri.js"></script>
   <script src="static/js/search.js"></script>
 </head>
 <body>
@@ -46,7 +47,7 @@
             <span>
               <strong class="font-serif" style="font-size:1.2rem; letter-spacing:-0.3px;">P&#226;ri Pak&#251;ru'</strong>
               <br>
-              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Skiri Pawnee Dictionary</small>
+              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Learn Skiri Pawnee</small>
             </span>
           </a>
         </li>
@@ -62,14 +63,20 @@
       </button>
 
       <ul class="nav-links">
+        
+        <li><a href="learn.html" >Start here</a></li>
         <li><a href="index.html" >Dictionary</a></li>
         
         
+        <li><a href="guide.html" >Sounds</a></li>
+        <li><a href="words.html" >Word building</a></li>
+        <li><a href="verbs.html" >Verbs</a></li>
         <li><a href="lessons.html" aria-current="page">Lessons</a></li>
-        
         <li><a href="flashcards.html" >Flashcards</a></li>
+        <li><a href="practice.html" >Practice</a></li>
         
-        <li><a href="guide.html" >Syllable Guide</a></li>
+        
+        <li><a href="topics.html" >Topics</a></li>
         
         <li><a href="about.html" >About</a></li>
 
@@ -152,12 +159,11 @@
     <td>I'm hungry</td>
     <td>
       
-        <a href="index.html?q=tiki" lang="x-paw">tiki</a>
-        <span class="badge badge-class">N</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small><span class="pitch-high">TIH</span>-kih</small></td>
-    <td class="ipa" lang="x-paw"><small>[tɪ́·kɪ]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -201,12 +207,11 @@
     <td>it tastes bad</td>
     <td>
       
-        <a href="index.html?q=ka" lang="x-paw">ka</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>kuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–kə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -226,12 +231,11 @@
     <td>it smells bad</td>
     <td>
       
-        <a href="index.html?q=ka" lang="x-paw">ka</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>kuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–kə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   </tbody>
@@ -249,22 +253,17 @@
     
     <div class="lesson-dialogue__line">
       <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Ka rúh•ratsaus?</span>
-      <span class="lesson-dialogue__eng"></span>
+      <span class="lesson-dialogue__eng">Are you hungry?</span>
     </div>
     
     <div class="lesson-dialogue__line">
       <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Háu', tikú•ratsaus.</span>
-      <span class="lesson-dialogue__eng"></span>
+      <span class="lesson-dialogue__eng">Yes, I'm hungry.</span>
     </div>
     
     <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Kaki', we tatuks•a .ka-</span>
-      <span class="lesson-dialogue__eng"></span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">wahtsu'.</span>
-      <span class="lesson-dialogue__eng"></span>
+      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Kakí', we tatuks•á•kawahtsu'.</span>
+      <span class="lesson-dialogue__eng">No, I ate (was eating).</span>
     </div>
     
   </article>
@@ -273,12 +272,12 @@
     
     <div class="lesson-dialogue__line">
       <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Kiriké rasuks•a?</span>
-      <span class="lesson-dialogue__eng"></span>
+      <span class="lesson-dialogue__eng">What did you eat?</span>
     </div>
     
     <div class="lesson-dialogue__line">
       <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Tatuks•a kísatski.</span>
-      <span class="lesson-dialogue__eng"></span>
+      <span class="lesson-dialogue__eng">I ate (was eating) meat.</span>
     </div>
     
   </article>
@@ -287,47 +286,12 @@
     
     <div class="lesson-dialogue__line">
       <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Ka ruruks•táhare?</span>
-      <span class="lesson-dialogue__eng"></span>
+      <span class="lesson-dialogue__eng">Did it taste good?</span>
     </div>
     
     <div class="lesson-dialogue__line">
       <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Kakí', kakuruks•táhare.</span>
-      <span class="lesson-dialogue__eng"></span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Are you hungry?</span>
-      <span class="lesson-dialogue__eng"></span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Yes, I'm hungry.</span>
-      <span class="lesson-dialogue__eng"></span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">No, I ate (was eating).</span>
-      <span class="lesson-dialogue__eng"></span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">What did you eat?</span>
-      <span class="lesson-dialogue__eng"></span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">I ate (was eating) meat.</span>
-      <span class="lesson-dialogue__eng"></span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Did it taste good?</span>
-      <span class="lesson-dialogue__eng"></span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">No, it tasted bad.</span>
-      <span class="lesson-dialogue__eng"></span>
+      <span class="lesson-dialogue__eng">No, it tasted bad.</span>
     </div>
     
   </article>
@@ -413,7 +377,7 @@
     <td>food</td>
     <td>
       
-        <a href="index.html?q=hâkawâhčisu'" lang="x-paw">hâkawâhčisu'</a>
+        <a href="index.html?id=SK-haakawaahcisuq-p35-0588" lang="x-paw">hâkawâhčisu'</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -426,12 +390,12 @@
     <td>soup</td>
     <td>
       
-        <a href="index.html?q=kira" lang="x-paw">kira</a>
-        <span class="badge badge-class">ADV</span>
+        <a href="index.html?id=SK-kiirariituq-p91-1706" lang="x-paw">kîrarîtu'</a>
+        <span class="badge badge-class">N</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small><span class="pitch-high">KIH</span>-duh</small></td>
-    <td class="ipa" lang="x-paw"><small>[kɪ́·rə]</small></td>
+    <td class="lesson-vocab__pron"><small><span class="pitch-high">KEE</span>-duh-dee-too'</small></td>
+    <td class="ipa" lang="x-paw"><small>[kií·rə·rii·tʊʔ]</small></td>
   </tr>
   
   <tr>
@@ -451,7 +415,7 @@
     <td>meat</td>
     <td>
       
-        <a href="index.html?q=kisâcki" lang="x-paw">kisâcki</a>
+        <a href="index.html?id=SK-kisaacki-p98-1883" lang="x-paw">kisâcki</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -464,7 +428,7 @@
     <td>pork</td>
     <td>
       
-        <a href="index.html?q=kuhku" lang="x-paw">kuhku</a>
+        <a href="index.html?id=SK-kuhku-p101-1962" lang="x-paw">kuhku</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -477,7 +441,7 @@
     <td>sugar</td>
     <td>
       
-        <a href="index.html?q=rekicuʔ" lang="x-paw">rekicuʔ</a>
+        <a href="index.html?id=BB-rekicu-0064" lang="x-paw">rekicuʔ</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -490,7 +454,7 @@
     <td>candy</td>
     <td>
       
-        <a href="index.html?q=rekictiwiruʔ" lang="x-paw">rekictiwiruʔ</a>
+        <a href="index.html?id=BB-rekictiwiru-0063" lang="x-paw">rekictiwiruʔ</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -503,12 +467,11 @@
     <td>it's salty (salt flavors it to me)</td>
     <td>
       
-        <a href="index.html?q=ka" lang="x-paw">ka</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>kuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–kə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -516,12 +479,11 @@
     <td>it's spoiled</td>
     <td>
       
-        <a href="index.html?q=tir" lang="x-paw">tir</a>
-        <span class="badge badge-class">VI</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tih(d) <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tɪ(r)–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -529,7 +491,7 @@
     <td>squash, pumpkins</td>
     <td>
       
-        <a href="index.html?q=pahuks" lang="x-paw">pahuks</a>
+        <a href="index.html?id=SK-pahuks-p108-2059" lang="x-paw">pahuks</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -542,12 +504,12 @@
     <td>beans</td>
     <td>
       
-        <a href="index.html?q=at" lang="x-paw">at</a>
-        <span class="badge badge-class">VI</span>
+        <a href="index.html?id=SK-atiit-p19-0232" lang="x-paw">atît</a>
+        <span class="badge badge-class">N</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small>uht <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–ət–]</small></td>
+    <td class="lesson-vocab__pron"><small><span class="pitch-high">UH</span>-teet</small></td>
+    <td class="ipa" lang="x-paw"><small>[ə́·tiit]</small></td>
   </tr>
   
   <tr>
@@ -555,7 +517,7 @@
     <td>turnips</td>
     <td>
       
-        <a href="index.html?q=pačûka'" lang="x-paw">pačûka'</a>
+        <a href="index.html?id=SK-pacuukaq-p107-2049" lang="x-paw">pačûka'</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -580,7 +542,7 @@
     <td>corn</td>
     <td>
       
-        <a href="index.html?q=rikîsu'" lang="x-paw">rikîsu'</a>
+        <a href="index.html?id=SK-rikiisuq-p492-4194" lang="x-paw">rikîsu'</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -593,7 +555,7 @@
     <td>coffee</td>
     <td>
       
-        <a href="index.html?q=rakickâtît" lang="x-paw">rakickâtît</a>
+        <a href="index.html?id=SK-rakickaatiit-p134-2631" lang="x-paw">rakickâtît</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -606,12 +568,12 @@
     <td>water</td>
     <td>
       
-        <a href="index.html?q=kira" lang="x-paw">kira</a>
-        <span class="badge badge-class">ADV</span>
+        <a href="index.html?id=SK-kiiraraasiituq-p91-1705" lang="x-paw">kîrarâsîtu'</a>
+        <span class="badge badge-class">N</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small><span class="pitch-high">KIH</span>-duh</small></td>
-    <td class="ipa" lang="x-paw"><small>[kɪ́·rə]</small></td>
+    <td class="lesson-vocab__pron"><small><span class="pitch-high">KEE</span>-duh-dah-see-too'</small></td>
+    <td class="ipa" lang="x-paw"><small>[kií·rə·raa·sii·tʊʔ]</small></td>
   </tr>
   
   <tr>
@@ -619,7 +581,7 @@
     <td>eggs</td>
     <td>
       
-        <a href="index.html?q=ripîku'" lang="x-paw">ripîku'</a>
+        <a href="index.html?id=SK-ripiikuq-p145-2831" lang="x-paw">ripîku'</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -632,12 +594,11 @@
     <td>beer</td>
     <td>
       
-        <a href="index.html?q=kiri" lang="x-paw">kiri</a>
-        <span class="badge badge-class">N</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small><span class="pitch-high">KIH</span>-dih</small></td>
-    <td class="ipa" lang="x-paw"><small>[kɪ́·rɪ]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -657,12 +618,12 @@
     <td>whiskey</td>
     <td>
       
-        <a href="index.html?q=kira" lang="x-paw">kira</a>
-        <span class="badge badge-class">ADV</span>
+        <a href="index.html?id=SK-kiirahkata-p91-1703" lang="x-paw">kîrahkata</a>
+        <span class="badge badge-class">N</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small><span class="pitch-high">KIH</span>-duh</small></td>
-    <td class="ipa" lang="x-paw"><small>[kɪ́·rə]</small></td>
+    <td class="lesson-vocab__pron"><small>kee-<span class="pitch-high">DUHH</span>-kuh-tuh</small></td>
+    <td class="ipa" lang="x-paw"><small>[kii·rə́h·kə·tə]</small></td>
   </tr>
   
   </tbody>
@@ -726,7 +687,7 @@
   
   <details class="lesson-note" open>
     <summary><strong>Useful Phrases</strong></summary>
-    <p>1. Ketará•pu'! Let's (3+) go! 2. Tuhúra•pu'! Let's (3+) go now! 3. Kétsih•wa. Let's (2, you and I) go. 4. Tuhurak•á•kawats! Let's (3+) eat! 5. Suks•kits karihats! Drink up! 6. Súks•kika'. Drink it. 7. Kesku•'ú kait. Give me salt. 8. Kirike ras•itska'? What do you want? 9. Sikstar•ru•a kait. Pass the salt (grains). 10. Siks•tu•a kait. Pass the salt. (shaker) 11. Istu ka ras•itska'? Do you want more? 12. Aka', hiri we túh•kaharawere. Ah, that smells good. 13. We tat•ka•wakit. I'm full. Time and Subject Indicators: hiri and we Most statements in Pawnee begin with a time or subject indicator. We is used to begin almost any statement; it is a syllable which comes just before the introducer and means now or then. Really, it means at that certain time and is used to point out a time which may not be already understood by the hearer. Hiri means that thing or that place and refers to the real subject of a sentence which is known by the hearer but not necessarily understood without this word to point it out. If you are using one of the verb phrases given in this book to make a statement to somebody, you should normally start with we. Tátuks•at. I went We tatuks•at. I went (then) (or, I had gone) VERB SET (Various aspects): to drink Tat•kíka'. I have drunk, I drank. (perfect aspect) Tat•kíkahu'. I am drinking. (imperfect aspect) Tatuks•kika'. I drank, I had drunk. (past tense, perfect aspect) Tatuks•kikahu'. I was drinking. (past tense, imperfect aspect) Suks•kika ' . Drink! (Command) The Suggestive Mode Some commands are given like suggestions, such as the comparison of "Shut the door" and "Would you shut the door?". These commands take the form of normal verb phrases with a suggestive modal indicator ke+. Tiku•'u. He gave it to me. Kesku•'u. Tasku•'u. Give it to me. You should give it to me. You gave it to me. SUKS • U.</p>
+    <p>1. Ketará•pu'! Let's (3+) go! 2. Tuhúra•pu'! Let's (3+) go now! 3. Kétsih•wa. Let's (2, you and I) go. 4. Tuhurak•á•kawats! Let's (3+) eat! 5. Suks•kíts karihats! Drink up! 6. Súks•kika'. Drink it. 7. Kesku•'ú kait. Give me salt. 8. Kirike rás•itska'? What do you want? 9. Sikstar•ru•a kait. Pass the salt (grains). 10. Siks•tu•a kait. Pass the salt. (shaker) 11. Istu ka rás•itska'? Do you want more? 12. Aka', hiri we túh•kaharawere. Ah, that smells good. 13. We tat•ká•wakit. I'm full. Time and Subject Indicators: hiri and we Most statements in Pawnee begin with a time or subject indicator. We is used to begin almost any statement; it is a syllable which comes just before the introducer and means now or then. Really, it means at that certain time and is used to point out a time which may not be already understood by the hearer. Hiri means that thing or that place and refers to the real subject of a sentence which is known by the hearer but not necessarily understood without this word to point it out. If you are using one of the verb phrases given in this book to make a statement to somebody, you should normally start with we. Tátuks•at. I went We tátuks•at. I went (then) (or, I had gone) VERB SET (Various aspects): to drink Tat•kíka'. I have drunk, I drank. (perfect aspect) Tat•kíkahu'. I am drinking. (imperfect aspect) Tatúks•kika'. I drank, I had drunk. (past tense, perfect aspect) Tatúks•kikahu'. I was drinking. (past tense, imperfect aspect) Suks•kíka' . Drink! (Command) The Suggestive Mode Some commands are given like suggestions, such as the comparison of "Shut the door" and "Would you shut the door?". These commands take the form of normal verb phrases with a suggestive modal indicator ke+. Tiku•'u. He gave it to me. Kesku•'u. Tasku•'u. Give it to me. You should give it to me. You gave it to me.</p>
   </details>
   
 </section>
@@ -751,6 +712,11 @@
   </details>
   
 
+  
+  <details class="lesson-note">
+    <summary><strong>Fill in the blank</strong> — complete the dialogue line</summary>
+    <div id="ex-blanks"></div>
+  </details>
   
 
   
@@ -788,7 +754,7 @@
   </script>
   
 <script>
-const EX = {"blanks": [], "matching": [{"english": "I\u0027m thirsty", "skiri": "t\u00edku\u2022kiktit"}, {"english": "sugar", "skiri": "rekitsu\u0027"}, {"english": "eggs", "skiri": "ripiku\u0027"}, {"english": "they are eating", "skiri": "tihr\u0027a:kawahtsu\u0027"}, {"english": "corn", "skiri": "rikisu\u0027"}, {"english": "it smells good", "skiri": "t\u00fah\u2022kaharawere"}, {"english": "it\u0027s salty (salt flavors it to me)", "skiri": "kait t\u00e1\u2022taha\u0027"}, {"english": "it\u0027s spoiled", "skiri": "t\u00ed\u2022ra\u2022hu\u0027"}], "say": [{"english": "Pass the salt. (shaker)", "skiri": "Siks\u2022tu\u2022a kait."}, {"english": "I\u0027m full.", "skiri": "We tat\u2022k\u00e1\u2022wakit."}, {"english": "Do you want more?", "skiri": "Istu ka r\u00e1s\u2022itska\u0027?"}, {"english": "Let\u0027s (3+) eat!", "skiri": "Tuhurak\u2022\u00e1\u2022kawats!"}, {"english": "Drink it.", "skiri": "S\u00faks\u2022kika\u0027."}]};
+const EX = {"blanks": [{"answer": "k\u00edsatski.", "blanked": "Tatuks\u2022a _____", "english": "I ate (was eating) meat.", "options": ["rikisu\u0027", "k\u00edsatski.", "hu\u0027", "atit"]}], "matching": [{"english": "it smells bad", "skiri": "kak\u00fah\u2022kaharawere"}, {"english": "it tastes bad", "skiri": "kakuh\u2022t\u00e1hare"}, {"english": "I\u0027m hungry", "skiri": "tik\u00fah\u2022ratsaus"}, {"english": "soup", "skiri": "kiraritu\u0027"}, {"english": "he smelled it", "skiri": "t\u00faks\u2022kahar\u2022urit"}, {"english": "he\u0027s drunk (he\u0027s feeling it)", "skiri": "t\u00fat\u2022atsiks\u2022u\u0027"}, {"english": "it smells good", "skiri": "t\u00fah\u2022kaharawere"}, {"english": "coffee", "skiri": "ra\u2022k\u00edts\u2022katit"}], "say": [{"english": "I ate (was eating) meat.", "skiri": "Tatuks\u2022a k\u00edsatski."}, {"english": "What do you want?", "skiri": "Kirike r\u00e1s\u2022itska\u0027?"}, {"english": "Pass the salt (grains).", "skiri": "Sikstar\u2022ru\u2022a kait."}, {"english": "Pass the salt. (shaker)", "skiri": "Siks\u2022tu\u2022a kait."}, {"english": "Did it taste good?", "skiri": "Ka ruruks\u2022t\u00e1hare?"}]};
 
 // ── Matching ─────────────────────────────────────────────────────
 (function() {

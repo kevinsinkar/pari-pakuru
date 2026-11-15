@@ -22,7 +22,8 @@
   <!-- Fuse.js for client-side search -->
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
 
-  <!-- Client-side search -->
+  <!-- Shared helpers of the learning pages (syllables, word pieces), then the client-side search -->
+  <script src="static/js/skiri.js"></script>
   <script src="static/js/search.js"></script>
 </head>
 <body>
@@ -46,7 +47,7 @@
             <span>
               <strong class="font-serif" style="font-size:1.2rem; letter-spacing:-0.3px;">P&#226;ri Pak&#251;ru'</strong>
               <br>
-              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Skiri Pawnee Dictionary</small>
+              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Learn Skiri Pawnee</small>
             </span>
           </a>
         </li>
@@ -62,14 +63,20 @@
       </button>
 
       <ul class="nav-links">
+        
+        <li><a href="learn.html" >Start here</a></li>
         <li><a href="index.html" >Dictionary</a></li>
         
         
+        <li><a href="guide.html" >Sounds</a></li>
+        <li><a href="words.html" >Word building</a></li>
+        <li><a href="verbs.html" >Verbs</a></li>
         <li><a href="lessons.html" aria-current="page">Lessons</a></li>
-        
         <li><a href="flashcards.html" >Flashcards</a></li>
+        <li><a href="practice.html" >Practice</a></li>
         
-        <li><a href="guide.html" >Syllable Guide</a></li>
+        
+        <li><a href="topics.html" >Topics</a></li>
         
         <li><a href="about.html" >About</a></li>
 
@@ -104,6 +111,8 @@
 </nav>
 
 <hgroup>
+  
+  <h2 class="font-serif" lang="x-paw">TSAHRIKS</h2>
   
   <h3>Lesson 6 — People</h3>
   <p><small>Blue Book pp. 55–60</small></p>
@@ -150,12 +159,12 @@
     <td>man</td>
     <td>
       
-        <a href="index.html?q=pitaksu'" lang="x-paw">pitaksu'</a>
-        <span class="badge badge-class">N</span>
+        <a href="index.html?id=SK-piita-p113-2176" lang="x-paw">pîta</a>
+        <span class="badge badge-class">N, ADJ</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small><span class="pitch-high">PIH</span>-tuhk-soo'</small></td>
-    <td class="ipa" lang="x-paw"><small>[pɪ́·tək·sʊʔ]</small></td>
+    <td class="lesson-vocab__pron"><small><span class="pitch-high">PEE</span>-tuh</small></td>
+    <td class="ipa" lang="x-paw"><small>[pií·tə]</small></td>
   </tr>
   
   <tr>
@@ -163,12 +172,12 @@
     <td>woman</td>
     <td>
       
-        <a href="index.html?q=ča" lang="x-paw">ča</a>
-        <span class="badge badge-class">VL</span>
+        <a href="index.html?id=SK-capaat-p28-0410" lang="x-paw">čapât</a>
+        <span class="badge badge-class">N</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small>chuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–čə–]</small></td>
+    <td class="lesson-vocab__pron"><small><span class="pitch-high">CHUH</span>-paht</small></td>
+    <td class="ipa" lang="x-paw"><small>[čə́·paat]</small></td>
   </tr>
   
   <tr>
@@ -176,7 +185,7 @@
     <td>child</td>
     <td>
       
-        <a href="index.html?q=pirauʔ" lang="x-paw">pirauʔ</a>
+        <a href="index.html?id=BB-pirau-0046" lang="x-paw">pirauʔ</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -201,12 +210,11 @@
     <td>he is crying</td>
     <td>
       
-        <a href="index.html?q=tiki" lang="x-paw">tiki</a>
-        <span class="badge badge-class">N</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small><span class="pitch-high">TIH</span>-kih</small></td>
-    <td class="ipa" lang="x-paw"><small>[tɪ́·kɪ]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -250,12 +258,11 @@
     <td>he is making it</td>
     <td>
       
-        <a href="index.html?q=tir" lang="x-paw">tir</a>
-        <span class="badge badge-class">VI</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tih(d) <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tɪ(r)–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   </tbody>
@@ -318,7 +325,7 @@
     <td>friend, brother</td>
     <td>
       
-        <a href="index.html?q=irâri'" lang="x-paw">irâri'</a>
+        <a href="index.html?id=SK-iraariq-p64-1121" lang="x-paw">irâri'</a>
         <span class="badge badge-class">N-KIN</span>
       
     </td>
@@ -331,7 +338,7 @@
     <td>boy</td>
     <td>
       
-        <a href="index.html?q=pîraski" lang="x-paw">pîraski</a>
+        <a href="index.html?id=SK-piiraski-p460-4096" lang="x-paw">pîraski</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -344,7 +351,7 @@
     <td>male adolescent, "buck"</td>
     <td>
       
-        <a href="index.html?q=witesatki" lang="x-paw">witesatki</a>
+        <a href="index.html?id=BB-witesatki-0093" lang="x-paw">witesatki</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -357,7 +364,7 @@
     <td>girl</td>
     <td>
       
-        <a href="index.html?q=čûraki" lang="x-paw">čûraki</a>
+        <a href="index.html?id=SK-cuuraki-p32-0536" lang="x-paw">čûraki</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -370,7 +377,7 @@
     <td>female adolescent, maiden</td>
     <td>
       
-        <a href="index.html?q=čûrâsu'" lang="x-paw">čûrâsu'</a>
+        <a href="index.html?id=SK-cuuraasuq-p32-0535" lang="x-paw">čûrâsu'</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -383,12 +390,12 @@
     <td>elderly man</td>
     <td>
       
-        <a href="index.html?q=ku" lang="x-paw">ku</a>
-        <span class="badge badge-class">ADV</span>
+        <a href="index.html?id=SK-kurahuus-p102-1976" lang="x-paw">kurahûs</a>
+        <span class="badge badge-class">N</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small>koo <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[kʊ]</small></td>
+    <td class="lesson-vocab__pron"><small><span class="pitch-high">KOO</span>-duh-hoos</small></td>
+    <td class="ipa" lang="x-paw"><small>[kʊ́·rə·huus]</small></td>
   </tr>
   
   <tr>
@@ -396,7 +403,7 @@
     <td>elderly woman</td>
     <td>
       
-        <a href="index.html?q=čûstit" lang="x-paw">čûstit</a>
+        <a href="index.html?id=SK-cuustit-p32-0540" lang="x-paw">čûstit</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -421,12 +428,11 @@
     <td>I am playing</td>
     <td>
       
-        <a href="index.html?q=ta" lang="x-paw">ta</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -458,12 +464,11 @@
     <td>he's dancing</td>
     <td>
       
-        <a href="index.html?q=ta" lang="x-paw">ta</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   </tbody>
@@ -503,22 +508,22 @@
   
   <details class="lesson-note" open>
     <summary><strong>Pre Verbs</strong></summary>
-    <p>Some verbs in Pawnee are accompanied by markers which indicate certain relationships like those indicated by English prepositions in to it, for it, and on it. Two of these markers are + ut and + ur and are included in the introducer, which is why they are called preverbs. ti•ari' he's becoming tut•ári' he 's making it or doing it (tu-td-ri') ti + ut + ari it is + for him + becoming</p>
+    <p>Some verbs in Pawnee are accompanied by markers which indicate certain relationships like those indicated by English prepositions in to it, for it, and on it. Two of these markers are + ut and + ur and are included in the introducer, which is why they are called preverbs. tí•ari' he's becoming tut•ári' he 's making it or doing it (tu-tá-ri') ti + ut + ari it is + for him + becoming</p>
   </details>
   
   <details class="lesson-note" >
     <summary><strong>Useful Phrases</strong></summary>
-    <p>1. Siksut•tsa' You (1) stand up. 2. We rut•utsi•raru'. That's all. 3. TI'tskipi. He's sleepy. 4. Tikú'tskipi. I'm sleepy. 5. Ta'tskipi. You're sleepy.</p>
+    <p>1. Siksút•tsa' You (1) stand up. 2. We rút•utsi•raru'. That's all. 3. Tí'tskipi. He's sleepy. 4. Tikú'tskipi. I'm sleepy. 5. Tá'tskipi. You're sleepy.</p>
   </details>
   
   <details class="lesson-note" >
     <summary><strong>Verb Sets</strong></summary>
-    <p>Questions Kiriké ratut•ari'? What am I doing? Kirike rasut•ari'? What are you (1) doing? Kiriké rut•ari'? What is he doing? Kiriké rit•ari'? What are they (3+) doing? ri + ut Kirike sirut•ari'? What are they (2) doing? Responses All of the following responses would normally be preceded by the indicator we which means "now " or "then." (we) Tát•pari'. I am walking about. Tás•pari'. You are walking about. Tí•wari'. He is walking about. Sití•wari'. They (2) are walking. Tirah•wari'. They (3+) are walking. (ti-rah-wha-ri') (we) Tat•kikat. I am crying. More responses can be built by adding the introducers tat ., taw, etc. above to the verb root + kikat.</p>
+    <p>Questions Kiriké ratut•ari'? What am I doing? Kiriké rasut•ari'? What are you (1) doing? Kiriké rut•ari'? What is he doing? Kiriké rit•ari'? What are they (3+) doing? ri + ut Kiriké sirut•ari'? What are they (2) doing? Responses All of the following responses would normally be preceded by the indicator we which means "now " or "then." (we) Tát•pari'. I am walking about. Tás•pari'. You are walking about. Tí•wari'. He is walking about. Sití•wari'. They (2) are walking. Tiráh•wari'. They (3+) are walking. (ti-ráh-wha-ri') (we) Tat•kikat. I am crying. More responses can be built by adding the introducers tat•, tas•, etc. above to the verb root + kikat.</p>
   </details>
   
   <details class="lesson-note" >
     <summary><strong>Person Markers</strong></summary>
-    <p>In Pawnee verb phrases, the introducer will tell who is being talked about, that is, who the subject and object of the sentence are. When a single letter or root is used, we call this a person marker. There are four main person markers in Pawnee: 1. Subjects (who is doing it) + t first person, I or we (speaker or any group which includes him) tat. kikat I am crying sitat•kikat we (2) are crying + s second person, you tas•kikat you are crying sítas•kikat you (2) are crying 2. Objects (who is experiencing it) + ku first person, to me, to us tiku'tskipi I am sleepy sitiku'tskipi we (2) are sleepy tikurak•itskipi we (3+) are sleepy + a second person to you tá'tskipi you (1) are sleepy sita'tskipi you (2) are sleepy tarak•itskipi you (3+) are sleepy 3. Third Person: he, she, it Third person refers to someone or something who is neither the speaker nor the hearer. In English, the words he, she, and it refer also to sex and the difference between a person and a thing. Pawnee makes no such distinctions. Ti pahaat means he is red or she is red or it is red. TAKÉ RU'?</p>
+    <p>In Pawnee verb phrases, the introducer will tell who is being talked about, that is, who the subject and object of the sentence are. When a single letter or root is used, we call this a person marker. There are four main person markers in Pawnee: 1. Subjects (who is doing it) + t first person, I or we (speaker or any group which includes him) tat•kíkat I am crying sítat•kikat we (2) are crying + s second person, you tas•kíkat you are crying sítas•kikat you (2) are crying 2. Objects (who is experiencing it) + ku first person, to me, to us tikú'tskipi I am sleepy sítiku'tskipi we (2) are sleepy tikurak•ítskipi we (3+) are sleepy + a second person to you tá'tskipi you (1) are sleepy sitá'tskipi you (2) are sleepy tarak•ítskipi you (3+) are sleepy 3. Third Person: he, she, it Third person refers to someone or something who is neither the speaker nor the hearer. In English, the words he, she, and it refer also to sex and the difference between a person and a thing. Pawnee makes no such distinctions. Tí pahaat means he is red or she is red or it is red.</p>
   </details>
   
 </section>
@@ -585,7 +590,7 @@
   </script>
   
 <script>
-const EX = {"blanks": [{"answer": "pita", "blanked": "_____ kirik\u00e9 rut\u2022ari\u0027?", "english": "What is the man doing?", "options": ["t\u0027\u00e9wasku", "pita", "t\u0027itka", "t\u0027ek\u00fah\u2022taku\u0027"]}, {"answer": "pita", "blanked": "_____ t\u00ed\u2022wari\u0027.", "english": "The man is going (walking) about.", "options": ["pirau\u0027", "pita", "tsustit", "wit\u00e9satki"]}, {"answer": "pita", "blanked": "_____ k\u00e1 ra\u2022kikat?", "english": "Is the man crying?", "options": ["tsuraki", "ti\u2022k\u00edkat", "tut\u2022\u00e1ri\u0027", "pita"]}, {"answer": "pita", "blanked": "Kak\u00ed\u0027, _____ t\u0027\u00e9wasku\u0027.", "english": "No, the man is laughing.", "options": ["ti\u2022ruku\u0027", "pita", "t\u0027\u00e9wasku", "tsuraki"]}], "matching": [{"english": "elderly woman", "skiri": "tsustit"}, {"english": "he is doing it", "skiri": "tut\u2022\u00e1ri\u0027"}, {"english": "friend, brother", "skiri": "ir\u00e1ri\u0027"}, {"english": "male adolescent, \"buck\"", "skiri": "wit\u00e9satki"}, {"english": "he is making it", "skiri": "ti\u2022ruku\u0027"}, {"english": "boy", "skiri": "piraski"}, {"english": "I am playing", "skiri": "tat\u2022ak\u00fah\u2022taku\u0027"}, {"english": "he is laughing", "skiri": "t\u0027\u00e9wasku"}], "say": [{"english": "What is the man doing?", "skiri": "Pita kirik\u00e9 rut\u2022ari\u0027?"}, {"english": "You (1) stand up.", "skiri": "Siks\u00fat\u2022tsa\u0027"}, {"english": "The man is going (walking) about.", "skiri": "Pita t\u00ed\u2022wari\u0027."}, {"english": "That\u0027s all.", "skiri": "We r\u00fat\u2022utsi\u2022raru\u0027."}, {"english": "No, the man is laughing.", "skiri": "Kak\u00ed\u0027, pita t\u0027\u00e9wasku\u0027."}]};
+const EX = {"blanks": [{"answer": "pita", "blanked": "_____ kirik\u00e9 rut\u2022ari\u0027?", "english": "What is the man doing?", "options": ["piraski", "kurahus", "ir\u00e1ri\u0027", "pita"]}, {"answer": "pita", "blanked": "_____ t\u00ed\u2022wari\u0027.", "english": "The man is going (walking) about.", "options": ["tsustit", "tat\u2022ak\u00fah\u2022taku\u0027", "t\u00ed\u2022wari\u0027", "pita"]}, {"answer": "pita", "blanked": "_____ k\u00e1 ra\u2022kikat?", "english": "Is the man crying?", "options": ["pita", "tut\u2022\u00e1\u2022wahri\u0027", "kurahus", "tut\u2022\u00e1ri\u0027"]}, {"answer": "pita", "blanked": "Kak\u00ed\u0027, _____ t\u0027\u00e9wasku\u0027.", "english": "No, the man is laughing.", "options": ["tut\u2022\u00e1\u2022wahri\u0027", "tsustit", "pita", "wit\u00e9satki"]}], "matching": [{"english": "female adolescent, maiden", "skiri": "tsur\u00e1su\u0027"}, {"english": "child", "skiri": "pirau\u0027"}, {"english": "he\u0027s working", "skiri": "tut\u2022\u00e1\u2022wahri\u0027"}, {"english": "boy", "skiri": "piraski"}, {"english": "he \u0027s singing", "skiri": "t\u00ed\u2022raruku\u0027"}, {"english": "he is doing it", "skiri": "tut\u2022\u00e1ri\u0027"}, {"english": "I am playing", "skiri": "tat\u2022ak\u00fah\u2022taku\u0027"}, {"english": "he is making it", "skiri": "ti\u2022ruku\u0027"}], "say": [{"english": "I\u0027m sleepy.", "skiri": "Tik\u00fa\u0027tskipi."}, {"english": "That\u0027s all.", "skiri": "We r\u00fat\u2022utsi\u2022raru\u0027."}, {"english": "He\u0027s sleepy.", "skiri": "T\u00ed\u0027tskipi."}, {"english": "No, the man is laughing.", "skiri": "Kak\u00ed\u0027, pita t\u0027\u00e9wasku\u0027."}, {"english": "Is the man crying?", "skiri": "Pita k\u00e1 ra\u2022kikat?"}]};
 
 // ── Matching ─────────────────────────────────────────────────────
 (function() {

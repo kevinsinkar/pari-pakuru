@@ -22,7 +22,8 @@
   <!-- Fuse.js for client-side search -->
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
 
-  <!-- Client-side search -->
+  <!-- Shared helpers of the learning pages (syllables, word pieces), then the client-side search -->
+  <script src="static/js/skiri.js"></script>
   <script src="static/js/search.js"></script>
 </head>
 <body>
@@ -46,7 +47,7 @@
             <span>
               <strong class="font-serif" style="font-size:1.2rem; letter-spacing:-0.3px;">P&#226;ri Pak&#251;ru'</strong>
               <br>
-              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Skiri Pawnee Dictionary</small>
+              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Learn Skiri Pawnee</small>
             </span>
           </a>
         </li>
@@ -62,14 +63,20 @@
       </button>
 
       <ul class="nav-links">
+        
+        <li><a href="learn.html" >Start here</a></li>
         <li><a href="index.html" >Dictionary</a></li>
         
         
+        <li><a href="guide.html" >Sounds</a></li>
+        <li><a href="words.html" >Word building</a></li>
+        <li><a href="verbs.html" >Verbs</a></li>
         <li><a href="lessons.html" aria-current="page">Lessons</a></li>
-        
         <li><a href="flashcards.html" >Flashcards</a></li>
+        <li><a href="practice.html" >Practice</a></li>
         
-        <li><a href="guide.html" >Syllable Guide</a></li>
+        
+        <li><a href="topics.html" >Topics</a></li>
         
         <li><a href="about.html" >About</a></li>
 
@@ -152,7 +159,7 @@
     <td>feather</td>
     <td>
       
-        <a href="index.html?q=hîtu'" lang="x-paw">hîtu'</a>
+        <a href="index.html?id=SK-hiituq-p390-3856" lang="x-paw">hîtu'</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -165,7 +172,7 @@
     <td>rock</td>
     <td>
       
-        <a href="index.html?q=karitki" lang="x-paw">karitki</a>
+        <a href="index.html?id=SK-karitki-p79-1443" lang="x-paw">karitki</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -178,12 +185,12 @@
     <td>bone</td>
     <td>
       
-        <a href="index.html?q=kisu" lang="x-paw">kisu</a>
-        <span class="badge badge-class">VD</span>
+        <a href="index.html?id=SK-kiisuq-p93-1757" lang="x-paw">kîsu'</a>
+        <span class="badge badge-class">N</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small>kih-soo <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–kɪ·sʊ–]</small></td>
+    <td class="lesson-vocab__pron"><small><span class="pitch-high">KEE</span>-soo'</small></td>
+    <td class="ipa" lang="x-paw"><small>[kií·sʊʔ]</small></td>
   </tr>
   
   <tr>
@@ -191,7 +198,7 @@
     <td>bead</td>
     <td>
       
-        <a href="index.html?q=kiriks" lang="x-paw">kiriks</a>
+        <a href="index.html?id=SK-kiriks-p96-1841" lang="x-paw">kiriks</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -204,7 +211,7 @@
     <td>stick</td>
     <td>
       
-        <a href="index.html?q=rakis" lang="x-paw">rakis</a>
+        <a href="index.html?id=SK-rakis-p135-2644" lang="x-paw">rakis</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -217,7 +224,7 @@
     <td>box</td>
     <td>
       
-        <a href="index.html?q=rakuʔ" lang="x-paw">rakuʔ</a>
+        <a href="index.html?id=BB-raku-0056" lang="x-paw">rakuʔ</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -230,7 +237,7 @@
     <td>picture</td>
     <td>
       
-        <a href="index.html?q=hawiuʔ" lang="x-paw">hawiuʔ</a>
+        <a href="index.html?id=BB-hawiu-0015" lang="x-paw">hawiuʔ</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -243,7 +250,7 @@
     <td>this is</td>
     <td>
       
-        <a href="index.html?q=tiʔ" lang="x-paw">tiʔ</a>
+        <a href="index.html?id=BB-ti-0084" lang="x-paw">tiʔ</a>
         <span class="badge badge-class">DEM</span>
       
     </td>
@@ -256,12 +263,12 @@
     <td>no</td>
     <td>
       
-        <a href="index.html?q=ka" lang="x-paw">ka</a>
-        <span class="badge badge-class">VL</span>
+        <a href="index.html?id=SK-kaakiiq-p72-1291" lang="x-paw">kâkî'</a>
+        <span class="badge badge-class">INTERJ</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small>kuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–kə–]</small></td>
+    <td class="lesson-vocab__pron"><small>kah-<span class="pitch-high">KEE'</span></small></td>
+    <td class="ipa" lang="x-paw"><small>[kaa·kiíʔ]</small></td>
   </tr>
   
   <tr>
@@ -269,7 +276,7 @@
     <td>yes</td>
     <td>
       
-        <a href="index.html?q=hauʔ" lang="x-paw">hauʔ</a>
+        <a href="index.html?id=BB-had-0010" lang="x-paw">hauʔ</a>
         <span class="badge badge-class">INTERJ</span>
       
     </td>
@@ -310,12 +317,12 @@
     </div>
     
     <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Ahu', tí hitu'. (SB) Yes, this is a feather.</span>
-      <span class="lesson-dialogue__eng"></span>
+      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Ahu', tí hitu'. (SB)</span>
+      <span class="lesson-dialogue__eng">Yes, this is a feather.</span>
     </div>
     
     <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Hau, ti hitu'. (SK)</span>
+      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Haú, tí hitu'. (SK)</span>
       <span class="lesson-dialogue__eng"></span>
     </div>
     
@@ -362,12 +369,12 @@
     <td>bow</td>
     <td>
       
-        <a href="index.html?q=tir" lang="x-paw">tir</a>
-        <span class="badge badge-class">VI</span>
+        <a href="index.html?id=SK-tiraakis-p166-3268" lang="x-paw">tirâkis</a>
+        <span class="badge badge-class">N</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tih(d) <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tɪ(r)–]</small></td>
+    <td class="lesson-vocab__pron"><small><span class="pitch-high">TIH</span>-dah-kihs</small></td>
+    <td class="ipa" lang="x-paw"><small>[tɪ́·raa·kɪs]</small></td>
   </tr>
   
   <tr>
@@ -387,7 +394,7 @@
     <td>ear of corn</td>
     <td>
       
-        <a href="index.html?q=reksuʔ" lang="x-paw">reksuʔ</a>
+        <a href="index.html?id=BB-reksu-0065" lang="x-paw">reksuʔ</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -400,7 +407,7 @@
     <td>one</td>
     <td>
       
-        <a href="index.html?q=asku" lang="x-paw">asku</a>
+        <a href="index.html?id=SK-asku-p16-0172" lang="x-paw">asku</a>
         <span class="badge badge-class">NUM</span>
       
     </td>
@@ -413,7 +420,7 @@
     <td>two</td>
     <td>
       
-        <a href="index.html?q=pitku" lang="x-paw">pitku</a>
+        <a href="index.html?id=SK-pitku-p114-2206" lang="x-paw">pitku</a>
         <span class="badge badge-class">NUM</span>
       
     </td>
@@ -426,7 +433,7 @@
     <td>nickel</td>
     <td>
       
-        <a href="index.html?q=paisic" lang="x-paw">paisic</a>
+        <a href="index.html?id=BB-paisic-0032" lang="x-paw">paisic</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -439,7 +446,7 @@
     <td>dime</td>
     <td>
       
-        <a href="index.html?q=terisic" lang="x-paw">terisic</a>
+        <a href="index.html?id=BB-terisic-0081" lang="x-paw">terisic</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -452,7 +459,7 @@
     <td>quarter</td>
     <td>
       
-        <a href="index.html?q=tûpic" lang="x-paw">tûpic</a>
+        <a href="index.html?id=SK-tuupic-p166-3289" lang="x-paw">tûpic</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -515,7 +522,7 @@
   
   <details class="lesson-note" >
     <summary><strong>Indicators</strong></summary>
-    <p>Indicators are Pawnee words which indicate statements, questions, denials, and so on. Ka ru'? Ka ru kisu'? Ti'. Ti kisu'. Kaki'. Kaki kisu'. Is it? Is it a bone? It is. This is. This is a bone. It is not. No. It is not a bone. KIRIKÉ RA•TARAWIS?</p>
+    <p>Indicators are Pawnee words which indicate statements, questions, denials, and so on. Ká ru'? Ka rú kisu'? Ti'. Tí kisu'. Kakí'. Kakí kisu'. Is it? Is it a bone? It is. This is. This is a bone. It is not. No. It is not a bone.</p>
   </details>
   
 </section>
@@ -582,7 +589,7 @@
   </script>
   
 <script>
-const EX = {"blanks": [{"answer": "hitu\u0027", "blanked": "T\u00ed _____.", "english": "This is a feather.", "options": ["pitku", "reksu\u0027", "terisits", "hitu\u0027"]}, {"answer": "hitu\u0027", "blanked": "Ka r\u00fa _____?", "english": "Is this a feather?", "options": ["kisu\u0027", "hitu\u0027", "riksu\u0027", "terisits"]}, {"answer": "karitki", "blanked": "Ka r\u00fa _____?", "english": "Is this a rock?", "options": ["ha\u00fa\u0027", "reksu\u0027", "karitki", "asku"]}, {"answer": "karitki", "blanked": "Kak\u00ed, kak\u00ed _____.", "english": "No, it is not a rock.", "options": ["paisits", "tupits", "asku", "karitki"]}], "matching": [{"english": "bone", "skiri": "kisu\u0027"}, {"english": "box", "skiri": "raku\u0027"}, {"english": "picture", "skiri": "hawiu\u0027"}, {"english": "arrow", "skiri": "riksu\u0027"}, {"english": "yes", "skiri": "ha\u00fa\u0027"}, {"english": "nickel", "skiri": "paisits"}, {"english": "dime", "skiri": "terisits"}, {"english": "two", "skiri": "pitku"}], "say": [{"english": "Is this a feather?", "skiri": "Ka r\u00fa hitu\u0027?"}, {"english": "Is this a rock?", "skiri": "Ka r\u00fa karitki?"}, {"english": "No, it is not a rock.", "skiri": "Kak\u00ed, kak\u00ed karitki."}, {"english": "This is a feather.", "skiri": "T\u00ed hitu\u0027."}, {"english": "What is it?", "skiri": "Kirik\u00e9 ru\u0027?"}]};
+const EX = {"blanks": [{"answer": "hitu\u0027", "blanked": "T\u00ed _____.", "english": "This is a feather.", "options": ["tupits", "hitu\u0027", "hawiu\u0027", "pitku"]}, {"answer": "hitu\u0027", "blanked": "Ka r\u00fa _____?", "english": "Is this a feather?", "options": ["reksu\u0027", "asku", "hitu\u0027", "riksu\u0027"]}, {"answer": "hitu\u0027", "blanked": "Ahu\u0027, t\u00ed _____. (SB)", "english": "Yes, this is a feather.", "options": ["asku", "reksu\u0027", "raku\u0027", "hitu\u0027"]}, {"answer": "karitki", "blanked": "Ka r\u00fa _____?", "english": "Is this a rock?", "options": ["karitki", "raku\u0027", "tupits", "paisits"]}, {"answer": "karitki", "blanked": "Kak\u00ed, kak\u00ed _____.", "english": "No, it is not a rock.", "options": ["rakis", "raku\u0027", "karitki", "terisits"]}], "matching": [{"english": "bow", "skiri": "tirakis"}, {"english": "ear of corn", "skiri": "reksu\u0027"}, {"english": "two", "skiri": "pitku"}, {"english": "picture", "skiri": "hawiu\u0027"}, {"english": "no", "skiri": "kak\u00ed\u0027"}, {"english": "one", "skiri": "asku"}, {"english": "this is", "skiri": "ti\u0027"}, {"english": "stick", "skiri": "rakis"}], "say": [{"english": "What Is It?", "skiri": "KIRIK\u00c9 RU\u0027?"}, {"english": "Oh my! Gee!", "skiri": "Aka!"}, {"english": "What is it?", "skiri": "Kirik\u00e9 ru\u0027?"}, {"english": "Is this a feather?", "skiri": "Ka r\u00fa hitu\u0027?"}, {"english": "Say it.", "skiri": "Suks\u2022p\u00e1ku\u0027."}]};
 
 // ── Matching ─────────────────────────────────────────────────────
 (function() {

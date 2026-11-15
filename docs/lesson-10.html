@@ -22,7 +22,8 @@
   <!-- Fuse.js for client-side search -->
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
 
-  <!-- Client-side search -->
+  <!-- Shared helpers of the learning pages (syllables, word pieces), then the client-side search -->
+  <script src="static/js/skiri.js"></script>
   <script src="static/js/search.js"></script>
 </head>
 <body>
@@ -46,7 +47,7 @@
             <span>
               <strong class="font-serif" style="font-size:1.2rem; letter-spacing:-0.3px;">P&#226;ri Pak&#251;ru'</strong>
               <br>
-              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Skiri Pawnee Dictionary</small>
+              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Learn Skiri Pawnee</small>
             </span>
           </a>
         </li>
@@ -62,14 +63,20 @@
       </button>
 
       <ul class="nav-links">
+        
+        <li><a href="learn.html" >Start here</a></li>
         <li><a href="index.html" >Dictionary</a></li>
         
         
+        <li><a href="guide.html" >Sounds</a></li>
+        <li><a href="words.html" >Word building</a></li>
+        <li><a href="verbs.html" >Verbs</a></li>
         <li><a href="lessons.html" aria-current="page">Lessons</a></li>
-        
         <li><a href="flashcards.html" >Flashcards</a></li>
+        <li><a href="practice.html" >Practice</a></li>
         
-        <li><a href="guide.html" >Syllable Guide</a></li>
+        
+        <li><a href="topics.html" >Topics</a></li>
         
         <li><a href="about.html" >About</a></li>
 
@@ -105,7 +112,7 @@
 
 <hgroup>
   
-  <h2 class="font-serif" lang="x-paw">KIRIKI RUH•RA'?</h2>
+  <h2 class="font-serif" lang="x-paw">KIRIKÉ RUH•RA'?</h2>
   
   <h3>Lesson 10 — What Is He Using?</h3>
   <p><small>Blue Book pp. 74–78</small></p>
@@ -152,7 +159,7 @@
     <td>hunter</td>
     <td>
       
-        <a href="index.html?q=paresuʔ" lang="x-paw">paresuʔ</a>
+        <a href="index.html?id=BB-paresu-0036" lang="x-paw">paresuʔ</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -165,7 +172,7 @@
     <td>farmer</td>
     <td>
       
-        <a href="index.html?q=pawa" lang="x-paw">pawa</a>
+        <a href="index.html?id=BB-pawa-0041" lang="x-paw">pawa</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -178,7 +185,7 @@
     <td>husband</td>
     <td>
       
-        <a href="index.html?q=pitarauʔ" lang="x-paw">pitarauʔ</a>
+        <a href="index.html?id=BB-pitarau-0048" lang="x-paw">pitarauʔ</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -191,12 +198,12 @@
     <td>wife</td>
     <td>
       
-        <a href="index.html?q=ča" lang="x-paw">ča</a>
-        <span class="badge badge-class">VL</span>
+        <a href="index.html?id=SK-capaaraqu-p28-0409" lang="x-paw">čapâra'u</a>
+        <span class="badge badge-class">N</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small>chuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–čə–]</small></td>
+    <td class="lesson-vocab__pron"><small>chuh-<span class="pitch-high">PAH</span>-duh-'oo</small></td>
+    <td class="ipa" lang="x-paw"><small>[čə·paá·rə·ʔu]</small></td>
   </tr>
   
   <tr>
@@ -240,12 +247,12 @@
     <td>gun</td>
     <td>
       
-        <a href="index.html?q=tir" lang="x-paw">tir</a>
-        <span class="badge badge-class">VI</span>
+        <a href="index.html?id=SK-tiraakuq-p166-3274" lang="x-paw">tirâku'</a>
+        <span class="badge badge-class">N</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tih(d) <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tɪ(r)–]</small></td>
+    <td class="lesson-vocab__pron"><small>tih-<span class="pitch-high">DAH</span>-koo'</small></td>
+    <td class="ipa" lang="x-paw"><small>[tɪ·raá·kʊʔ]</small></td>
   </tr>
   
   <tr>
@@ -253,7 +260,7 @@
     <td>hoe</td>
     <td>
       
-        <a href="index.html?q=râharisu'" lang="x-paw">râharisu'</a>
+        <a href="index.html?id=SK-raaharisuq-p117-2269" lang="x-paw">râharisu'</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -266,12 +273,11 @@
     <td>axe (against wood)</td>
     <td>
       
-        <a href="index.html?q=ka" lang="x-paw">ka</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>kuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–kə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -301,22 +307,12 @@
     
     <div class="lesson-dialogue__line">
       <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Paresu kiriké rut•ari'?</span>
-      <span class="lesson-dialogue__eng"></span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">What is the hunter doing?</span>
-      <span class="lesson-dialogue__eng"></span>
+      <span class="lesson-dialogue__eng">What is the hunter doing?</span>
     </div>
     
     <div class="lesson-dialogue__line">
       <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Paresu ti•taka•asíku'.</span>
-      <span class="lesson-dialogue__eng"></span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">The hunter is shooting.</span>
-      <span class="lesson-dialogue__eng"></span>
+      <span class="lesson-dialogue__eng">The hunter is shooting.</span>
     </div>
     
   </article>
@@ -325,22 +321,12 @@
     
     <div class="lesson-dialogue__line">
       <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Kiriké ruh•ra' paresu'?</span>
-      <span class="lesson-dialogue__eng"></span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">What is the hunter using?</span>
-      <span class="lesson-dialogue__eng"></span>
+      <span class="lesson-dialogue__eng">What is the hunter using?</span>
     </div>
     
     <div class="lesson-dialogue__line">
       <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Paresu tuh•ra' tiraku'.</span>
-      <span class="lesson-dialogue__eng"></span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">The hunter is using a rifle.</span>
-      <span class="lesson-dialogue__eng"></span>
+      <span class="lesson-dialogue__eng">The hunter is using a rifle.</span>
     </div>
     
   </article>
@@ -366,7 +352,7 @@
     <td>preacher</td>
     <td>
       
-        <a href="index.html?q=pawaktikuʔ" lang="x-paw">pawaktikuʔ</a>
+        <a href="index.html?id=BB-pawaktiku-0042" lang="x-paw">pawaktikuʔ</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -379,7 +365,7 @@
     <td>sheriff, office of the law</td>
     <td>
       
-        <a href="index.html?q=hetkataʔku" lang="x-paw">hetkataʔku</a>
+        <a href="index.html?id=BB-hetkata-ku-0016" lang="x-paw">hetkataʔku</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -392,12 +378,11 @@
     <td>(badge) against the breast</td>
     <td>
       
-        <a href="index.html?q=ča" lang="x-paw">ča</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>chuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–čə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -405,12 +390,11 @@
     <td>police man, 'person catcher'</td>
     <td>
       
-        <a href="index.html?q=asku" lang="x-paw">asku</a>
-        <span class="badge badge-class">NUM</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small><span class="pitch-high">UHS</span>-koo</small></td>
-    <td class="ipa" lang="x-paw"><small>[ə́s·kʊ]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -418,7 +402,7 @@
     <td>judge, 'says it one time'</td>
     <td>
       
-        <a href="index.html?q=tikuwutikuʔ" lang="x-paw">tikuwutikuʔ</a>
+        <a href="index.html?id=BB-tikuwtitiku-0083" lang="x-paw">tikuwutikuʔ</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -467,12 +451,11 @@
     <td>she is cooking</td>
     <td>
       
-        <a href="index.html?q=tir" lang="x-paw">tir</a>
-        <span class="badge badge-class">VI</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tih(d) <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tɪ(r)–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -480,12 +463,11 @@
     <td>pistol, 'short gun'</td>
     <td>
       
-        <a href="index.html?q=tir" lang="x-paw">tir</a>
-        <span class="badge badge-class">VI</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tih(d) <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tɪ(r)–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -493,12 +475,12 @@
     <td>bucket, pot</td>
     <td>
       
-        <a href="index.html?q=ku" lang="x-paw">ku</a>
-        <span class="badge badge-class">ADV</span>
+        <a href="index.html?id=SK-kuucki-p452-4007" lang="x-paw">kûcki</a>
+        <span class="badge badge-class">N</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small>koo <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[kʊ]</small></td>
+    <td class="lesson-vocab__pron"><small><span class="pitch-high">KOOTS</span>-kih</small></td>
+    <td class="ipa" lang="x-paw"><small>[kuúts·kɪ]</small></td>
   </tr>
   
   <tr>
@@ -506,12 +488,12 @@
     <td>spoon, 'buffalo horn'</td>
     <td>
       
-        <a href="index.html?q=ta" lang="x-paw">ta</a>
-        <span class="badge badge-class">VL</span>
+        <a href="index.html?id=SK-tarahaariki-p159-3123" lang="x-paw">tarahâriki</a>
+        <span class="badge badge-class">N</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tə–]</small></td>
+    <td class="lesson-vocab__pron"><small><span class="pitch-high">TUH</span>-duh-hah-dih-kih</small></td>
+    <td class="ipa" lang="x-paw"><small>[tə́·rə·haa·rɪ·kɪ]</small></td>
   </tr>
   
   <tr>
@@ -519,7 +501,7 @@
     <td>lance, spear</td>
     <td>
       
-        <a href="index.html?q=uruksas" lang="x-paw">uruksas</a>
+        <a href="index.html?id=BB-uruksas-0091" lang="x-paw">uruksas</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -532,7 +514,7 @@
     <td>shield</td>
     <td>
       
-        <a href="index.html?q=raktahču'" lang="x-paw">raktahču'</a>
+        <a href="index.html?id=SK-raktahcuq-p135-2652" lang="x-paw">raktahču'</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -545,7 +527,7 @@
     <td>brave</td>
     <td>
       
-        <a href="index.html?q=râhikûču'" lang="x-paw">râhikûču'</a>
+        <a href="index.html?id=SK-raahikuucuq-p117-2276" lang="x-paw">râhikûču'</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -558,12 +540,11 @@
     <td>scout</td>
     <td>
       
-        <a href="index.html?q=kiri" lang="x-paw">kiri</a>
-        <span class="badge badge-class">N</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small><span class="pitch-high">KIH</span>-dih</small></td>
-    <td class="ipa" lang="x-paw"><small>[kɪ́·rɪ]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -571,7 +552,7 @@
     <td>chief, leader</td>
     <td>
       
-        <a href="index.html?q=resaruʔ" lang="x-paw">resaruʔ</a>
+        <a href="index.html?id=BB-resaru-0066" lang="x-paw">resaruʔ</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -584,12 +565,11 @@
     <td>leader (of an expedition)</td>
     <td>
       
-        <a href="index.html?q=ka" lang="x-paw">ka</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>kuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–kə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -597,7 +577,7 @@
     <td>chairman</td>
     <td>
       
-        <a href="index.html?q=rehkitawiuʔ" lang="x-paw">rehkitawiuʔ</a>
+        <a href="index.html?id=BB-rehkitawiu-0061" lang="x-paw">rehkitawiuʔ</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -654,12 +634,12 @@
   
   <details class="lesson-note" open>
     <summary><strong>Pre Verbs</strong></summary>
-    <p>There are many Pawnee verbs which add +ut or +ur to the introducer. +Ut can mean for him or on him and may be optional for some verbs. +Ur means for it, him, her or for that purpose. tí•ari' ti +ut +ari tut•ári' tí•ra ti +ur +ra tur +ra tuh+ra tuh•ra' he is becoming he +for it +becomes i +u becomes u he is doing it, making it he has it he +for that (purpose) +has it i +u becomes u r+r becomes h +r he is using it</p>
+    <p>There are many Pawnee verbs which add +ut or +ur to the introducer. +Ut can mean for him or on him and may be optional for some verbs. +Ur means for it, him, her or for that purpose. tí•ari' ti +ut +ari tut•ári' tí•ra ti +ur +ra tur +ra tuh+ra tuh•rá' he is becoming he +for it +becomes i +u becomes u he is doing it, making it he has it he +for that (purpose) +has it i +u becomes u r+r becomes h +r he is using it</p>
   </details>
   
   <details class="lesson-note" >
     <summary><strong>Useful Phrases</strong></summary>
-    <p>1. Ra kitu'. Altogether. 2. Arisit suks•at. Go by yourself. 3. Suks•katá•hat! Get out of the way! 4. Suks•taka•hat! Get off (out)! 5. Tas•kitawe' You're the boss. KA RÚH•RATSAUS?</p>
+    <p>1. Ra kítu'. Altogether. 2. Arisít suks•at. Go by yourself. 3. Suks•katá•hat! Get out of the way! 4. Súks•taka•hat! Get off (out)! 5. Tas•kítawe' You're the boss.</p>
   </details>
   
 </section>
@@ -684,6 +664,11 @@
   </details>
   
 
+  
+  <details class="lesson-note">
+    <summary><strong>Fill in the blank</strong> — complete the dialogue line</summary>
+    <div id="ex-blanks"></div>
+  </details>
   
 
   
@@ -721,7 +706,7 @@
   </script>
   
 <script>
-const EX = {"blanks": [], "matching": [{"english": "she\u0027s chopping weeds", "skiri": "ti\u2022hih\u2022k\u00e1tsaku\u0027"}, {"english": "police man, \u0027person catcher\u0027", "skiri": "asku\u2022ra\u2022w\u00e1kahu\u0027"}, {"english": "spoon, \u0027buffalo horn\u0027", "skiri": "t\u00e1raha\u2022riki\u0027"}, {"english": "he\u0027s first, he\u0027s the leader.", "skiri": "ti\u2022h\u00edrasa"}, {"english": "(badge) against the breast", "skiri": "tsahriks\u2022t\u00e1hrurikukus"}, {"english": "chairman", "skiri": "rehkit\u2022\u00e1wiu\u0027"}, {"english": "lance, spear", "skiri": "ur\u00faksas"}, {"english": "judge, \u0027says it one time\u0027", "skiri": "ti\u2022kuw\u00fatiku\u0027"}], "say": [{"english": "You\u0027re the boss.", "skiri": "Tas\u2022k\u00edtawe\u0027"}, {"english": "Get out of the way!", "skiri": "Suks\u2022kat\u00e1\u2022hat!"}, {"english": "Go by yourself.", "skiri": "Aris\u00edt suks\u2022at."}, {"english": "Get off (out)!", "skiri": "S\u00faks\u2022taka\u2022hat!"}, {"english": "Altogether.", "skiri": "Ra k\u00edtu\u0027."}]};
+const EX = {"blanks": [{"answer": "ti\u2022taka\u2022as\u00edku\u0027", "blanked": "Paresu _____.", "english": "The hunter is shooting.", "options": ["asku\u2022ra\u2022w\u00e1kahu\u0027", "tir\u00e1k\u2022tarikuts", "ti\u2022taka\u2022as\u00edku\u0027", "ti\u2022kuw\u00fatiku\u0027"]}, {"answer": "tiraku\u0027", "blanked": "Paresu tuh\u2022ra\u0027 _____.", "english": "The hunter is using a rifle.", "options": ["tiraku\u0027", "ti\u2022w\u00e1ktiku\u0027", "ur\u00faksas", "t\u00ed\u2022kuwutit"]}], "matching": [{"english": "judge, \u0027says it one time\u0027", "skiri": "ti\u2022kuw\u00fatiku\u0027"}, {"english": "it\u0027s cross-ways", "skiri": "ti ter\u00edwis"}, {"english": "he has shot", "skiri": "ti\u2022tak\u00e1\u2022asit"}, {"english": "farmer", "skiri": "pawa"}, {"english": "scout", "skiri": "kirik\u2022\u00e9risu\u0027"}, {"english": "hoe", "skiri": "rah\u00e1risu\u0027"}, {"english": "bucket, pot", "skiri": "kutski"}, {"english": "chief, leader", "skiri": "res\u00e1ru\u0027"}], "say": [{"english": "What is the hunter using?", "skiri": "Kirik\u00e9 ruh\u2022ra\u0027 paresu\u0027?"}, {"english": "The hunter is using a rifle.", "skiri": "Paresu tuh\u2022ra\u0027 tiraku\u0027."}, {"english": "Go by yourself.", "skiri": "Aris\u00edt suks\u2022at."}, {"english": "You\u0027re the boss.", "skiri": "Tas\u2022k\u00edtawe\u0027"}, {"english": "Altogether.", "skiri": "Ra k\u00edtu\u0027."}]};
 
 // ── Matching ─────────────────────────────────────────────────────
 (function() {

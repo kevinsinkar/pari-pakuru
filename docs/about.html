@@ -22,7 +22,8 @@
   <!-- Fuse.js for client-side search -->
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
 
-  <!-- Client-side search -->
+  <!-- Shared helpers of the learning pages (syllables, word pieces), then the client-side search -->
+  <script src="static/js/skiri.js"></script>
   <script src="static/js/search.js"></script>
 </head>
 <body>
@@ -46,7 +47,7 @@
             <span>
               <strong class="font-serif" style="font-size:1.2rem; letter-spacing:-0.3px;">P&#226;ri Pak&#251;ru'</strong>
               <br>
-              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Skiri Pawnee Dictionary</small>
+              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Learn Skiri Pawnee</small>
             </span>
           </a>
         </li>
@@ -62,14 +63,20 @@
       </button>
 
       <ul class="nav-links">
+        
+        <li><a href="learn.html" >Start here</a></li>
         <li><a href="index.html" >Dictionary</a></li>
         
         
+        <li><a href="guide.html" >Sounds</a></li>
+        <li><a href="words.html" >Word building</a></li>
+        <li><a href="verbs.html" >Verbs</a></li>
         <li><a href="lessons.html" >Lessons</a></li>
-        
         <li><a href="flashcards.html" >Flashcards</a></li>
+        <li><a href="practice.html" >Practice</a></li>
         
-        <li><a href="guide.html" >Syllable Guide</a></li>
+        
+        <li><a href="topics.html" >Topics</a></li>
         
         <li><a href="about.html" >About</a></li>
 
@@ -101,9 +108,10 @@
 
     <p>
         This site is a study aid for the <strong>Skiri Pawnee</strong> language.
-        It puts two printed books into a form you can search: a dictionary and a
-        textbook. Everything you read here comes from those books. Nothing has been
-        made up, and nothing is shown that a program worked out by itself.
+        It puts two printed books into a form you can search and study: a dictionary
+        and a textbook. Every Skiri word and form you read here comes from those
+        books. Nothing has been made up, and no form is shown that a program worked
+        out by itself.
     </p>
 
     <h3>The two books</h3>
@@ -141,8 +149,28 @@
         </li>
         <li><strong>Read the twenty lessons</strong> of the textbook, with their dialogues and word lists.</li>
         <li><strong>Practise with flashcards</strong>: weekly sets of everyday words. Your progress is kept in your own browser, not on a server.</li>
-        <li><strong>Learn the sounds</strong> from the pronunciation guide.</li>
+        <li>
+            <strong>Learn the sounds</strong> on the <a href="guide.html">Sounds</a> page, and take any word
+            syllable by syllable: its phonetic form, as the dictionary prints it, is cut at the syllable
+            dots, and each sound is explained.
+        </li>
+        <li>
+            <strong>See how words are built</strong> on the <a href="words.html">Word building</a> page. The
+            dictionary prints the pieces of most words; the page shows them, and lists together the words
+            in which the same piece is printed.
+        </li>
+        <li>
+            <strong>See how verbs change</strong> on the <a href="verbs.html">Verbs</a> page: the five forms the
+            dictionary gives for every verb, and the seven verbs it writes out in full.
+        </li>
+        <li><strong>Play short practice games</strong> over the flashcard words, the seven verbs and the pieces of words.</li>
+        <li><strong>Go through the words by topic</strong>, or follow the six steps of <a href="learn.html">Start here</a>.</li>
     </ul>
+    <p>
+        These pages arrange what the books print; they add no word and no form. What they add is plain
+        English: the comparisons with English sounds, the names of the persons of a verb, the short
+        explanations. Those are this site's, and no speaker has checked them.
+    </p>
 
     <h3>How a word is written</h3>
     <ul>

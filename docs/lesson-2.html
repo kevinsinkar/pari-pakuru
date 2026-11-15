@@ -22,7 +22,8 @@
   <!-- Fuse.js for client-side search -->
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
 
-  <!-- Client-side search -->
+  <!-- Shared helpers of the learning pages (syllables, word pieces), then the client-side search -->
+  <script src="static/js/skiri.js"></script>
   <script src="static/js/search.js"></script>
 </head>
 <body>
@@ -46,7 +47,7 @@
             <span>
               <strong class="font-serif" style="font-size:1.2rem; letter-spacing:-0.3px;">P&#226;ri Pak&#251;ru'</strong>
               <br>
-              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Skiri Pawnee Dictionary</small>
+              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Learn Skiri Pawnee</small>
             </span>
           </a>
         </li>
@@ -62,14 +63,20 @@
       </button>
 
       <ul class="nav-links">
+        
+        <li><a href="learn.html" >Start here</a></li>
         <li><a href="index.html" >Dictionary</a></li>
         
         
+        <li><a href="guide.html" >Sounds</a></li>
+        <li><a href="words.html" >Word building</a></li>
+        <li><a href="verbs.html" >Verbs</a></li>
         <li><a href="lessons.html" aria-current="page">Lessons</a></li>
-        
         <li><a href="flashcards.html" >Flashcards</a></li>
+        <li><a href="practice.html" >Practice</a></li>
         
-        <li><a href="guide.html" >Syllable Guide</a></li>
+        
+        <li><a href="topics.html" >Topics</a></li>
         
         <li><a href="about.html" >About</a></li>
 
@@ -164,12 +171,11 @@
     <td>a red stick</td>
     <td>
       
-        <a href="index.html?q=rakis" lang="x-paw">rakis</a>
-        <span class="badge badge-class">N</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small><span class="pitch-high">DUH</span>-kihs</small></td>
-    <td class="ipa" lang="x-paw"><small>[rə́·kɪs]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -189,12 +195,11 @@
     <td>it's green</td>
     <td>
       
-        <a href="index.html?q=tiki" lang="x-paw">tiki</a>
-        <span class="badge badge-class">N</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small><span class="pitch-high">TIH</span>-kih</small></td>
-    <td class="ipa" lang="x-paw"><small>[tɪ́·kɪ]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -202,12 +207,11 @@
     <td>it's yellow</td>
     <td>
       
-        <a href="index.html?q=tir" lang="x-paw">tir</a>
-        <span class="badge badge-class">VI</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tih(d) <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tɪ(r)–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -215,12 +219,11 @@
     <td>a yellow stick</td>
     <td>
       
-        <a href="index.html?q=rakis" lang="x-paw">rakis</a>
-        <span class="badge badge-class">N</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small><span class="pitch-high">DUH</span>-kihs</small></td>
-    <td class="ipa" lang="x-paw"><small>[rə́·kɪs]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -240,12 +243,11 @@
     <td>a white stick</td>
     <td>
       
-        <a href="index.html?q=rakis" lang="x-paw">rakis</a>
-        <span class="badge badge-class">N</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small><span class="pitch-high">DUH</span>-kihs</small></td>
-    <td class="ipa" lang="x-paw"><small>[rə́·kɪs]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -323,101 +325,6 @@
       <span class="lesson-dialogue__eng">It is not blue, it is red.</span>
     </div>
     
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">NOUN PHRASE: Noun•Adjective</span>
-      <span class="lesson-dialogue__eng"></span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">A word which describes or qualifies a noun is an adjective.</span>
-      <span class="lesson-dialogue__eng"></span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Words, for example, like red, tall, heavy, are adjectives.</span>
-      <span class="lesson-dialogue__eng">In Paw-</span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">nee, adjectives can come directly after the noun in a noun</span>
-      <span class="lesson-dialogue__eng"></span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">phrase, as in the following examples.</span>
-      <span class="lesson-dialogue__eng"></span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">kiríks•pahat</span>
-      <span class="lesson-dialogue__eng"></span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">a red bead</span>
-      <span class="lesson-dialogue__eng"></span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">kurúks•katit</span>
-      <span class="lesson-dialogue__eng"></span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">a black bear.</span>
-      <span class="lesson-dialogue__eng"></span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Noun phrases like those above can be used as proper names.</span>
-      <span class="lesson-dialogue__eng"></span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Or, as in the examples below, they can be used as statements.</span>
-      <span class="lesson-dialogue__eng"></span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Ti kiríks•pahat.</span>
-      <span class="lesson-dialogue__eng">It's a red bead.</span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">(The bead is red.)</span>
-      <span class="lesson-dialogue__eng"></span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Ti kurúks•katit.</span>
-      <span class="lesson-dialogue__eng">It's a black bear.</span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">(The bear is black.)</span>
-      <span class="lesson-dialogue__eng"></span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Sometimes the noun will stand separately outside the adjec-</span>
-      <span class="lesson-dialogue__eng"></span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">tive phrase, as in:</span>
-      <span class="lesson-dialogue__eng"></span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Kiriks tí pahaat.</span>
-      <span class="lesson-dialogue__eng">The bead is red.</span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Kuruks tí katiit.</span>
-      <span class="lesson-dialogue__eng">The bear is black.</span>
-    </div>
-    
   </article>
   
   <p><small>Dialogue lines are shown in the Blue Book's practical spelling,
@@ -441,7 +348,7 @@
     <td>fox</td>
     <td>
       
-        <a href="index.html?q=kiwaku'" lang="x-paw">kiwaku'</a>
+        <a href="index.html?id=SK-kiwakuq-p448-3975" lang="x-paw">kiwaku'</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -454,7 +361,7 @@
     <td>bear</td>
     <td>
       
-        <a href="index.html?q=kuruks" lang="x-paw">kuruks</a>
+        <a href="index.html?id=SK-kuruks-p102-1986" lang="x-paw">kuruks</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -467,12 +374,11 @@
     <td>snake</td>
     <td>
       
-        <a href="index.html?q=rutki rahâwarî" lang="x-paw">rutki rahâwarî</a>
-        <span class="badge badge-class">N</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small><span class="pitch-high">DOOT</span>-kih duh-<span class="pitch-high">HAH</span>-wuh-dee</small></td>
-    <td class="ipa" lang="x-paw"><small>[rʊ́t·kɪ rə·haá·wə·rii]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -480,7 +386,7 @@
     <td>snake</td>
     <td>
       
-        <a href="index.html?q=rutpâčat" lang="x-paw">rutpâčat</a>
+        <a href="index.html?id=SK-rutpaacat-p148-2882" lang="x-paw">rutpâčat</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -493,12 +399,12 @@
     <td>green grass</td>
     <td>
       
-        <a href="index.html?q=ka" lang="x-paw">ka</a>
-        <span class="badge badge-class">VL</span>
+        <a href="index.html?id=SK-kataaruq-p80-1478" lang="x-paw">katâru'</a>
+        <span class="badge badge-class">N</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small>kuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–kə–]</small></td>
+    <td class="lesson-vocab__pron"><small><span class="pitch-high">KUH</span>-tah-doo'</small></td>
+    <td class="ipa" lang="x-paw"><small>[kə́·taa·rʊʔ]</small></td>
   </tr>
   
   <tr>
@@ -506,12 +412,11 @@
     <td>sun</td>
     <td>
       
-        <a href="index.html?q=sa" lang="x-paw">sa</a>
-        <span class="badge badge-class">VI</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>suh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–sa–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -519,7 +424,7 @@
     <td>moon</td>
     <td>
       
-        <a href="index.html?q=pa" lang="x-paw">pa</a>
+        <a href="index.html?id=BB-pa-0029" lang="x-paw">pa</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -532,7 +437,7 @@
     <td>star</td>
     <td>
       
-        <a href="index.html?q=hûpirit" lang="x-paw">hûpirit</a>
+        <a href="index.html?id=SK-huupirit-p51-0850" lang="x-paw">hûpirit</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -545,12 +450,12 @@
     <td>sky, heavens, universe</td>
     <td>
       
-        <a href="index.html?q=tir" lang="x-paw">tir</a>
-        <span class="badge badge-class">VI</span>
+        <a href="index.html?id=SK-tiirawaahat-p165-3250" lang="x-paw">Tîrawâhat</a>
+        <span class="badge badge-class">N</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tih(d) <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tɪ(r)–]</small></td>
+    <td class="lesson-vocab__pron"><small>tee-<span class="pitch-high">DUH</span>-wah-huht</small></td>
+    <td class="ipa" lang="x-paw"><small>[tii·rə́·waa·hət]</small></td>
   </tr>
   
   <tr>
@@ -558,7 +463,7 @@
     <td>cloud</td>
     <td>
       
-        <a href="index.html?q=cka'u'" lang="x-paw">cka'u'</a>
+        <a href="index.html?id=SK-ckaquq-p30-0460" lang="x-paw">cka'u'</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -595,12 +500,12 @@
     <td>Arkansas River</td>
     <td>
       
-        <a href="index.html?q=kic" lang="x-paw">kic</a>
-        <span class="badge badge-class">VD</span>
+        <a href="index.html?id=SK-kicka-p85-1602" lang="x-paw">kicka</a>
+        <span class="badge badge-class">N</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small>kihts <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–kɪts–]</small></td>
+    <td class="lesson-vocab__pron"><small><span class="pitch-high">KIHTS</span>-kuh</small></td>
+    <td class="ipa" lang="x-paw"><small>[kɪ́ts·kə]</small></td>
   </tr>
   
   <tr>
@@ -608,12 +513,11 @@
     <td>Platte River or "flat river"</td>
     <td>
       
-        <a href="index.html?q=kic" lang="x-paw">kic</a>
-        <span class="badge badge-class">VD</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>kihts <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–kɪts–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -621,12 +525,12 @@
     <td>Missouri River or "wise river"</td>
     <td>
       
-        <a href="index.html?q=kic" lang="x-paw">kic</a>
-        <span class="badge badge-class">VD</span>
+        <a href="index.html?id=SK-kicpaarukstiiq-p87-1643" lang="x-paw">Kicpârukstî'</a>
+        <span class="badge badge-class">N</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small>kihts <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–kɪts–]</small></td>
+    <td class="lesson-vocab__pron"><small>kihts-<span class="pitch-high">PAH</span>-dooks-tee'</small></td>
+    <td class="ipa" lang="x-paw"><small>[kɪts·paá·rʊks·tiiʔ]</small></td>
   </tr>
   
   <tr>
@@ -634,12 +538,11 @@
     <td>Cimarron River or "salt river"</td>
     <td>
       
-        <a href="index.html?q=kic" lang="x-paw">kic</a>
-        <span class="badge badge-class">VD</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>kihts <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–kɪts–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -647,7 +550,7 @@
     <td>Ohio River or "something's always floating down"</td>
     <td>
       
-        <a href="index.html?q=uhaiwuʔ" lang="x-paw">uhaiwuʔ</a>
+        <a href="index.html?id=BB-uhaiwu-0090" lang="x-paw">uhaiwuʔ</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -660,12 +563,12 @@
     <td>Mississippi River</td>
     <td>
       
-        <a href="index.html?q=kic" lang="x-paw">kic</a>
-        <span class="badge badge-class">VD</span>
+        <a href="index.html?id=SK-kickaatiit-p86-1612" lang="x-paw">kickâtît</a>
+        <span class="badge badge-class">N</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small>kihts <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–kɪts–]</small></td>
+    <td class="lesson-vocab__pron"><small><span class="pitch-high">KIHTS</span>-kah-teet</small></td>
+    <td class="ipa" lang="x-paw"><small>[kɪ́ts·kaa·tiit]</small></td>
   </tr>
   
   <tr>
@@ -673,12 +576,11 @@
     <td>Black Bear Creek</td>
     <td>
       
-        <a href="index.html?q=kic" lang="x-paw">kic</a>
-        <span class="badge badge-class">VD</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>kihts <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–kɪts–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   </tbody>
@@ -726,13 +628,18 @@
   <h4>Grammar &amp; Notes</h4>
   
   <details class="lesson-note" open>
+    <summary><strong>Noun Phrase: Noun•Adjective</strong></summary>
+    <p>A word which describes or qualifies a noun is an adjective. Words, for example, like red, tall, heavy, are adjectives. In Pawnee, adjectives can come directly after the noun in a noun phrase, as in the following examples. kiríks•pahat a red bead kurúks•katit a black bear. Noun phrases like those above can be used as proper names. Or, as in the examples below, they can be used as statements. Ti kiríks•pahat. It's a red bead. (The bead is red.) Ti kurúks•katit. It's a black bear. (The bear is black.) Sometimes the noun will stand separately outside the adjective phrase, as in: Kiriks tí pahaat. The bead is red. Kuruks tí katiit. The bear is black.</p>
+  </details>
+  
+  <details class="lesson-note" >
     <summary><strong>A Sound Change</strong></summary>
-    <p>Many Pawnee roots begin with r. This beginning r will change to a t if the last letter of the root before it in a phrase ends with any of the following hard consonants: p, t, k, ts, or s. Note the following example: rakis + rahkata = rakis•tahkata a yellow stick</p>
+    <p>Many Pawnee roots begin with r. This beginning r will change to a t if the last letter of the root before it in a phrase ends with any of the following hard consonants: p, t, k, ts, or s. Note the following example: rakis + rahkata = rakis•táhkata a yellow stick</p>
   </details>
   
   <details class="lesson-note" >
     <summary><strong>Pronunciation</strong></summary>
-    <p>To speak Pawnee well, you must learn to draw out or lengthen certain vowels. It is not possible to make a simple rule that will tell you when to do this. So listen carefully to speakers of Pawnee and to the tapes which accompany these lessons. Listen for the vowels which are drawn out and those which are not. In this way you will learn to pronounce the words in a genuine Pawnee fashion. Here are some examples of simple words with both long and normal (short) vowels in the first syllable of the word: Short Vowels rakis kiriks nawa riwit (rd-kis) (ki-riks) (rd-wa) (ri-wit) wood bead now skunk Long Vowels Pari' (pd-ri ') Pawnee hitu' (hi-tu ') feather raku' (ra-ku') box kitsu' (ki-tsu ') liquid In addition, the Skidi pronunciation of a word may keep a syllable short where South Band pronunciation lengthens it. Suks•paku' (SB) (suks pa-ku') You (1) say it! (SK)(suks pd-ku ') You (1) say it! As a serious student of the Pawnee language, you should listen for and imitate these long syllables, and try to get the right quality of the vowel. To help in remembering a long syllable, use a pencil to underline the vowel of the long syllable right in your book. raku' or raku' box</p>
+    <p>To speak Pawnee well, you must learn to draw out or lengthen certain vowels. It is not possible to make a simple rule that will tell you when to do this. So listen carefully to speakers of Pawnee and to the tapes which accompany these lessons. Listen for the vowels which are drawn out and those which are not. In this way you will learn to pronounce the words in a genuine Pawnee fashion. Here are some examples of simple words with both long and normal (short) vowels in the first syllable of the word: Short Vowels rakis kiriks nawa riwit (rá-kis) (kí-riks) (rá-wa) (rí-wit) wood bead now skunk Long Vowels Pari' (pá-ri') Pawnee hitu' (hí-tu') feather raku' (rá-ku') box kitsu' (kí-tsu') liquid In addition, the Skidi pronunciation of a word may keep a syllable short where South Band pronunciation lengthens it. Suks•páku' (SB) (suks-pá-ku') You (1) say it! (SK) (suks-pá-ku') You (1) say it! As a serious student of the Pawnee language, you should listen for and imitate these long syllables, and try to get the right quality of the vowel. To help in remembering a long syllable, use a pencil to underline the vowel of the long syllable right in your book. raku' or raku' box</p>
   </details>
   
   <details class="lesson-note" >
@@ -742,17 +649,17 @@
   
   <details class="lesson-note" >
     <summary><strong>Interpretation</strong></summary>
-    <p>Perhaps the most interesting and enjoyable part of studying Pawnee is learning how to interpret Pawnee words, or how to understand the meaning of a word by figuring out its smaller parts or roots. Notice how the two words for snake can be interpreted by comparing them to other words in the lesson. rutki (SB) snake rut + ki = serpent + small thing = snake rakis stick, piece of wood rak + kis = wood + small thing = stick Most Pawnee words are derived or made up from small roots. One of these small roots used to make up words is + kits + or + ki +, which means liquid. kitsu'	liquid kits + u' hetu' breast het•kítsu' milk rasitu' ice kira•rasitu' water ki + ra + rasitu ' liquid from ice In addition, most objects in nature, which Engish may name simply river or tree, will be named in Pawnee by a descriptive phrase: rá•ha•pi tree or "it's wood standing" ti rá•ha•pi There is a tree. + u + in a line + hat + goes by ti kits•úhat stream, river or "it's liquid going by"</p>
+    <p>Perhaps the most interesting and enjoyable part of studying Pawnee is learning how to interpret Pawnee words, or how to understand the meaning of a word by figuring out its smaller parts or roots. Notice how the two words for snake can be interpreted by comparing them to other words in the lesson. rutki (SB) snake rut + ki = serpent + small thing = snake rakis stick, piece of wood rak + kis = wood + small thing = stick Most Pawnee words are derived or made up from small roots. One of these small roots used to make up words is + kits + or + ki +, which means liquid. kitsu'	liquid kits + u' hetu' breast het•kítsu' milk rasítu' ice kira•rásitu' water ki + ra + rasitu' liquid from ice In addition, most objects in nature, which Engish may name simply river or tree, will be named in Pawnee by a descriptive phrase: rá•ha•pi tree or "it's wood standing" ti rá•ha•pi There is a tree. + u + in a line + hat + goes by ti kits•úhat stream, river or "it's liquid going by"</p>
   </details>
   
   <details class="lesson-note" >
     <summary><strong>Names Of Rivers</strong></summary>
-    <p>Kits•Ka Kits•Katus Kits•Paruksti Kits•Kait Uhaiwu' Kits•Katit Kits•Kurúks•Katit</p>
+    <p>Kits•Ka Kits•Katus Kits•Paruksti Kits•Kait Uháiwu' Kits•Katit Kits•Kurúks•Katit</p>
   </details>
   
   <details class="lesson-note" >
     <summary><strong>Useful Phrases</strong></summary>
-    <p>1. Súks•atku! 2. Sisúks•atku! 3. Suksták•atku! 4. Ka rás•atkuku'? 5. Pahitu'! Asku súks•paku'. Kitu súksta•paku'. Arkansas River Platte River or "flat river" Missouri River or "wise river" Cimarron River or "salt river" Ohio River or "something's always floating down" Mississippi River Black Bear Creek You (1)* listen! (to one person) You (2) listen! You (3+) listen! Are you listening? Quiet, behave! One of you say it. (or, Say it one at a time.) All of you say it. (or, Say it together.) *When speaking Pawnee you use a different form for you when addressing one person, two people, or three or more people. In this book we will use (1), (2), or (3+) after the you to show how many people are referred to. KIRIKÉ RUT•U'?</p>
+    <p>1. Súks•atku! 2. Sisúks•atku! 3. Suksták•atku! 4. Ka rás•atkuku'? 5. Pahítu'! Asku súks•paku'. Kitu súksta•paku'. Arkansas River Platte River or "flat river" Missouri River or "wise river" Cimarron River or "salt river" Ohio River or "something's always floating down" Mississippi River Black Bear Creek You (1)* listen! (to one person) You (2) listen! You (3+) listen! Are you listening? Quiet, behave! One of you say it. (or, Say it one at a time.) All of you say it. (or, Say it together.) *When speaking Pawnee you use a different form for you when addressing one person, two people, or three or more people. In this book we will use (1), (2), or (3+) after the you to show how many people are referred to.</p>
   </details>
   
 </section>
@@ -777,11 +684,6 @@
   </details>
   
 
-  
-  <details class="lesson-note">
-    <summary><strong>Fill in the blank</strong> — complete the dialogue line</summary>
-    <div id="ex-blanks"></div>
-  </details>
   
 
   
@@ -819,7 +721,7 @@
   </script>
   
 <script>
-const EX = {"blanks": [{"answer": "kuruks", "blanked": "_____ t\u00ed katiit.", "english": "The bear is black.", "options": ["rak\u00eds\u2022taka", "kuruks", "Kits\u2022Ka", "Kits\u2022Katus"]}], "matching": [{"english": "sun", "skiri": "sakurti\u0027"}, {"english": "a white stick", "skiri": "rak\u00eds\u2022taka"}, {"english": "it\u0027s green", "skiri": "ti k\u00edrareus"}, {"english": "it\u0027s red", "skiri": "t\u00ed pahaat"}, {"english": "it\u0027s cloudy", "skiri": "ti\u2022tska\u2022k\u00e1tasa"}, {"english": "it\u0027s against it", "skiri": "ti k\u00e1tasa"}, {"english": "Arkansas River", "skiri": "Kits\u2022Ka"}, {"english": "Black Bear Creek", "skiri": "Kits\u2022Kur\u00faks\u2022Katit"}], "say": [{"english": "Are you listening?", "skiri": "Ka r\u00e1s\u2022atkuku\u0027?"}, {"english": "In Paw-", "skiri": "Words, for example, like red, tall, heavy, are adjectives."}, {"english": "Is the stick red?", "skiri": "Ka r\u00e1\u2022pahaat rakis?"}, {"english": "All of you say it. (or, Say it together.)", "skiri": "Kitu s\u00faksta\u2022paku\u0027."}, {"english": "What Color Is it?", "skiri": "KIRIK\u00c9 RA\u2022TARAWIS?"}]};
+const EX = {"blanks": [], "matching": [{"english": "it\u0027s cloudy", "skiri": "ti\u2022tska\u2022k\u00e1tasa"}, {"english": "a red stick", "skiri": "rak\u00eds\u2022pahat"}, {"english": "Platte River or \"flat river\"", "skiri": "Kits\u2022Katus"}, {"english": "Cimarron River or \"salt river\"", "skiri": "Kits\u2022Kait"}, {"english": "a white stick", "skiri": "rak\u00eds\u2022taka"}, {"english": "Missouri River or \"wise river\"", "skiri": "Kits\u2022Paruksti"}, {"english": "star", "skiri": "hupirit"}, {"english": "moon", "skiri": "pa"}], "say": [{"english": "Quiet, behave!", "skiri": "Pah\u00edtu\u0027!"}, {"english": "Is the stick blue?", "skiri": "Ka r\u00e1\u2022tareus rakis?"}, {"english": "You (3+) listen!", "skiri": "Sukst\u00e1k\u2022atku!"}, {"english": "You (1)* listen! (to one person)", "skiri": "S\u00faks\u2022atku!"}, {"english": "Are you listening?", "skiri": "Ka r\u00e1s\u2022atkuku\u0027?"}]};
 
 // ── Matching ─────────────────────────────────────────────────────
 (function() {

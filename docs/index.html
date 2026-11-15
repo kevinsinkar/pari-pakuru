@@ -22,7 +22,8 @@
   <!-- Fuse.js for client-side search -->
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
 
-  <!-- Client-side search -->
+  <!-- Shared helpers of the learning pages (syllables, word pieces), then the client-side search -->
+  <script src="static/js/skiri.js"></script>
   <script src="static/js/search.js"></script>
 </head>
 <body>
@@ -46,7 +47,7 @@
             <span>
               <strong class="font-serif" style="font-size:1.2rem; letter-spacing:-0.3px;">P&#226;ri Pak&#251;ru'</strong>
               <br>
-              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Skiri Pawnee Dictionary</small>
+              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Learn Skiri Pawnee</small>
             </span>
           </a>
         </li>
@@ -62,14 +63,20 @@
       </button>
 
       <ul class="nav-links">
+        
+        <li><a href="learn.html" >Start here</a></li>
         <li><a href="index.html" aria-current="page">Dictionary</a></li>
         
         
+        <li><a href="guide.html" >Sounds</a></li>
+        <li><a href="words.html" >Word building</a></li>
+        <li><a href="verbs.html" >Verbs</a></li>
         <li><a href="lessons.html" >Lessons</a></li>
-        
         <li><a href="flashcards.html" >Flashcards</a></li>
+        <li><a href="practice.html" >Practice</a></li>
         
-        <li><a href="guide.html" >Syllable Guide</a></li>
+        
+        <li><a href="topics.html" >Topics</a></li>
         
         <li><a href="about.html" >About</a></li>
 
@@ -88,7 +95,7 @@
 <section style="padding-bottom:1rem;">
   <div class="hero-search">
     <h1 class="font-serif" style="text-align:center; margin-bottom:0.2em;">P&#226;ri Pak&#251;ru'</h1>
-    <p style="text-align:center; color:var(--earth-500); margin-bottom:1.5rem;">Skiri Pawnee Dictionary &amp; Language Reference</p>
+    <p style="text-align:center; color:var(--earth-500); margin-bottom:1.5rem;">Learn Skiri Pawnee: a dictionary, lessons, and ways to practise</p>
 
     
     <div role="radiogroup" aria-label="Search direction" style="
@@ -160,15 +167,44 @@
   <div>
     <div id="search-results" class="search-results-container">
       
-      <article style="text-align:center; padding:2rem; color:var(--earth-500);">
-        <p class="font-serif" style="font-size:1.3rem; color:var(--earth-700);">
-          Welcome to P&#226;ri Pak&#251;ru'
-        </p>
-        <p>Search for a Skiri Pawnee word above, or browse by category.</p>
-        <div style="margin-top:1.5rem;">
-          <a href="index.html" role="button" class="outline">Browse by Category</a>
+      
+      <div class="home-ways">
+        <p class="font-serif home-ways-title">Look a word up above, or choose a way to learn.</p>
+        <div class="ways-grid">
+          <a class="way-card way-card--lead" href="learn.html">
+            <span class="way-name">Start here</span>
+            <span class="way-text">New to the language? Six steps, from the sounds to daily practice.</span>
+          </a>
+          <a class="way-card" href="guide.html">
+            <span class="way-name">Sounds</span>
+            <span class="way-text">The fifteen sounds, and any word taken syllable by syllable.</span>
+          </a>
+          <a class="way-card" href="words.html">
+            <span class="way-name">Word building</span>
+            <span class="way-text">The pieces words are made of, and the words that share a piece.</span>
+          </a>
+          <a class="way-card" href="verbs.html">
+            <span class="way-name">Verbs</span>
+            <span class="way-text">The five forms of every verb, and seven verbs written out in full.</span>
+          </a>
+          <a class="way-card" href="lessons.html">
+            <span class="way-name">Lessons</span>
+            <span class="way-text">The twenty lessons of the textbook <em>Pari Pakuru'</em>, with exercises.</span>
+          </a>
+          <a class="way-card" href="flashcards.html">
+            <span class="way-name">Flashcards</span>
+            <span class="way-text">Everyday words in weekly sets, on screen or on paper.</span>
+          </a>
+          <a class="way-card" href="practice.html">
+            <span class="way-name">Practice</span>
+            <span class="way-text">Six short games: meanings, spelling, verb forms, word pieces.</span>
+          </a>
+          <a class="way-card" href="topics.html">
+            <span class="way-name">Topics</span>
+            <span class="way-text">The words for one part of life at a time: animals, food, family.</span>
+          </a>
         </div>
-      </article>
+      </div>
     </div>
   </div>
 
@@ -179,13 +215,13 @@
       <span class="section-label">New to Skiri Pawnee?</span>
       <strong style="display:block; margin-bottom:0.5rem; color:var(--earth-800);">Start Here</strong>
       <p style="font-size:0.85rem; color:var(--earth-600); margin-bottom:0.75rem;">
-        Begin with the Blue Book — the Pawnee Nation's own 1979 language course —
-        then build vocabulary with flashcards and the syllable guide.
+        Begin with the sounds, then your first words, then how words and verbs are built.
       </p>
       <div style="display:flex; flex-direction:column; gap:0.4rem;">
-        <a href="lessons.html" class="start-here-link">Blue Book Lessons</a>
-        <a href="flashcard-1.html" class="start-here-link">Flashcards: Week 1</a>
-        <a href="guide.html" class="start-here-link">Syllable Guide</a>
+        <a href="learn.html" class="start-here-link">The six steps</a>
+        <a href="guide.html" class="start-here-link">1. The sounds</a>
+        <a href="flashcard-1.html" class="start-here-link">2. Flashcards: Week 1</a>
+        <a href="lessons.html" class="start-here-link">The textbook's lessons</a>
       </div>
     </article>
 
@@ -202,20 +238,20 @@
 
   <div class="wotd-body">
     
-    <a href="index.html" style="text-decoration:none;">
-      <p class="wotd-headword" lang="x-paw">paresuʔ</p>
+    <a href="index.html?id=BB-cktiskakusu-0003" style="text-decoration:none;">
+      <p class="wotd-headword" lang="x-paw">ckuskakusuʔ</p>
     </a>
 
     
     
     <small class="font-serif" style="color:var(--earth-500); display:block; margin-bottom:0.6rem;">
-      puh-deh-soo'
+      tskoos-kuh-koo-soo'
     </small>
     
 
     
     
-    <p class="wotd-gloss">hunter</p>
+    <p class="wotd-gloss">chair</p>
     
 
     
@@ -240,72 +276,72 @@
 
   <div style="display:flex; flex-wrap:wrap; gap:0.4rem;">
     
-    <a class="cat-tag" href="index.html?q=location">
+    <a class="cat-tag" href="topics.html?tag=location">
       location
       <small style="opacity:0.6; font-size:0.65rem;">598</small>
     </a>
     
-    <a class="cat-tag" href="index.html?q=motion">
+    <a class="cat-tag" href="topics.html?tag=motion">
       motion
       <small style="opacity:0.6; font-size:0.65rem;">429</small>
     </a>
     
-    <a class="cat-tag" href="index.html?q=body">
+    <a class="cat-tag" href="topics.html?tag=body">
       body
       <small style="opacity:0.6; font-size:0.65rem;">392</small>
     </a>
     
-    <a class="cat-tag" href="index.html?q=social">
+    <a class="cat-tag" href="topics.html?tag=social">
       social
       <small style="opacity:0.6; font-size:0.65rem;">358</small>
     </a>
     
-    <a class="cat-tag" href="index.html?q=animal">
+    <a class="cat-tag" href="topics.html?tag=animal">
       animal
       <small style="opacity:0.6; font-size:0.65rem;">320</small>
     </a>
     
-    <a class="cat-tag" href="index.html?q=housing">
+    <a class="cat-tag" href="topics.html?tag=housing">
       housing
       <small style="opacity:0.6; font-size:0.65rem;">255</small>
     </a>
     
-    <a class="cat-tag" href="index.html?q=plant">
+    <a class="cat-tag" href="topics.html?tag=plant">
       plant
       <small style="opacity:0.6; font-size:0.65rem;">241</small>
     </a>
     
-    <a class="cat-tag" href="index.html?q=food">
+    <a class="cat-tag" href="topics.html?tag=food">
       food
       <small style="opacity:0.6; font-size:0.65rem;">236</small>
     </a>
     
-    <a class="cat-tag" href="index.html?q=water">
+    <a class="cat-tag" href="topics.html?tag=water">
       water
       <small style="opacity:0.6; font-size:0.65rem;">210</small>
     </a>
     
-    <a class="cat-tag" href="index.html?q=land">
+    <a class="cat-tag" href="topics.html?tag=land">
       land
       <small style="opacity:0.6; font-size:0.65rem;">197</small>
     </a>
     
-    <a class="cat-tag" href="index.html?q=color">
+    <a class="cat-tag" href="topics.html?tag=color">
       color
       <small style="opacity:0.6; font-size:0.65rem;">180</small>
     </a>
     
-    <a class="cat-tag" href="index.html?q=celestial">
+    <a class="cat-tag" href="topics.html?tag=celestial">
       celestial
       <small style="opacity:0.6; font-size:0.65rem;">171</small>
     </a>
     
-    <a class="cat-tag" href="index.html?q=emotion">
+    <a class="cat-tag" href="topics.html?tag=emotion">
       emotion
       <small style="opacity:0.6; font-size:0.65rem;">153</small>
     </a>
     
-    <a class="cat-tag" href="index.html?q=tool">
+    <a class="cat-tag" href="topics.html?tag=tool">
       tool
       <small style="opacity:0.6; font-size:0.65rem;">151</small>
     </a>
@@ -316,7 +352,7 @@
     </a>
     
     
-    <a class="cat-tag" href="index.html" style="font-style:italic;">
+    <a class="cat-tag" href="topics.html" style="font-style:italic;">
       All categories...
     </a>
     

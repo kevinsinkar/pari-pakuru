@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How words are built — Skiri Pawnee Dictionary</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;1,8..60,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Pico CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+
+  <!-- Custom Pawnee theme -->
+  <link rel="stylesheet" href="static/css/pawnee-theme.css">
+
+  <!-- HTMX (optional for live features) -->
+  <script src="https://unpkg.com/htmx.org@2.0.4"></script>
+
+  <!-- Fuse.js for client-side search -->
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+
+  <!-- Shared helpers of the learning pages (syllables, word pieces), then the client-side search -->
+  <script src="static/js/skiri.js"></script>
+  <script src="static/js/search.js"></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <!-- ====== Top Navigation ====== -->
+  <header class="container">
+    <nav class="site-nav">
+      <ul>
+        <li>
+          <a href="index.html" class="contrast" style="text-decoration:none; display:flex; align-items:center; gap:0.75rem;">
+            <span style="
+              width:36px; height:36px; border-radius:50%;
+              background: linear-gradient(135deg, var(--clay-600), var(--gold-400));
+              display:flex; align-items:center; justify-content:center;
+            ">
+              
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2L15.5 8.5L22 12L15.5 15.5L12 22L8.5 15.5L2 12L8.5 8.5L12 2Z" fill="white" opacity="0.9"/>
+              </svg>
+            </span>
+            <span>
+              <strong class="font-serif" style="font-size:1.2rem; letter-spacing:-0.3px;">P&#226;ri Pak&#251;ru'</strong>
+              <br>
+              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Learn Skiri Pawnee</small>
+            </span>
+          </a>
+        </li>
+      </ul>
+
+      
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleNav(this)">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+
+      <ul class="nav-links">
+        
+        <li><a href="learn.html" >Start here</a></li>
+        <li><a href="index.html" >Dictionary</a></li>
+        
+        
+        <li><a href="guide.html" >Sounds</a></li>
+        <li><a href="words.html" aria-current="page">Word building</a></li>
+        <li><a href="verbs.html" >Verbs</a></li>
+        <li><a href="lessons.html" >Lessons</a></li>
+        <li><a href="flashcards.html" >Flashcards</a></li>
+        <li><a href="practice.html" >Practice</a></li>
+        
+        
+        <li><a href="topics.html" >Topics</a></li>
+        
+        <li><a href="about.html" >About</a></li>
+
+        
+        
+      </ul>
+    </nav>
+    
+    <form action="index.html" method="get" class="nav-search" role="search">
+      <input
+        type="search"
+        name="q"
+        placeholder="Search Skiri or English..."
+        value=""
+        aria-label="Search the dictionary"
+        autocomplete="off"
+      >
+    </form>
+    
+  </header>
+
+  <!-- ====== Main Content ====== -->
+  <main class="container" id="main-content">
+    <div id="live-results"></div>
+    
+
+<article class="learn-page">
+  <p class="learn-kicker">Word building</p>
+  <h2>How Skiri words are built</h2>
+  <p class="learn-lead">
+    Many Skiri words are made of smaller pieces, and the dictionary prints the pieces
+    for most of its words. Learn to read them and one known piece opens up
+    dozens of words.
+  </p>
+
+  <div class="learn-jump">
+    <a href="#noun-pieces">Noun endings</a>
+    <a href="#reading">Reading a derivation</a>
+    <a href="#explorer">Words that share a piece</a>
+    <a href="#labels">The labels</a>
+  </div>
+
+  <section id="noun-pieces">
+    <h3>1. Start with five pieces that make nouns</h3>
+    <p>
+      Parks lists five pieces that are added to make nouns, each with a word taken apart.
+      The first, <span lang="x-paw" class="result-skiri">-uʔ</span>, ends hundreds of nouns:
+      it marks a noun that stands on its own, and it has no translation.
+    </p>
+    <div id="wb-table5" class="affix-grid" aria-live="polite"><p class="loading-note">Loading the dictionary's tables…</p></div>
+    <p class="source-note">Parks and Pratt, <em>A Dictionary of Skiri Pawnee</em>, Table 5, p. 31, as printed.</p>
+
+    <details class="learn-details">
+      <summary>Endings for place and means (Table 4)</summary>
+      <div id="wb-table4" class="guide-table-wrap"></div>
+      <p class="source-note">Table 4, p. 30, as printed. INST is “with, by means of”; LOC is “in, at, on”.</p>
+    </details>
+  </section>
+
+  <section id="reading">
+    <h3>2. Read what the dictionary prints</h3>
+    <p>
+      After the meaning of a word the dictionary gives its derivation in angled brackets:
+      first the pieces, then a literal translation. Here are six words as it prints them.
+      Choose any piece to see the other words that have it.
+    </p>
+    <div id="wb-examples" class="example-grid"></div>
+    <ul class="notation-list">
+      <li><span class="notation-sign">+</span> <span>A plus sign stands between the main pieces of the word.</span></li>
+      <li><span class="notation-sign">. -</span> <span>A dot or a hyphen inside a piece joins the smaller parts of one stem.</span></li>
+      <li><span class="notation-sign" lang="x-paw">asaa-</span> <span>A dash at the end marks a piece that never stands alone as a word.</span></li>
+      <li><span class="notation-sign" lang="x-paw">(ut...)</span> <span>A note like this after a verb stem names the small piece (the <em>preverb</em>:
+        <span lang="x-paw">ut</span>, <span lang="x-paw">ir</span> or <span lang="x-paw">uur</span>) that the stem needs. In a word it comes before the stem.</span></li>
+      <li><span class="notation-sign">NOM</span> <span>Capital letters are grammatical labels. They are <a href="#labels">listed below</a>.</span></li>
+      <li><span class="notation-sign">, …</span> <span>The literal translation follows the comma. Its words are not always in the order of the pieces.</span></li>
+    </ul>
+  </section>
+
+  <section id="explorer">
+    <h3>3. Find the words that share a piece</h3>
+    <p>
+      Type a piece, or an English word, or choose one of the pieces the dictionary prints most often.
+      Reading a list of words side by side is how the meaning of a piece becomes clear.
+    </p>
+    <form id="wb-form" class="wb-form" onsubmit="return false">
+      <input type="search" id="wb-q" autocomplete="off" spellcheck="false"
+             placeholder="A piece (kaa, kic, uʔ) or an English word (water, inside)"
+             aria-label="A piece or an English word">
+      <div class="key-row" aria-label="Letters that are not on a keyboard">
+        <button type="button" class="key-btn" data-insert="ʔ" title="glottal stop">ʔ</button>
+        <button type="button" class="key-btn" data-insert="Ø" title="zero stem">Ø</button>
+      </div>
+    </form>
+    <div id="wb-common" class="piece-cloud" aria-label="The pieces printed most often"></div>
+    <div id="wb-result" aria-live="polite"></div>
+  </section>
+
+  <section id="labels">
+    <h3>4. The labels in capital letters</h3>
+    <p>These are Parks's own abbreviations, with the forms he lists for each.</p>
+    <div class="guide-table-wrap">
+      <table class="guide-table" id="wb-labels">
+        <thead><tr><th>Label</th><th>Stands for</th><th>Forms Parks lists</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="honest-note">
+    <h3>What this page is, and is not</h3>
+    <p>
+      Every piece and every literal translation here is printed in the dictionary; the page only cuts a
+      derivation at its plus signs and lists together the words in which the same piece is printed.
+      It does not say which word of a translation belongs to which piece. Where a piece is spelled like
+      a dictionary entry, the entries are listed, but several entries often share a spelling and the
+      dictionary does not say which one a piece is.
+    </p>
+    <p>
+      Words to do with ceremony are left out until the Pawnee community has reviewed them.
+      No speaker of Pawnee has reviewed this page.
+    </p>
+  </section>
+</article>
+
+  </main>
+
+  <!-- ====== Footer ====== -->
+  <footer class="container">
+    <small style="color:var(--earth-500);">
+      P&#226;ri Pak&#251;ru' — Skiri Pawnee Language Preservation Project.
+      Data: Douglas R. Parks Dictionary &amp; Blue Book Textbook.
+      Built with respect for the Pawnee Nation.
+    </small>
+  </footer>
+
+  <script>
+    function toggleNav(btn) {
+      var nav = btn.closest('nav');
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('nav-open');
+    }
+  </script>
+  
+<script src="static/js/words.js"></script>
+
+</body>
+</html>

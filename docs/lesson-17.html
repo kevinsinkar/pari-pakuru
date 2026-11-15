@@ -22,7 +22,8 @@
   <!-- Fuse.js for client-side search -->
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
 
-  <!-- Client-side search -->
+  <!-- Shared helpers of the learning pages (syllables, word pieces), then the client-side search -->
+  <script src="static/js/skiri.js"></script>
   <script src="static/js/search.js"></script>
 </head>
 <body>
@@ -46,7 +47,7 @@
             <span>
               <strong class="font-serif" style="font-size:1.2rem; letter-spacing:-0.3px;">P&#226;ri Pak&#251;ru'</strong>
               <br>
-              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Skiri Pawnee Dictionary</small>
+              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Learn Skiri Pawnee</small>
             </span>
           </a>
         </li>
@@ -62,14 +63,20 @@
       </button>
 
       <ul class="nav-links">
+        
+        <li><a href="learn.html" >Start here</a></li>
         <li><a href="index.html" >Dictionary</a></li>
         
         
+        <li><a href="guide.html" >Sounds</a></li>
+        <li><a href="words.html" >Word building</a></li>
+        <li><a href="verbs.html" >Verbs</a></li>
         <li><a href="lessons.html" aria-current="page">Lessons</a></li>
-        
         <li><a href="flashcards.html" >Flashcards</a></li>
+        <li><a href="practice.html" >Practice</a></li>
         
-        <li><a href="guide.html" >Syllable Guide</a></li>
+        
+        <li><a href="topics.html" >Topics</a></li>
         
         <li><a href="about.html" >About</a></li>
 
@@ -105,7 +112,7 @@
 
 <hgroup>
   
-  <h2 class="font-serif" lang="x-paw">TIRUKS•TSAKARIKI</h2>
+  <h2 class="font-serif" lang="x-paw">TÍRUKS•TSAK•ARIKI</h2>
   
   <h3>Lesson 17 — Yesterday</h3>
   <p><small>Blue Book pp. 100–104</small></p>
@@ -152,12 +159,11 @@
     <td>yesterday</td>
     <td>
       
-        <a href="index.html?q=tir" lang="x-paw">tir</a>
-        <span class="badge badge-class">VI</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tih(d) <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tɪ(r)–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -201,12 +207,11 @@
     <td>I was working</td>
     <td>
       
-        <a href="index.html?q=ta" lang="x-paw">ta</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -214,12 +219,11 @@
     <td>I was dancing</td>
     <td>
       
-        <a href="index.html?q=ta" lang="x-paw">ta</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -227,12 +231,11 @@
     <td>I was talking</td>
     <td>
       
-        <a href="index.html?q=ta" lang="x-paw">ta</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -240,12 +243,11 @@
     <td>I was playing</td>
     <td>
       
-        <a href="index.html?q=ta" lang="x-paw">ta</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   </tbody>
@@ -263,22 +265,12 @@
     
     <div class="lesson-dialogue__line">
       <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Kirike rasutsíks•ari tiruks•tsak•ariki?</span>
-      <span class="lesson-dialogue__eng"></span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">What were you doing yesterday?</span>
-      <span class="lesson-dialogue__eng"></span>
+      <span class="lesson-dialogue__eng">What were you doing yesterday?</span>
     </div>
     
     <div class="lesson-dialogue__line">
       <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Tatutsiks•á•wahri' tiruks•tsak•ariki.</span>
-      <span class="lesson-dialogue__eng"></span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">I was working yesterday.</span>
-      <span class="lesson-dialogue__eng"></span>
+      <span class="lesson-dialogue__eng">I was working yesterday.</span>
     </div>
     
   </article>
@@ -287,22 +279,12 @@
     
     <div class="lesson-dialogue__line">
       <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Kirú rira•awiu' tasutsiks•á•wahri'?</span>
-      <span class="lesson-dialogue__eng"></span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">When were you working?</span>
-      <span class="lesson-dialogue__eng"></span>
+      <span class="lesson-dialogue__eng">When were you working?</span>
     </div>
     
     <div class="lesson-dialogue__line">
       <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Tíruks•tsak•ariki tatutsiks•á•wahri'.</span>
-      <span class="lesson-dialogue__eng"></span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">I was working yesterday.</span>
-      <span class="lesson-dialogue__eng"></span>
+      <span class="lesson-dialogue__eng">I was working yesterday.</span>
     </div>
     
   </article>
@@ -364,12 +346,11 @@
     <td>last night</td>
     <td>
       
-        <a href="index.html?q=tir" lang="x-paw">tir</a>
-        <span class="badge badge-class">VI</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tih(d) <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tɪ(r)–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -389,12 +370,11 @@
     <td>I started</td>
     <td>
       
-        <a href="index.html?q=ta" lang="x-paw">ta</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -402,12 +382,11 @@
     <td>I finished</td>
     <td>
       
-        <a href="index.html?q=ta" lang="x-paw">ta</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   </tbody>
@@ -450,17 +429,17 @@
   
   <details class="lesson-note" open>
     <summary><strong>Spelling Rules</strong></summary>
-    <p>1. When words are constructed and the final s of one root or marker is followed by the beginning s of another root, then a t is added to the beginning of the second root. tiheruks. that other one, past sák•ariki a day (sun standing) tiheruks +sak•ariki s +s becomes s•ts tiheruks•tsak•ariki 2. When the preverb ut and past tense marker uks come together in an introducer, ut becomes uts, and uks often becomes iks.</p>
+    <p>1. When words are constructed and the final s of one root or marker is followed by the beginning s of another root, then a t is added to the beginning of the second root. tihéruks. that other one, past sák•ariki a day (sun standing) tiheruks +sak•ariki s +s becomes s•ts tiheruks•tsak•ariki 2. When the preverb ut and past tense marker uks come together in an introducer, ut becomes uts, and uks often becomes iks.</p>
   </details>
   
   <details class="lesson-note" >
     <summary><strong>Mode Person Preverb Past Tense Verb Root</strong></summary>
-    <p>to +t +ut +uks +ari' tatutsiks•ari' I was doing it</p>
+    <p>ta +t +ut +uks +ari' tatutsíks•ari' I was doing it</p>
   </details>
   
   <details class="lesson-note" >
     <summary><strong>Useful Phrases</strong></summary>
-    <p>1. Suks•aspatasit! 2. Ka ru rut•tsirau'? 3. Ka rúr•rahe ti rasut•ari'? 4. Ka we ras•tare•hats? 5. Kirike rasut•atsiks•u'? 6. Tasir•atsiks•tíus. Start! Is it alright? Are you doing okay? Are you finished? What do you think about it? You're smart. VERB SET: Také ra•há•kawaats? Who ate? Tat•á•kawaats. Tas•á•kawaats. Ti•ha•kawaats. Sitat•á•kawaats. Sitas•á•kawaats. Siti•há•kawaats. Tahrak•a•kawaats. Tastak•á•kawaats. Ti 'hrá•kawaats. I ate You ate. He, she ate. We (2) ate. You (2) ate. They (2) ate. We (3+) ate. You (3+) ate. They (3+) ate. VERB SET: Také ruks•á•kawahtsu'? Who was eating? Tatuks•á•kawahtsu'. Tasuks•á•kawahtsu'. Tuks•á•kawahtsu'. Tatsiks•á•kawahtsu'. Sitatuks•a•kawahtsu'. Sitasuks•a•kawahtsu'. Situks•a•kawahtsu'. Tatukstak•á•kawahtsu'. Tasukstak•a•kawahtsu'. Tiks•á•kawahtsu'. I was eating. You were eating. He, she was eating. You and I were eating. She and I were eating. You (2) were eating. They (2) were eating. We (3+) were eating. You (3 , ) were eating. They (3+) were eating.</p>
+    <p>1. Suks•aspátasit! 2. Ka ru rut•tsírau'? 3. Ka rúr•rahe ti rasut•ari'? 4. Ka we ras•taré•hats? 5. Kiriké rasut•atsiks•u'? 6. Tasir•atsiks•tíus. Start! Is it alright? Are you doing okay? Are you finished? What do you think about it? You're smart. VERB SET: Také ra•há•kawaats? Who ate? Tat•á•kawaats. Tas•á•kawaats. Ti•há•kawaats. Sitat•á•kawaats. Sitas•á•kawaats. Siti•há•kawaats. Tahrak•á•kawaats. Tastak•á•kawaats. Ti 'hrá•kawaats. I ate You ate. He, she ate. We (2) ate. You (2) ate. They (2) ate. We (3+) ate. You (3+) ate. They (3+) ate. VERB SET: Také ruks•á•kawahtsu'? Who was eating? Tatuks•á•kawahtsu'. Tasuks•á•kawahtsu'. Tuks•á•kawahtsu'. Tatsiks•á•kawahtsu'. Sitatuks•á•kawahtsu'. Sitasuks•á•kawahtsu'. Situks•á•kawahtsu'. Tatukstak•á•kawahtsu'. Tasukstak•á•kawahtsu'. Tiks•á•kawahtsu'. I was eating. You were eating. He, she was eating. You and I were eating. She and I were eating. You (2) were eating. They (2) were eating. We (3+) were eating. You (3 , ) were eating. They (3+) were eating.</p>
   </details>
   
 </section>
@@ -485,6 +464,11 @@
   </details>
   
 
+  
+  <details class="lesson-note">
+    <summary><strong>Fill in the blank</strong> — complete the dialogue line</summary>
+    <div id="ex-blanks"></div>
+  </details>
   
 
   
@@ -522,7 +506,7 @@
   </script>
   
 <script>
-const EX = {"blanks": [], "matching": [{"english": "yesterday", "skiri": "tiruks\u2022tsakariki"}, {"english": "I started", "skiri": "tat\u2022asp\u00e1tasit"}, {"english": "last year", "skiri": "tiheruks\u2022ti\u2022k\u00e1tiharu\u0027"}, {"english": "I was talking", "skiri": "tat\u00faks\u2022paw\u00e1ktiku\u0027"}, {"english": "I finished", "skiri": "t\u00e1h\u2022rarehats"}, {"english": "the other day", "skiri": "tih\u00e9ruks\u2022tsak\u2022ariki"}, {"english": "in days past", "skiri": "tiheraruks\u2022ts\u00e1ku\u2022rarata"}, {"english": "I was dancing", "skiri": "tatiks\u2022k\u00e1ahu\u0027"}], "say": [{"english": "You\u0027re smart.", "skiri": "Tasir\u2022atsiks\u2022t\u00edus."}, {"english": "Is it alright?", "skiri": "Ka ru rut\u2022ts\u00edrau\u0027?"}, {"english": "Are you finished?", "skiri": "Ka we ras\u2022tar\u00e9\u2022hats?"}, {"english": "Start!", "skiri": "Suks\u2022asp\u00e1tasit!"}, {"english": "What do you think about it?", "skiri": "Kirik\u00e9 rasut\u2022atsiks\u2022u\u0027?"}]};
+const EX = {"blanks": [{"answer": "tatutsiks\u2022\u00e1\u2022wahri\u0027", "blanked": "_____ tiruks\u2022tsak\u2022ariki.", "english": "I was working yesterday.", "options": ["tiruks\u2022tsakariki", "tih\u00e9ruks\u2022tsak\u2022ariki", "tatutsiks\u2022\u00e1\u2022wahri\u0027", "tatuks\u2022ak\u00fahtaku\u0027"]}, {"answer": "tatutsiks\u2022\u00e1\u2022wahri\u0027", "blanked": "T\u00edruks\u2022tsak\u2022ariki _____.", "english": "I was working yesterday.", "options": ["tiruks\u2022tsakariki", "tat\u00faks\u2022paw\u00e1ktiku\u0027", "tat\u2022asp\u00e1tasit", "tatutsiks\u2022\u00e1\u2022wahri\u0027"]}], "matching": [{"english": "I was talking", "skiri": "tat\u00faks\u2022paw\u00e1ktiku\u0027"}, {"english": "I was working", "skiri": "tatutsiks\u2022\u00e1\u2022wahri\u0027"}, {"english": "in days past", "skiri": "tiheraruks\u2022ts\u00e1ku\u2022rarata"}, {"english": "the other day", "skiri": "tih\u00e9ruks\u2022tsak\u2022ariki"}, {"english": "early this morning", "skiri": "kek\u00e1ruskat"}, {"english": "a long time ago", "skiri": "we t\u00ed\u2022rakea"}, {"english": "I was dancing", "skiri": "tatiks\u2022k\u00e1ahu\u0027"}, {"english": "last month", "skiri": "tiheruks\u2022p\u00e1\u2022ariki"}], "say": [{"english": "You\u0027re smart.", "skiri": "Tasir\u2022atsiks\u2022t\u00edus."}, {"english": "What were you doing yesterday?", "skiri": "Kirike rasuts\u00edks\u2022ari tiruks\u2022tsak\u2022ariki?"}, {"english": "Is it alright?", "skiri": "Ka ru rut\u2022ts\u00edrau\u0027?"}, {"english": "What do you think about it?", "skiri": "Kirik\u00e9 rasut\u2022atsiks\u2022u\u0027?"}, {"english": "Are you doing okay?", "skiri": "Ka r\u00far\u2022rahe ti rasut\u2022ari\u0027?"}]};
 
 // ── Matching ─────────────────────────────────────────────────────
 (function() {

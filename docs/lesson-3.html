@@ -22,7 +22,8 @@
   <!-- Fuse.js for client-side search -->
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
 
-  <!-- Client-side search -->
+  <!-- Shared helpers of the learning pages (syllables, word pieces), then the client-side search -->
+  <script src="static/js/skiri.js"></script>
   <script src="static/js/search.js"></script>
 </head>
 <body>
@@ -46,7 +47,7 @@
             <span>
               <strong class="font-serif" style="font-size:1.2rem; letter-spacing:-0.3px;">P&#226;ri Pak&#251;ru'</strong>
               <br>
-              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Skiri Pawnee Dictionary</small>
+              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Learn Skiri Pawnee</small>
             </span>
           </a>
         </li>
@@ -62,14 +63,20 @@
       </button>
 
       <ul class="nav-links">
+        
+        <li><a href="learn.html" >Start here</a></li>
         <li><a href="index.html" >Dictionary</a></li>
         
         
+        <li><a href="guide.html" >Sounds</a></li>
+        <li><a href="words.html" >Word building</a></li>
+        <li><a href="verbs.html" >Verbs</a></li>
         <li><a href="lessons.html" aria-current="page">Lessons</a></li>
-        
         <li><a href="flashcards.html" >Flashcards</a></li>
+        <li><a href="practice.html" >Practice</a></li>
         
-        <li><a href="guide.html" >Syllable Guide</a></li>
+        
+        <li><a href="topics.html" >Topics</a></li>
         
         <li><a href="about.html" >About</a></li>
 
@@ -224,12 +231,11 @@
     <td>it's big</td>
     <td>
       
-        <a href="index.html?q=tir" lang="x-paw">tir</a>
-        <span class="badge badge-class">VI</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tih(d) <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tɪ(r)–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -294,12 +300,12 @@
   <article class="lesson-dialogue">
     
     <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Kirike ru '?</span>
+      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Kiriké ru'?</span>
       <span class="lesson-dialogue__eng">What is it?</span>
     </div>
     
     <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Ti hak•tsa.</span>
+      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Tí hak•tsa.</span>
       <span class="lesson-dialogue__eng">It's a log. (some wood lying)</span>
     </div>
     
@@ -308,12 +314,12 @@
   <article class="lesson-dialogue">
     
     <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Kirike tutu '?</span>
+      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Kiriké rut•u'?</span>
       <span class="lesson-dialogue__eng">What does it look like?</span>
     </div>
     
     <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Ti ha'k•tihu'.</span>
+      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Ti hák•tihu'.</span>
       <span class="lesson-dialogue__eng">It's big (wood).</span>
     </div>
     
@@ -322,12 +328,12 @@
   <article class="lesson-dialogue">
     
     <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Ka ra•ha'k•tihu '?</span>
+      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Ka ra•hák•tihu'?</span>
       <span class="lesson-dialogue__eng">Is the tree big?</span>
     </div>
     
     <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Kaki ha'k•tihu'.</span>
+      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Kaki hák•tihu'.</span>
       <span class="lesson-dialogue__eng">The tree is small.</span>
     </div>
     
@@ -336,12 +342,12 @@
   <article class="lesson-dialogue">
     
     <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Rakis•pahat ka ra .rihu'?</span>
+      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Rakis•pahat ka rá•rihu'?</span>
       <span class="lesson-dialogue__eng">Is the red stick big?</span>
     </div>
     
     <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Ahu', rakis•pahat ti rihu'.</span>
+      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Ahu', rakis•pahat tí rihu'.</span>
       <span class="lesson-dialogue__eng">Yes, the red stick is big.</span>
     </div>
     
@@ -392,12 +398,12 @@
     <td>meadow, hay field</td>
     <td>
       
-        <a href="index.html?q=hiru'" lang="x-paw">hiru'</a>
-        <span class="badge badge-class">INTERJ</span>
+        <a href="index.html?id=SK-hiiruq-p390-3845" lang="x-paw">hîru'</a>
+        <span class="badge badge-class">N</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small><span class="pitch-high">HIH</span>-doo'</small></td>
-    <td class="ipa" lang="x-paw"><small>[hɪ́·rʊʔ]</small></td>
+    <td class="lesson-vocab__pron"><small><span class="pitch-high">HEE</span>-doo'</small></td>
+    <td class="ipa" lang="x-paw"><small>[hií·rʊʔ]</small></td>
   </tr>
   
   <tr>
@@ -501,12 +507,12 @@
     <td>building</td>
     <td>
       
-        <a href="index.html?q=aka'" lang="x-paw">aka'</a>
+        <a href="index.html?id=SK-akaaruq-p9-0108" lang="x-paw">akâru'</a>
         <span class="badge badge-class">N</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small><span class="pitch-high">UH</span>-kuh'</small></td>
-    <td class="ipa" lang="x-paw"><small>[ə́·kəʔ]</small></td>
+    <td class="lesson-vocab__pron"><small><span class="pitch-high">UH</span>-kah-doo'</small></td>
+    <td class="ipa" lang="x-paw"><small>[ə́·kaa·rʊʔ]</small></td>
   </tr>
   
   <tr>
@@ -526,7 +532,7 @@
     <td>fat</td>
     <td>
       
-        <a href="index.html?q=ahitki" lang="x-paw">ahitki</a>
+        <a href="index.html?id=SK-ahitki-p9-0097" lang="x-paw">ahitki</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -587,12 +593,12 @@
     <td>meadow</td>
     <td>
       
-        <a href="index.html?q=hiru'" lang="x-paw">hiru'</a>
-        <span class="badge badge-class">INTERJ</span>
+        <a href="index.html?id=SK-hiiruq-p390-3845" lang="x-paw">hîru'</a>
+        <span class="badge badge-class">N</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small><span class="pitch-high">HIH</span>-doo'</small></td>
-    <td class="ipa" lang="x-paw"><small>[hɪ́·rʊʔ]</small></td>
+    <td class="lesson-vocab__pron"><small><span class="pitch-high">HEE</span>-doo'</small></td>
+    <td class="ipa" lang="x-paw"><small>[hií·rʊʔ]</small></td>
   </tr>
   
   </tbody>
@@ -620,17 +626,17 @@
   
   <details class="lesson-note" open>
     <summary><strong>Combining Roots</strong></summary>
-    <p>When roots are combined to form phrases, they change spelling. If you know the rules of these spelling changes, you will be able to interpret many words where the roots are disguised by different spellings. Here are some spelling rules which are active in the words given in this chapter. 1. r changes to t after a hard consonant ti rihu it's big ti ha"k•tihu it's big wood 2. w changes to p after a hard consonant ti .wari' he goes about tat•pari '	I go about 3. k drops off before p ti hak•tsa log tira ha•pi tree 4. r changes to h before any consonant hiru ' meadow ti hih•wa yard hir + wa 5. i + lay combine to make e ahitu' fat t'ehit he's fat ti + ahit Notice how these rules can interact: 1. ti + hak + wa + wi it's wood widely vertical _2. ti + hak + pa + wi w becomes p 3. ti + ha_ + pa + wi k drops off 4. ti ha•pa•wi there are trees</p>
+    <p>When roots are combined to form phrases, they change spelling. If you know the rules of these spelling changes, you will be able to interpret many words where the roots are disguised by different spellings. Here are some spelling rules which are active in the words given in this chapter. 1. r changes to t after a hard consonant tí rihu it's big ti hák•tihu it's big wood 2. w changes to p after a hard consonant tí•wari' he goes about tát•pari'	I go about 3. k drops off before p tí hak•tsa log tirá ha•pi tree 4. r changes to h before any consonant hiru' meadow tí hih•wa yard hir + wa 5. i + lay combine to make e ahitu' fat t'éhit he's fat ti + ahit Notice how these rules can interact: 1. ti + hak + wa + wi it's wood widely vertical _2. ti + hak + pa + wi w becomes p 3. ti + ha_ + pa + wi k drops off 4. tí ha•pa•wi there are trees</p>
   </details>
   
   <details class="lesson-note" >
     <summary><strong>Pronunciation</strong></summary>
-    <p>Remember that all the parts of a phrase are pronounced together without a pause. The last sound of one word will slur over into the beginning of the next word. ti hih•wa grass (ti-hi-hwa) or (ti-hi-wha)</p>
+    <p>Remember that all the parts of a phrase are pronounced together without a pause. The last sound of one word will slur over into the beginning of the next word. tí hih•wa grass (ti-hi-hwa) or (ti-hi-wha)</p>
   </details>
   
   <details class="lesson-note" >
     <summary><strong>Useful Phrases</strong></summary>
-    <p>Hiri we ti risat. Wow, that's big! Kirike ratara•paki .ahu'? How do you say it in Pawnee? (How are we saying it?) 3. Take ru '. Who is it? 4. Tat. It's me. 5. Rat u'. Me. 6. Ras•u'. You. KIRIKÉ RAS•TA?</p>
+    <p>Hiri we tí risat. Wow, that's big! Kirike ratara•pakí•ahu'? How do you say it in Pawnee? (How are we saying it?) 3. Také ru'. Who is it? 4. Tat. It's me. 5. Rát•u'. Me. 6. Rás•u'. You.</p>
   </details>
   
 </section>
@@ -697,7 +703,7 @@
   </script>
   
 <script>
-const EX = {"blanks": [{"answer": "kaki", "blanked": "_____ ha\u0027k\u2022tihu\u0027.", "english": "The tree is small.", "options": ["hiru\u0027", "kaki", "tira", "hak"]}], "matching": [{"english": "that\u0027s a tree,", "skiri": "tira ha\u2022pi"}, {"english": "there are mountains", "skiri": "ti ra .wa\u2022raruhat"}, {"english": "there is a mountain, mountains", "skiri": "ti ra\u2022wa\u2022ku"}, {"english": "wood, tree", "skiri": "hak +"}, {"english": "mound, hill, mountain", "skiri": "wa +"}, {"english": "meadow, hay field", "skiri": "hiru\u0027"}, {"english": "it\u0027s a tall building", "skiri": "t \u0027ekah\u2022wi\u2022keats"}, {"english": "building", "skiri": "akaru \u0027"}], "say": [{"english": "It\u0027s a log. (some wood lying)", "skiri": "Ti hak\u2022tsa."}, {"english": "The tree is small.", "skiri": "Kaki ha\u0027k\u2022tihu\u0027."}, {"english": "Is the tree big?", "skiri": "Ka ra\u2022ha\u0027k\u2022tihu \u0027?"}, {"english": "Yes, the red stick is big.", "skiri": "Ahu\u0027, rakis\u2022pahat ti rihu\u0027."}, {"english": "What is it?", "skiri": "Kirike ru \u0027?"}]};
+const EX = {"blanks": [{"answer": "kaki", "blanked": "_____ h\u00e1k\u2022tihu\u0027.", "english": "The tree is small.", "options": ["t\u0027ehit", "tira", "kaki", "hiru\u0027"]}], "matching": [{"english": "it\u0027s small", "skiri": "kaki rihu\u0027"}, {"english": "that\u0027s a tree,", "skiri": "tira ha\u2022pi"}, {"english": "it \u0027s a tall tree", "skiri": "ti ha .pi\u2022keats"}, {"english": "he\u0027s tall", "skiri": "ti htira\u2022keats"}, {"english": "mound, hill, mountain", "skiri": "wa +"}, {"english": "it\u0027s thick", "skiri": "ti kitsu\u2022tsis"}, {"english": "meadow, hay field", "skiri": "hiru\u0027"}, {"english": "those are trees", "skiri": "tira ha\u2022pa\u2022wi"}], "say": [{"english": "Is the red stick big?", "skiri": "Rakis\u2022pahat ka r\u00e1\u2022rihu\u0027?"}, {"english": "It\u0027s big (wood).", "skiri": "Ti h\u00e1k\u2022tihu\u0027."}, {"english": "Yes, the red stick is big.", "skiri": "Ahu\u0027, rakis\u2022pahat t\u00ed rihu\u0027."}, {"english": "What does it look like?", "skiri": "Kirik\u00e9 rut\u2022u\u0027?"}, {"english": "It\u0027s a log. (some wood lying)", "skiri": "T\u00ed hak\u2022tsa."}]};
 
 // ── Matching ─────────────────────────────────────────────────────
 (function() {

@@ -22,7 +22,8 @@
   <!-- Fuse.js for client-side search -->
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
 
-  <!-- Client-side search -->
+  <!-- Shared helpers of the learning pages (syllables, word pieces), then the client-side search -->
+  <script src="static/js/skiri.js"></script>
   <script src="static/js/search.js"></script>
 </head>
 <body>
@@ -46,7 +47,7 @@
             <span>
               <strong class="font-serif" style="font-size:1.2rem; letter-spacing:-0.3px;">P&#226;ri Pak&#251;ru'</strong>
               <br>
-              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Skiri Pawnee Dictionary</small>
+              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Learn Skiri Pawnee</small>
             </span>
           </a>
         </li>
@@ -62,14 +63,20 @@
       </button>
 
       <ul class="nav-links">
+        
+        <li><a href="learn.html" >Start here</a></li>
         <li><a href="index.html" >Dictionary</a></li>
         
         
+        <li><a href="guide.html" >Sounds</a></li>
+        <li><a href="words.html" >Word building</a></li>
+        <li><a href="verbs.html" >Verbs</a></li>
         <li><a href="lessons.html" aria-current="page">Lessons</a></li>
-        
         <li><a href="flashcards.html" >Flashcards</a></li>
+        <li><a href="practice.html" >Practice</a></li>
         
-        <li><a href="guide.html" >Syllable Guide</a></li>
+        
+        <li><a href="topics.html" >Topics</a></li>
         
         <li><a href="about.html" >About</a></li>
 
@@ -152,12 +159,12 @@
     <td>my father</td>
     <td>
       
-        <a href="index.html?q=at" lang="x-paw">at</a>
-        <span class="badge badge-class">VI</span>
+        <a href="index.html?id=SK-atiqas-p19-0228" lang="x-paw">ati'as</a>
+        <span class="badge badge-class">N-KIN</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small>uht <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–ət–]</small></td>
+    <td class="lesson-vocab__pron"><small>uh-<span class="pitch-high">TIH</span>-'uhs</small></td>
+    <td class="ipa" lang="x-paw"><small>[ə·tí·ʔəs]</small></td>
   </tr>
   
   <tr>
@@ -165,7 +172,7 @@
     <td>my mother</td>
     <td>
       
-        <a href="index.html?q=atira'" lang="x-paw">atira'</a>
+        <a href="index.html?id=SK-atiraq-p19-0243" lang="x-paw">atira'</a>
         <span class="badge badge-class">N-KIN</span>
       
     </td>
@@ -178,7 +185,7 @@
     <td>my grandfather</td>
     <td>
       
-        <a href="index.html?q=atipat" lang="x-paw">atipat</a>
+        <a href="index.html?id=SK-atipat-p19-0241" lang="x-paw">atipat</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -191,7 +198,7 @@
     <td>my grandmother</td>
     <td>
       
-        <a href="index.html?q=atika'" lang="x-paw">atika'</a>
+        <a href="index.html?id=SK-atikaq-p19-0233" lang="x-paw">atika'</a>
         <span class="badge badge-class">N-KIN</span>
       
     </td>
@@ -204,7 +211,7 @@
     <td>my brother (of a man)</td>
     <td>
       
-        <a href="index.html?q=irâri'" lang="x-paw">irâri'</a>
+        <a href="index.html?id=SK-iraariq-p64-1121" lang="x-paw">irâri'</a>
         <span class="badge badge-class">N-KIN</span>
       
     </td>
@@ -217,7 +224,7 @@
     <td>my sister (of a woman)</td>
     <td>
       
-        <a href="index.html?q=irâri'" lang="x-paw">irâri'</a>
+        <a href="index.html?id=SK-iraariq-p64-1121" lang="x-paw">irâri'</a>
         <span class="badge badge-class">N-KIN</span>
       
     </td>
@@ -242,7 +249,7 @@
     <td>my brother (of a woman)</td>
     <td>
       
-        <a href="index.html?q=irâcti'" lang="x-paw">irâcti'</a>
+        <a href="index.html?id=SK-iraactiq-p64-1117" lang="x-paw">irâcti'</a>
         <span class="badge badge-class">N-KIN</span>
       
     </td>
@@ -255,12 +262,11 @@
     <td>she's/he's still alive</td>
     <td>
       
-        <a href="index.html?q=či" lang="x-paw">či</a>
-        <span class="badge badge-class">CONJ</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>chih <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[čɪ]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -268,7 +274,7 @@
     <td>he's passed away</td>
     <td>
       
-        <a href="index.html?q=hurahac" lang="x-paw">hurahac</a>
+        <a href="index.html?id=SK-hurahac-p47-0798" lang="x-paw">hurahac</a>
         <span class="badge badge-class">VP</span>
       
     </td>
@@ -315,12 +321,7 @@
     
     <div class="lesson-dialogue__line">
       <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Kakí', atipat we tí•hura•hats.</span>
-      <span class="lesson-dialogue__eng">No, my grandfather has</span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">passed away.</span>
-      <span class="lesson-dialogue__eng"></span>
+      <span class="lesson-dialogue__eng">No, my grandfather has passed away.</span>
     </div>
     
   </article>
@@ -358,7 +359,7 @@
     <td>your mother</td>
     <td>
       
-        <a href="index.html?q=asas" lang="x-paw">asas</a>
+        <a href="index.html?id=SK-asas-p363-3759" lang="x-paw">asas</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -371,7 +372,7 @@
     <td>your grandfather or "grampa! "</td>
     <td>
       
-        <a href="index.html?q=apat" lang="x-paw">apat</a>
+        <a href="index.html?id=SK-apat-p360-3693" lang="x-paw">apat</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -384,7 +385,7 @@
     <td>your grandmother or "gramma!"</td>
     <td>
       
-        <a href="index.html?q=aka'" lang="x-paw">aka'</a>
+        <a href="index.html?id=SK-akaq-p9-0103" lang="x-paw">aka'</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -397,7 +398,7 @@
     <td>your brother or "bub, bro'!"</td>
     <td>
       
-        <a href="index.html?q=ara" lang="x-paw">ara</a>
+        <a href="index.html?id=SK-ara-p360-3704" lang="x-paw">ara</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -410,12 +411,12 @@
     <td>your sister or "sis! "</td>
     <td>
       
-        <a href="index.html?q=at" lang="x-paw">at</a>
-        <span class="badge badge-class">VI</span>
+        <a href="index.html?id=SK-ataat-p19-0223" lang="x-paw">atât</a>
+        <span class="badge badge-class">N</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small>uht <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–ət–]</small></td>
+    <td class="lesson-vocab__pron"><small><span class="pitch-high">UH</span>-taht</small></td>
+    <td class="ipa" lang="x-paw"><small>[ə́·taat]</small></td>
   </tr>
   
   <tr>
@@ -423,7 +424,7 @@
     <td>my uncle</td>
     <td>
       
-        <a href="index.html?q=tiwačiriks" lang="x-paw">tiwačiriks</a>
+        <a href="index.html?id=SK-tiwaciriks-p166-3279" lang="x-paw">tiwačiriks</a>
         <span class="badge badge-class">N-KIN</span>
       
     </td>
@@ -436,7 +437,7 @@
     <td>your uncle</td>
     <td>
       
-        <a href="index.html?q=pačiriks" lang="x-paw">pačiriks</a>
+        <a href="index.html?id=SK-paciriks-p107-2045" lang="x-paw">pačiriks</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -449,12 +450,11 @@
     <td>"unc"</td>
     <td>
       
-        <a href="index.html?q=pačiriks" lang="x-paw">pačiriks</a>
-        <span class="badge badge-class">N</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small><span class="pitch-high">PUH</span>-chih-dihks</small></td>
-    <td class="ipa" lang="x-paw"><small>[pə́·čɪ·rɪks]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -462,7 +462,7 @@
     <td>my aunt</td>
     <td>
       
-        <a href="index.html?q=atira'" lang="x-paw">atira'</a>
+        <a href="index.html?id=SK-atiraq-p19-0243" lang="x-paw">atira'</a>
         <span class="badge badge-class">N-KIN</span>
       
     </td>
@@ -475,7 +475,7 @@
     <td>my son'</td>
     <td>
       
-        <a href="index.html?q=tiki" lang="x-paw">tiki</a>
+        <a href="index.html?id=SK-tiki-p165-3261" lang="x-paw">tiki</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -488,12 +488,11 @@
     <td>"sonny"</td>
     <td>
       
-        <a href="index.html?q=ta" lang="x-paw">ta</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -513,12 +512,12 @@
     <td>my niece, nephew</td>
     <td>
       
-        <a href="index.html?q=tiwačiriks" lang="x-paw">tiwačiriks</a>
+        <a href="index.html?id=SK-tiwaat-p166-3278" lang="x-paw">tiwât</a>
         <span class="badge badge-class">N-KIN</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small><span class="pitch-high">TIH</span>-wuh-chih-dihks</small></td>
-    <td class="ipa" lang="x-paw"><small>[tɪ́·wə·čɪ·rɪks]</small></td>
+    <td class="lesson-vocab__pron"><small><span class="pitch-high">TIH</span>-waht</small></td>
+    <td class="ipa" lang="x-paw"><small>[tɪ́·waat]</small></td>
   </tr>
   
   <tr>
@@ -538,7 +537,7 @@
     <td>my grandchild</td>
     <td>
       
-        <a href="index.html?q=raktîki" lang="x-paw">raktîki</a>
+        <a href="index.html?id=SK-raktiiki-p135-2664" lang="x-paw">raktîki</a>
         <span class="badge badge-class">N-KIN</span>
       
     </td>
@@ -551,7 +550,7 @@
     <td>your grandchild (of a man), "grandson"</td>
     <td>
       
-        <a href="index.html?q=arakis" lang="x-paw">arakis</a>
+        <a href="index.html?id=SK-arakis-p13-0132" lang="x-paw">arakis</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -576,12 +575,11 @@
     <td>he's doing fine</td>
     <td>
       
-        <a href="index.html?q=či" lang="x-paw">či</a>
-        <span class="badge badge-class">CONJ</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>chih <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[čɪ]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -708,7 +706,7 @@
   
   <details class="lesson-note" open>
     <summary><strong>Useful Phrases</strong></summary>
-    <p>1. T'at•atsíks•ta I love you. 2. We t'at•atsíks•tat•at I love her. (We-ta-ta-tsiks-ta-tat) (My mind is ever on her) 3. We tat•uhure•hats. I'm ready. 4. Nawa híru'! (SK) Go ahead! Nawa rúru! (SB) Go ahead! 5. TsIru'. Wait! 6. Súksur•erit! Stop! 7. Wís kutsu'! Hurry! 8. Kus•tutsi•erit I'll see you.</p>
+    <p>1. T'at•atsíks•ta I love you. 2. We t'at•atsíks•tat•at I love her. (We-ta-ta-tsíks-ta-tat) (My mind is ever on her) 3. We tat•uhúre•hats. I'm ready. 4. Nawa híru'! (SK) Go ahead! Nawa rúru! (SB) Go ahead! 5. Tsíru'. Wait! 6. Súksur•erit! Stop! 7. Wís kutsu'! Hurry! 8. Kus•tútsi•erit I'll see you.</p>
   </details>
   
   <details class="lesson-note" >
@@ -718,12 +716,12 @@
   
   <details class="lesson-note" >
     <summary><strong>Specifying Verbs</strong></summary>
-    <p>There are verb phrases in Pawnee which describe nouns by further specifying which object or person is being referred to, and often describing its position. Demonstratives ti ra•kú pita ti ra•ariki pita ti ra•kú pita ti ra•arikí pita Possessives kú•ratir•u paks•kúku' kú•rasir•u paks•kúku' kú•ra•u paks•kúku' ku + that sitting man that standing man that sitting man yonder that standing man yonder my hat your hat his hat "indefinite," used with possessive verbs to (preverb) is</p>
+    <p>There are verb phrases in Pawnee which describe nouns by further specifying which object or person is being referred to, and often describing its position. Demonstratives ti ra•kú pita ti ra•arikí pita i ra•kú pita i ra•arikí pita Possessives kú•ratir•u paks•kúku' kú•rasir•u paks•kúku' kú•ra•u paks•kúku' ku + that sitting man that standing man that sitting man yonder that standing man yonder my hat your hat his hat "indefinite," used with possessive verbs to (preverb) is</p>
   </details>
   
   <details class="lesson-note" >
     <summary><strong>Pawnee Kinship</strong></summary>
-    <p>One of the cultural habits of the old-time Pawnees that still survives today is the unique non-English way of using kinship terms. There seem to be complicated rules for figuring out what to call someone, but since the English system has been mixed in, the important thing to consider is the difference between a "respect" and a "joking" relationship, as suggested by Weltfish (1965: Chapter 3). A boy or man calls a woman atira and she calls him tiki or son if she is responsible for his welfare and for giving him advice on how to act properly. This represents a relationship of respect, and a man who calls a woman atira will call her sisters and daughters atira also, as relationships of respect are inherited. Atias is another term of respect. In the old days, the tribal agent was called atias or father and other white persons were likely to be called irari or brother, friend. Terms of a joking relationship are atipat or apat or grampa and atika or gramma. A man may call a woman atika to represent a more informal relationship and a woman may call a man apat or grampa to represent an informal, familiar relationship which calls for teasing and joking. Joking relationships are more easily created and two persons may easily choose to call each other, for example, apat or grampa and taka or sonny, whereas the use of atias, atira, and other terms of respect are more strict and inherited. KI Rid RA. KU?</p>
+    <p>One of the cultural habits of the old-time Pawnees that still survives today is the unique non-English way of using kinship terms. There seem to be complicated rules for figuring out what to call someone, but since the English system has been mixed in, the important thing to consider is the difference between a "respect" and a "joking" relationship, as suggested by Weltfish (1965: Chapter 3). A boy or man calls a woman atira and she calls him tiki or son if she is responsible for his welfare and for giving him advice on how to act properly. This represents a relationship of respect, and a man who calls a woman atira will call her sisters and daughters atira also, as relationships of respect are inherited. Atias is another term of respect. In the old days, the tribal agent was called atias or father and other white persons were likely to be called irari or brother, friend. Terms of a joking relationship are atipat or apat or grampa and atika or gramma. A man may call a woman atika to represent a more informal relationship and a woman may call a man apat or grampa to represent an informal, familiar relationship which calls for teasing and joking. Joking relationships are more easily created and two persons may easily choose to call each other, for example, apat or grampa and taka or sonny, whereas the use of atias, atira, and other terms of respect are more strict and inherited.</p>
   </details>
   
 </section>
@@ -790,7 +788,7 @@
   </script>
   
 <script>
-const EX = {"blanks": [{"answer": "atira\u0027.", "blanked": "T\u00ed _____", "english": "She\u0027s my mother.", "options": ["tsikstit", "atira\u0027.", "aka\u0027", "hi\u00e1sti\u0027"]}, {"answer": "apat", "blanked": "Tsiru ka ra\u2022\u00e1 _____?", "english": "Is your grandfather still alive?", "options": ["ir\u00e1tsti\u0027", "apat", "hik\u00e1ri\u0027", "atira\u0027."]}], "matching": [{"english": "your father", "skiri": "haas"}, {"english": "\"sonny\"", "skiri": "taka"}, {"english": "your grandfather or \"grampa! \"", "skiri": "apat"}, {"english": "his grandmother", "skiri": "hik\u00e1ri\u0027"}, {"english": "my daughter", "skiri": "tsuwat"}, {"english": "his uncle", "skiri": "hiw\u00e1ririks"}, {"english": "he\u0027s (still) getting around", "skiri": "t\u00ed\u2022wari\u0027"}, {"english": "your niece, nephew", "skiri": "awat"}], "say": [{"english": "No, my grandfather has", "skiri": "Kak\u00ed\u0027, atipat we t\u00ed\u2022hura\u2022hats."}, {"english": "Hurry!", "skiri": "W\u00eds kutsu\u0027!"}, {"english": "I\u0027m ready.", "skiri": "We tat\u2022uh\u00fare\u2022hats."}, {"english": "I love you.", "skiri": "T\u0027at\u2022ats\u00edks\u2022ta"}, {"english": "Who is that (one)?", "skiri": "Tak\u00e9 ru\u0027?"}]};
+const EX = {"blanks": [{"answer": "atira\u0027.", "blanked": "T\u00ed _____", "english": "She\u0027s my mother.", "options": ["hiw\u00e1hri\u0027", "at\u00edpat", "atira\u0027.", "aka\u0027"]}, {"answer": "apat", "blanked": "Tsiru ka ra\u2022\u00e1 _____?", "english": "Is your grandfather still alive?", "options": ["apat", "rakt\u00edki", "tiki\u0027", "tiwatsiriks"]}], "matching": [{"english": "his father", "skiri": "hi\u00e1sti\u0027"}, {"english": "his grandmother", "skiri": "hik\u00e1ri\u0027"}, {"english": "your grandfather or \"grampa! \"", "skiri": "apat"}, {"english": "his niece, nephew", "skiri": "hiw\u00e1hri\u0027"}, {"english": "\"sonny\"", "skiri": "taka"}, {"english": "your uncle", "skiri": "patsiriks"}, {"english": "my grandfather", "skiri": "at\u00edpat"}, {"english": "your niece, nephew", "skiri": "awat"}], "say": [{"english": "Who Is It?", "skiri": "TAK\u00c9 RU\u0027?"}, {"english": "She\u0027s my mother.", "skiri": "T\u00ed atira\u0027."}, {"english": "Stop!", "skiri": "S\u00faksur\u2022erit!"}, {"english": "I love her.", "skiri": "We t\u0027at\u2022ats\u00edks\u2022tat\u2022at"}, {"english": "No, my grandfather has passed away.", "skiri": "Kak\u00ed\u0027, atipat we t\u00ed\u2022hura\u2022hats."}]};
 
 // ── Matching ─────────────────────────────────────────────────────
 (function() {

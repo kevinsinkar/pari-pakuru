@@ -1,0 +1,3862 @@
+{
+ "weeks": [
+  {
+   "week": 1,
+   "label": "Blue Book Essentials",
+   "cards": [
+    {
+     "id": "BB-pa-0029",
+     "w": "pa",
+     "p": "",
+     "say": "puh",
+     "ipa": "",
+     "def": "moon",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "SK-aki-p11-0117",
+     "w": "aki",
+     "p": "",
+     "say": "uh-KIH",
+     "ipa": "[ə·kɪ́]",
+     "def": "and here.",
+     "cls": "INTERJ",
+     "bb": false
+    },
+    {
+     "id": "SK-ara-p360-3704",
+     "w": "ara",
+     "p": "",
+     "say": "UH-duh",
+     "ipa": "[ə́·rə]",
+     "def": "your same-sex sibling; i.e., your brother (of a male) , your sister (of a female).",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-iic-p408-3895",
+     "w": "îc",
+     "p": "iic",
+     "say": "eets",
+     "ipa": "[iits]",
+     "def": "Indian potato, wild potato (Apios americana).",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-akaq-p9-0103",
+     "w": "aka'",
+     "p": "akaʔ",
+     "say": "UH-kuh'",
+     "ipa": "[ə́·kəʔ]",
+     "def": "your grandmother.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-apat-p360-3693",
+     "w": "apat",
+     "p": "",
+     "say": "UH-puht",
+     "ipa": "[ə́·pət]",
+     "def": "your grandfather.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-asas-p363-3759",
+     "w": "asas",
+     "p": "",
+     "say": "UH-suhs",
+     "ipa": "[ə́·səs]",
+     "def": "your mother.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-asku-p16-0172",
+     "w": "asku",
+     "p": "",
+     "say": "UHS-koo",
+     "ipa": "[ə́s·kʊ]",
+     "def": "one.",
+     "cls": "NUM",
+     "bb": false
+    },
+    {
+     "id": "SK-asuq-p18-0202",
+     "w": "asu'",
+     "p": "asuʔ",
+     "say": "UH-soo'",
+     "ipa": "[ə́·sʊʔ]",
+     "def": "foot; paw.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "BB-had-0010",
+     "w": "hauʔ",
+     "p": "",
+     "say": "huh-oo'",
+     "ipa": "",
+     "def": "yes",
+     "cls": "INTERJ",
+     "bb": true
+    },
+    {
+     "id": "SK-kiri-p95-1815",
+     "w": "kiri",
+     "p": "",
+     "say": "KIH-dih",
+     "ipa": "[kɪ́·rɪ]",
+     "def": "domestic cat.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "BB-nawa-0027",
+     "w": "nawa",
+     "p": "",
+     "say": "nuh-wuh",
+     "ipa": "",
+     "def": "Hello",
+     "cls": "INTERJ",
+     "bb": true
+    },
+    {
+     "id": "BB-pawa-0041",
+     "w": "pawa",
+     "p": "",
+     "say": "puh-wuh",
+     "ipa": "",
+     "def": "farmer",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "BB-riat-0068",
+     "w": "riat",
+     "p": "",
+     "say": "dih-uht",
+     "ipa": "",
+     "def": "summer",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "SK-tiki-p165-3261",
+     "w": "tiki",
+     "p": "",
+     "say": "TIH-kih",
+     "ipa": "[tɪ́·kɪ]",
+     "def": "son, sonny.",
+     "cls": "N",
+     "bb": false
+    }
+   ]
+  },
+  {
+   "week": 2,
+   "label": "Blue Book Essentials",
+   "cards": [
+    {
+     "id": "BB-usu-0092",
+     "w": "usuʔ",
+     "p": "",
+     "say": "oo-soo'",
+     "ipa": "",
+     "def": "hair",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "SK-cawii-p28-0424",
+     "w": "Čawî",
+     "p": "Cawii",
+     "say": "chuh-WEE",
+     "ipa": "[čə·wií]",
+     "def": "Chawi band; (hist.) Republican Pawnee band.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-askuc-p16-0173",
+     "w": "askuc",
+     "p": "",
+     "say": "UHS-koots",
+     "ipa": "[ə́s·kʊts]",
+     "def": "prairie dog, black-tailed prairie dog ( Cynomys ludovicianus).",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-aspit-p17-0189",
+     "w": "aspit",
+     "p": "",
+     "say": "UHS-piht",
+     "ipa": "[ə́s·pɪt]",
+     "def": "spring peeper, chorus frog, tree frog (Pseudacris spp. and Hyla spp.).",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-cusuq-p32-0528",
+     "w": "čusu'",
+     "p": "cusuʔ",
+     "say": "CHOO-soo'",
+     "ipa": "[čʊ́·sʊʔ]",
+     "def": "nose; snout of an animal.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "BB-hawit-0014",
+     "w": "hawit",
+     "p": "",
+     "say": "huh-wiht",
+     "ipa": "",
+     "def": "East",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "BB-hetu-0017",
+     "w": "hetuʔ",
+     "p": "",
+     "say": "heh-too'",
+     "ipa": "",
+     "def": "breast",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "SK-hiruq-p43-0705",
+     "w": "hiru'",
+     "p": "hiruʔ",
+     "say": "HIH-doo'",
+     "ipa": "[hɪ́·rʊʔ]",
+     "def": "go on !",
+     "cls": "INTERJ",
+     "bb": false
+    },
+    {
+     "id": "SK-iksuq-p64-1111",
+     "w": "iksu'",
+     "p": "iksuʔ",
+     "say": "IHK-soo'",
+     "ipa": "[ɪ́k·sʊʔ]",
+     "def": "hand.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kuhku-p101-1962",
+     "w": "kuhku",
+     "p": "",
+     "say": "KOOH-koo",
+     "ipa": "[kʊ́h·kʊ]",
+     "def": "domestic pig, hog; peccary.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "BB-nawa-0028",
+     "w": "nawa!",
+     "p": "",
+     "say": "nuh-wuh",
+     "ipa": "",
+     "def": "Hello, okay, now.",
+     "cls": "INTERJ",
+     "bb": true
+    },
+    {
+     "id": "BB-parae-0035",
+     "w": "parae",
+     "p": "",
+     "say": "puh-duh-eh",
+     "ipa": "",
+     "def": "Friday",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "BB-pari-0039",
+     "w": "pariʔ",
+     "p": "",
+     "say": "puh-dih'",
+     "ipa": "",
+     "def": "Pawnee",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "SK-parus-p111-2136",
+     "w": "parus",
+     "p": "",
+     "say": "PUH-doos",
+     "ipa": "[pə́·rʊs]",
+     "def": "rabbit, hare (generic).",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-pitku-p114-2206",
+     "w": "pitku",
+     "p": "",
+     "say": "PIHT-koo",
+     "ipa": "[pɪ́t·kʊ]",
+     "def": "two.",
+     "cls": "NUM",
+     "bb": false
+    }
+   ]
+  },
+  {
+   "week": 3,
+   "label": "Blue Book Essentials",
+   "cards": [
+    {
+     "id": "SK-rakis-p135-2644",
+     "w": "rakis",
+     "p": "",
+     "say": "DUH-kihs",
+     "ipa": "[rə́·kɪs]",
+     "def": "wood; stick, limb, branch; pole.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "BB-raku-0056",
+     "w": "rakuʔ",
+     "p": "",
+     "say": "duh-koo'",
+     "ipa": "",
+     "def": "box",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "SK-riwit-p148-2864",
+     "w": "riwit",
+     "p": "",
+     "say": "DIH-wiht",
+     "ipa": "[rɪ́·wɪt]",
+     "def": "skunk.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "BB-rusu-0076",
+     "w": "rusuʔ",
+     "p": "",
+     "say": "doo-soo'",
+     "ipa": "",
+     "def": "buttocks",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "SK-tawit-p164-3225",
+     "w": "tawit",
+     "p": "",
+     "say": "TUH-wiht",
+     "ipa": "[tə́·wɪt]",
+     "def": "three.",
+     "cls": "NUM",
+     "bb": false
+    },
+    {
+     "id": "BB-tupic-0088",
+     "w": "tupic",
+     "p": "",
+     "say": "too-pihts",
+     "ipa": "",
+     "def": "quarter",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "SK-arakis-p13-0132",
+     "w": "arakis",
+     "p": "",
+     "say": "UH-duh-kihs",
+     "ipa": "[ə́·rə·kɪs]",
+     "def": "sonny; daughter, an appelative for a young person, male or female .",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-atikaq-p19-0233",
+     "w": "atika'",
+     "p": "atikaʔ",
+     "say": "uh-TIH-kuh'",
+     "ipa": "[ə·tɪ́·kəʔ]",
+     "def": "my grandmother.",
+     "cls": "N-KIN",
+     "bb": false
+    },
+    {
+     "id": "SK-atipat-p19-0241",
+     "w": "atipat",
+     "p": "",
+     "say": "uh-TIH-puht",
+     "ipa": "[ə·tɪ́·pət]",
+     "def": "my, our grandfather.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-atiraq-p19-0243",
+     "w": "atira'",
+     "p": "atiraʔ",
+     "say": "uh-TIH-duh'",
+     "ipa": "[ə·tɪ́·rəʔ]",
+     "def": "my, our mother; my, our aunt, one's father's sister.",
+     "cls": "N-KIN",
+     "bb": false
+    }
+   ]
+  },
+  {
+   "week": 4,
+   "label": "Greetings & Common Words",
+   "cards": [
+    {
+     "id": "BB-ka-0021",
+     "w": "ka?",
+     "p": "",
+     "say": "kuh",
+     "ipa": "",
+     "def": "What?",
+     "cls": "PRON",
+     "bb": true
+    },
+    {
+     "id": "BB-ti-0084",
+     "w": "tiʔ",
+     "p": "",
+     "say": "tih'",
+     "ipa": "",
+     "def": "It is. This is.",
+     "cls": "DEM",
+     "bb": true
+    },
+    {
+     "id": "BB-tiheruks-0082",
+     "w": "tiheruks",
+     "p": "",
+     "say": "tih-heh-dooks",
+     "ipa": "",
+     "def": "that other one, past",
+     "cls": "DEM",
+     "bb": true
+    },
+    {
+     "id": "SK-ci-p28-0430",
+     "w": "či",
+     "p": "ci",
+     "say": "chih",
+     "ipa": "[čɪ]",
+     "def": "but.",
+     "cls": "CONJ",
+     "bb": false
+    },
+    {
+     "id": "BB-to-0085",
+     "w": "to",
+     "p": "",
+     "say": "t",
+     "ipa": "",
+     "def": "is",
+     "cls": "PART",
+     "bb": true
+    },
+    {
+     "id": "BB-ku-0026",
+     "w": "ku+",
+     "p": "",
+     "say": "koo",
+     "ipa": "",
+     "def": "\"indefinite,\" used with possessive verbs",
+     "cls": "PART",
+     "bb": true
+    },
+    {
+     "id": "SK-ksurawiquq-p101-1949",
+     "w": "ksurawi'u'",
+     "p": "ksurawiʔuʔ",
+     "say": "KSOO-duh-wih-'oo'",
+     "ipa": "[ksʊ́·rə·wi·ʔuʔ]",
+     "def": "sixteen.",
+     "cls": "NUM",
+     "bb": false
+    },
+    {
+     "id": "SK-ku-p101-1950",
+     "w": "ku",
+     "p": "",
+     "say": "koo",
+     "ipa": "[kʊ]",
+     "def": "perhaps.",
+     "cls": "ADV",
+     "bb": false
+    },
+    {
+     "id": "SK-kira-p94-1786",
+     "w": "kira",
+     "p": "",
+     "say": "KIH-duh",
+     "ipa": "[kɪ́·rə]",
+     "def": "perhaps, maybe; must, let.",
+     "cls": "ADV",
+     "bb": false
+    },
+    {
+     "id": "SK-hiras-p390-3867",
+     "w": "hiras",
+     "p": "",
+     "say": "HIH-duhs",
+     "ipa": "[hɪ́·rəs]",
+     "def": "at night, nighttime.",
+     "cls": "ADV",
+     "bb": false
+    },
+    {
+     "id": "SK-picikat-p111-2162",
+     "w": "pičikat",
+     "p": "picikat",
+     "say": "PIH-chih-kuht",
+     "ipa": "[pɪ́·čɪ·kət]",
+     "def": "in cold, frigid, freezing weather; in winter, during winter, during winter-time.",
+     "cls": "ADV",
+     "bb": false
+    },
+    {
+     "id": "BB-rariksisu-0058",
+     "w": "rariksisuʔ",
+     "p": "",
+     "say": "duh-dihk-sih-soo'",
+     "ipa": "",
+     "def": "a lot, very",
+     "cls": "ADV",
+     "bb": true
+    }
+   ]
+  },
+  {
+   "week": 5,
+   "label": "Family & Kinship",
+   "cards": [
+    {
+     "id": "BB-pirau-0046",
+     "w": "pirauʔ",
+     "p": "",
+     "say": "pih-duh-oo'",
+     "ipa": "",
+     "def": "child",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "SK-iraariq-p64-1121",
+     "w": "irâri'",
+     "p": "iraariʔ",
+     "say": "ih-DAH-dih'",
+     "ipa": "[ɪ·raá·riʔ]",
+     "def": "his, their brother; her, their sister; my, our brother (of male), my, our sister (of female).",
+     "cls": "N-KIN",
+     "bb": false
+    },
+    {
+     "id": "SK-paciriks-p107-2045",
+     "w": "pačiriks",
+     "p": "paciriks",
+     "say": "PUH-chih-dihks",
+     "ipa": "[pə́·čɪ·rɪks]",
+     "def": "your uncle (mother's brother).",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "BB-pitarau-0048",
+     "w": "pitarauʔ",
+     "p": "",
+     "say": "pih-tuh-duh-oo'",
+     "ipa": "",
+     "def": "husband",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "BB-witesatki-0093",
+     "w": "witesatki",
+     "p": "",
+     "say": "wih-teh-suht-kih",
+     "ipa": "",
+     "def": "male adolescent, \"buck\"",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "SK-tiwaciriks-p166-3279",
+     "w": "tiwačiriks",
+     "p": "tiwaciriks",
+     "say": "TIH-wuh-chih-dihks",
+     "ipa": "[tɪ́·wə·čɪ·rɪks]",
+     "def": "my, our uncle",
+     "cls": "N-KIN",
+     "bb": false
+    },
+    {
+     "id": "BB-pitahawirata-0047",
+     "w": "pitahawirata",
+     "p": "",
+     "say": "pih-tuh-huh-wih-duh-tuh",
+     "ipa": "",
+     "def": "\"Man Going East\" or \"Man Going Downstream.\" The first independent Southern Band, given birth by someone 's religious vision. Known as Tap-age (noisy) by the French on account of their \"pentecostal\" type of early morning prayers.",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "SK--raa-p114-2223",
+     "w": "-râ",
+     "p": "-raa",
+     "say": "dah",
+     "ipa": "[–raa]",
+     "def": "mother (only with 1st person possessor).",
+     "cls": "N-KIN",
+     "bb": false
+    },
+    {
+     "id": "SK-aqas-p349-3581",
+     "w": "a'as",
+     "p": "aʔas",
+     "say": "UH-'uhs",
+     "ipa": "[ə́·ʔəs]",
+     "def": "your father.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-saru-p152-2969",
+     "w": "saru",
+     "p": "",
+     "say": "SUH-doo",
+     "ipa": "[sə́·rʊ]",
+     "def": "son, sonny, a term of address for a child that indicates he is acting in a childish manner.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK--aas--p351-3607",
+     "w": "-âs-",
+     "p": "-aas-",
+     "say": "ahs",
+     "ipa": "[–aas–]",
+     "def": "father.",
+     "cls": "N-KIN",
+     "bb": false
+    },
+    {
+     "id": "SK--kaa--p2-0000",
+     "w": "-kâ-",
+     "p": "-kaa-",
+     "say": "kah",
+     "ipa": "[–kaa–]",
+     "def": "grandmother.",
+     "cls": "N-KIN",
+     "bb": false
+    },
+    {
+     "id": "SK-araac-p360-3706",
+     "w": "arâc",
+     "p": "araac",
+     "say": "UH-dahts",
+     "ipa": "[ə́·raats]",
+     "def": "your brother (of a female) .",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-ataat-p19-0223",
+     "w": "atât",
+     "p": "ataat",
+     "say": "UH-taht",
+     "ipa": "[ə́·taat]",
+     "def": "your sister (of a male).",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-awaat-p20-0262",
+     "w": "awât",
+     "p": "awaat",
+     "say": "UH-waht",
+     "ipa": "[ə́·waat]",
+     "def": "your nephew; your niece (man's sister's child).",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK--paak--p453-4044",
+     "w": "-pâk-",
+     "p": "-paak-",
+     "say": "pahk",
+     "ipa": "[–paak–]",
+     "def": "grandfather.",
+     "cls": "N-KIN",
+     "bb": false
+    },
+    {
+     "id": "SK--raac--p116-2255",
+     "w": "-râc-",
+     "p": "-raac-",
+     "say": "dahts",
+     "ipa": "[–raats–]",
+     "def": "brother (of female).",
+     "cls": "N-KIN",
+     "bb": false
+    },
+    {
+     "id": "SK--raar--p121-2359",
+     "w": "-râr-",
+     "p": "-raar-",
+     "say": "dahd",
+     "ipa": "[–raar–]",
+     "def": "sibling of same sex: brother (of male), sister (of female).",
+     "cls": "N-KIN",
+     "bb": false
+    },
+    {
+     "id": "SK--rakis-p135-2645",
+     "w": "-rakis",
+     "p": "",
+     "say": "duh-kihs",
+     "ipa": "[–rə·kɪs]",
+     "def": "grandchild (only with 2nd person possessor).",
+     "cls": "N-KIN",
+     "bb": false
+    },
+    {
+     "id": "SK--saas--p151-2940",
+     "w": "-sâs-",
+     "p": "-saas-",
+     "say": "sahs",
+     "ipa": "[–saas–]",
+     "def": "mother.",
+     "cls": "N-KIN",
+     "bb": false
+    }
+   ]
+  },
+  {
+   "week": 6,
+   "label": "Numbers & Counting",
+   "cards": [
+    {
+     "id": "SK-ikarikat-p61-1057",
+     "w": "ikarikat",
+     "p": "",
+     "say": "IH-kuh-dih-kuht",
+     "ipa": "[ɪ́·kə·rɪ·kət]",
+     "def": "half; in the middle, in the center.",
+     "cls": "ADJ, N",
+     "bb": false
+    },
+    {
+     "id": "SK-raakuq-p120-2341",
+     "w": "râku'",
+     "p": "raakuʔ",
+     "say": "DAH-koo'",
+     "ipa": "[raá·kʊʔ]",
+     "def": "thousand.",
+     "cls": "NUM",
+     "bb": false
+    },
+    {
+     "id": "SK-suhuks-p152-2987",
+     "w": "suhuks",
+     "p": "",
+     "say": "SOO-hooks",
+     "ipa": "[sʊ́·hʊks]",
+     "def": "five.",
+     "cls": "NUM",
+     "bb": false
+    },
+    {
+     "id": "SK-tuupic-p166-3289",
+     "w": "tûpic",
+     "p": "tuupic",
+     "say": "TOO-pihts",
+     "ipa": "[tuú·pɪts]",
+     "def": "quarter, two bits.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-paahisic-p453-4039",
+     "w": "pâhisic",
+     "p": "paahisic",
+     "say": "PAH-hih-sihts",
+     "ipa": "[paá·hɪ·sɪts]",
+     "def": "nickel, five cent piece.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-piitaquq-p113-2177",
+     "w": "pîta'u'",
+     "p": "piitaʔuʔ",
+     "say": "PEE-tuh-'oo'",
+     "ipa": "[pií·tə·ʔuʔ]",
+     "def": "twenty.",
+     "cls": "NUM",
+     "bb": false
+    },
+    {
+     "id": "SK-ruksiriq-p148-2871",
+     "w": "ruksiri'",
+     "p": "ruksiriʔ",
+     "say": "DOOK-sih-dih'",
+     "ipa": "[rʊ́k·sɪ·riʔ]",
+     "def": "ten.",
+     "cls": "NUM",
+     "bb": false
+    },
+    {
+     "id": "SK-tiirisic-p165-3252",
+     "w": "tîrisic",
+     "p": "tiirisic",
+     "say": "TEE-dih-sihts",
+     "ipa": "[tií·rɪ·sɪts]",
+     "def": "dime, ten cent piece.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-rakuukita-p136-2671",
+     "w": "rakûkita",
+     "p": "rakuukita",
+     "say": "duh-KOO-kih-tuh",
+     "ipa": "[rə·kuú·kɪ·tə]",
+     "def": "fourteen.",
+     "cls": "NUM",
+     "bb": false
+    },
+    {
+     "id": "SK-tawiraaruq-p164-3221",
+     "w": "tawirâru'",
+     "p": "tawiraaruʔ",
+     "say": "TUH-wih-dah-doo'",
+     "ipa": "[tə́·wɪ·raa·rʊʔ]",
+     "def": "sixty .",
+     "cls": "NUM",
+     "bb": false
+    },
+    {
+     "id": "SK-askuhuukita-p16-0174",
+     "w": "askuhûkita",
+     "p": "askuhuukita",
+     "say": "uhs-koo-HOO-kih-tuh",
+     "ipa": "[əs·kʊ·huú·kɪ·tə]",
+     "def": "eleven.",
+     "cls": "NUM",
+     "bb": false
+    },
+    {
+     "id": "SK-katakaaksuq-p81-1491",
+     "w": "katakâksu'",
+     "p": "katakaaksuʔ",
+     "say": "kuh-TUH-kahk-soo'",
+     "ipa": "[kə·tə́·kaak·sʊʔ]",
+     "def": "half of; part, piece, portion, share of.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kskiitiqiks-p448-3997",
+     "w": "kskîti'iks",
+     "p": "kskiitiʔiks",
+     "say": "KSKEE-tih-'ihks",
+     "ipa": "[kskií·ti·ʔɪks]",
+     "def": "four.",
+     "cls": "NUM",
+     "bb": false
+    },
+    {
+     "id": "SK-kskiksaapic-p101-1943",
+     "w": "kskiksâpic",
+     "p": "kskiksaapic",
+     "say": "KSKIHK-sah-pihts",
+     "ipa": "[kskɪ́k·saa·pɪts]",
+     "def": "six.",
+     "cls": "NUM",
+     "bb": false
+    },
+    {
+     "id": "SK-tawiksaapic-p164-3214",
+     "w": "tawiksâpic",
+     "p": "tawiksaapic",
+     "say": "tuh-WIHK-sah-pihts",
+     "ipa": "[tə·wɪ́k·saa·pɪts]",
+     "def": "eight .",
+     "cls": "NUM",
+     "bb": false
+    },
+    {
+     "id": "SK-suhukstaaruq-p152-2988",
+     "w": "suhukstâru'",
+     "p": "suhukstaaruʔ",
+     "say": "SOO-hooks-tah-doo'",
+     "ipa": "[sʊ́·hʊks·taa·rʊʔ]",
+     "def": "hundred.",
+     "cls": "NUM",
+     "bb": false
+    },
+    {
+     "id": "SK-tawiruksiriq-p164-3224",
+     "w": "tawiruksiri'",
+     "p": "tawiruksiriʔ",
+     "say": "tuh-wih-DOOK-sih-dih'",
+     "ipa": "[tə·wɪ·rʊ́k·sɪ·riʔ]",
+     "def": "thirteen .",
+     "cls": "NUM",
+     "bb": false
+    },
+    {
+     "id": "SK-pitkusuraaruq-p114-2211",
+     "w": "pitkusurâru'",
+     "p": "pitkusuraaruʔ",
+     "say": "PIHT-koo-soo-dah-doo'",
+     "ipa": "[pɪ́t·kʊ·sʊ·raa·rʊʔ]",
+     "def": "forty.",
+     "cls": "NUM",
+     "bb": false
+    },
+    {
+     "id": "SK-pitkusuusiriq-p114-2213",
+     "w": "pitkusûsiri'",
+     "p": "pitkusuusiriʔ",
+     "say": "piht-koo-SOO-sih-dih'",
+     "ipa": "[pɪt·kʊ·suú·sɪ·riʔ]",
+     "def": "twelve.",
+     "cls": "NUM",
+     "bb": false
+    },
+    {
+     "id": "SK-riwaharikasis-p147-2843",
+     "w": "riwaharikasis",
+     "p": "",
+     "say": "dih-wuh-huh-DIH-kuh-sihs",
+     "ipa": "[rɪ·wə·hə·rɪ́·kə·sɪs]",
+     "def": "dwarf plum (Prunus sp., Astragalus sp.?), grows about one-and-a-half feet high and has small fruit.",
+     "cls": "N",
+     "bb": false
+    }
+   ]
+  },
+  {
+   "week": 7,
+   "label": "Animals",
+   "cards": [
+    {
+     "id": "SK-caciks-p27-0393",
+     "w": "čačiks",
+     "p": "caciks",
+     "say": "CHUH-chihks",
+     "ipa": "[čə́·čɪks]",
+     "def": "spider.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-hiituq-p390-3856",
+     "w": "hîtu'",
+     "p": "hiituʔ",
+     "say": "HEE-too'",
+     "ipa": "[hií·tʊʔ]",
+     "def": "feather.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kuruks-p102-1986",
+     "w": "kuruks",
+     "p": "",
+     "say": "KOO-dooks",
+     "ipa": "[kʊ́·rʊks]",
+     "def": "bear (Ursus spp.); brown bear.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kiwakuq-p448-3975",
+     "w": "kiwaku'",
+     "p": "kiwakuʔ",
+     "say": "KIH-wuh-koo'",
+     "ipa": "[kɪ́·wə·kʊʔ]",
+     "def": "fox (generic) (Gray Fox, Urocyon cinereoargenteus and Red Fox, Vulpes vulpes).",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-rikucki-p492-4198",
+     "w": "rikucki",
+     "p": "",
+     "say": "DIH-koots-kih",
+     "ipa": "[rɪ́·kʊts·kɪ]",
+     "def": "bird.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-tarahaq-p159-3122",
+     "w": "taraha'",
+     "p": "tarahaʔ",
+     "say": "TUH-duh-huh'",
+     "ipa": "[tə́·rə·həʔ]",
+     "def": "female buffalo, buffalo cow.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-ckirihki-p30-0485",
+     "w": "ckirihki",
+     "p": "",
+     "say": "TSKIH-dihh-kih",
+     "ipa": "[tskɪ́·rɪh·kɪ]",
+     "def": "coyote (Canis latrans), wolf (Canis lupus lycaon); Coyote, the trickster.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "BB-cpirarus-0005",
+     "w": "cpirarus",
+     "p": "",
+     "say": "tspih-duh-doos",
+     "ipa": "",
+     "def": "housefly",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "BB-retahkac-0067",
+     "w": "retahkac",
+     "p": "",
+     "say": "deh-tuhh-kuhts",
+     "ipa": "",
+     "def": "eagle",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "BB-rutpacat-0077",
+     "w": "rutpacat",
+     "p": "",
+     "say": "doot-puh-chuht",
+     "ipa": "",
+     "def": "snake",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "BB-ckiriraru-0002",
+     "w": "ckiriraruʔ",
+     "p": "",
+     "say": "tskih-dih-duh-doo'",
+     "ipa": "",
+     "def": "\"Wolf Ways\"",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "BB-ckurahkeks-0004",
+     "w": "ckurahkeks",
+     "p": "",
+     "say": "tskoo-duhh-kehks",
+     "ipa": "",
+     "def": "frog",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "BB-rahrurahki-0053",
+     "w": "rahrurahki",
+     "p": "",
+     "say": "duhh-doo-duhh-kih",
+     "ipa": "",
+     "def": "deer, large mammal",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "BB-ckirihkapira-0001",
+     "w": "ckirihkapira",
+     "p": "",
+     "say": "tskih-dihh-kuh-pih-duh",
+     "ipa": "",
+     "def": "Mad Dog Month",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "SK-ckirihkaapiraat-p30-0484",
+     "w": "ckirihkâpirât",
+     "p": "ckirihkaapiraat",
+     "say": "TSKIH-dihh-kah-pih-daht",
+     "ipa": "[tskɪ́·rɪh·kaa·pɪ·raat]",
+     "def": "wolf (Canis lupus lycaon).",
+     "cls": "N",
+     "bb": false
+    }
+   ]
+  },
+  {
+   "week": 8,
+   "label": "Animals",
+   "cards": [
+    {
+     "id": "SK-rutki_rahaawarii-p148-2879",
+     "w": "rutki rahâwarî",
+     "p": "rutki rahaawarii",
+     "say": "DOOT-kih duh-HAH-wuh-dee",
+     "ipa": "[rʊ́t·kɪ rə·haá·wə·rii]",
+     "def": "water snake (Nerodia spp.).",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-paa-p453-4022",
+     "w": "pâ",
+     "p": "paa",
+     "say": "PAH",
+     "ipa": "[paá]",
+     "def": "elk, wapiti (Cervus elaphus).",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-pic-p111-2154",
+     "w": "pic",
+     "p": "",
+     "say": "PIHTS",
+     "ipa": "[pɪ́ts]",
+     "def": "louse.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-pus-p114-2214",
+     "w": "pus",
+     "p": "",
+     "say": "POOS",
+     "ipa": "[pʊ́s]",
+     "def": "tomcat.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-taa-p153-3004",
+     "w": "tâ",
+     "p": "taa",
+     "say": "TAH",
+     "ipa": "[taá]",
+     "def": "deer (generic) (Odocoileus spp.); doe.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-uut-p173-3431",
+     "w": "ût",
+     "p": "uut",
+     "say": "OOT",
+     "ipa": "[uút]",
+     "def": "prairie chicken (gen.) (incl. Tympanuchus spp. and Centrocercus urophasianus).",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-icat-p55-0938",
+     "w": "ičat",
+     "p": "icat",
+     "say": "IH-chuht",
+     "ipa": "[ɪ́·čət]",
+     "def": "raccoon (Procyon lotor).",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-paac-p453-4029",
+     "w": "pâc",
+     "p": "paac",
+     "say": "pahts",
+     "ipa": "[paats]",
+     "def": "bee, wasp, hornet, yellow jacket.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-asaac-p362-3727",
+     "w": "asâc",
+     "p": "asaac",
+     "say": "UH-sahts",
+     "ipa": "[ə́·saats]",
+     "def": "mosquito.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-asahi-p363-3756",
+     "w": "asahi",
+     "p": "",
+     "say": "uh-SUH-hih",
+     "ipa": "[ə·sə́·hɪ]",
+     "def": "mink (Mustela vison); water dog, a legendary aquatic animal noted for its ferocity and healing powers.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-hikuc-p390-3866",
+     "w": "hikuc",
+     "p": "",
+     "say": "HIH-koots",
+     "ipa": "[hɪ́·kʊts]",
+     "def": "old buffalo bull.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-iksas-p62-1081",
+     "w": "iksas",
+     "p": "",
+     "say": "IHK-suhs",
+     "ipa": "[ɪ́k·səs]",
+     "def": "toothed-edge scraper of bison leg bone, used as a flesher.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-iruuc-p68-1211",
+     "w": "irûc",
+     "p": "iruuc",
+     "say": "IH-doots",
+     "ipa": "[ɪ́·ruuts]",
+     "def": "snowbird.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kacuq-p75-1369",
+     "w": "kaču'",
+     "p": "kacuʔ",
+     "say": "KUH-choo'",
+     "ipa": "[kə́·čʊʔ]",
+     "def": "meadowlark (Sturnella spp.) .",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kisit-p98-1896",
+     "w": "kisit",
+     "p": "",
+     "say": "KIH-siht",
+     "ipa": "[kɪ́·sɪt]",
+     "def": "leech, bloodsucker.",
+     "cls": "N",
+     "bb": false
+    }
+   ]
+  },
+  {
+   "week": 9,
+   "label": "Body & Health",
+   "cards": [
+    {
+     "id": "SK-ckaquq-p30-0460",
+     "w": "cka'u'",
+     "p": "ckaʔuʔ",
+     "say": "TSKUH-'oo'",
+     "ipa": "[tskə́·ʔuʔ]",
+     "def": "face.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "BB-hakau-0012",
+     "w": "hakauʔ",
+     "p": "",
+     "say": "huh-kuh-oo'",
+     "ipa": "",
+     "def": "mouth",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "SK-paksuq-p110-2116",
+     "w": "paksu'",
+     "p": "paksuʔ",
+     "say": "PUHK-soo'",
+     "ipa": "[pə́k·sʊʔ]",
+     "def": "head.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "BB-reksu-0065",
+     "w": "reksuʔ",
+     "p": "",
+     "say": "dehk-soo'",
+     "ipa": "",
+     "def": "ear of corn",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "BB-pare-ku-0037",
+     "w": "pareʔkuʔ",
+     "p": "",
+     "say": "puh-deh'-koo'",
+     "ipa": "",
+     "def": "horn",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "SK-cuskiituq-p32-0523",
+     "w": "čuskîtu'",
+     "p": "cuskiituʔ",
+     "say": "choos-KEE-too'",
+     "ipa": "[čʊs·kií·tʊʔ]",
+     "def": "cradleboard cloth used to wrap an infant ; the cloth is attached to the cradleboard and holds the baby on the board as well as shields its head.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-tariktaquq-p161-3154",
+     "w": "tarikta'u'",
+     "p": "tariktaʔuʔ",
+     "say": "tuh-DIHK-tuh-'oo'",
+     "ipa": "[tə·rɪ́k·tə·ʔuʔ]",
+     "def": "body.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-iir--p408-3908",
+     "w": "îr-",
+     "p": "iir-",
+     "say": "eed",
+     "ipa": "[iir–]",
+     "def": "carcass; corpse.",
+     "cls": "N-DEP",
+     "bb": false
+    },
+    {
+     "id": "SK-iit--p61-1039",
+     "w": "ît-",
+     "p": "iit-",
+     "say": "eet",
+     "ipa": "[iit–]",
+     "def": "body (living or dead); corpse; carcass.",
+     "cls": "N-DEP",
+     "bb": false
+    },
+    {
+     "id": "SK-paa--p453-4024",
+     "w": "pâ-",
+     "p": "paa-",
+     "say": "pah",
+     "ipa": "[paa–]",
+     "def": "knee.",
+     "cls": "N-DEP",
+     "bb": false
+    },
+    {
+     "id": "SK-aaruq-p351-3606",
+     "w": "âru'",
+     "p": "aaruʔ",
+     "say": "AH-doo'",
+     "ipa": "[aá·rʊʔ]",
+     "def": "tooth.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-iituq-p61-1054",
+     "w": "îtu'",
+     "p": "iituʔ",
+     "say": "EE-too'",
+     "ipa": "[ií·tʊʔ]",
+     "def": "breast, teat (of females or males).",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-uusuq-p173-3430",
+     "w": "ûsu'",
+     "p": "uusuʔ",
+     "say": "OO-soo'",
+     "ipa": "[uú·sʊʔ]",
+     "def": "hair.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-ahitki-p9-0097",
+     "w": "ahitki",
+     "p": "",
+     "say": "uh-HIHT-kih",
+     "ipa": "[ə·hɪ́t·kɪ]",
+     "def": "fat.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-asuris-p18-0212",
+     "w": "asuris",
+     "p": "",
+     "say": "uh-SOO-dihs",
+     "ipa": "[ə·sʊ́·rɪs]",
+     "def": "urine; odor of urine.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-haatuq-p36-0627",
+     "w": "hâtu'",
+     "p": "haatuʔ",
+     "say": "HAH-too'",
+     "ipa": "[haá·tʊʔ]",
+     "def": "tongue.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-hiksuq-p390-3862",
+     "w": "hiksu'",
+     "p": "hiksuʔ",
+     "say": "HIHK-soo'",
+     "ipa": "[hɪ́k·sʊʔ]",
+     "def": "breath.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-irikus-p66-1173",
+     "w": "irikus",
+     "p": "",
+     "say": "ih-DIH-koos",
+     "ipa": "[ɪ·rɪ́·kʊs]",
+     "def": "cough.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-itpaac-p69-1244",
+     "w": "itpâc",
+     "p": "itpaac",
+     "say": "iht-PAHTS",
+     "ipa": "[ɪt·paáts]",
+     "def": "spleen.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kaasuq-p74-1322",
+     "w": "kâsu'",
+     "p": "kaasuʔ",
+     "say": "KAH-soo'",
+     "ipa": "[kaá·sʊʔ]",
+     "def": "leg.",
+     "cls": "N",
+     "bb": false
+    }
+   ]
+  },
+  {
+   "week": 10,
+   "label": "Food & Cooking",
+   "cards": [
+    {
+     "id": "BB-kisacki-0022",
+     "w": "kisacki",
+     "p": "",
+     "say": "kih-suhts-kih",
+     "ipa": "",
+     "def": "meat",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "BB-rekicu-0064",
+     "w": "rekicuʔ",
+     "p": "",
+     "say": "deh-kih-choo'",
+     "ipa": "",
+     "def": "sugar",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "SK-rikiisuq-p492-4194",
+     "w": "rikîsu'",
+     "p": "rikiisuʔ",
+     "say": "DIH-kee-soo'",
+     "ipa": "[rɪ́·kii·sʊʔ]",
+     "def": "corn; corn kernel, shelled corn.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "BB-hakaru-hkucu-0011",
+     "w": "hakaruʔhkucuʔ",
+     "p": "",
+     "say": "huh-kuh-doo'h-koo-choo'",
+     "ipa": "",
+     "def": "Feast",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "SK-huuq-p48-0815",
+     "w": "hû'",
+     "p": "huuʔ",
+     "say": "HOO'",
+     "ipa": "[huúʔ]",
+     "def": "mush; porridge.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-apuuq-p360-3703",
+     "w": "apû'",
+     "p": "apuuʔ",
+     "say": "UH-poo'",
+     "ipa": "[ə́·puuʔ]",
+     "def": "apple.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-aras--p13-0134",
+     "w": "aras-",
+     "p": "",
+     "say": "uh-duhs",
+     "ipa": "[ə·rəs–]",
+     "def": "cooked food, esp. bread and meat.",
+     "cls": "N-DEP",
+     "bb": false
+    },
+    {
+     "id": "SK-kaqit-p418-3934",
+     "w": "ka'it",
+     "p": "kaʔit",
+     "say": "KUH-'iht",
+     "ipa": "[kə́·ʔɪt]",
+     "def": "salt.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-paaqi-p453-4026",
+     "w": "pâ'i",
+     "p": "paaʔi",
+     "say": "PAH-'ih",
+     "ipa": "[paá·ʔɪ]",
+     "def": "pie.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-patki-p111-2149",
+     "w": "patki",
+     "p": "",
+     "say": "PUHT-kih",
+     "ipa": "[pə́t·kɪ]",
+     "def": "acorn (Quercus spp.).",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-aparuq-p360-3689",
+     "w": "aparu'",
+     "p": "aparuʔ",
+     "say": "uh-PUH-doo'",
+     "ipa": "[ə·pə́·rʊʔ]",
+     "def": "berry (generic).",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-aracis-p360-3712",
+     "w": "aračis",
+     "p": "aracis",
+     "say": "UH-duh-chihs",
+     "ipa": "[ə́·rə·čɪs]",
+     "def": "orange (fruit).",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-arasuq-p13-0140",
+     "w": "arasu'",
+     "p": "arasuʔ",
+     "say": "UH-duh-soo'",
+     "ipa": "[ə́·rə·sʊʔ]",
+     "def": "cooked food, as bread or meat .",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-huuwiq-p52-0892",
+     "w": "hûwi'",
+     "p": "huuwiʔ",
+     "say": "HOO-wih'",
+     "ipa": "[huú·wiʔ]",
+     "def": "corn ball, make of ground parched corn, sugar, and lard that are formed into a flat ball.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kaawis-p75-1350",
+     "w": "kâwis",
+     "p": "kaawis",
+     "say": "KAH-wihs",
+     "ipa": "[kaá·wɪs]",
+     "def": "Indian baloney, made of a straight gut that is cleaned, turned inside out, stuffed with meat, salt, and pepper, and tied at each end.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-piciis-p111-2159",
+     "w": "pičîs",
+     "p": "piciis",
+     "say": "PIH-chees",
+     "ipa": "[pɪ́·čiis]",
+     "def": "peach, peaches.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-apukaac-p360-3699",
+     "w": "apukâc",
+     "p": "apukaac",
+     "say": "uh-POO-kahts",
+     "ipa": "[ə·pʊ́·kaats]",
+     "def": "apricot.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-astawaa-p17-0197",
+     "w": "astawâ",
+     "p": "astawaa",
+     "say": "UHS-tuh-wah",
+     "ipa": "[ə́s·tə·waa]",
+     "def": "Dutch oven.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-apukasis-p360-3701",
+     "w": "apukasis",
+     "p": "",
+     "say": "uh-POO-kuh-sihs",
+     "ipa": "[ə·pʊ́·kə·sɪs]",
+     "def": "crabapple (Crataegus spp.).",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-haakasuq-p34-0582",
+     "w": "hâkasu'",
+     "p": "haakasuʔ",
+     "say": "HAH-kuh-soo'",
+     "ipa": "[haá·kə·sʊʔ]",
+     "def": "vine; bush, as a berry or rose bush.",
+     "cls": "N",
+     "bb": false
+    }
+   ]
+  },
+  {
+   "week": 11,
+   "label": "Clothing & Adornment",
+   "cards": [
+    {
+     "id": "SK-kiriks-p96-1841",
+     "w": "kiriks",
+     "p": "",
+     "say": "KIH-dihks",
+     "ipa": "[kɪ́·rɪks]",
+     "def": "bead.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-pitaksuq-p114-2204",
+     "w": "pitaksu'",
+     "p": "pitaksuʔ",
+     "say": "PIH-tuhk-soo'",
+     "ipa": "[pɪ́·tək·sʊʔ]",
+     "def": "wrap; shawl, blanket.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-taakis-p502-4242",
+     "w": "tâkis",
+     "p": "taakis",
+     "say": "TAH-kihs",
+     "ipa": "[taá·kɪs]",
+     "def": "buckskin for leggings; dried hide.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-asuuruq-p18-0219",
+     "w": "asûru'",
+     "p": "asuuruʔ",
+     "say": "UH-soo-doo'",
+     "ipa": "[ə́·suu·rʊʔ]",
+     "def": "moccasin.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-cahuuki-p27-0401",
+     "w": "čahûki",
+     "p": "cahuuki",
+     "say": "chuh-HOO-kih",
+     "ipa": "[čə·huú·kɪ]",
+     "def": "robe, of either buffalo or bear, with the fur remaining on it .",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-hiikicu-p389-3828",
+     "w": "hîkiču",
+     "p": "hiikicu",
+     "say": "HEE-kih-choo",
+     "ipa": "[hií·kɪ·čʊ]",
+     "def": "handkerchief.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-takusuq-p158-3092",
+     "w": "takusu'",
+     "p": "takusuʔ",
+     "say": "TUH-koo-soo'",
+     "ipa": "[tə́·kʊ·sʊʔ]",
+     "def": "pendant; hanging or dangling object used to decorate clothing , as a cowry shell .",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-tariir--p161-3150",
+     "w": "tarîr-",
+     "p": "tariir-",
+     "say": "tuh-deed",
+     "ipa": "[tə·riir– (ʊt...)]",
+     "def": "seam.",
+     "cls": "N-DEP",
+     "bb": false
+    },
+    {
+     "id": "SK-kaquktuq-p418-3939",
+     "w": "ka'uktu'",
+     "p": "kaʔuktuʔ",
+     "say": "kuh-'OOK-too'",
+     "ipa": "[kə·ʔúk·tʊʔ]",
+     "def": "down, soft feather.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-ksawiquq-p448-3988",
+     "w": "ksawi'u'",
+     "p": "ksawiʔuʔ",
+     "say": "KSUH-wih-'oo'",
+     "ipa": "[ksə́·wi·ʔuʔ]",
+     "def": "bracelet.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-raapiquq-p120-2353",
+     "w": "râpi'u'",
+     "p": "raapiʔuʔ",
+     "say": "DAH-pih-'oo'",
+     "ipa": "[raá·pi·ʔuʔ]",
+     "def": "dry goods, as cloth, calico, material, linens, blankets.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-asaakaquq-p362-3730",
+     "w": "asâka'u'",
+     "p": "asaakaʔuʔ",
+     "say": "uh-SAH-kuh-'oo'",
+     "ipa": "[ə·saá·kə·ʔuʔ]",
+     "def": "top of shoe, shoe cuff.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kaqiihcuq-p418-3929",
+     "w": "ka'îhču'",
+     "p": "kaʔiihcuʔ",
+     "say": "kuh-'EEH-choo'",
+     "ipa": "[kə·ʔiíh·čʊʔ]",
+     "def": "straw, as used for baskets and hats.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-raawiiruq-p128-2505",
+     "w": "râwîru'",
+     "p": "raawiiruʔ",
+     "say": "DAH-wee-doo'",
+     "ipa": "[raá·wii·rʊʔ]",
+     "def": "cloth (generic).",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-rickuusuq-p139-2755",
+     "w": "rickûsu'",
+     "p": "rickuusuʔ",
+     "say": "DIHTS-koo-soo'",
+     "ipa": "[rɪ́ts·kuu·sʊʔ]",
+     "def": "fuzz, light coat of fur, short hair; stubble.",
+     "cls": "N",
+     "bb": false
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "label": "Home & Shelter",
+   "cards": [
+    {
+     "id": "BB-skurihkat-0079",
+     "w": "skurihkat",
+     "p": "",
+     "say": "skoo-dihh-kuht",
+     "ipa": "",
+     "def": "\"school grounds,\" the tribal offices",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "BB-kitkahahki-0024",
+     "w": "kitkahahki",
+     "p": "",
+     "say": "kiht-kuh-huhh-kih",
+     "ipa": "",
+     "def": "\"Little Mud Lodge Village.\" Or, perhaps \"Little Swamp\" from kit-kaharu ' , swamp, slough. Known in early literature as \"Republican Pawnee,\" for the river where the villages were.",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "BB-reka-kusu-0062",
+     "w": "reka.kusuʔ",
+     "p": "",
+     "say": "deh-kuh-koo-soo'",
+     "ipa": "",
+     "def": "door",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "BB-tuhwicpihat-0087",
+     "w": "tuhwicpihat",
+     "p": "",
+     "say": "tooh-wihts-pih-huht",
+     "ipa": "",
+     "def": "\"Camp on the Ridge\"",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "BB-cktiskakusu-0003",
+     "w": "ckuskakusuʔ",
+     "p": "",
+     "say": "tskoos-kuh-koo-soo'",
+     "ipa": "",
+     "def": "chair",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "BB-rareka-kusu-0057",
+     "w": "rareka.kusuʔ",
+     "p": "",
+     "say": "duh-deh-kuh-koo-soo'",
+     "ipa": "",
+     "def": "door",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "SK-akaaruq-p9-0108",
+     "w": "akâru'",
+     "p": "akaaruʔ",
+     "say": "UH-kah-doo'",
+     "ipa": "[ə́·kaa·rʊʔ]",
+     "def": "dwelling, lodge, house.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-ituuruq-p418-3920",
+     "w": "itûru'",
+     "p": "ituuruʔ",
+     "say": "ih-TOO-doo'",
+     "ipa": "[ɪ·tuú·rʊʔ]",
+     "def": "village.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kicapic-p85-1588",
+     "w": "kičapic",
+     "p": "kicapic",
+     "say": "kih-CHUH-pihts",
+     "ipa": "[kɪ·čə́·pɪts]",
+     "def": "linoleum.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-hihiituq-p40-0694",
+     "w": "hihîtu'",
+     "p": "hihiituʔ",
+     "say": "hih-HEE-too'",
+     "ipa": "[hɪ·hií·tʊʔ]",
+     "def": "mat, reed mat.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kusaaruq-p102-1999",
+     "w": "kusâru'",
+     "p": "kusaaruʔ",
+     "say": "koo-SAH-doo'",
+     "ipa": "[kʊ·saá·rʊʔ]",
+     "def": "bed.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-akahtapiq-p358-3677",
+     "w": "akahtapi'",
+     "p": "akahtapiʔ",
+     "say": "UH-kuhh-tuh-pih'",
+     "ipa": "[ə́·kəh·tə·piʔ]",
+     "def": "tipi.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-haaruutuq-p36-0612",
+     "w": "hârûtu'",
+     "p": "haaruutuʔ",
+     "say": "hah-DOO-too'",
+     "ipa": "[haa·ruú·tʊʔ]",
+     "def": "dry native grass, formerly used as a floor cover; hay, as used for horse feed.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-rakaraaki-p134-2616",
+     "w": "rakarâki",
+     "p": "rakaraaki",
+     "say": "DUH-kuh-dah-kih",
+     "ipa": "[rə́·kə·raa·kɪ]",
+     "def": "dish, bowl, plate.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-raktiituq-p135-2665",
+     "w": "raktîtu'",
+     "p": "raktiituʔ",
+     "say": "duhk-TEE-too'",
+     "ipa": "[rək·tií·tʊʔ]",
+     "def": "firewood, stove wood.",
+     "cls": "N",
+     "bb": false
+    }
+   ]
+  },
+  {
+   "week": 13,
+   "label": "Colors & Appearance",
+   "cards": [
+    {
+     "id": "SK-kaatiit-p74-1329",
+     "w": "kâtît",
+     "p": "kaatiit",
+     "say": "KAH-teet",
+     "ipa": "[kaá·tiit]",
+     "def": "black man, black male.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kukatit-p101-1967",
+     "w": "kukatit",
+     "p": "",
+     "say": "KOO-kuh-tiht",
+     "ipa": "[kʊ́·kə·tɪt]",
+     "def": "buckskin horse; light-colored horse with a black mane and tail.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kicpahat-p87-1644",
+     "w": "Kicpahat",
+     "p": "",
+     "say": "KIHTS-puh-huht",
+     "ipa": "[kɪ́ts·pə·hət]",
+     "def": "Red River.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-cuskatit-p32-0521",
+     "w": "čuskatit",
+     "p": "cuskatit",
+     "say": "choos-KUH-tiht",
+     "ipa": "[čʊs·kə́·tɪt]",
+     "def": "buckskin horse with dark mane and tail and a black nose.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-katiituq-p83-1537",
+     "w": "katîtu'",
+     "p": "katiituʔ",
+     "say": "kuh-TEE-too'",
+     "ipa": "[kə·tií·tʊʔ]",
+     "def": "black.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-pahaatuq-p107-2052",
+     "w": "pahâtu'",
+     "p": "pahaatuʔ",
+     "say": "PUH-hah-too'",
+     "ipa": "[pə́·haa·tʊʔ]",
+     "def": "red paint; vermilion; red ocher, as used for ritual painting of the body and objects.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-raawisuq-p129-2525",
+     "w": "râwisu'",
+     "p": "raawisuʔ",
+     "say": "DAH-wih-soo'",
+     "ipa": "[raá·wɪ·sʊʔ]",
+     "def": "paint.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-akiwaasas-p11-0122",
+     "w": "akiwâsas",
+     "p": "akiwaasas",
+     "say": "UH-kih-wah-suhs",
+     "ipa": "[ə́·kɪ·waa·səs]",
+     "def": "black haw (Viburnum lentago).",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-asaapahat-p362-3741",
+     "w": "asâpahat",
+     "p": "asaapahat",
+     "say": "uh-sah-PUH-huht",
+     "ipa": "[ə·saa·pə́·hət]",
+     "def": "bay horse; reddish brown horse.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-asaawakiq-p363-3750",
+     "w": "asâwaki'",
+     "p": "asaawakiʔ",
+     "say": "uh-sah-WUH-kih'",
+     "ipa": "[ə·saa·wə́·kiʔ]",
+     "def": "pinto, spotted horse.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-asataakaa-p363-3760",
+     "w": "asatâkâ",
+     "p": "asataakaa",
+     "say": "uh-SUH-tah-kah",
+     "ipa": "[ə·sə́·taa·kaa]",
+     "def": "white horse.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kackaapit-p75-1360",
+     "w": "kackâpit",
+     "p": "kackaapit",
+     "say": "kuhts-KAH-piht",
+     "ipa": "[kəts·kaá·pɪt]",
+     "def": "black pepper; bell pepper; chili pepper.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kuckiicuq-p101-1954",
+     "w": "kuckîču'",
+     "p": "kuckiicuʔ",
+     "say": "koots-KEE-choo'",
+     "ipa": "[kʊts·kií·čʊʔ]",
+     "def": "white clay, as used for painting the body in rituals .",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kuctaakaa-p101-1959",
+     "w": "kuctâkâ",
+     "p": "kuctaakaa",
+     "say": "KOOTS-tah-kah",
+     "ipa": "[kʊ́ts·taa·kaa]",
+     "def": "tin pail, tin kettle; white pail, white kettle.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kurahkaac-p102-1975",
+     "w": "kurahkâc",
+     "p": "kurahkaac",
+     "say": "KOO-duhh-kahts",
+     "ipa": "[kʊ́·rəh·kaats]",
+     "def": "gray horse.",
+     "cls": "N",
+     "bb": false
+    }
+   ]
+  },
+  {
+   "week": 14,
+   "label": "Sky, Stars & Weather",
+   "cards": [
+    {
+     "id": "BB-pariat-0038",
+     "w": "pariat",
+     "p": "",
+     "say": "puh-dih-uht",
+     "ipa": "",
+     "def": "Month of Summer",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "BB-hupirit-0019",
+     "w": "hupirit",
+     "p": "",
+     "say": "hoo-pih-diht",
+     "ipa": "",
+     "def": "star",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "BB-periku-0043",
+     "w": "perikuʔ",
+     "p": "",
+     "say": "peh-dih-koo'",
+     "ipa": "",
+     "def": "Seeing (visiting) Day",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "BB-rahesa-0051",
+     "w": "rahesaʔ",
+     "p": "",
+     "say": "duh-heh-suh'",
+     "ipa": "",
+     "def": "tomorrow (that day)",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "SK-paa-p453-4021",
+     "w": "pâ",
+     "p": "paa",
+     "say": "PAH",
+     "ipa": "[paá]",
+     "def": "moon.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-pihki-p111-2165",
+     "w": "pihki",
+     "p": "",
+     "say": "PIHH-kih",
+     "ipa": "[pɪ́h·kɪ]",
+     "def": "sleet.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-saak--p151-2937",
+     "w": "sâk-",
+     "p": "saak-",
+     "say": "sahk",
+     "ipa": "[saak–]",
+     "def": "sun.",
+     "cls": "N-DEP",
+     "bb": false
+    },
+    {
+     "id": "SK-kaaqat-p2-0008",
+     "w": "kâ'at",
+     "p": "kaaʔat",
+     "say": "KAH-'uht",
+     "ipa": "[kaá·ʔət]",
+     "def": "hail.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-riqaat-p139-2753",
+     "w": "ri'ât",
+     "p": "riʔaat",
+     "say": "DIH-'aht",
+     "ipa": "[rí·ʔaat]",
+     "def": "summer.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-hiihis--p40-0700",
+     "w": "hîhis-",
+     "p": "hiihis-",
+     "say": "hee-hihs",
+     "ipa": "[hii·hɪs–]",
+     "def": "night, as a twenty-four-hour period.",
+     "cls": "N-DEP",
+     "bb": false
+    },
+    {
+     "id": "SK-cuhuuruq-p32-0517",
+     "w": "čuhûru'",
+     "p": "cuhuuruʔ",
+     "say": "choo-HOO-doo'",
+     "ipa": "[čʊ·huú·rʊʔ]",
+     "def": "rain, rainstorm.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-hiihisuq-p40-0701",
+     "w": "hîhisu'",
+     "p": "hiihisuʔ",
+     "say": "HEE-hih-soo'",
+     "ipa": "[hií·hɪ·sʊʔ]",
+     "def": "night, as a period of a night and day that elapses when counting time; equivalent to English reckoning by days .",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-hiirisuq-p389-3844",
+     "w": "hîrisu'",
+     "p": "hiirisuʔ",
+     "say": "HEE-dih-soo'",
+     "ipa": "[hií·rɪ·sʊʔ]",
+     "def": "night, as a period of a night and day that elapses when counting time; equivalent of Western reckoning by days .",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-huraaquq-p45-0756",
+     "w": "hurâ'u'",
+     "p": "huraaʔuʔ",
+     "say": "HOO-dah-'oo'",
+     "ipa": "[hʊ́·raa·ʔuʔ]",
+     "def": "snow, fallen snow,",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-huupirit-p51-0850",
+     "w": "hûpirit",
+     "p": "huupirit",
+     "say": "hoo-PIH-diht",
+     "ipa": "[huu·pɪ́·rɪt]",
+     "def": "star.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-sakuuruq-p152-2965",
+     "w": "sakûru'",
+     "p": "sakuuruʔ",
+     "say": "suh-KOO-doo'",
+     "ipa": "[sə·kuú·rʊʔ]",
+     "def": "sun.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kicpiiruq-p436-3945",
+     "w": "kicpîru'",
+     "p": "kicpiiruʔ",
+     "say": "kihts-PEE-doo'",
+     "ipa": "[kɪts·pií·rʊʔ]",
+     "def": "sprinkle, shower, light rain; mist.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-raasiituq-p124-2433",
+     "w": "râsîtu'",
+     "p": "raasiituʔ",
+     "say": "dah-SEE-too'",
+     "ipa": "[raa·sií·tʊʔ]",
+     "def": "ice.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-riisuuruq-p490-4139",
+     "w": "rîsûru'",
+     "p": "riisuuruʔ",
+     "say": "dee-SOO-doo'",
+     "ipa": "[rii·suú·rʊʔ]",
+     "def": "dawn twilight, first light of day on the horizon.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-awaahaksuq-p20-0256",
+     "w": "awâhaksu'",
+     "p": "awaahaksuʔ",
+     "say": "uh-WAH-huhk-soo'",
+     "ipa": "[ə·waá·hək·sʊʔ]",
+     "def": "Heavens; sky.",
+     "cls": "N",
+     "bb": false
+    }
+   ]
+  },
+  {
+   "week": 15,
+   "label": "Water & Rivers",
+   "cards": [
+    {
+     "id": "BB-rasitu-0059",
+     "w": "rasituʔ",
+     "p": "",
+     "say": "duh-sih-too'",
+     "ipa": "",
+     "def": "ice",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "BB-uhaiwu-0090",
+     "w": "uhaiwuʔ",
+     "p": "",
+     "say": "oo-huh-ih-woo'",
+     "ipa": "",
+     "def": "Ohio River or \"something's always floating down\"",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "SK-kicka-p85-1602",
+     "w": "kicka",
+     "p": "",
+     "say": "KIHTS-kuh",
+     "ipa": "[kɪ́ts·kə]",
+     "def": "Arkansas River.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kiicuq-p89-1678",
+     "w": "kîču'",
+     "p": "kiicuʔ",
+     "say": "KEE-choo'",
+     "ipa": "[kií·čʊʔ]",
+     "def": "water; liquid.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-ickariq-p57-0983",
+     "w": "Ickari'",
+     "p": "Ickariʔ",
+     "say": "ihts-KUH-dih'",
+     "ipa": "[ɪts·kə́·riʔ]",
+     "def": "Loup River , a fork of the Platte River (central Nebraska).",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-katuusuq-p83-1544",
+     "w": "katûsu'",
+     "p": "katuusuʔ",
+     "say": "KUH-too-soo'",
+     "ipa": "[kə́·tuu·sʊʔ]",
+     "def": "ravine, gully, gulch, draw, washout, as one created by a stream; dry creek; small ditch.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kickatuus-p86-1625",
+     "w": "Kickatûs",
+     "p": "Kickatuus",
+     "say": "KIHTS-kuh-toos",
+     "ipa": "[kɪ́ts·kə·tuus]",
+     "def": "Platte River.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-hukahaaruq-p44-0734",
+     "w": "hukahâru'",
+     "p": "hukahaaruʔ",
+     "say": "HOO-kuh-hah-doo'",
+     "ipa": "[hʊ́·kə·haa·rʊʔ]",
+     "def": "bottom land, bottoms of a stream valley, as the low, level area on each side of a stream course, either a creek or a river .",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-huuruuhtuq-p52-0871",
+     "w": "hûrûhtu'",
+     "p": "huuruuhtuʔ",
+     "say": "hoo-DOOH-too'",
+     "ipa": "[huu·ruúh·tʊʔ]",
+     "def": "mud; damp soil, wet soil.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kaariiksuq-p73-1305",
+     "w": "kârîksu'",
+     "p": "kaariiksuʔ",
+     "say": "kah-DEEK-soo'",
+     "ipa": "[kaa·riík·sʊʔ]",
+     "def": "pieces of meat hanging to dry, pieces of hanging dried meat.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kicahaasta-p84-1578",
+     "w": "kičahâsta",
+     "p": "kicahaasta",
+     "say": "KIH-chuh-hahs-tuh",
+     "ipa": "[kɪ́·čə·haas·tə]",
+     "def": "false indigo, water string ( Amorpha fruticosa ).",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kickaatiit-p86-1612",
+     "w": "kickâtît",
+     "p": "kickaatiit",
+     "say": "KIHTS-kah-teet",
+     "ipa": "[kɪ́ts·kaa·tiit]",
+     "def": "Mississippi River.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kictuuksuq-p436-3954",
+     "w": "kictûksu'",
+     "p": "kictuuksuʔ",
+     "say": "kihts-TOOK-soo'",
+     "ipa": "[kɪts·tuúk·sʊʔ]",
+     "def": "cold water; spring water; well water.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kiwahaaruq-p448-3972",
+     "w": "kiwahâru'",
+     "p": "kiwahaaruʔ",
+     "say": "KIH-wuh-hah-doo'",
+     "ipa": "[kɪ́·wə·haa·rʊʔ]",
+     "def": "pond, lake, slough, body of water; area of standing water.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kucpaarika-p101-1958",
+     "w": "kucpârika",
+     "p": "kucpaarika",
+     "say": "KOOTS-pah-dih-kuh",
+     "ipa": "[kʊ́ts·paa·rɪ·kə]",
+     "def": "tea kettle; hot water pot.",
+     "cls": "N",
+     "bb": false
+    }
+   ]
+  },
+  {
+   "week": 16,
+   "label": "Plants & Trees",
+   "cards": [
+    {
+     "id": "SK-atiit-p19-0232",
+     "w": "atît",
+     "p": "atiit",
+     "say": "UH-teet",
+     "ipa": "[ə́·tiit]",
+     "def": "bean (Phaseolus spp. and Vigna unguiculata).",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-pahat-p107-2053",
+     "w": "pahat",
+     "p": "",
+     "say": "PUH-huht",
+     "ipa": "[pə́·hət]",
+     "def": "mescal bean (Lophophora williamsii).",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-ckarus-p30-0472",
+     "w": "ckarus",
+     "p": "",
+     "say": "TSKUH-doos",
+     "ipa": "[tskə́·rʊs]",
+     "def": "oak (Quercus spp.).",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-hiiruq-p390-3845",
+     "w": "hîru'",
+     "p": "hiiruʔ",
+     "say": "HEE-doo'",
+     "ipa": "[hií·rʊʔ]",
+     "def": "grass, dry grass, hay.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kaahuq-p2-0027",
+     "w": "kâhu'",
+     "p": "kaahuʔ",
+     "say": "KAH-hoo'",
+     "ipa": "[kaá·hʊʔ]",
+     "def": "mushroom.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kahcuq-p76-1379",
+     "w": "kahču'",
+     "p": "kahcuʔ",
+     "say": "KUHH-choo'",
+     "ipa": "[kə́h·čʊʔ]",
+     "def": "herb; medicine (generic); nostrum.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-pahuks-p108-2059",
+     "w": "pahuks",
+     "p": "",
+     "say": "PUH-hooks",
+     "ipa": "[pə́·hʊks]",
+     "def": "squash, pumpkin (Cucurbita spp.); cucurbit (family Cucurbitaceae).",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-pakuus-p110-2127",
+     "w": "pakûs",
+     "p": "pakuus",
+     "say": "PUH-koos",
+     "ipa": "[pə́·kuus]",
+     "def": "gourd (Bottle Gourd, Lagenaria siceraria).",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-pasaki-p111-2145",
+     "w": "pasaki",
+     "p": "",
+     "say": "PUH-suh-kih",
+     "ipa": "[pə́·sə·kɪ]",
+     "def": "cottonwood (Populus deltoides).",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-saahki-p150-2934",
+     "w": "sâhki",
+     "p": "saahki",
+     "say": "SAHH-kih",
+     "ipa": "[saáh·kɪ]",
+     "def": "seed in the women's plum seed game.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-taatuq-p155-3015",
+     "w": "tâtu'",
+     "p": "taatuʔ",
+     "say": "TAH-too'",
+     "ipa": "[taá·tʊʔ]",
+     "def": "plant; stalk.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-atikawa-p19-0235",
+     "w": "atikawa",
+     "p": "",
+     "say": "uh-tih-KUH-wuh",
+     "ipa": "[ə·tɪ·kə́·wə]",
+     "def": "cornbread with a bean filling, i.e., a combination of cornmeal and beans.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kipisuq-p94-1785",
+     "w": "kipisu'",
+     "p": "kipisuʔ",
+     "say": "KIH-pih-soo'",
+     "ipa": "[kɪ́·pɪ·sʊʔ]",
+     "def": "small sapling.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-pakucki-p110-2118",
+     "w": "pakucki",
+     "p": "",
+     "say": "PUH-koots-kih",
+     "ipa": "[pə́·kʊts·kɪ]",
+     "def": "joint grass, tall native grass that is jointed.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-piicuuc-p460-4076",
+     "w": "pîčûc",
+     "p": "piicuuc",
+     "say": "PEE-choots",
+     "ipa": "[pií·čuuts]",
+     "def": "needle grass (Porcupine Grass, Stipa spartea).",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-rakasis-p134-2624",
+     "w": "rakasis",
+     "p": "",
+     "say": "duh-KUH-sihs",
+     "ipa": "[rə·kə́·sɪs]",
+     "def": "bearberry bush (Arctostaphylos uva-ursi), the leaves of which were used for smoking.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-rapahat-p136-2672",
+     "w": "rapahat",
+     "p": "",
+     "say": "DUH-puh-huht",
+     "ipa": "[rə́·pə·hət]",
+     "def": "red osier, red dogwood, kinnikinnick (Cornus amomum), the inner bark of which was used for tobacco.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-riiksuq-p141-2812",
+     "w": "rîksu'",
+     "p": "riiksuʔ",
+     "say": "DEEK-soo'",
+     "ipa": "[riík·sʊʔ]",
+     "def": "corn on a cob, unshelled corn; ear of corn.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-saparuu-p152-2966",
+     "w": "saparû",
+     "p": "saparuu",
+     "say": "SUH-puh-doo",
+     "ipa": "[sə́·pə·ruu]",
+     "def": "toadstool, poisonous mushroom.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-aatkirit-p351-3608",
+     "w": "âtkirit",
+     "p": "aatkirit",
+     "say": "aht-KIH-diht",
+     "ipa": "[aat·kɪ́·rɪt]",
+     "def": "sandbur (Cenchrus longispinus).",
+     "cls": "N",
+     "bb": false
+    }
+   ]
+  },
+  {
+   "week": 17,
+   "label": "Tools & Objects",
+   "cards": [
+    {
+     "id": "SK-riiksuq-p141-2811",
+     "w": "rîksu'",
+     "p": "riiksuʔ",
+     "say": "DEEK-soo'",
+     "ipa": "[riík·sʊʔ]",
+     "def": "arrow.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-raktahcuq-p135-2652",
+     "w": "raktahču'",
+     "p": "raktahcuʔ",
+     "say": "DUHK-tuhh-choo'",
+     "ipa": "[rə́k·təh·čʊʔ]",
+     "def": "shield.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-haski-p37-0650",
+     "w": "haski",
+     "p": "",
+     "say": "HUHS-kih",
+     "ipa": "[hə́s·kɪ]",
+     "def": "string, twine, cord, line.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-caatki-p27-0392",
+     "w": "čâtki",
+     "p": "caatki",
+     "say": "CHAHT-kih",
+     "ipa": "[čaát·kɪ]",
+     "def": "medicine bag; medicine bundle.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-haasuq-p36-0625",
+     "w": "hâsu'",
+     "p": "haasuʔ",
+     "say": "HAH-soo'",
+     "ipa": "[haá·sʊʔ]",
+     "def": "string (generic), a rarely used form.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-hiksuq-p390-3863",
+     "w": "hiksu'",
+     "p": "hiksuʔ",
+     "say": "HIHK-soo'",
+     "ipa": "[hɪ́k·sʊʔ]",
+     "def": "pestle, wooden pestle.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kaaqas-p2-0004",
+     "w": "kâ'as",
+     "p": "kaaʔas",
+     "say": "KAH-'uhs",
+     "ipa": "[kaá·ʔəs]",
+     "def": "train.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kuucki-p452-4007",
+     "w": "kûcki",
+     "p": "kuucki",
+     "say": "KOOTS-kih",
+     "ipa": "[kuúts·kɪ]",
+     "def": "kettle, pot , as for cooking; bucket, pail.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-siisuq-p152-2976",
+     "w": "sîsu'",
+     "p": "siisuʔ",
+     "say": "SEE-soo'",
+     "ipa": "[sií·sʊʔ]",
+     "def": "awl.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kawiquq-p84-1556",
+     "w": "kawi'u'",
+     "p": "kawiʔuʔ",
+     "say": "KUH-wih-'oo'",
+     "ipa": "[kə́·wi·ʔuʔ]",
+     "def": "shell, cartridge.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kspatuq-p101-1945",
+     "w": "kspatu'",
+     "p": "kspatuʔ",
+     "say": "KSPUH-too'",
+     "ipa": "[kspə́·tʊʔ]",
+     "def": "elk antler scraper, a curved antler handle with a blade (of flint or steel) attached to the end .",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-riiciki-p140-2775",
+     "w": "rîčiki",
+     "p": "riiciki",
+     "say": "DEE-chih-kih",
+     "ipa": "[rií·čɪ·kɪ]",
+     "def": "knife.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-asawiquq-p363-3763",
+     "w": "asawi'u'",
+     "p": "asawiʔuʔ",
+     "say": "UH-suh-wih-'oo'",
+     "ipa": "[ə́·sə·wi·ʔuʔ]",
+     "def": "trap, snare.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-ckarucki-p30-0471",
+     "w": "ckarucki",
+     "p": "",
+     "say": "TSKUH-doots-kih",
+     "ipa": "[tskə́·rʊts·kɪ]",
+     "def": "paunch, as used for a water pouch .",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-karuusuq-p79-1457",
+     "w": "karûsu'",
+     "p": "karuusuʔ",
+     "say": "KUH-doo-soo'",
+     "ipa": "[kə́·ruu·sʊʔ]",
+     "def": "sack, bag.",
+     "cls": "N",
+     "bb": false
+    }
+   ]
+  },
+  {
+   "week": 18,
+   "label": "Land & Earth",
+   "cards": [
+    {
+     "id": "BB-hackat-0009",
+     "w": "hackat",
+     "p": "",
+     "say": "huhts-kuht",
+     "ipa": "",
+     "def": "West",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "SK-karitki-p79-1443",
+     "w": "karitki",
+     "p": "",
+     "say": "KUH-diht-kih",
+     "ipa": "[kə́·rɪt·kɪ]",
+     "def": "rock, stone, pebble.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "BB-haturraru-0013",
+     "w": "haturraruʔ",
+     "p": "",
+     "say": "huh-tood-duh-doo'",
+     "ipa": "",
+     "def": "road",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "SK-paaquq-p453-4027",
+     "w": "pâ'u'",
+     "p": "paaʔuʔ",
+     "say": "PAH-'oo'",
+     "ipa": "[paá·ʔuʔ]",
+     "def": "hill, bluff, mound; mountain.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-cpaaquq-p31-0505",
+     "w": "cpâ'u'",
+     "p": "cpaaʔuʔ",
+     "say": "TSPAH-'oo'",
+     "ipa": "[tspaá·ʔuʔ]",
+     "def": "row of hills, as mounds in which garden seeds are planted.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-caapiquq-p27-0380",
+     "w": "čâpi'u'",
+     "p": "caapiʔuʔ",
+     "say": "CHAH-pih-'oo'",
+     "ipa": "[čaá·pi·ʔuʔ]",
+     "def": "bridge; foot-bridge.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-hawaaquq-p387-3813",
+     "w": "hawâ'u'",
+     "p": "hawaaʔuʔ",
+     "say": "HUH-wah-'oo'",
+     "ipa": "[hə́·waa·ʔuʔ]",
+     "def": "island.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-itkaaruq-p69-1227",
+     "w": "itkâru'",
+     "p": "itkaaruʔ",
+     "say": "IHT-kah-doo'",
+     "ipa": "[ɪ́t·kaa·rʊʔ]",
+     "def": "dirt; dust, powdered dirt.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kiiwuhki-p93-1765",
+     "w": "kîwuhki",
+     "p": "kiiwuhki",
+     "say": "KEE-wooh-kih",
+     "ipa": "[kií·wʊh·kɪ]",
+     "def": "little wild sage, prairie sagewort (Artemisia frigida).",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kisiituq-p98-1889",
+     "w": "kisîtu'",
+     "p": "kisiituʔ",
+     "say": "KIH-see-too'",
+     "ipa": "[kɪ́·sii·tʊʔ]",
+     "def": "flat reed; heavy, coarse green marsh grass, as used for weaving mats .",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kiwiktuq-p448-3983",
+     "w": "kiwiktu'",
+     "p": "kiwiktuʔ",
+     "say": "KIH-wihk-too'",
+     "ipa": "[kɪ́·wɪk·tʊʔ]",
+     "def": "sand.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-pacuukaq-p107-2049",
+     "w": "pačûka'",
+     "p": "pacuukaʔ",
+     "say": "PUH-choo-kuh'",
+     "ipa": "[pə́·čuu·kəʔ]",
+     "def": "prairie turnip, bread-root (Psoralea esculenta);",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-arikucuuq-p362-3720",
+     "w": "arikučû'",
+     "p": "arikucuuʔ",
+     "say": "UH-dih-koo-choo'",
+     "ipa": "[ə́·rɪ·kʊ·čuuʔ]",
+     "def": "bighorn, Rocky Mountain sheep.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-huutaaquq-p52-0879",
+     "w": "hûtâ'u'",
+     "p": "huutaaʔuʔ",
+     "say": "hoo-TAH-'oo'",
+     "ipa": "[huu·taá·ʔuʔ]",
+     "def": "sod, turf; chunk of mud or earth; dirt clod.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kuuhaaruq-p452-4009",
+     "w": "kûhâru'",
+     "p": "kuuhaaruʔ",
+     "say": "KOO-hah-doo'",
+     "ipa": "[kuú·haa·rʊʔ]",
+     "def": "flat or level ground : level clearing , meadow, small level valley, bottom land, low level area; valley floor; flat, flat field; prairie.",
+     "cls": "N",
+     "bb": false
+    }
+   ]
+  },
+  {
+   "week": 19,
+   "label": "Feelings & Emotions",
+   "cards": [
+    {
+     "id": "SK-tii-p164-3231",
+     "w": "tî",
+     "p": "tii",
+     "say": "tee",
+     "ipa": "[–tii–]",
+     "def": "like, care for, have an affinity for.",
+     "cls": "VT",
+     "bb": false
+    },
+    {
+     "id": "SK-ariq-p13-0141",
+     "w": "ari'",
+     "p": "ariʔ",
+     "say": "UH-dih'",
+     "ipa": "[ə́·riʔ]",
+     "def": "oh! an exclamation of surprise.",
+     "cls": "EXCL",
+     "bb": false
+    },
+    {
+     "id": "SK-raahikuucuq-p117-2276",
+     "w": "râhikûču'",
+     "p": "raahikuucuʔ",
+     "say": "DAH-hih-koo-choo'",
+     "ipa": "[raá·hɪ·kuu·čʊʔ]",
+     "def": "brave, warrior; brave or valorous man.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-haakastahkata-p34-0580",
+     "w": "hâkastahkata",
+     "p": "haakastahkata",
+     "say": "hah-kuhs-TUHH-kuh-tuh",
+     "ipa": "[haa·kəs·tə́h·kə·tə]",
+     "def": "field dodder, love vine (Cuscuta spp.).",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kuruksicariis-p102-1988",
+     "w": "kuruksičarîs",
+     "p": "kuruksicariis",
+     "say": "KOO-dook-sih-chuh-dees",
+     "ipa": "[kʊ́·rʊk·sɪ·čə·riis]",
+     "def": "angry bear.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-raakawahaaruq-p119-2317",
+     "w": "râkawahâru'",
+     "p": "raakawahaaruʔ",
+     "say": "dah-KUH-wuh-hah-doo'",
+     "ipa": "[raa·kə́·wə·haa·rʊʔ]",
+     "def": "good fortune, luck.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-pic-p111-2153",
+     "w": "pic",
+     "p": "",
+     "say": "PIHTS",
+     "ipa": "[pɪ́ts]",
+     "def": "hated, disliked.",
+     "cls": "ADJ",
+     "bb": false
+    },
+    {
+     "id": "SK-cikstiihuuruq-p29-0445",
+     "w": "čikstîhûru'",
+     "p": "cikstiihuuruʔ",
+     "say": "CHIHKS-tee-hoo-doo'",
+     "ipa": "[čɪ́ks·tii·huu·rʊʔ]",
+     "def": "thankful, appreciative, grateful; happy.",
+     "cls": "ADJ",
+     "bb": false
+    },
+    {
+     "id": "SK-ciir-p29-0437",
+     "w": "čîr",
+     "p": "ciir",
+     "say": "chee(d)",
+     "ipa": "[–čii(r)–]",
+     "def": "be ambitious, energetic; be a willing worker; like to work, be a worker",
+     "cls": "VD",
+     "bb": false
+    },
+    {
+     "id": "SK-kiis-p91-1723",
+     "w": "kîs",
+     "p": "kiis",
+     "say": "kees",
+     "ipa": "[–kiis–]",
+     "def": "be vain, proud, as someone who is a show-off or who dresses ostentatiously or fastidiously; be conceited.",
+     "cls": "VD",
+     "bb": false
+    },
+    {
+     "id": "SK-riru-p145-2838",
+     "w": "riru",
+     "p": "",
+     "say": "dih-doo",
+     "ipa": "[–rɪ·rʊ–]",
+     "def": "be afraid, scared, frightened, fearful.",
+     "cls": "VP",
+     "bb": false
+    },
+    {
+     "id": "SK-riru-p145-2839",
+     "w": "riru",
+     "p": "",
+     "say": "dih-doo",
+     "ipa": "[–rɪ·rʊ–]",
+     "def": "fear, have fear of, be afraid of.",
+     "cls": "VT",
+     "bb": false
+    },
+    {
+     "id": "SK-kikak-p93-1767",
+     "w": "kikak",
+     "p": "",
+     "say": "kih-kuh(k/t)",
+     "ipa": "[–kɪ·kə{k/t}–]",
+     "def": "cry; mourn.",
+     "cls": "VI",
+     "bb": false
+    },
+    {
+     "id": "SK-kirir-p97-1872",
+     "w": "kirir",
+     "p": "",
+     "say": "kih-dih(d)",
+     "ipa": "[–kɪ·rɪ(r)–]",
+     "def": "shake, quiver, tremble, shiver, as when cold or angry.",
+     "cls": "VP",
+     "bb": false
+    },
+    {
+     "id": "SK-kitii-p99-1920",
+     "w": "kitî",
+     "p": "kitii",
+     "say": "kih-tee",
+     "ipa": "[–kɪ·tii–]",
+     "def": "be stubborn, obstinate; be intractable, recalcitrant.",
+     "cls": "VD",
+     "bb": false
+    }
+   ]
+  },
+  {
+   "week": 21,
+   "label": "People & Society",
+   "cards": [
+    {
+     "id": "BB-curaki-0006",
+     "w": "curaki",
+     "p": "",
+     "say": "choo-duh-kih",
+     "ipa": "",
+     "def": "girl",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "BB-custit-0008",
+     "w": "custit",
+     "p": "",
+     "say": "choos-tiht",
+     "ipa": "",
+     "def": "elderly woman",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "BB-hawiu-0015",
+     "w": "hawiuʔ",
+     "p": "",
+     "say": "huh-wih-oo'",
+     "ipa": "",
+     "def": "picture",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "BB-curasu-0007",
+     "w": "curasuʔ",
+     "p": "",
+     "say": "choo-duh-soo'",
+     "ipa": "",
+     "def": "female adolescent, maiden",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "SK-astarahi-p17-0194",
+     "w": "Astarahi",
+     "p": "",
+     "say": "uhs-tuh-DUH-hih",
+     "ipa": "[əs·tə·rə́·hɪ]",
+     "def": "Arikara tribe; (hist.) Arickaree tribe, Ree tribe.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-piiraski-p460-4096",
+     "w": "pîraski",
+     "p": "piiraski",
+     "say": "PEE-duhs-kih",
+     "ipa": "[pií·rəs·kɪ]",
+     "def": "boy.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "BB-hetkata-ku-0016",
+     "w": "hetkataʔku",
+     "p": "",
+     "say": "heht-kuh-tuh'-koo",
+     "ipa": "",
+     "def": "sheriff, office of the law",
+     "cls": "N",
+     "bb": true
+    },
+    {
+     "id": "SK-ka-p418-3926",
+     "w": "ka",
+     "p": "",
+     "say": "kuh",
+     "ipa": "[–kə–]",
+     "def": "be outstanding, extraordinary, exceptional, as a warrior who stands out above others.",
+     "cls": "VL",
+     "bb": false
+    },
+    {
+     "id": "SK-rat-p138-2732",
+     "w": "rat",
+     "p": "",
+     "say": "duht",
+     "ipa": "[–rət–]",
+     "def": "take, carry; move.",
+     "cls": "VT",
+     "bb": false
+    },
+    {
+     "id": "SK-tir-p165-3262",
+     "w": "tir",
+     "p": "",
+     "say": "tih(d)",
+     "ipa": "[–tɪ(r)–]",
+     "def": "be together, always together, as companions.",
+     "cls": "VI",
+     "bb": false
+    },
+    {
+     "id": "SK-sahi-p151-2941",
+     "w": "Sahi",
+     "p": "",
+     "say": "SUH-hih",
+     "ipa": "[sə́·hɪ]",
+     "def": "Cheyenne tribe.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-raa--p114-2225",
+     "w": "râ-",
+     "p": "raa-",
+     "say": "dah",
+     "ipa": "[raa–]",
+     "def": "way, custom, tradition.",
+     "cls": "N-DEP",
+     "bb": false
+    },
+    {
+     "id": "SK-paari-p454-4071",
+     "w": "Pâri",
+     "p": "Paari",
+     "say": "PAH-dih",
+     "ipa": "[paá·rɪ]",
+     "def": "Pawnee tribe.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-rahwa-p133-2602",
+     "w": "rahwa",
+     "p": "",
+     "say": "DUHH-wuh",
+     "ipa": "[rə́h·wə]",
+     "def": "captive, prisoner; slave.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-uhur--p168-3323",
+     "w": "uhur-",
+     "p": "",
+     "say": "oo-hood",
+     "ipa": "[ʊ·hʊr–]",
+     "def": "way, behavior; image, shape.",
+     "cls": "N-DEP",
+     "bb": false
+    },
+    {
+     "id": "SK--taat--p502-4251",
+     "w": "-tât-",
+     "p": "-taat-",
+     "say": "taht",
+     "ipa": "[–taat–]",
+     "def": "sister (of a male).",
+     "cls": "N-KIN",
+     "bb": false
+    },
+    {
+     "id": "SK--waat--p174-3453",
+     "w": "-wât-",
+     "p": "-waat-",
+     "say": "waht",
+     "ipa": "[–waat–]",
+     "def": "niece, nephew; ref. to a man's sister's children, whom the uncle valued highly.",
+     "cls": "N-KIN",
+     "bb": false
+    },
+    {
+     "id": "SK-ckiiri-p30-0474",
+     "w": "Ckîri",
+     "p": "Ckiiri",
+     "say": "TSKEE-dih",
+     "ipa": "[tskií·rɪ]",
+     "def": "Skiri tribe; Loup tribe, Wolf tribe.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-ctuquq-p31-0513",
+     "w": "Ctu'u'",
+     "p": "Ctuʔuʔ",
+     "say": "TSTOO-'oo'",
+     "ipa": "[tstú·ʔuʔ]",
+     "def": "Witch Woman, a mythological old woman who has supernatural power.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kaqiwa-p418-3937",
+     "w": "Ka'iwa",
+     "p": "Kaʔiwa",
+     "say": "KUH-'ih-wuh",
+     "ipa": "[kə́·ʔɪ·wə]",
+     "def": "Kiowa tribe.",
+     "cls": "N",
+     "bb": false
+    }
+   ]
+  },
+  {
+   "week": 22,
+   "label": "Language & Communication",
+   "cards": [
+    {
+     "id": "SK-wak--p175-3462",
+     "w": "wak-",
+     "p": "",
+     "say": "wuhk",
+     "ipa": "[wək–]",
+     "def": "voice, sound, speech.",
+     "cls": "N-DEP",
+     "bb": false
+    },
+    {
+     "id": "SK-pakaruq-p108-2075",
+     "w": "pakaru'",
+     "p": "pakaruʔ",
+     "say": "puh-KUH-doo'",
+     "ipa": "[pə·kə́·rʊʔ]",
+     "def": "mute person.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-pakaquq-p108-2071",
+     "w": "paka'u'",
+     "p": "pakaʔuʔ",
+     "say": "PUH-kuh-'oo'",
+     "ipa": "[pə́·kə·ʔuʔ]",
+     "def": "voice; speech.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-pakuuruq-p110-2126",
+     "w": "pakûru'",
+     "p": "pakuuruʔ",
+     "say": "puh-KOO-doo'",
+     "ipa": "[pə·kuú·rʊʔ]",
+     "def": "voice; speech, talk, utterance.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-pakaraaruq-p108-2073",
+     "w": "pakarâru'",
+     "p": "pakaraaruʔ",
+     "say": "PUH-kuh-dah-doo'",
+     "ipa": "[pə́·kə·raa·rʊʔ]",
+     "def": "speech, talk.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-pakuhuuruq-p110-2121",
+     "w": "pakuhûru'",
+     "p": "pakuhuuruʔ",
+     "say": "PUH-koo-hoo-doo'",
+     "ipa": "[pə́·kʊ·huu·rʊʔ]",
+     "def": "voice.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-huurasaaruq-p51-0861",
+     "w": "hûrasâru'",
+     "p": "huurasaaruʔ",
+     "say": "HOO-duh-sah-doo'",
+     "ipa": "[huú·rə·saa·rʊʔ]",
+     "def": "personal name.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-raaqiitusuq-p115-2242",
+     "w": "râ'îtusu'",
+     "p": "raaʔiitusuʔ",
+     "say": "dah-'EE-too-soo'",
+     "ipa": "[raa·ʔií·tʊ·sʊʔ]",
+     "def": "word, words.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-asaar-p362-3743",
+     "w": "asâr",
+     "p": "asaar",
+     "say": "uh-sah(d)",
+     "ipa": "[–ə·saa(r)–]",
+     "def": "be named, called; be one's name.",
+     "cls": "VD",
+     "bb": false
+    },
+    {
+     "id": "SK-asaar-p362-3744",
+     "w": "asâr",
+     "p": "asaar",
+     "say": "uh-sah(d)",
+     "ipa": "[–ə·saa(r)–]",
+     "def": "be named after; have someone's name.",
+     "cls": "VD",
+     "bb": false
+    },
+    {
+     "id": "SK-kaksaa-p76-1395",
+     "w": "kaksâ",
+     "p": "kaksaa",
+     "say": "kuhk-sah",
+     "ipa": "[–kək·saa–]",
+     "def": "shout, holler, call out.",
+     "cls": "VI",
+     "bb": false
+    },
+    {
+     "id": "SK-kaksaa-p77-1396",
+     "w": "kaksâ",
+     "p": "kaksaa",
+     "say": "kuhk-sah",
+     "ipa": "[–kək·saa–]",
+     "def": "call, summon, as when inviting someone.",
+     "cls": "VT",
+     "bb": false
+    },
+    {
+     "id": "SK-taraqu-p159-3107",
+     "w": "tara'u",
+     "p": "taraʔu",
+     "say": "tuh-duh-'oo",
+     "ipa": "[–tə·rə·ʔu–]",
+     "def": "talk about, discuss",
+     "cls": "VT",
+     "bb": false
+    },
+    {
+     "id": "SK-wakaqu-p175-3463",
+     "w": "waka'u",
+     "p": "wakaʔu",
+     "say": "wuh-kuh-'oo",
+     "ipa": "[–wə·kə·ʔu–]",
+     "def": "say.",
+     "cls": "VI, VT",
+     "bb": false
+    },
+    {
+     "id": "SK-wakaqu-p175-3464",
+     "w": "waka'u",
+     "p": "wakaʔu",
+     "say": "wuh-kuh-'oo",
+     "ipa": "[–wə·kə·ʔu–]",
+     "def": "speak, as a language.",
+     "cls": "VT",
+     "bb": false
+    }
+   ]
+  },
+  {
+   "week": 23,
+   "label": "Movement & Travel",
+   "cards": [
+    {
+     "id": "SK-at-p18-0220",
+     "w": "at",
+     "p": "",
+     "say": "uht",
+     "ipa": "[–ət–]",
+     "def": "go; walk.",
+     "cls": "VI",
+     "bb": false
+    },
+    {
+     "id": "SK-raqa-p114-2217",
+     "w": "ra'a",
+     "p": "raʔa",
+     "say": "dah",
+     "ipa": "[–raa–]",
+     "def": "bring.",
+     "cls": "VT",
+     "bb": false
+    },
+    {
+     "id": "SK-hiriitik-p43-0704",
+     "w": "hirîtik",
+     "p": "hiriitik",
+     "say": "hih-dee-tih(k/t)",
+     "ipa": "[–hɪ·rii·tɪ{k/t}–]",
+     "def": "get into water, lie down in water; go down in water, as a bird diving.",
+     "cls": "VI",
+     "bb": false
+    },
+    {
+     "id": "SK-irikisat-p66-1171",
+     "w": "irikisat",
+     "p": "",
+     "say": "ih-dih-kih-suht",
+     "ipa": "[–ɪ·rɪ·kɪ·sət–]",
+     "def": "crawl, crawl on one's hands and knees; crawl to.",
+     "cls": "VI",
+     "bb": false
+    },
+    {
+     "id": "SK-haskiicuq-p37-0653",
+     "w": "haskîču'",
+     "p": "haskiicuʔ",
+     "say": "HUHS-kee-choo'",
+     "ipa": "[hə́s·kii·čʊʔ]",
+     "def": "string, cord, twine, thong , as used for a belt or to hold or carry something .",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-cpiiraruus-p31-0508",
+     "w": "cpîrarûs",
+     "p": "cpiiraruus",
+     "say": "tspee-DUH-doos",
+     "ipa": "[tspii·rə́·ruus]",
+     "def": "fly, housefly (Musca domestica).",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-haspaaksuq-p38-0655",
+     "w": "haspâksu'",
+     "p": "haspaaksuʔ",
+     "say": "HUHS-pahk-soo'",
+     "ipa": "[hə́s·paak·sʊʔ]",
+     "def": "head strap, strap for attaching a bundle to one's body to carry.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-raaruhuuruq-p124-2422",
+     "w": "râruhûru'",
+     "p": "raaruhuuruʔ",
+     "say": "DAH-doo-hoo-doo'",
+     "ipa": "[raá·rʊ·huu·rʊʔ]",
+     "def": "direction, course; way.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kaaqaskucuuq-p2-0007",
+     "w": "kâ'askučû'",
+     "p": "kaaʔaskucuuʔ",
+     "say": "KAH-'uhs-koo-choo'",
+     "ipa": "[kaá·ʔəs·kʊ·čuuʔ]",
+     "def": "truck.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-sistuq-p152-2981",
+     "w": "sistu'",
+     "p": "sistuʔ",
+     "say": "SIHS-too'",
+     "ipa": "[sɪ́s·tʊʔ]",
+     "def": "again; back, as to come back or return to a starting point.",
+     "cls": "ADV",
+     "bb": false
+    },
+    {
+     "id": "SK-a-p349-3577",
+     "w": "a",
+     "p": "",
+     "say": "uh",
+     "ipa": "[–ə–]",
+     "def": "come; (idiom) be here, said when someone has arrived.",
+     "cls": "VI",
+     "bb": false
+    },
+    {
+     "id": "SK-uqa-p167-3295",
+     "w": "u'a",
+     "p": "uʔa",
+     "say": "oo-'uh",
+     "ipa": "[–u·ʔə–]",
+     "def": "come flying; fly this way.",
+     "cls": "VI",
+     "bb": false
+    },
+    {
+     "id": "SK-war-p177-3500",
+     "w": "war",
+     "p": "",
+     "say": "wuh(d)",
+     "ipa": "[–wə(r)–]",
+     "def": "go; walk.",
+     "cls": "VI",
+     "bb": false
+    },
+    {
+     "id": "SK-as-i-p362-3725",
+     "w": "as-i",
+     "p": "",
+     "say": "uhs-ih",
+     "ipa": "[–əs–ɪ–]",
+     "def": "run.",
+     "cls": "VI",
+     "bb": false
+    },
+    {
+     "id": "SK-raah-p116-2264",
+     "w": "râh",
+     "p": "raah",
+     "say": "dah(h)",
+     "ipa": "[–raa(h)–]",
+     "def": "have, possess; carry .",
+     "cls": "VT",
+     "bb": false
+    }
+   ]
+  },
+  {
+   "week": 24,
+   "label": "Places & Directions",
+   "cards": [
+    {
+     "id": "SK-kaaqata-p2-0011",
+     "w": "kâ'ata",
+     "p": "kaaʔata",
+     "say": "KAH-'uh-tuh",
+     "ipa": "[kaá·ʔə·tə]",
+     "def": "upland plover (Upland Sandpiper, Bartramia longicauda).",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-raarusuq-p124-2426",
+     "w": "rârusu'",
+     "p": "raarusuʔ",
+     "say": "DAH-doo-soo'",
+     "ipa": "[raá·rʊ·sʊʔ]",
+     "def": "brush; brushy area.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-wihaaruq-p178-3532",
+     "w": "wihâru'",
+     "p": "wihaaruʔ",
+     "say": "WIH-hah-doo'",
+     "ipa": "[wɪ́·haa·rʊʔ]",
+     "def": "game ground, where people played hoop and pole, shinny, and other games, or where they gambled.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-tuhuucaku-p166-3284",
+     "w": "Tuhûčaku",
+     "p": "Tuhuucaku",
+     "say": "TOO-hoo-chuh-koo",
+     "ipa": "[tʊ́·huu·čə·kʊ]",
+     "def": "Village Along The Bank, a former Skiri village in Nebraska.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-ataawiquq-p19-0225",
+     "w": "atâwi'u'",
+     "p": "ataawiʔuʔ",
+     "say": "UH-tah-wih-'oo'",
+     "ipa": "[ə́·taa·wi·ʔuʔ]",
+     "def": "burial; grave.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-paahiksuq-p453-4037",
+     "w": "pâhiksu'",
+     "p": "paahiksuʔ",
+     "say": "pah-HIHK-soo'",
+     "ipa": "[paa·hɪ́k·sʊʔ]",
+     "def": "throat, front part of the neck.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-pakuucaku-p110-2123",
+     "w": "pakûčaku",
+     "p": "pakuucaku",
+     "say": "PUH-koo-chuh-koo",
+     "ipa": "[pə́·kuu·čə·kʊ]",
+     "def": "top, spinning top.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-rikuhiriq-p145-2820",
+     "w": "rikuhiri'",
+     "p": "rikuhiriʔ",
+     "say": "dih-KOO-hih-dih'",
+     "ipa": "[rɪ·kʊ́·hɪ·riʔ]",
+     "def": "chest, breast; area of clavicle, collarbone.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-aahkawiquq-p2-0043",
+     "w": "âhkawi'u'",
+     "p": "aahkawiʔuʔ",
+     "say": "ahh-KUH-wih-'oo'",
+     "ipa": "[aah·kə́·wi·ʔuʔ]",
+     "def": "bank, drop-off; cliff; precipice; washout.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-astihaaruq-p17-0200",
+     "w": "astihâru'",
+     "p": "astihaaruʔ",
+     "say": "UHS-tih-hah-doo'",
+     "ipa": "[ə́s·tɪ·haa·rʊʔ]",
+     "def": "crown of the head, pate, top of the head; top of a buffalo head, especially the area between the horns.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-cuuhkataku-p32-0532",
+     "w": "čûhkataku",
+     "p": "cuuhkataku",
+     "say": "CHOOH-kuh-tuh-koo",
+     "ipa": "[čuúh·kə·tə·kʊ]",
+     "def": "warbonnet; hat or cap with feathers around it, forming a circle.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kahaariwis-p76-1374",
+     "w": "kahâriwis",
+     "p": "kahaariwis",
+     "say": "KUH-hah-dih-wihs",
+     "ipa": "[kə́·haa·rɪ·wɪs]",
+     "def": "cliff swallow (Petrochelidon pyrrhonota).",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kicahaaruq-p84-1576",
+     "w": "kičahâru'",
+     "p": "kicahaaruʔ",
+     "say": "KIH-chuh-hah-doo'",
+     "ipa": "[kɪ́·čə·haa·rʊʔ]",
+     "def": "marsh, bog, wetland ; watery area .",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-kitahaaruq-p98-1910",
+     "w": "kitahâru'",
+     "p": "kitahaaruʔ",
+     "say": "KIH-tuh-hah-doo'",
+     "ipa": "[kɪ́·tə·haa·rʊʔ]",
+     "def": "hilltop, top of a hill.",
+     "cls": "N",
+     "bb": false
+    },
+    {
+     "id": "SK-rahpiiksuq-p132-2578",
+     "w": "rahpîksu'",
+     "p": "rahpiiksuʔ",
+     "say": "DUHH-peek-soo'",
+     "ipa": "[rə́h·piik·sʊʔ]",
+     "def": "scar, scarred area.",
+     "cls": "N",
+     "bb": false
+    }
+   ]
+  }
+ ]
+}

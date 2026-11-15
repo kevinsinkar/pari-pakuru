@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Words by topic — Skiri Pawnee Dictionary</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;1,8..60,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Pico CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+
+  <!-- Custom Pawnee theme -->
+  <link rel="stylesheet" href="static/css/pawnee-theme.css">
+
+  <!-- HTMX (optional for live features) -->
+  <script src="https://unpkg.com/htmx.org@2.0.4"></script>
+
+  <!-- Fuse.js for client-side search -->
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+
+  <!-- Shared helpers of the learning pages (syllables, word pieces), then the client-side search -->
+  <script src="static/js/skiri.js"></script>
+  <script src="static/js/search.js"></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <!-- ====== Top Navigation ====== -->
+  <header class="container">
+    <nav class="site-nav">
+      <ul>
+        <li>
+          <a href="index.html" class="contrast" style="text-decoration:none; display:flex; align-items:center; gap:0.75rem;">
+            <span style="
+              width:36px; height:36px; border-radius:50%;
+              background: linear-gradient(135deg, var(--clay-600), var(--gold-400));
+              display:flex; align-items:center; justify-content:center;
+            ">
+              
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2L15.5 8.5L22 12L15.5 15.5L12 22L8.5 15.5L2 12L8.5 8.5L12 2Z" fill="white" opacity="0.9"/>
+              </svg>
+            </span>
+            <span>
+              <strong class="font-serif" style="font-size:1.2rem; letter-spacing:-0.3px;">P&#226;ri Pak&#251;ru'</strong>
+              <br>
+              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Learn Skiri Pawnee</small>
+            </span>
+          </a>
+        </li>
+      </ul>
+
+      
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleNav(this)">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+
+      <ul class="nav-links">
+        
+        <li><a href="learn.html" >Start here</a></li>
+        <li><a href="index.html" >Dictionary</a></li>
+        
+        
+        <li><a href="guide.html" >Sounds</a></li>
+        <li><a href="words.html" >Word building</a></li>
+        <li><a href="verbs.html" >Verbs</a></li>
+        <li><a href="lessons.html" >Lessons</a></li>
+        <li><a href="flashcards.html" >Flashcards</a></li>
+        <li><a href="practice.html" >Practice</a></li>
+        
+        
+        <li><a href="topics.html" aria-current="page">Topics</a></li>
+        
+        <li><a href="about.html" >About</a></li>
+
+        
+        
+      </ul>
+    </nav>
+    
+    <form action="index.html" method="get" class="nav-search" role="search">
+      <input
+        type="search"
+        name="q"
+        placeholder="Search Skiri or English..."
+        value=""
+        aria-label="Search the dictionary"
+        autocomplete="off"
+      >
+    </form>
+    
+  </header>
+
+  <!-- ====== Main Content ====== -->
+  <main class="container" id="main-content">
+    <div id="live-results"></div>
+    
+
+<article class="learn-page">
+  <p class="learn-kicker">Topics</p>
+  <h2>Words by topic</h2>
+  <p class="learn-lead">
+    Learn the words for one part of life at a time. Choose a topic, then narrow it to nouns or verbs,
+    or to a word you type.
+  </p>
+
+  <div class="topic-grid" id="tp-topics">
+    
+    <a class="topic-card" href="?tag=kinship" data-tag="kinship" data-label="Family & Kinship">
+      <span class="topic-name">Family & Kinship</span>
+      <span class="topic-count">66 words</span>
+    </a>
+    
+    <a class="topic-card" href="?tag=number" data-tag="number" data-label="Numbers & Counting">
+      <span class="topic-name">Numbers & Counting</span>
+      <span class="topic-count">133 words</span>
+    </a>
+    
+    <a class="topic-card" href="?tag=animal" data-tag="animal" data-label="Animals">
+      <span class="topic-name">Animals</span>
+      <span class="topic-count">320 words</span>
+    </a>
+    
+    <a class="topic-card" href="?tag=body" data-tag="body" data-label="Body & Health">
+      <span class="topic-name">Body & Health</span>
+      <span class="topic-count">392 words</span>
+    </a>
+    
+    <a class="topic-card" href="?tag=food" data-tag="food" data-label="Food & Cooking">
+      <span class="topic-name">Food & Cooking</span>
+      <span class="topic-count">236 words</span>
+    </a>
+    
+    <a class="topic-card" href="?tag=clothing" data-tag="clothing" data-label="Clothing & Adornment">
+      <span class="topic-name">Clothing & Adornment</span>
+      <span class="topic-count">130 words</span>
+    </a>
+    
+    <a class="topic-card" href="?tag=housing" data-tag="housing" data-label="Home & Shelter">
+      <span class="topic-name">Home & Shelter</span>
+      <span class="topic-count">255 words</span>
+    </a>
+    
+    <a class="topic-card" href="?tag=color" data-tag="color" data-label="Colors & Appearance">
+      <span class="topic-name">Colors & Appearance</span>
+      <span class="topic-count">180 words</span>
+    </a>
+    
+    <a class="topic-card" href="?tag=celestial" data-tag="celestial" data-label="Sky, Stars & Weather">
+      <span class="topic-name">Sky, Stars & Weather</span>
+      <span class="topic-count">171 words</span>
+    </a>
+    
+    <a class="topic-card" href="?tag=water" data-tag="water" data-label="Water & Rivers">
+      <span class="topic-name">Water & Rivers</span>
+      <span class="topic-count">210 words</span>
+    </a>
+    
+    <a class="topic-card" href="?tag=plant" data-tag="plant" data-label="Plants & Trees">
+      <span class="topic-name">Plants & Trees</span>
+      <span class="topic-count">241 words</span>
+    </a>
+    
+    <a class="topic-card" href="?tag=tool" data-tag="tool" data-label="Tools & Objects">
+      <span class="topic-name">Tools & Objects</span>
+      <span class="topic-count">151 words</span>
+    </a>
+    
+    <a class="topic-card" href="?tag=land" data-tag="land" data-label="Land & Earth">
+      <span class="topic-name">Land & Earth</span>
+      <span class="topic-count">197 words</span>
+    </a>
+    
+    <a class="topic-card" href="?tag=emotion" data-tag="emotion" data-label="Feelings & Emotions">
+      <span class="topic-name">Feelings & Emotions</span>
+      <span class="topic-count">153 words</span>
+    </a>
+    
+    <a class="topic-card" href="?tag=social" data-tag="social" data-label="People & Society">
+      <span class="topic-name">People & Society</span>
+      <span class="topic-count">358 words</span>
+    </a>
+    
+    <a class="topic-card" href="?tag=speech" data-tag="speech" data-label="Language & Communication">
+      <span class="topic-name">Language & Communication</span>
+      <span class="topic-count">136 words</span>
+    </a>
+    
+    <a class="topic-card" href="?tag=motion" data-tag="motion" data-label="Movement & Travel">
+      <span class="topic-name">Movement & Travel</span>
+      <span class="topic-count">429 words</span>
+    </a>
+    
+    <a class="topic-card" href="?tag=location" data-tag="location" data-label="Places & Directions">
+      <span class="topic-name">Places & Directions</span>
+      <span class="topic-count">598 words</span>
+    </a>
+    
+  </div>
+
+  <section id="tp-list-section" hidden>
+    <h3 id="tp-title"></h3>
+    <div class="practice-options">
+      <div class="choice-row" role="group" aria-label="Kind of word">
+        <button type="button" class="choice-btn" data-kind="all" aria-pressed="true">All</button>
+        <button type="button" class="choice-btn" data-kind="noun" aria-pressed="false">Nouns</button>
+        <button type="button" class="choice-btn" data-kind="verb" aria-pressed="false">Verbs</button>
+        <button type="button" class="choice-btn" data-kind="other" aria-pressed="false">Other words</button>
+      </div>
+      <input type="search" id="tp-filter" placeholder="Narrow by an English or Skiri word" aria-label="Narrow the list" autocomplete="off">
+    </div>
+    <p class="result-usage" id="tp-count"></p>
+    <ol class="family-list" id="tp-list" aria-live="polite"></ol>
+    <p><button type="button" class="outline secondary" id="tp-more" hidden>Show more</button></p>
+  </section>
+
+  <section class="honest-note">
+    <h3>About the topics</h3>
+    <p>
+      The dictionary is not sorted by topic. This project sorted its entries by key words in their English
+      meanings, so a list holds some words that do not belong and lacks some that do. Words to do with
+      ceremony are not offered as a topic: they are waiting for review by the Pawnee community.
+    </p>
+  </section>
+</article>
+
+  </main>
+
+  <!-- ====== Footer ====== -->
+  <footer class="container">
+    <small style="color:var(--earth-500);">
+      P&#226;ri Pak&#251;ru' — Skiri Pawnee Language Preservation Project.
+      Data: Douglas R. Parks Dictionary &amp; Blue Book Textbook.
+      Built with respect for the Pawnee Nation.
+    </small>
+  </footer>
+
+  <script>
+    function toggleNav(btn) {
+      var nav = btn.closest('nav');
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('nav-open');
+    }
+  </script>
+  
+<script src="static/js/topics.js"></script>
+
+</body>
+</html>

@@ -22,7 +22,8 @@
   <!-- Fuse.js for client-side search -->
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
 
-  <!-- Client-side search -->
+  <!-- Shared helpers of the learning pages (syllables, word pieces), then the client-side search -->
+  <script src="static/js/skiri.js"></script>
   <script src="static/js/search.js"></script>
 </head>
 <body>
@@ -46,7 +47,7 @@
             <span>
               <strong class="font-serif" style="font-size:1.2rem; letter-spacing:-0.3px;">P&#226;ri Pak&#251;ru'</strong>
               <br>
-              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Skiri Pawnee Dictionary</small>
+              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Learn Skiri Pawnee</small>
             </span>
           </a>
         </li>
@@ -62,14 +63,20 @@
       </button>
 
       <ul class="nav-links">
+        
+        <li><a href="learn.html" >Start here</a></li>
         <li><a href="index.html" >Dictionary</a></li>
         
         
+        <li><a href="guide.html" >Sounds</a></li>
+        <li><a href="words.html" >Word building</a></li>
+        <li><a href="verbs.html" >Verbs</a></li>
         <li><a href="lessons.html" aria-current="page">Lessons</a></li>
-        
         <li><a href="flashcards.html" >Flashcards</a></li>
+        <li><a href="practice.html" >Practice</a></li>
         
-        <li><a href="guide.html" >Syllable Guide</a></li>
+        
+        <li><a href="topics.html" >Topics</a></li>
         
         <li><a href="about.html" >About</a></li>
 
@@ -152,7 +159,7 @@
     <td>head</td>
     <td>
       
-        <a href="index.html?q=paksu'" lang="x-paw">paksu'</a>
+        <a href="index.html?id=SK-paksuq-p110-2116" lang="x-paw">paksu'</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -177,7 +184,7 @@
     <td>mouth</td>
     <td>
       
-        <a href="index.html?q=hakauʔ" lang="x-paw">hakauʔ</a>
+        <a href="index.html?id=BB-hakau-0012" lang="x-paw">hakauʔ</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -190,7 +197,7 @@
     <td>hand</td>
     <td>
       
-        <a href="index.html?q=iksu'" lang="x-paw">iksu'</a>
+        <a href="index.html?id=SK-iksuq-p64-1111" lang="x-paw">iksu'</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -203,7 +210,7 @@
     <td>foot</td>
     <td>
       
-        <a href="index.html?q=asu'" lang="x-paw">asu'</a>
+        <a href="index.html?id=SK-asuq-p18-0202" lang="x-paw">asu'</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -270,8 +277,8 @@
     </div>
     
     <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Kaki ku•paks•táari', My head doesn't hurt,</span>
-      <span class="lesson-dialogue__eng"></span>
+      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Kaki ku•paks•táari',</span>
+      <span class="lesson-dialogue__eng">My head doesn't hurt,</span>
     </div>
     
     <div class="lesson-dialogue__line">
@@ -302,7 +309,7 @@
     <td>hair</td>
     <td>
       
-        <a href="index.html?q=ûsu'" lang="x-paw">ûsu'</a>
+        <a href="index.html?id=SK-uusuq-p173-3430" lang="x-paw">ûsu'</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -315,12 +322,11 @@
     <td>ear, 'place for listening'</td>
     <td>
       
-        <a href="index.html?q=at" lang="x-paw">at</a>
-        <span class="badge badge-class">VI</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>uht <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–ət–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -328,7 +334,7 @@
     <td>nose</td>
     <td>
       
-        <a href="index.html?q=čusu'" lang="x-paw">čusu'</a>
+        <a href="index.html?id=SK-cusuq-p32-0528" lang="x-paw">čusu'</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -341,12 +347,12 @@
     <td>stomach</td>
     <td>
       
-        <a href="index.html?q=ka" lang="x-paw">ka</a>
-        <span class="badge badge-class">VL</span>
+        <a href="index.html?id=SK-karaaruq-p77-1409" lang="x-paw">karâru'</a>
+        <span class="badge badge-class">N</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small>kuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–kə–]</small></td>
+    <td class="lesson-vocab__pron"><small>kuh-<span class="pitch-high">DAH</span>-doo'</small></td>
+    <td class="ipa" lang="x-paw"><small>[kə·raá·rʊʔ]</small></td>
   </tr>
   
   <tr>
@@ -354,7 +360,7 @@
     <td>base of throat, seat of the emotions, feelings, like English 'heart '</td>
     <td>
       
-        <a href="index.html?q=čiksu'" lang="x-paw">čiksu'</a>
+        <a href="index.html?id=SK-ciksuq-p29-0448" lang="x-paw">čiksu'</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -367,7 +373,7 @@
     <td>buttocks</td>
     <td>
       
-        <a href="index.html?q=rûsu'" lang="x-paw">rûsu'</a>
+        <a href="index.html?id=SK-ruusuq-p150-2925" lang="x-paw">rûsu'</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -380,12 +386,12 @@
     <td>leg</td>
     <td>
       
-        <a href="index.html?q=ka" lang="x-paw">ka</a>
-        <span class="badge badge-class">VL</span>
+        <a href="index.html?id=SK-kaasuq-p74-1322" lang="x-paw">kâsu'</a>
+        <span class="badge badge-class">N</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small>kuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–kə–]</small></td>
+    <td class="lesson-vocab__pron"><small><span class="pitch-high">KAH</span>-soo'</small></td>
+    <td class="ipa" lang="x-paw"><small>[kaá·sʊʔ]</small></td>
   </tr>
   
   <tr>
@@ -405,7 +411,7 @@
     <td>thumb</td>
     <td>
       
-        <a href="index.html?q=kskîckučû'" lang="x-paw">kskîckučû'</a>
+        <a href="index.html?id=SK-kskiickucuuq-p448-3992" lang="x-paw">kskîckučû'</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -418,12 +424,11 @@
     <td>toe</td>
     <td>
       
-        <a href="index.html?q=a" lang="x-paw">a</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>uh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–ə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -431,12 +436,12 @@
     <td>toenail, claw</td>
     <td>
       
-        <a href="index.html?q=aspit" lang="x-paw">aspit</a>
+        <a href="index.html?id=SK-aspiituq-p17-0187" lang="x-paw">aspîtu'</a>
         <span class="badge badge-class">N</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small><span class="pitch-high">UHS</span>-piht</small></td>
-    <td class="ipa" lang="x-paw"><small>[ə́s·pɪt]</small></td>
+    <td class="lesson-vocab__pron"><small>uhs-<span class="pitch-high">PEE</span>-too'</small></td>
+    <td class="ipa" lang="x-paw"><small>[əs·pií·tʊʔ]</small></td>
   </tr>
   
   </tbody>
@@ -482,7 +487,7 @@
   
   <details class="lesson-note" open>
     <summary><strong>Notes</strong></summary>
-    <p>Position of Objects When talking about any object in Pawnee, you must consider its position or attitude: your head "sits, " (+ ku) almost every other part of your body "hangs" (+ ta). Spelling Rule When i follows u, it drops out. So ti + ku + iks = tiku 'ks, and the remainder of the root joins the introducer, in this case.</p>
+    <p>Position of Objects When talking about any object in Pawnee, you must consider its position or attitude: your head "sits, " (+ ku) almost every other part of your body "hangs" (+ ta). Spelling Rule When i follows u, it drops out. So ti + ku + iks = tiku'ks, and the remainder of the root joins the introducer, in this case.</p>
   </details>
   
   <details class="lesson-note" >
@@ -492,12 +497,12 @@
   
   <details class="lesson-note" >
     <summary><strong>Passive Introducers</strong></summary>
-    <p>To say "it hurts" Pawnee uses a form of the introducer which means "it does it to me." ti + I'm telling you that it .. . + ku . . . to me (person marker, first person object) tiku + perks + taari' it does it to me + head + hurts Tiku•paks•taari'. My head hurts.</p>
+    <p>To say "it hurts" Pawnee uses a form of the introducer which means "it does it to me." ti + I'm telling you that it .. . + ku . . . to me (person marker, first person object) tiku + paks + taari' it does it to me + head + hurts Tiku•paks•táari'. My head hurts.</p>
   </details>
   
   <details class="lesson-note" >
     <summary><strong>Physical Possession</strong></summary>
-    <p>To express physical possession of body parts, the marker ri + is used in the introducer, following the modal marker (indicator) ti, and followed by the person marker. mode + phys. poss. + person + noun + verb ti + ri + t + kirik + to Ti rit•kirik•ta. Here is my eye.</p>
+    <p>To express physical possession of body parts, the marker ri + is used in the introducer, following the modal marker (indicator) ti, and followed by the person marker. mode + phys. poss. + person + noun + verb ti + ri + t + kirik + ta Ti rit•kírik•ta. Here is my eye.</p>
   </details>
   
   <details class="lesson-note" >
@@ -512,17 +517,17 @@
   
   <details class="lesson-note" >
     <summary><strong>Useful Phrases</strong></summary>
-    <p>Súks•at. Suks•at kúsaksi. Suks•at pihkawí•hiri'. Sutsiks•sápita•hat. Pahitu súks•ku! Suks•paká•rihu'. Kirike ras•paku'? You (1) go. Go left. Go right. Turn around. Behave yourself! Speak up (louder). What did you say?</p>
+    <p>Súks•at. Suks•at kúsaksi. Suks•at pihkawí•hiri'. Sutsiks•sápita•hat. Pahitu súks•ku! Suks•paká•rihu'. Kirike ras•páku'? You (1) go. Go left. Go right. Turn around. Behave yourself! Speak up (louder). What did you say?</p>
   </details>
   
   <details class="lesson-note" >
     <summary><strong>Completed And Incomplete Action</strong></summary>
-    <p>The simplest form of a verb is the perfect form. In this form the verb indicates action or events already completed. Tiku'ks•taa. My hand has been hurt. (my hand got hurt) Perfect Tiku'ks•taari'. My hand is hurting. (my hand hurts) Imperfect The imperfect form indicates action or events still happening, incomplete action. This is the form used in this chapter, though the perfect form could easily be substituted in the dialogues.</p>
+    <p>The simplest form of a verb is the perfect form. In this form the verb indicates action or events already completed. Tiku'ks•táa. My hand has been hurt. (my hand got hurt) Perfect Tiku'ks•táari'. My hand is hurting. (my hand hurts) Imperfect The imperfect form indicates action or events still happening, incomplete action. This is the form used in this chapter, though the perfect form could easily be substituted in the dialogues.</p>
   </details>
   
   <details class="lesson-note" >
     <summary><strong>Commands</strong></summary>
-    <p>In Pawnee, commands to the hearer use the perfect form of the verb, and build an introducer out of the second person (hearer) marker s +, the command marker +uks, and number markers si + (two hearers) and +rak (three or more hearers). Tas•páku'. You have said it. Suks•paku'. You (1) say it! s + uks + wak + u' you + do it + say it + completed Sisuks•paku'. You (2) say it! Suksta•páku'. You (3+) say it. s + uks + rak + waki + u' VERB SETS: Commands and Responses (Imperative and Perfect Forms) Single Person Suks•paku'. Tat•paku'. You (1) say it. I have said it. Suks•pitit. Tat•pitit. You (1) sit down. I have sat down. Súks•at. You (1) go (away). Two Persons (Dual) Sísuks•paku'. You (2) say it. Sísuks•pitit. You (2) sit down. Sísuks•pa. You (2) go (away). Suksta•páku'. *s + uks + rak + wak + u' You (3+) say it. Suksta•pitit. You (3+) sit down. Súksta•pu'. You (3+) go (away). Tat•at. I have gone (away). Sitat•paku'. We (2) have said it. Sítat•pitit. We (2) have sat down. Sitat•pa. We (2) have gone (away). Tahra•páku'. to + t + rak + wak + u' We (3+) have said it. Tahrá•pitit. We (3+) have sat down. Tahra•pu'. We (3+) have gone (away).</p>
+    <p>In Pawnee, commands to the hearer use the perfect form of the verb, and build an introducer out of the second person (hearer) marker s +, the command marker +uks, and number markers si + (two hearers) and +rak (three or more hearers). Tas•páku'. You have said it. Suks•páku'. You (1) say it! s + uks + wak + u' you + do it + say it + completed Sísuks•paku'. You (2) say it! Suksta•páku'. You (3+) say it. s + uks + rak + waki + u' VERB SETS: Commands and Responses (Imperative and Perfect Forms) Single Person Suks•páku'. Tat•páku'. You (1) say it. I have said it. Suks•pítit. Tat•pítit. You (1) sit down. I have sat down. Súks•at. You (1) go (away). Two Persons (Dual) Sísuks•paku'. You (2) say it. Sísuks•pitit. You (2) sit down. Sísuks•pa. You (2) go (away). Suksta•páku'. *s + uks + rak + wak + u' You (3+) say it. Suksta•pítit. You (3+) sit down. Súksta•pu'. You (3+) go (away). Tát•at. I have gone (away). Sítat•paku'. We (2) have said it. Sítat•pitit. We (2) have sat down. Sítat•pa. We (2) have gone (away). Tahra•páku'. ta + t + rak + wak + u' We (3+) have said it. Tahrá•pitit. We (3+) have sat down. Táhra•pu'. We (3+) have gone (away).</p>
   </details>
   
   <details class="lesson-note" >
@@ -589,7 +594,7 @@
   </script>
   
 <script>
-const EX = {"blanks": [], "matching": [{"english": "ear, \u0027place for listening\u0027", "skiri": "atka\u2022haru\u0027"}, {"english": "thumb", "skiri": "kskits\u2022kutsu\u0027"}, {"english": "eye", "skiri": "kir\u00edku\u0027"}, {"english": "nose", "skiri": "tsusu\u0027"}, {"english": "hand", "skiri": "iksu\u0027"}, {"english": "stomach", "skiri": "kararu\u0027"}, {"english": "finger", "skiri": "kskitsu\u0027"}, {"english": "it\u0027s hurting me", "skiri": "tiku\u2022r\u00e1ari\u0027"}], "say": [{"english": "You (1) go.", "skiri": "S\u00faks\u2022at."}, {"english": "Go left.", "skiri": "Suks\u2022at k\u00fasaksi."}, {"english": "Here is my head. (rit + I have it)", "skiri": "Ti rit\u2022p\u00e1ks\u2022ku."}, {"english": "Here is my eye.", "skiri": "Ti rit\u2022k\u00edrik\u2022ta."}, {"english": "Does your head hurt?", "skiri": "Ka ra\u2022paks\u2022t\u00e1ari\u0027?"}]};
+const EX = {"blanks": [], "matching": [{"english": "finger", "skiri": "kskitsu\u0027"}, {"english": "head", "skiri": "paksu\u0027"}, {"english": "thumb", "skiri": "kskits\u2022kutsu\u0027"}, {"english": "buttocks", "skiri": "rusu\u0027"}, {"english": "it\u0027s hurting me", "skiri": "tiku\u2022r\u00e1ari\u0027"}, {"english": "toenail, claw", "skiri": "asp\u00edtu\u0027"}, {"english": "eye", "skiri": "kir\u00edku\u0027"}, {"english": "ear, \u0027place for listening\u0027", "skiri": "atka\u2022haru\u0027"}], "say": [{"english": "My hand hurts.", "skiri": "Tiku\u0027ks\u2022t\u00e1ari\u0027."}, {"english": "Turn around.", "skiri": "Sutsiks\u2022s\u00e1pita\u2022hat."}, {"english": "Where is your eye (hanging)?", "skiri": "Kiru r\u00e1s\u2022kirik\u2022ta?"}, {"english": "What did you say?", "skiri": "Kirike ras\u2022p\u00e1ku\u0027?"}, {"english": "Where is your head (sitting)?", "skiri": "Kiru r\u00e1s\u2022paks\u2022ku?"}]};
 
 // ── Matching ─────────────────────────────────────────────────────
 (function() {

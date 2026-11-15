@@ -1,0 +1,1887 @@
+{
+ "about": "Parks and Pratt, A Dictionary of Skiri Pawnee (2008): Appendix 1 (seven verbs in full), Appendix 2, and tables 6 to 17 of chapter 4, as printed.",
+ "persons": [
+  {
+   "key": "1sg",
+   "label": "I"
+  },
+  {
+   "key": "2sg",
+   "label": "you (one)"
+  },
+  {
+   "key": "3sg",
+   "label": "he, she, it"
+  },
+  {
+   "key": "1du_incl",
+   "label": "we two (you and I)"
+  },
+  {
+   "key": "1du_excl",
+   "label": "we two (not you)"
+  },
+  {
+   "key": "2du",
+   "label": "you two"
+  },
+  {
+   "key": "3du",
+   "label": "they two"
+  },
+  {
+   "key": "1pl_incl",
+   "label": "we all (with you)"
+  },
+  {
+   "key": "1pl_excl",
+   "label": "we all (not you)"
+  },
+  {
+   "key": "2pl",
+   "label": "you all"
+  },
+  {
+   "key": "3pl",
+   "label": "they all"
+  }
+ ],
+ "modes": [
+  {
+   "key": "indicative_perfective",
+   "label": "Indicative",
+   "subordinate": false,
+   "table8": {
+    "mode": "Indicative IND",
+    "forms": "ta- 1/2.A ti- 3.A",
+    "functions": [
+     "Statements",
+     "Directive statements"
+    ]
+   }
+  },
+  {
+   "key": "negative_indicative_perfective",
+   "label": "Negative indicative",
+   "subordinate": false,
+   "table8": {
+    "mode": "Negative Indicative NEG.IND",
+    "forms": "kaakaa- 1/2.A kaaki- 3.A",
+    "functions": [
+     "Negative statements",
+     "Negative directive statements"
+    ]
+   }
+  },
+  {
+   "key": "contingent_perfective",
+   "label": "Contingent",
+   "subordinate": false,
+   "table8": {
+    "mode": "Contingent CONT",
+    "forms": "i- 1/2.A ri- 3.A",
+    "functions": [
+     "Future, resultative statements",
+     "Sequential statements",
+     "Mild imperative statements, requests"
+    ]
+   }
+  },
+  {
+   "key": "assertive_perfective",
+   "label": "Assertive",
+   "subordinate": false,
+   "table8": {
+    "mode": "Assertive ASSR",
+    "forms": "rii-",
+    "functions": [
+     "Emphatic statements",
+     "Directive statements",
+     "Demonstration, presentation statements"
+    ]
+   }
+  },
+  {
+   "key": "absolutive_perfective",
+   "label": "Absolutive",
+   "subordinate": false,
+   "table8": {
+    "mode": "Absolutive ABS",
+    "forms": "ra-",
+    "functions": [
+     "Interrogative statements",
+     "Statements in narration",
+     "Demonstrative statements"
+    ]
+   }
+  },
+  {
+   "key": "potential_perfective",
+   "label": "Potential",
+   "subordinate": false,
+   "table8": {
+    "mode": "Potential POT",
+    "forms": "kuus ... i- 1/3.A kaas ... i- 2.A",
+    "functions": [
+     "Future statements",
+     "Statements of possibility, potentiality, probability"
+    ]
+   }
+  },
+  {
+   "key": "gerundial_perfective_subordinate",
+   "label": "Gerundial",
+   "subordinate": true,
+   "table8": {
+    "mode": "Absolutive (Gerundial) ABS",
+    "forms": "ra-",
+    "functions": [
+     "Subordinate statements",
+     "Gerundial forms"
+    ]
+   }
+  },
+  {
+   "key": "contingent_perfective_subordinate",
+   "label": "Contingent (conditional)",
+   "subordinate": true,
+   "table8": {
+    "mode": "Contingent (Conditional) CONT",
+    "forms": "i- 1/2.A ri- 3.A",
+    "functions": [
+     "Conditional, contingent statements"
+    ]
+   }
+  },
+  {
+   "key": "subjunctive_perfective_subordinate",
+   "label": "Subjunctive",
+   "subordinate": true,
+   "table8": {
+    "mode": "Subjunctive SUBJ",
+    "forms": "aa- 1/2.A ii- 3.A",
+    "functions": [
+     "Unrealized, hypothetical, contrary to fact statements"
+    ]
+   }
+  },
+  {
+   "key": "infinitive_perfective_subordinate",
+   "label": "Infinitive",
+   "subordinate": true,
+   "table8": {
+    "mode": "Infinitive INF",
+    "forms": "ra . . . ku-",
+    "functions": [
+     "Complement statements after verbs of wishing, thinking, feeling",
+     "Subordinate statements",
+     "Directive statements"
+    ]
+   }
+  }
+ ],
+ "verbs": [
+  {
+   "gloss": "to come",
+   "modes": {
+    "indicative_perfective": {
+     "1sg": "tatiiraʔ",
+     "2sg": "tasiiraʔ",
+     "3sg": "taaʔ",
+     "1du_incl": "tacíhwaʔaʔ",
+     "1du_excl": "sitatíhwaʔaʔ",
+     "2du": "sitasíhwaʔaʔ",
+     "3du": "sitawaʔaʔ",
+     "1pl_incl": "tataraakaahuʔ",
+     "1pl_excl": "tatíraakaahuʔ",
+     "2pl": "tasíraakaahuʔ",
+     "3pl": "taaʔaahuʔ"
+    },
+    "negative_indicative_perfective": {
+     "1sg": "kaakatiiraʔ",
+     "2sg": "kaakasiiraʔ",
+     "3sg": "kaakaaʔaʔ",
+     "1du_incl": "kaakaacíhwaʔaʔ",
+     "1du_excl": "síkaakaatihwaʔaʔ",
+     "2du": "síkaakaasihwaʔaʔ",
+     "3du": "sikaakaawaʔaʔ",
+     "1pl_incl": "kaakaataraakaahuʔ",
+     "1pl_excl": "kaakaatiraakaahuʔ",
+     "2pl": "kaakaasiraakaahuʔ",
+     "3pl": "kaakaaʔaahuʔ, kaakaaraaraʔ"
+    },
+    "contingent_perfective": {
+     "1sg": "ítiiraʔ",
+     "2sg": "ísiiraʔ",
+     "3sg": "raʔaʔ",
+     "1du_incl": "icíhwaʔaʔ",
+     "1du_excl": "siʔitíhwaʔaʔ",
+     "2du": "siʔisíhwaʔaʔ",
+     "3du": "sírawaʔaʔ",
+     "1pl_incl": "itaraakaahuʔ",
+     "1pl_excl": "itiraakaahuʔ",
+     "2pl": "isiraakaahuʔ",
+     "3pl": "raaʔaahuʔ, raraaraʔ"
+    },
+    "assertive_perfective": {
+     "1sg": "rítiiraʔ",
+     "2sg": "rísiiraʔ",
+     "3sg": "raaʔaʔ",
+     "1du_incl": "riicíhwaʔaʔ",
+     "1du_excl": "siriítihwaʔaʔ",
+     "2du": "siriisihwaʔaʔ",
+     "3du": "siraaʔaʔ",
+     "1pl_incl": "riítaraakaahuʔ",
+     "1pl_excl": "riítiraakaahuʔ",
+     "2pl": "riísiraakaahuʔ",
+     "3pl": "raaʔaahuʔ"
+    },
+    "absolutive_perfective": {
+     "1sg": "ratiiraʔ",
+     "2sg": "rasiíraʔ",
+     "3sg": "raʔaʔ",
+     "1du_incl": "racíhwaʔaʔ",
+     "1du_excl": "síratihwaʔaʔ",
+     "2du": "sírasihwaaʔ",
+     "3du": "sírawaaʔ",
+     "1pl_incl": "rataraakaahuʔ",
+     "1pl_excl": "ratiraakaahuʔ",
+     "2pl": "rasiraakaahuʔ",
+     "3pl": "raaʔaahuʔ"
+    },
+    "potential_perfective": {
+     "1sg": "kuustiriiʔaʔ",
+     "2sg": "kaasiriiʔaʔ",
+     "3sg": "kusaaʔaʔ",
+     "1du_incl": "kaaciriiwaʔaʔ",
+     "1du_excl": "sikuustiriiwaʔaʔ",
+     "2du": "sikaasiriiwaʔaʔ",
+     "3du": "sikusaawaʔaʔ",
+     "1pl_incl": "kuustaaraakaahuʔ",
+     "1pl_excl": "kuustiriiraakaahuʔ",
+     "2pl": "kaasiriiraakaahuʔ",
+     "3pl": "kusaaʔaahuʔ, kusaaraaraʔ"
+    },
+    "gerundial_perfective_subordinate": {
+     "1sg": "iriiratiira",
+     "2sg": "iriirasiira",
+     "3sg": "iriraʔa",
+     "1du_incl": "iriiracihwaʔa",
+     "1du_excl": "iriisiratihwaʔa",
+     "2du": "iriisirasihwaʔa",
+     "3du": "iriisirawaʔa",
+     "1pl_incl": "iriirataraakahu",
+     "1pl_excl": "iriiratiraakahu",
+     "2pl": "iriirasiraakahu",
+     "3pl": "iriraaʔahu, iriiraraara"
+    },
+    "contingent_perfective_subordinate": {
+     "1sg": "itiira",
+     "2sg": "isiira",
+     "3sg": "raʔa",
+     "1du_incl": "icihwaʔa",
+     "1du_excl": "siʔitihwaʔa",
+     "2du": "siʔisihwaʔa",
+     "3du": "sirawaʔa",
+     "1pl_incl": "itaraakahu",
+     "1pl_excl": "itiraakahu",
+     "2pl": "isiraakahu",
+     "3pl": "raaʔahu, raraara"
+    },
+    "subjunctive_perfective_subordinate": {
+     "1sg": "aatiira",
+     "2sg": "aasiira",
+     "3sg": "aaʔa",
+     "1du_incl": "aacihwaʔa",
+     "1du_excl": "siʔaatihwaʔa",
+     "2du": "siʔaasihwaʔa",
+     "3du": "siʔaawaʔa",
+     "1pl_incl": "aataraakahu",
+     "1pl_excl": "aatiraakahu",
+     "2pl": "aasiraakahu",
+     "3pl": "aaʔahu, aaraara"
+    },
+    "infinitive_perfective_subordinate": {
+     "1sg": "ratihkuʔa",
+     "2sg": "rasihkuʔa",
+     "3sg": "raakuʔa",
+     "1du_incl": "racihkuwaʔa",
+     "1du_excl": "siratihkuwaʔa",
+     "2du": "sirasihkuwaʔa",
+     "3du": "siraakuwaʔa",
+     "1pl_incl": "rataakuraakahu",
+     "1pl_excl": "ratihkuraakahu",
+     "2pl": "rasihkuraakahu",
+     "3pl": "raakuhu, raakuraara"
+    }
+   },
+   "entry": {
+    "id": "SK-a-p349-3577",
+    "w": "a (ir...)",
+    "cls": "VI (3)",
+    "g": "come; (idiom) be here, said when someone has arrived.",
+    "forms": [
+     {
+      "n": 1,
+      "form": "tatiiraʔ"
+     },
+     {
+      "n": 2,
+      "form": "taaʔ"
+     },
+     {
+      "n": 3,
+      "form": "taʔaahuʔ"
+     },
+     {
+      "n": 4,
+      "form": "iriiraʔa"
+     },
+     {
+      "n": 5,
+      "form": "taahista"
+     }
+    ]
+   }
+  },
+  {
+   "gloss": "to do it",
+   "modes": {
+    "indicative_perfective": {
+     "1sg": "tatuutaa",
+     "2sg": "tasuutaa",
+     "3sg": "tuutaa",
+     "1du_incl": "taciitaa",
+     "1du_excl": "sitatuutaa",
+     "2du": "sitasuutaa",
+     "3du": "situutaa",
+     "1pl_incl": "tatuuhaakaa",
+     "1pl_excl": "tatuuhaakaa",
+     "2pl": "tasuuhaakaa",
+     "3pl": "tiitaa"
+    },
+    "negative_indicative_perfective": {
+     "1sg": "kaakatuutaa",
+     "2sg": "kaakasuutaa",
+     "3sg": "kaakuutaa",
+     "1du_incl": "kaakaciitaa",
+     "1du_excl": "sikaakatuutaa",
+     "2du": "sikaakasuutaa",
+     "3du": "sikaakuutaa",
+     "1pl_incl": "kaakatuuhaakaa",
+     "1pl_excl": "kaakatuuhaakaa",
+     "2pl": "kaakasuuhaakaa",
+     "3pl": "kaakiitaa"
+    },
+    "contingent_perfective": {
+     "1sg": "ituutaa",
+     "2sg": "isuutaa",
+     "3sg": "ruutaa",
+     "1du_incl": "iciitaa",
+     "1du_excl": "siʔituutaa",
+     "2du": "siʔisuutaa",
+     "3du": "siruutaa",
+     "1pl_incl": "ituhaakaa",
+     "1pl_excl": "ituhaakaa",
+     "2pl": "isuhaakaa",
+     "3pl": "riitaa"
+    },
+    "assertive_perfective": {
+     "1sg": "rituutaa",
+     "2sg": "risuutaa",
+     "3sg": "ruutaa",
+     "1du_incl": "riciitaa",
+     "1du_excl": "siriituutaa",
+     "2du": "siriisuutaa",
+     "3du": "siruutaa",
+     "1pl_incl": "rituuhaakaa",
+     "1pl_excl": "rituuhaakaa",
+     "2pl": "risuuhaakaa",
+     "3pl": "riitaa"
+    },
+    "absolutive_perfective": {
+     "1sg": "ratuutaa",
+     "2sg": "rasuutaa",
+     "3sg": "ruutaa",
+     "1du_incl": "raciitaa",
+     "1du_excl": "siratuutaa",
+     "2du": "sirasuutaa",
+     "3du": "siruutaa",
+     "1pl_incl": "ratuuhaakaa",
+     "1pl_excl": "ratuuhaakaa",
+     "2pl": "rasuuhaakaa",
+     "3pl": "riitaa"
+    },
+    "potential_perfective": {
+     "1sg": "kuustuciʔaa",
+     "2sg": "kaasuciʔaa",
+     "3sg": "kuusuciʔaa",
+     "1du_incl": "kaciiciʔaa",
+     "1du_excl": "sikuustuciʔaa",
+     "2du": "sikaasuciʔaa",
+     "3du": "sikuusuciʔaa",
+     "1pl_incl": "kuustuciraakaa",
+     "1pl_excl": "kuustuciraakaa",
+     "2pl": "kaasuciraakaa",
+     "3pl": "kusiiciʔaa"
+    },
+    "gerundial_perfective_subordinate": {
+     "1sg": "iriiratuutaara",
+     "2sg": "iriirasuutaara",
+     "3sg": "iriiruutaara",
+     "1du_incl": "iriiraciitaara",
+     "1du_excl": "iriisiratuutaara",
+     "2du": "iriisirasuutaara",
+     "3du": "iriisiruutaara",
+     "1pl_incl": "iriiratuuhaakaara",
+     "1pl_excl": "iriiratuuhaakaara",
+     "2pl": "iriirasuuhaakaara",
+     "3pl": "iririitaara"
+    },
+    "contingent_perfective_subordinate": {
+     "1sg": "ituutaara",
+     "2sg": "isuutaara",
+     "3sg": "ruutaara",
+     "1du_incl": "iciitaara",
+     "1du_excl": "siʔituutaara",
+     "2du": "siʔisuutaara",
+     "3du": "siruutaara",
+     "1pl_incl": "ituhaakaara",
+     "1pl_excl": "ituhaakaara",
+     "2pl": "isuhaakaara",
+     "3pl": "riitaara"
+    },
+    "subjunctive_perfective_subordinate": {
+     "1sg": "atuutaara",
+     "2sg": "asuutaara",
+     "3sg": "uutaara",
+     "1du_incl": "aaciriitaara",
+     "1du_excl": "siʔatuutaara",
+     "2du": "siʔasuutaara",
+     "3du": "siʔuutaara",
+     "1pl_incl": "atuuhaakaara",
+     "1pl_excl": "atuuhaakaara",
+     "2pl": "asuuhaakaara",
+     "3pl": "iitaara"
+    },
+    "infinitive_perfective_subordinate": {
+     "1sg": "ratkuutaara",
+     "2sg": "raskuutaara",
+     "3sg": "rakuutaara",
+     "1du_incl": "racihkuutaara",
+     "1du_excl": "siratkuutaara",
+     "2du": "siraskuutaara",
+     "3du": "sirakuutaara",
+     "1pl_incl": "rataakuuhaakaara",
+     "1pl_excl": "ratkuuhaakaara",
+     "2pl": "raskuuhaakaara",
+     "3pl": "rihkuutaara"
+    }
+   },
+   "entry": {
+    "id": "SK-aar-p351-3598",
+    "w": "aar (ut...)",
+    "cls": "VT (1-i)",
+    "g": "do.",
+    "forms": [
+     {
+      "n": 1,
+      "form": "tatuutaa"
+     },
+     {
+      "n": 2,
+      "form": "tuutaa"
+     },
+     {
+      "n": 3,
+      "form": "tuutariʔ"
+     },
+     {
+      "n": 4,
+      "form": "iriruutaara"
+     },
+     {
+      "n": 5,
+      "form": "tuutarista"
+     }
+    ]
+   }
+  },
+  {
+   "gloss": "to go",
+   "modes": {
+    "indicative_perfective": {
+     "1sg": "taatat",
+     "2sg": "taasat",
+     "3sg": "tiʔat",
+     "1du_incl": "tacihwa",
+     "1du_excl": "sitatpa",
+     "2du": "sitaspa",
+     "3du": "sitiwa",
+     "1pl_incl": "tataraapuuʔ",
+     "1pl_excl": "tahapuuʔ",
+     "2pl": "tastapuuʔ",
+     "3pl": "tiiwuuʔ, tiraarat"
+    },
+    "negative_indicative_perfective": {
+     "1sg": "kaakaatat",
+     "2sg": "kaakaasat",
+     "3sg": "kaakiiʔat",
+     "1du_incl": "kaakaacihwa",
+     "1du_excl": "sikaakatpa",
+     "2du": "sikaakaspa",
+     "3du": "sikaakiiwa",
+     "1pl_incl": "kaakaataraapuuʔ",
+     "1pl_excl": "kaakaahapuuʔ",
+     "2pl": "kaakaastapuuʔ",
+     "3pl": "kaakiiwuuʔ, kaakiraarat"
+    },
+    "contingent_perfective": {
+     "1sg": "itat",
+     "2sg": "isat",
+     "3sg": "riʔat",
+     "1du_incl": "icihwa",
+     "1du_excl": "siʔitpa",
+     "2du": "siʔispa",
+     "3du": "siriwa",
+     "1pl_incl": "itarapuuʔ",
+     "1pl_excl": "ihapuuʔ",
+     "2pl": "istapuuʔ",
+     "3pl": "riwuuʔ, raraarat"
+    },
+    "assertive_perfective": {
+     "1sg": "riitat",
+     "2sg": "riisat",
+     "3sg": "riiʔat",
+     "1du_incl": "riicihwa",
+     "1du_excl": "siriitpa",
+     "2du": "siriispa",
+     "3du": "siriiwa",
+     "1pl_incl": "riitaraapuuʔ",
+     "1pl_excl": "riihapuuʔ",
+     "2pl": "riistapuuʔ",
+     "3pl": "riiwuuʔ"
+    },
+    "absolutive_perfective": {
+     "1sg": "raatat",
+     "2sg": "raasat",
+     "3sg": "raʔat",
+     "1du_incl": "racihwa",
+     "1du_excl": "siratpa",
+     "2du": "siraspa",
+     "3du": "sirawa",
+     "1pl_incl": "rataraapuuʔ",
+     "1pl_excl": "rahapuuʔ",
+     "2pl": "rastapuuʔ",
+     "3pl": "raawuuʔ, raraarat"
+    },
+    "potential_perfective": {
+     "1sg": "kuustiʔat",
+     "2sg": "kaasiʔat",
+     "3sg": "kuusiʔat",
+     "1du_incl": "kaaciriiwa",
+     "1du_excl": "sikuustiwa",
+     "2du": "sikaasiwa",
+     "3du": "sikuusiwa",
+     "1pl_incl": "kuustaaraapuuʔ",
+     "1pl_excl": "kuustiraapuuʔ",
+     "2pl": "kaasiraapuuʔ",
+     "3pl": "kusiiwuuʔ"
+    },
+    "gerundial_perfective_subordinate": {
+     "1sg": "iriiraatata",
+     "2sg": "iriiraasata",
+     "3sg": "iriiraata",
+     "1du_incl": "iriiracihwara",
+     "1du_excl": "iriisiratpara",
+     "2du": "iriisiraspara",
+     "3du": "iriisirawara",
+     "1pl_incl": "iriirataraapuu",
+     "1pl_excl": "iriirahapuu",
+     "2pl": "iriirastapuu",
+     "3pl": "iriraawuu"
+    },
+    "contingent_perfective_subordinate": {
+     "1sg": "itata",
+     "2sg": "isata",
+     "3sg": "riita",
+     "1du_incl": "icihwara",
+     "1du_excl": "siʔitpara",
+     "2du": "siʔispara",
+     "3du": "siriwara",
+     "1pl_incl": "itarapuu",
+     "1pl_excl": "ihapuu",
+     "2pl": "istapuu",
+     "3pl": "riwuu"
+    },
+    "subjunctive_perfective_subordinate": {
+     "1sg": "aatata",
+     "2sg": "aasata",
+     "3sg": "iita",
+     "1du_incl": "aacihwara",
+     "1du_excl": "siʔaatpara",
+     "2du": "siʔaaspara",
+     "3du": "siʔiiwara",
+     "1pl_incl": "aataraapuu",
+     "1pl_excl": "aahapuu",
+     "2pl": "aastapuu",
+     "3pl": "iiwuu"
+    },
+    "infinitive_perfective_subordinate": {
+     "1sg": "ratkuuta",
+     "2sg": "raskuuta",
+     "3sg": "rakuuta",
+     "1du_incl": "racihkuwara",
+     "1du_excl": "siratkuwara",
+     "2du": "siraskuwara",
+     "3du": "sirakuwara",
+     "1pl_incl": "rataakuraapuu",
+     "1pl_excl": "ratkuraapuu",
+     "2pl": "raskuraapuu",
+     "3pl": "rakuuwuu, rakuraarata"
+    }
+   },
+   "entry": {
+    "id": "SK-at-p18-0220",
+    "w": "at",
+    "cls": "VI (1)",
+    "g": "go; walk.",
+    "forms": [
+     {
+      "n": 1,
+      "form": "taatat"
+     },
+     {
+      "n": 2,
+      "form": "tiʔat"
+     },
+     {
+      "n": 3,
+      "form": "tiwuuʔ"
+     },
+     {
+      "n": 4,
+      "form": "iriiraata"
+     },
+     {
+      "n": 5,
+      "form": "tihuhta"
+     }
+    ]
+   }
+  },
+  {
+   "gloss": "to be good",
+   "modes": {
+    "indicative_perfective": {
+     "1sg": "tatuuhii",
+     "2sg": "tasuuhii",
+     "3sg": "tuuhii",
+     "1du_incl": "taciihii",
+     "1du_excl": "sitatuuhii",
+     "2du": "sitasuuhii",
+     "3du": "situuhii",
+     "1pl_incl": "tatuuraakiwaa",
+     "1pl_excl": "taturaakiwaa",
+     "2pl": "tasuraakiwaa",
+     "3pl": "tuuhiwaa"
+    },
+    "negative_indicative_perfective": {
+     "1sg": "kaakatuuhii",
+     "2sg": "kaakasuuhii",
+     "3sg": "kaakuhii",
+     "1du_incl": "kaakaciihii",
+     "1du_excl": "sikaakatuuhii",
+     "2du": "sikaakasuuhii",
+     "3du": "sikaakuhii",
+     "1pl_incl": "kaakatuuraakiwaa",
+     "1pl_excl": "kaakaaturaakiwaa",
+     "2pl": "kaakaasuraakiwaa",
+     "3pl": "kaakuuhiwaa"
+    },
+    "contingent_perfective": {
+     "1sg": "ituuhii",
+     "2sg": "isuuhii",
+     "3sg": "ruuhii",
+     "1du_incl": "iciihii",
+     "1du_excl": "siʔituuhii",
+     "2du": "siʔisuuhii",
+     "3du": "siruuhii",
+     "1pl_incl": "ituuraakiwaa",
+     "1pl_excl": "ituraakiwaa",
+     "2pl": "isuraakiwaa",
+     "3pl": "ruuhiwaa"
+    },
+    "assertive_perfective": {
+     "1sg": "rituuhii",
+     "2sg": "risuuhii",
+     "3sg": "ruhii",
+     "1du_incl": "riciihii",
+     "1du_excl": "siriituuhii",
+     "2du": "siriisuuhii",
+     "3du": "siruuhii",
+     "1pl_incl": "rituuraakiwaa",
+     "1pl_excl": "riituraakiwaa",
+     "2pl": "riisuraakiwaa",
+     "3pl": "ruuhiwaa"
+    },
+    "absolutive_perfective": {
+     "1sg": "ratuuhii",
+     "2sg": "rasuuhii",
+     "3sg": "ruuhii",
+     "1du_incl": "raciihii",
+     "1du_excl": "siratuuhii",
+     "2du": "sirasuuhii",
+     "3du": "siruuhii",
+     "1pl_incl": "ratuuraakiwaa",
+     "1pl_excl": "raturaakiwaa",
+     "2pl": "rasuraakiwaa",
+     "3pl": "ruuhiwaa"
+    },
+    "potential_perfective": {
+     "1sg": "kuustuuhii",
+     "2sg": "kasuuhii",
+     "3sg": "kusuuhii",
+     "1du_incl": "kaciihii",
+     "1du_excl": "sikuustuuhii",
+     "2du": "sikasuuhii",
+     "3du": "sikusuuhii",
+     "1pl_incl": "kuustuuraakiwaa",
+     "1pl_excl": "kuusturaakiwaa",
+     "2pl": "kaasuraakiwaa",
+     "3pl": "kusuuhiwaa"
+    },
+    "gerundial_perfective_subordinate": {
+     "1sg": "iriiratuuhiira",
+     "2sg": "iriirasuuhiira",
+     "3sg": "iriruuhiira",
+     "1du_incl": "iriiraciihiira",
+     "1du_excl": "iriisiratuuhiira",
+     "2du": "iriisirasuuhiira",
+     "3du": "iriisiruuhiira",
+     "1pl_incl": "iriiratuuraakiwaara",
+     "1pl_excl": "iriiraturaakiwaara",
+     "2pl": "iriirasuraakiwaara",
+     "3pl": "iriruuhiwaara"
+    },
+    "contingent_perfective_subordinate": {
+     "1sg": "ituuhiira",
+     "2sg": "isuuhiira",
+     "3sg": "ruuhiira",
+     "1du_incl": "iciihiira",
+     "1du_excl": "siʔituuhiira",
+     "2du": "siʔisuuhiira",
+     "3du": "siruuhiira",
+     "1pl_incl": "ituuraakiwaara",
+     "1pl_excl": "ituraakiwaara",
+     "2pl": "isuraakiwaara",
+     "3pl": "ruuhiwaara"
+    },
+    "subjunctive_perfective_subordinate": {
+     "1sg": "atuuhiira",
+     "2sg": "asuuhiira",
+     "3sg": "uuhiira",
+     "1du_incl": "aciihiira",
+     "1du_excl": "siʔatuuhiira",
+     "2du": "siʔasuuhiira",
+     "3du": "siʔuuhiira",
+     "1pl_incl": "atuuraakiwaara",
+     "1pl_excl": "aaturaakiwaara",
+     "2pl": "aasuraakiwaara",
+     "3pl": "uuhiwaara"
+    },
+    "infinitive_perfective_subordinate": {
+     "1sg": "ratkuuhiira",
+     "2sg": "raskuuhiira",
+     "3sg": "rakuuhiira",
+     "1du_incl": "racihkuuhiira",
+     "1du_excl": "siratkuuhiira",
+     "2du": "siraskuuhiira",
+     "3du": "sirakuuhiira",
+     "1pl_incl": "rataakuraakiwaara",
+     "1pl_excl": "ratkuraakiwaara",
+     "2pl": "raskuraakiwaara",
+     "3pl": "rakuuhiwaara, rihkuhiwaara"
+    }
+   },
+   "entry": {
+    "id": "SK-hiir-p389-3832",
+    "w": "hiir (uur...)",
+    "cls": "VI (1-a)",
+    "g": "be good, nice in quality.",
+    "forms": [
+     {
+      "n": 1,
+      "form": "tatuuhii"
+     },
+     {
+      "n": 2,
+      "form": "tuuhii"
+     },
+     {
+      "n": 4,
+      "form": "iriruuhiira"
+     },
+     {
+      "n": 5,
+      "form": "tuuhiirasta"
+     }
+    ]
+   }
+  },
+  {
+   "gloss": "to drink it",
+   "modes": {
+    "indicative_perfective": {
+     "1sg": "tatkiikaʔ",
+     "2sg": "taskiikaʔ",
+     "3sg": "tikiikaʔ",
+     "1du_incl": "tacihkiikaʔ",
+     "1du_excl": "sitatkiikaʔ",
+     "2du": "sitaskiikaʔ",
+     "3du": "sitikiikaʔ",
+     "1pl_incl": "tataraakiikaʔ",
+     "1pl_excl": "tahakiikaʔ",
+     "2pl": "tastakiikaʔ",
+     "3pl": "tihkiikaʔ"
+    },
+    "negative_indicative_perfective": {
+     "1sg": "kaakaatkiikaʔ",
+     "2sg": "kaakaaskiikaʔ",
+     "3sg": "kaakiikiikaʔ",
+     "1du_incl": "kaakaacihkiikaʔ",
+     "1du_excl": "sikaakaatkiikaʔ",
+     "2du": "sikaakaaskiikaʔ",
+     "3du": "sikaakiikiikaʔ",
+     "1pl_incl": "kaakaataaraakiikaʔ",
+     "1pl_excl": "kaakaahakiikaʔ",
+     "2pl": "kaakaastakiikaʔ",
+     "3pl": "kaakihkiikaʔ"
+    },
+    "contingent_perfective": {
+     "1sg": "itkikaʔ",
+     "2sg": "iskikaʔ",
+     "3sg": "rikikaʔ",
+     "1du_incl": "icihkikaʔ",
+     "1du_excl": "siʔitkikaʔ",
+     "2du": "siʔiskikaʔ",
+     "3du": "sirikikaʔ",
+     "1pl_incl": "itaraakikaʔ",
+     "1pl_excl": "ihakikaʔ",
+     "2pl": "istakikaʔ",
+     "3pl": "rihkikaʔ"
+    },
+    "assertive_perfective": {
+     "1sg": "riitkiikaʔ",
+     "2sg": "riiskiikaʔ",
+     "3sg": "riikiikaʔ",
+     "1du_incl": "riicihkiikaʔ",
+     "1du_excl": "siriitkiikaʔ",
+     "2du": "siriiskiikaʔ",
+     "3du": "siriikiikaʔ",
+     "1pl_incl": "riitaraakiikaʔ",
+     "1pl_excl": "riihakiikaʔ",
+     "2pl": "riistakiikaʔ",
+     "3pl": "rihkiikaʔ"
+    },
+    "absolutive_perfective": {
+     "1sg": "ratkiikaʔ",
+     "2sg": "raskiikaʔ",
+     "3sg": "rakiikaʔ",
+     "1du_incl": "racihkiikaʔ",
+     "1du_excl": "siratkiikaʔ",
+     "2du": "siraskiikaʔ",
+     "3du": "sirakiikaʔ",
+     "1pl_incl": "rataraakiikaʔ",
+     "1pl_excl": "rahakiikaʔ",
+     "2pl": "rastakiikaʔ",
+     "3pl": "rihkiikaʔ"
+    },
+    "potential_perfective": {
+     "1sg": "kuustikiikaʔ",
+     "2sg": "kaasikiikaʔ",
+     "3sg": "kuusikiikaʔ",
+     "1du_incl": "kaaciriikiikaʔ",
+     "1du_excl": "sikuustikiikaʔ",
+     "2du": "sikaasikiikaʔ",
+     "3du": "sikuusikiikaʔ",
+     "1pl_incl": "kuustaaraakiikaʔ",
+     "1pl_excl": "kuustiraakiikaʔ",
+     "2pl": "kaasiraakiikaʔ",
+     "3pl": "kusiriikiikaʔ"
+    },
+    "gerundial_perfective_subordinate": {
+     "1sg": "iriiratkikaa",
+     "2sg": "iriiraskikaa",
+     "3sg": "iriirakikaa",
+     "1du_incl": "iriiracihkikaa",
+     "1du_excl": "iriisiratkikaa",
+     "2du": "iriisiraskikaa",
+     "3du": "iriisirakikaa",
+     "1pl_incl": "iriirataraakikaa",
+     "1pl_excl": "iriirahakikaa",
+     "2pl": "iriirastakikaa",
+     "3pl": "iriirihkikaa"
+    },
+    "contingent_perfective_subordinate": {
+     "1sg": "itkikaa",
+     "2sg": "iskikaa",
+     "3sg": "rikikaa",
+     "1du_incl": "icihkikaa",
+     "1du_excl": "siʔitkikaa",
+     "2du": "siʔiskikaa",
+     "3du": "sirikikaa",
+     "1pl_incl": "itaraakikaa",
+     "1pl_excl": "ihakikaa",
+     "2pl": "istakikaa",
+     "3pl": "rihkikaa"
+    },
+    "subjunctive_perfective_subordinate": {
+     "1sg": "aatkikaa",
+     "2sg": "aaskikaa",
+     "3sg": "iikikaa",
+     "1du_incl": "aacihkikaa",
+     "1du_excl": "siʔaatkikaa",
+     "2du": "siʔaaskikaa",
+     "3du": "siʔiikikaa",
+     "1pl_incl": "aataraakikaa",
+     "1pl_excl": "aahakikaa",
+     "2pl": "astakikaa",
+     "3pl": "ihkikaa"
+    },
+    "infinitive_perfective_subordinate": {
+     "1sg": "ratkukikaa",
+     "2sg": "raskukikaa",
+     "3sg": "rakukikaa",
+     "1du_incl": "racihkukikaa",
+     "1du_excl": "siratkukikaa",
+     "2du": "siraskukikaa",
+     "3du": "sirakukikaa",
+     "1pl_incl": "rataakuraakikaa",
+     "1pl_excl": "ratkuraakikaa",
+     "2pl": "raskuraakikaa",
+     "3pl": "rihkukikaa"
+    }
+   },
+   "entry": {
+    "id": "SK-kiikaa-p90-1694",
+    "w": "kiikaa",
+    "cls": "VT (4)",
+    "g": "drink.",
+    "forms": [
+     {
+      "n": 1,
+      "form": "tatkiikaʔ"
+     },
+     {
+      "n": 2,
+      "form": "tikiikaʔ"
+     },
+     {
+      "n": 3,
+      "form": "tikiikaahuʔ"
+     },
+     {
+      "n": 4,
+      "form": "iriirakikaa"
+     },
+     {
+      "n": 5,
+      "form": "tikiikaahista"
+     }
+    ]
+   }
+  },
+  {
+   "gloss": "to be sick",
+   "modes": {
+    "indicative_perfective": {
+     "1sg": "tikukiraawaʔ",
+     "2sg": "takiraawaʔ",
+     "3sg": "tihkiraawaʔ",
+     "1du_incl": "tacakukiraawaʔ",
+     "1du_excl": "sitikukiraawaʔ",
+     "2du": "sirakiraawaʔ",
+     "3du": "sirihkiraawaʔ",
+     "1pl_incl": "tacakuraakiraawaʔ",
+     "1pl_excl": "tikuraakiraawaʔ",
+     "2pl": "taraakiraawaʔ",
+     "3pl": "tiirakiraawaʔ"
+    },
+    "negative_indicative_perfective": {
+     "1sg": "kaakikukiraawaʔ",
+     "2sg": "kaakaakiraawaʔ",
+     "3sg": "kaakihkiraawaʔ",
+     "1du_incl": "kaakaacakukiraawaʔ",
+     "1du_excl": "sikaakikukiraawaʔ",
+     "2du": "sikaakaakiraawaʔ",
+     "3du": "sikaakihkiraawaʔ",
+     "1pl_incl": "kaakaacakuraakiraawaʔ",
+     "1pl_excl": "kaakikuraakiraawaʔ",
+     "2pl": "kaakaraakiraawaʔ",
+     "3pl": "kaakirakiraawaʔ"
+    },
+    "contingent_perfective": {
+     "1sg": "rikukiraawaʔ",
+     "2sg": "rakiraawaʔ",
+     "3sg": "rihkiraawaʔ",
+     "1du_incl": "racakukiraawaʔ",
+     "1du_excl": "sirikukiraawaʔ",
+     "2du": "sirakiraawaʔ",
+     "3du": "sirihkiraawaʔ",
+     "1pl_incl": "racakuraktahkiraawaʔ",
+     "1pl_excl": "rikuraktahkiraawaʔ",
+     "2pl": "raraktahkiraawaʔ",
+     "3pl": "riiraktahkiraawaʔ"
+    },
+    "assertive_perfective": {
+     "1sg": "rikuukiraawaʔ",
+     "2sg": "raakiraawaʔ",
+     "3sg": "riihkiraawaʔ",
+     "1du_incl": "riicakuukiraawaʔ",
+     "1du_excl": "sirikuukiraawaʔ",
+     "2du": "siraakiraawaʔ",
+     "3du": "siriihkiraawaʔ",
+     "1pl_incl": "riicakuuraktahkiraawaʔ",
+     "1pl_excl": "rikuuraktahkiraawaʔ",
+     "2pl": "raaraktahkiraawaʔ",
+     "3pl": "riiraktahkiraawaʔ"
+    },
+    "absolutive_perfective": {
+     "1sg": "riikukiraawaʔ",
+     "2sg": "raakiraawaʔ",
+     "3sg": "rihkiraawaʔ",
+     "1du_incl": "riicakukiraawaʔ",
+     "1du_excl": "siriikukiraawaʔ",
+     "2du": "raakiraawaʔ",
+     "3du": "sirihkiraawaʔ",
+     "1pl_incl": "riicakuraktahkiraawaʔ",
+     "1pl_excl": "riikuraktahkiraawaʔ",
+     "2pl": "raraktahkiraawaʔ",
+     "3pl": "riiraktahkiraawaʔ"
+    },
+    "potential_perfective": {
+     "1sg": "kuusikuukiraawaʔ",
+     "2sg": "kusaakiraawaʔ",
+     "3sg": "kusiriikiraawaʔ",
+     "1du_incl": "kaacakuukiraawaʔ",
+     "1du_excl": "sikuusikuukiraawaʔ",
+     "2du": "sikusaakiraawaʔ",
+     "3du": "sikusiriikiraawaʔ",
+     "1pl_incl": "kaacakuuraktahkiraawaʔ",
+     "1pl_excl": "kuusikuuraakiraawaʔ",
+     "2pl": "kusaaraktahkiraawaʔ",
+     "3pl": "kusiriktaahkiraawaʔ"
+    },
+    "gerundial_perfective_subordinate": {
+     "1sg": "iriirikukiraawaa",
+     "2sg": "iriirakiraawaa",
+     "3sg": "iriirihkiraawaa",
+     "1du_incl": "iriiracakukiraawaa",
+     "1du_excl": "iriisirikukiraawaa",
+     "2du": "iriisirakiraawaa",
+     "3du": "iriisirihkiraawaa",
+     "1pl_incl": "iriiracakuraktahkiraawaa",
+     "1pl_excl": "iriirikuraktahkiraawaa",
+     "2pl": "iriiraraktahkiraawaa",
+     "3pl": "iririiraktahkirawaa"
+    },
+    "contingent_perfective_subordinate": {
+     "1sg": "rikukiraawaa",
+     "2sg": "rakiraawaa",
+     "3sg": "rihkiraawaa",
+     "1du_incl": "racakukiraawaa",
+     "1du_excl": "sirikukiraawaa",
+     "2du": "sirakiraawaa",
+     "3du": "sirihkiraawaa",
+     "1pl_incl": "racakuraktahkiraawaa",
+     "1pl_excl": "rikuraktahkiraawaa",
+     "2pl": "raraktahkiraawaa",
+     "3pl": "riiraktahkirawaa"
+    },
+    "subjunctive_perfective_subordinate": {
+     "1sg": "iikukiraawaa",
+     "2sg": "aakirawaa",
+     "3sg": "iihkirawaa",
+     "1du_incl": "aacakukiraawaa",
+     "1du_excl": "siʔiikukiraawaa",
+     "2du": "siʔaakiraawaa",
+     "3du": "siʔiihkiraawaa",
+     "1pl_incl": "aacakuraakiraawaa",
+     "1pl_excl": "iikuraakiraawaa",
+     "2pl": "araakiraawaa",
+     "3pl": "iiraakiraawaa"
+    },
+    "infinitive_perfective_subordinate": {
+     "1sg": "rakukukiraawaa",
+     "2sg": "raakukiraawaa",
+     "3sg": "rihkukiraawaa",
+     "1du_incl": "racakukiraawaa",
+     "1du_excl": "sirakukukiraawaa",
+     "2du": "siraakukiraawaa",
+     "3du": "sirihkukiraawaa",
+     "1pl_incl": "racakukuraktahkiraawaa",
+     "1pl_excl": "rakukuraktahkiraawaa",
+     "2pl": "raakuraktahkiraawaa",
+     "3pl": "rihkuraktahkiraawaa"
+    }
+   },
+   "entry": {
+    "id": "SK-kiraawa/waahc-p94-1794",
+    "w": "kiraawa/waahc",
+    "cls": "VP (4)",
+    "g": "be sick, ill; have an ailment, illness, disease.",
+    "forms": [
+     {
+      "n": 1,
+      "form": "tikukiraawaʔ"
+     },
+     {
+      "n": 2,
+      "form": "tihkiraawaʔ"
+     },
+     {
+      "n": 4,
+      "form": "iriirihkiraawa"
+     },
+     {
+      "n": 5,
+      "form": "tihkiraawaacta"
+     }
+    ]
+   }
+  },
+  {
+   "gloss": "to have it",
+   "modes": {
+    "indicative_perfective": {
+     "1sg": "tahaa",
+     "2sg": "tastaa",
+     "3sg": "tiraa",
+     "1du_incl": "taciraa",
+     "1du_excl": "sitahaa",
+     "2du": "sitastaa",
+     "3du": "sitiraa",
+     "1pl_incl": "sitaciraa",
+     "1pl_excl": "sitahaa",
+     "2pl": "sitastaa",
+     "3pl": "sitiraa"
+    },
+    "negative_indicative_perfective": {
+     "1sg": "kaakahaa",
+     "2sg": "kaakastaa",
+     "3sg": "kaakiraa",
+     "1du_incl": "kaakaaciraa",
+     "1du_excl": "sikaakahaa",
+     "2du": "sikaakastaa",
+     "3du": "sikaakiraa",
+     "1pl_incl": "sikaakaaciraa",
+     "1pl_excl": "sikaakahaa",
+     "2pl": "sikaakastaa",
+     "3pl": "sikaakiraa"
+    },
+    "contingent_perfective": {
+     "1sg": "ihaa",
+     "2sg": "istaa",
+     "3sg": "riraa",
+     "1du_incl": "iciraa",
+     "1du_excl": "siʔihaa",
+     "2du": "siʔistaa",
+     "3du": "siriraa",
+     "1pl_incl": "siʔiciraa",
+     "1pl_excl": "siʔihaa",
+     "2pl": "siʔistaa",
+     "3pl": "siriraa"
+    },
+    "assertive_perfective": {
+     "1sg": "rihaa",
+     "2sg": "ristaa",
+     "3sg": "riraa",
+     "1du_incl": "riiciraa",
+     "1du_excl": "siriihaa",
+     "2du": "siriistaa",
+     "3du": "siriiraa",
+     "1pl_incl": "siriiciraa",
+     "1pl_excl": "siriihaa",
+     "2pl": "siriistaa",
+     "3pl": "siriiraa"
+    },
+    "absolutive_perfective": {
+     "1sg": "rahaa",
+     "2sg": "rastaa",
+     "3sg": "raraa",
+     "1du_incl": "raciraa",
+     "1du_excl": "sirahaa",
+     "2du": "sirastaa",
+     "3du": "siraraa",
+     "1pl_incl": "siraciraa",
+     "1pl_excl": "sirahaa",
+     "2pl": "sirastaa",
+     "3pl": "siriraa"
+    },
+    "potential_perfective": {
+     "1sg": "kuustiraa",
+     "2sg": "kaasiraa",
+     "3sg": "kuusiraa",
+     "1du_incl": "kaaciriiraa",
+     "1du_excl": "sikuustiraa",
+     "2du": "sikaasiraa",
+     "3du": "sikuusiraa",
+     "1pl_incl": "sikaaciriiraa",
+     "1pl_excl": "sikuustiraa",
+     "2pl": "sikaasiraa",
+     "3pl": "kuusiriiraraa"
+    },
+    "gerundial_perfective_subordinate": {
+     "1sg": "iriirahaaha",
+     "2sg": "iriirastaaha",
+     "3sg": "iriiraraaha",
+     "1du_incl": "iriiraciraaha",
+     "1du_excl": "iriisirahaaha",
+     "2du": "iriisirastaaha",
+     "3du": "iriisiraraaha",
+     "1pl_incl": "iriisiraciraaha",
+     "1pl_excl": "iriisirahaaha",
+     "2pl": "iriisirastaaha",
+     "3pl": "iriiriraraaha"
+    },
+    "contingent_perfective_subordinate": {
+     "1sg": "ihaaha",
+     "2sg": "istaaha",
+     "3sg": "riraaha",
+     "1du_incl": "iciraaha",
+     "1du_excl": "siʔihaaha",
+     "2du": "siʔistaaha",
+     "3du": "siriraaha",
+     "1pl_incl": "siʔiciraaha",
+     "1pl_excl": "siʔihaaha",
+     "2pl": "siʔistaaha",
+     "3pl": "siʔiraaha"
+    },
+    "subjunctive_perfective_subordinate": {
+     "1sg": "aahaaha",
+     "2sg": "aastaaha",
+     "3sg": "iiraaha",
+     "1du_incl": "aaciraaha",
+     "1du_excl": "siʔaahaaha",
+     "2du": "siʔaastaaha",
+     "3du": "siʔiiraaha",
+     "1pl_incl": "siʔaaciraaha",
+     "1pl_excl": "siʔaahaaha",
+     "2pl": "siʔaastaaha",
+     "3pl": "siʔiiraaha"
+    },
+    "infinitive_perfective_subordinate": {
+     "1sg": "ratkuraaha",
+     "2sg": "raskuraaha",
+     "3sg": "rakuraaha",
+     "1du_incl": "racihkuraaha",
+     "1du_excl": "siratkuraaha",
+     "2du": "siraskuraaha",
+     "3du": "sirakuraaha",
+     "1pl_incl": "siracihkuraaha",
+     "1pl_excl": "siratkuraaha",
+     "2pl": "siraskuraaha",
+     "3pl": "sirihkuraaha"
+    }
+   },
+   "entry": {
+    "id": "SK-raah-p116-2264",
+    "w": "raah",
+    "cls": "VT (1)",
+    "g": "have, possess; carry.",
+    "forms": [
+     {
+      "n": 1,
+      "form": "tahaa"
+     },
+     {
+      "n": 2,
+      "form": "tiraa"
+     },
+     {
+      "n": 3,
+      "form": "tiraahuʔ"
+     },
+     {
+      "n": 4,
+      "form": "iriiraraaha"
+     },
+     {
+      "n": 5,
+      "form": "tiraahista"
+     }
+    ]
+   }
+  }
+ ],
+ "form_labels": {
+  "1": "1st person singular, indicative, perfective",
+  "2": "3rd person singular, indicative, perfective",
+  "3": "3rd person singular, indicative, imperfective",
+  "4": "3rd person singular, absolutive, subordinate perfective",
+  "5": "3rd person singular, indicative, perfective intentive"
+ },
+ "form_plain": {
+  "1": "“I …”: a plain statement about myself",
+  "2": "“he …” or “she …”: the same statement about someone else",
+  "3": "“he is …ing”: the action going on, not finished",
+  "4": "the form used inside a longer sentence: “when he …”, “that he …”",
+  "5": "“he is going to …”: what someone is about to do"
+ },
+ "tables": {
+  "6": {
+   "title": "Table 6. Major Positions in the Inflected Verb",
+   "pages": [
+    33
+   ],
+   "rows": [
+    [
+     "Verb"
+    ],
+    [
+     "Proclitics",
+     "Prefixes + Preverbs",
+     "Incorporated Noun",
+     "STEM",
+     "Suffixes"
+    ],
+    [
+     "(Outer Prefixes)",
+     "(Inner Prefixes)",
+     "(Agent/Patient)",
+     "",
+     ""
+    ]
+   ]
+  },
+  "8": {
+   "title": "Table 8. Modal Prefixes: Forms and Functions",
+   "pages": [
+    34
+   ],
+   "rows": [
+    [
+     "Mode",
+     "Subordinate/ Non-subordinate",
+     "Form(s)",
+     "Function(s)"
+    ],
+    [
+     "Indicative IND",
+     "Non-subordinate",
+     "ta- 1/2.A ti- 3.A",
+     "• Statements • Directive statements"
+    ],
+    [
+     "Negative Indicative NEG.IND",
+     "Non-subordinate",
+     "kaakaa- 1/2.A kaaki- 3.A",
+     "• Negative statements • Negative directive statements"
+    ],
+    [
+     "Assertive ASSR",
+     "Non-subordinate",
+     "rii-",
+     "• Emphatic statements • Directive statements • Demonstration, presentation statements"
+    ],
+    [
+     "Contingent CONT",
+     "Non-subordinate",
+     "i- 1/2.A ri- 3.A",
+     "• Future, resultative statements • Sequential statements • Mild imperative statements, requests"
+    ],
+    [
+     "Potential POT",
+     "Non-subordinate",
+     "kuus ... i- 1/3.A kaas ... i- 2.A",
+     "• Future statements • Statements of possibility, potentiality, probability"
+    ],
+    [
+     "Absolutive ABS",
+     "Non-subordinate",
+     "ra-",
+     "• Interrogative statements • Statements in narration • Demonstrative statements"
+    ],
+    [
+     "Subjunctive (Optative) SUBJ",
+     "Non-subordinate",
+     "aa- 1/2.A ii- 3.A",
+     "Statements of wish, desire"
+    ],
+    [
+     "Infinitive (Admonitive) INF",
+     "Non-subordinate",
+     "ra . . . ku-",
+     "Directive statements"
+    ],
+    [
+     "Contingent (Conditional) CONT",
+     "Subordinate",
+     "i- 1/2.A ri- 3.A",
+     "Conditional, contingent statements"
+    ],
+    [
+     "Absolutive (Gerundial) ABS",
+     "Subordinate",
+     "ra-",
+     "• Subordinate statements • Gerundial forms"
+    ],
+    [
+     "Subjunctive SUBJ",
+     "Subordinate",
+     "aa- 1/2.A ii- 3.A",
+     "Unrealized, hypothetical, contrary to fact statements"
+    ],
+    [
+     "Infinitive INF",
+     "Subordinate",
+     "ra . . . ku-",
+     "• Complement statements after verbs of wishing, thinking, feeling • Subordinate statements • Directive statements"
+    ]
+   ]
+  },
+  "9": {
+   "title": "Table 9. Pronominal Prefixes",
+   "pages": [
+    35
+   ],
+   "rows": [
+    [
+     "Person",
+     "Agent",
+     "Patient"
+    ],
+    [
+     "1st",
+     "t-",
+     "ku-"
+    ],
+    [
+     "2nd",
+     "s-",
+     "a-"
+    ],
+    [
+     "Obviative",
+     "ir-",
+     ""
+    ],
+    [
+     "Dual inclusive",
+     "acir-",
+     "aca-"
+    ],
+    [
+     "Plural inclusive",
+     "a-",
+     ""
+    ]
+   ]
+  },
+  "10": {
+   "title": "Table 10. Plural Prefixes",
+   "pages": [
+    36
+   ],
+   "rows": [
+    [
+     "",
+     "Person",
+     "Active transitive",
+     "Active intransitive",
+     "Passive",
+     "Descriptive",
+     "Locative"
+    ],
+    [
+     "AGENT",
+     "1st, 2nd",
+     "rak-",
+     "rak- COLL rak- + raar- INDV",
+     "",
+     "rak-",
+     "rak-"
+    ],
+    [
+     "",
+     "3rd",
+     "si...ir-",
+     "ir- COLL raar- INDV",
+     "",
+     "ir- COLL raar- INDV",
+     "ir- COLL raar- INDV"
+    ],
+    [
+     "PATIENT",
+     "1st, 2nd",
+     "rak-",
+     "",
+     "rak-",
+     "",
+     ""
+    ],
+    [
+     "",
+     "3rd",
+     "ak- AN raar- INAN ak- + raar- AN INDV",
+     "",
+     "ir- . . . ak-",
+     "",
+     ""
+    ]
+   ]
+  },
+  "13": {
+   "title": "Table 13. Negative Prefixes",
+   "pages": [
+    40
+   ],
+   "rows": [
+    [
+     "Negative Prefix",
+     "Function",
+     "Modal Co-occurrences"
+    ],
+    [
+     "kara- (NEG.1)",
+     "Simple negative",
+     "Indicative ( + wi- QUOT), Contingent, Absolutive, Conditional, Subjunctive, Infinitive"
+    ],
+    [
+     "ka- (NEG.2)",
+     "",
+     "Absolutive, Gerundial, Infinitive"
+    ],
+    [
+     "kaaku- (NEG.POSS)",
+     "Negative possession",
+     "Subjunctive (non-subordinate)"
+    ],
+    [
+     "karii . . . i- (EMPH.NEG)",
+     "Emphatic negative",
+     "Assertive, Contingent, Absolutive"
+    ]
+   ]
+  },
+  "15": {
+   "title": "Table 15. The Verb Stem Template",
+   "pages": [
+    44
+   ],
+   "rows": [
+    [
+     "1. Iterative",
+     "2. Noun",
+     "3. Descriptive Stem",
+     "4. Portative/ Comitative",
+     "5. Locative"
+    ],
+    [
+     "raar-, ka- ITER",
+     "awi- 'image' wak- 'sound'",
+     "kasis 'hard' tarahkis 'strong'",
+     "ri-, ra-, ruu- PORT cir-, ciras- COM",
+     "ka- 'on' kaa- 'inside'"
+    ],
+    [
+     "6. Active Verb Complement",
+     "7. Verb Root",
+     "8. Causative"
+    ],
+    [
+     "kiikak 'drink' + -his PERF",
+     "at 'go'",
+     "-rik, -raʔuk"
+    ]
+   ]
+  },
+  "16": {
+   "title": "Table 16. Verb Suffix Template",
+   "pages": [
+    44
+   ],
+   "rows": [
+    [
+     "25",
+     "26",
+     "27",
+     "28"
+    ],
+    [
+     "VERB STEM",
+     "PERFECTIVE, PERFECTIVE SUBORDINATE, IMPERFECTIVE, IMPERFECTIVE SUBORDINATE",
+     "INTENTIVE, HABITUAL, INCHOATIVE",
+     "INTENTIVE SUBORDINATE"
+    ]
+   ]
+  },
+  "17": {
+   "title": "Table 17. Suffixes for Aspect and Subordination",
+   "pages": [
+    45,
+    50,
+    51
+   ],
+   "rows": [
+    [
+     "Categories",
+     "Suffixes"
+    ],
+    [
+     "Perfective/ Imperfective",
+     "Non-Intentive/Intentive Habitual/Inchoative",
+     "Non-Subordinate/ Subordinate",
+     ""
+    ],
+    [
+     "Perfective",
+     "Non-intentive",
+     "Non-subordinate",
+     "-Ø /-ʔ"
+    ],
+    [
+     "",
+     "",
+     "",
+     "-his (when incorporated)"
+    ],
+    [
+     "",
+     "",
+     "Subordinate",
+     "Class I",
+     "-a"
+    ],
+    [
+     "",
+     "",
+     "",
+     "Class II",
+     "-i"
+    ],
+    [
+     "",
+     "",
+     "",
+     "Class III",
+     "final syllable change"
+    ],
+    [
+     "",
+     "",
+     "",
+     "Class IV",
+     "-Ø"
+    ],
+    [
+     "",
+     "Intentive",
+     "Non-subordinate",
+     "-his + -ta"
+    ],
+    [
+     "",
+     "",
+     "Subordinate",
+     "-his + -ta + -rit"
+    ],
+    [
+     "Imperfective",
+     "Non-intentive",
+     "Non-subordinate",
+     "-:huʔ"
+    ],
+    [
+     "",
+     "",
+     "",
+     "-:hus (when incorporated)"
+    ],
+    [
+     "",
+     "",
+     "Subordinate",
+     "-hu"
+    ],
+    [
+     "",
+     "Intentive",
+     "Non-subordinate",
+     "-:hus + -ta",
+     "→",
+     "-:husta"
+    ],
+    [
+     "",
+     "",
+     "Subordinate",
+     "-hus + -ta + -rit",
+     "→",
+     "-hustarit"
+    ],
+    [
+     "",
+     "Inchoative",
+     "Non-subordinate",
+     "-:hus + -itik",
+     "→",
+     "-:husitit"
+    ],
+    [
+     "",
+     "",
+     "Subordinate",
+     "-hus + -itik",
+     "→",
+     "-husitit"
+    ],
+    [
+     "",
+     "Habitual",
+     "Non-subordinate",
+     "-:hus + -uukuʔ",
+     "→",
+     "-:husuukuʔ"
+    ],
+    [
+     "",
+     "",
+     "Subordinate",
+     "-hus + -uku",
+     "→",
+     "-husuku"
+    ],
+    [
+     "-aar + -Ø",
+     "PERF",
+     "→",
+     "-aa"
+    ],
+    [
+     "-aar + -a",
+     "PERF.SUB",
+     "→",
+     "-aara"
+    ],
+    [
+     "-aar + -his + -ta",
+     "PERF.INT",
+     "→",
+     "-aarista"
+    ],
+    [
+     "-aar + -i",
+     "IMPF",
+     "→",
+     "-aariʔ"
+    ],
+    [
+     "-aar + -i",
+     "IMPF.SUB",
+     "→",
+     "-aari"
+    ],
+    [
+     "-itik + -Ø",
+     "PERF.SUB",
+     "→",
+     "-itit"
+    ],
+    [
+     "-itik + -his + -ta",
+     "PERF.INT",
+     "→",
+     "-itiksta"
+    ],
+    [
+     "-itik + -:hus",
+     "IMPF",
+     "→",
+     "-itiikuʔ"
+    ],
+    [
+     "-itik + -hus",
+     "IMPF.SUB",
+     "→",
+     "-itiku"
+    ]
+   ]
+  }
+ },
+ "irregular_roots": [
+  {
+   "w": "aah",
+   "g": "to be around",
+   "sg": "aah",
+   "du": "aah",
+   "pl": "hurii-waa",
+   "note": ""
+  },
+  {
+   "w": "at",
+   "g": "to go",
+   "sg": "at",
+   "du": "war",
+   "pl": "at/wuu",
+   "note": ""
+  },
+  {
+   "w": "kus",
+   "g": "to be sitting",
+   "sg": "kus",
+   "du": "kus",
+   "pl": "wihak",
+   "note": ""
+  },
+  {
+   "w": "tir",
+   "g": "to be together",
+   "sg": "",
+   "du": "tir",
+   "pl": "hurii",
+   "note": ""
+  },
+  {
+   "w": "waak",
+   "g": "to say",
+   "sg": "waakaʔu",
+   "du": "waakaʔu",
+   "pl": "waci",
+   "note": ""
+  },
+  {
+   "w": "arik",
+   "g": "to be standing",
+   "sg": "arik",
+   "du": "waa + arik",
+   "pl": "waa + arik",
+   "note": ""
+  },
+  {
+   "w": "hiir",
+   "g": "to be good",
+   "sg": "hiir",
+   "du": "hiir",
+   "pl": "hi + waa + r",
+   "note": "(ur...)"
+  },
+  {
+   "w": "sa",
+   "g": "to be lying",
+   "sg": "sa",
+   "du": "sa + waa",
+   "pl": "sa + waa",
+   "note": ""
+  },
+  {
+   "w": "wiitik",
+   "g": "to sit down",
+   "sg": "wiitik",
+   "du": "wii + ruu + itik",
+   "pl": "wii + ruu + itik",
+   "note": ""
+  }
+ ]
+}

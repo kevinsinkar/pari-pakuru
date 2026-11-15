@@ -22,7 +22,8 @@
   <!-- Fuse.js for client-side search -->
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
 
-  <!-- Client-side search -->
+  <!-- Shared helpers of the learning pages (syllables, word pieces), then the client-side search -->
+  <script src="static/js/skiri.js"></script>
   <script src="static/js/search.js"></script>
 </head>
 <body>
@@ -46,7 +47,7 @@
             <span>
               <strong class="font-serif" style="font-size:1.2rem; letter-spacing:-0.3px;">P&#226;ri Pak&#251;ru'</strong>
               <br>
-              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Skiri Pawnee Dictionary</small>
+              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Learn Skiri Pawnee</small>
             </span>
           </a>
         </li>
@@ -62,14 +63,20 @@
       </button>
 
       <ul class="nav-links">
+        
+        <li><a href="learn.html" >Start here</a></li>
         <li><a href="index.html" >Dictionary</a></li>
         
         
+        <li><a href="guide.html" >Sounds</a></li>
+        <li><a href="words.html" >Word building</a></li>
+        <li><a href="verbs.html" >Verbs</a></li>
         <li><a href="lessons.html" aria-current="page">Lessons</a></li>
-        
         <li><a href="flashcards.html" >Flashcards</a></li>
+        <li><a href="practice.html" >Practice</a></li>
         
-        <li><a href="guide.html" >Syllable Guide</a></li>
+        
+        <li><a href="topics.html" >Topics</a></li>
         
         <li><a href="about.html" >About</a></li>
 
@@ -152,12 +159,11 @@
     <td>you have it</td>
     <td>
       
-        <a href="index.html?q=ta" lang="x-paw">ta</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -165,12 +171,11 @@
     <td>I have it</td>
     <td>
       
-        <a href="index.html?q=ta" lang="x-paw">ta</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -190,12 +195,11 @@
     <td>I have some</td>
     <td>
       
-        <a href="index.html?q=ta" lang="x-paw">ta</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -203,7 +207,7 @@
     <td>one</td>
     <td>
       
-        <a href="index.html?q=asku" lang="x-paw">asku</a>
+        <a href="index.html?id=SK-asku-p16-0172" lang="x-paw">asku</a>
         <span class="badge badge-class">NUM</span>
       
     </td>
@@ -216,7 +220,7 @@
     <td>two</td>
     <td>
       
-        <a href="index.html?q=pitku" lang="x-paw">pitku</a>
+        <a href="index.html?id=SK-pitku-p114-2206" lang="x-paw">pitku</a>
         <span class="badge badge-class">NUM</span>
       
     </td>
@@ -229,7 +233,7 @@
     <td>three</td>
     <td>
       
-        <a href="index.html?q=tawit" lang="x-paw">tawit</a>
+        <a href="index.html?id=SK-tawit-p164-3225" lang="x-paw">tawit</a>
         <span class="badge badge-class">NUM</span>
       
     </td>
@@ -242,7 +246,7 @@
     <td>four</td>
     <td>
       
-        <a href="index.html?q=kskîti'iks" lang="x-paw">kskîti'iks</a>
+        <a href="index.html?id=SK-kskiitiqiks-p448-3997" lang="x-paw">kskîti'iks</a>
         <span class="badge badge-class">NUM</span>
       
     </td>
@@ -276,17 +280,17 @@
   <article class="lesson-dialogue">
     
     <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Kirike ras•ta?</span>
+      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Kiriké ras•ta?</span>
       <span class="lesson-dialogue__eng">What do you have?</span>
     </div>
     
     <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Kiriks tahrarra.</span>
+      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Kiriks táhrar•ra.</span>
       <span class="lesson-dialogue__eng">I have some beads.</span>
     </div>
     
     <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Kiriks tah•ra.</span>
+      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Kiriks táh•ra.</span>
       <span class="lesson-dialogue__eng">I have a bead.</span>
     </div>
     
@@ -295,17 +299,17 @@
   <article class="lesson-dialogue">
     
     <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Kitske rastarra kiriks?</span>
+      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Kitské rastar•ra kiriks?</span>
       <span class="lesson-dialogue__eng">How many beads do you have?</span>
     </div>
     
     <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Asku kiriks tah•ra.</span>
+      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Asku kiriks táh•ra.</span>
       <span class="lesson-dialogue__eng">I have one bead.</span>
     </div>
     
     <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Sihuks kiriks tahrarra.</span>
+      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Sihuks kiriks táhrar•ra.</span>
       <span class="lesson-dialogue__eng">I have five beads.</span>
     </div>
     
@@ -332,7 +336,7 @@
     <td>six</td>
     <td>
       
-        <a href="index.html?q=kskiksâpic" lang="x-paw">kskiksâpic</a>
+        <a href="index.html?id=SK-kskiksaapic-p101-1943" lang="x-paw">kskiksâpic</a>
         <span class="badge badge-class">NUM</span>
       
     </td>
@@ -345,7 +349,7 @@
     <td>seven</td>
     <td>
       
-        <a href="index.html?q=pitkusiksâpic" lang="x-paw">pitkusiksâpic</a>
+        <a href="index.html?id=SK-pitkusiksaapic-p114-2209" lang="x-paw">pitkusiksâpic</a>
         <span class="badge badge-class">NUM</span>
       
     </td>
@@ -394,7 +398,7 @@
     <td>head</td>
     <td>
       
-        <a href="index.html?q=paksu'" lang="x-paw">paksu'</a>
+        <a href="index.html?id=SK-paksuq-p110-2116" lang="x-paw">paksu'</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -407,7 +411,7 @@
     <td>hat</td>
     <td>
       
-        <a href="index.html?q=pakskûku'u'" lang="x-paw">pakskûku'u'</a>
+        <a href="index.html?id=SK-pakskuukuquq-p109-2106" lang="x-paw">pakskûku'u'</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -420,7 +424,7 @@
     <td>buttocks</td>
     <td>
       
-        <a href="index.html?q=rusuʔ" lang="x-paw">rusuʔ</a>
+        <a href="index.html?id=BB-rusu-0076" lang="x-paw">rusuʔ</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -433,7 +437,7 @@
     <td>pants</td>
     <td>
       
-        <a href="index.html?q=rûskûku'u'" lang="x-paw">rûskûku'u'</a>
+        <a href="index.html?id=SK-ruuskuukuquq-p150-2923" lang="x-paw">rûskûku'u'</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -446,7 +450,7 @@
     <td>shoes</td>
     <td>
       
-        <a href="index.html?q=asûru'" lang="x-paw">asûru'</a>
+        <a href="index.html?id=SK-asuuruq-p18-0219" lang="x-paw">asûru'</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -471,7 +475,7 @@
     <td>a man, some men</td>
     <td>
       
-        <a href="index.html?q=pîta" lang="x-paw">pîta</a>
+        <a href="index.html?id=SK-piita-p113-2176" lang="x-paw">pîta</a>
         <span class="badge badge-class">N, ADJ</span>
       
     </td>
@@ -484,7 +488,7 @@
     <td>a stick, some sticks</td>
     <td>
       
-        <a href="index.html?q=rakis" lang="x-paw">rakis</a>
+        <a href="index.html?id=SK-rakis-p135-2644" lang="x-paw">rakis</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -497,12 +501,12 @@
     <td>a feather, some feathers</td>
     <td>
       
-        <a href="index.html?q=hituʔ" lang="x-paw">hituʔ</a>
+        <a href="index.html?id=SK-hiituq-p390-3856" lang="x-paw">hîtu'</a>
         <span class="badge badge-class">N</span>
       
     </td>
-    <td class="lesson-vocab__pron"><small>hih-too' <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small></small></td>
+    <td class="lesson-vocab__pron"><small><span class="pitch-high">HEE</span>-too'</small></td>
+    <td class="ipa" lang="x-paw"><small>[hií·tʊʔ]</small></td>
   </tr>
   
   </tbody>
@@ -520,27 +524,27 @@
   
   <details class="lesson-note" open>
     <summary><strong>Pronunciation</strong></summary>
-    <p>Remember that in the Skidi manner, an r is silent when it follows an h. tah•ra = (td-ha) (SK) (td-hra) (SB) The combination rr is actually pronounced as a single r.</p>
+    <p>Remember that in the Skidi manner, an r is silent when it follows an h. táh•ra = (tá-ha) (SK) (tá-hra) (SB) The combination r•r is actually pronounced as a single r.</p>
   </details>
   
   <details class="lesson-note" >
     <summary><strong>Pronunciation</strong></summary>
-    <p>Remember that within a phrase, the last consonant of a root is slurred into the beginning of the next root. pitkus•iksapits = (pit-ku-sik-sa pits)</p>
+    <p>Remember that within a phrase, the last consonant of a root is slurred into the beginning of the next root. pitkus•íksapits = (pit-ku-sík-sa-pits)</p>
   </details>
   
   <details class="lesson-note" >
     <summary><strong>Useful Phrases</strong></summary>
-    <p>1. Kitske'? How much? How many? 2. Turrahe It's good. 3. Kak'tirrahe. It's bad. (no good) 4. Siks•a'. Come here. (you, 1) 5. Siksut•tsa'. Stand up. (you, 1) 6. Ruru ' . (SB) Go (on). (you, 1) Hiru'. (SK)</p>
+    <p>1. Kitske'? How much? How many? 2. Túr•rahe It's good. 3. Kak'úr•rahe. It's bad. (no good) 4. Síks•a'. Come here. (you, 1) 5. Siksút•tsa'. Stand up. (you, 1) 6. Ruru' . (SB) Go (on). (you, 1) Hiru'. (SK)</p>
   </details>
   
   <details class="lesson-note" >
     <summary><strong>Verb Phrase</strong></summary>
-    <p>Words which refer to actions or events are called verbs. In English, have is a verb; in Pawnee, t ih-ra is a verb phrase, a group of roots meaning I have it. The first part, tab ., is an introducer, the second, •ra, the verb root meaning have. Introducers In Pawnee, an introducer carries information such as 1) MODE (indicators or markers) how does this information relate to what the speakers know? 2) PERSON: (markers) who is involved? 3) NUMBER: (markers) how many are involved? introducer•verb = mode + person + verb root tah•ra ta + h + ra I'm telling you + I + have I have it. ta +s +ra I'm telling you + you + have You have it. ra + s + ra we know + you + have (that) you have it. introducerverb = mode + person + number + verb root ta'hrarra ta + h + rar + ra I tell you + I + them + have I have some (them). 'INTRODUCER = MODE + PERSON + NUMBER Mode can be indicated either by a marker or an indicator which is joined to the introducer. The indicator may change its last letter according to who is the subject. Ta'h•ra. I have it. Kakah•ra. I don't have it. VERB SET: Tah .ra I have it. (May be used to play a classroom game like "Who's got the button?") Question: Take ra•ra? Who has it? Responses: Tah•ra. I have it. Tas•ta. You have it. TI ra. He or she has it. tas-ta ras•ta Question: Take rararra? Responses: Tahrarra. Tastarra. Tirarra. Si tahrarra. Si tastarra. Si tirarra. Tahraktarra Tastaktarra Tihrarra Who has them? I have them. You have them. He or she has them. We (2) have them. You (2) have them. They (2) have them. We (3+) have them. You (3+) have them. They (3+) have them.</p>
+    <p>Words which refer to actions or events are called verbs. In English, have is a verb; in Pawnee, táh•ra is a verb phrase, a group of roots meaning I have it. The first part, tab ., is an introducer, the second, •ra, the verb root meaning have. Introducers In Pawnee, an introducer carries information such as 1) MODE (indicators or markers) how does this information relate to what the speakers know? 2) PERSON: (markers) who is involved? 3) NUMBER: (markers) how many are involved? introducer•verb = mode + person + verb root táh•ra ta + h + ra I'm telling you + I + have I have it. ta +s +ra I'm telling you + you + have You have it. ra + s + ra we know + you + have (that) you have it. introducer•verb = mode + person + number + verb root táhrar•ra ta + h + rar + ra I tell you + I + them + have I have some (them). 'INTRODUCER = MODE + PERSON + NUMBER Mode can be indicated either by a marker or an indicator which is joined to the introducer. The indicator may change its last letter according to who is the subject. Táh•ra. I have it. Kakáh•ra. I don't have it. VERB SET: Táh•ra I have it. (May be used to play a classroom game like "Who's got the button?") Question: Také ra•ra? Who has it? Responses: Táh•ra. I have it. Tás•ta. You have it. Tí•ra. He or she has it. tás•ta rás•ta Question: Také rarar•ra? Responses: Tahrár•ra. Tastár•ra. Tírar•ra. Si táhrar•ra. Si tástar•ra. Si tírar•ra. Tahráktar•ra Tastáktar•ra Tíhrar•ra Who has them? I have them. You have them. He or she has them. We (2) have them. You (2) have them. They (2) have them. We (3+) have them. You (3+) have them. They (3+) have them.</p>
   </details>
   
   <details class="lesson-note" >
     <summary><strong>Plurals</strong></summary>
-    <p>In English, a noun which refers to more than one thing is called a plural noun, and it ends in -s, the plural suffix. (Examples: dogs, cats, trees.) In Pawnee, there is really no plural ending, and any noun can refer to one thing, two things, or three or more things. pita a man, some men rakis a stick, some sticks hitu '	a feather, some feathers Plurality is usually indicated by markers in the introducer of the verb phrase. Tah•ra. I have it. Thhrarra. I have some. + rar + plural (more than one) Tahra'ktarra. We have them. + rak + more than one of us Usually, the plural subject is marked by + rak +, the plural object by + rar +. There are other plural markers such as + it + for they and + atsir + for two of us, but these plurals are used in only a few places. Tihrarra. They (3+) have them. ti + it + rarra Tatsih•wari'. We (you and I) are going about. to + atsir + wari'</p>
+    <p>In English, a noun which refers to more than one thing is called a plural noun, and it ends in -s, the plural suffix. (Examples: dogs, cats, trees.) In Pawnee, there is really no plural ending, and any noun can refer to one thing, two things, or three or more things. pita a man, some men rakis a stick, some sticks hitu'	a feather, some feathers Plurality is usually indicated by markers in the introducer of the verb phrase. Táh•ra. I have it. Táhrar•ra. I have some. + rar + plural (more than one) Tahráktar•ra. We have them. + rak + more than one of us Usually, the plural subject is marked by + rak +, the plural object by + rar +. There are other plural markers such as + ir + for they and + atsir + for two of us, but these plurals are used in only a few places. Tihrar•ra. They (3+) have them. ti + ir + rar•ra Tatsíh•wari'. We (you and I) are going about. ta + atsir + wari'</p>
   </details>
   
 </section>
@@ -607,7 +611,7 @@
   </script>
   
 <script>
-const EX = {"blanks": [{"answer": "asku", "blanked": "_____ kiriks tah\u2022ra.", "english": "I have one bead.", "options": ["rakis", "asku", "paksu", "rusu\u0027"]}, {"answer": "sihuks", "blanked": "_____ kiriks tahrarra.", "english": "I have five beads.", "options": ["asku", "rus\u2022ku\u0027ku\u0027", "rusu\u0027", "sihuks"]}], "matching": [{"english": "shoes", "skiri": "asuru \u0027"}, {"english": "three", "skiri": "tawit,"}, {"english": "two", "skiri": "pitku"}, {"english": "I have some", "skiri": "t\u00e1hrar\u2022ra"}, {"english": "four", "skiri": "kskitiiks"}, {"english": "five", "skiri": "sihuks"}, {"english": "moccasins (shoes of the people)", "skiri": "asuri\u2022tsahriks"}, {"english": "ten", "skiri": "rIhuks\u2022iri\u0027"}], "say": [{"english": "What do you have?", "skiri": "Kirike ras\u2022ta?"}, {"english": "I have a bead.", "skiri": "Kiriks tah\u2022ra."}, {"english": "How many beads do you have?", "skiri": "Kitske rastarra kiriks?"}, {"english": "I have some beads.", "skiri": "Kiriks tahrarra."}, {"english": "I have five beads.", "skiri": "Sihuks kiriks tahrarra."}]};
+const EX = {"blanks": [{"answer": "t\u00e1hrar\u2022ra", "blanked": "Kiriks _____.", "english": "I have some beads.", "options": ["rIhuks\u2022iri\u0027", "t\u00e1hrar\u2022ra", "t\u00e1s\u2022ta", "kskitiiks"]}, {"answer": "t\u00e1h\u2022ra", "blanked": "Kiriks _____.", "english": "I have a bead.", "options": ["t\u00e1s\u2022ta", "t\u00e1h\u2022ra", "asku", "taw"]}, {"answer": "t\u00e1h\u2022ra", "blanked": "Asku kiriks _____.", "english": "I have one bead.", "options": ["pita", "t\u00e1h\u2022ra", "tawit", "rihuks\u2022irfwara"]}, {"answer": "t\u00e1hrar\u2022ra", "blanked": "Sihuks kiriks _____.", "english": "I have five beads.", "options": ["hitu\u0027", "pitkus\u2022iksapits", "asku", "t\u00e1hrar\u2022ra"]}], "matching": [{"english": "a man, some men", "skiri": "pita"}, {"english": "I have it", "skiri": "t\u00e1h\u2022ra"}, {"english": "two", "skiri": "pitku"}, {"english": "I have some", "skiri": "t\u00e1hrar\u2022ra"}, {"english": "a stick, some sticks", "skiri": "rakis"}, {"english": "seven", "skiri": "pitkus\u2022iksapits"}, {"english": "ten", "skiri": "rIhuks\u2022iri\u0027"}, {"english": "four", "skiri": "kskitiiks"}], "say": [{"english": "I have five beads.", "skiri": "Sihuks kiriks t\u00e1hrar\u2022ra."}, {"english": "I have one bead.", "skiri": "Asku kiriks t\u00e1h\u2022ra."}, {"english": "What do you have?", "skiri": "Kirik\u00e9 ras\u2022ta?"}, {"english": "How many beads do you have?", "skiri": "Kitsk\u00e9 rastar\u2022ra kiriks?"}, {"english": "I have some beads.", "skiri": "Kiriks t\u00e1hrar\u2022ra."}]};
 
 // ── Matching ─────────────────────────────────────────────────────
 (function() {

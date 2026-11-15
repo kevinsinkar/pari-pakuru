@@ -22,7 +22,8 @@
   <!-- Fuse.js for client-side search -->
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
 
-  <!-- Client-side search -->
+  <!-- Shared helpers of the learning pages (syllables, word pieces), then the client-side search -->
+  <script src="static/js/skiri.js"></script>
   <script src="static/js/search.js"></script>
 </head>
 <body>
@@ -46,7 +47,7 @@
             <span>
               <strong class="font-serif" style="font-size:1.2rem; letter-spacing:-0.3px;">P&#226;ri Pak&#251;ru'</strong>
               <br>
-              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Skiri Pawnee Dictionary</small>
+              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Learn Skiri Pawnee</small>
             </span>
           </a>
         </li>
@@ -62,14 +63,20 @@
       </button>
 
       <ul class="nav-links">
+        
+        <li><a href="learn.html" >Start here</a></li>
         <li><a href="index.html" >Dictionary</a></li>
         
         
+        <li><a href="guide.html" >Sounds</a></li>
+        <li><a href="words.html" >Word building</a></li>
+        <li><a href="verbs.html" >Verbs</a></li>
         <li><a href="lessons.html" aria-current="page">Lessons</a></li>
-        
         <li><a href="flashcards.html" >Flashcards</a></li>
+        <li><a href="practice.html" >Practice</a></li>
         
-        <li><a href="guide.html" >Syllable Guide</a></li>
+        
+        <li><a href="topics.html" >Topics</a></li>
         
         <li><a href="about.html" >About</a></li>
 
@@ -152,7 +159,7 @@
     <td>The Year</td>
     <td>
       
-        <a href="index.html?q=rikatihâru'" lang="x-paw">rikatihâru'</a>
+        <a href="index.html?id=SK-rikatihaaruq-p491-4167" lang="x-paw">rikatihâru'</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -165,7 +172,7 @@
     <td>winter</td>
     <td>
       
-        <a href="index.html?q=pičikat" lang="x-paw">pičikat</a>
+        <a href="index.html?id=SK-picikat-p111-2162" lang="x-paw">pičikat</a>
         <span class="badge badge-class">ADV</span>
       
     </td>
@@ -178,7 +185,7 @@
     <td>summer</td>
     <td>
       
-        <a href="index.html?q=ri'ât" lang="x-paw">ri'ât</a>
+        <a href="index.html?id=SK-riqaat-p139-2753" lang="x-paw">ri'ât</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -203,7 +210,7 @@
     <td>fall</td>
     <td>
       
-        <a href="index.html?q=reckuhke" lang="x-paw">reckuhke</a>
+        <a href="index.html?id=BB-reckuhke-0060" lang="x-paw">reckuhke</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -216,12 +223,11 @@
     <td>I'm working</td>
     <td>
       
-        <a href="index.html?q=ta" lang="x-paw">ta</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -229,12 +235,11 @@
     <td>I work (habitually)</td>
     <td>
       
-        <a href="index.html?q=ta" lang="x-paw">ta</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -276,12 +281,7 @@
     
     <div class="lesson-dialogue__line">
       <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Kirike rut•káhu•raru' retskuhke?</span>
-      <span class="lesson-dialogue__eng">What does it do in the</span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">fall?</span>
-      <span class="lesson-dialogue__eng"></span>
+      <span class="lesson-dialogue__eng">What does it do in the fall?</span>
     </div>
     
     <div class="lesson-dialogue__line">
@@ -295,12 +295,7 @@
     
     <div class="lesson-dialogue__line">
       <span class="lesson-dialogue__skiri font-serif" lang="x-paw">Kiriké rusut•ari•úsuku retskuhke?</span>
-      <span class="lesson-dialogue__eng">What do you do in</span>
-    </div>
-    
-    <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif" lang="x-paw">the fall?</span>
-      <span class="lesson-dialogue__eng"></span>
+      <span class="lesson-dialogue__eng">What do you do in the fall?</span>
     </div>
     
     <div class="lesson-dialogue__line">
@@ -331,12 +326,11 @@
     <td>I go to school</td>
     <td>
       
-        <a href="index.html?q=ta" lang="x-paw">ta</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -368,12 +362,11 @@
     <td>it's cold (wind)</td>
     <td>
       
-        <a href="index.html?q=ta" lang="x-paw">ta</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -405,12 +398,11 @@
     <td>it's' hot</td>
     <td>
       
-        <a href="index.html?q=ta" lang="x-paw">ta</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -442,12 +434,11 @@
     <td>we go hunting</td>
     <td>
       
-        <a href="index.html?q=ta" lang="x-paw">ta</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -455,12 +446,11 @@
     <td>we go fishing</td>
     <td>
       
-        <a href="index.html?q=ta" lang="x-paw">ta</a>
-        <span class="badge badge-class">VL</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tuh <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tə–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -468,12 +458,11 @@
     <td>they plant</td>
     <td>
       
-        <a href="index.html?q=tir" lang="x-paw">tir</a>
-        <span class="badge badge-class">VI</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tih(d) <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tɪ(r)–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -481,12 +470,11 @@
     <td>they play hand-game</td>
     <td>
       
-        <a href="index.html?q=tî" lang="x-paw">tî</a>
-        <span class="badge badge-class">VT</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tee <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tii–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -494,12 +482,11 @@
     <td>they tell stories</td>
     <td>
       
-        <a href="index.html?q=tir" lang="x-paw">tir</a>
-        <span class="badge badge-class">VI</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tih(d) <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tɪ(r)–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -507,7 +494,7 @@
     <td>of coyotes</td>
     <td>
       
-        <a href="index.html?q=ckirihki" lang="x-paw">ckirihki</a>
+        <a href="index.html?id=SK-ckirihki-p30-0485" lang="x-paw">ckirihki</a>
         <span class="badge badge-class">N</span>
       
     </td>
@@ -520,12 +507,11 @@
     <td>they roast corn</td>
     <td>
       
-        <a href="index.html?q=tir" lang="x-paw">tir</a>
-        <span class="badge badge-class">VI</span>
+        <small class="lesson-nolink">not in Parks dictionary</small>
       
     </td>
-    <td class="lesson-vocab__pron"><small>tih(d) <span class="pitch-unmarked">(accent not marked)</span></small></td>
-    <td class="ipa" lang="x-paw"><small>[–tɪ(r)–]</small></td>
+    <td class="lesson-vocab__pron"><small></small></td>
+    <td class="ipa" lang="x-paw"><small></small></td>
   </tr>
   
   <tr>
@@ -577,12 +563,12 @@
   
   <details class="lesson-note" open>
     <summary><strong>Verb-Final K</strong></summary>
-    <p>No Pawnee word ends in k. If there is a k in the underlying root form of a verb, it will show up only before a verb suffix (ending) such as the habitual +usuku ' or the imperfect +us or +u'. Everywhere else, the verb final k will drop off (or, for some verbs, change to t.) tiraráh•karuk•usuku' they plant (habitual) tiraráh•karuku they are planting (imperfect) tiraráh•karu they have planted (perfect) tiraráh•kiwik•usuku'	they roast corn tiraráh•kiwiku' they are roasting corn tiraráh•kiwi they have roasted corn</p>
+    <p>No Pawnee word ends in k. If there is a k in the underlying root form of a verb, it will show up only before a verb suffix (ending) such as the habitual +usuku' or the imperfect +us or +u'. Everywhere else, the verb final k will drop off (or, for some verbs, change to t.) tiraráh•karuk•usuku' they plant (habitual) tiraráh•karuku they are planting (imperfect) tiraráh•karu they have planted (perfect) tiraráh•kiwik•usuku'	they roast corn tiraráh•kiwiku' they are roasting corn tiraráh•kiwi they have roasted corn</p>
   </details>
   
   <details class="lesson-note" >
     <summary><strong>Useful Phrases</strong></summary>
-    <p>1. Aka, hiri we ti•pítsi'! Gee, it's cold in here! 2. Aka, hiri we ta•hu•tuhtu'! Gee, it's cold in this wind! 3. Hiri we ta•hu•tawi•rihu! It's really windy'! 4. Suks•teká•rikut. Open the door. 5. Suks•teka•wu. Close the door. VERB SET (various aspects): We t'at•tsú•a. It's raining. It's raining. (incomplete, imperfect) It rains. (habitual) It was raining, has been raining. (past incomplete) It might be raining. (indefinite) It may rain. (doubtful, future) It will rain. (predictive) We t'at•tsú•a. We t'at•tsu•a•úsuku'. We tuks•at•tsú•a. We kut'at•tsú•a. Kut'at•tsu•á•ista. T'at•tsu•á•ista.</p>
+    <p>1. Aka, hiri we ti•pítsi'! Gee, it's cold in here! 2. Aka, hiri we ta•hú•tuhtu'! Gee, it's cold in this wind! 3. Hiri we ta•hu•tawí•rihu! It's really windy'! 4. Suks•teká•rikut. Open the door. 5. Suks•teká•wu. Close the door. VERB SET (various aspects): We t'at•tsú•a. It's raining. It's raining. (incomplete, imperfect) It rains. (habitual) It was raining, has been raining. (past incomplete) It might be raining. (indefinite) It may rain. (doubtful, future) It will rain. (predictive) We t'at•tsú•a. We t'at•tsu•a•úsuku'. We tuks•at•tsú•a. We kut'at•tsú•a. Kut'at•tsu•á•ista. T'at•tsu•á•ista.</p>
   </details>
   
 </section>
@@ -649,7 +635,7 @@
   </script>
   
 <script>
-const EX = {"blanks": [{"answer": "retskuhke", "blanked": "Kirike rut\u2022k\u00e1hu\u2022raru\u0027 _____?", "english": "What does it do in the", "options": ["retskuhke", "pitsikat", "tirar\u00e1h\u2022kiwik\u2022\u00fasuku\u0027", "tskirihki"]}, {"answer": "retskuhke", "blanked": "T\u0027at\u2022ts\u00fa\u2022a\u2022usuku _____.", "english": "It rains in the fall.", "options": ["ti\u2022it\u2022iks\u2022aparari\u2022\u00fasuku\u0027", "tat\u2022kata\u2022\u00edspu\u0027suku\u0027", "retskuhke", "ti\u2022hurer\u2022\u00fasuku\u0027"]}, {"answer": "retskuhke", "blanked": "Kirik\u00e9 rusut\u2022ari\u2022\u00fasuku _____?", "english": "What do you do in", "options": ["retskuhke", "tirar\u00e1h\u2022kiwik\u2022\u00fasuku\u0027", "rah\u00faritat", "ti\u2022hurer\u2022\u00fasuku\u0027"]}], "matching": [{"english": "they roast corn", "skiri": "tirar\u00e1h\u2022kiwik\u2022\u00fasuku\u0027"}, {"english": "it frosts", "skiri": "ti\u2022hurer\u2022\u00fasuku\u0027"}, {"english": "winter", "skiri": "pitsikat"}, {"english": "it\u0027s cold (in a room)", "skiri": "t\u00ed\u2022pitsi\u0027"}, {"english": "I go to school", "skiri": "tat\u2022kata\u2022\u00edspu\u0027suku\u0027"}, {"english": "they tell stories", "skiri": "tira\u2022\u00edwawat\u2022\u00fasuku\u0027"}, {"english": "it\u0027s always cold", "skiri": "rah\u00faritat ta h\u00fa\u2022tuhtu\u0027"}, {"english": "it is a frost (imperfect)", "skiri": "t\u00ed\u2022hurer\u2022us"}], "say": [{"english": "It\u0027s really windy\u0027!", "skiri": "Hiri we ta\u2022hu\u2022taw\u00ed\u2022rihu!"}, {"english": "Close the door.", "skiri": "Suks\u2022tek\u00e1\u2022wu."}, {"english": "I work.", "skiri": "We tatut\u2022a\u2022wahri\u2022usuku\u0027."}, {"english": "Gee, it\u0027s cold in this wind!", "skiri": "Aka, hiri we ta\u2022h\u00fa\u2022tuhtu\u0027!"}, {"english": "Gee, it\u0027s cold in here!", "skiri": "Aka, hiri we ti\u2022p\u00edtsi\u0027!"}]};
+const EX = {"blanks": [{"answer": "retskuhke", "blanked": "Kirike rut\u2022k\u00e1hu\u2022raru\u0027 _____?", "english": "What does it do in the fall?", "options": ["tira\u2022\u00edwawat\u2022\u00fasuku\u0027", "retskuhke", "riat", "t\u00ed\u2022hurer\u2022us"]}, {"answer": "retskuhke", "blanked": "T\u0027at\u2022ts\u00fa\u2022a\u2022usuku _____.", "english": "It rains in the fall.", "options": ["retskuhke", "tatut\u2022\u00e1\u2022wahri\u0027", "ti\u2022hurer\u2022\u00fasuku\u0027", "rah\u00faritat"]}, {"answer": "retskuhke", "blanked": "Kirik\u00e9 rusut\u2022ari\u2022\u00fasuku _____?", "english": "What do you do in the fall?", "options": ["t\u00ed\u2022hurer\u2022us", "tskirihki", "tih\u2022taw\u00e1\u2022karuk\u2022usuku\u0027", "retskuhke"]}], "matching": [{"english": "it\u0027s always cold", "skiri": "rah\u00faritat ta h\u00fa\u2022tuhtu\u0027"}, {"english": "it rains (habitually)", "skiri": "t\u0027at\u2022ts\u00fa\u2022a\u2022usuku\u0027"}, {"english": "it\u0027s raining", "skiri": "(we) t\u0027at\u2022ts\u00fa\u2022a"}, {"english": "it\u0027s cold (in a room)", "skiri": "t\u00ed\u2022pitsi\u0027"}, {"english": "it frosts", "skiri": "ti\u2022hurer\u2022\u00fasuku\u0027"}, {"english": "it snows", "skiri": "tuh\u2022s\u00e1\u2022usuku\u0027"}, {"english": "it\u0027s\u0027 hot", "skiri": "t\u00e1\u2022wiritstu\u0027"}, {"english": "they tell stories", "skiri": "tira\u2022\u00edwawat\u2022\u00fasuku\u0027"}], "say": [{"english": "What do you do in the fall?", "skiri": "Kirik\u00e9 rusut\u2022ari\u2022\u00fasuku retskuhke?"}, {"english": "What does it do in the fall?", "skiri": "Kirike rut\u2022k\u00e1hu\u2022raru\u0027 retskuhke?"}, {"english": "It rains in the fall.", "skiri": "T\u0027at\u2022ts\u00fa\u2022a\u2022usuku retskuhke."}, {"english": "Gee, it\u0027s cold in this wind!", "skiri": "Aka, hiri we ta\u2022h\u00fa\u2022tuhtu\u0027!"}, {"english": "It\u0027s really windy\u0027!", "skiri": "Hiri we ta\u2022hu\u2022taw\u00ed\u2022rihu!"}]};
 
 // ── Matching ─────────────────────────────────────────────────────
 (function() {
