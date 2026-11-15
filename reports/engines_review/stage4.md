@@ -279,10 +279,10 @@ The owner answered the five points above that were theirs:
 | Point | Answer |
 |---|---|
 | 1. Commit and push | **Yes.** Done: `5727705` (the earlier part of the day), `dbbb366` (the review and the eight decisions), `5389a53` (the database as text and the site), and the documentation commit after them |
-| 2. The lessons and the page | **All twenty lessons.** Done the same day, not committed: every line of the titles, dialogues and notes that holds Pawnee was cut from the scan and read (911 lines, 79 a second time); 328 places corrected, 8 titles set, the next lesson's title and the glossary cut from the end of the notes, 13 rows of the Blue Book table corrected at their own line. `scripts/source_audit/lesson_text_reading.py`, `scripts/apply_lesson_page_reading.py --check`; record in `reports/lesson_text_ocr_report.txt` (last run) |
+| 2. The lessons and the page | **All twenty lessons.** Done the same day (pushed in `fad4a3e`): every line of the titles, dialogues and notes that holds Pawnee was cut from the scan and read (911 lines, 79 a second time); 328 places corrected, 8 titles set, the next lesson's title and the glossary cut from the end of the notes, 13 rows of the Blue Book table corrected at their own line. `scripts/source_audit/lesson_text_reading.py`, `scripts/apply_lesson_page_reading.py --check`; record in `reports/lesson_text_ocr_report.txt` (last run) |
 | 3. The *tiʔ-* rule | **No action.** It stays in force |
-| 4. The Blue Book table's ties | **Correct it.** Done the same day, not committed: `scripts/relink_bluebook.py --check`; 65 rows re-tied, 349 untied; 43 of 88 Blue Book example sentences kept |
-| 5. The function-word tables | **Do the pass.** Done the same day, not committed: `scripts/fix_function_words.py --check`; 32 rows corrected, 9 deleted |
+| 4. The Blue Book table's ties | **Correct it.** Done the same day (pushed in `fad4a3e`): `scripts/relink_bluebook.py --check`; 65 rows re-tied, 349 untied; 43 of 88 Blue Book example sentences kept |
+| 5. The function-word tables | **Do the pass.** Done the same day (pushed in `fad4a3e`): `scripts/fix_function_words.py --check`; 32 rows corrected, 9 deleted |
 
 Points 6 to 8 were not answered and stand as they are. What was then done for
 2, 4 and 5 is recorded in the project log ("seventh part") and in
@@ -290,7 +290,7 @@ Points 6 to 8 were not answered and stand as they are. What was then done for
 at about 150,000 tokens; the reading itself (55 images) stayed within that,
 and the tool, the comparison and the corrections around it took about as
 much again. It left four things open, which are items 69 to 72 of the
-project log: the dialogues' English is not paired with their Pawnee lines;
+project log: the dialogues' English was not paired with their Pawnee lines (repaired the same evening, `scripts/pair_lesson_dialogues.py`);
 three places lie under a flaw in the scan and three are doubts of reading;
 the English of the notes is unread OCR text; the function words' meanings
 are unchecked.
