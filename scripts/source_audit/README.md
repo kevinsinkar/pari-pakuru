@@ -24,7 +24,7 @@ python scripts/source_audit/status.py        # how far the audit has got
 | Stage | Script | What it does |
 |---|---|---|
 | all | `state.py`, `status.py` | The checkpoint file `STATE.json` and the progress log; `status.py` prints them |
-| 0 | `baseline.py` | Hashes every input and runs the existing test suites. `--check` shows whether anything has changed since |
+| 0 | `baseline.py` | Hashes every input and runs the existing test suites. `--check` shows whether anything has changed since. Its list of suites was brought in step on 2026-11-14, when the engines review withdrew the conjugation and possession engines and replaced the sound-change self-test by a measurement; `baseline.json` keeps the results of the day of the audit |
 | 1 | `textlayer.py` | Reads the PDF text layer with fonts and positions |
 | 1 | `char_inventory.py`, `char_sheets.py`, `char_join.py`, `char_distribution.py` | Every stand-in character by font; contact sheets of each, cut from the pages; the join of the readings with the key; where each accent code stands in all of its occurrences |
 | 1 | `chartable.py` | **The verified character table**, as code. `decode()` turns text-layer text into what is printed |
@@ -42,7 +42,9 @@ python scripts/source_audit/status.py        # how far the audit has got
 | 5 | `bluebook_right_place.py` | The Blue Book forms two readings left open because the crop had shown a longer or another word: finds the row's own place on the page (where the stored letters stand directly before the English stored with the row, or once as a word by itself), cuts it, and `--grade` judges the reading as the first reading was judged (2026-11-14: 25 found, 18 corrected, 7 confirmed) |
 | 4 | `chapter4_third_witness.py` | The grammar chapter's doubtful words weighed against the dictionary's printed forms: where the blind reader's form is a dictionary form and the stored one is printed nowhere, both witnesses agree. Corrects only the three words where they differ in letters (`--apply`); records a verdict for all of them |
 | 4 | `chapter4_second_reading.py` | **The grammar chapter against two blind readings** (2026-11-14). `--sheets` cuts the pages for the second readers, one folder each; `--zoom` draws part of a tile larger for a reader. Without options it grades: every stored Skiri word against both readings, the breakdown lines piece by piece, and the places named one by one in `BY_HAND` (Table 17). `--apply` corrects what both blind readings agree on. Run it after any change to `extracted_data/grammatical_overview.json`: it should report nothing to correct |
-| 6 | `e2s_compare.py` | The English-to-Skiri section against its text layer; `--source db` for the database tables, `--source json` for the current JSON |
+| 4 | `chapter4_tables.py` | **The tables of the grammar chapter as printed**, put together from the two blind readings without another reading (2026-11-14). Tells a difference of writing down (one reader wrote each printed line as a row) from a difference of reading; `--show N` prints one table in both readings; `--write` writes `extracted_data/grammatical_overview_tables.json` |
+| 4 | `front_matter_reading.py` | **Chapters 2 and 5, read twice** (2026-11-14). `--sheets` cuts the 13 pages for two readings with different cuts; `--zoom` for a reader; without options it compares the readings; `--write` writes the two stored chapters: forms, tables, headings and the project's summaries, not the running text |
+| 6 | `e2s_compare.py` | The English-to-Skiri section against its text layer; `--source db` for the database tables, `--source json` for the current JSON; `--out FOLDER` so that a later run does not overwrite the audit's own record. Since 2026-11-14 both are at 99.99%: the index was rebuilt from the page by `../repair_english_index.py`, which has a stricter check of its own (`--check`) |
 | 7 | `build_report.py`, `apply_fixes.py` | The list of proposed fixes and the review page; the script that applies approved fixes |
 
 ## To run it again
@@ -86,5 +88,12 @@ reading anything again.
 - **A crop drawn where the OCR text matches can be the wrong place** when the
   stored form is short. The English stored with the row says which place is
   meant (`bluebook_right_place.py`).
+- **Ask a reader for forms, not for pages of text.** On 2026-11-14 four readers were asked to write out chapters 2 and
+  5 in full. One was stopped by the service's content filter, and two reported an automated notice about not
+  reproducing sections of books. The fifth reader was asked for the Skiri forms and figure labels only, as the readers
+  of chapter 4 had been, and finished in 60,000 tokens. The stored chapters hold forms, tables and summaries; the full
+  readings stay in `work/`.
+- **A reader may write helper files next to yours.** Two readers shared the session's scratch folder and one overwrote
+  the other's helper. Tell each reader to keep its own files inside its own folder.
 - `work/` in the reports folder holds rendered crops and per-page files. It is
   not in git and can be rebuilt.

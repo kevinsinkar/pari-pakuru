@@ -160,33 +160,36 @@ was read by OCR, were restored from the scan on 2026-11-13.
 
 | Table | Rows | Contents |
 |---|---|---|
-| `lexical_entries` | 4,337 | one row per headword; 4,244 from Parks, 93 Blue Book only |
+| `lexical_entries` | 4,337 | one row per headword; 4,244 from Parks, 93 made from Blue Book words (37 of those are words Parks has too: `bb_variant_of`) |
 | `glosses` | 5,504 | numbered senses |
 | `paradigmatic_forms` | 9,559 | the five forms, for 2,239 verbs |
 | `examples` | 2,652 | example sentences (2,564 Parks, 88 Blue Book) |
 | `etymology` | 3,825 | Parks's printed etymology; `constituent_elements` is a derived parse whose per-piece glosses are unreliable |
 | `cognates` | 609 | related forms in Arikara, Kitsai, Wichita ... |
 | `derived_stems` | 21 | the stems Parks lists, with their glosses, under ten bound stems such as *iri-* and *piira-* |
-| `english_index` | 8,067 | English-to-Skiri lookup rows; 5,130 linked to an entry. Loaded from an early, uncleaned file: its own copies of the Skiri forms are unreliable, so follow the link to the entry |
-| `cross_references` | 4,585 | "see also" links (same early file) |
+| `english_index` | 7,806 | English-to-Skiri lookup rows, rebuilt from the printed page on 2026-11-14: 5,165 with a Skiri term, 5,162 of them linked to an entry; the other 2,641 are headwords that only refer to another |
+| `cross_references` | 4,578 | "see also" links as printed, with the Skiri forms in braces |
 | `semantic_tags` | 4,499 | 19 topic tags on 3,315 entries |
 | `blue_book_attestations` | 1,026 | Blue Book vocabulary items; 581 linked to an entry |
 | `lessons` | 20 | Blue Book lessons |
 | `verb_paradigms` | 770 | Parks Appendix 1: 7 verbs × 10 modes × 11 persons; 152 forms corrected from the printed pages on 2026-11-13 |
 | `irregular_verb_roots` | 9 | Parks Appendix 2 |
 | `morpheme_abbreviations` | 164 | Parks's abbreviation list |
-| `morpheme_inventory` | 37 | inflectional prefixes and suffixes with slot numbers |
-| `verb_template_slots` | 27 | the verb template |
-| `sound_change_rules` | 24 | Parks chapter 3 |
-| `noun_stems`, `kinship_paradigms`, `possession_examples` | 49, 14, 20 | noun possession |
-| `function_words`, `bb_function_words` | 418, 63 | particles, demonstratives, conjunctions |
+| `sound_change_rules` | 24 | Parks chapter 3: the rules and his examples |
+| `kinship_paradigms` | 11 | Parks Appendix 3: kin terms with "my", "your", "his/her" |
+| `function_words`, `bb_function_words` | 414, 63 | particles, demonstratives, conjunctions. The rows taken from Blue Book phrases are still OCR text |
 | `bb_gap_triage` | 516 | Blue Book items with no dictionary match, classified |
 | `community_feedback` | 2 | flags and confirmations from the web app |
 | `srs_cards`, `srs_reviews` | 0, 0 | spaced-repetition state |
 
 Useful columns on `lexical_entries`: `blue_book_attested` (181 entries),
-`source` (`blue_book` for the 93 Blue Book-only words), `form2_confidence`,
-`bb_variant_of`, `page_number`.
+`source` (`blue_book` for the 93 Blue Book-only words), `bb_variant_of`,
+`page_number`. (`form2_confidence` is empty since 2026-11-14.)
+
+No table holds a form that a script made. Four that did, written by the
+conjugation and possession engines, were dropped on 2026-11-14
+(`morpheme_inventory`, `verb_template_slots`, `noun_stems`,
+`possession_examples`).
 
 **`page_number` is the page of the printed book** (349 to 529) for every Parks
 entry since 2026-11-14 (`scripts/fix_page_citations.py`). Until then most
@@ -196,27 +199,24 @@ ids are kept stable, and the 28 `kaa…` entries with `-p2-` ids are on book
 page 419. `english_index.page_number` belongs to the English-to-Skiri section
 and still holds file numbers (there the book page is the file number plus 60).
 
-### Confidence on predicted verb forms
-
-`form2_confidence` (0 to 1) says how far to trust a *predicted* form 2. It
-weighs how accurate the predictor is for that verb class and preverb (50%),
-whether class and preverb are printed or inferred (20%), how complex the
-headword notation is (15%) and how many verbs the class has (15%).
-High (0.75 and up): 2,187 verbs. Medium: 30. Low: 22.
-
 ## Verb template
 
-```
-proclitics (slots 1-8) → inner prefixes (10-26) → STEM → suffixes (27-30)
-```
+Parks's own tables of the verb are printed in the
+[word-building guide](curriculum/roots_v2/construction_guide.md) and stored,
+as read twice from the page, in
+`extracted_data/grammatical_overview_tables.json`. In brief, as he prints
+them:
 
-| Slots | Positions |
+| Table | What it lays out |
 |---|---|
-| 1-8 | quotative, dubitative, inferential, evidential, dual, indefinite, reflexive, negative |
-| 10-13 | mode, agent, inclusive, agent plural / possessor / preverb |
-| 15-20 | patient, infinitive mode, physical possession, benefactive / preverb, resultative, aorist |
-| 22-26 | plural markers, incorporated noun, stem |
-| 27-30 | aspect, subordination, intentive, subordinate intentive |
+| 6 | The major positions: proclitics (outer prefixes), prefixes and preverbs (inner prefixes), incorporated noun, stem, suffixes |
+| 12 | The proclitics, positions 1 to 8: adverbials, indefinite, demonstratives, dual, reflexive, negatives and the yes/no question |
+| 7 | The inner prefixes, positions 9 to 26: evidentials, modals, agent, inclusive, agent plural and preverb, patient, infinitive modal, possession, benefactive, aorist, adverbials, plurals, then noun and stem |
+| 16 | The suffixes, positions 25 to 28: verb stem, perfective and imperfective, intentive and habitual and inchoative, intentive subordinate |
+| 8 to 11, 13, 14, 17 | The prefixes and suffixes themselves |
+
+The 30-slot template that used to stand here was the numbering of the
+conjugation engine, which was withdrawn on 2026-11-14.
 
 ## Web app routes
 
@@ -233,8 +233,8 @@ the others.
 | `/lessons`, `/lessons/<n>` | Blue Book lessons |
 | `/flashcards`, `/flashcards/<week>` | weekly flashcards |
 | `/study`, `/api/srs/review` | spaced-repetition study |
-| `/sentence-builder`, `/api/assemble`, `/api/slot-options`, `/api/verbs`, `/api/bb_verb_forms` | sentence builder |
-| `/api/possession/<headword>` | possession forms for a noun |
+| `/sentence-builder`, `/api/assemble`, `/api/slot-options` | sentence builder: a printed Blue Book sentence with words swapped for other printed words |
+| `/api/verbs`, `/api/verb-forms`, `/api/dictionary-sentence` | a dictionary verb by its entry: printed and derived forms, and a sentence in Parks's spelling |
 | `/guide` | pronunciation guide |
 | `/dashboard` | data-quality dashboard |
 | `/about` | about |
@@ -247,8 +247,9 @@ the others.
 .venv/Scripts/python -m web.app                               # run the web app
 .venv/Scripts/python scripts/build_static_site.py             # rebuild docs/
 .venv/Scripts/python scripts/morphology_v2/run.py --all       # word-construction analysis
-.venv/Scripts/python scripts/sound_changes.py --test          # sound-change rules
-.venv/Scripts/python scripts/stem_extractor.py --validate     # form 2 prediction
+.venv/Scripts/python scripts/sound_changes.py --measure       # the sound-change code against Parks's own examples
+.venv/Scripts/python scripts/sentence_templates.py --check    # every form in the sentence builder is copied from a row
+.venv/Scripts/python scripts/printed_noun_forms.py --check    # the printed forms of nouns
 .venv/Scripts/python scripts/check_simplified_forms.py        # learner forms follow from Parks's forms
 .venv/Scripts/python scripts/source_audit/s2e_compare.py      # dictionary entries against the printed page
 .venv/Scripts/python scripts/db_dump.py --write               # refresh DB/dump/ after any database change

@@ -27,9 +27,10 @@ The routes are listed in the [quick reference](../Quick_Reference_Guide.md#web-a
 
 ## What it imports from `scripts/`
 
-`possession_engine.py`, `example_filter.py`, `sentence_templates.py` (which
-brings in `person_forms.py`, `template_slot_fillers.py`, `display_utils.py`).
-Changing those changes the app.
+`printed_noun_forms.py` (the box "Printed forms of this noun"),
+`example_filter.py` (which Blue Book sentences an entry page shows) and
+`sentence_templates.py` (the sentence builder; it brings in `person_forms.py`
+and `template_slot_fillers.py`). Changing those changes the app.
 
 ## How it reaches the public
 
@@ -44,7 +45,15 @@ dashboard) is seen only by someone running the app on their own machine.
 ## Rules the app keeps
 
 - IPA is shown only when Parks prints it for that word.
-- A generated form is always marked as generated, with a confidence level.
+- **The app computes almost nothing, and says so where it does.** A noun's
+  page shows only forms Parks or the Blue Book prints. A Blue Book sentence in
+  the builder is made of printed rows and says "printed in the Blue Book,
+  lesson N" or "put together here; not printed". A verb form made by rule
+  carries "derived; not checked against a printed form". There is no
+  confidence level any more: it was a score for the code, not for the word.
+- An entry's own examples are shown as Parks prints them, all of them. Only
+  Blue Book sentences tied to an entry are filtered.
+- A dictionary verb is passed by its entry id, never by its spelling.
 - A flashcard week that is held for review is not served: `/flashcards/<week>` answers "not found" for it.
 - Feedback is never applied automatically. It waits in `/admin/feedback` for
   a person to accept or reject it. With no hosted app, feedback can only be

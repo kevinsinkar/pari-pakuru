@@ -34,7 +34,8 @@ rename it.
 |---|---|
 | `blue_book_attestations` (vocabulary by lesson, linked to dictionary entries where a match is certain) | `scripts/blue_book_verify.py`, `scripts/link_bb_vocab.py` |
 | `lessons` and `extracted_data/lessons.json` | `scripts/build_lessons.py` |
-| 93 words found only here, added as entries with ids `BB-…` | `scripts/import_bb_items.py` |
+| 93 words added as entries with ids `BB-…`. They were taken to be in the Blue Book only; 37 are words Parks has, in the textbook's spelling (`scripts/bluebook_only_entries.py`, 2026-11-14) | `scripts/import_bb_items.py` |
+| The glossary (book pages 95-102), item by item: `extracted_data/blue_book_glossary.json` | `scripts/bluebook_glossary.py` |
 | 88 dialogue sentences added to `examples` | `scripts/blue_book_verify.py` |
 | Ten sentence templates | `scripts/sentence_templates.py` |
 

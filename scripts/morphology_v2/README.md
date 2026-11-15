@@ -32,7 +32,7 @@ python scripts/morphology_v2/apply_data_fixes.py     # list proposed data fixes 
 | `analysis.py` | Decides which pieces are grammatical, groups each shape's meanings into senses, runs the evidence channels |
 | `proposals.py` | Cautious proposals for words Parks leaves unanalysed |
 | `tiers.py` | The tier rules, as one pure function |
-| `inventory.py` | Builds the root and affix inventory, the decision records and the frequency measures |
+| `inventory.py` | Builds the root and affix inventory, the decision records and the frequency measures. Takes Parks's tables of the verb from `extracted_data/grammatical_overview_tables.json` and the pieces he labels from his worked examples; it no longer reads the engine's table `morpheme_inventory` (dropped 2026-11-14) |
 | `ordering.py` | Derives the learning order and tests how sensitive it is to the weights |
 | `guide.py` | Writes the three learner documents |
 | `validate.py`, `report.py` | Score the gold sets and write the validation report, the change list and the proposed data fixes |
@@ -43,7 +43,7 @@ python scripts/morphology_v2/apply_data_fixes.py     # list proposed data fixes 
 | File | What it does |
 |---|---|
 | `test_morphology_v2.py` | 34 unit tests: tier rules, duplicate handling, etymology parsing, seam engine, coverage |
-| `check_forms.py` | Verifies every italic form, bracketed IPA and respelling in the learner documents |
+| `check_forms.py` | Verifies every italic form, bracketed IPA and respelling in the learner documents, and every cell of Parks's tables printed in the guide against the file they are taken from |
 | `check_determinism.py` | Runs the pipeline twice and compares hashes |
 | `gold_sample.py`, `gold_build.py` | Draw the test sample (seeded) and build and lock the gold sets |
 | `apply_data_fixes.py` | Lists the proposed data fixes; applies only page-number corrections, and only with `--apply`. The 43 it listed on 2026-11-12 were applied by `scripts/fix_data_2026_11.py`; it now lists none |

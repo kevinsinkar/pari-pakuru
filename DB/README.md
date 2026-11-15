@@ -27,8 +27,8 @@ later by the script named. Row counts on 2026-11-14.
 | `etymology` | 3,825 | importer |
 | `cognates` | 609 | importer |
 | `derived_stems` | 21 | `scripts/complete_from_print.py` (2026-11-14): the stems Parks lists under ten bound stems, each checked against the printed entry |
-| `english_index` | 8,067 | importer, **from an earlier file than the current JSON** (`import_metadata` names `english_to_skiri_verified.json`). Its Skiri terms and IPA were never cleaned: 3,986 IPA forms are not in Parks's notation and 177 still hold raw stand-in characters. The current `english_to_skiri_linked.json` is clean. Re-import from it; see the 2026-11 audit |
-| `cross_references` | 4,585 | importer |
+| `english_index` | 7,806 | `scripts/repair_english_index.py`, **from the printed page** (2026-11-14; before that the table held an early, uncleaned import). One row for each Skiri term printed under an English headword (5,165, of them 5,162 linked to their entry) and one for each headword that only refers to another (2,641). `skiri_term` is the bare term; its preverb is in `raw_subentry_json`. `page_number` is the page of the book |
+| `cross_references` | 4,578 | the same script: Parks's "see ..." lists as printed, each English term with the Skiri forms in braces after it |
 | `fts_glosses`, `fts_examples`, `fts_english_index` | | full-text indexes, kept current by triggers |
 | `import_metadata` | 6 | importer |
 | `semantic_tags` | 4,499 | `scripts/tag_entries.py` |
@@ -36,16 +36,33 @@ later by the script named. Row counts on 2026-11-14.
 | `bb_gap_triage` | 516 | `scripts/bb_gap_triage.py` |
 | `sound_change_rules` | 24 | `scripts/sound_changes.py` |
 | `verb_paradigms`, `irregular_verb_roots`, `morpheme_abbreviations` | 770, 9, 164 | `scripts/extract_appendices.py` |
-| `morpheme_inventory`, `verb_template_slots` | 37, 27 | `scripts/morpheme_inventory.py` |
-| `noun_stems`, `kinship_paradigms`, `possession_examples` | 49, 14, 20 | `scripts/noun_possession.py` |
-| `function_words` | 418 | `scripts/function_word_inventory.py` |
+| `kinship_paradigms` | 11 | Parks's Appendix 3, read from the page. The three rows typed from the OCR text of the Blue Book were deleted on 2026-11-14 (the Blue Book's forms are in `blue_book_attestations`) |
+| `function_words` | 414 | `scripts/function_word_inventory.py`; four OCR slips deleted on 2026-11-14. Its 59 Blue Book rows are still OCR text: 32 are words of the scan's readings |
 | `bb_function_words` | 63 | `scripts/extract_function_words.py` |
-| `lessons` | 20 | `scripts/build_lessons.py` |
+| `lessons` | 20 | `scripts/build_lessons.py`; dialogues corrected from the scan on 2026-11-13; running text and titles brought in step with the audit by `scripts/fix_lesson_text_ocr.py` on 2026-11-14 |
 | `community_feedback` | 2 | `archived/scripts/add_feedback_table.py`; written by the web app |
 | `srs_cards`, `srs_reviews` | 0, 0 | `web/srs.py` |
 
 Columns added to `lexical_entries` after the import: `blue_book_attested`,
-`form2_confidence`, `source`, `bb_variant_of`.
+`form2_confidence`, `source`, `bb_variant_of`. **`form2_confidence` is empty
+since 2026-11-14** and nothing reads it: it held a score for the form 2
+predictor, not for the word.
+
+**Every table holds copied forms; none holds what an engine computed.** The
+engines review of 2026-11-14 sorted the grammar tables
+(`reports/engines_review/profiles.md`, last table), the owner decided, and
+`scripts/remove_engine_output.py` removed the computed ones the same day:
+the tables `morpheme_inventory` and `verb_template_slots` (the conjugation
+engine's own arrangement; six of its rows were pieces Parks does not print),
+`noun_stems` and `possession_examples` (the possession engine's output), and
+the values of `form2_confidence`. They are in git history (`DB/dump/` at
+commit `814e8cc`) and in the backups. What is copied: `verb_paradigms`
+(Appendix 1), `sound_change_rules` (chapter 3), `irregular_verb_roots`
+(Appendix 2), `kinship_paradigms` (Appendix 3). Parks's tables of the verb
+are not in the database: they are in
+`extracted_data/grammatical_overview_tables.json`.
+`python scripts/remove_engine_output.py --check` says whether this still
+holds. **Do not add a table for forms a script makes.**
 
 ## Rebuilding
 

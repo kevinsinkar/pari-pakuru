@@ -2,7 +2,7 @@
   "review": "engines review (prompts/engines_review.md)",
   "started": "2026-11-14",
   "stage": 4,
-  "status": "done: all four stages. The owner's eight decisions are carried out. Not committed",
+  "status": "done: all four stages; committed and pushed 2026-11-14. Follow-ups asked for by the owner are under 'after_stage_4'",
   "stages": {
     "0": {
       "name": "read, and take the baseline",
@@ -107,5 +107,16 @@
     "meaning": "the recommended choice for each of the eight decisions of decision.md"
   },
   "database_sha256_at_end_of_stage_4": "40e2274af86981baea859f0d1c59e005c13aab8fb9abd3239ee25309bcd14ef3",
-  "measurement_scripts": "Stages 1 and 2 measured the engine files of commit 814e8cc with the database of the backup named above. Those scripts now refuse to run; see scripts/engines_review/README.md"
+  "measurement_scripts": "Stages 1 and 2 measured the engine files of commit 814e8cc with the database of the backup named above. Those scripts now refuse to run; see scripts/engines_review/README.md",
+  "after_stage_4": {
+    "owner_answer": {
+      "given": "2026-11-14",
+      "answer": "1. commit and push 2. all twenty lessons 3. no action 4. correct it 5. do the pass"
+    },
+    "1_commit_and_push": "done: 5727705, dbbb366, 5389a53 and the documentation commit",
+    "2_lessons_from_the_page": "not started",
+    "3_tiq_rule": "no action: the owner's decision; the rule stays in force",
+    "4_blue_book_ties": "not started",
+    "5_function_word_tables": "not started"
+  }
 }

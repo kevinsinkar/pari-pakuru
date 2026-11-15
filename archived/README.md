@@ -1,9 +1,9 @@
 # archived/
 
 A record of finished work: one-off scripts and reports from stages that are
-done. **No live code reads anything in this folder.** It is kept because it
-shows how a step was carried out, which matters if the step ever has to be
-repeated or questioned.
+done, and the grammar engines that were withdrawn. **No live code reads
+anything in this folder.** It is kept because it shows how a step was carried
+out, which matters if the step ever has to be repeated or questioned.
 
 ## scripts/
 
@@ -23,6 +23,26 @@ copy it back there first.
 | `conjugation_gemini_collab.py` | 3.1 | Three rounds of AI diagnosis of conjugation mismatches |
 | `retry_failed_grammar.py`, `merge_grammar_retries.py` | 3.1 | Recovered four pages of the grammar chapter that the first extraction lost |
 | `add_feedback_table.py` | 4.4 | Created the `community_feedback` table |
+
+### Engines withdrawn on 2026-11-14
+
+Not one-off scripts: these computed Pawnee forms, and were taken out of use
+after the engines review measured them on printed forms they had not been
+fitted to (`reports/engines_review/`). Each has a note at its head. **Do not
+copy one back to produce a form.** The tables they wrote were dropped from
+the database.
+
+| Script | What it was | Why it went |
+|---|---|---|
+| `morpheme_inventory.py` | The conjugation engine and its 30-slot verb template | 79.4% of Appendix 1, which it was fitted to; 15.0% of the dictionary's 9,559 verb forms |
+| `accent_rules.py` | Rules for where the accent falls in a conjugated form | Written for a misread copy of Appendix 1: 81 cells marked where the page marks 26 |
+| `possession_engine.py` | "my / your / his", locative and instrumental forms of a noun | 1,671 of 1,706 nouns answered with a phrase beginning with *kti*, an OCR slip; locatives right for 44% of the printed ones. Replaced by `scripts/printed_noun_forms.py`, which only looks up |
+| `noun_possession.py` | Sorted nouns by possession system and filled the engine's tables | Went with it |
+
+The figures are the review's (`reports/engines_review/measurements.md`). Its
+measurement scripts need these files back in `scripts/`, with the other
+engines as they were, and refuse to run otherwise: see
+`scripts/engines_review/README.md`.
 
 ## reports/
 

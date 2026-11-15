@@ -16,6 +16,9 @@ Read these first. They say how far the data can be trusted.
 | `fix_pronunciations_report.txt` | 2026-11-08 | The respelling repair: 1,273 entries, with the 32 left for review |
 | `fix_data_2026-11-13_report.txt` | 2026-11-13 | Every change made by `scripts/fix_data_2026_11.py`, old value and new: 269 accent marks restored, 28 page numbers, letter-spaced text, six duplicate rows, two single entries |
 | `page_citations_report.txt` | 2026-11-14 | `scripts/fix_page_citations.py`: the 3,511 entries whose page citation was the number of a PDF file, each with the old value and the page of the book |
+| `english_index_repair_report.txt` | 2026-11-14 | `scripts/repair_english_index.py`: the English index rebuilt from the printed page. Counts, and in full: what was removed from the file and why, what was added, the links that changed, the three terms left without a link |
+| `lesson_text_ocr_report.txt` | 2026-11-14 | `scripts/fix_lesson_text_ocr.py`: the audit's readings put into the lessons' running text and titles, three runs. Every place changed, and the 196 places left where only an accent differs |
+| `bluebook_only_entries_report.txt` | 2026-11-14 | `scripts/bluebook_only_entries.py`: for each of the 93 Blue Book-only entries the form the book prints, and for 37 the dictionary entry it is the textbook's spelling of |
 | `bb_vocab_linking.txt` | 2026-10-12 | Lesson vocabulary linked to dictionary entries, and the cases left for a person to decide |
 
 **The source-fidelity audit of 2026-11-13 has its own folder:
@@ -30,6 +33,19 @@ are in the same folder. It
 supersedes the "verdict: sound" of the 2026-09-01 audit for the appendices,
 the grammar chapter and the English index, which that audit did not reach.
 
+**The engines review of 2026-11-14 has its own folder:
+[engines_review/](engines_review/).** It asks what each grammar engine is
+worth now that the data has been corrected: every engine read in full and
+its rules traced to their sources (`profiles.md`), each measured on attested
+forms it had and had not been fitted to (`measurements.md`), and a paper
+that put eight decisions before the owner (`decision.md`). The owner
+answered, and the decisions were carried out the same day (`stage4.md`, the
+place to start; `person_forms_repair.md` for the one engine that was
+repaired and tested on a sealed half). The figures in the phase reports
+below for phases 2.3, 3.1 and 3.1.5 are the engines' own, on their own
+tests; two of those engines are withdrawn. This folder is where to find what
+they got right.
+
 The word-construction analysis of 2026-11-12 has
 its own folder: [../curriculum/roots_v2/validation_report.md](../curriculum/roots_v2/validation_report.md).
 
@@ -41,9 +57,9 @@ its own folder: [../curriculum/roots_v2/validation_report.md](../curriculum/root
 | `phase_2_2_blue_book.txt` | 2.2 | Blue Book vocabulary matched to the dictionary, lesson by lesson |
 | `phase_2_2_pronunciation.txt`, `phase_2_2_pronunciation_phonetic.txt` | 2.2 | Blue Book pronunciation guides compared with Parks's respelling and with his IPA |
 | `bb_gap_triage.txt` | 2.2 | The 516 Blue Book items with no dictionary match, sorted into eight kinds |
-| `phase_2_3_sound_changes.txt` | 2.3 | The 24 sound-change rules and how they test |
+| `phase_2_3_sound_changes.txt` | 2.3 | The 24 sound-change rules, the file's self-test of March 2026 ("11 of 11", seven of them the code's own output) and an AI audit of the rules. A record: the script no longer writes it, and the self-test is replaced by `sound_changes.py --measure` (8 of Parks's 39 examples) |
 | `phase_3_1_morphemes.txt` | 3.1 | The verb template and conjugation results (this copy dates from 2026-03-09; current figures are in the project log) |
-| `phase_3_1_5_noun_possession.txt` | 3.1.5 | Nouns by possession system |
+| `phase_3_1_5_noun_possession.txt` | 3.1.5 | Nouns by possession system, from the possession engine, withdrawn on 2026-11-14. A record |
 | `bb_function_words.txt`, `extract_function_words.txt` | 3.1.6 | Function words found in Blue Book phrases |
 | `phase_5_1_lessons.txt` | 5.1 | The 20 lessons as parsed: pages, dialogue lines, vocabulary linked |
 

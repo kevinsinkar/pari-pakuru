@@ -15,7 +15,7 @@ which were written once.
 | If you want to | Read |
 |---|---|
 | Learn | [learning_path.md](learning_path.md): 15 lessons covering the first 120 building blocks, with practice and answers; the remaining 459 as an ordered table |
-| See how words are put together | [construction_guide.md](construction_guide.md): 14 construction patterns and the sound rules at the seams, each with counts and attested examples |
+| See how words are put together | [construction_guide.md](construction_guide.md): 14 construction patterns and the sound rules at the seams, each with counts and attested examples; and Parks's own tables of the verb (Tables 6 to 17), printed row by row as read twice from the page |
 | Review it as a speaker or linguist | [review_queue.md](review_queue.md): everything that needs a human decision, most important first |
 | Judge how far to trust it | [validation_report.md](validation_report.md): opens with the headline numbers, the top 30 roots and top 20 affixes, the ten main open questions and the known gaps |
 | Understand or repeat the method | [METHOD.md](METHOD.md) |
@@ -59,7 +59,7 @@ The first run (2026-11-12) gave 548 roots and 1,788 words.
 | `PLAN.md` | What was planned and fixed before any analysis was run |
 | `baseline.md` | The state of the existing tools before the work started |
 | `evidence.jsonl` | One record per word: Parks's etymology, the pieces, each evidence channel, the tier and the reason for it. The source of everything else |
-| `roots.json`, `affixes.json` | The inventory: each morpheme with meaning, tier, evidence and several frequency measures |
+| `roots.json`, `affixes.json` | The inventory: each morpheme with meaning, tier, evidence and several frequency measures. In `affixes.json`, "inflectional" lists the 69 pieces Parks labels in his worked examples, straight from them; his tables of the verb are not copied there but printed in the guide from `extracted_data/grammatical_overview_tables.json`. Until 2026-11-14 that part came from a database table written by the conjugation engine, with six pieces Parks does not print; the table is dropped |
 | `decisions.json` | Every judgement call as data: duplicate rows, homonym splits, variant candidates, affix defaults |
 | `coverage.json` | The learning order and how much of the dictionary each step unlocks |
 | `stats.json` | Totals |

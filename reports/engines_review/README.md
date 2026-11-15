@@ -6,7 +6,7 @@ it? Run from [../../prompts/engines_review.md](../../prompts/engines_review.md).
 
 **Stages 0 to 3 changed nothing** and ended in a paper for the project owner.
 The owner answered it the same day with the recommended choice for all eight
-decisions, and **Stage 4 carried them out**. Nothing is committed.
+decisions, and **Stage 4 carried them out**. Committed and pushed that day.
 
 ## Read in this order
 

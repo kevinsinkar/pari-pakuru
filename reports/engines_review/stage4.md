@@ -271,3 +271,19 @@ says how to make the record again.
    headword (it keeps 54 of 262).
 8. Whether any made form should ever be shown to learners is for the Pawnee
    community, as before.
+
+## Afterwards, the same day
+
+The owner answered the five points above that were theirs:
+
+| Point | Answer |
+|---|---|
+| 1. Commit and push | **Yes.** Done: `5727705` (the earlier part of the day), `dbbb366` (the review and the eight decisions), `5389a53` (the database as text and the site), and the documentation commit after them |
+| 2. The lessons and the page | **All twenty lessons.** The notes are to be read from the scan |
+| 3. The *tiʔ-* rule | **No action.** It stays in force |
+| 4. The Blue Book table's ties | **Correct it** |
+| 5. The function-word tables | **Do the pass** |
+
+Points 6 to 8 were not answered and stand as they are. What was then done for
+2, 4 and 5 is recorded in the project log and in `STATE.json` under
+"after_stage_4".

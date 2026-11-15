@@ -64,6 +64,18 @@ python scripts/source_audit/s2e_compare.py --out reports/source_audit_2026-11/af
 | `e2s_db_tables_summary.json` | 6 | The same comparison for the database tables `english_index` and `cross_references`, which are an older copy; counts only, because the remedy is to re-import them |
 | `audit_numbers.json` | 7 | Counts of the proposed fixes by source, severity, kind and grade |
 
+## Added on 2026-11-14, after the audit (third part of that day)
+
+| File | What it is |
+|---|---|
+| `front_matter_reading.json` | Chapters 2 and 5 of the dictionary's front matter in two readings: how many forms and tables, and where the readings differ (nowhere, for the 195 Skiri forms) |
+| `blind_readings/front_matter_ch2_a.json`, `..._ch2_b.json`, `..._ch5_a.json`, `..._ch5_a2.json`, `..._ch5_b.json` | The five readings, cut down to forms, tables, headings and figure labels. The running text the readers wrote is not kept here: it is in `work/front_matter/`, which is not in git (project log, open item 54). Reading A of chapter 5 is in two files because its first reader was stopped after six pages |
+| `after_fixes/e2s_summary.json`, `e2s_differences.jsonl`, `e2s_db_tables_summary.json`, `e2s_db_tables_differences.jsonl` | The English-to-Skiri comparison run again after the index was rebuilt from the page: 32,632 of 32,636 fields equal for the file and for the tables. The files of the same name one folder up are the audit's own record (95.90% and 77.69%) and are not overwritten |
+
+The tables of chapter 4 as printed are in `extracted_data/grammatical_overview_tables.json`;
+they were put together from `blind_readings/chapter4_part*.json` and
+`chapter4_second_part*.json` by `scripts/source_audit/chapter4_tables.py`.
+
 ## Grades and severities
 
 | Grade | Meaning |

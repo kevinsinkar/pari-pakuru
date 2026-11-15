@@ -10,6 +10,7 @@ and the list of weeks held for review.
 | `held_for_review.json` | Weeks of that curriculum that are not shown anywhere until they have been reviewed. Now: week 20, "Ceremony & Sacred" | edited by hand |
 | `weekly_flashcards.md` | The curriculum as paper cards (front and back), one section per week, Week 1 = Sunday 2026-11-08. 372 words, 995 cards; the held week has a placeholder | `scripts/build_weekly_flashcards.py --start 2026-11-08` |
 | `flashcard_pdfs/` | Those cards as printable sheets, four to a page, double-sided: one PDF per week and `all_weeks.pdf` | `scripts/build_flashcard_pdfs.py` |
+| [`printables/`](printables/) | A printable word list (the flashcard words as a list, 372 words) and Parks's seven verbs in full (Appendix 1, 770 forms), each as a PDF and a web page | `scripts/build_printables.py` |
 | [`roots_v2/`](roots_v2/) | **The current word-building guide** and all the evidence behind it | `scripts/morphology_v2/run.py --all` |
 | [`roots/`](roots/) | Version 1 of the word-building guide (2026-11-07). **Superseded**; kept for the reasons below | `scripts/root_extraction.py`, `scripts/build_root_curriculum.py` |
 

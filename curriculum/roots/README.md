@@ -49,7 +49,7 @@ in `review_log.md` and in the two spec files they are made from
 | `segmentation_log.jsonl` | One record per dictionary entry: pieces, method, confidence (1,085 high, 1,575 medium, 1,683 low) |
 | `variant_merges.json` | The 21 merges of shapes differing in vowel length. Version 2 undoes them |
 | `stats.json` | Totals |
-| `construction_guide.md`, `lesson_plans.md` | The version 1 guide and its 7 units |
+| `construction_guide.md`, `lesson_plans.md` | The version 1 guide and its 7 units. They cite `scripts/morpheme_inventory.py` and its table as a source; that engine was withdrawn on 2026-11-14 (`archived/scripts/`) and the table dropped |
 | `lesson_plans_pronounced.md`, `lesson_plans_pronounced_modern.md` | The same lessons with respelling, and with learner spelling |
 | `review_log.md`, `review_log_auto.md` | What version 1 flagged for review |
 
