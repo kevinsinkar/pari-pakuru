@@ -1,0 +1,40 @@
+{
+ "note": "Rows of the Blue Book table (blue_book_attestations) whose English was the English of another row of the page. Found on 2026-11-15 while the lessons' Useful Phrases were gathered: the text layer of the scan gives every word its place on the page, and what stands to the right of a form on its own row was compared with the English stored beside the form (scripts/fix_bluebook_pairing.py --survey). Three runs were out of step, each by one row: the five Useful Phrases of lesson 18, six words of lesson 10, two lines of lesson 9 (where one printed word had no row at all). All three were then looked at in a cut of the scan (second_02.json in lesson_text_reading/). 'evidence': 'layer' means the script finds the form and the new English on one row of the text layer each time it runs; 'seen' means the text layer has a slip of the OCR there and the cut was read. The forms are not changed here (row 2671's form is in lesson_text_reading/decisions.json).",
+ "english": [
+  {"id": 2668, "lesson": 18, "page": 105, "y": 382, "form": "Sutsiks•áhut.", "old": "Who's been busy?", "new": "Hold this.", "evidence": "layer",
+   "why": "Useful Phrases, number 1. 'Who's been busy?' is the English of the heading of the verb set that follows the five phrases (Také ratutsiks•á•wahri'?, row 2673); the extraction put it first and moved the five meanings down by one, so that 'Forgive me.' was lost"},
+  {"id": 2669, "lesson": 18, "page": 105, "y": 397, "form": "Keskuruh•ra•wíat.", "old": "Hold this.", "new": "Help me.", "evidence": "layer", "why": "Useful Phrases, number 2"},
+  {"id": 2670, "lesson": 18, "page": 105, "y": 412, "form": "Ketuh•rá•wiat.", "old": "Help me.", "new": "Let me help.", "evidence": "layer", "why": "Useful Phrases, number 3"},
+  {"id": 2671, "lesson": 18, "page": 105, "y": 427, "form": "Tat•atsiks•kápakis.", "old": "Let me help.", "new": "I'm sorry.", "evidence": "layer", "why": "Useful Phrases, number 4"},
+  {"id": 2672, "lesson": 18, "page": 105, "y": 443, "form": "Kesku•rahúrihu'.", "old": "I'm sorry.", "new": "Forgive me.", "evidence": "layer", "why": "Useful Phrases, number 5"},
+
+  {"id": 2319, "lesson": 10, "page": 76, "y": 83, "lines": 2, "form": "het•katáku", "old": "sheriff, office of the law", "new": "sheriff, office of the law \"(badge) against the breast\"", "evidence": "layer",
+   "why": "the gloss runs over two lines; the second, the literal meaning in quotation marks, had been given to the next word"},
+  {"id": 2320, "lesson": 10, "page": 76, "y": 113, "form": "tsahriks•táhrurikukus", "old": "(badge) against the breast", "new": "police man, \"person catcher\"", "evidence": "layer",
+   "why": "Additional Words. The second line of the gloss above was taken for this word's meaning, and the six meanings from here on were each given to the word below; 'he is telling it' was lost"},
+  {"id": 2321, "lesson": 10, "page": 76, "y": 128, "form": "asku•ra•wákahu'", "old": "police man, 'person catcher'", "new": "judge, \"says it one time\"", "evidence": "layer", "why": "as row 2320"},
+  {"id": 2322, "lesson": 10, "page": 76, "y": 144, "form": "ti•kuwútiku'", "old": "judge, 'says it one time'", "new": "he is killing it", "evidence": "layer", "why": "as row 2320"},
+  {"id": 2323, "lesson": 10, "page": 76, "y": 159, "form": "tí•kuwutit", "old": "he is killing it", "new": "he (has) killed it", "evidence": "layer", "why": "as row 2320"},
+  {"id": 2324, "lesson": 10, "page": 76, "y": 174, "form": "ti•kawutiku'", "old": "he (has) killed it", "new": "he is killing them (here and there)", "evidence": "layer", "why": "as row 2320"},
+  {"id": 2325, "lesson": 10, "page": 76, "y": 189, "form": "ti•wáktiku'", "old": "he is killing them (here and there)", "new": "he is telling it", "evidence": "layer", "why": "as row 2320"},
+
+  {"id": 2256, "lesson": 9, "page": 71, "y": 95, "lines": 2, "form": "ti•hú•isat", "old": "he went home", "new": "it has sunk (beneath) a surface", "evidence": "layer",
+   "why": "Basic Words. 'he went home' is the English of the line above, ti•ká•isat, which had no row; this word's gloss runs over two lines, the second beside the breakdown +hu+"},
+  {"id": 2257, "lesson": 9, "page": 71, "y": 110, "form": "+hu+", "old": "it has sunk (beneath) a surface", "new": "a surface", "evidence": "layer",
+   "why": "the breakdown line under ti•hú•isat: the piece +hu+ stands beside the words 'a surface', the end of the gloss above"},
+
+  {"id": 2565, "lesson": 15, "page": 97, "y": 303, "form": "Hiri we ta•hu•tawí•rihu!", "old": "It's really windy'!", "new": "It's really windy!", "evidence": "seen",
+   "why": "no apostrophe after windy on the page; the text layer has one (a slip of the OCR)"},
+  {"id": 2856, "lesson": 20, "page": 114, "y": 108, "form": "Ahu', tsikstit tát•ku,", "old": "Yes, Fm fine,", "new": "Yes, I'm fine,", "evidence": "seen",
+   "why": "the OCR read I'm as Fm; the English stands on the line under the Pawnee"}
+ ],
+ "new_rows": [
+  {"lesson": 9, "page": 71, "y": 80, "context_type": "BASIC_WORDS", "form": "ti•ká•isat", "english": "he went home", "evidence": "layer",
+   "after_form": "ti•káisat",
+   "why": "a line of the Basic Words of lesson 9 that the extraction left out (it stands between ti•káisat and ti•hú•isat, and differs from the first by a raised dot and the place of the accent). The letters and the English are on one row of the text layer; the accent and the dots were read in the cut of 2026-11-15, one reading"}
+ ],
+ "entries": [
+  {"entry_id": "BB-tikuwtitiku-0083", "gloss_old": "judge, 'says it one time'", "gloss_new": "he is killing it", "class_old": "N", "class_new": null, "drop_tags": ["number"],
+   "why": "a Blue Book-only entry made from row 2322 when the row held the meaning of the word above it. The class N and the tag 'number' (from 'one time') were worked out from that meaning; with it gone the class is left empty, since the entry is a form of a verb and what the 93 Blue Book-only entries should be is open (project log, item 52)"}
+ ]
+}

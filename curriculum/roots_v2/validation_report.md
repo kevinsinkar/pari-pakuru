@@ -313,9 +313,9 @@ cb6add39416d2e1e  affixes.json
 043e2aac4f6dc608  construction_guide.md
 05c8be6a643afb90  coverage.json
 caf206c9eeacece6  decisions.json
-f5c9aabc10f05b5d  evidence.jsonl
+b5f0dd06fffb1d23  evidence.jsonl
 3a9c1aa90d3dfd37  learning_path.md
 b94353e580e3a9e4  review_queue.md
 5530c20427ef25c6  roots.json
-a908dd83792a3467  stats.json
+97bcbb4513bd54df  stats.json
 ```

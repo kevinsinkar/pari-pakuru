@@ -1221,3 +1221,177 @@ backup: OneDrive/pari_pakuru_backups/skiri_pawnee_backup_20261114_205956_lesson_
 
 == Neither taken nor left
   none
+
+---- a later run ----
+apply_lesson_page_reading — APPLY — 2026-11-15 11:00
+strips read: 911 of 911 (80 a second time); Pawnee words of the stored text in them: 1369
+changes by hand after a second look: 4 (already in place: 42); values set: 0
+titles taken from the title line: 0
+text of another section cut from the end of a last note: 0 lessons
+changes one reading settles: 0  {}
+   of them, the audit's reader read the same at that place: 0; no audit reading at that place: 0; the audit's crop there showed another word: 0
+rows of the Blue Book table to correct: 1
+values of the lessons table that change: 3; of extracted_data/lessons.json: 3
+differences left by decision: 21; neither taken nor left: 0
+
+written: 3 values of the lessons table, 1 rows of the Blue Book table, 1 values in extracted_data/blue_book_extracted.json, 3 in extracted_data/lessons.json
+backup: OneDrive/pari_pakuru_backups/skiri_pawnee_backup_20261115_110039_lesson_page_reading.db
+
+== 1. By hand, after a second look (lesson, where, strip: old -> new; why)
+  L1  grammar_notes/2/text         31.8.7             (hail) -> (haú)
+        the Skidi word for yes, printed in bold inside a line of English; the OCR made an English word of it, so the reading of 2026-11-14, which took the lines that are not plain English, passed over the line. cut on 2026-11-15 (second_02.json)
+  L15 grammar_notes/1/text         97.4.7             It's really windy'! -> It's really windy!
+        English: the page has no apostrophe after windy. cut on 2026-11-15 (second_02.json)
+  L20 grammar_notes/2/text         114.4.1, 114.5.0   (Tsikstit tat•pari' ,) Yes, Fm fine, (Pm doing fine) -> (Tsikstit tat•pari',) Yes, I'm fine, (I'm doing fine,)
+        English: the OCR read I'm as Fm and as Pm and dropped the comma before the bracket; no space stands before the comma of the Pawnee line. cut on 2026-11-15 (second_02.json)
+  L20 grammar_notes/2/text         114.9.0            Yes, we 're fine. -> Yes, we're fine.
+        English: one word on the page. cut on 2026-11-15 (second_02.json)
+
+== 2. Titles (lesson, stored -> the title line of the page; kind)
+  none
+
+== 3. Cut from the end of a lesson's last note (lesson, what, the text)
+  none
+
+== 4. From one reading (lesson, strip, where: old -> new; kind; what the audit's reader read at that place)
+
+== 5. Rows of the Blue Book table (id: old -> new; why)
+  #2874 kas•i•kika' -> kas•i•kika   (already so)
+        the row is the word list under the lullaby (page 121, line 121.8.2), which has no apostrophe. The audit's crop R0843 was cut at the lullaby's line, where the same letters stand with one
+  #2317 tuh•ra' -> tuh•rá'   (already so)
+        the row is the last line of the breakdown on page 75 (line 75.8.5): one reader, three looks, the last at 3.2 times the scan, sees an accent on the a. The audit's crop R0380 was cut at the dialogue line above, which has none
+  #2444 ti .ra wa•raruhat -> ti•rá wa•rar•uhat   (already so)
+        three readings agree on all but whether a raised dot or nothing stands between rá and wa; the OCR's space is kept there. Still on the audit's list for a person with the book
+  #2445 hiri .ra wa .raruhat -> hiri•rá wa•rar•uhat   (already so)
+        as row 2444
+  #2108 tat. kikat -> tat•kíkat   (already so)
+        line 58.4.6; no audit reading at that place
+  #2171 ti ra•kú pita -> i ra•kú pita   (already so)
+        the third line of the four on page 63, 'that sitting man yonder', begins with i (line 63.1.2, seen twice); the audit's crop for this row was cut at the first line
+  #2172 ti ra•arikí pita -> i ra•arikí pita   (already so)
+        the fourth line, 'that standing man yonder' (line 63.1.3, seen twice)
+  #2263 ti•káisat -> Ti•káisat.   (already so)
+        the answer in the dialogue on page 71 (line 71.5.2): a capital and a full stop, as the other dialogue rows have them
+  #2376 Suks-at. -> Suks•at.   (already so)
+        line 84.4.0: a raised dot, which the OCR read as a hyphen
+  #2496 kakI 'at -> kakí•'at   (already so)
+        line 92.5.4, seen twice
+  #2585 Kitske --'e ru '? -> Kitské [w]e ru'?   (already so)
+        line 99.1.1: a flaw in the scan covers the w; the sentence is the lesson's title and stands whole on page 98. On the audit's list for a person with the book
+  #2586 We ti -> We ti p[it]ku.   (already so)
+        line 99.1.3: a flaw in the scan covers the middle of the last word; page 98 lists we tí pitku 'it's two o'clock'. On the audit's list for a person with the book
+  #2866 ... pit-sikat ... -> ... pitsikat ...   (already so)
+        the word is broken at the end of a line (lines 118.2.11 and 118.2.12); the other broken words of the reading are stored joined
+  #2671 tat•atsiks•kápakis -> Tat•atsiks•kápakis.   (copies: 0 in bb_gap_triage, 1 in the extracted file)
+        the row is the fourth of the Useful Phrases of lesson 18 (page 105, line 105.7.7), printed with a capital and a full stop; the reading of 2026-11-14 has it so, and the cut of 2026-11-15 shows it again. The form the row held is that of the word list above it on the same page (row 2662, 'I'm sad (poor in spirit)')
+
+== Left as they are, by decision (strip, stored | read: why)
+  58.1.0    tas• | None: the word stands at the beginning of the next line (58.1.1), where it was read; the line-up placed it with the line before
+  58.1.1    None | tas•: see 58.1.0
+  75.9.2    None | i+u: the stored text has 'i +u': only the spacing of the plus sign differs
+  75.9.5    +has | None: an English word with a plus sign
+  75.9.6    None | i+u: as 75.9.2
+  79.1.3    tatuks•á•kawahtsu' | tatuks•á•ka-: the word is broken at the end of the line and stored joined since the dialogues were paired (scripts/pair_lesson_dialogues.py); the second half is on the next line (79.1.4: wahtsu'.), and page 103 prints Tatuks•á•kawahtsu'. as one word
+  88.3.0    Tskiri | TSKIRI: a heading: the table stores headings with a capital at the beginning of each word
+  88.3.0    Akitaru' | AKITARU': a heading
+  93.0.3    res•[..]sí•urúkat | res•[?]: a flaw in the scan covers about two letters; the stored text marks the place with [..]
+  93.0.4    None | [?]sí•urúkat: see 93.0.3
+  99.1.1    [w]e | [?]e: a flaw in the scan covers the w; the stored text has it in square brackets, from the same sentence on page 98
+  99.1.3    p[it]ku | p[?]ku: a flaw in the scan covers the middle of the word; the stored text has the letters of page 98 (we tí pitku) in square brackets
+  118.1.0   Hiri | HIRI: a heading
+  118.1.0   Ah•Ratukstak•Kitkeu | AH•RATUKSTAK•KITKEU: a heading
+  118.2.4   Wi•tikskawutik•usuku | Wi•tiks-: the word is broken at the end of the line and stored joined; the second half is on the next line (118.2.5: kawutik•usuku)
+  118.2.6   tikstarah•kawa•karuku | tikstarah•ka-: the word is broken at the end of the line and stored joined; the second half is on the next line (118.2.7: wa•karuku)
+  118.2.7   None | wa•karuku: the second half of the word broken on the line above
+  118.2.7   wi•tikstakas•karuk•usuku | wi•tiks-: the word is broken at the end of the line and stored joined; the second half is on the next line (118.2.8: takas•karuk•usuku)
+  118.2.11  pitsikat | pit-: the word is broken at the end of the line and stored joined; the second half is on the next line (118.2.12: sikat)
+  118.2.13  Tsahriks•pakuhtu | Tsahriks•pa-: the word is broken at the end of the line and stored joined; the second half is on the next line (118.2.14: kuhtu)
+  118.2.14  None | kuhtu: the second half of the word broken on the line above
+
+== Neither taken nor left
+  none
+
+---- a later run ----
+apply_lesson_page_reading — APPLY — 2026-11-15 11:06
+strips read: 911 of 911 (80 a second time); Pawnee words of the stored text in them: 1369
+changes by hand after a second look: 2 (already in place: 46); values set: 0
+titles taken from the title line: 0
+text of another section cut from the end of a last note: 0 lessons
+changes one reading settles: 0  {}
+   of them, the audit's reader read the same at that place: 0; no audit reading at that place: 0; the audit's crop there showed another word: 0
+rows of the Blue Book table to correct: 0
+values of the lessons table that change: 2; of extracted_data/lessons.json: 2
+differences left by decision: 21; neither taken nor left: 0
+
+written: 2 values of the lessons table, 0 rows of the Blue Book table, 0 values in extracted_data/blue_book_extracted.json, 2 in extracted_data/lessons.json
+backup: OneDrive/pari_pakuru_backups/skiri_pawnee_backup_20261115_110607_lesson_page_reading.db
+
+== 1. By hand, after a second look (lesson, where, strip: old -> new; why)
+  L4  grammar_notes/2/text         45.7.12, 45.7.13, 45.7.14 Ruru' . (SB) -> Ruru'. (SB)
+        spacing: the stored text had a space before the full stop; the text layer of the page has none (6. Ruru'. (SB)). Noticed on 2026-11-15 while the Useful Phrases were gathered
+  L20 grammar_notes/2/text         114.12.0, 114.12.1, 114.13.0 Pari' .. . I've been learning to speak Pawnee .. . -> Pari' ... I've been learning to speak Pawnee ...
+        spacing: three dots of omission after each line, which the OCR spaced unevenly; the next two lines of the same conversation are stored with three dots together
+
+== 2. Titles (lesson, stored -> the title line of the page; kind)
+  none
+
+== 3. Cut from the end of a lesson's last note (lesson, what, the text)
+  none
+
+== 4. From one reading (lesson, strip, where: old -> new; kind; what the audit's reader read at that place)
+
+== 5. Rows of the Blue Book table (id: old -> new; why)
+  #2874 kas•i•kika' -> kas•i•kika   (already so)
+        the row is the word list under the lullaby (page 121, line 121.8.2), which has no apostrophe. The audit's crop R0843 was cut at the lullaby's line, where the same letters stand with one
+  #2317 tuh•ra' -> tuh•rá'   (already so)
+        the row is the last line of the breakdown on page 75 (line 75.8.5): one reader, three looks, the last at 3.2 times the scan, sees an accent on the a. The audit's crop R0380 was cut at the dialogue line above, which has none
+  #2444 ti .ra wa•raruhat -> ti•rá wa•rar•uhat   (already so)
+        three readings agree on all but whether a raised dot or nothing stands between rá and wa; the OCR's space is kept there. Still on the audit's list for a person with the book
+  #2445 hiri .ra wa .raruhat -> hiri•rá wa•rar•uhat   (already so)
+        as row 2444
+  #2108 tat. kikat -> tat•kíkat   (already so)
+        line 58.4.6; no audit reading at that place
+  #2171 ti ra•kú pita -> i ra•kú pita   (already so)
+        the third line of the four on page 63, 'that sitting man yonder', begins with i (line 63.1.2, seen twice); the audit's crop for this row was cut at the first line
+  #2172 ti ra•arikí pita -> i ra•arikí pita   (already so)
+        the fourth line, 'that standing man yonder' (line 63.1.3, seen twice)
+  #2263 ti•káisat -> Ti•káisat.   (already so)
+        the answer in the dialogue on page 71 (line 71.5.2): a capital and a full stop, as the other dialogue rows have them
+  #2376 Suks-at. -> Suks•at.   (already so)
+        line 84.4.0: a raised dot, which the OCR read as a hyphen
+  #2496 kakI 'at -> kakí•'at   (already so)
+        line 92.5.4, seen twice
+  #2585 Kitske --'e ru '? -> Kitské [w]e ru'?   (already so)
+        line 99.1.1: a flaw in the scan covers the w; the sentence is the lesson's title and stands whole on page 98. On the audit's list for a person with the book
+  #2586 We ti -> We ti p[it]ku.   (already so)
+        line 99.1.3: a flaw in the scan covers the middle of the last word; page 98 lists we tí pitku 'it's two o'clock'. On the audit's list for a person with the book
+  #2866 ... pit-sikat ... -> ... pitsikat ...   (already so)
+        the word is broken at the end of a line (lines 118.2.11 and 118.2.12); the other broken words of the reading are stored joined
+  #2671 tat•atsiks•kápakis -> Tat•atsiks•kápakis.   (already so)
+        the row is the fourth of the Useful Phrases of lesson 18 (page 105, line 105.7.7), printed with a capital and a full stop; the reading of 2026-11-14 has it so, and the cut of 2026-11-15 shows it again. The form the row held is that of the word list above it on the same page (row 2662, 'I'm sad (poor in spirit)')
+
+== Left as they are, by decision (strip, stored | read: why)
+  58.1.0    tas• | None: the word stands at the beginning of the next line (58.1.1), where it was read; the line-up placed it with the line before
+  58.1.1    None | tas•: see 58.1.0
+  75.9.2    None | i+u: the stored text has 'i +u': only the spacing of the plus sign differs
+  75.9.5    +has | None: an English word with a plus sign
+  75.9.6    None | i+u: as 75.9.2
+  79.1.3    tatuks•á•kawahtsu' | tatuks•á•ka-: the word is broken at the end of the line and stored joined since the dialogues were paired (scripts/pair_lesson_dialogues.py); the second half is on the next line (79.1.4: wahtsu'.), and page 103 prints Tatuks•á•kawahtsu'. as one word
+  88.3.0    Tskiri | TSKIRI: a heading: the table stores headings with a capital at the beginning of each word
+  88.3.0    Akitaru' | AKITARU': a heading
+  93.0.3    res•[..]sí•urúkat | res•[?]: a flaw in the scan covers about two letters; the stored text marks the place with [..]
+  93.0.4    None | [?]sí•urúkat: see 93.0.3
+  99.1.1    [w]e | [?]e: a flaw in the scan covers the w; the stored text has it in square brackets, from the same sentence on page 98
+  99.1.3    p[it]ku | p[?]ku: a flaw in the scan covers the middle of the word; the stored text has the letters of page 98 (we tí pitku) in square brackets
+  118.1.0   Hiri | HIRI: a heading
+  118.1.0   Ah•Ratukstak•Kitkeu | AH•RATUKSTAK•KITKEU: a heading
+  118.2.4   Wi•tikskawutik•usuku | Wi•tiks-: the word is broken at the end of the line and stored joined; the second half is on the next line (118.2.5: kawutik•usuku)
+  118.2.6   tikstarah•kawa•karuku | tikstarah•ka-: the word is broken at the end of the line and stored joined; the second half is on the next line (118.2.7: wa•karuku)
+  118.2.7   None | wa•karuku: the second half of the word broken on the line above
+  118.2.7   wi•tikstakas•karuk•usuku | wi•tiks-: the word is broken at the end of the line and stored joined; the second half is on the next line (118.2.8: takas•karuk•usuku)
+  118.2.11  pitsikat | pit-: the word is broken at the end of the line and stored joined; the second half is on the next line (118.2.12: sikat)
+  118.2.13  Tsahriks•pakuhtu | Tsahriks•pa-: the word is broken at the end of the line and stored joined; the second half is on the next line (118.2.14: kuhtu)
+  118.2.14  None | kuhtu: the second half of the word broken on the line above
+
+== Neither taken nor left
+  none

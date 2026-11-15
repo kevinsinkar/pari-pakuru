@@ -1,0 +1,60 @@
+fix_bluebook_pairing — APPLY — 2026-11-15 11:02
+to do: 18; already done: 0; problems: 0
+
+  #2668 L18 p.105 Sutsiks•áhut.            Who's been busy?  ->  Hold this.   [layer]
+        Useful Phrases, number 1. 'Who's been busy?' is the English of the heading of the verb set that follows the five phrases (Také ratutsiks•á•wahri'?, row 2673); the extraction put it first and moved the five meanings down by one, so that 'Forgive me.' was lost
+        copies: 1 in bb_gap_triage, 1 in the extraction file
+  #2669 L18 p.105 Keskuruh•ra•wíat.        Hold this.  ->  Help me.   [layer]
+        Useful Phrases, number 2
+        copies: 1 in bb_gap_triage, 1 in the extraction file
+  #2670 L18 p.105 Ketuh•rá•wiat.           Help me.  ->  Let me help.   [layer]
+        Useful Phrases, number 3
+        copies: 1 in bb_gap_triage, 1 in the extraction file
+  #2671 L18 p.105 Tat•atsiks•kápakis.      Let me help.  ->  I'm sorry.   [layer]
+        Useful Phrases, number 4
+        copies: 0 in bb_gap_triage, 1 in the extraction file
+  #2672 L18 p.105 Kesku•rahúrihu'.         I'm sorry.  ->  Forgive me.   [layer]
+        Useful Phrases, number 5
+        copies: 1 in bb_gap_triage, 1 in the extraction file
+  #2319 L10 p.76 het•katáku               sheriff, office of the law  ->  sheriff, office of the law "(badge) against the breast"   [layer]
+        the gloss runs over two lines; the second, the literal meaning in quotation marks, had been given to the next word
+        copies: 1 in bb_gap_triage, 1 in the extraction file
+  #2320 L10 p.76 tsahriks•táhrurikukus    (badge) against the breast  ->  police man, "person catcher"   [layer]
+        Additional Words. The second line of the gloss above was taken for this word's meaning, and the six meanings from here on were each given to the word below; 'he is telling it' was lost
+        copies: 0 in bb_gap_triage, 1 in the extraction file
+  #2321 L10 p.76 asku•ra•wákahu'          police man, 'person catcher'  ->  judge, "says it one time"   [layer]
+        as row 2320
+        copies: 0 in bb_gap_triage, 1 in the extraction file
+  #2322 L10 p.76 ti•kuwútiku'             judge, 'says it one time'  ->  he is killing it   [layer]
+        as row 2320
+        copies: 1 in bb_gap_triage, 1 in the extraction file
+  #2323 L10 p.76 tí•kuwutit               he is killing it  ->  he (has) killed it   [layer]
+        as row 2320
+        copies: 1 in bb_gap_triage, 1 in the extraction file
+  #2324 L10 p.76 ti•kawutiku'             he (has) killed it  ->  he is killing them (here and there)   [layer]
+        as row 2320
+        copies: 1 in bb_gap_triage, 1 in the extraction file
+  #2325 L10 p.76 ti•wáktiku'              he is killing them (here and there)  ->  he is telling it   [layer]
+        as row 2320
+        copies: 1 in bb_gap_triage, 1 in the extraction file
+  #2256 L9 p.71 ti•hú•isat               he went home  ->  it has sunk (beneath) a surface   [layer]
+        Basic Words. 'he went home' is the English of the line above, ti•ká•isat, which had no row; this word's gloss runs over two lines, the second beside the breakdown +hu+
+        copies: 1 in bb_gap_triage, 1 in the extraction file
+  #2257 L9 p.71 +hu+                     it has sunk (beneath) a surface  ->  a surface   [layer]
+        the breakdown line under ti•hú•isat: the piece +hu+ stands beside the words 'a surface', the end of the gloss above
+        copies: 0 in bb_gap_triage, 0 in the extraction file
+  #2565 L15 p.97 Hiri we ta•hu•tawí•rihu! It's really windy'!  ->  It's really windy!   [seen]
+        no apostrophe after windy on the page; the text layer has one (a slip of the OCR)
+        copies: 1 in bb_gap_triage, 1 in the extraction file
+  #2856 L20 p.114 Ahu', tsikstit tát•ku,   Yes, Fm fine,  ->  Yes, I'm fine,   [seen]
+        the OCR read I'm as Fm; the English stands on the line under the Pawnee
+        copies: 0 in bb_gap_triage, 1 in the extraction file
+  new row: L9 p.71 BASIC_WORDS  ti•ká•isat = he went home
+        a line of the Basic Words of lesson 9 that the extraction left out (it stands between ti•káisat and ti•hú•isat, and differs from the first by a raised dot and the place of the accent). The letters and the English are on one row of the text layer; the accent and the dots were read in the cut of 2026-11-15, one reading
+  entry BB-tikuwtitiku-0083: gloss "judge, 'says it one time'" -> 'he is killing it'; class 'N' -> None; tags dropped: number
+        a Blue Book-only entry made from row 2322 when the row held the meaning of the word above it. The class N and the tag 'number' (from 'one time') were worked out from that meaning; with it gone the class is left empty, since the entry is a form of a verb and what the 93 Blue Book-only entries should be is open (project log, item 52)
+
+problems:
+  none
+
+backup: OneDrive/pari_pakuru_backups/skiri_pawnee_backup_20261115_110242_bluebook_pairing.db

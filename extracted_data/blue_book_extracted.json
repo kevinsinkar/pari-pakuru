@@ -4015,9 +4015,20 @@
     "page_number": 71
   },
   {
-    "skiri_form": "ti•hú•isat",
+    "skiri_form": "ti•ká•isat",
     "bb_pronunciation": null,
     "english_translation": "he went home",
+    "context_type": "BASIC_WORDS",
+    "dialect_note": null,
+    "full_sentence_pawnee": null,
+    "full_sentence_english": null,
+    "lesson_number": 9,
+    "page_number": 71
+  },
+  {
+    "skiri_form": "ti•hú•isat",
+    "bb_pronunciation": null,
+    "english_translation": "it has sunk (beneath) a surface",
     "context_type": "BASIC_WORDS",
     "dialect_note": null,
     "full_sentence_pawnee": null,
@@ -4710,7 +4721,7 @@
   {
     "skiri_form": "het•katáku",
     "bb_pronunciation": null,
-    "english_translation": "sheriff, office of the law",
+    "english_translation": "sheriff, office of the law \"(badge) against the breast\"",
     "context_type": "ADDITIONAL_WORDS",
     "dialect_note": null,
     "full_sentence_pawnee": null,
@@ -4721,7 +4732,7 @@
   {
     "skiri_form": "tsahriks•táhrurikukus",
     "bb_pronunciation": null,
-    "english_translation": "(badge) against the breast",
+    "english_translation": "police man, \"person catcher\"",
     "context_type": "ADDITIONAL_WORDS",
     "dialect_note": null,
     "full_sentence_pawnee": null,
@@ -4732,7 +4743,7 @@
   {
     "skiri_form": "asku•ra•wákahu'",
     "bb_pronunciation": null,
-    "english_translation": "police man, 'person catcher'",
+    "english_translation": "judge, \"says it one time\"",
     "context_type": "ADDITIONAL_WORDS",
     "dialect_note": null,
     "full_sentence_pawnee": null,
@@ -4743,7 +4754,7 @@
   {
     "skiri_form": "ti•kuwútiku'",
     "bb_pronunciation": null,
-    "english_translation": "judge, 'says it one time'",
+    "english_translation": "he is killing it",
     "context_type": "ADDITIONAL_WORDS",
     "dialect_note": null,
     "full_sentence_pawnee": null,
@@ -4754,7 +4765,7 @@
   {
     "skiri_form": "tí•kuwutit",
     "bb_pronunciation": null,
-    "english_translation": "he is killing it",
+    "english_translation": "he (has) killed it",
     "context_type": "ADDITIONAL_WORDS",
     "dialect_note": null,
     "full_sentence_pawnee": null,
@@ -4765,7 +4776,7 @@
   {
     "skiri_form": "ti•kawutiku'",
     "bb_pronunciation": null,
-    "english_translation": "he (has) killed it",
+    "english_translation": "he is killing them (here and there)",
     "context_type": "ADDITIONAL_WORDS",
     "dialect_note": null,
     "full_sentence_pawnee": null,
@@ -4776,7 +4787,7 @@
   {
     "skiri_form": "ti•wáktiku'",
     "bb_pronunciation": null,
-    "english_translation": "he is killing them (here and there)",
+    "english_translation": "he is telling it",
     "context_type": "ADDITIONAL_WORDS",
     "dialect_note": null,
     "full_sentence_pawnee": null,
@@ -7416,7 +7427,7 @@
   {
     "skiri_form": "Hiri we ta•hu•tawí•rihu!",
     "bb_pronunciation": null,
-    "english_translation": "It's really windy'!",
+    "english_translation": "It's really windy!",
     "context_type": "PHRASE",
     "dialect_note": null,
     "full_sentence_pawnee": "Hiri we ta•hu•tawí•rihu!",
@@ -8549,7 +8560,7 @@
   {
     "skiri_form": "Sutsiks•áhut.",
     "bb_pronunciation": null,
-    "english_translation": "Who's been busy?",
+    "english_translation": "Hold this.",
     "context_type": "PHRASE",
     "dialect_note": null,
     "full_sentence_pawnee": null,
@@ -8560,7 +8571,7 @@
   {
     "skiri_form": "Keskuruh•ra•wíat.",
     "bb_pronunciation": null,
-    "english_translation": "Hold this.",
+    "english_translation": "Help me.",
     "context_type": "PHRASE",
     "dialect_note": null,
     "full_sentence_pawnee": null,
@@ -8571,7 +8582,7 @@
   {
     "skiri_form": "Ketuh•rá•wiat.",
     "bb_pronunciation": null,
-    "english_translation": "Help me.",
+    "english_translation": "Let me help.",
     "context_type": "PHRASE",
     "dialect_note": null,
     "full_sentence_pawnee": null,
@@ -8580,9 +8591,9 @@
     "page_number": 105
   },
   {
-    "skiri_form": "tat•atsiks•kápakis",
+    "skiri_form": "Tat•atsiks•kápakis.",
     "bb_pronunciation": null,
-    "english_translation": "Let me help.",
+    "english_translation": "I'm sorry.",
     "context_type": "PHRASE",
     "dialect_note": null,
     "full_sentence_pawnee": null,
@@ -8593,7 +8604,7 @@
   {
     "skiri_form": "Kesku•rahúrihu'.",
     "bb_pronunciation": null,
-    "english_translation": "I'm sorry.",
+    "english_translation": "Forgive me.",
     "context_type": "PHRASE",
     "dialect_note": null,
     "full_sentence_pawnee": null,
@@ -10617,7 +10628,7 @@
   {
     "skiri_form": "Ahu', tsikstit tát•ku,",
     "bb_pronunciation": null,
-    "english_translation": "Yes, Fm fine,",
+    "english_translation": "Yes, I'm fine,",
     "context_type": "PHRASE",
     "dialect_note": null,
     "full_sentence_pawnee": "Ahu', tsikstit tát•ku,",

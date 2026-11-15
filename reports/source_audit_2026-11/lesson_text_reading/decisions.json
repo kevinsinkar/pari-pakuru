@@ -1,5 +1,5 @@
 {
- "note": "Decisions made by hand on 2026-11-14 after the second look at the page (second_01.json). 'change': a stretch of a lesson's stored text and what the page has there; each stretch stands once in its text. 'place': a stored line that the line-up puts on another line of the page with the same words, and its own line. 'table_rows': rows of the Blue Book table that are lines of the lessons and held the old reading, because the audit's crop was cut at another line or the audit left the form open; their copies in bb_gap_triage and extracted_data/blue_book_extracted.json are found by form, lesson and English. 'leave': a difference the comparison keeps finding and that is left, with the reason. Everything else is taken by scripts/apply_lesson_page_reading.py from the comparison itself.",
+ "note": "Decisions made by hand on 2026-11-14 after the second look at the page (second_01.json). 'change': a stretch of a lesson's stored text and what the page has there; each stretch stands once in its text. 'place': a stored line that the line-up puts on another line of the page with the same words, and its own line. 'table_rows': rows of the Blue Book table that are lines of the lessons and held the old reading, because the audit's crop was cut at another line or the audit left the form open; their copies in bb_gap_triage and extracted_data/blue_book_extracted.json are found by form, lesson and English. 'leave': a difference the comparison keeps finding and that is left, with the reason. Everything else is taken by scripts/apply_lesson_page_reading.py from the comparison itself. Added on 2026-11-15, after a cut of six places made while the phrases were gathered (second_02.json): four changes to the English of the notes and row 2671.",
  "change": [
   {
    "lesson": 2,
@@ -514,6 +514,78 @@
    "old": "kas•i•kika' you will drink",
    "new": "kas•i•kika you will drink",
    "why": "the word list under the lullaby has no apostrophe (three looks, the last at 3.2 times the scan); the lullaby's own line has one. The audit's crop for this row (R0843) was cut at the lullaby's line: see bluebook_crops_at_another_line.json"
+  },
+  {
+   "lesson": 1,
+   "where": [
+    "grammar_notes",
+    2,
+    "text"
+   ],
+   "strip": "31.8.7",
+   "old": "(hail)",
+   "new": "(haú)",
+   "why": "the Skidi word for yes, printed in bold inside a line of English; the OCR made an English word of it, so the reading of 2026-11-14, which took the lines that are not plain English, passed over the line. cut on 2026-11-15 (second_02.json)"
+  },
+  {
+   "lesson": 15,
+   "where": [
+    "grammar_notes",
+    1,
+    "text"
+   ],
+   "strip": "97.4.7",
+   "old": "It's really windy'!",
+   "new": "It's really windy!",
+   "why": "English: the page has no apostrophe after windy. cut on 2026-11-15 (second_02.json)"
+  },
+  {
+   "lesson": 20,
+   "where": [
+    "grammar_notes",
+    2,
+    "text"
+   ],
+   "strip": "114.4.1, 114.5.0",
+   "old": "(Tsikstit tat•pari' ,) Yes, Fm fine, (Pm doing fine)",
+   "new": "(Tsikstit tat•pari',) Yes, I'm fine, (I'm doing fine,)",
+   "why": "English: the OCR read I'm as Fm and as Pm and dropped the comma before the bracket; no space stands before the comma of the Pawnee line. cut on 2026-11-15 (second_02.json)"
+  },
+  {
+   "lesson": 20,
+   "where": [
+    "grammar_notes",
+    2,
+    "text"
+   ],
+   "strip": "114.9.0",
+   "old": "Yes, we 're fine.",
+   "new": "Yes, we're fine.",
+   "why": "English: one word on the page. cut on 2026-11-15 (second_02.json)"
+  },
+  {
+   "lesson": 4,
+   "where": [
+    "grammar_notes",
+    2,
+    "text"
+   ],
+   "strip": "45.7.12, 45.7.13, 45.7.14",
+   "old": "Ruru' . (SB)",
+   "new": "Ruru'. (SB)",
+   "why": "spacing: the stored text had a space before the full stop; the text layer of the page has none (6. Ruru'. (SB)). Noticed on 2026-11-15 while the Useful Phrases were gathered"
+  },
+  {
+   "lesson": 20,
+   "where": [
+    "grammar_notes",
+    2,
+    "text"
+   ],
+   "strip": "114.12.0, 114.12.1, 114.13.0",
+   "old": "Pari' .. . I've been learning to speak Pawnee .. .",
+   "new": "Pari' ... I've been learning to speak Pawnee ...",
+   "why": "spacing: three dots of omission after each line, which the OCR spaced unevenly; the next two lines of the same conversation are stored with three dots together"
   }
  ],
  "set": [
@@ -605,6 +677,12 @@
     "pitsikat"
    ],
    "why": "the word is broken at the end of a line (lines 118.2.11 and 118.2.12); the other broken words of the reading are stored joined"
+  },
+  {
+   "id": 2671,
+   "old": "tat•atsiks•kápakis",
+   "new": "Tat•atsiks•kápakis.",
+   "why": "the row is the fourth of the Useful Phrases of lesson 18 (page 105, line 105.7.7), printed with a capital and a full stop; the reading of 2026-11-14 has it so, and the cut of 2026-11-15 shows it again. The form the row held is that of the word list above it on the same page (row 2662, 'I'm sad (poor in spirit)')"
   }
  ],
  "audit_pairs_withdrawn": [

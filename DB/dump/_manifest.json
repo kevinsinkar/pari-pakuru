@@ -2,7 +2,7 @@
  "tables": {
   "lexical_entries": {
    "rows": 4337,
-   "sha256": "b6dbb225d622eb4bed7a00b26ce81d6b9c37bfb89ebd278f415e0cae66336fcf"
+   "sha256": "27332f4e51ab9ff934a41bea5d8c8bca6675b20fc78bcabaf5a93d858d4316f0"
   },
   "paradigmatic_forms": {
    "rows": 9559,
@@ -37,12 +37,12 @@
    "sha256": "76987eda6e62c203c3f93d7668e9d164d911ca7a3de46a2de1431bee966044a3"
   },
   "semantic_tags": {
-   "rows": 4499,
-   "sha256": "6dac83cd0c7659a5cd236b492f84da822c64ff6d6554250442a9e40a79fcb28f"
+   "rows": 4498,
+   "sha256": "d46d028118ebdde33bd59f359ec87f1fedfe79dead7ed66249c27d4b89987e57"
   },
   "blue_book_attestations": {
-   "rows": 1026,
-   "sha256": "53e14161d64bc485d59abff928930f194ba7b6354ea543f01b59e4cf4ee8fd69"
+   "rows": 1027,
+   "sha256": "59e8f6ea923c394794b0644958fedc09f10828a8623f1322b207148bf09e6082"
   },
   "sound_change_rules": {
    "rows": 24,
@@ -66,7 +66,7 @@
   },
   "bb_gap_triage": {
    "rows": 516,
-   "sha256": "5afd5a88bfae970ec446481e9ca98d3019f14f82eedf3d19d0652c64d284b443"
+   "sha256": "719cf8fb552e80b637d02e5ea11fd38b253aebce3b1547cf8e30514835f9dea4"
   },
   "function_words": {
    "rows": 406,
@@ -78,11 +78,11 @@
   },
   "glosses": {
    "rows": 5504,
-   "sha256": "9127fb7fe21bf24b3a90db7fd660cd9e5f878e8f272d53125a372f7197c1e039"
+   "sha256": "354735fdb3ab861b1249bb9665e8ae04f56d474b8110832d7ca451b1f8aa1ca5"
   },
   "lessons": {
    "rows": 20,
-   "sha256": "9787af3f33cc46346337541b6deb4629627c9c02bed59ee300f3ec0f817b5b73"
+   "sha256": "1b9c00291d210a9e27b6c10713144d2facc5eb3ca584f564091abca4c989674a"
   }
  },
  "left_out": [

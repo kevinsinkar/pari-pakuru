@@ -1,0 +1,9 @@
+{
+ "sheets": [
+  "pairing_01.png, pairing_02.png (cut 2026-11-15 from pages 31, 71, 76, 97, 105 and 114; not kept)"
+ ],
+ "note": "Six places looked at on 2026-11-15 by the session that gathered the lessons' Useful Phrases, after the text layer's rows showed that the English stored beside some Blue Book words belongs to the row above or below. One line of lesson 1 holds a Pawnee word that the OCR had turned into an English one ('hail' for haú); it is read here for the first time. What the other five places showed is in decisions.json (the English of lessons 15 and 20; row 2671) and in reports/source_audit_2026-11/bluebook_pairing_fixes.json (the rows of pages 71, 76 and 105).",
+ "read": {
+  "31.8.7": "haú"
+ }
+}

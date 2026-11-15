@@ -246,8 +246,19 @@ def corrected_since():
     return {r["id"]: (r.get("old"), r.get("new"), r.get("replace")) for r in load_json(decisions).get("table_rows", [])}
 
 
-def blue_book_sentences(conn, then=None):
-    """then: corrected_since(), to build the set as it was when the review was made."""
+def english_corrected_since():
+    """Rows whose English was corrected after the sets were made: id -> (English then, English now). On 2026-11-15
+    sixteen rows were given the English of their own row of the page (scripts/fix_bluebook_pairing.py; the list is
+    reports/source_audit_2026-11/bluebook_pairing_fixes.json)."""
+    fixes = ROOT / "reports" / "source_audit_2026-11" / "bluebook_pairing_fixes.json"
+    if not fixes.exists():
+        return {}
+    return {r["id"]: (r["old"], r["new"]) for r in load_json(fixes).get("english", [])}
+
+
+def blue_book_sentences(conn, then=None, english_then=None):
+    """then: corrected_since(), english_then: english_corrected_since(), to build the set as it was when the review
+    was made."""
     rows = []
     seen = set()
     for r in conn.execute("""select id, bb_skiri_form, bb_english, context_type, lesson_number, page_number
@@ -261,7 +272,10 @@ def blue_book_sentences(conn, then=None):
         if key in seen:
             continue
         seen.add(key)
-        rows.append({"id": r["id"], "printed": key, "english": r["bb_english"], "context": r["context_type"],
+        english = r["bb_english"]
+        if english_then and r["id"] in english_then and english == english_then[r["id"]][1]:
+            english = english_then[r["id"]][0]
+        rows.append({"id": r["id"], "printed": key, "english": english, "context": r["context_type"],
                      "lesson": r["lesson_number"], "pdf_page": r["page_number"]})
     return rows
 
@@ -326,15 +340,18 @@ def main():
             note = "as recorded" if same else "DIFFERS from the manifest"
             if not same and name == "blue_book_sentences":
                 then = corrected_since()
+                english_then = english_corrected_since()
                 conn = connect()
                 h = hashlib.sha256()
-                for row in blue_book_sentences(conn, then):
+                for row in blue_book_sentences(conn, then, english_then):
                     h.update((json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n").encode("utf-8"))
                 conn.close()
                 if h.hexdigest() == manifest["sets"][name]["sha256"]:
                     same = True
                     note = ("as recorded, once the rows corrected from the page since the review are put back "
-                            "(%d rows of the table; reports/source_audit_2026-11/lesson_text_reading/decisions.json)" % len(then))
+                            "(%d forms: reports/source_audit_2026-11/lesson_text_reading/decisions.json; "
+                            "%d English glosses: reports/source_audit_2026-11/bluebook_pairing_fixes.json)"
+                            % (len(then), len(english_then)))
             bad += not same
             out("%-22s %5d items  %s" % (name, len(made[name]), note))
         out("all test sets are as recorded" if not bad else "%d test set(s) differ: the sources changed since the sets were made" % bad)
