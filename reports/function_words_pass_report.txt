@@ -1,0 +1,50 @@
+fix_function_words — APPLY — 2026-11-14 20:09
+bb_function_words: 63 rows; to correct 22, to delete 1
+function_words, rows from the Blue Book: 59; to correct 10, to delete 8
+
+written. backup: OneDrive/pari_pakuru_backups/skiri_pawnee_backup_20261114_200934_function_words.db
+
+== bb_function_words (row: word -> word as the phrase prints it; why)
+  148  tiʔ          -> tí             the word of its phrase; the phrase prints it without the glottal stop
+  156  Tiku         -> (deleted)      its letters stand in Tikú'tskipi., but not as a word or a part the book sets off
+  165  Wfs          -> Wís            the OCR read Wfs here; the audit reads Wís (Wfs kutsu'! -> Wís kutsu'!)
+  169  Niru         -> Kíru           the OCR read Niru here; the audit reads Kíru (Niru ruks•ku? -> Kíru ruks•ku?)
+  176  Kirti        -> Kirú           the OCR read Kirti here; the audit reads Kirú (Kirti ra•'at rikutski? -> Kirú ra•'at rikutski?)
+  181  kirike       -> kiriké         the word of its phrase, as printed
+  183  Ilanʔ        -> Háu'           the OCR read Ilan' here; the audit reads Háu' (Ilan', tiku•ratsaus. -> Háu', tikú•ratsaus.)
+  187  tiku         -> tikú•          a part of a word of its phrase, as the book sets it off
+  191  kiru         -> KIRU           the word of its phrase, as printed
+  192  kiru         -> Kiru           the word of its phrase, as printed
+  193  kiru         -> Kiru           the word of its phrase, as printed
+  196  tiʔ          -> Tí•            a part of a word of its phrase, as the book sets it off
+  202  kitu         -> Kitú           the word of its phrase, as printed
+  203  kitu         -> Kitú           the word of its phrase, as printed
+  208  witi         -> Wití           the word of its phrase, as printed
+  213  hiri         -> Hiri           the word of its phrase, as printed
+  221  kirti        -> Kirú           the OCR read Kirti here; the audit reads Kirú (Kirti rira•awi•u tasih•ka•isa'? -> Kirú rira•awi•u tasih•ká•isa'?)
+  246  kirti        -> Kirú           the OCR read Kirti here; the audit reads Kirú (Kirti rira•awiu' tasutsiks•a .wahri'? -> Kirú rira•awiu' tasutsiks•á•wahri'?)
+  252  rariksisu    -> Rariksisu      the word of its phrase, as printed
+  261  Kiru         -> Kirú           the word of its phrase, as printed
+  264  Rahesa       -> Rahesa'        the word of its phrase; the phrase prints it with the glottal stop
+  281  tireku       -> tireku•        a part of a word of its phrase, as the book sets it off
+  287  kuh          -> kuh•           a part of a word of its phrase, as the book sets it off
+
+== function_words, rows from the Blue Book (row: headword -> headword; why)
+  358  .a           -> a            the leading dot was the OCR's reading of the bullet
+  359  .aʔ          -> (deleted)    the same as the row aʔ once corrected
+  360  .hat         -> hat          the leading dot was the OCR's reading of the bullet
+  361  .hiriʔ       -> hiriʔ        the leading dot was the OCR's reading of the bullet
+  362  .ista        -> ista         the leading dot was the OCR's reading of the bullet
+  363  .ra          -> (deleted)    the same as the row ra once corrected
+  364  .uka         -> uka          the leading dot was the OCR's reading of the bullet
+  365  .ukah        -> ukah         the leading dot was the OCR's reading of the bullet
+  374  hti          -> hu           the OCR's reading in rahtiritat ta hti .tuhtu'; the audit reads rahúritat ta hú•tuhtu'
+  385  niru         -> (deleted)    the same as the row kiru once corrected
+  386  or           -> (deleted)    the English word between two forms the book lists (ar or ah; or kuh)
+  387  pihkawf      -> pihkawi      the OCR's reading in Suks•at pihkawf .hiri'.; the audit reads Suks•at pihkawí•hiri'.
+  390  rd           -> (deleted)    no form of the Blue Book table has it as a word or a part
+  394  sihukstarti  -> (deleted)    no form of the Blue Book table has it as a word or a part
+  402  t            -> (deleted)    no form of the Blue Book table has it as a word or a part
+  411  wfs          -> wis          its word in bb_function_words was corrected from the scan
+  414  ʔhr          -> (deleted)    no form of the Blue Book table has it as a word or a part
+  415  rahesa       -> rahesaʔ      its word in bb_function_words was corrected from the scan

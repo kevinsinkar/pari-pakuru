@@ -18,11 +18,20 @@ what the audit already established. It reads nothing new and makes no form.
    Where only an accent, a capital or the punctuation at the end differs, nothing is changed: the OCR
    dropped every accent, the audit read the form at one place, and the same
    letters may stand elsewhere on the page without the accent. Those places
-   are counted and listed; they need the page.
+   are counted and listed; they need the page. The page was read on
+   2026-11-14, line by line: scripts/apply_lesson_page_reading.py. Of the
+   196 places listed here then, 173 now agree with the audit's reading; at
+   10 the page has the form without the accent at that place (asaki in the
+   dialogue of lesson 8, asáki in its word list), and 13 differ only in the
+   punctuation of the sentence or a plus sign.
 2. Titles. The title of a lesson becomes the Blue Book table's reading of
    the title line, where the table has one: a row of that lesson, on the
    lesson's first page, in capitals, whose English is the lesson's English
    title. Titles without such a row are left and listed.
+   Since 2026-11-14 all twenty titles are the title lines as read from the
+   page (apply_lesson_page_reading.py). This script still checks that a
+   title holds the table's reading where there is one; a title of two lines
+   (lesson 20) holds more than the row of its second line.
 3. extracted_data/lessons.json is written as a copy of the table.
 
 Usage:
@@ -93,7 +102,19 @@ def audit_pairs():
             new = step[new]
         if new != old:
             pairs[old] = (new, pages[old])
+    for w in withdrawn_pairs():
+        if pairs.get(w["old"], (None,))[0] == w["new"]:
+            del pairs[w["old"]]
     return pairs
+
+
+def withdrawn_pairs():
+    """Corrections of the audit that the reading of the lessons' pages withdrew (2026-11-14): the audit's crop
+    had been cut at another line than the row's own. reports/source_audit_2026-11/lesson_text_reading/decisions.json"""
+    decisions = AUDIT_REPORT.parent / "lesson_text_reading" / "decisions.json"
+    if not decisions.exists():
+        return []
+    return json.loads(decisions.read_text(encoding="utf-8")).get("audit_pairs_withdrawn", [])
 
 
 def stands_alone(text, start, end):
@@ -196,7 +217,7 @@ def plan(conn):
         reading = title_reading(conn, number, p_start, e_title)
         if reading is None:
             no_reading.append((number, s_title))
-        elif reading != s_title:
+        elif reading not in (s_title or ""):       # a title of two lines holds more than the row of one of them
             titles.append((number, s_title, reading))
             row["skiri_title"] = reading
         after[number] = row
@@ -213,6 +234,24 @@ def file_differences(after):
             if lesson.get(key) != row[key]:
                 diffs.append((lesson["lesson_number"], key))
     return data, diffs
+
+
+def write_json_like(path, data):
+    """Write a JSON file the way it is written now: its indentation, its line endings, its last newline."""
+    raw = path.read_text(encoding="utf-8")
+    indent = 2 if raw.startswith(("{\n  ", "[\n  ")) else 1 if raw.startswith(("{\n ", "[\n ")) else None
+    ending = "\r\n" if b"\r\n" in path.read_bytes() else "\n"
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=indent) + ("\n" if raw.endswith("\n") else ""),
+                    encoding="utf-8", newline=ending)
+
+
+def write_copy(data, after):
+    """extracted_data/lessons.json with the table's values (after: lesson -> the row)."""
+    for lesson in data:
+        row = after[lesson["lesson_number"]]
+        for key in COPIED:
+            lesson[key] = row[key]
+    write_json_like(LESSONS_JSON, data)
 
 
 def main():
@@ -243,9 +282,10 @@ def main():
             "punctuation stands in the text; %d titles are the table's reading of the title line, %d have no "
             "reading; extracted_data/lessons.json is a copy of the table"
             % (len(damage), 20 - len(no_reading), len(no_reading)))
-        out("left on purpose: %d places where the audit's reading differs only by an accent or a capital, and %d "
-            "where an old reading stands on a page the audit did not read it on (the page decides; see the "
-            "script's head)" % (len(accent_only), len(elsewhere)))
+        out("not this script's business: %d places where the audit read a form with an accent or a capital at one "
+            "place and the same letters stand in the text without it, and %d where an old reading stands on a page "
+            "the audit did not read it on. The page decides those, and it was read on 2026-11-14: "
+            "scripts/apply_lesson_page_reading.py --check" % (len(accent_only), len(elsewhere)))
         return 0
 
     header = ["fix_lesson_text_ocr — %s — %s" % ("APPLY" if args.apply else "dry run", dt.datetime.now().strftime("%Y-%m-%d %H:%M")),
@@ -290,15 +330,7 @@ def main():
     conn.commit()
     conn.close()
     if diffs:
-        raw = LESSONS_JSON.read_text(encoding="utf-8")
-        for lesson in data:
-            row = after[lesson["lesson_number"]]
-            for key in COPIED:
-                lesson[key] = row[key]
-        indent = 2 if raw.startswith(("{\n  ", "[\n  ")) else 1 if raw.startswith(("{\n ", "[\n ")) else None
-        ending = "\r\n" if b"\r\n" in LESSONS_JSON.read_bytes() else "\n"      # the file keeps its line endings
-        LESSONS_JSON.write_text(json.dumps(data, ensure_ascii=False, indent=indent) + ("\n" if raw.endswith("\n") else ""),
-                                encoding="utf-8", newline=ending)
+        write_copy(data, after)
     subprocess.run([sys.executable, str(ROOT / "scripts" / "db_dump.py"), "--write"], cwd=str(ROOT), check=False,
                    stdout=subprocess.DEVNULL)
     header += ["", "written: %d places in %d lessons, %d titles, %d values in extracted_data/lessons.json" % (

@@ -1,0 +1,554 @@
+{
+ "strips": 911,
+ "read": 911,
+ "read_twice": 79,
+ "not_read": [],
+ "stored_words_not_english_in_strips_read": 1369,
+ "tally": {
+  "stored, not in the reading": 2,
+  "on the page, not in the stored text": 6,
+  "capitals differ": 4,
+  "reader unsure": 3,
+  "letters differ": 5,
+  "title: same": 20
+ },
+ "titles": [
+  {
+   "lesson": 1,
+   "strip": "T1",
+   "stored": "KIRIKÉ RU'?",
+   "read": "KIRIKÉ RU'?",
+   "kind": "same",
+   "read_twice": false
+  },
+  {
+   "lesson": 2,
+   "strip": "T2",
+   "stored": "KIRIKÉ RA•TARAWIS?",
+   "read": "KIRIKÉ RA•TARAWIS?",
+   "kind": "same",
+   "read_twice": false
+  },
+  {
+   "lesson": 3,
+   "strip": "T3",
+   "stored": "KIRIKÉ RUT•U'?",
+   "read": "KIRIKÉ RUT•U'?",
+   "kind": "same",
+   "read_twice": false
+  },
+  {
+   "lesson": 4,
+   "strip": "T4",
+   "stored": "KIRIKÉ RAS•TA?",
+   "read": "KIRIKÉ RAS•TA?",
+   "kind": "same",
+   "read_twice": false
+  },
+  {
+   "lesson": 5,
+   "strip": "T5",
+   "stored": "TARÍKTAU'",
+   "read": "TARÍKTAU'",
+   "kind": "same",
+   "read_twice": false
+  },
+  {
+   "lesson": 6,
+   "strip": "T6",
+   "stored": "TSAHRIKS",
+   "read": "TSAHRIKS",
+   "kind": "same",
+   "read_twice": true
+  },
+  {
+   "lesson": 7,
+   "strip": "T7",
+   "stored": "TAKÉ RU'?",
+   "read": "TAKÉ RU'?",
+   "kind": "same",
+   "read_twice": false
+  },
+  {
+   "lesson": 8,
+   "strip": "T8",
+   "stored": "KIRÚ RA•KU?",
+   "read": "KIRÚ RA•KU?",
+   "kind": "same",
+   "read_twice": true
+  },
+  {
+   "lesson": 9,
+   "strip": "T9",
+   "stored": "KIRÚ RA•'AT",
+   "read": "KIRÚ RA•'AT",
+   "kind": "same",
+   "read_twice": true
+  },
+  {
+   "lesson": 10,
+   "strip": "T10",
+   "stored": "KIRIKÉ RUH•RA'?",
+   "read": "KIRIKÉ RUH•RA'?",
+   "kind": "same",
+   "read_twice": true
+  },
+  {
+   "lesson": 11,
+   "strip": "T11",
+   "stored": "KA RÚH•RATSAUS?",
+   "read": "KA RÚH•RATSAUS?",
+   "kind": "same",
+   "read_twice": true
+  },
+  {
+   "lesson": 12,
+   "strip": "T12",
+   "stored": "SÚKS•U.",
+   "read": "SÚKS•U.",
+   "kind": "same",
+   "read_twice": true
+  },
+  {
+   "lesson": 13,
+   "strip": "T13",
+   "stored": "KIRU RÁSUKS•AT?",
+   "read": "KIRU RÁSUKS•AT?",
+   "kind": "same",
+   "read_twice": false
+  },
+  {
+   "lesson": 14,
+   "strip": "T14",
+   "stored": "KÁ RUSUT•ERIT?",
+   "read": "KÁ RUSUT•ERIT?",
+   "kind": "same",
+   "read_twice": true
+  },
+  {
+   "lesson": 15,
+   "strip": "T15",
+   "stored": "RI•KÁTIHARU'",
+   "read": "RI•KÁTIHARU'",
+   "kind": "same",
+   "read_twice": false
+  },
+  {
+   "lesson": 16,
+   "strip": "T16",
+   "stored": "KITSKÉ WE RU'",
+   "read": "KITSKÉ WE RU'",
+   "kind": "same",
+   "read_twice": true
+  },
+  {
+   "lesson": 17,
+   "strip": "T17",
+   "stored": "TÍRUKS•TSAK•ARIKI",
+   "read": "TÍRUKS•TSAK•ARIKI",
+   "kind": "same",
+   "read_twice": true
+  },
+  {
+   "lesson": 18,
+   "strip": "T18",
+   "stored": "KIRIKÉ RASUTSÍKS•ARI'?",
+   "read": "KIRIKÉ RASUTSÍKS•ARI'?",
+   "kind": "same",
+   "read_twice": true
+  },
+  {
+   "lesson": 19,
+   "strip": "T19",
+   "stored": "T'ÁR•AWI•A",
+   "read": "T'ÁR•AWI•A",
+   "kind": "same",
+   "read_twice": false
+  },
+  {
+   "lesson": 20,
+   "strip": "T20",
+   "stored": "TAT•ÍTSKA RATKU•WA•WAKTIT PARI'",
+   "read": "TAT•ÍTSKA RATKU•WA•WAKTIT PARI'",
+   "kind": "same",
+   "read_twice": true
+  }
+ ],
+ "differences": [
+  {
+   "strip": "58.1.0",
+   "page": 58,
+   "lesson": 6,
+   "stored": "tas•",
+   "read": null,
+   "kind": "stored, not in the reading",
+   "one_reading": false,
+   "where": [
+    "grammar_notes",
+    2,
+    "text"
+   ],
+   "start": 614,
+   "end": 618,
+   "read_twice": false,
+   "audit_has_the_stored": false,
+   "audit_here": "no reading",
+   "left": "the word stands at the beginning of the next line (58.1.1), where it was read; the line-up placed it with the line before"
+  },
+  {
+   "strip": "58.1.1",
+   "page": 58,
+   "lesson": 6,
+   "stored": null,
+   "read": "tas•",
+   "kind": "on the page, not in the stored text",
+   "one_reading": false,
+   "read_twice": true,
+   "audit_has_the_reading": false,
+   "audit_here": "no reading",
+   "left": "see 58.1.0"
+  },
+  {
+   "strip": "75.9.2",
+   "page": 75,
+   "lesson": 10,
+   "stored": null,
+   "read": "i+u",
+   "kind": "on the page, not in the stored text",
+   "one_reading": false,
+   "read_twice": false,
+   "audit_has_the_reading": false,
+   "audit_here": "no reading",
+   "left": "the stored text has 'i +u': only the spacing of the plus sign differs"
+  },
+  {
+   "strip": "75.9.5",
+   "page": 75,
+   "lesson": 10,
+   "stored": "+has",
+   "read": null,
+   "kind": "stored, not in the reading",
+   "one_reading": false,
+   "where": [
+    "grammar_notes",
+    0,
+    "text"
+   ],
+   "start": 361,
+   "end": 365,
+   "read_twice": false,
+   "audit_has_the_stored": false,
+   "audit_here": "no reading",
+   "left": "an English word with a plus sign"
+  },
+  {
+   "strip": "75.9.6",
+   "page": 75,
+   "lesson": 10,
+   "stored": null,
+   "read": "i+u",
+   "kind": "on the page, not in the stored text",
+   "one_reading": false,
+   "read_twice": false,
+   "audit_has_the_reading": false,
+   "audit_here": "no reading",
+   "left": "as 75.9.2"
+  },
+  {
+   "strip": "88.3.0",
+   "page": 88,
+   "lesson": 13,
+   "stored": "Tskiri",
+   "read": "TSKIRI",
+   "kind": "capitals differ",
+   "one_reading": false,
+   "where": [
+    "grammar_notes",
+    1,
+    "heading"
+   ],
+   "start": 0,
+   "end": 6,
+   "read_twice": false,
+   "audit_has_the_reading": true,
+   "audit_has_the_stored": true,
+   "audit_here": "the same",
+   "left": "a heading: the table stores headings with a capital at the beginning of each word"
+  },
+  {
+   "strip": "88.3.0",
+   "page": 88,
+   "lesson": 13,
+   "stored": "Akitaru'",
+   "read": "AKITARU'",
+   "kind": "capitals differ",
+   "one_reading": false,
+   "where": [
+    "grammar_notes",
+    1,
+    "heading"
+   ],
+   "start": 7,
+   "end": 15,
+   "read_twice": false,
+   "audit_has_the_reading": true,
+   "audit_has_the_stored": false,
+   "audit_here": "the same",
+   "left": "a heading"
+  },
+  {
+   "strip": "93.0.3",
+   "page": 93,
+   "lesson": 14,
+   "stored": "res•[..]sí•urúkat",
+   "read": "res•[?]",
+   "kind": "reader unsure",
+   "one_reading": false,
+   "where": [
+    "grammar_notes",
+    1,
+    "text"
+   ],
+   "start": 146,
+   "end": 163,
+   "read_twice": true,
+   "audit_has_the_reading": false,
+   "audit_has_the_stored": false,
+   "audit_here": "no reading",
+   "left": "a flaw in the scan covers about two letters; the stored text marks the place with [..]"
+  },
+  {
+   "strip": "93.0.4",
+   "page": 93,
+   "lesson": 14,
+   "stored": null,
+   "read": "[?]sí•urúkat",
+   "kind": "on the page, not in the stored text",
+   "one_reading": false,
+   "read_twice": true,
+   "audit_has_the_reading": false,
+   "audit_here": "no reading",
+   "left": "see 93.0.3"
+  },
+  {
+   "strip": "99.1.1",
+   "page": 99,
+   "lesson": 16,
+   "stored": "[w]e",
+   "read": "[?]e",
+   "kind": "reader unsure",
+   "one_reading": false,
+   "where": [
+    "dialogues",
+    0,
+    "lines",
+    0,
+    "skiri"
+   ],
+   "start": 7,
+   "end": 11,
+   "read_twice": true,
+   "audit_has_the_reading": false,
+   "audit_has_the_stored": true,
+   "audit_here": "another word",
+   "left": "a flaw in the scan covers the w; the stored text has it in square brackets, from the same sentence on page 98"
+  },
+  {
+   "strip": "99.1.3",
+   "page": 99,
+   "lesson": 16,
+   "stored": "p[it]ku",
+   "read": "p[?]ku",
+   "kind": "reader unsure",
+   "one_reading": false,
+   "where": [
+    "dialogues",
+    0,
+    "lines",
+    1,
+    "skiri"
+   ],
+   "start": 6,
+   "end": 13,
+   "read_twice": true,
+   "audit_has_the_reading": false,
+   "audit_has_the_stored": true,
+   "audit_here": "another word",
+   "left": "a flaw in the scan covers the middle of the word; the stored text has the letters of page 98 (we tí pitku) in square brackets"
+  },
+  {
+   "strip": "118.1.0",
+   "page": 118,
+   "lesson": 20,
+   "stored": "Hiri",
+   "read": "HIRI",
+   "kind": "capitals differ",
+   "one_reading": false,
+   "where": [
+    "grammar_notes",
+    8,
+    "heading"
+   ],
+   "start": 0,
+   "end": 4,
+   "read_twice": false,
+   "audit_has_the_reading": true,
+   "audit_has_the_stored": true,
+   "audit_here": "the same",
+   "left": "a heading"
+  },
+  {
+   "strip": "118.1.0",
+   "page": 118,
+   "lesson": 20,
+   "stored": "Ah•Ratukstak•Kitkeu",
+   "read": "AH•RATUKSTAK•KITKEU",
+   "kind": "capitals differ",
+   "one_reading": false,
+   "where": [
+    "grammar_notes",
+    8,
+    "heading"
+   ],
+   "start": 5,
+   "end": 24,
+   "read_twice": false,
+   "audit_has_the_reading": true,
+   "audit_has_the_stored": false,
+   "audit_here": "the same",
+   "left": "a heading"
+  },
+  {
+   "strip": "118.2.4",
+   "page": 118,
+   "lesson": 20,
+   "stored": "Wi•tikskawutik•usuku",
+   "read": "Wi•tiks-",
+   "kind": "letters differ",
+   "one_reading": false,
+   "where": [
+    "grammar_notes",
+    8,
+    "text"
+   ],
+   "start": 227,
+   "end": 247,
+   "read_twice": true,
+   "audit_has_the_reading": false,
+   "audit_has_the_stored": false,
+   "audit_here": "another word",
+   "left": "the word is broken at the end of the line and stored joined; the second half is on the next line (118.2.5: kawutik•usuku)"
+  },
+  {
+   "strip": "118.2.6",
+   "page": 118,
+   "lesson": 20,
+   "stored": "tikstarah•kawa•karuku",
+   "read": "tikstarah•ka-",
+   "kind": "letters differ",
+   "one_reading": false,
+   "where": [
+    "grammar_notes",
+    8,
+    "text"
+   ],
+   "start": 273,
+   "end": 294,
+   "read_twice": false,
+   "audit_has_the_reading": false,
+   "audit_has_the_stored": false,
+   "audit_here": "another word",
+   "left": "the word is broken at the end of the line and stored joined; the second half is on the next line (118.2.7: wa•karuku)"
+  },
+  {
+   "strip": "118.2.7",
+   "page": 118,
+   "lesson": 20,
+   "stored": null,
+   "read": "wa•karuku",
+   "kind": "on the page, not in the stored text",
+   "one_reading": false,
+   "read_twice": false,
+   "audit_has_the_reading": false,
+   "audit_here": "another word",
+   "left": "the second half of the word broken on the line above"
+  },
+  {
+   "strip": "118.2.7",
+   "page": 118,
+   "lesson": 20,
+   "stored": "wi•tikstakas•karuk•usuku",
+   "read": "wi•tiks-",
+   "kind": "letters differ",
+   "one_reading": false,
+   "where": [
+    "grammar_notes",
+    8,
+    "text"
+   ],
+   "start": 333,
+   "end": 357,
+   "read_twice": false,
+   "audit_has_the_reading": false,
+   "audit_has_the_stored": false,
+   "audit_here": "another word",
+   "left": "the word is broken at the end of the line and stored joined; the second half is on the next line (118.2.8: takas•karuk•usuku)"
+  },
+  {
+   "strip": "118.2.11",
+   "page": 118,
+   "lesson": 20,
+   "stored": "pitsikat",
+   "read": "pit-",
+   "kind": "letters differ",
+   "one_reading": false,
+   "where": [
+    "grammar_notes",
+    8,
+    "text"
+   ],
+   "start": 498,
+   "end": 506,
+   "read_twice": false,
+   "audit_has_the_reading": false,
+   "audit_has_the_stored": true,
+   "audit_here": "another word",
+   "left": "the word is broken at the end of the line and stored joined; the second half is on the next line (118.2.12: sikat)"
+  },
+  {
+   "strip": "118.2.13",
+   "page": 118,
+   "lesson": 20,
+   "stored": "Tsahriks•pakuhtu",
+   "read": "Tsahriks•pa-",
+   "kind": "letters differ",
+   "one_reading": false,
+   "where": [
+    "grammar_notes",
+    8,
+    "text"
+   ],
+   "start": 549,
+   "end": 565,
+   "read_twice": false,
+   "audit_has_the_reading": false,
+   "audit_has_the_stored": false,
+   "audit_here": "another word",
+   "left": "the word is broken at the end of the line and stored joined; the second half is on the next line (118.2.14: kuhtu)"
+  },
+  {
+   "strip": "118.2.14",
+   "page": 118,
+   "lesson": 20,
+   "stored": null,
+   "read": "kuhtu",
+   "kind": "on the page, not in the stored text",
+   "one_reading": false,
+   "read_twice": true,
+   "audit_has_the_reading": false,
+   "audit_here": "another word",
+   "left": "the second half of the word broken on the line above"
+  }
+ ],
+ "no_line": []
+}

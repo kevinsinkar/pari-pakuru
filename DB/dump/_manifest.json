@@ -2,15 +2,15 @@
  "tables": {
   "lexical_entries": {
    "rows": 4337,
-   "sha256": "f0544068f1f9b4b261f93fa881043d1aa19b42859ae4fa809b998a66018825c0"
+   "sha256": "b6dbb225d622eb4bed7a00b26ce81d6b9c37bfb89ebd278f415e0cae66336fcf"
   },
   "paradigmatic_forms": {
    "rows": 9559,
    "sha256": "386ead73975e2d8d1e3dbd9ed1a53f5618db1ecf3e4f50aba21a5ccdf8fd67fe"
   },
   "examples": {
-   "rows": 2652,
-   "sha256": "c70b033988ecd390246083b3d216422867e315aa2434ec5579489407ace2431b"
+   "rows": 2607,
+   "sha256": "64f5bebce132bcc344e8c9904fa8ba37de0992cc7709f779ee349f1456f71f79"
   },
   "etymology": {
    "rows": 3825,
@@ -42,7 +42,7 @@
   },
   "blue_book_attestations": {
    "rows": 1026,
-   "sha256": "41d5842de4d2a7d2c9ce71d08b779c05a66ae4bb0e1baa49c26524bda0e2b1b8"
+   "sha256": "53e14161d64bc485d59abff928930f194ba7b6354ea543f01b59e4cf4ee8fd69"
   },
   "sound_change_rules": {
    "rows": 24,
@@ -66,15 +66,15 @@
   },
   "bb_gap_triage": {
    "rows": 516,
-   "sha256": "7c31a091a028ec71d5b81b1398092be52371611bbe9662e5a48195acfe698e9e"
+   "sha256": "5afd5a88bfae970ec446481e9ca98d3019f14f82eedf3d19d0652c64d284b443"
   },
   "function_words": {
-   "rows": 414,
-   "sha256": "e144e73c68b077a32897956b4aee631dd8555128e1d07df60432c189f32745ac"
+   "rows": 406,
+   "sha256": "2d2528fb4e69491a77140da7de0d8d11ad9e8cb148cc9c8c9bfe890e1588f5d3"
   },
   "bb_function_words": {
-   "rows": 63,
-   "sha256": "a76874c0c05872867948a481259c786ece03b11dfa664789faced5a5b2417ed4"
+   "rows": 62,
+   "sha256": "1e5e0e41f51e72ac320b82ba0a37cadc5513f87c8ac4933ca1d2e13f9acf958d"
   },
   "glosses": {
    "rows": 5504,
@@ -82,7 +82,7 @@
   },
   "lessons": {
    "rows": 20,
-   "sha256": "74f10e18b94abfc20012148a9188fab14549c6a3817eb6dddb3785787d46c761"
+   "sha256": "9787af3f33cc46346337541b6deb4629627c9c02bed59ee300f3ec0f817b5b73"
   }
  },
  "left_out": [

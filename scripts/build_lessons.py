@@ -274,7 +274,25 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--apply', action='store_true',
                     help='write lessons table to DB (default: dry-run)')
+    ap.add_argument('--from-scratch', action='store_true',
+                    help='with --apply: write the OCR parse over a lessons table that already exists')
     args = ap.parse_args()
+    # Since this parser was written the lessons were corrected from the scan: the audit's readings (2026-11-13),
+    # every line read from the page and the dialogues paired with their English (2026-11-14;
+    # scripts/apply_lesson_page_reading.py, scripts/pair_lesson_dialogues.py). This script knows none of that:
+    # it parses the OCR text. Writing its output again would put the OCR text back.
+    if args.apply and not args.from_scratch:
+        probe = sqlite3.connect(DB_PATH)
+        try:
+            have = probe.execute("SELECT count(*) FROM lessons").fetchone()[0]
+        except sqlite3.OperationalError:
+            have = 0
+        probe.close()
+        if have:
+            sys.exit("build_lessons.py: the lessons table holds %d lessons that were corrected from the scan after this "
+                     "parser was run. --apply would write the OCR text over them and over extracted_data/lessons.json. "
+                     "If that is what you want, add --from-scratch; then run fix_lesson_text_ocr.py, "
+                     "apply_lesson_page_reading.py and pair_lesson_dialogues.py again." % have)
     mode = 'APPLY' if args.apply else 'DRY-RUN'
     log(f"=== Phase 5.1 lesson build — {mode} — {datetime.now().isoformat()} ===")
 
@@ -311,11 +329,13 @@ def main():
         gn = lessons[1]['grammar_notes'][0]
         log(f"\nsample L1 note [{gn['heading']}]: {gn['text'][:180]}...")
 
-    OUT_JSON.parent.mkdir(exist_ok=True)
-    with open(OUT_JSON, 'w', encoding='utf-8') as f:
-        json.dump([lessons[n] for n in sorted(lessons)], f,
-                  ensure_ascii=False, indent=1)
-    log(f"\n[write] {OUT_JSON}")
+    if args.apply:
+        # the file is a copy of the table; a dry run used to write it too, and so overwrote the corrected copy
+        OUT_JSON.parent.mkdir(exist_ok=True)
+        with open(OUT_JSON, 'w', encoding='utf-8') as f:
+            json.dump([lessons[n] for n in sorted(lessons)], f,
+                      ensure_ascii=False, indent=1)
+        log(f"\n[write] {OUT_JSON}")
 
     if args.apply:
         cur.execute("DROP TABLE IF EXISTS lessons")

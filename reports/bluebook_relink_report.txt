@@ -1,0 +1,747 @@
+relink_bluebook — APPLY — 2026-11-14 20:02
+rows of the Blue Book table: 1026; tied to an entry now: 606 (prefix 404, orthographic 95, exact_normalized 63, bb_only_form_and_english 25, propagated 10, loose 5, stem 4)
+ties kept: 192 (by the form and a shared word, the same word listed twice, or one of the 4 looked at one by one)
+ties judged again: 414; tied to the entry their form is: 65; left without a tie: 349
+Blue Book sentences stored as examples: 88 sentences in 88 rows; rows to remove: 85, to add: 40, staying: 3; sentences with no listed word tied to an entry: 51
+blue_book_attested: 38 entries lose the flag, 99 gain it
+
+written. backup: OneDrive/pari_pakuru_backups/skiri_pawnee_backup_20261114_200257_bluebook_relink.db
+
+== 1. Rows tied to the entry their form is (row, lesson, form, English: was -> now)
+  1894  L1  kisu'                        bone                               kisu -> kiisuʔ  [orthographic]
+  1900  L1  kakí'                        no                                 ka -> kaakiiʔ  [orthographic]
+  1911  L1  tirakis                      bow                                tir -> tiraakis  [orthographic]
+  1921  L1  tirakis                      bow                                tir -> tiraakis  [orthographic]
+  1925  L1  Istu.                        Again.                             is -> istuʔ  [orthographic]
+  1927  L1  Aka!                         Oh my! Gee!                        akaʔ -> aaka, aakaʔ, aakaʔa  [orthographic]
+  1933  L1  Kakí'.                       It is not. No.                     ka -> kaakiiʔ  [orthographic]
+  1953  L2  kurúks•katit                 a black bear.                      ku -> kurukskaatiit  [orthographic]
+  1966  L2  kitsu'                       liquid                             kic -> kiicuʔ  [orthographic]
+  1973  L2  kataru'                      green grass                        ka -> kataaruʔ  [orthographic]
+  1977  L2  ti rá•wa•hat                 sky, heavens, universe             tir -> Tiirawaahat  [orthographic]
+  1983  L2  kitsu'                       liquid                             kic -> kiicuʔ  [orthographic]
+  1987  L2  kira•rásitu'                 water                              kira -> kiiraraasiituʔ  [orthographic]
+  1991  L2  Kits•Ka                      Arkansas River                     kic -> kicka  [orthographic]
+  1993  L2  Kits•Paruksti                Missouri River or "wise river"     kic -> Kicpaarukstiiʔ  [orthographic]
+  1996  L2  Kits•Katit                   Mississippi River                  kic -> kickaatiit  [orthographic]
+  2002  L2  Pahítu'!                     Quiet, behave!                     pahit -> pahiituʔ  [orthographic]
+  2024  L5  kararu'                      stomach                            ka -> karaaruʔ  [orthographic]
+  2027  L5  kasu'                        leg                                ka -> kaasuʔ  [orthographic]
+  2031  L5  aspítu'                      toenail, claw                      aspit -> aspiituʔ  [orthographic]
+  2063  L6  pita                         man                                pitaksuʔ -> piita  [orthographic]
+  2064  L6  tsapat                       woman                              ca -> capaat  [orthographic]
+  2076  L6  Kakí'                        No                                 ka -> kaakiiʔ  [orthographic]
+  2085  L6  kurahus                      elderly man                        ku -> kurahuus  [orthographic]
+  2120  L7  atías                        my father                          at -> atiʔas  [orthographic]
+  2137  L7  atat                         your sister or "sis! "             at -> ataat  [orthographic]
+  2148  L7  tiwat                        my niece, nephew                   tiwaciriks -> tiwaat  [orthographic]
+  2178  L8  asáki                        dog                                a -> asaaki  [orthographic]
+  2180  L8  arúsa                        horse                              a -> aruusaʔ  [orthographic]
+  2182  L8  tarahá•taka                  "white (man 's) buffalo ", cow     ta -> tarahaataakaa  [orthographic]
+  2184  L8  akaru'                       house                              akaʔ -> akaaruʔ  [orthographic]
+  2187  L8  akah•táhurus                 round house                        akaʔ -> akahtaahuruus  [orthographic]
+  2223  L8  asku•hú•kita                 eleven                             asku -> askuhuukita  [orthographic]
+  2234  L8  Tarí'.                       Here it is (holding it).           ta -> tariʔ  [orthographic]
+  2249  L9  katsiki                      fish                               ka -> kaciiki  [orthographic]
+  2265  L9  kaka'                        crow                               kakaʔuc -> kaakaʔ  [orthographic]
+  2267  L9  irikis                       mouse                              irikisat -> iirikis  [orthographic]
+  2270  L9  asats                        mosquito                           a -> asaac  [orthographic]
+  2298  L10 tsaparau'                    wife                               ca -> capaaraʔu  [orthographic]
+  2302  L10 tiraku'                      gun                                tir -> tiraakuʔ  [orthographic]
+  2311  L10 tiraku '                     rifle                              tir -> tiraakuʔ  [orthographic]
+  2328  L10 kutski                       bucket, pot                        ku -> kuucki  [orthographic]
+  2329  L10 táraha•riki'                 spoon, 'buffalo horn'              ta -> tarahaariki  [orthographic]
+  2366  L12 tá•utu'                      he's a thief                       ta -> taʔuutuʔ  [orthographic]
+  2401  L13 kaas                         car, vehicle                       kaʔas -> kaaʔas  [orthographic]
+  2419  L13 Akitáru'                     Tribes                             aki -> akitaaruʔ  [orthographic]
+  2433  L13 Tskiri                       "Wolf' (written by whites as Skidi ckirihkaapiraat -> Ckiiri  [orthographic]
+  2439  L13 Páhuks•Tatu'                 "Pumpkin Vine"                     pahuks -> pahukstaatuʔ  [orthographic]
+  2517  L14 kitu                         all                                kituhaʔuk -> kituuʔuʔ  [orthographic]
+  2655  L18 tsaskít                      a little                           ca -> caskiiʔit, caskiit  [orthographic]
+  2732  L19 Sakuh•wáruksti'              Sunday                             sa -> sakuhwaarukstiiʔ  [orthographic]
+  2733  L19 Sakuh•wáruksti'              Sacred Day                         sa -> sakuhwaarukstiiʔ  [propagated]
+  2735  L19 Pitku Rá•sakuru'             Tuesday                            pitku -> Pitku Rasakuuru  [orthographic]
+  2736  L19 Pitku Rá•sakuru'             Second Day                         pitku -> Pitku Rasakuuru  [propagated]
+  2737  L19 Tawit Rá•sakuru'             Wednesday                          ta -> Tawit Rasakuuru  [orthographic]
+  2780  L11 kiraritu'                    soup                               kira -> kiirariituʔ  [orthographic]
+  2788  L11 pahuks                       squash, pumpkins                   pahuks -> pahuks  [orthographic]
+  2789  L11 atit                         beans                              at -> atiit  [orthographic]
+  2794  L11 kirá•rasitu'                 water                              kira -> kiiraraasiituʔ  [orthographic]
+  2798  L11 ki•ráhkata                   whiskey                            kira -> kiirahkata  [orthographic]
+  2837  L20 Kakí',                       No                                 ka -> kaakiiʔ  [orthographic]
+  2881  L3  hiru'                        meadow, hay field                  hiruʔ -> hiiruʔ  [orthographic]
+  2890  L3  akaru '                      building                           akaʔ -> akaaruʔ  [propagated]
+  2897  L3  hiru '                       meadow                             hiruʔ -> hiiruʔ  [propagated]
+  2916  L4  hitu'                        a feather, some feathers           hituʔ -> hiituʔ  [orthographic]
+
+== 2. Rows left without a tie (row, lesson, kind, form, English: was; why)
+  1891  L1  PHRASE    KIRIKÉ RU'?                    What Is It?                    was kiri; no headword has this form
+  1902  L1  DIALOGUE  Kiriké ru'?                    What is it?                    was kiri; no headword has this form
+  1904  L1  DIALOGUE  Ka rú hitu'?                   Is this a feather?             was kari; no headword has this form
+  1905  L1  DIALOGUE  Ahu', tí hitu'.                Yes, this is a feather.        was a; no headword has this form
+  1907  L1  DIALOGUE  Ka rú karitki?                 Is this a rock?                was ka; no headword has this form
+  1908  L1  DIALOGUE  Kakí, kakí karitki.            No, it is not a rock.          was ka; no headword has this form
+  1909  L1  DIALOGUE  Kiriké ru'?                    What is it?                    was kiri; no headword has this form
+  1929  L1  GRAMMAR_E Ká ru'?                        Is it?                         was ka; no headword has this form
+  1930  L1  GRAMMAR_E Ka rú kisu'?                   Is it a bone?                  was ka; no headword has this form
+  1932  L1  GRAMMAR_E Tí kisu'.                      This is a bone.                was tiki; no headword has this form
+  1934  L1  GRAMMAR_E Kakí kisu'.                    It is not a bone.              was ka; no headword has this form
+  1935  L2  PHRASE    KIRIKÉ RA•TARAWIS?             What Color Is it?              was kiri; no headword has this form
+  1937  L2  BASIC_WOR rakís•pahat                    a red stick                    was rakis; no headword has this form
+  1939  L2  BASIC_WOR ti kírareus                    it's green                     was tiki; no headword has this form
+  1940  L2  BASIC_WOR ti ráhkataa                    it's yellow                    was tir; no headword has this form
+  1941  L2  BASIC_WOR rakis•táhkata                  a yellow stick                 was rakis; no headword has this form
+  1943  L2  BASIC_WOR rakís•taka                     a white stick                  was rakis; no headword has this form
+  1946  L2  DIALOGUE  Kiriké ra•tarawis rakis?       What color is the stick?       was kiri; no headword has this form
+  1947  L2  DIALOGUE  Rakis tí pahaat.               The stick is red.              was rakis; no headword has this form
+  1948  L2  DIALOGUE  Ka rá•pahaat rakis?            Is the stick red?              was ka; no headword has this form
+  1949  L2  DIALOGUE  Áhu', rakis tí pahaat.         Yes, the stick is red.         was a; no headword has this form
+  1950  L2  DIALOGUE  Ka rá•tareus rakis?            Is the stick blue?             was ka; no headword has this form
+  1951  L2  DIALOGUE  Kakí tareus, tí pahaat.        It is not blue, it is red.     was ka; no headword has this form
+  1952  L2  GRAMMAR_E kiríks•pahat                   a red bead                     was kiri; no headword has this form
+  1954  L2  GRAMMAR_E Ti kiríks•pahat.               It's a red bead.               was tiki; no headword has this form
+  1956  L2  GRAMMAR_E Kiriks tí pahaat.              The bead is red.               was kiri; no headword has this form
+  1957  L2  GRAMMAR_E Kuruks tí katiit.              The bear is black.             was ku; no headword has this form
+  1958  L2  GRAMMAR_E rakis•táhkata                  a yellow stick                 was rakis; no headword has this form
+  1971  L2  ADDITIONA rutki                          snake                          was rutki rahaawarii; no headword has this form
+  1974  L2  ADDITIONA sakurti'                       sun                            was sa; no headword has this form
+  1981  L2  GRAMMAR_E rutki                          snake                          was rutki rahaawarii; no headword has this form
+  1989  L2  GRAMMAR_E ti rá•ha•pi                    There is a tree.               was tir; no headword has this form
+  1990  L2  GRAMMAR_E ti kits•úhat                   stream, river or "it's liquid  was tiki; no headword has this form
+  1992  L2  ADDITIONA Kits•Katus                     Platte River or "flat river"   was kic; ambiguous: Kickatuus, kickatuus
+  1994  L2  ADDITIONA Kits•Kait                      Cimarron River or "salt river" was kic; no headword has this form
+  1997  L2  ADDITIONA Kits•Kurúks•Katit              Black Bear Creek               was kic; no headword has this form
+  2001  L2  PHRASE    Ka rás•atkuku'?                Are you listening?             was ka; no headword has this form
+  2003  L2  PHRASE    Asku súks•paku'.               One of you say it. (or, Say it was asku; no headword has this form
+  2013  L5  DIALOGUE  Ti rit•páks•ku.                Here is my head.               was tir; no headword has this form
+  2015  L5  DIALOGUE  Ti rit•kírik•ta.               Here is my eye.                was tir; no headword has this form
+  2016  L5  DIALOGUE  Ka ra•paks•táari'?             Does your head hurt?           was ka; no headword has this form
+  2017  L5  DIALOGUE  Kaki ku•paks•táari',           My head doesn't hurt,          was ka; no headword has this form
+  2020  L5  GRAMMAR_E Ti rit•kírik•ta.               Here is my eye.                was tir; no headword has this form
+  2022  L5  ADDITIONA atka•haru'                     ear, 'place for listening'     was at; no headword has this form
+  2030  L5  ADDITIONA askitsu'                       toe                            was a; no headword has this form
+  2036  L5  PHRASE    Pahitu súks•ku!                Behave yourself!               was pahit; no headword has this form
+  2038  L5  PHRASE    Kirike ras•páku'?              What did you say?              was kiri; no headword has this form
+  2041  L5  GRAMMAR_E Tas•páku'.                     You have said it.              was ta; no headword has this form
+  2046  L5  GRAMMAR_E Tat•páku'.                     I have said it.                was ta; no headword has this form
+  2048  L5  GRAMMAR_E Tat•pítit.                     I have sat down.               was ta; no headword has this form
+  2050  L5  GRAMMAR_E Tát•at.                        I have gone (away).            was ta; form fits tatat; meaning does not
+  2058  L5  GRAMMAR_E Tahra•páku'.                   We (3+) have said it.          was ta; no headword has this form
+  2060  L5  GRAMMAR_E Tahrá•pitit.                   We (3+) have sat down.         was ta; no headword has this form
+  2062  L5  GRAMMAR_E Táhra•pu'.                     We (3+) have gone (away).      was ta; no headword has this form
+  2067  L6  BASIC_WOR ti•kíkat                       he is crying                   was tiki; no headword has this form
+  2071  L6  BASIC_WOR ti•ruku'                       he is making it                was tir; no headword has this form
+  2075  L6  DIALOGUE  Kakí', pita t'éwasku'.         No, the man is laughing.       was ka; no headword has this form
+  2077  L6  GRAMMAR_E tí•ari'                        he's becoming                  was ariʔ; no headword has this form
+  2088  L6  ADDITIONA tat•akúh•taku'                 I am playing                   was ta; no headword has this form
+  2091  L6  ADDITIONA ta•káahu'                      he's dancing                   was ta; no headword has this form
+  2096  L6  PHRASE    Tá'tskipi.                     You're sleepy.                 was ta; no headword has this form
+  2097  L6  GRAMMAR_E Kiriké ratut•ari'?             What am I doing?               was kiri; no headword has this form
+  2098  L6  GRAMMAR_E Kiriké rasut•ari'?             What are you (1) doing?        was kiri; no headword has this form
+  2099  L6  GRAMMAR_E Kiriké rut•ari'?               What is he doing?              was kiri; no headword has this form
+  2100  L6  GRAMMAR_E Kiriké rit•ari'?               What are they (3+) doing?      was kiri; no headword has this form
+  2101  L6  GRAMMAR_E Kiriké sirut•ari'?             What are they (2) doing?       was kiri; no headword has this form
+  2102  L6  GRAMMAR_E Tát•pari'.                     I am walking about.            was ta; no headword has this form
+  2103  L6  GRAMMAR_E Tás•pari'.                     You are walking about.         was ta; no headword has this form
+  2106  L6  GRAMMAR_E Tiráh•wari'.                   They (3+) are walking.         was tir; no headword has this form
+  2107  L6  GRAMMAR_E Tat•kikat.                     I am crying.                   was ta; no headword has this form
+  2108  L6  GRAMMAR_E tat. kikat                     I am crying                    was ta; no headword has this form
+  2110  L6  GRAMMAR_E tas•kíkat                      you are crying                 was ta; no headword has this form
+  2115  L6  GRAMMAR_E tá'tskipi                      you (1) are sleepy             was ta; no headword has this form
+  2117  L6  GRAMMAR_E tarak•ítskipi                  you (3+) are sleepy            was ta; no headword has this form
+  2119  L7  PHRASE    TAKÉ RU'?                      Who Is It?                     was ta; no headword has this form
+  2128  L7  BASIC_WOR tsirú ti•a                     she's/he's still alive         was ci; no headword has this form
+  2130  L7  DIALOGUE  Také ru'?                      Who is that (one)?             was ta; no headword has this form
+  2138  L7  DIALOGUE  Tsiru ka ra•á apat?            Is your grandfather still aliv was ci; no headword has this form
+  2139  L7  DIALOGUE  ka rá•wari'                    Is your grandfather still aliv was ka; no headword has this form
+  2140  L7  DIALOGUE  Kakí', atipat we tí•hura•hats. No, my grandfather has passed  was ka; no headword has this form
+  2143  L7  ADDITIONA patsí                          "unc"                          was paciriks; no headword has this form
+  2146  L7  ADDITIONA taka                           "sonny"                        was ta; form fits 3 entries; meaning fits none
+  2153  L7  ADDITIONA tsikstit tí•wari'              he's doing fine                was ci; no headword has this form
+  2159  L7  PHRASE    Tsíru'.                        Wait!                          was ci; form fits ciruu; meaning does not
+  2162  L7  PHRASE    Kus•tútsi•erit                 I'll see you.                  was ku; no headword has this form
+  2169  L7  GRAMMAR_E ti ra•kú pita                  that sitting man               was tir; no headword has this form
+  2170  L7  GRAMMAR_E ti ra•arikí pita               that standing man              was tir; no headword has this form
+  2172  L7  GRAMMAR_E ti ra•arikí pita               that standing man yonder       was iraariʔ; no headword has this form
+  2179  L8  BASIC_WOR kiri, pus                      cat                            was kiri; no headword has this form
+  2181  L8  BASIC_WOR akse                           cow                            was a; no headword has this form
+  2185  L8  BASIC_WOR akar•rarátau'                  mud lodge                      was akaʔ; no headword has this form
+  2186  L8  BASIC_WOR akar•ratsápe                   teepee                         was akaʔ; no headword has this form
+  2197  L8  DIALOGUE  Kirike rás•taspe'?             What are you looking for?      was kiri; no headword has this form
+  2198  L8  DIALOGUE  Táh•raspe' asaki.              I'm looking for my dog.        was ta; no headword has this form
+  2199  L8  DIALOGUE  Ka ras•huras asaki?            Have you found the dog?        was ka; no headword has this form
+  2200  L8  DIALOGUE  Ahu', tat•huras asaki.         Yes, I found the dog.          was a; no headword has this form
+  2204  L8  GRAMMAR_E Tasuks•átku.                   You listened.                  was ta; no headword has this form
+  2206  L8  GRAMMAR_E tat•kíkat                      I am crying                    was ta; no headword has this form
+  2207  L8  GRAMMAR_E tas•kíkat                      you are crying                 was ta; no headword has this form
+  2220  L8  ADDITIONA asku papítsisu'                one dollar                     was asku; no headword has this form
+  2221  L8  ADDITIONA tat•irá•ita'                   I know it                      was ta; no headword has this form
+  2222  L8  ADDITIONA kakat•irá•ita'                 I don't know                   was ka; no headword has this form
+  2224  L8  ADDITIONA pitkus•hús•iri'                twelve                         was pitku; no headword has this form
+  2225  L8  ADDITIONA tawi•ríhuks•iri'               thirteen                       was ta; no headword has this form
+  2229  L8  ADDITIONA tawít•ka•ke'                   seventeen                      was ta; no headword has this form
+  2231  L8  ADDITIONA askú•ka•ke'                    nineteen                       was a; no headword has this form
+  2236  L8  PHRASE    Ka ru rut•tsírau'?             Is that right?                 was ka; no headword has this form
+  2238  L8  PHRASE    Tat•atsíks•tehu'.              Thank you.                     was ta; no headword has this form
+  2260  L9  DIALOGUE  Ka rá•awari rikutski?          Is the bird (still) flying aro was ka; no headword has this form
+  2261  L9  DIALOGUE  Kakí', rikutski tí•'isat.      No, the bird has disappeared.  was ka; no headword has this form
+  2279  L9  GRAMMAR_E karít•kutsu'                   boulder (big rock)             was kari; no headword has this form
+  2281  L9  GRAMMAR_E Kiwaku wé túh•kuksas.          The fox ran away.              was kiwak; no headword has this form
+  2282  L9  GRAMMAR_E Kiwaku tí pahaat.              The fox is red.                was kiwak; no headword has this form
+  2283  L9  GRAMMAR_E Rikutski tí pahaat.            The bird is red.               was rikucki; no headword has this form
+  2304  L10 BASIC_WOR katáraki                       axe (against wood)             was ka; form fits kaataraki; meaning does not
+  2308  L10 DIALOGUE  Kiriké ruh•ra' paresu'?        What is the hunter using?      was kiri; no headword has this form
+  2320  L10 ADDITIONA tsahriks•táhrurikukus          (badge) against the breast     was ca; no headword has this form
+  2321  L10 ADDITIONA asku•ra•wákahu'                police man, 'person catcher'   was asku; no headword has this form
+  2326  L10 ADDITIONA tirak•á•raruku'                she is cooking                 was tir; no headword has this form
+  2327  L10 ADDITIONA tirák•tarikuts                 pistol, 'short gun'            was tir; no headword has this form
+  2333  L10 ADDITIONA kirik•érisu'                   scout                          was kiri; no headword has this form
+  2335  L10 ADDITIONA kahíke                         leader (of an expedition)      was ka; no headword has this form
+  2339  L10 GRAMMAR_E tahrák•ut parésu'              we are hunters                 was ta; no headword has this form
+  2342  L10 PHRASE    Arisít suks•at.                Go by yourself.                was ariʔ; no headword has this form
+  2345  L10 PHRASE    Tas•kítawe'                    You're the boss.               was ta; no headword has this form
+  2347  L12 BASIC_WOR (we) tát•u                     I gave it to him               was ta; no headword has this form
+  2349  L12 BASIC_WOR (we) tátur•rat                 I took it from him             was ta; no headword has this form
+  2351  L12 BASIC_WOR (we) táh•rapu                  I bought it                    was ta; no headword has this form
+  2355  L12 BASIC_WOR (we) táta•u                    I gave it to you               was ta; no headword has this form
+  2358  L12 DIALOGUE  Ka rás•tapu rekits•tíwiru'?    Did you buy candy?             was ka; no headword has this form
+  2359  L12 DIALOGUE  Kakí', tiku•rapu rekits•tíwiru No, I sold candy.              was ka; no headword has this form
+  2360  L12 ADDITIONA tatur•íwit                     I saved it, kept it            was ta; no headword has this form
+  2361  L12 ADDITIONA tah•ríwarit                    I spent it, lost it            was ta; no headword has this form
+  2363  L12 ADDITIONA tat•áwarit                     I sent it, threw it            was ta; no headword has this form
+  2364  L12 ADDITIONA hirú suks•kusit                go get it                      was hiruʔ; no headword has this form
+  2365  L12 ADDITIONA istú suks•u                    give it back                   was is; no headword has this form
+  2369  L12 ADDITIONA kaki kápakis                   he's rich (not poor)           was ka; no headword has this form
+  2371  L12 PHRASE    Kitske rá•awitsu'?             How much is it?                was kic; no headword has this form
+  2373  L12 PHRASE    Kuka ras•tá papitsisu'?        Do you have any money?         was ku; no headword has this form
+  2380  L12 GRAMMAR_E Tsíks•pa.                      Let's you and I go.            was ci; no headword has this form
+  2393  L13 BASIC_WOR tátuks•at                      I went                         was ta; no headword has this form
+  2394  L13 BASIC_WOR tatuks•ká•isat                 I went home                    was ta; no headword has this form
+  2395  L13 BASIC_WOR tatuks•itsah•ká'isat           I went into town               was ta; no headword has this form
+  2396  L13 BASIC_WOR tatut•érit                     I saw it (have seen it)        was ta; no headword has this form
+  2397  L13 BASIC_WOR tatutak•érit                   I saw some                     was ta; no headword has this form
+  2399  L13 BASIC_WOR Tasa'                          Tulsa                          was ta; no headword has this form
+  2403  L13 BASIC_WOR tsuskíit                       few                            was cuskiituʔ; no headword has this form
+  2405  L13 DIALOGUE  Tatuks•at Pári.                I went to Pawnee.              was ta; no headword has this form
+  2406  L13 DIALOGUE  Tatuks•itsah•ká'isat.          I went into town.              was ta; no headword has this form
+  2407  L13 DIALOGUE  Kiriké rasut•erit?             What did you see?              was kiri; no headword has this form
+  2408  L13 DIALOGUE  Kaas raku•kariu tatutak•érit.  I saw many cars.               was ka; no headword has this form
+  2410  L13 GRAMMAR_E Tawit kaas tatutak•érit.       I saw three cars.              was ta; no headword has this form
+  2411  L13 GRAMMAR_E Kaas raku•kariu tatutak•érit.  I saw many cars.               was ka; no headword has this form
+  2412  L13 ADDITIONA akar•ra•písu'                  stores, "shopping "            was akaʔ; no headword has this form
+  2415  L13 ADDITIONA iks•aparári•hus                hand game                      was iksa; form fits iksapaarariihus, ksapaarariihus; meaning does not
+  2416  L13 ADDITIONA ti ri•parari'                  he's hiding it                 was tir; no headword has this form
+  2418  L13 GRAMMAR_E Tatuks•itsah•káa.              I was in town.                 was ta; no headword has this form
+  2422  L13 GRAMMAR_E Ti Ríhita.                     He's Ponca.                    was tir; no headword has this form
+  2425  L13 ADDITIONA Asakíwa•ru                     Sac and Fox country            was a; no headword has this form
+  2429  L13 ADDITIONA Astarahí•ru'                   Arikaree country               was Astarahi; no headword has this form
+  2443  L13 GRAMMAR_E hiri                           indicator for making verb phra was hiriitik; form fits hiir-i; meaning does not
+  2446  L13 GRAMMAR_E ti ratukstak•kítkeu'           that's where we used to live   was tir; no headword has this form
+  2448  L13 GRAMMAR_E ra•'at?                        Who Went?                      was raʔa; form fits raaʔat; meaning does not
+  2449  L13 GRAMMAR_E Tatúks•at.                     I went.                        was ta; no headword has this form
+  2450  L13 GRAMMAR_E Tasúks•at.                     You went.                      was ta; no headword has this form
+  2451  L13 GRAMMAR_E Túks•at.                       He, she went.                  was tuksat; form fits tuksat; meaning does not
+  2456  L13 GRAMMAR_E Tatúksta•pu'.                  We (3+) went.                  was ta; no headword has this form
+  2457  L13 GRAMMAR_E Tasúksta•pu'.                  You (3+) went.                 was ta; no headword has this form
+  2459  L14 PHRASE    KÁ RUSUT•ERIT?                 Did You See That?              was ka; no headword has this form
+  2463  L14 BASIC_WOR tatutsiks•erit                 I saw it                       was ta; no headword has this form
+  2464  L14 BASIC_WOR tatur•átku'                    I (have) heard it              was ta; no headword has this form
+  2465  L14 BASIC_WOR tatur•atkúku'                  I am listening to it           was ta; no headword has this form
+  2466  L14 BASIC_WOR taturúks•atku'                 I heard it                     was ta; no headword has this form
+  2467  L14 BASIC_WOR taturuks•atkúku'               I was listening to it          was ta; no headword has this form
+  2471  L14 BASIC_WOR ti•rá•pahit                    it is quiet                    was tir; no headword has this form
+  2474  L14 DIALOGUE  Kaki', pita tur•átku' kuruks.  No, the man heard the bear.    was ka; no headword has this form
+  2475  L14 DIALOGUE  Ka ruks•paká•rihu?             Was it loud?                   was ka; no headword has this form
+  2476  L14 DIALOGUE  Kaki', kakuks•pakd•rihu', tuks No, it wasn't loud, it was qui was ka; no headword has this form
+  2479  L14 ADDITIONA ta•rú•tsa'                     he (has) lifted it             was ta; no headword has this form
+  2486  L14 ADDITIONA ta rara•rásitu'                it's cold                      was ta; no headword has this form
+  2487  L14 ADDITIONA ta                             = indicator "this"             was ta; form fits 20 entries; meaning fits none
+  2488  L14 ADDITIONA ta rá•ritu'                    it's hot                       was ta; no headword has this form
+  2490  L14 ADDITIONA kaká taris                     it's light (not heavy)         was ka; no headword has this form
+  2491  L14 GRAMMAR_E tát•at                         I went (have gone)             was tatat; form fits tatat; meaning does not
+  2492  L14 GRAMMAR_E tás•at                         you went                       was ta; no headword has this form
+  2494  L14 GRAMMAR_E kakát•at                       I didn't go                    was ka; no headword has this form
+  2495  L14 GRAMMAR_E kakás•at                       you didn't go                  was ka; no headword has this form
+  2496  L14 GRAMMAR_E kakI 'at                       he didn't go                   was ka; no headword has this form
+  2497  L14 GRAMMAR_E ta•rútsa'                      he (has) lifted it             was ta; no headword has this form
+  2498  L14 GRAMMAR_E ta rara•rásitu                 it's cold                      was ta; no headword has this form
+  2499  L14 GRAMMAR_E ta rá•ritu'                    it's hot                       was ta; no headword has this form
+  2503  L14 PHRASE    Ka ris•utsí•uríkat!            Don't touch!                   was kari; no headword has this form
+  2506  L14 GRAMMAR_E Také rut•erit?                 Who saw it? (Who has seen it?) was ta; no headword has this form
+  2507  L14 GRAMMAR_E Tatut•érit.                    I saw it (have seen it).       was ta; no headword has this form
+  2508  L14 GRAMMAR_E Tasut•érit.                    You saw it.                    was ta; no headword has this form
+  2510  L14 GRAMMAR_E Tatsi't•érit.                  You and I saw it.              was ta; no headword has this form
+  2515  L14 GRAMMAR_E Tasuhrák•erit.                 You (3+) saw it.               was ta; no headword has this form
+  2518  L14 GRAMMAR_E Tatut•érit.                    I saw it.                      was ta; no headword has this form
+  2520  L14 ADDITIONA witi                           that the subject is also the o was Witiʔahuuhaʔu Piiraʔuʔ; no headword has this form
+  2521  L14 GRAMMAR_E Rikutski ti•wáktahu'.          The bird is singing.           was rikucki; no headword has this form
+  2522  L14 GRAMMAR_E Asaki tirah•kí•wat.            The dog barked.                was a; no headword has this form
+  2523  L14 GRAMMAR_E Taraha kata•káksa'.            The buffalo bellowed.          was ta; no headword has this form
+  2524  L14 GRAMMAR_E Arusa ti•kis•kata•wákta'.      The horse neighed.             was a; no headword has this form
+  2525  L14 GRAMMAR_E Kuruks ti•wáktahu'.            The bear is growling.          was ku; no headword has this form
+  2532  L15 BASIC_WOR tatut•á•wahri'                 I'm working                    was ta; no headword has this form
+  2533  L15 BASIC_WOR tatut•á•wahri•úsuku'           I work (habitually)            was ta; no headword has this form
+  2536  L15 DIALOGUE  Kirike rut•káhu•raru' retskuhk What does it do in the fall?   was kiri; no headword has this form
+  2538  L15 DIALOGUE  Kiriké rusut•ari•úsuku retskuh What do you do in the fall?    was kiri; no headword has this form
+  2540  L15 ADDITIONA tat•kata•íspu'suku'            I go to school                 was ta; no headword has this form
+  2543  L15 ADDITIONA ta hú•tuhtu'                   it's cold (wind)               was ta; no headword has this form
+  2546  L15 ADDITIONA tá•wiritstu'                   it's' hot                      was ta; no headword has this form
+  2549  L15 ADDITIONA tahra•pares•pa•úsuku'          we go hunting                  was ta; no headword has this form
+  2550  L15 ADDITIONA tatuhra•rawe•úsuku'            we go fishing                  was ta; no headword has this form
+  2551  L15 ADDITIONA tiraráh•karuk•úsuku'           they plant                     was tir; no headword has this form
+  2552  L15 ADDITIONA ti•it•iks•aparari•úsuku'       they play hand-game            was tii; no headword has this form
+  2553  L15 ADDITIONA tira•íwawat•úsuku'             they tell stories              was tir; no headword has this form
+  2555  L15 ADDITIONA tiraráh•kiwik•úsuku'           they roast corn                was tir; no headword has this form
+  2557  L15 GRAMMAR_E tiraráh•karuk•usuku'           they plant (habitual)          was tir; no headword has this form
+  2558  L15 GRAMMAR_E tiraráh•karuku                 they are planting (imperfect)  was tir; no headword has this form
+  2559  L15 GRAMMAR_E tiraráh•karu                   they have planted (perfect)    was tir; no headword has this form
+  2560  L15 GRAMMAR_E tiraráh•kiwik•usuku'           they roast corn                was tir; no headword has this form
+  2561  L15 GRAMMAR_E tiraráh•kiwiku'                they are roasting corn         was tir; no headword has this form
+  2562  L15 GRAMMAR_E tiraráh•kiwi                   they have roasted corn         was tir; no headword has this form
+  2563  L15 PHRASE    Aka, hiri we ti•pítsi'!        Gee, it's cold in here!        was akaʔ; no headword has this form
+  2564  L15 PHRASE    Aka, hiri we ta•hú•tuhtu'!     Gee, it's cold in this wind!   was akaʔ; no headword has this form
+  2573  L15 GRAMMAR_E Kut'at•tsu•á•ista.             It may rain.                   was ku; no headword has this form
+  2575  L16 PHRASE    KITSKÉ WE RU'                  What Time Is It?               was kic; no headword has this form
+  2577  L16 BASIC_WOR kitské we ru'                  what time is it                was kic; no headword has this form
+  2585  L16 DIALOGUE  Kitske --'e ru '?              What time is it?               was kic; no headword has this form
+  2588  L16 DIALOGUE  Tatih•ka•isa' hiras.           I came home at night.          was ta; no headword has this form
+  2599  L16 PHRASE    Ka we rásih•wata'?             Are you up?                    was ka; no headword has this form
+  2601  L16 PHRASE    Tat•atsíks•tehu'.              I am happy.                    was ta; no headword has this form
+  2602  L17 BASIC_WOR tiruks•tsakariki               yesterday                      was tir; no headword has this form
+  2606  L17 BASIC_WOR tatutsiks•á•wahri'             I was working                  was ta; no headword has this form
+  2607  L17 BASIC_WOR tatiks•káahu'                  I was dancing                  was ta; no headword has this form
+  2608  L17 BASIC_WOR tatúks•pawáktiku'              I was talking                  was ta; no headword has this form
+  2609  L17 BASIC_WOR tatuks•akúhtaku'               I was playing                  was ta; no headword has this form
+  2610  L17 DIALOGUE  Kirike rasutsíks•ari tiruks•ts What were you doing yesterday? was kiri; no headword has this form
+  2611  L17 DIALOGUE  Tatutsiks•á•wahri' tiruks•tsak I was working yesterday.       was ta; no headword has this form
+  2613  L17 DIALOGUE  Tíruks•tsak•ariki tatutsiks•á• I was working yesterday.       was tir; no headword has this form
+  2617  L17 ADDITIONA tiruks•tatkiu'                 last night                     was tir; no headword has this form
+  2619  L17 ADDITIONA tat•aspátasit                  I started                      was ta; no headword has this form
+  2620  L17 ADDITIONA táh•rarehats                   I finished                     was ta; no headword has this form
+  2622  L17 GRAMMAR_E sák•ariki                      a day (sun standing)           was sa; no headword has this form
+  2623  L17 GRAMMAR_E tatutsíks•ari'                 I was doing it                 was ta; no headword has this form
+  2625  L17 PHRASE    Ka ru rut•tsírau'?             Is it alright?                 was ka; no headword has this form
+  2626  L17 PHRASE    Ka rúr•rahe ti rasut•ari'?     Are you doing okay?            was ka; no headword has this form
+  2627  L17 PHRASE    Ka we ras•taré•hats?           Are you finished?              was ka; no headword has this form
+  2628  L17 PHRASE    Kiriké rasut•atsiks•u'?        What do you think about it?    was kiri; no headword has this form
+  2629  L17 PHRASE    Tasir•atsiks•tíus.             You're smart.                  was ta; no headword has this form
+  2630  L17 GRAMMAR_E Také ra•há•kawaats?            Who ate?                       was ta; no headword has this form
+  2631  L17 GRAMMAR_E Tat•á•kawaats.                 I ate                          was ta; no headword has this form
+  2632  L17 GRAMMAR_E Tas•á•kawaats.                 You ate.                       was ta; no headword has this form
+  2637  L17 GRAMMAR_E Tahrak•á•kawaats.              We (3+) ate.                   was ta; no headword has this form
+  2638  L17 GRAMMAR_E Tastak•á•kawaats.              You (3+) ate.                  was ta; no headword has this form
+  2640  L17 GRAMMAR_E Také ruks•á•kawahtsu'?         Who was eating?                was ta; no headword has this form
+  2641  L17 GRAMMAR_E Tatuks•á•kawahtsu'.            I was eating.                  was ta; no headword has this form
+  2642  L17 GRAMMAR_E Tasuks•á•kawahtsu'.            You were eating.               was ta; no headword has this form
+  2644  L17 GRAMMAR_E Tatsiks•á•kawahtsu'.           You and I were eating.         was ta; no headword has this form
+  2648  L17 GRAMMAR_E Tatukstak•á•kawahtsu'.         We (3+) were eating.           was ta; no headword has this form
+  2649  L17 GRAMMAR_E Tasukstak•á•kawahtsu'.         You (3 , ) were eating.        was ta; no headword has this form
+  2651  L18 BASIC_WOR tsikstit tát•pari'             I'm fine, I've been fine       was ci; no headword has this form
+  2653  L18 BASIC_WOR tatutsiks•á•wahri'             I've been busy (working)       was ta; no headword has this form
+  2657  L18 BASIC_WOR tatutsiks•kahurah•wériku'      I've been traveling (sight-see was ta; no headword has this form
+  2658  L18 DIALOGUE  Tsikstit ka rás•pari'?         Are you well?                  was ci; no headword has this form
+  2659  L18 DIALOGUE  Ahu', tsikstít tat•pari'.      Yes, I'm fine.                 was a; no headword has this form
+  2660  L18 DIALOGUE  Kiriké rasutsíks•ari?          What have you been doing?      was kiri; no headword has this form
+  2662  L18 ADDITIONA tat•atsiks•kápakis             I'm sad (poor in spirit)       was ta; no headword has this form
+  2663  L18 ADDITIONA tatuks•atsiks•kapakis          I've been sad                  was ta; no headword has this form
+  2664  L18 ADDITIONA tat•atsíks•tehu'               I'm happy                      was ta; no headword has this form
+  2665  L18 ADDITIONA tatuks•atsíks•tehu'            I've been happy                was ta; no headword has this form
+  2666  L18 ADDITIONA tsiksu tatut•á•wahri'          I'm thinking                   was ci; no headword has this form
+  2671  L18 PHRASE    tat•atsiks•kápakis             Let me help.                   was ta; no headword has this form
+  2673  L18 GRAMMAR_E Také ratutsiks•á•wahri'?       Who's been busy?               was ta; no headword has this form
+  2685  L19 BASIC_WOR tát•uh•ta                      I will go                      was ta; no headword has this form
+  2686  L19 BASIC_WOR istú tatir•a•hista             I will come back               was is; no headword has this form
+  2687  L19 BASIC_WOR tatut•ári'sta                  I will do it                   was ta; no headword has this form
+  2688  L19 BASIC_WOR tatut•á•wahri•usta             I will work (I will be working was ta; no headword has this form
+  2689  L19 BASIC_WOR tat•katá•hak'sta               I will quit                    was ta; no headword has this form
+  2691  L19 DIALOGUE  Kirike rasut•ari'sta rahesa'?  What will you do tomorrow?     was kiri; no headword has this form
+  2694  L19 DIALOGUE  Tát•uh•ta tihé ra•pa•ariki'.   I will go next month.          was ta; no headword has this form
+  2699  L19 ADDITIONA tatír•a                        I am coming                    was ta; no headword has this form
+  2700  L19 ADDITIONA tatír•a•hista                  I will come                    was ta; no headword has this form
+  2701  L19 ADDITIONA tat•itsah•kaísuh•ta            I will go to town              was ta; no headword has this form
+  2702  L19 ADDITIONA tat•aspátasik'sta              I will start                   was ta; no headword has this form
+  2703  L19 ADDITIONA tah•rarehats•ista              I will finish                  was ta; no headword has this form
+  2705  L19 GRAMMAR_E Tatut•ári'sta.                 I'll do it.                    was ta; no headword has this form
+  2706  L19 GRAMMAR_E Tatut•arí•usta.                I'll be doing it.              was ta; no headword has this form
+  2707  L19 GRAMMAR_E Tatut•á•wahri•usta.            I'll be working.               was ta; no headword has this form
+  2744  L19 PHRASE    tirút•tatsta                   standing up                    was tir; no headword has this form
+  2745  L19 PHRASE    tat•státs•tak'sta.             I will shoot it                was ta; no headword has this form
+  2746  L3  PHRASE    KIRIKÉ RUT•U'?                 What Does It Look Like?        was kiri; no headword has this form
+  2753  L3  BASIC_WOR tí rihu'                       it's big                       was tir; no headword has this form
+  2754  L4  DIALOGUE  KIRIKÉ RAS•TA?                 What Do You Have?              was kiri; no headword has this form
+  2755  L4  BASIC_WOR tás•ta                         you have it                    was ta; no headword has this form
+  2756  L4  BASIC_WOR táh•ra                         I have it                      was ta; no headword has this form
+  2758  L4  BASIC_WOR táhrar•ra                      I have some                    was ta; no headword has this form
+  2759  L11 DIALOGUE  KA RÚH•RATSAUS?                Are You Hungry?                was kari; no headword has this form
+  2760  L11 BASIC_WOR tikúh•ratsaus                  I'm hungry                     was tiki; no headword has this form
+  2764  L11 BASIC_WOR kakuh•táhare                   it tastes bad                  was ka; no headword has this form
+  2766  L11 BASIC_WOR kakúh•kaharawere               it smells bad                  was ka; no headword has this form
+  2767  L11 DIALOGUE  Ka rúh•ratsaus?                Are you hungry?                was ka; no headword has this form
+  2769  L11 DIALOGUE  Kakí', we tatuks•á•ka-wahtsu'. No, I ate (was eating).        was ka; no headword has this form
+  2770  L11 DIALOGUE  Kiriké rasuks•a?               What did you eat?              was kiri; no headword has this form
+  2771  L11 DIALOGUE  Tatuks•a kísatski.             I ate (was eating) meat.       was ta; no headword has this form
+  2772  L11 DIALOGUE  Ka ruruks•táhare?              Did it taste good?             was ka; no headword has this form
+  2773  L11 DIALOGUE  Kakí', kakuruks•táhare.        No, it tasted bad.             was ka; no headword has this form
+  2786  L11 ADDITIONA kait tá•taha'                  it's salty (salt flavors it to was ka; no headword has this form
+  2787  L11 ADDITIONA tí•ra•hu'                      it's spoiled                   was tir; no headword has this form
+  2796  L11 ADDITIONA kíri•wusu'                     beer                           was kiri; no headword has this form
+  2806  L11 PHRASE    Kirike rás•itska'?             What do you want?              was kiri; no headword has this form
+  2809  L11 PHRASE    Istu ka rás•itska'?            Do you want more?              was is; no headword has this form
+  2810  L11 PHRASE    Aka', hiri we túh•kaharawere.  Ah, that smells good.          was akaʔ; no headword has this form
+  2812  L11 GRAMMAR_E Tátuks•at.                     I went                         was ta; no headword has this form
+  2814  L11 GRAMMAR_E Tat•kíka'.                     I have drunk, I drank.         was ta; no headword has this form
+  2815  L11 GRAMMAR_E Tat•kíkahu'.                   I am drinking.                 was ta; no headword has this form
+  2816  L11 GRAMMAR_E Tatúks•kika'.                  I drank, I had drunk.          was ta; no headword has this form
+  2817  L20 PHRASE    RATKU•WA•WAKTIT PARI'          I Want To Speak Pawnee.        was rat; no headword has this form
+  2818  L20 GRAMMAR_E tat•pá•waktit                  I have spoken                  was ta; no headword has this form
+  2819  L20 GRAMMAR_E ratku•wá•waktit Pari           for me to speak Pawnee         was rat; no headword has this form
+  2820  L20 GRAMMAR_E rátara•kuki                    (in) our (band's, tribe's) way was rat; no headword has this form
+  2822  L20 LESSON_HE RATKU•WA•WAKTIT PARI'          I Want To Speak Pawnee.        was rat; no headword has this form
+  2823  L20 GRAMMAR_E tat•pá•waktit                  I have spoken                  was ta; no headword has this form
+  2824  L20 GRAMMAR_E ratku•wá•waktit Pari           for me to speak Pawnee         was rat; no headword has this form
+  2825  L20 GRAMMAR_E rátara•kuki                    (in) our (band's, tribe's) way was rat; no headword has this form
+  2827  L20 BASIC_WOR ratkut•ára                     for me to do it                was rat; no headword has this form
+  2830  L20 BASIC_WOR ratkú•u•ta                     for me to go                   was rat; no headword has this form
+  2833  L20 DIALOGUE  Kirike rás•itska raskut•ara?   What do you want to do?        was kiri; no headword has this form
+  2834  L20 DIALOGUE  Tát•itska ratkú•u•ta           I want to go.                  was ta; no headword has this form
+  2835  L20 DIALOGUE  Ka rás•itska ratkú•u•ta        Do you want me to go?          was ka; no headword has this form
+  2836  L20 DIALOGUE  Kakí', tat•itska rakú•u•ta     No, I want him to go.          was ka; no headword has this form
+  2838  L20 DIALOGUE  tatitska                       I want                         was ta; no headword has this form
+  2839  L20 ADDITIONA ratku•'tsah•káisat•ta          for me to go to town           was rat; no headword has this form
+  2840  L20 ADDITIONA ratku•kaísuh•ta                for me to go home              was rat; no headword has this form
+  2841  L20 ADDITIONA ratku•rapíha'                  for me to buy it               was rat; no headword has this form
+  2842  L20 ADDITIONA ratíhku•riusis•ára'            for me to learn                was rat; no headword has this form
+  2843  L20 ADDITIONA ratku•há•kawaats               for me to eat                  was rat; no headword has this form
+  2851  L20 PHRASE    Ka rás•kika•ista rekíts•katit? Do you want (will you drink) c was ka; no headword has this form
+  2855  L20 PHRASE    (Tsikstit ka rás•pari?)        Are you doing well?            was ci; no headword has this form
+  2856  L20 PHRASE    Ahu', tsikstit tát•ku,         Yes, Fm fine,                  was a; no headword has this form
+  2860  L20 GRAMMAR_E tir                            It must have been that . . . ( was tir; form fits tir; meaning does not
+  2861  L20 GRAMMAR_E kur                            perhaps . . .                  was ku; no headword has this form
+  2864  L20 READING   Ti ratarak•akitah•ku Pari tuh• This our Pawnee tribe is made  was tir; no headword has this form
+  2865  L20 READING   Pitkus•ihiri asku ri•katiharu  Twice a year they went hunting was pitku; no headword has this form
+  2866  L20 READING   Ku•kur•rutsiks•taru ruksiri•wi Perhaps there were about thirt was ku; no headword has this form
+  2871  L20 PHRASE    Take hawa riku•witu•ruhu       Someone else may bewitch you   was ta; no headword has this form
+  2872  L20 PHRASE    Ti rat•ari wararuts•kitsau'    This is mine, this silky cutey was tir; no headword has this form
+  2873  L20 BASIC_WOR kas•i•wawa                     you will eat                   was ka; no headword has this form
+  2874  L20 BASIC_WOR kas•i•kika'                    you will drink                 was ka; no headword has this form
+
+== 3. Blue Book sentences as examples: removed from (entry: sentence)
+  kiri           Kiriké ru'?
+  kari           Ka rú hitu'?
+  a              Ahu', tí hitu'.
+  ka             Ka rú karitki?
+  ka             Kakí, kakí karitki.
+  kiri           Kiriké ra•tarawis rakis?
+  ka             Ka rá•pahaat rakis?
+  a              Áhu', rakis tí pahaat.
+  ka             Ka rá•tareus rakis?
+  ka             Kakí tareus, tí pahaat.
+  tir            Ti rit•páks•ku.
+  tir            Ti rit•kírik•ta.
+  ka             Ka ra•paks•táari'?
+  ka             Kaki ku•paks•táari',
+  ka             Kakí', pita t'éwasku'.
+  ta             Také ru'?
+  ci             Tsiru ka ra•á apat?
+  ka             ka rá•wari'
+  ka             Kakí', atipat we tí•hura•hats.
+  kiri           Kirike rás•taspe'?
+  ta             Táh•raspe' asaki.
+  ka             Ka ras•huras asaki?
+  a              Ahu', tat•huras asaki.
+  ka             Ka rá•awari rikutski?
+  ka             Kakí', rikutski tí•'isat.
+  kiwak          Kiwaku wé túh•kuksas.
+  kiwak          Kiwaku tí pahaat.
+  kiri           Kiriké ruh•ra' paresu'?
+  ka             Ka rás•tapu rekits•tíwiru'?
+  ka             Kakí', tiku•rapu rekits•tíwiru'.
+  kic            Kitske rá•awitsu'?
+  ku             Kuka ras•tá papitsisu'?
+  ta             Tatuks•at Pári.
+  ta             Tatuks•itsah•ká'isat.
+  kiri           Kiriké rasut•erit?
+  ka             Kaas raku•kariu tatutak•érit.
+  ta             Tawit kaas tatutak•érit.
+  ta             Tatuks•itsah•káa.
+  tir            Ti Ríhita.
+  tir            ti ratukstak•kítkeu'
+  ta             Tatúks•at.
+  ta             Tasúks•at.
+  tuksat         Túks•at.
+  ta             Tatúksta•pu'.
+  ta             Tasúksta•pu'.
+  ka             Kaki', pita tur•átku' kuruks.
+  ka             Ka ruks•paká•rihu?
+  ka             Kaki', kakuks•pakd•rihu', tuks•td•pahit.
+  a              Asaki tirah•kí•wat.
+  ta             Taraha kata•káksa'.
+  a              Arusa ti•kis•kata•wákta'.
+  ku             Kuruks ti•wáktahu'.
+  kiri           Kirike rut•káhu•raru' retskuhke?
+  kiri           Kiriké rusut•ari•úsuku retskuhke?
+  akaʔ           Aka, hiri we ti•pítsi'!
+  akaʔ           Aka, hiri we ta•hú•tuhtu'!
+  kic            Kitske --'e ru '?
+  ta             Tatih•ka•isa' hiras.
+  kiri           Kirike rasutsíks•ari tiruks•tsak•ariki?
+  ta             Tatutsiks•á•wahri' tiruks•tsak•ariki.
+  tir            Tíruks•tsak•ariki tatutsiks•á•wahri'.
+  ci             Tsikstit ka rás•pari'?
+  a              Ahu', tsikstít tat•pari'.
+  kiri           Kiriké rasutsíks•ari?
+  kiri           Kirike rasut•ari'sta rahesa'?
+  ta             Tát•uh•ta tihé ra•pa•ariki'.
+  kiri           KIRIKÉ RUT•U'?
+  kiri           KIRIKÉ RAS•TA?
+  kari           KA RÚH•RATSAUS?
+  ka             Ka rúh•ratsaus?
+  ka             Kakí', we tatuks•á•ka-wahtsu'.
+  kiri           Kiriké rasuks•a?
+  ta             Tatuks•a kísatski.
+  ka             Ka ruruks•táhare?
+  ka             Kakí', kakuruks•táhare.
+  kiri           Kirike rás•itska raskut•ara?
+  ta             Tát•itska ratkú•u•ta
+  ka             Ka rás•itska ratkú•u•ta
+  ka             Kakí', tat•itska rakú•u•ta
+  ka             Ka rás•kika•ista rekíts•katit?
+  ci             (Tsikstit ka rás•pari?)
+  a              Ahu', tsikstit tát•ku,
+  tir            Ti ratarak•akitah•ku Pari tuh•raru kskitiiks akitaru', he hiri we tahrak•ut; Tsawii, Kitkahahki, Pitahawirata, a Tskiri. Hiri wi•tuks•it•at akar•raratau t'eks•kurit Kits Katus.
+  pitku          Pitkus•ihiri asku ri•katiharu tirah•pares•pari'. Wi•tiks-kawutik•usuku taraha a rahurahki. Hawa tikstarah•ka-wa•karuku rikisu', atit, pahuks. Tirarah•kiwi a wi•tiks-takas•karuk•usuku a tirah•tsaisiku atit a pahuks.
+  ku             Ku•kur•rutsiks•taru ruksiri•witau tsahriks raku•ka•wihat asku akar•raratau. Hawa ah•rukstah•ka•wariki arusa pit-sikat
+
+== 3b. ... and placed under (entry: sentence)
+  asaaki         Ahu', tat•huras asaki.
+  hiituʔ         Ahu', tí hitu'.
+  aruusaʔ        Arusa ti•kis•kata•wákta'.
+  asaaki         Asaki tirah•kí•wat.
+  asaaki         Ka ras•huras asaki?
+  rekictiwiruʔ   Ka rás•tapu rekits•tíwiru'?
+  rikucki        Ka rá•awari rikutski?
+  rakis          Ka rá•pahaat rakis?
+  rakis          Ka rá•tareus rakis?
+  hiituʔ         Ka rú hitu'?
+  karitki        Ka rú karitki?
+  kaakiiʔ        Kaki', kakuks•pakd•rihu', tuks•td•pahit.
+  kaakiiʔ        Kaki', pita tur•átku' kuruks.
+  piita          Kaki', pita tur•átku' kuruks.
+  kuruks         Kaki', pita tur•átku' kuruks.
+  kaakiiʔ        Kakí', atipat we tí•hura•hats.
+  atipat         Kakí', atipat we tí•hura•hats.
+  kaakiiʔ        Kakí', kakuruks•táhare.
+  kaakiiʔ        Kakí', pita t'éwasku'.
+  piita          Kakí', pita t'éwasku'.
+  kaakiiʔ        Kakí', rikutski tí•'isat.
+  rikucki        Kakí', rikutski tí•'isat.
+  kaakiiʔ        Kakí', tat•itska rakú•u•ta
+  kaakiiʔ        Kakí', tiku•rapu rekits•tíwiru'.
+  rekictiwiruʔ   Kakí', tiku•rapu rekits•tíwiru'.
+  kaakiiʔ        Kakí', we tatuks•á•ka-wahtsu'.
+  karitki        Kakí, kakí karitki.
+  rahesaʔ        Kirike rasut•ari'sta rahesa'?
+  reckuhke       Kirike rut•káhu•raru' retskuhke?
+  rakis          Kiriké ra•tarawis rakis?
+  paresuʔ        Kiriké ruh•ra' paresu'?
+  reckuhke       Kiriké rusut•ari•úsuku retskuhke?
+  paapicisuʔ     Kuka ras•tá papitsisu'?
+  kuruks         Kuruks ti•wáktahu'.
+  hiras          Tatih•ka•isa' hiras.
+  kisaacki       Tatuks•a kísatski.
+  tawit          Tawit kaas tatutak•érit.
+  apat           Tsiru ka ra•á apat?
+  asaaki         Táh•raspe' asaki.
+  rakis          Áhu', rakis tí pahaat.
+
+== 3c. Sentences that are an example of no entry now (they stay in the lessons)
+  (Tsikstit ka rás•pari?)
+  Ahu', tsikstit tát•ku,
+  Ahu', tsikstít tat•pari'.
+  Aka, hiri we ta•hú•tuhtu'!
+  Aka, hiri we ti•pítsi'!
+  KA RÚH•RATSAUS?
+  KIRIKÉ RAS•TA?
+  KIRIKÉ RUT•U'?
+  Ka ra•paks•táari'?
+  Ka ruks•paká•rihu?
+  Ka ruruks•táhare?
+  Ka rás•itska ratkú•u•ta
+  Ka rás•kika•ista rekíts•katit?
+  Ka rúh•ratsaus?
+  Kaas raku•kariu tatutak•érit.
+  Kaki ku•paks•táari',
+  Kakí tareus, tí pahaat.
+  Kirike rasutsíks•ari tiruks•tsak•ariki?
+  Kirike rás•itska raskut•ara?
+  Kirike rás•taspe'?
+  Kiriké rasuks•a?
+  Kiriké rasutsíks•ari?
+  Kiriké rasut•erit?
+  Kiriké ru'?
+  Kitske --'e ru '?
+  Kitske rá•awitsu'?
+  Kiwaku tí pahaat.
+  Kiwaku wé túh•kuksas.
+  Ku•kur•rutsiks•taru ruksiri•witau tsahriks raku•ka•wihat asku akar•raratau. Hawa ah•rukstah•ka•wariki arusa pit-sikat
+  Pitkus•ihiri asku ri•katiharu tirah•pares•pari'. Wi•tiks-kawutik•usuku taraha a rahurahki. Hawa tikstarah•ka-wa•karuku rikisu', atit, pahuks. Tirarah•kiwi a wi•tiks-takas•karuk•usuku a tirah•tsaisiku atit a pahuks.
+  Také ru'?
+  Taraha kata•káksa'.
+  Tasúksta•pu'.
+  Tasúks•at.
+  Tatuks•at Pári.
+  Tatuks•itsah•ká'isat.
+  Tatuks•itsah•káa.
+  Tatutsiks•á•wahri' tiruks•tsak•ariki.
+  Tatúksta•pu'.
+  Tatúks•at.
+  Ti Ríhita.
+  Ti ratarak•akitah•ku Pari tuh•raru kskitiiks akitaru', he hiri we tahrak•ut; Tsawii, Kitkahahki, Pitahawirata, a Tskiri. Hiri wi•tuks•it•at akar•raratau t'eks•kurit Kits Katus.
+  Ti rit•kírik•ta.
+  Ti rit•páks•ku.
+  Tsikstit ka rás•pari'?
+  Tát•itska ratkú•u•ta
+  Tát•uh•ta tihé ra•pa•ariki'.
+  Tíruks•tsak•ariki tatutsiks•á•wahri'.
+  Túks•at.
+  ka rá•wari'
+  ti ratukstak•kítkeu'
+
+== 4. blue_book_attested (entry: was -> now)
+  Astarahi               1 -> 0
+  Witiʔahuuhaʔu Piiraʔuʔ 1 -> 0
+  a                      1 -> 0
+  aki                    1 -> 0
+  ariʔ                   1 -> 0
+  aspit                  1 -> 0
+  ca                     1 -> 0
+  ci                     1 -> 0
+  ckirihkaapiraat        1 -> 0
+  cuskiituʔ              1 -> 0
+  hiriitik               1 -> 0
+  hiruʔ                  1 -> 0
+  iksa                   1 -> 0
+  irikisat               1 -> 0
+  is                     1 -> 0
+  ka                     1 -> 0
+  kakaʔuc                1 -> 0
+  kari                   1 -> 0
+  kaʔas                  1 -> 0
+  kic                    1 -> 0
+  kira                   1 -> 0
+  kiri                   1 -> 0
+  kisu                   1 -> 0
+  kituhaʔuk              1 -> 0
+  kiwak                  1 -> 0
+  ku                     1 -> 0
+  pahit                  1 -> 0
+  pahuks                 1 -> 0
+  pitaksuʔ               1 -> 0
+  rat                    1 -> 0
+  raʔa                   1 -> 0
+  rutki rahaawarii       1 -> 0
+  sa                     1 -> 0
+  ta                     1 -> 0
+  tatat                  1 -> 0
+  tii                    1 -> 0
+  tir                    1 -> 0
+  tuksat                 1 -> 0
+  Ckiiri                 0 -> 1
+  Kicpaarukstiiʔ         0 -> 1
+  Kitkahaahki            0 -> 1
+  Kskiitiʔiks Rasakuuru  0 -> 1
+  Paari                  0 -> 1
+  Piiraʔuʔ Rarahkaataʔiispuu 0 -> 1
+  Piitahaawiraata        0 -> 1
+  Pitku Rasakuuru        0 -> 1
+  Riihitawiru            0 -> 1
+  Tawit Rasakuuru        0 -> 1
+  Tiirawaahat            0 -> 1
+  aaka, aakaʔ, aakaʔa    0 -> 1
+  ahitki                 0 -> 1
+  akaaruʔ                0 -> 1
+  akahtaahuruus          0 -> 1
+  akitaaruʔ              0 -> 1
+  aruusaʔ                0 -> 1
+  asaac                  0 -> 1
+  asaaki                 0 -> 1
+  askuhuukita            0 -> 1
+  aspiituʔ               0 -> 1
+  asuuruʔ                0 -> 1
+  ataat                  0 -> 1
+  atiit                  0 -> 1
+  atiʔas                 0 -> 1
+  capaaraʔu              0 -> 1
+  capaat                 0 -> 1
+  caskiiʔit, caskiit     0 -> 1
+  ckuskakusuʔ            0 -> 1
+  cpiiraruus             0 -> 1
+  cuuraasuʔ              0 -> 1
+  cuuraki                0 -> 1
+  cuustit                0 -> 1
+  haakawaahcisuʔ         0 -> 1
+  haawit                 0 -> 1
+  hiiruʔ                 0 -> 1
+  huupirit               0 -> 1
+  iirikis                0 -> 1
+  iraactiʔ               0 -> 1
+  istuʔ                  0 -> 1
+  kaakaʔ                 0 -> 1
+  kaakiiʔ                0 -> 1
+  kaasuʔ                 0 -> 1
+  kaaʔas                 0 -> 1
+  kaciiki                0 -> 1
+  karaaruʔ               0 -> 1
+  kataaruʔ               0 -> 1
+  kicka                  0 -> 1
+  kickaatiit             0 -> 1
+  kiicuʔ                 0 -> 1
+  kiirahkata             0 -> 1
+  kiiraraasiituʔ         0 -> 1
+  kiirariituʔ            0 -> 1
+  kiisuʔ                 0 -> 1
+  kisaacki               0 -> 1
+  kituuʔuʔ               0 -> 1
+  kskiickucuuʔ           0 -> 1
+  kskiitiʔiks            0 -> 1
+  kskiksaapic            0 -> 1
+  kurahuus               0 -> 1
+  kurukskaatiit          0 -> 1
+  kuucki                 0 -> 1
+  paa                    0 -> 1
+  paapicispahat          0 -> 1
+  paapicisuʔ             0 -> 1
+  paawaktiku, paawaktikus 0 -> 1
+  pacuukaʔ               0 -> 1
+  pahiituʔ               0 -> 1
+  pahuks                 0 -> 1
+  pahukstaatuʔ           0 -> 1
+  pakskuukuʔuʔ           0 -> 1
+  piita                  0 -> 1
+  piitaʔuʔ               0 -> 1
+  pitkusiksaapic         0 -> 1
+  raaharisuʔ             0 -> 1
+  raahikuucuʔ            0 -> 1
+  raakuʔ                 0 -> 1
+  raasiituʔ              0 -> 1
+  rakickaatiit           0 -> 1
+  raktiiki               0 -> 1
+  rakuukita              0 -> 1
+  rawa, nawa             0 -> 1
+  rikatihaahtiiraraʔ     0 -> 1
+  rikatihaaruʔ           0 -> 1
+  ripiikuʔ               0 -> 1
+  riʔaat                 0 -> 1
+  rutpaacat              0 -> 1
+  ruuskuukuʔuʔ           0 -> 1
+  ruusuʔ                 0 -> 1
+  sakuhwaarukstiiʔ       0 -> 1
+  tarahaariki            0 -> 1
+  tarahaataakaa          0 -> 1
+  tariʔ                  0 -> 1
+  taʔuutuʔ               0 -> 1
+  tiraakis               0 -> 1
+  tiraakuʔ               0 -> 1
+  tiwaat                 0 -> 1
+  tuupic                 0 -> 1
+  uusuʔ                  0 -> 1

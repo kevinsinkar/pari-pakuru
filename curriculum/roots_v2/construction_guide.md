@@ -59,11 +59,11 @@ Not covered by any rule: changes of vowel length elsewhere in a word. 587 printe
 
 | Blue Book | Parks | Learner spelling | Say it | IPA (Parks) | Meaning | Built from | Source |
 |---|---|---|---|---|---|---|---|
+| *akaru '* (L3) | *akaaruʔ* | *akâru'* | `UH-kah-doo'` | [ə́·kaa·rʊʔ] | dwelling, lodge, house. | *akaar* 'dwelling' + *uʔ* NOM | `SK-akaaruq-p9-0108`, Parks p. 357 |
+| *Akitáru'* (L13, p. 87) | *akitaaruʔ* | *akitâru'* | `UH-kih-tah-doo'` | [ə́·kɪ·taa·rʊʔ] | tribe, band; nationality. | *akitaar* 'tribe' + *uʔ* NOM | `SK-akitaaruq-p11-0121`, Parks p. 359 |
 | *asu'* (L5, p. 49) | *asuʔ* | *asu'* | `UH-soo'` | [ə́·sʊʔ] | foot; paw. | *as* 'foot' + *uʔ* NOM | `SK-asuq-p18-0202`, Parks p. 366 |
 | *tsiksu'* (L5, p. 51) | *ciksuʔ* | *čiksu'* | `CHIHK-soo'` | [čɪ́k·sʊʔ] | esophagus, gullet; trachea, windpipe. | *aciks* 'mind' + *uʔ* NOM | `SK-ciksuq-p29-0448`, Parks p. 377 |
 | *tsusu'* (L5, p. 51) | *cusuʔ* | *čusu'* | `CHOO-soo'` | [čʊ́·sʊʔ] | nose; snout of an animal. | *icus* 'nose' + *uʔ* NOM | `SK-cusuq-p32-0528`, Parks p. 380 |
-| *hitu'* (L1, p. 29) | *hiituʔ* | *hîtu'* | `HEE-too'` | [hií·tʊʔ] | feather. | *hiit* 'feather' + *uʔ* NOM | `SK-hiituq-p390-3856`, Parks p. 390 |
-| *iksu'* (L5, p. 49) | *iksuʔ* | *iksu'* | `IHK-soo'` | [ɪ́k·sʊʔ] | hand. | *iks* 'hand' + *uʔ* NOM | `SK-iksuq-p64-1111`, Parks p. 412 |
 
 **Exceptions found.** These words match the pattern, but their pieces do not reproduce the headword exactly by the rules above, so they are not taught here: *ataatuʔ* from *atat* + *uʔ* (`SK-ataatuq-p19-0224`, Parks p. 367); *awiriituʔ* from *awirit* + *uʔ* (`SK-awiriituq-p25-0339`, Parks p. 373); *cakiicuʔ* from *icakihc* + *uʔ* (`SK-cakiicuq-p27-0406`, Parks p. 375).
 
@@ -81,11 +81,11 @@ Not covered by any rule: changes of vowel length elsewhere in a word. 587 printe
 
 | Blue Book | Parks | Learner spelling | Say it | IPA (Parks) | Meaning | Built from | Source |
 |---|---|---|---|---|---|---|---|
-| — | *askuhuukita* | *askuhûkita* | `uhs-koo-HOO-kih-tuh` | [əs·kʊ·huú·kɪ·tə] | eleven. | *askus* 'added' + *huukita* 'on top' | `SK-askuhuukita-p16-0174`, Parks p. 364 |
+| *asku•hú•kita* (L8, p. 68) | *askuhuukita* | *askuhûkita* | `uhs-koo-HOO-kih-tuh` | [əs·kʊ·huú·kɪ·tə] | eleven. | *askus* 'added' + *huukita* 'on top' | `SK-askuhuukita-p16-0174`, Parks p. 364 |
 | — | *iitkataku* | *îtkataku* | `EET-kuh-tuh-koo` | [iít·kə·tə·kʊ] | policeman; sheriff, marshal. | *iit* 'breast' + *katakus* 'against' | `SK-iitkataku-p61-1046`, Parks p. 409 |
-| — | *kickaatiit* | *kickâtît* | `KIHTS-kah-teet` | [kɪ́ts·kaa·tiit] | Mississippi River. | *kic* 'liquid' + *kaatiit* 'black' | `SK-kickaatiit-p86-1612`, Parks p. 434 |
+| *Kits•Katit* (L2, p. 38) | *kickaatiit* | *kickâtît* | `KIHTS-kah-teet` | [kɪ́ts·kaa·tiit] | Mississippi River. | *kic* 'liquid' + *kaatiit* 'black' | `SK-kickaatiit-p86-1612`, Parks p. 434 |
 | — | *Kickatuus* | *Kickatûs* | `KIHTS-kuh-toos` | [kɪ́ts·kə·tuus] | Platte River. | *kic* 'liquid' + *katuus* 'flat' | `SK-kickatuus-p86-1625`, Parks p. 434 |
-| — | *Kicpaarukstiiʔ* | *Kicpârukstî'* | `kihts-PAH-dooks-tee'` | [kɪts·paá·rʊks·tiiʔ] | Missouri River. | *kic* 'liquid' + *waarukstii* 'holy' | `SK-kicpaarukstiiq-p87-1643`, Parks p. 435 |
+| *Kits•Paruksti* (L2, p. 38) | *Kicpaarukstiiʔ* | *Kicpârukstî'* | `kihts-PAH-dooks-tee'` | [kɪts·paá·rʊks·tiiʔ] | Missouri River. | *kic* 'liquid' + *waarukstii* 'holy' | `SK-kicpaarukstiiq-p87-1643`, Parks p. 435 |
 
 **Exceptions found.** These words match the pattern, but their pieces do not reproduce the headword exactly by the rules above, so they are not taught here: *ahictarariituʔ* from *ahiht* + *tararit* + *uʔ* (`SK-ahictarariituq-p9-0090`, Parks p. 357); *ahitkiicahiihtuʔ* from *ahiht* + *kiicahiht* + *uʔ* (`SK-ahitkiicahiihtuq-p9-0098`, Parks p. 357); *ahitkiicuʔ* from *ahiht* + *kic* + *uʔ* (`SK-ahitkiicuq-p9-0099`, Parks p. 357).
 
@@ -119,19 +119,19 @@ Not covered by any rule: changes of vowel length elsewhere in a word. 587 printe
 
 **Where it applies.** Verbs. The noun comes first, in the noun slot of the stem (Grammatical Overview p. 43; p. 44, Table 15 slot 2).
 
-**Tier A.** 57 tier A/B words follow this recipe (38 tier A, 19 tier B); 21 more match the pattern but are tier C and are not shown.
+**Tier A.** 63 tier A/B words follow this recipe (42 tier A, 21 tier B); 25 more match the pattern but are tier C and are not shown.
 
-**At the seam.** 33 of these words join with no change. In the rest: r > h before a consonant (7); ʔ between two vowels that do not contract (6); r > t after an obstruent (4); w > p after a hard consonant (4); a long vowel shortens before h + consonant (2).
+**At the seam.** 37 of these words join with no change. In the rest: r > h before a consonant (8); ʔ between two vowels that do not contract (6); w > p after a hard consonant (5); r > t after an obstruent (4); a long vowel shortens before h + consonant (3).
 
 **Attested examples.**
 
 | Blue Book | Parks | Learner spelling | Say it | IPA (Parks) | Meaning | Built from | Source |
 |---|---|---|---|---|---|---|---|
+| — | *kiiskatawakta/taa* | *kîskatawakta/tâ* | `kees-kuh-tuh-wuhk-tuh/tah` | [–kiis·kə·tə·wək·tə/taa–] | neigh; whinny, as a horse. | *kiis* 'bone' + *kata* 'on a vertical surface' + *waktaa* 'a sound' | `SK-kiiskatawakta/taa-p92-1734`, Parks p. 440 |
 | — | *aahwiriik* | *âhwirîk* | `ahh-wih-dee(k/t)` | [–aah·wɪ·rii{k/t}–] | extract a tooth, pull out a tooth. | *aar* 'tooth' + *wiriik* 'pull up' | `SK-aahwiriik-p2-0046`, Parks p. 350 |
 | — | *haakararuus* | *hâkararûs* | `hah-kuh-duh-doos` | [–haa·kə·rə·ruus–] | have whiskers, have a beard. | *haaka* 'mouth' + *raruus* 'fuzzy' | `SK-haakararuus-p34-0573`, Parks p. 382 |
 | — | *haakarihuur* | *hâkarihûr* | `hah-kuh-dih-hoo(d)` | [–haa·kə·rɪ·huu(r)–] | have a large mouth, as a person; have a large mouth, opening, orifice… | *haaka* 'mouth' + *rihuur* 'big' | `SK-haakarihuur-p34-0576`, Parks p. 382 |
 | — | *hiitpiriik* | *hîtpirîk* | `heet-pih-dee(k/t)` | [–hiit·pɪ·rii{k/t}–] | pull out a feather, pluck a feather. | *hiit* 'feather' + *wiriik* 'pluck' | `SK-hiitpiriik-p390-3855`, Parks p. 390 |
-| — | *hiksukac* | *hiksukac* | `hihk-soo-kuhts` | [–hɪk·sʊ·kəts–] | be short-winded. | *hiks* 'breath' + *ukac* 'cut' | `SK-hiksukac-p390-3864`, Parks p. 390 |
 
 **Exceptions found.** These words match the pattern, but their pieces do not reproduce the headword exactly by the rules above, so they are not taught here: *aahkacaraʔuk* from *ut* + *aar* + *kar* + *taraʔuk* (`SK-aahkacaraquk-p2-0028`, Parks p. 350); *aaraarukaaʔat* from *aar* + *raar* + *hukaaʔat* (`SK-aaraarukaaqat-p351-3601`, Parks p. 351); *aaracaʔiwuu* from *aar* + *raar* + *tawiʔat* (`SK-aaracaqiwuu-p351-3602`, Parks p. 351).
 
@@ -281,11 +281,11 @@ Not covered by any rule: changes of vowel length elsewhere in a word. 587 printe
 
 | Blue Book | Parks | Learner spelling | Say it | IPA (Parks) | Meaning | Built from | Source |
 |---|---|---|---|---|---|---|---|
-| — | *tarahaariki* | *tarahâriki* | `TUH-duh-hah-dih-kih` | [tə́·rə·haa·rɪ·kɪ] | spoon (generic). | *tarahaa* 'female buffalo' + *arik* 'horn' + *kis* DIM | `SK-tarahaariki-p159-3123`, Parks p. 507 |
+| *táraha•riki'* (L10, p. 76) | *tarahaariki* | *tarahâriki* | `TUH-duh-hah-dih-kih` | [tə́·rə·haa·rɪ·kɪ] | spoon (generic). | *tarahaa* 'female buffalo' + *arik* 'horn' + *kis* DIM | `SK-tarahaariki-p159-3123`, Parks p. 507 |
 | *ahitki* (L3) | *ahitki* | *ahitki* | `uh-HIHT-kih` | [ə·hɪ́t·kɪ] | fat. | *ahiht* 'fat' + *kis* DIM | `SK-ahitki-p9-0097`, Parks p. 357 |
+| *asáki* (L8, p. 65) | *asaaki* | *asâki* | `uh-SAH-kih` | [ə·saá·kɪ] | dog. | *asaa* 'horse' + *kis* DIM | `SK-asaaki-p362-3736`, Parks p. 362 |
 | *karitki* (L1, p. 29) | *karitki* | *karitki* | `KUH-diht-kih` | [kə́·rɪt·kɪ] | rock, stone, pebble. | *karit* 'rock' + *kis* DIM | `SK-karitki-p79-1443`, Parks p. 427 |
 | *kísatski* (L11, p. 79) | *kisaacki* | *kisâcki* | `KIH-sahts-kih` | [kɪ́·saats·kɪ] | meat; flesh. | *kisaac* 'meat' + *kis* DIM | `SK-kisaacki-p98-1883`, Parks p. 446 |
-| *Kitkahahki* (L13, p. 88) | *Kitkahaahki* | *Kitkahâhki* | `KIHT-kuh-hahh-kih` | [kɪ́t·kə·haah·kɪ] | Kitkahahki band; (hist.) Republican band. | *kitkahaar* 'earthlodge village' + *kis* DIM | `SK-kitkahaahki-p99-1923`, Parks p. 447 |
 
 **Exceptions found.** These words match the pattern, but their pieces do not reproduce the headword exactly by the rules above, so they are not taught here: *kiiwuhki* from *kiiwaʔut* + *kis* (`SK-kiiwuhki-p93-1765`, Parks p. 441); *kskiikahki* from *ikskiikaar* + *kis* (`SK-kskiikahki-p448-3995`, Parks p. 448); *kuucki* from *kuc* + *kis* (`SK-kuucki-p452-4007`, Parks p. 452).
 

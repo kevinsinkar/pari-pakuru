@@ -754,3 +754,470 @@ backup: OneDrive/pari_pakuru_backups/skiri_pawnee_backup_20261114_174734_lesson_
   L20 tir + | tir
   L20 ar + | ar
   L20 wi + | wi+
+
+---- a later run ----
+apply_lesson_page_reading — APPLY — 2026-11-14 20:59
+strips read: 911 of 911 (79 a second time); Pawnee words of the stored text in them: 1369
+changes by hand after a second look: 42 (already in place: 0); values set: 1
+titles taken from the title line: 8
+text of another section cut from the end of a last note: 12 lessons
+changes one reading settles: 286  {'page has an accent the stored text lacks': 222, 'page has an accent the stored text lacks; dot, apostrophe or space': 34, 'OCR slip': 11, 'dot, apostrophe or space': 19}
+   of them, the audit's reader read the same at that place: 164; no audit reading at that place: 119; the audit's crop there showed another word: 3
+rows of the Blue Book table to correct: 13
+values of the lessons table that change: 38; of extracted_data/lessons.json: 38
+differences left by decision: 20; neither taken nor left: 0
+
+written: 38 values of the lessons table, 13 rows of the Blue Book table, 19 values in extracted_data/blue_book_extracted.json, 38 in extracted_data/lessons.json
+backup: OneDrive/pari_pakuru_backups/skiri_pawnee_backup_20261114_205956_lesson_page_reading.db
+
+== 1. By hand, after a second look (lesson, where, strip: old -> new; why)
+  L2  grammar_notes/1/text         35.9.0, 35.9.1     Suks•paku' (SB) (suks pa-ku') You (1) say it! (SK)(suks pd-ku ') You (1) say it! -> Suks•páku' (SB) (suks-pá-ku') You (1) say it! (SK) (suks-pá-ku') You (1) say it!
+        two lines of the page; the OCR wrote the accented vowel as 'd' and lost the hyphens
+  L3  dialogues/1/lines/0/skiri    40.3.1             Kirike tutu '? -> Kiriké rut•u'?
+        the lesson's title sentence; the OCR read r as t and lost the raised dot
+  L3  dialogues/2/lines/0/skiri    40.5.1             Ka ra•ha'k•tihu '? -> Ka ra•hák•tihu'?
+        the OCR wrote the accent as an apostrophe
+  L3  grammar_notes/0/text         41.6.2             ti .wari' he goes about -> tí•wari' he goes about
+        the form stands in the column to the left of its English
+  L3  grammar_notes/2/text         42.9.2             Kirike ratara•paki .ahu'? -> Kirike ratara•pakí•ahu'?
+        one word; the OCR wrote the raised dot as ' .'
+  L3  grammar_notes/2/text         42.9.12            Rat u'. -> Rát•u'.
+        one word
+  L4  grammar_notes/1/text         45.4.0             (pit-ku-sik-sa pits) -> (pit-ku-sík-sa-pits)
+        the pronunciation in brackets
+  L4  grammar_notes/3/text         45.9.1             t ih-ra -> táh•ra
+        the OCR broke the word at the accent
+  L4  grammar_notes/4/text         47.8.2             Thhrarra. -> Táhrar•ra.
+        the OCR read á as h
+  L4  grammar_notes/4/text         47.9.1             such as + it -> such as + ir
+        the plural marker ir, in italics; the OCR read an English word
+  L4  grammar_notes/4/text         48.0.2             ti + it + rarra -> ti + ir + rar•ra
+        the same marker in the breakdown line
+  L4  grammar_notes/4/text         48.0.5             to + atsir + wari' -> ta + atsir + wari'
+        the modal marker ta, in italics; the OCR read the English word 'to'
+  L5  grammar_notes/0/text         50.12.0            tiku 'ks, -> tiku'ks,
+        one word
+  L5  grammar_notes/2/text         51.2.2             tiku + perks + taari' -> tiku + paks + taari'
+        paks 'head', in italics; the OCR read an English word
+  L5  grammar_notes/3/text         51.6.0             ti + ri + t + kirik + to -> ti + ri + t + kirik + ta
+        ta, in italics; the OCR read the English word 'to'
+  L5  grammar_notes/8/text         54.5.7             to + t + rak + wak + u' -> ta + t + rak + wak + u'
+        ta, in italics; the OCR read the English word 'to'
+  L6  grammar_notes/1/text         57.3.7             TI'tskipi. -> Tí'tskipi.
+        the OCR read í as a capital I
+  L6  grammar_notes/2/text         58.1.0, 58.1.1     tat ., taw, etc. -> tat•, tas•, etc.
+        the two introducers, each with its raised dot
+  L7  grammar_notes/0/text         62.2.17            TsIru'. -> Tsíru'.
+        the OCR read í as a capital I
+  L7  grammar_notes/2/text         63.1.0 to 63.1.3   ti ra•kú pita ti ra•ariki pita ti ra•kú pita ti ra•arikí pita -> ti ra•kú pita ti ra•arikí pita i ra•kú pita i ra•arikí pita
+        the third and fourth lines begin with i ('that ... yonder'), not ti: seen twice, the second time cut from the left margin, where the i stands under the t of the lines above. The stored text had ti four times
+  L8  grammar_notes/0/text         67.1.2             kiru +ra +0 +uks +ku -> kiru +ra +ø +uks +ku
+        the sign for 'no marker' is a zero with a stroke through it
+  L8  grammar_notes/0/text         67.3.1             tat. =ta + t -> tat• = ta + t
+        the introducer with its raised dot
+  L8  grammar_notes/0/text         67.4.1             tas. = to + s -> tas• = ta + s
+        ta, in italics; the OCR read the English word 'to'
+  L8  grammar_notes/0/text         67.5.1             ti. = ti + I am crying -> ti• = ti + ø I am crying
+        the line ends in the sign for 'no marker', which the OCR dropped
+  L9  dialogues/1/lines/1/skiri    71.5.2             ti•káisat -> Ti•káisat.
+        the answer in the dialogue: a capital and a full stop, as printed
+  L9  grammar_notes/1/text         72.2.6             tut•awi 'at -> tut•awi'at
+        one word; no accent on this line (page 72 has tut•awí'at with the accent in the word list above)
+  L12 grammar_notes/1/text         84.10.4            +.9 + -> +ø+
+        the sign for 'no marker'
+  L13 grammar_notes/2/text         89.1.0             ti .ra wa•raruhat -> ti•rá wa•rar•uhat
+        three readings (two of the audit, this one) agree on every letter, accent and dot but one: whether a raised dot or nothing stands between rá and wa. The OCR's space is kept there
+  L13 grammar_notes/2/text         89.1.1             hiri .ra wa .raruhat -> hiri•rá wa•rar•uhat
+        as the line above; at 3.2 times the scan a dot seems to stand between rá and wa on this line, the audit's second reader could not tell
+  L14 grammar_notes/0/text         92.5.4             kakI 'at -> kakí•'at
+        the OCR read í as a capital I and lost the raised dot
+  L14 grammar_notes/1/text         93.0.3, 93.0.4     Ka res .- iI urtikat! (SB) -> Ka res•[..]sí•urúkat! (SB)
+        a flaw in the scan covers about two letters after res•; they are not filled in. The Skiri line above reads Ka ris•utsí•uríkat!
+  L16 dialogues/0/lines/0/skiri    99.1.1             Kitske --'e ru '? -> Kitské [w]e ru'?
+        a flaw in the scan covers the w; the sentence is the lesson's title and stands whole on page 98 (kitské we ru')
+  L16 dialogues/0/lines/1/skiri    99.1.3             We ti -> We ti p[it]ku.
+        a flaw in the scan covers the middle of the last word; p and ku and the full stop are clear, and page 98 lists we tí pitku 'it's two o'clock'
+  L17 grammar_notes/1/text         102.2.1            to +t +ut +uks +ari' -> ta +t +ut +uks +ari'
+        ta; the OCR read the English word 'to'
+  L20 grammar_notes/2/text         114.12.1           Tika•riusis•ari -> Tikú•riusis•ari
+        the OCR read ú as a
+  L20 grammar_notes/2/text         114.20.1           haws -> hawá
+        the OCR read á as s
+  L20 grammar_notes/4/text         115.2.4            Tas•i .waktiks. -> Tas•í•waktiks.
+        the form stands in the column to the left of its English
+  L20 grammar_notes/4/text         115.2.7            Kaki .ra•riks. -> Kakí•ra•riks.
+        the same
+  L20 grammar_notes/4/text         115.2.27           Tat dru .hukita•'at -> Tat•áru•hukita•'at
+        one word; the OCR read á as d
+  L20 grammar_notes/8/text         118.2.11, 118.2.12 pit-sikat -> pitsikat
+        the word is broken at the end of a line (pit- / sikat); the three other words of this reading that are broken so are stored joined, and page 109 prints Pitsikat
+  L20 grammar_notes/10/text        121.7.2            Kiraritu kas .i•kika' -> Kiraritu kas•i•kika'
+        one word, in the first verse of the lullaby
+  L20 grammar_notes/10/text        121.8.2            kas•i•kika' you will drink -> kas•i•kika you will drink
+        the word list under the lullaby has no apostrophe (three looks, the last at 3.2 times the scan); the lullaby's own line has one. The audit's crop for this row (R0843) was cut at the lullaby's line: see bluebook_crops_at_another_line.json
+  L8  english_title                None -> 'Where Is It?'   the English title under KIRÚ RA•KU? on page 65 (title strip T8); none was stored
+
+== 2. Titles (lesson, stored -> the title line of the page; kind)
+  L6  None -> TSAHRIKS   (no title stored)
+  L8  KI Rid RA. KU? -> KIRÚ RA•KU?   (letters differ)
+  L9  KIRU RA•'AT -> KIRÚ RA•'AT   (page has an accent the stored text lacks)
+  L10 KIRIKI RUH•RA'? -> KIRIKÉ RUH•RA'?   (letters differ)
+  L12 SUKS•U. -> SÚKS•U.   (page has an accent the stored text lacks)
+  L17 TIRUKS•TSAKARIKI -> TÍRUKS•TSAK•ARIKI   (page has an accent the stored text lacks; dot, apostrophe or space)
+  L18 KIRIKI RASUTSIKS•ARI'? -> KIRIKÉ RASUTSÍKS•ARI'?   (letters differ)
+  L20 RATKU•WA•WAKTIT PARI' -> TAT•ÍTSKA RATKU•WA•WAKTIT PARI'   (letters differ)
+
+== 3. Cut from the end of a lesson's last note (lesson, what, the text)
+  L1  the title of lesson 2: KIRIKÉ RA•TARAWIS?
+  L2  the title of lesson 3: KIRIKÉ RUT•U'?
+  L3  the title of lesson 4: KIRIKÉ RAS•TA?
+  L6  the title of lesson 7: TAKÉ RU'?
+  L7  the title of lesson 8: KI Rid RA. KU?
+  L9  the title of lesson 10: KIRIK1 RUH•RA'?
+  L10 the title of lesson 11: KA RÚH•RATSAUS?
+  L11 the title of lesson 12: SUKS • U.
+  L12 the title of lesson 13: KIRU RÁSUKS•AT?
+  L13 the title of lesson 14: KA RUSUT•ERIT?
+  L19 the title of lesson 20: TAT.fTS KA
+  L20 the glossary: 7013 characters, from 'a II B Glossary In this glossary you will find a list of al'
+
+== 4. From one reading (lesson, strip, where: old -> new; kind; what the audit's reader read at that place)
+  L1  30.5.0    dialogues/1/lines/2/skiri    ti -> tí   (page has an accent the stored text lacks; audit: the same)
+  L1  30.5.0    dialogues/1/lines/2/skiri    Hau -> Haú   (page has an accent the stored text lacks; audit: the same)
+  L1  32.4.0    grammar_notes/3/text         Ka -> Ká   (page has an accent the stored text lacks; audit: the same)
+  L1  32.4.1    grammar_notes/3/text         ru -> rú   (page has an accent the stored text lacks; audit: the same)
+  L1  32.4.3    grammar_notes/3/text         Ti -> Tí   (page has an accent the stored text lacks; audit: the same)
+  L1  32.4.4    grammar_notes/3/text         Kaki' -> Kakí'   (page has an accent the stored text lacks; audit: the same)
+  L1  32.4.5    grammar_notes/3/text         Kaki -> Kakí   (page has an accent the stored text lacks; audit: the same)
+  L2  35.2.0    grammar_notes/0/text         rakis•tahkata -> rakis•táhkata   (page has an accent the stored text lacks; audit: the same)
+  L2  35.6.0    grammar_notes/1/text         rd-kis -> rá-kis   (OCR slip; audit: no reading)
+  L2  35.6.1    grammar_notes/1/text         ki-riks -> kí-riks   (page has an accent the stored text lacks; audit: no reading)
+  L2  35.6.2    grammar_notes/1/text         rd-wa -> rá-wa   (OCR slip; audit: no reading)
+  L2  35.6.3    grammar_notes/1/text         ri-wit -> rí-wit   (page has an accent the stored text lacks; audit: no reading)
+  L2  35.7.6    grammar_notes/1/text         pd-ri ' -> pá-ri'   (OCR slip; audit: no reading)
+  L2  35.7.9    grammar_notes/1/text         hi-tu ' -> hí-tu'   (page has an accent the stored text lacks; dot, apostrophe or space; audit: no reading)
+  L2  35.7.12   grammar_notes/1/text         ra-ku' -> rá-ku'   (page has an accent the stored text lacks; audit: no reading)
+  L2  35.7.15   grammar_notes/1/text         ki-tsu ' -> kí-tsu'   (page has an accent the stored text lacks; dot, apostrophe or space; audit: no reading)
+  L2  37.7.0    grammar_notes/3/text         rasitu' -> rasítu'   (page has an accent the stored text lacks; audit: the same)
+  L2  37.7.2    grammar_notes/3/text         kira•rasitu' -> kira•rásitu'   (page has an accent the stored text lacks; audit: the same)
+  L2  37.7.4    grammar_notes/3/text         rasitu ' -> rasitu'   (dot, apostrophe or space; audit: no reading)
+  L2  38.1.4    grammar_notes/4/text         Uhaiwu' -> Uháiwu'   (page has an accent the stored text lacks; audit: the same)
+  L2  38.4.9    grammar_notes/5/text         Pahitu' -> Pahítu'   (page has an accent the stored text lacks; audit: the same)
+  L3  40.1.1    dialogues/0/lines/0/skiri    ru ' -> ru'   (dot, apostrophe or space; audit: no reading)
+  L3  40.1.1    dialogues/0/lines/0/skiri    Kirike -> Kiriké   (page has an accent the stored text lacks; audit: no reading)
+  L3  40.2.0    dialogues/0/lines/1/skiri    Ti -> Tí   (page has an accent the stored text lacks; audit: no reading)
+  L3  40.4.0    dialogues/1/lines/1/skiri    ha'k•tihu' -> hák•tihu'   (page has an accent the stored text lacks; dot, apostrophe or space; audit: no reading)
+  L3  40.6.0    dialogues/2/lines/1/skiri    ha'k•tihu' -> hák•tihu'   (page has an accent the stored text lacks; dot, apostrophe or space; audit: no reading)
+  L3  40.7.1    dialogues/3/lines/0/skiri    ra .rihu' -> rá•rihu'   (page has an accent the stored text lacks; dot, apostrophe or space; audit: no reading)
+  L3  40.8.0    dialogues/3/lines/1/skiri    ti -> tí   (page has an accent the stored text lacks; audit: no reading)
+  L3  41.5.2    grammar_notes/0/text         ti -> tí   (page has an accent the stored text lacks; audit: no reading)
+  L3  41.5.4    grammar_notes/0/text         ha"k•tihu -> hák•tihu   (page has an accent the stored text lacks; dot, apostrophe or space; audit: no reading)
+  L3  41.6.4    grammar_notes/0/text         tat•pari ' -> tát•pari'   (page has an accent the stored text lacks; dot, apostrophe or space; audit: no reading)
+  L3  41.7.2    grammar_notes/0/text         ti -> tí   (page has an accent the stored text lacks; audit: no reading)
+  L3  41.7.3    grammar_notes/0/text         tira -> tirá   (page has an accent the stored text lacks; audit: no reading)
+  L3  42.1.2    grammar_notes/0/text         hiru ' -> hiru'   (dot, apostrophe or space; audit: no reading)
+  L3  42.1.4    grammar_notes/0/text         ti -> tí   (page has an accent the stored text lacks; audit: no reading)
+  L3  42.2.4    grammar_notes/0/text         t'ehit -> t'éhit   (page has an accent the stored text lacks; audit: no reading)
+  L3  42.4.10   grammar_notes/0/text         ti -> tí   (page has an accent the stored text lacks; audit: no reading)
+  L3  42.7.0    grammar_notes/1/text         ti -> tí   (page has an accent the stored text lacks; audit: no reading)
+  L3  42.9.0    grammar_notes/2/text         ti -> tí   (page has an accent the stored text lacks; audit: no reading)
+  L3  42.9.6    grammar_notes/2/text         ru ' -> ru'   (dot, apostrophe or space; audit: no reading)
+  L3  42.9.6    grammar_notes/2/text         Take -> Také   (page has an accent the stored text lacks; audit: no reading)
+  L3  42.9.15   grammar_notes/2/text         Ras•u' -> Rás•u'   (page has an accent the stored text lacks; audit: no reading)
+  L4  44.2.0    grammar_notes/0/text         td-ha -> tá-ha   (OCR slip; audit: no reading)
+  L4  44.2.0    grammar_notes/0/text         tah•ra -> táh•ra   (page has an accent the stored text lacks; audit: no reading)
+  L4  44.2.1    grammar_notes/0/text         td-hra -> tá-hra   (OCR slip; audit: no reading)
+  L4  44.3.0    grammar_notes/0/text         rr -> r•r   (dot, apostrophe or space; audit: no reading)
+  L4  44.5.1    dialogues/0/lines/0/skiri    Kirike -> Kiriké   (page has an accent the stored text lacks; audit: no reading)
+  L4  44.6.0    dialogues/0/lines/1/skiri    tahrarra -> táhrar•ra   (page has an accent the stored text lacks; dot, apostrophe or space; audit: no reading)
+  L4  44.7.0    dialogues/0/lines/2/skiri    tah•ra -> táh•ra   (page has an accent the stored text lacks; audit: no reading)
+  L4  44.8.1    dialogues/1/lines/0/skiri    rastarra -> rastar•ra   (dot, apostrophe or space; audit: no reading)
+  L4  44.8.1    dialogues/1/lines/0/skiri    Kitske -> Kitské   (page has an accent the stored text lacks; audit: no reading)
+  L4  44.9.0    dialogues/1/lines/1/skiri    tah•ra -> táh•ra   (page has an accent the stored text lacks; audit: no reading)
+  L4  44.10.0   dialogues/1/lines/2/skiri    tahrarra -> táhrar•ra   (page has an accent the stored text lacks; dot, apostrophe or space; audit: no reading)
+  L4  45.4.0    grammar_notes/1/text         pitkus•iksapits -> pitkus•íksapits   (page has an accent the stored text lacks; audit: no reading)
+  L4  45.7.1    grammar_notes/2/text         Turrahe -> Túr•rahe   (page has an accent the stored text lacks; dot, apostrophe or space; audit: no reading)
+  L4  45.7.4    grammar_notes/2/text         Kak'tirrahe -> Kak'úr•rahe   (OCR slip; audit: no reading)
+  L4  45.7.7    grammar_notes/2/text         Siks•a' -> Síks•a'   (page has an accent the stored text lacks; audit: no reading)
+  L4  45.7.10   grammar_notes/2/text         Siksut•tsa' -> Siksút•tsa'   (page has an accent the stored text lacks; audit: no reading)
+  L4  45.7.13   grammar_notes/2/text         Ruru ' -> Ruru'   (dot, apostrophe or space; audit: no reading)
+  L4  46.0.3    grammar_notes/3/text         tah•ra -> táh•ra   (page has an accent the stored text lacks; audit: no reading)
+  L4  46.3.0    grammar_notes/3/text         introducerverb -> introducer•verb   (dot, apostrophe or space; audit: no reading)
+  L4  46.4.0    grammar_notes/3/text         ta'hrarra -> táhrar•ra   (page has an accent the stored text lacks; dot, apostrophe or space; audit: no reading)
+  L4  46.7.0    grammar_notes/3/text         Ta'h•ra -> Táh•ra   (page has an accent the stored text lacks; dot, apostrophe or space; audit: no reading)
+  L4  46.7.2    grammar_notes/3/text         Kakah•ra -> Kakáh•ra   (page has an accent the stored text lacks; audit: no reading)
+  L4  46.8.0    grammar_notes/3/text         Tah .ra -> Táh•ra   (page has an accent the stored text lacks; dot, apostrophe or space; audit: no reading)
+  L4  46.9.1    grammar_notes/3/text         Take -> Také   (page has an accent the stored text lacks; audit: no reading)
+  L4  46.9.4    grammar_notes/3/text         Tah•ra -> Táh•ra   (page has an accent the stored text lacks; audit: no reading)
+  L4  46.9.6    grammar_notes/3/text         Tas•ta -> Tás•ta   (page has an accent the stored text lacks; audit: no reading)
+  L4  46.9.8    grammar_notes/3/text         TI ra -> Tí•ra   (page has an accent the stored text lacks; dot, apostrophe or space; audit: no reading)
+  L4  46.10.0   grammar_notes/3/text         tas-ta -> tás•ta   (page has an accent the stored text lacks; dot, apostrophe or space; audit: no reading)
+  L4  46.11.0   grammar_notes/3/text         ras•ta -> rás•ta   (page has an accent the stored text lacks; audit: no reading)
+  L4  47.0.1    grammar_notes/3/text         rararra -> rarar•ra   (dot, apostrophe or space; audit: no reading)
+  L4  47.0.1    grammar_notes/3/text         Take -> Také   (page has an accent the stored text lacks; audit: no reading)
+  L4  47.0.3    grammar_notes/3/text         Tahrarra -> Tahrár•ra   (page has an accent the stored text lacks; dot, apostrophe or space; audit: no reading)
+  L4  47.0.4    grammar_notes/3/text         Tastarra -> Tastár•ra   (page has an accent the stored text lacks; dot, apostrophe or space; audit: no reading)
+  L4  47.0.5    grammar_notes/3/text         Tirarra -> Tírar•ra   (page has an accent the stored text lacks; dot, apostrophe or space; audit: no reading)
+  L4  47.1.0    grammar_notes/3/text         tahrarra -> táhrar•ra   (page has an accent the stored text lacks; dot, apostrophe or space; audit: no reading)
+  L4  47.1.1    grammar_notes/3/text         tastarra -> tástar•ra   (page has an accent the stored text lacks; dot, apostrophe or space; audit: no reading)
+  L4  47.1.2    grammar_notes/3/text         tirarra -> tírar•ra   (page has an accent the stored text lacks; dot, apostrophe or space; audit: no reading)
+  L4  47.1.3    grammar_notes/3/text         Tahraktarra -> Tahráktar•ra   (page has an accent the stored text lacks; dot, apostrophe or space; audit: no reading)
+  L4  47.1.4    grammar_notes/3/text         Tastaktarra -> Tastáktar•ra   (page has an accent the stored text lacks; dot, apostrophe or space; audit: no reading)
+  L4  47.1.5    grammar_notes/3/text         Tihrarra -> Tíhrar•ra   (page has an accent the stored text lacks; dot, apostrophe or space; audit: no reading)
+  L4  47.6.4    grammar_notes/4/text         hitu ' -> hitu'   (dot, apostrophe or space; audit: no reading)
+  L4  47.8.0    grammar_notes/4/text         Tah•ra -> Táh•ra   (page has an accent the stored text lacks; audit: no reading)
+  L4  47.8.6    grammar_notes/4/text         Tahra'ktarra -> Tahráktar•ra   (page has an accent the stored text lacks; dot, apostrophe or space; audit: no reading)
+  L4  48.0.0    grammar_notes/4/text         Tihrarra -> Tihrar•ra   (dot, apostrophe or space; audit: no reading)
+  L4  48.0.3    grammar_notes/4/text         Tatsih•wari' -> Tatsíh•wari'   (page has an accent the stored text lacks; audit: no reading)
+  L5  51.2.4    grammar_notes/2/text         Tiku•paks•taari' -> Tiku•paks•táari'   (page has an accent the stored text lacks; audit: the same)
+  L5  51.7.0    grammar_notes/3/text         rit•kirik•ta -> rit•kírik•ta   (page has an accent the stored text lacks; audit: the same)
+  L5  52.7.6    grammar_notes/6/text         ras•paku' -> ras•páku'   (page has an accent the stored text lacks; audit: the same)
+  L5  53.0.0    grammar_notes/7/text         Tiku'ks•taa -> Tiku'ks•táa   (page has an accent the stored text lacks; audit: the same)
+  L5  53.1.0    grammar_notes/7/text         Tiku'ks•taari' -> Tiku'ks•táari'   (page has an accent the stored text lacks; audit: the same)
+  L5  53.5.2    grammar_notes/8/text         Suks•paku' -> Suks•páku'   (page has an accent the stored text lacks; audit: the same)
+  L5  53.6.0    grammar_notes/8/text         Sisuks•paku' -> Sísuks•paku'   (page has an accent the stored text lacks; audit: the same)
+  L5  53.9.0    grammar_notes/8/text         Suks•paku' -> Suks•páku'   (page has an accent the stored text lacks; audit: no reading)
+  L5  53.9.1    grammar_notes/8/text         Tat•paku' -> Tat•páku'   (page has an accent the stored text lacks; audit: the same)
+  L5  53.9.4    grammar_notes/8/text         Suks•pitit -> Suks•pítit   (page has an accent the stored text lacks; audit: the same)
+  L5  53.9.5    grammar_notes/8/text         Tat•pitit -> Tat•pítit   (page has an accent the stored text lacks; audit: the same)
+  L5  54.3.0    grammar_notes/8/text         Suksta•pitit -> Suksta•pítit   (page has an accent the stored text lacks; audit: the same)
+  L5  54.4.0    grammar_notes/8/text         Tat•at -> Tát•at   (page has an accent the stored text lacks; audit: the same)
+  L5  54.5.0    grammar_notes/8/text         Sitat•paku' -> Sítat•paku'   (page has an accent the stored text lacks; audit: the same)
+  L5  54.5.4    grammar_notes/8/text         Sitat•pa -> Sítat•pa   (page has an accent the stored text lacks; audit: the same)
+  L5  54.6.2    grammar_notes/8/text         Tahra•pu' -> Táhra•pu'   (page has an accent the stored text lacks; audit: the same)
+  L6  56.5.0    grammar_notes/0/text         ti•ari' -> tí•ari'   (page has an accent the stored text lacks; audit: the same)
+  L6  56.5.4    grammar_notes/0/text         tu-td-ri' -> tu-tá-ri'   (OCR slip; audit: no reading)
+  L6  57.3.1    grammar_notes/1/text         Siksut•tsa' -> Siksút•tsa'   (page has an accent the stored text lacks; audit: the same)
+  L6  57.3.4    grammar_notes/1/text         rut•utsi•raru' -> rút•utsi•raru'   (page has an accent the stored text lacks; audit: the same)
+  L6  57.3.13   grammar_notes/1/text         Ta'tskipi -> Tá'tskipi   (page has an accent the stored text lacks; audit: the same)
+  L6  57.6.2    grammar_notes/2/text         Kirike -> Kiriké   (page has an accent the stored text lacks; audit: the same)
+  L6  57.6.9    grammar_notes/2/text         Kirike -> Kiriké   (page has an accent the stored text lacks; audit: the same)
+  L6  58.0.2    grammar_notes/2/text         Tirah•wari' -> Tiráh•wari'   (page has an accent the stored text lacks; audit: the same)
+  L6  58.0.4    grammar_notes/2/text         ti-rah-wha-ri' -> ti-ráh-wha-ri'   (page has an accent the stored text lacks; audit: no reading)
+  L6  58.4.6    grammar_notes/3/text         tat. kikat -> tat•kíkat   (page has an accent the stored text lacks; dot, apostrophe or space; audit: no reading)
+  L6  58.4.8    grammar_notes/3/text         sitat•kikat -> sítat•kikat   (page has an accent the stored text lacks; audit: the same)
+  L6  58.5.3    grammar_notes/3/text         tas•kikat -> tas•kíkat   (page has an accent the stored text lacks; audit: the same)
+  L6  58.6.6    grammar_notes/3/text         tiku'tskipi -> tikú'tskipi   (page has an accent the stored text lacks; audit: the same)
+  L6  58.6.8    grammar_notes/3/text         sitiku'tskipi -> sítiku'tskipi   (page has an accent the stored text lacks; audit: the same)
+  L6  58.6.10   grammar_notes/3/text         tikurak•itskipi -> tikurak•ítskipi   (page has an accent the stored text lacks; audit: the same)
+  L6  58.7.5    grammar_notes/3/text         sita'tskipi -> sitá'tskipi   (page has an accent the stored text lacks; audit: the same)
+  L6  58.7.7    grammar_notes/3/text         tarak•itskipi -> tarak•ítskipi   (page has an accent the stored text lacks; audit: the same)
+  L6  59.0.6    grammar_notes/3/text         Ti -> Tí   (page has an accent the stored text lacks; audit: the same)
+  L7  62.2.6    grammar_notes/0/text         We-ta-ta-tsiks-ta-tat -> We-ta-ta-tsíks-ta-tat   (page has an accent the stored text lacks; audit: no reading)
+  L7  62.2.9    grammar_notes/0/text         tat•uhure•hats -> tat•uhúre•hats   (page has an accent the stored text lacks; audit: the same)
+  L7  62.2.26   grammar_notes/0/text         Kus•tutsi•erit -> Kus•tútsi•erit   (page has an accent the stored text lacks; audit: the same)
+  L8  66.12.1   grammar_notes/0/text         Tasuks•atku -> Tasuks•átku   (page has an accent the stored text lacks; audit: the same)
+  L8  68.0.0    grammar_notes/1/text         hatur•raru' -> hatur•ráru'   (page has an accent the stored text lacks; audit: the same)
+  L8  68.0.2    grammar_notes/1/text         ti•kaarit -> ti•káarit   (page has an accent the stored text lacks; audit: the same)
+  L8  68.6.0    grammar_notes/2/text         tat•ira•ita' -> tat•irá•ita'   (page has an accent the stored text lacks; audit: the same)
+  L8  69.0.0    grammar_notes/3/text         raku•kita -> rakú•kita   (page has an accent the stored text lacks; audit: the same)
+  L8  69.0.4    grammar_notes/3/text         tawit•ka•ke' -> tawít•ka•ke'   (page has an accent the stored text lacks; audit: the same)
+  L8  69.4.1    grammar_notes/4/text         Tari' -> Tarí'   (page has an accent the stored text lacks; audit: the same)
+  L8  69.4.9    grammar_notes/4/text         Tat•atsiks•tehu' -> Tat•atsíks•tehu'   (page has an accent the stored text lacks; audit: the same)
+  L8  69.7.1    grammar_notes/5/text         u•kaat•awi•eriku -> u•kaat•awi•ériku   (page has an accent the stored text lacks; audit: no reading)
+  L8  69.8.0    grammar_notes/5/text         ru•kat•awi•riku -> ru•kat•awi•ríku   (page has an accent the stored text lacks; audit: the same)
+  L8  69.8.2    grammar_notes/5/text         tuks•kata•ku -> tuks•katá•ku   (page has an accent the stored text lacks; audit: the same)
+  L9  71.13.0   grammar_notes/0/text         ti•hu'at -> ti•hú'at   (page has an accent the stored text lacks; audit: the same)
+  L9  71.14.0   grammar_notes/0/text         ti•hu•kata'at -> ti•hu•káta'at   (page has an accent the stored text lacks; audit: the same)
+  L9  72.2.2    grammar_notes/1/text         ti -> tí   (page has an accent the stored text lacks; audit: the same)
+  L9  72.2.4    grammar_notes/1/text         karit•kutsu' -> karít•kutsu'   (page has an accent the stored text lacks; audit: the same)
+  L9  72.2.8    grammar_notes/1/text         karit•kutsu' -> karít•kutsu'   (page has an accent the stored text lacks; audit: no reading)
+  L9  72.8.0    grammar_notes/2/text         ti -> tí   (page has an accent the stored text lacks; audit: the same)
+  L9  72.8.2    grammar_notes/2/text         Ti -> Tí   (page has an accent the stored text lacks; audit: the same)
+  L9  73.2.1    grammar_notes/3/text         Kiru -> Kirú   (page has an accent the stored text lacks; audit: the same)
+  L9  73.2.4    grammar_notes/3/text         tat•ka•isat -> tat•ká•isat   (page has an accent the stored text lacks; audit: the same)
+  L9  73.4.4    grammar_notes/4/text         Ra•ka•hurah•katiit•u' -> Ra•ká•huráh•katiit•u'   (page has an accent the stored text lacks; audit: the same)
+  L9  73.4.6    grammar_notes/4/text         Ra•saka•ku -> Ra•sáka•ku   (page has an accent the stored text lacks; audit: the same)
+  L10 75.8.5    grammar_notes/0/text         tuh•ra' -> tuh•rá'   (page has an accent the stored text lacks; audit: no reading)
+  L10 77.2.1    grammar_notes/1/text         kitu' -> kítu'   (page has an accent the stored text lacks; audit: the same)
+  L10 77.2.4    grammar_notes/1/text         Arisit -> Arisít   (page has an accent the stored text lacks; audit: the same)
+  L10 77.3.4    grammar_notes/1/text         Suks•taka•hat -> Súks•taka•hat   (page has an accent the stored text lacks; audit: the same)
+  L10 77.3.7    grammar_notes/1/text         Tas•kitawe' -> Tas•kítawe'   (page has an accent the stored text lacks; audit: the same)
+  L11 79.1.3    dialogues/0/lines/2/skiri    tatuks•a .ka- -> tatuks•á•ka-   (page has an accent the stored text lacks; dot, apostrophe or space; audit: another word)
+  L11 79.1.3    dialogues/0/lines/2/skiri    Kaki' -> Kakí'   (page has an accent the stored text lacks; audit: the same)
+  L11 80.4.13   grammar_notes/0/text         Suks•kits -> Suks•kíts   (page has an accent the stored text lacks; audit: the same)
+  L11 80.4.22   grammar_notes/0/text         ras•itska' -> rás•itska'   (page has an accent the stored text lacks; audit: the same)
+  L11 80.4.31   grammar_notes/0/text         ras•itska' -> rás•itska'   (page has an accent the stored text lacks; audit: the same)
+  L11 80.4.37   grammar_notes/0/text         tat•ka•wakit -> tat•ká•wakit   (page has an accent the stored text lacks; audit: the same)
+  L11 81.1.2    grammar_notes/0/text         tatuks•at -> tátuks•at   (page has an accent the stored text lacks; audit: the same)
+  L11 81.3.6    grammar_notes/0/text         Tatuks•kika' -> Tatúks•kika'   (page has an accent the stored text lacks; audit: the same)
+  L11 81.3.9    grammar_notes/0/text         Tatuks•kikahu' -> Tatúks•kikahu'   (page has an accent the stored text lacks; audit: no reading)
+  L11 81.3.12   grammar_notes/0/text         Suks•kika ' -> Suks•kíka'   (page has an accent the stored text lacks; dot, apostrophe or space; audit: no reading)
+  L12 83.7.4    grammar_notes/0/text         T'ewitsu -> T'éwitsu   (page has an accent the stored text lacks; audit: the same)
+  L12 83.7.10   grammar_notes/0/text         Ketuh•kusit -> Kétuh•kusit   (page has an accent the stored text lacks; audit: the same)
+  L12 83.7.13   grammar_notes/0/text         papitsisu -> papítsisu   (page has an accent the stored text lacks; audit: the same)
+  L12 83.7.13   grammar_notes/0/text         Ketuh•kusit -> Kétuh•kusit   (page has an accent the stored text lacks; audit: the same)
+  L12 84.2.0    grammar_notes/0/text         Tsiks•pa -> Tsíks•pa   (page has an accent the stored text lacks; audit: the same)
+  L12 84.2.1    grammar_notes/0/text         Situks•pa -> Sítuks•pa   (page has an accent the stored text lacks; audit: the same)
+  L12 84.2.2    grammar_notes/0/text         Siruks•pa -> Síruks•pa   (page has an accent the stored text lacks; audit: the same)
+  L12 84.4.0    grammar_notes/0/text         Suks-at -> Suks•at   (dot, apostrophe or space; audit: no reading)
+  L12 84.10.1   grammar_notes/1/text         tata•u -> táta•u   (page has an accent the stored text lacks; audit: the same)
+  L12 84.10.3   grammar_notes/1/text         sitat•u -> sitát•u   (page has an accent the stored text lacks; audit: the same)
+  L12 84.10.6   grammar_notes/1/text         sitata•u -> sitáta•u   (page has an accent the stored text lacks; audit: the same)
+  L12 84.10.9   grammar_notes/1/text         tatarak•u -> tatárak•u   (page has an accent the stored text lacks; audit: the same)
+  L12 84.10.12  grammar_notes/1/text         tatak•u -> tátak•u   (page has an accent the stored text lacks; audit: the same)
+  L13 86.2.3    dialogues/1/lines/2/skiri    raku•kariu -> raku•káriu   (page has an accent the stored text lacks; audit: no reading)
+  L13 86.2.5    dialogues/1/lines/4/skiri    tatutak•erit -> tatutak•érit   (page has an accent the stored text lacks; audit: no reading)
+  L13 86.4.0    grammar_notes/0/text         tsuskiit -> tsuskíit   (page has an accent the stored text lacks; audit: no reading)
+  L13 86.4.0    grammar_notes/0/text         Raku•kariu' -> Raku•káriu'   (page has an accent the stored text lacks; audit: no reading)
+  L13 86.5.0    grammar_notes/0/text         tatutak•erit -> tatutak•érit   (page has an accent the stored text lacks; audit: the same)
+  L13 86.6.0    grammar_notes/0/text         tatutak•erit -> tatutak•érit   (page has an accent the stored text lacks; audit: the same)
+  L13 88.4.0    grammar_notes/1/text         Pahuks•Tatu' -> Páhuks•Tatu'   (page has an accent the stored text lacks; audit: the same)
+  L13 88.4.2    grammar_notes/1/text         Tuhwits•Pihat -> Tuhwits•Píhat   (page has an accent the stored text lacks; audit: the same)
+  L13 88.4.6    grammar_notes/1/text         Tskiri•Raru' -> Tskiri•Ráru'   (page has an accent the stored text lacks; audit: the same)
+  L13 89.2.0    grammar_notes/2/text         ratukstak•kitkeu' -> ratukstak•kítkeu'   (page has an accent the stored text lacks; audit: the same)
+  L13 89.2.1    grammar_notes/2/text         ratukstak•kitkeu' -> ratukstak•kítkeu'   (page has an accent the stored text lacks; audit: the same)
+  L13 89.3.0    grammar_notes/2/text         Take -> Také   (page has an accent the stored text lacks; audit: another word)
+  L13 89.4.0    grammar_notes/2/text         Tatuks•at -> Tatúks•at   (page has an accent the stored text lacks; audit: the same)
+  L13 89.4.4    grammar_notes/2/text         Tuks•at -> Túks•at   (page has an accent the stored text lacks; audit: the same)
+  L13 89.5.0    grammar_notes/2/text         Sitatuks•pa -> Sítatuks•pa   (page has an accent the stored text lacks; audit: the same)
+  L13 89.5.2    grammar_notes/2/text         Sitatukspa -> Sitátuks•pa   (page has an accent the stored text lacks; dot, apostrophe or space; audit: no reading)
+  L13 89.5.4    grammar_notes/2/text         Sitasuks•pa -> Sitásuks•pa   (page has an accent the stored text lacks; audit: the same)
+  L13 89.5.6    grammar_notes/2/text         Situks•pa -> Sítuks•pa   (page has an accent the stored text lacks; audit: the same)
+  L13 89.6.0    grammar_notes/2/text         Tatuksta•pu' -> Tatúksta•pu'   (page has an accent the stored text lacks; audit: the same)
+  L13 89.6.2    grammar_notes/2/text         Tasuksta•pu' -> Tasúksta•pu'   (page has an accent the stored text lacks; audit: the same)
+  L14 91.2.3    dialogues/1/lines/1/skiri    kakuks•pakd•rihu' -> kakuks•paká•rihu'   (OCR slip; audit: no reading)
+  L14 91.2.3    dialogues/1/lines/1/skiri    Kaki' -> Kakí'   (page has an accent the stored text lacks; audit: no reading)
+  L14 91.2.5    dialogues/1/lines/2/skiri    tuks•td•pahit -> tuks•tá•pahit   (OCR slip; audit: no reading)
+  L14 91.9.2    grammar_notes/0/text         ti -> tí   (page has an accent the stored text lacks; audit: the same)
+  L14 91.9.3    grammar_notes/0/text         ti -> tí   (page has an accent the stored text lacks; audit: the same)
+  L14 92.4.0    grammar_notes/0/text         tat•at -> tát•at   (page has an accent the stored text lacks; audit: the same)
+  L14 92.4.2    grammar_notes/0/text         tas•at -> tás•at   (page has an accent the stored text lacks; audit: the same)
+  L14 92.5.0    grammar_notes/0/text         kakat•at -> kakát•at   (page has an accent the stored text lacks; audit: the same)
+  L14 92.5.2    grammar_notes/0/text         kakas•at -> kakás•at   (page has an accent the stored text lacks; audit: the same)
+  L14 92.6.0    grammar_notes/0/text         ta•rutsa' -> ta•rútsa'   (page has an accent the stored text lacks; audit: the same)
+  L14 92.6.2    grammar_notes/0/text         rara•rasitu -> rara•rásitu   (page has an accent the stored text lacks; audit: the same)
+  L14 92.9.1    grammar_notes/1/text         Hais•tiwata -> Háis•tiwáta   (page has an accent the stored text lacks; audit: the same)
+  L14 92.9.3    grammar_notes/1/text         Su'ks•tewata -> Súks•tewáta   (page has an accent the stored text lacks; dot, apostrophe or space; audit: no reading)
+  L14 92.9.6    grammar_notes/1/text         Hais•atku -> Háis•atku   (page has an accent the stored text lacks; audit: the same)
+  L14 92.9.8    grammar_notes/1/text         Su'ks•atku -> Súks•atku   (page has an accent the stored text lacks; dot, apostrophe or space; audit: no reading)
+  L14 93.0.1    grammar_notes/1/text         ris•utsi•urikat -> ris•utsí•uríkat   (page has an accent the stored text lacks; audit: the same)
+  L14 93.3.0    grammar_notes/1/text         Pita -> Pitá   (page has an accent the stored text lacks; audit: the same)
+  L14 93.4.0    grammar_notes/1/text         Tut•erit -> Tut•érit   (page has an accent the stored text lacks; audit: the same)
+  L14 93.5.1    grammar_notes/1/text         Take -> Také   (page has an accent the stored text lacks; audit: the same)
+  L14 93.7.1    grammar_notes/1/text         Tut•erit -> Tut•érit   (page has an accent the stored text lacks; audit: no reading)
+  L14 93.7.2    grammar_notes/1/text         Tatsi't•erit -> Tatsi't•érit   (page has an accent the stored text lacks; audit: the same)
+  L14 93.8.0    grammar_notes/1/text         Sitatut•erit -> Sítatut•erit   (page has an accent the stored text lacks; audit: the same)
+  L14 93.8.2    grammar_notes/1/text         Situt•erit -> Situt•érit   (page has an accent the stored text lacks; audit: the same)
+  L14 93.8.3    grammar_notes/1/text         Kitu -> Kitú   (page has an accent the stored text lacks; audit: the same)
+  L14 94.2.0    grammar_notes/2/text         Tatut•erit -> Tatut•érit   (page has an accent the stored text lacks; audit: the same)
+  L14 94.2.1    grammar_notes/2/text         Witi -> Wití   (page has an accent the stored text lacks; audit: the same)
+  L14 94.4.2    grammar_notes/2/text         kata•kaksa' -> kata•káksa'   (page has an accent the stored text lacks; audit: the same)
+  L14 94.4.3    grammar_notes/2/text         ti•kis•kata•wakta' -> ti•kis•kata•wákta'   (page has an accent the stored text lacks; audit: the same)
+  L15 97.0.0    grammar_notes/0/text         +usuku ' -> +usuku'   (dot, apostrophe or space; audit: no reading)
+  L15 97.4.4    grammar_notes/1/text         ta•hu•tuhtu' -> ta•hú•tuhtu'   (page has an accent the stored text lacks; audit: the same)
+  L15 97.4.6    grammar_notes/1/text         ta•hu•tawi•rihu -> ta•hu•tawí•rihu   (page has an accent the stored text lacks; audit: the same)
+  L15 97.4.12   grammar_notes/1/text         Suks•teka•wu -> Suks•teká•wu   (page has an accent the stored text lacks; audit: the same)
+  L16 99.6.1    grammar_notes/0/text         Siks•pata' -> Siks•páta'   (page has an accent the stored text lacks; audit: the same)
+  L16 99.6.3    grammar_notes/0/text         rasih•wata' -> rásih•wata'   (page has an accent the stored text lacks; audit: the same)
+  L16 99.6.7    grammar_notes/0/text         Tat•atsiks•tehu' -> Tat•atsíks•tehu'   (page has an accent the stored text lacks; audit: the same)
+  L17 101.10.0  grammar_notes/0/text         tiheruks -> tihéruks   (page has an accent the stored text lacks; audit: the same)
+  L17 102.2.2   grammar_notes/1/text         tatutsiks•ari' -> tatutsíks•ari'   (page has an accent the stored text lacks; audit: the same)
+  L17 102.4.1   grammar_notes/2/text         Suks•aspatasit -> Suks•aspátasit   (page has an accent the stored text lacks; audit: the same)
+  L17 102.4.3   grammar_notes/2/text         rut•tsirau' -> rut•tsírau'   (page has an accent the stored text lacks; audit: the same)
+  L17 102.4.7   grammar_notes/2/text         ras•tare•hats -> ras•taré•hats   (page has an accent the stored text lacks; audit: the same)
+  L17 102.4.9   grammar_notes/2/text         Kirike -> Kiriké   (page has an accent the stored text lacks; audit: the same)
+  L17 102.7.2   grammar_notes/2/text         Ti•ha•kawaats -> Ti•há•kawaats   (page has an accent the stored text lacks; audit: the same)
+  L17 102.7.6   grammar_notes/2/text         Tahrak•a•kawaats -> Tahrak•á•kawaats   (page has an accent the stored text lacks; audit: the same)
+  L17 103.1.4   grammar_notes/2/text         Sitatuks•a•kawahtsu' -> Sitatuks•á•kawahtsu'   (page has an accent the stored text lacks; audit: the same)
+  L17 103.1.5   grammar_notes/2/text         Sitasuks•a•kawahtsu' -> Sitasuks•á•kawahtsu'   (page has an accent the stored text lacks; audit: the same)
+  L17 103.1.6   grammar_notes/2/text         Situks•a•kawahtsu' -> Situks•á•kawahtsu'   (page has an accent the stored text lacks; audit: the same)
+  L17 103.1.8   grammar_notes/2/text         Tasukstak•a•kawahtsu' -> Tasukstak•á•kawahtsu'   (page has an accent the stored text lacks; audit: the same)
+  L18 105.2.3   dialogues/1/lines/1/skiri    +uks-ari' -> +uks•ari'   (dot, apostrophe or space; audit: no reading)
+  L18 105.7.1   grammar_notes/0/text         Sutsiks•ahut -> Sutsiks•áhut   (page has an accent the stored text lacks; audit: the same)
+  L18 105.7.3   grammar_notes/0/text         Keskuruh•ra•wiat -> Keskuruh•ra•wíat   (page has an accent the stored text lacks; audit: the same)
+  L18 105.7.7   grammar_notes/0/text         Tat•atsiks•kapakis -> Tat•atsiks•kápakis   (page has an accent the stored text lacks; audit: no reading)
+  L18 106.0.0   grammar_notes/0/text         kusitatut•a•wahri' -> kusítatut•a•wahri'   (page has an accent the stored text lacks; audit: the same)
+  L19 108.11.6  grammar_notes/0/text         Tatut•a•wahri•usta -> Tatut•á•wahri•usta   (page has an accent the stored text lacks; audit: the same)
+  L19 109.1.0   grammar_notes/0/text         rahesa ' -> rahesa'   (dot, apostrophe or space; audit: no reading)
+  L19 109.4.0   grammar_notes/0/text         Ri•katihah•tirara -> Ri•katihah•tírara   (page has an accent the stored text lacks; audit: the same)
+  L19 109.4.2   grammar_notes/0/text         Piraparu' -> Piráparu'   (page has an accent the stored text lacks; audit: the same)
+  L19 109.4.10  grammar_notes/0/text         Pa•riat -> Pa•ríat   (page has an accent the stored text lacks; audit: the same)
+  L19 109.4.12  grammar_notes/0/text         Ri•katihar•rikarikat -> Ri•katihar•rikárikat   (page has an accent the stored text lacks; audit: the same)
+  L19 109.4.14  grammar_notes/0/text         Tskirih•kapira -> Tskirih•kápira   (page has an accent the stored text lacks; audit: the same)
+  L19 109.4.16  grammar_notes/0/text         Rarah•kata•ispu' -> Rarah•katá•ispu'   (page has an accent the stored text lacks; audit: the same)
+  L19 110.0.0   grammar_notes/0/text         Sakuh•waruksti' -> Sakuh•wáruksti'   (page has an accent the stored text lacks; audit: the same)
+  L19 110.0.1   grammar_notes/0/text         Sakuh•kiwatat -> Sakuh•kíwatat   (page has an accent the stored text lacks; audit: the same)
+  L19 110.0.2   grammar_notes/0/text         Ra•sakuru' -> Rá•sakuru'   (page has an accent the stored text lacks; audit: the same)
+  L19 110.0.3   grammar_notes/0/text         Ra•sakuru' -> Rá•sakuru'   (page has an accent the stored text lacks; audit: the same)
+  L20 111.4.6   grammar_notes/0/text         ratara•kuki -> rátara•kuki   (page has an accent the stored text lacks; audit: the same)
+  L20 111.5.0   grammar_notes/0/text         tat•itska -> tát•itska   (page has an accent the stored text lacks; audit: no reading)
+  L20 112.10.3  grammar_notes/1/text         ratkti u•ta -> ratkú•u•ta   (OCR slip; audit: no reading)
+  L20 112.10.3  grammar_notes/1/text         tatitska -> tat•itska   (dot, apostrophe or space; audit: no reading)
+  L20 113.1.3   grammar_notes/1/text         raku•sakur•isat•ta -> raku•sakur•ísat•ta   (page has an accent the stored text lacks; audit: the same)
+  L20 113.9.1   grammar_notes/2/text         tur•rahe -> túr•rahe   (page has an accent the stored text lacks; audit: the same)
+  L20 113.11.1  grammar_notes/2/text         rekits•katit -> rekíts•katit   (page has an accent the stored text lacks; audit: the same)
+  L20 113.11.1  grammar_notes/2/text         ras•kika•ista -> rás•kika•ista   (page has an accent the stored text lacks; audit: the same)
+  L20 114.2.1   grammar_notes/2/text         ras•pari -> rás•pari   (page has an accent the stored text lacks; audit: the same)
+  L20 114.2.1   grammar_notes/2/text         ras•ku -> rás•ku   (page has an accent the stored text lacks; audit: the same)
+  L20 114.4.1   grammar_notes/2/text         tat•pari ' -> tat•pari'   (dot, apostrophe or space; audit: another word)
+  L20 114.4.1   grammar_notes/2/text         tat•ku -> tát•ku   (page has an accent the stored text lacks; audit: the same)
+  L20 114.6.0   grammar_notes/2/text         rasta•pi•hat -> rasta•pí•hat   (page has an accent the stored text lacks; audit: no reading)
+  L20 114.10.0  grammar_notes/2/text         rusutsiks•ari' -> rusutsíks•ari'   (page has an accent the stored text lacks; audit: no reading)
+  L20 114.12.1  grammar_notes/2/text         Pari ' -> Pari'   (dot, apostrophe or space; audit: no reading)
+  L20 114.12.1  grammar_notes/2/text         ratku•wa•waktit -> ratku•wá•waktit   (page has an accent the stored text lacks; audit: no reading)
+  L20 114.14.0  grammar_notes/2/text         Pari -> Parí   (page has an accent the stored text lacks; audit: no reading)
+  L20 114.16.1  grammar_notes/2/text         ras•paku -> rás•paku   (page has an accent the stored text lacks; audit: no reading)
+  L20 114.16.1  grammar_notes/2/text         ras•i .waktits -> ras•í•waktits   (page has an accent the stored text lacks; dot, apostrophe or space; audit: no reading)
+  L20 114.18.1  grammar_notes/2/text         rfku•riusis•ari -> ríku•riusis•ari   (OCR slip; audit: no reading)
+  L20 114.18.1  grammar_notes/2/text         Rarit -> Rarít   (page has an accent the stored text lacks; audit: no reading)
+  L20 115.2.1   grammar_notes/4/text         Keri -> Kéri   (page has an accent the stored text lacks; audit: no reading)
+  L20 115.2.10  grammar_notes/4/text         Suks•pa'ku -> Suks•páku   (page has an accent the stored text lacks; dot, apostrophe or space; audit: no reading)
+  L20 115.2.14  grammar_notes/4/text         Ketara•pa .waktit -> Ketara•pá•waktit   (page has an accent the stored text lacks; dot, apostrophe or space; audit: no reading)
+  L20 115.2.17  grammar_notes/4/text         tat•kata•ku' -> tat•katá•ku'   (page has an accent the stored text lacks; audit: no reading)
+  L20 115.2.21  grammar_notes/4/text         tiku•paks•kaat -> tiku•páks•kaat   (page has an accent the stored text lacks; audit: no reading)
+  L20 115.2.24  grammar_notes/4/text         Tiku•wihat -> Tiku•wíhat   (page has an accent the stored text lacks; audit: no reading)
+  L20 118.2.4   grammar_notes/8/text         tirah•pares•pari ' -> tirah•pares•pari'   (dot, apostrophe or space; audit: the same)
+
+== 5. Rows of the Blue Book table (id: old -> new; why)
+  #2874 kas•i•kika' -> kas•i•kika   (copies: 0 in bb_gap_triage, 1 in the extracted file)
+        the row is the word list under the lullaby (page 121, line 121.8.2), which has no apostrophe. The audit's crop R0843 was cut at the lullaby's line, where the same letters stand with one
+  #2317 tuh•ra' -> tuh•rá'   (copies: 1 in bb_gap_triage, 1 in the extracted file)
+        the row is the last line of the breakdown on page 75 (line 75.8.5): one reader, three looks, the last at 3.2 times the scan, sees an accent on the a. The audit's crop R0380 was cut at the dialogue line above, which has none
+  #2444 ti .ra wa•raruhat -> ti•rá wa•rar•uhat   (copies: 1 in bb_gap_triage, 1 in the extracted file)
+        three readings agree on all but whether a raised dot or nothing stands between rá and wa; the OCR's space is kept there. Still on the audit's list for a person with the book
+  #2445 hiri .ra wa .raruhat -> hiri•rá wa•rar•uhat   (copies: 1 in bb_gap_triage, 1 in the extracted file)
+        as row 2444
+  #2108 tat. kikat -> tat•kíkat   (copies: 0 in bb_gap_triage, 1 in the extracted file)
+        line 58.4.6; no audit reading at that place
+  #2171 ti ra•kú pita -> i ra•kú pita   (copies: 1 in bb_gap_triage, 1 in the extracted file)
+        the third line of the four on page 63, 'that sitting man yonder', begins with i (line 63.1.2, seen twice); the audit's crop for this row was cut at the first line
+  #2172 ti ra•arikí pita -> i ra•arikí pita   (copies: 0 in bb_gap_triage, 1 in the extracted file)
+        the fourth line, 'that standing man yonder' (line 63.1.3, seen twice)
+  #2263 ti•káisat -> Ti•káisat.   (copies: 1 in bb_gap_triage, 1 in the extracted file)
+        the answer in the dialogue on page 71 (line 71.5.2): a capital and a full stop, as the other dialogue rows have them
+  #2376 Suks-at. -> Suks•at.   (copies: 1 in bb_gap_triage, 1 in the extracted file)
+        line 84.4.0: a raised dot, which the OCR read as a hyphen
+  #2496 kakI 'at -> kakí•'at   (copies: 0 in bb_gap_triage, 1 in the extracted file)
+        line 92.5.4, seen twice
+  #2585 Kitske --'e ru '? -> Kitské [w]e ru'?   (copies: 0 in bb_gap_triage, 1 in the extracted file)
+        line 99.1.1: a flaw in the scan covers the w; the sentence is the lesson's title and stands whole on page 98. On the audit's list for a person with the book
+  #2586 We ti -> We ti p[it]ku.   (copies: 1 in bb_gap_triage, 1 in the extracted file)
+        line 99.1.3: a flaw in the scan covers the middle of the last word; page 98 lists we tí pitku 'it's two o'clock'. On the audit's list for a person with the book
+  #2866 ... pit-sikat ... -> ... pitsikat ...   (copies: 0 in bb_gap_triage, 1 in the extracted file)
+        the word is broken at the end of a line (lines 118.2.11 and 118.2.12); the other broken words of the reading are stored joined
+
+== Left as they are, by decision (strip, stored | read: why)
+  58.1.0    tas• | None: the word stands at the beginning of the next line (58.1.1), where it was read; the line-up placed it with the line before
+  58.1.1    None | tas•: see 58.1.0
+  75.9.2    None | i+u: the stored text has 'i +u': only the spacing of the plus sign differs
+  75.9.5    +has | None: an English word with a plus sign
+  75.9.6    None | i+u: as 75.9.2
+  88.3.0    Tskiri | TSKIRI: a heading: the table stores headings with a capital at the beginning of each word
+  88.3.0    Akitaru' | AKITARU': a heading
+  93.0.3    res•[..]sí•urúkat | res•[?]: a flaw in the scan covers about two letters; the stored text marks the place with [..]
+  93.0.4    None | [?]sí•urúkat: see 93.0.3
+  99.1.1    [w]e | [?]e: a flaw in the scan covers the w; the stored text has it in square brackets, from the same sentence on page 98
+  99.1.3    p[it]ku | p[?]ku: a flaw in the scan covers the middle of the word; the stored text has the letters of page 98 (we tí pitku) in square brackets
+  118.1.0   Hiri | HIRI: a heading
+  118.1.0   Ah•Ratukstak•Kitkeu | AH•RATUKSTAK•KITKEU: a heading
+  118.2.4   Wi•tikskawutik•usuku | Wi•tiks-: the word is broken at the end of the line and stored joined; the second half is on the next line (118.2.5: kawutik•usuku)
+  118.2.6   tikstarah•kawa•karuku | tikstarah•ka-: the word is broken at the end of the line and stored joined; the second half is on the next line (118.2.7: wa•karuku)
+  118.2.7   None | wa•karuku: the second half of the word broken on the line above
+  118.2.7   wi•tikstakas•karuk•usuku | wi•tiks-: the word is broken at the end of the line and stored joined; the second half is on the next line (118.2.8: takas•karuk•usuku)
+  118.2.11  pitsikat | pit-: the word is broken at the end of the line and stored joined; the second half is on the next line (118.2.12: sikat)
+  118.2.13  Tsahriks•pakuhtu | Tsahriks•pa-: the word is broken at the end of the line and stored joined; the second half is on the next line (118.2.14: kuhtu)
+  118.2.14  None | kuhtu: the second half of the word broken on the line above
+
+== Neither taken nor left
+  none

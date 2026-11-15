@@ -235,7 +235,19 @@ def blue_book_possession(conn):
     return rows
 
 
-def blue_book_sentences(conn):
+def corrected_since():
+    """Rows of the Blue Book table that were corrected from the page after the sets were made: id -> (form then,
+    form now). On 2026-11-14 every line of the lessons was read from the scan, and thirteen rows that had never
+    been read at their own line were corrected (scripts/apply_lesson_page_reading.py; the list is "table_rows"
+    in reports/source_audit_2026-11/lesson_text_reading/decisions.json). The sets stay as the review used them."""
+    decisions = ROOT / "reports" / "source_audit_2026-11" / "lesson_text_reading" / "decisions.json"
+    if not decisions.exists():
+        return {}
+    return {r["id"]: (r.get("old"), r.get("new"), r.get("replace")) for r in load_json(decisions).get("table_rows", [])}
+
+
+def blue_book_sentences(conn, then=None):
+    """then: corrected_since(), to build the set as it was when the review was made."""
     rows = []
     seen = set()
     for r in conn.execute("""select id, bb_skiri_form, bb_english, context_type, lesson_number, page_number
@@ -243,6 +255,9 @@ def blue_book_sentences(conn):
                              where context_type in ('DIALOGUE','PHRASE','GRAMMAR_EXAMPLE')
                                and bb_skiri_form is not null and bb_skiri_form != '' order by id"""):
         key = r["bb_skiri_form"]
+        if then and r["id"] in then:
+            old, new, replace = then[r["id"]]
+            key = old if key == new else key.replace(replace[1], replace[0]) if replace else key
         if key in seen:
             continue
         seen.add(key)
@@ -308,8 +323,20 @@ def main():
             for row in made[name]:
                 h.update((json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n").encode("utf-8"))
             same = h.hexdigest() == manifest["sets"][name]["sha256"]
+            note = "as recorded" if same else "DIFFERS from the manifest"
+            if not same and name == "blue_book_sentences":
+                then = corrected_since()
+                conn = connect()
+                h = hashlib.sha256()
+                for row in blue_book_sentences(conn, then):
+                    h.update((json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n").encode("utf-8"))
+                conn.close()
+                if h.hexdigest() == manifest["sets"][name]["sha256"]:
+                    same = True
+                    note = ("as recorded, once the rows corrected from the page since the review are put back "
+                            "(%d rows of the table; reports/source_audit_2026-11/lesson_text_reading/decisions.json)" % len(then))
             bad += not same
-            out("%-22s %5d items  %s" % (name, len(made[name]), "as recorded" if same else "DIFFERS from the manifest"))
+            out("%-22s %5d items  %s" % (name, len(made[name]), note))
         out("all test sets are as recorded" if not bad else "%d test set(s) differ: the sources changed since the sets were made" % bad)
         raise SystemExit(1 if bad else 0)
     manifest = {"made_by": "scripts/engines_review/build_test_sets.py", "sets": {}}

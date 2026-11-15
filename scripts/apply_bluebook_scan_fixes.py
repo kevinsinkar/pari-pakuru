@@ -165,6 +165,25 @@ def main():
             ids = [x[0] for x in conn.execute("select id from blue_book_attestations where entry_id=? and bb_skiri_form=?",
                                               (r.get("entry_id"), r["stored_form"]))]
         groups.append((ids, r["stored_form"], r["read"], r["page"], r["crop"]))
+    # Crops that were cut at another line of the page than the row's own, found when every line of the lessons
+    # was read (reports/source_audit_2026-11/bluebook_crops_at_another_line.json). What such a crop shows is not
+    # a reading of the row; scripts/apply_lesson_page_reading.py holds the row's own line.
+    another_line = {}
+    another_file = AUDIT / "bluebook_crops_at_another_line.json"
+    if another_file.exists():
+        for r in json.loads(another_file.read_text(encoding="utf-8"))["rows"]:
+            another_line[(r["page"], r["crop"])] = r
+    passed_over = ["p. %-4s %-5s stored %r; the crop shows %s; the row's own line (%s) reads %r" % (
+        page, crop, stored, another_line[(page, crop)]["crop_shows"], another_line[(page, crop)]["own_line"],
+        another_line[(page, crop)]["read_at_its_own_line"])
+        for ids, stored, reading, page, crop in groups if (page, crop) in another_line]
+    groups = [g for g in groups if (g[3], g[4]) not in another_line]
+    # Rows that hold the reading of their own line of the page, made when the lessons were read line by line
+    # (reports/source_audit_2026-11/lesson_text_reading/decisions.json, "table_rows"): this script leaves them.
+    held = set()
+    held_file = AUDIT / "lesson_text_reading" / "decisions.json"
+    if held_file.exists():
+        held = {r["id"] for r in json.loads(held_file.read_text(encoding="utf-8")).get("table_rows", [])}
     # the second reading of the forms the first one left open (scripts/source_audit/bluebook_second_look.py --grade)
     second = {}
     second_file = AUDIT / "bluebook_second_look.json"
@@ -210,6 +229,8 @@ def main():
                 left.append("p. %-4s %-5s %-26s stored %r; the reader saw %r" % (page, crop, kind, stored, clean(reading)))
             continue
         for rid in ids:
+            if rid in held:
+                continue
             row = conn.execute("select bb_skiri_form from blue_book_attestations where id=?", (rid,)).fetchone()
             # every row of the group holds the same letters; rows may differ from one another in spacing
             if row and plain(row[0]) == plain(stored) and row[0] != new:
@@ -304,6 +325,8 @@ def main():
     body += ["  %-34s %d" % ("%s.%s" % k, n) for k, n in sorted(Counter((o[0], o[1]) for o in other).items())]
     body += ["  %s.%s  %s -> %s" % (o[0], o[1], o[4], o[5]) for o in other]
     body += ["", "== Stored form confirmed by a later reading (%d)" % len(confirmed)] + ["  " + x for x in sorted(confirmed)]
+    body += ["", "== Crop cut at another line than the row's own: passed over (%d)" % len(passed_over)] + [
+        "  " + x for x in sorted(passed_over)]
     body += ["", "== Left for a person (%d)" % len(left)] + ["  " + x for x in sorted(left)]
     if not args.apply:
         out("\n".join(header))

@@ -22,7 +22,7 @@ which were written once.
 
 ## Headline
 
-549 roots and 30 affixes let a learner take apart 1,791 of the dictionary's
+549 roots and 30 affixes let a learner take apart 1,794 of the dictionary's
 4,337 words completely (41%). The first 100 building blocks cover 480 words
 (11%), and 1,378 words (32%) contain at least one of them.
 

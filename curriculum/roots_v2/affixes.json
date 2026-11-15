@@ -3,7 +3,7 @@
   {
    "blue_book": {
     "first_lesson": 1,
-    "words_attested": 18
+    "words_attested": 27
    },
    "category": "derivational or stem-forming affix (found in dictionary etymologies)",
    "direct_vs_nested": {
@@ -78,6 +78,40 @@
      "verb_class": null
     },
     {
+     "book_page": 357,
+     "class": "N",
+     "gloss": "dwelling, lodge, house.",
+     "headword": "akaaruʔ",
+     "lexeme_id": "SK-akaaruq-p9-0108",
+     "literal": "dwelling + NOM",
+     "needs_community_review": false,
+     "phonetic_form": "[ə́·kaa·rʊʔ]",
+     "pieces": [
+      "akaar",
+      "uʔ"
+     ],
+     "rules": [],
+     "tier": "B",
+     "verb_class": null
+    },
+    {
+     "book_page": 359,
+     "class": "N",
+     "gloss": "tribe, band; nationality.",
+     "headword": "akitaaruʔ",
+     "lexeme_id": "SK-akitaaruq-p11-0121",
+     "literal": "tribe + NOM",
+     "needs_community_review": false,
+     "phonetic_form": "[ə́·kɪ·taa·rʊʔ]",
+     "pieces": [
+      "akitaar",
+      "uʔ"
+     ],
+     "rules": [],
+     "tier": "B",
+     "verb_class": null
+    },
+    {
      "book_page": 366,
      "class": "N",
      "gloss": "foot; paw.",
@@ -131,40 +165,6 @@
      ],
      "tier": "B",
      "verb_class": null
-    },
-    {
-     "book_page": 390,
-     "class": "N",
-     "gloss": "feather.",
-     "headword": "hiituʔ",
-     "lexeme_id": "SK-hiituq-p390-3856",
-     "literal": "feather + NOM",
-     "needs_community_review": false,
-     "phonetic_form": "[hií·tʊʔ]",
-     "pieces": [
-      "hiit",
-      "uʔ"
-     ],
-     "rules": [],
-     "tier": "B",
-     "verb_class": null
-    },
-    {
-     "book_page": 412,
-     "class": "N",
-     "gloss": "hand.",
-     "headword": "iksuʔ",
-     "lexeme_id": "SK-iksuq-p64-1111",
-     "literal": "hand + NOM",
-     "needs_community_review": false,
-     "phonetic_form": "[ɪ́k·sʊʔ]",
-     "pieces": [
-      "iks",
-      "uʔ"
-     ],
-     "rules": [],
-     "tier": "B",
-     "verb_class": null
     }
    ],
    "form": "uʔ",
@@ -190,13 +190,13 @@
    "tier_reason": "label printed by Parks 714 times; in 339 tier A/B words",
    "token_frequency": {
     "ci95": [
-     0.14316,
-     0.17081
+     0.14675,
+     0.17492
     ],
-    "example_sentences": 415,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
-    "share": 0.15649
+    "example_sentences": 418,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
+    "share": 0.16034
    },
    "transparency": {
     "by_plain_concatenation": 162,
@@ -421,13 +421,13 @@
    "tier_reason": "label printed by Parks 109 times; in 127 tier A/B words",
    "token_frequency": {
     "ci95": [
-     0.01271,
-     0.02263
+     0.01293,
+     0.02302
     ],
     "example_sentences": 45,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
-    "share": 0.01697
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
+    "share": 0.01726
    },
    "transparency": {
     "by_plain_concatenation": 10,
@@ -654,13 +654,13 @@
    "tier_reason": "label printed by Parks 4 times; in 109 tier A/B words",
    "token_frequency": {
     "ci95": [
-     0.02296,
-     0.03572
+     0.02335,
+     0.03634
     ],
     "example_sentences": 76,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
-    "share": 0.02866
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
+    "share": 0.02915
    },
    "transparency": {
     "by_plain_concatenation": 39,
@@ -868,13 +868,13 @@
    "tier_reason": "preverb: Parks GO p.31 names ir-/a-, uur- and ut- as the three preverbs",
    "token_frequency": {
     "ci95": [
-     0.00519,
-     0.01208
+     0.00527,
+     0.01228
     ],
     "example_sentences": 21,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
-    "share": 0.00792
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
+    "share": 0.00806
    },
    "transparency": {
     "by_plain_concatenation": 46,
@@ -1083,13 +1083,13 @@
    "tier_reason": "label printed by Parks 12 times; in 65 tier A/B words",
    "token_frequency": {
     "ci95": [
-     0.00489,
-     0.01162
+     0.00497,
+     0.01182
     ],
     "example_sentences": 20,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
-    "share": 0.00754
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
+    "share": 0.00767
    },
    "transparency": {
     "by_plain_concatenation": 20,
@@ -1295,13 +1295,13 @@
    "tier_reason": "preverb: Parks GO p.31 names ir-/a-, uur- and ut- as the three preverbs",
    "token_frequency": {
     "ci95": [
-     0.00153,
-     0.00594
+     0.00156,
+     0.00604
     ],
     "example_sentences": 8,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
-    "share": 0.00302
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
+    "share": 0.00307
    },
    "transparency": {
     "by_plain_concatenation": 24,
@@ -1503,13 +1503,13 @@
    "tier_reason": "label printed 2 times and fixed by a cited decision; in 42 tier A/B words",
    "token_frequency": {
     "ci95": [
-     0.00287,
-     0.00837
+     0.00292,
+     0.00851
     ],
     "example_sentences": 13,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
-    "share": 0.0049
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
+    "share": 0.00499
    },
    "transparency": {
     "by_plain_concatenation": 26,
@@ -1726,13 +1726,13 @@
    "tier_reason": "label printed by Parks 47 times; in 36 tier A/B words",
    "token_frequency": {
     "ci95": [
-     0.0043,
-     0.0107
+     0.00437,
+     0.01089
     ],
     "example_sentences": 18,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
-    "share": 0.00679
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
+    "share": 0.0069
    },
    "transparency": {
     "by_plain_concatenation": 16,
@@ -1968,13 +1968,13 @@
    "tier_reason": "label printed by Parks 26 times; in 35 tier A/B words",
    "token_frequency": {
     "ci95": [
-     0.00372,
-     0.00978
+     0.00378,
+     0.00995
     ],
     "example_sentences": 16,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
-    "share": 0.00603
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
+    "share": 0.00614
    },
    "transparency": {
     "by_plain_concatenation": 0,
@@ -2181,13 +2181,13 @@
    "tier_reason": "label printed by Parks 5 times; in 32 tier A/B words",
    "token_frequency": {
     "ci95": [
-     0.00179,
-     0.00644
+     0.00182,
+     0.00655
     ],
     "example_sentences": 9,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
-    "share": 0.00339
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
+    "share": 0.00345
    },
    "transparency": {
     "by_plain_concatenation": 24,
@@ -2209,7 +2209,7 @@
   {
    "blue_book": {
     "first_lesson": 1,
-    "words_attested": 7
+    "words_attested": 9
    },
    "category": "derivational or stem-forming affix (found in dictionary etymologies)",
    "direct_vs_nested": {
@@ -2260,6 +2260,25 @@
      ],
      "rules": [
       "R16b",
+      "R9"
+     ],
+     "tier": "B",
+     "verb_class": null
+    },
+    {
+     "book_page": 362,
+     "class": "N",
+     "gloss": "dog.",
+     "headword": "asaaki",
+     "lexeme_id": "SK-asaaki-p362-3736",
+     "literal": "dog + DIM",
+     "needs_community_review": false,
+     "phonetic_form": "[ə·saá·kɪ]",
+     "pieces": [
+      "asaa",
+      "kis"
+     ],
+     "rules": [
       "R9"
      ],
      "tier": "B",
@@ -2361,25 +2380,6 @@
      ],
      "tier": "B",
      "verb_class": null
-    },
-    {
-     "book_page": 362,
-     "class": "N",
-     "gloss": "dog.",
-     "headword": "asaaki",
-     "lexeme_id": "SK-asaaki-p362-3736",
-     "literal": "dog + DIM",
-     "needs_community_review": false,
-     "phonetic_form": "[ə·saá·kɪ]",
-     "pieces": [
-      "asaa",
-      "kis"
-     ],
-     "rules": [
-      "R9"
-     ],
-     "tier": "B",
-     "verb_class": null
     }
    ],
    "form": "kis",
@@ -2406,13 +2406,13 @@
    "tier_reason": "label printed by Parks 52 times; in 29 tier A/B words",
    "token_frequency": {
     "ci95": [
-     0.01368,
-     0.02391
+     0.01826,
+     0.02994
     ],
-    "example_sentences": 48,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
-    "share": 0.0181
+    "example_sentences": 61,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
+    "share": 0.0234
    },
    "transparency": {
     "by_plain_concatenation": 3,
@@ -2631,13 +2631,13 @@
    "tier_reason": "label printed by Parks 24 times; in 27 tier A/B words",
    "token_frequency": {
     "ci95": [
-     0.00232,
-     0.00741
+     0.00236,
+     0.00754
     ],
     "example_sentences": 11,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
-    "share": 0.00415
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
+    "share": 0.00422
    },
    "transparency": {
     "by_plain_concatenation": 2,
@@ -2847,13 +2847,13 @@
    "tier_reason": "label printed by Parks 57 times; in 24 tier A/B words",
    "token_frequency": {
     "ci95": [
-     0.00128,
-     0.00544
+     0.0013,
+     0.00553
     ],
     "example_sentences": 7,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
-    "share": 0.00264
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
+    "share": 0.00269
    },
    "transparency": {
     "by_plain_concatenation": 12,
@@ -3053,13 +3053,13 @@
    "tier_reason": "preverb: Parks GO p.31 names ir-/a-, uur- and ut- as the three preverbs",
    "token_frequency": {
     "ci95": [
-     0.00179,
-     0.00644
+     0.00182,
+     0.00655
     ],
     "example_sentences": 9,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
-    "share": 0.00339
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
+    "share": 0.00345
    },
    "transparency": {
     "by_plain_concatenation": 14,
@@ -3255,13 +3255,13 @@
    "tier_reason": "label printed 2 times and fixed by a cited decision; in 22 tier A/B words",
    "token_frequency": {
     "ci95": [
-     0.00153,
-     0.00594
+     0.00156,
+     0.00604
     ],
     "example_sentences": 8,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
-    "share": 0.00302
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
+    "share": 0.00307
    },
    "transparency": {
     "by_plain_concatenation": 16,
@@ -3480,13 +3480,13 @@
    "tier_reason": "label printed by Parks 3 times; in 22 tier A/B words",
    "token_frequency": {
     "ci95": [
-     0.00205,
-     0.00693
+     0.00208,
+     0.00705
     ],
     "example_sentences": 10,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
-    "share": 0.00377
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
+    "share": 0.00384
    },
    "transparency": {
     "by_plain_concatenation": 6,
@@ -3700,13 +3700,13 @@
    "tier_reason": "label printed 0 times and fixed by a cited decision; in 20 tier A/B words",
    "token_frequency": {
     "ci95": [
-     0.00038,
-     0.00332
+     0.00039,
+     0.00338
     ],
     "example_sentences": 3,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
-    "share": 0.00113
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
+    "share": 0.00115
    },
    "transparency": {
     "by_plain_concatenation": 4,
@@ -3915,13 +3915,13 @@
    "tier_reason": "label printed by Parks 21 times; in 17 tier A/B words",
    "token_frequency": {
     "ci95": [
-     0.00038,
-     0.00332
+     0.00039,
+     0.00338
     ],
     "example_sentences": 3,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
-    "share": 0.00113
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
+    "share": 0.00115
    },
    "transparency": {
     "by_plain_concatenation": 11,
@@ -4123,13 +4123,13 @@
    "tier_reason": "label printed by Parks 18 times; in 16 tier A/B words",
    "token_frequency": {
     "ci95": [
-     0.00179,
-     0.00644
+     0.00182,
+     0.00655
     ],
     "example_sentences": 9,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
-    "share": 0.00339
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
+    "share": 0.00345
    },
    "transparency": {
     "by_plain_concatenation": 13,
@@ -4326,11 +4326,11 @@
    "token_frequency": {
     "ci95": [
      0.0,
-     0.00145
+     0.00147
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
     "share": 0.0
    },
    "transparency": {
@@ -4493,11 +4493,11 @@
    "token_frequency": {
     "ci95": [
      0.0,
-     0.00145
+     0.00147
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
     "share": 0.0
    },
    "transparency": {
@@ -4660,11 +4660,11 @@
    "token_frequency": {
     "ci95": [
      0.0,
-     0.00145
+     0.00147
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
     "share": 0.0
    },
    "transparency": {
@@ -4798,11 +4798,11 @@
    "token_frequency": {
     "ci95": [
      7e-05,
-     0.00213
+     0.00217
     ],
     "example_sentences": 1,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
     "share": 0.00038
    },
    "transparency": {
@@ -4941,11 +4941,11 @@
    "token_frequency": {
     "ci95": [
      0.0,
-     0.00145
+     0.00147
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
     "share": 0.0
    },
    "transparency": {
@@ -5059,11 +5059,11 @@
    "token_frequency": {
     "ci95": [
      0.0,
-     0.00145
+     0.00147
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
     "share": 0.0
    },
    "transparency": {
@@ -5195,11 +5195,11 @@
    "token_frequency": {
     "ci95": [
      7e-05,
-     0.00213
+     0.00217
     ],
     "example_sentences": 1,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
     "share": 0.00038
    },
    "transparency": {
@@ -5296,11 +5296,11 @@
    "token_frequency": {
     "ci95": [
      7e-05,
-     0.00213
+     0.00217
     ],
     "example_sentences": 1,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
     "share": 0.00038
    },
    "transparency": {
@@ -5396,12 +5396,12 @@
    "token_frequency": {
     "ci95": [
      0.00021,
-     0.00275
+     0.00279
     ],
     "example_sentences": 2,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
-    "share": 0.00075
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
+    "share": 0.00077
    },
    "transparency": {
     "by_plain_concatenation": 1,
@@ -5497,11 +5497,11 @@
    "token_frequency": {
     "ci95": [
      7e-05,
-     0.00213
+     0.00217
     ],
     "example_sentences": 1,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
     "share": 0.00038
    },
    "transparency": {
@@ -5596,12 +5596,12 @@
    "token_frequency": {
     "ci95": [
      0.00021,
-     0.00275
+     0.00279
     ],
     "example_sentences": 2,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
-    "share": 0.00075
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
+    "share": 0.00077
    },
    "transparency": {
     "by_plain_concatenation": 1,
@@ -5676,13 +5676,13 @@
    "tier_reason": "label printed 0 times; in 1 tier A/B words",
    "token_frequency": {
     "ci95": [
-     0.00038,
-     0.00332
+     0.00039,
+     0.00338
     ],
     "example_sentences": 3,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
-    "share": 0.00113
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
+    "share": 0.00115
    },
    "transparency": {
     "by_plain_concatenation": 0,
@@ -5760,12 +5760,12 @@
    "token_frequency": {
     "ci95": [
      0.00021,
-     0.00275
+     0.00279
     ],
     "example_sentences": 2,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
-    "share": 0.00075
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
+    "share": 0.00077
    },
    "transparency": {
     "by_plain_concatenation": 0,
@@ -5843,11 +5843,11 @@
    "token_frequency": {
     "ci95": [
      0.0,
-     0.00145
+     0.00147
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
     "share": 0.0
    },
    "transparency": {
@@ -5900,11 +5900,11 @@
    "token_frequency": {
     "ci95": [
      0.0,
-     0.00145
+     0.00147
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
     "share": 0.0
    },
    "transparency": {
@@ -5955,11 +5955,11 @@
    "token_frequency": {
     "ci95": [
      0.0,
-     0.00145
+     0.00147
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
     "share": 0.0
    },
    "transparency": {
@@ -6010,11 +6010,11 @@
    "token_frequency": {
     "ci95": [
      0.0,
-     0.00145
+     0.00147
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
     "share": 0.0
    },
    "transparency": {
@@ -6065,11 +6065,11 @@
    "token_frequency": {
     "ci95": [
      0.0,
-     0.00145
+     0.00147
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
     "share": 0.0
    },
    "transparency": {
@@ -6120,11 +6120,11 @@
    "token_frequency": {
     "ci95": [
      0.0,
-     0.00145
+     0.00147
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
     "share": 0.0
    },
    "transparency": {
@@ -6175,11 +6175,11 @@
    "token_frequency": {
     "ci95": [
      0.0,
-     0.00145
+     0.00147
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
     "share": 0.0
    },
    "transparency": {
@@ -6230,11 +6230,11 @@
    "token_frequency": {
     "ci95": [
      0.0,
-     0.00145
+     0.00147
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
     "share": 0.0
    },
    "transparency": {
@@ -6285,11 +6285,11 @@
    "token_frequency": {
     "ci95": [
      0.0,
-     0.00145
+     0.00147
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
     "share": 0.0
    },
    "transparency": {
@@ -6340,11 +6340,11 @@
    "token_frequency": {
     "ci95": [
      0.0,
-     0.00145
+     0.00147
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
     "share": 0.0
    },
    "transparency": {
@@ -6395,11 +6395,11 @@
    "token_frequency": {
     "ci95": [
      0.0,
-     0.00145
+     0.00147
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
     "share": 0.0
    },
    "transparency": {
@@ -6450,11 +6450,11 @@
    "token_frequency": {
     "ci95": [
      0.0,
-     0.00145
+     0.00147
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
     "share": 0.0
    },
    "transparency": {
@@ -6505,11 +6505,11 @@
    "token_frequency": {
     "ci95": [
      0.0,
-     0.00145
+     0.00147
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
     "share": 0.0
    },
    "transparency": {
@@ -6560,11 +6560,11 @@
    "token_frequency": {
     "ci95": [
      0.0,
-     0.00145
+     0.00147
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
     "share": 0.0
    },
    "transparency": {
@@ -6615,11 +6615,11 @@
    "token_frequency": {
     "ci95": [
      0.0,
-     0.00145
+     0.00147
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
     "share": 0.0
    },
    "transparency": {
@@ -6670,11 +6670,11 @@
    "token_frequency": {
     "ci95": [
      0.0,
-     0.00145
+     0.00147
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
     "share": 0.0
    },
    "transparency": {
@@ -6725,11 +6725,11 @@
    "token_frequency": {
     "ci95": [
      0.0,
-     0.00145
+     0.00147
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
     "share": 0.0
    },
    "transparency": {
@@ -6780,11 +6780,11 @@
    "token_frequency": {
     "ci95": [
      0.0,
-     0.00145
+     0.00147
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
     "share": 0.0
    },
    "transparency": {
@@ -6835,11 +6835,11 @@
    "token_frequency": {
     "ci95": [
      0.0,
-     0.00145
+     0.00147
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
     "share": 0.0
    },
    "transparency": {
@@ -6890,11 +6890,11 @@
    "token_frequency": {
     "ci95": [
      0.0,
-     0.00145
+     0.00147
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
     "share": 0.0
    },
    "transparency": {
@@ -6945,11 +6945,11 @@
    "token_frequency": {
     "ci95": [
      0.0,
-     0.00145
+     0.00147
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
     "share": 0.0
    },
    "transparency": {
@@ -7000,11 +7000,11 @@
    "token_frequency": {
     "ci95": [
      0.0,
-     0.00145
+     0.00147
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
     "share": 0.0
    },
    "transparency": {
@@ -7055,11 +7055,11 @@
    "token_frequency": {
     "ci95": [
      0.0,
-     0.00145
+     0.00147
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
     "share": 0.0
    },
    "transparency": {
@@ -7110,11 +7110,11 @@
    "token_frequency": {
     "ci95": [
      0.0,
-     0.00145
+     0.00147
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
     "share": 0.0
    },
    "transparency": {
@@ -7165,11 +7165,11 @@
    "token_frequency": {
     "ci95": [
      0.0,
-     0.00145
+     0.00147
     ],
     "example_sentences": 0,
-    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2652 sentences, so treat as a secondary signal",
-    "of_total": 2652,
+    "note": "example sentences attached to tier A/B words built with this morpheme; the corpus has 2607 sentences, so treat as a secondary signal",
+    "of_total": 2607,
     "share": 0.0
    },
    "transparency": {

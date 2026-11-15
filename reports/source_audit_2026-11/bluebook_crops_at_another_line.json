@@ -1,0 +1,11 @@
+{
+ "note": "Crops of the audit's first Blue Book reading that were cut at another line of the page than the row's own, found on 2026-11-14 when every line of the lessons' text was read (scripts/source_audit/lesson_text_reading.py compares readings by their place on the page). A row was cut where its stored letters were found in the text layer; for these short forms that was a line above. scripts/apply_bluebook_scan_fixes.py passes over these crops; the rows hold what scripts/apply_lesson_page_reading.py read at their own line.",
+ "rows": [
+  {"page": 121, "crop": "R0843", "attestation_ids": [2874], "stored_form": "kas•i•kika", "crop_box": [204.5, 445.2, 260.3, 460.0],
+   "crop_shows": "the lullaby's line 'Kiraritu kas•i•kika'' (line 121.7.2)", "own_line": "121.8.2", "own_line_box": [107, 537, 159, 552],
+   "read_at_its_own_line": "kas•i•kika", "reading": "lesson_text_reading/second_01.json"},
+  {"page": 75, "crop": "R0380", "attestation_ids": [2317], "stored_form": "tuh•ra'", "crop_box": [113.5, 253.9, 150.9, 268.5],
+   "crop_shows": "the dialogue line 'Paresu tuh•ra' tiraku'.' (line 75.4.3)", "own_line": "75.8.5", "own_line_box": [75, 518, 110, 533],
+   "read_at_its_own_line": "tuh•rá'", "reading": "lesson_text_reading/second_01.json"}
+ ]
+}

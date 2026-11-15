@@ -1,0 +1,96 @@
+pair_lesson_dialogues — APPLY — 2026-11-14 21:45
+dialogue lines: 156 before, 105 after
+English taken from the row of the page: 22; the same English dropped where it stood as a line of its own: 22
+English lines made the English of the Pawnee line before them: 4; joined to the English before them: 4
+lines cut into Pawnee and English: 7; Pawnee lines joined to the line before: 2
+sections of the notes moved out of a dialogue: 1
+values of the lessons table that change: 15; of extracted_data/lessons.json: 15
+Pawnee lines printed without English of their own: 3; problems: 0
+
+written: 15 values of the lessons table, 15 in extracted_data/lessons.json
+backup: OneDrive/pari_pakuru_backups/skiri_pawnee_backup_20261114_214527_dialogues.db
+
+== 1. English from the row of the page (where; Pawnee | English)
+  L9 dialogue 1 line 1; Ka rá•awari rikutski? | Is the bird (still) flying around?
+  L9 dialogue 1 line 2; Kakí', rikutski tí•'isat. | No, the bird has disappeared.
+  L9 dialogue 2 line 1; Kirú ra•'at rikutski? | Where has the bird gone?
+  L9 dialogue 2 line 2; Ti•káisat. | It flew into the woods.
+  L10 dialogue 1 line 1; Paresu kiriké rut•ari'? | What is the hunter doing?
+  L10 dialogue 1 line 3; Paresu ti•taka•asíku'. | The hunter is shooting.
+  L10 dialogue 2 line 1; Kiriké ruh•ra' paresu'? | What is the hunter using?
+  L10 dialogue 2 line 3; Paresu tuh•ra' tiraku'. | The hunter is using a rifle.
+  L11 dialogue 1 line 1; Ka rúh•ratsaus? | Are you hungry?
+  L11 dialogue 1 line 2; Háu', tikú•ratsaus. | Yes, I'm hungry.
+  L11 dialogue 1 line 3; Kakí', we tatuks•á•ka- | No, I ate (was eating).
+  L11 dialogue 2 line 1; Kiriké rasuks•a? | What did you eat?
+  L11 dialogue 2 line 2; Tatuks•a kísatski. | I ate (was eating) meat.
+  L11 dialogue 3 line 1; Ka ruruks•táhare? | Did it taste good?
+  L11 dialogue 3 line 2; Kakí', kakuruks•táhare. | No, it tasted bad.
+  L13 dialogue 1 line 1; Kiru rásuks•at? | Where did you go?
+  L13 dialogue 1 line 3; Tatuks•at Pári. | I went to Pawnee.
+  L13 dialogue 1 line 5; Tatuks•itsah•ká'isat. | I went into town.
+  L13 dialogue 2 line 1; Kiriké rasut•erit? | What did you see?
+  L13 dialogue 2 line 3; Kaas raku•káriu | I saw many cars.
+  L14 dialogue 2 line 3; tuks•tá•pahit. | it was quiet.
+  L16 dialogue 1 line 2; We ti p[it]ku. | It's two o'clock.
+
+== 1b. The same English, stored as a line of its own, dropped
+  L9 dialogue 2 line 3; Is the bird (still) flying around?
+  L9 dialogue 2 line 4; No, the bird has disappeared.
+  L9 dialogue 2 line 5; Where has the bird gone?
+  L9 dialogue 2 line 6; It flew into the woods.
+  L10 dialogue 1 line 2; What is the hunter doing?
+  L10 dialogue 1 line 4; The hunter is shooting.
+  L10 dialogue 2 line 2; What is the hunter using?
+  L10 dialogue 2 line 4; The hunter is using a rifle.
+  L11 dialogue 3 line 3; Are you hungry?
+  L11 dialogue 3 line 4; Yes, I'm hungry.
+  L11 dialogue 3 line 5; No, I ate (was eating).
+  L11 dialogue 3 line 6; What did you eat?
+  L11 dialogue 3 line 7; I ate (was eating) meat.
+  L11 dialogue 3 line 8; Did it taste good?
+  L11 dialogue 3 line 9; No, it tasted bad.
+  L13 dialogue 1 line 2; Where did you go?
+  L13 dialogue 1 line 4; I went to Pawnee.
+  L13 dialogue 1 line 6; I went into town.
+  L13 dialogue 2 line 2; What did you see?
+  L13 dialogue 2 line 4; I saw many cars.
+  L14 dialogue 2 line 4; it was quiet.
+  L16 dialogue 1 line 3; It's two o'clock.
+
+== 2. Lines cut into Pawnee and English (where; before; after)
+  L1 dialogue 2 line 2; Ahu', tí hitu'. (SB) Yes, this is a feather.  ->  Ahu', tí hitu'. (SB) | Yes, this is a feather.
+  L5 dialogue 3 line 2; Kaki ku•paks•táari', My head doesn't hurt,  ->  Kaki ku•paks•táari', | My head doesn't hurt,
+  L14 dialogue 2 line 2; Kakí', kakuks•paká•rihu', No, it wasn't loud,  ->  Kakí', kakuks•paká•rihu', | No, it wasn't loud,
+  L18 dialogue 1 line 1; 1.. | Tsikstit ka rás•pari'? Are you well?  ->  Tsikstit ka rás•pari'? | Are you well?
+  L20 dialogue 1 line 2; Tát•itska ratkú•u•ta I want to go.  ->  Tát•itska ratkú•u•ta | I want to go.
+  L20 dialogue 2 line 1; Ka rás•itska ratkú•u•ta Do you want me to go?  ->  Ka rás•itska ratkú•u•ta | Do you want me to go?
+  L20 dialogue 2 line 2; Kakí', tat•itska rakú•u•ta No, I want him to go.  ->  Kakí', tat•itska rakú•u•ta | No, I want him to go.
+
+== 3. English lines given to the Pawnee line before them (where; Pawnee; English)
+  L17 dialogue 1 line 2; Kirike rasutsíks•ari tiruks•tsak•ariki? | What were you doing yesterday?
+  L17 dialogue 1 line 4; Tatutsiks•á•wahri' tiruks•tsak•ariki. | I was working yesterday.
+  L17 dialogue 2 line 2; Kirú rira•awiu' tasutsiks•á•wahri'? | When were you working?
+  L17 dialogue 2 line 4; Tíruks•tsak•ariki tatutsiks•á•wahri'. | I was working yesterday.
+  L7 dialogue 2 line 4; Kakí', atipat we tí•hura•hats. | No, my grandfather has passed away.
+  L14 dialogue 1 line 3; Kaki', pita tur•átku' kuruks. | No, the man heard the bear.
+  L15 dialogue 1 line 2; Kirike rut•káhu•raru' retskuhke? | What does it do in the fall?
+  L15 dialogue 2 line 2; Kiriké rusut•ari•úsuku retskuhke? | What do you do in the fall?
+
+== 4. Pawnee lines joined to the line before (where; the line now)
+  L11 dialogue 1 line 4; Kakí', we tatuks•á•kawahtsu'.
+  L13 dialogue 2 line 5; Kaas raku•káriu tatutak•érit.
+
+== 5. Sections of the notes moved out of a dialogue (lesson, dialogue, heading, lines)
+  L2 dialogue 3: Noun Phrase: Noun•Adjective (19 lines), now the first of the lesson's notes
+
+== Printed without English of their own (lesson, dialogue, line: Pawnee)
+  L1 dialogue 2 line 3: Haú, tí hitu'. (SK)
+  L7 dialogue 2 line 2: (or ka rá•wari')
+  L18 dialogue 2 line 2: ra +s +ut +uks•ari'
+
+== English of the page row that was not stored before
+  none
+
+== Problems
+  none

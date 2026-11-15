@@ -1,0 +1,765 @@
+{
+ "note": "Decisions made by hand on 2026-11-14 after the second look at the page (second_01.json). 'change': a stretch of a lesson's stored text and what the page has there; each stretch stands once in its text. 'place': a stored line that the line-up puts on another line of the page with the same words, and its own line. 'table_rows': rows of the Blue Book table that are lines of the lessons and held the old reading, because the audit's crop was cut at another line or the audit left the form open; their copies in bb_gap_triage and extracted_data/blue_book_extracted.json are found by form, lesson and English. 'leave': a difference the comparison keeps finding and that is left, with the reason. Everything else is taken by scripts/apply_lesson_page_reading.py from the comparison itself.",
+ "change": [
+  {
+   "lesson": 2,
+   "where": [
+    "grammar_notes",
+    1,
+    "text"
+   ],
+   "strip": "35.9.0, 35.9.1",
+   "old": "Suks•paku' (SB) (suks pa-ku') You (1) say it! (SK)(suks pd-ku ') You (1) say it!",
+   "new": "Suks•páku' (SB) (suks-pá-ku') You (1) say it! (SK) (suks-pá-ku') You (1) say it!",
+   "why": "two lines of the page; the OCR wrote the accented vowel as 'd' and lost the hyphens"
+  },
+  {
+   "lesson": 3,
+   "where": [
+    "dialogues",
+    1,
+    "lines",
+    0,
+    "skiri"
+   ],
+   "strip": "40.3.1",
+   "old": "Kirike tutu '?",
+   "new": "Kiriké rut•u'?",
+   "why": "the lesson's title sentence; the OCR read r as t and lost the raised dot"
+  },
+  {
+   "lesson": 3,
+   "where": [
+    "dialogues",
+    2,
+    "lines",
+    0,
+    "skiri"
+   ],
+   "strip": "40.5.1",
+   "old": "Ka ra•ha'k•tihu '?",
+   "new": "Ka ra•hák•tihu'?",
+   "why": "the OCR wrote the accent as an apostrophe"
+  },
+  {
+   "lesson": 3,
+   "where": [
+    "grammar_notes",
+    0,
+    "text"
+   ],
+   "strip": "41.6.2",
+   "old": "ti .wari' he goes about",
+   "new": "tí•wari' he goes about",
+   "why": "the form stands in the column to the left of its English"
+  },
+  {
+   "lesson": 3,
+   "where": [
+    "grammar_notes",
+    2,
+    "text"
+   ],
+   "strip": "42.9.2",
+   "old": "Kirike ratara•paki .ahu'?",
+   "new": "Kirike ratara•pakí•ahu'?",
+   "why": "one word; the OCR wrote the raised dot as ' .'"
+  },
+  {
+   "lesson": 3,
+   "where": [
+    "grammar_notes",
+    2,
+    "text"
+   ],
+   "strip": "42.9.12",
+   "old": "Rat u'.",
+   "new": "Rát•u'.",
+   "why": "one word"
+  },
+  {
+   "lesson": 4,
+   "where": [
+    "grammar_notes",
+    1,
+    "text"
+   ],
+   "strip": "45.4.0",
+   "old": "(pit-ku-sik-sa pits)",
+   "new": "(pit-ku-sík-sa-pits)",
+   "why": "the pronunciation in brackets"
+  },
+  {
+   "lesson": 4,
+   "where": [
+    "grammar_notes",
+    3,
+    "text"
+   ],
+   "strip": "45.9.1",
+   "old": "t ih-ra",
+   "new": "táh•ra",
+   "why": "the OCR broke the word at the accent"
+  },
+  {
+   "lesson": 4,
+   "where": [
+    "grammar_notes",
+    4,
+    "text"
+   ],
+   "strip": "47.8.2",
+   "old": "Thhrarra.",
+   "new": "Táhrar•ra.",
+   "why": "the OCR read á as h"
+  },
+  {
+   "lesson": 4,
+   "where": [
+    "grammar_notes",
+    4,
+    "text"
+   ],
+   "strip": "47.9.1",
+   "old": "such as + it",
+   "new": "such as + ir",
+   "why": "the plural marker ir, in italics; the OCR read an English word"
+  },
+  {
+   "lesson": 4,
+   "where": [
+    "grammar_notes",
+    4,
+    "text"
+   ],
+   "strip": "48.0.2",
+   "old": "ti + it + rarra",
+   "new": "ti + ir + rar•ra",
+   "why": "the same marker in the breakdown line"
+  },
+  {
+   "lesson": 4,
+   "where": [
+    "grammar_notes",
+    4,
+    "text"
+   ],
+   "strip": "48.0.5",
+   "old": "to + atsir + wari'",
+   "new": "ta + atsir + wari'",
+   "why": "the modal marker ta, in italics; the OCR read the English word 'to'"
+  },
+  {
+   "lesson": 5,
+   "where": [
+    "grammar_notes",
+    0,
+    "text"
+   ],
+   "strip": "50.12.0",
+   "old": "tiku 'ks,",
+   "new": "tiku'ks,",
+   "why": "one word"
+  },
+  {
+   "lesson": 5,
+   "where": [
+    "grammar_notes",
+    2,
+    "text"
+   ],
+   "strip": "51.2.2",
+   "old": "tiku + perks + taari'",
+   "new": "tiku + paks + taari'",
+   "why": "paks 'head', in italics; the OCR read an English word"
+  },
+  {
+   "lesson": 5,
+   "where": [
+    "grammar_notes",
+    3,
+    "text"
+   ],
+   "strip": "51.6.0",
+   "old": "ti + ri + t + kirik + to",
+   "new": "ti + ri + t + kirik + ta",
+   "why": "ta, in italics; the OCR read the English word 'to'"
+  },
+  {
+   "lesson": 5,
+   "where": [
+    "grammar_notes",
+    8,
+    "text"
+   ],
+   "strip": "54.5.7",
+   "old": "to + t + rak + wak + u'",
+   "new": "ta + t + rak + wak + u'",
+   "why": "ta, in italics; the OCR read the English word 'to'"
+  },
+  {
+   "lesson": 6,
+   "where": [
+    "grammar_notes",
+    1,
+    "text"
+   ],
+   "strip": "57.3.7",
+   "old": "TI'tskipi.",
+   "new": "Tí'tskipi.",
+   "why": "the OCR read í as a capital I"
+  },
+  {
+   "lesson": 6,
+   "where": [
+    "grammar_notes",
+    2,
+    "text"
+   ],
+   "strip": "58.1.0, 58.1.1",
+   "old": "tat ., taw, etc.",
+   "new": "tat•, tas•, etc.",
+   "why": "the two introducers, each with its raised dot"
+  },
+  {
+   "lesson": 7,
+   "where": [
+    "grammar_notes",
+    0,
+    "text"
+   ],
+   "strip": "62.2.17",
+   "old": "TsIru'.",
+   "new": "Tsíru'.",
+   "why": "the OCR read í as a capital I"
+  },
+  {
+   "lesson": 7,
+   "where": [
+    "grammar_notes",
+    2,
+    "text"
+   ],
+   "strip": "63.1.0 to 63.1.3",
+   "old": "ti ra•kú pita ti ra•ariki pita ti ra•kú pita ti ra•arikí pita",
+   "new": "ti ra•kú pita ti ra•arikí pita i ra•kú pita i ra•arikí pita",
+   "why": "the third and fourth lines begin with i ('that ... yonder'), not ti: seen twice, the second time cut from the left margin, where the i stands under the t of the lines above. The stored text had ti four times"
+  },
+  {
+   "lesson": 8,
+   "where": [
+    "grammar_notes",
+    0,
+    "text"
+   ],
+   "strip": "67.1.2",
+   "old": "kiru +ra +0 +uks +ku",
+   "new": "kiru +ra +ø +uks +ku",
+   "why": "the sign for 'no marker' is a zero with a stroke through it"
+  },
+  {
+   "lesson": 8,
+   "where": [
+    "grammar_notes",
+    0,
+    "text"
+   ],
+   "strip": "67.3.1",
+   "old": "tat. =ta + t",
+   "new": "tat• = ta + t",
+   "why": "the introducer with its raised dot"
+  },
+  {
+   "lesson": 8,
+   "where": [
+    "grammar_notes",
+    0,
+    "text"
+   ],
+   "strip": "67.4.1",
+   "old": "tas. = to + s",
+   "new": "tas• = ta + s",
+   "why": "ta, in italics; the OCR read the English word 'to'"
+  },
+  {
+   "lesson": 8,
+   "where": [
+    "grammar_notes",
+    0,
+    "text"
+   ],
+   "strip": "67.5.1",
+   "old": "ti. = ti + I am crying",
+   "new": "ti• = ti + ø I am crying",
+   "why": "the line ends in the sign for 'no marker', which the OCR dropped"
+  },
+  {
+   "lesson": 9,
+   "where": [
+    "dialogues",
+    1,
+    "lines",
+    1,
+    "skiri"
+   ],
+   "strip": "71.5.2",
+   "old": "ti•káisat",
+   "new": "Ti•káisat.",
+   "why": "the answer in the dialogue: a capital and a full stop, as printed"
+  },
+  {
+   "lesson": 9,
+   "where": [
+    "grammar_notes",
+    1,
+    "text"
+   ],
+   "strip": "72.2.6",
+   "old": "tut•awi 'at",
+   "new": "tut•awi'at",
+   "why": "one word; no accent on this line (page 72 has tut•awí'at with the accent in the word list above)"
+  },
+  {
+   "lesson": 12,
+   "where": [
+    "grammar_notes",
+    1,
+    "text"
+   ],
+   "strip": "84.10.4",
+   "old": "+.9 +",
+   "new": "+ø+",
+   "why": "the sign for 'no marker'"
+  },
+  {
+   "lesson": 13,
+   "where": [
+    "grammar_notes",
+    2,
+    "text"
+   ],
+   "strip": "89.1.0",
+   "old": "ti .ra wa•raruhat",
+   "new": "ti•rá wa•rar•uhat",
+   "why": "three readings (two of the audit, this one) agree on every letter, accent and dot but one: whether a raised dot or nothing stands between rá and wa. The OCR's space is kept there"
+  },
+  {
+   "lesson": 13,
+   "where": [
+    "grammar_notes",
+    2,
+    "text"
+   ],
+   "strip": "89.1.1",
+   "old": "hiri .ra wa .raruhat",
+   "new": "hiri•rá wa•rar•uhat",
+   "why": "as the line above; at 3.2 times the scan a dot seems to stand between rá and wa on this line, the audit's second reader could not tell"
+  },
+  {
+   "lesson": 14,
+   "where": [
+    "grammar_notes",
+    0,
+    "text"
+   ],
+   "strip": "92.5.4",
+   "old": "kakI 'at",
+   "new": "kakí•'at",
+   "why": "the OCR read í as a capital I and lost the raised dot"
+  },
+  {
+   "lesson": 14,
+   "where": [
+    "grammar_notes",
+    1,
+    "text"
+   ],
+   "strip": "93.0.3, 93.0.4",
+   "old": "Ka res .- iI urtikat! (SB)",
+   "new": "Ka res•[..]sí•urúkat! (SB)",
+   "why": "a flaw in the scan covers about two letters after res•; they are not filled in. The Skiri line above reads Ka ris•utsí•uríkat!"
+  },
+  {
+   "lesson": 16,
+   "where": [
+    "dialogues",
+    0,
+    "lines",
+    0,
+    "skiri"
+   ],
+   "strip": "99.1.1",
+   "old": "Kitske --'e ru '?",
+   "new": "Kitské [w]e ru'?",
+   "why": "a flaw in the scan covers the w; the sentence is the lesson's title and stands whole on page 98 (kitské we ru')"
+  },
+  {
+   "lesson": 16,
+   "where": [
+    "dialogues",
+    0,
+    "lines",
+    1,
+    "skiri"
+   ],
+   "strip": "99.1.3",
+   "old": "We ti",
+   "new": "We ti p[it]ku.",
+   "why": "a flaw in the scan covers the middle of the last word; p and ku and the full stop are clear, and page 98 lists we tí pitku 'it's two o'clock'"
+  },
+  {
+   "lesson": 17,
+   "where": [
+    "grammar_notes",
+    1,
+    "text"
+   ],
+   "strip": "102.2.1",
+   "old": "to +t +ut +uks +ari'",
+   "new": "ta +t +ut +uks +ari'",
+   "why": "ta; the OCR read the English word 'to'"
+  },
+  {
+   "lesson": 20,
+   "where": [
+    "grammar_notes",
+    2,
+    "text"
+   ],
+   "strip": "114.12.1",
+   "old": "Tika•riusis•ari",
+   "new": "Tikú•riusis•ari",
+   "why": "the OCR read ú as a"
+  },
+  {
+   "lesson": 20,
+   "where": [
+    "grammar_notes",
+    2,
+    "text"
+   ],
+   "strip": "114.20.1",
+   "old": "haws",
+   "new": "hawá",
+   "why": "the OCR read á as s"
+  },
+  {
+   "lesson": 20,
+   "where": [
+    "grammar_notes",
+    4,
+    "text"
+   ],
+   "strip": "115.2.4",
+   "old": "Tas•i .waktiks.",
+   "new": "Tas•í•waktiks.",
+   "why": "the form stands in the column to the left of its English"
+  },
+  {
+   "lesson": 20,
+   "where": [
+    "grammar_notes",
+    4,
+    "text"
+   ],
+   "strip": "115.2.7",
+   "old": "Kaki .ra•riks.",
+   "new": "Kakí•ra•riks.",
+   "why": "the same"
+  },
+  {
+   "lesson": 20,
+   "where": [
+    "grammar_notes",
+    4,
+    "text"
+   ],
+   "strip": "115.2.27",
+   "old": "Tat dru .hukita•'at",
+   "new": "Tat•áru•hukita•'at",
+   "why": "one word; the OCR read á as d"
+  },
+  {
+   "lesson": 20,
+   "where": [
+    "grammar_notes",
+    8,
+    "text"
+   ],
+   "strip": "118.2.11, 118.2.12",
+   "old": "pit-sikat",
+   "new": "pitsikat",
+   "why": "the word is broken at the end of a line (pit- / sikat); the three other words of this reading that are broken so are stored joined, and page 109 prints Pitsikat"
+  },
+  {
+   "lesson": 20,
+   "where": [
+    "grammar_notes",
+    10,
+    "text"
+   ],
+   "strip": "121.7.2",
+   "old": "Kiraritu kas .i•kika'",
+   "new": "Kiraritu kas•i•kika'",
+   "why": "one word, in the first verse of the lullaby"
+  },
+  {
+   "lesson": 20,
+   "where": [
+    "grammar_notes",
+    10,
+    "text"
+   ],
+   "strip": "121.8.2",
+   "old": "kas•i•kika' you will drink",
+   "new": "kas•i•kika you will drink",
+   "why": "the word list under the lullaby has no apostrophe (three looks, the last at 3.2 times the scan); the lullaby's own line has one. The audit's crop for this row (R0843) was cut at the lullaby's line: see bluebook_crops_at_another_line.json"
+  }
+ ],
+ "set": [
+  {
+   "lesson": 8,
+   "column": "english_title",
+   "value": "Where Is It?",
+   "why": "the English title under KIRÚ RA•KU? on page 65 (title strip T8); none was stored"
+  }
+ ],
+ "glossary_starts_with": " a II B Glossary In this glossary you will find",
+ "table_rows": [
+  {
+   "id": 2874,
+   "old": "kas•i•kika'",
+   "new": "kas•i•kika",
+   "why": "the row is the word list under the lullaby (page 121, line 121.8.2), which has no apostrophe. The audit's crop R0843 was cut at the lullaby's line, where the same letters stand with one"
+  },
+  {
+   "id": 2317,
+   "old": "tuh•ra'",
+   "new": "tuh•rá'",
+   "why": "the row is the last line of the breakdown on page 75 (line 75.8.5): one reader, three looks, the last at 3.2 times the scan, sees an accent on the a. The audit's crop R0380 was cut at the dialogue line above, which has none"
+  },
+  {
+   "id": 2444,
+   "old": "ti .ra wa•raruhat",
+   "new": "ti•rá wa•rar•uhat",
+   "why": "three readings agree on all but whether a raised dot or nothing stands between rá and wa; the OCR's space is kept there. Still on the audit's list for a person with the book"
+  },
+  {
+   "id": 2445,
+   "old": "hiri .ra wa .raruhat",
+   "new": "hiri•rá wa•rar•uhat",
+   "why": "as row 2444"
+  },
+  {
+   "id": 2108,
+   "old": "tat. kikat",
+   "new": "tat•kíkat",
+   "why": "line 58.4.6; no audit reading at that place"
+  },
+  {
+   "id": 2171,
+   "old": "ti ra•kú pita",
+   "new": "i ra•kú pita",
+   "why": "the third line of the four on page 63, 'that sitting man yonder', begins with i (line 63.1.2, seen twice); the audit's crop for this row was cut at the first line"
+  },
+  {
+   "id": 2172,
+   "old": "ti ra•arikí pita",
+   "new": "i ra•arikí pita",
+   "why": "the fourth line, 'that standing man yonder' (line 63.1.3, seen twice)"
+  },
+  {
+   "id": 2263,
+   "old": "ti•káisat",
+   "new": "Ti•káisat.",
+   "why": "the answer in the dialogue on page 71 (line 71.5.2): a capital and a full stop, as the other dialogue rows have them"
+  },
+  {
+   "id": 2376,
+   "old": "Suks-at.",
+   "new": "Suks•at.",
+   "why": "line 84.4.0: a raised dot, which the OCR read as a hyphen"
+  },
+  {
+   "id": 2496,
+   "old": "kakI 'at",
+   "new": "kakí•'at",
+   "why": "line 92.5.4, seen twice"
+  },
+  {
+   "id": 2585,
+   "old": "Kitske --'e ru '?",
+   "new": "Kitské [w]e ru'?",
+   "why": "line 99.1.1: a flaw in the scan covers the w; the sentence is the lesson's title and stands whole on page 98. On the audit's list for a person with the book"
+  },
+  {
+   "id": 2586,
+   "old": "We ti",
+   "new": "We ti p[it]ku.",
+   "why": "line 99.1.3: a flaw in the scan covers the middle of the last word; page 98 lists we tí pitku 'it's two o'clock'. On the audit's list for a person with the book"
+  },
+  {
+   "id": 2866,
+   "replace": [
+    "pit-sikat",
+    "pitsikat"
+   ],
+   "why": "the word is broken at the end of a line (lines 118.2.11 and 118.2.12); the other broken words of the reading are stored joined"
+  }
+ ],
+ "audit_pairs_withdrawn": [
+  {
+   "old": "kas•i•kika",
+   "new": "kas•i•kika'",
+   "why": "read by the audit at another line than the row's own (crop R0843); see table_rows"
+  }
+ ],
+ "leave": [
+  {
+   "strip": "58.1.0",
+   "stored": "tas•",
+   "read": null,
+   "why": "the word stands at the beginning of the next line (58.1.1), where it was read; the line-up placed it with the line before"
+  },
+  {
+   "strip": "58.1.1",
+   "stored": null,
+   "read": "tas•",
+   "why": "see 58.1.0"
+  },
+  {
+   "strip": "75.9.2",
+   "stored": null,
+   "read": "i+u",
+   "why": "the stored text has 'i +u': only the spacing of the plus sign differs"
+  },
+  {
+   "strip": "75.9.5",
+   "stored": "+has",
+   "read": null,
+   "why": "an English word with a plus sign"
+  },
+  {
+   "strip": "75.9.6",
+   "stored": null,
+   "read": "i+u",
+   "why": "as 75.9.2"
+  },
+  {
+   "strip": "88.3.0",
+   "stored": "Tskiri",
+   "read": "TSKIRI",
+   "why": "a heading: the table stores headings with a capital at the beginning of each word"
+  },
+  {
+   "strip": "88.3.0",
+   "stored": "Akitaru'",
+   "read": "AKITARU'",
+   "why": "a heading"
+  },
+  {
+   "strip": "93.0.3",
+   "stored": "res•[..]sí•urúkat",
+   "read": "res•[?]",
+   "why": "a flaw in the scan covers about two letters; the stored text marks the place with [..]"
+  },
+  {
+   "strip": "93.0.4",
+   "stored": null,
+   "read": "[?]sí•urúkat",
+   "why": "see 93.0.3"
+  },
+  {
+   "strip": "99.1.1",
+   "stored": "[w]e",
+   "read": "[?]e",
+   "why": "a flaw in the scan covers the w; the stored text has it in square brackets, from the same sentence on page 98"
+  },
+  {
+   "strip": "99.1.3",
+   "stored": "p[it]ku",
+   "read": "p[?]ku",
+   "why": "a flaw in the scan covers the middle of the word; the stored text has the letters of page 98 (we tí pitku) in square brackets"
+  },
+  {
+   "strip": "118.1.0",
+   "stored": "Hiri",
+   "read": "HIRI",
+   "why": "a heading"
+  },
+  {
+   "strip": "118.1.0",
+   "stored": "Ah•Ratukstak•Kitkeu",
+   "read": "AH•RATUKSTAK•KITKEU",
+   "why": "a heading"
+  },
+  {
+   "strip": "118.2.4",
+   "stored": "Wi•tikskawutik•usuku",
+   "read": "Wi•tiks-",
+   "why": "the word is broken at the end of the line and stored joined; the second half is on the next line (118.2.5: kawutik•usuku)"
+  },
+  {
+   "strip": "118.2.6",
+   "stored": "tikstarah•kawa•karuku",
+   "read": "tikstarah•ka-",
+   "why": "the word is broken at the end of the line and stored joined; the second half is on the next line (118.2.7: wa•karuku)"
+  },
+  {
+   "strip": "118.2.7",
+   "stored": null,
+   "read": "wa•karuku",
+   "why": "the second half of the word broken on the line above"
+  },
+  {
+   "strip": "118.2.7",
+   "stored": "wi•tikstakas•karuk•usuku",
+   "read": "wi•tiks-",
+   "why": "the word is broken at the end of the line and stored joined; the second half is on the next line (118.2.8: takas•karuk•usuku)"
+  },
+  {
+   "strip": "118.2.11",
+   "stored": "pitsikat",
+   "read": "pit-",
+   "why": "the word is broken at the end of the line and stored joined; the second half is on the next line (118.2.12: sikat)"
+  },
+  {
+   "strip": "118.2.13",
+   "stored": "Tsahriks•pakuhtu",
+   "read": "Tsahriks•pa-",
+   "why": "the word is broken at the end of the line and stored joined; the second half is on the next line (118.2.14: kuhtu)"
+  },
+  {
+   "strip": "118.2.14",
+   "stored": null,
+   "read": "kuhtu",
+   "why": "the second half of the word broken on the line above"
+  },
+  {
+   "strip": "79.1.3",
+   "stored": "tatuks•á•kawahtsu'",
+   "read": "tatuks•á•ka-",
+   "why": "the word is broken at the end of the line and stored joined since the dialogues were paired (scripts/pair_lesson_dialogues.py); the second half is on the next line (79.1.4: wahtsu'.), and page 103 prints Tatuks•á•kawahtsu'. as one word"
+  },
+  {
+   "strip": "79.1.4",
+   "stored": null,
+   "read": "wahtsu'",
+   "why": "the second half of the word broken on the line above"
+  }
+ ],
+ "place": [
+  {
+   "lesson": 16,
+   "where": [
+    "dialogues",
+    0,
+    "lines",
+    0,
+    "skiri"
+   ],
+   "strip": "99.1.1",
+   "why": "the same sentence stands whole in the word list of page 98, and the line-up takes that line; the dialogue is on page 99"
+  }
+ ]
+}
