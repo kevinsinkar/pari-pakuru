@@ -72,6 +72,7 @@
         <li><a href="words.html" >Word building</a></li>
         <li><a href="verbs.html" >Verbs</a></li>
         <li><a href="lessons.html" >Lessons</a></li>
+        <li><a href="phrases.html" >Phrases</a></li>
         <li><a href="flashcards.html" >Flashcards</a></li>
         <li><a href="practice.html" >Practice</a></li>
         
@@ -104,8 +105,24 @@
     
 <div class="fc-study-header">
     <h2>Week 6: Numbers & Counting</h2>
-    <p>20 words. Click a card to flip it.</p>
+    <p>20 words. Click a card to flip it. “Got it” and “Missed” also tell the
+       <a href="practice.html">Practice</a> page when to bring a word back.</p>
 </div>
+
+
+
+<p class="spelling-line">
+  <strong>Which spelling do I learn to write?</strong>
+  
+  The large word on the card: the learner spelling, with <span lang="x-paw">â î û</span> for long vowels,
+  <span lang="x-paw">'</span> for the catch in the throat, <span lang="x-paw">c</span> for “ts” and
+  <span lang="x-paw">č</span> for “ch”. A smaller word under it is the same word in the dictionary's letters, and the
+  line in capitals and hyphens is a rough guide for English speakers, not a spelling.
+  A card whose back names the textbook and no dictionary page is a word found only in the 1979 textbook: it is written
+  as the textbook spells it, in the dictionary's letters (<span lang="x-paw">ʔ</span> for <span lang="x-paw">'</span>).
+  
+  Where a teacher or a speaker writes a word another way, follow them.
+</p>
 
 <div class="fc-progress">
     <span id="fc-progress-text">Card 1 of 20</span>
@@ -993,6 +1010,8 @@
             progress.missed.push(eid);
         }
         saveProgress();
+        // the same box the Practice page uses: when the word is due again (static/js/skiri.js, Skiri.box)
+        if (window.Skiri && Skiri.box) Skiri.box.answer(eid, result === 'known');
         assessEl.style.display = 'none';
         // Auto-advance or show summary
         if (current < order.length - 1) {

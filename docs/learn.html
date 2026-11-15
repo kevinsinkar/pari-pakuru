@@ -72,6 +72,7 @@
         <li><a href="words.html" >Word building</a></li>
         <li><a href="verbs.html" >Verbs</a></li>
         <li><a href="lessons.html" >Lessons</a></li>
+        <li><a href="phrases.html" >Phrases</a></li>
         <li><a href="flashcards.html" >Flashcards</a></li>
         <li><a href="practice.html" >Practice</a></li>
         
@@ -107,7 +108,7 @@
   <p class="learn-kicker">Start here</p>
   <h2>Learning Skiri Pawnee with this site</h2>
   <p class="learn-lead">
-    Six steps, in an order that works for most beginners. Each one is a page of this site.
+    Seven steps, in an order we suggest. Each one is a page of this site.
     Tick a step when you have done it; the ticks stay in this browser.
   </p>
 
@@ -124,13 +125,37 @@
         <p class="path-do"><strong>Do:</strong> read the page once, then take ten words through “Sound it out”.</p>
       </div>
     </li>
+    <li class="path-step" data-step="lessons">
+      <label class="path-tick"><input type="checkbox" aria-label="Done: lessons"><span></span></label>
+      <div class="path-body">
+        <h3><a href="lessons.html">2. Say your first sentences</a></h3>
+        <p>
+          The twenty lessons of <em>Pari Pakuru'</em>, the 1979 textbook of the Pawnee Cultural Retention
+          Committee. Each begins with a few words and puts them to use at once in a short dialogue:
+          “What is it?” “This is a feather.”
+        </p>
+        <p class="path-do"><strong>Do:</strong> <a href="lesson-1.html">lesson 1</a> first. Learn its basic words, read the
+          dialogue aloud, both parts, then cover one side and say it from memory. One lesson at a time after that.</p>
+      </div>
+    </li>
+    <li class="path-step" data-step="phrases">
+      <label class="path-tick"><input type="checkbox" aria-label="Done: phrases"><span></span></label>
+      <div class="path-body">
+        <h3><a href="phrases.html">3. Use a phrase today</a></h3>
+        <p>
+          “Come here.” “Wait!” “I'm full.” “Thank you.” The textbook's useful phrases, gathered by
+          situation: at home, at the table, coming and going.
+        </p>
+        <p class="path-do"><strong>Do:</strong> pick three and say them when the moment comes. Tomorrow keep them and add one.</p>
+      </div>
+    </li>
     <li class="path-step" data-step="words">
       <label class="path-tick"><input type="checkbox" aria-label="Done: first words"><span></span></label>
       <div class="path-body">
-        <h3><a href="flashcards.html">2. Learn your first words</a></h3>
+        <h3><a href="flashcards.html">4. Build up your words</a></h3>
         <p>
           The flashcards are sets of 10 to 20 everyday words. The first three weeks are words from the
-          textbook <em>Pari Pakuru'</em>; the later weeks go by topic, from family to places.
+          textbook; the later weeks go by topic, from family to places.
         </p>
         <p class="path-do"><strong>Do:</strong> one set a week. Say every word aloud before you turn the card.
           <a href="printables/word_list.pdf">Print the word list (PDF)</a>.</p>
@@ -139,7 +164,7 @@
     <li class="path-step" data-step="building">
       <label class="path-tick"><input type="checkbox" aria-label="Done: how words are built"><span></span></label>
       <div class="path-body">
-        <h3><a href="words.html">3. See how words are built</a></h3>
+        <h3><a href="words.html">5. See how words are built</a></h3>
         <p>
           <span lang="x-paw">iksuʔ</span> “hand” is <span lang="x-paw">iks</span> + <span lang="x-paw">uʔ</span>.
           <span lang="x-paw">asaaki</span> “dog” is <span lang="x-paw">asaa</span> + <span lang="x-paw">kis</span>.
@@ -152,7 +177,7 @@
     <li class="path-step" data-step="verbs">
       <label class="path-tick"><input type="checkbox" aria-label="Done: verbs"><span></span></label>
       <div class="path-body">
-        <h3><a href="verbs.html">4. Meet the verb</a></h3>
+        <h3><a href="verbs.html">6. Meet the verb</a></h3>
         <p>
           A Skiri verb changes with who does the thing and how it is meant, and much of the change is at
           the front of the word. The dictionary gives five forms of every verb and writes seven verbs out in full.
@@ -160,26 +185,17 @@
         <p class="path-do"><strong>Do:</strong> learn “to go” in the indicative: eleven words. Then compare it with “to come”.</p>
       </div>
     </li>
-    <li class="path-step" data-step="lessons">
-      <label class="path-tick"><input type="checkbox" aria-label="Done: lessons"><span></span></label>
-      <div class="path-body">
-        <h3><a href="lessons.html">5. Work through the lessons</a></h3>
-        <p>
-          The twenty lessons of <em>Pari Pakuru'</em>, the 1979 textbook of the Pawnee Cultural Retention
-          Committee: dialogues, word lists, notes on grammar, and exercises after each lesson.
-        </p>
-        <p class="path-do"><strong>Do:</strong> one lesson at a time. Read the dialogue aloud, both parts.</p>
-      </div>
-    </li>
     <li class="path-step" data-step="practice">
       <label class="path-tick"><input type="checkbox" aria-label="Done: practice"><span></span></label>
       <div class="path-body">
-        <h3><a href="practice.html">6. Practise a little every day</a></h3>
+        <h3><a href="practice.html">7. Practise a little every day</a></h3>
         <p>
           Six short games: choose the meaning, choose the word, match pairs, type the word, verb forms and
-          word pieces. The words you miss are kept in a list, so you can practise them again.
+          word pieces. The page remembers each word you meet and brings it back when it is due:
+          the next day, then after three days, a week, two weeks and a month.
         </p>
-        <p class="path-do"><strong>Do:</strong> one round a day, ten questions. It takes about three minutes.</p>
+        <p class="path-do"><strong>Do:</strong> one round a day, ten questions. It takes about three minutes.
+          <span id="learn-due" class="learn-due" hidden></span></p>
       </div>
     </li>
   </ol>
@@ -254,6 +270,15 @@
       try { localStorage.setItem(KEY, JSON.stringify(done)); } catch (e) { /* not kept */ }
     });
   });
+  // words the practice box holds for today, if the visitor has practised here before
+  var due = document.getElementById('learn-due');
+  var n = Skiri.box.counts();
+  if (due && n.seen) {
+    due.hidden = false;
+    due.innerHTML = n.due
+      ? '<a href="practice.html?mode=meaning">' + n.due + (n.due === 1 ? ' word is' : ' words are') + ' due today.</a>'
+      : 'Nothing is due today.';
+  }
 })();
 </script>
 
