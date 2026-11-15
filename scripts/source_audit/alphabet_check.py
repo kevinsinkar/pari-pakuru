@@ -35,10 +35,8 @@ FORM_COLUMNS = [
     ("verb_paradigms", ["skiri_form", "dictionary_form"]),
     ("irregular_verb_roots", ["headword", "singular_stem", "dual_stem", "plural_stem"]),
     ("kinship_paradigms", ["stem", "form_1sg", "form_2sg", "form_3sg", "vocative"]),
-    ("noun_stems", ["headword", "stem", "suffix"]),
-    ("morpheme_inventory", ["morpheme_form"]),
+    # noun_stems, morpheme_inventory and possession_examples were engine output and were dropped on 2026-11-14
     ("morpheme_abbreviations", ["morpheme_form"]),
-    ("possession_examples", ["headword", "expected_form"]),
     ("paradigmatic_forms", ["skiri_form"]),
     ("lexical_entries", ["headword"]),
 ]

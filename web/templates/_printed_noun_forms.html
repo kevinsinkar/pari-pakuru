@@ -1,0 +1,71 @@
+{# What Parks and the Blue Book print of this noun.                           #}
+{# Nothing here is computed: the lookup is scripts/printed_noun_forms.py.     #}
+{# It replaced the possession widget on 2026-11-14 (engines review,           #}
+{# decision 7). Expects `printed_forms` in the template context.              #}
+
+<section class="entry-section printed-forms" id="printed-forms">
+    <h3>Printed forms of this noun</h3>
+    <p class="printed-forms-note">Only what Parks or the Blue Book prints. The app works out no form of a noun.</p>
+
+    {% if printed_forms.kin %}
+    <h4>Appendix 3: kin terms</h4>
+    <table class="paradigm-table">
+        <thead>
+            <tr><th>Relation</th><th>my</th><th>your</th><th>his / her</th></tr>
+        </thead>
+        <tbody>
+            {% for row in printed_forms.kin %}
+            <tr>
+                <td>{{ row.relation }}</td>
+                <td class="ipa" lang="x-paw">{{ row.my or "—" }}</td>
+                <td class="ipa" lang="x-paw">{{ row.your or "—" }}</td>
+                <td class="ipa" lang="x-paw">{{ row.his_her or "—" }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% for row in printed_forms.kin %}
+    <p class="printed-forms-note">
+        <strong>{{ row.relation }}:</strong>
+        {% if row.tie == 'form' %}the headword of this entry is one of the forms Appendix 3 prints in this row.
+        {% else %}Appendix 3 prints these forms for this relation. It does not say how they are built.{% endif %}
+        {% if row.notes %}Parks adds: {{ row.notes }}{% endif %}
+    </p>
+    {% endfor %}
+    {% endif %}
+
+    {% if printed_forms.case %}
+    <h4>With a case ending, in this entry's examples</h4>
+    <ul class="printed-forms-list">
+        {% for c in printed_forms.case %}
+        <li><span class="ipa" lang="x-paw">{{ c.form }}</span>{% if c.translation %} <em>{{ c.translation }}</em>{% endif %}</li>
+        {% endfor %}
+    </ul>
+    <p class="printed-forms-note">Parks prints these as examples in this entry; the translation is his. In his Table 4, <span class="ipa">-kat</span> and <span class="ipa">-ru</span> mark a place and <span class="ipa">-hiriʔ</span> a place or a means.</p>
+    {% endif %}
+
+    {% if printed_forms.combining %}
+    <h4>Combining form{{ "s" if printed_forms.combining | length > 1 else "" }}</h4>
+    <ul class="printed-forms-list">
+        {% for c in printed_forms.combining %}
+        <li><span class="ipa" lang="x-paw">{{ c.form }}</span></li>
+        {% endfor %}
+    </ul>
+    <p class="printed-forms-note">Printed by Parks in this entry: the shape the noun takes inside a longer word.</p>
+    {% endif %}
+
+    {% if printed_forms.blue_book %}
+    <h4>Blue Book</h4>
+    <ul class="printed-forms-list">
+        {% for b in printed_forms.blue_book %}
+        <li><span class="ipa" lang="x-paw">{{ b.form }}</span> <em>{{ b.english }}</em>
+            <small>(lesson {{ b.lesson }}{% if b.book_page %}, p. {{ b.book_page }}{% endif %})</small></li>
+        {% endfor %}
+    </ul>
+    <p class="printed-forms-note">In the Blue Book's own spelling, as read from the scan.</p>
+    {% endif %}
+
+    {% if not printed_forms.anything %}
+    <p class="printed-forms-note">Neither Parks nor the Blue Book prints a possessed form, a form with a case ending or a combining form of this noun.</p>
+    {% endif %}
+</section>

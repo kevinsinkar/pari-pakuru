@@ -36,7 +36,6 @@ CHILD_TABLES = [
     "english_index",
     "semantic_tags",
     "blue_book_attestations",
-    "noun_stems",
     "community_feedback",
 ]
 

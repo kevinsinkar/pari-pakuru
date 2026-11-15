@@ -20,6 +20,39 @@ REVIEW_WORDS = re.compile(
     r"tirawaahat|heaven\w*|holy|religio\w*|deity|god\b|prayer|pray\b|society|war dance|scalp dance|"
     r"morning star|evening star|vision\w*|supernatural)", re.I)
 
+PARKS_TABLES_FILE = "grammatical_overview_tables.json"     # in extracted_data/
+PARKS_VERB_TABLES = range(6, 18)                            # Tables 6 to 17 of the Grammatical Overview
+
+
+def parks_tables():
+    """Parks's tables of the verb, row by row as printed (chapter 4, read twice from the page)."""
+    from common import EXTRACTED, load_json
+    data = load_json(EXTRACTED / PARKS_TABLES_FILE)
+    return [t for t in data["tables"] if t["number"] in PARKS_VERB_TABLES]
+
+
+def _distance(a, b):
+    """Edit distance between two strings."""
+    row = list(range(len(b) + 1))
+    for i, ca in enumerate(a, 1):
+        last, row[0] = row[0], i
+        for j, cb in enumerate(b, 1):
+            last, row[j] = row[j], min(row[j] + 1, row[j - 1] + 1, last + (ca != cb))
+    return row[-1]
+
+
+def word_is_of_these_pieces(example):
+    """False when the word stored with a worked example is not the word its pieces make.
+
+    In some records of the gold file the word listed is another word of the same printed example
+    (aruusaʔ 'horse' beside the pieces of the verb, with the translation of the whole sentence).
+    Such a record still counts for the pieces Parks labels in it, but its word and translation are
+    not shown as a pair. The test uses no rule of the language: the word must not be further from
+    its pieces written one after another than six tenths of their length.
+    """
+    letters = lambda t: re.sub(r"[^a-zʔ]", "", (t or "").lower())
+    joined = "".join(letters(p["form"]) for p in example["pieces"])
+    return bool(joined) and _distance(letters(example["surface"]), joined) <= 0.6 * len(joined)
 
 def needs_community_review(lex):
     """Vocabulary that is, or may be, ceremonial or sacred: listed apart, never in early lessons."""
@@ -270,9 +303,6 @@ def build_inventory(res, conn):
         r["rank"] = i
 
     # ---- grammatical affixes found in the dictionary's own etymologies
-    slot_of = {}
-    for row in conn.execute("select morpheme_form, label, slot_number, slot_name from morpheme_inventory"):
-        slot_of[(re.sub(r"[^a-zʔ]", "", (row[0] or "").lower()), (row[1] or "").upper())] = (row[2], row[3])
     abbr = {}
     for row in conn.execute("select abbreviation, meaning from morpheme_abbreviations"):
         abbr[(row[0] or "").strip(".").upper()] = row[1]
@@ -282,10 +312,6 @@ def build_inventory(res, conn):
         items = occ[key]
         printed = sum(1 for o in items if o["evidence"] == "label printed")
         d = res["role_defaults"].get(form)
-        slot = None
-        for lab in re.split(r"[/ ]", label):
-            if (form, lab.upper()) in slot_of:
-                slot = slot_of[(form, lab.upper())]
         ab = {o["lexeme_id"] for o in items if o["tier"] in LEARNER_TIERS}
         if label == "PREV":
             tier, why = "A", "preverb: Parks GO p.31 names ir-/a-, uur- and ut- as the three preverbs"
@@ -300,7 +326,6 @@ def build_inventory(res, conn):
         kind = "preverb" if label == "PREV" else positions.most_common(1)[0][0]
         rec = {"id": key, "form": form, "label": label, "meaning": abbr.get(label.split("/")[0].upper()) or label,
                "kind": kind, "category": "derivational or stem-forming affix (found in dictionary etymologies)",
-               "slot": {"number": slot[0], "name": slot[1]} if slot else None,
                "tier": tier, "tier_reason": why,
                "evidence": {"E1_label_printed_by_parks_in": printed,
                             "label_supplied_by_default_in": len(items) - printed,
@@ -312,48 +337,30 @@ def build_inventory(res, conn):
     for i, a in enumerate(affixes, 1):
         a["rank"] = i
 
-    # ---- inflectional affixes: Parks's own tables and worked examples (no segmentation of ours)
+    # ---- inflection: Parks's own tables as printed, and the pieces he labels in his worked examples.
+    # Neither is a segmentation made here. Until 2026-11-14 this part was read from the table
+    # `morpheme_inventory`, written by the conjugation engine: its rows were the engine's, six of them
+    # pieces Parks does not print. The engine was withdrawn and the table dropped (engines review,
+    # decisions 2 and 3). Nothing here matches a piece to a table row by its letters: the same spelling
+    # is not the same morpheme.
     from common import GOLD, load_json
+    tables = parks_tables()
     g1 = load_json(GOLD / "g1_go_examples.json")["examples"]
-    g1_count, g1_ex = Counter(), {}
-    for e in g1:
-        if "ocr_b" in e["flags"] or "surface_suspect" in e["flags"]:
-            pass
-        for pc in e["pieces"]:
-            if pc.get("label"):
-                k = (re.sub(r"[^a-zʔØ:]", "", pc["form"]), pc["label"])
-                g1_count[k] += 1
-                if not e["flags"]:
-                    g1_ex.setdefault(k, {"form": e["surface"], "translation": e["translation"], "go_page": e["go_page"]})
-    inflection = []
-    for row in conn.execute("""select slot_number, slot_name, morpheme_form, label, person_constraint,
-                                      mode_constraint, verb_class_constraint, notes
-                               from morpheme_inventory order by slot_number, id"""):
-        f = re.sub(r"[^a-zʔØ:]", "", row[2] or "")
-        n = sum(v for (ff, lab), v in g1_count.items() if ff == f and (row[3] or "").split(".")[0] in lab)
-        exm = next((g1_ex[k] for k in sorted(g1_ex) if k[0] == f and (row[3] or "").split(".")[0] in k[1]), None)
-        inflection.append({"form": row[2], "label": row[3], "slot": {"number": row[0], "name": row[1]},
-                           "constraints": {"person": row[4], "mode": row[5], "verb_class": row[6]}, "notes": row[7],
-                           "category": "inflectional affix (Parks, Grammatical Overview tables)",
-                           "worked_examples_in_grammatical_overview": n, "example": exm,
-                           "source": "morpheme_inventory table (Parks GO Tables 7-17); Appendix 1 paradigms"})
-    in_table = {re.sub(r"[^a-zʔØ:]", "", a["form"] or "") for a in inflection}
-    extra = defaultdict(lambda: {"n": 0, "pages": set(), "example": None})
+    labelled = defaultdict(lambda: {"n": 0, "pages": set(), "example": None})
     for e in g1:
         if {"ocr_b", "surface_suspect"} & set(e["flags"]):
             continue
         for pc in e["pieces"]:
-            f = re.sub(r"[^a-zʔØ:]", "", pc["form"])
-            if pc.get("label") and f and f not in in_table and f.replace(":", "") not in in_table:
-                d = extra[(pc["form"], pc["label"])]
+            if pc.get("label") and re.sub(r"[^a-zʔØ:]", "", pc["form"]):
+                d = labelled[(pc["form"], pc["label"])]
                 d["n"] += 1
                 d["pages"].add(e["go_page"])
-                d["example"] = d["example"] or {"form": e["surface"], "translation": e["translation"],
-                                                "go_page": e["go_page"]}
-    for (form, label), d in sorted(extra.items(), key=lambda kv: (-kv[1]["n"], kv[0])):
-        inflection.append({"form": form, "label": label, "slot": {"number": None, "name": "not in the slot table"},
-                           "constraints": {}, "notes": None,
-                           "category": "inflectional affix (labelled in Parks's worked examples)",
+                if d["example"] is None and word_is_of_these_pieces(e):
+                    d["example"] = {"form": e["surface"], "translation": e["translation"], "go_page": e["go_page"]}
+    inflection = []
+    for (form, label), d in sorted(labelled.items(), key=lambda kv: (-kv[1]["n"], kv[0])):
+        inflection.append({"form": form, "label": label,
+                           "category": "piece labelled in Parks's worked examples",
                            "worked_examples_in_grammatical_overview": d["n"], "example": d["example"],
                            "source": "Parks, Grammatical Overview, worked examples on p. %s" % ", ".join(
                                str(x) for x in sorted(x for x in d["pages"] if x))})
@@ -403,7 +410,8 @@ def build_inventory(res, conn):
                                  "combined": a["type_frequency"]["A+B"] + b["type_frequency"]["A+B"]},
                     "question": "Is %s the same morpheme as %s, and if so what conditions the difference?" % (
                         a["form"], b["form"])})
-    return {"roots": roots, "affixes": affixes, "inflection": inflection, "decisions": decisions,
+    return {"roots": roots, "affixes": affixes, "inflection": inflection, "parks_tables": tables,
+            "decisions": decisions,
             "occurrences": occ, "bb_first": bb_first, "bb_forms": bb_forms, "n_examples": n_examples,
             "total_examples": total_examples, "form_occ": form_occ}
 

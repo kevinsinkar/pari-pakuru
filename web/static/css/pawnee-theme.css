@@ -1575,144 +1575,23 @@ table.result-forms td {
   line-height: 1.8;
 }
 
-/* ---------- Possession widget ---------- */
-.possession-details summary {
-  cursor: pointer;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-}
-.possession-details summary::-webkit-details-marker {
-  display: none;
-}
-.possession-details summary::before {
-  content: '\25B6';
-  font-size: 0.6em;
-  color: var(--earth-400);
-  transition: transform 0.2s ease;
-}
-.possession-details[open] summary::before {
-  transform: rotate(90deg);
-}
-.possession-details summary h3 {
-  border-bottom: none;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-.poss-construction {
-  margin: 0.75em 0;
-  padding: 0.5em 0.75em;
-  background: var(--earth-50);
-  border-radius: 0.5rem;
-  font-size: 0.85em;
-  color: var(--earth-600);
-}
-.poss-construction code {
-  font-size: 0.9em;
-}
-
-.poss-persons {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.75em;
-  margin: 1em 0;
-}
-@media (max-width: 480px) {
-  .poss-persons {
-    grid-template-columns: 1fr;
-  }
-}
-
-.poss-card {
-  border: 2px solid var(--earth-200);
-  border-radius: 0.75rem;
-  padding: 0.75em 1em;
-  text-align: center;
-  cursor: pointer;
-  transition: border-color 0.15s, background 0.15s;
-}
-.poss-card:hover {
-  border-color: var(--sky-300);
-  background: var(--sky-50);
-}
-.poss-card-active {
-  border-color: var(--sky-500);
-  background: var(--sky-50);
-}
-
-.poss-card-label {
-  font-size: 0.75em;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--earth-500);
-  margin-bottom: 0.3em;
-}
-.poss-card-form {
-  font-family: 'Source Serif 4', 'Gentium Plus', 'Georgia', serif;
-  font-size: 1.15em;
-  font-weight: 500;
-  color: var(--earth-900);
-  margin-bottom: 0.3em;
-  word-break: break-word;
-}
-.poss-card-confidence {
-  font-size: 0.85em;
-  letter-spacing: 0.1em;
-}
-
-.poss-breakdown {
-  background: var(--smoke);
-  border-radius: 0.5rem;
-  padding: 0.75em 1em;
-  margin: 0.5em 0;
-  font-size: 0.85em;
-  min-height: 2em;
-}
-.poss-breakdown .ipa {
-  font-size: 0.95em;
-}
-
-.poss-source {
-  margin-top: 0.75em;
-  text-align: right;
-}
-
-/* --- Locative stem informational panel --- */
-.poss-locative-panel {
-  background: var(--smoke);
-  border: 2px solid var(--earth-300);
-  border-radius: 0.5rem;
-  padding: 1em 1.25em;
-  margin: 0.5em 0;
-}
-.poss-locative-heading {
-  font-weight: 700;
+/* ---------- Printed forms of a noun (a lookup; nothing computed) ---------- */
+.printed-forms h4 {
+  font-size: 0.95rem;
+  margin: 1.1em 0 0.35em;
   color: var(--earth-700);
-  margin-bottom: 0.5em;
-  font-size: 0.95em;
 }
-.poss-locative-stem {
-  font-size: 1.1em;
-  margin-bottom: 0.5em;
+.printed-forms-note {
+  font-size: 0.85rem;
+  color: var(--earth-600);
+  margin: 0.25em 0 0.6em;
 }
-.poss-locative-note {
-  color: var(--earth-500);
-  font-size: 0.85em;
-  margin: 0.5em 0;
+.printed-forms-list {
+  margin: 0.25em 0 0.5em;
+  padding-left: 1.2em;
 }
-.poss-locative-example {
-  background: var(--white, #fff);
-  border-radius: 0.35rem;
-  padding: 0.5em 0.75em;
-  margin-top: 0.5em;
-  font-size: 0.9em;
-}
-.poss-locative-variants {
-  margin-top: 0.5em;
-  color: var(--earth-400);
+.printed-forms-list li {
+  margin: 0.15em 0;
 }
 
 /* ---------- Dashboard ---------- */

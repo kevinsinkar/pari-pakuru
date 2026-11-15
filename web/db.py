@@ -42,7 +42,6 @@ class EntrySummary:
     blue_book_attested: bool = False
     tags: List[str] = field(default_factory=list)
     example_snippet: Optional[str] = None
-    form2_confidence: Optional[float] = None
 
 
 @dataclass
@@ -81,7 +80,7 @@ class SkiriWebDictionary(SkiriDictionary):
         cur = self.conn.cursor()
         cur.execute(
             "SELECT entry_id, headword, normalized_form, simplified_pronunciation, "
-            "grammatical_class, verb_class, blue_book_attested, form2_confidence "
+            "grammatical_class, verb_class, blue_book_attested "
             "FROM lexical_entries WHERE entry_id = ?",
             (entry_id,),
         )
@@ -103,12 +102,6 @@ class SkiriWebDictionary(SkiriDictionary):
         )
         tags = [r["tag"] for r in cur.fetchall()]
 
-        # form2_confidence may not exist yet (column added by --confidence)
-        try:
-            f2conf = row["form2_confidence"]
-        except (IndexError, KeyError):
-            f2conf = None
-
         return EntrySummary(
             entry_id=row["entry_id"],
             headword=row["headword"],
@@ -119,7 +112,6 @@ class SkiriWebDictionary(SkiriDictionary):
             first_gloss=gloss_row["definition"] if gloss_row else None,
             blue_book_attested=bool(row["blue_book_attested"]),
             tags=tags,
-            form2_confidence=f2conf,
         )
 
     def build_entry_summaries(self, entry_ids: List[str]) -> List[EntrySummary]:
@@ -435,24 +427,10 @@ class SkiriWebDictionary(SkiriDictionary):
         )
         derived_stems = [dict(r) for r in cur.fetchall()]
 
-        # Get form2_confidence for verb entries
-        form2_confidence = None
-        try:
-            cur.execute(
-                "SELECT form2_confidence FROM lexical_entries WHERE entry_id = ?",
-                (entry_id,),
-            )
-            row = cur.fetchone()
-            if row:
-                form2_confidence = row["form2_confidence"]
-        except (sqlite3.OperationalError, KeyError):
-            pass
-
         return {
             "entry": entry,
             "tags": tags,
             "bb_info": bb_info,
             "paradigm_table": paradigm_table,
             "derived_stems": derived_stems,
-            "form2_confidence": form2_confidence,
         }

@@ -1,5 +1,17 @@
 #!/usr/bin/env python3
 """
+WITHDRAWN on 2026-11-14 (engines review, decision 2). Nothing uses this file
+but the withdrawn conjugation engine beside it. Do not use it to put an
+accent on a form.
+
+Why: the rules were written for a copy of Appendix 1 in which the accents had
+been misread. The corrected page marks an accent in 26 cells; these rules
+mark 81, 57 of them where the page has none, and this file's own --validate
+finds 0 of the 26. The project says "accent", not "pitch": Parks does not say
+what the mark is. Evidence and decision: reports/engines_review/.
+
+What follows is the file as it was.
+
 Phase 3.1 — Accent Mark Assignment Rules
 ==========================================
 

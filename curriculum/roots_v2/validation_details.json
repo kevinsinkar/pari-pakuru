@@ -2607,29 +2607,11 @@
   "issues": []
  },
  "g1": {
-  "affix_tokens": {
-   "in inventory": 230,
-   "not in inventory": 136
-  },
-  "affixes_missing": {
-   "-rit INT.SUB": 4,
-   "-uk SUB.D": 2,
-   "-uku HAB.SUB": 2,
-   "-uukuʔ HAB": 1,
-   "-Ø PERF": 45,
-   "-Ø SUB.4": 7,
-   "karii- EMPH.NEG": 1,
-   "ki- HORT": 2,
-   "kuur- DUB.1": 1,
-   "si- DU": 2,
-   "tiir- INFR": 1,
-   "uks- AOR": 7,
-   "uks- JUSS": 4,
-   "waawa- DIST": 1,
-   "witi- REFL": 2,
-   "Ø- 3.A": 54
-  },
   "clean_examples": 90,
+  "labelled_pieces": {
+   "distinct": 69,
+   "occurrences": 366
+  },
   "segmentation": {
    "same": 2
   },
@@ -6669,11 +6651,11 @@
   },
   "person_forms.py --validate-appendix": {
    "exit": 0,
-   "summary": "Appendix 1 derivation validation: 25 passed, 2 failed, 1 skipped"
+   "summary": "Appendix 1 derivation validation: 26 passed, 0 failed, 2 skipped"
   },
-  "sound_changes.py --test": {
+  "sound_changes.py --measure (a measurement)": {
    "exit": 0,
-   "summary": "11 pass, 0 fail"
+   "summary": "The code gives Parks's printed form for 8 of 39."
   }
  }
 }

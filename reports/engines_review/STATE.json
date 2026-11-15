@@ -1,0 +1,111 @@
+{
+  "review": "engines review (prompts/engines_review.md)",
+  "started": "2026-11-14",
+  "stage": 4,
+  "status": "done: all four stages. The owner's eight decisions are carried out. Not committed",
+  "stages": {
+    "0": {
+      "name": "read, and take the baseline",
+      "status": "done",
+      "written": [
+        "reports/engines_review/baseline.md"
+      ],
+      "result": "all 24 checks as the README states, except one stale row count in the README (46,821; now 46,553, explained); no file changed"
+    },
+    "1": {
+      "name": "what each engine claims, and on what",
+      "status": "done",
+      "written": [
+        "reports/engines_review/profiles.md",
+        "reports/engines_review/data/stage1_trace.json",
+        "scripts/engines_review/common.py",
+        "scripts/engines_review/stage1_trace.py"
+      ],
+      "result": "eight engine files read in full; six more rules or words found that were built on a misread form (kti, ilan', kirti, stiks, two Appendix 1 cells, Ka rii hitu'); most engine tests hold the engine's own output; stored engine output shown as attested in the app and as Parks's tables in the word-building guide"
+    },
+    "2": {
+      "name": "measure, without tuning",
+      "status": "done",
+      "written": [
+        "reports/engines_review/measurements.md",
+        "reports/engines_review/data/ (test sets, per-form records, summaries)",
+        "scripts/engines_review/ (build_test_sets.py, measure_*.py, run_all.py, README.md)"
+      ],
+      "result": "conjugation 15.0% of 9,559 unseen dictionary forms (79.4% of the seen Appendix 1); accent rules mark 81 cells where the page marks 26; sound changes 20% of Parks's own examples; form 2 87.2%, no unseen test exists; person derivation 70.8% of 2,124 unseen verbs (97% for rules read from correct forms, 6% for the three built on misread forms); possession: kti on 1,671 of 1,706 nouns, locatives 44.4% of 675 printed forms; sentence templates recognise 0 of the 385 accented Blue Book sentences"
+    },
+    "3": {
+      "name": "the decision paper, then stop",
+      "status": "done",
+      "written": [
+        "reports/engines_review/decision.md",
+        "reports/engines_review/README.md",
+        "documentation brought in step: pari_pakuru_project_scope.md, README.md, scripts/README.md, prompts/README.md, reports/README.md, extracted_data/README.md, DB/README.md; one rule in .gitignore"
+      ],
+      "result": "decision paper ready; eight decisions asked of the owner; nothing changed in any engine, data file or the database"
+    },
+    "4": {
+      "name": "only what the owner chose",
+      "status": "done",
+      "written": [
+        "reports/engines_review/stage4.md (start here)",
+        "reports/engines_review/person_forms_repair.md, data/person_forms_split.json, person_forms_plan.json, person_forms_sealed_result.json",
+        "reports/engines_review/stage4_database_report.txt, reports/lesson_text_ocr_report.txt",
+        "scripts/fix_lesson_text_ocr.py, remove_engine_output.py, printed_noun_forms.py, engines_review/person_forms_repair.py",
+        "scripts/sentence_templates.py and template_slot_fillers.py (rebuilt), person_forms.py (repaired), sound_changes.py and stem_extractor.py (reference and checker)",
+        "archived/scripts/: morpheme_inventory.py, accent_rules.py, possession_engine.py, noun_possession.py",
+        "web/: app.py, db.py, srs.py, templates (entry, _entry_card, dashboard, sentence_builder, _printed_noun_forms)",
+        "scripts/morphology_v2/ and curriculum/roots_v2/ (the guide prints Parks's tables)",
+        "docs/ rebuilt; DB/dump/ written; the project log and the READMEs of every folder touched"
+      ],
+      "decisions": {
+        "1": "done",
+        "2": "done",
+        "3": "done",
+        "4": "done",
+        "5": "done",
+        "6": "done",
+        "7": "done",
+        "8": "done"
+      },
+      "order": [
+        1,
+        2,
+        3,
+        5,
+        4,
+        7,
+        6,
+        8
+      ],
+      "notes": {
+        "1": "Decision 1, second part. A leftover \"i ra•kti pita\" on lesson 7 showed that the audit filed its corrections under four labels (OCR slip corrected, accent restored, two readings agree, read at its own place) and that the decision paper and the first run counted only the first. scripts/fix_lesson_text_ocr.py now takes every correction of the audit's report, the latest reading of a form winning, and applies it where the old reading stands in a lesson's text on a page the audit read it on and differs from the reading inside the form in letters, spacing, a bullet or punctuation (Nawa niru! -> Nawa rúru!, to taxis -> tá taris, Suks .at kusaksi. -> Suks•at kúsaksi.). Two more runs: 145 places, then 4 that stood at the very end of a text and were skipped by a fault in the script's own guard, found by scanning the built pages. In all 214 places in the running text of 17 lessons, and 12 titles. Left on purpose and counted by --check: 196 places where only an accent or a capital differs (the OCR dropped every accent; the same letters may stand elsewhere on the page without it; the page decides), and 2 old readings on a page the audit did not read them on. Also left: OCR damage that matches no reading of the audit exactly (lesson 20 \"tatitska ratkti u•ta\", lesson 13 \"kit-kaharu '\"). The paper's figure of 65 was an undercount. Dump written and verified, docs/ rebuilt, check_static_site.js 13 of 13. Backups skiri_pawnee_backup_20261114_174633_lesson_text.db and ..._174734_lesson_text.db.",
+        "2": "Decision 2 done. scripts/morpheme_inventory.py and scripts/accent_rules.py moved to archived/scripts/, each with a note at its head saying why it was withdrawn. Nothing in web/ imported them. The dashboard's block \"Grammar Engine\" (web/app.py, web/templates/dashboard.html) became \"Reference Tables\": it counts only what is copied from the sources (Appendix 1 forms, sound-change rules, Appendix 3 kin terms); the cards for the engine's table, the form 2 score and the possession engine are gone (this also covers the dashboard part of decisions 3, 5 and 7). The review's measurement reads the archived engine where it lies and gives the same bytes as at Stage 2.",
+        "3": "Decision 3 done. The word-building guide's section \"The prefixes and endings Parks tabulates\" now prints Parks's Tables 6 to 17 row by row from extracted_data/grammatical_overview_tables.json (read twice from the page; both readings where they differ), and a second list, \"The pieces Parks labels in his worked examples\" (69 pieces, counted from the gold file; a mis-paired gold example is not shown as the example). scripts/morphology_v2: inventory.py, guide.py, check_forms.py (every table cell must be a cell of the file: 412 checked), report.py, run.py no longer read the table morpheme_inventory; the unused \"slot\" field is gone from affixes.json. Outputs changed: affixes.json, construction_guide.md, validation_report.md, validation_details.json, determinism.json. Checks after: unit tests 34 of 34, gold 17 files unchanged, check_forms all resolved, two runs byte-identical. Then scripts/remove_engine_output.py --decision 3 --apply dropped morpheme_inventory (37 rows) and verb_template_slots (27); dump written and verified; backup OneDrive/pari_pakuru_backups/skiri_pawnee_backup_20261114_173047_engines_decision3.db; report reports/engines_review/stage4_database_report.txt.",
+        "5": "Decision 5 done. The \"Prediction: High/Med/Low\" badge is gone from the entry page and the result card (web/templates/entry.html, _entry_card.html); form2_confidence is no longer read by web/db.py, returned by /api/search, or used to order new study cards (web/srs.py). scripts/stem_extractor.py keeps predict_form_2 and --validate (1,915 of 2,197, 87.2%, on the forms its rules were read from) and says at its head that it is a checker; compute_confidence, populate_confidence and --confidence are removed. scripts/anki_export.py (unused) showed the printed form 2 only above a score of 0.75; it now shows the printed form wherever one is printed. scripts/remove_engine_output.py --decision 5 --apply set the 2,239 stored scores to NULL (the column stays); dump written and verified; backup OneDrive/pari_pakuru_backups/skiri_pawnee_backup_20261114_173243_engines_decision5.db. The local app answers 200 on 29 routes and \"Prediction:\" appears on none.",
+        "4": "Decision 4 done. scripts/sound_changes.py stays where it is (the word-construction analysis reads single rules from it) and the table sound_change_rules is kept. The file now says at its head that it is a reference, not an engine. Its self-test (--test: 11 forms, 7 of them the code's own output) is replaced by --measure, which compares the rules as coded with every example Parks prints in chapter 3: 8 of 39, the figure of Stage 2. New --check-table (the table is the catalogue of the file: yes, 24 rules). Run without options the file used to rewrite the table; it now does nothing, and writes the table only with --write-table, after a backup. --validate-only prints its report instead of overwriting reports/phase_2_3_sound_changes.txt, the record of March 2026 with its AI audit. No rule function changed (checked function by function against the file as it was). The review's chapter 3 test set keeps its four \"own test\" marks from a frozen list; run_all.py --check: all ten sets as recorded. The word-construction outputs are byte-identical after the change.",
+        "7": "Decision 7 done. The possession box on noun pages is replaced by a lookup of printed forms: scripts/printed_noun_forms.py (lookup, --entry, --check) and web/templates/_printed_noun_forms.html, rendered by the entry route; nothing is computed. It shows the Appendix 3 row or rows for a kin term (tied by the printed form, or for the bound stems by the relation the row is listed under, and says which), the one-word examples of the entry that end in -kat, -hiriʔ or -ru with Parks's translation, the combining forms printed in the entry, and Blue Book words linked to the entry by the exact form whose English begins with my/your/his/her. Of 1,706 noun entries 734 have something printed: 38 Appendix 3 rows on 37 entries, 680 case forms on 610 (the review's test set of 680), 537 combining forms on 408, 15 Blue Book forms on 13; the other 972 say that nothing is printed. Removed: the route /api/possession, web/templates/_possession_widget.html, the widget's styles, extracted_data/noun_possession_catalog.json. scripts/possession_engine.py and scripts/noun_possession.py moved to archived/scripts/ with a note at their head. The entry page no longer filters Parks's own examples (it showed 428 of 2,652); the Blue Book filter stays, and dropping the engine's stem from it changes none of 262 rows (54 kept either way). scripts/remove_engine_output.py --decision 7 --apply dropped possession_examples (20) and noun_stems (49), deleted the three rows of kinship_paradigms not from Appendix 3, and deleted the four OCR slips from function_words (ilanʔ, kirti, kti, stiks); --check: no engine output left; dump written and verified; backup skiri_pawnee_backup_20261114_174236_engines_decision7.db. Local app: 28 routes 200, /api/possession 404, \"ATTESTED\" on no page. Found and not acted on: 9 more Blue Book rows of function_words are not words of the scan's readings, 18 are only parts of words.",
+        "6": "Decision 6, the engine: done and tested. Before scripts/person_forms.py was touched the split was written (data/person_forms_split.json: last digit of the entry number, odd = open 1,065 verbs, even = sealed 1,059; the hash of the engine file as it then was; what Stage 2 had already shown; 39 sealed verbs found in the record of the working session as displayed before, to be reported apart). On the open half the engine as reviewed gave 746 of 995 (75.0%); by rule ti- to ra- 464 of 470, the h- variant 86 of 87, tu- to ru- 157 of 166, tiʔ- to raʔ- 25 of 29, the three misread rules 14 of 243. A mechanical search of the open half found no rule for the tii- verbs (best 74.5%) nor for tih- with another headword (2 verbs): they get no form. Because tu- and tiʔ- do not reach 97% by themselves on the open half, two configurations were written down before the opening (data/person_forms_plan.json), with the rule for which ships: \"narrow\", the repair as the paper lists it, and \"strict\", only rules at 97% on the open half. Repair applied: the three rules out; no invented tiku- first person; no present or future for \"I\" and \"you\"; rules in a table with their open-half figures; --validate-appendix fails on any mismatch (26 passed, 0 failed, 2 declined). The sealed half was opened once (scripts/engines_review/person_forms_repair.py --sealed; it refuses a second run): narrow gives a form for 816 of 1,059 verbs and 794 start as form 4 starts, 97.3%, bar 97% reached (773 of 784 without the 39 displayed verbs); strict 562 of 572, 98.3%. Narrow ships by the rule of the plan. Weak point reported, not changed: tiʔ- to raʔ- agreed for 12 of 19 sealed verbs. Record: reports/engines_review/person_forms_repair.md. Still to do under this decision, with decision 8: the sentence builder passes the entry and labels every derived form.",
+        "8": "Decision 8 done, and with it the builder part of decision 6. scripts/sentence_templates.py and scripts/template_slot_fillers.py are rebuilt around printed rows. A pattern starts from a sentence the Blue Book prints (13 frames for the ten patterns, each named by the number and the text of its row of blue_book_attestations); a word may be swapped only for another printed word, given by its row; no Pawnee word is typed in either file. The result says \"printed in the Blue Book, lesson N\" only when it is, accents included, a form of the table; otherwise \"put together here; not printed\". \"The stick is red\" takes the quality as a phrase the book lists, or in the dictionary's spelling the entry's printed form 2 (rakis tipahaaʔat, not ti + the stem). Dictionary verbs are a separate part in Parks's spelling, never mixed into a Blue Book sentence: chosen by entry id (/api/verbs returns it; \"I\" and \"you\" only where a form 1 is printed), their forms shown as printed or as \"derived; not checked against a printed form\" (/api/verb-forms), and sentences in the dictionary's spelling made by /api/dictionary-sentence with Parks's question words by entry. The three non-words are gone with the typed lists. New check, sentence_templates.py --check: every form named in the two files is what its row or entry holds, and no Pawnee form stands outside bb() and entry(): zero exceptions. Its tests are rewritten with every expected form read from a row: 38 of 38. web/app.py: /api/assemble, /api/slot-options, /api/verbs, /api/verb-forms, /api/dictionary-sentence; /api/bb_verb_forms removed; the lesson page reads its pattern examples from the rows. web/templates/sentence_builder.html rewritten. Local app: 47 routes 200 and the two withdrawn ones 404. Found and not acted on: common Blue Book nouns are tied in the table to unrelated entries by a shared beginning (asáki 'dog' and arúsa 'horse' to the entry a; tsapat 'woman' to ca): 77 single listed words are tied that way to a locative verb; the builder therefore finds nouns by their English, not by the tie."
+      },
+      "result": "1: the audit's readings in the lessons, 214 places and 12 titles (the paper's 65 was an undercount); 2: conjugation engine and accent rules withdrawn; 3: the guide prints Parks's Tables 6 to 17 from the file, two engine tables dropped; 4: sound changes a reference, --measure 8 of 39; 5: form 2 a checker, badge and 2,239 scores removed; 6: person derivation repaired, 97.3% of 816 forms on a sealed half of 1,059 verbs (bar 97%), no form for 243; 7: possession replaced by a lookup of printed forms, 734 of 1,706 nouns have something printed; 8: sentence builder rebuilt on printed rows, 38 tests, the check at zero exceptions. Database 46,553 rows in 25 tables -> 46,413 in 21. Every README check run again: all pass.",
+      "open_for_the_owner": [
+        "commit and push (the public lesson pages change only then)",
+        "the lessons: 196 places where only an accent differs, and seven titles; both need the page",
+        "the tiʔ- rule of person derivation (12 of 19 on the sealed half): keep or switch off",
+        "function_words and bb_function_words: a pass against the scan's readings",
+        "the Blue Book table ties common words to the wrong entry (77 single words by a shared beginning)",
+        "the gold file of Parks's worked examples (8 mis-paired records)"
+      ]
+    }
+  },
+  "database_backup": "OneDrive/pari_pakuru_backups/skiri_pawnee_backup_20261114_160246_engines_review_stage0.db",
+  "database_sha256_at_start": "4f206feeb5fa01dddb18fe521227b833dea7c567f6c09a9e5239d883512db145",
+  "database_sha256_at_end_of_stage_3": "4f206feeb5fa01dddb18fe521227b833dea7c567f6c09a9e5239d883512db145",
+  "owner_answer": {
+    "given": "2026-11-14",
+    "answer": "1a 2a 3a 4a 5a 6a 7a 8a",
+    "meaning": "the recommended choice for each of the eight decisions of decision.md"
+  },
+  "database_sha256_at_end_of_stage_4": "40e2274af86981baea859f0d1c59e005c13aab8fb9abd3239ee25309bcd14ef3",
+  "measurement_scripts": "Stages 1 and 2 measured the engine files of commit 814e8cc with the database of the backup named above. Those scripts now refuse to run; see scripts/engines_review/README.md"
+}

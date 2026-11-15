@@ -108,13 +108,17 @@ def _get_headword_set() -> set:
 
 def _filter_entry_examples(entry_data: dict) -> dict:
     """
-    Filter examples and BB attestations on an entry to remove
-    false substring matches (e.g., 'kirike' pollution on 'kiri').
+    Filter the Blue Book attestations on an entry to remove false substring
+    matches (e.g., 'kirike' pollution on 'kiri').
+
+    The entry's own examples are NOT filtered: Parks printed them in this
+    entry. Until 2026-11-14 they went through the same filter, which is made
+    for Blue Book sentences and hid 2,224 of his 2,652 examples (engines
+    review, section 9 of the decision paper).
 
     Modifies entry_data in place and returns it.
     """
     from scripts.example_filter import matches_headword
-    from scripts.possession_engine import extract_noun_stem
 
     hw_set = _get_headword_set()
     entry = entry_data.get("entry")
@@ -124,20 +128,6 @@ def _filter_entry_examples(entry_data: dict) -> dict:
     headword = entry.headword if hasattr(entry, 'headword') else ""
     if not headword:
         return entry_data
-
-    stem, _ = extract_noun_stem(headword)
-
-    # --- Filter dictionary examples ---
-    if hasattr(entry, 'examples') and entry.examples:
-        filtered = []
-        for ex in entry.examples:
-            skiri_text = ex.skiri_text if hasattr(ex, 'skiri_text') else ""
-            if not skiri_text:
-                filtered.append(ex)  # keep examples with no Skiri text
-                continue
-            if matches_headword(headword, skiri_text, hw_set, stem=stem):
-                filtered.append(ex)
-        entry.examples = filtered
 
     # --- Filter Blue Book attestations ---
     bb_info = entry_data.get("bb_info")
@@ -154,7 +144,7 @@ def _filter_entry_examples(entry_data: dict) -> dict:
                 continue
 
             # For dialogues, phrases, grammar examples: check the Skiri form
-            if bb_form and matches_headword(headword, bb_form, hw_set, stem=stem):
+            if bb_form and matches_headword(headword, bb_form, hw_set):
                 filtered_bb.append(att)
                 continue
 
@@ -407,7 +397,6 @@ def api_search():
                 "blue_book_attested": r.blue_book_attested,
                 "tags": r.tags,
                 "example_snippet": r.example_snippet,
-                "form2_confidence": r.form2_confidence,
                 "url": f"/entry/{r.entry_id}",
             }
             for r in results
@@ -422,8 +411,12 @@ def entry_detail(entry_id):
     if not data:
         abort(404)
 
-    # Filter out false-positive examples and BB refs (e.g., kirike ≠ kiri)
+    # Filter out false-positive Blue Book refs (e.g., kirike ≠ kiri)
     _filter_entry_examples(data)
+
+    # For a noun: what Parks and the Blue Book print of it (nothing computed)
+    from scripts.printed_noun_forms import lookup as printed_noun_forms
+    data["printed_forms"] = printed_noun_forms(db.conn, entry_id)
 
     # Community feedback counts for this entry
     feedback_counts = db.get_entry_feedback_count(entry_id)
@@ -561,32 +554,6 @@ def syllable_guide():
     return render_template("guide.html")
 
 
-@app.route("/api/possession/<path:headword>")
-def possession_api(headword):
-    """Return possessive paradigm data for a noun."""
-    db = get_db()
-    cur = db.conn.cursor()
-    cur.execute(
-        "SELECT grammatical_class FROM lexical_entries WHERE headword = ?",
-        (headword,),
-    )
-    row = cur.fetchone()
-    if not row:
-        return jsonify({"error": "entry not found"}), 404
-
-    noun_class = row["grammatical_class"] if row else None
-
-    # Only generate for noun classes
-    noun_classes = {"N", "N-DEP", "N-KIN", "NUM"}
-    if not noun_class or noun_class not in noun_classes:
-        return jsonify({"error": "not a noun"}), 200
-
-    # Import possession engine (lives in scripts/)
-    from scripts.possession_engine import generate_paradigm_table
-    table = generate_paradigm_table(headword, noun_class=noun_class)
-    return jsonify(table)
-
-
 @app.route("/dashboard")
 def dashboard():
     db = get_db()
@@ -674,86 +641,19 @@ def dashboard():
     except Exception:
         data["top_tags"] = []
 
-    # --- Verb Engine Coverage ---
-    verb = {}
+    # --- Reference tables copied from the sources (counts only; nothing here is computed) ---
+    reference = {}
     for key, sql in [
         ("paradigm_forms", "SELECT COUNT(*) FROM verb_paradigms"),
-        ("distinct_verbs", "SELECT COUNT(DISTINCT stem) FROM verb_paradigms"),
+        ("distinct_verbs", "SELECT COUNT(DISTINCT verb_heading) FROM verb_paradigms"),
         ("sound_rules", "SELECT COUNT(*) FROM sound_change_rules"),
-        ("morphemes", "SELECT COUNT(*) FROM morpheme_inventory"),
-    ]:
-        try:
-            verb[key] = cur.execute(sql).fetchone()[0]
-        except Exception:
-            verb[key] = None
-
-    # --- Stem Extraction Accuracy (from pre-computed confidence scores) ---
-    try:
-        row = cur.execute("""
-            SELECT COUNT(*) as total,
-                   SUM(CASE WHEN form2_confidence >= 0.75 THEN 1 ELSE 0 END) as high_conf
-            FROM lexical_entries
-            WHERE grammatical_class LIKE 'V%'
-        """).fetchone()
-        verb["stem_total"] = row[0] or 0
-        verb["stem_exact"] = row[1] or 0
-    except Exception:
-        verb["stem_total"] = 0
-        verb["stem_exact"] = 0
-
-    # --- Confidence Score Distribution ---
-    confidence_dist = None
-    try:
-        cur.execute("""
-            SELECT
-              COUNT(*) as total,
-              SUM(CASE WHEN form2_confidence >= 0.75 THEN 1 ELSE 0 END) as high,
-              SUM(CASE WHEN form2_confidence >= 0.50 AND form2_confidence < 0.75 THEN 1 ELSE 0 END) as medium,
-              SUM(CASE WHEN form2_confidence < 0.50 THEN 1 ELSE 0 END) as low,
-              ROUND(AVG(form2_confidence), 3) as avg_conf
-            FROM lexical_entries
-            WHERE form2_confidence IS NOT NULL
-        """)
-        crow = cur.fetchone()
-        if crow and crow[0] > 0:
-            confidence_dist = {
-                "total": crow[0],
-                "high": crow[1] or 0,
-                "medium": crow[2] or 0,
-                "low": crow[3] or 0,
-                "avg": crow[4] or 0,
-            }
-    except Exception:
-        pass  # column doesn't exist yet
-    verb["confidence_dist"] = confidence_dist
-
-    data["verb"] = verb
-
-    # --- Possession Engine Coverage ---
-    poss = {}
-    for key, sql in [
-        ("body_part", "SELECT COUNT(*) FROM noun_stems WHERE possession_type = 'body_part'"),
-        ("locative", "SELECT COUNT(*) FROM noun_stems WHERE possession_type = 'locative'"),
         ("kinship", "SELECT COUNT(*) FROM kinship_paradigms"),
     ]:
         try:
-            poss[key] = cur.execute(sql).fetchone()[0]
+            reference[key] = cur.execute(sql).fetchone()[0]
         except Exception:
-            poss[key] = None
-    # BB test accuracy
-    try:
-        cur.execute(
-            "SELECT COUNT(*) as total, "
-            "SUM(CASE WHEN match_status = 'exact' THEN 1 ELSE 0 END) as exact "
-            "FROM possession_examples"
-        )
-        row = cur.fetchone()
-        poss["bb_total"] = row[0] or 0
-        poss["bb_exact"] = row[1] or 0
-    except Exception:
-        poss["bb_total"] = None
-        poss["bb_exact"] = None
-    data["poss"] = poss
+            reference[key] = None
+    data["reference"] = reference
 
     # --- E2S Linking Health ---
     try:
@@ -900,13 +800,14 @@ def lesson_detail(number):
         "grammar_notes": json.loads(row["grammar_notes"] or "[]"),
         "templates": json.loads(row["template_ids"] or "[]"),
     }
-    # template metadata for practice links
-    from scripts.sentence_templates import TEMPLATES
+    # the patterns practised in this lesson: each with a sentence the Blue Book prints, read from its row
+    from scripts.sentence_templates import list_templates
+    patterns = {t["template_id"]: t for t in list_templates(db.conn)}
     practice = [
-        {"id": t, "name": TEMPLATES[t].name,
-         "example": TEMPLATES[t].skiri_example,
-         "english": TEMPLATES[t].english_example}
-        for t in lesson["templates"] if t in TEMPLATES
+        {"id": t, "name": patterns[t]["name"],
+         "example": patterns[t]["skiri_example"],
+         "english": patterns[t]["english_example"]}
+        for t in lesson["templates"] if t in patterns
     ]
     exercises = _build_exercises(vocab, lesson["dialogues"], phrases)
     prev_n = number - 1 if number > 1 else None
@@ -989,89 +890,55 @@ def _build_exercises(vocab, dialogues, phrases):
 
 @app.route("/sentence-builder")
 def sentence_builder():
-    """Template selection + sentence assembly UI."""
+    """Sentences from printed words (scripts/sentence_templates.py). Local app only."""
     from scripts.sentence_templates import list_templates
-    templates = list_templates()
-    return render_template("sentence_builder.html", templates=templates)
+    return render_template("sentence_builder.html", templates=list_templates(get_db().conn))
 
 
 @app.route("/api/assemble", methods=["POST"])
 def api_assemble():
-    """Assemble a sentence from a template + slot values."""
+    """A printed sentence of the Blue Book with some words swapped for other printed words.
+
+    Body: {"template_id": "T2", "frame": 0, "slots": {"noun": ROW, ...}}; a slot is the number of a row of
+    blue_book_attestations, or {"row": N, "places": [...]} for a word taken from a sentence of the same shape.
+    """
     from scripts.sentence_templates import assemble
     data = request.get_json(silent=True)
-    if not data:
+    if not isinstance(data, dict):
         return jsonify({"error": "invalid request"}), 400
-
-    template_id = data.get("template_id", "").strip()
+    template_id = str(data.get("template_id", "")).strip()
     if not template_id:
         return jsonify({"error": "template_id required"}), 400
-
-    slots = {k: v for k, v in data.items() if k != "template_id"}
-    result = assemble(template_id, **slots)
+    slots = data.get("slots")
+    if not isinstance(slots, dict):
+        slots = {k: v for k, v in data.items() if k not in ("template_id", "frame", "slots")}
+    slots = {str(k): v for k, v in slots.items() if str(k) not in ("conn", "frame", "template_id")}
+    result = assemble(template_id, data.get("frame", 0), conn=get_db().conn, **slots)
     return jsonify(result.to_dict())
 
 
 @app.route("/api/slot-options")
 def api_slot_options():
-    """Return curated dropdown options for a template slot."""
-    from scripts.sentence_templates import get_slot_options
+    """Printed words that may stand in one place of a frame; those the book itself puts there come first."""
+    from scripts.sentence_templates import slot_options
     template_id = request.args.get("template", "").strip()
     slot = request.args.get("slot", "").strip()
-    bb_only = request.args.get("bb_only", "true").lower() != "false"
-
     if not template_id or not slot:
         return jsonify([])
-
-    options = get_slot_options(template_id, slot, bb_only=bb_only)
+    try:
+        options = slot_options(template_id, request.args.get("frame", 0, type=int), slot,
+                               q=request.args.get("q", ""), conn=get_db().conn)
+    except ValueError as exc:
+        return jsonify({"error": str(exc)}), 400
     return jsonify(options)
-
-
-# ------------------------------------------------------------------
-# BB Verb Form search (for sentence builder)
-# ------------------------------------------------------------------
-
-@app.route("/api/bb_verb_forms")
-def api_bb_verb_forms():
-    """Search Blue Book-attested verb forms for the sentence builder."""
-    db = get_db()
-    q = request.args.get("q", "").strip()
-    limit = request.args.get("limit", 10, type=int)
-    limit = min(limit, 30)
-
-    if not q or len(q) < 2:
-        return jsonify([])
-
-    cur = db.conn.cursor()
-    # Search BB forms by Skiri form or English gloss
-    # Include dialogues, phrases, grammar examples that look like verb forms
-    cur.execute("""
-        SELECT DISTINCT bb_skiri_form, bb_english, lesson_number, context_type
-        FROM blue_book_attestations
-        WHERE (bb_skiri_form LIKE ? OR bb_english LIKE ?)
-          AND context_type IN ('DIALOGUE', 'PHRASE', 'GRAMMAR_EXAMPLE', 'BASIC_WORDS', 'ADDITIONAL_WORDS')
-          AND bb_skiri_form IS NOT NULL AND bb_skiri_form != ''
-        ORDER BY lesson_number, bb_skiri_form
-        LIMIT ?
-    """, (f"%{q}%", f"%{q}%", limit))
-    results = [
-        {
-            "skiri_form": r[0],
-            "english": r[1] or "",
-            "lesson": r[2],
-            "context": r[3],
-        }
-        for r in cur.fetchall()
-    ]
-    return jsonify(results)
 
 
 @app.route("/api/verbs")
 def api_verbs():
-    """Search dictionary verbs (with paradigm forms) for auto-conjugation.
+    """Search dictionary verbs. Each hit carries its entry id: the same spelling can be two verbs.
 
-    Matches English glosses or Skiri headwords; flags whether I/you forms
-    are available (needs form_1) vs only he/she forms (form_2)."""
+    Matches English glosses or Skiri headwords; says whether "I" and "you" forms can be shown
+    (the entry prints a form 1) or only "he/she" forms."""
     db = get_db()
     q = request.args.get("q", "").strip()
     limit = min(request.args.get("limit", 8, type=int), 20)
@@ -1109,20 +976,41 @@ def api_verbs():
     results = []
     for r in cur.fetchall():
         results.append({
+            "entry_id": r["entry_id"],
             "headword": r["headword"],
             "normalized_form": r["normalized_form"],
             "gram_class": r["grammatical_class"],
             "verb_class": r["verb_class"],
             "pronunciation": r["simplified_pronunciation"],
             "gloss": (r["gloss"] or "").split(";")[0].strip(),
-            # descriptive verbs derive I/you via the desc-ku pattern even
-            # without a listed form_1
-            "persons": ("I / you / he-she"
-                        if r["has_f1"]
-                        or (r["grammatical_class"] or "").startswith(("VD", "VL"))
-                        else "he-she only"),
+            # "I" and "you" only where the entry prints a form 1: none is made up
+            "persons": "I / you / he-she" if r["has_f1"] else "he-she only",
         })
     return jsonify(results)
+
+
+@app.route("/api/verb-forms")
+def api_verb_forms():
+    """The forms of one dictionary verb, by its entry id: printed ones, and derived ones with their label."""
+    from scripts.sentence_templates import verb_forms
+    entry_id = request.args.get("entry_id", "").strip()
+    if not entry_id:
+        return jsonify({"error": "entry_id required"}), 400
+    return jsonify(verb_forms(entry_id, get_db().conn))
+
+
+@app.route("/api/dictionary-sentence", methods=["POST"])
+def api_dictionary_sentence():
+    """A sentence in the dictionary's spelling: a noun, a verb form of one entry, and for a question Parks's
+    question word. Never printed anywhere, and marked so."""
+    from scripts.sentence_templates import dictionary_sentence
+    data = request.get_json(silent=True)
+    if not isinstance(data, dict):
+        return jsonify({"error": "invalid request"}), 400
+    result = dictionary_sentence(str(data.get("pattern", "statement")), str(data.get("verb_entry_id", "")),
+                                 str(data.get("form_key", "")), data.get("noun_entry_id") or None,
+                                 conn=get_db().conn)
+    return jsonify(result.to_dict())
 
 
 # ------------------------------------------------------------------

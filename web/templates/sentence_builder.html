@@ -5,770 +5,325 @@
 {% block header_search %}{% endblock %}
 
 {% block content %}
+{# Rebuilt on 2026-11-14 (engines review, decisions 6 and 8).                       #}
+{# Every Blue Book word on this page is a row of the table, copied as printed.      #}
+{# A sentence says whether the book prints it. A form made by person_forms.py       #}
+{# carries its label. Nothing here is on the public site.                           #}
+<style>
+  .sb-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); gap: 0.75rem; }
+  .sb-card { cursor: pointer; margin: 0; padding: 0.75rem 1rem; }
+  .sb-card.is-on { outline: 2px solid var(--sage-400, #7a9); }
+  .sb-card p { margin: 0.2rem 0; }
+  .sb-frame { border: 1px solid var(--earth-200, #ddd); border-radius: 0.5rem; padding: 0.75rem 1rem; margin: 0.75rem 0; }
+  .sb-words { font-size: 1.35rem; line-height: 2.2; }
+  .sb-word { padding: 0.15rem 0.35rem; }
+  button.sb-word { display: inline; width: auto; margin: 0 0.1rem; font-size: inherit; border: 1px dashed var(--earth-500, #876);
+                   background: var(--earth-50, #faf7f0); color: inherit; border-radius: 0.35rem; }
+  button.sb-word.is-swapped { border-style: solid; background: var(--gold-100, #f6e9c8); }
+  .sb-options { max-height: 18rem; overflow: auto; border: 1px solid var(--earth-200, #ddd); border-radius: 0.5rem; margin-top: 0.5rem; }
+  .sb-options button { display: block; width: 100%; text-align: left; margin: 0; border: 0; border-bottom: 1px solid var(--earth-100, #eee);
+                       background: none; color: inherit; padding: 0.4rem 0.75rem; border-radius: 0; }
+  .sb-options button:hover { background: var(--earth-50, #faf7f0); }
+  .sb-result { border-left: 4px solid var(--earth-300, #cba); padding: 0.5rem 1rem; margin: 1rem 0; }
+  .sb-result.is-printed { border-left-color: var(--sage-400, #7a9); }
+  .sb-sentence { font-size: 1.6rem; margin: 0.25rem 0; }
+  .sb-status { display: inline-block; padding: 0.1rem 0.6rem; border-radius: 1rem; font-size: 0.85rem; }
+  .sb-status.printed { background: var(--sage-100, #dfeadf); }
+  .sb-status.made { background: var(--gold-100, #f6e9c8); }
+  .sb-status.derived { background: var(--clay-100, #f3d9cf); }
+  .sb-note { font-size: 0.9rem; color: var(--earth-600, #765); margin: 0.25rem 0; }
+  .sb-error { color: var(--clay-600, #a43); }
+</style>
+
 <hgroup>
   <h2>Sentence Builder</h2>
-  <p>Build Skiri Pawnee sentences from Blue Book patterns. Pick a template, fill the slots, and see how it assembles.</p>
+  <p>Start from a sentence the Blue Book prints. Swap a word for another word the book prints. The page tells you whether the result is a sentence of the book.</p>
 </hgroup>
 
 <details class="sb-help" open>
-  <summary><strong>How does this work?</strong></summary>
+  <summary><strong>What you can trust here</strong></summary>
   <ul>
-    <li><strong>Noun / Subject / Object fields</strong> &mdash; Type an <em>English</em> word (like "water" or "man") and pick from the dictionary results that appear.</li>
-    <li><strong>Descriptive verb field</strong> &mdash; Type an English quality (like "red" or "big") and pick from the results.</li>
-    <li><strong>Verb field</strong> &mdash; Type an English verb (like "go" or "find") and pick a dictionary verb. Then choose <em>who</em> (I / you / he-she) and, where offered, <em>when</em> (past / present / future) &mdash; the builder conjugates it for you from Parks's attested paradigms.</li>
-    <li><strong>Advanced: verb form</strong> &mdash; You can instead type a <em>Skiri Pawnee</em> verb that is already conjugated (e.g. <code>ra&bull;pahaat</code> for "it is red"), found in the Blue Book lessons or the dictionary.</li>
-    <li><strong>Dropdown fields</strong> (time words, imperative particles) &mdash; Just pick one from the list.</li>
+    <li><strong>Every Blue Book word is copied</strong> from the book as read from the scan, with its accent. Nothing is typed in or worked out.</li>
+    <li><strong>"Printed in the Blue Book, lesson N"</strong> means the whole sentence stands in the book, accents included. <strong>"Put together here; not printed"</strong> means the words are the book's but the sentence is not: nobody has checked it, and a swapped word keeps the accent it had where it came from.</li>
+    <li><strong>Dictionary verbs</strong> are in the second part, in Parks's spelling, and never mixed into a Blue Book sentence. A form marked <strong>"derived; not checked against a printed form"</strong> was made from a printed form by rule. It has no accent mark.</li>
   </ul>
 </details>
 
-{# ── Step 1: Template Cards ─────────────────────────────────────── #}
+{# ── Part 1: the Blue Book ───────────────────────────────────────── #}
 <section id="template-picker">
-  <h3>Step 1: Pick a pattern</h3>
+  <h3>1. From the Blue Book: pick a pattern</h3>
   <div class="sb-grid">
     {% for t in templates %}
-    <article class="sb-card" data-tid="{{ t.template_id }}"
-             onclick="selectTemplate('{{ t.template_id }}')">
-      <header>
-        <span class="badge badge-class">{{ t.template_id }}</span>
-        <strong>{{ t.name }}</strong>
-      </header>
-      <p class="sb-card__pattern">{{ t.english_pattern }}</p>
-      <p class="sb-card__example font-serif">{{ t.skiri_example }}</p>
-      <footer>
-        <small>{{ t.english_example }}</small>
-        <span class="badge badge--bluebook">{{ t.bb_count }} BB</span>
-      </footer>
+    <article class="sb-card" data-tid="{{ t.template_id }}" onclick="selectTemplate('{{ t.template_id }}')">
+      <p><span class="badge badge-class">{{ t.template_id }}</span> <strong>{{ t.name }}</strong></p>
+      <p>{{ t.english_pattern }}</p>
+      <p class="font-serif" lang="x-paw">{{ t.skiri_example }}</p>
+      <p><small>{{ t.english_example }} (lesson {{ t.example_lesson }})</small></p>
     </article>
     {% endfor %}
   </div>
 </section>
 
-{# ── Step 2: Slot Form (hidden until template selected) ──────── #}
-<section id="slot-form-section" style="display:none;">
-  <h3>Step 2: Fill the slots</h3>
-  <p id="selected-template-label"></p>
-
-  <form id="slot-form" onsubmit="assembleSentence(event)">
-    <input type="hidden" name="template_id" id="template-id-input">
-    <div id="slot-fields"></div>
-    <button type="submit" class="contrast">Assemble Sentence</button>
-  </form>
+<section id="frames-section" style="display:none;">
+  <h3 id="frames-title"></h3>
+  <p class="sb-note">A word in a dashed box can be swapped. Click it.</p>
+  <div id="frames"></div>
 </section>
 
-{# ── Step 3: Result (hidden until assembled) ─────────────────── #}
-<section id="result-section" style="display:none;">
-  <h3>Result</h3>
-  <div id="result-body"></div>
+{# ── Part 2: a dictionary verb ───────────────────────────────────── #}
+<section id="verb-section">
+  <h3>2. A dictionary verb, in Parks's spelling</h3>
+  <p class="sb-note">Type an English word or a headword and choose the entry. The same spelling can be two verbs, so you choose the entry, not the spelling.</p>
+  <input type="search" id="verb-q" placeholder="go, drink, be red ..." autocomplete="off">
+  <div class="sb-options" id="verb-hits" style="display:none;"></div>
+  <div id="verb-forms"></div>
+  <div id="verb-sentence" style="display:none;">
+    <h4>A sentence in the dictionary's spelling</h4>
+    <div class="grid">
+      <label>Kind
+        <select id="ds-pattern">
+          <option value="statement">statement: noun, then verb</option>
+          <option value="where">where ...?</option>
+          <option value="who">who ...?</option>
+          <option value="what">what ...?</option>
+        </select>
+      </label>
+      <label>Verb form <select id="ds-form"></select></label>
+      <label>Noun (optional)
+        <input type="search" id="noun-q" placeholder="stick, man ..." autocomplete="off">
+      </label>
+    </div>
+    <div class="sb-options" id="noun-hits" style="display:none;"></div>
+    <p class="sb-note" id="noun-chosen"></p>
+    <button type="button" onclick="dictionarySentence()">Put it together</button>
+    <div id="ds-result"></div>
+  </div>
 </section>
-
 {% endblock %}
 
 {% block scripts %}
 <script>
-// ── Template metadata (from server) ──────────────────────────────
 const TEMPLATES = {{ templates | tojson }};
-const TEMPLATE_MAP = {};
-TEMPLATES.forEach(t => TEMPLATE_MAP[t.template_id] = t);
+const BY_ID = {};
+TEMPLATES.forEach(t => BY_ID[t.template_id] = t);
+const state = {};          // "T1/0" -> {slot: row number, or {row, places}}
 
-// ── Role → CSS chip class mapping (reuses possession widget palette) ──
-const ROLE_COLORS = {
-  'SUBJECT': 'poss-chip--agent',
-  'VERB': 'poss-chip--verb',
-  'OBJECT': 'poss-chip--noun',
-  'PARTICLE': 'poss-chip--mode',
-  'ADVERB': 'poss-chip--poss',
-  'LOCATIVE': 'poss-chip--case',
-  'TEMPORAL': 'poss-chip--kin',
-  'YES_WORD': 'poss-chip--mode',
-  'IMP_PARTICLE': 'poss-chip--mode',
-  'INNER': 'poss-chip--noun',
-  'WE_PARTICLE': 'poss-chip--mode',
-};
+function el(tag, attrs, text) {
+  const e = document.createElement(tag);
+  for (const k in (attrs || {})) { if (k === 'class') e.className = attrs[k]; else e.setAttribute(k, attrs[k]); }
+  if (text !== undefined && text !== null) e.textContent = text;
+  return e;
+}
 
-// ── Curated slot types that get dropdowns (not free-text search) ──
-const CURATED_SLOTS = new Set(['temporal', 'adv_manner', 'yes_word', 'imp_particle']);
-
-// ── Wrapper templates that take inner text ──
-const WRAPPER_TEMPLATES = new Set(['T6', 'T7']);
-
+// ── Part 1 ──────────────────────────────────────────────────────────
 function selectTemplate(tid) {
-  const t = TEMPLATE_MAP[tid];
-  if (!t) return;
+  document.querySelectorAll('.sb-card').forEach(c => c.classList.toggle('is-on', c.dataset.tid === tid));
+  const t = BY_ID[tid];
+  document.getElementById('frames-title').textContent = t.template_id + ' ' + t.name + ': ' + t.english_pattern;
+  const box = document.getElementById('frames');
+  box.replaceChildren();
+  t.frames.forEach(f => box.appendChild(frameBlock(t, f)));
+  document.getElementById('frames-section').style.display = '';
+  document.getElementById('frames-section').scrollIntoView({behavior: 'smooth', block: 'start'});
+}
 
-  // Highlight selected card
-  document.querySelectorAll('.sb-card').forEach(c => c.classList.remove('sb-card--selected'));
-  document.querySelector(`.sb-card[data-tid="${tid}"]`).classList.add('sb-card--selected');
-
-  // Show form
-  document.getElementById('slot-form-section').style.display = '';
-  document.getElementById('result-section').style.display = 'none';
-  document.getElementById('template-id-input').value = tid;
-  document.getElementById('selected-template-label').innerHTML =
-    `<span class="badge badge-class">${tid}</span> <strong>${t.name}</strong> &mdash; ${t.english_pattern}`;
-
-  // Build slot fields
-  const container = document.getElementById('slot-fields');
-  container.innerHTML = '';
-
-  // Wrapper templates: single "inner" text slot
-  if (WRAPPER_TEMPLATES.has(tid)) {
-    if (tid === 'T7') {
-      // Yes word selector
-      container.appendChild(buildCuratedField('yes_word', 'Affirmation word', tid));
-    }
-    container.appendChild(buildTextField('inner', 'Statement (Skiri text)', true,
-      tid === 'T6' ? 'Skiri clause, e.g. kaki karitki (it is not a rock)' : 'Skiri clause, e.g. ti hitu\' (this is a feather)'));
-    return;
-  }
-
-  const slotNames = new Set(t.slots.map(s => s.name));
-  const hasAutoVerb = slotNames.has('verb');
-
-  t.slots.forEach(slot => {
-    const name = slot.name;
-    const required = slot.required;
-    const desc = slot.description || name;
-
-    if (name === 'person' || name === 'tense') {
-      return; // rendered inside the auto-verb block
-    }
-    if (CURATED_SLOTS.has(name)) {
-      container.appendChild(buildCuratedField(name, desc, tid));
-    } else if (name === 'we_particle') {
-      container.appendChild(buildCheckboxField(name, 'Add "we" (completed action particle)'));
-    } else if (name === 'verb') {
-      container.appendChild(buildAutoVerbField(tid, slotNames.has('tense')));
-    } else if (name === 'verb_form') {
-      const vfHints = {
-        T3: 'Search BB verbs, e.g. "red" or "pahaat"',
-        T4: 'Search BB verbs, e.g. "is" or "ru"',
-        T5: 'Search BB verbs, e.g. "went" or "suks"',
-        T8: 'Search BB verbs, e.g. "went" or "tuks"',
-        T9: 'Search BB verbs, e.g. "killed" or "kuwutit"',
-        T10: 'Search BB verbs, e.g. "open" or "teka"',
-      };
-      const field = buildVerbFormField(name, desc, required && !hasAutoVerb,
-        vfHints[tid] || 'Search for a verb in English or Skiri...');
-      if (hasAutoVerb) {
-        // demote to an "advanced" alternative below the auto-verb picker
-        const det = document.createElement('details');
-        det.className = 'sb-advanced';
-        det.innerHTML = '<summary><small>Advanced: type an already-conjugated verb form instead</small></summary>';
-        det.appendChild(field);
-        container.appendChild(det);
-      } else {
-        container.appendChild(field);
-      }
-    } else if (name === 'noun' || name === 'subject' || name === 'object' || name === 'vd') {
-      container.appendChild(buildSearchField(name, desc, required, slot.type));
-    } else if (name === 'locative') {
-      container.appendChild(buildTextField(name, desc, required,
-        'Place name, e.g. Pari (Pawnee), tuks\u2022kaku\' (store)'));
+function frameBlock(t, f) {
+  const key = t.template_id + '/' + f.number;
+  state[key] = state[key] || {};
+  const block = el('div', {class: 'sb-frame', id: 'frame-' + t.template_id + '-' + f.number});
+  block.appendChild(el('p', {class: 'sb-note'}, 'The book prints (lesson ' + f.lesson + (f.book_page ? ', p. ' + f.book_page : '') + '): ' + f.english));
+  const line = el('p', {class: 'sb-words font-serif', lang: 'x-paw'});
+  f.words.forEach(w => {
+    if (w.slot) {
+      const b = el('button', {type: 'button', class: 'sb-word', title: 'swap this word (' + w.slot.replace('_', ' ') + ')'}, w.text);
+      b.addEventListener('click', () => openOptions(t, f, w.slot, block));
+      line.appendChild(b);
     } else {
-      container.appendChild(buildTextField(name, desc, required));
+      line.appendChild(el('span', {class: 'sb-word'}, w.text));
     }
+    line.appendChild(document.createTextNode(' '));
+  });
+  block.appendChild(line);
+  block.appendChild(el('div', {class: 'sb-picker'}));
+  block.appendChild(el('div', {class: 'sb-out'}));
+  return block;
+}
+
+function openOptions(t, f, slot, block) {
+  const picker = block.querySelector('.sb-picker');
+  picker.replaceChildren();
+  picker.appendChild(el('p', {class: 'sb-note'}, 'Another printed word for "' + slot.replace('_', ' ') +
+    '". Words the book itself puts in this place come first. Type an English word to find more.'));
+  const q = el('input', {type: 'search', placeholder: 'English word ...', autocomplete: 'off'});
+  const list = el('div', {class: 'sb-options'});
+  picker.appendChild(q);
+  picker.appendChild(list);
+  const load = () => fetch('/api/slot-options?template=' + t.template_id + '&frame=' + f.number + '&slot=' + slot +
+                           '&q=' + encodeURIComponent(q.value)).then(r => r.json()).then(options => {
+    list.replaceChildren();
+    if (!options.length) list.appendChild(el('p', {class: 'sb-note', style: 'padding:0.5rem 0.75rem'},
+      'No printed word found. For a verb form, type an English word.'));
+    options.forEach(o => {
+      const b = el('button', {type: 'button'});
+      b.appendChild(el('strong', {class: 'font-serif', lang: 'x-paw'}, o.form));
+      b.appendChild(document.createTextNode('  ' + (o.whole_sentence ? 'in: ' : '') + o.english + '  (lesson ' + o.lesson + ')' +
+                                            (o.here ? '  — the book puts it here' : '')));
+      b.addEventListener('click', () => {
+        state[t.template_id + '/' + f.number][slot] = o.whole_sentence ? {row: o.row, places: o.places} : o.row;
+        picker.replaceChildren();
+        assemble(t, f, block);
+      });
+      list.appendChild(b);
+    });
+  });
+  let timer = null;
+  q.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(load, 250); });
+  load();
+}
+
+function assemble(t, f, block) {
+  const key = t.template_id + '/' + f.number;
+  fetch('/api/assemble', {method: 'POST', headers: {'Content-Type': 'application/json'},
+                          body: JSON.stringify({template_id: t.template_id, frame: f.number, slots: state[key]})})
+    .then(r => r.json()).then(data => {
+      const out = block.querySelector('.sb-out');
+      out.replaceChildren(resultBlock(data));
+      const again = el('button', {type: 'button', class: 'secondary outline'}, 'Back to the printed sentence');
+      again.addEventListener('click', () => { state[key] = {}; out.replaceChildren(); });
+      out.appendChild(again);
+    });
+}
+
+function resultBlock(data) {
+  const box = el('div', {class: 'sb-result' + (data.printed ? ' is-printed' : '')});
+  if (data.error) { box.appendChild(el('p', {class: 'sb-error'}, data.error)); return box; }
+  box.appendChild(el('p', {class: 'sb-sentence font-serif', lang: 'x-paw'}, data.skiri_sentence));
+  const marks = el('p');
+  if (data.printed) {
+    const p = data.printed_in[0];
+    marks.appendChild(el('span', {class: 'sb-status printed'}, 'Printed in the Blue Book, lesson ' + p.lesson + (p.book_page ? ', p. ' + p.book_page : '')));
+  } else {
+    marks.appendChild(el('span', {class: 'sb-status made'}, 'Put together here; not printed'));
+  }
+  if (data.derived) marks.appendChild(el('span', {class: 'sb-status derived'}, 'verb form derived; not checked against a printed form'));
+  marks.appendChild(document.createTextNode('  ' + data.spelling + ' spelling'));
+  box.appendChild(marks);
+  if (data.english) box.appendChild(el('p', null, 'The book translates: ' + data.english));
+  (data.notes || []).forEach(n => box.appendChild(el('p', {class: 'sb-note'}, n)));
+  const table = el('table');
+  const head = el('tr');
+  ['Word', 'Copied from', 'English there'].forEach(h => head.appendChild(el('th', null, h)));
+  table.appendChild(head);
+  (data.words || []).forEach(w => {
+    const tr = el('tr');
+    const first = el('td', {class: 'font-serif', lang: 'x-paw'});
+    if (w.entry_id) { first.appendChild(el('a', {href: '/entry/' + encodeURIComponent(w.entry_id)}, w.form)); }
+    else first.textContent = w.form;
+    tr.appendChild(first);
+    tr.appendChild(el('td', null, w.from + (w.lesson ? ', lesson ' + w.lesson : '') + (w.label ? ' (' + w.label + ')' : '')));
+    tr.appendChild(el('td', null, w.english || (w.from === 'the frame' ? 'a word of the printed sentence' : '')));
+    table.appendChild(tr);
+  });
+  box.appendChild(table);
+  return box;
+}
+
+// ── Part 2 ──────────────────────────────────────────────────────────
+let verb = null, noun = null, verbTimer = null, nounTimer = null;
+
+document.getElementById('verb-q').addEventListener('input', function () {
+  clearTimeout(verbTimer);
+  const q = this.value.trim();
+  verbTimer = setTimeout(() => {
+    const hits = document.getElementById('verb-hits');
+    if (q.length < 2) { hits.style.display = 'none'; return; }
+    fetch('/api/verbs?q=' + encodeURIComponent(q)).then(r => r.json()).then(rows => {
+      hits.replaceChildren();
+      rows.forEach(v => {
+        const b = el('button', {type: 'button'});
+        b.appendChild(el('strong', {class: 'font-serif', lang: 'x-paw'}, v.headword));
+        b.appendChild(document.createTextNode('  ' + v.gloss + '  [' + v.gram_class + ']  ' + v.persons));
+        b.addEventListener('click', () => { hits.style.display = 'none'; chooseVerb(v.entry_id); });
+        hits.appendChild(b);
+      });
+      hits.style.display = rows.length ? '' : 'none';
+    });
+  }, 250);
+});
+
+function chooseVerb(entryId) {
+  fetch('/api/verb-forms?entry_id=' + encodeURIComponent(entryId)).then(r => r.json()).then(data => {
+    const box = document.getElementById('verb-forms');
+    box.replaceChildren();
+    if (data.error) { box.appendChild(el('p', {class: 'sb-error'}, data.error)); return; }
+    verb = data;
+    const title = el('p');
+    title.appendChild(el('a', {href: '/entry/' + encodeURIComponent(data.entry_id), class: 'font-serif', lang: 'x-paw'}, data.headword));
+    title.appendChild(document.createTextNode('  ' + (data.gloss || '') + '  [' + data.grammatical_class + ']'));
+    box.appendChild(title);
+    const table = el('table');
+    const head = el('tr');
+    ['Form', 'What it is', 'Where it comes from'].forEach(h => head.appendChild(el('th', null, h)));
+    table.appendChild(head);
+    data.forms.forEach(f => {
+      const tr = el('tr');
+      tr.appendChild(el('td', {class: 'font-serif', lang: 'x-paw'}, f.form));
+      tr.appendChild(el('td', null, f.label));
+      const src = el('td');
+      src.appendChild(el('span', {class: 'sb-status ' + (f.status === 'printed' ? 'printed' : 'derived')}, f.source));
+      tr.appendChild(src);
+      table.appendChild(tr);
+    });
+    box.appendChild(table);
+    box.appendChild(el('p', {class: 'sb-note'}, data.note));
+    document.getElementById('verb-sentence').style.display = '';
+    fillForms();
   });
 }
 
-// \u2500\u2500 Auto-conjugating verb picker (Phase 3.2b) \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
-const DEFAULT_PERSON = { T8: '1sg' };  // others default to 3sg
+function fillForms() {
+  const pattern = document.getElementById('ds-pattern').value;
+  const select = document.getElementById('ds-form');
+  select.replaceChildren();
+  (verb ? verb.forms : []).filter(f => (pattern === 'statement') !== f.key.endsWith('_abs')).forEach(f => {
+    select.appendChild(el('option', {value: f.key}, f.label + ': ' + f.form + (f.status === 'derived' ? ' (derived)' : '')));
+  });
+}
+document.getElementById('ds-pattern').addEventListener('change', fillForms);
 
-function buildAutoVerbField(tid, withTense) {
-  const div = document.createElement('div');
-  div.className = 'sb-field sb-field--search sb-autoverb';
-  const defPerson = DEFAULT_PERSON[tid] || '3sg';
-  div.innerHTML = `
-    <label for="slot-verb">Verb (from the dictionary \u2014 conjugated for you)</label>
-    <input type="text" id="slot-verb" name="verb"
-           placeholder='Type English ("go", "find", "red") or Skiri...'
-           autocomplete="off">
-    <div class="sb-dropdown" id="dropdown-verb"></div>
-    <div class="sb-autoverb__opts">
-      <label>Who
-        <select id="slot-person" name="person">
-          <option value="1sg" ${defPerson === '1sg' ? 'selected' : ''}>I</option>
-          <option value="2sg">you</option>
-          <option value="3sg" ${defPerson === '3sg' ? 'selected' : ''}>he / she / it</option>
-        </select>
-      </label>
-      ${withTense ? `
-      <label>When
-        <select id="slot-tense" name="tense">
-          <option value="past" selected>past (did)</option>
-          <option value="present">present (is doing)</option>
-          <option value="future">future (will do)</option>
-        </select>
-      </label>` : ''}
-    </div>
-    <small class="sb-autoverb__hint">2nd-person and question forms are derived
-    from Parks's attested paradigms (validated against Appendix 1).</small>
-  `;
-
-  setTimeout(() => {
-    const input = document.getElementById('slot-verb');
-    if (!input) return;
-    input.addEventListener('input', function() {
-      const q = this.value.trim();
-      if (q.length < 2) {
-        document.getElementById('dropdown-verb').innerHTML = '';
-        return;
-      }
-      fetch(`/api/verbs?q=${encodeURIComponent(q)}&limit=8`)
-        .then(r => r.json())
-        .then(data => {
-          const dd = document.getElementById('dropdown-verb');
-          if (!data || data.length === 0) {
-            dd.innerHTML = '<div class="sb-dd-empty">No verbs found</div>';
-            return;
-          }
-          dd.innerHTML = data.map(r => `
-            <div class="sb-dd-item" onclick="pickResult('verb', '${r.headword.replace(/'/g, "\\'")}')">
-              <strong>${r.headword}</strong>
-              ${r.pronunciation ? '<small>' + r.pronunciation + '</small>' : ''}
-              <span class="badge badge-class">${r.gram_class || ''}${r.verb_class || ''}</span>
-              <br><small class="sb-dd-gloss">${r.gloss || ''} &mdash; <em>${r.persons}</em></small>
-            </div>
-          `).join('');
+document.getElementById('noun-q').addEventListener('input', function () {
+  clearTimeout(nounTimer);
+  const q = this.value.trim();
+  nounTimer = setTimeout(() => {
+    const hits = document.getElementById('noun-hits');
+    if (q.length < 2) { hits.style.display = 'none'; return; }
+    fetch('/api/search?q=' + encodeURIComponent(q)).then(r => r.json()).then(data => {
+      hits.replaceChildren();
+      (data.results || []).filter(e => (e.grammatical_class || '').startsWith('N')).slice(0, 12).forEach(e => {
+        const b = el('button', {type: 'button'});
+        b.appendChild(el('strong', {class: 'font-serif', lang: 'x-paw'}, e.headword));
+        b.appendChild(document.createTextNode('  ' + (e.first_gloss || '')));
+        b.addEventListener('click', () => {
+          noun = e; hits.style.display = 'none';
+          document.getElementById('noun-chosen').textContent = 'Noun: ' + e.headword + ' (' + (e.first_gloss || '') + ')';
         });
-    });
-  }, 50);
-
-  return div;
-}
-
-function buildTextField(name, label, required, placeholder) {
-  const div = document.createElement('div');
-  div.className = 'sb-field';
-  div.innerHTML = `
-    <label for="slot-${name}">${label}${required ? ' *' : ''}</label>
-    <input type="text" id="slot-${name}" name="${name}"
-           ${required ? 'required' : ''}
-           placeholder="${placeholder || ''}"
-           autocomplete="off">
-  `;
-  return div;
-}
-
-function buildCheckboxField(name, label) {
-  const div = document.createElement('div');
-  div.className = 'sb-field';
-  div.innerHTML = `
-    <label>
-      <input type="checkbox" id="slot-${name}" name="${name}" value="true">
-      ${label}
-    </label>
-  `;
-  return div;
-}
-
-// ── Placeholder hints per search slot ──
-const SEARCH_PLACEHOLDERS = {
-  noun:    'Type English, e.g. "water", "feather", "house"',
-  subject: 'Type English, e.g. "man", "woman", "boy"',
-  object:  'Type English, e.g. "deer", "corn", "door"',
-  vd:      'Type a quality, e.g. "red", "big", "good"',
-};
-
-function buildSearchField(name, label, required, slotType) {
-  const placeholder = SEARCH_PLACEHOLDERS[name] || 'Type an English word to search...';
-  const div = document.createElement('div');
-  div.className = 'sb-field sb-field--search';
-  const classes = (slotType || '').split(',').map(c => c.trim()).filter(Boolean);
-  const classParam = classes.length ? `&class=${classes[0]}` : '';
-  div.innerHTML = `
-    <label for="slot-${name}">${label}${required ? ' *' : ''}</label>
-    <input type="text" id="slot-${name}" name="${name}"
-           ${required ? 'required' : ''}
-           placeholder="${placeholder || 'Type an English word to search...'}"
-           autocomplete="off"
-           hx-get="/api/search?limit=8${classParam}"
-           hx-trigger="keyup changed delay:350ms"
-           hx-target="#dropdown-${name}"
-           hx-params="q"
-           hx-swap="innerHTML"
-           hx-vals='{"q": ""}'
-           oninput="this.setAttribute('hx-vals', JSON.stringify({q: this.value}))"
-    >
-    <div class="sb-dropdown" id="dropdown-${name}"></div>
-  `;
-
-  // Wire up HTMX after insertion
-  setTimeout(() => {
-    const input = document.getElementById(`slot-${name}`);
-    if (input) {
-      input.addEventListener('input', function() {
-        const q = this.value.trim();
-        if (q.length < 2) {
-          document.getElementById(`dropdown-${name}`).innerHTML = '';
-          return;
-        }
-        fetch(`/api/search?q=${encodeURIComponent(q)}&limit=8${classParam}`)
-          .then(r => r.json())
-          .then(data => {
-            const dd = document.getElementById(`dropdown-${name}`);
-            if (!data.results || data.results.length === 0) {
-              dd.innerHTML = '<div class="sb-dd-empty">No matches</div>';
-              return;
-            }
-            dd.innerHTML = data.results.map(r => `
-              <div class="sb-dd-item" onclick="pickResult('${name}', '${r.headword.replace(/'/g, "\\'")}')">
-                <strong>${r.headword}</strong>
-                ${r.simplified_pronunciation ? '<small>' + r.simplified_pronunciation + '</small>' : ''}
-                <span class="badge badge-class">${r.grammatical_class || ''}</span>
-                <br><small class="sb-dd-gloss">${r.first_gloss || ''}</small>
-              </div>
-            `).join('');
-          });
+        hits.appendChild(b);
       });
-    }
-  }, 50);
-
-  return div;
-}
-
-function buildVerbFormField(name, label, required, placeholder) {
-  const div = document.createElement('div');
-  div.className = 'sb-field sb-field--search';
-  div.innerHTML = `
-    <label for="slot-${name}">${label}${required ? ' *' : ''}
-      <small style="font-weight:400; color:var(--earth-400);"> — search Blue Book verbs or type your own</small>
-    </label>
-    <input type="text" id="slot-${name}" name="${name}"
-           ${required ? 'required' : ''}
-           placeholder="${placeholder}"
-           autocomplete="off">
-    <div class="sb-dropdown" id="dropdown-${name}"></div>
-  `;
-
-  setTimeout(() => {
-    const input = document.getElementById(`slot-${name}`);
-    if (!input) return;
-    input.addEventListener('input', function() {
-      const q = this.value.trim();
-      if (q.length < 2) {
-        document.getElementById(`dropdown-${name}`).innerHTML = '';
-        return;
-      }
-      fetch(`/api/bb_verb_forms?q=${encodeURIComponent(q)}&limit=10`)
-        .then(r => r.json())
-        .then(data => {
-          const dd = document.getElementById(`dropdown-${name}`);
-          if (!data || data.length === 0) {
-            dd.innerHTML = '<div class="sb-dd-empty">No BB matches — you can type a form directly</div>';
-            return;
-          }
-          dd.innerHTML = data.map(r => `
-            <div class="sb-dd-item" onclick="pickResult('${name}', '${r.skiri_form.replace(/'/g, "\\'")}')">
-              <strong>${r.skiri_form}</strong>
-              <small style="color:var(--earth-500);">${r.english}</small>
-              ${r.lesson ? '<span class="badge badge--bluebook" style="font-size:0.65em;">L' + r.lesson + '</span>' : ''}
-            </div>
-          `).join('');
-        });
+      hits.style.display = hits.children.length ? '' : 'none';
     });
-  }, 50);
-
-  return div;
-}
-
-function pickResult(name, value) {
-  document.getElementById(`slot-${name}`).value = value;
-  document.getElementById(`dropdown-${name}`).innerHTML = '';
-}
-
-function buildCuratedField(name, label, tid) {
-  const div = document.createElement('div');
-  div.className = 'sb-field';
-  div.innerHTML = `
-    <label for="slot-${name}">${label}</label>
-    <select id="slot-${name}" name="${name}">
-      <option value="">-- optional --</option>
-    </select>
-    <small class="sb-field-loading" id="loading-${name}">Loading options...</small>
-  `;
-
-  // Fetch curated options
-  fetch(`/api/slot-options?template=${tid}&slot=${name}`)
-    .then(r => r.json())
-    .then(options => {
-      const sel = document.getElementById(`slot-${name}`);
-      const loading = document.getElementById(`loading-${name}`);
-      if (loading) loading.style.display = 'none';
-      options.forEach(opt => {
-        const o = document.createElement('option');
-        o.value = opt.skiri_form;
-        o.textContent = `${opt.skiri_form} — ${opt.english}`;
-        if (opt.bb_lessons && opt.bb_lessons.length) {
-          o.textContent += ` (L${opt.bb_lessons.join(', L')})`;
-        }
-        sel.appendChild(o);
-      });
-    });
-
-  return div;
-}
-
-function assembleSentence(event) {
-  event.preventDefault();
-  const form = document.getElementById('slot-form');
-  const fd = new FormData(form);
-  const payload = {};
-  for (const [k, v] of fd.entries()) {
-    if (v) payload[k] = v;
-  }
-
-  // Handle checkbox (we_particle)
-  const weCheck = document.getElementById('slot-we_particle');
-  if (weCheck && weCheck.checked) {
-    payload.we_particle = 'true';
-  }
-
-  fetch('/api/assemble', {
-    method: 'POST',
-    headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify(payload),
-  })
-    .then(r => r.json())
-    .then(renderResult);
-}
-
-function renderResult(data) {
-  const section = document.getElementById('result-section');
-  section.style.display = '';
-
-  if (data.error) {
-    document.getElementById('result-body').innerHTML = `
-      <article class="sb-result sb-result--error">
-        <p><strong>Error:</strong> ${data.error}</p>
-      </article>`;
-    return;
-  }
-
-  // Confidence badge class
-  const confClass = {
-    'HIGH': 'badge-conf-high',
-    'MEDIUM': 'badge-conf-med',
-    'LOW': 'badge-conf-low',
-  }[data.confidence] || 'badge-conf-low';
-
-  // Morpheme chips — modern spelling, pronunciation, and (attested-only) IPA
-  const chips = (data.morpheme_breakdown || []).map(m => {
-    const roleClass = ROLE_COLORS[m.role] || '';
-    const extras = [];
-    if (m.modern && m.modern !== m.form) extras.push(`<span class="sb-chip-modern">${m.modern}</span>`);
-    if (m.pron) extras.push(`<span class="sb-chip-pron">${m.pron}${m.attested ? '' : ' ≈'}</span>`);
-    if (m.ipa) extras.push(`<span class="sb-chip-ipa">${m.ipa}</span>`);
-    return `<span class="poss-chip ${roleClass}">
-      <span class="poss-chip__form">${m.form}</span>
-      <span class="poss-chip__label">${m.gloss}</span>
-      ${extras.length ? '<span class="sb-chip-extras">' + extras.join('<br>') + '</span>' : ''}
-    </span>`;
-  }).join('<span class="poss-chip-plus">+</span>');
-
-  // Collect roles for legend
-  const roles = [...new Set((data.morpheme_breakdown || []).map(m => m.role))];
-  const legend = roles.map(r => {
-    const cls = ROLE_COLORS[r] || '';
-    return `<span class="poss-chip-legend__item">
-      <span class="poss-chip-legend__swatch ${cls}" style="width:10px;height:10px;border-radius:3px;display:inline-block;"></span>
-      ${r}
-    </span>`;
-  }).join('');
-
-  document.getElementById('result-body').innerHTML = `
-    <article class="sb-result">
-      <div class="sb-result__sentence font-serif" lang="x-paw">${data.skiri_sentence}</div>
-      ${data.modern_sentence && data.modern_sentence !== data.skiri_sentence ?
-        `<div class="sb-result__modern" lang="x-paw">${data.modern_sentence}
-           <small>modern spelling (rule-derived)</small></div>` : ''}
-      ${data.approx_pronunciation ?
-        `<div class="sb-result__pron">${data.approx_pronunciation}
-           <small>approximate — spelling-based, stress not marked</small></div>` : ''}
-      <div class="sb-result__gloss">${data.english_gloss}</div>
-      <div class="sb-result__meta">
-        <span class="badge ${confClass}">${data.confidence}</span>
-        ${data.bb_attestation ? `<span class="badge badge--bluebook">Blue Book ${data.bb_attestation}</span>` : ''}
-        <span class="badge badge-class">${data.template_id} ${data.template_name}</span>
-      </div>
-      ${data.word_order_note ? `<p class="sb-result__note">${data.word_order_note}</p>` : ''}
-      <div class="sb-result__breakdown">
-        <div class="sb-result__breakdown-label">Morpheme breakdown</div>
-        <div class="sb-result__chips">${chips}</div>
-        <div class="poss-chip-legend">${legend}</div>
-        <p class="sb-result__note" style="margin-top:0.5rem;">
-          Per-word lines: modern spelling &middot; pronunciation &middot; IPA.
-          IPA <code>[...]</code> is shown only where Parks recorded it (dictionary
-          headwords); &asymp; marks pronunciations derived from spelling, which
-          cannot show stress or reduced vowels.
-        </p>
-      </div>
-    </article>`;
-
-  section.scrollIntoView({behavior: 'smooth', block: 'start'});
-}
-
-// Preselect a template from ?template=Tx (lesson practice links)
-(function() {
-  const tid = new URLSearchParams(window.location.search).get('template');
-  if (tid && TEMPLATE_MAP[tid]) {
-    selectTemplate(tid);
-    const card = document.querySelector(`.sb-card[data-tid="${tid}"]`);
-    if (card) card.scrollIntoView({block: 'center'});
-  }
-})();
-
-// Close dropdowns when clicking outside
-document.addEventListener('click', function(e) {
-  if (!e.target.closest('.sb-field--search')) {
-    document.querySelectorAll('.sb-dropdown').forEach(dd => dd.innerHTML = '');
-  }
+  }, 250);
 });
+
+function dictionarySentence() {
+  if (!verb) return;
+  fetch('/api/dictionary-sentence', {method: 'POST', headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({pattern: document.getElementById('ds-pattern').value, verb_entry_id: verb.entry_id,
+                          form_key: document.getElementById('ds-form').value, noun_entry_id: noun ? noun.entry_id : null})})
+    .then(r => r.json()).then(data => document.getElementById('ds-result').replaceChildren(resultBlock(data)));
+}
+
+// a pattern can be asked for from a lesson page: /sentence-builder?template=T3
+const asked = new URLSearchParams(location.search).get('template');
+if (asked && BY_ID[asked]) selectTemplate(asked);
 </script>
-
-<style>
-/* ── Sentence Builder help box ────────────────────────────────── */
-.sb-help {
-  margin-bottom: 1.5rem;
-  padding: 1rem 1.25rem;
-  border-radius: 8px;
-  background: var(--sky-50, #EDF6FD);
-  border: 1px solid var(--sky-200, #B3D4F0);
-  font-size: 0.9rem;
-}
-.sb-help summary { cursor: pointer; }
-.sb-help ul { margin: 0.5rem 0 0 0; padding-left: 1.25rem; }
-.sb-help li { margin-bottom: 0.35rem; }
-.sb-help code {
-  background: var(--earth-100, #f0ebe2);
-  padding: 0.1em 0.35em;
-  border-radius: 3px;
-  font-size: 0.85em;
-}
-
-/* ── Sentence Builder styles ──────────────────────────────────── */
-.sb-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-
-.sb-card {
-  cursor: pointer;
-  padding: 1rem;
-  border-radius: 8px;
-  border: 2px solid var(--earth-200, #e0d5c4);
-  background: var(--earth-50, #faf7f2);
-  transition: border-color 0.15s, box-shadow 0.15s;
-}
-.sb-card:hover {
-  border-color: var(--sky-300, #89BDE0);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-}
-.sb-card--selected {
-  border-color: var(--sky-500, #4A90C4);
-  box-shadow: 0 0 0 3px var(--sky-100, #D6EAFA);
-}
-.sb-card header {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 0.5rem;
-  padding: 0;
-  border: none;
-  background: none;
-}
-.sb-card__pattern {
-  font-size: 0.85rem;
-  color: var(--earth-600, #6b5d4a);
-  margin-bottom: 0.25rem;
-}
-.sb-card__example {
-  font-size: 1.1rem;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-}
-.sb-card footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
-  border: none;
-  background: none;
-}
-.sb-card footer small {
-  color: var(--earth-500, #8a7560);
-  font-style: italic;
-}
-
-/* Slot form */
-.sb-field {
-  margin-bottom: 1rem;
-  position: relative;
-}
-.sb-field label {
-  font-weight: 500;
-  margin-bottom: 0.25rem;
-}
-.sb-field-loading {
-  color: var(--earth-500);
-  font-style: italic;
-}
-
-/* Search dropdown */
-.sb-dropdown {
-  position: absolute;
-  z-index: 100;
-  left: 0;
-  right: 0;
-  max-height: 280px;
-  overflow-y: auto;
-  background: white;
-  border: 1px solid var(--earth-200, #e0d5c4);
-  border-radius: 6px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-@media (max-width: 768px) {
-  .sb-dropdown {
-    position: fixed;
-    left: 1rem;
-    right: 1rem;
-    bottom: 0;
-    top: auto;
-    max-height: 50vh;
-    border-radius: 12px 12px 0 0;
-    box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
-  }
-}
-.sb-dropdown:empty {
-  display: none;
-}
-.sb-dd-item {
-  padding: 0.5rem 0.75rem;
-  cursor: pointer;
-  border-bottom: 1px solid var(--earth-100, #f0ebe2);
-}
-.sb-dd-item:last-child { border-bottom: none; }
-.sb-dd-item:hover {
-  background: var(--sky-50, #EDF6FD);
-}
-.sb-dd-gloss {
-  color: var(--earth-500);
-}
-.sb-dd-empty {
-  padding: 0.5rem 0.75rem;
-  color: var(--earth-500);
-  font-style: italic;
-}
-
-/* Auto-verb picker (Phase 3.2b) */
-.sb-autoverb__opts {
-  display: flex;
-  gap: 1rem;
-  margin-top: 0.5rem;
-}
-.sb-autoverb__opts label {
-  flex: 1;
-  font-size: 0.85rem;
-  font-weight: 500;
-}
-.sb-autoverb__hint {
-  display: block;
-  margin-top: 0.25rem;
-  color: var(--earth-500, #8a7560);
-  font-style: italic;
-}
-.sb-advanced {
-  margin-bottom: 1rem;
-}
-.sb-advanced summary {
-  cursor: pointer;
-  color: var(--earth-500, #8a7560);
-}
-.sb-advanced .sb-field {
-  margin-top: 0.5rem;
-}
-
-/* Result */
-.sb-result {
-  padding: 1.5rem;
-  border-radius: 10px;
-  border: 2px solid var(--sage-200, #B8D8BC);
-  background: var(--sage-50, #EFF6F0);
-}
-.sb-result--error {
-  border-color: var(--clay-200);
-  background: var(--clay-50);
-}
-.sb-result__sentence {
-  font-size: 1.6rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: var(--earth-800, #3a3126);
-}
-.sb-result__gloss {
-  font-size: 1.1rem;
-  font-style: italic;
-  color: var(--earth-600, #6b5d4a);
-  margin-bottom: 0.75rem;
-}
-.sb-result__modern {
-  font-size: 1.15rem;
-  font-weight: 500;
-  color: var(--earth-700, #4d4232);
-  margin-bottom: 0.35rem;
-}
-.sb-result__pron {
-  font-size: 0.95rem;
-  color: var(--earth-500, #8a7560);
-  margin-bottom: 0.5rem;
-}
-.sb-result__modern small, .sb-result__pron small {
-  font-size: 0.7em;
-  font-weight: 400;
-  font-style: italic;
-  color: var(--earth-400, #a99a85);
-  margin-left: 0.5em;
-}
-.sb-chip-extras {
-  display: block;
-  font-size: 0.72em;
-  line-height: 1.5;
-  margin-top: 2px;
-  color: var(--earth-600, #6b5d4a);
-}
-.sb-chip-modern { font-weight: 600; }
-.sb-chip-pron { font-style: italic; }
-.sb-chip-ipa { font-family: var(--font-mono, monospace); font-size: 0.95em; }
-.sb-result__meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 0.75rem;
-}
-.sb-result__note {
-  font-size: 0.85rem;
-  color: var(--earth-500);
-  margin-bottom: 0.75rem;
-}
-.sb-result__breakdown {
-  padding-top: 0.75rem;
-  border-top: 1px solid var(--sage-200, #B8D8BC);
-}
-.sb-result__breakdown-label {
-  font-size: 0.7em;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--earth-500, #8a7560);
-  font-family: var(--font-mono, monospace);
-  margin-bottom: 8px;
-}
-.sb-result__chips {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 2px;
-}
-</style>
 {% endblock %}

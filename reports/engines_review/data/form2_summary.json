@@ -1,0 +1,541 @@
+{
+ "all": {
+  "by_cause": {
+   "exact": 1943,
+   "glottal stop only": 42,
+   "other letters, further off": 66,
+   "other letters, within two": 88,
+   "vowel length and glottal stop": 40,
+   "vowel length only": 53
+  },
+  "exact": 1943,
+  "groups": {
+   "exact": 1943,
+   "letters right; accent, vowel length or glottal stop differ": 135,
+   "other letters, further off": 66,
+   "other letters, within two": 88
+  },
+  "verbs": 2232
+ },
+ "by_class_group": {
+  "VD descriptive": {
+   "by_cause": {
+    "exact": 363,
+    "glottal stop only": 18,
+    "other letters, further off": 7,
+    "other letters, within two": 13,
+    "vowel length and glottal stop": 26,
+    "vowel length only": 16
+   },
+   "exact": 363,
+   "groups": {
+    "exact": 363,
+    "letters right; accent, vowel length or glottal stop differ": 60,
+    "other letters, further off": 7,
+    "other letters, within two": 13
+   },
+   "verbs": 443
+  },
+  "VI active intransitive": {
+   "by_cause": {
+    "exact": 634,
+    "glottal stop only": 11,
+    "other letters, further off": 29,
+    "other letters, within two": 30,
+    "vowel length and glottal stop": 6,
+    "vowel length only": 14
+   },
+   "exact": 634,
+   "groups": {
+    "exact": 634,
+    "letters right; accent, vowel length or glottal stop differ": 31,
+    "other letters, further off": 29,
+    "other letters, within two": 30
+   },
+   "verbs": 724
+  },
+  "VL locative": {
+   "by_cause": {
+    "exact": 105,
+    "other letters, further off": 6,
+    "other letters, within two": 5,
+    "vowel length and glottal stop": 1
+   },
+   "exact": 105,
+   "groups": {
+    "exact": 105,
+    "letters right; accent, vowel length or glottal stop differ": 1,
+    "other letters, further off": 6,
+    "other letters, within two": 5
+   },
+   "verbs": 117
+  },
+  "VP passive": {
+   "by_cause": {
+    "exact": 108,
+    "glottal stop only": 1,
+    "other letters, further off": 2,
+    "other letters, within two": 17,
+    "vowel length and glottal stop": 1,
+    "vowel length only": 1
+   },
+   "exact": 108,
+   "groups": {
+    "exact": 108,
+    "letters right; accent, vowel length or glottal stop differ": 3,
+    "other letters, further off": 2,
+    "other letters, within two": 17
+   },
+   "verbs": 130
+  },
+  "VR reflexive": {
+   "by_cause": {
+    "exact": 10,
+    "other letters, further off": 1,
+    "other letters, within two": 3,
+    "vowel length only": 1
+   },
+   "exact": 10,
+   "groups": {
+    "exact": 10,
+    "letters right; accent, vowel length or glottal stop differ": 1,
+    "other letters, further off": 1,
+    "other letters, within two": 3
+   },
+   "verbs": 15
+  },
+  "VT active transitive": {
+   "by_cause": {
+    "exact": 723,
+    "glottal stop only": 12,
+    "other letters, further off": 21,
+    "other letters, within two": 20,
+    "vowel length and glottal stop": 6,
+    "vowel length only": 21
+   },
+   "exact": 723,
+   "groups": {
+    "exact": 723,
+    "letters right; accent, vowel length or glottal stop differ": 39,
+    "other letters, further off": 21,
+    "other letters, within two": 20
+   },
+   "verbs": 803
+  }
+ },
+ "by_preverb": {
+  "(ir...)": {
+   "by_cause": {
+    "exact": 107,
+    "glottal stop only": 2,
+    "other letters, within two": 4,
+    "vowel length and glottal stop": 2,
+    "vowel length only": 8
+   },
+   "exact": 107,
+   "groups": {
+    "exact": 107,
+    "letters right; accent, vowel length or glottal stop differ": 12,
+    "other letters, within two": 4
+   },
+   "verbs": 123
+  },
+  "(ir...ri...ut...)": {
+   "by_cause": {
+    "other letters, further off": 9
+   },
+   "exact": 0,
+   "groups": {
+    "other letters, further off": 9
+   },
+   "verbs": 9
+  },
+  "(ir...ut...)": {
+   "by_cause": {
+    "exact": 27,
+    "glottal stop only": 1
+   },
+   "exact": 27,
+   "groups": {
+    "exact": 27,
+    "letters right; accent, vowel length or glottal stop differ": 1
+   },
+   "verbs": 28
+  },
+  "(ut...)": {
+   "by_cause": {
+    "exact": 246,
+    "glottal stop only": 6,
+    "other letters, further off": 4,
+    "other letters, within two": 9,
+    "vowel length and glottal stop": 4,
+    "vowel length only": 2
+   },
+   "exact": 246,
+   "groups": {
+    "exact": 246,
+    "letters right; accent, vowel length or glottal stop differ": 12,
+    "other letters, further off": 4,
+    "other letters, within two": 9
+   },
+   "verbs": 271
+  },
+  "(uur...)": {
+   "by_cause": {
+    "exact": 153,
+    "glottal stop only": 2,
+    "other letters, further off": 5,
+    "other letters, within two": 2,
+    "vowel length and glottal stop": 1,
+    "vowel length only": 1
+   },
+   "exact": 153,
+   "groups": {
+    "exact": 153,
+    "letters right; accent, vowel length or glottal stop differ": 4,
+    "other letters, further off": 5,
+    "other letters, within two": 2
+   },
+   "verbs": 164
+  },
+  "None": {
+   "by_cause": {
+    "exact": 1396,
+    "glottal stop only": 30,
+    "other letters, further off": 23,
+    "other letters, within two": 69,
+    "vowel length and glottal stop": 33,
+    "vowel length only": 39
+   },
+   "exact": 1396,
+   "groups": {
+    "exact": 1396,
+    "letters right; accent, vowel length or glottal stop differ": 102,
+    "other letters, further off": 23,
+    "other letters, within two": 69
+   },
+   "verbs": 1590
+  },
+  "[+ raar-]": {
+   "by_cause": {
+    "exact": 3,
+    "glottal stop only": 1,
+    "other letters, within two": 2
+   },
+   "exact": 3,
+   "groups": {
+    "exact": 3,
+    "letters right; accent, vowel length or glottal stop differ": 1,
+    "other letters, within two": 2
+   },
+   "verbs": 6
+  },
+  "[+ ruu-, i-]": {
+   "by_cause": {
+    "other letters, further off": 6
+   },
+   "exact": 0,
+   "groups": {
+    "other letters, further off": 6
+   },
+   "verbs": 6
+  }
+ },
+ "by_verb_class": {
+  "(1)": {
+   "by_cause": {
+    "exact": 527,
+    "glottal stop only": 5,
+    "other letters, further off": 12,
+    "other letters, within two": 27,
+    "vowel length and glottal stop": 7,
+    "vowel length only": 9
+   },
+   "exact": 527,
+   "groups": {
+    "exact": 527,
+    "letters right; accent, vowel length or glottal stop differ": 21,
+    "other letters, further off": 12,
+    "other letters, within two": 27
+   },
+   "verbs": 587
+  },
+  "(1), (1)": {
+   "by_cause": {
+    "exact": 2
+   },
+   "exact": 2,
+   "groups": {
+    "exact": 2
+   },
+   "verbs": 2
+  },
+  "(1-a)": {
+   "by_cause": {
+    "exact": 41,
+    "glottal stop only": 2,
+    "other letters, further off": 7
+   },
+   "exact": 41,
+   "groups": {
+    "exact": 41,
+    "letters right; accent, vowel length or glottal stop differ": 2,
+    "other letters, further off": 7
+   },
+   "verbs": 50
+  },
+  "(1-a), (1-a)": {
+   "by_cause": {
+    "other letters, further off": 1
+   },
+   "exact": 0,
+   "groups": {
+    "other letters, further off": 1
+   },
+   "verbs": 1
+  },
+  "(1-i)": {
+   "by_cause": {
+    "exact": 67,
+    "other letters, further off": 2,
+    "other letters, within two": 3
+   },
+   "exact": 67,
+   "groups": {
+    "exact": 67,
+    "other letters, further off": 2,
+    "other letters, within two": 3
+   },
+   "verbs": 72
+  },
+  "(2)": {
+   "by_cause": {
+    "exact": 45,
+    "glottal stop only": 2,
+    "other letters, further off": 4,
+    "other letters, within two": 3,
+    "vowel length and glottal stop": 1,
+    "vowel length only": 2
+   },
+   "exact": 45,
+   "groups": {
+    "exact": 45,
+    "letters right; accent, vowel length or glottal stop differ": 5,
+    "other letters, further off": 4,
+    "other letters, within two": 3
+   },
+   "verbs": 57
+  },
+  "(2-i)": {
+   "by_cause": {
+    "exact": 60,
+    "other letters, further off": 1,
+    "vowel length only": 2
+   },
+   "exact": 60,
+   "groups": {
+    "exact": 60,
+    "letters right; accent, vowel length or glottal stop differ": 2,
+    "other letters, further off": 1
+   },
+   "verbs": 63
+  },
+  "(3)": {
+   "by_cause": {
+    "exact": 230,
+    "other letters, further off": 4,
+    "other letters, within two": 9,
+    "vowel length and glottal stop": 2,
+    "vowel length only": 8
+   },
+   "exact": 230,
+   "groups": {
+    "exact": 230,
+    "letters right; accent, vowel length or glottal stop differ": 10,
+    "other letters, further off": 4,
+    "other letters, within two": 9
+   },
+   "verbs": 253
+  },
+  "(3), (3)": {
+   "by_cause": {
+    "exact": 1
+   },
+   "exact": 1,
+   "groups": {
+    "exact": 1
+   },
+   "verbs": 1
+  },
+  "(3-i)": {
+   "by_cause": {
+    "other letters, further off": 1
+   },
+   "exact": 0,
+   "groups": {
+    "other letters, further off": 1
+   },
+   "verbs": 1
+  },
+  "(4)": {
+   "by_cause": {
+    "exact": 472,
+    "glottal stop only": 11,
+    "other letters, further off": 18,
+    "other letters, within two": 25,
+    "vowel length and glottal stop": 3,
+    "vowel length only": 16
+   },
+   "exact": 472,
+   "groups": {
+    "exact": 472,
+    "letters right; accent, vowel length or glottal stop differ": 30,
+    "other letters, further off": 18,
+    "other letters, within two": 25
+   },
+   "verbs": 545
+  },
+  "(pl. subj.)": {
+   "by_cause": {
+    "exact": 1
+   },
+   "exact": 1,
+   "groups": {
+    "exact": 1
+   },
+   "verbs": 1
+  },
+  "(u)": {
+   "by_cause": {
+    "exact": 16,
+    "glottal stop only": 4,
+    "other letters, within two": 1,
+    "vowel length only": 2
+   },
+   "exact": 16,
+   "groups": {
+    "exact": 16,
+    "letters right; accent, vowel length or glottal stop differ": 6,
+    "other letters, within two": 1
+   },
+   "verbs": 23
+  },
+  "(wi)": {
+   "by_cause": {
+    "exact": 18,
+    "other letters, further off": 3,
+    "other letters, within two": 2
+   },
+   "exact": 18,
+   "groups": {
+    "exact": 18,
+    "other letters, further off": 3,
+    "other letters, within two": 2
+   },
+   "verbs": 23
+  },
+  "None": {
+   "by_cause": {
+    "exact": 463,
+    "glottal stop only": 18,
+    "other letters, further off": 13,
+    "other letters, within two": 18,
+    "vowel length and glottal stop": 27,
+    "vowel length only": 14
+   },
+   "exact": 463,
+   "groups": {
+    "exact": 463,
+    "letters right; accent, vowel length or glottal stop differ": 59,
+    "other letters, further off": 13,
+    "other letters, within two": 18
+   },
+   "verbs": 553
+  }
+ },
+ "headwords_with_notation": {
+  "by_cause": {
+   "exact": 66,
+   "glottal stop only": 5,
+   "other letters, further off": 22,
+   "other letters, within two": 7,
+   "vowel length and glottal stop": 9,
+   "vowel length only": 2
+  },
+  "exact": 66,
+  "groups": {
+   "exact": 66,
+   "letters right; accent, vowel length or glottal stop differ": 16,
+   "other letters, further off": 22,
+   "other letters, within two": 7
+  },
+  "verbs": 111
+ },
+ "not_scored_before": {
+  "by_cause": {
+   "exact": 28,
+   "glottal stop only": 1,
+   "other letters, further off": 1,
+   "other letters, within two": 3,
+   "vowel length only": 2
+  },
+  "exact": 28,
+  "groups": {
+   "exact": 28,
+   "letters right; accent, vowel length or glottal stop differ": 3,
+   "other letters, further off": 1,
+   "other letters, within two": 3
+  },
+  "verbs": 35
+ },
+ "plain_headwords": {
+  "by_cause": {
+   "exact": 1877,
+   "glottal stop only": 37,
+   "other letters, further off": 44,
+   "other letters, within two": 81,
+   "vowel length and glottal stop": 31,
+   "vowel length only": 51
+  },
+  "exact": 1877,
+  "groups": {
+   "exact": 1877,
+   "letters right; accent, vowel length or glottal stop differ": 119,
+   "other letters, further off": 44,
+   "other letters, within two": 81
+  },
+  "verbs": 2121
+ },
+ "seen": {
+  "by_cause": {
+   "exact": 1915,
+   "glottal stop only": 41,
+   "other letters, further off": 65,
+   "other letters, within two": 85,
+   "vowel length and glottal stop": 40,
+   "vowel length only": 51
+  },
+  "exact": 1915,
+  "groups": {
+   "exact": 1915,
+   "letters right; accent, vowel length or glottal stop differ": 132,
+   "other letters, further off": 65,
+   "other letters, within two": 85
+  },
+  "verbs": 2197
+ },
+ "stored_confidence_band": {
+  "high": {
+   "exact": 1928,
+   "verbs": 2181
+  },
+  "low": {
+   "exact": 0,
+   "verbs": 21
+  },
+  "medium": {
+   "exact": 15,
+   "verbs": 30
+  }
+ }
+}

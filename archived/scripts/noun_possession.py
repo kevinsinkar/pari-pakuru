@@ -1,5 +1,17 @@
 #!/usr/bin/env python3
 """
+WITHDRAWN on 2026-11-14 (engines review, decision 7), with the possession
+engine beside it. Nothing uses this file. It built the tables noun_stems and
+possession_examples and the file extracted_data/noun_possession_catalog.json,
+all computed and all removed the same day: noun_stems was linked to no entry
+and 20 of its "headwords" are not in the dictionary; possession_examples held
+the engine's own output as "expected", among it forms read from misread OCR
+text (kti, asaas, atipaat, apaat). The three kin rows it typed from the OCR
+text of the Blue Book were deleted from kinship_paradigms; the 11 rows of
+Appendix 3 stay. What replaced it: scripts/printed_noun_forms.py.
+
+What follows is the file as it was.
+
 Phase 3.1.5 — Noun Possession Morphology
 =========================================
 

@@ -1,0 +1,1338 @@
+{
+ "1a_printed_sentences": {
+  "found_as_printed": 151,
+  "found_when_typed_without_accents": 19,
+  "found_when_typed_without_accents_among_those_with_an_accent": 0,
+  "sentences": 454,
+  "with_an_accent_mark": 385
+ },
+ "1b_frame_t2": {
+  "by_cause": {
+   "exact": 92,
+   "glottal stop only": 46,
+   "other letters, further off": 37,
+   "other letters, within two": 136,
+   "vowel length and glottal stop": 80,
+   "vowel length only": 3
+  },
+  "descriptive_verbs_with_a_preverb_the_frame_cannot_place": 49,
+  "descriptive_verbs_without_a_preverb": 394
+ },
+ "1c_builder_on_appendix_verbs": {
+  "by_cause": {
+   "exact": 33,
+   "no form produced": 1,
+   "other letters, further off": 6,
+   "vowel length only": 2
+  },
+  "cells": 42,
+  "rows": [
+   {
+    "asked_for": "a",
+    "builder_gives": "tatiiraʔ",
+    "cause": "exact",
+    "cell": "1sg, statement",
+    "entry_used": "SK-a-p349-3577",
+    "error": null,
+    "marked_derived": false,
+    "printed": "tatiiraʔ",
+    "verb": "to come"
+   },
+   {
+    "asked_for": "a",
+    "builder_gives": "tasiiraʔ",
+    "cause": "exact",
+    "cell": "2sg, statement",
+    "entry_used": "SK-a-p349-3577",
+    "error": null,
+    "marked_derived": true,
+    "printed": "tasiiraʔ",
+    "verb": "to come"
+   },
+   {
+    "asked_for": "a",
+    "builder_gives": "taaʔ",
+    "cause": "exact",
+    "cell": "3sg, statement",
+    "entry_used": "SK-a-p349-3577",
+    "error": null,
+    "marked_derived": false,
+    "printed": "taaʔ",
+    "verb": "to come"
+   },
+   {
+    "asked_for": "a",
+    "builder_gives": "ratiiraʔ",
+    "cause": "exact",
+    "cell": "1sg, question form",
+    "entry_used": "SK-a-p349-3577",
+    "error": null,
+    "marked_derived": true,
+    "printed": "ratiiraʔ",
+    "verb": "to come"
+   },
+   {
+    "asked_for": "a",
+    "builder_gives": "rasiiraʔ",
+    "cause": "exact",
+    "cell": "2sg, question form",
+    "entry_used": "SK-a-p349-3577",
+    "error": null,
+    "marked_derived": true,
+    "printed": "rasiíraʔ",
+    "verb": "to come"
+   },
+   {
+    "asked_for": "a",
+    "builder_gives": null,
+    "cause": "no form produced",
+    "cell": "3sg, question form",
+    "entry_used": null,
+    "error": "Form 3sg_abs not derivable for 'a' (paradigm forms incomplete or irregular shape)",
+    "marked_derived": null,
+    "printed": "raʔaʔ",
+    "verb": "to come"
+   },
+   {
+    "asked_for": "aar",
+    "builder_gives": "tikuʔaa",
+    "cause": "other letters, further off",
+    "cell": "1sg, statement",
+    "entry_used": "SK-aar-p351-3596",
+    "error": null,
+    "marked_derived": false,
+    "printed": "tatuutaa",
+    "verb": "to do it"
+   },
+   {
+    "asked_for": "aar",
+    "builder_gives": "taʔaa",
+    "cause": "other letters, further off",
+    "cell": "2sg, statement",
+    "entry_used": "SK-aar-p351-3596",
+    "error": null,
+    "marked_derived": true,
+    "printed": "tasuutaa",
+    "verb": "to do it"
+   },
+   {
+    "asked_for": "aar",
+    "builder_gives": "tiʔaa",
+    "cause": "other letters, further off",
+    "cell": "3sg, statement",
+    "entry_used": "SK-aar-p351-3596",
+    "error": null,
+    "marked_derived": false,
+    "printed": "tuutaa",
+    "verb": "to do it"
+   },
+   {
+    "asked_for": "aar",
+    "builder_gives": "riikuʔaa",
+    "cause": "other letters, further off",
+    "cell": "1sg, question form",
+    "entry_used": "SK-aar-p351-3596",
+    "error": null,
+    "marked_derived": true,
+    "printed": "ratuutaa",
+    "verb": "to do it"
+   },
+   {
+    "asked_for": "aar",
+    "builder_gives": "raaʔaa",
+    "cause": "other letters, further off",
+    "cell": "2sg, question form",
+    "entry_used": "SK-aar-p351-3596",
+    "error": null,
+    "marked_derived": true,
+    "printed": "rasuutaa",
+    "verb": "to do it"
+   },
+   {
+    "asked_for": "aar",
+    "builder_gives": "raʔaa",
+    "cause": "other letters, further off",
+    "cell": "3sg, question form",
+    "entry_used": "SK-aar-p351-3596",
+    "error": null,
+    "marked_derived": true,
+    "printed": "ruutaa",
+    "verb": "to do it"
+   },
+   {
+    "asked_for": "at",
+    "builder_gives": "taatat",
+    "cause": "exact",
+    "cell": "1sg, statement",
+    "entry_used": "SK-at-p18-0220",
+    "error": null,
+    "marked_derived": false,
+    "printed": "taatat",
+    "verb": "to go"
+   },
+   {
+    "asked_for": "at",
+    "builder_gives": "taasat",
+    "cause": "exact",
+    "cell": "2sg, statement",
+    "entry_used": "SK-at-p18-0220",
+    "error": null,
+    "marked_derived": true,
+    "printed": "taasat",
+    "verb": "to go"
+   },
+   {
+    "asked_for": "at",
+    "builder_gives": "tiʔat",
+    "cause": "exact",
+    "cell": "3sg, statement",
+    "entry_used": "SK-at-p18-0220",
+    "error": null,
+    "marked_derived": false,
+    "printed": "tiʔat",
+    "verb": "to go"
+   },
+   {
+    "asked_for": "at",
+    "builder_gives": "raatat",
+    "cause": "exact",
+    "cell": "1sg, question form",
+    "entry_used": "SK-at-p18-0220",
+    "error": null,
+    "marked_derived": true,
+    "printed": "raatat",
+    "verb": "to go"
+   },
+   {
+    "asked_for": "at",
+    "builder_gives": "raasat",
+    "cause": "exact",
+    "cell": "2sg, question form",
+    "entry_used": "SK-at-p18-0220",
+    "error": null,
+    "marked_derived": true,
+    "printed": "raasat",
+    "verb": "to go"
+   },
+   {
+    "asked_for": "at",
+    "builder_gives": "raʔat",
+    "cause": "exact",
+    "cell": "3sg, question form",
+    "entry_used": "SK-at-p18-0220",
+    "error": null,
+    "marked_derived": true,
+    "printed": "raʔat",
+    "verb": "to go"
+   },
+   {
+    "asked_for": "hiir",
+    "builder_gives": "tatuuhii",
+    "cause": "exact",
+    "cell": "1sg, statement",
+    "entry_used": "SK-hiir-p389-3832",
+    "error": null,
+    "marked_derived": false,
+    "printed": "tatuuhii",
+    "verb": "to be good"
+   },
+   {
+    "asked_for": "hiir",
+    "builder_gives": "tasuuhii",
+    "cause": "exact",
+    "cell": "2sg, statement",
+    "entry_used": "SK-hiir-p389-3832",
+    "error": null,
+    "marked_derived": true,
+    "printed": "tasuuhii",
+    "verb": "to be good"
+   },
+   {
+    "asked_for": "hiir",
+    "builder_gives": "tuuhii",
+    "cause": "exact",
+    "cell": "3sg, statement",
+    "entry_used": "SK-hiir-p389-3832",
+    "error": null,
+    "marked_derived": false,
+    "printed": "tuuhii",
+    "verb": "to be good"
+   },
+   {
+    "asked_for": "hiir",
+    "builder_gives": "ratuuhii",
+    "cause": "exact",
+    "cell": "1sg, question form",
+    "entry_used": "SK-hiir-p389-3832",
+    "error": null,
+    "marked_derived": true,
+    "printed": "ratuuhii",
+    "verb": "to be good"
+   },
+   {
+    "asked_for": "hiir",
+    "builder_gives": "rasuuhii",
+    "cause": "exact",
+    "cell": "2sg, question form",
+    "entry_used": "SK-hiir-p389-3832",
+    "error": null,
+    "marked_derived": true,
+    "printed": "rasuuhii",
+    "verb": "to be good"
+   },
+   {
+    "asked_for": "hiir",
+    "builder_gives": "ruhii",
+    "cause": "vowel length only",
+    "cell": "3sg, question form",
+    "entry_used": "SK-hiir-p389-3832",
+    "error": null,
+    "marked_derived": true,
+    "printed": "ruuhii",
+    "verb": "to be good"
+   },
+   {
+    "asked_for": "kiikaa",
+    "builder_gives": "tatkiikaʔ",
+    "cause": "exact",
+    "cell": "1sg, statement",
+    "entry_used": "SK-kiikaa-p90-1694",
+    "error": null,
+    "marked_derived": false,
+    "printed": "tatkiikaʔ",
+    "verb": "to drink it"
+   },
+   {
+    "asked_for": "kiikaa",
+    "builder_gives": "taskiikaʔ",
+    "cause": "exact",
+    "cell": "2sg, statement",
+    "entry_used": "SK-kiikaa-p90-1694",
+    "error": null,
+    "marked_derived": true,
+    "printed": "taskiikaʔ",
+    "verb": "to drink it"
+   },
+   {
+    "asked_for": "kiikaa",
+    "builder_gives": "tikiikaʔ",
+    "cause": "exact",
+    "cell": "3sg, statement",
+    "entry_used": "SK-kiikaa-p90-1694",
+    "error": null,
+    "marked_derived": false,
+    "printed": "tikiikaʔ",
+    "verb": "to drink it"
+   },
+   {
+    "asked_for": "kiikaa",
+    "builder_gives": "ratkiikaʔ",
+    "cause": "exact",
+    "cell": "1sg, question form",
+    "entry_used": "SK-kiikaa-p90-1694",
+    "error": null,
+    "marked_derived": true,
+    "printed": "ratkiikaʔ",
+    "verb": "to drink it"
+   },
+   {
+    "asked_for": "kiikaa",
+    "builder_gives": "raskiikaʔ",
+    "cause": "exact",
+    "cell": "2sg, question form",
+    "entry_used": "SK-kiikaa-p90-1694",
+    "error": null,
+    "marked_derived": true,
+    "printed": "raskiikaʔ",
+    "verb": "to drink it"
+   },
+   {
+    "asked_for": "kiikaa",
+    "builder_gives": "rakiikaʔ",
+    "cause": "exact",
+    "cell": "3sg, question form",
+    "entry_used": "SK-kiikaa-p90-1694",
+    "error": null,
+    "marked_derived": true,
+    "printed": "rakiikaʔ",
+    "verb": "to drink it"
+   },
+   {
+    "asked_for": "kiraawa/waahc",
+    "builder_gives": "tikukiraawaʔ",
+    "cause": "exact",
+    "cell": "1sg, statement",
+    "entry_used": "SK-kiraawa/waahc-p94-1794",
+    "error": null,
+    "marked_derived": false,
+    "printed": "tikukiraawaʔ",
+    "verb": "to be sick"
+   },
+   {
+    "asked_for": "kiraawa/waahc",
+    "builder_gives": "takiraawaʔ",
+    "cause": "exact",
+    "cell": "2sg, statement",
+    "entry_used": "SK-kiraawa/waahc-p94-1794",
+    "error": null,
+    "marked_derived": true,
+    "printed": "takiraawaʔ",
+    "verb": "to be sick"
+   },
+   {
+    "asked_for": "kiraawa/waahc",
+    "builder_gives": "tihkiraawaʔ",
+    "cause": "exact",
+    "cell": "3sg, statement",
+    "entry_used": "SK-kiraawa/waahc-p94-1794",
+    "error": null,
+    "marked_derived": false,
+    "printed": "tihkiraawaʔ",
+    "verb": "to be sick"
+   },
+   {
+    "asked_for": "kiraawa/waahc",
+    "builder_gives": "riikukiraawaʔ",
+    "cause": "exact",
+    "cell": "1sg, question form",
+    "entry_used": "SK-kiraawa/waahc-p94-1794",
+    "error": null,
+    "marked_derived": true,
+    "printed": "riikukiraawaʔ",
+    "verb": "to be sick"
+   },
+   {
+    "asked_for": "kiraawa/waahc",
+    "builder_gives": "raakiraawaʔ",
+    "cause": "exact",
+    "cell": "2sg, question form",
+    "entry_used": "SK-kiraawa/waahc-p94-1794",
+    "error": null,
+    "marked_derived": true,
+    "printed": "raakiraawaʔ",
+    "verb": "to be sick"
+   },
+   {
+    "asked_for": "kiraawa/waahc",
+    "builder_gives": "riihkiraawaʔ",
+    "cause": "vowel length only",
+    "cell": "3sg, question form",
+    "entry_used": "SK-kiraawa/waahc-p94-1794",
+    "error": null,
+    "marked_derived": true,
+    "printed": "rihkiraawaʔ",
+    "verb": "to be sick"
+   },
+   {
+    "asked_for": "raah",
+    "builder_gives": "tahaa",
+    "cause": "exact",
+    "cell": "1sg, statement",
+    "entry_used": "SK-raah-p116-2264",
+    "error": null,
+    "marked_derived": false,
+    "printed": "tahaa",
+    "verb": "to have it"
+   },
+   {
+    "asked_for": "raah",
+    "builder_gives": "tastaa",
+    "cause": "exact",
+    "cell": "2sg, statement",
+    "entry_used": "SK-raah-p116-2264",
+    "error": null,
+    "marked_derived": true,
+    "printed": "tastaa",
+    "verb": "to have it"
+   },
+   {
+    "asked_for": "raah",
+    "builder_gives": "tiraa",
+    "cause": "exact",
+    "cell": "3sg, statement",
+    "entry_used": "SK-raah-p116-2264",
+    "error": null,
+    "marked_derived": false,
+    "printed": "tiraa",
+    "verb": "to have it"
+   },
+   {
+    "asked_for": "raah",
+    "builder_gives": "rahaa",
+    "cause": "exact",
+    "cell": "1sg, question form",
+    "entry_used": "SK-raah-p116-2264",
+    "error": null,
+    "marked_derived": true,
+    "printed": "rahaa",
+    "verb": "to have it"
+   },
+   {
+    "asked_for": "raah",
+    "builder_gives": "rastaa",
+    "cause": "exact",
+    "cell": "2sg, question form",
+    "entry_used": "SK-raah-p116-2264",
+    "error": null,
+    "marked_derived": true,
+    "printed": "rastaa",
+    "verb": "to have it"
+   },
+   {
+    "asked_for": "raah",
+    "builder_gives": "raraa",
+    "cause": "exact",
+    "cell": "3sg, question form",
+    "entry_used": "SK-raah-p116-2264",
+    "error": null,
+    "marked_derived": true,
+    "printed": "raraa",
+    "verb": "to have it"
+   }
+  ]
+ },
+ "1d_verbs_sharing_a_spelling": {
+  "examples": [
+   "a",
+   "aar",
+   "aar ciksuʔ",
+   "aciksta",
+   "acikstat",
+   "acikstaʔuk",
+   "asaar",
+   "atkaʔuk",
+   "awaaks",
+   "awikatahak",
+   "awiraʔuk",
+   "awiʔuusik",
+   "awuh",
+   "aʔiwarik",
+   "haahka"
+  ],
+  "spellings_shared_by_several_verbs": 101,
+  "verb_entries_with_a_shared_spelling": 211,
+  "verbs_with_forms": 2239
+ },
+ "2_examples_on_entry_pages": {
+  "by_kind": {
+   "nouns": {
+    "printed": 1518,
+    "shown": 316
+   },
+   "other": {
+    "printed": 473,
+    "shown": 94
+   },
+   "verbs": {
+    "printed": 661,
+    "shown": 18
+   }
+  },
+  "entries_showing_none_of_their_examples": 1340,
+  "entries_with_examples": 1658,
+  "examples_printed": 2652,
+  "examples_shown": 428,
+  "examples_shown_only_because_of_the_stem_the_possession_engine_cuts": 0
+ },
+ "3_lessons": {
+  "lessons_table_rows": [
+   {
+    "book_page": 80,
+    "lesson": 11,
+    "stands": "Aka ' , hiri we ttih•kaharawere.",
+    "the_page_has": "Aka', hiri we túh•kaharawere.",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 78,
+    "lesson": 10,
+    "stands": "KA RIiH•RATSAUS?",
+    "the_page_has": "KA RÚH•RATSAUS?",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 43,
+    "lesson": 3,
+    "stands": "KIRIKJ RAS•TA?",
+    "the_page_has": "KIRIKÉ RAS•TA?",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 33,
+    "lesson": 1,
+    "stands": "KIRIKJ RA•TARAWIS?",
+    "the_page_has": "KIRIKÉ RA•TARAWIS?",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 39,
+    "lesson": 2,
+    "stands": "KIRIKJ RUT•U'?",
+    "the_page_has": "KIRIKÉ RUT•U'?",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 38,
+    "lesson": 2,
+    "stands": "Ka rds•atkuku'?",
+    "the_page_has": "Ka rás•atkuku'?",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 50,
+    "lesson": 5,
+    "stands": "Kaki ku .paks•tdari',",
+    "the_page_has": "Kaki ku•paks•táari',",
+    "where": "dialogues"
+   },
+   {
+    "book_page": 112,
+    "lesson": 20,
+    "stands": "Kaki', tatitska rakti•u•ta",
+    "the_page_has": "Kakí', tat•itska rakú•u•ta",
+    "where": "dialogues"
+   },
+   {
+    "book_page": 80,
+    "lesson": 11,
+    "stands": "Kesku•'ti kait.",
+    "the_page_has": "Kesku•'ú kait.",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 105,
+    "lesson": 18,
+    "stands": "Kesku•rahtirihu'.",
+    "the_page_has": "Kesku•rahúrihu'.",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 80,
+    "lesson": 11,
+    "stands": "Ketard .pu'!",
+    "the_page_has": "Ketará•pu'!",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 83,
+    "lesson": 12,
+    "stands": "Kitske rd•awitsu'?",
+    "the_page_has": "Kitske rá•awitsu'?",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 84,
+    "lesson": 12,
+    "stands": "Ktisti•at",
+    "the_page_has": "Kústi•at",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 97,
+    "lesson": 15,
+    "stands": "Kut'at•tsu•d ista.",
+    "the_page_has": "Kut'at•tsu•á•ista.",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 62,
+    "lesson": 7,
+    "stands": "Nawa hfru'!",
+    "the_page_has": "Nawa híru'!",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 84,
+    "lesson": 12,
+    "stands": "Rtiruks•at.",
+    "the_page_has": "Rúruks•at.",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 84,
+    "lesson": 12,
+    "stands": "Rtiruks•pu'.",
+    "the_page_has": "Rúruks•pu'.",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 52,
+    "lesson": 5,
+    "stands": "Siiks•at.",
+    "the_page_has": "Súks•at.",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 38,
+    "lesson": 2,
+    "stands": "Stiks .atku!",
+    "the_page_has": "Súks•atku!",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 84,
+    "lesson": 5,
+    "stands": "Stiksta•pu'.",
+    "the_page_has": "Súksta•pu'.",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 84,
+    "lesson": 12,
+    "stands": "Stiksta•pu'.",
+    "the_page_has": "Súksta•pu'.",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 54,
+    "lesson": 5,
+    "stands": "Stiks•at.",
+    "the_page_has": "Súks•at.",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 80,
+    "lesson": 11,
+    "stands": "Stiks•kika'.",
+    "the_page_has": "Súks•kika'.",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 53,
+    "lesson": 5,
+    "stands": "Suksta•pdku ' .",
+    "the_page_has": "Suksta•páku'.",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 52,
+    "lesson": 5,
+    "stands": "Suks•at pihkawf .hiri'.",
+    "the_page_has": "Suks•at pihkawí•hiri'.",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 62,
+    "lesson": 7,
+    "stands": "T'at•atsfks•ta",
+    "the_page_has": "T'at•atsíks•ta",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 105,
+    "lesson": 18,
+    "stands": "Take ratutsiks•d .wahri'?",
+    "the_page_has": "Také ratutsiks•á•wahri'?",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 112,
+    "lesson": 20,
+    "stands": "Tat•itska ratkti .u .ta",
+    "the_page_has": "Tát•itska ratkú•u•ta",
+    "where": "dialogues"
+   },
+   {
+    "book_page": 80,
+    "lesson": 11,
+    "stands": "Tuhtira•pu'!",
+    "the_page_has": "Tuhúra•pu'!",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 105,
+    "lesson": 18,
+    "stands": "We ktitasut•a .wahri'.",
+    "the_page_has": "We kútasut•á•wahri'.",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 105,
+    "lesson": 18,
+    "stands": "We ktitatutawahri'.",
+    "the_page_has": "We kútatut•á•wahri'.",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 105,
+    "lesson": 18,
+    "stands": "We ktitut .a.wahri'.",
+    "the_page_has": "We kútut•á•wahri'.",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 62,
+    "lesson": 7,
+    "stands": "We t'at•atsfks•tat•at",
+    "the_page_has": "We t'at•atsíks•tat•at",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 97,
+    "lesson": 15,
+    "stands": "We t'at•tsu•a•tisuku'.",
+    "the_page_has": "We t'at•tsu•a•úsuku'.",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 97,
+    "lesson": 15,
+    "stands": "We tuks•at•tsti .a.",
+    "the_page_has": "We tuks•at•tsú•a.",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 99,
+    "lesson": 16,
+    "stands": "We witi tat•titsi'sta.",
+    "the_page_has": "We wíti tat•útsi'sta.",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 62,
+    "lesson": 7,
+    "stands": "Wfs kutsu'!",
+    "the_page_has": "Wís kutsu'!",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 69,
+    "lesson": 8,
+    "stands": "askti .ka•ke'",
+    "the_page_has": "askú•ka•ke'",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 68,
+    "lesson": 8,
+    "stands": "asku•hti .kita",
+    "the_page_has": "asku•hú•kita",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 62,
+    "lesson": 7,
+    "stands": "hidsti '",
+    "the_page_has": "hiásti'",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 62,
+    "lesson": 7,
+    "stands": "hikdri'",
+    "the_page_has": "hikári'",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 62,
+    "lesson": 7,
+    "stands": "hipdkti'",
+    "the_page_has": "hipákti'",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 62,
+    "lesson": 7,
+    "stands": "hisdsti'",
+    "the_page_has": "hisásti'",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 62,
+    "lesson": 7,
+    "stands": "hiwdhri'",
+    "the_page_has": "hiwáhri'",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 62,
+    "lesson": 7,
+    "stands": "hiwdririks",
+    "the_page_has": "hiwáririks",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 91,
+    "lesson": 14,
+    "stands": "kakd taris",
+    "the_page_has": "kaká taris",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 63,
+    "lesson": 7,
+    "stands": "ktI rasiru paks•ktiku'",
+    "the_page_has": "kú•rasir•u paks•kúku'",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 63,
+    "lesson": 7,
+    "stands": "kti .ra•u paks•ktiku'",
+    "the_page_has": "kú•ra•u paks•kúku'",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 63,
+    "lesson": 7,
+    "stands": "kti•ratiru paks-ktiku'",
+    "the_page_has": "kú•ratir•u paks•kúku'",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 69,
+    "lesson": 8,
+    "stands": "pitati .asku",
+    "the_page_has": "pitaú•asku",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 69,
+    "lesson": 8,
+    "stands": "pitkti .ka•ke'",
+    "the_page_has": "pitkú•ka•ke'",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 68,
+    "lesson": 8,
+    "stands": "pitkus•htis•iri '",
+    "the_page_has": "pitkus•hús•iri'",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 112,
+    "lesson": 20,
+    "stands": "rakti•u•ta",
+    "the_page_has": "rakú•u•ta",
+    "where": "dialogues"
+   },
+   {
+    "book_page": 91,
+    "lesson": 14,
+    "stands": "ru ti ra•pdrihrit",
+    "the_page_has": "ru ti ra•párihrit",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 91,
+    "lesson": 14,
+    "stands": "ru tuks•ta•pdrihrit",
+    "the_page_has": "ru tuks•ta•párihrit",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 69,
+    "lesson": 8,
+    "stands": "sihuks•tarti .kita",
+    "the_page_has": "sihuks•tarú•kita",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 91,
+    "lesson": 14,
+    "stands": "ta rara•rdsitu'",
+    "the_page_has": "ta rara•rásitu'",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 91,
+    "lesson": 14,
+    "stands": "ta rd ritu'",
+    "the_page_has": "ta rá•ritu'",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 111,
+    "lesson": 20,
+    "stands": "tatpd .waktit",
+    "the_page_has": "tat•pá•waktit",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 91,
+    "lesson": 14,
+    "stands": "td taris",
+    "the_page_has": "tá taris",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 92,
+    "lesson": 14,
+    "stands": "tf•'at",
+    "the_page_has": "tí•'at",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 63,
+    "lesson": 7,
+    "stands": "ti ra•kti pita",
+    "the_page_has": "ti ra•kú pita",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 97,
+    "lesson": 15,
+    "stands": "tirardh•karu",
+    "the_page_has": "tiraráh•karu",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 97,
+    "lesson": 15,
+    "stands": "tirardh•kiwiku'",
+    "the_page_has": "tiraráh•kiwiku'",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 68,
+    "lesson": 8,
+    "stands": "ti•hattih•kaarit",
+    "the_page_has": "ti•hatúh•kaarit",
+    "where": "grammar_notes"
+   },
+   {
+    "book_page": 69,
+    "lesson": 8,
+    "stands": "tsktis•kakusu'",
+    "the_page_has": "tskús•kakusu'",
+    "where": "grammar_notes"
+   }
+  ],
+  "ocr_slips_the_audit_corrected": 104,
+  "public_pages_rows": [
+   {
+    "page": "docs/lesson-1.html",
+    "stands": "KIRIKJ RA•TARAWIS?",
+    "the_page_has": "KIRIKÉ RA•TARAWIS?"
+   },
+   {
+    "page": "docs/lesson-2.html",
+    "stands": "KIRIKJ RUT•U'?",
+    "the_page_has": "KIRIKÉ RUT•U'?"
+   },
+   {
+    "page": "docs/lesson-2.html",
+    "stands": "Ka rds•atkuku'?",
+    "the_page_has": "Ka rás•atkuku'?"
+   },
+   {
+    "page": "docs/lesson-2.html",
+    "stands": "Stiks .atku!",
+    "the_page_has": "Súks•atku!"
+   },
+   {
+    "page": "docs/lesson-3.html",
+    "stands": "KIRIKJ RAS•TA?",
+    "the_page_has": "KIRIKÉ RAS•TA?"
+   },
+   {
+    "page": "docs/lesson-5.html",
+    "stands": "Kaki ku .paks•tdari',",
+    "the_page_has": "Kaki ku•paks•táari',"
+   },
+   {
+    "page": "docs/lesson-5.html",
+    "stands": "Siiks•at.",
+    "the_page_has": "Súks•at."
+   },
+   {
+    "page": "docs/lesson-5.html",
+    "stands": "Stiksta•pu'.",
+    "the_page_has": "Súksta•pu'."
+   },
+   {
+    "page": "docs/lesson-5.html",
+    "stands": "Stiks•at.",
+    "the_page_has": "Súks•at."
+   },
+   {
+    "page": "docs/lesson-5.html",
+    "stands": "Suksta•pdku ' .",
+    "the_page_has": "Suksta•páku'."
+   },
+   {
+    "page": "docs/lesson-5.html",
+    "stands": "Suks•at pihkawf .hiri'.",
+    "the_page_has": "Suks•at pihkawí•hiri'."
+   },
+   {
+    "page": "docs/lesson-7.html",
+    "stands": "Nawa hfru'!",
+    "the_page_has": "Nawa híru'!"
+   },
+   {
+    "page": "docs/lesson-7.html",
+    "stands": "T'at•atsfks•ta",
+    "the_page_has": "T'at•atsíks•ta"
+   },
+   {
+    "page": "docs/lesson-7.html",
+    "stands": "We t'at•atsfks•tat•at",
+    "the_page_has": "We t'at•atsíks•tat•at"
+   },
+   {
+    "page": "docs/lesson-7.html",
+    "stands": "Wfs kutsu'!",
+    "the_page_has": "Wís kutsu'!"
+   },
+   {
+    "page": "docs/lesson-7.html",
+    "stands": "hidsti '",
+    "the_page_has": "hiásti'"
+   },
+   {
+    "page": "docs/lesson-7.html",
+    "stands": "hikdri'",
+    "the_page_has": "hikári'"
+   },
+   {
+    "page": "docs/lesson-7.html",
+    "stands": "hipdkti'",
+    "the_page_has": "hipákti'"
+   },
+   {
+    "page": "docs/lesson-7.html",
+    "stands": "hisdsti'",
+    "the_page_has": "hisásti'"
+   },
+   {
+    "page": "docs/lesson-7.html",
+    "stands": "hiwdhri'",
+    "the_page_has": "hiwáhri'"
+   },
+   {
+    "page": "docs/lesson-7.html",
+    "stands": "hiwdririks",
+    "the_page_has": "hiwáririks"
+   },
+   {
+    "page": "docs/lesson-7.html",
+    "stands": "ktI rasiru paks•ktiku'",
+    "the_page_has": "kú•rasir•u paks•kúku'"
+   },
+   {
+    "page": "docs/lesson-7.html",
+    "stands": "kti .ra•u paks•ktiku'",
+    "the_page_has": "kú•ra•u paks•kúku'"
+   },
+   {
+    "page": "docs/lesson-7.html",
+    "stands": "kti•ratiru paks-ktiku'",
+    "the_page_has": "kú•ratir•u paks•kúku'"
+   },
+   {
+    "page": "docs/lesson-7.html",
+    "stands": "ti ra•kti pita",
+    "the_page_has": "ti ra•kú pita"
+   },
+   {
+    "page": "docs/lesson-8.html",
+    "stands": "askti .ka•ke'",
+    "the_page_has": "askú•ka•ke'"
+   },
+   {
+    "page": "docs/lesson-8.html",
+    "stands": "asku•hti .kita",
+    "the_page_has": "asku•hú•kita"
+   },
+   {
+    "page": "docs/lesson-8.html",
+    "stands": "pitati .asku",
+    "the_page_has": "pitaú•asku"
+   },
+   {
+    "page": "docs/lesson-8.html",
+    "stands": "pitkti .ka•ke'",
+    "the_page_has": "pitkú•ka•ke'"
+   },
+   {
+    "page": "docs/lesson-8.html",
+    "stands": "pitkus•htis•iri '",
+    "the_page_has": "pitkus•hús•iri'"
+   },
+   {
+    "page": "docs/lesson-8.html",
+    "stands": "sihuks•tarti .kita",
+    "the_page_has": "sihuks•tarú•kita"
+   },
+   {
+    "page": "docs/lesson-8.html",
+    "stands": "ti•hattih•kaarit",
+    "the_page_has": "ti•hatúh•kaarit"
+   },
+   {
+    "page": "docs/lesson-8.html",
+    "stands": "tsktis•kakusu'",
+    "the_page_has": "tskús•kakusu'"
+   },
+   {
+    "page": "docs/lesson-10.html",
+    "stands": "KA RIiH•RATSAUS?",
+    "the_page_has": "KA RÚH•RATSAUS?"
+   },
+   {
+    "page": "docs/lesson-11.html",
+    "stands": "Aka ' , hiri we ttih•kaharawere.",
+    "the_page_has": "Aka', hiri we túh•kaharawere."
+   },
+   {
+    "page": "docs/lesson-11.html",
+    "stands": "Kesku•'ti kait.",
+    "the_page_has": "Kesku•'ú kait."
+   },
+   {
+    "page": "docs/lesson-11.html",
+    "stands": "Ketard .pu'!",
+    "the_page_has": "Ketará•pu'!"
+   },
+   {
+    "page": "docs/lesson-11.html",
+    "stands": "Stiks•kika'.",
+    "the_page_has": "Súks•kika'."
+   },
+   {
+    "page": "docs/lesson-11.html",
+    "stands": "Tuhtira•pu'!",
+    "the_page_has": "Tuhúra•pu'!"
+   },
+   {
+    "page": "docs/lesson-12.html",
+    "stands": "Kitske rd•awitsu'?",
+    "the_page_has": "Kitske rá•awitsu'?"
+   },
+   {
+    "page": "docs/lesson-12.html",
+    "stands": "Ktisti•at",
+    "the_page_has": "Kústi•at"
+   },
+   {
+    "page": "docs/lesson-12.html",
+    "stands": "Rtiruks•at.",
+    "the_page_has": "Rúruks•at."
+   },
+   {
+    "page": "docs/lesson-12.html",
+    "stands": "Rtiruks•pu'.",
+    "the_page_has": "Rúruks•pu'."
+   },
+   {
+    "page": "docs/lesson-12.html",
+    "stands": "Stiksta•pu'.",
+    "the_page_has": "Súksta•pu'."
+   },
+   {
+    "page": "docs/lesson-14.html",
+    "stands": "kakd taris",
+    "the_page_has": "kaká taris"
+   },
+   {
+    "page": "docs/lesson-14.html",
+    "stands": "ru ti ra•pdrihrit",
+    "the_page_has": "ru ti ra•párihrit"
+   },
+   {
+    "page": "docs/lesson-14.html",
+    "stands": "ru tuks•ta•pdrihrit",
+    "the_page_has": "ru tuks•ta•párihrit"
+   },
+   {
+    "page": "docs/lesson-14.html",
+    "stands": "ta rara•rdsitu'",
+    "the_page_has": "ta rara•rásitu'"
+   },
+   {
+    "page": "docs/lesson-14.html",
+    "stands": "ta rd ritu'",
+    "the_page_has": "ta rá•ritu'"
+   },
+   {
+    "page": "docs/lesson-14.html",
+    "stands": "td taris",
+    "the_page_has": "tá taris"
+   },
+   {
+    "page": "docs/lesson-14.html",
+    "stands": "tf•'at",
+    "the_page_has": "tí•'at"
+   },
+   {
+    "page": "docs/lesson-15.html",
+    "stands": "Kut'at•tsu•d ista.",
+    "the_page_has": "Kut'at•tsu•á•ista."
+   },
+   {
+    "page": "docs/lesson-15.html",
+    "stands": "We t'at•tsu•a•tisuku'.",
+    "the_page_has": "We t'at•tsu•a•úsuku'."
+   },
+   {
+    "page": "docs/lesson-15.html",
+    "stands": "We tuks•at•tsti .a.",
+    "the_page_has": "We tuks•at•tsú•a."
+   },
+   {
+    "page": "docs/lesson-15.html",
+    "stands": "tirardh•karu",
+    "the_page_has": "tiraráh•karu"
+   },
+   {
+    "page": "docs/lesson-15.html",
+    "stands": "tirardh•kiwiku'",
+    "the_page_has": "tiraráh•kiwiku'"
+   },
+   {
+    "page": "docs/lesson-16.html",
+    "stands": "We witi tat•titsi'sta.",
+    "the_page_has": "We wíti tat•útsi'sta."
+   },
+   {
+    "page": "docs/lesson-18.html",
+    "stands": "Kesku•rahtirihu'.",
+    "the_page_has": "Kesku•rahúrihu'."
+   },
+   {
+    "page": "docs/lesson-18.html",
+    "stands": "Take ratutsiks•d .wahri'?",
+    "the_page_has": "Také ratutsiks•á•wahri'?"
+   },
+   {
+    "page": "docs/lesson-18.html",
+    "stands": "We ktitasut•a .wahri'.",
+    "the_page_has": "We kútasut•á•wahri'."
+   },
+   {
+    "page": "docs/lesson-18.html",
+    "stands": "We ktitatutawahri'.",
+    "the_page_has": "We kútatut•á•wahri'."
+   },
+   {
+    "page": "docs/lesson-18.html",
+    "stands": "We ktitut .a.wahri'.",
+    "the_page_has": "We kútut•á•wahri'."
+   },
+   {
+    "page": "docs/lesson-20.html",
+    "stands": "Kaki', tatitska rakti•u•ta",
+    "the_page_has": "Kakí', tat•itska rakú•u•ta"
+   },
+   {
+    "page": "docs/lesson-20.html",
+    "stands": "Tat•itska ratkti .u .ta",
+    "the_page_has": "Tát•itska ratkú•u•ta"
+   },
+   {
+    "page": "docs/lesson-20.html",
+    "stands": "rakti•u•ta",
+    "the_page_has": "rakú•u•ta"
+   },
+   {
+    "page": "docs/lesson-20.html",
+    "stands": "tatpd .waktit",
+    "the_page_has": "tat•pá•waktit"
+   }
+  ],
+  "still_in_the_lessons_table": 66,
+  "still_on_the_public_lesson_pages": 66
+ }
+}

@@ -1,5 +1,21 @@
 #!/usr/bin/env python3
 """
+WITHDRAWN on 2026-11-14 (engines review, decision 7). Nothing uses this file.
+Do not use it to produce a Pawnee form.
+
+Why: asked the way the app asked it, it answered 1,671 of 1,706 nouns with
+"kti ratiru X". "kti" is an OCR slip for the Blue Book's "kú", and the Blue
+Book prints that construction once, with one noun. The app showed the answer
+as attested. Its locatives and instrumentals agreed with 44% of the 675 forms
+Parks prints as examples under nouns. Of its 60 tests, 23 compared with no
+printed form. Evidence and decision: reports/engines_review/.
+
+What replaced it: scripts/printed_noun_forms.py, which looks up what Parks and
+the Blue Book print of a noun and computes nothing. The tables this engine
+filled (noun_stems, possession_examples) were dropped the same day.
+
+What follows is the file as it was.
+
 Phase 3.1.5 — Noun Possession Engine
 ======================================
 

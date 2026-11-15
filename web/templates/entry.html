@@ -34,15 +34,6 @@
             {% if bb_info.attested %}
             <span class="badge badge-bb">Attested in P&acirc;ri Pak&ucirc;ru'</span>
             {% endif %}
-            {% if form2_confidence is defined and form2_confidence is not none %}
-              {% if form2_confidence >= 0.75 %}
-              <span class="badge badge-confidence badge-conf-high" title="High confidence: {{ (form2_confidence * 100) | round(0) | int }}% — verb class has strong prediction accuracy">Prediction: High</span>
-              {% elif form2_confidence >= 0.50 %}
-              <span class="badge badge-confidence badge-conf-med" title="Medium confidence: {{ (form2_confidence * 100) | round(0) | int }}% — prediction may have minor differences">Prediction: Med</span>
-              {% else %}
-              <span class="badge badge-confidence badge-conf-low" title="Low confidence: {{ (form2_confidence * 100) | round(0) | int }}% — treat computed forms with caution">Prediction: Low</span>
-              {% endif %}
-            {% endif %}
         </div>
     </div>
 
@@ -153,9 +144,9 @@
     </details>
     {% endif %}
 
-    {# ---- Possession Paradigm (nouns only) ---- #}
-    {% if entry.grammatical_class in ('N', 'N-DEP', 'N-KIN', 'NUM') %}
-    {% include "_possession_widget.html" %}
+    {# ---- Printed forms of a noun (a lookup; nothing computed) ---- #}
+    {% if printed_forms %}
+    {% include "_printed_noun_forms.html" %}
     {% endif %}
 
     {# ---- Examples ---- #}

@@ -141,7 +141,6 @@ def get_queue(conn, lesson=None, tag=None):
           AND {scope} AND definition IS NOT NULL
         ORDER BY le.blue_book_attested DESC,
                  (le.simplified_pronunciation IS NOT NULL) DESC,
-                 COALESCE(le.form2_confidence, 0) DESC,
                  le.entry_id
         LIMIT ?""", params + [MAX_NEW_PER_SESSION])
     new_cards = [dict(zip([d[0] for d in cur.description], r))

@@ -186,23 +186,16 @@ def score_g1(res, inv, conn):
             stems[status] += 1
             if not ok:
                 stem_rows.append({"form": p["form"], "gloss": p["gloss"], "status": status, "go_page": e["go_page"]})
-    # (c) labelled affixes
-    known = {re.sub(r"[^a-zʔØ:]", "", a["form"] or "") for a in inv["inflection"]
-             if a["source"].startswith("morpheme_inventory")} | {a["form"] for a in inv["affixes"]}
-    aff = Counter()
-    missing = Counter()
+    # (c) the pieces he labels: counted, not matched against anything. Until 2026-11-14 they were matched by
+    # their letters against the conjugation engine's table; the engine was withdrawn and the table dropped.
+    labelled = Counter()
     for e in clean:
         for p in e["pieces"]:
-            if p.get("label"):
-                f = re.sub(r"[^a-zʔØ:]", "", p["form"])
-                if f in known or f.replace(":", "") in known:
-                    aff["in inventory"] += 1
-                else:
-                    aff["not in inventory"] += 1
-                    missing["%s %s" % (p["form"], p["label"])] += 1
+            if p.get("label") and re.sub(r"[^a-zʔØ:]", "", p["form"]):
+                labelled[(p["form"], p["label"])] += 1
     return {"worked_examples": len(ex), "clean_examples": len(clean), "segmentation": dict(seg),
             "segmentation_rows": seg_rows, "stems": dict(stems), "stem_rows": stem_rows[:40],
-            "affix_tokens": dict(aff), "affixes_missing": dict(missing.most_common(40))}
+            "labelled_pieces": {"occurrences": sum(labelled.values()), "distinct": len(labelled)}}
 
 
 def score_g3(res):
@@ -540,7 +533,8 @@ def run_suites():
     import os
     env = dict(os.environ, PYTHONIOENCODING="utf-8")
     outp = {}
-    cmds = {"sound_changes.py --test": [env_python, "scripts/sound_changes.py", "--test"],
+    # sound_changes.py has no pass-or-fail test since 2026-11-14: --measure compares the code with Parks's examples
+    cmds = {"sound_changes.py --measure (a measurement)": [env_python, "scripts/sound_changes.py", "--measure"],
             "person_forms.py --validate-appendix": [env_python, "scripts/person_forms.py", "--validate-appendix"],
             "build_root_curriculum.py --check": [env_python, "scripts/build_root_curriculum.py", "--check"],
             "morphology_v2 unit tests": [env_python, "-m", "unittest", "discover", "-s", "scripts/morphology_v2",
@@ -550,7 +544,7 @@ def run_suites():
             p = subprocess.run(cmd, cwd=str(ROOT), env=env, capture_output=True, timeout=600)
             text = (p.stdout + p.stderr).decode("utf-8", errors="replace")
             if "sound_changes" in name:
-                summ = "%d pass, %d fail" % (text.count("[PASS]"), text.count("[FAIL]"))
+                summ = next((l.strip() for l in text.splitlines() if "printed form for" in l), "no result line")
             else:
                 summ = [l for l in text.strip().splitlines() if l.strip()][-1][:120] if text.strip() else ""
             outp[name] = {"exit": p.returncode, "summary": summ}
@@ -761,13 +755,12 @@ def write_reports(conn, bundle):
       "%d are headwords with a different gloss wording; %d are not headwords (bound stems and combining forms)." % (
           _pct(st.get("headword with matching gloss", 0), tot), st.get("headword, gloss differs", 0),
           st.get("not a headword", 0)))
-    af = g1["affix_tokens"]
-    w("- **Labelled prefixes and suffixes in his analyses:** %s were already in the project's `morpheme_inventory` "
-      "table or among the dictionary affixes. The rest, mostly zero morphemes and less common proclitics, were "
-      "added to the inflectional list in `affixes.json` straight from his worked examples, with the page of the "
-      "example." % _pct(af.get("in inventory", 0), sum(af.values())))
-    if g1["affixes_missing"]:
-        w("  - Added from the worked examples: %s." % ", ".join("%s ×%d" % kv for kv in list(g1["affixes_missing"].items())[:25]))
+    lp = g1["labelled_pieces"]
+    w("- **Labelled prefixes and suffixes in his analyses:** %d occurrences of %d distinct labelled pieces. All are "
+      "listed in `affixes.json` (\"inflectional\") straight from his worked examples, with the page of an example, "
+      "and the guide prints his own tables of the verb as printed. They are not matched against a list of the "
+      "project's: the table they used to be matched against was written by the conjugation engine, which was "
+      "withdrawn on 2026-11-14." % (lp["occurrences"], lp["distinct"]))
     w("- **Appendix 1:** `person_forms.py --validate-appendix` reproduces the paradigm cells it derives "
       "(result below under existing suites).")
     w("")

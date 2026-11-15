@@ -1,0 +1,127 @@
+{
+ "bar_per_cent": 97.0,
+ "configurations": {
+  "narrow": {
+   "by_rule": {
+    "form 2 begins ku-: no rule": {
+     "no form given": 1
+    },
+    "form 2 begins ru-: no rule": {
+     "no form given": 7
+    },
+    "form 2 begins ta-: no rule": {
+     "no form given": 65
+    },
+    "ti- to ra-": {
+     "other letters": 6,
+     "the same": 461,
+     "vowel length": 2
+    },
+    "tih- with a headword in h-: ti- to ra-": {
+     "other letters": 2,
+     "the same": 101
+    },
+    "tih-, other headwords: no rule": {
+     "no form given": 2
+    },
+    "tii-: no rule": {
+     "no form given": 168
+    },
+    "tiʔ- to raʔ-": {
+     "glottal stop": 2,
+     "other letters": 5,
+     "the same": 12
+    },
+    "tu- to ru-": {
+     "other letters": 2,
+     "the same": 220,
+     "vowel length": 3
+    }
+   },
+   "open_half_for_comparison": {
+    "a_form_is_given_for": 809,
+    "declined": 256,
+    "per_cent_of_forms_given": 97.16,
+    "starts_as_form_4_starts": 786,
+    "verbs": 1065
+   },
+   "reaches_the_bar": true,
+   "sealed_half": {
+    "a_form_is_given_for": 816,
+    "declined": 243,
+    "per_cent_of_forms_given": 97.3,
+    "starts_as_form_4_starts": 794,
+    "verbs": 1059
+   },
+   "sealed_half_without_the_verbs_displayed_before_the_split": {
+    "a_form_is_given_for": 784,
+    "declined": 236,
+    "per_cent_of_forms_given": 98.6,
+    "starts_as_form_4_starts": 773,
+    "verbs": 1020
+   }
+  },
+  "strict": {
+   "by_rule": {
+    "form 2 begins ku-: no rule": {
+     "no form given": 1
+    },
+    "form 2 begins ru-: no rule": {
+     "no form given": 7
+    },
+    "form 2 begins ta-: no rule": {
+     "no form given": 65
+    },
+    "ti- to ra-": {
+     "other letters": 6,
+     "the same": 461,
+     "vowel length": 2
+    },
+    "tih- with a headword in h-: ti- to ra-": {
+     "other letters": 2,
+     "the same": 101
+    },
+    "tih-, other headwords: no rule": {
+     "no form given": 2
+    },
+    "tii-: no rule": {
+     "no form given": 168
+    },
+    "tiʔ- to raʔ-": {
+     "no form given": 19
+    },
+    "tu- to ru-": {
+     "no form given": 225
+    }
+   },
+   "open_half_for_comparison": {
+    "a_form_is_given_for": 557,
+    "declined": 508,
+    "per_cent_of_forms_given": 98.74,
+    "starts_as_form_4_starts": 550,
+    "verbs": 1065
+   },
+   "reaches_the_bar": true,
+   "sealed_half": {
+    "a_form_is_given_for": 572,
+    "declined": 487,
+    "per_cent_of_forms_given": 98.25,
+    "starts_as_form_4_starts": 562,
+    "verbs": 1059
+   },
+   "sealed_half_without_the_verbs_displayed_before_the_split": {
+    "a_form_is_given_for": 560,
+    "declined": 460,
+    "per_cent_of_forms_given": 98.93,
+    "starts_as_form_4_starts": 554,
+    "verbs": 1020
+   }
+  }
+ },
+ "person_forms_py_sha256": "2fb02627bc66bbb01455db2e052d04263aa2838e99d4f0ce5affbb5a7be64d7f",
+ "person_forms_py_sha256_when_the_split_was_written": "9288bcf339e8811cf9a24ce3337e06ba52764914596fc2f435b54b3c775f28e7",
+ "plan_sha256": "630f564b319b29cd2e5e527e57d829b7de11bfe459f5293c2120a4e6773bbfc2",
+ "run": "2026-11-14 17:56",
+ "ships": "narrow",
+ "what": "the one run of the repaired person derivation on the sealed half, for the two configurations fixed in person_forms_plan.json"
+}

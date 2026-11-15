@@ -1,1616 +1,753 @@
 #!/usr/bin/env python3
+"""Sentences from printed words: what stands behind the sentence builder of the local app.
+
+Rebuilt on 2026-11-14 (engines review, decision 8: "repair by copying").
+The earlier engine joined words that were typed into the code from the OCR
+text of the Blue Book. Three of them do not exist, none had its printed
+accent, and so the engine recognised none of the sentences the book prints
+with an accent. It wrote a bare dictionary stem after a particle for "the
+stick is red", and put a dictionary verb, in Parks's spelling, into a
+sentence in the Blue Book's spelling.
+
+What this file does instead, and the four rules it keeps:
+
+1. EVERY BLUE BOOK FORM COMES FROM A ROW. A pattern starts from a sentence
+   the Blue Book prints (a "frame": a row of blue_book_attestations, named in
+   template_slot_fillers.py by its number and its text). A word of the frame
+   may be swapped only for another printed word: a row, given by its number.
+   No Pawnee word is typed in this file.
+2. A SENTENCE SAYS WHAT IT IS. It is "printed in the Blue Book, lesson N"
+   only when it is, accents included, a sentence the book prints. Anything
+   else is "put together here; not printed". A swapped word keeps the accent
+   it has where it was copied from, which may not be the accent it would
+   carry in the new sentence: one more reason the label matters.
+3. "THE STICK IS RED" USES A PRINTED FORM. In the Blue Book's spelling the
+   quality is a phrase the book lists; in the dictionary's spelling it is the
+   entry's printed form 2, and the sentence is offered only where one is
+   printed. No form is made from a stem.
+4. ONE SPELLING PER SENTENCE, AND THE ENTRY FOR A VERB. A sentence is either
+   all Blue Book rows or all dictionary forms (dictionary_sentence). A
+   dictionary verb is given by its entry id, never by its spelling: 211 verbs
+   share a spelling with another. A form made by person_forms.py carries that
+   file's label, "derived; not checked against a printed form".
+
+Nothing here is shown on the public site.
+
+    python scripts/sentence_templates.py --check     # every form named in the two files is what its row holds
+    python scripts/sentence_templates.py --test      # the builder's own tests
+    python scripts/sentence_templates.py --list      # the frames
+
+Library (the web app):
+    list_templates(), slot_options(...), assemble(template_id, frame=0, noun=ROW, ...),
+    verb_forms(entry_id), dictionary_sentence(pattern, verb_entry_id, form_key, noun_entry_id=None)
 """
-Phase 3.2a — Template-Based Sentence Assembly Engine
-=====================================================
-
-Assembles Skiri Pawnee sentences from fixed templates extracted from
-Blue Book (Pari Pakuru) dialogues. Not free-form translation — guided
-construction from attested sentence patterns.
-
-ARCHITECTURE:
-  - 10 templates covering 73% of Blue Book sentences (113/155)
-  - Each template defines: slot types, word order, morphological constraints
-  - Templates 6 (negation) and 7 (affirmation) are wrappers that nest others
-  - Assembly pipeline: validate → look up forms → order → output + breakdown
-
-INTEGRATION:
-  - Reads: skiri_pawnee.db (lexical_entries, paradigmatic_forms, function_words,
-    blue_book_attestations, kinship_paradigms)
-  - Optional: morpheme_inventory.py (conjugation engine, if available)
-  - Optional: possession_engine.py (noun possession, if available)
-
-Usage:
-    # CLI test mode — run all 27 validation tests
-    python sentence_templates.py --test
-
-    # Assemble a sentence
-    python sentence_templates.py --template T1 --noun "hitu'"
-    python sentence_templates.py --template T2 --noun rakis --vd pahaat
-    python sentence_templates.py --template T8 --verb_form "tatuks•at" --locative Pari
-
-    # List templates
-    python sentence_templates.py --list
-
-    # As a library
-    from sentence_templates import assemble, list_templates, TemplateResult
-    result = assemble("T2", noun="rakis", vd="pahaat")
-    print(result.skiri_sentence)  # "Rakis ti pahaat"
-"""
-
-import json
+import argparse
+import ast
+import io
 import os
 import re
 import sqlite3
 import sys
-import argparse
+import tokenize
+import unicodedata
 from dataclasses import dataclass, field
-from typing import Optional, Dict, List, Tuple, Any
 from pathlib import Path
+from typing import Any, Dict, List, Optional
 
-# ---------------------------------------------------------------------------
-# Configuration
-# ---------------------------------------------------------------------------
-DB_PATH = os.environ.get(
-    "SKIRI_DB_PATH",
-    str(Path(__file__).resolve().parent / "skiri_pawnee.db"),
-)
+try:
+    import person_forms
+    from template_slot_fillers import FRAMES, PARKS_QUESTION_WORDS, SLOT_KINDS
+except ImportError:  # imported as a package (the web app): scripts.sentence_templates
+    from scripts import person_forms
+    from scripts.template_slot_fillers import FRAMES, PARKS_QUESTION_WORDS, SLOT_KINDS
 
-# Fallback: check common locations
-_FALLBACK_PATHS = [
-    Path(__file__).resolve().parent / "skiri_pawnee.db",
-    Path(__file__).resolve().parent.parent / "skiri_pawnee.db",
-    Path(__file__).resolve().parent.parent / "data" / "skiri_pawnee.db",
-    Path.home() / "skiri_pawnee.db",
+ROOT = Path(__file__).resolve().parent.parent
+DB_PATH = os.environ.get("SKIRI_DB_PATH", str(ROOT / "skiri_pawnee.db"))
+
+PRINTED = "printed in the Blue Book"
+NOT_PRINTED = "put together here; not printed"
+# Blue Book rows tied to a dictionary entry by the exact form (not by a shared beginning)
+SOUND_LINKS = ("exact_normalized", "orthographic", "bb_only_form_and_english")
+LISTS = ("BASIC_WORDS", "ADDITIONAL_WORDS", "GRAMMAR_EXAMPLE")
+BLUE_BOOK_PAGE_OFFSET = 28          # the table counts pages of the scan; the book's own page is 28 less
+
+# the forms of a dictionary verb the builder may show: (key of person_forms.derive_forms, what it is)
+FORM_LABELS = [
+    ("1sg_ind", "I: perfective"),
+    ("2sg_ind", "you: perfective"),
+    ("3sg_ind", "he or she: perfective"),
+    ("3sg_ind_impf", "he or she: imperfective"),
+    ("3sg_ind_int", "he or she: intentive"),
+    ("1sg_abs", "I: question form"),
+    ("2sg_abs", "you: question form"),
+    ("3sg_abs", "he or she: question form"),
 ]
 
 
-def _find_db() -> str:
-    if os.path.exists(DB_PATH):
-        return DB_PATH
-    for p in _FALLBACK_PATHS:
-        if p.exists():
-            return str(p)
-    raise FileNotFoundError(
-        f"Cannot find skiri_pawnee.db. Set SKIRI_DB_PATH env variable. "
-        f"Checked: {DB_PATH}, {[str(p) for p in _FALLBACK_PATHS]}"
-    )
+def out(text=""):
+    sys.stdout.buffer.write((str(text) + "\n").encode("utf-8", errors="replace"))
 
 
-# ---------------------------------------------------------------------------
-# Data classes
-# ---------------------------------------------------------------------------
-@dataclass
-class MorphemeChip:
-    """One piece of the morpheme breakdown display."""
-    form: str
-    gloss: str
-    role: str  # SUBJECT, VERB, OBJECT, PARTICLE, ADVERB, LOCATIVE, etc.
-    entry_id: Optional[str] = None
-    # Enrichment (Phase 3.2b): modern spelling, pronunciation, attested IPA.
-    # ipa is ONLY ever an attested dictionary phonetic_form — never generated.
-    modern: Optional[str] = None
-    pron: Optional[str] = None
-    ipa: Optional[str] = None
-    attested: bool = False  # True when modern/pron/ipa come from the entry
-
-
-@dataclass
-class TemplateResult:
-    """Output of sentence assembly."""
-    skiri_sentence: str
-    english_gloss: str
-    template_id: str
-    template_name: str
-    confidence: str  # HIGH, MEDIUM, LOW
-    morpheme_breakdown: List[MorphemeChip] = field(default_factory=list)
-    bb_attestation: Optional[str] = None  # e.g., "L01, L02"
-    word_order_note: Optional[str] = None
-    error: Optional[str] = None
-    # Phase 3.2b enrichment: whole-sentence modern spelling (rule-derived,
-    # c→č context rule 98.5% / 99.5% vs attested normalized forms) and an
-    # APPROXIMATE spelling-based pronunciation (cannot mark stress/reduction).
-    modern_sentence: Optional[str] = None
-    approx_pronunciation: Optional[str] = None
-
-    def to_dict(self) -> Dict[str, Any]:
-        return {
-            "skiri_sentence": self.skiri_sentence,
-            "english_gloss": self.english_gloss,
-            "template_id": self.template_id,
-            "template_name": self.template_name,
-            "confidence": self.confidence,
-            "morpheme_breakdown": [
-                {"form": m.form, "gloss": m.gloss, "role": m.role,
-                 "entry_id": m.entry_id, "modern": m.modern, "pron": m.pron,
-                 "ipa": m.ipa, "attested": m.attested}
-                for m in self.morpheme_breakdown
-            ],
-            "bb_attestation": self.bb_attestation,
-            "word_order_note": self.word_order_note,
-            "error": self.error,
-            "modern_sentence": self.modern_sentence,
-            "approx_pronunciation": self.approx_pronunciation,
-        }
-
-
-@dataclass
-class TemplateInfo:
-    """Metadata about a template for the UI."""
-    template_id: str
-    name: str
-    english_pattern: str
-    skiri_example: str
-    english_example: str
-    slots: List[Dict[str, str]]  # [{"name": "noun", "type": "N", "required": True}, ...]
-    lessons: str  # "L01–L13"
-    bb_count: int  # Number of BB attestations
-
-
-# ---------------------------------------------------------------------------
-# Template definitions
-# ---------------------------------------------------------------------------
-TEMPLATES: Dict[str, TemplateInfo] = {
-    "T1": TemplateInfo(
-        template_id="T1",
-        name="Identification",
-        english_pattern="This is [thing] / He/She is [noun]",
-        skiri_example="Ti hitu'",
-        english_example="This is a feather",
-        slots=[
-            {"name": "noun", "type": "N,N-KIN,TRIBAL", "required": True,
-             "description": "The thing or person being identified"},
-        ],
-        lessons="L01, L05, L07, L13",
-        bb_count=11,
-    ),
-    "T2": TemplateInfo(
-        template_id="T2",
-        name="Descriptive",
-        english_pattern="[Thing] is [quality]",
-        skiri_example="Rakis ti pahaat",
-        english_example="The stick is red",
-        slots=[
-            {"name": "noun", "type": "N", "required": True,
-             "description": "The thing being described"},
-            {"name": "vd", "type": "VD", "required": True,
-             "description": "Descriptive verb (quality: color, size, etc.)"},
-        ],
-        lessons="L02, L09",
-        bb_count=4,
-    ),
-    "T3": TemplateInfo(
-        template_id="T3",
-        name="Yes/No Question",
-        english_pattern="Is [thing] [quality/action]?",
-        skiri_example="Ka ra•pahaat rakis?",
-        english_example="Is the stick red?",
-        slots=[
-            {"name": "noun", "type": "N", "required": False,
-             "description": "The subject (optional if clear from context)"},
-            {"name": "verb_form", "type": "VERB_FORM", "required": False,
-             "description": "Pre-conjugated verb form (absolutive mode)"},
-            {"name": "verb", "type": "V", "required": False,
-             "description": "Dictionary verb — auto-conjugated (alternative "
-                            "to verb_form)"},
-            {"name": "person", "type": "PERSON", "required": False,
-             "description": "Who: 1sg (I) / 2sg (you) / 3sg (he,she,it); "
-                            "used with 'verb'"},
-        ],
-        lessons="L01–L20",
-        bb_count=15,
-    ),
-    "T4": TemplateInfo(
-        template_id="T4",
-        name="What Question",
-        english_pattern="What is/does [subject] [verb]?",
-        skiri_example="Kirike ru'?",
-        english_example="What is it?",
-        slots=[
-            {"name": "subject", "type": "N", "required": False,
-             "description": "The subject (precedes kirike if present)"},
-            {"name": "verb_form", "type": "VERB_FORM", "required": False,
-             "description": "Pre-conjugated verb form (absolutive mode)"},
-            {"name": "verb", "type": "V", "required": False,
-             "description": "Dictionary verb — auto-conjugated (alternative "
-                            "to verb_form)"},
-            {"name": "person", "type": "PERSON", "required": False,
-             "description": "Who: 1sg / 2sg / 3sg; used with 'verb'"},
-        ],
-        lessons="L01–L18",
-        bb_count=17,
-    ),
-    "T5": TemplateInfo(
-        template_id="T5",
-        name="Where Question",
-        english_pattern="Where is/did [subject] [verb]?",
-        skiri_example="Kiru rasuks•at?",
-        english_example="Where did you go?",
-        slots=[
-            {"name": "verb_form", "type": "VERB_FORM", "required": False,
-             "description": "Pre-conjugated verb form (absolutive mode)"},
-            {"name": "verb", "type": "V", "required": False,
-             "description": "Dictionary verb — auto-conjugated (alternative "
-                            "to verb_form)"},
-            {"name": "person", "type": "PERSON", "required": False,
-             "description": "Who: 1sg / 2sg / 3sg; used with 'verb'"},
-            {"name": "noun", "type": "N", "required": False,
-             "description": "Subject noun (optional)"},
-        ],
-        lessons="L05–L13",
-        bb_count=7,
-    ),
-    "T6": TemplateInfo(
-        template_id="T6",
-        name="Negation",
-        english_pattern="No, [it is not X] / [alternative]",
-        skiri_example="Kaki, kaki karitki.",
-        english_example="No, it is not a rock.",
-        slots=[
-            {"name": "inner", "type": "TEXT", "required": True,
-             "description": "The negated or alternative clause"},
-        ],
-        lessons="L01–L18",
-        bb_count=13,
-    ),
-    "T7": TemplateInfo(
-        template_id="T7",
-        name="Affirmation",
-        english_pattern="Yes, [statement]",
-        skiri_example="Ahu', ti hitu'.",
-        english_example="Yes, this is a feather.",
-        slots=[
-            {"name": "yes_word", "type": "YES", "required": False,
-             "description": "Affirmation particle (ahu', hau, ilan')"},
-            {"name": "inner", "type": "TEXT", "required": True,
-             "description": "The affirmed statement"},
-        ],
-        lessons="L01–L20",
-        bb_count=7,
-    ),
-    "T8": TemplateInfo(
-        template_id="T8",
-        name="I did/do/will [verb]",
-        english_pattern="I [verb] ([object]) ([time/place])",
-        skiri_example="Tatuks•at Pari.",
-        english_example="I went to Pawnee.",
-        slots=[
-            {"name": "temporal", "type": "TEMPORAL", "required": False,
-             "description": "Time word (rahesa' 'tomorrow', hiras 'at night', etc.)"},
-            {"name": "adv_manner", "type": "ADV_MANNER", "required": False,
-             "description": "Manner adverb (rariksisu 'hard', cikstit 'well')"},
-            {"name": "object", "type": "N", "required": False,
-             "description": "Object noun (for transitive verbs)"},
-            {"name": "verb_form", "type": "VERB_FORM", "required": False,
-             "description": "1sg conjugated verb form"},
-            {"name": "verb", "type": "V", "required": False,
-             "description": "Dictionary verb — auto-conjugated (alternative "
-                            "to verb_form)"},
-            {"name": "person", "type": "PERSON", "required": False,
-             "description": "Who: 1sg (I, default) / 2sg (you) / 3sg; "
-                            "used with 'verb'"},
-            {"name": "tense", "type": "TENSE", "required": False,
-             "description": "past (default) / present / future; "
-                            "used with 'verb'"},
-            {"name": "locative", "type": "LOCATIVE", "required": False,
-             "description": "Place (Pari, tuks•kaku', etc.)"},
-        ],
-        lessons="L08–L20",
-        bb_count=27,
-    ),
-    "T9": TemplateInfo(
-        template_id="T9",
-        name="He/She [verb]s",
-        english_pattern="[Subject] [verb]s ([object])",
-        skiri_example="Pita ti•kuwutit rahurahki.",
-        english_example="The man killed a deer.",
-        slots=[
-            {"name": "subject", "type": "N", "required": True,
-             "description": "The subject (animate noun)"},
-            {"name": "we_particle", "type": "BOOL", "required": False,
-             "description": "Add 'we' particle (past/completed action)"},
-            {"name": "verb_form", "type": "VERB_FORM", "required": False,
-             "description": "3sg conjugated verb form"},
-            {"name": "verb", "type": "V", "required": False,
-             "description": "Dictionary verb — auto-conjugated (alternative "
-                            "to verb_form)"},
-            {"name": "tense", "type": "TENSE", "required": False,
-             "description": "past (default) / present / future; "
-                            "used with 'verb'"},
-            {"name": "object", "type": "N", "required": False,
-             "description": "Object noun (for transitive verbs)"},
-            {"name": "temporal", "type": "TEMPORAL", "required": False,
-             "description": "Time/season (pitsikat 'in winter', etc.)"},
-        ],
-        lessons="L06–L14",
-        bb_count=13,
-    ),
-    "T10": TemplateInfo(
-        template_id="T10",
-        name="Imperative (Command)",
-        english_pattern="[Do verb]! [Object]",
-        skiri_example="Suks•teka .rikut.",
-        english_example="Open the door.",
-        slots=[
-            {"name": "imp_particle", "type": "IMP", "required": False,
-             "description": "Imperative particle (suks=2sg, siks=2pl)"},
-            {"name": "verb_form", "type": "VERB_FORM", "required": True,
-             "description": "Verb stem (imperative form)"},
-            {"name": "object", "type": "N", "required": False,
-             "description": "Object noun (optional)"},
-        ],
-        lessons="L12, L15, L20",
-        bb_count=4,
-    ),
-}
-
-# Yes-word options for T7
-YES_WORDS = {
-    "ahu'": "yes (standard)",
-    "hau": "yes (variant)",
-    "ilan'": "yes (variant, L11)",
-}
-
-# Imperative particles for T10
-IMP_PARTICLES = {
-    "suks": "2sg imperative (you, do it!)",
-    "siks": "2pl imperative (you all, do it!)",
-    "sisuks": "2du imperative (you two, do it!)",
-    "stiks": "1sg imperative (let me...)",
-}
-
-
-# ---------------------------------------------------------------------------
-# Database helpers
-# ---------------------------------------------------------------------------
-def get_db_connection() -> sqlite3.Connection:
-    """Get a connection to the Skiri Pawnee database."""
-    db_path = _find_db()
-    conn = sqlite3.connect(db_path)
+def connect(db_path=None):
+    """A read-only connection. Nothing in this file writes to the database."""
+    conn = sqlite3.connect("file:%s?mode=ro" % Path(db_path or DB_PATH).resolve().as_posix(), uri=True)
     conn.row_factory = sqlite3.Row
     return conn
 
 
-def lookup_entry(conn: sqlite3.Connection, headword: str) -> Optional[Dict]:
-    """Look up a lexical entry by headword, with fuzzy fallbacks."""
-    cur = conn.cursor()
+# ---------------------------------------------------------------------------
+# Words and sentences as printed
+# ---------------------------------------------------------------------------
 
-    # 1. Exact match on headword or normalized_form
-    cur.execute(
-        "SELECT entry_id, headword, grammatical_class, verb_class, "
-        "phonetic_form, simplified_pronunciation "
-        "FROM lexical_entries WHERE headword = ? OR normalized_form = ?",
-        (headword, headword),
-    )
-    row = cur.fetchone()
-    if row:
-        return dict(row)
-
-    # 2. Try with/without final glottal stop (ʔ / ')
-    variants = []
-    if headword.endswith("ʔ"):
-        variants.append(headword[:-1])
-    elif headword.endswith("'"):
-        variants.append(headword[:-1])
-    else:
-        variants.extend([headword + "ʔ", headword + "'"])
-
-    for v in variants:
-        cur.execute(
-            "SELECT entry_id, headword, grammatical_class, verb_class, "
-            "phonetic_form, simplified_pronunciation "
-            "FROM lexical_entries WHERE headword = ? OR normalized_form = ?",
-            (v, v),
-        )
-        row = cur.fetchone()
-        if row:
-            return dict(row)
-
-    # 3. Check Blue Book attestations (BB forms may differ from dictionary)
-    cur.execute(
-        "SELECT entry_id FROM blue_book_attestations "
-        "WHERE bb_skiri_form LIKE ? AND entry_id IS NOT NULL LIMIT 1",
-        (f"%{headword}%",),
-    )
-    row = cur.fetchone()
-    if row and row["entry_id"]:
-        cur.execute(
-            "SELECT entry_id, headword, grammatical_class, verb_class, "
-            "phonetic_form, simplified_pronunciation "
-            "FROM lexical_entries WHERE entry_id = ?",
-            (row["entry_id"],),
-        )
-        row2 = cur.fetchone()
-        if row2:
-            return dict(row2)
-
-    # 4. Prefix match (e.g., "pita" matches "pitaruʔ")
-    cur.execute(
-        "SELECT entry_id, headword, grammatical_class, verb_class, "
-        "phonetic_form, simplified_pronunciation "
-        "FROM lexical_entries WHERE headword LIKE ? "
-        "AND grammatical_class IN ('N', 'N-KIN', 'N-DEP') "
-        "ORDER BY length(headword) LIMIT 1",
-        (headword + "%",),
-    )
-    row = cur.fetchone()
-    if row:
-        return dict(row)
-
-    return None
+def fold(text):
+    """Without accents and capitals. Used to compare places in a sentence, never to make a form."""
+    return "".join(ch for ch in unicodedata.normalize("NFD", text or "") if not unicodedata.combining(ch)).lower()
 
 
-def lookup_gloss(conn: sqlite3.Connection, entry_id: str) -> Optional[str]:
-    """Get the primary English gloss for an entry."""
-    cur = conn.cursor()
-    cur.execute(
-        "SELECT definition FROM glosses WHERE entry_id = ? ORDER BY sense_number LIMIT 1",
-        (entry_id,),
-    )
-    row = cur.fetchone()
-    return row["definition"] if row else None
+def split_token(token):
+    """(what stands before the word, the word, the punctuation after it). The apostrophe is a letter."""
+    lead = ""
+    while token and token[0] in "(\"“":
+        lead, token = lead + token[0], token[1:]
+    trail = ""
+    while token and token[-1] in ".,?!;:)\"”":
+        trail, token = token[-1] + trail, token[:-1]
+    return lead, token, trail
 
 
-try:
-    from person_forms import derive_forms as _derive_person_forms
-    from display_utils import modernize_form as _modernize_form
-    from display_utils import respell_form as _respell_form
-except ImportError:  # imported as a package (web app): scripts.person_forms
+def tokens(text):
+    return [split_token(t) for t in unicodedata.normalize("NFC", text or "").split()]
+
+
+def words(text):
+    return [core for _, core, _ in tokens(text) if core]
+
+
+def same_sentence_key(text):
+    """Two sentences are the same sentence if they agree in every letter, accent and bullet; the capital at
+    the start and the full stop, question or exclamation mark at the end are not counted."""
+    t = " ".join(unicodedata.normalize("NFC", text or "").split()).rstrip(".?!").strip()
+    return t[:1].lower() + t[1:]
+
+
+def book_page(page_number):
+    return page_number - BLUE_BOOK_PAGE_OFFSET if page_number else None
+
+
+def bb_row(conn, row):
     try:
-        from scripts.person_forms import derive_forms as _derive_person_forms
-        from scripts.display_utils import modernize_form as _modernize_form
-        from scripts.display_utils import respell_form as _respell_form
-    except ImportError:  # pragma: no cover
-        _derive_person_forms = None
-        _modernize_form = None
-        _respell_form = None
-
-PERSON_LABELS = {"1sg": "I", "2sg": "you", "3sg": "he/she/it"}
-# (mode, tense) -> derive_forms key pattern; {p} is the person
-_FORM_KEY = {
-    ("ind", "past"): "{p}_ind",
-    ("ind", "present"): "{p}_ind_impf",
-    ("ind", "future"): "{p}_ind_int",
-    ("abs", "past"): "{p}_abs",
-}
-# keys that are attested dictionary forms verbatim (not derived)
-_ATTESTED_KEYS = {"1sg_ind", "3sg_ind", "3sg_ind_impf", "3sg_ind_int"}
-
-
-def resolve_verb_form(conn: sqlite3.Connection, verb: str,
-                      person: str = "3sg", tense: str = "past",
-                      mode: str = "ind") -> Dict[str, Any]:
-    """Resolve a dictionary verb + person/tense/mode to a surface form.
-
-    Uses the entry's attested paradigmatic forms directly when they cover the
-    request (1sg/3sg indicative), and person_forms.py derivation (validated
-    27/27 against Parks Appendix 1) for 2nd person and absolutive mode.
-
-    Returns {"form","gloss","entry_id","derived","note"} or {"error": ...}.
-    """
-    if _derive_person_forms is None:
-        return {"error": "person_forms.py not available"}
-    if person not in PERSON_LABELS:
-        return {"error": f"Unsupported person {person!r} (use 1sg/2sg/3sg)"}
-    key_pattern = _FORM_KEY.get((mode, tense))
-    if key_pattern is None:
-        return {"error": f"Unsupported mode/tense combination {mode}/{tense}"}
-
-    cur = conn.cursor()
-    cur.execute(
-        "SELECT le.entry_id, le.headword, le.stem_preverb, le.verb_class, "
-        "  le.grammatical_class, "
-        "  max(CASE WHEN pf.form_number=1 THEN pf.skiri_form END) AS f1, "
-        "  max(CASE WHEN pf.form_number=2 THEN pf.skiri_form END) AS f2, "
-        "  max(CASE WHEN pf.form_number=3 THEN pf.skiri_form END) AS f3, "
-        "  max(CASE WHEN pf.form_number=5 THEN pf.skiri_form END) AS f5 "
-        "FROM lexical_entries le "
-        "LEFT JOIN paradigmatic_forms pf ON le.entry_id = pf.entry_id "
-        "WHERE (le.headword = ? OR le.normalized_form = ? "
-        "       OR le.headword LIKE ?) "
-        "  AND le.grammatical_class LIKE 'V%' "
-        "GROUP BY le.entry_id "
-        "ORDER BY (le.headword = ?) DESC, (f1 IS NOT NULL) DESC, "
-        "         (f2 IS NOT NULL) DESC, length(le.headword) LIMIT 1",
-        (verb, verb, verb + "%", verb),
-    )
-    row = cur.fetchone()
-    if not row:
-        return {"error": f"No verb entry found for {verb!r}"}
-
-    forms = _derive_person_forms(
-        form_1=row["f1"], form_2=row["f2"], form_3=row["f3"],
-        form_5=row["f5"], headword=row["headword"],
-        stem_preverb=row["stem_preverb"],
-        gram_class=row["grammatical_class"],
-    )
-    key = key_pattern.format(p=person)
-    surface = forms.get(key)
-    if not surface:
-        return {"error": f"Form {key} not derivable for {row['headword']!r} "
-                         f"(paradigm forms incomplete or irregular shape)"}
-
-    gloss = lookup_gloss(conn, row["entry_id"]) or row["headword"]
-    # keep the gloss short for sentence display: first clause only
-    gloss = re.split(r'[;,]', gloss)[0].strip().rstrip('.')
-    derived = key not in _ATTESTED_KEYS
-    note = None
-    if derived:
-        if mode == "abs" or person == "2sg":
-            note = ("verb form derived from the attested paradigm by the "
-                    "person/mode prefix rules of Parks Appendix 1")
-        else:
-            note = ("verb form derived by prefix transplant across attested "
-                    "aspect forms (unattested combination — verify)")
-    return {
-        "form": surface,
-        "gloss": gloss,
-        "entry_id": row["entry_id"],
-        "derived": derived,
-        "note": note,
-    }
-
-
-def find_bb_attestation(
-    conn: sqlite3.Connection, skiri_text: str
-) -> Optional[str]:
-    """Check if a sentence (or close variant) appears in Blue Book attestations."""
-    cur = conn.cursor()
-    # Normalize: strip punctuation, collapse whitespace, lowercase
-    normalized = re.sub(r'[.,!?;:\'\"]', '', skiri_text).strip().lower()
-    normalized = re.sub(r'\s+', ' ', normalized)
-
-    cur.execute(
-        "SELECT lesson_number, full_sentence_pawnee "
-        "FROM blue_book_attestations "
-        "WHERE full_sentence_pawnee IS NOT NULL AND full_sentence_pawnee != ''"
-    )
-    matches = []
-    for row in cur.fetchall():
-        bb_norm = re.sub(r'[.,!?;:\'\"]', '', row["full_sentence_pawnee"]).strip().lower()
-        bb_norm = re.sub(r'\s+', ' ', bb_norm)
-        # Exact or close match (ignore BB OCR artifacts like •, spaces)
-        bb_clean = bb_norm.replace('•', '').replace(' ', '')
-        query_clean = normalized.replace('•', '').replace(' ', '')
-        if bb_clean == query_clean or bb_norm == normalized:
-            matches.append(f"L{row['lesson_number']:02d}")
-
-    if matches:
-        return ", ".join(sorted(set(matches)))
-    return None
-
-
-def _maybe_resolve_verb(conn, slots, mode, default_person="3sg",
-                        default_tense="past"):
-    """If slots carry a dictionary 'verb' (+person/tense) instead of a
-    pre-conjugated 'verb_form', resolve it via resolve_verb_form().
-
-    Returns (verb_form, resolution_or_None, error_or_None)."""
-    verb_form = (slots.get("verb_form") or "").strip()
-    if verb_form:
-        return verb_form, None, None
-    verb = (slots.get("verb") or "").strip()
-    if not verb:
-        return "", None, None
-    person = (slots.get("person") or default_person).strip() or default_person
-    tense = (slots.get("tense") or default_tense).strip() or default_tense
-    res = resolve_verb_form(conn, verb, person=person, tense=tense, mode=mode)
-    if "error" in res:
-        return "", None, res["error"]
-    res["person"] = person
-    res["tense"] = tense
-    return res["form"], res, None
-
-
-def _apply_resolution(result: "TemplateResult", res: Optional[Dict]) -> None:
-    """Cap confidence and attach the derivation note for resolved verbs."""
-    if not res:
-        return
-    if res.get("derived"):
-        if result.confidence == "HIGH" and not result.bb_attestation:
-            result.confidence = "MEDIUM"
-        if res.get("note"):
-            extra = f"Verb: {res['note']}"
-            result.word_order_note = (
-                f"{result.word_order_note} — {extra}"
-                if result.word_order_note else extra)
+        row = int(row)
+    except (TypeError, ValueError):
+        return None
+    return conn.execute(
+        "select a.id, a.bb_skiri_form, a.bb_english, a.context_type, a.lesson_number, a.page_number, "
+        "       a.entry_id, a.match_type "
+        "from blue_book_attestations a where a.id = ? and a.bb_skiri_form is not null", (row,)).fetchone()
 
 
 # ---------------------------------------------------------------------------
-# Assembly functions — one per template
+# Frames
 # ---------------------------------------------------------------------------
-def _assemble_t1(conn: sqlite3.Connection, **slots) -> TemplateResult:
-    """T1: Identification — 'ti [NOUN]'"""
-    noun = slots.get("noun", "").strip()
-    if not noun:
-        return TemplateResult(
-            skiri_sentence="", english_gloss="", template_id="T1",
-            template_name="Identification", confidence="LOW",
-            error="Noun slot is required",
-        )
 
-    entry = lookup_entry(conn, noun)
-    gloss = ""
-    entry_id = None
-    if entry:
-        entry_id = entry["entry_id"]
-        gloss = lookup_gloss(conn, entry_id) or noun
-
-    sentence = f"ti {noun}"
-    english = f"This is {gloss}" if gloss else f"This is {noun}"
-
-    breakdown = [
-        MorphemeChip(form="ti", gloss="this is / it is", role="PARTICLE"),
-        MorphemeChip(form=noun, gloss=gloss or noun, role="NOUN", entry_id=entry_id),
-    ]
-
-    bb = find_bb_attestation(conn, sentence)
-    confidence = "HIGH" if bb else ("MEDIUM" if entry else "LOW")
-
-    return TemplateResult(
-        skiri_sentence=sentence,
-        english_gloss=english,
-        template_id="T1",
-        template_name="Identification",
-        confidence=confidence,
-        morpheme_breakdown=breakdown,
-        bb_attestation=bb,
-    )
-
-
-def _assemble_t2(conn: sqlite3.Connection, **slots) -> TemplateResult:
-    """T2: Descriptive — '[NOUN] ti [VD]'"""
-    noun = slots.get("noun", "").strip()
-    vd = slots.get("vd", "").strip()
-
-    if not noun or not vd:
-        return TemplateResult(
-            skiri_sentence="", english_gloss="", template_id="T2",
-            template_name="Descriptive", confidence="LOW",
-            error="Both noun and descriptive verb (vd) slots are required",
-        )
-
-    noun_entry = lookup_entry(conn, noun)
-    vd_entry = lookup_entry(conn, vd)
-
-    noun_gloss = ""
-    vd_gloss = ""
-    noun_eid = None
-    vd_eid = None
-
-    if noun_entry:
-        noun_eid = noun_entry["entry_id"]
-        noun_gloss = lookup_gloss(conn, noun_eid) or noun
-    if vd_entry:
-        vd_eid = vd_entry["entry_id"]
-        vd_gloss = lookup_gloss(conn, vd_eid) or vd
-
-    # Default word order: NOUN ti VD
-    sentence = f"{noun} ti {vd}"
-    english = f"The {noun_gloss or noun} is {vd_gloss or vd}"
-
-    breakdown = [
-        MorphemeChip(form=noun, gloss=noun_gloss or noun, role="SUBJECT", entry_id=noun_eid),
-        MorphemeChip(form="ti", gloss="is (indicative)", role="PARTICLE"),
-        MorphemeChip(form=vd, gloss=vd_gloss or vd, role="VERB", entry_id=vd_eid),
-    ]
-
-    bb = find_bb_attestation(conn, sentence)
-    confidence = "HIGH" if bb else ("MEDIUM" if noun_entry and vd_entry else "LOW")
-
-    return TemplateResult(
-        skiri_sentence=sentence,
-        english_gloss=english,
-        template_id="T2",
-        template_name="Descriptive",
-        confidence=confidence,
-        morpheme_breakdown=breakdown,
-        bb_attestation=bb,
-        word_order_note="Both 'NOUN ti VD' and 'ti VD NOUN' are attested (L09)",
-    )
-
-
-def _assemble_t3(conn: sqlite3.Connection, **slots) -> TemplateResult:
-    """T3: Yes/No Question — 'ka [VERB_FORM] [NOUN]?'"""
-    verb_form, res, err = _maybe_resolve_verb(conn, slots, mode="abs")
-    noun = slots.get("noun", "").strip()
-
-    if err or not verb_form:
-        return TemplateResult(
-            skiri_sentence="", english_gloss="", template_id="T3",
-            template_name="Yes/No Question", confidence="LOW",
-            error=err or "Verb form (or verb + person) slot is required",
-        )
-
-    parts = ["ka", verb_form]
-    if noun:
-        parts.append(noun)
-    sentence = " ".join(parts) + "?"
-
-    verb_gloss = (f"{PERSON_LABELS.get(res['person'], '')} {res['gloss']}"
-                  if res else "verb (absolutive)")
-    # Build breakdown
-    breakdown = [
-        MorphemeChip(form="ka", gloss="(yes/no question)", role="PARTICLE"),
-        MorphemeChip(form=verb_form, gloss=verb_gloss, role="VERB",
-                     entry_id=res["entry_id"] if res else None),
-    ]
-    if noun:
-        noun_entry = lookup_entry(conn, noun)
-        noun_gloss = ""
-        if noun_entry:
-            noun_gloss = lookup_gloss(conn, noun_entry["entry_id"]) or noun
-        breakdown.append(
-            MorphemeChip(
-                form=noun, gloss=noun_gloss or noun, role="SUBJECT",
-                entry_id=noun_entry["entry_id"] if noun_entry else None,
-            )
-        )
-
-    if res:
-        subj = noun or PERSON_LABELS.get(res["person"], "it")
-        english = f"[yes/no?] {subj} — {res['gloss']}"
-    else:
-        english = f"Is {noun or 'it'} {verb_form}?"
-    bb = find_bb_attestation(conn, sentence)
-    confidence = "HIGH" if bb else "MEDIUM"
-
-    result = TemplateResult(
-        skiri_sentence=sentence,
-        english_gloss=english,
-        template_id="T3",
-        template_name="Yes/No Question",
-        confidence=confidence,
-        morpheme_breakdown=breakdown,
-        bb_attestation=bb,
-        word_order_note="Adverb (e.g., cikstit) can precede ka",
-    )
-    _apply_resolution(result, res)
-    return result
-
-
-def _assemble_t4(conn: sqlite3.Connection, **slots) -> TemplateResult:
-    """T4: What Question — '(SUBJECT) kirike [VERB_FORM]?'"""
-    subject = slots.get("subject", "").strip()
-    verb_form, res, err = _maybe_resolve_verb(conn, slots, mode="abs")
-
-    if err or not verb_form:
-        return TemplateResult(
-            skiri_sentence="", english_gloss="", template_id="T4",
-            template_name="What Question", confidence="LOW",
-            error=err or "Verb form (or verb + person) slot is required",
-        )
-
-    parts = []
-    if subject:
-        parts.append(subject)
-    parts.extend(["kirike", verb_form])
-    sentence = " ".join(parts) + "?"
-
-    breakdown = []
-    if subject:
-        subj_entry = lookup_entry(conn, subject)
-        subj_gloss = ""
-        if subj_entry:
-            subj_gloss = lookup_gloss(conn, subj_entry["entry_id"]) or subject
-        breakdown.append(
-            MorphemeChip(
-                form=subject, gloss=subj_gloss or subject, role="SUBJECT",
-                entry_id=subj_entry["entry_id"] if subj_entry else None,
-            )
-        )
-    breakdown.append(MorphemeChip(form="kirike", gloss="what", role="PARTICLE"))
-    breakdown.append(MorphemeChip(
-        form=verb_form,
-        gloss=(f"{PERSON_LABELS.get(res['person'], '')} {res['gloss']}"
-               if res else "verb (absolutive)"),
-        role="VERB", entry_id=res["entry_id"] if res else None))
-
-    subj_str = (f"the {subject}" if subject
-                else PERSON_LABELS.get(res["person"], "it") if res else "it")
-    english = (f"What — {subj_str} — {res['gloss']}?" if res
-               else f"What is {subj_str} doing?")
-    bb = find_bb_attestation(conn, sentence)
-    confidence = "HIGH" if bb else "MEDIUM"
-
-    result = TemplateResult(
-        skiri_sentence=sentence,
-        english_gloss=english,
-        template_id="T4",
-        template_name="What Question",
-        confidence=confidence,
-        morpheme_breakdown=breakdown,
-        bb_attestation=bb,
-        word_order_note="Subject precedes kirike when present",
-    )
-    _apply_resolution(result, res)
-    return result
-
-
-def _assemble_t5(conn: sqlite3.Connection, **slots) -> TemplateResult:
-    """T5: Where Question — 'kiru [VERB_FORM] [NOUN]?'"""
-    verb_form, res, err = _maybe_resolve_verb(conn, slots, mode="abs")
-    noun = slots.get("noun", "").strip()
-
-    if err or not verb_form:
-        return TemplateResult(
-            skiri_sentence="", english_gloss="", template_id="T5",
-            template_name="Where Question", confidence="LOW",
-            error=err or "Verb form (or verb + person) slot is required",
-        )
-
-    parts = ["kiru", verb_form]
-    if noun:
-        parts.append(noun)
-    sentence = " ".join(parts) + "?"
-
-    breakdown = [
-        MorphemeChip(form="kiru", gloss="where", role="PARTICLE"),
-        MorphemeChip(
-            form=verb_form,
-            gloss=(f"{PERSON_LABELS.get(res['person'], '')} {res['gloss']}"
-                   if res else "verb (absolutive)"),
-            role="VERB", entry_id=res["entry_id"] if res else None),
-    ]
-    if noun:
-        noun_entry = lookup_entry(conn, noun)
-        noun_gloss = ""
-        if noun_entry:
-            noun_gloss = lookup_gloss(conn, noun_entry["entry_id"]) or noun
-        breakdown.append(
-            MorphemeChip(
-                form=noun, gloss=noun_gloss or noun, role="SUBJECT",
-                entry_id=noun_entry["entry_id"] if noun_entry else None,
-            )
-        )
-
-    if res:
-        subj = noun or PERSON_LABELS.get(res["person"], "it")
-        english = f"Where — {subj} — {res['gloss']}?"
-    else:
-        english = f"Where did {noun or 'it'} go/is?"
-    bb = find_bb_attestation(conn, sentence)
-    confidence = "HIGH" if bb else "MEDIUM"
-
-    result = TemplateResult(
-        skiri_sentence=sentence,
-        english_gloss=english,
-        template_id="T5",
-        template_name="Where Question",
-        confidence=confidence,
-        morpheme_breakdown=breakdown,
-        bb_attestation=bb,
-        word_order_note="Also 'kirti' for 'where (destination)'",
-    )
-    _apply_resolution(result, res)
-    return result
-
-
-def _assemble_t6(conn: sqlite3.Connection, **slots) -> TemplateResult:
-    """T6: Negation — 'kaki, [INNER]'"""
-    inner = slots.get("inner", "").strip()
-    if not inner:
-        return TemplateResult(
-            skiri_sentence="", english_gloss="", template_id="T6",
-            template_name="Negation", confidence="LOW",
-            error="Inner clause is required",
-        )
-
-    sentence = f"kaki', {inner}"
-
-    breakdown = [
-        MorphemeChip(form="kaki'", gloss="no / not", role="PARTICLE"),
-        MorphemeChip(form=inner, gloss="(clause)", role="CLAUSE"),
-    ]
-
-    english = f"No, {inner}"
-    bb = find_bb_attestation(conn, sentence)
-    confidence = "HIGH" if bb else "MEDIUM"
-
-    return TemplateResult(
-        skiri_sentence=sentence,
-        english_gloss=english,
-        template_id="T6",
-        template_name="Negation",
-        confidence=confidence,
-        morpheme_breakdown=breakdown,
-        bb_attestation=bb,
-        word_order_note="Often followed by a positive restatement",
-    )
-
-
-def _assemble_t7(conn: sqlite3.Connection, **slots) -> TemplateResult:
-    """T7: Affirmation — '[YES], [INNER]'"""
-    yes_word = slots.get("yes_word", "ahu'").strip()
-    inner = slots.get("inner", "").strip()
-
-    if not inner:
-        return TemplateResult(
-            skiri_sentence="", english_gloss="", template_id="T7",
-            template_name="Affirmation", confidence="LOW",
-            error="Inner statement is required",
-        )
-
-    if yes_word not in YES_WORDS:
-        yes_word = "ahu'"
-
-    sentence = f"{yes_word}, {inner}"
-
-    breakdown = [
-        MorphemeChip(form=yes_word, gloss="yes", role="PARTICLE"),
-        MorphemeChip(form=inner, gloss="(statement)", role="CLAUSE"),
-    ]
-
-    english = f"Yes, {inner}"
-    bb = find_bb_attestation(conn, sentence)
-    confidence = "HIGH" if bb else "MEDIUM"
-
-    return TemplateResult(
-        skiri_sentence=sentence,
-        english_gloss=english,
-        template_id="T7",
-        template_name="Affirmation",
-        confidence=confidence,
-        morpheme_breakdown=breakdown,
-        bb_attestation=bb,
-    )
-
-
-def _assemble_t8(conn: sqlite3.Connection, **slots) -> TemplateResult:
-    """T8: 1sg Declarative — '(TEMPORAL) (ADV_MANNER) [1SG_VERB] (OBJECT) (LOCATIVE)'"""
-    temporal = slots.get("temporal", "").strip()
-    adv_manner = slots.get("adv_manner", "").strip()
-    obj = slots.get("object", "").strip()
-    verb_form, res, err = _maybe_resolve_verb(conn, slots, mode="ind",
-                                              default_person="1sg")
-    locative = slots.get("locative", "").strip()
-
-    if err or not verb_form:
-        return TemplateResult(
-            skiri_sentence="", english_gloss="", template_id="T8",
-            template_name="I did/do/will [verb]", confidence="LOW",
-            error=err or "Verb form (or verb + person/tense) slot is required",
-        )
-
-    parts = []
-    breakdown = []
-
-    # CLAUSE-INITIAL temporals come first
-    if temporal:
-        parts.append(temporal)
-        breakdown.append(MorphemeChip(form=temporal, gloss="(time)", role="ADVERB"))
-
-    # PRECEDES-VERB manner adverbs come before the verb
-    # BB evidence: "Rariksisu tatutsiks•a•wahri'." (L18)
-    if adv_manner:
-        parts.append(adv_manner)
-        breakdown.append(MorphemeChip(form=adv_manner, gloss="(manner)", role="ADVERB"))
-
-    # Verb
-    # In BB 1sg declaratives, verb typically precedes object:
-    #   Tatuks•a kisatski  "I ate meat" (L11)
-    #   Tah•raspe' asaki   "I'm looking for my dog" (L08)
-    # But quantified objects precede: Tawit kaas tatutak•erit (L13)
-    parts.append(verb_form)
-    breakdown.append(MorphemeChip(
-        form=verb_form,
-        gloss=(f"{PERSON_LABELS.get(res['person'], 'I')} "
-               f"({res['tense']}) {res['gloss']}" if res else "I (verb)"),
-        role="VERB", entry_id=res["entry_id"] if res else None))
-
-    if obj:
-        parts.append(obj)
-        obj_entry = lookup_entry(conn, obj)
-        obj_gloss = ""
-        if obj_entry:
-            obj_gloss = lookup_gloss(conn, obj_entry["entry_id"]) or obj
-        breakdown.append(
-            MorphemeChip(
-                form=obj, gloss=obj_gloss or obj, role="OBJECT",
-                entry_id=obj_entry["entry_id"] if obj_entry else None,
-            )
-        )
-
-    if locative:
-        parts.append(locative)
-        breakdown.append(MorphemeChip(form=locative, gloss="(place)", role="LOCATIVE"))
-
-    sentence = " ".join(parts)
-
-    # Build English gloss
-    if res:
-        tense_aux = {"past": "", "present": "(am/is -ing) ",
-                     "future": "(will) "}.get(res["tense"], "")
-        eng_parts = [PERSON_LABELS.get(res["person"], "I"),
-                     f"{tense_aux}{res['gloss']}"]
-    else:
-        eng_parts = ["I", verb_form]  # placeholder
-    if adv_manner:
-        eng_parts.append(f"({adv_manner})")
-    if obj:
-        eng_parts.append(obj)
-    if locative:
-        eng_parts.append(f"to {locative}")
-    english = " ".join(eng_parts)
-
-    bb = find_bb_attestation(conn, sentence)
-    confidence = "HIGH" if bb else "MEDIUM"
-
-    result = TemplateResult(
-        skiri_sentence=sentence,
-        english_gloss=english,
-        template_id="T8",
-        template_name="I did/do/will [verb]",
-        confidence=confidence,
-        morpheme_breakdown=breakdown,
-        bb_attestation=bb,
-        word_order_note="Temporal can be clause-initial or clause-final (both attested L17). "
-                        "Manner adverbs precede verb (L18: rariksisu tatutsiks•a•wahri').",
-    )
-    _apply_resolution(result, res)
-    return result
-
-
-def _assemble_t9(conn: sqlite3.Connection, **slots) -> TemplateResult:
-    """T9: 3sg Narrative — '[SUBJECT] (we) [3SG_VERB] [OBJECT] (TEMPORAL)'"""
-    subject = slots.get("subject", "").strip()
-    verb_form, res, err = _maybe_resolve_verb(conn, slots, mode="ind",
-                                              default_person="3sg")
-    obj = slots.get("object", "").strip()
-    we_particle = slots.get("we_particle", "").strip().lower() in ("true", "1", "yes")
-    temporal = slots.get("temporal", "").strip()
-
-    if err or not subject or not verb_form:
-        return TemplateResult(
-            skiri_sentence="", english_gloss="", template_id="T9",
-            template_name="He/She [verb]s", confidence="LOW",
-            error=err or "Subject and verb form (or verb + tense) are required",
-        )
-
-    parts = [subject]
-    breakdown = []
-
-    subj_entry = lookup_entry(conn, subject)
-    subj_gloss = ""
-    if subj_entry:
-        subj_gloss = lookup_gloss(conn, subj_entry["entry_id"]) or subject
-    breakdown.append(
-        MorphemeChip(
-            form=subject, gloss=subj_gloss or subject, role="SUBJECT",
-            entry_id=subj_entry["entry_id"] if subj_entry else None,
-        )
-    )
-
-    # 'we' particle marks completed/past action
-    # BB: "Rahurahki we tut•awi'at" (L09), "Kiwaku we tu'h•kuksas" (L09)
-    # Position: between subject and verb
-    if we_particle:
-        parts.append("we")
-        breakdown.append(MorphemeChip(form="we", gloss="(completed action)", role="PARTICLE"))
-
-    parts.append(verb_form)
-    breakdown.append(MorphemeChip(
-        form=verb_form,
-        gloss=(f"he/she ({res['tense']}) {res['gloss']}" if res
-               else "he/she (verb)"),
-        role="VERB", entry_id=res["entry_id"] if res else None))
-
-    if obj:
-        parts.append(obj)
-        obj_entry = lookup_entry(conn, obj)
-        obj_gloss = ""
-        if obj_entry:
-            obj_gloss = lookup_gloss(conn, obj_entry["entry_id"]) or obj
-        breakdown.append(
-            MorphemeChip(
-                form=obj, gloss=obj_gloss or obj, role="OBJECT",
-                entry_id=obj_entry["entry_id"] if obj_entry else None,
-            )
-        )
-
-    # Temporal goes clause-final in T9
-    # BB: "Pita ti•kuwutit rahurahki pitsikat" (L09)
-    if temporal:
-        parts.append(temporal)
-        breakdown.append(MorphemeChip(form=temporal, gloss="(time)", role="ADVERB"))
-
-    sentence = " ".join(parts)
-
-    eng_parts = [f"The {subj_gloss or subject}"]
-    if res:
-        tense_aux = {"past": "", "present": "(is -ing) ",
-                     "future": "(will) "}.get(res["tense"], "")
-        eng_parts.append(f"{tense_aux}{res['gloss']}")
-    else:
-        eng_parts.append(verb_form)
-    if obj:
-        eng_parts.append(f"the {obj}")
-    if temporal:
-        eng_parts.append(f"({temporal})")
-    english = " ".join(eng_parts)
-
-    bb = find_bb_attestation(conn, sentence)
-    confidence = "HIGH" if bb else "MEDIUM"
-
-    result = TemplateResult(
-        skiri_sentence=sentence,
-        english_gloss=english,
-        template_id="T9",
-        template_name="He/She [verb]s",
-        confidence=confidence,
-        morpheme_breakdown=breakdown,
-        bb_attestation=bb,
-        word_order_note="SOV default; object can follow verb (L14). "
-                        "'we' particle marks completed action (L09). "
-                        "Temporal clause-final (L09: pitsikat).",
-    )
-    _apply_resolution(result, res)
-    return result
-
-
-def _assemble_t10(conn: sqlite3.Connection, **slots) -> TemplateResult:
-    """T10: Imperative — '[IMP]•[VERB] [OBJECT]'"""
-    imp = slots.get("imp_particle", "suks").strip()
-    verb_form = slots.get("verb_form", "").strip()
-    obj = slots.get("object", "").strip()
-
-    if not verb_form:
-        return TemplateResult(
-            skiri_sentence="", english_gloss="", template_id="T10",
-            template_name="Imperative (Command)", confidence="LOW",
-            error="Verb form slot is required",
-        )
-
-    if imp not in IMP_PARTICLES:
-        imp = "suks"
-
-    # Imperative particle is a proclitic — joins to verb
-    verb_with_imp = f"{imp}•{verb_form}"
-
-    parts = [verb_with_imp]
-    breakdown = [
-        MorphemeChip(form=imp, gloss="(imperative)", role="PARTICLE"),
-        MorphemeChip(form=verb_form, gloss="(verb stem)", role="VERB"),
-    ]
-
-    if obj:
-        parts.append(obj)
-        obj_entry = lookup_entry(conn, obj)
-        obj_gloss = ""
-        if obj_entry:
-            obj_gloss = lookup_gloss(conn, obj_entry["entry_id"]) or obj
-        breakdown.append(
-            MorphemeChip(
-                form=obj, gloss=obj_gloss or obj, role="OBJECT",
-                entry_id=obj_entry["entry_id"] if obj_entry else None,
-            )
-        )
-
-    sentence = " ".join(parts)
-    english = f"(Do) {verb_form}" + (f" {obj}" if obj else "") + "!"
-
-    bb = find_bb_attestation(conn, sentence)
-    confidence = "HIGH" if bb else "MEDIUM"
-
-    return TemplateResult(
-        skiri_sentence=sentence,
-        english_gloss=english,
-        template_id="T10",
-        template_name="Imperative (Command)",
-        confidence=confidence,
-        morpheme_breakdown=breakdown,
-        bb_attestation=bb,
-    )
-
-
-# ---------------------------------------------------------------------------
-# Dispatcher
-# ---------------------------------------------------------------------------
-_ASSEMBLERS = {
-    "T1": _assemble_t1,
-    "T2": _assemble_t2,
-    "T3": _assemble_t3,
-    "T4": _assemble_t4,
-    "T5": _assemble_t5,
-    "T6": _assemble_t6,
-    "T7": _assemble_t7,
-    "T8": _assemble_t8,
-    "T9": _assemble_t9,
-    "T10": _assemble_t10,
-}
-
-
-def assemble(template_id: str, **slots) -> TemplateResult:
-    """
-    Assemble a sentence from a template and slot values.
-
-    Args:
-        template_id: One of T1–T10
-        **slots: Named slot values (varies by template)
-
-    Returns:
-        TemplateResult with assembled sentence, breakdown, and confidence
-    """
-    if template_id not in _ASSEMBLERS:
-        return TemplateResult(
-            skiri_sentence="", english_gloss="", template_id=template_id,
-            template_name="Unknown", confidence="LOW",
-            error=f"Unknown template: {template_id}. Use T1–T10.",
-        )
-
-    conn = get_db_connection()
+def load_frame(conn, template_id, number=0):
+    """A frame with its printed text, or a ValueError if the row no longer holds that text."""
+    if template_id not in FRAMES:
+        raise ValueError("Unknown template: %s. Use T1 to T10." % template_id)
+    specs = FRAMES[template_id]["frames"]
     try:
-        result = _ASSEMBLERS[template_id](conn, **slots)
-        _enrich_result(conn, result)
+        spec = specs[int(number)]
+    except (IndexError, TypeError, ValueError):
+        raise ValueError("%s has %d frames; there is no frame %r." % (template_id, len(specs), number))
+    row = bb_row(conn, spec["frame"]["row"])
+    if row is None or row["bb_skiri_form"] != spec["frame"]["text"]:
+        raise ValueError("%s, frame %s: row %s of the Blue Book table does not hold the text the frame names. "
+                         "Run sentence_templates.py --check." % (template_id, number, spec["frame"]["row"]))
+    return {"template_id": template_id, "number": int(number), "row": row["id"], "text": row["bb_skiri_form"],
+            "english": row["bb_english"], "lesson": row["lesson_number"], "book_page": book_page(row["page_number"]),
+            "tokens": tokens(row["bb_skiri_form"]), "slots": spec["slots"]}
+
+
+def list_templates(conn=None):
+    """The templates with their frames, for the page."""
+    own = conn is None
+    conn = conn or connect()
+    try:
+        result = []
+        for template_id, spec in FRAMES.items():
+            frames = []
+            for number in range(len(spec["frames"])):
+                f = load_frame(conn, template_id, number)
+                slot_at = {p: name for name, places in f["slots"].items() for p in places}
+                frames.append({
+                    "number": number, "row": f["row"], "text": f["text"], "english": f["english"],
+                    "lesson": f["lesson"], "book_page": f["book_page"],
+                    "slots": {name: {"places": places, "kind": SLOT_KINDS[name]} for name, places in f["slots"].items()},
+                    "words": [{"text": lead + core + trail, "slot": slot_at.get(i)}
+                              for i, (lead, core, trail) in enumerate(f["tokens"])]})
+            result.append({"template_id": template_id, "name": spec["name"],
+                           "english_pattern": spec["english_pattern"], "frames": frames,
+                           # the first frame, for pages that show one example per template
+                           "skiri_example": frames[0]["text"], "english_example": frames[0]["english"],
+                           "example_lesson": frames[0]["lesson"]})
         return result
     finally:
-        conn.close()
+        if own:
+            conn.close()
 
 
-def _enrich_result(conn: sqlite3.Connection, result: TemplateResult) -> None:
-    """Attach modern spelling / pronunciation / IPA to the result.
+def printed_sentences(conn):
+    """Every form of the Blue Book table, by its sentence key."""
+    index = {}
+    for r in conn.execute("select id, bb_skiri_form, bb_english, lesson_number, page_number from blue_book_attestations "
+                          "where bb_skiri_form is not null order by id"):
+        index.setdefault(same_sentence_key(r["bb_skiri_form"]), []).append(r)
+    return index
 
-    Truth policy:
-      - Chips whose form IS a dictionary headword get the entry's ATTESTED
-        normalized_form, simplified_pronunciation, and IPA phonetic_form.
-      - Everything else (conjugated forms, particles) gets RULE-DERIVED
-        modern spelling (c→č context rule, 99.5% vs attested normalized
-        forms) and an APPROXIMATE spelling-based respelling. IPA is never
-        generated — it stays None where Parks did not record it.
+
+# ---------------------------------------------------------------------------
+# What may stand in a slot
+# ---------------------------------------------------------------------------
+
+def _option(row, here):
+    return {"row": row["id"], "form": " ".join(words(row["bb_skiri_form"])), "english": row["bb_english"] or "",
+            "lesson": row["lesson_number"], "here": here}
+
+
+def _same_place(conn, frame, places):
+    """Rows of the book that are the frame with other words in these places: what the book itself puts there."""
+    n = len(frame["tokens"])
+    fixed = {i: fold(core) for i, (_, core, _) in enumerate(frame["tokens"]) if i not in places}
+    if not fixed:
+        return []                      # a frame of one word has no pattern to share
+    found = []
+    for r in conn.execute("select id, bb_skiri_form, bb_english, lesson_number from blue_book_attestations "
+                          "where bb_skiri_form is not null order by id"):
+        toks = tokens(r["bb_skiri_form"])
+        if len(toks) != n or any(fold(toks[i][1]) != f for i, f in fixed.items()):
+            continue
+        if r["bb_skiri_form"] == r["bb_skiri_form"].upper():
+            continue                   # a title line in capitals: the same words stand below it in ordinary letters
+        found.append({"row": r["id"], "form": " ".join(toks[i][1] for i in places), "english": r["bb_english"] or "",
+                      "lesson": r["lesson_number"], "here": True, "whole_sentence": True, "places": list(places)})
+    return found
+
+
+def slot_options(template_id, frame=0, slot="", q="", limit=60, conn=None):
+    """Printed words that may stand in a slot of a frame, the ones the book itself puts there first.
+
+    An option names a row. For an option marked "whole_sentence" the row is a sentence of the same shape and
+    the word is taken from the same place in it.
     """
-    if _modernize_form is None or result.error or not result.skiri_sentence:
-        return
-    result.modern_sentence = _modernize_form(result.skiri_sentence)
-    result.approx_pronunciation = _respell_form(result.skiri_sentence)
-
-    cur = conn.cursor()
-    for chip in result.morpheme_breakdown:
-        if chip.entry_id:
-            cur.execute(
-                "SELECT headword, normalized_form, simplified_pronunciation, "
-                "phonetic_form FROM lexical_entries WHERE entry_id = ?",
-                (chip.entry_id,))
-            row = cur.fetchone()
-            if row and chip.form in (row["headword"], row["normalized_form"]):
-                chip.modern = row["normalized_form"]
-                chip.pron = row["simplified_pronunciation"]
-                chip.ipa = row["phonetic_form"]
-                chip.attested = True
-                continue
-        chip.modern = _modernize_form(chip.form)
-        chip.pron = _respell_form(chip.form)
-        chip.attested = False
-
-
-def list_templates() -> List[Dict[str, Any]]:
-    """Return metadata for all templates (for UI display)."""
-    return [
-        {
-            "template_id": t.template_id,
-            "name": t.name,
-            "english_pattern": t.english_pattern,
-            "skiri_example": t.skiri_example,
-            "english_example": t.english_example,
-            "slots": t.slots,
-            "lessons": t.lessons,
-            "bb_count": t.bb_count,
-        }
-        for t in TEMPLATES.values()
-    ]
-
-
-def get_slot_options(template_id: str, slot_name: str, bb_only: bool = True) -> List[Dict]:
-    """
-    Get curated dropdown options for a template slot.
-
-    Args:
-        template_id: T1–T10
-        slot_name: The slot name (e.g., "temporal", "adv_manner", "yes_word")
-        bb_only: If True, only return BB-attested options
-
-    Returns:
-        List of dicts with keys: skiri_form, english, position_rule, bb_lessons
-    """
+    own = conn is None
+    conn = conn or connect()
     try:
-        from template_slot_fillers import (
-            SLOT_FILLERS, TEMPLATE_SLOT_MAP, BB_VOCABULARY_ALIASES,
-        )
-    except ImportError:
-        try:
-            from scripts.template_slot_fillers import (
-                SLOT_FILLERS, TEMPLATE_SLOT_MAP, BB_VOCABULARY_ALIASES,
-            )
-        except ImportError:
+        f = load_frame(conn, template_id, frame)
+        if slot not in f["slots"]:
             return []
-
-    # Map slot names to filler categories
-    SLOT_NAME_TO_CATEGORY = {
-        "temporal": "TEMPORAL",
-        "adv_manner": "ADV_MANNER",
-        "yes_word": "YES",
-        "imp_particle": "IMPERATIVE",
-        "numeral": "NUMERAL",
-    }
-
-    category = SLOT_NAME_TO_CATEGORY.get(slot_name)
-    if not category:
-        return []
-
-    # Check this category is valid for this template
-    valid_cats = TEMPLATE_SLOT_MAP.get(template_id, [])
-    if category not in valid_cats:
-        return []
-
-    fillers = SLOT_FILLERS.get(category, [])
-    if bb_only:
-        fillers = [f for f in fillers if f.bb_lessons]
-
-    return [
-        {
-            "skiri_form": f.skiri_form,
-            "english": f.english,
-            "position_rule": f.position_rule,
-            "bb_lessons": f.bb_lessons,
-            "bb_example": f.bb_example_skiri,
-        }
-        for f in fillers
-    ]
+        places = f["slots"][slot]
+        kind = SLOT_KINDS[slot]
+        options = _same_place(conn, f, places)
+        needle = fold(q.strip())
+        if kind == "noun":
+            sql = ("select a.id, a.bb_skiri_form, a.bb_english, a.lesson_number from blue_book_attestations a "
+                   "join lexical_entries le on le.entry_id = a.entry_id "
+                   "where a.bb_skiri_form is not null and a.match_type in (%s) "
+                   "  and (le.grammatical_class = 'N' or le.grammatical_class like 'N,%%' or le.grammatical_class like 'N-%%') "
+                   "order by a.lesson_number, a.id" % ",".join("?" * len(SOUND_LINKS)))
+            rows = conn.execute(sql, SOUND_LINKS).fetchall()
+            options += [_option(r, False) for r in rows if len(words(r["bb_skiri_form"])) == len(places)]
+            if needle:
+                # Asked for by its English, any word of the book's word lists may be taken. Many common nouns
+                # (dog, man, woman, horse) are not tied to their dictionary entry in the table, so the tie
+                # cannot be the test of what is a noun; the English beside each word says what it is.
+                rows = conn.execute(
+                    "select id, bb_skiri_form, bb_english, lesson_number from blue_book_attestations "
+                    "where bb_skiri_form is not null and context_type in ('BASIC_WORDS', 'ADDITIONAL_WORDS') "
+                    "order by lesson_number, id").fetchall()
+                options += [_option(r, False) for r in rows if len(words(r["bb_skiri_form"])) == len(places)]
+        else:
+            rows = conn.execute(
+                "select id, bb_skiri_form, bb_english, lesson_number, context_type from blue_book_attestations "
+                "where bb_skiri_form is not null and context_type in (%s) order by lesson_number, id"
+                % ",".join("?" * len(LISTS)), LISTS).fetchall()
+            first = fold(f["tokens"][places[0]][1])
+            for r in rows:
+                ws = words(r["bb_skiri_form"])
+                if len(ws) != len(places):
+                    continue
+                if kind == "phrase" and (fold(ws[0]) != first or r["context_type"] == "GRAMMAR_EXAMPLE"):
+                    continue               # a phrase from the word lists, not a whole example sentence
+                if kind == "start" and not fold(ws[0]).startswith(first.split("•")[0] + "•"):
+                    continue
+                if kind == "word" and not needle:
+                    continue               # too many to list: these are found by their English
+                options.append(_option(r, False))
+        seen, result = set(), []
+        asked = re.compile(chr(92) + "b" + re.escape(needle)) if needle else None   # at the start of a word
+        for o in options:
+            key = o["form"][:1].lower() + o["form"][1:]          # the same word with and without a capital is one
+            if key in seen:
+                continue
+            if asked and not asked.search(fold(o["english"])) and needle not in fold(o["form"]):
+                continue
+            seen.add(key)
+            result.append(o)
+        return result[:limit]
+    finally:
+        if own:
+            conn.close()
 
 
 # ---------------------------------------------------------------------------
-# Validation test suite — 27 BB-attested test cases
+# Putting a sentence together
 # ---------------------------------------------------------------------------
-VALIDATION_TESTS = [
-    # (template_id, slots_dict, expected_skiri_output, description)
 
-    # T1: Identification
-    ("T1", {"noun": "hitu'"}, "ti hitu'", "This is a feather (L01)"),
-    ("T1", {"noun": "Rihita"}, "ti Rihita", "He's Ponca (L13)"),
-    ("T1", {"noun": "Pasuhara"}, "ti Pasuhara", "He's Oto (L13)"),
+@dataclass
+class TemplateResult:
+    """A sentence and what it is."""
+    skiri_sentence: str = ""
+    spelling: str = "Blue Book"                 # or "Parks"
+    status: str = NOT_PRINTED                   # PRINTED or NOT_PRINTED
+    printed_in: List[Dict[str, Any]] = field(default_factory=list)   # the rows that print it
+    english: Optional[str] = None               # the book's own translation, when the sentence is printed
+    frame: Optional[Dict[str, Any]] = None      # the printed sentence it started from
+    template_id: str = ""
+    template_name: str = ""
+    words: List[Dict[str, Any]] = field(default_factory=list)
+    derived: bool = False                       # True if a word was made by person_forms.py
+    notes: List[str] = field(default_factory=list)
+    error: Optional[str] = None
 
-    # T2: Descriptive
-    ("T2", {"noun": "rakis", "vd": "pahaat"}, "rakis ti pahaat",
-     "The stick is red (L02)"),
-    ("T2", {"noun": "kiwaku", "vd": "pahaat"}, "kiwaku ti pahaat",
-     "The fox is red (L09)"),
-    ("T2", {"noun": "rikutski", "vd": "pahaat"}, "rikutski ti pahaat",
-     "The bird is red (L09)"),
-
-    # T3: Yes/No question
-    ("T3", {"verb_form": "rii", "noun": "hitu'"}, "ka rii hitu'?",
-     "Is this a feather? (L01)"),
-    ("T3", {"verb_form": "ra•pahaat", "noun": "rakis"},
-     "ka ra•pahaat rakis?", "Is the stick red? (L02)"),
-    ("T3", {"verb_form": "ru", "noun": "karitki"}, "ka ru karitki?",
-     "Is this a rock? (L01)"),
-
-    # T4: What question
-    ("T4", {"verb_form": "ru'"}, "kirike ru'?", "What is it? (L01)"),
-    ("T4", {"subject": "pita", "verb_form": "rut•ari'"},
-     "pita kirike rut•ari'?", "What is the man doing? (L06)"),
-    ("T4", {"verb_form": "ras•taspe'"}, "kirike ras•taspe'?",
-     "What are you looking for? (L08)"),
-
-    # T5: Where question
-    ("T5", {"verb_form": "rasuks•at"}, "kiru rasuks•at?",
-     "Where did you go? (L13)"),
-    ("T5", {"verb_form": "ruks•ku'"}, "kiru ruks•ku'?",
-     "Where was it? (L08)"),
-
-    # T6: Negation
-    ("T6", {"inner": "kaki karitki"}, "kaki', kaki karitki",
-     "No, it is not a rock (L01)"),
-
-    # T7: Affirmation
-    ("T7", {"yes_word": "ahu'", "inner": "ti hitu'"},
-     "ahu', ti hitu'", "Yes, this is a feather (L01)"),
-    ("T7", {"yes_word": "ahu'", "inner": "rakis ti pahaat"},
-     "ahu', rakis ti pahaat", "Yes, the stick is red (L02)"),
-
-    # T8: 1sg declarative
-    ("T8", {"verb_form": "tatuks•at"}, "tatuks•at",
-     "I went (L13)"),
-    ("T8", {"verb_form": "tatuks•at", "locative": "Pari"},
-     "tatuks•at Pari", "I went to Pawnee (L13)"),
-    ("T8", {"verb_form": "tatuks•a", "object": "kisatski"},
-     "tatuks•a kisatski", "I ate meat (L11)"),
-
-    # T9: 3sg narrative
-    ("T9", {"subject": "pita", "verb_form": "tiwari'"},
-     "pita tiwari'", "The man is walking (L06)"),
-    ("T9", {"subject": "rikutski", "verb_form": "ti•waktahu'"},
-     "rikutski ti•waktahu'", "The bird is singing (L14)"),
-    ("T9", {"subject": "asaki", "verb_form": "tirah•kI wat"},
-     "asaki tirah•kI wat", "The dog barked (L14)"),
-
-    # T10: Imperative
-    ("T10", {"imp_particle": "suks", "verb_form": "pitit"},
-     "suks•pitit", "Sit down (L20)"),
-
-    # === New tests for slot filler integration ===
-
-    # T8 with manner adverb (L18: Rariksisu tatutsiks•a•wahri')
-    ("T8", {"adv_manner": "rariksisu", "verb_form": "tatutsiks•a•wahri'"},
-     "rariksisu tatutsiks•a•wahri'",
-     "I've been working hard (L18 — ADV_MANNER slot)"),
-
-    # T9 with 'we' particle (L09: Rahurahki we tut•awi'at Karit•kutsu')
-    ("T9", {"subject": "kiwaku", "we_particle": "true", "verb_form": "tu'h•kuksas"},
-     "kiwaku we tu'h•kuksas",
-     "The fox ran away (L09 — we particle)"),
-
-    # T9 with temporal (L09: Pita ti•kuwutit rahurahki pitsikat)
-    ("T9", {"subject": "pita", "verb_form": "ti•kuwutit", "object": "rahurahki",
-            "temporal": "pitsikat"},
-     "pita ti•kuwutit rahurahki pitsikat",
-     "The man killed a deer, in the winter (L09 — temporal slot)"),
-
-    # --- Phase 3.2b: auto-conjugation from dictionary verb + person/tense ---
-    # (person_forms.py derivation, validated 27/27 vs Parks Appendix 1)
-
-    # T3 yes/no with 3sg absolutive derived from form_2 (BB L02 pattern:
-    # 'Ka ra•pahaat rakis?' — Parks form keeps the VD echo vowel)
-    ("T3", {"verb": "pahaat", "person": "3sg", "noun": "rakis"},
-     "ka rapahaaʔat rakis?",
-     "Is the stick red? (derived 3sg absolutive, VD)"),
-
-    # T3 2sg absolutive (BB L08 pattern: 'Ka ras•huras asaki?')
-    ("T3", {"verb": "huraas", "person": "2sg", "noun": "asaaki"},
-     "ka rasuraas asaaki?",
-     "Have you found the dog? (derived 2sg absolutive)"),
-
-    # T8 1sg attested / 2sg derived (App.1 agent t->s)
-    ("T8", {"verb": "takacat", "person": "1sg"},
-     "tactakacat",
-     "I fetched water (attested form_1)"),
-    ("T8", {"verb": "takacat", "person": "2sg"},
-     "tastakacat",
-     "You fetched water (derived 2sg)"),
-
-    # T8 future via intentive prefix transplant
-    ("T8", {"verb": "takacat", "person": "1sg", "tense": "future"},
-     "tactakacuhta",
-     "I will fetch water (1sg intentive transplant)"),
-
-    # T5 where-question with derived 2sg absolutive (BB L13: Kiru rasuks•at?
-    # uses the uks- aorist; the plain absolutive is raasat)
-    ("T5", {"verb": "at", "person": "2sg"},
-     "kiru raasat?",
-     "Where did you go? (derived 2sg absolutive)"),
-
-    # T9 with auto-conjugated 3sg (attested form_2, ut-preverb verb)
-    ("T9", {"subject": "pita", "verb": "iirik", "object": "kuruks"},
-     "pita tuutiirit kuruks",
-     "The man saw the bear (attested form_2 via verb slot)"),
-]
+    def to_dict(self):
+        return {"skiri_sentence": self.skiri_sentence, "spelling": self.spelling, "status": self.status,
+                "printed": self.status == PRINTED, "printed_in": self.printed_in, "english": self.english,
+                "frame": self.frame, "template_id": self.template_id, "template_name": self.template_name,
+                "words": self.words, "derived": self.derived, "notes": self.notes, "error": self.error}
 
 
-def run_validation(verbose: bool = True) -> Tuple[int, int, List[str]]:
+def _failed(template_id, message):
+    name = FRAMES.get(template_id, {}).get("name", "")
+    return TemplateResult(template_id=template_id, template_name=name, error=message)
+
+
+def assemble(template_id, frame=0, conn=None, **slots):
+    """A frame with some of its words swapped for other printed words.
+
+    Each slot is given as the number of a row of the Blue Book table. Given as {"row": N, "places": [..]} the
+    words are taken from those places of row N (a sentence of the same shape); otherwise row N must be the
+    word or phrase itself.
     """
-    Run all validation tests and report results.
+    own = conn is None
+    conn = conn or connect()
+    try:
+        try:
+            f = load_frame(conn, template_id, frame)
+        except ValueError as exc:
+            return _failed(template_id, str(exc))
+        toks = [list(t) for t in f["tokens"]]
+        source = [{"from": "the frame", "row": f["row"], "english": None, "lesson": f["lesson"], "slot": None,
+                   "entry_id": None} for _ in toks]
+        for name, value in slots.items():
+            if value in (None, "", []):
+                continue
+            if name not in f["slots"]:
+                return _failed(template_id, "This frame has no place called %r. It has: %s." % (
+                    name, ", ".join(sorted(f["slots"]))))
+            places = f["slots"][name]
+            take = None
+            if isinstance(value, dict):
+                take, value = value.get("places"), value.get("row")
+            row = bb_row(conn, value)
+            if row is None:
+                return _failed(template_id, "%s: there is no row %r in the Blue Book table. A word can only be "
+                                            "taken from a row." % (name, value))
+            ws = words(row["bb_skiri_form"])
+            if take:
+                if max(take) >= len(ws):
+                    return _failed(template_id, "%s: row %s has no word at place %s." % (name, row["id"], max(take)))
+                ws = [ws[i] for i in take]
+            if len(ws) != len(places):
+                return _failed(template_id, "%s: %d word(s) are needed here and row %s has %d." % (
+                    name, len(places), row["id"], len(ws)))
+            tied = row["entry_id"] if row["match_type"] in SOUND_LINKS and not take else None
+            for place, word in zip(places, ws):
+                toks[place][1] = word
+                source[place] = {"from": "row %d" % row["id"], "row": row["id"],
+                                 "english": ("in the sentence: %s" % row["bb_english"]) if take else row["bb_english"],
+                                 "lesson": row["lesson_number"],
+                                 "slot": name, "entry_id": tied}
+        if f["tokens"][0][1][:1].isupper():          # the sentence begins with a capital, as the frame does
+            toks[0][1] = toks[0][1][:1].upper() + toks[0][1][1:]
+        sentence = " ".join(lead + core + trail for lead, core, trail in toks)
+        result = TemplateResult(
+            skiri_sentence=sentence, template_id=template_id, template_name=FRAMES[template_id]["name"],
+            frame={"row": f["row"], "text": f["text"], "english": f["english"], "lesson": f["lesson"],
+                   "book_page": f["book_page"]},
+            words=[dict(s, form=t[1]) for t, s in zip(toks, source)])
+        rows = printed_sentences(conn).get(same_sentence_key(sentence), [])
+        if rows:
+            result.status = PRINTED
+            result.english = rows[0]["bb_english"]
+            result.printed_in = [{"row": r["id"], "lesson": r["lesson_number"], "book_page": book_page(r["page_number"]),
+                                  "text": r["bb_skiri_form"], "english": r["bb_english"]} for r in rows]
+        else:
+            result.notes.append("The Blue Book does not print this sentence. Each word is copied from the book, "
+                                "and a swapped word keeps the accent it has where it was copied from.")
+        return result
+    finally:
+        if own:
+            conn.close()
 
-    Returns:
-        (passed, total, failure_messages)
+
+# ---------------------------------------------------------------------------
+# A dictionary verb: its printed forms, and the forms derived from them
+# ---------------------------------------------------------------------------
+
+def _entry(conn, entry_id):
+    return conn.execute(
+        "select le.entry_id, le.headword, le.grammatical_class, le.stem_preverb, "
+        "  (select definition from glosses g where g.entry_id = le.entry_id order by sense_number limit 1) as gloss "
+        "from lexical_entries le where le.entry_id = ?", (entry_id,)).fetchone()
+
+
+def verb_forms(entry_id, conn=None):
+    """The forms of one dictionary verb the builder may show, each marked "printed" or "derived"."""
+    own = conn is None
+    conn = conn or connect()
+    try:
+        e = _entry(conn, entry_id)
+        if e is None or not (e["grammatical_class"] or "").startswith("V"):
+            return {"error": "There is no verb entry %r. A verb is chosen by its entry, not by its spelling." % (entry_id,)}
+        printed = {r["form_number"]: r["skiri_form"] for r in conn.execute(
+            "select form_number, skiri_form from paradigmatic_forms where entry_id = ? and skiri_form is not null "
+            "and skiri_form != ''", (entry_id,))}
+        derived = person_forms.derive_forms(form_1=printed.get(1), form_2=printed.get(2), form_3=printed.get(3),
+                                            form_5=printed.get(5), headword=e["headword"],
+                                            stem_preverb=e["stem_preverb"], gram_class=e["grammatical_class"])
+        forms = []
+        for key, label in FORM_LABELS:
+            number = person_forms.PRINTED.get(key)
+            if number:
+                if printed.get(number):
+                    forms.append({"key": key, "label": label, "form": printed[number], "status": "printed",
+                                  "source": "Parks, form %d of the entry" % number})
+            elif derived.get(key):
+                forms.append({"key": key, "label": label, "form": derived[key], "status": "derived",
+                              "source": person_forms.DERIVED_LABEL})
+        return {"entry_id": e["entry_id"], "headword": e["headword"], "grammatical_class": e["grammatical_class"],
+                "gloss": e["gloss"], "forms": forms,
+                "note": "A derived form has no accent mark: the rules work on forms without their accents. "
+                        "Where no form is listed, none is printed and none can be derived."}
+    finally:
+        if own:
+            conn.close()
+
+
+def dictionary_sentence(pattern, verb_entry_id, form_key, noun_entry_id=None, conn=None):
+    """A sentence in the dictionary's spelling: a noun, a verb form, and for a question Parks's question word.
+
+    pattern: "statement" (noun, then verb), or "where", "who", "what" (question word, verb, then noun).
+    The words are dictionary forms; the order is the Blue Book's. Never printed anywhere.
     """
-    conn = get_db_connection()
-    passed = 0
-    total = len(VALIDATION_TESTS)
-    failures = []
+    own = conn is None
+    conn = conn or connect()
+    try:
+        failed = lambda message: TemplateResult(spelling="Parks", template_name="Dictionary spelling", error=message)
+        info = verb_forms(verb_entry_id, conn)
+        if "error" in info:
+            return failed(info["error"])
+        form = next((f for f in info["forms"] if f["key"] == form_key), None)
+        if form is None:
+            return failed("%s has no such form: none is printed and none can be derived. It has: %s." % (
+                info["headword"], ", ".join(f["label"] for f in info["forms"]) or "no form at all"))
+        notes = []
+        text = person_forms.primary_form(form["form"])
+        if text != form["form"]:
+            notes.append("Parks prints two forms here (%s); the first is used." % form["form"])
+        parts = [{"form": text, "from": form["source"], "english": info["gloss"], "entry_id": info["entry_id"],
+                  "slot": "verb", "derived": form["status"] == "derived", "label": form["label"]}]
+        if pattern == "statement":
+            if form_key.endswith("_abs"):
+                return failed("A question form does not stand in a statement.")
+        elif pattern in PARKS_QUESTION_WORDS:
+            if not form_key.endswith("_abs"):
+                return failed("After a question word the verb stands in its question form (Parks, Table 14).")
+            q = PARKS_QUESTION_WORDS[pattern]
+            qe = _entry(conn, q["entry_id"])
+            if qe is None or qe["headword"] != q["headword"]:
+                return failed("The entry of the question word is not what template_slot_fillers.py names.")
+            qword = person_forms.primary_form(qe["headword"])
+            if qword != qe["headword"]:
+                notes.append("Parks prints the question word in two forms (%s); the first is used." % qe["headword"])
+            parts.insert(0, {"form": qword, "from": "Parks, headword", "english": qe["gloss"],
+                             "entry_id": qe["entry_id"], "slot": "question word", "derived": False, "label": None})
+            notes.append("Parks says that the question words take this mode (Grammatical Overview, Table 14).")
+        else:
+            return failed("Unknown pattern %r. Use statement, %s." % (pattern, ", ".join(PARKS_QUESTION_WORDS)))
+        if noun_entry_id:
+            n = _entry(conn, noun_entry_id)
+            if n is None or not (n["grammatical_class"] or "").startswith("N"):
+                return failed("There is no noun entry %r." % (noun_entry_id,))
+            if re.search(r"[\s,/()\[\]]|^-|-$", n["headword"]):
+                return failed("The headword %s is not one free word, so it cannot stand in a sentence as it is." % n["headword"])
+            noun = {"form": n["headword"], "from": "Parks, headword", "english": n["gloss"], "entry_id": n["entry_id"],
+                    "slot": "noun", "derived": False, "label": None}
+            if pattern == "statement":
+                parts.insert(0, noun)
+            else:
+                parts.append(noun)
+        sentence = " ".join(p["form"] for p in parts) + ("?" if pattern != "statement" else ".")
+        derived = any(p["derived"] for p in parts)
+        if derived:
+            notes.insert(0, "The verb form is %s." % person_forms.DERIVED_LABEL)
+        notes.append("The words are dictionary forms in Parks's spelling. Their order follows the Blue Book's "
+                     "sentences; no source prints this sentence.")
+        return TemplateResult(skiri_sentence=sentence, spelling="Parks", status=NOT_PRINTED,
+                              template_name="Dictionary spelling: %s" % pattern, words=parts, derived=derived,
+                              notes=notes)
+    finally:
+        if own:
+            conn.close()
 
-    for template_id, slots, expected, desc in VALIDATION_TESTS:
-        result = _ASSEMBLERS[template_id](conn, **slots)
-        actual = result.skiri_sentence.strip()
-        expected_clean = expected.strip()
 
-        # Normalize for comparison: lowercase, collapse spaces
-        actual_norm = re.sub(r'\s+', ' ', actual.lower().strip(' .'))
-        expected_norm = re.sub(r'\s+', ' ', expected_clean.lower().strip(' .'))
+# ---------------------------------------------------------------------------
+# The check: every form named in the two files is what its row or entry holds
+# ---------------------------------------------------------------------------
 
-        if actual_norm == expected_norm:
+def _stray_pawnee(path, known):
+    """Words of a source file, outside bb(...) and entry(...), that are Pawnee forms. There must be none."""
+    source = Path(path).read_text(encoding="utf-8")
+    tree = ast.parse(source)
+    declared = set()
+    for node in ast.walk(tree):
+        if isinstance(node, ast.Call) and getattr(node.func, "id", None) in ("bb", "entry"):
+            declared.update(id(a) for a in node.args)
+    text = [n.value for n in ast.walk(tree)
+            if isinstance(n, ast.Constant) and isinstance(n.value, str) and id(n) not in declared]
+    text += [t.string for t in tokenize.generate_tokens(io.StringIO(source).readline) if t.type == tokenize.COMMENT]
+    found = set()
+    # the bullet and the glottal stop belong to a word; they are named by number so that this line is not itself a find
+    inside_a_word = re.compile("[^\\w'-" + chr(0x2022) + chr(0x0294) + "]+")
+    for chunk in text:
+        for word in inside_a_word.split(chunk):
+            w = word.strip("'-_")
+            if len(w) < 3 or not any(ch.isalpha() for ch in w):
+                continue
+            marked = "•" in w or "ʔ" in w or fold(w) != w.lower()
+            if marked or (len(w) >= 5 and w.lower() in known and w.lower() not in ENGLISH_ALSO):
+                found.add(w)
+    return sorted(found)
+
+
+# English words of these two files that are also the spelling of a Pawnee form. None is meant as Pawnee here.
+ENGLISH_ALSO = set()
+
+
+def check(conn=None):
+    """Returns the list of problems (empty when all is well) and prints a summary."""
+    own = conn is None
+    conn = conn or connect()
+    try:
+        problems, frames, slots = [], 0, 0
+        for template_id, spec in FRAMES.items():
+            for number, fs in enumerate(spec["frames"]):
+                frames += 1
+                row = bb_row(conn, fs["frame"]["row"])
+                if row is None:
+                    problems.append("%s frame %d: no row %s" % (template_id, number, fs["frame"]["row"]))
+                    continue
+                if row["bb_skiri_form"] != fs["frame"]["text"]:
+                    problems.append("%s frame %d: row %s holds %r, the file says %r" % (
+                        template_id, number, row["id"], row["bb_skiri_form"], fs["frame"]["text"]))
+                n = len(tokens(row["bb_skiri_form"]))
+                for name, places in fs["slots"].items():
+                    slots += 1
+                    if name not in SLOT_KINDS:
+                        problems.append("%s frame %d: slot %s has no kind" % (template_id, number, name))
+                    if not places or max(places) >= n:
+                        problems.append("%s frame %d: slot %s names a place the sentence does not have" % (
+                            template_id, number, name))
+        for name, q in PARKS_QUESTION_WORDS.items():
+            e = _entry(conn, q["entry_id"])
+            if e is None or e["headword"] != q["headword"]:
+                problems.append("question word %s: entry %s does not hold the headword %r" % (name, q["entry_id"], q["headword"]))
+        known = {fold(w) for (f,) in conn.execute("select bb_skiri_form from blue_book_attestations where bb_skiri_form is not null")
+                 for w in words(f)}
+        known |= {fold(h) for (hw,) in conn.execute("select headword from lexical_entries where headword is not null")
+                  for h in re.split(r"[,\s]+", hw) if h}
+        here = Path(__file__).resolve().parent
+        for name in ("sentence_templates.py", "template_slot_fillers.py"):
+            for word in _stray_pawnee(here / name, known):
+                problems.append("%s: the Pawnee form %r stands outside bb() and entry()" % (name, word))
+        out("frames: %d, each the text of its row; places that can be swapped: %d; question words of the dictionary: %d"
+            % (frames, slots, len(PARKS_QUESTION_WORDS)))
+        for line in problems:
+            out("PROBLEM: " + line)
+        if not problems:
+            out("every Pawnee form in the two files is named by its row or entry and is what that row or entry "
+                "holds: zero exceptions")
+        return problems
+    finally:
+        if own:
+            conn.close()
+
+
+# ---------------------------------------------------------------------------
+# Tests. Every expected form is read from a row; none is typed.
+# ---------------------------------------------------------------------------
+
+def run_tests(conn=None, verbose=True):
+    own = conn is None
+    conn = conn or connect()
+    passed, failures = 0, []
+
+    def ok(condition, what):
+        nonlocal passed
+        if condition:
             passed += 1
             if verbose:
-                bb_tag = f" [BB: {result.bb_attestation}]" if result.bb_attestation else ""
-                print(f"  ✅ {template_id} {desc}{bb_tag}")
+                out("  ok    " + what)
         else:
-            msg = f"  ❌ {template_id} {desc}: expected '{expected_clean}', got '{actual}'"
-            failures.append(msg)
-            if verbose:
-                print(msg)
+            failures.append(what)
+            out("  FAIL  " + what)
 
-    conn.close()
+    def text_of(row):
+        return bb_row(conn, row)["bb_skiri_form"]
 
-    if verbose:
-        print(f"\n{'='*60}")
-        print(f"Results: {passed}/{total} passed ({100*passed/total:.0f}%)")
-        if failures:
-            print(f"\nFailures ({len(failures)}):")
-            for f in failures:
-                print(f)
+    def is_printed(sentence):       # an independent look: is this, letter for letter, a form of the table?
+        key = same_sentence_key(sentence)
+        return any(same_sentence_key(f) == key for (f,) in conn.execute(
+            "select bb_skiri_form from blue_book_attestations where bb_skiri_form is not null"))
 
-    return passed, total, failures
+    def option(template_id, frame, slot, like_row, place, q=""):
+        want = words(text_of(like_row))[place]
+        return next((o for o in slot_options(template_id, frame, slot, q=q, limit=500, conn=conn) if o["form"] == want), None)
+
+    def pick(o):
+        return {"row": o["row"], "places": o["places"]} if o.get("whole_sentence") else o["row"]
+
+    try:
+        # 1. every frame, untouched, is the printed sentence and says so
+        for template_id, spec in FRAMES.items():
+            for number, fs in enumerate(spec["frames"]):
+                r = assemble(template_id, number, conn=conn)
+                row = bb_row(conn, fs["frame"]["row"])
+                ok(r.error is None and r.skiri_sentence == row["bb_skiri_form"] and r.status == PRINTED
+                   and any(p["row"] == row["id"] for p in r.printed_in) and r.english is not None,
+                   "%s frame %d untouched is row %d, printed in lesson %s" % (template_id, number, row["id"], row["lesson_number"]))
+        # 2. a swap that gives another printed sentence is recognised as printed, accents included
+        for like in (1956, 2282, 2283):          # three sentences the book prints on the pattern of T2
+            o = option("T2", 0, "noun", like, 0)
+            r = assemble("T2", 0, conn=conn, noun=pick(o)) if o else None
+            ok(bool(r) and r.error is None and same_sentence_key(r.skiri_sentence) == same_sentence_key(text_of(like))
+               and r.status == PRINTED and any(p["row"] == like for p in r.printed_in),
+               "T2 with the noun of row %d gives the sentence of row %d, marked printed" % (like, like))
+            ok(bool(o) and o["here"], "T2: the noun of row %d is offered as a word the book itself puts there" % like)
+        # 3. a swap the book does not print is marked as put together here
+        o = option("T1", 0, "noun", 1908, 2)
+        r = assemble("T1", 0, conn=conn, noun=pick(o)) if o else None
+        ok(bool(r) and r.error is None and (r.status == PRINTED) == is_printed(r.skiri_sentence),
+           "T1 with the noun of row 1908: its status is what an independent look at the table says")
+        r = None
+        for o in slot_options("T9", 0, "subject", limit=500, conn=conn):     # the first noun that makes a new sentence
+            candidate = assemble("T9", 0, conn=conn, subject=pick(o))
+            if candidate.error is None and not is_printed(candidate.skiri_sentence):
+                r = candidate
+                break
+        ok(r is not None and r.status == NOT_PRINTED and r.english is None and bool(r.notes)
+           and any(w["slot"] == "subject" and w["from"] != "the frame" for w in r.words),
+           "T9 with a listed noun as subject is not a sentence of the book and says so")
+        # 4. the accent decides: without its accents a printed sentence is no longer recognised as printed
+        plain = fold(text_of(1947))
+        ok(same_sentence_key(plain) not in printed_sentences(conn) or plain == text_of(1947).lower(),
+           "the sentence of row 1947 without its accent is not counted as printed")
+        # 5. a word can only come from a row, and must fit the place
+        ok(assemble("T1", 0, conn=conn, noun=99999999).error is not None, "a row that does not exist is refused")
+        ok(assemble("T1", 0, conn=conn, noun=1947).error is not None, "a row of three words is refused where one is needed")
+        ok(assemble("T1", 0, conn=conn, verb=1903).error is not None, "a place the frame does not have is refused")
+        ok(assemble("T99", 0, conn=conn).error is not None, "an unknown template is refused")
+        # 6. "the stick is red": the quality is a phrase the book lists
+        o = next((x for x in slot_options("T2", 0, "quality", limit=500, conn=conn) if not x.get("whole_sentence")), None)
+        r = assemble("T2", 0, conn=conn, quality=pick(o)) if o else None
+        ok(bool(r) and r.error is None and len(words(o["form"])) == 2 and o["form"] in r.skiri_sentence,
+           "T2: the quality is taken whole from a listed row (%s)" % (o["row"] if o else "none found"))
+        # 7. nothing is offered that is not a row
+        every = [x for t, spec in FRAMES.items() for n, fs in enumerate(spec["frames"]) for s in fs["slots"]
+                 for x in slot_options(t, n, s, q="a" if SLOT_KINDS[s] == "word" else "", limit=500, conn=conn)]
+        ok(every and all(bb_row(conn, x["row"]) is not None for x in every),
+           "all %d words offered across the frames are rows of the Blue Book table" % len(every))
+        # 8. a dictionary verb: printed forms are the entry's own, derived ones carry the label
+        verb = conn.execute(
+            "select p1.entry_id from paradigmatic_forms p1 join paradigmatic_forms p2 on p2.entry_id = p1.entry_id "
+            "join lexical_entries le on le.entry_id = p1.entry_id "
+            "where p1.form_number = 1 and p2.form_number = 2 and p2.skiri_form like 'tik%' and le.grammatical_class = 'VT' "
+            "order by p1.entry_id limit 1").fetchone()[0]
+        info = verb_forms(verb, conn)
+        stored = {r["form_number"]: r["skiri_form"] for r in conn.execute(
+            "select form_number, skiri_form from paradigmatic_forms where entry_id = ?", (verb,))}
+        ok(all(f["form"] == stored[person_forms.PRINTED[f["key"]]] for f in info["forms"] if f["status"] == "printed"),
+           "a verb's printed forms are shown as the entry prints them, accents included")
+        ok(any(f["status"] == "derived" for f in info["forms"])
+           and all(f["source"] == person_forms.DERIVED_LABEL for f in info["forms"] if f["status"] == "derived"),
+           "every derived form carries the label: %s" % person_forms.DERIVED_LABEL)
+        no_first = conn.execute(
+            "select le.entry_id from lexical_entries le where le.grammatical_class = 'VD' "
+            "and exists (select 1 from paradigmatic_forms p where p.entry_id = le.entry_id and p.form_number = 2) "
+            "and not exists (select 1 from paradigmatic_forms p where p.entry_id = le.entry_id and p.form_number = 1) "
+            "order by le.entry_id limit 1").fetchone()[0]
+        keys = {f["key"] for f in verb_forms(no_first, conn)["forms"]}
+        ok(not keys & {"1sg_ind", "2sg_ind", "1sg_abs", "2sg_abs"},
+           "a verb that prints no form 1 is given no \"I\" and no \"you\" form")
+        ok("error" in verb_forms("no such entry", conn), "a verb is found by its entry id only")
+        # 9. sentences in the dictionary's spelling
+        noun = conn.execute("select entry_id, headword from lexical_entries where entry_id = 'SK-rakis-p135-2644'").fetchone()
+        r = dictionary_sentence("statement", no_first, "3sg_ind", noun["entry_id"], conn=conn)
+        form2 = conn.execute("select skiri_form from paradigmatic_forms where entry_id = ? and form_number = 2", (no_first,)).fetchone()[0]
+        ok(r.error is None and r.spelling == "Parks" and r.status == NOT_PRINTED and not r.derived
+           and r.skiri_sentence == "%s %s." % (noun["headword"], person_forms.primary_form(form2)),
+           "\"the stick is ...\" in the dictionary's spelling: the noun's headword and the verb's printed form 2")
+        r = dictionary_sentence("where", verb, "3sg_abs", conn=conn)
+        ok(r.error is None and r.derived and r.status == NOT_PRINTED and len(r.words) == 2
+           and any(person_forms.DERIVED_LABEL in n for n in r.notes),
+           "a where-question with a dictionary verb is marked derived and not printed")
+        ok(dictionary_sentence("where", verb, "3sg_ind", conn=conn).error is not None,
+           "after a question word only a question form is accepted")
+        ok(dictionary_sentence("statement", verb, "3sg_abs", conn=conn).error is not None,
+           "a question form is refused in a statement")
+        ok(dictionary_sentence("statement", no_first, "2sg_ind", conn=conn).error is not None,
+           "a form that cannot be given is refused, not made up")
+        # 10. the two files hold no form that is not named by its row
+        ok(not check(conn), "the check of the two files finds nothing")
+    finally:
+        if own:
+            conn.close()
+    out("")
+    out("sentence builder: %d passed, %d failed" % (passed, len(failures)))
+    return passed, len(failures), failures
 
 
-# ---------------------------------------------------------------------------
-# CLI
-# ---------------------------------------------------------------------------
 def main():
-    parser = argparse.ArgumentParser(
-        description="Skiri Pawnee sentence template assembly engine"
-    )
-    subparsers = parser.add_subparsers(dest="command")
-
-    # Test command
-    subparsers.add_parser("test", help="Run validation test suite")
-
-    # List command
-    subparsers.add_parser("list", help="List all templates")
-
-    # Assemble command
-    asm = subparsers.add_parser("assemble", help="Assemble a sentence")
-    asm.add_argument("--template", "-t", required=True, help="Template ID (T1–T10)")
-    asm.add_argument("--noun", help="Noun slot")
-    asm.add_argument("--vd", help="Descriptive verb slot")
-    asm.add_argument("--verb_form", help="Pre-conjugated verb form")
-    asm.add_argument("--subject", help="Subject noun")
-    asm.add_argument("--object", help="Object noun")
-    asm.add_argument("--temporal", help="Time word")
-    asm.add_argument("--locative", help="Place word")
-    asm.add_argument("--inner", help="Inner clause (for T6/T7 wrappers)")
-    asm.add_argument("--yes_word", help="Affirmation word (for T7)")
-    asm.add_argument("--imp_particle", help="Imperative particle (for T10)")
-    asm.add_argument("--adv_manner", help="Manner adverb (rariksisu, cikstit)")
-    asm.add_argument("--we_particle", help="Add 'we' particle for T9 (true/false)")
-    asm.add_argument("--json", action="store_true", help="Output as JSON")
-
-    args = parser.parse_args()
-
-    if args.command == "test" or (not args.command and "--test" in sys.argv):
-        print("Phase 3.2a — Sentence Template Validation")
-        print("=" * 60)
-        run_validation(verbose=True)
-
-    elif args.command == "list":
-        templates = list_templates()
-        for t in templates:
-            print(f"\n{t['template_id']}: {t['name']}")
-            print(f"  Pattern: {t['english_pattern']}")
-            print(f"  Example: {t['skiri_example']} = {t['english_example']}")
-            print(f"  Lessons: {t['lessons']} ({t['bb_count']} attestations)")
-            print(f"  Slots: {', '.join(s['name'] for s in t['slots'])}")
-
-    elif args.command == "assemble":
-        # Gather slots from CLI args
-        slot_names = [
-            "noun", "vd", "verb_form", "subject", "object",
-            "temporal", "locative", "inner", "yes_word", "imp_particle",
-            "adv_manner", "we_particle",
-        ]
-        slots = {}
-        for name in slot_names:
-            val = getattr(args, name, None)
-            if val:
-                slots[name] = val
-
-        result = assemble(args.template, **slots)
-
-        if args.json:
-            print(json.dumps(result.to_dict(), indent=2, ensure_ascii=False))
-        else:
-            if result.error:
-                print(f"Error: {result.error}")
-            else:
-                print(f"\n  Skiri:  {result.skiri_sentence}")
-                print(f"  English: {result.english_gloss}")
-                print(f"  Confidence: {result.confidence}")
-                if result.bb_attestation:
-                    print(f"  Blue Book: {result.bb_attestation}")
-                if result.word_order_note:
-                    print(f"  Note: {result.word_order_note}")
-                print(f"\n  Morpheme breakdown:")
-                for m in result.morpheme_breakdown:
-                    print(f"    [{m.role:10s}] {m.form:25s} = {m.gloss}")
-    else:
-        parser.print_help()
+    ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
+    ap.add_argument("command", nargs="?", choices=["test", "check", "list"], help="the same as --test, --check, --list")
+    ap.add_argument("--test", action="store_true", help="run the tests; exit 1 if one fails")
+    ap.add_argument("--check", action="store_true", help="every form named in the two files against the tables; exit 1 on a problem")
+    ap.add_argument("--list", action="store_true", help="the templates and their frames")
+    ap.add_argument("--quiet", action="store_true")
+    args = ap.parse_args()
+    if args.check or args.command == "check":
+        return 1 if check() else 0
+    if args.test or args.command == "test":
+        return 1 if run_tests(verbose=not args.quiet)[1] else 0
+    if args.list or args.command == "list":
+        for t in list_templates():
+            out("%s  %s: %s" % (t["template_id"], t["name"], t["english_pattern"]))
+            for f in t["frames"]:
+                out("      row %d, lesson %s: %s  '%s'  swap: %s" % (
+                    f["row"], f["lesson"], f["text"], f["english"], ", ".join(sorted(f["slots"]))))
+        return 0
+    ap.print_help()
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

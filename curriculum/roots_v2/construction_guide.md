@@ -390,88 +390,246 @@ Parks gives up to five inflected forms for a verb: (1) I …ed, (2) he/she …ed
 
 ### The prefixes and endings Parks tabulates
 
-These are Parks's own tables (Grammatical Overview, Tables 7 to 17), not a segmentation made here. "Examples" counts his worked examples that contain the piece.
+These are Parks's own tables of the verb (Grammatical Overview, Tables 6 to 17), row by row as printed. They are taken from `extracted_data/grammatical_overview_tables.json`: each table was read from the page twice, by readers who did not see each other's reading. Where the two wrote the same text but divided the rows differently, one division is shown and the other is in the file. Where the readings differ, both are shown and neither is chosen. Nothing in these tables is a segmentation made here, and no piece is put into a position of the verb that Parks does not put it in.
 
-| Slot | Piece | Label | Worked examples in GO | One of them |
+**Table 6. Major Positions in the Inflected Verb** (p. 33; the readings differ)
+
+First reading:
+
+| Verb |  |  |  |  |
 |---|---|---|---|---|
-| 10 MODE | *ta-* | MODE.indicative | 0 | — |
-| 10 MODE | *ti-* | MODE.indicative | 0 | — |
-| 10 MODE | *kaaka-* | MODE.negative_indicative | 0 | — |
-| 10 MODE | *kaaki-* | MODE.negative_indicative | 0 | — |
-| 10 MODE | *rii-* | MODE.assertive | 0 | — |
-| 10 MODE | *i-* | MODE.contingent | 0 | — |
-| 10 MODE | *ri-* | MODE.contingent | 0 | — |
-| 10 MODE | *kuus-* | MODE.potential | 0 | — |
-| 10 MODE | *kaas-* | MODE.potential | 0 | — |
-| 10 MODE | *ra-* | MODE.absolutive | 0 | — |
-| 10 MODE | *aa-* | MODE.subjunctive | 0 | — |
-| 10 MODE | *ii-* | MODE.subjunctive | 0 | — |
-| 10 MODE | *ra-* | MODE.infinitive | 0 | — |
-| 10 MODE | *i-* | MODE.contingent_sub | 0 | — |
-| 10 MODE | *ri-* | MODE.contingent_sub | 0 | — |
-| 10 MODE | *ra-* | MODE.gerundial | 0 | — |
-| 10 MODE | *aa-* | MODE.subjunctive_sub | 0 | — |
-| 10 MODE | *ii-* | MODE.subjunctive_sub | 0 | — |
-| 10 MODE | *ra-* | MODE.infinitive_sub | 0 | — |
-| 11 AGENT | *t-* | AGENT.1sg | 0 | — |
-| 11 AGENT | *s-* | AGENT.2sg | 0 | — |
-| 11 AGENT | *t-* | AGENT.1du_excl | 0 | — |
-| 11 AGENT | *s-* | AGENT.2du | 0 | — |
-| 11 AGENT | *t-* | AGENT.1pl_excl | 0 | — |
-| 11 AGENT | *s-* | AGENT.2pl | 0 | — |
-| 12 INCLUSIVE | *acir-* | INCL.1du_incl | 0 | — |
-| 12 INCLUSIVE | *a-* | INCL.1pl_incl | 0 | — |
-| 13 PL | *raak-* | PL.1pl_incl | 0 | — |
-| 13 PL | *iraak-* | PL.1pl_excl | 0 | — |
-| 13 PL | *iraak-* | PL.2pl | 0 | — |
-| 28 SUB | *-a* | SUB.1 | 3 | *icaas* 'where he cooked Turtle' (GO p. 42) |
-| 28 SUB | *-a* | SUB.1-a | 3 | *icaas* 'where he cooked Turtle' (GO p. 42) |
-| 28 SUB | *-i* | SUB.1-i | 1 | *ratkuhurasi* 'for me to find him' (GO p. 46) |
-| 28 SUB | *-i* | SUB.2 | 1 | *ratkuhurasi* 'for me to find him' (GO p. 46) |
-| 28 SUB | *-i* | SUB.2-i | 1 | *ratkuhurasi* 'for me to find him' (GO p. 46) |
-| 28 SUB | *-u* | SUB.u | 1 | *iriiruurakuurahuraaru* 'whatever the kind of animal was,' that is, 'all kinds of animals' (GO p. 44) |
-| 28 SUB | *-wi* | SUB.wi | 2 | *tuctiraahawista* 'it is going to be tilted' (GO p. 50) |
-| None not in the slot table | *Ø-* | 3.A | 54 | *tuuricaahiksii* 'he is a good-looking person' (GO p. 32) |
-| None not in the slot table | *-Ø* | PERF | 45 | *wiitatiiksaʔ* 'I have come' (GO p. 31) |
-| None not in the slot table | *ut-* | PREV | 11 | *wiitatuuhaaka* 'we have done that' (GO p. 32) |
-| None not in the slot table | *ar-* | EV | 9 | *kusaahkikat* 'he might cry (at some future time when speaker will not see it)' (GO p. 38) |
-| None not in the slot table | *-Ø* | SUB.4 | 7 | *wiirakuhuraahkiwatat* 'when the season changes' (GO p. 41) |
-| None not in the slot table | *uks-* | AOR | 7 | *wiitatiiksaʔ* 'I have come' (GO p. 31) |
-| None not in the slot table | *-his* | PERF | 6 | *taturaaʔiiwaatista* 'I am going to tell a story' (GO p. 47) |
-| None not in the slot table | *-hus* | IMPF | 6 | *wiiruuhaasitikustarit* 'when it is going to be happening' (GO p. 48) |
-| None not in the slot table | *ku-* | INF.B | 6 | *siwitirakuutiirit* 'they (DU) wanted to see each other' (GO p. 40) |
-| None not in the slot table | *-:hus* | IMPF | 4 | *tikacaakuʔ* 'he is cutting it' (GO p. 47) |
-| None not in the slot table | *-rit* | INT.SUB | 4 | *wiiruuhaasitikstarit* 'when it is going to occur' (GO p. 48) |
-| None not in the slot table | *ir-* | PREV | 4 | *wiitatiiksaʔ* 'I have come' (GO p. 31) |
-| None not in the slot table | *uks-* | JUSS | 4 | *sukskirikaʔaa* 'wake up!' (GO p. 38) |
-| None not in the slot table | *uur-* | PREV | 4 | *tuuricaahiksii* 'he is a good-looking person' (GO p. 32) |
-| None not in the slot table | *ir-* | 3.P.COLL.A | 3 | *tiiraspaatasit* 'they (COLL) set out' (GO p. 35) |
-| None not in the slot table | *-hus* | IMPF.SUB | 2 | *raakuraarahu* 'for them to be coming' (GO p. 47) |
-| None not in the slot table | *-itik* | INCH | 2 | *tiwaawaktiikusitit* 'he began talking' (GO p. 48) |
-| None not in the slot table | *-uk* | SUB.D | 2 | *iriirapahaatu* 'the one that is red' (GO p. 49) |
-| None not in the slot table | *-uku* | HAB.SUB | 2 | *ahicikstaawariihusuku* 'when they went to gather them' (GO p. 48) |
-| None not in the slot table | *ir-* | A.POSS | 2 | *tatiriitaa* 'I did it for him' (GO p. 32) |
-| None not in the slot table | *ki-* | HORT | 2 | *ruukiitat* 'let me go there' (GO p. 38) |
-| None not in the slot table | *raar-* | 3.P.INDV.A | 2 | *tiraaraspaatasit* 'they (INDV) set out' (GO p. 35) |
-| None not in the slot table | *raar-* | PL | 2 | *tatiriiriikstahka* 'he keeps his arrows in it' (GO p. 36) |
-| None not in the slot table | *si-* | DU | 2 | *siwitirakuutiirit* 'they (DU) wanted to see each other' (GO p. 40) |
-| None not in the slot table | *uur-* | P.POSS | 2 | *taruuraarit* 'he has it, possess it (something standing)' (GO p. 36) |
-| None not in the slot table | *witi-* | REFL | 2 | *wititaatacikstariku* 'I keep my thoughts to myself' (GO p. 40) |
-| None not in the slot table | *-uukuʔ* | HAB | 1 | *witiicikstaawariihusuukuʔ rakis* 'they used to gather wood' (GO p. 48) |
-| None not in the slot table | *-uʔ* | NOM | 1 | *pakskuukuʔuʔ* 'hat; headwear' (GO p. 31) |
-| None not in the slot table | *ak-* | 3.P.AN.I | 1 | *riitapaawarikusitit rikucki* 'I began shooting birds' (GO p. 48) |
-| None not in the slot table | *ak-* | PL.BEN | 1 | *tatuutakusit* 'I picked it up for them' (GO p. 37) |
-| None not in the slot table | *ka-* | INTER | 1 | *kawiirasiiraʔ* 'have you come (i.e., arrived)?' (GO p. 41) |
-| None not in the slot table | *karii-* | EMPH.NEG | 1 | *kariiriiraakii* 'don't be long!' (GO p. 39) |
-| None not in the slot table | *kis* | DIM | 1 | *asaaki* 'dog' (GO p. 31) |
-| None not in the slot table | *ku-* | INDF | 1 | *kutakawirahuʔ* 'he owns that acre' (GO p. 36) |
-| None not in the slot table | *ku-* | INF.A | 1 | *rakukatawi* 'to be against' (GO p. 50) |
-| None not in the slot table | *kuur-* | DUB.1 | 1 | *aruusaʔ* 'you must have seen the horse' (GO p. 38) |
-| None not in the slot table | *raar-* | 3.INAN.P | 1 | *taharaspiʔ* 'I looked for them (inanimate objects)' (GO p. 35) |
-| None not in the slot table | *ruu-* | DIST | 1 | *ciksuhuurawaciruutit* 'let’s go outside now!' (GO p. 38) |
-| None not in the slot table | *tiir-* | INFR | 1 | *tiihatuksitkaspaawaa* 'I must have been eating in my sleep' (GO p. 38) |
-| None not in the slot table | *ut-* | BEN | 1 | *tatuutakusit* 'I picked it up for them' (GO p. 37) |
-| None not in the slot table | *ut-* | P.POSS | 1 | *tatiriitaa* 'I did it for him' (GO p. 32) |
-| None not in the slot table | *uur-* | PHY.POSS | 1 | *aruusaʔ* 'I killed your horse' (GO p. 37) |
-| None not in the slot table | *waa-* | DIST | 1 | *riitapaawarikusitit rikucki* 'I began shooting birds' (GO p. 48) |
-| None not in the slot table | *waawa-* | DIST | 1 | *tiihatuksitkaspaawaa* 'I must have been eating in my sleep' (GO p. 38) |
+| Proclitics (Outer Prefixes) | Prefixes + Preverbs (Inner Prefixes) | Incorporated Noun (Agent/Patient) | STEM | Suffixes |
+
+Second reading:
+
+| Verb |  |  |  |  |
+|---|---|---|---|---|
+| Proclitics | Prefixes + Preverbs | Incorporated Noun | STEM | Suffixes |
+| (Outer Prefixes) | (Inner Prefixes) | (Agent/Patient) |  |  |
+
+**Table 7. The Inner Prefix Template** (p. 33; the readings differ)
+
+First reading:
+
+| 9 | 10 | 11 | 12 | 13 | 14 |
+|---|---|---|---|---|---|
+| EVIDENTIALS | MODALS | AGENT | INCLUSIVE | AGENT PL,[?] | EVIDENTIAL |
+| EVIDENTIALS | MODALS | AGENT PRONOUNS, OBVIATIVE | INCLUSIVE PRONOUNS | AGENT PL, AGENT POSS, PREVERB | EVIDENTIAL |
+| 15 | 16 | 17 | 18 | 19 | 20 |
+| PATIENT PRONOUNS | INFINITIVE MODAL | PHYSICAL POSSESSION | AGENT POSS, BENEFACTIVE, PREVERB | RESULTATIVE/ SEQUENTIAL | AORIST, JUSSIVE |
+| 21 | 22 | 23 | 24 | 25 | 26 |
+| ADVERBIALS | AGENT PL, PATIENT PL | PATIENT PL, POSS PL, INDIR PAT PL | INDIV AGT PL, PATIENT PL | NOUN ± PL | STEM |
+
+Second reading:
+
+| 9 | 10 | 11 | 12 | 13 | 14 |
+|---|---|---|---|---|---|
+| EVIDENTIALS | MODALS | AGENT | INCLUSIVE | AGENT PL, | EVIDENTIA |
+|  |  | PRONOUNS, | PRONOUNS | AGENT POSS, |  |
+|  |  | OBVIATIVE |  | PREVERB |  |
+| 15 | 16 | 17 | 18 | 19 | 20 |
+| PATIENT | INFINITIVE | PHYSICAL | AGENT POSS, | RESULTATIVE/ | AORIST, |
+| PRONOUNS | MODAL | POSSESSION | BENEFACTIVE, | SEQUENTIAL | JUSSIVE |
+|  |  |  | PREVERB |  |  |
+| 21 | 22 | 23 | 24 | 25 | 26 |
+| ADVERBIALS | AGENT PL, | PATIENT PL, | INDIV AGT PL, | NOUN ± PL | STEM |
+|  | PATIENT PL | POSS PL, | PATIENT PL |  |  |
+|  |  | INDIR PAT PL |  |  |  |
+
+**Table 8. Modal Prefixes: Forms and Functions** (p. 34; the same text, rows divided differently)
+
+| Mode | Subordinate/ Non-subordinate | Form(s) | Function(s) |
+|---|---|---|---|
+| Indicative IND | Non-subordinate | ta- 1/2.A ti- 3.A | • Statements • Directive statements |
+| Negative Indicative NEG.IND | Non-subordinate | kaakaa- 1/2.A kaaki- 3.A | • Negative statements • Negative directive statements |
+| Assertive ASSR | Non-subordinate | rii- | • Emphatic statements • Directive statements • Demonstration, presentation statements |
+| Contingent CONT | Non-subordinate | i- 1/2.A ri- 3.A | • Future, resultative statements • Sequential statements • Mild imperative statements, requests |
+| Potential POT | Non-subordinate | kuus ... i- 1/3.A kaas ... i- 2.A | • Future statements • Statements of possibility, potentiality, probability |
+| Absolutive ABS | Non-subordinate | ra- | • Interrogative statements • Statements in narration • Demonstrative statements |
+| Subjunctive (Optative) SUBJ | Non-subordinate | aa- 1/2.A ii- 3.A | Statements of wish, desire |
+| Infinitive (Admonitive) INF | Non-subordinate | ra . . . ku- | Directive statements |
+| Contingent (Conditional) CONT | Subordinate | i- 1/2.A ri- 3.A | Conditional, contingent statements |
+| Absolutive (Gerundial) ABS | Subordinate | ra- | • Subordinate statements • Gerundial forms |
+| Subjunctive SUBJ | Subordinate | aa- 1/2.A ii- 3.A | Unrealized, hypothetical, contrary to fact statements |
+| Infinitive INF | Subordinate | ra . . . ku- | • Complement statements after verbs of wishing, thinking, feeling • Subordinate statements • Directive statements |
+
+**Table 9. Pronominal Prefixes** (p. 35; the same in both readings)
+
+| Person | Agent | Patient |
+|---|---|---|
+| 1st | t- | ku- |
+| 2nd | s- | a- |
+| Obviative | ir- |  |
+| Dual inclusive | acir- | aca- |
+| Plural inclusive | a- |  |
+
+**Table 10. Plural Prefixes** (p. 36; the same text, rows divided differently)
+
+|  | Person | Active transitive | Active intransitive | Passive | Descriptive | Locative |
+|---|---|---|---|---|---|---|
+| AGENT | 1st, 2nd | rak- | rak- COLL rak- + raar- INDV |  | rak- | rak- |
+|  | 3rd | si...ir- | ir- COLL raar- INDV |  | ir- COLL raar- INDV | ir- COLL raar- INDV |
+| PATIENT | 1st, 2nd | rak- |  | rak- |  |  |
+|  | 3rd | ak- AN raar- INAN ak- + raar- AN INDV |  | ir- . . . ak- |  |  |
+
+**Table 11. Evidential Prefixes: Meanings and Distributions** (p. 37; the same in both readings)
+
+| Evidential | Approximate gloss | Co-occurring modes | Position relative to modal | Usage contexts | Meaning |
+|---|---|---|---|---|---|
+| wi- QUOT | 'it is said' | Indicative | Precedes | Narratives, discourse | Speaker is repeating what has been told |
+| ar- EV | 'evidently; it seems' | Absolutive Contingent | Precedes | Past activity or one begun | Speaker has not witnessed an event Speaker cannot see a designated object |
+| ar- EV |  | Absolutive Contingent Potential Subjunctive | Follows | Unrealized activity | Speaker will not witness an event |
+| ar- EV | 'would' + V | Indicative Infinitive | Follows | Periodic past activity, usu. indef. time | Speaker describes an expected or normative activity |
+| kuur- DUB.1 | 'must have' + V | Absolutive | Precedes | Narratives, accounts | Speaker has not witnessed an event Statement indicates element of doubt |
+| kuurur- DUB.2 | 'then (presumably)' + V | Contingent | Precedes | Sequential activity in narratives | Speaker has not witnessed an event Statement indicates element of doubt |
+| tiir- INFR | 'must have' + V | Absolutive | Precedes | Narratives, conversations | Speaker infers occurrence of event |
+
+**Table 12. The Outer Prefix, or Proclitic, Template** (p. 40; the same in both readings)
+
+| 1 | 2 | 3 | 4 |
+|---|---|---|---|
+| LOC & TEMP ADVERBIALS | INDEFINITE | ADVERBIALS | DEMONSTRATIVES / DEICTICS |
+| 5 | 6 | 7 | 8 |
+| ADVERBIAL | DUAL (PL) NUMBER | REFLEXIVE / RECIPROCAL | NEGATIVES, YES/NO INTERROG |
+
+**Table 13. Negative Prefixes** (p. 40; the same in both readings)
+
+| Negative Prefix | Function | Modal Co-occurrences |
+|---|---|---|
+| kara- (NEG.1) | Simple negative | Indicative ( + wi- QUOT), Contingent, Absolutive, Conditional, Subjunctive, Infinitive |
+| ka- (NEG.2) |  | Absolutive, Gerundial, Infinitive |
+| kaaku- (NEG.POSS) | Negative possession | Subjunctive (non-subordinate) |
+| karii . . . i- (EMPH.NEG) | Emphatic negative | Assertive, Contingent, Absolutive |
+
+**Table 14. Interrogative Pronouns** (p. 41; the same text, rows divided differently)
+
+| Interrogative Pronoun | English Translation | Modal Agreement |
+|---|---|---|
+| ka- | yes-no question | Absolutive mode |
+| ka- . . . i- | negative yes-no questions |  |
+| takii | 'who' |  |
+| kirikii, kikii | 'what, why, how' |  |
+| kickii | 'how many' |  |
+| kiruu | 'where' |  |
+
+**Table 15. The Verb Stem Template** (p. 44; the same in both readings)
+
+| 1. Iterative | 2. Noun | 3. Descriptive Stem | 4. Portative/ Comitative | 5. Locative |
+|---|---|---|---|---|
+| raar-, ka- ITER | awi- 'image' wak- 'sound' | kasis 'hard' tarahkis 'strong' | ri-, ra-, ruu- PORT cir-, ciras- COM | ka- 'on' kaa- 'inside' |
+| 6. Active Verb Complement | 7. Verb Root | 8. Causative |  |  |
+| kiikak 'drink' + -his PERF | at 'go' | -rik, -raʔuk |  |  |
+
+**Table 16. Verb Suffix Template** (p. 44; the same in both readings)
+
+| 25 | 26 | 27 | 28 |
+|---|---|---|---|
+| VERB STEM | PERFECTIVE, PERFECTIVE SUBORDINATE, IMPERFECTIVE, IMPERFECTIVE SUBORDINATE | INTENTIVE, HABITUAL, INCHOATIVE | INTENTIVE SUBORDINATE |
+
+**Table 17. Suffixes for Aspect and Subordination** (p. 45, 50, 51; the same text, rows divided differently)
+
+| Categories | Suffixes |  |  |  |  |
+|---|---|---|---|---|---|
+| Perfective/ Imperfective | Non-Intentive/Intentive Habitual/Inchoative | Non-Subordinate/ Subordinate |  |  |  |
+| Perfective | Non-intentive | Non-subordinate | -Ø /-ʔ |  |  |
+|  |  |  | -his (when incorporated) |  |  |
+|  |  | Subordinate | Class I | -a |  |
+|  |  |  | Class II | -i |  |
+|  |  |  | Class III | final syllable change |  |
+|  |  |  | Class IV | -Ø |  |
+|  | Intentive | Non-subordinate | -his + -ta |  |  |
+|  |  | Subordinate | -his + -ta + -rit |  |  |
+| Imperfective | Non-intentive | Non-subordinate | -:huʔ |  |  |
+|  |  |  | -:hus (when incorporated) |  |  |
+|  |  | Subordinate | -hu |  |  |
+|  | Intentive | Non-subordinate | -:hus + -ta | → | -:husta |
+|  |  | Subordinate | -hus + -ta + -rit | → | -hustarit |
+|  | Inchoative | Non-subordinate | -:hus + -itik | → | -:husitit |
+|  |  | Subordinate | -hus + -itik | → | -husitit |
+|  | Habitual | Non-subordinate | -:hus + -uukuʔ | → | -:husuukuʔ |
+|  |  | Subordinate | -hus + -uku | → | -husuku |
+| -aar + -Ø | PERF | → | -aa |  |  |
+| -aar + -a | PERF.SUB | → | -aara |  |  |
+| -aar + -his + -ta | PERF.INT | → | -aarista |  |  |
+| -aar + -i | IMPF | → | -aariʔ |  |  |
+| -aar + -i | IMPF.SUB | → | -aari |  |  |
+| -itik + -Ø | PERF.SUB | → | -itit |  |  |
+| -itik + -his + -ta | PERF.INT | → | -itiksta |  |  |
+| -itik + -:hus | IMPF | → | -itiikuʔ |  |  |
+| -itik + -hus | IMPF.SUB | → | -itiku |  |  |
+
+### The pieces Parks labels in his worked examples
+
+Counted from his worked examples in the same chapter; examples marked doubtful in the project's copy are left out. The piece and the label are his, as printed in the analysis line of the example. The same letters under two labels are two rows: the same spelling is not the same morpheme.
+
+| Piece | Label | Worked examples | One of them |
+|---|---|---|---|
+| *Ø-* | 3.A | 54 | *tuuricaahiksii* 'he is a good-looking person' (GO p. 32) |
+| *-Ø* | PERF | 45 | *wiitatiiksaʔ* 'I have come' (GO p. 31) |
+| *ti-* | IND | 28 | *tuuricaahiksii* 'he is a good-looking person' (GO p. 32) |
+| *t-* | 1.A | 20 | *wiitatiiksaʔ* 'I have come' (GO p. 31) |
+| *ra-* | ABS | 18 | *tiihatuksitkaspaawaa* 'I must have been eating in my sleep' (GO p. 38) |
+| *ta-* | IND.1/2.A | 11 | *wiitatiiksaʔ* 'I have come' (GO p. 31) |
+| *ut-* | PREV | 11 | *wiitatuuhaaka* 'we have done that' (GO p. 32) |
+| *-ta* | INT | 9 | *taturaaʔiiwaatista* 'I am going to tell a story' (GO p. 47) |
+| *ar-* | EV | 9 | *kusaahkikat* 'he might cry (at some future time when speaker will not see it)' (GO p. 38) |
+| *ri-* | CONT.3.A | 8 | *ruuʔahiwakuʔ* 'then he said' (GO p. 41) |
+| *-Ø* | SUB.4 | 7 | *wiirakuhuraahkiwatat* 'when the season changes' (GO p. 41) |
+| *i-* | SEQ | 7 | *kusaahkikat* 'he might cry (at some future time when speaker will not see it)' (GO p. 38) |
+| *ra-* | INF.A | 7 | *siwitirakuutiirit* 'they (DU) wanted to see each other' (GO p. 40) |
+| *uks-* | AOR | 7 | *wiitatiiksaʔ* 'I have come' (GO p. 31) |
+| *-his* | PERF | 6 | *taturaaʔiiwaatista* 'I am going to tell a story' (GO p. 47) |
+| *-hus* | IMPF | 6 | *wiiruuhaasitikustarit* 'when it is going to be happening' (GO p. 48) |
+| *i-* | CONT.1/2.A | 6 | *sukskirikaʔaa* 'wake up!' (GO p. 38) |
+| *ku-* | INF.B | 6 | *siwitirakuutiirit* 'they (DU) wanted to see each other' (GO p. 40) |
+| *s-* | 2.A | 6 | *sukskirikaʔaa* 'wake up!' (GO p. 38) |
+| *a-* | PREV | 5 | *wiitahurahwiicaʔ* 'it is getting close now; it has come close now' (GO p. 41) |
+| *-:hus* | IMPF | 4 | *tikacaakuʔ* 'he is cutting it' (GO p. 47) |
+| *-rit* | INT.SUB | 4 | *wiiruuhaasitikstarit* 'when it is going to occur' (GO p. 48) |
+| *ir-* | PREV | 4 | *wiitatiiksaʔ* 'I have come' (GO p. 31) |
+| *rii-* | ASSR | 4 | *kariiriiraakii* 'don't be long!' (GO p. 39) |
+| *uks-* | JUSS | 4 | *sukskirikaʔaa* 'wake up!' (GO p. 38) |
+| *uur-* | PREV | 4 | *tuuricaahiksii* 'he is a good-looking person' (GO p. 32) |
+| *-a* | SUB.1 | 3 | *iiwiirasakuriisata* 'as the sun set' (GO p. 43) |
+| *a-* | 2.P | 3 | *ituuhaarikaaʔ* 'I'll tell you what to do' (GO p. 42) |
+| *ir-* | 3.P.COLL.A | 3 | *tiiraspaatasit* 'they (COLL) set out' (GO p. 35) |
+| *ri-* | PHY.POSS | 3 | *tatiriitaa* 'I did it for him' (GO p. 32) |
+| *wi-* | QUOT | 3 | *witiʔitat* 'there was a village' (GO p. 38) |
+| *-hus* | IMPF.SUB | 2 | *raakuraarahu* 'for them to be coming' (GO p. 47) |
+| *-itik* | INCH | 2 | *tiwaawaktiikusitit* 'he began talking' (GO p. 48) |
+| *-uk* | SUB.D | 2 | *iriirapahaatu* 'the one that is red' (GO p. 49) |
+| *-uku* | HAB.SUB | 2 | *ahicikstaawariihusuku* 'when they went to gather them' (GO p. 48) |
+| *-wi* | SUB.L | 2 | *tuctiraahawista* 'it is going to be tilted' (GO p. 50) |
+| *a-* | A.POSS | 2 | *kutakawirahuʔ* 'he owns that acre' (GO p. 36) |
+| *ir-* | A.POSS | 2 | *tatiriitaa* 'I did it for him' (GO p. 32) |
+| *ki-* | HORT | 2 | *ruukiitat* 'let me go there' (GO p. 38) |
+| *raar-* | 3.P.INDV.A | 2 | *tiraaraspaatasit* 'they (INDV) set out' (GO p. 35) |
+| *raar-* | PL | 2 | *tatiriiriikstahka* 'he keeps his arrows in it' (GO p. 36) |
+| *si-* | DU | 2 | *siwitirakuutiirit* 'they (DU) wanted to see each other' (GO p. 40) |
+| *uur-* | P.POSS | 2 | *taruuraarit* 'he has it, possess it (something standing)' (GO p. 36) |
+| *witi-* | REFL | 2 | *wititaatacikstariku* 'I keep my thoughts to myself' (GO p. 40) |
+| *-i* | SUB.2 | 1 | *ratkuhurasi* 'for me to find him' (GO p. 46) |
+| *-u* | SUB.D | 1 | *iriiruurakuurahuraaru* 'whatever the kind of animal was,' that is, 'all kinds of animals' (GO p. 44) |
+| *-uukuʔ* | HAB | 1 | *witiicikstaawariihusuukuʔ rakis* 'they used to gather wood' (GO p. 48) |
+| *-uʔ* | NOM | 1 | *pakskuukuʔuʔ* 'hat; headwear' (GO p. 31) |
+| *acir-* | 1.DU.IN.A | 1 | *ciksuhuurawaciruutit* 'let’s go outside now!' (GO p. 38) |
+| *ak-* | 3.P.AN.I | 1 | *riitapaawarikusitit rikucki* 'I began shooting birds' (GO p. 48) |
+| *ak-* | PL.BEN | 1 | *tatuutakusit* 'I picked it up for them' (GO p. 37) |
+| *ka-* | INTER | 1 | *kawiirasiiraʔ* 'have you come (i.e., arrived)?' (GO p. 41) |
+| *kaaki-* | NEG.IND | 1 | *kaakiiraakii* 'don't be long' (GO p. 39) |
+| *karii-* | EMPH.NEG | 1 | *kariiriiraakii* 'don't be long!' (GO p. 39) |
+| *kis* | DIM | 1 | *asaaki* 'dog' (GO p. 31) |
+| *ku-* | INDF | 1 | *kutakawirahuʔ* 'he owns that acre' (GO p. 36) |
+| *ku-* | INF.A | 1 | *rakukatawi* 'to be against' (GO p. 50) |
+| *kuur-* | DUB.1 | 1 | — |
+| *kuus-* | POT.1/3.A | 1 | *kusaahkikat* 'he might cry (at some future time when speaker will not see it)' (GO p. 38) |
+| *raak-* | 1/2.P.A/P | 1 | *wiitatuuhaaka* 'we have done that' (GO p. 32) |
+| *raar-* | 3.INAN.P | 1 | *taharaspiʔ* 'I looked for them (inanimate objects)' (GO p. 35) |
+| *ruu-* | DIST | 1 | *ciksuhuurawaciruutit* 'let’s go outside now!' (GO p. 38) |
+| *ta-* | IND.1/2A | 1 | *tatiriiriikstahka* 'he keeps his arrows in it' (GO p. 36) |
+| *tiir-* | INFR | 1 | *tiihatuksitkaspaawaa* 'I must have been eating in my sleep' (GO p. 38) |
+| *ut-* | BEN | 1 | *tatuutakusit* 'I picked it up for them' (GO p. 37) |
+| *ut-* | P.POSS | 1 | *tatiriitaa* 'I did it for him' (GO p. 32) |
+| *uur-* | PHY.POSS | 1 | — |
+| *waa-* | DIST | 1 | *riitapaawarikusitit rikucki* 'I began shooting birds' (GO p. 48) |
+| *waawa-* | DIST | 1 | *tiihatuksitkaspaawaa* 'I must have been eating in my sleep' (GO p. 38) |

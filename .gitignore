@@ -20,3 +20,14 @@ tag_review_queue.json
 
 # Source-fidelity audit: rendered crops and per-page working files
 reports/source_audit_2026-11/work/
+
+# The packet for community review: built files gather the held-back vocabulary in one readable place.
+# Build them with scripts/build_review_packet.py (see community_review/README.md).
+community_review/review_packet.html
+community_review/review_packet.pdf
+community_review/response_sheet.csv
+
+# Engines review: the per-form records hold thousands of forms the engines computed, most of them wrong.
+# They are made again in a minute by scripts/engines_review/run_all.py. The test sets (attested forms only),
+# the summaries and the Stage 1 trace are kept.
+reports/engines_review/data/*.jsonl

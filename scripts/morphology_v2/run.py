@@ -55,6 +55,11 @@ def write_data(conn):
     dump_json(OUT / "roots.json", {"n": len(inv["roots"]), "roots": inv["roots"]})
     dump_json(OUT / "affixes.json", {"n": len(inv["affixes"]), "affixes": inv["affixes"],
                                      "inflectional": inv["inflection"],
+                                     "parks_tables": {
+                                         "file": "extracted_data/grammatical_overview_tables.json",
+                                         "tables": [t["number"] for t in inv["parks_tables"]],
+                                         "note": "Parks's own tables of the verb are not copied here; "
+                                                 "the guide prints them from that file"},
                                      "seam_rules": {k: dict(v, id=k) for k, v in sorted(seams.RULES.items())}})
     dump_json(OUT / "decisions.json", {"n": len(inv["decisions"]), "decisions": inv["decisions"]})
     marks = [10, 20, 30, 40, 50, 75, 100, 150, 200, 300, 400, 500, len(curve)]

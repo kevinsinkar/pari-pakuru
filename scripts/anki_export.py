@@ -38,7 +38,6 @@ from display_utils import (
 
 VERB_CLASSES = {"VT", "VI", "VD", "VP", "VL", "VR"}
 
-DEFAULT_CONFIDENCE = 0.75
 
 # Stable model ID (must not change across exports or Anki loses card history)
 MODEL_ID = 1607392319
@@ -117,7 +116,6 @@ SELECT
     le.verb_class,
     le.phonetic_form,
     le.simplified_pronunciation,
-    le.form2_confidence,
     le.blue_book_attested,
     le.source,
     (SELECT definition FROM glosses
@@ -186,15 +184,19 @@ def build_english_field(gloss_1, sense_count):
     return gloss_1
 
 
-def build_verb_form(form_2, confidence, gloss_1, gram_class, min_conf):
-    """Build verb form field and label for card back."""
+def build_verb_form(form_2, gloss_1, gram_class):
+    """Build verb form field and label for card back: the form 2 Parks prints, where he prints one.
+
+    Until 2026-11-14 the printed form was shown only for verbs whose form 2 confidence score was high.
+    That score was removed (engines review, decision 5); a printed form needs no score.
+    """
     if not gram_class:
         return "", ""
     # Extract primary class (handle compound like "VI, VT")
     primary = re.sub(r"\(\d+\)", "", gram_class).split(",")[0].strip()
     if primary not in VERB_CLASSES:
         return "", ""
-    if not form_2 or not confidence or confidence < min_conf:
+    if not form_2:
         return "", ""
     verb = gloss_1.split(";")[0].split(",")[0].rstrip(".").strip().lower() if gloss_1 else "..."
     label = f"he/she {verb}:"
@@ -224,13 +226,13 @@ def stable_note_guid(entry_id, sense_num=None):
 
 # ── Card building ────────────────────────────────────────────────
 
-def build_note(row, min_conf, sense_num=None, sense_def=None):
+def build_note(row, sense_num=None, sense_def=None):
     """Build a genanki.Note from a query row.
 
     If sense_num is given, this is an --advanced per-sense card.
     """
     (entry_id, headword, normalized_form, gram_class, verb_class,
-     phonetic_form, simplified_pron, form2_conf, bb_attested, source,
+     phonetic_form, simplified_pron, bb_attested, source,
      gloss_1, sense_count, form_2, ex_skiri, ex_english, tags) = row
 
     # Display headword
@@ -255,9 +257,7 @@ def build_note(row, min_conf, sense_num=None, sense_def=None):
     class_note = morph_class_note(gram_class) or ""
 
     # Verb form
-    verb_form, verb_label = build_verb_form(
-        form_2, form2_conf, gloss_1, gram_class, min_conf
-    )
+    verb_form, verb_label = build_verb_form(form_2, gloss_1, gram_class)
 
     # Pitch note
     pitch_note = "Pitch accent not marked for this entry in Parks Dictionary." if pitch_unmarked else ""
@@ -300,8 +300,6 @@ def main():
     parser.add_argument("--advanced", action="store_true", help="One card per sense (Option B)")
     parser.add_argument("--verbs-only", action="store_true", help="Export verb entries only")
     parser.add_argument("--bb-only", action="store_true", help="Export Blue Book-attested entries only")
-    parser.add_argument("--min-confidence", type=float, default=DEFAULT_CONFIDENCE,
-                        help=f"Confidence threshold for verb form display (default: {DEFAULT_CONFIDENCE})")
     parser.add_argument("--dry-run", action="store_true", help="Print card counts, no file written")
     parser.add_argument("--db", default="skiri_pawnee.db", help="Path to SQLite database")
     args = parser.parse_args()
@@ -361,13 +359,13 @@ def main():
 
     for row in rows:
         entry_id = row[0]
-        tags_str = row[15]
+        tags_str = row[14]
         entry_tags = tags_str.split(",") if tags_str else []
 
         if args.advanced and entry_id in all_glosses:
             # One card per sense
             for sense_num, sense_def in all_glosses[entry_id]:
-                note = build_note(row, args.min_confidence, sense_num, sense_def)
+                note = build_note(row, sense_num, sense_def)
                 if note is None:
                     skipped += 1
                     continue
@@ -382,7 +380,7 @@ def main():
                     deck_counts[tag] += 1
         else:
             # Standard: one card per entry (Option A)
-            note = build_note(row, args.min_confidence)
+            note = build_note(row)
             if note is None:
                 skipped += 1
                 continue

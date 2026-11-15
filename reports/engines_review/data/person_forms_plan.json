@@ -1,0 +1,44 @@
+{
+ "what": "what was fixed before the sealed half of the person-derivation test was opened",
+ "written": "2026-11-14 17:56",
+ "read_from": "the open half only (1,065 verbs with an odd entry number), and Stage 2's counts over all verbs as declared in person_forms_split.json",
+ "open_half_engine_as_reviewed": {
+  "forms_given": 995,
+  "start_as_form_4_starts": 746,
+  "per_cent": 75.0,
+  "by_rule": {
+   "ti- to ra-": "464 of 470 (98.7%)",
+   "tih- with a headword in h-: ti- to ra-": "86 of 87 (98.9%)",
+   "tu- to ru-": "157 of 166 (94.6%)",
+   "tiʔ- to raʔ-": "25 of 29 (86.2%)",
+   "tii- to rii- (built on an OCR slip)": "14 of 184",
+   "tuu- to ru- for uur- verbs (built on a misread cell)": "0 of 57",
+   "tih- to riih- (built on a misread cell)": "0 of 2",
+   "no form given": 70
+  }
+ },
+ "rules_looked_for_on_the_open_half": [
+  "For each start of form 2 (tii-, tuu-, tu-, tiʔ-, tih-, ti-, ta-) and each of five features fixed beforehand (all verbs; first letter of the headword; preverb; class; next letter of form 2), the left-edge substitution that agrees with form 4 most often. A rule would be taken if it held for 97% of a group of twenty or more.",
+  "tii- (184 open verbs): the best substitution, tii- to raa-, holds for 137 (74.5%); by first letter of the headword 88.8% (a), 77.8% (i), 88.9% (u, 18 verbs). No rule is taken: these verbs get no form.",
+  "tih- with a headword not in h- (2 open verbs): both show rih- in form 4. Two verbs are not a rule: no form.",
+  "tuu- for uur- verbs: with their own rule gone they fall under tu- to ru-, which then covers 223 open verbs and holds for 211 (94.6%).",
+  "Single slices that reach 97% (tuu- with a headword in i-, 24 of 24; tu- before a consonant in class VI, 25 of 25) are two of some sixty slices looked at. They are not taken as rules."
+ ],
+ "configurations": {
+  "narrow": {
+   "what": "the repair as the decision paper lists it: the three rules built on misread forms are out and their verbs get no form; ti- to ra-, tih- (h-) to ra-, tu- to ru- and tiʔ- to raʔ- stay",
+   "open_half": "forms given 809 of 1,065; start as form 4 starts 786 (97.2%)"
+  },
+  "strict": {
+   "what": "only the rules that hold for 97% of the open verbs they cover, with twenty or more of them: ti- to ra- and tih- (h-) to ra-. Verbs in tu- and tiʔ- get no form either",
+   "open_half": "forms given 557 of 1,065; start as form 4 starts 550 (98.7%)"
+  }
+ },
+ "bar": "97% of the forms given start as form 4 starts, on the sealed half (the decision paper, section 5)",
+ "which_ships": "Both configurations are measured in the one opening of the sealed half. 'narrow' ships if it reaches the bar there, since it is what the owner chose and gives more forms. If it does not, 'strict' ships, and its sealed figure is reported as it comes. Nothing is changed after the opening except the one word POLICY in scripts/person_forms.py.",
+ "what_the_test_cannot_show": [
+  "It tests the start of the 'he/she' question form only. The 'you' forms have no unseen test: only Appendix 1 prints a second person.",
+  "The witness is the gerundial (form 4), not the absolutive itself. Where Appendix 1 prints both they start alike for 5 of 7 verbs and differ by a glottal stop for 2 ('to come', 'to go'), which is the tiʔ- group: some of that rule's misses may be the witness's.",
+  "Agreement with form 4 is not a speaker's judgement."
+ ]
+}

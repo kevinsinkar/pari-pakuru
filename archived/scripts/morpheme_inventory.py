@@ -1,5 +1,22 @@
 #!/usr/bin/env python3
 """
+WITHDRAWN on 2026-11-14 (engines review, decision 2). Nothing uses this file.
+Do not use it to produce a Pawnee form.
+
+Why: its rules were fitted to Appendix 1 and reach 79.4% there (611 of 770).
+On the dictionary's 9,559 printed verb forms, which the rules never saw, it
+gets 15.0%. Six of its 37 table rows are pieces Parks does not print (kaaka-,
+raak-, iraak- twice, -u, -wi). Evidence and decision:
+reports/engines_review/measurements.md and decision.md.
+
+The two tables it wrote, `morpheme_inventory` and `verb_template_slots`, were
+dropped from the database the same day. Parks's own tables are in
+extracted_data/grammatical_overview_tables.json. To run this file again it
+needs `scripts/` on the import path (for sound_changes.py); the review's
+scripts in scripts/engines_review/ do that.
+
+What follows is the file as it was.
+
 Phase 3.1 — Morpheme Inventory & Verb Slot System
 ===================================================
 Defines the complete Skiri Pawnee verb template based on Parks Dictionary:

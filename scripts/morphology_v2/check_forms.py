@@ -21,7 +21,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from common import GOLD, OUT, connect, load_json, out  # noqa: E402
+from common import EXTRACTED, GOLD, OUT, connect, load_json, out  # noqa: E402
 
 DOCS = ["construction_guide.md", "learning_path.md", "review_queue.md"]
 ITALIC = re.compile(r"(?<!\*)\*(?!\*)([^*\n]+?)\*(?!\*)")
@@ -76,9 +76,6 @@ def valid_forms(conn):
         add(f)
         for tok in nfc(f).split():
             add(tok)
-    for (f,) in conn.execute("select morpheme_form from morpheme_inventory"):
-        add(f)
-        add(re.sub(r"[^a-zʔØ:]", "", f or ""))
     # the pieces of Parks's printed etymologies
     for (raw,) in conn.execute("select raw_etymology from etymology where raw_etymology is not null"):
         body = nfc(raw).strip("<>").split(";")[0].split(",")[0]
@@ -98,17 +95,33 @@ def valid_forms(conn):
     return forms, ipa, say
 
 
+def printed_cells():
+    """Every cell of Parks's tables as read from the page (the guide prints these tables row by row)."""
+    cells = {""}
+    for t in load_json(EXTRACTED / "grammatical_overview_tables.json")["tables"]:
+        for key in ("rows", "rows_first_reading", "rows_second_reading"):
+            for row in t.get(key, []):
+                cells.update(nfc(c).replace("|", "/") for c in row)
+    return cells
+
+
 def check(conn=None):
     conn = conn or connect()
     forms, ipa, say = valid_forms(conn)
+    cells = printed_cells()
     problems = []
-    counts = {"italic": 0, "ipa": 0, "say": 0}
+    counts = {"italic": 0, "ipa": 0, "say": 0, "cells": 0}
     for name in DOCS:
         path = OUT / name
         if not path.exists():
             problems.append((name, 0, "file", "missing"))
             continue
         for ln, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+            if line.startswith("| ") and line.endswith(" |"):
+                row = [c.strip() for c in line[2:-2].split(" | ")]
+                if all(c in cells for c in row):        # a row of one of Parks's tables, cell for cell
+                    counts["cells"] += sum(1 for c in row if c)
+                    continue
             for m in ITALIC.finditer(line):
                 counts["italic"] += 1
                 tok = nfc(m.group(1))
@@ -133,8 +146,8 @@ def check(conn=None):
 
 def main():
     counts, problems = check()
-    out("checked %d Pawnee forms, %d IPA transcriptions, %d respellings in %s" % (
-        counts["italic"], counts["ipa"], counts["say"], ", ".join(DOCS)))
+    out("checked %d Pawnee forms, %d IPA transcriptions, %d respellings, %d cells of Parks's tables in %s" % (
+        counts["italic"], counts["ipa"], counts["say"], counts["cells"], ", ".join(DOCS)))
     for name, ln, kind, tok in problems[:60]:
         out("UNRESOLVED %s in %s line %d: %s" % (kind, name, ln, tok))
     if problems:

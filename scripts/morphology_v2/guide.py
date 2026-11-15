@@ -46,6 +46,16 @@ def cell(text):
     return (text or "").replace("|", "/").replace("\n", " ").strip()
 
 
+def printed_table(w, rows):
+    """A table of the book, cell for cell as read from the page. The first printed row is the header row."""
+    width = max(len(r) for r in rows)
+    for i, row in enumerate(rows):
+        w("| %s |" % " | ".join(cell(c) for c in list(row) + [""] * (width - len(row))))
+        if i == 0:
+            w("|%s" % ("---|" * width))
+    w("")
+
+
 def short_gloss(text, n=70):
     # display-only repair of letter-spaced OCR runs in English glosses ('o n  o n e ' s  b a c k');
     # the database text is left as it is and the cases are listed in proposed_data_fixes.json
@@ -518,17 +528,38 @@ def construction_guide(book):
     w("")
     w("### The prefixes and endings Parks tabulates")
     w("")
-    w("These are Parks's own tables (Grammatical Overview, Tables 7 to 17), not a segmentation made here. "
-      "\"Examples\" counts his worked examples that contain the piece.")
+    w("These are Parks's own tables of the verb (Grammatical Overview, Tables 6 to 17), row by row as printed. "
+      "They are taken from `extracted_data/grammatical_overview_tables.json`: each table was read from the page "
+      "twice, by readers who did not see each other's reading. Where the two wrote the same text but divided "
+      "the rows differently, one division is shown and the other is in the file. Where the readings differ, "
+      "both are shown and neither is chosen. Nothing in these tables is a segmentation made here, and no piece "
+      "is put into a position of the verb that Parks does not put it in.")
     w("")
-    w("| Slot | Piece | Label | Worked examples in GO | One of them |")
-    w("|---|---|---|---|---|")
+    for t in book.inv["parks_tables"]:
+        w("**%s** (p. %s; %s)" % (cell(t["title"]), ", ".join(str(p) for p in t["book_pages"]), t["status"]))
+        w("")
+        if "rows" in t:
+            printed_table(w, t["rows"])
+        else:
+            w("First reading:")
+            w("")
+            printed_table(w, t["rows_first_reading"])
+            w("Second reading:")
+            w("")
+            printed_table(w, t["rows_second_reading"])
+    w("### The pieces Parks labels in his worked examples")
+    w("")
+    w("Counted from his worked examples in the same chapter; examples marked doubtful in the project's copy are "
+      "left out. The piece and the label are his, as printed in the analysis line of the example. The same "
+      "letters under two labels are two rows: the same spelling is not the same morpheme.")
+    w("")
+    w("| Piece | Label | Worked examples | One of them |")
+    w("|---|---|---|---|")
     for a in book.inv["inflection"]:
         ex = a["example"]
-        w("| %s %s | %s | %s | %d | %s |" % (a["slot"]["number"], cell(a["slot"]["name"]), it(a["form"]), cell(a["label"]),
-                                           a["worked_examples_in_grammatical_overview"],
-                                           "%s '%s' (GO p. %s)" % (it(ex["form"]), cell(ex["translation"]), ex["go_page"])
-                                           if ex else "—"))
+        w("| %s | %s | %d | %s |" % (it(a["form"]), cell(a["label"]), a["worked_examples_in_grammatical_overview"],
+                                     "%s '%s' (GO p. %s)" % (it(ex["form"]), cell(ex["translation"]), ex["go_page"])
+                                     if ex else "—"))
     w("")
     return "\n".join(L)
 

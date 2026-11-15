@@ -1,0 +1,218 @@
+{
+ "chapter3": {
+  "examples": 39,
+  "full_engine_by_cause": {
+   "exact": 8,
+   "glottal stop only": 1,
+   "other letters, further off": 12,
+   "other letters, within two": 13,
+   "vowel length and glottal stop": 3,
+   "vowel length only": 2
+  },
+  "full_engine_exact": 8,
+  "full_engine_exact_or_exact_when_told_to_drop_final_s": 9,
+  "full_engine_faults": {
+   "a length mark in Parks's pieces (-:hus) that the engine cannot read": 2,
+   "final k of the perfective not made into t (not one of the 24 rules)": 2,
+   "final s not dropped (rule 9R, which the engine applies only when told)": 2,
+   "final ʔ of a non-subordinate form not added (not one of the 24 rules)": 1,
+   "other": 24
+  },
+  "general_rules_only_exact": 6,
+  "left_out": 0,
+  "left_out_why": {},
+  "pieces_just_joined_exact": 1,
+  "seam_engine_first_choice_is_the_printed_form": 6,
+  "seam_engine_forms_allowed_per_word": {
+   "largest": 12,
+   "median": 3
+  },
+  "seam_engine_has_the_printed_form": 15,
+  "used": 39
+ },
+ "chapter3_by_rule": {
+  "10R": {
+   "examples": 1,
+   "full_engine_exact": 0,
+   "seam_engine_has_it": 0
+  },
+  "11R": {
+   "examples": 2,
+   "full_engine_exact": 0,
+   "seam_engine_has_it": 0
+  },
+  "12R": {
+   "examples": 2,
+   "full_engine_exact": 0,
+   "seam_engine_has_it": 0
+  },
+  "13": {
+   "examples": 2,
+   "full_engine_exact": 1,
+   "seam_engine_has_it": 1
+  },
+  "14": {
+   "examples": 1,
+   "full_engine_exact": 1,
+   "seam_engine_has_it": 1
+  },
+  "15": {
+   "examples": 1,
+   "full_engine_exact": 1,
+   "seam_engine_has_it": 1
+  },
+  "16": {
+   "examples": 2,
+   "full_engine_exact": 0,
+   "seam_engine_has_it": 1
+  },
+  "17": {
+   "examples": 2,
+   "full_engine_exact": 0,
+   "seam_engine_has_it": 0
+  },
+  "18": {
+   "examples": 1,
+   "full_engine_exact": 0,
+   "seam_engine_has_it": 0
+  },
+  "19": {
+   "examples": 2,
+   "full_engine_exact": 1,
+   "seam_engine_has_it": 2
+  },
+  "1R": {
+   "examples": 2,
+   "full_engine_exact": 0,
+   "seam_engine_has_it": 0
+  },
+  "20": {
+   "examples": 2,
+   "full_engine_exact": 0,
+   "seam_engine_has_it": 0
+  },
+  "21": {
+   "examples": 2,
+   "full_engine_exact": 0,
+   "seam_engine_has_it": 1
+  },
+  "22": {
+   "examples": 2,
+   "full_engine_exact": 0,
+   "seam_engine_has_it": 0
+  },
+  "23": {
+   "examples": 1,
+   "full_engine_exact": 0,
+   "seam_engine_has_it": 0
+  },
+  "2R": {
+   "examples": 3,
+   "full_engine_exact": 0,
+   "seam_engine_has_it": 0
+  },
+  "3R": {
+   "examples": 2,
+   "full_engine_exact": 2,
+   "seam_engine_has_it": 2
+  },
+  "4R": {
+   "examples": 2,
+   "full_engine_exact": 0,
+   "seam_engine_has_it": 0
+  },
+  "5": {
+   "examples": 2,
+   "full_engine_exact": 1,
+   "seam_engine_has_it": 2
+  },
+  "6": {
+   "examples": 1,
+   "full_engine_exact": 1,
+   "seam_engine_has_it": 1
+  },
+  "7": {
+   "examples": 1,
+   "full_engine_exact": 0,
+   "seam_engine_has_it": 0
+  },
+  "8R": {
+   "examples": 1,
+   "full_engine_exact": 0,
+   "seam_engine_has_it": 1
+  },
+  "9R": {
+   "examples": 2,
+   "full_engine_exact": 0,
+   "seam_engine_has_it": 2
+  }
+ },
+ "chapter3_without_the_engines_own_four_tests": {
+  "examples": 35,
+  "full_engine_by_cause": {
+   "exact": 5,
+   "glottal stop only": 1,
+   "other letters, further off": 12,
+   "other letters, within two": 12,
+   "vowel length and glottal stop": 3,
+   "vowel length only": 2
+  },
+  "full_engine_exact": 5,
+  "full_engine_exact_or_exact_when_told_to_drop_final_s": 5,
+  "full_engine_faults": {
+   "a length mark in Parks's pieces (-:hus) that the engine cannot read": 2,
+   "final k of the perfective not made into t (not one of the 24 rules)": 2,
+   "final s not dropped (rule 9R, which the engine applies only when told)": 1,
+   "final ʔ of a non-subordinate form not added (not one of the 24 rules)": 1,
+   "other": 24
+  },
+  "general_rules_only_exact": 4,
+  "left_out": 0,
+  "left_out_why": {},
+  "pieces_just_joined_exact": 1,
+  "seam_engine_first_choice_is_the_printed_form": 3,
+  "seam_engine_forms_allowed_per_word": {
+   "largest": 12,
+   "median": 3
+  },
+  "seam_engine_has_the_printed_form": 11,
+  "used": 35
+ },
+ "chapter4": {
+  "examples": 93,
+  "full_engine_by_cause": {
+   "exact": 15,
+   "other letters, further off": 19,
+   "other letters, within two": 27,
+   "vowel length and glottal stop": 7,
+   "vowel length only": 6
+  },
+  "full_engine_exact": 15,
+  "full_engine_exact_or_exact_when_told_to_drop_final_s": 17,
+  "full_engine_faults": {
+   "a length mark in Parks's pieces (-:hus) that the engine cannot read": 1,
+   "final k of the perfective not made into t (not one of the 24 rules)": 4,
+   "final s not dropped (rule 9R, which the engine applies only when told)": 3,
+   "other": 46,
+   "s made into c inside a piece (rule 17 applied where there is no boundary)": 5
+  },
+  "general_rules_only_exact": 12,
+  "left_out": 19,
+  "left_out_why": {
+   "a piece is not a plain form": 1,
+   "flagged in the gold file: structured": 7,
+   "flagged in the gold file: surface_suspect": 3,
+   "the line holds two analyses (asaaki and riiciki); the pieces of both were joined": 1,
+   "the line holds two analyses; the pieces of both were joined": 1,
+   "the word listed is not the word these pieces make (it is another word of the same example)": 6
+  },
+  "pieces_just_joined_exact": 11,
+  "seam_engine_first_choice_is_the_printed_form": 14,
+  "seam_engine_forms_allowed_per_word": {
+   "largest": 12,
+   "median": 4
+  },
+  "seam_engine_has_the_printed_form": 36,
+  "used": 74
+ }
+}

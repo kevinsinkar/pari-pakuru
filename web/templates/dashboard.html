@@ -94,80 +94,36 @@
   </section>
 </div>
 
-{# ====== Grammar Engine ====== #}
+{# ====== Reference tables (copied from the sources; nothing computed) ====== #}
 <section class="dash-section">
-  <h2 class="dash-section-title">Grammar Engine</h2>
+  <h2 class="dash-section-title">Reference Tables</h2>
+  <p class="dash-engine-detail" style="margin:0 0 0.75rem;">Copied from the printed sources. The app computes none of these forms.</p>
   <div class="dash-engine-grid">
     <div class="dash-engine-card">
-      <span class="section-label">Verb Paradigms</span>
-      {% if verb.paradigm_forms is not none %}
-        <span class="dash-engine-number">{{ "{:,}".format(verb.paradigm_forms) }}</span>
-        <span class="dash-engine-detail">forms ({{ verb.distinct_verbs }} verbs)</span>
+      <span class="section-label">Appendix 1: Verb Paradigms</span>
+      {% if reference.paradigm_forms is not none %}
+        <span class="dash-engine-number">{{ "{:,}".format(reference.paradigm_forms) }}</span>
+        <span class="dash-engine-detail">printed forms ({{ reference.distinct_verbs }} verbs)</span>
       {% else %}
-        <span class="dash-engine-detail" style="color:var(--earth-600);">Not generated yet</span>
+        <span class="dash-engine-detail" style="color:var(--earth-600);">Table missing</span>
       {% endif %}
     </div>
     <div class="dash-engine-card">
-      <span class="section-label">Sound Change Rules</span>
-      {% if verb.sound_rules is not none %}
-        <span class="dash-engine-number">{{ verb.sound_rules }}</span>
-        <span class="dash-engine-detail">cataloged rules</span>
+      <span class="section-label">Chapter 3: Sound Changes</span>
+      {% if reference.sound_rules is not none %}
+        <span class="dash-engine-number">{{ reference.sound_rules }}</span>
+        <span class="dash-engine-detail">rules, with Parks's examples</span>
       {% else %}
-        <span class="dash-engine-detail" style="color:var(--earth-600);">Not generated yet</span>
+        <span class="dash-engine-detail" style="color:var(--earth-600);">Table missing</span>
       {% endif %}
     </div>
     <div class="dash-engine-card">
-      <span class="section-label">Morpheme Inventory</span>
-      {% if verb.morphemes is not none %}
-        <span class="dash-engine-number">{{ verb.morphemes }}</span>
-        <span class="dash-engine-detail">mapped morphemes</span>
+      <span class="section-label">Appendix 3: Kinship Terms</span>
+      {% if reference.kinship is not none %}
+        <span class="dash-engine-number">{{ reference.kinship }}</span>
+        <span class="dash-engine-detail">terms with their printed forms</span>
       {% else %}
-        <span class="dash-engine-detail" style="color:var(--earth-600);">Not generated yet</span>
-      {% endif %}
-    </div>
-    <div class="dash-engine-card">
-      <span class="section-label">Stem Extraction</span>
-      {% if verb.stem_total is not none %}
-        <span class="dash-engine-number">{{ verb.stem_pct }}%</span>
-        <span class="dash-engine-detail">{{ "{:,}".format(verb.stem_exact) }}/{{ "{:,}".format(verb.stem_total) }} form_2 exact</span>
-        <span class="dash-engine-detail">{{ verb.stem_pct_close }}% with close matches</span>
-      {% else %}
-        <span class="dash-engine-detail" style="color:var(--earth-600);">Not available</span>
-      {% endif %}
-    </div>
-    {% if verb.confidence_dist %}
-    <div class="dash-engine-card">
-      <span class="section-label">Prediction Confidence</span>
-      <span class="dash-engine-number">{{ (verb.confidence_dist.avg * 100) | round(0) | int }}%</span>
-      <span class="dash-engine-detail">avg across {{ "{:,}".format(verb.confidence_dist.total) }} verbs</span>
-      <div style="display:flex; gap:0.5rem; margin-top:0.5rem; font-size:0.8rem;">
-        <span style="color:var(--sage-600);">High: {{ "{:,}".format(verb.confidence_dist.high) }}</span>
-        <span style="color:var(--gold-600);">Med: {{ "{:,}".format(verb.confidence_dist.medium) }}</span>
-        <span style="color:var(--clay-600);">Low: {{ "{:,}".format(verb.confidence_dist.low) }}</span>
-      </div>
-      {% set cd = verb.confidence_dist %}
-      {% set cd_total = cd.total if cd.total else 1 %}
-      <div style="display:flex; height:8px; border-radius:4px; overflow:hidden; margin-top:0.4rem; width:100%;">
-        <div style="width:{{ (cd.high / cd_total * 100) | round(1) }}%; background:var(--sage-400);"></div>
-        <div style="width:{{ (cd.medium / cd_total * 100) | round(1) }}%; background:var(--gold-400);"></div>
-        <div style="width:{{ (cd.low / cd_total * 100) | round(1) }}%; background:var(--clay-400);"></div>
-      </div>
-    </div>
-    {% endif %}
-    <div class="dash-engine-card">
-      <span class="section-label">Possession Engine</span>
-      {% if poss.body_part is not none %}
-        <span class="dash-engine-number">{{ poss.body_part }}</span>
-        <span class="dash-engine-detail">body-part stems</span>
-        {% if poss.kinship is not none %}
-          <span class="dash-engine-detail">{{ poss.kinship }} kinship paradigms</span>
-        {% endif %}
-        {% if poss.bb_total is not none and poss.bb_total > 0 %}
-          <span class="dash-engine-detail">BB validation: {{ poss.bb_exact }}/{{ poss.bb_total }}
-            ({{ (poss.bb_exact / poss.bb_total * 100) | round(0) | int }}%)</span>
-        {% endif %}
-      {% else %}
-        <span class="dash-engine-detail" style="color:var(--earth-600);">Not generated yet</span>
+        <span class="dash-engine-detail" style="color:var(--earth-600);">Table missing</span>
       {% endif %}
     </div>
   </div>

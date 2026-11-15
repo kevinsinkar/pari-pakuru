@@ -1,0 +1,331 @@
+{
+ "A_appendix1": {
+  "by_cause": {
+   "exact": 25,
+   "no form produced": 1,
+   "vowel length only": 2
+  },
+  "cells": 28,
+  "misses": [
+   {
+    "cause": "no form produced",
+    "cell": "3sg_abs",
+    "derived": null,
+    "printed": "raʔaʔ",
+    "verb": "to come"
+   },
+   {
+    "cause": "vowel length only",
+    "cell": "3sg_abs",
+    "derived": "ruhii",
+    "printed": "ruuhii",
+    "verb": "to be good"
+   },
+   {
+    "cause": "vowel length only",
+    "cell": "3sg_abs",
+    "derived": "riihkiraawaʔ",
+    "printed": "rihkiraawaʔ",
+    "verb": "to be sick"
+   }
+  ]
+ },
+ "B_form4": {
+  "by_rule": {
+   "none: form 2 begins ku-": {
+    "no form produced": 1
+   },
+   "none: form 2 begins ri-": {
+    "no form produced": 1
+   },
+   "none: form 2 begins ru-": {
+    "no form produced": 14
+   },
+   "none: form 2 begins ta-": {
+    "no form produced": 127
+   },
+   "ti- to ra-": {
+    "other letters": 10,
+    "the same": 925,
+    "vowel length": 4
+   },
+   "tih- to riih-": {
+    "other letters": 1,
+    "vowel length": 3
+   },
+   "tih- with a stem in h-: ti- to ra-": {
+    "other letters": 3,
+    "the same": 187
+   },
+   "tii- to rii-": {
+    "other letters": 322,
+    "the same": 29,
+    "vowel length": 1
+   },
+   "tiʔ- to raʔ-": {
+    "glottal stop": 4,
+    "other letters": 7,
+    "the same": 37
+   },
+   "tu- to ru-": {
+    "other letters": 6,
+    "the same": 325,
+    "vowel length": 8
+   },
+   "tuu- to ru- (preverb uur-)": {
+    "other letters": 4,
+    "vowel length": 105
+   }
+  },
+  "left_out": {
+   "left out: form 4 is not irii- + r…": 40,
+   "left out: two printed forms": 63
+  },
+  "result": {
+   "glottal stop": 4,
+   "no form produced": 143,
+   "other letters": 353,
+   "the same": 1503,
+   "vowel length": 121
+  },
+  "tested": 2124,
+  "verbs_with_forms_2_and_4": 2227
+ },
+ "B_witness_on_appendix1": {
+  "first_and_second_person": {
+   "the same": 12,
+   "vowel length": 2
+  },
+  "rows": [
+   {
+    "absolutive": "ratiiraʔ",
+    "gerundial": "iriiratiira",
+    "person": "1sg",
+    "result": "the same",
+    "verb": "to come",
+    "zone": "rat"
+   },
+   {
+    "absolutive": "rasiiraʔ",
+    "gerundial": "iriirasiira",
+    "person": "2sg",
+    "result": "the same",
+    "verb": "to come",
+    "zone": "ras"
+   },
+   {
+    "absolutive": "raʔaʔ",
+    "gerundial": "iriraʔa",
+    "person": "3sg",
+    "result": "glottal stop",
+    "verb": "to come",
+    "zone": "raʔaʔ"
+   },
+   {
+    "absolutive": "ratuutaa",
+    "gerundial": "iriiratuutaara",
+    "person": "1sg",
+    "result": "the same",
+    "verb": "to do it",
+    "zone": "rat"
+   },
+   {
+    "absolutive": "rasuutaa",
+    "gerundial": "iriirasuutaara",
+    "person": "2sg",
+    "result": "the same",
+    "verb": "to do it",
+    "zone": "ras"
+   },
+   {
+    "absolutive": "ruutaa",
+    "gerundial": "iriiruutaara",
+    "person": "3sg",
+    "result": "the same",
+    "verb": "to do it",
+    "zone": "ruu"
+   },
+   {
+    "absolutive": "raatat",
+    "gerundial": "iriiraatata",
+    "person": "1sg",
+    "result": "the same",
+    "verb": "to go",
+    "zone": "raa"
+   },
+   {
+    "absolutive": "raasat",
+    "gerundial": "iriiraasata",
+    "person": "2sg",
+    "result": "the same",
+    "verb": "to go",
+    "zone": "raa"
+   },
+   {
+    "absolutive": "raʔat",
+    "gerundial": "iriiraata",
+    "person": "3sg",
+    "result": "glottal stop",
+    "verb": "to go",
+    "zone": "raʔa"
+   },
+   {
+    "absolutive": "ratuuhii",
+    "gerundial": "iriiratuuhiira",
+    "person": "1sg",
+    "result": "the same",
+    "verb": "to be good",
+    "zone": "rat"
+   },
+   {
+    "absolutive": "rasuuhii",
+    "gerundial": "iriirasuuhiira",
+    "person": "2sg",
+    "result": "the same",
+    "verb": "to be good",
+    "zone": "ras"
+   },
+   {
+    "absolutive": "ruuhii",
+    "gerundial": "iriruuhiira",
+    "person": "3sg",
+    "result": "the same",
+    "verb": "to be good",
+    "zone": "ruu"
+   },
+   {
+    "absolutive": "ratkiikaʔ",
+    "gerundial": "iriiratkikaa",
+    "person": "1sg",
+    "result": "the same",
+    "verb": "to drink it",
+    "zone": "rat"
+   },
+   {
+    "absolutive": "raskiikaʔ",
+    "gerundial": "iriiraskikaa",
+    "person": "2sg",
+    "result": "the same",
+    "verb": "to drink it",
+    "zone": "ras"
+   },
+   {
+    "absolutive": "rakiikaʔ",
+    "gerundial": "iriirakikaa",
+    "person": "3sg",
+    "result": "the same",
+    "verb": "to drink it",
+    "zone": "raki"
+   },
+   {
+    "absolutive": "riikukiraawaʔ",
+    "gerundial": "iriirikukiraawaa",
+    "person": "1sg",
+    "result": "vowel length",
+    "verb": "to be sick",
+    "zone": "riik"
+   },
+   {
+    "absolutive": "raakiraawaʔ",
+    "gerundial": "iriirakiraawaa",
+    "person": "2sg",
+    "result": "vowel length",
+    "verb": "to be sick",
+    "zone": "raak"
+   },
+   {
+    "absolutive": "rihkiraawaʔ",
+    "gerundial": "iriirihkiraawaa",
+    "person": "3sg",
+    "result": "the same",
+    "verb": "to be sick",
+    "zone": "rih"
+   },
+   {
+    "absolutive": "rahaa",
+    "gerundial": "iriirahaaha",
+    "person": "1sg",
+    "result": "the same",
+    "verb": "to have it",
+    "zone": "rah"
+   },
+   {
+    "absolutive": "rastaa",
+    "gerundial": "iriirastaaha",
+    "person": "2sg",
+    "result": "the same",
+    "verb": "to have it",
+    "zone": "ras"
+   },
+   {
+    "absolutive": "raraa",
+    "gerundial": "iriiraraaha",
+    "person": "3sg",
+    "result": "the same",
+    "verb": "to have it",
+    "zone": "rara"
+   }
+  ],
+  "third_person": {
+   "glottal stop": 2,
+   "the same": 5
+  }
+ },
+ "C_descriptive_first_person": {
+  "by_cause": {
+   "no form produced": 103,
+   "other letters, further off": 81
+  },
+  "verbs": 184
+ },
+ "D_E_coverage_and_examples": {
+  "I, future": {
+   "found_as_a_word_in_some_dictionary_example": 0,
+   "found_in_an_example_of_the_same_entry": 0,
+   "of_verbs": 2239,
+   "verbs_with_a_derived_form": 1751
+  },
+  "I, present": {
+   "found_as_a_word_in_some_dictionary_example": 4,
+   "found_in_an_example_of_the_same_entry": 1,
+   "of_verbs": 2239,
+   "verbs_with_a_derived_form": 1149
+  },
+  "I, question form": {
+   "found_as_a_word_in_some_dictionary_example": 1,
+   "found_in_an_example_of_the_same_entry": 0,
+   "of_verbs": 2239,
+   "verbs_with_a_derived_form": 1757
+  },
+  "he/she, question form": {
+   "found_as_a_word_in_some_dictionary_example": 7,
+   "found_in_an_example_of_the_same_entry": 1,
+   "of_verbs": 2239,
+   "verbs_with_a_derived_form": 2046
+  },
+  "you, future": {
+   "found_as_a_word_in_some_dictionary_example": 0,
+   "found_in_an_example_of_the_same_entry": 0,
+   "of_verbs": 2239,
+   "verbs_with_a_derived_form": 1727
+  },
+  "you, past": {
+   "found_as_a_word_in_some_dictionary_example": 1,
+   "found_in_an_example_of_the_same_entry": 0,
+   "of_verbs": 2239,
+   "verbs_with_a_derived_form": 1757
+  },
+  "you, present": {
+   "found_as_a_word_in_some_dictionary_example": 0,
+   "found_in_an_example_of_the_same_entry": 0,
+   "of_verbs": 2239,
+   "verbs_with_a_derived_form": 1134
+  },
+  "you, question form": {
+   "found_as_a_word_in_some_dictionary_example": 3,
+   "found_in_an_example_of_the_same_entry": 1,
+   "of_verbs": 2239,
+   "verbs_with_a_derived_form": 1757
+  }
+ }
+}

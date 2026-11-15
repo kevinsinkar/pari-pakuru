@@ -1,0 +1,65 @@
+{
+ "made_by": "scripts/engines_review/build_test_sets.py",
+ "sets": {
+  "appendix1": {
+   "items": 770,
+   "seen_or_unseen": "seen: the conjugation engine, the accent rules and the person rules were fitted to these",
+   "sha256": "95d42076a9c6bd6519d4551dba2e45f82f592ecbd597fb1120d52000139ae872",
+   "source": "Parks, Appendix 1, as corrected from the page: extracted_data/appendix1_conjugations.json"
+  },
+  "blue_book_possession": {
+   "items": 37,
+   "seen_or_unseen": "the engine's constructions were taken from the OCR text of these lines",
+   "sha256": "331cc0af86bf79ac9c03840204f721cb35ac073e3250e0b820cf2685850a5015",
+   "source": "possession forms of Blue Book lessons 5 and 7, as read from the scan: table blue_book_attestations"
+  },
+  "blue_book_sentences": {
+   "items": 454,
+   "seen_or_unseen": "the templates were taken from the OCR text of these lines",
+   "sha256": "dd08dcaa6eab18f7ee4b64f9dfc6ee01832a089ae5d7b3632fca9b6c4157bf9b",
+   "source": "every Blue Book dialogue line, phrase and grammar example: table blue_book_attestations"
+  },
+  "chapter3_examples": {
+   "items": 39,
+   "seen_or_unseen": "four are among the sound-change engine's own tests; the rest it was never run on",
+   "sha256": "0f49e942867bd440bc03c6dc2bd569f07b101573cc4828594f61be3460f76a20",
+   "source": "Parks's examples to his 24 sound changes: the catalogue in scripts/sound_changes.py (= table sound_change_rules)"
+  },
+  "chapter4_examples": {
+   "items": 93,
+   "seen_or_unseen": "unseen by every engine",
+   "sha256": "7496e7e0bfbefb3600e78026bda96fc6ce4c41003b52c872ad4c728f4446522e",
+   "source": "Parks's worked examples in chapter 4: curriculum/roots_v2/gold/g1_go_examples.json (locked by hash)"
+  },
+  "dictionary_forms": {
+   "items": 9559,
+   "seen_or_unseen": "unseen by the conjugation engine and the person rules; form 2 seen by the form 2 predictor",
+   "sha256": "7e15e2ff8d713966862e1d27ca4fc8c872009d54a29c0b362c4b6ab9b2abf2e4",
+   "source": "the five verb forms of the dictionary entries: table paradigmatic_forms"
+  },
+  "kinship_appendix3": {
+   "items": 11,
+   "seen_or_unseen": "the possession engine looks these up",
+   "sha256": "ecd709f91fc64dde188eb1ea8578d71fe0d1c084f32e874dd1c3c9b656147a96",
+   "source": "Parks, Appendix 3: extracted_data/appendix3_kinship.json"
+  },
+  "noun_case_examples": {
+   "items": 680,
+   "seen_or_unseen": "unseen by the possession engine",
+   "sha256": "eba255d9e4ebbee884d852c731e9ed58ec392b67ef4b4366a197b6a4360fa3f3",
+   "source": "one-word examples in -kat, -(h)iriʔ, -ru printed under noun entries: tables examples, lexical_entries"
+  },
+  "noun_etymologies": {
+   "items": 1350,
+   "seen_or_unseen": "unseen",
+   "sha256": "aad966add90f9f9299337fc17a95617b665ade62b6ea3b886518ced668789047",
+   "source": "every noun with a printed etymology made of pieces: tables lexical_entries, etymology"
+  },
+  "noun_suffix_words": {
+   "items": 57,
+   "seen_or_unseen": "the 42 in + hiriʔ were used on 2026-11-13 to set the possession engine's rule for that suffix; the others unseen",
+   "sha256": "11417ea43ec52292317a322915bc8fa6eed07a8112b3211b565f28850d26fff1",
+   "source": "dictionary words whose printed etymology ends in + hiriʔ, + kat or + ru: tables lexical_entries, etymology"
+  }
+ }
+}

@@ -1,0 +1,756 @@
+fix_lesson_text_ocr — APPLY — 2026-11-14 17:19
+OCR readings the audit corrected: 104 distinct
+still standing in the lessons' text: 65 places, 64 distinct readings, in 14 lessons
+titles to take from the Blue Book table's reading of the title line: 12; titles with no such reading, left: 7
+values of extracted_data/lessons.json that are not the table's: 23
+
+written: 65 places in 14 lessons, 12 titles, 23 values in extracted_data/lessons.json
+backup: OneDrive/pari_pakuru_backups/skiri_pawnee_backup_20261114_171951_lesson_text.db
+
+== 1. Running text (lesson, where, old reading -> the audit's reading)
+  L1  grammar_notes KIRIKJ RA•TARAWIS? -> KIRIKÉ RA•TARAWIS?
+  L2  grammar_notes Ka rds•atkuku'? -> Ka rás•atkuku'?
+  L2  grammar_notes KIRIKJ RUT•U'? -> KIRIKÉ RUT•U'?
+  L2  grammar_notes Stiks .atku! -> Súks•atku!
+  L3  grammar_notes KIRIKJ RAS•TA? -> KIRIKÉ RAS•TA?
+  L5  dialogues     Kaki ku .paks•tdari', -> Kaki ku•paks•táari',
+  L5  grammar_notes Suks•at pihkawf .hiri'. -> Suks•at pihkawí•hiri'.
+  L5  grammar_notes Siiks•at. -> Súks•at.
+  L5  grammar_notes Suksta•pdku ' . -> Suksta•páku'.
+  L5  grammar_notes Stiksta•pu'. -> Súksta•pu'.
+  L5  grammar_notes Stiks•at. -> Súks•at.
+  L7  grammar_notes We t'at•atsfks•tat•at -> We t'at•atsíks•tat•at
+  L7  grammar_notes T'at•atsfks•ta -> T'at•atsíks•ta
+  L7  grammar_notes Nawa hfru'! -> Nawa híru'!
+  L7  grammar_notes Wfs kutsu'! -> Wís kutsu'!
+  L7  grammar_notes hiwdririks -> hiwáririks
+  L7  grammar_notes hidsti ' -> hiásti'
+  L7  grammar_notes hipdkti' -> hipákti'
+  L7  grammar_notes hisdsti' -> hisásti'
+  L7  grammar_notes hiwdhri' -> hiwáhri'
+  L7  grammar_notes hikdri' -> hikári'
+  L7  grammar_notes ktI rasiru paks•ktiku' -> kú•rasir•u paks•kúku'
+  L7  grammar_notes kti•ratiru paks-ktiku' -> kú•ratir•u paks•kúku'
+  L7  grammar_notes kti .ra•u paks•ktiku' -> kú•ra•u paks•kúku'
+  L7  grammar_notes ti ra•kti pita -> ti ra•kú pita
+  L8  grammar_notes ti•hattih•kaarit -> ti•hatúh•kaarit
+  L8  grammar_notes sihuks•tarti .kita -> sihuks•tarú•kita
+  L8  grammar_notes pitkus•htis•iri ' -> pitkus•hús•iri'
+  L8  grammar_notes asku•hti .kita -> asku•hú•kita
+  L8  grammar_notes pitkti .ka•ke' -> pitkú•ka•ke'
+  L8  grammar_notes askti .ka•ke' -> askú•ka•ke'
+  L8  grammar_notes pitati .asku -> pitaú•asku
+  L8  grammar_notes tsktis•kakusu' -> tskús•kakusu'
+  L10 grammar_notes KA RIiH•RATSAUS? -> KA RÚH•RATSAUS?
+  L11 grammar_notes Aka ' , hiri we ttih•kaharawere. -> Aka', hiri we túh•kaharawere.
+  L11 grammar_notes Kesku•'ti kait. -> Kesku•'ú kait.
+  L11 grammar_notes Ketard .pu'! -> Ketará•pu'!
+  L11 grammar_notes Stiks•kika'. -> Súks•kika'.
+  L11 grammar_notes Tuhtira•pu'! -> Tuhúra•pu'!
+  L12 grammar_notes Kitske rd•awitsu'? -> Kitske rá•awitsu'?
+  L12 grammar_notes Rtiruks•pu'. -> Rúruks•pu'.
+  L12 grammar_notes Stiksta•pu'. -> Súksta•pu'.
+  L12 grammar_notes Rtiruks•at. -> Rúruks•at.
+  L12 grammar_notes Ktisti•at -> Kústi•at
+  L14 grammar_notes ru tuks•ta•pdrihrit -> ru tuks•ta•párihrit
+  L14 grammar_notes ru ti ra•pdrihrit -> ru ti ra•párihrit
+  L14 grammar_notes ta rara•rdsitu' -> ta rara•rásitu'
+  L14 grammar_notes ta rd ritu' -> ta rá•ritu'
+  L14 grammar_notes kakd taris -> kaká taris
+  L14 grammar_notes td taris -> tá taris
+  L14 grammar_notes tf•'at -> tí•'at
+  L15 grammar_notes tirardh•kiwiku' -> tiraráh•kiwiku'
+  L15 grammar_notes tirardh•karu -> tiraráh•karu
+  L15 grammar_notes We t'at•tsu•a•tisuku'. -> We t'at•tsu•a•úsuku'.
+  L15 grammar_notes We tuks•at•tsti .a. -> We tuks•at•tsú•a.
+  L15 grammar_notes Kut'at•tsu•d ista. -> Kut'at•tsu•á•ista.
+  L16 grammar_notes We witi tat•titsi'sta. -> We wíti tat•útsi'sta.
+  L18 grammar_notes Take ratutsiks•d .wahri'? -> Také ratutsiks•á•wahri'?
+  L18 grammar_notes We ktitasut•a .wahri'. -> We kútasut•á•wahri'.
+  L18 grammar_notes We ktitut .a.wahri'. -> We kútut•á•wahri'.
+  L18 grammar_notes We ktitatutawahri'. -> We kútatut•á•wahri'.
+  L18 grammar_notes Kesku•rahtirihu'. -> Kesku•rahúrihu'.
+  L20 dialogues     Tat•itska ratkti .u .ta -> Tát•itska ratkú•u•ta
+  L20 dialogues     Kaki', tatitska rakti•u•ta -> Kakí', tat•itska rakú•u•ta
+  L20 grammar_notes tatpd .waktit -> tat•pá•waktit
+
+== 2. Titles (lesson, stored -> the table's reading of the title line)
+  L1  KIRIKI RU'? -> KIRIKÉ RU'?
+  L2  KIRIKI RA•TARAWIS? -> KIRIKÉ RA•TARAWIS?
+  L3  KIRIKI RUT•U'? -> KIRIKÉ RUT•U'?
+  L4  KIRIKI RAS•TA? -> KIRIKÉ RAS•TA?
+  L5  TARIKTAU' -> TARÍKTAU'
+  L7  TARI RU'? -> TAKÉ RU'?
+  L11 KA RIIH•RATSAUS? -> KA RÚH•RATSAUS?
+  L13 KIRU RATSUKS•AT? -> KIRU RÁSUKS•AT?
+  L14 KA RUSUT•ERIT? -> KÁ RUSUT•ERIT?
+  L15 RI•KATIHARU' -> RI•KÁTIHARU'
+  L16 KITSKE WE RU'? -> KITSKÉ WE RU'
+  L19 T'ARAWI•A -> T'ÁR•AWI•A
+
+== Titles the table has no reading of: left as they are, for a person with the page
+  L6  (no Skiri title stored)
+  L8  KI Rid RA. KU?
+  L9  KIRU RA•'AT
+  L10 KIRIKI RUH•RA'?
+  L12 SUKS•U.
+  L17 TIRUKS•TSAKARIKI
+  L18 KIRIKI RASUTSIKS•ARI'?
+
+== Old readings standing on a page the audit did not read them on: left
+  none
+
+== 3. extracted_data/lessons.json (lesson, value that is not the table's)
+  L1  grammar_notes
+  L2  grammar_notes
+  L3  grammar_notes
+  L5  dialogues
+  L5  grammar_notes
+  L6  english_title
+  L7  grammar_notes
+  L8  grammar_notes
+  L9  skiri_title
+  L10 skiri_title
+  L10 grammar_notes
+  L11 grammar_notes
+  L12 skiri_title
+  L12 grammar_notes
+  L14 grammar_notes
+  L15 grammar_notes
+  L16 grammar_notes
+  L17 skiri_title
+  L17 english_title
+  L18 grammar_notes
+  L20 skiri_title
+  L20 dialogues
+  L20 grammar_notes
+
+---- a later run ----
+fix_lesson_text_ocr — APPLY — 2026-11-14 17:46
+old readings the audit corrected: 755 distinct; 381 of them differ from the reading in letters, spacing or punctuation
+still standing in the lessons' text: 145 places, 142 distinct readings, in 17 lessons
+titles to take from the Blue Book table's reading of the title line: 0; titles with no such reading, left: 7
+values of extracted_data/lessons.json that are not the table's: 21
+left on purpose: 194 places where only an accent or a capital differs
+
+written: 145 places in 17 lessons, 0 titles, 21 values in extracted_data/lessons.json
+backup: OneDrive/pari_pakuru_backups/skiri_pawnee_backup_20261114_174633_lesson_text.db
+
+== 1. Running text (lesson, where, old reading -> the audit's reading)
+  L1  dialogues     Ahu ', ti hitu'. -> Ahu', tí hitu'.
+  L1  grammar_notes Suks-paku'. -> Suks•páku'.
+  L2  grammar_notes kitsu ' -> kitsu'
+  L2  grammar_notes hitu ' -> hitu'
+  L2  grammar_notes raku ' -> raku'
+  L2  grammar_notes raku ' -> raku'
+  L2  grammar_notes ti kits•u"hat -> ti kits•úhat
+  L2  grammar_notes ti r I ha•pi -> ti rá•ha•pi
+  L2  grammar_notes het•kitsu ' -> het•kítsu'
+  L2  grammar_notes ra .ha•pi -> rá•ha•pi
+  L2  grammar_notes kitsu ' -> kitsu'
+  L2  grammar_notes hetu ' -> hetu'
+  L2  grammar_notes Kits .Ka -> Kits•Ka
+  L2  grammar_notes Kitu su'ksta•paku'. -> Kitu súksta•paku'.
+  L2  grammar_notes Asku su'ks•paku'. -> Asku súks•paku'.
+  L2  grammar_notes Suksta'k•atku! -> Suksták•atku!
+  L2  grammar_notes Sisu'ks•atku! -> Sisúks•atku!
+  L5  grammar_notes Sutsiks .sapita•hat. -> Sutsiks•sápita•hat.
+  L5  grammar_notes Suks .at kusaksi. -> Suks•at kúsaksi.
+  L5  grammar_notes Pahitu suks .ku! -> Pahitu súks•ku!
+  L5  grammar_notes Suks•paka-rihu'. -> Suks•paká•rihu'.
+  L5  grammar_notes Sitat .pitit. -> Sítat•pitit.
+  L5  grammar_notes Suksta-paku'. -> Suksta•páku'.
+  L5  grammar_notes Tahra .pitit. -> Tahrá•pitit.
+  L5  grammar_notes Sisukspaku'. -> Sísuks•paku'.
+  L5  grammar_notes Sisukspitit. -> Sísuks•pitit.
+  L5  grammar_notes Sisuks .pa. -> Sísuks•pa.
+  L5  grammar_notes Tahrapaku'. -> Tahra•páku'.
+  L5  grammar_notes Tas•pa"ku'. -> Tas•páku'.
+  L6  grammar_notes tut•ari ' -> tut•ári'
+  L6  grammar_notes Tiku 'tskipi. -> Tikú'tskipi.
+  L6  grammar_notes Kirike ratut•ari '? -> Kiriké ratut•ari'?
+  L6  grammar_notes Kirike rit•ari '? -> Kiriké rit•ari'?
+  L6  grammar_notes Kirike rutari '? -> Kiriké rut•ari'?
+  L6  grammar_notes Siti .wari'. -> Sití•wari'.
+  L6  grammar_notes Tas•pari ' . -> Tás•pari'.
+  L6  grammar_notes Tat•pari ' . -> Tát•pari'.
+  L6  grammar_notes Ti .wari'. -> Tí•wari'.
+  L6  grammar_notes sitas .kikat -> sítas•kikat
+  L6  grammar_notes ta 'tskipi -> tá'tskipi
+  L7  dialogues     ka ra .wari ' -> ka rá•wari'
+  L7  grammar_notes Su'ksur•erit! -> Súksur•erit!
+  L7  grammar_notes Nawa niru! -> Nawa rúru!
+  L7  grammar_notes i ra•ariki pita -> ti ra•arikí pita
+  L7  grammar_notes i ra•kti pita -> ti ra•kú pita
+  L8  grammar_notes Niru ruks•ku? -> Kíru ruks•ku?
+  L8  grammar_notes Tuks .kaku '. -> Tuks•kaku'.
+  L8  grammar_notes Suks .atku. -> Suks•átku.
+  L8  grammar_notes tat .kiikat -> tat•kíkat
+  L8  grammar_notes tas .kikat -> tas•kíkat
+  L8  grammar_notes ti .kikat -> ti•kíkat
+  L8  grammar_notes kakat•ira ita' -> kakat•irá•ita'
+  L8  grammar_notes tawi•rIhuks•iri ' -> tawi•ríhuks•iri'
+  L8  grammar_notes ksur awiu' -> ksúr•awiu'
+  L8  grammar_notes pitau ' -> pitau'
+  L8  grammar_notes Ka ru rut•tsirau '? -> Ka ru rut•tsírau'?
+  L8  grammar_notes Ru tut•tsirau ' . -> Ru tut•tsírau'.
+  L8  grammar_notes ra•reka .kusu' -> ra•reká•kusu'
+  L8  grammar_notes reka .kusu' -> reká•kusu'
+  L9  grammar_notes tut .awi'at -> tut•awí'at
+  L9  grammar_notes t 'ewi 'at -> t'ewí'at
+  L9  grammar_notes Kiwaku we tu'h•kuksas . -> Kiwaku wé túh•kuksas.
+  L9  grammar_notes ra .hak•tsa -> rá•hak•tsa
+  L9  grammar_notes We tatir•a ' . -> We tatir•a'.
+  L9  grammar_notes Siks a'. -> Síks•a'.
+  L10 grammar_notes tut•ari ' -> tut•ári'
+  L10 grammar_notes ti .ari' -> tí•ari'
+  L10 grammar_notes ti .ra -> tí•ra
+  L10 grammar_notes Suks•kata .hat! -> Suks•katá•hat!
+  L11 grammar_notes Tuhurak•a .kawats! -> Tuhurak•á•kawats!
+  L11 grammar_notes Tat•kikahu ' . -> Tat•kíkahu'.
+  L11 grammar_notes Ketsih .wa. -> Kétsih•wa.
+  L11 grammar_notes Ta.tuks•at. -> Tátuks•at.
+  L11 grammar_notes Tat .kika'. -> Tat•kíka'.
+  L12 grammar_notes Kuka ras•ta papitsisu '? -> Kuka ras•tá papitsisu'?
+  L12 grammar_notes Tu'ksta•pu'. -> Túksta•pu'.
+  L12 grammar_notes Su'ks•at. -> Súks•at.
+  L12 grammar_notes We tat-u. -> We tát•u.
+  L13 grammar_notes Tuhwa•Hu'kasa -> Tuhwa•Húkasa
+  L13 grammar_notes Tasu'ks•at. -> Tasúks•at.
+  L13 grammar_notes Ti .wu'. -> Tí•wu'.
+  L13 grammar_notes ra'at? -> ra•'at?
+  L14 grammar_notes ta na ritu' -> ta rá•ritu'
+  L14 grammar_notes to taxis -> tá taris
+  L14 grammar_notes Pita kuruks ti .kuwutit. -> Pita kuruks tí•kuwutit.
+  L14 grammar_notes Kitu sititerit. -> Kitú sitit•erit.
+  L14 grammar_notes Tasuhra'k•erit. -> Tasuhrák•erit.
+  L14 grammar_notes Sitasuterit. -> Sítasut•erit.
+  L14 grammar_notes Tasut .erit. -> Tasut•érit.
+  L14 grammar_notes Tatut .erit. -> Tatut•érit.
+  L14 grammar_notes Rikutski ti•waktahu ' . -> Rikutski ti•wáktahu'.
+  L14 grammar_notes Kuruks ti•wa'ktahu'. -> Kuruks ti•wáktahu'.
+  L14 grammar_notes Ti•kuruks•pa'ktahu'. -> Ti•kuruks•páktahu'.
+  L14 grammar_notes Asaki tirah•kI wat. -> Asaki tirah•kí•wat.
+  L15 grammar_notes tirarah•kiwik•usuku ' -> tiraráh•kiwik•usuku'
+  L15 grammar_notes tirarah-karuk•usuku' -> tiraráh•karuk•usuku'
+  L15 grammar_notes tirarah .karuku -> tiraráh•karuku
+  L15 grammar_notes tirardh•kiwi -> tiraráh•kiwi
+  L15 grammar_notes Aka, hiri we ti•pitsi ' ! -> Aka, hiri we ti•pítsi'!
+  L15 grammar_notes Suks•teka .rikut. -> Suks•teká•rikut.
+  L15 grammar_notes We kut'at-tsu .a. -> We kut'at•tsú•a.
+  L15 grammar_notes We t'at .tszi-a. -> We t'at•tsú•a.
+  L15 grammar_notes We t 'at•tsu•a. -> We t'at•tsú•a.
+  L17 grammar_notes sak .ariki -> sák•ariki
+  L17 grammar_notes Ka rurrahe ti rasut•ari'? -> Ka rúr•rahe ti rasut•ari'?
+  L17 grammar_notes Take ruks•a .kawahtsu'? -> Také ruks•á•kawahtsu'?
+  L17 grammar_notes Tatukstak .a.kawahtsu'. -> Tatukstak•á•kawahtsu'.
+  L17 grammar_notes Tatsiks .a-kawahtsu'. -> Tatsiks•á•kawahtsu'.
+  L17 grammar_notes Tatuks .a .kawahtsu'. -> Tatuks•á•kawahtsu'.
+  L17 grammar_notes Take ra•ha .kawaats? -> Také ra•há•kawaats?
+  L17 grammar_notes Tasuks•a .kawahtsu'. -> Tasuks•á•kawahtsu'.
+  L17 grammar_notes Tastak•a .kawaats. -> Tastak•á•kawaats.
+  L17 grammar_notes Tiks•a .kawahtsu'. -> Tiks•á•kawahtsu'.
+  L17 grammar_notes Tuks•a .kawahtsu'. -> Tuks•á•kawahtsu'.
+  L17 grammar_notes Sitas•a .kawaats. -> Sitas•á•kawaats.
+  L17 grammar_notes Sitat•a .kawaats. -> Sitat•á•kawaats.
+  L17 grammar_notes Siti ,ha•kawaats. -> Siti•há•kawaats.
+  L17 grammar_notes Tasiratsiks•tius. -> Tasir•atsiks•tíus.
+  L17 grammar_notes Ti 'hr i kawaats. -> Ti 'hrá•kawaats.
+  L17 grammar_notes Tas•a .kawaats. -> Tas•á•kawaats.
+  L17 grammar_notes Tat•a .kawaats. -> Tat•á•kawaats.
+  L18 dialogues     Tsikstit ka ras•pari '? -> Tsikstit ka rás•pari'?
+  L18 grammar_notes We kutasuhrak•a .wahri'. -> We kútasuhrak•á•wahri'.
+  L18 grammar_notes We kutatuhrak•a .wahri'. -> We kútatuhrak•á•wahri'.
+  L18 grammar_notes We kutit•a .wahri ' . -> Wé kutit•á•wahri'.
+  L18 grammar_notes Ketuh•ra .wiat. -> Ketuh•rá•wiat.
+  L19 grammar_notes Patsuka tirut•tatsta tat•stats•tak 'sta. -> Patsúka tirút•tatsta tat•státs•tak'sta.
+  L19 grammar_notes Ra .pa•u R'at•tsuahu' -> Ra•pa•u R'at•tsuahu'
+  L19 grammar_notes Kskitiiks Ra sakuru' -> Kskitiiks Rá•sakuru'
+  L19 grammar_notes Ha•karu'h•kutsu' -> Ha•karúh•kutsu'
+  L19 grammar_notes Tatut•ari .usta. -> Tatut•arí•usta.
+  L19 grammar_notes Pa•hutawi•u ' -> Pa•hutáwi•u'
+  L19 grammar_notes Tatutari'sta. -> Tatut•ári'sta.
+  L20 dialogues     Ka rasiitska ratkti .u .ta -> Ka rás•itska ratkú•u•ta
+  L20 grammar_notes raku•wa .waktit ratara•kuki -> raku•wá•waktit ratara•kuki
+  L20 grammar_notes ratku•w&waktit Pari -> ratku•wá•waktit Pari
+  L20 grammar_notes raku•wa .waktit -> raku•wá•waktit
+  L20 grammar_notes raku•ka .pihat -> raku•ká•pihat
+  L20 grammar_notes Sukspitit, tireku•skuskakusu. -> Suks•pitit, tireku•skúskakusu.
+  L20 grammar_notes Nawa, taku ka ra•ka .ku? -> Nawa, taku ká ra•ka•ku?
+  L20 grammar_notes Nawa, siks .uka .a'. -> Nawa, síks•uka•a'.
+  L20 grammar_notes Ti ratarak•akitah•ku Pari tuh•raru kskitiiks akitaru', he hiri we tahrak•ut; Tsawii, Kitkahahki, Pitahawirata, a Tskiri. Hiri wi•tuks•it•at akarraratau t'eks•kurit Kits Katus. -> Ti ratarak•akitah•ku Pari tuh•raru kskitiiks akitaru', he hiri we tahrak•ut; Tsawii, Kitkahahki, Pitahawirata, a Tskiri. Hiri wi•tuks•it•at akar•raratau t'eks•kurit Kits Katus.
+  L20 grammar_notes Wi•turuks•ka•hurar•ri hiri ah•ratukstak•kitkeu'. Tihe ra•akitarraruhat tsararat ra•hurit•at reh•kuhrah•witsa'. Resaru kuh•ri•ruhuru rakurak•tara hiri ra•saka•ku. -> Wi•turuks•ka•hurar•ri hiri ah•ratukstak•kitkeu'. Tihe ra•akitar•rar•uhat tsararat ra•hurit•at reh•kuhrah•witsa'. Resaru kuh•ri•ruhuru rakurak•tar•a hiri ra•saka•ku.
+  L20 grammar_notes Ku•kur•rutsiks•taru ruksiri•witau tsahriks raku•ka•wihat asku akarraratau. Hawa ah•rukstah•ka•wariki arusa pitsikat -> Ku•kur•rutsiks•taru ruksiri•witau tsahriks raku•ka•wihat asku akar•raratau. Hawa ah•rukstah•ka•wariki arusa pit-sikat
+  L20 grammar_notes kas•i•kika -> kas•i•kika'
+
+== 2. Titles (lesson, stored -> the table's reading of the title line)
+  none
+
+== Titles the table has no reading of: left as they are, for a person with the page
+  L6  (no Skiri title stored)
+  L8  KI Rid RA. KU?
+  L9  KIRU RA•'AT
+  L10 KIRIKI RUH•RA'?
+  L12 SUKS•U.
+  L17 TIRUKS•TSAKARIKI
+  L18 KIRIKI RASUTSIKS•ARI'?
+
+== Old readings standing on a page the audit did not read them on: left
+  L4  hitu '
+  L13 ti .ra
+
+== 3. extracted_data/lessons.json (lesson, value that is not the table's)
+  L1  dialogues
+  L1  grammar_notes
+  L2  grammar_notes
+  L5  grammar_notes
+  L6  grammar_notes
+  L7  dialogues
+  L7  grammar_notes
+  L8  grammar_notes
+  L9  grammar_notes
+  L10 grammar_notes
+  L11 grammar_notes
+  L12 grammar_notes
+  L13 grammar_notes
+  L14 grammar_notes
+  L15 grammar_notes
+  L17 grammar_notes
+  L18 dialogues
+  L18 grammar_notes
+  L19 grammar_notes
+  L20 dialogues
+  L20 grammar_notes
+
+== Left on purpose: only an accent or a capital differs (lesson, as it stands, the audit's reading)
+  L1  Hau, ti hitu'. | Haú, tí hitu'.
+  L1  Ka ru kisu'? | Ka rú kisu'?
+  L1  Kaki kisu'. | Kakí kisu'.
+  L1  Ti kisu'. | Tí kisu'.
+  L1  Ka ru'? | Ká ru'?
+  L1  Kaki'. | Kakí'.
+  L2  rakis•tahkata | rakis•táhkata
+  L2  Suks•paku' | Suks•páku'
+  L2  kira•rasitu' | kirá•rasitu'
+  L2  rasitu' | rasítu'
+  L2  Uhaiwu' | Uháiwu'
+  L2  Pahitu'! | Pahítu'!
+  L3  ti rihu' | tí rihu'
+  L3  ti hak•tsa | tí hak•tsa
+  L4  tah•ra | táh•ra
+  L4  tah•ra | táh•ra
+  L4  tah•ra | táh•ra
+  L4  tah•ra | táh•ra
+  L5  Tiku•paks•taari'. | Tiku•paks•táari'.
+  L5  Ti rit•kirik•ta. | Ti rit•kírik•ta.
+  L5  Kirike ras•paku'? | Kirike ras•páku'?
+  L5  Tiku'ks•taari'. | Tiku'ks•táari'.
+  L5  Tiku'ks•taa. | Tiku'ks•táa.
+  L5  Sisuks•paku'. | Sísuks•paku'.
+  L5  Suksta•pitit. | Suksta•pítit.
+  L5  Sitat•paku'. | Sítat•paku'.
+  L5  Suks•paku'. | Suks•páku'.
+  L5  Suks•paku'. | Suks•páku'.
+  L5  Suks•pitit. | Suks•pítit.
+  L5  Tahra•pu'. | Táhra•pu'.
+  L5  Tat•paku'. | Tat•páku'.
+  L5  Tat•pitit. | Tat•pítit.
+  L5  Sitat•pa. | Sítat•pa.
+  L5  Tat•at. | Tát•at.
+  L6  ti•ari' | tí•ari'
+  L6  We rut•utsi•raru'. | We rút•utsi•raru'.
+  L6  Siksut•tsa' | Siksút•tsa'
+  L6  TI'tskipi. | Tí'tskipi.
+  L6  Ta'tskipi. | Tá'tskipi.
+  L6  Kirike rasut•ari'? | Kiriké rasut•ari'?
+  L6  Kirike sirut•ari'? | Kiriké sirut•ari'?
+  L6  Tirah•wari'. | Tiráh•wari'.
+  L6  tikurak•itskipi | tikurak•ítskipi
+  L6  sitiku'tskipi | sítiku'tskipi
+  L6  tarak•itskipi | tarak•ítskipi
+  L6  sita'tskipi | sitá'tskipi
+  L6  sitat•kikat | sítat•kikat
+  L6  tiku'tskipi | tikú'tskipi
+  L6  Ti pahaat | Tí pahaat
+  L6  tas•kikat | tas•kíkat
+  L7  atira' | atira'.
+  L7  atipat | atípat
+  L7  We tat•uhure•hats. | We tat•uhúre•hats.
+  L7  Kus•tutsi•erit | Kus•tútsi•erit
+  L7  TsIru'. | Tsíru'.
+  L7  ti ra•ariki pita | ti ra•arikí pita
+  L7  atipat | atípat
+  L8  asaki | asáki
+  L8  asaki | asáki
+  L8  asaki | asáki
+  L8  Tasuks•atku. | Tasuks•átku.
+  L8  hatur•raru' | hatur•ráru'
+  L8  ti•kaarit | ti•káarit
+  L8  tat•ira•ita' | tat•irá•ita'
+  L8  tawit•ka•ke' | tawít•ka•ke'
+  L8  raku•kita | rakú•kita
+  L8  Tat•atsiks•tehu'. | Tat•atsíks•tehu'.
+  L8  Tari'. | Tarí'.
+  L8  tuks•kata•ku hiri | tuks•katá•ku hiri
+  L8  ru•kat•awi•riku | ru•kat•awi•ríku
+  L9  ti•hu•kata'at | ti•hu•káta'at
+  L9  ti•hu'at | ti•hú'at
+  L9  karit•kutsu' | karít•kutsu'
+  L9  ti hak•tsa | tí hak•tsa
+  L9  Rikutski ti pahaat. | Rikutski tí pahaat.
+  L9  Ti pahaat rikutski. | Tí pahaat rikutski.
+  L9  We tat•ka•isat | We tat•ká•isat
+  L9  Kiru ras•at | Kirú ras•at
+  L9  Hiri Ra•ka•hurah•katiit•u' | Hiri Ra•ká•huráh•katiit•u'
+  L9  Hiri Ra•saka•ku | Hiri Ra•sáka•ku
+  L10 Arisit suks•at. | Arisít suks•at.
+  L10 Suks•taka•hat! | Súks•taka•hat!
+  L10 Tas•kitawe' | Tas•kítawe'
+  L10 Ra kitu'. | Ra kítu'.
+  L11 Istu ka ras•itska'? | Istu ka rás•itska'?
+  L11 Suks•kits karihats! | Suks•kíts karihats!
+  L11 Kirike ras•itska'? | Kirike rás•itska'?
+  L11 We tat•ka•wakit. | We tat•ká•wakit.
+  L11 Tatuks•kika'. | Tatúks•kika'.
+  L11 We tatuks•at. | We tátuks•at.
+  L12 Ketuh•kusit papitsisu kitu. | Kétuh•kusit papítsisu kitu.
+  L12 (hirihe) Situks•pa. | (hirihe) Sítuks•pa.
+  L12 Ketuh•kusit asku. | Kétuh•kusit asku.
+  L12 T'ewitsu asku. | T'éwitsu asku.
+  L12 Siruks•pa. | Síruks•pa.
+  L12 Tsiks•pa. | Tsíks•pa.
+  L12 We tatarak•u. | We tatárak•u.
+  L12 We sitata•u. | We sitáta•u.
+  L12 We sitat•u. | We sitát•u.
+  L12 We tatak•u | We tátak•u
+  L12 We tata•u. | We táta•u.
+  L13 tatutak•erit | tatutak•érit
+  L13 Kaas raku•kariu tatutak•erit. | Kaas raku•kariu tatutak•érit.
+  L13 Tawit kaas tatutak•erit. | Tawit kaas tatutak•érit.
+  L13 tsuskiit | tsuskíit
+  L13 tawit | tawit,
+  L13 Tuhwits•Pihat . | Tuhwits•Píhat
+  L13 Pahuks•Tatu' | Páhuks•Tatu'
+  L13 Tskiri•Raru' | Tskiri•Ráru'
+  L13 hiri ratukstak•kitkeu' | hiri ratukstak•kítkeu'
+  L13 ti ratukstak•kitkeu' | ti ratukstak•kítkeu'
+  L13 Tasuksta•pu'. | Tasúksta•pu'.
+  L13 Tatuksta•pu'. | Tatúksta•pu'.
+  L13 Sitasuks•pa. | Sitásuks•pa.
+  L13 Sitatuks•pa. | Sítatuks•pa.
+  L13 Situks•pa. | Sítuks•pa.
+  L13 Tatuks•at. | Tatúks•at.
+  L13 Tuks•at. | Túks•at.
+  L14 ta rara•rasitu | ta rara•rásitu
+  L14 ta•rutsa' | ta•rútsa'
+  L14 kakas•at | kakás•at
+  L14 kakat•at | kakát•at
+  L14 ti kasis | tí kasis
+  L14 ti katus | tí katus
+  L14 tas•at | tás•at
+  L14 tat•at | tát•at
+  L14 Pita ti•kuwutit kuruks. | Pitá ti•kuwutit kuruks.
+  L14 Ka ris•utsi•urikat! | Ka ris•utsí•uríkat!
+  L14 Kitu sitatut•erit. | Kitú sitatut•erit.
+  L14 Take rut•erit? | Také rut•erit?
+  L14 Sitatut•erit. | Sítatut•erit.
+  L14 Tatsi't•erit. | Tatsi't•érit.
+  L14 Hais•tiwata! | Háis•tiwáta!
+  L14 Situt•erit. | Situt•érit.
+  L14 Hais•atku! | Háis•atku!
+  L14 Tut•erit. | Tut•érit.
+  L14 Tut•erit. | Tut•érit.
+  L14 Arusa ti•kis•kata•wakta'. | Arusa ti•kis•kata•wákta'.
+  L14 Taraha kata•kaksa'. | Taraha kata•káksa'.
+  L14 Witi tatut•erit. | Wití tatut•erit.
+  L14 Tatut•erit. | Tatut•érit.
+  L15 Aka, hiri we ta•hu•tuhtu'! | Aka, hiri we ta•hú•tuhtu'!
+  L15 Hiri we ta•hu•tawi•rihu! | Hiri we ta•hu•tawí•rihu!
+  L15 Suks•teka•wu. | Suks•teká•wu.
+  L16 Ka we rasih•wata'? | Ka we rásih•wata'?
+  L16 Tat•atsiks•tehu'. | Tat•atsíks•tehu'.
+  L16 Siks•pata'! | Siks•páta'!
+  L17 tiheruks. | tihéruks.
+  L17 tatutsiks•ari' | tatutsíks•ari'
+  L17 Kirike rasut•atsiks•u'? | Kiriké rasut•atsiks•u'?
+  L17 Tasukstak•a•kawahtsu'. | Tasukstak•á•kawahtsu'.
+  L17 Sitasuks•a•kawahtsu'. | Sitasuks•á•kawahtsu'.
+  L17 Sitatuks•a•kawahtsu'. | Sitatuks•á•kawahtsu'.
+  L17 Ka we ras•tare•hats? | Ka we ras•taré•hats?
+  L17 Situks•a•kawahtsu'. | Situks•á•kawahtsu'.
+  L17 Ka ru rut•tsirau'? | Ka ru rut•tsírau'?
+  L17 Tahrak•a•kawaats. | Tahrak•á•kawaats.
+  L17 Suks•aspatasit! | Suks•aspátasit!
+  L17 Ti•ha•kawaats. | Ti•há•kawaats.
+  L18 We kusitatut•a•wahri'. | We kusítatut•a•wahri'.
+  L18 Keskuruh•ra•wiat. | Keskuruh•ra•wíat.
+  L18 Sutsiks•ahut. | Sutsiks•áhut.
+  L19 Pirau Rarah•kata•ispu' | Pirau Rarah•katá•ispu'
+  L19 Ri•katihar•rikarikat | Ri•katihar•rikárikat
+  L19 Tatut•a•wahri•usta. | Tatut•á•wahri•usta.
+  L19 Ri•katihah•tirara | Ri•katihah•tírara
+  L19 Pitku Ra•sakuru' | Pitku Rá•sakuru'
+  L19 Tawit Ra•sakuru' | Tawit Rá•sakuru'
+  L19 Sakuh•waruksti' | Sakuh•wáruksti'
+  L19 Tskirih•kapira | Tskirih•kápira
+  L19 Sakuh•kiwatat | Sakuh•kíwatat
+  L19 Piraparu' | Piráparu'
+  L19 Pa•riat | Pa•ríat
+  L20 raskut•ara | raskut•ára
+  L20 ratara•kuki | rátara•kuki
+  L20 ratara•kuki | rátara•kuki
+  L20 we raku•sakur•isat•ta | we raku•sakur•ísat•ta
+  L20 Ka ras•kika•ista rekits•katit? | Ka rás•kika•ista rekíts•katit?
+  L20 Nawa, tsikstit ka ras•ku? | Nawa, tsikstit ka rás•ku?
+  L20 Ahu', tsikstit tat•ku, | Ahu', tsikstit tát•ku,
+  L20 Tsikstit ka ras•pari? | (Tsikstit ka rás•pari?)
+  L20 Hiri we tur•rahe. | Hiri we túr•rahe.
+  L20 ratara•kuki | rátara•kuki
+  L20 Nawa | Nawa,
+  L20 Nawa | Nawa,
+  L20 Nawa | Nawa,
+  L20 Nawa | Nawa,
+  L20 Nawa | Nawa,
+  L20 or kuh + | or kuh
+  L20 or ah + | or ah
+  L20 kur + | kur
+  L20 tir + | tir
+  L20 ar + | ar
+  L20 wi + | wi+
+
+---- a later run ----
+fix_lesson_text_ocr — APPLY — 2026-11-14 17:47
+old readings the audit corrected: 755 distinct; 381 of them differ from the reading in letters, spacing or punctuation
+still standing in the lessons' text: 4 places, 4 distinct readings, in 4 lessons
+titles to take from the Blue Book table's reading of the title line: 0; titles with no such reading, left: 7
+values of extracted_data/lessons.json that are not the table's: 4
+left on purpose: 196 places where only an accent or a capital differs
+
+written: 4 places in 4 lessons, 0 titles, 4 values in extracted_data/lessons.json
+backup: OneDrive/pari_pakuru_backups/skiri_pawnee_backup_20261114_174734_lesson_text.db
+
+== 1. Running text (lesson, where, old reading -> the audit's reading)
+  L2  grammar_notes Kits•Kuru'ks•Katit -> Kits•Kurúks•Katit
+  L6  grammar_notes TAR1 RU'? -> TAKÉ RU'?
+  L12 grammar_notes KIRU RATSUKS•AT? -> KIRU RÁSUKS•AT?
+  L15 grammar_notes T'at•tsu•d .ista. -> T'at•tsu•á•ista.
+
+== 2. Titles (lesson, stored -> the table's reading of the title line)
+  none
+
+== Titles the table has no reading of: left as they are, for a person with the page
+  L6  (no Skiri title stored)
+  L8  KI Rid RA. KU?
+  L9  KIRU RA•'AT
+  L10 KIRIKI RUH•RA'?
+  L12 SUKS•U.
+  L17 TIRUKS•TSAKARIKI
+  L18 KIRIKI RASUTSIKS•ARI'?
+
+== Old readings standing on a page the audit did not read them on: left
+  L4  hitu '
+  L13 ti .ra
+
+== 3. extracted_data/lessons.json (lesson, value that is not the table's)
+  L2  grammar_notes
+  L6  grammar_notes
+  L12 grammar_notes
+  L15 grammar_notes
+
+== Left on purpose: only an accent or a capital differs (lesson, as it stands, the audit's reading)
+  L1  Hau, ti hitu'. | Haú, tí hitu'.
+  L1  Ka ru kisu'? | Ka rú kisu'?
+  L1  Kaki kisu'. | Kakí kisu'.
+  L1  Ti kisu'. | Tí kisu'.
+  L1  Ka ru'? | Ká ru'?
+  L1  Kaki'. | Kakí'.
+  L2  rakis•tahkata | rakis•táhkata
+  L2  Suks•paku' | Suks•páku'
+  L2  kira•rasitu' | kirá•rasitu'
+  L2  rasitu' | rasítu'
+  L2  Uhaiwu' | Uháiwu'
+  L2  Pahitu'! | Pahítu'!
+  L3  ti rihu' | tí rihu'
+  L3  ti hak•tsa | tí hak•tsa
+  L4  tah•ra | táh•ra
+  L4  tah•ra | táh•ra
+  L4  tah•ra | táh•ra
+  L4  tah•ra | táh•ra
+  L5  Tiku•paks•taari'. | Tiku•paks•táari'.
+  L5  Ti rit•kirik•ta. | Ti rit•kírik•ta.
+  L5  Kirike ras•paku'? | Kirike ras•páku'?
+  L5  Tiku'ks•taari'. | Tiku'ks•táari'.
+  L5  Tiku'ks•taa. | Tiku'ks•táa.
+  L5  Sisuks•paku'. | Sísuks•paku'.
+  L5  Suksta•pitit. | Suksta•pítit.
+  L5  Sitat•paku'. | Sítat•paku'.
+  L5  Suks•paku'. | Suks•páku'.
+  L5  Suks•paku'. | Suks•páku'.
+  L5  Suks•pitit. | Suks•pítit.
+  L5  Tahra•pu'. | Táhra•pu'.
+  L5  Tat•paku'. | Tat•páku'.
+  L5  Tat•pitit. | Tat•pítit.
+  L5  Sitat•pa. | Sítat•pa.
+  L5  Tat•at. | Tát•at.
+  L6  ti•ari' | tí•ari'
+  L6  We rut•utsi•raru'. | We rút•utsi•raru'.
+  L6  Siksut•tsa' | Siksút•tsa'
+  L6  TI'tskipi. | Tí'tskipi.
+  L6  Ta'tskipi. | Tá'tskipi.
+  L6  Kirike rasut•ari'? | Kiriké rasut•ari'?
+  L6  Kirike sirut•ari'? | Kiriké sirut•ari'?
+  L6  Tirah•wari'. | Tiráh•wari'.
+  L6  tikurak•itskipi | tikurak•ítskipi
+  L6  sitiku'tskipi | sítiku'tskipi
+  L6  tarak•itskipi | tarak•ítskipi
+  L6  sita'tskipi | sitá'tskipi
+  L6  sitat•kikat | sítat•kikat
+  L6  tiku'tskipi | tikú'tskipi
+  L6  Ti pahaat | Tí pahaat
+  L6  tas•kikat | tas•kíkat
+  L7  atira' | atira'.
+  L7  atipat | atípat
+  L7  We tat•uhure•hats. | We tat•uhúre•hats.
+  L7  Kus•tutsi•erit | Kus•tútsi•erit
+  L7  TsIru'. | Tsíru'.
+  L7  ti ra•ariki pita | ti ra•arikí pita
+  L7  atipat | atípat
+  L8  asaki | asáki
+  L8  asaki | asáki
+  L8  asaki | asáki
+  L8  Tasuks•atku. | Tasuks•átku.
+  L8  hatur•raru' | hatur•ráru'
+  L8  ti•kaarit | ti•káarit
+  L8  tat•ira•ita' | tat•irá•ita'
+  L8  tawit•ka•ke' | tawít•ka•ke'
+  L8  raku•kita | rakú•kita
+  L8  Tat•atsiks•tehu'. | Tat•atsíks•tehu'.
+  L8  Tari'. | Tarí'.
+  L8  tuks•kata•ku hiri | tuks•katá•ku hiri
+  L8  ru•kat•awi•riku | ru•kat•awi•ríku
+  L9  ti•hu•kata'at | ti•hu•káta'at
+  L9  ti•hu'at | ti•hú'at
+  L9  karit•kutsu' | karít•kutsu'
+  L9  ti hak•tsa | tí hak•tsa
+  L9  Rikutski ti pahaat. | Rikutski tí pahaat.
+  L9  Ti pahaat rikutski. | Tí pahaat rikutski.
+  L9  We tat•ka•isat | We tat•ká•isat
+  L9  Kiru ras•at | Kirú ras•at
+  L9  Hiri Ra•ka•hurah•katiit•u' | Hiri Ra•ká•huráh•katiit•u'
+  L9  Hiri Ra•saka•ku | Hiri Ra•sáka•ku
+  L10 Arisit suks•at. | Arisít suks•at.
+  L10 Suks•taka•hat! | Súks•taka•hat!
+  L10 Tas•kitawe' | Tas•kítawe'
+  L10 Ra kitu'. | Ra kítu'.
+  L11 Istu ka ras•itska'? | Istu ka rás•itska'?
+  L11 Suks•kits karihats! | Suks•kíts karihats!
+  L11 Kirike ras•itska'? | Kirike rás•itska'?
+  L11 We tat•ka•wakit. | We tat•ká•wakit.
+  L11 Tatuks•kika'. | Tatúks•kika'.
+  L11 We tatuks•at. | We tátuks•at.
+  L12 Ketuh•kusit papitsisu kitu. | Kétuh•kusit papítsisu kitu.
+  L12 (hirihe) Situks•pa. | (hirihe) Sítuks•pa.
+  L12 Ketuh•kusit asku. | Kétuh•kusit asku.
+  L12 T'ewitsu asku. | T'éwitsu asku.
+  L12 Siruks•pa. | Síruks•pa.
+  L12 Tsiks•pa. | Tsíks•pa.
+  L12 We tatarak•u. | We tatárak•u.
+  L12 We sitata•u. | We sitáta•u.
+  L12 We sitat•u. | We sitát•u.
+  L12 We tatak•u | We tátak•u
+  L12 We tata•u. | We táta•u.
+  L13 tatutak•erit | tatutak•érit
+  L13 Kaas raku•kariu tatutak•erit. | Kaas raku•kariu tatutak•érit.
+  L13 Tawit kaas tatutak•erit. | Tawit kaas tatutak•érit.
+  L13 tsuskiit | tsuskíit
+  L13 tawit | tawit,
+  L13 Akitaru' | Akitáru'
+  L13 Tuhwits•Pihat . | Tuhwits•Píhat
+  L13 Pahuks•Tatu' | Páhuks•Tatu'
+  L13 Tskiri•Raru' | Tskiri•Ráru'
+  L13 hiri ratukstak•kitkeu' | hiri ratukstak•kítkeu'
+  L13 ti ratukstak•kitkeu' | ti ratukstak•kítkeu'
+  L13 KA RUSUT•ERIT? | KÁ RUSUT•ERIT?
+  L13 Tasuksta•pu'. | Tasúksta•pu'.
+  L13 Tatuksta•pu'. | Tatúksta•pu'.
+  L13 Sitasuks•pa. | Sitásuks•pa.
+  L13 Sitatuks•pa. | Sítatuks•pa.
+  L13 Situks•pa. | Sítuks•pa.
+  L13 Tatuks•at. | Tatúks•at.
+  L13 Tuks•at. | Túks•at.
+  L14 ta rara•rasitu | ta rara•rásitu
+  L14 ta•rutsa' | ta•rútsa'
+  L14 kakas•at | kakás•at
+  L14 kakat•at | kakát•at
+  L14 ti kasis | tí kasis
+  L14 ti katus | tí katus
+  L14 tas•at | tás•at
+  L14 tat•at | tát•at
+  L14 Pita ti•kuwutit kuruks. | Pitá ti•kuwutit kuruks.
+  L14 Ka ris•utsi•urikat! | Ka ris•utsí•uríkat!
+  L14 Kitu sitatut•erit. | Kitú sitatut•erit.
+  L14 Take rut•erit? | Také rut•erit?
+  L14 Sitatut•erit. | Sítatut•erit.
+  L14 Tatsi't•erit. | Tatsi't•érit.
+  L14 Hais•tiwata! | Háis•tiwáta!
+  L14 Situt•erit. | Situt•érit.
+  L14 Hais•atku! | Háis•atku!
+  L14 Tut•erit. | Tut•érit.
+  L14 Tut•erit. | Tut•érit.
+  L14 Arusa ti•kis•kata•wakta'. | Arusa ti•kis•kata•wákta'.
+  L14 Taraha kata•kaksa'. | Taraha kata•káksa'.
+  L14 Witi tatut•erit. | Wití tatut•erit.
+  L14 Tatut•erit. | Tatut•érit.
+  L15 Aka, hiri we ta•hu•tuhtu'! | Aka, hiri we ta•hú•tuhtu'!
+  L15 Hiri we ta•hu•tawi•rihu! | Hiri we ta•hu•tawí•rihu!
+  L15 Suks•teka•wu. | Suks•teká•wu.
+  L16 Ka we rasih•wata'? | Ka we rásih•wata'?
+  L16 Tat•atsiks•tehu'. | Tat•atsíks•tehu'.
+  L16 Siks•pata'! | Siks•páta'!
+  L17 tiheruks. | tihéruks.
+  L17 tatutsiks•ari' | tatutsíks•ari'
+  L17 Kirike rasut•atsiks•u'? | Kiriké rasut•atsiks•u'?
+  L17 Tasukstak•a•kawahtsu'. | Tasukstak•á•kawahtsu'.
+  L17 Sitasuks•a•kawahtsu'. | Sitasuks•á•kawahtsu'.
+  L17 Sitatuks•a•kawahtsu'. | Sitatuks•á•kawahtsu'.
+  L17 Ka we ras•tare•hats? | Ka we ras•taré•hats?
+  L17 Situks•a•kawahtsu'. | Situks•á•kawahtsu'.
+  L17 Ka ru rut•tsirau'? | Ka ru rut•tsírau'?
+  L17 Tahrak•a•kawaats. | Tahrak•á•kawaats.
+  L17 Suks•aspatasit! | Suks•aspátasit!
+  L17 Ti•ha•kawaats. | Ti•há•kawaats.
+  L18 We kusitatut•a•wahri'. | We kusítatut•a•wahri'.
+  L18 Keskuruh•ra•wiat. | Keskuruh•ra•wíat.
+  L18 Sutsiks•ahut. | Sutsiks•áhut.
+  L19 Pirau Rarah•kata•ispu' | Pirau Rarah•katá•ispu'
+  L19 Ri•katihar•rikarikat | Ri•katihar•rikárikat
+  L19 Tatut•a•wahri•usta. | Tatut•á•wahri•usta.
+  L19 Ri•katihah•tirara | Ri•katihah•tírara
+  L19 Pitku Ra•sakuru' | Pitku Rá•sakuru'
+  L19 Tawit Ra•sakuru' | Tawit Rá•sakuru'
+  L19 Sakuh•waruksti' | Sakuh•wáruksti'
+  L19 Tskirih•kapira | Tskirih•kápira
+  L19 Sakuh•kiwatat | Sakuh•kíwatat
+  L19 Piraparu' | Piráparu'
+  L19 Pa•riat | Pa•ríat
+  L20 raskut•ara | raskut•ára
+  L20 ratara•kuki | rátara•kuki
+  L20 ratara•kuki | rátara•kuki
+  L20 we raku•sakur•isat•ta | we raku•sakur•ísat•ta
+  L20 Ka ras•kika•ista rekits•katit? | Ka rás•kika•ista rekíts•katit?
+  L20 Nawa, tsikstit ka ras•ku? | Nawa, tsikstit ka rás•ku?
+  L20 Ahu', tsikstit tat•ku, | Ahu', tsikstit tát•ku,
+  L20 Tsikstit ka ras•pari? | (Tsikstit ka rás•pari?)
+  L20 Hiri we tur•rahe. | Hiri we túr•rahe.
+  L20 ratara•kuki | rátara•kuki
+  L20 Nawa | Nawa,
+  L20 Nawa | Nawa,
+  L20 Nawa | Nawa,
+  L20 Nawa | Nawa,
+  L20 Nawa | Nawa,
+  L20 or kuh + | or kuh
+  L20 or ah + | or ah
+  L20 kur + | kur
+  L20 tir + | tir
+  L20 ar + | ar
+  L20 wi + | wi+

@@ -1,9 +1,28 @@
 #!/usr/bin/env python3
 """
+STATUS since the engines review of 2026-11-14 (decision 4): A REFERENCE, NOT
+AN ENGINE.
+
+The catalogue RULES below is Parks's chapter 3: his 24 sound changes with the
+examples he prints. It is the table `sound_change_rules`, and that is what
+this file is kept for.
+
+The functions that apply the rules do NOT turn pieces into words. On the 39
+examples Parks himself prints with the rules they give his printed form for
+8; on 74 of his worked examples in chapter 4, for 15 (run --measure; the full
+record is reports/engines_review/measurements.md). They stay because the
+word-construction analysis reads single rules from them. Never use
+apply_sound_changes() or --apply to produce a form that is shown to anyone:
+a form the code gives is computed, not attested.
+
+Until that date the file tested itself (--test) on 11 forms, 7 of which were
+its own output; that test is gone. And run without options it rewrote the
+table; it now changes the database only when --write-table is given.
+
 Phase 2.3 — Sound Change Rule Engine
 ======================================
 Formalizes Skiri Pawnee phonological rules from Parks Dictionary Ch. 3
-(Major Sound Changes) as ordered transformations for the grammar engine.
+(Major Sound Changes) as ordered transformations.
 
 Two types of rules:
   - RESTRICTED rules: apply only to specific morpheme sequences
@@ -15,25 +34,25 @@ Two types of rules:
   Consonants: Restricted (8R-12R), Unrestricted (13-24)
 
 Usage:
-    # Catalog rules into DB + validate against paradigmatic forms:
-    python scripts/sound_changes.py --db skiri_pawnee.db \\
-        --report reports/phase_2_3_sound_changes.txt
+    # The honest measure: the rules as coded on Parks's own 39 examples
+    python scripts/sound_changes.py --measure
 
-    # Run built-in test suite (PDF examples):
-    python scripts/sound_changes.py --test
+    # Is the table sound_change_rules still the catalogue in this file? (exit 1 if not)
+    python scripts/sound_changes.py --check-table
 
-    # Apply sound changes to a morpheme sequence:
+    # What the rules as coded give for a sequence of pieces (computed, not attested):
     python scripts/sound_changes.py --apply "ti + uur + hiir"
 
-    # Validate only (no DB writes):
+    # The older checks against the dictionary's verb forms (no DB writes; prints a report):
     python scripts/sound_changes.py --db skiri_pawnee.db --validate-only
 
-    # Populate DB rules table only:
-    python scripts/sound_changes.py --db skiri_pawnee.db --catalog-only
+    # Write the catalogue into the table again (backs up first; only after RULES was corrected):
+    python scripts/sound_changes.py --db skiri_pawnee.db --write-table
 
-    # Gemini-powered audit (requires GEMINI_API_KEY):
+    # Gemini-powered audit (requires GEMINI_API_KEY). The audit of March 2026 is kept in
+    # reports/phase_2_3_sound_changes.txt: give a new run another file name.
     python scripts/sound_changes.py --db skiri_pawnee.db --audit \\
-        --report reports/phase_2_3_sound_changes.txt
+        --report reports/sound_changes_audit_new.txt
 
 Dependencies: Python 3.8+, sqlite3 (stdlib), google-genai (for --audit)
 """
@@ -1039,81 +1058,58 @@ def apply_nominal_sc(surface):
 
 
 # ---------------------------------------------------------------------------
-# Test suite — examples from Parks Ch. 3
+# The honest measure: the rules as coded, on the examples Parks prints with them
 # ---------------------------------------------------------------------------
+# Until 2026-11-14 a test suite stood here: 11 forms, of which 4 were printed by
+# Parks and 7 were what this code gave, so the suite could not fail. It was
+# replaced by a comparison with every example of chapter 3 that prints a result.
 
-TEST_CASES = [
-    # Rule 13: t -> h / _ r (simple case)
-    (["pahaat", "raʔuk"], "pahaahaʔuk", "t-laryngealization: pahaat+raʔuk (Rule 13)", False),
-
-    # Rule 19: t+t -> ct
-    (["ta", "t", "taʔuut"], "tactaʔuut", "alveolar dissimilation t+t (Rule 19)", False),
-
-    # Rule 23: final r loss
-    (["aar"], "aa", "final r loss (Rule 23)", False),
-
-    # Rule 20: rr -> r + Rule 23: final r loss
-    (["raar", "raahur"], "raaraahu", "degemination rr->r + final r loss (Rules 20+23)", False),
-
-    # Rule 3R: -his reduction
-    (["hak", "his"], "haks", "-his perfective reduction (Rule 3R)", False),
-
-    # Rule 8R: raar assibilation (simple: r+t -> c)
-    (["raar", "tiis"], "raaciis", "raar assibilation r+t->c (Rule 8R, simple)", False),
-    # Full example produces tiraacakasis; attested tiracakasis has vowel shortening
-    # not covered by the 24 listed rules (prosodic reduction in unstressed syllable)
-
-    # Rule 11R: ut- affrication
-    (["ut", "i"], "uci", "ut- affrication before i- (Rule 11R)", False),
-
-    # Rule 9R: final-s loss
-    (["kuhkus"], "kuhku", "final-s loss (Rule 9R)", True),
-
-    # Rule 17: sibilant hardening s -> c after C (simple case)
-    (["ik", "sa"], "ikca", "sibilant hardening: s->c after C (Rule 17)", False),
-
-    # Rule 21: r-stopping r -> t after obstruent (simple case: k+r -> k+t)
-    (["ik", "ra"], "ikta", "r-stopping: k+r -> k+t (Rule 21)", False),
-
-    # Rule 19 + 21 combined: t+c -> ct metathesis
-    (["ta", "t", "cak"], "tactak", "alveolar dissimilation t+c -> ct (Rule 19)", False),
-]
+def printed_examples():
+    """Parks's examples that print a result: (rule id, rule name, pieces, printed form)."""
+    rows = []
+    for rule in RULES:
+        for ex in rule["examples"]:
+            if not ex.get("surface"):
+                continue                      # rule 24 gives a pronunciation, not a spelling
+            pieces = [p.strip().strip("-").strip() for p in ex["underlying"].split("+")]
+            pieces = [p for p in pieces if p and p not in ("NULL", "Ø")]
+            rows.append((rule["rule_id"], rule["name"], pieces, ex["surface"]))
+    return rows
 
 
-def run_tests():
-    """Run built-in test suite from PDF examples."""
-    passed = 0
-    failed = 0
-    results = []
+def measure(show=True):
+    """Compare what the rules as coded give with what Parks prints. A measurement: it cannot pass or fail.
 
-    for morphemes, expected, description, final_s in TEST_CASES:
-        actual = apply_sound_changes(morphemes, final_s_loss=final_s)
-        ok = actual == expected
-        if ok:
-            passed += 1
-        else:
-            failed += 1
-        results.append({
-            "morphemes": " + ".join(morphemes),
-            "expected": expected,
-            "actual": actual,
-            "pass": ok,
-            "description": description,
-        })
-
-    # Print results
-    _safe_print(f"\n=== Sound Change Rule Tests ===")
-    _safe_print(f"Passed: {passed}/{passed + failed}\n")
-    for r in results:
-        status = "PASS" if r["pass"] else "FAIL"
-        _safe_print(f"  [{status}] {r['description']}")
-        _safe_print(f"         Input:    {r['morphemes']}")
-        _safe_print(f"         Expected: {r['expected']}")
-        if not r["pass"]:
-            _safe_print(f"         Actual:   {r['actual']}")
+    The length mark Parks writes in a piece (':') is left out before the rules are applied, as the
+    engines review did. Returns (same, different, rows).
+    """
+    rows = []
+    for rule_id, name, pieces, printed in printed_examples():
+        given = apply_sound_changes([p.replace(":", "") for p in pieces])
+        rows.append({"rule": rule_id, "name": name, "pieces": " + ".join(pieces), "printed": printed,
+                     "given": given, "same": given == printed.rstrip(".")})
+    same = sum(1 for r in rows if r["same"])
+    if show:
         _safe_print("")
+        _safe_print("=== The 24 rules as coded, on the examples Parks prints with them ===")
+        _safe_print("The code gives Parks's printed form for %d of %d." % (same, len(rows)))
+        _safe_print("")
+        for r in rows:
+            _safe_print("  [%s] rule %-3s  %-36s Parks prints %-20s the code gives %s" % (
+                "same" if r["same"] else "NOT ", r["rule"], r["pieces"], r["printed"], r["given"]))
+        _safe_print("")
+        _safe_print("This file is a reference to Parks's rules, not an engine. A form it gives is computed,")
+        _safe_print("not attested, and must not be shown or stored as a Pawnee form.")
+    return same, len(rows) - same, rows
 
-    return passed, failed, results
+
+def table_matches_catalogue(conn):
+    """True when the table sound_change_rules holds exactly the catalogue RULES of this file."""
+    stored = {r[0]: tuple(r) for r in conn.execute(
+        "select rule_id, name, type, domain, formal, description, ordering, examples from sound_change_rules")}
+    wanted = {r["rule_id"]: (r["rule_id"], r["name"], r["type"], r["domain"], r["formal"], r["description"],
+                             r["ordering"], json.dumps(r["examples"], ensure_ascii=False)) for r in RULES}
+    return stored == wanted
 
 
 # ---------------------------------------------------------------------------
@@ -1661,19 +1657,16 @@ def generate_report(test_results, validation_results, report_path, audit_results
         lines.append(f"           {rule['formal']}")
         lines.append("")
 
-    # --- Test Results ---
+    # --- The rules as coded, on Parks's own examples (a measurement) ---
     if test_results:
-        passed, failed, tests = test_results
-        lines.append("BUILT-IN TESTS (PDF Examples)")
+        same, different, rows = test_results
+        lines.append("THE RULES AS CODED, ON THE EXAMPLES PARKS PRINTS WITH THEM")
         lines.append("-" * 40)
-        lines.append(f"  Passed: {passed}/{passed + failed}")
+        lines.append(f"  The code gives the printed form for {same} of {same + different}.")
+        lines.append("  This is a measurement. The file is a reference to the rules, not an engine.")
         lines.append("")
-        for t in tests:
-            status = "PASS" if t["pass"] else "FAIL"
-            lines.append(f"  [{status}] {t['description']}")
-            lines.append(f"           {t['morphemes']} -> {t['expected']}")
-            if not t["pass"]:
-                lines.append(f"           GOT: {t['actual']}")
+        for t in rows:
+            lines.append(f"  [{'same' if t['same'] else 'NOT '}] rule {t['rule']}: {t['pieces']} -> Parks prints {t['printed']}")
         lines.append("")
 
     # --- Validation Results ---
@@ -1779,10 +1772,11 @@ def generate_report(test_results, validation_results, report_path, audit_results
 
     report_text = "\n".join(lines)
 
-    os.makedirs(os.path.dirname(report_path), exist_ok=True)
-    with open(report_path, "w", encoding="utf-8") as f:
-        f.write(report_text)
-    log.info(f"Report written to {report_path}")
+    if report_path:
+        os.makedirs(os.path.dirname(report_path) or ".", exist_ok=True)
+        with open(report_path, "w", encoding="utf-8") as f:
+            f.write(report_text)
+        log.info(f"Report written to {report_path}")
 
     return report_text
 
@@ -1809,18 +1803,21 @@ def main():
     )
     parser.add_argument("--db", type=str, default="skiri_pawnee.db",
                         help="Path to SQLite database")
-    parser.add_argument("--report", type=str,
-                        default="reports/phase_2_3_sound_changes.txt",
-                        help="Path to output report")
-    parser.add_argument("--test", action="store_true",
-                        help="Run built-in test suite only")
+    parser.add_argument("--report", type=str, default=None,
+                        help="Write the report of --validate-only or --audit to this file "
+                             "(default: print it; do not name reports/phase_2_3_sound_changes.txt, "
+                             "the record of March 2026)")
+    parser.add_argument("--measure", action="store_true",
+                        help="Compare the rules as coded with Parks's own 39 examples (a measurement)")
+    parser.add_argument("--check-table", action="store_true",
+                        help="Exit 0 if the table sound_change_rules is the catalogue of this file")
     parser.add_argument("--apply", type=str,
-                        help="Apply sound changes to morpheme string "
-                             "(e.g., 'ti + uur + hiir')")
+                        help="What the rules as coded give for a morpheme string "
+                             "(e.g., 'ti + uur + hiir'): computed, not attested")
     parser.add_argument("--validate-only", action="store_true",
-                        help="Run validation only (no DB writes)")
-    parser.add_argument("--catalog-only", action="store_true",
-                        help="Populate rules table only (no validation)")
+                        help="Run the older checks against the dictionary's verb forms (no DB writes)")
+    parser.add_argument("--write-table", action="store_true",
+                        help="Write the catalogue into the table sound_change_rules (backs up the database first)")
     parser.add_argument("--final-s-loss", action="store_true",
                         help="Apply Rule 9R final-s loss (with --apply)")
     parser.add_argument("--audit", action="store_true",
@@ -1830,17 +1827,23 @@ def main():
                         help="Checkpoint file for audit resume")
     args = parser.parse_args()
 
-    # --- Test mode ---
-    if args.test:
-        run_tests()
+    # --- The honest measure ---
+    if args.measure:
+        measure()
         return
 
     # --- Apply mode ---
     if args.apply:
         morphemes = [m.strip() for m in args.apply.split("+")]
-        _safe_print(f"Input morphemes: {morphemes}")
+        _safe_print(f"Pieces:              {morphemes}")
         result = apply_sound_changes(morphemes, final_s_loss=args.final_s_loss)
-        _safe_print(f"Surface form:    {result}")
+        _safe_print(f"The rules as coded:  {result}")
+        _safe_print("Computed, not attested. On Parks's own examples the code is right 8 times in 39.")
+        return
+
+    if not (args.check_table or args.validate_only or args.write_table or args.audit):
+        parser.print_help()
+        _safe_print("\nNothing was done. This file changes the database only with --write-table.")
         return
 
     # --- DB modes ---
@@ -1848,36 +1851,63 @@ def main():
         log.error(f"Database not found: {args.db}")
         sys.exit(1)
 
-    conn = sqlite3.connect(args.db)
+    if args.check_table:
+        conn = sqlite3.connect("file:%s?mode=ro" % Path(args.db).resolve().as_posix(), uri=True)
+        same = table_matches_catalogue(conn)
+        conn.close()
+        _safe_print("sound_change_rules %s the catalogue of this file (%d rules)" % (
+            "is" if same else "is NOT", len(RULES)))
+        sys.exit(0 if same else 1)
+
+    if args.write_table:
+        import shutil
+        import subprocess
+        stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        backups = Path(os.environ.get("OneDrive", str(Path.home()))) / "pari_pakuru_backups"
+        backups.mkdir(parents=True, exist_ok=True)
+        backup = backups / f"skiri_pawnee_backup_{stamp}_sound_change_rules.db"
+        shutil.copy2(args.db, backup)
+        conn = sqlite3.connect(args.db)
+        try:
+            create_rules_table(conn)
+            populate_rules(conn)
+        finally:
+            conn.close()
+        _safe_print(f"sound_change_rules written from the catalogue ({len(RULES)} rules); backup: {backup}")
+        dump = Path(__file__).resolve().parent / "db_dump.py"
+        if Path(args.db).resolve() == (dump.parent.parent / "skiri_pawnee.db").resolve():
+            subprocess.run([sys.executable, str(dump), "--write"], check=False, stdout=subprocess.DEVNULL)
+            _safe_print("DB/dump written")
+        return
+
+    conn = sqlite3.connect("file:%s?mode=ro" % Path(args.db).resolve().as_posix(), uri=True)
 
     test_results = None
     validation_results = None
     audit_results = None
 
     try:
-        # Always run tests
-        test_results = run_tests()
+        test_results = measure(show=False)
 
-        if not args.validate_only:
-            # Create and populate rules table
-            create_rules_table(conn)
-            populate_rules(conn)
-
-        if not args.catalog_only:
-            # Validate against paradigmatic forms
+        if args.validate_only:
+            # the older checks against the dictionary's verb forms
             validation_results = validate_against_paradigms(conn)
 
         if args.audit:
             # Gemini-powered audit
             audit_results = gemini_audit(conn, args.audit_checkpoint)
 
-        # Generate report
-        generate_report(test_results, validation_results, args.report, audit_results)
+        # The report goes to the screen unless --report names a file. The file of March 2026,
+        # reports/phase_2_3_sound_changes.txt, also holds an AI audit that is not made again: do not overwrite it.
+        text = generate_report(test_results, validation_results, args.report, audit_results)
 
     finally:
         conn.close()
 
-    _safe_print(f"\nDone. Report: {args.report}")
+    if args.report:
+        _safe_print(f"\nDone. Report: {args.report}")
+    else:
+        _safe_print(text)
 
 
 if __name__ == "__main__":

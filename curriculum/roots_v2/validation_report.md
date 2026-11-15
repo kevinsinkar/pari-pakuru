@@ -170,8 +170,7 @@ Every difference is listed in `proposed_data_fixes.json` for checking by eye. No
 
 - **Words Parks analyses there that are also dictionary headwords:** the pipeline's pieces equal his in 2 / 2 (100.0%).
 - **Stems he cites with a gloss:** 59 / 108 (54.6%) are dictionary headwords whose gloss shares a content word with his; 18 are headwords with a different gloss wording; 31 are not headwords (bound stems and combining forms).
-- **Labelled prefixes and suffixes in his analyses:** 230 / 366 (62.8%) were already in the project's `morpheme_inventory` table or among the dictionary affixes. The rest, mostly zero morphemes and less common proclitics, were added to the inflectional list in `affixes.json` straight from his worked examples, with the page of the example.
-  - Added from the worked examples: Ø- 3.A ×54, -Ø PERF ×45, uks- AOR ×7, -Ø SUB.4 ×7, uks- JUSS ×4, -rit INT.SUB ×4, ki- HORT ×2, witi- REFL ×2, si- DU ×2, -uku HAB.SUB ×2, -uk SUB.D ×2, kuur- DUB.1 ×1, tiir- INFR ×1, waawa- DIST ×1, karii- EMPH.NEG ×1, -uukuʔ HAB ×1.
+- **Labelled prefixes and suffixes in his analyses:** 366 occurrences of 69 distinct labelled pieces. All are listed in `affixes.json` ("inflectional") straight from his worked examples, with the page of an example, and the guide prints his own tables of the verb as printed. They are not matched against a list of the project's: the table they used to be matched against was written by the conjugation engine, which was withdrawn on 2026-11-14.
 - **Appendix 1:** `person_forms.py --validate-appendix` reproduces the paradigm cells it derives (result below under existing suites).
 
 ## 3. Blue Book seams (G3)
@@ -300,8 +299,8 @@ For each of the 100 most frequent morphemes the following were tried: a homonym 
 
 | Existing suite | Exit code | Result |
 |---|---|---|
-| `sound_changes.py --test` | 0 | 11 pass, 0 fail |
-| `person_forms.py --validate-appendix` | 0 | Appendix 1 derivation validation: 25 passed, 2 failed, 1 skipped |
+| `sound_changes.py --measure (a measurement)` | 0 | The code gives Parks's printed form for 8 of 39. |
+| `person_forms.py --validate-appendix` | 0 | Appendix 1 derivation validation: 26 passed, 0 failed, 2 skipped |
 | `build_root_curriculum.py --check` | 0 | spec check done; 0 unresolved |
 | `morphology_v2 unit tests` | 0 | OK |
 
@@ -310,13 +309,13 @@ For each of the 100 most frequent morphemes the following were tried: a homonym 
 `python scripts/morphology_v2/check_determinism.py` ran the pipeline twice: all 9 output files are byte-identical. Hashes of the second run:
 
 ```
-4bc4a7176e4169ac  affixes.json
-0e229231ba19bfe2  construction_guide.md
-c07041297af512c4  coverage.json
-3ffad0034b82dfcd  decisions.json
-ca0f7e439f9b5eee  evidence.jsonl
-25207678dc5e30dc  learning_path.md
-7eec81646abff2be  review_queue.md
-6d2cb2a18d723bc6  roots.json
-c75c86f9998ce2e3  stats.json
+99bb61b2591f0166  affixes.json
+dc6063ccf6528ee6  construction_guide.md
+c6473375921f4738  coverage.json
+caf206c9eeacece6  decisions.json
+f5c9aabc10f05b5d  evidence.jsonl
+bb49d507abf4e4e3  learning_path.md
+b94353e580e3a9e4  review_queue.md
+c72bb4401970d5b4  roots.json
+a908dd83792a3467  stats.json
 ```

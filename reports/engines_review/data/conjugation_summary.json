@@ -1,0 +1,1586 @@
+{
+ "accents_on_appendix1": {
+  "by_verb": {
+   "to be good": {
+    "engine": 0,
+    "engine_marks_and_page_does_not": 0,
+    "page": 0
+   },
+   "to be sick": {
+    "engine": 0,
+    "engine_marks_and_page_does_not": 0,
+    "page": 0
+   },
+   "to come": {
+    "engine": 74,
+    "engine_marks_and_page_does_not": 50,
+    "page": 26
+   },
+   "to do it": {
+    "engine": 7,
+    "engine_marks_and_page_does_not": 7,
+    "page": 0
+   },
+   "to drink it": {
+    "engine": 0,
+    "engine_marks_and_page_does_not": 0,
+    "page": 0
+   },
+   "to go": {
+    "engine": 0,
+    "engine_marks_and_page_does_not": 0,
+    "page": 0
+   },
+   "to have it": {
+    "engine": 0,
+    "engine_marks_and_page_does_not": 0,
+    "page": 0
+   }
+  },
+  "cells_the_engine_marks": 81,
+  "cells_the_page_marks": 26,
+  "engine_marks_where_the_page_has_none": [
+   {
+    "mode": "negative_indicative_perfective",
+    "person": "3du",
+    "printed": "sikaakaawaʔaʔ",
+    "produced": "síkaakaawaʔaʔ",
+    "verb": "to come"
+   },
+   {
+    "mode": "negative_indicative_perfective",
+    "person": "1pl_excl",
+    "printed": "kaakaatiraakaahuʔ",
+    "produced": "kaakaatíraakaahuʔ",
+    "verb": "to come"
+   },
+   {
+    "mode": "negative_indicative_perfective",
+    "person": "2pl",
+    "printed": "kaakaasiraakaahuʔ",
+    "produced": "kaakaasíraakaahuʔ",
+    "verb": "to come"
+   },
+   {
+    "mode": "contingent_perfective",
+    "person": "1pl_excl",
+    "printed": "itiraakaahuʔ",
+    "produced": "itíraakaahuʔ",
+    "verb": "to come"
+   },
+   {
+    "mode": "contingent_perfective",
+    "person": "2pl",
+    "printed": "isiraakaahuʔ",
+    "produced": "isíraakaahuʔ",
+    "verb": "to come"
+   },
+   {
+    "mode": "assertive_perfective",
+    "person": "2du",
+    "printed": "siriisihwaʔaʔ",
+    "produced": "siríisíhwaʔaʔ",
+    "verb": "to come"
+   },
+   {
+    "mode": "assertive_perfective",
+    "person": "3du",
+    "printed": "siraaʔaʔ",
+    "produced": "síraawaʔaʔ",
+    "verb": "to come"
+   },
+   {
+    "mode": "absolutive_perfective",
+    "person": "1pl_excl",
+    "printed": "ratiraakaahuʔ",
+    "produced": "ratíraakaahuʔ",
+    "verb": "to come"
+   },
+   {
+    "mode": "absolutive_perfective",
+    "person": "2pl",
+    "printed": "rasiraakaahuʔ",
+    "produced": "rasíraakaahuʔ",
+    "verb": "to come"
+   },
+   {
+    "mode": "potential_perfective",
+    "person": "1sg",
+    "printed": "kuustiriiʔaʔ",
+    "produced": "kuustíriiʔaʔ",
+    "verb": "to come"
+   },
+   {
+    "mode": "potential_perfective",
+    "person": "2sg",
+    "printed": "kaasiriiʔaʔ",
+    "produced": "kaasíriiʔaʔ",
+    "verb": "to come"
+   },
+   {
+    "mode": "potential_perfective",
+    "person": "1du_incl",
+    "printed": "kaaciriiwaʔaʔ",
+    "produced": "kaacíriíwaʔaʔ",
+    "verb": "to come"
+   },
+   {
+    "mode": "potential_perfective",
+    "person": "1du_excl",
+    "printed": "sikuustiriiwaʔaʔ",
+    "produced": "sikuustíriiwaʔaʔ",
+    "verb": "to come"
+   },
+   {
+    "mode": "potential_perfective",
+    "person": "2du",
+    "printed": "sikaasiriiwaʔaʔ",
+    "produced": "sikaasíriiwaʔaʔ",
+    "verb": "to come"
+   },
+   {
+    "mode": "potential_perfective",
+    "person": "1pl_excl",
+    "printed": "kuustiriiraakaahuʔ",
+    "produced": "kuustíriiraakaahuʔ",
+    "verb": "to come"
+   },
+   {
+    "mode": "potential_perfective",
+    "person": "2pl",
+    "printed": "kaasiriiraakaahuʔ",
+    "produced": "kaasíriiraakaahuʔ",
+    "verb": "to come"
+   },
+   {
+    "mode": "gerundial_perfective_subordinate",
+    "person": "1sg",
+    "printed": "iriiratiira",
+    "produced": "íriira",
+    "verb": "to come"
+   },
+   {
+    "mode": "gerundial_perfective_subordinate",
+    "person": "2sg",
+    "printed": "iriirasiira",
+    "produced": "írisiira",
+    "verb": "to come"
+   },
+   {
+    "mode": "gerundial_perfective_subordinate",
+    "person": "3sg",
+    "printed": "iriraʔa",
+    "produced": "íriiraʔa",
+    "verb": "to come"
+   },
+   {
+    "mode": "gerundial_perfective_subordinate",
+    "person": "1du_incl",
+    "printed": "iriiracihwaʔa",
+    "produced": "íriiracíhwaʔa",
+    "verb": "to come"
+   },
+   {
+    "mode": "gerundial_perfective_subordinate",
+    "person": "1du_excl",
+    "printed": "iriisiratihwaʔa",
+    "produced": "íriisiratíhwaʔa",
+    "verb": "to come"
+   },
+   {
+    "mode": "gerundial_perfective_subordinate",
+    "person": "2du",
+    "printed": "iriisirasihwaʔa",
+    "produced": "íriisirasíhwaʔa",
+    "verb": "to come"
+   },
+   {
+    "mode": "gerundial_perfective_subordinate",
+    "person": "3du",
+    "printed": "iriisirawaʔa",
+    "produced": "íriisirawaʔa",
+    "verb": "to come"
+   },
+   {
+    "mode": "gerundial_perfective_subordinate",
+    "person": "1pl_incl",
+    "printed": "iriirataraakahu",
+    "produced": "íriirataraakaahu",
+    "verb": "to come"
+   },
+   {
+    "mode": "gerundial_perfective_subordinate",
+    "person": "1pl_excl",
+    "printed": "iriiratiraakahu",
+    "produced": "íriiratíraakaahu",
+    "verb": "to come"
+   },
+   {
+    "mode": "gerundial_perfective_subordinate",
+    "person": "2pl",
+    "printed": "iriirasiraakahu",
+    "produced": "íriirasíraakaahu",
+    "verb": "to come"
+   },
+   {
+    "mode": "gerundial_perfective_subordinate",
+    "person": "3pl",
+    "printed": "iriraaʔahu, iriiraraara",
+    "produced": "íriiraʔaahu",
+    "verb": "to come"
+   },
+   {
+    "mode": "contingent_perfective_subordinate",
+    "person": "1sg",
+    "printed": "itiira",
+    "produced": "ítiira",
+    "verb": "to come"
+   },
+   {
+    "mode": "contingent_perfective_subordinate",
+    "person": "2sg",
+    "printed": "isiira",
+    "produced": "ísiira",
+    "verb": "to come"
+   },
+   {
+    "mode": "contingent_perfective_subordinate",
+    "person": "1du_incl",
+    "printed": "icihwaʔa",
+    "produced": "icíhwaʔa",
+    "verb": "to come"
+   },
+   {
+    "mode": "contingent_perfective_subordinate",
+    "person": "1du_excl",
+    "printed": "siʔitihwaʔa",
+    "produced": "siʔitíhwaʔa",
+    "verb": "to come"
+   },
+   {
+    "mode": "contingent_perfective_subordinate",
+    "person": "2du",
+    "printed": "siʔisihwaʔa",
+    "produced": "siʔisíhwaʔa",
+    "verb": "to come"
+   },
+   {
+    "mode": "contingent_perfective_subordinate",
+    "person": "1pl_excl",
+    "printed": "itiraakahu",
+    "produced": "itíraakaahu",
+    "verb": "to come"
+   },
+   {
+    "mode": "contingent_perfective_subordinate",
+    "person": "2pl",
+    "printed": "isiraakahu",
+    "produced": "isíraakaahu",
+    "verb": "to come"
+   },
+   {
+    "mode": "subjunctive_perfective_subordinate",
+    "person": "1du_incl",
+    "printed": "aacihwaʔa",
+    "produced": "aacíhwaʔa",
+    "verb": "to come"
+   },
+   {
+    "mode": "subjunctive_perfective_subordinate",
+    "person": "1du_excl",
+    "printed": "siʔaatihwaʔa",
+    "produced": "siʔaatíhwaʔa",
+    "verb": "to come"
+   },
+   {
+    "mode": "subjunctive_perfective_subordinate",
+    "person": "2du",
+    "printed": "siʔaasihwaʔa",
+    "produced": "siʔaasíhwaʔa",
+    "verb": "to come"
+   },
+   {
+    "mode": "subjunctive_perfective_subordinate",
+    "person": "1pl_excl",
+    "printed": "aatiraakahu",
+    "produced": "aatíraakaahu",
+    "verb": "to come"
+   },
+   {
+    "mode": "subjunctive_perfective_subordinate",
+    "person": "2pl",
+    "printed": "aasiraakahu",
+    "produced": "aasíraakaahu",
+    "verb": "to come"
+   },
+   {
+    "mode": "infinitive_perfective_subordinate",
+    "person": "1sg",
+    "printed": "ratihkuʔa",
+    "produced": "ratihkúʔa",
+    "verb": "to come"
+   },
+   {
+    "mode": "infinitive_perfective_subordinate",
+    "person": "2sg",
+    "printed": "rasihkuʔa",
+    "produced": "rasihkúʔa",
+    "verb": "to come"
+   },
+   {
+    "mode": "infinitive_perfective_subordinate",
+    "person": "3sg",
+    "printed": "raakuʔa",
+    "produced": "raakúʔa",
+    "verb": "to come"
+   },
+   {
+    "mode": "infinitive_perfective_subordinate",
+    "person": "1du_incl",
+    "printed": "racihkuwaʔa",
+    "produced": "racihkúwaʔa",
+    "verb": "to come"
+   },
+   {
+    "mode": "infinitive_perfective_subordinate",
+    "person": "1du_excl",
+    "printed": "siratihkuwaʔa",
+    "produced": "siratihkúwaʔa",
+    "verb": "to come"
+   },
+   {
+    "mode": "infinitive_perfective_subordinate",
+    "person": "2du",
+    "printed": "sirasihkuwaʔa",
+    "produced": "sirasihkúwaʔa",
+    "verb": "to come"
+   },
+   {
+    "mode": "infinitive_perfective_subordinate",
+    "person": "3du",
+    "printed": "siraakuwaʔa",
+    "produced": "siraakúwaʔa",
+    "verb": "to come"
+   },
+   {
+    "mode": "infinitive_perfective_subordinate",
+    "person": "1pl_incl",
+    "printed": "rataakuraakahu",
+    "produced": "rataakúraakaahu",
+    "verb": "to come"
+   },
+   {
+    "mode": "infinitive_perfective_subordinate",
+    "person": "1pl_excl",
+    "printed": "ratihkuraakahu",
+    "produced": "ratihkúraakaahu",
+    "verb": "to come"
+   },
+   {
+    "mode": "infinitive_perfective_subordinate",
+    "person": "2pl",
+    "printed": "rasihkuraakahu",
+    "produced": "rasihkúraakaahu",
+    "verb": "to come"
+   },
+   {
+    "mode": "infinitive_perfective_subordinate",
+    "person": "3pl",
+    "printed": "raakuhu, raakuraara",
+    "produced": "raakúaahu",
+    "verb": "to come"
+   },
+   {
+    "mode": "potential_perfective",
+    "person": "2sg",
+    "printed": "kaasuciʔaa",
+    "produced": "kaasucíʔaa",
+    "verb": "to do it"
+   },
+   {
+    "mode": "potential_perfective",
+    "person": "3sg",
+    "printed": "kuusuciʔaa",
+    "produced": "kuusucíʔaa",
+    "verb": "to do it"
+   },
+   {
+    "mode": "potential_perfective",
+    "person": "1du_incl",
+    "printed": "kaciiciʔaa",
+    "produced": "kaciicíʔaa",
+    "verb": "to do it"
+   },
+   {
+    "mode": "potential_perfective",
+    "person": "1du_excl",
+    "printed": "sikuustuciʔaa",
+    "produced": "sikuustucíʔaa",
+    "verb": "to do it"
+   },
+   {
+    "mode": "potential_perfective",
+    "person": "2du",
+    "printed": "sikaasuciʔaa",
+    "produced": "sikaasucíʔaa",
+    "verb": "to do it"
+   },
+   {
+    "mode": "potential_perfective",
+    "person": "3du",
+    "printed": "sikuusuciʔaa",
+    "produced": "sikuusucíʔaa",
+    "verb": "to do it"
+   },
+   {
+    "mode": "potential_perfective",
+    "person": "3pl",
+    "printed": "kusiiciʔaa",
+    "produced": "kusiicíʔaa",
+    "verb": "to do it"
+   }
+  ],
+  "exact_if_the_engine_marked_no_accent": 637,
+  "exact_now": 611,
+  "table": {
+   "letters right: both marked, different place": 7,
+   "letters right: both marked, same place": 15,
+   "letters right: engine marked, page not": 41,
+   "letters right: neither marked": 596,
+   "letters right: page marked, engine not": 2,
+   "letters wrong: engine marked": 18,
+   "letters wrong: engine not marked": 91
+  }
+ },
+ "appendix1": {
+  "by_cause": {
+   "accent and glottal stop": 1,
+   "accent and vowel length": 12,
+   "accent only": 50,
+   "exact": 611,
+   "glottal stop only": 1,
+   "other letters, further off": 13,
+   "other letters, within two": 25,
+   "vowel length and glottal stop": 1,
+   "vowel length only": 56
+  },
+  "by_mode": {
+   "absolutive_perfective": {
+    "by_cause": {
+     "accent and glottal stop": 1,
+     "accent only": 4,
+     "exact": 65,
+     "glottal stop only": 1,
+     "other letters, within two": 3,
+     "vowel length only": 3
+    },
+    "cells": 77,
+    "exact": 65,
+    "letters_right": 69
+   },
+   "assertive_perfective": {
+    "by_cause": {
+     "accent only": 5,
+     "exact": 64,
+     "other letters, within two": 1,
+     "vowel length only": 7
+    },
+    "cells": 77,
+    "exact": 64,
+    "letters_right": 69
+   },
+   "contingent_perfective": {
+    "by_cause": {
+     "accent only": 3,
+     "exact": 72,
+     "vowel length only": 2
+    },
+    "cells": 77,
+    "exact": 72,
+    "letters_right": 75
+   },
+   "contingent_perfective_subordinate": {
+    "by_cause": {
+     "accent and vowel length": 2,
+     "accent only": 5,
+     "exact": 64,
+     "other letters, within two": 1,
+     "vowel length only": 5
+    },
+    "cells": 77,
+    "exact": 64,
+    "letters_right": 69
+   },
+   "gerundial_perfective_subordinate": {
+    "by_cause": {
+     "accent and vowel length": 5,
+     "accent only": 4,
+     "exact": 43,
+     "other letters, further off": 3,
+     "other letters, within two": 4,
+     "vowel length only": 18
+    },
+    "cells": 77,
+    "exact": 43,
+    "letters_right": 47
+   },
+   "indicative_perfective": {
+    "by_cause": {
+     "exact": 77
+    },
+    "cells": 77,
+    "exact": 77,
+    "letters_right": 77
+   },
+   "infinitive_perfective_subordinate": {
+    "by_cause": {
+     "accent and vowel length": 3,
+     "accent only": 7,
+     "exact": 58,
+     "other letters, further off": 2,
+     "other letters, within two": 7
+    },
+    "cells": 77,
+    "exact": 58,
+    "letters_right": 65
+   },
+   "negative_indicative_perfective": {
+    "by_cause": {
+     "accent only": 5,
+     "exact": 60,
+     "other letters, further off": 2,
+     "other letters, within two": 2,
+     "vowel length and glottal stop": 1,
+     "vowel length only": 7
+    },
+    "cells": 77,
+    "exact": 60,
+    "letters_right": 65
+   },
+   "potential_perfective": {
+    "by_cause": {
+     "accent only": 14,
+     "exact": 47,
+     "other letters, further off": 6,
+     "other letters, within two": 6,
+     "vowel length only": 4
+    },
+    "cells": 77,
+    "exact": 47,
+    "letters_right": 61
+   },
+   "subjunctive_perfective_subordinate": {
+    "by_cause": {
+     "accent and vowel length": 2,
+     "accent only": 3,
+     "exact": 61,
+     "other letters, within two": 1,
+     "vowel length only": 10
+    },
+    "cells": 77,
+    "exact": 61,
+    "letters_right": 64
+   }
+  },
+  "by_person": {
+   "1du_excl": {
+    "by_cause": {
+     "accent only": 9,
+     "exact": 56,
+     "other letters, within two": 2,
+     "vowel length only": 3
+    },
+    "cells": 70,
+    "exact": 56,
+    "letters_right": 65
+   },
+   "1du_incl": {
+    "by_cause": {
+     "accent only": 6,
+     "exact": 57,
+     "other letters, further off": 1,
+     "other letters, within two": 2,
+     "vowel length only": 4
+    },
+    "cells": 70,
+    "exact": 57,
+    "letters_right": 63
+   },
+   "1pl_excl": {
+    "by_cause": {
+     "accent and vowel length": 4,
+     "accent only": 5,
+     "exact": 50,
+     "other letters, further off": 1,
+     "other letters, within two": 3,
+     "vowel length only": 7
+    },
+    "cells": 70,
+    "exact": 50,
+    "letters_right": 55
+   },
+   "1pl_incl": {
+    "by_cause": {
+     "accent and vowel length": 2,
+     "accent only": 1,
+     "exact": 52,
+     "other letters, further off": 3,
+     "other letters, within two": 2,
+     "vowel length only": 10
+    },
+    "cells": 70,
+    "exact": 52,
+    "letters_right": 53
+   },
+   "1sg": {
+    "by_cause": {
+     "accent only": 3,
+     "exact": 63,
+     "other letters, further off": 1,
+     "vowel length only": 3
+    },
+    "cells": 70,
+    "exact": 63,
+    "letters_right": 66
+   },
+   "2du": {
+    "by_cause": {
+     "accent and glottal stop": 1,
+     "accent only": 8,
+     "exact": 56,
+     "other letters, further off": 2,
+     "other letters, within two": 1,
+     "vowel length only": 2
+    },
+    "cells": 70,
+    "exact": 56,
+    "letters_right": 64
+   },
+   "2pl": {
+    "by_cause": {
+     "accent and vowel length": 4,
+     "accent only": 5,
+     "exact": 49,
+     "other letters, within two": 3,
+     "vowel length only": 9
+    },
+    "cells": 70,
+    "exact": 49,
+    "letters_right": 54
+   },
+   "2sg": {
+    "by_cause": {
+     "accent only": 5,
+     "exact": 60,
+     "other letters, further off": 2,
+     "vowel length only": 3
+    },
+    "cells": 70,
+    "exact": 60,
+    "letters_right": 65
+   },
+   "3du": {
+    "by_cause": {
+     "accent only": 5,
+     "exact": 59,
+     "glottal stop only": 1,
+     "other letters, within two": 3,
+     "vowel length only": 2
+    },
+    "cells": 70,
+    "exact": 59,
+    "letters_right": 64
+   },
+   "3pl": {
+    "by_cause": {
+     "accent and vowel length": 1,
+     "accent only": 1,
+     "exact": 48,
+     "other letters, further off": 3,
+     "other letters, within two": 9,
+     "vowel length only": 8
+    },
+    "cells": 70,
+    "exact": 48,
+    "letters_right": 49
+   },
+   "3sg": {
+    "by_cause": {
+     "accent and vowel length": 1,
+     "accent only": 2,
+     "exact": 61,
+     "vowel length and glottal stop": 1,
+     "vowel length only": 5
+    },
+    "cells": 70,
+    "exact": 61,
+    "letters_right": 63
+   }
+  },
+  "by_verb": {
+   "to be good": {
+    "by_cause": {
+     "exact": 85,
+     "other letters, further off": 2,
+     "other letters, within two": 2,
+     "vowel length only": 21
+    },
+    "cells": 110,
+    "exact": 85,
+    "letters_right": 85
+   },
+   "to be sick": {
+    "by_cause": {
+     "exact": 87,
+     "other letters, further off": 4,
+     "other letters, within two": 7,
+     "vowel length only": 12
+    },
+    "cells": 110,
+    "exact": 87,
+    "letters_right": 87
+   },
+   "to come": {
+    "by_cause": {
+     "accent and glottal stop": 1,
+     "accent and vowel length": 12,
+     "accent only": 43,
+     "exact": 43,
+     "glottal stop only": 1,
+     "other letters, further off": 2,
+     "other letters, within two": 3,
+     "vowel length and glottal stop": 1,
+     "vowel length only": 4
+    },
+    "cells": 110,
+    "exact": 43,
+    "letters_right": 86
+   },
+   "to do it": {
+    "by_cause": {
+     "accent only": 7,
+     "exact": 91,
+     "other letters, within two": 2,
+     "vowel length only": 10
+    },
+    "cells": 110,
+    "exact": 91,
+    "letters_right": 98
+   },
+   "to drink it": {
+    "by_cause": {
+     "exact": 99,
+     "other letters, further off": 3,
+     "other letters, within two": 4,
+     "vowel length only": 4
+    },
+    "cells": 110,
+    "exact": 99,
+    "letters_right": 99
+   },
+   "to go": {
+    "by_cause": {
+     "exact": 104,
+     "other letters, further off": 1,
+     "other letters, within two": 2,
+     "vowel length only": 3
+    },
+    "cells": 110,
+    "exact": 104,
+    "letters_right": 104
+   },
+   "to have it": {
+    "by_cause": {
+     "exact": 102,
+     "other letters, further off": 1,
+     "other letters, within two": 5,
+     "vowel length only": 2
+    },
+    "cells": 110,
+    "exact": 102,
+    "letters_right": 102
+   }
+  },
+  "cells": 770,
+  "dual_and_plural_persons": {
+   "cells": 560,
+   "exact": 427
+  },
+  "exact": 611,
+  "exact_against_the_first_printed_form_only": 611,
+  "groups": {
+   "exact": 611,
+   "letters right; accent, vowel length or glottal stop differ": 121,
+   "other letters, further off": 13,
+   "other letters, within two": 25
+  },
+  "letters_right_accents_aside": 661,
+  "singular_persons": {
+   "cells": 210,
+   "exact": 184
+  }
+ },
+ "dictionary": {
+  "all": {
+   "by_cause": {
+    "accent only": 1,
+    "accent, vowel length and glottal stop": 1,
+    "exact": 1431,
+    "glottal stop only": 203,
+    "no form produced": 41,
+    "other letters, further off": 4072,
+    "other letters, within two": 3276,
+    "vowel length and glottal stop": 127,
+    "vowel length only": 407
+   },
+   "exact": 1431,
+   "forms": 9559,
+   "groups": {
+    "exact": 1431,
+    "letters right; accent, vowel length or glottal stop differ": 739,
+    "no form produced": 41,
+    "other letters, further off": 4072,
+    "other letters, within two": 3276
+   }
+  },
+  "by_class_group": {
+   "VD descriptive": {
+    "by_cause": {
+     "accent only": 1,
+     "accent, vowel length and glottal stop": 1,
+     "exact": 22,
+     "glottal stop only": 20,
+     "no form produced": 4,
+     "other letters, further off": 1153,
+     "other letters, within two": 298,
+     "vowel length and glottal stop": 13,
+     "vowel length only": 5
+    },
+    "exact": 22,
+    "forms": 1517,
+    "groups": {
+     "exact": 22,
+     "letters right; accent, vowel length or glottal stop differ": 40,
+     "no form produced": 4,
+     "other letters, further off": 1153,
+     "other letters, within two": 298
+    }
+   },
+   "VI active intransitive": {
+    "by_cause": {
+     "exact": 589,
+     "glottal stop only": 96,
+     "no form produced": 13,
+     "other letters, further off": 940,
+     "other letters, within two": 1123,
+     "vowel length and glottal stop": 64,
+     "vowel length only": 192
+    },
+    "exact": 589,
+    "forms": 3017,
+    "groups": {
+     "exact": 589,
+     "letters right; accent, vowel length or glottal stop differ": 352,
+     "no form produced": 13,
+     "other letters, further off": 940,
+     "other letters, within two": 1123
+    }
+   },
+   "VL locative": {
+    "by_cause": {
+     "exact": 33,
+     "other letters, further off": 213,
+     "other letters, within two": 139,
+     "vowel length only": 6
+    },
+    "exact": 33,
+    "forms": 391,
+    "groups": {
+     "exact": 33,
+     "letters right; accent, vowel length or glottal stop differ": 6,
+     "other letters, further off": 213,
+     "other letters, within two": 139
+    }
+   },
+   "VP passive": {
+    "by_cause": {
+     "exact": 87,
+     "glottal stop only": 14,
+     "other letters, further off": 281,
+     "other letters, within two": 209,
+     "vowel length and glottal stop": 3,
+     "vowel length only": 26
+    },
+    "exact": 87,
+    "forms": 620,
+    "groups": {
+     "exact": 87,
+     "letters right; accent, vowel length or glottal stop differ": 43,
+     "other letters, further off": 281,
+     "other letters, within two": 209
+    }
+   },
+   "VR reflexive": {
+    "by_cause": {
+     "other letters, further off": 73
+    },
+    "exact": 0,
+    "forms": 73,
+    "groups": {
+     "other letters, further off": 73
+    }
+   },
+   "VT active transitive": {
+    "by_cause": {
+     "exact": 700,
+     "glottal stop only": 73,
+     "no form produced": 24,
+     "other letters, further off": 1412,
+     "other letters, within two": 1507,
+     "vowel length and glottal stop": 47,
+     "vowel length only": 178
+    },
+    "exact": 700,
+    "forms": 3941,
+    "groups": {
+     "exact": 700,
+     "letters right; accent, vowel length or glottal stop differ": 298,
+     "no form produced": 24,
+     "other letters, further off": 1412,
+     "other letters, within two": 1507
+    }
+   }
+  },
+  "by_form": {
+   "1 (I, perfective)": {
+    "by_cause": {
+     "exact": 170,
+     "glottal stop only": 39,
+     "no form produced": 8,
+     "other letters, further off": 683,
+     "other letters, within two": 595,
+     "vowel length and glottal stop": 51,
+     "vowel length only": 69
+    },
+    "exact": 170,
+    "forms": 1615,
+    "groups": {
+     "exact": 170,
+     "letters right; accent, vowel length or glottal stop differ": 159,
+     "no form produced": 8,
+     "other letters, further off": 683,
+     "other letters, within two": 595
+    }
+   },
+   "2 (he/she, perfective)": {
+    "by_cause": {
+     "exact": 375,
+     "glottal stop only": 119,
+     "no form produced": 9,
+     "other letters, further off": 651,
+     "other letters, within two": 1017,
+     "vowel length and glottal stop": 36,
+     "vowel length only": 25
+    },
+    "exact": 375,
+    "forms": 2232,
+    "groups": {
+     "exact": 375,
+     "letters right; accent, vowel length or glottal stop differ": 180,
+     "no form produced": 9,
+     "other letters, further off": 651,
+     "other letters, within two": 1017
+    }
+   },
+   "3 (he/she, imperfective)": {
+    "by_cause": {
+     "exact": 261,
+     "glottal stop only": 6,
+     "no form produced": 6,
+     "other letters, further off": 384,
+     "other letters, within two": 389,
+     "vowel length and glottal stop": 7,
+     "vowel length only": 221
+    },
+    "exact": 261,
+    "forms": 1274,
+    "groups": {
+     "exact": 261,
+     "letters right; accent, vowel length or glottal stop differ": 234,
+     "no form produced": 6,
+     "other letters, further off": 384,
+     "other letters, within two": 389
+    }
+   },
+   "4 (subordinate)": {
+    "by_cause": {
+     "accent only": 1,
+     "accent, vowel length and glottal stop": 1,
+     "exact": 425,
+     "glottal stop only": 12,
+     "no form produced": 9,
+     "other letters, further off": 1201,
+     "other letters, within two": 485,
+     "vowel length and glottal stop": 17,
+     "vowel length only": 83
+    },
+    "exact": 425,
+    "forms": 2234,
+    "groups": {
+     "exact": 425,
+     "letters right; accent, vowel length or glottal stop differ": 114,
+     "no form produced": 9,
+     "other letters, further off": 1201,
+     "other letters, within two": 485
+    }
+   },
+   "5 (intentive)": {
+    "by_cause": {
+     "exact": 200,
+     "glottal stop only": 27,
+     "no form produced": 9,
+     "other letters, further off": 1153,
+     "other letters, within two": 790,
+     "vowel length and glottal stop": 16,
+     "vowel length only": 9
+    },
+    "exact": 200,
+    "forms": 2204,
+    "groups": {
+     "exact": 200,
+     "letters right; accent, vowel length or glottal stop differ": 52,
+     "no form produced": 9,
+     "other letters, further off": 1153,
+     "other letters, within two": 790
+    }
+   }
+  },
+  "by_form_and_class_group": {
+   "1 (I, perfective) | VD descriptive": {
+    "exact": 2,
+    "forms": 193
+   },
+   "1 (I, perfective) | VI active intransitive": {
+    "exact": 79,
+    "forms": 446
+   },
+   "1 (I, perfective) | VL locative": {
+    "exact": 2,
+    "forms": 41
+   },
+   "1 (I, perfective) | VP passive": {
+    "exact": 4,
+    "forms": 123
+   },
+   "1 (I, perfective) | VR reflexive": {
+    "exact": 0,
+    "forms": 15
+   },
+   "1 (I, perfective) | VT active transitive": {
+    "exact": 83,
+    "forms": 797
+   },
+   "2 (he/she, perfective) | VD descriptive": {
+    "exact": 18,
+    "forms": 443
+   },
+   "2 (he/she, perfective) | VI active intransitive": {
+    "exact": 192,
+    "forms": 724
+   },
+   "2 (he/she, perfective) | VL locative": {
+    "exact": 30,
+    "forms": 117
+   },
+   "2 (he/she, perfective) | VP passive": {
+    "exact": 34,
+    "forms": 130
+   },
+   "2 (he/she, perfective) | VR reflexive": {
+    "exact": 0,
+    "forms": 15
+   },
+   "2 (he/she, perfective) | VT active transitive": {
+    "exact": 101,
+    "forms": 803
+   },
+   "3 (he/she, imperfective) | VD descriptive": {
+    "exact": 0,
+    "forms": 1
+   },
+   "3 (he/she, imperfective) | VI active intransitive": {
+    "exact": 59,
+    "forms": 414
+   },
+   "3 (he/she, imperfective) | VP passive": {
+    "exact": 16,
+    "forms": 110
+   },
+   "3 (he/she, imperfective) | VR reflexive": {
+    "exact": 0,
+    "forms": 13
+   },
+   "3 (he/she, imperfective) | VT active transitive": {
+    "exact": 186,
+    "forms": 736
+   },
+   "4 (subordinate) | VD descriptive": {
+    "exact": 2,
+    "forms": 442
+   },
+   "4 (subordinate) | VI active intransitive": {
+    "exact": 166,
+    "forms": 726
+   },
+   "4 (subordinate) | VL locative": {
+    "exact": 1,
+    "forms": 117
+   },
+   "4 (subordinate) | VP passive": {
+    "exact": 18,
+    "forms": 130
+   },
+   "4 (subordinate) | VR reflexive": {
+    "exact": 0,
+    "forms": 15
+   },
+   "4 (subordinate) | VT active transitive": {
+    "exact": 238,
+    "forms": 804
+   },
+   "5 (intentive) | VD descriptive": {
+    "exact": 0,
+    "forms": 438
+   },
+   "5 (intentive) | VI active intransitive": {
+    "exact": 93,
+    "forms": 707
+   },
+   "5 (intentive) | VL locative": {
+    "exact": 0,
+    "forms": 116
+   },
+   "5 (intentive) | VP passive": {
+    "exact": 15,
+    "forms": 127
+   },
+   "5 (intentive) | VR reflexive": {
+    "exact": 0,
+    "forms": 15
+   },
+   "5 (intentive) | VT active transitive": {
+    "exact": 92,
+    "forms": 801
+   }
+  },
+  "by_preverb": {
+   "(ir...)": {
+    "by_cause": {
+     "accent only": 1,
+     "accent, vowel length and glottal stop": 1,
+     "exact": 38,
+     "glottal stop only": 96,
+     "other letters, further off": 180,
+     "other letters, within two": 114,
+     "vowel length and glottal stop": 45,
+     "vowel length only": 72
+    },
+    "exact": 38,
+    "forms": 547,
+    "groups": {
+     "exact": 38,
+     "letters right; accent, vowel length or glottal stop differ": 215,
+     "other letters, further off": 180,
+     "other letters, within two": 114
+    }
+   },
+   "(ir...ri...ut...)": {
+    "by_cause": {
+     "other letters, further off": 43
+    },
+    "exact": 0,
+    "forms": 43,
+    "groups": {
+     "other letters, further off": 43
+    }
+   },
+   "(ir...ut...)": {
+    "by_cause": {
+     "other letters, further off": 103,
+     "other letters, within two": 24
+    },
+    "exact": 0,
+    "forms": 127,
+    "groups": {
+     "other letters, further off": 103,
+     "other letters, within two": 24
+    }
+   },
+   "(ut...)": {
+    "by_cause": {
+     "other letters, further off": 756,
+     "other letters, within two": 442,
+     "vowel length and glottal stop": 1,
+     "vowel length only": 20
+    },
+    "exact": 0,
+    "forms": 1219,
+    "groups": {
+     "letters right; accent, vowel length or glottal stop differ": 21,
+     "other letters, further off": 756,
+     "other letters, within two": 442
+    }
+   },
+   "(uur...)": {
+    "by_cause": {
+     "exact": 122,
+     "glottal stop only": 11,
+     "no form produced": 5,
+     "other letters, further off": 179,
+     "other letters, within two": 309,
+     "vowel length and glottal stop": 16,
+     "vowel length only": 75
+    },
+    "exact": 122,
+    "forms": 717,
+    "groups": {
+     "exact": 122,
+     "letters right; accent, vowel length or glottal stop differ": 102,
+     "no form produced": 5,
+     "other letters, further off": 179,
+     "other letters, within two": 309
+    }
+   },
+   "None": {
+    "by_cause": {
+     "exact": 1270,
+     "glottal stop only": 94,
+     "no form produced": 33,
+     "other letters, further off": 2659,
+     "other letters, within two": 2376,
+     "vowel length and glottal stop": 65,
+     "vowel length only": 239
+    },
+    "exact": 1270,
+    "forms": 6736,
+    "groups": {
+     "exact": 1270,
+     "letters right; accent, vowel length or glottal stop differ": 398,
+     "no form produced": 33,
+     "other letters, further off": 2659,
+     "other letters, within two": 2376
+    }
+   }
+  },
+  "by_verb_class": {
+   "(1)": {
+    "by_cause": {
+     "exact": 753,
+     "glottal stop only": 14,
+     "other letters, further off": 793,
+     "other letters, within two": 1098,
+     "vowel length and glottal stop": 21,
+     "vowel length only": 120
+    },
+    "exact": 753,
+    "forms": 2799,
+    "groups": {
+     "exact": 753,
+     "letters right; accent, vowel length or glottal stop differ": 155,
+     "other letters, further off": 793,
+     "other letters, within two": 1098
+    }
+   },
+   "(1), (1)": {
+    "by_cause": {
+     "no form produced": 10
+    },
+    "exact": 0,
+    "forms": 10,
+    "groups": {
+     "no form produced": 10
+    }
+   },
+   "(1-a)": {
+    "by_cause": {
+     "exact": 50,
+     "other letters, further off": 58,
+     "other letters, within two": 63,
+     "vowel length only": 15
+    },
+    "exact": 50,
+    "forms": 186,
+    "groups": {
+     "exact": 50,
+     "letters right; accent, vowel length or glottal stop differ": 15,
+     "other letters, further off": 58,
+     "other letters, within two": 63
+    }
+   },
+   "(1-a), (1-a)": {
+    "by_cause": {
+     "no form produced": 3
+    },
+    "exact": 0,
+    "forms": 3,
+    "groups": {
+     "no form produced": 3
+    }
+   },
+   "(1-i)": {
+    "by_cause": {
+     "exact": 66,
+     "other letters, further off": 112,
+     "other letters, within two": 168,
+     "vowel length only": 7
+    },
+    "exact": 66,
+    "forms": 353,
+    "groups": {
+     "exact": 66,
+     "letters right; accent, vowel length or glottal stop differ": 7,
+     "other letters, further off": 112,
+     "other letters, within two": 168
+    }
+   },
+   "(2)": {
+    "by_cause": {
+     "accent only": 1,
+     "exact": 97,
+     "glottal stop only": 4,
+     "other letters, further off": 61,
+     "other letters, within two": 68,
+     "vowel length and glottal stop": 5,
+     "vowel length only": 10
+    },
+    "exact": 97,
+    "forms": 246,
+    "groups": {
+     "exact": 97,
+     "letters right; accent, vowel length or glottal stop differ": 20,
+     "other letters, further off": 61,
+     "other letters, within two": 68
+    }
+   },
+   "(2-i)": {
+    "by_cause": {
+     "exact": 75,
+     "other letters, further off": 94,
+     "other letters, within two": 116,
+     "vowel length and glottal stop": 2,
+     "vowel length only": 8
+    },
+    "exact": 75,
+    "forms": 295,
+    "groups": {
+     "exact": 75,
+     "letters right; accent, vowel length or glottal stop differ": 10,
+     "other letters, further off": 94,
+     "other letters, within two": 116
+    }
+   },
+   "(3)": {
+    "by_cause": {
+     "exact": 20,
+     "glottal stop only": 99,
+     "other letters, further off": 815,
+     "other letters, within two": 163,
+     "vowel length and glottal stop": 45,
+     "vowel length only": 64
+    },
+    "exact": 20,
+    "forms": 1206,
+    "groups": {
+     "exact": 20,
+     "letters right; accent, vowel length or glottal stop differ": 208,
+     "other letters, further off": 815,
+     "other letters, within two": 163
+    }
+   },
+   "(3), (3)": {
+    "by_cause": {
+     "no form produced": 5
+    },
+    "exact": 0,
+    "forms": 5,
+    "groups": {
+     "no form produced": 5
+    }
+   },
+   "(3-i)": {
+    "by_cause": {
+     "no form produced": 4
+    },
+    "exact": 0,
+    "forms": 4,
+    "groups": {
+     "no form produced": 4
+    }
+   },
+   "(4)": {
+    "by_cause": {
+     "exact": 311,
+     "glottal stop only": 65,
+     "other letters, further off": 646,
+     "other letters, within two": 1142,
+     "vowel length and glottal stop": 39,
+     "vowel length only": 170
+    },
+    "exact": 311,
+    "forms": 2373,
+    "groups": {
+     "exact": 311,
+     "letters right; accent, vowel length or glottal stop differ": 274,
+     "other letters, further off": 646,
+     "other letters, within two": 1142
+    }
+   },
+   "(pl. subj.)": {
+    "by_cause": {
+     "no form produced": 4
+    },
+    "exact": 0,
+    "forms": 4,
+    "groups": {
+     "no form produced": 4
+    }
+   },
+   "(u)": {
+    "by_cause": {
+     "exact": 6,
+     "glottal stop only": 1,
+     "other letters, further off": 60,
+     "other letters, within two": 19,
+     "vowel length and glottal stop": 2,
+     "vowel length only": 3
+    },
+    "exact": 6,
+    "forms": 91,
+    "groups": {
+     "exact": 6,
+     "letters right; accent, vowel length or glottal stop differ": 6,
+     "other letters, further off": 60,
+     "other letters, within two": 19
+    }
+   },
+   "(wi)": {
+    "by_cause": {
+     "exact": 3,
+     "other letters, further off": 75,
+     "other letters, within two": 21,
+     "vowel length only": 1
+    },
+    "exact": 3,
+    "forms": 100,
+    "groups": {
+     "exact": 3,
+     "letters right; accent, vowel length or glottal stop differ": 1,
+     "other letters, further off": 75,
+     "other letters, within two": 21
+    }
+   },
+   "None": {
+    "by_cause": {
+     "accent, vowel length and glottal stop": 1,
+     "exact": 50,
+     "glottal stop only": 20,
+     "no form produced": 15,
+     "other letters, further off": 1358,
+     "other letters, within two": 418,
+     "vowel length and glottal stop": 13,
+     "vowel length only": 9
+    },
+    "exact": 50,
+    "forms": 1884,
+    "groups": {
+     "exact": 50,
+     "letters right; accent, vowel length or glottal stop differ": 43,
+     "no form produced": 15,
+     "other letters, further off": 1358,
+     "other letters, within two": 418
+    }
+   }
+  },
+  "engine_adds_an_accent": 172,
+  "headwords_with_notation": {
+   "by_cause": {
+    "exact": 8,
+    "no form produced": 14,
+    "other letters, further off": 429,
+    "other letters, within two": 42,
+    "vowel length and glottal stop": 2,
+    "vowel length only": 5
+   },
+   "exact": 8,
+   "forms": 500,
+   "groups": {
+    "exact": 8,
+    "letters right; accent, vowel length or glottal stop differ": 7,
+    "no form produced": 14,
+    "other letters, further off": 429,
+    "other letters, within two": 42
+   }
+  },
+  "other_letters_where": {
+   "1 (I, perfective)": {
+    "in several places or in the middle": 743,
+    "only in the first letters (prefix meets stem)": 129,
+    "only in the last letters (ending)": 406
+   },
+   "2 (he/she, perfective)": {
+    "in several places or in the middle": 718,
+    "only in the first letters (prefix meets stem)": 283,
+    "only in the last letters (ending)": 667
+   },
+   "3 (he/she, imperfective)": {
+    "in several places or in the middle": 483,
+    "only in the first letters (prefix meets stem)": 101,
+    "only in the last letters (ending)": 189
+   },
+   "4 (subordinate)": {
+    "in several places or in the middle": 1170,
+    "only in the first letters (prefix meets stem)": 1,
+    "only in the last letters (ending)": 515
+   },
+   "5 (intentive)": {
+    "in several places or in the middle": 1399,
+    "only in the first letters (prefix meets stem)": 62,
+    "only in the last letters (ending)": 482
+   }
+  },
+  "plain_headwords_only": {
+   "by_cause": {
+    "accent only": 1,
+    "accent, vowel length and glottal stop": 1,
+    "exact": 1423,
+    "glottal stop only": 203,
+    "no form produced": 27,
+    "other letters, further off": 3643,
+    "other letters, within two": 3234,
+    "vowel length and glottal stop": 125,
+    "vowel length only": 402
+   },
+   "exact": 1423,
+   "forms": 9059,
+   "groups": {
+    "exact": 1423,
+    "letters right; accent, vowel length or glottal stop differ": 732,
+    "no form produced": 27,
+    "other letters, further off": 3643,
+    "other letters, within two": 3234
+   }
+  },
+  "verbs": 2239,
+  "verbs_with_every_printed_form_right": 41,
+  "verbs_with_no_printed_form_right": 1484
+ },
+ "engines_own_dictionary_count": {
+  "exact": 1413,
+  "exact_once_accents_and_notation_are_set_aside": 9,
+  "forms_tested": 9518,
+  "further_off": 4163,
+  "note": "the engine compares with the first printed form only and counts in its own way",
+  "skipped": 41,
+  "within_two_letters": 3933
+ }
+}

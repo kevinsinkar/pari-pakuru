@@ -1,0 +1,770 @@
+{"mode": "indicative_perfective", "page": "page_2", "person": "1sg", "printed": "tatiiraʔ", "variants": ["tatiiraʔ"], "verb": "to come"}
+{"mode": "indicative_perfective", "page": "page_2", "person": "2sg", "printed": "tasiiraʔ", "variants": ["tasiiraʔ"], "verb": "to come"}
+{"mode": "indicative_perfective", "page": "page_2", "person": "3sg", "printed": "taaʔ", "variants": ["taaʔ"], "verb": "to come"}
+{"mode": "indicative_perfective", "page": "page_2", "person": "1du_incl", "printed": "tacíhwaʔaʔ", "variants": ["tacíhwaʔaʔ"], "verb": "to come"}
+{"mode": "indicative_perfective", "page": "page_2", "person": "1du_excl", "printed": "sitatíhwaʔaʔ", "variants": ["sitatíhwaʔaʔ"], "verb": "to come"}
+{"mode": "indicative_perfective", "page": "page_2", "person": "2du", "printed": "sitasíhwaʔaʔ", "variants": ["sitasíhwaʔaʔ"], "verb": "to come"}
+{"mode": "indicative_perfective", "page": "page_2", "person": "3du", "printed": "sitawaʔaʔ", "variants": ["sitawaʔaʔ"], "verb": "to come"}
+{"mode": "indicative_perfective", "page": "page_2", "person": "1pl_incl", "printed": "tataraakaahuʔ", "variants": ["tataraakaahuʔ"], "verb": "to come"}
+{"mode": "indicative_perfective", "page": "page_2", "person": "1pl_excl", "printed": "tatíraakaahuʔ", "variants": ["tatíraakaahuʔ"], "verb": "to come"}
+{"mode": "indicative_perfective", "page": "page_2", "person": "2pl", "printed": "tasíraakaahuʔ", "variants": ["tasíraakaahuʔ"], "verb": "to come"}
+{"mode": "indicative_perfective", "page": "page_2", "person": "3pl", "printed": "taaʔaahuʔ", "variants": ["taaʔaahuʔ"], "verb": "to come"}
+{"mode": "negative_indicative_perfective", "page": "page_2", "person": "1sg", "printed": "kaakatiiraʔ", "variants": ["kaakatiiraʔ"], "verb": "to come"}
+{"mode": "negative_indicative_perfective", "page": "page_2", "person": "2sg", "printed": "kaakasiiraʔ", "variants": ["kaakasiiraʔ"], "verb": "to come"}
+{"mode": "negative_indicative_perfective", "page": "page_2", "person": "3sg", "printed": "kaakaaʔaʔ", "variants": ["kaakaaʔaʔ"], "verb": "to come"}
+{"mode": "negative_indicative_perfective", "page": "page_2", "person": "1du_incl", "printed": "kaakaacíhwaʔaʔ", "variants": ["kaakaacíhwaʔaʔ"], "verb": "to come"}
+{"mode": "negative_indicative_perfective", "page": "page_2", "person": "1du_excl", "printed": "síkaakaatihwaʔaʔ", "variants": ["síkaakaatihwaʔaʔ"], "verb": "to come"}
+{"mode": "negative_indicative_perfective", "page": "page_2", "person": "2du", "printed": "síkaakaasihwaʔaʔ", "variants": ["síkaakaasihwaʔaʔ"], "verb": "to come"}
+{"mode": "negative_indicative_perfective", "page": "page_2", "person": "3du", "printed": "sikaakaawaʔaʔ", "variants": ["sikaakaawaʔaʔ"], "verb": "to come"}
+{"mode": "negative_indicative_perfective", "page": "page_2", "person": "1pl_incl", "printed": "kaakaataraakaahuʔ", "variants": ["kaakaataraakaahuʔ"], "verb": "to come"}
+{"mode": "negative_indicative_perfective", "page": "page_2", "person": "1pl_excl", "printed": "kaakaatiraakaahuʔ", "variants": ["kaakaatiraakaahuʔ"], "verb": "to come"}
+{"mode": "negative_indicative_perfective", "page": "page_2", "person": "2pl", "printed": "kaakaasiraakaahuʔ", "variants": ["kaakaasiraakaahuʔ"], "verb": "to come"}
+{"mode": "negative_indicative_perfective", "page": "page_2", "person": "3pl", "printed": "kaakaaʔaahuʔ, kaakaaraaraʔ", "variants": ["kaakaaʔaahuʔ", "kaakaaraaraʔ"], "verb": "to come"}
+{"mode": "contingent_perfective", "page": "page_2", "person": "1sg", "printed": "ítiiraʔ", "variants": ["ítiiraʔ"], "verb": "to come"}
+{"mode": "contingent_perfective", "page": "page_2", "person": "2sg", "printed": "ísiiraʔ", "variants": ["ísiiraʔ"], "verb": "to come"}
+{"mode": "contingent_perfective", "page": "page_2", "person": "3sg", "printed": "raʔaʔ", "variants": ["raʔaʔ"], "verb": "to come"}
+{"mode": "contingent_perfective", "page": "page_2", "person": "1du_incl", "printed": "icíhwaʔaʔ", "variants": ["icíhwaʔaʔ"], "verb": "to come"}
+{"mode": "contingent_perfective", "page": "page_2", "person": "1du_excl", "printed": "siʔitíhwaʔaʔ", "variants": ["siʔitíhwaʔaʔ"], "verb": "to come"}
+{"mode": "contingent_perfective", "page": "page_2", "person": "2du", "printed": "siʔisíhwaʔaʔ", "variants": ["siʔisíhwaʔaʔ"], "verb": "to come"}
+{"mode": "contingent_perfective", "page": "page_2", "person": "3du", "printed": "sírawaʔaʔ", "variants": ["sírawaʔaʔ"], "verb": "to come"}
+{"mode": "contingent_perfective", "page": "page_2", "person": "1pl_incl", "printed": "itaraakaahuʔ", "variants": ["itaraakaahuʔ"], "verb": "to come"}
+{"mode": "contingent_perfective", "page": "page_2", "person": "1pl_excl", "printed": "itiraakaahuʔ", "variants": ["itiraakaahuʔ"], "verb": "to come"}
+{"mode": "contingent_perfective", "page": "page_2", "person": "2pl", "printed": "isiraakaahuʔ", "variants": ["isiraakaahuʔ"], "verb": "to come"}
+{"mode": "contingent_perfective", "page": "page_2", "person": "3pl", "printed": "raaʔaahuʔ, raraaraʔ", "variants": ["raaʔaahuʔ", "raraaraʔ"], "verb": "to come"}
+{"mode": "assertive_perfective", "page": "page_2", "person": "1sg", "printed": "rítiiraʔ", "variants": ["rítiiraʔ"], "verb": "to come"}
+{"mode": "assertive_perfective", "page": "page_2", "person": "2sg", "printed": "rísiiraʔ", "variants": ["rísiiraʔ"], "verb": "to come"}
+{"mode": "assertive_perfective", "page": "page_2", "person": "3sg", "printed": "raaʔaʔ", "variants": ["raaʔaʔ"], "verb": "to come"}
+{"mode": "assertive_perfective", "page": "page_2", "person": "1du_incl", "printed": "riicíhwaʔaʔ", "variants": ["riicíhwaʔaʔ"], "verb": "to come"}
+{"mode": "assertive_perfective", "page": "page_2", "person": "1du_excl", "printed": "siriítihwaʔaʔ", "variants": ["siriítihwaʔaʔ"], "verb": "to come"}
+{"mode": "assertive_perfective", "page": "page_2", "person": "2du", "printed": "siriisihwaʔaʔ", "variants": ["siriisihwaʔaʔ"], "verb": "to come"}
+{"mode": "assertive_perfective", "page": "page_2", "person": "3du", "printed": "siraaʔaʔ", "variants": ["siraaʔaʔ"], "verb": "to come"}
+{"mode": "assertive_perfective", "page": "page_2", "person": "1pl_incl", "printed": "riítaraakaahuʔ", "variants": ["riítaraakaahuʔ"], "verb": "to come"}
+{"mode": "assertive_perfective", "page": "page_2", "person": "1pl_excl", "printed": "riítiraakaahuʔ", "variants": ["riítiraakaahuʔ"], "verb": "to come"}
+{"mode": "assertive_perfective", "page": "page_2", "person": "2pl", "printed": "riísiraakaahuʔ", "variants": ["riísiraakaahuʔ"], "verb": "to come"}
+{"mode": "assertive_perfective", "page": "page_2", "person": "3pl", "printed": "raaʔaahuʔ", "variants": ["raaʔaahuʔ"], "verb": "to come"}
+{"mode": "absolutive_perfective", "page": "page_2", "person": "1sg", "printed": "ratiiraʔ", "variants": ["ratiiraʔ"], "verb": "to come"}
+{"mode": "absolutive_perfective", "page": "page_2", "person": "2sg", "printed": "rasiíraʔ", "variants": ["rasiíraʔ"], "verb": "to come"}
+{"mode": "absolutive_perfective", "page": "page_2", "person": "3sg", "printed": "raʔaʔ", "variants": ["raʔaʔ"], "verb": "to come"}
+{"mode": "absolutive_perfective", "page": "page_2", "person": "1du_incl", "printed": "racíhwaʔaʔ", "variants": ["racíhwaʔaʔ"], "verb": "to come"}
+{"mode": "absolutive_perfective", "page": "page_2", "person": "1du_excl", "printed": "síratihwaʔaʔ", "variants": ["síratihwaʔaʔ"], "verb": "to come"}
+{"mode": "absolutive_perfective", "page": "page_2", "person": "2du", "printed": "sírasihwaaʔ", "variants": ["sírasihwaaʔ"], "verb": "to come"}
+{"mode": "absolutive_perfective", "page": "page_2", "person": "3du", "printed": "sírawaaʔ", "variants": ["sírawaaʔ"], "verb": "to come"}
+{"mode": "absolutive_perfective", "page": "page_2", "person": "1pl_incl", "printed": "rataraakaahuʔ", "variants": ["rataraakaahuʔ"], "verb": "to come"}
+{"mode": "absolutive_perfective", "page": "page_2", "person": "1pl_excl", "printed": "ratiraakaahuʔ", "variants": ["ratiraakaahuʔ"], "verb": "to come"}
+{"mode": "absolutive_perfective", "page": "page_2", "person": "2pl", "printed": "rasiraakaahuʔ", "variants": ["rasiraakaahuʔ"], "verb": "to come"}
+{"mode": "absolutive_perfective", "page": "page_2", "person": "3pl", "printed": "raaʔaahuʔ", "variants": ["raaʔaahuʔ"], "verb": "to come"}
+{"mode": "potential_perfective", "page": "page_2", "person": "1sg", "printed": "kuustiriiʔaʔ", "variants": ["kuustiriiʔaʔ"], "verb": "to come"}
+{"mode": "potential_perfective", "page": "page_2", "person": "2sg", "printed": "kaasiriiʔaʔ", "variants": ["kaasiriiʔaʔ"], "verb": "to come"}
+{"mode": "potential_perfective", "page": "page_2", "person": "3sg", "printed": "kusaaʔaʔ", "variants": ["kusaaʔaʔ"], "verb": "to come"}
+{"mode": "potential_perfective", "page": "page_2", "person": "1du_incl", "printed": "kaaciriiwaʔaʔ", "variants": ["kaaciriiwaʔaʔ"], "verb": "to come"}
+{"mode": "potential_perfective", "page": "page_2", "person": "1du_excl", "printed": "sikuustiriiwaʔaʔ", "variants": ["sikuustiriiwaʔaʔ"], "verb": "to come"}
+{"mode": "potential_perfective", "page": "page_2", "person": "2du", "printed": "sikaasiriiwaʔaʔ", "variants": ["sikaasiriiwaʔaʔ"], "verb": "to come"}
+{"mode": "potential_perfective", "page": "page_2", "person": "3du", "printed": "sikusaawaʔaʔ", "variants": ["sikusaawaʔaʔ"], "verb": "to come"}
+{"mode": "potential_perfective", "page": "page_2", "person": "1pl_incl", "printed": "kuustaaraakaahuʔ", "variants": ["kuustaaraakaahuʔ"], "verb": "to come"}
+{"mode": "potential_perfective", "page": "page_2", "person": "1pl_excl", "printed": "kuustiriiraakaahuʔ", "variants": ["kuustiriiraakaahuʔ"], "verb": "to come"}
+{"mode": "potential_perfective", "page": "page_2", "person": "2pl", "printed": "kaasiriiraakaahuʔ", "variants": ["kaasiriiraakaahuʔ"], "verb": "to come"}
+{"mode": "potential_perfective", "page": "page_2", "person": "3pl", "printed": "kusaaʔaahuʔ, kusaaraaraʔ", "variants": ["kusaaʔaahuʔ", "kusaaraaraʔ"], "verb": "to come"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_2", "person": "1sg", "printed": "iriiratiira", "variants": ["iriiratiira"], "verb": "to come"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_2", "person": "2sg", "printed": "iriirasiira", "variants": ["iriirasiira"], "verb": "to come"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_2", "person": "3sg", "printed": "iriraʔa", "variants": ["iriraʔa"], "verb": "to come"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_2", "person": "1du_incl", "printed": "iriiracihwaʔa", "variants": ["iriiracihwaʔa"], "verb": "to come"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_2", "person": "1du_excl", "printed": "iriisiratihwaʔa", "variants": ["iriisiratihwaʔa"], "verb": "to come"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_2", "person": "2du", "printed": "iriisirasihwaʔa", "variants": ["iriisirasihwaʔa"], "verb": "to come"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_2", "person": "3du", "printed": "iriisirawaʔa", "variants": ["iriisirawaʔa"], "verb": "to come"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_2", "person": "1pl_incl", "printed": "iriirataraakahu", "variants": ["iriirataraakahu"], "verb": "to come"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_2", "person": "1pl_excl", "printed": "iriiratiraakahu", "variants": ["iriiratiraakahu"], "verb": "to come"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_2", "person": "2pl", "printed": "iriirasiraakahu", "variants": ["iriirasiraakahu"], "verb": "to come"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_2", "person": "3pl", "printed": "iriraaʔahu, iriiraraara", "variants": ["iriraaʔahu", "iriiraraara"], "verb": "to come"}
+{"mode": "contingent_perfective_subordinate", "page": "page_2", "person": "1sg", "printed": "itiira", "variants": ["itiira"], "verb": "to come"}
+{"mode": "contingent_perfective_subordinate", "page": "page_2", "person": "2sg", "printed": "isiira", "variants": ["isiira"], "verb": "to come"}
+{"mode": "contingent_perfective_subordinate", "page": "page_2", "person": "3sg", "printed": "raʔa", "variants": ["raʔa"], "verb": "to come"}
+{"mode": "contingent_perfective_subordinate", "page": "page_2", "person": "1du_incl", "printed": "icihwaʔa", "variants": ["icihwaʔa"], "verb": "to come"}
+{"mode": "contingent_perfective_subordinate", "page": "page_2", "person": "1du_excl", "printed": "siʔitihwaʔa", "variants": ["siʔitihwaʔa"], "verb": "to come"}
+{"mode": "contingent_perfective_subordinate", "page": "page_2", "person": "2du", "printed": "siʔisihwaʔa", "variants": ["siʔisihwaʔa"], "verb": "to come"}
+{"mode": "contingent_perfective_subordinate", "page": "page_2", "person": "3du", "printed": "sirawaʔa", "variants": ["sirawaʔa"], "verb": "to come"}
+{"mode": "contingent_perfective_subordinate", "page": "page_2", "person": "1pl_incl", "printed": "itaraakahu", "variants": ["itaraakahu"], "verb": "to come"}
+{"mode": "contingent_perfective_subordinate", "page": "page_2", "person": "1pl_excl", "printed": "itiraakahu", "variants": ["itiraakahu"], "verb": "to come"}
+{"mode": "contingent_perfective_subordinate", "page": "page_2", "person": "2pl", "printed": "isiraakahu", "variants": ["isiraakahu"], "verb": "to come"}
+{"mode": "contingent_perfective_subordinate", "page": "page_2", "person": "3pl", "printed": "raaʔahu, raraara", "variants": ["raaʔahu", "raraara"], "verb": "to come"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_2", "person": "1sg", "printed": "aatiira", "variants": ["aatiira"], "verb": "to come"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_2", "person": "2sg", "printed": "aasiira", "variants": ["aasiira"], "verb": "to come"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_2", "person": "3sg", "printed": "aaʔa", "variants": ["aaʔa"], "verb": "to come"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_2", "person": "1du_incl", "printed": "aacihwaʔa", "variants": ["aacihwaʔa"], "verb": "to come"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_2", "person": "1du_excl", "printed": "siʔaatihwaʔa", "variants": ["siʔaatihwaʔa"], "verb": "to come"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_2", "person": "2du", "printed": "siʔaasihwaʔa", "variants": ["siʔaasihwaʔa"], "verb": "to come"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_2", "person": "3du", "printed": "siʔaawaʔa", "variants": ["siʔaawaʔa"], "verb": "to come"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_2", "person": "1pl_incl", "printed": "aataraakahu", "variants": ["aataraakahu"], "verb": "to come"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_2", "person": "1pl_excl", "printed": "aatiraakahu", "variants": ["aatiraakahu"], "verb": "to come"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_2", "person": "2pl", "printed": "aasiraakahu", "variants": ["aasiraakahu"], "verb": "to come"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_2", "person": "3pl", "printed": "aaʔahu, aaraara", "variants": ["aaʔahu", "aaraara"], "verb": "to come"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_2", "person": "1sg", "printed": "ratihkuʔa", "variants": ["ratihkuʔa"], "verb": "to come"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_2", "person": "2sg", "printed": "rasihkuʔa", "variants": ["rasihkuʔa"], "verb": "to come"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_2", "person": "3sg", "printed": "raakuʔa", "variants": ["raakuʔa"], "verb": "to come"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_2", "person": "1du_incl", "printed": "racihkuwaʔa", "variants": ["racihkuwaʔa"], "verb": "to come"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_2", "person": "1du_excl", "printed": "siratihkuwaʔa", "variants": ["siratihkuwaʔa"], "verb": "to come"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_2", "person": "2du", "printed": "sirasihkuwaʔa", "variants": ["sirasihkuwaʔa"], "verb": "to come"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_2", "person": "3du", "printed": "siraakuwaʔa", "variants": ["siraakuwaʔa"], "verb": "to come"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_2", "person": "1pl_incl", "printed": "rataakuraakahu", "variants": ["rataakuraakahu"], "verb": "to come"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_2", "person": "1pl_excl", "printed": "ratihkuraakahu", "variants": ["ratihkuraakahu"], "verb": "to come"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_2", "person": "2pl", "printed": "rasihkuraakahu", "variants": ["rasihkuraakahu"], "verb": "to come"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_2", "person": "3pl", "printed": "raakuhu, raakuraara", "variants": ["raakuhu", "raakuraara"], "verb": "to come"}
+{"mode": "indicative_perfective", "page": "page_3", "person": "1sg", "printed": "tatuutaa", "variants": ["tatuutaa"], "verb": "to do it"}
+{"mode": "indicative_perfective", "page": "page_3", "person": "2sg", "printed": "tasuutaa", "variants": ["tasuutaa"], "verb": "to do it"}
+{"mode": "indicative_perfective", "page": "page_3", "person": "3sg", "printed": "tuutaa", "variants": ["tuutaa"], "verb": "to do it"}
+{"mode": "indicative_perfective", "page": "page_3", "person": "1du_incl", "printed": "taciitaa", "variants": ["taciitaa"], "verb": "to do it"}
+{"mode": "indicative_perfective", "page": "page_3", "person": "1du_excl", "printed": "sitatuutaa", "variants": ["sitatuutaa"], "verb": "to do it"}
+{"mode": "indicative_perfective", "page": "page_3", "person": "2du", "printed": "sitasuutaa", "variants": ["sitasuutaa"], "verb": "to do it"}
+{"mode": "indicative_perfective", "page": "page_3", "person": "3du", "printed": "situutaa", "variants": ["situutaa"], "verb": "to do it"}
+{"mode": "indicative_perfective", "page": "page_3", "person": "1pl_incl", "printed": "tatuuhaakaa", "variants": ["tatuuhaakaa"], "verb": "to do it"}
+{"mode": "indicative_perfective", "page": "page_3", "person": "1pl_excl", "printed": "tatuuhaakaa", "variants": ["tatuuhaakaa"], "verb": "to do it"}
+{"mode": "indicative_perfective", "page": "page_3", "person": "2pl", "printed": "tasuuhaakaa", "variants": ["tasuuhaakaa"], "verb": "to do it"}
+{"mode": "indicative_perfective", "page": "page_3", "person": "3pl", "printed": "tiitaa", "variants": ["tiitaa"], "verb": "to do it"}
+{"mode": "negative_indicative_perfective", "page": "page_3", "person": "1sg", "printed": "kaakatuutaa", "variants": ["kaakatuutaa"], "verb": "to do it"}
+{"mode": "negative_indicative_perfective", "page": "page_3", "person": "2sg", "printed": "kaakasuutaa", "variants": ["kaakasuutaa"], "verb": "to do it"}
+{"mode": "negative_indicative_perfective", "page": "page_3", "person": "3sg", "printed": "kaakuutaa", "variants": ["kaakuutaa"], "verb": "to do it"}
+{"mode": "negative_indicative_perfective", "page": "page_3", "person": "1du_incl", "printed": "kaakaciitaa", "variants": ["kaakaciitaa"], "verb": "to do it"}
+{"mode": "negative_indicative_perfective", "page": "page_3", "person": "1du_excl", "printed": "sikaakatuutaa", "variants": ["sikaakatuutaa"], "verb": "to do it"}
+{"mode": "negative_indicative_perfective", "page": "page_3", "person": "2du", "printed": "sikaakasuutaa", "variants": ["sikaakasuutaa"], "verb": "to do it"}
+{"mode": "negative_indicative_perfective", "page": "page_3", "person": "3du", "printed": "sikaakuutaa", "variants": ["sikaakuutaa"], "verb": "to do it"}
+{"mode": "negative_indicative_perfective", "page": "page_3", "person": "1pl_incl", "printed": "kaakatuuhaakaa", "variants": ["kaakatuuhaakaa"], "verb": "to do it"}
+{"mode": "negative_indicative_perfective", "page": "page_3", "person": "1pl_excl", "printed": "kaakatuuhaakaa", "variants": ["kaakatuuhaakaa"], "verb": "to do it"}
+{"mode": "negative_indicative_perfective", "page": "page_3", "person": "2pl", "printed": "kaakasuuhaakaa", "variants": ["kaakasuuhaakaa"], "verb": "to do it"}
+{"mode": "negative_indicative_perfective", "page": "page_3", "person": "3pl", "printed": "kaakiitaa", "variants": ["kaakiitaa"], "verb": "to do it"}
+{"mode": "contingent_perfective", "page": "page_3", "person": "1sg", "printed": "ituutaa", "variants": ["ituutaa"], "verb": "to do it"}
+{"mode": "contingent_perfective", "page": "page_3", "person": "2sg", "printed": "isuutaa", "variants": ["isuutaa"], "verb": "to do it"}
+{"mode": "contingent_perfective", "page": "page_3", "person": "3sg", "printed": "ruutaa", "variants": ["ruutaa"], "verb": "to do it"}
+{"mode": "contingent_perfective", "page": "page_3", "person": "1du_incl", "printed": "iciitaa", "variants": ["iciitaa"], "verb": "to do it"}
+{"mode": "contingent_perfective", "page": "page_3", "person": "1du_excl", "printed": "siʔituutaa", "variants": ["siʔituutaa"], "verb": "to do it"}
+{"mode": "contingent_perfective", "page": "page_3", "person": "2du", "printed": "siʔisuutaa", "variants": ["siʔisuutaa"], "verb": "to do it"}
+{"mode": "contingent_perfective", "page": "page_3", "person": "3du", "printed": "siruutaa", "variants": ["siruutaa"], "verb": "to do it"}
+{"mode": "contingent_perfective", "page": "page_3", "person": "1pl_incl", "printed": "ituhaakaa", "variants": ["ituhaakaa"], "verb": "to do it"}
+{"mode": "contingent_perfective", "page": "page_3", "person": "1pl_excl", "printed": "ituhaakaa", "variants": ["ituhaakaa"], "verb": "to do it"}
+{"mode": "contingent_perfective", "page": "page_3", "person": "2pl", "printed": "isuhaakaa", "variants": ["isuhaakaa"], "verb": "to do it"}
+{"mode": "contingent_perfective", "page": "page_3", "person": "3pl", "printed": "riitaa", "variants": ["riitaa"], "verb": "to do it"}
+{"mode": "assertive_perfective", "page": "page_3", "person": "1sg", "printed": "rituutaa", "variants": ["rituutaa"], "verb": "to do it"}
+{"mode": "assertive_perfective", "page": "page_3", "person": "2sg", "printed": "risuutaa", "variants": ["risuutaa"], "verb": "to do it"}
+{"mode": "assertive_perfective", "page": "page_3", "person": "3sg", "printed": "ruutaa", "variants": ["ruutaa"], "verb": "to do it"}
+{"mode": "assertive_perfective", "page": "page_3", "person": "1du_incl", "printed": "riciitaa", "variants": ["riciitaa"], "verb": "to do it"}
+{"mode": "assertive_perfective", "page": "page_3", "person": "1du_excl", "printed": "siriituutaa", "variants": ["siriituutaa"], "verb": "to do it"}
+{"mode": "assertive_perfective", "page": "page_3", "person": "2du", "printed": "siriisuutaa", "variants": ["siriisuutaa"], "verb": "to do it"}
+{"mode": "assertive_perfective", "page": "page_3", "person": "3du", "printed": "siruutaa", "variants": ["siruutaa"], "verb": "to do it"}
+{"mode": "assertive_perfective", "page": "page_3", "person": "1pl_incl", "printed": "rituuhaakaa", "variants": ["rituuhaakaa"], "verb": "to do it"}
+{"mode": "assertive_perfective", "page": "page_3", "person": "1pl_excl", "printed": "rituuhaakaa", "variants": ["rituuhaakaa"], "verb": "to do it"}
+{"mode": "assertive_perfective", "page": "page_3", "person": "2pl", "printed": "risuuhaakaa", "variants": ["risuuhaakaa"], "verb": "to do it"}
+{"mode": "assertive_perfective", "page": "page_3", "person": "3pl", "printed": "riitaa", "variants": ["riitaa"], "verb": "to do it"}
+{"mode": "absolutive_perfective", "page": "page_3", "person": "1sg", "printed": "ratuutaa", "variants": ["ratuutaa"], "verb": "to do it"}
+{"mode": "absolutive_perfective", "page": "page_3", "person": "2sg", "printed": "rasuutaa", "variants": ["rasuutaa"], "verb": "to do it"}
+{"mode": "absolutive_perfective", "page": "page_3", "person": "3sg", "printed": "ruutaa", "variants": ["ruutaa"], "verb": "to do it"}
+{"mode": "absolutive_perfective", "page": "page_3", "person": "1du_incl", "printed": "raciitaa", "variants": ["raciitaa"], "verb": "to do it"}
+{"mode": "absolutive_perfective", "page": "page_3", "person": "1du_excl", "printed": "siratuutaa", "variants": ["siratuutaa"], "verb": "to do it"}
+{"mode": "absolutive_perfective", "page": "page_3", "person": "2du", "printed": "sirasuutaa", "variants": ["sirasuutaa"], "verb": "to do it"}
+{"mode": "absolutive_perfective", "page": "page_3", "person": "3du", "printed": "siruutaa", "variants": ["siruutaa"], "verb": "to do it"}
+{"mode": "absolutive_perfective", "page": "page_3", "person": "1pl_incl", "printed": "ratuuhaakaa", "variants": ["ratuuhaakaa"], "verb": "to do it"}
+{"mode": "absolutive_perfective", "page": "page_3", "person": "1pl_excl", "printed": "ratuuhaakaa", "variants": ["ratuuhaakaa"], "verb": "to do it"}
+{"mode": "absolutive_perfective", "page": "page_3", "person": "2pl", "printed": "rasuuhaakaa", "variants": ["rasuuhaakaa"], "verb": "to do it"}
+{"mode": "absolutive_perfective", "page": "page_3", "person": "3pl", "printed": "riitaa", "variants": ["riitaa"], "verb": "to do it"}
+{"mode": "potential_perfective", "page": "page_3", "person": "1sg", "printed": "kuustuciʔaa", "variants": ["kuustuciʔaa"], "verb": "to do it"}
+{"mode": "potential_perfective", "page": "page_3", "person": "2sg", "printed": "kaasuciʔaa", "variants": ["kaasuciʔaa"], "verb": "to do it"}
+{"mode": "potential_perfective", "page": "page_3", "person": "3sg", "printed": "kuusuciʔaa", "variants": ["kuusuciʔaa"], "verb": "to do it"}
+{"mode": "potential_perfective", "page": "page_3", "person": "1du_incl", "printed": "kaciiciʔaa", "variants": ["kaciiciʔaa"], "verb": "to do it"}
+{"mode": "potential_perfective", "page": "page_3", "person": "1du_excl", "printed": "sikuustuciʔaa", "variants": ["sikuustuciʔaa"], "verb": "to do it"}
+{"mode": "potential_perfective", "page": "page_3", "person": "2du", "printed": "sikaasuciʔaa", "variants": ["sikaasuciʔaa"], "verb": "to do it"}
+{"mode": "potential_perfective", "page": "page_3", "person": "3du", "printed": "sikuusuciʔaa", "variants": ["sikuusuciʔaa"], "verb": "to do it"}
+{"mode": "potential_perfective", "page": "page_3", "person": "1pl_incl", "printed": "kuustuciraakaa", "variants": ["kuustuciraakaa"], "verb": "to do it"}
+{"mode": "potential_perfective", "page": "page_3", "person": "1pl_excl", "printed": "kuustuciraakaa", "variants": ["kuustuciraakaa"], "verb": "to do it"}
+{"mode": "potential_perfective", "page": "page_3", "person": "2pl", "printed": "kaasuciraakaa", "variants": ["kaasuciraakaa"], "verb": "to do it"}
+{"mode": "potential_perfective", "page": "page_3", "person": "3pl", "printed": "kusiiciʔaa", "variants": ["kusiiciʔaa"], "verb": "to do it"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_3", "person": "1sg", "printed": "iriiratuutaara", "variants": ["iriiratuutaara"], "verb": "to do it"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_3", "person": "2sg", "printed": "iriirasuutaara", "variants": ["iriirasuutaara"], "verb": "to do it"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_3", "person": "3sg", "printed": "iriiruutaara", "variants": ["iriiruutaara"], "verb": "to do it"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_3", "person": "1du_incl", "printed": "iriiraciitaara", "variants": ["iriiraciitaara"], "verb": "to do it"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_3", "person": "1du_excl", "printed": "iriisiratuutaara", "variants": ["iriisiratuutaara"], "verb": "to do it"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_3", "person": "2du", "printed": "iriisirasuutaara", "variants": ["iriisirasuutaara"], "verb": "to do it"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_3", "person": "3du", "printed": "iriisiruutaara", "variants": ["iriisiruutaara"], "verb": "to do it"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_3", "person": "1pl_incl", "printed": "iriiratuuhaakaara", "variants": ["iriiratuuhaakaara"], "verb": "to do it"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_3", "person": "1pl_excl", "printed": "iriiratuuhaakaara", "variants": ["iriiratuuhaakaara"], "verb": "to do it"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_3", "person": "2pl", "printed": "iriirasuuhaakaara", "variants": ["iriirasuuhaakaara"], "verb": "to do it"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_3", "person": "3pl", "printed": "iririitaara", "variants": ["iririitaara"], "verb": "to do it"}
+{"mode": "contingent_perfective_subordinate", "page": "page_3", "person": "1sg", "printed": "ituutaara", "variants": ["ituutaara"], "verb": "to do it"}
+{"mode": "contingent_perfective_subordinate", "page": "page_3", "person": "2sg", "printed": "isuutaara", "variants": ["isuutaara"], "verb": "to do it"}
+{"mode": "contingent_perfective_subordinate", "page": "page_3", "person": "3sg", "printed": "ruutaara", "variants": ["ruutaara"], "verb": "to do it"}
+{"mode": "contingent_perfective_subordinate", "page": "page_3", "person": "1du_incl", "printed": "iciitaara", "variants": ["iciitaara"], "verb": "to do it"}
+{"mode": "contingent_perfective_subordinate", "page": "page_3", "person": "1du_excl", "printed": "siʔituutaara", "variants": ["siʔituutaara"], "verb": "to do it"}
+{"mode": "contingent_perfective_subordinate", "page": "page_3", "person": "2du", "printed": "siʔisuutaara", "variants": ["siʔisuutaara"], "verb": "to do it"}
+{"mode": "contingent_perfective_subordinate", "page": "page_3", "person": "3du", "printed": "siruutaara", "variants": ["siruutaara"], "verb": "to do it"}
+{"mode": "contingent_perfective_subordinate", "page": "page_3", "person": "1pl_incl", "printed": "ituhaakaara", "variants": ["ituhaakaara"], "verb": "to do it"}
+{"mode": "contingent_perfective_subordinate", "page": "page_3", "person": "1pl_excl", "printed": "ituhaakaara", "variants": ["ituhaakaara"], "verb": "to do it"}
+{"mode": "contingent_perfective_subordinate", "page": "page_3", "person": "2pl", "printed": "isuhaakaara", "variants": ["isuhaakaara"], "verb": "to do it"}
+{"mode": "contingent_perfective_subordinate", "page": "page_3", "person": "3pl", "printed": "riitaara", "variants": ["riitaara"], "verb": "to do it"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_3", "person": "1sg", "printed": "atuutaara", "variants": ["atuutaara"], "verb": "to do it"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_3", "person": "2sg", "printed": "asuutaara", "variants": ["asuutaara"], "verb": "to do it"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_3", "person": "3sg", "printed": "uutaara", "variants": ["uutaara"], "verb": "to do it"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_3", "person": "1du_incl", "printed": "aaciriitaara", "variants": ["aaciriitaara"], "verb": "to do it"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_3", "person": "1du_excl", "printed": "siʔatuutaara", "variants": ["siʔatuutaara"], "verb": "to do it"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_3", "person": "2du", "printed": "siʔasuutaara", "variants": ["siʔasuutaara"], "verb": "to do it"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_3", "person": "3du", "printed": "siʔuutaara", "variants": ["siʔuutaara"], "verb": "to do it"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_3", "person": "1pl_incl", "printed": "atuuhaakaara", "variants": ["atuuhaakaara"], "verb": "to do it"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_3", "person": "1pl_excl", "printed": "atuuhaakaara", "variants": ["atuuhaakaara"], "verb": "to do it"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_3", "person": "2pl", "printed": "asuuhaakaara", "variants": ["asuuhaakaara"], "verb": "to do it"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_3", "person": "3pl", "printed": "iitaara", "variants": ["iitaara"], "verb": "to do it"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_3", "person": "1sg", "printed": "ratkuutaara", "variants": ["ratkuutaara"], "verb": "to do it"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_3", "person": "2sg", "printed": "raskuutaara", "variants": ["raskuutaara"], "verb": "to do it"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_3", "person": "3sg", "printed": "rakuutaara", "variants": ["rakuutaara"], "verb": "to do it"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_3", "person": "1du_incl", "printed": "racihkuutaara", "variants": ["racihkuutaara"], "verb": "to do it"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_3", "person": "1du_excl", "printed": "siratkuutaara", "variants": ["siratkuutaara"], "verb": "to do it"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_3", "person": "2du", "printed": "siraskuutaara", "variants": ["siraskuutaara"], "verb": "to do it"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_3", "person": "3du", "printed": "sirakuutaara", "variants": ["sirakuutaara"], "verb": "to do it"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_3", "person": "1pl_incl", "printed": "rataakuuhaakaara", "variants": ["rataakuuhaakaara"], "verb": "to do it"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_3", "person": "1pl_excl", "printed": "ratkuuhaakaara", "variants": ["ratkuuhaakaara"], "verb": "to do it"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_3", "person": "2pl", "printed": "raskuuhaakaara", "variants": ["raskuuhaakaara"], "verb": "to do it"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_3", "person": "3pl", "printed": "rihkuutaara", "variants": ["rihkuutaara"], "verb": "to do it"}
+{"mode": "indicative_perfective", "page": "page_4", "person": "1sg", "printed": "taatat", "variants": ["taatat"], "verb": "to go"}
+{"mode": "indicative_perfective", "page": "page_4", "person": "2sg", "printed": "taasat", "variants": ["taasat"], "verb": "to go"}
+{"mode": "indicative_perfective", "page": "page_4", "person": "3sg", "printed": "tiʔat", "variants": ["tiʔat"], "verb": "to go"}
+{"mode": "indicative_perfective", "page": "page_4", "person": "1du_incl", "printed": "tacihwa", "variants": ["tacihwa"], "verb": "to go"}
+{"mode": "indicative_perfective", "page": "page_4", "person": "1du_excl", "printed": "sitatpa", "variants": ["sitatpa"], "verb": "to go"}
+{"mode": "indicative_perfective", "page": "page_4", "person": "2du", "printed": "sitaspa", "variants": ["sitaspa"], "verb": "to go"}
+{"mode": "indicative_perfective", "page": "page_4", "person": "3du", "printed": "sitiwa", "variants": ["sitiwa"], "verb": "to go"}
+{"mode": "indicative_perfective", "page": "page_4", "person": "1pl_incl", "printed": "tataraapuuʔ", "variants": ["tataraapuuʔ"], "verb": "to go"}
+{"mode": "indicative_perfective", "page": "page_4", "person": "1pl_excl", "printed": "tahapuuʔ", "variants": ["tahapuuʔ"], "verb": "to go"}
+{"mode": "indicative_perfective", "page": "page_4", "person": "2pl", "printed": "tastapuuʔ", "variants": ["tastapuuʔ"], "verb": "to go"}
+{"mode": "indicative_perfective", "page": "page_4", "person": "3pl", "printed": "tiiwuuʔ, tiraarat", "variants": ["tiiwuuʔ", "tiraarat"], "verb": "to go"}
+{"mode": "negative_indicative_perfective", "page": "page_4", "person": "1sg", "printed": "kaakaatat", "variants": ["kaakaatat"], "verb": "to go"}
+{"mode": "negative_indicative_perfective", "page": "page_4", "person": "2sg", "printed": "kaakaasat", "variants": ["kaakaasat"], "verb": "to go"}
+{"mode": "negative_indicative_perfective", "page": "page_4", "person": "3sg", "printed": "kaakiiʔat", "variants": ["kaakiiʔat"], "verb": "to go"}
+{"mode": "negative_indicative_perfective", "page": "page_4", "person": "1du_incl", "printed": "kaakaacihwa", "variants": ["kaakaacihwa"], "verb": "to go"}
+{"mode": "negative_indicative_perfective", "page": "page_4", "person": "1du_excl", "printed": "sikaakatpa", "variants": ["sikaakatpa"], "verb": "to go"}
+{"mode": "negative_indicative_perfective", "page": "page_4", "person": "2du", "printed": "sikaakaspa", "variants": ["sikaakaspa"], "verb": "to go"}
+{"mode": "negative_indicative_perfective", "page": "page_4", "person": "3du", "printed": "sikaakiiwa", "variants": ["sikaakiiwa"], "verb": "to go"}
+{"mode": "negative_indicative_perfective", "page": "page_4", "person": "1pl_incl", "printed": "kaakaataraapuuʔ", "variants": ["kaakaataraapuuʔ"], "verb": "to go"}
+{"mode": "negative_indicative_perfective", "page": "page_4", "person": "1pl_excl", "printed": "kaakaahapuuʔ", "variants": ["kaakaahapuuʔ"], "verb": "to go"}
+{"mode": "negative_indicative_perfective", "page": "page_4", "person": "2pl", "printed": "kaakaastapuuʔ", "variants": ["kaakaastapuuʔ"], "verb": "to go"}
+{"mode": "negative_indicative_perfective", "page": "page_4", "person": "3pl", "printed": "kaakiiwuuʔ, kaakiraarat", "variants": ["kaakiiwuuʔ", "kaakiraarat"], "verb": "to go"}
+{"mode": "contingent_perfective", "page": "page_4", "person": "1sg", "printed": "itat", "variants": ["itat"], "verb": "to go"}
+{"mode": "contingent_perfective", "page": "page_4", "person": "2sg", "printed": "isat", "variants": ["isat"], "verb": "to go"}
+{"mode": "contingent_perfective", "page": "page_4", "person": "3sg", "printed": "riʔat", "variants": ["riʔat"], "verb": "to go"}
+{"mode": "contingent_perfective", "page": "page_4", "person": "1du_incl", "printed": "icihwa", "variants": ["icihwa"], "verb": "to go"}
+{"mode": "contingent_perfective", "page": "page_4", "person": "1du_excl", "printed": "siʔitpa", "variants": ["siʔitpa"], "verb": "to go"}
+{"mode": "contingent_perfective", "page": "page_4", "person": "2du", "printed": "siʔispa", "variants": ["siʔispa"], "verb": "to go"}
+{"mode": "contingent_perfective", "page": "page_4", "person": "3du", "printed": "siriwa", "variants": ["siriwa"], "verb": "to go"}
+{"mode": "contingent_perfective", "page": "page_4", "person": "1pl_incl", "printed": "itarapuuʔ", "variants": ["itarapuuʔ"], "verb": "to go"}
+{"mode": "contingent_perfective", "page": "page_4", "person": "1pl_excl", "printed": "ihapuuʔ", "variants": ["ihapuuʔ"], "verb": "to go"}
+{"mode": "contingent_perfective", "page": "page_4", "person": "2pl", "printed": "istapuuʔ", "variants": ["istapuuʔ"], "verb": "to go"}
+{"mode": "contingent_perfective", "page": "page_4", "person": "3pl", "printed": "riwuuʔ, raraarat", "variants": ["riwuuʔ", "raraarat"], "verb": "to go"}
+{"mode": "assertive_perfective", "page": "page_4", "person": "1sg", "printed": "riitat", "variants": ["riitat"], "verb": "to go"}
+{"mode": "assertive_perfective", "page": "page_4", "person": "2sg", "printed": "riisat", "variants": ["riisat"], "verb": "to go"}
+{"mode": "assertive_perfective", "page": "page_4", "person": "3sg", "printed": "riiʔat", "variants": ["riiʔat"], "verb": "to go"}
+{"mode": "assertive_perfective", "page": "page_4", "person": "1du_incl", "printed": "riicihwa", "variants": ["riicihwa"], "verb": "to go"}
+{"mode": "assertive_perfective", "page": "page_4", "person": "1du_excl", "printed": "siriitpa", "variants": ["siriitpa"], "verb": "to go"}
+{"mode": "assertive_perfective", "page": "page_4", "person": "2du", "printed": "siriispa", "variants": ["siriispa"], "verb": "to go"}
+{"mode": "assertive_perfective", "page": "page_4", "person": "3du", "printed": "siriiwa", "variants": ["siriiwa"], "verb": "to go"}
+{"mode": "assertive_perfective", "page": "page_4", "person": "1pl_incl", "printed": "riitaraapuuʔ", "variants": ["riitaraapuuʔ"], "verb": "to go"}
+{"mode": "assertive_perfective", "page": "page_4", "person": "1pl_excl", "printed": "riihapuuʔ", "variants": ["riihapuuʔ"], "verb": "to go"}
+{"mode": "assertive_perfective", "page": "page_4", "person": "2pl", "printed": "riistapuuʔ", "variants": ["riistapuuʔ"], "verb": "to go"}
+{"mode": "assertive_perfective", "page": "page_4", "person": "3pl", "printed": "riiwuuʔ", "variants": ["riiwuuʔ"], "verb": "to go"}
+{"mode": "absolutive_perfective", "page": "page_4", "person": "1sg", "printed": "raatat", "variants": ["raatat"], "verb": "to go"}
+{"mode": "absolutive_perfective", "page": "page_4", "person": "2sg", "printed": "raasat", "variants": ["raasat"], "verb": "to go"}
+{"mode": "absolutive_perfective", "page": "page_4", "person": "3sg", "printed": "raʔat", "variants": ["raʔat"], "verb": "to go"}
+{"mode": "absolutive_perfective", "page": "page_4", "person": "1du_incl", "printed": "racihwa", "variants": ["racihwa"], "verb": "to go"}
+{"mode": "absolutive_perfective", "page": "page_4", "person": "1du_excl", "printed": "siratpa", "variants": ["siratpa"], "verb": "to go"}
+{"mode": "absolutive_perfective", "page": "page_4", "person": "2du", "printed": "siraspa", "variants": ["siraspa"], "verb": "to go"}
+{"mode": "absolutive_perfective", "page": "page_4", "person": "3du", "printed": "sirawa", "variants": ["sirawa"], "verb": "to go"}
+{"mode": "absolutive_perfective", "page": "page_4", "person": "1pl_incl", "printed": "rataraapuuʔ", "variants": ["rataraapuuʔ"], "verb": "to go"}
+{"mode": "absolutive_perfective", "page": "page_4", "person": "1pl_excl", "printed": "rahapuuʔ", "variants": ["rahapuuʔ"], "verb": "to go"}
+{"mode": "absolutive_perfective", "page": "page_4", "person": "2pl", "printed": "rastapuuʔ", "variants": ["rastapuuʔ"], "verb": "to go"}
+{"mode": "absolutive_perfective", "page": "page_4", "person": "3pl", "printed": "raawuuʔ, raraarat", "variants": ["raawuuʔ", "raraarat"], "verb": "to go"}
+{"mode": "potential_perfective", "page": "page_4", "person": "1sg", "printed": "kuustiʔat", "variants": ["kuustiʔat"], "verb": "to go"}
+{"mode": "potential_perfective", "page": "page_4", "person": "2sg", "printed": "kaasiʔat", "variants": ["kaasiʔat"], "verb": "to go"}
+{"mode": "potential_perfective", "page": "page_4", "person": "3sg", "printed": "kuusiʔat", "variants": ["kuusiʔat"], "verb": "to go"}
+{"mode": "potential_perfective", "page": "page_4", "person": "1du_incl", "printed": "kaaciriiwa", "variants": ["kaaciriiwa"], "verb": "to go"}
+{"mode": "potential_perfective", "page": "page_4", "person": "1du_excl", "printed": "sikuustiwa", "variants": ["sikuustiwa"], "verb": "to go"}
+{"mode": "potential_perfective", "page": "page_4", "person": "2du", "printed": "sikaasiwa", "variants": ["sikaasiwa"], "verb": "to go"}
+{"mode": "potential_perfective", "page": "page_4", "person": "3du", "printed": "sikuusiwa", "variants": ["sikuusiwa"], "verb": "to go"}
+{"mode": "potential_perfective", "page": "page_4", "person": "1pl_incl", "printed": "kuustaaraapuuʔ", "variants": ["kuustaaraapuuʔ"], "verb": "to go"}
+{"mode": "potential_perfective", "page": "page_4", "person": "1pl_excl", "printed": "kuustiraapuuʔ", "variants": ["kuustiraapuuʔ"], "verb": "to go"}
+{"mode": "potential_perfective", "page": "page_4", "person": "2pl", "printed": "kaasiraapuuʔ", "variants": ["kaasiraapuuʔ"], "verb": "to go"}
+{"mode": "potential_perfective", "page": "page_4", "person": "3pl", "printed": "kusiiwuuʔ", "variants": ["kusiiwuuʔ"], "verb": "to go"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_4", "person": "1sg", "printed": "iriiraatata", "variants": ["iriiraatata"], "verb": "to go"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_4", "person": "2sg", "printed": "iriiraasata", "variants": ["iriiraasata"], "verb": "to go"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_4", "person": "3sg", "printed": "iriiraata", "variants": ["iriiraata"], "verb": "to go"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_4", "person": "1du_incl", "printed": "iriiracihwara", "variants": ["iriiracihwara"], "verb": "to go"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_4", "person": "1du_excl", "printed": "iriisiratpara", "variants": ["iriisiratpara"], "verb": "to go"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_4", "person": "2du", "printed": "iriisiraspara", "variants": ["iriisiraspara"], "verb": "to go"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_4", "person": "3du", "printed": "iriisirawara", "variants": ["iriisirawara"], "verb": "to go"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_4", "person": "1pl_incl", "printed": "iriirataraapuu", "variants": ["iriirataraapuu"], "verb": "to go"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_4", "person": "1pl_excl", "printed": "iriirahapuu", "variants": ["iriirahapuu"], "verb": "to go"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_4", "person": "2pl", "printed": "iriirastapuu", "variants": ["iriirastapuu"], "verb": "to go"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_4", "person": "3pl", "printed": "iriraawuu", "variants": ["iriraawuu"], "verb": "to go"}
+{"mode": "contingent_perfective_subordinate", "page": "page_4", "person": "1sg", "printed": "itata", "variants": ["itata"], "verb": "to go"}
+{"mode": "contingent_perfective_subordinate", "page": "page_4", "person": "2sg", "printed": "isata", "variants": ["isata"], "verb": "to go"}
+{"mode": "contingent_perfective_subordinate", "page": "page_4", "person": "3sg", "printed": "riita", "variants": ["riita"], "verb": "to go"}
+{"mode": "contingent_perfective_subordinate", "page": "page_4", "person": "1du_incl", "printed": "icihwara", "variants": ["icihwara"], "verb": "to go"}
+{"mode": "contingent_perfective_subordinate", "page": "page_4", "person": "1du_excl", "printed": "siʔitpara", "variants": ["siʔitpara"], "verb": "to go"}
+{"mode": "contingent_perfective_subordinate", "page": "page_4", "person": "2du", "printed": "siʔispara", "variants": ["siʔispara"], "verb": "to go"}
+{"mode": "contingent_perfective_subordinate", "page": "page_4", "person": "3du", "printed": "siriwara", "variants": ["siriwara"], "verb": "to go"}
+{"mode": "contingent_perfective_subordinate", "page": "page_4", "person": "1pl_incl", "printed": "itarapuu", "variants": ["itarapuu"], "verb": "to go"}
+{"mode": "contingent_perfective_subordinate", "page": "page_4", "person": "1pl_excl", "printed": "ihapuu", "variants": ["ihapuu"], "verb": "to go"}
+{"mode": "contingent_perfective_subordinate", "page": "page_4", "person": "2pl", "printed": "istapuu", "variants": ["istapuu"], "verb": "to go"}
+{"mode": "contingent_perfective_subordinate", "page": "page_4", "person": "3pl", "printed": "riwuu", "variants": ["riwuu"], "verb": "to go"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_4", "person": "1sg", "printed": "aatata", "variants": ["aatata"], "verb": "to go"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_4", "person": "2sg", "printed": "aasata", "variants": ["aasata"], "verb": "to go"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_4", "person": "3sg", "printed": "iita", "variants": ["iita"], "verb": "to go"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_4", "person": "1du_incl", "printed": "aacihwara", "variants": ["aacihwara"], "verb": "to go"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_4", "person": "1du_excl", "printed": "siʔaatpara", "variants": ["siʔaatpara"], "verb": "to go"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_4", "person": "2du", "printed": "siʔaaspara", "variants": ["siʔaaspara"], "verb": "to go"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_4", "person": "3du", "printed": "siʔiiwara", "variants": ["siʔiiwara"], "verb": "to go"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_4", "person": "1pl_incl", "printed": "aataraapuu", "variants": ["aataraapuu"], "verb": "to go"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_4", "person": "1pl_excl", "printed": "aahapuu", "variants": ["aahapuu"], "verb": "to go"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_4", "person": "2pl", "printed": "aastapuu", "variants": ["aastapuu"], "verb": "to go"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_4", "person": "3pl", "printed": "iiwuu", "variants": ["iiwuu"], "verb": "to go"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_4", "person": "1sg", "printed": "ratkuuta", "variants": ["ratkuuta"], "verb": "to go"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_4", "person": "2sg", "printed": "raskuuta", "variants": ["raskuuta"], "verb": "to go"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_4", "person": "3sg", "printed": "rakuuta", "variants": ["rakuuta"], "verb": "to go"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_4", "person": "1du_incl", "printed": "racihkuwara", "variants": ["racihkuwara"], "verb": "to go"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_4", "person": "1du_excl", "printed": "siratkuwara", "variants": ["siratkuwara"], "verb": "to go"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_4", "person": "2du", "printed": "siraskuwara", "variants": ["siraskuwara"], "verb": "to go"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_4", "person": "3du", "printed": "sirakuwara", "variants": ["sirakuwara"], "verb": "to go"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_4", "person": "1pl_incl", "printed": "rataakuraapuu", "variants": ["rataakuraapuu"], "verb": "to go"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_4", "person": "1pl_excl", "printed": "ratkuraapuu", "variants": ["ratkuraapuu"], "verb": "to go"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_4", "person": "2pl", "printed": "raskuraapuu", "variants": ["raskuraapuu"], "verb": "to go"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_4", "person": "3pl", "printed": "rakuuwuu, rakuraarata", "variants": ["rakuuwuu", "rakuraarata"], "verb": "to go"}
+{"mode": "indicative_perfective", "page": "page_5", "person": "1sg", "printed": "tatuuhii", "variants": ["tatuuhii"], "verb": "to be good"}
+{"mode": "indicative_perfective", "page": "page_5", "person": "2sg", "printed": "tasuuhii", "variants": ["tasuuhii"], "verb": "to be good"}
+{"mode": "indicative_perfective", "page": "page_5", "person": "3sg", "printed": "tuuhii", "variants": ["tuuhii"], "verb": "to be good"}
+{"mode": "indicative_perfective", "page": "page_5", "person": "1du_incl", "printed": "taciihii", "variants": ["taciihii"], "verb": "to be good"}
+{"mode": "indicative_perfective", "page": "page_5", "person": "1du_excl", "printed": "sitatuuhii", "variants": ["sitatuuhii"], "verb": "to be good"}
+{"mode": "indicative_perfective", "page": "page_5", "person": "2du", "printed": "sitasuuhii", "variants": ["sitasuuhii"], "verb": "to be good"}
+{"mode": "indicative_perfective", "page": "page_5", "person": "3du", "printed": "situuhii", "variants": ["situuhii"], "verb": "to be good"}
+{"mode": "indicative_perfective", "page": "page_5", "person": "1pl_incl", "printed": "tatuuraakiwaa", "variants": ["tatuuraakiwaa"], "verb": "to be good"}
+{"mode": "indicative_perfective", "page": "page_5", "person": "1pl_excl", "printed": "taturaakiwaa", "variants": ["taturaakiwaa"], "verb": "to be good"}
+{"mode": "indicative_perfective", "page": "page_5", "person": "2pl", "printed": "tasuraakiwaa", "variants": ["tasuraakiwaa"], "verb": "to be good"}
+{"mode": "indicative_perfective", "page": "page_5", "person": "3pl", "printed": "tuuhiwaa", "variants": ["tuuhiwaa"], "verb": "to be good"}
+{"mode": "negative_indicative_perfective", "page": "page_5", "person": "1sg", "printed": "kaakatuuhii", "variants": ["kaakatuuhii"], "verb": "to be good"}
+{"mode": "negative_indicative_perfective", "page": "page_5", "person": "2sg", "printed": "kaakasuuhii", "variants": ["kaakasuuhii"], "verb": "to be good"}
+{"mode": "negative_indicative_perfective", "page": "page_5", "person": "3sg", "printed": "kaakuhii", "variants": ["kaakuhii"], "verb": "to be good"}
+{"mode": "negative_indicative_perfective", "page": "page_5", "person": "1du_incl", "printed": "kaakaciihii", "variants": ["kaakaciihii"], "verb": "to be good"}
+{"mode": "negative_indicative_perfective", "page": "page_5", "person": "1du_excl", "printed": "sikaakatuuhii", "variants": ["sikaakatuuhii"], "verb": "to be good"}
+{"mode": "negative_indicative_perfective", "page": "page_5", "person": "2du", "printed": "sikaakasuuhii", "variants": ["sikaakasuuhii"], "verb": "to be good"}
+{"mode": "negative_indicative_perfective", "page": "page_5", "person": "3du", "printed": "sikaakuhii", "variants": ["sikaakuhii"], "verb": "to be good"}
+{"mode": "negative_indicative_perfective", "page": "page_5", "person": "1pl_incl", "printed": "kaakatuuraakiwaa", "variants": ["kaakatuuraakiwaa"], "verb": "to be good"}
+{"mode": "negative_indicative_perfective", "page": "page_5", "person": "1pl_excl", "printed": "kaakaaturaakiwaa", "variants": ["kaakaaturaakiwaa"], "verb": "to be good"}
+{"mode": "negative_indicative_perfective", "page": "page_5", "person": "2pl", "printed": "kaakaasuraakiwaa", "variants": ["kaakaasuraakiwaa"], "verb": "to be good"}
+{"mode": "negative_indicative_perfective", "page": "page_5", "person": "3pl", "printed": "kaakuuhiwaa", "variants": ["kaakuuhiwaa"], "verb": "to be good"}
+{"mode": "contingent_perfective", "page": "page_5", "person": "1sg", "printed": "ituuhii", "variants": ["ituuhii"], "verb": "to be good"}
+{"mode": "contingent_perfective", "page": "page_5", "person": "2sg", "printed": "isuuhii", "variants": ["isuuhii"], "verb": "to be good"}
+{"mode": "contingent_perfective", "page": "page_5", "person": "3sg", "printed": "ruuhii", "variants": ["ruuhii"], "verb": "to be good"}
+{"mode": "contingent_perfective", "page": "page_5", "person": "1du_incl", "printed": "iciihii", "variants": ["iciihii"], "verb": "to be good"}
+{"mode": "contingent_perfective", "page": "page_5", "person": "1du_excl", "printed": "siʔituuhii", "variants": ["siʔituuhii"], "verb": "to be good"}
+{"mode": "contingent_perfective", "page": "page_5", "person": "2du", "printed": "siʔisuuhii", "variants": ["siʔisuuhii"], "verb": "to be good"}
+{"mode": "contingent_perfective", "page": "page_5", "person": "3du", "printed": "siruuhii", "variants": ["siruuhii"], "verb": "to be good"}
+{"mode": "contingent_perfective", "page": "page_5", "person": "1pl_incl", "printed": "ituuraakiwaa", "variants": ["ituuraakiwaa"], "verb": "to be good"}
+{"mode": "contingent_perfective", "page": "page_5", "person": "1pl_excl", "printed": "ituraakiwaa", "variants": ["ituraakiwaa"], "verb": "to be good"}
+{"mode": "contingent_perfective", "page": "page_5", "person": "2pl", "printed": "isuraakiwaa", "variants": ["isuraakiwaa"], "verb": "to be good"}
+{"mode": "contingent_perfective", "page": "page_5", "person": "3pl", "printed": "ruuhiwaa", "variants": ["ruuhiwaa"], "verb": "to be good"}
+{"mode": "assertive_perfective", "page": "page_5", "person": "1sg", "printed": "rituuhii", "variants": ["rituuhii"], "verb": "to be good"}
+{"mode": "assertive_perfective", "page": "page_5", "person": "2sg", "printed": "risuuhii", "variants": ["risuuhii"], "verb": "to be good"}
+{"mode": "assertive_perfective", "page": "page_5", "person": "3sg", "printed": "ruhii", "variants": ["ruhii"], "verb": "to be good"}
+{"mode": "assertive_perfective", "page": "page_5", "person": "1du_incl", "printed": "riciihii", "variants": ["riciihii"], "verb": "to be good"}
+{"mode": "assertive_perfective", "page": "page_5", "person": "1du_excl", "printed": "siriituuhii", "variants": ["siriituuhii"], "verb": "to be good"}
+{"mode": "assertive_perfective", "page": "page_5", "person": "2du", "printed": "siriisuuhii", "variants": ["siriisuuhii"], "verb": "to be good"}
+{"mode": "assertive_perfective", "page": "page_5", "person": "3du", "printed": "siruuhii", "variants": ["siruuhii"], "verb": "to be good"}
+{"mode": "assertive_perfective", "page": "page_5", "person": "1pl_incl", "printed": "rituuraakiwaa", "variants": ["rituuraakiwaa"], "verb": "to be good"}
+{"mode": "assertive_perfective", "page": "page_5", "person": "1pl_excl", "printed": "riituraakiwaa", "variants": ["riituraakiwaa"], "verb": "to be good"}
+{"mode": "assertive_perfective", "page": "page_5", "person": "2pl", "printed": "riisuraakiwaa", "variants": ["riisuraakiwaa"], "verb": "to be good"}
+{"mode": "assertive_perfective", "page": "page_5", "person": "3pl", "printed": "ruuhiwaa", "variants": ["ruuhiwaa"], "verb": "to be good"}
+{"mode": "absolutive_perfective", "page": "page_5", "person": "1sg", "printed": "ratuuhii", "variants": ["ratuuhii"], "verb": "to be good"}
+{"mode": "absolutive_perfective", "page": "page_5", "person": "2sg", "printed": "rasuuhii", "variants": ["rasuuhii"], "verb": "to be good"}
+{"mode": "absolutive_perfective", "page": "page_5", "person": "3sg", "printed": "ruuhii", "variants": ["ruuhii"], "verb": "to be good"}
+{"mode": "absolutive_perfective", "page": "page_5", "person": "1du_incl", "printed": "raciihii", "variants": ["raciihii"], "verb": "to be good"}
+{"mode": "absolutive_perfective", "page": "page_5", "person": "1du_excl", "printed": "siratuuhii", "variants": ["siratuuhii"], "verb": "to be good"}
+{"mode": "absolutive_perfective", "page": "page_5", "person": "2du", "printed": "sirasuuhii", "variants": ["sirasuuhii"], "verb": "to be good"}
+{"mode": "absolutive_perfective", "page": "page_5", "person": "3du", "printed": "siruuhii", "variants": ["siruuhii"], "verb": "to be good"}
+{"mode": "absolutive_perfective", "page": "page_5", "person": "1pl_incl", "printed": "ratuuraakiwaa", "variants": ["ratuuraakiwaa"], "verb": "to be good"}
+{"mode": "absolutive_perfective", "page": "page_5", "person": "1pl_excl", "printed": "raturaakiwaa", "variants": ["raturaakiwaa"], "verb": "to be good"}
+{"mode": "absolutive_perfective", "page": "page_5", "person": "2pl", "printed": "rasuraakiwaa", "variants": ["rasuraakiwaa"], "verb": "to be good"}
+{"mode": "absolutive_perfective", "page": "page_5", "person": "3pl", "printed": "ruuhiwaa", "variants": ["ruuhiwaa"], "verb": "to be good"}
+{"mode": "potential_perfective", "page": "page_5", "person": "1sg", "printed": "kuustuuhii", "variants": ["kuustuuhii"], "verb": "to be good"}
+{"mode": "potential_perfective", "page": "page_5", "person": "2sg", "printed": "kasuuhii", "variants": ["kasuuhii"], "verb": "to be good"}
+{"mode": "potential_perfective", "page": "page_5", "person": "3sg", "printed": "kusuuhii", "variants": ["kusuuhii"], "verb": "to be good"}
+{"mode": "potential_perfective", "page": "page_5", "person": "1du_incl", "printed": "kaciihii", "variants": ["kaciihii"], "verb": "to be good"}
+{"mode": "potential_perfective", "page": "page_5", "person": "1du_excl", "printed": "sikuustuuhii", "variants": ["sikuustuuhii"], "verb": "to be good"}
+{"mode": "potential_perfective", "page": "page_5", "person": "2du", "printed": "sikasuuhii", "variants": ["sikasuuhii"], "verb": "to be good"}
+{"mode": "potential_perfective", "page": "page_5", "person": "3du", "printed": "sikusuuhii", "variants": ["sikusuuhii"], "verb": "to be good"}
+{"mode": "potential_perfective", "page": "page_5", "person": "1pl_incl", "printed": "kuustuuraakiwaa", "variants": ["kuustuuraakiwaa"], "verb": "to be good"}
+{"mode": "potential_perfective", "page": "page_5", "person": "1pl_excl", "printed": "kuusturaakiwaa", "variants": ["kuusturaakiwaa"], "verb": "to be good"}
+{"mode": "potential_perfective", "page": "page_5", "person": "2pl", "printed": "kaasuraakiwaa", "variants": ["kaasuraakiwaa"], "verb": "to be good"}
+{"mode": "potential_perfective", "page": "page_5", "person": "3pl", "printed": "kusuuhiwaa", "variants": ["kusuuhiwaa"], "verb": "to be good"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_5", "person": "1sg", "printed": "iriiratuuhiira", "variants": ["iriiratuuhiira"], "verb": "to be good"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_5", "person": "2sg", "printed": "iriirasuuhiira", "variants": ["iriirasuuhiira"], "verb": "to be good"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_5", "person": "3sg", "printed": "iriruuhiira", "variants": ["iriruuhiira"], "verb": "to be good"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_5", "person": "1du_incl", "printed": "iriiraciihiira", "variants": ["iriiraciihiira"], "verb": "to be good"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_5", "person": "1du_excl", "printed": "iriisiratuuhiira", "variants": ["iriisiratuuhiira"], "verb": "to be good"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_5", "person": "2du", "printed": "iriisirasuuhiira", "variants": ["iriisirasuuhiira"], "verb": "to be good"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_5", "person": "3du", "printed": "iriisiruuhiira", "variants": ["iriisiruuhiira"], "verb": "to be good"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_5", "person": "1pl_incl", "printed": "iriiratuuraakiwaara", "variants": ["iriiratuuraakiwaara"], "verb": "to be good"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_5", "person": "1pl_excl", "printed": "iriiraturaakiwaara", "variants": ["iriiraturaakiwaara"], "verb": "to be good"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_5", "person": "2pl", "printed": "iriirasuraakiwaara", "variants": ["iriirasuraakiwaara"], "verb": "to be good"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_5", "person": "3pl", "printed": "iriruuhiwaara", "variants": ["iriruuhiwaara"], "verb": "to be good"}
+{"mode": "contingent_perfective_subordinate", "page": "page_5", "person": "1sg", "printed": "ituuhiira", "variants": ["ituuhiira"], "verb": "to be good"}
+{"mode": "contingent_perfective_subordinate", "page": "page_5", "person": "2sg", "printed": "isuuhiira", "variants": ["isuuhiira"], "verb": "to be good"}
+{"mode": "contingent_perfective_subordinate", "page": "page_5", "person": "3sg", "printed": "ruuhiira", "variants": ["ruuhiira"], "verb": "to be good"}
+{"mode": "contingent_perfective_subordinate", "page": "page_5", "person": "1du_incl", "printed": "iciihiira", "variants": ["iciihiira"], "verb": "to be good"}
+{"mode": "contingent_perfective_subordinate", "page": "page_5", "person": "1du_excl", "printed": "siʔituuhiira", "variants": ["siʔituuhiira"], "verb": "to be good"}
+{"mode": "contingent_perfective_subordinate", "page": "page_5", "person": "2du", "printed": "siʔisuuhiira", "variants": ["siʔisuuhiira"], "verb": "to be good"}
+{"mode": "contingent_perfective_subordinate", "page": "page_5", "person": "3du", "printed": "siruuhiira", "variants": ["siruuhiira"], "verb": "to be good"}
+{"mode": "contingent_perfective_subordinate", "page": "page_5", "person": "1pl_incl", "printed": "ituuraakiwaara", "variants": ["ituuraakiwaara"], "verb": "to be good"}
+{"mode": "contingent_perfective_subordinate", "page": "page_5", "person": "1pl_excl", "printed": "ituraakiwaara", "variants": ["ituraakiwaara"], "verb": "to be good"}
+{"mode": "contingent_perfective_subordinate", "page": "page_5", "person": "2pl", "printed": "isuraakiwaara", "variants": ["isuraakiwaara"], "verb": "to be good"}
+{"mode": "contingent_perfective_subordinate", "page": "page_5", "person": "3pl", "printed": "ruuhiwaara", "variants": ["ruuhiwaara"], "verb": "to be good"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_5", "person": "1sg", "printed": "atuuhiira", "variants": ["atuuhiira"], "verb": "to be good"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_5", "person": "2sg", "printed": "asuuhiira", "variants": ["asuuhiira"], "verb": "to be good"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_5", "person": "3sg", "printed": "uuhiira", "variants": ["uuhiira"], "verb": "to be good"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_5", "person": "1du_incl", "printed": "aciihiira", "variants": ["aciihiira"], "verb": "to be good"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_5", "person": "1du_excl", "printed": "siʔatuuhiira", "variants": ["siʔatuuhiira"], "verb": "to be good"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_5", "person": "2du", "printed": "siʔasuuhiira", "variants": ["siʔasuuhiira"], "verb": "to be good"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_5", "person": "3du", "printed": "siʔuuhiira", "variants": ["siʔuuhiira"], "verb": "to be good"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_5", "person": "1pl_incl", "printed": "atuuraakiwaara", "variants": ["atuuraakiwaara"], "verb": "to be good"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_5", "person": "1pl_excl", "printed": "aaturaakiwaara", "variants": ["aaturaakiwaara"], "verb": "to be good"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_5", "person": "2pl", "printed": "aasuraakiwaara", "variants": ["aasuraakiwaara"], "verb": "to be good"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_5", "person": "3pl", "printed": "uuhiwaara", "variants": ["uuhiwaara"], "verb": "to be good"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_5", "person": "1sg", "printed": "ratkuuhiira", "variants": ["ratkuuhiira"], "verb": "to be good"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_5", "person": "2sg", "printed": "raskuuhiira", "variants": ["raskuuhiira"], "verb": "to be good"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_5", "person": "3sg", "printed": "rakuuhiira", "variants": ["rakuuhiira"], "verb": "to be good"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_5", "person": "1du_incl", "printed": "racihkuuhiira", "variants": ["racihkuuhiira"], "verb": "to be good"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_5", "person": "1du_excl", "printed": "siratkuuhiira", "variants": ["siratkuuhiira"], "verb": "to be good"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_5", "person": "2du", "printed": "siraskuuhiira", "variants": ["siraskuuhiira"], "verb": "to be good"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_5", "person": "3du", "printed": "sirakuuhiira", "variants": ["sirakuuhiira"], "verb": "to be good"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_5", "person": "1pl_incl", "printed": "rataakuraakiwaara", "variants": ["rataakuraakiwaara"], "verb": "to be good"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_5", "person": "1pl_excl", "printed": "ratkuraakiwaara", "variants": ["ratkuraakiwaara"], "verb": "to be good"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_5", "person": "2pl", "printed": "raskuraakiwaara", "variants": ["raskuraakiwaara"], "verb": "to be good"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_5", "person": "3pl", "printed": "rakuuhiwaara, rihkuhiwaara", "variants": ["rakuuhiwaara", "rihkuhiwaara"], "verb": "to be good"}
+{"mode": "indicative_perfective", "page": "page_6", "person": "1sg", "printed": "tatkiikaʔ", "variants": ["tatkiikaʔ"], "verb": "to drink it"}
+{"mode": "indicative_perfective", "page": "page_6", "person": "2sg", "printed": "taskiikaʔ", "variants": ["taskiikaʔ"], "verb": "to drink it"}
+{"mode": "indicative_perfective", "page": "page_6", "person": "3sg", "printed": "tikiikaʔ", "variants": ["tikiikaʔ"], "verb": "to drink it"}
+{"mode": "indicative_perfective", "page": "page_6", "person": "1du_incl", "printed": "tacihkiikaʔ", "variants": ["tacihkiikaʔ"], "verb": "to drink it"}
+{"mode": "indicative_perfective", "page": "page_6", "person": "1du_excl", "printed": "sitatkiikaʔ", "variants": ["sitatkiikaʔ"], "verb": "to drink it"}
+{"mode": "indicative_perfective", "page": "page_6", "person": "2du", "printed": "sitaskiikaʔ", "variants": ["sitaskiikaʔ"], "verb": "to drink it"}
+{"mode": "indicative_perfective", "page": "page_6", "person": "3du", "printed": "sitikiikaʔ", "variants": ["sitikiikaʔ"], "verb": "to drink it"}
+{"mode": "indicative_perfective", "page": "page_6", "person": "1pl_incl", "printed": "tataraakiikaʔ", "variants": ["tataraakiikaʔ"], "verb": "to drink it"}
+{"mode": "indicative_perfective", "page": "page_6", "person": "1pl_excl", "printed": "tahakiikaʔ", "variants": ["tahakiikaʔ"], "verb": "to drink it"}
+{"mode": "indicative_perfective", "page": "page_6", "person": "2pl", "printed": "tastakiikaʔ", "variants": ["tastakiikaʔ"], "verb": "to drink it"}
+{"mode": "indicative_perfective", "page": "page_6", "person": "3pl", "printed": "tihkiikaʔ", "variants": ["tihkiikaʔ"], "verb": "to drink it"}
+{"mode": "negative_indicative_perfective", "page": "page_6", "person": "1sg", "printed": "kaakaatkiikaʔ", "variants": ["kaakaatkiikaʔ"], "verb": "to drink it"}
+{"mode": "negative_indicative_perfective", "page": "page_6", "person": "2sg", "printed": "kaakaaskiikaʔ", "variants": ["kaakaaskiikaʔ"], "verb": "to drink it"}
+{"mode": "negative_indicative_perfective", "page": "page_6", "person": "3sg", "printed": "kaakiikiikaʔ", "variants": ["kaakiikiikaʔ"], "verb": "to drink it"}
+{"mode": "negative_indicative_perfective", "page": "page_6", "person": "1du_incl", "printed": "kaakaacihkiikaʔ", "variants": ["kaakaacihkiikaʔ"], "verb": "to drink it"}
+{"mode": "negative_indicative_perfective", "page": "page_6", "person": "1du_excl", "printed": "sikaakaatkiikaʔ", "variants": ["sikaakaatkiikaʔ"], "verb": "to drink it"}
+{"mode": "negative_indicative_perfective", "page": "page_6", "person": "2du", "printed": "sikaakaaskiikaʔ", "variants": ["sikaakaaskiikaʔ"], "verb": "to drink it"}
+{"mode": "negative_indicative_perfective", "page": "page_6", "person": "3du", "printed": "sikaakiikiikaʔ", "variants": ["sikaakiikiikaʔ"], "verb": "to drink it"}
+{"mode": "negative_indicative_perfective", "page": "page_6", "person": "1pl_incl", "printed": "kaakaataaraakiikaʔ", "variants": ["kaakaataaraakiikaʔ"], "verb": "to drink it"}
+{"mode": "negative_indicative_perfective", "page": "page_6", "person": "1pl_excl", "printed": "kaakaahakiikaʔ", "variants": ["kaakaahakiikaʔ"], "verb": "to drink it"}
+{"mode": "negative_indicative_perfective", "page": "page_6", "person": "2pl", "printed": "kaakaastakiikaʔ", "variants": ["kaakaastakiikaʔ"], "verb": "to drink it"}
+{"mode": "negative_indicative_perfective", "page": "page_6", "person": "3pl", "printed": "kaakihkiikaʔ", "variants": ["kaakihkiikaʔ"], "verb": "to drink it"}
+{"mode": "contingent_perfective", "page": "page_6", "person": "1sg", "printed": "itkikaʔ", "variants": ["itkikaʔ"], "verb": "to drink it"}
+{"mode": "contingent_perfective", "page": "page_6", "person": "2sg", "printed": "iskikaʔ", "variants": ["iskikaʔ"], "verb": "to drink it"}
+{"mode": "contingent_perfective", "page": "page_6", "person": "3sg", "printed": "rikikaʔ", "variants": ["rikikaʔ"], "verb": "to drink it"}
+{"mode": "contingent_perfective", "page": "page_6", "person": "1du_incl", "printed": "icihkikaʔ", "variants": ["icihkikaʔ"], "verb": "to drink it"}
+{"mode": "contingent_perfective", "page": "page_6", "person": "1du_excl", "printed": "siʔitkikaʔ", "variants": ["siʔitkikaʔ"], "verb": "to drink it"}
+{"mode": "contingent_perfective", "page": "page_6", "person": "2du", "printed": "siʔiskikaʔ", "variants": ["siʔiskikaʔ"], "verb": "to drink it"}
+{"mode": "contingent_perfective", "page": "page_6", "person": "3du", "printed": "sirikikaʔ", "variants": ["sirikikaʔ"], "verb": "to drink it"}
+{"mode": "contingent_perfective", "page": "page_6", "person": "1pl_incl", "printed": "itaraakikaʔ", "variants": ["itaraakikaʔ"], "verb": "to drink it"}
+{"mode": "contingent_perfective", "page": "page_6", "person": "1pl_excl", "printed": "ihakikaʔ", "variants": ["ihakikaʔ"], "verb": "to drink it"}
+{"mode": "contingent_perfective", "page": "page_6", "person": "2pl", "printed": "istakikaʔ", "variants": ["istakikaʔ"], "verb": "to drink it"}
+{"mode": "contingent_perfective", "page": "page_6", "person": "3pl", "printed": "rihkikaʔ", "variants": ["rihkikaʔ"], "verb": "to drink it"}
+{"mode": "assertive_perfective", "page": "page_6", "person": "1sg", "printed": "riitkiikaʔ", "variants": ["riitkiikaʔ"], "verb": "to drink it"}
+{"mode": "assertive_perfective", "page": "page_6", "person": "2sg", "printed": "riiskiikaʔ", "variants": ["riiskiikaʔ"], "verb": "to drink it"}
+{"mode": "assertive_perfective", "page": "page_6", "person": "3sg", "printed": "riikiikaʔ", "variants": ["riikiikaʔ"], "verb": "to drink it"}
+{"mode": "assertive_perfective", "page": "page_6", "person": "1du_incl", "printed": "riicihkiikaʔ", "variants": ["riicihkiikaʔ"], "verb": "to drink it"}
+{"mode": "assertive_perfective", "page": "page_6", "person": "1du_excl", "printed": "siriitkiikaʔ", "variants": ["siriitkiikaʔ"], "verb": "to drink it"}
+{"mode": "assertive_perfective", "page": "page_6", "person": "2du", "printed": "siriiskiikaʔ", "variants": ["siriiskiikaʔ"], "verb": "to drink it"}
+{"mode": "assertive_perfective", "page": "page_6", "person": "3du", "printed": "siriikiikaʔ", "variants": ["siriikiikaʔ"], "verb": "to drink it"}
+{"mode": "assertive_perfective", "page": "page_6", "person": "1pl_incl", "printed": "riitaraakiikaʔ", "variants": ["riitaraakiikaʔ"], "verb": "to drink it"}
+{"mode": "assertive_perfective", "page": "page_6", "person": "1pl_excl", "printed": "riihakiikaʔ", "variants": ["riihakiikaʔ"], "verb": "to drink it"}
+{"mode": "assertive_perfective", "page": "page_6", "person": "2pl", "printed": "riistakiikaʔ", "variants": ["riistakiikaʔ"], "verb": "to drink it"}
+{"mode": "assertive_perfective", "page": "page_6", "person": "3pl", "printed": "rihkiikaʔ", "variants": ["rihkiikaʔ"], "verb": "to drink it"}
+{"mode": "absolutive_perfective", "page": "page_6", "person": "1sg", "printed": "ratkiikaʔ", "variants": ["ratkiikaʔ"], "verb": "to drink it"}
+{"mode": "absolutive_perfective", "page": "page_6", "person": "2sg", "printed": "raskiikaʔ", "variants": ["raskiikaʔ"], "verb": "to drink it"}
+{"mode": "absolutive_perfective", "page": "page_6", "person": "3sg", "printed": "rakiikaʔ", "variants": ["rakiikaʔ"], "verb": "to drink it"}
+{"mode": "absolutive_perfective", "page": "page_6", "person": "1du_incl", "printed": "racihkiikaʔ", "variants": ["racihkiikaʔ"], "verb": "to drink it"}
+{"mode": "absolutive_perfective", "page": "page_6", "person": "1du_excl", "printed": "siratkiikaʔ", "variants": ["siratkiikaʔ"], "verb": "to drink it"}
+{"mode": "absolutive_perfective", "page": "page_6", "person": "2du", "printed": "siraskiikaʔ", "variants": ["siraskiikaʔ"], "verb": "to drink it"}
+{"mode": "absolutive_perfective", "page": "page_6", "person": "3du", "printed": "sirakiikaʔ", "variants": ["sirakiikaʔ"], "verb": "to drink it"}
+{"mode": "absolutive_perfective", "page": "page_6", "person": "1pl_incl", "printed": "rataraakiikaʔ", "variants": ["rataraakiikaʔ"], "verb": "to drink it"}
+{"mode": "absolutive_perfective", "page": "page_6", "person": "1pl_excl", "printed": "rahakiikaʔ", "variants": ["rahakiikaʔ"], "verb": "to drink it"}
+{"mode": "absolutive_perfective", "page": "page_6", "person": "2pl", "printed": "rastakiikaʔ", "variants": ["rastakiikaʔ"], "verb": "to drink it"}
+{"mode": "absolutive_perfective", "page": "page_6", "person": "3pl", "printed": "rihkiikaʔ", "variants": ["rihkiikaʔ"], "verb": "to drink it"}
+{"mode": "potential_perfective", "page": "page_6", "person": "1sg", "printed": "kuustikiikaʔ", "variants": ["kuustikiikaʔ"], "verb": "to drink it"}
+{"mode": "potential_perfective", "page": "page_6", "person": "2sg", "printed": "kaasikiikaʔ", "variants": ["kaasikiikaʔ"], "verb": "to drink it"}
+{"mode": "potential_perfective", "page": "page_6", "person": "3sg", "printed": "kuusikiikaʔ", "variants": ["kuusikiikaʔ"], "verb": "to drink it"}
+{"mode": "potential_perfective", "page": "page_6", "person": "1du_incl", "printed": "kaaciriikiikaʔ", "variants": ["kaaciriikiikaʔ"], "verb": "to drink it"}
+{"mode": "potential_perfective", "page": "page_6", "person": "1du_excl", "printed": "sikuustikiikaʔ", "variants": ["sikuustikiikaʔ"], "verb": "to drink it"}
+{"mode": "potential_perfective", "page": "page_6", "person": "2du", "printed": "sikaasikiikaʔ", "variants": ["sikaasikiikaʔ"], "verb": "to drink it"}
+{"mode": "potential_perfective", "page": "page_6", "person": "3du", "printed": "sikuusikiikaʔ", "variants": ["sikuusikiikaʔ"], "verb": "to drink it"}
+{"mode": "potential_perfective", "page": "page_6", "person": "1pl_incl", "printed": "kuustaaraakiikaʔ", "variants": ["kuustaaraakiikaʔ"], "verb": "to drink it"}
+{"mode": "potential_perfective", "page": "page_6", "person": "1pl_excl", "printed": "kuustiraakiikaʔ", "variants": ["kuustiraakiikaʔ"], "verb": "to drink it"}
+{"mode": "potential_perfective", "page": "page_6", "person": "2pl", "printed": "kaasiraakiikaʔ", "variants": ["kaasiraakiikaʔ"], "verb": "to drink it"}
+{"mode": "potential_perfective", "page": "page_6", "person": "3pl", "printed": "kusiriikiikaʔ", "variants": ["kusiriikiikaʔ"], "verb": "to drink it"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_6", "person": "1sg", "printed": "iriiratkikaa", "variants": ["iriiratkikaa"], "verb": "to drink it"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_6", "person": "2sg", "printed": "iriiraskikaa", "variants": ["iriiraskikaa"], "verb": "to drink it"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_6", "person": "3sg", "printed": "iriirakikaa", "variants": ["iriirakikaa"], "verb": "to drink it"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_6", "person": "1du_incl", "printed": "iriiracihkikaa", "variants": ["iriiracihkikaa"], "verb": "to drink it"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_6", "person": "1du_excl", "printed": "iriisiratkikaa", "variants": ["iriisiratkikaa"], "verb": "to drink it"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_6", "person": "2du", "printed": "iriisiraskikaa", "variants": ["iriisiraskikaa"], "verb": "to drink it"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_6", "person": "3du", "printed": "iriisirakikaa", "variants": ["iriisirakikaa"], "verb": "to drink it"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_6", "person": "1pl_incl", "printed": "iriirataraakikaa", "variants": ["iriirataraakikaa"], "verb": "to drink it"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_6", "person": "1pl_excl", "printed": "iriirahakikaa", "variants": ["iriirahakikaa"], "verb": "to drink it"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_6", "person": "2pl", "printed": "iriirastakikaa", "variants": ["iriirastakikaa"], "verb": "to drink it"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_6", "person": "3pl", "printed": "iriirihkikaa", "variants": ["iriirihkikaa"], "verb": "to drink it"}
+{"mode": "contingent_perfective_subordinate", "page": "page_6", "person": "1sg", "printed": "itkikaa", "variants": ["itkikaa"], "verb": "to drink it"}
+{"mode": "contingent_perfective_subordinate", "page": "page_6", "person": "2sg", "printed": "iskikaa", "variants": ["iskikaa"], "verb": "to drink it"}
+{"mode": "contingent_perfective_subordinate", "page": "page_6", "person": "3sg", "printed": "rikikaa", "variants": ["rikikaa"], "verb": "to drink it"}
+{"mode": "contingent_perfective_subordinate", "page": "page_6", "person": "1du_incl", "printed": "icihkikaa", "variants": ["icihkikaa"], "verb": "to drink it"}
+{"mode": "contingent_perfective_subordinate", "page": "page_6", "person": "1du_excl", "printed": "siʔitkikaa", "variants": ["siʔitkikaa"], "verb": "to drink it"}
+{"mode": "contingent_perfective_subordinate", "page": "page_6", "person": "2du", "printed": "siʔiskikaa", "variants": ["siʔiskikaa"], "verb": "to drink it"}
+{"mode": "contingent_perfective_subordinate", "page": "page_6", "person": "3du", "printed": "sirikikaa", "variants": ["sirikikaa"], "verb": "to drink it"}
+{"mode": "contingent_perfective_subordinate", "page": "page_6", "person": "1pl_incl", "printed": "itaraakikaa", "variants": ["itaraakikaa"], "verb": "to drink it"}
+{"mode": "contingent_perfective_subordinate", "page": "page_6", "person": "1pl_excl", "printed": "ihakikaa", "variants": ["ihakikaa"], "verb": "to drink it"}
+{"mode": "contingent_perfective_subordinate", "page": "page_6", "person": "2pl", "printed": "istakikaa", "variants": ["istakikaa"], "verb": "to drink it"}
+{"mode": "contingent_perfective_subordinate", "page": "page_6", "person": "3pl", "printed": "rihkikaa", "variants": ["rihkikaa"], "verb": "to drink it"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_6", "person": "1sg", "printed": "aatkikaa", "variants": ["aatkikaa"], "verb": "to drink it"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_6", "person": "2sg", "printed": "aaskikaa", "variants": ["aaskikaa"], "verb": "to drink it"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_6", "person": "3sg", "printed": "iikikaa", "variants": ["iikikaa"], "verb": "to drink it"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_6", "person": "1du_incl", "printed": "aacihkikaa", "variants": ["aacihkikaa"], "verb": "to drink it"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_6", "person": "1du_excl", "printed": "siʔaatkikaa", "variants": ["siʔaatkikaa"], "verb": "to drink it"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_6", "person": "2du", "printed": "siʔaaskikaa", "variants": ["siʔaaskikaa"], "verb": "to drink it"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_6", "person": "3du", "printed": "siʔiikikaa", "variants": ["siʔiikikaa"], "verb": "to drink it"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_6", "person": "1pl_incl", "printed": "aataraakikaa", "variants": ["aataraakikaa"], "verb": "to drink it"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_6", "person": "1pl_excl", "printed": "aahakikaa", "variants": ["aahakikaa"], "verb": "to drink it"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_6", "person": "2pl", "printed": "astakikaa", "variants": ["astakikaa"], "verb": "to drink it"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_6", "person": "3pl", "printed": "ihkikaa", "variants": ["ihkikaa"], "verb": "to drink it"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_6", "person": "1sg", "printed": "ratkukikaa", "variants": ["ratkukikaa"], "verb": "to drink it"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_6", "person": "2sg", "printed": "raskukikaa", "variants": ["raskukikaa"], "verb": "to drink it"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_6", "person": "3sg", "printed": "rakukikaa", "variants": ["rakukikaa"], "verb": "to drink it"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_6", "person": "1du_incl", "printed": "racihkukikaa", "variants": ["racihkukikaa"], "verb": "to drink it"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_6", "person": "1du_excl", "printed": "siratkukikaa", "variants": ["siratkukikaa"], "verb": "to drink it"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_6", "person": "2du", "printed": "siraskukikaa", "variants": ["siraskukikaa"], "verb": "to drink it"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_6", "person": "3du", "printed": "sirakukikaa", "variants": ["sirakukikaa"], "verb": "to drink it"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_6", "person": "1pl_incl", "printed": "rataakuraakikaa", "variants": ["rataakuraakikaa"], "verb": "to drink it"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_6", "person": "1pl_excl", "printed": "ratkuraakikaa", "variants": ["ratkuraakikaa"], "verb": "to drink it"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_6", "person": "2pl", "printed": "raskuraakikaa", "variants": ["raskuraakikaa"], "verb": "to drink it"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_6", "person": "3pl", "printed": "rihkukikaa", "variants": ["rihkukikaa"], "verb": "to drink it"}
+{"mode": "indicative_perfective", "page": "page_7", "person": "1sg", "printed": "tikukiraawaʔ", "variants": ["tikukiraawaʔ"], "verb": "to be sick"}
+{"mode": "indicative_perfective", "page": "page_7", "person": "2sg", "printed": "takiraawaʔ", "variants": ["takiraawaʔ"], "verb": "to be sick"}
+{"mode": "indicative_perfective", "page": "page_7", "person": "3sg", "printed": "tihkiraawaʔ", "variants": ["tihkiraawaʔ"], "verb": "to be sick"}
+{"mode": "indicative_perfective", "page": "page_7", "person": "1du_incl", "printed": "tacakukiraawaʔ", "variants": ["tacakukiraawaʔ"], "verb": "to be sick"}
+{"mode": "indicative_perfective", "page": "page_7", "person": "1du_excl", "printed": "sitikukiraawaʔ", "variants": ["sitikukiraawaʔ"], "verb": "to be sick"}
+{"mode": "indicative_perfective", "page": "page_7", "person": "2du", "printed": "sirakiraawaʔ", "variants": ["sirakiraawaʔ"], "verb": "to be sick"}
+{"mode": "indicative_perfective", "page": "page_7", "person": "3du", "printed": "sirihkiraawaʔ", "variants": ["sirihkiraawaʔ"], "verb": "to be sick"}
+{"mode": "indicative_perfective", "page": "page_7", "person": "1pl_incl", "printed": "tacakuraakiraawaʔ", "variants": ["tacakuraakiraawaʔ"], "verb": "to be sick"}
+{"mode": "indicative_perfective", "page": "page_7", "person": "1pl_excl", "printed": "tikuraakiraawaʔ", "variants": ["tikuraakiraawaʔ"], "verb": "to be sick"}
+{"mode": "indicative_perfective", "page": "page_7", "person": "2pl", "printed": "taraakiraawaʔ", "variants": ["taraakiraawaʔ"], "verb": "to be sick"}
+{"mode": "indicative_perfective", "page": "page_7", "person": "3pl", "printed": "tiirakiraawaʔ", "variants": ["tiirakiraawaʔ"], "verb": "to be sick"}
+{"mode": "negative_indicative_perfective", "page": "page_7", "person": "1sg", "printed": "kaakikukiraawaʔ", "variants": ["kaakikukiraawaʔ"], "verb": "to be sick"}
+{"mode": "negative_indicative_perfective", "page": "page_7", "person": "2sg", "printed": "kaakaakiraawaʔ", "variants": ["kaakaakiraawaʔ"], "verb": "to be sick"}
+{"mode": "negative_indicative_perfective", "page": "page_7", "person": "3sg", "printed": "kaakihkiraawaʔ", "variants": ["kaakihkiraawaʔ"], "verb": "to be sick"}
+{"mode": "negative_indicative_perfective", "page": "page_7", "person": "1du_incl", "printed": "kaakaacakukiraawaʔ", "variants": ["kaakaacakukiraawaʔ"], "verb": "to be sick"}
+{"mode": "negative_indicative_perfective", "page": "page_7", "person": "1du_excl", "printed": "sikaakikukiraawaʔ", "variants": ["sikaakikukiraawaʔ"], "verb": "to be sick"}
+{"mode": "negative_indicative_perfective", "page": "page_7", "person": "2du", "printed": "sikaakaakiraawaʔ", "variants": ["sikaakaakiraawaʔ"], "verb": "to be sick"}
+{"mode": "negative_indicative_perfective", "page": "page_7", "person": "3du", "printed": "sikaakihkiraawaʔ", "variants": ["sikaakihkiraawaʔ"], "verb": "to be sick"}
+{"mode": "negative_indicative_perfective", "page": "page_7", "person": "1pl_incl", "printed": "kaakaacakuraakiraawaʔ", "variants": ["kaakaacakuraakiraawaʔ"], "verb": "to be sick"}
+{"mode": "negative_indicative_perfective", "page": "page_7", "person": "1pl_excl", "printed": "kaakikuraakiraawaʔ", "variants": ["kaakikuraakiraawaʔ"], "verb": "to be sick"}
+{"mode": "negative_indicative_perfective", "page": "page_7", "person": "2pl", "printed": "kaakaraakiraawaʔ", "variants": ["kaakaraakiraawaʔ"], "verb": "to be sick"}
+{"mode": "negative_indicative_perfective", "page": "page_7", "person": "3pl", "printed": "kaakirakiraawaʔ", "variants": ["kaakirakiraawaʔ"], "verb": "to be sick"}
+{"mode": "contingent_perfective", "page": "page_7", "person": "1sg", "printed": "rikukiraawaʔ", "variants": ["rikukiraawaʔ"], "verb": "to be sick"}
+{"mode": "contingent_perfective", "page": "page_7", "person": "2sg", "printed": "rakiraawaʔ", "variants": ["rakiraawaʔ"], "verb": "to be sick"}
+{"mode": "contingent_perfective", "page": "page_7", "person": "3sg", "printed": "rihkiraawaʔ", "variants": ["rihkiraawaʔ"], "verb": "to be sick"}
+{"mode": "contingent_perfective", "page": "page_7", "person": "1du_incl", "printed": "racakukiraawaʔ", "variants": ["racakukiraawaʔ"], "verb": "to be sick"}
+{"mode": "contingent_perfective", "page": "page_7", "person": "1du_excl", "printed": "sirikukiraawaʔ", "variants": ["sirikukiraawaʔ"], "verb": "to be sick"}
+{"mode": "contingent_perfective", "page": "page_7", "person": "2du", "printed": "sirakiraawaʔ", "variants": ["sirakiraawaʔ"], "verb": "to be sick"}
+{"mode": "contingent_perfective", "page": "page_7", "person": "3du", "printed": "sirihkiraawaʔ", "variants": ["sirihkiraawaʔ"], "verb": "to be sick"}
+{"mode": "contingent_perfective", "page": "page_7", "person": "1pl_incl", "printed": "racakuraktahkiraawaʔ", "variants": ["racakuraktahkiraawaʔ"], "verb": "to be sick"}
+{"mode": "contingent_perfective", "page": "page_7", "person": "1pl_excl", "printed": "rikuraktahkiraawaʔ", "variants": ["rikuraktahkiraawaʔ"], "verb": "to be sick"}
+{"mode": "contingent_perfective", "page": "page_7", "person": "2pl", "printed": "raraktahkiraawaʔ", "variants": ["raraktahkiraawaʔ"], "verb": "to be sick"}
+{"mode": "contingent_perfective", "page": "page_7", "person": "3pl", "printed": "riiraktahkiraawaʔ", "variants": ["riiraktahkiraawaʔ"], "verb": "to be sick"}
+{"mode": "assertive_perfective", "page": "page_7", "person": "1sg", "printed": "rikuukiraawaʔ", "variants": ["rikuukiraawaʔ"], "verb": "to be sick"}
+{"mode": "assertive_perfective", "page": "page_7", "person": "2sg", "printed": "raakiraawaʔ", "variants": ["raakiraawaʔ"], "verb": "to be sick"}
+{"mode": "assertive_perfective", "page": "page_7", "person": "3sg", "printed": "riihkiraawaʔ", "variants": ["riihkiraawaʔ"], "verb": "to be sick"}
+{"mode": "assertive_perfective", "page": "page_7", "person": "1du_incl", "printed": "riicakuukiraawaʔ", "variants": ["riicakuukiraawaʔ"], "verb": "to be sick"}
+{"mode": "assertive_perfective", "page": "page_7", "person": "1du_excl", "printed": "sirikuukiraawaʔ", "variants": ["sirikuukiraawaʔ"], "verb": "to be sick"}
+{"mode": "assertive_perfective", "page": "page_7", "person": "2du", "printed": "siraakiraawaʔ", "variants": ["siraakiraawaʔ"], "verb": "to be sick"}
+{"mode": "assertive_perfective", "page": "page_7", "person": "3du", "printed": "siriihkiraawaʔ", "variants": ["siriihkiraawaʔ"], "verb": "to be sick"}
+{"mode": "assertive_perfective", "page": "page_7", "person": "1pl_incl", "printed": "riicakuuraktahkiraawaʔ", "variants": ["riicakuuraktahkiraawaʔ"], "verb": "to be sick"}
+{"mode": "assertive_perfective", "page": "page_7", "person": "1pl_excl", "printed": "rikuuraktahkiraawaʔ", "variants": ["rikuuraktahkiraawaʔ"], "verb": "to be sick"}
+{"mode": "assertive_perfective", "page": "page_7", "person": "2pl", "printed": "raaraktahkiraawaʔ", "variants": ["raaraktahkiraawaʔ"], "verb": "to be sick"}
+{"mode": "assertive_perfective", "page": "page_7", "person": "3pl", "printed": "riiraktahkiraawaʔ", "variants": ["riiraktahkiraawaʔ"], "verb": "to be sick"}
+{"mode": "absolutive_perfective", "page": "page_7", "person": "1sg", "printed": "riikukiraawaʔ", "variants": ["riikukiraawaʔ"], "verb": "to be sick"}
+{"mode": "absolutive_perfective", "page": "page_7", "person": "2sg", "printed": "raakiraawaʔ", "variants": ["raakiraawaʔ"], "verb": "to be sick"}
+{"mode": "absolutive_perfective", "page": "page_7", "person": "3sg", "printed": "rihkiraawaʔ", "variants": ["rihkiraawaʔ"], "verb": "to be sick"}
+{"mode": "absolutive_perfective", "page": "page_7", "person": "1du_incl", "printed": "riicakukiraawaʔ", "variants": ["riicakukiraawaʔ"], "verb": "to be sick"}
+{"mode": "absolutive_perfective", "page": "page_7", "person": "1du_excl", "printed": "siriikukiraawaʔ", "variants": ["siriikukiraawaʔ"], "verb": "to be sick"}
+{"mode": "absolutive_perfective", "page": "page_7", "person": "2du", "printed": "raakiraawaʔ", "variants": ["raakiraawaʔ"], "verb": "to be sick"}
+{"mode": "absolutive_perfective", "page": "page_7", "person": "3du", "printed": "sirihkiraawaʔ", "variants": ["sirihkiraawaʔ"], "verb": "to be sick"}
+{"mode": "absolutive_perfective", "page": "page_7", "person": "1pl_incl", "printed": "riicakuraktahkiraawaʔ", "variants": ["riicakuraktahkiraawaʔ"], "verb": "to be sick"}
+{"mode": "absolutive_perfective", "page": "page_7", "person": "1pl_excl", "printed": "riikuraktahkiraawaʔ", "variants": ["riikuraktahkiraawaʔ"], "verb": "to be sick"}
+{"mode": "absolutive_perfective", "page": "page_7", "person": "2pl", "printed": "raraktahkiraawaʔ", "variants": ["raraktahkiraawaʔ"], "verb": "to be sick"}
+{"mode": "absolutive_perfective", "page": "page_7", "person": "3pl", "printed": "riiraktahkiraawaʔ", "variants": ["riiraktahkiraawaʔ"], "verb": "to be sick"}
+{"mode": "potential_perfective", "page": "page_7", "person": "1sg", "printed": "kuusikuukiraawaʔ", "variants": ["kuusikuukiraawaʔ"], "verb": "to be sick"}
+{"mode": "potential_perfective", "page": "page_7", "person": "2sg", "printed": "kusaakiraawaʔ", "variants": ["kusaakiraawaʔ"], "verb": "to be sick"}
+{"mode": "potential_perfective", "page": "page_7", "person": "3sg", "printed": "kusiriikiraawaʔ", "variants": ["kusiriikiraawaʔ"], "verb": "to be sick"}
+{"mode": "potential_perfective", "page": "page_7", "person": "1du_incl", "printed": "kaacakuukiraawaʔ", "variants": ["kaacakuukiraawaʔ"], "verb": "to be sick"}
+{"mode": "potential_perfective", "page": "page_7", "person": "1du_excl", "printed": "sikuusikuukiraawaʔ", "variants": ["sikuusikuukiraawaʔ"], "verb": "to be sick"}
+{"mode": "potential_perfective", "page": "page_7", "person": "2du", "printed": "sikusaakiraawaʔ", "variants": ["sikusaakiraawaʔ"], "verb": "to be sick"}
+{"mode": "potential_perfective", "page": "page_7", "person": "3du", "printed": "sikusiriikiraawaʔ", "variants": ["sikusiriikiraawaʔ"], "verb": "to be sick"}
+{"mode": "potential_perfective", "page": "page_7", "person": "1pl_incl", "printed": "kaacakuuraktahkiraawaʔ", "variants": ["kaacakuuraktahkiraawaʔ"], "verb": "to be sick"}
+{"mode": "potential_perfective", "page": "page_7", "person": "1pl_excl", "printed": "kuusikuuraakiraawaʔ", "variants": ["kuusikuuraakiraawaʔ"], "verb": "to be sick"}
+{"mode": "potential_perfective", "page": "page_7", "person": "2pl", "printed": "kusaaraktahkiraawaʔ", "variants": ["kusaaraktahkiraawaʔ"], "verb": "to be sick"}
+{"mode": "potential_perfective", "page": "page_7", "person": "3pl", "printed": "kusiriktaahkiraawaʔ", "variants": ["kusiriktaahkiraawaʔ"], "verb": "to be sick"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_7", "person": "1sg", "printed": "iriirikukiraawaa", "variants": ["iriirikukiraawaa"], "verb": "to be sick"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_7", "person": "2sg", "printed": "iriirakiraawaa", "variants": ["iriirakiraawaa"], "verb": "to be sick"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_7", "person": "3sg", "printed": "iriirihkiraawaa", "variants": ["iriirihkiraawaa"], "verb": "to be sick"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_7", "person": "1du_incl", "printed": "iriiracakukiraawaa", "variants": ["iriiracakukiraawaa"], "verb": "to be sick"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_7", "person": "1du_excl", "printed": "iriisirikukiraawaa", "variants": ["iriisirikukiraawaa"], "verb": "to be sick"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_7", "person": "2du", "printed": "iriisirakiraawaa", "variants": ["iriisirakiraawaa"], "verb": "to be sick"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_7", "person": "3du", "printed": "iriisirihkiraawaa", "variants": ["iriisirihkiraawaa"], "verb": "to be sick"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_7", "person": "1pl_incl", "printed": "iriiracakuraktahkiraawaa", "variants": ["iriiracakuraktahkiraawaa"], "verb": "to be sick"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_7", "person": "1pl_excl", "printed": "iriirikuraktahkiraawaa", "variants": ["iriirikuraktahkiraawaa"], "verb": "to be sick"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_7", "person": "2pl", "printed": "iriiraraktahkiraawaa", "variants": ["iriiraraktahkiraawaa"], "verb": "to be sick"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_7", "person": "3pl", "printed": "iririiraktahkirawaa", "variants": ["iririiraktahkirawaa"], "verb": "to be sick"}
+{"mode": "contingent_perfective_subordinate", "page": "page_7", "person": "1sg", "printed": "rikukiraawaa", "variants": ["rikukiraawaa"], "verb": "to be sick"}
+{"mode": "contingent_perfective_subordinate", "page": "page_7", "person": "2sg", "printed": "rakiraawaa", "variants": ["rakiraawaa"], "verb": "to be sick"}
+{"mode": "contingent_perfective_subordinate", "page": "page_7", "person": "3sg", "printed": "rihkiraawaa", "variants": ["rihkiraawaa"], "verb": "to be sick"}
+{"mode": "contingent_perfective_subordinate", "page": "page_7", "person": "1du_incl", "printed": "racakukiraawaa", "variants": ["racakukiraawaa"], "verb": "to be sick"}
+{"mode": "contingent_perfective_subordinate", "page": "page_7", "person": "1du_excl", "printed": "sirikukiraawaa", "variants": ["sirikukiraawaa"], "verb": "to be sick"}
+{"mode": "contingent_perfective_subordinate", "page": "page_7", "person": "2du", "printed": "sirakiraawaa", "variants": ["sirakiraawaa"], "verb": "to be sick"}
+{"mode": "contingent_perfective_subordinate", "page": "page_7", "person": "3du", "printed": "sirihkiraawaa", "variants": ["sirihkiraawaa"], "verb": "to be sick"}
+{"mode": "contingent_perfective_subordinate", "page": "page_7", "person": "1pl_incl", "printed": "racakuraktahkiraawaa", "variants": ["racakuraktahkiraawaa"], "verb": "to be sick"}
+{"mode": "contingent_perfective_subordinate", "page": "page_7", "person": "1pl_excl", "printed": "rikuraktahkiraawaa", "variants": ["rikuraktahkiraawaa"], "verb": "to be sick"}
+{"mode": "contingent_perfective_subordinate", "page": "page_7", "person": "2pl", "printed": "raraktahkiraawaa", "variants": ["raraktahkiraawaa"], "verb": "to be sick"}
+{"mode": "contingent_perfective_subordinate", "page": "page_7", "person": "3pl", "printed": "riiraktahkirawaa", "variants": ["riiraktahkirawaa"], "verb": "to be sick"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_7", "person": "1sg", "printed": "iikukiraawaa", "variants": ["iikukiraawaa"], "verb": "to be sick"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_7", "person": "2sg", "printed": "aakirawaa", "variants": ["aakirawaa"], "verb": "to be sick"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_7", "person": "3sg", "printed": "iihkirawaa", "variants": ["iihkirawaa"], "verb": "to be sick"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_7", "person": "1du_incl", "printed": "aacakukiraawaa", "variants": ["aacakukiraawaa"], "verb": "to be sick"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_7", "person": "1du_excl", "printed": "siʔiikukiraawaa", "variants": ["siʔiikukiraawaa"], "verb": "to be sick"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_7", "person": "2du", "printed": "siʔaakiraawaa", "variants": ["siʔaakiraawaa"], "verb": "to be sick"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_7", "person": "3du", "printed": "siʔiihkiraawaa", "variants": ["siʔiihkiraawaa"], "verb": "to be sick"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_7", "person": "1pl_incl", "printed": "aacakuraakiraawaa", "variants": ["aacakuraakiraawaa"], "verb": "to be sick"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_7", "person": "1pl_excl", "printed": "iikuraakiraawaa", "variants": ["iikuraakiraawaa"], "verb": "to be sick"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_7", "person": "2pl", "printed": "araakiraawaa", "variants": ["araakiraawaa"], "verb": "to be sick"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_7", "person": "3pl", "printed": "iiraakiraawaa", "variants": ["iiraakiraawaa"], "verb": "to be sick"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_7", "person": "1sg", "printed": "rakukukiraawaa", "variants": ["rakukukiraawaa"], "verb": "to be sick"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_7", "person": "2sg", "printed": "raakukiraawaa", "variants": ["raakukiraawaa"], "verb": "to be sick"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_7", "person": "3sg", "printed": "rihkukiraawaa", "variants": ["rihkukiraawaa"], "verb": "to be sick"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_7", "person": "1du_incl", "printed": "racakukiraawaa", "variants": ["racakukiraawaa"], "verb": "to be sick"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_7", "person": "1du_excl", "printed": "sirakukukiraawaa", "variants": ["sirakukukiraawaa"], "verb": "to be sick"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_7", "person": "2du", "printed": "siraakukiraawaa", "variants": ["siraakukiraawaa"], "verb": "to be sick"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_7", "person": "3du", "printed": "sirihkukiraawaa", "variants": ["sirihkukiraawaa"], "verb": "to be sick"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_7", "person": "1pl_incl", "printed": "racakukuraktahkiraawaa", "variants": ["racakukuraktahkiraawaa"], "verb": "to be sick"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_7", "person": "1pl_excl", "printed": "rakukuraktahkiraawaa", "variants": ["rakukuraktahkiraawaa"], "verb": "to be sick"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_7", "person": "2pl", "printed": "raakuraktahkiraawaa", "variants": ["raakuraktahkiraawaa"], "verb": "to be sick"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_7", "person": "3pl", "printed": "rihkuraktahkiraawaa", "variants": ["rihkuraktahkiraawaa"], "verb": "to be sick"}
+{"mode": "indicative_perfective", "page": "page_8", "person": "1sg", "printed": "tahaa", "variants": ["tahaa"], "verb": "to have it"}
+{"mode": "indicative_perfective", "page": "page_8", "person": "2sg", "printed": "tastaa", "variants": ["tastaa"], "verb": "to have it"}
+{"mode": "indicative_perfective", "page": "page_8", "person": "3sg", "printed": "tiraa", "variants": ["tiraa"], "verb": "to have it"}
+{"mode": "indicative_perfective", "page": "page_8", "person": "1du_incl", "printed": "taciraa", "variants": ["taciraa"], "verb": "to have it"}
+{"mode": "indicative_perfective", "page": "page_8", "person": "1du_excl", "printed": "sitahaa", "variants": ["sitahaa"], "verb": "to have it"}
+{"mode": "indicative_perfective", "page": "page_8", "person": "2du", "printed": "sitastaa", "variants": ["sitastaa"], "verb": "to have it"}
+{"mode": "indicative_perfective", "page": "page_8", "person": "3du", "printed": "sitiraa", "variants": ["sitiraa"], "verb": "to have it"}
+{"mode": "indicative_perfective", "page": "page_8", "person": "1pl_incl", "printed": "sitaciraa", "variants": ["sitaciraa"], "verb": "to have it"}
+{"mode": "indicative_perfective", "page": "page_8", "person": "1pl_excl", "printed": "sitahaa", "variants": ["sitahaa"], "verb": "to have it"}
+{"mode": "indicative_perfective", "page": "page_8", "person": "2pl", "printed": "sitastaa", "variants": ["sitastaa"], "verb": "to have it"}
+{"mode": "indicative_perfective", "page": "page_8", "person": "3pl", "printed": "sitiraa", "variants": ["sitiraa"], "verb": "to have it"}
+{"mode": "negative_indicative_perfective", "page": "page_8", "person": "1sg", "printed": "kaakahaa", "variants": ["kaakahaa"], "verb": "to have it"}
+{"mode": "negative_indicative_perfective", "page": "page_8", "person": "2sg", "printed": "kaakastaa", "variants": ["kaakastaa"], "verb": "to have it"}
+{"mode": "negative_indicative_perfective", "page": "page_8", "person": "3sg", "printed": "kaakiraa", "variants": ["kaakiraa"], "verb": "to have it"}
+{"mode": "negative_indicative_perfective", "page": "page_8", "person": "1du_incl", "printed": "kaakaaciraa", "variants": ["kaakaaciraa"], "verb": "to have it"}
+{"mode": "negative_indicative_perfective", "page": "page_8", "person": "1du_excl", "printed": "sikaakahaa", "variants": ["sikaakahaa"], "verb": "to have it"}
+{"mode": "negative_indicative_perfective", "page": "page_8", "person": "2du", "printed": "sikaakastaa", "variants": ["sikaakastaa"], "verb": "to have it"}
+{"mode": "negative_indicative_perfective", "page": "page_8", "person": "3du", "printed": "sikaakiraa", "variants": ["sikaakiraa"], "verb": "to have it"}
+{"mode": "negative_indicative_perfective", "page": "page_8", "person": "1pl_incl", "printed": "sikaakaaciraa", "variants": ["sikaakaaciraa"], "verb": "to have it"}
+{"mode": "negative_indicative_perfective", "page": "page_8", "person": "1pl_excl", "printed": "sikaakahaa", "variants": ["sikaakahaa"], "verb": "to have it"}
+{"mode": "negative_indicative_perfective", "page": "page_8", "person": "2pl", "printed": "sikaakastaa", "variants": ["sikaakastaa"], "verb": "to have it"}
+{"mode": "negative_indicative_perfective", "page": "page_8", "person": "3pl", "printed": "sikaakiraa", "variants": ["sikaakiraa"], "verb": "to have it"}
+{"mode": "contingent_perfective", "page": "page_8", "person": "1sg", "printed": "ihaa", "variants": ["ihaa"], "verb": "to have it"}
+{"mode": "contingent_perfective", "page": "page_8", "person": "2sg", "printed": "istaa", "variants": ["istaa"], "verb": "to have it"}
+{"mode": "contingent_perfective", "page": "page_8", "person": "3sg", "printed": "riraa", "variants": ["riraa"], "verb": "to have it"}
+{"mode": "contingent_perfective", "page": "page_8", "person": "1du_incl", "printed": "iciraa", "variants": ["iciraa"], "verb": "to have it"}
+{"mode": "contingent_perfective", "page": "page_8", "person": "1du_excl", "printed": "siʔihaa", "variants": ["siʔihaa"], "verb": "to have it"}
+{"mode": "contingent_perfective", "page": "page_8", "person": "2du", "printed": "siʔistaa", "variants": ["siʔistaa"], "verb": "to have it"}
+{"mode": "contingent_perfective", "page": "page_8", "person": "3du", "printed": "siriraa", "variants": ["siriraa"], "verb": "to have it"}
+{"mode": "contingent_perfective", "page": "page_8", "person": "1pl_incl", "printed": "siʔiciraa", "variants": ["siʔiciraa"], "verb": "to have it"}
+{"mode": "contingent_perfective", "page": "page_8", "person": "1pl_excl", "printed": "siʔihaa", "variants": ["siʔihaa"], "verb": "to have it"}
+{"mode": "contingent_perfective", "page": "page_8", "person": "2pl", "printed": "siʔistaa", "variants": ["siʔistaa"], "verb": "to have it"}
+{"mode": "contingent_perfective", "page": "page_8", "person": "3pl", "printed": "siriraa", "variants": ["siriraa"], "verb": "to have it"}
+{"mode": "assertive_perfective", "page": "page_8", "person": "1sg", "printed": "rihaa", "variants": ["rihaa"], "verb": "to have it"}
+{"mode": "assertive_perfective", "page": "page_8", "person": "2sg", "printed": "ristaa", "variants": ["ristaa"], "verb": "to have it"}
+{"mode": "assertive_perfective", "page": "page_8", "person": "3sg", "printed": "riraa", "variants": ["riraa"], "verb": "to have it"}
+{"mode": "assertive_perfective", "page": "page_8", "person": "1du_incl", "printed": "riiciraa", "variants": ["riiciraa"], "verb": "to have it"}
+{"mode": "assertive_perfective", "page": "page_8", "person": "1du_excl", "printed": "siriihaa", "variants": ["siriihaa"], "verb": "to have it"}
+{"mode": "assertive_perfective", "page": "page_8", "person": "2du", "printed": "siriistaa", "variants": ["siriistaa"], "verb": "to have it"}
+{"mode": "assertive_perfective", "page": "page_8", "person": "3du", "printed": "siriiraa", "variants": ["siriiraa"], "verb": "to have it"}
+{"mode": "assertive_perfective", "page": "page_8", "person": "1pl_incl", "printed": "siriiciraa", "variants": ["siriiciraa"], "verb": "to have it"}
+{"mode": "assertive_perfective", "page": "page_8", "person": "1pl_excl", "printed": "siriihaa", "variants": ["siriihaa"], "verb": "to have it"}
+{"mode": "assertive_perfective", "page": "page_8", "person": "2pl", "printed": "siriistaa", "variants": ["siriistaa"], "verb": "to have it"}
+{"mode": "assertive_perfective", "page": "page_8", "person": "3pl", "printed": "siriiraa", "variants": ["siriiraa"], "verb": "to have it"}
+{"mode": "absolutive_perfective", "page": "page_8", "person": "1sg", "printed": "rahaa", "variants": ["rahaa"], "verb": "to have it"}
+{"mode": "absolutive_perfective", "page": "page_8", "person": "2sg", "printed": "rastaa", "variants": ["rastaa"], "verb": "to have it"}
+{"mode": "absolutive_perfective", "page": "page_8", "person": "3sg", "printed": "raraa", "variants": ["raraa"], "verb": "to have it"}
+{"mode": "absolutive_perfective", "page": "page_8", "person": "1du_incl", "printed": "raciraa", "variants": ["raciraa"], "verb": "to have it"}
+{"mode": "absolutive_perfective", "page": "page_8", "person": "1du_excl", "printed": "sirahaa", "variants": ["sirahaa"], "verb": "to have it"}
+{"mode": "absolutive_perfective", "page": "page_8", "person": "2du", "printed": "sirastaa", "variants": ["sirastaa"], "verb": "to have it"}
+{"mode": "absolutive_perfective", "page": "page_8", "person": "3du", "printed": "siraraa", "variants": ["siraraa"], "verb": "to have it"}
+{"mode": "absolutive_perfective", "page": "page_8", "person": "1pl_incl", "printed": "siraciraa", "variants": ["siraciraa"], "verb": "to have it"}
+{"mode": "absolutive_perfective", "page": "page_8", "person": "1pl_excl", "printed": "sirahaa", "variants": ["sirahaa"], "verb": "to have it"}
+{"mode": "absolutive_perfective", "page": "page_8", "person": "2pl", "printed": "sirastaa", "variants": ["sirastaa"], "verb": "to have it"}
+{"mode": "absolutive_perfective", "page": "page_8", "person": "3pl", "printed": "siriraa", "variants": ["siriraa"], "verb": "to have it"}
+{"mode": "potential_perfective", "page": "page_8", "person": "1sg", "printed": "kuustiraa", "variants": ["kuustiraa"], "verb": "to have it"}
+{"mode": "potential_perfective", "page": "page_8", "person": "2sg", "printed": "kaasiraa", "variants": ["kaasiraa"], "verb": "to have it"}
+{"mode": "potential_perfective", "page": "page_8", "person": "3sg", "printed": "kuusiraa", "variants": ["kuusiraa"], "verb": "to have it"}
+{"mode": "potential_perfective", "page": "page_8", "person": "1du_incl", "printed": "kaaciriiraa", "variants": ["kaaciriiraa"], "verb": "to have it"}
+{"mode": "potential_perfective", "page": "page_8", "person": "1du_excl", "printed": "sikuustiraa", "variants": ["sikuustiraa"], "verb": "to have it"}
+{"mode": "potential_perfective", "page": "page_8", "person": "2du", "printed": "sikaasiraa", "variants": ["sikaasiraa"], "verb": "to have it"}
+{"mode": "potential_perfective", "page": "page_8", "person": "3du", "printed": "sikuusiraa", "variants": ["sikuusiraa"], "verb": "to have it"}
+{"mode": "potential_perfective", "page": "page_8", "person": "1pl_incl", "printed": "sikaaciriiraa", "variants": ["sikaaciriiraa"], "verb": "to have it"}
+{"mode": "potential_perfective", "page": "page_8", "person": "1pl_excl", "printed": "sikuustiraa", "variants": ["sikuustiraa"], "verb": "to have it"}
+{"mode": "potential_perfective", "page": "page_8", "person": "2pl", "printed": "sikaasiraa", "variants": ["sikaasiraa"], "verb": "to have it"}
+{"mode": "potential_perfective", "page": "page_8", "person": "3pl", "printed": "kuusiriiraraa", "variants": ["kuusiriiraraa"], "verb": "to have it"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_8", "person": "1sg", "printed": "iriirahaaha", "variants": ["iriirahaaha"], "verb": "to have it"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_8", "person": "2sg", "printed": "iriirastaaha", "variants": ["iriirastaaha"], "verb": "to have it"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_8", "person": "3sg", "printed": "iriiraraaha", "variants": ["iriiraraaha"], "verb": "to have it"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_8", "person": "1du_incl", "printed": "iriiraciraaha", "variants": ["iriiraciraaha"], "verb": "to have it"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_8", "person": "1du_excl", "printed": "iriisirahaaha", "variants": ["iriisirahaaha"], "verb": "to have it"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_8", "person": "2du", "printed": "iriisirastaaha", "variants": ["iriisirastaaha"], "verb": "to have it"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_8", "person": "3du", "printed": "iriisiraraaha", "variants": ["iriisiraraaha"], "verb": "to have it"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_8", "person": "1pl_incl", "printed": "iriisiraciraaha", "variants": ["iriisiraciraaha"], "verb": "to have it"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_8", "person": "1pl_excl", "printed": "iriisirahaaha", "variants": ["iriisirahaaha"], "verb": "to have it"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_8", "person": "2pl", "printed": "iriisirastaaha", "variants": ["iriisirastaaha"], "verb": "to have it"}
+{"mode": "gerundial_perfective_subordinate", "page": "page_8", "person": "3pl", "printed": "iriiriraraaha", "variants": ["iriiriraraaha"], "verb": "to have it"}
+{"mode": "contingent_perfective_subordinate", "page": "page_8", "person": "1sg", "printed": "ihaaha", "variants": ["ihaaha"], "verb": "to have it"}
+{"mode": "contingent_perfective_subordinate", "page": "page_8", "person": "2sg", "printed": "istaaha", "variants": ["istaaha"], "verb": "to have it"}
+{"mode": "contingent_perfective_subordinate", "page": "page_8", "person": "3sg", "printed": "riraaha", "variants": ["riraaha"], "verb": "to have it"}
+{"mode": "contingent_perfective_subordinate", "page": "page_8", "person": "1du_incl", "printed": "iciraaha", "variants": ["iciraaha"], "verb": "to have it"}
+{"mode": "contingent_perfective_subordinate", "page": "page_8", "person": "1du_excl", "printed": "siʔihaaha", "variants": ["siʔihaaha"], "verb": "to have it"}
+{"mode": "contingent_perfective_subordinate", "page": "page_8", "person": "2du", "printed": "siʔistaaha", "variants": ["siʔistaaha"], "verb": "to have it"}
+{"mode": "contingent_perfective_subordinate", "page": "page_8", "person": "3du", "printed": "siriraaha", "variants": ["siriraaha"], "verb": "to have it"}
+{"mode": "contingent_perfective_subordinate", "page": "page_8", "person": "1pl_incl", "printed": "siʔiciraaha", "variants": ["siʔiciraaha"], "verb": "to have it"}
+{"mode": "contingent_perfective_subordinate", "page": "page_8", "person": "1pl_excl", "printed": "siʔihaaha", "variants": ["siʔihaaha"], "verb": "to have it"}
+{"mode": "contingent_perfective_subordinate", "page": "page_8", "person": "2pl", "printed": "siʔistaaha", "variants": ["siʔistaaha"], "verb": "to have it"}
+{"mode": "contingent_perfective_subordinate", "page": "page_8", "person": "3pl", "printed": "siʔiraaha", "variants": ["siʔiraaha"], "verb": "to have it"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_8", "person": "1sg", "printed": "aahaaha", "variants": ["aahaaha"], "verb": "to have it"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_8", "person": "2sg", "printed": "aastaaha", "variants": ["aastaaha"], "verb": "to have it"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_8", "person": "3sg", "printed": "iiraaha", "variants": ["iiraaha"], "verb": "to have it"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_8", "person": "1du_incl", "printed": "aaciraaha", "variants": ["aaciraaha"], "verb": "to have it"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_8", "person": "1du_excl", "printed": "siʔaahaaha", "variants": ["siʔaahaaha"], "verb": "to have it"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_8", "person": "2du", "printed": "siʔaastaaha", "variants": ["siʔaastaaha"], "verb": "to have it"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_8", "person": "3du", "printed": "siʔiiraaha", "variants": ["siʔiiraaha"], "verb": "to have it"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_8", "person": "1pl_incl", "printed": "siʔaaciraaha", "variants": ["siʔaaciraaha"], "verb": "to have it"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_8", "person": "1pl_excl", "printed": "siʔaahaaha", "variants": ["siʔaahaaha"], "verb": "to have it"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_8", "person": "2pl", "printed": "siʔaastaaha", "variants": ["siʔaastaaha"], "verb": "to have it"}
+{"mode": "subjunctive_perfective_subordinate", "page": "page_8", "person": "3pl", "printed": "siʔiiraaha", "variants": ["siʔiiraaha"], "verb": "to have it"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_8", "person": "1sg", "printed": "ratkuraaha", "variants": ["ratkuraaha"], "verb": "to have it"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_8", "person": "2sg", "printed": "raskuraaha", "variants": ["raskuraaha"], "verb": "to have it"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_8", "person": "3sg", "printed": "rakuraaha", "variants": ["rakuraaha"], "verb": "to have it"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_8", "person": "1du_incl", "printed": "racihkuraaha", "variants": ["racihkuraaha"], "verb": "to have it"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_8", "person": "1du_excl", "printed": "siratkuraaha", "variants": ["siratkuraaha"], "verb": "to have it"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_8", "person": "2du", "printed": "siraskuraaha", "variants": ["siraskuraaha"], "verb": "to have it"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_8", "person": "3du", "printed": "sirakuraaha", "variants": ["sirakuraaha"], "verb": "to have it"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_8", "person": "1pl_incl", "printed": "siracihkuraaha", "variants": ["siracihkuraaha"], "verb": "to have it"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_8", "person": "1pl_excl", "printed": "siratkuraaha", "variants": ["siratkuraaha"], "verb": "to have it"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_8", "person": "2pl", "printed": "siraskuraaha", "variants": ["siraskuraaha"], "verb": "to have it"}
+{"mode": "infinitive_perfective_subordinate", "page": "page_8", "person": "3pl", "printed": "sirihkuraaha", "variants": ["sirihkuraaha"], "verb": "to have it"}

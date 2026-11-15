@@ -3,20 +3,43 @@
 Phase 3.2b — Person/Mode Derivation from Attested Paradigm Forms
 =================================================================
 
-Derives verb forms the dictionary does not list (2nd person, absolutive mode)
-from the forms it DOES list, instead of conjugating from scratch.
+Makes a few verb forms the dictionary does not print ("you", and the question
+forms) by changing the start of a form it does print. Used by the sentence
+builder of the local app, nowhere else.
 
-WHY: the from-scratch engine (morpheme_inventory.conjugate) reproduces only
-14.8% of attested dictionary forms exactly — dictionary-wide morphophonology
-is too irregular to rebuild. But the attested forms already encode almost all
-of it. The person/mode prefixes sit at the LEFT EDGE and alternate in a small,
-regular paradigm (Parks App. 1):
+EVERY FORM THIS FILE MAKES IS DERIVED, NOT ATTESTED. Show it only with the
+words of DERIVED_LABEL beside it, never store it in a table or file of copied
+forms, and never put it on the public site. No accent is given: the rules work
+on forms without their accents.
+
+Repaired on 2026-11-14 (engines review, decision 6). What changed, and why:
+
+  * Three rules for the "he/she" question form were built on misread forms
+    and are gone: tii- to rii- (from the OCR slip "Ka rii hitu'?"; the scan
+    reads "Ka rú hitu'?"), tuu- to ru- for uur- verbs and tih- to riih- (both
+    from misread cells of Appendix 1). On verbs the rules never saw they
+    agreed with the dictionary's own form 4 for 29 of 465.
+  * The "I" form it used to invent for descriptive verbs that print none
+    (tiku + stem, for 184 verbs) is gone. Parks says some classes lack some
+    forms. Where no form 1 is printed, no first or second person is given.
+  * The present and future of "I" and "you" are gone. No source prints such
+    a paradigm: Appendix 1 has only perfective forms.
+  * A rule for the "he/she" question form is in force only if it earned its
+    place: see THIRD_PERSON_RULES, where each rule carries what it scored on
+    the open half of the test (reports/engines_review/person_forms_repair.md).
+  * --validate-appendix fails on any mismatch.
+
+It is NOT to be extended to plurals, the negative or other modes until
+someone who knows the language has looked at what it gives now.
+
+The rules that remain. The person and mode prefixes sit at the left edge
+(Parks, Appendix 1):
 
     mode:   indicative ta-/ti-     absolutive ra-/ri-  (swap initial t -> r)
     agent:  1.A t      2.A s       3.A Ø               (swap t -> s for 2sg)
 
-Junctions with the stem-initial segment are the only complication, and they
-are recoverable by aligning attested form_1 (1sg IND) with form_2 (3sg IND):
+Junctions with the stem-initial segment are recovered by aligning the printed
+form 1 (1sg IND) with the printed form 2 (3sg IND):
 
     3sg ti+X    1sg tat+X     2sg tas+X       (plain consonant stems)
     3sg tir+X   1sg tah+X     2sg tast+X      (r-stems: t+r->h, s+r->st)
@@ -25,18 +48,19 @@ are recoverable by aligning attested form_1 (1sg IND) with form_2 (3sg IND):
     3sg ti+tX   1sg tac+tX    2sg tas+tX      (t-stems: t+t->ct, s+t->st)
     3sg tu+X    1sg tatu+X    2sg tasu+X      (ut-preverb: coalesced tu-)
 
-Validation: --validate-appendix derives 2sg + absolutive forms for the seven
-Appendix 1 paradigm verbs and compares against Parks's attested answers.
+For the "you" forms there is no test on unseen verbs: only Appendix 1 prints
+a second person, and the rules were read from it.
 
 Usage:
     python scripts/person_forms.py --validate-appendix
     python scripts/person_forms.py --derive tactakacat titakacat takacat
 
 Library:
-    from person_forms import derive_forms
+    from person_forms import derive_forms, PRINTED, DERIVED_LABEL
     d = derive_forms(form_1="tactakacat", form_2="titakacat", headword="takacat")
-    d["2sg_ind"]   # 'tastakacat'  "you fetched water"
-    d["3sg_abs"]   # 'ratakacat'   for 'ka ratakacat ...?' questions
+    d["2sg_ind"]   # 'tastakacat'  derived
+    d["3sg_abs"]   # 'ratakacat'   derived, for 'ka ratakacat ...?' questions
+    "2sg_ind" in PRINTED      # False: show DERIVED_LABEL beside it
 """
 
 import argparse
@@ -48,6 +72,65 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 APPENDIX1 = ROOT / 'extracted_data' / 'appendix1_conjugations.json'
+
+# What must stand beside every form this file makes, wherever it is shown.
+DERIVED_LABEL = "derived; not checked against a printed form"
+
+# The keys of derive_forms() whose value is a printed form of the dictionary (the number of the form), given
+# back without its accent. Show the printed form itself, from the table paradigmatic_forms. Every other key
+# is derived.
+PRINTED = {'1sg_ind': 1, '3sg_ind': 2, '3sg_ind_impf': 3, '3sg_ind_int': 5}
+
+# ---------------------------------------------------------------------------
+# The question form for "he/she": which start of form 2 becomes which start
+# ---------------------------------------------------------------------------
+# Each rule: (name, how the open half of the test judged it, in force?). The open half is the 1,065 verbs
+# with an odd entry number; a rule is tested against the start of the dictionary's printed form 4.
+#
+# Two sets were fixed before the sealed half was opened (reports/engines_review/data/person_forms_plan.json):
+#   "narrow"  the repair as the decision paper lists it: the three misread rules out, the others kept;
+#   "strict"  only the rules that hold for 97% of the open verbs they cover, with twenty or more of them.
+# POLICY says which is in force. It was set by the rule written in the plan, after the one opening of the
+# sealed half; the result is in reports/engines_review/person_forms_repair.md.
+THIRD_PERSON_RULES = [
+    # name                                         open half                      narrow  strict
+    ("tih- with a headword in h-: ti- to ra-",     "86 of 87 (98.9%)",            True,   True),
+    ("tih-, other headwords: no rule",             "2 verbs; none can be read",   False,  False),
+    ("tii-: no rule",                              "best guess 137 of 184 (74.5%)", False, False),
+    ("tiʔ- to raʔ-",                               "25 of 29 (86.2%)",            True,   False),
+    ("tu- to ru-",                                 "211 of 223 (94.6%)",          True,   False),
+    ("ti- to ra-",                                 "464 of 470 (98.7%)",          True,   True),
+]
+POLICY = "narrow"
+
+
+def third_person_question_form(form_2, stem_preverb=None, headword=None, policy=None):
+    """(name of the rule, the question form for "he/she" or None) from the printed form 2.
+
+    None when no rule in force covers the verb: the caller must then show no form, not a guess.
+    stem_preverb is taken for the sake of the callers; no rule in force reads it.
+    """
+    column = 3 if (policy or POLICY) == "strict" else 2
+    in_force = {rule[0] for rule in THIRD_PERSON_RULES if rule[column]}
+    if not form_2:
+        return "no form 2", None
+    f = strip_accents(primary_form(form_2))
+    if f.startswith('tih'):
+        if headword and strip_accents(headword).startswith('h'):
+            name, form = "tih- with a headword in h-: ti- to ra-", 'ra' + f[2:]
+        else:
+            name, form = "tih-, other headwords: no rule", None
+    elif f.startswith('tii'):
+        name, form = "tii-: no rule", None
+    elif f.startswith('tiʔ'):
+        name, form = "tiʔ- to raʔ-", 'raʔ' + f[3:]
+    elif f.startswith('tu'):
+        name, form = "tu- to ru-", 'ru' + f[2:]
+    elif f.startswith('ti'):
+        name, form = "ti- to ra-", 'ra' + f[2:]
+    else:
+        return "form 2 begins %s-: no rule" % f[:2], None
+    return name, (form if name in in_force else None)
 
 
 # ---------------------------------------------------------------------------
@@ -134,20 +217,15 @@ def derive_2sg_ind(form_1, form_2):
 
 def to_absolutive(ind_form, third_person=False, stem_preverb=None,
                   headword=None):
-    """Indicative -> absolutive, for ka/kirike/kiru questions.
+    """Indicative -> absolutive, for ka/kirike/kiru questions. A derived form, or None.
 
     1st/2nd person: the mode vowel matches (ta-/ra-), so the swap is the
     initial t -> r (App.1: tatkiikaʔ -> ratkiikaʔ, taskiikaʔ -> raskiikaʔ),
-    with descriptive-ku 1sg tiku- -> riiku-.
+    with descriptive-ku 1sg tiku- -> riiku- (App.1: riikukiraawaʔ).
 
-    3rd person: IND mode is ti- but ABS mode is ra-, so shapes differ:
-        ti+C  -> ra+C      (tikiikaʔ -> rakiikaʔ, tiraa -> raraa)
-        tiʔ+V -> raʔ+V     (tiʔat -> raʔat)
-        tih-  -> riih-     (descriptive-ku: tihkiraawaʔ -> riihkiraawaʔ)
-        tii-  -> rii-      (BB: 'Ka rii hituʔ?')
-        tu-   -> ru-       (ut-preverb: tuutaa -> ruutaa; BB 'rutærit')
-        tuu-  -> ru-       when the preverb is uur- (tuuhii -> ruhii)
-        ta-   -> None      (ir-preverb 3sg; not derivable by prefix swap)
+    3rd person: IND mode is ti- but ABS mode is ra-, so the shapes differ and
+    each has its own rule: see THIRD_PERSON_RULES. Where no rule is in force
+    the answer is None.
     """
     if not ind_form:
         return None
@@ -162,60 +240,28 @@ def to_absolutive(ind_form, third_person=False, stem_preverb=None,
             return 'r' + f[1:]
         return None
 
-    # --- third person ---
-    # 'tih-' is ambiguous: descriptive-ku marker (tihkiraawaʔ -> riih-) vs an
-    # h-initial stem (tihuraas = ti+huraas -> ra+huraas). The headword tells.
-    if f.startswith('tih'):
-        if headword and strip_accents(headword).startswith('h'):
-            return 'ra' + f[2:]
-        return 'riih' + f[3:]
-    if f.startswith('tii'):
-        return 'rii' + f[3:]
-    if f.startswith('tiʔ'):
-        return 'raʔ' + f[3:]
-    if f.startswith('tuu') and stem_preverb and 'uur' in stem_preverb:
-        return 'ru' + f[3:]
-    if f.startswith('tu'):
-        return 'ru' + f[2:]
-    if f.startswith('ti'):
-        return 'ra' + f[2:]
-    return None    # ta- (ir-preverb) and other shapes: not derivable
+    return third_person_question_form(f, stem_preverb=stem_preverb, headword=headword)[1]
 
 
 def derive_forms(form_1=None, form_2=None, form_3=None, form_5=None,
                  headword=None, stem_preverb=None, gram_class=None):
-    """Derive the person/mode forms the sentence builder needs.
+    """The person and mode forms the sentence builder may show for one verb.
 
-    Inputs are the attested dictionary paradigm forms:
+    Inputs are the printed forms of the dictionary entry:
       form_1 = 1sg IND PERF, form_2 = 3sg IND PERF,
       form_3 = 3sg IND IMPF, form_5 = 3sg IND INTENTIVE (future)
 
-    Returns dict of derived surface forms (values None when underivable):
-      1sg_ind / 2sg_ind / 3sg_ind          (perfective, "past")
-      3sg_ind_impf                          (attested passthrough, "present")
-      3sg_ind_int                           (attested passthrough, "future")
-      1sg_abs / 2sg_abs / 3sg_abs           (absolutive, for questions)
-    Every returned form is either attested verbatim or a single left-edge
-    prefix swap away from an attested form.
+    Returns a dict; a value is None where no form can be given:
+      1sg_ind, 3sg_ind, 3sg_ind_impf, 3sg_ind_int   printed forms, given back without their accent (PRINTED)
+      2sg_ind                                       derived from the printed form 1
+      1sg_abs, 2sg_abs, 3sg_abs                     derived question forms
+    Where the entry prints no form 1, no first or second person is given: none is made up.
+    gram_class is taken for the sake of the callers; nothing reads it any more.
     """
     f1 = strip_accents(primary_form(form_1)) if form_1 else None
     f2 = strip_accents(primary_form(form_2)) if form_2 else None
     f3 = strip_accents(primary_form(form_3)) if form_3 else None
     f5 = strip_accents(primary_form(form_5)) if form_5 else None
-
-    # Descriptive verbs (VD/VL, no preverb) list no form_1 — they mark person
-    # with the descriptive-ku system directly on form_2's stem:
-    #   3sg ti+STEM   1sg ti+ku+STEM   2sg ta+STEM   (App.1 'to be sick')
-    primary_gc = (gram_class or '').split(',')[0].strip()
-    is_desc = (primary_gc in ('VD', 'VL') and not stem_preverb)
-    if (not f1 and is_desc and f2 and f2.startswith('ti')
-            and not f2.startswith(('tir', 'tii', 'tiʔ'))):
-        stem_part = f2[2:]
-        # only when form_2 is transparently ti+STEM (stem must echo the
-        # headword's first letter — filters out tih- person-marker shapes)
-        hw0 = strip_accents(headword or '')[:1].lower()
-        if stem_part and hw0 and stem_part[0].lower() == hw0:
-            f1 = 'tiku' + stem_part
 
     two_sg = derive_2sg_ind(f1, f2)
     desc_ku = bool(f1 and f1.startswith('tiku'))
@@ -225,33 +271,11 @@ def derive_forms(form_1=None, form_2=None, form_3=None, form_5=None,
     else:
         two_sg_abs = to_absolutive(two_sg)
 
-    # Prefix transplant: form_3 (IMPF, "present") and form_5 (INTENTIVE,
-    # "future") carry the same 3sg prefix shape as form_2, so swapping in the
-    # 1sg/2sg prefix learned from the form_1/form_2 alignment yields the
-    # other persons in those aspects (tac|takacat -> tac|takacuhta).
-    p_1sg = p_3sg = None
-    if f1 and f2:
-        p_1sg, p_3sg, _ = _common_suffix_split(f1, f2)
-
-    def transplant_1sg(target):
-        """Move the (attested) 1sg prefix onto an aspect variant of form_2."""
-        if not (target and p_1sg is not None and p_3sg is not None
-                and target.startswith(p_3sg) and len(p_1sg) <= 8):
-            return None
-        return p_1sg + target[len(p_3sg):]
-
-    f3_1sg = transplant_1sg(f3)
-    f5_1sg = transplant_1sg(f5)
-
     return {
         '1sg_ind': f1,
         '2sg_ind': two_sg,
         '3sg_ind': f2,
-        '1sg_ind_impf': f3_1sg,
-        '2sg_ind_impf': derive_2sg_ind(f3_1sg, f3),
         '3sg_ind_impf': f3,
-        '1sg_ind_int': f5_1sg,
-        '2sg_ind_int': derive_2sg_ind(f5_1sg, f5),
         '3sg_ind_int': f5,
         '1sg_abs': to_absolutive(f1),
         '2sg_abs': two_sg_abs,
@@ -334,7 +358,7 @@ def main():
 
     if args.validate_appendix:
         _, failed, _ = validate_appendix()
-        sys.exit(1 if failed > 3 else 0)
+        sys.exit(1 if failed else 0)
     elif args.derive:
         f1, f2, hw = args.derive
         d = derive_forms(form_1=f1, form_2=f2, headword=hw)

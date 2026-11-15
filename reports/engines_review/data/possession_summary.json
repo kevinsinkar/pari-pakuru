@@ -1,0 +1,826 @@
+{
+ "A_combining_forms": {
+  "by_what_the_engine_strips": {
+   "-kis": {
+    "not a printed combining form": 5,
+    "one of the printed combining forms": 1
+   },
+   "-kusuʔ": {
+    "not a printed combining form": 1,
+    "one of the printed combining forms": 1
+   },
+   "-uʔ": {
+    "not a printed combining form": 138,
+    "one of the printed combining forms": 128
+   },
+   "nothing": {
+    "not a printed combining form": 112,
+    "one of the printed combining forms": 22
+   }
+  },
+  "examples_not_a_combining_form": [
+   {
+    "engine_stem": "aahkucu",
+    "headword": "aahkucuuʔ",
+    "printed": [
+     "aahkucuu"
+    ]
+   },
+   {
+    "engine_stem": "aciks",
+    "headword": "aciks-",
+    "printed": [
+     "(a)ciks"
+    ]
+   },
+   {
+    "engine_stem": "ahictarahaataakaa",
+    "headword": "ahictarahaataakaa",
+    "printed": [
+     "ahictarahaataakaar",
+     "ahictarahaataakaah"
+    ]
+   },
+   {
+    "engine_stem": "ahictarahaʔ",
+    "headword": "ahictarahaʔ",
+    "printed": [
+     "ahictarahaa"
+    ]
+   },
+   {
+    "engine_stem": "ahictarariit",
+    "headword": "ahictarariituʔ",
+    "printed": [
+     "ahictararit"
+    ]
+   },
+   {
+    "engine_stem": "ahitki",
+    "headword": "ahitki",
+    "printed": [
+     "ahiht",
+     "ahit",
+     "ahic",
+     "ahih"
+    ]
+   },
+   {
+    "engine_stem": "akahaaruut",
+    "headword": "akahaaruutuʔ",
+    "printed": [
+     "akahaarut"
+    ]
+   },
+   {
+    "engine_stem": "akahkirawaʔac",
+    "headword": "akahkirawaʔac",
+    "printed": [
+     "akahkirawaac"
+    ]
+   },
+   {
+    "engine_stem": "akahkiripahki",
+    "headword": "akahkiripahki",
+    "printed": [
+     "akahkiripah"
+    ]
+   },
+   {
+    "engine_stem": "akahtapiʔ",
+    "headword": "akahtapiʔ",
+    "printed": [
+     "akahtapir",
+     "akahtapih"
+    ]
+   },
+   {
+    "engine_stem": "akaraahuuruuht",
+    "headword": "akaraahuuruuhtuʔ",
+    "printed": [
+     "akaraahuuruht",
+     "akaraahuurut"
+    ]
+   },
+   {
+    "engine_stem": "apar",
+    "headword": "aparuʔ",
+    "printed": [
+     "aparuu"
+    ]
+   },
+   {
+    "engine_stem": "apu",
+    "headword": "apuuʔ",
+    "printed": [
+     "apu(u)"
+    ]
+   },
+   {
+    "engine_stem": "Arahu",
+    "headword": "Arahuuʔ",
+    "printed": [
+     "arahuu"
+    ]
+   },
+   {
+    "engine_stem": "arastarariit",
+    "headword": "arastarariituʔ",
+    "printed": [
+     "arastararit"
+    ]
+   },
+   {
+    "engine_stem": "arikarahkucu",
+    "headword": "arikarahkucuuʔ",
+    "printed": [
+     "arikarahkucuu"
+    ]
+   },
+   {
+    "engine_stem": "arikiisiriʔ",
+    "headword": "arikiisiriʔ",
+    "printed": [
+     "arikiis"
+    ]
+   },
+   {
+    "engine_stem": "arikiriʔic",
+    "headword": "arikiriʔic",
+    "printed": [
+     "arikiriic"
+    ]
+   },
+   {
+    "engine_stem": "arikta",
+    "headword": "arikta",
+    "printed": [
+     "ariktaa"
+    ]
+   },
+   {
+    "engine_stem": "arikucu",
+    "headword": "arikucuuʔ",
+    "printed": [
+     "arikucuu"
+    ]
+   },
+   {
+    "engine_stem": "aruusaʔ",
+    "headword": "aruusaʔ",
+    "printed": [
+     "aruusaa"
+    ]
+   },
+   {
+    "engine_stem": "asaac",
+    "headword": "asaac",
+    "printed": [
+     "asahc"
+    ]
+   },
+   {
+    "engine_stem": "asaaki",
+    "headword": "asaaki",
+    "printed": [
+     "asaakisu"
+    ]
+   },
+   {
+    "engine_stem": "asaar",
+    "headword": "asaaruʔ",
+    "printed": [
+     "(a)saar",
+     "(a)saah"
+    ]
+   },
+   {
+    "engine_stem": "asaataat",
+    "headword": "asaataatuʔ",
+    "printed": [
+     "asaatat"
+    ]
+   },
+   {
+    "engine_stem": "asaawakiʔ",
+    "headword": "asaawakiʔ",
+    "printed": [
+     "asaawakih"
+    ]
+   },
+   {
+    "engine_stem": "asiihariʔ",
+    "headword": "asiihariʔ",
+    "printed": [
+     "asiiharir",
+     "asiiharih"
+    ]
+   },
+   {
+    "engine_stem": "askatahciriʔ",
+    "headword": "askatahciriʔ",
+    "printed": [
+     "askatahc",
+     "askatac"
+    ]
+   },
+   {
+    "engine_stem": "askiispat",
+    "headword": "askiispatuʔ",
+    "printed": [
+     "askiispatuu"
+    ]
+   },
+   {
+    "engine_stem": "aspiit",
+    "headword": "aspiituʔ",
+    "printed": [
+     "aspit"
+    ]
+   }
+  ],
+  "nouns_with_a_printed_combining_form": 408,
+  "result": {
+   "not a printed combining form": 256,
+   "one of the printed combining forms": 152
+  }
+ },
+ "A_stems": {
+  "nouns_with_an_etymology_in_pieces": 1350,
+  "suffix": {
+   "Parks has -hiriʔ; engine strips nothing": 11,
+   "Parks has -kat; engine strips nothing": 1,
+   "Parks has -kis; engine strips nothing": 37,
+   "Parks has -ru; engine strips nothing": 3,
+   "agree: -kis": 9,
+   "agree: -uʔ": 650,
+   "agree: no suffix": 558,
+   "engine strips -kis; Parks's analysis ends in another piece": 4,
+   "engine strips -kusuʔ; Parks has -uʔ": 22,
+   "engine strips -uʔ; Parks's analysis ends in another piece": 55
+  }
+ },
+ "B_suffix_words": {
+  "app_gives_the_attested_word": 4,
+  "app_rows": [
+   {
+    "asked_for": "hukaatahaaruʔ",
+    "attested": "hukaatahaahiriʔ",
+    "matches": true,
+    "offered": {
+     "instrumental": "hukaatahaahiriʔ",
+     "locative": "hukaatahaahkat"
+    }
+   },
+   {
+    "asked_for": "itkatahaaruʔ",
+    "attested": "itkatahaahiriʔ",
+    "matches": true,
+    "offered": {
+     "instrumental": "itkatahaahiriʔ",
+     "locative": "itkatahaahkat"
+    }
+   },
+   {
+    "asked_for": "kiihaaruʔ",
+    "attested": "kiihaahiriʔ",
+    "matches": true,
+    "offered": {
+     "instrumental": "kiihaahiriʔ",
+     "locative": "kiihaahkat"
+    }
+   },
+   {
+    "asked_for": "kiriwisuʔ",
+    "attested": "kiriwisiriʔ",
+    "matches": true,
+    "offered": {
+     "instrumental": "kiriwisiriʔ",
+     "locative": "kiriwiskat"
+    }
+   },
+   {
+    "asked_for": "kskiitiʔiks",
+    "attested": "kskiitiksiriʔ",
+    "matches": false,
+    "offered": {
+     "instrumental": "kskiitiʔiksiriʔ",
+     "locative": "kskiitiʔikskat"
+    }
+   },
+   {
+    "asked_for": "ritpiraahcuʔ, piraahcuʔ",
+    "attested": "ritpiraahciriʔ",
+    "matches": false,
+    "offered": {
+     "instrumental": "ritpiraahcuʔ, piraahciriʔ",
+     "locative": "ritpiraahcuʔ, piraahckat"
+    }
+   }
+  ],
+  "asked_through_the_app": 6,
+  "from_parks_stem": {
+   "hiriʔ": {
+    "exact": 29,
+    "other letters, within two": 9,
+    "vowel length and glottal stop": 1,
+    "vowel length only": 1
+   },
+   "kat": {
+    "exact": 10,
+    "other letters, further off": 1,
+    "other letters, within two": 3
+   },
+   "ru": {
+    "exact": 2,
+    "vowel length only": 1
+   }
+  },
+  "words": 57,
+  "words_with_a_plain_noun_in_the_dictionary": 6
+ },
+ "C_page_30": [
+  {
+   "class": "N",
+   "engine_gives": "ikskat",
+   "gloss": "by hand; on the hand",
+   "headword": "iksuʔ",
+   "offered": {
+    "instrumental": "iksiriʔ",
+    "locative": "ikskat"
+   },
+   "printed": "iksiriʔ",
+   "result": "other letters, further off",
+   "system": "agent"
+  },
+  {
+   "class": "N",
+   "engine_gives": null,
+   "gloss": "with the hands; on the hands",
+   "headword": "iksuʔ",
+   "offered": {
+    "instrumental": "iksiriʔ",
+    "locative": "ikskat"
+   },
+   "printed": "ikstaaririʔ",
+   "result": "no such form offered",
+   "system": "agent"
+  },
+  {
+   "class": "N",
+   "engine_gives": "Sahikat",
+   "gloss": "in Cheyenne country",
+   "headword": "Sahi",
+   "offered": {
+    "instrumental": "Sahihiriʔ",
+    "locative": "Sahikat"
+   },
+   "printed": "sahiiru",
+   "result": "other letters, further off",
+   "system": "agent"
+  },
+  {
+   "class": "N",
+   "engine_gives": "Ukaahpaakat",
+   "gloss": "among the Quapaw",
+   "headword": "Ukaahpaa",
+   "offered": {
+    "instrumental": "Ukaahpaahiriʔ",
+    "locative": "Ukaahpaakat"
+   },
+   "printed": "uukaahpaawiru",
+   "result": "other letters, further off",
+   "system": "agent"
+  },
+  {
+   "class": "N",
+   "engine_gives": "Riihitawiru",
+   "gloss": "among the Ponca",
+   "headword": "Riihita",
+   "offered": {
+    "instrumental": "Riihitahiriʔ",
+    "locative": "Riihitawiru"
+   },
+   "printed": "riihitawiru",
+   "result": "exact",
+   "system": "agent"
+  },
+  {
+   "class": "N",
+   "engine_gives": "akaahkat",
+   "gloss": "on the dwelling",
+   "headword": "akaaruʔ",
+   "offered": {
+    "instrumental": "akaaririʔ",
+    "locative": "akaahkat"
+   },
+   "printed": "akahkat",
+   "result": "vowel length only",
+   "system": "agent"
+  },
+  {
+   "gloss": "among the horses",
+   "headword": "asaa-",
+   "printed": "asaakat",
+   "result": "no such noun headword"
+  }
+ ],
+ "D_kinship": {
+  "agree_with_appendix_3": 9,
+  "found_in_appendix_3": 13,
+  "in_appendix_3_and_differ": [
+   {
+    "agrees": false,
+    "appendix_3": {
+     "1sg": "iraactiʔ",
+     "2sg": "araac",
+     "3sg": "iraactiʔ"
+    },
+    "engine": {
+     "1sg": "kti ratiru raac",
+     "2sg": "kti rasiru raac",
+     "3sg": "kti rau raac"
+    },
+    "headword": "-raac-",
+    "in_appendix_3": true,
+    "system_used": "agent"
+   },
+   {
+    "agrees": false,
+    "appendix_3": {
+     "1sg": "iraariʔ",
+     "2sg": "ara",
+     "3sg": "iraariʔ"
+    },
+    "engine": {
+     "1sg": "kti ratiru raar",
+     "2sg": "kti rasiru raar",
+     "3sg": "kti rau raar"
+    },
+    "headword": "-raar-",
+    "in_appendix_3": true,
+    "system_used": "agent"
+   },
+   {
+    "agrees": false,
+    "appendix_3": {
+     "1sg": "itaahiʔ",
+     "2sg": "ataat",
+     "3sg": "itaahiʔ"
+    },
+    "engine": {
+     "1sg": "kti ratiru taat",
+     "2sg": "kti rasiru taat",
+     "3sg": "kti rau taat"
+    },
+    "headword": "-taat-",
+    "in_appendix_3": true,
+    "system_used": "agent"
+   },
+   {
+    "agrees": false,
+    "appendix_3": {
+     "1sg": "tiwaciriks",
+     "2sg": "paciriks",
+     "3sg": "iwariiriks"
+    },
+    "engine": {
+     "1sg": "kti ratiru waciriks",
+     "2sg": "kti rasiru waciriks",
+     "3sg": "kti rau waciriks"
+    },
+    "headword": "-waciriks",
+    "in_appendix_3": true,
+    "system_used": "agent"
+   }
+  ],
+  "kin_nouns_in_the_dictionary": 21,
+  "not_in_appendix_3": [
+   {
+    "headword": "-aas-",
+    "my": "kti ratiru aas",
+    "system_used": "agent"
+   },
+   {
+    "headword": "-kaa-",
+    "my": "kti ratiru kaa",
+    "system_used": "agent"
+   },
+   {
+    "headword": "-paak-",
+    "my": "kti ratiru paak",
+    "system_used": "agent"
+   },
+   {
+    "headword": "-raa",
+    "my": "kti ratiru raa",
+    "system_used": "agent"
+   },
+   {
+    "headword": "-rakis",
+    "my": "kti ratiru rakis",
+    "system_used": "agent"
+   },
+   {
+    "headword": "-saas-",
+    "my": "kti ratiru saas",
+    "system_used": "agent"
+   },
+   {
+    "headword": "-waat-",
+    "my": "kti ratiru waat",
+    "system_used": "agent"
+   },
+   {
+    "headword": "-wariiriks",
+    "my": "kti ratiru wariiriks",
+    "system_used": "agent"
+   }
+  ],
+  "system_used": {
+   "agent": 12,
+   "kinship": 9
+  }
+ },
+ "E_blue_book": [
+  {
+   "blue_book_prints": "Ti rit•páks•ku.",
+   "book_page": 22,
+   "engine_gives": "tiritpaksku",
+   "english": "Here is my head.",
+   "first_word_blue_book": "Ti",
+   "first_word_engine": "tiritpaksku",
+   "same_letters": true,
+   "same_letters_once_long_vowels_are_written_short": true
+  },
+  {
+   "blue_book_prints": "Ti rit•kírik•ta.",
+   "book_page": 22,
+   "engine_gives": "tiritkirikta",
+   "english": "Here is my eye.",
+   "first_word_blue_book": "Ti",
+   "first_word_engine": "tiritkirikta",
+   "same_letters": true,
+   "same_letters_once_long_vowels_are_written_short": true
+  },
+  {
+   "blue_book_prints": "kú•ratir•u paks•kúku'",
+   "book_page": 35,
+   "engine_gives": "kti ratiru pakskuukuʔuʔ",
+   "english": "my hat",
+   "first_word_blue_book": "kú•ratir•u",
+   "first_word_engine": "kti",
+   "same_letters": false,
+   "same_letters_once_long_vowels_are_written_short": false
+  },
+  {
+   "blue_book_prints": "kú•rasir•u paks•kúku'",
+   "book_page": 35,
+   "engine_gives": "kti rasiru pakskuukuʔuʔ",
+   "english": "your hat",
+   "first_word_blue_book": "kú•rasir•u",
+   "first_word_engine": "kti",
+   "same_letters": false,
+   "same_letters_once_long_vowels_are_written_short": false
+  },
+  {
+   "blue_book_prints": "kú•ra•u paks•kúku'",
+   "book_page": 35,
+   "engine_gives": "kti rau pakskuukuʔuʔ",
+   "english": "his hat",
+   "first_word_blue_book": "kú•ra•u",
+   "first_word_engine": "kti",
+   "same_letters": false,
+   "same_letters_once_long_vowels_are_written_short": false
+  }
+ ],
+ "F_api": {
+  "answer": {
+   "agent": 1671,
+   "body_part": 19,
+   "kinship": 9,
+   "not a noun (the route found another entry with this spelling first)": 7
+  },
+  "answered_for_another_entry_of_the_same_spelling": 12,
+  "body_part_forms_with_the_default_verb_hanging": 19,
+  "marked_attested": 1680,
+  "marked_attested_by_system": {
+   "agent": 1671,
+   "kinship": 9
+  },
+  "my_form_begins_kti": 1671,
+  "noun_rows": 1706,
+  "nouns_tagged_animal_kin_or_person_served": 496,
+  "stripped": {
+   "-kis": 15,
+   "-kusuʔ": 27,
+   "-uʔ": 775,
+   "nothing": 882
+  },
+  "treated_as_a_tribe_and_gloss_names_a_tribe_or_people": 3,
+  "treated_as_a_tribe_examples_that_are_not": [
+   {
+    "gloss": "fourteen",
+    "headword": "rakukita",
+    "locative": "rakukitawiru"
+   },
+   {
+    "gloss": "automobile, car.",
+    "headword": "ariisit rawarii",
+    "locative": "ariisit rawariiru"
+   },
+   {
+    "gloss": "male horse.",
+    "headword": "asawiita",
+    "locative": "asawiitawiru"
+   },
+   {
+    "gloss": "eleven.",
+    "headword": "askuhuukita",
+    "locative": "askuhuukitawiru"
+   },
+   {
+    "gloss": "passenger train.",
+    "headword": "caahiks-rararuuwarii",
+    "locative": "caahiks-rararuuwariiru"
+   },
+   {
+    "gloss": "rooster, cock.",
+    "headword": "cikirihpiita",
+    "locative": "cikirihpiitawiru"
+   },
+   {
+    "gloss": "striped prairie squirrel, ground squirrel (Thirteen-lined Gr",
+    "headword": "ckiiskararii",
+    "locative": "ckiiskarariiru"
+   },
+   {
+    "gloss": "flying squirrel (Southern Flying Squirrel, Glaucomys volans)",
+    "headword": "ckipis raawarii",
+    "locative": "ckipis raawariiru"
+   },
+   {
+    "gloss": "male calf.",
+    "headword": "hariwiita",
+    "locative": "hariwiitawiru"
+   },
+   {
+    "gloss": "mole (Scalopus aquaticus).",
+    "headword": "huraaririʔ rakaawarii",
+    "locative": "huraaririʔ rakaawariiru"
+   },
+   {
+    "gloss": "waitress; waiter.",
+    "headword": "iriiraraakaaruurarikaawarii",
+    "locative": "iriiraraakaaruurarikaawariiru"
+   },
+   {
+    "gloss": "mail carrier.",
+    "headword": "iriirarariihuuraruuwarii, rarariihuuraruuwarii",
+    "locative": "iriirarariihuuraruuwarii, rarariihuuraruuwariiru"
+   },
+   {
+    "gloss": "carpenter.",
+    "headword": "kaapita",
+    "locative": "kaapitawiru"
+   },
+   {
+    "gloss": "last child, as the last born.",
+    "headword": "kaawita",
+    "locative": "kaawitawiru"
+   },
+   {
+    "gloss": "North Star, Polaris.",
+    "headword": "Karariiwarii",
+    "locative": "Karariiwariiru"
+   },
+   {
+    "gloss": "little finger, pinky.",
+    "headword": "kskiicpita",
+    "locative": "kskiicpitawiru"
+   },
+   {
+    "gloss": "roach hair-style, hair cut in a roach, a style favored by Pa",
+    "headword": "pakspasaasi",
+    "locative": "pakspasaasiru"
+   },
+   {
+    "gloss": "biscuit, sea biscuit.",
+    "headword": "piiskita",
+    "locative": "piiskitawiru"
+   },
+   {
+    "gloss": "lantern, flashlight.",
+    "headword": "rakiikaruuwarii",
+    "locative": "rakiikaruuwariiru"
+   },
+   {
+    "gloss": "fourteen.",
+    "headword": "rakuukita",
+    "locative": "rakuukitawiru"
+   },
+   {
+    "gloss": "newspaper.",
+    "headword": "raraaʔiitustaruuwarii",
+    "locative": "raraaʔiitustaruuwariiru"
+   },
+   {
+    "gloss": "airplane.",
+    "headword": "raraarawarii",
+    "locative": "raraarawariiru"
+   },
+   {
+    "gloss": "mail carrier.",
+    "headword": "rarariihuuraruuwarii, iriirarariihuuraruuwarii",
+    "locative": "rarariihuuraruuwarii, iriirarariihuuraruuwariiru"
+   },
+   {
+    "gloss": "leader, war leader, leader of a war party.",
+    "headword": "riihkita",
+    "locative": "riihkitawiru"
+   },
+   {
+    "gloss": "Osage corn, a red variety obtained from the Osages.",
+    "headword": "rikiispasaasi",
+    "locative": "rikiispasaasiru"
+   }
+  ],
+  "treated_as_a_tribe_or_place": 31,
+  "with_an_instrumental": 1678,
+  "with_an_instrumental_and_tagged_animal_kin_or_person": 475,
+  "with_an_instrumental_tagged_animal": 283
+ },
+ "F_first_flashcard_weeks": {
+  "answer": {
+   "agent": 34,
+   "kinship": 2
+  },
+  "marked_attested": 36,
+  "my_form_begins_kti": 34,
+  "nouns": 36
+ },
+ "G_case_examples": {
+  "by_result": {
+   "exact": 300,
+   "glottal stop only": 61,
+   "other letters, further off": 105,
+   "other letters, within two": 94,
+   "the app answers 'not a noun'": 2,
+   "vowel length and glottal stop": 9,
+   "vowel length only": 104
+  },
+  "by_suffix": {
+   "hiriʔ": {
+    "by_result": {
+     "exact": 84,
+     "other letters, further off": 28,
+     "other letters, within two": 40,
+     "the app answers 'not a noun'": 1,
+     "vowel length and glottal stop": 1,
+     "vowel length only": 17
+    },
+    "exact": 84,
+    "forms": 171
+   },
+   "kat": {
+    "by_result": {
+     "exact": 215,
+     "glottal stop only": 61,
+     "other letters, further off": 64,
+     "other letters, within two": 53,
+     "the app answers 'not a noun'": 1,
+     "vowel length and glottal stop": 8,
+     "vowel length only": 87
+    },
+    "exact": 215,
+    "forms": 489
+   },
+   "ru": {
+    "by_result": {
+     "exact": 1,
+     "other letters, further off": 13,
+     "other letters, within two": 1
+    },
+    "exact": 1,
+    "forms": 15
+   }
+  },
+  "exact": 300,
+  "forms": 680,
+  "headword_is_two_spellings_or_has_a_dash": 22,
+  "hiri_forms_by_parks_meaning": {
+   "instrument (with, by)": 54,
+   "place (in, on, among)": 117
+  },
+  "hiri_forms_right_and_offered_as": {
+   "instrument (with, by) -> offered as instrumental": 21,
+   "place (in, on, among) -> offered as instrumental": 63
+  },
+  "kat_words_for_which_the_engine_offers_another_suffix": {},
+  "nouns": 609,
+  "of_those_exact": 1,
+  "printed_hiri_forms_under_a_noun_tagged_animal": 13,
+  "printed_instrument_forms_under_a_noun_tagged_animal": 6,
+  "used": 675
+ }
+}

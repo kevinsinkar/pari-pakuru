@@ -1,0 +1,20 @@
+remove_engine_output — decision 3 — APPLY — 2026-11-14 17:30
+  drop table morpheme_inventory (37 rows)
+  drop table verb_template_slots (27 rows)
+  backup: OneDrive/pari_pakuru_backups/skiri_pawnee_backup_20261114_173047_engines_decision3.db
+
+remove_engine_output — decision 5 — APPLY — 2026-11-14 17:32
+  lexical_entries.form2_confidence: 2239 values set to NULL (the column stays; nothing reads it)
+  backup: OneDrive/pari_pakuru_backups/skiri_pawnee_backup_20261114_173243_engines_decision5.db
+
+remove_engine_output — decision 7 — APPLY — 2026-11-14 17:42
+  drop table possession_examples (20 rows)
+  drop table noun_stems (49 rows)
+  kinship_paradigms: delete the row for 'son (male speaker)', stem tikiʔ, source BB_supplement (not from Appendix 3)
+  kinship_paradigms: delete the row for 'daughter (male speaker)', stem tsuwat, source BB_supplement (not from Appendix 3)
+  kinship_paradigms: delete the row for 'niece/nephew (female speaker)', stem swat, source BB_supplement (not from Appendix 3)
+  function_words: delete row 376, ilanʔ (an OCR slip; the scan reads Háu' there)
+  function_words: delete row 378, kirti (an OCR slip; the scan reads Kirú there)
+  function_words: delete row 382, kti (an OCR slip; the scan reads kú there)
+  function_words: delete row 400, stiks (an OCR slip; the scan reads Súks there)
+  backup: OneDrive/pari_pakuru_backups/skiri_pawnee_backup_20261114_174236_engines_decision7.db

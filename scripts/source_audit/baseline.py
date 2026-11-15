@@ -32,8 +32,12 @@ ROOT = state.ROOT
 BASELINE = state.OUT / "baseline.json"
 PY = sys.executable
 
+# As the audit ran them on 2026-11-13, except where the engines review of 2026-11-14 changed a suite:
+# sound_changes.py --test (11 forms, 7 of them its own output) became --measure; the possession engine and
+# the conjugation engine were withdrawn to archived/scripts/, and their suites with them. baseline.json keeps
+# the results of the day of the audit.
 SUITES = [
-    ("sound-change rules", ["scripts/sound_changes.py", "--test"]),
+    ("sound-change rules on Parks's own examples (a measurement)", ["scripts/sound_changes.py", "--measure"]),
     ("person and mode derivation", ["scripts/person_forms.py", "--validate-appendix"]),
     ("sentence templates", ["scripts/sentence_templates.py", "test"]),
     ("respelling and audit code", ["scripts/test_phase_1_1.py"]),
@@ -41,8 +45,7 @@ SUITES = [
     ("word-construction unit tests", ["-m", "unittest", "discover", "-s", "scripts/morphology_v2", "-p", "test_*.py"]),
     ("word-construction gold sets unchanged", ["scripts/morphology_v2/gold_build.py", "--verify"]),
     ("every Pawnee form in the guide has a source", ["scripts/morphology_v2/check_forms.py"]),
-    ("noun possession", ["scripts/possession_engine.py", "--test"]),
-    ("conjugation engine against Appendix 1 (a measurement)", ["scripts/morpheme_inventory.py", "--validate"]),
+    ("printed forms of nouns (the lookup that replaced the possession engine)", ["scripts/printed_noun_forms.py", "--check"]),
 ]
 
 

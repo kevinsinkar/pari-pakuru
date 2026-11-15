@@ -1,0 +1,1692 @@
+{
+ "appendix_1_before_the_corrections": {
+  "accented_in_the_old_copy": 85,
+  "accented_on_the_page": 26,
+  "accented_the_same_in_both": 15,
+  "by_verb": {
+   "to be good": {
+    "accented_in_the_old_copy": 2,
+    "accented_on_the_page": 0,
+    "old_accent_not_on_the_page": 2
+   },
+   "to be sick": {
+    "accented_in_the_old_copy": 0,
+    "accented_on_the_page": 0,
+    "old_accent_not_on_the_page": 0
+   },
+   "to come": {
+    "accented_in_the_old_copy": 74,
+    "accented_on_the_page": 26,
+    "old_accent_not_on_the_page": 59
+   },
+   "to do it": {
+    "accented_in_the_old_copy": 7,
+    "accented_on_the_page": 0,
+    "old_accent_not_on_the_page": 7
+   },
+   "to drink it": {
+    "accented_in_the_old_copy": 0,
+    "accented_on_the_page": 0,
+    "old_accent_not_on_the_page": 0
+   },
+   "to go": {
+    "accented_in_the_old_copy": 0,
+    "accented_on_the_page": 0,
+    "old_accent_not_on_the_page": 0
+   },
+   "to have it": {
+    "accented_in_the_old_copy": 2,
+    "accented_on_the_page": 0,
+    "old_accent_not_on_the_page": 2
+   }
+  },
+  "cells": 770,
+  "cells_that_differ": 152,
+  "cells_with_two_printed_forms": 13,
+  "commit_of_the_old_copy": "ae99693^",
+  "differ_in_letters": 92,
+  "differ_only_in_accent_marks": 60,
+  "the_two_cells_person_derivation_misses": [
+   {
+    "cell": "absolutive_perfective 3sg",
+    "old_copy": "ruhii",
+    "page": "ruuhii",
+    "verb": "to be good"
+   },
+   {
+    "cell": "absolutive_perfective 3sg",
+    "old_copy": "riihkiraawaʔ",
+    "page": "rihkiraawaʔ",
+    "verb": "to be sick"
+   }
+  ]
+ },
+ "stored_values": {
+  "form2_confidence": {
+   "entries_with_a_value_and_no_attested_form": 1,
+   "entries_with_a_value_whose_form_2_is_attested": 2232,
+   "largest_difference": 0.548,
+   "stored_bands": {
+    "high": 2187,
+    "low": 22,
+    "medium": 30
+   },
+   "stored_differs": 1863,
+   "stored_equals_todays_computation": 376,
+   "verb_entries": 2240,
+   "with_a_stored_value": 2239,
+   "without": 1,
+   "would_change_band": 21
+  },
+  "kinship_paradigms": {
+   "by_source": {
+    "BB_supplement": 3,
+    "appendix3": 11
+   },
+   "rows": 14,
+   "rows_not_from_appendix_3": [
+    {
+     "1sg": "tikiʔ",
+     "2sg": null,
+     "english": "son (male speaker)",
+     "notes": "1sg only attested in BB Lesson 7. Not in Appendix 3.",
+     "stem": "tikiʔ"
+    },
+    {
+     "1sg": "tsuwat",
+     "2sg": null,
+     "english": "daughter (male speaker)",
+     "notes": "1sg only attested in BB Lesson 7. Not in Appendix 3.",
+     "stem": "tsuwat"
+    },
+    {
+     "1sg": null,
+     "2sg": "swat",
+     "english": "niece/nephew (female speaker)",
+     "notes": "2sg only; BB form uses s- agent prefix where Parks has a-/awaat. Not in Appendix 3.",
+     "stem": "swat"
+    }
+   ]
+  },
+  "morpheme_inventory": {
+   "forms_not_printed_in_parks_tables": [
+    "-u (SUB.u)",
+    "-wi (SUB.wi)",
+    "iraak- (PL.1pl_excl)",
+    "iraak- (PL.2pl)",
+    "kaaka- (MODE.negative_indicative)",
+    "raak- (PL.1pl_incl)"
+   ],
+   "rows": 37
+  },
+  "noun_stems": {
+   "headwords_that_are_not_dictionary_headwords": [
+    "asikitahaahuʔ",
+    "askatahcuʔ",
+    "askitsuuʔ",
+    "hatawi-",
+    "hatkatakusuʔ",
+    "hatuh-",
+    "hatuur-",
+    "ikskakusuʔ",
+    "kararuuʔ",
+    "kasuuʔ",
+    "kitutuʔ",
+    "kskiicpitauʔ",
+    "kskitsuuʔ",
+    "paauʔ",
+    "ratawi-",
+    "rusuuʔ",
+    "tsiksuuʔ",
+    "tsusuuʔ",
+    "usuuʔ",
+    "wakuʔ"
+   ],
+   "rows": 49,
+   "rows_linked_to_an_entry": 0
+  },
+  "possession_examples": {
+   "kinship_rows_whose_form_is_not_in_appendix_3_as_corrected": [
+    {
+     "headword": "atiraʔ",
+     "person": "2sg",
+     "stored": "asaas"
+    },
+    {
+     "headword": "atipaat",
+     "person": "1sg",
+     "stored": "atipaat"
+    },
+    {
+     "headword": "atipaat",
+     "person": "2sg",
+     "stored": "apaat"
+    }
+   ],
+   "rows": 20,
+   "rows_beginning_kti": 3,
+   "rows_where_expected_equals_generated": 20
+  },
+  "sound_change_rules": {
+   "differences_from_the_code": [],
+   "rows": 24
+  },
+  "verb_paradigms": {
+   "rows": 770,
+   "what": "a copy of Appendix 1 (corrected 2026-11-13), not engine output"
+  }
+ },
+ "tests": {
+  "chapter_3_examples_with_a_printed_surface_form": 38,
+  "hiri_tests": [
+   {
+    "expected": "iksiriʔ",
+    "expected_in_chapter_4": true,
+    "expected_is_a_headword": false,
+    "stem": "iks"
+   },
+   {
+    "expected": "askusiriʔ",
+    "expected_in_chapter_4": false,
+    "expected_is_a_headword": true,
+    "stem": "askus"
+   },
+   {
+    "expected": "arikiisiriʔ",
+    "expected_in_chapter_4": false,
+    "expected_is_a_headword": true,
+    "stem": "arikiis"
+   },
+   {
+    "expected": "askatahciriʔ",
+    "expected_in_chapter_4": true,
+    "expected_is_a_headword": true,
+    "stem": "askatahc"
+   },
+   {
+    "expected": "awaahiriʔ",
+    "expected_in_chapter_4": false,
+    "expected_is_a_headword": true,
+    "stem": "awaa"
+   },
+   {
+    "expected": "aspaarahiriʔ",
+    "expected_in_chapter_4": false,
+    "expected_is_a_headword": true,
+    "stem": "aspaara"
+   },
+   {
+    "expected": "awiirahiriʔ",
+    "expected_in_chapter_4": false,
+    "expected_is_a_headword": true,
+    "stem": "awiira"
+   },
+   {
+    "expected": "huraaririʔ",
+    "expected_in_chapter_4": false,
+    "expected_is_a_headword": false,
+    "stem": "huraar"
+   },
+   {
+    "expected": "itkatahaahiriʔ",
+    "expected_in_chapter_4": false,
+    "expected_is_a_headword": true,
+    "stem": "itkatahaar"
+   },
+   {
+    "expected": "hukaatahaahiriʔ",
+    "expected_in_chapter_4": false,
+    "expected_is_a_headword": true,
+    "stem": "hukaatahaar"
+   }
+  ],
+  "imperative_particles": [
+   {
+    "blue_book": "part of a printed sentence (letters only)",
+    "form": "suks",
+    "gloss": "2sg imperative (you, do it!)",
+    "lesson": 10,
+    "pdf_page": 77,
+    "printed": "Arisít suks•at."
+   },
+   {
+    "blue_book": "part of a printed sentence (letters only)",
+    "form": "siks",
+    "gloss": "2pl imperative (you all, do it!)",
+    "lesson": 20,
+    "pdf_page": 114,
+    "printed": "Ahu', tsikstit tát•ku,"
+   },
+   {
+    "blue_book": "part of a printed sentence (letters only)",
+    "form": "sisuks",
+    "gloss": "2du imperative (you two, do it!)",
+    "lesson": 2,
+    "pdf_page": 38,
+    "printed": "Sisúks•atku!"
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "form": "stiks",
+    "gloss": "1sg imperative (let me...)"
+   }
+  ],
+  "locative_tests": [
+   {
+    "expected": "iksiriʔ",
+    "expected_in_a_dictionary_example": true,
+    "expected_in_chapter_4": true,
+    "expected_is_a_headword": false,
+    "input": "iksuʔ",
+    "input_is_a_parks_headword": true,
+    "plural": false,
+    "test_passes_is_tribal": false
+   },
+   {
+    "expected": "ikstaaririʔ",
+    "expected_in_a_dictionary_example": true,
+    "expected_in_chapter_4": true,
+    "expected_is_a_headword": false,
+    "input": "iksuʔ",
+    "input_is_a_parks_headword": true,
+    "plural": true,
+    "test_passes_is_tribal": false
+   },
+   {
+    "expected": "sahiiru",
+    "expected_in_a_dictionary_example": false,
+    "expected_in_chapter_4": true,
+    "expected_is_a_headword": false,
+    "input": "sahii",
+    "input_is_a_parks_headword": false,
+    "plural": false,
+    "test_passes_is_tribal": true
+   },
+   {
+    "expected": "uukaahpaawiru",
+    "expected_in_a_dictionary_example": false,
+    "expected_in_chapter_4": true,
+    "expected_is_a_headword": false,
+    "input": "uukaahpaa",
+    "input_is_a_parks_headword": false,
+    "plural": false,
+    "test_passes_is_tribal": true
+   },
+   {
+    "expected": "riihitawiru",
+    "expected_in_a_dictionary_example": false,
+    "expected_in_chapter_4": true,
+    "expected_is_a_headword": false,
+    "input": "riihita",
+    "input_is_a_parks_headword": false,
+    "plural": false,
+    "test_passes_is_tribal": true
+   },
+   {
+    "expected": "akahkat",
+    "expected_in_a_dictionary_example": true,
+    "expected_in_chapter_4": true,
+    "expected_is_a_headword": false,
+    "input": "akaruʔ",
+    "input_is_a_parks_headword": false,
+    "plural": false,
+    "test_passes_is_tribal": false
+   },
+   {
+    "expected": "asaakat",
+    "expected_in_a_dictionary_example": true,
+    "expected_in_chapter_4": true,
+    "expected_is_a_headword": false,
+    "input": "asaa",
+    "input_is_a_parks_headword": false,
+    "plural": false,
+    "test_passes_is_tribal": false
+   },
+   {
+    "expected": "piiraskisukat",
+    "expected_in_a_dictionary_example": true,
+    "expected_in_chapter_4": false,
+    "expected_is_a_headword": false,
+    "input": "piiraski",
+    "input_is_a_parks_headword": true,
+    "plural": false,
+    "test_passes_is_tribal": false
+   },
+   {
+    "expected": "asaakisukat",
+    "expected_in_a_dictionary_example": true,
+    "expected_in_chapter_4": false,
+    "expected_is_a_headword": false,
+    "input": "asaaki",
+    "input_is_a_parks_headword": true,
+    "plural": false,
+    "test_passes_is_tribal": false
+   },
+   {
+    "expected": "caahikskat",
+    "expected_in_a_dictionary_example": false,
+    "expected_in_chapter_4": false,
+    "expected_is_a_headword": false,
+    "input": "caahiksuʔ",
+    "input_is_a_parks_headword": false,
+    "plural": false,
+    "test_passes_is_tribal": false
+   },
+   {
+    "expected": "ikskakusiriʔ",
+    "expected_in_a_dictionary_example": false,
+    "expected_in_chapter_4": false,
+    "expected_is_a_headword": true,
+    "input": "ikskakusiriʔ",
+    "input_is_a_parks_headword": true,
+    "plural": false,
+    "test_passes_is_tribal": false
+   }
+  ],
+  "possession_tests": [
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "form": "tiritpaksku",
+    "input": "paksuʔ",
+    "input_is_a_parks_headword": true,
+    "input_is_any_headword": true,
+    "lesson": 5,
+    "pdf_page": 50,
+    "person": "1sg",
+    "printed": "Ti rit•páks•ku.",
+    "system": "body_part"
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "form": "tiritkirikta",
+    "input": "kirikuʔ",
+    "input_is_a_parks_headword": true,
+    "input_is_any_headword": true,
+    "lesson": 5,
+    "pdf_page": 50,
+    "person": "1sg",
+    "printed": "Ti rit•kírik•ta.",
+    "system": "body_part"
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "form": "tirispaksku",
+    "input": "paksuʔ",
+    "input_is_a_parks_headword": true,
+    "input_is_any_headword": true,
+    "person": "2sg",
+    "system": "body_part"
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "form": "tiripaksku",
+    "input": "paksuʔ",
+    "input_is_a_parks_headword": true,
+    "input_is_any_headword": true,
+    "person": "3sg",
+    "system": "body_part"
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "form": "tiritiksta",
+    "input": "iksuʔ",
+    "input_is_a_parks_headword": true,
+    "input_is_any_headword": true,
+    "person": "1sg",
+    "system": "body_part"
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "form": "tiritasta",
+    "input": "asuʔ",
+    "input_is_a_parks_headword": true,
+    "input_is_any_headword": true,
+    "person": "1sg",
+    "system": "body_part"
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "form": "tirithakata",
+    "input": "hakauʔ",
+    "input_is_a_parks_headword": false,
+    "input_is_any_headword": true,
+    "person": "1sg",
+    "system": "body_part"
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "form": "tirittsusuta",
+    "input": "tsusuuʔ",
+    "input_is_a_parks_headword": false,
+    "input_is_any_headword": false,
+    "person": "1sg",
+    "system": "body_part"
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "form": "tiritkararuta",
+    "input": "kararuuʔ",
+    "input_is_a_parks_headword": false,
+    "input_is_any_headword": false,
+    "person": "1sg",
+    "system": "body_part"
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "form": "tiritusuta",
+    "input": "usuuʔ",
+    "input_is_a_parks_headword": false,
+    "input_is_any_headword": false,
+    "person": "1sg",
+    "system": "body_part"
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "form": "atiraʔ",
+    "in_appendix_3": true,
+    "input": "atiraʔ",
+    "input_is_a_parks_headword": true,
+    "input_is_any_headword": true,
+    "lesson": 7,
+    "pdf_page": 60,
+    "person": "1sg",
+    "printed": "atíra'",
+    "system": "kinship"
+   },
+   {
+    "blue_book": "as printed",
+    "form": "asas",
+    "in_appendix_3": true,
+    "input": "atiraʔ",
+    "input_is_a_parks_headword": true,
+    "input_is_any_headword": true,
+    "lesson": 7,
+    "pdf_page": 61,
+    "person": "2sg",
+    "printed": "asas",
+    "system": "kinship"
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "form": "isaastiʔ",
+    "in_appendix_3": true,
+    "input": "atiraʔ",
+    "input_is_a_parks_headword": true,
+    "input_is_any_headword": true,
+    "person": "3sg",
+    "system": "kinship"
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "form": "atiʔas",
+    "in_appendix_3": true,
+    "input": "atiʔas",
+    "input_is_a_parks_headword": true,
+    "input_is_any_headword": true,
+    "person": "1sg",
+    "system": "kinship"
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "form": "aʔas",
+    "in_appendix_3": true,
+    "input": "atiʔas",
+    "input_is_a_parks_headword": true,
+    "input_is_any_headword": true,
+    "person": "2sg",
+    "system": "kinship"
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "form": "iʔaastiʔ",
+    "in_appendix_3": true,
+    "input": "atiʔas",
+    "input_is_a_parks_headword": true,
+    "input_is_any_headword": true,
+    "person": "3sg",
+    "system": "kinship"
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "form": "atikaʔ",
+    "in_appendix_3": true,
+    "input": "atikaʔ",
+    "input_is_a_parks_headword": true,
+    "input_is_any_headword": true,
+    "lesson": 7,
+    "pdf_page": 60,
+    "person": "1sg",
+    "printed": "atíka'",
+    "system": "kinship"
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "form": "akaʔ",
+    "in_appendix_3": true,
+    "input": "atikaʔ",
+    "input_is_a_parks_headword": true,
+    "input_is_any_headword": true,
+    "lesson": 7,
+    "pdf_page": 61,
+    "person": "2sg",
+    "printed": "aka'",
+    "system": "kinship"
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "form": "ikaariʔ",
+    "in_appendix_3": true,
+    "input": "atikaʔ",
+    "input_is_a_parks_headword": true,
+    "input_is_any_headword": true,
+    "person": "3sg",
+    "system": "kinship"
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "form": "atipat",
+    "in_appendix_3": true,
+    "input": "atipat",
+    "input_is_a_parks_headword": true,
+    "input_is_any_headword": true,
+    "lesson": 7,
+    "pdf_page": 60,
+    "person": "1sg",
+    "printed": "atípat",
+    "system": "kinship"
+   },
+   {
+    "blue_book": "as printed",
+    "form": "apat",
+    "in_appendix_3": true,
+    "input": "atipat",
+    "input_is_a_parks_headword": true,
+    "input_is_any_headword": true,
+    "lesson": 7,
+    "pdf_page": 61,
+    "person": "2sg",
+    "printed": "apat",
+    "system": "kinship"
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "form": "ipaaktiʔ",
+    "in_appendix_3": true,
+    "input": "atipat",
+    "input_is_a_parks_headword": true,
+    "input_is_any_headword": true,
+    "person": "3sg",
+    "system": "kinship"
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "form": "tiwaat",
+    "in_appendix_3": true,
+    "input": "tiwaat",
+    "input_is_a_parks_headword": true,
+    "input_is_any_headword": true,
+    "person": "1sg",
+    "system": "kinship"
+   },
+   {
+    "blue_book": "part of a printed sentence (letters only)",
+    "form": "awaat",
+    "in_appendix_3": true,
+    "input": "tiwaat",
+    "input_is_a_parks_headword": true,
+    "input_is_any_headword": true,
+    "lesson": 20,
+    "pdf_page": 112,
+    "person": "2sg",
+    "printed": "ratku•há•kawaats",
+    "system": "kinship"
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "form": "iwaahiʔ",
+    "in_appendix_3": true,
+    "input": "tiwaat",
+    "input_is_a_parks_headword": true,
+    "input_is_any_headword": true,
+    "person": "3sg",
+    "system": "kinship"
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "form": "iraariʔ",
+    "in_appendix_3": true,
+    "input": "iraariʔ",
+    "input_is_a_parks_headword": true,
+    "input_is_any_headword": true,
+    "person": "1sg",
+    "system": "kinship"
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "form": "kti ratiru pakskuukuʔuʔ",
+    "input": "pakskuukuʔuʔ",
+    "input_is_a_parks_headword": true,
+    "input_is_any_headword": true,
+    "person": "1sg",
+    "system": "agent"
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "form": "kti rasiru pakskuukuʔuʔ",
+    "input": "pakskuukuʔuʔ",
+    "input_is_a_parks_headword": true,
+    "input_is_any_headword": true,
+    "person": "2sg",
+    "system": "agent"
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "form": "kti rau pakskuukuʔuʔ",
+    "input": "pakskuukuʔuʔ",
+    "input_is_a_parks_headword": true,
+    "input_is_any_headword": true,
+    "person": "3sg",
+    "system": "agent"
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "form": "kti ratiru akaruʔ",
+    "input": "akaruʔ",
+    "input_is_a_parks_headword": false,
+    "input_is_any_headword": false,
+    "person": "1sg",
+    "system": "agent"
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "form": "kti rasiru akaruʔ",
+    "input": "akaruʔ",
+    "input_is_a_parks_headword": false,
+    "input_is_any_headword": false,
+    "person": "2sg",
+    "system": "agent"
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "form": "kti rau akaruʔ",
+    "input": "akaruʔ",
+    "input_is_a_parks_headword": false,
+    "input_is_any_headword": false,
+    "person": "3sg",
+    "system": "agent"
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "form": "kti ratiru asaaki",
+    "input": "asaaki",
+    "input_is_a_parks_headword": true,
+    "input_is_any_headword": true,
+    "person": "1sg",
+    "system": "agent"
+   }
+  ],
+  "sentence_tests": [
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "description": "This is a feather (L01)",
+    "form": "ti hitu'",
+    "lesson": 1,
+    "pdf_page": 30,
+    "printed": "Tí hitu'.",
+    "template": "T1",
+    "uses_person_derivation": false
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "description": "He's Ponca (L13)",
+    "form": "ti Rihita",
+    "lesson": 13,
+    "pdf_page": 87,
+    "printed": "Ti Ríhita.",
+    "template": "T1",
+    "uses_person_derivation": false
+   },
+   {
+    "blue_book": "as printed",
+    "description": "He's Oto (L13)",
+    "form": "ti Pasuhara",
+    "lesson": 13,
+    "pdf_page": 87,
+    "printed": "Ti Pasuhara.",
+    "template": "T1",
+    "uses_person_derivation": false
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "description": "The stick is red (L02)",
+    "form": "rakis ti pahaat",
+    "lesson": 2,
+    "pdf_page": 34,
+    "printed": "Rakis tí pahaat.",
+    "template": "T2",
+    "uses_person_derivation": false
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "description": "The fox is red (L09)",
+    "form": "kiwaku ti pahaat",
+    "lesson": 9,
+    "pdf_page": 72,
+    "printed": "Kiwaku tí pahaat.",
+    "template": "T2",
+    "uses_person_derivation": false
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "description": "The bird is red (L09)",
+    "form": "rikutski ti pahaat",
+    "lesson": 9,
+    "pdf_page": 72,
+    "printed": "Rikutski tí pahaat.",
+    "template": "T2",
+    "uses_person_derivation": false
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "description": "Is this a feather? (L01)",
+    "form": "ka rii hitu'?",
+    "template": "T3",
+    "uses_person_derivation": false
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "description": "Is the stick red? (L02)",
+    "form": "ka ra•pahaat rakis?",
+    "lesson": 2,
+    "pdf_page": 34,
+    "printed": "Ka rá•pahaat rakis?",
+    "template": "T3",
+    "uses_person_derivation": false
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "description": "Is this a rock? (L01)",
+    "form": "ka ru karitki?",
+    "lesson": 1,
+    "pdf_page": 30,
+    "printed": "Ka rú karitki?",
+    "template": "T3",
+    "uses_person_derivation": false
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "description": "What is it? (L01)",
+    "form": "kirike ru'?",
+    "lesson": 1,
+    "pdf_page": 29,
+    "printed": "KIRIKÉ RU'?",
+    "template": "T4",
+    "uses_person_derivation": false
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "description": "What is the man doing? (L06)",
+    "form": "pita kirike rut•ari'?",
+    "lesson": 6,
+    "pdf_page": 56,
+    "printed": "Pita kiriké rut•ari'?",
+    "template": "T4",
+    "uses_person_derivation": false
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "description": "What are you looking for? (L08)",
+    "form": "kirike ras•taspe'?",
+    "lesson": 8,
+    "pdf_page": 66,
+    "printed": "Kirike rás•taspe'?",
+    "template": "T4",
+    "uses_person_derivation": false
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "description": "Where did you go? (L13)",
+    "form": "kiru rasuks•at?",
+    "lesson": 13,
+    "pdf_page": 85,
+    "printed": "KIRU RÁSUKS•AT?",
+    "template": "T5",
+    "uses_person_derivation": false
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "description": "Where was it? (L08)",
+    "form": "kiru ruks•ku'?",
+    "lesson": 8,
+    "pdf_page": 66,
+    "printed": "Kíru ruks•ku'?",
+    "template": "T5",
+    "uses_person_derivation": false
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "description": "No, it is not a rock (L01)",
+    "form": "kaki', kaki karitki",
+    "template": "T6",
+    "uses_person_derivation": false
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "description": "Yes, this is a feather (L01)",
+    "form": "ahu', ti hitu'",
+    "lesson": 1,
+    "pdf_page": 30,
+    "printed": "Ahu', tí hitu'.",
+    "template": "T7",
+    "uses_person_derivation": false
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "description": "Yes, the stick is red (L02)",
+    "form": "ahu', rakis ti pahaat",
+    "lesson": 2,
+    "pdf_page": 34,
+    "printed": "Áhu', rakis tí pahaat.",
+    "template": "T7",
+    "uses_person_derivation": false
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "description": "I went (L13)",
+    "form": "tatuks•at",
+    "lesson": 13,
+    "pdf_page": 85,
+    "printed": "tátuks•at",
+    "template": "T8",
+    "uses_person_derivation": false
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "description": "I went to Pawnee (L13)",
+    "form": "tatuks•at Pari",
+    "lesson": 13,
+    "pdf_page": 86,
+    "printed": "Tatuks•at Pári.",
+    "template": "T8",
+    "uses_person_derivation": false
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "description": "I ate meat (L11)",
+    "form": "tatuks•a kisatski",
+    "lesson": 11,
+    "pdf_page": 79,
+    "printed": "Tatuks•a kísatski.",
+    "template": "T8",
+    "uses_person_derivation": false
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "description": "The man is walking (L06)",
+    "form": "pita tiwari'",
+    "lesson": 6,
+    "pdf_page": 56,
+    "printed": "Pita tí•wari'.",
+    "template": "T9",
+    "uses_person_derivation": false
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "description": "The bird is singing (L14)",
+    "form": "rikutski ti•waktahu'",
+    "lesson": 14,
+    "pdf_page": 94,
+    "printed": "Rikutski ti•wáktahu'.",
+    "template": "T9",
+    "uses_person_derivation": false
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "description": "The dog barked (L14)",
+    "form": "asaki tirah•kI wat",
+    "lesson": 14,
+    "pdf_page": 94,
+    "printed": "Asaki tirah•kí•wat.",
+    "template": "T9",
+    "uses_person_derivation": false
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "description": "Sit down (L20)",
+    "form": "suks•pitit",
+    "lesson": 5,
+    "pdf_page": 53,
+    "printed": "Suks•pítit.",
+    "template": "T10",
+    "uses_person_derivation": false
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "description": "I've been working hard (L18 — ADV_MANNER slot)",
+    "form": "rariksisu tatutsiks•a•wahri'",
+    "lesson": 18,
+    "pdf_page": 104,
+    "printed": "rariksisu tatutsiks•á•wahri'",
+    "template": "T8",
+    "uses_person_derivation": false
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "description": "The fox ran away (L09 — we particle)",
+    "form": "kiwaku we tu'h•kuksas",
+    "template": "T9",
+    "uses_person_derivation": false
+   },
+   {
+    "blue_book": "as printed",
+    "description": "The man killed a deer, in the winter (L09 — temporal slot)",
+    "form": "pita ti•kuwutit rahurahki pitsikat",
+    "lesson": 9,
+    "pdf_page": 73,
+    "printed": "Pita ti•kuwutit rahurahki pitsikat.",
+    "template": "T9",
+    "uses_person_derivation": false
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "description": "Is the stick red? (derived 3sg absolutive, VD)",
+    "form": "ka rapahaaʔat rakis?",
+    "template": "T3",
+    "uses_person_derivation": true
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "description": "Have you found the dog? (derived 2sg absolutive)",
+    "form": "ka rasuraas asaaki?",
+    "template": "T3",
+    "uses_person_derivation": true
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "description": "I fetched water (attested form_1)",
+    "form": "tactakacat",
+    "template": "T8",
+    "uses_person_derivation": true
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "description": "You fetched water (derived 2sg)",
+    "form": "tastakacat",
+    "template": "T8",
+    "uses_person_derivation": true
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "description": "I will fetch water (1sg intentive transplant)",
+    "form": "tactakacuhta",
+    "template": "T8",
+    "uses_person_derivation": true
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "description": "Where did you go? (derived 2sg absolutive)",
+    "form": "kiru raasat?",
+    "template": "T5",
+    "uses_person_derivation": true
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "description": "The man saw the bear (attested form_2 via verb slot)",
+    "form": "pita tuutiirit kuruks",
+    "template": "T9",
+    "uses_person_derivation": true
+   }
+  ],
+  "slot_fillers": [
+   {
+    "blue_book": "as printed",
+    "category": "TEMPORAL",
+    "english": "tomorrow",
+    "form": "rahesa'",
+    "its_example": "Rahesa' tatut•a•wahri•usta.",
+    "its_example_blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "its_example_printed": "Rahesa' tatut•á•wahri•usta.",
+    "lesson": 19,
+    "pdf_page": 107,
+    "printed": "rahesa'"
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "category": "TEMPORAL",
+    "english": "yesterday",
+    "form": "tiruks•tsak•ariki",
+    "its_example": "Tiruks•tsak•ariki tatutsiks•a•wahri'.",
+    "its_example_blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "its_example_printed": "Tíruks•tsak•ariki tatutsiks•á•wahri'.",
+    "lesson": 17,
+    "pdf_page": 100,
+    "printed": "tiruks•tsakariki"
+   },
+   {
+    "blue_book": "as printed",
+    "category": "TEMPORAL",
+    "english": "at night",
+    "form": "hiras",
+    "its_example": "Tatih•ka•isa' hiras.",
+    "its_example_blue_book": "as printed",
+    "its_example_printed": "Tatih•ka•isa' hiras.",
+    "lesson": 16,
+    "pdf_page": 98,
+    "printed": "hiras"
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "category": "TEMPORAL",
+    "english": "next month",
+    "form": "tihe ra•pa•ariki'",
+    "its_example": "Tat•uh•ta tihe ra•pa•ariki'.",
+    "its_example_blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "its_example_printed": "Tát•uh•ta tihé ra•pa•ariki'.",
+    "lesson": 19,
+    "pdf_page": 107,
+    "printed": "tihe ra•pá•ariki'"
+   },
+   {
+    "blue_book": "as printed",
+    "category": "TEMPORAL",
+    "english": "in (the) winter",
+    "form": "pitsikat",
+    "its_example": "Pita ti•kuwutit rahurahki pitsikat.",
+    "its_example_blue_book": "as printed",
+    "its_example_printed": "Pita ti•kuwutit rahurahki pitsikat.",
+    "lesson": 15,
+    "pdf_page": 95,
+    "printed": "pitsikat"
+   },
+   {
+    "blue_book": "as printed",
+    "category": "TEMPORAL",
+    "english": "in (the) fall",
+    "form": "retskuhke",
+    "its_example": "'T'at•tstfa•usuku retskuhke.",
+    "its_example_blue_book": "not in the Blue Book",
+    "its_example_printed": null,
+    "lesson": 15,
+    "pdf_page": 95,
+    "printed": "retskuhke"
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "category": "TEMPORAL",
+    "english": "early this morning",
+    "form": "kekaruskat",
+    "lesson": 17,
+    "pdf_page": 101,
+    "printed": "kekáruskat"
+   },
+   {
+    "blue_book": "as printed",
+    "category": "TEMPORAL",
+    "english": "last night",
+    "form": "tiruks•tatkiu'",
+    "lesson": 17,
+    "pdf_page": 101,
+    "printed": "tiruks•tatkiu'"
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "category": "TEMPORAL",
+    "english": "last month",
+    "form": "tiherukspa•ariki",
+    "lesson": 17,
+    "pdf_page": 100,
+    "printed": "tiheruks•pá•ariki"
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "category": "ADV_MANNER",
+    "english": "well, fine",
+    "form": "cikstit",
+    "its_example": "Tsikstit ka ras•pari'?",
+    "its_example_blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "its_example_printed": "Tsikstit ka rás•pari'?"
+   },
+   {
+    "blue_book": "as printed",
+    "category": "ADV_MANNER",
+    "english": "hard, very much",
+    "form": "rariksisu",
+    "its_example": "Rariksisu tatutsiks•a•wahri'.",
+    "its_example_blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "its_example_printed": "rariksisu tatutsiks•á•wahri'",
+    "lesson": 18,
+    "pdf_page": 104,
+    "printed": "rariksisu"
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "category": "ADV_MANNER",
+    "english": "really, so",
+    "form": "ctuu"
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "category": "ADV_MANNER",
+    "english": "first",
+    "form": "awiit"
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "category": "ADV_MANNER",
+    "english": "again, back",
+    "form": "istuʔ"
+   },
+   {
+    "blue_book": "as printed",
+    "category": "NUMERAL",
+    "english": "one",
+    "form": "asku",
+    "its_example": "T'ewitsu asku.",
+    "its_example_blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "its_example_printed": "T'éwitsu asku.",
+    "lesson": 1,
+    "pdf_page": 30,
+    "printed": "asku"
+   },
+   {
+    "blue_book": "as printed",
+    "category": "NUMERAL",
+    "english": "two",
+    "form": "pitku",
+    "its_example": "we ti pitku",
+    "its_example_blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "its_example_printed": "we tí pitku",
+    "lesson": 1,
+    "pdf_page": 30,
+    "printed": "pitku"
+   },
+   {
+    "blue_book": "as printed",
+    "category": "NUMERAL",
+    "english": "three",
+    "form": "tawit",
+    "its_example": "Tawit kaas tatutak•erit.",
+    "its_example_blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "its_example_printed": "Tawit kaas tatutak•érit.",
+    "lesson": 13,
+    "pdf_page": 86,
+    "printed": "tawit,"
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "category": "NUMERAL",
+    "english": "four",
+    "form": "kskiitiʔiks",
+    "its_example": "tuh•raru kskitiiks akitaru'",
+    "its_example_blue_book": "part of a printed sentence (letters only)",
+    "its_example_printed": "Ti ratarak•akitah•ku Pari tuh•raru kskitiiks akitaru', he hiri we tahrak•ut; Tsawii, Kitkahahki, Pitahawirata, a Tskiri. Hiri wi•tuks•it•at akar•raratau t'eks•kurit Kits Katus."
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "category": "NUMERAL",
+    "english": "five",
+    "form": "suhuks"
+   },
+   {
+    "blue_book": "as printed",
+    "category": "NUMERAL",
+    "english": "all, together",
+    "form": "kitu",
+    "its_example": "Ketuh•kusit papitsisu kitu.",
+    "its_example_blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "its_example_printed": "Kétuh•kusit papítsisu kitu.",
+    "lesson": 14,
+    "pdf_page": 93,
+    "printed": "kitu"
+   },
+   {
+    "blue_book": "as printed",
+    "category": "LOCATIVE",
+    "english": "here, this place, where",
+    "form": "hiri",
+    "its_example": "Aka, hiri we ti•pitsi'!",
+    "its_example_blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "its_example_printed": "Aka, hiri we ti•pítsi'!",
+    "lesson": 13,
+    "pdf_page": 88,
+    "printed": "hiri"
+   },
+   {
+    "blue_book": "a word of a printed sentence (letters only)",
+    "category": "LOCATIVE",
+    "english": "there, over there",
+    "form": "ru",
+    "its_example": "Ru tuks•kaku'.",
+    "its_example_blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "its_example_printed": "Rú tuks•kaku'.",
+    "lesson": 1,
+    "pdf_page": 30,
+    "printed": "Ka rú hitu'?"
+   },
+   {
+    "blue_book": "a word of a printed sentence (letters only)",
+    "category": "YES",
+    "english": "yes",
+    "form": "ahu'",
+    "its_example": "Ahu', ti hitu'.",
+    "its_example_blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "its_example_printed": "Ahu', tí hitu'.",
+    "lesson": 1,
+    "pdf_page": 30,
+    "printed": "Ahu', tí hitu'."
+   },
+   {
+    "blue_book": "a word of a printed sentence (letters only)",
+    "category": "YES",
+    "english": "yes",
+    "form": "hau",
+    "its_example": "Hau, ti hitu'.",
+    "its_example_blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "its_example_printed": "Haú, tí hitu'.",
+    "lesson": 1,
+    "pdf_page": 30,
+    "printed": "Haú, tí hitu'."
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "category": "YES",
+    "english": "yes",
+    "form": "ilan'",
+    "its_example": "Ilan', tiku•ratsaus.",
+    "its_example_blue_book": "not in the Blue Book",
+    "its_example_printed": null
+   },
+   {
+    "blue_book": "as printed",
+    "category": "GREETING",
+    "english": "hello, now, well",
+    "form": "nawa",
+    "its_example": "Nawa, taku ka ra•ka .ku?",
+    "its_example_blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "its_example_printed": "Nawa, taku ká ra•ka•ku?",
+    "lesson": 1,
+    "pdf_page": 31,
+    "printed": "Nawa!"
+   },
+   {
+    "blue_book": "a word of a printed sentence (letters only)",
+    "category": "DEMONSTRATIVE",
+    "english": "this is, it is",
+    "form": "ti",
+    "its_example": "Ti hitu'.",
+    "its_example_blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "its_example_printed": "Tí hitu'.",
+    "lesson": 1,
+    "pdf_page": 30,
+    "printed": "Tí hitu'."
+   },
+   {
+    "blue_book": "a word of a printed sentence (letters only)",
+    "category": "DEMONSTRATIVE",
+    "english": "(perfective/emphasis particle)",
+    "form": "we",
+    "its_example": "Rahurahki we tut•awi'at Karit•kutsu'.",
+    "its_example_blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "its_example_printed": "Rahurahki we tut•awi 'at Karit•kutsu'.",
+    "lesson": 6,
+    "pdf_page": 57,
+    "printed": "We rút•utsi•raru'."
+   },
+   {
+    "blue_book": "a word of a printed sentence (letters only)",
+    "category": "DEMONSTRATIVE",
+    "english": "those, that (distal plural)",
+    "form": "tihe",
+    "its_example": "Tat•uh•ta tihe ra•pa•ariki'.",
+    "its_example_blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "its_example_printed": "Tát•uh•ta tihé ra•pa•ariki'.",
+    "lesson": 19,
+    "pdf_page": 107,
+    "printed": "tihe ra•pá•ariki'"
+   },
+   {
+    "blue_book": "as printed",
+    "category": "INTERROGATIVE",
+    "english": "(yes/no question marker)",
+    "form": "ka",
+    "its_example": "Ka ra•pahaat rakis?",
+    "its_example_blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "its_example_printed": "Ka rá•pahaat rakis?",
+    "lesson": 1,
+    "pdf_page": 32,
+    "printed": "Ka?"
+   },
+   {
+    "blue_book": "a word of a printed sentence (letters only)",
+    "category": "INTERROGATIVE",
+    "english": "what, why, how",
+    "form": "kirike",
+    "its_example": "Kirike ru'?",
+    "its_example_blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "its_example_printed": "KIRIKÉ RU'?",
+    "lesson": 1,
+    "pdf_page": 29,
+    "printed": "KIRIKÉ RU'?"
+   },
+   {
+    "blue_book": "a word of a printed sentence (letters only)",
+    "category": "INTERROGATIVE",
+    "english": "where",
+    "form": "kiru",
+    "its_example": "Kiru rasuks•at?",
+    "its_example_blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "its_example_printed": "KIRU RÁSUKS•AT?",
+    "lesson": 5,
+    "pdf_page": 50,
+    "printed": "Kiru rás•paks•ku?"
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "category": "INTERROGATIVE",
+    "english": "where (destination), when",
+    "form": "kirti",
+    "its_example": "Kirti rira•awi•u tasih•ka•isa'?",
+    "its_example_blue_book": "not in the Blue Book",
+    "its_example_printed": null
+   },
+   {
+    "blue_book": "a word of a printed sentence (letters only)",
+    "category": "INTERROGATIVE",
+    "english": "who, anyone, what",
+    "form": "taku",
+    "its_example": "Nawa, taku ka ra•ka .ku?",
+    "its_example_blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "its_example_printed": "Nawa, taku ká ra•ka•ku?",
+    "lesson": 20,
+    "pdf_page": 113,
+    "printed": "Nawa, taku ká ra•ka•ku?"
+   },
+   {
+    "blue_book": "a word of a printed sentence (letters only)",
+    "category": "INTERROGATIVE",
+    "english": "how much, how many",
+    "form": "kitske",
+    "its_example": "Kitske rd•awitsu'?",
+    "its_example_blue_book": "not in the Blue Book",
+    "its_example_printed": null,
+    "lesson": 12,
+    "pdf_page": 83,
+    "printed": "Kitske rá•awitsu'?"
+   },
+   {
+    "blue_book": "part of a printed sentence (letters only)",
+    "category": "IMPERATIVE",
+    "english": "(do it!) — 2sg imperative",
+    "form": "suks",
+    "its_example": "Suks•teka .rikut.",
+    "its_example_blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "its_example_printed": "Suks•teká•rikut.",
+    "lesson": 10,
+    "pdf_page": 77,
+    "printed": "Arisít suks•at."
+   },
+   {
+    "blue_book": "part of a printed sentence (letters only)",
+    "category": "IMPERATIVE",
+    "english": "(do it!) — 2pl imperative",
+    "form": "siks",
+    "its_example": "Nawa, siks .uka .a'.",
+    "its_example_blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "its_example_printed": "Nawa, síks•uka•a'.",
+    "lesson": 20,
+    "pdf_page": 114,
+    "printed": "Ahu', tsikstit tát•ku,"
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "category": "IMPERATIVE",
+    "english": "(listen!) — you (1) imperative",
+    "form": "stiks",
+    "its_example": "Stiks .atku!",
+    "its_example_blue_book": "not in the Blue Book",
+    "its_example_printed": null
+   },
+   {
+    "blue_book": "a word of a printed sentence (letters only)",
+    "category": "NEGATION",
+    "english": "no, not",
+    "form": "kaki",
+    "its_example": "Kaki, kaki karitki.",
+    "its_example_blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "its_example_printed": "Kakí, kakí karitki.",
+    "lesson": 1,
+    "pdf_page": 30,
+    "printed": "Kakí, kakí karitki."
+   },
+   {
+    "blue_book": "a word of a printed sentence (letters only)",
+    "category": "CONJUNCTION",
+    "english": "and",
+    "form": "a",
+    "its_example": "taraha a rahurahki",
+    "its_example_blue_book": "part of a printed sentence (letters only)",
+    "its_example_printed": "Pitkus•ihiri asku ri•katiharu tirah•pares•pari'. Wi•tiks-kawutik•usuku taraha a rahurahki. Hawa tikstarah•ka-wa•karuku rikisu', atit, pahuks. Tirarah•kiwi a wi•tiks-takas•karuk•usuku a tirah•tsaisiku atit a pahuks.",
+    "lesson": 16,
+    "pdf_page": 98,
+    "printed": "we ti pitku á ikarikat"
+   }
+  ],
+  "sound_change_tests": [
+   {
+    "description": "t-laryngealization: pahaat+raʔuk (Rule 13)",
+    "expected": "pahaahaʔuk",
+    "expected_is_a_headword": false,
+    "expected_is_a_surface_form_printed_in_chapter_3": true,
+    "input": "pahaat + raʔuk",
+    "printed_example": {
+     "rule": "13",
+     "underlying": "pahaat + raʔuk"
+    }
+   },
+   {
+    "description": "alveolar dissimilation t+t (Rule 19)",
+    "expected": "tactaʔuut",
+    "expected_is_a_headword": false,
+    "expected_is_a_surface_form_printed_in_chapter_3": true,
+    "input": "ta + t + taʔuut",
+    "printed_example": {
+     "rule": "19",
+     "underlying": "ta- + t- + taʔuut"
+    }
+   },
+   {
+    "description": "final r loss (Rule 23)",
+    "expected": "aa",
+    "expected_is_a_headword": false,
+    "expected_is_a_surface_form_printed_in_chapter_3": false,
+    "input": "aar",
+    "printed_example": null
+   },
+   {
+    "description": "degemination rr->r + final r loss (Rules 20+23)",
+    "expected": "raaraahu",
+    "expected_is_a_headword": false,
+    "expected_is_a_surface_form_printed_in_chapter_3": false,
+    "input": "raar + raahur",
+    "printed_example": null
+   },
+   {
+    "description": "-his perfective reduction (Rule 3R)",
+    "expected": "haks",
+    "expected_is_a_headword": false,
+    "expected_is_a_surface_form_printed_in_chapter_3": true,
+    "input": "hak + his",
+    "printed_example": {
+     "rule": "3R",
+     "underlying": "hak + -his"
+    }
+   },
+   {
+    "description": "raar assibilation r+t->c (Rule 8R, simple)",
+    "expected": "raaciis",
+    "expected_is_a_headword": false,
+    "expected_is_a_surface_form_printed_in_chapter_3": false,
+    "input": "raar + tiis",
+    "printed_example": null
+   },
+   {
+    "description": "ut- affrication before i- (Rule 11R)",
+    "expected": "uci",
+    "expected_is_a_headword": false,
+    "expected_is_a_surface_form_printed_in_chapter_3": false,
+    "input": "ut + i",
+    "printed_example": null
+   },
+   {
+    "description": "final-s loss (Rule 9R)",
+    "expected": "kuhku",
+    "expected_is_a_headword": true,
+    "expected_is_a_surface_form_printed_in_chapter_3": true,
+    "input": "kuhkus",
+    "printed_example": {
+     "rule": "9R",
+     "underlying": "kuhkus"
+    }
+   },
+   {
+    "description": "sibilant hardening: s->c after C (Rule 17)",
+    "expected": "ikca",
+    "expected_is_a_headword": false,
+    "expected_is_a_surface_form_printed_in_chapter_3": false,
+    "input": "ik + sa",
+    "printed_example": null
+   },
+   {
+    "description": "r-stopping: k+r -> k+t (Rule 21)",
+    "expected": "ikta",
+    "expected_is_a_headword": false,
+    "expected_is_a_surface_form_printed_in_chapter_3": false,
+    "input": "ik + ra",
+    "printed_example": null
+   },
+   {
+    "description": "alveolar dissimilation t+c -> ct (Rule 19)",
+    "expected": "tactak",
+    "expected_is_a_headword": false,
+    "expected_is_a_surface_form_printed_in_chapter_3": false,
+    "input": "ta + t + cak",
+    "printed_example": null
+   }
+  ],
+  "template_examples": [
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "english": "This is a feather",
+    "form": "Ti hitu'",
+    "lesson": 1,
+    "pdf_page": 30,
+    "printed": "Tí hitu'.",
+    "template": "T1"
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "english": "The stick is red",
+    "form": "Rakis ti pahaat",
+    "lesson": 2,
+    "pdf_page": 34,
+    "printed": "Rakis tí pahaat.",
+    "template": "T2"
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "english": "Is the stick red?",
+    "form": "Ka ra•pahaat rakis?",
+    "lesson": 2,
+    "pdf_page": 34,
+    "printed": "Ka rá•pahaat rakis?",
+    "template": "T3"
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "english": "What is it?",
+    "form": "Kirike ru'?",
+    "lesson": 1,
+    "pdf_page": 29,
+    "printed": "KIRIKÉ RU'?",
+    "template": "T4"
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "english": "Where did you go?",
+    "form": "Kiru rasuks•at?",
+    "lesson": 13,
+    "pdf_page": 85,
+    "printed": "KIRU RÁSUKS•AT?",
+    "template": "T5"
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "english": "No, it is not a rock.",
+    "form": "Kaki, kaki karitki.",
+    "lesson": 1,
+    "pdf_page": 30,
+    "printed": "Kakí, kakí karitki.",
+    "template": "T6"
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "english": "Yes, this is a feather.",
+    "form": "Ahu', ti hitu'.",
+    "lesson": 1,
+    "pdf_page": 30,
+    "printed": "Ahu', tí hitu'.",
+    "template": "T7"
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "english": "I went to Pawnee.",
+    "form": "Tatuks•at Pari.",
+    "lesson": 13,
+    "pdf_page": 86,
+    "printed": "Tatuks•at Pári.",
+    "template": "T8"
+   },
+   {
+    "blue_book": "part of a printed sentence (letters only)",
+    "english": "The man killed a deer.",
+    "form": "Pita ti•kuwutit rahurahki.",
+    "lesson": 9,
+    "pdf_page": 73,
+    "printed": "Pita ti•kuwutit rahurahki pitsikat.",
+    "template": "T9"
+   },
+   {
+    "blue_book": "the same letters; the printed accents, dots or spaces differ",
+    "english": "Open the door.",
+    "form": "Suks•teka .rikut.",
+    "lesson": 15,
+    "pdf_page": 97,
+    "printed": "Suks•teká•rikut.",
+    "template": "T10"
+   }
+  ],
+  "yes_words": [
+   {
+    "blue_book": "a word of a printed sentence (letters only)",
+    "form": "ahu'",
+    "gloss": "yes (standard)",
+    "lesson": 1,
+    "pdf_page": 30,
+    "printed": "Ahu', tí hitu'."
+   },
+   {
+    "blue_book": "a word of a printed sentence (letters only)",
+    "form": "hau",
+    "gloss": "yes (variant)",
+    "lesson": 1,
+    "pdf_page": 30,
+    "printed": "Haú, tí hitu'."
+   },
+   {
+    "blue_book": "not in the Blue Book",
+    "form": "ilan'",
+    "gloss": "yes (variant, L11)"
+   }
+  ]
+ }
+}
