@@ -31,6 +31,7 @@ sys.path.insert(0, str(PROJECT_ROOT))
 
 from web.db import SkiriWebDictionary
 from web import learning
+from web import spelling
 
 # Import grammatical class labels from Flask app
 GRAM_CLASS_LABELS = {
@@ -197,18 +198,6 @@ def generate_entry_pages(db_path: str, output_dir: Path) -> dict:
     from jinja2 import Environment, FileSystemLoader
 
     # Register custom filters for static rendering
-    def primary_spelling_filter(entry):
-        """Return primary spelling (normalized form preferred)."""
-        nf = entry.normalized_form if hasattr(entry, 'normalized_form') else None
-        hw = entry.headword if hasattr(entry, 'headword') else ""
-        return nf if nf and nf != hw else hw
-
-    def secondary_spelling_filter(entry):
-        """Return secondary spelling (non-preferred)."""
-        nf = entry.normalized_form if hasattr(entry, 'normalized_form') else None
-        hw = entry.headword if hasattr(entry, 'headword') else ""
-        return hw if nf and nf != hw else None
-
     def format_pitch_filter(pronunciation: str):
         """Format pitch accent (uppercase syllables)."""
         if not pronunciation:
@@ -222,8 +211,7 @@ def generate_entry_pages(db_path: str, output_dir: Path) -> dict:
 
     template_dir = PROJECT_ROOT / "web" / "templates"
     env = Environment(loader=FileSystemLoader(str(template_dir)))
-    env.filters['primary_spelling'] = primary_spelling_filter
-    env.filters['secondary_spelling'] = secondary_spelling_filter
+    spelling.register(env)          # both spellings of a word; the switch at the top shows one (web/spelling.py)
     env.filters['format_pitch'] = format_pitch_filter
 
     template = env.get_template("entry.html")
@@ -254,7 +242,6 @@ def generate_entry_pages(db_path: str, output_dir: Path) -> dict:
         html = template.render(
             entry=entry,
             request=MockRequest(),
-            spelling_pref="simplified",
             gram_class_labels=GRAM_CLASS_LABELS
         )
 
@@ -277,22 +264,9 @@ def generate_browse_pages(db_path: str, output_dir: Path) -> dict:
     from jinja2 import Environment, FileSystemLoader
 
     # Register custom filters for static rendering
-    def primary_spelling_filter(entry):
-        """Return primary spelling (normalized form preferred)."""
-        nf = entry.normalized_form if hasattr(entry, 'normalized_form') else None
-        hw = entry.headword if hasattr(entry, 'headword') else ""
-        return nf if nf and nf != hw else hw
-
-    def secondary_spelling_filter(entry):
-        """Return secondary spelling (non-preferred)."""
-        nf = entry.normalized_form if hasattr(entry, 'normalized_form') else None
-        hw = entry.headword if hasattr(entry, 'headword') else ""
-        return hw if nf and nf != hw else None
-
     template_dir = PROJECT_ROOT / "web" / "templates"
     env = Environment(loader=FileSystemLoader(str(template_dir)))
-    env.filters['primary_spelling'] = primary_spelling_filter
-    env.filters['secondary_spelling'] = secondary_spelling_filter
+    spelling.register(env)          # both spellings of a word; the switch at the top shows one (web/spelling.py)
 
     template = env.get_template("browse.html")
 
@@ -327,7 +301,6 @@ def generate_browse_pages(db_path: str, output_dir: Path) -> dict:
             entries=summaries,
             total=len(summaries),
             request=MockRequest(),
-            spelling_pref="simplified",
             gram_class_labels=GRAM_CLASS_LABELS
         )
 
@@ -416,12 +389,6 @@ def _postprocess_for_static(html: str) -> str:
         r'<p><a href="/study\?[^"]*"[^>]*>.*?</a></p>',
         "", html, flags=re.DOTALL)
 
-    # Drop the spelling-preference form (posts to a Flask route), and the sentence that points to it
-    html = re.sub(
-        r'<li class="nav-spelling-toggle">.*?</li>',
-        "", html, flags=re.DOTALL)
-    html = html.replace("Use the spelling toggle in the nav bar to switch.", "")
-
     # Strip HTMX live-search attributes (their endpoints don't exist statically;
     # search.js handles live search instead)
     html = re.sub(r'\s+hx-[a-z-]+="[^"]*"', "", html)
@@ -474,18 +441,6 @@ def generate_static_pages(db_path: str, output_dir: Path) -> dict:
     import re
 
     # Register custom filters for static rendering
-    def primary_spelling_filter(entry):
-        """Return primary spelling (normalized form preferred)."""
-        nf = entry.normalized_form if hasattr(entry, 'normalized_form') else None
-        hw = entry.headword if hasattr(entry, 'headword') else ""
-        return nf if nf and nf != hw else hw
-
-    def secondary_spelling_filter(entry):
-        """Return secondary spelling (non-preferred)."""
-        nf = entry.normalized_form if hasattr(entry, 'normalized_form') else None
-        hw = entry.headword if hasattr(entry, 'headword') else ""
-        return hw if nf and nf != hw else None
-
     def format_pitch_filter(pronunciation: str):
         """Format pitch accent (uppercase syllables)."""
         if not pronunciation:
@@ -498,8 +453,7 @@ def generate_static_pages(db_path: str, output_dir: Path) -> dict:
 
     template_dir = PROJECT_ROOT / "web" / "templates"
     env = Environment(loader=FileSystemLoader(str(template_dir)))
-    env.filters['primary_spelling'] = primary_spelling_filter
-    env.filters['secondary_spelling'] = secondary_spelling_filter
+    spelling.register(env)          # both spellings of a word; the switch at the top shows one (web/spelling.py)
     env.filters['format_pitch'] = format_pitch_filter
 
     db = SkiriWebDictionary(db_path)
@@ -547,7 +501,6 @@ def generate_static_pages(db_path: str, output_dir: Path) -> dict:
                     {"skiri": "capaat", "en": "woman"},
                 ],
                 "request": MockRequest(),
-                "spelling_pref": "simplified",
                 "gram_class_labels": GRAM_CLASS_LABELS,
             }
             context.update(extra_context)
@@ -583,18 +536,6 @@ def generate_flashcard_pages(db_path: str, output_dir: Path) -> dict:
     from web.flashcards import held_weeks, load_sets
 
     # Register custom filters for static rendering
-    def primary_spelling_filter(entry):
-        """Return primary spelling (normalized form preferred)."""
-        nf = entry.normalized_form if hasattr(entry, 'normalized_form') else None
-        hw = entry.headword if hasattr(entry, 'headword') else ""
-        return nf if nf and nf != hw else hw
-
-    def secondary_spelling_filter(entry):
-        """Return secondary spelling (non-preferred)."""
-        nf = entry.normalized_form if hasattr(entry, 'normalized_form') else None
-        hw = entry.headword if hasattr(entry, 'headword') else ""
-        return hw if nf and nf != hw else None
-
     def format_pitch_filter(pronunciation: str):
         """Format pitch accent (uppercase syllables)."""
         if not pronunciation:
@@ -607,8 +548,7 @@ def generate_flashcard_pages(db_path: str, output_dir: Path) -> dict:
 
     template_dir = PROJECT_ROOT / "web" / "templates"
     env = Environment(loader=FileSystemLoader(str(template_dir)))
-    env.filters['primary_spelling'] = primary_spelling_filter
-    env.filters['secondary_spelling'] = secondary_spelling_filter
+    spelling.register(env)          # both spellings of a word; the switch at the top shows one (web/spelling.py)
     env.filters['format_pitch'] = format_pitch_filter
 
     # Mock request object for static rendering
@@ -620,7 +560,6 @@ def generate_flashcard_pages(db_path: str, output_dir: Path) -> dict:
 
     base_context = {
         "request": MockRequest(),
-        "spelling_pref": "simplified",
         "gram_class_labels": GRAM_CLASS_LABELS,
     }
 
@@ -693,6 +632,7 @@ def generate_lesson_pages(db_path: str, output_dir: Path) -> dict:
 
     template_dir = PROJECT_ROOT / "web" / "templates"
     env = Environment(loader=FileSystemLoader(str(template_dir)))
+    spelling.register(env)          # both spellings of a word; the switch at the top shows one (web/spelling.py)
     env.filters['format_pitch'] = format_pitch_filter
 
     class MockRequest:
@@ -703,7 +643,6 @@ def generate_lesson_pages(db_path: str, output_dir: Path) -> dict:
 
     base_context = {
         "request": MockRequest(),
-        "spelling_pref": "simplified",
         "gram_class_labels": GRAM_CLASS_LABELS,
     }
 

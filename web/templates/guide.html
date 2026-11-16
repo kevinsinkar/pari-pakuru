@@ -28,7 +28,7 @@
             Consonants: <span lang="x-paw">p, t, k, č, c, s, h, r, w</span> and <span lang="x-paw">’</span>.
             A long vowel has a circumflex; <span lang="x-paw">č</span> is the sound of “catch”,
             <span lang="x-paw">c</span> the sound of “cats”, and <span lang="x-paw">’</span> the catch in “uh-oh”.
-            That is the learner spelling this site puts first.
+            That is the learner spelling of this site: the switch at the top of the page, <em>Spelling</em>, puts it first.
         </p>
         <p>
             The dictionary's own letters differ in two ways, and so does the Alphabet Book of 2002: a long vowel
@@ -61,17 +61,13 @@
 
     <h3>The letters</h3>
     <p>
-        Below you'll find the <strong>Parks notation</strong> (used in the dictionary headwords),
-        our <strong>simplified respelling</strong> (shown throughout this site),
-        and English approximations to help with pronunciation.
+        Below you'll find the <strong>Parks notation</strong> (the dictionary's own spelling, which this site
+        shows first), the <strong>learner spelling</strong> (the same words respelt letter by letter, which the
+        switch at the top of the page puts first), and English approximations to help with pronunciation.
     </p>
     <p style="font-size:0.85em; color:var(--earth-500);">
-        {% if spelling_pref == 'parks' %}
-        You're viewing with <strong>Parks spelling</strong> as primary.
-        {% else %}
-        You're viewing with <strong>Simplified spelling</strong> as primary.
-        {% endif %}
-        Use the spelling toggle in the nav bar to switch.
+        <span class="when-parks">You're viewing with <strong>Parks spelling</strong> as primary.</span><span class="when-learner">You're viewing with the <strong>learner spelling</strong> as primary.</span>
+        The switch at the top of the page, <em>Spelling</em>, changes it.
     </p>
 
     <!-- ============================================================ -->
@@ -81,19 +77,17 @@
     <table class="guide-table">
         <thead>
             <tr>
-                {% if spelling_pref == 'parks' %}
-                <th>Parks</th>
-                <th>Simplified</th>
-                {% else %}
-                <th>Simplified</th>
-                <th>Parks</th>
-                {% endif %}
+                
+                <th class="when-parks">Parks</th>
+                <th class="when-parks">Learner</th>
+                <th class="when-learner">Learner</th>
+                <th class="when-learner">Parks</th>
+                
                 <th>English Approximation</th>
                 <th>Notes</th>
             </tr>
         </thead>
-        <tbody>
-            {% if spelling_pref == 'parks' %}
+        <tbody class="when-parks">
             <tr>
                 <td class="ipa guide-primary-col">p</td>
                 <td class="guide-secondary-col">p</td>
@@ -116,7 +110,7 @@
                 <td class="ipa guide-primary-col">c</td>
                 <td class="guide-secondary-col">c / &#x010D;</td>
                 <td>"ts" as in ca<strong>ts</strong> before a consonant and at the end of a word; "ch" as in <strong>ch</strong>urch before a vowel</td>
-                <td>Parks uses <strong>c</strong> for both sounds. The simplified spelling distinguishes them: <strong>c</strong> = ts, <strong>&#x010D;</strong> = ch</td>
+                <td>Parks uses <strong>c</strong> for both sounds. The learner spelling distinguishes them: <strong>c</strong> = ts, <strong>&#x010D;</strong> = ch</td>
             </tr>
             <tr>
                 <td class="ipa guide-primary-col">s</td>
@@ -148,7 +142,8 @@
                 <td>The catch in <em>uh-oh</em></td>
                 <td>Glottal stop &mdash; a brief closure of the throat. At word end, the vowel is cut short with a slight echo</td>
             </tr>
-            {% else %}
+            </tbody>
+        <tbody class="when-learner">
             <tr>
                 <td class="guide-primary-col">p</td>
                 <td class="ipa guide-secondary-col">p</td>
@@ -177,7 +172,7 @@
                 <td class="guide-primary-col">&#x010D;</td>
                 <td class="ipa guide-secondary-col">c</td>
                 <td><strong>ch</strong>urch, <strong>ch</strong>in</td>
-                <td>Parks writes both as <strong>c</strong>; simplified uses <strong>&#x010D;</strong> to mark the "ch" sound</td>
+                <td>Parks writes both as <strong>c</strong>; the learner spelling uses <strong>&#x010D;</strong> to mark the "ch" sound</td>
             </tr>
             <tr>
                 <td class="guide-primary-col">s</td>
@@ -209,7 +204,7 @@
                 <td>The catch in <em>uh-oh</em></td>
                 <td>Glottal stop &mdash; a brief closure of the throat. At word end, the vowel is cut short with a slight echo</td>
             </tr>
-            {% endif %}
+            
         </tbody>
     </table>
     </div>
@@ -260,33 +255,29 @@
         Pawnee has four basic vowel qualities. Each can be <strong>short</strong>
         or <strong>long</strong> (held about twice as long). Vowel length changes
         meaning, so pay attention to it.
-        {% if spelling_pref != 'parks' %}
-        In the simplified spelling, long vowels use a <strong>circumflex</strong>:
-        &acirc;, &icirc;, &ucirc;.
-        {% else %}
-        In Parks notation, long vowels are simply <strong>doubled</strong>:
-        aa, ii, uu.
-        {% endif %}
+        <span class="when-parks">In Parks notation, long vowels are simply <strong>doubled</strong>:
+        aa, ii, uu.</span><span class="when-learner">In the learner spelling, long vowels use a <strong>circumflex</strong>:
+        &acirc;, &icirc;, &ucirc;.</span>
     </p>
 
     <div class="guide-table-wrap">
     <table class="guide-table">
         <thead>
             <tr>
-                {% if spelling_pref == 'parks' %}
-                <th>Parks</th>
-                <th>Simplified</th>
-                {% else %}
-                <th>Simplified</th>
-                <th>Parks</th>
-                {% endif %}
+                
+                <th class="when-parks">Parks</th>
+                <th class="when-parks">Learner</th>
+                <th class="when-learner">Learner</th>
+                <th class="when-learner">Parks</th>
+                
                 <th>Sounds Like</th>
                 <th>Mouth Position</th>
             </tr>
         </thead>
         <tbody>
             <tr class="guide-section-row"><td colspan="4"><strong>Short Vowels</strong></td></tr>
-            {% if spelling_pref == 'parks' %}
+            </tbody>
+        <tbody class="when-parks">
             <tr>
                 <td class="ipa guide-primary-col">a</td>
                 <td class="guide-secondary-col">a</td>
@@ -324,7 +315,8 @@
                 <td>r<strong>u</strong>de, r<strong>u</strong>ler</td>
                 <td>Same as <strong>u</strong> but held longer</td>
             </tr>
-            {% else %}
+            </tbody>
+        <tbody class="when-learner">
             <tr>
                 <td class="guide-primary-col">a</td>
                 <td class="ipa guide-secondary-col">a</td>
@@ -362,27 +354,23 @@
                 <td>r<strong>u</strong>de, r<strong>u</strong>ler</td>
                 <td>Same as <strong>u</strong> but held longer</td>
             </tr>
-            {% endif %}
+            
         </tbody>
     </table>
     </div>
 
     <details class="guide-note" open>
-        <summary>Note: <strong>u</strong> vs <strong>{% if spelling_pref == 'parks' %}uu{% else %}&ucirc;{% endif %}</strong> in pronunciation</summary>
+        <summary>Note: <strong>u</strong> vs <strong><span class="when-parks">uu</span><span class="when-learner">&ucirc;</span></strong> in pronunciation</summary>
         <p>
             In the pronunciation guide (e.g. <em>PIHT-koo</em>), both short
             <strong>u</strong> and long
-            <strong>{% if spelling_pref == 'parks' %}uu{% else %}&ucirc;{% endif %}</strong>
+            <strong><span class="when-parks">uu</span><span class="when-learner">&ucirc;</span></strong>
             are written as "oo" &mdash; English doesn't have a standard way to
             show this difference. To tell them apart, check the spelling:
-            {% if spelling_pref == 'parks' %}
-            <strong>u</strong> = short, <strong>uu</strong> = long (held longer).
-            {% else %}
-            <strong>u</strong> = short, <strong>&ucirc;</strong> (circumflex) = long (held longer).
-            {% endif %}
+            <span class="when-parks"><strong>u</strong> = short, <strong>uu</strong> = long (held longer).</span><span class="when-learner"><strong>u</strong> = short, <strong>&ucirc;</strong> (circumflex) = long (held longer).</span>
             For example: <span class="ipa" lang="x-paw">pitku</span> has short u,
-            while <span class="ipa" lang="x-paw">{% if spelling_pref == 'parks' %}aruusa{% else %}ar&ucirc;sa{% endif %}</span>
-            (horse) has long {% if spelling_pref == 'parks' %}uu{% else %}&ucirc;{% endif %}.
+            while <span class="ipa" lang="x-paw"><span class="when-parks">aruusa</span><span class="when-learner">ar&ucirc;sa</span></span>
+            (horse) has long <span class="when-parks">uu</span><span class="when-learner">&ucirc;</span>.
         </p>
     </details>
 
@@ -486,8 +474,8 @@
             (e.g., <span class="ipa" lang="x-paw">taraha</span>)
         </li>
         <li>
-            <strong>Simplified</strong> &mdash; a learner-friendly respelling
-            with circumflex long vowels
+            <strong>Learner spelling</strong> &mdash; a learner-friendly respelling
+            with circumflex long vowels, which the switch at the top of the page puts first
             (e.g., <span lang="x-paw">taraha</span> &mdash; same here since
             no long vowels)
         </li>
@@ -497,14 +485,10 @@
         </li>
     </ol>
     <p>
-        {% if spelling_pref != 'parks' %}
-        The simplified spelling uses <strong>&acirc;</strong> for long a,
+        <span class="when-parks">The Parks spelling uses <strong>doubled vowels</strong> (aa, ii, uu)
+        for length and <strong>&#x0294;</strong> for the glottal stop.</span><span class="when-learner">The learner spelling uses <strong>&acirc;</strong> for long a,
         <strong>&icirc;</strong> for long i, <strong>&ucirc;</strong> for long u,
-        and <strong>'</strong> for the glottal stop.
-        {% else %}
-        The Parks spelling uses <strong>doubled vowels</strong> (aa, ii, uu)
-        for length and <strong>&#x0294;</strong> for the glottal stop.
-        {% endif %}
+        and <strong>'</strong> for the glottal stop.</span>
         When in doubt, the IPA form is the most precise guide.
     </p>
 
@@ -515,18 +499,16 @@
     <table class="guide-table">
         <thead>
             <tr>
-                {% if spelling_pref == 'parks' %}
-                <th>Parks</th>
-                <th>Simplified</th>
-                {% else %}
-                <th>Simplified</th>
-                <th>Parks</th>
-                {% endif %}
+                
+                <th class="when-parks">Parks</th>
+                <th class="when-parks">Learner</th>
+                <th class="when-learner">Learner</th>
+                <th class="when-learner">Parks</th>
+                
                 <th>Meaning</th>
             </tr>
         </thead>
-        <tbody>
-            {% if spelling_pref == 'parks' %}
+        <tbody class="when-parks">
             <tr>
                 <td class="ipa guide-primary-col" lang="x-paw">taraha&#x0294;</td>
                 <td class="guide-secondary-col" lang="x-paw">taraha'</td>
@@ -552,7 +534,8 @@
                 <td class="guide-secondary-col" lang="x-paw">k&acirc;ka'</td>
                 <td>crow</td>
             </tr>
-            {% else %}
+            </tbody>
+        <tbody class="when-learner">
             <tr>
                 <td class="guide-primary-col" lang="x-paw">taraha'</td>
                 <td class="ipa guide-secondary-col" lang="x-paw">taraha&#x0294;</td>
@@ -578,7 +561,7 @@
                 <td class="ipa guide-secondary-col" lang="x-paw">kaaka&#x0294;</td>
                 <td>crow</td>
             </tr>
-            {% endif %}
+            
         </tbody>
     </table>
     </div>

@@ -270,6 +270,61 @@ vm.runInContext(fs.readFileSync(path.join(docs, 'static', 'js', 'search.js'), 'u
     webPage.includes('are not always the same piece') && webPage.includes('href="words.html') &&
     page('words.html').includes('href="wordweb.html"') && page('static/js/words.js').includes('wordweb.html?piece='));
 
+  // ---- the two spellings (2026-11-15, evening): the dictionary's own is shown unless the visitor chooses the
+  // learner spelling with the switch at the top. Every page carries both; nothing is respelt in the browser.
+  {                                   // a block of its own: its names are common ones
+  const spell = vm.runInContext('Skiri.spell', sandbox), spellOther = vm.runInContext('Skiri.spellOther', sandbox);
+  const escHtml = vm.runInContext('Skiri.esc', sandbox);
+  const twice = (parks, learner) => `<span class="when-parks">${escHtml(parks)}</span><span class="when-learner">${escHtml(learner)}</span>`;
+  check('spelling: a word is written in both spellings, the dictionary\'s where a page shows a word first',
+    spell('sakuuruʔ', "sakûru'") === twice('sakuuruʔ', "sakûru'") && spellOther('sakuuruʔ', "sakûru'") === twice("sakûru'", 'sakuuruʔ') &&
+    spell('kuruks', 'kuruks') === 'kuruks' && spell('pa', '') === 'pa' && spellOther('kuruks', 'kuruks') === '' && spellOther('pa', null) === '');
+  const kept = {};
+  const oldStore = sandbox.window.localStorage;
+  sandbox.window.localStorage = { getItem: k => (k in kept ? kept[k] : null), setItem: (k, v) => { kept[k] = String(v); } };
+  const sp = vm.runInContext('Skiri.spelling', sandbox);
+  const first = sp.get(), chosen = sp.set('learner'), after = sp.get(), back = sp.set('something else');
+  sandbox.window.localStorage = { getItem() { throw new Error('no storage'); }, setItem() { throw new Error('no storage'); } };
+  const without = sp.get();
+  sandbox.window.localStorage = oldStore;
+  check('spelling: the dictionary\'s spelling until the visitor chooses; the choice is kept in the browser; without storage nothing breaks',
+    first === 'parks' && chosen === 'learner' && after === 'learner' && kept.spelling === 'parks' && back === 'parks' && without === 'parks');
+  const css = page('static/css/pawnee-theme.css');
+  const pageNames = fs.readdirSync(docs).filter(f => f.endsWith('.html'));
+  const noSwitch = pageNames.filter(f => {
+    const h = page(f);
+    return !(/<html lang="en" data-theme="light" data-spelling="parks">/.test(h) && h.includes("localStorage.getItem('spelling') === 'learner'") &&
+      h.includes('id="spelling-switch"') && /data-spelling="parks" aria-pressed="true"/.test(h) && /data-spelling="learner" aria-pressed="false"/.test(h));
+  });
+  check(`spelling: every page opens in the dictionary's spelling and has the switch at the top (${pageNames.length} pages, ${noSwitch.length} without)`,
+    noSwitch.length === 0 && /html\[data-spelling="parks"\] \.when-learner,[\s\S]{0,80}html\[data-spelling="learner"\] \.when-parks \{ display: none !important; \}/.test(css));
+  const count = (h, s) => h.split(s).length - 1;
+  const uneven = pageNames.filter(f => count(page(f), 'class="when-parks"') !== count(page(f), 'class="when-learner"'));
+  const withBoth = cards.filter(c => c.p);
+  const cardPages = pr.weeks.map(w => page('flashcard-' + w.week + '.html')).join('\n');
+  const cardsAstray = withBoth.filter(c => !cardPages.includes(`<div class="fc-front-word" lang="x-paw">${twice(c.p, c.w)}</div>`) ||
+    !cardPages.includes(`<div class="fc-front-parks" lang="x-paw">${twice(c.w, c.p)}</div>`));
+  check(`spelling: each of the ${withBoth.length} flashcard words with two spellings has the dictionary's large and the learner spelling small, and the other way when chosen (${cardsAstray.length} not; ${uneven.length} pages with one spelling missing)`,
+    withBoth.length > 200 && cardsAstray.length === 0 && uneven.length === 0);
+  run('sakuuruʔ', 'skiri');
+  const lessonOne = page('lesson-1.html');
+  check('spelling: a search result and a lesson\'s dictionary column carry both spellings',
+    html.includes(`<h3 lang="x-paw">${twice('sakuuruʔ', "sakûru'")}</h3>`) &&
+    html.includes(`<span class="secondary-spelling" lang="x-paw">${twice("sakûru'", 'sakuuruʔ')}</span>`) &&
+    lessonOne.includes(twice('hiituʔ', "hîtu'")));
+  const guide = page('guide.html');
+  check('spelling: the Sounds page holds its tables for both spellings, and the pages that keep the dictionary\'s spelling say so to a visitor who chose the other',
+    count(guide, '<tbody class="when-parks">') === 3 && count(guide, '<tbody class="when-learner">') === 3 &&
+    ['words.html', 'wordweb.html', 'verbs.html'].every(f => /class="spelling-stays when-learner"/.test(page(f))));
+  const old = [/The large word on the card: the learner spelling/, /learner spelling this site puts first/, /learner spelling the dictionary pages put\s+first/, /Search simplified Skiri/, /Use the spelling toggle in the nav bar/, /spelling_pref/];
+  const sample = page('flashcards.html');
+  const exampleWord = (sample.match(/fc-example-value fc-front-word" lang="x-paw"><span class="when-parks">([^<]*)<\/span>/) || [])[1];
+  const exampleMeaning = (sample.match(/fc-example-value fc-back-definition">([^<]*)<\/span>/) || [])[1];
+  const exampleCard = cards.find(c => escHtml(c.p) === exampleWord);
+  check(`spelling: no page still says the learner spelling comes first, and the card that explains a flashcard is a card of the data (${exampleWord})`,
+    !everyPage.some(h => old.some(rx => rx.test(h))) && Boolean(exampleCard) && exampleCard.def === exampleMeaning && !sample.includes('akahwi'));
+  }
+
   // every page is there, has no link left over from the local app, and links only to files that exist
   const pages = fs.readdirSync(docs).filter(f => f.endsWith('.html'));
   const wanted = ['index', 'learn', 'guide', 'words', 'wordweb', 'verbs', 'practice', 'topics', 'lessons', 'phrases', 'flashcards', 'resources', 'about'];

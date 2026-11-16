@@ -58,7 +58,7 @@
     <td>
       {% if v.entry_id %}
         {% if v.form_of_stem %}<small class="lesson-formof">a form of</small>{% endif %}
-        <a href="/entry/{{ v.entry_id }}" lang="x-paw">{{ v.normalized_form or v.headword }}</a>
+        <a href="/entry/{{ v.entry_id }}" lang="x-paw">{{ v|primary_spelling }}</a>
         {% if v.grammatical_class %}<span class="badge badge-class">{{ v.grammatical_class }}</span>{% endif %}
         {% if v.hear %}<a class="hear-link hear-link--small" data-hear="{{ v.headword|e }}" href="https://aisri-language-database.webapps.iu.edu/dictsearch/"
            target="_blank" rel="noopener" title="Opens a search for this word in Indiana University's Skiri dictionary; some entries there have a recording">hear</a>{% endif %}
@@ -93,8 +93,9 @@
     <li><strong>Blue Book</strong> — the practical spelling printed in
         <em>Pari Pakuru'</em> (1979), exactly as the Pawnee Cultural Retention
         Committee wrote it, with a raised dot between the parts of a word.</li>
-    <li><strong>Entry</strong> — the dictionary entry the word could be tied to, in the learner
-        spelling of the Parks Dictionary, with a circumflex (&#226;) marking long vowels.
+    <li><strong>Entry</strong> — the dictionary entry the word could be tied to, in the dictionary's own
+        spelling, with a long vowel written double (aa). The switch at the top of the page, <em>Spelling</em>,
+        changes it to the learner spelling, with a circumflex (&#226;) marking long vowels.
         Where no entry could be tied to a word, the cell says so; the word may still be in the dictionary
         under its stem.</li>
     <li><strong>Say it</strong> — the simplified pronunciation of that dictionary entry.

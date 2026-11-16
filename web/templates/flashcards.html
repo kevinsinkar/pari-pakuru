@@ -15,7 +15,11 @@
 {% set dialect_for = 'cards' %}
 {% include "_dialect_line.html" %}
 
-<!-- Example card guide -->
+{# How to read a card. The example is a card of the weeks shown, taken from the data, so that it always says what
+   the card itself says (until 2026-11-15 a word was written out here by hand, with a wrong meaning). #}
+{% set ex = namespace(card=none) %}
+{% for s in sets %}{% for c in s.cards %}{# a word that shows what there is to read: a long vowel, the catch in the throat, an accented syllable #}{% if not ex.card and c.normalized_form and c.normalized_form != c.headword and "'" in c.normalized_form and ('â' in c.normalized_form or 'î' in c.normalized_form or 'û' in c.normalized_form) and c.phonetic_form and c.simplified_pronunciation and c.simplified_pronunciation != c.simplified_pronunciation|lower and c.page_number and c.blue_book_attested and c.grammatical_class %}{% set ex.card = c %}{% endif %}{% endfor %}{% endfor %}
+{% if ex.card %}
 <details class="fc-guide" open>
     <summary><strong>How to read a flashcard</strong></summary>
     <p class="pitch-note" style="margin:0.5rem 0;">
@@ -28,20 +32,20 @@
             <h4>Front (study side)</h4>
             <div class="fc-example-card fc-example-front">
                 <div class="fc-example-row">
-                    <span class="fc-example-value fc-front-word">akahwi'&ucirc;sis</span>
-                    <span class="fc-example-label">Respelled form — learner-friendly spelling with accent marks</span>
+                    <span class="fc-example-value fc-front-word" lang="x-paw">{{ ex.card|primary_spelling }}</span>
+                    <span class="fc-example-label"><span class="when-parks">The word as the dictionary spells it</span><span class="when-learner">Respelled form — learner-friendly spelling with accent marks</span></span>
                 </div>
                 <div class="fc-example-row">
-                    <span class="fc-example-value fc-front-pron"><span class="pitch-high">UH</span>-kuhh-wih-'oo-sihs</span>
+                    <span class="fc-example-value fc-front-pron">{{ ex.card.simplified_pronunciation|format_pitch }}</span>
                     <span class="fc-example-label">Pronunciation guide — <strong>bold underline</strong> = accented syllable</span>
                 </div>
                 <div class="fc-example-row">
-                    <span class="fc-example-value fc-front-parks">akahwiʔuusis</span>
-                    <span class="fc-example-label">Parks Dictionary spelling — the linguistic transcription</span>
+                    <span class="fc-example-value fc-front-parks" lang="x-paw">{{ ex.card|secondary_spelling }}</span>
+                    <span class="fc-example-label"><span class="when-parks">Respelled form — learner-friendly spelling with accent marks. The switch at the top of the page, <em>Spelling</em>, puts it first</span><span class="when-learner">Parks Dictionary spelling — the word as the dictionary prints it</span></span>
                 </div>
                 <div class="fc-example-row">
-                    <span class="fc-example-value"><span class="badge badge-class">N</span> <span class="badge badge-bb">P&acirc;ri Pak&ucirc;ru'</span></span>
-                    <span class="fc-example-label">Badges — grammatical class (N = noun) and textbook attestation</span>
+                    <span class="fc-example-value"><span class="badge badge-class">{{ ex.card.grammatical_class }}</span> <span class="badge badge-bb">P&acirc;ri Pak&ucirc;ru'</span></span>
+                    <span class="fc-example-label">Badges — grammatical class ({{ gram_class_labels.get(ex.card.grammatical_class, ex.card.grammatical_class) }}) and textbook attestation</span>
                 </div>
             </div>
         </div>
@@ -49,29 +53,30 @@
             <h4>Back (answer side)</h4>
             <div class="fc-example-card fc-example-back">
                 <div class="fc-example-row">
-                    <span class="fc-example-value fc-back-definition">boy</span>
+                    <span class="fc-example-value fc-back-definition">{{ ex.card.definition }}</span>
                     <span class="fc-example-label fc-example-label-back">English definition</span>
                 </div>
                 <div class="fc-example-row">
-                    <span class="fc-example-value fc-back-word">akahwi'&ucirc;sis</span>
-                    <span class="fc-example-label fc-example-label-back">Respelled form (same as front)</span>
+                    <span class="fc-example-value fc-back-word" lang="x-paw">{{ ex.card|primary_spelling }}</span>
+                    <span class="fc-example-label fc-example-label-back">The word (same as front)</span>
                 </div>
                 <div class="fc-example-row">
-                    <span class="fc-example-value fc-back-pron"><span class="pitch-high">UH</span>-kuhh-wih-'oo-sihs</span>
+                    <span class="fc-example-value fc-back-pron">{{ ex.card.simplified_pronunciation|format_pitch }}</span>
                     <span class="fc-example-label fc-example-label-back">Pronunciation guide — bold underline = accented syllable</span>
                 </div>
                 <div class="fc-example-row">
-                    <span class="fc-example-value fc-back-ipa">[a.kah.wiʔ.uu.sis]</span>
-                    <span class="fc-example-label fc-example-label-back">IPA phonetic transcription (from Parks)</span>
+                    <span class="fc-example-value fc-back-ipa" lang="x-paw">{{ ex.card.phonetic_form }}</span>
+                    <span class="fc-example-label fc-example-label-back">Phonetic form, as the dictionary prints it</span>
                 </div>
                 <div class="fc-example-row">
-                    <span class="fc-example-value fc-back-parks">Parks: akahwiʔuusis</span>
-                    <span class="fc-example-label fc-example-label-back">Original Parks Dictionary spelling</span>
+                    <span class="fc-example-value fc-back-parks" lang="x-paw"><span class="when-parks">Learner spelling: {{ ex.card.normalized_form }}</span><span class="when-learner">Parks: {{ ex.card.headword }}</span></span>
+                    <span class="fc-example-label fc-example-label-back">The same word in the other spelling</span>
                 </div>
             </div>
         </div>
     </div>
 </details>
+{% endif %}
 
 {# Learning path timeline #}
 <div class="fc-path" id="fc-path">

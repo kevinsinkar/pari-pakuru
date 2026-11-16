@@ -16,7 +16,7 @@ import sys
 from datetime import date
 from urllib.parse import quote
 
-from flask import Flask, g, jsonify, redirect, render_template, request, abort, make_response
+from flask import Flask, g, jsonify, redirect, render_template, request, abort
 from markupsafe import Markup
 
 # Ensure project root is on path
@@ -27,6 +27,7 @@ from web.db import SkiriWebDictionary
 from web.search import search_combined
 from web.search_ranking import rank_results
 from web.flashcards import held_weeks, load_sets
+from web import spelling
 
 DATABASE = os.path.join(PROJECT_ROOT, "skiri_pawnee.db")
 
@@ -192,54 +193,23 @@ def set_charset(response):
 
 @app.context_processor
 def inject_helpers():
-    spelling_pref = request.cookies.get("spelling", "simplified")
     return {
         "abs": abs,
         "min": min,
         "max": max,
-        "spelling_pref": spelling_pref,
         "gram_class_labels": GRAM_CLASS_LABELS,
     }
 
 
-@app.template_filter("primary_spelling")
-def primary_spelling(entry):
-    """Return the preferred primary spelling for an entry."""
-    pref = request.cookies.get("spelling", "simplified")
-    if pref == "parks":
-        return entry.headword if hasattr(entry, "headword") else entry.get("headword", "")
-    # simplified
-    nf = entry.normalized_form if hasattr(entry, "normalized_form") else entry.get("normalized_form")
-    hw = entry.headword if hasattr(entry, "headword") else entry.get("headword", "")
-    return nf if nf and nf != hw else hw
-
-
-@app.template_filter("secondary_spelling")
-def secondary_spelling(entry):
-    """Return the secondary (non-preferred) spelling for an entry."""
-    pref = request.cookies.get("spelling", "simplified")
-    hw = entry.headword if hasattr(entry, "headword") else entry.get("headword", "")
-    nf = entry.normalized_form if hasattr(entry, "normalized_form") else entry.get("normalized_form")
-    if pref == "parks":
-        return nf if nf and nf != hw else None
-    # simplified: secondary is Parks
-    return hw if nf and nf != hw else None
+# The two spellings of a word. A page shows the dictionary's (Parks's) unless the visitor has chosen the learner
+# spelling with the switch at the top; the choice is kept in the browser, so every page carries both and the
+# server holds no preference (web/spelling.py: the filters primary_spelling and secondary_spelling).
+spelling.register(app)
 
 
 # ------------------------------------------------------------------
 # Routes
 # ------------------------------------------------------------------
-
-@app.route("/preferences", methods=["POST"])
-def set_preferences():
-    """Set user preferences (spelling toggle) via cookie and redirect back."""
-    spelling = request.form.get("spelling", "simplified")
-    if spelling not in ("parks", "simplified"):
-        spelling = "simplified"
-    referrer = request.referrer or "/"
-    resp = make_response(redirect(referrer))
-    resp.set_cookie("spelling", spelling, max_age=365 * 24 * 3600, samesite="Lax")
-    return resp
 
 
 @app.route("/")

@@ -1,7 +1,7 @@
 {#
   _pronunciation_help.html — Compact pronunciation key tooltip
   Include next to any pronunciation display.
-  Adapts content based on spelling_pref (parks vs simplified).
+  Holds the key for both spellings; the switch at the top of the page shows one (.when-parks, .when-learner).
 #}
 <span class="pron-help-trigger" tabindex="0" aria-label="Pronunciation key" role="button">
   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;">
@@ -9,8 +9,7 @@
   </svg>
   <span class="pron-help-popup" role="tooltip">
     <strong>Pronunciation Key</strong>
-    {% if spelling_pref == 'parks' %}
-    <table class="pron-help-table">
+    <span class="when-parks"><table class="pron-help-table">
       <tr><td class="ipa">a</td><td>=</td><td>short "uh" as in "about"</td></tr>
       <tr><td class="ipa">aa</td><td>=</td><td>long "ah" as in "father"</td></tr>
       <tr><td class="ipa">i</td><td>=</td><td>short "ih" as in "sit"</td></tr>
@@ -22,9 +21,7 @@
       <tr><td class="ipa">&#x0294;</td><td>=</td><td>glottal stop (catch in "uh-oh")</td></tr>
     </table>
     <small><strong>UPPERCASE</strong> = accented syllable</small>
-    <small>u vs uu: both sound "oo" &mdash; uu is held longer</small>
-    {% else %}
-    <table class="pron-help-table">
+    <small>u vs uu: both sound "oo" &mdash; uu is held longer</small></span><span class="when-learner"><table class="pron-help-table">
       <tr><td>a</td><td>=</td><td>short "uh" as in "about"</td></tr>
       <tr><td>&acirc;</td><td>=</td><td>long "ah" as in "father"</td></tr>
       <tr><td>i</td><td>=</td><td>short "ih" as in "sit"</td></tr>
@@ -37,7 +34,6 @@
       <tr><td>'</td><td>=</td><td>glottal stop (catch in "uh-oh")</td></tr>
     </table>
     <small><strong>UPPERCASE</strong> = accented syllable</small>
-    <small>u vs &ucirc;: both sound "oo" &mdash; &ucirc; is held longer</small>
-    {% endif %}
+    <small>u vs &ucirc;: both sound "oo" &mdash; &ucirc; is held longer</small></span>
   </span>
 </span>

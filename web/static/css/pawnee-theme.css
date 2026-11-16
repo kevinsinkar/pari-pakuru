@@ -211,43 +211,53 @@
   }
 }
 
-/* ---------- Spelling preference toggle ---------- */
-.nav-spelling-toggle {
-  list-style: none;
+/* ---------- The two spellings: the switch at the top of every page ---------- */
+/* A dictionary word stands in a page in both spellings and one is shown. <html data-spelling> says which:
+   "parks", the dictionary's own and the one shown unless the visitor chooses, or "learner" (the same words with
+   a circumflex for a long vowel, c with a hook for "ch", an apostrophe for the catch in the throat). The choice is kept in the
+   visitor's browser (Skiri.spelling in static/js/skiri.js). web/spelling.py and Skiri.spell() write the two. */
+html[data-spelling="parks"] .when-learner,
+html:not([data-spelling]) .when-learner,
+html[data-spelling="learner"] .when-parks { display: none !important; }
+
+.header-row {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem 1rem;
 }
-.spelling-toggle-form {
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
-  margin: 0;
-  padding: 0.25rem 0;
-}
-.spelling-toggle-label {
-  font-size: 0.75rem;
-  color: var(--earth-500);
-  margin-right: 0.25rem;
-  white-space: nowrap;
-}
+.header-row .nav-search { flex: 1 1 16rem; max-width: 400px; }
+.spelling-switch { display: flex; align-items: center; gap: 0.3rem; margin-left: auto; padding: 0.25rem 0; }
+.spelling-switch__label { font-size: 0.8rem; color: var(--earth-600); margin-right: 0.2rem; white-space: nowrap; }
 .spelling-btn {
-  padding: 0.15rem 0.5rem;
+  width: auto;
+  padding: 0.2rem 0.7rem;
   border-radius: 0.4rem;
-  font-size: 0.7rem;
+  font-size: 0.82rem;
   cursor: pointer;
   border: 1px solid var(--earth-200);
-  background: transparent;
-  color: var(--earth-600);
+  background: #FFFFFF;
+  color: var(--earth-700);
   transition: all 0.15s ease;
   margin: 0;
-  line-height: 1.4;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+.spelling-btn [lang="x-paw"] {
+  font-family: 'Source Serif 4', 'Gentium Plus', 'Charis SIL', serif; margin-left: 0.25rem; opacity: 0.8;
 }
 .spelling-btn:hover {
   background: var(--sky-50);
-}
-.spelling-btn--active {
-  background: var(--sky-50);
   border-color: var(--sky-300);
   color: var(--sky-900);
+}
+.spelling-btn[aria-pressed="true"] {
+  background: var(--sky-50);
+  border-color: var(--sky-500);
+  color: var(--sky-900);
   font-weight: 600;
+}
+/* On a page that keeps the dictionary's spelling (word building, the word web, verbs): said to a visitor who chose the other. */
+.spelling-stays {
+  font-size: 0.9rem; color: var(--earth-600); margin: 0.75rem 0 0; padding: 0.4rem 0.8rem;
+  border-left: 3px solid var(--sky-300); background: var(--sky-50); border-radius: 0 0.4rem 0.4rem 0; max-width: 46rem;
 }
 
 /* ---------- Navigation search bar ---------- */

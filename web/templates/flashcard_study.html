@@ -54,7 +54,7 @@
                 {% endif %}
                 {% set fc_back_secondary = card|secondary_spelling %}
                 {% if fc_back_secondary %}
-                <div class="fc-back-parks" lang="x-paw">{{ 'Parks' if spelling_pref == 'simplified' else 'Simplified' }}: {{ fc_back_secondary }}</div>
+                <div class="fc-back-parks" lang="x-paw"><span class="when-parks">Learner spelling: {{ card.normalized_form }}</span><span class="when-learner">Parks: {{ card.headword }}</span></div>
                 {% endif %}
                 {% if card.source == 'blue_book' %}
                 <div class="fc-back-citation">P&acirc;ri Pak&ucirc;ru' textbook</div>

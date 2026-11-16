@@ -17,11 +17,11 @@
 
   function row(entry) {
     const parks = entry.headword + (entry.stem_preverb ? ' ' + entry.stem_preverb : '');
-    const learner = entry.normalized_form || entry.headword;
+    const learner = entry.normalized_form && entry.normalized_form !== entry.headword ? entry.normalized_form : '';
     const glosses = entry.glosses || [];
     return `<li class="family-item">
-      <div class="family-head"><a class="family-word" lang="x-paw" href="${esc(entryLink(entry.entry_id))}">${esc(learner)}</a>
-        ${learner !== parks ? `<span class="secondary-spelling" lang="x-paw">${esc(parks)}</span>` : ''}
+      <div class="family-head"><a class="family-word" lang="x-paw" href="${esc(entryLink(entry.entry_id))}">${Skiri.spell(parks, learner)}</a>
+        ${learner ? `<span class="secondary-spelling" lang="x-paw">${Skiri.spellOther(parks, learner)}</span>` : ''}
         ${entry.grammatical_class ? `<span class="gram-class">${esc(entry.grammatical_class)}</span>` : ''}
         ${entry.blue_book_attested ? '<span class="badge-attested">Blue Book</span>' : ''}</div>
       <div class="family-build"><span class="family-gloss">${esc(glosses.length ? glosses[0].definition : '')}</span>

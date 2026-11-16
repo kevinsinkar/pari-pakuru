@@ -87,14 +87,19 @@
     return out;
   }
 
+  // A card of the practice data has the learner spelling in `w` and the dictionary's in `p` when the two differ.
+  // The page shows the dictionary's unless the visitor chose the learner spelling (the switch at the top).
+  const word = card => Skiri.spell(card.p || card.w, card.p ? card.w : '');
+  const otherWord = card => Skiri.spellOther(card.p || card.w, card.p ? card.w : '');
+
   function cardFace(card) {
-    return `<span class="q-word" lang="x-paw">${esc(card.w)}</span>` +
+    return `<span class="q-word" lang="x-paw">${word(card)}</span>` +
       (card.say ? `<span class="q-say">${esc(card.say)}</span>` : '');
   }
 
   function cardAnswer(card) {
-    return `<div class="answer-card"><span class="q-word" lang="x-paw">${esc(card.w)}</span>
-      ${card.p ? `<span class="secondary-spelling" lang="x-paw">${esc(card.p)}</span>` : ''}
+    return `<div class="answer-card"><span class="q-word" lang="x-paw">${word(card)}</span>
+      ${card.p ? `<span class="secondary-spelling" lang="x-paw">${otherWord(card)}</span>` : ''}
       ${card.say ? `<span class="q-say">${esc(card.say)}</span>` : ''}
       ${card.ipa ? `<span class="result-ipa" lang="x-paw">${esc(card.ipa)}</span>` : ''}
       <span class="answer-def">${esc(card.def)}</span>
@@ -113,7 +118,7 @@
         id: card.id,
         prompt: game === 'meaning' ? cardFace(card) : `<span class="q-def">${esc(card.def)}</span>`,
         ask: game === 'meaning' ? 'What does it mean?' : 'Which word is it?',
-        options: options.map(o => ({ html: game === 'meaning' ? esc(o.def) : `<span lang="x-paw">${esc(o.w)}</span>`, right: o.id === card.id })),
+        options: options.map(o => ({ html: game === 'meaning' ? esc(o.def) : `<span lang="x-paw">${word(o)}</span>`, right: o.id === card.id })),
         after: cardAnswer(card),
       };
     });
@@ -286,7 +291,7 @@
       stage().innerHTML = `<div class="fc-progress"><span>Board ${board + 1} of ${boards.length}</span>
           <progress value="${board + 1}" max="${boards.length}"></progress></div>
         <div class="match-board">
-          <div class="match-col">${left.map(c => `<button type="button" class="match-tile" data-side="w" data-id="${esc(c.id)}"><span lang="x-paw">${esc(c.w)}</span></button>`).join('')}</div>
+          <div class="match-col">${left.map(c => `<button type="button" class="match-tile" data-side="w" data-id="${esc(c.id)}"><span lang="x-paw">${word(c)}</span></button>`).join('')}</div>
           <div class="match-col">${right.map(c => `<button type="button" class="match-tile" data-side="d" data-id="${esc(c.id)}">${esc(c.def)}</button>`).join('')}</div>
         </div><p class="result-usage" id="pr-match-note">Choose a word, then its meaning.</p>`;
       stage().onkeydown = null;
