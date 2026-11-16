@@ -20,9 +20,9 @@ that hosting is retired. What the public sees is the static site in
 | `search_ranking.py` | Orders results: exact matches first, Blue Book words boosted |
 | `flashcards.py` | The weekly flashcard sets. `load_sets()` serves the frozen `curriculum/flashcard_sets.json` and leaves out any week listed in `curriculum/held_for_review.json`; use it, not `generate_all_sets()`, in anything a learner sees |
 | `srs.py` | Spaced-repetition scheduling (SM-2) for `/study` |
-| `learning.py` | What the learning pages show (word building, verbs, practice, topics, the lesson pages, the phrases), for the app and for the static build alike. It copies printed forms and arranges them: `split_derivation()` cuts a derivation of the dictionary at its plus signs, `verbs_data()` reads Appendix 1 and 2 and the tables of chapter 4, `practice_data()` the flashcard weeks, `lesson_context()` puts one lesson page together, `phrases_data()` reads `curriculum/everyday_phrases.json` and refuses a line that does not stand in the lessons' text. It makes no form, and leaves out the entries tagged `ceremony` |
+| `learning.py` | What the learning pages show (word building, verbs, practice, topics, the lesson pages, the phrases), for the app and for the static build alike. It copies printed forms and arranges them: `split_derivation()` cuts a derivation of the dictionary at its plus signs, `verbs_data()` reads Appendix 1 and 2 and the tables of chapter 4, `practice_data()` the flashcard weeks, `lesson_context()` puts one lesson page together, `phrases_data()` reads `curriculum/everyday_phrases.json` and refuses a line that does not stand in the lessons' text, `sources_data()` gives the page "Learn with others" the sources the register marks for learners, and `south_band_spelling()` with `dialect_labels()` give the marks SK, SB and "SB spelling". It makes no form, and leaves out the entries tagged `ceremony` |
 | `templates/` | Jinja templates. Files starting with `_` are fragments included by others |
-| `static/` | CSS and the scripts. `js/search.js` is the search of the published site: it runs in the visitor's browser over `docs/data/dictionary.json` and shows the whole entry, with a link for sending a correction (the local app searches on the server and does not use it). `js/skiri.js` holds what the learning pages share: a phonetic form cut at its syllable dots with a hint for each symbol, the pieces of a derivation as a row of chips, the box that remembers when a flashcard word is due again (`Skiri.box`, kept in the visitor's browser), and the buttons that cover one side of a dialogue or a phrase (`Skiri.coverTools`). `js/words.js`, `verbs.js`, `practice.js`, `sounds.js` and `topics.js` each drive one page |
+| `static/` | CSS and the scripts. `js/search.js` is the search of the published site: it runs in the visitor's browser over `docs/data/dictionary.json` and shows the whole entry, with a link for sending a correction (the local app searches on the server and does not use it). `js/skiri.js` holds what the learning pages share: a phonetic form cut at its syllable dots with a hint for each symbol, the pieces of a derivation as a row of chips, the box that remembers when a flashcard word is due again (`Skiri.box`, kept in the visitor's browser), and the buttons that cover one side of a dialogue or a phrase (`Skiri.coverTools`). `js/words.js`, `wordweb.js`, `verbs.js`, `practice.js`, `sounds.js` and `topics.js` each drive one page. `wordweb.js` is in two halves: the model and the layout of the picture, which need no page and are run by `scripts/check_static_site.js`, and the drawing |
 
 The routes are listed in the [quick reference](../Quick_Reference_Guide.md#web-app-routes).
 
@@ -37,16 +37,19 @@ and `template_slot_fillers.py`). Changing those changes the app.
 
 Only through the static site: `scripts/build_static_site.py` renders a subset
 of these templates into `docs/` and rewrites the links: home, about, the
-learning pages (`learn.html` "Start here", `guide.html` "Sounds", `words.html`,
-`verbs.html`, `practice.html`, `topics.html`, `phrases.html`), flashcards and
-lessons. See
+learning pages (`learn.html` "Start here", `guide.html` "Sounds", `words.html`, `wordweb.html`,
+`verbs.html`, `practice.html`, `topics.html`, `phrases.html`, `resources.html`),
+flashcards and lessons. See
 [../DEPLOYMENT.md](../DEPLOYMENT.md). When you change one of those templates,
 rebuild the site, run `node scripts/check_static_site.js` and look at the
 result.
 
 The learning pages read their data in the browser from `data/wordbuilding.json`,
 `data/verbs.json` and `data/practice.json`. The static build writes those files;
-the local app serves the same data at `/data/<name>.json`. `topics.html` exists
+the local app serves the same data at `/data/<name>.json`. Their scripts write
+links the way the published site names its files (`words.html?piece=...`,
+`index.html?id=...`); in the local app `/<name>.html` leads on to the same page
+(`published_name` in `app.py`). `topics.html` exists
 only on the published site (it filters `data/dictionary.json`); in the local
 app `/topics` leads to `/browse`.
 
@@ -72,15 +75,36 @@ dashboard) is seen only by someone running the app on their own machine.
   verb is conjugated. A practice question is made only of forms in those files.
   `node scripts/check_static_site.js` checks that every piece shown stands in
   the printed derivation.
+- **The word web draws what the word-building page lists, and no more.** A box
+  is an entry (headword and first meaning, whole or cut short with a mark), an
+  oval is a piece of its printed derivation, and a line joins the two only
+  where the dictionary prints that piece in that word. Words hang on one oval
+  when the piece is printed with the same letters; the page says that the same
+  letters are not always the same piece, keeps apart pieces printed with
+  different letters, and does not say what a piece means. Where a shape sits
+  carries no meaning. The same start always gives the same picture.
 - **A lesson page keeps the book's order** (basic words, dialogues, more
   words, useful phrases, notes) and cites the page numbers printed in the
   book. Its "Say it" and phonetic form are the dictionary entry's and stand
-  under the heading "In the dictionary"; a Blue Book word tied to an entry as
+  under the heading "In the Skiri dictionary"; a Blue Book word tied to an entry as
   a form of its stem (*ti•'at*, a form of *at*) gets the link and no
   pronunciation. Its Useful Phrases come from `curriculum/everyday_phrases.json`,
   not from the Blue Book table. One visible line on each lesson, flashcard and
   phrases page says which spelling to learn to write
   (`templates/_spelling_line.html`).
+- **The textbook's Pawnee carries its dialect.** A form shows the textbook's
+  own mark, SK or SB, where the page has one, and "SB spelling" where it is
+  written with *e* or *hr* (`_dialect_line.html` says why, in the textbook's
+  words). The app does not respell such a form and works out no Skiri form;
+  where a word is tied to a dictionary entry, the entry is the Skiri word.
+- **Sound is linked, never stored.** "Hear it at Indiana University" opens a
+  search for the word in that university's online Skiri dictionary
+  (`Skiri.hearUrls` in `static/js/skiri.js`). The search key is the longest
+  run of plain letters of the headword; it is never shown as a form. Words
+  found only in the textbook have no such link.
+- **"Learn with others" lists only what the register allows**
+  (`sources/catalogue.json`): a source marked for learners, never one marked
+  as ceremonial, and no e-mail address. The catalogue's scores are not shown.
 - **Spaced practice is kept in the visitor's browser** (`Skiri.box`,
   localStorage `practice-box`): a right answer on a word that is due moves it
   one of five boxes up (back after 1, 3, 7, 14, 30 days), a miss sends it to

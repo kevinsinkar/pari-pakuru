@@ -8,7 +8,8 @@ of "What's next" in the [project log](../pari_pakuru_project_scope.md).
 
 | File | What it is | In git? |
 |---|---|---|
-| `review_packet.pdf` | The packet, about 40 pages, for printing or sending | No |
+| `review_packet.pdf` | The packet, about 45 pages, for printing or sending | No |
+| `letters/` | Three letters asking for permission and review, drafted on 2026-11-15 for the owner to change and send | No |
 | `review_packet.html` | The same, as one web page | No |
 | `response_sheet.csv` | One line for each word of Parts 1 and 2, with empty columns for a decision and a note; opens in any spreadsheet | No |
 | `README.md` | This file | Yes |
@@ -37,6 +38,24 @@ only, and the page prints well from a browser.
 | 3 | The word-building guide: what it is, whether it is welcome, and the ten open questions for a speaker or linguist | Open item 1 |
 | 4 | The About page of the public site, word for word | Its wording is the project's alone (open item 47) |
 | 5 | Three questions about sound and spelling: the two kinds of short i and u; the word "accent"; and *kt* against *tt*, *r* against *n* | Open items 43 and 9. The third was added when chapter 2 of the dictionary was read on 2026-11-14: Parks writes that the dictionary's *kt* follows one speaker and that all other twentieth-century Skiri speakers said *tt* |
+
+## Added on 2026-11-15: Part 6 and the letters
+
+| Part | What | Why it is asked |
+|---|---|---|
+| 6a | The lessons of *Pari Pakuru'* on the site | The book's copyright page asks for the written permission of the Pawnee Tribal Business Council; it was not asked before the site went public |
+| 6b | Skiri and South Band: the textbook's own statements, the 20 forms it marks, and how the site now marks the rest | The site had shown the textbook as Skiri; whether its marking is right is for speakers to say |
+| 6c | The 8 other places to learn that the site points to | Whether any should not be pointed to, and what is missing |
+| 6d | 18 works on ceremony, song and sacred narrative that the project lists and has not used | Whether the list is too wide or too narrow |
+
+`letters/` holds three drafts, each with square brackets for the owner to fill in: to the Pawnee Nation's language programme and Cultural Resources Division (the packet goes with it), to the Institute for Indigenous Knowledge at Indiana University (links to its dictionary and its sound, the text collections, the dictionary's content online), and to the University of Nebraska Press (the dictionary's content online). The owner's decision of 2026-11-15: ask, and change nothing in the repository or on the site on that account until answers come.
+
+| Answer about | Where it takes effect |
+|---|---|
+| The textbook's lessons on the site | the `lessons` table and `curriculum/everyday_phrases.json`; `generate_lesson_pages` in `scripts/build_static_site.py` |
+| The two dialects | `scripts/label_bluebook_dialect.py`, `web/templates/_dialect_line.html` |
+| What the site points to; what is held back | the `project` part of `sources/catalogue.json` (`section`, `sensitive`) |
+| Content of another source | `copy` in `sources/catalogue.json` changes from `ask` only when the permission is in writing |
 
 ## Before it is sent
 

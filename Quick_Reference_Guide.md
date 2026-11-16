@@ -171,6 +171,8 @@ was read by OCR, were restored from the scan on 2026-11-13.
 | `cross_references` | 4,578 | "see also" links as printed, with the Skiri forms in braces |
 | `semantic_tags` | 4,498 | 19 topic tags on 3,314 entries |
 | `blue_book_attestations` | 1,027 | Blue Book words, phrases and sentences as read from the scan, each with the English of its own row of the page; 257 tied to an entry, each by its form |
+| `bb_dialect_labels` | 320 | The dialect mark of a Blue Book form (SK, SB, "SB spelling") with its reason |
+| `sources` | 59 | The register of sources: the two books and 57 others, with dialect, rights and how the project uses each |
 | `lessons` | 20 | Blue Book lessons: titles, dialogues, notes. The Pawnee is as read from the scan line by line (2026-11-14) |
 | `verb_paradigms` | 770 | Parks Appendix 1: 7 verbs × 10 modes × 11 persons; 152 forms corrected from the printed pages on 2026-11-13 |
 | `irregular_verb_roots` | 9 | Parks Appendix 2 |
@@ -221,8 +223,8 @@ conjugation engine, which was withdrawn on 2026-11-14.
 ## Web app routes
 
 The Flask app runs locally only (`python -m web.app`). The public site on
-GitHub Pages has the search, the learning pages (`/learn`, `/guide`, `/words`,
-`/verbs`, `/practice`, `/phrases`, and a topics page of its own), the flashcards and the
+GitHub Pages has the search, the learning pages (`/learn`, `/guide`, `/words`, `/wordweb`,
+`/verbs`, `/practice`, `/phrases`, `/resources`, and a topics page of its own), the flashcards and the
 lessons, and none of the others.
 
 | Route | Page |
@@ -233,6 +235,7 @@ lessons, and none of the others.
 | `/browse`, `/browse/tag/<tag>`, `/browse/class/<class>` | browse |
 | `/lessons`, `/lessons/<n>` | Blue Book lessons, each in the book's order |
 | `/phrases` | the lessons' Useful Phrases by situation, and the two conversations of lesson 20 |
+| `/resources` | "Learn with others": the Pawnee Nation's programme and lessons, and where to hear the language |
 | `/flashcards`, `/flashcards/<week>` | weekly flashcards |
 | `/study`, `/api/srs/review` | spaced-repetition study |
 | `/sentence-builder`, `/api/assemble`, `/api/slot-options` | sentence builder: a printed Blue Book sentence with words swapped for other printed words |
@@ -240,6 +243,8 @@ lessons, and none of the others.
 | `/learn` | "Start here": seven steps for a new learner |
 | `/guide` | "Sounds": the letters, and a word taken syllable by syllable |
 | `/words` | word building: the pieces the dictionary prints, and the words that share a piece |
+| `/wordweb` | word web: the same words as a picture, each joined to the pieces printed in its derivation (`?q=bear`, `?piece=kuruks`, `?word=<entry id>`) |
+| `/<name>.html` | the names the published site gives its files (`words.html?piece=...`, `index.html?id=...`): leads on to the same page of the app |
 | `/verbs` | verbs: the five forms, the seven verbs of Appendix 1, Parks's tables |
 | `/practice` | six practice games over printed forms; "Today": the words due again (kept in the browser) |
 | `/topics` | leads to `/browse` (the published site has its own topics page) |

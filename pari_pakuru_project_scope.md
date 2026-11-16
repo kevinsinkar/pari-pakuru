@@ -68,12 +68,21 @@ Build a comprehensive Skiri Pawnee language preservation tool: a searchable, lin
 | 2026-11-14 | lessons | **The lessons read from the page, line by line.** Every line of the titles, dialogues and notes that is not plain English cut from the scan and read: 911 lines, 79 a second time. 328 places corrected (at 164 of the 286 that one reading settles, the audit's reader had read the same at that place; none where it had read otherwise), 8 titles set, the next lesson's title and the glossary cut from the end of the notes; 13 rows of the Blue Book table corrected at their own line, two of them because the audit's crop had been cut at a line above. Then **the dialogues paired**: each Pawnee line with the English the page prints on its row (105 lines; in 83 of 156 stored lines the English had stood in the Pawnee field or was missing) | done (items 60, 69); committed and pushed (`fad4a3e`). Three places under a flaw in the scan and three doubts of reading are for a person with the book (item 70) |
 | 2026-11-15 | Blue Book | **A Blue Book word given the English of its own row of the page.** The extraction had read the two columns of a word list one after the other, and in three places every word had its neighbour's meaning: the five Useful Phrases of lesson 18, six words of lesson 10 (*asku•ra•wákahu'* stood as 'police man'; it is 'judge'), two lines of lesson 9. Found by reading, from the scan's text layer, what stands to the right of each form on its row; 16 meanings corrected, one printed word that had no row added (*ti•ká•isat* 'he went home'), one Blue Book-only dictionary entry corrected ('judge' for a verb form that means 'he is killing it') | done; committed and pushed the same day (`4c32588`). Ten rows whose form the text layer garbles are unchecked (item 73) |
 | 2026-11-15 | site | **The first five points of the feedback on the learner pages carried out**, at the owner's word: the lesson pages keep the book's order (the feedback had said the book begins with the dialogue; it begins with the basic words) and let a learner cover one side of a dialogue; a Phrases page with the 113 Useful Phrases by situation and the two conversations of lesson 20; a practice box in the browser that brings a word back after 1, 3, 7, 14 and 30 days; one visible line on which spelling to learn to write; no pronunciation of a stem beside a Blue Book word that is a form of it. "Start here" has seven steps, the lessons second | done; committed and pushed the same day at the owner's word (`58d6ae9`, site `0168bb1`). Decisions in it await the owner (rank 2) |
+| 2026-11-15 | sources | **A register of sources.** The owner brought a catalogue of 59 further sources on Pawnee (programmes, archives, books, recordings), each rated and with a note on rights. It is now `sources/catalogue.json`, without its e-mail address, with the project's own decision beside each record: link to it, check against it, ask before copying, or hold it back as ceremonial (18). Every link was tried: two had moved and were found again, two gave no answer. A page "Learn with others" lists the 8 that are fit for learners, each opened and read first | done; committed, not pushed. Nothing of any source is copied |
+| 2026-11-15 | dialect | **The textbook is not a Skiri book, and the site now says so.** *Pari Pakuru'* writes for both dialects in a South Band-based spelling: its alphabet chapter says a Skidi speaker says *i* for its *e* and *h* for its *hr*, and that its accent marks are South Band. The statements were read from the scan. 298 Blue Book rows and 22 Blue Book-only entries carry a mark with its reason: the book's own (SK) or (SB) on 20, "SB spelling" on 300. Lesson, phrases and flashcard pages carry a line on the two dialects | done; committed, not pushed. The Skiri form of a line cannot be had from the books (items 79, 80) |
+| 2026-11-15 | sound | **"Hear it at Indiana University"**: every dictionary word links to a search for it in the online Skiri dictionary of the university's Institute for Indigenous Knowledge, where some entries have a recording. A link; no sound is stored | done; committed, not pushed. Of ten words taken at random, eight were found (item 81) |
+| 2026-11-15 | permission | Both books are in copyright (the textbook: the Pawnee Indian Tribal Business Council, 1979; the dictionary: University of Nebraska Press, 2008), and the site shows their content. Three letters are drafted for the owner to send; the review packet has a sixth part | **the owner's to send.** Decision of 2026-11-15: ask, and change nothing in the repository or on the site on that account until answers come (item 77) |
+| 2026-11-15 | word web | **A picture of how words share their pieces**, asked for by the owner ("word bubbles connected to common descriptors, e.g. bear, black bear, brown bear, white bear"). A new page, `wordweb.html`: each word is a box, each piece of its printed derivation an oval, and a line joins the two. It opens on the words with "bear" in the meaning; choosing the oval of a piece brings in the other words in which the dictionary prints it. Drawn from the same file as the word-building page; no form and no analysis is added | done; committed, not pushed. The page joins words by the letters of a piece and says so (item 85) |
 
 The database on 2026-11-15: 4,337 entries (4,244 from Parks, 93 Blue Book
 only), 5,504 senses, 9,559 verb forms for 2,239 verbs, 2,607 examples, 21
 derived stems, IPA for the 4,244 Parks entries (2,218 with an accent mark)
 and for none of the Blue Book-only ones. Compared with the printed page,
-50,807 of 50,837 dictionary fields are identical (99.94%). Full table list: [Quick_Reference_Guide.md](Quick_Reference_Guide.md).
+50,807 of 50,837 dictionary fields are identical (99.94%). Two small tables
+came with the second part of 2026-11-15 and hold no Pawnee form of their own:
+`sources` (59 rows, the register) and `bb_dialect_labels` (320 rows: which
+textbook forms carry SK, SB or "SB spelling", and why). The text dump has
+46,738 rows in 23 tables. Full table list: [Quick_Reference_Guide.md](Quick_Reference_Guide.md).
 
 ---
 
@@ -93,7 +102,16 @@ the owner has not yet looked at what went public in their name. The other
 ranks are as they were. On 2026-11-15 the owner asked for the first five
 points of the feedback file; they were done that day and, at the owner's word,
 committed and pushed (`4c32588`, `58d6ae9`, `0168bb1`). Rank 2 now also holds
-what that work decided.*
+what that work decided. The same day the owner brought a catalogue of 59
+further sources and approved a plan for them. Its first stages are done (the
+register, the page "Learn with others", the dialect marks, the links to
+sound), were committed that evening at the owner's word and wait for the
+word to push. Rank 1 has changed with it:
+the catalogue names whom to write to, and it showed that permission has to
+be asked for the two books themselves. A third request of the same day, a
+picture of how words share their pieces, is built as well (the "word web")
+and was committed with the rest. The owner looked at it and answered "no
+changes".*
 
 How the ranking is made: first what only people outside the project can
 settle and takes longest to arrange; then what is wrong or missing in front
@@ -105,9 +123,9 @@ sessions, **large** more.
 
 | Rank | What | Why at this rank | Who | Size | Open items |
 |---|---|---|---|---|---|
-| 1 | **Send the review packet to the Pawnee Nation's language and culture people** | The packet is ready ([community_review/](community_review/)). Nothing in code replaces the review, and it takes the longest to arrange. It decides whether flashcard Week 20 is ever shown, whether the word-building guide is published, how much of the ceremony-tagged entries is shown, and what learners are told about *kt* and *tt* | You: fill in the contact line and make the contact. The review itself is theirs to pace | Small | 1, 2, 3, 14, 43, 50, 9, 53 |
-| 2 | **Look at the published site and settle the decisions made for you** | On the evening of 2026-11-14 the learner pages, the corrected lessons and the paired dialogues went public on the owner's word ("I leave it to your judgement"), with choices in them that two sessions made and the owner has not confirmed. Five on the learner pages: the project's own word-construction analysis stays unpublished; nothing on *kt* and *tt* on the Sounds page; two sentences of the About page; the heading "Learn Skiri Pawnee"; the weekly flashcard PDFs not linked. Three in the lessons: square brackets where the scan is damaged; the glossary and the next lesson's title cut from the end of the notes; 13 rows of the Blue Book table changed on one reading. One session's feedback on the learner pages is in [reports/learner_site_feedback_2026-11-14.md](reports/learner_site_feedback_2026-11-14.md); its first five points were carried out on 2026-11-15 and pushed the same day at the owner's word. That work made choices too: the lesson pages keep the book's order, with the basic words before the dialogue; the phrases are listed under eight situations of the project's choosing; the menu has an eleventh link, "Phrases", and folds below 1,024 pixels; "Start here" has seven steps with the lessons second; the wording of the line on spelling; 16 meanings of Blue Book words changed by the row of the page. Say what to change | You; then code | small | 65 to 68, 70, 73 to 76 |
-| 3 | **Decide what the 93 "Blue Book-only" entries are** | 37 of them are words Parks has, written in the textbook without long vowels; more are likely (the textbook writes *e* where Parks writes *ii*). They sit in the first three flashcard weeks as if they were other words, with a learner respelling made from the textbook's spelling. The site now names the dictionary's entry beside them; whether to teach the dictionary's form instead is a decision about the frozen flashcard list | Your decision, with a person who knows the language if one can be asked; then code | Small to medium | 52, 35, 21 |
+| 1 | **Send the three letters, and the review packet with the first** | The textbook is the Nation's (its copyright page asks for the written permission of the Pawnee Tribal Business Council) and the dictionary is the University of Nebraska Press's; the site shows the content of both and nobody was asked. The letters are drafted in `community_review/letters/` (not in git): to the Pawnee Nation's language programme and Cultural Resources Division, with the packet; to the Institute for Indigenous Knowledge at Indiana University; to the Press. The packet is ready ([community_review/](community_review/)), now in six parts. The answers decide whether the lessons stay, whether flashcard Week 20 is ever shown, whether the word-building guide is published, how much of the ceremony-tagged entries is shown, how the two dialects are presented, what learners are told about *kt* and *tt*, and whether anything of another source may be copied in | You: read the three drafts, fill in the square brackets, send them. The answers are theirs to pace | Small | 77, 1, 2, 3, 14, 43, 50, 9, 53 |
+| 2 | **Look at the published site and settle the decisions made for you** | On the evening of 2026-11-14 the learner pages, the corrected lessons and the paired dialogues went public on the owner's word ("I leave it to your judgement"), with choices in them that two sessions made and the owner has not confirmed. Five on the learner pages: the project's own word-construction analysis stays unpublished; nothing on *kt* and *tt* on the Sounds page; two sentences of the About page; the heading "Learn Skiri Pawnee"; the weekly flashcard PDFs not linked. Three in the lessons: square brackets where the scan is damaged; the glossary and the next lesson's title cut from the end of the notes; 13 rows of the Blue Book table changed on one reading. One session's feedback on the learner pages is in [reports/learner_site_feedback_2026-11-14.md](reports/learner_site_feedback_2026-11-14.md); its first five points were carried out on 2026-11-15 and pushed the same day at the owner's word. That work made choices too: the lesson pages keep the book's order, with the basic words before the dialogue; the phrases are listed under eight situations of the project's choosing; the menu has an eleventh link, "Phrases", and folds below 1,024 pixels; "Start here" has seven steps with the lessons second; the wording of the line on spelling; 16 meanings of Blue Book words changed by the row of the page. The second part of 2026-11-15 (the register, "Learn with others", the dialect marks, "Hear it") and the third (the word web) are **built and not yet pushed**; their choices are listed in their phase entries. Say "commit and push" when you have looked, or what to change | You; then code | small | 65 to 68, 70, 73 to 76 |
+| 3 | **Decide what the 93 "Blue Book-only" entries are** | 37 of them are words Parks has, written in the textbook's South Band-based spelling and without long vowels; 22 are written with *e* or *hr* and are marked "SB spelling" since 2026-11-15 (the textbook writes *e* where a Skiri speaker says *i*, and Parks writes *ii*). They sit in the first three flashcard weeks as if they were other words, with a learner respelling made from the textbook's spelling. The site now names the dictionary's entry beside them; whether to teach the dictionary's form instead is a decision about the frozen flashcard list | Your decision, with a person who knows the language if one can be asked; then code | Small to medium | 52, 35, 21 |
 | 4 | **Use what was rebuilt** | The English index now links 5,162 Skiri terms to their entries and holds Parks's cross-references as printed. The public search does not use either yet; the local search still joins on the spelling of the headword. The pronunciation guide said nothing of what chapter 2 tells learners (*c* as [ts] or [č], *r* often *n* at the start of a word); since the sixth part of 2026-11-14 the Sounds page does, and the topic tags are shown, so what is left of this rank is the index, the cross-references and *kt*/*tt* | Code; the wording about speakers after rank 1 | Medium | 48, 53 |
 | – | *For a person with the books, whenever one is at hand* | 17 Blue Book forms the scan cannot settle; in the lessons, three places under a flaw in the scan and four small doubts (70); 37 small differences in the dictionary; the empty cell of *tir* in Appendix 2; tables 6 and 7 of the grammar chapter (two diagrams the readers wrote down differently); 55 glossary references whose English is not on the page they point to; three Skiri terms of the English index that fit two dictionary entries equally; six Blue Book-only entries with no printed form found | A person with the books | Small | 42, 70, 45, 41, 51, 28, 32, 35 |
 
@@ -123,10 +141,18 @@ The weak rule of person derivation stays in force: the owner's decision of
 
 ### The first step of each of the top two
 
-1. **Review.** Open `community_review/review_packet.pdf`, read it as the
-   reviewer would, and put your name and a way to reach you where the first
-   page says `[name], [telephone or e-mail]`. Build it again on the day it
-   goes out (`python scripts/build_review_packet.py`).
+1. **The letters and the packet.** Read the three drafts in
+   `community_review/letters/` (on this computer only; the folder is not in
+   git). Each has a note at its head on where to send it, and square
+   brackets for your name, who you are and how to reach you. The letter to
+   the Press has one bracket more: what you have decided about the page
+   scans in the public repository. The letters describe the site as it is
+   with the second part of 2026-11-15 published, so look at that work and
+   have it pushed first. Then open `community_review/review_packet.pdf`,
+   read it as the reviewer would, put your name and a way to reach you where
+   the first page says `[name], [telephone or e-mail]`, build it again on
+   the day it goes out (`python scripts/build_review_packet.py`), and send
+   it with the first letter.
    [community_review/README.md](community_review/README.md) says what each
    part asks and where an answer takes effect.
 2. **The published site.** Open it and go through "Start here" as a
@@ -149,6 +175,9 @@ pages. Each line is one look at one page.
 ### What not to do next
 
 - Do not show Week 20, publish the word-building guide, or give the ceremony-tagged entries their full detail before rank 1 has an answer.
+- Do not copy a form, a sentence or a recording from any other source of the register (`sources/catalogue.json`) into the database or the site before its owner has said yes in writing. Until then a source is linked to, or used to check what the two books say. A source marked as ceremonial is not copied whatever the answer.
+- Do not respell a textbook form into Skiri (an *i* for its *e*, an *h* for its *hr*). The textbook says how a Skidi speaker says those letters; it does not print the Skiri word, and a respelt form is a made form.
+- Do not gather Indiana University's entry numbers or sound files in bulk to make the "Hear it" link exact. The link is a search; the exact link waits for their answer (item 81).
 - Do not bring back a withdrawn engine from `archived/scripts/` to produce a form. The standing rule is that derived forms start from attested ones, and that a made form is labelled where it is shown and stored nowhere.
 - Do not add a rule to an engine, or repair one, by looking at all the printed forms and then quoting the result on them. Split them first and open the second part once (`scripts/engines_review/person_forms_repair.py` is the pattern). For person derivation that second part is spent.
 - Do not quote 87.2% (form 2) or "26 of 26" (person derivation on Appendix 1) as how good a tool is: both are on forms the rules were read from. The figure on unseen verbs is 97.3%, for one form only, the "he/she" question form.
@@ -2312,6 +2341,223 @@ it names, the box's arithmetic on days it is given). The changed pages were
 driven in a headless browser at desktop and phone width: covering a side, a
 round of today's words, the counts after it and three days later.
 
+### ✅ A register of sources; the two dialects of the textbook; hearing a word (2026-11-15, second part)
+
+The owner's instruction: "commit and push. I have placed a new source into the
+root. Come up with a plan on how to incorporate these sources to enhance the
+database and learner site." The commit and push is the entry above. The plan
+was written, four questions were put to the owner, and the plan was approved
+the same day (it is kept with the session's plans, not in the repository).
+This entry is its first stages. **Committed on 2026-11-15 at the owner's word
+("Commit but don't push yet"); not pushed.**
+
+**The new source is a catalogue, not language data.** `Skiri Pawnee Language
+Sources.xlsx` (in the root, out of git) lists 59 resources: the Pawnee
+Nation's language programme, its lesson handouts and recordings of its
+classes; Indiana University's online dictionary and text collections; the
+1997 Skiri course; books, theses, archives and recordings; reference sites.
+Each has a credibility score from 1 to 5, a dialect, what it holds, a note on
+rights and a link. It says of itself that it was compiled on 2026-11-15 from
+web searches and that the scores are its compiler's judgement.
+
+**The owner's four decisions (2026-11-15):** mark the dialect, Skiri first;
+ask for permission and change nothing in the repository or on the site on
+that account until answers come; take the catalogue in as cleaned data and do
+not show its scores; none of the further materials (the 1997 Skiri course,
+the textbook's audio, Parks's 1976 grammar) is in hand.
+
+**Three doors.** A source comes in by one of three: the site *links* to it;
+it is used to *check* what the two books say, and what is stored is the
+project's finding with the citation; or its content is *copied*. The third
+door is shut for every source until permission is given in writing.
+Ceremonial material is held whatever the answer. The register records the
+door for each source ([sources/README.md](sources/README.md)).
+
+**Stage 1. The register.** `scripts/sources_catalogue.py` reads the
+spreadsheet into `sources/catalogue.json` (the e-mail address cut out) and
+keeps the project's fields apart from the catalogue's: `link`, `section`,
+`check`, `copy`, `sensitive`, and `checked` with what a page was seen to say.
+Every link was tried. Two of the catalogue's had moved and were found again
+(the Alphabet Book, the page on the 1997 course); two gave no answer and are
+not listed (the Nation's archive portal, whose address does not resolve from
+this computer, and the Pawnee Nation College). Forty answered. Fifteen sites
+answered an automated client with a refusal (twelve with 403, one each with
+202, 418 and 429) and need a person to open them; Facebook was not tried, and
+one record has no link. 18 records are held as ceremonial: 11 by
+keyword at import, 7 more by hand (song archives, sacred narrative,
+doctoring). The table `sources` holds the same 59 rows.
+
+**Stage 2. Learn with others; hear a word.** A new page, `resources.html`,
+lists the 8 sources fit for learners: the Nation's programme, its Facebook
+page, the recordings of its classes, its three lesson handouts, the 1997
+Skiri course (not online; copies from the Nation's Education Department),
+Indiana University's dictionary with sound, a podcast with two people of the
+programme, the Alphabet Book. Each was opened first, and the sentence shown
+is written from what was seen. "Start here" now opens with it. Every
+dictionary word, on a search result, a flashcard, a practice answer and a
+lesson's word list, has a link "Hear it at Indiana University" that opens a
+search for the word there. Their search finds a run of plain letters, so the
+link searches for the longest run of letters in the headword; of ten words
+taken at random eight were found, and three of the ten result pages had a
+recording. The pages say "some entries have a recording".
+
+**Stage 3. The two dialects.** The catalogue asked whether the textbook is
+Skiri. The textbook answers, in its chapter on the alphabet (pp. xviii to
+xxiv, read from the scan and stored in
+`extracted_data/blue_book_dialect_statements.json`): "the South Band e is
+pronounced by Skidi speakers just as if it were an i"; *hr* "is pronounced
+simply as h by Skidi speakers"; South Band speakers "have more long vowels",
+"so you should decide which dialect you will concentrate on"; "IMPORTANT.
+The accent marked in this book is that of some South Band speakers." Its
+contents page prints the title of lesson 3 twice: *KIRIKÉ RUT•U'?* (SB) and
+*KÍRIKU RUT•U'?* (SK). The Pawnee Nation's own first lesson says the same of
+the vowels ("South Band or SB: 8 & Skiri: 6"). So the first sentence the site
+gave a learner of Skiri, *Kiriké ru'?*, is written the South Band way, and
+the site had not said so.
+
+`scripts/label_bluebook_dialect.py` gives a form a mark and its reason, in
+the table `bb_dialect_labels`, and makes no form: SK or SB where the book
+prints that mark on the form's own line (20 rows, found with the text layer;
+18 marks the first extraction had given stand on lines the page does not
+mark, and are not used); "SB spelling" where the form is written with *e* or
+*hr* (278 rows, 22 Blue Book-only entries). Lesson pages, the phrases page
+and the flashcard pages carry a line "Skiri or South Band?" with the book's
+statements folded under it, and each marked form shows its mark. The word
+lists' dictionary columns are headed "In the Skiri dictionary". The About
+page no longer says the difference is only one of long vowels.
+
+**Stage 4. Spelling.** The Nation's Lesson 1 lists its alphabet: â ê î û for
+long vowels, č as in "catch", c as in "cats", ’ for the catch in "uh-oh".
+That is the learner spelling of this site, letter for letter, so the line on
+which spelling to learn now names the Nation's handouts, and the Sounds page
+has the alphabet with the two ways it differs from the dictionary's letters.
+The open check on *c* and *č* is closed.
+
+**Stage 5. Permission.** Found while reading the catalogue against the
+books: the textbook's copyright page ("No part of this book may be
+reproduced … without permission in writing from the Pawnee Tribal Business
+Council"), the catalogue's note that the dictionary's content online needs
+the publisher's permission, and that the public repository holds page scans
+of both books (634 PDFs). This is not legal advice. The owner's decision is
+to ask and to change nothing meanwhile. Three letters are drafted in
+`community_review/letters/` (kept out of git), and the review packet has a
+sixth part: the lessons on the site, the two dialects, the places the site
+points to, the works held back.
+
+**Decisions made in this part, for the owner to confirm or change:**
+- Which 8 sources are listed for learners, and the sentence shown for each.
+  The independent learner's podcast (scored 3 by the catalogue) is not
+  listed; the Nation's archive portal is not, because its address did not
+  answer.
+- Seven sources were marked ceremonial by hand, on top of the eleven the
+  keywords caught. The mark may be too wide.
+- "SB spelling" is put on every form written with *e* or *hr*, by the book's
+  blanket statement. A form the book marks (SK) is never given it.
+- The "Hear it" link is a search, not a link to the entry itself; a link to
+  the entry needs the university's word (letter 2 asks).
+- The wording of the dialect line, of the page "Learn with others", and of
+  the three letters. The letter to the Press mentions the page scans.
+- The page "Learn with others" has no menu link of its own: it hangs from
+  "Start here", the home page, "About" and the foot of every page.
+
+**Cost.** No sub-agents. Web: one request to each of the 59 links (twice,
+after the first client failed on certificates), about 20 pages read once,
+and 52 searches of the university's dictionary, one second apart, to learn
+how its links work.
+Images: four small sheets of the textbook's alphabet chapter.
+
+Checks: every check of the README (28 scripts, two of them new:
+`sources_catalogue.py --check`, `label_bluebook_dialect.py --check`); the
+site's own check has 45 (6 new); the app's 49 addresses and the 13 changed
+ones; the new and changed pages looked at in a headless browser. One bug was
+caught there and not by a check: a shell heredoc had eaten the backslashes of
+a style rule and left a NUL character in the stylesheet.
+
+### ✅ The word web: words joined to the pieces printed in them (2026-11-15, third part)
+
+The owner's request: "I'd like to have a visual of how these words intertwine,
+like word bubbles connected to common descriptors. e.g. - bear, black bear,
+brown bear, white bear, etc. to show the building blocks of the language".
+**Committed on 2026-11-15 at the owner's word ("Commit but don't push yet");
+not pushed.** The owner looked at the page and answered "no changes": the
+choices listed below stand.
+
+**The dictionary already holds the example.** Its derivations print
+*kurukskaatiit* "black bear" as *kuruks + kaatiit*, *kurukstaakaa* "white
+bear" as *kuruks + taakaar*, and *kurukspahat* "brown bear" as
+*kuruks + pahaat*, with the literal translation "red bear". The piece
+*kaatiit* is printed in 23 words, *taakaar* in 23, *pahaat* in 28. So the
+picture needs nothing that is not printed: it is the word-building page's
+data (`data/wordbuilding.json`, 3,319 entries with a derivation of two or more
+pieces, 1,780 different pieces) drawn instead of listed.
+
+**What was built.** A page `wordweb.html` ("Word web"; `/wordweb` in the local
+app) and its script `web/static/js/wordweb.js`:
+- A box is a word: the headword and the first meaning, whole or cut short
+  with a mark. An oval is a piece of a printed derivation, with the number of
+  words it is printed in. A line joins a word to each piece of its own
+  derivation, and to nothing else.
+- The page opens on the words with "bear" in the meaning or the literal
+  translation (8 words; the piece *kuruks* is printed in 6 of them). Fifteen
+  English words are offered to start from, and a box takes any English word
+  or any piece. A picture can also start from one word (`?word=`) or one
+  piece (`?piece=`).
+- Choosing an oval brings in ten more of the words in which that piece is
+  printed, so the picture grows from bears to black things to horses. An oval
+  with words still to come carries a plus sign, and it grows as its words
+  come in. Under the picture the chosen word or piece is shown in full, with
+  the literal translations, as on the word-building page.
+- Shapes can be dragged, the picture moved and made larger or smaller. On a
+  phone the picture is laid out tall instead of wide.
+- It hangs from the word-building page, from "Start here" and from every
+  search result that has a derivation ("See it in a picture, with the words
+  that share its pieces"). It has no menu link.
+
+**How it is laid out.** No library was added. The script holds a small layout
+of its own: shapes push one another away, a line pulls its two ends together,
+and a last pass moves apart any two shapes that still overlap. The same start
+always gives the same picture. Where a shape sits means nothing, and the page
+says so.
+
+**The rules it keeps.** No form is made: every label is a printed headword,
+meaning or piece. The page does not say what a piece means, and does not pair
+the words of a literal translation with the pieces. Words hang on one oval
+when the dictionary prints the piece with the same letters, and the page says
+that the same letters are not always the same piece (the dictionary has two
+entries spelled *kuruks*, "bear" and "boil, carbuncle") and that pieces
+printed with different letters are kept apart (*kaatiit* and *katiit* each
+stand in words for black things). Entries tagged as ceremony are not in the
+data. The project's own word-construction analysis is not used.
+
+**Also changed.** In the local app the names the published site gives its
+files (`words.html?piece=...`, `index.html?id=...`), which the pages' scripts
+write into their links, now lead on to the same pages; before, such a link
+ended on "not found" there.
+
+**Decisions made in this part, for the owner to confirm or change:**
+- The picture is a page of its own, without a menu link, and opens on "bear".
+- The fifteen English words to start from (bear, black, white, red, yellow,
+  horse, bird, snake, hand, foot, bone, water, wood, night, big). Each was
+  tried and gives a picture with one clear family in it.
+- An English word is matched as a whole word, with its plain plural, in the
+  meaning or in the literal translation: "bear" does not find "beard".
+- A picture starts with at most 24 words, an oval brings in 10 at a time, and
+  a picture stops growing at 150 words.
+- The size of an oval follows the number of its words in the picture, not
+  the number in the dictionary, so that the piece a family shares stands out.
+
+The owner's answer, 2026-11-15: "no changes".
+
+Checks: the site's own check has 51 (6 new: a line only where the dictionary
+prints the piece in the word; every piece of a drawn word drawn; the count on
+an oval the dictionary's; no shape on another; the same start the same
+picture; a box shows printed text only). The page was driven in a headless
+browser through its ovals, buttons, start words and typing box, at desktop,
+tablet and phone width; the local app's new address and the links to it were
+tried. Every check of the README was run again.
+
+**Cost.** No sub-agents, no web requests. Ten screenshots were looked at.
+
 ### 🔲 Ongoing — Data Quality & Maintenance
 
 - [x] **~~Blue Book gap triage~~** — **DONE (2026-03-19)** via Gemini batch analysis. 516 of 984 BB vocabulary items classified into 8 categories: phrases (196/38%), inflected verbs (141/27%), unlisted nouns (94/18%), descriptors (40/8%), possessed forms (15/3%), function words (11/2%), loanwords (10/2%), OCR artifacts (9/2%). Key finding: 65% are morphological gaps (roots exist in Parks, inflected forms don't match). 115 high-value items flagged for potential DB addition. DB table: `bb_gap_triage`. Report: `reports/bb_gap_triage.txt`. Script: `scripts/bb_gap_triage.py`.
@@ -2484,6 +2730,24 @@ here, so that there is one list to keep current.
 74. **The book's line over a lesson's Additional Words is not stored.** Eleven lessons say what the words are for: "Nouns to substitute for *rakis* in the dialogues." (lesson 2), "Body parts to replace "head" and "eye" in the dialogues." (5), and so on. It is how the book makes the dialogue the centre of a lesson. To show the lines, their Pawnee words have to be read at their own place on the page (about a dozen lines, one small sheet) and the lines need a place in the `lessons` table.
 75. **The word added to lesson 9 stands last in its list.** *ti•ká•isat* 'he went home' is printed between *ti•káisat* and *ti•hú•isat*; a lesson's words are shown in the order of their row numbers, and a new row gets the highest. Putting it in its place needs an order column in `blue_book_attestations`.
 76. **The Blue Book-only entry *tikuwutikuʔ* 'he is killing it' is a form of a verb Parks has**, with no class since its gloss was corrected. It belongs with the decision about the 93 Blue Book-only entries (item 52). The word the entry was meant to be, 'judge' (*asku•ra•wákahu'*), has no entry.
+
+### From the register of sources and the two dialects (2026-11-15, second part)
+
+77. **Permission for the two books has not been asked.** The textbook: "Copyright © 1979 by the Pawnee Indian Tribal Business Council … No part of this book may be reproduced … without permission in writing from the Pawnee Tribal Business Council." The dictionary: University of Nebraska Press, 2008. The site shows the content of both, and the public repository holds page scans of both (634 PDFs under `Dictionary Data/` and `pari pakuru/`). Three letters are drafted in `community_review/letters/`. The owner's decision of 2026-11-15: ask, and change nothing meanwhile. For the owner; nothing here is legal advice.
+78. **Two sources of the register did not answer**: the Pawnee Nation's archive portal (`mukurtu.pawneenation.org` did not resolve from this computer; a search engine lists it) and the Pawnee Nation College. Try again (`python scripts/sources_catalogue.py --check-links --only nation_mukurtu,nation_college`); the portal belongs on "Learn with others" once it answers and has been read. Fifteen more turn automated clients away and were not read.
+79. **The Skiri form of a textbook line is not in the two books.** "SB spelling" says how a form is written; the page does not respell it. The Nation's Lesson 1 gives Skiri beside South Band for a few of the same phrases (it writes *Kirikî* or *Kikî* where the textbook's contents page gives *KÍRIKU* as the Skidi form: two sources that differ, to be shown side by side when both may be shown). Copying its forms waits for the Nation's word (letter 1, packet 6c).
+80. **Where the textbook gives a word in both dialects, the table often holds only one.** The first extraction marked 12 rows "both" and kept one form: lesson 1 has *haú'* (SK) and not *ahu'* (SB) from the same list; lesson 18 has *tsaskít* (SK) and not the South Band form printed beside it. The partner forms are on the page and can be added, each read at its own line.
+81. **"Hear it" is a search.** Eight of ten words taken at random were found; *paktiku* and *haskiicuʔ* were not, under any spelling tried. An exact link needs the university's entry numbers (`key=skiri000837`), and gathering those is bulk use of their site: letter 2 asks. Their dictionary may also differ from the printed one in places; comparing the two is Stage 6 of the plan and waits for the same answer.
+82. **The textbook's own chapter on reading and writing is not on the site** ("Reading and Writing Pari Pakuru'", "The Pawnee Alphabet", pp. xi to xxiv). Only its twelve statements on dialect were read. It is the textbook's first lesson in all but name; whether it goes on the site follows the answer to item 77.
+83. **Later stages of the plan, each waiting for a written yes:** a link from each entry to its own entry and sound at Indiana University; the Nation's handouts as dialect-marked forms; the 1997 Skiri course, if the Nation's Education Department can supply it; the Skiri text collections (Roaming Scout, Parks) as examples and as forms no rule here was fitted to; the 1966 recordings at the American Philosophical Society.
+84. **The twenty lesson pages differ at every build of the site.** The wrong answers offered in a lesson's exercises are drawn at random when the page is made (`web/app.py`, "fresh shuffle each page load": right for the app, where each visit should differ). In the static build it means that two builds of the same data are not the same files, so every commit of `docs/` shows all twenty lesson pages as changed and a real change in one of them is hard to see. Seen on 2026-11-15 by building twice; nothing else differed. A fixed seed for each lesson in `scripts/build_static_site.py` would settle it. Small; code.
+
+### From the word web (2026-11-15, third part)
+
+85. **The word web joins words by the letters of a piece.** That is what the dictionary's derivations give, and the page says so; but a picture claims kinship more loudly than a list does. Short pieces (*a* in 83 words, *ra* in 151, *at* in 104) gather words that may have nothing to do with one another, and one piece may stand under two spellings (*kaatiit* in 23 words, *katiit* in 20, both in words for black things). Telling pieces apart, or putting two spellings together, is analysis: it belongs to the project's word-construction work (`curriculum/roots_v2`), which waits for review (item 1). Until then the picture keeps to the print.
+86. **A large picture is crowded.** Past about forty words the lines run under boxes, and on a phone the letters are small until the visitor makes the picture larger. Nothing lies on anything else, and each start is small; but a layout that bundles the lines, or a way to fold a family back into its oval, would help. Code; for later if the page is used.
+87. **The word web has no sound and no accent.** A box shows the headword as the dictionary spells it, so that the piece can be seen inside the word; it does not show the learner spelling or the phonetic form. The panel under the picture links to the entry, which has both.
+88. **Two books of ceremony lie in `docs/`, the published folder.** Found on 2026-11-15 while checking the working tree: `docs/Hako A Pawnee Ceremony.pdf` (Fletcher, *The Hako: A Pawnee Ceremony*, 388 pages, 35 MB) and `docs/SCtA-0027.1-Hi_res.pdf` (Murie, *Ceremonies of the Pawnee*, part 1, 189 pages, 77 MB), both put there that afternoon and not by this work. Anything committed under `docs/` is public on the site. The register of sources holds both back as ceremonial, and the approved plan lists both under "not brought in". Nothing was moved or deleted; a line in `.gitignore` (`/docs/*.pdf`) keeps them out of a commit. **Settled the same day:** the owner removed both from `docs/` ("pdf books removed from docs/"). The line in `.gitignore` stays, as a guard.
 
 ---
 
