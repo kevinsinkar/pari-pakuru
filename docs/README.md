@@ -27,5 +27,8 @@ result. See [../DEPLOYMENT.md](../DEPLOYMENT.md).
 | `static/` | CSS and the scripts of the pages |
 | `.nojekyll` | Tells GitHub Pages to serve the files untouched |
 
+Every page carries a dictionary word in both spellings and shows the dictionary's own; the switch at the top
+of each page ("Spelling") changes it to the learner spelling and the visitor's browser remembers the choice.
+
 The folder is called `docs` because GitHub Pages expects that name. Project
 documentation is in the repository root and in each folder's `README.md`.

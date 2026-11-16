@@ -77,6 +77,10 @@ Three spellings of the same word are stored side by side:
 | Learner spelling (`normalized_form`) | `pâtu'` | rule: aa→â, ii→î, uu→û, ʔ→', and c→č where the phonetic form has [č] |
 | Respelling (`simplified_pronunciation`) | `PAH-too'` | derived from the IPA; CAPITALS = the syllable Parks marks as accented |
 
+On a page Parks's headword is shown first, since 2026-11-15. The switch at the top of every page, "Spelling",
+puts the learner spelling first instead; the visitor's browser remembers the choice (`web/spelling.py`,
+`Skiri.spelling` in `web/static/js/skiri.js`). Every page carries both.
+
 The 93 Blue Book-only words have no phonetic form: the book gives none, and
 the ones the database used to hold had been made from the spelling. Their
 respelling is made from the spelling and shown with ≈.
@@ -252,7 +256,6 @@ lessons, and none of the others.
 | `/dashboard` | data-quality dashboard |
 | `/about` | about |
 | `/api/feedback`, `/admin/feedback`, `/admin/feedback/<id>/review` | community feedback and its review queue |
-| `/preferences` | spelling preference |
 
 ## Commands used most
 
