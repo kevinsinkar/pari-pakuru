@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learn with others — Skiri Pawnee Dictionary</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;1,8..60,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Pico CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+
+  <!-- Custom Pawnee theme -->
+  <link rel="stylesheet" href="static/css/pawnee-theme.css">
+
+  <!-- HTMX (optional for live features) -->
+  <script src="https://unpkg.com/htmx.org@2.0.4"></script>
+
+  <!-- Fuse.js for client-side search -->
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+
+  <!-- Shared helpers of the learning pages (syllables, word pieces), then the client-side search -->
+  <script src="static/js/skiri.js"></script>
+  <script src="static/js/search.js"></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <!-- ====== Top Navigation ====== -->
+  <header class="container">
+    <nav class="site-nav">
+      <ul>
+        <li>
+          <a href="index.html" class="contrast" style="text-decoration:none; display:flex; align-items:center; gap:0.75rem;">
+            <span style="
+              width:36px; height:36px; border-radius:50%;
+              background: linear-gradient(135deg, var(--clay-600), var(--gold-400));
+              display:flex; align-items:center; justify-content:center;
+            ">
+              
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2L15.5 8.5L22 12L15.5 15.5L12 22L8.5 15.5L2 12L8.5 8.5L12 2Z" fill="white" opacity="0.9"/>
+              </svg>
+            </span>
+            <span>
+              <strong class="font-serif" style="font-size:1.2rem; letter-spacing:-0.3px;">P&#226;ri Pak&#251;ru'</strong>
+              <br>
+              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Learn Skiri Pawnee</small>
+            </span>
+          </a>
+        </li>
+      </ul>
+
+      
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleNav(this)">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+
+      <ul class="nav-links">
+        
+        <li><a href="learn.html" >Start here</a></li>
+        <li><a href="index.html" >Dictionary</a></li>
+        
+        
+        <li><a href="guide.html" >Sounds</a></li>
+        <li><a href="words.html" >Word building</a></li>
+        <li><a href="verbs.html" >Verbs</a></li>
+        <li><a href="lessons.html" >Lessons</a></li>
+        <li><a href="phrases.html" >Phrases</a></li>
+        <li><a href="flashcards.html" >Flashcards</a></li>
+        <li><a href="practice.html" >Practice</a></li>
+        
+        
+        <li><a href="topics.html" >Topics</a></li>
+        
+        <li><a href="about.html" >About</a></li>
+
+        
+        
+      </ul>
+    </nav>
+    
+    <form action="index.html" method="get" class="nav-search" role="search">
+      <input
+        type="search"
+        name="q"
+        placeholder="Search Skiri or English..."
+        value=""
+        aria-label="Search the dictionary"
+        autocomplete="off"
+      >
+    </form>
+    
+  </header>
+
+  <!-- ====== Main Content ====== -->
+  <main class="container" id="main-content">
+    <div id="live-results"></div>
+    
+
+<article class="learn-page">
+  <p class="learn-kicker">Learn with others</p>
+  <h2>Learn with people, and hear the language</h2>
+  <p class="learn-lead">
+    A language is learned from people. This site is made from two books and cannot let you hear a word.
+    These places can do what it cannot. They belong to the people who made them: this site links to them and copies
+    nothing from them.
+  </p>
+
+  
+  
+  <section id="r-nation">
+    <h3>Learn with the Pawnee Nation</h3>
+    <p class="result-usage">The language is the Pawnee people's, and the Nation teaches it. Begin there, and trust what you learn there before this site.</p>
+    <ul class="source-list">
+      
+      <li class="source">
+        <a class="source-name" href="https://pawneenation.org/category/language/" target="_blank" rel="noopener">The Pawnee Nation's language programme</a>
+        <span class="source-says">The Nation's own programme, and the first place to ask. Its website announces language and culture classes; in March 2025 it announced online language classes. Ask the programme what is running now.</span>
+        <span class="source-meta">
+          <span class="source-tag">Both</span>
+          <span class="source-tag">Free (classes, incl. online)</span>
+        </span>
+      </li>
+      
+      <li class="source">
+        <a class="source-name" href="https://www.facebook.com/PawneeLanguage" target="_blank" rel="noopener">The language department's Facebook page</a>
+        <span class="source-says">The Nation's website gives this page as the place to follow its language department: class news and posts.</span>
+        <span class="source-meta">
+          <span class="source-tag">Both</span>
+          <span class="source-tag">Free (Facebook)</span>
+        </span>
+      </li>
+      
+      <li class="source">
+        <a class="source-name" href="https://www.youtube.com/playlist?list=PLxx2qpXeJ-vF0IsY5ttLdCKUAe-dqgXSg" target="_blank" rel="noopener">Recordings of the Nation's language classes</a>
+        <span class="source-says">A playlist, “Pawnee Language Classes”, on the Pawnee Nation's own YouTube channel.</span>
+        <span class="source-meta">
+          
+          <span class="source-tag">Free online</span>
+        </span>
+      </li>
+      
+      <li class="source">
+        <a class="source-name" href="https://www.noc.edu/?p=2237" target="_blank" rel="noopener">The Nation's lesson handouts</a>
+        <span class="source-says">Three lessons as PDFs, provided by the Pawnee Nation and hosted by Northern Oklahoma College: the alphabet, greetings and introductions, basics. They give Skiri and South Band forms side by side, in the spelling this site calls the learner spelling.</span>
+        <span class="source-meta">
+          <span class="source-tag">Both (side by side)</span>
+          <span class="source-tag">Free online</span>
+        </span>
+      </li>
+      
+      <li class="source">
+        <a class="source-name" href="https://indigenousknowledge.indiana.edu/research-and-educational-activity/educational/pawnee.html" target="_blank" rel="noopener">The Nation's Skiri course</a>
+        <span class="source-says">A beginners' course made from 1997 by the Pawnee Nation with Indiana University: the textbook “Introduction to the Pawnee Language (Skiri Dialect)”, lessons on CD-ROM with a speaker's recordings, and a dictionary with sound. It is not online. The university's page says copies are available from the Nation's Education Department.</span>
+        <span class="source-meta">
+          <span class="source-tag">Skiri textbook; lessons in both</span>
+          <span class="source-tag">Ask Pawnee Nation or IIK (availability unclear)</span>
+        </span>
+      </li>
+      
+    </ul>
+    
+  </section>
+  
+  
+  
+  <section id="r-hear">
+    <h3>Hear the language</h3>
+    <p class="result-usage">This site cannot let you hear a word. These can.</p>
+    <ul class="source-list">
+      
+      <li class="source">
+        <a class="source-name" href="https://podcasts.apple.com/au/podcast/p%C3%A2ripak%C3%BBru-with-zach-rice-and-taylor-moore-ep-89/id1460532947?i=1000546766958" target="_blank" rel="noopener">Two people of the programme talk about the language</a>
+        <span class="source-says">A podcast interview of January 2022, in English, 1 hour 23 minutes, with two citizens of the Pawnee Nation who work with its language programme: how they came to the language and what the programme is working towards. It is a conversation about the language, not a lesson.</span>
+        <span class="source-meta">
+          <span class="source-tag">Both</span>
+          <span class="source-tag">Free online</span>
+        </span>
+      </li>
+      
+      <li class="source">
+        <a class="source-name" href="https://aisri-language-database.webapps.iu.edu/dictsearch/lib/testengltoxsrchNP.php" target="_blank" rel="noopener">Indiana University's Skiri dictionary, with sound</a>
+        <span class="source-says">The dictionary this site is made from, online at the Institute for Indigenous Knowledge. Search in English or in Pawnee; some entries have a recording you can play. Type a Pawnee word in plain letters, without the mark for the catch in the throat.</span>
+        <span class="source-meta">
+          <span class="source-tag">Skiri (separate South Band database)</span>
+          <span class="source-tag">Free online</span>
+        </span>
+      </li>
+      
+    </ul>
+    
+    <p class="result-usage">Every dictionary word on this site also has a link, “Hear it at Indiana University”,
+      that opens a search for the word in that dictionary. Some entries there have a recording; many do not, and a few
+      words are not found by the search.</p>
+    
+  </section>
+  
+  
+  
+  <section id="r-read">
+    <h3>Read</h3>
+    <p class="result-usage">From the Pawnee Nation's own language project.</p>
+    <ul class="source-list">
+      
+      <li class="source">
+        <a class="source-name" href="https://indigenousknowledge.indiana.edu/research-and-educational-activity/educational/pawnee_alphabet.pdf" target="_blank" rel="noopener">The Pawnee Alphabet Book</a>
+        <span class="source-says">A short guide to the letters (2002) from the Pawnee Nation's language project with Indiana University: each letter with words in South Band and in Skiri, side by side. It writes a long vowel double, as the dictionary does.</span>
+        <span class="source-meta">
+          <span class="source-tag">Both</span>
+          <span class="source-tag">Free PDF</span>
+        </span>
+      </li>
+      
+    </ul>
+    
+  </section>
+  
+  
+
+  <section class="honest-note">
+    <h3>About this list</h3>
+    <p>
+      Each link was opened in November 2026 and says what the page was seen to say then; pages move, and classes change.
+      The list is short on purpose. The project keeps a longer register of what has been written and recorded about
+      Pawnee, with notes on dialect and on who holds the rights, in its
+      <a href="https://github.com/kevinsinkar/pari-pakuru/tree/main/sources" target="_blank" rel="noopener">files</a>.
+      Works on ceremony and collections of songs are not listed here: whether and how they are shared is for the
+      Pawnee Nation to say.
+    </p>
+    <p>
+      Two dialects are spoken of in these sources, Skiri and South Band. This site's dictionary is Skiri; the 1979
+      textbook writes mostly as South Band speakers say the words. The Nation's handouts and the Alphabet Book show
+      both side by side.
+    </p>
+  </section>
+</article>
+
+  </main>
+
+  <!-- ====== Footer ====== -->
+  <footer class="container">
+    <small style="color:var(--earth-500);">
+      P&#226;ri Pak&#251;ru' — Skiri Pawnee Language Preservation Project.
+      Data: Douglas R. Parks Dictionary &amp; Blue Book Textbook.
+      Built with respect for the Pawnee Nation.
+      <a href="resources.html">Learn with others, and hear the language</a>.
+    </small>
+  </footer>
+
+  <script>
+    function toggleNav(btn) {
+      var nav = btn.closest('nav');
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('nav-open');
+    }
+  </script>
+  
+</body>
+</html>

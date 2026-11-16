@@ -98,7 +98,8 @@
       ${card.say ? `<span class="q-say">${esc(card.say)}</span>` : ''}
       ${card.ipa ? `<span class="result-ipa" lang="x-paw">${esc(card.ipa)}</span>` : ''}
       <span class="answer-def">${esc(card.def)}</span>
-      <a href="${esc(entryLink(card.id))}">See the entry</a></div>`;
+      <a href="${esc(entryLink(card.id))}">See the entry</a>
+      ${card.bb ? '' : `<a href="${esc(Skiri.hearUrls(card.p || card.w, card.def).word)}" target="_blank" rel="noopener">Hear it at Indiana University</a>`}</div>`;
   }
 
   // ---------------------------------------------------------------- building a round

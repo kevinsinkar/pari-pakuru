@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Word web — Skiri Pawnee Dictionary</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;1,8..60,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Pico CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+
+  <!-- Custom Pawnee theme -->
+  <link rel="stylesheet" href="static/css/pawnee-theme.css">
+
+  <!-- HTMX (optional for live features) -->
+  <script src="https://unpkg.com/htmx.org@2.0.4"></script>
+
+  <!-- Fuse.js for client-side search -->
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+
+  <!-- Shared helpers of the learning pages (syllables, word pieces), then the client-side search -->
+  <script src="static/js/skiri.js"></script>
+  <script src="static/js/search.js"></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <!-- ====== Top Navigation ====== -->
+  <header class="container">
+    <nav class="site-nav">
+      <ul>
+        <li>
+          <a href="index.html" class="contrast" style="text-decoration:none; display:flex; align-items:center; gap:0.75rem;">
+            <span style="
+              width:36px; height:36px; border-radius:50%;
+              background: linear-gradient(135deg, var(--clay-600), var(--gold-400));
+              display:flex; align-items:center; justify-content:center;
+            ">
+              
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2L15.5 8.5L22 12L15.5 15.5L12 22L8.5 15.5L2 12L8.5 8.5L12 2Z" fill="white" opacity="0.9"/>
+              </svg>
+            </span>
+            <span>
+              <strong class="font-serif" style="font-size:1.2rem; letter-spacing:-0.3px;">P&#226;ri Pak&#251;ru'</strong>
+              <br>
+              <small style="color:var(--earth-500); letter-spacing:1.5px; text-transform:uppercase; font-size:0.65rem;">Learn Skiri Pawnee</small>
+            </span>
+          </a>
+        </li>
+      </ul>
+
+      
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleNav(this)">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+
+      <ul class="nav-links">
+        
+        <li><a href="learn.html" >Start here</a></li>
+        <li><a href="index.html" >Dictionary</a></li>
+        
+        
+        <li><a href="guide.html" >Sounds</a></li>
+        <li><a href="words.html" aria-current="page">Word building</a></li>
+        <li><a href="verbs.html" >Verbs</a></li>
+        <li><a href="lessons.html" >Lessons</a></li>
+        <li><a href="phrases.html" >Phrases</a></li>
+        <li><a href="flashcards.html" >Flashcards</a></li>
+        <li><a href="practice.html" >Practice</a></li>
+        
+        
+        <li><a href="topics.html" >Topics</a></li>
+        
+        <li><a href="about.html" >About</a></li>
+
+        
+        
+      </ul>
+    </nav>
+    
+    <form action="index.html" method="get" class="nav-search" role="search">
+      <input
+        type="search"
+        name="q"
+        placeholder="Search Skiri or English..."
+        value=""
+        aria-label="Search the dictionary"
+        autocomplete="off"
+      >
+    </form>
+    
+  </header>
+
+  <!-- ====== Main Content ====== -->
+  <main class="container" id="main-content">
+    <div id="live-results"></div>
+    
+
+<article class="learn-page learn-page--wide">
+  <p class="learn-kicker"><a href="words.html">Word building</a></p>
+  <h2>Word web: how words share their pieces</h2>
+  <p class="learn-lead">
+    Many Skiri words are built from smaller pieces, and the dictionary prints the pieces.
+    Here each word is a box, joined to the pieces of its own derivation. Words that share a piece
+    gather round it, so one piece you know leads you into a whole family of words.
+  </p>
+
+  <section class="ww" id="web">
+    <form id="ww-form" class="wb-form">
+      <input type="search" id="ww-q" autocomplete="off" spellcheck="false"
+             placeholder="An English word (bear, black) or a piece (kuruks, kaatiit)"
+             aria-label="An English word or a piece">
+      <div class="key-row" aria-label="Letters that are not on a keyboard">
+        <button type="button" class="key-btn" data-insert="ʔ" title="glottal stop">ʔ</button>
+        <button type="button" class="key-btn" data-insert="Ø" title="zero stem">Ø</button>
+      </div>
+    </form>
+    <div class="ww-starts" aria-label="English words to start from">
+      <span class="section-label">Start from an English word</span>
+      
+      
+      <a class="ww-start" href="?q=bear">bear</a>
+      
+      <a class="ww-start" href="?q=black">black</a>
+      
+      <a class="ww-start" href="?q=white">white</a>
+      
+      <a class="ww-start" href="?q=red">red</a>
+      
+      <a class="ww-start" href="?q=yellow">yellow</a>
+      
+      <a class="ww-start" href="?q=horse">horse</a>
+      
+      <a class="ww-start" href="?q=bird">bird</a>
+      
+      <a class="ww-start" href="?q=snake">snake</a>
+      
+      <a class="ww-start" href="?q=hand">hand</a>
+      
+      <a class="ww-start" href="?q=foot">foot</a>
+      
+      <a class="ww-start" href="?q=bone">bone</a>
+      
+      <a class="ww-start" href="?q=water">water</a>
+      
+      <a class="ww-start" href="?q=wood">wood</a>
+      
+      <a class="ww-start" href="?q=night">night</a>
+      
+      <a class="ww-start" href="?q=big">big</a>
+      
+    </div>
+
+    <p id="ww-summary" class="ww-summary" aria-live="polite">Loading the dictionary's derivations…</p>
+
+    <div class="ww-stage">
+      <svg id="ww-svg" class="ww-svg" data-start="bear" role="group"
+           aria-label="Words as boxes, joined by lines to the pieces printed in their derivations"></svg>
+      <div class="ww-tools">
+        <button type="button" class="ww-tool" id="ww-in" title="Closer" aria-label="Closer">+</button>
+        <button type="button" class="ww-tool" id="ww-out" title="Further away" aria-label="Further away">−</button>
+        <button type="button" class="ww-tool ww-tool--text" id="ww-fit">Whole picture</button>
+      </div>
+    </div>
+    <ul class="ww-legend">
+      <li><span class="ww-key ww-key--word"></span> a word, with the dictionary's meaning</li>
+      <li><span class="ww-key ww-key--piece"></span> a piece of a derivation, with the number of words it is printed in</li>
+      <li><span class="ww-key ww-key--more">+</span> more of its words can be brought in: choose the oval</li>
+      <li>Drag a shape to move it, or the background to move the picture.</li>
+    </ul>
+
+    <div id="ww-panel" class="ww-panel" aria-live="polite"></div>
+  </section>
+
+  <section class="honest-note">
+    <h3>What this picture is, and is not</h3>
+    <p>
+      Every word, meaning and piece here is printed in the dictionary. A line says one thing only: the
+      dictionary prints this piece in the derivation of this word. The page cuts a derivation at its plus
+      signs and draws the result; it adds no analysis of its own, and where a shape sits means nothing.
+    </p>
+    <p>
+      An oval gathers the words in which the piece is printed <em>with the same letters</em>. The same letters
+      are not always the same piece: the dictionary has two entries spelled <span lang="x-paw">kuruks</span>,
+      one “bear” and one “boil, carbuncle”, and short pieces such as <span lang="x-paw">a</span>,
+      <span lang="x-paw">ra</span> and <span lang="x-paw">at</span> are printed in a great many words.
+      Pieces printed with different letters are kept apart, even where their words mean alike:
+      <span lang="x-paw">kaatiit</span> and <span lang="x-paw">katiit</span> each stand in words for black things.
+      The page does not say what a piece means. Read the words round it, and the literal translations under
+      the picture, as you would in the <a href="words.html#explorer">list of words that share a piece</a>.
+    </p>
+    <p>
+      Words to do with ceremony are left out until the Pawnee community has reviewed them.
+      No speaker of Pawnee has reviewed this page.
+    </p>
+  </section>
+</article>
+
+  </main>
+
+  <!-- ====== Footer ====== -->
+  <footer class="container">
+    <small style="color:var(--earth-500);">
+      P&#226;ri Pak&#251;ru' — Skiri Pawnee Language Preservation Project.
+      Data: Douglas R. Parks Dictionary &amp; Blue Book Textbook.
+      Built with respect for the Pawnee Nation.
+      <a href="resources.html">Learn with others, and hear the language</a>.
+    </small>
+  </footer>
+
+  <script>
+    function toggleNav(btn) {
+      var nav = btn.closest('nav');
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('nav-open');
+    }
+  </script>
+  
+<script src="static/js/wordweb.js"></script>
+
+</body>
+</html>
