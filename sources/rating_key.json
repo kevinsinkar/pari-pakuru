@@ -1,0 +1,65 @@
+{
+ "about": "The second sheet of the catalogue: its rating scale and its compiler's notes.",
+ "notes": [
+  {
+   "topic": "Rating 5 — Authoritative",
+   "note": "The Pawnee Nation's own program, or primary documentation by trained linguists working directly with fluent speakers (e.g. Parks with Lula Nora Pratt) or by fluent Pawnee scholars (James R. Murie), from a recognized archive or press."
+  },
+  {
+   "topic": "Rating 4 — Strong, with a limit",
+   "note": "Scholarly or community-expert work with one clear limitation: older transcription, mainly ethnographic rather than linguistic, South Band rather than Skiri, an unsigned handout, MA-level work, or an archival item known only from its catalog entry."
+  },
+  {
+   "topic": "Rating 3 — Cross-check",
+   "note": "Secondary compilations, 19th-century outsider transcriptions, or independent learner-made content. Check each word against a 5-rated source before relying on it."
+  },
+  {
+   "topic": "Rating 2 — Leads only",
+   "note": "General wikis and aggregators with unknown sourcing or known errors. Use them to find better sources."
+  },
+  {
+   "topic": "Rating 1 — Not recommended",
+   "note": "None listed."
+  },
+  {
+   "topic": "Dialect column",
+   "note": "Skiri = Skiri / Skidi (Wolf band). South Band = Chawi, Kitkahahki and Pitahawirata. “Both” = covers or labels both. “Not specified” or “check” = the sources I found don't say."
+  },
+  {
+   "topic": "Start here for Skiri",
+   "note": "A Dictionary of Skiri Pawnee (Parks & Pratt); the IIK Skiri dictionary database (has audio); the Pawnee Alphabet Book; and the Nation's own classes, Facebook page and YouTube playlist."
+  },
+  {
+   "topic": "Spelling systems differ",
+   "note": "Parks's orthography (accent marks for pitch, doubled vowels for length) is used in Parks & Pratt, the IIK database and the Alphabet Book. The Nation's lesson PDFs use a circumflex spelling (â, î, û, ê, č). Dorsey, Murie, Grinnell/Dunbar and Hayden use older ad hoc spellings. Map between systems before merging data."
+  },
+  {
+   "topic": "Skiri vs South Band",
+   "note": "The Nation's Lesson 1 notes that South Band has 8 vowels and Skiri 6 (e and ee are South Band only). Many older texts (Weltfish, The Hako) are South Band; keep them labelled if they go into a Skiri dataset."
+  },
+  {
+   "topic": "Speaker status conflicts",
+   "note": "Wikipedia says the Skiri dialect ended with Lula Nora Pratt's death in 2001; the Endangered Languages Project reports 1–9 speakers, mostly South Band; Omniglot's “about 100” is out of date."
+  },
+  {
+   "topic": "Rights (not legal advice)",
+   "note": "In the US, works published in 1930 or earlier are now public domain (e.g. The Hako 1904, Dorsey 1904 and 1906, Murie 1914, Grinnell 1889, Hayden 1868), as are US government works such as Densmore 1929. Parks & Pratt (2008), the IIK database and Parks's grammar are in copyright. Confirm with the publisher or archive before republishing."
+  },
+  {
+   "topic": "Cultural protocol",
+   "note": "Ceremonial material (NAA MS 2520 and MS 1788, The Hako, the Newberry and Field Museum notes) is sensitive; the Pawnee Nation Cultural Resources Division is the place to ask about appropriate use."
+  },
+  {
+   "topic": "Checked, nothing usable",
+   "note": "Global Recordings Network (no Pawnee recordings); Indiana University's language portal (no Pawnee courses at IU)."
+  },
+  {
+   "topic": "Not reviewed directly",
+   "note": "Facebook page posts (blocked to automated access); the Pawnee Language Learning Substack's About page; most archival items, which are rated from their catalog descriptions."
+  },
+  {
+   "topic": "Compiled",
+   "note": "November 15, 2026, from web searches. Ratings are my judgment against the scale above."
+  }
+ ]
+}

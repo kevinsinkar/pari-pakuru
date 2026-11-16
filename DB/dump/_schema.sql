@@ -385,3 +385,12 @@ CREATE TABLE srs_reviews (
 
 CREATE INDEX idx_srs_due ON srs_cards(due);
 
+CREATE TABLE sources (
+    key text primary key, title text not null, creator text, publisher text, year text, type text, dialect text,
+    access text, rights text, url text, credibility integer, link integer not null, section text, copy text not null,
+    sensitive integer not null, checked_on text, url_status text);
+
+CREATE TABLE bb_dialect_labels (
+    attestation_id integer, entry_id text, form text not null, label text not null, basis text not null,
+    skiri_entry_id text);
+

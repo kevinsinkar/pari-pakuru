@@ -27,6 +27,20 @@ community_review/review_packet.html
 community_review/review_packet.pdf
 community_review/response_sheet.csv
 
+# The catalogue of further sources as the owner brought it (2026-11-15): a spreadsheet with notes addressed to
+# the owner and an e-mail address. Its content is in sources/catalogue.json, without the address
+# (scripts/sources_catalogue.py). The spreadsheet stays on this computer.
+/Skiri Pawnee Language Sources.xlsx
+
+# Letters asking for permission and review, drafted for the owner to send. Private correspondence.
+community_review/letters/
+
+# Two books of ceremony found in docs/ on 2026-11-15 (Fletcher, The Hako; Murie, Ceremonies of the Pawnee, part 1).
+# docs/ is the published site: anything committed there is public. The register of sources holds both back
+# as ceremonial until the Pawnee Nation has said what may be shown (sources/README.md). No PDF belongs in docs/
+# except the two printables, which sit in docs/printables/.
+/docs/*.pdf
+
 # Engines review: the per-form records hold thousands of forms the engines computed, most of them wrong.
 # They are made again in a minute by scripts/engines_review/run_all.py. The test sets (attested forms only),
 # the summaries and the Stage 1 trace are kept.

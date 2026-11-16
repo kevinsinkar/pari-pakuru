@@ -1,0 +1,1795 @@
+{
+ "about": "Resources on the Pawnee language beyond the two books this project copies forms from. The fields before 'project' are copied from a catalogue the project's owner brought on 2026-11-15 (a spreadsheet kept out of git): its credibility scores and its notes are its compiler's judgement, made from web searches, and most archival items are described from their catalogue entries. Under 'project' stand this project's own decisions about each source. See sources/README.md and scripts/sources_catalogue.py.",
+ "spreadsheet_compiled": "November 15, 2026, from web searches. Ratings are my judgment against the scale above.",
+ "records": [
+  {
+   "key": "nation_program",
+   "title": "Pawnee Nation Language Program (Cultural Resources Division)",
+   "credibility": 5,
+   "dialect": "Both",
+   "type": "Community program",
+   "access": "Free (classes, incl. online)",
+   "best_for": "Learning",
+   "creator": "Pawnee Nation of Oklahoma",
+   "publisher": "Pawnee Nation Cultural Resources Division, Pawnee, OK",
+   "year": "CRD est. 2016; ongoing",
+   "contains": "The tribe's own language program, housed with the THPO, NAGPRA office and Pawnee Nation Museum. Runs weekly community language and culture classes; announced online language classes (Mar 2025) and a Language & Culture class (Oct 2025).",
+   "why_rating": "Tribal authority: the final word on current teaching, spelling and cultural protocol.",
+   "rights": "Tribal materials; ask the program before reusing.",
+   "url": "https://pawneenation.org/category/language/",
+   "project": {
+    "link": true,
+    "section": "nation",
+    "check": null,
+    "copy": "no",
+    "sensitive": false,
+    "note": "The Nation's 'Pawnee Language' page is https://pawneenation.org/pawnee-language/ and its Cultural Resources page https://pawneenation.org/cultural-resource-division/ (both answered on 2026-11-15).",
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": "Opened 2026-11-15: the Pawnee Nation's website, news under 'Language'. Posts: 'Online Language Classes Available' (14 March 2025), 'Language & Cultural Classes!' (25 March 2025), 'Pawnee Language & Culture Class' (6 October 2025). The site's own page 'Pawnee Language' (pawneenation.org/pawnee-language/) says 'Follow us on Facebook' and gives the language department's page."
+    },
+    "title": "The Pawnee Nation's language programme",
+    "says": "The Nation's own programme, and the first place to ask. Its website announces language and culture classes; in March 2025 it announced online language classes. Ask the programme what is running now."
+   }
+  },
+  {
+   "key": "nation_facebook",
+   "title": "Pâripakûru' — Pawnee Language Department Facebook page",
+   "credibility": 5,
+   "dialect": "Both",
+   "type": "Community / social media",
+   "access": "Free (Facebook)",
+   "best_for": "Learning",
+   "creator": "Pawnee Nation Language Department",
+   "publisher": "Facebook",
+   "year": "Ongoing",
+   "contains": "The language department's own page (the “Pari Pakuru'” page). Class news, lessons and posts.",
+   "why_rating": "Official program channel (identified as such by the San Juan College guide and by program teachers). Facebook blocks automated access, so individual posts were not reviewed.",
+   "rights": "Posts belong to the Nation; ask before reuse.",
+   "url": "https://www.facebook.com/PawneeLanguage",
+   "cut_from_the_spreadsheet": "a sentence that gave an e-mail address",
+   "project": {
+    "link": true,
+    "section": "nation",
+    "check": null,
+    "copy": "no",
+    "sensitive": false,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": "not checkable",
+     "final_url": null,
+     "seen": "Not opened: Facebook turns automated clients away. The Pawnee Nation's own page 'Pawnee Language' gives this address under 'Follow us on Facebook' (seen 2026-11-15), and the podcast with the programme's teachers lists it."
+    },
+    "title": "The language department's Facebook page",
+    "says": "The Nation's website gives this page as the place to follow its language department: class news and posts."
+   }
+  },
+  {
+   "key": "nation_youtube",
+   "title": "Pawnee Nation YouTube — “Pawnee Language Classes” playlist",
+   "credibility": 5,
+   "dialect": "Not specified",
+   "type": "Video lessons",
+   "access": "Free online",
+   "best_for": "Learning",
+   "creator": "Pawnee Nation",
+   "publisher": "YouTube",
+   "year": "2019–2020",
+   "contains": "Recordings of the Nation's in-person community language classes.",
+   "why_rating": "Official tribal channel; classes were led by Pawnee teachers trained in linguistics.",
+   "rights": "Tribe's content; link rather than re-host.",
+   "url": "https://www.youtube.com/playlist?list=PLxx2qpXeJ-vF0IsY5ttLdCKUAe-dqgXSg",
+   "project": {
+    "link": true,
+    "section": "nation",
+    "check": null,
+    "copy": "no",
+    "sensitive": false,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": "YouTube gives the playlist's title as 'Pawnee Language Classes' and its owner as 'The Pawnee Nation' (2026-11-15). The videos were not watched."
+    },
+    "title": "Recordings of the Nation's language classes",
+    "says": "A playlist, “Pawnee Language Classes”, on the Pawnee Nation's own YouTube channel."
+   }
+  },
+  {
+   "key": "nation_mukurtu",
+   "title": "Pawnee Nation Mukurtu Portal (Library & Digital Archive Project)",
+   "credibility": 5,
+   "dialect": "Not specified",
+   "type": "Tribal digital archive",
+   "access": "Free online (some items under cultural protocols)",
+   "best_for": "Both",
+   "creator": "Pawnee Nation, with Washington State University (Mukurtu)",
+   "publisher": "Pawnee Nation of Oklahoma",
+   "year": "2021– (IMLS-funded)",
+   "contains": "Tribe-run online repository on Pawnee history, culture, language and people (treaties, traditional education, etc.). IMLS grants fund locating and digitizing Pawnee materials held by outside archives.",
+   "why_rating": "Tribally curated; Mukurtu lets the Nation set access by cultural protocol.",
+   "rights": "Follow each item's labels and protocols.",
+   "url": "https://mukurtu.pawneenation.org",
+   "project": {
+    "link": true,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": false,
+    "note": "The address did not resolve from this computer on 2026-11-15. A search engine lists mukurtu.pawneenation.org/node/1, 'About the Pawnee Nation Mukurtu Portal'. Try again before listing it for learners.",
+    "checked": {
+     "on": "2026-11-15",
+     "status": "no answer ([Errno 11001] getaddrinfo failed)",
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "nation_lessons",
+   "title": "Pawnee Nation language lessons 1–3 (PDFs hosted by Northern Oklahoma College)",
+   "credibility": 4,
+   "dialect": "Both (side by side)",
+   "type": "Lesson handouts",
+   "access": "Free online",
+   "best_for": "Learning",
+   "creator": "Attributed to the Pawnee Nation by NOC; PDFs are unsigned",
+   "publisher": "Northern Oklahoma College, Cultural Engagement Center",
+   "year": "2020 upload",
+   "contains": "Lesson 1 alphabet & basics; Lesson 2 greetings, introductions and kin terms; Lesson 3 basics. Skiri and South Band forms given side by side, in a circumflex spelling (â, î, û, ê, č). Lesson 1 PDF: noc.edu/wp-content/uploads/sites/740/2020/04/pawneelanguage01.pdf",
+   "why_rating": "Practical and dialect-labelled, but unsigned and hosted by a third party; spelling differs from the Parks & Pratt accent system.",
+   "rights": "Educational handouts; ask the Nation before republishing.",
+   "url": "https://www.noc.edu/?p=2237",
+   "project": {
+    "link": true,
+    "section": "nation",
+    "check": "the alphabet the Nation teaches, and which forms are Skiri and which South Band (Lesson 1)",
+    "copy": "ask",
+    "sensitive": false,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": "https://www.noc.edu/about-noc/pickens-learning-commons/cultural-engagement-center/language-preservation/",
+     "seen": "Opened 2026-11-15: Northern Oklahoma College's page says 'The Pawnee Nation also provides the following online lessons in PDF format' and lists Lesson 1: Alphabet and Basics, Lesson 2: Greetings and Introductions, Lesson 3: Basics. Lesson 1 was read in full: 'Vowels (South Band or SB: 8 & Skiri: 6)', \"'e,' 'ee' are SB sounds\", the consonants p t k č c s h r w ’, long vowels with a circumflex, and Skiri and South Band forms side by side."
+    },
+    "title": "The Nation's lesson handouts",
+    "says": "Three lessons as PDFs, provided by the Pawnee Nation and hosted by Northern Oklahoma College: the alphabet, greetings and introductions, basics. They give Skiri and South Band forms side by side, in the spelling this site calls the learner spelling."
+   }
+  },
+  {
+   "key": "blue_book",
+   "title": "Pari Pakuru': Introduction to Spoken Pawnee (1979 textbook)",
+   "credibility": 4,
+   "dialect": "Not confirmed (check)",
+   "type": "Textbook + audio",
+   "access": "Out of print (used copies)",
+   "best_for": "Learning",
+   "creator": "Pawnee Cultural Retention Committee",
+   "publisher": "Educational Research Associates, Albuquerque (LC 79-63051); books, cassettes and teacher's guide via IAIA/BIA, Santa Fe",
+   "year": "1979",
+   "contains": "Community-produced course. The Pawnee Nation Language Department was still teaching from it (with a CD) in 2006.",
+   "why_rating": "Pawnee-made and long used in tribal classes, but it predates the Parks orthography, and its dialect isn't stated in what I found. Your repo calls it a Skiri “Blue Book”; confirm from the book itself.",
+   "rights": "In copyright (1979); rights likely with the committee/Nation.",
+   "url": "https://listserv.linguistlist.org/pipermail/siouan/2006-May/006375.html",
+   "project": {
+    "link": true,
+    "section": null,
+    "check": "its own account of its two dialects (the alphabet chapter)",
+    "copy": "source",
+    "sensitive": false,
+    "note": "The catalogue asks whether the book is Skiri. The book answers (alphabet chapter, pp. xviii-xxiv): it writes for both dialects in a spelling that follows South Band speakers: 'the South Band e is pronounced by Skidi speakers just as if it were an i'; 'IMPORTANT. The accent marked in this book is that of some South Band speakers'; and it marks a form (SK) or (SB) where the two differ. Copyright page: 'Copyright © 1979 by the Pawnee Indian Tribal Business Council … No part of this book may be reproduced … without permission in writing from the Pawnee Tribal Business Council.' Permission is being asked (2026-11); the owner's decision of 2026-11-15 is to change nothing meanwhile.",
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "nation_newspaper",
+   "title": "Chaticks si Chaticks (Pawnee Nation newspaper)",
+   "credibility": 4,
+   "dialect": "Not specified",
+   "type": "Tribal newspaper",
+   "access": "Free online (recent issues as PDF)",
+   "best_for": "Both",
+   "creator": "Pawnee Nation",
+   "publisher": "Pawnee Nation of Oklahoma",
+   "year": "Various (e.g. 2006, 2017, 2019)",
+   "contains": "Carries language-department reports, class schedules and Pawnee phrases in notices.",
+   "why_rating": "Official, but language content is occasional and not edited as teaching material.",
+   "rights": "Tribal publication.",
+   "url": "https://pawneenation.org/wp-content/uploads/2020/12/2019-Sept-Chaticks-Si-Chaticks-web.pdf",
+   "project": {
+    "link": true,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": false,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "nation_college",
+   "title": "Pawnee Nation College",
+   "credibility": 4,
+   "dialect": "Not specified",
+   "type": "College courses",
+   "access": "Enrollment",
+   "best_for": "Learning",
+   "creator": "Pawnee Nation College",
+   "publisher": "Pawnee, OK",
+   "year": "Ongoing",
+   "contains": "Tribal college that has offered Pawnee language courses (Taylor Moore taught there from 2016). Current offerings not verified.",
+   "why_rating": "Tribally connected; couldn't confirm what is taught now.",
+   "rights": "—",
+   "url": "http://www.pawneenationcollege.org/",
+   "project": {
+    "link": true,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": false,
+    "note": "No answer on 2026-11-15; what is taught there now is not known. Not listed.",
+    "checked": {
+     "on": "2026-11-15",
+     "status": "no answer (RemoteDisconnected)",
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "podcast_language_learning",
+   "title": "Pawnee Language Learning (podcast & Substack)",
+   "credibility": 3,
+   "dialect": "Both (labels SB and Skiri forms)",
+   "type": "Podcast / newsletter",
+   "access": "Free (optional paid tier)",
+   "best_for": "Learning",
+   "creator": "Kelli Cedarfield",
+   "publisher": "Substack; Apple Podcasts",
+   "year": "2024–2026 (156 episodes)",
+   "contains": "Word-of-the-day episodes plus short grammar, history and culture posts; gives both dialect forms (e.g. âtkahâru' SB / itkahâru' Skiri, “ear”).",
+   "why_rating": "Active and careful about dialect labels, but the author's training and tie to the Nation's program aren't stated in what I could reach. Cross-check words against Parks & Pratt or the IIK database.",
+   "rights": "© Kelli Cedarfield.",
+   "url": "https://pawneelanguagelearning.substack.com/podcast",
+   "project": {
+    "link": true,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": false,
+    "note": "Scored 3 (cross-check) by the catalogue: an independent learner's podcast. Not listed for learners until its words have been checked against the dictionary or the Nation's programme says so.",
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "podcast_life_in_ruins_89",
+   "title": "“Pâripakûru' with Zach Rice and Taylor Moore” — A Life in Ruins, Ep. 89",
+   "credibility": 4,
+   "dialect": "Both",
+   "type": "Podcast interview",
+   "access": "Free online",
+   "best_for": "Both",
+   "creator": "Zach Rice & Taylor Moore (guests)",
+   "publisher": "Archaeology Podcast Network",
+   "year": "Jan 2022 (1 h 23 min)",
+   "contains": "Two Pawnee Nation citizens and program teachers (OU MAs in linguistic anthropology) on the language program, Northern Caddoan relationships, challenges and goals; show notes list their recommended reading.",
+   "why_rating": "First-hand from the program's teachers; an interview, not a lesson.",
+   "rights": "© podcast.",
+   "url": "https://podcasts.apple.com/au/podcast/p%C3%A2ripak%C3%BBru-with-zach-rice-and-taylor-moore-ep-89/id1460532947?i=1000546766958",
+   "project": {
+    "link": true,
+    "section": "hear",
+    "check": null,
+    "copy": "no",
+    "sensitive": false,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": "Opened 2026-11-15: A Life in Ruins, episode 89, 'Pâripakûru' with Zach Rice and Taylor Moore', 3 January 2022, 1 hr 23 min. The guests are described as citizens of the Pawnee Nation who work with the Pawnee Nation Language Program; the notes recommend A Dictionary of Skiri Pawnee and link the language department's Facebook page and Indiana University's online dictionary. An interview in English about the language, not a lesson. The episode itself was not listened to."
+    },
+    "title": "Two people of the programme talk about the language",
+    "says": "A podcast interview of January 2022, in English, 1 hour 23 minutes, with two citizens of the Pawnee Nation who work with its language programme: how they came to the language and what the programme is working towards. It is a conversation about the language, not a lesson."
+   }
+  },
+  {
+   "key": "iik_dictionary",
+   "title": "IIK Dictionary Database — Skiri Pawnee (and South Band Pawnee)",
+   "credibility": 5,
+   "dialect": "Skiri (separate South Band database)",
+   "type": "Online dictionary with audio",
+   "access": "Free online",
+   "best_for": "Both",
+   "creator": "Douglas R. Parks and colleagues",
+   "publisher": "Indiana University, Institute for Indigenous Knowledge (formerly AISRI)",
+   "year": "2008– (page © 2025)",
+   "contains": "English-keyword search; entries give part of speech, numbered senses, some phonetic forms, and on some entries mp3 audio, example sentences or images. Same portal searches South Band Pawnee and Arikara.",
+   "why_rating": "Built from the same fieldwork as the print dictionary, with native-speaker audio.",
+   "rights": "© Trustees of Indiana University; no open license stated. Ask IIK before bulk reuse.",
+   "url": "https://aisri-language-database.webapps.iu.edu/dictsearch/lib/testengltoxsrchNP.php",
+   "project": {
+    "link": true,
+    "section": "hear",
+    "check": "how a word sounds (a link, word by word); after permission, a second witness for each dictionary entry",
+    "copy": "ask",
+    "sensitive": false,
+    "note": "Searches are plain links (testengltoxsrchNP.php with database=skiri), so a word here can link to its search there. The portal for choosing a dictionary: https://aisri-language-database.webapps.iu.edu/dictsearch/",
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": "Opened 2026-11-15: the dictionary search of the Institute for Indigenous Knowledge, Indiana University, over six dictionaries (Arikara, Assiniboine, Dakota, Lakhota, Skiri Pawnee, South Band Pawnee). A search of the Skiri dictionary returned entries with part of speech and, on some, a 'sound file' (mp3). Footer: '©2025, The Trustees of Indiana University'; no licence is stated."
+    },
+    "title": "Indiana University's Skiri dictionary, with sound",
+    "says": "The dictionary this site is made from, online at the Institute for Indigenous Knowledge. Search in English or in Pawnee; some entries have a recording you can play. Type a Pawnee word in plain letters, without the mark for the catch in the throat."
+   }
+  },
+  {
+   "key": "iik_corpora",
+   "title": "IIK Northern Caddoan Linguistic Text Corpora",
+   "credibility": 5,
+   "dialect": "Both",
+   "type": "Interlinear texts",
+   "access": "Free online",
+   "best_for": "Research",
+   "creator": "Parks's NSF Northern Caddoan Languages Documentation Project (1992–)",
+   "publisher": "Indiana University, IIK",
+   "year": "1992–present",
+   "contains": "Skiri: Roaming Scout Collection (ethics narratives first written down by George Dorsey; retranscribed in modern spelling, glossed and analyzed by Parks) and Parks Collection. South Band: Weltfish Collection (in progress). Unicode.",
+   "why_rating": "Analyzed primary texts from the field's main specialist.",
+   "rights": "Cite with the XML date stamp shown on each text; contact Logan Sutton (IIK) about reuse.",
+   "url": "https://aisri-language-database.webapps.iu.edu/corpora/",
+   "project": {
+    "link": true,
+    "section": null,
+    "check": null,
+    "copy": "ask",
+    "sensitive": false,
+    "note": "Connected Skiri text analysed by Parks. Wanted for examples and as forms no rule here was fitted to; to ask the institute first, and texts of ceremony are held whatever the answer.",
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": "Opened 2026-11-15: 'IIK Northern Caddoan Linguistic Text Corpora'. Skiri Pawnee: Roaming Scout Collection, Parks Collection; South Band Pawnee: Weltfish Collection (in progress). 'Readers should pay attention to that date stamp and include it in any fair-use citations.' Copyright Indiana University; a contact is named for the site."
+    }
+   }
+  },
+  {
+   "key": "skiri_course_1997",
+   "title": "Pawnee Language Program curriculum (Pawnee Nation + AISRI)",
+   "credibility": 5,
+   "dialect": "Skiri textbook; lessons in both",
+   "type": "Curriculum (textbook, CD-ROM, student dictionary, reader)",
+   "access": "Ask Pawnee Nation or IIK (availability unclear)",
+   "best_for": "Learning",
+   "creator": "Pawnee Nation & AISRI (Parks; coordinators Adrian Horse Chief, Dollie Gonzales)",
+   "publisher": "Indiana University AISRI / Pawnee Nation",
+   "year": "1997–c. 2001 (ANA-funded)",
+   "contains": "“Introduction to the Pawnee Language (Skiri Dialect)” textbook, a year of multimedia CD-ROM lessons with native-speaker recordings, a student dictionary and a reader. Skiri recordings by Nora Pratt; South Band by Stacy Matthews and Lynn Rice.",
+   "why_rating": "Co-produced by the Nation and Parks with fluent elders.",
+   "rights": "Pawnee Nation / IU materials.",
+   "url": "https://zia.aisri.indiana.edu/research-and-educational-activity/educational/pawnee.html",
+   "project": {
+    "link": true,
+    "section": "nation",
+    "check": null,
+    "copy": "ask",
+    "sensitive": false,
+    "note": "The only beginners' course for Skiri. The project holds no copy (the owner, 2026-11-15). To ask the Nation's Education Department for.",
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": "Opened 2026-11-15 at its new address (the spreadsheet's redirects): 'Pawnee Language Program. Language Learning with Technology. A cooperative project between The Pawnee Nation and Indiana University', established 1997: the printed textbook 'Introduction to the Pawnee Language (Skiri Dialect)', a multimedia dictionary, multimedia language lessons on CD-ROM, and the Pawnee Alphabet Book. 'Copies of instructional materials are available from The Pawnee Nation of Oklahoma, Education Department'."
+    },
+    "url": "https://indigenousknowledge.indiana.edu/research-and-educational-activity/educational/pawnee.html",
+    "title": "The Nation's Skiri course",
+    "says": "A beginners' course made from 1997 by the Pawnee Nation with Indiana University: the textbook “Introduction to the Pawnee Language (Skiri Dialect)”, lessons on CD-ROM with a speaker's recordings, and a dictionary with sound. It is not online. The university's page says copies are available from the Nation's Education Department."
+   }
+  },
+  {
+   "key": "alphabet_book",
+   "title": "Pawnee Alphabet Book — Writing Pawnee / Rararíhkaruku Paárihkat",
+   "credibility": 5,
+   "dialect": "Both",
+   "type": "Orthography guide",
+   "access": "Free PDF",
+   "best_for": "Learning",
+   "creator": "Pawnee Language Project; intro by Douglas R. Parks; illustrations by Charles Lone Chief",
+   "publisher": "Pawnee Nation & Indiana University AISRI",
+   "year": "2001",
+   "contains": "Letter-by-letter guide to the Pawnee alphabet, with example words in Skiri and South Band.",
+   "why_rating": "The project's official spelling system.",
+   "rights": "Free download; ask before republishing.",
+   "url": "https://indigenousknowledge.indiana.edu/research/educational/pawnee_alphabet.pdf",
+   "project": {
+    "link": true,
+    "section": "read",
+    "check": "the alphabet, and the Skiri and South Band forms of the same word",
+    "copy": "ask",
+    "sensitive": false,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": "Read 2026-11-15 at its new address (the spreadsheet's answers 'not found'): 19 pages, made in 2002. Each letter has words in two columns, South Band and Skiri (cáhriks and cáhiks 'person'; iíru' and hiíru' 'grass, hay'; tékskurit and tíkskurit 'near'). It writes a long vowel double and marks the accent, as the dictionary does, and writes c for both the 'patch' and the 'cents' sound; e and ee are in its vowel list with South Band examples only."
+    },
+    "url": "https://indigenousknowledge.indiana.edu/research-and-educational-activity/educational/pawnee_alphabet.pdf",
+    "title": "The Pawnee Alphabet Book",
+    "says": "A short guide to the letters (2002) from the Pawnee Nation's language project with Indiana University: each letter with words in South Band and in Skiri, side by side. It writes a long vowel double, as the dictionary does."
+   }
+  },
+  {
+   "key": "parks",
+   "title": "A Dictionary of Skiri Pawnee — Parks & Pratt",
+   "credibility": 5,
+   "dialect": "Skiri",
+   "type": "Dictionary",
+   "access": "Purchase or library (also e-book via EBSCO / ProQuest)",
+   "best_for": "Both",
+   "creator": "Douglas R. Parks & Lula Nora Pratt",
+   "publisher": "University of Nebraska Press with AISRI, Lincoln",
+   "year": "2008 (ISBN 978-0-8032-1926-7)",
+   "contains": "About 4,500 entries, English–Skiri and Skiri–English; introduction on sounds, alphabet, sound changes and grammar; appendices of verb conjugations, irregular verb roots and kinship terms. Data from Pratt, 1960s narrative recordings by Harry Mad Bear and Sam Allen, and Roaming Scout's texts. No audio.",
+   "why_rating": "The standard Skiri reference: some 15 years of work between a linguist and a fluent speaker.",
+   "rights": "© University of Nebraska Press. Publishing its full content in a digital tool needs the publisher's permission.",
+   "url": "https://search.worldcat.org/title/312984584",
+   "project": {
+    "link": true,
+    "section": null,
+    "check": null,
+    "copy": "source",
+    "sensitive": false,
+    "note": "The catalogue: 'Publishing its full content in a digital tool needs the publisher's permission.' Permission is being asked (2026-11); the owner's decision of 2026-11-15 is to change nothing meanwhile.",
+    "checked": {
+     "on": "2026-11-15",
+     "status": 403,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "parks_grammar_1976",
+   "title": "A Grammar of Pawnee — Parks",
+   "credibility": 5,
+   "dialect": "Not stated in sources (check)",
+   "type": "Reference grammar",
+   "access": "Library / used copies",
+   "best_for": "Research",
+   "creator": "Douglas R. Parks",
+   "publisher": "Garland, New York",
+   "year": "1976 (ISBN 0-8240-1971-7)",
+   "contains": "Full reference grammar (xiii + 361 pp.), a revision of Parks's UC Berkeley dissertation. Reviewed by Allan R. Taylor in Language 54(4):969–972 (1978).",
+   "why_rating": "The only full grammar of Pawnee, by its leading specialist.",
+   "rights": "In copyright.",
+   "url": "https://glottolog.org/resource/reference/id/151898",
+   "project": {
+    "link": true,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": false,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "parks_pawnee_and_caddoan_languages_handbook",
+   "title": "Parks, “Pawnee” and “Caddoan Languages” — Handbook of North American Indians, vol. 13 Plains",
+   "credibility": 5,
+   "dialect": "Both",
+   "type": "Encyclopedia chapters",
+   "access": "Library",
+   "best_for": "Research",
+   "creator": "Douglas R. Parks",
+   "publisher": "Smithsonian Institution",
+   "year": "2001",
+   "contains": "“Pawnee” (pp. 515–547) covers history, bands and culture; “Caddoan Languages” (pp. 80–93) covers the language family.",
+   "why_rating": "Authoritative overview by the leading specialist.",
+   "rights": "In copyright (Smithsonian).",
+   "url": "https://glottolog.org/resource/reference/id/477451",
+   "project": {
+    "link": true,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": false,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "weltfish_caddoan_texts_pawnee_south_band",
+   "title": "Weltfish, Caddoan Texts: Pawnee, South Band Dialect",
+   "credibility": 4,
+   "dialect": "South Band",
+   "type": "Bilingual texts",
+   "access": "Library (AMS reprint 1974)",
+   "best_for": "Research",
+   "creator": "Gene Weltfish",
+   "publisher": "G. E. Stechert, New York (Publications of the American Ethnological Society 17)",
+   "year": "1937",
+   "contains": "Collection of Pawnee texts with English (x + 251 pp.).",
+   "why_rating": "Primary texts by a Boas-trained linguist; older transcription, and South Band, not Skiri.",
+   "rights": "1937 US publication: check copyright renewal before reuse.",
+   "url": "https://glottolog.org/resource/reference/id/318331",
+   "project": {
+    "link": true,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": false,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "weltfish_the_vision_story_of_fox_boy_a_south",
+   "title": "Weltfish, “The Vision Story of Fox-Boy, a South Band Pawnee Text”",
+   "credibility": 4,
+   "dialect": "South Band",
+   "type": "Text (journal article)",
+   "access": "Library / JSTOR",
+   "best_for": "Research",
+   "creator": "Gene Weltfish",
+   "publisher": "International Journal of American Linguistics",
+   "year": "1936",
+   "contains": "A single analyzed South Band narrative (WALS lists it as “The vision story of Fox Bay”).",
+   "why_rating": "Peer-reviewed linguistic text; older transcription.",
+   "rights": "In copyright (journal).",
+   "url": "https://wals.info/languoid/lect/wals_code_pwn",
+   "project": {
+    "link": false,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": true,
+    "note": "Marked by the project on 2026-11-15 as bound up with ceremony, song or sacred narrative. For the Pawnee Nation to say.",
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "weltfish_morphology_of_the_pawnee_language",
+   "title": "Weltfish, “Morphology of the Pawnee Language” (manuscript)",
+   "credibility": 4,
+   "dialect": "South Band",
+   "type": "Grammar manuscript",
+   "access": "On-site / request",
+   "best_for": "Research",
+   "creator": "Gene Weltfish",
+   "publisher": "American Philosophical Society, ACLS Collection, Mss.497.3.B63c (item C1.1)",
+   "year": "c. 1930s",
+   "contains": "88 pages: an outline of a South Band grammar and a partial description of verb morphology.",
+   "why_rating": "Primary analysis by a trained linguist; unpublished and South Band.",
+   "rights": "APS permissions apply.",
+   "url": "https://indigenousguide.amphilsoc.org/index.php/entry/39901",
+   "project": {
+    "link": true,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": false,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 403,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "rice_repurposing_the_comparative_method_for",
+   "title": "Rice, “Repurposing the Comparative Method for Pawnee Language and Dialect Revitalization”",
+   "credibility": 4,
+   "dialect": "Both (+ Arikara)",
+   "type": "MA thesis",
+   "access": "Free PDF",
+   "best_for": "Both",
+   "creator": "Zachary Rice",
+   "publisher": "University of Oklahoma (SHAREOK)",
+   "year": "2016",
+   "contains": "Sets up sound correspondences between Skiri, South Band and Arikara, and uses them to propose new Pawnee words from Arikara forms; extensive appendices.",
+   "why_rating": "By a Pawnee citizen and program teacher, but MA-level, and the new words are proposals, not attested forms.",
+   "rights": "Author's copyright; free to read.",
+   "url": "https://shareok.org/items/ce2270dc-22e8-437d-b85a-566539b11843/full",
+   "project": {
+    "link": true,
+    "section": null,
+    "check": "the sound correspondences between Skiri and South Band (not read yet)",
+    "copy": "no",
+    "sensitive": false,
+    "note": "Its new words are proposals from Arikara forms, not attested Pawnee: never to be copied in.",
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "moore_language_revitalization_through_pawnee",
+   "title": "Moore, “Language Revitalization Through Pawnee Music”",
+   "credibility": 4,
+   "dialect": "Not specified",
+   "type": "MA thesis",
+   "access": "Free PDF",
+   "best_for": "Both",
+   "creator": "Taylor Moore",
+   "publisher": "University of Oklahoma (SHAREOK)",
+   "year": "2016",
+   "contains": "Pawnee hymns as a teaching tool and their recent revival.",
+   "why_rating": "The author is now the Pawnee Nation's Language Manager and an IIK research associate; MA-level.",
+   "rights": "Author's copyright; free to read.",
+   "url": "https://shareok.org/handle/11244/44887",
+   "project": {
+    "link": true,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": false,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": "https://shareok.org/items/f0c2ed0e-b64f-4053-99cb-e46f0a76e687",
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "smithsonian_naa_ms_2520_the_ceremonies_of",
+   "title": "Smithsonian NAA MS 2520 — The Ceremonies of the Pawnee (manuscript)",
+   "credibility": 5,
+   "dialect": "Both",
+   "type": "Manuscript",
+   "access": "On-site / microfilm",
+   "best_for": "Research",
+   "creator": "James R. Murie; ed. Clark Wissler; phonetic texts revised and translated by Gene Weltfish",
+   "publisher": "Smithsonian National Anthropological Archives",
+   "year": "1921",
+   "contains": "2,275 pages, 18 photographs and 27 sketches; includes Murie's 1911 Pawnee star chart with his explanatory letter.",
+   "why_rating": "Primary documentation by a fluent Skiri Pawnee scholar.",
+   "rights": "Ceremonial content: culturally sensitive; consult the Nation.",
+   "url": "https://sirismm.si.edu/EADpdfs/NAA.MS2520.pdf",
+   "project": {
+    "link": false,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": true,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "smithsonian_naa_ms_1788_ceremonial_songs_of",
+   "title": "Smithsonian NAA MS 1788 — Ceremonial Songs of the Pawnee",
+   "credibility": 5,
+   "dialect": "Not specified",
+   "type": "Manuscript (music)",
+   "access": "On-site / microfilm",
+   "best_for": "Research",
+   "creator": "Helen H. Roberts & James R. Murie",
+   "publisher": "Smithsonian National Anthropological Archives",
+   "year": "Undated",
+   "contains": "624 pages of song transcriptions and musical analysis, with Murie's notes on the songs and their composers; companion to MS 2520 (a BAE file mentions 95 song recordings).",
+   "why_rating": "Primary, with a fluent Pawnee collaborator.",
+   "rights": "Culturally sensitive; consult the Nation.",
+   "url": "https://sirismm.si.edu/EADpdfs/NAA.MS1788.pdf",
+   "project": {
+    "link": false,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": true,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "murie_ed_parks_ceremonies_of_the_pawnee_part",
+   "title": "Murie, ed. Parks — Ceremonies of the Pawnee, Part I: The Skiri; Part II: The South Bands",
+   "credibility": 5,
+   "dialect": "Both (Part I = Skiri)",
+   "type": "Published ethnography",
+   "access": "Free PDF (Smithsonian Research Online)",
+   "best_for": "Research",
+   "creator": "James R. Murie; edited by Douglas R. Parks",
+   "publisher": "Smithsonian Institution Press (Smithsonian Contributions to Anthropology 27)",
+   "year": "1981",
+   "contains": "Parks's edition of the MS 2520 manuscript, which had sat in the BAE archives since 1921.",
+   "why_rating": "Primary content edited by the leading Pawnee linguist.",
+   "rights": "Smithsonian publication; check the item's license.",
+   "url": "https://doi.org/10.5479/si.00810223.27.1",
+   "project": {
+    "link": false,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": true,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 403,
+     "final_url": "https://repository.si.edu/handle/10088/1337",
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "fletcher_the_hako_a_pawnee_ceremony",
+   "title": "Fletcher, The Hako: A Pawnee Ceremony",
+   "credibility": 4,
+   "dialect": "South Band (Chawi)",
+   "type": "Ethnography with song texts",
+   "access": "Free PDF",
+   "best_for": "Research",
+   "creator": "Alice C. Fletcher, assisted by James R. Murie; music by Edwin S. Tracy",
+   "publisher": "Bureau of American Ethnology, 22nd Annual Report pt. 2 (UNP reprint 1996)",
+   "year": "1904",
+   "contains": "The Chawi band's calumet ceremony, with the text and music of every song, translations, and the ritual leader Tahirussawichi's explanations.",
+   "why_rating": "Detailed primary record, but early transcription and a South Band ceremony.",
+   "rights": "Public domain (“No Copyright – United States”). Ceremonial content: consult the Nation.",
+   "url": "https://repository.si.edu/handle/10088/91712",
+   "project": {
+    "link": false,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": true,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": "https://repository.si.edu/items/946ae18a-c326-4c14-a74f-10699c3f4e20",
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "densmore_pawnee_music_bae_bulletin_93",
+   "title": "Densmore, Pawnee Music (BAE Bulletin 93)",
+   "credibility": 4,
+   "dialect": "Not specified",
+   "type": "Ethnomusicology",
+   "access": "Free online (Smithsonian, Internet Archive)",
+   "best_for": "Research",
+   "creator": "Frances Densmore",
+   "publisher": "Bureau of American Ethnology",
+   "year": "1929",
+   "contains": "Songs (including hand-game and Ghost Dance songs) with notes; some song words.",
+   "why_rating": "Careful, but music-focused, with limited language data.",
+   "rights": "Public domain (US government work).",
+   "url": "https://repository.si.edu/handle/10088/15560",
+   "project": {
+    "link": false,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": true,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": "https://repository.si.edu/items/afe133ed-66ef-4fe8-9f7d-467cf637ce2e",
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "aps_douglas_parks_pawnee_texts_1966_audio",
+   "title": "APS — Douglas Parks, Pawnee Texts (1966 audio), Mss.Rec.67",
+   "credibility": 5,
+   "dialect": "Both (2 Skiri, 9 South Band)",
+   "type": "Audio recordings",
+   "access": "Free online with APS login (request)",
+   "best_for": "Research",
+   "creator": "Douglas R. Parks; speakers Sam Allen, Harry Cummings, Phillip Jim",
+   "publisher": "American Philosophical Society",
+   "year": "1966",
+   "contains": "11 narratives told in Pawnee only, recorded in Pawnee, OK; 4 h 56 min, digitized.",
+   "why_rating": "Fluent-speaker audio recorded by Parks.",
+   "rights": "APS open access for non-commercial, scholarly and educational use.",
+   "url": "https://indigenousguide.amphilsoc.org/entry/38502",
+   "project": {
+    "link": true,
+    "section": null,
+    "check": null,
+    "copy": "ask",
+    "sensitive": false,
+    "note": "Two Skiri narratives among eleven. The archive's site turns automated clients away, so the entry was not seen. To ask about after the institute and the Nation have answered.",
+    "checked": {
+     "on": "2026-11-15",
+     "status": 403,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "aps_mary_r_haas_papers_pawnee_materials",
+   "title": "APS — Mary R. Haas Papers, Pawnee materials",
+   "credibility": 4,
+   "dialect": "Not specified",
+   "type": "Linguistic notes",
+   "access": "On-site / request",
+   "best_for": "Research",
+   "creator": "Mary R. Haas, with Mark Evarts",
+   "publisher": "American Philosophical Society",
+   "year": "1936",
+   "contains": "Linguistics and folklore material recorded with Mark Evarts (also Weltfish's Skiri collaborator).",
+   "why_rating": "Major linguist; I did not see the item itself.",
+   "rights": "APS permissions apply.",
+   "url": "https://indigenousguide.amphilsoc.org/entry/38762",
+   "project": {
+    "link": true,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": false,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 403,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "aps_james_m_crawford_papers_pawnee_materials",
+   "title": "APS — James M. Crawford Papers, Pawnee materials",
+   "credibility": 3,
+   "dialect": "Not specified",
+   "type": "Notes",
+   "access": "On-site / request",
+   "best_for": "Research",
+   "creator": "James M. Crawford",
+   "publisher": "American Philosophical Society",
+   "year": "1977–1978",
+   "contains": "Pawnee materials in a linguist's papers; catalogued as English-language.",
+   "why_rating": "Credible collector, but contents not reviewed and probably slight.",
+   "rights": "APS permissions apply.",
+   "url": "https://indigenousguide.amphilsoc.org/entry/38997",
+   "project": {
+    "link": true,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": false,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 403,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "aps_floyd_g_lounsbury_papers_pawnee_kinship",
+   "title": "APS — Floyd G. Lounsbury Papers, Pawnee kinship materials",
+   "credibility": 4,
+   "dialect": "Not specified",
+   "type": "Article + annotated notes",
+   "access": "Library / on-site",
+   "best_for": "Research",
+   "creator": "Floyd G. Lounsbury",
+   "publisher": "American Philosophical Society",
+   "year": "1950s",
+   "contains": "Annotated offprint of Lounsbury's analysis of Pawnee kinship usage, published in Language, with related notes.",
+   "why_rating": "Peer-reviewed semantic analysis of kin terms.",
+   "rights": "In copyright (journal); APS permissions for notes.",
+   "url": "https://indigenousguide.amphilsoc.org/entry/38330",
+   "project": {
+    "link": true,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": false,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 403,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "newberry_library_gene_weltfish_pawnee_field",
+   "title": "Newberry Library — Gene Weltfish Pawnee field notes",
+   "credibility": 4,
+   "dialect": "Skiri (a Skidi village)",
+   "type": "Field notes",
+   "access": "On-site (reading room)",
+   "best_for": "Research",
+   "creator": "Gene Weltfish, with Mark Evarts and other elders",
+   "publisher": "Newberry Library, Chicago (Ayer collection)",
+   "year": "1935",
+   "contains": "11 volumes reconstructing a Skidi village's year in 1867 (hunts, harvest, households, doctoring, ceremonies and dances). Flagged as culturally sensitive.",
+   "why_rating": "Primary, but ethnographic rather than linguistic.",
+   "rights": "Copyright may rest with Weltfish's heirs; Newberry permission to reproduce.",
+   "url": "https://archives.newberry.org/repositories/2/resources/173",
+   "project": {
+    "link": false,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": true,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 403,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "field_museum_george_a_dorsey_james_r_murie",
+   "title": "Field Museum — George A. Dorsey & James R. Murie notes and manuscripts",
+   "credibility": 5,
+   "dialect": "Mostly Skiri",
+   "type": "Manuscripts",
+   "access": "On-site / request",
+   "best_for": "Research",
+   "creator": "George A. Dorsey & James R. Murie",
+   "publisher": "Field Museum, Department of Anthropology archives",
+   "year": "1902–1907",
+   "contains": "Notes and manuscripts on Pawnee and Arikara society and religion, including Murie's largely unpublished “Pawnee Ethnographic and Linguistic Notes”; finding aid funded by Save America's Treasures.",
+   "why_rating": "Primary material from a fluent Skiri scholar.",
+   "rights": "Field Museum permissions; consult the Nation on ceremonial content.",
+   "url": "https://snaccooperative.org/vocab_administrator/resources/7865115",
+   "project": {
+    "link": false,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": true,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "iu_archives_of_traditional_music_native",
+   "title": "IU Archives of Traditional Music — Native North American recordings",
+   "credibility": 5,
+   "dialect": "Not specified",
+   "type": "Audio archive + catalog",
+   "access": "Recordings on request; catalog free (CC BY-NC-ND)",
+   "best_for": "Research",
+   "creator": "Various collectors (incl. George A. Dorsey)",
+   "publisher": "Indiana University Libraries",
+   "year": "Recordings 1893–; catalog 1979",
+   "contains": "Holds early cylinder recordings, including those Dorsey made for the Field Museum; Dorothy Sara Lee's catalog of the Native American holdings is open access.",
+   "why_rating": "Major archive; specific Pawnee items still need locating in the catalog.",
+   "rights": "Per ATM access designations.",
+   "url": "https://publish.iupress.indiana.edu/projects/native-north-american-music-and-oral-data",
+   "project": {
+    "link": false,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": true,
+    "note": "Marked by the project on 2026-11-15 as bound up with ceremony, song or sacred narrative. For the Pawnee Nation to say.",
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "library_of_congress_american_folklife_center",
+   "title": "Library of Congress American Folklife Center — cylinders & LP AFS L25",
+   "credibility": 5,
+   "dialect": "Not specified",
+   "type": "Audio archive",
+   "access": "Request (some issued on LP)",
+   "best_for": "Research",
+   "creator": "Frances Densmore, Alice Fletcher and others",
+   "publisher": "Library of Congress, American Folklife Center",
+   "year": "1890s–1930s recordings",
+   "contains": "About 10,000 wax cylinders of Native song and speech; the Federal Cylinder Project returns copies to tribes. Densmore's Pawnee songs were issued on LP AFS L25 with Northern Ute songs (liner notes at link).",
+   "why_rating": "National archive; song more than speech.",
+   "rights": "Tribal communities can request copies.",
+   "url": "https://webarchive.library.unt.edu/web/20121226113656/http:/www.loc.gov/folklife/LP/AFSL25PawneeNUte.pdf",
+   "project": {
+    "link": false,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": true,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "ou_western_history_collections_doris_duke",
+   "title": "OU Western History Collections — Doris Duke American Indian Oral History Collection",
+   "credibility": 4,
+   "dialect": "Not specified",
+   "type": "Oral histories (mostly English)",
+   "access": "Free online (selected) / request",
+   "best_for": "Research",
+   "creator": "OU interviewers with Pawnee elders",
+   "publisher": "University of Oklahoma Libraries",
+   "year": "1967–1972",
+   "contains": "600+ interviews with Native elders across Oklahoma, including Pawnee ones (e.g. Pawnee Doctor Dance, religion of the Pawnees).",
+   "why_rating": "Primary community voices; language content incidental.",
+   "rights": "Western History terms of use.",
+   "url": "https://www.nativeoralhistory.org/digital-heritage/community/20/tribe-community-culture-group/pawnee-nation",
+   "project": {
+    "link": false,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": true,
+    "note": "Marked by the project on 2026-11-15 as bound up with ceremony, song or sacred narrative. For the Pawnee Nation to say.",
+    "checked": {
+     "on": "2026-11-15",
+     "status": 429,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "dorsey_traditions_of_the_skidi_pawnee",
+   "title": "Dorsey, Traditions of the Skidi Pawnee",
+   "credibility": 4,
+   "dialect": "Skiri",
+   "type": "Narratives (English)",
+   "access": "Free online (HathiTrust full view)",
+   "best_for": "Research",
+   "creator": "George A. Dorsey (collected with James R. Murie)",
+   "publisher": "Memoirs of the American Folk-Lore Society 8",
+   "year": "1904",
+   "contains": "Skiri myths and tales in English translation.",
+   "why_rating": "Primary narrative collection; very little Pawnee-language text.",
+   "rights": "Public domain (pre-1931 US).",
+   "url": "https://catalog.hathitrust.org/Record/000559525",
+   "project": {
+    "link": false,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": true,
+    "note": "Marked by the project on 2026-11-15 as bound up with ceremony, song or sacred narrative. For the Pawnee Nation to say.",
+    "checked": {
+     "on": "2026-11-15",
+     "status": 403,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "dorsey_the_pawnee_mythology_part_i",
+   "title": "Dorsey, The Pawnee Mythology (Part I)",
+   "credibility": 4,
+   "dialect": "Both (each tale tagged by band)",
+   "type": "Narratives (English)",
+   "access": "Free online (Internet Archive)",
+   "best_for": "Research",
+   "creator": "George A. Dorsey",
+   "publisher": "Carnegie Institution of Washington, Pub. 59",
+   "year": "1906",
+   "contains": "Tales tagged as Chaui, Kitkehahki, Skidi or Pitahauirat.",
+   "why_rating": "Primary narrative collection; English only.",
+   "rights": "Public domain (pre-1931 US).",
+   "url": "https://archive.org/details/pawneemythologyp00dorsiala",
+   "project": {
+    "link": false,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": true,
+    "note": "Marked by the project on 2026-11-15 as bound up with ceremony, song or sacred narrative. For the Pawnee Nation to say.",
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "dorsey_murie_notes_on_skidi_pawnee_society",
+   "title": "Dorsey & Murie, Notes on Skidi Pawnee Society",
+   "credibility": 4,
+   "dialect": "Skiri",
+   "type": "Ethnography (incl. kinship terms)",
+   "access": "Free online (BHL)",
+   "best_for": "Research",
+   "creator": "George A. Dorsey & James R. Murie; prepared by Alexander Spoehr",
+   "publisher": "Field Museum Anthropological Series 27(2)",
+   "year": "1940 (fieldwork 1903–1907)",
+   "contains": "Community organization, kinship and status, life cycle; Spoehr marks where notes disagree with published data.",
+   "why_rating": "Primary field notes; spellings predate Parks.",
+   "rights": "Freely posted on BHL; check terms.",
+   "url": "https://www.biodiversitylibrary.org/bibliography/3397",
+   "project": {
+    "link": true,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": false,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 403,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "murie_pawnee_indian_societies",
+   "title": "Murie, Pawnee Indian Societies",
+   "credibility": 4,
+   "dialect": "Both",
+   "type": "Ethnography",
+   "access": "Free online (BHL)",
+   "best_for": "Research",
+   "creator": "James R. Murie",
+   "publisher": "American Museum of Natural History, Anthropological Papers 11(7)",
+   "year": "1914",
+   "contains": "Monograph on Pawnee societies (military, hunt, shamanistic and others), by a Skiri Pawnee scholar.",
+   "why_rating": "Primary; older spelling.",
+   "rights": "Public domain (pre-1931 US).",
+   "url": "https://www.biodiversitylibrary.org/bibliography/88357",
+   "project": {
+    "link": false,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": true,
+    "note": "Marked by the project on 2026-11-15 as bound up with ceremony, song or sacred narrative. For the Pawnee Nation to say.",
+    "checked": {
+     "on": "2026-11-15",
+     "status": 403,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "grinnell_pawnee_hero_stories_and_folk_tales",
+   "title": "Grinnell, Pawnee Hero Stories and Folk-Tales (with Dunbar's “The Pawnee Language”)",
+   "credibility": 3,
+   "dialect": "Not specified",
+   "type": "Narratives + language sketch",
+   "access": "Free online (Gutenberg; HathiTrust)",
+   "best_for": "Research",
+   "creator": "George Bird Grinnell; language chapter by John B. Dunbar",
+   "publisher": "Forest and Stream (NY 1889); David Nutt (London 1893)",
+   "year": "1889 / 1893",
+   "contains": "Hero stories and folk-tales; the 1893 edition adds Dunbar's chapter on the Pawnee language. Check that the copy you open includes it.",
+   "why_rating": "Useful history, but 19th-century outsider spellings; not reliable for pronunciation.",
+   "rights": "Public domain.",
+   "url": "https://www.gutenberg.org/ebooks/36923",
+   "project": {
+    "link": true,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": false,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 403,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "hayden_brief_notes_on_the_pawnee_winnebago",
+   "title": "Hayden, “Brief Notes on the Pawnee, Winnebago, and Omaha Languages”",
+   "credibility": 2,
+   "dialect": "Not specified",
+   "type": "Word list",
+   "access": "Free online (BHL / BioStor)",
+   "best_for": "Research",
+   "creator": "F. V. Hayden",
+   "publisher": "Proceedings of the American Philosophical Society 10(78): 389–421",
+   "year": "1868",
+   "contains": "Early vocabulary notes on three languages.",
+   "why_rating": "Amateur ad hoc spelling; historical interest only.",
+   "rights": "Public domain.",
+   "url": "https://biostor.org/reference/202436",
+   "project": {
+    "link": true,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": false,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "lesser_the_pawnee_ghost_dance_hand_game",
+   "title": "Lesser, The Pawnee Ghost Dance Hand Game",
+   "credibility": 4,
+   "dialect": "Both (separate South Band and Skiri chapters)",
+   "type": "Ethnography",
+   "access": "Library / purchase (UNP reprint 1996)",
+   "best_for": "Research",
+   "creator": "Alexander Lesser",
+   "publisher": "Columbia University Press",
+   "year": "1933",
+   "contains": "19th-century history, the Ghost Dance among the Pawnee, and the old and Ghost Dance hand games, band by band.",
+   "why_rating": "Scholarly primary fieldwork; not a language study.",
+   "rights": "In copyright (reprint).",
+   "url": "https://www.degruyterbrill.com/document/doi/10.7312/less93924/html",
+   "project": {
+    "link": false,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": true,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 202,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "weltfish_the_lost_universe_pawnee_life_and",
+   "title": "Weltfish, The Lost Universe: Pawnee Life and Culture",
+   "credibility": 4,
+   "dialect": "Skiri (Skidi life c. 1867)",
+   "type": "Ethnography",
+   "access": "Library / purchase (UNP 1977)",
+   "best_for": "Both",
+   "creator": "Gene Weltfish",
+   "publisher": "Basic Books 1965; University of Nebraska Press 1977",
+   "year": "1965",
+   "contains": "Year-in-the-life reconstruction of Skidi Pawnee culture; Pawnee terms appear throughout.",
+   "why_rating": "Widely regarded as the authoritative Pawnee ethnography; not a language text.",
+   "rights": "In copyright.",
+   "url": "https://plainshumanities.unl.edu/encyclopedia/doc/egp.na.082.html",
+   "project": {
+    "link": false,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": true,
+    "note": "Marked by the project on 2026-11-15 as bound up with ceremony, song or sacred narrative. For the Pawnee Nation to say.",
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "chamberlain_when_stars_came_down_to_earth",
+   "title": "Chamberlain, When Stars Came Down to Earth (Skidi cosmology)",
+   "credibility": 4,
+   "dialect": "Skiri",
+   "type": "Ethnoastronomy",
+   "access": "Library; Parks's review open access",
+   "best_for": "Research",
+   "creator": "Von Del Chamberlain",
+   "publisher": "Ballena Press / Center for Archaeoastronomy",
+   "year": "1982",
+   "contains": "Skidi cosmology with an annotated list of named sky objects, drawing on Murie's journals. Parks reviewed it in “Interpreting Pawnee Star Lore: Science or Myth?”",
+   "why_rating": "Strong on astronomy; for the Pawnee words, check spellings against Parks & Pratt.",
+   "rights": "In copyright.",
+   "url": "https://ehrafworldcultures.yale.edu/cultures/nq18/documents/021",
+   "project": {
+    "link": false,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": true,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "linton_field_museum_leaflets_on_skidi",
+   "title": "Linton, Field Museum leaflets on Skidi ceremonies",
+   "credibility": 3,
+   "dialect": "Skiri",
+   "type": "Ethnography leaflets",
+   "access": "Library / online",
+   "best_for": "Research",
+   "creator": "Ralph Linton",
+   "publisher": "Field Museum of Natural History",
+   "year": "1922–1923",
+   "contains": "“The Sacrifice to the Morning Star by the Skidi Pawnee” (1922) and “Purification of the Sacred Bundles” (1923).",
+   "why_rating": "Largely copied from Dorsey/Murie field notes without crediting Murie; go to the originals.",
+   "rights": "Public domain (pre-1931 US).",
+   "url": "https://en.wikipedia.org/wiki/James_Rolfe_Murie",
+   "project": {
+    "link": false,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": true,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "ubc_rellex_knowledgebase_entry_on_a",
+   "title": "UBC RelLex Knowledgebase — entry on A Dictionary of Skiri Pawnee",
+   "credibility": 4,
+   "dialect": "Skiri",
+   "type": "Reference (dictionary profile)",
+   "access": "Free online",
+   "best_for": "Research",
+   "creator": "UBC Relational Lexicography project",
+   "publisher": "University of British Columbia",
+   "year": "Current",
+   "contains": "Structured description of the dictionary's layout and features (bidirectional; no audio, images or example phrases) and the speakers and community contributors it credits.",
+   "why_rating": "Careful academic profile; describes the source, adds no language data.",
+   "rights": "—",
+   "url": "https://wiki.ubc.ca/Documentation:RelLex/A_Dictionary_of_Skiri_Pawnee",
+   "project": {
+    "link": true,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": false,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "glottolog_pawnee_pawn1254",
+   "title": "Glottolog — Pawnee (pawn1254)",
+   "credibility": 4,
+   "dialect": "Both (lists Skiri and South Band)",
+   "type": "Bibliographic database",
+   "access": "Free online",
+   "best_for": "Research",
+   "creator": "Glottolog editors",
+   "publisher": "Max Planck Institute",
+   "year": "Current",
+   "contains": "Classification, endangerment status and a searchable bibliography of Pawnee references; links to OLAC, ELP, WALS and Grambank.",
+   "why_rating": "Best place to find more literature; it describes sources rather than holding language data.",
+   "rights": "Open data (CC BY).",
+   "url": "https://glottolog.org/resource/languoid/id/pawn1254",
+   "project": {
+    "link": true,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": false,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "olac_pawnee_paw_archive_records",
+   "title": "OLAC — Pawnee [paw] archive records",
+   "credibility": 4,
+   "dialect": "Not specified",
+   "type": "Union catalog of language archives",
+   "access": "Free online",
+   "best_for": "Research",
+   "creator": "Open Language Archives Community",
+   "publisher": "OLAC",
+   "year": "Current",
+   "contains": "Pulls together catalog records of Pawnee holdings from participating archives (e.g. APS digital records).",
+   "why_rating": "Reliable catalog for finding archival items.",
+   "rights": "—",
+   "url": "http://www.language-archives.org/language/paw",
+   "project": {
+    "link": true,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": false,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 418,
+     "final_url": "https://www.language-archives.org/language/paw",
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "endangered_languages_project_pawnee",
+   "title": "Endangered Languages Project — Pawnee",
+   "credibility": 3,
+   "dialect": "Both",
+   "type": "Reference + user-posted resources",
+   "access": "Free online",
+   "best_for": "Both",
+   "creator": "ELP / user contributors",
+   "publisher": "Endangered Languages Project",
+   "year": "Current",
+   "contains": "Status data (1–9 speakers, most South Band, per its source), bibliography entries, and an uploaded video on the Pawnee alphabet.",
+   "why_rating": "Status data is sourced; uploads vary in quality.",
+   "rights": "Varies by item.",
+   "url": "https://endangeredlanguages.com/node/20561",
+   "project": {
+    "link": true,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": false,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "wals_pawnee",
+   "title": "WALS — Pawnee",
+   "credibility": 4,
+   "dialect": "Not specified",
+   "type": "Typology database",
+   "access": "Free online",
+   "best_for": "Research",
+   "creator": "WALS editors",
+   "publisher": "Max Planck Institute",
+   "year": "Current",
+   "contains": "Coded grammatical features drawing on Parks 1976 and Weltfish 1936/1937.",
+   "why_rating": "Scholarly coding, but second-hand from the grammars.",
+   "rights": "Open data (CC BY).",
+   "url": "https://wals.info/languoid/lect/wals_code_pwn",
+   "project": {
+    "link": true,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": false,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "asjp_pawnee_word_list",
+   "title": "ASJP — Pawnee word list",
+   "credibility": 3,
+   "dialect": "Skiri",
+   "type": "Comparative word list",
+   "access": "Free online",
+   "best_for": "Research",
+   "creator": "ASJP project",
+   "publisher": "ASJP (CLLD)",
+   "year": "Current",
+   "contains": "Short basic-vocabulary list taken from Parks & Pratt, written in ASJP's simplified code.",
+   "why_rating": "Accurate source, but the simplified transcription drops detail.",
+   "rights": "Open data.",
+   "url": "https://asjp.clld.org/languages/PAWNEE",
+   "project": {
+    "link": true,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": false,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "ethnologue_pawnee_paw",
+   "title": "Ethnologue — Pawnee [paw]",
+   "credibility": 3,
+   "dialect": "Both",
+   "type": "Reference",
+   "access": "Subscription for full page",
+   "best_for": "Research",
+   "creator": "SIL International",
+   "publisher": "Ethnologue",
+   "year": "Current",
+   "contains": "Language profile and status.",
+   "why_rating": "Standard reference, but status figures for Pawnee vary across sources.",
+   "rights": "Paywalled.",
+   "url": "https://www.ethnologue.com/language/paw",
+   "project": {
+    "link": true,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": false,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": "https://www.ethnologue.com/language/paw/",
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "wikipedia_pawnee_language",
+   "title": "Wikipedia — Pawnee language",
+   "credibility": 2,
+   "dialect": "Both",
+   "type": "Encyclopedia",
+   "access": "Free online",
+   "best_for": "Both",
+   "creator": "Wikipedia editors",
+   "publisher": "Wikipedia",
+   "year": "Current",
+   "contains": "Overview, phonology, alphabets and useful links.",
+   "why_rating": "Handy for links, but inconsistent: says Skiri died out in 2001 while citing speaker counts, and its phonology describes only South Band.",
+   "rights": "CC BY-SA.",
+   "url": "https://en.wikipedia.org/wiki/Pawnee_language",
+   "project": {
+    "link": true,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": false,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "omniglot_pawnee",
+   "title": "Omniglot — Pawnee",
+   "credibility": 3,
+   "dialect": "Both",
+   "type": "Reference (alphabet)",
+   "access": "Free online",
+   "best_for": "Learning",
+   "creator": "Simon Ager, with contributors",
+   "publisher": "Omniglot",
+   "year": "Last modified 2022",
+   "contains": "Alphabet and pronunciation table, a sample Skiri text taken from the AISRI corpus, and links.",
+   "why_rating": "Draws on AISRI, but secondary, and its “about 100 speakers” is out of date.",
+   "rights": "© Omniglot.",
+   "url": "https://omniglot.com/writing/pawnee.htm",
+   "project": {
+    "link": true,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": false,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "native_languages_of_the_americas_pawnee_word",
+   "title": "Native Languages of the Americas — Pawnee word lists",
+   "credibility": 2,
+   "dialect": "Not specified",
+   "type": "Word lists",
+   "access": "Free online",
+   "best_for": "Learning",
+   "creator": "Native Languages of the Americas",
+   "publisher": "native-languages.org",
+   "year": "© 1998–2015",
+   "contains": "Small themed word lists (e.g. animals) and a pronunciation guide.",
+   "why_rating": "No sources or dialect given; not updated since 2015.",
+   "rights": "© site.",
+   "url": "https://www.native-languages.org/pawnee_animals.htm",
+   "project": {
+    "link": true,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": false,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "wiktionary_pawnee",
+   "title": "Wiktionary — Pawnee",
+   "credibility": 2,
+   "dialect": "Not specified",
+   "type": "Crowd-sourced dictionary",
+   "access": "Free online",
+   "best_for": "Learning",
+   "creator": "Wiktionary editors",
+   "publisher": "Wiktionary",
+   "year": "Current",
+   "contains": "A handful of Pawnee entries.",
+   "why_rating": "Very few entries, crowd-edited.",
+   "rights": "CC BY-SA.",
+   "url": "https://en.wiktionary.org/wiki/Category:Pawnee_language",
+   "project": {
+    "link": true,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": false,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "san_juan_college_research_guide_pawnee_pari",
+   "title": "San Juan College research guide — Pawnee / pâri pakûru'",
+   "credibility": 3,
+   "dialect": "Both",
+   "type": "Library research guide",
+   "access": "Free online",
+   "best_for": "Both",
+   "creator": "San Juan College Library",
+   "publisher": "San Juan College",
+   "year": "Current",
+   "contains": "Librarian-made overview linking the Nation's YouTube classes, the Pâripakûru' Facebook page and the podcast.",
+   "why_rating": "Good pointer list; secondary.",
+   "rights": "—",
+   "url": "https://libguides.sanjuancollege.edu/c.php?g=1518434&p=11362475",
+   "project": {
+    "link": true,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": false,
+    "note": null,
+    "checked": {
+     "on": "2026-11-15",
+     "status": 200,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  },
+  {
+   "key": "the_revenant_2015_film",
+   "title": "The Revenant (2015 film)",
+   "credibility": 3,
+   "dialect": "Not specified",
+   "type": "Film dialogue",
+   "access": "Commercial",
+   "best_for": "Learning",
+   "creator": "Dialogue prepared with Indiana University linguists",
+   "publisher": "20th Century Fox",
+   "year": "2015",
+   "contains": "Feature film with spoken Pawnee lines.",
+   "why_rating": "Prepared by IU linguists, but scripted lines, not teaching material.",
+   "rights": "Commercial film.",
+   "url": "",
+   "project": {
+    "link": true,
+    "section": null,
+    "check": null,
+    "copy": "no",
+    "sensitive": false,
+    "note": null,
+    "checked": {
+     "on": null,
+     "status": null,
+     "final_url": null,
+     "seen": null
+    }
+   }
+  }
+ ]
+}

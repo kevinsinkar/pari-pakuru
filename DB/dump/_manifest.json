@@ -83,6 +83,14 @@
   "lessons": {
    "rows": 20,
    "sha256": "1b9c00291d210a9e27b6c10713144d2facc5eb3ca584f564091abca4c989674a"
+  },
+  "sources": {
+   "rows": 59,
+   "sha256": "dc3414e49e604340a20308391d37a56d4024bb8634115385012a5240541cd25a"
+  },
+  "bb_dialect_labels": {
+   "rows": 320,
+   "sha256": "c345f255b9c3975edd5a25427818c14f6749166927e56b28d55d2474d5c9ab87"
   }
  },
  "left_out": [

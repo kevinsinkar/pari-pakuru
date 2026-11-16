@@ -24,6 +24,10 @@ What is in it (the list comes from "What's next", rank 1, in the project log):
     5  Three questions about sound and spelling (two kinds of short vowel;
        the word "accent"; kt and tt, r and n, which the dictionary's chapter
        on sounds says differed among speakers)
+    6  Added 2026-11-15: the textbook's lessons on the site (the Nation's
+       book: permission is asked); Skiri and South Band, and how the site now
+       marks them; the other places to learn that the site points to; and the
+       works on ceremony and song that the project knows of and has not used
 
 Rules it keeps: every Pawnee form is copied from the database, never typed
 here; a phonetic form is shown only where Parks prints one; a Blue Book word
@@ -53,6 +57,8 @@ HELD = ROOT / "curriculum" / "held_for_review.json"
 QUEUE = ROOT / "curriculum" / "roots_v2" / "review_queue.md"
 REPORT = ROOT / "curriculum" / "roots_v2" / "validation_report.md"
 ABOUT = ROOT / "web" / "templates" / "about.html"
+STATEMENTS = ROOT / "extracted_data" / "blue_book_dialect_statements.json"
+REGISTER = ROOT / "sources" / "catalogue.json"
 FONTDIR = Path("C:/Windows/Fonts")
 SITE = "https://kevinsinkar.github.io/pari-pakuru/"
 
@@ -257,7 +263,20 @@ def build(date):
     tense, lax = vowel_examples(conn, tagged | set(guide))
     kt = kt_examples(conn, tagged | set(guide))
     counts = {"parks": sum(1 for e in E.values() if e["source"] == "parks"), "bb": sum(1 for e in E.values() if e["source"] != "parks")}
+    # part 6: the forms the textbook itself marks (SK) or (SB), and how many it writes the South Band way
+    try:
+        marked = conn.execute(
+            "select d.form, d.label, a.bb_english, a.lesson_number from bb_dialect_labels d "
+            "join blue_book_attestations a on a.id = d.attestation_id where d.label in ('SK', 'SB') order by a.lesson_number, a.id").fetchall()
+        n_spelling = conn.execute("select count(*) from bb_dialect_labels where label = 'SB spelling' and attestation_id is not null").fetchone()[0]
+    except sqlite3.OperationalError:
+        marked, n_spelling = [], 0
+    n_rows = conn.execute("select count(*) from blue_book_attestations").fetchone()[0]
     conn.close()
+    statements = json.loads(STATEMENTS.read_text(encoding="utf-8"))["statements"] if STATEMENTS.exists() else []
+    register = json.loads(REGISTER.read_text(encoding="utf-8"))["records"] if REGISTER.exists() else []
+    listed = [r for r in register if r["project"].get("section") and not r["project"].get("sensitive")]
+    held_works = [r for r in register if r["project"].get("sensitive")]
 
     H = []
     a = H.append
@@ -272,13 +291,15 @@ def build(date):
     a("<p>No speaker, and no one from the Pawnee Nation, has looked at it yet. The language belongs to the Pawnee people, and some of what "
       "the books print may not be meant for everyone. Those decisions are yours and not the project's. This packet asks for them.</p>")
     a("<div class='box'><p class='ask'>What we are asking</p>"
-      "<p>There are five parts. <b>Part 1 matters most</b>; the others can wait or be left out. You do not need to answer every line. "
+      "<p>There are six parts. <b>Parts 1 and 6 matter most</b>; the others can wait or be left out. You do not need to answer every line. "
       "A short answer for a whole list (\u201call of these are fine\u201d, \u201cnone of these\u201d) is as useful as marks beside each word.</p>"
       "<p>1. <b>Words to do with ceremony.</b> Should they be on a public website at all, and how much of each?<br/>"
       "2. <b>The flashcard word list</b> (%d everyday words). Is anything wrong, or wrong for beginners?<br/>"
       "3. <b>The word-building guide.</b> Is this way of teaching welcome? And ten questions for a speaker or a linguist.<br/>"
       "4. <b>The \u201cAbout\u201d page.</b> Does it describe the project, and the Nation, the way you would want?<br/>"
-      "5. <b>Three questions</b> about sound and spelling.</p>"
+      "5. <b>Three questions</b> about sound and spelling.<br/>"
+      "6. <b>The textbook, the two dialects, and other sources.</b> May the lessons of <i>Pari Pakuru'</i> be on the site? "
+      "Is the way it now marks Skiri and South Band right?</p>"
       "<p>Whatever you decide about Part 1 will be done: words can be taken off the site, shown in part, or shown in full.</p></div>" % n_shown)
     a("<p><b>How to answer.</b> Any way that suits you: write on these pages, fill in the spreadsheet that comes with them "
       "(<i>response_sheet.csv</i>, one line for each word), or simply tell us. Contact: [name], [telephone or e-mail].</p>")
@@ -395,6 +416,56 @@ def build(date):
       "And <i>r</i> or <i>n</i> at the start of a word? Should the site tell learners that speakers differed?</p>"
       "<p class='line'>&nbsp;</p><p class='line'>&nbsp;</p></div>")
 
+    # ---- part 6
+    a("<h2>Part 6. The textbook, the two dialects, and other sources</h2>")
+    a("<h3>6a. The lessons of <i>Pari Pakuru'</i> on the site</h3>")
+    a("<p><i>Pari Pakuru'</i> is the Nation's book. Its copyright page reads: \u201cCopyright \u00a9 1979 by the Pawnee Indian Tribal "
+      "Business Council \u2026 No part of this book may be reproduced \u2026 without permission in writing from the Pawnee Tribal "
+      "Business Council.\u201d The site shows its twenty lessons: the dialogues, the word lists, the useful phrases and the notes. "
+      "Permission was not asked before the site went public. It is asked now, and whatever the answer is will be done.</p>")
+    a("<div class='box'><p class='ask'>Question 6a</p><p>May the lessons of <i>Pari Pakuru'</i> be on the site? "
+      "&nbsp; %s Yes, as they are &nbsp; %s In part (please say which) &nbsp; %s No, take them down</p>"
+      "<p class='line'>&nbsp;</p></div>" % ((BOX,) * 3))
+
+    a("<h3>6b. Skiri and South Band</h3>")
+    a("<p>The dictionary is Skiri. The textbook writes for both dialects, and says so in its chapter on the alphabet:</p>")
+    for s in statements:
+        if s.get("text", "").endswith("."):
+            a("<p class='quote'>\u201c%s\u201d <span class='small'>(%s)</span></p>" % (
+                esc(s["text"]), esc("p. " + s["book_page"] if s["book_page"] != "contents" else "contents page")))
+    a("<p>The site had shown all of it as Skiri. Since November 2026 it marks a form SK or SB where the book does, and marks a form "
+      "written with <i>e</i> or <i>hr</i> as \u201cSB spelling\u201d (%d of the %s words, phrases and sentences taken from the "
+      "textbook). It does not respell anything and works out no Skiri form from a South Band one. Where a word is tied to a "
+      "dictionary entry, the entry is shown beside it as the Skiri word. The forms the book itself marks:</p>" % (
+          n_spelling, "{:,}".format(n_rows)))
+    rows = ["<tr><td class='sk'>%s</td><td>%s</td><td>%s</td><td>lesson %s</td></tr>" % (
+        esc(form), esc(label), esc(english or ""), esc(str(lesson))) for form, label, english, lesson in marked]
+    a("<table><tr><th>As the textbook prints it</th><th>Its mark</th><th>Its English</th><th>Where</th></tr>%s</table>" % "".join(rows))
+    a("<div class='box'><p class='ask'>Questions for 6b</p>"
+      "<p>Is this the right way to show the two dialects to a learner of Skiri? "
+      "&nbsp; %s Yes &nbsp; %s No (please say how)</p><p class='line'>&nbsp;</p>"
+      "<p>Should a Skiri learner be told to say <i>i</i> wherever the textbook writes <i>e</i>, as the textbook says? "
+      "&nbsp; %s Yes &nbsp; %s Not always &nbsp; %s Not sure</p>"
+      "<p>How would you want South Band shown on a site whose dictionary is Skiri?</p><p class='line'>&nbsp;</p></div>" % ((BOX,) * 5))
+
+    a("<h3>6c. Other places to learn that the site points to</h3>")
+    a("<p>The site links to these and copies nothing from them. Each line is what the site says of the place.</p>")
+    for r in listed:
+        a("<p><b>%s.</b> %s</p>" % (esc(r["project"].get("title") or r["title"]), esc(r["project"].get("says") or "")))
+    a("<div class='box'><p class='ask'>Questions for 6c</p><p>Is anything here wrong, or something the site should not point to? "
+      "Is anything missing that learners should be sent to first?</p><p class='line'>&nbsp;</p>"
+      "<p>May the Skiri and South Band forms of the Nation's lesson handouts be shown beside the textbook's, with the Nation named? "
+      "&nbsp; %s Yes &nbsp; %s No &nbsp; %s Ask us first each time</p></div>" % ((BOX,) * 3))
+
+    a("<h3>6d. Works the project knows of and has not used</h3>")
+    a("<p>These are listed in the project's files as existing. None is linked from the site, and nothing has been taken from them. "
+      "The project marked them as bound up with ceremony, song or sacred narrative by their titles and catalogue descriptions; "
+      "the marking may be too wide or too narrow.</p>")
+    a("<p class='small'>%s</p>" % "; ".join(esc("%s (%s)" % (r["title"], r["year"])) for r in held_works))
+    a("<div class='box'><p class='ask'>Question 6d</p><p>Should any of these be named to learners? Is there one that should not "
+      "be on a public list at all, or one that is missing from the list of what to keep back?</p>"
+      "<p class='line'>&nbsp;</p><p class='line'>&nbsp;</p></div>")
+
     # ---- sources
     a("<h2>Where the words in this packet come from</h2>")
     a("<p>Douglas R. Parks and Lula Nora Pratt, <i>A Dictionary of Skiri Pawnee</i> (Lincoln: University of Nebraska Press, 2008). "
@@ -421,7 +492,7 @@ def build(date):
                               e["learner"], meaning(e), where(e), "", ""))
     facts = {"held": len(held_cards), "flagged": len(flagged), "tagged": len(tagged), "guide": len(guide), "weeks": len(shown_weeks),
              "words": n_shown, "all_words": n_cards, "questions": len(ten_questions()), "about_blocks": len(about_blocks()),
-             "examples": len(tense) + len(lax) + len(kt)}
+             "examples": len(tense) + len(lax) + len(kt), "marked": len(marked), "listed": len(listed), "held_works": len(held_works)}
     return "\n".join(H), sheet, facts
 
 
@@ -469,7 +540,8 @@ def main():
         out("review_packet.pdf: %d pages" % write_pdf(body, OUT / "review_packet.pdf"))
     out("Part 1: %(held)d held flashcard words and %(flagged)d more entries marked by computer (%(tagged)d with the site's mark, "
         "%(guide)d set aside in the guide). Part 2: %(words)d words in %(weeks)d weekly sets (of %(all_words)d in the frozen list). "
-        "Part 3: %(questions)d questions. Part 4: %(about_blocks)d blocks of the About page. Part 5: %(examples)d example words." % facts)
+        "Part 3: %(questions)d questions. Part 4: %(about_blocks)d blocks of the About page. Part 5: %(examples)d example words. "
+        "Part 6: %(marked)d forms the textbook marks SK or SB, %(listed)d places the site points to, %(held_works)d works held back." % facts)
 
 
 if __name__ == "__main__":
