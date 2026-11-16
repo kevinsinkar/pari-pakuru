@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" data-spelling="parks">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script>try { if (window.localStorage.getItem('spelling') === 'learner') document.documentElement.setAttribute('data-spelling', 'learner'); } catch (e) {}</script>
   <title>About — Skiri Pawnee Dictionary</title>
 
   <!-- Fonts -->
@@ -81,10 +83,9 @@
         
         <li><a href="about.html" >About</a></li>
 
-        
-        
       </ul>
     </nav>
+    <div class="header-row">
     
     <form action="index.html" method="get" class="nav-search" role="search">
       <input
@@ -97,6 +98,15 @@
       >
     </form>
     
+    
+    <div class="spelling-switch" id="spelling-switch">
+      <span class="spelling-switch__label" id="spelling-switch-label">Spelling</span>
+      <button type="button" class="spelling-btn" data-spelling="parks" aria-pressed="true" aria-describedby="spelling-switch-label"
+              title="The dictionary's own spelling: a long vowel written double (aa), c for both &quot;ts&quot; and &quot;ch&quot;, and &#x0294; for the catch in the throat">Parks <span lang="x-paw">aa c &#x0294;</span></button>
+      <button type="button" class="spelling-btn" data-spelling="learner" aria-pressed="false" aria-describedby="spelling-switch-label"
+              title="The learner spelling: the same words with &acirc; &icirc; &ucirc; for long vowels, &#x010D; for &quot;ch&quot;, and ' for the catch in the throat">Learner <span lang="x-paw">&acirc; &#x010D; '</span></button>
+    </div>
+    </div>
   </header>
 
   <!-- ====== Main Content ====== -->
@@ -185,8 +195,9 @@
 
     <h3>How a word is written</h3>
     <ul>
-        <li>The large spelling is a learner spelling, with a circumflex for a long vowel (<span lang="x-paw">&acirc;</span>) and an apostrophe for the glottal stop.</li>
-        <li>Beside it is the spelling of the dictionary itself.</li>
+        <li>The large spelling is the dictionary's own: a long vowel written double (<span lang="x-paw">aa</span>), <span lang="x-paw">c</span> for both “ts” and “ch”, and <span lang="x-paw">&#x0294;</span> for the glottal stop.</li>
+        <li>Beside it, smaller, is the same word in a learner spelling, with a circumflex for a long vowel (<span lang="x-paw">&acirc;</span>), <span lang="x-paw">&#x010D;</span> for “ch” and an apostrophe for the glottal stop. It is the dictionary's word respelt letter by letter; its alphabet is the one the Pawnee Nation's lesson handouts use.</li>
+        <li>The switch at the top of every page, <em>Spelling</em>, puts the learner spelling first instead. Your browser remembers the choice. A word found only in the textbook has one spelling, and the lessons' dialogues and phrases stay as the textbook prints them.</li>
         <li>The form in square brackets is Parks's phonetic form, in his own symbols, exactly as the dictionary prints it.</li>
         <li>The line in plain letters with hyphens is a rough guide to saying the word, made from the phonetic form by fixed rules. Capitals mark the accented syllable. It is a help, not a second source: where it and the phonetic form disagree, the phonetic form is right.</li>
     </ul>

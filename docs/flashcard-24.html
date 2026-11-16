@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" data-spelling="parks">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script>try { if (window.localStorage.getItem('spelling') === 'learner') document.documentElement.setAttribute('data-spelling', 'learner'); } catch (e) {}</script>
   <title>Week 24: Places & Directions — Skiri Pawnee Dictionary</title>
 
   <!-- Fonts -->
@@ -81,10 +83,9 @@
         
         <li><a href="about.html" >About</a></li>
 
-        
-        
       </ul>
     </nav>
+    <div class="header-row">
     
     <form action="index.html" method="get" class="nav-search" role="search">
       <input
@@ -97,6 +98,15 @@
       >
     </form>
     
+    
+    <div class="spelling-switch" id="spelling-switch">
+      <span class="spelling-switch__label" id="spelling-switch-label">Spelling</span>
+      <button type="button" class="spelling-btn" data-spelling="parks" aria-pressed="true" aria-describedby="spelling-switch-label"
+              title="The dictionary's own spelling: a long vowel written double (aa), c for both &quot;ts&quot; and &quot;ch&quot;, and &#x0294; for the catch in the throat">Parks <span lang="x-paw">aa c &#x0294;</span></button>
+      <button type="button" class="spelling-btn" data-spelling="learner" aria-pressed="false" aria-describedby="spelling-switch-label"
+              title="The learner spelling: the same words with &acirc; &icirc; &ucirc; for long vowels, &#x010D; for &quot;ch&quot;, and ' for the catch in the throat">Learner <span lang="x-paw">&acirc; &#x010D; '</span></button>
+    </div>
+    </div>
   </header>
 
   <!-- ====== Main Content ====== -->
@@ -112,15 +122,19 @@
 
 
 <p class="spelling-line">
-  <strong>Which spelling do I learn to write?</strong>
+  <strong>Two spellings of one word.</strong>
   
-  The large word on the card: the learner spelling, with <span lang="x-paw">â î û</span> for long vowels,
-  <span lang="x-paw">'</span> for the catch in the throat, <span lang="x-paw">c</span> for “ts” and
-  <span lang="x-paw">č</span> for “ch”, which is the spelling of the Pawnee Nation's own lesson handouts.
-  A smaller word under it is the same word in the dictionary's letters, and the
+  The large word on a card is in the dictionary's spelling: a long vowel written double
+  (<span lang="x-paw">aa</span>), <span lang="x-paw">c</span> for both “ts” and “ch”, and
+  <span lang="x-paw">&#x0294;</span> for the catch in the throat. The switch at the top of the page,
+  <em>Spelling</em>, puts the learner spelling there instead, with <span lang="x-paw">â î û</span> for long vowels,
+  <span lang="x-paw">'</span> for the catch, <span lang="x-paw">c</span> for “ts” and <span lang="x-paw">č</span> for “ch”,
+  which is the alphabet of the Pawnee Nation's own lesson handouts.
+  The smaller word under it is the same word in the other spelling, and the
   line in capitals and hyphens is a rough guide for English speakers, not a spelling.
-  A card whose back names the textbook and no dictionary page is a word found only in the 1979 textbook: it is written
-  as the textbook spells it, in the dictionary's letters (<span lang="x-paw">ʔ</span> for <span lang="x-paw">'</span>).
+  A card whose back names the textbook and no dictionary page is a word found only in the 1979 textbook: it has one
+  spelling, the textbook's in the dictionary's letters (<span lang="x-paw">&#x0294;</span> for <span lang="x-paw">'</span>),
+  and the switch does not change it.
   
   Where a teacher or a speaker writes a word another way, follow them.
 </p>
@@ -145,13 +159,13 @@
     <div class="fc-card-wrapper" data-index="0">
         <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
             <div class="fc-front">
-                <div class="fc-front-word" lang="x-paw">kâ'ata</div>
+                <div class="fc-front-word" lang="x-paw"><span class="when-parks">kaaʔata</span><span class="when-learner">kâ&#39;ata</span></div>
                 
                 <div class="fc-front-pron"><span class="pitch-high">KAH</span>-'uh-tuh</div>
                 
                 
                 
-                <div class="fc-front-parks" lang="x-paw">kaaʔata</div>
+                <div class="fc-front-parks" lang="x-paw"><span class="when-parks">kâ&#39;ata</span><span class="when-learner">kaaʔata</span></div>
                 
                 
                 <span class="badge badge-class" title="Noun">N</span>
@@ -162,7 +176,7 @@
             <div class="fc-back">
                 <div class="fc-back-definition">upland plover (Upland Sandpiper, Bartramia longicauda).</div>
                 
-                <div class="fc-back-word" lang="x-paw">kâ'ata</div>
+                <div class="fc-back-word" lang="x-paw"><span class="when-parks">kaaʔata</span><span class="when-learner">kâ&#39;ata</span></div>
                 
                 <div class="fc-back-pron"><span class="pitch-high">KAH</span>-'uh-tuh</div>
                 
@@ -171,7 +185,7 @@
                 
                 
                 
-                <div class="fc-back-parks" lang="x-paw">Parks: kaaʔata</div>
+                <div class="fc-back-parks" lang="x-paw"><span class="when-parks">Learner spelling: kâ'ata</span><span class="when-learner">Parks: kaaʔata</span></div>
                 
                 
                 <div class="fc-back-citation">Parks Dictionary, p. 419</div>
@@ -188,13 +202,13 @@
     <div class="fc-card-wrapper fc-hidden" data-index="1">
         <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
             <div class="fc-front">
-                <div class="fc-front-word" lang="x-paw">rârusu'</div>
+                <div class="fc-front-word" lang="x-paw"><span class="when-parks">raarusuʔ</span><span class="when-learner">rârusu&#39;</span></div>
                 
                 <div class="fc-front-pron"><span class="pitch-high">DAH</span>-doo-soo'</div>
                 
                 
                 
-                <div class="fc-front-parks" lang="x-paw">raarusuʔ</div>
+                <div class="fc-front-parks" lang="x-paw"><span class="when-parks">rârusu&#39;</span><span class="when-learner">raarusuʔ</span></div>
                 
                 
                 <span class="badge badge-class" title="Noun">N</span>
@@ -205,7 +219,7 @@
             <div class="fc-back">
                 <div class="fc-back-definition">brush; brushy area.</div>
                 
-                <div class="fc-back-word" lang="x-paw">rârusu'</div>
+                <div class="fc-back-word" lang="x-paw"><span class="when-parks">raarusuʔ</span><span class="when-learner">rârusu&#39;</span></div>
                 
                 <div class="fc-back-pron"><span class="pitch-high">DAH</span>-doo-soo'</div>
                 
@@ -214,7 +228,7 @@
                 
                 
                 
-                <div class="fc-back-parks" lang="x-paw">Parks: raarusuʔ</div>
+                <div class="fc-back-parks" lang="x-paw"><span class="when-parks">Learner spelling: rârusu'</span><span class="when-learner">Parks: raarusuʔ</span></div>
                 
                 
                 <div class="fc-back-citation">Parks Dictionary, p. 472</div>
@@ -231,13 +245,13 @@
     <div class="fc-card-wrapper fc-hidden" data-index="2">
         <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
             <div class="fc-front">
-                <div class="fc-front-word" lang="x-paw">wihâru'</div>
+                <div class="fc-front-word" lang="x-paw"><span class="when-parks">wihaaruʔ</span><span class="when-learner">wihâru&#39;</span></div>
                 
                 <div class="fc-front-pron"><span class="pitch-high">WIH</span>-hah-doo'</div>
                 
                 
                 
-                <div class="fc-front-parks" lang="x-paw">wihaaruʔ</div>
+                <div class="fc-front-parks" lang="x-paw"><span class="when-parks">wihâru&#39;</span><span class="when-learner">wihaaruʔ</span></div>
                 
                 
                 <span class="badge badge-class" title="Noun">N</span>
@@ -248,7 +262,7 @@
             <div class="fc-back">
                 <div class="fc-back-definition">game ground, where people played hoop and pole, shinny, and other games, or where they gambled.</div>
                 
-                <div class="fc-back-word" lang="x-paw">wihâru'</div>
+                <div class="fc-back-word" lang="x-paw"><span class="when-parks">wihaaruʔ</span><span class="when-learner">wihâru&#39;</span></div>
                 
                 <div class="fc-back-pron"><span class="pitch-high">WIH</span>-hah-doo'</div>
                 
@@ -257,7 +271,7 @@
                 
                 
                 
-                <div class="fc-back-parks" lang="x-paw">Parks: wihaaruʔ</div>
+                <div class="fc-back-parks" lang="x-paw"><span class="when-parks">Learner spelling: wihâru'</span><span class="when-learner">Parks: wihaaruʔ</span></div>
                 
                 
                 <div class="fc-back-citation">Parks Dictionary, p. 526</div>
@@ -274,13 +288,13 @@
     <div class="fc-card-wrapper fc-hidden" data-index="3">
         <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
             <div class="fc-front">
-                <div class="fc-front-word" lang="x-paw">Tuhûčaku</div>
+                <div class="fc-front-word" lang="x-paw"><span class="when-parks">Tuhuucaku</span><span class="when-learner">Tuhûčaku</span></div>
                 
                 <div class="fc-front-pron"><span class="pitch-high">TOO</span>-hoo-chuh-koo</div>
                 
                 
                 
-                <div class="fc-front-parks" lang="x-paw">Tuhuucaku</div>
+                <div class="fc-front-parks" lang="x-paw"><span class="when-parks">Tuhûčaku</span><span class="when-learner">Tuhuucaku</span></div>
                 
                 
                 <span class="badge badge-class" title="Noun">N</span>
@@ -291,7 +305,7 @@
             <div class="fc-back">
                 <div class="fc-back-definition">Village Along The Bank, a former Skiri village in Nebraska.</div>
                 
-                <div class="fc-back-word" lang="x-paw">Tuhûčaku</div>
+                <div class="fc-back-word" lang="x-paw"><span class="when-parks">Tuhuucaku</span><span class="when-learner">Tuhûčaku</span></div>
                 
                 <div class="fc-back-pron"><span class="pitch-high">TOO</span>-hoo-chuh-koo</div>
                 
@@ -300,7 +314,7 @@
                 
                 
                 
-                <div class="fc-back-parks" lang="x-paw">Parks: Tuhuucaku</div>
+                <div class="fc-back-parks" lang="x-paw"><span class="when-parks">Learner spelling: Tuhûčaku</span><span class="when-learner">Parks: Tuhuucaku</span></div>
                 
                 
                 <div class="fc-back-citation">Parks Dictionary, p. 514</div>
@@ -317,13 +331,13 @@
     <div class="fc-card-wrapper fc-hidden" data-index="4">
         <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
             <div class="fc-front">
-                <div class="fc-front-word" lang="x-paw">atâwi'u'</div>
+                <div class="fc-front-word" lang="x-paw"><span class="when-parks">ataawiʔuʔ</span><span class="when-learner">atâwi&#39;u&#39;</span></div>
                 
                 <div class="fc-front-pron"><span class="pitch-high">UH</span>-tah-wih-'oo'</div>
                 
                 
                 
-                <div class="fc-front-parks" lang="x-paw">ataawiʔuʔ</div>
+                <div class="fc-front-parks" lang="x-paw"><span class="when-parks">atâwi&#39;u&#39;</span><span class="when-learner">ataawiʔuʔ</span></div>
                 
                 
                 <span class="badge badge-class" title="Noun">N</span>
@@ -334,7 +348,7 @@
             <div class="fc-back">
                 <div class="fc-back-definition">burial; grave.</div>
                 
-                <div class="fc-back-word" lang="x-paw">atâwi'u'</div>
+                <div class="fc-back-word" lang="x-paw"><span class="when-parks">ataawiʔuʔ</span><span class="when-learner">atâwi&#39;u&#39;</span></div>
                 
                 <div class="fc-back-pron"><span class="pitch-high">UH</span>-tah-wih-'oo'</div>
                 
@@ -343,7 +357,7 @@
                 
                 
                 
-                <div class="fc-back-parks" lang="x-paw">Parks: ataawiʔuʔ</div>
+                <div class="fc-back-parks" lang="x-paw"><span class="when-parks">Learner spelling: atâwi'u'</span><span class="when-learner">Parks: ataawiʔuʔ</span></div>
                 
                 
                 <div class="fc-back-citation">Parks Dictionary, p. 367</div>
@@ -360,13 +374,13 @@
     <div class="fc-card-wrapper fc-hidden" data-index="5">
         <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
             <div class="fc-front">
-                <div class="fc-front-word" lang="x-paw">pâhiksu'</div>
+                <div class="fc-front-word" lang="x-paw"><span class="when-parks">paahiksuʔ</span><span class="when-learner">pâhiksu&#39;</span></div>
                 
                 <div class="fc-front-pron">pah-<span class="pitch-high">HIHK</span>-soo'</div>
                 
                 
                 
-                <div class="fc-front-parks" lang="x-paw">paahiksuʔ</div>
+                <div class="fc-front-parks" lang="x-paw"><span class="when-parks">pâhiksu&#39;</span><span class="when-learner">paahiksuʔ</span></div>
                 
                 
                 <span class="badge badge-class" title="Noun">N</span>
@@ -377,7 +391,7 @@
             <div class="fc-back">
                 <div class="fc-back-definition">throat, front part of the neck.</div>
                 
-                <div class="fc-back-word" lang="x-paw">pâhiksu'</div>
+                <div class="fc-back-word" lang="x-paw"><span class="when-parks">paahiksuʔ</span><span class="when-learner">pâhiksu&#39;</span></div>
                 
                 <div class="fc-back-pron">pah-<span class="pitch-high">HIHK</span>-soo'</div>
                 
@@ -386,7 +400,7 @@
                 
                 
                 
-                <div class="fc-back-parks" lang="x-paw">Parks: paahiksuʔ</div>
+                <div class="fc-back-parks" lang="x-paw"><span class="when-parks">Learner spelling: pâhiksu'</span><span class="when-learner">Parks: paahiksuʔ</span></div>
                 
                 
                 <div class="fc-back-citation">Parks Dictionary, p. 453</div>
@@ -403,13 +417,13 @@
     <div class="fc-card-wrapper fc-hidden" data-index="6">
         <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
             <div class="fc-front">
-                <div class="fc-front-word" lang="x-paw">pakûčaku</div>
+                <div class="fc-front-word" lang="x-paw"><span class="when-parks">pakuucaku</span><span class="when-learner">pakûčaku</span></div>
                 
                 <div class="fc-front-pron"><span class="pitch-high">PUH</span>-koo-chuh-koo</div>
                 
                 
                 
-                <div class="fc-front-parks" lang="x-paw">pakuucaku</div>
+                <div class="fc-front-parks" lang="x-paw"><span class="when-parks">pakûčaku</span><span class="when-learner">pakuucaku</span></div>
                 
                 
                 <span class="badge badge-class" title="Noun">N</span>
@@ -420,7 +434,7 @@
             <div class="fc-back">
                 <div class="fc-back-definition">top, spinning top.</div>
                 
-                <div class="fc-back-word" lang="x-paw">pakûčaku</div>
+                <div class="fc-back-word" lang="x-paw"><span class="when-parks">pakuucaku</span><span class="when-learner">pakûčaku</span></div>
                 
                 <div class="fc-back-pron"><span class="pitch-high">PUH</span>-koo-chuh-koo</div>
                 
@@ -429,7 +443,7 @@
                 
                 
                 
-                <div class="fc-back-parks" lang="x-paw">Parks: pakuucaku</div>
+                <div class="fc-back-parks" lang="x-paw"><span class="when-parks">Learner spelling: pakûčaku</span><span class="when-learner">Parks: pakuucaku</span></div>
                 
                 
                 <div class="fc-back-citation">Parks Dictionary, p. 458</div>
@@ -446,13 +460,13 @@
     <div class="fc-card-wrapper fc-hidden" data-index="7">
         <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
             <div class="fc-front">
-                <div class="fc-front-word" lang="x-paw">rikuhiri'</div>
+                <div class="fc-front-word" lang="x-paw"><span class="when-parks">rikuhiriʔ</span><span class="when-learner">rikuhiri&#39;</span></div>
                 
                 <div class="fc-front-pron">dih-<span class="pitch-high">KOO</span>-hih-dih'</div>
                 
                 
                 
-                <div class="fc-front-parks" lang="x-paw">rikuhiriʔ</div>
+                <div class="fc-front-parks" lang="x-paw"><span class="when-parks">rikuhiri&#39;</span><span class="when-learner">rikuhiriʔ</span></div>
                 
                 
                 <span class="badge badge-class" title="Noun">N</span>
@@ -463,7 +477,7 @@
             <div class="fc-back">
                 <div class="fc-back-definition">chest, breast; area of clavicle, collarbone.</div>
                 
-                <div class="fc-back-word" lang="x-paw">rikuhiri'</div>
+                <div class="fc-back-word" lang="x-paw"><span class="when-parks">rikuhiriʔ</span><span class="when-learner">rikuhiri&#39;</span></div>
                 
                 <div class="fc-back-pron">dih-<span class="pitch-high">KOO</span>-hih-dih'</div>
                 
@@ -472,7 +486,7 @@
                 
                 
                 
-                <div class="fc-back-parks" lang="x-paw">Parks: rikuhiriʔ</div>
+                <div class="fc-back-parks" lang="x-paw"><span class="when-parks">Learner spelling: rikuhiri'</span><span class="when-learner">Parks: rikuhiriʔ</span></div>
                 
                 
                 <div class="fc-back-citation">Parks Dictionary, p. 493</div>
@@ -489,13 +503,13 @@
     <div class="fc-card-wrapper fc-hidden" data-index="8">
         <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
             <div class="fc-front">
-                <div class="fc-front-word" lang="x-paw">âhkawi'u'</div>
+                <div class="fc-front-word" lang="x-paw"><span class="when-parks">aahkawiʔuʔ</span><span class="when-learner">âhkawi&#39;u&#39;</span></div>
                 
                 <div class="fc-front-pron">ahh-<span class="pitch-high">KUH</span>-wih-'oo'</div>
                 
                 
                 
-                <div class="fc-front-parks" lang="x-paw">aahkawiʔuʔ</div>
+                <div class="fc-front-parks" lang="x-paw"><span class="when-parks">âhkawi&#39;u&#39;</span><span class="when-learner">aahkawiʔuʔ</span></div>
                 
                 
                 <span class="badge badge-class" title="Noun">N</span>
@@ -508,7 +522,7 @@
                 
                 <div class="fc-back-senses">sense 1 of 2</div>
                 
-                <div class="fc-back-word" lang="x-paw">âhkawi'u'</div>
+                <div class="fc-back-word" lang="x-paw"><span class="when-parks">aahkawiʔuʔ</span><span class="when-learner">âhkawi&#39;u&#39;</span></div>
                 
                 <div class="fc-back-pron">ahh-<span class="pitch-high">KUH</span>-wih-'oo'</div>
                 
@@ -517,7 +531,7 @@
                 
                 
                 
-                <div class="fc-back-parks" lang="x-paw">Parks: aahkawiʔuʔ</div>
+                <div class="fc-back-parks" lang="x-paw"><span class="when-parks">Learner spelling: âhkawi'u'</span><span class="when-learner">Parks: aahkawiʔuʔ</span></div>
                 
                 
                 <div class="fc-back-citation">Parks Dictionary, p. 350</div>
@@ -534,13 +548,13 @@
     <div class="fc-card-wrapper fc-hidden" data-index="9">
         <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
             <div class="fc-front">
-                <div class="fc-front-word" lang="x-paw">astihâru'</div>
+                <div class="fc-front-word" lang="x-paw"><span class="when-parks">astihaaruʔ</span><span class="when-learner">astihâru&#39;</span></div>
                 
                 <div class="fc-front-pron"><span class="pitch-high">UHS</span>-tih-hah-doo'</div>
                 
                 
                 
-                <div class="fc-front-parks" lang="x-paw">astihaaruʔ</div>
+                <div class="fc-front-parks" lang="x-paw"><span class="when-parks">astihâru&#39;</span><span class="when-learner">astihaaruʔ</span></div>
                 
                 
                 <span class="badge badge-class" title="Noun">N</span>
@@ -551,7 +565,7 @@
             <div class="fc-back">
                 <div class="fc-back-definition">crown of the head, pate, top of the head; top of a buffalo head, especially the area between the horns.</div>
                 
-                <div class="fc-back-word" lang="x-paw">astihâru'</div>
+                <div class="fc-back-word" lang="x-paw"><span class="when-parks">astihaaruʔ</span><span class="when-learner">astihâru&#39;</span></div>
                 
                 <div class="fc-back-pron"><span class="pitch-high">UHS</span>-tih-hah-doo'</div>
                 
@@ -560,7 +574,7 @@
                 
                 
                 
-                <div class="fc-back-parks" lang="x-paw">Parks: astihaaruʔ</div>
+                <div class="fc-back-parks" lang="x-paw"><span class="when-parks">Learner spelling: astihâru'</span><span class="when-learner">Parks: astihaaruʔ</span></div>
                 
                 
                 <div class="fc-back-citation">Parks Dictionary, p. 365</div>
@@ -577,13 +591,13 @@
     <div class="fc-card-wrapper fc-hidden" data-index="10">
         <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
             <div class="fc-front">
-                <div class="fc-front-word" lang="x-paw">čûhkataku</div>
+                <div class="fc-front-word" lang="x-paw"><span class="when-parks">cuuhkataku</span><span class="when-learner">čûhkataku</span></div>
                 
                 <div class="fc-front-pron"><span class="pitch-high">CHOOH</span>-kuh-tuh-koo</div>
                 
                 
                 
-                <div class="fc-front-parks" lang="x-paw">cuuhkataku</div>
+                <div class="fc-front-parks" lang="x-paw"><span class="when-parks">čûhkataku</span><span class="when-learner">cuuhkataku</span></div>
                 
                 
                 <span class="badge badge-class" title="Noun">N</span>
@@ -594,7 +608,7 @@
             <div class="fc-back">
                 <div class="fc-back-definition">warbonnet; hat or cap with feathers around it, forming a circle.</div>
                 
-                <div class="fc-back-word" lang="x-paw">čûhkataku</div>
+                <div class="fc-back-word" lang="x-paw"><span class="when-parks">cuuhkataku</span><span class="when-learner">čûhkataku</span></div>
                 
                 <div class="fc-back-pron"><span class="pitch-high">CHOOH</span>-kuh-tuh-koo</div>
                 
@@ -603,7 +617,7 @@
                 
                 
                 
-                <div class="fc-back-parks" lang="x-paw">Parks: cuuhkataku</div>
+                <div class="fc-back-parks" lang="x-paw"><span class="when-parks">Learner spelling: čûhkataku</span><span class="when-learner">Parks: cuuhkataku</span></div>
                 
                 
                 <div class="fc-back-citation">Parks Dictionary, p. 380</div>
@@ -620,13 +634,13 @@
     <div class="fc-card-wrapper fc-hidden" data-index="11">
         <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
             <div class="fc-front">
-                <div class="fc-front-word" lang="x-paw">kahâriwis</div>
+                <div class="fc-front-word" lang="x-paw"><span class="when-parks">kahaariwis</span><span class="when-learner">kahâriwis</span></div>
                 
                 <div class="fc-front-pron"><span class="pitch-high">KUH</span>-hah-dih-wihs</div>
                 
                 
                 
-                <div class="fc-front-parks" lang="x-paw">kahaariwis</div>
+                <div class="fc-front-parks" lang="x-paw"><span class="when-parks">kahâriwis</span><span class="when-learner">kahaariwis</span></div>
                 
                 
                 <span class="badge badge-class" title="Noun">N</span>
@@ -637,7 +651,7 @@
             <div class="fc-back">
                 <div class="fc-back-definition">cliff swallow (Petrochelidon pyrrhonota).</div>
                 
-                <div class="fc-back-word" lang="x-paw">kahâriwis</div>
+                <div class="fc-back-word" lang="x-paw"><span class="when-parks">kahaariwis</span><span class="when-learner">kahâriwis</span></div>
                 
                 <div class="fc-back-pron"><span class="pitch-high">KUH</span>-hah-dih-wihs</div>
                 
@@ -646,7 +660,7 @@
                 
                 
                 
-                <div class="fc-back-parks" lang="x-paw">Parks: kahaariwis</div>
+                <div class="fc-back-parks" lang="x-paw"><span class="when-parks">Learner spelling: kahâriwis</span><span class="when-learner">Parks: kahaariwis</span></div>
                 
                 
                 <div class="fc-back-citation">Parks Dictionary, p. 424</div>
@@ -663,13 +677,13 @@
     <div class="fc-card-wrapper fc-hidden" data-index="12">
         <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
             <div class="fc-front">
-                <div class="fc-front-word" lang="x-paw">kičahâru'</div>
+                <div class="fc-front-word" lang="x-paw"><span class="when-parks">kicahaaruʔ</span><span class="when-learner">kičahâru&#39;</span></div>
                 
                 <div class="fc-front-pron"><span class="pitch-high">KIH</span>-chuh-hah-doo'</div>
                 
                 
                 
-                <div class="fc-front-parks" lang="x-paw">kicahaaruʔ</div>
+                <div class="fc-front-parks" lang="x-paw"><span class="when-parks">kičahâru&#39;</span><span class="when-learner">kicahaaruʔ</span></div>
                 
                 
                 <span class="badge badge-class" title="Noun">N</span>
@@ -680,7 +694,7 @@
             <div class="fc-back">
                 <div class="fc-back-definition">marsh, bog, wetland ; watery area .</div>
                 
-                <div class="fc-back-word" lang="x-paw">kičahâru'</div>
+                <div class="fc-back-word" lang="x-paw"><span class="when-parks">kicahaaruʔ</span><span class="when-learner">kičahâru&#39;</span></div>
                 
                 <div class="fc-back-pron"><span class="pitch-high">KIH</span>-chuh-hah-doo'</div>
                 
@@ -689,7 +703,7 @@
                 
                 
                 
-                <div class="fc-back-parks" lang="x-paw">Parks: kicahaaruʔ</div>
+                <div class="fc-back-parks" lang="x-paw"><span class="when-parks">Learner spelling: kičahâru'</span><span class="when-learner">Parks: kicahaaruʔ</span></div>
                 
                 
                 <div class="fc-back-citation">Parks Dictionary, p. 432</div>
@@ -706,13 +720,13 @@
     <div class="fc-card-wrapper fc-hidden" data-index="13">
         <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
             <div class="fc-front">
-                <div class="fc-front-word" lang="x-paw">kitahâru'</div>
+                <div class="fc-front-word" lang="x-paw"><span class="when-parks">kitahaaruʔ</span><span class="when-learner">kitahâru&#39;</span></div>
                 
                 <div class="fc-front-pron"><span class="pitch-high">KIH</span>-tuh-hah-doo'</div>
                 
                 
                 
-                <div class="fc-front-parks" lang="x-paw">kitahaaruʔ</div>
+                <div class="fc-front-parks" lang="x-paw"><span class="when-parks">kitahâru&#39;</span><span class="when-learner">kitahaaruʔ</span></div>
                 
                 
                 <span class="badge badge-class" title="Noun">N</span>
@@ -723,7 +737,7 @@
             <div class="fc-back">
                 <div class="fc-back-definition">hilltop, top of a hill.</div>
                 
-                <div class="fc-back-word" lang="x-paw">kitahâru'</div>
+                <div class="fc-back-word" lang="x-paw"><span class="when-parks">kitahaaruʔ</span><span class="when-learner">kitahâru&#39;</span></div>
                 
                 <div class="fc-back-pron"><span class="pitch-high">KIH</span>-tuh-hah-doo'</div>
                 
@@ -732,7 +746,7 @@
                 
                 
                 
-                <div class="fc-back-parks" lang="x-paw">Parks: kitahaaruʔ</div>
+                <div class="fc-back-parks" lang="x-paw"><span class="when-parks">Learner spelling: kitahâru'</span><span class="when-learner">Parks: kitahaaruʔ</span></div>
                 
                 
                 <div class="fc-back-citation">Parks Dictionary, p. 446</div>
@@ -749,13 +763,13 @@
     <div class="fc-card-wrapper fc-hidden" data-index="14">
         <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
             <div class="fc-front">
-                <div class="fc-front-word" lang="x-paw">rahpîksu'</div>
+                <div class="fc-front-word" lang="x-paw"><span class="when-parks">rahpiiksuʔ</span><span class="when-learner">rahpîksu&#39;</span></div>
                 
                 <div class="fc-front-pron"><span class="pitch-high">DUHH</span>-peek-soo'</div>
                 
                 
                 
-                <div class="fc-front-parks" lang="x-paw">rahpiiksuʔ</div>
+                <div class="fc-front-parks" lang="x-paw"><span class="when-parks">rahpîksu&#39;</span><span class="when-learner">rahpiiksuʔ</span></div>
                 
                 
                 <span class="badge badge-class" title="Noun">N</span>
@@ -766,7 +780,7 @@
             <div class="fc-back">
                 <div class="fc-back-definition">scar, scarred area.</div>
                 
-                <div class="fc-back-word" lang="x-paw">rahpîksu'</div>
+                <div class="fc-back-word" lang="x-paw"><span class="when-parks">rahpiiksuʔ</span><span class="when-learner">rahpîksu&#39;</span></div>
                 
                 <div class="fc-back-pron"><span class="pitch-high">DUHH</span>-peek-soo'</div>
                 
@@ -775,7 +789,7 @@
                 
                 
                 
-                <div class="fc-back-parks" lang="x-paw">Parks: rahpiiksuʔ</div>
+                <div class="fc-back-parks" lang="x-paw"><span class="when-parks">Learner spelling: rahpîksu'</span><span class="when-learner">Parks: rahpiiksuʔ</span></div>
                 
                 
                 <div class="fc-back-citation">Parks Dictionary, p. 480</div>

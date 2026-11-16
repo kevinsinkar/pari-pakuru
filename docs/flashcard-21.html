@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" data-spelling="parks">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script>try { if (window.localStorage.getItem('spelling') === 'learner') document.documentElement.setAttribute('data-spelling', 'learner'); } catch (e) {}</script>
   <title>Week 21: People & Society — Skiri Pawnee Dictionary</title>
 
   <!-- Fonts -->
@@ -81,10 +83,9 @@
         
         <li><a href="about.html" >About</a></li>
 
-        
-        
       </ul>
     </nav>
+    <div class="header-row">
     
     <form action="index.html" method="get" class="nav-search" role="search">
       <input
@@ -97,6 +98,15 @@
       >
     </form>
     
+    
+    <div class="spelling-switch" id="spelling-switch">
+      <span class="spelling-switch__label" id="spelling-switch-label">Spelling</span>
+      <button type="button" class="spelling-btn" data-spelling="parks" aria-pressed="true" aria-describedby="spelling-switch-label"
+              title="The dictionary's own spelling: a long vowel written double (aa), c for both &quot;ts&quot; and &quot;ch&quot;, and &#x0294; for the catch in the throat">Parks <span lang="x-paw">aa c &#x0294;</span></button>
+      <button type="button" class="spelling-btn" data-spelling="learner" aria-pressed="false" aria-describedby="spelling-switch-label"
+              title="The learner spelling: the same words with &acirc; &icirc; &ucirc; for long vowels, &#x010D; for &quot;ch&quot;, and ' for the catch in the throat">Learner <span lang="x-paw">&acirc; &#x010D; '</span></button>
+    </div>
+    </div>
   </header>
 
   <!-- ====== Main Content ====== -->
@@ -112,15 +122,19 @@
 
 
 <p class="spelling-line">
-  <strong>Which spelling do I learn to write?</strong>
+  <strong>Two spellings of one word.</strong>
   
-  The large word on the card: the learner spelling, with <span lang="x-paw">â î û</span> for long vowels,
-  <span lang="x-paw">'</span> for the catch in the throat, <span lang="x-paw">c</span> for “ts” and
-  <span lang="x-paw">č</span> for “ch”, which is the spelling of the Pawnee Nation's own lesson handouts.
-  A smaller word under it is the same word in the dictionary's letters, and the
+  The large word on a card is in the dictionary's spelling: a long vowel written double
+  (<span lang="x-paw">aa</span>), <span lang="x-paw">c</span> for both “ts” and “ch”, and
+  <span lang="x-paw">&#x0294;</span> for the catch in the throat. The switch at the top of the page,
+  <em>Spelling</em>, puts the learner spelling there instead, with <span lang="x-paw">â î û</span> for long vowels,
+  <span lang="x-paw">'</span> for the catch, <span lang="x-paw">c</span> for “ts” and <span lang="x-paw">č</span> for “ch”,
+  which is the alphabet of the Pawnee Nation's own lesson handouts.
+  The smaller word under it is the same word in the other spelling, and the
   line in capitals and hyphens is a rough guide for English speakers, not a spelling.
-  A card whose back names the textbook and no dictionary page is a word found only in the 1979 textbook: it is written
-  as the textbook spells it, in the dictionary's letters (<span lang="x-paw">ʔ</span> for <span lang="x-paw">'</span>).
+  A card whose back names the textbook and no dictionary page is a word found only in the 1979 textbook: it has one
+  spelling, the textbook's in the dictionary's letters (<span lang="x-paw">&#x0294;</span> for <span lang="x-paw">'</span>),
+  and the switch does not change it.
   
   Where a teacher or a speaker writes a word another way, follow them.
 </p>
@@ -332,13 +346,13 @@
     <div class="fc-card-wrapper fc-hidden" data-index="5">
         <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
             <div class="fc-front">
-                <div class="fc-front-word" lang="x-paw">pîraski</div>
+                <div class="fc-front-word" lang="x-paw"><span class="when-parks">piiraski</span><span class="when-learner">pîraski</span></div>
                 
                 <div class="fc-front-pron"><span class="pitch-high">PEE</span>-duhs-kih</div>
                 
                 
                 
-                <div class="fc-front-parks" lang="x-paw">piiraski</div>
+                <div class="fc-front-parks" lang="x-paw"><span class="when-parks">pîraski</span><span class="when-learner">piiraski</span></div>
                 
                 
                 <span class="badge badge-class" title="Noun">N</span>
@@ -351,7 +365,7 @@
             <div class="fc-back">
                 <div class="fc-back-definition">boy.</div>
                 
-                <div class="fc-back-word" lang="x-paw">pîraski</div>
+                <div class="fc-back-word" lang="x-paw"><span class="when-parks">piiraski</span><span class="when-learner">pîraski</span></div>
                 
                 <div class="fc-back-pron"><span class="pitch-high">PEE</span>-duhs-kih</div>
                 
@@ -360,7 +374,7 @@
                 
                 
                 
-                <div class="fc-back-parks" lang="x-paw">Parks: piiraski</div>
+                <div class="fc-back-parks" lang="x-paw"><span class="when-parks">Learner spelling: pîraski</span><span class="when-learner">Parks: piiraski</span></div>
                 
                 
                 <div class="fc-back-citation">Parks Dictionary, p. 460</div>
@@ -579,13 +593,13 @@
     <div class="fc-card-wrapper fc-hidden" data-index="11">
         <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
             <div class="fc-front">
-                <div class="fc-front-word" lang="x-paw">râ-</div>
+                <div class="fc-front-word" lang="x-paw"><span class="when-parks">raa-</span><span class="when-learner">râ-</span></div>
                 
                 <div class="fc-front-pron">dah <span class="pitch-unmarked">(accent not marked)</span></div>
                 
                 
                 
-                <div class="fc-front-parks" lang="x-paw">raa-</div>
+                <div class="fc-front-parks" lang="x-paw"><span class="when-parks">râ-</span><span class="when-learner">raa-</span></div>
                 
                 
                 <span class="badge badge-class" title="Noun (always possessed)">N-DEP</span>
@@ -598,7 +612,7 @@
                 
                 <div class="fc-back-senses">sense 1 of 3</div>
                 
-                <div class="fc-back-word" lang="x-paw">râ-</div>
+                <div class="fc-back-word" lang="x-paw"><span class="when-parks">raa-</span><span class="when-learner">râ-</span></div>
                 
                 <div class="fc-back-pron">dah <span class="pitch-unmarked">(accent not marked)</span></div>
                 
@@ -607,7 +621,7 @@
                 
                 
                 
-                <div class="fc-back-parks" lang="x-paw">Parks: raa-</div>
+                <div class="fc-back-parks" lang="x-paw"><span class="when-parks">Learner spelling: râ-</span><span class="when-learner">Parks: raa-</span></div>
                 
                 
                 <div class="fc-back-citation">Parks Dictionary, p. 462</div>
@@ -624,13 +638,13 @@
     <div class="fc-card-wrapper fc-hidden" data-index="12">
         <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
             <div class="fc-front">
-                <div class="fc-front-word" lang="x-paw">Pâri</div>
+                <div class="fc-front-word" lang="x-paw"><span class="when-parks">Paari</span><span class="when-learner">Pâri</span></div>
                 
                 <div class="fc-front-pron"><span class="pitch-high">PAH</span>-dih</div>
                 
                 
                 
-                <div class="fc-front-parks" lang="x-paw">Paari</div>
+                <div class="fc-front-parks" lang="x-paw"><span class="when-parks">Pâri</span><span class="when-learner">Paari</span></div>
                 
                 
                 <span class="badge badge-class" title="Noun">N</span>
@@ -643,7 +657,7 @@
                 
                 <div class="fc-back-senses">sense 1 of 3</div>
                 
-                <div class="fc-back-word" lang="x-paw">Pâri</div>
+                <div class="fc-back-word" lang="x-paw"><span class="when-parks">Paari</span><span class="when-learner">Pâri</span></div>
                 
                 <div class="fc-back-pron"><span class="pitch-high">PAH</span>-dih</div>
                 
@@ -652,7 +666,7 @@
                 
                 
                 
-                <div class="fc-back-parks" lang="x-paw">Parks: Paari</div>
+                <div class="fc-back-parks" lang="x-paw"><span class="when-parks">Learner spelling: Pâri</span><span class="when-learner">Parks: Paari</span></div>
                 
                 
                 <div class="fc-back-citation">Parks Dictionary, p. 454</div>
@@ -747,13 +761,13 @@
     <div class="fc-card-wrapper fc-hidden" data-index="15">
         <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
             <div class="fc-front">
-                <div class="fc-front-word" lang="x-paw">-tât-</div>
+                <div class="fc-front-word" lang="x-paw"><span class="when-parks">-taat-</span><span class="when-learner">-tât-</span></div>
                 
                 <div class="fc-front-pron">taht <span class="pitch-unmarked">(accent not marked)</span></div>
                 
                 
                 
-                <div class="fc-front-parks" lang="x-paw">-taat-</div>
+                <div class="fc-front-parks" lang="x-paw"><span class="when-parks">-tât-</span><span class="when-learner">-taat-</span></div>
                 
                 
                 <span class="badge badge-class" title="Kinship noun">N-KIN</span>
@@ -764,7 +778,7 @@
             <div class="fc-back">
                 <div class="fc-back-definition">sister (of a male).</div>
                 
-                <div class="fc-back-word" lang="x-paw">-tât-</div>
+                <div class="fc-back-word" lang="x-paw"><span class="when-parks">-taat-</span><span class="when-learner">-tât-</span></div>
                 
                 <div class="fc-back-pron">taht <span class="pitch-unmarked">(accent not marked)</span></div>
                 
@@ -773,7 +787,7 @@
                 
                 
                 
-                <div class="fc-back-parks" lang="x-paw">Parks: -taat-</div>
+                <div class="fc-back-parks" lang="x-paw"><span class="when-parks">Learner spelling: -tât-</span><span class="when-learner">Parks: -taat-</span></div>
                 
                 
                 <div class="fc-back-citation">Parks Dictionary, p. 502</div>
@@ -790,13 +804,13 @@
     <div class="fc-card-wrapper fc-hidden" data-index="16">
         <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
             <div class="fc-front">
-                <div class="fc-front-word" lang="x-paw">-wât-</div>
+                <div class="fc-front-word" lang="x-paw"><span class="when-parks">-waat-</span><span class="when-learner">-wât-</span></div>
                 
                 <div class="fc-front-pron">waht <span class="pitch-unmarked">(accent not marked)</span></div>
                 
                 
                 
-                <div class="fc-front-parks" lang="x-paw">-waat-</div>
+                <div class="fc-front-parks" lang="x-paw"><span class="when-parks">-wât-</span><span class="when-learner">-waat-</span></div>
                 
                 
                 <span class="badge badge-class" title="Kinship noun">N-KIN</span>
@@ -807,7 +821,7 @@
             <div class="fc-back">
                 <div class="fc-back-definition">niece, nephew; ref. to a man's sister's children, whom the uncle valued highly.</div>
                 
-                <div class="fc-back-word" lang="x-paw">-wât-</div>
+                <div class="fc-back-word" lang="x-paw"><span class="when-parks">-waat-</span><span class="when-learner">-wât-</span></div>
                 
                 <div class="fc-back-pron">waht <span class="pitch-unmarked">(accent not marked)</span></div>
                 
@@ -816,7 +830,7 @@
                 
                 
                 
-                <div class="fc-back-parks" lang="x-paw">Parks: -waat-</div>
+                <div class="fc-back-parks" lang="x-paw"><span class="when-parks">Learner spelling: -wât-</span><span class="when-learner">Parks: -waat-</span></div>
                 
                 
                 <div class="fc-back-citation">Parks Dictionary, p. 522</div>
@@ -833,13 +847,13 @@
     <div class="fc-card-wrapper fc-hidden" data-index="17">
         <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
             <div class="fc-front">
-                <div class="fc-front-word" lang="x-paw">Ckîri</div>
+                <div class="fc-front-word" lang="x-paw"><span class="when-parks">Ckiiri</span><span class="when-learner">Ckîri</span></div>
                 
                 <div class="fc-front-pron"><span class="pitch-high">TSKEE</span>-dih</div>
                 
                 
                 
-                <div class="fc-front-parks" lang="x-paw">Ckiiri</div>
+                <div class="fc-front-parks" lang="x-paw"><span class="when-parks">Ckîri</span><span class="when-learner">Ckiiri</span></div>
                 
                 
                 <span class="badge badge-class" title="Noun">N</span>
@@ -852,7 +866,7 @@
                 
                 <div class="fc-back-senses">sense 1 of 2</div>
                 
-                <div class="fc-back-word" lang="x-paw">Ckîri</div>
+                <div class="fc-back-word" lang="x-paw"><span class="when-parks">Ckiiri</span><span class="when-learner">Ckîri</span></div>
                 
                 <div class="fc-back-pron"><span class="pitch-high">TSKEE</span>-dih</div>
                 
@@ -861,7 +875,7 @@
                 
                 
                 
-                <div class="fc-back-parks" lang="x-paw">Parks: Ckiiri</div>
+                <div class="fc-back-parks" lang="x-paw"><span class="when-parks">Learner spelling: Ckîri</span><span class="when-learner">Parks: Ckiiri</span></div>
                 
                 
                 <div class="fc-back-citation">Parks Dictionary, p. 378</div>
@@ -878,13 +892,13 @@
     <div class="fc-card-wrapper fc-hidden" data-index="18">
         <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
             <div class="fc-front">
-                <div class="fc-front-word" lang="x-paw">Ctu'u'</div>
+                <div class="fc-front-word" lang="x-paw"><span class="when-parks">Ctuʔuʔ</span><span class="when-learner">Ctu&#39;u&#39;</span></div>
                 
                 <div class="fc-front-pron"><span class="pitch-high">TSTOO</span>-'oo'</div>
                 
                 
                 
-                <div class="fc-front-parks" lang="x-paw">Ctuʔuʔ</div>
+                <div class="fc-front-parks" lang="x-paw"><span class="when-parks">Ctu&#39;u&#39;</span><span class="when-learner">Ctuʔuʔ</span></div>
                 
                 
                 <span class="badge badge-class" title="Noun">N</span>
@@ -895,7 +909,7 @@
             <div class="fc-back">
                 <div class="fc-back-definition">Witch Woman, a mythological old woman who has supernatural power.</div>
                 
-                <div class="fc-back-word" lang="x-paw">Ctu'u'</div>
+                <div class="fc-back-word" lang="x-paw"><span class="when-parks">Ctuʔuʔ</span><span class="when-learner">Ctu&#39;u&#39;</span></div>
                 
                 <div class="fc-back-pron"><span class="pitch-high">TSTOO</span>-'oo'</div>
                 
@@ -904,7 +918,7 @@
                 
                 
                 
-                <div class="fc-back-parks" lang="x-paw">Parks: Ctuʔuʔ</div>
+                <div class="fc-back-parks" lang="x-paw"><span class="when-parks">Learner spelling: Ctu'u'</span><span class="when-learner">Parks: Ctuʔuʔ</span></div>
                 
                 
                 <div class="fc-back-citation">Parks Dictionary, p. 379</div>
@@ -921,13 +935,13 @@
     <div class="fc-card-wrapper fc-hidden" data-index="19">
         <div class="fc-card" tabindex="0" role="button" aria-label="Flip card to reveal answer" onclick="this.classList.toggle('flipped')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.classList.toggle('flipped')}">
             <div class="fc-front">
-                <div class="fc-front-word" lang="x-paw">Ka'iwa</div>
+                <div class="fc-front-word" lang="x-paw"><span class="when-parks">Kaʔiwa</span><span class="when-learner">Ka&#39;iwa</span></div>
                 
                 <div class="fc-front-pron"><span class="pitch-high">KUH</span>-'ih-wuh</div>
                 
                 
                 
-                <div class="fc-front-parks" lang="x-paw">Kaʔiwa</div>
+                <div class="fc-front-parks" lang="x-paw"><span class="when-parks">Ka&#39;iwa</span><span class="when-learner">Kaʔiwa</span></div>
                 
                 
                 <span class="badge badge-class" title="Noun">N</span>
@@ -940,7 +954,7 @@
                 
                 <div class="fc-back-senses">sense 1 of 2</div>
                 
-                <div class="fc-back-word" lang="x-paw">Ka'iwa</div>
+                <div class="fc-back-word" lang="x-paw"><span class="when-parks">Kaʔiwa</span><span class="when-learner">Ka&#39;iwa</span></div>
                 
                 <div class="fc-back-pron"><span class="pitch-high">KUH</span>-'ih-wuh</div>
                 
@@ -949,7 +963,7 @@
                 
                 
                 
-                <div class="fc-back-parks" lang="x-paw">Parks: Kaʔiwa</div>
+                <div class="fc-back-parks" lang="x-paw"><span class="when-parks">Learner spelling: Ka'iwa</span><span class="when-learner">Parks: Kaʔiwa</span></div>
                 
                 
                 <div class="fc-back-citation">Parks Dictionary, p. 418</div>

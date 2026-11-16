@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" data-spelling="parks">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script>try { if (window.localStorage.getItem('spelling') === 'learner') document.documentElement.setAttribute('data-spelling', 'learner'); } catch (e) {}</script>
   <title>Lesson 12 — Give It To Him. — Skiri Pawnee Dictionary</title>
 
   <!-- Fonts -->
@@ -81,10 +83,9 @@
         
         <li><a href="about.html" >About</a></li>
 
-        
-        
       </ul>
     </nav>
+    <div class="header-row">
     
     <form action="index.html" method="get" class="nav-search" role="search">
       <input
@@ -97,6 +98,15 @@
       >
     </form>
     
+    
+    <div class="spelling-switch" id="spelling-switch">
+      <span class="spelling-switch__label" id="spelling-switch-label">Spelling</span>
+      <button type="button" class="spelling-btn" data-spelling="parks" aria-pressed="true" aria-describedby="spelling-switch-label"
+              title="The dictionary's own spelling: a long vowel written double (aa), c for both &quot;ts&quot; and &quot;ch&quot;, and &#x0294; for the catch in the throat">Parks <span lang="x-paw">aa c &#x0294;</span></button>
+      <button type="button" class="spelling-btn" data-spelling="learner" aria-pressed="false" aria-describedby="spelling-switch-label"
+              title="The learner spelling: the same words with &acirc; &icirc; &ucirc; for long vowels, &#x010D; for &quot;ch&quot;, and ' for the catch in the throat">Learner <span lang="x-paw">&acirc; &#x010D; '</span></button>
+    </div>
+    </div>
   </header>
 
   <!-- ====== Main Content ====== -->
@@ -140,14 +150,17 @@
 
 
 <p class="spelling-line">
-  <strong>Which spelling do I learn to write?</strong>
+  <strong>Two spellings of one word.</strong>
   
-  The one under <em>In the Skiri dictionary</em>: the learner spelling, with <span lang="x-paw">â î û</span> for long vowels,
-  <span lang="x-paw">'</span> for the catch in the throat, <span lang="x-paw">c</span> for “ts” and
-  <span lang="x-paw">č</span> for “ch”. It is the spelling of the Pawnee Nation's own lesson handouts
-  (<a href="resources.html">where to find them</a>). The <em>Blue Book</em> column is how the 1979 textbook spells the same word,
+  Under <em>In the Skiri dictionary</em> a word stands as the dictionary spells it: a long vowel written double
+  (<span lang="x-paw">aa</span>), <span lang="x-paw">c</span> for both “ts” and “ch”, and
+  <span lang="x-paw">&#x0294;</span> for the catch in the throat. The switch at the top of the page,
+  <em>Spelling</em>, changes it to the learner spelling: <span lang="x-paw">â î û</span> for long vowels,
+  <span lang="x-paw">'</span> for the catch, <span lang="x-paw">c</span> for “ts” and <span lang="x-paw">č</span> for “ch”.
+  That is the alphabet of the Pawnee Nation's own lesson handouts (<a href="resources.html">where to find them</a>).
+  The <em>Blue Book</em> column is how the 1979 textbook spells the same word,
   and <em>Say it</em> is a rough guide for English speakers, not a spelling.
-  Dialogues and phrases are printed only in the textbook's spelling, so they stay in it here.
+  Dialogues and phrases are printed only in the textbook's spelling, so they stay in it whatever you choose.
   
   Where a teacher or a speaker writes a word another way, follow them.
 </p>
@@ -221,8 +234,9 @@
     <li><strong>Blue Book</strong> — the practical spelling printed in
         <em>Pari Pakuru'</em> (1979), exactly as the Pawnee Cultural Retention
         Committee wrote it, with a raised dot between the parts of a word.</li>
-    <li><strong>Entry</strong> — the dictionary entry the word could be tied to, in the learner
-        spelling of the Parks Dictionary, with a circumflex (&#226;) marking long vowels.
+    <li><strong>Entry</strong> — the dictionary entry the word could be tied to, in the dictionary's own
+        spelling, with a long vowel written double (aa). The switch at the top of the page, <em>Spelling</em>,
+        changes it to the learner spelling, with a circumflex (&#226;) marking long vowels.
         Where no entry could be tied to a word, the cell says so; the word may still be in the dictionary
         under its stem.</li>
     <li><strong>Say it</strong> — the simplified pronunciation of that dictionary entry.
@@ -560,7 +574,7 @@
     <td>
       
         
-        <a href="index.html?id=SK-taquutuq-p153-3003" lang="x-paw">ta'ûtu'</a>
+        <a href="index.html?id=SK-taquutuq-p153-3003" lang="x-paw"><span class="when-parks">taʔuutuʔ</span><span class="when-learner">ta&#39;ûtu&#39;</span></a>
         <span class="badge badge-class">N</span>
         <a class="hear-link hear-link--small" data-hear="taʔuutuʔ" href="https://aisri-language-database.webapps.iu.edu/dictsearch/"
            target="_blank" rel="noopener" title="Opens a search for this word in Indiana University's Skiri dictionary; some entries there have a recording">hear</a>
@@ -792,7 +806,7 @@
   </script>
   
 <script>
-const EX = {"blanks": [], "matching": [{"english": "he\u0027s poor", "skiri": "ti k\u00e1pakis"}, {"english": "sell it (let him buy it)", "skiri": "r\u00faruks\u2022tapu"}, {"english": "give it back", "skiri": "ist\u00fa suks\u2022u"}, {"english": "it\u0027s expensive", "skiri": "ti wits\u00fa\u2022rihu\u0027"}, {"english": "go get it", "skiri": "hir\u00fa suks\u2022kusit"}, {"english": "I gave it to you", "skiri": "(we) t\u00e1ta\u2022u"}, {"english": "he\u0027s rich (not poor)", "skiri": "kaki k\u00e1pakis"}, {"english": "I sold it", "skiri": "(we) tik\u00fa\u2022rapu"}], "say": [{"english": "Do you have any money?", "skiri": "Kuka ras\u2022t\u00e1 papitsisu\u0027?"}, {"english": "No, I sold candy.", "skiri": "Kak\u00ed\u0027, tiku\u2022rapu rekits\u2022t\u00edwiru\u0027."}, {"english": "It costs a dollar.", "skiri": "T\u0027\u00e9witsu asku."}, {"english": "Did you buy candy?", "skiri": "Ka r\u00e1s\u2022tapu rekits\u2022t\u00edwiru\u0027?"}, {"english": "How much is it?", "skiri": "Kitske r\u00e1\u2022awitsu\u0027?"}]};
+const EX = {"blanks": [], "matching": [{"english": "I sold it", "skiri": "(we) tik\u00fa\u2022rapu"}, {"english": "it\u0027s expensive", "skiri": "ti wits\u00fa\u2022rihu\u0027"}, {"english": "I sent it, threw it", "skiri": "tat\u2022\u00e1warit"}, {"english": "he\u0027s a thief", "skiri": "t\u00e1\u2022utu\u0027"}, {"english": "sell it (let him buy it)", "skiri": "r\u00faruks\u2022tapu"}, {"english": "take it from him", "skiri": "s\u00faruks\u2022tat"}, {"english": "buy it", "skiri": "s\u00faks\u2022tapu"}, {"english": "I gave it to him", "skiri": "(we) t\u00e1t\u2022u"}], "say": [{"english": "It costs a dollar.", "skiri": "T\u0027\u00e9witsu asku."}, {"english": "How much is it?", "skiri": "Kitske r\u00e1\u2022awitsu\u0027?"}, {"english": "Do you have any money?", "skiri": "Kuka ras\u2022t\u00e1 papitsisu\u0027?"}, {"english": "No, I sold candy.", "skiri": "Kak\u00ed\u0027, tiku\u2022rapu rekits\u2022t\u00edwiru\u0027."}, {"english": "Give him the candy.", "skiri": "Suks\u2022u rekits\u2022t\u00edwiru\u0027."}]};
 
 // ── Matching ─────────────────────────────────────────────────────
 (function() {

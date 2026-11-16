@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" data-spelling="parks">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script>try { if (window.localStorage.getItem('spelling') === 'learner') document.documentElement.setAttribute('data-spelling', 'learner'); } catch (e) {}</script>
   <title>Lesson 8 — Where Is It? — Skiri Pawnee Dictionary</title>
 
   <!-- Fonts -->
@@ -81,10 +83,9 @@
         
         <li><a href="about.html" >About</a></li>
 
-        
-        
       </ul>
     </nav>
+    <div class="header-row">
     
     <form action="index.html" method="get" class="nav-search" role="search">
       <input
@@ -97,6 +98,15 @@
       >
     </form>
     
+    
+    <div class="spelling-switch" id="spelling-switch">
+      <span class="spelling-switch__label" id="spelling-switch-label">Spelling</span>
+      <button type="button" class="spelling-btn" data-spelling="parks" aria-pressed="true" aria-describedby="spelling-switch-label"
+              title="The dictionary's own spelling: a long vowel written double (aa), c for both &quot;ts&quot; and &quot;ch&quot;, and &#x0294; for the catch in the throat">Parks <span lang="x-paw">aa c &#x0294;</span></button>
+      <button type="button" class="spelling-btn" data-spelling="learner" aria-pressed="false" aria-describedby="spelling-switch-label"
+              title="The learner spelling: the same words with &acirc; &icirc; &ucirc; for long vowels, &#x010D; for &quot;ch&quot;, and ' for the catch in the throat">Learner <span lang="x-paw">&acirc; &#x010D; '</span></button>
+    </div>
+    </div>
   </header>
 
   <!-- ====== Main Content ====== -->
@@ -140,14 +150,17 @@
 
 
 <p class="spelling-line">
-  <strong>Which spelling do I learn to write?</strong>
+  <strong>Two spellings of one word.</strong>
   
-  The one under <em>In the Skiri dictionary</em>: the learner spelling, with <span lang="x-paw">â î û</span> for long vowels,
-  <span lang="x-paw">'</span> for the catch in the throat, <span lang="x-paw">c</span> for “ts” and
-  <span lang="x-paw">č</span> for “ch”. It is the spelling of the Pawnee Nation's own lesson handouts
-  (<a href="resources.html">where to find them</a>). The <em>Blue Book</em> column is how the 1979 textbook spells the same word,
+  Under <em>In the Skiri dictionary</em> a word stands as the dictionary spells it: a long vowel written double
+  (<span lang="x-paw">aa</span>), <span lang="x-paw">c</span> for both “ts” and “ch”, and
+  <span lang="x-paw">&#x0294;</span> for the catch in the throat. The switch at the top of the page,
+  <em>Spelling</em>, changes it to the learner spelling: <span lang="x-paw">â î û</span> for long vowels,
+  <span lang="x-paw">'</span> for the catch, <span lang="x-paw">c</span> for “ts” and <span lang="x-paw">č</span> for “ch”.
+  That is the alphabet of the Pawnee Nation's own lesson handouts (<a href="resources.html">where to find them</a>).
+  The <em>Blue Book</em> column is how the 1979 textbook spells the same word,
   and <em>Say it</em> is a rough guide for English speakers, not a spelling.
-  Dialogues and phrases are printed only in the textbook's spelling, so they stay in it here.
+  Dialogues and phrases are printed only in the textbook's spelling, so they stay in it whatever you choose.
   
   Where a teacher or a speaker writes a word another way, follow them.
 </p>
@@ -221,8 +234,9 @@
     <li><strong>Blue Book</strong> — the practical spelling printed in
         <em>Pari Pakuru'</em> (1979), exactly as the Pawnee Cultural Retention
         Committee wrote it, with a raised dot between the parts of a word.</li>
-    <li><strong>Entry</strong> — the dictionary entry the word could be tied to, in the learner
-        spelling of the Parks Dictionary, with a circumflex (&#226;) marking long vowels.
+    <li><strong>Entry</strong> — the dictionary entry the word could be tied to, in the dictionary's own
+        spelling, with a long vowel written double (aa). The switch at the top of the page, <em>Spelling</em>,
+        changes it to the learner spelling, with a circumflex (&#226;) marking long vowels.
         Where no entry could be tied to a word, the cell says so; the word may still be in the dictionary
         under its stem.</li>
     <li><strong>Say it</strong> — the simplified pronunciation of that dictionary entry.
@@ -257,7 +271,7 @@
     <td>
       
         
-        <a href="index.html?id=SK-asaaki-p362-3736" lang="x-paw">asâki</a>
+        <a href="index.html?id=SK-asaaki-p362-3736" lang="x-paw"><span class="when-parks">asaaki</span><span class="when-learner">asâki</span></a>
         <span class="badge badge-class">N</span>
         <a class="hear-link hear-link--small" data-hear="asaaki" href="https://aisri-language-database.webapps.iu.edu/dictsearch/"
            target="_blank" rel="noopener" title="Opens a search for this word in Indiana University's Skiri dictionary; some entries there have a recording">hear</a>
@@ -289,7 +303,7 @@
     <td>
       
         
-        <a href="index.html?id=SK-aruusaq-p362-3724" lang="x-paw">arûsa'</a>
+        <a href="index.html?id=SK-aruusaq-p362-3724" lang="x-paw"><span class="when-parks">aruusaʔ</span><span class="when-learner">arûsa&#39;</span></a>
         <span class="badge badge-class">N</span>
         <a class="hear-link hear-link--small" data-hear="aruusaʔ" href="https://aisri-language-database.webapps.iu.edu/dictsearch/"
            target="_blank" rel="noopener" title="Opens a search for this word in Indiana University's Skiri dictionary; some entries there have a recording">hear</a>
@@ -322,7 +336,7 @@
     <td>
       
         
-        <a href="index.html?id=SK-tarahaataakaa-p160-3125" lang="x-paw">tarahâtâkâ</a>
+        <a href="index.html?id=SK-tarahaataakaa-p160-3125" lang="x-paw"><span class="when-parks">tarahaataakaa</span><span class="when-learner">tarahâtâkâ</span></a>
         <span class="badge badge-class">N</span>
         <a class="hear-link hear-link--small" data-hear="tarahaataakaa" href="https://aisri-language-database.webapps.iu.edu/dictsearch/"
            target="_blank" rel="noopener" title="Opens a search for this word in Indiana University's Skiri dictionary; some entries there have a recording">hear</a>
@@ -358,7 +372,7 @@
     <td>
       
         
-        <a href="index.html?id=SK-akaaruq-p9-0108" lang="x-paw">akâru'</a>
+        <a href="index.html?id=SK-akaaruq-p9-0108" lang="x-paw"><span class="when-parks">akaaruʔ</span><span class="when-learner">akâru&#39;</span></a>
         <span class="badge badge-class">N</span>
         <a class="hear-link hear-link--small" data-hear="akaaruʔ" href="https://aisri-language-database.webapps.iu.edu/dictsearch/"
            target="_blank" rel="noopener" title="Opens a search for this word in Indiana University's Skiri dictionary; some entries there have a recording">hear</a>
@@ -405,7 +419,7 @@
     <td>
       
         
-        <a href="index.html?id=SK-akahtaahuruus-p358-3675" lang="x-paw">akahtâhurûs</a>
+        <a href="index.html?id=SK-akahtaahuruus-p358-3675" lang="x-paw"><span class="when-parks">akahtaahuruus</span><span class="when-learner">akahtâhurûs</span></a>
         <span class="badge badge-class">N</span>
         <a class="hear-link hear-link--small" data-hear="akahtaahuruus" href="https://aisri-language-database.webapps.iu.edu/dictsearch/"
            target="_blank" rel="noopener" title="Opens a search for this word in Indiana University's Skiri dictionary; some entries there have a recording">hear</a>
@@ -635,7 +649,7 @@
     <td>
       
         
-        <a href="index.html?id=SK-paapicisuq-p454-4063" lang="x-paw">pâpičisu'</a>
+        <a href="index.html?id=SK-paapicisuq-p454-4063" lang="x-paw"><span class="when-parks">paapicisuʔ</span><span class="when-learner">pâpičisu&#39;</span></a>
         <span class="badge badge-class">N</span>
         <a class="hear-link hear-link--small" data-hear="paapicisuʔ" href="https://aisri-language-database.webapps.iu.edu/dictsearch/"
            target="_blank" rel="noopener" title="Opens a search for this word in Indiana University's Skiri dictionary; some entries there have a recording">hear</a>
@@ -653,7 +667,7 @@
     <td>
       
         
-        <a href="index.html?id=SK-paapicispahat-p454-4057" lang="x-paw">pâpičispahat</a>
+        <a href="index.html?id=SK-paapicispahat-p454-4057" lang="x-paw"><span class="when-parks">paapicispahat</span><span class="when-learner">pâpičispahat</span></a>
         <span class="badge badge-class">N</span>
         <a class="hear-link hear-link--small" data-hear="paapicispahat" href="https://aisri-language-database.webapps.iu.edu/dictsearch/"
            target="_blank" rel="noopener" title="Opens a search for this word in Indiana University's Skiri dictionary; some entries there have a recording">hear</a>
@@ -707,7 +721,7 @@
     <td>
       
         
-        <a href="index.html?id=SK-tuupic-p166-3289" lang="x-paw">tûpic</a>
+        <a href="index.html?id=SK-tuupic-p166-3289" lang="x-paw"><span class="when-parks">tuupic</span><span class="when-learner">tûpic</span></a>
         <span class="badge badge-class">N</span>
         <a class="hear-link hear-link--small" data-hear="tuupic" href="https://aisri-language-database.webapps.iu.edu/dictsearch/"
            target="_blank" rel="noopener" title="Opens a search for this word in Indiana University's Skiri dictionary; some entries there have a recording">hear</a>
@@ -802,7 +816,7 @@
     <td>
       
         
-        <a href="index.html?id=SK-askuhuukita-p16-0174" lang="x-paw">askuhûkita</a>
+        <a href="index.html?id=SK-askuhuukita-p16-0174" lang="x-paw"><span class="when-parks">askuhuukita</span><span class="when-learner">askuhûkita</span></a>
         <span class="badge badge-class">NUM</span>
         <a class="hear-link hear-link--small" data-hear="askuhuukita" href="https://aisri-language-database.webapps.iu.edu/dictsearch/"
            target="_blank" rel="noopener" title="Opens a search for this word in Indiana University's Skiri dictionary; some entries there have a recording">hear</a>
@@ -848,7 +862,7 @@
     <td>
       
         
-        <a href="index.html?id=SK-rakuukita-p136-2671" lang="x-paw">rakûkita</a>
+        <a href="index.html?id=SK-rakuukita-p136-2671" lang="x-paw"><span class="when-parks">rakuukita</span><span class="when-learner">rakûkita</span></a>
         <span class="badge badge-class">NUM</span>
         <a class="hear-link hear-link--small" data-hear="rakuukita" href="https://aisri-language-database.webapps.iu.edu/dictsearch/"
            target="_blank" rel="noopener" title="Opens a search for this word in Indiana University's Skiri dictionary; some entries there have a recording">hear</a>
@@ -880,7 +894,7 @@
     <td>
       
         
-        <a href="index.html?id=SK-ksurawiquq-p101-1949" lang="x-paw">ksurawi'u'</a>
+        <a href="index.html?id=SK-ksurawiquq-p101-1949" lang="x-paw"><span class="when-parks">ksurawiʔuʔ</span><span class="when-learner">ksurawi&#39;u&#39;</span></a>
         <span class="badge badge-class">NUM</span>
         <a class="hear-link hear-link--small" data-hear="ksurawiʔuʔ" href="https://aisri-language-database.webapps.iu.edu/dictsearch/"
            target="_blank" rel="noopener" title="Opens a search for this word in Indiana University's Skiri dictionary; some entries there have a recording">hear</a>
@@ -943,7 +957,7 @@
     <td>
       
         
-        <a href="index.html?id=SK-piitaquq-p113-2177" lang="x-paw">pîta'u'</a>
+        <a href="index.html?id=SK-piitaquq-p113-2177" lang="x-paw"><span class="when-parks">piitaʔuʔ</span><span class="when-learner">pîta&#39;u&#39;</span></a>
         <span class="badge badge-class">NUM</span>
         <a class="hear-link hear-link--small" data-hear="piitaʔuʔ" href="https://aisri-language-database.webapps.iu.edu/dictsearch/"
            target="_blank" rel="noopener" title="Opens a search for this word in Indiana University's Skiri dictionary; some entries there have a recording">hear</a>
@@ -1250,7 +1264,7 @@
   </script>
   
 <script>
-const EX = {"blanks": [], "matching": [{"english": "he is standing around in the road", "skiri": "ti\u2022h\u00e1tuh\u2022kaarit"}, {"english": "door", "skiri": "rek\u00e1\u2022kusu\u0027"}, {"english": "round house", "skiri": "akah\u2022t\u00e1hurus"}, {"english": "seventeen", "skiri": "taw\u00edt\u2022ka\u2022ke\u0027"}, {"english": "I don\u0027t know", "skiri": "kakat\u2022ir\u00e1\u2022ita\u0027"}, {"english": "fifteen", "skiri": "sihuks\u2022tar\u00fa\u2022kita"}, {"english": "penny", "skiri": "papitsis\u2022p\u00e1hat"}, {"english": "window, mirror", "skiri": "ru\u2022kat\u2022awi\u2022r\u00edku"}], "say": [{"english": "Yes, I found the dog.", "skiri": "Ahu\u0027, tat\u2022huras asaki."}, {"english": "Thank you.", "skiri": "Tat\u2022ats\u00edks\u2022tehu\u0027."}, {"english": "Is that right?", "skiri": "Ka ru rut\u2022ts\u00edrau\u0027?"}, {"english": "Have you found the dog?", "skiri": "Ka ras\u2022huras asaki?"}, {"english": "Where was it (sitting)?", "skiri": "K\u00edru ruks\u2022ku\u0027?"}]};
+const EX = {"blanks": [], "matching": [{"english": "round house", "skiri": "akah\u2022t\u00e1hurus"}, {"english": "window, mirror", "skiri": "ru\u2022kat\u2022awi\u2022r\u00edku"}, {"english": "he\u0027s inside, was inside", "skiri": "ti\u2022k\u00e1ku\u0027"}, {"english": "metal, money, a dollar", "skiri": "pap\u00edtsisu\u0027"}, {"english": "chair", "skiri": "tsk\u00fas\u2022kakusu\u0027"}, {"english": "one dollar", "skiri": "asku pap\u00edtsisu\u0027"}, {"english": "horse", "skiri": "ar\u00fasa"}, {"english": "door", "skiri": "ra\u2022rek\u00e1\u2022kusu\u0027"}], "say": [{"english": "What are you looking for?", "skiri": "Kirike r\u00e1s\u2022taspe\u0027?"}, {"english": "Here it is (holding it).", "skiri": "Tar\u00ed\u0027."}, {"english": "Is that right?", "skiri": "Ka ru rut\u2022ts\u00edrau\u0027?"}, {"english": "What?", "skiri": "Ka?"}, {"english": "I\u0027m looking for my dog.", "skiri": "T\u00e1h\u2022raspe\u0027 asaki."}]};
 
 // ── Matching ─────────────────────────────────────────────────────
 (function() {

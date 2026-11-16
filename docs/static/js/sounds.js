@@ -16,8 +16,8 @@
     const out = document.getElementById('so-out');
     if (!card) { out.innerHTML = ''; return; }
     out.innerHTML = `<div class="sound-card">
-        <div class="sound-card-head"><span class="q-word" lang="x-paw">${esc(card.w)}</span>
-          ${card.p ? `<span class="secondary-spelling" lang="x-paw">${esc(card.p)}</span>` : ''}
+        <div class="sound-card-head"><span class="q-word" lang="x-paw">${Skiri.spell(card.p || card.w, card.p ? card.w : '')}</span>
+          ${card.p ? `<span class="secondary-spelling" lang="x-paw">${Skiri.spellOther(card.p || card.w, card.w)}</span>` : ''}
           <span class="family-gloss">${esc(card.def)}</span></div>
         <p class="result-ipa" lang="x-paw">${esc(card.ipa)}</p>
         ${soundItOut(card.ipa, card.say)}

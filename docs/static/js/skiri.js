@@ -16,6 +16,11 @@
  *   - Skiri.hearUrls: a link that opens Indiana University's online Skiri
  *     dictionary at a word, where some entries have a recording. Nothing is
  *     copied from there.
+ *
+ * And the two spellings of a dictionary word (Skiri.spelling, Skiri.spell):
+ * every page carries both, the dictionary's own and the learner spelling, and
+ * shows the dictionary's unless the visitor chooses the other with the switch
+ * at the top. The choice is kept in the visitor's browser.
  */
 const Skiri = (() => {
   function esc(value) {
@@ -390,10 +395,63 @@ const Skiri = (() => {
     });
   }
 
+  // ---------------------------------------------------------------- the two spellings
+  // A dictionary word is written into a page twice: in the dictionary's own spelling (Parks's: aa, c, ʔ) and in
+  // the learner spelling (the entry's stored respelling: â î û, č, '). The page shows the dictionary's unless the
+  // visitor has chosen the learner spelling with the switch at the top of the page. The choice is kept in the
+  // visitor's browser (localStorage "spelling") and put on <html data-spelling>; a style rule hides the other
+  // spelling (.when-parks, .when-learner). No form is made here: both spellings come with the data.
+  const SPELLING_KEY = 'spelling';
+  const spelling = {
+    get() {
+      try { return window.localStorage.getItem(SPELLING_KEY) === 'learner' ? 'learner' : 'parks'; } catch (e) { return 'parks'; }
+    },
+    set(which) {
+      const value = which === 'learner' ? 'learner' : 'parks';
+      try { window.localStorage.setItem(SPELLING_KEY, value); } catch (e) { /* not kept; this page still changes */ }
+      spelling.show(value);
+      return value;
+    },
+    /** Put a choice on the page: the attribute the style rule reads, and which of the two buttons is pressed. */
+    show(value) {
+      if (typeof document === 'undefined') return;
+      if (document.documentElement && document.documentElement.setAttribute) {
+        document.documentElement.setAttribute('data-spelling', value);
+      }
+      if (document.querySelectorAll) {
+        document.querySelectorAll('.spelling-btn[data-spelling]').forEach(btn =>
+          btn.setAttribute('aria-pressed', btn.getAttribute('data-spelling') === value ? 'true' : 'false'));
+      }
+    },
+    /** Tie the switch at the top of the page to the choice. A choice made in another tab is followed. */
+    bind() {
+      if (typeof document === 'undefined' || !document.querySelectorAll) return;
+      spelling.show(spelling.get());
+      document.querySelectorAll('.spelling-btn[data-spelling]').forEach(btn =>
+        btn.addEventListener('click', () => spelling.set(btn.getAttribute('data-spelling'))));
+      if (typeof window !== 'undefined' && window.addEventListener) {
+        window.addEventListener('storage', event => { if (event.key === SPELLING_KEY) spelling.show(spelling.get()); });
+      }
+    },
+  };
+
+  /** A dictionary word in both spellings, for the place where a page shows a word first. `learner` empty, or the
+      same as `parks`, gives the one spelling the word has. */
+  function spell(parks, learner) {
+    if (!learner || learner === parks) return esc(parks);
+    return `<span class="when-parks">${esc(parks)}</span><span class="when-learner">${esc(learner)}</span>`;
+  }
+
+  /** The other spelling of the word, to stand small beside the first; '' when the word has only one. */
+  function spellOther(parks, learner) {
+    if (!learner || learner === parks) return '';
+    return `<span class="when-parks">${esc(learner)}</span><span class="when-learner">${esc(parks)}</span>`;
+  }
+
   if (typeof document !== 'undefined' && document.addEventListener) {
-    document.addEventListener('DOMContentLoaded', () => { coverTools(); hearLinks(); });
+    document.addEventListener('DOMContentLoaded', () => { coverTools(); hearLinks(); spelling.bind(); });
   }
 
   return { esc, SOUNDS, parsePhonetic, soundItOut, pieceChips, literalHtml, buildBlock, entryLink, shuffle, store, load,
-    box, coverTools, hearUrls, hearLinks };
+    box, coverTools, hearUrls, hearLinks, spelling, spell, spellOther };
 })();

@@ -215,9 +215,10 @@ function renderSearchResults(results, total, open) {
     html += `<p class="result-citation">Showing the first ${results.length} of ${total} results. Add a letter or a word to narrow the search.</p>`;
   }
   for (const entry of results) {
+    // Both spellings of the headword are written; the page shows the dictionary's unless the visitor chose the
+    // learner spelling with the switch at the top (Skiri.spell). A word found only in the textbook has one.
     const parks = entry.headword + (entry.stem_preverb ? ' ' + entry.stem_preverb : '');
-    const primarySpelling = entry.normalized_form || entry.headword;
-    const secondarySpelling = (entry.normalized_form && entry.normalized_form !== entry.headword) || entry.stem_preverb ? parks : null;
+    const learner = entry.normalized_form && entry.normalized_form !== entry.headword ? entry.normalized_form : '';
 
     // All senses, numbered when there is more than one; usage notes inline
     const glosses = entry.glosses || [];
@@ -234,8 +235,8 @@ function renderSearchResults(results, total, open) {
 
     html += `<article class="result-card">
       <div class="result-header">
-        <h3>${esc(primarySpelling)}</h3>
-        ${secondarySpelling ? `<span class="secondary-spelling" lang="x-paw">${esc(secondarySpelling)}</span>` : ''}
+        <h3 lang="x-paw">${Skiri.spell(parks, learner)}</h3>
+        ${learner ? `<span class="secondary-spelling" lang="x-paw">${Skiri.spellOther(parks, learner)}</span>` : ''}
       </div>
       <div class="result-meta">
         <span class="gram-class">${esc(wordClass || 'word')}</span>

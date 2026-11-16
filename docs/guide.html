@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" data-spelling="parks">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script>try { if (window.localStorage.getItem('spelling') === 'learner') document.documentElement.setAttribute('data-spelling', 'learner'); } catch (e) {}</script>
   <title>Sounds — Skiri Pawnee Dictionary</title>
 
   <!-- Fonts -->
@@ -81,10 +83,9 @@
         
         <li><a href="about.html" >About</a></li>
 
-        
-        
       </ul>
     </nav>
+    <div class="header-row">
     
     <form action="index.html" method="get" class="nav-search" role="search">
       <input
@@ -97,6 +98,15 @@
       >
     </form>
     
+    
+    <div class="spelling-switch" id="spelling-switch">
+      <span class="spelling-switch__label" id="spelling-switch-label">Spelling</span>
+      <button type="button" class="spelling-btn" data-spelling="parks" aria-pressed="true" aria-describedby="spelling-switch-label"
+              title="The dictionary's own spelling: a long vowel written double (aa), c for both &quot;ts&quot; and &quot;ch&quot;, and &#x0294; for the catch in the throat">Parks <span lang="x-paw">aa c &#x0294;</span></button>
+      <button type="button" class="spelling-btn" data-spelling="learner" aria-pressed="false" aria-describedby="spelling-switch-label"
+              title="The learner spelling: the same words with &acirc; &icirc; &ucirc; for long vowels, &#x010D; for &quot;ch&quot;, and ' for the catch in the throat">Learner <span lang="x-paw">&acirc; &#x010D; '</span></button>
+    </div>
+    </div>
   </header>
 
   <!-- ====== Main Content ====== -->
@@ -125,7 +135,7 @@
             Consonants: <span lang="x-paw">p, t, k, č, c, s, h, r, w</span> and <span lang="x-paw">’</span>.
             A long vowel has a circumflex; <span lang="x-paw">č</span> is the sound of “catch”,
             <span lang="x-paw">c</span> the sound of “cats”, and <span lang="x-paw">’</span> the catch in “uh-oh”.
-            That is the learner spelling this site puts first.
+            That is the learner spelling of this site: the switch at the top of the page, <em>Spelling</em>, puts it first.
         </p>
         <p>
             The dictionary's own letters differ in two ways, and so does the Alphabet Book of 2002: a long vowel
@@ -157,15 +167,13 @@
 
     <h3>The letters</h3>
     <p>
-        Below you'll find the <strong>Parks notation</strong> (used in the dictionary headwords),
-        our <strong>simplified respelling</strong> (shown throughout this site),
-        and English approximations to help with pronunciation.
+        Below you'll find the <strong>Parks notation</strong> (the dictionary's own spelling, which this site
+        shows first), the <strong>learner spelling</strong> (the same words respelt letter by letter, which the
+        switch at the top of the page puts first), and English approximations to help with pronunciation.
     </p>
     <p style="font-size:0.85em; color:var(--earth-500);">
-        
-        You're viewing with <strong>Simplified spelling</strong> as primary.
-        
-        
+        <span class="when-parks">You're viewing with <strong>Parks spelling</strong> as primary.</span><span class="when-learner">You're viewing with the <strong>learner spelling</strong> as primary.</span>
+        The switch at the top of the page, <em>Spelling</em>, changes it.
     </p>
 
     <!-- ============================================================ -->
@@ -176,15 +184,72 @@
         <thead>
             <tr>
                 
-                <th>Simplified</th>
-                <th>Parks</th>
+                <th class="when-parks">Parks</th>
+                <th class="when-parks">Learner</th>
+                <th class="when-learner">Learner</th>
+                <th class="when-learner">Parks</th>
                 
                 <th>English Approximation</th>
                 <th>Notes</th>
             </tr>
         </thead>
-        <tbody>
-            
+        <tbody class="when-parks">
+            <tr>
+                <td class="ipa guide-primary-col">p</td>
+                <td class="guide-secondary-col">p</td>
+                <td><strong>sp</strong>ot (unaspirated, like the p in <em>spin</em>)</td>
+                <td>No puff of air</td>
+            </tr>
+            <tr>
+                <td class="ipa guide-primary-col">t</td>
+                <td class="guide-secondary-col">t</td>
+                <td><strong>st</strong>op (unaspirated, like the t in <em>start</em>)</td>
+                <td>No puff of air</td>
+            </tr>
+            <tr>
+                <td class="ipa guide-primary-col">k</td>
+                <td class="guide-secondary-col">k</td>
+                <td><strong>sk</strong>ate (unaspirated, like the k in <em>skin</em>)</td>
+                <td>No puff of air</td>
+            </tr>
+            <tr>
+                <td class="ipa guide-primary-col">c</td>
+                <td class="guide-secondary-col">c / &#x010D;</td>
+                <td>"ts" as in ca<strong>ts</strong> before a consonant and at the end of a word; "ch" as in <strong>ch</strong>urch before a vowel</td>
+                <td>Parks uses <strong>c</strong> for both sounds. The learner spelling distinguishes them: <strong>c</strong> = ts, <strong>&#x010D;</strong> = ch</td>
+            </tr>
+            <tr>
+                <td class="ipa guide-primary-col">s</td>
+                <td class="guide-secondary-col">s</td>
+                <td><strong>s</strong>it, <strong>s</strong>uper</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="ipa guide-primary-col">r</td>
+                <td class="guide-secondary-col">r</td>
+                <td>Spanish <em>pero</em> &mdash; a soft, quick tap</td>
+                <td>Like a very soft <strong>d</strong> in <em>ready</em> said fast; sometimes sounds like <em>n</em> or <em>l</em></td>
+            </tr>
+            <tr>
+                <td class="ipa guide-primary-col">w</td>
+                <td class="guide-secondary-col">w</td>
+                <td><strong>w</strong>all, <strong>w</strong>atch</td>
+                <td>Same sound as the vowel <strong>u</strong> when between consonants</td>
+            </tr>
+            <tr>
+                <td class="ipa guide-primary-col">h</td>
+                <td class="guide-secondary-col">h</td>
+                <td><strong>h</strong>it, <strong>h</strong>arm</td>
+                <td>Always pronounced in Skiri; silent at word start in South Band</td>
+            </tr>
+            <tr>
+                <td class="ipa guide-primary-col">&#x0294;</td>
+                <td class="guide-secondary-col">'</td>
+                <td>The catch in <em>uh-oh</em></td>
+                <td>Glottal stop &mdash; a brief closure of the throat. At word end, the vowel is cut short with a slight echo</td>
+            </tr>
+            </tbody>
+        <tbody class="when-learner">
             <tr>
                 <td class="guide-primary-col">p</td>
                 <td class="ipa guide-secondary-col">p</td>
@@ -213,7 +278,7 @@
                 <td class="guide-primary-col">&#x010D;</td>
                 <td class="ipa guide-secondary-col">c</td>
                 <td><strong>ch</strong>urch, <strong>ch</strong>in</td>
-                <td>Parks writes both as <strong>c</strong>; simplified uses <strong>&#x010D;</strong> to mark the "ch" sound</td>
+                <td>Parks writes both as <strong>c</strong>; the learner spelling uses <strong>&#x010D;</strong> to mark the "ch" sound</td>
             </tr>
             <tr>
                 <td class="guide-primary-col">s</td>
@@ -295,10 +360,9 @@
         Pawnee has four basic vowel qualities. Each can be <strong>short</strong>
         or <strong>long</strong> (held about twice as long). Vowel length changes
         meaning, so pay attention to it.
-        
-        In the simplified spelling, long vowels use a <strong>circumflex</strong>:
-        &acirc;, &icirc;, &ucirc;.
-        
+        <span class="when-parks">In Parks notation, long vowels are simply <strong>doubled</strong>:
+        aa, ii, uu.</span><span class="when-learner">In the learner spelling, long vowels use a <strong>circumflex</strong>:
+        &acirc;, &icirc;, &ucirc;.</span>
     </p>
 
     <div class="guide-table-wrap">
@@ -306,8 +370,10 @@
         <thead>
             <tr>
                 
-                <th>Simplified</th>
-                <th>Parks</th>
+                <th class="when-parks">Parks</th>
+                <th class="when-parks">Learner</th>
+                <th class="when-learner">Learner</th>
+                <th class="when-learner">Parks</th>
                 
                 <th>Sounds Like</th>
                 <th>Mouth Position</th>
@@ -315,7 +381,47 @@
         </thead>
         <tbody>
             <tr class="guide-section-row"><td colspan="4"><strong>Short Vowels</strong></td></tr>
-            
+            </tbody>
+        <tbody class="when-parks">
+            <tr>
+                <td class="ipa guide-primary-col">a</td>
+                <td class="guide-secondary-col">a</td>
+                <td>p<strong>u</strong>tt, <strong>a</strong>bove</td>
+                <td>Open &amp; relaxed &mdash; mouth wide, tongue low</td>
+            </tr>
+            <tr>
+                <td class="ipa guide-primary-col">i</td>
+                <td class="guide-secondary-col">i</td>
+                <td>p<strong>i</strong>t, h<strong>i</strong>t</td>
+                <td>Close &mdash; tongue humped high in front</td>
+            </tr>
+            <tr>
+                <td class="ipa guide-primary-col">u</td>
+                <td class="guide-secondary-col">u</td>
+                <td>p<strong>u</strong>sh, b<strong>oo</strong>t</td>
+                <td>Round &mdash; lips pursed and rounded</td>
+            </tr>
+            <tr class="guide-section-row"><td colspan="4"><strong>Long Vowels</strong> (held longer)</td></tr>
+            <tr>
+                <td class="ipa guide-primary-col">aa</td>
+                <td class="guide-secondary-col">&acirc;</td>
+                <td>f<strong>a</strong>ther</td>
+                <td>Same as <strong>a</strong> but held longer</td>
+            </tr>
+            <tr>
+                <td class="ipa guide-primary-col">ii</td>
+                <td class="guide-secondary-col">&icirc;</td>
+                <td>w<strong>ee</strong>d, mach<strong>i</strong>ne</td>
+                <td>Same as <strong>i</strong> but held longer</td>
+            </tr>
+            <tr>
+                <td class="ipa guide-primary-col">uu</td>
+                <td class="guide-secondary-col">&ucirc;</td>
+                <td>r<strong>u</strong>de, r<strong>u</strong>ler</td>
+                <td>Same as <strong>u</strong> but held longer</td>
+            </tr>
+            </tbody>
+        <tbody class="when-learner">
             <tr>
                 <td class="guide-primary-col">a</td>
                 <td class="ipa guide-secondary-col">a</td>
@@ -359,19 +465,17 @@
     </div>
 
     <details class="guide-note" open>
-        <summary>Note: <strong>u</strong> vs <strong>&ucirc;</strong> in pronunciation</summary>
+        <summary>Note: <strong>u</strong> vs <strong><span class="when-parks">uu</span><span class="when-learner">&ucirc;</span></strong> in pronunciation</summary>
         <p>
             In the pronunciation guide (e.g. <em>PIHT-koo</em>), both short
             <strong>u</strong> and long
-            <strong>&ucirc;</strong>
+            <strong><span class="when-parks">uu</span><span class="when-learner">&ucirc;</span></strong>
             are written as "oo" &mdash; English doesn't have a standard way to
             show this difference. To tell them apart, check the spelling:
-            
-            <strong>u</strong> = short, <strong>&ucirc;</strong> (circumflex) = long (held longer).
-            
+            <span class="when-parks"><strong>u</strong> = short, <strong>uu</strong> = long (held longer).</span><span class="when-learner"><strong>u</strong> = short, <strong>&ucirc;</strong> (circumflex) = long (held longer).</span>
             For example: <span class="ipa" lang="x-paw">pitku</span> has short u,
-            while <span class="ipa" lang="x-paw">ar&ucirc;sa</span>
-            (horse) has long &ucirc;.
+            while <span class="ipa" lang="x-paw"><span class="when-parks">aruusa</span><span class="when-learner">ar&ucirc;sa</span></span>
+            (horse) has long <span class="when-parks">uu</span><span class="when-learner">&ucirc;</span>.
         </p>
     </details>
 
@@ -475,8 +579,8 @@
             (e.g., <span class="ipa" lang="x-paw">taraha</span>)
         </li>
         <li>
-            <strong>Simplified</strong> &mdash; a learner-friendly respelling
-            with circumflex long vowels
+            <strong>Learner spelling</strong> &mdash; a learner-friendly respelling
+            with circumflex long vowels, which the switch at the top of the page puts first
             (e.g., <span lang="x-paw">taraha</span> &mdash; same here since
             no long vowels)
         </li>
@@ -486,11 +590,10 @@
         </li>
     </ol>
     <p>
-        
-        The simplified spelling uses <strong>&acirc;</strong> for long a,
+        <span class="when-parks">The Parks spelling uses <strong>doubled vowels</strong> (aa, ii, uu)
+        for length and <strong>&#x0294;</strong> for the glottal stop.</span><span class="when-learner">The learner spelling uses <strong>&acirc;</strong> for long a,
         <strong>&icirc;</strong> for long i, <strong>&ucirc;</strong> for long u,
-        and <strong>'</strong> for the glottal stop.
-        
+        and <strong>'</strong> for the glottal stop.</span>
         When in doubt, the IPA form is the most precise guide.
     </p>
 
@@ -502,14 +605,42 @@
         <thead>
             <tr>
                 
-                <th>Simplified</th>
-                <th>Parks</th>
+                <th class="when-parks">Parks</th>
+                <th class="when-parks">Learner</th>
+                <th class="when-learner">Learner</th>
+                <th class="when-learner">Parks</th>
                 
                 <th>Meaning</th>
             </tr>
         </thead>
-        <tbody>
-            
+        <tbody class="when-parks">
+            <tr>
+                <td class="ipa guide-primary-col" lang="x-paw">taraha&#x0294;</td>
+                <td class="guide-secondary-col" lang="x-paw">taraha'</td>
+                <td>buffalo</td>
+            </tr>
+            <tr>
+                <td class="ipa guide-primary-col" lang="x-paw">piita</td>
+                <td class="guide-secondary-col" lang="x-paw">p&icirc;ta</td>
+                <td>man</td>
+            </tr>
+            <tr>
+                <td class="ipa guide-primary-col" lang="x-paw">capaat</td>
+                <td class="guide-secondary-col" lang="x-paw">&#x010D;ap&acirc;t</td>
+                <td>woman</td>
+            </tr>
+            <tr>
+                <td class="ipa guide-primary-col" lang="x-paw">aruusa&#x0294;</td>
+                <td class="guide-secondary-col" lang="x-paw">ar&ucirc;sa'</td>
+                <td>horse</td>
+            </tr>
+            <tr>
+                <td class="ipa guide-primary-col" lang="x-paw">kaaka&#x0294;</td>
+                <td class="guide-secondary-col" lang="x-paw">k&acirc;ka'</td>
+                <td>crow</td>
+            </tr>
+            </tbody>
+        <tbody class="when-learner">
             <tr>
                 <td class="guide-primary-col" lang="x-paw">taraha'</td>
                 <td class="ipa guide-secondary-col" lang="x-paw">taraha&#x0294;</td>
