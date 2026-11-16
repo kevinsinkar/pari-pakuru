@@ -415,6 +415,70 @@ def topics_data(conn: sqlite3.Connection) -> list:
 BLUE_BOOK_PAGE_OFFSET = 28
 PHRASES_FILE = PROJECT_ROOT / "curriculum" / "everyday_phrases.json"
 DIALECT_NAMES = {"SK": "Skiri", "SB": "South Band"}       # the book writes (SK) and (SB) after a form
+DIALECT_FILE = EXTRACTED / "blue_book_dialect_statements.json"
+SOURCES_FILE = PROJECT_ROOT / "sources" / "catalogue.json"
+
+
+def south_band_spelling(form: str | None) -> list:
+    """Why a printed Blue Book form is written the South Band way, by the book's own alphabet chapter:
+    ["e"], ["hr"], both, or [] (extracted_data/blue_book_dialect_statements.json has the statements).
+
+    It looks at the printed letters and nothing else. It does not say how a Skiri speaker says the word, and no
+    form is made from it."""
+    plain = _plain(form or "").lower()
+    return [mark for mark in ("e", "hr") if mark in plain]
+
+
+def _sb_spelling_mark(text: str | None) -> bool:
+    """A line gets the mark "SB spelling" when it is written with e or hr and the book puts no mark of its own on it."""
+    text = text or ""
+    return bool(south_band_spelling(text)) and "(SK)" not in text and "(SB)" not in text
+
+
+def dialect_statements() -> dict:
+    """What Pari Pakuru' says of its two dialects, as read from the scan."""
+    return json.loads(DIALECT_FILE.read_text(encoding="utf-8"))
+
+
+def dialect_labels(conn: sqlite3.Connection) -> dict:
+    """Blue Book row id or Blue Book-only entry id -> {"label", "basis", "skiri_entry_id"}, from the table
+    bb_dialect_labels (scripts/label_bluebook_dialect.py). {} if the table has not been made."""
+    try:
+        rows = conn.execute("SELECT attestation_id, entry_id, label, basis, skiri_entry_id FROM bb_dialect_labels").fetchall()
+    except sqlite3.OperationalError:
+        return {}
+    return {(r[0] if r[0] is not None else r[1]): {"label": r[2], "basis": r[3], "skiri_entry_id": r[4]} for r in rows}
+
+
+# The page "Learn with others": the sections, and what stands over each.
+SOURCE_SECTIONS = [
+    ("nation", "Learn with the Pawnee Nation",
+     "The language is the Pawnee people's, and the Nation teaches it. Begin there, and trust what you learn there before this site."),
+    ("hear", "Hear the language", "This site cannot let you hear a word. These can."),
+    ("read", "Read", "From the Pawnee Nation's own language project."),
+]
+
+
+def sources_data() -> list:
+    """The sources the page "Learn with others" lists, by section (sources/catalogue.json).
+
+    Only records the register marks for learners are returned; a record marked as ceremonial never is. The
+    sentence shown for a source is the project's, written from what the source's page was seen to say; the
+    catalogue's own credibility scores are not shown."""
+    data = json.loads(SOURCES_FILE.read_text(encoding="utf-8"))
+    sections = []
+    for key, label, about in SOURCE_SECTIONS:
+        items = []
+        for r in data["records"]:
+            p = r["project"]
+            if p.get("section") != key or p.get("sensitive") or not p.get("link"):
+                continue
+            dialect = r.get("dialect") or ""
+            items.append({"key": r["key"], "title": p.get("title") or r["title"], "says": p.get("says") or "",
+                          "url": p.get("url") or r["url"], "dialect": "" if dialect.lower().startswith("not ") else dialect,
+                          "access": r.get("access") or "", "seen": (p.get("checked") or {}).get("on") or ""})
+        sections.append({"key": key, "label": label, "about": about, "items": items})
+    return sections
 
 
 def _stands(text: str, piece: str) -> bool:
@@ -492,7 +556,9 @@ def phrases_data(conn: sqlite3.Connection) -> dict:
     rows, last = [], None
     for p in data["phrases"]:
         form = {"skiri": p["skiri"], "dialect": p.get("dialect") or "", "dialect_name": DIALECT_NAMES.get(p.get("dialect"), ""),
-                "after_or": bool(p.get("printed_after_or"))}
+                "after_or": bool(p.get("printed_after_or")),
+                # no mark of the book's own, and written with e or hr: the South Band spelling by the book's rule
+                "sb_spelling": not p.get("dialect") and bool(south_band_spelling(p["skiri"]))}
         same_item = (last is not None and last["lesson"] == p["lesson"] and p.get("number") is not None
                      and last["number"] == p.get("number")
                      and (not p.get("english") or p["english"] == last["printings"][0]["english"]))
@@ -534,6 +600,9 @@ def phrases_data(conn: sqlite3.Connection) -> dict:
             row["glosses"] = glosses
         situations.append({"key": s["key"], "label": s["label"], "about": s["about"], "rows": merged})
 
+    for conv in data["conversations"]:
+        for line in conv["lines"]:
+            line["sb_spelling"] = _sb_spelling_mark(line["skiri"])
     return {
         "by_lesson": by_lesson,
         "situations": situations,
@@ -562,13 +631,22 @@ def lesson_context(conn: sqlite3.Connection, number: int) -> dict | None:
         LEFT JOIN lexical_entries le ON le.entry_id = a.entry_id
         WHERE a.lesson_number = ? AND a.context_type IN ('BASIC_WORDS', 'ADDITIONAL_WORDS')
         ORDER BY a.context_type, a.id""", (number,))]
+    labels = dialect_labels(conn)
+    blue_book_only = {r[0] for r in cur.execute("SELECT entry_id FROM lexical_entries WHERE source = 'blue_book'")}
     for v in vocab:
         v["form_of_stem"] = bool(v["entry_id"]) and v["match_type"] == "stem"
         v["entry_sound"] = bool(v["entry_id"]) and not v["form_of_stem"]
+        # the dialect the book's own marks or spelling show for the word (scripts/label_bluebook_dialect.py)
+        v["dialect"] = labels.get(v["id"])
+        # a Skiri dictionary entry can be heard at Indiana University; an entry made from the textbook's word cannot
+        v["hear"] = bool(v["entry_id"]) and v["entry_id"] not in blue_book_only and not v["form_of_stem"]
     phrases = phrases_data(conn)
     rows = phrases["by_lesson"].get(number, [])
     dialogues = json.loads(row["dialogues"] or "[]")
     notes = json.loads(row["grammar_notes"] or "[]")
+    for d in dialogues:
+        for ln in d.get("lines", []):
+            ln["sb_spelling"] = _sb_spelling_mark(ln.get("skiri"))
     text = " ".join([ln.get("skiri") or "" for d in dialogues for ln in d.get("lines", [])] + [n.get("text") or "" for n in notes])
     lesson = {
         "number": row["lesson_number"],
@@ -582,6 +660,7 @@ def lesson_context(conn: sqlite3.Connection, number: int) -> dict | None:
         "grammar_notes": notes,
         "templates": json.loads(row["template_ids"] or "[]"),
         "has_gap": "[" in text,          # letters under a flaw in the scan stand in square brackets
+        "title_sb_spelling": _sb_spelling_mark(row["skiri_title"]),
     }
     return {
         "lesson": lesson,
@@ -594,6 +673,8 @@ def lesson_context(conn: sqlite3.Connection, number: int) -> dict | None:
                          for r in rows if len(r["forms"]) == 1 and r["printings"][0]["english"]],
         "conversations": [c for c in phrases["conversations"] if c["lesson"] == number],
         "conversation_note": (phrases["notes"].get("the two conversations") or {}).get("text", "") if number == 20 else "",
+        # what the book says of its two dialects, for the line every lesson page carries
+        "dialect_statements": dialect_statements()["statements"],
     }
 
 

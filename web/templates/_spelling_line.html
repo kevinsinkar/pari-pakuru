@@ -1,20 +1,23 @@
 {# One visible line on which spelling to learn to write (2026-11-15). Set `spelling_for` before the include:
    'lesson' (a lesson page), 'cards' (the flashcard pages) or 'phrases' (the phrases page).
-   The learner spelling is the first spelling everywhere on the site. That it is the one to write is the project
-   owner's report of what Pawnee people write today; the site has not been reviewed by the Pawnee Nation, so the
-   line ends by sending the learner to a teacher. #}
+   The learner spelling is the first spelling everywhere on the site. That it is the one to write rests on the
+   Pawnee Nation's own Lesson 1, whose alphabet it is (â ê î û; č "catch", c "cats"; ’): read on 2026-11-15, see
+   sources/catalogue.json under nation_lessons; and on the owner's report of what Pawnee people write today. The
+   site has not been reviewed by the Pawnee Nation, so the line ends by sending the learner to a teacher. #}
 <p class="spelling-line">
   <strong>Which spelling do I learn to write?</strong>
   {% if spelling_for == 'lesson' %}
-  The one under <em>In the dictionary</em>: the learner spelling, with <span lang="x-paw">â î û</span> for long vowels,
+  The one under <em>In the Skiri dictionary</em>: the learner spelling, with <span lang="x-paw">â î û</span> for long vowels,
   <span lang="x-paw">'</span> for the catch in the throat, <span lang="x-paw">c</span> for “ts” and
-  <span lang="x-paw">č</span> for “ch”. The <em>Blue Book</em> column is how the 1979 textbook spells the same word,
+  <span lang="x-paw">č</span> for “ch”. It is the spelling of the Pawnee Nation's own lesson handouts
+  (<a href="/resources">where to find them</a>). The <em>Blue Book</em> column is how the 1979 textbook spells the same word,
   and <em>Say it</em> is a rough guide for English speakers, not a spelling.
   Dialogues and phrases are printed only in the textbook's spelling, so they stay in it here.
   {% elif spelling_for == 'cards' %}
   The large word on the card: the learner spelling, with <span lang="x-paw">â î û</span> for long vowels,
   <span lang="x-paw">'</span> for the catch in the throat, <span lang="x-paw">c</span> for “ts” and
-  <span lang="x-paw">č</span> for “ch”. A smaller word under it is the same word in the dictionary's letters, and the
+  <span lang="x-paw">č</span> for “ch”, which is the spelling of the Pawnee Nation's own lesson handouts.
+  A smaller word under it is the same word in the dictionary's letters, and the
   line in capitals and hyphens is a rough guide for English speakers, not a spelling.
   A card whose back names the textbook and no dictionary page is a word found only in the 1979 textbook: it is written
   as the textbook spells it, in the dictionary's letters (<span lang="x-paw">ʔ</span> for <span lang="x-paw">'</span>).

@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% set active_page = 'words' %}
+
+{% block title %}Word web{% endblock %}
+
+{% block content %}
+{# The word web: the word-building data as a picture (web/static/js/wordweb.js). A box is an entry, an oval is a
+   piece of its printed derivation, a line says the dictionary prints that piece in that word. The page arranges
+   printed forms and adds none; it does not say what a piece means. Same data as /words (web/learning.py). #}
+<article class="learn-page learn-page--wide">
+  <p class="learn-kicker"><a href="/words">Word building</a></p>
+  <h2>Word web: how words share their pieces</h2>
+  <p class="learn-lead">
+    Many Skiri words are built from smaller pieces, and the dictionary prints the pieces.
+    Here each word is a box, joined to the pieces of its own derivation. Words that share a piece
+    gather round it, so one piece you know leads you into a whole family of words.
+  </p>
+
+  <section class="ww" id="web">
+    <form id="ww-form" class="wb-form">
+      <input type="search" id="ww-q" autocomplete="off" spellcheck="false"
+             placeholder="An English word (bear, black) or a piece (kuruks, kaatiit)"
+             aria-label="An English word or a piece">
+      <div class="key-row" aria-label="Letters that are not on a keyboard">
+        <button type="button" class="key-btn" data-insert="ʔ" title="glottal stop">ʔ</button>
+        <button type="button" class="key-btn" data-insert="Ø" title="zero stem">Ø</button>
+      </div>
+    </form>
+    <div class="ww-starts" aria-label="English words to start from">
+      <span class="section-label">Start from an English word</span>
+      {# words looked up in the meanings; each was tried and gives a picture with one clear family in it #}
+      {% for word in ['bear', 'black', 'white', 'red', 'yellow', 'horse', 'bird', 'snake', 'hand', 'foot', 'bone', 'water', 'wood', 'night', 'big'] %}
+      <a class="ww-start" href="?q={{ word }}">{{ word }}</a>
+      {% endfor %}
+    </div>
+
+    <p id="ww-summary" class="ww-summary" aria-live="polite">Loading the dictionary's derivations…</p>
+
+    <div class="ww-stage">
+      <svg id="ww-svg" class="ww-svg" data-start="bear" role="group"
+           aria-label="Words as boxes, joined by lines to the pieces printed in their derivations"></svg>
+      <div class="ww-tools">
+        <button type="button" class="ww-tool" id="ww-in" title="Closer" aria-label="Closer">+</button>
+        <button type="button" class="ww-tool" id="ww-out" title="Further away" aria-label="Further away">−</button>
+        <button type="button" class="ww-tool ww-tool--text" id="ww-fit">Whole picture</button>
+      </div>
+    </div>
+    <ul class="ww-legend">
+      <li><span class="ww-key ww-key--word"></span> a word, with the dictionary's meaning</li>
+      <li><span class="ww-key ww-key--piece"></span> a piece of a derivation, with the number of words it is printed in</li>
+      <li><span class="ww-key ww-key--more">+</span> more of its words can be brought in: choose the oval</li>
+      <li>Drag a shape to move it, or the background to move the picture.</li>
+    </ul>
+
+    <div id="ww-panel" class="ww-panel" aria-live="polite"></div>
+  </section>
+
+  <section class="honest-note">
+    <h3>What this picture is, and is not</h3>
+    <p>
+      Every word, meaning and piece here is printed in the dictionary. A line says one thing only: the
+      dictionary prints this piece in the derivation of this word. The page cuts a derivation at its plus
+      signs and draws the result; it adds no analysis of its own, and where a shape sits means nothing.
+    </p>
+    <p>
+      An oval gathers the words in which the piece is printed <em>with the same letters</em>. The same letters
+      are not always the same piece: the dictionary has two entries spelled <span lang="x-paw">kuruks</span>,
+      one “bear” and one “boil, carbuncle”, and short pieces such as <span lang="x-paw">a</span>,
+      <span lang="x-paw">ra</span> and <span lang="x-paw">at</span> are printed in a great many words.
+      Pieces printed with different letters are kept apart, even where their words mean alike:
+      <span lang="x-paw">kaatiit</span> and <span lang="x-paw">katiit</span> each stand in words for black things.
+      The page does not say what a piece means. Read the words round it, and the literal translations under
+      the picture, as you would in the <a href="/words#explorer">list of words that share a piece</a>.
+    </p>
+    <p>
+      Words to do with ceremony are left out until the Pawnee community has reviewed them.
+      No speaker of Pawnee has reviewed this page.
+    </p>
+  </section>
+</article>
+{% endblock %}
+
+{% block scripts %}
+<script src="/static/js/wordweb.js"></script>
+{% endblock %}

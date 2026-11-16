@@ -1,0 +1,33 @@
+{# One visible line on the two dialects, for every page that shows the textbook's Pawnee (2026-11-15).
+   Set `dialect_for` before the include: 'lesson', 'phrases' or 'cards'. `dialect_statements` (optional) is the list
+   of what the book itself says, read from the scan (extracted_data/blue_book_dialect_statements.json).
+   The marks SK and SB are the book's own; "SB spelling" is put on a line written with e or hr, by the book's own
+   rule (web/learning.py: south_band_spelling). No Skiri form is worked out from a South Band one. #}
+<p class="spelling-line dialect-line">
+  <strong>Skiri or South Band?</strong>
+  {% if dialect_for == 'cards' %}
+  The dictionary's words are Skiri. A card whose back names the textbook is spelled the textbook's way, and the
+  textbook's spelling follows South Band speakers: where it writes <em>e</em>, a Skiri speaker says <em>i</em>.
+  {% else %}
+  The textbook writes for both dialects of Pawnee. Its spelling and its accent marks follow South Band speakers, and it
+  marks a form <abbr class="dialect" title="Skiri form (the book writes Skidi)">SK</abbr> or
+  <abbr class="dialect" title="South Band form">SB</abbr> where the two differ.
+  A line marked <abbr class="dialect dialect--spelling" title="Written with e or hr">SB spelling</abbr> here is written
+  with <em>e</em> or <em>hr</em>: the book says a Skiri speaker says <em>i</em> for that <em>e</em>, and <em>h</em> for
+  <em>hr</em>. This page does not respell such a line.
+  {% if dialect_for == 'lesson' %}The dictionary on this site is Skiri: where a word is tied to an entry, the entry is the Skiri word.{% endif %}
+  {% endif %}
+</p>
+{% if dialect_statements and dialect_for != 'cards' %}
+<details class="lesson-note dialect-says">
+  <summary><strong>What the textbook says about the two dialects</strong></summary>
+  <ul>
+    {% for s in dialect_statements %}
+    <li>{% if s.forms and not s.text.endswith('.') %}<span lang="x-paw" class="font-serif">{{ s.text }}</span>{% else %}“{{ s.text }}”{% endif %}
+        <small>({{ 'p. ' ~ s.book_page if s.book_page != 'contents' else 'contents page' }}: {{ s.about }})</small></li>
+    {% endfor %}
+  </ul>
+  <p>The Pawnee Nation's own first lesson says the same of the vowels: “Vowels (South Band or SB: 8 &amp; Skiri: 6)”,
+     and that <em>e</em> and <em>ee</em> are South Band sounds. <a href="/resources">Where to find that lesson</a>.</p>
+</details>
+{% endif %}

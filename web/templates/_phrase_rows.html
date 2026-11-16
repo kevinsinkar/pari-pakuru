@@ -15,7 +15,7 @@
   <li class="phrase">
     <span class="phrase-forms cover-paw">
       {% for f in row.forms %}
-      <span class="phrase-form">{% if f.after_or %}<span class="phrase-or">or</span> {% endif %}<span lang="x-paw" class="font-serif">{{ f.skiri }}</span>{% if f.dialect %} <abbr class="dialect" title="{{ f.dialect_name }} form">{{ f.dialect }}</abbr>{% endif %}</span>
+      <span class="phrase-form">{% if f.after_or %}<span class="phrase-or">or</span> {% endif %}<span lang="x-paw" class="font-serif">{{ f.skiri }}</span>{% if f.dialect %} <abbr class="dialect" title="{{ f.dialect_name }} form">{{ f.dialect }}</abbr>{% elif f.sb_spelling %} <abbr class="dialect dialect--spelling" title="Written with e or hr: the textbook's spelling follows South Band speakers">SB spelling</abbr>{% endif %}</span>
       {% endfor %}
     </span>
     <span class="phrase-glosses">
@@ -39,7 +39,8 @@
   {% for line in conv.lines %}
   <div class="lesson-dialogue__line lesson-dialogue__line--spoken">
     <span class="lesson-dialogue__who">{{ line.who }}</span>
-    <span class="lesson-dialogue__skiri font-serif cover-paw" lang="x-paw">{{ line.skiri }}</span>
+    <span class="lesson-dialogue__skiri cover-paw"><span class="font-serif" lang="x-paw">{{ line.skiri }}</span>{% if line.sb_spelling %}
+      <abbr class="dialect dialect--spelling" title="Written with e or hr: the textbook's spelling follows South Band speakers">SB spelling</abbr>{% endif %}</span>
     <span class="lesson-dialogue__eng cover-eng">{{ line.english }}</span>
   </div>
   {% endfor %}

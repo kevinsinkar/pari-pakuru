@@ -11,6 +11,8 @@
 
 {% set spelling_for = 'cards' %}
 {% include "_spelling_line.html" %}
+{% set dialect_for = 'cards' %}
+{% include "_dialect_line.html" %}
 
 <div class="fc-progress">
     <span id="fc-progress-text">Card 1 of {{ fset.card_count }}</span>
@@ -59,7 +61,11 @@
                 {% elif card.page_number %}
                 <div class="fc-back-citation">Parks Dictionary, p. {{ card.page_number }}</div>
                 {% endif %}
-                <a href="/entry/{{ card.entry_id }}" class="fc-back-link">View full entry</a>
+                <a href="/entry/{{ card.entry_id }}" class="fc-back-link" onclick="event.stopPropagation()">View full entry</a>
+                {% if card.source != 'blue_book' %}
+                <a class="fc-back-link hear-link" data-hear="{{ card.headword|e }}" href="https://aisri-language-database.webapps.iu.edu/dictsearch/"
+                   target="_blank" rel="noopener" onclick="event.stopPropagation()">Hear it at Indiana University</a>
+                {% endif %}
             </div>
         </div>
     </div>

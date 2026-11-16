@@ -2,7 +2,8 @@
 // with a stand-in for the browser page, then checks the learning pages and their data files: that every
 // piece shown for a word stands in the derivation the dictionary prints, that the seven verbs agree with
 // their dictionary entries, that nothing held for community review is in the files, and that every link
-// between the pages leads to a file. Needs Node.js; nothing else.
+// between the pages leads to a file. It also reads sources/catalogue.json: the page "Learn with others" may
+// list only what the register marks for learners. Needs Node.js; nothing else.
 //     node scripts/check_static_site.js          (after scripts/build_static_site.py)
 // Exit code 0 when every check passes.
 const fs = require('fs');
@@ -132,8 +133,8 @@ vm.runInContext(fs.readFileSync(path.join(docs, 'static', 'js', 'search.js'), 'u
   const stemRow = row(l9, "ti•'at");
   check("lesson 9: ti•'at links to its verb and shows no pronunciation of the stem",
     stemRow.includes('a form of') && stemRow.includes('index.html?id=') && !/uht/.test(stemRow) && !stemRow.includes('ət'));
-  check('lesson pages: the pronunciation columns stand under "In the dictionary", and the line on spelling is in view',
-    l9.includes('In the dictionary') && l9.includes('class="spelling-line"') && !l9.includes('not in Parks dictionary'));
+  check('lesson pages: the pronunciation columns stand under "In the Skiri dictionary", and the line on spelling is in view',
+    l9.includes('In the Skiri dictionary') && l9.includes('class="spelling-line"') && !l9.includes('not in Parks dictionary'));
   check('lesson pages cite the pages printed in the book (lesson 1: pp. 1–5)', /pp\. 1–5</.test(page('lesson-1.html')));
   const l1 = page('lesson-1.html');
   check('lesson pages: the basic words stand before the dialogues, as in the book; one side can be covered',
@@ -142,7 +143,7 @@ vm.runInContext(fs.readFileSync(path.join(docs, 'static', 'js', 'search.js'), 'u
   const l18 = text(page('lesson-18.html'));
   const l10 = text(row(page('lesson-10.html'), "asku•ra•wákahu'"));
   check('lessons 10 and 18: a word has the English of its own row of the page',
-    /Sutsiks•áhut\. Hold this\./.test(l18) && /Kesku•rahúrihu'\. Forgive me\./.test(l18) && !/Sutsiks•áhut\. Who's been busy/.test(l18) &&
+    /Sutsiks•áhut\. Hold this\./.test(l18) && /Kesku•rahúrihu'\. (SB spelling )?Forgive me\./.test(l18) && !/Sutsiks•áhut\. Who's been busy/.test(l18) &&
     l10.includes('judge') && !l10.includes('police'));
   const killing = byId.get('BB-tikuwtitiku-0083');
   check('the entry made from a mis-paired row has its own meaning', Boolean(killing) && killing.glosses[0].definition === 'he is killing it');
@@ -187,10 +188,92 @@ vm.runInContext(fs.readFileSync(path.join(docs, 'static', 'js', 'search.js'), 'u
     page('practice.html').includes('id="pr-today"') && prJs.includes("box.answer(id, wasRight)") && prJs.includes('value="today"') &&
     page('flashcard-1.html').includes('Skiri.box.answer(eid') && page('flashcard-1.html').includes('class="spelling-line"'));
 
+  // ---- the register of sources, the two dialects, hearing a word (2026-11-15, second part)
+  const register = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'sources', 'catalogue.json'), 'utf8')).records;
+  const listed = register.filter(r => r.project.section);
+  const res = page('resources.html');
+  const shown = Array.from(res.matchAll(/class="source-name" href="([^"]*)"/g)).map(m => m[1].replace(/&amp;/g, '&'));
+  const allowed = new Set(listed.filter(r => !r.project.sensitive && r.project.link).map(r => r.project.url || r.url));
+  check(`learn with others: ${shown.length} sources, each one the register marks for learners; none of the ${register.filter(r => r.project.sensitive).length} held as ceremonial`,
+    shown.length === listed.length && shown.length >= 6 && shown.every(u => allowed.has(u)) &&
+    !register.some(r => r.project.sensitive && shown.includes(r.project.url || r.url)));
+  const everyPage = fs.readdirSync(docs).filter(f => f.endsWith('.html')).map(f => page(f));
+  const address = /[\w.+-]+@[\w-]+(?:\.[\w-]+)*\.[A-Za-z]{2,}/;
+  check('no e-mail address on any page, and every page points to "Learn with others"',
+    !everyPage.some(h => address.test(h.replace(/<link[^>]*>|<script[^>]*>/g, ''))) && everyPage.every(h => h.includes('href="resources.html"')));
+
+  const marks = h => Array.from(h.matchAll(/<abbr class="dialect( dialect--spelling)?" title="([^"]*)">([^<]*)<\/abbr>/g));
+  const l1marks = marks(l1);
+  const allMarks = [];
+  for (let n = 1; n <= 20; n++) marks(page('lesson-' + n + '.html')).forEach(m => allMarks.push(m));
+  check(`dialect: the lesson pages say what the textbook says of its dialects, and every mark carries its reason (${allMarks.length} marks)`,
+    l1.includes('Skiri or South Band?') && l1.includes('The accent marked in this book is that of some South Band speakers') &&
+    /Kiriké ru&#39;\?|Kiriké ru'\?/.test(l1) && l1marks.some(m => m[3] === 'SB spelling') &&
+    allMarks.length > 150 && allMarks.every(m => m[2].length >= 8 && ['SK', 'SB', 'SB spelling'].includes(m[3])));
+  check('dialect: the book\'s own marks are on the page (lesson 2: rutki SB, rutpátsat SK), and a Skiri-marked form is not called South Band',
+    /rutki<\/span>\s*<abbr class="dialect" title="[^"]*">SB</.test(page('lesson-2.html')) &&
+    /rutpátsat<\/span>\s*<abbr class="dialect" title="[^"]*">SK</.test(page('lesson-2.html')));
+
+  const hear = vm.runInContext('Skiri.hearUrls', sandbox);
+  const sun = hear('sakuuruʔ', 'sun.');
+  const iik = 'https://aisri-language-database.webapps.iu.edu/dictsearch/';
+  check('hear it: a word links to its search in Indiana University\'s Skiri dictionary, in plain letters',
+    sun.word.startsWith(iik) && sun.word.includes('database=skiri') && sun.word.includes('srchlang=Indian') && sun.word.includes('srchstring=sakuuru&') &&
+    sun.english.includes('srchstring=sun&') && data.every(e => hear(e.headword, '').word.startsWith(iik)));
+  run('sakuuruʔ', 'skiri');
+  const withLink = html.includes('Hear it at Indiana University') && html.includes('srchstring=sakuuru&amp;');
+  const bookOnly = data.find(e => e.source === 'blue_book');
+  vm.runInContext(`showEntry(${JSON.stringify(bookOnly.entry_id)}); 0`, sandbox);
+  check('hear it: on a dictionary entry, and not on a word found only in the textbook', withLink && !html.includes('Hear it at Indiana University'));
+
+  // ---- the word web: the word-building data as a picture (2026-11-15). Its model runs here without a page.
+  const webBox = { console, document: { addEventListener() {}, getElementById: () => null } };
+  vm.createContext(webBox);
+  vm.runInContext(page('static/js/wordweb.js'), webBox);
+  const WW = vm.runInContext('WordWeb', webBox);
+  const pic = WW.createPicture(wb, WW.makeIndex(wb));
+  const printedIn = key => wb.entries.filter(e => e.k.includes(key)).length;
+  // a line only where the dictionary prints the piece in the word; every piece of a drawn word drawn; the count the dictionary's
+  const honest = () => pic.links.length > 0 && pic.links.every(l => l.word.entry.k.includes(l.piece.key)) &&
+    Array.from(pic.words.values()).every(w => new Set(w.entry.k).size === w.deg && !heldIds.has(w.entry.id)) &&
+    Array.from(pic.pieces.values()).every(q => q.total === printedIn(q.key));
+  const drawnWords = () => Array.from(pic.words.values()).map(w => w.entry.w);
+  const bear = pic.startEnglish('bear');
+  const bearWords = drawnWords();
+  check(`word web: "bear" draws the ${bearWords.length} words with that word in the meaning or the literal translation, each joined to its printed pieces`,
+    Boolean(bear) && honest() && ['kurukskaatiit', 'kurukstaakaa', 'kurukspahat'].every(w => bearWords.includes(w)) &&
+    Array.from(pic.words.values()).every(w => /\bbears?\b/.test((w.entry.g + ' ' + (w.entry.lit || '')).toLowerCase())) &&
+    !bearWords.includes('haakararuus') && bear.best === 'kuruks' && pic.pieces.get('kuruks').deg === bear.bestCount);
+  const before = pic.words.size;
+  const came = pic.expand('kaatiit');
+  check(`word web: choosing an oval brings in words in which that piece is printed, and no others (${came} came for kaatiit)`,
+    came > 0 && pic.words.size === before + came && honest() &&
+    pic.links.filter(l => l.piece.key === 'kaatiit').length === pic.pieces.get('kaatiit').deg &&
+    pic.hidden('kaatiit') === printedIn('kaatiit') - pic.pieces.get('kaatiit').deg);
+  const places = () => { WW.sizes(pic); WW.settle(pic, 320, 1); return JSON.stringify(pic.nodes.map(n => [n.id, Math.round(n.x), Math.round(n.y)])); };
+  pic.startEnglish('black');
+  const once = places(), clear = WW.overlaps(pic);
+  pic.startEnglish('black');
+  check(`word web: no shape lies on another, and the same start gives the same picture (${pic.nodes.length} shapes for "black")`,
+    honest() && clear === 0 && places() === once);
+  const byPiece = pic.startPiece('kuruks'), pieceOk = Boolean(byPiece) && honest() && pic.words.size === printedIn('kuruks');
+  const byWord = pic.startWord(wb.entries.findIndex(e => e.w === 'kurukskaatiit'));
+  check('word web: a picture can start from a piece or from a word; a piece that is not printed gives none',
+    pieceOk && Boolean(byWord) && honest() && drawnWords().includes('kurukstaakaa') && pic.startPiece('nosuchpiece') === null);
+  // what stands in a box is the printed headword and meaning, whole or cut short with a mark, never changed
+  const cut = (label, full) => label === full || (label.endsWith('…') && full.startsWith(label.slice(0, -1)));
+  check('word web: a box shows the printed headword and meaning, whole or cut short with a mark',
+    wb.entries.every(e => cut(WW.wordLabel(e), e.w) && cut(WW.glossLabel(e), e.g.split(' (')[0].replace(/[.;,:\s]+$/, ''))));
+  const webPage = page('wordweb.html');
+  check('word web: the page is there, says what a line means and what the page does not say, and the word-building page leads to it',
+    webPage.includes('id="ww-svg"') && webPage.includes('static/js/wordweb.js') && webPage.includes('does not say what a piece') &&
+    webPage.includes('are not always the same piece') && webPage.includes('href="words.html') &&
+    page('words.html').includes('href="wordweb.html"') && page('static/js/words.js').includes('wordweb.html?piece='));
+
   // every page is there, has no link left over from the local app, and links only to files that exist
   const pages = fs.readdirSync(docs).filter(f => f.endsWith('.html'));
-  const wanted = ['index', 'learn', 'guide', 'words', 'verbs', 'practice', 'topics', 'lessons', 'phrases', 'flashcards', 'about'];
-  check('the eleven main pages are built', wanted.every(p => pages.includes(p + '.html')));
+  const wanted = ['index', 'learn', 'guide', 'words', 'wordweb', 'verbs', 'practice', 'topics', 'lessons', 'phrases', 'flashcards', 'resources', 'about'];
+  check('the thirteen main pages are built', wanted.every(p => pages.includes(p + '.html')));
   const broken = [];
   for (const page of pages) {
     const text = fs.readFileSync(path.join(docs, page), 'utf8');

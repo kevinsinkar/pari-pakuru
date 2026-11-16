@@ -51,6 +51,7 @@
     if (!entries.length) return false;
     out.innerHTML = `<h4 class="family-title"><span class="piece piece--on" lang="x-paw">${esc(key)}</span>
         is printed in ${entries.length} ${entries.length === 1 ? 'word' : 'words'}</h4>
+      <p class="result-usage"><a href="wordweb.html?piece=${encodeURIComponent(key)}">See them as a picture</a></p>
       ${spelledLike(key)}${list(entries, key, all)}`;
     const more = document.getElementById('wb-all');
     if (more) more.addEventListener('click', () => showPiece(key, true));
@@ -64,7 +65,9 @@
     const out = document.getElementById('wb-result');
     if (!entries.length) return false;
     out.innerHTML = `<h4 class="family-title">${entries.length} ${entries.length === 1 ? 'word' : 'words'} with
-        “${esc(text)}” in the meaning or the literal translation</h4>${list(entries, null, all)}`;
+        “${esc(text)}” in the meaning or the literal translation</h4>
+      <p class="result-usage"><a href="wordweb.html?q=${encodeURIComponent(text)}">See the words with “${esc(text)}” as a picture</a></p>
+      ${list(entries, null, all)}`;
     const more = document.getElementById('wb-all');
     if (more) more.addEventListener('click', () => showEnglish(text, true));
     return true;

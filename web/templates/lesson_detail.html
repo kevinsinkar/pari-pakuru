@@ -14,7 +14,8 @@
 {% import "_phrase_rows.html" as pr %}
 <hgroup>
   {% if lesson.skiri_title %}
-  <h2 class="font-serif" lang="x-paw">{{ lesson.skiri_title }}</h2>
+  <h2><span class="font-serif" lang="x-paw">{{ lesson.skiri_title }}</span>{% if lesson.title_sb_spelling %}
+    <abbr class="dialect dialect--spelling" title="Written with e or hr: the textbook's spelling follows South Band speakers">SB spelling</abbr>{% endif %}</h2>
   {% endif %}
   <h3>Lesson {{ lesson.number }}{% if lesson.english_title %} — {{ lesson.english_title }}{% endif %}</h3>
   {# the numbers printed on the pages of the book (the scan has 28 pages before page 1) #}
@@ -44,20 +45,23 @@
   <thead>
     <tr>
       <th rowspan="2">Blue Book</th><th rowspan="2">English</th>
-      <th colspan="3" class="lesson-vocab__group">In the dictionary</th>
+      <th colspan="3" class="lesson-vocab__group">In the Skiri dictionary</th>
     </tr>
     <tr><th>Entry</th><th>Say it</th><th>Phonetic form</th></tr>
   </thead>
   <tbody>
   {% for v in items %}
   <tr>
-    <td lang="x-paw" class="font-serif">{{ v.bb_skiri_form }}</td>
+    <td><span lang="x-paw" class="font-serif">{{ v.bb_skiri_form }}</span>{% if v.dialect %}
+      <abbr class="dialect{{ ' dialect--spelling' if v.dialect.label == 'SB spelling' }}" title="{{ v.dialect.basis|e }}">{{ v.dialect.label }}</abbr>{% endif %}</td>
     <td>{{ v.bb_english or '' }}</td>
     <td>
       {% if v.entry_id %}
         {% if v.form_of_stem %}<small class="lesson-formof">a form of</small>{% endif %}
         <a href="/entry/{{ v.entry_id }}" lang="x-paw">{{ v.normalized_form or v.headword }}</a>
         {% if v.grammatical_class %}<span class="badge badge-class">{{ v.grammatical_class }}</span>{% endif %}
+        {% if v.hear %}<a class="hear-link hear-link--small" data-hear="{{ v.headword|e }}" href="https://aisri-language-database.webapps.iu.edu/dictsearch/"
+           target="_blank" rel="noopener" title="Opens a search for this word in Indiana University's Skiri dictionary; some entries there have a recording">hear</a>{% endif %}
       {% else %}
         <small class="lesson-nolink">no entry linked</small>
       {% endif %}
@@ -77,6 +81,8 @@
 
 {% set spelling_for = 'lesson' %}
 {% include "_spelling_line.html" %}
+{% set dialect_for = 'lesson' %}
+{% include "_dialect_line.html" %}
 
 {# Spelling bridge — the same word appears in up to four writing systems #}
 <details class="lesson-note spelling-bridge">
@@ -117,7 +123,8 @@
   <article class="lesson-dialogue">
     {% for line in d.lines %}
     <div class="lesson-dialogue__line">
-      <span class="lesson-dialogue__skiri font-serif cover-paw" lang="x-paw">{{ line.skiri }}</span>
+      <span class="lesson-dialogue__skiri cover-paw"><span class="font-serif" lang="x-paw">{{ line.skiri }}</span>{% if line.sb_spelling %}
+        <abbr class="dialect dialect--spelling" title="Written with e or hr: the textbook's spelling follows South Band speakers">SB spelling</abbr>{% endif %}</span>
       {% if line.english %}<span class="lesson-dialogue__eng cover-eng">{{ line.english }}</span>{% endif %}
     </div>
     {% endfor %}

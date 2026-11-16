@@ -14,6 +14,7 @@ import os
 import re
 import sys
 from datetime import date
+from urllib.parse import quote
 
 from flask import Flask, g, jsonify, redirect, render_template, request, abort, make_response
 from markupsafe import Markup
@@ -572,6 +573,12 @@ def word_building():
     return render_template("words.html")
 
 
+@app.route("/wordweb")
+def word_web():
+    """The word-building data as a picture: words joined to the pieces printed in their derivations."""
+    return render_template("wordweb.html")
+
+
 @app.route("/verbs")
 def verbs_page():
     return render_template("verbs.html")
@@ -586,6 +593,25 @@ def practice():
 def topics():
     # The published site filters its one dictionary file in the browser; here /browse does the same job.
     return redirect("/browse")
+
+
+@app.route("/<page>.html")
+def published_name(page):
+    """The scripts of the learning pages write their links the way the published site names its files
+    (words.html?piece=..., wordweb.html?q=..., index.html?id=...). Here those names lead to the same pages."""
+    query = request.query_string.decode("utf-8")
+    tail = ("?" + query) if query else ""
+    if page == "index":
+        if request.args.get("id"):
+            return redirect("/entry/" + quote(request.args["id"], safe=""))
+        return redirect(("/search" + tail) if request.args.get("q") else "/")
+    if page in ("learn", "words", "wordweb", "verbs", "practice", "phrases", "resources", "guide", "about",
+                "lessons", "flashcards", "topics"):
+        return redirect("/" + page + tail)
+    numbered = re.fullmatch(r"(lesson|flashcard)-(\d+)", page)
+    if numbered:
+        return redirect("/%ss/%s" % (numbered.group(1), numbered.group(2)))
+    abort(404)
 
 
 @app.route("/data/<name>.json")
@@ -839,6 +865,7 @@ def lesson_detail(number):
                            basic=ctx["basic"], additional=ctx["additional"],
                            phrases=ctx["phrases"], conversations=ctx["conversations"],
                            conversation_note=ctx["conversation_note"], practice=practice,
+                           dialect_statements=ctx["dialect_statements"],
                            exercises=exercises,
                            prev_n=prev_n, next_n=next_n)
 
@@ -848,7 +875,16 @@ def phrases_page():
     """The lessons' Useful Phrases gathered by situation (curriculum/everyday_phrases.json)."""
     from web import learning
 
-    return render_template("phrases.html", phrases=learning.phrases_data(get_db().conn))
+    return render_template("phrases.html", phrases=learning.phrases_data(get_db().conn),
+                           dialect_statements=learning.dialect_statements()["statements"])
+
+
+@app.route("/resources")
+def resources_page():
+    """Other places to learn: the part of the register of sources that is marked for learners (sources/catalogue.json)."""
+    from web import learning
+
+    return render_template("resources.html", sections=learning.sources_data())
 
 
 def _build_exercises(vocab, dialogues, phrases):

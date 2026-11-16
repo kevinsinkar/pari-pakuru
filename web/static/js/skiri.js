@@ -12,7 +12,10 @@
  *   - Skiri.box: which flashcard words are due again today (a Leitner box kept in
  *     the visitor's browser);
  *   - Skiri.coverTools: "cover the English" / "cover the Pawnee" on the lesson
- *     pages and the phrases page.
+ *     pages and the phrases page;
+ *   - Skiri.hearUrls: a link that opens Indiana University's online Skiri
+ *     dictionary at a word, where some entries have a recording. Nothing is
+ *     copied from there.
  */
 const Skiri = (() => {
   function esc(value) {
@@ -344,10 +347,53 @@ const Skiri = (() => {
       });
     });
   }
+  // ---------------------------------------------------------------- hearing a word somewhere else
+  // Indiana University's Institute for Indigenous Knowledge keeps the Skiri dictionary online, and many of its
+  // entries have a recording. This site stores no sound and copies none: it makes a link that opens that
+  // dictionary's own search at a word. Their search matches plain letters, so the glottal stop, the hyphens and
+  // the brackets of a headword are left out of the search text (the text is a search key, never shown as a form).
+  const IIK_SEARCH = 'https://aisri-language-database.webapps.iu.edu/dictsearch/lib/testengltoxsrchNP.php';
+  const IIK_PORTAL = 'https://aisri-language-database.webapps.iu.edu/dictsearch/';
+  const SMALL_WORDS = new Set(['the', 'and', 'your', 'his', 'her', 'its', 'one', 'ones', 'any', 'with', 'for', 'from', 'that', 'this',
+    'some', 'kind', 'type', 'used', 'when', 'who', 'what', 'are', 'was', 'has', 'have', 'not', 'into', 'being', 'someone', 'something']);
+
+  function iikSearch(text, language) {
+    const query = new URLSearchParams({ host: 'zia', pass: '', hasfont: '0', database: 'skiri', srchlang: language, srchtype: 'AND',
+      srchstring: text, sortlang: language, sndformat: 'mp3', maxhits: '20', find: 'Run_Search' });
+    return IIK_SEARCH + '?' + query.toString();
+  }
+
+  /**
+   * {word, english}: links that open the Skiri dictionary at Indiana University at a headword, or at its English.
+   * Their search finds a run of plain letters inside a word. A headword is cut at its glottal stops, hyphens and
+   * brackets, and the longest run of letters is searched for (tried on 2026-11-15: of ten words taken at random,
+   * the whole word without its glottal stops landed for four, the longest run for more). The result is a short
+   * list that has the word in it, when their dictionary has the word; the second link is for when it has not.
+   */
+  function hearUrls(headword, definition) {
+    const first = String(headword || '').split(/[,;]/)[0];
+    const runs = first.normalize('NFD').replace(/[\u0300-\u036f]/g, '').split(/[^A-Za-z]+/).filter(Boolean);
+    const key = runs.reduce((best, run) => (run.length > best.length ? run : best), '');
+    const words = (String(definition || '').toLowerCase().match(/[a-z]{3,}/g) || []).filter(w => !SMALL_WORDS.has(w));
+    return {
+      word: key.length >= 2 ? iikSearch(key, 'Indian') : IIK_PORTAL,
+      english: words.length ? iikSearch(words[0], 'English') : '',
+    };
+  }
+
+  /** Give every link written as <a data-hear="headword"> the address of that word's search. */
+  function hearLinks(root) {
+    const doc = root || document;
+    if (!doc.querySelectorAll) return;
+    doc.querySelectorAll('a[data-hear]').forEach(a => {
+      a.href = hearUrls(a.getAttribute('data-hear'), a.getAttribute('data-hear-en')).word;
+    });
+  }
+
   if (typeof document !== 'undefined' && document.addEventListener) {
-    document.addEventListener('DOMContentLoaded', () => coverTools());
+    document.addEventListener('DOMContentLoaded', () => { coverTools(); hearLinks(); });
   }
 
   return { esc, SOUNDS, parsePhonetic, soundItOut, pieceChips, literalHtml, buildBlock, entryLink, shuffle, store, load,
-    box, coverTools };
+    box, coverTools, hearUrls, hearLinks };
 })();

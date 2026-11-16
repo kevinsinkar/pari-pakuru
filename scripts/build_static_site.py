@@ -436,7 +436,7 @@ def _postprocess_for_static(html: str) -> str:
     html = re.sub(r'href="/"', 'href="index.html"', html)
 
     # The learning pages sit at the site root; a query string or an anchor is kept
-    html = re.sub(r'href="/(learn|words|verbs|practice|topics|phrases)((?:\?|#)[^"]*)?"',
+    html = re.sub(r'href="/(learn|words|wordweb|verbs|practice|topics|phrases|resources)((?:\?|#)[^"]*)?"',
                   lambda m: 'href="%s.html%s"' % (m.group(1), m.group(2) or ""), html)
 
     # A category link opens that topic's word list (topics.html). A tag that is not offered as a topic
@@ -519,11 +519,16 @@ def generate_static_pages(db_path: str, output_dir: Path) -> dict:
         # the learning pages; what they show is read in the browser from data/*.json
         ("learn.html", "learn.html", {}),
         ("words.html", "words.html", {}),
+        # the same data as a picture: words joined to the pieces printed in their derivations (wordweb.js)
+        ("wordweb.html", "wordweb.html", {}),
         ("verbs.html", "verbs.html", {}),
         ("practice.html", "practice.html", {}),
         ("topics.html", "topics.html", {"topics": learning.topics_data(db.conn)}),
         # the lessons' Useful Phrases by situation, written into the page (curriculum/everyday_phrases.json)
-        ("phrases.html", "phrases.html", {"phrases": learning.phrases_data(db.conn)}),
+        ("phrases.html", "phrases.html", {"phrases": learning.phrases_data(db.conn),
+                                          "dialect_statements": learning.dialect_statements()["statements"]}),
+        # other places to learn: the part of the register of sources marked for learners (sources/catalogue.json)
+        ("resources.html", "resources.html", {"sections": learning.sources_data()}),
     ]
 
     count = 0
@@ -752,6 +757,7 @@ def generate_lesson_pages(db_path: str, output_dir: Path) -> dict:
             lesson=lesson, basic=ctx["basic"], additional=ctx["additional"],
             phrases=ctx["phrases"], conversations=ctx["conversations"],
             conversation_note=ctx["conversation_note"],
+            dialect_statements=ctx["dialect_statements"],
             practice=[],  # sentence builder is Flask-only
             exercises=exercises, prev_n=prev_n, next_n=next_n,
             **base_context,

@@ -2456,3 +2456,99 @@ table.paradigm--one .pcell { font-size: 1.3rem; }
   .box-row { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .today-box { padding-left: 0.9rem; padding-right: 0.9rem; }
 }
+
+/* ---------- Dialect marks, hearing a word, other places to learn (2026-11-15) ---------- */
+/* "SB spelling": a form written with e or hr, by the textbook's own rule. Dashed, to tell it from the book's own SK and SB. */
+.dialect--spelling { border-style: dashed; background: var(--learn-gold-soft); color: var(--learn-gold); }
+.dialect-line { margin-top: 0.5rem; }
+.dialect-line .dialect { background: var(--learn-surface); }
+.dialect-says li { font-size: 0.9rem; margin-bottom: 0.35rem; }
+h2 .dialect { vertical-align: middle; margin-left: 0.5rem; font-family: 'DM Sans', sans-serif; }
+.lesson-dialogue__line .dialect { align-self: center; }
+
+/* "Hear it at Indiana University": a link out; nothing is played or stored here. */
+.result-hear { margin: 0.35rem 0; font-size: 0.9rem; }
+.result-hear > a, .hear-link { font-weight: 500; }
+.result-hear > a::before, .hear-link::before { content: "♪ "; }
+.hear-link--small { font-size: 0.75rem; margin-left: 0.3rem; white-space: nowrap; }
+
+/* The page "Learn with others". */
+.people-first { margin: 1.25rem 0 0; }
+.source-list { list-style: none; padding: 0; margin: 0.5rem 0 1rem; }
+.source-list .source {
+  list-style: none; display: grid; gap: 0.2rem; padding: 0.8rem 1rem; margin: 0 0 0.6rem;
+  border: 1px solid var(--learn-line); border-radius: 0.875rem; background: var(--learn-surface);
+}
+.source-name { font-weight: 500; font-size: 1.05rem; }
+.source-says { color: var(--learn-ink); font-size: 0.95rem; line-height: 1.5; }
+.source-meta { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.15rem; }
+.source-tag {
+  font-size: 0.72rem; padding: 0.08rem 0.55rem; border-radius: 999px; border: 1px solid var(--learn-line);
+  color: var(--learn-ink-2); background: var(--learn-surface-2);
+}
+
+/* ---------- Word web (2026-11-15) ---------- */
+/* The picture of words and the pieces printed in them (wordweb.js). A box is a word, an oval a piece.
+   The colours are the fixed tokens of this section, as everywhere on the learning pages. */
+.learn-page--wide { max-width: none; }
+.learn-page--wide .learn-lead, .learn-page--wide .honest-note p { max-width: 46rem; }
+.learn-kicker a { color: inherit; text-decoration: none; }
+.learn-kicker a:hover { text-decoration: underline; }
+.ww-starts { display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: center; margin: 0.25rem 0 0.75rem; }
+.ww-starts .section-label { width: 100%; margin-bottom: 0.1rem; }
+.ww-start {
+  display: inline-block; padding: 0.1rem 0.7rem; border-radius: 999px; text-decoration: none; font-size: 0.92rem;
+  border: 1px solid var(--learn-line); background: var(--learn-surface); color: var(--learn-ink);
+}
+.ww-start:hover { border-color: var(--learn-sky); color: var(--learn-sky); }
+.ww-summary { margin: 0.5rem 0; font-size: 0.95rem; color: var(--learn-ink); min-height: 1.6rem; }
+.ww-stage { position: relative; }
+.ww-svg {
+  display: block; width: 100%; height: clamp(26rem, 68vh, 44rem);
+  background: var(--learn-surface-2); border: 1px solid var(--learn-line); border-radius: 0.875rem;
+  touch-action: none; cursor: grab; user-select: none; -webkit-user-select: none;
+}
+.ww-svg:active { cursor: grabbing; }
+.ww-svg a { text-decoration: none; cursor: pointer; outline: none; }
+.ww-svg text { text-anchor: middle; pointer-events: none; }
+.ww-link { stroke: var(--earth-300); stroke-width: 1.4; }
+.ww-link--on { stroke: var(--learn-accent); stroke-width: 2.2; }
+.ww-word rect { fill: var(--learn-surface); stroke: var(--earth-300); stroke-width: 1.2; }
+.ww-piece ellipse { fill: var(--gold-50); stroke: var(--gold-400); stroke-width: 1.4; }
+.ww-piece--single ellipse { fill: var(--learn-surface-2); stroke: var(--earth-300); stroke-dasharray: 3 3; }
+.ww-t-word { font: 500 14px 'Source Serif 4', 'Gentium Plus', 'Charis SIL', serif; fill: var(--earth-900); }
+.ww-t-gloss { font: 10.5px 'DM Sans', system-ui, sans-serif; fill: var(--earth-600); }
+.ww-t-piece { font: 500 14px 'Source Serif 4', 'Gentium Plus', 'Charis SIL', serif; fill: var(--gold-800); }
+.ww-t-count { font: 10.5px 'DM Sans', system-ui, sans-serif; fill: var(--gold-800); }
+.ww-piece--single .ww-t-piece { fill: var(--earth-700); }
+.ww-more { display: none; }
+.ww-piece--more .ww-more { display: inline; }
+.ww-more circle { fill: var(--learn-accent); }
+.ww-more text { font: 700 12px 'DM Sans', system-ui, sans-serif; fill: #FFFFFF; }
+.ww-node:hover rect, .ww-node:focus rect, .ww-node:hover ellipse, .ww-node:focus ellipse { stroke: var(--learn-sky); stroke-width: 2.2; }
+.ww-node--on rect, .ww-node--on ellipse,
+.ww-node--on:hover rect, .ww-node--on:hover ellipse { stroke: var(--learn-accent); stroke-width: 2.4; fill: var(--learn-accent-soft); stroke-dasharray: none; }
+.ww-tools { position: absolute; top: 0.6rem; right: 0.6rem; display: flex; gap: 0.3rem; }
+.ww-tool {
+  width: 2.1rem; height: 2.1rem; margin: 0; padding: 0; line-height: 1; font-size: 1.1rem; border-radius: 0.5rem;
+  border: 1px solid var(--learn-line); background: var(--learn-surface); color: var(--learn-ink);
+}
+.ww-tool--text { width: auto; padding: 0 0.7rem; font-size: 0.8rem; }
+.ww-tool:hover { border-color: var(--learn-sky); background: var(--learn-sky-soft); color: var(--learn-ink); }
+.ww-legend {
+  list-style: none; padding: 0; margin: 0.5rem 0 0; display: flex; flex-wrap: wrap; gap: 0.3rem 1.2rem;
+  font-size: 0.82rem; color: var(--learn-ink-2);
+}
+.ww-legend li { list-style: none; margin: 0; display: flex; align-items: center; gap: 0.4rem; }
+.ww-key { display: inline-block; flex: none; width: 1.6rem; height: 0.95rem; }
+.ww-key--word { border: 1.5px solid var(--earth-300); border-radius: 0.35rem; background: var(--learn-surface); }
+.ww-key--piece { border: 1.5px solid var(--gold-400); border-radius: 50%; background: var(--gold-50); }
+.ww-key--more {
+  width: 1rem; height: 1rem; border-radius: 50%; background: var(--learn-accent); color: #FFFFFF;
+  font-size: 0.75rem; font-weight: 700; line-height: 1rem; text-align: center;
+}
+.ww-panel { margin-top: 1rem; }
+.ww-actions { display: flex; flex-wrap: wrap; gap: 0.5rem 0.9rem; align-items: center; margin: 0.4rem 0 0.6rem; }
+.ww-btn, a.ww-btn[role="button"] { width: auto; margin: 0; padding: 0.3rem 0.8rem; font-size: 0.85rem; }
+.ww-btn-link { font-size: 0.88rem; }
+.ww-summary .ww-btn { margin-left: 0.4rem; }

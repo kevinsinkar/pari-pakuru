@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% set active_page = 'resources' %}
+
+{% block title %}Learn with others{% endblock %}
+
+{% block content %}
+{# Other places to learn Pawnee (2026-11-15). The list is the part of the project's register of sources that is
+   marked for learners (sources/catalogue.json, read by web/learning.py: sources_data). A source is listed only if
+   its link answers and someone has recorded what its page says (scripts/sources_catalogue.py --check).
+   The site links to these and copies nothing from them. Ceremonial material is never listed. #}
+<article class="learn-page">
+  <p class="learn-kicker">Learn with others</p>
+  <h2>Learn with people, and hear the language</h2>
+  <p class="learn-lead">
+    A language is learned from people. This site is made from two books and cannot let you hear a word.
+    These places can do what it cannot. They belong to the people who made them: this site links to them and copies
+    nothing from them.
+  </p>
+
+  {% for section in sections %}
+  {% if section['items'] %}
+  <section id="r-{{ section.key }}">
+    <h3>{{ section.label }}</h3>
+    <p class="result-usage">{{ section.about }}</p>
+    <ul class="source-list">
+      {% for s in section['items'] %}
+      <li class="source">
+        <a class="source-name" href="{{ s.url|e }}" target="_blank" rel="noopener">{{ s.title }}</a>
+        <span class="source-says">{{ s.says }}</span>
+        <span class="source-meta">
+          {% if s.dialect %}<span class="source-tag">{{ s.dialect }}</span>{% endif %}
+          {% if s.access %}<span class="source-tag">{{ s.access }}</span>{% endif %}
+        </span>
+      </li>
+      {% endfor %}
+    </ul>
+    {% if section.key == 'hear' %}
+    <p class="result-usage">Every dictionary word on this site also has a link, “Hear it at Indiana University”,
+      that opens a search for the word in that dictionary. Some entries there have a recording; many do not, and a few
+      words are not found by the search.</p>
+    {% endif %}
+  </section>
+  {% endif %}
+  {% endfor %}
+
+  <section class="honest-note">
+    <h3>About this list</h3>
+    <p>
+      Each link was opened in November 2026 and says what the page was seen to say then; pages move, and classes change.
+      The list is short on purpose. The project keeps a longer register of what has been written and recorded about
+      Pawnee, with notes on dialect and on who holds the rights, in its
+      <a href="https://github.com/kevinsinkar/pari-pakuru/tree/main/sources" target="_blank" rel="noopener">files</a>.
+      Works on ceremony and collections of songs are not listed here: whether and how they are shared is for the
+      Pawnee Nation to say.
+    </p>
+    <p>
+      Two dialects are spoken of in these sources, Skiri and South Band. This site's dictionary is Skiri; the 1979
+      textbook writes mostly as South Band speakers say the words. The Nation's handouts and the Alphabet Book show
+      both side by side.
+    </p>
+  </section>
+</article>
+{% endblock %}

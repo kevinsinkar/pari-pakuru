@@ -121,10 +121,22 @@ function builtBlock(entry, open) {
   if (typeof Skiri === 'undefined' || !entry.build) return '';
   const body = Skiri.buildBlock(entry.build);
   if (!body) return '';
-  return `<details class="result-more result-built"${open ? ' open' : ''}><summary>How the word is built</summary>${body}</details>`;
+  // the word web draws this word with the other words in which the dictionary prints the same pieces
+  const web = `<p class="result-usage"><a href="wordweb.html?word=${encodeURIComponent(entry.entry_id)}">See it in a picture, with the words that share its pieces</a></p>`;
+  return `<details class="result-more result-built"${open ? ' open' : ''}><summary>How the word is built</summary>${body}${web}</details>`;
 }
 
 // The topics an entry is filed under (a rough sorting by English keywords), as links to the topic lists.
+// "Hear it": a link to a search for the word in Indiana University's online Skiri dictionary, where some entries have a
+// recording (Skiri.hearUrls). Only for the dictionary's own entries: a word found only in the textbook is not there.
+function hearLine(entry) {
+  if (entry.source === 'blue_book' || !entry.headword) return '';
+  const urls = Skiri.hearUrls(entry.headword, ((entry.glosses || [])[0] || {}).definition);
+  return `<p class="result-hear"><a href="${esc(urls.word)}" target="_blank" rel="noopener">Hear it at Indiana University</a>` +
+    '<span class="result-usage"> opens a search for this word in their Skiri dictionary; some entries there have a recording.' +
+    `${urls.english ? ` If the word is not found, <a href="${esc(urls.english)}" target="_blank" rel="noopener">search its English</a>.` : ''}</span></p>`;
+}
+
 function topicLine(entry) {
   const tags = (entry.tags || []).filter(t => t !== 'ceremony');
   if (!tags.length) return '';
@@ -233,6 +245,7 @@ function renderSearchResults(results, total, open) {
       ${textbookLine(entry)}
       ${entry.simplified_pronunciation ? `<p class="result-pronunciation">${esc(entry.simplified_pronunciation)}</p>` : ''}
       ${entry.phonetic_form ? `<p class="result-ipa" lang="x-paw">${esc(entry.phonetic_form)}</p>` : ''}
+      ${hearLine(entry)}
       ${sayItBlock(entry, open)}
       ${builtBlock(entry, open)}
       ${moreOfEntry(entry, open)}
